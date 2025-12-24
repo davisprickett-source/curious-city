@@ -1057,6 +1057,11 @@ export const cities: CitiesIndex = {
               stillExists: true,
             },
             source: '"The Lost Brothers"; "Long Lost" podcast',
+            image: {
+              src: 'https://images.unsplash.com/photo-1502085671122-2d218cd434e6?w=1200&q=80',
+              alt: 'Empty children\'s bedroom with three beds in 1950s style',
+              credit: 'Photo by Pxhere on Unsplash',
+            },
           },
           {
             id: 'mpls-dark-2',
@@ -1069,6 +1074,11 @@ export const cities: CitiesIndex = {
             location: {
               name: 'Mississippi riverfront, Minneapolis',
               stillExists: true,
+            },
+            image: {
+              src: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=80',
+              alt: 'Mississippi River waterfront with park bench at dusk',
+              credit: 'Photo by Rahul Chakraborty on Unsplash',
             },
           },
           {
@@ -1084,6 +1094,11 @@ export const cities: CitiesIndex = {
               stillExists: true,
             },
             source: 'Contemporary police reports and cold case coverage',
+            image: {
+              src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+              alt: 'Dark apartment building exterior at night',
+              credit: 'Photo by Becca Tapert on Unsplash',
+            },
           },
           {
             id: 'mpls-dark-4',
@@ -1098,6 +1113,11 @@ export const cities: CitiesIndex = {
               stillExists: true,
             },
             source: 'Hennepin County court filings; genealogical DNA case reports',
+            image: {
+              src: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+              alt: 'Tall urban apartment building at night',
+              credit: 'Photo by Breather on Unsplash',
+            },
           },
         ],
       },
@@ -4092,7 +4112,7 @@ export const cities: CitiesIndex = {
             title: 'Ted Bundy\'s Utah Hunting Ground',
             body: 'Ted Bundy arrived in Salt Lake City in September 1974, enrolling at the University of Utah Law School. He rented an apartment in the Avenues and began hunting. Nancy Wilcox, a 16-year-old cheerleader, vanished on October 2—Bundy later confessed to killing her but couldn\'t remember where he left her body, somewhere near Capitol Reef. Melissa Smith, 17, daughter of a Midvale police chief, disappeared October 18. Bundy was first arrested in Salt Lake City on August 16, 1975, after a highway patrol officer noticed him driving with his headlights off and found a ski mask, handcuffs, and a crowbar in his VW Beetle. He was convicted of kidnapping Carol DaRonch, who had escaped his car. Utah\'s arrest led to his extradition to Colorado, his escape, and eventually his Florida murders. Before his 1989 execution, Bundy confessed to at least 30 killings—but Utah investigators believe there are more victims in the West Desert who were never found.',
             verdict: 'At least three confirmed Utah victims. Nancy Wilcox\'s body has never been recovered.',
-            source: 'Salt Lake Tribune; KSL; ABC4',
+            source: 'Salt Lake Tribune; KSL; ABC4; Netflix: "Conversations with a Killer: The Ted Bundy Tapes" (2019); Fox Nation: "Hunting Bundy: Chase for the Devil" (2025) - Episode 1: "The Devil Comes to Utah"; Podcast: "Ted Bundy" (2024 series)',
             location: {
               name: 'Salt Lake Valley, Utah County',
               stillExists: true,
@@ -4106,7 +4126,7 @@ export const cities: CitiesIndex = {
             title: 'Gary Gilmore: "Let\'s Do It"',
             body: 'On July 19, 1976, Gary Gilmore robbed and murdered gas station attendant Max Jensen in Orem. The next night, he killed motel manager Bennie Bushnell in Provo. Both victims were young fathers. Gilmore was captured the same week, tried, and sentenced to death. Then he did something unprecedented: he demanded to be executed. For ten years, capital punishment had been frozen in America. Gilmore wanted to restart it. When the ACLU and his mother fought to save his life, he wrote: "It\'s my life and it\'s my death." On January 17, 1977, Gilmore was strapped to a chair in an abandoned cannery behind Utah State Prison. Five police officers aimed through holes in a curtain. Asked for last words, he said: "Let\'s do it." He became the first person executed in America in a decade. Nike\'s Dan Wieden later adapted those words into "Just Do It."',
             verdict: 'Executed by firing squad. Norman Mailer won the Pulitzer Prize for "The Executioner\'s Song," his book about Gilmore.',
-            source: 'Salt Lake Tribune; A&E; Wikipedia',
+            source: 'Salt Lake Tribune; A&E; Book: "The Executioner\'s Song" by Norman Mailer (Pulitzer Prize winner); REELZ: "Dead Man Talking: The Execution of Gary Gilmore"; Podcasts: "The Projection Booth" Ep. 689, "Based on a True Crime" Ep. 25; 1982 TV film starring Tommy Lee Jones',
             location: {
               name: 'Utah State Prison, Draper',
               stillExists: true,
@@ -4134,7 +4154,7 @@ export const cities: CitiesIndex = {
             title: 'The Lafferty Murders: Revelation and Slaughter',
             body: 'On July 24, 1984—Pioneer Day, Utah\'s most sacred holiday—Ron and Dan Lafferty drove to their brother\'s home in American Fork. Brenda Lafferty, their sister-in-law, opened the door. Ron strangled her with a vacuum cord while Dan cut her throat. Then Dan killed 15-month-old Erica in her crib. Ron claimed God had commanded the murders in a revelation. Brenda, he said, had encouraged his wife to leave him after he embraced polygamy. The brothers had founded a fundamentalist splinter group called the School of the Prophets. They were arrested two weeks later at a casino buffet in Reno. Dan received life without parole. Ron was sentenced to death but died of natural causes in 2019, still awaiting execution. Jon Krakauer\'s "Under the Banner of Heaven" documented the case, later adapted into an FX series starring Andrew Garfield.',
             verdict: 'A mother and infant murdered in the name of revelation. The case exposed dangerous fault lines between mainstream and fundamentalist Mormonism.',
-            source: 'Deseret News; Salt Lake Tribune; TIME',
+            source: 'Deseret News; Salt Lake Tribune; TIME; Book: "Under the Banner of Heaven" by Jon Krakauer (2003); FX/Hulu series: "Under the Banner of Heaven" starring Andrew Garfield (2022); Podcasts: "Real Crime Profile" Ep. 392, "Crime Writers On...True Crime Review," "Year of Polygamy" (cultural consultant Lindsay Hansen Park)',
             location: {
               name: 'American Fork',
               stillExists: true,
@@ -4148,7 +4168,7 @@ export const cities: CitiesIndex = {
             title: 'The Disappearance of Susan Powell',
             body: 'On December 6, 2009, Susan Powell vanished from her West Valley City home. Her husband Josh said he\'d taken their sons, ages 2 and 4, on a midnight camping trip in the West Desert—in December, below freezing. Susan, he claimed, stayed home. Police found blood on the floor, insurance policies worth $1.5 million, and a letter from Susan saying she feared for her life. Josh never wavered from his camping story. Investigators believed he killed Susan and disposed of her body in the desert. They couldn\'t prove it. In February 2012, during a supervised custody visit, Josh locked a social worker out, attacked his sons with a hatchet, and ignited a fire that killed all three. His brother Michael, suspected of helping dispose of Susan\'s body, killed himself a year later. Susan\'s remains have never been found. The podcast "Cold" has kept the case alive, and her family still searches the West Desert.',
             verdict: 'Susan Powell declared legally dead in 2012. Her body has never been recovered. The West Desert keeps its secrets.',
-            source: 'ABC News; KSL; Salt Lake Tribune; "Cold" Podcast',
+            source: 'ABC News; KSL; Salt Lake Tribune; Podcast: "Cold" Season 1 - Susan Powell Case Files (investigative journalist Dave Cawley, KSL Podcasts, available on Spotify, Apple Podcasts, Wondery, iHeartRadio); TV series development announced 2021',
             location: {
               name: 'West Valley City / West Desert',
               stillExists: true,
