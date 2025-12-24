@@ -1,0 +1,133 @@
+@import 'mapbox-gl/dist/mapbox-gl.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Font variables are set by Next.js in layout.tsx */
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    line-height: 1.75;
+    letter-spacing: -0.01em;
+    @apply bg-[#f8f7f4] text-neutral-900 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .ui-sans {
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* Kicker - category label with accent color */
+  .kicker {
+    font-family: var(--font-sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #c65d3b; /* accent-600 */
+  }
+
+  /* Caption for images */
+  .caption {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #737373; /* neutral-500 */
+  }
+
+  /* Links with accent underline */
+  a:not(.no-underline) {
+    @apply transition-colors duration-200;
+  }
+
+  /* Ensure tap targets are accessible */
+  a, button {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply w-full max-w-5xl mx-auto px-5 md:px-8 xl:px-10;
+  }
+
+  .section-spacing {
+    @apply py-8 md:py-10;
+  }
+
+  /* Editorial link style */
+  .link-editorial {
+    color: #c65d3b; /* accent-600 */
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #f7b5a0; /* accent-300 */
+    @apply transition-colors;
+  }
+
+  .link-editorial:hover {
+    color: #a54a30; /* accent-700 */
+    text-decoration-color: #e56b45; /* accent-500 */
+  }
+
+  /* Hero image container */
+  .hero-image {
+    @apply relative w-full aspect-[21/9] overflow-hidden bg-neutral-200;
+  }
+
+  .hero-image img {
+    @apply w-full h-full object-cover;
+  }
+
+  .hero-image-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent;
+  }
+
+  /* Decorative divider */
+  .divider-ornament {
+    @apply flex items-center justify-center gap-3 my-12;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply flex-1 h-px bg-neutral-200;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-200;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-0.5 shadow-lg;
+  }
+}
