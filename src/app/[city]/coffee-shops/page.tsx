@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
-import { Header, CityNav, ShareLinks, MapThumbnail } from '@/components'
+import { Header, CityNav, ShareLinks, MapThumbnail, ImageCarousel } from '@/components'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -94,17 +94,12 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
                             </div>
                             <p className="text-xl text-neutral-600 italic mb-5">{spot.vibe}</p>
 
-                            {/* Venue image */}
-                            {spot.image && (
+                            {/* Venue image carousel */}
+                            {(spot.images || spot.image) && (
                               <div className="mb-4">
-                                <img
-                                  src={spot.image.src}
-                                  alt={spot.image.alt || spot.name}
-                                  className="w-full h-auto object-cover rounded-lg"
+                                <ImageCarousel
+                                  images={spot.images || (spot.image ? [spot.image] : [])}
                                 />
-                                {spot.image.credit && (
-                                  <p className="text-xs text-neutral-400 mt-1">Photo: {spot.image.credit}</p>
-                                )}
                               </div>
                             )}
 
