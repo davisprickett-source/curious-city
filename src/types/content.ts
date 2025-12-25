@@ -49,6 +49,60 @@ export interface ThisWeekContentItem extends BaseContentItem {
   items: ThisWeekItem[]
 }
 
+// ============================================
+// Enhanced Event System Types
+// ============================================
+
+// Event status for automatic time-based filtering
+export type EventStatus =
+  | 'happening-now'    // Currently in progress
+  | 'starts-soon'      // Within next 2 hours
+  | 'today'            // Later today
+  | 'tomorrow'         // Tomorrow
+  | 'this-weekend'     // Fri-Sun of current week
+  | 'this-week'        // Mon-Sun of current week
+  | 'next-week'        // Following Mon-Sun
+  | 'this-month'       // Current month
+  | 'upcoming'         // Future
+  | 'ended'            // Past (should be filtered out)
+
+// Enhanced event item with automatic date handling
+export interface EventItem {
+  // Core info
+  title: string
+  description: string
+  location?: string
+  href?: string
+  image?: {
+    src: string
+    alt: string
+  }
+
+  // Enhanced temporal data (ISO 8601 format)
+  startDate: string // "2025-12-24T19:00:00"
+  endDate?: string  // For multi-day events or events with end times
+  isAllDay?: boolean // For all-day events
+
+  // Recurrence (future enhancement)
+  isRecurring?: boolean
+  recurrenceRule?: string // "every Friday" or cron-like syntax
+
+  // Display metadata
+  category: 'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'
+  tags?: string[] // ["free", "family-friendly", "outdoor"]
+
+  // Auto-expiration
+  expiresAt?: string // When to stop showing this event (if different from endDate)
+}
+
+// Events content item (can coexist with ThisWeekContentItem)
+export interface EventsContentItem extends BaseContentItem {
+  type: 'events'
+  title?: string
+  intro?: string
+  items: EventItem[]
+}
+
 // Ad placeholder
 export interface AdContentItem extends BaseContentItem {
   type: 'ad'
@@ -233,6 +287,7 @@ export type ContentItem =
   | CardContentItem
   | CardListContentItem
   | ThisWeekContentItem
+  | EventsContentItem
   | AdContentItem
   | SectionContentItem
   | CuriosityContentItem

@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import { getCity, getAllCitySlugs, getCityThisWeek } from '@/data/cities'
-import { Header, CityNav, ShareLinks } from '@/components'
+import { getCity, getAllCitySlugs, getCityThisWeek, getCityEvents } from '@/data/cities'
+import { Header, CityNav, ShareLinks, EventTimeBuckets, EventFilter } from '@/components'
+import { filterActiveEvents, filterThisWeekEvents } from '@/utils/eventStatus'
+import type { EventItem, EventsContentItem } from '@/types/content'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -53,6 +55,14 @@ export default async function CityThisWeekPage({ params }: PageProps) {
   }
 
   const thisWeekSections = getCityThisWeek(slug)
+  const eventsSections = getCityEvents(slug) as EventsContentItem[]
+
+  // Extract all events from events sections
+  const allEvents: EventItem[] = eventsSections.flatMap((section) => section.items)
+
+  // Filter to only active events happening this week
+  const activeEvents = filterActiveEvents(allEvents)
+  const thisWeekEvents = filterThisWeekEvents(activeEvents)
 
   return (
     <>
@@ -76,8 +86,17 @@ export default async function CityThisWeekPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* This Week Content */}
-          {thisWeekSections.length > 0 ? (
+          {/* Event Filter */}
+          {thisWeekEvents.length > 0 && (
+            <div className="mb-8">
+              <EventFilter citySlug={city.slug} />
+            </div>
+          )}
+
+          {/* Events Content (new system) */}
+          {thisWeekEvents.length > 0 ? (
+            <EventTimeBuckets events={thisWeekEvents} view="week" />
+          ) : thisWeekSections.length > 0 ? (
             <div className="space-y-12">
               {thisWeekSections.map((section: any) => (
                 <section key={section.id}>

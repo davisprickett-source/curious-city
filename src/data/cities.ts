@@ -2340,6 +2340,103 @@ export const cities: CitiesIndex = {
         size: 'banner',
       },
       {
+        id: 'events-this-week',
+        type: 'events',
+        title: 'Events This Week',
+        intro: 'Happening now and coming up — pop-ups, openings, and things you shouldn\'t miss.',
+        items: [
+          {
+            title: 'Winter Lights Festival at Millennium Park',
+            description: 'The park transforms into an illuminated winter wonderland with interactive light installations, ice sculptures, and live music. Family-friendly event with hot chocolate and roasted chestnuts.',
+            startDate: '2025-12-25T17:00:00',
+            endDate: '2025-12-28T22:00:00',
+            isAllDay: false,
+            location: 'Millennium Park',
+            category: 'seasonal',
+            tags: ['free', 'family-friendly', 'outdoor'],
+            image: {
+              src: '/images/events/millennium-park-lights.jpg',
+              alt: 'Illuminated winter festival at Millennium Park',
+            },
+          },
+          {
+            title: 'Last Day: Frida Kahlo Exhibition',
+            description: 'Final chance to see the largest Kahlo exhibition ever assembled in Chicago. Over 80 works including paintings, drawings, and personal artifacts.',
+            startDate: '2025-12-26T10:00:00',
+            endDate: '2025-12-26T20:00:00',
+            location: 'Art Institute of Chicago',
+            category: 'closing',
+            tags: ['art', 'museum'],
+            href: 'https://www.artic.edu',
+            image: {
+              src: '/images/events/frida-kahlo.jpg',
+              alt: 'Frida Kahlo self-portrait',
+            },
+          },
+          {
+            title: 'Underground Comedy Club Pop-Up',
+            description: 'Secret comedy show in a renovated Prohibition-era speakeasy. Lineup changes nightly, past performers include Saturday Night Live cast members.',
+            startDate: '2025-12-27T20:00:00',
+            endDate: '2025-12-27T23:00:00',
+            location: 'Logan Square (address sent upon RSVP)',
+            category: 'popup',
+            tags: ['comedy', 'nightlife'],
+            href: 'https://example.com/comedy-rsvp',
+          },
+          {
+            title: 'New Year\'s Eve at Navy Pier',
+            description: 'Fireworks over Lake Michigan at midnight, plus live music, ice skating, and food trucks. Chicago\'s biggest public New Year\'s celebration.',
+            startDate: '2025-12-31T19:00:00',
+            endDate: '2026-01-01T01:00:00',
+            location: 'Navy Pier',
+            category: 'event',
+            tags: ['free', 'family-friendly', 'fireworks'],
+            image: {
+              src: '/images/events/navy-pier-nye.jpg',
+              alt: 'Fireworks over Navy Pier',
+            },
+          },
+          {
+            title: 'Riverwalk Winter Market',
+            description: 'Local artisans selling handcrafted gifts, vintage finds, and Chicago-made goods. Heated tents and warm beverages. Open weekends through January.',
+            startDate: '2025-12-28T11:00:00',
+            endDate: '2025-12-28T18:00:00',
+            location: 'Chicago Riverwalk',
+            category: 'seasonal',
+            tags: ['market', 'shopping', 'outdoor'],
+          },
+          {
+            title: 'Green Mill Jazz Club: New Year\'s Week Residency',
+            description: 'Legendary jazz venue hosts week-long residency featuring Chicago\'s finest jazz musicians. Same stage where Al Capone once sat.',
+            startDate: '2025-12-28T21:00:00',
+            endDate: '2025-12-28T02:00:00',
+            location: 'Green Mill Cocktail Lounge, Uptown',
+            category: 'event',
+            tags: ['music', 'jazz', 'historic'],
+            href: 'https://greenmilljazz.com',
+          },
+          {
+            title: 'Deep Dish Bake-Off Championship',
+            description: 'Amateur and professional pizzaiolos compete for Chicago\'s best deep dish. Taste samples from all contestants and vote for your favorite.',
+            startDate: '2025-12-29T14:00:00',
+            endDate: '2025-12-29T18:00:00',
+            location: 'Pilsen Community Center',
+            category: 'event',
+            tags: ['food', 'competition'],
+          },
+          {
+            title: 'First Look: Museum of Contemporary Art Renovation',
+            description: 'Exclusive preview of the newly renovated East Wing before public opening. Includes new galleries, rooftop terrace, and restaurant.',
+            startDate: '2026-01-02T18:00:00',
+            endDate: '2026-01-02T21:00:00',
+            location: 'Museum of Contemporary Art Chicago',
+            category: 'opening',
+            tags: ['art', 'museum', 'exclusive'],
+            href: 'https://mcachicago.org',
+          },
+        ],
+      },
+      {
         id: 'this-week',
         type: 'card-list',
         title: 'This Week',
@@ -9750,6 +9847,13 @@ export function getCityThisWeek(slug: string) {
   const city = getCity(slug)
   if (!city) return []
   return findItemsOfType<any>(city.content, 'this-week')
+}
+
+// Get events for a specific city
+export function getCityEvents(slug: string) {
+  const city = getCity(slug)
+  if (!city) return []
+  return findItemsOfType<any>(city.content, 'events')
 }
 
 // Get scenes (visual media) for a specific city
