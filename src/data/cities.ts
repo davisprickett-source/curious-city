@@ -3300,6 +3300,9 @@ export const cities: CitiesIndex = {
             lastAddress: '3324 N California Ave, Chicago',
             source: 'Chicago Tribune, Eater Chicago',
           },
+          // Photo References: Wikimedia Commons (public domain) - https://commons.wikimedia.org/wiki/Category:Hot_Doug's
+          // Flickr photos: https://www.flickr.com/photos/hellokitty893112/albums/72157629075131571/
+          // Yelp (1540 photos): https://www.yelp.com/biz/hot-dougs-chicago
           {
             id: 'chicago-lost-2',
             type: 'lost-and-loved',
@@ -3427,6 +3430,7 @@ export const cities: CitiesIndex = {
             lastAddress: '4816 N Broadway, Chicago',
             source: 'Chicago Tribune, Preservation Chicago',
           },
+          // Photo References: Wikimedia Commons (10 files, public domain) - https://commons.wikimedia.org/wiki/Category:Uptown_Theatre_(Chicago)
           {
             id: 'chicago-lost-11',
             type: 'lost-and-loved',
@@ -8480,9 +8484,15 @@ export const cities: CitiesIndex = {
             description: 'The dark, cash-only dive bar with cheap drinks, a legendary jukebox, and regulars who treated it like church. For 58 years, it was where Capitol Hill drank without pretension. The pandemic closed it, and Denver lost its most authentic dive.',
             whyMissed: 'The $3 whiskey, the jukebox that leaned Sinatra and Patsy Cline, and the sense that Capitol Hill still had places that hadn\'t been gentrified. The Satire was proof that old Denver survived.',
             communityVoice: '"The Satire was the last real dive bar in Capitol Hill." — Westword',
+            image: {
+              src: 'https://tile.loc.gov/storage-services/service/pnp/mrg/01500/01571v.jpg',
+              alt: 'Satire Lounge neon sign on Colfax Avenue in Denver',
+              credit: 'John Margolies, Library of Congress',
+            },
             lastAddress: '1920 E Colfax Ave, Denver',
             source: 'Westword, Denver Post',
           },
+          // Reference: https://www.loc.gov/item/2017703685/
           {
             id: 'denver-lost-2',
             type: 'lost-and-loved',
@@ -8493,9 +8503,15 @@ export const cities: CitiesIndex = {
             description: 'The old-school steakhouse with red leather booths, tableside Caesar salads, and whiskey drinks strong enough to forget altitude. For 84 years, Denver celebrated there—birthdays, anniversaries, promotions. The pandemic ended it.',
             whyMissed: 'The prime rib, the tableside Caesar salad preparation, and the sense that Denver remembered its pre-tech past. Bastien\'s was where your grandparents went on dates.',
             communityVoice: '"Bastien\'s was Denver\'s last real supper club." — 5280 Magazine',
+            image: {
+              src: 'https://tile.loc.gov/storage-services/service/pnp/highsm/33600/33601v.jpg',
+              alt: 'Bastien\'s restaurant exterior featuring cocktails and sugar steak in Denver',
+              credit: 'Carol M. Highsmith, Library of Congress',
+            },
             lastAddress: '3503 E Colfax Ave, Denver',
             source: 'Denver Post, 5280 Magazine',
           },
+          // Reference: https://www.loc.gov/item/2015633616/
           {
             id: 'denver-lost-3',
             type: 'lost-and-loved',
@@ -9301,6 +9317,8 @@ export const cities: CitiesIndex = {
             lastAddress: '1503 E 7th Ave, Tampa',
             source: 'Tampa Bay Times, Pollstar',
           },
+          // Photo References: Historic Theatre Photos (1958 & 1986 exterior) - https://www.historictheatrephotos.com/Atmospheric/Ritz-Ybor-Tampa.aspx
+          // Library of Congress Ybor City collection: https://www.loc.gov/item/fl0298/
           {
             id: 'tampa-lost-3',
             type: 'lost-and-loved',
