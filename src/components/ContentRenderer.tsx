@@ -444,6 +444,11 @@ function ContentItemRenderer({ item }: { item: ContentItem }) {
         </ContentBlock>
       )
 
+    case 'events':
+      // Events are handled by the EventTimeBuckets component on the dedicated events page
+      // Not rendered in ContentRenderer
+      return null
+
     case 'lost-and-loved':
       return (
         <article className="py-5 border-b border-neutral-100 last:border-b-0">
