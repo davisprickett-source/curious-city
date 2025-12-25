@@ -10,6 +10,11 @@ const cityBanners: Record<string, string> = {
   minneapolis: '/Minneapolis-banner.png',
   dallas: '/Dallas-banner.png',
   raleigh: '/Raleigh-banner.png',
+  denver: '/Denver Banner.png',
+  phoenix: '/Phoenix Banner.png',
+  portland: '/Portland Banner.png',
+  tampa: '/Tampa Banner.png',
+  'salt-lake-city': '/Salt Lake City Banner.png',
 }
 
 interface EssayPageProps {
