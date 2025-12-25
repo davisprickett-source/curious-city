@@ -67,8 +67,18 @@ export interface CuriosityContentItem extends BaseContentItem {
   type: 'curiosity'
   title: string
   body: string
-  icon?: string
+  category?: 'history' | 'architecture' | 'underground' | 'science' | 'culture' | 'law' | 'invention' | 'legend' | 'nature'
+  year?: string
+  image?: {
+    src: string
+    alt: string
+    credit?: string
+  }
   source?: string
+  location?: {
+    name: string
+    stillExists?: boolean
+  }
 }
 
 // Hidden gem - a place or experience recommendation
