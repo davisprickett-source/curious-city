@@ -355,11 +355,18 @@ export const cities: CitiesIndex = {
             hours: '6pm-1am Wed-Sun',
             price: '$$$',
             website: 'https://www.volsteads.net/',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/646c1f6f28358f54b769ab1a/539ed628-998c-4bc7-be25-5a1a4a65af1f/Screen+Shot+2023-05-22+at+9.54.00+PM.png',
-              alt: 'Dimly lit speakeasy interior with vintage decor at Volstead\'s Emporium',
-              credit: 'Volstead\'s Emporium',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/646c1f6f28358f54b769ab1a/539ed628-998c-4bc7-be25-5a1a4a65af1f/Screen+Shot+2023-05-22+at+9.54.00+PM.png',
+                alt: 'Dimly lit speakeasy interior with vintage decor at Volstead\'s Emporium',
+                credit: 'Volstead\'s Emporium',
+              },
+              {
+                src: 'https://mspmag.com/downloads/24590/download/0216-SecretSpeakeasy_640.jpg?cb=5303b833f0951ea0a657d6eb226fcc1c&w=640',
+                alt: 'Volstead\'s Emporium speakeasy with vintage lighting and curtained booths',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+            ],
           },
           {
             name: 'Prohibition',
@@ -372,11 +379,23 @@ export const cities: CitiesIndex = {
             hours: '4pm-midnight Mon-Thu, 4pm-1am Fri-Sat',
             price: '$$$',
             website: 'https://thelivingroom-prohibition.com/',
-            image: {
-              src: 'https://thelivingroom-prohibition.com/wp-content/uploads/fullwide-proho-champ-leather.jpg',
-              alt: 'Art Deco Prohibition bar interior with leather seating at Foshay Tower',
-              credit: 'The Living Room & Prohibition',
-            },
+            images: [
+              {
+                src: 'https://www.hotel-scoop.com/wp-content/uploads/2016/02/DSC05129.jpg',
+                alt: 'Prohibition Bar Art Deco interior at Foshay Tower 27th floor',
+                credit: 'Hotel Scoop',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzlw7MtJrM_glYCIXsn6xqO_JUs_dJ3RKlt8OkT8FqA4-S3uDJnws0uBXAGL9KYnVZm5MtzQd4DI8wp8T72NunhduKKU1Dr6B_-5p_lWtGj-ggGP1_oFF8jdgovDdsGnP1TtetUAA=w3427-h1887-k-no',
+                alt: 'Prohibition bar panoramic interior with skyline views',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwqS-wnaFrz4W0Bm-uhqyaOjj6jCra6T6S3EqaOUQxqYf3CNXPzg8xXqInKoZ6D5ADIBAPtRbW17kfq_uFtknQa7XzSe3Zph_bGXSv-UhU7I9fjhse-yelNuYXOFWZgMqL2ETE5zg=w4446-h2328-k-no',
+                alt: 'Minneapolis skyline view from Prohibition bar',
+                credit: 'Google Maps',
+              },
+            ],
           },
           {
             name: 'Bumbling Fools Meadery',
@@ -389,11 +408,28 @@ export const cities: CitiesIndex = {
             hours: 'Thu 4-10pm, Fri 4-10pm, Sat 2-10pm',
             price: '$$',
             website: 'https://www.bumblingfools.com/',
-            image: {
-              src: 'https://untappd.s3.amazonaws.com/photos/2025_11_23/21d9e9cefe373e260764d0e929b01afc_c_1530713884_raw.jpg',
-              alt: 'Mead tasting at Bumbling Fools Meadery',
-              credit: 'Untappd',
-            },
+            images: [
+              {
+                src: 'https://lede-admin.racketmn.com/wp-content/uploads/sites/37/2023/04/PXL_20230415_151738286.jpg?w=2880',
+                alt: 'Cozy tasting room interior at Bumbling Fools Meadery',
+                credit: 'Racket MN',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-int-lg.jpg',
+                alt: 'Bumbling Fools Meadery interior space',
+                credit: 'Heavy Table',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-mead-sign-int-lg.jpg',
+                alt: 'Bumbling Fools Meadery interior sign and decor',
+                credit: 'Heavy Table',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-bee-menu-lg.jpg',
+                alt: 'Bee-themed menu at Bumbling Fools Meadery',
+                credit: 'Heavy Table',
+              },
+            ],
           },
           {
             name: 'Moto-i',
@@ -406,11 +442,28 @@ export const cities: CitiesIndex = {
             hours: '4pm-10pm Sun-Thu, 4pm-midnight Fri-Sat',
             price: '$$',
             website: 'https://moto-i.com/',
-            image: {
-              src: 'https://static.spotapps.co/spots/11/9569dd9e80472ca4472044301cea81/full',
-              alt: 'Steamed buns and craft cocktail at Moto-i sake brewpub',
-              credit: 'Moto-i',
-            },
+            images: [
+              {
+                src: 'https://mspmag.com/downloads/60116/download/motoi_classic_ramen%20%282%29.jpg',
+                alt: 'Classic ramen bowl at Moto-i',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://mspmag.com/downloads/60117/download/sakeflight2%20%281%29.jpg',
+                alt: 'Sake flight at Moto-i sake brewpub',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://mspmag.com/downloads/60121/download/motoi_steamedbuns%20%281%29.jpg',
+                alt: 'House-made steamed buns at Moto-i',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://mspmag.com/downloads/60120/download/tokubetsu_bottle.jpg',
+                alt: 'Moto-i sake bottle display',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+            ],
           },
           {
             name: 'Flora Room',
@@ -423,28 +476,62 @@ export const cities: CitiesIndex = {
             hours: '5pm-midnight daily',
             price: '$$$',
             website: 'https://www.floraroommpls.com/',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/64429caacaf4007617305f6d/3def10a0-ffe6-485a-ac1b-50f7cf76b4fc/Porzana_Preview_0059.jpg',
-              alt: 'Intimate cocktail bar with botanical decor at Flora Room',
-              credit: 'Flora Room',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/64429caacaf4007617305f6d/3def10a0-ffe6-485a-ac1b-50f7cf76b4fc/Porzana_Preview_0059.jpg',
+                alt: 'Intimate cocktail bar with botanical decor at Flora Room',
+                credit: 'Flora Room',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/5b68a541da02bc93873b055e/1718216670964-S6GLTAEURTT9WTES4P4Q/Porzana_0371.JPG',
+                alt: 'Flora Room interior with plants and dim lighting',
+                credit: 'Christian Dean Architecture',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/5b68a541da02bc93873b055e/1718216682121-69BN0WHCOHOVU1DK0EP9/Porzana_0426.JPG',
+                alt: 'Flora Room cocktail bar seating area',
+                credit: 'Christian Dean Architecture',
+              },
+              {
+                src: 'https://lede-admin.racketmn.com/wp-content/uploads/sites/37/2023/11/MixCollage-09-Nov-2023-09-37-AM-1574.jpg?w=2880',
+                alt: 'Flora Room food and cocktail collage',
+                credit: 'Racket MN',
+              },
+            ],
           },
           {
             name: 'Tattersall Distilling',
             neighborhood: 'Northeast',
-            vibe: 'Award-winning craft distillery with a cocktail room that takes spirits seriously.',
+            vibe: 'Award-winning craft distillery with a cocktail room that takes spirits seriously. (Minneapolis location closed November 2024)',
             order: 'A cocktail featuring their Bootlegger Aquavit or the barrel-aged Old Fashioned.',
-            why: 'Tattersall has won more awards than any other craft distillery in the country. The cocktail room feels industrial-chic without being pretentious, and the bartenders know exactly how to showcase their spirits. You can tour the distillery or just drink.',
+            why: 'Tattersall has won more awards than any other craft distillery in the country. The cocktail room in the historic Thorp building felt industrial-chic without being pretentious. The distillery continues operations at their River Falls, WI location.',
             address: '1620 Central Ave NE, Minneapolis, MN 55413',
             coordinates: { lat: 44.9987, lng: -93.2476 },
-            hours: '4pm-10pm Wed-Thu, 3pm-11pm Fri-Sat, 12pm-6pm Sun',
+            hours: 'CLOSED (Minneapolis location)',
             price: '$$',
             website: 'https://tattersalldistilling.com/',
-            image: {
-              src: 'https://www.tattersalldistilling.com/wp-content/uploads/2023/09/bar.jpg',
-              alt: 'Industrial cocktail room at Tattersall Distilling',
-              credit: 'Tattersall Distilling',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564393975-U6RLH6B949BHSGGWHQ9N/Tattersall_10-21-15_Bar8.jpg',
+                alt: 'Tattersall Distilling cocktail room interior with antique chandelier',
+                credit: 'Bourbon Guy Blog',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445563949357-DBSPF5EE31FONU3YQU15/image-asset.jpeg',
+                alt: 'Craft cocktails at Tattersall Distilling',
+                credit: 'Bourbon Guy Blog',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564451827-TQW8LH6LMJYX2DQURDHW/Tattersall_10-21-15_Distillery3.jpg',
+                alt: 'Tattersall Distilling distillery equipment and copper stills',
+                credit: 'Bourbon Guy Blog',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564123325-A74V43JEOOU1OIEFLOLU/image-asset.jpeg',
+                alt: 'Outdoor patio at Tattersall Distilling with historic guard tower',
+                credit: 'Bourbon Guy Blog',
+              },
+            ],
           },
           {
             name: 'Pryes Brewing',
@@ -457,11 +544,28 @@ export const cities: CitiesIndex = {
             hours: '3pm-10pm Mon-Thu, 12pm-11pm Fri-Sat, 12pm-9pm Sun',
             price: '$$',
             website: 'https://pryesbrewing.com',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1623983830921-6G4FZ19VMJN0AF8QTFNI/Q01A4799.JPG',
-              alt: 'Outdoor patio at Pryes Brewing with Mississippi River views',
-              credit: 'Pryes Brewing',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1623983830921-6G4FZ19VMJN0AF8QTFNI/Q01A4799.JPG',
+                alt: 'Outdoor patio at Pryes Brewing with Mississippi River views',
+                credit: 'Pryes Brewing',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1624989648255-GSHHA326O2FHEWH8Z5YP/Q01A9572.JPG',
+                alt: 'Pryes Brewing taproom interior',
+                credit: 'Pryes Brewing',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1626280240305-JDC9HFZBLL9A4N9A4ASK/Q01A3766.JPG',
+                alt: 'Pryes Brewing taproom seating area',
+                credit: 'Pryes Brewing',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1682618174861-EZX1KWZDB43N5PTGWMO1/Flight.jpg',
+                alt: 'Beer flight at Pryes Brewing',
+                credit: 'Pryes Brewing',
+              },
+            ],
           },
           {
             name: 'Grumpy\'s Northeast',
@@ -474,11 +578,28 @@ export const cities: CitiesIndex = {
             hours: '11am-2am daily',
             price: '$',
             website: 'https://grumpys-bar.com/',
-            image: {
-              src: 'https://mspmag.com/downloads/47272/download/Abrams_Grumpys-1111crop.jpg?cb=522bc8db81e14f92f404860401f2ac7f&w=1280',
-              alt: 'Classic dive bar interior at Grumpy\'s Northeast',
-              credit: 'Mpls.St.Paul Magazine / Caitlin Abrams',
-            },
+            images: [
+              {
+                src: 'https://mspmag.com/downloads/47272/download/Abrams_Grumpys-1111crop.jpg?cb=522bc8db81e14f92f404860401f2ac7f&w=1280',
+                alt: 'Classic dive bar interior at Grumpy\'s Northeast',
+                credit: 'Mpls.St.Paul Magazine / Caitlin Abrams',
+              },
+              {
+                src: 'https://mspmag.com/downloads/46418/download/01-Abrams_Grumpys-1382-1280.jpg?cb=e45a9298bb195ce5929ef9e17dcf5b56',
+                alt: 'Patrons at Grumpy\'s Northeast bar',
+                credit: 'Mpls.St.Paul Magazine / Caitlin Abrams',
+              },
+              {
+                src: 'https://mspmag.com/downloads/46419/download/02-Abrams_Paddy-2666-2-1280.jpg?cb=c886b551a720f3af028c7f8701a123e7',
+                alt: 'Bartender at Grumpy\'s Northeast',
+                credit: 'Mpls.St.Paul Magazine / Caitlin Abrams',
+              },
+              {
+                src: 'https://mspmag.com/downloads/46423/download/05-Abrams_Grumpys-1322-1280.jpg?cb=b042e251e06e39d9232bca491baf04fe',
+                alt: 'Grumpy\'s Northeast exterior daytime',
+                credit: 'Mpls.St.Paul Magazine / Caitlin Abrams',
+              },
+            ],
           },
         ],
       },
