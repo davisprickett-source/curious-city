@@ -8,6 +8,12 @@ export const phoenix_essays: Record<string, Essay> = {
       subtitle: 'A city that shouldn\'t exist, existing grandly anyway',
       author: 'Curious City',
       publishedAt: '2024-12-22',
+      heroImage: {
+        src: 'https://www.visitphoenix.com/imager/phoenix-desert-sprawl-aerial-sunset_8ad17d8b88f9a7f96aa41f5f80f5c0e1.jpg',
+        alt: 'Aerial view of Phoenix sprawl extending into Sonoran Desert at sunset',
+        credit: 'Visit Phoenix',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
