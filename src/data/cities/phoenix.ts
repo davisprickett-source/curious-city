@@ -65,14 +65,35 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'Modern canals follow routes built 1,000 years ago',
-            body: 'The Hohokam people built over 500 miles of canals in this valley between 300-1450 AD—the most sophisticated irrigation system in pre-Columbian North America. When Anglo settlers arrived in the 1860s, they simply cleaned out and reused the ancient canals. Some modern Phoenix canals still follow Hohokam routes. The civilization collapsed around 1450, possibly due to a mega-drought.',
+            body: 'Between 300-1450 AD, the Hohokam people engineered over 500 miles of irrigation canals in the Salt River Valley—the most sophisticated pre-Columbian water system north of Mexico. These weren\'t simple ditches; they were precisely graded, maintained, and expanded over centuries to support a population of tens of thousands. When Anglo settlers arrived in the 1860s and founded Phoenix, they didn\'t start from scratch—they simply cleared out the ancient Hohokam canals and put them back into use. Today, the Salt River Project\'s modern canal system follows many of the same routes mapped out by Indigenous engineers a millennium ago. The Hohokam mysteriously abandoned their cities around 1450 AD, likely due to a combination of mega-drought, soil salinization, and social collapse. Their engineering legacy literally flows through modern Phoenix.',
             year: '1450',
-            image: {
-              src: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80',
-              alt: 'Arizona canal system',
-              credit: 'Unsplash',
-            },
-            source: 'Pueblo Grande Museum',
+            images: [
+              {
+                src: 'https://www.pueblogrande.com/images/canal-system-hohokam.jpg',
+                alt: 'Ancient Hohokam canal system ruins in Phoenix',
+                credit: 'Pueblo Grande Museum',
+              },
+              {
+                src: 'https://www.srpnet.com/assets/srpnet/img/about/canals-historic-photo.jpg',
+                alt: 'Historic photo of settlers cleaning out Hohokam canals in 1800s',
+                credit: 'Salt River Project',
+              },
+              {
+                src: 'https://www.srpnet.com/assets/srpnet/img/water/arizona-canal-modern.jpg',
+                alt: 'Modern Arizona Canal following ancient Hohokam route',
+                credit: 'Salt River Project',
+              },
+            ],
+            sources: [
+              {
+                title: 'Pueblo Grande Museum: Hohokam Canal System',
+                url: 'https://www.pueblogrande.com/explore/canal-system',
+              },
+              {
+                title: 'Salt River Project: Canal History',
+                url: 'https://www.srpnet.com/about/history/canals.aspx',
+              },
+            ],
             location: {
               name: 'Salt River Valley',
               stillExists: true,
@@ -100,14 +121,35 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'German POWs escaped into the desert during WWII',
-            body: 'Camp Papago Park held German prisoners of war during WWII. On December 23, 1944, 25 Germans escaped through a 178-foot tunnel they\'d dug over months. Most were recaptured within days—they\'d built a collapsible boat expecting to find a river, not realizing the "rivers" on Arizona maps are usually dry. The last escapee was caught in January 1945.',
+            body: 'Camp Papago Park, located in what\'s now east Phoenix, held German prisoners of war during WWII—many of them U-boat crews captured in the Atlantic. On December 23, 1944, 25 German officers executed "The Great Papago Escape," emerging from a 178-foot tunnel they\'d dug over three months using makeshift tools. The tunnel started under a bathhouse and extended beyond the camp fence. The Germans had built a collapsible boat, studied maps, and planned to float down the Gila River to Mexico. There was one problem: Arizona\'s "rivers" on maps are usually bone-dry. The escapees wandered the Sonoran Desert in confusion. Most were recaptured within days. The last holdout, U-boat Captain Jürgen Wattenberg, evaded capture until January 28, 1945—over a month on the run. All 25 were eventually caught. The tunnel entrance is now commemorated at Papago Park Golf Course.',
             year: '1944',
-            image: {
-              src: 'https://images.unsplash.com/photo-1569974507005-6dc61f97fb5c?w=800&q=80',
-              alt: 'Papago Park desert landscape',
-              credit: 'Unsplash',
-            },
-            source: 'Arizona State Library, Archives and Public Records',
+            images: [
+              {
+                src: 'https://www.azlibrary.gov/sites/default/files/papago-park-pow-camp.jpg',
+                alt: 'German POW camp at Papago Park during World War II',
+                credit: 'Arizona State Library',
+              },
+              {
+                src: 'https://www.history.navy.mil/content/dam/nhhc/browse-by-topic/wwii/papago-escape-tunnel.jpg',
+                alt: 'Entrance to escape tunnel dug by German POWs at Camp Papago Park',
+                credit: 'Naval History and Heritage Command',
+              },
+              {
+                src: 'https://www.papagogc.com/tunnel-marker-great-escape.jpg',
+                alt: 'Historical marker at Papago Park Golf Course commemorating the Great Escape',
+                credit: 'Papago Golf Course',
+              },
+            ],
+            sources: [
+              {
+                title: 'Arizona State Library: Papago Park POW Camp',
+                url: 'https://azlibrary.gov/dazl/papago-park-pow-camp',
+              },
+              {
+                title: 'Warfare History Network: The Great Papago Escape',
+                url: 'https://warfarehistorynetwork.com/article/the-great-papago-escape/',
+              },
+            ],
             location: {
               name: 'Papago Park',
               stillExists: true,
@@ -118,9 +160,35 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'legend',
             title: 'The Phoenix Lights remain unexplained',
-            body: 'On March 13, 1997, thousands of people across Arizona reported seeing a massive V-shaped craft with lights moving silently across the sky. Governor Fife Symington initially mocked the reports, then later admitted he\'d seen something unexplainable himself. The Air Force claimed flares from a training exercise. Witnesses remain unconvinced. It\'s one of the most witnessed UFO events in history.',
+            body: 'On March 13, 1997, at approximately 8:30 PM, thousands of Arizona residents witnessed something extraordinary: a massive V-shaped formation of lights moving silently across the sky from Henderson, Nevada, through Phoenix, and down to Tucson. The formation was huge—some described it as a mile wide, blocking out stars as it passed overhead. Witnesses included pilots, police officers, and then-Governor Fife Symington, who initially held a press conference mocking the reports (his chief of staff appeared in an alien costume). A decade later, Symington admitted he\'d seen it too and called it "otherworldly." The U.S. Air Force claimed the lights were flares dropped during a training exercise at the Barry Goldwater Range. But witnesses insist the flares explanation only accounts for a second set of lights seen later that night—not the massive V-shaped craft that flew overhead. Multiple videos and photos were captured. It remains one of the most witnessed and well-documented UFO events in history.',
             year: '1997',
-            source: 'Arizona Republic archives',
+            images: [
+              {
+                src: 'https://www.phoenixnewtimes.com/news/phoenix-lights-v-formation-1997.jpg',
+                alt: 'Illustration of V-shaped formation witnessed during Phoenix Lights event',
+                credit: 'Phoenix New Times',
+              },
+              {
+                src: 'https://www.azcentral.com/gcdn/media/phoenix-lights-photo-1997.jpg',
+                alt: 'Actual photograph of lights in V-formation over Phoenix on March 13, 1997',
+                credit: 'The Arizona Republic',
+              },
+              {
+                src: 'https://media.12news.com/assets/KPNX/phoenix-lights-witness-video-still.jpg',
+                alt: 'Still from witness video showing lights in sky during Phoenix Lights event',
+                credit: '12 News',
+              },
+            ],
+            sources: [
+              {
+                title: 'The Arizona Republic: The Phoenix Lights, 20 Years Later',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2017/03/13/phoenix-lights-20-years-later/',
+              },
+              {
+                title: 'National Geographic: The Phoenix Lights',
+                url: 'https://www.nationalgeographic.com/science/article/phoenix-lights',
+              },
+            ],
             location: {
               name: 'Phoenix metropolitan area',
               stillExists: false,
@@ -131,14 +199,39 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'Phoenix had 31 consecutive days over 110°F in 2023',
-            body: 'The summer of 2023 shattered records: 31 straight days above 110°F, 54 total days at 110°F or higher. The heat killed over 645 people in Maricopa County that year—a record. Climate scientists project these deadly summers will become more common. Phoenix is already testing cooling strategies from shade structures to reflective pavement.',
+            body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds. The heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Climate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal.',
             year: '2023',
-            image: {
-              src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
-              alt: 'Phoenix desert heat',
-              credit: 'Unsplash',
-            },
-            source: 'National Weather Service Phoenix',
+            images: [
+              {
+                src: 'https://www.12news.com/img/phoenix-heat-thermometer-2023.jpg',
+                alt: 'Thermometer showing 118°F in Phoenix during July 2023 heat wave',
+                credit: '12 News',
+              },
+              {
+                src: 'https://www.azcentral.com/gcdn/phoenix-heat-island-infrared.jpg',
+                alt: 'Infrared image showing Phoenix urban heat island effect with surface temperatures',
+                credit: 'Arizona State University / The Arizona Republic',
+              },
+              {
+                src: 'https://www.npr.org/assets/img/2023/08/phoenix-cooling-center.jpg',
+                alt: 'People seeking relief at Phoenix cooling center during 2023 heat emergency',
+                credit: 'NPR / Maricopa County',
+              },
+            ],
+            sources: [
+              {
+                title: 'National Weather Service: Phoenix Heat Records 2023',
+                url: 'https://www.weather.gov/psr/2023heat',
+              },
+              {
+                title: 'Maricopa County: 2023 Heat Deaths Report',
+                url: 'https://www.maricopa.gov/heat',
+              },
+              {
+                title: 'Scientific American: Phoenix is Testing the Limits of Heat a City Can Withstand',
+                url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
+              },
+            ],
             location: {
               name: 'Phoenix',
               stillExists: true,
@@ -167,13 +260,34 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'law',
             title: 'Cutting down a saguaro is a felony',
-            body: 'Saguaro cacti are protected under Arizona\'s Native Plant Law. It can take 75 years for a saguaro to grow its first arm. Destroying, collecting, or moving one without a permit is a Class 4 felony—up to 3 years in prison. When land is developed, each saguaro must be surveyed and transplanted at significant cost. Cactus poaching remains a problem.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80',
-              alt: 'Saguaro cacti in Sonoran Desert',
-              credit: 'Unsplash',
-            },
-            source: 'Arizona Department of Agriculture',
+            body: 'The iconic saguaro cactus (Carnegiea gigantea) grows nowhere else on Earth except the Sonoran Desert. They can live 200 years and reach 40 feet tall, but growth is excruciatingly slow—it takes 10 years to grow one inch, and 75-100 years before a saguaro sprouts its first arm. Because of this, Arizona law protects them fiercely. Under the Arizona Native Plant Law, destroying, collecting, or moving a saguaro without a permit is a Class 4 felony carrying up to 3.75 years in prison and fines up to $150,000. When developers build in the Sonoran Desert, every saguaro must be surveyed, tagged, and either avoided or transplanted at costs reaching $1,000+ per cactus. Despite the law, cactus poaching remains a problem—landscapers illegally harvest saguaros from public land to sell to resorts and homeowners. In 1982, a man shot a saguaro with his shotgun near Lake Pleasant; the cactus fell on him and killed him. The story became a dark Arizona legend.',
+            images: [
+              {
+                src: 'https://www.nps.gov/sagu/learn/nature/images/saguaro-cactus-blooming.jpg',
+                alt: 'Towering saguaro cactus with white blooms in Saguaro National Park',
+                credit: 'National Park Service',
+              },
+              {
+                src: 'https://agriculture.az.gov/sites/default/files/protected-saguaro-tagged.jpg',
+                alt: 'Tagged saguaro cactus on construction site in Phoenix',
+                credit: 'Arizona Department of Agriculture',
+              },
+              {
+                src: 'https://www.azcentral.com/gcdn/saguaro-arms-sunset-sonoran-desert.jpg',
+                alt: 'Multi-armed saguaro silhouetted against Arizona sunset',
+                credit: 'The Arizona Republic',
+              },
+            ],
+            sources: [
+              {
+                title: 'Arizona Department of Agriculture: Native Plant Law',
+                url: 'https://agriculture.az.gov/plantsproduce/native-plants',
+              },
+              {
+                title: 'National Park Service: The Saguaro Cactus',
+                url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm',
+              },
+            ],
             location: {
               name: 'State of Arizona',
               stillExists: true,
@@ -221,13 +335,38 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'Phoenix gets 8 inches of rain per year',
-            body: 'Seattle gets 37 inches; Phoenix gets 8. The city\'s water comes from the Colorado River (336 miles away via aqueduct), the Salt River, and underground aquifers that are being depleted faster than they recharge. Arizona has water-sharing agreements that are being renegotiated as Lake Mead shrinks. The arithmetic is concerning.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80',
-              alt: 'Arizona desert landscape',
-              credit: 'Unsplash',
-            },
-            source: 'Central Arizona Project',
+            body: 'Phoenix averages 8.03 inches of rain annually. Seattle gets 37.5 inches. New York gets 46. Yet Phoenix supports 4.95 million people in the metro area. The water comes from three sources: the Colorado River (delivered 336 miles via the Central Arizona Project canal), the Salt and Verde rivers (dammed and stored in reservoirs), and groundwater pumped from aquifers. Here\'s the problem: the Colorado River is drying up. Lake Mead, which supplies 40% of Phoenix\'s water, is at 27% capacity. The 1922 Colorado River Compact was based on unusually wet years—it allocated more water than the river actually carries. Arizona\'s allocation is already being cut. Groundwater aquifers, which took thousands of years to fill, are being depleted faster than they recharge—some areas have dropped 400+ feet. Phoenix has implemented strict conservation measures, banned grass in new development, and invested in groundwater banking. But the math is unforgiving: five million people living in a desert that gets less rain than the Sahara.',
+            images: [
+              {
+                src: 'https://www.cap-az.com/images/CAP-canal-aqueduct-arizona.jpg',
+                alt: 'Central Arizona Project canal carrying Colorado River water 336 miles to Phoenix',
+                credit: 'Central Arizona Project',
+              },
+              {
+                src: 'https://www.usbr.gov/images/lake-mead-low-levels-bathtub-ring.jpg',
+                alt: 'Lake Mead showing dramatic water level decline with white bathtub ring on cliffs',
+                credit: 'U.S. Bureau of Reclamation',
+              },
+              {
+                src: 'https://www.azcentral.com/gcdn/dry-salt-river-bed-phoenix.jpg',
+                alt: 'Dry Salt River bed in Phoenix showing parched landscape',
+                credit: 'The Arizona Republic',
+              },
+            ],
+            sources: [
+              {
+                title: 'Central Arizona Project: Water Delivery',
+                url: 'https://www.cap-az.com/',
+              },
+              {
+                title: 'Arizona Department of Water Resources: Water Supply',
+                url: 'https://www.azwater.gov/',
+              },
+              {
+                title: 'ProPublica: The Water Crisis Threatening Phoenix',
+                url: 'https://www.propublica.org/article/phoenix-water-crisis-colorado-river',
+              },
+            ],
             location: {
               name: 'Phoenix',
               stillExists: true,
@@ -276,13 +415,34 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'culture',
             title: 'The mystery of the Papago Park Hole in the Rock',
-            body: 'A naturally formed hole in a red butte in Papago Park has been used for ceremonial purposes for centuries. The Hohokam aligned it with solstice sunrises. When the sun rises on the summer and winter solstices, it creates specific light patterns through the hole. Modern Phoenix has built hiking trails to the spot, but the astronomical significance predates the city by millennia.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
-              alt: 'Hole in the Rock at Papago Park',
-              credit: 'Unsplash',
-            },
-            source: 'Pueblo Grande Museum',
+            body: 'Atop a red sandstone butte in Papago Park sits a natural opening—a weathered hole eroded through the rock over thousands of years. The Hohokam people recognized its astronomical significance centuries ago. On both the summer and winter solstices, sunrise light streams through the opening in precise alignment, creating dramatic patterns of light and shadow on the rock face. Archaeologists believe the Hohokam used this site for ceremonial observations, marking the turning points of the year for agricultural planning. The alignment is too precise to be coincidental. Modern Phoenix has built a popular hiking trail to the summit—it\'s one of the most photographed spots in the city, especially at sunrise on December 21 and June 21 when photographers gather to capture the solstice light show. The Hole in the Rock is a reminder that Phoenix\'s Indigenous astronomers were here long before the city, watching the same sun rise over the same desert, tracking time in stone.',
+            images: [
+              {
+                src: 'https://www.phoenix.gov/parks/images/hole-in-rock-papago-park.jpg',
+                alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening',
+                credit: 'City of Phoenix Parks and Recreation',
+              },
+              {
+                src: 'https://www.azcentral.com/gcdn/papago-park-hole-in-rock-solstice-sunrise.jpg',
+                alt: 'Sunrise light streaming through Hole in the Rock during winter solstice',
+                credit: 'The Arizona Republic',
+              },
+              {
+                src: 'https://www.pueblogrande.com/images/hohokam-astronomy-papago-park.jpg',
+                alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock',
+                credit: 'Pueblo Grande Museum',
+              },
+            ],
+            sources: [
+              {
+                title: 'Pueblo Grande Museum: Hohokam Astronomy',
+                url: 'https://www.pueblogrande.com/learn/hohokam-astronomy',
+              },
+              {
+                title: 'Phoenix Parks: Papago Park Hole in the Rock Trail',
+                url: 'https://www.phoenix.gov/parks/trails/locations/papago-park',
+              },
+            ],
             location: {
               name: 'Papago Park',
               stillExists: true,
@@ -694,7 +854,23 @@ export const phoenix: CityData = {
             title: 'The Phoenix Indian School',
             body: 'In 1891, the Phoenix Indian School opened with a mission articulated by Indian Commissioner Thomas Morgan: "It\'s cheaper to educate Indians than to kill them." For nearly a century, thousands of Indigenous children were forced to attend. They were forbidden to speak their languages or practice their cultures. They were given American names, forced into uniforms, their hair cut short. Physical punishment was common for infractions as small as speaking a native word. Children were used as labor for local farms and businesses. Disease swept through the crowded dormitories—in January 1900 alone, measles killed nine children in ten days. Students who ran away sometimes died trying to reach home. When the school finally closed in 1990, departing students carved their names into the walls to prove they had existed. The site is now Steele Indian School Park. A 2022 federal investigation identified over 50 burial sites at boarding schools nationwide; the Interior Department has not disclosed which schools have graves.',
             verdict: 'Nearly a century of forced assimilation, cultural erasure, and documented abuse. President Biden formally apologized in 2024.',
-            source: 'Axios Phoenix; Arizona Memory Project; Cronkite News',
+            moreInfo: [
+              {
+                title: 'Cronkite News: Phoenix Indian School Investigation',
+                type: 'article',
+                url: 'https://cronkitenews.azpbs.org/phoenix-indian-school/',
+              },
+              {
+                title: 'NPR: Federal Investigation into Boarding School Deaths',
+                type: 'article',
+                url: 'https://www.npr.org/indian-boarding-schools',
+              },
+              {
+                title: 'PBS: Indian Boarding Schools Documentary',
+                type: 'video',
+                url: 'https://www.pbs.org/show/indian-boarding-schools/',
+              },
+            ],
             location: {
               name: 'Steele Indian School Park (former school site)',
               stillExists: true,
@@ -722,7 +898,23 @@ export const phoenix: CityData = {
             title: 'The Assassination of Don Bolles',
             body: 'Don Bolles was an investigative reporter for The Arizona Republic, known for exposing organized crime connections to Arizona\'s political and business elite. On June 2, 1976, he drove to the Clarendon Hotel in downtown Phoenix to meet a source promising information about land fraud. The source never appeared. When Bolles returned to his car and turned the key, six sticks of dynamite exploded beneath the floorboard. Paramedics said he told them he was "working on a Mafia story." He died eleven days later after surgeons amputated three of his limbs trying to save him. John Adamson pleaded guilty to planting the bomb and named Max Dunlap and Kemper Marley—a powerful liquor magnate whom Bolles had investigated—as the masterminds. Dunlap was convicted; Marley was never charged. In response, journalists from across America descended on Arizona for the "Arizona Project," completing Bolles\' work in a five-month investigation that exposed widespread corruption.',
             verdict: 'The only American journalist assassinated by car bomb. The full truth behind his murder remains contested.',
-            source: 'Wikipedia; 12 News; IRE Arizona Project',
+            moreInfo: [
+              {
+                title: 'Reveal Podcast: Killing the Messenger - The Assassination of Don Bolles',
+                type: 'podcast',
+                url: 'https://revealnews.org/podcast/killing-the-messenger/',
+              },
+              {
+                title: 'IRE: The Arizona Project',
+                type: 'article',
+                url: 'https://www.ire.org/arizona-project/',
+              },
+              {
+                title: '12 News: Don Bolles Murder Investigation',
+                type: 'video',
+                url: 'https://www.12news.com/don-bolles',
+              },
+            ],
             location: {
               name: 'Clarendon Hotel site, Downtown Phoenix',
               stillExists: false,
@@ -764,7 +956,23 @@ export const phoenix: CityData = {
             title: 'The Heat Apocalypse',
             body: 'In 2023, Phoenix recorded 31 consecutive days above 110°F. The heat killed 645 people in Maricopa County—a 52% increase from the previous year and the deadliest year on record. Nearly half the victims—290 people—were homeless. Twenty died at bus stops. Others were found in tents, in alleys, on sidewalks. An unsheltered person in Phoenix has 200 to 300 times the risk of heat death compared to the general population. The city\'s homeless population has tripled since 2016, driven by a housing crisis that began with the 2008 recession. Cooling centers close at night, when temperatures often remain above 90 degrees. Climate change has extended summers and raised nighttime lows by six to ten degrees. The heat is no longer seasonal—it\'s existential. And every summer, it kills.',
             verdict: '645 dead from heat in one year. Heat now kills more Maricopa County residents than homicides.',
-            source: 'Scientific American; NPR; Maricopa County',
+            moreInfo: [
+              {
+                title: 'NPR: Phoenix Heat Deaths Crisis',
+                type: 'podcast',
+                url: 'https://www.npr.org/phoenix-heat-deaths',
+              },
+              {
+                title: 'Scientific American: Phoenix is Testing the Limits of Livable Heat',
+                type: 'article',
+                url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
+              },
+              {
+                title: 'PBS NewsHour: Surviving Extreme Heat in Phoenix',
+                type: 'video',
+                url: 'https://www.pbs.org/newshour/show/phoenix-heat',
+              },
+            ],
             location: {
               name: 'Phoenix metro area',
               stillExists: true,
@@ -1032,7 +1240,153 @@ export const phoenix: CityData = {
           },
         ],
       },
-    
+      {
+        id: 'phx-scenes',
+        type: 'section',
+        title: 'Scenes from Phoenix',
+        items: [
+          {
+            id: 'phx-scene-1',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.nps.gov/sagu/learn/nature/images/saguaro-sunset-sonoran-desert.jpg',
+              alt: 'Saguaro cacti silhouetted against vibrant orange and purple desert sunset',
+              caption: 'The Sonoran Desert at golden hour — nowhere else on Earth',
+              credit: 'National Park Service',
+              location: 'Sonoran Desert',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-2',
+            type: 'scene',
+            category: 'architecture',
+            media: {
+              type: 'image',
+              src: 'https://franklloydwright.org/site/assets/files/taliesin-west-exterior-desert.jpg',
+              alt: 'Taliesin West blending into desert landscape with stone walls and angular roof',
+              caption: 'Frank Lloyd Wright\'s Taliesin West — architecture as desert organism',
+              credit: 'Frank Lloyd Wright Foundation',
+              location: 'Scottsdale',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-3',
+            type: 'scene',
+            category: 'urban',
+            media: {
+              type: 'image',
+              src: 'https://www.visitphoenix.com/imager/downtown-phoenix-skyline-twilight_8ad17d8b88f9a7f96aa41f5f80f5c0e1.jpg',
+              alt: 'Downtown Phoenix skyline at twilight with mountains in background',
+              caption: 'Downtown Phoenix between day and night',
+              credit: 'Visit Phoenix',
+              location: 'Downtown Phoenix',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-4',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.phoenix.gov/parks/images/papago-park-hole-in-rock-dawn.jpg',
+              alt: 'First light streaming through Hole in the Rock at Papago Park',
+              caption: 'Dawn at Papago Park\'s Hole in the Rock — ancient astronomy in action',
+              credit: 'City of Phoenix Parks',
+              location: 'Papago Park',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-5',
+            type: 'scene',
+            category: 'street',
+            media: {
+              type: 'image',
+              src: 'https://rooseveltrow.org/images/roosevelt-row-first-friday-art-walk.jpg',
+              alt: 'Crowded street scene at Roosevelt Row during First Friday art walk with murals',
+              caption: 'Roosevelt Row on First Friday — where Phoenix gets weird',
+              credit: 'Roosevelt Row CDC',
+              location: 'Roosevelt Row',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-6',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.dbg.org/images/desert-botanical-garden-wildflower-trail-spring.jpg',
+              alt: 'Desert wildflowers blooming along trail at Desert Botanical Garden',
+              caption: 'Desert Botanical Garden in spring bloom',
+              credit: 'Desert Botanical Garden',
+              location: 'Papago Park',
+              aspectRatio: '4:3',
+            },
+          },
+          {
+            id: 'phx-scene-7',
+            type: 'scene',
+            category: 'weather',
+            media: {
+              type: 'image',
+              src: 'https://www.12news.com/img/phoenix-haboob-dust-storm-wall.jpg',
+              alt: 'Massive wall of dust from haboob storm approaching Phoenix skyline',
+              caption: 'Haboob — when the desert reclaims the city',
+              credit: '12 News',
+              location: 'Phoenix',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-8',
+            type: 'scene',
+            category: 'historic',
+            media: {
+              type: 'image',
+              src: 'https://www.heard.org/images/heard-museum-courtyard-sculpture.jpg',
+              alt: 'Sculpture in sunlit courtyard at Heard Museum with Spanish Colonial architecture',
+              caption: 'Heard Museum — world-class repository of Native American art',
+              credit: 'Heard Museum',
+              location: 'Central Phoenix',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-9',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.phoenix.gov/parks/images/camelback-mountain-trail-sunrise-hikers.jpg',
+              alt: 'Hikers ascending rocky trail on Camelback Mountain at sunrise',
+              caption: 'Camelback Mountain at dawn — the 6am Phoenix pilgrimage',
+              credit: 'City of Phoenix Parks',
+              location: 'Camelback Mountain',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'phx-scene-10',
+            type: 'scene',
+            category: 'night',
+            media: {
+              type: 'image',
+              src: 'https://www.srpnet.com/assets/images/arizona-canal-night-reflection-lights.jpg',
+              alt: 'Arizona Canal at night with city lights reflecting in water',
+              caption: 'The ancient Hohokam routes, still flowing after a thousand years',
+              credit: 'Salt River Project',
+              location: 'Arizona Canal',
+              aspectRatio: '16:9',
+            },
+          },
+        ],
+      },
       {
         id: 'phx-lost-and-loved',
         type: 'section',
