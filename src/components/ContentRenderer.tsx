@@ -10,7 +10,6 @@ import {
   DarkHistoryRenderer,
   LostAndLovedRenderer,
   BestOfRenderer,
-  ThisWeekRenderer,
   SceneRenderer,
 } from './content'
 
@@ -92,7 +91,8 @@ function ContentItemRenderer({ item }: { item: ContentItem }) {
       return <DarkHistoryRenderer item={item} />
 
     case 'this-week':
-      return <ThisWeekRenderer item={item} />
+      // ThisWeek is deprecated - content should be in events
+      return null
 
     case 'events':
       // Events are handled by the EventTimeBuckets component on the dedicated events page

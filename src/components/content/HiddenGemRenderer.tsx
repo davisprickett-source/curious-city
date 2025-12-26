@@ -1,10 +1,14 @@
 import { HiddenGemContentItem } from '@/types/content'
+import { ImageCarousel } from '../ImageCarousel'
 
 interface HiddenGemRendererProps {
   item: HiddenGemContentItem
 }
 
 export function HiddenGemRenderer({ item }: HiddenGemRendererProps) {
+  // Support both images array and single image
+  const carouselImages = item.images || (item.image ? [item.image] : [])
+
   return (
     <article className="py-5 border-b border-neutral-100 last:border-b-0">
       <div className="space-y-3">
@@ -17,6 +21,11 @@ export function HiddenGemRenderer({ item }: HiddenGemRendererProps) {
             {item.category}
           </span>
         </div>
+
+        {/* Image carousel */}
+        {carouselImages.length > 0 && (
+          <ImageCarousel images={carouselImages} />
+        )}
 
         {/* Description */}
         <p className="text-neutral-600 text-[15px] leading-relaxed">

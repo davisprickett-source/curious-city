@@ -1,6 +1,6 @@
-import { Essay } from '@/types/content'
+import { History } from '@/types/content'
 
-export const salt_lake_city_essays: Record<string, Essay> = {
+export const salt_lake_city_history: Record<string, History> = {
     'zion-in-the-desert': {
       slug: 'zion-in-the-desert',
       citySlug: 'salt-lake-city',

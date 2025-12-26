@@ -1,27 +1,27 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAllCities } from '@/data/cities'
-import { getAllEssays } from '@/data/essays'
+import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
 import { Header, Footer } from '@/components'
 
 export default function HomePage() {
   const cities = getAllCities()
-  const essays = getAllEssays()
+  const history = getAllHistory()
 
-  // Sort essays by date, newest first
-  const sortedEssays = essays.sort((a, b) => {
+  // Sort history by date, newest first
+  const sortedHistory = history.sort((a, b) => {
     const dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0
     const dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0
     return dateB - dateA
   })
 
-  // Featured essay (most recent)
-  const featuredEssay = sortedEssays[0]
-  const featuredCity = featuredEssay ? getCity(featuredEssay.citySlug) : null
+  // Featured history article (most recent)
+  const featuredArticle = sortedHistory[0]
+  const featuredCity = featuredArticle ? getCity(featuredArticle.citySlug) : null
 
-  // Recent essays (next 4)
-  const recentEssays = sortedEssays.slice(1, 5)
+  // Recent history articles (next 4)
+  const recentHistory = sortedHistory.slice(1, 5)
 
   return (
     <>
@@ -43,30 +43,30 @@ export default function HomePage() {
               />
             </div>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Local content for curious people. Essays, guides, and hidden gems from cities across America.
+              Local content for curious people. History, guides, and hidden gems from cities across America.
             </p>
           </div>
 
-          {/* Featured Essay */}
-          {featuredEssay && (
+          {/* Featured History Article */}
+          {featuredArticle && (
             <section className="mb-12">
               <Link
-                href={`/${featuredEssay.citySlug}/essay/${featuredEssay.slug}`}
+                href={`/${featuredArticle.citySlug}/history/${featuredArticle.slug}`}
                 className="group block p-8 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl text-white hover:from-neutral-800 hover:to-neutral-700 transition-all duration-300 hover:shadow-2xl"
               >
                 <span className="kicker !text-accent-400">
-                  Featured Essay · {featuredCity?.name}
+                  Featured History · {featuredCity?.name}
                 </span>
                 <h2 className="text-2xl md:text-3xl font-semibold mt-3 mb-3 group-hover:text-neutral-200 transition-colors">
-                  {featuredEssay.title}
+                  {featuredArticle.title}
                 </h2>
-                {featuredEssay.subtitle && (
+                {featuredArticle.subtitle && (
                   <p className="text-neutral-300 text-lg italic mb-4">
-                    {featuredEssay.subtitle}
+                    {featuredArticle.subtitle}
                   </p>
                 )}
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-accent-300 group-hover:text-accent-200 transition-colors">
-                  Read essay
+                  Read article
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -75,15 +75,15 @@ export default function HomePage() {
             </section>
           )}
 
-          {/* Recent Essays */}
-          {recentEssays.length > 0 && (
+          {/* Recent History Articles */}
+          {recentHistory.length > 0 && (
             <section className="mb-12">
               <div className="flex items-center justify-between mb-5">
                 <h2 className="eyebrow text-neutral-500">
-                  Recent Essays
+                  Recent History
                 </h2>
                 <Link
-                  href="/essays"
+                  href="/history"
                   className="flex items-center gap-1 text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors"
                 >
                   View all
@@ -93,23 +93,23 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
-                {recentEssays.map((essay) => {
-                  const city = getCity(essay.citySlug)
+                {recentHistory.map((article) => {
+                  const city = getCity(article.citySlug)
                   return (
                     <Link
-                      key={`${essay.citySlug}-${essay.slug}`}
-                      href={`/${essay.citySlug}/essay/${essay.slug}`}
+                      key={`${article.citySlug}-${article.slug}`}
+                      href={`/${article.citySlug}/history/${article.slug}`}
                       className="group block p-5 bg-white rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
                     >
                       <span className="kicker">
                         {city?.name}
                       </span>
                       <h3 className="text-lg font-semibold text-neutral-900 mt-1 group-hover:text-accent-700 transition-colors ui-sans">
-                        {essay.title}
+                        {article.title}
                       </h3>
-                      {essay.subtitle && (
+                      {article.subtitle && (
                         <p className="text-sm text-neutral-500 mt-2 line-clamp-2">
-                          {essay.subtitle}
+                          {article.subtitle}
                         </p>
                       )}
                     </Link>
@@ -157,10 +157,10 @@ export default function HomePage() {
             </h2>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/essays"
+                href="/history"
                 className="px-5 py-2.5 bg-white border border-neutral-200 rounded-full text-sm font-medium text-neutral-700 hover:border-accent-300 hover:text-accent-700 hover:bg-accent-50 transition-all ui-sans"
               >
-                Essays
+                History
               </Link>
               <Link
                 href="/category/hidden-gems"

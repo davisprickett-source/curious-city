@@ -1,21 +1,21 @@
-import { EssayBlock } from '@/types/content'
+import { HistoryBlock } from '@/types/content'
 import { AdPlaceholder } from './AdPlaceholder'
 
-interface EssayRendererProps {
-  blocks: EssayBlock[]
+interface HistoryRendererProps {
+  blocks: HistoryBlock[]
 }
 
-export function EssayRenderer({ blocks }: EssayRendererProps) {
+export function HistoryRenderer({ blocks }: HistoryRendererProps) {
   return (
-    <div className="essay-content max-w-3xl xl:max-w-[52rem] mx-auto">
+    <div className="history-content max-w-3xl xl:max-w-[52rem] mx-auto">
       {blocks.map((block) => (
-        <EssayBlockRenderer key={block.id} block={block} />
+        <HistoryBlockRenderer key={block.id} block={block} />
       ))}
     </div>
   )
 }
 
-function EssayBlockRenderer({ block }: { block: EssayBlock }) {
+function HistoryBlockRenderer({ block }: { block: HistoryBlock }) {
   switch (block.type) {
     case 'paragraph':
       return (
@@ -75,7 +75,7 @@ function EssayBlockRenderer({ block }: { block: EssayBlock }) {
 
     default:
       const _exhaustiveCheck: never = block
-      console.warn('Unknown essay block type:', _exhaustiveCheck)
+      console.warn('Unknown history block type:', _exhaustiveCheck)
       return null
   }
 }

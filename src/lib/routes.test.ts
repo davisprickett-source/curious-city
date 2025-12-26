@@ -8,22 +8,22 @@ describe('routes', () => {
     })
   })
 
-  describe('essays', () => {
-    it('returns essays listing path', () => {
-      expect(routes.essays()).toBe('/essays')
+  describe('history', () => {
+    it('returns history listing path', () => {
+      expect(routes.history()).toBe('/history')
     })
   })
 
-  describe('essay', () => {
-    it('builds essay path from city and essay slugs', () => {
-      expect(routes.essay('minneapolis', 'meeting-of-waters')).toBe(
-        '/minneapolis/essay/meeting-of-waters'
+  describe('cityHistory', () => {
+    it('builds history path from city and history slugs', () => {
+      expect(routes.cityHistory('minneapolis', 'meeting-of-waters')).toBe(
+        '/minneapolis/history/meeting-of-waters'
       )
     })
 
     it('handles hyphenated city slugs', () => {
-      expect(routes.essay('salt-lake-city', 'zion-in-the-desert')).toBe(
-        '/salt-lake-city/essay/zion-in-the-desert'
+      expect(routes.cityHistory('salt-lake-city', 'zion-in-the-desert')).toBe(
+        '/salt-lake-city/history/zion-in-the-desert'
       )
     })
   })
@@ -35,12 +35,12 @@ describe('routes', () => {
   })
 
   describe('citySection', () => {
-    it('returns city root for essay section', () => {
-      expect(routes.citySection('denver', 'essay')).toBe('/denver')
+    it('returns city root for history section', () => {
+      expect(routes.citySection('denver', 'history')).toBe('/denver')
     })
 
     it('builds section path for other sections', () => {
-      expect(routes.citySection('denver', 'this-week')).toBe('/denver/this-week')
+      expect(routes.citySection('denver', 'events')).toBe('/denver/events')
       expect(routes.citySection('denver', 'hidden-gems')).toBe('/denver/hidden-gems')
       expect(routes.citySection('denver', 'dark-history')).toBe('/denver/dark-history')
     })
@@ -59,9 +59,9 @@ describe('citySections', () => {
     expect(citySections.length).toBe(10)
   })
 
-  it('essay section has empty path', () => {
-    const essay = citySections.find((s) => s.id === 'essay')
-    expect(essay?.path).toBe('')
+  it('history section has empty path', () => {
+    const history = citySections.find((s) => s.id === 'history')
+    expect(history?.path).toBe('')
   })
 
   it('all sections have id, label, and path', () => {

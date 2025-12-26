@@ -13,7 +13,6 @@ export {
   getCityHiddenGems,
   getCityBestOf,
   getCityDarkHistory,
-  getCityThisWeek,
   getCityEvents,
   getCityScenes,
   getCityLostAndLoved,

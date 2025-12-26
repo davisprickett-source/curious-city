@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { getAllEssays } from '@/data/essays'
+import { getAllHistory } from '@/data/history'
 import { getAllCities } from '@/data/cities'
 import { routes, citySections } from '@/lib/routes'
 
@@ -16,15 +16,15 @@ const cities = getAllCities()
   .map((city) => ({ slug: city.slug, name: city.name }))
   .sort((a, b) => a.name.localeCompare(b.name))
 
-// Get all essays grouped by city
-const allEssays = getAllEssays()
-const essaysByCity = allEssays.reduce((acc, essay) => {
-  if (!acc[essay.citySlug]) {
-    acc[essay.citySlug] = []
+// Get all history articles grouped by city
+const allHistory = getAllHistory()
+const historyByCity = allHistory.reduce((acc, article) => {
+  if (!acc[article.citySlug]) {
+    acc[article.citySlug] = []
   }
-  acc[essay.citySlug].push(essay)
+  acc[article.citySlug].push(article)
   return acc
-}, {} as Record<string, typeof allEssays>)
+}, {} as Record<string, typeof allHistory>)
 
 // City name lookup from data
 const cityNames = cities.reduce((acc, city) => {
@@ -53,8 +53,8 @@ export function Header({ cityName, citySlug }: HeaderProps) {
 
           {/* Navigation */}
           <nav className="flex items-center gap-1">
-            {/* Essays dropdown */}
-            <EssaysDropdown />
+            {/* History dropdown */}
+            <HistoryDropdown />
 
             {/* Cities dropdown */}
             <CitiesDropdown />
@@ -68,11 +68,11 @@ export function Header({ cityName, citySlug }: HeaderProps) {
   )
 }
 
-function EssaysDropdown() {
+function HistoryDropdown() {
   return (
     <div className="relative hidden sm:block group">
       <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-500 hover:text-accent-600 transition-colors">
-        Essays
+        History
         <svg className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
@@ -80,18 +80,18 @@ function EssaysDropdown() {
 
       {/* Dropdown */}
       <div className="absolute left-0 top-full mt-1 w-72 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 max-h-[70vh] overflow-y-auto">
-        {Object.entries(essaysByCity).map(([citySlug, cityEssays]) => (
+        {Object.entries(historyByCity).map(([citySlug, cityHistory]) => (
           <div key={citySlug}>
             <div className="px-4 py-2 text-xs font-semibold text-accent-600 uppercase tracking-wide">
               {cityNames[citySlug] || citySlug}
             </div>
-            {cityEssays.map((essay) => (
+            {cityHistory.map((article) => (
               <Link
-                key={essay.slug}
-                href={routes.essay(essay.citySlug, essay.slug)}
+                key={article.slug}
+                href={routes.cityHistory(article.citySlug, article.slug)}
                 className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
               >
-                {essay.title}
+                {article.title}
               </Link>
             ))}
           </div>
@@ -100,10 +100,10 @@ function EssaysDropdown() {
         <div className="my-2 border-t border-neutral-100" />
 
         <Link
-          href={routes.essays()}
+          href={routes.history()}
           className="flex items-center gap-1 px-4 py-2 text-sm text-accent-600 hover:bg-accent-50 font-medium"
         >
-          View all essays
+          View all history
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -197,12 +197,12 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
       {/* Mobile dropdown */}
       {isOpen && (
         <div className="absolute right-0 top-full mt-1 w-72 py-2 bg-white rounded-lg shadow-lg border border-neutral-200 max-h-[80vh] overflow-y-auto">
-          {/* Essays section */}
+          {/* History section */}
           <button
             onClick={() => setShowEssays(!showEssays)}
             className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50"
           >
-            Essays
+            History
             <svg
               className={`w-4 h-4 text-neutral-400 transition-transform ${showEssays ? 'rotate-180' : ''}`}
               fill="none"
@@ -215,29 +215,29 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
 
           {showEssays && (
             <div className="bg-neutral-50 py-1">
-              {Object.entries(essaysByCity).map(([citySlug, cityEssays]) => (
+              {Object.entries(historyByCity).map(([citySlug, cityHistory]) => (
                 <div key={citySlug}>
                   <div className="px-6 py-1 text-xs font-medium text-neutral-400 uppercase tracking-wide">
                     {cityNames[citySlug] || citySlug}
                   </div>
-                  {cityEssays.map((essay) => (
+                  {cityHistory.map((article) => (
                     <Link
-                      key={essay.slug}
-                      href={routes.essay(essay.citySlug, essay.slug)}
+                      key={article.slug}
+                      href={routes.cityHistory(article.citySlug, article.slug)}
                       onClick={() => setIsOpen(false)}
                       className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
                     >
-                      {essay.title}
+                      {article.title}
                     </Link>
                   ))}
                 </div>
               ))}
               <Link
-                href={routes.essays()}
+                href={routes.history()}
                 onClick={() => setIsOpen(false)}
                 className="block px-6 py-2 text-sm text-neutral-500 hover:bg-neutral-100"
               >
-                View all essays →
+                View all history →
               </Link>
             </div>
           )}

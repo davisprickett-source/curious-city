@@ -2,9 +2,12 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityScenes } from '@/data/cities'
 import { Header, CityNav, ShareLinks } from '@/components'
+import { ScenesCategoryFilter } from '@/components/ScenesCategoryFilter'
+import { SceneRenderer } from '@/components/content/SceneRenderer'
 
 interface PageProps {
   params: Promise<{ city: string }>
+  searchParams: Promise<{ category?: string }>
 }
 
 export async function generateStaticParams() {
@@ -30,22 +33,39 @@ const categoryLabels: Record<string, string> = {
   street: 'Street',
   architecture: 'Architecture',
   nature: 'Nature',
-  food: 'Food',
+  food: 'Food & Drink',
   people: 'People',
   night: 'After Dark',
   seasons: 'Seasons',
   historic: 'Historic',
+  interior: 'Interiors',
+  cityscape: 'Cityscape',
+  water: 'Waterfront',
+  neighborhood: 'Neighborhoods',
+  art: 'Art & Murals',
+  urban: 'Urban',
+  weather: 'Weather',
 }
 
-export default async function CityScenesPage({ params }: PageProps) {
+
+export default async function CityScenesPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
+  const { category: activeCategory } = await searchParams
   const city = getCity(slug)
 
   if (!city) {
     notFound()
   }
 
-  const scenes = getCityScenes(slug)
+  const allScenes = getCityScenes(slug)
+
+  // Get unique categories from available scenes
+  const availableCategories = Array.from(new Set(allScenes.map((s: any) => s.category).filter(Boolean)))
+
+  // Filter scenes by category if one is selected
+  const scenes = activeCategory
+    ? allScenes.filter((s: any) => s.category === activeCategory)
+    : allScenes
 
   return (
     <>
@@ -69,82 +89,32 @@ export default async function CityScenesPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* Scenes Grid */}
+          {/* Category Filter */}
+          {availableCategories.length > 1 && (
+            <ScenesCategoryFilter
+              categories={availableCategories}
+              categoryLabels={categoryLabels}
+              categoryIcons={{}}
+              activeCategory={activeCategory}
+              citySlug={slug}
+            />
+          )}
+
+          {/* Scenes List */}
           {scenes.length > 0 ? (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {scenes.map((scene: any) => (
-                <article
-                  key={scene.id}
-                  className="group relative bg-neutral-100 rounded-lg overflow-hidden"
-                >
-                  {scene.media.type === 'video' ? (
-                    <div className="relative aspect-video">
-                      <video
-                        src={scene.media.src}
-                        poster={scene.media.poster}
-                        controls
-                        className="w-full h-full object-cover"
-                        preload="metadata"
-                      />
-                      {scene.media.duration && (
-                        <span className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">
-                          {scene.media.duration}
-                        </span>
-                      )}
-                    </div>
-                  ) : (
-                    <div
-                      className={`relative ${
-                        scene.media.aspectRatio === '1:1'
-                          ? 'aspect-square'
-                          : scene.media.aspectRatio === '9:16'
-                          ? 'aspect-[9/16]'
-                          : scene.media.aspectRatio === '4:3'
-                          ? 'aspect-[4/3]'
-                          : 'aspect-video'
-                      }`}
-                    >
-                      <img
-                        src={scene.media.src}
-                        alt={scene.media.alt || scene.title || 'Scene from the city'}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    </div>
-                  )}
+            <div className="space-y-8">
+              {scenes.map((scene: any) => {
+                const isVideo = scene.media?.type === 'video'
 
-                  {/* Overlay content */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-
-                  {/* Content */}
-                  <div className="p-4">
-                    <div className="flex items-center gap-2 mb-2 flex-wrap">
-                      {scene.category && (
-                        <span className="text-xs font-medium text-neutral-500 uppercase tracking-wide">
-                          {categoryLabels[scene.category] || scene.category}
-                        </span>
-                      )}
-                      {scene.media.location && (
-                        <span className="text-xs text-neutral-400">
-                          {scene.media.location}
-                        </span>
-                      )}
-                    </div>
-                    {scene.title && (
-                      <h3 className="font-semibold text-neutral-900 mb-1">{scene.title}</h3>
-                    )}
-                    {(scene.description || scene.media.caption) && (
-                      <p className="text-sm text-neutral-600 leading-relaxed">
-                        {scene.description || scene.media.caption}
-                      </p>
-                    )}
-                    {scene.media.credit && (
-                      <p className="text-xs text-neutral-400 mt-2">
-                        Photo: {scene.media.credit}
-                      </p>
-                    )}
-                  </div>
-                </article>
-              ))}
+                return (
+                  <article
+                    key={scene.id}
+                    className="border-b border-neutral-200 pb-8 last:border-b-0"
+                  >
+                    <SceneRenderer item={scene} />
+                  </article>
+                )
+              })}
             </div>
           ) : (
             <div className="text-center py-12">

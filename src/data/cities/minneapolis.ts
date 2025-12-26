@@ -88,6 +88,10 @@ export const minneapolis: CityData = {
             title: 'A 70-mile labyrinth of tunnels runs beneath the city',
             body: 'Dating back to 1865, the Labyrinth is a massive tangle of telephone, gas, and trolley line tunnels so vast it has been compared to the Paris Catacombs. Most of it remains unexplored and largely forgotten. Century-old hydro power tunnels predate the Civil War in the St. Anthony Falls area. In 1992, a construction pile driver accidentally punched through one tunnel system, flooding basements across downtown. Many entrances have been walled off and completely lost to memory.',
             year: '1865',
+            video: {
+              youtubeId: '45mo-n0CV38',
+              title: 'Exploring the Underground Tunnels of Minneapolis and St. Paul',
+            },
             sources: [
               {
                 title: 'Minnesota Historical Society: Underground Minneapolis',
@@ -100,9 +104,9 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Downtown Minneapolis', stillExists: true },
             image: {
-              src: 'https://www.mnhs.org/sites/default/files/underground-tunnel-minneapolis.jpg',
-              alt: 'Historic underground utility tunnels beneath Minneapolis',
-              credit: 'Minnesota Historical Society',
+              src: 'https://live.staticflickr.com/65535/53803633600_deccfba914_b.jpg',
+              alt: 'Underground tunnel labyrinth beneath the Twin Cities',
+              credit: 'Free4allll via Flickr',
             },
           },
           {
@@ -112,11 +116,6 @@ export const minneapolis: CityData = {
             title: 'The deadliest industrial disaster in city history was caused by flour dust',
             body: 'On May 2, 1878, the Washburn A Mill — the largest flour mill in the world — exploded in a fireball heard ten miles away in St. Paul. The disaster killed 18 workers and destroyed six surrounding mills, wiping out a third of the city\'s milling capacity in an instant. The cause? Flour dust ignited by sparks from millstones running dry. The tragedy revolutionized milling safety worldwide and led to the invention of dust collectors. The ruins now house the Mill City Museum.',
             year: '1878',
-            image: {
-              src: 'https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?w=800',
-              alt: 'Mill City Museum ruins',
-              credit: 'Unsplash',
-            },
             source: 'Minnesota Historical Society',
             location: { name: 'Mill District', stillExists: true },
           },
@@ -142,11 +141,6 @@ export const minneapolis: CityData = {
                 url: 'https://www.mprnews.org/story/2022/05/11/minneapolis-st-anthony-twin-cities-history',
               },
             ],
-            image: {
-              src: 'https://www.mnhs.org/sites/default/files/st-anthony-falls-1865.jpg',
-              alt: 'St. Anthony and Minneapolis as separate cities in 1865',
-              credit: 'Minnesota Historical Society',
-            },
           },
           {
             id: 'curiosity-4',
@@ -165,11 +159,6 @@ export const minneapolis: CityData = {
                 url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota',
               },
             ],
-            image: {
-              src: 'https://cals.umn.edu/sites/cals.umn.edu/files/honeycrisp-apple-tree.jpg',
-              alt: 'Honeycrisp apples on the tree at University of Minnesota',
-              credit: 'University of Minnesota',
-            },
           },
           {
             id: 'curiosity-5',
@@ -202,11 +191,6 @@ export const minneapolis: CityData = {
             title: 'The world\'s largest skyway system connects 80 blocks',
             body: 'The Minneapolis Skyway System is the largest network of enclosed, climate-controlled pedestrian bridges on Earth, linking 80 blocks across 9.5 miles of downtown. The first skyway opened in 1962, built by real estate developer Leslie Park to compete with indoor shopping malls like Southdale Center (also a Minneapolis invention — the first enclosed mall in America). You can walk from one end of downtown to the other without ever stepping outside.',
             year: '1962',
-            image: {
-              src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
-              alt: 'Minneapolis skyway system interior',
-              credit: 'Unsplash',
-            },
             source: 'Minneapolis Downtown Council',
             location: { name: 'Downtown Minneapolis', stillExists: true },
           },
@@ -242,11 +226,6 @@ export const minneapolis: CityData = {
             category: 'nature',
             title: 'The only natural waterfall on the entire Mississippi River is here',
             body: 'St. Anthony Falls is the only natural major waterfall along the Mississippi\'s 2,340-mile journey from Minnesota to the Gulf of Mexico. It formed roughly 12,000 years ago about 10 miles downstream at Fort Snelling and has been slowly retreating upstream ever since — about 4 feet per year. The falls were originally 180-200 feet high but are now largely covered by a concrete "apron" to prevent further erosion. This waterfall is why Minneapolis exists: it provided the power that made the city the flour milling capital of the world.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?w=800',
-              alt: 'St. Anthony Falls on the Mississippi River',
-              credit: 'Unsplash',
-            },
             source: 'National Park Service',
             location: { name: 'St. Anthony Falls', stillExists: true },
           },
@@ -275,7 +254,7 @@ export const minneapolis: CityData = {
             category: 'law',
             title: 'A candidate was indicted for giving Twinkies to voters',
             body: 'A Minneapolis City Council candidate was once indicted by a grand jury for serving Twinkies to groups of elderly voters. The scandal led to the establishment of a fair campaign act that became commonly known as the "Twinkie Law." The law prohibits providing anything of value to voters within a certain distance of polling places.',
-            source: 'Minneapolis city records',
+            source: 'Minneapolis City Records',
           },
           {
             id: 'curiosity-15',
@@ -298,22 +277,12 @@ export const minneapolis: CityData = {
             type: 'hidden-gem',
             name: 'Mill City Museum',
             category: 'Museum',
-            description: 'Built into the ruins of a flour mill that once exploded. Take the elevator through the milling history, then explore the ruins with incredible river views. Don\'t miss the free viewing deck inside the Guthrie Theater nearby.',
+            description: 'This museum is literally built into the ruins of the Washburn A Mill, which exploded in 1878 in the deadliest industrial disaster in Minneapolis history. Eighteen workers died when flour dust ignited. Today, you ride an "flour tower" elevator through the ruins while learning the city\'s milling history — how Minneapolis became the flour capital of the world before the industry moved west. The rooftop observation deck offers stunning views of the Mississippi and the Stone Arch Bridge. Walk to the Guthrie Theater\'s free "Endless Bridge" viewing platform after for more river views.',
             images: [
               {
-                src: 'https://www.mnhs.org/sites/default/files/6/6/2/millcitymuseum_exterior_0.jpg',
-                alt: 'Mill City Museum built into historic Washburn A Mill ruins',
-                credit: 'Minnesota Historical Society',
-              },
-              {
-                src: 'https://live.staticflickr.com/4154/5176595890_c6d8bc19ba_b.jpg',
-                alt: 'Interior ruins at Mill City Museum with exposed limestone walls',
-                credit: 'Flickr / Denny Hanson',
-              },
-              {
-                src: 'https://www.mnhs.org/sites/default/files/millcity/millcitymuseum_exhibits.jpg',
-                alt: 'Mill City Museum exhibits inside historic mill building',
-                credit: 'Minnesota Historical Society',
+                src: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=1200&q=80',
+                alt: 'Historic mill building architecture',
+                credit: 'Unsplash',
               },
             ],
             address: '704 S 2nd St, Minneapolis, MN 55401',
@@ -329,22 +298,12 @@ export const minneapolis: CityData = {
             type: 'hidden-gem',
             name: 'Ingebretsen\'s',
             category: 'Shop',
-            description: 'A 100+ year old Scandinavian store with imported foods, gifts, and a meat market. Lefse, lutefisk, Swedish meatballs — this is where Minneapolis\' Nordic heritage lives.',
+            description: 'For over a century, Ingebretsen\'s has been the heart of Minneapolis\'s Scandinavian community. This is where you find lefse (Norwegian flatbread) made fresh, Swedish meatball mix from the butcher counter, lingonberry jam, and lutefisk for the adventurous. The gift shop carries traditional rosemaling, Dala horses, and wool sweaters from Norway. Minnesota and Wisconsin have more people of Norwegian and Swedish descent than anywhere outside Scandinavia, and this store is their cultural anchor. Around Christmas, the lines for holiday specialties stretch out the door.',
             images: [
               {
-                src: 'https://mspmag.com/downloads/28997/download/ingebretsens-foods-1280.jpg?cb=c38b9ad98ad2adf6ddec6a90e8b2e6bb',
-                alt: 'Ingebretsen\'s Scandinavian market shelves with imported goods',
-                credit: 'Mpls.St.Paul Magazine',
-              },
-              {
-                src: 'https://lh3.googleusercontent.com/p/AF1QipP-z5LNBz2rT-KoXwNi4p_jIjhTd4jK8LXX4CiP=s1360-w1360-h1020',
-                alt: 'Traditional Scandinavian gifts and crafts at Ingebretsen\'s',
-                credit: 'Google Maps',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/54b7b93ce4b0a3e130d5d232/1561576933569-QPQBG4LHFR7B6ZVCQP5N/ingebretsens.jpg',
-                alt: 'Butcher counter at Ingebretsen\'s Nordic Marketplace',
-                credit: 'Squarespace',
+                src: 'https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?w=1200&q=80',
+                alt: 'Scandinavian specialty shop storefront',
+                credit: 'Unsplash',
               },
             ],
             address: '1601 E Lake St, Minneapolis, MN 55407',
@@ -367,19 +326,9 @@ export const minneapolis: CityData = {
             description: 'Where the Mississippi and Minnesota rivers meet — a confluence sacred to the Dakota people. Hiking trails, river views, and the historic fort on the bluffs above.',
             images: [
               {
-                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/fort_snelling/images/confluence.jpg',
-                alt: 'Mississippi and Minnesota river confluence at Fort Snelling',
-                credit: 'Minnesota DNR',
-              },
-              {
-                src: 'https://lh3.googleusercontent.com/p/AF1QipOD0UtXM5aWPfLlp-rqrP7BgO_8GGKNnvrvSJwY=s1360-w1360-h1020',
-                alt: 'Hiking trails along Minnesota River at Fort Snelling State Park',
-                credit: 'Google Maps',
-              },
-              {
-                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/fort_snelling/images/pike_island_trail.jpg',
-                alt: 'Pike Island trail in Fort Snelling State Park',
-                credit: 'Minnesota DNR',
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+                alt: 'River confluence and natural landscape',
+                credit: 'Unsplash',
               },
             ],
             address: '101 Snelling Lake Rd, St Paul, MN 55111',
@@ -424,7 +373,7 @@ export const minneapolis: CityData = {
             type: 'hidden-gem',
             name: 'Wabasha Street Caves',
             category: 'Experience',
-            description: 'Former gangster speakeasy caves in St. Paul with swing dancing every Thursday night. A bizarre, uniquely Minneapolis-St. Paul experience.',
+            description: 'These sandstone caves have had many lives: 1840s mushroom farm, Prohibition speakeasy (allegedly frequented by Ma Barker, John Dillinger, and other gangsters), 1930s nightclub called Castle Royal, and now an event space. The caves stay a constant 52°F year-round. Every Thursday night, they host swing dancing in the main cavern — live bands, lessons for beginners, and an atmosphere you genuinely cannot replicate anywhere else. The guided cave tours tell stories of bootleggers, murder, and the gangster era of St. Paul when the city had a corrupt "O\'Connor Layover Agreement" that gave criminals safe haven.',
             images: [
               {
                 src: 'https://www.wabashastreetcaves.com/uploads/1/3/0/6/130645334/swing-dance-in-caves_orig.jpg',
@@ -489,7 +438,7 @@ export const minneapolis: CityData = {
             type: 'hidden-gem',
             name: 'Orfield Labs Quiet Chamber',
             category: 'Experience',
-            description: 'The world\'s quietest room, where silence becomes deafening. Visitors typically last 20-45 minutes before disorientation sets in. A bizarre, bucket-list sensory experience.',
+            description: 'Certified by Guinness as the quietest place on Earth, the anechoic chamber at Orfield Labs in South Minneapolis absorbs 99.99% of sound. The walls are covered in 3-foot wedges of fiberglass, and the floor is a suspended mesh you stand on. In the absence of external sound, you start hearing things you never knew existed: your heartbeat, blood flowing through your veins, the whoosh of your eyeballs moving in their sockets. Most people become disoriented within 30 minutes. Some hallucinate. NASA uses similar chambers to test astronauts. It\'s a genuinely surreal experience that challenges your sense of reality.',
             images: [
               {
                 src: 'https://i.dailymail.co.uk/i/pix/2015/01/04/24759CF500000578-0-image-a-40_1420372919963.jpg',
@@ -611,14 +560,14 @@ export const minneapolis: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Bars Worth Finding',
-        intro: 'Skip the North Loop crowds. These are the spots bartenders drink at after their shifts.',
+        intro: 'Minneapolis drinks differently than most cities. The bar scene here isn\'t about bottle service or rooftop infinity pools — it\'s about neighborhood spots where the bartender knows your name, speakeasies you find by following a stranger down an alley, and breweries where the Mississippi River is the only backdrop that matters. These are the places where Minneapolis unwinds.',
         spots: [
           {
             name: 'Volstead\'s Emporium',
             neighborhood: 'Uptown',
-            vibe: 'A speakeasy that actually earns the name. Live jazz on weekends, unmarked alley entrance.',
-            order: 'Dealer\'s choice — tell them what you like and trust the bartender.',
-            why: 'The entrance is in the alley behind Up-Down arcade. No sign, no phone number. Live jazz most weekends, excellent cocktails, and food that\'s better than speakeasy food has any right to be. One of the best atmospheres in the city.',
+            vibe: 'A speakeasy that actually earns the name. Hidden entrance through an alley, live jazz on weekends, and cocktails crafted by bartenders who take their work seriously without taking themselves seriously.',
+            order: 'Tell the bartender what you\'re in the mood for and trust the dealer\'s choice. They\'ll remember your preferences next time.',
+            why: 'Finding Volstead\'s is half the experience. Walk behind Up-Down arcade, through the alley, and look for the unmarked door. Inside, the 1920s fantasy is fully realized — velvet curtains, intimate booths, amber lighting, and jazz musicians playing in the corner on weekends. But it\'s not just aesthetic. The cocktails are meticulously crafted, the food is surprisingly excellent (the deviled eggs are legendary), and the staff treats every guest like a regular. This is what happens when a speakeasy concept is executed by people who actually care.',
             address: '711 W Lake St, Minneapolis, MN 55408',
             coordinates: { lat: 44.9487, lng: -93.2901 },
             hours: '6pm-1am Wed-Sun',
@@ -626,23 +575,18 @@ export const minneapolis: CityData = {
             website: 'https://www.volsteads.net/',
             images: [
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/646c1f6f28358f54b769ab1a/539ed628-998c-4bc7-be25-5a1a4a65af1f/Screen+Shot+2023-05-22+at+9.54.00+PM.png',
-                alt: 'Dimly lit speakeasy interior with vintage decor at Volstead\'s Emporium',
-                credit: 'Volstead\'s Emporium',
-              },
-              {
                 src: 'https://mspmag.com/downloads/24590/download/0216-SecretSpeakeasy_640.jpg?cb=5303b833f0951ea0a657d6eb226fcc1c&w=640',
-                alt: 'Volstead\'s Emporium speakeasy with vintage lighting and curtained booths',
-                credit: 'Mpls.St.Paul Magazine',
+                alt: 'Volstead\'s Emporium speakeasy interior — vintage lighting, curtained booths, and the bar where Prohibition-era cocktails are crafted',
+                credit: 'Mpls.St.Paul Magazine / Kevin J. Miyazaki',
               },
             ],
           },
           {
             name: 'Prohibition',
             neighborhood: 'Downtown',
-            vibe: 'Rooftop cocktails in a 1920s penthouse with skyline views through floor-to-ceiling windows.',
-            order: 'Classic cocktail with a view. The Old Fashioned is solid.',
-            why: 'Located near the top of the historic Foshay Tower — this was literally Wilbur Foshay\'s penthouse during Prohibition. The views are spectacular, the Art Deco details are original, and it feels like drinking in a different era.',
+            vibe: 'Drink in a 1920s penthouse with the best views in the city. Original Art Deco details, floor-to-ceiling windows, and the ghost of Wilbur Foshay\'s ambition.',
+            order: 'A classic Old Fashioned while watching the sun set over the Minneapolis skyline. Save room for a nightcap.',
+            why: 'This was literally Wilbur Foshay\'s private penthouse during actual Prohibition — the man who built the tower as a monument to himself before going to prison for fraud. The irony is delicious. Now it\'s one of the most spectacular drinking spaces in the Midwest: 27 floors up, Art Deco details preserved, views stretching to Wisconsin on clear nights. The cocktails are solid, the atmosphere is unmatched, and you\'re drinking in a piece of Minneapolis history that most residents don\'t even know exists.',
             address: '821 Marquette Ave, Minneapolis, MN 55402',
             coordinates: { lat: 44.9748, lng: -93.2714 },
             hours: '4pm-midnight Mon-Thu, 4pm-1am Fri-Sat',
@@ -669,9 +613,9 @@ export const minneapolis: CityData = {
           {
             name: 'Bumbling Fools Meadery',
             neighborhood: 'Northeast',
-            vibe: 'Hidden basement meadery with extremely limited hours. If you know, you know.',
-            order: 'Flight of meads — they rotate seasonally and the honey varietals are fascinating.',
-            why: 'Tucked in the basement of the Artblok Building, open only Thursdays 4-8pm and Saturdays 2-8pm. The meadmaker is usually there to talk you through what they\'re pouring. Feels like a secret club for people who care about fermented honey.',
+            vibe: 'A basement meadery with the energy of a secret society. Limited hours, rotating meads, and a meadmaker who genuinely wants to teach you about fermented honey.',
+            order: 'The flight. Always the flight. They rotate seasonal meads made from different honey varietals — clover, buckwheat, wildflower — and tasting them side by side is an education.',
+            why: 'Descend into the basement of the Artblok Building and you\'ll find something that shouldn\'t exist: a meadery so small it feels like a private club, run by people so passionate about fermented honey that every conversation becomes a lesson. The hours are limited (Thursday-Saturday only), the space holds maybe 20 people, and the meads range from bone-dry to dessert-sweet. The meadmaker is almost always there, happy to explain why buckwheat honey makes the most interesting mead or how the fermentation temperature affects flavor. This is drinking as craft appreciation.',
             address: '2010 E Hennepin Ave, Minneapolis, MN 55413',
             coordinates: { lat: 44.9919, lng: -93.2371 },
             hours: 'Thu 4-10pm, Fri 4-10pm, Sat 2-10pm',
@@ -703,9 +647,9 @@ export const minneapolis: CityData = {
           {
             name: 'Moto-i',
             neighborhood: 'Uptown',
-            vibe: 'The first sake brewpub outside Japan. Izakaya meets Minneapolis.',
-            order: 'Junmai sake flight and the pork belly buns. Trust the brewing.',
-            why: 'They brew sake on-site — actually brew it, not just serve it — making this the first sake brewpub outside of Japan. The izakaya food is legit, the atmosphere is lively, and it\'s one of the most genuinely unique drinking experiences in the Midwest.',
+            vibe: 'The first sake brewpub outside Japan. Not a theme restaurant — an actual brewery where Japanese tradition meets Minneapolis innovation.',
+            order: 'The Junmai sake flight to understand their range, then pork belly buns to soak it up. Stay for a second round.',
+            why: 'When Moto-i opened in 2009, they were literally the first sake brewpub outside of Japan. Not importing sake — brewing it, on-site, from Minnesota rice polished in-house. The izakaya menu is the real deal: pork belly buns that rival any you\'d find in Tokyo, handmade gyoza, ramen that rewards repeat visits. But the sake is the star. Watch it being made in the copper brewing vessels visible from the bar, then taste the difference between Junmai and Ginjo styles brewed hours ago. This is one of the most genuinely unique drinking experiences in the entire Midwest.',
             address: '2940 Lyndale Ave S, Minneapolis, MN 55408',
             coordinates: { lat: 44.9436, lng: -93.2882 },
             hours: '4pm-10pm Sun-Thu, 4pm-midnight Fri-Sat',
@@ -737,9 +681,9 @@ export const minneapolis: CityData = {
           {
             name: 'Flora Room',
             neighborhood: 'North Loop',
-            vibe: 'The space that used to be Marvel Bar, reborn with a botanical cocktail focus.',
-            order: 'Seasonal menu — whatever uses fresh herbs or house-made ingredients.',
-            why: 'Locals still call it "old Marvel Bar." The pedigree shows in every drink. Dark, intimate, serious about cocktails without being pretentious. One of the few North Loop spots that feels like it\'s for Minneapolis, not tourists.',
+            vibe: 'The heir to Marvel Bar\'s legacy. Intimate, botanical, and serious about cocktails without the pretension.',
+            order: 'Whatever\'s seasonal. The menu changes with what\'s fresh, and the bartenders are happiest when they can use house-made ingredients.',
+            why: 'Locals still whisper about Marvel Bar, the legendary cocktail destination that closed in 2023 after a decade of defining Minneapolis drinking culture. Flora Room inherited the space and the pedigree. The team brought a botanical focus — fresh herbs, house-made tinctures, seasonal ingredients — but kept Marvel\'s commitment to dark, intimate spaces and meticulously crafted drinks. It\'s one of the few North Loop spots that feels like it\'s for Minneapolis rather than for tourists. The cocktails reward attention, the staff remembers you after one visit, and there\'s a confidence here that comes from knowing exactly what they\'re doing.',
             address: '200 N 1st St, Minneapolis, MN 55401',
             coordinates: { lat: 44.9792, lng: -93.2698 },
             hours: '5pm-midnight daily',
@@ -769,45 +713,11 @@ export const minneapolis: CityData = {
             ],
           },
           {
-            name: 'Tattersall Distilling',
-            neighborhood: 'Northeast',
-            vibe: 'Award-winning craft distillery with a cocktail room that takes spirits seriously. (Minneapolis location closed November 2024)',
-            order: 'A cocktail featuring their Bootlegger Aquavit or the barrel-aged Old Fashioned.',
-            why: 'Tattersall has won more awards than any other craft distillery in the country. The cocktail room in the historic Thorp building felt industrial-chic without being pretentious. The distillery continues operations at their River Falls, WI location.',
-            address: '1620 Central Ave NE, Minneapolis, MN 55413',
-            coordinates: { lat: 44.9987, lng: -93.2476 },
-            hours: 'CLOSED (Minneapolis location)',
-            price: '$$',
-            website: 'https://tattersalldistilling.com/',
-            images: [
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564393975-U6RLH6B949BHSGGWHQ9N/Tattersall_10-21-15_Bar8.jpg',
-                alt: 'Tattersall Distilling cocktail room interior with antique chandelier',
-                credit: 'Bourbon Guy Blog',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445563949357-DBSPF5EE31FONU3YQU15/image-asset.jpeg',
-                alt: 'Craft cocktails at Tattersall Distilling',
-                credit: 'Bourbon Guy Blog',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564451827-TQW8LH6LMJYX2DQURDHW/Tattersall_10-21-15_Distillery3.jpg',
-                alt: 'Tattersall Distilling distillery equipment and copper stills',
-                credit: 'Bourbon Guy Blog',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/51379b83e4b02119d184b2a2/1445564123325-A74V43JEOOU1OIEFLOLU/image-asset.jpeg',
-                alt: 'Outdoor patio at Tattersall Distilling with historic guard tower',
-                credit: 'Bourbon Guy Blog',
-              },
-            ],
-          },
-          {
             name: 'Pryes Brewing',
             neighborhood: 'North Loop',
-            vibe: 'Massive brewery with a patio overlooking the Mississippi. Summer destination.',
-            order: 'Miraculum IPA on the patio. Watch the river.',
-            why: 'Yes, it gets packed on nice days — and for good reason. The patio views of the Mississippi are unmatched, the beer is consistently solid, and it\'s one of the few breweries that feels like an actual destination rather than just a taproom.',
+            vibe: 'Massive brewery with the best outdoor drinking views in Minneapolis. When the sun hits the Mississippi, this is where the city goes.',
+            order: 'Miraculum IPA on the patio. Let the river do the talking.',
+            why: 'Yes, it gets packed on summer weekends. Yes, you might wait for a table. But the reason is undeniable: Pryes has the single best outdoor drinking location in Minneapolis. The patio extends to the edge of the Mississippi, and on a warm evening, watching barges drift by while drinking locally-brewed beer feels like the whole point of summer. The Miraculum IPA is the flagship for good reason — balanced, drinkable, endlessly repeatable. The food is better than it needs to be. And unlike most trendy breweries, Pryes actually has the space to absorb the crowds without feeling claustrophobic.',
             address: '1401 West River Rd N, Minneapolis, MN 55411',
             coordinates: { lat: 44.9927, lng: -93.2849 },
             hours: '3pm-10pm Mon-Thu, 12pm-11pm Fri-Sat, 12pm-9pm Sun',
@@ -839,9 +749,9 @@ export const minneapolis: CityData = {
           {
             name: 'Grumpy\'s Northeast',
             neighborhood: 'Northeast',
-            vibe: 'Punk-adjacent neighborhood bar where the music is loud and the vibe is unbothered.',
-            order: 'A Nordeast tallboy and whatever\'s on the punk playlist.',
-            why: 'The original Grumpy\'s and still the best. Live music, cheap drinks, and a crowd that ranges from bike messengers to off-duty service workers. This is where Minneapolis keeps its weird.',
+            vibe: 'Punk-adjacent dive where the jukebox matters, the drinks are cheap, and nobody\'s trying to impress anyone.',
+            order: 'Nordeast tallboy, shot of Jameson. Don\'t overthink it.',
+            why: 'Grumpy\'s is where Minneapolis keeps its weird. The original Northeast location — before they expanded to other neighborhoods — is still the best: a genuine dive bar with a legendary jukebox, live music that ranges from punk to experimental, and a crowd that includes bike messengers, off-duty service workers, artists, musicians, and anyone else who\'s tired of craft cocktail culture. The drinks are cheap. The vibe is unpretentious. The pool table is always occupied. This is the Minneapolis that existed before the North Loop got trendy, and it refuses to change.',
             address: '2200 4th St NE, Minneapolis, MN 55418',
             coordinates: { lat: 44.9996, lng: -93.2574 },
             hours: '11am-2am daily',
@@ -956,198 +866,255 @@ export const minneapolis: CityData = {
         type: 'best-of',
         category: 'coffee-shops',
         title: 'Best Coffee in Minneapolis',
-        intro: 'Third-wave roasters, worker-owned gems, and the spots baristas actually drink at. Skip the chains.',
+        intro: 'Minneapolis takes its coffee seriously. Before "third wave" was a marketing term, local roasters were building something real — worker-owned collectives, roasting operations that span decades, and spaces that feel like extensions of the neighborhoods they serve. These aren\'t just places to get caffeinated. They\'re where the city thinks, works, and lingers.',
         spots: [
           {
-            name: 'Spyhouse Coffee - Whittier',
-            neighborhood: 'Whittier',
-            vibe: 'The original. Since 2000. Housed in a 1926 brownstone with tons of space, mid-century decor, and rotating local art.',
-            order: 'The Orion blend as a pour-over. Or trust whatever single-origin they\'re featuring.',
-            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. The Whittier location is where it all started — quirky nooks, ambient lighting, and the best energy of all their spots. Their roasting operation is serious — this isn\'t coffee as aesthetic, it\'s coffee as craft.',
-            address: '2451 Nicollet Ave, Minneapolis, MN 55404',
-            coordinates: { lat: 44.9595, lng: -93.2780 },
+            name: 'Spyhouse Coffee',
+            neighborhood: 'Multiple Locations',
+            vibe: 'The Minneapolis coffee institution. Since 2000, Spyhouse has been the standard-bearer for specialty coffee in the Twin Cities — serious about sourcing, meticulous about roasting, and consistent across every cup.',
+            order: 'The Orion blend as a pour-over is their signature, but trust whatever single-origin they\'re featuring. The baristas know the farm, the altitude, the processing method. Ask them.',
+            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. Founded by a collective of artists and coffee obsessives, it started in a 1926 Whittier brownstone and grew into the city\'s most influential roaster. Each location has its own personality — the original Whittier\'s quirky nooks and mid-century furniture, Northeast\'s soaring industrial ceilings, Uptown\'s prime people-watching, Downtown\'s refined hotel-lobby elegance — but they\'re all united by the same ethos: coffee as craft, not commodity. Their roasting operation supplies restaurants across the Midwest, but they still act like a neighborhood shop.',
             hours: '7am-6pm daily',
             price: '$$',
             website: 'https://spyhousecoffee.com',
             instagram: '@spyhousecoffee',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
-              alt: 'Spyhouse Coffee Whittier location in 1926 brownstone on Nicollet Ave',
-              credit: 'Spyhouse Coffee Roasters',
-            },
+            images: [
+              {
+                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
+                alt: 'Spyhouse Coffee Whittier location — the original — in a 1926 brownstone with mid-century decor',
+                credit: 'Spyhouse Coffee Roasters',
+              },
+              {
+                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Northeast_2048x2048.jpg?v=1530814135',
+                alt: 'Spyhouse Coffee Northeast in converted warehouse with industrial ceilings and natural light',
+                credit: 'Spyhouse Coffee Roasters',
+              },
+              {
+                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Uptown_2048x2048.jpg?v=1529889311',
+                alt: 'Spyhouse Coffee Uptown with bright modern interior on Hennepin Avenue',
+                credit: 'Spyhouse Coffee Roasters',
+              },
+              {
+                src: 'https://cdn.shopify.com/s/files/1/0266/4909/files/Emery_7_2048x2048.jpg?v=1555343491',
+                alt: 'Spyhouse Coffee Downtown inside Hotel Emery with refined lounge atmosphere',
+                credit: 'Spyhouse Coffee Roasters',
+              },
+            ],
+            locations: [
+              {
+                name: 'Whittier (The Original)',
+                address: '2451 Nicollet Ave, Minneapolis, MN 55404',
+                neighborhood: 'Whittier',
+                coordinates: { lat: 44.9595, lng: -93.2780 },
+                note: 'Where it all started. Best energy, quirky nooks, rotating local art.',
+              },
+              {
+                name: 'Northeast Arts District',
+                address: '945 Broadway St NE, Minneapolis, MN 55413',
+                neighborhood: 'Northeast',
+                coordinates: { lat: 44.9968, lng: -93.2567 },
+                note: 'Most seating. Industrial warehouse vibes. Ideal for remote work.',
+              },
+              {
+                name: 'Uptown',
+                address: '2404 Hennepin Ave, Minneapolis, MN 55405',
+                neighborhood: 'Uptown',
+                coordinates: { lat: 44.9547, lng: -93.2976 },
+                note: 'Bright, modern, buzzing. Prime people-watching.',
+              },
+              {
+                name: 'Downtown (Hotel Emery)',
+                address: '215 S 4th St, Minneapolis, MN 55401',
+                neighborhood: 'Downtown',
+                coordinates: { lat: 44.9798, lng: -93.2653 },
+                note: 'Most refined. Extended food menu. Great for meetings.',
+              },
+            ],
           },
           {
-            name: 'Spyhouse Coffee - Northeast',
-            neighborhood: 'Northeast Arts District',
-            vibe: 'Industrial warehouse space meets specialty coffee. High ceilings, lots of light, perfect for laptop work or people-watching.',
-            order: 'Espresso drinks shine here. The cortado is perfectly balanced.',
-            why: 'The Northeast location has the most seating of any Spyhouse, making it ideal for remote work. The Arts District location means you\'re surrounded by galleries, murals, and creative energy. Same excellent beans, different vibe.',
-            address: '945 Broadway St NE, Minneapolis, MN 55413',
-            coordinates: { lat: 44.9968, lng: -93.2567 },
-            hours: '7am-6pm daily',
-            price: '$$',
-            website: 'https://spyhousecoffee.com',
-            instagram: '@spyhousecoffee',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Northeast_2048x2048.jpg?v=1530814135',
-              alt: 'Spyhouse Coffee Northeast Arts District location with industrial warehouse space',
-              credit: 'Spyhouse Coffee Roasters',
-            },
-          },
-          {
-            name: 'Spyhouse Coffee - Uptown',
-            neighborhood: 'Uptown',
-            vibe: 'The Uptown location brings Spyhouse to one of Minneapolis\'s busiest neighborhoods. Sleek, modern, always buzzing.',
-            order: 'Cold brew on hot days, pour-over when you have time to sit.',
-            why: 'Perfectly positioned in the heart of Uptown for pre-shopping fuel or a midday break. The space is bright and modern, and the baristas are some of the most knowledgeable in the city. Prime people-watching real estate.',
-            address: '2404 Hennepin Ave, Minneapolis, MN 55405',
-            coordinates: { lat: 44.9547, lng: -93.2976 },
-            hours: '7am-6pm daily',
-            price: '$$',
-            website: 'https://spyhousecoffee.com',
-            instagram: '@spyhousecoffee',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Uptown_2048x2048.jpg?v=1529889311',
-              alt: 'Spyhouse Coffee Uptown location in 1909 brownstone on Hennepin Avenue',
-              credit: 'Spyhouse Coffee Roasters',
-            },
-          },
-          {
-            name: 'Spyhouse Coffee - Downtown',
-            neighborhood: 'Downtown / Hotel Emery',
-            vibe: 'Boutique hotel coffee bar meets specialty roaster. The most upscale Spyhouse with a lounge feel.',
-            order: 'Try one of their seasonal specials. The food menu is more extensive here.',
-            why: 'Located inside the Hotel Emery, this Spyhouse feels more refined than the other locations. Perfect for business meetings or a quiet morning before exploring downtown. Same great coffee, elevated atmosphere.',
-            address: '215 S 4th St, Minneapolis, MN 55401',
-            coordinates: { lat: 44.9798, lng: -93.2653 },
-            hours: '7am-6pm daily',
-            price: '$$',
-            website: 'https://spyhousecoffee.com',
-            instagram: '@spyhousecoffee',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/0266/4909/files/Emery_7_2048x2048.jpg?v=1555343491',
-              alt: 'Spyhouse Coffee Downtown location inside Hotel Emery',
-              credit: 'Spyhouse Coffee Roasters',
-            },
-          },
-          {
-            name: 'Dogwood Coffee - Northeast',
-            neighborhood: 'Northeast',
-            vibe: 'One of the oldest third-wave roasters in town. Serious about sourcing, unpretentious about everything else.',
-            order: 'Espresso, straight. Their beans are built for it.',
-            why: 'Dogwood has been quietly roasting exceptional coffee since before it was cool. No gimmicks, no influencer bait — just really, really good coffee from people who\'ve been doing this longer than most. This location is their roasting headquarters with great natural light for working.',
-            address: '1209 Tyler St NE, Minneapolis, MN 55413',
-            coordinates: { lat: 44.9951, lng: -93.2551 },
-            hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
+            name: 'Dogwood Coffee',
+            neighborhood: 'Northeast & Longfellow',
+            vibe: 'The quiet masters. Dogwood has been roasting exceptional coffee since 2009 — long before it was trendy — with a focus on direct trade relationships and impeccable technique.',
+            order: 'Espresso, straight. Their beans are built for it. The cortado is perfectly balanced. Pastries come from local bakeries.',
+            why: 'Dogwood doesn\'t do gimmicks. No influencer bait, no Instagram moments — just really, really good coffee from people who\'ve been doing this longer than most. Their Northeast location is the roasting headquarters, with light pouring through tall windows and the hum of the roaster in the background. The East Lake spot is quieter, more neighborhood, the kind of place where baristas know your order after two visits. Both share the same philosophy: sourcing exceptional beans, roasting them with precision, and serving them without pretense. This is what Minneapolis coffee culture looks like when it stops trying to impress anyone.',
             price: '$$',
             website: 'https://dogwoodcoffee.com',
             instagram: '@dogwoodcoffee',
             images: [
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-coffeebar-1168x780.jpg',
-                alt: 'Dogwood Coffee espresso bar with custom Synesso machine',
+                alt: 'Dogwood Coffee espresso bar with custom Synesso machine and warm wood finishes',
                 credit: 'Sprudge Coffee',
               },
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-cafe-532x780.jpg',
-                alt: 'Dogwood Coffee Northeast cafe interior',
+                alt: 'Dogwood Coffee Northeast cafe interior with communal seating and natural light',
                 credit: 'Sprudge Coffee',
               },
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-neon-520x780.jpg',
-                alt: 'Custom neon installation at Dogwood Coffee',
+                alt: 'Custom neon art installation at Dogwood Coffee Northeast',
                 credit: 'Sprudge Coffee',
+              },
+              {
+                src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-outside-cropped-1170x780.jpg',
+                alt: 'Dogwood Coffee East Lake exterior with clean modern signage',
+                credit: 'Sprudge Coffee',
+              },
+            ],
+            locations: [
+              {
+                name: 'Northeast (Roasting HQ)',
+                address: '1209 Tyler St NE, Minneapolis, MN 55413',
+                neighborhood: 'Northeast',
+                coordinates: { lat: 44.9951, lng: -93.2551 },
+                hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
+                note: 'Roasting headquarters. Great natural light for working.',
+              },
+              {
+                name: 'East Lake',
+                address: '4021 E Lake St, Minneapolis, MN 55406',
+                neighborhood: 'Longfellow',
+                coordinates: { lat: 44.9484, lng: -93.2104 },
+                hours: '7am-7pm Mon-Fri, 8am-7pm Sat, 8am-5pm Sun',
+                note: 'Quieter neighborhood spot. More parking. Loyal locals.',
               },
             ],
           },
           {
-            name: 'Dogwood Coffee - East Lake',
-            neighborhood: 'Longfellow',
-            vibe: 'Same exceptional roasting, neighborhood cafe vibes. The East Lake location has loyal locals and a slightly quieter atmosphere.',
-            order: 'Their signature drip or a cortado. Pastries are from local bakeries.',
-            why: 'The second Dogwood location brings the same quality coffee to South Minneapolis. Less crowded than Northeast, more parking, and the baristas know your order after two visits. Classic neighborhood spot.',
-            address: '4021 E Lake St, Minneapolis, MN 55406',
-            coordinates: { lat: 44.9484, lng: -93.2104 },
-            hours: '7am-7pm Mon-Fri, 8am-7pm Sat, 8am-5pm Sun',
-            price: '$$',
-            website: 'https://dogwoodcoffee.com',
-            instagram: '@dogwoodcoffee',
-            image: {
-              src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-outside-cropped-1170x780.jpg',
-              alt: 'Dogwood Coffee East Lake location exterior with clean modern design',
-              credit: 'Sprudge Coffee',
-            },
-          },
-          {
             name: 'Matchbox Coffee',
             neighborhood: 'Northeast',
-            vibe: 'Worker-owned, string lights, and the best cold press in the city. Small but mighty.',
-            order: 'The cold press. Trust us. Also the pastries from local bakers.',
-            why: 'A true neighborhood gem that happens to be worker-owned. The space is tiny but the vibes are 10/10 — cozy tables, warm lighting, and regulars who actually know each other. The cold press method they use is different from cold brew and it shows.',
+            vibe: 'Tiny, worker-owned, beloved. String lights draped overhead, the smell of fresh-baked pastries, and a cold press that converts cold brew skeptics.',
+            order: 'The cold press — it\'s different from cold brew and it shows. Also the pastries from local bakers. Don\'t skip them.',
+            why: 'Matchbox proves that great things come in small packages. This worker-owned cooperative fits maybe twenty people on a good day, and that\'s generous. But the tight quarters create something unexpected: community. Regulars actually know each other. Conversations spill between tables. The baristas remember your name after one visit. The cold press method they use extracts flavor differently than standard cold brew — brighter, more complex, somehow more alive. The pastries come from local bakers and they sell out. This is the Minneapolis coffee scene at its most idealistic: collectively owned, neighborhood-focused, and genuinely excellent. Get here early, settle in, and stay awhile.',
             address: '1306 2nd St NE, Minneapolis, MN 55413',
             coordinates: { lat: 44.9949, lng: -93.2596 },
             hours: '8am-5pm daily',
             price: '$$',
             website: 'https://matchboxcoffeeshop.com',
             instagram: '@matchboxcoffeempls',
-            image: {
-              src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
-              alt: 'Cozy coffee shop with string lights and warm wood accents',
-            },
+            images: [
+              {
+                src: 'https://becomingemployeeowned.org/wp-content/uploads/2003/11/Matchbox-Coffeeshop.png',
+                alt: 'Matchbox Coffee Shop interior with cozy worker-owned cafe atmosphere in Northeast Minneapolis',
+                credit: 'Becoming Employee Owned',
+              },
+            ],
           },
           {
             name: 'Backstory Coffee Roasters',
             neighborhood: 'North Loop',
-            vibe: 'The most beautiful coffee shop in Minneapolis. Soaring ceilings, lush greenery, serious roasting operation.',
-            order: 'Seasonal single-origin pour-over. Sit by the plants.',
-            why: 'Walking into Backstory feels like entering a different world — flora everywhere, luxe finishes, light pouring through massive windows. They\'ve been roasting since 2012 and it shows. Yes, it\'s aesthetic, but the coffee actually backs it up. Go early before the laptop crowd claims every seat.',
+            vibe: 'The most beautiful coffee shop in Minneapolis, and the coffee actually backs it up. Soaring ceilings, lush greenery cascading from every surface, light pouring through massive windows.',
+            order: 'Seasonal single-origin pour-over. Sit by the plants. Let the light hit your face. Order a pastry. This is a moment.',
+            why: 'Walking into Backstory feels like entering a different world. Flora everywhere — massive fiddle-leaf figs, trailing pothos, succulents on every surface. Luxe finishes. Light pouring through floor-to-ceiling windows in the morning. It\'s gorgeous, and if that were all it had, you might dismiss it. But Backstory has been roasting since 2012, and their sourcing relationships run deep. The pour-overs are precise. The espresso is dialed in perfectly. They\'re not just photogenic — they\'re one of the best roasters in the city. Go early, before the laptop crowd claims every communal table. Order at the counter, find a spot by the plants, and settle in. This is specialty coffee done with ambition.',
             address: '528 N Washington Ave, Minneapolis, MN 55401',
             coordinates: { lat: 44.9847, lng: -93.2738 },
             hours: '7am-5pm daily',
             price: '$$$',
             website: 'https://backstory.coffee',
             instagram: '@backstorycoffee',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/1583/5049/files/Backstory_Coffee_Roasters_North_Loop_web-5_480x480.jpg?v=1659814438',
-              alt: 'Backstory Coffee Roasters North Loop interior with modern industrial design',
-              credit: 'Backstory Coffee Roasters',
-            },
+            images: [
+              {
+                src: 'https://cdn.shopify.com/s/files/1/1583/5049/files/Backstory_Coffee_Roasters_North_Loop_web-5_480x480.jpg?v=1659814438',
+                alt: 'Backstory Coffee Roasters North Loop interior with dramatic plants and natural light',
+                credit: 'Backstory Coffee Roasters',
+              },
+              {
+                src: 'https://dailycoffeenews.com/wp-content/uploads/2022/11/Backstory-Coffee-Minneapolis-bar.jpg',
+                alt: 'Backstory Coffee bar area with La Marzocco espresso machine and greenery',
+                credit: 'Daily Coffee News',
+              },
+              {
+                src: 'https://dailycoffeenews.com/wp-content/uploads/2022/11/Backstory-Coffee-Minneapolis-Duffey.jpg',
+                alt: 'Backstory Coffee inside The Duffey building with high ceilings and plants',
+                credit: 'Daily Coffee News',
+              },
+              {
+                src: 'https://dailycoffeenews.com/wp-content/uploads/2022/11/Backstory-Coffee-Minneapolis-barista.jpg',
+                alt: 'Barista preparing drinks at Backstory Coffee Roasters',
+                credit: 'Daily Coffee News',
+              },
+            ],
           },
           {
             name: 'Isles Bun & Coffee',
             neighborhood: 'Uptown',
-            vibe: 'The cinnamon roll is bigger than your face. Literally award-winning. The coffee is almost an afterthought.',
-            order: 'The cinnamon roll. You came for the cinnamon roll. Get coffee too.',
-            why: 'Their cinnamon bun won World\'s Best Cinnamon Roll in 2024. It\'s obscene. The coffee is actually good too — solid espresso drinks and drip — but let\'s be honest, you\'re here for the pastry. Arrive early or accept disappointment.',
+            vibe: 'The cinnamon roll is bigger than your face. Literally award-winning — World\'s Best Cinnamon Roll 2024. The coffee is almost an afterthought, but it\'s actually good too.',
+            order: 'The cinnamon roll. You came for the cinnamon roll. But really, get coffee too — solid espresso drinks and drip that don\'t embarrass themselves next to the pastry.',
+            why: 'Let\'s be honest: you\'re coming here for one thing, and it won World\'s Best Cinnamon Roll in 2024. The Isles bun is obscene — layers of butter-laminated dough, cinnamon swirled through every fold, cream cheese frosting that pools in the center. It takes two days to make each batch. They sell out regularly. Lines form on weekend mornings. This is a Minneapolis pilgrimage. But here\'s what surprises people: the coffee is actually excellent. Solid espresso drinks, smooth drip, baristas who care. The space is bright and welcoming, with a few tables and a counter. Come Wednesday through Sunday — they\'re closed Monday and Tuesday — and arrive early. Accept no substitutes. This is the one.',
             address: '1424 W 28th St, Minneapolis, MN 55408',
             coordinates: { lat: 44.9524, lng: -93.2941 },
-            hours: '7am-2pm Wed-Sun',
+            hours: '7am-2pm Wed-Sun (Closed Mon-Tue)',
             price: '$$',
             website: 'https://islesbun.com',
             instagram: '@islesbun',
-            image: {
-              src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-2.png',
-              alt: 'Isles Bun & Coffee award-winning cinnamon rolls with cream cheese frosting',
-              credit: 'World\'s Best Cinnamon Rolls',
-            },
+            images: [
+              {
+                src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-2.png',
+                alt: 'Isles Bun & Coffee — 2024 World\'s Best Cinnamon Rolls — trays of fresh-baked cinnamon rolls',
+                credit: 'World\'s Best Cinnamon Rolls',
+              },
+              {
+                src: 'https://hipsterhack.blog/wp-content/uploads/2019/04/img_8633.jpg',
+                alt: 'Isles Bun & Coffee bakery counter with fresh pastries in Uptown Minneapolis',
+                credit: 'Hipster Hack',
+              },
+              {
+                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Cinnamon-Roll.jpg',
+                alt: 'Massive cinnamon roll with tangy cream cheese frosting at Isles Bun & Coffee',
+                credit: 'Roadfood',
+              },
+              {
+                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Exterior.jpg',
+                alt: 'Isles Bun & Coffee storefront near Lake of the Isles',
+                credit: 'Roadfood',
+              },
+              {
+                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Interior.jpg',
+                alt: 'Cozy interior of Isles Bun & Coffee with open kitchen',
+                credit: 'Roadfood',
+              },
+            ],
           },
           {
             name: 'Northern Coffeeworks',
-            neighborhood: 'Nokomis / Powderhorn',
-            vibe: 'All coffee roasted in-house. Blends named after Minnesota landmarks. Quiet and productive.',
-            order: 'The "Boundary Waters" blend. Fitting.',
-            why: 'If you want to actually get work done, this is the spot. Near Lake Nokomis, away from the trendy neighborhoods, with coffee that takes its Minnesota identity seriously — blends like "Cabin Vibes" and "Evergreen" that actually taste like they sound. Regulars are real neighbors, not laptop nomads.',
+            neighborhood: 'Nokomis',
+            vibe: 'Blends named after Minnesota landmarks. All coffee roasted in-house. The kind of neighborhood spot where regulars are real neighbors, not laptop nomads passing through.',
+            order: 'The "Boundary Waters" blend is the move — earthy, smooth, tastes like a cabin morning. Or try "Cabin Vibes" if you want something lighter.',
+            why: 'Northern Coffeeworks feels like a secret, even though it\'s been here for years. Near Lake Nokomis, away from the trendy neighborhoods, this is where Minneapolis goes when it wants to actually get work done. The roasting operation is serious — all in-house, all carefully sourced — but the vibe is decidedly not. It\'s quiet. Productive. The kind of place where you can hear yourself think. The blends take their Minnesota identity seriously: "Boundary Waters," "Evergreen," "Cabin Vibes." They taste like they sound. The regulars are actual neighbors, people who walk here from the surrounding blocks, not Instagram tourists. If you want third-wave craft without third-wave attitude, this is it.',
             address: '4208 28th Ave S, Minneapolis, MN 55406',
             coordinates: { lat: 44.9332, lng: -93.2305 },
             hours: '7am-4pm daily',
             price: '$$',
             website: 'https://www.northerncoffeeworks.com',
             instagram: '@northerncoffeeworks',
-            image: {
-              src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/Northern_Coffeeworks_Jamie_Cooper_2024_Minneapolis_500x.png?v=1731947718',
-              alt: 'Northern Coffeeworks Minneapolis coffee shop interior',
-              credit: 'Northern Coffeeworks',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/59386797f7e0ab94fc2a2b08/1603117984789-DO8PY2ZX6N99EVAOIVAH/Northern%252BCoffeeworks%252B3.jpg',
+                alt: 'Northern Coffeeworks interior with Scandinavian-inspired design and natural light',
+                credit: 'HCM Architects',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-interior-650x433.jpg',
+                alt: 'Northern Coffeeworks seating area with warm neighborhood atmosphere',
+                credit: 'Heavy Table',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-counter-650x433.jpg',
+                alt: 'Northern Coffeeworks counter with espresso machine and fresh pastries',
+                credit: 'Heavy Table',
+              },
+              {
+                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-latte-650x433.jpg',
+                alt: 'Perfectly poured latte at Northern Coffeeworks',
+                credit: 'Heavy Table',
+              },
+              {
+                src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/bwcabag.jpg?v=1705357884',
+                alt: 'Boundary Waters blend coffee bag from Northern Coffeeworks',
+                credit: 'Northern Coffeeworks',
+              },
+            ],
           },
         ],
       },
@@ -1161,132 +1128,191 @@ export const minneapolis: CityData = {
           {
             name: 'Owamni',
             neighborhood: 'Downtown',
-            vibe: 'James Beard Award-winning Indigenous cuisine overlooking the Mississippi.',
-            order: 'Bison ribeye and the spoon cake. Try the wild teas. Trust the seasonal menu.',
-            why: 'This is not fusion or interpretation — it\'s the real thing. Chef Sean Sherman\'s menu features ingredients indigenous to North America, no dairy, no wheat, no colonial crops. Absolutely worth the splurge, but book well in advance or try for bar seating.',
+            vibe: 'James Beard Award-winning Indigenous cuisine overlooking the Mississippi. The most important restaurant in Minneapolis, and maybe the country.',
+            order: 'The bison ribeye is the flagship — dry-aged, seared perfectly, served with indigenous accompaniments that make beef feel like a pale imitation. The spoon cake for dessert is non-negotiable. Trust the wild teas. Trust the seasonal menu. Trust everything.',
+            why: 'This isn\'t fusion. It\'s not interpretation. It\'s not inspired by Indigenous cuisine — it IS Indigenous cuisine, prepared by Indigenous chefs using only ingredients that existed on this continent before colonization. No dairy. No wheat. No cane sugar. No beef, pork, or chicken. Instead: bison, elk, duck, wild rice, maple, sumac, cedar, foraged plants from the forests that once covered this land. Chef Sean Sherman spent years researching pre-colonial foodways, partnering with tribal nations, and building supply chains with Indigenous producers across North America. The 2022 James Beard Award for Best New Restaurant was just recognition of what diners already knew: this is revolutionary. The restaurant overlooks Owámniyomni — St. Anthony Falls — the sacred Dakota site that gave Minneapolis its original name. Every detail matters. Every dish tells a story of survival, resistance, and reclamation. Come with respect, leave transformed.',
             address: '420 S 1st St, Minneapolis, MN 55401',
             coordinates: { lat: 44.9789, lng: -93.2569 },
             hours: '5pm-9pm Wed-Sun',
             price: '$$$$',
             website: 'https://owamni.com',
-            image: {
-              src: 'https://mspmag.com/downloads/51927/download/Duck-pemmican.jpg?cb=14891e609cfc379cb87460e30dc5d569',
-              alt: 'Indigenous duck pemmican dish at Owamni',
-              credit: 'Mpls.St.Paul Magazine',
-            },
+            images: [
+              {
+                src: 'https://mspmag.com/downloads/51927/download/Duck-pemmican.jpg?cb=14891e609cfc379cb87460e30dc5d569',
+                alt: 'Indigenous duck pemmican dish with foraged accompaniments at Owamni',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+            ],
           },
           {
             name: 'Matt\'s Bar',
             neighborhood: 'Powderhorn',
-            vibe: 'The birthplace of the Jucy Lucy. Cash only, no frills, pure Minneapolis.',
-            order: 'The Jucy Lucy. Cheese is inside the patty. It\'s molten. Wait for it to cool.',
-            why: 'Matt\'s has been making the Jucy Lucy since the 1950s — a burger with the cheese stuffed inside the patty so it becomes a pocket of molten cheddar. They\'ll warn you it\'s hot. Listen to them. This is a Minneapolis pilgrimage.',
+            vibe: 'The birthplace of the Jucy Lucy. Cash only, no pretense, pure Minneapolis legend. The kind of dive where the walls have stories and the grill has decades of seasoning.',
+            order: 'The Jucy Lucy — spelled that way for a reason — cheese stuffed INSIDE the patty, molten and dangerous. They\'ll warn you to wait. Listen to them. You\'ll need napkins. Get the fries while the burger cools.',
+            why: 'Here\'s the thing about Matt\'s Bar: they\'ve been making the exact same burger the exact same way since the 1950s, when a customer asked for "two patties with cheese in the middle" and Matt Bristol crimped the edges, threw it on the grill, and changed Minneapolis food history forever. The moment that first customer bit in and molten American cheese erupted onto his shirt, he allegedly yelled "That\'s one juicy Lucy!" — and the name stuck (misspelling and all). The Jucy Lucy has been featured on Food Network, Travel Channel, and every burger pilgrimage list ever written. President Obama ate here in 2014. But Matt\'s doesn\'t care about fame. They care about the same thing they\'ve always cared about: perfectly seasoned beef, perfectly melted cheese, perfectly simple execution. Cash only. No credit. No pretense. This is what Minneapolis tastes like at its most honest.',
             address: '3500 Cedar Ave S, Minneapolis, MN 55407',
             coordinates: { lat: 44.9356, lng: -93.2472 },
             hours: '11am-midnight daily',
             price: '$',
-            image: {
-              src: 'https://www.mattsbar.com/MATTS_5-2021_IMG_9746.jpg',
-              alt: 'Matt\'s Bar home of the original Jucy Lucy',
-              credit: 'Matt\'s Bar',
-            },
+            website: 'https://mattsbar.com',
+            images: [
+              {
+                src: 'https://www.mattsbar.com/MATTS_5-2021_IMG_9746.jpg',
+                alt: 'Matt\'s Bar exterior — home of the original Jucy Lucy since the 1950s',
+                credit: 'Matt\'s Bar',
+              },
+            ],
           },
           {
             name: 'Hmong Village',
             neighborhood: 'East Side (St. Paul)',
-            vibe: 'Massive indoor food market with dozens of Hmong vendors. The real deal.',
-            order: 'Papaya salad, larb, and a smoothie from one of the fruit stands. Wander and explore.',
-            why: 'Minnesota and Wisconsin have the largest Hmong populations in the country, and this is where to experience it. Rows of vendors selling everything from pho to grilled meats to fresh produce. Come hungry, bring cash, and prepare to be overwhelmed in the best way.',
+            vibe: 'Massive indoor food market with over 250 Hmong and Southeast Asian vendors. Not a food hall — a culture, a community, a world unto itself. The most overwhelming and rewarding food experience in the Twin Cities.',
+            order: 'Start with papaya salad from Mai\'s Kitchen — the crunch, the fish sauce, the lime, the chili heat building. Then the "crazy steak" from Santi\'s: grilled meat sizzling on a hot plate with onions and jalapeños. Sticky rice with grilled meats from Lucki\'s Kitchen. Pho from any of the dozen pho vendors. Fresh-baked coconut waffles. Stuffed chicken wings (deboned, filled with glass noodles, fried until crispy). Bubble tea. Durian smoothies. Just... wander.',
+            why: 'Minnesota and Wisconsin have the largest Hmong populations in the country — over 90,000 people in the Twin Cities alone — and Hmong Village is where that community gathers, shops, and eats. Chef Yia Vang, who grew up eating at these stalls, calls it "iconic — the moment you step in, it\'s like you\'re in a bazaar in Laos or Thailand." The fluorescent lights, the sizzle of grills, vendors calling out in Hmong and English, families carrying grocery bags overflowing with lemongrass and galangal. Over 250 vendors sell everything from pho to live fish to gold jewelry to traditional clothing. The food is cheap, authentic, and absolutely incredible. Come with no plan. Come hungry. Bring cash. Get overwhelmed. Get lost. Find things you\'ve never tried. This is not a curated experience — it\'s real life, and it\'s one of the most valuable food destinations in the Midwest.',
             address: '1001 Johnson Pkwy, St Paul, MN 55106',
             coordinates: { lat: 44.9712, lng: -93.0316 },
-            hours: '8am-8pm daily',
+            hours: '9am-6pm daily',
             price: '$',
-            image: {
-              src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hmongtown_Marketplace_2.jpg/1280px-Hmongtown_Marketplace_2.jpg',
-              alt: 'Bustling vendors at Hmong Village marketplace',
-              credit: 'Wikimedia Commons',
-            },
+            images: [
+              {
+                src: 'https://mspmag.com/downloads/30796/download/Hmong-Village.jpg?cb=ca574a21e186002ba6ada427ced8d9c1&w=600',
+                alt: 'Inside Hmong Village marketplace with rows of food vendors',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://blog.resy.com/wp-content/uploads/2021/07/PAOH9778-copy.jpg',
+                alt: 'Hmong Village food court corridor with vendors and customers',
+                credit: 'Resy / Pao Houa Her',
+              },
+              {
+                src: 'https://mspmag.com/downloads/30794/download/Crazy-Steak.jpg?cb=818f0b4abcc16a63e558128d8610f1d5',
+                alt: 'Crazy Steak grilled meat dish from Santi\'s at Hmong Village',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://mspmag.com/downloads/30797/download/Mai%27s-papaya-salad.jpg?cb=c3568624f71ffe162ce7f60b4132094f',
+                alt: 'Fresh papaya salad from Mai\'s Kitchen at Hmong Village',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://blog.resy.com/wp-content/uploads/2021/07/PAOH9885-copy.jpg',
+                alt: 'Meat-and-three combo spread from Lucki\'s Kitchen',
+                credit: 'Resy / Pao Houa Her',
+              },
+            ],
           },
           {
-            name: 'Eggy\'s Diner',
-            neighborhood: 'Loring Park',
-            vibe: 'Classic diner breakfast near the Walker Art Center. Weekend brunch destination.',
-            order: 'Whatever egg dish catches your eye. The portions are serious.',
-            why: 'Walking distance from the Sculpture Garden and Walker Art Center. A proper diner with proper portions and the kind of friendly service that makes you want to linger over coffee. One of the best brunch spots in the city.',
-            address: '11 S 12th St, Minneapolis, MN 55403',
-            coordinates: { lat: 44.9699, lng: -93.2804 },
-            hours: '7am-3pm daily',
-            price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1533920379810-6bedac961555?w=800&q=80',
-              alt: 'Classic diner breakfast at Eggy\'s Diner',
-              credit: 'Unsplash',
-            },
+            name: 'Al\'s Breakfast',
+            neighborhood: 'Dinkytown',
+            vibe: 'The most legendary diner in Minneapolis. Fourteen stools. One griddle. Eighty years of history. A rite of passage for every University of Minnesota student and a pilgrimage for anyone who loves breakfast.',
+            order: 'The blueberry pancakes are the move — fluffy, loaded with berries, absolutely iconic. But the wally — poached eggs over hash browns with hollandaise — converts skeptics. Get whatever\'s on the griddle. Ask the cooks what they recommend. They\'ve been doing this longer than you\'ve been alive.',
+            why: 'Al\'s Breakfast opened in 1950 in a narrow storefront that was once a shipping alley — ten feet wide, with fourteen stools bolted to the floor and no room for anything else. The griddle fills the entire counter. The cooks work in a space most people couldn\'t turn around in. And somehow, for eighty years, they\'ve been making some of the best breakfast in America. Al\'s has survived urban renewal, the decline of Dinkytown, and every food trend imaginable. It\'s still cash only. There\'s still a line on weekends that wraps around the block. Regulars still get their stool. This is Minneapolis history, one pancake at a time. James Beard Award semi-finalist. Featured on every national food show that matters. But Al\'s doesn\'t care about awards. They care about eggs.',
+            address: '413 14th Ave SE, Minneapolis, MN 55414',
+            coordinates: { lat: 44.9810, lng: -93.2332 },
+            hours: '6am-1pm Mon-Sat, 9am-1pm Sun',
+            price: '$',
+            images: [
+              {
+                src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Al%27s_Breakfast_interior_01.jpg/1280px-Al%27s_Breakfast_interior_01.jpg',
+                alt: 'Inside Al\'s Breakfast — the iconic 14-stool counter with griddle running the full length',
+                credit: 'Wikimedia Commons',
+              },
+            ],
           },
           {
             name: 'Hai Hai',
             neighborhood: 'Northeast',
-            vibe: 'Southeast Asian street food with a patio that makes you forget you\'re in Minnesota.',
-            order: 'Pork belly steam buns, papaya salad, and a frozen Vietnamese coffee.',
-            why: 'Everyone knows about it, but it\'s popular for a reason. The patio in summer is unmatched, the flavors are bold, and it\'s one of the few places where the hype matches the reality. Go early on a weekday to skip the wait.',
+            vibe: '2024 James Beard Award winner for Best Chef: Midwest. Southeast Asian street food that transports you to Saigon — if Saigon had a patio in Northeast Minneapolis with plastic stools and tropical cocktails.',
+            order: 'Pork belly steam buns — the buns are impossibly soft, the pork is caramelized and fatty, the pickled vegetables cut through everything. Green papaya salad with dried shrimp. Banh beo (steamed rice cakes with shrimp and scallion oil). Frozen Vietnamese coffee — so good it should be illegal. And anything the servers recommend — Christina\'s flavors don\'t miss.',
+            why: 'The name "Hai Hai" means "two two" in Vietnamese — a nod to the building\'s previous life as "22nd Avenue Station," a dive bar and strip club that was infamous in Northeast Minneapolis. Chef Christina Nguyen and her team transformed the space into something completely different: a vibrant, tropical-feeling restaurant where the wallpaper is as bold as the cocktails and the plastic stools on the patio transport you to the streets of Ho Chi Minh City. Christina won the 2024 James Beard Award for Best Chef: Midwest — finally — after years of being a perennial finalist. Her menu draws from her childhood eating Vietnamese food in Minneapolis, from travels across Southeast Asia, and from the street food traditions that Americans are only now discovering. The patio in summer is a scene. The wait can be brutal on weekends. But the flavors are worth every minute. This is the restaurant that put Northeast Minneapolis on the national food map.',
             address: '2121 University Ave NE, Minneapolis, MN 55418',
             coordinates: { lat: 44.9980, lng: -93.2254 },
             hours: '11am-10pm daily',
             price: '$$',
             website: 'https://www.haihaimpls.com',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/58f611bf725e257176ce6e89/35a7b11b-b957-4f67-9e19-a4a3bb4093b1/060524_JBA_RC_WE_ARE_WINNER_FB_1200X628.jpg',
-              alt: 'James Beard Award-winning Hai Hai Vietnamese restaurant',
-              credit: 'James Beard Foundation',
-            },
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/58f611bf725e257176ce6e89/35a7b11b-b957-4f67-9e19-a4a3bb4093b1/060524_JBA_RC_WE_ARE_WINNER_FB_1200X628.jpg',
+                alt: 'Chef Christina Nguyen — 2024 James Beard Award Winner — with the Hai Hai team',
+                credit: 'James Beard Foundation',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/58f611bf725e257176ce6e89/68ead651-285f-47d6-a25d-a398379faf0f/ChefChristinaNguyen%26HaiHaiTeam_BestChefMidwest+2.jpg',
+                alt: 'Chef Christina Nguyen celebrating Best Chef: Midwest at the James Beard Awards',
+                credit: 'James Beard Foundation',
+              },
+            ],
           },
           {
             name: 'Eat Street',
             neighborhood: 'Whittier',
-            vibe: 'A corridor of global cuisine. Pick a cuisine, any cuisine.',
-            order: 'Depends on the restaurant — there are 50+ options spanning every continent.',
-            why: 'Nicollet Avenue through Whittier is one of the most diverse food corridors in the Midwest. Ethiopian, Vietnamese, Mexican, Somali, Mediterranean — you could eat here every day for a month and never repeat. The Minneapolis food scene lives here.',
-            address: 'Nicollet Ave, Minneapolis, MN 55404',
+            vibe: 'Not a single restaurant — an entire corridor of global cuisine stretching for seventeen blocks. Ethiopian, Vietnamese, Mexican, Somali, Mediterranean, Indian, Thai, Korean, Peruvian. The most delicious mile in Minneapolis.',
+            order: 'Entirely depends on where you end up. Injera and tibs at one of the Ethiopian spots. Pho at Quang. Tacos al pastor on the corner. Somali sambusas at Safari. Falafel from any of the Mediterranean spots. The banh mi. The burritos. The curries. Walk until something smells irresistible.',
+            why: 'Nicollet Avenue through the Whittier neighborhood is what happens when immigrants from around the world open restaurants on the same street over the course of fifty years. Ethiopian coffee ceremonies next to Vietnamese sandwich shops. Somali restaurants across from Mexican taquerias. Mediterranean markets sharing walls with Indian buffets. There\'s no curation here — no food hall committee decided which cuisines to include. This is organic, messy, authentic, and absolutely incredible. You could eat on Eat Street every day for a month and never repeat a meal, never repeat a country. The strip stretches from about 14th Street to 31st Street, with the densest concentration around Lake Street. Go without a plan. Walk until hunger hits. Follow your nose. This is the real Minneapolis food scene — not the James Beard nominees downtown, but the immigrant families who\'ve been feeding this city for decades.',
+            address: 'Nicollet Ave between 14th and 31st St, Minneapolis, MN 55404',
             coordinates: { lat: 44.9547, lng: -93.2780 },
             hours: 'Varies by restaurant',
             price: '$$',
-            image: {
-              src: 'https://eatstreetcrossing.com/wp-content/uploads/2023/02/Bar-Wide-2.jpg',
-              alt: 'Eat Street Crossing food hall on Nicollet Avenue',
-              credit: 'Eat Street Crossing',
-            },
+            images: [
+              {
+                src: 'https://eatstreetcrossing.com/wp-content/uploads/2023/02/Bar-Wide-2.jpg',
+                alt: 'Inside Eat Street Crossing food hall on Nicollet Avenue',
+                credit: 'Eat Street Crossing',
+              },
+            ],
           },
           {
             name: 'Boludo',
-            neighborhood: 'Lowry Hill East',
-            vibe: 'Argentine empanadas and natural wine in a tiny, impossible-to-find basement.',
-            order: 'Empanada flight — get one of each — and whatever orange wine they\'re pouring.',
-            why: 'Literally in a basement with maybe 20 seats. The empanadas are handmade daily, the natural wine list is curated by people who care, and the whole experience feels like a secret.',
-            address: '1222 W Lake St, Minneapolis, MN 55408',
-            coordinates: { lat: 44.9489, lng: -93.2956 },
+            neighborhood: 'Kingfield',
+            vibe: 'Argentine empanadas and pizza from a chef who wanted to bring Buenos Aires to Minneapolis. Started in a tiny basement, now expanding across the city. The dough is impossibly good. The vibe is impossibly fun.',
+            order: 'The empanada flight — one of each, no exceptions. The carne (beef with olives and egg), the humita (sweet corn and onion), the verdura (spinach and cheese). Then a pizza, because the dough is the same and it\'s criminal not to. Whatever natural wine they\'re pouring. And the dulce de leche empanada for dessert, obviously.',
+            why: 'Chef Facundo Defraia left Buenos Aires for Minneapolis and wondered: where are all the empanadas? So he started making them himself, in a basement space so small you\'d miss it walking by. The dough is laminated, flaky, buttery — nothing like the heavy empanadas you\'ve had elsewhere. The fillings are traditional Argentine recipes, adapted just slightly for Minnesota tastes. The natural wine list is curated by people who actually care about wine. The whole experience — the tiny candelit space, the tango playing, the Argentine rock on the speakers — feels like a secret your cool friend told you about. Boludo has expanded since then (there are now four locations including downtown and Uptown), but the original Kingfield spot still has that basement intimacy. The name "Boludo" is Argentine slang — somewhere between "dude" and "idiot" — and captures the playful spirit perfectly.',
+            address: '8 W 38th St, Minneapolis, MN 55409',
+            coordinates: { lat: 44.9384, lng: -93.2783 },
             hours: '5pm-10pm Wed-Sun',
             price: '$$',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/cd76dcdf-252e-4318-971c-73f91cfa2e70/Boludo_el38_229.jpeg',
-              alt: 'Argentine empanadas and natural wine at Boludo',
-              credit: 'Boludo',
-            },
+            website: 'https://www.boludo.com',
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/cd76dcdf-252e-4318-971c-73f91cfa2e70/Boludo_el38_229.jpeg',
+                alt: 'Fresh-baked empanadas at Boludo — the dough is laminated and impossibly flaky',
+                credit: 'Boludo',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/7d417ac7-4199-42d3-a104-852e85120656/7E5A7950.jpg',
+                alt: 'Boludo interior — candlelit basement vibes and Argentine music',
+                credit: 'Boludo',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/e1400923-91c9-4d96-a9eb-99e03be8bc6a/Boludo_el38_258.jpeg',
+                alt: 'Empanada flight and natural wine at Boludo',
+                credit: 'Boludo',
+              },
+            ],
           },
           {
             name: 'Brasa Premium Rotisserie',
             neighborhood: 'Northeast',
-            vibe: 'Southern/Creole rotisserie with a cafeteria setup that somehow feels special.',
-            order: 'Half chicken, yams, collard greens, and cornbread. Share with someone.',
-            why: 'The Northeast location is less hectic than the St. Paul original. The slow-roasted meats, Southern sides, and affordable pricing make it one of the best value meals in the city.',
+            vibe: 'Southern/Creole rotisserie with a cafeteria setup that somehow feels like coming home. Slow-roasted meats, incredible sides, and the kind of honest cooking that makes you wonder why anyone complicates things.',
+            order: 'Half chicken — it\'s the signature, and it\'s perfect. Slow-roasted until the skin crisps and the meat falls off the bone. Then the sides: candied yams (mandatory), collard greens (braised until silky), black-eyed peas, cornbread that crumbles just right. The pulled pork is exceptional. The smoked beef is exceptional. Honestly, it\'s all exceptional.',
+            why: 'Alex Roberts opened Brasa in St. Paul in 2007 with a simple idea: what if a cafeteria-style restaurant used local, sustainable ingredients and actually cared about the cooking? Seventeen years later, Brasa has four locations and hasn\'t wavered from that vision. The chickens are pasture-raised. The pork is humanely sourced. The vegetables come from local farms. But none of that would matter if the food wasn\'t delicious — and it\'s delicious. The rotisserie turns constantly. The smokers run all day. The sides are made from scratch. This is Southern and Creole comfort food done with the kind of integrity that makes you feel good about eating half a chicken at 2pm on a Wednesday. The Northeast Minneapolis location is less chaotic than the original St. Paul spot, but both are essential. This is Minneapolis eating at its most democratic — excellent food, reasonable prices, everyone welcome.',
             address: '600 E Hennepin Ave, Minneapolis, MN 55414',
             coordinates: { lat: 44.9919, lng: -93.2503 },
             hours: '11am-9pm daily',
             price: '$$',
-            image: {
-              src: 'https://images.squarespace-cdn.com/content/v1/6849d8a0f7a1fa23194c8b68/7a118814-d9aa-4d72-9d64-9c08414330ea/Brasa_Hopkins_0232.jpg',
-              alt: 'Southern rotisserie and sides at Brasa Premium Rotisserie',
-              credit: 'Brasa Premium Rotisserie',
-            },
+            website: 'https://www.brasa.us',
+            images: [
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/6849d8a0f7a1fa23194c8b68/7a118814-d9aa-4d72-9d64-9c08414330ea/Brasa_Hopkins_0232.jpg',
+                alt: 'Brasa rotisserie plate with half chicken, yams, and collard greens',
+                credit: 'Brasa Premium Rotisserie',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/6849d8a0f7a1fa23194c8b68/476ebe06-bb11-4938-b4d3-594648516208/Brasa_Hopkins_0197.jpg',
+                alt: 'Brasa cafeteria-style counter with rotisserie meats and Southern sides',
+                credit: 'Brasa Premium Rotisserie',
+              },
+            ],
           },
         ],
       },
@@ -1515,12 +1541,13 @@ export const minneapolis: CityData = {
             type: 'dark-history',
             category: 'unsolved',
             year: '1951',
-            title: 'Klein Brothers Disappearance',
-            body: 'On November 10, 1951, brothers Kenneth (8), Howard (6), and Duane (4) Klein vanished from their south Minneapolis home after their father stepped out briefly for milk. There were no witnesses, no ransom notes, and no remains—just three empty beds and a citywide search that went nowhere. Books like "The Lost Brothers" and podcasts such as "Long Lost" have kept pressure on a case that predates modern forensics.',
-            verdict: 'Still unsolved. No suspects or physical evidence have ever surfaced in more than 70 years.',
+            title: 'The Klein Brothers: Minnesota\'s Oldest Missing Persons Case',
+            body: 'At 1:30 p.m. on November 10, 1951, three brothers—Kenneth Jr. (8), David (6), and Danny (4)—left their home at 2900 Colfax Avenue North to walk four blocks to Fairview Park at Lyndale and 29th Street. Their older brother Gordon, nine, stayed home sick. When Gordon went to retrieve them at dinner time, they were gone. The family called police at 8 p.m., but detectives didn\'t arrive at the Klein home until 6:30 p.m. the following day—nearly 24 hours after the boys vanished. Two of the boys\' caps were found in the nearby icy Mississippi River, leading authorities to drag the river fearing they\'d drowned. Nothing was recovered. The case was closed after just five days. Decades later, investigators learned a neighbor had poured fresh concrete in his basement and replaced his wooden truck bed the day after the boys disappeared. That neighbor became a suspect, but he died before he could be questioned. In 2021, advanced forensic techniques examined that concrete basement—finding nothing. Author Jack El-Hai\'s book "The Lost Brothers" and MPR\'s "Long Lost" podcast have kept the case alive, but 74 years later, no one knows what happened to Kenneth, David, and Danny Klein.',
+            verdict: 'Still unsolved. No suspects, no remains, no closure. Minnesota\'s oldest missing persons case on record.',
             location: {
-              name: 'South Minneapolis neighborhood',
+              name: '2900 block of Colfax Avenue North, Minneapolis',
               stillExists: true,
+              coordinates: { lat: 44.9522, lng: -93.2905 },
             },
             sources: [
               {
@@ -1544,23 +1571,36 @@ export const minneapolis: CityData = {
                 url: 'https://www.startribune.com/klein-brothers-disappearance-70-years/600112345/',
               },
             ],
-            image: {
-              src: 'https://www.mprnews.org/api/v3/images/c948e4a5-4ae0-4a3e-9d3e-8e9f5e8b7a6c?feature=card',
-              alt: 'Klein Brothers Kenneth, Howard, and Duane - 1951 missing children case',
-              credit: 'Minnesota Public Radio',
-            },
+            images: [
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'North Minneapolis neighborhood - 1950s era (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Mississippi River search area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Stone Arch Bridge area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+            ],
           },
           {
             id: 'mpls-dark-2',
             type: 'dark-history',
             category: 'unsolved',
-            year: '2010s',
-            title: 'Adam Johnson Dismemberment',
-            body: 'In the mid-2010s, dismembered remains of Adam Johnson began appearing at multiple sites, including his severed head reportedly left on a bench along the Mississippi River with "perv" carved into the forehead. The scattered evidence and limited public statements left the investigation opaque; at one point police reportedly deprioritized it while handling another major case, letting leads go cold.',
-            verdict: 'Unsolved. No suspect has been publicly named despite the brazen staging of the killing.',
+            year: '2021',
+            title: 'Adam Johnson Dismemberment: A Body Scattered Across the City',
+            body: 'On June 17, 2021, a passerby called 911 to report human remains behind the Ukrainian American Community Center at 300 NE Main Street, near the Mississippi River. Later that day, more remains appeared at NE 3rd and University. Five days later, on June 22nd, someone discovered remains on a bench at East Franklin Avenue and West River Parkway—the head of 36-year-old Adam Richard Johnson, with the word "PERV" carved into the forehead. Police said it appeared to have been frozen and was beginning to thaw. On July 4th, more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim. Minneapolis police spokesperson John Elder confirmed body parts remain unaccounted for. Despite the brazen public display across multiple sites, no arrests have been made. The investigation remains open, but years have passed without answers.',
+            verdict: 'Unsolved. No suspect has been publicly identified. Police confirm some remains were never recovered.',
             location: {
-              name: 'Mississippi riverfront, Minneapolis',
+              name: 'Multiple locations along Mississippi River, Minneapolis',
               stillExists: true,
+              coordinates: { lat: 44.9889, lng: -93.2547 },
             },
             sources: [
               {
@@ -1579,86 +1619,138 @@ export const minneapolis: CityData = {
                 url: 'https://www.twincities.com/unsolved-murders-minneapolis/',
               },
             ],
-            image: {
-              src: 'https://live.staticflickr.com/3815/9317604334_4f6e5e3c0e_b.jpg',
-              alt: 'Mississippi River waterfront in Minneapolis',
-              credit: 'Flickr / Tony Webster',
-            },
+            images: [
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'St. Anthony Main area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Stone Arch Bridge discovery site (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Mill District area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Mississippi River location (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+            ],
           },
           {
             id: 'mpls-dark-3',
             type: 'dark-history',
             category: 'crime',
             year: '1984',
-            title: 'Cindy Gerdes Stabbing',
-            body: 'On March 23, 1984, 22-year-old Cindy Gerdes was savagely stabbed in her Northlyn Apartments bedroom; her body was posed and left for her roommate to discover two days later. Investigators eyed Patrick Walsh—her roommate\'s boyfriend and a man linked to other killings and a separate disappearance—but circumstantial ties and a lack of physical evidence kept prosecutors from filing charges.',
-            verdict: 'Officially unsolved. Walsh remained a primary suspect but was never charged.',
+            title: 'Cindy Gerdes: The Murder That Haunted a Police Chief Until He Died',
+            body: 'On March 8, 1984, 28-year-old Cindy Gerdes was found murdered in her bedroom at the Northlynn Apartments in Minneapolis. Police described it as "one of the worst recent homicides." Gerdes had been stabbed repeatedly around her neck, chest, and back, with a long open wound leading to her sternum—apparently from a missing French chef\'s stainless steel knife taken from the kitchen\'s butcher block. Her body had been posed. The primary suspect, Patrick Thomas Walsh, didn\'t emerge until 1991, after he murdered 35-year-old Pamela Sweeney in Roseville—a coworker who had rebuffed his romantic advances. Walsh had a 1976 conviction for choking a woman in her apartment and was linked to the 1980 disappearance of 22-year-old Cindy M. Brown. But investigators could never connect the forensic dots to charge him with Gerdes\' murder. Walsh is serving life in prison at Minnesota Correctional Facility in Stillwater for Sweeney\'s murder, but Gerdes\' case remains unsolved. Former Minneapolis Police Chief Tony Bouza, who died in 2023, was haunted by the case for decades. "Left unaddressed, the searing murder of Cindy Gerdes stands as a damning indictment of our indifference to our neighbor\'s plight," Bouza wrote on his website.',
+            verdict: 'Officially unsolved. Patrick Walsh remains the primary suspect but has never been charged.',
             location: {
-              name: 'Northlyn Apartments, north metro',
+              name: 'Northlynn Apartments, Minneapolis',
               stillExists: true,
+              coordinates: { lat: 45.0042, lng: -93.2640 },
             },
             sources: [
               {
-                title: 'MPR News: Cold Case Files',
-                url: 'https://www.mprnews.org/cold-case-files-minneapolis',
+                title: 'Duluth News Tribune: Cindy Gerdes Murder Investigation',
+                url: 'https://www.duluthnewstribune.com/news/the-vault/several-suspects-questioned-but-police-cant-solve-1984-murder-of-former-moorhead-woman',
               },
               {
-                title: 'Star Tribune: Unsolved 1984 Murder',
-                url: 'https://www.startribune.com/cold-case-cindy-gerdes-1984/',
+                title: 'Post Bulletin: Killer\'s Profile Emerges',
+                url: 'https://www.postbulletin.com/news/the-vault/killers-profile-emerges-in-minnesota-womans-unsolved-murder',
               },
             ],
             moreInfo: [
               {
-                title: 'Minnesota Cold Case Files',
+                title: 'Minnesota BCA Cold Case Files',
                 type: 'article',
                 url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx',
               },
             ],
-            image: {
-              src: 'https://live.staticflickr.com/8363/8405916968_4f1e0c5e6c_b.jpg',
-              alt: 'North Minneapolis apartment buildings 1980s',
-              credit: 'Flickr / Minnesota Historical Society',
-            },
+            images: [
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'South Minneapolis apartment building (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: '1980s Minneapolis residential area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Northlynn Apartments area (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+            ],
           },
           {
             id: 'mpls-dark-4',
             type: 'dark-history',
             category: 'crime',
             year: '1993',
-            title: 'Jeanie Childs Murder',
-            body: 'Jeanie Childs, 35, was stabbed more than 60 times in her Minneapolis high-rise on June 13, 1993; the killer left her under the bed while a running shower flooded the unit and the hallway below. Bloody bare footprints—different from her socked feet—were preserved, but the case stalled until 2019 when genetic genealogy matched DNA from a pizza box and the apartment to Jerry Westrom.',
-            verdict: 'Arrested in 2019 via DNA genealogy; Jerry Westrom was convicted of first-degree murder in 2023.',
+            title: 'Jeanie Childs: How a Discarded Napkin Solved a 26-Year-Old Murder',
+            body: 'On June 13, 1993, 35-year-old Jeanie Childs was found brutally murdered in her south Minneapolis apartment, stabbed 65 times. Blood covered the walls of her bedroom, living room, and bathroom. The bathroom was flooding—the killer had left the shower running. Bloody bare footprints led away from the scene, different from Childs\' socked feet. Despite collecting DNA evidence, the case went cold for 25 years. In 2015, a Minneapolis homicide detective and FBI special agent reopened the investigation using advances in DNA testing. Forensic scientist Andrea Feia noticed one unknown DNA profile repeated throughout the crime scene. That profile was submitted to genealogy websites, including MyHeritage.com, where it matched a first cousin to the killer. Investigators constructed a family tree pointing to Jerry Westrom, a 52-year-old married father of two from Isanti, about 40 miles north of Minneapolis. He\'d never been a suspect. Police followed Westrom to a hockey game in Wisconsin and retrieved a napkin he\'d thrown away after eating a hot dog. The DNA matched. Westrom was arrested in February 2019. His footprint matched the bloody prints at the scene. In 2023, a Hennepin County jury deliberated two hours before finding Westrom guilty of first- and second-degree murder. The Minnesota Supreme Court affirmed the conviction. It was Minnesota\'s first murder solved using forensic investigative genetic genealogy.',
+            verdict: 'Solved. Jerry Westrom convicted of first-degree murder in 2023 via genetic genealogy.',
             location: {
-              name: 'Minneapolis high-rise apartment',
+              name: 'South Minneapolis apartment building',
               stillExists: true,
+              coordinates: { lat: 44.9402, lng: -93.2678 },
             },
             sources: [
               {
-                title: 'Star Tribune: Jerry Westrom Convicted',
-                url: 'https://www.startribune.com/jerry-westrom-convicted-jeanie-childs-murder-genetic-genealogy/600253891/',
+                title: 'CBS News: How DNA Broke Open the Cold Case',
+                url: 'https://www.cbsnews.com/minnesota/news/jeanie-childs-minneapolis-cold-case-solved-footprint-to-murder/',
               },
               {
-                title: 'MPR News: Genetic Genealogy Breakthrough',
-                url: 'https://www.mprnews.org/story/2023/02/01/genetic-genealogy-solves-1993-minneapolis-murder',
+                title: 'KARE 11: Jerry Westrom Found Guilty',
+                url: 'https://www.kare11.com/article/news/crime/jerry-westrom-found-guilty-of-1st-2nd-degree-murder/89-37eb1ac1-7540-4cf0-b1b7-4ff7d37f34e4',
+              },
+              {
+                title: 'Oxygen True Crime: Jerry Westrom Guilty',
+                url: 'https://www.oxygen.com/crime-news/jerry-westrom-guilty-jeanne-childs-1993-cold-case-murder',
               },
             ],
             moreInfo: [
               {
-                title: '48 Hours: The Case That Changed Everything',
+                title: 'CBS 48 Hours: Bloody Footprints Cold Case',
                 type: 'video',
-                url: 'https://www.cbsnews.com/48-hours/',
+                url: 'https://www.cbsnews.com/news/jeanie-childs-jerry-westrom-minneapolis-cold-case-murder/',
               },
               {
-                title: 'ABC 20/20: Genetic Genealogy Murder Cases',
-                type: 'video',
-                url: 'https://abc.com/shows/2020',
+                title: 'Investigation Discovery: Cold Case Murder',
+                type: 'article',
+                url: 'https://www.investigationdiscovery.com/crimefeed/murder/man-convicted-of-1993-cold-case-murder-of-woman-stabbed-65-times-in-her-minnesota-apartment',
+              },
+              {
+                title: 'Minnesota Supreme Court Decision (2024)',
+                type: 'article',
+                url: 'https://law.justia.com/cases/minnesota/supreme-court/2024/a22-1679.html',
               },
             ],
-            image: {
-              src: 'https://assets.ledeusercontent.com/istories/a85e2dca92f94e7db2cf8c4e6cbc6fd8/34-20westromtrial-w750.jpg',
-              alt: 'Jerry Westrom trial for 1993 Jeanie Childs murder',
-              credit: 'MinnPost',
-            },
+            images: [
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'DNA forensic analysis technology (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Minneapolis Police Department (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+              {
+                src: '/images/placeholder-dark-history.svg',
+                alt: 'Hennepin County Government Center (placeholder - awaiting authentic image)',
+                credit: 'Placeholder',
+              },
+            ],
           },
         ],
       },
@@ -1680,12 +1772,16 @@ export const minneapolis: CityData = {
             lastAddress: '112 E Hennepin Ave, Minneapolis',
             sources: [
               {
-                title: 'Star Tribune: Nye\'s Polonaise Closing',
-                url: 'https://www.startribune.com/nye-s-polonaise-room-closing-after-66-years/386465461/',
+                title: 'Star Tribune: Bye-bye to Nye\'s',
+                url: 'https://www.startribune.com/bye-bye-to-nye-s-the-last-place-where-everyone-fits-in/372488121',
               },
               {
                 title: 'MPR News: Saying Goodbye to Nye\'s',
                 url: 'https://www.mprnews.org/story/2016/07/15/nyes-polonaise-closes',
+              },
+              {
+                title: 'Minnesota Then: Nye\'s Polonaise Room',
+                url: 'https://mnthen.com/blog/place/nyes.html',
               },
             ],
           },
@@ -1706,8 +1802,12 @@ export const minneapolis: CityData = {
                 url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/',
               },
               {
-                title: 'Axios Twin Cities: End of an Era',
-                url: 'https://www.axios.com/local/twin-cities/2023/10/psycho-suzis-closes',
+                title: 'Ultimate Mai Tai: Farewell Psycho Suzi\'s',
+                url: 'https://ultimatemaitai.com/2023/08/10/farewell-psycho-suzis-motor-lounge/',
+              },
+              {
+                title: 'MyTiki: Psycho Suzi\'s Motor Lounge',
+                url: 'https://mytiki.life/tiki-bars/psycho-suzis-motor-lounge-1',
               },
             ],
           },
@@ -1724,16 +1824,16 @@ export const minneapolis: CityData = {
             lastAddress: '629 Cedar Ave S, Minneapolis',
             sources: [
               {
-                title: 'Vice: The Death of Triple Rock',
-                url: 'https://www.vice.com/en/article/triple-rock-social-club-minneapolis-closing',
+                title: 'Vice: The End of the Triple Rock',
+                url: 'https://www.vice.com/en/article/the-end-of-the-triple-rock-social-club-minneapolis-most-important-punk-bar/',
               },
               {
-                title: 'Star Tribune: Goodbye Triple Rock',
-                url: 'https://www.startribune.com/triple-rock-social-club-closing-minneapolis-punk-venue/434567891/',
+                title: 'Wikipedia: Triple Rock Social Club',
+                url: 'https://en.wikipedia.org/wiki/Triple_Rock_Social_Club',
               },
               {
-                title: 'Brooklyn Vegan: Triple Rock Closing',
-                url: 'https://www.brooklynvegan.com/triple-rock-social-club-closing/',
+                title: 'The Current: Triple Rock Sign Moves to Vegas',
+                url: 'https://www.thecurrent.org/feature/2023/03/28/the-triple-rock-social-club-sign-has-moved-to-las-vegas',
               },
             ],
           },
@@ -1753,7 +1853,16 @@ export const minneapolis: CityData = {
             whyMissed: 'The 3am crowds, the sense that Uptown was alive and anything could happen. Parasole\'s Phil Roberts later called closing it "the biggest mistake I ever made."',
             communityVoice: '"Figlio was Uptown. When it closed, Uptown started to die." — Mpls.St.Paul Magazine',
             lastAddress: '3001 Hennepin Ave, Minneapolis',
-            source: 'Star Tribune, Mpls.St.Paul Magazine',
+            sources: [
+              {
+                title: 'Mpls.St.Paul Magazine: Does Figlio Still Haunt Uptown?',
+                url: 'https://mspmag.com/eat-and-drink/does-figlio-still-haunt-uptown/',
+              },
+              {
+                title: 'Star Tribune: Figlio Resurfaces at the West End',
+                url: 'https://www.startribune.com/figlio-uptown-s-shuttered-stalwart-resurfaces-at-the-west-end/188121501',
+              },
+            ],
           },
           {
             id: 'mpls-lost-5',
@@ -1766,7 +1875,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The thoughtful sourcing, the neighborhood gathering spot feeling, and food that tasted like someone cared about where it came from.',
             communityVoice: '"The Birchwood wasn\'t just a restaurant — it was a philosophy." — Heavy Table',
             lastAddress: '3311 E 25th St, Minneapolis',
-            source: 'Star Tribune, Heavy Table',
+            sources: [
+              {
+                title: 'Andrew Zimmern: Seward\'s Iconic Birchwood Cafe',
+                url: 'https://andrewzimmern.com/sewards-iconic-birchwood-cafe/',
+              },
+              {
+                title: 'Star Tribune: Darling Opens in Former Birchwood',
+                url: 'https://www.startribune.com/darling-now-open-former-birchwood-cafe-minneapolis-prince-chefs/600376283',
+              },
+              {
+                title: 'Bring Me The News: Birchwood Cafe for Sale',
+                url: 'https://bringmethenews.com/minnesota-lifestyle/gallery-minneapolis-birchwood-cafe-for-sale-for-2-million',
+              },
+            ],
           },
           {
             id: 'mpls-lost-6',
@@ -1779,7 +1901,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The commitment to local farmers, the quiet elegance, and food that changed with the seasons because that\'s how food should work.',
             communityVoice: '"Lucia\'s taught Minneapolis what farm-to-table really meant." — Mpls.St.Paul Magazine',
             lastAddress: '1432 W 31st St, Minneapolis',
-            source: 'Star Tribune, City Pages',
+            sources: [
+              {
+                title: 'Star Tribune: Lucia\'s Restaurant to Close',
+                url: 'https://www.startribune.com/lucia-s-restaurant-an-uptown-dining-landmark-to-close/449109823',
+              },
+              {
+                title: 'Minnesota Monthly: Lucia\'s',
+                url: 'https://www.minnesotamonthly.com/featured/lucias/',
+              },
+              {
+                title: 'Meet Minneapolis: Ann Kim to Open in Lucia\'s Space',
+                url: 'https://www.minneapolis.org/media/news-releases/ann-kim-and-conrad-leifur-announce-plans-for-a-new-restaurant-in-the-lucias-restaurant-space-in-uptown/',
+              },
+            ],
           },
           {
             id: 'mpls-lost-ad-2',
@@ -1797,7 +1932,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The green apple pie, the no-nonsense service, and being the last connection to a downtown that actually served regular people lunch.',
             communityVoice: '"When Peter\'s closed, downtown lost its last bit of old Minneapolis." — Star Tribune',
             lastAddress: '114 S 8th St, Minneapolis',
-            source: 'Star Tribune',
+            sources: [
+              {
+                title: 'Star Tribune: A Final Piece of Pie from Peter\'s Grill',
+                url: 'https://www.startribune.com/a-final-piece-of-pie-from-peter-s-grill-in-downtown-minneapolis/213609451',
+              },
+              {
+                title: 'Star Tribune: Taste of the Past Inside Peter\'s Grill',
+                url: 'https://m.startribune.com/taste-of-the-past-inside-peter-s-grill/80738827/',
+              },
+              {
+                title: 'Hennepin County Library: Peter\'s Grill History',
+                url: 'https://hclib.tumblr.com/post/54084711992/peters-grill-a-downtown-landmark-since-1914',
+              },
+            ],
           },
           {
             id: 'mpls-lost-8',
@@ -1810,7 +1958,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The commitment to doing things differently, the superhero costumes, and pizza that proved fast food could have values.',
             communityVoice: '"We found out an hour before you guys did." — Former employee on the abrupt closure',
             lastAddress: '2917 Lyndale Ave S, Minneapolis',
-            source: 'Star Tribune, Fox 9',
+            sources: [
+              {
+                title: 'Fox 9: Galactic Pizza Announces Closure',
+                url: 'https://www.fox9.com/news/galactic-pizza-announces-closure',
+              },
+              {
+                title: 'KARE 11: Galactic Pizza Closes in Uptown',
+                url: 'https://www.kare11.com/article/news/local/galactic-pizza-closes-uptown-minneapolis/89-0c648ca2-d179-42d1-a83d-53fa1622b00e',
+              },
+              {
+                title: 'Tasting Table: Galactic Pizza\'s Superhero Deliverymen',
+                url: 'https://www.tastingtable.com/682499/galactic-pizza-in-minneapolis-mn-has-superhero-deliverymen/',
+              },
+            ],
           },
           {
             id: 'mpls-lost-9',
@@ -1823,7 +1984,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The serene dining room, the window-filled space, and a chef who believed in what she was cooking decades before it was fashionable.',
             communityVoice: '"Back then, the Warehouse District was really cool. But those days are done." — Brenda Langton',
             lastAddress: '300 1st Ave N, Minneapolis',
-            source: 'Star Tribune, Heavy Table',
+            sources: [
+              {
+                title: 'Star Tribune: Langton to Close Cafe Brenda After 23 Years',
+                url: 'https://www.startribune.com/langton-to-close-cafe-brenda-after-23-years/70541792',
+              },
+              {
+                title: 'Heavy Table: Cafe Brenda Closes',
+                url: 'https://heavytable.com/cafe-brenda-closes/',
+              },
+              {
+                title: 'Star Tribune: Spoonriver Restaurant Closing',
+                url: 'https://www.startribune.com/spoonriver-restaurant-closing-after-14-year-run/565352512',
+              },
+            ],
           },
           {
             id: 'mpls-lost-ad-3',
@@ -1841,7 +2015,16 @@ export const minneapolis: CityData = {
             whyMissed: 'The malts. The fries. The ritual of splitting portions with friends. The feeling that some things should never change.',
             communityVoice: '"We simply are going to lose more money being open than being closed. It\'s unfortunate, but it\'s the hard facts." — Owner',
             lastAddress: '313 14th Ave SE, Minneapolis',
-            source: 'Star Tribune, Minnesota Daily',
+            sources: [
+              {
+                title: 'Bring Me The News: Annie\'s Parlour Reopens',
+                url: 'https://bringmethenews.com/minnesota-lifestyle/annies-parlour-in-minneapolis-dinkytown-reopens',
+              },
+              {
+                title: 'Explore Minnesota: Annie\'s Parlour',
+                url: 'https://www.exploreminnesota.com/profile/annies-parlour/4127',
+              },
+            ],
           },
           {
             id: 'mpls-lost-11',
@@ -1854,7 +2037,20 @@ export const minneapolis: CityData = {
             whyMissed: 'That fried chicken. The biscuits. The mac and cheese. Food that proved comfort could be elevated without losing its soul.',
             communityVoice: '"It was a combination of rapidly increasing costs with rapidly decreasing revenue." — Thomas Boemer',
             lastAddress: '4257 Nicollet Ave, Minneapolis',
-            source: 'Star Tribune, Bring Me The News',
+            sources: [
+              {
+                title: 'Mpls.St.Paul Magazine: Revival Makes a Comeback',
+                url: 'https://mspmag.com/eat-and-drink/foodie/revival-makes-a-comeback-under-new-ownership/',
+              },
+              {
+                title: 'Bring Me The News: Revival Revived',
+                url: 'https://bringmethenews.com/minnesota-lifestyle/revival-revived-after-brand-is-bought-by-twin-cities-restaurant-group',
+              },
+              {
+                title: 'Roadfood: Revival',
+                url: 'https://roadfood.com/restaurants/revival/',
+              },
+            ],
           },
           {
             id: 'mpls-lost-12',
@@ -1867,7 +2063,24 @@ export const minneapolis: CityData = {
             whyMissed: 'The live music, the regulars, the sense that Cedar-Riverside was still a neighborhood where artists could afford to be artists.',
             communityVoice: '"Palmer\'s was the last place on the West Bank that felt like the old West Bank." — Racket',
             lastAddress: '500 Cedar Ave S, Minneapolis',
-            source: 'Racket, Minnesota Monthly, MPR News',
+            sources: [
+              {
+                title: 'Racket: Goodbye to Palmer\'s',
+                url: 'https://racketmn.com/goodbye-to-palmers-a-requiem-for-minneapoliss-weirdest-and-wonderfullest-bar',
+              },
+              {
+                title: 'Minnesota Monthly: Palmer\'s Bar Is Still Standing',
+                url: 'https://www.minnesotamonthly.com/food-drink/sorry-were-open-palmers-bar-is-still-standing/',
+              },
+              {
+                title: 'The Current: Bonnie Raitt at Palmer\'s Bar',
+                url: 'https://www.thecurrent.org/feature/2019/07/24/the-current-rewind-bonnie-raitt-palmers-bar',
+              },
+              {
+                title: 'Wikipedia: Palmer\'s Bar',
+                url: 'https://en.wikipedia.org/wiki/Palmer%27s_Bar',
+              },
+            ],
           },
           {
             id: 'mpls-lost-13',
@@ -1878,8 +2091,366 @@ export const minneapolis: CityData = {
             yearsOpen: '1946–2020',
             description: 'The Streamline Moderne diner on East Lake that Guy Fieri featured on Diners, Drive-Ins and Dives. Built for returning WWII soldiers, it served creative takes on meatloaf and mac and cheese from a narrow, window-filled space until civil unrest in 2020.',
             whyMissed: 'The historic building, the updated comfort food, and a connection to a Minneapolis that built things to last.',
+            communityVoice: '"A Streamline Moderne landmark that connected us to 1940s Minneapolis." — Minneapolis Preservation',
             lastAddress: '2707 E Lake St, Minneapolis',
-            source: 'Minneapolis Preservation, Food Network',
+            images: [
+              {
+                src: 'https://tile.loc.gov/storage-services/service/pnp/mrg/00100/00125v.jpg',
+                alt: 'Town Talk Diner Streamline Moderne exterior, 1984',
+                credit: 'John Margolies / Library of Congress',
+              },
+            ],
+            sources: [
+              {
+                title: 'City of Minneapolis: Town Talk Diner Landmark',
+                url: 'https://www.minneapolismn.gov/resident-services/property-housing/preservation/landmarks-districts/landmarks/town-talk-diner/',
+              },
+              {
+                title: 'Food Network: Town Talk Diner',
+                url: 'https://www.foodnetwork.com/restaurants/mn/minneapolis/town-talk-diner-restaurant',
+              },
+              {
+                title: 'Library of Congress: Town Talk Diner Photo',
+                url: 'https://www.loc.gov/item/2017702240/',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'mpls-scenes',
+        type: 'section',
+        title: 'Scenes from Minneapolis',
+        items: [
+          // CITYSCAPE - Downtown skyline and urban views
+          {
+            id: 'scene-skyline-1',
+            type: 'scene',
+            category: 'cityscape',
+            title: 'Minneapolis at Night',
+            description: 'The Minneapolis skyline transforms after dark. Downtown towers glow against the night sky, the 35W bridge lights up in blue, and the city reveals a different character — quieter, more contemplative, yet still electric.',
+            media: {
+              type: 'video',
+              src: 'https://videos.pexels.com/video-files/17153904/17153904-uhd_2560_1440_25fps.mp4',
+              poster: 'https://images.pexels.com/videos/17153904/pexels-photo-17153904.jpeg',
+              alt: 'Aerial drone footage of illuminated Minneapolis downtown at night',
+              caption: 'Minneapolis skyline after dark — drone footage',
+              credit: 'CityXcape / Pexels',
+              duration: '0:14',
+            },
+          },
+          {
+            id: 'scene-skyline-2',
+            type: 'scene',
+            category: 'cityscape',
+            title: 'Stone Arch Bridge',
+            description: 'The only stone arch bridge ever built across the Mississippi. Completed in 1883 to carry trains over St. Anthony Falls, it now carries pedestrians and cyclists with one of the best views in the city.',
+            media: {
+              type: 'video',
+              src: 'https://videos.pexels.com/video-files/3720032/3720032-uhd_2732_1440_25fps.mp4',
+              poster: 'https://images.pexels.com/videos/3720032/free-video-3720032.jpg',
+              alt: 'Stone Arch Bridge spanning the Mississippi River in winter',
+              caption: 'Stone Arch Bridge — Minneapolis\'s most iconic landmark',
+              credit: 'Chris Flaten / Pexels',
+              duration: '0:19',
+            },
+          },
+          // WATER - Lakes and river scenes
+          {
+            id: 'scene-water-1',
+            type: 'scene',
+            category: 'water',
+            title: 'Chain of Lakes',
+            description: 'Lake Harriet, Bde Maka Ska, Lake of the Isles, Cedar Lake, and Brownie Lake — connected by parkways and bike paths, these urban lakes define the Minneapolis experience. Sailing, paddleboarding, running, cycling, picnics at the bandshell, and ice skating in winter. This is where the city breathes.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis Chain of Lakes photo from Meet Minneapolis or local photographer
+                src: 'https://images.pexels.com/photos/51926/lake-water-under-white-and-blue-skies-during-daytime-51926.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Peaceful lake water under blue skies with green trees along shore',
+                caption: 'The Chain of Lakes — Minneapolis\'s urban oasis',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-water-2',
+            type: 'scene',
+            category: 'water',
+            title: 'St. Anthony Falls & Mill Ruins',
+            description: 'The only major waterfall on the Mississippi River. For the Dakota people, it was a sacred site called Owáhmenah — "falling water." For European settlers, it powered the flour mills that built Minneapolis. The ruins remain, haunting and beautiful.',
+            media: {
+              type: 'video',
+              src: 'https://videos.pexels.com/video-files/855668/855668-hd_1920_1080_25fps.mp4',
+              poster: 'https://images.pexels.com/videos/855668/free-video-855668.jpg',
+              alt: 'Waterfall cascading over rocks with forest surroundings',
+              caption: 'St. Anthony Falls — the waterfall that powered Minneapolis',
+              credit: 'Pexels',
+              duration: '0:11',
+            },
+          },
+          // NATURE - Parks and green spaces
+          {
+            id: 'scene-nature-1',
+            type: 'scene',
+            category: 'nature',
+            title: 'Minnehaha Falls',
+            description: 'A 53-foot waterfall in the heart of the city, immortalized by Longfellow in "The Song of Hiawatha." The gorge below offers trails through old-growth forest. In summer, water roars over limestone. In winter, it freezes into cathedral spires of ice.',
+            media: {
+              type: 'video',
+              src: 'https://videos.pexels.com/video-files/5345336/5345336-uhd_2560_1440_30fps.mp4',
+              poster: 'https://images.pexels.com/videos/5345336/pexels-photo-5345336.jpeg',
+              alt: 'Waterfall cascading through forest',
+              caption: 'Minnehaha Falls — a 53-foot waterfall in the city',
+              credit: 'Pexels',
+              duration: '0:16',
+            },
+          },
+          {
+            id: 'scene-nature-2',
+            type: 'scene',
+            category: 'nature',
+            title: 'Minneapolis Parkways',
+            description: 'The Grand Rounds Scenic Byway — 50 miles of interconnected parkways, bike paths, and trails threading through the city. Theodore Wirth Park, Minnehaha Parkway, the Chain of Lakes, the Mississippi riverfront. This is why Minneapolis consistently ranks as one of America\'s best park cities.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis parkway photo
+                src: 'https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Tree-lined path through urban park with autumn colors',
+                caption: 'Fall along the Grand Rounds parkway system',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // ARCHITECTURE - Historic buildings
+          {
+            id: 'scene-arch-1',
+            type: 'scene',
+            category: 'architecture',
+            title: 'Historic Minneapolis Architecture',
+            description: 'Minneapolis City Hall\'s Romanesque Revival clock tower — the faces are larger than Big Ben\'s. The Foshay Tower\'s Art Deco tribute to the Washington Monument. The Mill City Museum rising from the Washburn A Mill ruins. A city that refuses to forget its history.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis City Hall or Foshay Tower photo
+                src: 'https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Historic architecture and modern skyline at dusk',
+                caption: 'Minneapolis architecture — where history meets modernity',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-arch-2',
+            type: 'scene',
+            category: 'architecture',
+            title: 'Mill District',
+            description: 'The ruins of the flour mills that made Minneapolis the "Mill City." The Washburn A Mill explosion of 1878 killed 18 workers and changed milling safety forever. Now the Mill City Museum stands within the limestone walls, a monument to industry and tragedy.',
+            images: [
+              {
+                // TODO: Replace with authentic Mill City Museum photo from Meet Minneapolis
+                src: 'https://images.pexels.com/photos/931113/pexels-photo-931113.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Historic industrial architecture preserved alongside modern development',
+                caption: 'The Mill District — built on flour and water power',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // INTERIOR - Indoor spaces
+          {
+            id: 'scene-interior-1',
+            type: 'scene',
+            category: 'interior',
+            title: 'Minneapolis Central Library',
+            description: 'César Pelli\'s 2006 masterpiece. Light pours through the five-story glass wing onto terraced reading areas. The green roof blooms with native wildflowers. This is what public architecture can be when a city gives a damn.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis Central Library photo
+                src: 'https://images.pexels.com/photos/2224861/pexels-photo-2224861.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Modern glass architecture with dramatic interior lighting',
+                caption: 'Minneapolis Central Library — César Pelli\'s light-filled design',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-interior-2',
+            type: 'scene',
+            category: 'interior',
+            title: 'Historic Theaters',
+            description: 'The Orpheum and State theatres on Hennepin Avenue — 1920s vaudeville palaces with ornate plasterwork, crystal chandeliers, and ghosts of performances past. The Orpheum hosted the Ziegfeld Follies. Both now welcome Broadway tours and the occasional rock show.',
+            images: [
+              {
+                // TODO: Replace with authentic Orpheum Theatre interior photo
+                src: 'https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Historic theater interior with ornate architectural details',
+                caption: 'Hennepin Avenue\'s grand theaters',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // NEIGHBORHOOD - Street scenes
+          {
+            id: 'scene-neighborhood-1',
+            type: 'scene',
+            category: 'neighborhood',
+            title: 'Northeast Arts District',
+            description: 'Old Polish and Eastern European immigrant neighborhoods transformed. Warehouses became galleries. Corner bars became microbreweries. Every block has a mural. This is where Minneapolis keeps its weird — artists, brewers, musicians, and the dive bars that refuse to die.',
+            images: [
+              {
+                // TODO: Replace with authentic Northeast Minneapolis mural or street scene
+                src: 'https://images.pexels.com/photos/5802549/pexels-photo-5802549.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Urban neighborhood with creative businesses and street art',
+                caption: 'Northeast Minneapolis — arts, murals, and microbreweries',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-neighborhood-2',
+            type: 'scene',
+            category: 'neighborhood',
+            title: 'Uptown',
+            description: 'Lake Street meets Hennepin. Once the center of Minneapolis counterculture, now a mix of chains and holdouts. The Uptown Theatre marquee still glows. Calhoun Square still stands. The neighborhood that defined a generation is negotiating with the next one.',
+            images: [
+              {
+                // TODO: Replace with authentic Uptown Minneapolis street scene
+                src: 'https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Bustling urban intersection with shops and pedestrians',
+                caption: 'Uptown Minneapolis — Lake and Hennepin corner',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // ART - Public art and murals
+          {
+            id: 'scene-art-1',
+            type: 'scene',
+            category: 'art',
+            title: 'Minneapolis Sculpture Garden',
+            description: 'Claes Oldenburg and Coosje van Bruggen\'s "Spoonbridge and Cherry" — a 52-foot-long spoon cradling a 1,200-pound cherry, fountain misting from the stem. The most photographed piece in the Walker Art Center\'s 11-acre sculpture garden. Playful, monumental, and somehow completely Minneapolis.',
+            images: [
+              {
+                // TODO: Replace with authentic Spoonbridge and Cherry photo from Meet Minneapolis
+                src: 'https://images.pexels.com/photos/366283/pexels-photo-366283.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Public sculpture park with contemporary art installations',
+                caption: 'Minneapolis Sculpture Garden — 11 acres of contemporary art',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-art-2',
+            type: 'scene',
+            category: 'art',
+            title: 'George Floyd Square',
+            description: 'The intersection of 38th and Chicago, where George Floyd was murdered by Minneapolis police on May 25, 2020. Now a memorial, a demand, a reckoning. Flowers, murals, raised fists painted on pavement. The city walks around it. The world can\'t look away from it.',
+            images: [
+              {
+                // TODO: Replace with authentic George Floyd Square memorial photo
+                src: 'https://images.pexels.com/photos/248883/pexels-photo-248883.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Community memorial and gathering space',
+                caption: 'George Floyd Square — a living memorial at 38th and Chicago',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // SEASONS - Seasonal views
+          {
+            id: 'scene-seasons-1',
+            type: 'scene',
+            category: 'seasons',
+            title: 'Winter in Minneapolis',
+            description: 'When the lakes freeze solid — sometimes two feet thick — Minneapolis doesn\'t hibernate. Ice fishing houses dot Lake of the Isles. Skiers glide through Theodore Wirth Park. The skyways fill with office workers avoiding the cold. This is the season that defines the city: brutal, beautiful, and unapologetic.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis winter scene - frozen lake or skyway
+                src: 'https://images.pexels.com/photos/1807807/pexels-photo-1807807.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Frozen urban landscape with snow-covered trees and ice',
+                caption: 'Winter on the Chain of Lakes',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-seasons-2',
+            type: 'scene',
+            category: 'seasons',
+            title: 'Fall Color',
+            description: 'October in Minneapolis: the maples along the Grand Rounds explode in gold and crimson. Minnehaha Parkway becomes a tunnel of color. The lakes reflect the trees, doubling the spectacle. It lasts maybe two weeks before the wind strips everything bare, but those two weeks make winter worth it.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis fall foliage photo - parkway or lakes
+                src: 'https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Autumn trees with vibrant fall colors along tree-lined path',
+                caption: 'Peak fall color along Minneapolis parkways',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // NIGHT - After dark
+          {
+            id: 'scene-night-1',
+            type: 'scene',
+            category: 'night',
+            title: 'First Avenue',
+            description: 'The nightclub where Prince recorded "Purple Rain." The black exterior covered in silver stars — 400+ names of artists who\'ve played the Mainroom or 7th St Entry. Hüsker Dü, The Replacements, Atmosphere, Lizzo — Minneapolis music history written in silver paint. The marquee still glows. The dance floor still vibrates.',
+            images: [
+              {
+                // TODO: Replace with authentic First Avenue exterior night photo
+                src: 'https://images.pexels.com/photos/10546892/pexels-photo-10546892.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Iconic nightclub exterior with marquee and city lights',
+                caption: 'First Avenue — where Prince recorded Purple Rain',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-night-2',
+            type: 'scene',
+            category: 'night',
+            title: 'Hennepin Avenue After Dark',
+            description: 'The theater district transforms at night. Orpheum and State marquees glow with Broadway show titles. Bar neon reflects in puddles. Street musicians play for tips. Hennepin has been Minneapolis\'s entertainment spine since the vaudeville era, and it refuses to dim.',
+            images: [
+              {
+                // TODO: Replace with authentic Hennepin Avenue night scene photo
+                src: 'https://images.pexels.com/photos/12764/night-city-lights-traffic-12764.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Urban street at night with theater marquees and city lights',
+                caption: 'Hennepin Avenue — Minneapolis\'s entertainment district',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          // FOOD - Restaurant and food scenes
+          {
+            id: 'scene-food-1',
+            type: 'scene',
+            category: 'food',
+            title: 'Midtown Global Market',
+            description: 'A 1928 Sears building on Lake Street, transformed into a food hall representing the world. Somali sambusas. Mexican tlayudas. Vietnamese bánh mì. Scandinavian lefse. Indigenous frybread. This is Minneapolis\'s immigrant story told through food — vibrant, essential, and underestimated.',
+            images: [
+              {
+                // TODO: Replace with authentic Midtown Global Market photo
+                src: 'https://images.pexels.com/photos/2818565/pexels-photo-2818565.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Bustling food market with diverse vendors and communal seating',
+                caption: 'Midtown Global Market — the world under one roof',
+                credit: 'Pexels',
+              },
+            ],
+          },
+          {
+            id: 'scene-food-2',
+            type: 'scene',
+            category: 'food',
+            title: 'North Loop Dining',
+            description: 'The Warehouse District\'s culinary renaissance. Bachelor Farmer, Spoon and Stable, The Butcher & the Boar — James Beard nominees serving New Nordic cuisine and elevated comfort food in converted industrial spaces. Exposed brick, open kitchens, craft cocktails. This is where Minneapolis proves it belongs in the national food conversation.',
+            images: [
+              {
+                // TODO: Replace with authentic North Loop restaurant photo
+                src: 'https://images.pexels.com/photos/2224861/pexels-photo-2224861.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                alt: 'Modern restaurant interior with industrial design elements',
+                caption: 'North Loop restaurants — warehouse chic meets craft cuisine',
+                credit: 'Pexels',
+              },
+            ],
           },
         ],
       },

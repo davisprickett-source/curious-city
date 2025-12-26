@@ -1,0 +1,7 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#2d2d2d"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#999">
+    <tspan x="50%" dy="-20">Dark History Image</tspan>
+    <tspan x="50%" dy="40">Authentic photograph needed</tspan>
+  </text>
+</svg>

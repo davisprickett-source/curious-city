@@ -9,6 +9,7 @@ export interface WithImage {
   image?: {
     src: string
     alt: string
+    caption?: string
     credit?: string
     year?: string
   }
@@ -19,6 +20,7 @@ export interface WithImages {
   images?: Array<{
     src: string
     alt: string
+    caption?: string
     credit?: string
   }>
 }
@@ -181,6 +183,13 @@ export interface EventItem {
   category: 'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'
   tags?: string[] // ["free", "family-friendly", "outdoor"]
 
+  // Additional info links
+  moreInfo?: Array<{
+    title: string
+    url: string
+    type?: 'tickets' | 'article' | 'video' | 'directions' | 'rsvp'
+  }>
+
   // Auto-expiration
   expiresAt?: string // When to stop showing this event (if different from endDate)
 }
@@ -213,11 +222,22 @@ export interface CuriosityContentItem extends BaseContentItem {
   body: string
   category?: 'history' | 'architecture' | 'underground' | 'science' | 'culture' | 'law' | 'invention' | 'legend' | 'nature'
   year?: string
+  video?: {
+    youtubeId: string
+    title?: string
+  }
   image?: {
     src: string
     alt: string
+    caption?: string
     credit?: string
   }
+  images?: Array<{
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }>
   source?: string
   sources?: Array<{
     title: string
@@ -241,11 +261,13 @@ export interface HiddenGemContentItem extends BaseContentItem {
   image?: {
     src: string
     alt: string
+    caption?: string
     credit?: string
   }
   images?: Array<{
     src: string
     alt: string
+    caption?: string
     credit?: string
   }>
   coordinates?: {
@@ -260,6 +282,19 @@ export interface HiddenGemContentItem extends BaseContentItem {
   accessibility?: string
 }
 
+// Individual location for multi-location spots
+export interface SpotLocation {
+  name: string // e.g., "Whittier", "Northeast", "Downtown"
+  address: string
+  neighborhood?: string
+  coordinates?: {
+    lat: number
+    lng: number
+  }
+  hours?: string // If different from main hours
+  note?: string // Brief location-specific note
+}
+
 // Individual spot in a best-of list
 export interface BestOfSpot {
   name: string
@@ -270,11 +305,13 @@ export interface BestOfSpot {
   image?: {
     src: string
     alt: string
+    caption?: string
     credit?: string
   }
   images?: Array<{
     src: string
     alt: string
+    caption?: string
     credit?: string
   }>
   address?: string
@@ -282,6 +319,8 @@ export interface BestOfSpot {
     lat: number
     lng: number
   }
+  // Multiple locations for chains/multi-location spots
+  locations?: SpotLocation[]
   hours?: string
   price?: '$' | '$$' | '$$$' | '$$$$'
   website?: string
@@ -341,8 +380,15 @@ export interface DarkHistoryContentItem extends BaseContentItem {
   image?: {
     src: string
     alt: string
+    caption?: string
     credit?: string
   }
+  images?: Array<{
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }>
   location?: {
     name: string
     coordinates?: {
@@ -404,8 +450,14 @@ export interface SceneContentItem extends BaseContentItem {
   type: 'scene'
   title?: string
   description?: string
-  category?: 'street' | 'architecture' | 'nature' | 'food' | 'people' | 'night' | 'seasons' | 'historic'
-  media: SceneItem
+  category?: 'street' | 'architecture' | 'nature' | 'food' | 'people' | 'night' | 'seasons' | 'historic' | 'art' | 'urban' | 'weather' | 'interior' | 'cityscape' | 'water' | 'neighborhood'
+  media?: SceneItem
+  images?: Array<{
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }>
 }
 
 // Union type for all content items
@@ -425,7 +477,7 @@ export type ContentItem =
   | LostAndLovedContentItem
   | SceneContentItem
 
-// Hero image for essays and cities
+// Hero image for history articles and cities
 export interface HeroImage {
   src: string
   alt: string
@@ -452,57 +504,57 @@ export interface CitiesIndex {
 }
 
 // ============================================
-// Essay / Long-form content types
+// History / Long-form content types
 // ============================================
 
-// Base block for essay content
-export interface BaseEssayBlock {
+// Base block for history content
+export interface BaseHistoryBlock {
   id: string
   type: string
 }
 
 // Paragraph block
-export interface ParagraphBlock extends BaseEssayBlock {
+export interface ParagraphBlock extends BaseHistoryBlock {
   type: 'paragraph'
   content: string
   dropcap?: boolean
 }
 
 // Pull quote block
-export interface PullQuoteBlock extends BaseEssayBlock {
+export interface PullQuoteBlock extends BaseHistoryBlock {
   type: 'pullquote'
   content: string
   attribution?: string
 }
 
 // Section break (visual pause)
-export interface SectionBreakBlock extends BaseEssayBlock {
+export interface SectionBreakBlock extends BaseHistoryBlock {
   type: 'break'
   style?: 'dots' | 'line' | 'space'
 }
 
-// Subheading within essay
-export interface SubheadingBlock extends BaseEssayBlock {
+// Subheading within history
+export interface SubheadingBlock extends BaseHistoryBlock {
   type: 'subheading'
   content: string
 }
 
 // Ad block (sparse, treated as pause)
-export interface EssayAdBlock extends BaseEssayBlock {
+export interface HistoryAdBlock extends BaseHistoryBlock {
   type: 'ad'
   size?: 'banner' | 'rectangle'
 }
 
-// Union of all essay block types
-export type EssayBlock =
+// Union of all history block types
+export type HistoryBlock =
   | ParagraphBlock
   | PullQuoteBlock
   | SectionBreakBlock
   | SubheadingBlock
-  | EssayAdBlock
+  | HistoryAdBlock
 
-// Essay metadata and content
-export interface Essay {
+// History metadata and content
+export interface History {
   slug: string
   citySlug: string
   title: string
@@ -510,12 +562,12 @@ export interface Essay {
   author?: string
   publishedAt?: string
   heroImage?: HeroImage
-  blocks: EssayBlock[]
+  blocks: HistoryBlock[]
 }
 
-// Essays index by city then slug
-export interface EssaysIndex {
+// History index by city then slug
+export interface HistoryIndex {
   [citySlug: string]: {
-    [essaySlug: string]: Essay
+    [historySlug: string]: History
   }
 }

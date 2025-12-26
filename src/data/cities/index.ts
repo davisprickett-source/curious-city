@@ -169,13 +169,6 @@ export function getCityDarkHistory(slug: string) {
   return findItemsOfType<any>(city.content, 'dark-history')
 }
 
-// Get this week / current happenings for a specific city
-export function getCityThisWeek(slug: string) {
-  const city = getCity(slug)
-  if (!city) return []
-  return findItemsOfType<any>(city.content, 'this-week')
-}
-
 // Get events for a specific city
 export function getCityEvents(slug: string) {
   const city = getCity(slug)

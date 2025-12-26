@@ -10,8 +10,8 @@
 // ============================================
 
 export type CitySection =
-  | 'essay'
-  | 'this-week'
+  | 'history'
+  | 'events'
   | 'scenes'
   | 'coffee-shops'
   | 'bars'
@@ -38,8 +38,8 @@ export interface SectionDefinition {
 }
 
 export const citySections: SectionDefinition[] = [
-  { id: 'essay', label: 'Essay', path: '' },
-  { id: 'this-week', label: 'This Week', path: '/this-week' },
+  { id: 'history', label: 'History', path: '' },
+  { id: 'events', label: 'Events', path: '/events' },
   { id: 'scenes', label: 'Scenes', path: '/scenes' },
   { id: 'coffee-shops', label: 'Coffee', path: '/coffee-shops' },
   { id: 'bars', label: 'Bars', path: '/bars' },
@@ -58,19 +58,19 @@ export const routes = {
   // Home
   home: () => '/',
 
-  // Essays
-  essays: () => '/essays',
-  essay: (citySlug: string, essaySlug: string) => `/${citySlug}/essay/${essaySlug}`,
+  // History
+  history: () => '/history',
+  cityHistory: (citySlug: string, historySlug: string) => `/${citySlug}/history/${historySlug}`,
 
   // City pages
   city: (citySlug: string) => `/${citySlug}`,
   citySection: (citySlug: string, section: CitySection | string) => {
-    if (section === 'essay') return `/${citySlug}`
+    if (section === 'history') return `/${citySlug}`
     return `/${citySlug}/${section}`
   },
 
   // Specific city sections
-  cityThisWeek: (citySlug: string) => `/${citySlug}/this-week`,
+  cityEvents: (citySlug: string) => `/${citySlug}/events`,
   cityScenes: (citySlug: string) => `/${citySlug}/scenes`,
   cityCoffeeShops: (citySlug: string) => `/${citySlug}/coffee-shops`,
   cityBars: (citySlug: string) => `/${citySlug}/bars`,

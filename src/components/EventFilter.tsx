@@ -23,16 +23,27 @@ export function EventFilter({ citySlug }: EventFilterProps) {
 
   const views: EventView[] = ['today', 'weekend', 'week', 'month']
 
+  // Preserve other params (like categories) when changing view
+  const buildHref = (view: EventView) => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (view === 'week') {
+      params.delete('view')
+    } else {
+      params.set('view', view)
+    }
+    const queryString = params.toString()
+    return queryString ? `${pathname}?${queryString}` : pathname
+  }
+
   return (
     <div className="flex items-center gap-2 overflow-x-auto pb-1">
       {views.map((view) => {
         const isActive = currentView === view
-        const href = view === 'week' ? pathname : `${pathname}?view=${view}`
 
         return (
           <Link
             key={view}
-            href={href}
+            href={buildHref(view)}
             className={`
               px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors
               ${

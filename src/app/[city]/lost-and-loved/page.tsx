@@ -108,13 +108,34 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
                       {/* Description */}
                       <p className="text-neutral-600 leading-relaxed mb-4">{item.description}</p>
 
-                      {/* Image */}
-                      {item.image && (
-                        <div className="mb-4 overflow-hidden rounded-lg max-w-md">
+                      {/* Images - carousel or single */}
+                      {item.images && item.images.length > 0 && (
+                        <div className="mb-4 overflow-hidden rounded-lg">
+                          <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1 snap-x snap-mandatory">
+                            {item.images.map((img: any, imgIdx: number) => (
+                              <div key={imgIdx} className="flex-shrink-0 snap-start first:pl-0 last:pr-0" style={{ width: item.images.length === 1 ? '100%' : 'calc(85% - 4px)' }}>
+                                <img
+                                  src={img.src}
+                                  alt={img.alt || item.name}
+                                  className="w-full h-64 object-cover rounded-lg"
+                                />
+                                {img.credit && (
+                                  <div className="text-[11px] text-neutral-400 mt-1">
+                                    {img.credit}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {/* Single image fallback */}
+                      {item.image && !item.images && (
+                        <div className="mb-4 overflow-hidden rounded-lg">
                           <img
                             src={item.image.src}
                             alt={item.image.alt || item.name}
-                            className="w-full h-48 object-cover"
+                            className="w-full h-64 object-cover"
                           />
                           {item.image.credit && (
                             <div className="text-[11px] text-neutral-400 mt-1">
@@ -125,20 +146,20 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
                       )}
 
                       {/* Why missed */}
-                      <div className="bg-neutral-50 rounded-lg px-4 py-3 mb-4 max-w-xl">
+                      <div className="bg-neutral-50 rounded-lg px-4 py-3 mb-4">
                         <span className="text-xs font-medium text-neutral-500 uppercase tracking-wide">Why it's missed</span>
                         <p className="text-neutral-700 mt-1">{item.whyMissed}</p>
                       </div>
 
                       {/* Community voice */}
                       {item.communityVoice && (
-                        <blockquote className="border-l-2 border-accent-300 pl-4 mb-4 max-w-xl">
+                        <blockquote className="border-l-2 border-accent-300 pl-4 mb-4">
                           <p className="italic text-neutral-600">{item.communityVoice}</p>
                         </blockquote>
                       )}
 
                       {/* Footer */}
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-500">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-500 mb-3">
                         {item.lastAddress && (
                           <span className="flex items-center gap-1.5">
                             <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,10 +169,31 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
                             {item.lastAddress}
                           </span>
                         )}
-                        {item.source && (
-                          <span className="italic">Source: {item.source}</span>
-                        )}
                       </div>
+
+                      {/* Sources with links */}
+                      {item.sources && item.sources.length > 0 && (
+                        <div className="text-sm">
+                          <span className="text-neutral-400">Sources: </span>
+                          {item.sources.map((src: { title: string; url: string }, srcIdx: number) => (
+                            <span key={srcIdx}>
+                              <a
+                                href={src.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-neutral-500 hover:text-neutral-700 underline underline-offset-2"
+                              >
+                                {src.title}
+                              </a>
+                              {srcIdx < item.sources.length - 1 && <span className="text-neutral-300"> · </span>}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                      {/* Fallback for old source format */}
+                      {item.source && !item.sources && (
+                        <span className="text-sm italic text-neutral-400">Source: {item.source}</span>
+                      )}
                     </div>
                   </div>
                 </article>

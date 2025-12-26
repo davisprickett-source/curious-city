@@ -1,0 +1,58 @@
+import { History, HistoryIndex } from '@/types/content'
+
+import { minneapolis_history } from './minneapolis'
+import { fargo_history } from './fargo'
+import { raleigh_history } from './raleigh'
+import { chicago_history } from './chicago'
+import { salt_lake_city_history } from './salt-lake-city'
+import { colorado_springs_history } from './colorado-springs'
+import { dallas_history } from './dallas'
+import { anchorage_history } from './anchorage'
+import { denver_history } from './denver'
+import { tampa_history } from './tampa'
+import { phoenix_history } from './phoenix'
+import { portland_history } from './portland'
+
+// Re-export individual history collections
+export { minneapolis_history }
+export { fargo_history }
+export { raleigh_history }
+export { chicago_history }
+export { salt_lake_city_history }
+export { colorado_springs_history }
+export { dallas_history }
+export { anchorage_history }
+export { denver_history }
+export { tampa_history }
+export { phoenix_history }
+export { portland_history }
+
+// Combined history index
+export const history: HistoryIndex = {
+  'minneapolis': minneapolis_history,
+  'fargo': fargo_history,
+  'raleigh': raleigh_history,
+  'chicago': chicago_history,
+  'salt-lake-city': salt_lake_city_history,
+  'colorado-springs': colorado_springs_history,
+  'dallas': dallas_history,
+  'anchorage': anchorage_history,
+  'denver': denver_history,
+  'tampa': tampa_history,
+  'phoenix': phoenix_history,
+  'portland': portland_history,
+}
+
+export function getHistory(citySlug: string, historySlug: string): History | null {
+  return history[citySlug]?.[historySlug] || null
+}
+
+export function getHistoryForCity(citySlug: string): History[] {
+  const cityHistory = history[citySlug]
+  if (!cityHistory) return []
+  return Object.values(cityHistory)
+}
+
+export function getAllHistory(): History[] {
+  return Object.values(history).flatMap((cityHistory) => Object.values(cityHistory))
+}

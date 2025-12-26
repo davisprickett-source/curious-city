@@ -1,19 +1,19 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { getAllEssays } from '@/data/essays'
+import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
 import { Header } from '@/components'
 
 export const metadata: Metadata = {
-  title: 'Essays | Curious City',
+  title: 'History | Curious City',
   description: 'Long-form writing about American cities - their histories, contradictions, and what makes them tick.',
 }
 
-export default function EssaysPage() {
-  const essays = getAllEssays()
+export default function HistoryPage() {
+  const history = getAllHistory()
 
   // Sort by date, newest first
-  const sortedEssays = essays.sort((a, b) => {
+  const sortedHistory = history.sort((a, b) => {
     const dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0
     const dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0
     return dateB - dateA
@@ -28,7 +28,7 @@ export default function EssaysPage() {
           {/* Hero */}
           <div className="mb-12">
             <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
-              Essays
+              History
             </h1>
             <p className="text-lg text-neutral-600 max-w-2xl">
               Long-form writing about American cities — their histories, contradictions,
@@ -36,22 +36,22 @@ export default function EssaysPage() {
             </p>
           </div>
 
-          {/* Essays Grid */}
+          {/* History Grid */}
           <div className="grid gap-6 md:grid-cols-2">
-            {sortedEssays.map((essay) => {
-              const city = getCity(essay.citySlug)
-              const cityName = city?.name || essay.citySlug
+            {sortedHistory.map((article) => {
+              const city = getCity(article.citySlug)
+              const cityName = city?.name || article.citySlug
 
               // Get first paragraph as excerpt
-              const firstParagraph = essay.blocks.find(b => b.type === 'paragraph')
+              const firstParagraph = article.blocks.find(b => b.type === 'paragraph')
               const excerpt = firstParagraph && 'content' in firstParagraph
                 ? firstParagraph.content.slice(0, 200) + '...'
-                : essay.subtitle
+                : article.subtitle
 
               return (
                 <Link
-                  key={`${essay.citySlug}-${essay.slug}`}
-                  href={`/${essay.citySlug}/essay/${essay.slug}`}
+                  key={`${article.citySlug}-${article.slug}`}
+                  href={`/${article.citySlug}/history/${article.slug}`}
                   className="group block p-6 bg-white rounded-xl border border-neutral-200 hover:border-neutral-400 hover:shadow-sm transition-all"
                 >
                   {/* City tag */}
@@ -63,13 +63,13 @@ export default function EssaysPage() {
 
                   {/* Title */}
                   <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-neutral-700 transition-colors mb-2">
-                    {essay.title}
+                    {article.title}
                   </h2>
 
                   {/* Subtitle */}
-                  {essay.subtitle && (
+                  {article.subtitle && (
                     <p className="text-neutral-600 mb-3 italic">
-                      {essay.subtitle}
+                      {article.subtitle}
                     </p>
                   )}
 
@@ -80,7 +80,7 @@ export default function EssaysPage() {
 
                   {/* Read more */}
                   <div className="mt-4 text-sm font-medium text-neutral-900 group-hover:text-neutral-600 transition-colors">
-                    Read essay →
+                    Read article →
                   </div>
                 </Link>
               )

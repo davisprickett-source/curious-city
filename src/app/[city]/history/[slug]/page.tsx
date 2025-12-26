@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getCity } from '@/data/cities'
-import { getEssay, getAllEssays } from '@/data/essays'
-import { Header, EssayRenderer, CityNav } from '@/components'
+import { getHistory, getAllHistory } from '@/data/history'
+import { Header, HistoryRenderer, CityNav } from '@/components'
 
 const cityBanners: Record<string, string> = {
   minneapolis: '/Minneapolis-banner.png',
@@ -17,39 +17,39 @@ const cityBanners: Record<string, string> = {
   'salt-lake-city': '/Salt Lake City Banner.png',
 }
 
-interface EssayPageProps {
+interface HistoryPageProps {
   params: Promise<{ city: string; slug: string }>
 }
 
 export async function generateStaticParams() {
-  const essays = getAllEssays()
-  return essays.map((essay) => ({
-    city: essay.citySlug,
-    slug: essay.slug,
+  const history = getAllHistory()
+  return history.map((article) => ({
+    city: article.citySlug,
+    slug: article.slug,
   }))
 }
 
-export async function generateMetadata({ params }: EssayPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: HistoryPageProps): Promise<Metadata> {
   const { city: citySlug, slug } = await params
-  const essay = getEssay(citySlug, slug)
+  const article = getHistory(citySlug, slug)
   const city = getCity(citySlug)
 
-  if (!essay || !city) {
-    return { title: 'Essay Not Found' }
+  if (!article || !city) {
+    return { title: 'History Article Not Found' }
   }
 
   return {
-    title: `${essay.title} | ${city.name} | Curious City`,
-    description: essay.subtitle || `A long-form piece about ${city.name}`,
+    title: `${article.title} | ${city.name} | Curious City`,
+    description: article.subtitle || `A historical piece about ${city.name}`,
   }
 }
 
-export default async function EssayPage({ params }: EssayPageProps) {
+export default async function HistoryPage({ params }: HistoryPageProps) {
   const { city: citySlug, slug } = await params
-  const essay = getEssay(citySlug, slug)
+  const article = getHistory(citySlug, slug)
   const city = getCity(citySlug)
 
-  if (!essay || !city) {
+  if (!article || !city) {
     notFound()
   }
 
@@ -77,7 +77,7 @@ export default async function EssayPage({ params }: EssayPageProps) {
 
       <main className="flex-1">
         <article className="max-w-4xl lg:max-w-5xl mx-auto px-6 md:px-8 py-12">
-          {/* Essay header */}
+          {/* History article header */}
           <header className="mb-10">
             <Link
               href={`/${city.slug}`}
@@ -90,19 +90,19 @@ export default async function EssayPage({ params }: EssayPageProps) {
             </Link>
 
             <h1 className="text-3xl font-semibold text-neutral-900 leading-tight">
-              {essay.title}
+              {article.title}
             </h1>
 
-            {essay.subtitle && (
+            {article.subtitle && (
               <p className="mt-3 text-lg text-neutral-600 leading-relaxed">
-                {essay.subtitle}
+                {article.subtitle}
               </p>
             )}
 
           </header>
 
-          {/* Essay content */}
-          <EssayRenderer blocks={essay.blocks} />
+          {/* History article content */}
+          <HistoryRenderer blocks={article.blocks} />
 
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-neutral-200">

@@ -86,9 +86,9 @@ export default async function CityCuriositiesPage({ params }: PageProps) {
 
           {/* Curiosities List */}
           {curiosities.length > 0 ? (
-            <div className="divide-y divide-neutral-100">
+            <div className="divide-y divide-neutral-200">
               {curiosities.map((item: any, index: number) => (
-                <article key={item.id} className="py-8 first:pt-0">
+                <article key={item.id} className="py-8 first:pt-0 border-t border-neutral-200 first:border-t-0">
                   <div className="flex items-start gap-4">
                     <div className="w-7 h-7 bg-neutral-900 text-white text-sm font-medium rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       {index + 1}
@@ -107,22 +107,37 @@ export default async function CityCuriositiesPage({ params }: PageProps) {
                         )}
                       </div>
 
-                      {/* Body */}
-                      <p className="text-neutral-600 leading-relaxed mb-4">{item.body}</p>
-
-                      {/* Image */}
+                      {/* Image - directly under title */}
                       {item.image && (
-                        <div className="mb-4 overflow-hidden rounded-lg max-w-md">
+                        <div className="my-3 overflow-hidden rounded-lg">
                           <img
                             src={item.image.src}
                             alt={item.image.alt || item.title}
-                            className="w-full h-48 object-cover"
+                            className="w-full h-64 object-cover"
                           />
                           {item.image.credit && (
                             <div className="text-[11px] text-neutral-400 mt-1">
                               {item.image.credit}
                             </div>
                           )}
+                        </div>
+                      )}
+
+                      {/* Body */}
+                      <p className="text-neutral-600 leading-relaxed mb-4">{item.body}</p>
+
+                      {/* Video - after body */}
+                      {item.video && (
+                        <div className="my-3 overflow-hidden rounded-lg">
+                          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                            <iframe
+                              className="absolute top-0 left-0 w-full h-full"
+                              src={`https://www.youtube.com/embed/${item.video.youtubeId}`}
+                              title={item.video.title || item.title}
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
                         </div>
                       )}
 
@@ -144,6 +159,26 @@ export default async function CityCuriositiesPage({ params }: PageProps) {
                           <span className="italic">Source: {item.source}</span>
                         )}
                       </div>
+
+                      {/* Sources */}
+                      {item.sources && item.sources.length > 0 && (
+                        <div className="mt-3 text-sm">
+                          <span className="text-neutral-500">Sources: </span>
+                          {item.sources.map((source: any, idx: number) => (
+                            <span key={idx}>
+                              <a
+                                href={source.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-800 underline"
+                              >
+                                {source.title}
+                              </a>
+                              {idx < item.sources.length - 1 && ', '}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </article>

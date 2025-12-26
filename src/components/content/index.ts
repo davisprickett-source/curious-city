@@ -5,5 +5,5 @@ export { HistoryRenderer } from './HistoryRenderer'
 export { DarkHistoryRenderer } from './DarkHistoryRenderer'
 export { LostAndLovedRenderer } from './LostAndLovedRenderer'
 export { BestOfRenderer } from './BestOfRenderer'
-export { ThisWeekRenderer } from './ThisWeekRenderer'
+// ThisWeekRenderer removed - using EventsRenderer instead
 export { SceneRenderer } from './SceneRenderer'
