@@ -8,6 +8,12 @@ export const colorado_springs_essays: Record<string, Essay> = {
       subtitle: 'A city of contradictions at the foot of America\'s mountain',
       author: 'Curious City',
       publishedAt: '2024-12-21',
+      heroImage: {
+        src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Pikes-Peak-Sunrise.jpg',
+        alt: 'Pikes Peak rising above Garden of the Gods red rock formations at sunrise',
+        credit: 'Garden of the Gods Park',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
