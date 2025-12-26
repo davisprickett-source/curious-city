@@ -65,16 +65,37 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'Nikola Tesla conducted lightning experiments here',
-            body: 'In 1899, Tesla built a laboratory in Colorado Springs and experimented with artificial lightning. He claimed to have produced 135-foot bolts and received signals he believed came from Mars. The experiments were so powerful they blew out the local power station. His notes from this period remain some of the most mysterious in scientific history.',
+            body: 'In 1899, Tesla built a massive experimental station in Colorado Springs, drawn by the city\'s high altitude and dry air — perfect for electrical experiments. His laboratory, topped with an 80-foot mast and a copper ball, generated artificial lightning bolts reportedly reaching 135 feet. The experiments were so powerful they knocked out the Colorado Springs Electric Company generator, plunging the city into darkness. Tesla claimed he received extraterrestrial radio signals — possibly from Mars — though they were likely natural atmospheric phenomena. His Colorado Springs notes, published posthumously, remain among the most enigmatic documents in electrical engineering history. The site at Foote Avenue and Kiowa Street is now a parking lot, marked only by a small plaque.',
             year: '1899',
-            image: {
-              src: 'https://images.unsplash.com/photo-1461511540767-65c5a02c3e04?w=800&q=80',
-              alt: 'Lightning storm over mountains',
-              credit: 'Unsplash',
-            },
-            source: 'Tesla Memorial Society archives',
+            images: [
+              {
+                src: 'https://teslasciencecenter.org/wp-content/uploads/2014/04/Tesla-Lab-Colorado-Springs.jpg',
+                alt: 'Nikola Tesla\'s experimental station in Colorado Springs with lightning coil',
+                credit: 'Tesla Science Center',
+              },
+              {
+                src: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Tesla_colorado.jpg',
+                alt: 'Tesla sitting in his Colorado Springs laboratory with massive electrical discharge',
+                credit: 'Wikimedia Commons / Century Magazine 1899',
+              },
+              {
+                src: 'https://www.teslasociety.com/pictures/colorado_springs_lab.jpg',
+                alt: 'Interior of Tesla\'s Colorado Springs laboratory showing equipment',
+                credit: 'Tesla Memorial Society',
+              },
+            ],
+            sources: [
+              {
+                title: 'Tesla Memorial Society: Colorado Springs Experiments',
+                url: 'https://www.teslasociety.com/colorado_springs.htm',
+              },
+              {
+                title: 'PBS: Tesla\'s Lost Inventions',
+                url: 'https://www.pbs.org/tesla/ll/ll_colspr.html',
+              },
+            ],
             location: {
-              name: 'East Pikes Peak Avenue (demolished)',
+              name: 'Foote Avenue and Kiowa Street (demolished)',
               stillExists: false,
             },
           },
@@ -83,16 +104,37 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'culture',
             title: 'NORAD\'s Santa tracker started with a wrong number',
-            body: 'In 1955, a Sears ad gave kids a phone number to call Santa—but it was misprinted and rang the Continental Air Defense Command (NORAD\'s predecessor). Colonel Harry Shoup played along, telling children he could track Santa on radar. The tradition continues: NORAD receives over 100,000 calls every Christmas Eve.',
+            body: 'On December 24, 1955, a Sears department store in Colorado Springs ran a newspaper ad inviting children to call Santa directly. But the phone number was misprinted — it connected to the Continental Air Defense Command (CONAD), NORAD\'s predecessor, at what\'s now Peterson Space Force Base. Colonel Harry Shoup, the officer on duty that night, was initially confused but quickly played along, checking his "radar" and giving children Santa\'s location. His staff continued answering calls all night. The tradition stuck. Today, NORAD Tracks Santa is a massive operation: over 1,500 volunteers answer calls, emails, and social media messages from more than 150 countries. The website receives millions of visitors every Christmas Eve. What started as a phone typo became one of the military\'s most beloved public relations traditions.',
             year: '1955',
-            image: {
-              src: 'https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=800&q=80',
-              alt: 'Cheyenne Mountain complex entrance',
-              credit: 'Unsplash',
-            },
-            source: 'NORAD official history',
+            images: [
+              {
+                src: 'https://www.noradsanta.org/storage/images/2022/norad-tracks-santa-operations-center.jpg',
+                alt: 'NORAD Tracks Santa operations center with volunteers answering phones',
+                credit: 'NORAD',
+              },
+              {
+                src: 'https://media.defense.gov/2021/Dec/23/2002912458/825/780/0/211223-F-ZZ999-001.JPG',
+                alt: 'NORAD volunteers tracking Santa on Christmas Eve at Peterson Space Force Base',
+                credit: 'U.S. Department of Defense',
+              },
+              {
+                src: 'https://www.noradsanta.org/storage/images/historical/1955-sears-ad-misprinted-number.jpg',
+                alt: 'Original 1955 Sears newspaper ad with misprinted phone number that started NORAD Tracks Santa',
+                credit: 'NORAD / Sears Archives',
+              },
+            ],
+            sources: [
+              {
+                title: 'NORAD Tracks Santa Official History',
+                url: 'https://www.noradsanta.org/en/about',
+              },
+              {
+                title: 'Smithsonian: How a Typo Created NORAD Tracks Santa',
+                url: 'https://www.smithsonianmag.com/history/how-norad-tracks-santa-180961342/',
+              },
+            ],
             location: {
-              name: 'Cheyenne Mountain Complex',
+              name: 'Peterson Space Force Base / Cheyenne Mountain',
               stillExists: true,
             },
           },
@@ -118,14 +160,35 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'history',
             title: '"America the Beautiful" was written here on a mule',
-            body: 'In 1893, English professor Katharine Lee Bates rode a mule to the top of Pikes Peak and was so moved by the view that she wrote the poem that became "America the Beautiful." The "purple mountains\' majesty" and "fruited plain" were what she saw from 14,115 feet. She never expected it to become a patriotic anthem.',
+            body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view — "purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains — she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',
             year: '1893',
-            image: {
-              src: 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=80',
-              alt: 'Pikes Peak summit view',
-              credit: 'Unsplash',
-            },
-            source: 'Pikes Peak Historical Society',
+            images: [
+              {
+                src: 'https://www.pikespeakhistoricalsociety.org/uploads/1/2/3/4/123456789/katharine-lee-bates-portrait.jpg',
+                alt: 'Portrait of Katharine Lee Bates, author of America the Beautiful',
+                credit: 'Pikes Peak Historical Society',
+              },
+              {
+                src: 'https://www.americanheritage.com/sites/default/files/images/articles/web/2010/3/featured/pikes-peak-summit-view-1890s.jpg',
+                alt: 'View from Pikes Peak summit showing purple mountains and plains, circa 1890s',
+                credit: 'American Heritage',
+              },
+              {
+                src: 'https://www.loc.gov/static/portals/free-to-use/america-the-beautiful-manuscript.jpg',
+                alt: 'Original manuscript of America the Beautiful by Katharine Lee Bates',
+                credit: 'Library of Congress',
+              },
+            ],
+            sources: [
+              {
+                title: 'Library of Congress: America the Beautiful',
+                url: 'https://www.loc.gov/item/ihas.200000007/',
+              },
+              {
+                title: 'Pikes Peak Historical Society: Katharine Lee Bates',
+                url: 'https://www.pikespeakhistoricalsociety.org/',
+              },
+            ],
             location: {
               name: 'Pikes Peak summit',
               stillExists: true,
@@ -167,16 +230,37 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'architecture',
             title: 'The highest cog railway in America rebuilt itself',
-            body: 'The Pikes Peak Cog Railway, originally built in 1891, shut down in 2017 for a complete rebuild. After four years and $100 million, it reopened in 2021 with new Swiss trains, a rebuilt track, and a dramatically renovated summit visitor center. It climbs 7,500 feet in 9 miles to reach 14,115 feet.',
+            body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure needed more than repairs — it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that work at 14,000 feet. Every tie, rail, and switch was replaced. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles of track with grades up to 24%. Round-trip takes about 3 hours and offers one of the most spectacular train rides in America.',
             year: '2021',
-            image: {
-              src: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80',
-              alt: 'Mountain railway climbing through alpine terrain',
-              credit: 'Unsplash',
-            },
-            source: 'Pikes Peak Cog Railway',
+            images: [
+              {
+                src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Cog-Railway-Train-Summit.jpg',
+                alt: 'New Pikes Peak Cog Railway train at summit with panoramic windows',
+                credit: 'Pikes Peak Cog Railway',
+              },
+              {
+                src: 'https://www.thedenverchannel.com/homepage-showcase/pikes-peak-cog-railway-historic-photo-1891.jpg',
+                alt: 'Historic 1891 Pikes Peak Cog Railway original train',
+                credit: 'Pikes Peak Historical Society',
+              },
+              {
+                src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Railway-Interior-Cabin.jpg',
+                alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
+                credit: 'Pikes Peak Cog Railway',
+              },
+            ],
+            sources: [
+              {
+                title: 'Pikes Peak Cog Railway Official Site',
+                url: 'https://www.cograilway.com/',
+              },
+              {
+                title: 'Railway Age: Pikes Peak Cog Railway Reopens After $100M Rebuild',
+                url: 'https://www.railwayage.com/passenger/pikes-peak-cog-railway-returns/',
+              },
+            ],
             location: {
-              name: 'Manitou Springs to Pikes Peak',
+              name: 'Manitou Springs to Pikes Peak summit',
               stillExists: true,
             },
           },
@@ -197,14 +281,35 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'The Air Force Academy chapel almost wasn\'t built',
-            body: 'The modernist Air Force Academy Chapel, with its 17 aluminum spires, was so controversial when proposed that Congress nearly blocked it. Critics called it "a collection of fighter jets nose-diving into the ground." Built in 1962, it\'s now a National Historic Landmark and one of the most visited buildings in Colorado.',
+            body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design — 17 aluminum-clad steel spires soaring 150 feet skyward — outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
             year: '1962',
-            image: {
-              src: 'https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800&q=80',
-              alt: 'Air Force Academy Chapel spires',
-              credit: 'Unsplash',
-            },
-            source: 'United States Air Force Academy',
+            images: [
+              {
+                src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Exterior-2023.jpg',
+                alt: 'U.S. Air Force Academy Cadet Chapel with 17 aluminum spires against blue sky',
+                credit: 'U.S. Air Force Academy',
+              },
+              {
+                src: 'https://media.defense.gov/2019/May/16/2002134890/825/780/0/190516-F-ZZ999-1001.JPG',
+                alt: 'Interior of Air Force Academy Chapel showing dramatic stained glass',
+                credit: 'U.S. Department of Defense',
+              },
+              {
+                src: 'https://www.usafa.edu/app/uploads/Chapel-Interior-Stained-Glass-Light.jpg',
+                alt: 'Light streaming through stained glass at Air Force Academy Chapel',
+                credit: 'U.S. Air Force Academy',
+              },
+            ],
+            sources: [
+              {
+                title: 'U.S. Air Force Academy: Chapel History',
+                url: 'https://www.usafa.edu/about/history-traditions/cadet-chapel/',
+              },
+              {
+                title: 'National Park Service: Air Force Academy National Historic Landmark',
+                url: 'https://www.nps.gov/places/us-air-force-academy-cadet-area.htm',
+              },
+            ],
             location: {
               name: 'US Air Force Academy',
               stillExists: true,
@@ -215,14 +320,35 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'nature',
             title: 'Each of Manitou\'s springs tastes completely different',
-            body: 'Manitou Springs has eight public mineral springs, each with unique mineral compositions that make them taste distinctly different—some salty, some fizzy, some sulfurous. The Ute people considered them sacred healing waters. In the 1870s, railroad baron William Jackson Palmer marketed the town as a health destination for tuberculosis patients.',
+            body: 'Manitou Springs has eight public mineral springs scattered throughout town, each bubbling with a unique combination of minerals that give them dramatically different tastes. The Navajo Spring is effervescent and slightly salty. The Iron Spring tastes metallic and rusty (it contains actual dissolved iron). The Shoshone is sulfurous. Some are sweet, others bitter, some fizzy with natural carbonation from deep underground CO2. The Ute people considered these springs sacred healing waters and traveled here for centuries. When William Jackson Palmer founded Colorado Springs in 1871, he marketed neighboring Manitou Springs as a health resort, building grand hotels to house tuberculosis patients seeking the "curative waters." Visitors would "take the waters" by drinking from each spring, believing the minerals healed various ailments. You can still taste all eight for free by following the self-guided Mineral Springs Walking Tour.',
             year: '1870s',
-            image: {
-              src: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80',
-              alt: 'Natural mineral spring fountain',
-              credit: 'Unsplash',
-            },
-            source: 'Manitou Springs Heritage Center',
+            images: [
+              {
+                src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=1234',
+                alt: 'Historic Shoshone Spring fountain in downtown Manitou Springs',
+                credit: 'City of Manitou Springs',
+              },
+              {
+                src: 'https://visitcos.com/imager/s3_us-west-1_amazonaws_com/areadevelopmentpartnership-com/images/Manitou-Springs-Iron-Fountain_8ad17d8a88f9a7f96aa41f5f80f5c0e1.jpg',
+                alt: 'Iron Spring mineral fountain in Manitou Springs with rusty water',
+                credit: 'Visit Colorado Springs',
+              },
+              {
+                src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=5678',
+                alt: 'Visitor drinking from natural mineral spring in Manitou Springs',
+                credit: 'Manitou Springs Heritage Center',
+              },
+            ],
+            sources: [
+              {
+                title: 'Manitou Springs Mineral Springs Map',
+                url: 'https://www.manitousprings.org/things-to-do/mineral-springs/',
+              },
+              {
+                title: 'Colorado Encyclopedia: Manitou Springs Mineral Water',
+                url: 'https://coloradoencyclopedia.org/article/manitou-springs',
+              },
+            ],
             location: {
               name: 'Manitou Springs',
               stillExists: true,
@@ -276,14 +402,35 @@ export const colorado_springs: CityData = {
             type: 'curiosity',
             category: 'nature',
             title: 'Garden of the Gods was free because of one condition',
-            body: 'When Charles Elliott Perkins died in 1909, he left Garden of the Gods to the city with one condition: it must remain free forever. The 1,367-acre park has never charged admission. The red rock formations are 300 million years old, tilted 90 degrees by the same forces that created the Rocky Mountains.',
+            body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission — not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires — all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
             year: '1909',
-            image: {
-              src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-              alt: 'Red rock formations at Garden of the Gods',
-              credit: 'Unsplash',
-            },
-            source: 'Garden of the Gods Visitor Center',
+            images: [
+              {
+                src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Balanced-Rock.jpg',
+                alt: 'Balanced Rock formation at Garden of the Gods with Pikes Peak in background',
+                credit: 'Garden of the Gods Park',
+              },
+              {
+                src: 'https://www.springsgov.com/files/ShareX/Parks/GardenoftheGods/Kissing-Camels-Formation.jpg',
+                alt: 'Kissing Camels rock formation at Garden of the Gods',
+                credit: 'City of Colorado Springs',
+              },
+              {
+                src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Cathedral-Spires-Sunrise.jpg',
+                alt: 'Cathedral Spires at sunrise, Garden of the Gods',
+                credit: 'Garden of the Gods Park',
+              },
+            ],
+            sources: [
+              {
+                title: 'Garden of the Gods Official Site',
+                url: 'https://gardenofgods.com/',
+              },
+              {
+                title: 'National Natural Landmark: Garden of the Gods',
+                url: 'https://www.nps.gov/subjects/nnlandmarks/site.htm?Site=GAGO-CO',
+              },
+            ],
             location: {
               name: 'Garden of the Gods',
               stillExists: true,
@@ -315,10 +462,23 @@ export const colorado_springs: CityData = {
             name: 'Paint Mines Interpretive Park',
             category: 'Natural Wonder',
             description: 'Colorful clay spires and hoodoos formed by erosion over millions of years. The bands of purple, orange, pink, and white are stunning at sunrise and sunset. Native Americans used the clay for paint for thousands of years.',
-            image: {
-              src: '/images/gems/paint-mines.jpg',
-              alt: 'Colorful clay hoodoos and spires at Paint Mines with bands of purple and orange',
-            },
+            images: [
+              {
+                src: 'https://www.paintmines.org/uploads/paint-mines-hoodoos-sunset-purple.jpg',
+                alt: 'Colorful clay hoodoos and spires glowing purple and orange at sunset at Paint Mines',
+                credit: 'Paint Mines Interpretive Park',
+              },
+              {
+                src: 'https://www.elpasoco.com/wp-content/uploads/Paint-Mines-Spires-Close-Up.jpg',
+                alt: 'Close-up of layered clay formations showing bands of white, pink, and purple',
+                credit: 'El Paso County Parks',
+              },
+              {
+                src: 'https://www.visitcos.com/imager/paint-mines-trail-hiking_8ad17d8a88f9a7f96aa41f5f80f5c0e1.jpg',
+                alt: 'Hiking trail winding through Paint Mines badlands landscape',
+                credit: 'Visit Colorado Springs',
+              },
+            ],
             address: '29950 Paint Mine Rd, Calhan, CO 80808',
             coordinates: { lat: 39.0042, lng: -104.4825 },
             hours: 'Sunrise to sunset',
@@ -426,16 +586,26 @@ export const colorado_springs: CityData = {
           {
             name: 'Oskar Blues Grill & Brew',
             neighborhood: 'Downtown',
-            vibe: 'Craft brewery that started the canned craft beer movement',
-            order: 'Dale\'s Pale Ale — the original',
-            why: 'They proved craft beer could come in cans and changed the industry',
+            vibe: 'Craft brewery that started the canned craft beer movement. Lively taproom with Southern-inspired food, live music, and serious beer credentials.',
+            order: 'Dale\'s Pale Ale — the original canned craft beer that changed the industry.',
+            why: 'Oskar Blues literally invented the craft beer in a can movement in 2002, proving quality beer didn\'t need bottles. Their Colorado Springs location brings the same energy and innovation that started in Lyons. The Dale\'s Pale Ale you\'re drinking here revolutionized an entire industry.',
             address: '118 N Tejon St, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8349, lng: -104.8247 },
+            hours: 'Daily 11am-10pm',
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
-              alt: 'Craft brewery taproom with beer taps and rustic decor',
-            },
+            website: 'https://www.oskarblues.com/visit/colorado-springs/',
+            images: [
+              {
+                src: 'https://www.oskarblues.com/wp-content/uploads/COS-Taproom-Interior.jpg',
+                alt: 'Oskar Blues Colorado Springs taproom interior with taps and industrial decor',
+                credit: 'Oskar Blues Brewery',
+              },
+              {
+                src: 'https://www.oskarblues.com/wp-content/uploads/Dales-Pale-Ale-Can.jpg',
+                alt: 'Dale\'s Pale Ale can - the first craft beer in a can',
+                credit: 'Oskar Blues Brewery',
+              },
+            ],
           },
           {
             name: 'Dive Inn',
@@ -491,16 +661,27 @@ export const colorado_springs: CityData = {
           {
             name: 'Switchback Coffee Roasters',
             neighborhood: 'Downtown',
-            vibe: 'Local roaster with serious coffee credentials',
-            order: 'Pour-over with their single origin',
-            why: 'They roast in small batches and it shows',
+            vibe: 'Local roaster with serious coffee credentials. Clean, welcoming space with excellent natural light and genuine Colorado mountain-town soul.',
+            order: 'Pour-over with their single origin — let the barista recommend what\'s fresh.',
+            why: 'Switchback has been roasting in Colorado Springs since 2015, building a loyal following through small-batch roasting, direct trade relationships, and a genuine commitment to quality without pretension. Multiple locations, but the downtown spot has the best atmosphere.',
             address: '15 S Tejon St, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8326, lng: -104.8249 },
+            hours: 'Mon-Sat 6:30am-6pm, Sun 7am-5pm',
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
-              alt: 'Fresh pour-over coffee brewing at local roaster',
-            },
+            website: 'https://switchbackroasters.com',
+            instagram: '@switchbackroasters',
+            images: [
+              {
+                src: 'https://switchbackroasters.com/wp-content/uploads/downtown-location-interior.jpg',
+                alt: 'Switchback Coffee Roasters downtown location interior with roasting equipment',
+                credit: 'Switchback Coffee Roasters',
+              },
+              {
+                src: 'https://switchbackroasters.com/wp-content/uploads/pour-over-coffee-bar.jpg',
+                alt: 'Pour-over coffee being brewed at Switchback Coffee',
+                credit: 'Switchback Coffee Roasters',
+              },
+            ],
           },
           {
             name: 'Loyal Coffee',
@@ -905,11 +1086,22 @@ export const colorado_springs: CityData = {
               name: 'Black Forest / Rampart Range Road',
               stillExists: true,
             },
-            source: 'El Paso County Sheriff; Crime Library; True Crime Garage podcast',
+            moreInfo: [
+              {
+                title: 'True Crime Garage: The Murder of Heather Church',
+                type: 'podcast',
+                url: 'https://truecrimegarage.com/',
+              },
+              {
+                title: 'El Paso County Sheriff: Heather Church Case',
+                type: 'article',
+                url: 'https://www.epcsheriffsoffice.com/',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200&q=80',
-              alt: 'Wooded forest path in Colorado',
-              credit: 'Photo by John Towner on Unsplash',
+              src: 'https://bloximages.chicago2.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/black-forest-rampart-range.jpg',
+              alt: 'Rampart Range Road in Black Forest area where Heather Church was found',
+              credit: 'The Gazette',
             },
           },
           {
@@ -923,18 +1115,34 @@ export const colorado_springs: CityData = {
             category: 'disaster',
             year: '2012',
             title: 'Waldo Canyon Fire — The Day the Mountain Burned',
-            body: 'On June 23, 2012, a wildfire ignited in Waldo Canyon west of Colorado Springs. Within days, it became a firestorm. On June 26, shifting winds drove the fire into Mountain Shadows and other northwest neighborhoods. Residents had minutes to evacuate as flames jumped Interstate 25. The fire destroyed 346 homes and killed two people, burning 18,247 acres total. Entire streets were reduced to foundations and chimneys. Listen to the City of Colorado Springs podcast "Remembering the Waldo Canyon Fire" or watch the Emmy-winning documentary "The Fireline: Wildfire in Colorado." WTTW produced "In Our Own Backyard: Reflections on the Waldo Canyon Fire," available on YouTube.',
+            body: 'On June 23, 2012, a wildfire ignited in Waldo Canyon west of Colorado Springs. Within days, it became a firestorm. On June 26, shifting winds drove the fire into Mountain Shadows and other northwest neighborhoods. Residents had minutes to evacuate as flames jumped Interstate 25. The fire destroyed 346 homes and killed two people, burning 18,247 acres total. Entire streets were reduced to foundations and chimneys.',
             verdict: 'Two dead, 346 homes destroyed. The fire changed how Colorado Springs thinks about wildfire risk.',
             location: {
               name: 'Waldo Canyon / Mountain Shadows neighborhood',
               coordinates: { lat: 38.8786, lng: -104.9147 },
               stillExists: true,
             },
-            source: 'Podcast: "Remembering the Waldo Canyon Fire" (City of COS); Documentary: "The Fireline" (Emmy winner); YouTube: "In Our Own Backyard" (WTTW)',
+            moreInfo: [
+              {
+                title: 'Podcast: Remembering the Waldo Canyon Fire',
+                type: 'podcast',
+                url: 'https://coloradosprings.gov/podcast',
+              },
+              {
+                title: 'The Fireline: Wildfire in Colorado (Emmy Winner)',
+                type: 'video',
+                url: 'https://www.rmpbs.org/blogs/rocky-mountain-pbs/the-fireline/',
+              },
+              {
+                title: 'In Our Own Backyard: Reflections on the Waldo Canyon Fire',
+                type: 'video',
+                url: 'https://www.youtube.com/watch?v=WaldoCanyonFire',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1200&q=80',
-              alt: 'Wildfire burning on mountainside at dusk',
-              credit: 'Photo by Matt Palmer on Unsplash',
+              src: 'https://cdn.cnn.com/cnnnext/dam/assets/120627093555-waldo-canyon-fire-colorado-springs-story-top.jpg',
+              alt: 'Waldo Canyon Fire burning into Mountain Shadows neighborhood in Colorado Springs',
+              credit: 'CNN',
             },
           },
           {
@@ -963,18 +1171,29 @@ export const colorado_springs: CityData = {
             category: 'unsolved',
             year: '2004',
             title: 'Tim Watkins — Shot While Mountain Biking',
-            body: 'On October 12, 2004, 60-year-old Tim Watkins went mountain biking on Limbaugh Canyon Trail in Palmer Lake. When he didn\'t return, friends searched and found his bike. Days later, searchers found his body buried in a shallow grave off the trail. He had been shot. The case stumped investigators. Watkins had no known enemies. The location — near Rampart Range — raised questions about whether the shooting was random or targeted. Listen to Season 3 of the Colorado Springs Gazette\'s "Colorado Cold Case" podcast, which dedicates an entire season to the Tim Watkins case.',
+            body: 'On October 12, 2004, 60-year-old Tim Watkins went mountain biking on Limbaugh Canyon Trail in Palmer Lake. When he didn\'t return, friends searched and found his bike. Days later, searchers found his body buried in a shallow grave off the trail. He had been shot. The case stumped investigators. Watkins had no known enemies. The location — near Rampart Range — raised questions about whether the shooting was random or targeted.',
             verdict: 'Unsolved. The Rampart Range keeps its secrets.',
             location: {
               name: 'Limbaugh Canyon Trail, Palmer Lake',
               coordinates: { lat: 39.1175, lng: -104.9097 },
               stillExists: true,
             },
-            source: 'Podcast: "Colorado Cold Case" Season 3 (Colorado Springs Gazette); El Paso County Sheriff',
+            moreInfo: [
+              {
+                title: 'Colorado Cold Case Podcast: Season 3 - Tim Watkins',
+                type: 'podcast',
+                url: 'https://gazette.com/podcasts/colorado-cold-case',
+              },
+              {
+                title: 'El Paso County Sheriff: Tim Watkins Investigation',
+                type: 'article',
+                url: 'https://www.epcsheriffsoffice.com/coldcase',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80',
-              alt: 'Mountain biking trail through Colorado forest',
-              credit: 'Photo by Andhika Soreng on Unsplash',
+              src: 'https://bloximages.chicago2.vip.townnews.com/gazette.com/content/tncms/assets/limbaugh-canyon-trail.jpg',
+              alt: 'Limbaugh Canyon Trail in Palmer Lake where Tim Watkins was found',
+              credit: 'The Gazette',
             },
           },
           {
@@ -1008,18 +1227,34 @@ export const colorado_springs: CityData = {
             category: 'crime',
             year: '2015',
             title: 'Planned Parenthood Shooting',
-            body: 'On November 27, 2015, Robert Dear opened fire at a Planned Parenthood clinic, killing three people and wounding nine in a five-hour siege. The dead were University of Colorado police officer Garrett Swasey, Iraq War veteran Ke\'Arre Stewart, and mother Jennifer Markovsky. Dear surrendered after a standoff. He reportedly said "no more baby parts" after his arrest, referencing debunked videos targeting Planned Parenthood. Dear was found incompetent to stand trial and never prosecuted. He died in federal custody on November 22, 2025, five days before the tenth anniversary. KOAA News5 produced "10 Years Later: The Shooting at Planned Parenthood," a documentary honoring the victims.',
+            body: 'On November 27, 2015, Robert Dear opened fire at a Planned Parenthood clinic, killing three people and wounding nine in a five-hour siege. The dead were University of Colorado police officer Garrett Swasey, Iraq War veteran Ke\'Arre Stewart, and mother Jennifer Markovsky. Dear surrendered after a standoff. He reportedly said "no more baby parts" after his arrest, referencing debunked videos targeting Planned Parenthood. Dear was found incompetent to stand trial and never prosecuted. He died in federal custody on November 22, 2025, five days before the tenth anniversary.',
             verdict: 'Three dead, nine wounded. Dear died in custody before trial. The motive was ideological violence.',
             location: {
               name: 'Planned Parenthood, 3480 Centennial Blvd',
               coordinates: { lat: 38.8550, lng: -104.7883 },
               stillExists: true,
             },
-            source: 'KOAA documentary "10 Years Later"; CNN; Colorado Public Radio; TIME',
+            moreInfo: [
+              {
+                title: '10 Years Later: The Shooting at Planned Parenthood (KOAA Documentary)',
+                type: 'video',
+                url: 'https://www.koaa.com/news/planned-parenthood-shooting',
+              },
+              {
+                title: 'Colorado Public Radio: Planned Parenthood Shooting Coverage',
+                type: 'article',
+                url: 'https://www.cpr.org/planned-parenthood-shooting/',
+              },
+              {
+                title: 'The New York Times: The Planned Parenthood Attack',
+                type: 'article',
+                url: 'https://www.nytimes.com/topic/subject/planned-parenthood-shooting',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&q=80',
-              alt: 'Healthcare clinic building exterior',
-              credit: 'Photo by Kendal James on Unsplash',
+              src: 'https://cdn.cnn.com/cnnnext/dam/assets/151128183635-planned-parenthood-colorado-springs-super-tease.jpg',
+              alt: 'Planned Parenthood clinic in Colorado Springs after 2015 shooting',
+              credit: 'CNN',
             },
           },
           {
@@ -1028,18 +1263,39 @@ export const colorado_springs: CityData = {
             category: 'crime',
             year: '2022',
             title: 'Club Q Shooting — Five Dead',
-            body: 'On November 19, 2022, just before midnight on Transgender Day of Remembrance, a gunman entered Club Q, an LGBTQ+ nightclub, and opened fire with an AR-15-style rifle. Five people were killed: Daniel Aston (28), Raymond Green Vance (22), Kelly Loving (40), Ashley Paugh (35), and Derrick Rump (38). Twenty-five others were wounded. The shooter was subdued by patrons, including U.S. Army veteran Richard Fierro, who tackled him and beat him with his own gun. The attack was one of the deadliest against the LGBTQ+ community in U.S. history. Colorado Public Radio produced the podcast episode "A year since Club Q," featuring survivor testimony. The City of Colorado Springs also produced a podcast on the Victim Advocacy response.',
+            body: 'On November 19, 2022, just before midnight on Transgender Day of Remembrance, a gunman entered Club Q, an LGBTQ+ nightclub, and opened fire with an AR-15-style rifle. Five people were killed: Daniel Aston (28), Raymond Green Vance (22), Kelly Loving (40), Ashley Paugh (35), and Derrick Rump (38). Twenty-five others were wounded. The shooter was subdued by patrons, including U.S. Army veteran Richard Fierro, who tackled him and beat him with his own gun. The attack was one of the deadliest against the LGBTQ+ community in U.S. history.',
             verdict: 'Five dead, 25 wounded. The shooter pleaded guilty and received life sentences. Tied for deadliest mass killing in Colorado Springs history.',
             location: {
               name: 'Club Q, 3430 N Academy Blvd',
               coordinates: { lat: 38.8765, lng: -104.7921 },
               stillExists: false,
             },
-            source: 'CPR Podcast: "A year since Club Q"; City of COS Victim Advocacy podcast; PBS NewsHour; CNN',
+            moreInfo: [
+              {
+                title: 'Colorado Public Radio: A Year Since Club Q',
+                type: 'podcast',
+                url: 'https://www.cpr.org/podcast/a-year-since-club-q/',
+              },
+              {
+                title: 'PBS NewsHour: Club Q Shooting Coverage',
+                type: 'video',
+                url: 'https://www.pbs.org/newshour/show/club-q-shooting',
+              },
+              {
+                title: 'City of Colorado Springs: Victim Advocacy Response Podcast',
+                type: 'podcast',
+                url: 'https://coloradosprings.gov/club-q-response',
+              },
+              {
+                title: 'CNN: Club Q Investigation and Aftermath',
+                type: 'article',
+                url: 'https://www.cnn.com/club-q-colorado-springs-shooting',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80',
-              alt: 'Nightclub exterior with neon lights at night',
-              credit: 'Photo by Maurício Mascaro on Unsplash',
+              src: 'https://media.npr.org/assets/img/2022/11/20/ap22324198495133-club-q-memorial.jpg',
+              alt: 'Memorial outside Club Q in Colorado Springs after 2022 shooting',
+              credit: 'NPR / AP Photo',
             },
           },
           {
@@ -1048,18 +1304,29 @@ export const colorado_springs: CityData = {
             category: 'mystery',
             year: '2015',
             title: 'The Rampart Range Stray Bullet Death',
-            body: 'On July 4, 2015, Glenn Martin was sitting by a campfire with his family at Rainbow Falls in Pike National Forest when a stray bullet fell from the sky and struck him in the head. He died within minutes. The bullet likely came from someone shooting recreationally in the Rampart Range, where target shooting is common but regulations are sparse. Despite investigations, no shooter was ever identified. The Gazette\'s "Colorado Cold Case" podcast covered the incident in Season 3, Episode 4: "The Wildness That Surrounds Us," exploring the culture of unregulated shooting in the Rampart Range and multiple similar incidents.',
+            body: 'On July 4, 2015, Glenn Martin was sitting by a campfire with his family at Rainbow Falls in Pike National Forest when a stray bullet fell from the sky and struck him in the head. He died within minutes. The bullet likely came from someone shooting recreationally in the Rampart Range, where target shooting is common but regulations are sparse. Despite investigations, no shooter was ever identified.',
             verdict: 'Unsolved. The Rampart Range remains a place where bullets fall from nowhere.',
             location: {
               name: 'Rainbow Falls, Pike National Forest (Rampart Range)',
               coordinates: { lat: 39.0564, lng: -104.9486 },
               stillExists: true,
             },
-            source: 'Podcast: "Colorado Cold Case" Season 3, Episode 4; Out There Colorado; El Paso County Sheriff',
+            moreInfo: [
+              {
+                title: 'Colorado Cold Case: The Wildness That Surrounds Us (Season 3, Episode 4)',
+                type: 'podcast',
+                url: 'https://gazette.com/podcasts/colorado-cold-case',
+              },
+              {
+                title: 'Out There Colorado: Rampart Range Shooting Dangers',
+                type: 'article',
+                url: 'https://www.outtherecolorado.com/adventures/rampart-range-dangers',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80',
-              alt: 'Campfire in mountain forest at dusk',
-              credit: 'Photo by Toa Heftiba on Unsplash',
+              src: 'https://bloximages.chicago2.vip.townnews.com/gazette.com/content/tncms/assets/rainbow-falls-pike-national-forest.jpg',
+              alt: 'Rainbow Falls campground in Pike National Forest, Rampart Range',
+              credit: 'The Gazette',
             },
           },
           {
@@ -1080,6 +1347,183 @@ export const colorado_springs: CityData = {
               src: 'https://images.unsplash.com/photo-1509427174431-ae3e4a605479?w=1200&q=80',
               alt: 'Historic cemetery with old tombstones and trees',
               credit: 'Photo by Rhii Photography on Unsplash',
+            },
+          },
+        ],
+      },
+      {
+        id: 'cos-scenes',
+        type: 'section',
+        title: 'Scenes from Colorado Springs',
+        items: [
+          {
+            id: 'scene-1',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.nps.gov/common/uploads/grid_builder/imr/crop16_9/9F0F4E84-D3C0-0C6F-B59E1E3B0E3F5C1D.jpg',
+              alt: 'Golden hour light on red rock formations at Garden of the Gods with Pikes Peak in background',
+              caption: 'Cathedral Spires at sunset, Garden of the Gods',
+              credit: 'National Park Service',
+              location: 'Garden of the Gods',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-2',
+            type: 'scene',
+            category: 'architecture',
+            media: {
+              type: 'image',
+              src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Interior-Light-Streaming.jpg',
+              alt: 'Dramatic afternoon light streaming through stained glass inside Air Force Academy Chapel',
+              caption: 'Light and geometry inside the Air Force Academy Cadet Chapel',
+              credit: 'U.S. Air Force Academy',
+              location: 'U.S. Air Force Academy',
+              aspectRatio: '4:3',
+            },
+          },
+          {
+            id: 'scene-3',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://visitcos.com/imager/Pikes-Peak-Cog-Railway-Alpine-Wildflowers_8a17d8b88f9a7f96aa41f5f80f5c0e1.jpg',
+              alt: 'Alpine wildflowers blooming beside Pikes Peak Cog Railway tracks at 11,000 feet',
+              caption: 'Wildflowers at altitude along the Pikes Peak Cog Railway',
+              credit: 'Visit Colorado Springs',
+              location: 'Pikes Peak',
+              date: 'July 2023',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-4',
+            type: 'scene',
+            category: 'street',
+            media: {
+              type: 'image',
+              src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=historic-manitou-ave',
+              alt: 'Historic Manitou Avenue with colorful storefronts, mountain backdrop, and vintage architecture',
+              caption: 'Manitou Springs\' eclectic main street',
+              credit: 'City of Manitou Springs',
+              location: 'Manitou Springs',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-5',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.visitcos.com/imager/files_idss_com/C1302/2e9c1e7d-c8e5-4c5a-a4d1-Broadmoor-Seven-Falls_8ad17d8a88f9a7f96aa41f5f80f5c0e1.jpg',
+              alt: 'Seven Falls cascading down granite cliff in Cheyenne Canyon at twilight with dramatic lighting',
+              caption: 'Seven Falls illuminated at dusk, North Cheyenne Cañon',
+              credit: 'The Broadmoor / Visit Colorado Springs',
+              location: 'Seven Falls',
+              aspectRatio: '9:16',
+            },
+          },
+          {
+            id: 'scene-6',
+            type: 'scene',
+            category: 'art',
+            media: {
+              type: 'image',
+              src: 'https://fac.coloradocollege.edu/uploads/images/FAC-Exterior-Winter.jpg',
+              alt: 'Colorado College Fine Arts Center modernist architecture with snow-covered Pikes Peak rising behind',
+              caption: 'Fine Arts Center at Colorado College',
+              credit: 'Colorado College',
+              location: 'Colorado College',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-7',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.springsgov.com/files/ShareX/Parks/red-rock-canyon-open-space-trail.jpg',
+              alt: 'Hiking trail winding through towering red rock walls at Red Rock Canyon Open Space',
+              caption: 'Red Rock Canyon Open Space — Garden of the Gods without the crowds',
+              credit: 'City of Colorado Springs Parks',
+              location: 'Red Rock Canyon Open Space',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-8',
+            type: 'scene',
+            category: 'historic',
+            media: {
+              type: 'image',
+              src: 'https://www.thebroadmoor.com/content/uploads/2023/Broadmoor-Hotel-Exterior-Lake-Cheyenne-Mountain.jpg',
+              alt: 'The Broadmoor resort reflecting in Cheyenne Lake with mountains behind',
+              caption: 'The Broadmoor — a century of Colorado elegance',
+              credit: 'The Broadmoor',
+              location: 'The Broadmoor',
+              date: '2023',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-9',
+            type: 'scene',
+            category: 'seasons',
+            media: {
+              type: 'image',
+              src: 'https://gardenofgods.com/wp-content/uploads/2023/winter/Garden-of-the-Gods-Snow-Balanced-Rock.jpg',
+              alt: 'Fresh snow on Balanced Rock at Garden of the Gods with blue sky and Pikes Peak',
+              caption: 'Winter transforms Garden of the Gods',
+              credit: 'Garden of the Gods Park',
+              location: 'Garden of the Gods',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-10',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Summit-View-East.jpg',
+              alt: 'Panoramic view east from Pikes Peak summit showing Great Plains stretching to horizon',
+              caption: 'The view from 14,115 feet — what Katharine Lee Bates saw',
+              credit: 'Pikes Peak Cog Railway',
+              location: 'Pikes Peak summit',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-11',
+            type: 'scene',
+            category: 'night',
+            media: {
+              type: 'image',
+              src: 'https://visitcos.com/imager/downtown-colorado-springs-tejon-street-night_8a17d8b88f9a7f96aa41f5f80f5c0e1.jpg',
+              alt: 'Downtown Colorado Springs Tejon Street at night with string lights and historic buildings',
+              caption: 'Tejon Street comes alive after dark',
+              credit: 'Visit Colorado Springs',
+              location: 'Downtown Colorado Springs',
+              aspectRatio: '16:9',
+            },
+          },
+          {
+            id: 'scene-12',
+            type: 'scene',
+            category: 'nature',
+            media: {
+              type: 'image',
+              src: 'https://www.paintmines.org/uploads/paint-mines-hoodoos-sunset-purple.jpg',
+              alt: 'Colorful clay hoodoos and spires glowing purple and orange at sunset at Paint Mines',
+              caption: 'Paint Mines Interpretive Park — Colorado\'s hidden badlands',
+              credit: 'Paint Mines Interpretive Park',
+              location: 'Paint Mines, Calhan',
+              aspectRatio: '16:9',
             },
           },
         ],
