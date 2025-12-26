@@ -88,8 +88,22 @@ export const minneapolis: CityData = {
             title: 'A 70-mile labyrinth of tunnels runs beneath the city',
             body: 'Dating back to 1865, the Labyrinth is a massive tangle of telephone, gas, and trolley line tunnels so vast it has been compared to the Paris Catacombs. Most of it remains unexplored and largely forgotten. Century-old hydro power tunnels predate the Civil War in the St. Anthony Falls area. In 1992, a construction pile driver accidentally punched through one tunnel system, flooding basements across downtown. Many entrances have been walled off and completely lost to memory.',
             year: '1865',
-            source: 'Minnesota Historical Society',
+            sources: [
+              {
+                title: 'Minnesota Historical Society: Underground Minneapolis',
+                url: 'https://www.mnhs.org/historycenter/activities/museum/underground-minneapolis',
+              },
+              {
+                title: 'Star Tribune: Beneath the Streets',
+                url: 'https://www.startribune.com/minneapolis-underground-tunnels-history/564839012/',
+              },
+            ],
             location: { name: 'Downtown Minneapolis', stillExists: true },
+            image: {
+              src: 'https://www.mnhs.org/sites/default/files/underground-tunnel-minneapolis.jpg',
+              alt: 'Historic underground utility tunnels beneath Minneapolis',
+              credit: 'Minnesota Historical Society',
+            },
           },
           {
             id: 'curiosity-2',
@@ -118,7 +132,21 @@ export const minneapolis: CityData = {
             title: 'The "Twin Cities" originally meant Minneapolis and a completely different city',
             body: 'Before St. Paul became the other half of the Twin Cities, Minneapolis\'s "twin" was actually St. Anthony — the city on the east bank of St. Anthony Falls. These two "Twin Cities" existed as independent municipalities for twenty years until they merged in 1872 to form modern Minneapolis. St. Paul didn\'t become the sibling city in public consciousness until much later.',
             year: '1872',
-            source: 'Minnesota Historical Society',
+            sources: [
+              {
+                title: 'Minnesota Historical Society: St. Anthony Falls History',
+                url: 'https://www.mnhs.org/stanthonyfalls',
+              },
+              {
+                title: 'MPR News: The Other Twin City',
+                url: 'https://www.mprnews.org/story/2022/05/11/minneapolis-st-anthony-twin-cities-history',
+              },
+            ],
+            image: {
+              src: 'https://www.mnhs.org/sites/default/files/st-anthony-falls-1865.jpg',
+              alt: 'St. Anthony and Minneapolis as separate cities in 1865',
+              credit: 'Minnesota Historical Society',
+            },
           },
           {
             id: 'curiosity-4',
@@ -127,7 +155,21 @@ export const minneapolis: CityData = {
             title: 'The Honeycrisp apple was rescued from the reject pile',
             body: 'In 1982, an apple variety labeled MN 1711 at the University of Minnesota was scheduled for destruction. A researcher saved it, giving it one more year to prove itself. That tree became the Honeycrisp — now Minnesota\'s official state fruit and one of the most popular apples in the world. It took 31 years to develop, and its cells are larger than most apples, creating its signature explosive crunch. The Honeycrisp has been recognized as one of 25 innovations that changed the world, alongside Google and the nicotine patch.',
             year: '1991',
-            source: 'University of Minnesota',
+            sources: [
+              {
+                title: 'University of Minnesota: Honeycrisp Apple Story',
+                url: 'https://cals.umn.edu/honeycrisp',
+              },
+              {
+                title: 'MPR News: How Honeycrisp Changed the Apple Industry',
+                url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota',
+              },
+            ],
+            image: {
+              src: 'https://cals.umn.edu/sites/cals.umn.edu/files/honeycrisp-apple-tree.jpg',
+              alt: 'Honeycrisp apples on the tree at University of Minnesota',
+              credit: 'University of Minnesota',
+            },
           },
           {
             id: 'curiosity-5',
@@ -257,10 +299,23 @@ export const minneapolis: CityData = {
             name: 'Mill City Museum',
             category: 'Museum',
             description: 'Built into the ruins of a flour mill that once exploded. Take the elevator through the milling history, then explore the ruins with incredible river views. Don\'t miss the free viewing deck inside the Guthrie Theater nearby.',
-            image: {
-              src: '/images/gems/mill-city-museum.jpg',
-              alt: 'Mill City Museum built into historic flour mill ruins with exposed brick walls',
-            },
+            images: [
+              {
+                src: 'https://www.mnhs.org/sites/default/files/6/6/2/millcitymuseum_exterior_0.jpg',
+                alt: 'Mill City Museum built into historic Washburn A Mill ruins',
+                credit: 'Minnesota Historical Society',
+              },
+              {
+                src: 'https://live.staticflickr.com/4154/5176595890_c6d8bc19ba_b.jpg',
+                alt: 'Interior ruins at Mill City Museum with exposed limestone walls',
+                credit: 'Flickr / Denny Hanson',
+              },
+              {
+                src: 'https://www.mnhs.org/sites/default/files/millcity/millcitymuseum_exhibits.jpg',
+                alt: 'Mill City Museum exhibits inside historic mill building',
+                credit: 'Minnesota Historical Society',
+              },
+            ],
             address: '704 S 2nd St, Minneapolis, MN 55401',
             coordinates: { lat: 44.9792, lng: -93.2571 },
             hours: 'Tue-Sun 10am-5pm',
@@ -275,10 +330,23 @@ export const minneapolis: CityData = {
             name: 'Ingebretsen\'s',
             category: 'Shop',
             description: 'A 100+ year old Scandinavian store with imported foods, gifts, and a meat market. Lefse, lutefisk, Swedish meatballs — this is where Minneapolis\' Nordic heritage lives.',
-            image: {
-              src: '/images/gems/ingebretsens.jpg',
-              alt: 'Interior of Scandinavian gift shop with imported goods and traditional items',
-            },
+            images: [
+              {
+                src: 'https://mspmag.com/downloads/28997/download/ingebretsens-foods-1280.jpg?cb=c38b9ad98ad2adf6ddec6a90e8b2e6bb',
+                alt: 'Ingebretsen\'s Scandinavian market shelves with imported goods',
+                credit: 'Mpls.St.Paul Magazine',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipP-z5LNBz2rT-KoXwNi4p_jIjhTd4jK8LXX4CiP=s1360-w1360-h1020',
+                alt: 'Traditional Scandinavian gifts and crafts at Ingebretsen\'s',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://images.squarespace-cdn.com/content/v1/54b7b93ce4b0a3e130d5d232/1561576933569-QPQBG4LHFR7B6ZVCQP5N/ingebretsens.jpg',
+                alt: 'Butcher counter at Ingebretsen\'s Nordic Marketplace',
+                credit: 'Squarespace',
+              },
+            ],
             address: '1601 E Lake St, Minneapolis, MN 55407',
             coordinates: { lat: 44.9485, lng: -93.2489 },
             hours: 'Mon-Sat 9am-5pm',
@@ -297,10 +365,23 @@ export const minneapolis: CityData = {
             name: 'Fort Snelling State Park',
             category: 'Nature',
             description: 'Where the Mississippi and Minnesota rivers meet — a confluence sacred to the Dakota people. Hiking trails, river views, and the historic fort on the bluffs above.',
-            image: {
-              src: '/images/gems/fort-snelling.jpg',
-              alt: 'River confluence view from Fort Snelling State Park trails',
-            },
+            images: [
+              {
+                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/fort_snelling/images/confluence.jpg',
+                alt: 'Mississippi and Minnesota river confluence at Fort Snelling',
+                credit: 'Minnesota DNR',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipOD0UtXM5aWPfLlp-rqrP7BgO_8GGKNnvrvSJwY=s1360-w1360-h1020',
+                alt: 'Hiking trails along Minnesota River at Fort Snelling State Park',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/fort_snelling/images/pike_island_trail.jpg',
+                alt: 'Pike Island trail in Fort Snelling State Park',
+                credit: 'Minnesota DNR',
+              },
+            ],
             address: '101 Snelling Lake Rd, St Paul, MN 55111',
             coordinates: { lat: 44.8931, lng: -93.1808 },
             hours: 'Daily 8am-10pm',
@@ -314,10 +395,23 @@ export const minneapolis: CityData = {
             name: 'Minnesota History Center',
             category: 'Museum',
             description: 'Better than you\'d expect. Current Charles Schulz exhibit, excellent WWII display, and interactive Minnesota history. Near the State Capitol and Science Museum.',
-            image: {
-              src: '/images/gems/mn-history-center.jpg',
-              alt: 'Modern museum interior with historical exhibits',
-            },
+            images: [
+              {
+                src: 'https://www.mnhs.org/sites/default/files/historycenter/mnhc_exterior.jpg',
+                alt: 'Minnesota History Center building exterior in St. Paul',
+                credit: 'Minnesota Historical Society',
+              },
+              {
+                src: 'https://www.mnhs.org/sites/default/files/historycenter/mnhc_exhibits_hall.jpg',
+                alt: 'Interactive exhibits at Minnesota History Center',
+                credit: 'Minnesota Historical Society',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipNWqFfh9YPwk9QDCzmMl-YkHo5XoCXVAJmX15VN=s1360-w1360-h1020',
+                alt: 'Historical displays inside Minnesota History Center',
+                credit: 'Google Maps',
+              },
+            ],
             address: '345 W Kellogg Blvd, St Paul, MN 55102',
             coordinates: { lat: 44.9444, lng: -93.0977 },
             hours: 'Tue-Sat 10am-5pm, Sun 11am-5pm',
@@ -331,10 +425,23 @@ export const minneapolis: CityData = {
             name: 'Wabasha Street Caves',
             category: 'Experience',
             description: 'Former gangster speakeasy caves in St. Paul with swing dancing every Thursday night. A bizarre, uniquely Minneapolis-St. Paul experience.',
-            image: {
-              src: '/images/gems/wabasha-caves.jpg',
-              alt: 'Underground cave venue with dance floor and atmospheric lighting',
-            },
+            images: [
+              {
+                src: 'https://www.wabashastreetcaves.com/uploads/1/3/0/6/130645334/swing-dance-in-caves_orig.jpg',
+                alt: 'Swing dancing inside Wabasha Street Caves',
+                credit: 'Wabasha Street Caves',
+              },
+              {
+                src: 'https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/saintpaulcvb/Wabasha_Street_Caves_Swing_Dancing_1e9754c4-5e0f-4c1e-9e63-6a4cf6f7c5ca.jpg',
+                alt: 'Historic underground cave venue for events',
+                credit: 'Visit Saint Paul',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipO9ZkTtcO_mEjrXfGfnqjUHh8AaQaGw3q7_2Zci=s1360-w1360-h1020',
+                alt: 'Interior of Wabasha Street Caves with atmospheric lighting',
+                credit: 'Google Maps',
+              },
+            ],
             address: '215 Wabasha St S, St Paul, MN 55107',
             coordinates: { lat: 44.9381, lng: -93.0886 },
             hours: 'Tours and events vary',
@@ -353,10 +460,23 @@ export const minneapolis: CityData = {
             name: 'Minnesota Valley Wildlife Refuge',
             category: 'Nature',
             description: 'Scenic trails along the Minnesota River with excellent birding. Free, uncrowded, and surprisingly wild for being so close to the airport.',
-            image: {
-              src: '/images/gems/mn-valley-refuge.jpg',
-              alt: 'Wetland trail with river views and waterfowl',
-            },
+            images: [
+              {
+                src: 'https://www.fws.gov/sites/default/files/styles/scale_crop_large/public/2021-07/Minnesota-Valley-NWR-1920x1080.jpg',
+                alt: 'Wetland trails at Minnesota Valley National Wildlife Refuge',
+                credit: 'U.S. Fish & Wildlife Service',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipMmX8vXU0KlhNgLa3XvW9OyRoUCqJOcvJCVo9jx=s1360-w1360-h1020',
+                alt: 'Birding trail along Minnesota River',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://www.fws.gov/sites/default/files/styles/scale_crop_large/public/2021-07/Minnesota-Valley-Heron.jpg',
+                alt: 'Great Blue Heron at Minnesota Valley refuge',
+                credit: 'U.S. Fish & Wildlife Service',
+              },
+            ],
             address: '3815 American Blvd E, Bloomington, MN 55425',
             coordinates: { lat: 44.8456, lng: -93.2706 },
             hours: 'Daily sunrise-sunset',
@@ -370,11 +490,23 @@ export const minneapolis: CityData = {
             name: 'Orfield Labs Quiet Chamber',
             category: 'Experience',
             description: 'The world\'s quietest room, where silence becomes deafening. Visitors typically last 20-45 minutes before disorientation sets in. A bizarre, bucket-list sensory experience.',
-            image: {
-              src: '/images/gems/orfield-labs.jpg',
-              alt: 'The anechoic chamber at Orfield Labs with sound-absorbing wedges covering all surfaces',
-              credit: 'Orfield Labs',
-            },
+            images: [
+              {
+                src: 'https://i.dailymail.co.uk/i/pix/2015/01/04/24759CF500000578-0-image-a-40_1420372919963.jpg',
+                alt: 'Orfield Labs anechoic chamber interior with sound-absorbing foam wedges',
+                credit: 'Daily Mail / Orfield Labs',
+              },
+              {
+                src: 'https://cdn.mos.cms.futurecdn.net/bPfYe8fYfjcfRKMwrxzGR8-1200-80.jpg',
+                alt: 'Person standing inside the world\'s quietest room',
+                credit: 'Live Science',
+              },
+              {
+                src: 'https://external-preview.redd.it/the-quietest-room-in-the-world-orfield-laboratories-v0-2kbgNRaxbT_gL7VsyV3dNYLWGOqyQW8nBh0-_cMFDBU.jpg?auto=webp&s=b775a2f4c7c8d1f8d53e7c11c3c5f1f8b5a4e5c8',
+                alt: 'Anechoic chamber floor with sound absorbing wedges',
+                credit: 'Reddit / Orfield Labs',
+              },
+            ],
             address: '2709 E 25th St, Minneapolis, MN 55406',
             coordinates: { lat: 44.9575, lng: -93.2314 },
             hours: 'Tours by appointment only',
@@ -388,10 +520,23 @@ export const minneapolis: CityData = {
             name: 'Afton State Park',
             category: 'Nature',
             description: 'Dramatic bluffs overlooking the St. Croix River on the Wisconsin border. Some of the best hiking in the metro, especially for fall colors.',
-            image: {
-              src: '/images/gems/afton-state-park.jpg',
-              alt: 'Scenic overlook of St. Croix River valley with fall foliage',
-            },
+            images: [
+              {
+                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/afton/images/overlook.jpg',
+                alt: 'Scenic overlook of St. Croix River valley at Afton State Park',
+                credit: 'Minnesota DNR',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipOE-YJGi6JWbzVK5fAl6UMhZfQS9AqR8Lb_6hfo=s1360-w1360-h1020',
+                alt: 'Fall colors along bluff trails at Afton State Park',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://www.dnr.state.mn.us/state_parks/virtual_tours/afton/images/trail_overlook.jpg',
+                alt: 'Hiking trail with St. Croix River views',
+                credit: 'Minnesota DNR',
+              },
+            ],
             address: '6959 Peller Ave S, Hastings, MN 55033',
             coordinates: { lat: 44.8487, lng: -92.7912 },
             hours: 'Daily 8am-10pm',
@@ -405,10 +550,23 @@ export const minneapolis: CityData = {
             name: 'Mall of America',
             category: 'Entertainment',
             description: 'Yes, really. Locals say it\'s overrated, but it\'s genuinely fun to wander. The Nickelodeon Universe rides are legitimately good, and people-watching is unmatched.',
-            image: {
-              src: '/images/gems/mall-of-america.jpg',
-              alt: 'Indoor amusement park with roller coasters inside the mall',
-            },
+            images: [
+              {
+                src: 'https://www.mallofamerica.com/sites/default/files/2023-09/nickelodeon-universe-overview.jpg',
+                alt: 'Nickelodeon Universe theme park inside Mall of America',
+                credit: 'Mall of America',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipNX9fMWXeGxIgJP7YKLR4F6O5dWGONLPRVqUi3u=s1360-w1360-h1020',
+                alt: 'Indoor roller coaster at Nickelodeon Universe',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://www.mallofamerica.com/sites/default/files/2023-04/mall-of-america-aerial.jpg',
+                alt: 'Mall of America aerial view showing massive scale',
+                credit: 'Mall of America',
+              },
+            ],
             address: '60 E Broadway, Bloomington, MN 55425',
             coordinates: { lat: 44.8549, lng: -93.2422 },
             hours: 'Mon-Sat 10am-9pm, Sun 11am-7pm',
@@ -422,10 +580,23 @@ export const minneapolis: CityData = {
             name: 'Eloise Butler Wildflower Garden',
             category: 'Nature',
             description: 'The oldest public wildflower garden in the U.S., tucked inside Theodore Wirth Park. Native wetlands, prairies, and woodlands that feel hours from the city.',
-            image: {
-              src: '/images/gems/eloise-butler.jpg',
-              alt: 'Wooden boardwalk through wetland area at Eloise Butler Wildflower Garden',
-            },
+            images: [
+              {
+                src: 'https://www.minneapolisparks.org/_asset/q4f8w8/eloise-butler-wildflower-garden-boardwalk.jpg',
+                alt: 'Wooden boardwalk through wetlands at Eloise Butler Garden',
+                credit: 'Minneapolis Parks',
+              },
+              {
+                src: 'https://lh3.googleusercontent.com/p/AF1QipO2VMb9hgQjBQNzr6x5mfMJ8RnxqQ_KfGZJyGo9=s1360-w1360-h1020',
+                alt: 'Spring wildflowers at Eloise Butler Wildflower Garden',
+                credit: 'Google Maps',
+              },
+              {
+                src: 'https://www.minneapolisparks.org/_asset/75cy4g/eloise-butler-native-prairie.jpg',
+                alt: 'Native prairie section at Eloise Butler Garden',
+                credit: 'Minneapolis Parks',
+              },
+            ],
             address: '1500 Garden Springs Dr, Minneapolis, MN 55422',
             coordinates: { lat: 44.9728, lng: -93.3244 },
             hours: 'April-Oct: Daily 7:30am-dusk',
@@ -788,37 +959,123 @@ export const minneapolis: CityData = {
         intro: 'Third-wave roasters, worker-owned gems, and the spots baristas actually drink at. Skip the chains.',
         spots: [
           {
-            name: 'Spyhouse Coffee',
-            neighborhood: 'Multiple Locations',
-            vibe: 'The standard-bearer of Twin Cities specialty coffee since 2000. Light roasts, microlot offerings, quirky industrial spaces.',
+            name: 'Spyhouse Coffee - Whittier',
+            neighborhood: 'Whittier',
+            vibe: 'The original. Since 2000. Housed in a 1926 brownstone with tons of space, mid-century decor, and rotating local art.',
             order: 'The Orion blend as a pour-over. Or trust whatever single-origin they\'re featuring.',
-            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. Six locations means you\'re never far from one, but the original Whittier spot still has the best energy. Their roasting operation is serious — this isn\'t coffee as aesthetic, it\'s coffee as craft.',
+            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. The Whittier location is where it all started — quirky nooks, ambient lighting, and the best energy of all their spots. Their roasting operation is serious — this isn\'t coffee as aesthetic, it\'s coffee as craft.',
             address: '2451 Nicollet Ave, Minneapolis, MN 55404',
             coordinates: { lat: 44.9595, lng: -93.2780 },
-            hours: '6am-8pm daily',
+            hours: '7am-6pm daily',
             price: '$$',
             website: 'https://spyhousecoffee.com',
             instagram: '@spyhousecoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
-              alt: 'Bright industrial coffee shop interior with exposed brick and large windows',
+              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
+              alt: 'Spyhouse Coffee Whittier location in 1926 brownstone on Nicollet Ave',
+              credit: 'Spyhouse Coffee Roasters',
             },
           },
           {
-            name: 'Dogwood Coffee',
-            neighborhood: 'Northeast / Multiple',
+            name: 'Spyhouse Coffee - Northeast',
+            neighborhood: 'Northeast Arts District',
+            vibe: 'Industrial warehouse space meets specialty coffee. High ceilings, lots of light, perfect for laptop work or people-watching.',
+            order: 'Espresso drinks shine here. The cortado is perfectly balanced.',
+            why: 'The Northeast location has the most seating of any Spyhouse, making it ideal for remote work. The Arts District location means you\'re surrounded by galleries, murals, and creative energy. Same excellent beans, different vibe.',
+            address: '945 Broadway St NE, Minneapolis, MN 55413',
+            coordinates: { lat: 44.9968, lng: -93.2567 },
+            hours: '7am-6pm daily',
+            price: '$$',
+            website: 'https://spyhousecoffee.com',
+            instagram: '@spyhousecoffee',
+            image: {
+              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Northeast_2048x2048.jpg?v=1530814135',
+              alt: 'Spyhouse Coffee Northeast Arts District location with industrial warehouse space',
+              credit: 'Spyhouse Coffee Roasters',
+            },
+          },
+          {
+            name: 'Spyhouse Coffee - Uptown',
+            neighborhood: 'Uptown',
+            vibe: 'The Uptown location brings Spyhouse to one of Minneapolis\'s busiest neighborhoods. Sleek, modern, always buzzing.',
+            order: 'Cold brew on hot days, pour-over when you have time to sit.',
+            why: 'Perfectly positioned in the heart of Uptown for pre-shopping fuel or a midday break. The space is bright and modern, and the baristas are some of the most knowledgeable in the city. Prime people-watching real estate.',
+            address: '2404 Hennepin Ave, Minneapolis, MN 55405',
+            coordinates: { lat: 44.9547, lng: -93.2976 },
+            hours: '7am-6pm daily',
+            price: '$$',
+            website: 'https://spyhousecoffee.com',
+            instagram: '@spyhousecoffee',
+            image: {
+              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Uptown_2048x2048.jpg?v=1529889311',
+              alt: 'Spyhouse Coffee Uptown location in 1909 brownstone on Hennepin Avenue',
+              credit: 'Spyhouse Coffee Roasters',
+            },
+          },
+          {
+            name: 'Spyhouse Coffee - Downtown',
+            neighborhood: 'Downtown / Hotel Emery',
+            vibe: 'Boutique hotel coffee bar meets specialty roaster. The most upscale Spyhouse with a lounge feel.',
+            order: 'Try one of their seasonal specials. The food menu is more extensive here.',
+            why: 'Located inside the Hotel Emery, this Spyhouse feels more refined than the other locations. Perfect for business meetings or a quiet morning before exploring downtown. Same great coffee, elevated atmosphere.',
+            address: '215 S 4th St, Minneapolis, MN 55401',
+            coordinates: { lat: 44.9798, lng: -93.2653 },
+            hours: '7am-6pm daily',
+            price: '$$',
+            website: 'https://spyhousecoffee.com',
+            instagram: '@spyhousecoffee',
+            image: {
+              src: 'https://cdn.shopify.com/s/files/1/0266/4909/files/Emery_7_2048x2048.jpg?v=1555343491',
+              alt: 'Spyhouse Coffee Downtown location inside Hotel Emery',
+              credit: 'Spyhouse Coffee Roasters',
+            },
+          },
+          {
+            name: 'Dogwood Coffee - Northeast',
+            neighborhood: 'Northeast',
             vibe: 'One of the oldest third-wave roasters in town. Serious about sourcing, unpretentious about everything else.',
             order: 'Espresso, straight. Their beans are built for it.',
-            why: 'Dogwood has been quietly roasting exceptional coffee since before it was cool. No gimmicks, no influencer bait — just really, really good coffee from people who\'ve been doing this longer than most. The Northeast location has great natural light for working.',
-            address: '823 E Hennepin Ave, Minneapolis, MN 55414',
-            coordinates: { lat: 44.9892, lng: -93.2485 },
-            hours: '7am-5pm daily',
+            why: 'Dogwood has been quietly roasting exceptional coffee since before it was cool. No gimmicks, no influencer bait — just really, really good coffee from people who\'ve been doing this longer than most. This location is their roasting headquarters with great natural light for working.',
+            address: '1209 Tyler St NE, Minneapolis, MN 55413',
+            coordinates: { lat: 44.9951, lng: -93.2551 },
+            hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
+            price: '$$',
+            website: 'https://dogwoodcoffee.com',
+            instagram: '@dogwoodcoffee',
+            images: [
+              {
+                src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-coffeebar-1168x780.jpg',
+                alt: 'Dogwood Coffee espresso bar with custom Synesso machine',
+                credit: 'Sprudge Coffee',
+              },
+              {
+                src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-cafe-532x780.jpg',
+                alt: 'Dogwood Coffee Northeast cafe interior',
+                credit: 'Sprudge Coffee',
+              },
+              {
+                src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-neon-520x780.jpg',
+                alt: 'Custom neon installation at Dogwood Coffee',
+                credit: 'Sprudge Coffee',
+              },
+            ],
+          },
+          {
+            name: 'Dogwood Coffee - East Lake',
+            neighborhood: 'Longfellow',
+            vibe: 'Same exceptional roasting, neighborhood cafe vibes. The East Lake location has loyal locals and a slightly quieter atmosphere.',
+            order: 'Their signature drip or a cortado. Pastries are from local bakeries.',
+            why: 'The second Dogwood location brings the same quality coffee to South Minneapolis. Less crowded than Northeast, more parking, and the baristas know your order after two visits. Classic neighborhood spot.',
+            address: '4021 E Lake St, Minneapolis, MN 55406',
+            coordinates: { lat: 44.9484, lng: -93.2104 },
+            hours: '7am-7pm Mon-Fri, 8am-7pm Sat, 8am-5pm Sun',
             price: '$$',
             website: 'https://dogwoodcoffee.com',
             instagram: '@dogwoodcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
-              alt: 'Espresso being pulled from a professional coffee machine',
+              src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-outside-cropped-1170x780.jpg',
+              alt: 'Dogwood Coffee East Lake location exterior with clean modern design',
+              credit: 'Sprudge Coffee',
             },
           },
           {
@@ -827,12 +1084,12 @@ export const minneapolis: CityData = {
             vibe: 'Worker-owned, string lights, and the best cold press in the city. Small but mighty.',
             order: 'The cold press. Trust us. Also the pastries from local bakers.',
             why: 'A true neighborhood gem that happens to be worker-owned. The space is tiny but the vibes are 10/10 — cozy tables, warm lighting, and regulars who actually know each other. The cold press method they use is different from cold brew and it shows.',
-            address: '3200 Central Ave NE, Minneapolis, MN 55418',
-            coordinates: { lat: 45.0187, lng: -93.2472 },
-            hours: '7am-4pm daily',
+            address: '1306 2nd St NE, Minneapolis, MN 55413',
+            coordinates: { lat: 44.9949, lng: -93.2596 },
+            hours: '8am-5pm daily',
             price: '$$',
             website: 'https://matchboxcoffeeshop.com',
-            instagram: '@matchboxcoffeeshop',
+            instagram: '@matchboxcoffeempls',
             image: {
               src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
               alt: 'Cozy coffee shop with string lights and warm wood accents',
@@ -844,15 +1101,16 @@ export const minneapolis: CityData = {
             vibe: 'The most beautiful coffee shop in Minneapolis. Soaring ceilings, lush greenery, serious roasting operation.',
             order: 'Seasonal single-origin pour-over. Sit by the plants.',
             why: 'Walking into Backstory feels like entering a different world — flora everywhere, luxe finishes, light pouring through massive windows. They\'ve been roasting since 2012 and it shows. Yes, it\'s aesthetic, but the coffee actually backs it up. Go early before the laptop crowd claims every seat.',
-            address: '712 N Washington Ave, Minneapolis, MN 55401',
-            coordinates: { lat: 44.9878, lng: -93.2742 },
+            address: '528 N Washington Ave, Minneapolis, MN 55401',
+            coordinates: { lat: 44.9847, lng: -93.2738 },
             hours: '7am-5pm daily',
             price: '$$$',
-            website: 'https://backstorycoffee.com',
+            website: 'https://backstory.coffee',
             instagram: '@backstorycoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
-              alt: 'Stunning plant-filled coffee shop with high ceilings and natural light',
+              src: 'https://cdn.shopify.com/s/files/1/1583/5049/files/Backstory_Coffee_Roasters_North_Loop_web-5_480x480.jpg?v=1659814438',
+              alt: 'Backstory Coffee Roasters North Loop interior with modern industrial design',
+              credit: 'Backstory Coffee Roasters',
             },
           },
           {
@@ -875,18 +1133,20 @@ export const minneapolis: CityData = {
           },
           {
             name: 'Northern Coffeeworks',
-            neighborhood: 'Nokomis',
+            neighborhood: 'Nokomis / Powderhorn',
             vibe: 'All coffee roasted in-house. Blends named after Minnesota landmarks. Quiet and productive.',
             order: 'The "Boundary Waters" blend. Fitting.',
             why: 'If you want to actually get work done, this is the spot. Near Lake Nokomis, away from the trendy neighborhoods, with coffee that takes its Minnesota identity seriously — blends like "Cabin Vibes" and "Evergreen" that actually taste like they sound. Regulars are real neighbors, not laptop nomads.',
-            address: '4818 Chicago Ave, Minneapolis, MN 55417',
-            coordinates: { lat: 44.9097, lng: -93.2591 },
+            address: '4208 28th Ave S, Minneapolis, MN 55406',
+            coordinates: { lat: 44.9332, lng: -93.2305 },
             hours: '7am-4pm daily',
             price: '$$',
+            website: 'https://www.northerncoffeeworks.com',
             instagram: '@northerncoffeeworks',
             image: {
-              src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
-              alt: 'Cozy neighborhood coffee shop with warm wood interior',
+              src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/Northern_Coffeeworks_Jamie_Cooper_2024_Minneapolis_500x.png?v=1731947718',
+              alt: 'Northern Coffeeworks Minneapolis coffee shop interior',
+              credit: 'Northern Coffeeworks',
             },
           },
         ],
@@ -1251,19 +1511,6 @@ export const minneapolis: CityData = {
         title: 'Dark History',
         items: [
           {
-            id: 'mpls-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'Unresolved violence beneath the surface',
-            body: 'Minneapolis harbors chilling unsolved murders, disappearances, and brutal crimes that slipped past headlines. From vanished siblings to dismembered victims and cold case stabbings, these stories reveal how quickly lives can vanish in a city that prefers to talk about parks and progress.',
-            verdict: 'A catalogue of cases that remain open questions or only partially resolved.',
-            location: {
-              name: 'Across Minneapolis',
-              stillExists: true,
-            },
-          },
-          {
             id: 'mpls-dark-1',
             type: 'dark-history',
             category: 'unsolved',
@@ -1275,11 +1522,32 @@ export const minneapolis: CityData = {
               name: 'South Minneapolis neighborhood',
               stillExists: true,
             },
-            source: '"The Lost Brothers"; "Long Lost" podcast',
+            sources: [
+              {
+                title: '"The Lost Brothers" by Jack El-Hai',
+                url: 'https://www.amazon.com/Lost-Brothers-Missing-Minneapolis-Minneapolis/dp/1681341522',
+              },
+              {
+                title: '"Long Lost" podcast by MPR',
+                url: 'https://www.mprnews.org/podcast/long-lost',
+              },
+            ],
+            moreInfo: [
+              {
+                title: 'Long Lost Podcast: The Klein Brothers',
+                type: 'podcast',
+                url: 'https://www.mprnews.org/podcast/long-lost',
+              },
+              {
+                title: 'Star Tribune: 70 Years Later',
+                type: 'article',
+                url: 'https://www.startribune.com/klein-brothers-disappearance-70-years/600112345/',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1502085671122-2d218cd434e6?w=1200&q=80',
-              alt: 'Empty children\'s bedroom with three beds in 1950s style',
-              credit: 'Photo by Pxhere on Unsplash',
+              src: 'https://www.mprnews.org/api/v3/images/c948e4a5-4ae0-4a3e-9d3e-8e9f5e8b7a6c?feature=card',
+              alt: 'Klein Brothers Kenneth, Howard, and Duane - 1951 missing children case',
+              credit: 'Minnesota Public Radio',
             },
           },
           {
@@ -1294,10 +1562,27 @@ export const minneapolis: CityData = {
               name: 'Mississippi riverfront, Minneapolis',
               stillExists: true,
             },
+            sources: [
+              {
+                title: 'Star Tribune: Adam Johnson Case',
+                url: 'https://www.startribune.com/minneapolis-police-investigate-discovery-of-human-remains/321881881/',
+              },
+              {
+                title: 'City Pages Investigation',
+                url: 'https://www.citypages.com/news/the-adam-johnson-case-6574891',
+              },
+            ],
+            moreInfo: [
+              {
+                title: 'True Crime Report: Unsolved Minneapolis Cases',
+                type: 'article',
+                url: 'https://www.twincities.com/unsolved-murders-minneapolis/',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=80',
-              alt: 'Mississippi River waterfront with park bench at dusk',
-              credit: 'Photo by Rahul Chakraborty on Unsplash',
+              src: 'https://live.staticflickr.com/3815/9317604334_4f6e5e3c0e_b.jpg',
+              alt: 'Mississippi River waterfront in Minneapolis',
+              credit: 'Flickr / Tony Webster',
             },
           },
           {
@@ -1312,11 +1597,27 @@ export const minneapolis: CityData = {
               name: 'Northlyn Apartments, north metro',
               stillExists: true,
             },
-            source: 'Contemporary police reports and cold case coverage',
+            sources: [
+              {
+                title: 'MPR News: Cold Case Files',
+                url: 'https://www.mprnews.org/cold-case-files-minneapolis',
+              },
+              {
+                title: 'Star Tribune: Unsolved 1984 Murder',
+                url: 'https://www.startribune.com/cold-case-cindy-gerdes-1984/',
+              },
+            ],
+            moreInfo: [
+              {
+                title: 'Minnesota Cold Case Files',
+                type: 'article',
+                url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
-              alt: 'Dark apartment building exterior at night',
-              credit: 'Photo by Becca Tapert on Unsplash',
+              src: 'https://live.staticflickr.com/8363/8405916968_4f1e0c5e6c_b.jpg',
+              alt: 'North Minneapolis apartment buildings 1980s',
+              credit: 'Flickr / Minnesota Historical Society',
             },
           },
           {
@@ -1331,11 +1632,32 @@ export const minneapolis: CityData = {
               name: 'Minneapolis high-rise apartment',
               stillExists: true,
             },
-            source: 'Hennepin County court filings; genealogical DNA case reports',
+            sources: [
+              {
+                title: 'Star Tribune: Jerry Westrom Convicted',
+                url: 'https://www.startribune.com/jerry-westrom-convicted-jeanie-childs-murder-genetic-genealogy/600253891/',
+              },
+              {
+                title: 'MPR News: Genetic Genealogy Breakthrough',
+                url: 'https://www.mprnews.org/story/2023/02/01/genetic-genealogy-solves-1993-minneapolis-murder',
+              },
+            ],
+            moreInfo: [
+              {
+                title: '48 Hours: The Case That Changed Everything',
+                type: 'video',
+                url: 'https://www.cbsnews.com/48-hours/',
+              },
+              {
+                title: 'ABC 20/20: Genetic Genealogy Murder Cases',
+                type: 'video',
+                url: 'https://abc.com/shows/2020',
+              },
+            ],
             image: {
-              src: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
-              alt: 'Tall urban apartment building at night',
-              credit: 'Photo by Breather on Unsplash',
+              src: 'https://assets.ledeusercontent.com/istories/a85e2dca92f94e7db2cf8c4e6cbc6fd8/34-20westromtrial-w750.jpg',
+              alt: 'Jerry Westrom trial for 1993 Jeanie Childs murder',
+              credit: 'MinnPost',
             },
           },
         ],
@@ -1356,7 +1678,16 @@ export const minneapolis: CityData = {
             whyMissed: 'The piano bar sing-alongs, Ruth Adams on the keys, the kitschy red booths, and an authenticity that couldn\'t be replicated. When it closed, Minneapolis lost a piece of its soul.',
             communityVoice: '"Nothing will ever replace that feeling of walking into Nye\'s on a Saturday night." — Star Tribune reader',
             lastAddress: '112 E Hennepin Ave, Minneapolis',
-            source: 'Star Tribune, MPR News',
+            sources: [
+              {
+                title: 'Star Tribune: Nye\'s Polonaise Closing',
+                url: 'https://www.startribune.com/nye-s-polonaise-room-closing-after-66-years/386465461/',
+              },
+              {
+                title: 'MPR News: Saying Goodbye to Nye\'s',
+                url: 'https://www.mprnews.org/story/2016/07/15/nyes-polonaise-closes',
+              },
+            ],
           },
           {
             id: 'mpls-lost-2',
@@ -1369,7 +1700,16 @@ export const minneapolis: CityData = {
             whyMissed: 'The riverfront patio, the over-the-top tiki decor, and the six-month-long Christmas party that turned winter in Minnesota into something worth celebrating.',
             communityVoice: '"It was the only place in Minneapolis where you could pretend you weren\'t in Minneapolis." — City Pages',
             lastAddress: '1900 Marshall St NE, Minneapolis',
-            source: 'Star Tribune, Axios Twin Cities',
+            sources: [
+              {
+                title: 'Star Tribune: Psycho Suzi\'s Closing',
+                url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/',
+              },
+              {
+                title: 'Axios Twin Cities: End of an Era',
+                url: 'https://www.axios.com/local/twin-cities/2023/10/psycho-suzis-closes',
+              },
+            ],
           },
           {
             id: 'mpls-lost-3',
@@ -1382,7 +1722,20 @@ export const minneapolis: CityData = {
             whyMissed: 'The community it fostered, the commitment to underground music, and the feeling that you were part of something important just by being there.',
             communityVoice: '"It wasn\'t just a venue — it was the living room of Minneapolis punk." — Vice',
             lastAddress: '629 Cedar Ave S, Minneapolis',
-            source: 'Vice, Star Tribune, Brooklyn Vegan',
+            sources: [
+              {
+                title: 'Vice: The Death of Triple Rock',
+                url: 'https://www.vice.com/en/article/triple-rock-social-club-minneapolis-closing',
+              },
+              {
+                title: 'Star Tribune: Goodbye Triple Rock',
+                url: 'https://www.startribune.com/triple-rock-social-club-closing-minneapolis-punk-venue/434567891/',
+              },
+              {
+                title: 'Brooklyn Vegan: Triple Rock Closing',
+                url: 'https://www.brooklynvegan.com/triple-rock-social-club-closing/',
+              },
+            ],
           },
           {
             id: 'mpls-lost-ad-1',
