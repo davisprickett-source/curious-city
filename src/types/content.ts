@@ -1,3 +1,82 @@
+// ============================================
+// Composable Mixins
+// These interfaces can be combined to create content types
+// with shared functionality without duplication
+// ============================================
+
+/** Content with an image */
+export interface WithImage {
+  image?: {
+    src: string
+    alt: string
+    credit?: string
+    year?: string
+  }
+}
+
+/** Content with multiple images (gallery/carousel) */
+export interface WithImages {
+  images?: Array<{
+    src: string
+    alt: string
+    credit?: string
+  }>
+}
+
+/** Content with geographic coordinates */
+export interface WithCoordinates {
+  coordinates?: {
+    lat: number
+    lng: number
+  }
+}
+
+/** Content with a physical location */
+export interface WithLocation {
+  location?: {
+    name: string
+    coordinates?: {
+      lat: number
+      lng: number
+    }
+    stillExists?: boolean
+  }
+}
+
+/** Content with source attribution */
+export interface WithSource {
+  source?: string
+}
+
+/** Content with multiple source links */
+export interface WithSources {
+  sources?: Array<{
+    title: string
+    url: string
+  }>
+}
+
+/** Content with additional info links */
+export interface WithMoreInfo {
+  moreInfo?: Array<{
+    title: string
+    url: string
+    type?: 'article' | 'video' | 'podcast' | 'book' | 'archive'
+  }>
+}
+
+/** Content with address and contact info */
+export interface WithContactInfo {
+  address?: string
+  phone?: string
+  website?: string
+  hours?: string
+}
+
+// ============================================
+// Base Types
+// ============================================
+
 // Base content item that all content types extend
 export interface BaseContentItem {
   id: string
@@ -27,7 +106,15 @@ export interface CardListContentItem extends BaseContentItem {
   cards: Omit<CardContentItem, 'type' | 'id'>[]
 }
 
-// This week / current happenings item
+// ============================================
+// LEGACY: This Week Types (deprecated)
+// These types are kept for backwards compatibility but should not be
+// used for new content. Use EventsContentItem and EventItem instead.
+// ============================================
+
+/**
+ * @deprecated Use EventItem instead
+ */
 export interface ThisWeekItem {
   title: string
   description: string
@@ -42,6 +129,9 @@ export interface ThisWeekItem {
   }
 }
 
+/**
+ * @deprecated Use EventsContentItem instead
+ */
 export interface ThisWeekContentItem extends BaseContentItem {
   type: 'this-week'
   title?: string
@@ -129,6 +219,10 @@ export interface CuriosityContentItem extends BaseContentItem {
     credit?: string
   }
   source?: string
+  sources?: Array<{
+    title: string
+    url: string
+  }>
   location?: {
     name: string
     stillExists?: boolean
@@ -149,6 +243,11 @@ export interface HiddenGemContentItem extends BaseContentItem {
     alt: string
     credit?: string
   }
+  images?: Array<{
+    src: string
+    alt: string
+    credit?: string
+  }>
   coordinates?: {
     lat: number
     lng: number
@@ -230,6 +329,15 @@ export interface DarkHistoryContentItem extends BaseContentItem {
   body: string
   verdict?: string // What happened / resolution status
   source?: string // Attribution or where to learn more
+  sources?: Array<{
+    title: string
+    url: string
+  }>
+  moreInfo?: Array<{
+    title: string
+    type: 'podcast' | 'video' | 'article' | 'book'
+    url: string
+  }>
   image?: {
     src: string
     alt: string
@@ -260,12 +368,21 @@ export interface LostAndLovedContentItem extends BaseContentItem {
     alt: string
     credit?: string
   }
+  images?: Array<{
+    src: string
+    alt: string
+    credit?: string
+  }>
   lastAddress?: string
   coordinates?: {
     lat: number
     lng: number
   }
   source?: string
+  sources?: Array<{
+    title: string
+    url: string
+  }>
 }
 
 // Scene - visual media item (photo or video)
@@ -323,6 +440,10 @@ export interface CityData {
   tagline?: string
   heroImage?: HeroImage
   content: ContentItem[]
+  // API configuration for event fetching
+  eventbriteCity?: string
+  latitude?: number
+  longitude?: number
 }
 
 // Cities index

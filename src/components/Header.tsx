@@ -3,26 +3,18 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { getAllEssays } from '@/data/essays'
+import { getAllCities } from '@/data/cities'
+import { routes, citySections } from '@/lib/routes'
 
 interface HeaderProps {
   cityName?: string
   citySlug?: string
 }
 
-const cities = [
-  { slug: 'anchorage', name: 'Anchorage' },
-  { slug: 'chicago', name: 'Chicago' },
-  { slug: 'colorado-springs', name: 'Colorado Springs' },
-  { slug: 'dallas', name: 'Dallas' },
-  { slug: 'denver', name: 'Denver' },
-  { slug: 'fargo', name: 'Fargo' },
-  { slug: 'minneapolis', name: 'Minneapolis' },
-  { slug: 'phoenix', name: 'Phoenix' },
-  { slug: 'portland', name: 'Portland' },
-  { slug: 'raleigh', name: 'Raleigh' },
-  { slug: 'salt-lake-city', name: 'Salt Lake City' },
-  { slug: 'tampa', name: 'Tampa' },
-]
+// Get cities from data source (single source of truth)
+const cities = getAllCities()
+  .map((city) => ({ slug: city.slug, name: city.name }))
+  .sort((a, b) => a.name.localeCompare(b.name))
 
 // Get all essays grouped by city
 const allEssays = getAllEssays()
@@ -34,33 +26,11 @@ const essaysByCity = allEssays.reduce((acc, essay) => {
   return acc
 }, {} as Record<string, typeof allEssays>)
 
-// City name lookup
-const cityNames: Record<string, string> = {
-  anchorage: 'Anchorage',
-  chicago: 'Chicago',
-  'colorado-springs': 'Colorado Springs',
-  dallas: 'Dallas',
-  denver: 'Denver',
-  fargo: 'Fargo',
-  minneapolis: 'Minneapolis',
-  phoenix: 'Phoenix',
-  portland: 'Portland',
-  raleigh: 'Raleigh',
-  'salt-lake-city': 'Salt Lake City',
-  tampa: 'Tampa',
-}
-
-const citySections = [
-  { path: '', label: 'Essay' },
-  { path: '/this-week', label: 'This Week' },
-  { path: '/scenes', label: 'Scenes' },
-  { path: '/coffee-shops', label: 'Coffee' },
-  { path: '/bars', label: 'Bars' },
-  { path: '/restaurants', label: 'Restaurants' },
-  { path: '/hidden-gems', label: 'Hidden Gems' },
-  { path: '/dark-history', label: 'Dark History' },
-  { path: '/curiosities', label: 'Curiosities' },
-]
+// City name lookup from data
+const cityNames = cities.reduce((acc, city) => {
+  acc[city.slug] = city.name
+  return acc
+}, {} as Record<string, string>)
 
 export function Header({ cityName, citySlug }: HeaderProps) {
   return (
@@ -69,7 +39,7 @@ export function Header({ cityName, citySlug }: HeaderProps) {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link
-            href="/"
+            href={routes.home()}
             className="flex items-center gap-3 font-semibold text-neutral-900 hover:text-accent-600 transition-colors tracking-tight"
           >
             <span className="text-lg">Curious City</span>
@@ -118,7 +88,7 @@ function EssaysDropdown() {
             {cityEssays.map((essay) => (
               <Link
                 key={essay.slug}
-                href={`/${essay.citySlug}/essay/${essay.slug}`}
+                href={routes.essay(essay.citySlug, essay.slug)}
                 className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
               >
                 {essay.title}
@@ -130,7 +100,7 @@ function EssaysDropdown() {
         <div className="my-2 border-t border-neutral-100" />
 
         <Link
-          href="/essays"
+          href={routes.essays()}
           className="flex items-center gap-1 px-4 py-2 text-sm text-accent-600 hover:bg-accent-50 font-medium"
         >
           View all essays
@@ -167,7 +137,7 @@ function CitiesDropdown() {
             onMouseEnter={() => setExpandedCity(city.slug)}
           >
             <Link
-              href={`/${city.slug}`}
+              href={routes.city(city.slug)}
               className={`flex items-center justify-between px-4 py-2 text-sm transition-colors ${
                 expandedCity === city.slug
                   ? 'bg-accent-50 text-accent-700'
@@ -186,7 +156,7 @@ function CitiesDropdown() {
                 {citySections.map((section) => (
                   <Link
                     key={section.path}
-                    href={`/${city.slug}${section.path}`}
+                    href={routes.citySection(city.slug, section.id)}
                     className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
                   >
                     {section.label}
@@ -253,7 +223,7 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
                   {cityEssays.map((essay) => (
                     <Link
                       key={essay.slug}
-                      href={`/${essay.citySlug}/essay/${essay.slug}`}
+                      href={routes.essay(essay.citySlug, essay.slug)}
                       onClick={() => setIsOpen(false)}
                       className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
                     >
@@ -263,7 +233,7 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
                 </div>
               ))}
               <Link
-                href="/essays"
+                href={routes.essays()}
                 onClick={() => setIsOpen(false)}
                 className="block px-6 py-2 text-sm text-neutral-500 hover:bg-neutral-100"
               >
@@ -307,7 +277,7 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
                   {citySections.map((section) => (
                     <Link
                       key={section.path}
-                      href={`/${city.slug}${section.path}`}
+                      href={routes.citySection(city.slug, section.id)}
                       onClick={() => setIsOpen(false)}
                       className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
                     >
@@ -325,28 +295,28 @@ function MobileMenu({ currentCitySlug }: { currentCitySlug?: string }) {
             Browse All
           </div>
           <Link
-            href="/category/hidden-gems"
+            href={routes.category('hidden-gems')}
             onClick={() => setIsOpen(false)}
             className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
           >
             All Hidden Gems
           </Link>
           <Link
-            href="/category/bars"
+            href={routes.category('bars')}
             onClick={() => setIsOpen(false)}
             className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
           >
             All Best Bars
           </Link>
           <Link
-            href="/category/restaurants"
+            href={routes.category('restaurants')}
             onClick={() => setIsOpen(false)}
             className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
           >
             All Best Restaurants
           </Link>
           <Link
-            href="/category/dark-history"
+            href={routes.category('dark-history')}
             onClick={() => setIsOpen(false)}
             className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
           >

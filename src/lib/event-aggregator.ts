@@ -23,7 +23,7 @@ function stringSimilarity(a: string, b: string): number {
   // Simple word overlap
   const aWords = new Set(aLower.split(/\s+/))
   const bWords = new Set(bLower.split(/\s+/))
-  const intersection = new Set([...aWords].filter((x) => bWords.has(x)))
+  const intersection = new Set(Array.from(aWords).filter((x) => bWords.has(x)))
 
   const similarity = (2 * intersection.size) / (aWords.size + bWords.size)
   return similarity

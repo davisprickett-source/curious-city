@@ -28,7 +28,16 @@ export function MapThumbnail({
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
   const [useStaticFallback, setUseStaticFallback] = useState(false)
+
+  // Access the token - it must be inlined at build time by Next.js
   const accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
+
+  // Debug logs
+  console.log('MapThumbnail Debug:', {
+    accessToken: accessToken ? 'Found' : 'Missing',
+    tokenStart: accessToken?.substring(0, 20),
+    allEnvVars: Object.keys(process.env).filter(k => k.startsWith('NEXT_PUBLIC'))
+  })
 
   useEffect(() => {
     if (!accessToken || !mapContainer.current || mapRef.current || useStaticFallback) return

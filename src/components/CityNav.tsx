@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { citySections, routes, type CitySection } from '@/lib/routes'
 
-export type CitySection = 'essay' | 'this-week' | 'scenes' | 'coffee-shops' | 'bars' | 'restaurants' | 'hidden-gems' | 'dark-history' | 'lost-and-loved' | 'curiosities'
+// Re-export CitySection for backwards compatibility
+export type { CitySection }
 
 interface CityNavProps {
   citySlug: string
@@ -8,27 +10,14 @@ interface CityNavProps {
   currentSection?: CitySection
 }
 
-const sections: { id: CitySection; label: string; path: string }[] = [
-  { id: 'essay', label: 'Essay', path: '' },
-  { id: 'this-week', label: 'This Week', path: '/this-week' },
-  { id: 'scenes', label: 'Scenes', path: '/scenes' },
-  { id: 'coffee-shops', label: 'Coffee', path: '/coffee-shops' },
-  { id: 'bars', label: 'Bars', path: '/bars' },
-  { id: 'restaurants', label: 'Restaurants', path: '/restaurants' },
-  { id: 'hidden-gems', label: 'Hidden Gems', path: '/hidden-gems' },
-  { id: 'dark-history', label: 'Dark History', path: '/dark-history' },
-  { id: 'lost-and-loved', label: 'Lost & Loved', path: '/lost-and-loved' },
-  { id: 'curiosities', label: 'Curiosities', path: '/curiosities' },
-]
-
 export function CityNav({ citySlug, cityName, currentSection }: CityNavProps) {
   return (
     <nav className="border-b border-neutral-200 bg-neutral-50">
       <div className="container-page">
         <div className="flex items-center gap-1 py-2 overflow-x-auto scrollbar-hide">
-          {sections.map((section) => {
+          {citySections.map((section) => {
             const isActive = section.id === currentSection
-            const href = `/${citySlug}${section.path}`
+            const href = routes.citySection(citySlug, section.id)
 
             return (
               <Link
