@@ -33,7 +33,7 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
         <img
           src={images[0].src}
           alt={images[0].alt}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         {images[0].credit && (
           <span className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/40 px-2 py-0.5 rounded">
@@ -46,12 +46,15 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
 
   return (
     <div className={`relative ${className}`}>
-      {/* Main image container */}
-      <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100">
+      {/* Main image container - click to advance */}
+      <div
+        className="relative aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer"
+        onClick={goToNext}
+      >
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          className="w-full h-full object-cover transition-opacity duration-300"
+          className="w-full h-full object-contain transition-opacity duration-300"
         />
 
         {/* Credit overlay */}
@@ -63,7 +66,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
 
         {/* Navigation arrows */}
         <button
-          onClick={goToPrevious}
+          onClick={(e) => {
+            e.stopPropagation()
+            goToPrevious()
+          }}
           className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center transition-all hover:scale-105"
           aria-label="Previous image"
         >
@@ -72,7 +78,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
           </svg>
         </button>
         <button
-          onClick={goToNext}
+          onClick={(e) => {
+            e.stopPropagation()
+            goToNext()
+          }}
           className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center transition-all hover:scale-105"
           aria-label="Next image"
         >
@@ -92,7 +101,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentIndex(index)}
+            onClick={(e) => {
+              e.stopPropagation()
+              setCurrentIndex(index)
+            }}
             className={`w-1.5 h-1.5 rounded-full transition-all ${
               index === currentIndex
                 ? 'bg-accent-600 w-3'

@@ -314,6 +314,11 @@ export interface BestOfSpot {
     caption?: string
     credit?: string
   }>
+  menuImage?: {
+    src: string
+    alt: string
+    credit?: string
+  }
   address?: string
   coordinates?: {
     lat: number
@@ -325,6 +330,8 @@ export interface BestOfSpot {
   price?: '$' | '$$' | '$$$' | '$$$$'
   website?: string
   instagram?: string
+  facebook?: string
+  menu?: string
 }
 
 // Best-of list - curated spots locals should know
@@ -419,6 +426,11 @@ export interface LostAndLovedContentItem extends BaseContentItem {
     alt: string
     credit?: string
   }>
+  video?: {
+    youtubeId: string
+    title?: string
+    timestamp?: number // Start time in seconds
+  }
   lastAddress?: string
   coordinates?: {
     lat: number

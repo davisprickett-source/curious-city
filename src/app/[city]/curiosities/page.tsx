@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
 import { Header, CityNav, ShareLinks } from '@/components'
+import { CuriositiesScroll } from '@/components/CuriositiesScroll'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -67,133 +68,40 @@ export default async function CityCuriositiesPage({ params }: PageProps) {
       <Header cityName={city.name} citySlug={city.slug} />
       <CityNav citySlug={city.slug} cityName={city.name} currentSection="curiosities" />
 
-      <main className="flex-1">
-        <div className="container-page section-spacing">
-          {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-start justify-between gap-4 mb-2">
-              <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900">
-                Curiosities of {city.name}
-              </h1>
+      <main className="flex-1 bg-white">
+        {/* Hero Header */}
+        <div className="border-b border-neutral-200 bg-gradient-to-b from-neutral-50 to-white">
+          <div className="container-page py-12 md:py-16">
+            <div className="flex items-start justify-between gap-4 mb-4">
+              <div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
+                  Curiosities of {city.name}
+                </h1>
+                <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
+                  Forgotten history, strange laws, underground secrets, and the peculiar facts that make this city unlike anywhere else.
+                </p>
+              </div>
               <div className="hidden sm:block flex-shrink-0">
                 <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="compact" />
               </div>
             </div>
-            <p className="text-lg text-neutral-600">
-              Forgotten history, strange laws, underground secrets, and the peculiar facts that make this city unlike anywhere else.
-            </p>
           </div>
+        </div>
 
-          {/* Curiosities List */}
-          {curiosities.length > 0 ? (
-            <div className="divide-y divide-neutral-200">
-              {curiosities.map((item: any, index: number) => (
-                <article key={item.id} className="py-8 first:pt-0 border-t border-neutral-200 first:border-t-0">
-                  <div className="flex items-start gap-4">
-                    <div className="w-7 h-7 bg-neutral-900 text-white text-sm font-medium rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      {index + 1}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      {/* Header with category and year */}
-                      <div className="flex items-baseline gap-2 flex-wrap mb-1">
-                        <h3 className="text-lg font-semibold text-neutral-900">{item.title}</h3>
-                        {item.category && (
-                          <span className={`text-xs font-medium px-2 py-0.5 rounded ${getCategoryStyle(item.category)}`}>
-                            {item.category}
-                          </span>
-                        )}
-                        {item.year && (
-                          <span className="text-xs text-neutral-400">{item.year}</span>
-                        )}
-                      </div>
-
-                      {/* Image - directly under title */}
-                      {item.image && (
-                        <div className="my-3 overflow-hidden rounded-lg">
-                          <img
-                            src={item.image.src}
-                            alt={item.image.alt || item.title}
-                            className="w-full h-64 object-cover"
-                          />
-                          {item.image.credit && (
-                            <div className="text-[11px] text-neutral-400 mt-1">
-                              {item.image.credit}
-                            </div>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Body */}
-                      <p className="text-neutral-600 leading-relaxed mb-4">{item.body}</p>
-
-                      {/* Video - after body */}
-                      {item.video && (
-                        <div className="my-3 overflow-hidden rounded-lg">
-                          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                            <iframe
-                              className="absolute top-0 left-0 w-full h-full"
-                              src={`https://www.youtube.com/embed/${item.video.youtubeId}`}
-                              title={item.video.title || item.title}
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                            />
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Footer */}
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-500">
-                        {item.location && (
-                          <span className="flex items-center gap-1.5">
-                            <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            {item.location.name}
-                            {item.location.stillExists === false && (
-                              <span className="text-neutral-400">(no longer exists)</span>
-                            )}
-                          </span>
-                        )}
-                        {item.source && (
-                          <span className="italic">Source: {item.source}</span>
-                        )}
-                      </div>
-
-                      {/* Sources */}
-                      {item.sources && item.sources.length > 0 && (
-                        <div className="mt-3 text-sm">
-                          <span className="text-neutral-500">Sources: </span>
-                          {item.sources.map((source: any, idx: number) => (
-                            <span key={idx}>
-                              <a
-                                href={source.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:text-blue-800 underline"
-                              >
-                                {source.title}
-                              </a>
-                              {idx < item.sources.length - 1 && ', '}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
+        {/* Scrollytelling Content */}
+        {curiosities.length > 0 ? (
+          <CuriositiesScroll curiosities={curiosities} cityName={city.name} />
+        ) : (
+          <div className="container-page py-20">
+            <div className="text-center">
               <p className="text-neutral-500 mb-2">No curiosities yet for {city.name}.</p>
               <p className="text-sm text-neutral-400">Check back soon!</p>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
+      <footer className="border-t border-neutral-200 mt-20">
         <div className="container-page py-6">
           <p className="text-xs text-neutral-400 text-center">
             Curious City

@@ -1,4 +1,5 @@
 import { LostAndLovedContentItem } from '@/types/content'
+import { ImageCarousel } from '@/components/ImageCarousel'
 
 interface LostAndLovedRendererProps {
   item: LostAndLovedContentItem
@@ -52,6 +53,27 @@ export function LostAndLovedRenderer({ item }: LostAndLovedRendererProps) {
             {item.neighborhood}
           </span>
         </div>
+
+        {/* Image carousel */}
+        {item.images && item.images.length > 0 && (
+          <ImageCarousel images={item.images} className="my-4" />
+        )}
+
+        {/* YouTube video embed */}
+        {item.video && (
+          <div className="my-4 aspect-video rounded-lg overflow-hidden">
+            <iframe
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/${item.video.youtubeId}${item.video.timestamp ? `?start=${item.video.timestamp}` : ''}`}
+              title={item.video.title || `Video about ${item.name}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        )}
 
         {/* Description */}
         <p className="text-neutral-600 text-[15px] leading-relaxed">
