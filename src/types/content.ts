@@ -109,39 +109,6 @@ export interface CardListContentItem extends BaseContentItem {
 }
 
 // ============================================
-// LEGACY: This Week Types (deprecated)
-// These types are kept for backwards compatibility but should not be
-// used for new content. Use EventsContentItem and EventItem instead.
-// ============================================
-
-/**
- * @deprecated Use EventItem instead
- */
-export interface ThisWeekItem {
-  title: string
-  description: string
-  date?: string // e.g., "Dec 24", "Dec 24-26", "Through Dec 31"
-  time?: string // e.g., "7pm", "All day"
-  location?: string
-  category?: 'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'
-  href?: string
-  image?: {
-    src: string
-    alt: string
-  }
-}
-
-/**
- * @deprecated Use EventsContentItem instead
- */
-export interface ThisWeekContentItem extends BaseContentItem {
-  type: 'this-week'
-  title?: string
-  intro?: string
-  items: ThisWeekItem[]
-}
-
-// ============================================
 // Enhanced Event System Types
 // ============================================
 
@@ -222,6 +189,7 @@ export interface CuriosityContentItem extends BaseContentItem {
   body: string
   category?: 'history' | 'architecture' | 'underground' | 'science' | 'culture' | 'law' | 'invention' | 'legend' | 'nature'
   year?: string
+  illustration?: React.ComponentType
   video?: {
     youtubeId: string
     title?: string
@@ -477,7 +445,6 @@ export type ContentItem =
   | TextContentItem
   | CardContentItem
   | CardListContentItem
-  | ThisWeekContentItem
   | EventsContentItem
   | AdContentItem
   | SectionContentItem

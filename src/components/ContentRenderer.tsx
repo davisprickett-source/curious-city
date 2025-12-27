@@ -90,10 +90,6 @@ function ContentItemRenderer({ item }: { item: ContentItem }) {
     case 'dark-history':
       return <DarkHistoryRenderer item={item} />
 
-    case 'this-week':
-      // ThisWeek is deprecated - content should be in events
-      return null
-
     case 'events':
       // Events are handled by the EventTimeBuckets component on the dedicated events page
       return null
