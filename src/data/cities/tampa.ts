@@ -296,10 +296,11 @@ export const tampa: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        intro: 'A mix of well-known landmarks and lesser-known spots that showcase Tampa\'s character — from the oldest restaurant in Florida to hidden natural spaces.',
         items: [
           {
             id: 'tam-gem-1',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Columbia Restaurant',
             category: 'Restaurant',
             description: 'Florida\'s oldest restaurant, operating since 1905. The Spanish-Cuban menu is good, the flamenco shows are better, and the building spans an entire city block of Ybor City.',
@@ -316,7 +317,7 @@ export const tampa: CityData = {
           },
           {
             id: 'tam-gem-2',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Tampa Riverwalk',
             category: 'Walk',
             description: 'A 2.6-mile pedestrian path along the Hillsborough River connecting museums, parks, and downtown. Rent bikes or scooters. The sunset views are the real attraction.',
@@ -337,7 +338,7 @@ export const tampa: CityData = {
           },
           {
             id: 'tam-gem-3',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Ybor City State Museum',
             category: 'Museum',
             description: 'A small museum in a former bakery that explains Ybor\'s immigrant cigar-making history. The casitas — preserved cigar worker cottages — are the highlight.',
@@ -354,7 +355,7 @@ export const tampa: CityData = {
           },
           {
             id: 'tam-gem-4',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Tampa Theatre',
             category: 'Cinema',
             description: 'A gorgeously preserved 1926 movie palace with a Mediterranean courtyard design. They screen classic and independent films. The architecture alone is worth admission.',
@@ -371,7 +372,7 @@ export const tampa: CityData = {
           },
           {
             id: 'tam-gem-5',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Armature Works',
             category: 'Food Hall',
             description: 'A renovated streetcar warehouse now housing a food hall, restaurant, and event space on the Hillsborough River. The setting is better than most of the food.',
@@ -713,6 +714,12 @@ export const tampa: CityData = {
             body: 'For three decades, Ybor City ran on blood and bolita. Charlie Wall—"The White Shadow"—son of a prominent Tampa physician, built an empire on illegal gambling, prostitution, and fixed elections. His turf war with Italian mobster Ignacio Antinori left bodies in the streets with the regularity of streetcar schedules. By 1945, Santo Trafficante Sr. had pushed Wall out, but allowed him to live—a mercy that ended on April 18, 1955, when Wall was found in his modest Ybor home with his skull caved in by a baseball bat and his throat cut ear to ear. The murder was never solved. His ghost is said to linger at the doorsteps of Le Méridien Tampa, the former federal courthouse where he once testified against his own kind.',
             verdict: 'Twenty-five gangland killings in twenty-three years. Wall\'s murder remains officially unsolved, likely ordered by the Trafficantes.',
             source: 'Tampa Bay Times; Florida Sheriffs Association',
+            images: [
+              {
+                src: '/Tampa/dark-history/mafia-ybor.png',
+                alt: 'Ybor City during the era of mob violence',
+              },
+            ],
             location: {
               name: 'Ybor City',
               stillExists: true,
@@ -727,6 +734,12 @@ export const tampa: CityData = {
             body: 'On the morning of May 9, 1980, the freighter MV Summit Venture was navigating Tampa Bay in near-zero visibility when its radar failed during a squall. Blinded by 60 mph winds and punishing rain, the 609-foot ship struck a support column of the Sunshine Skyway Bridge. A 1,400-foot section of the steel cantilever span collapsed, plunging 165 feet into the bay. A Greyhound bus carrying 26 passengers, a pickup truck, and six other vehicles fell with it. Thirty-five people died—the youngest a baby, the oldest ninety-two. Only one person survived the fall: Wesley MacIntire, whose truck bounced off the ship\'s bow before hitting the water. The pilot, John Lerro, was cleared of wrongdoing but never recovered, dying of multiple sclerosis complications in 2002. Drivers crossing the new bridge still report seeing a blonde woman standing in the middle of the road who vanishes when they stop to help.',
             verdict: 'Thirty-five dead. The new bridge, completed in 1987, features "dolphin" protective barriers around its supports. The old southbound span now serves as the world\'s longest fishing pier.',
             source: 'Tampa Bay Times; NTSB Report MAR8103',
+            images: [
+              {
+                src: '/Tampa/dark-history/skyway-collapse.png',
+                alt: 'The Sunshine Skyway Bridge collapse',
+              },
+            ],
             location: {
               name: 'Sunshine Skyway Bridge',
               stillExists: true,
@@ -741,6 +754,12 @@ export const tampa: CityData = {
             body: 'In 1984, Bobby Joe Long abducted, raped, and murdered at least ten women over eight months, most of them picked up along Nebraska Avenue and the strip clubs of Tampa\'s seedier corridors. His victims were strangled, their bodies dumped in rural areas, bound with distinctive red carpet fibers that would later link the cases. The killing stopped when 17-year-old Lisa McVey, kidnapped while biking home from work, kept her head during 26 hours of captivity. Blindfolded, she left fingerprints everywhere she could and memorized details—sounds, smells, the feel of his apartment. She talked Long into releasing her, then provided investigators with enough information to identify his car and home. Long confessed to eight murders. He was executed by lethal injection on May 23, 2019. Lisa McVey became Master Deputy Lisa McVey Noland with the Hillsborough County Sheriff\'s Office—the same department that caught her attacker.',
             verdict: 'Executed after 34 years on death row. Ten confirmed victims; the true count may be higher.',
             source: 'Tampa Bay Times; Biography.com; WFLA',
+            images: [
+              {
+                src: '/Tampa/dark-history/bobby-joe-long.png',
+                alt: 'Bobby Joe Long and the Nebraska Avenue corridor',
+              },
+            ],
             location: {
               name: 'Nebraska Avenue corridor, Tampa',
               stillExists: true,
@@ -755,6 +774,12 @@ export const tampa: CityData = {
             body: 'Joan Rogers and her daughters Michelle (17) and Christe (14) were driving home to Ohio after a trip to Disney World when they stopped in Tampa to ask for directions. Oba Chandler, a local contractor, gave them directions to a Days Inn and offered to take them on a sunset cruise in Tampa Bay. The next morning, all three were found floating in the water, hands and feet bound with duct tape, yellow rope tied around their necks and attached to concrete blocks. They had been raped and thrown overboard alive. For three years, the case went nowhere until investigators posted billboards showing distinctive handwriting found on a tourist brochure in the family\'s car. A neighbor recognized Chandler\'s script. A woman came forward to testify that Chandler had raped her on his boat two weeks before the Rogers murders. Chandler was executed on November 15, 2011. His final statement read: "You are killing a innocent man today."',
             verdict: 'Oba Chandler executed by lethal injection, 2011. Later linked by DNA to the 1990 murder of a woman in Hillsborough County.',
             source: 'Tampa Bay Times "Angels & Demons" Project; Fox News; Oxygen',
+            images: [
+              {
+                src: '/Tampa/dark-history/rogers-family.png',
+                alt: 'Tampa Bay waters where the Rogers family was found',
+              },
+            ],
             location: {
               name: 'Tampa Bay waters',
               stillExists: true,
@@ -769,6 +794,12 @@ export const tampa: CityData = {
             body: 'On October 16, 1933, 21-year-old Victor Licata used an axe to murder his parents, two brothers, and his sister while they slept in their Ybor City home at 1707 5th Avenue. When police found him the next morning, he wore a clean pressed shirt—though beneath it, his body was smeared with blood. He couldn\'t explain what had happened. The media dubbed him the "Dream Slayer" and blamed marijuana, transforming Licata into the poster child for Harry Anslinger\'s anti-cannabis crusade and the 1937 Marihuana Tax Act. The truth was simpler and sadder: Licata had been diagnosed with dementia praecox (schizophrenia) before the murders, and his family had a documented history of hereditary mental illness—his parents were first cousins, one brother was schizophrenic, and multiple relatives had been institutionalized. Cannabis was never mentioned in his psychiatric records. Licata escaped from the Florida Hospital for the Insane in 1945, was recaptured with help from a cousin in New Orleans, and hanged himself on December 4, 1950.',
             verdict: 'The case that launched federal marijuana prohibition was built on a lie. Licata\'s madness was genetic, not chemical.',
             source: 'Fox 13 Tampa Bay; Tampa Bay Times; Wikipedia',
+            images: [
+              {
+                src: '/Tampa/dark-history/licata-axe.png',
+                alt: 'The Licata family home in Ybor City',
+              },
+            ],
             location: {
               name: '1707 5th Ave, Ybor City',
               stillExists: false,
@@ -783,6 +814,12 @@ export const tampa: CityData = {
             body: 'Between 1971 and 1978, fourteen women and two men were murdered in Pasco County and the wider Tampa Bay area. Most were sex workers from the Dale Mabry Strip. Their bodies turned up in orange groves, behind sand dunes, thrown from the Gandy Bridge, burned in shallow graves near the Georgia border. Some were strangled; others shot in the head. Whether these murders were the work of one predator, multiple killers, feuding pimps, or organized crime was never determined. A few cases were eventually solved—Gene Arthur Wirtjes killed Jo Ann Parnell to stop her testifying against him; Robert Hardagree murdered Cindy Carlton Stewart after a New Year\'s Eve drinking session—but most remain open. The nickname "Gulf Killer" appears in police files and newspaper archives, a placeholder for whoever hunted women along Florida\'s Gulf Coast.',
             verdict: 'Fourteen women and two men dead. Most cases remain unsolved. The killer—or killers—was never identified.',
             source: 'Wikipedia; Florida cold case archives',
+            images: [
+              {
+                src: '/Tampa/dark-history/gulf-killer.png',
+                alt: 'The Dale Mabry Strip and Pasco County areas',
+              },
+            ],
             location: {
               name: 'Dale Mabry Strip, Pasco/Hillsborough Counties',
               stillExists: true,
@@ -797,6 +834,12 @@ export const tampa: CityData = {
             body: 'For 51 days in the fall of 2017, the tree-lined streets of Seminole Heights became a hunting ground. Benjamin Mitchell, 22, was shot dead at a bus stop on October 9. Monica Hoffa, 32, was found in an overgrown lot on October 13. Anthony Naiboa, 20, an autistic young man who had just started a job packing hurricane relief supplies, got on the wrong bus and was killed on October 19. Ronald Felton, 60, was shot in the back on November 14 while walking to church to feed the homeless. The victims had nothing in common except that they were walking alone at night within a half-mile radius. Police flooded the neighborhood, warning residents not to go outside alone. On November 28, Howell Emanuel Donaldson III handed a McDonald\'s manager a bag containing a pistol and told her to bury it without looking inside. She called police. Ballistics matched the gun to all four murders. Donaldson, a former college basketball player with no apparent motive, pleaded guilty in 2023 and received four consecutive life sentences.',
             verdict: 'Four dead, one killer, no motive ever established. The McDonald\'s manager who turned him in received the $110,000 reward.',
             source: 'Tampa Bay Times; CNN; WTSP',
+            images: [
+              {
+                src: '/Tampa/dark-history/seminole-heights.png',
+                alt: 'The Seminole Heights neighborhood',
+              },
+            ],
             location: {
               name: 'Seminole Heights neighborhood',
               stillExists: true,
@@ -811,6 +854,12 @@ export const tampa: CityData = {
             body: 'Henry Plant built the Tampa Bay Hotel in 1891 as a monument to his railroad fortune—500 rooms, Moorish minarets, and $3 million in Victorian excess. Theodore Roosevelt, the Queen of England, and Babe Ruth all stayed there. The hotel failed to turn a profit and became the University of Tampa in 1933. Now students and faculty report flickering lights, objects moving on their own, and footsteps in empty hallways at night. Most disturbing is "The Brown Man"—a figure in a brown suit with long white hair and glowing red eyes who appears in corridors and classrooms. Those who acknowledge his presence say he rushes toward them, face-to-face, then vanishes. Paranormal investigators believe it\'s Henry Plant himself, unable to leave his creation. Others report Bessie, a performer who killed herself after catching her husband with a castmate during a hotel stay. Her ghost lingers in the upper rooms, forever heartbroken.',
             verdict: 'The University of Tampa is considered one of the most haunted campuses in America. Plant Hall tours run during Halloween.',
             source: 'Tampa Terrors; Nightly Spirits; WFLA',
+            images: [
+              {
+                src: '/Tampa/dark-history/plant-hall.png',
+                alt: 'Plant Hall at University of Tampa',
+              },
+            ],
             location: {
               name: 'Plant Hall, University of Tampa',
               stillExists: true,
@@ -825,6 +874,12 @@ export const tampa: CityData = {
             body: 'The Cuban Club opened in Ybor City in 1917—a ballroom, cantina, library, bowling lanes, pool, and two-story theater built by immigrants who had come to roll cigars. Two deaths marked the building early: an actor died by suicide on stage, and a board member was murdered during an argument. The Travel Channel named it one of the Top 10 Most Haunted Places in America. Visitors report figures following them through empty halls, cold spots in the ballroom, and the distinct sense of being watched from the theater balcony. Some claim the actor still performs to an audience no one else can see. The building has hosted ghost tours, paranormal investigations, and the occasional wedding—though guests are warned that the original occupants never quite left.',
             verdict: 'Still hosting events. Still hosting ghosts. The building accepts reservations for both.',
             source: 'Travel Channel; Tampa Terrors; Creative Loafing Tampa',
+            images: [
+              {
+                src: '/Tampa/dark-history/cuban-club.png',
+                alt: 'The haunted Cuban Club in Ybor City',
+              },
+            ],
             location: {
               name: 'Cuban Club, 2010 N Avenida Republica de Cuba',
               stillExists: true,
@@ -839,6 +894,12 @@ export const tampa: CityData = {
             body: 'The Tampa Theatre opened in 1926, a Mediterranean Revival palace with a ceiling painted to resemble a night sky. Foster "Fink" Finley worked as the theater\'s first projectionist for 15 years until he died of a heart attack inside the building. Staff and patrons have seen him moving through the projection booth ever since. But the theater\'s strangest haunting is confined to a single seat—number 308—where a man in a fedora has been spotted sitting through screenings. When approached, he vanishes. Paranormal investigators have captured audio and video anomalies concentrated on that seat. No one knows who he is or why he keeps coming back. The theater still shows films. The seat is still available. The man in the fedora still shows up, watching something only he can see.',
             verdict: 'The Tampa Theatre is on the National Register of Historic Places. Seat 308 remains unsold for most screenings.',
             source: 'WFLA; US Ghost Adventures; Tampa Theatre archives',
+            images: [
+              {
+                src: '/Tampa/dark-history/seat-308.png',
+                alt: 'Historic Tampa Theatre interior with ornate Mediterranean architecture',
+              },
+            ],
             location: {
               name: 'Tampa Theatre, 711 N Franklin St',
               stillExists: true,

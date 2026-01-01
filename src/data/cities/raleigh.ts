@@ -86,9 +86,34 @@ export const raleigh: CityData = {
             type: 'curiosity',
             category: 'underground',
             title: 'A 20,000-square-foot Cold War bunker became Raleigh\'s underground punk scene',
-            body: 'Beneath what is now the Village District lies a sealed underground mall originally built as a Cold War bomb shelter. From 1971-1984, it housed 30 nightclubs and shops including legendary punk venues that hosted The Ramones, The Police, Iggy Pop, Pat Benatar, Steve Martin, and George Carlin. The complex had a New York City subway-style entrance with paintings of trains. Author David Sedaris, who spent his high school years in Raleigh, remembered thinking "This is what New York is like!" It was shut down due to drug problems and fire code violations. Most people born after the 1960s have never heard of it.',
+            body: 'Beneath what is now The Fresh Market in the Village District lies a sealed 20,000-square-foot underground complex originally constructed as a Cold War bomb shelter. Between 1971 and 1984, it housed approximately 30 nightclubs, shops, and restaurants, becoming a legendary venue for the early punk and alternative scene. The complex hosted iconic acts like The Ramones, The Police, Iggy Pop, Sonic Youth, Pat Benatar, Steve Martin, and George Carlin. The entrance had a New York City subway-style design with paintings of trains. Author David Sedaris, who spent his high school years in Raleigh, remembered thinking "This is what New York is like!" The venue closed in 1984 due to safety and fire code concerns. While there have been occasional discussions about a revival, the space remains largely a piece of Raleigh\'s underground history.',
             year: '1971-1984',
-            source: 'Candid Slice',
+            images: [
+              {
+                src: '/raleigh-bunker-main.webp',
+                alt: 'The Village Underground entrance in Raleigh',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh-bunker2.webp',
+                alt: 'Inside the Village Underground complex',
+                credit: 'Historical Photo',
+              },
+            ],
+            sources: [
+              {
+                title: 'The Village Underground: Raleigh\'s Legendary Punk Scene',
+                url: 'https://raltoday.6amcity.com/village-underground-raleigh-nc',
+              },
+              {
+                title: 'The Raleigh Underground: A Lost Phenomenon',
+                url: 'http://goodnightraleigh.com/2008/07/the-raleigh-underground-a-lost-phenomenon/',
+              },
+              {
+                title: 'The Raleigh Underground: An Abandoned Mall Right Beneath Our Feet',
+                url: 'https://www.candidslice.com/the-raleigh-underground-an-abandoned-mall-right-beneath-our-feet/',
+              },
+            ],
             location: { name: 'Village District (Cameron Village)', stillExists: false },
           },
           {
@@ -98,7 +123,32 @@ export const raleigh: CityData = {
             title: 'An entire river flows through downtown in a Victorian tunnel',
             body: 'The Pigeon House Branch — formerly Buffalo Branch — is a river that flows through downtown Raleigh via a century-old cobblestone tunnel system beneath West and Peace Streets. Built in the early 1900s to "tame" this "rambunctious" creek, the rectangular tunnel with support pillars feels like a mine shaft and takes 15 minutes to walk through. Most people have no idea this waterway exists beneath their feet. The stream will be "resurrected" in the new Smoky Hollow Park between 2025 and 2027.',
             year: 'early 1900s',
-            source: 'ABC11 Hidden Triangle',
+            images: [
+              {
+                src: '/pigeon-house0-771x513.jpg',
+                alt: 'The Pigeon House Branch tunnel entrance',
+                credit: 'Raleigh Commons',
+              },
+              {
+                src: '/2988893_1Raleigh-Aqueduct-Exploration.jpg',
+                alt: 'Inside the Pigeon House Branch tunnel system',
+                credit: 'ABC11',
+              },
+            ],
+            sources: [
+              {
+                title: 'Uncovering Downtown\'s Forgotten Creek',
+                url: 'https://theraleighcommons.org/raleighpublicrecord/opinion/2014/03/03/uncovering-downtowns-forgotten-creek/',
+              },
+              {
+                title: 'Downtown Raleigh\'s Lost Waterway to be Unearthed',
+                url: 'https://www.wral.com/story/downtown-raleigh-s-lost-waterway-to-be-unearthed-after-more-than-100-years-revived-as-boardwalk/21206527/',
+              },
+              {
+                title: 'We Revisit Downtown Raleigh\'s Hidden Tunnels & Waterway',
+                url: 'https://abc11.com/post/we-revisit-downtown-raleighs-hidden-tunnels-waterway/2988847/',
+              },
+            ],
             location: { name: 'Downtown Raleigh', stillExists: true },
           },
           {
@@ -114,11 +164,20 @@ export const raleigh: CityData = {
             body: 'Andrew Johnson, the 17th President, was born on December 29, 1808 in the upstairs loft of a detached kitchen at Casso\'s Inn, a roadside tavern in Raleigh. His father Jacob worked as a hostler and Capitol janitor; his mother Mary was a weaver. The structure later served as a flophouse for hobos during the Great Depression and was only moved to Mordecai Historic Park in 1975. Strangely, when President Johnson returned to Raleigh in 1867, newspapers made no mention whatsoever of any visit to his birthplace.',
             year: '1808',
             image: {
-              src: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800',
-              alt: 'Historic building in Raleigh',
-              credit: 'Unsplash',
+              src: '/Andrew Johnson.png',
+              alt: 'Andrew Johnson birthplace at Mordecai Historic Park',
+              credit: 'NCpedia',
             },
-            source: 'NCpedia',
+            sources: [
+              {
+                title: 'Andrew Johnson Birthplace',
+                url: 'https://www.ncpedia.org/andrew-johnson-birthplace',
+              },
+              {
+                title: 'Andrew Johnson Birthplace, Raleigh, N.C.',
+                url: 'http://goodnightraleigh.com/2014/03/andrew-johnson-birthplace-raleigh-n-c/',
+              },
+            ],
             location: { name: 'Mordecai Historic Park', stillExists: true },
           },
           {
@@ -255,26 +314,110 @@ export const raleigh: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro: 'These are Raleigh\'s landmarks — the places locals secretly love despite claiming they\'re overrated. There\'s a reason everyone recommends them.',
         items: [
           {
-            id: 'gem-1',
+            id: 'iconic-1',
             type: 'hidden-gem',
             name: 'Irregardless Cafe',
             category: 'Restaurant',
             description: 'A Raleigh institution since 1975, serving seasonal Southern fare with live jazz nightly. The vibe is unhurried and the sweet potato biscuits are legendary.',
             location: 'Morgan Street',
             tip: 'Make reservations for weekend brunch',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/irregardless.png',
+                alt: 'Irregardless Cafe exterior',
+              },
+            ],
+          },
+          {
+            id: 'iconic-2',
+            type: 'hidden-gem',
+            name: 'Boylan Bridge',
+            category: 'View',
+            description: 'A pedestrian bridge with the best skyline view in the city. Locals gather here at sunset, especially when the light hits the downtown glass just right.',
+            location: 'Boylan Heights',
+            tip: 'Bring a drink from nearby Brewery Bhavana',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/boylan.png',
+                alt: 'Boylan Bridge with Raleigh skyline view',
+              },
+            ],
+          },
+          {
+            id: 'iconic-ad-1',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'iconic-3',
+            type: 'hidden-gem',
+            name: 'JC Raulston Arboretum',
+            category: 'Garden',
+            description: 'NC State\'s free public garden with over 6,000 plant taxa. The Japanese garden and winter-blooming camellias are worth a dedicated visit.',
+            location: 'NC State Campus',
+            tip: 'Free and open daily dawn to dusk',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/raulston.png',
+                alt: 'JC Raulston Arboretum gardens',
+              },
+            ],
+          },
+          {
+            id: 'iconic-4',
+            type: 'hidden-gem',
+            name: 'Oakwood Cemetery',
+            category: 'Historic Site',
+            description: 'A sprawling Victorian garden cemetery with winding paths, ancient oaks, and graves dating to the Civil War. Eerily peaceful, especially in fog.',
+            location: 'Oakwood',
+            tip: 'Pick up a walking tour map at the entrance',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/oakwood-cemetery.png',
+                alt: 'Oakwood Cemetery historic grounds',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro: 'The genuinely obscure — places even lifelong Raleigh residents don\'t know about.',
+        items: [
+          {
+            id: 'gem-1',
+            type: 'hidden-gem',
+            name: 'The Third House Speakeasy',
+            category: 'Underground & Secret',
+            description: 'Actual 1920s Prohibition speakeasy space opening Summer 2025 beneath Sir Walter Apartments. No signage, unmarked alleyway entrance, zero Google/GPS presence. 25+ only, strict dress code, photography discouraged.',
+            location: 'Downtown (unmarked)',
+            tip: 'Ask locals who know — intentionally hidden by design',
           },
           {
             id: 'gem-2',
             type: 'hidden-gem',
-            name: 'Mordecai Historic Park',
-            category: 'History',
-            description: 'A quiet pocket of antebellum history just north of downtown. Includes the birthplace of President Andrew Johnson, relocated here piece by piece.',
-            location: 'Mordecai',
+            name: 'Sous Terre',
+            category: 'Underground & Secret',
+            description: 'Underground speakeasy beneath Jolie French bistro, opened May 2024. Name means "underground" in French. Warm amber lighting, plush seating, craft cocktails.',
+            location: 'Beneath Jolie',
+            tip: 'Enter through the restaurant',
+          },
+          {
+            id: 'gem-3',
+            type: 'hidden-gem',
+            name: 'NC State Steam Tunnels',
+            category: 'Underground & Secret',
+            description: 'Off-limits urban exploration site with graffiti and mysterious shrine containing recently-lit candles. Associated with campus ghost stories and a 1988 murder plot. Sealed after 9/11 but legends persist.',
+            location: 'NC State Campus (off-limits)',
+            tip: 'Do not attempt to access — for historical interest only',
           },
           {
             id: 'gem-ad-1',
@@ -282,30 +425,38 @@ export const raleigh: CityData = {
             size: 'banner',
           },
           {
-            id: 'gem-3',
-            type: 'hidden-gem',
-            name: 'Boylan Bridge',
-            category: 'View',
-            description: 'A pedestrian bridge with the best skyline view in the city. Locals gather here at sunset, especially when the light hits the downtown glass just right.',
-            location: 'Boylan Heights',
-            tip: 'Bring a drink from nearby Brewery Bhavana',
-          },
-          {
             id: 'gem-4',
             type: 'hidden-gem',
-            name: 'Cup A Joe',
-            category: 'Cafe',
-            description: 'A no-frills Hillsborough Street staple since the \'90s. Strong coffee, sticky tables, and the unmistakable energy of students cramming at 2am.',
-            location: 'Hillsborough Street',
+            name: 'Old Highway 98 Ghost Road',
+            category: 'Abandoned & Lost',
+            description: 'Crumbling abandoned highway that disappears beneath Falls Lake. Hike 10+ minutes down the road before it vanishes underwater. Flooded when Falls Lake was created.',
+            location: 'Falls Lake area',
+            tip: 'Wear hiking boots — road is crumbling',
           },
           {
             id: 'gem-5',
             type: 'hidden-gem',
-            name: 'JC Raulston Arboretum',
-            category: 'Garden',
-            description: 'NC State\'s free public garden with over 6,000 plant taxa. The Japanese garden and winter-blooming camellias are worth a dedicated visit.',
-            location: 'NC State Campus',
-            tip: 'Free and open daily dawn to dusk',
+            name: 'Millbrook Village',
+            category: 'Abandoned & Lost',
+            description: '150+ year-old abandoned gristmill and village from the 1860s, hidden along Marsh Creek in overgrown woods. Once-thriving mill community now forgotten.',
+            location: 'Marsh Creek',
+          },
+          {
+            id: 'gem-6',
+            type: 'hidden-gem',
+            name: 'Bloomsbury Park Ghost Site',
+            category: 'Abandoned & Lost',
+            description: 'Early 1900s trolley park with roller coaster, carousel, and dance pavilion. Completely demolished; only exists in historical records. Raleigh\'s lost amusement park from the streetcar era.',
+            location: 'Historical site only',
+          },
+          {
+            id: 'gem-7',
+            type: 'hidden-gem',
+            name: 'Juniper Level Botanic Garden',
+            category: 'Secret Garden',
+            description: 'Private 28-acre wonderland with rare plants found nowhere else on Earth. Features Mystic Falls (20-foot waterfall with walkway underneath). Only open 8 weekends per year by appointment.',
+            location: 'Private property',
+            tip: 'Free but must reserve in advance — check website',
           },
           {
             id: 'gem-ad-2',
@@ -313,21 +464,142 @@ export const raleigh: CityData = {
             size: 'rectangle',
           },
           {
-            id: 'gem-6',
+            id: 'gem-8',
             type: 'hidden-gem',
-            name: 'Person Street Pharmacy',
-            category: 'Shop & Lunch',
-            description: 'A functioning pharmacy with a tiny lunch counter that hasn\'t changed since 1910. The pimento cheese sandwich is the move.',
-            location: 'Person Street',
+            name: 'Isabelle Bowen Henderson Secret Garden',
+            category: 'Secret Garden',
+            description: 'Nearly century-old garden from the 1930s hidden behind an ivy curtain. Privately-owned oasis behind a normal sidewalk. Rare public tours for $15.',
+            location: 'Behind ivy curtain on sidewalk',
+            tip: 'Watch for rare tour announcements',
           },
           {
-            id: 'gem-7',
+            id: 'gem-9',
             type: 'hidden-gem',
-            name: 'Oakwood Cemetery',
-            category: 'Historic Site',
-            description: 'A sprawling Victorian garden cemetery with winding paths, ancient oaks, and graves dating to the Civil War. Eerily peaceful, especially in fog.',
-            location: 'Oakwood',
-            tip: 'Pick up a walking tour map at the entrance',
+            name: 'Raleigh Little Theatre Rose Garden',
+            category: 'Secret Garden',
+            description: 'Built by WPA into a natural ravine in 1939. 6.5 acres with 1,200 roses of 60 varieties. Transformed from "unsightly clay pit of red mud and weeds" into terraced landscape with 2,000-seat amphitheater.',
+            location: 'Behind Raleigh Little Theatre',
+            tip: 'Free and open to public',
+          },
+          {
+            id: 'gem-10',
+            type: 'hidden-gem',
+            name: 'Robertson Millpond Preserve',
+            category: 'Secret Garden',
+            description: 'Only bald cypress habitat in Raleigh area. 85-acre serene forest perfect for kayaking. Unique ecosystem in Piedmont landscape.',
+            location: 'Wendell',
+          },
+          {
+            id: 'gem-11',
+            type: 'hidden-gem',
+            name: 'Cloud Chamber for the Trees and Sky',
+            category: 'Quirky Architecture',
+            description: 'Rustic camera obscura by Chris Drury at NC Museum of Art. Looks like an enchanted hobbit home. Creates inverted projections using only natural light. Easy to miss in the museum park.',
+            location: 'NC Museum of Art Park',
+          },
+          {
+            id: 'gem-12',
+            type: 'hidden-gem',
+            name: 'Geodetic Survey Stones',
+            category: 'Quirky Architecture',
+            description: 'Unusual arrangement of cut stones in Union Square — "Mini-Stonehenge." Hidden in plain sight with no signage. Historic surveying markers in mysterious pattern.',
+            location: 'Union Square',
+            tip: 'Look for stones arranged in geometric pattern',
+          },
+          {
+            id: 'gem-13',
+            type: 'hidden-gem',
+            name: 'Harrelson Hall',
+            category: 'Quirky Architecture',
+            description: 'First cylindrical classroom building ever built on a university campus (1960s). 206-foot diameter, looping hallways create odd spatial sensation. Experimental architectural design that never caught on.',
+            location: 'NC State Campus',
+          },
+          {
+            id: 'gem-14',
+            type: 'hidden-gem',
+            name: 'Historic Raleigh Water Tower',
+            category: 'Quirky Architecture',
+            description: '1886 water tower housing Raleigh\'s first municipal water system. Now The Tower Escapes (escape room venue). National Historic Site most people don\'t know about.',
+            location: 'Downtown',
+            tip: 'Book an escape room to see the interior',
+          },
+          {
+            id: 'gem-15',
+            type: 'hidden-gem',
+            name: 'Rooftop Arrow',
+            category: 'Quirky Architecture',
+            description: 'Giant faded arrow hidden on rooftop at The Architect Bar. Pre-radar aviation navigation marker pointing to old Raleigh Municipal Airport. Only visible from above or from rooftop bar.',
+            location: 'Rooftop of The Architect Bar',
+          },
+          {
+            id: 'gem-16',
+            type: 'hidden-gem',
+            name: 'Mordecai Historic Park',
+            category: 'Hidden History',
+            description: 'A quiet pocket of antebellum history just north of downtown. Includes the birthplace of President Andrew Johnson, relocated here piece by piece.',
+            location: 'Mordecai',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/mordecai.png',
+                alt: 'Mordecai Historic Park',
+              },
+            ],
+          },
+          {
+            id: 'gem-17',
+            type: 'hidden-gem',
+            name: 'Dr. M.T. Pope House Museum',
+            category: 'Hidden History',
+            description: 'The ONLY African American house museum in the entire state of North Carolina. Built 1901, small museum with limited publicity. Important Civil Rights history site.',
+            location: 'South Wilmington Street',
+          },
+          {
+            id: 'gem-18',
+            type: 'hidden-gem',
+            name: 'Ray Price Harley Museum',
+            category: 'Hidden History',
+            description: 'Racing bikes and trophies hidden on the second floor above a motorcycle dealership. Most people don\'t go upstairs at dealerships. Must ask to access.',
+            location: 'Ray Price Harley-Davidson',
+            tip: 'Ask staff for access to second floor museum',
+          },
+          {
+            id: 'gem-19',
+            type: 'hidden-gem',
+            name: 'Dorothea Dix Hospital Cemetery',
+            category: 'Haunted & Mysterious',
+            description: 'Cemetery with ~900 patient burials (1859-1970) at rear of Dix Park. Only 275 gravesites remain after restoration. Former "lunatic asylum" with dark history. Dark History Tours offered.',
+            location: 'Rear of Dix Park',
+          },
+          {
+            id: 'gem-20',
+            type: 'hidden-gem',
+            name: 'Spring Hill House & Hunter Cemetery',
+            category: 'Haunted & Mysterious',
+            description: 'Oldest marked grave in Wake County (Theophilus Hunter Sr., 1798) — pre-dates Raleigh itself. Motion sensor triggered nightly on staircase. Visitors report hearing baby wails.',
+            location: 'NC State Centennial Campus',
+            tip: 'On campus but not well-marked',
+          },
+          {
+            id: 'gem-21',
+            type: 'hidden-gem',
+            name: 'Person Street Pharmacy',
+            category: 'Quirky Specialty',
+            description: 'A functioning pharmacy with a tiny lunch counter that hasn\'t changed since 1910. The pimento cheese sandwich is the move.',
+            location: 'Person Street',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/person-pharmacy.png',
+                alt: 'Person Street Pharmacy vintage lunch counter',
+              },
+            ],
+          },
+          {
+            id: 'gem-22',
+            type: 'hidden-gem',
+            name: 'Free Expression Tunnel',
+            category: 'Quirky Specialty',
+            description: 'NC State graffiti tunnel connecting campuses since 1967. Constantly repainted (sometimes multiple times per day). Atlas Obscura featured. Students claim it as free speech zone.',
+            location: 'NC State Campus',
           },
         ],
       },
@@ -917,20 +1189,8 @@ export const raleigh: CityData = {
         id: 'ral-dark-history',
         type: 'section',
         title: 'Dark History',
+        intro: 'A state capital that witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds.',
         items: [
-          {
-            id: 'ral-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'The capital that looked the other way',
-            body: 'Raleigh was invented by legislative fiat in 1792—a capital carved from forest, named for a man who never visited. That origin story of deliberate construction masks a darker pattern: a state capital that has witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds. Raleigh\'s ghosts aren\'t just in the old houses—they\'re in the silences, in the stories the state would rather not tell.',
-            verdict: 'A city built on paper, haunted by what the paper didn\'t record.',
-            location: {
-              name: 'Downtown Raleigh',
-              stillExists: true,
-            },
-          },
           {
             id: 'ral-dark-1',
             type: 'dark-history',
@@ -939,11 +1199,17 @@ export const raleigh: CityData = {
             title: 'The Coup Raleigh Ignored',
             body: 'On November 10, 1898, a white supremacist mob in Wilmington—just 120 miles from the state capital—overthrew the legally elected biracial government, burned the Black-owned Daily Record newspaper, and murdered Black residents in the streets. Women and children fled to swamps for three days. Prominent Black citizens were marched to the train station at gunpoint and told they\'d be killed if they returned. As many as 60 people died. It was the only successful coup d\'état in American history. The state government in Raleigh did nothing. Governor Daniel Russell, himself threatened, stayed silent. For a century, textbooks called it a "race riot" and portrayed the conspirators as heroes. The truth wasn\'t officially acknowledged until 2006.',
             verdict: 'The coup succeeded. Black voter registration in NC dropped from 126,000 to 6,100 within six years. Wilmington didn\'t elect another Black official until 1972.',
-            source: 'PBS American Experience; Equal Justice Initiative; NC DNCR',
+            source: 'PBS American Experience; Equal Justice Initiative; NC DNCR; https://www.youtube.com/watch?v=244thXGGA6U',
             location: {
               name: 'Wilmington, NC (State Capitol in Raleigh did nothing)',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/coup.png',
+                alt: 'The 1898 Wilmington coup',
+              },
+            ],
           },
           {
             id: 'ral-dark-2',
@@ -958,6 +1224,12 @@ export const raleigh: CityData = {
               name: 'Wake County and surrounding areas',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/lynchings.png',
+                alt: 'Lynchings in Wake County and surrounding areas',
+              },
+            ],
           },
           {
             id: 'ral-dark-3',
@@ -972,6 +1244,12 @@ export const raleigh: CityData = {
               name: 'Central Prison, 1300 Western Blvd',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/central-prison.png',
+                alt: 'Central Prison, North Carolina\'s death house',
+              },
+            ],
           },
           {
             id: 'ral-dark-4',
@@ -986,6 +1264,12 @@ export const raleigh: CityData = {
               name: 'Central Prison, Raleigh',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/velma.png',
+                alt: 'Velma Barfield, the Death Row Granny',
+              },
+            ],
           },
           {
             id: 'ral-dark-5',
@@ -1000,6 +1284,12 @@ export const raleigh: CityData = {
               name: 'Raleigh neighborhoods',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/year-fear.png',
+                alt: 'The year of fear in Raleigh',
+              },
+            ],
           },
           {
             id: 'ral-dark-6',
@@ -1014,6 +1304,12 @@ export const raleigh: CityData = {
               name: 'Hedingham neighborhood / Neuse River Greenway',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/hedingham.png',
+                alt: 'Hedingham neighborhood and Neuse River Greenway',
+              },
+            ],
           },
           {
             id: 'ral-dark-7',
@@ -1028,6 +1324,12 @@ export const raleigh: CityData = {
               name: 'Mordecai Historic Park, 1 Mimosa St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/mordecai-house.png',
+                alt: 'The haunted Mordecai House',
+              },
+            ],
           },
           {
             id: 'ral-dark-8',
@@ -1042,6 +1344,12 @@ export const raleigh: CityData = {
               name: 'NC State Capitol, 1 E Edenton St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/capitol-ghost.png',
+                alt: 'The haunted North Carolina State Capitol',
+              },
+            ],
           },
           {
             id: 'ral-dark-9',
@@ -1056,6 +1364,12 @@ export const raleigh: CityData = {
               name: 'Oakwood Cemetery, 701 Oakwood Ave',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/spinnning-angel.png',
+                alt: 'The spinning angel of Oakwood Cemetery',
+              },
+            ],
           },
           {
             id: 'ral-dark-10',
@@ -1070,6 +1384,12 @@ export const raleigh: CityData = {
               name: 'Briggs Hardware Building, 220 Fayetteville St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/Raleigh/dark-history/briggs.png',
+                alt: 'Briggs Hardware Building and Grace\'s staircase',
+              },
+            ],
           },
         ],
       },
