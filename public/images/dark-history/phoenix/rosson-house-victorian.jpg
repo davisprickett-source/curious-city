@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta description="Heritage Square At Heritage And Science Park" />
+	
+		<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.5 - aioseo.com -->
+		<title> | Page not found</title>
+	<meta name="robots" content="noindex" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.5" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/thesquarephx.org#listItem","position":1,"name":"Home","item":"https:\/\/thesquarephx.org","nextItem":{"@type":"ListItem","@id":"#listItem","name":"404 Error: page not found"}}]},{"@type":"Organization","@id":"https:\/\/thesquarephx.org\/#organization","name":"The Square PHX Foundation","description":"Preserving the past, shaping the future.","url":"https:\/\/thesquarephx.org\/","logo":{"@type":"ImageObject","url":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2014\/07\/desktop-logo.png","@id":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/#organizationLogo"},"image":{"@id":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/#organizationLogo"},"sameAs":["https:\/\/www.facebook.com\/thesquarephx","https:\/\/twitter.com\/RossonHouse","https:\/\/www.instagram.com\/thesquarephx\/","https:\/\/www.pinterest.com\/heritagesquare\/","https:\/\/www.youtube.com\/@thesquarephx","https:\/\/www.linkedin.com\/company\/rosson-house-heritage-square-foundation\/"]},{"@type":"WebPage","@id":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/#webpage","url":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/thesquarephx.org\/#website"},"breadcrumb":{"@id":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/#breadcrumblist"}},{"@type":"WebSite","@id":"https:\/\/thesquarephx.org\/#website","url":"https:\/\/thesquarephx.org\/","name":"The Square PHX","description":"Preserving the past, shaping the future.","inLanguage":"en-US","publisher":{"@id":"https:\/\/thesquarephx.org\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.9.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-FR4KNW5PL2"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.9.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/thesquarephx.org\/wp-content\/uploads\/2019\/01\/rosson-house-front.jpg\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-FR4KNW5PL2',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-FR4KNW5PL2', {"forceSSL":"true","link_attribution":"true","page_path":'\/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+			
+							<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thesquarephx.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=aab702660e274a5dbbc967e891bd7854"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://thesquarephx.org/wp-includes/css/dist/block-library/style.min.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='child-styles-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/style.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/flexslider/flexslider.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/fancybox/dist/jquery.fancybox.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<link rel='stylesheet' id='leaflet-css-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/leaflet/dist/leaflet.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-nav-css-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/responsive-nav/responsive-nav.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css' href='https://thesquarephx.org/wp-content/themes/the-square-phx/dist/main.css?ver=aab702660e274a5dbbc967e891bd7854' type='text/css' media='all' />
+<script type="text/javascript" src="https://thesquarephx.org/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.9.0" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/thesquarephx.org","hash_tracking":"false","v4_id":"G-FR4KNW5PL2"};/* ]]> */
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=aab702660e274a5dbbc967e891bd7854" id="jquery-js"></script>
+<link rel="https://api.w.org/" href="https://thesquarephx.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thesquarephx.org/xmlrpc.php?rsd" />
+
+<meta name="et-api-version" content="v1"><meta name="et-api-origin" content="https://thesquarephx.org"><link rel="https://theeventscalendar.com/" href="https://thesquarephx.org/wp-json/tribe/tickets/v1/" /><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://thesquarephx.org"><link rel="alternate" href="https://thesquarephx.org/wp-json/tribe/events/v1/" /><link rel="icon" href="https://thesquarephx.org/wp-content/uploads/2025/02/cropped-The-Square-Logo_green-w-border_web-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://thesquarephx.org/wp-content/uploads/2025/02/cropped-The-Square-Logo_green-w-border_web-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thesquarephx.org/wp-content/uploads/2025/02/cropped-The-Square-Logo_green-w-border_web-180x180.png" />
+<meta name="msapplication-TileImage" content="https://thesquarephx.org/wp-content/uploads/2025/02/cropped-The-Square-Logo_green-w-border_web-270x270.png" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="https://thesquarephx.org/feed/atom/" />
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="The Square PHX" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/ctg4eoi.css">
+</head>
+<body class="error404 wp-theme-the-square-phx tribe-no-js tribe-theme-the-square-phx">
+	<div class="header-wrapper">
+		<header class="container" role="banner">
+			<div class="grid">
+				<div class="nav-wrapper unit one-of-one">
+					<nav class="nav-collapse">
+						<!-- <div class="social"> // MOVED TO FOOTER
+			        	    	<a href="https://www.facebook.com/Rosson-House-at-Historic-Heritage-Square-162609103793897/?ref=hl" target="_blank" class="icon-facebook"></a>
+			        	    	<a href="https://twitter.com/RossonHouse" target="_blank" class="icon-twitter"></a>
+			        	    	<a href="https://www.pinterest.com/heritagesquare/" target="_blank" class="icon-pinterest"></a>
+			        	    	<a href="https://www.instagram.com/heritagesquarephx/" target="_blank" class="icon-instagram"></a>
+			        	    </div> -->
+						<ul id="menu-primary-header-menu" class="menu"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71"><a href="https://thesquarephx.org/visit/">Your Visit</a>
+<ul class="sub-menu">
+	<li id="menu-item-32267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32267"><a href="https://thesquarephx.org/know-before-you-go/">Know Before You Go</a></li>
+	<li id="menu-item-20511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20511"><a href="https://thesquarephx.org/rossonhouse/">Rosson House Tours</a></li>
+	<li id="menu-item-29332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29332"><a href="https://thesquarephx.org/walking-tours/">Walking Tours</a></li>
+	<li id="menu-item-30200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30200"><a href="https://thesquarephx.org/happy-hour-tours/">Happy Hour Tours</a></li>
+	<li id="menu-item-26413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26413"><a href="https://thesquarephx.org/private-tours/">Private Group Tours</a></li>
+	<li id="menu-item-28392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28392"><a href="https://thesquarephx.org/learn/">Field Trips &#038; More</a></li>
+	<li id="menu-item-28066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28066"><a href="https://thesquarephx.org/rose-garden/">Our Memorial Rose Garden</a></li>
+	<li id="menu-item-29400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29400"><a href="https://thesquarephx.org/cats/">The Square&#8217;s Cats</a></li>
+	<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://thesquarephx.org/restaurants/">Restaurants at The Square</a></li>
+</ul>
+</li>
+<li id="menu-item-11655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11655"><a href="https://thesquarephx.org/learn/">Learn &#038; Explore</a>
+<ul class="sub-menu">
+	<li id="menu-item-27824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27824"><a href="https://thesquarephx.org/inside/">Inside Rosson House</a></li>
+	<li id="menu-item-28630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28630"><a href="https://thesquarephx.org/exhibits/">Exhibits &#038; Collections</a></li>
+	<li id="menu-item-32094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32094"><a href="https://thesquarephx.org/teen-stem-cafe/">Teen STEM Café @ the Square</a></li>
+	<li id="menu-item-30660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30660"><a href="https://thesquarephx.org/book-club/">Block 14 Book Club</a></li>
+	<li id="menu-item-19863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19863"><a href="https://thesquarephx.org/learn/history-at-home/">History at Home</a></li>
+	<li id="menu-item-20082" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20082"><a href="https://thesquarephx.org/news/">Our History Blog</a></li>
+	<li id="menu-item-27487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27487"><a href="https://thesquarephx.org/square-audio-tour/">Block 14 Audio Tour</a></li>
+</ul>
+</li>
+<li id="menu-item-25182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25182"><a href="https://thesquarephx.org/rentals/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-17904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17904"><a href="https://thesquarephx.org/events/">Calendar</a></li>
+	<li id="menu-item-25183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25183"><a href="https://thesquarephx.org/rentals/">Venue Rentals</a></li>
+	<li id="menu-item-31757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31757"><a href="https://thesquarephx.org/seances/">Séances &#038; Spiritualists Tours</a></li>
+	<li id="menu-item-28349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28349"><a href="https://thesquarephx.org/family-fun-days/">Family Fun Days</a></li>
+	<li id="menu-item-32771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32771"><a href="https://thesquarephx.org/faire-at-the-square/">Faire @ the Square</a></li>
+	<li id="menu-item-32005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32005"><a href="https://thesquarephx.org/galaxy-stem-fest/">Galaxy STEM Fest</a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://thesquarephx.org/film-and-photo-shoots/">Film &#038; Photo Shoots</a></li>
+</ul>
+</li>
+<li id="menu-item-16564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16564"><a href="https://thesquarephx.org/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-33902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33902"><a href="https://thesquarephx.org/membership/">Become a Member</a></li>
+	<li id="menu-item-30855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30855"><a href="https://thesquarephx.org/support/partner/">Become a Sponsor</a></li>
+	<li id="menu-item-19805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19805"><a href="https://thesquarephx.org/donate">Donate</a></li>
+	<li id="menu-item-28065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28065"><a href="https://thesquarephx.org/rose-garden-donations/">Support our Rose Garden</a></li>
+	<li id="menu-item-20997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20997"><a href="https://thesquarephx.org/volunteer/">Volunteer</a></li>
+	<li id="menu-item-28628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28628"><a href="https://thesquarephx.org/support-from-our-community/">Our Community</a></li>
+</ul>
+</li>
+<li id="menu-item-29619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29619"><a href="https://thesquarephx.org/museum-store/">Museum Store</a></li>
+<li id="menu-item-20996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20996"><a href="https://thesquarephx.org/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-26761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26761"><a href="https://thesquarephx.org/land-acknowledgment/">Land Acknowledgment</a></li>
+	<li id="menu-item-23944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23944"><a href="https://thesquarephx.org/about-us/">Staff &#038; Board</a></li>
+	<li id="menu-item-29525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29525"><a href="https://thesquarephx.org/jobs/">Job Opportunities</a></li>
+	<li id="menu-item-20998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20998"><a href="https://thesquarephx.org/press/">Press Room</a></li>
+	<li id="menu-item-21000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21000"><a href="https://thesquarephx.org/annual-reports/">Annual Report</a></li>
+	<li id="menu-item-23899" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23899"><a href="https://www.phoenix.gov/parks">City of Phoenix Parks &#038; Rec</a></li>
+</ul>
+</li>
+<li id="menu-item-25026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25026"><a href="https://thesquarephx.org/donate/">Donate</a></li>
+</ul>					</nav>
+					<div class="toggle-wrapper">
+						<div id="toggle" class="icon-menu"></div>
+						<!-- <div class="m-social">
+			        	    	<a href="https://www.facebook.com/pages/Rosson-House-Museum/302926538712" target="_blank" class="icon-m-facebook"></a>
+			        	    	<a href="https://twitter.com/RossonHouse" target="_blank" class="icon-m-twitter"></a>
+			        	    	<a href="https://www.pinterest.com/heritagesquare/" target="_blank" class="icon-m-pinterest"></a>
+			        	    	<a href="https://www.instagram.com/heritagesquarephx/" target="_blank" class="icon-m-instagram"></a>
+			        	    </div> -->
+						<a href="https://thesquarephx.org">
+							<div class="mobile-logo"></div>
+						</a>
+					</div>
+				</div>
+				<a href="https://thesquarephx.org">
+					<div class="desktop-logo"></div>
+				</a>
+			</div>
+		</header>
+	</div>
+		<div class="content-wrapper clearfix" role="main"> <!-- End Header -->
+		<section>
+			<h1 style="padding-top: 150px;">404: Page Not Found</h1>
+			<p>Looks like the page you're looking for isn't here anymore.</p>
+		</section>
+		
+		<div class="sidebar">
+</div>
+
+		</div> <!-- End .content-wrapper -->
+
+		<div class="footer-width-wrapper">
+			<div class="footer-wrapper">
+				<footer class="container">
+					<div class="grid">
+						<div class="unit address-wrapper one-of-four">
+							<div class="address">
+								<h3>The Square PHX</h3>
+																	<p>113 N. Sixth St.<br />
+Phoenix, AZ 85004<br />
+Tickets &amp; Museum Store &#8211;<br />
+(602) 258-0048<br />
+Office &#8211; (602) 388-8090</p>
+<p><a href="https://forms.gle/Z6Y2omfVLHK4b9uM7">Contact Us</a></p>
+<p><a href="https://thesquarephx.org/email-list/"><strong>Sign up for our Emails</strong></a></p>
+<p>&nbsp;</p>
+<p><a href="https://azarts.gov/"><img class="aligncenter wp-image-34093" src="http://thesquarephx.org/wp-content/uploads/2025/10/AZ-COMM-ARTS_Primary_white-300x69.png" alt="" width="100" height="23" /></a></p>
+															</div>
+						</div>
+						<div class="unit hours-info-wrapper one-of-four">
+							<div class="hours-info">
+								<h3>2025 Hours Information</h3>
+																	<p style="text-align: left;">Visit our <span style="text-decoration: underline;"><a href="https://thesquarephx.org/rossonhouse/">Rosson House</a></span> webpage for museum hours and tour information.</p>
+<p>&nbsp;</p>
+<p><strong>Thank you to these local organizations for their grants supporting our organization.</strong></p>
+<p>&nbsp;</p>
+<p><a href="https://azhumanities.org/"><img class="wp-image-28791 aligncenter" src="https://thesquarephx.org/wp-content/uploads/2023/06/azh_vert.png" alt="Arizona Humanities logo" width="100" height="45" /></a></p>
+															</div>
+						</div>
+						<div class="unit links-wrapper one-of-four">
+							<div class="links">
+								<h3>Links</h3>
+																	<p><a href="https://thesquarephx.org/rossonhouse/">Tours</a><br />
+<a href="https://thesquarephx.org/membership">Memberships</a><br />
+<a href="/press/">Press</a><br />
+<a href="/film-and-photo-shoots/">Photography</a><br />
+<a href="/jobs/">Jobs</a><br />
+<a href="/land-acknowledgment/">Land Acknowledgment</a><br />
+<a href="https://www.phoenix.gov/parks/">City of Phoenix Parks</a></p>
+<p><a href="https://thesquarephx.org/board-portal/">Board Portal</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.phoenix.gov/arts"><img class="wp-image-28793 aligncenter" src="https://thesquarephx.org/wp-content/uploads/2023/06/POAC-logo-2017-all-white.png" alt="City of Phoenix Office of Arts and Culture Logo" width="100" height="54" /></a></p>
+															</div>
+						</div>
+						<div class="unit button-wrapper one-of-four">
+							<!-- <a href="https://shop.thesquarephx.org/donate"> -->
+							<a href="https://thesquarephx.org/donate">
+								<div class="button">
+									
+									<span class="button__text">Donate</span>
+									
+								</div>
+							</a>
+
+
+							<!-- ADDED SOCIAL ICONS TO FOOTER -->
+							<div class="nav-wrapper unit one-of-one">
+								<nav class="nav-collapseXX">
+									<div class="social">
+										<a href="https://www.facebook.com/thesquarephx/" target="_blank" class="icon-facebook">Facebook</a>
+										<a href="https://www.instagram.com/thesquarephx/" target="_blank" class="icon-instagram">Instagram</a>
+										<a href="http://tiktok.com/@thesquarephx" target="_blank" class="icon-tiktok">Tiktok</a>
+										<a href="https://www.youtube.com/@thesquarephx" target="_blank" class="icon-youtube">YouTube</a>
+									</div>
+									<!-- <ul id="menu-primary-header-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-71"><a href="https://thesquarephx.org/visit/">Your Visit</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32267"><a href="https://thesquarephx.org/know-before-you-go/">Know Before You Go</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20511"><a href="https://thesquarephx.org/rossonhouse/">Rosson House Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29332"><a href="https://thesquarephx.org/walking-tours/">Walking Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30200"><a href="https://thesquarephx.org/happy-hour-tours/">Happy Hour Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26413"><a href="https://thesquarephx.org/private-tours/">Private Group Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28392"><a href="https://thesquarephx.org/learn/">Field Trips &#038; More</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28066"><a href="https://thesquarephx.org/rose-garden/">Our Memorial Rose Garden</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29400"><a href="https://thesquarephx.org/cats/">The Square&#8217;s Cats</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://thesquarephx.org/restaurants/">Restaurants at The Square</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11655"><a href="https://thesquarephx.org/learn/">Learn &#038; Explore</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27824"><a href="https://thesquarephx.org/inside/">Inside Rosson House</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28630"><a href="https://thesquarephx.org/exhibits/">Exhibits &#038; Collections</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32094"><a href="https://thesquarephx.org/teen-stem-cafe/">Teen STEM Café @ the Square</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30660"><a href="https://thesquarephx.org/book-club/">Block 14 Book Club</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19863"><a href="https://thesquarephx.org/learn/history-at-home/">History at Home</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20082"><a href="https://thesquarephx.org/news/">Our History Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27487"><a href="https://thesquarephx.org/square-audio-tour/">Block 14 Audio Tour</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25182"><a href="https://thesquarephx.org/rentals/">Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17904"><a href="https://thesquarephx.org/events/">Calendar</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25183"><a href="https://thesquarephx.org/rentals/">Venue Rentals</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31757"><a href="https://thesquarephx.org/seances/">Séances &#038; Spiritualists Tours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28349"><a href="https://thesquarephx.org/family-fun-days/">Family Fun Days</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32771"><a href="https://thesquarephx.org/faire-at-the-square/">Faire @ the Square</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32005"><a href="https://thesquarephx.org/galaxy-stem-fest/">Galaxy STEM Fest</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://thesquarephx.org/film-and-photo-shoots/">Film &#038; Photo Shoots</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16564"><a href="https://thesquarephx.org/support/">Support</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33902"><a href="https://thesquarephx.org/membership/">Become a Member</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30855"><a href="https://thesquarephx.org/support/partner/">Become a Sponsor</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19805"><a href="https://thesquarephx.org/donate">Donate</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28065"><a href="https://thesquarephx.org/rose-garden-donations/">Support our Rose Garden</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20997"><a href="https://thesquarephx.org/volunteer/">Volunteer</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28628"><a href="https://thesquarephx.org/support-from-our-community/">Our Community</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29619"><a href="https://thesquarephx.org/museum-store/">Museum Store</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20996"><a href="https://thesquarephx.org/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26761"><a href="https://thesquarephx.org/land-acknowledgment/">Land Acknowledgment</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23944"><a href="https://thesquarephx.org/about-us/">Staff &#038; Board</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29525"><a href="https://thesquarephx.org/jobs/">Job Opportunities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20998"><a href="https://thesquarephx.org/press/">Press Room</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21000"><a href="https://thesquarephx.org/annual-reports/">Annual Report</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23899"><a href="https://www.phoenix.gov/parks">City of Phoenix Parks &#038; Rec</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25026"><a href="https://thesquarephx.org/donate/">Donate</a></li>
+</ul> -->
+								</nav>
+								<div class="toggle-wrapper">
+									<div id="toggle" class="icon-menu"></div>
+									<div class="m-social">
+										<a href="https://www.facebook.com/pages/Rosson-House-Museum/302926538712" target="_blank" class="icon-m-facebook"></a>
+										<a href="https://twitter.com/RossonHouse" target="_blank" class="icon-m-twitter"></a>
+										<a href="https://www.pinterest.com/heritagesquare/" target="_blank" class="icon-m-pinterest"></a>
+										<a href="https://www.instagram.com/heritagesquarephx/" target="_blank" class="icon-m-instagram"></a>
+									</div>
+									<a href="https://thesquarephx.org">
+										<div class="mobile-logo"></div>
+									</a>
+								</div>
+							</div>
+							<!-- END SOCIAL ICONS -->
+
+
+
+						</div>
+						<div class="unit copy one-of-one">
+							<p>&copy; 2025 The Square PHX. All rights reserved.</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/the-square-phx\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"},"registration_prompt":"There is unsaved attendee information. Are you sure you want to continue?"};/* ]]> */ </script><script type="text/javascript" src="https://thesquarephx.org/wp-content/themes/the-square-phx/src/js/modernizr.custom.85380.js?ver=aab702660e274a5dbbc967e891bd7854" id="modernizr-js-js"></script>
+<script type="text/javascript" src="https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/flexslider/jquery.flexslider.js?ver=aab702660e274a5dbbc967e891bd7854" id="flexslider-js-js"></script>
+<script type="text/javascript" src="https://thesquarephx.org/wp-content/themes/the-square-phx/bower_components/fancybox/dist/jquery.fancybox.js?ver=aab702660e274a5dbbc967e891bd7854" id="fancybox-js-js"></script>
+<script type="text/javascript" src="https://thesquarephx.org/wp-content/themes/the-square-phx/dist/main.js?ver=1.0.0" id="main-js-js"></script>
+<script type="text/javascript" src="https://thesquarephx.org/wp-content/themes/the-square-phx/src/js/public/script.js?ver=aab702660e274a5dbbc967e891bd7854" id="responsive-nav-js-js"></script>
+<!-- required don't remove -->
+
+		</body>
+
+		</html>

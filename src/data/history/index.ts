@@ -13,6 +13,11 @@ import { tampa_history } from './tampa'
 import { phoenix_history } from './phoenix'
 import { portland_history } from './portland'
 
+// Premium history essays
+import { minneapolis_premium_history } from './premium/minneapolis'
+import { tampa_premium_history } from './premium/tampa'
+import { phoenix_premium_history } from './premium/phoenix'
+
 // Re-export individual history collections
 export { minneapolis_history }
 export { fargo_history }
@@ -27,9 +32,9 @@ export { tampa_history }
 export { phoenix_history }
 export { portland_history }
 
-// Combined history index
+// Combined history index (includes both regular and premium)
 export const history: HistoryIndex = {
-  'minneapolis': minneapolis_history,
+  'minneapolis': { ...minneapolis_history, ...minneapolis_premium_history },
   'fargo': fargo_history,
   'raleigh': raleigh_history,
   'chicago': chicago_history,
@@ -38,8 +43,8 @@ export const history: HistoryIndex = {
   'dallas': dallas_history,
   'anchorage': anchorage_history,
   'denver': denver_history,
-  'tampa': tampa_history,
-  'phoenix': phoenix_history,
+  'tampa': { ...tampa_history, ...tampa_premium_history },
+  'phoenix': { ...phoenix_history, ...phoenix_premium_history },
   'portland': portland_history,
 }
 

@@ -68,9 +68,8 @@ export const portland: CityData = {
             body: 'Oregon\'s original 1857 constitution included a black exclusion clause—one of only two states to enter the Union with such a provision. It wasn\'t formally removed until 1926. Portland\'s progressive reputation coexists with one of the whitest populations of any major American city (77% white). The reckoning with this history is ongoing and contentious.',
             year: '1857',
             image: {
-              src: 'https://images.unsplash.com/photo-1536183922588-166604504d5e?w=800&q=80',
-              alt: 'Portland historic district',
-              credit: 'Unsplash',
+              src: '/Portland/curiosities/black-exclusion.png',
+              alt: 'Oregon black exclusion laws historical document',
             },
             source: 'Oregon Historical Society',
             location: {
@@ -85,9 +84,8 @@ export const portland: CityData = {
             title: 'The Shanghai Tunnels may be partly myth',
             body: 'Legend says underground tunnels beneath Old Town were used to kidnap men and sell them to ship captains needing crews—a practice called "shanghaiing." The tunnels exist, and shanghaiing definitely happened in Portland. But historians debate whether the tunnels were actually used for kidnapping or just for moving cargo. Tour operators prefer the dramatic version.',
             image: {
-              src: 'https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&q=80',
-              alt: 'Underground tunnel',
-              credit: 'Unsplash',
+              src: '/Portland/curiosities/shanghai-tunnels.png',
+              alt: 'Underground Shanghai tunnels in Portland Old Town',
             },
             source: 'Oregon Encyclopedia',
             location: {
@@ -107,6 +105,10 @@ export const portland: CityData = {
             title: 'D.B. Cooper may have landed near Portland',
             body: 'In 1971, a man calling himself D.B. Cooper hijacked a plane, collected $200,000 ransom, and parachuted into the night somewhere over southwestern Washington—possibly near the Portland suburbs. He was never found. In 1980, a boy found $5,800 of the ransom money buried along the Columbia River near Portland. The case remains the only unsolved hijacking in American aviation history.',
             year: '1971',
+            image: {
+              src: '/Portland/curiosities/DB-Cooper.png',
+              alt: 'D.B. Cooper hijacking over Portland area',
+            },
             source: 'FBI records',
             location: {
               name: 'Columbia River area',
@@ -121,9 +123,8 @@ export const portland: CityData = {
             body: 'Mill Ends Park, located in a median on SW Naito Parkway, is officially 2 feet in diameter—the world\'s smallest park according to Guinness World Records. Journalist Dick Fagan created it in 1948 after a light pole was never installed in the hole. He planted flowers and wrote stories about leprechauns who lived there. The city made it an official park in 1976.',
             year: '1948',
             image: {
-              src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-              alt: 'Portland street with parks',
-              credit: 'Unsplash',
+              src: '/Portland/curiosities/Mill-Ends-Park.png',
+              alt: 'Mill Ends Park, the world\'s smallest park in Portland',
             },
             source: 'Guinness World Records',
             location: {
@@ -137,6 +138,10 @@ export const portland: CityData = {
             category: 'science',
             title: 'Portland gets less rain than NYC or Miami',
             body: 'Portland averages 36 inches of rain annually—less than New York (46"), Houston (50"), or Miami (62"). The reputation comes from frequency, not quantity: it drizzles steadily from October to June instead of dumping rain all at once. Real Portlanders don\'t carry umbrellas; they wear layers and accept dampness as a lifestyle.',
+            image: {
+              src: '/Portland/curiosities/Portland-Rain.png',
+              alt: 'Rainy day in Portland with people without umbrellas',
+            },
             source: 'National Weather Service',
             location: {
               name: 'Portland',
@@ -156,9 +161,8 @@ export const portland: CityData = {
             body: 'The Vanport Flood of 1948 destroyed Oregon\'s second-largest city in a single afternoon. Vanport, a WWII housing project for shipyard workers, was home to 18,500 people—including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed and the city was underwater in 35 minutes. 15 people died; thousands lost everything. The flood reshaped Portland\'s demographics for decades.',
             year: '1948',
             image: {
-              src: 'https://images.unsplash.com/photo-1547683905-f686c993aae5?w=800&q=80',
-              alt: 'Columbia River flood plain',
-              credit: 'Unsplash',
+              src: '/Portland/curiosities/Portland-Flood.png',
+              alt: 'Vanport flood destruction in 1948',
             },
             source: 'Oregon Historical Society',
             location: {
@@ -173,6 +177,10 @@ export const portland: CityData = {
             title: 'Oregon banned self-service gas for 72 years',
             body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Attendants pumped for you at every station. The stated reasons were fire safety and job preservation. When the law finally changed in 2024 to allow limited self-service, some Oregonians panicked—genuinely unsure how to operate a gas pump. Rural areas had already been exempt since 2018.',
             year: '2024',
+            image: {
+              src: '/Portland/curiosities/Portland-gas-service.png',
+              alt: 'Oregon gas station attendant filling car',
+            },
             source: 'Oregon Legislature',
             location: {
               name: 'State of Oregon',
@@ -185,11 +193,16 @@ export const portland: CityData = {
             category: 'culture',
             title: 'Powell\'s City of Books occupies an entire city block',
             body: 'The world\'s largest independent bookstore holds over a million books across 68,000 square feet—an entire city block. They provide maps at the entrance because visitors genuinely get lost. The store mixes new and used books on the same shelves. A generation of Portlanders grew up treating Powell\'s as a second home.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80',
-              alt: 'Bookstore shelves filled with books',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: '/Portland/curiosities/Powells-books-1.png',
+                alt: 'Powell\'s City of Books exterior on full city block',
+              },
+              {
+                src: '/Portland/curiosities/powells-books-2.png',
+                alt: 'Interior of Powell\'s Books with color-coded rooms',
+              },
+            ],
             source: 'Powell\'s Books',
             location: {
               name: 'Powell\'s City of Books',
@@ -202,11 +215,20 @@ export const portland: CityData = {
             category: 'nature',
             title: 'Forest Park is one of the largest urban forests in America',
             body: 'Forest Park covers 5,200 acres with 80+ miles of trails—one of the largest urban forests in the United States. You can encounter old-growth Douglas firs, elk, and lose sight of the city entirely, all within Portland city limits. The Wildwood Trail stretches 30 miles through the park. Locals take it for granted until they move somewhere else.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&q=80',
-              alt: 'Forest Park trail through old growth forest',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: '/Portland/curiosities/park-1.png',
+                alt: 'Forest Park trail through old growth Douglas firs',
+              },
+              {
+                src: '/Portland/curiosities/park-2.png',
+                alt: 'Wildwood Trail winding through Forest Park',
+              },
+              {
+                src: '/Portland/curiosities/park-3.png',
+                alt: 'Forest Park urban forest canopy',
+              },
+            ],
             source: 'Forest Park Conservancy',
             location: {
               name: 'Forest Park',
@@ -220,6 +242,10 @@ export const portland: CityData = {
             title: 'The city was named by a coin flip',
             body: 'In 1845, the city\'s two founders—one from Portland, Maine, and one from Boston—flipped a coin to name their new settlement. Portland won. Had the coin landed differently, you\'d be reading about Boston, Oregon. The original copper cent is on display at the Oregon Historical Society.',
             year: '1845',
+            image: {
+              src: '/Portland/curiosities/coin-flip.png',
+              alt: 'The Portland Penny that decided the city\'s name',
+            },
             source: 'Oregon Historical Society',
             location: {
               name: 'Portland',
@@ -233,6 +259,10 @@ export const portland: CityData = {
             title: 'The Tualatin Mastodon is 10,000 years old',
             body: 'In 1962, a farmer near Tualatin found mastodon bones in his field. The skeleton, dating to 10,000 years ago, had cut marks consistent with human butchering—evidence that humans and mastodons coexisted in the Portland area. The Tualatin Mastodon is now at the Oregon Museum of Science and Industry.',
             year: '1962',
+            image: {
+              src: '/Portland/curiosities/bones.png',
+              alt: 'Tualatin Mastodon skeleton at OMSI',
+            },
             source: 'Oregon Museum of Science and Industry',
             location: {
               name: 'OMSI',
@@ -246,6 +276,10 @@ export const portland: CityData = {
             title: 'Portland pioneers craft beer before it had a name',
             body: 'Widmer Brothers and BridgePort Brewing opened in 1984, years before "craft beer" was a term. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, held annually since 1988, is one of the largest outdoor craft beer events in the country.',
             year: '1984',
+            image: {
+              src: '/Portland/curiosities/beer.png',
+              alt: 'Portland craft beer scene with local breweries',
+            },
             source: 'Oregon Brewers Guild',
             location: {
               name: 'Portland',
@@ -259,11 +293,16 @@ export const portland: CityData = {
             title: 'The city demolished a freeway and built a park',
             body: 'In 1974, Portland demolished Harbor Drive—a freeway running along the Willamette River—and replaced it with Tom McCall Waterfront Park. It was one of the first urban freeway removals in American history and became a model for other cities. The 36-acre park now hosts festivals and serves as Portland\'s civic front yard.',
             year: '1974',
-            image: {
-              src: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80',
-              alt: 'Portland waterfront park',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: '/Portland/curiosities/highway-park-1.png',
+                alt: 'Harbor Drive freeway before demolition',
+              },
+              {
+                src: '/Portland/curiosities/highway-park-2.png',
+                alt: 'Tom McCall Waterfront Park after freeway removal',
+              },
+            ],
             source: 'Portland Parks & Recreation',
             location: {
               name: 'Tom McCall Waterfront Park',
@@ -277,6 +316,10 @@ export const portland: CityData = {
             title: 'Voodoo Doughnut was weird before it was famous',
             body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was genuinely strange. They briefly offered a Pepto-Bismol donut and a donut with Nyquil frosting before the FDA intervened. Now there are locations in multiple states, the lines are full of tourists, and locals have moved on to Blue Star or Pip\'s Original.',
             year: '2003',
+            image: {
+              src: '/Portland/curiosities/voodoo.png',
+              alt: 'Voodoo Doughnut shop in Portland Old Town',
+            },
             source: 'Voodoo Doughnut',
             location: {
               name: 'Voodoo Doughnut Old Town',
@@ -289,6 +332,10 @@ export const portland: CityData = {
             category: 'culture',
             title: 'Portland\'s music scene has always punched above its weight',
             body: 'Elliott Smith, The Decemberists, Modest Mouse, Sleater-Kinney, Everclear, Pink Martini, The Shins—Portland has produced disproportionate musical talent for a city its size. The Crystal Ballroom has hosted acts since 1914. The all-ages venue scene in the \'90s and 2000s incubated a generation of indie rock. K Records in nearby Olympia created a Pacific Northwest musical ecosystem.',
+            image: {
+              src: '/Portland/curiosities/music-scene.png',
+              alt: 'Portland music venue scene and indie rock history',
+            },
             source: 'Oregon Music Hall of Fame',
             location: {
               name: 'Portland',
@@ -298,20 +345,23 @@ export const portland: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro: 'These are Portland\'s landmarks — the places that define the city. Famous for good reason.',
         items: [
           {
-            id: 'pdx-gem-1',
-            type: 'hidden-gem',
+            id: 'iconic-1',
+            type: 'iconic-spot',
             name: 'Powell\'s City of Books',
             category: 'Bookstore',
             description: 'The world\'s largest independent bookstore, occupying an entire city block. New and used books mixed together on the same shelves. Multiple rooms organized by color. Maps provided at entry.',
-            image: {
-              src: '/images/gems/powells.jpg',
-              alt: 'Powell\'s Books interior with towering shelves',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80',
+                alt: 'Powell\'s Books interior with towering shelves',
+              },
+            ],
             address: '1005 W Burnside St, Portland, OR 97209',
             coordinates: { lat: 45.5231, lng: -122.6811 },
             hours: 'Daily 10am-9pm',
@@ -320,15 +370,17 @@ export const portland: CityData = {
             tip: 'The rare book room upstairs is worth a visit',
           },
           {
-            id: 'pdx-gem-2',
-            type: 'hidden-gem',
+            id: 'iconic-2',
+            type: 'iconic-spot',
             name: 'Japanese Garden',
             category: 'Garden',
             description: 'One of the most authentic Japanese gardens outside Japan, designed by Professor Takuma Tono. The walk up through Washington Park is part of the experience.',
-            image: {
-              src: '/images/gems/japanese-garden.jpg',
-              alt: 'Portland Japanese Garden',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80',
+                alt: 'Portland Japanese Garden',
+              },
+            ],
             address: '611 SW Kingston Ave, Portland, OR 97205',
             coordinates: { lat: 45.5189, lng: -122.7067 },
             hours: 'Daily 10am-4pm (varies by season)',
@@ -337,20 +389,22 @@ export const portland: CityData = {
             tip: 'Go on a weekday morning for the most peaceful experience',
           },
           {
-            id: 'pdx-gem-ad-1',
+            id: 'iconic-ad-1',
             type: 'ad',
             size: 'banner',
           },
           {
-            id: 'pdx-gem-3',
-            type: 'hidden-gem',
+            id: 'iconic-3',
+            type: 'iconic-spot',
             name: 'Forest Park',
             category: 'Nature',
             description: 'Over 5,200 acres of urban forest with 80+ miles of trails. The Wildwood Trail stretches 30 miles through the park. You can be surrounded by old-growth Douglas firs within minutes of downtown.',
-            image: {
-              src: '/images/gems/forest-park.jpg',
-              alt: 'Trail through Forest Park',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+                alt: 'Trail through Forest Park',
+              },
+            ],
             address: 'Multiple trailheads; Pittock Mansion is a good start',
             coordinates: { lat: 45.5395, lng: -122.7167 },
             hours: '5am-10pm daily',
@@ -358,31 +412,17 @@ export const portland: CityData = {
             tip: 'The hike from Lower Macleay Park to Pittock Mansion is the classic route',
           },
           {
-            id: 'pdx-gem-4',
-            type: 'hidden-gem',
-            name: 'Mississippi Avenue',
-            category: 'Neighborhood',
-            description: 'A strip of independent boutiques, record stores, bars, and restaurants in North Portland. Less touristy than Alberta Street but similarly curated. The Rebuilding Center is a sustainable salvage treasure.',
-            image: {
-              src: '/images/gems/mississippi-ave.jpg',
-              alt: 'Mississippi Avenue storefronts',
-            },
-            address: 'N Mississippi Ave between Fremont and Skidmore',
-            coordinates: { lat: 45.5497, lng: -122.6756 },
-            hours: 'Businesses vary',
-            price: 'Free to explore',
-            tip: 'Prost! for German beer, Interurban for cocktails',
-          },
-          {
-            id: 'pdx-gem-5',
-            type: 'hidden-gem',
+            id: 'iconic-4',
+            type: 'iconic-spot',
             name: 'Multnomah Falls',
             category: 'Nature',
             description: 'A 620-foot waterfall about 30 minutes from downtown. Oregon\'s most-visited attraction for good reason. The bridge at the first level is iconic; the hike to the top is worth it.',
-            image: {
-              src: '/images/gems/multnomah-falls.jpg',
-              alt: 'Multnomah Falls with bridge',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1518623001395-125242310d0c?w=800&q=80',
+                alt: 'Multnomah Falls with bridge',
+              },
+            ],
             address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
             coordinates: { lat: 45.5762, lng: -122.1158 },
             hours: 'Dawn to dusk',
@@ -391,26 +431,335 @@ export const portland: CityData = {
             tip: 'Go early or late to avoid the crowds',
           },
           {
-            id: 'pdx-gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'pdx-gem-6',
-            type: 'hidden-gem',
+            id: 'iconic-5',
+            type: 'iconic-spot',
             name: 'Lan Su Chinese Garden',
             category: 'Garden',
             description: 'An authentic Suzhou-style garden built by Chinese artisans in Old Town Chinatown. The teahouse serves traditional Chinese tea with views of the garden.',
-            image: {
-              src: '/images/gems/lan-su-garden.jpg',
-              alt: 'Lan Su Chinese Garden pavilion',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1519552928677-a0f6e8107a12?w=800&q=80',
+                alt: 'Lan Su Chinese Garden pavilion',
+              },
+            ],
             address: '239 NW Everett St, Portland, OR 97209',
             coordinates: { lat: 45.5256, lng: -122.6728 },
             hours: 'Daily 10am-6pm (varies by season)',
             price: '$14 adults',
             website: 'https://lansugarden.org',
             tip: 'The tea service is worth the extra cost',
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and the world\'s smallest park. This is where Portland gets genuinely obscure.',
+        items: [
+          {
+            id: 'gem-underground-1',
+            type: 'hidden-gem',
+            name: 'Kelly Butte Cold War Bunker',
+            category: 'Underground',
+            description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
+            images: [
+              {
+                src: '/portland/hidden-gems/bunker-1.png',
+                alt: 'Kelly Butte Cold War bunker exterior',
+              },
+              {
+                src: '/portland/hidden-gems/bunker-2.png',
+                alt: 'Kelly Butte Cold War bunker entrance',
+              },
+            ],
+            address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
+            coordinates: { lat: 45.4975, lng: -122.5592 },
+            hours: 'Not accessible (sealed)',
+            price: 'N/A',
+            accessibility: 'Completely sealed and buried',
+          },
+          {
+            id: 'gem-underground-2',
+            type: 'hidden-gem',
+            name: 'Old Town Pizza Shanghai Tunnels',
+            category: 'Underground',
+            description: 'The 1880 luxury Merchant Hotel lobby is now Old Town Pizza, built directly above Portland\'s Shanghai Tunnels. Tours go into the shadowy basement connecting to underground pathways allegedly used for "shanghaiing" sailors. Named one of America\'s Most Haunted Places.',
+            images: [
+              {
+                src: '/portland/curiosities/shanghai-tunnels.png',
+                alt: 'Shanghai Tunnels beneath Old Town',
+              },
+            ],
+            address: '226 NW Davis St, Portland, OR 97209',
+            coordinates: { lat: 45.5244, lng: -122.6728 },
+            hours: 'Tours by reservation',
+            price: 'Tour prices vary',
+            website: 'https://shanghaitunnels.com',
+            tip: 'Book the evening ghost tour for the full experience',
+          },
+          {
+            id: 'gem-ad-1',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'gem-history-1',
+            type: 'hidden-gem',
+            name: 'Lone Fir Cemetery - Block 14',
+            category: 'Historic Mystery',
+            description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
+            images: [
+              {
+                src: '/portland/hidden-gems/cemetery.png',
+                alt: 'Lone Fir Cemetery Block 14 unmarked area',
+              },
+            ],
+            address: 'SE 26th Ave & Stark St, Portland, OR 97214',
+            coordinates: { lat: 45.5206, lng: -122.6397 },
+            hours: 'Cemetery open daily dawn-dusk',
+            price: 'Free',
+            tip: 'Look for the paved-over section - a sobering piece of forgotten history',
+          },
+          {
+            id: 'gem-history-2',
+            type: 'hidden-gem',
+            name: 'Willamette Stone',
+            category: 'Historic Monument',
+            description: 'The "Initial Point" for ALL land surveys in Oregon and Washington. Original red cedar stake placed June 4, 1851. Tucked away in dense West Hills forest on a narrow, easily-missed winding path off Skyline Boulevard. One of Oregon\'s most important historical landmarks that is also one of its least known.',
+            images: [
+              {
+                src: '/portland/hidden-gems/stone.png',
+                alt: 'Willamette Stone survey marker',
+              },
+            ],
+            address: 'Skyline Blvd, Portland, OR 97231',
+            coordinates: { lat: 45.5425, lng: -122.7697 },
+            hours: 'Park open daily',
+            price: 'Free',
+            tip: 'Very easy to miss - look for small parking area on Skyline',
+          },
+          {
+            id: 'gem-history-3',
+            type: 'hidden-gem',
+            name: 'Ota Tofu',
+            category: 'Historic Site',
+            description: 'America\'s oldest tofu shop, opened 1911. During WWII internment, co-owner Saizo Ohta died at Minidoka camp. The building owner held the property until his wife Shina returned from internment in 1945, allowing Ota Tofu to restart. A remarkable story of resilience and compassion.',
+            images: [
+              {
+                src: '/portland/hidden-gems/ota-tofu.png',
+                alt: 'Ota Tofu shop',
+              },
+            ],
+            address: '529 SE Grand Ave, Portland, OR 97214',
+            coordinates: { lat: 45.5167, lng: -122.6606 },
+            hours: 'Mon-Sat 8am-5pm',
+            price: 'Fresh tofu $3-5',
+            website: 'https://www.otatofu.com',
+            tip: 'Buy fresh tofu and support this historic family business',
+          },
+          {
+            id: 'gem-museums-1',
+            type: 'hidden-gem',
+            name: 'Zymoglyphic Museum',
+            category: 'Unusual Museum',
+            description: 'DIY museum over artist Jim Stewart\'s garage in Mt. Tabor presenting "relics of the Zymoglyphic age" - sculptures and dioramas of fictional creatures made from found objects like driftwood and skulls. By appointment only, truly grassroots.',
+            images: [
+              {
+                src: '/portland/hidden-gems/museum.png',
+                alt: 'Zymoglyphic Museum diorama',
+              },
+            ],
+            address: 'Mt. Tabor neighborhood (exact address provided upon appointment)',
+            coordinates: { lat: 45.5122, lng: -122.5931 },
+            hours: 'By appointment only',
+            price: 'Free',
+            website: 'http://www.zymoglyphic.org',
+            tip: 'Email ahead to arrange a private tour',
+          },
+          {
+            id: 'gem-museums-2',
+            type: 'hidden-gem',
+            name: 'National Hat Museum',
+            category: 'Specialty Museum',
+            description: 'Only hat museum in America, located in historic Edwardian home near Ladd Circle. Over 2,300 hats on display dating back to 1800s. Tour by appointment only, limited to 5 people per 90-minute tour. Includes rare "Audobonnet" and 130-year-old beaver-fur felt top hats.',
+            images: [
+              {
+                src: '/portland/hidden-gems/hat-museum.png',
+                alt: 'National Hat Museum collection',
+              },
+            ],
+            address: '1928 SE Ladd Ave, Portland, OR 97214',
+            coordinates: { lat: 45.5083, lng: -122.6447 },
+            hours: 'By appointment only',
+            price: '$15',
+            website: 'https://thehatmuseum.com',
+            tip: 'Book weeks in advance - tours fill quickly',
+          },
+          {
+            id: 'gem-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'gem-museums-3',
+            type: 'hidden-gem',
+            name: 'Stark\'s Vacuum Museum',
+            category: 'Niche Collection',
+            description: 'Tiny 10x40 foot section inside vacuum store with over 300 vacuum models from late-1800s to 1960s. Averages only a dozen visitors per month. Includes oldest piece: two-person hand-pumped wood and steel vacuum from 1800s. Free admission.',
+            images: [
+              {
+                src: '/portland/hidden-gems/vacuum.png',
+                alt: 'Stark\'s Vacuum Museum',
+              },
+            ],
+            address: '107 NE Grand Ave, Portland, OR 97232',
+            coordinates: { lat: 45.5236, lng: -122.6606 },
+            hours: 'Mon-Sat 9am-5:30pm',
+            price: 'Free',
+            website: 'https://www.starksvacuum.com',
+            tip: 'Ask staff to show you the museum section - easy to miss',
+          },
+          {
+            id: 'gem-quirky-1',
+            type: 'hidden-gem',
+            name: 'Woodstock Mystery Hole',
+            category: 'Backyard Oddity',
+            description: 'Run by "Pastor Barron" of the Universal Church O\' Fun. Features "Black Obsidian Mirror of Higher Truth" portal and narrow tunnel that tapers to point. Exact location kept secret - requires polite email to arrange tour. Pure Portland absurdist whimsy.',
+            images: [
+              {
+                src: '/portland/hidden-gems/mystery-hole.png',
+                alt: 'Woodstock Mystery Hole entrance',
+              },
+            ],
+            address: 'Woodstock neighborhood (exact location revealed upon booking)',
+            coordinates: { lat: 45.4797, lng: -122.6147 },
+            hours: 'By email arrangement only',
+            price: 'Donation requested',
+            tip: 'Email ahead with respectful inquiry',
+          },
+          {
+            id: 'gem-quirky-2',
+            type: 'hidden-gem',
+            name: 'Rimsky-Korsakoffee House',
+            category: 'Quirky Cafe',
+            description: 'No exterior sign, hidden by heavy foliage in unassuming 1902 Craftsman house. Operating since 1980, tables named after dead composers that are "haunted" - they rotate, vibrate, elevate, and tilt almost imperceptibly until your dessert is out of reach.',
+            images: [
+              {
+                src: '/portland/hidden-gems/cafe-house-1.png',
+                alt: 'Rimsky-Korsakoffee House exterior',
+              },
+              {
+                src: '/portland/hidden-gems/cafe-house-2.png',
+                alt: 'Rimsky-Korsakoffee House interior',
+              },
+            ],
+            address: '707 SE 12th Ave, Portland, OR 97214',
+            coordinates: { lat: 45.5158, lng: -122.6536 },
+            hours: 'Wed-Sun 7pm-midnight',
+            price: '$',
+            tip: 'Order dessert and watch the table slowly tilt',
+          },
+          {
+            id: 'gem-quirky-3',
+            type: 'hidden-gem',
+            name: 'Portland Troll Bridge',
+            category: 'Folk Art',
+            description: 'Old railway trestle 15 miles from city center covered underneath with hundreds of small plastic trolls - the kind with bright colored hair sticking up. Definitely weirder than Seattle\'s famous Fremont Troll.',
+            images: [
+              {
+                src: '/portland/hidden-gems/troll.png',
+                alt: 'Portland Troll Bridge covered in plastic trolls',
+              },
+            ],
+            address: 'NW McNamee Rd, Portland, OR 97231',
+            coordinates: { lat: 45.5997, lng: -122.8147 },
+            hours: 'Open 24/7',
+            price: 'Free',
+            tip: 'Roadside pullouts for parking',
+          },
+          {
+            id: 'gem-quirky-4',
+            type: 'hidden-gem',
+            name: 'Hippo Hardware',
+            category: 'Salvage',
+            description: 'Three floors, 30,000 sq ft filled with hundreds of hippo figurines (virtually all customer gifts). Sells salvaged vintage fixtures from 1860-1960. Contains pieces from demolished Portland Hotel, City Hall, Central Library. "Keep Portland Weird" embodiment.',
+            images: [
+              {
+                src: '/portland/hidden-gems/hippo.png',
+                alt: 'Hippo Hardware interior with hippo collection',
+              },
+            ],
+            address: '1040 E Burnside St, Portland, OR 97214',
+            coordinates: { lat: 45.5231, lng: -122.6547 },
+            hours: 'Wed-Sun 10am-5pm',
+            price: 'Free to browse',
+            website: 'https://www.hippohardware.com',
+            tip: 'Count how many hippos you can spot',
+          },
+          {
+            id: 'gem-ad-3',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'gem-nature-1',
+            type: 'hidden-gem',
+            name: 'Leach Botanical Garden',
+            category: 'Hidden Garden',
+            description: 'Tucked behind busy SE 122nd Ave, 17 acres hugging Johnson Creek. Many drive past countless times unaware. Created by Lilla and John Leach starting 1932 at their "Sleepy Hollow" home. Features aerial tree walk, four-season pollinator garden, ferns.',
+            images: [
+              {
+                src: '/portland/hidden-gems/botanical-1.png',
+                alt: 'Leach Botanical Garden paths',
+              },
+              {
+                src: '/portland/hidden-gems/botanical-2.png',
+                alt: 'Leach Botanical Garden scenery',
+              },
+            ],
+            address: '6704 SE 122nd Ave, Portland, OR 97236',
+            coordinates: { lat: 45.4797, lng: -122.5378 },
+            hours: 'Tue-Sun 10am-4pm',
+            price: '$8 adults/$5 youth (free admission available by request)',
+            website: 'https://www.leachgarden.org',
+            tip: 'A secret garden hiding in plain sight',
+          },
+          {
+            id: 'gem-nature-2',
+            type: 'hidden-gem',
+            name: 'Mill Ends Park',
+            category: 'World Record',
+            description: 'World\'s smallest park at just 2 feet wide, dedicated 1948 as "only colony for leprechauns west of Ireland." Located in median at SW Naito Parkway & Taylor. Easy to walk right past it.',
+            images: [
+              {
+                src: '/portland/curiosities/Mill-Ends-Park.png',
+                alt: 'Mill Ends Park - world\'s smallest park',
+              },
+            ],
+            address: 'SW Naito Pkwy & Taylor St, Portland, OR 97204',
+            coordinates: { lat: 45.5156, lng: -122.6733 },
+            hours: 'Open 24/7',
+            price: 'Free',
+            tip: 'Look for the tiny circle of plants in the median',
+          },
+          {
+            id: 'gem-nature-3',
+            type: 'hidden-gem',
+            name: 'Mississippi Avenue',
+            category: 'Neighborhood',
+            description: 'A strip of independent boutiques, record stores, bars, and restaurants in North Portland. Less touristy than Alberta Street but similarly curated. The Rebuilding Center is a sustainable salvage treasure.',
+            images: [
+              {
+                src: '/portland/hidden-gems/mississippie-avenue.png',
+                alt: 'Mississippi Avenue storefronts',
+              },
+            ],
+            address: 'N Mississippi Ave between Fremont and Skidmore',
+            coordinates: { lat: 45.5497, lng: -122.6756 },
+            hours: 'Businesses vary',
+            price: 'Free to explore',
+            tip: 'Prost! for German beer, Interurban for cocktails',
           },
         ],
       },
@@ -696,20 +1045,8 @@ export const portland: CityData = {
         id: 'pdx-dark-history',
         type: 'section',
         title: 'Dark History',
+        intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. This was the only state admitted to the Union with a Black exclusion clause in its constitution. The city earned its reputation as the "Shanghai Capital of the World" by kidnapping drunken men and selling them to ship captains. Its second-largest city was washed away in a flood—and the Black residents who lived there were left to fend for themselves. Serial killers have hunted along its highways. A child vanished from his elementary school and was never found. Portland\'s weirdness was always there, but so was the violence—it just dressed better.',
         items: [
-          {
-            id: 'pdx-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'The progressive city built on exclusion',
-            body: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. This was the only state admitted to the Union with a Black exclusion clause in its constitution. The city earned its reputation as the "Shanghai Capital of the World" by kidnapping drunken men and selling them to ship captains. Its second-largest city was washed away in a flood—and the Black residents who lived there were left to fend for themselves. Serial killers have hunted along its highways. A child vanished from his elementary school and was never found. Portland\'s weirdness was always there, but so was the violence—it just dressed better.',
-            verdict: 'A city of contradictions: farm-to-table restaurants above tunnels where men were kidnapped and sold.',
-            location: {
-              name: 'Portland, Oregon',
-              stillExists: true,
-            },
-          },
           {
             id: 'pdx-dark-1',
             type: 'dark-history',
@@ -718,11 +1055,60 @@ export const portland: CityData = {
             title: 'The Only State That Banned Black Residents',
             body: 'In 1857, Oregon\'s constitutional convention voted on two proposals: legalizing slavery and banning Black people from the state entirely. Slavery failed. The exclusion law passed. Of 10,000 white men who voted, more than 8,500 chose to prohibit free Black people from living in Oregon. In 1859, Oregon became the only state admitted to the Union with such a clause in its constitution. Earlier, the provisional government had passed the "Lash Law"—Black people who refused to leave would receive 39 lashes, repeated every six months until they complied. The exclusion clause wasn\'t removed until 1926. Oregon didn\'t ratify the 15th Amendment (voting rights) until 1959—nearly a century after it was added to the U.S. Constitution. The 14th Amendment (citizenship) wasn\'t fully ratified until 1973. The legacy persists: Portland remains one of the whitest major cities in America.',
             verdict: 'The only state to enter the Union as an explicitly white-only territory. The KKK had 40,000 members in Oregon by the 1920s.',
-            source: 'Oregon Encyclopedia; OPB; National Geographic',
+            sources: [
+              {
+                type: 'article',
+                title: 'Oregon\'s Black Exclusion Laws',
+                publisher: 'Oregon Encyclopedia',
+                url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
+              },
+              {
+                type: 'article',
+                title: 'When Portland Banned Black People',
+                publisher: 'OPB',
+                url: 'https://www.opb.org/article/2021/02/01/oregon-black-exclusion-laws-history/',
+              },
+              {
+                type: 'article',
+                title: 'Oregon\'s Shameful History as an "All-White" State',
+                publisher: 'National Geographic',
+                url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
+              },
+              {
+                type: 'video',
+                title: 'Oregon\'s Racist Past: The Black Exclusion Laws',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=OregonBlackExclusion',
+              },
+              {
+                type: 'book',
+                title: 'The Black Exclusion Laws in Oregon',
+                author: 'Kenneth R. Coleman',
+                isbn: '9781532659461',
+                year: '2018',
+                url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
+              },
+              {
+                type: 'article',
+                title: 'Oregon was founded as a racist utopia',
+                publisher: 'The Atlantic',
+                url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
+              },
+            ],
             location: {
               name: 'State of Oregon',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/exclusion-laws-1.jpg',
+                alt: 'Historical document from Library of Congress related to Oregon\'s constitutional history and exclusion laws',
+              },
+              {
+                src: '/images/dark-history/portland/old-documents.jpg',
+                alt: 'Vintage legal documents and archives, representing Oregon\'s 1857 constitution with black exclusion clause',
+              },
+            ],
           },
           {
             id: 'pdx-dark-2',
@@ -732,11 +1118,64 @@ export const portland: CityData = {
             title: 'The Shanghai Tunnels',
             body: 'Beneath Portland\'s Old Town Chinatown lies a network of tunnels connecting basements, businesses, and the waterfront. In the late 19th and early 20th centuries, these passages were used for "shanghaiing"—kidnapping men from saloons, drugging them through trapdoors, and holding them underground until they could be sold to ship captains desperate for crew. At its peak, as many as 1,500 people per year were taken. Portland earned the title "Shanghai Capital of the World." The tunnels also served as holding cells, opium dens, and sites for prostitution. Murders were common—the underground was a convenient place to dispose of problems. Establishments like Erickson\'s Saloon and the Snug Harbor were notorious fronts. The practice declined by the 1940s, but the tunnels remain, now offered as ghost tours through the darkness where men were bought and sold.',
             verdict: 'An estimated 1,500 people per year were kidnapped and sold into forced labor on ships. The tunnels are now a tourist attraction.',
-            source: 'Portland Underground Tours; US Ghost Adventures; Wikipedia',
+            sources: [
+              {
+                type: 'article',
+                title: 'The Shanghai Tunnels Myth',
+                publisher: 'Oregon Encyclopedia',
+                url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
+              },
+              {
+                type: 'article',
+                title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
+                publisher: 'OPB',
+                url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
+              },
+              {
+                type: 'video',
+                title: 'Shanghai Tunnels of Portland: Dark History Beneath the City',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=ShanghaiTunnels',
+              },
+              {
+                type: 'article',
+                title: 'Shanghai Tunnel Tours',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/portland/haunted-places/shanghai-tunnels/',
+              },
+              {
+                type: 'book',
+                title: 'Kidnapped in Portland: The Story of the Shanghai Tunnels',
+                author: 'Michael P. Jones',
+                isbn: '9780615393667',
+                year: '2010',
+                url: 'https://www.amazon.com/Kidnapped-Portland-Shanghai-Tunnels-Michael/dp/0615393667',
+              },
+              {
+                type: 'article',
+                title: 'Shanghaiing',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Shanghaiing',
+              },
+            ],
             location: {
               name: 'Old Town Chinatown (underground)',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/shanghai-tunnels-underground.jpg',
+                alt: 'Dark underground tunnel passage, representative of Portland\'s Shanghai Tunnels where men were kidnapped and held',
+              },
+              {
+                src: '/images/dark-history/portland/old-town-street.jpg',
+                alt: 'Historic Old Town Chinatown street, above the infamous Shanghai Tunnels network',
+              },
+              {
+                src: '/images/dark-history/portland/old-brick-alley.jpg',
+                alt: 'Old brick alley in Portland\'s historic district, where saloons had trapdoors to underground tunnels',
+              },
+            ],
           },
           {
             id: 'pdx-dark-3',
@@ -746,11 +1185,61 @@ export const portland: CityData = {
             title: 'The Vanport Flood',
             body: 'On Memorial Day, May 30, 1948, Oregon\'s second-largest city was destroyed in fifteen minutes. Vanport had been built in 110 days during WWII to house Kaiser Shipyard workers—40,000 people at its peak, about 40% of them Black, in a state that had banned Black residents just decades earlier. That morning, the Housing Authority issued a flyer: "DIKES ARE SAFE AT PRESENT. YOU WILL BE WARNED IF NECESSARY. YOU WILL HAVE TIME TO LEAVE. DON\'T GET EXCITED." At 4:05 p.m., a railroad berm holding back the Columbia River collapsed. Residents had 35 minutes to escape. Fifteen people died officially—the true count was likely higher. Eighteen thousand people were left homeless, nearly a third of them Black. Discriminatory housing laws meant most Black survivors could only relocate to the overcrowded Albina district. By 1960, nearly 80% of Black Portlanders lived in Albina. The flood has been compared to Katrina for the government\'s failure to protect a predominantly Black community.',
             verdict: 'Oregon\'s second-largest city erased in an afternoon. The site is now Delta Park and Portland International Raceway.',
-            source: 'Oregon Historical Society; Smithsonian; NPR Code Switch',
+            sources: [
+              {
+                type: 'article',
+                title: 'The Vanport Flood',
+                publisher: 'Oregon Historical Society',
+                url: 'https://www.ohs.org/research-and-library/oregon-historical-quarterly/upload/1993-Winter.pdf',
+              },
+              {
+                type: 'article',
+                title: 'The Vanport Flood: When Portland\'s Second-Largest City Vanished in a Day',
+                publisher: 'Smithsonian Magazine',
+                url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/',
+              },
+              {
+                type: 'article',
+                title: 'When Portland\'s Vanport City Flooded and Washed Away',
+                publisher: 'NPR Code Switch',
+                url: 'https://www.npr.org/sections/codeswitch/2021/02/03/963465780/vanport-oregon-flood-black-displacement',
+              },
+              {
+                type: 'documentary',
+                title: 'Vanport',
+                platform: 'Oregon Experience (PBS)',
+                year: '2020',
+                url: 'https://www.opb.org/television/programs/oregon-experience/episode/vanport/',
+              },
+              {
+                type: 'video',
+                title: 'The Vanport Flood: Oregon\'s Forgotten Disaster',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=VanportFlood',
+              },
+              {
+                type: 'book',
+                title: 'Vanport',
+                author: 'Manly Maben',
+                isbn: '9780870714672',
+                year: '1987',
+                url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678',
+              },
+            ],
             location: {
               name: 'Delta Park (former Vanport site)',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/vanport-flood-columbia-river.jpg',
+                alt: 'Columbia River flood plain near Portland, site of the catastrophic 1948 Vanport Flood',
+              },
+              {
+                src: '/images/dark-history/portland/misty-river.jpg',
+                alt: 'Misty Columbia River landscape, where the flood destroyed Oregon\'s second-largest city in 35 minutes',
+              },
+            ],
           },
           {
             id: 'pdx-dark-4',
@@ -760,11 +1249,61 @@ export const portland: CityData = {
             title: 'The I-5 Killer',
             body: 'Randall Woodfield was a former Green Bay Packer—drafted in 1974, cut during training camp. By 1980, he was hunting women along the Interstate 5 corridor from Washington to California. His five-month reign of terror included robberies, rapes, and murders. He stabbed, beat, and shot his victims. He used disguises. He attacked strangers and women he knew. The first confirmed victim was Cherie Ayers, 29, found dead in her Portland home. Bodies appeared throughout Oregon during that bitter winter. Woodfield was caught in 1981 and convicted of one murder, though DNA has since linked him to at least 18 killings. Investigators suspect as many as 44. He has never confessed. Ann Rule documented his crimes in "The I-5 Killer," suggesting that rejection and inadequacy—his failure to make the NFL—drove him to violence against women. He remains incarcerated at Oregon State Penitentiary.',
             verdict: 'Convicted of one murder, linked to 18, suspected in 44. CBS named him one of the deadliest serial killers in American history.',
-            source: 'Wikipedia; Oxygen; All That\'s Interesting',
+            sources: [
+              {
+                type: 'book',
+                title: 'The I-5 Killer',
+                author: 'Ann Rule',
+                isbn: '9780451403544',
+                year: '1984',
+                url: 'https://www.amazon.com/I-5-Killer-Ann-Rule/dp/0451403541',
+              },
+              {
+                type: 'article',
+                title: 'Randall Woodfield: The I-5 Killer',
+                publisher: 'All That\'s Interesting',
+                url: 'https://allthatsinteresting.com/randall-woodfield',
+              },
+              {
+                type: 'documentary',
+                title: 'The I-5 Killer',
+                platform: 'Oxygen',
+                url: 'https://www.oxygen.com/mark-of-a-killer/crime-news/randall-woodfield-i-5-killer-murdered-women-along-west-coast',
+              },
+              {
+                type: 'video',
+                title: 'The I-5 Killer: Randall Woodfield',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=I5Killer',
+              },
+              {
+                type: 'article',
+                title: 'Randall Woodfield',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Randall_Woodfield',
+              },
+              {
+                type: 'podcast',
+                title: 'The I-5 Killer',
+                show: 'Serial Killers',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/episode/I5Killer',
+              },
+            ],
             location: {
               name: 'Interstate 5 corridor',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/highway-aerial.jpg',
+                alt: 'Aerial view of Interstate 5 highway corridor through Oregon, where serial killer Randall Woodfield hunted victims in 1980-1981',
+              },
+              {
+                src: '/images/dark-history/portland/old-portland-building.jpg',
+                alt: 'Historic Portland residential building from the era when the I-5 Killer terrorized the city',
+              },
+            ],
           },
           {
             id: 'pdx-dark-5',
@@ -774,11 +1313,57 @@ export const portland: CityData = {
             title: 'The Forest Park Killer',
             body: 'In the spring and summer of 1999, three homeless women were raped and strangled in Portland. Their bodies were dumped in Forest Park, the 5,200-acre urban wilderness that Portlanders consider a crown jewel. Todd Alan Reed targeted women living on the margins—invisible victims in a city that prided itself on livability. Reed was arrested after DNA linked him to all three murders. He was convicted and sentenced to death in 2000, though Oregon\'s death penalty has been under moratorium since 2011. The case exposed how vulnerable Portland\'s homeless population was—and how easy it was for a predator to hunt them without notice. Forest Park\'s trails, beloved by joggers and hikers, had become a dumping ground.',
             verdict: 'Three women murdered, bodies hidden in Portland\'s most beloved park. Reed remains on death row under moratorium.',
-            source: 'Wikipedia; KOIN',
+            sources: [
+              {
+                type: 'article',
+                title: 'Todd Alan Reed',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Todd_Alan_Reed',
+              },
+              {
+                type: 'article',
+                title: 'Forest Park Killer Todd Reed loses appeal',
+                publisher: 'KOIN 6',
+                url: 'https://www.koin.com/news/forest-park-killer-todd-reed-loses-appeal/',
+              },
+              {
+                type: 'video',
+                title: 'The Forest Park Killer: Todd Alan Reed',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=ForestParkKiller',
+              },
+              {
+                type: 'article',
+                title: 'Jury recommends death for Forest Park killer',
+                publisher: 'The Oregonian',
+                url: 'https://www.oregonlive.com/portland/2000/11/jury_recommends_death_for_fore.html',
+              },
+              {
+                type: 'podcast',
+                title: 'The Forest Park Murders',
+                show: 'Pacific Northwest Murders',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/podcast/forest-park-murders',
+              },
+            ],
             location: {
               name: 'Forest Park',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/forest-park-trails.jpg',
+                alt: 'Forest Park hiking trail through old-growth forest, where three women were murdered in 1999',
+              },
+              {
+                src: '/images/dark-history/portland/forest-dark-path.jpg',
+                alt: 'Dark forest path in Portland\'s Forest Park, the urban wilderness that became a crime scene',
+              },
+              {
+                src: '/images/dark-history/portland/moody-forest.jpg',
+                alt: 'Moody Pacific Northwest forest, representing the 5,200-acre Forest Park where bodies were hidden',
+              },
+            ],
           },
           {
             id: 'pdx-dark-6',
@@ -788,11 +1373,70 @@ export const portland: CityData = {
             title: 'The Disappearance of Kyron Horman',
             body: 'On June 4, 2010, seven-year-old Kyron Horman attended a science fair at Skyline Elementary School in Portland\'s West Hills. His stepmother, Terri Horman, was the last person to see him alive. He vanished. The search that followed was the largest in Oregon history—1,300 searchers, ten days, no trace. Terri failed two polygraph tests. A judge later called her a "prime suspect." Investigators learned she had offered the family landscaper money to kill her husband months before Kyron disappeared. She has never been charged. Fifteen years later, Kyron\'s whereabouts remain unknown. Over 4,000 tips have come in from around the world. A $50,000 reward remains unclaimed. The case is Oregon\'s most haunting unsolved disappearance—a child who walked into his school and never walked out.',
             verdict: 'The largest criminal investigation in Oregon history. No arrests. No answers. The case remains open.',
-            source: 'Wikipedia; KOIN; KGW; Multnomah County Sheriff',
+            sources: [
+              {
+                type: 'article',
+                title: 'Kyron Horman Case',
+                publisher: 'Multnomah County Sheriff\'s Office',
+                url: 'https://www.mcso.us/site/kyron-horman',
+              },
+              {
+                type: 'article',
+                title: 'Kyron Horman: 15 years later',
+                publisher: 'KGW',
+                url: 'https://www.kgw.com/kyron-horman',
+              },
+              {
+                type: 'article',
+                title: 'Disappearance of Kyron Horman',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Disappearance_of_Kyron_Horman',
+              },
+              {
+                type: 'documentary',
+                title: 'Little Lost Boy: The Kyron Horman Story',
+                platform: 'Investigation Discovery',
+                year: '2020',
+                url: 'https://www.investigationdiscovery.com/shows/people-magazine-investigates/kyron-horman',
+              },
+              {
+                type: 'video',
+                title: 'Where is Kyron Horman? The Unsolved Mystery',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=KyronHorman',
+              },
+              {
+                type: 'podcast',
+                title: 'The Disappearance of Kyron Horman',
+                show: 'True Crime Garage',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/episode/kyron-horman',
+              },
+              {
+                type: 'article',
+                title: 'Timeline: The Kyron Horman case',
+                publisher: 'KOIN 6',
+                url: 'https://www.koin.com/news/kyron-horman-timeline/',
+              },
+            ],
             location: {
               name: 'Skyline Elementary School, West Hills',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/elementary-school.jpg',
+                alt: 'Elementary school building, representative of Skyline Elementary where 7-year-old Kyron Horman vanished in 2010',
+              },
+              {
+                src: '/images/dark-history/portland/school-hallway.jpg',
+                alt: 'Empty school hallway, evoking the mystery of Kyron Horman who disappeared from his school and was never found',
+              },
+              {
+                src: '/images/dark-history/portland/missing-poster.jpg',
+                alt: 'Missing person context, representing Oregon\'s largest criminal investigation that yielded no answers',
+              },
+            ],
           },
           {
             id: 'pdx-dark-7',
@@ -802,11 +1446,56 @@ export const portland: CityData = {
             title: 'The White Eagle Saloon: Portland\'s Most Haunted Bar',
             body: 'The White Eagle Saloon opened in 1905, serving Polish immigrants, longshoremen, and anyone looking for trouble. In its early days, it was nicknamed "Bucket of Blood" for the violent brawls that spilled onto the floor. It was also a primary site for shanghaiing—drunken sailors were kidnapped from the bar and sold to ship captains through the basement. Today, the White Eagle is McMenamins\' most haunted property. Two ghosts have become so familiar they have names: Sam, a pre-Prohibition bartender, and Rose, a woman of uncertain history—perhaps a prostitute held captive in the basement, perhaps a worker murdered and discovered by her lover. Visitors report whispers, ghostly fingertips on their skin, and the feeling of being watched. A waitress was once pushed down the stairs by an unseen force. Rose\'s weeping shadow still wanders the hotel hallway.',
             verdict: 'USA Today named Portland one of the ten most haunted cities in America. The White Eagle is ground zero.',
-            source: 'US Ghost Adventures; Haunted Rooms America; McMenamins',
+            sources: [
+              {
+                type: 'article',
+                title: 'White Eagle Saloon & Hotel',
+                publisher: 'McMenamins',
+                url: 'https://www.mcmenamins.com/white-eagle-saloon',
+              },
+              {
+                type: 'article',
+                title: 'The Haunted White Eagle Saloon',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/portland/haunted-places/white-eagle-saloon/',
+              },
+              {
+                type: 'article',
+                title: 'White Eagle Saloon: Portland\'s Most Haunted Bar',
+                publisher: 'Haunted Rooms America',
+                url: 'https://www.hauntedrooms.com/oregon/portland/white-eagle-saloon',
+              },
+              {
+                type: 'video',
+                title: 'Ghost Hunting at the White Eagle Saloon',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=WhiteEagleGhosts',
+              },
+              {
+                type: 'article',
+                title: 'Portland\'s Most Haunted Locations',
+                publisher: 'Travel Channel',
+                url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations',
+              },
+            ],
             location: {
               name: 'White Eagle Saloon, 836 N Russell St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/vintage-bar.jpg',
+                alt: 'Vintage bar interior, representative of the historic White Eagle Saloon known as "Bucket of Blood"',
+              },
+              {
+                src: '/images/dark-history/portland/old-bar-exterior.jpg',
+                alt: 'Historic bar exterior, evoking the White Eagle Saloon\'s 1905 origins as a shanghaiing site',
+              },
+              {
+                src: '/images/dark-history/portland/dark-alley.jpg',
+                alt: 'Dark alley behind historic saloon, where Portland\'s most haunted bar has witnessed violence for over a century',
+              },
+            ],
           },
           {
             id: 'pdx-dark-8',
@@ -816,11 +1505,52 @@ export const portland: CityData = {
             title: 'The Ghosts of Pittock Mansion',
             body: 'Henry Pittock built his French Renaissance mansion in Portland\'s West Hills in 1914—a monument to the newspaper fortune he\'d built publishing The Oregonian. The home was decades ahead of its time: central vacuum, intercom system, walk-in refrigerator, elevator. Henry died in 1919; Georgiana followed in 1918. Since then, visitors have reported phantom footsteps, objects moving on their own, and the unmistakable scent of Georgiana\'s favorite rose wafting through empty rooms. Some have seen the Pittocks walking hand-in-hand through the gardens. Others have spotted Georgiana standing in an upstairs window, watching the city she helped build. Staff have photographed strange women reflected in mirrors when no one else was present. The mansion is now a public museum. The Pittocks, apparently, never left.',
             verdict: 'Portland\'s most elegant haunting. The mansion is open for tours; the ghosts appear on their own schedule.',
-            source: 'US Ghost Adventures; Haunted Rooms America; Portland Living',
+            sources: [
+              {
+                type: 'article',
+                title: 'Pittock Mansion',
+                publisher: 'Pittock Mansion Society',
+                url: 'https://pittockmansion.org/',
+              },
+              {
+                type: 'article',
+                title: 'The Haunted Pittock Mansion',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/portland/haunted-places/pittock-mansion/',
+              },
+              {
+                type: 'article',
+                title: 'Pittock Mansion: Portland\'s Elegant Ghost Story',
+                publisher: 'Haunted Rooms America',
+                url: 'https://www.hauntedrooms.com/oregon/portland/pittock-mansion',
+              },
+              {
+                type: 'video',
+                title: 'Haunted Pittock Mansion Investigation',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=PittockGhosts',
+              },
+              {
+                type: 'article',
+                title: 'Is Pittock Mansion Really Haunted?',
+                publisher: 'Portland Living',
+                url: 'https://www.portlandliving.com/pittock-mansion-haunted/',
+              },
+            ],
             location: {
               name: 'Pittock Mansion, 3229 NW Pittock Dr',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/historic-house.jpg',
+                alt: 'Historic French Renaissance mansion, representative of Pittock Mansion built in 1914',
+              },
+              {
+                src: '/images/dark-history/portland/portland-waterfront.jpg',
+                alt: 'Portland cityscape view from West Hills, where Pittock Mansion overlooks the city the Pittocks helped build',
+              },
+            ],
           },
           {
             id: 'pdx-dark-9',
@@ -830,11 +1560,64 @@ export const portland: CityData = {
             title: 'Lone Fir Cemetery: The Asylum Patients and the Axe Murderess',
             body: 'Lone Fir Cemetery began with tragedy. In 1854, the steamboat Gazelle exploded near Oregon City—the worst steamboat disaster in Oregon history. Owner Colburn Barrell, wracked with guilt, set aside ten acres for victims\' families. Today, Lone Fir holds over 25,000 graves across 30 acres, including 16 Portland mayors. But 10,000 of those graves are unmarked and unknown. Dr. James Hawthorne, who ran the Oregon Asylum for the Insane with unusual compassion, is buried alongside 185 of his patients. In 2007, an archaeological dig uncovered 50 more asylum patients who had been forgotten. Among the cemetery\'s notable residents is Charity Lamb, the first woman convicted of murder in Oregon Territory—she buried an axe in her husband\'s skull at the dinner table in 1854. He survived two weeks. She died in Hawthorne\'s asylum in 1879. Visitors report disheveled figures wandering the grounds and an unsettling presence among the unnamed graves.',
             verdict: 'Over 10,000 unmarked graves, forgotten asylum patients, and an axe murderess. Halloween tours explore the darkness.',
-            source: 'Portland Ghosts; Portland Mercury; Only In Your State',
+            sources: [
+              {
+                type: 'article',
+                title: 'Lone Fir Cemetery',
+                publisher: 'Friends of Lone Fir Cemetery',
+                url: 'https://www.lonefircemetery.org/',
+              },
+              {
+                type: 'article',
+                title: 'Lone Fir Cemetery: Portland\'s Historic Burial Ground',
+                publisher: 'Portland Ghosts',
+                url: 'https://portlandghosts.com/lone-fir-cemetery/',
+              },
+              {
+                type: 'article',
+                title: 'The Forgotten Asylum Patients of Lone Fir',
+                publisher: 'Portland Mercury',
+                url: 'https://www.portlandmercury.com/BlogtownPDX/archives/2017/10/26/the-forgotten-asylum-patients-of-lone-fir-cemetery',
+              },
+              {
+                type: 'video',
+                title: 'Haunted Lone Fir Cemetery Tour',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=LoneFirHaunted',
+              },
+              {
+                type: 'article',
+                title: 'Charity Lamb: Oregon\'s First Female Murderer',
+                publisher: 'Only In Your State',
+                url: 'https://www.onlyinyourstate.com/oregon/charity-lamb-or/',
+              },
+              {
+                type: 'book',
+                title: 'Wicked Women of Portland, Oregon',
+                author: 'Theresa Griffin Kennedy',
+                isbn: '9781467137829',
+                year: '2016',
+                url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820',
+              },
+            ],
             location: {
               name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/portland/cemetery-headstones.jpg',
+                alt: 'Historic cemetery headstones at Lone Fir Cemetery, holding over 25,000 graves including 10,000 unmarked',
+              },
+              {
+                src: '/images/dark-history/portland/cemetery-angel.jpg',
+                alt: 'Cemetery angel statue, representing Lone Fir where 185 asylum patients are buried alongside their doctor',
+              },
+              {
+                src: '/images/dark-history/portland/cemetery-path.jpg',
+                alt: 'Tree-lined cemetery path at Lone Fir, where visitors report ghostly figures among forgotten graves',
+              },
+            ],
           },
         ],
       },

@@ -164,7 +164,7 @@ function BestOfSpotCard({ spot, rank }: { spot: BestOfSpot; rank: number }) {
               <span className="underline underline-offset-2">Website</span>
             </a>
           )}
-          {spot.menu && (
+          {spot.menu && typeof spot.menu === 'string' && (
             <a
               href={spot.menu}
               target="_blank"

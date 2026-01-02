@@ -1,0 +1,114 @@
+{
+  "anchorage_curiosities": {
+    "anc-curiosity-1_cia_spy": [
+      {
+        "search": "alaska wilderness mountains",
+        "unsplash": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+        "alt": "Remote Alaska wilderness where Cold War operations took place",
+        "credit": "Unsplash"
+      },
+      {
+        "search": "alaska mountain range aerial",
+        "unsplash": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&q=80",
+        "alt": "Aerial view of remote Alaska terrain",
+        "credit": "Unsplash"
+      }
+    ],
+    "anc-curiosity-2_bore_tide": [
+      {
+        "search": "alaska inlet water mountains",
+        "unsplash": "https://images.unsplash.com/photo-1520208422220-d12a3c588e6c?w=1200&q=80",
+        "alt": "Turnagain Arm landscape where bore tide occurs",
+        "credit": "Unsplash"
+      }
+    ],
+    "anc-curiosity-3_earthquake": [
+      {
+        "note": "Use Library of Congress for historical 1964 earthquake photos",
+        "loc_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/19200/19212v.jpg",
+        "alt": "1964 earthquake damage on 4th Avenue in Anchorage",
+        "credit": "Library of Congress"
+      }
+    ],
+    "anc-curiosity-5_urban_moose": [
+      {
+        "search": "moose alaska wildlife",
+        "unsplash": "https://images.unsplash.com/photo-1551974370-bc2d36a8dc41?w=1200&q=80",
+        "alt": "Moose in Alaska wilderness",
+        "credit": "Unsplash"
+      }
+    ],
+    "anc-curiosity-6_lake_hood": [
+      {
+        "search": "floatplane seaplane alaska",
+        "unsplash": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80",
+        "alt": "Floatplane on Alaska lake",
+        "credit": "Unsplash"
+      }
+    ],
+    "anc-curiosity-9_earthquake_park": [
+      {
+        "search": "alaska landscape mountains",
+        "unsplash": "https://images.unsplash.com/photo-1473496169904-658ba7f3002f?w=1200&q=80",
+        "alt": "Alaska landscape terrain",
+        "credit": "Unsplash"
+      }
+    ],
+    "anc-curiosity-12_aurora": [
+      {
+        "search": "aurora borealis northern lights",
+        "unsplash": "https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=1200&q=80",
+        "alt": "Northern lights aurora borealis over Alaska",
+        "credit": "Unsplash"
+      },
+      {
+        "search": "aurora alaska night",
+        "unsplash": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=1200&q=80",
+        "alt": "Vivid aurora display in Alaska sky",
+        "credit": "Unsplash"
+      }
+    ],
+    "bars_generic": [
+      {
+        "search": "craft beer bar interior",
+        "unsplash": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
+        "alt": "Craft beer bar interior",
+        "credit": "Unsplash"
+      },
+      {
+        "search": "bar beer taps",
+        "unsplash": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80",
+        "alt": "Bar with craft beer taps",
+        "credit": "Unsplash"
+      }
+    ],
+    "restaurants_generic": [
+      {
+        "search": "seafood dish halibut",
+        "unsplash": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80",
+        "alt": "Fresh Alaska seafood dish",
+        "credit": "Unsplash"
+      },
+      {
+        "search": "restaurant food plating",
+        "unsplash": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+        "alt": "Restaurant dish presentation",
+        "credit": "Unsplash"
+      }
+    ],
+    "coffee_generic": [
+      {
+        "search": "latte coffee art",
+        "unsplash": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80",
+        "alt": "Latte with coffee art",
+        "credit": "Unsplash"
+      },
+      {
+        "search": "coffee shop interior",
+        "unsplash": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80",
+        "alt": "Coffee shop interior",
+        "credit": "Unsplash"
+      }
+    ]
+  }
+}

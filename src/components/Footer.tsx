@@ -98,6 +98,12 @@ export function Footer() {
               >
                 Privacy
               </Link>
+              <Link
+                href="/terms"
+                className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
+              >
+                Terms
+              </Link>
             </div>
           </div>
         </div>

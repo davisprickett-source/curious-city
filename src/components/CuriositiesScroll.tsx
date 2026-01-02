@@ -1,9 +1,103 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { motion, useInView, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
+import { VideoScrubber } from './VideoScrubber'
+
+// Image Carousel Component
+function ImageCarousel({ images, title }: { images: Array<{ src: string; alt: string; caption?: string; credit?: string }>; title: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length)
+  }
+
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
+
+  const goToIndex = (index: number) => {
+    setCurrentIndex(index)
+  }
+
+  const currentImage = images[currentIndex]
+
+  return (
+    <div className="mb-6">
+      <div className="relative overflow-hidden rounded-2xl shadow-xl group">
+        {/* Image */}
+        <div className="relative aspect-[4/3] md:aspect-[16/9]">
+          <img
+            src={currentImage.src}
+            alt={currentImage.alt || title}
+            className="w-full h-full object-cover object-center"
+          />
+
+          {/* Credit overlay on top */}
+          {currentImage.credit && (
+            <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+              {currentImage.credit}
+            </div>
+          )}
+        </div>
+
+        {/* Navigation Arrows - only show if more than 1 image */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={goToPrev}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={goToNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Dots indicator */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentIndex ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Image counter */}
+        {images.length > 1 && (
+          <div className="absolute bottom-2 left-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+            {currentIndex + 1} / {images.length}
+          </div>
+        )}
+      </div>
+
+      {/* Caption only (credit is now on image) */}
+      {currentImage.caption && (
+        <div className="mt-2 px-1 text-xs text-neutral-400">
+          {currentImage.caption}
+        </div>
+      )}
+    </div>
+  )
+}
 
 interface CuriosityItem {
   id: string
@@ -16,12 +110,25 @@ interface CuriosityItem {
     alt?: string
     credit?: string
   }
+  images?: Array<{
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }>
+  illustration?: React.ComponentType
   video?: {
     youtubeId: string
     title?: string
   }
+  videoAnimation?: {
+    path: string
+    title?: string
+    caption?: string
+  }
   location?: {
     name: string
+    url?: string
     stillExists?: boolean
   }
   source?: string
@@ -62,16 +169,158 @@ const getCategoryStyle = (category: string) => {
   }
 }
 
-// Get all unique categories
-const getCategories = (curiosities: CuriosityItem[]) => {
-  const categories = new Set<string>()
-  curiosities.forEach(item => {
-    if (item.category) categories.add(item.category)
+// Video Animation Curiosity - full-screen scrolling video with text
+function VideoAnimationCuriosity({ item, index, onSectionInView }: { item: CuriosityItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const { ref: inViewRef, inView } = useInViewHook({
+    threshold: 0.15,
+    triggerOnce: false,
   })
-  return Array.from(categories)
+
+  // Combine refs
+  const setRefs = (element: HTMLDivElement | null) => {
+    // @ts-ignore
+    sectionRef.current = element
+    inViewRef(element)
+  }
+
+  // Notify parent when in view
+  useEffect(() => {
+    if (inView && onSectionInView) {
+      onSectionInView(index)
+    }
+  }, [inView, index, onSectionInView])
+
+  const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
+
+  return (
+    <div ref={setRefs} className="relative">
+      <VideoScrubber
+        videoPath={item.videoAnimation!.path}
+        title={item.title}
+        caption={item.videoAnimation!.caption}
+        scrollHeight={200}
+        textContent={item.body}
+        textPosition="right"
+      />
+
+      {/* Info bar below video */}
+      <div className="bg-neutral-50 border-t border-neutral-200 py-8 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-start gap-6 mb-6">
+            {/* Number badge */}
+            <div className="flex-shrink-0">
+              <div className={`w-16 h-16 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center`}>
+                <span className={`text-3xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
+              </div>
+            </div>
+
+            {/* Metadata */}
+            <div className="flex-1">
+              {/* Sources and Metadata Table */}
+              {((item.sources && item.sources.length > 0) || item.location || item.category || item.year) && (
+                <div className="bg-white border border-neutral-200 rounded-xl px-5 py-4">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {/* Sources Column */}
+                    {item.sources && item.sources.length > 0 && (
+                      <div>
+                        <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
+                        <ul className="space-y-2">
+                          {item.sources.map((source, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                              {source.url ? (
+                                <a
+                                  href={source.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm font-medium"
+                                >
+                                  {source.title}
+                                </a>
+                              ) : (
+                                <span className="text-neutral-700 text-sm">{source.title}</span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Metadata Column (Location, Category, Year) */}
+                    {(item.category || item.year || item.location) && (
+                      <div className="space-y-4">
+                        {/* Location */}
+                        {item.location && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Location</h4>
+                            <div className="flex items-start gap-2 text-sm">
+                              <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                              </svg>
+                              {item.location.url ? (
+                                <a
+                                  href={item.location.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                                >
+                                  {item.location.name}
+                                  {item.location.stillExists === false && (
+                                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                  )}
+                                </a>
+                              ) : (
+                                <span className="text-neutral-700">
+                                  {item.location.name}
+                                  {item.location.stillExists === false && (
+                                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                  )}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Category */}
+                        {item.category && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
+                            <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
+                              {item.category}
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Year */}
+                        {item.year && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Year</h4>
+                            <span className="text-base text-neutral-700 font-semibold">{item.year}</span>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+              {item.source && !item.sources && (
+                <div className="text-sm text-neutral-500 italic">
+                  Source: {item.source}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-function CuriositySection({ item, index, totalCount, onSectionInView }: { item: CuriosityItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
+function CuriositySection({ item, index, onSectionInView }: { item: CuriosityItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
   const sectionRef = useRef<HTMLElement>(null)
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
@@ -89,9 +338,8 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
   })
 
   // Much more dramatic parallax - big movement range (no rotation)
+  // @ts-ignore - Variable for future use
   const numberY = useTransform(scrollYProgress, [0, 1], [120, -120])
-  const imageScale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.85, 1.05, 1.05, 0.85])
-  const imageY = useTransform(scrollYProgress, [0, 1], [80, -80])
 
   // Combine refs using callback
   const setRefs = (element: HTMLElement | null) => {
@@ -167,15 +415,26 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
 
   if (prefersReducedMotion) {
     return (
-      <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}>
-        <div className="max-w-5xl mx-auto w-full">
+      <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()} relative overflow-hidden`}>
+        {/* Background Illustration - Desktop only */}
+        {item.illustration && (
+          <div className="hidden lg:block absolute inset-0 pointer-events-none opacity-20">
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] scale-125 -translate-x-32">
+              <item.illustration />
+            </div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] scale-125 translate-x-32">
+              <item.illustration />
+            </div>
+          </div>
+        )}
+
+        <div className="max-w-5xl mx-auto w-full relative z-10">
           <div className={`flex flex-col md:flex-row gap-8 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
             {/* Number */}
             <div className="flex-shrink-0">
               <div className={`w-20 h-20 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center`}>
                 <span className={`text-4xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
               </div>
-              <div className="text-xs text-neutral-400 mt-2 text-center">{index + 1}/{totalCount}</div>
             </div>
 
             {/* Content */}
@@ -185,32 +444,34 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
                 <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 leading-tight">
                   {item.title}
                 </h2>
-                <div className="flex items-center gap-2 flex-wrap">
-                  {item.category && (
-                    <span className={`text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                      {item.category}
-                    </span>
-                  )}
-                  {item.year && (
-                    <span className="text-sm text-neutral-400 font-medium">{item.year}</span>
-                  )}
-                </div>
               </div>
 
+              {/* Illustration - Mobile only */}
+              {item.illustration && (
+                <div className="mb-6 lg:hidden">
+                  <item.illustration />
+                </div>
+              )}
+
               {/* Image */}
-              {item.image && (
-                <div className="mb-6 overflow-hidden rounded-2xl">
+              {item.image && !item.illustration && !item.images && (
+                <div className="mb-6 overflow-hidden rounded-2xl relative">
                   <img
                     src={item.image.src}
                     alt={item.image.alt || item.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-96 object-cover object-center"
                   />
                   {item.image.credit && (
-                    <div className="text-xs text-neutral-400 mt-2 px-1">
+                    <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
                       {item.image.credit}
                     </div>
                   )}
                 </div>
+              )}
+
+              {/* Image Carousel */}
+              {item.images && item.images.length > 0 && !item.illustration && (
+                <ImageCarousel images={item.images} title={item.title} />
               )}
 
               {/* Body */}
@@ -233,47 +494,94 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
                 </div>
               )}
 
-              {/* Footer */}
-              {item.location && (
-                <div className="flex items-start gap-2 text-sm text-neutral-500 mb-4">
-                  <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>
-                    {item.location.name}
-                    {item.location.stillExists === false && (
-                      <span className="text-neutral-400 ml-1">(no longer exists)</span>
-                    )}
-                  </span>
-                </div>
-              )}
-
-              {/* Sources */}
-              {item.sources && item.sources.length > 0 && (
+              {/* Sources and Metadata Table */}
+              {((item.sources && item.sources.length > 0) || item.location || item.category || item.year) && (
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6">
-                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
-                  <ul className="space-y-2">
-                    {item.sources?.map((source, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        {source.url ? (
-                          <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm font-medium"
-                          >
-                            {source.title}
-                          </a>
-                        ) : (
-                          <span className="text-neutral-700 text-sm">{source.title}</span>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {/* Sources Column */}
+                    {item.sources && item.sources.length > 0 && (
+                      <div>
+                        <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
+                        <ul className="space-y-2">
+                          {item.sources?.map((source, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                              {source.url ? (
+                                <a
+                                  href={source.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm font-medium"
+                                >
+                                  {source.title}
+                                </a>
+                              ) : (
+                                <span className="text-neutral-700 text-sm">{source.title}</span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Metadata Column (Location, Category, Year) */}
+                    {(item.category || item.year || item.location) && (
+                      <div className="space-y-4">
+                        {/* Location */}
+                        {item.location && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Location</h4>
+                            <div className="flex items-start gap-2 text-sm">
+                              <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                              </svg>
+                              {item.location.url ? (
+                                <a
+                                  href={item.location.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                                >
+                                  {item.location.name}
+                                  {item.location.stillExists === false && (
+                                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                  )}
+                                </a>
+                              ) : (
+                                <span className="text-neutral-700">
+                                  {item.location.name}
+                                  {item.location.stillExists === false && (
+                                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                  )}
+                                </span>
+                              )}
+                            </div>
+                          </div>
                         )}
-                      </li>
-                    ))}
-                  </ul>
+
+                        {/* Category */}
+                        {item.category && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
+                            <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
+                              {item.category}
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Year */}
+                        {item.year && (
+                          <div>
+                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Year</h4>
+                            <span className="text-base text-neutral-700 font-semibold">{item.year}</span>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
               {item.source && !item.sources && (
@@ -290,26 +598,59 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
 
   // With animations
   return (
-    <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()} transition-colors duration-1000`}>
-      <div className="max-w-5xl mx-auto w-full">
+    <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()} transition-colors duration-1000 relative overflow-hidden`}>
+      {/* Background Illustration - Desktop only with animations */}
+      {item.illustration && (
+        <>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 0.15, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1.5,
+              delay: 0.2,
+              ease: [0.16, 1, 0.3, 1] as any
+            }}
+            className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[600px] scale-125 -translate-x-32 pointer-events-none"
+          >
+            <item.illustration />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 0.15, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1.5,
+              delay: 0.2,
+              ease: [0.16, 1, 0.3, 1] as any
+            }}
+            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[600px] scale-125 translate-x-32 pointer-events-none"
+          >
+            <item.illustration />
+          </motion.div>
+        </>
+      )}
+
+      <div className="max-w-5xl mx-auto w-full relative z-10">
         <div className={`flex flex-col md:flex-row gap-8 md:gap-12 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
           {/* Animated Number - no parallax to avoid jumping */}
           <motion.div
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
             variants={numberVariants}
             className="flex-shrink-0"
           >
             <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500`}>
               <span className={`text-4xl md:text-5xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
             </div>
-            <div className="text-xs text-neutral-400 mt-2 text-center font-medium">{index + 1}/{totalCount}</div>
           </motion.div>
 
           {/* Animated Content */}
           <motion.div
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
             variants={contentVariants}
             className="flex-1"
           >
@@ -318,55 +659,79 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-neutral-900 leading-tight">
                 {item.title}
               </h2>
-              <div className="flex items-center gap-2 flex-wrap">
-                {item.category && (
-                  <span className={`text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                    {item.category}
-                  </span>
-                )}
-                {item.year && (
-                  <span className="text-sm text-neutral-400 font-medium">{item.year}</span>
-                )}
-              </div>
             </div>
 
-            {/* Image with DRAMATIC animations */}
-            {item.image && (
+            {/* Illustration with DRAMATIC animations - Mobile only */}
+            {item.illustration && (
               <motion.div
-                initial={{ opacity: 0, y: 80, scale: 0.8 }}
-                animate={inView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 80, scale: 0.8 }}
+                initial={{ opacity: 0, y: 80, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 1.8,
                   delay: 0.4,
                   ease: [0.16, 1, 0.3, 1] as any,
                   opacity: { duration: 1.5 }
                 }}
-                className="mb-6 overflow-hidden rounded-2xl shadow-xl group"
+                className="mb-6 lg:hidden"
               >
-                <motion.img
-                  src={item.image.src}
-                  alt={item.image.alt || item.title}
-                  style={{
-                    scale: prefersReducedMotion ? 1 : imageScale,
-                    y: prefersReducedMotion ? 0 : imageY
-                  }}
-                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-1000"
-                />
+                <item.illustration />
+              </motion.div>
+            )}
+
+            {/* Image with animations */}
+            {item.image && !item.illustration && !item.images && (
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1.2,
+                  delay: 0.3,
+                  ease: [0.16, 1, 0.3, 1] as any
+                }}
+                className="mb-6 overflow-hidden rounded-2xl shadow-xl relative"
+              >
+                <div className="relative aspect-[4/3] md:aspect-[16/9]">
+                  <img
+                    src={item.image.src}
+                    alt={item.image.alt || item.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
                 {item.image.credit && (
-                  <div className="text-xs text-neutral-400 mt-2 px-1">
+                  <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
                     {item.image.credit}
                   </div>
                 )}
               </motion.div>
             )}
 
+            {/* Image Carousel with animations */}
+            {item.images && item.images.length > 0 && !item.illustration && (
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1.2,
+                  delay: 0.3,
+                  ease: [0.16, 1, 0.3, 1] as any
+                }}
+                className="mb-6"
+              >
+                <ImageCarousel images={item.images} title={item.title} />
+              </motion.div>
+            )}
+
             {/* Body - with animation */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{
-                duration: 1.4,
-                delay: 0.6,
+                duration: 1.2,
+                delay: 0.4,
                 ease: [0.16, 1, 0.3, 1] as any
               }}
               className="text-lg text-neutral-700 leading-relaxed mb-6"
@@ -389,27 +754,12 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
               </div>
             )}
 
-            {/* Footer */}
-            {item.location && (
-              <div className="flex items-start gap-2 text-sm text-neutral-500 mb-4">
-                <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span>
-                  {item.location.name}
-                  {item.location.stillExists === false && (
-                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
-                  )}
-                </span>
-              </div>
-            )}
-
-            {/* Sources */}
-            {item.sources && item.sources.length > 0 && (
+            {/* Sources and Metadata Table */}
+            {((item.sources && item.sources.length > 0) || item.location || item.category || item.year) && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 1.2,
                   delay: 0.8,
@@ -417,28 +767,91 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
                 }}
                 className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6"
               >
-                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
-                <ul className="space-y-2">
-                  {item.sources?.map((source, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      {source.url ? (
-                        <a
-                          href={source.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm font-medium"
-                        >
-                          {source.title}
-                        </a>
-                      ) : (
-                        <span className="text-neutral-700 text-sm">{source.title}</span>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* Sources Column */}
+                  {item.sources && item.sources.length > 0 && (
+                    <div>
+                      <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
+                      <ul className="space-y-2">
+                        {item.sources?.map((source, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            {source.url ? (
+                              <a
+                                href={source.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm font-medium"
+                              >
+                                {source.title}
+                              </a>
+                            ) : (
+                              <span className="text-neutral-700 text-sm">{source.title}</span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Metadata Column (Location, Category, Year) */}
+                  {(item.category || item.year || item.location) && (
+                    <div className="space-y-4">
+                      {/* Location */}
+                      {item.location && (
+                        <div>
+                          <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Location</h4>
+                          <div className="flex items-start gap-2 text-sm">
+                            <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            {item.location.url ? (
+                              <a
+                                href={item.location.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                              >
+                                {item.location.name}
+                                {item.location.stillExists === false && (
+                                  <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                )}
+                              </a>
+                            ) : (
+                              <span className="text-neutral-700">
+                                {item.location.name}
+                                {item.location.stillExists === false && (
+                                  <span className="text-neutral-400 ml-1">(no longer exists)</span>
+                                )}
+                              </span>
+                            )}
+                          </div>
+                        </div>
                       )}
-                    </li>
-                  ))}
-                </ul>
+
+                      {/* Category */}
+                      {item.category && (
+                        <div>
+                          <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
+                          <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
+                            {item.category}
+                          </span>
+                        </div>
+                      )}
+
+                      {/* Year */}
+                      {item.year && (
+                        <div>
+                          <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Year</h4>
+                          <span className="text-base text-neutral-700 font-semibold">{item.year}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
               </motion.div>
             )}
             {item.source && !item.sources && (
@@ -453,15 +866,9 @@ function CuriositySection({ item, index, totalCount, onSectionInView }: { item: 
   )
 }
 
-export function CuriositiesScroll({ curiosities, cityName }: CuriositiesScrollProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+export function CuriositiesScroll({ curiosities, cityName: _cityName }: CuriositiesScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
-
-  const categories = getCategories(curiosities)
-  const filteredCuriosities = selectedCategory
-    ? curiosities.filter(item => item.category === selectedCategory)
-    : curiosities
 
 
   // Track scroll progress
@@ -503,7 +910,7 @@ export function CuriositiesScroll({ curiosities, cityName }: CuriositiesScrollPr
 
       {/* Navigation Dots - Fixed on right side */}
       <div className="hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-3">
-        {filteredCuriosities.map((item, index) => {
+        {curiosities.map((item, index) => {
           const isActive = activeSection === index
           const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
 
@@ -532,53 +939,25 @@ export function CuriositiesScroll({ curiosities, cityName }: CuriositiesScrollPr
         })}
       </div>
 
-      {/* Category Filter Pills */}
-      {categories.length > 0 && (
-        <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-neutral-200 py-4 mb-12">
-          <div className="container-page">
-            <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
-              <button
-                onClick={() => setSelectedCategory(null)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                  selectedCategory === null
-                    ? 'bg-neutral-900 text-white shadow-md'
-                    : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
-                }`}
-              >
-                All ({curiosities.length})
-              </button>
-              {categories.map(category => {
-                const count = curiosities.filter(item => item.category === category).length
-                const styles = getCategoryStyle(category)
-                return (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all border ${
-                      selectedCategory === category
-                        ? `${styles.bg} ${styles.text} ${styles.accent} shadow-md`
-                        : 'bg-white text-neutral-600 border-neutral-200 hover:bg-neutral-50'
-                    }`}
-                  >
-                    {category} ({count})
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Curiosities Sections */}
       <div>
-        {filteredCuriosities.map((item, index) => (
+        {curiosities.map((item, index) => (
           <div key={item.id} data-curiosity-section>
-            <CuriositySection
-              item={item}
-              index={index}
-              totalCount={filteredCuriosities.length}
-              onSectionInView={handleSectionInView}
-            />
+            {item.videoAnimation ? (
+              <VideoAnimationCuriosity
+                item={item}
+                index={index}
+                totalCount={curiosities.length}
+                onSectionInView={handleSectionInView}
+              />
+            ) : (
+              <CuriositySection
+                item={item}
+                index={index}
+                totalCount={curiosities.length}
+                onSectionInView={handleSectionInView}
+              />
+            )}
           </div>
         ))}
       </div>

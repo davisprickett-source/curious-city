@@ -81,6 +81,9 @@ function ContentItemRenderer({ item }: { item: ContentItem }) {
     case 'hidden-gem':
       return <HiddenGemRenderer item={item} />
 
+    case 'iconic-spot':
+      return <HiddenGemRenderer item={item} />
+
     case 'best-of':
       return <BestOfRenderer item={item} />
 

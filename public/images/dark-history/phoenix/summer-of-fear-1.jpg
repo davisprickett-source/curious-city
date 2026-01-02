@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>User: arn:aws:iam::247644262982:user/Akamai-Tegna-Assets-Read is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::tgna-assets" because no identity-based policy allows the s3:ListBucket action</Message><RequestId>Z4D6KP1AVNGZBTS3</RequestId><HostId>27+G6tA5D3qP1HnwYGa26pujKY3xrhBmlywgOQ5qUKRxIKGCJ7Trhp7V3Jcf5njPaayhZ/in0eE=</HostId></Error>

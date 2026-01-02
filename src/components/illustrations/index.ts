@@ -1,0 +1,1 @@
+export { HoneycrispIllustration } from './HoneycrispIllustration'

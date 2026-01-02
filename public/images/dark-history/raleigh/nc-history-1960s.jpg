@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--
+
+    NOTE: html@prefix is the only thing we've added here for AAPB.
+
+  -->
+  <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WP59Q7T');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Internet Explorer use the highest version available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <!--[if IEMobile]>
+      <meta http-equiv="cleartype" content="on">
+    <![endif]-->
+
+    <title>American Archive of Public Broadcasting</title>
+    <link href="https://americanarchive.org/catalog/opensearch.xml" title="American Archive of Public Broadcasting" type="application/opensearchdescription+xml" rel="search" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-6ed8684c2de483838c6b2cf80a9bc3f2bdd26ef94a4e9200c06f9cde4dbcd9ae.ico" />
+    <link rel="stylesheet" media="all" href="/assets/application-612ba315174ef0eb86c1110ee1263aa30fdd90d7b451b1a3119fd2af42e889fe.css" />
+    <script src="/assets/application-5bdd0f67849ea5963de20bb3b28fcf94b546327171224b3c283754ebbb6681ea.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="dB3isGE0dLeZM4z0yvxAbCT+grNM9FQxM1EpvvjBvQ5Ufv/zJieKJ3x/U3QQjPFyfn3LoAYjq2haIOFQ+6f1cA==" />
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="google-site-verification" content="lwufIwRZoiyiD-_VYLyS-4qW4A90h4DZq-vg7ebsxv0" />
+  </head>
+  <body class="blacklight-errors blacklight-errors-show">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP59Q7T"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a id="america-250-bar" href="/america-250">
+      <div>CELEBRATING AMERICA 250 ></div>
+    </a>
+    
+    <header class="header" id="header" role="">
+  <div class="region clearfix">
+
+    <!-- Main Nav Bar -->
+    <nav id="header-navbar" class="navbar navbar-default main-nav" role="navigation" aria-label="Main Menu">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#user-util-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <header role="banner" class="banner-assets">
+            <a class="navbar-brand banner" href="/">American Archive of Public Broadcasting</a>
+            <div class="banner-text">
+              <p id="banner-text" class="hidden-xs"><em>a collaboration between the Library of Congress and GBH</em></p>
+            </div>
+          </header>
+        </div>
+
+        <div class="collapse navbar-collapse" id="user-util-collapse">
+
+          <!--  Main Nav Links -->
+
+          <ul class="nav navbar-nav navbar-right primary-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/about-the-american-archive">About the AAPB</a></li>
+                <li><a href="/about-the-american-archive/vision-and-mission">Vision and Mission</a></li>
+                <li><a href="/about-the-american-archive/history">History</a></li>
+                <li><a href="/participating-orgs">Participating Organizations</a></li>
+                <li><a href="/about-the-american-archive/library-and-education-collaborators">Library and Education Collaborators</a></li>
+                <li><a href="/about-the-american-archive/whats-new">What's New</a></li>
+                <li><a href="/on-location">On Location Research</a></li>
+                <li><a href="/search">Searching the Website</a></li>
+                <li><a href="/exhibits">Exhibits</a></li>
+                <li><a href="/special_collections">Special Collections</a></li>
+                <li><a href="/about-the-american-archive/projects">Projects</a></li>
+                <li><a href="/about-the-american-archive/funding">Funding</a></li>
+                <li><a href="/about-the-american-archive/executive-advisory-council">Executive Advisory Council</a></li>
+                <li><a href="/about-the-american-archive/advisory-committees">Advisory Committees</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about-the-american-archive/newsletter">Newsletter Signup</a></li>
+                <li><a href="/national-history-day">National History Day</a></li>
+                <li><a href="/about-the-american-archive/podcast">AAPB Podcast</a></li>
+                <li><a href="/about-the-american-archive/webinars">Webinars</a></li>
+                <li><a href="/about-the-american-archive/feedback">Feedback</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">For Participating Organizations <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/help/contribute">Contribute content</a></li>
+                <li><a href="/help/using-the-ams">Access the AMS</a></li>
+                <li><a href="/help/obtain-metadata">Obtain your metadata</a></li>
+                <li><a href="/help/station-communications-toolkit">Communications Toolkit</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="http://wiki.americanarchive.org/">Wiki</a></li>
+              </ul>
+            </li>
+            <li><a href="/about-the-american-archive/feedback">Feedback</a></li>
+            <li><a href="/donate" id="donate">Donate</a></li>
+
+          </ul>
+
+          <!-- Secondary Nav Links -->
+          <nav class="navbar-right secondary-nav" role="navigation">
+
+            <ul class="nav navbar-nav row">
+              <!-- Nav Search -->
+                  <li class="col-md-6 sec-nav-item"><form class="search-query-form form-inline clearfix" action="https://americanarchive.org/catalog" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <input type="hidden" name="status_code" value="404" />
+    <div class="input-group input-group-sm" role="search">
+
+      <label for="q" class="sr-only">Search...</label>
+      <input type="search" name="q" id="q" placeholder="Search..." class="search_q q form-control" aria-label="Search" />
+
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary search-btn" id="search">
+          <span class="submit-search-text sr-only">Search</span>
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </span>
+    </div>
+    <div class="row">
+      <div class="col-md-12 advanced-link">
+        <a href="/advanced">Advanced Search</a>
+      </div>
+  </div>
+</form></li>
+              <li class="col-md-6 sec-nav-item"><a class="header-fixit" target="_blank" href="http://fixitplus.americanarchive.org/">FIX IT: A TRANSCRIPT GAME</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </nav>
+    <!-- /Main Nav Bar -->
+
+  </div>
+</header>
+
+    <div id="ajax-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal menu" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+
+
+
+    <main id="main-container" class="container" role="main">
+      <div class="row">
+  <div class="col-md-12">
+    <div id="main-flashes">
+      <div class="flash_messages">
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+      <div class="row main-row">
+        <h1>404: Page not Found</h1>
+
+<p>
+  Sorry, but the page you are looking for has not been found. 
+  Try checking the URL for errors and then hit the refresh button on your browser, 
+  or use the links or the search feature in the header to see 
+  if you can navigate to the page you're looking for. 
+  If you still can't find it, 
+  <a href="mailto:aapb_notifications@wgbh.org">contact us</a> and we'll try to help.
+</p>
+
+      </div>
+    </main>
+
+    <footer class="jumbotron" id="footer" role="contentinfo">
+  <div class="container">
+
+    <!-- Row One: Logo -->
+    <div class="row one">
+      <a class="footer-logo" href="/">American Archive of Public Broadcasting</a>
+    </div>
+    <!-- END Row One -->
+
+    <hr>
+
+    <!-- Well: Footer Links -->
+    <nav class="well footer-links" role="navigation">
+      <!-- Row Two: List Links -->
+      <div class="row two">
+          <div class="col-md-6 col-xs-12 clearfix">
+              <div class="panel panel-default naked-panel col-xs-12">
+                <div class="panel-body">
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="/about-the-american-archive">About the AAPB</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/vision-and-mission">Vision &amp; Mission</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/history">History</a></li>
+                      <li class="list-group-item"><a href="/exhibits">Exhibits</a></li>
+                      <li class="list-group-item"><a href="/special_collections">Special Collections</a></li>
+                      <li class="list-group-item"><a href="/participating-orgs">Organizations</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/library-and-education-collaborators">Library and Education Collaborators</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/whats-new">What&#39;s New</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/funding">Funding</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/projects">Projects</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/executive-advisory-council">Executive Advisory Council</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/advisory-committees">Advisory Committees</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/podcast">AAPB Podcast</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/webinars">Webinars</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel panel-default naked-panel col-xs-12">
+                <div class="panel-body">
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="/contact-us">Contact Us</a></li>
+                      <li class="list-group-item"><a href="/advanced">Advanced Search</a></li>
+                      <li class="list-group-item"><a href="/search">Searching the Website</a></li>
+                      <li class="list-group-item"><a href="/on-location">On Location Research</a></li>
+                      <li class="list-group-item"><a href="/faq">FAQ</a></li>
+                      <li class="list-group-item"><a href="/donate">Donate</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/newsletter">Newsletter Signup</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/feedback">Feedback</a></li>
+                      <li class="list-group-item"><a href="/about-the-american-archive/metadata-transcripts">Content Statement</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-xs-12 clearfix">
+              <div class="panel panel-default naked-panel col-xs-12">
+                <div class="panel-body">
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="/help/contribute">Contribute Content</a></li>
+                      <li class="list-group-item"><a href="/help/using-the-ams">Access the AMS</a></li>
+                      <li class="list-group-item"><a href="/help/obtain-metadata">Obtain Metadata</a></li>
+                      <li class="list-group-item"><a href="/resources">Resources</a></li>
+                      <li class="list-group-item"><a href="/help/station-communications-toolkit">Communications Toolkit</a></li>
+                      <li class="list-group-item"><a target="_blank" href="http://americanarchivepb.wordpress.com/">Blog</a></li>
+                      <li class="list-group-item"><a target="_blank" href="http://wiki.americanarchive.org/">Wiki</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel panel-default naked-panel col-xs-12">
+                <div class="panel-body">
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="/legal/orr-rules">ORR Rules of Use</a></li>
+                      <li class="list-group-item"><a href="/legal/tou">Terms of Use</a></li>
+                      <li class="list-group-item"><a href="/legal/privacy">Privacy Policy</a></li>
+                  </ul>
+                    <ul class="social list-unstyled">
+                      <li class="blog"><a class="footer-sprite" href="https://americanarchivepb.wordpress.com/" target="_blank" title="Read the AAPB Blog">Read Our Blog</a></li>
+                      <li class="twitter"><a class="footer-sprite" href="https://twitter.com/amarchivepub" target="_blank" title="Follow us on Twitter">Follow us on Twitter</a></li>
+                      <li class="facebook"><a class="footer-sprite" href="https://www.facebook.com/amarchivepub" target="_blank" title="Like us on Facebook">Like us on Facebook</a></li>
+                      <li class="instagram"><a class="footer-sprite" href="https://www.instagram.com/amarchivepub/" target="_blank" title="Follow us on Instagram">Follow us on Instagram</a></li>
+                      
+                    </ul>
+                    <ul class="social list-unstyled">
+                      <li class="podcast"><a class="footer-sprite" href="https://americanarchive.org/about-the-american-archive/podcast" target="_blank" title="Listen to our Podcast">Listen to our Podcast</a></li>
+                      <li class="mastodon"><a class="footer-sprite" href="https://mastodon.social/@amarchivepub" target="_blank" title="Follow us on Mastodon">Follow us on Mastodon</a></li>
+                      <li class="reddit"><a class="footer-sprite" href="https://www.reddit.com/r/amarchivepub/" target="_blank" title="Join us on reddit">Join us on reddit</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+      </div>
+    </nav><!-- END Footer Links Well -->
+
+    <hr>
+
+    <!-- Row Three: Collaboration -->
+    <div class="row three">
+
+      <ul class="list-group collab">
+        <li class="list-group-item loc"><a href="http://www.loc.gov/" target="_blank" title="The Library of Congress">The Library of Congress</a></li>
+        <li class="list-group-item title"><h3>A<br>Collaboration<br>Between</h3></li>
+        <li class="list-group-item wgbh"><a href="http://openvault.wgbh.org/" target="_blank" title="GBH Archives">GBH Archives</a></li>
+      </ul>
+
+    </div>
+    <!-- END Row Three -->
+
+
+  </div><!-- END Container -->
+</footer><!-- END Jumbotron -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60323667-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-labelledby="newsletter-modal-title" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="newsletter-modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="newsletter-modal-title">Sign up for the AAPB newsletter! <button id="newsletter-close" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button></h4>
+
+        </div>
+        <div class="modal-body">
+          <p>
+            Stay up to date on new exhibits, special collections, projects, and more.
+          </p>
+
+          <p>
+            <a href="/about-the-american-archive/newsletter">Click here to subscribe.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  </body>
+</html>

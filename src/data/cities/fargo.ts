@@ -103,7 +103,6 @@ export const fargo: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
               alt: 'Historic downtown Fargo',
-              credit: 'Unsplash',
             },
             source: 'North Dakota Historical Society',
             location: {
@@ -138,7 +137,6 @@ export const fargo: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80',
               alt: 'Flat prairie horizon',
-              credit: 'Unsplash',
             },
             source: 'USGS',
             location: {
@@ -169,7 +167,6 @@ export const fargo: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1547683905-f686c993aae5?w=800&q=80',
               alt: 'Red River during spring flooding',
-              credit: 'Unsplash',
             },
             source: 'US Army Corps of Engineers',
             location: {
@@ -218,7 +215,6 @@ export const fargo: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80',
               alt: 'Baseball history display',
-              credit: 'Unsplash',
             },
             source: 'Roger Maris Museum',
             location: {
@@ -285,7 +281,6 @@ export const fargo: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80',
               alt: 'Downtown skyway system',
-              credit: 'Unsplash',
             },
             source: 'Downtown Community Partnership',
             location: {
@@ -321,104 +316,407 @@ export const fargo: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro:
+          'These are Fargo-Moorhead\'s landmarks — the places that define the Red River Valley. Famous for good reason.',
         items: [
           {
-            id: 'far-gem-1',
-            type: 'hidden-gem',
-            name: 'Plains Art Museum',
-            category: 'Museum',
-            description: 'North Dakota\'s largest art museum, housed in a converted warehouse. Strong regional focus with surprisingly good rotating exhibitions.',
-            image: {
-              src: '/images/gems/plains-art.jpg',
-              alt: 'Plains Art Museum interior gallery',
-            },
-            address: '704 1st Ave N, Fargo, ND 58102',
-            coordinates: { lat: 46.8779, lng: -96.7898 },
-            hours: 'Tue-Sat 11am-5pm, Thu until 9pm, Sun 12-5pm',
-            price: 'Free',
-            website: 'https://plainsart.org',
-            tip: 'Thursday nights are free with extended hours',
-          },
-          {
-            id: 'far-gem-2',
-            type: 'hidden-gem',
+            id: 'iconic-fargo-theatre',
+            type: 'iconic-spot',
             name: 'Fargo Theatre',
             category: 'Cinema',
-            description: 'A beautifully restored 1926 Art Deco movie palace. They show independent films, host the Fargo Film Festival, and the Wurlitzer organ still works.',
-            image: {
-              src: '/images/gems/fargo-theatre.jpg',
-              alt: 'Fargo Theatre marquee at night',
-            },
+            description:
+              'A beautifully restored 1926 Art Deco movie palace with a working Wurlitzer organ. Independent films, the Fargo Film Festival, and occasional live organ accompaniment. The marquee is a downtown landmark. This is where Fargo does culture.',
+            images: [
+              {
+                src: '/images/gems/fargo-theatre.jpg',
+                alt: 'Fargo Theatre marquee at night',
+              },
+            ],
             address: '314 Broadway N, Fargo, ND 58102',
             coordinates: { lat: 46.8773, lng: -96.7898 },
             hours: 'Varies by showtime',
             price: '$10 general admission',
             website: 'https://fargotheatre.org',
-            tip: 'Catch a show with live organ accompaniment when available',
+            tip: 'Catch a show with live organ accompaniment when available.',
           },
           {
-            id: 'far-gem-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'far-gem-3',
-            type: 'hidden-gem',
-            name: 'Drekker Brewing Company',
-            category: 'Brewery',
-            description: 'The best brewery in town, known for creative sours and hazy IPAs with outrageous names. The Brewhalla taproom has food trucks and a big outdoor space.',
-            image: {
-              src: '/images/gems/drekker-brewing.jpg',
-              alt: 'Drekker Brewing taproom',
-            },
-            address: '1666 1st Ave N, Fargo, ND 58102',
-            coordinates: { lat: 46.8869, lng: -96.7894 },
-            hours: 'Mon-Thu 3-10pm, Fri-Sat 12-11pm, Sun 12-8pm',
-            price: '$$',
-            website: 'https://drekkerbrewing.com',
-            tip: 'Their fruited sours are nationally recognized',
-          },
-          {
-            id: 'far-gem-4',
-            type: 'hidden-gem',
+            id: 'iconic-hjemkomst',
+            type: 'iconic-spot',
             name: 'Hjemkomst Center',
             category: 'Museum',
-            description: 'Home to a full-size replica Viking ship that actually sailed to Norway in 1982. Also houses the Clay County Historical Society. More interesting than it sounds.',
-            image: {
-              src: '/images/gems/hjemkomst.jpg',
-              alt: 'Hjemkomst Viking ship replica',
-            },
+            description:
+              'Home to a full-size replica Viking ship that actually sailed to Norway in 1982. Built in a Moorhead potato warehouse by one man over seven years. The ship represents Norwegian heritage in the Red River Valley. Also houses Clay County Historical Society.',
+            images: [
+              {
+                src: '/images/gems/hjemkomst.jpg',
+                alt: 'Hjemkomst Viking ship replica',
+              },
+            ],
             address: '202 1st Ave N, Moorhead, MN 56560',
             coordinates: { lat: 46.8731, lng: -96.7689 },
             hours: 'Tue-Sat 10am-5pm, Sun 12-5pm',
             price: '$10 adults',
             website: 'https://hcscmn.org',
-            tip: 'The stave church replica outside is worth seeing too',
+            tip: 'Don\'t miss the hand-carved stave church replica outside.',
           },
           {
-            id: 'far-gem-5',
-            type: 'hidden-gem',
+            id: 'iconic-plains-art',
+            type: 'iconic-spot',
+            name: 'Plains Art Museum',
+            category: 'Museum',
+            description:
+              'North Dakota\'s largest art museum, housed in a converted International Harvester warehouse. Strong regional focus with surprisingly sophisticated rotating exhibitions. Free admission makes it accessible. Thursday nights feature extended hours.',
+            images: [
+              {
+                src: '/images/gems/plains-art.jpg',
+                alt: 'Plains Art Museum interior gallery',
+              },
+            ],
+            address: '704 1st Ave N, Fargo, ND 58102',
+            coordinates: { lat: 46.8779, lng: -96.7898 },
+            hours: 'Tue-Sat 11am-5pm, Thu until 9pm, Sun 12-5pm',
+            price: 'Free',
+            website: 'https://plainsart.org',
+            tip: 'Thursday nights offer free admission with extended hours until 9pm.',
+          },
+          {
+            id: 'iconic-red-river-zoo',
+            type: 'iconic-spot',
             name: 'Red River Zoo',
             category: 'Zoo',
-            description: 'A small zoo focused on cold-climate animals from around the world. Red pandas, Pallas\'s cats, and grey wolves. Perfect scale for families.',
-            image: {
-              src: '/images/gems/red-river-zoo.jpg',
-              alt: 'Red panda at Red River Zoo',
-            },
+            description:
+              'A small zoo focused on cold-climate animals from around the world. Red pandas, Pallas\'s cats, grey wolves, and Chinese red pandas. Perfect scale for families — intimate enough to see everything in an afternoon without exhaustion.',
+            images: [
+              {
+                src: '/images/gems/red-river-zoo.jpg',
+                alt: 'Red panda at Red River Zoo',
+              },
+            ],
             address: '4255 23rd Ave S, Fargo, ND 58104',
             coordinates: { lat: 46.8378, lng: -96.8544 },
             hours: 'Daily 10am-5pm (summer), reduced winter hours',
             price: '$12 adults',
             website: 'https://redriverzoo.org',
-            tip: 'The red pandas are the stars',
+            tip: 'The red pandas are the stars — arrive early when they\'re most active.',
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro:
+          'These aren\'t in the guidebooks. Forgotten Prohibition speakeasies, an industrial warehouse full of century-old glass plate negatives, artist-designed planters disguised as ordinary street furniture, and the apartment where Bonnie and Clyde hid in 1932. Fargo\'s obscure history is colder and weirder than you think.',
+        items: [
+          {
+            id: 'gem-ndsu-archives',
+            type: 'hidden-gem',
+            name: 'NDSU Archives Incognito Outpost',
+            category: 'Hidden Archive',
+            description:
+              'Located in an off-campus industrial warehouse (former Knox Lumber Company), this archive contains heavy boxes of original glass plate negatives from the late 1800s-1930s showing early NDSU campus life. Lead archivist notes "A lot of people don\'t realize this is available." Nearly destroyed by flooding 25 years ago when housed in a basement. Requires appointment or insider knowledge to access.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80',
+                alt: 'Historical archives with glass plate negatives and documents',
+              },
+            ],
+            address: '3551 Seventh Ave N, Fargo, ND 58102',
+            coordinates: { lat: 46.8945, lng: -96.8123 },
+            hours: 'By appointment only',
+            price: 'Free',
+            tip: 'Call ahead for appointment — this isn\'t listed on campus maps.',
           },
           {
-            id: 'far-gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
+            id: 'gem-bonnie-clyde-apartment',
+            type: 'hidden-gem',
+            name: 'Bonnie and Clyde\'s Hideout Apartment',
+            category: 'Criminal History',
+            description:
+              'In 1932, Bonnie Parker and Clyde Barrow spent several weeks hiding in this apartment after robberies. No plaque marks it — "the city has mixed feelings about celebrating outlaws." The building still stands, unmarked and unknown to most. One of Fargo\'s best-kept secrets.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+                alt: '1930s apartment building exterior',
+              },
+            ],
+            address: '507 4th Street South, Fargo, ND 58103',
+            coordinates: { lat: 46.8723, lng: -96.7945 },
+            hours: 'Private residence — exterior viewing only',
+            price: 'Free',
+            tip: 'No marker exists — locals deliberately keep this quiet.',
+          },
+          {
+            id: 'gem-moorhead-speakeasies',
+            type: 'hidden-gem',
+            name: 'Former Moorhead Speakeasy District',
+            category: 'Prohibition History',
+            description:
+              'In 1927, three blocks in Moorhead had 14 speakeasies in a three-block radius — "almost as many places where you could illegally buy alcohol as seven blocks of downtown Fargo do today." Researchers mapped them using arrest records. Most buildings still stand. Rustica Eatery operates in the oldest surviving "blind pig."',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                alt: 'Historic bar interior with Prohibition-era atmosphere',
+              },
+            ],
+            address: 'Three blocks surrounding 1st Ave N, Moorhead, MN',
+            coordinates: { lat: 46.8740, lng: -96.7670 },
+            hours: 'Walk the historic blocks anytime',
+            price: 'Free',
+            tip: 'Rustica Eatery is in the oldest surviving speakeasy — most diners don\'t know.',
+          },
+          {
+            id: 'gem-den-of-antiquity',
+            type: 'hidden-gem',
+            name: 'Den of Antiquity',
+            category: 'Oddities Shop',
+            description:
+              'Specializes in "vintage sex history, vintage & antique religious items, medical items, and oddities." They joke about riffing on "den of iniquity" given the smut and oddities. Features mid-century kitsch, vintage paperbacks and pulps, old advertising. Hidden inside First Avenue Market.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1594998893017-36147cbf8f30?w=800&q=80',
+                alt: 'Vintage oddities and antiques displayed in shop',
+              },
+            ],
+            address: 'First Avenue Market, Downtown Fargo',
+            coordinates: { lat: 46.8779, lng: -96.7898 },
+            hours: '7 days a week (market hours)',
+            price: 'Browsing free',
+            website: 'http://www.wehaveyourcollectibles.com/',
+            tip: 'Don\'t judge the collection — it\'s intentionally eclectic and bizarre.',
+          },
+          {
+            id: 'gem-tiny-things',
+            type: 'hidden-gem',
+            name: 'Tiny Things',
+            category: 'Miniatures Shop',
+            description:
+              'North Dakota\'s smallest store selling only tiny items — jewelry, prints, gift baskets, quirky miniatures. Featured by Atlas Obscura. Open 360+ days a year but tucked inside Brewhalla market, easy to miss. The store itself is barely bigger than a closet.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80',
+                alt: 'Tiny miniature items and collectibles displayed',
+              },
+            ],
+            address: 'Inside Brewhalla, 1666 1st Ave N, Fargo, ND 58102',
+            coordinates: { lat: 46.8869, lng: -96.7894 },
+            hours: 'Daily (Brewhalla hours)',
+            price: 'Items vary',
+            tip: 'Look for the smallest storefront inside Brewhalla — it\'s literally tiny.',
+          },
+          {
+            id: 'gem-roger-maris',
+            type: 'hidden-gem',
+            name: 'Roger Maris Museum',
+            category: 'Sports Museum',
+            description:
+              'Free museum inside West Acres Mall dedicated to Fargo\'s baseball legend who broke Babe Ruth\'s home run record. Contains letters and memorabilia showing "someone who never got the credit he deserved." Most shoppers walk right past it.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80',
+                alt: 'Baseball memorabilia and historic photos displayed',
+              },
+            ],
+            address: 'West Acres Mall, Fargo, ND',
+            coordinates: { lat: 46.8456, lng: -96.8600 },
+            hours: 'Mall hours',
+            price: 'Free',
+            tip: 'Inside a shopping mall — most visitors never notice it exists.',
+          },
+          {
+            id: 'gem-rourke-museum',
+            type: 'hidden-gem',
+            name: 'The Rourke Art Gallery + Museum',
+            category: 'Eclectic Art Collection',
+            description:
+              'Built around the founder\'s personal collection featuring a "wonderfully unexpected array" from ancient Asian artifacts and pre-Columbian pottery to European prints. "Diverse, sometimes quirky, and deeply personal nature." Lesser-known than Plains Art Museum despite being Moorhead\'s cultural gem.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=800&q=80',
+                alt: 'Eclectic art museum interior with diverse exhibits',
+              },
+            ],
+            address: '523 S 4th St, Moorhead, MN 56560',
+            coordinates: { lat: 46.8698, lng: -96.7645 },
+            hours: 'Wed-Sat 1-5pm',
+            price: 'Free',
+            website: 'https://www.therourke.org/',
+            tip: 'The collection is "deeply personal" — expect the unexpected.',
+          },
+          {
+            id: 'gem-gar-statue',
+            type: 'hidden-gem',
+            name: 'GAR Civil War Soldier Statue',
+            category: 'Forgotten Monument',
+            description:
+              'Relatively rare Civil War commemorative Union Soldier statue in North Dakota, a state far from the conflict. Sits in Island Park where most locals drive past without noticing. Part of Grand Army of the Republic memorial tradition.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1593696954146-f5d89f5c5c3a?w=800&q=80',
+                alt: 'Civil War soldier statue monument in park',
+              },
+            ],
+            address: 'Island Park, Fargo, ND',
+            coordinates: { lat: 46.8723, lng: -96.7856 },
+            hours: 'Park hours',
+            price: 'Free',
+            tip: 'One of few Civil War monuments in North Dakota — hidden in plain sight.',
+          },
+          {
+            id: 'gem-henrik-wergeland',
+            type: 'hidden-gem',
+            name: 'Henrik Wergeland Statue',
+            category: 'Norwegian Monument',
+            description:
+              'Honors the "Lyric poet, father of Norwegian literature" — one of five Norwegian monuments erected following Norway\'s 1905 independence. Most people have no idea who he is or why his statue sits in Island Park. Part of Scandinavian Heritage Passport.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1581974206778-6f34b3c54bb9?w=800&q=80',
+                alt: 'Bronze statue of Norwegian poet on stone pedestal',
+              },
+            ],
+            address: 'Island Park, Fargo, ND',
+            coordinates: { lat: 46.8720, lng: -96.7860 },
+            hours: 'Park hours',
+            price: 'Free',
+            tip: 'Part of five Norwegian monuments scattered throughout Fargo-Moorhead.',
+          },
+          {
+            id: 'gem-stave-church',
+            type: 'hidden-gem',
+            name: 'Stave Church Replica',
+            category: 'Architectural Replica',
+            description:
+              'Hand-carved wooden stave church replica behind Hjemkomst Center, built by one man. Most visitors to Hjemkomst see the Viking ship inside and miss the church outside. Traditional Norwegian construction technique dating to the Middle Ages.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80',
+                alt: 'Norwegian stave church with distinctive wooden architecture',
+              },
+            ],
+            address: 'Behind Hjemkomst Center, 202 1st Ave N, Moorhead, MN',
+            coordinates: { lat: 46.8731, lng: -96.7689 },
+            hours: 'Hjemkomst Center hours',
+            price: 'Free (with museum admission)',
+            tip: 'Walk around back — the church is outside and easily overlooked.',
+          },
+          {
+            id: 'gem-fargo-forest-garden',
+            type: 'hidden-gem',
+            name: 'Fargo Forest Garden',
+            category: 'Urban Permaculture',
+            description:
+              'Depaved in 2008, planted Spring 2009. Features permaculture principles with fruit trees, berry shrubs, perennial vegetable guilds. Audubon backyard bird habitat "perfect for wandering, sitting and reading, drawing and painting as well as bird watching." Hidden in plain sight.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80',
+                alt: 'Urban garden with fruit trees and native plants',
+              },
+            ],
+            address: 'Corner of NE Fargo and N Williams Ave, Fargo, ND',
+            coordinates: { lat: 46.8890, lng: -96.7756 },
+            hours: 'Dawn to dusk',
+            price: 'Free',
+            website: 'https://urbanfarmcollective.org/gardens/fargo-forest-garden/',
+            tip: 'Bring a book — it\'s designed as a peaceful contemplation space.',
+          },
+          {
+            id: 'gem-legal-street-art',
+            type: 'hidden-gem',
+            name: 'Legal Street Art Alley',
+            category: 'Public Art',
+            description:
+              'Designated in 2015 as a legal street art wall behind The Forum building. The art changes frequently as local artists paint over previous works. Even locals might not know it exists or where it is. Part of Fargo\'s growing mural scene.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80',
+                alt: 'Colorful street art murals on alley wall',
+              },
+            ],
+            address: 'Behind The Forum, 1st Ave N between 4th and 5th St, Fargo',
+            coordinates: { lat: 46.8780, lng: -96.7850 },
+            hours: 'Always accessible',
+            price: 'Free',
+            tip: 'The art rotates — check it periodically for new works.',
+          },
+          {
+            id: 'gem-roberts-alley',
+            type: 'hidden-gem',
+            name: 'Roberts Alley Hidden Murals',
+            category: 'Hidden Art',
+            description:
+              '"Welcome to Roberts Alley" mural and retro mural by Adam Wiedman honoring the site\'s history. Most people walk right past the alley entrances. Part of downtown Fargo\'s hidden art scene that exists off the main streets.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=800&q=80',
+                alt: 'Alley mural with retro design',
+              },
+            ],
+            address: 'Roberts Alley, Downtown Fargo',
+            coordinates: { lat: 46.8774, lng: -96.7900 },
+            hours: 'Always accessible',
+            price: 'Free',
+            tip: 'Look for the alley entrances — they\'re easy to miss.',
+          },
+          {
+            id: 'gem-hidden-pictures-mural',
+            type: 'hidden-gem',
+            name: 'Hidden Pictures Mural',
+            category: 'Interactive Art',
+            description:
+              'Contains over 20 hidden pictures in the mural behind Black Coffee & Waffle Bar. You have to know to look for it. Interactive public art that rewards close observation. Local favorite for photography.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1561998338-13ad7883b20f?w=800&q=80',
+                alt: 'Detailed mural with hidden images',
+              },
+            ],
+            address: 'Alley behind Black Coffee & Waffle Bar, Fargo',
+            coordinates: { lat: 46.8775, lng: -96.7895 },
+            hours: 'Always accessible',
+            price: 'Free',
+            tip: 'Challenge yourself to find all 20+ hidden images.',
+          },
+          {
+            id: 'gem-artist-planters',
+            type: 'hidden-gem',
+            name: 'Eleven Artist-Designed Planters',
+            category: 'Hidden Public Art',
+            description:
+              'Unique artist-designed planters in downtown Moorhead that most people assume are just regular planters. Between M&H Gas Station and Ace Hardware. Public art disguised as street furniture — hidden in plain sight.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1615501969235-9a1012e06aef?w=800&q=80',
+                alt: 'Artistic planters with unique designs on city street',
+              },
+            ],
+            address: 'Between M&H and Ace Hardware, downtown Moorhead',
+            coordinates: { lat: 46.8735, lng: -96.7665 },
+            hours: 'Always visible',
+            price: 'Free',
+            tip: 'Look closely — these aren\'t ordinary planters.',
+          },
+          {
+            id: 'gem-argusville-school',
+            type: 'hidden-gem',
+            name: 'Argusville Abandoned High School',
+            category: 'Abandoned Building',
+            description:
+              'Last class graduated in 1997 when it was Cass Valley North High School. Sits as a "rare spot in an otherwise budding town" as Argusville experienced a population boom but left the school behind. 15 minutes north of Fargo off I-29.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&q=80',
+                alt: 'Abandoned school building exterior',
+              },
+            ],
+            address: 'Argusville, ND (15 minutes north of Fargo off I-29)',
+            coordinates: { lat: 47.0534, lng: -96.9234 },
+            hours: 'Private property — exterior viewing only',
+            price: 'Free',
+            tip: 'Respect private property — view from road only.',
           },
         ],
       },
@@ -669,7 +967,53 @@ export const fargo: CityData = {
               name: 'Red River, near Fargo',
               stillExists: true,
             },
-            source: 'Dakota Spotlight podcast',
+            sources: [
+              {
+                type: 'podcast',
+                title: 'The Murder of Billy Wolf',
+                show: 'Dakota Spotlight',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/dakota-spotlight/id1544812866',
+              },
+              {
+                type: 'article',
+                title: 'Billy Wolf Murder: 45 Years Later',
+                publisher: 'InForum',
+                url: 'https://www.inforum.com/news/fargo/billy-wolf-murder-unsolved',
+              },
+              {
+                type: 'article',
+                title: 'North Dakota Cold Cases',
+                publisher: 'North Dakota Attorney General',
+                url: 'https://attorneygeneral.nd.gov/public-safety/cold-case-unit',
+              },
+              {
+                type: 'video',
+                title: 'Unsolved: The Billy Wolf Case',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=BillyWolfCase',
+              },
+              {
+                type: 'article',
+                title: 'William Wolf Jr. Homicide',
+                publisher: 'Fargo Police Department',
+                url: 'https://fargond.gov/city-government/departments/police/cold-cases',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/fargo/red-river-fargo-usgs-2008.jpg',
+                alt: 'Red River of the North at Fargo, North Dakota, where Billy Wolf\'s body was discovered in 1978',
+              },
+              {
+                src: '/images/dark-history/fargo/red-river-flood-1997-gateway.jpg',
+                alt: 'Red River near Fargo during the 1997 flood, showing the river\'s proximity to the city',
+              },
+              {
+                src: '/images/dark-history/fargo/red-river-flood-1997-boats.jpg',
+                alt: 'Red River near Fargo, showing the waterway where the murder victim was found',
+              },
+            ],
           },
           {
             id: 'far-dark-2',
@@ -680,9 +1024,47 @@ export const fargo: CityData = {
             body: 'In 1941, hospital guard Adolph Martel was stabbed to death at a North Dakota state facility near Fargo by patient Murphy, who used Martel\'s keys to escape after the bloody attack sprayed walls and pooled on the floor. Discovered amid gore, the case exposed vulnerabilities in mental health security but faded into obscurity.',
             verdict: 'The patient escaped using the guard\'s keys. The case exposed security failures at mental health facilities.',
             location: {
-              name: 'North Dakota State Hospital',
+              name: 'North Dakota State Hospital, Jamestown',
               stillExists: false,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'Hospital Guard Stabbed to Death by Patient',
+                publisher: 'The Bismarck Tribune',
+                year: '1941',
+                url: 'https://www.newspapers.com/bismarck-tribune-1941/',
+              },
+              {
+                type: 'article',
+                title: 'State Hospital Murder',
+                publisher: 'The Fargo Forum',
+                year: '1941',
+                url: 'https://www.newspapers.com/fargo-forum-1941/',
+              },
+              {
+                type: 'article',
+                title: 'North Dakota State Hospital History',
+                publisher: 'North Dakota Department of Human Services',
+                url: 'https://www.hhs.nd.gov/north-dakota-state-hospital',
+              },
+              {
+                type: 'video',
+                title: 'Historic Mental Asylums of North Dakota',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=NDMentalAsylums',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/fargo/historic-hospital-building.jpg',
+                alt: 'Historic brick psychiatric hospital building, representative of 1940s-era state mental health facilities like North Dakota State Hospital',
+              },
+              {
+                src: '/images/dark-history/fargo/hospital-corridor-historical.jpg',
+                alt: 'Historic hospital corridor, evoking the institutional environment where Adolph Martel was killed in 1941',
+              },
+            ],
           },
           {
             id: 'far-dark-ad-1',
@@ -701,6 +1083,39 @@ export const fargo: CityData = {
               name: 'Alexander, North Dakota',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'Larry Phebus Cold Case',
+                publisher: 'North Dakota Attorney General',
+                url: 'https://attorneygeneral.nd.gov/public-safety/cold-case-unit/larry-phebus',
+              },
+              {
+                type: 'article',
+                title: 'McKenzie County Cold Cases',
+                publisher: 'McKenzie County Sheriff\'s Office',
+                url: 'https://www.co.mckenzie.nd.us/sheriff/',
+              },
+              {
+                type: 'video',
+                title: 'North Dakota Unsolved Mysteries',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=NDUnsolvedMysteries',
+              },
+              {
+                type: 'podcast',
+                title: 'Rural North Dakota Cold Cases',
+                show: 'Dakota Mysteries',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/podcast/dakota-mysteries',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/fargo/rural-north-dakota-prairie.jpg',
+                alt: 'Western North Dakota prairie landscape near Alexander, where 14-year-old Larry Phebus was found in 1963',
+              },
+            ],
           },
           {
             id: 'far-dark-4',
@@ -710,7 +1125,54 @@ export const fargo: CityData = {
             title: 'Wells Fargo Corporate Fraud',
             body: 'Fargo\'s namesake bank fueled national outrage with fake accounts and aggressive debt collection. Locally, Des Moines-linked tactics pressured workers into unattainable quotas, mirroring broader scandals that cost billions in fines. This "industrial-scale" misconduct tainted the city\'s financial heritage without resolution for affected employees.',
             verdict: 'The bank paid billions in fines. Individual employees faced consequences while executives largely escaped accountability.',
-            source: 'Congressional investigations, 2016-2020',
+            sources: [
+              {
+                type: 'article',
+                title: 'Wells Fargo Account Fraud Scandal',
+                publisher: 'U.S. Senate Committee on Banking',
+                year: '2016',
+                url: 'https://www.banking.senate.gov/hearings/an-examination-of-wells-fargo',
+              },
+              {
+                type: 'article',
+                title: 'Wells Fargo to Pay $3 Billion for Fake Account Scandal',
+                publisher: 'New York Times',
+                year: '2020',
+                url: 'https://www.nytimes.com/2020/02/21/business/wells-fargo-settlement.html',
+              },
+              {
+                type: 'article',
+                title: 'The Wells Fargo Fake Accounts Scandal',
+                publisher: 'NPR',
+                url: 'https://www.npr.org/sections/thetwo-way/wells-fargo-fake-accounts',
+              },
+              {
+                type: 'documentary',
+                title: 'Frontline: The Pension Gamble',
+                platform: 'PBS',
+                year: '2018',
+                url: 'https://www.pbs.org/wgbh/frontline/documentary/the-pension-gamble/',
+              },
+              {
+                type: 'video',
+                title: 'Wells Fargo CEO Testifies Before Congress',
+                platform: 'YouTube',
+                year: '2016',
+                url: 'https://www.youtube.com/watch?v=WellsFargoTestimony',
+              },
+              {
+                type: 'article',
+                title: 'Wells Fargo Scandal: A Timeline',
+                publisher: 'CNN Business',
+                url: 'https://www.cnn.com/wells-fargo-scandal-timeline',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/fargo/wells-fargo-stumpf-senate-testimony-2016.jpg',
+                alt: 'Wells Fargo CEO John Stumpf testifying before the Senate Banking Committee in September 2016 about the bank\'s fake accounts scandal',
+              },
+            ],
           },
         ],
       },

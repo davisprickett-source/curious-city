@@ -2,14 +2,14 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
-import { Header } from '@/components'
+import { Header, Footer } from '@/components'
 
 export const metadata: Metadata = {
   title: 'History | Curious City',
   description: 'Long-form writing about American cities - their histories, contradictions, and what makes them tick.',
 }
 
-export default function HistoryPage() {
+export default async function HistoryPage() {
   const history = getAllHistory()
 
   // Sort by date, newest first
@@ -18,6 +18,11 @@ export default function HistoryPage() {
     const dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0
     return dateB - dateA
   })
+
+  // Pre-load all city data for the articles
+  const uniqueCitySlugs = Array.from(new Set(sortedHistory.map(a => a.citySlug)))
+  const cities = await Promise.all(uniqueCitySlugs.map(slug => getCity(slug)))
+  const cityMap = new Map(cities.filter(c => c !== null).map(c => [c!.slug, c!]))
 
   return (
     <>
@@ -39,7 +44,7 @@ export default function HistoryPage() {
           {/* History Grid */}
           <div className="grid gap-6 md:grid-cols-2">
             {sortedHistory.map((article) => {
-              const city = getCity(article.citySlug)
+              const city = cityMap.get(article.citySlug)
               const cityName = city?.name || article.citySlug
 
               // Get first paragraph as excerpt
@@ -89,13 +94,7 @@ export default function HistoryPage() {
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

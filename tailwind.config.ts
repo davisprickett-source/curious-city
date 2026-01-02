@@ -63,6 +63,9 @@ const config: Config = {
       transitionTimingFunction: {
         'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
+      zIndex: {
+        '60': '60', // Premium mobile menu (above header z-50)
+      },
     },
   },
   plugins: [],

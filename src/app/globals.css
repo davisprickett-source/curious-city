@@ -161,4 +161,37 @@
       opacity: 0.9;
     }
   }
+
+  /* Premium mobile menu utilities */
+  .h-screen-dynamic {
+    height: 100vh;
+    height: 100lvh;
+  }
+
+  .overscroll-contain {
+    overscroll-behavior: contain;
+  }
+
+  .scroll-smooth-menu {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gpu-accelerate {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Screen reader only class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
 }

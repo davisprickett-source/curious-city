@@ -53,6 +53,7 @@ const statusLabels: Record<EventStatus, string> = {
 export function EventCard({ event, showFullDetails = true }: EventCardProps) {
   const status = getEventStatus(event)
   const displayDate = getEventDisplayDate(event)
+  // @ts-ignore - Variable for future use
   const displayTime = getEventDisplayTime(event)
 
   return (

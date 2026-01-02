@@ -321,7 +321,7 @@ export const raleigh: CityData = {
         items: [
           {
             id: 'iconic-1',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Irregardless Cafe',
             category: 'Restaurant',
             description: 'A Raleigh institution since 1975, serving seasonal Southern fare with live jazz nightly. The vibe is unhurried and the sweet potato biscuits are legendary.',
@@ -336,7 +336,7 @@ export const raleigh: CityData = {
           },
           {
             id: 'iconic-2',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Boylan Bridge',
             category: 'View',
             description: 'A pedestrian bridge with the best skyline view in the city. Locals gather here at sunset, especially when the light hits the downtown glass just right.',
@@ -356,7 +356,7 @@ export const raleigh: CityData = {
           },
           {
             id: 'iconic-3',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'JC Raulston Arboretum',
             category: 'Garden',
             description: 'NC State\'s free public garden with over 6,000 plant taxa. The Japanese garden and winter-blooming camellias are worth a dedicated visit.',
@@ -371,7 +371,7 @@ export const raleigh: CityData = {
           },
           {
             id: 'iconic-4',
-            type: 'hidden-gem',
+            type: 'iconic-spot',
             name: 'Oakwood Cemetery',
             category: 'Historic Site',
             description: 'A sprawling Victorian garden cemetery with winding paths, ancient oaks, and graves dating to the Civil War. Eerily peaceful, especially in fog.',
@@ -397,18 +397,48 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'The Third House Speakeasy',
             category: 'Underground & Secret',
-            description: 'Actual 1920s Prohibition speakeasy space opening Summer 2025 beneath Sir Walter Apartments. No signage, unmarked alleyway entrance, zero Google/GPS presence. 25+ only, strict dress code, photography discouraged.',
-            location: 'Downtown (unmarked)',
-            tip: 'Ask locals who know — intentionally hidden by design',
+            description: 'Opened December 2024 in an actual 1920s Prohibition-era speakeasy space beneath the Sir Walter Hotel. The venue is deliberately difficult to find — there\'s no signage, no Google Maps listing, and the entrance is through an unmarked alleyway accessible only to those in the know. Inside, you\'ll find period-accurate decor with dark wood paneling, vintage fixtures, and intimate alcoves lit by candlelight. The cocktail menu leans heavily into classics from the Jazz Age: properly made sidecars, Bee\'s Knees, and French 75s. Owner Barrett Mosko designed it as an homage to authentic speakeasy culture, where discretion was paramount and discovery felt like a secret handshake. The venue enforces a 25+ age requirement and maintains a strict dress code (no athletic wear, no baseball caps). Photography is actively discouraged to preserve the mystique. Live jazz on weekends. Reservations are hard to come by and often booked weeks in advance.',
+            location: '512 S Wilmington St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7754, lng: -78.6364 },
+            hours: 'Wed-Sat 5pm-midnight',
+            price: '$$$',
+            website: 'https://www.instagram.com/third.house.dtr/',
+            tip: 'Follow their Instagram for reservation announcements — they release tables in batches',
+            accessibility: 'Stairs only; underground location not wheelchair accessible',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/third-house-1.png',
+                alt: 'The Third House Speakeasy entrance',
+              },
+              {
+                src: '/Raleigh/hidden-gems/third-house-2.png',
+                alt: 'The Third House Speakeasy interior',
+              },
+            ],
           },
           {
             id: 'gem-2',
             type: 'hidden-gem',
             name: 'Sous Terre',
             category: 'Underground & Secret',
-            description: 'Underground speakeasy beneath Jolie French bistro, opened May 2024. Name means "underground" in French. Warm amber lighting, plush seating, craft cocktails.',
-            location: 'Beneath Jolie',
-            tip: 'Enter through the restaurant',
+            description: 'Literally "underground" in French, this speakeasy opened May 2024 beneath Jolie French bistro on Glenwood South. To find it, walk through Jolie\'s dining room and head downstairs to a completely different world. The space transforms the restaurant\'s basement into an intimate cocktail lounge with warm amber lighting, plush velvet seating, exposed brick, and a moody jazz soundtrack. The cocktail menu focuses on French-inspired classics with creative twists — think lavender-infused Aviation cocktails and cognac-based concoctions. The bartenders work slowly and deliberately, treating each drink like a small production. Unlike some speakeasies that feel gimmicky, Sous Terre earns its name through genuine atmosphere. No reservations required, but seating is limited to about 40 people, so arrive early on weekends. The vibe is date night, late-night conversations, and escaping the chaos of Glenwood above.',
+            location: '420 Glenwood Ave, Raleigh, NC 27603',
+            coordinates: { lat: 35.7842, lng: -78.6412 },
+            hours: 'Thu-Sat 5pm-midnight',
+            price: '$$-$$$',
+            website: 'https://jolieraleigh.com/',
+            tip: 'Enter through Jolie restaurant and head downstairs — first come, first served',
+            accessibility: 'Basement location; stairs only',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/sous-terre-1.png',
+                alt: 'Sous Terre underground speakeasy interior',
+              },
+              {
+                src: '/Raleigh/hidden-gems/sous-terre-2.png',
+                alt: 'Sous Terre warm amber lighting and seating',
+              },
+            ],
           },
           {
             id: 'gem-3',
@@ -418,6 +448,16 @@ export const raleigh: CityData = {
             description: 'Off-limits urban exploration site with graffiti and mysterious shrine containing recently-lit candles. Associated with campus ghost stories and a 1988 murder plot. Sealed after 9/11 but legends persist.',
             location: 'NC State Campus (off-limits)',
             tip: 'Do not attempt to access — for historical interest only',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/steam-tunnels-1.png',
+                alt: 'NC State steam tunnels with graffiti',
+              },
+              {
+                src: '/Raleigh/hidden-gems/steam-tunnels-2.png',
+                alt: 'Steam tunnel interior',
+              },
+            ],
           },
           {
             id: 'gem-ad-1',
@@ -432,6 +472,12 @@ export const raleigh: CityData = {
             description: 'Crumbling abandoned highway that disappears beneath Falls Lake. Hike 10+ minutes down the road before it vanishes underwater. Flooded when Falls Lake was created.',
             location: 'Falls Lake area',
             tip: 'Wear hiking boots — road is crumbling',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/ghost-road.png',
+                alt: 'Old Highway 98 abandoned road disappearing into Falls Lake',
+              },
+            ],
           },
           {
             id: 'gem-5',
@@ -440,6 +486,12 @@ export const raleigh: CityData = {
             category: 'Abandoned & Lost',
             description: '150+ year-old abandoned gristmill and village from the 1860s, hidden along Marsh Creek in overgrown woods. Once-thriving mill community now forgotten.',
             location: 'Marsh Creek',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/millbrook.png',
+                alt: 'Millbrook Village abandoned gristmill ruins',
+              },
+            ],
           },
           {
             id: 'gem-6',
@@ -448,15 +500,69 @@ export const raleigh: CityData = {
             category: 'Abandoned & Lost',
             description: 'Early 1900s trolley park with roller coaster, carousel, and dance pavilion. Completely demolished; only exists in historical records. Raleigh\'s lost amusement park from the streetcar era.',
             location: 'Historical site only',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/ghost-site-1.png',
+                alt: 'Historical image of Bloomsbury Park',
+              },
+              {
+                src: '/Raleigh/hidden-gems/ghost-site-2.png',
+                alt: 'Bloomsbury Park trolley and amusement area',
+              },
+            ],
+          },
+          {
+            id: 'gem-6b',
+            type: 'hidden-gem',
+            name: 'Harrelson Hall (Demolished 2016)',
+            category: 'Abandoned & Lost',
+            description: 'The first and only cylindrical classroom building ever constructed on an American university campus. Built in 1961 on NC State\'s campus, Harrelson Hall was a bold architectural experiment — a 206-foot-diameter concrete drum with continuous circular hallways that looped around the building\'s core. Students called it "the round building," and walking its curved corridors created a disorienting, almost nautical sensation. The building had no right angles, which sounds cool in theory but proved nightmarish in practice. Furniture didn\'t fit. Sound bounced weirdly. Students got lost. The circular design meant every classroom had a curved back wall, making teaching awkward. Despite its problems, Harrelson became iconic — a symbol of mid-century optimism about futuristic architecture. But by the 2000s, it was obsolete, cramped, and expensive to maintain. NC State demolished it in 2016. Students mourned its loss, not because it was functional, but because it was weird, beloved, and irreplaceable. Photos and memories are all that remain of America\'s brief, strange experiment with round classrooms.',
+            location: 'Former NC State campus site (now open space)',
+            coordinates: { lat: 35.7847, lng: -78.6703 },
+            website: 'https://www.lib.ncsu.edu/news/special-collections/remembering-harrelson-hall',
+            tip: 'NC State Libraries archives historic photos and student memories',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/harrelson-hall-1.png',
+                alt: 'Harrelson Hall cylindrical building exterior before demolition',
+              },
+              {
+                src: '/Raleigh/hidden-gems/harrelson-hall-2.png',
+                alt: 'Harrelson Hall iconic circular hallways',
+              },
+            ],
           },
           {
             id: 'gem-7',
             type: 'hidden-gem',
             name: 'Juniper Level Botanic Garden',
             category: 'Secret Garden',
-            description: 'Private 28-acre wonderland with rare plants found nowhere else on Earth. Features Mystic Falls (20-foot waterfall with walkway underneath). Only open 8 weekends per year by appointment.',
-            location: 'Private property',
-            tip: 'Free but must reserve in advance — check website',
+            description: 'A 28-acre private botanical wonderland tucked in Raleigh\'s suburbs, cultivated over 30+ years by plantsman Tony Avent. The garden houses one of the most extensive rare plant collections in North America — thousands of species you won\'t find anywhere else, including plants from expeditions to Asia, South America, and remote ecosystems worldwide. The crown jewel is Mystic Falls, a 20-foot waterfall with a walkway that lets you walk underneath the cascade. Paths wind through themed gardens: a bamboo forest, carnivorous bog, tropical greenhouse, and shaded fern grottos. Avent opens the garden to the public only 8 weekends per year (spring and fall), and reservations fill up fast. Tours are free but require advance booking through the website. This isn\'t a manicured public garden — it\'s a living laboratory where rare specimens are tested, propagated, and studied. Serious plant collectors make pilgrimages here.',
+            location: '9241 Sauls Rd, Raleigh, NC 27603',
+            coordinates: { lat: 35.6947, lng: -78.5394 },
+            hours: 'Open 8 weekends per year by reservation only (check website)',
+            price: 'Free (donations accepted)',
+            website: 'https://www.juniperlevelbotanicgarden.org/',
+            tip: 'Reservations open months in advance and fill within days — set a reminder',
+            accessibility: 'Natural terrain; some uneven paths',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/juniper-1.png',
+                alt: 'Juniper Level Botanic Garden rare plants',
+              },
+              {
+                src: '/Raleigh/hidden-gems/juniper-2.png',
+                alt: 'Mystic Falls waterfall at Juniper Level',
+              },
+              {
+                src: '/Raleigh/hidden-gems/juniper-3.png',
+                alt: 'Botanical garden pathways',
+              },
+              {
+                src: '/Raleigh/hidden-gems/juniper-4.png',
+                alt: 'Garden landscape views',
+              },
+            ],
           },
           {
             id: 'gem-ad-2',
@@ -471,6 +577,16 @@ export const raleigh: CityData = {
             description: 'Nearly century-old garden from the 1930s hidden behind an ivy curtain. Privately-owned oasis behind a normal sidewalk. Rare public tours for $15.',
             location: 'Behind ivy curtain on sidewalk',
             tip: 'Watch for rare tour announcements',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/secret-garden.png',
+                alt: 'Isabelle Bowen Henderson Secret Garden behind ivy curtain',
+              },
+              {
+                src: '/Raleigh/hidden-gems/secret-garden-2.png',
+                alt: 'Secret garden pathways and landscaping',
+              },
+            ],
           },
           {
             id: 'gem-9',
@@ -480,6 +596,16 @@ export const raleigh: CityData = {
             description: 'Built by WPA into a natural ravine in 1939. 6.5 acres with 1,200 roses of 60 varieties. Transformed from "unsightly clay pit of red mud and weeds" into terraced landscape with 2,000-seat amphitheater.',
             location: 'Behind Raleigh Little Theatre',
             tip: 'Free and open to public',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/rose-garden-1.png',
+                alt: 'Raleigh Little Theatre Rose Garden terraced landscape',
+              },
+              {
+                src: '/Raleigh/hidden-gems/rose-garden-2.png',
+                alt: 'Rose garden with 1,200 roses in bloom',
+              },
+            ],
           },
           {
             id: 'gem-10',
@@ -488,14 +614,44 @@ export const raleigh: CityData = {
             category: 'Secret Garden',
             description: 'Only bald cypress habitat in Raleigh area. 85-acre serene forest perfect for kayaking. Unique ecosystem in Piedmont landscape.',
             location: 'Wendell',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/millpond-1.png',
+                alt: 'Robertson Millpond Preserve bald cypress trees',
+              },
+              {
+                src: '/Raleigh/hidden-gems/millpond-2.png',
+                alt: 'Millpond kayaking through cypress forest',
+              },
+            ],
           },
           {
             id: 'gem-11',
             type: 'hidden-gem',
             name: 'Cloud Chamber for the Trees and Sky',
             category: 'Quirky Architecture',
-            description: 'Rustic camera obscura by Chris Drury at NC Museum of Art. Looks like an enchanted hobbit home. Creates inverted projections using only natural light. Easy to miss in the museum park.',
-            location: 'NC Museum of Art Park',
+            description: 'British artist Chris Drury built this walk-in camera obscura in 2003 as a permanent installation in the NC Museum of Art\'s woodland park. From outside, it looks like something out of a fairy tale — a rustic stone and wood dome resembling a hobbit house or ancient cairn, nestled among the trees. But step inside, and the magic happens. Through a small aperture in the roof, natural light projects a live, inverted image of the surrounding forest canopy onto a white circular disk inside. Trees sway upside-down in real time. Clouds drift across the sky. Birds fly through the projection. It\'s an ancient technology — the same principle behind the first cameras — experienced in a meditative, almost spiritual way. The chamber is free, always open, and requires no electricity. Most museum visitors miss it entirely, preferring the indoor galleries. That\'s part of the charm. Featured on Atlas Obscura.',
+            location: 'NC Museum of Art Park, Blue Ridge Rd, Raleigh, NC 27607',
+            coordinates: { lat: 35.8075, lng: -78.7013 },
+            hours: 'Park open daily dawn to dusk',
+            price: 'Free',
+            website: 'https://www.atlasobscura.com/places/cloud-chamber-for-the-trees-and-sky',
+            tip: 'Works best on bright, sunny days — overcast skies produce faint projections',
+            accessibility: 'Short walk from parking; gravel path',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/obscura-1.png',
+                alt: 'Cloud Chamber for the Trees and Sky exterior',
+              },
+              {
+                src: '/Raleigh/hidden-gems/obscura-2.png',
+                alt: 'Camera obscura projection inside',
+              },
+              {
+                src: '/Raleigh/hidden-gems/obscura-3.png',
+                alt: 'Hobbit-like structure in museum park',
+              },
+            ],
           },
           {
             id: 'gem-12',
@@ -505,14 +661,12 @@ export const raleigh: CityData = {
             description: 'Unusual arrangement of cut stones in Union Square — "Mini-Stonehenge." Hidden in plain sight with no signage. Historic surveying markers in mysterious pattern.',
             location: 'Union Square',
             tip: 'Look for stones arranged in geometric pattern',
-          },
-          {
-            id: 'gem-13',
-            type: 'hidden-gem',
-            name: 'Harrelson Hall',
-            category: 'Quirky Architecture',
-            description: 'First cylindrical classroom building ever built on a university campus (1960s). 206-foot diameter, looping hallways create odd spatial sensation. Experimental architectural design that never caught on.',
-            location: 'NC State Campus',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/survey-stones.png',
+                alt: 'Geodetic Survey Stones arranged in Union Square',
+              },
+            ],
           },
           {
             id: 'gem-14',
@@ -522,14 +676,31 @@ export const raleigh: CityData = {
             description: '1886 water tower housing Raleigh\'s first municipal water system. Now The Tower Escapes (escape room venue). National Historic Site most people don\'t know about.',
             location: 'Downtown',
             tip: 'Book an escape room to see the interior',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/tower-1.png',
+                alt: 'Historic Raleigh Water Tower from 1886',
+              },
+            ],
           },
           {
             id: 'gem-15',
             type: 'hidden-gem',
             name: 'Rooftop Arrow',
             category: 'Quirky Architecture',
-            description: 'Giant faded arrow hidden on rooftop at The Architect Bar. Pre-radar aviation navigation marker pointing to old Raleigh Municipal Airport. Only visible from above or from rooftop bar.',
-            location: 'Rooftop of The Architect Bar',
+            description: 'A massive faded yellow arrow painted on the rooftop of The Architect Bar building in downtown Raleigh — a relic from aviation\'s early days. Before radar and GPS, pilots navigated cross-country using visual landmarks. In the 1920s and 30s, the federal government painted giant directional arrows on rooftops across America, pointing pilots toward the nearest airport. This arrow pointed to Raleigh Municipal Airport (now closed). Most of these navigation arrows have been painted over or demolished, making Raleigh\'s one of the few survivors. The arrow is only visible from above — drones, tall buildings, or from The Architect Bar\'s rooftop deck. WRAL captured aerial footage showing the arrow still clearly visible despite decades of weathering. It\'s a hidden piece of aviation history, literally hiding in plain sight above downtown.',
+            location: '113 Fayetteville St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7756, lng: -78.6382 },
+            hours: 'Visible from The Architect Bar rooftop (bar hours vary)',
+            price: 'Free to view from rooftop bar (drink purchase expected)',
+            website: 'https://www.wral.com/raleigh-from-above-hidden-messages-and-history-only-visible-from-above/19620335/',
+            tip: 'Best seen from The Architect Bar rooftop on a clear day',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/arrow.png',
+                alt: 'Aviation navigation arrow on rooftop',
+              },
+            ],
           },
           {
             id: 'gem-16',
@@ -552,6 +723,16 @@ export const raleigh: CityData = {
             category: 'Hidden History',
             description: 'The ONLY African American house museum in the entire state of North Carolina. Built 1901, small museum with limited publicity. Important Civil Rights history site.',
             location: 'South Wilmington Street',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/pope-house-1.png',
+                alt: 'Dr. M.T. Pope House Museum exterior',
+              },
+              {
+                src: '/Raleigh/hidden-gems/pope-house-2.png',
+                alt: 'Pope House Museum historic architecture',
+              },
+            ],
           },
           {
             id: 'gem-18',
@@ -561,6 +742,16 @@ export const raleigh: CityData = {
             description: 'Racing bikes and trophies hidden on the second floor above a motorcycle dealership. Most people don\'t go upstairs at dealerships. Must ask to access.',
             location: 'Ray Price Harley-Davidson',
             tip: 'Ask staff for access to second floor museum',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/harley-1.png',
+                alt: 'Ray Price Harley Museum racing bikes display',
+              },
+              {
+                src: '/Raleigh/hidden-gems/harley-2.png',
+                alt: 'Racing trophies and memorabilia',
+              },
+            ],
           },
           {
             id: 'gem-19',
@@ -600,6 +791,16 @@ export const raleigh: CityData = {
             category: 'Quirky Specialty',
             description: 'NC State graffiti tunnel connecting campuses since 1967. Constantly repainted (sometimes multiple times per day). Atlas Obscura featured. Students claim it as free speech zone.',
             location: 'NC State Campus',
+            images: [
+              {
+                src: '/Raleigh/hidden-gems/free-expression-1.png',
+                alt: 'Free Expression Tunnel graffiti art',
+              },
+              {
+                src: '/Raleigh/hidden-gems/free-expression-2.png',
+                alt: 'Constantly repainted tunnel walls',
+              },
+            ],
           },
         ],
       },

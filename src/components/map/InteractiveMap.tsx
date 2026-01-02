@@ -211,7 +211,7 @@ export function InteractiveMap({
 
         // Handle multiple locations
         if (spot.locations && spot.locations.length > 0) {
-          spot.locations.forEach((location, locIndex) => {
+          spot.locations.forEach((location, _locIndex) => {
             if (!location.coordinates) return
 
             const secondaryMarkerElement = document.createElement('div')
@@ -324,7 +324,7 @@ export function InteractiveMap({
         </button>
         {/* Render clickable markers overlay */}
         <div className="absolute inset-0 pointer-events-none">
-          {spots.map((spot, idx) => {
+          {spots.map((spot) => {
             if (!spot.coordinates) return null
             // This would need proper positioning calculation
             // For now, just show it's interactive

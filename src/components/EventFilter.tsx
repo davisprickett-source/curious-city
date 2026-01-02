@@ -16,7 +16,7 @@ const viewLabels: Record<EventView, string> = {
   month: 'This Month',
 }
 
-export function EventFilter({ citySlug }: EventFilterProps) {
+export function EventFilter({ citySlug: _citySlug }: EventFilterProps) {
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const currentView = (searchParams.get('view') as EventView) || 'week'

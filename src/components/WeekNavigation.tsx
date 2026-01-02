@@ -8,7 +8,7 @@ interface WeekNavigationProps {
   citySlug: string
 }
 
-export function WeekNavigation({ citySlug }: WeekNavigationProps) {
+export function WeekNavigation({}: WeekNavigationProps) {
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const currentWeekOffset = parseInt(searchParams.get('week') || '0')

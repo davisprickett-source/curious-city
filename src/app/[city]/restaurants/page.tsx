@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
-import { Header, CityNav, ShareLinks, MapThumbnail, ImageCarousel } from '@/components'
+import { ShareLinks, MapThumbnail, ImageCarousel, Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -14,7 +15,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     return { title: 'City Not Found' }
@@ -28,35 +29,65 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CityRestaurantsPage({ params }: PageProps) {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     notFound()
   }
 
-  const restaurants = getCityBestOf(slug, 'restaurants')
+  const restaurants = await getCityBestOf(slug, 'restaurants')
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} currentSection="restaurants" />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="restaurants"
+      />
+
+      {/* Hero Banner - Minneapolis only */}
+      {city.slug === 'minneapolis' && (
+        <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
+          <img
+            src="/global-banners/restaurant-banner.png"
+            alt="Best Restaurants in Minneapolis"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
+          <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
+            <div className="max-w-5xl">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                Best Restaurants in {city.name}
+              </h1>
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
+                Local favorites, hidden spots, and must-try dishes. Where to eat like a local.
+              </p>
+            </div>
+            <div className="absolute top-6 right-6 md:top-8 md:right-8">
+              <ShareLinks title={`Best Restaurants in ${city.name} | Curious City`} variant="banner" />
+            </div>
+          </div>
+        </div>
+      )}
 
       <main className="flex-1">
         <div className="container-page section-spacing">
-          {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-start justify-between gap-4 mb-2">
-              <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900">
-                Best Restaurants in {city.name}
-              </h1>
-              <div className="hidden sm:block flex-shrink-0">
-                <ShareLinks title={`Best Restaurants in ${city.name} | Curious City`} variant="compact" />
+          {/* Header - hidden for Minneapolis (using banner instead) */}
+          {city.slug !== 'minneapolis' && (
+            <div className="mb-8">
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900">
+                  Best Restaurants in {city.name}
+                </h1>
+                <div className="hidden sm:block flex-shrink-0">
+                  <ShareLinks title={`Best Restaurants in ${city.name} | Curious City`} variant="compact" />
+                </div>
               </div>
+              <p className="text-lg text-neutral-600">
+                Local favorites, hidden spots, and must-try dishes. Where to eat like a local.
+              </p>
             </div>
-            <p className="text-lg text-neutral-600">
-              Local favorites, hidden spots, and must-try dishes. Where to eat like a local.
-            </p>
-          </div>
+          )}
 
           {/* Restaurants List */}
           {restaurants.length > 0 ? (
@@ -101,6 +132,28 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
                                   images={spot.images || (spot.image ? [spot.image] : [])}
                                 />
                               </div>
+                            )}
+
+                            {/* Menu image */}
+                            {spot.menuImage && (
+                              <details className="mb-4 bg-neutral-50 border border-neutral-200 rounded-lg overflow-hidden">
+                                <summary className="px-4 py-3 cursor-pointer hover:bg-neutral-100 transition-colors font-medium text-neutral-900 flex items-center gap-2">
+                                  <svg className="w-5 h-5 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                  </svg>
+                                  View Menu
+                                </summary>
+                                <div className="p-4 border-t border-neutral-200">
+                                  <img
+                                    src={spot.menuImage.src}
+                                    alt={spot.menuImage.alt}
+                                    className="w-full h-auto rounded-lg shadow-sm"
+                                  />
+                                  {spot.menuImage.credit && (
+                                    <p className="text-xs text-neutral-500 mt-2">Photo: {spot.menuImage.credit}</p>
+                                  )}
+                                </div>
+                              </details>
                             )}
 
                             {spot.order && (
@@ -190,13 +243,7 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

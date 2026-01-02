@@ -73,6 +73,14 @@ function HistoryBlockRenderer({ block }: { block: HistoryBlock }) {
         </div>
       )
 
+    case 'image-sequence':
+    case 'scroll-text':
+    case 'mixed-sequence':
+    case 'video-sequence':
+      // Premium blocks - not rendered in standard history renderer
+      // These are only rendered in PremiumHistoryScroll or VideoHistoryScroll component
+      return null
+
     default:
       const _exhaustiveCheck: never = block
       console.warn('Unknown history block type:', _exhaustiveCheck)

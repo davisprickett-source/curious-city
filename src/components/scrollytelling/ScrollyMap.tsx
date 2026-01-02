@@ -17,7 +17,6 @@ const MAP_STYLE = 'mapbox://styles/mapbox/dark-v11'
 export function ScrollyMap({
   spots,
   activeSpotIndex,
-  markerType = 'coffee',
   onMapLoaded
 }: ScrollyMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)

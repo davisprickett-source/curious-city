@@ -1,8 +1,8 @@
-import { HiddenGemContentItem } from '@/types/content'
+import { HiddenGemContentItem, IconicSpotContentItem } from '@/types/content'
 import { ImageCarousel } from '../ImageCarousel'
 
 interface HiddenGemRendererProps {
-  item: HiddenGemContentItem
+  item: HiddenGemContentItem | IconicSpotContentItem
 }
 
 export function HiddenGemRenderer({ item }: HiddenGemRendererProps) {

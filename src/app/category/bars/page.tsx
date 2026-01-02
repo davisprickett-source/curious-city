@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { getAllBestOf } from '@/data/cities'
-import { Header } from '@/components'
+import { Header, Footer } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Best Bars | Curious City',
   description: 'The best bars across American cities - dive bars, cocktail lounges, and neighborhood favorites.',
 }
 
-export default function BarsPage() {
-  const allBars = getAllBestOf('bars')
+export default async function BarsPage() {
+  const allBars = await getAllBestOf('bars')
 
   return (
     <>
@@ -92,13 +92,7 @@ export default function BarsPage() {
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { getAllHiddenGems } from '@/data/cities'
-import { Header } from '@/components'
+import { Header, Footer } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Hidden Gems | Curious City',
   description: 'Discover hidden gems and local favorites across American cities.',
 }
 
-export default function HiddenGemsPage() {
-  const allGems = getAllHiddenGems()
+export default async function HiddenGemsPage() {
+  const allGems = await getAllHiddenGems()
 
   // Group gems by city
   const gemsByCity = allGems.reduce((acc, { citySlug, cityName, gem }) => {
@@ -94,13 +94,7 @@ export default function HiddenGemsPage() {
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

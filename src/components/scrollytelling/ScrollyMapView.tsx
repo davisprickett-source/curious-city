@@ -24,8 +24,7 @@ export function ScrollyMapView({
   markerType = 'coffee'
 }: ScrollyMapViewProps) {
   const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro
-  const [isMapLoaded, setIsMapLoaded] = useState(false)
-  const [showMapModal, setShowMapModal] = useState(false)
+  const [, setIsMapLoaded] = useState(false)
 
   return (
     <div className="relative">

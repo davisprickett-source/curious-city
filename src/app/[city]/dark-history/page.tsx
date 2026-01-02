@@ -1,11 +1,29 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import { getCity, getAllCitySlugs, getCityDarkHistory } from '@/data/cities'
-import { Header, CityNav, ShareLinks } from '@/components'
-import { DarkHistoryScroll } from '@/components/DarkHistoryScroll'
+import dynamic from 'next/dynamic'
+import { getCity, getAllCitySlugs, getCityDarkHistory, getCityDarkHistorySection } from '@/data/cities'
+import { ShareLinks, Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+
+// Dynamically import heavy scroll component
+const DarkHistoryScroll = dynamic(
+  () => import('@/components/DarkHistoryScroll').then(mod => ({ default: mod.DarkHistoryScroll })),
+  {
+    loading: () => (
+      <div className="container-page py-20">
+        <div className="text-center">
+          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-neutral-900 border-r-transparent"></div>
+          <p className="mt-4 text-neutral-500">Loading...</p>
+        </div>
+      </div>
+    ),
+    ssr: false, // Client-only component with animations
+  }
+)
 
 interface PageProps {
   params: Promise<{ city: string }>
+  searchParams: Promise<{ category?: string }>
 }
 
 export async function generateStaticParams() {
@@ -15,7 +33,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     return { title: 'City Not Found' }
@@ -27,37 +45,70 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function CityDarkHistoryPage({ params }: PageProps) {
+export default async function CityDarkHistoryPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const { category: activeCategory } = await searchParams
+  const city = await getCity(slug)
 
   if (!city) {
     notFound()
   }
 
-  const items = getCityDarkHistory(slug)
+  const allItems = await getCityDarkHistory(slug)
+  const section = await getCityDarkHistorySection(slug)
+
+  // Get available categories from the data with counts
+  const categoryCounts = allItems.reduce((acc: Record<string, number>, item: any) => {
+    if (item.category) {
+      acc[item.category] = (acc[item.category] || 0) + 1
+    }
+    return acc
+  }, {})
+
+  const availableCategories = Object.keys(categoryCounts)
+
+  // Filter by category if selected
+  const items = activeCategory
+    ? allItems.filter((item: any) => item.category === activeCategory)
+    : allItems
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} currentSection="dark-history" />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="dark-history"
+        darkHistoryCategory={activeCategory}
+        availableDarkHistoryCategories={availableCategories}
+        darkHistoryCategoryCounts={categoryCounts}
+      />
 
       <main className="flex-1 bg-white">
-        {/* Hero Header - darker theme */}
-        <div className="border-b border-neutral-300 bg-gradient-to-b from-neutral-900 to-neutral-800">
-          <div className="container-page py-12 md:py-16">
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">
-                  Dark History of {city.name}
-                </h1>
-                <p className="text-lg md:text-xl text-neutral-300 max-w-3xl">
+        {/* Hero Header with Banner */}
+        <div className="relative h-[500px] md:h-[600px] border-b border-neutral-300">
+          <img
+            src="/global-banners/dark-history.png"
+            alt={`Dark History of ${city.name}`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80" />
+          <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
+            <div className="max-w-5xl">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                Dark History of {city.name}
+              </h1>
+              {section?.intro ? (
+                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
+                  {section.intro}
+                </p>
+              ) : (
+                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
                   Forgotten crimes, unsolved mysteries, and the darker chapters that shaped this city. The stories that don't make it into the brochures.
                 </p>
-              </div>
-              <div className="hidden sm:block flex-shrink-0">
-                <ShareLinks title={`Dark History of ${city.name} | Curious City`} variant="compact" />
-              </div>
+              )}
+            </div>
+            <div className="absolute top-6 right-6 md:top-8 md:right-8">
+              <ShareLinks title={`Dark History of ${city.name} | Curious City`} variant="banner" />
             </div>
           </div>
         </div>
@@ -77,13 +128,7 @@ export default async function CityDarkHistoryPage({ params }: PageProps) {
         )}
       </main>
 
-      <footer className="border-t border-neutral-200 mt-20 bg-neutral-900">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

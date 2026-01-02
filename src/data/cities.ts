@@ -2,7 +2,7 @@
 // This file is kept for backwards compatibility with existing imports
 
 export {
-  cities,
+  CITY_METADATA,
   getCity,
   getAllCitySlugs,
   getAllCities,
@@ -11,26 +11,12 @@ export {
   getAllDarkHistory,
   getCityCuriosities,
   getCityHiddenGems,
+  getCityLocalFavorites,
   getCityBestOf,
   getCityDarkHistory,
+  getCityDarkHistorySection,
   getCityEvents,
   getCityScenes,
   getCityLostAndLoved,
   getAllLostAndLoved,
-} from './cities/index'
-
-// Re-export individual cities for direct access
-export {
-  minneapolis,
-  raleigh,
-  chicago,
-  salt_lake_city,
-  colorado_springs,
-  dallas,
-  anchorage,
-  fargo,
-  denver,
-  tampa,
-  phoenix,
-  portland,
 } from './cities/index'

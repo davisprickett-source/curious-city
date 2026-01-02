@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react'
 interface ShareLinksProps {
   title: string
   url?: string // If not provided, uses current page URL
-  variant?: 'default' | 'compact'
+  variant?: 'default' | 'compact' | 'banner'
 }
 
 export function ShareLinks({ title, url, variant = 'default' }: ShareLinksProps) {
@@ -94,15 +94,19 @@ export function ShareLinks({ title, url, variant = 'default' }: ShareLinksProps)
     },
   ]
 
-  const buttonSize = variant === 'compact' ? 'px-3 py-1.5 text-xs' : 'px-4 py-2 text-sm'
+  const buttonSize = variant === 'compact' ? 'px-3 py-1.5 text-xs' : variant === 'banner' ? 'px-5 py-2.5 text-base' : 'px-4 py-2 text-sm'
+  const buttonColors = variant === 'banner'
+    ? 'text-white hover:text-white hover:bg-white/20 border-2 border-white/40 hover:border-white/60'
+    : 'text-neutral-500 hover:text-neutral-700 hover:bg-neutral-100'
+  const iconSize = variant === 'banner' ? 'w-5 h-5' : 'w-4 h-4'
 
   return (
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-1.5 ${buttonSize} text-neutral-500 hover:text-neutral-700 hover:bg-neutral-100 rounded-full transition-colors`}
+        className={`flex items-center gap-2 ${buttonSize} ${buttonColors} rounded-full transition-colors font-medium`}
       >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className={iconSize} fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
         </svg>
         Share

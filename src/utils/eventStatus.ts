@@ -5,7 +5,6 @@
 import type { EventItem, EventStatus } from '@/types/content'
 import {
   parseDate,
-  getCurrentDate,
   isToday,
   isTomorrow,
   isThisWeek,
@@ -17,8 +16,6 @@ import {
   formatRelativeDate,
   formatDateRange,
   formatTime,
-  getStartOfWeek,
-  getEndOfWeek,
   getStartOfNextWeek,
   getEndOfNextWeek,
 } from './dateUtils'

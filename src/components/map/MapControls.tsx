@@ -15,8 +15,6 @@ export function MapControls({
   totalSpots,
   viewMode,
   onViewAll,
-  onNext,
-  onPrev,
   onGoToSpot
 }: MapControlsProps) {
   return (

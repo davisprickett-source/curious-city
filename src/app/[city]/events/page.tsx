@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityEvents } from '@/data/cities'
-import { Header, CityNav, ShareLinks, EventTimeBuckets, EventFilter, EventCategoryFilter } from '@/components'
+import { ShareLinks, EventTimeBuckets, Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { filterEventsByCategories } from '@/utils/eventCategoryUtils'
 import {
   filterActiveEvents,
@@ -11,7 +12,8 @@ import {
   filterThisMonthEvents,
 } from '@/utils/eventStatus'
 import type { EventItem, EventsContentItem } from '@/types/content'
-import type { EventView } from '@/components'
+import type { EventView } from '@/components/EventFilter'
+import type { EventCategory } from '@/utils/eventCategoryUtils'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -25,7 +27,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     return { title: 'City Not Found' }
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CityEventsPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
   const { view: viewParam, categories: categoriesParam } = await searchParams
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     notFound()
@@ -51,11 +53,11 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 
   // Get selected categories from URL
   const selectedCategories = categoriesParam
-    ? (categoriesParam.split(',').filter(Boolean) as Array<'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'>)
+    ? (categoriesParam.split(',').filter(Boolean) as EventCategory[])
     : []
 
   // Get events from city data
-  const eventsSections = getCityEvents(slug) as EventsContentItem[]
+  const eventsSections = await getCityEvents(slug) as EventsContentItem[]
   const allEvents: EventItem[] = eventsSections.flatMap((section) => section.items)
 
   // Filter to only active events
@@ -89,8 +91,13 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} currentSection="events" />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="events"
+        eventView={view}
+        eventCategories={selectedCategories}
+      />
 
       <main className="flex-1">
         <div className="container-page section-spacing">
@@ -107,15 +114,6 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
             <p className="text-lg text-neutral-600">
               Events, new openings, pop-ups, and limited-time experiences.
             </p>
-          </div>
-
-          {/* Filters */}
-          <div className="space-y-4 mb-8">
-            {/* Time filter */}
-            <EventFilter citySlug={city.slug} />
-
-            {/* Category filter */}
-            <EventCategoryFilter />
           </div>
 
           {/* Events Content */}
@@ -135,13 +133,7 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

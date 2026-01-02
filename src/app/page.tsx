@@ -4,9 +4,10 @@ import { getAllCities } from '@/data/cities'
 import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
 import { Header, Footer } from '@/components'
+import { OrganizationSchema, WebsiteSchema } from '@/components/StructuredData'
 
-export default function HomePage() {
-  const cities = getAllCities()
+export default async function HomePage() {
+  const cities = await getAllCities()
   const history = getAllHistory()
 
   // Sort history by date, newest first
@@ -18,13 +19,30 @@ export default function HomePage() {
 
   // Featured history article (most recent)
   const featuredArticle = sortedHistory[0]
-  const featuredCity = featuredArticle ? getCity(featuredArticle.citySlug) : null
+  const featuredCity = featuredArticle ? await getCity(featuredArticle.citySlug) : null
 
   // Recent history articles (next 4)
   const recentHistory = sortedHistory.slice(1, 5)
 
+  // Pre-load city data for recent history
+  const recentCitySlugs = Array.from(new Set(recentHistory.map(a => a.citySlug)))
+  const recentCities = await Promise.all(recentCitySlugs.map(slug => getCity(slug)))
+  const cityMap = new Map(recentCities.filter(c => c !== null).map(c => [c!.slug, c!]))
+
   return (
     <>
+      <OrganizationSchema
+        name="Curious City"
+        url="https://thecurious.city"
+        logo="https://thecurious.city/icon.png"
+        description="Discover the untold stories, hidden gems, dark history, and local secrets of cities across America."
+      />
+      <WebsiteSchema
+        name="Curious City"
+        url="https://thecurious.city"
+        description="Local content for curious people. History, guides, and hidden gems from cities across America."
+      />
+
       <Header />
 
       <main className="flex-1">
@@ -94,7 +112,7 @@ export default function HomePage() {
               </div>
               <div className="grid gap-4 md:grid-cols-2">
                 {recentHistory.map((article) => {
-                  const city = getCity(article.citySlug)
+                  const city = cityMap.get(article.citySlug)
                   return (
                     <Link
                       key={`${article.citySlug}-${article.slug}`}

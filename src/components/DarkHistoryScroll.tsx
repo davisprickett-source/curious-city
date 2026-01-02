@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { ImageCarousel } from './ImageCarousel'
@@ -33,8 +33,16 @@ interface DarkHistoryItem {
   }
   source?: string
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
+    publisher?: string
+    author?: string
+    isbn?: string
+    platform?: string
+    show?: string
+    director?: string
+    year?: string | number
   }>
   moreInfo?: Array<{
     type: 'video' | 'podcast' | 'article'
@@ -70,17 +78,7 @@ const getCategoryStyle = (category: string) => {
   }
 }
 
-// Get all unique categories
-const getCategories = (items: DarkHistoryItem[]) => {
-  const categories = new Set<string>()
-  items.forEach(item => {
-    if (item.category) categories.add(item.category)
-  })
-  return Array.from(categories)
-}
-
 function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item: DarkHistoryItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
-  const sectionRef = useRef<HTMLElement>(null)
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
     triggerOnce: false,
@@ -89,22 +87,6 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
   const prefersReducedMotion = useReducedMotion()
   const isEven = index % 2 === 0
   const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
-
-  // Parallax effect for images only
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start end', 'end start']
-  })
-
-  const imageScale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.85, 1.05, 1.05, 0.85])
-  const imageY = useTransform(scrollYProgress, [0, 1], [80, -80])
-
-  // Combine refs using callback
-  const setRefs = (element: HTMLElement | null) => {
-    // @ts-ignore - setting mutable ref
-    sectionRef.current = element
-    inViewRef(element)
-  }
 
   // Notify parent when in view
   useEffect(() => {
@@ -171,7 +153,7 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
 
   if (prefersReducedMotion) {
     return (
-      <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}>
+      <section ref={inViewRef} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}>
         <div className="max-w-5xl mx-auto w-full">
           <div className={`flex flex-col md:flex-row gap-8 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
             {/* Number */}
@@ -239,25 +221,43 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
               {/* Sources - premium formatting */}
               {item.sources && item.sources.length > 0 && (
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6">
-                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
+                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources & Further Reading</h4>
                   <ul className="space-y-2">
                     {item.sources?.map((source, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
+                      <li key={idx} className="flex items-start gap-2 text-sm">
                         <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
-                        {source.url ? (
-                          <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm"
-                          >
-                            {source.title}
-                          </a>
-                        ) : (
-                          <span className="text-neutral-700 text-sm">{source.title}</span>
-                        )}
+                        <div className="flex-1 min-w-0">
+                          {source.type && (
+                            <span className="inline-block text-[10px] font-semibold text-neutral-500 uppercase tracking-wide bg-neutral-100 px-1.5 py-0.5 rounded mr-2">
+                              {source.type}
+                            </span>
+                          )}
+                          {source.url ? (
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                            >
+                              {source.title}
+                            </a>
+                          ) : (
+                            <span className="text-neutral-700 font-medium">{source.title}</span>
+                          )}
+                          {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                            <span className="text-neutral-600">
+                              {source.author && <span> by {source.author}</span>}
+                              {source.publisher && <span> • {source.publisher}</span>}
+                              {source.platform && <span> • {source.platform}</span>}
+                              {source.show && <span> • {source.show}</span>}
+                              {source.director && <span> • dir. {source.director}</span>}
+                              {source.year && <span> • {source.year}</span>}
+                              {source.isbn && <span> • ISBN: {source.isbn}</span>}
+                            </span>
+                          )}
+                        </div>
                       </li>
                     ))}
                   </ul>
@@ -278,13 +278,14 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
 
   // With animations
   return (
-    <section ref={setRefs} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()} transition-colors duration-1000`}>
+    <section ref={inViewRef} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()} transition-colors duration-1000`}>
       <div className="max-w-5xl mx-auto w-full">
         <div className={`flex flex-col md:flex-row gap-8 md:gap-12 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
           {/* Animated Number - no parallax */}
           <motion.div
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
             variants={numberVariants}
             className="flex-shrink-0"
           >
@@ -297,7 +298,8 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
           {/* Animated Content */}
           <motion.div
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
             variants={contentVariants}
             className="flex-1 min-w-0"
           >
@@ -322,7 +324,8 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
             {item.verdict && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] as any }}
                 className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6"
               >
@@ -331,37 +334,31 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
               </motion.div>
             )}
 
-            {/* Images with DRAMATIC animations */}
+            {/* Images with animations - no parallax */}
             {carouselImages.length > 0 && (
               <motion.div
-                initial={{ opacity: 0, y: 80, scale: 0.8 }}
-                animate={inView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 80, scale: 0.8 }}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{
-                  duration: 1.8,
+                  duration: 1.2,
                   delay: 0.4,
-                  ease: [0.16, 1, 0.3, 1] as any,
-                  opacity: { duration: 1.5 }
+                  ease: [0.16, 1, 0.3, 1] as any
                 }}
                 className="mb-6"
               >
-                <motion.div
-                  style={{
-                    scale: prefersReducedMotion ? 1 : imageScale,
-                    y: prefersReducedMotion ? 0 : imageY
-                  }}
-                >
-                  <ImageCarousel images={carouselImages as any} />
-                </motion.div>
+                <ImageCarousel images={carouselImages as any} />
               </motion.div>
             )}
 
             {/* Body - with animation */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{
-                duration: 1.4,
-                delay: 0.6,
+                duration: 1.2,
+                delay: 0.5,
                 ease: [0.16, 1, 0.3, 1] as any
               }}
               className="text-lg text-neutral-700 leading-relaxed mb-6"
@@ -389,29 +386,48 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
             {item.sources && item.sources.length > 0 && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] as any }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] as any }}
                 className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6"
               >
-                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources</h4>
+                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources & Further Reading</h4>
                 <ul className="space-y-2">
                   {item.sources?.map((source, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
+                    <li key={idx} className="flex items-start gap-2 text-sm">
                       <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
-                      {source.url ? (
-                        <a
-                          href={source.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors text-sm"
-                        >
-                          {source.title}
-                        </a>
-                      ) : (
-                        <span className="text-neutral-700 text-sm">{source.title}</span>
-                      )}
+                      <div className="flex-1 min-w-0">
+                        {source.type && (
+                          <span className="inline-block text-[10px] font-semibold text-neutral-500 uppercase tracking-wide bg-neutral-100 px-1.5 py-0.5 rounded mr-2">
+                            {source.type}
+                          </span>
+                        )}
+                        {source.url ? (
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                          >
+                            {source.title}
+                          </a>
+                        ) : (
+                          <span className="text-neutral-700 font-medium">{source.title}</span>
+                        )}
+                        {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                          <span className="text-neutral-600">
+                            {source.author && <span> by {source.author}</span>}
+                            {source.publisher && <span> • {source.publisher}</span>}
+                            {source.platform && <span> • {source.platform}</span>}
+                            {source.show && <span> • {source.show}</span>}
+                            {source.director && <span> • dir. {source.director}</span>}
+                            {source.year && <span> • {source.year}</span>}
+                            {source.isbn && <span> • ISBN: {source.isbn}</span>}
+                          </span>
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -420,8 +436,9 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
             {item.source && !item.sources && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] as any }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] as any }}
                 className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6"
               >
                 <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Source</h4>
@@ -435,15 +452,9 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
   )
 }
 
-export function DarkHistoryScroll({ items, cityName }: DarkHistoryScrollProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+export function DarkHistoryScroll({ items, cityName: _cityName }: DarkHistoryScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
-
-  const categories = getCategories(items)
-  const filteredItems = selectedCategory
-    ? items.filter(item => item.category === selectedCategory)
-    : items
 
   // Track scroll progress
   useEffect(() => {
@@ -484,7 +495,7 @@ export function DarkHistoryScroll({ items, cityName }: DarkHistoryScrollProps) {
 
       {/* Navigation Dots - Fixed on right side */}
       <div className="hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-3">
-        {filteredItems.map((item, index) => {
+        {items.map((item, index) => {
           const isActive = activeSection === index
           const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
 
@@ -513,51 +524,14 @@ export function DarkHistoryScroll({ items, cityName }: DarkHistoryScrollProps) {
         })}
       </div>
 
-      {/* Category Filter Pills */}
-      {categories.length > 0 && (
-        <div className="sticky top-0 z-40 bg-neutral-900/95 backdrop-blur-sm border-b border-neutral-700 py-4 mb-12">
-          <div className="container-page">
-            <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
-              <button
-                onClick={() => setSelectedCategory(null)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                  selectedCategory === null
-                    ? 'bg-white text-neutral-900 shadow-md'
-                    : 'bg-neutral-800 text-neutral-200 hover:bg-neutral-700'
-                }`}
-              >
-                All ({items.length})
-              </button>
-              {categories.map(category => {
-                const count = items.filter(item => item.category === category).length
-                const styles = getCategoryStyle(category)
-                return (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all border ${
-                      selectedCategory === category
-                        ? `${styles.bg} ${styles.text} ${styles.accent} shadow-md`
-                        : 'bg-neutral-800 text-neutral-300 border-neutral-700 hover:bg-neutral-700'
-                    }`}
-                  >
-                    {category} ({count})
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Dark History Sections */}
       <div>
-        {filteredItems.map((item, index) => (
+        {items.map((item, index) => (
           <div key={item.id} data-dark-history-section>
             <DarkHistorySection
               item={item}
               index={index}
-              totalCount={filteredItems.length}
+              totalCount={items.length}
               onSectionInView={handleSectionInView}
             />
           </div>

@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/site/assets/files/1/apple-touch-icon.png"><link rel="stylesheet" href="/site/assets/pwpc/pwpc-7a6f7c630e1eaf5dbdc954bf23c39865c10e030b.css"><script src="/site/assets/pwpc/pwpc-69cfcddf3db534febf8df3169561f04fcd66400c.js"></script><script src="https://unpkg.com/htmx.org/dist/ext/disable-element.js"></script><script>
+            htmx.defineExtension('prevent-title-update', {
+                handleSwap: function (swapStyle, target, fragment, settleInfo) {
+                    settleInfo.title = document.title;
+                }
+            });
+        </script><title>404 Not Found</title><link rel="canonical" href="http://www.hotelsancarlos.com/http404/"><meta property="og:title" content="404 Not Found"><meta property="og:type" content="website"><meta property="og:url" content="http://www.hotelsancarlos.com/http404/"><meta name="twitter:card" content="summary"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "404 Not Found",
+    "item": "http://www.hotelsancarlos.com/http404/"
+  }
+  ]
+}</script><link rel="alternate" href="http://www.hotelsancarlos.com/http404/" hreflang="en"><link rel="alternate" href="http://www.hotelsancarlos.com/http404/" hreflang="x-default"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo&family=Lato&display=swap" rel="stylesheet"><style>
+        .menu-type-1 .uk-logo, .menu-type-2 .uk-logo {
+     top: -30px;
+    max-width: 224px;
+}
+
+.uk-sticky-fixed .menu .uk-logo {
+      top: -30px;
+    max-width: 224px;
+}
+
+.no-hero .menu-type-1 .uk-logo, .no-hero .menu-type-2 .uk-logo {
+       top: -30px;
+    max-width: 224px;
+}
+
+.mobile-menu .uk-logo {
+      top: 15px;
+    height: 122px;
+}
+
+.no-hero .mobile-menu .uk-logo {
+    top: 15px;
+    height: 122px;
+}
+
+
+body {
+    color: #f3f1e6;
+}
+
+
+.uk-button-link {
+       color: #f3f1e6;
+}
+
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #f3f1e6;
+}
+
+
+.uk-subnav>*>:first-child {
+    color: #c3ab7e;
+}
+
+    h2, .uk-h2 {
+        font-size: 2.5rem;
+            text-transform: uppercase;
+    }
+
+
+h3, .uk-h3 {
+      color: #b7b7b7;
+    font-family: "Archivo", sans-serif;
+}    </style>
+
+        </head><body class=" no-hero basic-page parent-1 parent-template-home" id="http404" class="basic-page" data-bgtexture="" data-maincolor="" class="normal"><script type="text/javascript">
+                                var __config = {
+                                    key: 'CRLTJ7687SS8S0L8'
+                                };
+                            </script><script src="https://adawidget.com/globaljs.js"></script><div class="subnav_movil"></div><header><div class="menu menu-type-4 menu-centered-option-2 uk-visible@l uk-background-default no-hero"><div class="menu-sticky-wrapper uk-sticky uk- uk-width-1-1 " data-uk-sticky="animation:false;sel-target: .uk-navbar-container;cls-active: uk-backgorund-default uk-box-shadow-large uk-navbar-sticky;cls-inactive: uk-background-default;top:0;show-on-up: true"><div class=""><nav aria-label="Main menu" class="uk-position-z-index menu-centered uk-navbar-container"><div class="uk-container"><div class="uk-navbar uk-position-z-index top-menu"><div class="nav-overlay uk-navbar-right"><ul class="uk-navbar-nav"><li><a href="/contact/">
+Contact Us </a></li><li><a href="/photos/">
+Photos </a></li></ul></div></div><div uk-navbar class="menu main-menu uk-navbar"><div class="uk-navbar-left"><ul class="uk-navbar-nav"><li><a href="tel:602-253-4121">
+602-253-4121 </a></li></ul></div><div class="uk-navbar-center"><a class="uk-navbar-item uk-logo" href="/"> <img class="uk-logo-inverse" src="/site/assets/files/1/hotel-san-carlos-logo-1.png?1pee07" alt="Hotel San Carlos"> <img src="/site/assets/files/1/hotel-san-carlos-logo.png?1pee07" alt="Hotel San Carlos"> </a></div><div class="uk-navbar-right"><ul class="uk-navbar-nav"></ul><div class=" uk-navbar-item booking-navbar-item uk-position-relative"><a class="uk-button-primary booking-cta uk-button" href="https://be.synxis.com/?Hotel=48510&Chain=27716">
+Book Now </a></div><ul class="menu-trigger uk-navbar-nav"><li><a class="uk-icon-link" uk-icon="ratio:2;icon:menu" uk-toggle href="#menu-slide">
+Menu <span class="sr-only">Toggle navigation</span> </a></li></ul></div></div></div></nav></div></div></div><div class="default-booking-enabled mobile-menu-wrapper uk-background-default no-hero uk-hidden@l"><div class="uk-sticky" data-uk-sticky="animation: uk-animation-slide-top; cls-active: uk-background-default uk-box-shadow-small uk-navbar-sticky; cls-inactive: uk-background-default; top: 100;"><div class="mobile-menu"><nav class="main-menu uk-position-relative uk-flex uk-flex-nowrap"><div class="uk-navbar-left uk-flex-nowrap"><div class="uk-padding-remove uk-navbar-item booking-navbar-item uk-position-relative"><a class="menu-book-button booking-cta uk-button" href="https://be.synxis.com/?Hotel=48510&Chain=27716">
+Book Now </a></div> <a href="tel:602-253-4121" class="uk-text-uppercase call-mobile uk-navbar-item"> <i class="uk-margin-small-right" uk-icon="icon:receiver;"></i> <span class="">602-253-4121</span> </a></div><div class="uk-navbar-center"><a class="uk-navbar-item uk-logo" href="/"> <img class="uk-logo-inverse" src="/site/assets/files/1/hotel-san-carlos-logo-1.png?1pee07" alt="Hotel San Carlos"> <img src="/site/assets/files/1/hotel-san-carlos-logo.png?1pee07" alt="Hotel San Carlos"> </a></div><div class="uk-navbar-right"><ul class="menu-trigger uk-navbar-nav"><li><a class="uk-icon-link " role="button" aria-controls="menu-slide" uk-icon="ratio:2;icon:menu" uk-toggle href="#menu-slide"> <span class="visually-hidden">Menu</span> </a></li></ul></div></nav></div></div></div></header><main id="main-content"><section id="section-2823" uk-scrollspy="cls:uk-animation-slide-bottom-small;offset-top:50;delay:200" style="" class="uk-section uk-position-relative content_basic"><article class="uk-container interior"><div class="single uk-flex-top uk-child-width-1-2@m uk-flex-center uk-grid" uk-grid uk-height-match="target:> div "><div class="uk-flex uk-flex-middle uk-flex-center uk-width-4-5@m uk-position-relative "><div class="uk-padding text-content uk-margin-remove-last-child"><h1 style="text-align: center;"><img alt="" src="https://miramonteresort.zambezimarketing.com/site/assets/files/1/logo-leaf.png" width="60" /></h1><h1 style="text-align: center;">Room 404.</h1><p style="text-align: center;">Looks like the key is missing to&nbsp;this page. Sorry!</p><p style="text-align: center;"><a href="/">Return to Homepage</a>.</p></div></div></div></article></section></main><div id="menu-slide" tabindex="-1" uk-offcanvas="overlay: true;flip: true;"><div class="uk-offcanvas-bar"><a aria-haspopup="true" tabindex="0" uk-toggle="target:#menu-slide" class="menu-toggle uk-position-top-right uk-position-absolute uk-position-medium"> <i uk-icon="icon:close;ratio:2"></i> </a><div class="menu-container"><div class="menu-inner-scroll-container"><div class="uk-margin"><div class="booking-buttons-offcanvas uk-grid uk-flex-middle uk-grid-small uk-flex-center uk-grid-match uk-child-width-1-2" uk-grid><div><a href="https://be.synxis.com/?Hotel=48510&Chain=27716" class="uk-button uk-block uk-width-1-1 uk-button-primary">
+Book Now </a></div><div><a href="/contact/" class="uk-button uk-block uk-width-1-1 uk-button-third">
+Contact </a></div></div></div><div class=" menu-inner"><div role="navigation" class="nav-wrapper uk-hidden@l"><ul class="uk-nav-primary uk-nav-divider" uk-nav=""><li><a href="/">
+Home </a></li><li class=" "><a href="/san-carlos-stay/">
+Rooms &amp; Suites </a></li><li class=" "><a href="/amenities/">
+Amenities </a></li><li class=" "><a href="/offers/">
+Specials </a></li><li class="uk-parent "><a href="/explore/">
+Explore <span uk-nav-parent-icon></span> </a><ul class="uk-margin-bottom uk-nav-sub"><li class=""><a href="/explore/">
+Overview </a></li><li><div class="uk-grid-small uk-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav-sub"><li class=""><a href="/explore/hotel-near-chase-field/">
+Chase Field </a></li><li class=""><a href="/explore/the-footprint-center/">
+The Footprint Center </a></li><li class=""><a href="/explore/hotel-near-symphony-hall/">
+Symphony Hall </a></li><li class=""><a href="/explore/hotel-near-cityscape-plaza/">
+CityScape Plaza </a></li><li class=""><a href="/explore/hotel-near-the-van-buren/">
+The Van Buren </a></li><li class=""><a href="/explore/hotel-near-phoenix-zoo/">
+Phoenix Zoo </a></li><li class=""><a href="/explore/hotel-near-papago-park/">
+Papago Park </a></li><li class=""><a href="/explore/hotel-near-dobbins-lookout/">
+Dobbins Lookout </a></li></ul></div></div></li></ul></li></ul><div class="uk-margin-medium-top menu-footer"><div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid><div><ul class="uk-nav uk-nav-default secondary-menu"><li><a href="/contact/">Contact Us</a></li></ul></div><div><ul class="uk-nav uk-nav-default secondary-menu"><li><a href="/photos/">Photos</a></li><li><a href="/search/">
+Search <span uk-icon="icon: search"></span> </a></li></ul></div></div><hr><div class="uk-hidden@m"></div><ul class="uk-nav uk-nav-default contacts"><li class="phone"><a href="tel:602-253-4121">602-253-4121</a></li><li><a href="mailto:hello@hotelsancarlos.com">
+hello@hotelsancarlos.com </a></li></ul></div></div><div role="navigation" class="nav-wrapper uk-visible@l"><ul class="uk-nav-primary uk-nav-divider" uk-nav=""><li><a href="/">
+Home </a></li><li class=" "><a href="/san-carlos-stay/">
+Rooms &amp; Suites </a></li><li class=" "><a href="/amenities/">
+Amenities </a></li><li class=" "><a href="/offers/">
+Specials </a></li><li class="uk-parent "><a href="/explore/">
+Explore <span uk-nav-parent-icon></span> </a><ul class="uk-margin-bottom uk-nav-sub"><li class=""><a href="/explore/">
+Overview </a></li><li><div class="uk-grid-small uk-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav-sub"><li class=""><a href="/explore/hotel-near-chase-field/">
+Chase Field </a></li><li class=""><a href="/explore/the-footprint-center/">
+The Footprint Center </a></li><li class=""><a href="/explore/hotel-near-symphony-hall/">
+Symphony Hall </a></li><li class=""><a href="/explore/hotel-near-cityscape-plaza/">
+CityScape Plaza </a></li><li class=""><a href="/explore/hotel-near-the-van-buren/">
+The Van Buren </a></li><li class=""><a href="/explore/hotel-near-phoenix-zoo/">
+Phoenix Zoo </a></li><li class=""><a href="/explore/hotel-near-papago-park/">
+Papago Park </a></li><li class=""><a href="/explore/hotel-near-dobbins-lookout/">
+Dobbins Lookout </a></li></ul></div></div></li></ul></li></ul><div class="uk-margin-medium-top menu-footer"><div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid><div><ul class="uk-nav uk-nav-default secondary-menu"><li><a href="/contact/">Contact Us</a></li></ul></div><div><ul class="uk-nav uk-nav-default secondary-menu"><li><a href="/photos/">Photos</a></li><li><a href="/search/">
+Search <span uk-icon="icon: search"></span> </a></li></ul></div></div><hr><div class="uk-hidden@m"></div><ul class="uk-nav uk-nav-default contacts"><li class="phone"><a href="tel:602-253-4121">602-253-4121</a></li><li><a href="mailto:hello@hotelsancarlos.com">
+hello@hotelsancarlos.com </a></li></ul></div></div></div></div></div></div></div><footer class="footer-layout-1" style="--zambezi-footer-background-image:url('/site/assets/files/1/horizontal-footer-2x.jpg')"><div class="uk-light main-footer-container "><div class="menus uk-container uk-container-expand uk-position-relative"><div class="menus-container uk-section"><div class="uk-grid uk-grid-medium uk-grid-divider" uk-grid><div class="footer-signup-column uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-width-3-5@m"><div class="footer-signup-inner-wrapper uk-width-3-5@l uk-width-2-5@xl"><div class="uk-text-center"><h4>JOIN OUR MAILING LIST</h4><p>Be the first to know of our Special Offers, Signature Experiences &amp; Events!</p></div><div class="form-container uk-margin-auto uk-width-5-6 uk-width-2-3@m uk-width-1-1@l"><div class='FormBuilder FormBuilder-signup FormBuilder-13'><form class="FormBuilderFrameworkUikit3 FormBuilder InputfieldNoFocus InputfieldFormWidths InputfieldFormNoHeights uk-form-stacked multiple-fields InputfieldForm" id="FormBuilder_signup" name="signup" method="post" action="/form-builder-htmx/signup/" hx-post="/form-builder-htmx/signup/" hx-target="closest .FormBuilder-signup" hx-select=".FormBuilder-signup" hx-trigger="submit" data-colspacing="0"><div uk-grid class='Inputfields uk-child-width-1-1 uk-grid-small uk-grid'><div class='Inputfield Inputfield_first_name InputfieldText' id='wrap_Inputfield-'><label class='InputfieldHeader uk-form-label sr-only' for='Inputfield_first_name'>First Name</label><div class='InputfieldContent uk-form-controls '><input class="uk-input InputfieldMaxWidth" id="Inputfield_first_name" name="first_name" type="text" maxlength="2048" title="First Name" /></div></div><div class='Inputfield Inputfield_wrapper InputfieldWrapper' id='Inputfield_wrapper'><div uk-toggle='mode: media; cls: uk-grid-collapse; media: (min-device-width:960px)' uk-grid class='Inputfields uk-child-width-1-1 uk-flex-bottom uk-grid-small uk-grid-collapse uk-grid'><div class='Inputfield Inputfield_email_address InputfieldEmail uk-width-device-2-3@m InputfieldStateRequired' id='wrap_Inputfield_email_address'><label class='InputfieldHeader uk-form-label sr-only' for='Inputfield_email_address'>Email Address</label><div class='InputfieldContent uk-form-controls '><input id="Inputfield_email_address" name="email_address" class="required uk-input InputfieldMaxWidth" type="email" maxlength="512" placeholder="Enter your email address" title="Email Address" /></div></div><div class='Inputfield Inputfield_signup_submit InputfieldSubmit button-input-size uk-width-device-auto@m' id='wrap_signup_submit'><div class='InputfieldContent uk-form-controls '><button type='submit' name='signup_submit' value='Submit' class='uk-button uk-button-primary'>Submit</button></div></div></div></div></div><input type='hidden' name='_submitKey' value='3:signup:0:3480' /><input type='hidden' name='_InputfieldForm' value='signup' /></form></div></div><ul class="uk-flex-center uk-margin uk-iconnav"></ul><div class="uk-visible@m uk-text-uppercase uk-text-center uk-margin-medium-top uk-text-meta uk-padding-small copyright"><small>Hotel San Carlos, all rights reserved 2025.</small></div></div></div><div class="footer-nav-column uk-width-1-5@m uk-flex uk-flex-middle uk-flex-center uk-flex-first@m"><div><ul class="uk-nav uk-nav-center uk-nav-default uk-text-center"><li class=""><a href="/contact">
+Contact Us </a></li><li class=""><a href="/photos">
+Photos </a></li><li class=""><a href="/statements-policies/accessibility">
+Accessibility </a></li><li class=""><a href="/statements-policies/privacy-policy/">
+Privacy Policy </a></li></ul></div></div><div class="footer-address-column uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-width-1-5@m"><div class=""><div class="uk-margin uk-text-center uk-margin-remove-last-child"><p><a href="https://www.google.com/maps/place/202+N+Central+Ave,+Phoenix,+AZ+85004,+USA/@33.450493,-112.0765647,17z/data=!3m1!4b1!4m6!3m5!1s0x872b12224bb4f92d:0xd702828b7dd0298b!8m2!3d33.450493!4d-112.0739844!16s%2Fg%2F11csdgcv__?entry=ttu&amp;g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" rel="external,noreferrer,noopener,nofollow" target="_blank">202 N. Central Avenue, Phoenix, AZ, 85004</a></p><p>Tel: <a href="tel:+1-602-253-4121" target="_blank">+1-602-253-4121</a></p><p>Fax: <a href="tel:+1-602-253-6668" target="_blank">+1-602-253-6668</a></p></div><div class="uk-hidden@m uk-text-uppercase uk-text-center uk-margin-medium-top uk-text-meta uk-padding-small copyright"><small>Hotel San Carlos, all rights reserved 2025.</small></div></div></div></div></div></div></div></footer><script src="/site/assets/pwpc/pwpc-d9613965a5cfc12878c3628c7b5af1ea5223a7e2.js"></script><link rel="stylesheet" type="text/css" href="/site/templates/css/lnr-icons.css?28smqp"></body></html>

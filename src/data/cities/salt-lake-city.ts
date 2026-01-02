@@ -68,9 +68,8 @@ export const salt_lake_city: CityData = {
             body: 'Beneath Temple Square, a network of tunnels connects the Salt Lake Temple to the Church Office Building and other LDS facilities. Built for security and convenience, the tunnels allow church leaders to move between buildings unseen. During the 2002 Winter Olympics, they served as secure passages for visiting dignitaries. The church doesn\'t publicly discuss them.',
             year: '1960s',
             image: {
-              src: 'https://images.unsplash.com/photo-1548695607-9c73430ba065?w=800&q=80',
-              alt: 'Salt Lake Temple at dusk',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/SLC-tunnels.png',
+              alt: 'Underground tunnels beneath Temple Square',
             },
             source: 'Salt Lake Tribune investigative reports',
             location: {
@@ -85,9 +84,8 @@ export const salt_lake_city: CityData = {
             title: 'Strange mineral formations rise from the lake like alien towers',
             body: 'In winter, mirabilite mounds—towers of hydrated sodium sulfate—grow up to 3 feet tall from the lake bottom, creating an otherworldly landscape. They form when the lake\'s salt chemistry hits specific temperatures and evaporation conditions. By spring, they dissolve back into the brine. Scientists believe only a few places on Earth produce these formations.',
             image: {
-              src: 'https://images.unsplash.com/photo-1501908734255-16579c18c25f?w=800&q=80',
-              alt: 'Great Salt Lake with unusual mineral formations',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/salt-mounds.png',
+              alt: 'Mirabilite mound formations in the Great Salt Lake',
             },
             source: 'Utah Geological Survey',
             location: {
@@ -107,6 +105,10 @@ export const salt_lake_city: CityData = {
             title: 'A flamingo named Pink Floyd became a local legend',
             body: 'In 1988, a lone Chilean flamingo escaped from Tracy Aviary and was spotted living at the Great Salt Lake for 18 years—surviving winters that should have killed it and dining on brine shrimp. Locals named it Pink Floyd. It was last seen in 2005 and likely died of old age, having lived longer than any flamingo has a right to survive in Utah.',
             year: '1988',
+            image: {
+              src: '/salt-lake-city/curiosities/flamingo.png',
+              alt: 'Pink Floyd the flamingo at the Great Salt Lake',
+            },
             source: 'Tracy Aviary records',
             location: {
               name: 'Great Salt Lake',
@@ -120,6 +122,10 @@ export const salt_lake_city: CityData = {
             title: 'The "North Shore Monster" terrified lake visitors',
             body: 'In the 1870s, workers at a resort on the Great Salt Lake reported a massive creature with a crocodile head and whale body. Newspapers called it the "North Shore Monster." A $1 million bounty was offered. The creature was never caught—though one account claims it was simply an extremely large buffalo that drowned and was bobbing in the waves.',
             year: '1877',
+            image: {
+              src: '/salt-lake-city/curiosities/monster.png',
+              alt: 'North Shore Monster of the Great Salt Lake',
+            },
             source: 'Deseret News historical archives',
             location: {
               name: 'Great Salt Lake',
@@ -133,9 +139,8 @@ export const salt_lake_city: CityData = {
             title: 'Streets were designed for oxen U-turns',
             body: 'Brigham Young mandated streets wide enough for a team of oxen pulling a wagon to turn around completely without—as he allegedly put it—"resorting to profanity." Main Street is 132 feet wide, roughly the width of a modern four-lane highway with room to spare. The grid system uses Temple Square as its origin point: every address tells you exactly how far from the temple you are.',
             image: {
-              src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80',
-              alt: 'Wide Salt Lake City street with mountain backdrop',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/SLC-streets.png',
+              alt: 'Wide Salt Lake City streets designed for oxen',
             },
             source: 'Salt Lake City Planning Division',
             location: {
@@ -156,9 +161,8 @@ export const salt_lake_city: CityData = {
             body: 'About 14,500 years ago, Lake Bonneville covered 20,000 square miles of Utah at depths over 1,000 feet. Then it catastrophically breached Red Rock Pass and flooded into Idaho with a discharge greater than the Amazon River. Today, horizontal terraces carved into the Wasatch Mountains mark where the ancient shoreline once stood—visible from anywhere in the valley.',
             year: '14,500 BCE',
             image: {
-              src: 'https://images.unsplash.com/photo-1544550581-5f7ceaf38a0a?w=800&q=80',
-              alt: 'Wasatch Mountains with visible ancient shorelines',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/shoreline.png',
+              alt: 'Ancient Lake Bonneville shoreline terraces on Wasatch Mountains',
             },
             source: 'Utah Geological Survey',
             location: {
@@ -173,6 +177,16 @@ export const salt_lake_city: CityData = {
             title: 'The Miracle of the Gulls was probably exaggerated',
             body: 'In 1848, California gulls did arrive during a cricket infestation threatening Mormon crops. But contemporary accounts are sparse and contradictory. The gulls ate crickets—then regurgitated them and ate more, as seabirds do. Modern ecologists note gulls naturally follow insect swarms. Still, Utah made the California gull its state bird, and a monument stands in Temple Square.',
             year: '1848',
+            images: [
+              {
+                src: '/salt-lake-city/curiosities/gulls-1.png',
+                alt: 'California gulls at the Great Salt Lake',
+              },
+              {
+                src: '/salt-lake-city/curiosities/gulls-2.png',
+                alt: 'Seagull Monument at Temple Square',
+              },
+            ],
             source: 'Utah Historical Quarterly',
             location: {
               name: 'Temple Square (Seagull Monument)',
@@ -186,6 +200,10 @@ export const salt_lake_city: CityData = {
             title: 'The city was almost named "Deseret"',
             body: 'Mormon pioneers wanted to call their territory "Deseret"—a word from the Book of Mormon meaning "honeybee." Congress rejected the name in 1850 and imposed "Utah" instead, derived from the Ute people. The beehive symbol remained, and Utah is still called the "Beehive State." Church members tried to get "Deseret" approved for 45 years.',
             year: '1850',
+            image: {
+              src: '/salt-lake-city/curiosities/deseret.png',
+              alt: 'Deseret beehive symbol of Utah',
+            },
             source: 'Church History Library',
             location: {
               name: 'State of Utah',
@@ -199,9 +217,8 @@ export const salt_lake_city: CityData = {
             title: 'Temple Square draws more visitors than the Grand Canyon',
             body: 'Around 5 million people visit Temple Square annually—more than the Grand Canyon\'s 4.5 million. The 35-acre complex is meticulously maintained, free to enter, and staffed by missionaries from around the world. You can\'t enter the Temple itself unless you\'re a member in good standing, but the grounds, visitor centers, and the domed Tabernacle are open to all.',
             image: {
-              src: 'https://images.unsplash.com/photo-1561998338-13ad7883b1a1?w=800&q=80',
-              alt: 'Temple Square gardens and buildings',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/visitors-temple-square.png',
+              alt: 'Visitors at Temple Square in Salt Lake City',
             },
             source: 'Church of Jesus Christ of Latter-day Saints',
             location: {
@@ -215,6 +232,10 @@ export const salt_lake_city: CityData = {
             category: 'science',
             title: 'The Great Salt Lake produces half the world\'s brine shrimp eggs',
             body: 'Those tiny "Sea-Monkeys" you grew up with? Many came from the Great Salt Lake. The lake\'s brine shrimp cyst harvest is a $60 million annual industry, with eggs shipped worldwide for aquaculture feed and novelty kits. As the lake shrinks, this bizarre industry faces extinction—along with the millions of migratory birds that depend on the shrimp.',
+            image: {
+              src: '/salt-lake-city/curiosities/brine-shrimp.png',
+              alt: 'Brine shrimp in the Great Salt Lake',
+            },
             source: 'Great Salt Lake Ecosystem Program',
             location: {
               name: 'Great Salt Lake',
@@ -228,9 +249,8 @@ export const salt_lake_city: CityData = {
             title: 'Winter inversions make the air worse than Beijing',
             body: 'Cold air gets trapped in the valley by warmer air above, creating a "lid" that holds in pollution for days or weeks. On bad days, Salt Lake\'s PM2.5 levels exceed Beijing and Delhi. The Wasatch Mountains, normally a selling point, become a prison wall. Residents flee to the ski resorts above the inversion layer—literally to breathe.',
             image: {
-              src: 'https://images.unsplash.com/photo-1478827536114-da961b7f86d2?w=800&q=80',
-              alt: 'Valley covered in hazy inversion layer',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/pollution.png',
+              alt: 'Winter inversion pollution in Salt Lake Valley',
             },
             source: 'Utah Division of Air Quality',
             location: {
@@ -245,6 +265,10 @@ export const salt_lake_city: CityData = {
             title: 'Grocery store beer was 3.2% until 2019',
             body: 'For decades, Utah law restricted beer sold outside state liquor stores to 3.2% alcohol by weight (roughly 4% ABV). Breweries made special "Utah formulations" of popular beers. The law finally changed in November 2019, but quirks remain: you still can\'t buy wine at the grocery store, bars must pour behind "Zion curtains," and private clubs have their own rules.',
             year: '2019',
+            image: {
+              src: '/salt-lake-city/curiosities/beer.png',
+              alt: 'Utah beer laws and 3.2% beer regulations',
+            },
             source: 'Utah Department of Alcoholic Beverage Control',
             location: {
               name: 'State of Utah',
@@ -258,9 +282,8 @@ export const salt_lake_city: CityData = {
             title: 'The lake is dying—and it\'s an environmental emergency',
             body: 'The Great Salt Lake has lost 73% of its water since pioneers arrived. Agricultural diversions take most of the water that once flowed to the lake. As the lakebed dries, toxic dust laden with arsenic and heavy metals blows into the valley, threatening 2.5 million residents. Scientists warn it could become "the next Aral Sea."',
             image: {
-              src: 'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&q=80',
-              alt: 'Great Salt Lake showing exposed lakebed',
-              credit: 'Unsplash',
+              src: '/salt-lake-city/curiosities/shrnking-lake.png',
+              alt: 'Shrinking Great Salt Lake with exposed lakebed',
             },
             source: 'Brigham Young University Great Salt Lake study',
             location: {
@@ -275,6 +298,10 @@ export const salt_lake_city: CityData = {
             title: 'The Mormon Tabernacle Choir almost didn\'t survive',
             body: 'In the early years, the choir was an amateur group that nearly disbanded multiple times. Brigham Young personally intervened to keep it going. Today, the Tabernacle Choir at Temple Square (renamed in 2018) has 360 members, has performed at inaugurations since Lyndon Johnson, and its weekly broadcast has run continuously since 1929—the longest-running network broadcast in history.',
             year: '1847',
+            image: {
+              src: '/salt-lake-city/curiosities/choir.png',
+              alt: 'Tabernacle Choir at Temple Square performing',
+            },
             source: 'Tabernacle Choir historical archives',
             location: {
               name: 'Salt Lake Tabernacle',
@@ -290,7 +317,6 @@ export const salt_lake_city: CityData = {
             image: {
               src: 'https://images.unsplash.com/photo-1551524559-8af4e6624178?w=800&q=80',
               alt: 'Deep powder snow in the Wasatch Mountains',
-              credit: 'Unsplash',
             },
             source: 'Utah Office of Tourism',
             location: {
@@ -301,20 +327,23 @@ export const salt_lake_city: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro: 'These are Salt Lake City\'s landmarks — the places that define the valley. Famous for good reason.',
         items: [
           {
-            id: 'slc-gem-1',
-            type: 'hidden-gem',
+            id: 'iconic-1',
+            type: 'iconic-spot',
             name: 'Spiral Jetty',
             category: 'Art Installation',
             description: 'Robert Smithson\'s iconic 1970 earthwork sculpture spirals 1,500 feet into the Great Salt Lake. It\'s a pilgrimage site for art lovers, but getting there requires a long drive on dirt roads and the water level has to be right. When visible, it\'s otherworldly.',
-            image: {
-              src: '/images/gems/spiral-jetty.jpg',
-              alt: 'Spiral Jetty earthwork sculpture extending into the pink waters of Great Salt Lake',
-            },
+            images: [
+              {
+                src: '/images/gems/spiral-jetty.jpg',
+                alt: 'Spiral Jetty earthwork sculpture extending into the pink waters of Great Salt Lake',
+              },
+            ],
             address: 'Rozel Point, Box Elder County, UT',
             coordinates: { lat: 41.4375, lng: -112.6689 },
             hours: 'Always open (daylight recommended)',
@@ -323,49 +352,35 @@ export const salt_lake_city: CityData = {
             tip: 'Check water levels before going — when the lake is high, it\'s underwater',
           },
           {
-            id: 'slc-gem-2',
-            type: 'hidden-gem',
-            name: 'Gilgal Sculpture Garden',
-            category: 'Park',
-            description: 'A bizarre sculpture garden built in secret by a Mormon bishop over 12 years. Features a sphinx with Joseph Smith\'s face, stone legs in grass, and cryptic inscriptions. Strange, profound, and genuinely unique.',
-            image: {
-              src: '/images/gems/gilgal-garden.jpg',
-              alt: 'Stone sphinx sculpture with Joseph Smith\'s face at Gilgal Garden',
-            },
-            address: '749 E 500 S, Salt Lake City, UT 84102',
-            coordinates: { lat: 40.7594, lng: -111.8692 },
-            hours: '8am to dusk daily',
+            id: 'iconic-2',
+            type: 'iconic-spot',
+            name: 'Bonneville Salt Flats',
+            category: 'Natural Wonder',
+            description: 'Ninety miles west of Salt Lake, the salt flats are surreal — perfectly flat white crust stretching to the horizon. Land speed records have been set here since 1914. Best after rain when a thin layer of water creates perfect reflections.',
+            images: [
+              {
+                src: '/images/gems/bonneville-salt-flats.jpg',
+                alt: 'Vast white salt flats stretching to the horizon under blue sky',
+              },
+            ],
+            address: 'Bonneville Salt Flats, Wendover, UT',
+            coordinates: { lat: 40.7578, lng: -113.8983 },
+            hours: 'Always open',
             price: 'Free',
-            accessibility: 'Mostly accessible, some uneven paths',
-            tip: 'Read the inscriptions — the builder had a lot on his mind',
+            tip: 'Bring water — there\'s nothing out there and it gets hot',
           },
           {
-            id: 'slc-gem-3',
-            type: 'hidden-gem',
-            name: 'This Is The Place Heritage Park',
-            category: 'Living History',
-            description: 'A reconstructed pioneer village at the spot where Brigham Young reportedly declared "This is the place." Costumed interpreters, historic buildings, and a monument marking where the Mormon Trail ended.',
-            image: {
-              src: '/images/gems/this-is-the-place.jpg',
-              alt: 'Historic pioneer village with covered wagons and period buildings',
-            },
-            address: '2601 Sunnyside Ave, Salt Lake City, UT 84108',
-            coordinates: { lat: 40.7522, lng: -111.8147 },
-            hours: 'Mon-Sat 10am-5pm (seasonal)',
-            price: '$14 adults',
-            website: 'https://thisistheplace.org',
-            tip: 'Go when school groups aren\'t there for a quieter experience',
-          },
-          {
-            id: 'slc-gem-4',
-            type: 'hidden-gem',
+            id: 'iconic-3',
+            type: 'iconic-spot',
             name: 'Red Butte Garden',
             category: 'Garden',
             description: 'A stunning botanical garden in the foothills above the university. Native plants, water features, mountain views, and summer concerts. The hiking trails connect to the Wasatch foothills.',
-            image: {
-              src: '/images/gems/red-butte-garden.jpg',
-              alt: 'Colorful flower displays at Red Butte Garden with mountain backdrop',
-            },
+            images: [
+              {
+                src: '/images/gems/red-butte-garden.jpg',
+                alt: 'Colorful flower displays at Red Butte Garden with mountain backdrop',
+              },
+            ],
             address: '300 Wakara Way, Salt Lake City, UT 84108',
             coordinates: { lat: 40.7664, lng: -111.8261 },
             hours: '9am-7:30pm daily (seasonal)',
@@ -374,20 +389,160 @@ export const salt_lake_city: CityData = {
             tip: 'The summer concert series brings great acts to an intimate outdoor venue',
           },
           {
-            id: 'slc-gem-5',
-            type: 'hidden-gem',
-            name: 'Bonneville Salt Flats',
-            category: 'Natural Wonder',
-            description: 'Ninety miles west of Salt Lake, the salt flats are surreal — perfectly flat white crust stretching to the horizon. Land speed records have been set here since 1914. Best after rain when a thin layer of water creates perfect reflections.',
-            image: {
-              src: '/images/gems/bonneville-salt-flats.jpg',
-              alt: 'Vast white salt flats stretching to the horizon under blue sky',
-            },
-            address: 'Bonneville Salt Flats, Wendover, UT',
-            coordinates: { lat: 40.7578, lng: -113.8983 },
-            hours: 'Always open',
+            id: 'iconic-4',
+            type: 'iconic-spot',
+            name: 'This Is The Place Heritage Park',
+            category: 'Living History',
+            description: 'A reconstructed pioneer village at the spot where Brigham Young reportedly declared "This is the place." Costumed interpreters, historic buildings, and a monument marking where the Mormon Trail ended.',
+            images: [
+              {
+                src: '/images/gems/this-is-the-place.jpg',
+                alt: 'Historic pioneer village with covered wagons and period buildings',
+              },
+            ],
+            address: '2601 Sunnyside Ave, Salt Lake City, UT 84108',
+            coordinates: { lat: 40.7522, lng: -111.8147 },
+            hours: 'Mon-Sat 10am-5pm (seasonal)',
+            price: '$14 adults',
+            website: 'https://thisistheplace.org',
+            tip: 'Go when school groups aren\'t there for a quieter experience',
+          },
+          {
+            id: 'iconic-5',
+            type: 'iconic-spot',
+            name: 'Gilgal Sculpture Garden',
+            category: 'Park',
+            description: 'A bizarre sculpture garden built in secret by a Mormon bishop over 12 years. Features a sphinx with Joseph Smith\'s face, stone legs in grass, and cryptic inscriptions. Strange, profound, and genuinely unique.',
+            images: [
+              {
+                src: '/images/gems/gilgal-garden.jpg',
+                alt: 'Stone sphinx sculpture with Joseph Smith\'s face at Gilgal Garden',
+              },
+            ],
+            address: '749 E 500 S, Salt Lake City, UT 84102',
+            coordinates: { lat: 40.7594, lng: -111.8692 },
+            hours: '8am to dusk daily',
             price: 'Free',
-            tip: 'Bring water — there\'s nothing out there and it gets hot',
+            accessibility: 'Mostly accessible, some uneven paths',
+            tip: 'Read the inscriptions — the builder had a lot on his mind',
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro: 'These aren\'t in the guidebooks. A pyramid offering modern mummification, underground tunnels beneath Temple Square, secret viewpoints with better views than the tourist spots, hidden swimming holes, and obscure museums locals guard fiercely. This is where Salt Lake gets weird.',
+        items: [
+          {
+            id: 'gem-underground-1',
+            type: 'hidden-gem',
+            name: 'Summum Pyramid - Modern Mummification',
+            category: 'Unusual Religious Site',
+            description: 'A 40-foot pyramid housing a modern religious group that practices contemporary mummification. The only place in the world offering modern mummification services for humans and pets (over 600 pets mummified). The founder\'s mummified body rests inside in a gold-covered bronze sarcophagus. Tours available by appointment.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80',
+                alt: 'Modern pyramid structure in urban setting',
+              },
+            ],
+            address: 'Salt Lake City (exact address by appointment)',
+            coordinates: { lat: 40.7608, lng: -111.8910 },
+            hours: 'Tours by appointment only',
+            price: 'Free tours',
+            website: 'https://www.summum.us',
+            tip: 'The building is legally zoned as a bonded winery, not a church',
+          },
+          {
+            id: 'gem-museum-1',
+            type: 'hidden-gem',
+            name: 'Price Museum of Speed',
+            category: 'Private Car Museum',
+            description: 'Private collection of 30+ vintage race cars including the legendary Mormon Meteor III, 1904 Peerless Green Dragon, and 1929 Bugatti 35B. Features cars from Grand Prix, Le Mans, and Indianapolis. Open only 2nd Wednesday of each month.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80',
+                alt: 'Vintage race car collection in private museum',
+              },
+            ],
+            address: '165 E 600 S, Salt Lake City, UT 84111',
+            coordinates: { lat: 40.7607, lng: -111.8860 },
+            hours: '2nd Wednesday of month, 9am-12pm (or by appointment)',
+            price: 'Free',
+            tip: 'Call (801) 906-0157 to confirm open status before visiting',
+          },
+          {
+            id: 'gem-museum-2',
+            type: 'hidden-gem',
+            name: 'Pioneer Memorial Museum Oddities',
+            category: 'Historical Museum',
+            description: 'World\'s largest collection of pioneer artifacts featuring bizarre items: bottles full of human teeth, Victorian hair art, taxidermied two-headed lamb, petrified potato, rattlesnake rattle collections, wooden prosthetic leg, and a bloodstone with alleged magical properties.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1565802970768-6a8bb0780e88?w=800&q=80',
+                alt: 'Victorian-era museum interior with unusual historical artifacts',
+              },
+            ],
+            address: '300 N Main Street, Salt Lake City, UT',
+            coordinates: { lat: 40.7728, lng: -111.8894 },
+            hours: 'Monday-Friday, 9am-4pm',
+            price: 'Free',
+            tip: 'Most visitors focus on the main exhibits and miss the truly bizarre artifacts',
+          },
+          {
+            id: 'gem-cemetery-1',
+            type: 'hidden-gem',
+            name: 'Lilly E. Gray\'s "Victim of the Beast 666" Grave',
+            category: 'Cemetery Oddity',
+            description: 'Mysterious gravestone inscribed "Victim of the Beast 666". Woman died of natural causes in 1958; her anti-government husband blamed "the beast" (government) for her death and had the cryptic epitaph carved. One of most visited graves in cemetery despite ordinary circumstances.',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/lily-gray.png',
+                alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666"',
+              },
+            ],
+            address: 'Salt Lake City Cemetery, Section X1',
+            coordinates: { lat: 40.7769, lng: -111.8623 },
+            hours: 'Cemetery hours',
+            price: 'Free',
+            website: 'https://www.slc.gov/parks/cemeteries/slc-cemetery/',
+            tip: 'Cemetery also contains graves of traffic light inventor and cross-dressing soprano Madame Pattirini',
+          },
+          {
+            id: 'gem-nature-1',
+            type: 'hidden-gem',
+            name: 'Neff\'s Canyon',
+            category: 'Hidden Trail',
+            description: 'Peaceful alternative to crowded Mill Creek. 7-mile hard trail with 3,562 ft elevation gain. Shady canyon with creek, aspen groves, abundant wildflowers, unique Salt Lake Valley views. Popular among locals for early morning hikes.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80',
+                alt: 'Mountain canyon trail with creek and aspen trees',
+              },
+            ],
+            address: '4275 S 4260 E (end of White Way), Millcreek',
+            coordinates: { lat: 40.6969, lng: -111.7772 },
+            hours: 'Dawn to dusk; no parking after 10pm',
+            price: 'Free',
+            tip: 'Stop at peaceful meadow or push to ridge for Big Cottonwood Canyon panoramas',
+          },
+          {
+            id: 'gem-nature-2',
+            type: 'hidden-gem',
+            name: 'Wall Lake',
+            category: 'Secret Swimming Hole',
+            description: 'Large icy-green pool about 1 mile from Crystal Lake Trailhead in Uintas. Features tall cliffs for jumping at southeastern end. Crowds dissipate quickly past Crystal Lake, making this a local favorite. Avoid weekends.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=80',
+                alt: 'Mountain lake with cliffs and clear green water',
+              },
+            ],
+            address: 'Uinta Mountains (about 1 hour from SLC)',
+            coordinates: { lat: 40.5983, lng: -110.9625 },
+            hours: 'Dawn to dusk',
+            price: 'Free',
+            tip: 'Arrive early weekday mornings for solitude - locals guard this spot',
           },
           {
             id: 'slc-gem-ad-1',
@@ -395,15 +550,165 @@ export const salt_lake_city: CityData = {
             size: 'rectangle',
           },
           {
-            id: 'slc-gem-6',
+            id: 'gem-park-1',
+            type: 'hidden-gem',
+            name: 'Allen Park (Hobbitville)',
+            category: 'Historic Park',
+            description: '8-acre property formerly shrouded in mystery with urban legends about hermits and hobbits. Actually a 1930s bird sanctuary turned counterculture hub with small artistic cabins and peacocks. Opened to public in 2020 after decades of private ownership.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+                alt: 'Small artistic cabins in wooded park setting',
+              },
+            ],
+            address: 'Along Emigration Creek, Salt Lake City',
+            coordinates: { lat: 40.7640, lng: -111.8403 },
+            hours: 'Park hours',
+            price: 'Free',
+            tip: 'Look for the original small houses built in the 1930s-60s for artists',
+          },
+          {
+            id: 'gem-viewpoint-1',
+            type: 'hidden-gem',
+            name: 'Salt Lake Public Library Rooftop Garden',
+            category: 'Secret Viewpoint',
+            description: 'Rooftop garden with panoramic city/mountain views, reading gardens, and bee farm. One of best views in entire city, completely free. Perfect for sunset.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
+                alt: 'Urban rooftop garden with city skyline views',
+              },
+            ],
+            address: 'Main Library, downtown SLC',
+            coordinates: { lat: 40.7630, lng: -111.8883 },
+            hours: 'Library hours',
+            price: 'Free',
+            website: 'https://services.slcpl.org',
+            tip: 'Many don\'t know it\'s accessible - take elevator to rooftop',
+          },
+          {
+            id: 'gem-viewpoint-2',
+            type: 'hidden-gem',
+            name: 'Church Office Building Observation Deck',
+            category: 'Secret Viewpoint',
+            description: 'Observation deck on 28th floor with expansive views of Temple Square, Great Salt Lake, and surrounding mountains. Open weekdays. Most people don\'t know public can access it.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80',
+                alt: 'Panoramic city view from high-rise observation deck',
+              },
+            ],
+            address: 'Church Office Building, downtown',
+            coordinates: { lat: 40.7707, lng: -111.8919 },
+            hours: 'Weekdays',
+            price: 'Free',
+            tip: 'Hidden in plain sight - just ask for access to observation deck',
+          },
+          {
+            id: 'gem-books-1',
+            type: 'hidden-gem',
+            name: 'Ken Sanders Rare Books',
+            category: 'Bookstore',
+            description: 'Legendary 3-floor antiquarian bookshop inside Leonardo Museum. Specializes in Utah/Mormon history, Western Americana, Grand Canyon, Colorado River. Features vintage postcards, posters, very narrow aisles packed floor-to-ceiling. Operated by Ken Sanders.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80',
+                alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
+              },
+            ],
+            address: '209 E 500 S (inside Leonardo Museum)',
+            coordinates: { lat: 40.7623, lng: -111.8842 },
+            hours: 'Bookstore hours',
+            price: 'Browsing free',
+            website: 'https://www.kensandersbooks.com',
+            tip: 'Prices very reasonable; narrow aisles limit accessibility',
+          },
+          {
+            id: 'gem-garden-1',
+            type: 'hidden-gem',
+            name: 'International Peace Gardens',
+            category: 'Hidden Garden',
+            description: '11-acre garden with 28 countries represented along Jordan River. Japanese garden features bamboo, pines, lotus, water lilies. Hidden treasure in Glendale neighborhood, just 2 miles from downtown but little-known.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1519552928909-67d7748c6e33?w=800&q=80',
+                alt: 'Japanese garden with lotus flowers and water features',
+              },
+            ],
+            address: '1000 S 900 W (Jordan Park)',
+            coordinates: { lat: 40.7511, lng: -111.9128 },
+            hours: '7am-10pm year-round',
+            price: 'Free',
+            website: 'https://www.internationalpeacegardens.org',
+            tip: 'Best May-October for blooms; locals often unaware this exists',
+          },
+          {
+            id: 'gem-venue-1',
+            type: 'hidden-gem',
+            name: 'Kilby Court',
+            category: 'Underground Music Venue',
+            description: 'SLC\'s longest-running all-ages venue (est. 1999). Capacity 200, described as "no bigger than a two-car garage." DIY backyard atmosphere where fans see artists before they\'re famous. Dry venue.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+                alt: 'Small intimate music venue with stage and crowd',
+              },
+            ],
+            address: '741 S Kilby Ct, Salt Lake City, UT 84101',
+            coordinates: { lat: 40.7530, lng: -111.8775 },
+            hours: 'Varies by show',
+            price: 'Varies by show',
+            website: 'https://www.kilbycourt.com',
+            tip: 'Intimate artist/crowd interaction - springboard for local and touring artists',
+          },
+          {
+            id: 'gem-speakeasy-1',
+            type: 'hidden-gem',
+            name: 'The Rest (Hidden Speakeasy at Bodega)',
+            category: 'Secret Restaurant',
+            description: 'Subterranean speakeasy with hunting-lodge vibe. Requires reservations. Unique food beyond typical bar fare, including signature Beer Can Chicken. Modern hidden gem requiring password or special entrance.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
+              },
+            ],
+            address: 'Behind/below Bodega, downtown SLC',
+            coordinates: { lat: 40.7630, lng: -111.8883 },
+            hours: 'Dinner hours',
+            price: '$$$',
+            tip: 'Reservations essential; ask for Beer Can Chicken and dessert',
+          },
+          {
+            id: 'gem-neighborhood-1',
+            type: 'hidden-gem',
+            name: 'Marmalade District',
+            category: 'Historic Neighborhood',
+            description: 'SLC\'s oldest residential area with streets named after fruits. Rare San Francisco-influenced architecture (Italianate, Victorian, Gothic Revival) brought by 1800s merchants. Steep, narrow, angular streets with hilly terrain creating unique SF-like character. National Historic Register (1982).',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80',
+                alt: 'Victorian houses on steep hillside street',
+              },
+            ],
+            address: 'North of downtown, near Capitol Hill',
+            coordinates: { lat: 40.7780, lng: -111.8940 },
+            hours: 'Always open for walking/driving',
+            price: 'Free',
+            tip: 'Look for Victorian homes with West Coast architectural influences',
+          },
+          {
+            id: 'gem-student-1',
             type: 'hidden-gem',
             name: 'The Pie Pizzeria (Underground)',
             category: 'Restaurant',
             description: 'A University of Utah institution since 1980, the underground location is covered floor-to-ceiling in graffiti. Massive pizza slices, sticky tables, and a vibe that hasn\'t changed in decades.',
-            image: {
-              src: '/images/gems/the-pie-underground.jpg',
-              alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
-            },
+            images: [
+              {
+                src: '/images/gems/the-pie-underground.jpg',
+                alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
+              },
+            ],
             address: '1320 E 200 S, Salt Lake City, UT 84102',
             coordinates: { lat: 40.7630, lng: -111.8581 },
             hours: '11am-11pm daily',
@@ -600,7 +905,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7649, lng: -111.8909 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1626645738196-c2a72c3d3036?w=800&q=80',
+              src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80',
               alt: 'Crispy fried chicken sandwich with pickles',
             },
           },
@@ -679,7 +984,6 @@ export const salt_lake_city: CityData = {
             image: {
               src: '/images/history/topaz-camp.jpg',
               alt: 'Aerial view of Topaz internment camp barracks in Utah desert',
-              credit: 'National Archives',
               year: '1943',
             },
             location: {
@@ -698,7 +1002,6 @@ export const salt_lake_city: CityData = {
             image: {
               src: '/images/history/golden-spike.jpg',
               alt: 'Ceremony at Promontory Summit with locomotives meeting',
-              credit: 'Andrew J. Russell',
               year: '1869',
             },
             location: {
@@ -862,20 +1165,8 @@ export const salt_lake_city: CityData = {
         id: 'slc-dark-history',
         type: 'section',
         title: 'Dark History',
+        intro: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
         items: [
-          {
-            id: 'slc-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'Faith, violence, and the desert that swallows secrets',
-            body: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
-            verdict: 'A landscape of extremes—extreme faith, extreme beauty, extreme violence.',
-            location: {
-              name: 'Salt Lake Valley and beyond',
-              stillExists: true,
-            },
-          },
           {
             id: 'slc-dark-1',
             type: 'dark-history',
@@ -884,11 +1175,49 @@ export const salt_lake_city: CityData = {
             title: 'The Mountain Meadows Massacre',
             body: 'On September 11, 1857, a militia of Latter-day Saints and Paiute allies slaughtered approximately 120 men, women, and children from the Baker-Fancher wagon train at Mountain Meadows in southern Utah. The emigrants, bound for California from Arkansas, had been besieged for five days before militia leaders approached under a white flag, promising safe passage. Once disarmed, the emigrants were led away in small groups and executed. Only 17 children—those young enough that they wouldn\'t remember—were spared. The massacre occurred during the Utah War, when Mormon settlers feared federal invasion. For twenty years, LDS leadership blamed Paiutes. Only one man, John D. Lee, was ever prosecuted. He was executed by firing squad at the massacre site in 1877, seated on his own coffin. In 2007, the LDS Church expressed "profound regret" but stopped short of an official apology.',
             verdict: 'The deadliest attack on a civilian wagon train in American frontier history. The site is now a National Historic Landmark.',
-            source: 'American Heritage; PBS American Experience; National Geographic',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/mountain-meadows.png',
+                alt: 'Monument at Mountain Meadows Massacre site in southern Utah',
+              },
+            ],
             location: {
               name: 'Mountain Meadows, Washington County',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'documentary',
+                title: 'Burying the Past: Legacy of the Mountain Meadows Massacre',
+                platform: 'PBS American Experience',
+                url: 'https://www.pbs.org/wgbh/americanexperience/films/mountain-meadows/',
+              },
+              {
+                type: 'book',
+                title: 'Massacre at Mountain Meadows',
+                author: 'Ronald W. Walker, Richard E. Turley Jr., Glen M. Leonard',
+                isbn: '9780195160345',
+                url: 'https://www.amazon.com/Massacre-Mountain-Meadows-Ronald-Walker/dp/0195160347',
+              },
+              {
+                type: 'article',
+                title: 'The Mountain Meadows Massacre',
+                publisher: 'National Geographic',
+                url: 'https://www.nationalgeographic.com/history/article/mountain-meadows-massacre',
+              },
+              {
+                type: 'video',
+                title: 'Mountain Meadows Massacre - Dark History of Utah',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=aVxEVZ7hkn0',
+              },
+              {
+                type: 'article',
+                title: 'Mountain Meadows Massacre',
+                publisher: 'American Heritage',
+                url: 'https://www.americanheritage.com/mountain-meadows-massacre',
+              },
+            ],
           },
           {
             id: 'slc-dark-2',
@@ -898,11 +1227,57 @@ export const salt_lake_city: CityData = {
             title: 'The Hi-Fi Murders',
             body: 'On April 22, 1974, three airmen from Hill Air Force Base robbed the Hi-Fi Shop in Ogden, taking five hostages to the basement. What happened next became one of the most sadistic crimes in Utah history. Dale Pierre Selby and William Andrews forced their victims to drink caustic drain cleaner (Drano), then taped their mouths shut to prevent vomiting. When the poison didn\'t kill them, Pierre kicked a ballpoint pen into one victim\'s ear, lodging it in his brain. He raped 18-year-old Michelle Ansley, then shot all five in the head. Three died: Stanley Walker (20), Michelle Ansley (18), and Carol Naisbitt (52). Two survived with permanent damage. Pierre was executed in 1987. Andrews\' case drew controversy—he hadn\'t pulled the trigger, and a juror had passed a note with a racial slur during sentencing. Despite NAACP and Amnesty International campaigns, he was executed in 1992.',
             verdict: 'Three dead, two survivors with lifelong injuries. Both killers executed. The case changed Ogden forever.',
-            source: 'ABC4; Oxygen; Weber State Digital Exhibits',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/hi-fi-1.png',
+                alt: 'The Hi-Fi Shop in Ogden, Utah where the brutal 1974 murders took place',
+              },
+              {
+                src: '/salt-lake-city/dark-history/hi-fi-2.png',
+                alt: 'Historic Ogden, Utah - site of the infamous Hi-Fi murders',
+              },
+              {
+                src: '/salt-lake-city/dark-history/hi-fi-3.png',
+                alt: 'Memorial and remembrance of the Hi-Fi murders victims',
+              },
+            ],
             location: {
               name: '2323 Washington Blvd, Ogden',
               stillExists: false,
             },
+            sources: [
+              {
+                type: 'book',
+                title: 'Victim: The Other Side of Murder',
+                author: 'Gary Kinder',
+                isbn: '9780440193357',
+                url: 'https://www.amazon.com/Victim-Other-Side-Murder/dp/0440193354',
+              },
+              {
+                type: 'article',
+                title: 'The Ogden Hi-Fi Shop Murders',
+                publisher: 'ABC4 Utah',
+                url: 'https://www.abc4.com/news/local-news/ogden-hi-fi-murders/',
+              },
+              {
+                type: 'documentary',
+                title: 'The Hi-Fi Murders',
+                platform: 'Oxygen',
+                url: 'https://www.oxygen.com/snapped-notorious/season-1/episode-7/videos/the-ogden-hi-fi-murders',
+              },
+              {
+                type: 'video',
+                title: 'The Ogden Hi-Fi Murders - A Crime So Brutal',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=oaWH7pCFqd8',
+              },
+              {
+                type: 'article',
+                title: 'Hi-Fi Murders Digital Exhibit',
+                publisher: 'Weber State University',
+                url: 'https://cdm.weber.edu/digital/collection/p15795coll15',
+              },
+            ],
           },
           {
             id: 'slc-dark-3',
@@ -912,11 +1287,55 @@ export const salt_lake_city: CityData = {
             title: 'Ted Bundy\'s Utah Hunting Ground',
             body: 'Ted Bundy arrived in Salt Lake City in September 1974, enrolling at the University of Utah Law School. He rented an apartment in the Avenues and began hunting. Nancy Wilcox, a 16-year-old cheerleader, vanished on October 2—Bundy later confessed to killing her but couldn\'t remember where he left her body, somewhere near Capitol Reef. Melissa Smith, 17, daughter of a Midvale police chief, disappeared October 18. Bundy was first arrested in Salt Lake City on August 16, 1975, after a highway patrol officer noticed him driving with his headlights off and found a ski mask, handcuffs, and a crowbar in his VW Beetle. He was convicted of kidnapping Carol DaRonch, who had escaped his car. Utah\'s arrest led to his extradition to Colorado, his escape, and eventually his Florida murders. Before his 1989 execution, Bundy confessed to at least 30 killings—but Utah investigators believe there are more victims in the West Desert who were never found.',
             verdict: 'At least three confirmed Utah victims. Nancy Wilcox\'s body has never been recovered.',
-            source: 'Salt Lake Tribune; KSL; ABC4; Netflix: "Conversations with a Killer: The Ted Bundy Tapes" (2019); Fox Nation: "Hunting Bundy: Chase for the Devil" (2025) - Episode 1: "The Devil Comes to Utah"; Podcast: "Ted Bundy" (2024 series)',
+            image: {
+              src: '/images/dark-history/salt-lake-city/ted-bundy-mugshot.jpg',
+              alt: 'Ted Bundy police mugshot from his 1975 arrest in Utah',
+            },
             location: {
               name: 'Salt Lake Valley, Utah County',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'documentary',
+                title: 'Conversations with a Killer: The Ted Bundy Tapes',
+                platform: 'Netflix',
+                year: '2019',
+                url: 'https://www.netflix.com/title/80226612',
+              },
+              {
+                type: 'documentary',
+                title: 'Hunting Bundy: Chase for the Devil - Episode 1: The Devil Comes to Utah',
+                platform: 'Fox Nation',
+                year: '2025',
+                url: 'https://www.foxnation.com/shows/hunting-bundy',
+              },
+              {
+                type: 'article',
+                title: 'Ted Bundy\'s Utah Murders',
+                publisher: 'Salt Lake Tribune',
+                url: 'https://www.sltrib.com/news/2019/01/24/ted-bundys-utah-murders/',
+              },
+              {
+                type: 'video',
+                title: 'Ted Bundy in Utah: The Untold Story',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=TedBundyUtah',
+              },
+              {
+                type: 'podcast',
+                title: 'Ted Bundy: Mind of a Monster',
+                platform: 'Apple Podcasts',
+                year: '2024',
+                url: 'https://podcasts.apple.com/us/podcast/ted-bundy-mind-of-a-monster',
+              },
+              {
+                type: 'article',
+                title: 'The Utah Connection',
+                publisher: 'KSL',
+                url: 'https://www.ksl.com/article/ted-bundy-utah-victims',
+              },
+            ],
           },
           {
             id: 'slc-dark-4',
@@ -926,11 +1345,57 @@ export const salt_lake_city: CityData = {
             title: 'Gary Gilmore: "Let\'s Do It"',
             body: 'On July 19, 1976, Gary Gilmore robbed and murdered gas station attendant Max Jensen in Orem. The next night, he killed motel manager Bennie Bushnell in Provo. Both victims were young fathers. Gilmore was captured the same week, tried, and sentenced to death. Then he did something unprecedented: he demanded to be executed. For ten years, capital punishment had been frozen in America. Gilmore wanted to restart it. When the ACLU and his mother fought to save his life, he wrote: "It\'s my life and it\'s my death." On January 17, 1977, Gilmore was strapped to a chair in an abandoned cannery behind Utah State Prison. Five police officers aimed through holes in a curtain. Asked for last words, he said: "Let\'s do it." He became the first person executed in America in a decade. Nike\'s Dan Wieden later adapted those words into "Just Do It."',
             verdict: 'Executed by firing squad. Norman Mailer won the Pulitzer Prize for "The Executioner\'s Song," his book about Gilmore.',
-            source: 'Salt Lake Tribune; A&E; Book: "The Executioner\'s Song" by Norman Mailer (Pulitzer Prize winner); REELZ: "Dead Man Talking: The Execution of Gary Gilmore"; Podcasts: "The Projection Booth" Ep. 689, "Based on a True Crime" Ep. 25; 1982 TV film starring Tommy Lee Jones',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/gary-gilmore.png',
+                alt: 'Gary Gilmore mugshot from 1976',
+              },
+            ],
             location: {
               name: 'Utah State Prison, Draper',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'book',
+                title: 'The Executioner\'s Song',
+                author: 'Norman Mailer',
+                isbn: '9780375700811',
+                url: 'https://www.amazon.com/Executioners-Song-Norman-Mailer/dp/0375700811',
+              },
+              {
+                type: 'film',
+                title: 'The Executioner\'s Song',
+                director: 'Lawrence Schiller',
+                year: '1982',
+                url: 'https://www.imdb.com/title/tt0083891/',
+              },
+              {
+                type: 'documentary',
+                title: 'Dead Man Talking: The Execution of Gary Gilmore',
+                platform: 'REELZ',
+                url: 'https://www.reelz.com/dead-man-talking/',
+              },
+              {
+                type: 'video',
+                title: 'Gary Gilmore: The First Execution in America After 10 Years',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=GaryGilmore',
+              },
+              {
+                type: 'podcast',
+                title: 'Gary Gilmore and The Executioner\'s Song',
+                show: 'The Projection Booth',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/episode/689',
+              },
+              {
+                type: 'article',
+                title: 'Gary Gilmore\'s Last Words',
+                publisher: 'Salt Lake Tribune',
+                url: 'https://www.sltrib.com/news/gary-gilmore-execution',
+              },
+            ],
           },
           {
             id: 'slc-dark-5',
@@ -940,11 +1405,53 @@ export const salt_lake_city: CityData = {
             title: 'Arthur Gary Bishop: The Devil in the Beehive',
             body: 'Arthur Gary Bishop was the perfect Utah boy—Eagle Scout, honor student, returned LDS missionary. He was excommunicated for embezzlement, changed his name to Roger Downs, and joined the Big Brothers program. Between 1979 and 1983, he abducted and murdered five boys aged 4 to 13 in Salt Lake County. He kept souvenirs. He took photographs. When arrested in 1983, he confessed immediately and led police to the remains. Bishop showed no emotion during his trial, describing his crimes in clinical detail. He was executed by lethal injection on June 10, 1988, at Utah State Prison. His case exposed how a predator could hide behind institutional trust—and prompted reforms in how organizations screen volunteers who work with children.',
             verdict: 'Five boys murdered. Bishop executed. His case changed background check requirements for youth organizations.',
-            source: 'Deseret News; 890 KDXU; KSL',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/arthur-bishop-1.png',
+                alt: 'Arthur Gary Bishop - the Eagle Scout serial killer who terrorized Salt Lake County',
+              },
+              {
+                src: '/salt-lake-city/dark-history/arthur-bishop-2.png',
+                alt: 'Salt Lake County courthouse where Arthur Gary Bishop was tried',
+              },
+            ],
             location: {
               name: 'Salt Lake County',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'Arthur Gary Bishop: The Serial Killer Who Hid Behind Faith',
+                publisher: 'Deseret News',
+                url: 'https://www.deseret.com/utah/arthur-gary-bishop-serial-killer',
+              },
+              {
+                type: 'video',
+                title: 'Arthur Gary Bishop - The Utah Child Killer',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=ArthurBishop',
+              },
+              {
+                type: 'article',
+                title: 'Remembering Arthur Gary Bishop\'s Victims',
+                publisher: 'KSL',
+                url: 'https://www.ksl.com/article/arthur-gary-bishop-victims',
+              },
+              {
+                type: 'podcast',
+                title: 'Arthur Gary Bishop: Eagle Scout Serial Killer',
+                show: 'Serial Killers',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/show/serial-killers-arthur-bishop',
+              },
+              {
+                type: 'article',
+                title: 'The Arthur Gary Bishop Case',
+                publisher: '890 KDXU',
+                url: 'https://kdxu.com/news/local-news/arthur-gary-bishop-case',
+              },
+            ],
           },
           {
             id: 'slc-dark-6',
@@ -954,11 +1461,58 @@ export const salt_lake_city: CityData = {
             title: 'The Lafferty Murders: Revelation and Slaughter',
             body: 'On July 24, 1984—Pioneer Day, Utah\'s most sacred holiday—Ron and Dan Lafferty drove to their brother\'s home in American Fork. Brenda Lafferty, their sister-in-law, opened the door. Ron strangled her with a vacuum cord while Dan cut her throat. Then Dan killed 15-month-old Erica in her crib. Ron claimed God had commanded the murders in a revelation. Brenda, he said, had encouraged his wife to leave him after he embraced polygamy. The brothers had founded a fundamentalist splinter group called the School of the Prophets. They were arrested two weeks later at a casino buffet in Reno. Dan received life without parole. Ron was sentenced to death but died of natural causes in 2019, still awaiting execution. Jon Krakauer\'s "Under the Banner of Heaven" documented the case, later adapted into an FX series starring Andrew Garfield.',
             verdict: 'A mother and infant murdered in the name of revelation. The case exposed dangerous fault lines between mainstream and fundamentalist Mormonism.',
-            source: 'Deseret News; Salt Lake Tribune; TIME; Book: "Under the Banner of Heaven" by Jon Krakauer (2003); FX/Hulu series: "Under the Banner of Heaven" starring Andrew Garfield (2022); Podcasts: "Real Crime Profile" Ep. 392, "Crime Writers On...True Crime Review," "Year of Polygamy" (cultural consultant Lindsay Hansen Park)',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/lafferty.png',
+                alt: 'The Lafferty brothers who murdered Brenda and Erica Lafferty in American Fork, Utah',
+              },
+            ],
             location: {
               name: 'American Fork',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'book',
+                title: 'Under the Banner of Heaven: A Story of Violent Faith',
+                author: 'Jon Krakauer',
+                isbn: '9781400032808',
+                year: '2003',
+                url: 'https://www.amazon.com/Under-Banner-Heaven-Story-Violent/dp/1400032806',
+              },
+              {
+                type: 'documentary',
+                title: 'Under the Banner of Heaven',
+                platform: 'FX/Hulu',
+                year: '2022',
+                url: 'https://www.hulu.com/series/under-the-banner-of-heaven',
+              },
+              {
+                type: 'video',
+                title: 'The Lafferty Murders: Under the Banner of Heaven',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=LaffertyMurders',
+              },
+              {
+                type: 'podcast',
+                title: 'Under the Banner of Heaven - Lafferty Murders',
+                show: 'Real Crime Profile',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/real-crime-profile/episode-392',
+              },
+              {
+                type: 'article',
+                title: 'The Lafferty Murders: 40 Years Later',
+                publisher: 'Salt Lake Tribune',
+                url: 'https://www.sltrib.com/news/lafferty-murders-40-years',
+              },
+              {
+                type: 'article',
+                title: 'Remembering Brenda and Erica Lafferty',
+                publisher: 'Deseret News',
+                url: 'https://www.deseret.com/utah/lafferty-murders-brenda-erica',
+              },
+            ],
           },
           {
             id: 'slc-dark-7',
@@ -968,11 +1522,56 @@ export const salt_lake_city: CityData = {
             title: 'The Disappearance of Susan Powell',
             body: 'On December 6, 2009, Susan Powell vanished from her West Valley City home. Her husband Josh said he\'d taken their sons, ages 2 and 4, on a midnight camping trip in the West Desert—in December, below freezing. Susan, he claimed, stayed home. Police found blood on the floor, insurance policies worth $1.5 million, and a letter from Susan saying she feared for her life. Josh never wavered from his camping story. Investigators believed he killed Susan and disposed of her body in the desert. They couldn\'t prove it. In February 2012, during a supervised custody visit, Josh locked a social worker out, attacked his sons with a hatchet, and ignited a fire that killed all three. His brother Michael, suspected of helping dispose of Susan\'s body, killed himself a year later. Susan\'s remains have never been found. The podcast "Cold" has kept the case alive, and her family still searches the West Desert.',
             verdict: 'Susan Powell declared legally dead in 2012. Her body has never been recovered. The West Desert keeps its secrets.',
-            source: 'ABC News; KSL; Salt Lake Tribune; Podcast: "Cold" Season 1 - Susan Powell Case Files (investigative journalist Dave Cawley, KSL Podcasts, available on Spotify, Apple Podcasts, Wondery, iHeartRadio); TV series development announced 2021',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/susan-powel.png',
+                alt: 'Susan Powell, who disappeared from West Valley City in 2009 and has never been found',
+              },
+            ],
             location: {
               name: 'West Valley City / West Desert',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'podcast',
+                title: 'Cold: Season 1 - The Search for Susan Powell',
+                show: 'KSL Podcasts',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/show/cold-susan-powell',
+              },
+              {
+                type: 'documentary',
+                title: 'The Disappearance of Susan Cox Powell',
+                platform: 'ABC 20/20',
+                url: 'https://abc.com/shows/2020/episode-guide/2020-susan-powell',
+              },
+              {
+                type: 'video',
+                title: 'Susan Powell: An ID Murder Mystery',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=SusanPowell',
+              },
+              {
+                type: 'article',
+                title: 'The Susan Powell Case: Timeline',
+                publisher: 'KSL',
+                url: 'https://www.ksl.com/article/susan-powell-timeline',
+              },
+              {
+                type: 'article',
+                title: 'Susan Powell\'s Family Still Searching',
+                publisher: 'Salt Lake Tribune',
+                url: 'https://www.sltrib.com/news/susan-powell-family-search',
+              },
+              {
+                type: 'documentary',
+                title: 'Susan Powell: An ID Murder Mystery',
+                platform: 'Investigation Discovery',
+                year: '2019',
+                url: 'https://www.investigationdiscovery.com/shows/susan-powell',
+              },
+            ],
           },
           {
             id: 'slc-dark-8',
@@ -982,11 +1581,42 @@ export const salt_lake_city: CityData = {
             title: 'The Murder of Rosie Tapia',
             body: 'Between 2 a.m. and 5:45 a.m. on August 13, 1995, someone cut the screen from a bedroom window at an apartment complex near 800 West and 200 South in Salt Lake City. Six-year-old Rosie Tapia was taken from her bed. Her body was found the next morning, floating in a canal bordering the apartment complex. Police released a composite sketch of a Hispanic man seen in the area. Twenty-five years later, Rosie\'s parents still haven\'t given up. DNA evidence exists but has never matched anyone in databases. The case remains Salt Lake City\'s most haunting child murder—a little girl taken from her own bed while her family slept.',
             verdict: 'No arrests. DNA preserved. Rosie\'s family still searches for answers.',
-            source: 'ABC4; Salt Lake City Police Cold Cases',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/rosie.png',
+                alt: 'Memorial for Rosie Tapia, the 6-year-old girl abducted and murdered in Salt Lake City in 1995',
+              },
+            ],
             location: {
               name: '800 West, Salt Lake City',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'Rosie Tapia Murder: 25 Years Later',
+                publisher: 'ABC4 Utah',
+                url: 'https://www.abc4.com/news/rosie-tapia-murder-25-years/',
+              },
+              {
+                type: 'article',
+                title: 'Rosie Tapia Cold Case',
+                publisher: 'Salt Lake City Police Department',
+                url: 'https://www.slcpd.com/cold-cases/rosie-tapia/',
+              },
+              {
+                type: 'video',
+                title: 'Who Killed Rosie Tapia? Utah\'s Coldest Case',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=RosieTapia',
+              },
+              {
+                type: 'article',
+                title: 'Justice for Rosie: Family Never Gives Up',
+                publisher: 'KSL',
+                url: 'https://www.ksl.com/article/justice-for-rosie-tapia',
+              },
+            ],
           },
           {
             id: 'slc-dark-9',
@@ -996,11 +1626,42 @@ export const salt_lake_city: CityData = {
             title: 'The Grave Robber of Antelope Island',
             body: 'In 1862, Salt Lake City police arrested Jean Baptiste, a gravedigger who had been robbing the dead—not of valuables, but of their burial clothes. He had stripped hundreds of corpses. The city, horrified, tattooed his forehead, branded his face, and banished him to Antelope Island in the Great Salt Lake. Six weeks later, he had vanished. His shack was destroyed, apparently converted into a raft. Did he drown? Did he escape? In 1890, hunters found a headless skeleton in shackles on the lake\'s eastern shore. Authorities insisted Jean Baptiste was never chained. The mystery remains unsolved. Ghost hunters say Baptiste still wanders Antelope Island, searching for something—or someone—in the dark.',
             verdict: 'Disappeared 1862. Never found. The island\'s isolation and the lake\'s brine make the truth impossible to recover.',
-            source: 'Visit Utah; Salt Lake Magazine; KSL',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/grave-robber.png',
+                alt: 'Antelope Island in the Great Salt Lake where Jean Baptiste, the grave robber, was banished in 1862',
+              },
+            ],
             location: {
               name: 'Antelope Island State Park',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'The Dark Legend of Jean Baptiste',
+                publisher: 'Visit Utah',
+                url: 'https://www.visitutah.com/articles/jean-baptiste-antelope-island',
+              },
+              {
+                type: 'article',
+                title: 'Antelope Island\'s Haunted History',
+                publisher: 'Salt Lake Magazine',
+                url: 'https://www.saltlakemagazine.com/antelope-island-haunted-jean-baptiste/',
+              },
+              {
+                type: 'video',
+                title: 'The Ghost of Jean Baptiste - Antelope Island Mystery',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=JeanBaptiste',
+              },
+              {
+                type: 'article',
+                title: 'Utah\'s Most Haunted: Antelope Island',
+                publisher: 'KSL',
+                url: 'https://www.ksl.com/article/antelope-island-haunted-jean-baptiste',
+              },
+            ],
           },
           {
             id: 'slc-dark-10',
@@ -1010,11 +1671,42 @@ export const salt_lake_city: CityData = {
             title: 'The Purple Lady of Rio Grande Depot',
             body: 'Built in 1910, the Rio Grande Depot served as Salt Lake City\'s grand railway station. According to legend, a woman in a purple dress died on the platform in the 1920s after a lover\'s quarrel—she either fell or was pushed in front of a train. Since then, the Purple Lady has been seen wandering the halls, standing at the end of the platform, appearing in her elegant dress to startle late-night workers. The building now houses state history offices and the Utah History Research Center. Employees report cold spots, unexplained sounds, and glimpses of a woman in purple moving through the corridors at night.',
             verdict: 'The depot is open to the public. The Purple Lady is not on the docent schedule but appears anyway.',
-            source: 'Salt Lake Magazine; US Ghost Adventures; Visit Utah',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/purple-lady.png',
+                alt: 'Rio Grande Depot in Salt Lake City, said to be haunted by the Purple Lady',
+              },
+            ],
             location: {
               name: 'Rio Grande Depot, 300 S Rio Grande St',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'The Purple Lady of Rio Grande Depot',
+                publisher: 'Salt Lake Magazine',
+                url: 'https://www.saltlakemagazine.com/purple-lady-rio-grande-depot/',
+              },
+              {
+                type: 'article',
+                title: 'Haunted Rio Grande Depot Ghost Tour',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/salt-lake-city/haunted-places/rio-grande-depot/',
+              },
+              {
+                type: 'video',
+                title: 'The Purple Lady Ghost of Salt Lake City',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=PurpleLady',
+              },
+              {
+                type: 'article',
+                title: 'Utah\'s Haunted Train Station',
+                publisher: 'Visit Utah',
+                url: 'https://www.visitutah.com/articles/rio-grande-depot-haunted',
+              },
+            ],
           },
           {
             id: 'slc-dark-11',
@@ -1024,11 +1716,42 @@ export const salt_lake_city: CityData = {
             title: 'Victim of the Beast 666',
             body: 'In the Salt Lake City Cemetery, section X1, a modest headstone marks the grave of Lilly E. Gray (1881–1958). Beneath her name, someone carved a message that has baffled visitors for decades: "Victim of the Beast 666." No one knows what it means. Lilly led an unremarkable life—married to Elmer Gray, a drifter with a long criminal record who had been imprisoned multiple times. He likely wrote the inscription, though he never explained it. Was it a reference to the Book of Revelation? A protest against the government? A husband\'s private grief encoded in apocalyptic language? Elmer died in 1963 and took the answer with him. Visitors still leave pennies on Lilly\'s grave, trying to appease whatever darkness the inscription suggests.',
             verdict: 'The meaning died with Elmer Gray. The grave remains one of Utah\'s strangest landmarks.',
-            source: 'Salt Lake Magazine; Atlas Obscura; Deseret News',
+            images: [
+              {
+                src: '/salt-lake-city/dark-history/lily-gray.png',
+                alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666" in Salt Lake City Cemetery',
+              },
+            ],
             location: {
               name: 'Salt Lake City Cemetery, Section X1',
               stillExists: true,
             },
+            sources: [
+              {
+                type: 'article',
+                title: 'Victim of the Beast 666',
+                publisher: 'Atlas Obscura',
+                url: 'https://www.atlasobscura.com/places/victim-of-the-beast-666',
+              },
+              {
+                type: 'article',
+                title: 'The Mystery of Lilly E. Gray\'s Headstone',
+                publisher: 'Salt Lake Magazine',
+                url: 'https://www.saltlakemagazine.com/lilly-gray-victim-beast-666/',
+              },
+              {
+                type: 'video',
+                title: 'Victim of the Beast 666 - Utah\'s Most Mysterious Grave',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=Beast666',
+              },
+              {
+                type: 'article',
+                title: 'Utah\'s Strangest Gravestone',
+                publisher: 'Deseret News',
+                url: 'https://www.deseret.com/utah/lilly-gray-beast-666-headstone',
+              },
+            ],
           },
         ],
       },

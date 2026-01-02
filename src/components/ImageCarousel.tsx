@@ -29,11 +29,11 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   // Single image - no carousel needed
   if (images.length === 1) {
     return (
-      <div className={`relative aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 ${className}`}>
+      <div className={`relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 ${className}`}>
         <img
           src={images[0].src}
           alt={images[0].alt}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
         />
         {images[0].credit && (
           <span className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/40 px-2 py-0.5 rounded">
@@ -48,13 +48,13 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
     <div className={`relative ${className}`}>
       {/* Main image container - click to advance */}
       <div
-        className="relative aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer"
+        className="relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer"
         onClick={goToNext}
       >
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          className="w-full h-full object-contain transition-opacity duration-300"
+          className="w-full h-full object-cover transition-opacity duration-300"
         />
 
         {/* Credit overlay */}

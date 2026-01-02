@@ -3,7 +3,7 @@
  * Run with: npx tsx scripts/validate-events.ts
  */
 
-import { cities, getAllCitySlugs } from '../src/data/cities'
+import { getAllCitySlugs, getCity } from '../src/data/cities'
 import type { EventsContentItem } from '../src/types/content'
 import { validateAllEvents, findStaleEvents, suggestCleanup } from '../src/utils/eventHelpers'
 
@@ -25,7 +25,7 @@ function findItemsOfType<T>(content: any[], type: string): T[] {
   return results
 }
 
-function main() {
+async function main() {
   console.log('🔍 Validating events across all cities...\n')
 
   const citySlugs = getAllCitySlugs()
@@ -35,9 +35,9 @@ function main() {
   let totalStale = 0
   let hasErrors = false
 
-  citySlugs.forEach((slug) => {
-    const city = cities[slug]
-    if (!city) return
+  for (const slug of citySlugs) {
+    const city = await getCity(slug)
+    if (!city) continue
 
     const eventSections = findItemsOfType<EventsContentItem>(city.content, 'events')
     if (eventSections.length === 0) {
@@ -99,7 +99,7 @@ function main() {
       console.log('  ✅ All events are valid and current')
       console.log('')
     }
-  })
+  }
 
   // Summary
   console.log('═'.repeat(50))
@@ -127,4 +127,4 @@ function main() {
   }
 }
 
-main()
+main().catch(console.error)

@@ -4,7 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getCity } from '@/data/cities'
 import { getHistory, getAllHistory } from '@/data/history'
-import { Header, HistoryRenderer, CityNav } from '@/components'
+import { HistoryRenderer, Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 const cityBanners: Record<string, string> = {
   minneapolis: '/Minneapolis-banner.png',
@@ -32,7 +33,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: HistoryPageProps): Promise<Metadata> {
   const { city: citySlug, slug } = await params
   const article = getHistory(citySlug, slug)
-  const city = getCity(citySlug)
+  const city = await getCity(citySlug)
 
   if (!article || !city) {
     return { title: 'History Article Not Found' }
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: HistoryPageProps): Promise<Me
 export default async function HistoryPage({ params }: HistoryPageProps) {
   const { city: citySlug, slug } = await params
   const article = getHistory(citySlug, slug)
-  const city = getCity(citySlug)
+  const city = await getCity(citySlug)
 
   if (!article || !city) {
     notFound()
@@ -57,8 +58,11 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="history"
+      />
 
       {bannerSrc && (
         <div className="max-w-4xl lg:max-w-5xl mx-auto px-6 md:px-8 pt-8">
@@ -119,13 +123,7 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
         </article>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-8">
-        <div className="max-w-4xl lg:max-w-5xl mx-auto px-6 md:px-8 py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City · {city.name}
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

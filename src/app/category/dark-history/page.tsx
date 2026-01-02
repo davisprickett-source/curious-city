@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { getAllDarkHistory } from '@/data/cities'
-import { Header } from '@/components'
+import { Header, Footer } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Dark History | Curious City',
   description: 'Forgotten crimes, unsolved mysteries, and macabre history from cities across America.',
 }
 
-export default function DarkHistoryPage() {
-  const allItems = getAllDarkHistory()
+export default async function DarkHistoryPage() {
+  const allItems = await getAllDarkHistory()
 
   // Group items by city
   const itemsByCity = allItems.reduce((acc, { citySlug, cityName, item }) => {
@@ -135,13 +135,7 @@ export default function DarkHistoryPage() {
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

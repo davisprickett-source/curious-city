@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityScenes } from '@/data/cities'
-import { Header, CityNav, ShareLinks } from '@/components'
-import { ScenesCategoryFilter } from '@/components/ScenesCategoryFilter'
+import { ShareLinks, Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { SceneRenderer } from '@/components/content/SceneRenderer'
 
 interface PageProps {
@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     return { title: 'City Not Found' }
@@ -29,38 +29,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-const categoryLabels: Record<string, string> = {
-  street: 'Street',
-  architecture: 'Architecture',
-  nature: 'Nature',
-  food: 'Food & Drink',
-  people: 'People',
-  night: 'After Dark',
-  seasons: 'Seasons',
-  historic: 'Historic',
-  interior: 'Interiors',
-  cityscape: 'Cityscape',
-  water: 'Waterfront',
-  neighborhood: 'Neighborhoods',
-  art: 'Art & Murals',
-  urban: 'Urban',
-  weather: 'Weather',
-}
-
-
 export default async function CityScenesPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
   const { category: activeCategory } = await searchParams
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     notFound()
   }
 
-  const allScenes = getCityScenes(slug)
-
-  // Get unique categories from available scenes
-  const availableCategories = Array.from(new Set(allScenes.map((s: any) => s.category).filter(Boolean)))
+  const allScenes = await getCityScenes(slug)
 
   // Filter scenes by category if one is selected
   const scenes = activeCategory
@@ -69,8 +47,12 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} currentSection="scenes" />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="scenes"
+        sceneCategory={activeCategory}
+      />
 
       <main className="flex-1">
         <div className="container-page section-spacing">
@@ -89,21 +71,11 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
             </p>
           </div>
 
-          {/* Category Filter */}
-          {availableCategories.length > 1 && (
-            <ScenesCategoryFilter
-              categories={availableCategories}
-              categoryLabels={categoryLabels}
-              categoryIcons={{}}
-              activeCategory={activeCategory}
-              citySlug={slug}
-            />
-          )}
-
           {/* Scenes List */}
           {scenes.length > 0 ? (
             <div className="space-y-8">
               {scenes.map((scene: any) => {
+                // @ts-ignore - Variable for future use
                 const isVideo = scene.media?.type === 'video'
 
                 return (
@@ -125,13 +97,7 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
         </div>
       </main>
 
-      <footer className="border-t border-neutral-200 mt-12">
-        <div className="container-page py-6">
-          <p className="text-xs text-neutral-400 text-center">
-            Curious City
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

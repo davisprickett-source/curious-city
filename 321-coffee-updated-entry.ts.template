@@ -1,0 +1,93 @@
+// TEMPLATE for updating 321 Coffee entry in raleigh.ts (lines 530-545)
+// After downloading images and researching menu, replace the current entry with this structure
+
+{
+  name: '321 Coffee',
+  neighborhood: 'Multiple Locations',
+  vibe: 'Excellent drinks with an incredible mission — employing individuals with intellectual and developmental disabilities.',
+  order: 'Whatever sounds good. The beans are roasted weekly in-house.',
+  why: '321 Coffee started as a pop-up with folding tables and has grown into a beloved local institution with multiple locations. They roast their own beans weekly. But the mission is what sets them apart — creating meaningful employment for people often overlooked. Great coffee, better purpose.',
+  address: '524 Hillsborough St, Raleigh, NC 27603',
+  coordinates: { lat: 35.7847, lng: -78.6486 },
+  hours: '7am-5pm Mon-Fri, 8am-5pm Sat-Sun',
+  price: '$$',
+  website: 'https://www.321coffee.com',
+  instagram: '@drink321coffee',  // CORRECTED: was @321coffee
+  images: [
+    {
+      src: '/images/establishments/coffee-shops/raleigh/321-coffee/interior-01.jpg',
+      alt: '321 Coffee interior with welcoming community atmosphere',
+      credit: '321 Coffee',
+    },
+    {
+      src: '/images/establishments/coffee-shops/raleigh/321-coffee/barista-01.jpg',
+      alt: '321 Coffee barista with IDD preparing drinks',
+      credit: '321 Coffee',
+    },
+    {
+      src: '/images/establishments/coffee-shops/raleigh/321-coffee/drinks-01.jpg',
+      alt: '321 Coffee specialty drinks and latte art',
+      credit: '321 Coffee',
+    },
+    {
+      src: '/images/establishments/coffee-shops/raleigh/321-coffee/community-01.jpg',
+      alt: '321 Coffee community space showcasing their mission',
+      credit: '321 Coffee',
+    },
+  ],
+  menu: {
+    categories: [
+      {
+        name: 'Espresso Drinks',
+        items: [
+          // FILL IN from 321coffee.com menu
+          { name: 'Espresso', description: 'Single or double shot', price: '$X.XX' },
+          { name: 'Americano', description: '', price: '$X.XX' },
+          { name: 'Cappuccino', description: '', price: '$X.XX' },
+          { name: 'Latte', description: '', price: '$X.XX' },
+          { name: 'Flat White', description: '', price: '$X.XX' },
+          { name: 'Cortado', description: '', price: '$X.XX' },
+          { name: 'Mocha', description: '', price: '$X.XX' },
+          { name: 'Macchiato', description: '', price: '$X.XX' },
+          // Add specialty lattes if they have any
+        ],
+      },
+      {
+        name: 'Coffee & Tea',
+        items: [
+          // FILL IN from menu
+          { name: 'Drip Coffee', description: 'Beans roasted weekly in-house', price: '$X.XX' },
+          { name: 'Cold Brew', description: '', price: '$X.XX' },
+          { name: 'Nitro Cold Brew', description: '', price: '$X.XX' },
+          { name: 'Pour Over', description: '', price: '$X.XX' },
+          { name: 'Hot Tea', description: '', price: '$X.XX' },
+          { name: 'Iced Tea', description: '', price: '$X.XX' },
+        ],
+      },
+      {
+        name: 'Specialty Drinks',
+        items: [
+          // FILL IN if they have specialty drinks
+          // Look for signature drinks, seasonal drinks, etc.
+        ],
+      },
+      {
+        name: 'Food',
+        items: [
+          // FILL IN from menu
+          // Look for pastries, muffins, bagels, breakfast items, sandwiches, etc.
+          { name: 'ITEM_NAME', description: '', price: '$X.XX' },
+        ],
+      },
+    ],
+    lastUpdated: 'December 2025',
+    menuUrl: 'https://www.321coffee.com/menu',  // Verify correct URL
+    notes: 'Beans roasted weekly in-house. All locations employ individuals with intellectual and developmental disabilities as part of their mission-driven approach.',
+  },
+},
+
+// REFERENCE EXAMPLES FROM SAME FILE:
+//
+// Jubala Coffee (lines 474-527) - Good example with detailed menu
+// Morning Times (lines 597-647) - Good example with food menu
+// Bida Manda (lines 658-731) - Good example with images array

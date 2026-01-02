@@ -16,6 +16,7 @@ export type CitySection =
   | 'coffee-shops'
   | 'bars'
   | 'restaurants'
+  | 'local-favorites'
   | 'hidden-gems'
   | 'dark-history'
   | 'lost-and-loved'
@@ -44,6 +45,7 @@ export const citySections: SectionDefinition[] = [
   { id: 'coffee-shops', label: 'Coffee', path: '/coffee-shops' },
   { id: 'bars', label: 'Bars', path: '/bars' },
   { id: 'restaurants', label: 'Restaurants', path: '/restaurants' },
+  { id: 'local-favorites', label: 'Local Favorites', path: '/local-favorites' },
   { id: 'hidden-gems', label: 'Hidden Gems', path: '/hidden-gems' },
   { id: 'dark-history', label: 'Dark History', path: '/dark-history' },
   { id: 'lost-and-loved', label: 'Lost & Loved', path: '/lost-and-loved' },
@@ -75,6 +77,7 @@ export const routes = {
   cityCoffeeShops: (citySlug: string) => `/${citySlug}/coffee-shops`,
   cityBars: (citySlug: string) => `/${citySlug}/bars`,
   cityRestaurants: (citySlug: string) => `/${citySlug}/restaurants`,
+  cityLocalFavorites: (citySlug: string) => `/${citySlug}/local-favorites`,
   cityHiddenGems: (citySlug: string) => `/${citySlug}/hidden-gems`,
   cityDarkHistory: (citySlug: string) => `/${citySlug}/dark-history`,
   cityLostAndLoved: (citySlug: string) => `/${citySlug}/lost-and-loved`,

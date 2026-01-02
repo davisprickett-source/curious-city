@@ -22,6 +22,7 @@ export interface WithImages {
     alt: string
     caption?: string
     credit?: string
+    year?: string
   }>
 }
 
@@ -37,6 +38,7 @@ export interface WithCoordinates {
 export interface WithLocation {
   location?: {
     name: string
+    url?: string
     coordinates?: {
       lat: number
       lng: number
@@ -53,8 +55,16 @@ export interface WithSource {
 /** Content with multiple source links */
 export interface WithSources {
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
+    publisher?: string
+    author?: string
+    isbn?: string
+    platform?: string
+    show?: string
+    director?: string
+    year?: string | number
   }>
 }
 
@@ -179,6 +189,7 @@ export interface AdContentItem extends BaseContentItem {
 export interface SectionContentItem extends BaseContentItem {
   type: 'section'
   title?: string
+  intro?: string
   items: ContentItem[]
 }
 
@@ -193,6 +204,11 @@ export interface CuriosityContentItem extends BaseContentItem {
   video?: {
     youtubeId: string
     title?: string
+  }
+  videoAnimation?: {
+    path: string
+    title?: string
+    caption?: string
   }
   image?: {
     src: string
@@ -213,6 +229,7 @@ export interface CuriosityContentItem extends BaseContentItem {
   }>
   location?: {
     name: string
+    url?: string
     stillExists?: boolean
   }
 }
@@ -248,6 +265,49 @@ export interface HiddenGemContentItem extends BaseContentItem {
   phone?: string
   price?: string
   accessibility?: string
+  source?: string
+  sources?: Array<{
+    title: string
+    url: string
+  }>
+}
+
+// Iconic spot - well-known landmark or must-see attraction
+export interface IconicSpotContentItem extends BaseContentItem {
+  type: 'iconic-spot'
+  name: string
+  category: string
+  description: string
+  location?: string
+  tip?: string
+  // Extended fields for richer content
+  image?: {
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }
+  images?: Array<{
+    src: string
+    alt: string
+    caption?: string
+    credit?: string
+  }>
+  coordinates?: {
+    lat: number
+    lng: number
+  }
+  address?: string
+  hours?: string
+  website?: string
+  phone?: string
+  price?: string
+  accessibility?: string
+  source?: string
+  sources?: Array<{
+    title: string
+    url: string
+  }>
 }
 
 // Individual location for multi-location spots
@@ -299,7 +359,20 @@ export interface BestOfSpot {
   website?: string
   instagram?: string
   facebook?: string
-  menu?: string
+  menu?: string | {
+    categories: Array<{
+      name: string
+      items: Array<{
+        name: string
+        description?: string
+        price?: string
+        tags?: string[]
+      }>
+    }>
+    lastUpdated?: string
+    menuUrl?: string
+    notes?: string
+  }
 }
 
 // Best-of list - curated spots locals should know
@@ -344,8 +417,16 @@ export interface DarkHistoryContentItem extends BaseContentItem {
   verdict?: string // What happened / resolution status
   source?: string // Attribution or where to learn more
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
+    publisher?: string
+    author?: string
+    isbn?: string
+    platform?: string
+    show?: string
+    director?: string
+    year?: string | number
   }>
   moreInfo?: Array<{
     title: string
@@ -357,12 +438,14 @@ export interface DarkHistoryContentItem extends BaseContentItem {
     alt: string
     caption?: string
     credit?: string
+    year?: string
   }
   images?: Array<{
     src: string
     alt: string
     caption?: string
     credit?: string
+    year?: string
   }>
   location?: {
     name: string
@@ -450,6 +533,7 @@ export type ContentItem =
   | SectionContentItem
   | CuriosityContentItem
   | HiddenGemContentItem
+  | IconicSpotContentItem
   | BestOfContentItem
   | HistoryContentItem
   | DarkHistoryContentItem
@@ -524,6 +608,44 @@ export interface HistoryAdBlock extends BaseHistoryBlock {
   size?: 'banner' | 'rectangle'
 }
 
+// Image sequence block (premium scrollytelling)
+export interface ImageSequenceBlock extends BaseHistoryBlock {
+  type: 'image-sequence'
+  sequencePath: string      // e.g., "minneapolis/meeting-waters/sequence-1"
+  frameCount: number        // Total number of frames (e.g., 120)
+  frameDigits: number       // Number of digits in frame filename (e.g., 4 for frame_0001.webp)
+  title?: string           // Optional overlay title
+  caption?: string         // Optional caption text
+  scrollHeight?: number    // Height in vh units (default: 150)
+}
+
+// Scroll text block (premium scrollytelling)
+export interface ScrollTextBlock extends BaseHistoryBlock {
+  type: 'scroll-text'
+  content: string
+  style?: 'center' | 'split' | 'overlay'  // Layout style
+  background?: 'light' | 'dark' | 'gradient'
+}
+
+// Mixed sequence block (text + sequence side-by-side, premium)
+export interface MixedSequenceBlock extends BaseHistoryBlock {
+  type: 'mixed-sequence'
+  sequencePath: string
+  frameCount: number
+  frameDigits: number
+  text: string
+  textPosition?: 'left' | 'right' | 'bottom'
+  scrollHeight?: number
+}
+
+// Video sequence block (premium scrollytelling with video)
+export interface VideoSequenceBlock extends BaseHistoryBlock {
+  type: 'video-sequence'
+  videoPath: string           // Path to video file
+  scrollHeight?: number       // Height in vh units (default: 150)
+  textBlocks: HistoryBlock[]  // Text blocks to display alongside video
+}
+
 // Union of all history block types
 export type HistoryBlock =
   | ParagraphBlock
@@ -531,6 +653,10 @@ export type HistoryBlock =
   | SectionBreakBlock
   | SubheadingBlock
   | HistoryAdBlock
+  | ImageSequenceBlock
+  | ScrollTextBlock
+  | MixedSequenceBlock
+  | VideoSequenceBlock
 
 // History metadata and content
 export interface History {
@@ -542,6 +668,16 @@ export interface History {
   publishedAt?: string
   heroImage?: HeroImage
   blocks: HistoryBlock[]
+  premium?: {
+    enabled?: boolean
+    isPremium?: boolean  // Alternative flag for premium content
+    estimatedReadTime?: string
+    sections?: Array<{
+      id: string
+      title: string
+      blockRange: [number, number]  // Start and end block indices
+    }>
+  }
 }
 
 // History index by city then slug

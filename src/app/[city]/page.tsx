@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 import { getHistoryForCity } from '@/data/history'
-import { Header, CityNav, HistoryRenderer, ShareLinks, Footer, RelatedCities, Divider } from '@/components'
+import { HistoryRenderer, ShareLinks, Footer, RelatedCities, Divider } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 const cityBanners: Record<string, string> = {
   minneapolis: '/Minneapolis-banner.png',
@@ -23,7 +24,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     return { title: 'City Not Found' }
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
 
 export default async function CityPage({ params }: CityPageProps) {
   const { city: slug } = await params
-  const city = getCity(slug)
+  const city = await getCity(slug)
 
   if (!city) {
     notFound()
@@ -50,8 +51,11 @@ export default async function CityPage({ params }: CityPageProps) {
 
   return (
     <>
-      <Header cityName={city.name} citySlug={city.slug} />
-      <CityNav citySlug={city.slug} cityName={city.name} currentSection="history" />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="history"
+      />
 
       {bannerSrc && (
         <div className="container-page pt-8">

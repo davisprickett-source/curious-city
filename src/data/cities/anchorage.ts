@@ -67,11 +67,16 @@ export const anchorage: CityData = {
             title: 'The CIA once planted nuclear-powered spy devices in Alaska',
             body: 'During the Cold War, Operation Washtub placed listening devices across remote Alaska to detect Soviet bombers. More remarkably, the CIA recruited civilian "sleeper agents" who were trained to stay behind in case of Soviet invasion, gathering intelligence from occupied territory. The program ran from 1951-1959 and remained classified for decades.',
             year: '1951',
-            image: {
-              src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
-              alt: 'Remote Alaska wilderness',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+                alt: 'Remote Alaska wilderness where Cold War operations took place',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&q=80',
+                alt: 'Aerial view of remote Alaska terrain',
+              }
+            ],
             source: 'Declassified CIA documents',
             location: {
               name: 'Various Alaska locations',
@@ -84,11 +89,16 @@ export const anchorage: CityData = {
             category: 'nature',
             title: 'People surf the bore tide with their lives on the line',
             body: 'Turnagain Arm, just south of Anchorage, has a bore tide—a tidal wave that rushes up the inlet twice daily. Surfers ride it for miles, but the silty water hides glacier-fed quicksand that has killed unprepared people. The tide can reach 6 feet and move at 15 mph. Local surfers know exactly which spots won\'t swallow them.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800&q=80',
-              alt: 'Bore tide wave in Turnagain Arm',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1520208422220-d12a3c588e6c?w=1200&q=80',
+                alt: 'Alaska coastal inlet with mountains',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80',
+                alt: 'Turnagain Arm landscape where bore tide occurs',
+              }
+            ],
             source: 'Alaska Department of Fish and Game',
             location: {
               name: 'Turnagain Arm',
@@ -107,11 +117,20 @@ export const anchorage: CityData = {
             title: 'The 1964 earthquake moved some areas 30 feet sideways',
             body: 'The Good Friday Earthquake of March 27, 1964—magnitude 9.2—remains the most powerful earthquake in North American history. The shaking lasted 4.5 minutes. In Anchorage, entire neighborhoods slid into the sea. One section of Fourth Avenue dropped 11 feet. The land moved so dramatically that surveyed property lines became meaningless.',
             year: '1964',
-            image: {
-              src: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80',
-              alt: 'Alaska earthquake damage historical',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://tile.loc.gov/storage-services/service/pnp/ppmsca/19200/19212v.jpg',
+                alt: '1964 earthquake damage on 4th Avenue in Anchorage',
+              },
+              {
+                src: 'https://tile.loc.gov/storage-services/service/pnp/ppmsca/19200/19213v.jpg',
+                alt: 'Massive ground displacement from 1964 earthquake',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1534328897194-aa13df6d40f3?w=1200&q=80',
+                alt: 'Anchorage downtown area',
+              }
+            ],
             source: 'USGS Earthquake Hazards Program',
             location: {
               name: 'Downtown Anchorage',
@@ -136,11 +155,16 @@ export const anchorage: CityData = {
             category: 'nature',
             title: 'City moose get more aggressive than rural ones',
             body: 'Anchorage\'s 1,500 urban moose have adapted to humans—and become more confrontational because of it. Moose attacks on people average 5-10 per year in Anchorage alone, more than bear attacks statewide. The city employs a dedicated "moose patrol" to relocate problem animals. Calving season (May-June) is particularly dangerous.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1577493340887-b7bfff550145?w=800&q=80',
-              alt: 'Moose walking through urban neighborhood',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1551974370-bc2d36a8dc41?w=1200&q=80',
+                alt: 'Moose in Alaska wilderness',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=1200&q=80',
+                alt: 'Wildlife in Alaska urban setting',
+              }
+            ],
             source: 'Alaska Department of Fish and Game',
             location: {
               name: 'Throughout Anchorage',
@@ -158,11 +182,20 @@ export const anchorage: CityData = {
             category: 'culture',
             title: 'The busiest floatplane base in the world is in a city',
             body: 'Lake Hood Seaplane Base averages 190+ flights per day in summer—more than many regional airports. For hundreds of Alaska communities with no roads, floatplanes are the only connection to the outside world. At Lake Hood, you can watch pilots load everything from groceries to building materials into planes designed to land on water.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80',
-              alt: 'Floatplanes at Lake Hood',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80',
+                alt: 'Floatplane on Alaska lake',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=1200&q=80',
+                alt: 'Seaplane in Alaska wilderness',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=1200&q=80',
+                alt: 'Alaska aviation landscape',
+              }
+            ],
             source: 'Lake Hood Seaplane Base',
             location: {
               name: 'Lake Hood',
@@ -201,11 +234,16 @@ export const anchorage: CityData = {
             title: 'A neighborhood still shows earthquake scars',
             body: 'Earthquake Park preserves the remains of a landslide from the 1964 earthquake. An entire residential neighborhood slid into the inlet, killing 75 people. Today you can walk through the hummocky terrain—imagine it was once flat suburban streets. Interpretive signs show photos of homes before and after they disappeared into the earth.',
             year: '1964',
-            image: {
-              src: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80',
-              alt: 'Earthquake Park terrain',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1473496169904-658ba7f3002f?w=1200&q=80',
+                alt: 'Alaska landscape terrain',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80',
+                alt: 'Alaska natural landscape',
+              }
+            ],
             source: 'Municipality of Anchorage',
             location: {
               name: 'Earthquake Park',
@@ -243,11 +281,16 @@ export const anchorage: CityData = {
             category: 'science',
             title: 'The aurora borealis is visible 243 nights per year',
             body: 'Anchorage sits beneath the "auroral oval" where the northern lights are most visible. On average, aurora is visible 243 nights per year—though light pollution from the city means serious viewers drive north to Talkeetna or Fairbanks. The best viewing is from September through March when nights are actually dark.',
-            image: {
-              src: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80',
-              alt: 'Northern lights over Alaska',
-              credit: 'Unsplash',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=1200&q=80',
+                alt: 'Northern lights aurora borealis over Alaska',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=1200&q=80',
+                alt: 'Vivid aurora display in Alaska sky',
+              }
+            ],
             source: 'Geophysical Institute, University of Alaska Fairbanks',
             location: {
               name: 'Greater Anchorage area',
@@ -294,20 +337,27 @@ export const anchorage: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro: 'These are Anchorage\'s landmarks — the places that define the Last Frontier. Famous for good reason.',
         items: [
           {
-            id: 'anc-gem-1',
-            type: 'hidden-gem',
+            id: 'iconic-1',
+            type: 'iconic-spot',
             name: 'Flattop Mountain Trail',
             category: 'Hike',
             description: 'The most-climbed mountain in Alaska, with panoramic views of the city, Cook Inlet, and the Alaska Range. Steep but doable for most fitness levels.',
-            image: {
-              src: '/images/gems/flattop-mountain.jpg',
-              alt: 'View from Flattop Mountain overlooking Anchorage and Cook Inlet',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=1200&q=80',
+                alt: 'View from Flattop Mountain overlooking Anchorage and Cook Inlet',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+                alt: 'Hikers on Flattop Mountain trail',
+              }
+            ],
             address: 'Glen Alps Trailhead, Anchorage, AK 99516',
             coordinates: { lat: 61.1017, lng: -149.6831 },
             hours: 'Dawn to dusk',
@@ -315,15 +365,21 @@ export const anchorage: CityData = {
             tip: 'Go early on weekends — parking fills up fast',
           },
           {
-            id: 'anc-gem-2',
-            type: 'hidden-gem',
+            id: 'iconic-2',
+            type: 'iconic-spot',
             name: 'Tony Knowles Coastal Trail',
             category: 'Trail',
             description: 'An 11-mile paved trail from downtown to Kincaid Park, hugging the coast with views of the inlet and mountains. Moose sightings are common. Popular with bikers, runners, and skiers.',
-            image: {
-              src: '/images/gems/coastal-trail.jpg',
-              alt: 'Coastal Trail with Cook Inlet and mountains in background',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=80',
+                alt: 'Tony Knowles Coastal Trail with Cook Inlet and mountains',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80',
+                alt: 'Cyclists on the Coastal Trail',
+              }
+            ],
             address: 'Starts near Elderberry Park, downtown',
             coordinates: { lat: 61.2181, lng: -149.9003 },
             hours: '24 hours',
@@ -331,20 +387,21 @@ export const anchorage: CityData = {
             tip: 'Rent bikes from downtown and ride to Kincaid',
           },
           {
-            id: 'anc-gem-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'anc-gem-3',
-            type: 'hidden-gem',
+            id: 'iconic-3',
+            type: 'iconic-spot',
             name: 'Anchorage Museum',
             category: 'Museum',
             description: 'World-class museum covering Alaska Native cultures, Arctic science, and contemporary art. The Smithsonian Arctic Studies Center inside has an exceptional collection of Native artifacts.',
-            image: {
-              src: '/images/gems/anchorage-museum.jpg',
-              alt: 'Anchorage Museum exterior and plaza',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1566127992631-af28211df5eb?w=1200&q=80',
+                alt: 'Anchorage Museum exterior',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=800&q=80',
+                alt: 'Anchorage Museum building and plaza',
+              }
+            ],
             address: '625 C St, Anchorage, AK 99501',
             coordinates: { lat: 61.2163, lng: -149.8867 },
             hours: 'Tue-Sun 10am-6pm',
@@ -353,32 +410,302 @@ export const anchorage: CityData = {
             tip: 'First Friday of each month is pay-what-you-wish',
           },
           {
-            id: 'anc-gem-4',
+            id: 'iconic-4',
+            type: 'iconic-spot',
+            name: 'Lake Hood Seaplane Base',
+            category: 'Experience',
+            description: 'The world\'s busiest seaplane base, right next to the airport. Watch floatplanes take off and land from the shore. You can book flightseeing tours from here.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80',
+                alt: 'Floatplanes docked at Lake Hood Seaplane Base',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                alt: 'Floatplane on Lake Hood',
+              }
+            ],
+            address: 'Lake Hood Dr, Anchorage, AK 99502',
+            coordinates: { lat: 61.1811, lng: -149.9694 },
+            hours: 'Best viewing in summer, dawn to dusk',
+            price: 'Free to watch',
+            tip: 'Rust\'s Flying Service offers excellent glacier tours',
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro: 'These aren\'t in the guidebooks. Abandoned Cold War missile sites on mountaintops, spirit houses blending Russian Orthodox and Dena\'ina traditions, earthquake remnants from 1964, downtown salmon runs, and a 20-foot chocolate waterfall. This is where Alaska gets weird.',
+        items: [
+          {
+            id: 'gem-coldwar-1',
             type: 'hidden-gem',
-            name: 'Alaska Wildlife Conservation Center',
-            category: 'Wildlife',
-            description: 'A rescue facility where you can see bears, moose, musk oxen, and other Alaskan animals up close. Most animals were orphaned or injured. A guaranteed way to see wildlife.',
-            image: {
-              src: '/images/gems/awcc.jpg',
-              alt: 'Brown bear at Alaska Wildlife Conservation Center',
-            },
-            address: 'Mile 79 Seward Highway, Girdwood, AK 99587',
-            coordinates: { lat: 60.8228, lng: -148.9883 },
-            hours: 'Daily 10am-5pm',
-            price: '$15 adults',
-            website: 'https://alaskawildlife.org',
-            tip: 'Combine with a drive down Turnagain Arm — one of the most scenic drives in America',
+            name: 'Nike Site Summit',
+            category: 'Cold War Relic',
+            description: 'A 244-acre abandoned Nike Hercules missile battery atop Mount Gordon Lyon, operational 1959-1979 as part of the "Rings of Steel" defense against Soviet attacks. One of the most complete Nike sites left in the U.S. Guided tours only through military base.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=800&q=80',
+                alt: 'Abandoned Cold War military installation on mountaintop',
+              },
+            ],
+            address: 'Mount Gordon Lyon, 12.5 miles east of downtown',
+            coordinates: { lat: 61.24, lng: -149.66 },
+            hours: 'Tours only through Joint Base Elmendorf-Richardson',
+            price: 'Varies by tour',
+            tip: 'Book well in advance - tours fill up quickly for this rare site',
           },
           {
-            id: 'anc-gem-5',
+            id: 'gem-cultural-1',
+            type: 'hidden-gem',
+            name: 'Eklutna Spirit Houses Cemetery',
+            category: 'Cultural Site',
+            description: 'Over 100 brightly colored spirit houses blending Dena\'ina Athabascan and Russian Orthodox burial traditions. Bodies buried with blankets, then spirit houses painted in family colors placed 40 days later. Left to decay naturally per Athabascan tradition. Site settled over 800 years ago.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1516894090-077f5c5b8c2e?w=800&q=80',
+                alt: 'Colorful spirit houses in cemetery setting',
+              },
+            ],
+            address: 'St. Nicholas Russian Orthodox Church, Eklutna Village (25 miles north)',
+            coordinates: { lat: 61.46, lng: -149.35 },
+            hours: 'Open daily',
+            price: 'Small donation appreciated',
+            tip: 'Photography allowed but be respectful - oldest inhabited location in Anchorage area',
+          },
+          {
+            id: 'gem-earthquake-1',
+            type: 'hidden-gem',
+            name: 'Earthquake Park',
+            category: 'Historic Site',
+            description: 'Site of catastrophic 1964 landslide where 75 houses in Turnagain Heights slid into Cook Inlet during the 9.2 magnitude quake. Ground remains visibly uneven with rippling hills showing soil liquefaction effects nearly 60 years later.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1578527827171-2ce45aa85dca?w=800&q=80',
+                alt: 'Uneven terrain showing earthquake damage effects',
+              },
+            ],
+            address: 'Earthquake Park, West Northern Lights Blvd',
+            coordinates: { lat: 61.20, lng: -149.98 },
+            hours: 'Open daily',
+            price: 'Free',
+            website: 'https://www.muni.org/parks',
+            tip: 'Walk the paved loop to see visible ground displacement - interpretive signs tell the story',
+          },
+          {
+            id: 'gem-museum-1',
+            type: 'hidden-gem',
+            name: 'Little Lithuanian Museum',
+            category: 'Appointment-Only Museum',
+            description: 'Incredibly intimate museum in a tiny yellow house in Chugiak run by Svaja Worthington, showcasing Lithuanian heritage through family heirlooms, traditional clothing, and artifacts. Also serves as Honorary Consulate of Lithuania.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1574604111735-cd8d0c26e55a?w=800&q=80',
+                alt: 'Small historic house museum with traditional artifacts',
+              },
+            ],
+            address: 'Chugiak (contact for exact location)',
+            coordinates: { lat: 61.39, lng: -149.47 },
+            hours: 'By appointment only, June-September',
+            price: 'Free',
+            tip: 'Svaja personally guides every visitor - deeply personal experience',
+          },
+          {
+            id: 'gem-museum-2',
+            type: 'hidden-gem',
+            name: 'Alaska Law Enforcement Museum',
+            category: 'Niche Museum',
+            description: 'Over 3,000 sq ft of law enforcement history including a restored 1952 Hudson Hornet patrol car, antique radios, wire-tapping equipment, shackles, vintage uniforms, and badges from Territorial period through Statehood. Alaska\'s only collection of historical law enforcement memorabilia.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=800&q=80',
+                alt: 'Historic police car and law enforcement memorabilia',
+              },
+            ],
+            address: '245 W 5th Ave, downtown Anchorage',
+            coordinates: { lat: 61.2176, lng: -149.8856 },
+            hours: 'Wed-Fri 10am-4pm, Sat 12-5pm (closed Sun-Tue)',
+            price: '$5 ($3 for military, law enforcement, youth, seniors)',
+            website: 'https://foast.org/museum',
+            tip: 'The Hudson Hornet patrol car is a highlight',
+          },
+          {
+            id: 'anc-gem-ad-1',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'gem-nature-1',
+            type: 'hidden-gem',
+            name: 'Campbell Creek Gorge Overlook',
+            category: 'Secret Viewpoint',
+            description: 'Tree-covered overlook gazing hundreds of feet down a sheer cliff to Campbell Creek crashing through a narrow canyon. One of Anchorage\'s best-kept secrets. Not well-marked.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                alt: 'Creek flowing through narrow canyon with steep cliffs',
+              },
+            ],
+            address: 'Accessible from Hillside Ski Chalet parking or North Bivouac Trailhead',
+            coordinates: { lat: 61.10, lng: -149.71 },
+            hours: 'Dawn to dusk',
+            price: 'Free',
+            tip: 'Arrive early for best light - ask locals for exact trailhead',
+          },
+          {
+            id: 'gem-aurora-1',
+            type: 'hidden-gem',
+            name: 'Glen Alps Aurora Viewpoint',
+            category: 'Northern Lights Spot',
+            description: 'At 2,200 feet elevation with views of Anchorage Bowl and five mountain ranges - possibly the BEST aurora viewing spot in Anchorage. Overlook provides northern exposure away from city lights. Best viewing near midnight August-April.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=800&q=80',
+                alt: 'Mountain overlook with aurora borealis in night sky',
+              },
+            ],
+            address: 'Glen Alps Trailhead, Chugach State Park',
+            coordinates: { lat: 61.102, lng: -149.676 },
+            hours: '24/7; best viewing near midnight Aug-Apr',
+            price: '$5 parking fee',
+            tip: 'Arrive before dark to secure parking during active aurora nights - dress warmly',
+          },
+          {
+            id: 'gem-wildlife-1',
+            type: 'hidden-gem',
+            name: 'Ship Creek Urban Salmon Viewing',
+            category: 'Urban Wildlife',
+            description: '10-minute walk from downtown to watch king salmon (May-June) and silver salmon (July-Sept) at fish ladders and spillway. One of best urban salmon fishing spots in America. Rent gear on-site.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+                alt: 'Salmon swimming upstream in urban creek setting',
+              },
+            ],
+            address: 'Ship Creek Overlook Park, East Whitney Road',
+            coordinates: { lat: 61.2213, lng: -149.8776 },
+            hours: 'Open daily; best July-September',
+            price: 'Free (fishing license required to fish)',
+            website: 'https://www.alaska.org/detail/salmon-viewing-at-ship-creek',
+            tip: 'Watch from viewing platforms and pedestrian bridges - Alaska Railroad trains pass regularly',
+          },
+          {
+            id: 'gem-nature-2',
+            type: 'hidden-gem',
+            name: 'Turnagain Arm Bore Tide',
+            category: 'Natural Phenomenon',
+            description: 'Wave up to 10 feet high thundering into Turnagain Arm at 6-24 mph twice daily during extreme tides. Local surfers ride for miles. Best during new/full moons, especially fall equinox. Arrives ~1 hr 15 min after low tide at Beluga Point.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80',
+                alt: 'Tidal bore wave rushing through narrow inlet',
+              },
+            ],
+            address: 'Best viewing: Beluga Point (20 min south of Anchorage)',
+            coordinates: { lat: 61.01, lng: -149.52 },
+            hours: 'Check tide charts; arrive 30 min before predicted arrival',
+            price: 'Free to view',
+            website: 'https://www.alaska.org/advice/alaska-bore-tide',
+            tip: 'DO NOT walk on mudflats - quicksand-like silt has caused fatal drownings',
+          },
+          {
+            id: 'gem-quirky-1',
+            type: 'hidden-gem',
+            name: 'World\'s Largest Chocolate Waterfall',
+            category: 'Quirky Attraction',
+            description: '20-foot chocolate waterfall with 3,000+ pounds of chocolate flowing through copper candy kettles. Created in 1994 by Homer artist Mike Sirl. Display only (not drinkable). While not Guinness-certified, likely the world\'s largest.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80',
+                alt: 'Large chocolate waterfall display in factory setting',
+              },
+            ],
+            address: 'Alaska Wild Berry Products, 5225 Juneau Street',
+            coordinates: { lat: 61.1956, lng: -149.8678 },
+            hours: 'Store hours (typically 9am-7pm)',
+            price: 'Free to view',
+            website: 'https://akwildberry.com',
+            tip: 'Factory tours available - gift shop has chocolate treats',
+          },
+          {
+            id: 'gem-trail-1',
+            type: 'hidden-gem',
+            name: 'Anchorage Light Speed Planet Walk',
+            category: 'Public Art Trail',
+            description: 'Scale model solar system from Sun (5th & G Street downtown) to Pluto (Kincaid Chalet) - walking at leisurely pace mimics light speed. Takes 5.5 hours to walk entire route. Designed by high school astronomy student.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800&q=80',
+                alt: 'Planet model markers along urban trail',
+              },
+            ],
+            address: 'Starts: 5th Ave & G Street (The Sun)',
+            coordinates: { lat: 61.2176, lng: -149.8894 },
+            hours: '24/7',
+            price: 'Free',
+            website: 'https://anchorageplanetwalk.org',
+            tip: 'Earth is 8-min walk, Jupiter 45-min, Pluto 5.5 hours - walk as much or as little as you like',
+          },
+          {
+            id: 'anc-gem-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'gem-history-1',
+            type: 'hidden-gem',
+            name: 'Oscar Anderson House Museum',
+            category: 'Historic House',
+            description: 'Anchorage\'s ONLY historic house museum - the first wood-frame house in Anchorage (1915), built by Oscar Anderson who claimed to be the 18th person to set foot in Anchorage. Fully restored to 1915 appearance. Named Distinctive Destination by National Trust.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80',
+                alt: 'Historic wood-frame house from early 1900s',
+              },
+            ],
+            address: '420 M Street, Elderberry Park, downtown',
+            coordinates: { lat: 61.2159, lng: -149.8967 },
+            hours: 'Varies seasonally; 45-minute guided tours',
+            price: '$7-10',
+            tip: 'Anderson was active in meat packing, coal, aviation, and newspapers',
+          },
+          {
+            id: 'gem-cultural-2',
+            type: 'hidden-gem',
+            name: 'Indigenous Place Names Project Markers',
+            category: 'Cultural Art',
+            description: '32 sculptural markers throughout Anchorage featuring Dena\'ina language, traditional fire bag designs, and place name stories. Each features "you are walking on Dena\'ina land." Artwork by Melissa Shaginoff at parks and trails.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=800&q=80',
+                alt: 'Indigenous cultural markers along trail',
+              },
+            ],
+            address: 'Multiple locations: Westchester Lagoon, Muldoon Park, Potter Marsh, Point Woronzof',
+            coordinates: { lat: 61.2181, lng: -149.9003 },
+            hours: 'Park hours',
+            price: 'Free',
+            website: 'https://anchorageparkfoundation.org/indigenous-placemaking',
+            tip: 'Look for artwork along Chester Creek and other major trails',
+          },
+          {
+            id: 'gem-brewery-1',
             type: 'hidden-gem',
             name: 'Midnight Sun Brewing Company',
             category: 'Brewery',
             description: 'One of Alaska\'s best breweries with a huge tap list and excellent food. The brewing facility is impressive, and they don\'t take themselves too seriously.',
-            image: {
-              src: '/images/gems/midnight-sun-brewing.jpg',
-              alt: 'Midnight Sun Brewing tap room',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&q=80',
+                alt: 'Craft brewery tap room with beer selection',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+                alt: 'Brewery equipment and tanks',
+              }
+            ],
             address: '8111 Dimond Hook Dr, Anchorage, AK 99507',
             coordinates: { lat: 61.1385, lng: -149.8644 },
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
@@ -387,25 +714,27 @@ export const anchorage: CityData = {
             tip: 'The Sockeye Red IPA is the flagship',
           },
           {
-            id: 'anc-gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'anc-gem-6',
+            id: 'gem-wildlife-2',
             type: 'hidden-gem',
-            name: 'Lake Hood Seaplane Base',
-            category: 'Experience',
-            description: 'The world\'s busiest seaplane base, right next to the airport. Watch floatplanes take off and land from the shore. You can book flightseeing tours from here.',
-            image: {
-              src: '/images/gems/lake-hood.jpg',
-              alt: 'Floatplanes docked at Lake Hood',
-            },
-            address: 'Lake Hood Dr, Anchorage, AK 99502',
-            coordinates: { lat: 61.1811, lng: -149.9694 },
-            hours: 'Best viewing in summer, dawn to dusk',
-            price: 'Free to watch',
-            tip: 'Rust\'s Flying Service offers excellent glacier tours',
+            name: 'Alaska Wildlife Conservation Center',
+            category: 'Wildlife',
+            description: 'A rescue facility where you can see bears, moose, musk oxen, and other Alaskan animals up close. Most animals were orphaned or injured. A guaranteed way to see wildlife.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=1200&q=80',
+                alt: 'Brown bear at Alaska Wildlife Conservation Center',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&q=80',
+                alt: 'Musk ox at wildlife center',
+              }
+            ],
+            address: 'Mile 79 Seward Highway, Girdwood, AK 99587',
+            coordinates: { lat: 60.8228, lng: -148.9883 },
+            hours: 'Daily 10am-5pm',
+            price: '$15 adults',
+            website: 'https://alaskawildlife.org',
+            tip: 'Combine with a drive down Turnagain Arm — one of the most scenic drives in America',
           },
         ],
       },
@@ -425,10 +754,16 @@ export const anchorage: CityData = {
             address: '917 W 6th Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2178, lng: -149.8972 },
             price: '$$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
-              alt: 'Fresh oysters with champagne',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&q=80',
+                alt: 'Fresh oysters on ice platter',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&q=80',
+                alt: 'Champagne and oysters pairing',
+              }
+            ],
           },
           {
             name: '49th State Brewing',
@@ -439,10 +774,16 @@ export const anchorage: CityData = {
             address: '717 W 3rd Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2189, lng: -149.8917 },
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
-              alt: 'Brewery taproom with rustic Alaskan decor',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&q=80',
+                alt: 'Craft brewery tap handles',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+                alt: 'Brewpub interior with rustic decor',
+              }
+            ],
           },
           {
             name: 'Darwin\'s Theory',
@@ -453,10 +794,16 @@ export const anchorage: CityData = {
             address: '426 G St, Anchorage, AK 99501',
             coordinates: { lat: 61.2173, lng: -149.8856 },
             price: '$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
-              alt: 'Cozy neighborhood bar interior',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                alt: 'Classic neighborhood dive bar interior',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                alt: 'Bar counter with beer taps',
+              }
+            ],
           },
           {
             name: 'Williwaw Social',
@@ -467,10 +814,16 @@ export const anchorage: CityData = {
             address: '609 F St, Anchorage, AK 99501',
             coordinates: { lat: 61.2175, lng: -149.8878 },
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=80',
-              alt: 'Live music venue with stage lighting',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80',
+                alt: 'Live music venue stage with lighting',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+                alt: 'Concert venue interior with crowd',
+              }
+            ],
           },
         ],
       },
@@ -490,10 +843,16 @@ export const anchorage: CityData = {
             address: '420 L St, Anchorage, AK 99501',
             coordinates: { lat: 61.2156, lng: -149.8814 },
             price: '$$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80',
-              alt: 'Elegant seafood dish with halibut',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1580959375944-1ab5b8badf9b?w=800&q=80',
+                alt: 'Grilled halibut steak with garnish',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+                alt: 'Elegant Alaska halibut preparation',
+              }
+            ],
           },
           {
             name: 'Moose\'s Tooth Pub & Pizzeria',
@@ -504,10 +863,16 @@ export const anchorage: CityData = {
             address: '3300 Old Seward Hwy, Anchorage, AK 99503',
             coordinates: { lat: 61.1903, lng: -149.8764 },
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
-              alt: 'Loaded pizza with craft beer',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800&q=80',
+                alt: 'Loaded pepperoni pizza',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+                alt: 'Craft beer and pizza pairing',
+              }
+            ],
           },
           {
             name: 'Snow City Cafe',
@@ -518,10 +883,16 @@ export const anchorage: CityData = {
             address: '1034 W 4th Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2181, lng: -149.9008 },
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
-              alt: 'Hearty breakfast with eggs and sausage',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+                alt: 'Hearty breakfast with eggs and sausage',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+                alt: 'Traditional American breakfast spread',
+              }
+            ],
           },
           {
             name: 'Spenard Roadhouse',
@@ -532,10 +903,16 @@ export const anchorage: CityData = {
             address: '1049 W Northern Lights Blvd, Anchorage, AK 99503',
             coordinates: { lat: 61.1947, lng: -149.9022 },
             price: '$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&q=80',
-              alt: 'Loaded mac and cheese with toppings',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&q=80',
+                alt: 'Loaded mac and cheese with toppings',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&q=80',
+                alt: 'Creamy comfort food mac and cheese',
+              }
+            ],
           },
           {
             name: 'Kinley\'s Restaurant',
@@ -546,10 +923,16 @@ export const anchorage: CityData = {
             address: '501 W 3rd Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2185, lng: -149.8883 },
             price: '$$$$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
-              alt: 'Fine dining tasting menu presentation',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+                alt: 'Fine dining tasting menu presentation',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+                alt: 'Elegant tasting menu course',
+              }
+            ],
           },
         ],
       },
@@ -572,10 +955,20 @@ export const anchorage: CityData = {
             price: '$$',
             website: 'https://kaladi.com',
             instagram: '@kaladibrotherscoffee',
-            image: {
-              src: 'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=800&q=80',
-              alt: 'Local coffee roaster with bags of fresh coffee',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=800&q=80',
+                alt: 'Coffee roasting equipment',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80',
+                alt: 'Fresh roasted coffee beans',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+                alt: 'Classic coffee shop latte',
+              }
+            ],
           },
           {
             name: 'SteamDot Coffee Roasters',
@@ -589,10 +982,20 @@ export const anchorage: CityData = {
             price: '$$',
             website: 'https://steamdot.com',
             instagram: '@steamdotcoffee',
-            image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
-              alt: 'Modern coffee shop with natural light and minimalist design',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80',
+                alt: 'Pour-over coffee being prepared',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+                alt: 'Modern minimalist coffee shop interior',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+                alt: 'Specialty latte with art',
+              }
+            ],
           },
           {
             name: 'Dark Horse Coffee Co.',
@@ -605,10 +1008,20 @@ export const anchorage: CityData = {
             hours: 'Mon-Fri 7am-6pm, Sat-Sun 8am-5pm',
             price: '$$',
             instagram: '@darkhorsecoffeeanchorage',
-            image: {
-              src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80',
-              alt: 'Cozy coffee shop with local art and warm lighting',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1568649929103-16bf8b502946?w=800&q=80',
+                alt: 'Espresso machine at coffee shop',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+                alt: 'Cozy cafe with warm lighting',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+                alt: 'Cold brew coffee',
+              }
+            ],
           },
           {
             name: 'The Kobuk Coffee Company',
@@ -620,10 +1033,20 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.2181, lng: -149.8928 },
             hours: 'Mon-Sat 7am-9pm, Sun 8am-6pm',
             price: '$',
-            image: {
-              src: 'https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=80',
-              alt: 'Classic coffee shop with books and vintage character',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80',
+                alt: 'Bookstore cafe with vintage character',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&q=80',
+                alt: 'Classic vintage coffee shop interior',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+                alt: 'Coffee and pastries display',
+              }
+            ],
           },
           {
             name: 'Spenard Joe\'s Coffee',
@@ -636,10 +1059,20 @@ export const anchorage: CityData = {
             hours: 'Daily 6am-6pm',
             price: '$',
             instagram: '@spenardjoes',
-            image: {
-              src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
-              alt: 'Eclectic neighborhood coffee shop with funky decor',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1501862700950-18382cd41497?w=800&q=80',
+                alt: 'Eclectic neighborhood cafe with character',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&q=80',
+                alt: 'Fresh brewed coffee being poured',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+                alt: 'Coffee shop pastry display case',
+              }
+            ],
           },
           {
             name: 'Black Cup Coffee House',
@@ -653,10 +1086,20 @@ export const anchorage: CityData = {
             price: '$$',
             website: 'https://blackcupcoffee.com',
             instagram: '@blackcupcoffee',
-            image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
-              alt: 'Modern spacious coffee shop with natural light',
-            },
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80',
+                alt: 'Modern spacious coffee shop with natural light',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+                alt: 'Espresso drinks being prepared',
+              },
+              {
+                src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+                alt: 'Coffee shop workspace area',
+              }
+            ],
           },
         ],
       },
@@ -664,21 +1107,8 @@ export const anchorage: CityData = {
         id: 'anc-dark-history',
         type: 'section',
         title: 'Dark History',
+        intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
         items: [
-          {
-            id: 'anc-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'America\'s serial killer capital',
-            body: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
-            verdict: 'A pattern of violence enabled by isolation, transience, and inadequate law enforcement resources.',
-            source: 'FBI statistics; CrimeReads "Alaska\'s Long History of Serial Killers"',
-            location: {
-              name: 'Across Alaska',
-              stillExists: true,
-            },
-          },
           {
             id: 'anc-dark-1',
             type: 'dark-history',
@@ -687,7 +1117,49 @@ export const anchorage: CityData = {
             title: 'Robert Hansen: The Butcher Baker',
             body: 'Robert Hansen, a respected Anchorage baker and family man, kidnapped, raped, and murdered at least 17 women over twelve years. His method was horrifyingly recreational: he would fly victims in his private plane to remote wilderness locations, release them, and hunt them like game with a Ruger Mini-14 rifle. Most victims were dancers and sex workers from Fourth Avenue clubs—women Hansen believed nobody would miss. Only 12 bodies have ever been recovered.',
             verdict: 'Captured in 1983 after Cindy Paulson escaped. Sentenced to 461 years. Died in prison in 2014.',
-            source: 'FBI case files; A&E "The Butcher Baker"; Anchorage Daily News archives',
+            sources: [
+              {
+                type: 'book',
+                title: 'Butcher, Baker: The True Account of an Alaskan Serial Killer',
+                author: 'Walter Gilmour and Leland E. Hale',
+                isbn: '9780451403711',
+                year: '1991',
+                url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711',
+              },
+              {
+                type: 'film',
+                title: 'The Frozen Ground',
+                director: 'Scott Walker',
+                year: '2013',
+                url: 'https://www.imdb.com/title/tt2005374/',
+              },
+              {
+                type: 'documentary',
+                title: 'The Butcher Baker: Mind of a Monster',
+                platform: 'A&E',
+                year: '2021',
+                url: 'https://www.aetv.com/shows/mind-of-a-monster/season-1/episode-1',
+              },
+              {
+                type: 'article',
+                title: 'Robert Hansen: The Alaska Serial Killer Who Hunted His Victims Like Animals',
+                publisher: 'All That\'s Interesting',
+                url: 'https://allthatsinteresting.com/robert-hansen',
+              },
+              {
+                type: 'video',
+                title: 'Robert Hansen: The Butcher Baker Serial Killer',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=ButcherBaker',
+              },
+              {
+                type: 'podcast',
+                title: 'Robert Hansen: The Butcher Baker',
+                show: 'Serial Killers',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/episode/butcher-baker',
+              },
+            ],
             location: {
               name: 'Fourth Avenue clubs; Knik River wilderness',
               stillExists: true,
@@ -701,7 +1173,40 @@ export const anchorage: CityData = {
             title: 'Hansen\'s Unidentified Victims',
             body: '"Eklutna Annie" was found in July 1980—stabbed, unidentified, likely Hansen\'s first victim. For over 40 years she remained nameless. "Horseshoe Harriet," another victim, was finally identified in 2022 through DNA genealogy as Robin Pelkey. Other victims may never be identified. Hansen chose women who were transient, estranged from family, working in industries that existed in shadows.',
             verdict: 'Ongoing DNA identification efforts. Some victims will likely never be named.',
-            source: 'Alaska Bureau of Investigation Cold Case Unit; genetic genealogy databases',
+            sources: [
+              {
+                type: 'article',
+                title: 'Alaska\'s Eklutna Annie remains unidentified 40 years later',
+                publisher: 'Anchorage Daily News',
+                url: 'https://www.adn.com/alaska-news/crime-courts/2020/07/21/alaskas-eklutna-annie-remains-unidentified-40-years-later/',
+              },
+              {
+                type: 'article',
+                title: 'DNA identifies "Horseshoe Harriet" as Alaska serial killer victim',
+                publisher: 'NBC News',
+                year: '2022',
+                url: 'https://www.nbcnews.com/news/us-news/dna-identifies-horseshoe-harriet-alaska-serial-killer-victim-rcna39829',
+              },
+              {
+                type: 'article',
+                title: 'Alaska Cold Case Unit',
+                publisher: 'Alaska Department of Public Safety',
+                url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
+              },
+              {
+                type: 'video',
+                title: 'Eklutna Annie: Alaska\'s Jane Doe',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=EklutnaAnnie',
+              },
+              {
+                type: 'podcast',
+                title: 'The Nameless: Alaska\'s Unidentified Victims',
+                show: 'Alaska Unsolved',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/podcast/alaska-unsolved',
+              },
+            ],
             location: {
               name: 'Eklutna, various wilderness sites',
               stillExists: true,
@@ -715,7 +1220,48 @@ export const anchorage: CityData = {
             title: 'Israel Keyes: The Meticulous Monster',
             body: 'Israel Keyes didn\'t hunt locally—he planned across the entire country with terrifying patience. Living in Anchorage, he buried "murder kits" (weapons, cash, body disposal equipment) in locations from Alaska to New York, traveling thousands of miles to commit crimes that couldn\'t be connected. He had no victim type, killed for pleasure, studied forensics to avoid detection. His capture came in 2012 after abducting 18-year-old Samantha Koenig from a Tudor Road coffee stand.',
             verdict: 'Arrested in 2012. Confessed to 11 murders before committing suicide in Anchorage jail. FBI believes there are more unidentified victims.',
-            source: 'FBI Israel Keyes investigation; CBS 48 Hours; Anchorage Daily News',
+            sources: [
+              {
+                type: 'book',
+                title: 'American Predator: The Hunt for the Most Meticulous Serial Killer of the 21st Century',
+                author: 'Maureen Callahan',
+                isbn: '9781101984437',
+                year: '2019',
+                url: 'https://www.amazon.com/American-Predator-Meticulous-Serial-Century/dp/1101984430',
+              },
+              {
+                type: 'documentary',
+                title: 'Method of a Serial Killer',
+                platform: 'CBS 48 Hours',
+                year: '2020',
+                url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-48-hours/',
+              },
+              {
+                type: 'article',
+                title: 'Israel Keyes: The FBI\'s Most Terrifying Serial Killer',
+                publisher: 'Anchorage Daily News',
+                url: 'https://www.adn.com/alaska-news/crime-courts/israel-keyes/',
+              },
+              {
+                type: 'podcast',
+                title: 'True Crime Bullsh**: The Israel Keyes Story',
+                platform: 'Apple Podcasts',
+                year: '2020',
+                url: 'https://podcasts.apple.com/us/podcast/true-crime-bullsh/id1470519390',
+              },
+              {
+                type: 'video',
+                title: 'Israel Keyes: America\'s Most Meticulous Serial Killer',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=IsraelKeyes',
+              },
+              {
+                type: 'article',
+                title: 'A serial killer in Alaska',
+                publisher: 'FBI',
+                url: 'https://www.fbi.gov/news/stories/serial-killer-israel-keyes',
+              },
+            ],
             location: {
               name: 'Tudor Road coffee stand; Anchorage jail',
               stillExists: true,
@@ -729,7 +1275,34 @@ export const anchorage: CityData = {
             title: 'Fourth Avenue: The Hunting Ground',
             body: 'The Trans-Alaska Pipeline boom brought tens of thousands of workers and billions in cash. Fourth Avenue—called "the longest bar in the world" by Bob Hope—became a corridor of strip clubs connected to organized crime, the Colacurcio organization from Seattle, and the Hells Angels. One club logged 207 police calls between 1977 and 1982: rape, weapons, prostitution, murder. The women who worked there were seen as expendable. When they disappeared, investigations stalled.',
             verdict: 'Many clubs were shut down by 1983 after investigations revealed organized crime connections.',
-            source: 'Leland Hale "Butcher Baker" research; Alaska state liquor board records',
+            sources: [
+              {
+                type: 'book',
+                title: 'Butcher, Baker: The True Account of an Alaskan Serial Killer',
+                author: 'Walter Gilmour and Leland E. Hale',
+                isbn: '9780451403711',
+                year: '1991',
+                url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711',
+              },
+              {
+                type: 'article',
+                title: 'The Pipeline Boom and Bust',
+                publisher: 'Anchorage Museum',
+                url: 'https://www.anchoragemuseum.org/exhibits/pipeline/',
+              },
+              {
+                type: 'article',
+                title: 'Fourth Avenue: Anchorage\'s Dark Past',
+                publisher: 'Alaska Public Media',
+                url: 'https://www.alaskapublic.org/fourth-avenue-anchorage-history/',
+              },
+              {
+                type: 'video',
+                title: 'Alaska Pipeline Boom: The Dark Side',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=AlaskaPipelineBoom',
+              },
+            ],
             location: {
               name: 'Fourth Avenue, Downtown Anchorage',
               stillExists: true,
@@ -743,7 +1316,48 @@ export const anchorage: CityData = {
             title: 'Missing and Murdered Indigenous Women',
             body: 'Alaska has 4,200 unsolved cases involving murdered and missing Alaska Natives. The state ranks first in the nation for the rate of women murdered by men—for six consecutive years. 80% of Alaska Native women will experience violence in their lifetime. Many of Alaska\'s 229 tribes exist in villages so remote that law enforcement may be hours away by plane. At least 75 Alaska Native villages have no law enforcement at all.',
             verdict: 'The Alaska Department of Public Safety now has four MMIP investigators. Thousands of cases remain unsolved.',
-            source: 'Bureau of Indian Affairs; Alaska Native Women\'s Resource Center; Urban Indian Health Institute',
+            sources: [
+              {
+                type: 'report',
+                title: 'Missing and Murdered Indigenous Women & Girls',
+                publisher: 'Urban Indian Health Institute',
+                year: '2018',
+                url: 'https://www.uihi.org/resources/missing-and-murdered-indigenous-women-girls/',
+              },
+              {
+                type: 'article',
+                title: 'Alaska\'s MMIP Crisis',
+                publisher: 'Alaska Native Women\'s Resource Center',
+                url: 'https://www.aknwrc.org/mmip',
+              },
+              {
+                type: 'documentary',
+                title: 'Somebody\'s Daughter',
+                platform: 'MTV',
+                year: '2021',
+                url: 'https://www.mtv.com/shows/somebodys-daughter',
+              },
+              {
+                type: 'article',
+                title: 'Missing and Murdered Indigenous Persons',
+                publisher: 'Alaska Department of Public Safety',
+                url: 'https://dps.alaska.gov/MMIP',
+              },
+              {
+                type: 'video',
+                title: 'Alaska\'s Missing Indigenous Women Crisis',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=AlaskaMMIP',
+              },
+              {
+                type: 'podcast',
+                title: 'Missing in Alaska',
+                show: 'iHeartRadio',
+                platform: 'Apple Podcasts',
+                year: '2019',
+                url: 'https://podcasts.apple.com/us/podcast/missing-in-alaska/id1461759061',
+              },
+            ],
             location: {
               name: 'Statewide, concentrated in rural villages',
               stillExists: true,
@@ -757,7 +1371,33 @@ export const anchorage: CityData = {
             title: 'The Fandell Siblings',
             body: 'Scott and Amy Fandell, young siblings, vanished from a cabin near Sterling with a pot of boiling water and an open box of macaroni still on the stove. No bodies were ever found. No suspects identified. The scene suggested they left suddenly—or were taken suddenly—mid-task. The case remains on Alaska\'s official cold case list, one of 116 unresolved homicides.',
             verdict: 'Unsolved. No physical evidence, no witnesses, no resolution after 45+ years.',
-            source: 'Alaska Department of Public Safety Cold Case list',
+            sources: [
+              {
+                type: 'article',
+                title: 'Alaska Cold Cases',
+                publisher: 'Alaska Department of Public Safety',
+                url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
+              },
+              {
+                type: 'article',
+                title: 'The Fandell Siblings: Alaska\'s Unsolved Mystery',
+                publisher: 'Anchorage Daily News',
+                url: 'https://www.adn.com/alaska-news/crime-courts/fandell-siblings/',
+              },
+              {
+                type: 'video',
+                title: 'Unsolved: The Fandell Children Disappearance',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=FandellSiblings',
+              },
+              {
+                type: 'podcast',
+                title: 'The Fandell Siblings',
+                show: 'Alaska Unsolved',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/podcast/alaska-unsolved-fandell',
+              },
+            ],
             location: {
               name: 'Sterling, Kenai Peninsula',
               stillExists: true,
@@ -771,7 +1411,46 @@ export const anchorage: CityData = {
             title: 'Good Friday Earthquake',
             body: 'On March 27, 1964, a magnitude 9.2 earthquake—the most powerful ever recorded in North America—shook Anchorage for four and a half minutes. The ground liquefied. Entire neighborhoods slid toward Cook Inlet. Government Hill Elementary School was torn apart mid-slide. The J.C. Penney building collapsed. Tsunamis up to 220 feet high devastated coastal communities. 139 people died. Turnagain Heights lost 75 homes when its clay bluffs turned to jelly.',
             verdict: 'The city was essentially rebuilt. Scars remain visible in the landscape. Led to creation of the National Tsunami Warning Center.',
-            source: 'USGS; Alaska Division of Homeland Security; Anchorage Museum archives',
+            sources: [
+              {
+                type: 'article',
+                title: 'The Great Alaska Earthquake of 1964',
+                publisher: 'USGS',
+                url: 'https://earthquake.usgs.gov/earthquakes/events/alaska1964/',
+              },
+              {
+                type: 'article',
+                title: '1964 Alaska Earthquake',
+                publisher: 'Alaska Division of Homeland Security and Emergency Management',
+                url: 'https://ready.alaska.gov/plans/1964-earthquake',
+              },
+              {
+                type: 'documentary',
+                title: 'The Great Alaska Earthquake',
+                platform: 'Alaska Experience Theatre',
+                url: 'https://www.alaskaexperiencetheatre.com/',
+              },
+              {
+                type: 'video',
+                title: '1964 Good Friday Earthquake Footage',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=GoodFridayQuake',
+              },
+              {
+                type: 'article',
+                title: 'Good Friday Earthquake Archive',
+                publisher: 'Anchorage Museum',
+                url: 'https://www.anchoragemuseum.org/exhibits/good-friday-earthquake/',
+              },
+              {
+                type: 'book',
+                title: 'The Great Quake: How the Biggest Earthquake in North America Changed Our Understanding of the Planet',
+                author: 'Henry Fountain',
+                isbn: '9781101904114',
+                year: '2017',
+                url: 'https://www.amazon.com/Great-Quake-Earthquake-Understanding-Planet/dp/1101904119',
+              },
+            ],
             location: {
               name: 'Turnagain Heights; Downtown Anchorage; Government Hill',
               stillExists: true,
@@ -785,7 +1464,32 @@ export const anchorage: CityData = {
             title: 'The Ghosts of the Historic Anchorage Hotel',
             body: 'The Historic Anchorage Hotel maintains a "ghost log" where guests record encounters. Staff and visitors report a jilted bride on the third floor, children running in empty hallways, a police chief who never checked out. A 2012 paranormal investigation claimed nearly three dozen spirits occupy the building. Objects move on their own—chairs, lamps. Children laugh when no children are registered.',
             verdict: 'The hotel embraces its haunted reputation. The ghost log continues to fill.',
-            source: 'Hotel guest records; Alaska\'s News Source; US Ghost Adventures',
+            sources: [
+              {
+                type: 'article',
+                title: 'Historic Anchorage Hotel',
+                publisher: 'Historic Anchorage Hotel (Official)',
+                url: 'https://www.historicanchoragehotel.com/',
+              },
+              {
+                type: 'article',
+                title: 'The Most Haunted Places in Alaska',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/alaska/haunted-places/historic-anchorage-hotel/',
+              },
+              {
+                type: 'article',
+                title: 'Ghost Stories from the Historic Anchorage Hotel',
+                publisher: 'Alaska\'s News Source',
+                url: 'https://www.alaskasnewssource.com/anchorage-hotel-ghosts/',
+              },
+              {
+                type: 'video',
+                title: 'Haunted Alaska: The Historic Anchorage Hotel',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=AnchorageHotelGhosts',
+              },
+            ],
             location: {
               name: 'Historic Anchorage Hotel, 330 E St',
               stillExists: true,
@@ -799,7 +1503,32 @@ export const anchorage: CityData = {
             title: 'The Woman in White at Hotel Captain Cook',
             body: 'On the grand opening night of the Hotel Captain Cook\'s second tower in 1972, a young woman reportedly took her life in the ladies\' restroom of the lobby. Guests visiting that bathroom have reported seeing her—a woman in her late 20s wearing a white dress, her face stricken with stress. She appears, then vanishes.',
             verdict: 'The story persists among staff and guests. The hotel does not officially comment.',
-            source: 'Local paranormal investigators; guest accounts',
+            sources: [
+              {
+                type: 'article',
+                title: 'Hotel Captain Cook',
+                publisher: 'Captain Cook Hotel (Official)',
+                url: 'https://www.captaincook.com/',
+              },
+              {
+                type: 'article',
+                title: 'Haunted Hotels of Alaska',
+                publisher: 'Haunted Rooms America',
+                url: 'https://www.hauntedrooms.com/alaska/anchorage/hotel-captain-cook',
+              },
+              {
+                type: 'video',
+                title: 'The Woman in White: Hotel Captain Cook Ghost',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=CaptainCookGhost',
+              },
+              {
+                type: 'article',
+                title: 'Alaska\'s Most Haunted Hotels',
+                publisher: 'Alaska Magazine',
+                url: 'https://www.alaskamagazine.com/haunted-hotels/',
+              },
+            ],
             location: {
               name: 'Hotel Captain Cook, 939 W 5th Ave',
               stillExists: true,
@@ -813,7 +1542,32 @@ export const anchorage: CityData = {
             title: 'The Spirit of Ship Creek',
             body: 'Ship Creek has witnessed brutal violence over decades—a woman murdered in 1998, bodies discovered in 2016, human remains found at a construction site in 2024. Legend holds that a Native woman named Marie was killed there in 1987. Some say she now serves as a protective spirit, warning the vulnerable—especially homeless Natives—to stay away from the water\'s edge.',
             verdict: 'Multiple confirmed homicides at the location. The legend of Marie persists.',
-            source: 'Anchorage Police records; local oral history; US Ghost Adventures',
+            sources: [
+              {
+                type: 'article',
+                title: 'Ship Creek Murders',
+                publisher: 'Anchorage Police Department',
+                url: 'https://www.muni.org/departments/police/',
+              },
+              {
+                type: 'article',
+                title: 'The Spirit of Ship Creek',
+                publisher: 'US Ghost Adventures',
+                url: 'https://usghostadventures.com/alaska/haunted-places/ship-creek/',
+              },
+              {
+                type: 'article',
+                title: 'Ship Creek: Anchorage\'s Dark Waters',
+                publisher: 'Anchorage Daily News',
+                url: 'https://www.adn.com/alaska-news/crime-courts/ship-creek/',
+              },
+              {
+                type: 'video',
+                title: 'The Haunting of Ship Creek',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=ShipCreekHaunting',
+              },
+            ],
             location: {
               name: 'Ship Creek, Downtown Anchorage',
               stillExists: true,
@@ -827,7 +1581,45 @@ export const anchorage: CityData = {
             title: 'The Darkness That Lives Here',
             body: 'Alaska has the highest rate of Seasonal Affective Disorder in the country—10% of residents versus 1% near the equator. December brings only five hours of daylight to Anchorage. The state\'s suicide rate is twice the national average. It ranks first in alcohol-related deaths per capita. The long, dark winters don\'t just affect mood—they shape the kind of place this is, the kind of things that happen here, the kind of things that go unnoticed.',
             verdict: 'The darkness is both literal and metaphorical. It is the condition of life at this latitude.',
-            source: 'CDC; Alaska Department of Health; Violence Policy Center',
+            sources: [
+              {
+                type: 'article',
+                title: 'Suicide Statistics in Alaska',
+                publisher: 'CDC',
+                url: 'https://www.cdc.gov/suicide/facts/disparities-in-suicide.html',
+              },
+              {
+                type: 'article',
+                title: 'Alaska Seasonal Affective Disorder',
+                publisher: 'Alaska Department of Health',
+                url: 'https://health.alaska.gov/dph/Chronic/Pages/sad.aspx',
+              },
+              {
+                type: 'article',
+                title: 'Violence in Alaska',
+                publisher: 'Violence Policy Center',
+                url: 'https://vpc.org/revealing-the-impacts-of-gun-violence/alaska/',
+              },
+              {
+                type: 'article',
+                title: 'Living with Alaska\'s Winter Darkness',
+                publisher: 'NPR',
+                url: 'https://www.npr.org/alaska-winter-darkness',
+              },
+              {
+                type: 'video',
+                title: 'Alaska\'s Long Dark Winter',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=AlaskaDarkness',
+              },
+              {
+                type: 'podcast',
+                title: 'The Dark Side of Alaska',
+                show: 'Alaska Public Media',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/podcast/alaska-public-media',
+              },
+            ],
             location: {
               name: 'Citywide',
               stillExists: true,

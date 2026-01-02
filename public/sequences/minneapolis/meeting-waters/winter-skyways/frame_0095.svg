@@ -1,0 +1,12 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="rgb(190,192,244)"/>
+  <text x="960" y="500" font-family="Arial, sans-serif" font-size="72" fill="white" text-anchor="middle" opacity="0.9">
+    Winter & Adaptation
+  </text>
+  <text x="960" y="600" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" opacity="0.6">
+    Frame 95 / 150
+  </text>
+  <text x="960" y="650" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.4">
+    Placeholder - Replace with real animation
+  </text>
+</svg>

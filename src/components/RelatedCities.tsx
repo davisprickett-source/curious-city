@@ -6,8 +6,8 @@ interface RelatedCitiesProps {
   maxCities?: number
 }
 
-export function RelatedCities({ currentCitySlug, maxCities = 3 }: RelatedCitiesProps) {
-  const allCities = getAllCities()
+export async function RelatedCities({ currentCitySlug, maxCities = 3 }: RelatedCitiesProps) {
+  const allCities = await getAllCities()
 
   // Filter out current city and get random selection
   const otherCities = allCities.filter((city) => city.slug !== currentCitySlug)

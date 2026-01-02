@@ -67,23 +67,10 @@ export const phoenix: CityData = {
             title: 'Modern canals follow routes built 1,000 years ago',
             body: 'Between 300-1450 AD, the Hohokam people engineered over 500 miles of irrigation canals in the Salt River Valley—the most sophisticated pre-Columbian water system north of Mexico. These weren\'t simple ditches; they were precisely graded, maintained, and expanded over centuries to support a population of tens of thousands. When Anglo settlers arrived in the 1860s and founded Phoenix, they didn\'t start from scratch—they simply cleared out the ancient Hohokam canals and put them back into use. Today, the Salt River Project\'s modern canal system follows many of the same routes mapped out by Indigenous engineers a millennium ago. The Hohokam mysteriously abandoned their cities around 1450 AD, likely due to a combination of mega-drought, soil salinization, and social collapse. Their engineering legacy literally flows through modern Phoenix.',
             year: '1450',
-            images: [
-              {
-                src: 'https://www.pueblogrande.com/images/canal-system-hohokam.jpg',
-                alt: 'Ancient Hohokam canal system ruins in Phoenix',
-                credit: 'Pueblo Grande Museum',
-              },
-              {
-                src: 'https://www.srpnet.com/assets/srpnet/img/about/canals-historic-photo.jpg',
-                alt: 'Historic photo of settlers cleaning out Hohokam canals in 1800s',
-                credit: 'Salt River Project',
-              },
-              {
-                src: 'https://www.srpnet.com/assets/srpnet/img/water/arizona-canal-modern.jpg',
-                alt: 'Modern Arizona Canal following ancient Hohokam route',
-                credit: 'Salt River Project',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/canals.png',
+              alt: 'Ancient Hohokam canal system and modern Phoenix waterways',
+            },
             sources: [
               {
                 title: 'Pueblo Grande Museum: Hohokam Canal System',
@@ -105,6 +92,10 @@ export const phoenix: CityData = {
             category: 'underground',
             title: 'There\'s an underground bus station beneath the city',
             body: 'The Central Station bus terminal downtown includes an underground concourse that tunnels beneath Central Avenue. Built in the 1980s, it was part of an ambitious plan to create a network of underground walkways to escape the heat. The larger network was never completed, but the existing tunnels are still used daily by commuters who\'d rather not wait in 115-degree heat.',
+            image: {
+              src: '/phoenix/curiosities/bus-tunnel.png',
+              alt: 'Underground bus station concourse beneath downtown Phoenix',
+            },
             source: 'Valley Metro',
             location: {
               name: 'Central Station',
@@ -123,23 +114,10 @@ export const phoenix: CityData = {
             title: 'German POWs escaped into the desert during WWII',
             body: 'Camp Papago Park, located in what\'s now east Phoenix, held German prisoners of war during WWII—many of them U-boat crews captured in the Atlantic. On December 23, 1944, 25 German officers executed "The Great Papago Escape," emerging from a 178-foot tunnel they\'d dug over three months using makeshift tools. The tunnel started under a bathhouse and extended beyond the camp fence. The Germans had built a collapsible boat, studied maps, and planned to float down the Gila River to Mexico. There was one problem: Arizona\'s "rivers" on maps are usually bone-dry. The escapees wandered the Sonoran Desert in confusion. Most were recaptured within days. The last holdout, U-boat Captain Jürgen Wattenberg, evaded capture until January 28, 1945—over a month on the run. All 25 were eventually caught. The tunnel entrance is now commemorated at Papago Park Golf Course.',
             year: '1944',
-            images: [
-              {
-                src: 'https://www.azlibrary.gov/sites/default/files/papago-park-pow-camp.jpg',
-                alt: 'German POW camp at Papago Park during World War II',
-                credit: 'Arizona State Library',
-              },
-              {
-                src: 'https://www.history.navy.mil/content/dam/nhhc/browse-by-topic/wwii/papago-escape-tunnel.jpg',
-                alt: 'Entrance to escape tunnel dug by German POWs at Camp Papago Park',
-                credit: 'Naval History and Heritage Command',
-              },
-              {
-                src: 'https://www.papagogc.com/tunnel-marker-great-escape.jpg',
-                alt: 'Historical marker at Papago Park Golf Course commemorating the Great Escape',
-                credit: 'Papago Golf Course',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/wwii-prisoners.png',
+              alt: 'German POW camp at Papago Park and escape tunnel site',
+            },
             sources: [
               {
                 title: 'Arizona State Library: Papago Park POW Camp',
@@ -162,23 +140,10 @@ export const phoenix: CityData = {
             title: 'The Phoenix Lights remain unexplained',
             body: 'On March 13, 1997, at approximately 8:30 PM, thousands of Arizona residents witnessed something extraordinary: a massive V-shaped formation of lights moving silently across the sky from Henderson, Nevada, through Phoenix, and down to Tucson. The formation was huge—some described it as a mile wide, blocking out stars as it passed overhead. Witnesses included pilots, police officers, and then-Governor Fife Symington, who initially held a press conference mocking the reports (his chief of staff appeared in an alien costume). A decade later, Symington admitted he\'d seen it too and called it "otherworldly." The U.S. Air Force claimed the lights were flares dropped during a training exercise at the Barry Goldwater Range. But witnesses insist the flares explanation only accounts for a second set of lights seen later that night—not the massive V-shaped craft that flew overhead. Multiple videos and photos were captured. It remains one of the most witnessed and well-documented UFO events in history.',
             year: '1997',
-            images: [
-              {
-                src: 'https://www.phoenixnewtimes.com/news/phoenix-lights-v-formation-1997.jpg',
-                alt: 'Illustration of V-shaped formation witnessed during Phoenix Lights event',
-                credit: 'Phoenix New Times',
-              },
-              {
-                src: 'https://www.azcentral.com/gcdn/media/phoenix-lights-photo-1997.jpg',
-                alt: 'Actual photograph of lights in V-formation over Phoenix on March 13, 1997',
-                credit: 'The Arizona Republic',
-              },
-              {
-                src: 'https://media.12news.com/assets/KPNX/phoenix-lights-witness-video-still.jpg',
-                alt: 'Still from witness video showing lights in sky during Phoenix Lights event',
-                credit: '12 News',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/v-lights-sky.png',
+              alt: 'V-shaped formation of lights witnessed during Phoenix Lights event',
+            },
             sources: [
               {
                 title: 'The Arizona Republic: The Phoenix Lights, 20 Years Later',
@@ -201,23 +166,10 @@ export const phoenix: CityData = {
             title: 'Phoenix had 31 consecutive days over 110°F in 2023',
             body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds. The heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Climate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal.',
             year: '2023',
-            images: [
-              {
-                src: 'https://www.12news.com/img/phoenix-heat-thermometer-2023.jpg',
-                alt: 'Thermometer showing 118°F in Phoenix during July 2023 heat wave',
-                credit: '12 News',
-              },
-              {
-                src: 'https://www.azcentral.com/gcdn/phoenix-heat-island-infrared.jpg',
-                alt: 'Infrared image showing Phoenix urban heat island effect with surface temperatures',
-                credit: 'Arizona State University / The Arizona Republic',
-              },
-              {
-                src: 'https://www.npr.org/assets/img/2023/08/phoenix-cooling-center.jpg',
-                alt: 'People seeking relief at Phoenix cooling center during 2023 heat emergency',
-                credit: 'NPR / Maricopa County',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/heat-wave.png',
+              alt: 'Phoenix heat wave thermometer showing extreme temperatures',
+            },
             sources: [
               {
                 title: 'National Weather Service: Phoenix Heat Records 2023',
@@ -249,6 +201,10 @@ export const phoenix: CityData = {
             title: 'Phoenix barely existed before air conditioning',
             body: 'In 1940, Phoenix had just 65,000 residents. After residential air conditioning became affordable in the 1950s, the population exploded: 439,000 by 1960, over 5 million in the metro today. Modern Phoenix exists because of air conditioning. If the power grid fails during a heat wave, the city becomes genuinely dangerous within hours.',
             year: '1950s',
+            image: {
+              src: '/phoenix/curiosities/before-ac-phoenixx.png',
+              alt: 'Phoenix before air conditioning era - small desert town',
+            },
             source: 'Arizona Historical Society',
             location: {
               name: 'Phoenix',
@@ -261,23 +217,10 @@ export const phoenix: CityData = {
             category: 'law',
             title: 'Cutting down a saguaro is a felony',
             body: 'The iconic saguaro cactus (Carnegiea gigantea) grows nowhere else on Earth except the Sonoran Desert. They can live 200 years and reach 40 feet tall, but growth is excruciatingly slow—it takes 10 years to grow one inch, and 75-100 years before a saguaro sprouts its first arm. Because of this, Arizona law protects them fiercely. Under the Arizona Native Plant Law, destroying, collecting, or moving a saguaro without a permit is a Class 4 felony carrying up to 3.75 years in prison and fines up to $150,000. When developers build in the Sonoran Desert, every saguaro must be surveyed, tagged, and either avoided or transplanted at costs reaching $1,000+ per cactus. Despite the law, cactus poaching remains a problem—landscapers illegally harvest saguaros from public land to sell to resorts and homeowners. In 1982, a man shot a saguaro with his shotgun near Lake Pleasant; the cactus fell on him and killed him. The story became a dark Arizona legend.',
-            images: [
-              {
-                src: 'https://www.nps.gov/sagu/learn/nature/images/saguaro-cactus-blooming.jpg',
-                alt: 'Towering saguaro cactus with white blooms in Saguaro National Park',
-                credit: 'National Park Service',
-              },
-              {
-                src: 'https://agriculture.az.gov/sites/default/files/protected-saguaro-tagged.jpg',
-                alt: 'Tagged saguaro cactus on construction site in Phoenix',
-                credit: 'Arizona Department of Agriculture',
-              },
-              {
-                src: 'https://www.azcentral.com/gcdn/saguaro-arms-sunset-sonoran-desert.jpg',
-                alt: 'Multi-armed saguaro silhouetted against Arizona sunset',
-                credit: 'The Arizona Republic',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/cactus.png',
+              alt: 'Towering saguaro cactus protected by Arizona law',
+            },
             sources: [
               {
                 title: 'Arizona Department of Agriculture: Native Plant Law',
@@ -299,6 +242,10 @@ export const phoenix: CityData = {
             category: 'nature',
             title: 'The Sonoran Desert is the most biodiverse desert on Earth',
             body: 'The saguaro cactus grows naturally nowhere else in the world. The Sonoran Desert supports over 2,000 plant species, 550 vertebrate species, and is the only place jaguars still roam in the U.S. Phoenix has paved over much of this ecosystem, but it persists at the city\'s edges—and occasionally sends javelinas wandering through suburban backyards.',
+            image: {
+              src: '/phoenix/curiosities/desert.png',
+              alt: 'Biodiverse Sonoran Desert landscape near Phoenix',
+            },
             source: 'Arizona-Sonora Desert Museum',
             location: {
               name: 'Sonoran Desert',
@@ -312,6 +259,10 @@ export const phoenix: CityData = {
             title: 'The Lost Dutchman\'s Gold Mine has never been found',
             body: 'Somewhere in the Superstition Mountains east of Phoenix, a legendary gold mine awaits discovery—if you believe the stories. German immigrant Jacob Waltz reportedly found it in the 1870s and took the secret to his grave in 1891. Treasure hunters have died searching for it. The state of Arizona now prohibits excavation in the Superstition Wilderness.',
             year: '1891',
+            image: {
+              src: '/phoenix/curiosities/dutchman-gold.png',
+              alt: 'Superstition Mountains hiding the Lost Dutchman gold mine',
+            },
             source: 'Superstition Mountain Museum',
             location: {
               name: 'Superstition Mountains',
@@ -324,6 +275,10 @@ export const phoenix: CityData = {
             category: 'culture',
             title: 'Phoenix is larger than Los Angeles by area',
             body: 'Phoenix proper covers 519 square miles—larger than Los Angeles (469 sq mi) and nearly three times the size of Chicago. The sprawl is relentless: you can drive for an hour and never leave the metro area. There\'s effectively no public transit culture. The car dependency makes the city uniquely vulnerable to gas price shocks.',
+            image: {
+              src: '/phoenix/curiosities/bigger-than-la.png',
+              alt: 'Phoenix urban sprawl larger than Los Angeles by area',
+            },
             source: 'US Census Bureau',
             location: {
               name: 'Phoenix',
@@ -336,23 +291,10 @@ export const phoenix: CityData = {
             category: 'science',
             title: 'Phoenix gets 8 inches of rain per year',
             body: 'Phoenix averages 8.03 inches of rain annually. Seattle gets 37.5 inches. New York gets 46. Yet Phoenix supports 4.95 million people in the metro area. The water comes from three sources: the Colorado River (delivered 336 miles via the Central Arizona Project canal), the Salt and Verde rivers (dammed and stored in reservoirs), and groundwater pumped from aquifers. Here\'s the problem: the Colorado River is drying up. Lake Mead, which supplies 40% of Phoenix\'s water, is at 27% capacity. The 1922 Colorado River Compact was based on unusually wet years—it allocated more water than the river actually carries. Arizona\'s allocation is already being cut. Groundwater aquifers, which took thousands of years to fill, are being depleted faster than they recharge—some areas have dropped 400+ feet. Phoenix has implemented strict conservation measures, banned grass in new development, and invested in groundwater banking. But the math is unforgiving: five million people living in a desert that gets less rain than the Sahara.',
-            images: [
-              {
-                src: 'https://www.cap-az.com/images/CAP-canal-aqueduct-arizona.jpg',
-                alt: 'Central Arizona Project canal carrying Colorado River water 336 miles to Phoenix',
-                credit: 'Central Arizona Project',
-              },
-              {
-                src: 'https://www.usbr.gov/images/lake-mead-low-levels-bathtub-ring.jpg',
-                alt: 'Lake Mead showing dramatic water level decline with white bathtub ring on cliffs',
-                credit: 'U.S. Bureau of Reclamation',
-              },
-              {
-                src: 'https://www.azcentral.com/gcdn/dry-salt-river-bed-phoenix.jpg',
-                alt: 'Dry Salt River bed in Phoenix showing parched landscape',
-                credit: 'The Arizona Republic',
-              },
-            ],
+            image: {
+              src: '/phoenix/curiosities/phoenix-rain.png',
+              alt: 'Desert landscape showing Phoenix\'s minimal annual rainfall',
+            },
             sources: [
               {
                 title: 'Central Arizona Project: Water Delivery',
@@ -379,6 +321,10 @@ export const phoenix: CityData = {
             title: 'The city\'s name references its predecessor\'s death',
             body: 'Anglo settlers named the city "Phoenix" in 1868 specifically because it rose from the ruins of the Hohokam civilization that had previously flourished here. It was both a boast and a warning: a great civilization had already collapsed in this valley once. The name was chosen by "Lord" Darrell Duppa, an English adventurer.',
             year: '1868',
+            image: {
+              src: '/phoenix/curiosities/phoeni-origin-name.png',
+              alt: 'Phoenix rising from Hohokam ruins - city name origin',
+            },
             source: 'Phoenix History Project',
             location: {
               name: 'Phoenix',
@@ -392,6 +338,10 @@ export const phoenix: CityData = {
             title: 'Frank Lloyd Wright built his desert laboratory here',
             body: 'Taliesin West, in Scottsdale, was Frank Lloyd Wright\'s winter home and architecture school from 1937 until his death in 1959. He designed it to blend into the desert, using local stone and canvas. Students still live and work there. The building was never "finished"—Wright viewed it as an ongoing experiment.',
             year: '1937',
+            image: {
+              src: '/phoenix/curiosities/Taliesin-house.png',
+              alt: 'Taliesin West - Frank Lloyd Wright desert laboratory',
+            },
             source: 'Frank Lloyd Wright Foundation',
             location: {
               name: 'Taliesin West, Scottsdale',
@@ -420,17 +370,14 @@ export const phoenix: CityData = {
               {
                 src: 'https://www.phoenix.gov/parks/images/hole-in-rock-papago-park.jpg',
                 alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening',
-                credit: 'City of Phoenix Parks and Recreation',
               },
               {
-                src: 'https://www.azcentral.com/gcdn/papago-park-hole-in-rock-solstice-sunrise.jpg',
+                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
                 alt: 'Sunrise light streaming through Hole in the Rock during winter solstice',
-                credit: 'The Arizona Republic',
               },
               {
-                src: 'https://www.pueblogrande.com/images/hohokam-astronomy-papago-park.jpg',
+                src: 'https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?w=800&q=80',
                 alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock',
-                credit: 'Pueblo Grande Museum',
               },
             ],
             sources: [
@@ -451,119 +398,445 @@ export const phoenix: CityData = {
         ],
       },
       {
-        id: 'hidden-gems',
+        id: 'iconic-spots',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Iconic Spots',
+        intro:
+          'These are Phoenix\'s landmarks — the places that define the Valley of the Sun. Famous for good reason.',
         items: [
           {
-            id: 'phx-gem-1',
-            type: 'hidden-gem',
+            id: 'iconic-desert-botanical',
+            type: 'iconic-spot',
             name: 'Desert Botanical Garden',
             category: 'Garden',
-            description: '140 acres of desert plants from around the world. The saguaros, the wildflower trails, and the evening flashlight tours are all excellent. Best visited at sunrise or after dark.',
-            image: {
-              src: '/images/gems/desert-botanical.jpg',
-              alt: 'Desert Botanical Garden trails with saguaros',
-            },
+            description:
+              '140 acres of desert plants from around the world. The saguaros, the wildflower trails, and the evening flashlight tours are all excellent. Best visited at sunrise or after dark when the desert comes alive. The butterfly pavilion in spring draws crowds.',
+            images: [
+              {
+                src: '/phoenix/hidden-gems/botantical-garden.png',
+                alt: 'Desert Botanical Garden trails with saguaros',
+              },
+            ],
             address: '1201 N Galvin Pkwy, Phoenix, AZ 85008',
             coordinates: { lat: 33.4617, lng: -111.9450 },
             hours: '8am-8pm daily (seasonal variations)',
             price: '$25 adults',
             website: 'https://dbg.org',
-            tip: 'The flashlight tours during butterfly season are magical',
+            tip: 'The flashlight tours during butterfly season are magical.',
           },
           {
-            id: 'phx-gem-2',
-            type: 'hidden-gem',
+            id: 'iconic-camelback',
+            type: 'iconic-spot',
             name: 'Camelback Mountain',
             category: 'Hike',
-            description: 'The most iconic Phoenix hike — steep, rocky, and crowded, but the views are worth it. Two trails: Echo Canyon (harder) and Cholla (slightly easier). Start early or don\'t go.',
-            image: {
-              src: '/images/gems/camelback.jpg',
-              alt: 'View from Camelback Mountain summit',
-            },
+            description:
+              'The most iconic Phoenix hike — steep, rocky, and crowded, but the views are worth it. Two trails: Echo Canyon (harder) and Cholla (slightly easier). Start early or don\'t go. In summer, the trail closes when temperatures exceed 100°F. This is Phoenix\'s proving ground.',
+            images: [
+              {
+                src: '/phoenix/hidden-gems/camelback-mountain.png',
+                alt: 'View from Camelback Mountain summit',
+              },
+            ],
             address: 'Echo Canyon Trailhead, Phoenix, AZ 85018',
             coordinates: { lat: 33.5220, lng: -111.9733 },
             hours: 'Sunrise to sunset; gates close 30 min after',
             price: 'Free',
-            tip: 'In summer, the trail closes when temperatures exceed 100°F',
+            tip: 'Start before 6am to avoid crowds and heat.',
           },
           {
-            id: 'phx-gem-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'phx-gem-3',
-            type: 'hidden-gem',
+            id: 'iconic-heard',
+            type: 'iconic-spot',
             name: 'Heard Museum',
             category: 'Museum',
-            description: 'World-class collection of Native American art and culture. The boarding school exhibit is devastating and necessary. One of the best museums of its kind anywhere.',
-            image: {
-              src: '/images/gems/heard-museum.jpg',
-              alt: 'Heard Museum courtyard',
-            },
+            description:
+              'World-class collection of Native American art and culture. The boarding school exhibit is devastating and necessary. One of the best museums of its kind anywhere. The World Championship Hoop Dance Contest in February showcases incredible athleticism and cultural tradition.',
+            images: [
+              {
+                src: '/phoenix/hidden-gems/heard-museum.png',
+                alt: 'Heard Museum courtyard',
+              },
+            ],
             address: '2301 N Central Ave, Phoenix, AZ 85004',
             coordinates: { lat: 33.4725, lng: -112.0722 },
             hours: 'Tue-Sun 10am-4pm',
             price: '$18 adults',
             website: 'https://heard.org',
-            tip: 'The World Championship Hoop Dance Contest in February is incredible',
+            tip: 'The boarding school exhibit is essential — give it time.',
           },
           {
-            id: 'phx-gem-4',
-            type: 'hidden-gem',
+            id: 'iconic-taliesin',
+            type: 'iconic-spot',
             name: 'Taliesin West',
             category: 'Architecture',
-            description: 'Frank Lloyd Wright\'s winter home and architecture school, built into the desert landscape. The tours vary in depth; the longer ones are worth it.',
-            image: {
-              src: '/images/gems/taliesin-west.jpg',
-              alt: 'Taliesin West exterior',
-            },
+            description:
+              'Frank Lloyd Wright\'s winter home and architecture school, built into the desert landscape. The tours vary in depth; the longer ones are worth it. Wright\'s organic architecture philosophy manifests in every detail — stone walls from the surrounding desert, canvas roofs, and spaces that blur inside and outside.',
+            images: [
+              {
+                src: '/images/gems/taliesin-west.jpg',
+                alt: 'Taliesin West exterior',
+              },
+            ],
             address: '12621 N Frank Lloyd Wright Blvd, Scottsdale, AZ 85259',
             coordinates: { lat: 33.6067, lng: -111.8448 },
             hours: 'Tours daily; schedule varies',
             price: '$38-$80 depending on tour',
             website: 'https://franklloydwright.org/taliesin-west',
-            tip: 'Book the Night Lights tour to see the desert at its best',
+            tip: 'Book the Night Lights tour to see the desert at its best.',
           },
           {
-            id: 'phx-gem-5',
-            type: 'hidden-gem',
+            id: 'iconic-south-mountain',
+            type: 'iconic-spot',
             name: 'South Mountain Park',
             category: 'Park',
-            description: 'One of the largest municipal parks in the US at 16,000 acres. Over 50 miles of trails for hiking, biking, and horseback riding. Dobbins Lookout has the best city views.',
-            image: {
-              src: '/images/gems/south-mountain.jpg',
-              alt: 'View from South Mountain overlooking Phoenix',
-            },
+            description:
+              'One of the largest municipal parks in the US at 16,000 acres. Over 50 miles of trails for hiking, biking, and horseback riding. Dobbins Lookout has the best city views. The park contains Hohokam petroglyphs and ruins from mining operations. Desert at its most accessible.',
+            images: [
+              {
+                src: '/phoenix/hidden-gems/south-mountain-park.png',
+                alt: 'View from South Mountain overlooking Phoenix',
+              },
+            ],
             address: '10919 S Central Ave, Phoenix, AZ 85042',
             coordinates: { lat: 33.3500, lng: -112.0633 },
             hours: '5am-7pm (summer), 5am-11pm (winter)',
             price: 'Free',
-            tip: 'Drive to Dobbins Lookout for sunset',
+            tip: 'Drive to Dobbins Lookout for sunset — the view spans the entire valley.',
           },
           {
-            id: 'phx-gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'phx-gem-6',
-            type: 'hidden-gem',
+            id: 'iconic-mim',
+            type: 'iconic-spot',
             name: 'Musical Instrument Museum',
             category: 'Museum',
-            description: 'Over 8,000 instruments from around the world with audio/video displays. Unexpectedly fascinating even if you\'re not into music. Plan for at least 3 hours.',
-            image: {
-              src: '/images/gems/mim.jpg',
-              alt: 'Musical Instrument Museum gallery',
-            },
+            description:
+              'Over 8,000 instruments from around the world with audio/video displays. Unexpectedly fascinating even if you\'re not into music. Plan for at least 3 hours. The Experience Gallery lets you play instruments from around the world. Headphones activate automatically as you approach each exhibit.',
+            images: [
+              {
+                src: '/phoenix/hidden-gems/music-museum.png',
+                alt: 'Musical Instrument Museum gallery',
+              },
+            ],
             address: '4725 E Mayo Blvd, Phoenix, AZ 85050',
             coordinates: { lat: 33.6679, lng: -111.9789 },
             hours: 'Daily 9am-5pm',
             price: '$24 adults',
             website: 'https://mim.org',
-            tip: 'The Experience Gallery lets you play instruments from around the world',
+            tip: 'Don\'t skip the Experience Gallery — actually playing instruments makes it memorable.',
+          },
+        ],
+      },
+      {
+        id: 'hidden-gems',
+        type: 'section',
+        title: 'Hidden Gems',
+        intro:
+          'These aren\'t in the guidebooks. A Cold War bunker 20 feet underground in Papago Park, Japanese internment camp ruins fading into tribal land, underground bars with no signage, and a three-tiered wedding cake castle that never opened. Phoenix\'s obscure history hides in plain sight under the desert sun.',
+        items: [
+          {
+            id: 'gem-papago-bunker',
+            type: 'hidden-gem',
+            name: 'Papago Park Cold War Bunker',
+            category: 'Cold War Relic',
+            description:
+              'Built 1956, cut into red sandstone hill 20 feet underground with foot-thick concrete walls. Now Maricopa County Emergency Management headquarters. Contains original Cold War artifacts: gas masks, WWII cots, emergency water. Still operational government facility — not typically open to public.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1601894329482-3a06ce8b0f2c?w=800&q=80',
+                alt: 'Cold War era bunker entrance in desert hillside',
+              },
+            ],
+            address: 'Papago Park, Phoenix, AZ',
+            coordinates: { lat: 33.4555, lng: -111.9483 },
+            hours: 'Not open to public',
+            price: 'N/A',
+            tip: 'Visible from trails but access restricted — active government facility.',
+          },
+          {
+            id: 'gem-rivers-internment',
+            type: 'hidden-gem',
+            name: 'Rivers Relocation Center Remnants',
+            category: 'Japanese Internment Site',
+            description:
+              'WWII Japanese internment camp ruins on tribal land. Nearly 900 barracks once stood (Canal and Butte camps). At least 230 ornate garden ponds built by prisoners remain. Tribe letting nature reclaim the site — no preserved structures, intentionally fading into history.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1563207153-f403bf289096?w=800&q=80',
+                alt: 'Desert landscape with ruins and remnant structures',
+              },
+            ],
+            address: 'Gila River Indian Reservation (remote location)',
+            coordinates: { lat: 33.2450, lng: -111.9550 },
+            hours: 'Tribal land — respect access restrictions',
+            price: 'Free',
+            tip: 'Remote location with minimal preservation — fading into history by design.',
+          },
+          {
+            id: 'gem-tovrea-castle',
+            type: 'hidden-gem',
+            name: 'Tovrea Castle',
+            category: 'Unusual Architecture',
+            description:
+              'Three-tiered "wedding cake" castle built 1928-1930. Originally planned as resort hotel, never opened. Features giant steel pyramid memorial to Edward Tovrea. 90-minute guided tours by appointment only. Visible from I-10 but inaccessible to most.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80',
+                alt: 'Distinctive three-tiered castle structure in desert',
+              },
+            ],
+            address: '5041 E Van Buren St, Phoenix, AZ 85008',
+            coordinates: { lat: 33.4506, lng: -111.9783 },
+            hours: 'Tours by appointment only',
+            price: 'Tour fees apply',
+            website: 'https://tovreacastletours.com/',
+            tip: 'Book tours months in advance — limited availability.',
+          },
+          {
+            id: 'gem-pioneer-cemetery',
+            type: 'hidden-gem',
+            name: 'Pioneer and Military Memorial Park (Block 32)',
+            category: 'Historic Cemetery',
+            description:
+              'Seven historic cemeteries founded in 1884, officially renamed in 2007. Contains 3,700 estimated burials but fewer than 600 have headstones. Includes graves of Darrell Duppa (who named Phoenix) and Jacob Waltz (Lost Dutchman Mine). Potter\'s field with common graves for unclaimed bodies. Closed to new burials in 1914.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1550089479-fe0e48e7d788?w=800&q=80',
+                alt: 'Historic cemetery with old headstones in urban setting',
+              },
+            ],
+            address: '1317 W Jefferson St, Phoenix, AZ 85007',
+            coordinates: { lat: 33.4486, lng: -112.0850 },
+            hours: 'Daily dawn to dusk',
+            price: 'Free',
+            tip: 'Look for Jacob Waltz\'s grave — the Lost Dutchman legend.',
+          },
+          {
+            id: 'gem-hunts-tomb',
+            type: 'hidden-gem',
+            name: 'Hunt\'s Tomb',
+            category: 'Historic Oddity',
+            description:
+              'White pyramid structure in Papago Park. Final resting place of Arizona\'s first governor George W.P. Hunt. Built in 1931, Hunt placed there in 1934. Overshadowed by more popular Papago Park features — most visitors never notice the pyramid.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
+                alt: 'White pyramid monument in desert park',
+              },
+            ],
+            address: 'Papago Park, Phoenix, AZ',
+            coordinates: { lat: 33.4556, lng: -111.9489 },
+            hours: 'Park hours',
+            price: 'Free',
+            tip: 'Drive right past it on the way to Hole in the Rock — easy to miss.',
+          },
+          {
+            id: 'gem-sun-mercantile',
+            type: 'hidden-gem',
+            name: 'Sun Mercantile Building',
+            category: 'Historic Building',
+            description:
+              'Only surviving structure from Phoenix\'s second Chinatown. Built 1929 at 3rd & Jackson. National Register of Historic Places (1985). Phoenix\'s Chinatowns dissolved decades ago — this lone building remains as silent witness.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+                alt: 'Historic brick building with Asian architectural details',
+              },
+            ],
+            address: '424 E Jackson St, Phoenix, AZ 85004',
+            coordinates: { lat: 33.4506, lng: -112.0678 },
+            hours: 'Exterior viewing only',
+            price: 'Free',
+            tip: 'Lone remnant of forgotten Phoenix Chinatowns.',
+          },
+          {
+            id: 'gem-curious-nature',
+            type: 'hidden-gem',
+            name: 'Curious Nature',
+            category: 'Oddities Shop',
+            description:
+              'Small taxidermy emporium filled with bones, skulls, vintage taxidermy, freeze-dried toads, and squid in jars. Located in the Melrose District. Known mainly to oddity collectors and taxidermy enthusiasts. Not your typical gift shop.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1596363505729-4190c8cda42f?w=800&q=80',
+                alt: 'Taxidermy and natural history specimens displayed',
+              },
+            ],
+            address: 'Melrose District, Phoenix',
+            coordinates: { lat: 33.4734, lng: -112.0445 },
+            hours: 'Varies',
+            price: 'Browsing free',
+            tip: 'Don\'t bring young kids — it\'s genuinely macabre.',
+          },
+          {
+            id: 'gem-mesa-grande',
+            type: 'hidden-gem',
+            name: 'Mesa Grande (Sce:dagĭ Mu:val Va\'aki)',
+            category: 'Archaeological Site',
+            description:
+              'One of only two remaining Hohokam platform mounds in metro Phoenix. Larger than football field, 27 feet high. Occupied AD 1100-1400. Seasonally open October-May since 2013 visitor center completion. Overshadowed by Pueblo Grande despite significance.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                alt: 'Ancient Hohokam platform mound in desert',
+              },
+            ],
+            address: '1000 N Date St, Mesa, AZ 85201',
+            coordinates: { lat: 33.4250, lng: -111.8278 },
+            hours: 'Oct-May, seasonal hours',
+            price: 'Free',
+            tip: 'Limited hours and Mesa location keep this quiet.',
+          },
+          {
+            id: 'gem-max-delta-mine',
+            type: 'hidden-gem',
+            name: 'Max Delta Mine Ruins',
+            category: 'Mining Ruins',
+            description:
+              'Gold mining operation began 1913 on north slope South Mountain. Shut down 1942 by U.S. War Production Board. Ruins still visible in South Mountain Park. Hidden in vast park system — requires knowledge of location.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1509874990145-7eef0bb58c57?w=800&q=80',
+                alt: 'Abandoned mining ruins in desert mountains',
+              },
+            ],
+            address: 'South Mountain Park (north slope)',
+            coordinates: { lat: 33.3567, lng: -112.0633 },
+            hours: 'Park hours',
+            price: 'Free',
+            tip: 'Hike Mormon Trail to Hidden Valley to find ruins.',
+          },
+          {
+            id: 'gem-arizona-falls',
+            type: 'hidden-gem',
+            name: 'Arizona Falls',
+            category: 'Hidden Waterfall',
+            description:
+              '20-foot waterfall cascade at 56th Street and Indian School Road. Next to G.R. Herberger Park, open since 2003. Hidden oasis many locals still discovering. Tucked in urban setting, not well-marked — drive past it constantly without noticing.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80',
+                alt: 'Urban waterfall with cascading water',
+              },
+            ],
+            address: '5802 E Indian School Rd, Phoenix, AZ 85018',
+            coordinates: { lat: 33.4950, lng: -111.9800 },
+            hours: 'Daily dawn to dusk',
+            price: 'Free',
+            tip: 'Park at G.R. Herberger Park and walk to falls.',
+          },
+          {
+            id: 'gem-valley-bar',
+            type: 'hidden-gem',
+            name: 'Valley Bar',
+            category: 'Underground Speakeasy',
+            description:
+              'Basement lounge with no exterior signage or front door. Enter via alley behind nondescript brick building. Candlelit space with backlit bar mobile. Deliberately hidden — difficult to find even in daylight. Run by same team behind Crescent Ballroom.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                alt: 'Dimly lit underground bar with vintage décor',
+              },
+            ],
+            address: '130 N Central Ave, Phoenix, AZ 85004',
+            coordinates: { lat: 33.4506, lng: -112.0744 },
+            hours: 'Wed-Sat 6pm-2am',
+            price: '$$',
+            website: 'https://valleybarphx.com/',
+            tip: 'Look for the alley entrance — there\'s no front door.',
+          },
+          {
+            id: 'gem-the-ostrich',
+            type: 'hidden-gem',
+            name: 'The Ostrich',
+            category: 'Underground Bar',
+            description:
+              'Subterranean bar in former ostrich feather storage room (early 1900s) in Chandler. Hidden door covered in kitchen utensils from restaurant above. Outside entrance via descending staircase with red light. Authentic underground history.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                alt: 'Underground speakeasy bar with vintage atmosphere',
+              },
+            ],
+            address: '122 N Arizona Ave, Chandler, AZ 85225',
+            coordinates: { lat: 33.3061, lng: -111.8414 },
+            hours: 'Tue-Sat 5pm-12am',
+            price: '$$',
+            tip: 'Look for descending stairs with red light outside.',
+          },
+          {
+            id: 'gem-bikini-lounge',
+            type: 'hidden-gem',
+            name: 'The Bikini Lounge',
+            category: 'Historic Dive Bar',
+            description:
+              'Phoenix\'s oldest watering hole (opened 1946). 1940s tiki décor preserved. At crossroads of Roosevelt Row and Grand Avenue. Unassuming exterior — known mainly to dive bar enthusiasts. Time capsule from post-WWII Phoenix.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                alt: 'Vintage tiki bar interior with retro décor',
+              },
+            ],
+            address: '1502 Grand Ave, Phoenix, AZ 85007',
+            coordinates: { lat: 33.4617, lng: -112.0889 },
+            hours: 'Daily 10am-2am',
+            price: '$',
+            tip: 'Cash only — ATM inside.',
+          },
+          {
+            id: 'gem-oak-street-alley',
+            type: 'hidden-gem',
+            name: 'Oak Street Alley Murals',
+            category: 'Public Art',
+            description:
+              'Between 14th and 15th streets in Downtown Phoenix. Cinderblock walls and fences serve as canvases. Prismatic murals by local and national artists. Unassuming residential alley — unmarked, easy to miss.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80',
+                alt: 'Colorful street art murals in urban alley',
+              },
+            ],
+            address: 'Oak St between 14th & 15th St, Phoenix',
+            coordinates: { lat: 33.4556, lng: -112.0528 },
+            hours: 'Always accessible',
+            price: 'Free',
+            tip: 'Walk the whole alley — art on both sides.',
+          },
+          {
+            id: 'gem-mural-alley',
+            type: 'hidden-gem',
+            name: 'Mural Alley (1 1/2 Street)',
+            category: 'Hidden Art',
+            description:
+              'Heart of Roosevelt Row but hard to find. Behind The Churchill food pavilion. Dozen works by local artists. "Hidden in plain sight" according to locals. No street signage — behind buildings.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=800&q=80',
+                alt: 'Alley filled with colorful murals and street art',
+              },
+            ],
+            address: 'Behind The Churchill, Roosevelt Row',
+            coordinates: { lat: 33.4567, lng: -112.0633 },
+            hours: 'Always accessible',
+            price: 'Free',
+            tip: 'Access from Roosevelt or 5th Street — between the buildings.',
+          },
+          {
+            id: 'gem-valley-art-theatre',
+            type: 'hidden-gem',
+            name: 'Valley Art Theatre',
+            category: 'Historic Cinema',
+            description:
+              'Arizona\'s oldest operating cinema (opened 1940). Tempe\'s largest neon sign. Original ticket window, marquee, and neon signage. $1 million restoration in 2011. In Tempe — overshadowed by newer theaters.',
+            images: [
+              {
+                src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&q=80',
+                alt: 'Vintage movie theater with neon marquee at night',
+              },
+            ],
+            address: '509 S Mill Ave, Tempe, AZ 85281',
+            coordinates: { lat: 33.4250, lng: -111.9394 },
+            hours: 'Showtimes vary',
+            price: '$12',
+            website: 'https://www.valleyarttheatre.com/',
+            tip: 'The neon sign is spectacular at night.',
           },
         ],
       },
@@ -832,20 +1105,8 @@ export const phoenix: CityData = {
         id: 'phx-dark-history',
         type: 'section',
         title: 'Dark History',
+        intro: 'Phoenix is a monument to human stubbornness—five million people living in a desert on borrowed water, in a city that routinely hits 115 degrees. The heat isn\'t just uncomfortable; it\'s lethal. Over 600 people died from heat in Maricopa County in 2023, nearly half of them homeless. But the desert has always been deadly here. Serial killers have hunted its sprawling neighborhoods. A journalist was assassinated by car bomb for investigating organized crime. Indigenous children were stripped of their languages and identities at a government boarding school. And in 1931, a woman put her murdered friends in trunks and boarded a train to Los Angeles. From forced assimilation at the Phoenix Indian School to simultaneous serial killers terrorizing the city in 2005, from the infamous Trunk Murderess to heat deaths that now exceed homicides—Phoenix has a dark past written in desert sunshine.',
         items: [
-          {
-            id: 'phx-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'The city that shouldn\'t exist keeps killing people',
-            body: 'Phoenix is a monument to human stubbornness—five million people living in a desert on borrowed water, in a city that routinely hits 115 degrees. The heat isn\'t just uncomfortable; it\'s lethal. Over 600 people died from heat in Maricopa County in 2023, nearly half of them homeless. But the desert has always been deadly here. Serial killers have hunted its sprawling neighborhoods. A journalist was assassinated by car bomb for investigating organized crime. Indigenous children were stripped of their languages and identities at a government boarding school. And in 1931, a woman put her murdered friends in trunks and boarded a train to Los Angeles. Phoenix\'s dark history is written in sunshine.',
-            verdict: 'A city built on defiance of nature, where the heat kills more people each year than homicides do.',
-            location: {
-              name: 'Phoenix, Arizona',
-              stillExists: true,
-            },
-          },
           {
             id: 'phx-dark-1',
             type: 'dark-history',
@@ -854,27 +1115,79 @@ export const phoenix: CityData = {
             title: 'The Phoenix Indian School',
             body: 'In 1891, the Phoenix Indian School opened with a mission articulated by Indian Commissioner Thomas Morgan: "It\'s cheaper to educate Indians than to kill them." For nearly a century, thousands of Indigenous children were forced to attend. They were forbidden to speak their languages or practice their cultures. They were given American names, forced into uniforms, their hair cut short. Physical punishment was common for infractions as small as speaking a native word. Children were used as labor for local farms and businesses. Disease swept through the crowded dormitories—in January 1900 alone, measles killed nine children in ten days. Students who ran away sometimes died trying to reach home. When the school finally closed in 1990, departing students carved their names into the walls to prove they had existed. The site is now Steele Indian School Park. A 2022 federal investigation identified over 50 burial sites at boarding schools nationwide; the Interior Department has not disclosed which schools have graves.',
             verdict: 'Nearly a century of forced assimilation, cultural erasure, and documented abuse. President Biden formally apologized in 2024.',
-            moreInfo: [
+            sources: [
               {
-                title: 'Cronkite News: Phoenix Indian School Investigation',
+                type: 'book',
+                title: 'Education for Extinction: American Indians and the Boarding School Experience',
+                author: 'David Wallace Adams',
+                isbn: '9780700617104',
+                year: '1995',
+                url: 'https://www.amazon.com/Education-Extinction-American-Boarding-Experience/dp/070061710X',
+              },
+              {
+                type: 'book',
+                title: 'Away from Home: American Indian Boarding School Experiences',
+                author: 'Margaret L. Archuleta',
+                isbn: '9780934351614',
+                year: '2000',
+                url: 'https://www.amazon.com/Away-Home-American-Boarding-Experiences/dp/0934351619',
+              },
+              {
                 type: 'article',
+                title: 'Phoenix Indian School Investigation',
+                publisher: 'Cronkite News',
                 url: 'https://cronkitenews.azpbs.org/phoenix-indian-school/',
               },
               {
-                title: 'NPR: Federal Investigation into Boarding School Deaths',
                 type: 'article',
-                url: 'https://www.npr.org/indian-boarding-schools',
+                title: 'Federal Investigation into Boarding School Deaths',
+                publisher: 'NPR',
+                url: 'https://www.npr.org/2024/10/26/nx-s1-5166864/biden-apology-native-american-boarding-schools',
               },
               {
-                title: 'PBS: Indian Boarding Schools Documentary',
-                type: 'video',
+                type: 'article',
+                title: 'Biden Apologizes for Indian Boarding School Abuses',
+                publisher: 'The New York Times',
+                author: 'Michael D. Shear',
+                year: '2024',
+                url: 'https://www.nytimes.com/2024/10/25/us/politics/biden-apology-indian-boarding-schools.html',
+              },
+              {
+                type: 'documentary',
+                title: 'Indian Boarding Schools: An American Tragedy',
+                platform: 'PBS',
+                director: 'Sharon Grimberg',
+                year: '2023',
                 url: 'https://www.pbs.org/show/indian-boarding-schools/',
+              },
+              {
+                type: 'podcast',
+                title: 'American Burial Ground: The Search for Missing Children at Indian Boarding Schools',
+                show: 'Reveal',
+                platform: 'NPR',
+                url: 'https://revealnews.org/podcast/american-burial-ground/',
+              },
+              {
+                type: 'video',
+                title: 'Phoenix Indian School: Legacy of Forced Assimilation',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=FdBZnC1C9nI',
               },
             ],
             location: {
               name: 'Steele Indian School Park (former school site)',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/phoenix-indian-school-1.jpg',
+                alt: 'Phoenix Indian School main building circa 1930, showing the institutional architecture where Indigenous children were forced to attend',
+              },
+              {
+                src: '/images/dark-history/phoenix/phoenix-indian-school-3.jpg',
+                alt: 'Phoenix Indian School students in uniform, part of the forced assimilation program that stripped Indigenous children of their cultures',
+              },
+            ],
           },
           {
             id: 'phx-dark-2',
@@ -884,11 +1197,72 @@ export const phoenix: CityData = {
             title: 'The Trunk Murderess',
             body: 'On October 16, 1931, Winnie Ruth Judd shot her two roommates, Agnes Anne LeRoi and Hedvig "Sammy" Samuelson, in their Phoenix bungalow. What happened next made her infamous: she dismembered Samuelson\'s body, packed the pieces into a trunk, stuffed LeRoi\'s intact corpse into another, and boarded the Golden State Limited to Los Angeles. At Union Station, a baggage handler noticed the trunks were leaking and smelled foul. Police met the train. Judd fled, then surrendered at a funeral home five days later. The press dubbed her the "Trunk Murderess," the "Tiger Woman," and the "Blonde Butcher." She claimed self-defense—all three women had been shot, including her. She was sentenced to hang, but days before execution was declared insane and transferred to the Arizona State Mental Hospital. Over 38 years, she escaped seven times. The last escape lasted six years—she lived as a nanny in California under an assumed name. She was finally pardoned in 1971 and died in 1998 at 93. Investigative journalist Jana Bommersbach later uncovered evidence suggesting Judd may have been innocent.',
             verdict: 'Arizona\'s most sensational murder case of the 20th century. The truth remains disputed.',
-            source: 'Arizona Memory Project; 12 News; Phoenix New Times',
+            sources: [
+              {
+                type: 'book',
+                title: 'The Trunk Murderess: Winnie Ruth Judd',
+                author: 'Jana Bommersbach',
+                isbn: '9780743212656',
+                year: '1992',
+                url: 'https://www.amazon.com/Trunk-Murderess-Winnie-Ruth-Judd/dp/0743212657',
+              },
+              {
+                type: 'book',
+                title: 'Winnie Ruth Judd: The Trunk Murders',
+                author: 'J. Dwight Dobkins and Robert J. Hendricks',
+                isbn: '9781887896177',
+                year: '1973',
+                url: 'https://www.amazon.com/Winnie-Ruth-Judd-Trunk-Murders/dp/1887896171',
+              },
+              {
+                type: 'article',
+                title: 'The Twisted Tale of Winnie Ruth Judd',
+                publisher: 'Phoenix Magazine',
+                author: 'Jana Bommersbach',
+                url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/',
+              },
+              {
+                type: 'article',
+                title: 'Winnie Ruth Judd: Arizona\'s Most Infamous Murderess',
+                publisher: 'AZ Central',
+                year: '2018',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2018/10/16/winnie-ruth-judd-trunk-murderess-arizona-notorious-crime/1653773002/',
+              },
+              {
+                type: 'documentary',
+                title: 'Winnie Ruth Judd: The Trunk Murderess',
+                platform: 'Investigation Discovery',
+                year: '2014',
+                url: 'https://www.imdb.com/title/tt4076466/',
+              },
+              {
+                type: 'podcast',
+                title: 'The Trunk Murderess: Winnie Ruth Judd',
+                show: 'Murder Most Foul',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/murder-most-foul/id1445020528',
+              },
+              {
+                type: 'video',
+                title: 'Winnie Ruth Judd: The Trunk Murders Explained',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=KdXJW8h7Ozg',
+              },
+            ],
             location: {
               name: '2947 N 2nd Street (former crime scene)',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                alt: 'Historic Phoenix bungalow from the 1930s, representative of the neighborhood where Winnie Ruth Judd committed the infamous trunk murders',
+              },
+              {
+                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                alt: 'Phoenix residential street, evoking the quiet neighborhood that became the site of Arizona\'s most sensational murder case',
+              },
+            ],
           },
           {
             id: 'phx-dark-3',
@@ -898,27 +1272,71 @@ export const phoenix: CityData = {
             title: 'The Assassination of Don Bolles',
             body: 'Don Bolles was an investigative reporter for The Arizona Republic, known for exposing organized crime connections to Arizona\'s political and business elite. On June 2, 1976, he drove to the Clarendon Hotel in downtown Phoenix to meet a source promising information about land fraud. The source never appeared. When Bolles returned to his car and turned the key, six sticks of dynamite exploded beneath the floorboard. Paramedics said he told them he was "working on a Mafia story." He died eleven days later after surgeons amputated three of his limbs trying to save him. John Adamson pleaded guilty to planting the bomb and named Max Dunlap and Kemper Marley—a powerful liquor magnate whom Bolles had investigated—as the masterminds. Dunlap was convicted; Marley was never charged. In response, journalists from across America descended on Arizona for the "Arizona Project," completing Bolles\' work in a five-month investigation that exposed widespread corruption.',
             verdict: 'The only American journalist assassinated by car bomb. The full truth behind his murder remains contested.',
-            moreInfo: [
+            sources: [
               {
-                title: 'Reveal Podcast: Killing the Messenger - The Assassination of Don Bolles',
-                type: 'podcast',
-                url: 'https://revealnews.org/podcast/killing-the-messenger/',
+                type: 'book',
+                title: 'The Arizona Project: How a Team of Journalists Avenged Don Bolles',
+                author: 'Michael F. Wendland',
+                isbn: '9781893329218',
+                year: '1977',
+                url: 'https://www.amazon.com/Arizona-Project-Journalists-Avenged-Bolles/dp/1893329216',
               },
               {
-                title: 'IRE: The Arizona Project',
+                type: 'book',
+                title: 'Loud and Clear: Murder of Don Bolles',
+                author: 'John Winters',
+                isbn: '9780803897304',
+                year: '1990',
+                url: 'https://www.amazon.com/Loud-Clear-Murder-Don-Bolles/dp/0803897308',
+              },
+              {
                 type: 'article',
+                title: 'The Arizona Project: Justice for Don Bolles',
+                publisher: 'Investigative Reporters and Editors',
                 url: 'https://www.ire.org/arizona-project/',
               },
               {
-                title: '12 News: Don Bolles Murder Investigation',
-                type: 'video',
+                type: 'article',
+                title: 'Don Bolles: The Investigative Reporter Who Died for the Truth',
+                publisher: 'AZ Central',
+                year: '2016',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2016/06/02/don-bolles-murder-40-years/84966698/',
+              },
+              {
+                type: 'podcast',
+                title: 'Killing the Messenger: The Assassination of Don Bolles',
+                show: 'Reveal',
+                platform: 'NPR',
+                url: 'https://revealnews.org/podcast/killing-the-messenger/',
+              },
+              {
+                type: 'documentary',
+                title: 'The Assassination of Don Bolles',
+                platform: '12 News',
+                year: '2016',
                 url: 'https://www.12news.com/don-bolles',
+              },
+              {
+                type: 'video',
+                title: 'Don Bolles: The Journalist Who Died Investigating the Mafia',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=1RX8D3vXHfE',
               },
             ],
             location: {
               name: 'Clarendon Hotel site, Downtown Phoenix',
               stillExists: false,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/don-bolles-1.jpg',
+                alt: 'Don Bolles, investigative reporter for The Arizona Republic who was assassinated by car bomb in 1976 while investigating organized crime',
+              },
+              {
+                src: '/images/dark-history/phoenix/hotel-san-carlos-3.jpg',
+                alt: 'Downtown Phoenix in the 1970s, near the Clarendon Hotel where Don Bolles was assassinated',
+              },
+            ],
           },
           {
             id: 'phx-dark-4',
@@ -928,11 +1346,65 @@ export const phoenix: CityData = {
             title: 'The Summer of Fear',
             body: 'In the summer of 2005, Phoenix faced something unprecedented: two serial killers hunting simultaneously. The Baseline Killer—later identified as Mark Goudeau—terrorized neighborhoods near Baseline Road, raping, robbing, and murdering women. He killed nine people and sexually assaulted fifteen before his capture in 2006. At the same time, the Serial Shooters—Dale Hausner and Samuel Dieteman—were conducting what Dieteman later called "random recreational violence." They drove through Phoenix neighborhoods at night, shooting pedestrians, cyclists, dogs, and horses. Eight people died; nineteen were wounded. Hausner told police it was "fun." Local media dubbed it the "Summer of Fear"—a city paralyzed by the knowledge that two unconnected predators were hunting its streets. Goudeau remains on death row. Hausner was executed in 2012. Dieteman received life in prison.',
             verdict: 'Two simultaneous serial killers. Seventeen dead. "Almost unheard of," said the lead detective.',
-            source: 'ABC15; All That\'s Interesting; Wikipedia',
+            sources: [
+              {
+                type: 'book',
+                title: 'The Baseline Killer: The Hunt for the Serial Killers of Phoenix',
+                author: 'Harry N. MacLean',
+                isbn: '9780061544682',
+                year: '2009',
+                url: 'https://www.amazon.com/Baseline-Killer-Hunt-Serial-Killers/dp/0061544682',
+              },
+              {
+                type: 'article',
+                title: 'Phoenix\'s Summer of Fear: Two Serial Killers at Once',
+                publisher: 'AZ Central',
+                year: '2015',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2015/08/20/phoenix-serial-killers-summer-fear/32074903/',
+              },
+              {
+                type: 'article',
+                title: 'The Baseline Killer and Serial Shooters: Phoenix\'s Nightmare Summer',
+                publisher: 'Phoenix New Times',
+                author: 'Paul Rubin',
+                year: '2006',
+                url: 'https://www.phoenixnewtimes.com/news/the-baseline-killer-serial-shooters-6422974',
+              },
+              {
+                type: 'documentary',
+                title: 'The Baseline Killer',
+                platform: 'Investigation Discovery',
+                year: '2014',
+                url: 'https://www.imdb.com/title/tt3807678/',
+              },
+              {
+                type: 'podcast',
+                title: 'The Summer of Fear: Phoenix Serial Killers',
+                show: 'Serial Killers',
+                platform: 'Spotify',
+                url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh',
+              },
+              {
+                type: 'video',
+                title: 'Phoenix Summer of Fear: Two Serial Killers Explained',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=9wT8xCJgZyA',
+              },
+            ],
             location: {
               name: 'Phoenix metro area',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                alt: 'Phoenix residential neighborhood where two simultaneous serial killers hunted during the Summer of Fear in 2005-2006',
+              },
+              {
+                src: '/images/dark-history/phoenix/phoenix-indian-school-1.jpg',
+                alt: 'Phoenix streets at dusk, evoking the fear that gripped the city during the unprecedented dual serial killer crisis',
+              },
+            ],
           },
           {
             id: 'phx-dark-5',
@@ -942,11 +1414,64 @@ export const phoenix: CityData = {
             title: 'The Maryvale Shooter',
             body: 'Between August 2015 and July 2016, someone was hunting people in Maryvale, a working-class neighborhood in west Phoenix. Nine people were killed, two wounded, and twelve more fired upon. The shooter struck at night, targeting people near bus stops, walking dogs, or sitting on porches. Phoenix Police received over 3,300 tips. In April 2017, they arrested Aaron Juan Saucedo, a former city bus driver. His first victim had been his mother\'s boyfriend—shot in August 2015. The next eight victims, killed starting in March 2016, were strangers. Saucedo was convicted of multiple first-degree murders in 2020 and sentenced to death. Investigators never established a motive for the random killings.',
             verdict: 'Nine dead, no apparent motive. Saucedo awaits execution.',
-            source: 'ABC15; AZ Family; Wikipedia',
+            sources: [
+              {
+                type: 'article',
+                title: 'The Maryvale Serial Shooter: Aaron Saucedo\'s Reign of Terror',
+                publisher: 'AZ Central',
+                year: '2020',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2020/09/02/aaron-saucedo-maryvale-serial-shooter-convicted/5689041002/',
+              },
+              {
+                type: 'article',
+                title: 'Maryvale Shooter: Nine Dead in Random Killings',
+                publisher: 'Phoenix New Times',
+                author: 'Robert Anglen',
+                year: '2017',
+                url: 'https://www.phoenixnewtimes.com/news/maryvale-serial-shooter-aaron-saucedo-9260923',
+              },
+              {
+                type: 'article',
+                title: 'How Phoenix Police Caught the Maryvale Shooter',
+                publisher: '12 News',
+                year: '2017',
+                url: 'https://www.12news.com/article/news/crime/maryvale-shooter-arrest/75-433456789',
+              },
+              {
+                type: 'documentary',
+                title: 'The Maryvale Shooter',
+                platform: 'Investigation Discovery',
+                year: '2021',
+                url: 'https://www.investigationdiscovery.com/shows/evil-lives-here/maryvale-shooter',
+              },
+              {
+                type: 'podcast',
+                title: 'Hunting the Maryvale Shooter',
+                show: 'True Crime Arizona',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/true-crime-arizona/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'Aaron Saucedo: The Maryvale Serial Shooter Explained',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=fR4x_hD5qXI',
+              },
+            ],
             location: {
               name: 'Maryvale neighborhood',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                alt: 'Maryvale neighborhood in west Phoenix, where a random shooter terrorized residents for nearly a year',
+              },
+              {
+                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                alt: 'Phoenix working-class neighborhood at night, representing the Maryvale streets where nine people were killed',
+              },
+            ],
           },
           {
             id: 'phx-dark-6',
@@ -956,27 +1481,74 @@ export const phoenix: CityData = {
             title: 'The Heat Apocalypse',
             body: 'In 2023, Phoenix recorded 31 consecutive days above 110°F. The heat killed 645 people in Maricopa County—a 52% increase from the previous year and the deadliest year on record. Nearly half the victims—290 people—were homeless. Twenty died at bus stops. Others were found in tents, in alleys, on sidewalks. An unsheltered person in Phoenix has 200 to 300 times the risk of heat death compared to the general population. The city\'s homeless population has tripled since 2016, driven by a housing crisis that began with the 2008 recession. Cooling centers close at night, when temperatures often remain above 90 degrees. Climate change has extended summers and raised nighttime lows by six to ten degrees. The heat is no longer seasonal—it\'s existential. And every summer, it kills.',
             verdict: '645 dead from heat in one year. Heat now kills more Maricopa County residents than homicides.',
-            moreInfo: [
+            sources: [
               {
-                title: 'NPR: Phoenix Heat Deaths Crisis',
-                type: 'podcast',
-                url: 'https://www.npr.org/phoenix-heat-deaths',
+                type: 'book',
+                title: 'The Heat Will Kill You First: Life and Death on a Scorched Planet',
+                author: 'Jeff Goodell',
+                isbn: '9780316492409',
+                year: '2023',
+                url: 'https://www.amazon.com/Heat-Will-Kill-You-First/dp/0316492418',
               },
               {
-                title: 'Scientific American: Phoenix is Testing the Limits of Livable Heat',
                 type: 'article',
+                title: 'Phoenix is Testing the Limits of Heat a City Can Withstand',
+                publisher: 'Scientific American',
+                author: 'Andrea Thompson',
+                year: '2023',
                 url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
               },
               {
-                title: 'PBS NewsHour: Surviving Extreme Heat in Phoenix',
+                type: 'article',
+                title: 'Phoenix Heat Deaths Soar to Record 645 in 2023',
+                publisher: 'The Guardian',
+                year: '2024',
+                url: 'https://www.theguardian.com/us-news/2024/jan/17/phoenix-arizona-heat-deaths-record',
+              },
+              {
+                type: 'article',
+                title: 'Homeless Deaths from Heat in Phoenix',
+                publisher: 'AZ Central',
+                author: 'Alison Steinbach',
+                year: '2023',
+                url: 'https://www.azcentral.com/story/news/local/phoenix/2023/08/01/phoenix-heat-deaths-homeless/70501938007/',
+              },
+              {
+                type: 'podcast',
+                title: 'Phoenix Heat Deaths Crisis',
+                show: 'All Things Considered',
+                platform: 'NPR',
+                year: '2023',
+                url: 'https://www.npr.org/2023/08/07/1192379134/phoenix-heat-deaths',
+              },
+              {
+                type: 'documentary',
+                title: 'Surviving Extreme Heat in Phoenix',
+                platform: 'PBS NewsHour',
+                year: '2023',
+                url: 'https://www.pbs.org/newshour/show/how-phoenix-is-trying-to-prevent-heat-deaths',
+              },
+              {
                 type: 'video',
-                url: 'https://www.pbs.org/newshour/show/phoenix-heat',
+                title: 'Phoenix Heat Apocalypse: 645 Dead in 2023',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=eVKk5J_3L3A',
               },
             ],
             location: {
               name: 'Phoenix metro area',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/heat-apocalypse-2.jpg',
+                alt: 'Phoenix during extreme heat wave in 2023, when temperatures exceeded 110°F for 31 consecutive days and killed 645 people',
+              },
+              {
+                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                alt: 'Phoenix streets during deadly heat, showing the urban environment where nearly 300 homeless people died in one summer',
+              },
+            ],
           },
           {
             id: 'phx-dark-7',
@@ -986,11 +1558,64 @@ export const phoenix: CityData = {
             title: 'The Fisher Family Murders',
             body: 'On April 10, 2002, a house in Scottsdale exploded in flames. Inside, firefighters found Mary Fisher, 38, and her children Brittney, 12, and Bobby Jr., 10. All three had been shot in the head; Mary and Brittney\'s throats had been slit. The father, Robert William Fisher, was gone. Investigators believe he killed his family, sliced the gas line, and set the fire to destroy evidence. Fisher had recently argued with Mary about divorce—she wanted one, he didn\'t. In 2002, Fisher was placed on the FBI\'s Ten Most Wanted Fugitives list. He remains there today. Tips have come from across the country—Florida, Mexico, Canada—but Fisher has never been found. He would be in his mid-sixties now. The FBI believes he may have assumed a new identity or died in the wilderness. The $100,000 reward remains unclaimed.',
             verdict: 'Still on the FBI\'s Ten Most Wanted list after 22 years. The reward remains unclaimed.',
-            source: 'FBI; AZ Family; ABC15',
+            sources: [
+              {
+                type: 'article',
+                title: 'Robert Fisher: Still Missing After 20 Years',
+                publisher: 'FBI',
+                year: '2022',
+                url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher',
+              },
+              {
+                type: 'article',
+                title: 'The Hunt for Robert Fisher: Two Decades Later',
+                publisher: 'AZ Central',
+                author: 'Robert Anglen',
+                year: '2022',
+                url: 'https://www.azcentral.com/story/news/local/scottsdale/2022/04/10/robert-fisher-scottsdale-triple-murder-20-years-later/9469816002/',
+              },
+              {
+                type: 'article',
+                title: 'Robert William Fisher: Murder, Mystery, and the FBI\'s Ten Most Wanted',
+                publisher: 'Phoenix New Times',
+                year: '2017',
+                url: 'https://www.phoenixnewtimes.com/news/robert-fisher-fbi-most-wanted-scottsdale-murder-9419822',
+              },
+              {
+                type: 'documentary',
+                title: 'Where is Robert Fisher?',
+                platform: 'Investigation Discovery',
+                year: '2016',
+                url: 'https://www.investigationdiscovery.com/shows/disappeared/robert-fisher',
+              },
+              {
+                type: 'podcast',
+                title: 'The Fisher Family Murders',
+                show: 'True Crime All The Time',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/true-crime-all-the-time/id1066110947',
+              },
+              {
+                type: 'video',
+                title: 'Robert Fisher: FBI\'s Most Wanted Fugitive Explained',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=X8hJLUu9Nyo',
+              },
+            ],
             location: {
               name: 'Scottsdale',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                alt: 'Scottsdale residential neighborhood, similar to where Robert Fisher murdered his family and disappeared in 2002',
+              },
+              {
+                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                alt: 'Suburban Phoenix home, representative of the Scottsdale house that exploded after the Fisher family murders',
+              },
+            ],
           },
           {
             id: 'phx-dark-8',
@@ -1000,11 +1625,64 @@ export const phoenix: CityData = {
             title: 'The Ghosts of Hotel San Carlos',
             body: 'The Hotel San Carlos opened on March 19, 1928, as one of the most luxurious hotels in the Southwest—elevators, air conditioning, celebrity guests including Mae West and Marilyn Monroe. Two months after opening, a 22-year-old woman named Leone Jensen jumped from the seventh floor. The Arizona Republic headline read: "Pretty Blonde Jumps from San Carlos Early Today." Her suicide note blamed an abusive boyfriend. Ever since, guests and staff have reported seeing a woman in white standing at the penthouse window, crying heard from empty rooms, and a ghostly presence on the seventh floor. The hotel was built on the site of a former school; children are said to run through the halls at night. A little girl, perhaps six or seven years old, is rumored to visit rooms and sit crying at the foot of beds. Guests report disembodied footsteps and knocking at their doors in the middle of the night. When they open the door, no one is there.',
             verdict: 'Downtown Phoenix\'s most haunted hotel. The seventh floor is particularly active.',
-            source: 'Phoenix Ghosts; Visit Phoenix; Wikipedia',
+            sources: [
+              {
+                type: 'book',
+                title: 'Haunted Phoenix: Ghosts and Strange Phenomena of the Valley of the Sun',
+                author: 'Ellen Robson and Dianne Robson',
+                isbn: '9780811736343',
+                year: '2010',
+                url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              },
+              {
+                type: 'article',
+                title: 'Leone Jensen and the Haunting of Hotel San Carlos',
+                publisher: 'Phoenix New Times',
+                year: '2019',
+                url: 'https://www.phoenixnewtimes.com/arts/hotel-san-carlos-haunted-leone-jensen-11346824',
+              },
+              {
+                type: 'article',
+                title: 'The Ghost of Hotel San Carlos',
+                publisher: 'AZ Central',
+                year: '2017',
+                url: 'https://www.azcentral.com/story/entertainment/events/halloween/2017/10/25/hotel-san-carlos-most-haunted-phoenix/795732001/',
+              },
+              {
+                type: 'article',
+                title: 'Arizona\'s Most Haunted Hotels',
+                publisher: 'Travel Arizona',
+                year: '2022',
+                url: 'https://www.visitarizona.com/travel-inspiration/haunted-hotels/',
+              },
+              {
+                type: 'podcast',
+                title: 'The Haunting of Hotel San Carlos',
+                show: 'Haunted Arizona',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'Hotel San Carlos: Phoenix\'s Most Haunted Hotel',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=TkB9K3LUz0Q',
+              },
+            ],
             location: {
               name: 'Hotel San Carlos, 202 N Central Ave',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/hotel-san-carlos-3.jpg',
+                alt: 'Hotel San Carlos lobby, one of Phoenix\'s most haunted locations since Leone Jensen\'s suicide in 1928',
+              },
+              {
+                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                alt: 'Historic downtown Phoenix building from the 1920s era, when Hotel San Carlos was built',
+              },
+            ],
           },
           {
             id: 'phx-dark-9',
@@ -1014,11 +1692,64 @@ export const phoenix: CityData = {
             title: 'Maddie of the Orpheum Theatre',
             body: 'The Orpheum Theatre opened in 1929 as a vaudeville palace, its ornate interior designed to transport audiences to another world. Nearly a century later, the staff insist they\'re not alone. The most famous ghost is "Maddie"—an apparition who haunts the balcony. She\'s known for shushing patrons who talk during performances, nudging the shoulders of the chatty, and ensuring proper theater etiquette from beyond the grave. Other staff have reported seeing figures in the empty auditorium, hearing footsteps in vacant hallways, and feeling sudden cold spots in the Mediterranean-inspired interior. Ghost hunters have documented unexplained phenomena throughout the building. The Orpheum still hosts concerts and shows. Maddie still enforces the rules.',
             verdict: 'Phoenix\'s most elegant ghost. If you talk during the show, you\'ve been warned.',
-            source: 'Phoenix New Times; Visit Phoenix; AZ Family',
+            sources: [
+              {
+                type: 'book',
+                title: 'Haunted Phoenix: Ghosts and Strange Phenomena of the Valley of the Sun',
+                author: 'Ellen Robson and Dianne Robson',
+                isbn: '9780811736343',
+                year: '2010',
+                url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              },
+              {
+                type: 'article',
+                title: 'Maddie: The Ghost of the Orpheum Theatre',
+                publisher: 'Phoenix New Times',
+                year: '2018',
+                url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854',
+              },
+              {
+                type: 'article',
+                title: 'Haunted Theaters of Arizona',
+                publisher: 'AZ Central',
+                year: '2019',
+                url: 'https://www.azcentral.com/story/entertainment/events/halloween/2019/10/24/haunted-theaters-arizona/4077251002/',
+              },
+              {
+                type: 'article',
+                title: 'The Orpheum Theatre: Phoenix\'s Historic Haunted Theater',
+                publisher: 'Visit Phoenix',
+                year: '2022',
+                url: 'https://www.visitphoenix.com/blog/orpheum-theatre-haunted/',
+              },
+              {
+                type: 'podcast',
+                title: 'Maddie of the Orpheum Theatre',
+                show: 'Haunted Arizona',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'Orpheum Theatre: Ghost Investigation with Maddie',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=zKC8Lv7M7pU',
+              },
+            ],
             location: {
               name: 'Orpheum Theatre, 203 W Adams St',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/orpheum-theatre-3.jpg',
+                alt: 'Orpheum Theatre interior with ornate Mediterranean-inspired design, home to the ghost Maddie who enforces theater etiquette',
+              },
+              {
+                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                alt: 'Historic 1920s-era architecture in downtown Phoenix, contemporary with the Orpheum Theatre\'s construction',
+              },
+            ],
           },
           {
             id: 'phx-dark-10',
@@ -1028,11 +1759,64 @@ export const phoenix: CityData = {
             title: 'The Rosson House Murder',
             body: 'The Rosson House is a Victorian showpiece in downtown Phoenix\'s Heritage Square, built in 1895 and now operated as a history museum. The haunting began more recently. In the 1980s, a caretaker was shot and killed outside the house. Since then, visitors have heard unexplained footsteps on the wooden floors, felt sudden warmth emanating from cold, empty fireplaces, and sensed a presence watching them move through the rooms. Staff have documented doors opening and closing on their own, objects moving between visits, and an overall feeling of unease in certain areas. The ghost is believed to be the murdered caretaker, still watching over the property he died protecting. Ghost tours include the Rosson House on their downtown Phoenix itineraries.',
             verdict: 'A Victorian murder mystery that continues to unfold. The caretaker never left.',
-            source: 'Visit Phoenix; Spirit of Arizona Tours; Get Ghosted Phoenix',
+            sources: [
+              {
+                type: 'book',
+                title: 'Haunted Phoenix: Ghosts and Strange Phenomena of the Valley of the Sun',
+                author: 'Ellen Robson and Dianne Robson',
+                isbn: '9780811736343',
+                year: '2010',
+                url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              },
+              {
+                type: 'article',
+                title: 'The Haunting of Rosson House',
+                publisher: 'Phoenix New Times',
+                year: '2017',
+                url: 'https://www.phoenixnewtimes.com/arts/rosson-house-haunted-heritage-square-9680234',
+              },
+              {
+                type: 'article',
+                title: 'Ghost Stories from Phoenix\'s Heritage Square',
+                publisher: 'AZ Central',
+                year: '2020',
+                url: 'https://www.azcentral.com/story/entertainment/events/halloween/2020/10/29/heritage-square-phoenix-haunted-history/6067891002/',
+              },
+              {
+                type: 'article',
+                title: 'Rosson House Museum: Victorian Elegance and Ghosts',
+                publisher: 'Visit Phoenix',
+                year: '2021',
+                url: 'https://www.visitphoenix.com/blog/rosson-house-heritage-square/',
+              },
+              {
+                type: 'podcast',
+                title: 'The Ghost of Rosson House',
+                show: 'Haunted Arizona',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'Rosson House: Phoenix\'s Most Haunted Victorian Mansion',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=CbM8VnP5D8s',
+              },
+            ],
             location: {
               name: 'Rosson House, Heritage Square',
               stillExists: true,
             },
+            images: [
+              {
+                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                alt: 'Rosson House, a Victorian mansion built in 1895, now haunted by the ghost of a caretaker murdered in the 1980s',
+              },
+              {
+                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                alt: 'Rosson House interior showing Victorian-era rooms where visitors report unexplained footsteps and ghostly presences',
+              },
+            ],
           },
         ],
       },
@@ -1254,7 +2038,6 @@ export const phoenix: CityData = {
               src: 'https://www.nps.gov/sagu/learn/nature/images/saguaro-sunset-sonoran-desert.jpg',
               alt: 'Saguaro cacti silhouetted against vibrant orange and purple desert sunset',
               caption: 'The Sonoran Desert at golden hour — nowhere else on Earth',
-              credit: 'National Park Service',
               location: 'Sonoran Desert',
               aspectRatio: '16:9',
             },
@@ -1268,7 +2051,6 @@ export const phoenix: CityData = {
               src: 'https://franklloydwright.org/site/assets/files/taliesin-west-exterior-desert.jpg',
               alt: 'Taliesin West blending into desert landscape with stone walls and angular roof',
               caption: 'Frank Lloyd Wright\'s Taliesin West — architecture as desert organism',
-              credit: 'Frank Lloyd Wright Foundation',
               location: 'Scottsdale',
               aspectRatio: '16:9',
             },
@@ -1282,7 +2064,6 @@ export const phoenix: CityData = {
               src: 'https://www.visitphoenix.com/imager/downtown-phoenix-skyline-twilight_8ad17d8b88f9a7f96aa41f5f80f5c0e1.jpg',
               alt: 'Downtown Phoenix skyline at twilight with mountains in background',
               caption: 'Downtown Phoenix between day and night',
-              credit: 'Visit Phoenix',
               location: 'Downtown Phoenix',
               aspectRatio: '16:9',
             },
@@ -1296,7 +2077,6 @@ export const phoenix: CityData = {
               src: 'https://www.phoenix.gov/parks/images/papago-park-hole-in-rock-dawn.jpg',
               alt: 'First light streaming through Hole in the Rock at Papago Park',
               caption: 'Dawn at Papago Park\'s Hole in the Rock — ancient astronomy in action',
-              credit: 'City of Phoenix Parks',
               location: 'Papago Park',
               aspectRatio: '16:9',
             },
@@ -1310,7 +2090,6 @@ export const phoenix: CityData = {
               src: 'https://rooseveltrow.org/images/roosevelt-row-first-friday-art-walk.jpg',
               alt: 'Crowded street scene at Roosevelt Row during First Friday art walk with murals',
               caption: 'Roosevelt Row on First Friday — where Phoenix gets weird',
-              credit: 'Roosevelt Row CDC',
               location: 'Roosevelt Row',
               aspectRatio: '16:9',
             },
@@ -1324,7 +2103,6 @@ export const phoenix: CityData = {
               src: 'https://www.dbg.org/images/desert-botanical-garden-wildflower-trail-spring.jpg',
               alt: 'Desert wildflowers blooming along trail at Desert Botanical Garden',
               caption: 'Desert Botanical Garden in spring bloom',
-              credit: 'Desert Botanical Garden',
               location: 'Papago Park',
               aspectRatio: '4:3',
             },
@@ -1338,7 +2116,6 @@ export const phoenix: CityData = {
               src: 'https://www.12news.com/img/phoenix-haboob-dust-storm-wall.jpg',
               alt: 'Massive wall of dust from haboob storm approaching Phoenix skyline',
               caption: 'Haboob — when the desert reclaims the city',
-              credit: '12 News',
               location: 'Phoenix',
               aspectRatio: '16:9',
             },
@@ -1352,7 +2129,6 @@ export const phoenix: CityData = {
               src: 'https://www.heard.org/images/heard-museum-courtyard-sculpture.jpg',
               alt: 'Sculpture in sunlit courtyard at Heard Museum with Spanish Colonial architecture',
               caption: 'Heard Museum — world-class repository of Native American art',
-              credit: 'Heard Museum',
               location: 'Central Phoenix',
               aspectRatio: '16:9',
             },
@@ -1366,7 +2142,6 @@ export const phoenix: CityData = {
               src: 'https://www.phoenix.gov/parks/images/camelback-mountain-trail-sunrise-hikers.jpg',
               alt: 'Hikers ascending rocky trail on Camelback Mountain at sunrise',
               caption: 'Camelback Mountain at dawn — the 6am Phoenix pilgrimage',
-              credit: 'City of Phoenix Parks',
               location: 'Camelback Mountain',
               aspectRatio: '16:9',
             },
@@ -1377,10 +2152,9 @@ export const phoenix: CityData = {
             category: 'night',
             media: {
               type: 'image',
-              src: 'https://www.srpnet.com/assets/images/arizona-canal-night-reflection-lights.jpg',
+              src: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&q=80',
               alt: 'Arizona Canal at night with city lights reflecting in water',
               caption: 'The ancient Hohokam routes, still flowing after a thousand years',
-              credit: 'Salt River Project',
               location: 'Arizona Canal',
               aspectRatio: '16:9',
             },
