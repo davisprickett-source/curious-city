@@ -4,19 +4,19 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { CITY_METADATA } from '@/data/cities'
 import { useNavigation } from './hooks/useNavigation'
-import type { CitySection } from '@/lib/routes'
+import type { AnyCitySection } from '@/lib/routes'
 
 interface CitySelectorProps {
   currentCitySlug?: string
   currentCityName?: string
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
   preserveFilters?: boolean
 }
 
 export function CitySelector({
   currentCitySlug,
   currentCityName,
-  currentSection = 'history',
+  currentSection,
   preserveFilters = true,
 }: CitySelectorProps) {
   const [isOpen, setIsOpen] = useState(false)

@@ -358,7 +358,7 @@ export const portland: CityData = {
             description: 'The world\'s largest independent bookstore, occupying an entire city block. New and used books mixed together on the same shelves. Multiple rooms organized by color. Maps provided at entry.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80',
+                src: '',
                 alt: 'Powell\'s Books interior with towering shelves',
               },
             ],
@@ -377,7 +377,7 @@ export const portland: CityData = {
             description: 'One of the most authentic Japanese gardens outside Japan, designed by Professor Takuma Tono. The walk up through Washington Park is part of the experience.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80',
+                src: '',
                 alt: 'Portland Japanese Garden',
               },
             ],
@@ -401,7 +401,7 @@ export const portland: CityData = {
             description: 'Over 5,200 acres of urban forest with 80+ miles of trails. The Wildwood Trail stretches 30 miles through the park. You can be surrounded by old-growth Douglas firs within minutes of downtown.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+                src: '',
                 alt: 'Trail through Forest Park',
               },
             ],
@@ -419,7 +419,7 @@ export const portland: CityData = {
             description: 'A 620-foot waterfall about 30 minutes from downtown. Oregon\'s most-visited attraction for good reason. The bridge at the first level is iconic; the hike to the top is worth it.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1518623001395-125242310d0c?w=800&q=80',
+                src: '',
                 alt: 'Multnomah Falls with bridge',
               },
             ],
@@ -438,7 +438,7 @@ export const portland: CityData = {
             description: 'An authentic Suzhou-style garden built by Chinese artisans in Old Town Chinatown. The teahouse serves traditional Chinese tea with views of the garden.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1519552928677-a0f6e8107a12?w=800&q=80',
+                src: '',
                 alt: 'Lan Su Chinese Garden pavilion',
               },
             ],
@@ -781,7 +781,7 @@ export const portland: CityData = {
             price: '$$$',
             website: 'http://expatriatepdx.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Intimate cocktail bar with Asian-inspired drinks',
             },
           },
@@ -796,7 +796,7 @@ export const portland: CityData = {
             price: '$$$$',
             website: 'https://mwlpdx.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
+              src: '',
               alt: 'Vintage whiskey library with brick walls and rare bottles',
             },
           },
@@ -811,7 +811,7 @@ export const portland: CityData = {
             price: '$$$',
             website: 'https://www.halepele.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Tiki bar with exotic cocktails and tropical decor',
             },
           },
@@ -826,7 +826,7 @@ export const portland: CityData = {
             price: '$$',
             website: 'https://thebyeandbye.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=80',
+              src: '',
               alt: 'Vegan bar with spacious patio on Alberta Street',
             },
           },
@@ -841,7 +841,7 @@ export const portland: CityData = {
             price: '$$',
             website: 'https://www.producerowcafe.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+              src: '',
               alt: 'Historic craft beer bar with extensive tap selection',
             },
           },
@@ -865,7 +865,7 @@ export const portland: CityData = {
             price: '$$$',
             website: 'https://www.canardrestaurant.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'French-inspired wine bar with award-winning list',
             },
           },
@@ -880,7 +880,7 @@ export const portland: CityData = {
             price: '$$',
             website: 'https://www.yaowaratpdx.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Thai-Chinese street food from Bangkok Chinatown',
             },
           },
@@ -895,7 +895,7 @@ export const portland: CityData = {
             price: '$$',
             website: 'https://screendoorrestaurant.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+              src: '',
               alt: 'Southern fried chicken and waffles brunch',
             },
           },
@@ -910,7 +910,7 @@ export const portland: CityData = {
             price: '$$',
             website: 'https://www.lardosandwiches.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&q=80',
+              src: '',
               alt: 'Gourmet pork sandwiches and dirty fries',
             },
           },
@@ -925,7 +925,7 @@ export const portland: CityData = {
             price: '$$$',
             website: 'https://avagenes.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80',
+              src: '',
               alt: 'House-made pasta and seasonal Italian dishes',
             },
           },
@@ -951,7 +951,7 @@ export const portland: CityData = {
             website: 'https://www.heartroasters.com',
             instagram: '@heartroasters',
             image: {
-              src: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&q=80',
+              src: '',
               alt: 'Minimalist coffee shop with clean lines and pour-over bar',
             },
           },
@@ -968,7 +968,7 @@ export const portland: CityData = {
             website: 'https://coavacoffee.com',
             instagram: '@coaboratory',
             image: {
-              src: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80',
+              src: '',
               alt: 'Industrial warehouse coffee space with high ceilings',
             },
           },
@@ -985,7 +985,7 @@ export const portland: CityData = {
             website: 'https://albinapress.com',
             instagram: '@albinapress',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Portland\'s beloved third-wave coffee pioneer',
             },
           },
@@ -1001,7 +1001,7 @@ export const portland: CityData = {
             price: '$$',
             instagram: '@eitheror_cafe',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Cozy DIY coffee shop with espresso flights',
             },
           },
@@ -1018,7 +1018,7 @@ export const portland: CityData = {
             website: 'https://pushxpullcoffee.com',
             instagram: '@pushxpullcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Specialty roastery with natural process Kenyan',
             },
           },
@@ -1035,7 +1035,7 @@ export const portland: CityData = {
             website: 'https://portlandcaphe.com',
             instagram: '@portlandcaphe',
             image: {
-              src: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=80',
+              src: '',
               alt: 'Vietnamese iced coffee with condensed milk',
             },
           },
@@ -1045,6 +1045,7 @@ export const portland: CityData = {
         id: 'pdx-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Weirdness that always included violence',
         intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. This was the only state admitted to the Union with a Black exclusion clause in its constitution. The city earned its reputation as the "Shanghai Capital of the World" by kidnapping drunken men and selling them to ship captains. Its second-largest city was washed away in a flood—and the Black residents who lived there were left to fend for themselves. Serial killers have hunted along its highways. A child vanished from his elementary school and was never found. Portland\'s weirdness was always there, but so was the violence—it just dressed better.',
         items: [
           {
@@ -1100,6 +1101,10 @@ export const portland: CityData = {
               stillExists: true,
             },
             images: [
+              {
+                src: '/Portland/curiosities/black-exclusion.png',
+                alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
+              },
               {
                 src: '/images/dark-history/portland/exclusion-laws-1.jpg',
                 alt: 'Historical document from Library of Congress related to Oregon\'s constitutional history and exclusion laws',
@@ -1163,6 +1168,10 @@ export const portland: CityData = {
               stillExists: true,
             },
             images: [
+              {
+                src: '/Portland/curiosities/shanghai-tunnels.png',
+                alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
+              },
               {
                 src: '/images/dark-history/portland/shanghai-tunnels-underground.jpg',
                 alt: 'Dark underground tunnel passage, representative of Portland\'s Shanghai Tunnels where men were kidnapped and held',
@@ -1232,6 +1241,10 @@ export const portland: CityData = {
             },
             images: [
               {
+                src: '/Portland/curiosities/Portland-Flood.png',
+                alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
+              },
+              {
                 src: '/images/dark-history/portland/vanport-flood-columbia-river.jpg',
                 alt: 'Columbia River flood plain near Portland, site of the catastrophic 1948 Vanport Flood',
               },
@@ -1296,6 +1309,10 @@ export const portland: CityData = {
             },
             images: [
               {
+                src: '/Portland/Dark-history/i-5-killer.png',
+                alt: 'Historical documentation and evidence related to the I-5 Killer case',
+              },
+              {
                 src: '/images/dark-history/portland/highway-aerial.jpg',
                 alt: 'Aerial view of Interstate 5 highway corridor through Oregon, where serial killer Randall Woodfield hunted victims in 1980-1981',
               },
@@ -1351,6 +1368,10 @@ export const portland: CityData = {
               stillExists: true,
             },
             images: [
+              {
+                src: '/Portland/Dark-history/forest-park.png',
+                alt: 'Forest Park location where the Forest Park Killer crimes occurred',
+              },
               {
                 src: '/images/dark-history/portland/forest-park-trails.jpg',
                 alt: 'Forest Park hiking trail through old-growth forest, where three women were murdered in 1999',
@@ -1425,6 +1446,10 @@ export const portland: CityData = {
             },
             images: [
               {
+                src: '/Portland/Dark-history/kyron.png',
+                alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
+              },
+              {
                 src: '/images/dark-history/portland/elementary-school.jpg',
                 alt: 'Elementary school building, representative of Skyline Elementary where 7-year-old Kyron Horman vanished in 2010',
               },
@@ -1484,6 +1509,10 @@ export const portland: CityData = {
             },
             images: [
               {
+                src: '/Portland/Dark-history/saloon.png',
+                alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
+              },
+              {
                 src: '/images/dark-history/portland/vintage-bar.jpg',
                 alt: 'Vintage bar interior, representative of the historic White Eagle Saloon known as "Bucket of Blood"',
               },
@@ -1542,6 +1571,10 @@ export const portland: CityData = {
               stillExists: true,
             },
             images: [
+              {
+                src: '/Portland/Dark-history/mansion.png',
+                alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
+              },
               {
                 src: '/images/dark-history/portland/historic-house.jpg',
                 alt: 'Historic French Renaissance mansion, representative of Pittock Mansion built in 1914',
@@ -1605,6 +1638,10 @@ export const portland: CityData = {
               stillExists: true,
             },
             images: [
+              {
+                src: '/Portland/Dark-history/lone-fer-2.png',
+                alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
+              },
               {
                 src: '/images/dark-history/portland/cemetery-headstones.jpg',
                 alt: 'Historic cemetery headstones at Lone Fir Cemetery, holding over 25,000 graves including 10,000 unmarked',

@@ -4,10 +4,10 @@ import { DropdownEventFilters } from './DropdownEventFilters'
 import { DropdownCategoryFilter } from './DropdownCategoryFilter'
 import type { EventView } from '@/components/EventFilter'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
-import type { CitySection } from '@/lib/routes'
+import type { AnyCitySection } from '@/lib/routes'
 
 interface FilterBarProps {
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
   citySlug?: string
   eventView?: EventView
   eventCategories?: EventCategory[]

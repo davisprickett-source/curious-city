@@ -68,7 +68,7 @@ export const denver: CityData = {
             body: '"Blucifer"—the 32-foot blue mustang with glowing red eyes at Denver International Airport—is genuinely cursed. A piece of the sculpture fell on artist Luis Jiménez in 2006, severing an artery and killing him. The horse was installed posthumously in 2008. Locals have petitioned to remove it. The airport refuses.',
             year: '2008',
             image: {
-              src: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80',
+              src: '',
               alt: 'Denver International Airport exterior',
             },
             source: 'Denver International Airport',
@@ -85,7 +85,7 @@ export const denver: CityData = {
             body: 'Cheesman Park was once a cemetery called Mount Prospect. When the city decided to convert it to a park in 1893, contractors were paid $1.90 per body to relocate graves. Workers broke corpses into pieces to maximize their payment. An estimated 2,000 bodies were never moved. Construction projects in the area still occasionally unearth remains.',
             year: '1893',
             image: {
-              src: 'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80',
+              src: '',
               alt: 'Cheesman Park pavilion',
             },
             source: 'Denver Public Library archives',
@@ -131,7 +131,7 @@ export const denver: CityData = {
             title: 'The airport conspiracy theories are now official merchandise',
             body: 'Denver International Airport has leaned fully into theories about Illuminati symbols, underground bunkers, and lizard people. The airport installed a talking gargoyle that jokes about conspiracy theories. Construction signs say "What are they REALLY building?" Gift shops sell conspiracy-themed merchandise. It\'s either brilliant marketing or exactly what the Illuminati would do.',
             image: {
-              src: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80',
+              src: '',
               alt: 'Denver International Airport terminal',
             },
             source: 'Denver International Airport',
@@ -178,7 +178,7 @@ export const denver: CityData = {
             body: 'The Mexican restaurant with cliff divers, caves, and Black Bart\'s Hideout—featured in South Park—was bought by the show\'s creators in 2021 after it closed during COVID. They spent millions renovating it while keeping the weird attractions. It reopened in 2023 with better food but the same waterfall, mariachi bands, and cave maze.',
             year: '2023',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Mexican restaurant interior',
             },
             source: 'Casa Bonita',
@@ -207,7 +207,7 @@ export const denver: CityData = {
             title: 'I-70 traffic is a genuine lifestyle determinant',
             body: 'On powder days, Interstate 70 becomes a parking lot from Denver to the Eisenhower Tunnel. The 90-minute drive to Vail can take 4+ hours. Locals structure their entire lives around avoiding it: leaving at 5am, working remote on Fridays, buying condos at resorts. The "I-70 problem" is a serious factor in real estate decisions.',
             image: {
-              src: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
+              src: '',
               alt: 'Mountain highway traffic',
             },
             source: 'Colorado Department of Transportation',
@@ -248,7 +248,7 @@ export const denver: CityData = {
             title: 'Denver isn\'t actually in the mountains',
             body: 'Despite the marketing, Denver sits on the high plains—the Rockies are an hour\'s drive west. The city is at exactly 5,280 feet (one mile), but the nearest ski resorts are another 9,000 feet higher. What Denver has is views: on clear days, you can see 200 miles of mountain peaks from the city.',
             image: {
-              src: 'https://images.unsplash.com/photo-1546156929-a4c0ac411f47?w=800&q=80',
+              src: '',
               alt: 'Denver skyline with Rocky Mountains backdrop',
             },
             source: 'USGS',
@@ -693,7 +693,7 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://williamsandgraham.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=800&q=80',
+              src: '',
               alt: 'Intimate speakeasy bar with warm lighting and craft cocktails',
             },
           },
@@ -708,7 +708,7 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://www.deathandcompany.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
+              src: '',
               alt: 'Sophisticated cocktail bar interior with mood lighting',
             },
           },
@@ -723,7 +723,7 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://www.unionlodge1.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Historic cocktail bar with vintage decor and classic drinks',
             },
           },
@@ -738,7 +738,7 @@ export const denver: CityData = {
             price: '$$',
             website: 'https://rfratiobeerworks.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+              src: '',
               alt: 'Craft brewery taproom with industrial decor',
             },
           },
@@ -753,7 +753,7 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://www.almalohidenver.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80',
+              src: '',
               alt: 'Mezcal bar with agave spirits and warm lighting',
             },
           },
@@ -777,7 +777,7 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://www.eatwithsafta.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1547573854-74d2a71d0826?w=800&q=80',
+              src: '',
               alt: 'Israeli mezze spread with hummus and laffa bread',
             },
           },
@@ -792,7 +792,7 @@ export const denver: CityData = {
             price: '$$',
             website: 'https://hopalleydenver.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80',
+              src: '',
               alt: 'Sichuan-style Chinese cuisine with bold flavors',
             },
           },
@@ -807,7 +807,7 @@ export const denver: CityData = {
             price: '$$$$',
             website: 'https://www.guardandgrace.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+              src: '',
               alt: 'Premium dry-aged steak with elegant presentation',
             },
           },
@@ -822,7 +822,7 @@ export const denver: CityData = {
             price: '$$$$',
             website: 'https://www.thewolfstailor.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80',
+              src: '',
               alt: 'Artisanal tasting menu dish with seasonal ingredients',
             },
           },
@@ -837,7 +837,7 @@ export const denver: CityData = {
             price: '$$',
             website: 'https://www.tacostequilawhiskey.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Authentic street tacos with fresh toppings',
             },
           },
@@ -863,7 +863,7 @@ export const denver: CityData = {
             website: 'https://www.corvuscoffee.com',
             instagram: '@corvuscoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Specialty coffee pour-over setup with precision equipment',
             },
           },
@@ -880,7 +880,7 @@ export const denver: CityData = {
             website: 'https://littleowlcoffee.com',
             instagram: '@littleowlcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&q=80',
+              src: '',
               alt: 'Precision pour-over coffee brewing',
             },
           },
@@ -897,7 +897,7 @@ export const denver: CityData = {
             website: 'https://cremacoffeehouse.net',
             instagram: '@cremacoffeehouse',
             image: {
-              src: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&q=80',
+              src: '',
               alt: 'Bright minimalist coffee shop with natural light and clean lines',
             },
           },
@@ -914,7 +914,7 @@ export const denver: CityData = {
             website: 'https://sweetbloomcoffee.com',
             instagram: '@sweetbloomcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Scientific coffee roasting with precision equipment',
             },
           },
@@ -931,7 +931,7 @@ export const denver: CityData = {
             website: 'https://www.jubileeroasting.com',
             instagram: '@jubileeroasting',
             image: {
-              src: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80',
+              src: '',
               alt: 'Artisan roastery with creative warehouse space',
             },
           },
@@ -947,7 +947,7 @@ export const denver: CityData = {
             price: '$$',
             instagram: '@dandylioncoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=800&q=80',
+              src: '',
               alt: 'Cozy coffee shop filled with plants and natural light',
             },
           },
@@ -957,6 +957,7 @@ export const denver: CityData = {
         id: 'denver-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Darkness beneath the Mile High sunshine',
         intro: 'Denver sells itself as sunshine and craft beer, but the Mile High City sits atop a foundation of massacre, racial violence, and unsolved murder. From bodies left beneath public parks to a demonic horse that killed its creator, Denver\'s dark side is woven into the very geography—hidden in plain sight, just one layer below the Instagram-friendly surface.',
         items: [
           {

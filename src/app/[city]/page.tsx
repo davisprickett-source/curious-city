@@ -3,9 +3,9 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs } from '@/data/cities'
-import { getHistoryForCity } from '@/data/history'
-import { HistoryRenderer, ShareLinks, Footer, RelatedCities, Divider } from '@/components'
+import { Footer, RelatedCities } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { routes } from '@/lib/routes'
 
 const cityBanners: Record<string, string> = {
   minneapolis: '/Minneapolis-banner.png',
@@ -44,9 +44,6 @@ export default async function CityPage({ params }: CityPageProps) {
     notFound()
   }
 
-  // Get history articles for this city
-  const history = getHistoryForCity(slug)
-  const featuredArticle = history[0] // Show the first/main history article
   const bannerSrc = cityBanners[city.slug]
 
   return (
@@ -54,7 +51,6 @@ export default async function CityPage({ params }: CityPageProps) {
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}
-        currentSection="history"
       />
 
       {bannerSrc && (
@@ -74,75 +70,80 @@ export default async function CityPage({ params }: CityPageProps) {
 
       <main className="flex-1">
         <div className="container-page section-spacing">
-          {/* Featured History Article */}
-          {featuredArticle ? (
-            <article className="prose prose-neutral max-w-none">
-              <header className="not-prose mb-8">
-                <div className="flex items-start justify-between gap-4 mb-4">
-                  <div>
-                    <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-2">
-                      {featuredArticle.title}
-                    </h1>
-                    {featuredArticle.subtitle && (
-                      <p className="text-lg text-neutral-600 italic">
-                        {featuredArticle.subtitle}
-                      </p>
-                    )}
-                  </div>
-                  <div className="flex-shrink-0">
-                    <ShareLinks title={`${featuredArticle.title} - ${city.name} | Curious City`} variant="compact" />
-                  </div>
-                </div>
-              </header>
+          {/* City Introduction */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+              {city.name}
+            </h1>
+            {city.tagline && (
+              <p className="text-xl text-neutral-600">{city.tagline}</p>
+            )}
+          </div>
 
-              <HistoryRenderer blocks={featuredArticle.blocks} />
-            </article>
-          ) : (
-            <div className="mb-8">
-              <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-2">
-                {city.name}
-              </h1>
-              {city.tagline && (
-                <p className="text-lg text-neutral-600">{city.tagline}</p>
-              )}
-              <div className="text-center py-12">
-                <p className="text-neutral-500 mb-4">No history article yet for {city.name}.</p>
-                <p className="text-sm text-neutral-400">
-                  Check out the other sections to explore this city.
-                </p>
-              </div>
-            </div>
-          )}
+          {/* Quick Links to Main Sections */}
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-16">
+            <Link
+              href={routes.cityArticles(slug)}
+              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+            >
+              <div className="text-3xl mb-3">📰</div>
+              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
+                Articles
+              </h2>
+              <p className="text-sm text-neutral-600">
+                Stories, guides, and local insights
+              </p>
+            </Link>
 
-          {/* More History Articles */}
-          {history.length > 1 && (
-            <>
-              <Divider variant="ornament" />
-              <section>
-                <h3 className="eyebrow text-neutral-500 mb-5">
-                  More History
-                </h3>
-                <div className="grid gap-4 md:grid-cols-2">
-                  {history.slice(1).map((article) => (
-                    <Link
-                      key={article.slug}
-                      href={`/${slug}/history/${article.slug}`}
-                      className="group block p-5 bg-white rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
-                    >
-                      <h4 className="font-semibold text-neutral-900 group-hover:text-accent-700 transition-colors ui-sans">
-                        {article.title}
-                      </h4>
-                      {article.subtitle && (
-                        <p className="text-sm text-neutral-500 mt-2 line-clamp-2">
-                          {article.subtitle}
-                        </p>
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            </>
-          )}
+            <Link
+              href={routes.cityDiscover(slug)}
+              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+            >
+              <div className="text-3xl mb-3">🔍</div>
+              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
+                Discover
+              </h2>
+              <p className="text-sm text-neutral-600">
+                Hidden gems, curiosities, and dark history
+              </p>
+            </Link>
+
+            <Link
+              href={routes.cityGuide(slug)}
+              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+            >
+              <div className="text-3xl mb-3">📍</div>
+              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
+                Guide
+              </h2>
+              <p className="text-sm text-neutral-600">
+                Bars, restaurants, and local favorites
+              </p>
+            </Link>
+
+            <Link
+              href={routes.cityEvents(slug)}
+              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+            >
+              <div className="text-3xl mb-3">📅</div>
+              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
+                Events
+              </h2>
+              <p className="text-sm text-neutral-600">
+                What's happening around town
+              </p>
+            </Link>
+          </div>
+
+          {/* TODO: Section preview rows will go here */}
+          <div className="text-center py-12 bg-neutral-50 rounded-xl">
+            <p className="text-neutral-600 mb-2">
+              Content preview sections coming soon!
+            </p>
+            <p className="text-sm text-neutral-500">
+              For now, use the navigation above to explore {city.name}
+            </p>
+          </div>
 
           {/* Related Cities */}
           <RelatedCities currentCitySlug={slug} />

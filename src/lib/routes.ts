@@ -9,9 +9,16 @@
 // City Section Types
 // ============================================
 
+// Main navigation sections (shown in primary nav)
 export type CitySection =
-  | 'history'
+  | 'articles'
+  | 'discover'
   | 'events'
+  | 'guide'
+
+// Legacy sections (still accessible, not in main nav)
+export type LegacySection =
+  | 'history'
   | 'scenes'
   | 'coffee-shops'
   | 'bars'
@@ -21,6 +28,9 @@ export type CitySection =
   | 'dark-history'
   | 'lost-and-loved'
   | 'curiosities'
+
+// All valid section types (for components that need to handle both)
+export type AnyCitySection = CitySection | LegacySection
 
 export type GlobalCategory =
   | 'hidden-gems'
@@ -39,18 +49,25 @@ export interface SectionDefinition {
 }
 
 export const citySections: SectionDefinition[] = [
-  { id: 'history', label: 'History', path: '' },
+  { id: 'articles', label: 'Articles', path: '/articles' },
+  { id: 'discover', label: 'Discover', path: '/discover' },
   { id: 'events', label: 'Events', path: '/events' },
-  { id: 'scenes', label: 'Scenes', path: '/scenes' },
-  { id: 'coffee-shops', label: 'Coffee', path: '/coffee-shops' },
-  { id: 'bars', label: 'Bars', path: '/bars' },
-  { id: 'restaurants', label: 'Restaurants', path: '/restaurants' },
-  { id: 'local-favorites', label: 'Local Favorites', path: '/local-favorites' },
-  { id: 'hidden-gems', label: 'Hidden Gems', path: '/hidden-gems' },
-  { id: 'dark-history', label: 'Dark History', path: '/dark-history' },
-  { id: 'lost-and-loved', label: 'Lost & Loved', path: '/lost-and-loved' },
-  { id: 'curiosities', label: 'Curiosities', path: '/curiosities' },
+  { id: 'guide', label: 'Guide', path: '/guide' },
 ]
+
+// Legacy sections (keep for backward compatibility, will redirect)
+export const legacySections = [
+  'history',
+  'scenes',
+  'coffee-shops',
+  'bars',
+  'restaurants',
+  'local-favorites',
+  'hidden-gems',
+  'dark-history',
+  'lost-and-loved',
+  'curiosities',
+] as const
 
 // ============================================
 // Route Builders
@@ -60,19 +77,20 @@ export const routes = {
   // Home
   home: () => '/',
 
-  // History
-  history: () => '/history',
-  cityHistory: (citySlug: string, historySlug: string) => `/${citySlug}/history/${historySlug}`,
-
   // City pages
   city: (citySlug: string) => `/${citySlug}`,
   citySection: (citySlug: string, section: CitySection | string) => {
-    if (section === 'history') return `/${citySlug}`
     return `/${citySlug}/${section}`
   },
 
-  // Specific city sections
+  // Main sections
+  cityArticles: (citySlug: string) => `/${citySlug}/articles`,
+  cityArticle: (citySlug: string, articleSlug: string) => `/${citySlug}/articles/${articleSlug}`,
+  cityDiscover: (citySlug: string) => `/${citySlug}/discover`,
   cityEvents: (citySlug: string) => `/${citySlug}/events`,
+  cityGuide: (citySlug: string) => `/${citySlug}/guide`,
+
+  // Legacy routes (keep for backward compatibility)
   cityScenes: (citySlug: string) => `/${citySlug}/scenes`,
   cityCoffeeShops: (citySlug: string) => `/${citySlug}/coffee-shops`,
   cityBars: (citySlug: string) => `/${citySlug}/bars`,
@@ -89,6 +107,7 @@ export const routes = {
   categoryBars: () => '/category/bars',
   categoryRestaurants: () => '/category/restaurants',
   categoryDarkHistory: () => '/category/dark-history',
+  categoryHistory: () => '/category/history',
 } as const
 
 // ============================================

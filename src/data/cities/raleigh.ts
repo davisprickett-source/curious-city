@@ -269,7 +269,7 @@ export const raleigh: CityData = {
             body: 'The J.S. Dorton Arena, completed in 1952 as the State Fair Livestock Pavilion, featured the world\'s first column-free suspended roof — a revolutionary engineering achievement that became a model for superdome structures worldwide. The swooping parabolic design was so ahead of its time that architects still study it today.',
             year: '1952',
             image: {
-              src: 'https://images.unsplash.com/photo-1518005068251-37900150dfca?w=800',
+              src: '',
               alt: 'Dorton Arena architecture',
               credit: 'Unsplash',
             },
@@ -822,7 +822,7 @@ export const raleigh: CityData = {
             hours: '5pm-2am daily',
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Dimly lit dive bar interior with pool table and neon signs',
             },
           },
@@ -837,7 +837,7 @@ export const raleigh: CityData = {
             hours: '5pm-midnight Tue-Sat',
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Elegant cocktail bar with amber lighting and vintage decor',
             },
           },
@@ -852,7 +852,7 @@ export const raleigh: CityData = {
             hours: '4pm-2am daily',
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=800&q=80',
+              src: '',
               alt: 'Colorful bar with neon lights and dance floor atmosphere',
             },
           },
@@ -867,7 +867,7 @@ export const raleigh: CityData = {
             hours: '5pm-midnight Wed-Sun',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+              src: '',
               alt: 'Cozy craft cocktail bar with warm wood interior',
             },
           },
@@ -956,7 +956,7 @@ export const raleigh: CityData = {
             website: 'https://www.jubalavillage.com',
             instagram: '@jubalacoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Modern coffee shop with precision brewing',
             },
           },
@@ -973,7 +973,7 @@ export const raleigh: CityData = {
             website: 'https://www.321coffee.com',
             instagram: '@321coffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=800&q=80',
+              src: '',
               alt: 'Warm community coffee shop with friendly atmosphere',
             },
           },
@@ -990,7 +990,7 @@ export const raleigh: CityData = {
             website: 'https://iriscoffeelab.com',
             instagram: '@iriscoffeelab',
             image: {
-              src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
+              src: '',
               alt: 'Plant-filled modern coffee lab with natural light',
             },
           },
@@ -1007,7 +1007,7 @@ export const raleigh: CityData = {
             website: 'https://heirloombrewshop.com',
             instagram: '@heirloombrewshop',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+              src: '',
               alt: 'Minimalist Asian-inspired tea and coffee space',
             },
           },
@@ -1023,7 +1023,7 @@ export const raleigh: CityData = {
             price: '$$',
             instagram: '@littlenativecoffeeco',
             image: {
-              src: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80',
+              src: '',
               alt: 'Cozy historic coffee shop with plants and warm lighting',
             },
           },
@@ -1040,7 +1040,7 @@ export const raleigh: CityData = {
             website: 'https://themorningtimes.com',
             instagram: '@morningtimesraleigh',
             image: {
-              src: 'https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=80',
+              src: '',
               alt: 'Exposed brick coffeehouse with warm bohemian atmosphere',
             },
           },
@@ -1065,7 +1065,7 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://bidamanda.com',
             image: {
-              src: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+              src: '',
               alt: 'Asian noodle soup with herbs and aromatics',
             },
           },
@@ -1080,7 +1080,7 @@ export const raleigh: CityData = {
             hours: '11:30am-2pm, 5pm-9pm Tue-Sat',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=800&q=80',
+              src: '',
               alt: 'Rich tonkotsu ramen with soft-boiled egg and chashu',
             },
           },
@@ -1095,7 +1095,7 @@ export const raleigh: CityData = {
             hours: '5:30pm-9pm Wed-Sat',
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Elegant farm-to-table dish with seasonal ingredients',
             },
           },
@@ -1110,7 +1110,7 @@ export const raleigh: CityData = {
             hours: '11am-10pm Mon-Thu, 11am-11pm Fri-Sat, 11am-9pm Sun',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Authentic Mexican tacos with fresh cilantro and lime',
             },
           },
@@ -1125,7 +1125,7 @@ export const raleigh: CityData = {
             hours: '11am-9pm Wed-Sun',
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+              src: '',
               alt: 'Fresh artisan pizza with melted cheese and toppings',
             },
           },
@@ -1390,6 +1390,7 @@ export const raleigh: CityData = {
         id: 'ral-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Southern gentility hiding racial terror',
         intro: 'A state capital that witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds.',
         items: [
           {

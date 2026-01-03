@@ -77,7 +77,7 @@ export const dallas: CityData = {
             title: 'White Rock Lake is haunted by the Lady of the Lake',
             body: 'White Rock Lake is home to Dallas\'s most famous ghost story. A young woman in a drenched 1930s evening dress reportedly flags down cars, claiming she was in a boating accident. She gives an address on Gaston Avenue, but when drivers arrive, she vanishes — leaving only a damp spot on the seat. A man at the house explains his daughter drowned in the lake years earlier. Reader\'s Digest named White Rock Lake one of the world\'s 14 most haunted bodies of water, alongside Loch Ness. Strangely, Dallas\'s unofficial lake historian can\'t find any death record matching the legend.',
             image: {
-              src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
+              src: '',
               alt: 'Misty lake at night',
             },
             source: 'Reader\'s Digest, Dallas Morning News',
@@ -140,7 +140,7 @@ export const dallas: CityData = {
             body: 'Before becoming the iconic 55-foot State Fair mascot, Big Tex was actually the world\'s largest Santa Claus in Kerens, Texas. The giant paper-mache figure was purchased by the State Fair in 1951, transformed into a cowboy, and has greeted fairgoers ever since. Big Tex was destroyed by fire in 2012 and rebuilt with a fireproof metal structure.',
             year: '1952',
             image: {
-              src: 'https://images.unsplash.com/photo-1517242810446-cc8951b2be40?w=800',
+              src: '',
               alt: 'Texas State Fair grounds',
             },
             source: 'State Fair of Texas',
@@ -317,7 +317,7 @@ export const dallas: CityData = {
             description: 'A 3-mile underground pedestrian network connecting 36 city blocks downtown, designed by the same planner who created Montreal\'s Underground City. Former mayor Laura Miller called it "the worst urban planning decision Dallas has ever made." Largely empty between rush hours and eerily atmospheric.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                src: '',
                 alt: 'Underground tunnel system with shops and corridors',
               },
             ],
@@ -335,7 +335,7 @@ export const dallas: CityData = {
             description: 'A serene urban garden set 15 feet below ground in downtown, featuring an upended nautilus with a conical chapel inside containing a helix of clerestory stained glass windows rising 90 feet. Designed by architect Philip Johnson in 1976. A meditative escape largely forgotten by locals.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                src: '',
                 alt: 'Sunken urban garden with modern architecture',
               },
             ],
@@ -354,7 +354,7 @@ export const dallas: CityData = {
             description: 'The only museum in North America dedicated to geometric abstraction and the MADI movement. Called "one of the most underrated art museums in Dallas." Small but internationally significant collection.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1577083165633-14ebcdb0f658?w=800&q=80',
+                src: '',
                 alt: 'Geometric abstract art in modern gallery space',
               },
             ],
@@ -373,7 +373,7 @@ export const dallas: CityData = {
             description: 'A 30-foot-tall fiberglass, resin, and steel sculpture by artist Tony Tasset, modeled after his own eye. Located in the Joule Hotel courtyard, now used as Dallas\'s most unique private event space.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&q=80',
+                src: '',
                 alt: 'Large eyeball sculpture in urban setting',
               },
             ],
@@ -391,7 +391,7 @@ export const dallas: CityData = {
             description: 'A chimera sculpture featuring the mane and neck of a horse, turkey tail, pig body, duck wings, sheep\'s head, and Texas longhorns. Created for the 1936 Texas Centennial, mysteriously disappeared in 1941, replaced in 1998. One of Fair Park\'s most obscure treasures.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=800&q=80',
+                src: '',
                 alt: 'Mythical creature sculpture combining multiple animals',
               },
             ],
@@ -414,7 +414,7 @@ export const dallas: CityData = {
             description: 'The separate graves of Dallas\'s most infamous outlaws. Bonnie is at Crown Hill Memorial Park, Clyde at Western Heights Cemetery. Visitors leave cigarettes, bullets, and flowers. As of 2025, there\'s an active legal battle to reunite them.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?w=800&q=80',
+                src: '',
                 alt: 'Historic cemetery with weathered gravestones',
               },
             ],
@@ -432,7 +432,7 @@ export const dallas: CityData = {
             description: 'Free vintage streetcar system using restored historic vehicles from as old as 1909 (not modern replicas). Runs 7 days a week throughout Uptown and Arts District. Provides 500,000 rides per year but remains hidden to those unfamiliar with Dallas.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80',
+                src: '',
                 alt: 'Vintage streetcar on urban rail line',
               },
             ],
@@ -451,7 +451,7 @@ export const dallas: CityData = {
             description: 'A 600-acre Audubon preserve atop an escarpment with 9 miles of looping trails at one of the highest elevations in the Metroplex (755 feet). Organizes special Full Moon Hikes. Lesser-known than White Rock Lake.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80',
+                src: '',
                 alt: 'Hiking trail through nature preserve with escarpment views',
               },
             ],
@@ -469,7 +469,7 @@ export const dallas: CityData = {
             description: 'A 296-acre preserve in the Great Trinity Forest near the historic Freedman\'s community of Joppa. Lemmon Lake is a hidden gem for observing migratory birds. Trail cameras document white-tailed deer, coyotes, and feral hogs.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?w=800&q=80',
+                src: '',
                 alt: 'Wildlife preserve with lake and migratory birds',
               },
             ],
@@ -488,7 +488,7 @@ export const dallas: CityData = {
             description: 'Secret speakeasy located inside a barber shop in Deep Ellum. Walk past the row of stylists and follow the sound of music to find a green light on the door of the back room, where the salon transforms into a saloon.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Hidden speakeasy interior with dim lighting',
               },
             ],
@@ -506,7 +506,7 @@ export const dallas: CityData = {
             description: 'The most intimate and hidden speakeasy in Dallas. Check in at the front desk of SOVA Hotel and receive a pin code for a small bar in one of its normally labeled rooms. Japanese-inspired cocktails.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+                src: '',
                 alt: 'Intimate hotel bar with elegant cocktails',
               },
             ],
@@ -524,7 +524,7 @@ export const dallas: CityData = {
             description: 'A small jazz club above the historic Lakewood Theater offering live jazz seven nights a week since 1988. "Not a place you find by accident." Everyone from bassist Chuck Rainey to keyboardists for Michael Bublé have played here.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
+                src: '',
                 alt: 'Intimate jazz club with stage and mood lighting',
               },
             ],
@@ -542,7 +542,7 @@ export const dallas: CityData = {
             description: 'Part interactive art installation, part Instagram fever dream. Features 20+ unique photo opportunities, 6000 LEDs, 5000 balloons, 200 pounds of cotton, 5 miles of ribbon, and a unicorn. Multi-room with hidden doors and blacklight elements.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                src: '',
                 alt: 'Colorful immersive art installation with LED lights',
               },
             ],
@@ -561,7 +561,7 @@ export const dallas: CityData = {
             description: 'A giant 54,000 square foot used book warehouse - five times larger than their average store, holding over half a million books. Described as "labyrinthine" and one of Dallas\'s most underrated spots.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80',
+                src: '',
                 alt: 'Massive used bookstore with floor-to-ceiling shelves',
               },
             ],
@@ -615,6 +615,7 @@ export const dallas: CityData = {
         id: 'dal-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Legends and cold cases that never close',
         intro: 'Dallas hides bizarre vanishings, ghostly rivalries, and cold-blooded murders that defy explanation—from decapitated lovers to phantom hitchhikers. These off-the-brochure stories linger in lore long after headlines move on. A web of legends and cold cases where only fragments are verified, and none feel fully closed.',
         items: [
           {
@@ -946,7 +947,7 @@ export const dallas: CityData = {
             price: '$$$',
             website: 'https://midnightramblerbar.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+              src: '',
               alt: 'Moody subterranean cocktail lounge with art deco interior',
             },
           },
@@ -961,7 +962,7 @@ export const dallas: CityData = {
             price: '$$$',
             website: 'https://www.librarybardallas.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Elegant piano bar with dark wood and classic cocktails',
             },
           },
@@ -975,7 +976,7 @@ export const dallas: CityData = {
             coordinates: { lat: 32.8297, lng: -96.7668 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=800&q=80',
+              src: '',
               alt: 'Vintage speakeasy with dark wood and brocaded wallpaper',
             },
           },
@@ -990,7 +991,7 @@ export const dallas: CityData = {
             price: '$',
             website: 'https://truckyard.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80',
+              src: '',
               alt: 'Outdoor beer garden with string lights and picnic tables',
             },
           },
@@ -1004,7 +1005,7 @@ export const dallas: CityData = {
             coordinates: { lat: 32.7834, lng: -96.7808 },
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Eclectic dive bar with neon signs and retro decor',
             },
           },
@@ -1079,7 +1080,7 @@ export const dallas: CityData = {
             website: 'https://davisstreetespresso.com',
             instagram: '@davisstreetespresso',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Cozy neighborhood coffee shop with espresso bar',
             },
           },
@@ -1096,7 +1097,7 @@ export const dallas: CityData = {
             website: 'https://holacafe.com',
             instagram: '@holacafe',
             image: {
-              src: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80',
+              src: '',
               alt: 'Stylish Latin-inspired coffee shop interior',
             },
           },
@@ -1113,7 +1114,7 @@ export const dallas: CityData = {
             website: 'https://eilandcoffee.com',
             instagram: '@eilandcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Artisan coffee roastery with vintage German roaster',
             },
           },
@@ -1130,7 +1131,7 @@ export const dallas: CityData = {
             website: 'https://openingbellcoffee.com',
             instagram: '@openingbellcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80',
+              src: '',
               alt: 'Intimate coffee shop with acoustic stage and string lights',
             },
           },
@@ -1147,7 +1148,7 @@ export const dallas: CityData = {
             website: 'https://thebernibean.com',
             instagram: '@thebernibean',
             image: {
-              src: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&q=80',
+              src: '',
               alt: 'Fresh pour-over coffee with Costa Rican beans',
             },
           },
@@ -1164,7 +1165,7 @@ export const dallas: CityData = {
             website: 'https://noblecoyotecoffee.com',
             instagram: '@noblecoyotecoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Fresh roasted coffee beans at Noble Coyote roastery',
             },
           },
@@ -1188,7 +1189,7 @@ export const dallas: CityData = {
             price: '$$',
             website: 'https://pecanlodge.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&q=80',
+              src: '',
               alt: 'Slow-smoked Texas brisket with perfect bark',
             },
           },
@@ -1203,7 +1204,7 @@ export const dallas: CityData = {
             price: '$$$',
             website: 'https://www.luciadallas.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80',
+              src: '',
               alt: 'Fresh handmade pasta with seasonal ingredients',
             },
           },
@@ -1218,7 +1219,7 @@ export const dallas: CityData = {
             price: '$$$',
             website: 'https://tei-an.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+              src: '',
               alt: 'Traditional Japanese soba noodles with dipping sauce',
             },
           },
@@ -1233,7 +1234,7 @@ export const dallas: CityData = {
             price: '$$',
             website: 'https://jimmysfoodstore.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+              src: '',
               alt: 'Italian deli with cured meats and specialty foods',
             },
           },
@@ -1248,7 +1249,7 @@ export const dallas: CityData = {
             price: '$$',
             website: 'https://elboleromexican.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=800&q=80',
+              src: '',
               alt: 'Rich mole negro with traditional garnishes',
             },
           },
@@ -1262,7 +1263,7 @@ export const dallas: CityData = {
             coordinates: { lat: 32.7857, lng: -96.7889 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Creative gourmet tacos with vibrant toppings',
             },
           },

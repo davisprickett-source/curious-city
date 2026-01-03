@@ -1196,7 +1196,7 @@ export const minneapolis: CityData = {
                 alt: 'Prohibition bar panoramic interior with skyline views',
               },
               {
-                src: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80',
+                src: '',
                 alt: 'Minneapolis skyline view from Prohibition bar',
               },
             ],
@@ -1400,7 +1400,7 @@ export const minneapolis: CityData = {
             hours: '6:30am-6pm daily',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+              src: '',
               alt: 'Spacious cafe with big windows and long tables',
             },
           },
@@ -1415,7 +1415,7 @@ export const minneapolis: CityData = {
             hours: '7am-5pm daily',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Third-wave specialty coffee with espresso bar',
             },
           },
@@ -1430,7 +1430,7 @@ export const minneapolis: CityData = {
             hours: '7am-4pm daily',
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Industrial coffee shop with natural light',
             },
           },
@@ -1445,7 +1445,7 @@ export const minneapolis: CityData = {
             hours: '7am-3pm daily',
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Cozy neighborhood coffee shop with eclectic decor',
             },
           },
@@ -1641,7 +1641,7 @@ export const minneapolis: CityData = {
                 alt: 'Backstory Coffee inside The Duffey building with high ceilings and plants',
               },
               {
-                src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+                src: '',
                 alt: 'Barista preparing drinks at Backstory Coffee Roasters',
               },
             ],
@@ -2274,6 +2274,8 @@ export const minneapolis: CityData = {
         id: 'mpls-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Unsolved mysteries beneath the skyways',
+        intro: 'Minneapolis is a city of lakes, skyways, and shadows—where three young brothers vanished without a trace in 1951, where cold cases span generations, and where families still search for answers that may never come.',
         items: [
           {
             id: 'mpls-dark-1',
@@ -2406,7 +2408,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis dark history/adam johnson.png',
+                src: '/Minneapolis/Minneapolis dark history/adam johnson.png',
                 alt: 'Adam Richard Johnson',
               },
             ],
@@ -2545,7 +2547,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis dark history/childs.png',
+                src: '/Minneapolis/Minneapolis dark history/childs.png',
                 alt: 'Jeanie Childs cold case investigation',
               },
             ],

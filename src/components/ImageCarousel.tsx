@@ -15,6 +15,7 @@ interface ImageCarouselProps {
 
 export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
 
   const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
@@ -48,8 +49,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
     <div className={`relative ${className}`}>
       {/* Main image container - click to advance */}
       <div
-        className="relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer"
+        className="relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer group"
         onClick={goToNext}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <img
           src={images[currentIndex].src}
@@ -59,22 +62,31 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
 
         {/* Credit overlay */}
         {images[currentIndex].credit && (
-          <span className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/40 px-2 py-0.5 rounded">
+          <span className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
             {images[currentIndex].credit}
           </span>
         )}
 
-        {/* Navigation arrows */}
+        {/* Animated navigation arrows - black and only visible on hover */}
         <button
           onClick={(e) => {
             e.stopPropagation()
             goToPrevious()
           }}
-          className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center transition-all hover:scale-105"
+          className={`absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 group/arrow ${
+            isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'
+          }`}
           aria-label="Previous image"
         >
-          <svg className="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-5 h-5 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            strokeLinecap="round"
+          >
+            <path d="M15 5l-7 7 7 7" />
           </svg>
         </button>
         <button
@@ -82,37 +94,41 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
             e.stopPropagation()
             goToNext()
           }}
-          className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center transition-all hover:scale-105"
+          className={`absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 group/arrow ${
+            isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'
+          }`}
           aria-label="Next image"
         >
-          <svg className="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <svg
+            className="w-5 h-5 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            strokeLinecap="round"
+          >
+            <path d="M9 5l7 7-7 7" />
           </svg>
         </button>
 
-        {/* Image counter */}
-        <div className="absolute bottom-2 left-2 text-xs text-white bg-black/50 px-2 py-0.5 rounded">
-          {currentIndex + 1} / {images.length}
+        {/* Minimalistic dot indicators - smaller, thin outlines */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.stopPropagation()
+                setCurrentIndex(index)
+              }}
+              className={`rounded-full transition-all duration-300 ${
+                index === currentIndex
+                  ? 'w-2 h-2 border-2 border-[#B7410E] bg-transparent'
+                  : 'w-2 h-2 border border-neutral-600/60 bg-transparent hover:border-neutral-500'
+              }`}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          ))}
         </div>
-      </div>
-
-      {/* Dot indicators */}
-      <div className="flex justify-center gap-1.5 mt-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={(e) => {
-              e.stopPropagation()
-              setCurrentIndex(index)
-            }}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${
-              index === currentIndex
-                ? 'bg-accent-600 w-3'
-                : 'bg-neutral-300 hover:bg-neutral-400'
-            }`}
-            aria-label={`Go to image ${index + 1}`}
-          />
-        ))}
       </div>
     </div>
   )

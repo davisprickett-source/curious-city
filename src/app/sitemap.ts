@@ -57,11 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })
 
-    // City section pages
+    // City section pages (articles, discover, events, guide)
     citySections.forEach((section) => {
-      // Skip 'history' section as it's the city overview
-      if (section.id === 'history') return
-
       routes.push({
         url: `${baseUrl}/${city.slug}${section.path}`,
         lastModified: currentDate,

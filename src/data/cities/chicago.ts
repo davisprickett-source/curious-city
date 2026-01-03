@@ -186,7 +186,7 @@ export const chicago: CityData = {
             body: 'Starting in 1899, workers dug 60 miles of narrow-gauge freight tunnels beneath the Loop to move coal, mail, and merchandise. Chicagoans forgot they existed until April 13, 1992, when a construction pile driver punctured a tunnel wall under the Chicago River. 250 million gallons of water flooded into basements across downtown, shutting down the financial district for weeks. The Loop ran on emergency generators. Buildings evacuated. The bill: $1.95 billion.',
             year: '1992',
             image: {
-              src: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+              src: '',
               alt: 'Chicago downtown skyline along the river',
             },
             source: 'Chicago Tribune historical archives',
@@ -203,7 +203,7 @@ export const chicago: CityData = {
             body: 'In the 1850s and 60s, Chicago sat on a swamp with sewage pooling in the streets. Rather than accept defeat, engineers used 500+ jackscrews to lift entire city blocks—buildings, sidewalks, and all—as much as 14 feet in the air. The Briggs House hotel was raised while guests continued dining inside, barely noticing. Workers inserted new foundations beneath as the city rose from the mud.',
             year: '1858',
             image: {
-              src: 'https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800&q=80',
+              src: '',
               alt: 'Historic architecture in Chicago',
             },
             source: 'Chicago Historical Society',
@@ -225,7 +225,7 @@ export const chicago: CityData = {
             body: 'On July 24, 1915, the passenger ship SS Eastland rolled over while still docked on the Chicago River, killing 844 people—mostly Czech immigrants headed to a company picnic. The ship capsized so quickly that passengers were trapped between decks. It remains the deadliest single-vessel shipwreck in Great Lakes history, yet most Americans have never heard of it.',
             year: '1915',
             image: {
-              src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+              src: '',
               alt: 'Chicago River where the Eastland disaster occurred',
             },
             source: 'Eastland Disaster Historical Society',
@@ -255,7 +255,7 @@ export const chicago: CityData = {
             body: 'By the 1880s, Chicago\'s sewage flowed directly into Lake Michigan—the city\'s drinking water source. Outbreaks of typhoid and cholera killed thousands. In 1900, engineers completed the impossible: they reversed the flow of the Chicago River using a system of locks and canals, sending the city\'s waste toward the Mississippi instead. St. Louis was not pleased.',
             year: '1900',
             image: {
-              src: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?w=800&q=80',
+              src: '',
               alt: 'Chicago River flowing through downtown',
             },
             source: 'American Society of Civil Engineers',
@@ -290,7 +290,7 @@ export const chicago: CityData = {
             body: 'When Chicago won the 1893 World\'s Columbian Exposition, organizers demanded something to rival Paris\'s Eiffel Tower. George Washington Gale Ferris Jr. delivered: a 264-foot steel wheel carrying 2,160 passengers in 36 cars. Critics said it would collapse. It didn\'t. Over 1.4 million people rode it. Ferris died broke just three years later, his invention seized by creditors.',
             year: '1893',
             image: {
-              src: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+              src: '',
               alt: 'Ferris wheel against the sky',
             },
             source: 'Field Museum archives',
@@ -320,7 +320,7 @@ export const chicago: CityData = {
             body: 'Since 1920, the two bronze lions flanking the Art Institute entrance have been dressed for Chicago sports victories—Bears helmets, Blackhawks gear, Cubs caps. According to museum lore, when the lions are decorated before a championship game, Chicago wins. The tradition started informally but is now an official museum event. Locals take the prophecy very seriously.',
             year: '1920',
             image: {
-              src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+              src: '',
               alt: 'Art Institute of Chicago entrance',
             },
             source: 'Art Institute of Chicago',
@@ -376,7 +376,7 @@ export const chicago: CityData = {
             body: 'On December 2, 1942, beneath the stands of Stagg Field at the University of Chicago, Enrico Fermi and his team achieved the first controlled nuclear chain reaction. The experiment lasted 28 minutes. Nobody told the city that scientists were splitting atoms under a football stadium. A bronze sculpture by Henry Moore now marks the spot where the Atomic Age began.',
             year: '1942',
             image: {
-              src: 'https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800&q=80',
+              src: '',
               alt: 'University of Chicago campus',
             },
             source: 'Bulletin of the Atomic Scientists',
@@ -425,7 +425,7 @@ export const chicago: CityData = {
             description: 'Anish Kapoor\'s 110-ton stainless steel sculpture reflects Chicago\'s skyline in a mirror finish so polished you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works — the reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Go early to avoid crowds, or embrace the crowds and watch people pose.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+                src: '',
                 alt: 'Cloud Gate sculpture reflecting Chicago skyline',
               },
             ],
@@ -444,7 +444,7 @@ export const chicago: CityData = {
             description: 'One of the oldest and largest art museums in the United States houses everything from ancient Egyptian artifacts to contemporary installations. The Impressionist collection alone justifies admission — Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. The Modern Wing by Renzo Piano is a masterclass in museum design. You could spend days here and still miss entire wings.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1619869499346-802f9e1bdca7?w=800&q=80',
+                src: '',
                 alt: 'Art Institute of Chicago exterior with bronze lion statues',
               },
             ],
@@ -463,7 +463,7 @@ export const chicago: CityData = {
             description: 'A mile-long pier on Lake Michigan that functions as Chicago\'s tourist processing center — rides, restaurants, boat tours, fireworks, and crowds of people trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. The boat tours departing from here are excellent. The Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1582555187195-3c37e9f5af3e?w=800&q=80',
+                src: '',
                 alt: 'Navy Pier with Ferris wheel and Chicago skyline',
               },
             ],
@@ -482,7 +482,7 @@ export const chicago: CityData = {
             description: 'The observation deck on the 94th floor of the John Hancock Center offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a glass platform that tilts you out over Michigan Avenue at a 30-degree angle, which is either thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, which is sometimes cheaper than admission.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1583082425880-4913efe684ee?w=800&q=80',
+                src: '',
                 alt: 'Chicago skyline view from John Hancock Observatory',
               },
             ],
@@ -501,7 +501,7 @@ export const chicago: CityData = {
             description: 'A 13-block stretch of Michigan Avenue from the Chicago River to Oak Street packed with retail — luxury brands, department stores, chain restaurants, and tourists shopping like it\'s a contact sport. Architecturally significant buildings house predictable stores. Is it worth visiting? If you need to shop, yes. If you want to see Chicago\'s commercial heart, also yes. If you want authentic neighborhood culture, go literally anywhere else.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1568971480398-5e999c2da2e7?w=800&q=80',
+                src: '',
                 alt: 'Michigan Avenue Magnificent Mile with shopping and architecture',
               },
             ],
@@ -520,7 +520,7 @@ export const chicago: CityData = {
             description: 'Formerly the Sears Tower, still the tallest building in Chicago at 1,450 feet. The Skydeck on the 103rd floor features glass boxes (The Ledge) that extend out from the building — stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1582382156802-e67754aa7ff4?w=800&q=80',
+                src: '',
                 alt: 'Willis Tower Skydeck glass ledge extending over city',
               },
             ],
@@ -547,7 +547,7 @@ export const chicago: CityData = {
             description: 'Sixty miles of underground freight tunnels run beneath downtown Chicago, built between 1899 and 1906 to move coal and goods via electric railway cars. The system worked until 1959. In 1992, a contractor drove a piling through the tunnel roof into the Chicago River, causing the Great Chicago Flood that flooded basements across the Loop. The tunnels were sealed after 9/11. Most Chicagoans have no idea this network exists. You can\'t visit — access is restricted to utility workers — but the knowledge that an entire subterranean city runs beneath your feet changes how you see the streets. Some sections are still used for fiber optic cables and utilities. Others sit empty, slowly flooding with groundwater. The tunnel system is Chicago\'s best-kept infrastructure secret.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
+                src: '',
                 alt: 'Underground tunnel with brick archways and dim lighting',
               },
             ],
@@ -566,7 +566,7 @@ export const chicago: CityData = {
             description: 'An abandoned L station sits in the median of the Eisenhower Expressway, closed since 1973 and visible from passing Blue Line trains. The California station was part of the original Garfield Park elevated line, abandoned when the Congress Line (now Blue Line) was rerouted. The platform is still there — rusted, overgrown with weeds, covered in graffiti. No public access, but you can see it clearly if you ride the Blue Line between UIC-Halsted and Illinois Medical District. Watching an abandoned station flash past while you ride a functioning train creates a strange temporal overlap — this is what infrastructure death looks like in a city that doesn\'t tear everything down.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1583468573778-0f96d68ad072?w=800&q=80',
+                src: '',
                 alt: 'Abandoned elevated train station with overgrown platform',
               },
             ],
@@ -585,7 +585,7 @@ export const chicago: CityData = {
             description: 'A confirmed Al Capone location where original speakeasy architecture is still visible above the ceiling — exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. The basement tunnel system is sealed now, but you can still see where bootleggers moved inventory. The restaurant serves deep-dish pizza and Italian beef in a space where gangsters once ran liquor. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+                src: '',
                 alt: 'Historic restaurant interior with exposed brick and vintage details',
               },
             ],
@@ -604,7 +604,7 @@ export const chicago: CityData = {
             description: 'The only remaining structure from the Union Stock Yards, once the largest meatpacking complex in the world (1865-1971). This neo-gothic limestone gate from 1877 is the sole survivor of an industrial empire that defined Chicago. At its peak, the stockyards processed 18 million animals annually. Upton Sinclair wrote The Jungle about conditions here. The smell could be detected miles away. Now: one ornate gate standing alone on Exchange Avenue, a National Historic Landmark marking an industry that no longer exists. Behind the gate: industrial lots, some new development, and the absence of what was once the economic engine of the Midwest.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&q=80',
+                src: '',
                 alt: 'Historic limestone gate with ornate architecture standing alone',
               },
             ],
@@ -628,7 +628,7 @@ export const chicago: CityData = {
             description: 'Scattered throughout Jackson Park: original arc lamp posts designed by Charles Atwood, Westinghouse manhole covers fabricated for the fair, the Wooded Island\'s Japanese garden on the site of the Phoenix Pavilion, and the Columbia Stone Pedestrian Bridge. The 1893 World\'s Columbian Exposition was demolished after the fair — almost everything burned or was torn down. These fragments are what remains of the "White City" that introduced Ferris wheels, Cracker Jack, and electric lighting on a scale never seen before. Most visitors to Jackson Park walk past 130-year-old infrastructure without realizing they\'re treading on World\'s Fair history.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1585241936869-26c0acba598b?w=800&q=80',
+                src: '',
                 alt: 'Historic stone bridge and lamp posts in park setting',
               },
             ],
@@ -647,7 +647,7 @@ export const chicago: CityData = {
             description: 'A hidden Prairie School garden designed by Alfred Caldwell in 1936, rebuilt in 2013, and somehow still unknown to most Chicagoans. The lily pool sits at the north end of Lincoln Park Zoo — a serene landscape of water, stone, and native plants arranged in the Frank Lloyd Wright tradition of organic architecture. The space looks like a Monet painting come to life. Stone pathways wind through water gardens. Native plants bloom in careful succession. The council ring of stone benches invites contemplation. This is landscape architecture as art, quietly succeeding in a city that usually prefers loud.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1585159650952-e35cb5462627?w=800&q=80',
+                src: '',
                 alt: 'Tranquil garden with lily pond and stone pathways',
               },
             ],
@@ -666,7 +666,7 @@ export const chicago: CityData = {
             description: 'The world\'s highest church sits 400 feet above street level inside the spire of the First United Methodist Church — a neo-gothic skyscraper in the Loop that\'s also the world\'s tallest church building at 568 feet. The Sky Chapel seats 30 people in a space accessible via elevator to the 22nd floor, then a narrow staircase. Eight stained glass windows, a small altar, and views across downtown. The chapel was designed for small weddings and quiet services. Most people walk past this building daily without realizing they\'re passing a church in the sky. Free tours are offered, but you have to ask.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1548625361-6f5f846a5f11?w=800&q=80',
+                src: '',
                 alt: 'Neo-gothic church spire rising above city buildings',
               },
             ],
@@ -690,7 +690,7 @@ export const chicago: CityData = {
             description: 'Four nearly-windowless floors sit above the CVS pharmacy at State and Adams, containing floor-to-ceiling tanks that produce ice and chilled water for Loop buildings. Most people walk past this every day without noticing the building has almost no windows. The "ice water factory" is a utilitarian structure hiding in plain sight — functional infrastructure disguised as architecture. The tanks inside serve the State Street district\'s cooling needs. The building does exactly one thing, does it efficiently, and makes no aesthetic argument for itself. This is architecture as pure utility.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1590642913153-2d66c7da6a44?w=800&q=80',
+                src: '',
                 alt: 'Nearly windowless urban building with industrial purpose',
               },
             ],
@@ -708,7 +708,7 @@ export const chicago: CityData = {
             description: 'A tiny secret beach in Rogers Park where locals bring hammocks and books for quiet afternoons. No lifeguards, no concessions, no crowds — just a small stretch of sand at the end of Granville Avenue that most Chicagoans don\'t know exists. The beach sits tucked between larger public beaches, small enough to miss but perfect for reading or swimming without the Navy Pier energy. The view includes lake, sky, and the kind of urban solitude that cities promise but rarely deliver. Combine with Jarvis Beach and Lane Beach for a low-key North Side beach day.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+                src: '',
                 alt: 'Quiet neighborhood beach with sand and lake view',
               },
             ],
@@ -727,7 +727,7 @@ export const chicago: CityData = {
             description: 'Sixty-eight tiny, meticulously detailed diorama rooms in the Art Institute\'s basement, created by Narcissa Niblack Thorne at 1-inch scale between 1932 and 1940. Each room recreates European and American interiors from the 16th to 20th centuries with working hinges, upholstered furniture, hand-painted wallpaper, and miniature art. The craftsmanship is extraordinary — these aren\'t dollhouses, they\'re architectural models built by master craftsmen. Most visitors to the Art Institute never make it down here, which means you can spend an hour studying furniture that\'s an inch tall in a quiet basement gallery while everyone else fights for a photo of Nighthawks.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?w=800&q=80',
+                src: '',
                 alt: 'Detailed miniature room diorama with period furniture',
               },
             ],
@@ -746,7 +746,7 @@ export const chicago: CityData = {
             description: 'A 1929 movie palace that never stopped showing films, preserving the experience of watching a movie in an ornate atmospheric theater. The ceiling is painted to look like a night sky with twinkling stars and moving clouds. The organ still rises from the orchestra pit for special screenings. The Music Box programs classics, cult films, foreign cinema, and midnight movies — this is where you watch The Room with 200 people shouting at the screen, or catch a 35mm print of a Hitchcock film. The theater has been lovingly maintained, which means it feels like 1929 in the best possible way. Popcorn is fresh. The balcony is intact. Movies look better here.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=800&q=80',
+                src: '',
                 alt: 'Ornate historic movie theater interior with starlit ceiling',
               },
             ],
@@ -765,7 +765,7 @@ export const chicago: CityData = {
             description: 'Chicago\'s "secret garden" sits above Roots Handmade Pizza in West Town — a 1,000 sq ft rooftop space with vertical hanging gardens, string lights, and the kind of atmosphere that makes you forget you\'re in a city. The bar serves craft cocktails and local beer. The menu is farm-to-table without being precious about it. The space feels like someone\'s well-designed backyard, except it\'s four stories up with skyline views. This isn\'t a flashy rooftop lounge; it\'s a quiet space that succeeds by being thoughtfully made. Open seasonally, weather-dependent. Go for sunset.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80',
+                src: '',
                 alt: 'Rooftop garden with hanging plants and string lights',
               },
             ],
@@ -784,7 +784,7 @@ export const chicago: CityData = {
             description: 'The University of Chicago\'s Harper Memorial Library contains two hidden spaces: a basement "library beneath a library" with study spaces accessible through unmarked doors, and a space between the ceiling and roof peak that students have accessed for decades. The basement library is open to anyone who knows to look for it — quiet, wood-paneled, ideal for studying. The upper space is technically off-limits but generations of UChicago students have found ways in. The building itself is neo-gothic grandeur, designed to make education feel like a cathedral. The secret spaces make it feel like exploration.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
+                src: '',
                 alt: 'Gothic library interior with wooden shelves and reading spaces',
               },
             ],
@@ -803,7 +803,7 @@ export const chicago: CityData = {
             description: 'A four-sided permission wall surrounding 3,300 sq ft between Medill and Fullerton west of Milwaukee — one of Chicago\'s most heavily concentrated legal graffiti spots. Artists can paint here without legal consequences, which means the work changes constantly. Some pieces last weeks. Others get buffed in days. The quality ranges from amateur to professional, which is the point — this is street art as living practice, not curated museum display. The wall sits in a Logan Square alley most people would never walk down, which makes finding it feel like discovery. Bring a camera. The art won\'t be the same next month.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80',
+                src: '',
                 alt: 'Graffiti-covered permission wall with colorful street art',
               },
             ],
@@ -822,7 +822,7 @@ export const chicago: CityData = {
             description: 'The actual location where FBI agents shot John Dillinger on July 22, 1934, after he watched a movie. The theater on Lincoln Avenue still stands, now operating as a live venue. A historical marker notes the spot where "Public Enemy No. 1" died. The movie he watched: Manhattan Melodrama. The woman who tipped off the FBI (the "Lady in Red") was actually wearing orange. Dillinger walked out of this theater into an ambush that\'s now Chicago crime folklore. The building has been renovated, but standing outside the former theater entrance connects you to a specific moment when federal law enforcement killed a celebrity criminal on a Chicago street.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=800&q=80',
+                src: '',
                 alt: 'Historic theater building exterior with vintage marquee',
               },
             ],
@@ -1017,7 +1017,7 @@ export const chicago: CityData = {
             website: 'https://www.intelligentsia.com',
             instagram: '@intelligentsiacoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80',
+              src: '',
               alt: 'Modern coffee bar with precision brewing equipment',
             },
           },
@@ -1034,7 +1034,7 @@ export const chicago: CityData = {
             website: 'https://www.darkmattercoffee.com',
             instagram: '@darkmattercoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Artfully decorated indie coffee shop with character',
             },
           },
@@ -1077,7 +1077,7 @@ export const chicago: CityData = {
             website: 'https://www.lobachicago.com',
             instagram: '@lobachicago',
             image: {
-              src: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800&q=80',
+              src: '',
               alt: 'Artisan pastries in a warm bakery setting',
             },
           },
@@ -1374,6 +1374,7 @@ export const chicago: CityData = {
         id: 'chi-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Ambition scarred by violence',
         intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
         items: [
           {

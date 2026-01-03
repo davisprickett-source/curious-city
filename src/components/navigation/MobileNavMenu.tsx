@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { CITY_METADATA } from '@/data/cities'
 import { getAllHistory } from '@/data/history'
-import { routes, citySections, type CitySection } from '@/lib/routes'
+import { routes, citySections, type AnyCitySection } from '@/lib/routes'
 import { useNavigation } from './hooks/useNavigation'
 import type { EventView } from '@/components/EventFilter'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
@@ -15,7 +15,7 @@ import { InlineScenesCategoryFilter } from './InlineScenesCategoryFilter'
 interface MobileNavMenuProps {
   citySlug?: string
   cityName?: string
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
   eventView?: EventView
   eventCategories?: EventCategory[]
   sceneCategory?: string
@@ -211,7 +211,7 @@ export function MobileNavMenu({
                     {cityHistory.map((article) => (
                       <Link
                         key={article.slug}
-                        href={routes.cityHistory(article.citySlug, article.slug)}
+                        href={routes.cityArticle(article.citySlug, article.slug)}
                         onClick={closeMenu}
                         className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
                       >
@@ -221,7 +221,7 @@ export function MobileNavMenu({
                   </div>
                 ))}
                 <Link
-                  href={routes.history()}
+                  href={routes.categoryHistory()}
                   onClick={closeMenu}
                   className="block px-6 py-2 text-sm text-neutral-500 hover:bg-neutral-100"
                 >

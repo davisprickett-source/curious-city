@@ -78,7 +78,7 @@ const getCategoryStyle = (category: string) => {
   }
 }
 
-function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item: DarkHistoryItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
+function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistoryItem; index: number; totalCount: number; onSectionInView?: (index: number) => void }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
     triggerOnce: false,
@@ -161,7 +161,6 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
               <div className={`w-20 h-20 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-lg`}>
                 <span className={`text-4xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
               </div>
-              <div className="text-xs text-neutral-400 mt-2 text-center">{index + 1}/{totalCount}</div>
             </div>
 
             {/* Content */}
@@ -223,43 +222,82 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mt-6">
                   <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources & Further Reading</h4>
                   <ul className="space-y-2">
-                    {item.sources?.map((source, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm">
-                        <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <div className="flex-1 min-w-0">
-                          {source.type && (
-                            <span className="inline-block text-[10px] font-semibold text-neutral-500 uppercase tracking-wide bg-neutral-100 px-1.5 py-0.5 rounded mr-2">
-                              {source.type}
-                            </span>
-                          )}
-                          {source.url ? (
-                            <a
-                              href={source.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
-                            >
-                              {source.title}
-                            </a>
-                          ) : (
-                            <span className="text-neutral-700 font-medium">{source.title}</span>
-                          )}
-                          {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
-                            <span className="text-neutral-600">
-                              {source.author && <span> by {source.author}</span>}
-                              {source.publisher && <span> • {source.publisher}</span>}
-                              {source.platform && <span> • {source.platform}</span>}
-                              {source.show && <span> • {source.show}</span>}
-                              {source.director && <span> • dir. {source.director}</span>}
-                              {source.year && <span> • {source.year}</span>}
-                              {source.isbn && <span> • ISBN: {source.isbn}</span>}
-                            </span>
-                          )}
-                        </div>
-                      </li>
-                    ))}
+                    {item.sources?.map((source, idx) => {
+                      // Get icon based on source type
+                      const getSourceIcon = () => {
+                        switch (source.type) {
+                          case 'article':
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                              </svg>
+                            )
+                          case 'book':
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                              </svg>
+                            )
+                          case 'podcast':
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                              </svg>
+                            )
+                          case 'video':
+                          case 'documentary':
+                          case 'film':
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                              </svg>
+                            )
+                          case 'report':
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                            )
+                          default:
+                            return (
+                              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                              </svg>
+                            )
+                        }
+                      }
+
+                      return (
+                        <li key={idx} className="flex items-start gap-2 text-sm">
+                          {getSourceIcon()}
+                          <div className="flex-1 min-w-0">
+                            {source.url ? (
+                              <a
+                                href={source.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                              >
+                                {source.title}
+                              </a>
+                            ) : (
+                              <span className="text-neutral-700 font-medium">{source.title}</span>
+                            )}
+                            {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                              <span className="text-neutral-600">
+                                {source.author && <span> by {source.author}</span>}
+                                {source.publisher && <span> • {source.publisher}</span>}
+                                {source.platform && <span> • {source.platform}</span>}
+                                {source.show && <span> • {source.show}</span>}
+                                {source.director && <span> • dir. {source.director}</span>}
+                                {source.year && <span> • {source.year}</span>}
+                                {source.isbn && <span> • ISBN: {source.isbn}</span>}
+                              </span>
+                            )}
+                          </div>
+                        </li>
+                      )
+                    })}
                   </ul>
                 </div>
               )}
@@ -292,7 +330,6 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
             <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500`}>
               <span className={`text-4xl md:text-5xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
             </div>
-            <div className="text-xs text-neutral-400 mt-2 text-center font-medium">{index + 1}/{totalCount}</div>
           </motion.div>
 
           {/* Animated Content */}
@@ -393,43 +430,82 @@ function DarkHistorySection({ item, index, totalCount, onSectionInView }: { item
               >
                 <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Sources & Further Reading</h4>
                 <ul className="space-y-2">
-                  {item.sources?.map((source, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm">
-                      <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <div className="flex-1 min-w-0">
-                        {source.type && (
-                          <span className="inline-block text-[10px] font-semibold text-neutral-500 uppercase tracking-wide bg-neutral-100 px-1.5 py-0.5 rounded mr-2">
-                            {source.type}
-                          </span>
-                        )}
-                        {source.url ? (
-                          <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
-                          >
-                            {source.title}
-                          </a>
-                        ) : (
-                          <span className="text-neutral-700 font-medium">{source.title}</span>
-                        )}
-                        {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
-                          <span className="text-neutral-600">
-                            {source.author && <span> by {source.author}</span>}
-                            {source.publisher && <span> • {source.publisher}</span>}
-                            {source.platform && <span> • {source.platform}</span>}
-                            {source.show && <span> • {source.show}</span>}
-                            {source.director && <span> • dir. {source.director}</span>}
-                            {source.year && <span> • {source.year}</span>}
-                            {source.isbn && <span> • ISBN: {source.isbn}</span>}
-                          </span>
-                        )}
-                      </div>
-                    </li>
-                  ))}
+                  {item.sources?.map((source, idx) => {
+                    // Get icon based on source type
+                    const getSourceIcon = () => {
+                      switch (source.type) {
+                        case 'article':
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                            </svg>
+                          )
+                        case 'book':
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                          )
+                        case 'podcast':
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                            </svg>
+                          )
+                        case 'video':
+                        case 'documentary':
+                        case 'film':
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          )
+                        case 'report':
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                          )
+                        default:
+                          return (
+                            <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                            </svg>
+                          )
+                      }
+                    }
+
+                    return (
+                      <li key={idx} className="flex items-start gap-2 text-sm">
+                        {getSourceIcon()}
+                        <div className="flex-1 min-w-0">
+                          {source.url ? (
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium"
+                            >
+                              {source.title}
+                            </a>
+                          ) : (
+                            <span className="text-neutral-700 font-medium">{source.title}</span>
+                          )}
+                          {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                            <span className="text-neutral-600">
+                              {source.author && <span> by {source.author}</span>}
+                              {source.publisher && <span> • {source.publisher}</span>}
+                              {source.platform && <span> • {source.platform}</span>}
+                              {source.show && <span> • {source.show}</span>}
+                              {source.director && <span> • dir. {source.director}</span>}
+                              {source.year && <span> • {source.year}</span>}
+                              {source.isbn && <span> • ISBN: {source.isbn}</span>}
+                            </span>
+                          )}
+                        </div>
+                      </li>
+                    )
+                  })}
                 </ul>
               </motion.div>
             )}

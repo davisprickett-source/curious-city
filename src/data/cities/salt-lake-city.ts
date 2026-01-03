@@ -315,7 +315,7 @@ export const salt_lake_city: CityData = {
             title: 'The "Greatest Snow on Earth" is trademarked',
             body: 'Utah literally trademarked the phrase "The Greatest Snow on Earth" and prints it on license plates. The science backs it up: the Great Salt Lake adds moisture to storms while the Wasatch Mountains wring out especially light, dry powder—averaging 500 inches annually at Alta. Locals will argue for hours about whether it\'s better than Colorado\'s snow.',
             image: {
-              src: 'https://images.unsplash.com/photo-1551524559-8af4e6624178?w=800&q=80',
+              src: '',
               alt: 'Deep powder snow in the Wasatch Mountains',
             },
             source: 'Utah Office of Tourism',
@@ -442,7 +442,7 @@ export const salt_lake_city: CityData = {
             description: 'A 40-foot pyramid housing a modern religious group that practices contemporary mummification. The only place in the world offering modern mummification services for humans and pets (over 600 pets mummified). The founder\'s mummified body rests inside in a gold-covered bronze sarcophagus. Tours available by appointment.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80',
+                src: '',
                 alt: 'Modern pyramid structure in urban setting',
               },
             ],
@@ -461,7 +461,7 @@ export const salt_lake_city: CityData = {
             description: 'Private collection of 30+ vintage race cars including the legendary Mormon Meteor III, 1904 Peerless Green Dragon, and 1929 Bugatti 35B. Features cars from Grand Prix, Le Mans, and Indianapolis. Open only 2nd Wednesday of each month.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80',
+                src: '',
                 alt: 'Vintage race car collection in private museum',
               },
             ],
@@ -479,7 +479,7 @@ export const salt_lake_city: CityData = {
             description: 'World\'s largest collection of pioneer artifacts featuring bizarre items: bottles full of human teeth, Victorian hair art, taxidermied two-headed lamb, petrified potato, rattlesnake rattle collections, wooden prosthetic leg, and a bloodstone with alleged magical properties.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1565802970768-6a8bb0780e88?w=800&q=80',
+                src: '',
                 alt: 'Victorian-era museum interior with unusual historical artifacts',
               },
             ],
@@ -516,7 +516,7 @@ export const salt_lake_city: CityData = {
             description: 'Peaceful alternative to crowded Mill Creek. 7-mile hard trail with 3,562 ft elevation gain. Shady canyon with creek, aspen groves, abundant wildflowers, unique Salt Lake Valley views. Popular among locals for early morning hikes.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80',
+                src: '',
                 alt: 'Mountain canyon trail with creek and aspen trees',
               },
             ],
@@ -534,7 +534,7 @@ export const salt_lake_city: CityData = {
             description: 'Large icy-green pool about 1 mile from Crystal Lake Trailhead in Uintas. Features tall cliffs for jumping at southeastern end. Crowds dissipate quickly past Crystal Lake, making this a local favorite. Avoid weekends.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=80',
+                src: '',
                 alt: 'Mountain lake with cliffs and clear green water',
               },
             ],
@@ -557,7 +557,7 @@ export const salt_lake_city: CityData = {
             description: '8-acre property formerly shrouded in mystery with urban legends about hermits and hobbits. Actually a 1930s bird sanctuary turned counterculture hub with small artistic cabins and peacocks. Opened to public in 2020 after decades of private ownership.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+                src: '',
                 alt: 'Small artistic cabins in wooded park setting',
               },
             ],
@@ -575,7 +575,7 @@ export const salt_lake_city: CityData = {
             description: 'Rooftop garden with panoramic city/mountain views, reading gardens, and bee farm. One of best views in entire city, completely free. Perfect for sunset.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
+                src: '',
                 alt: 'Urban rooftop garden with city skyline views',
               },
             ],
@@ -594,7 +594,7 @@ export const salt_lake_city: CityData = {
             description: 'Observation deck on 28th floor with expansive views of Temple Square, Great Salt Lake, and surrounding mountains. Open weekdays. Most people don\'t know public can access it.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80',
+                src: '',
                 alt: 'Panoramic city view from high-rise observation deck',
               },
             ],
@@ -612,7 +612,7 @@ export const salt_lake_city: CityData = {
             description: 'Legendary 3-floor antiquarian bookshop inside Leonardo Museum. Specializes in Utah/Mormon history, Western Americana, Grand Canyon, Colorado River. Features vintage postcards, posters, very narrow aisles packed floor-to-ceiling. Operated by Ken Sanders.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80',
+                src: '',
                 alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
               },
             ],
@@ -631,7 +631,7 @@ export const salt_lake_city: CityData = {
             description: '11-acre garden with 28 countries represented along Jordan River. Japanese garden features bamboo, pines, lotus, water lilies. Hidden treasure in Glendale neighborhood, just 2 miles from downtown but little-known.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1519552928909-67d7748c6e33?w=800&q=80',
+                src: '',
                 alt: 'Japanese garden with lotus flowers and water features',
               },
             ],
@@ -650,7 +650,7 @@ export const salt_lake_city: CityData = {
             description: 'SLC\'s longest-running all-ages venue (est. 1999). Capacity 200, described as "no bigger than a two-car garage." DIY backyard atmosphere where fans see artists before they\'re famous. Dry venue.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+                src: '',
                 alt: 'Small intimate music venue with stage and crowd',
               },
             ],
@@ -669,7 +669,7 @@ export const salt_lake_city: CityData = {
             description: 'Subterranean speakeasy with hunting-lodge vibe. Requires reservations. Unique food beyond typical bar fare, including signature Beer Can Chicken. Modern hidden gem requiring password or special entrance.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
               },
             ],
@@ -687,7 +687,7 @@ export const salt_lake_city: CityData = {
             description: 'SLC\'s oldest residential area with streets named after fruits. Rare San Francisco-influenced architecture (Italianate, Victorian, Gothic Revival) brought by 1800s merchants. Steep, narrow, angular streets with hilly terrain creating unique SF-like character. National Historic Register (1982).',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80',
+                src: '',
                 alt: 'Victorian houses on steep hillside street',
               },
             ],
@@ -735,7 +735,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7648, lng: -111.8867 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Elegant cocktail bar with warm amber lighting',
             },
           },
@@ -749,7 +749,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7648, lng: -111.8865 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=80',
+              src: '',
               alt: 'Craft beer taps lined up at a bar',
             },
           },
@@ -763,7 +763,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7615, lng: -111.8906 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
+              src: '',
               alt: 'Craft cocktail with artistic garnish',
             },
           },
@@ -777,7 +777,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7614, lng: -111.8906 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&q=80',
+              src: '',
               alt: 'Whiskey glass with amber liquid on wooden bar',
             },
           },
@@ -791,7 +791,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7603, lng: -111.8933 },
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Dark dive bar interior with neon signs',
             },
           },
@@ -863,7 +863,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7639, lng: -111.8845 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+              src: '',
               alt: 'Fresh oysters on ice with lemon wedges',
             },
           },
@@ -877,7 +877,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7716, lng: -111.9091 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=800&q=80',
+              src: '',
               alt: 'Rich Mexican mole sauce over enchiladas',
             },
           },
@@ -891,7 +891,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7652, lng: -111.8821 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Elegant farm-to-table dish with seasonal vegetables',
             },
           },
@@ -905,7 +905,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7649, lng: -111.8909 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80',
+              src: '',
               alt: 'Crispy fried chicken sandwich with pickles',
             },
           },
@@ -919,7 +919,7 @@ export const salt_lake_city: CityData = {
             coordinates: { lat: 40.7623, lng: -111.8910 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&q=80',
+              src: '',
               alt: 'Fresh sushi platter with salmon and tuna',
             },
           },
@@ -1071,7 +1071,7 @@ export const salt_lake_city: CityData = {
             website: 'https://theroseestb.com',
             instagram: '@theroseestb',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Industrial-chic coffee shop in restored warehouse',
             },
           },
@@ -1088,7 +1088,7 @@ export const salt_lake_city: CityData = {
             website: 'https://publikcoffee.com',
             instagram: '@publikcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Third-wave pour-over coffee preparation',
             },
           },
@@ -1105,7 +1105,7 @@ export const salt_lake_city: CityData = {
             website: 'https://www.caffedbolla.com',
             instagram: '@caffedbolla',
             image: {
-              src: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&q=80',
+              src: '',
               alt: 'Siphon coffee brewer with dramatic extraction',
             },
           },
@@ -1122,7 +1122,7 @@ export const salt_lake_city: CityData = {
             website: 'https://sugarhousecoffee.com',
             instagram: '@sugarhousecoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Cozy bohemian coffee shop with live music setup',
             },
           },
@@ -1138,7 +1138,7 @@ export const salt_lake_city: CityData = {
             price: '$',
             instagram: '@jackmormoncoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80',
+              src: '',
               alt: 'Classic coffee cup in neighborhood cafe setting',
             },
           },
@@ -1155,7 +1155,7 @@ export const salt_lake_city: CityData = {
             website: 'https://labarbacoffee.com',
             instagram: '@labarbacoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+              src: '',
               alt: 'Light-filled modern coffee shop interior',
             },
           },
@@ -1165,6 +1165,7 @@ export const salt_lake_city: CityData = {
         id: 'slc-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Where the desert keeps its secrets',
         intro: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
         items: [
           {

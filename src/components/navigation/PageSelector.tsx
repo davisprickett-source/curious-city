@@ -2,12 +2,12 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { citySections, type CitySection } from '@/lib/routes'
+import { citySections, type AnyCitySection } from '@/lib/routes'
 import { useNavigation } from './hooks/useNavigation'
 
 interface PageSelectorProps {
   citySlug: string
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
   preserveFilters?: boolean
 }
 

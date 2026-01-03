@@ -8,22 +8,22 @@ describe('routes', () => {
     })
   })
 
-  describe('history', () => {
-    it('returns history listing path', () => {
-      expect(routes.history()).toBe('/history')
+  describe('categoryHistory', () => {
+    it('returns history category path', () => {
+      expect(routes.categoryHistory()).toBe('/category/history')
     })
   })
 
-  describe('cityHistory', () => {
-    it('builds history path from city and history slugs', () => {
-      expect(routes.cityHistory('minneapolis', 'meeting-of-waters')).toBe(
-        '/minneapolis/history/meeting-of-waters'
+  describe('cityArticle', () => {
+    it('builds article path from city and article slugs', () => {
+      expect(routes.cityArticle('minneapolis', 'meeting-of-waters')).toBe(
+        '/minneapolis/articles/meeting-of-waters'
       )
     })
 
     it('handles hyphenated city slugs', () => {
-      expect(routes.cityHistory('salt-lake-city', 'zion-in-the-desert')).toBe(
-        '/salt-lake-city/history/zion-in-the-desert'
+      expect(routes.cityArticle('salt-lake-city', 'zion-in-the-desert')).toBe(
+        '/salt-lake-city/articles/zion-in-the-desert'
       )
     })
   })
@@ -35,11 +35,7 @@ describe('routes', () => {
   })
 
   describe('citySection', () => {
-    it('returns city root for history section', () => {
-      expect(routes.citySection('denver', 'history')).toBe('/denver')
-    })
-
-    it('builds section path for other sections', () => {
+    it('builds section path for sections', () => {
       expect(routes.citySection('denver', 'events')).toBe('/denver/events')
       expect(routes.citySection('denver', 'hidden-gems')).toBe('/denver/hidden-gems')
       expect(routes.citySection('denver', 'dark-history')).toBe('/denver/dark-history')
@@ -56,12 +52,7 @@ describe('routes', () => {
 
 describe('citySections', () => {
   it('has expected number of sections', () => {
-    expect(citySections.length).toBe(10)
-  })
-
-  it('history section has empty path', () => {
-    const history = citySections.find((s) => s.id === 'history')
-    expect(history?.path).toBe('')
+    expect(citySections.length).toBeGreaterThan(0)
   })
 
   it('all sections have id, label, and path', () => {

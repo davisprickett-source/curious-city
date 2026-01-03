@@ -101,7 +101,7 @@ export const fargo: CityData = {
             body: 'In the early 1900s, North Dakota had the most lenient divorce laws in America—you could establish residency in 90 days and get divorced on nearly any grounds. Wealthy Easterners flocked to Fargo for quick divorces. The state made a fortune until other states complained and the laws were tightened in 1899. Some called it the "Divorce Colony."',
             year: '1890s',
             image: {
-              src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+              src: '',
               alt: 'Historic downtown Fargo',
             },
             source: 'North Dakota Historical Society',
@@ -135,7 +135,7 @@ export const fargo: CityData = {
             title: 'Fargo sits on the bed of a lake larger than all five Great Lakes',
             body: 'The perfectly flat prairie is the silted floor of glacial Lake Agassiz, which covered 110,000 square miles 10,000 years ago—larger than all five Great Lakes combined. When the ice dam broke, it drained catastrophically, possibly triggering global cooling. The flatness isn\'t boring; it\'s one of the most dramatic geological features in North America.',
             image: {
-              src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80',
+              src: '',
               alt: 'Flat prairie horizon',
             },
             source: 'USGS',
@@ -165,7 +165,7 @@ export const fargo: CityData = {
             body: 'The Red River flows north toward Canada, meaning snow melts in the southern tributaries first and pushes water toward still-frozen stretches downstream. Ice jams trap the water and push it back through Fargo. The 1997 flood was the worst in 500 years—the entire city mobilized to fill sandbags. A $2.75 billion diversion channel is being built to prevent future catastrophes.',
             year: '1997',
             image: {
-              src: 'https://images.unsplash.com/photo-1547683905-f686c993aae5?w=800&q=80',
+              src: '',
               alt: 'Red River during spring flooding',
             },
             source: 'US Army Corps of Engineers',
@@ -213,7 +213,7 @@ export const fargo: CityData = {
             body: 'Roger Maris, who broke Babe Ruth\'s single-season home run record in 1961, grew up in Fargo. The Roger Maris Museum in West Acres Mall is genuinely moving—letters, memorabilia, and the story of a man who never got the credit he deserved. His 61 home runs stood for 37 years until steroid-era players passed him.',
             year: '1961',
             image: {
-              src: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80',
+              src: '',
               alt: 'Baseball history display',
             },
             source: 'Roger Maris Museum',
@@ -279,7 +279,7 @@ export const fargo: CityData = {
             title: 'Downtown has an elaborate skyway system',
             body: 'Like Minneapolis and St. Paul, Fargo built a system of elevated, climate-controlled walkways connecting downtown buildings. On days when the wind chill is -40°F, office workers can walk for blocks without putting on a coat. The skyway culture has its own social dynamics—certain routes are faster, certain spots are where people linger.',
             image: {
-              src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80',
+              src: '',
               alt: 'Downtown skyway system',
             },
             source: 'Downtown Community Partnership',
@@ -420,7 +420,7 @@ export const fargo: CityData = {
               'Located in an off-campus industrial warehouse (former Knox Lumber Company), this archive contains heavy boxes of original glass plate negatives from the late 1800s-1930s showing early NDSU campus life. Lead archivist notes "A lot of people don\'t realize this is available." Nearly destroyed by flooding 25 years ago when housed in a basement. Requires appointment or insider knowledge to access.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80',
+                src: '',
                 alt: 'Historical archives with glass plate negatives and documents',
               },
             ],
@@ -439,7 +439,7 @@ export const fargo: CityData = {
               'In 1932, Bonnie Parker and Clyde Barrow spent several weeks hiding in this apartment after robberies. No plaque marks it — "the city has mixed feelings about celebrating outlaws." The building still stands, unmarked and unknown to most. One of Fargo\'s best-kept secrets.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+                src: '',
                 alt: '1930s apartment building exterior',
               },
             ],
@@ -458,7 +458,7 @@ export const fargo: CityData = {
               'In 1927, three blocks in Moorhead had 14 speakeasies in a three-block radius — "almost as many places where you could illegally buy alcohol as seven blocks of downtown Fargo do today." Researchers mapped them using arrest records. Most buildings still stand. Rustica Eatery operates in the oldest surviving "blind pig."',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Historic bar interior with Prohibition-era atmosphere',
               },
             ],
@@ -477,7 +477,7 @@ export const fargo: CityData = {
               'Specializes in "vintage sex history, vintage & antique religious items, medical items, and oddities." They joke about riffing on "den of iniquity" given the smut and oddities. Features mid-century kitsch, vintage paperbacks and pulps, old advertising. Hidden inside First Avenue Market.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1594998893017-36147cbf8f30?w=800&q=80',
+                src: '',
                 alt: 'Vintage oddities and antiques displayed in shop',
               },
             ],
@@ -497,7 +497,7 @@ export const fargo: CityData = {
               'North Dakota\'s smallest store selling only tiny items — jewelry, prints, gift baskets, quirky miniatures. Featured by Atlas Obscura. Open 360+ days a year but tucked inside Brewhalla market, easy to miss. The store itself is barely bigger than a closet.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80',
+                src: '',
                 alt: 'Tiny miniature items and collectibles displayed',
               },
             ],
@@ -516,7 +516,7 @@ export const fargo: CityData = {
               'Free museum inside West Acres Mall dedicated to Fargo\'s baseball legend who broke Babe Ruth\'s home run record. Contains letters and memorabilia showing "someone who never got the credit he deserved." Most shoppers walk right past it.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80',
+                src: '',
                 alt: 'Baseball memorabilia and historic photos displayed',
               },
             ],
@@ -535,7 +535,7 @@ export const fargo: CityData = {
               'Built around the founder\'s personal collection featuring a "wonderfully unexpected array" from ancient Asian artifacts and pre-Columbian pottery to European prints. "Diverse, sometimes quirky, and deeply personal nature." Lesser-known than Plains Art Museum despite being Moorhead\'s cultural gem.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=800&q=80',
+                src: '',
                 alt: 'Eclectic art museum interior with diverse exhibits',
               },
             ],
@@ -555,7 +555,7 @@ export const fargo: CityData = {
               'Relatively rare Civil War commemorative Union Soldier statue in North Dakota, a state far from the conflict. Sits in Island Park where most locals drive past without noticing. Part of Grand Army of the Republic memorial tradition.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1593696954146-f5d89f5c5c3a?w=800&q=80',
+                src: '',
                 alt: 'Civil War soldier statue monument in park',
               },
             ],
@@ -574,7 +574,7 @@ export const fargo: CityData = {
               'Honors the "Lyric poet, father of Norwegian literature" — one of five Norwegian monuments erected following Norway\'s 1905 independence. Most people have no idea who he is or why his statue sits in Island Park. Part of Scandinavian Heritage Passport.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1581974206778-6f34b3c54bb9?w=800&q=80',
+                src: '',
                 alt: 'Bronze statue of Norwegian poet on stone pedestal',
               },
             ],
@@ -593,7 +593,7 @@ export const fargo: CityData = {
               'Hand-carved wooden stave church replica behind Hjemkomst Center, built by one man. Most visitors to Hjemkomst see the Viking ship inside and miss the church outside. Traditional Norwegian construction technique dating to the Middle Ages.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80',
+                src: '',
                 alt: 'Norwegian stave church with distinctive wooden architecture',
               },
             ],
@@ -612,7 +612,7 @@ export const fargo: CityData = {
               'Depaved in 2008, planted Spring 2009. Features permaculture principles with fruit trees, berry shrubs, perennial vegetable guilds. Audubon backyard bird habitat "perfect for wandering, sitting and reading, drawing and painting as well as bird watching." Hidden in plain sight.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80',
+                src: '',
                 alt: 'Urban garden with fruit trees and native plants',
               },
             ],
@@ -632,7 +632,7 @@ export const fargo: CityData = {
               'Designated in 2015 as a legal street art wall behind The Forum building. The art changes frequently as local artists paint over previous works. Even locals might not know it exists or where it is. Part of Fargo\'s growing mural scene.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80',
+                src: '',
                 alt: 'Colorful street art murals on alley wall',
               },
             ],
@@ -651,7 +651,7 @@ export const fargo: CityData = {
               '"Welcome to Roberts Alley" mural and retro mural by Adam Wiedman honoring the site\'s history. Most people walk right past the alley entrances. Part of downtown Fargo\'s hidden art scene that exists off the main streets.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=800&q=80',
+                src: '',
                 alt: 'Alley mural with retro design',
               },
             ],
@@ -670,7 +670,7 @@ export const fargo: CityData = {
               'Contains over 20 hidden pictures in the mural behind Black Coffee & Waffle Bar. You have to know to look for it. Interactive public art that rewards close observation. Local favorite for photography.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1561998338-13ad7883b20f?w=800&q=80',
+                src: '',
                 alt: 'Detailed mural with hidden images',
               },
             ],
@@ -689,7 +689,7 @@ export const fargo: CityData = {
               'Unique artist-designed planters in downtown Moorhead that most people assume are just regular planters. Between M&H Gas Station and Ace Hardware. Public art disguised as street furniture — hidden in plain sight.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1615501969235-9a1012e06aef?w=800&q=80',
+                src: '',
                 alt: 'Artistic planters with unique designs on city street',
               },
             ],
@@ -708,7 +708,7 @@ export const fargo: CityData = {
               'Last class graduated in 1997 when it was Cass Valley North High School. Sits as a "rare spot in an otherwise budding town" as Argusville experienced a population boom but left the school behind. 15 minutes north of Fargo off I-29.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=800&q=80',
+                src: '',
                 alt: 'Abandoned school building exterior',
               },
             ],
@@ -738,7 +738,7 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://wurstfargo.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+              src: '',
               alt: 'German beer hall with communal tables and beer flights',
             },
           },
@@ -753,7 +753,7 @@ export const fargo: CityData = {
             price: '$',
             website: 'https://aquariumfargo.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Intimate live music venue with stage',
             },
           },
@@ -768,7 +768,7 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://jlbeers.com/518/',
             image: {
-              src: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=80',
+              src: '',
               alt: 'Craft beer taps at bar with neon glow',
             },
           },
@@ -783,7 +783,7 @@ export const fargo: CityData = {
             price: '$',
             website: 'https://micksoffice.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Classic neighborhood bar interior',
             },
           },
@@ -807,7 +807,7 @@ export const fargo: CityData = {
             price: '$$$$',
             website: 'https://jasperfargo.com/rosewild/',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Elegant Nordic-inspired farm-to-table dish',
             },
           },
@@ -822,7 +822,7 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://lunafargo.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Cozy neighborhood coffee shop and kitchen',
             },
           },
@@ -837,7 +837,7 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://www.vinyltaco.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Creative fusion tacos in a music-themed space',
             },
           },
@@ -852,7 +852,7 @@ export const fargo: CityData = {
             price: '$',
             website: 'https://rhombusguyspizza.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+              src: '',
               alt: 'Detroit-style pizza with thick crispy crust',
             },
           },
@@ -878,7 +878,7 @@ export const fargo: CityData = {
             website: 'https://20below.coffee',
             instagram: '@twentybelowcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Cozy coffee shop with exposed brick and warm lighting',
             },
           },
@@ -895,7 +895,7 @@ export const fargo: CityData = {
             website: 'https://atomiccoffeebar.com',
             instagram: '@atomiccoffeebar',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+              src: '',
               alt: 'Industrial-chic coffee shop with natural light',
             },
           },
@@ -911,7 +911,7 @@ export const fargo: CityData = {
             price: '$$',
             instagram: '@thundercoffeefargo',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Friendly neighborhood coffee shop with seasonal drinks',
             },
           },
@@ -927,7 +927,7 @@ export const fargo: CityData = {
             price: '$$',
             instagram: '@blackcoffeeandwafflebar',
             image: {
-              src: 'https://images.unsplash.com/photo-1504113888839-1c8eb50233d3?w=800&q=80',
+              src: '',
               alt: 'Fresh waffles and handcrafted coffee',
             },
           },
@@ -944,7 +944,7 @@ export const fargo: CityData = {
             website: 'https://babbscoffeehouse.com',
             instagram: '@babbscoffeehouse',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Seattle-themed coffee shop with classic espresso',
             },
           },
@@ -954,6 +954,8 @@ export const fargo: CityData = {
         id: 'far-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Cold cases on the prairie',
+        intro: 'On the flat expanse of the Red River Valley, Fargo\'s dark history is sparse but haunting—unsolved murders that span decades, bodies found in the river, and crimes that remain open long after the headlines fade.',
         items: [
           {
             id: 'far-dark-1',
@@ -1002,16 +1004,8 @@ export const fargo: CityData = {
             ],
             images: [
               {
-                src: '/images/dark-history/fargo/red-river-fargo-usgs-2008.jpg',
+                src: '/fargo/dark-history/billy-wolf.png',
                 alt: 'Red River of the North at Fargo, North Dakota, where Billy Wolf\'s body was discovered in 1978',
-              },
-              {
-                src: '/images/dark-history/fargo/red-river-flood-1997-gateway.jpg',
-                alt: 'Red River near Fargo during the 1997 flood, showing the river\'s proximity to the city',
-              },
-              {
-                src: '/images/dark-history/fargo/red-river-flood-1997-boats.jpg',
-                alt: 'Red River near Fargo, showing the waterway where the murder victim was found',
               },
             ],
           },
@@ -1057,12 +1051,8 @@ export const fargo: CityData = {
             ],
             images: [
               {
-                src: '/images/dark-history/fargo/historic-hospital-building.jpg',
+                src: '/fargo/dark-history/martel.png',
                 alt: 'Historic brick psychiatric hospital building, representative of 1940s-era state mental health facilities like North Dakota State Hospital',
-              },
-              {
-                src: '/images/dark-history/fargo/hospital-corridor-historical.jpg',
-                alt: 'Historic hospital corridor, evoking the institutional environment where Adolph Martel was killed in 1941',
               },
             ],
           },
@@ -1112,65 +1102,8 @@ export const fargo: CityData = {
             ],
             images: [
               {
-                src: '/images/dark-history/fargo/rural-north-dakota-prairie.jpg',
+                src: '/fargo/dark-history/phebus.png',
                 alt: 'Western North Dakota prairie landscape near Alexander, where 14-year-old Larry Phebus was found in 1963',
-              },
-            ],
-          },
-          {
-            id: 'far-dark-4',
-            type: 'dark-history',
-            category: 'forgotten',
-            year: '2010s',
-            title: 'Wells Fargo Corporate Fraud',
-            body: 'Fargo\'s namesake bank fueled national outrage with fake accounts and aggressive debt collection. Locally, Des Moines-linked tactics pressured workers into unattainable quotas, mirroring broader scandals that cost billions in fines. This "industrial-scale" misconduct tainted the city\'s financial heritage without resolution for affected employees.',
-            verdict: 'The bank paid billions in fines. Individual employees faced consequences while executives largely escaped accountability.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Wells Fargo Account Fraud Scandal',
-                publisher: 'U.S. Senate Committee on Banking',
-                year: '2016',
-                url: 'https://www.banking.senate.gov/hearings/an-examination-of-wells-fargo',
-              },
-              {
-                type: 'article',
-                title: 'Wells Fargo to Pay $3 Billion for Fake Account Scandal',
-                publisher: 'New York Times',
-                year: '2020',
-                url: 'https://www.nytimes.com/2020/02/21/business/wells-fargo-settlement.html',
-              },
-              {
-                type: 'article',
-                title: 'The Wells Fargo Fake Accounts Scandal',
-                publisher: 'NPR',
-                url: 'https://www.npr.org/sections/thetwo-way/wells-fargo-fake-accounts',
-              },
-              {
-                type: 'documentary',
-                title: 'Frontline: The Pension Gamble',
-                platform: 'PBS',
-                year: '2018',
-                url: 'https://www.pbs.org/wgbh/frontline/documentary/the-pension-gamble/',
-              },
-              {
-                type: 'video',
-                title: 'Wells Fargo CEO Testifies Before Congress',
-                platform: 'YouTube',
-                year: '2016',
-                url: 'https://www.youtube.com/watch?v=WellsFargoTestimony',
-              },
-              {
-                type: 'article',
-                title: 'Wells Fargo Scandal: A Timeline',
-                publisher: 'CNN Business',
-                url: 'https://www.cnn.com/wells-fargo-scandal-timeline',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/fargo/wells-fargo-stumpf-senate-testimony-2016.jpg',
-                alt: 'Wells Fargo CEO John Stumpf testifying before the Senate Banking Committee in September 2016 about the bank\'s fake accounts scandal',
               },
             ],
           },

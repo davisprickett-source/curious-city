@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { citySections, routes, type CitySection } from '@/lib/routes'
+import { citySections, routes, type CitySection, type AnyCitySection } from '@/lib/routes'
 
 // Re-export CitySection for backwards compatibility
 export type { CitySection }
@@ -7,7 +7,7 @@ export type { CitySection }
 interface CityNavProps {
   citySlug: string
   cityName: string
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
 }
 
 export function CityNav({ citySlug, cityName: _cityName, currentSection }: CityNavProps) {

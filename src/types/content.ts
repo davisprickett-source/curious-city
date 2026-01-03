@@ -224,8 +224,9 @@ export interface CuriosityContentItem extends BaseContentItem {
   }>
   source?: string
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
   }>
   location?: {
     name: string
@@ -267,8 +268,9 @@ export interface HiddenGemContentItem extends BaseContentItem {
   accessibility?: string
   source?: string
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
   }>
 }
 
@@ -305,8 +307,9 @@ export interface IconicSpotContentItem extends BaseContentItem {
   accessibility?: string
   source?: string
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
   }>
 }
 
@@ -489,8 +492,9 @@ export interface LostAndLovedContentItem extends BaseContentItem {
   }
   source?: string
   sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
     title: string
-    url: string
+    url?: string
   }>
 }
 

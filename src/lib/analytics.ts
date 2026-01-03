@@ -74,6 +74,19 @@ export const trackAdClick = (adPosition: string) => {
   event('ad_click', 'monetization', adPosition)
 }
 
+// Track ad impressions with network info
+export const trackAdImpression = (data: {
+  slotId: string
+  network: string
+  size: string
+}) => {
+  event(
+    'ad_impression',
+    'monetization',
+    `${data.network}:${data.size}:${data.slotId}`
+  )
+}
+
 export const trackExternalLink = (url: string, label: string) => {
   event('external_link', 'navigation', `${label}: ${url}`)
 }

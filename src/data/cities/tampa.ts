@@ -68,7 +68,7 @@ export const tampa: CityData = {
             body: 'José Gaspar, the pirate who gives Gasparilla festival its name, almost certainly never existed. The legend was invented in 1900 by a railroad developer to attract tourists. Yet every January, Tampa holds one of America\'s largest parades in his honor—complete with a full-scale pirate ship invading the harbor. The city leans into the fiction completely.',
             year: '1904',
             image: {
-              src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+              src: '',
               alt: 'Pirate ship on Tampa Bay',
               credit: 'Unsplash',
             },
@@ -86,7 +86,7 @@ export const tampa: CityData = {
             body: 'The José Martí Park in Ybor City was deeded to the Republic of Cuba in 1956 and remains sovereign Cuban soil to this day. Fidel Castro gave a speech there in 1955 to raise money for the revolution. It\'s one of the only pieces of foreign sovereign territory in the United States outside of embassies.',
             year: '1956',
             image: {
-              src: 'https://images.unsplash.com/photo-1509516249876-e4f0d0a7c4a9?w=800&q=80',
+              src: '',
               alt: 'José Martí Park in Ybor City',
               credit: 'Unsplash',
             },
@@ -121,7 +121,7 @@ export const tampa: CityData = {
             body: 'The Tampa Bay area has been extraordinarily lucky: no major hurricane has made direct landfall since 1921. The bay\'s funnel shape means storm surge from a Cat 4 or 5 could flood downtown under 20+ feet of water. Insurance models show it would be one of the costliest disasters in American history. Everyone knows the luck will eventually run out.',
             year: '1921',
             image: {
-              src: 'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=800&q=80',
+              src: '',
               alt: 'Tampa Bay coastline',
               credit: 'Unsplash',
             },
@@ -156,7 +156,7 @@ export const tampa: CityData = {
             title: 'Tampa is literally the Lightning Capital of North America',
             body: 'The Tampa Bay area averages 100+ thunderstorm days per year—more lightning strikes than anywhere else in the U.S. The combination of sea breezes from the Gulf and the Atlantic creates perfect conditions for afternoon storms. The NHL\'s Tampa Bay Lightning wasn\'t named randomly; lightning defines Tampa summers. Golfers learn to be off the course by 2pm.',
             image: {
-              src: 'https://images.unsplash.com/photo-1465070845512-2b5eb2f5e1f7?w=800&q=80',
+              src: '',
               alt: 'Lightning storm over Tampa Bay',
               credit: 'Unsplash',
             },
@@ -186,7 +186,7 @@ export const tampa: CityData = {
             title: 'Wild chickens have city protection',
             body: 'Descendants of chickens kept by 19th-century cigar workers still roam Ybor City\'s streets. They\'re protected by city ordinance—it\'s illegal to trap, harm, or kill them. The roosters crow at all hours. Some residents love them as living history; others consider them noisy, aggressive nuisances. Neither side has won.',
             image: {
-              src: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80',
+              src: '',
               alt: 'Chicken on city street',
               credit: 'Unsplash',
             },
@@ -243,7 +243,7 @@ export const tampa: CityData = {
             body: 'Before the Spanish-American War, Teddy Roosevelt\'s Rough Riders trained at a camp in Tampa before shipping out to Cuba. The Tampa Bay Hotel (now the University of Tampa) served as headquarters. Officers dined in the ornate Moorish Revival building while soldiers suffered in the Florida heat outside.',
             year: '1898',
             image: {
-              src: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=800&q=80',
+              src: '',
               alt: 'University of Tampa minarets',
               credit: 'Unsplash',
             },
@@ -895,7 +895,7 @@ export const tampa: CityData = {
             price: '$$$',
             website: 'https://www.jekyllhydepark.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Sophisticated speakeasy with intimate lighting',
             },
           },
@@ -910,7 +910,7 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://www.thebricksybor.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Open-air corner bar in historic Ybor City',
             },
           },
@@ -925,7 +925,7 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://independentbartampa.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+              src: '',
               alt: 'Belgian beer hall in converted gas station',
             },
           },
@@ -940,7 +940,7 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://www.cigarcitycider.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1568042651991-2d962e45c2ae?w=800&q=80',
+              src: '',
               alt: 'Craft cider flight with Florida ingredients',
             },
           },
@@ -954,7 +954,7 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9600, lng: -82.4420 },
             price: '$$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
+              src: '',
               alt: 'Intimate speakeasy with craft cocktails and desserts',
             },
           },
@@ -978,7 +978,7 @@ export const tampa: CityData = {
             price: '$$$',
             website: 'http://www.roosterandthetill.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+              src: '',
               alt: 'Farm-to-table modern American cuisine',
             },
           },
@@ -993,7 +993,7 @@ export const tampa: CityData = {
             price: '$',
             website: 'https://www.lasegundabakery.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+              src: '',
               alt: 'Fresh Cuban bread and pastries from historic bakery',
             },
           },
@@ -1008,7 +1008,7 @@ export const tampa: CityData = {
             price: '$$$$',
             website: 'https://bernssteakhouse.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+              src: '',
               alt: 'Legendary dry-aged steak from iconic steakhouse',
             },
           },
@@ -1023,7 +1023,7 @@ export const tampa: CityData = {
             price: '$$$',
             website: 'https://ulele.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+              src: '',
               alt: 'Charbroiled oysters from riverside restaurant',
             },
           },
@@ -1038,7 +1038,7 @@ export const tampa: CityData = {
             website: 'https://www.westtampasandwichshoprestaurant.com/',
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=800&q=80',
+              src: '',
               alt: 'Authentic Cuban sandwich',
             },
           },
@@ -1064,7 +1064,7 @@ export const tampa: CityData = {
             website: 'https://buddybrew.com',
             instagram: '@buddybrewcoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Bright specialty coffee shop with espresso bar',
             },
           },
@@ -1081,7 +1081,7 @@ export const tampa: CityData = {
             website: 'https://blindtigercafe.com',
             instagram: '@blindtigercafe',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Speakeasy-style coffee roaster in Ybor City',
             },
           },
@@ -1098,7 +1098,7 @@ export const tampa: CityData = {
             website: 'https://kahwacoffee.com',
             instagram: '@kahwacoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Tampa\'s premier local coffee roaster',
             },
           },
@@ -1114,7 +1114,7 @@ export const tampa: CityData = {
             price: '$$',
             instagram: '@thelabcoffeetampa',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Industrial roastery with experimental coffee',
             },
           },
@@ -1131,7 +1131,7 @@ export const tampa: CityData = {
             website: 'https://hotelhaya.com',
             instagram: '@cafequiquiriqui',
             image: {
-              src: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+              src: '',
               alt: 'Rich Cuban café con leche in historic Ybor',
             },
           },
@@ -1148,7 +1148,7 @@ export const tampa: CityData = {
             website: 'https://shortwavecoffee.com',
             instagram: '@shortwavecoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+              src: '',
               alt: 'Modern waterfront coffee shop with harbor views',
             },
           },
@@ -1158,20 +1158,9 @@ export const tampa: CityData = {
         id: 'tam-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Sunshine worn like a mask',
+        intro: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The city\'s dark history isn\'t hidden—it\'s just overshadowed by better marketing.',
         items: [
-          {
-            id: 'tam-dark-0',
-            type: 'dark-history',
-            category: 'mystery',
-            year: 'Overview',
-            title: 'The shadow side of the Sunshine State',
-            body: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The city\'s dark history isn\'t hidden—it\'s just overshadowed by better marketing.',
-            verdict: 'A catalogue of violence enabled by Florida\'s transience, its swamps, and its long tradition of looking the other way.',
-            location: {
-              name: 'Across Tampa Bay',
-              stillExists: true,
-            },
-          },
           {
             id: 'tam-dark-1',
             type: 'dark-history',

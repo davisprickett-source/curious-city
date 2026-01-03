@@ -81,6 +81,12 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-6">
               <Link
+                href="/sitemap-page"
+                className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
+              >
+                Sitemap
+              </Link>
+              <Link
                 href="/about"
                 className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
               >

@@ -1,7 +1,7 @@
 'use client'
 
 import { useSearchParams, usePathname } from 'next/navigation'
-import { routes, type CitySection } from '@/lib/routes'
+import { routes, type AnyCitySection } from '@/lib/routes'
 
 type PageType = 'events' | 'scenes' | 'other'
 
@@ -17,9 +17,12 @@ export function useNavigation() {
    */
   const buildCityUrl = (
     citySlug: string,
-    section: CitySection = 'history',
+    section?: AnyCitySection,
     preserveFilters = true
   ): string => {
+    // If no section provided, return city overview page
+    if (!section) return routes.city(citySlug)
+
     const basePath = routes.citySection(citySlug, section)
 
     if (!preserveFilters) return basePath
@@ -39,7 +42,7 @@ export function useNavigation() {
    */
   const buildPageUrl = (
     citySlug: string,
-    section: CitySection,
+    section?: AnyCitySection,
     preserveFilters = true
   ): string => {
     return buildCityUrl(citySlug, section, preserveFilters)
@@ -73,7 +76,7 @@ export function useNavigation() {
 /**
  * Get page type from section
  */
-function getPageType(section?: CitySection): PageType {
+function getPageType(section?: AnyCitySection): PageType {
   if (!section) return 'other'
   if (section === 'events') return 'events'
   if (section === 'scenes') return 'scenes'
@@ -83,30 +86,34 @@ function getPageType(section?: CitySection): PageType {
 /**
  * Extract current section from pathname
  */
-function getCurrentSection(pathname: string): CitySection | undefined {
-  // Pattern: /[city]/[section] or /[city] (which is history)
+function getCurrentSection(pathname: string): AnyCitySection | undefined {
+  // Pattern: /[city]/[section] or /[city]
   const segments = pathname.split('/').filter(Boolean)
 
-  if (segments.length === 1) return 'history' // Root city page
+  if (segments.length === 1) return undefined // Root city page
 
   const sectionCandidate = segments[1]
 
-  // Check if it's a valid section
-  const validSections: CitySection[] = [
-    'history',
+  // Check if it's a valid section (main or legacy)
+  const validSections: AnyCitySection[] = [
+    'articles',
+    'discover',
     'events',
+    'guide',
+    'history',
     'scenes',
     'coffee-shops',
     'bars',
     'restaurants',
+    'local-favorites',
     'hidden-gems',
     'dark-history',
     'lost-and-loved',
     'curiosities',
   ]
 
-  return validSections.includes(sectionCandidate as CitySection)
-    ? (sectionCandidate as CitySection)
+  return validSections.includes(sectionCandidate as AnyCitySection)
+    ? (sectionCandidate as AnyCitySection)
     : undefined
 }
 

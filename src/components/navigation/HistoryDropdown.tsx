@@ -59,7 +59,7 @@ export function HistoryDropdown() {
               {cityHistory.map((article) => (
                 <Link
                   key={article.slug}
-                  href={routes.cityHistory(article.citySlug, article.slug)}
+                  href={routes.cityArticle(article.citySlug, article.slug)}
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
                 >
@@ -72,7 +72,7 @@ export function HistoryDropdown() {
           <div className="my-2 border-t border-neutral-100" />
 
           <Link
-            href={routes.history()}
+            href={routes.categoryHistory()}
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-1 px-4 py-2 text-sm text-accent-600 hover:bg-accent-50 font-medium"
           >

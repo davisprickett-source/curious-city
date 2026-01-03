@@ -77,7 +77,7 @@ export const colorado_springs: CityData = {
                 alt: 'Tesla sitting in his Colorado Springs laboratory with massive electrical discharge',
               },
               {
-                src: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80',
+                src: '',
                 alt: 'Interior of Tesla\'s Colorado Springs laboratory showing equipment',
               },
             ],
@@ -113,7 +113,7 @@ export const colorado_springs: CityData = {
                 alt: 'NORAD volunteers tracking Santa on Christmas Eve at Peterson Space Force Base',
               },
               {
-                src: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?w=800&q=80',
+                src: '',
                 alt: 'Original 1955 Sears newspaper ad with misprinted phone number that started NORAD Tracks Santa',
               },
             ],
@@ -166,7 +166,7 @@ export const colorado_springs: CityData = {
                 alt: 'View from Pikes Peak summit showing purple mountains and plains, circa 1890s',
               },
               {
-                src: 'https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800&q=80',
+                src: '',
                 alt: 'Original manuscript of America the Beautiful by Katharine Lee Bates',
               },
             ],
@@ -233,7 +233,7 @@ export const colorado_springs: CityData = {
                 alt: 'Historic 1891 Pikes Peak Cog Railway original train',
               },
               {
-                src: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80',
+                src: '',
                 alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
               },
             ],
@@ -281,7 +281,7 @@ export const colorado_springs: CityData = {
                 alt: 'Interior of Air Force Academy Chapel showing dramatic stained glass',
               },
               {
-                src: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=800&q=80',
+                src: '',
                 alt: 'Light streaming through stained glass at Air Force Academy Chapel',
               },
             ],
@@ -369,7 +369,7 @@ export const colorado_springs: CityData = {
             title: 'Olympic athletes train at altitude on purpose',
             body: 'The U.S. Olympic & Paralympic Training Center chose Colorado Springs specifically for its 6,035-foot elevation. Training at altitude increases red blood cell production, improving oxygen delivery when athletes compete at lower elevations. The 35-acre complex has produced hundreds of Olympic medalists.',
             image: {
-              src: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80',
+              src: '',
               alt: 'Olympic training facility',
             },
             source: 'United States Olympic Committee',
@@ -395,7 +395,7 @@ export const colorado_springs: CityData = {
                 alt: 'Kissing Camels rock formation at Garden of the Gods',
               },
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                src: '',
                 alt: 'Cathedral Spires at sunrise, Garden of the Gods',
               },
             ],
@@ -445,7 +445,7 @@ export const colorado_springs: CityData = {
               'Towering red sandstone formations against the backdrop of Pikes Peak. This National Natural Landmark features 300-foot high rock spires that have drawn visitors since 1859. The park offers 15 miles of trails, rock climbing, and year-round access. The Kissing Camels formation is the most photographed.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1598970434925-c9d7164c76c6?w=800&q=80',
+                src: '',
                 alt: 'Red rock formations at Garden of the Gods with Pikes Peak in background',
               },
             ],
@@ -465,7 +465,7 @@ export const colorado_springs: CityData = {
               'America\'s Mountain — the 14,115-foot peak that inspired "America the Beautiful." You can drive the scenic 19-mile Pikes Peak Highway, take the Cog Railway, or hike the challenging Barr Trail. The summit offers 360-degree views across Colorado and into New Mexico. Expect altitude sickness and unpredictable weather.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1552085369-e64a9fa3c4fd?w=800&q=80',
+                src: '',
                 alt: 'Pikes Peak summit with scenic mountain views',
               },
             ],
@@ -485,7 +485,7 @@ export const colorado_springs: CityData = {
               'One of Colorado\'s most brutal hikes — 2,744 steps climbing 2,000 feet in less than a mile. Originally a cable car track built in 1907, it\'s now a grueling stairmaster workout with grades up to 68%. The average climb takes 1-2 hours. Summit views reward those who make it. Reservations required.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
+                src: '',
                 alt: 'Steep steps of the Manitou Incline climbing mountainside',
               },
             ],
@@ -505,7 +505,7 @@ export const colorado_springs: CityData = {
               'A series of seven cascading waterfalls tumbling 181 feet in a box canyon. Climb the 224 steps alongside the falls or take the elevator. The Pillars of Hercules frame the canyon entrance. Night illumination with colored lights creates a magical atmosphere. Listed as one of the "Grandest Mile of Scenery in Colorado."',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=800&q=80',
+                src: '',
                 alt: 'Seven Falls cascading down canyon walls',
               },
             ],
@@ -525,7 +525,7 @@ export const colorado_springs: CityData = {
               'A modernist masterpiece with 17 aluminum spires soaring 150 feet. This architectural icon features 24,000 pieces of stained glass and houses Protestant, Catholic, Jewish, and Buddhist chapels. Designed by Walter Netsch and completed in 1962. The pews incorporate airplane propeller ends and fighter wing aluminum.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1612015670817-0127784d702e?w=800&q=80',
+                src: '',
                 alt: 'Distinctive spires of Air Force Academy Cadet Chapel',
               },
             ],
@@ -554,7 +554,7 @@ export const colorado_springs: CityData = {
               'Nine railroad tunnels carved through granite cliffs in the 1890s for the "Short Line" connecting Colorado Springs to Cripple Creek gold mines. Three have collapsed, including the infamous Tunnel #3. Local legends speak of ghostly children and miners who died in construction accidents. The surviving tunnels offer eerie mountain drives.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                src: '',
                 alt: 'Abandoned railroad tunnel entrance in mountain wilderness',
               },
             ],
@@ -573,7 +573,7 @@ export const colorado_springs: CityData = {
               'Tiny teepee-like houses (Gardiner Sanitary Tents) built for TB patients when one-third of Colorado Springs\' population had tuberculosis in the 1880s-1940s. These small canvas-and-wood structures offered open-air treatment. Now scattered throughout neighborhoods, repurposed as garden sheds, art studios, and bus stops. Most people don\'t recognize their significance.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1542327534-e96b1e69ffe6?w=800&q=80',
+                src: '',
                 alt: 'Historic tuberculosis treatment tent structure',
               },
             ],
@@ -592,7 +592,7 @@ export const colorado_springs: CityData = {
               'A 3,000-square-foot miniature city at 1:6 scale depicting gritty urban neighborhoods with 500+ hand-sculpted characters, working streetlights, holograms, and visual illusions. Created by vagabond artist Michael Garman over decades. Includes a tiny movie theater playing Casablanca. Interactive scavenger hunt reveals hidden details.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80',
+                src: '',
                 alt: 'Detailed miniature city with tiny buildings and characters',
               },
             ],
@@ -612,7 +612,7 @@ export const colorado_springs: CityData = {
               'Ruins of the Modern Woodmen of America Sanatorium (1909-1947), once internationally recognized as one of the most restorative TB healing centers. Located in the shadow of Blodgett Peak, it served 12,000 patients when Colorado Springs was known as the "World\'s Sanatorium." Foundation remnants and stone walls remain.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1542327534-e96b1e69ffe6?w=800&q=80',
+                src: '',
                 alt: 'Stone ruins of abandoned tuberculosis sanatorium',
               },
             ],
@@ -631,7 +631,7 @@ export const colorado_springs: CityData = {
               'Elaborate steel wind sculptures (30-50 feet tall) created by artist Starr Kempf (1917-1995) in his residential front yard. Some power spotlights, one triggers music. Bird and weather vane forms spin with mountain winds. Three sculptures moved to Creekwalk park. Requires insider knowledge to find.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80',
+                src: '',
                 alt: 'Large kinetic wind sculpture spinning against sky',
               },
             ],
@@ -650,7 +650,7 @@ export const colorado_springs: CityData = {
               'Colorado\'s oldest aviation museum housed in 1928-1941 historic airfield structures on the National Register. Focuses on Air Defense Command and Space Force history. Located on Peterson Space Force Base — requires advance reservation minimum 1 day prior. Strict civilian access procedures. Open only Wed-Fri 10am-3pm.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1583267746897-c5df1eca5a8d?w=800&q=80',
+                src: '',
                 alt: 'Historic military aircraft on display',
               },
             ],
@@ -678,7 +678,7 @@ export const colorado_springs: CityData = {
                 alt: 'Close-up of layered clay formations showing bands of white, pink, and purple',
               },
               {
-                src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
+                src: '',
                 alt: 'Hiking trail winding through Paint Mines badlands landscape',
               },
             ],
@@ -698,7 +698,7 @@ export const colorado_springs: CityData = {
               'World-class bug museum with nearly 8,000 exotic insect specimens from James May\'s collection. Giant roadside beetle marks the location. Housed in what looks like an RV park, it belies its world-class quality with kitschy exterior. Features rare specimens from around the globe including massive tropical beetles and butterflies.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1538090992501-fe2e0e93c8b3?w=800&q=80',
+                src: '',
                 alt: 'Display cases with mounted insect specimens',
               },
             ],
@@ -718,7 +718,7 @@ export const colorado_springs: CityData = {
               'Underground speakeasy in downtown Colorado Springs with mysterious, whimsical Alice in Wonderland atmosphere. Creative New American dishes served in intimate below-street setting. Requires insider knowledge to find the entrance. Dim lighting, craft cocktails, and quirky décor create immersive experience.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Dimly lit underground bar with vintage décor',
               },
             ],
@@ -738,7 +738,7 @@ export const colorado_springs: CityData = {
               'Nearly 500 handmade character dolls and marionettes created by Jan and Bob Simpich from 1953-2007. Delicate carolers and Santa figures showcase craftsmanship. Closed in 2021 after 70 years, reopened online 2024. Must call 719-465-2492 for appointments. Housed in historic Old Colorado City building.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1588375823768-6781fc82f5e4?w=800&q=80',
+                src: '',
                 alt: 'Handmade vintage dolls on display',
               },
             ],
@@ -763,7 +763,7 @@ export const colorado_springs: CityData = {
                 caption: 'Nine architectural styles in one building',
               },
               {
-                src: 'https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=800&q=80',
+                src: '',
                 alt: 'Grand staircase inside Miramont Castle with ornate woodwork',
                 caption: 'Victorian grandeur inside the castle',
               },
@@ -784,7 +784,7 @@ export const colorado_springs: CityData = {
               '1908 building with 5,000+ tile and terra cotta components — one of the most important tile installations in the United States. Original Van Briggle pottery factory operated 1908-1968. Now houses Colorado College Facilities Services. Pottery festival tours available. Features Art Nouveau designs in distinctive matte glazes.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1578749556568-bc2c40e32be2?w=800&q=80',
+                src: '',
                 alt: 'Historic pottery building with decorative tilework',
               },
             ],
@@ -803,7 +803,7 @@ export const colorado_springs: CityData = {
               '2,000-acre gated mountain community above Manitou Springs named for quartz and gemstone crystals. Miarolitic cavities in pegmatites contain amazonite, smoky quartz, and fluorite. One of Colorado\'s oldest collecting localities. Private gated community with toll road access — collection only allowed on National Forest land outside gates.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1610112458057-68e5f5e0d0d8?w=800&q=80',
+                src: '',
                 alt: 'Clear quartz crystals and minerals in rock matrix',
               },
             ],
@@ -822,7 +822,7 @@ export const colorado_springs: CityData = {
               'National Register site depicting four time periods: 1775 American Indian camp, 1860s homestead, 1880s ranch, and 1907 Edwardian estate. "Half-hidden among evergreens" adjacent to Garden of the Gods, most visitors miss it entirely. Living history interpreters demonstrate period-appropriate activities. Donated by General William Jackson Palmer.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800&q=80',
+                src: '',
                 alt: 'Historic ranch buildings with mountain backdrop',
               },
             ],
@@ -842,7 +842,7 @@ export const colorado_springs: CityData = {
               'Queen Anne mansion (1883) with scaly mythological dragon\'s tail pointing skyward from the roofline. Oldest private club west of Mississippi. Architectural detail most people never notice. Dragon signifies "determination to guard the male sanctum" of this historic gentlemen\'s club. Still operates as private club today.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+                src: '',
                 alt: 'Historic Victorian mansion with ornate architecture',
               },
             ],
@@ -866,7 +866,7 @@ export const colorado_springs: CityData = {
                 caption: 'A time capsule from 1932',
               },
               {
-                src: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=800&q=80',
+                src: '',
                 alt: 'Vintage fortune-telling machine at Penny Arcade',
                 caption: 'Antique fortune tellers in glass cases',
               },
@@ -921,7 +921,7 @@ export const colorado_springs: CityData = {
             price: '$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1574073456527-c4b5522b0eb7?w=800&q=80',
+                src: '',
                 alt: 'Dive Inn interior with pool tables and neon beer signs',
                 caption: 'No pretense — just cheap drinks and pool',
               },
@@ -944,7 +944,7 @@ export const colorado_springs: CityData = {
                 caption: 'Craft cocktails with Colorado ingredients',
               },
               {
-                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                src: '',
                 alt: 'Principal\'s Office bar with creative cocktail ingredients',
                 caption: 'Mixology as craft, not pretense',
               },
@@ -968,7 +968,7 @@ export const colorado_springs: CityData = {
                 caption: 'Brewing inside a beautifully restored 1901 building',
               },
               {
-                src: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80',
+                src: '',
                 alt: 'Copper brewing equipment visible behind glass at Phantom Canyon',
                 caption: 'House-brewed beer since 1993',
               },
@@ -1001,7 +1001,7 @@ export const colorado_springs: CityData = {
                 alt: 'Switchback Coffee Roasters downtown location interior with roasting equipment',
               },
               {
-                src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+                src: '',
                 alt: 'Pour-over coffee being brewed at Switchback Coffee',
               },
             ],
@@ -1016,7 +1016,7 @@ export const colorado_springs: CityData = {
             coordinates: { lat: 38.8354, lng: -104.8248 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1534778101976-62847782c213?w=800&q=80',
+              src: '',
               alt: 'Perfectly crafted cortado with latte art',
             },
           },
@@ -1030,7 +1030,7 @@ export const colorado_springs: CityData = {
             coordinates: { lat: 38.8322, lng: -104.8206 },
             price: '$',
             image: {
-              src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80',
+              src: '',
               alt: 'Cozy coffee lounge with eclectic decor',
             },
           },
@@ -1044,7 +1044,7 @@ export const colorado_springs: CityData = {
             coordinates: { lat: 38.8188, lng: -104.8253 },
             price: '$$',
             image: {
-              src: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+              src: '',
               alt: 'Cold brew coffee in converted school building cafe',
             },
           },
@@ -1075,7 +1075,7 @@ export const colorado_springs: CityData = {
                 caption: 'Legendary burger, meticulously executed',
               },
               {
-                src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+                src: '',
                 alt: 'The Rabbit Hole underground dining room with exposed brick',
                 caption: 'Stylish underground space',
               },
@@ -1099,7 +1099,7 @@ export const colorado_springs: CityData = {
                 caption: 'Mac and cheese made with love',
               },
               {
-                src: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800&q=80',
+                src: '',
                 alt: 'Fried chicken plate with collard greens and cornbread at Shuga\'s',
                 caption: 'Real Southern soul food',
               },
@@ -1123,7 +1123,7 @@ export const colorado_springs: CityData = {
                 caption: 'Authentic Neapolitan pizza, VPN-certified',
               },
               {
-                src: 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800&q=80',
+                src: '',
                 alt: 'Wood-fired pizza oven at 900°F at Pizzeria Rustica',
                 caption: 'Fired at 900°F in a wood-burning oven',
               },
@@ -1142,7 +1142,7 @@ export const colorado_springs: CityData = {
             website: 'https://thefamoussteakhouse.com',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80',
+                src: '',
                 alt: 'Perfectly seared ribeye steak at The Famous steakhouse',
                 caption: 'Ribeye done right — no gimmicks needed',
               },
@@ -1161,7 +1161,7 @@ export const colorado_springs: CityData = {
             website: 'https://adamsmountaincafe.com',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&q=80',
+                src: '',
                 alt: 'Korean-inspired bowl with fresh vegetables at Adam\'s Mountain Cafe',
                 caption: 'Unexpected global flavors in the mountains',
               },
@@ -1195,7 +1195,7 @@ export const colorado_springs: CityData = {
                 caption: 'Minimalist design lets the coffee speak for itself',
               },
               {
-                src: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=80',
+                src: '',
                 alt: 'Barista pouring cortado at Loyal Coffee',
                 caption: 'Impeccable espresso technique',
               },
@@ -1220,7 +1220,7 @@ export const colorado_springs: CityData = {
                 caption: 'A converted 1916 school turned coffee haven',
               },
               {
-                src: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&q=80',
+                src: '',
                 alt: 'Coffee roasting equipment at Story Coffee',
                 caption: 'Roasting beans on-site',
               },
@@ -1245,7 +1245,7 @@ export const colorado_springs: CityData = {
                 caption: 'Mountain-town soul without pretension',
               },
               {
-                src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+                src: '',
                 alt: 'Pour-over coffee being brewed at Switchback Coffee',
                 caption: 'Single-origin pour-overs',
               },
@@ -1265,7 +1265,7 @@ export const colorado_springs: CityData = {
             instagram: '@wayfindercoffeeco',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
+                src: '',
                 alt: 'Wayfinder Coffee with mountaineering aesthetic and maps on walls',
                 caption: 'Adventure-inspired without being kitschy',
               },
@@ -1284,7 +1284,7 @@ export const colorado_springs: CityData = {
             instagram: '@building3coffee',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80',
+                src: '',
                 alt: 'Building 3 Coffee inside Ivywild School with high ceilings',
                 caption: 'Industrial-chic inside a converted school',
               },
@@ -1304,7 +1304,7 @@ export const colorado_springs: CityData = {
             instagram: '@jivescoffeelounge',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+                src: '',
                 alt: 'Jives Coffee Lounge with eclectic decor and local art',
                 caption: 'A community hub, not just a coffee shop',
               },
@@ -1434,6 +1434,7 @@ export const colorado_springs: CityData = {
         id: 'cos-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Violence beneath the postcard scenery',
         intro: 'Colorado Springs sits in the shadow of Pikes Peak, a city of military precision, evangelical fervor, and stark natural beauty. But the same mountains that draw tourists also hide crimes. The Rampart Range has witnessed murders, mysterious disappearances, and stray bullets falling from the sky. From serial killers to unsolved ax murders to wildfires that consumed neighborhoods, this city\'s dark history reveals the violence lurking beneath the postcard scenery.',
         items: [
           {
@@ -1940,7 +1941,7 @@ export const colorado_springs: CityData = {
                 caption: 'Kissing Camels formation',
               },
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                src: '',
                 alt: 'Cathedral Spires at sunrise, Garden of the Gods',
                 caption: 'Cathedral Spires at golden hour',
               },
@@ -1962,7 +1963,7 @@ export const colorado_springs: CityData = {
                 caption: 'Light streaming through stained glass',
               },
               {
-                src: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=800&q=80',
+                src: '',
                 alt: 'Light streaming through stained glass at Air Force Academy Chapel',
                 caption: 'A sanctuary of light and geometry',
               },
@@ -1984,7 +1985,7 @@ export const colorado_springs: CityData = {
                 caption: 'The view that inspired "America the Beautiful"',
               },
               {
-                src: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80',
+                src: '',
                 alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
                 caption: 'Panoramic windows frame the journey',
               },
@@ -2023,7 +2024,7 @@ export const colorado_springs: CityData = {
                 caption: 'Millions of years of geological history in every layer',
               },
               {
-                src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
+                src: '',
                 alt: 'Hiking trail winding through Paint Mines badlands landscape',
                 caption: 'Colorado\'s hidden badlands',
               },
@@ -2035,7 +2036,7 @@ export const colorado_springs: CityData = {
             category: 'historic',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+                src: '',
                 alt: 'The Broadmoor resort reflecting in Cheyenne Lake with mountains behind',
                 caption: 'The Broadmoor — a century of Colorado elegance',
               },

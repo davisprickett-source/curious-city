@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { routes, type CitySection } from '@/lib/routes'
+import { routes, type AnyCitySection } from '@/lib/routes'
 import { CitySelector } from './CitySelector'
 import { PageSelector } from './PageSelector'
 import { FilterBar } from './FilterBar'
@@ -13,7 +13,7 @@ interface UnifiedNavProps {
   // Context
   citySlug?: string
   cityName?: string
-  currentSection?: CitySection
+  currentSection?: AnyCitySection
 
   // Filter state (from URL searchParams)
   eventView?: EventView
@@ -55,7 +55,11 @@ export function UnifiedNav({
             href={routes.home()}
             className="flex items-center font-semibold text-neutral-900 hover:text-accent-600 transition-colors tracking-tight"
           >
-            <span className="text-lg">Curious City</span>
+            <img
+              src="/logos/CCs.png"
+              alt="Curious City"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* City and Page Selectors */}
@@ -104,7 +108,11 @@ export function UnifiedNav({
             href={routes.home()}
             className="flex items-center font-semibold text-neutral-900 tracking-tight"
           >
-            <span className="text-lg">Curious City</span>
+            <img
+              src="/logos/CCs.png"
+              alt="Curious City"
+              className="h-8 w-auto"
+            />
           </Link>
           <MobileNavMenu
             citySlug={citySlug}

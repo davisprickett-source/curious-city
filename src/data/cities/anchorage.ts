@@ -69,11 +69,11 @@ export const anchorage: CityData = {
             year: '1951',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+                src: '',
                 alt: 'Remote Alaska wilderness where Cold War operations took place',
               },
               {
-                src: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&q=80',
+                src: '',
                 alt: 'Aerial view of remote Alaska terrain',
               }
             ],
@@ -91,11 +91,11 @@ export const anchorage: CityData = {
             body: 'Turnagain Arm, just south of Anchorage, has a bore tide—a tidal wave that rushes up the inlet twice daily. Surfers ride it for miles, but the silty water hides glacier-fed quicksand that has killed unprepared people. The tide can reach 6 feet and move at 15 mph. Local surfers know exactly which spots won\'t swallow them.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1520208422220-d12a3c588e6c?w=1200&q=80',
+                src: '',
                 alt: 'Alaska coastal inlet with mountains',
               },
               {
-                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80',
+                src: '',
                 alt: 'Turnagain Arm landscape where bore tide occurs',
               }
             ],
@@ -127,7 +127,7 @@ export const anchorage: CityData = {
                 alt: 'Massive ground displacement from 1964 earthquake',
               },
               {
-                src: 'https://images.unsplash.com/photo-1534328897194-aa13df6d40f3?w=1200&q=80',
+                src: '',
                 alt: 'Anchorage downtown area',
               }
             ],
@@ -157,11 +157,11 @@ export const anchorage: CityData = {
             body: 'Anchorage\'s 1,500 urban moose have adapted to humans—and become more confrontational because of it. Moose attacks on people average 5-10 per year in Anchorage alone, more than bear attacks statewide. The city employs a dedicated "moose patrol" to relocate problem animals. Calving season (May-June) is particularly dangerous.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1551974370-bc2d36a8dc41?w=1200&q=80',
+                src: '',
                 alt: 'Moose in Alaska wilderness',
               },
               {
-                src: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=1200&q=80',
+                src: '',
                 alt: 'Wildlife in Alaska urban setting',
               }
             ],
@@ -184,15 +184,15 @@ export const anchorage: CityData = {
             body: 'Lake Hood Seaplane Base averages 190+ flights per day in summer—more than many regional airports. For hundreds of Alaska communities with no roads, floatplanes are the only connection to the outside world. At Lake Hood, you can watch pilots load everything from groceries to building materials into planes designed to land on water.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80',
+                src: '',
                 alt: 'Floatplane on Alaska lake',
               },
               {
-                src: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=1200&q=80',
+                src: '',
                 alt: 'Seaplane in Alaska wilderness',
               },
               {
-                src: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=1200&q=80',
+                src: '',
                 alt: 'Alaska aviation landscape',
               }
             ],
@@ -236,11 +236,11 @@ export const anchorage: CityData = {
             year: '1964',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1473496169904-658ba7f3002f?w=1200&q=80',
+                src: '',
                 alt: 'Alaska landscape terrain',
               },
               {
-                src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80',
+                src: '',
                 alt: 'Alaska natural landscape',
               }
             ],
@@ -283,11 +283,11 @@ export const anchorage: CityData = {
             body: 'Anchorage sits beneath the "auroral oval" where the northern lights are most visible. On average, aurora is visible 243 nights per year—though light pollution from the city means serious viewers drive north to Talkeetna or Fairbanks. The best viewing is from September through March when nights are actually dark.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=1200&q=80',
+                src: '',
                 alt: 'Northern lights aurora borealis over Alaska',
               },
               {
-                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=1200&q=80',
+                src: '',
                 alt: 'Vivid aurora display in Alaska sky',
               }
             ],
@@ -350,11 +350,11 @@ export const anchorage: CityData = {
             description: 'The most-climbed mountain in Alaska, with panoramic views of the city, Cook Inlet, and the Alaska Range. Steep but doable for most fitness levels.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=1200&q=80',
+                src: '',
                 alt: 'View from Flattop Mountain overlooking Anchorage and Cook Inlet',
               },
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+                src: '',
                 alt: 'Hikers on Flattop Mountain trail',
               }
             ],
@@ -372,11 +372,11 @@ export const anchorage: CityData = {
             description: 'An 11-mile paved trail from downtown to Kincaid Park, hugging the coast with views of the inlet and mountains. Moose sightings are common. Popular with bikers, runners, and skiers.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=80',
+                src: '',
                 alt: 'Tony Knowles Coastal Trail with Cook Inlet and mountains',
               },
               {
-                src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80',
+                src: '',
                 alt: 'Cyclists on the Coastal Trail',
               }
             ],
@@ -394,11 +394,11 @@ export const anchorage: CityData = {
             description: 'World-class museum covering Alaska Native cultures, Arctic science, and contemporary art. The Smithsonian Arctic Studies Center inside has an exceptional collection of Native artifacts.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1566127992631-af28211df5eb?w=1200&q=80',
+                src: '',
                 alt: 'Anchorage Museum exterior',
               },
               {
-                src: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=800&q=80',
+                src: '',
                 alt: 'Anchorage Museum building and plaza',
               }
             ],
@@ -417,11 +417,11 @@ export const anchorage: CityData = {
             description: 'The world\'s busiest seaplane base, right next to the airport. Watch floatplanes take off and land from the shore. You can book flightseeing tours from here.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=80',
+                src: '',
                 alt: 'Floatplanes docked at Lake Hood Seaplane Base',
               },
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                src: '',
                 alt: 'Floatplane on Lake Hood',
               }
             ],
@@ -447,7 +447,7 @@ export const anchorage: CityData = {
             description: 'A 244-acre abandoned Nike Hercules missile battery atop Mount Gordon Lyon, operational 1959-1979 as part of the "Rings of Steel" defense against Soviet attacks. One of the most complete Nike sites left in the U.S. Guided tours only through military base.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=800&q=80',
+                src: '',
                 alt: 'Abandoned Cold War military installation on mountaintop',
               },
             ],
@@ -465,7 +465,7 @@ export const anchorage: CityData = {
             description: 'Over 100 brightly colored spirit houses blending Dena\'ina Athabascan and Russian Orthodox burial traditions. Bodies buried with blankets, then spirit houses painted in family colors placed 40 days later. Left to decay naturally per Athabascan tradition. Site settled over 800 years ago.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1516894090-077f5c5b8c2e?w=800&q=80',
+                src: '',
                 alt: 'Colorful spirit houses in cemetery setting',
               },
             ],
@@ -483,7 +483,7 @@ export const anchorage: CityData = {
             description: 'Site of catastrophic 1964 landslide where 75 houses in Turnagain Heights slid into Cook Inlet during the 9.2 magnitude quake. Ground remains visibly uneven with rippling hills showing soil liquefaction effects nearly 60 years later.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1578527827171-2ce45aa85dca?w=800&q=80',
+                src: '',
                 alt: 'Uneven terrain showing earthquake damage effects',
               },
             ],
@@ -502,7 +502,7 @@ export const anchorage: CityData = {
             description: 'Incredibly intimate museum in a tiny yellow house in Chugiak run by Svaja Worthington, showcasing Lithuanian heritage through family heirlooms, traditional clothing, and artifacts. Also serves as Honorary Consulate of Lithuania.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1574604111735-cd8d0c26e55a?w=800&q=80',
+                src: '',
                 alt: 'Small historic house museum with traditional artifacts',
               },
             ],
@@ -520,7 +520,7 @@ export const anchorage: CityData = {
             description: 'Over 3,000 sq ft of law enforcement history including a restored 1952 Hudson Hornet patrol car, antique radios, wire-tapping equipment, shackles, vintage uniforms, and badges from Territorial period through Statehood. Alaska\'s only collection of historical law enforcement memorabilia.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=800&q=80',
+                src: '',
                 alt: 'Historic police car and law enforcement memorabilia',
               },
             ],
@@ -544,7 +544,7 @@ export const anchorage: CityData = {
             description: 'Tree-covered overlook gazing hundreds of feet down a sheer cliff to Campbell Creek crashing through a narrow canyon. One of Anchorage\'s best-kept secrets. Not well-marked.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                src: '',
                 alt: 'Creek flowing through narrow canyon with steep cliffs',
               },
             ],
@@ -562,7 +562,7 @@ export const anchorage: CityData = {
             description: 'At 2,200 feet elevation with views of Anchorage Bowl and five mountain ranges - possibly the BEST aurora viewing spot in Anchorage. Overlook provides northern exposure away from city lights. Best viewing near midnight August-April.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=800&q=80',
+                src: '',
                 alt: 'Mountain overlook with aurora borealis in night sky',
               },
             ],
@@ -580,7 +580,7 @@ export const anchorage: CityData = {
             description: '10-minute walk from downtown to watch king salmon (May-June) and silver salmon (July-Sept) at fish ladders and spillway. One of best urban salmon fishing spots in America. Rent gear on-site.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+                src: '',
                 alt: 'Salmon swimming upstream in urban creek setting',
               },
             ],
@@ -599,7 +599,7 @@ export const anchorage: CityData = {
             description: 'Wave up to 10 feet high thundering into Turnagain Arm at 6-24 mph twice daily during extreme tides. Local surfers ride for miles. Best during new/full moons, especially fall equinox. Arrives ~1 hr 15 min after low tide at Beluga Point.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80',
+                src: '',
                 alt: 'Tidal bore wave rushing through narrow inlet',
               },
             ],
@@ -618,7 +618,7 @@ export const anchorage: CityData = {
             description: '20-foot chocolate waterfall with 3,000+ pounds of chocolate flowing through copper candy kettles. Created in 1994 by Homer artist Mike Sirl. Display only (not drinkable). While not Guinness-certified, likely the world\'s largest.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80',
+                src: '',
                 alt: 'Large chocolate waterfall display in factory setting',
               },
             ],
@@ -637,7 +637,7 @@ export const anchorage: CityData = {
             description: 'Scale model solar system from Sun (5th & G Street downtown) to Pluto (Kincaid Chalet) - walking at leisurely pace mimics light speed. Takes 5.5 hours to walk entire route. Designed by high school astronomy student.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800&q=80',
+                src: '',
                 alt: 'Planet model markers along urban trail',
               },
             ],
@@ -661,7 +661,7 @@ export const anchorage: CityData = {
             description: 'Anchorage\'s ONLY historic house museum - the first wood-frame house in Anchorage (1915), built by Oscar Anderson who claimed to be the 18th person to set foot in Anchorage. Fully restored to 1915 appearance. Named Distinctive Destination by National Trust.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80',
+                src: '',
                 alt: 'Historic wood-frame house from early 1900s',
               },
             ],
@@ -679,7 +679,7 @@ export const anchorage: CityData = {
             description: '32 sculptural markers throughout Anchorage featuring Dena\'ina language, traditional fire bag designs, and place name stories. Each features "you are walking on Dena\'ina land." Artwork by Melissa Shaginoff at parks and trails.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=800&q=80',
+                src: '',
                 alt: 'Indigenous cultural markers along trail',
               },
             ],
@@ -698,11 +698,11 @@ export const anchorage: CityData = {
             description: 'One of Alaska\'s best breweries with a huge tap list and excellent food. The brewing facility is impressive, and they don\'t take themselves too seriously.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&q=80',
+                src: '',
                 alt: 'Craft brewery tap room with beer selection',
               },
               {
-                src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+                src: '',
                 alt: 'Brewery equipment and tanks',
               }
             ],
@@ -721,11 +721,11 @@ export const anchorage: CityData = {
             description: 'A rescue facility where you can see bears, moose, musk oxen, and other Alaskan animals up close. Most animals were orphaned or injured. A guaranteed way to see wildlife.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=1200&q=80',
+                src: '',
                 alt: 'Brown bear at Alaska Wildlife Conservation Center',
               },
               {
-                src: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&q=80',
+                src: '',
                 alt: 'Musk ox at wildlife center',
               }
             ],
@@ -756,11 +756,11 @@ export const anchorage: CityData = {
             price: '$$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&q=80',
+                src: '',
                 alt: 'Fresh oysters on ice platter',
               },
               {
-                src: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&q=80',
+                src: '',
                 alt: 'Champagne and oysters pairing',
               }
             ],
@@ -776,11 +776,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&q=80',
+                src: '',
                 alt: 'Craft brewery tap handles',
               },
               {
-                src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+                src: '',
                 alt: 'Brewpub interior with rustic decor',
               }
             ],
@@ -796,11 +796,11 @@ export const anchorage: CityData = {
             price: '$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                src: '',
                 alt: 'Classic neighborhood dive bar interior',
               },
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Bar counter with beer taps',
               }
             ],
@@ -816,11 +816,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80',
+                src: '',
                 alt: 'Live music venue stage with lighting',
               },
               {
-                src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+                src: '',
                 alt: 'Concert venue interior with crowd',
               }
             ],
@@ -845,11 +845,11 @@ export const anchorage: CityData = {
             price: '$$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1580959375944-1ab5b8badf9b?w=800&q=80',
+                src: '',
                 alt: 'Grilled halibut steak with garnish',
               },
               {
-                src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+                src: '',
                 alt: 'Elegant Alaska halibut preparation',
               }
             ],
@@ -865,11 +865,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800&q=80',
+                src: '',
                 alt: 'Loaded pepperoni pizza',
               },
               {
-                src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+                src: '',
                 alt: 'Craft beer and pizza pairing',
               }
             ],
@@ -885,11 +885,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+                src: '',
                 alt: 'Hearty breakfast with eggs and sausage',
               },
               {
-                src: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+                src: '',
                 alt: 'Traditional American breakfast spread',
               }
             ],
@@ -905,11 +905,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&q=80',
+                src: '',
                 alt: 'Loaded mac and cheese with toppings',
               },
               {
-                src: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&q=80',
+                src: '',
                 alt: 'Creamy comfort food mac and cheese',
               }
             ],
@@ -925,11 +925,11 @@ export const anchorage: CityData = {
             price: '$$$$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+                src: '',
                 alt: 'Fine dining tasting menu presentation',
               },
               {
-                src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+                src: '',
                 alt: 'Elegant tasting menu course',
               }
             ],
@@ -957,15 +957,15 @@ export const anchorage: CityData = {
             instagram: '@kaladibrotherscoffee',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=800&q=80',
+                src: '',
                 alt: 'Coffee roasting equipment',
               },
               {
-                src: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80',
+                src: '',
                 alt: 'Fresh roasted coffee beans',
               },
               {
-                src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+                src: '',
                 alt: 'Classic coffee shop latte',
               }
             ],
@@ -984,15 +984,15 @@ export const anchorage: CityData = {
             instagram: '@steamdotcoffee',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80',
+                src: '',
                 alt: 'Pour-over coffee being prepared',
               },
               {
-                src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+                src: '',
                 alt: 'Modern minimalist coffee shop interior',
               },
               {
-                src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+                src: '',
                 alt: 'Specialty latte with art',
               }
             ],
@@ -1010,15 +1010,15 @@ export const anchorage: CityData = {
             instagram: '@darkhorsecoffeeanchorage',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1568649929103-16bf8b502946?w=800&q=80',
+                src: '',
                 alt: 'Espresso machine at coffee shop',
               },
               {
-                src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+                src: '',
                 alt: 'Cozy cafe with warm lighting',
               },
               {
-                src: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+                src: '',
                 alt: 'Cold brew coffee',
               }
             ],
@@ -1035,15 +1035,15 @@ export const anchorage: CityData = {
             price: '$',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80',
+                src: '',
                 alt: 'Bookstore cafe with vintage character',
               },
               {
-                src: 'https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&q=80',
+                src: '',
                 alt: 'Classic vintage coffee shop interior',
               },
               {
-                src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+                src: '',
                 alt: 'Coffee and pastries display',
               }
             ],
@@ -1061,15 +1061,15 @@ export const anchorage: CityData = {
             instagram: '@spenardjoes',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1501862700950-18382cd41497?w=800&q=80',
+                src: '',
                 alt: 'Eclectic neighborhood cafe with character',
               },
               {
-                src: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&q=80',
+                src: '',
                 alt: 'Fresh brewed coffee being poured',
               },
               {
-                src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+                src: '',
                 alt: 'Coffee shop pastry display case',
               }
             ],
@@ -1088,15 +1088,15 @@ export const anchorage: CityData = {
             instagram: '@blackcupcoffee',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80',
+                src: '',
                 alt: 'Modern spacious coffee shop with natural light',
               },
               {
-                src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+                src: '',
                 alt: 'Espresso drinks being prepared',
               },
               {
-                src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+                src: '',
                 alt: 'Coffee shop workspace area',
               }
             ],
@@ -1107,6 +1107,7 @@ export const anchorage: CityData = {
         id: 'anc-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'Where predators thrive and victims vanish',
         intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
         items: [
           {

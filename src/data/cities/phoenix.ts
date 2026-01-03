@@ -372,11 +372,11 @@ export const phoenix: CityData = {
                 alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening',
               },
               {
-                src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+                src: '',
                 alt: 'Sunrise light streaming through Hole in the Rock during winter solstice',
               },
               {
-                src: 'https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?w=800&q=80',
+                src: '',
                 alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock',
               },
             ],
@@ -540,7 +540,7 @@ export const phoenix: CityData = {
               'Built 1956, cut into red sandstone hill 20 feet underground with foot-thick concrete walls. Now Maricopa County Emergency Management headquarters. Contains original Cold War artifacts: gas masks, WWII cots, emergency water. Still operational government facility — not typically open to public.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1601894329482-3a06ce8b0f2c?w=800&q=80',
+                src: '',
                 alt: 'Cold War era bunker entrance in desert hillside',
               },
             ],
@@ -559,7 +559,7 @@ export const phoenix: CityData = {
               'WWII Japanese internment camp ruins on tribal land. Nearly 900 barracks once stood (Canal and Butte camps). At least 230 ornate garden ponds built by prisoners remain. Tribe letting nature reclaim the site — no preserved structures, intentionally fading into history.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1563207153-f403bf289096?w=800&q=80',
+                src: '',
                 alt: 'Desert landscape with ruins and remnant structures',
               },
             ],
@@ -578,7 +578,7 @@ export const phoenix: CityData = {
               'Three-tiered "wedding cake" castle built 1928-1930. Originally planned as resort hotel, never opened. Features giant steel pyramid memorial to Edward Tovrea. 90-minute guided tours by appointment only. Visible from I-10 but inaccessible to most.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80',
+                src: '',
                 alt: 'Distinctive three-tiered castle structure in desert',
               },
             ],
@@ -598,7 +598,7 @@ export const phoenix: CityData = {
               'Seven historic cemeteries founded in 1884, officially renamed in 2007. Contains 3,700 estimated burials but fewer than 600 have headstones. Includes graves of Darrell Duppa (who named Phoenix) and Jacob Waltz (Lost Dutchman Mine). Potter\'s field with common graves for unclaimed bodies. Closed to new burials in 1914.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1550089479-fe0e48e7d788?w=800&q=80',
+                src: '',
                 alt: 'Historic cemetery with old headstones in urban setting',
               },
             ],
@@ -617,7 +617,7 @@ export const phoenix: CityData = {
               'White pyramid structure in Papago Park. Final resting place of Arizona\'s first governor George W.P. Hunt. Built in 1931, Hunt placed there in 1934. Overshadowed by more popular Papago Park features — most visitors never notice the pyramid.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
+                src: '',
                 alt: 'White pyramid monument in desert park',
               },
             ],
@@ -636,7 +636,7 @@ export const phoenix: CityData = {
               'Only surviving structure from Phoenix\'s second Chinatown. Built 1929 at 3rd & Jackson. National Register of Historic Places (1985). Phoenix\'s Chinatowns dissolved decades ago — this lone building remains as silent witness.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+                src: '',
                 alt: 'Historic brick building with Asian architectural details',
               },
             ],
@@ -655,7 +655,7 @@ export const phoenix: CityData = {
               'Small taxidermy emporium filled with bones, skulls, vintage taxidermy, freeze-dried toads, and squid in jars. Located in the Melrose District. Known mainly to oddity collectors and taxidermy enthusiasts. Not your typical gift shop.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1596363505729-4190c8cda42f?w=800&q=80',
+                src: '',
                 alt: 'Taxidermy and natural history specimens displayed',
               },
             ],
@@ -674,7 +674,7 @@ export const phoenix: CityData = {
               'One of only two remaining Hohokam platform mounds in metro Phoenix. Larger than football field, 27 feet high. Occupied AD 1100-1400. Seasonally open October-May since 2013 visitor center completion. Overshadowed by Pueblo Grande despite significance.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+                src: '',
                 alt: 'Ancient Hohokam platform mound in desert',
               },
             ],
@@ -693,7 +693,7 @@ export const phoenix: CityData = {
               'Gold mining operation began 1913 on north slope South Mountain. Shut down 1942 by U.S. War Production Board. Ruins still visible in South Mountain Park. Hidden in vast park system — requires knowledge of location.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1509874990145-7eef0bb58c57?w=800&q=80',
+                src: '',
                 alt: 'Abandoned mining ruins in desert mountains',
               },
             ],
@@ -712,7 +712,7 @@ export const phoenix: CityData = {
               '20-foot waterfall cascade at 56th Street and Indian School Road. Next to G.R. Herberger Park, open since 2003. Hidden oasis many locals still discovering. Tucked in urban setting, not well-marked — drive past it constantly without noticing.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80',
+                src: '',
                 alt: 'Urban waterfall with cascading water',
               },
             ],
@@ -731,7 +731,7 @@ export const phoenix: CityData = {
               'Basement lounge with no exterior signage or front door. Enter via alley behind nondescript brick building. Candlelit space with backlit bar mobile. Deliberately hidden — difficult to find even in daylight. Run by same team behind Crescent Ballroom.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+                src: '',
                 alt: 'Dimly lit underground bar with vintage décor',
               },
             ],
@@ -751,7 +751,7 @@ export const phoenix: CityData = {
               'Subterranean bar in former ostrich feather storage room (early 1900s) in Chandler. Hidden door covered in kitchen utensils from restaurant above. Outside entrance via descending staircase with red light. Authentic underground history.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                src: '',
                 alt: 'Underground speakeasy bar with vintage atmosphere',
               },
             ],
@@ -770,7 +770,7 @@ export const phoenix: CityData = {
               'Phoenix\'s oldest watering hole (opened 1946). 1940s tiki décor preserved. At crossroads of Roosevelt Row and Grand Avenue. Unassuming exterior — known mainly to dive bar enthusiasts. Time capsule from post-WWII Phoenix.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80',
+                src: '',
                 alt: 'Vintage tiki bar interior with retro décor',
               },
             ],
@@ -789,7 +789,7 @@ export const phoenix: CityData = {
               'Between 14th and 15th streets in Downtown Phoenix. Cinderblock walls and fences serve as canvases. Prismatic murals by local and national artists. Unassuming residential alley — unmarked, easy to miss.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&q=80',
+                src: '',
                 alt: 'Colorful street art murals in urban alley',
               },
             ],
@@ -808,7 +808,7 @@ export const phoenix: CityData = {
               'Heart of Roosevelt Row but hard to find. Behind The Churchill food pavilion. Dozen works by local artists. "Hidden in plain sight" according to locals. No street signage — behind buildings.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=800&q=80',
+                src: '',
                 alt: 'Alley filled with colorful murals and street art',
               },
             ],
@@ -827,7 +827,7 @@ export const phoenix: CityData = {
               'Arizona\'s oldest operating cinema (opened 1940). Tempe\'s largest neon sign. Original ticket window, marquee, and neon signage. $1 million restoration in 2011. In Tempe — overshadowed by newer theaters.',
             images: [
               {
-                src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&q=80',
+                src: '',
                 alt: 'Vintage movie theater with neon marquee at night',
               },
             ],
@@ -858,7 +858,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.valleybarphx.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+              src: '',
               alt: 'Basement speakeasy bar with live music stage',
             },
           },
@@ -873,7 +873,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://bitterandtwistedaz.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80',
+              src: '',
               alt: 'Award-winning cocktail bar in historic Prohibition-era building',
             },
           },
@@ -888,7 +888,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.thevig.us/arcadia',
             image: {
-              src: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=80',
+              src: '',
               alt: 'Neighborhood bar patio with Adirondack chairs and fire pit',
             },
           },
@@ -903,7 +903,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://centurygrandphx.com/platform18',
             image: {
-              src: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80',
+              src: '',
               alt: 'Immersive vintage train car cocktail experience',
             },
           },
@@ -929,7 +929,7 @@ export const phoenix: CityData = {
             website: 'https://www.cartelcoffeelab.com',
             instagram: '@cartelcoffeelab',
             image: {
-              src: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80',
+              src: '',
               alt: 'Specialty coffee bar with precision brewing equipment',
             },
           },
@@ -945,7 +945,7 @@ export const phoenix: CityData = {
             price: '$$',
             instagram: '@windowcoffeebar',
             image: {
-              src: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+              src: '',
               alt: 'Cheery specialty coffee shop with Mexican house roast',
             },
           },
@@ -962,7 +962,7 @@ export const phoenix: CityData = {
             website: 'https://atoasiscoffee.com',
             instagram: '@atoasiscoffee',
             image: {
-              src: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80',
+              src: '',
               alt: 'Ethiopian coffee with traditional ceremony setting',
             },
           },
@@ -979,7 +979,7 @@ export const phoenix: CityData = {
             website: 'https://lolacoffeebar.com',
             instagram: '@lolacoffeebar',
             image: {
-              src: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+              src: '',
               alt: 'Family-owned neighborhood coffee shop',
             },
           },
@@ -995,7 +995,7 @@ export const phoenix: CityData = {
             price: '$$',
             instagram: '@bangbangcoffeebar',
             image: {
-              src: 'https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=800&q=80',
+              src: '',
               alt: 'Charming red brick coffee window with outdoor seating',
             },
           },
@@ -1011,7 +1011,7 @@ export const phoenix: CityData = {
             price: '$$',
             instagram: '@bluecorncafeandbakery',
             image: {
-              src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=800&q=80',
+              src: '',
               alt: 'Indigenous-owned bakery with fresh sourdough and pastries',
             },
           },
@@ -1035,7 +1035,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://www.bacanoraphx.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Wood-fired Mexican cuisine from James Beard winner',
             },
           },
@@ -1050,7 +1050,7 @@ export const phoenix: CityData = {
             price: '$',
             website: 'https://carolinasmex.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=800&q=80',
+              src: '',
               alt: 'Fresh handmade Sonoran flour tortillas',
             },
           },
@@ -1065,7 +1065,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.pizzeriabianco.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+              src: '',
               alt: 'Wood-fired artisan pizza from James Beard winner',
             },
           },
@@ -1080,7 +1080,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://tacochelo.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+              src: '',
               alt: 'Artful handmade tacos on Roosevelt Row',
             },
           },
@@ -1095,7 +1095,7 @@ export const phoenix: CityData = {
             price: '$',
             website: 'https://restaurantatoyac.com/',
             image: {
-              src: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=800&q=80',
+              src: '',
               alt: 'Authentic Oaxacan tlayuda and mole',
             },
           },
@@ -1105,6 +1105,7 @@ export const phoenix: CityData = {
         id: 'phx-dark-history',
         type: 'section',
         title: 'Dark History',
+        hook: 'A dark past written in desert sunshine',
         intro: 'Phoenix is a monument to human stubbornness—five million people living in a desert on borrowed water, in a city that routinely hits 115 degrees. The heat isn\'t just uncomfortable; it\'s lethal. Over 600 people died from heat in Maricopa County in 2023, nearly half of them homeless. But the desert has always been deadly here. Serial killers have hunted its sprawling neighborhoods. A journalist was assassinated by car bomb for investigating organized crime. Indigenous children were stripped of their languages and identities at a government boarding school. And in 1931, a woman put her murdered friends in trunks and boarded a train to Los Angeles. From forced assimilation at the Phoenix Indian School to simultaneous serial killers terrorizing the city in 2005, from the infamous Trunk Murderess to heat deaths that now exceed homicides—Phoenix has a dark past written in desert sunshine.',
         items: [
           {
@@ -1180,12 +1181,12 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/phoenix-indian-school-1.jpg',
+                src: '/phoenix/dark-history/phoenix-indian-school.png',
                 alt: 'Phoenix Indian School main building circa 1930, showing the institutional architecture where Indigenous children were forced to attend',
               },
               {
-                src: '/images/dark-history/phoenix/phoenix-indian-school-3.jpg',
-                alt: 'Phoenix Indian School students in uniform, part of the forced assimilation program that stripped Indigenous children of their cultures',
+                src: '/phoenix/dark-history/hotel-san-carlos.png',
+                alt: 'Historic downtown Phoenix near the Phoenix Indian School area, showing the institutional environment of forced assimilation',
               },
             ],
           },
@@ -1255,11 +1256,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                src: '/phoenix/dark-history/trunk-1.png',
                 alt: 'Historic Phoenix bungalow from the 1930s, representative of the neighborhood where Winnie Ruth Judd committed the infamous trunk murders',
               },
               {
-                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                src: '/phoenix/dark-history/trunk-2.png',
                 alt: 'Phoenix residential street, evoking the quiet neighborhood that became the site of Arizona\'s most sensational murder case',
               },
             ],
@@ -1329,11 +1330,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/don-bolles-1.jpg',
+                src: '/phoenix/dark-history/dan-bolles-1.png',
                 alt: 'Don Bolles, investigative reporter for The Arizona Republic who was assassinated by car bomb in 1976 while investigating organized crime',
               },
               {
-                src: '/images/dark-history/phoenix/hotel-san-carlos-3.jpg',
+                src: '/phoenix/dark-history/dan-balles-2.png',
                 alt: 'Downtown Phoenix in the 1970s, near the Clarendon Hotel where Don Bolles was assassinated',
               },
             ],
@@ -1397,11 +1398,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                src: '/phoenix/dark-history/summer-fear-1.png',
                 alt: 'Phoenix residential neighborhood where two simultaneous serial killers hunted during the Summer of Fear in 2005-2006',
               },
               {
-                src: '/images/dark-history/phoenix/phoenix-indian-school-1.jpg',
+                src: '/phoenix/dark-history/summer-fear-2.png',
                 alt: 'Phoenix streets at dusk, evoking the fear that gripped the city during the unprecedented dual serial killer crisis',
               },
             ],
@@ -1464,11 +1465,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                src: '/phoenix/dark-history/maryvale.png',
                 alt: 'Maryvale neighborhood in west Phoenix, where a random shooter terrorized residents for nearly a year',
               },
               {
-                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                src: '/phoenix/dark-history/rosson-house.png',
                 alt: 'Phoenix working-class neighborhood at night, representing the Maryvale streets where nine people were killed',
               },
             ],
@@ -1541,11 +1542,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/heat-apocalypse-2.jpg',
+                src: '/phoenix/dark-history/heat-deaths.png',
                 alt: 'Phoenix during extreme heat wave in 2023, when temperatures exceeded 110°F for 31 consecutive days and killed 645 people',
               },
               {
-                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                src: '/phoenix/dark-history/rosson-house-2.png',
                 alt: 'Phoenix streets during deadly heat, showing the urban environment where nearly 300 homeless people died in one summer',
               },
             ],
@@ -1608,11 +1609,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                src: '/phoenix/dark-history/fisher-family.png',
                 alt: 'Scottsdale residential neighborhood, similar to where Robert Fisher murdered his family and disappeared in 2002',
               },
               {
-                src: '/images/dark-history/phoenix/summer-of-fear-2.jpg',
+                src: '/phoenix/dark-history/rosson-house-2.png',
                 alt: 'Suburban Phoenix home, representative of the Scottsdale house that exploded after the Fisher family murders',
               },
             ],
@@ -1675,11 +1676,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/hotel-san-carlos-3.jpg',
+                src: '/phoenix/dark-history/hotel-san-carlos.png',
                 alt: 'Hotel San Carlos lobby, one of Phoenix\'s most haunted locations since Leone Jensen\'s suicide in 1928',
               },
               {
-                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                src: '/phoenix/dark-history/orpheom-theater.png',
                 alt: 'Historic downtown Phoenix building from the 1920s era, when Hotel San Carlos was built',
               },
             ],
@@ -1742,11 +1743,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/orpheum-theatre-3.jpg',
+                src: '/phoenix/dark-history/orpheom-theater.png',
                 alt: 'Orpheum Theatre interior with ornate Mediterranean-inspired design, home to the ghost Maddie who enforces theater etiquette',
               },
               {
-                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                src: '/phoenix/dark-history/hotel-san-carlos.png',
                 alt: 'Historic 1920s-era architecture in downtown Phoenix, contemporary with the Orpheum Theatre\'s construction',
               },
             ],
@@ -1809,11 +1810,11 @@ export const phoenix: CityData = {
             },
             images: [
               {
-                src: '/images/dark-history/phoenix/rosson-house-victorian.jpg',
+                src: '/phoenix/dark-history/rosson-house.png',
                 alt: 'Rosson House, a Victorian mansion built in 1895, now haunted by the ghost of a caretaker murdered in the 1980s',
               },
               {
-                src: '/images/dark-history/phoenix/rosson-house-3.jpg',
+                src: '/phoenix/dark-history/rosson-house-2.png',
                 alt: 'Rosson House interior showing Victorian-era rooms where visitors report unexplained footsteps and ghostly presences',
               },
             ],
@@ -2152,7 +2153,7 @@ export const phoenix: CityData = {
             category: 'night',
             media: {
               type: 'image',
-              src: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&q=80',
+              src: '',
               alt: 'Arizona Canal at night with city lights reflecting in water',
               caption: 'The ancient Hohokam routes, still flowing after a thousand years',
               location: 'Arizona Canal',
