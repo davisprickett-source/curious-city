@@ -177,6 +177,7 @@ export const chicago: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Chicago',
+        teaser: 'Flooded freight tunnels, reversed rivers, and the secrets beneath the L',
         items: [
           {
             id: 'curiosity-1',
@@ -537,6 +538,7 @@ export const chicago: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: '60 miles of flooded freight tunnels, abandoned L stations, and Capone\'s speakeasies',
         intro: 'These aren\'t in the guidebooks. A 60-mile underground freight tunnel network flooded by the Chicago River. Abandoned L stations frozen in time. Secret speakeasies where Al Capone drank. Hidden beaches where locals bring hammocks. The real Chicago exists below street level and behind unmarked doors.',
         items: [
           {
@@ -1918,6 +1920,7 @@ export const chicago: CityData = {
         id: 'chicago-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'Hot Doug\'s, The Hideout, and the Chicago institutions that shaped the city',
         items: [
           {
             id: 'chicago-lost-1',

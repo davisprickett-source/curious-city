@@ -59,6 +59,7 @@ export const phoenix: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Phoenix',
+        teaser: 'Ancient canals, underground tunnels, and the city that defied the desert',
         items: [
           {
             id: 'phx-curiosity-1',
@@ -528,6 +529,7 @@ export const phoenix: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Cold War bunkers, forgotten ruins, and secrets hiding in the desert sun',
         intro:
           'These aren\'t in the guidebooks. A Cold War bunker 20 feet underground in Papago Park, Japanese internment camp ruins fading into tribal land, underground bars with no signage, and a three-tiered wedding cake castle that never opened. Phoenix\'s obscure history hides in plain sight under the desert sun.',
         items: [
@@ -1825,6 +1827,7 @@ export const phoenix: CityData = {
         id: 'phx-lost-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'The legendary bars, diners, and theaters swallowed by sprawl and heat',
         items: [
           {
             id: 'phx-lost-1',

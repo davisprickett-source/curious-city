@@ -59,6 +59,7 @@ export const denver: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Denver',
+        teaser: 'Demonic horses, buried bodies, and the secrets of the Mile High City',
         items: [
           {
             id: 'den-curiosity-1',
@@ -397,6 +398,7 @@ export const denver: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Underground tunnels, hidden graves, and 1.3 million wildlife specimens in a warehouse',
         intro: 'These aren\'t in the guidebooks. Underground tunnels beneath the Capitol, 3,000 bodies still buried under Cheesman Park, and a warehouse with 1.3 million confiscated wildlife specimens. This is where Denver gets genuinely strange.',
         items: [
           {
@@ -1572,6 +1574,7 @@ export const denver: CityData = {
         id: 'denver-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'The Satire Lounge, My Brother\'s Bar, and Denver\'s legendary lost gathering places',
         items: [
           {
             id: 'denver-lost-1',

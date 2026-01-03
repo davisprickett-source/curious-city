@@ -59,6 +59,7 @@ export const colorado_springs: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Colorado Springs',
+        teaser: 'Tesla\'s lightning experiments, underground tunnels, and secrets in the shadow of Pikes Peak',
         items: [
           {
             id: 'cos-curiosity-1',
@@ -542,6 +543,7 @@ export const colorado_springs: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Haunted railroad tunnels, Cold War relics, and a vagabond artist\'s miniature city',
         intro:
           'These aren\'t in the guidebooks. Abandoned Cold War relics, collapsed railroad tunnels haunted by ghostly miners, tuberculosis huts scattered as garden sheds, underground speakeasies, and a 3,000-square-foot miniature city built by a vagabond artist. Colorado Springs\' obscure history runs deep.',
         items: [

@@ -59,6 +59,7 @@ export const portland: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Portland',
+        teaser: 'Black exclusion laws, Shanghai tunnels, and the dark roots of weird Portland',
         items: [
           {
             id: 'pdx-curiosity-1',
@@ -455,6 +456,7 @@ export const portland: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Cold War bunkers, Shanghai tunnels, and the world\'s smallest park',
         intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and the world\'s smallest park. This is where Portland gets genuinely obscure.',
         items: [
           {
@@ -1663,6 +1665,7 @@ export const portland: CityData = {
         id: 'pdx-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'Berbati\'s Pan, Satyricon, and the music venues that defined Portland nights',
         items: [
           {
             id: 'pdx-lost-1',

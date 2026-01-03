@@ -59,6 +59,7 @@ export const tampa: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Tampa',
+        teaser: 'Fictional pirates, cigar rollers, and the secrets beneath the sunshine',
         items: [
           {
             id: 'tam-curiosity-1',
@@ -404,6 +405,7 @@ export const tampa: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Secret speakeasies, hidden tunnels, and spots that locals don\'t even know about',
         intro: 'The genuinely obscure — places even longtime Tampa residents don\'t know about. Secret speakeasies, hidden tunnels, forgotten history, and spots that require insider knowledge.',
         items: [],
       },
@@ -1824,6 +1826,7 @@ export const tampa: CityData = {
         id: 'tampa-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'The Columbia, Ybor nightclubs, and Tampa\'s legendary lost establishments',
         items: [
           {
             id: 'tampa-lost-1',

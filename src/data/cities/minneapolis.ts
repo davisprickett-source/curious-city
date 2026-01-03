@@ -84,6 +84,7 @@ export const minneapolis: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Minneapolis',
+        teaser: 'Underground tunnels, flour mill explosions, and the secrets beneath the skyways',
         items: [
           {
             id: 'curiosity-1',
@@ -654,6 +655,7 @@ export const minneapolis: CityData = {
   id: 'hidden-gems',
   type: 'section',
   title: 'Hidden Gems',
+  teaser: 'Secret tunnels, underground art, and the places even locals don\'t know about',
   intro: 'These aren\'t on the tourist maps. Secret tunnels, underground art spaces, museums in fire-hose cabinets, and places even locals might not know about. This is where Minneapolis gets weird and wonderful.',
   items: [
     // SUBSECTION: Underground & Secret Spaces
@@ -2558,6 +2560,7 @@ export const minneapolis: CityData = {
         id: 'mpls-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'Nye\'s Polonaise, Gluek\'s, and the legendary spots that shaped Minneapolis nights',
         items: [
           {
             id: 'mpls-lost-1',

@@ -59,6 +59,7 @@ export const salt_lake_city: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Salt Lake City',
+        teaser: 'Secret temple tunnels, modern mummification pyramids, and the Great Salt Lake\'s mysteries',
         items: [
           {
             id: 'slc-curiosity-1',
@@ -432,6 +433,7 @@ export const salt_lake_city: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'A modern mummification pyramid, underground temple tunnels, and hidden desert swimming holes',
         intro: 'These aren\'t in the guidebooks. A pyramid offering modern mummification, underground tunnels beneath Temple Square, secret viewpoints with better views than the tourist spots, hidden swimming holes, and obscure museums locals guard fiercely. This is where Salt Lake gets weird.',
         items: [
           {

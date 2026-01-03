@@ -59,6 +59,7 @@ export const anchorage: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Anchorage',
+        teaser: 'CIA spy devices, Cold War relics, and secrets at the edge of wilderness',
         items: [
           {
             id: 'anc-curiosity-1',
@@ -437,6 +438,7 @@ export const anchorage: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Abandoned missile sites, spirit houses, and a 20-foot chocolate waterfall',
         intro: 'These aren\'t in the guidebooks. Abandoned Cold War missile sites on mountaintops, spirit houses blending Russian Orthodox and Dena\'ina traditions, earthquake remnants from 1964, downtown salmon runs, and a 20-foot chocolate waterfall. This is where Alaska gets weird.',
         items: [
           {
@@ -1633,6 +1635,7 @@ export const anchorage: CityData = {
         id: 'anc-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: 'Chilkoot Charlie\'s, Earthquake Park, and the Alaska legends that closed',
         items: [
           {
             id: 'anc-lost-1',

@@ -80,6 +80,7 @@ export const raleigh: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Things You Might Not Know About Raleigh',
+        teaser: 'Cold War bunkers turned punk venues, hidden tunnels, and the City of Oaks\' secrets',
         items: [
           {
             id: 'curiosity-1',
@@ -390,6 +391,7 @@ export const raleigh: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Gems',
+        teaser: 'Secret speakeasies, hidden gardens, and places that lifelong residents don\'t know',
         intro: 'The genuinely obscure — places even lifelong Raleigh residents don\'t know about.',
         items: [
           {
@@ -1599,6 +1601,7 @@ export const raleigh: CityData = {
         id: 'raleigh-lost-and-loved',
         type: 'section',
         title: 'Lost & Loved',
+        teaser: '42nd Street Oyster Bar, The Brewery, and Raleigh\'s lost gathering places',
         items: [
           {
             id: 'raleigh-lost-1',
