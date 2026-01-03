@@ -1045,7 +1045,7 @@ export const portland: CityData = {
         id: 'pdx-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Weirdness that always included violence',
+        teaser: 'Weirdness that always included violence',
         intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. This was the only state admitted to the Union with a Black exclusion clause in its constitution. The city earned its reputation as the "Shanghai Capital of the World" by kidnapping drunken men and selling them to ship captains. Its second-largest city was washed away in a flood—and the Black residents who lived there were left to fend for themselves. Serial killers have hunted along its highways. A child vanished from his elementary school and was never found. Portland\'s weirdness was always there, but so was the violence—it just dressed better.',
         items: [
           {

@@ -1434,7 +1434,7 @@ export const colorado_springs: CityData = {
         id: 'cos-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Violence beneath the postcard scenery',
+        teaser: 'Violence beneath the postcard scenery',
         intro: 'Colorado Springs sits in the shadow of Pikes Peak, a city of military precision, evangelical fervor, and stark natural beauty. But the same mountains that draw tourists also hide crimes. The Rampart Range has witnessed murders, mysterious disappearances, and stray bullets falling from the sky. From serial killers to unsolved ax murders to wildfires that consumed neighborhoods, this city\'s dark history reveals the violence lurking beneath the postcard scenery.',
         items: [
           {

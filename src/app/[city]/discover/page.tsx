@@ -43,19 +43,16 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
       title: 'Curiosities',
       description: 'Fascinating facts and peculiar details',
       href: `/${slug}/curiosities`,
-      icon: '✨',
     },
     {
       title: 'Dark History',
       description: 'Unsolved mysteries and forgotten crimes',
       href: `/${slug}/dark-history`,
-      icon: '🌑',
     },
     {
       title: 'Scenes',
       description: 'Photo and video galleries',
       href: `/${slug}/scenes`,
-      icon: '📸',
     },
   ]
 
@@ -92,7 +89,6 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
                   href={experience.href}
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-white border border-neutral-200 rounded-full hover:border-accent-600 hover:shadow-md transition-all duration-300"
                 >
-                  <span className="text-2xl">{experience.icon}</span>
                   <span className="font-semibold text-neutral-900 group-hover:text-accent-600 transition-colors">
                     {experience.title}
                   </span>
@@ -180,7 +176,6 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
                     href={experience.href}
                     className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 text-white rounded-full font-semibold hover:bg-accent-600 transition-colors"
                   >
-                    <span className="text-xl">{experience.icon}</span>
                     {experience.title}
                   </Link>
                 ))}

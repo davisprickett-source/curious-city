@@ -189,6 +189,7 @@ export interface AdContentItem extends BaseContentItem {
 export interface SectionContentItem extends BaseContentItem {
   type: 'section'
   title?: string
+  teaser?: string
   intro?: string
   items: ContentItem[]
 }

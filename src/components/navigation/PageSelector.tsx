@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { citySections, type AnyCitySection } from '@/lib/routes'
 import { useNavigation } from './hooks/useNavigation'
 
@@ -11,7 +11,7 @@ interface PageSelectorProps {
   preserveFilters?: boolean
 }
 
-export function PageSelector({
+function PageSelectorContent({
   citySlug,
   currentSection,
   preserveFilters = true,
@@ -66,5 +66,20 @@ export function PageSelector({
         </div>
       )}
     </div>
+  )
+}
+
+export function PageSelector(props: PageSelectorProps) {
+  const currentLabel =
+    citySections.find((s) => s.id === props.currentSection)?.label || 'History'
+
+  return (
+    <Suspense fallback={
+      <div className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700">
+        {currentLabel}
+      </div>
+    }>
+      <PageSelectorContent {...props} />
+    </Suspense>
   )
 }

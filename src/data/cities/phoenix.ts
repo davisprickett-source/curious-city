@@ -1105,7 +1105,7 @@ export const phoenix: CityData = {
         id: 'phx-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'A dark past written in desert sunshine',
+        teaser: 'A dark past written in desert sunshine',
         intro: 'Phoenix is a monument to human stubbornness—five million people living in a desert on borrowed water, in a city that routinely hits 115 degrees. The heat isn\'t just uncomfortable; it\'s lethal. Over 600 people died from heat in Maricopa County in 2023, nearly half of them homeless. But the desert has always been deadly here. Serial killers have hunted its sprawling neighborhoods. A journalist was assassinated by car bomb for investigating organized crime. Indigenous children were stripped of their languages and identities at a government boarding school. And in 1931, a woman put her murdered friends in trunks and boarded a train to Los Angeles. From forced assimilation at the Phoenix Indian School to simultaneous serial killers terrorizing the city in 2005, from the infamous Trunk Murderess to heat deaths that now exceed homicides—Phoenix has a dark past written in desert sunshine.',
         items: [
           {

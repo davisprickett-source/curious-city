@@ -957,7 +957,7 @@ export const denver: CityData = {
         id: 'denver-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Darkness beneath the Mile High sunshine',
+        teaser: 'Darkness beneath the Mile High sunshine',
         intro: 'Denver sells itself as sunshine and craft beer, but the Mile High City sits atop a foundation of massacre, racial violence, and unsolved murder. From bodies left beneath public parks to a demonic horse that killed its creator, Denver\'s dark side is woven into the very geography—hidden in plain sight, just one layer below the Instagram-friendly surface.',
         items: [
           {
@@ -968,10 +968,16 @@ export const denver: CityData = {
             title: 'The Sand Creek Massacre',
             body: 'On November 29, 1864, Colonel John Chivington led 675 Colorado militia soldiers against a peaceful village of Cheyenne and Arapaho people at Sand Creek. Chief Black Kettle flew both an American flag and a white flag of surrender above his lodge. It didn\'t matter. The soldiers killed at least 230 people—mostly women, children, and the elderly—then mutilated the bodies and paraded trophies through Denver streets to cheering crowds. A Congressional investigation later condemned it as a "foul and dastardly massacre," but Chivington was never prosecuted. The violence at Sand Creek triggered decades of warfare across the Great Plains and shattered any remaining trust between indigenous peoples and the federal government.',
             verdict: 'The deadliest day in Colorado history. A National Historic Site now marks the location.',
-            image: {
-              src: '/images/dark-history/denver/sand-creek-massacre-2.jpg',
-              alt: 'Sand Creek Massacre National Historic Site memorial with prairie landscape',
-            },
+            images: [
+              {
+                src: '/denver/dark-history/massacre-1.png',
+                alt: 'Sand Creek Massacre National Historic Site memorial with prairie landscape',
+              },
+              {
+                src: '/denver/dark-history/massacre-2.png',
+                alt: 'Sand Creek Massacre historical marker',
+              },
+            ],
             location: {
               name: 'Sand Creek, 170 miles southeast of Denver',
               stillExists: true,
@@ -1013,7 +1019,7 @@ export const denver: CityData = {
             body: 'On Halloween night 1880, a pool game argument at John Asmussen\'s saloon on Wazee Street became the pretext for Denver\'s first race riot. A mob of 3,000 descended on Hop Alley—the Chinese neighborhood near present-day Coors Field—beating residents and destroying every business. Look Young, a 28-year-old who had lived in Denver for just six months, was dragged from Sing Lee\'s laundry, had his queue cut off, was beaten and tortured, then hanged from a lamppost. He died of his injuries. The rioters caused $53,655 in damage (over $1.5 million today). No one was ever convicted. The Chinese consul\'s request for reparations was denied. Chinatown never recovered, and the survivors never received compensation. In 2022, Denver formally apologized—142 years later.',
             verdict: 'The city apologized in 2022. The original site is now a parking lot near the ballpark.',
             image: {
-              src: '/images/dark-history/denver/hop-alley-denver.jpg',
+              src: '/denver/dark-history/hop-alley.png',
               alt: 'Historic Denver street scene from the era of Chinatown and Hop Alley',
             },
             location: {
@@ -1057,7 +1063,7 @@ export const denver: CityData = {
             body: 'Cheesman Park is one of Denver\'s most beloved green spaces—80 acres of manicured lawns where joggers run and couples picnic. It\'s also a mass grave. The land was Mount Prospect Cemetery from 1858 to 1890, filled primarily with paupers, criminals, and smallpox victims from the nearby "pest house." When the city decided to convert it to a park, families were given 90 days to claim their dead. Most bodies went unclaimed. The city hired undertaker E.P. McGovern to relocate the remaining 5,000+ corpses at $1.90 each. McGovern found a shortcut: he hacked the bodies apart and stuffed them into child-sized coffins, sometimes using three caskets for one adult. When the Denver Republican exposed "The Work Of Ghouls!" the city fired McGovern—but never hired anyone else. To this day, an estimated 2,000-3,000 bodies remain beneath the park. Construction crews still unearth bones regularly; four well-preserved skeletons were found as recently as 2010.',
             verdict: 'Bodies are still found during construction. The park inspired elements of "Poltergeist."',
             image: {
-              src: '/images/dark-history/denver/cheesman-park-historical.jpg',
+              src: '/denver/dark-history/cheesman.png',
               alt: 'Historic photograph of Cheesman Park pavilion and grounds, built atop Denver cemetery',
             },
             location: {
@@ -1106,7 +1112,7 @@ export const denver: CityData = {
             body: 'The Brown Palace Hotel opened in 1892 and quickly became Denver\'s grandest address—every president since Teddy Roosevelt has stayed there. On May 24, 1911, it became the scene of high-society murder. Frank Henwood shot Sylvester "Tony" von Phul three times in the Marble Bar, killing him and accidentally killing bystander George Copeland. The trigger was a love triangle involving socialite Isabel Springer, who lived at the hotel with her millionaire husband while carrying on affairs with both men. Von Phul had been blackmailing her with love letters; Henwood intervened. The scandal dominated Denver newspapers for months. Henwood became a celebrity in jail, receiving flowers from admirers and dining on specially prepared meals in "Millionaire\'s Row." He was eventually convicted but the trial revealed the rot beneath Denver\'s gilded surface.',
             verdict: 'The Marble Bar is now Ship Tavern. Dick Kreck\'s book details the full scandal.',
             image: {
-              src: '/images/dark-history/denver/brown-palace-interior.jpg',
+              src: '/denver/dark-history/brown-palace.png',
               alt: 'Historic interior of the Brown Palace Hotel in Denver, site of the 1911 murder',
             },
             location: {
@@ -1144,7 +1150,7 @@ export const denver: CityData = {
             body: 'On April 20, 1914, Colorado National Guard soldiers and private guards from John D. Rockefeller\'s Colorado Fuel and Iron Company attacked a tent colony of striking miners and their families in Ludlow, 180 miles south of Denver. The miners had been on strike since September 1913, evicted from company towns and living in UMWA-provided tents. That day, soldiers soaked the tents in kerosene and set them ablaze. Eleven children and two women were found burned and suffocated in a cellar they\'d dug to escape the gunfire. In total, approximately 21 people died. The massacre triggered a ten-day armed uprising across a 225-mile front. Five thousand people demonstrated on the State Capitol lawn demanding the guardsmen be tried for murder. The Rocky Mountain News coined the term "Ludlow Massacre." No soldiers were ever convicted.',
             verdict: 'Called "the deadliest strike in U.S. history." A monument stands at the site.',
             image: {
-              src: '/images/dark-history/denver/colorado-winter-historical.jpg',
+              src: '/denver/dark-history/ludlow.png',
               alt: 'Historic winter landscape of Colorado mining country where Ludlow Massacre occurred',
             },
             location: {
@@ -1188,7 +1194,7 @@ export const denver: CityData = {
             body: 'At 10:30 a.m. on December 18, 1922, a Federal Reserve truck was loading $200,000 in $5 bills outside the U.S. Mint on West Colfax Avenue when a black Buick touring car pulled up. Two men jumped out firing sawed-off shotguns while a third grabbed the money bags. Federal Reserve guard Charles T. Linton was killed—the only Fed guard ever to die in a bank robbery. Fifty Mint Police inside the building returned fire, hitting one robber in the jaw. The gang escaped in 90 seconds. An abandoned garage on Gilpin Street later yielded the getaway car and the body of Nicholas Trainor, killed by his own crew. The case remained unsolved for 12 years until police identified five suspects—all of whom had since been killed in separate incidents. No one was ever charged. The money was never fully recovered.',
             verdict: 'The first successful U.S. Mint robbery. No one was ever charged.',
             image: {
-              src: '/images/dark-history/denver/denver-mint-1.jpg',
+              src: '/denver/dark-history/denver-mint.png',
               alt: 'Historic photograph of the Denver Mint building where the 1922 heist occurred',
             },
             location: {
@@ -1224,10 +1230,16 @@ export const denver: CityData = {
             title: 'The Lumber Baron Inn Murders',
             body: 'By 1970, the grand 1890 mansion that lumber baron John Mouat built had become a 23-unit rooming house for the unfortunate. On October 11, 1970, 16-year-old runaway Cara Lee Knoche celebrated her 17th birthday at her parents\' house and announced she would return to high school. Two days later, she was found dead under her bed at the rooming house, strangled. Her friend Marianne Weaver, 18, walked in at the worst moment—she witnessed the rape and murder, then was shot herself. The killer was never found. Today the building has been restored as the Lumber Baron Inn, a bed-and-breakfast that leans into its haunted reputation. Guests report gentle knocking, apparitions, and whispers. The Netflix series "28 Days Haunted" featured the inn. The case remains open.',
             verdict: 'Still unsolved after 50+ years. Call Denver PD at 720-913-7867 with information.',
-            image: {
-              src: '/images/dark-history/denver/lumber-baron-mansion.jpg',
-              alt: 'Historic Victorian mansion in Denver, now the Lumber Baron Inn, site of unsolved 1970 murders',
-            },
+            images: [
+              {
+                src: '/denver/dark-history/baron-inn.png',
+                alt: 'Historic Victorian mansion in Denver, now the Lumber Baron Inn, site of unsolved 1970 murders',
+              },
+              {
+                src: '/denver/dark-history/baron-inn-2.png',
+                alt: 'Lumber Baron Inn exterior view',
+              },
+            ],
             location: {
               name: 'Lumber Baron Inn, 2555 W 37th Ave',
               stillExists: true,
@@ -1275,7 +1287,7 @@ export const denver: CityData = {
             body: 'On Sunday, June 16, 1991, a man posing as a bank vice president entered the United Bank Tower downtown. Over the next hour, he executed four unarmed security guards—Phillip Mankoff, Scott McCarthy, William McCullum Jr., and Todd Wilson—then stole $200,000 from the vault. The killer was meticulous: he collected all 18 shell casings, wiped away fingerprints, and took the surveillance tapes. Seventeen of his eighteen shots hit his targets, suggesting professional training. Three weeks later, police arrested retired Denver police sergeant James King, who had worked as a guard at the bank and had substantial debt. The nationally televised trial ended in acquittal after nine days of jury deliberation. The money was never found. King died of dementia in 2023 at 77. No one else was ever charged. The case predated Columbine as Colorado\'s largest mass killing.',
             verdict: 'Cold case. The four guards were never given justice.',
             image: {
-              src: '/images/dark-history/denver/united-bank-tower-denver.jpg',
+              src: '/denver/dark-history/bank-massacre.png',
               alt: 'Downtown Denver high-rise building, former United Bank Tower where 1991 massacre occurred',
             },
             location: {
@@ -1320,10 +1332,16 @@ export const denver: CityData = {
             title: 'Blucifer: The Horse That Killed Its Creator',
             body: 'The 32-foot blue mustang with glowing red eyes that greets arrivals at Denver International Airport is nicknamed "Blucifer" for good reason. In 2006, a section of the sculpture fell from a hoist in artist Luis Jiménez\'s New Mexico studio, severing an artery in his leg. He bled to death on the studio floor. The piece was commissioned in 1992 for $300,000 but wasn\'t installed until 2008, two years after Jiménez\'s death—his sons and studio assistants completed it from his detailed plans. The demonic interpretation that locals have embraced contradicts the artist\'s intent: Jiménez designed the blue color as tribute to lowrider culture, the eyes as homage to his father\'s neon sign shop. But the death, the eyes, the stance—it all feeds into DIA\'s conspiracy mythology. The airport now sells Blucifer merchandise. His estate wishes you wouldn\'t call it that.',
             verdict: 'Luis Jiménez died before completion. The sculpture stands as commissioned.',
-            image: {
-              src: '/images/dark-history/denver/dia-blucifer-1.jpg',
-              alt: 'Blue mustang sculpture "Blucifer" at Denver International Airport entrance',
-            },
+            images: [
+              {
+                src: '/denver/dark-history/dia-1.png',
+                alt: 'Blue mustang sculpture "Blucifer" at Denver International Airport entrance',
+              },
+              {
+                src: '/denver/dark-history/dia-2.png',
+                alt: 'Blucifer sculpture close-up view',
+              },
+            ],
             location: {
               name: 'Denver International Airport, Peña Blvd',
               stillExists: true,
@@ -1364,10 +1382,16 @@ export const denver: CityData = {
             title: 'DIA: The Airport of Conspiracies',
             body: 'Denver International Airport opened in 1995, $2 billion over budget and 16 months late. The delays were blamed on the failed automated baggage system—or, depending on who you ask, construction of secret underground bunkers for the global elite. The Masonic dedication capstone dated March 19, 1994 mentions the "New World Airport Commission." The murals by Leo Tanguma depict soldiers in gas masks, burning forests, and dead children. The gargoyles in baggage claim emerge from actual suitcases. There are at least six underground levels. The airport sits on 53 square miles—twice the size of Manhattan—with runways arranged in a shape some call a swastika. All of this is true. What\'s not confirmed: Illuminati headquarters, lizard people, apocalypse bunkers, or tunnels connecting to NORAD. The airport has leaned in, posting signs during construction reading: "Apologies for the noise. It takes really big drills to get to the underworld."',
             verdict: 'The airport officially embraces the theories. They sell conspiracy merchandise.',
-            image: {
-              src: '/images/dark-history/denver/dia-terminal.jpg',
-              alt: 'Denver International Airport distinctive tent-like terminal structure',
-            },
+            images: [
+              {
+                src: '/denver/dark-history/dia-3.png',
+                alt: 'Denver International Airport distinctive tent-like terminal structure',
+              },
+              {
+                src: '/denver/dark-history/dia-4.png',
+                alt: 'DIA terminal interior view',
+              },
+            ],
             location: {
               name: 'Denver International Airport',
               stillExists: true,
@@ -1410,7 +1434,7 @@ export const denver: CityData = {
             body: 'The Croke-Patterson-Campbell Mansion was built in 1891 by Thomas Croke. He lived there for six months, then sold it for reasons he never explained—his mother had died there shortly after his wife. By the 1970s it was an office building that couldn\'t keep tenants: typewriters typed by themselves at night, party noises came from empty closets, babies cried from the third floor. During 1970s renovations, construction crews grew so frustrated with arriving to find their work undone that they brought in guard dogs. The next morning, both Dobermans were found dead on the sidewalk—they had apparently leapt from a third-floor window. The mansion is now a bed-and-breakfast called the Patterson Inn. Guests still report phantom dog barks from the upper floors.',
             verdict: 'The dogs are documented. The mansion is now a boutique hotel.',
             image: {
-              src: '/images/dark-history/denver/patterson-inn-mansion.jpg',
+              src: '/denver/dark-history/dogs-inn.png',
               alt: 'Historic Patterson Inn mansion in Denver, site of paranormal activity and mysterious dog deaths',
             },
             location: {
@@ -1454,7 +1478,7 @@ export const denver: CityData = {
             body: 'An 11-mile stretch between Thornton and Brighton has collected more paranormal legends than any road in Colorado. The "Gates of Hell" refer to iron gates marking where the Wolpert Mansion once stood—according to legend, a man burned it down with his family inside after becoming possessed. (The mansion was real; the fire happened in the 1970s when it was already abandoned.) Jogger\'s Hill near 120th Avenue is haunted by a phantom runner killed in a hit-and-run—locals say if you let him approach your driver\'s side window, you\'ll die. Drivers report a spectral Camaro that challenges them to race. An old dairy supposedly has a tree where accused witches were hanged. Warning signs have allegedly appeared reading "Hitchhikers May Be Demons." Ghost hunters report cold spots, strange feelings, and equipment malfunctions. The Denver Ghost Hunters\' Stephanie Smith: "I said \'I think there\'s something here, I don\'t feel alone.\'"',
             verdict: 'Multiple documented legends. Drive it at your own risk.',
             image: {
-              src: '/images/dark-history/denver/riverdale-road-2.jpg',
+              src: '/denver/dark-history/haunted-road.png',
               alt: 'Rural Colorado road landscape near Denver, representing Riverdale Road area',
             },
             location: {
@@ -1499,7 +1523,7 @@ export const denver: CityData = {
             body: 'In November 1873, prospector Alferd Packer left Utah leading 21 men toward the Breckenridge gold fields. By February 1874, Packer stumbled out of the mountains alone—with a pocket full of cash, the other men\'s belongings, and a story that kept changing. First he said the men had died and he\'d eaten them to survive. Then he blamed Shannon Bell for killing everyone before Packer shot him in self-defense. Five hatchet-marked bodies were eventually found. Packer escaped jail and spent eight years on the run before being captured. He was sentenced to death (later reduced to 40 years) and became a morbid celebrity. The Denver Post championed his innocence in the 1890s, and after his 1901 parole, he worked as a guard at the Post. He died peacefully in Littleton in 1907. 1989 forensic examination suggested homicide. A 1990s study of his pistol suggested innocence. The truth died with Packer.',
             verdict: 'Convicted of manslaughter for cannibalism. Truth still debated.',
             image: {
-              src: '/images/dark-history/denver/colorado-mountains-historical.jpg',
+              src: '/denver/dark-history/cannibal.png',
               alt: 'Historic photograph of Colorado Rocky Mountains where Alferd Packer cannibalism occurred',
             },
             location: {

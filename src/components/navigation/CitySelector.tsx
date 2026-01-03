@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { CITY_METADATA } from '@/data/cities'
 import { useNavigation } from './hooks/useNavigation'
 import type { AnyCitySection } from '@/lib/routes'
@@ -13,7 +13,7 @@ interface CitySelectorProps {
   preserveFilters?: boolean
 }
 
-export function CitySelector({
+function CitySelectorContent({
   currentCitySlug,
   currentCityName,
   currentSection,
@@ -74,5 +74,17 @@ export function CitySelector({
         </div>
       )}
     </div>
+  )
+}
+
+export function CitySelector(props: CitySelectorProps) {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700">
+        {props.currentCityName || 'Loading...'}
+      </div>
+    }>
+      <CitySelectorContent {...props} />
+    </Suspense>
   )
 }

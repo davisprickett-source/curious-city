@@ -1374,7 +1374,7 @@ export const chicago: CityData = {
         id: 'chi-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Ambition scarred by violence',
+        teaser: 'Ambition scarred by violence',
         intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
         items: [
           {

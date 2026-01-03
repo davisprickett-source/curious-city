@@ -101,7 +101,7 @@ export const fargo: CityData = {
             body: 'In the early 1900s, North Dakota had the most lenient divorce laws in America—you could establish residency in 90 days and get divorced on nearly any grounds. Wealthy Easterners flocked to Fargo for quick divorces. The state made a fortune until other states complained and the laws were tightened in 1899. Some called it the "Divorce Colony."',
             year: '1890s',
             image: {
-              src: '',
+              src: '/fargo/curiosities/divorce.png',
               alt: 'Historic downtown Fargo',
             },
             source: 'North Dakota Historical Society',
@@ -117,6 +117,10 @@ export const fargo: CityData = {
             title: 'The temperature once swung 93 degrees in 12 hours',
             body: 'On February 21, 1918, Fargo experienced one of the most extreme temperature swings in recorded history: from -33°F to 50°F in about 12 hours. A warm Chinook wind blasted through. Locals went from frostbite conditions to shirtsleeves in a single morning. The Red River Valley\'s continental climate regularly produces these violent swings.',
             year: '1918',
+            image: {
+              src: '/fargo/curiosities/cold-hot-day.png',
+              alt: 'Extreme temperature swing in Fargo',
+            },
             source: 'National Weather Service',
             location: {
               name: 'Fargo',
@@ -135,7 +139,7 @@ export const fargo: CityData = {
             title: 'Fargo sits on the bed of a lake larger than all five Great Lakes',
             body: 'The perfectly flat prairie is the silted floor of glacial Lake Agassiz, which covered 110,000 square miles 10,000 years ago—larger than all five Great Lakes combined. When the ice dam broke, it drained catastrophically, possibly triggering global cooling. The flatness isn\'t boring; it\'s one of the most dramatic geological features in North America.',
             image: {
-              src: '',
+              src: '/fargo/curiosities/big-lake.png',
               alt: 'Flat prairie horizon',
             },
             source: 'USGS',
@@ -165,7 +169,7 @@ export const fargo: CityData = {
             body: 'The Red River flows north toward Canada, meaning snow melts in the southern tributaries first and pushes water toward still-frozen stretches downstream. Ice jams trap the water and push it back through Fargo. The 1997 flood was the worst in 500 years—the entire city mobilized to fill sandbags. A $2.75 billion diversion channel is being built to prevent future catastrophes.',
             year: '1997',
             image: {
-              src: '',
+              src: '/fargo/curiosities/cold-hot-day.png',
               alt: 'Red River during spring flooding',
             },
             source: 'US Army Corps of Engineers',
@@ -199,6 +203,10 @@ export const fargo: CityData = {
             title: 'Bonnie and Clyde hid out here',
             body: 'In 1932, Bonnie Parker and Clyde Barrow spent several weeks in an apartment in Fargo, laying low after a string of robberies. They even posed for photos. Local police didn\'t recognize them. The apartment building still stands on 4th Street South, though there\'s no plaque—the city has mixed feelings about celebrating outlaws.',
             year: '1932',
+            image: {
+              src: '/fargo/curiosities/bonnie-clyde.png',
+              alt: 'Historic apartment building',
+            },
             source: 'North Dakota History magazine',
             location: {
               name: '507 4th Street South',
@@ -213,7 +221,7 @@ export const fargo: CityData = {
             body: 'Roger Maris, who broke Babe Ruth\'s single-season home run record in 1961, grew up in Fargo. The Roger Maris Museum in West Acres Mall is genuinely moving—letters, memorabilia, and the story of a man who never got the credit he deserved. His 61 home runs stood for 37 years until steroid-era players passed him.',
             year: '1961',
             image: {
-              src: '',
+              src: '/fargo/curiosities/baseball.png',
               alt: 'Baseball history display',
             },
             source: 'Roger Maris Museum',
@@ -228,6 +236,10 @@ export const fargo: CityData = {
             category: 'science',
             title: 'Schools close for "cold days" like Southern schools close for snow',
             body: 'When wind chills drop below -35°F, Fargo schools close. It\'s not squeamishness—exposed skin can develop frostbite in under 10 minutes at those temperatures. Kids waiting for buses become a genuine safety risk. Locals keep engine block heaters plugged in to prevent their cars from failing to start.',
+            image: {
+              src: '/fargo/curiosities/cold-school.png',
+              alt: 'Fargo school on a cold winter day',
+            },
             source: 'National Weather Service',
             location: {
               name: 'Fargo',
@@ -254,6 +266,10 @@ export const fargo: CityData = {
             title: 'Microsoft chose Fargo for a reason',
             body: 'Microsoft\'s Fargo campus employs about 2,000 people, making it one of the company\'s largest outside Seattle. Why Fargo? The acquisition of Great Plains Software in 2001 brought the campus. Low cost of living, no state income tax, and an endless supply of engineers from NDSU has kept it growing. It\'s one reason Fargo hasn\'t suffered the brain drain that plagues rural America.',
             year: '2001',
+            image: {
+              src: '/fargo/curiosities/fargo-microsoft.png',
+              alt: 'Microsoft Fargo campus',
+            },
             source: 'Microsoft Corporation',
             location: {
               name: 'Microsoft Fargo Campus',
@@ -266,6 +282,10 @@ export const fargo: CityData = {
             category: 'culture',
             title: 'The Scandinavian heritage shows in unexpected ways',
             body: 'Norwegian and German immigrants settled this region heavily in the 1800s. The result: Lutheran churches on every corner, hotdish at every potluck, and a cultural reserve that outsiders sometimes mistake for coldness. Locals call it "Scandinavian stoicism." The lefse and lutefisk festivals are not ironic—people genuinely love this stuff.',
+            image: {
+              src: '/fargo/curiosities/lutefisk-festival.png',
+              alt: 'Scandinavian heritage festival in Fargo',
+            },
             source: 'Historical and Cultural Society of Clay County',
             location: {
               name: 'Fargo-Moorhead',
@@ -294,6 +314,10 @@ export const fargo: CityData = {
             category: 'nature',
             title: 'The sunsets last forever because the land is so flat',
             body: 'With no mountains or hills to block the view, sunsets on the prairie seem to go on for hours. The horizon is so distant that you can watch the sun sink below it from an unobstructed angle rarely seen elsewhere. Photographers call the Red River Valley "Big Sky Country East."',
+            image: {
+              src: '/fargo/curiosities/sunset.png',
+              alt: 'Prairie sunset over flat horizon',
+            },
             source: 'Local observation',
             location: {
               name: 'Red River Valley',
@@ -954,7 +978,7 @@ export const fargo: CityData = {
         id: 'far-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Cold cases on the prairie',
+        teaser: 'Cold cases on the prairie',
         intro: 'On the flat expanse of the Red River Valley, Fargo\'s dark history is sparse but haunting—unsolved murders that span decades, bodies found in the river, and crimes that remain open long after the headlines fade.',
         items: [
           {

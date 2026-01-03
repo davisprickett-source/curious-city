@@ -90,12 +90,12 @@ export const raleigh: CityData = {
             year: '1971-1984',
             images: [
               {
-                src: '/raleigh-bunker-main.webp',
+                src: '/Raleigh/Curiosities/raleigh-bunker-main.webp',
                 alt: 'The Village Underground entrance in Raleigh',
                 credit: 'Historical Photo',
               },
               {
-                src: '/raleigh-bunker2.webp',
+                src: '/Raleigh/Curiosities/raleigh-bunker2.webp',
                 alt: 'Inside the Village Underground complex',
                 credit: 'Historical Photo',
               },
@@ -125,12 +125,12 @@ export const raleigh: CityData = {
             year: 'early 1900s',
             images: [
               {
-                src: '/pigeon-house0-771x513.jpg',
+                src: '/Raleigh/Curiosities/pigeon-house0-771x513.jpg',
                 alt: 'The Pigeon House Branch tunnel entrance',
                 credit: 'Raleigh Commons',
               },
               {
-                src: '/2988893_1Raleigh-Aqueduct-Exploration.jpg',
+                src: '/Raleigh/Curiosities/2988893_1Raleigh-Aqueduct-Exploration.jpg',
                 alt: 'Inside the Pigeon House Branch tunnel system',
                 credit: 'ABC11',
               },
@@ -164,7 +164,7 @@ export const raleigh: CityData = {
             body: 'Andrew Johnson, the 17th President, was born on December 29, 1808 in the upstairs loft of a detached kitchen at Casso\'s Inn, a roadside tavern in Raleigh. His father Jacob worked as a hostler and Capitol janitor; his mother Mary was a weaver. The structure later served as a flophouse for hobos during the Great Depression and was only moved to Mordecai Historic Park in 1975. Strangely, when President Johnson returned to Raleigh in 1867, newspapers made no mention whatsoever of any visit to his birthplace.',
             year: '1808',
             image: {
-              src: '/Andrew Johnson.png',
+              src: '/Raleigh/Curiosities/Andrew Johnson.png',
               alt: 'Andrew Johnson birthplace at Mordecai Historic Park',
               credit: 'NCpedia',
             },
@@ -1390,7 +1390,7 @@ export const raleigh: CityData = {
         id: 'ral-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Southern gentility hiding racial terror',
+        teaser: 'Southern gentility hiding racial terror',
         intro: 'A state capital that witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds.',
         items: [
           {

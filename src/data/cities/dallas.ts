@@ -615,7 +615,7 @@ export const dallas: CityData = {
         id: 'dal-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Legends and cold cases that never close',
+        teaser: 'Legends and cold cases that never close',
         intro: 'Dallas hides bizarre vanishings, ghostly rivalries, and cold-blooded murders that defy explanation—from decapitated lovers to phantom hitchhikers. These off-the-brochure stories linger in lore long after headlines move on. A web of legends and cold cases where only fragments are verified, and none feel fully closed.',
         items: [
           {

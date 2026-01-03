@@ -1158,7 +1158,7 @@ export const tampa: CityData = {
         id: 'tam-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Sunshine worn like a mask',
+        teaser: 'Sunshine worn like a mask',
         intro: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The city\'s dark history isn\'t hidden—it\'s just overshadowed by better marketing.',
         items: [
           {

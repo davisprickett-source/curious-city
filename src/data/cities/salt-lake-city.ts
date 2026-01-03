@@ -1165,7 +1165,7 @@ export const salt_lake_city: CityData = {
         id: 'slc-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Where the desert keeps its secrets',
+        teaser: 'Where the desert keeps its secrets',
         intro: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
         items: [
           {

@@ -5,7 +5,7 @@ export const minneapolis: CityData = {
     name: 'Minneapolis',
     tagline: 'Mill City vibes and urban curiosity',
     heroImage: {
-      src: '/Minneapolis Curiosities/banner.png',
+      src: '/banners/Minneapolis-banner.png',
       alt: 'Minneapolis curiosities banner',
     },
     content: [
@@ -143,7 +143,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Mill City Museum', url: 'https://www.google.com/maps/place/Mill+City+Museum/@44.9789,-93.2571,17z', stillExists: true },
             image: {
-              src: '/mill curiosity 2.png',
+              src: '/Minneapolis/mill curiosity 2.png',
               alt: 'The Great Mill Disaster of 1878 in Minneapolis',
             },
           },
@@ -179,7 +179,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
             image: {
-              src: '/st anthony original twin.png',
+              src: '/Minneapolis/st anthony original twin.png',
               alt: 'Historic St. Anthony, the original Twin City of Minneapolis',
             },
           },
@@ -201,7 +201,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/honeycrisps.png',
+              src: '/Minneapolis/Minneapolis Curiosities/honeycrisps.png',
               alt: 'Honeycrisp apples',
             },
           },
@@ -220,7 +220,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
             image: {
-              src: '/Minneapolis Curiosities/mussels.png',
+              src: '/Minneapolis/Minneapolis Curiosities/mussels.png',
               alt: 'Freshwater mussels used to monitor water quality',
             },
           },
@@ -243,7 +243,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Minneapolis City Hall', url: 'https://www.google.com/maps/place/Minneapolis+City+Hall/@44.9770,-93.2650,17z', stillExists: true },
             image: {
-              src: '/Minneapolis Curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
+              src: '/Minneapolis/Minneapolis Curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
               alt: 'Minneapolis City Hall with its iconic clock tower',
             },
           },
@@ -266,7 +266,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
             image: {
-              src: '/Minneapolis Curiosities/skyway.png',
+              src: '/Minneapolis/Minneapolis Curiosities/skyway.png',
               alt: 'Minneapolis skyway system',
             },
           },
@@ -293,7 +293,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Minneapolis & St. Paul', url: 'https://www.google.com/maps/place/Minneapolis,+MN/@44.9778,-93.2650,12z', stillExists: true },
             image: {
-              src: '/Minneapolis Curiosities/gangsters.png',
+              src: '/Minneapolis/Minneapolis Curiosities/gangsters.png',
               alt: '1930s gangsters in Minnesota',
             },
           },
@@ -314,7 +314,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/duckduckgreyduck.png',
+              src: '/Minneapolis/Minneapolis Curiosities/duckduckgreyduck.png',
               alt: 'Duck Duck Gray Duck game illustration',
             },
           },
@@ -341,7 +341,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Elmer L. Andersen Library, University of Minnesota', url: 'https://www.google.com/maps/place/Elmer+L.+Andersen+Library/@44.9727,-93.2354,17z', stillExists: true },
             image: {
-              src: '/Minneapolis Curiosities/undergroundlibrary.png',
+              src: '/Minneapolis/Minneapolis Curiosities/undergroundlibrary.png',
               alt: 'Underground library tunnels carved into sandstone',
             },
           },
@@ -360,15 +360,15 @@ export const minneapolis: CityData = {
             location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
             images: [
               {
-                src: '/Minneapolis Curiosities/falls-1.png',
+                src: '/Minneapolis/Minneapolis Curiosities/falls-1.png',
                 alt: 'St. Anthony Falls',
               },
               {
-                src: '/Minneapolis Curiosities/falls-2.png',
+                src: '/Minneapolis/Minneapolis Curiosities/falls-2.png',
                 alt: 'St. Anthony Falls historic view',
               },
               {
-                src: '/Minneapolis Curiosities/falls-3.png',
+                src: '/Minneapolis/Minneapolis Curiosities/falls-3.png',
                 alt: 'St. Anthony Falls and surrounding area',
               },
             ],
@@ -391,7 +391,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/3 musketeers.png',
+              src: '/Minneapolis/Minneapolis Curiosities/3 musketeers.png',
               alt: 'Three Musketeers candy bar with Minneapolis Nougat',
             },
           },
@@ -415,15 +415,15 @@ export const minneapolis: CityData = {
             location: { name: 'Lakewood Cemetery', url: 'https://www.google.com/maps/place/Lakewood+Cemetery/@44.9487,-93.3019,17z', stillExists: true },
             images: [
               {
-                src: '/Minneapolis Curiosities/Lakewood_Cemetery_Memorial_Chapel-1.jpg',
+                src: '/Minneapolis/Minneapolis Curiosities/Lakewood_Cemetery_Memorial_Chapel-1.jpg',
                 alt: 'Lakewood Cemetery Memorial Chapel exterior',
               },
               {
-                src: '/Minneapolis Curiosities/lakewood-2.png',
+                src: '/Minneapolis/Minneapolis Curiosities/lakewood-2.png',
                 alt: 'Lakewood Cemetery Memorial Chapel interior dome',
               },
               {
-                src: '/Minneapolis Curiosities/lakewood-3.png',
+                src: '/Minneapolis/Minneapolis Curiosities/lakewood-3.png',
                 alt: 'Lakewood Cemetery Memorial Chapel mosaic detail',
               },
             ],
@@ -449,7 +449,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/twinkies.png',
+              src: '/Minneapolis/Minneapolis Curiosities/twinkies.png',
               alt: 'The Twinkie Law scandal',
             },
           },
@@ -471,7 +471,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/mystery science theater.png',
+              src: '/Minneapolis/Minneapolis Curiosities/mystery science theater.png',
               alt: 'Mystery Science Theater 3000',
             },
           },
@@ -493,7 +493,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/toaster.png',
+              src: '/Minneapolis/Minneapolis Curiosities/toaster.png',
               alt: 'Vintage pop-up toaster',
             },
           },
@@ -511,7 +511,7 @@ export const minneapolis: CityData = {
               },
             ],
             image: {
-              src: '/Minneapolis Curiosities/sculpture garden.png',
+              src: '/Minneapolis/Minneapolis Curiosities/sculpture garden.png',
               alt: 'Minneapolis Sculpture Garden',
             },
           },
@@ -2274,7 +2274,7 @@ export const minneapolis: CityData = {
         id: 'mpls-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Unsolved mysteries beneath the skyways',
+        teaser: 'Unsolved mysteries beneath the skyways',
         intro: 'Minneapolis is a city of lakes, skyways, and shadows—where three young brothers vanished without a trace in 1951, where cold cases span generations, and where families still search for answers that may never come.',
         items: [
           {
@@ -2408,7 +2408,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis/Minneapolis dark history/adam johnson.png',
+                src: '/Minneapolis/Minneapolis%20dark%20history/adam%20johnson.png',
                 alt: 'Adam Richard Johnson',
               },
             ],
@@ -2547,7 +2547,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis/Minneapolis dark history/childs.png',
+                src: '/Minneapolis/Minneapolis%20dark%20history/childs.png',
                 alt: 'Jeanie Childs cold case investigation',
               },
             ],

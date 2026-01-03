@@ -109,14 +109,16 @@ function ImageCarousel({ images, title }: { images: Array<{ src: string; alt: st
               </svg>
             </button>
 
-            {/* Dots indicator */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {/* Minimalistic dot indicators - smaller, thin outlines */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
               {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
+                  className={`rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? 'w-2 h-2 border-2 border-white bg-transparent'
+                      : 'w-2 h-2 border border-white/60 bg-transparent hover:border-white'
                   }`}
                   aria-label={`Go to image ${index + 1}`}
                 />
@@ -720,8 +722,25 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
               </motion.div>
             )}
 
-            {/* Image with animations */}
-            {item.image && !item.illustration && !item.images && (
+            {/* Image Carousel with animations - Show carousel if multiple images exist */}
+            {item.images && item.images.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1.2,
+                  delay: 0.3,
+                  ease: [0.16, 1, 0.3, 1] as any
+                }}
+                className="mb-6"
+              >
+                <ImageCarousel images={item.images} title={item.title} />
+              </motion.div>
+            )}
+
+            {/* Single Image with animations - Show single image if no carousel */}
+            {!item.images && item.image && (
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -745,23 +764,6 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
                     {item.image.credit}
                   </div>
                 )}
-              </motion.div>
-            )}
-
-            {/* Image Carousel with animations */}
-            {item.images && item.images.length > 0 && !item.illustration && (
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 1.2,
-                  delay: 0.3,
-                  ease: [0.16, 1, 0.3, 1] as any
-                }}
-                className="mb-6"
-              >
-                <ImageCarousel images={item.images} title={item.title} />
               </motion.div>
             )}
 

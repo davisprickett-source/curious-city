@@ -75,49 +75,49 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-accent-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">📍 Story Tips & Hidden Gems</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Story Tips & Hidden Gems</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       Know a fascinating local story we haven't covered? Have a hidden gem to share? We're always looking for new angles and undiscovered places.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-blue-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">📚 Historical Corrections & Context</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Historical Corrections & Context</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       If you have additional information, corrections, or historical context for our articles, we want to hear from you. Accuracy matters.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-green-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">🏪 Business Listings</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Business Listings</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       Restaurant, bar, or coffee shop owner? While we discover most places independently, you're welcome to share updates about your establishment.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-purple-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">🤝 Partnerships & Collaborations</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Partnerships & Collaborations</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       Interested in partnering with The Curious City? We're open to collaborations with local organizations, tourism boards, and media outlets.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-orange-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">💼 Press & Media Inquiries</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Press & Media Inquiries</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       Journalists and media professionals: we're happy to provide interviews, expert commentary, or access to our research.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-red-500">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">⚖️ Legal & Copyright</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">Legal & Copyright</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       For copyright concerns, DMCA notices, or other legal matters, please email us with "LEGAL" in the subject line.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-neutral-400">
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">💬 General Feedback</h3>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-2">General Feedback</h3>
                     <p className="text-neutral-700 text-sm mb-0">
                       Have thoughts on how we can improve? Found a bug on the site? We appreciate all feedback, positive or constructive.
                     </p>

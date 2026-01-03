@@ -8,15 +8,15 @@ interface EventTimeBucketsProps {
 }
 
 const sectionLabels: Record<EventStatus, string> = {
-  'happening-now': '🔴 Happening Now',
-  'starts-soon': '⏰ Starting Soon',
-  today: '📍 Today',
-  tomorrow: '📅 Tomorrow',
-  'this-weekend': '🎉 This Weekend',
-  'this-week': '📆 This Week',
-  'next-week': '⏭️ Next Week',
-  'this-month': '📅 This Month',
-  upcoming: '🔮 Upcoming',
+  'happening-now': 'Happening Now',
+  'starts-soon': 'Starting Soon',
+  today: 'Today',
+  tomorrow: 'Tomorrow',
+  'this-weekend': 'This Weekend',
+  'this-week': 'This Week',
+  'next-week': 'Next Week',
+  'this-month': 'This Month',
+  upcoming: 'Upcoming',
   ended: 'Ended',
 }
 

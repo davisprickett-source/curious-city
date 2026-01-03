@@ -1107,7 +1107,7 @@ export const anchorage: CityData = {
         id: 'anc-dark-history',
         type: 'section',
         title: 'Dark History',
-        hook: 'Where predators thrive and victims vanish',
+        teaser: 'Where predators thrive and victims vanish',
         intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
         items: [
           {

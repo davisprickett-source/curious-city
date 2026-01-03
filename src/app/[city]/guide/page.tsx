@@ -35,42 +35,36 @@ export default async function GuidePage({ params }: GuidePageProps) {
       title: 'Best Bars',
       description: 'Cocktail lounges, dive bars, and neighborhood favorites',
       href: `/${slug}/bars`,
-      icon: '🍸',
       gradient: 'from-amber-500 to-orange-600',
     },
     {
       title: 'Best Restaurants',
       description: 'From fine dining to hidden gems, the city\'s culinary highlights',
       href: `/${slug}/restaurants`,
-      icon: '🍽️',
       gradient: 'from-red-500 to-pink-600',
     },
     {
       title: 'Best Coffee Shops',
       description: 'Local roasters, cozy cafes, and third wave coffee',
       href: `/${slug}/coffee-shops`,
-      icon: '☕',
       gradient: 'from-yellow-600 to-amber-700',
     },
     {
       title: 'Hidden Gems',
       description: 'Off-the-beaten-path spots that locals love',
       href: `/${slug}/hidden-gems`,
-      icon: '💎',
       gradient: 'from-emerald-500 to-teal-600',
     },
     {
       title: 'Local Favorites',
       description: 'Iconic establishments that define the city',
       href: `/${slug}/local-favorites`,
-      icon: '⭐',
       gradient: 'from-blue-500 to-indigo-600',
     },
     {
       title: 'Lost & Loved',
       description: 'Beloved places we miss and remember',
       href: `/${slug}/lost-and-loved`,
-      icon: '🏛️',
       gradient: 'from-slate-500 to-gray-600',
     },
   ]
@@ -111,9 +105,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
               >
                 <div className="bg-white border-2 border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-xl transition-all duration-300 h-full">
                   {/* Gradient Header */}
-                  <div className={`h-32 bg-gradient-to-br ${category.gradient} flex items-center justify-center`}>
-                    <span className="text-6xl">{category.icon}</span>
-                  </div>
+                  <div className={`h-32 bg-gradient-to-br ${category.gradient}`} />
 
                   {/* Content */}
                   <div className="p-6">
