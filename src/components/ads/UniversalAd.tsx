@@ -49,21 +49,5 @@ export function UniversalAd({ slot, className }: UniversalAdProps) {
   }
 }
 
-/**
- * Convenience function to create ad slot configs
- */
-export function createAdSlot(
-  id: string,
-  size: AdSlotConfig['size'],
-  targeting?: Record<string, string>
-): AdSlotConfig {
-  return {
-    id,
-    size,
-    networks: {
-      primary: 'opsco',
-      fallback: ['yieldlift', 'adsense', 'placeholder'],
-    },
-    targeting,
-  }
-}
+// Re-export createAdSlot for convenience
+export { createAdSlot } from '@/lib/ads/slots'
