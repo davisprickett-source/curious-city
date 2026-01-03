@@ -98,6 +98,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.npr.org',
       },
+      // Tourism and city sites
+      {
+        protocol: 'https',
+        hostname: 'www.visitphoenix.com',
+      },
       // Government sites (wildcards for .gov domains)
       {
         protocol: 'https',
