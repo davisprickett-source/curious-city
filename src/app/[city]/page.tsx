@@ -5,15 +5,16 @@ import { Metadata } from 'next'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 import { Footer, RelatedCities } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import { routes } from '@/lib/routes'
-import { MasonryGrid } from '@/components/layout/MasonryGrid'
-import { ContentCard } from '@/components/cards/ContentCard'
-import { aggregateCityFeed } from '@/lib/content/aggregateFeed'
 
 const cityBanners: Record<string, string> = {
-  minneapolis: '/Minneapolis-banner.png',
-  dallas: '/Dallas-banner.png',
-  raleigh: '/Raleigh-banner.png',
+  minneapolis: '/banners/Minneapolis-banner.png',
+  dallas: '/banners/Dallas-banner.png',
+  raleigh: '/banners/Raleigh-banner.png',
+  denver: '/banners/Denver-Banner.png',
+  tampa: '/banners/Tampa-Banner.png',
+  phoenix: '/banners/Phoenix Banner.png',
+  portland: '/banners/Portland Banner.png',
+  'salt-lake-city': '/banners/Salt Lake City Banner.png',
 }
 
 interface CityPageProps {
@@ -47,14 +48,51 @@ export default async function CityPage({ params }: CityPageProps) {
     notFound()
   }
 
-  // Get city-specific content feed
-  const feed = await aggregateCityFeed(slug, {
-    limit: 50,
-    types: ['article', 'curiosity', 'hidden-gem', 'dark-history', 'lost-loved'],
-    sortBy: 'recent',
-  })
-
   const bannerSrc = cityBanners[city.slug]
+
+  // Define content sections available for this city
+  const contentSections = [
+    {
+      title: 'Dark History',
+      description: 'Unsolved mysteries, forgotten crimes, and the city\'s shadowy past',
+      href: `/${slug}/dark-history`,
+      gradient: 'from-red-900 to-red-700',
+      thumbnail: city.content.find(c => c.type === 'dark-history')?.image?.src,
+    },
+    {
+      title: 'Curiosities',
+      description: 'Fascinating facts, peculiar details, and surprising stories',
+      href: `/${slug}/curiosities`,
+      gradient: 'from-purple-600 to-indigo-600',
+      thumbnail: city.content.find(c => c.type === 'curiosity')?.image?.src,
+    },
+    {
+      title: 'Hidden Gems',
+      description: 'Off-the-beaten-path spots and local secrets',
+      href: `/${slug}/hidden-gems`,
+      gradient: 'from-emerald-600 to-teal-600',
+      thumbnail: city.content.find(c => c.type === 'hidden-gem')?.image?.src,
+    },
+    {
+      title: 'Lost & Loved',
+      description: 'Beloved places we miss and remember fondly',
+      href: `/${slug}/lost-and-loved`,
+      gradient: 'from-amber-600 to-orange-600',
+      thumbnail: city.content.find(c => c.type === 'lost-and-loved')?.image?.src,
+    },
+    {
+      title: 'Guide',
+      description: 'Best bars, restaurants, coffee shops, and local favorites',
+      href: `/${slug}/guide`,
+      gradient: 'from-blue-600 to-cyan-600',
+    },
+    {
+      title: 'Events',
+      description: 'What\'s happening around town',
+      href: `/${slug}/events`,
+      gradient: 'from-pink-600 to-rose-600',
+    },
+  ]
 
   return (
     <>
@@ -90,68 +128,72 @@ export default async function CityPage({ params }: CityPageProps) {
             )}
           </div>
 
-          {/* Quick Links to Guide and Events */}
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
-            <Link
-              href={routes.cityGuide(slug)}
-              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
-            >
-              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
-                Guide
-              </h2>
-              <p className="text-sm text-neutral-600">
-                Bars, restaurants, coffee shops, and local favorites
-              </p>
-            </Link>
-
-            <Link
-              href={routes.cityEvents(slug)}
-              className="group block p-6 bg-white rounded-xl border-2 border-neutral-200 hover:border-accent-500 hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
-            >
-              <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-accent-700 mb-2">
-                Events
-              </h2>
-              <p className="text-sm text-neutral-600">
-                What's happening around town
-              </p>
-            </Link>
-          </div>
-
-          {/* Content Feed Section */}
+          {/* Content Sections Grid */}
           <section className="mb-16">
             <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-neutral-900">
-                Stories & Discoveries
+                Explore {city.name}
               </h2>
               <p className="text-neutral-600 mt-2">
-                Articles, history, hidden gems, curiosities, and local culture
+                Discover the stories, secrets, and soul of the city
               </p>
             </div>
 
-            {feed.items.length > 0 ? (
-              <MasonryGrid
-                columns={{
-                  sm: 1,
-                  md: 2,
-                  lg: 3,
-                }}
-              >
-                {feed.items.map((item, index) => (
-                  <ContentCard
-                    key={`${item.type}-${index}`}
-                    data={item}
-                    variant="standard"
-                    priority={index < 6}
-                  />
-                ))}
-              </MasonryGrid>
-            ) : (
-              <div className="text-center py-12 bg-neutral-50 rounded-xl">
-                <p className="text-neutral-600">
-                  No content available yet for {city.name}
-                </p>
-              </div>
-            )}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {contentSections.map((section) => (
+                <Link
+                  key={section.href}
+                  href={section.href}
+                  className="group block bg-white border-2 border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-xl transition-all duration-300"
+                >
+                  {/* Image or Gradient Header */}
+                  {section.thumbnail ? (
+                    <div className="relative h-48 bg-neutral-100">
+                      <Image
+                        src={section.thumbnail}
+                        alt={section.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${section.gradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
+                    </div>
+                  ) : (
+                    <div className={`h-48 bg-gradient-to-br ${section.gradient}`} />
+                  )}
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
+                      {section.title}
+                    </h3>
+                    <p className="text-neutral-600 text-sm leading-relaxed">
+                      {section.description}
+                    </p>
+                  </div>
+
+                  {/* Footer */}
+                  <div className="px-6 pb-6">
+                    <div className="inline-flex items-center text-accent-600 font-medium group-hover:gap-2 transition-all">
+                      Explore
+                      <svg
+                        className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </section>
 
           {/* Related Cities */}
