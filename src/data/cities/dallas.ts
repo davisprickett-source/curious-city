@@ -58,7 +58,7 @@ export const dallas: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Dallas',
+        title: 'Dallas Curiosities',
         teaser: 'Underground cities, 30-foot eyeballs, and secrets beneath the Big D',
         items: [
           {
@@ -307,7 +307,7 @@ export const dallas: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Dallas',
         teaser: 'Secret speakeasies behind barber shops, underground tunnels, and where Dallas gets weird',
         intro: 'These aren\'t in the guidebooks. A 3-mile underground city beneath downtown, secret speakeasies hidden behind barber shops and bridal stores, a 30-foot eyeball sculpture in a hotel courtyard, vintage streetcars from 1909 you can ride for free, and a museum dedicated entirely to geometric shapes. This is where Dallas gets weird.',
         items: [
@@ -616,7 +616,7 @@ export const dallas: CityData = {
       {
         id: 'dal-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Big D, Dark Secrets',
         teaser: 'Legends and cold cases that never close',
         intro: 'Dallas hides bizarre vanishings, ghostly rivalries, and cold-blooded murders that defy explanation—from decapitated lovers to phantom hitchhikers. These off-the-brochure stories linger in lore long after headlines move on. A web of legends and cold cases where only fragments are verified, and none feel fully closed.',
         items: [
@@ -1410,7 +1410,7 @@ export const dallas: CityData = {
       {
         id: 'dal-lost-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Dallas',
         items: [
           {
             id: 'dal-lost-1',

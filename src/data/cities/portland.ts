@@ -58,7 +58,7 @@ export const portland: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Portland',
+        title: 'Portland Curiosities',
         teaser: 'Black exclusion laws, Shanghai tunnels, and the dark roots of weird Portland',
         items: [
           {
@@ -455,7 +455,7 @@ export const portland: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Portland',
         teaser: 'Cold War bunkers, Shanghai tunnels, and the world\'s smallest park',
         intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and the world\'s smallest park. This is where Portland gets genuinely obscure.',
         items: [
@@ -1046,7 +1046,7 @@ export const portland: CityData = {
       {
         id: 'pdx-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Weird & Violent',
         teaser: 'Weirdness that always included violence',
         intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. This was the only state admitted to the Union with a Black exclusion clause in its constitution. The city earned its reputation as the "Shanghai Capital of the World" by kidnapping drunken men and selling them to ship captains. Its second-largest city was washed away in a flood—and the Black residents who lived there were left to fend for themselves. Serial killers have hunted along its highways. A child vanished from his elementary school and was never found. Portland\'s weirdness was always there, but so was the violence—it just dressed better.',
         items: [
@@ -1664,7 +1664,7 @@ export const portland: CityData = {
       {
         id: 'pdx-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Portland',
         teaser: 'Berbati\'s Pan, Satyricon, and the music venues that defined Portland nights',
         items: [
           {

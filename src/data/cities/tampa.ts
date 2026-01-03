@@ -58,7 +58,7 @@ export const tampa: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Tampa',
+        title: 'Tampa Curiosities',
         teaser: 'Fictional pirates, cigar rollers, and the secrets beneath the sunshine',
         items: [
           {
@@ -404,7 +404,7 @@ export const tampa: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Tampa',
         teaser: 'Secret speakeasies, hidden tunnels, and spots that locals don\'t even know about',
         intro: 'The genuinely obscure — places even longtime Tampa residents don\'t know about. Secret speakeasies, hidden tunnels, forgotten history, and spots that require insider knowledge.',
         items: [],
@@ -1159,7 +1159,7 @@ export const tampa: CityData = {
       {
         id: 'tam-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Sunshine & Shadows',
         teaser: 'Sunshine worn like a mask',
         intro: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The city\'s dark history isn\'t hidden—it\'s just overshadowed by better marketing.',
         items: [
@@ -1825,7 +1825,7 @@ export const tampa: CityData = {
       {
         id: 'tampa-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Tampa',
         teaser: 'The Columbia, Ybor nightclubs, and Tampa\'s legendary lost establishments',
         items: [
           {

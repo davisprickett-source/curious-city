@@ -79,7 +79,7 @@ export const raleigh: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Raleigh',
+        title: 'Raleigh Curiosities',
         teaser: 'Cold War bunkers turned punk venues, hidden tunnels, and the City of Oaks\' secrets',
         items: [
           {
@@ -390,7 +390,7 @@ export const raleigh: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Raleigh',
         teaser: 'Secret speakeasies, hidden gardens, and places that lifelong residents don\'t know',
         intro: 'The genuinely obscure — places even lifelong Raleigh residents don\'t know about.',
         items: [
@@ -1391,7 +1391,7 @@ export const raleigh: CityData = {
       {
         id: 'ral-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'City of Oaks, City of Secrets',
         teaser: 'Southern gentility hiding racial terror',
         intro: 'A state capital that witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds.',
         items: [
@@ -1600,7 +1600,7 @@ export const raleigh: CityData = {
       {
         id: 'raleigh-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Raleigh',
         teaser: '42nd Street Oyster Bar, The Brewery, and Raleigh\'s lost gathering places',
         items: [
           {

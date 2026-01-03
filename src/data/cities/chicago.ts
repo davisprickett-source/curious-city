@@ -176,7 +176,7 @@ export const chicago: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Chicago',
+        title: 'Chicago Curiosities',
         teaser: 'Flooded freight tunnels, reversed rivers, and the secrets beneath the L',
         items: [
           {
@@ -537,7 +537,7 @@ export const chicago: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Chicago',
         teaser: '60 miles of flooded freight tunnels, abandoned L stations, and Capone\'s speakeasies',
         intro: 'These aren\'t in the guidebooks. A 60-mile underground freight tunnel network flooded by the Chicago River. Abandoned L stations frozen in time. Secret speakeasies where Al Capone drank. Hidden beaches where locals bring hammocks. The real Chicago exists below street level and behind unmarked doors.',
         items: [
@@ -1375,7 +1375,7 @@ export const chicago: CityData = {
       {
         id: 'chi-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'City of Unsolved Mysteries',
         teaser: 'Ambition scarred by violence',
         intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
         items: [
@@ -1919,7 +1919,7 @@ export const chicago: CityData = {
       {
         id: 'chicago-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Chicago',
         teaser: 'Hot Doug\'s, The Hideout, and the Chicago institutions that shaped the city',
         items: [
           {

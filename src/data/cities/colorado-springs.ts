@@ -58,7 +58,7 @@ export const colorado_springs: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Colorado Springs',
+        title: 'Colorado Springs Curiosities',
         teaser: 'Tesla\'s lightning experiments, underground tunnels, and secrets in the shadow of Pikes Peak',
         items: [
           {
@@ -542,7 +542,7 @@ export const colorado_springs: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Colorado Springs',
         teaser: 'Haunted railroad tunnels, Cold War relics, and a vagabond artist\'s miniature city',
         intro:
           'These aren\'t in the guidebooks. Abandoned Cold War relics, collapsed railroad tunnels haunted by ghostly miners, tuberculosis huts scattered as garden sheds, underground speakeasies, and a 3,000-square-foot miniature city built by a vagabond artist. Colorado Springs\' obscure history runs deep.',
@@ -1435,7 +1435,7 @@ export const colorado_springs: CityData = {
       {
         id: 'cos-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Shadows of Pikes Peak',
         teaser: 'Violence beneath the postcard scenery',
         intro: 'Colorado Springs sits in the shadow of Pikes Peak, a city of military precision, evangelical fervor, and stark natural beauty. But the same mountains that draw tourists also hide crimes. The Rampart Range has witnessed murders, mysterious disappearances, and stray bullets falling from the sky. From serial killers to unsolved ax murders to wildfires that consumed neighborhoods, this city\'s dark history reveals the violence lurking beneath the postcard scenery.',
         items: [

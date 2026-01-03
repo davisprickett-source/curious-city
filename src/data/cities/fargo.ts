@@ -91,7 +91,7 @@ export const fargo: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Fargo',
+        title: 'Fargo Curiosities',
         teaser: 'Ten-minute divorces, Bonnie & Clyde hideouts, and secrets on the frozen prairie',
         items: [
           {
@@ -432,7 +432,7 @@ export const fargo: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Fargo',
         teaser: 'Prohibition speakeasies, Bonnie & Clyde\'s hideout, and where Fargo gets weird',
         intro:
           'These aren\'t in the guidebooks. Forgotten Prohibition speakeasies, an industrial warehouse full of century-old glass plate negatives, artist-designed planters disguised as ordinary street furniture, and the apartment where Bonnie and Clyde hid in 1932. Fargo\'s obscure history is colder and weirder than you think.',
@@ -979,7 +979,7 @@ export const fargo: CityData = {
       {
         id: 'far-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Prairie Darkness',
         teaser: 'Cold cases on the prairie',
         intro: 'On the flat expanse of the Red River Valley, Fargo\'s dark history is sparse but haunting—unsolved murders that span decades, bodies found in the river, and crimes that remain open long after the headlines fade.',
         items: [
@@ -1138,7 +1138,7 @@ export const fargo: CityData = {
       {
         id: 'far-lost-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Fargo',
         items: [
           {
             id: 'far-lost-1',

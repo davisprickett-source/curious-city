@@ -58,7 +58,7 @@ export const denver: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Denver',
+        title: 'Denver Curiosities',
         teaser: 'Demonic horses, buried bodies, and the secrets of the Mile High City',
         items: [
           {
@@ -397,7 +397,7 @@ export const denver: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Denver',
         teaser: 'Underground tunnels, hidden graves, and 1.3 million wildlife specimens in a warehouse',
         intro: 'These aren\'t in the guidebooks. Underground tunnels beneath the Capitol, 3,000 bodies still buried under Cheesman Park, and a warehouse with 1.3 million confiscated wildlife specimens. This is where Denver gets genuinely strange.',
         items: [
@@ -958,7 +958,7 @@ export const denver: CityData = {
       {
         id: 'denver-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Mile High Shadows',
         teaser: 'Darkness beneath the Mile High sunshine',
         intro: 'Denver sells itself as sunshine and craft beer, but the Mile High City sits atop a foundation of massacre, racial violence, and unsolved murder. From bodies left beneath public parks to a demonic horse that killed its creator, Denver\'s dark side is woven into the very geography—hidden in plain sight, just one layer below the Instagram-friendly surface.',
         items: [
@@ -1573,7 +1573,7 @@ export const denver: CityData = {
       {
         id: 'denver-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Denver',
         teaser: 'The Satire Lounge, My Brother\'s Bar, and Denver\'s legendary lost gathering places',
         items: [
           {

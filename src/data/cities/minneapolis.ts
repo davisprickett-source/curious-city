@@ -83,7 +83,7 @@ export const minneapolis: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Minneapolis',
+        title: 'Minneapolis Curiosities',
         teaser: 'Underground tunnels, flour mill explosions, and the secrets beneath the skyways',
         items: [
           {
@@ -654,7 +654,7 @@ export const minneapolis: CityData = {
 {
   id: 'hidden-gems',
   type: 'section',
-  title: 'Hidden Gems',
+  title: 'Hidden Minneapolis',
   teaser: 'Secret tunnels, underground art, and the places even locals don\'t know about',
   intro: 'These aren\'t on the tourist maps. Secret tunnels, underground art spaces, museums in fire-hose cabinets, and places even locals might not know about. This is where Minneapolis gets weird and wonderful.',
   items: [
@@ -2275,7 +2275,7 @@ export const minneapolis: CityData = {
       {
         id: 'mpls-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Shadows Over Minneapolis',
         teaser: 'Unsolved mysteries beneath the skyways',
         intro: 'Minneapolis is a city of lakes, skyways, and shadows—where three young brothers vanished without a trace in 1951, where cold cases span generations, and where families still search for answers that may never come.',
         items: [
@@ -2559,7 +2559,7 @@ export const minneapolis: CityData = {
       {
         id: 'mpls-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Minneapolis',
         teaser: 'Nye\'s Polonaise, Gluek\'s, and the legendary spots that shaped Minneapolis nights',
         items: [
           {

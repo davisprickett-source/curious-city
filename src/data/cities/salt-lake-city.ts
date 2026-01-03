@@ -58,7 +58,7 @@ export const salt_lake_city: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Salt Lake City',
+        title: 'Salt Lake City Curiosities',
         teaser: 'Secret temple tunnels, modern mummification pyramids, and the Great Salt Lake\'s mysteries',
         items: [
           {
@@ -432,7 +432,7 @@ export const salt_lake_city: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Salt Lake',
         teaser: 'A modern mummification pyramid, underground temple tunnels, and hidden desert swimming holes',
         intro: 'These aren\'t in the guidebooks. A pyramid offering modern mummification, underground tunnels beneath Temple Square, secret viewpoints with better views than the tourist spots, hidden swimming holes, and obscure museums locals guard fiercely. This is where Salt Lake gets weird.',
         items: [
@@ -1166,7 +1166,7 @@ export const salt_lake_city: CityData = {
       {
         id: 'slc-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Desert Secrets',
         teaser: 'Where the desert keeps its secrets',
         intro: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
         items: [

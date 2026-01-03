@@ -58,7 +58,7 @@ export const anchorage: CityData = {
       {
         id: 'curiosities',
         type: 'section',
-        title: 'Things You Might Not Know About Anchorage',
+        title: 'Anchorage Curiosities',
         teaser: 'CIA spy devices, Cold War relics, and secrets at the edge of wilderness',
         items: [
           {
@@ -437,7 +437,7 @@ export const anchorage: CityData = {
       {
         id: 'hidden-gems',
         type: 'section',
-        title: 'Hidden Gems',
+        title: 'Hidden Anchorage',
         teaser: 'Abandoned missile sites, spirit houses, and a 20-foot chocolate waterfall',
         intro: 'These aren\'t in the guidebooks. Abandoned Cold War missile sites on mountaintops, spirit houses blending Russian Orthodox and Dena\'ina traditions, earthquake remnants from 1964, downtown salmon runs, and a 20-foot chocolate waterfall. This is where Alaska gets weird.',
         items: [
@@ -1108,7 +1108,7 @@ export const anchorage: CityData = {
       {
         id: 'anc-dark-history',
         type: 'section',
-        title: 'Dark History',
+        title: 'Darkness at the Edge',
         teaser: 'Where predators thrive and victims vanish',
         intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
         items: [
@@ -1634,7 +1634,7 @@ export const anchorage: CityData = {
       {
         id: 'anc-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Anchorage',
         teaser: 'Chilkoot Charlie\'s, Earthquake Park, and the Alaska legends that closed',
         items: [
           {
