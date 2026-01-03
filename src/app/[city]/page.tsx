@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 import { Footer, RelatedCities } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { getAllHistory } from '@/data/history'
 
 const cityBanners: Record<string, string> = {
   minneapolis: '/banners/Minneapolis-banner.png',
@@ -50,49 +51,127 @@ export default async function CityPage({ params }: CityPageProps) {
 
   const bannerSrc = cityBanners[city.slug]
 
-  // Define content sections available for this city
-  const contentSections = [
-    {
-      title: 'Dark History',
-      description: 'Unsolved mysteries, forgotten crimes, and the city\'s shadowy past',
+  // Get history essays for this city
+  const allHistory = getAllHistory()
+  const cityHistory = allHistory.filter((h) => h.citySlug === slug)
+
+  // Extract section data from city content
+  const contentSections: Array<{
+    title: string
+    teaser: string
+    href: string
+    thumbnail?: string
+    gradient: string
+  }> = []
+
+  // Add History Essays section if there are any
+  if (cityHistory.length > 0) {
+    const firstEssay = cityHistory[0]
+    contentSections.push({
+      title: 'History Essays',
+      teaser: `Long-form narratives exploring ${city.name}'s past`,
+      href: `/${slug}/history`,
+      thumbnail: firstEssay.heroImage?.src,
+      gradient: 'from-amber-900 to-amber-700',
+    })
+  }
+
+  // Find content sections in city data
+  const darkHistorySection = city.content.find((c) => c.type === 'section' && c.title === 'Dark History')
+  if (darkHistorySection && 'items' in darkHistorySection && darkHistorySection.items && darkHistorySection.items.length > 0) {
+    const firstItem = darkHistorySection.items[0]
+    let thumbnail: string | undefined
+    if ('image' in firstItem && firstItem.image) {
+      thumbnail = firstItem.image.src
+    } else if ('images' in firstItem && firstItem.images && firstItem.images.length > 0) {
+      thumbnail = firstItem.images[0].src
+    }
+    contentSections.push({
+      title: darkHistorySection.title || 'Dark History',
+      teaser: ('teaser' in darkHistorySection && typeof darkHistorySection.teaser === 'string')
+        ? darkHistorySection.teaser
+        : `Unsolved mysteries, forgotten crimes, and the darker chapters of ${city.name}'s history`,
       href: `/${slug}/dark-history`,
+      thumbnail,
       gradient: 'from-red-900 to-red-700',
-      thumbnail: city.content.find(c => c.type === 'dark-history')?.image?.src,
-    },
-    {
+    })
+  }
+
+  const curiositiesSection = city.content.find((c) => c.type === 'section' && c.title?.includes('Curiosit'))
+  if (curiositiesSection && 'items' in curiositiesSection && curiositiesSection.items && curiositiesSection.items.length > 0) {
+    const firstItem = curiositiesSection.items[0]
+    let thumbnail: string | undefined
+    if ('image' in firstItem && firstItem.image) {
+      thumbnail = firstItem.image.src
+    } else if ('images' in firstItem && firstItem.images && firstItem.images.length > 0) {
+      thumbnail = firstItem.images[0].src
+    }
+    contentSections.push({
       title: 'Curiosities',
-      description: 'Fascinating facts, peculiar details, and surprising stories',
+      teaser: ('teaser' in curiositiesSection && typeof curiositiesSection.teaser === 'string')
+        ? curiositiesSection.teaser
+        : `Fascinating facts, peculiar details, and surprising stories about ${city.name}`,
       href: `/${slug}/curiosities`,
+      thumbnail,
       gradient: 'from-purple-600 to-indigo-600',
-      thumbnail: city.content.find(c => c.type === 'curiosity')?.image?.src,
-    },
-    {
+    })
+  }
+
+  const hiddenGemsSection = city.content.find((c) => c.type === 'section' && c.title === 'Hidden Gems')
+  if (hiddenGemsSection && 'items' in hiddenGemsSection && hiddenGemsSection.items && hiddenGemsSection.items.length > 0) {
+    const firstItem = hiddenGemsSection.items[0]
+    let thumbnail: string | undefined
+    if ('image' in firstItem && firstItem.image) {
+      thumbnail = firstItem.image.src
+    } else if ('images' in firstItem && firstItem.images && firstItem.images.length > 0) {
+      thumbnail = firstItem.images[0].src
+    }
+    contentSections.push({
       title: 'Hidden Gems',
-      description: 'Off-the-beaten-path spots and local secrets',
+      teaser: ('teaser' in hiddenGemsSection && typeof hiddenGemsSection.teaser === 'string')
+        ? hiddenGemsSection.teaser
+        : `Off-the-beaten-path spots and local secrets in ${city.name}`,
       href: `/${slug}/hidden-gems`,
+      thumbnail,
       gradient: 'from-emerald-600 to-teal-600',
-      thumbnail: city.content.find(c => c.type === 'hidden-gem')?.image?.src,
-    },
-    {
+    })
+  }
+
+  const lostLovedSection = city.content.find((c) => c.type === 'section' && c.title === 'Lost & Loved')
+  if (lostLovedSection && 'items' in lostLovedSection && lostLovedSection.items && lostLovedSection.items.length > 0) {
+    const firstItem = lostLovedSection.items[0]
+    let thumbnail: string | undefined
+    if ('image' in firstItem && firstItem.image) {
+      thumbnail = firstItem.image.src
+    } else if ('images' in firstItem && firstItem.images && firstItem.images.length > 0) {
+      thumbnail = firstItem.images[0].src
+    }
+    contentSections.push({
       title: 'Lost & Loved',
-      description: 'Beloved places we miss and remember fondly',
+      teaser: ('teaser' in lostLovedSection && typeof lostLovedSection.teaser === 'string')
+        ? lostLovedSection.teaser
+        : `Beloved places we miss and remember fondly from ${city.name}`,
       href: `/${slug}/lost-and-loved`,
+      thumbnail,
       gradient: 'from-amber-600 to-orange-600',
-      thumbnail: city.content.find(c => c.type === 'lost-and-loved')?.image?.src,
-    },
+    })
+  }
+
+  // Always add Guide and Events
+  contentSections.push(
     {
       title: 'Guide',
-      description: 'Best bars, restaurants, coffee shops, and local favorites',
+      teaser: `Best bars, restaurants, coffee shops, and local favorites in ${city.name}`,
       href: `/${slug}/guide`,
       gradient: 'from-blue-600 to-cyan-600',
     },
     {
       title: 'Events',
-      description: 'What\'s happening around town',
+      teaser: `What's happening around ${city.name}`,
       href: `/${slug}/events`,
       gradient: 'from-pink-600 to-rose-600',
-    },
-  ]
+    }
+  )
 
   return (
     <>
@@ -128,67 +207,68 @@ export default async function CityPage({ params }: CityPageProps) {
             )}
           </div>
 
-          {/* Content Sections Grid */}
+          {/* Premium 1-Column Feed */}
           <section className="mb-16">
             <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-neutral-900">
                 Explore {city.name}
               </h2>
               <p className="text-neutral-600 mt-2">
-                Discover the stories, secrets, and soul of the city
+                Stories, secrets, and discoveries
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {contentSections.map((section) => (
+            <div className="space-y-8 max-w-4xl">
+              {contentSections.map((section, index) => (
                 <Link
                   key={section.href}
                   href={section.href}
-                  className="group block bg-white border-2 border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-xl transition-all duration-300"
+                  className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
                 >
-                  {/* Image or Gradient Header */}
-                  {section.thumbnail ? (
-                    <div className="relative h-48 bg-neutral-100">
-                      <Image
-                        src={section.thumbnail}
-                        alt={section.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${section.gradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
+                  <div className="md:flex">
+                    {/* Image or Gradient */}
+                    <div className="md:w-2/5 relative">
+                      {section.thumbnail ? (
+                        <div className="relative h-64 md:h-full bg-neutral-100">
+                          <Image
+                            src={section.thumbnail}
+                            alt={section.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 40vw"
+                            priority={index === 0}
+                          />
+                          <div className={`absolute inset-0 bg-gradient-to-br ${section.gradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
+                        </div>
+                      ) : (
+                        <div className={`h-64 md:h-full bg-gradient-to-br ${section.gradient}`} />
+                      )}
                     </div>
-                  ) : (
-                    <div className={`h-48 bg-gradient-to-br ${section.gradient}`} />
-                  )}
 
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
-                      {section.title}
-                    </h3>
-                    <p className="text-neutral-600 text-sm leading-relaxed">
-                      {section.description}
-                    </p>
-                  </div>
-
-                  {/* Footer */}
-                  <div className="px-6 pb-6">
-                    <div className="inline-flex items-center text-accent-600 font-medium group-hover:gap-2 transition-all">
-                      Explore
-                      <svg
-                        className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
+                    {/* Content */}
+                    <div className="md:w-3/5 p-8 flex flex-col justify-center">
+                      <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
+                        {section.title}
+                      </h3>
+                      <p className="text-neutral-600 text-lg leading-relaxed mb-4">
+                        {section.teaser}
+                      </p>
+                      <div className="inline-flex items-center text-accent-600 font-semibold group-hover:gap-2 transition-all">
+                        Explore
+                        <svg
+                          className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </Link>
