@@ -73,18 +73,19 @@ function StandardCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
+      initial={{ opacity: 0, y: 40, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: '-80px' }}
       transition={{
-        duration: 0.6,
-        delay: index * 0.05,
+        duration: 0.7,
+        delay: index * 0.08,
         ease: [0.16, 1, 0.3, 1],
       }}
+      className="h-full"
     >
       <Link
         href={data.href}
-        className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
+        className="group block h-full bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-accent-300 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
       >
         <div className="md:flex">
           {/* Image or Gradient */}
@@ -162,17 +163,18 @@ function FeaturedCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50, scale: 0.96 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{
-        duration: 0.7,
-        delay: index * 0.05,
+        duration: 0.8,
+        delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1],
       }}
+      className="h-full"
     >
-      <Link href={data.href} className="group block">
-        <article className="relative bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:border-accent-300 transition-all duration-500">
+      <Link href={data.href} className="group block h-full">
+        <article className="relative h-full bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:border-accent-300 hover:-translate-y-2 transition-all duration-500">
           <div
             className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0`}
           >
@@ -265,20 +267,20 @@ function CompactCard({ data }: { data: PageCardData }) {
           <div className={`aspect-[16/9] bg-gradient-to-br ${gradient}`} />
         )}
 
-        <div className="p-4">
-          <div className="flex items-center gap-2 mb-2">
+        <div className="p-3">
+          <div className="flex items-center gap-2 mb-1.5">
             <span
-              className={`inline-block px-2 py-0.5 text-xs font-semibold rounded-full uppercase tracking-wider ${badgeColor}`}
+              className={`inline-block px-1.5 py-0.5 text-[10px] font-semibold rounded uppercase tracking-wider ${badgeColor}`}
             >
               {pageTypeLabels[data.pageType]}
             </span>
           </div>
 
-          <h3 className="text-sm font-bold text-neutral-900 mb-1 leading-tight group-hover:text-accent-600 transition-colors line-clamp-2">
+          <h3 className="text-xs font-bold text-neutral-900 mb-1 leading-snug group-hover:text-accent-600 transition-colors line-clamp-2">
             {data.title}
           </h3>
 
-          <p className="text-xs text-neutral-600 leading-relaxed line-clamp-2">
+          <p className="text-[11px] text-neutral-600 leading-relaxed line-clamp-2">
             {data.teaser}
           </p>
         </div>

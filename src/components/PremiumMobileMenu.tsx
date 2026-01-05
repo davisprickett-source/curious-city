@@ -1,15 +1,22 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { AnimatePresence } from 'framer-motion'
 import { AnimatedMenuButton } from './PremiumMobileMenu/AnimatedMenuButton'
 import { MenuOverlay } from './PremiumMobileMenu/MenuOverlay'
 
 export function PremiumMobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   const buttonRef = useRef<HTMLDivElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
+
+  // Track if component is mounted (for portal)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Close menu
   const closeMenu = () => {
@@ -109,7 +116,7 @@ export function PremiumMobileMenu() {
     }, 100)
 
     return () => clearTimeout(timeoutId)
-  }, [isOpen, navigationLevel]) // Re-run when navigation level changes
+  }, [isOpen]) // Re-run when menu opens/closes
 
   // Prevent iOS overscroll/bounce
   useEffect(() => {
@@ -130,14 +137,19 @@ export function PremiumMobileMenu() {
   }, [isOpen])
 
   return (
-    <div className="sm:hidden" ref={buttonRef}>
-      <AnimatedMenuButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-
-      <div ref={menuRef}>
-        <AnimatePresence>
-          {isOpen && <MenuOverlay onClose={closeMenu} />}
-        </AnimatePresence>
+    <>
+      <div className="sm:hidden" ref={buttonRef}>
+        <AnimatedMenuButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
       </div>
-    </div>
+
+      {mounted && createPortal(
+        <div ref={menuRef}>
+          <AnimatePresence>
+            {isOpen && <MenuOverlay onClose={closeMenu} />}
+          </AnimatePresence>
+        </div>,
+        document.body
+      )}
+    </>
   )
 }

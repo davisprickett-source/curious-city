@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { routes, citySections, type AnyCitySection } from '@/lib/routes'
 import { CitySelector } from './CitySelector'
 import { FilterBar } from './FilterBar'
-import { MobileNavMenu } from './MobileNavMenu'
+import { PremiumMobileMenu } from '@/components/PremiumMobileMenu'
 import type { EventView } from '@/components/EventFilter'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
 
@@ -123,14 +123,7 @@ export function UnifiedNav({
               className="h-8 w-auto"
             />
           </Link>
-          <MobileNavMenu
-            citySlug={citySlug}
-            cityName={cityName}
-            currentSection={currentSection}
-            eventView={eventView}
-            eventCategories={eventCategories}
-            sceneCategory={sceneCategory}
-          />
+          <PremiumMobileMenu />
         </div>
       </div>
     </nav>

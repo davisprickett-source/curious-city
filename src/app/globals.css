@@ -76,7 +76,7 @@
 
 @layer components {
   .container-page {
-    @apply w-full max-w-5xl mx-auto px-5 md:px-8 xl:px-10;
+    @apply w-full max-w-7xl mx-auto px-6 md:px-8 xl:px-12;
   }
 
   .section-spacing {
@@ -193,5 +193,21 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+  }
+
+  /* Landing page theme section backgrounds */
+  .theme-dark-stories {
+    background: linear-gradient(to bottom, rgba(127, 29, 29, 0.15), rgba(153, 27, 27, 0.08), transparent);
+    border-top: 1px solid rgba(153, 27, 27, 0.2);
+  }
+
+  .theme-discoveries {
+    background: linear-gradient(to bottom, rgba(250, 245, 255, 0.5), rgba(240, 253, 250, 0.3), transparent);
+    border-top: 1px solid rgba(243, 232, 255, 1);
+  }
+
+  .theme-nostalgic {
+    background: linear-gradient(to bottom, rgba(255, 251, 235, 0.6), rgba(255, 247, 237, 0.3), transparent);
+    border-top: 1px solid rgba(254, 243, 199, 1);
   }
 }

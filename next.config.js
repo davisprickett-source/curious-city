@@ -191,6 +191,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.oskarblues.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.getbento.com',
+      },
     ],
   },
   // Optimize package imports to reduce bundle size

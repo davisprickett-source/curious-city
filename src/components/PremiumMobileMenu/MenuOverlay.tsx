@@ -13,20 +13,15 @@ export function MenuOverlay({ onClose }: MenuOverlayProps) {
       role="dialog"
       aria-modal="true"
       aria-label="Main navigation"
-      className="fixed inset-0 bg-[#f8f7f4] flex flex-col sm:hidden"
+      className="fixed left-0 right-0 bottom-0 bg-[#f8f7f4] flex flex-col sm:hidden"
       style={{
-        zIndex: 60,
+        top: '3.5rem', // 56px - height of header (h-14)
+        zIndex: 40, // Below header (z-50) so hamburger X is clickable
       }}
       variants={overlayVariants}
       initial="initial"
       animate="animate"
       exit="exit"
-      onClick={(e) => {
-        // Close menu if clicking the overlay background (not content)
-        if (e.target === e.currentTarget) {
-          onClose()
-        }
-      }}
     >
       {/* Scrollable content area */}
       <div className="flex-1 overflow-y-auto overscroll-contain">
@@ -34,7 +29,7 @@ export function MenuOverlay({ onClose }: MenuOverlayProps) {
       </div>
 
       {/* Fixed footer with email */}
-      <MenuFooter onClose={onClose} />
+      <MenuFooter />
     </motion.div>
   )
 }

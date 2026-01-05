@@ -30,11 +30,11 @@ export const ANIMATION_CONFIG = {
 export const hamburgerLineVariants = {
   top: {
     closed: { rotate: 0, y: 0 },
-    open: { rotate: 45, y: 3 },
+    open: { rotate: 45, y: 6 },
   },
   bottom: {
     closed: { rotate: 0, y: 0 },
-    open: { rotate: -45, y: -3 },
+    open: { rotate: -45, y: -6 },
   },
 }
 

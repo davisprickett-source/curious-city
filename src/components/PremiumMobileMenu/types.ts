@@ -14,7 +14,3 @@ export interface AnimatedMenuButtonProps {
 export interface MenuOverlayProps {
   onClose: () => void
 }
-
-export interface MenuFooterProps {
-  onClose: () => void
-}

@@ -1,8 +1,6 @@
 'use client'
 
-import type { MenuFooterProps } from './types'
-
-export function MenuFooter({ onClose }: MenuFooterProps) {
+export function MenuFooter() {
   return (
     <div className="flex-shrink-0 border-t border-neutral-200 bg-[#f8f7f4] px-8 py-6">
       <div className="text-sm text-neutral-600">
