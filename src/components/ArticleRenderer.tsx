@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { UniversalAd, createAdSlot } from './ads/UniversalAd'
+import { UniversalAd } from './ads/UniversalAd'
+import { createAdSlot } from '@/lib/ads/slots'
 import type { ArticleBlock } from '@/types/article'
 
 interface ArticleRendererProps {

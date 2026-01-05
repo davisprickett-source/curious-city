@@ -69,8 +69,8 @@ export const denver: CityData = {
             body: '"Blucifer"—the 32-foot blue mustang with glowing red eyes at Denver International Airport—is genuinely cursed. A piece of the sculpture fell on artist Luis Jiménez in 2006, severing an artery and killing him. The horse was installed posthumously in 2008. Locals have petitioned to remove it. The airport refuses.',
             year: '2008',
             image: {
-              src: '',
-              alt: 'Denver International Airport exterior',
+              src: '/denver/curiosities/bluecifer.png',
+              alt: 'Blucifer - the blue mustang sculpture with glowing red eyes at Denver International Airport',
             },
             source: 'Denver International Airport',
             location: {
@@ -86,8 +86,8 @@ export const denver: CityData = {
             body: 'Cheesman Park was once a cemetery called Mount Prospect. When the city decided to convert it to a park in 1893, contractors were paid $1.90 per body to relocate graves. Workers broke corpses into pieces to maximize their payment. An estimated 2,000 bodies were never moved. Construction projects in the area still occasionally unearth remains.',
             year: '1893',
             image: {
-              src: '',
-              alt: 'Cheesman Park pavilion',
+              src: '/denver/curiosities/cheesman.png',
+              alt: 'Cheesman Park pavilion built over forgotten graves',
             },
             source: 'Denver Public Library archives',
             location: {
@@ -132,8 +132,8 @@ export const denver: CityData = {
             title: 'The airport conspiracy theories are now official merchandise',
             body: 'Denver International Airport has leaned fully into theories about Illuminati symbols, underground bunkers, and lizard people. The airport installed a talking gargoyle that jokes about conspiracy theories. Construction signs say "What are they REALLY building?" Gift shops sell conspiracy-themed merchandise. It\'s either brilliant marketing or exactly what the Illuminati would do.',
             image: {
-              src: '',
-              alt: 'Denver International Airport terminal',
+              src: '/denver/curiosities/bluecifer.png',
+              alt: 'Denver International Airport and its infamous Blucifer sculpture',
             },
             source: 'Denver International Airport',
             location: {
@@ -179,8 +179,8 @@ export const denver: CityData = {
             body: 'The Mexican restaurant with cliff divers, caves, and Black Bart\'s Hideout—featured in South Park—was bought by the show\'s creators in 2021 after it closed during COVID. They spent millions renovating it while keeping the weird attractions. It reopened in 2023 with better food but the same waterfall, mariachi bands, and cave maze.',
             year: '2023',
             image: {
-              src: '',
-              alt: 'Mexican restaurant interior',
+              src: '/denver/curiosities/casa-bonita.png',
+              alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower',
             },
             source: 'Casa Bonita',
             location: {
@@ -208,8 +208,8 @@ export const denver: CityData = {
             title: 'I-70 traffic is a genuine lifestyle determinant',
             body: 'On powder days, Interstate 70 becomes a parking lot from Denver to the Eisenhower Tunnel. The 90-minute drive to Vail can take 4+ hours. Locals structure their entire lives around avoiding it: leaving at 5am, working remote on Fridays, buying condos at resorts. The "I-70 problem" is a serious factor in real estate decisions.',
             image: {
-              src: '',
-              alt: 'Mountain highway traffic',
+              src: '/denver/curiosities/traffic.png',
+              alt: 'Interstate 70 traffic jam heading to the mountains',
             },
             source: 'Colorado Department of Transportation',
             location: {
@@ -249,8 +249,8 @@ export const denver: CityData = {
             title: 'Denver isn\'t actually in the mountains',
             body: 'Despite the marketing, Denver sits on the high plains—the Rockies are an hour\'s drive west. The city is at exactly 5,280 feet (one mile), but the nearest ski resorts are another 9,000 feet higher. What Denver has is views: on clear days, you can see 200 miles of mountain peaks from the city.',
             image: {
-              src: '',
-              alt: 'Denver skyline with Rocky Mountains backdrop',
+              src: '/denver/curiosities/denver-plain.png',
+              alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
             },
             source: 'USGS',
             location: {
@@ -409,7 +409,7 @@ export const denver: CityData = {
             description: 'Built around 1892, this tunnel connected the Brown Palace Hotel to The Navarre brothel/gambling hall. Officially for coal delivery, it was actually used to transport male clientele discreetly. During Prohibition, possibly used for bootlegging. The entrance was sealed decades ago and filled with masonry.',
             images: [
               {
-                src: '/denver/hidden-gems/navarre-tunnel.png',
+                src: '/denver/hidden-gems/navarre.png',
                 alt: 'Navarre Building historic photo',
               },
             ],
@@ -445,8 +445,8 @@ export const denver: CityData = {
             description: 'Hidden behind a working bookstore at 3160 Tejon Street in LoHi. Pull the right book to trigger a bookcase door that slides open. Named one of "23 Best Secret Bars in the World" by Thrillist in 2018.',
             images: [
               {
-                src: '/denver/hidden-gems/williams-graham.png',
-                alt: 'Williams & Graham speakeasy bookcase entrance',
+                src: '/denver/hidden-gems/speakeasy-1.png',
+                alt: 'Williams & Graham speakeasy hidden behind bookcase entrance',
               },
             ],
             address: '3160 Tejon St, Denver, CO 80211',
@@ -506,8 +506,16 @@ export const denver: CityData = {
             description: 'Located 10 miles from downtown, houses 1.3+ MILLION confiscated illegal wildlife products - mounted tigers, leopard skins, rhino horns, carved ivory, plus bizarre items like zebra hoof lamps, elephant feet furniture, dried seal penis pills. Even locals don\'t know this massive warehouse exists.',
             images: [
               {
-                src: '/denver/hidden-gems/wildlife-repository.png',
+                src: '/denver/hidden-gems/taxxidermy.png',
                 alt: 'National Wildlife Property Repository specimens',
+              },
+              {
+                src: '/denver/hidden-gems/taxidermy-2.png',
+                alt: 'Wildlife specimens collection',
+              },
+              {
+                src: '/denver/hidden-gems/taxidermy-3.png',
+                alt: 'Confiscated illegal wildlife products display',
               },
             ],
             address: 'Rocky Mountain Arsenal National Wildlife Refuge',
@@ -524,8 +532,12 @@ export const denver: CityData = {
             description: 'In the 1970s, artist Kent Pendleton secretly hid tiny mythical creatures throughout his diorama backdrop paintings. Elves on every floor and nearly every gallery - only a few inches tall, well-camouflaged. Official scavenger hunt lists nine but there are about double that.',
             images: [
               {
-                src: '/denver/hidden-gems/dmns-elves.png',
+                src: '/denver/hidden-gems/gnomes.png',
                 alt: 'Denver Museum of Nature & Science',
+              },
+              {
+                src: '/denver/hidden-gems/gnomes-2.png',
+                alt: 'Hidden elves in museum dioramas',
               },
             ],
             address: '2001 Colorado Blvd, Denver, CO 80205',
@@ -548,8 +560,12 @@ export const denver: CityData = {
             description: '900-square-foot shop on South Broadway with 6,000+ items including 303 types of nonsports trading cards. Features Smurfs, vintage Pepsi cans, Pac-Man, Care Bears, TMNT. Come Saturday mornings for cartoons on screens.',
             images: [
               {
-                src: '/denver/hidden-gems/fifty-two-80s.png',
-                alt: 'Fifty-Two 80\'s cartoon museum',
+                src: '/denver/hidden-gems/80s-1.png',
+                alt: 'Fifty-Two 80\'s Saturday Morning Cartoon Museum interior with vintage toys',
+              },
+              {
+                src: '/denver/hidden-gems/80s-2.png',
+                alt: 'Vintage 80s collectibles and nostalgia items',
               },
             ],
             address: '52 S Broadway, Denver, CO 80209',
@@ -566,8 +582,16 @@ export const denver: CityData = {
             description: 'Houses 3,125 works by abstract expressionist Clyfford Still (93% of lifetime output). Overshadowed by Denver Art Museum next door. Named "Best Museum If You Only Have an Hour" by Westword 2025.',
             images: [
               {
-                src: '/denver/hidden-gems/clyfford-still.png',
-                alt: 'Clyfford Still Museum',
+                src: '/denver/hidden-gems/art-museum-1.png',
+                alt: 'Clyfford Still Museum exterior and modern architecture',
+              },
+              {
+                src: '/denver/hidden-gems/art-mueum-2.png',
+                alt: 'Clyfford Still abstract expressionist artwork',
+              },
+              {
+                src: '/denver/hidden-gems/art-museum-3.png',
+                alt: 'Museum interior gallery space',
               },
             ],
             address: '1250 Bannock St, Denver, CO 80204',
@@ -585,8 +609,12 @@ export const denver: CityData = {
             description: 'Converted old church painted by Spanish artist Okuda San Miguel with geometric neon colors, anthropomorphic birds, ancestral eagles, and eyes filled with night stars. Features "BEYOND" - hourly 38-minute guided meditation laser light show.',
             images: [
               {
-                src: '/denver/hidden-gems/church-of-cannabis.png',
-                alt: 'International Church of Cannabis interior',
+                src: '/denver/hidden-gems/cannabis-church-1.png',
+                alt: 'International Church of Cannabis psychedelic interior with geometric neon artwork',
+              },
+              {
+                src: '/denver/hidden-gems/cannabis-church-2.png',
+                alt: 'Colorful geometric patterns and murals inside the church',
               },
             ],
             address: '400 S Logan St, Denver, CO 80209',
@@ -627,8 +655,12 @@ export const denver: CityData = {
             description: 'Denver\'s oldest restaurant (1893), 575 taxidermied pieces wall-to-wall including two-headed calf, jackalope, sub-Saharan wildcats, brown bears, rattlesnakes. Serves rattlesnake, elk, bison. Colorado liquor license #1 still on display.',
             images: [
               {
-                src: '/denver/hidden-gems/buckhorn.png',
-                alt: 'Buckhorn Exchange taxidermy collection',
+                src: '/denver/hidden-gems/steakhouse-1.png',
+                alt: 'Buckhorn Exchange historic steakhouse interior with extensive taxidermy collection',
+              },
+              {
+                src: '/denver/hidden-gems/steakhouse-2.png',
+                alt: 'More taxidermy displays and historic restaurant interior',
               },
             ],
             address: '1000 Osage St, Denver, CO 80204',
@@ -646,8 +678,16 @@ export const denver: CityData = {
             description: '123-acre wildlife refuge on city\'s outskirts that locals overlook. Situated along Sand Creek with picture-perfect scenery, abundance of wildlife, running/walking paths. Genuinely peaceful and uncrowded.',
             images: [
               {
-                src: '/denver/hidden-gems/bluff-lake.png',
-                alt: 'Bluff Lake Nature Center',
+                src: '/denver/hidden-gems/bluff-lake-1.png',
+                alt: 'Bluff Lake Nature Center tranquil wetlands and walking paths',
+              },
+              {
+                src: '/denver/hidden-gems/bluff-lake-2.png',
+                alt: 'Wildlife and natural scenery at Bluff Lake',
+              },
+              {
+                src: '/denver/hidden-gems/bluff-lake-3.png',
+                alt: 'Peaceful lake views and surrounding nature',
               },
             ],
             address: '3400 Havana Way, Denver, CO 80239',
@@ -665,8 +705,16 @@ export const denver: CityData = {
             description: 'A 165-acre park with two lakes, running paths, and the city\'s best outdoor people-watching. The surrounding neighborhood is equally pleasant for walking.',
             images: [
               {
-                src: '/denver/hidden-gems/wash-park.png',
-                alt: 'Washington Park lake and Denver skyline',
+                src: '/denver/hidden-gems/washington-park1.png',
+                alt: 'Washington Park lake with Denver skyline in background',
+              },
+              {
+                src: '/denver/hidden-gems/washington-park-2.png',
+                alt: 'Park paths and recreational areas',
+              },
+              {
+                src: '/denver/hidden-gems/washington-park-3.png',
+                alt: 'Washington Park gardens and landscapes',
               },
             ],
             address: 'E Virginia Ave, Denver, CO 80209',
@@ -695,8 +743,8 @@ export const denver: CityData = {
             price: '$$$',
             website: 'https://williamsandgraham.com/',
             image: {
-              src: '',
-              alt: 'Intimate speakeasy bar with warm lighting and craft cocktails',
+              src: '/denver/hidden-gems/speakeasy-2.png',
+              alt: 'Williams & Graham intimate speakeasy bar with warm lighting and craft cocktails',
             },
           },
           {
@@ -740,8 +788,8 @@ export const denver: CityData = {
             price: '$$',
             website: 'https://rfratiobeerworks.com/',
             image: {
-              src: '',
-              alt: 'Craft brewery taproom with industrial decor',
+              src: '/denver/curiosities/breweries-1.png',
+              alt: 'Ratio Beerworks craft brewery taproom with industrial RiNo decor',
             },
           },
           {
@@ -809,8 +857,8 @@ export const denver: CityData = {
             price: '$$$$',
             website: 'https://www.guardandgrace.com/',
             image: {
-              src: '',
-              alt: 'Premium dry-aged steak with elegant presentation',
+              src: '/denver/hidden-gems/steakhouse-2.png',
+              alt: 'Guard and Grace premium dry-aged steak with elegant presentation',
             },
           },
           {
@@ -1231,7 +1279,7 @@ export const denver: CityData = {
             year: '1970',
             title: 'The Lumber Baron Inn Murders',
             body: 'By 1970, the grand 1890 mansion that lumber baron John Mouat built had become a 23-unit rooming house for the unfortunate. On October 11, 1970, 16-year-old runaway Cara Lee Knoche celebrated her 17th birthday at her parents\' house and announced she would return to high school. Two days later, she was found dead under her bed at the rooming house, strangled. Her friend Marianne Weaver, 18, walked in at the worst moment—she witnessed the rape and murder, then was shot herself. The killer was never found. Today the building has been restored as the Lumber Baron Inn, a bed-and-breakfast that leans into its haunted reputation. Guests report gentle knocking, apparitions, and whispers. The Netflix series "28 Days Haunted" featured the inn. The case remains open.',
-            verdict: 'Still unsolved after 50+ years. Call Denver PD at 720-913-7867 with information.',
+            verdict: 'Still unsolved after 50+ years.',
             images: [
               {
                 src: '/denver/dark-history/baron-inn.png',
@@ -1336,11 +1384,11 @@ export const denver: CityData = {
             verdict: 'Luis Jiménez died before completion. The sculpture stands as commissioned.',
             images: [
               {
-                src: '/denver/dark-history/dia-1.png',
+                src: '/denver/dark-history/dia-3.png',
                 alt: 'Blue mustang sculpture "Blucifer" at Denver International Airport entrance',
               },
               {
-                src: '/denver/dark-history/dia-2.png',
+                src: '/denver/dark-history/dia-4.png',
                 alt: 'Blucifer sculpture close-up view',
               },
             ],
@@ -1386,11 +1434,11 @@ export const denver: CityData = {
             verdict: 'The airport officially embraces the theories. They sell conspiracy merchandise.',
             images: [
               {
-                src: '/denver/dark-history/dia-3.png',
+                src: '/denver/dark-history/dia-1.png',
                 alt: 'Denver International Airport distinctive tent-like terminal structure',
               },
               {
-                src: '/denver/dark-history/dia-4.png',
+                src: '/denver/dark-history/dia-2.png',
                 alt: 'DIA terminal interior view',
               },
             ],

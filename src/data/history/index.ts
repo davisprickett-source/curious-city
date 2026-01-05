@@ -34,7 +34,7 @@ export { portland_history }
 
 // Combined history index (includes both regular and premium)
 export const history: HistoryIndex = {
-  'minneapolis': { ...minneapolis_history, ...minneapolis_premium_history },
+  'minneapolis': { ...minneapolis_premium_history, ...minneapolis_history },
   'fargo': fargo_history,
   'raleigh': raleigh_history,
   'chicago': chicago_history,

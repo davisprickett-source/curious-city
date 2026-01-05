@@ -258,6 +258,50 @@ export async function getCityDarkHistorySection(slug: string) {
   return findSection(city.content)
 }
 
+// Get hidden gems section with intro
+export async function getCityHiddenGemsSection(slug: string) {
+  const city = await getCity(slug)
+  if (!city) return null
+
+  // Find the hidden-gems section
+  const findSection = (items: any[]): any => {
+    for (const item of items) {
+      if (item.type === 'section' && item.id?.includes('hidden-gems')) {
+        return item
+      }
+      if (item.items && Array.isArray(item.items)) {
+        const found = findSection(item.items)
+        if (found) return found
+      }
+    }
+    return null
+  }
+
+  return findSection(city.content)
+}
+
+// Get lost and loved section with intro
+export async function getCityLostAndLovedSection(slug: string) {
+  const city = await getCity(slug)
+  if (!city) return null
+
+  // Find the lost-and-loved section
+  const findSection = (items: any[]): any => {
+    for (const item of items) {
+      if (item.type === 'section' && item.id?.includes('lost-and-loved')) {
+        return item
+      }
+      if (item.items && Array.isArray(item.items)) {
+        const found = findSection(item.items)
+        if (found) return found
+      }
+    }
+    return null
+  }
+
+  return findSection(city.content)
+}
+
 // Get events for a specific city
 export async function getCityEvents(slug: string) {
   const city = await getCity(slug)

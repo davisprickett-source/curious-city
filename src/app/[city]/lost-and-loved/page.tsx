@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import { getCity, getAllCitySlugs, getCityLostAndLoved } from '@/data/cities'
+import { getCity, getAllCitySlugs, getCityLostAndLoved, getCityLostAndLovedSection } from '@/data/cities'
 import { ShareLinks, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import Image from 'next/image'
@@ -28,30 +28,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-// Category badge color helper
-const getCategoryStyle = (category: string) => {
-  switch (category) {
-    case 'restaurant':
-      return 'bg-rose-50 text-rose-700'
-    case 'bar':
-      return 'bg-amber-50 text-amber-700'
-    case 'shop':
-      return 'bg-blue-50 text-blue-700'
-    case 'theater':
-      return 'bg-purple-50 text-purple-700'
-    case 'music-venue':
-      return 'bg-indigo-50 text-indigo-700'
-    case 'cafe':
-      return 'bg-emerald-50 text-emerald-700'
-    case 'bookstore':
-      return 'bg-slate-100 text-slate-700'
-    case 'entertainment':
-      return 'bg-pink-50 text-pink-700'
-    default:
-      return 'bg-neutral-100 text-neutral-600'
-  }
-}
-
 export default async function CityLostAndLovedPage({ params }: PageProps) {
   const { city: slug } = await params
   const city = await getCity(slug)
@@ -61,6 +37,7 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
   }
 
   const items = await getCityLostAndLoved(slug)
+  const section = await getCityLostAndLovedSection(slug)
 
   return (
     <>
@@ -83,11 +60,22 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
             <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
               <div className="max-w-5xl">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  Lost & Loved in {city.name}
+                  {section?.title || `Lost & Loved in ${city.name}`}
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
-                  The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss.
-                </p>
+                {section?.teaser && (
+                  <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
+                    {section.teaser}
+                  </p>
+                )}
+                {section?.intro ? (
+                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                    {section.intro}
+                  </p>
+                ) : (
+                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                    The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss.
+                  </p>
+                )}
               </div>
               <div className="absolute top-6 right-6 md:top-8 md:right-8">
                 <ShareLinks title={`Lost & Loved in ${city.name} | Curious City`} variant="banner" />
@@ -100,11 +88,22 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    Lost & Loved in {city.name}
+                    {section?.title || `Lost & Loved in ${city.name}`}
                   </h1>
-                  <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
-                    The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss.
-                  </p>
+                  {section?.teaser && (
+                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mb-2">
+                      {section.teaser}
+                    </p>
+                  )}
+                  {section?.intro ? (
+                    <p className="text-base md:text-lg text-neutral-500 max-w-3xl">
+                      {section.intro}
+                    </p>
+                  ) : (
+                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
+                      The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss.
+                    </p>
+                  )}
                 </div>
                 <div className="hidden sm:block flex-shrink-0">
                   <ShareLinks title={`Lost & Loved in ${city.name} | Curious City`} variant="compact" />
@@ -125,13 +124,10 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
                       {index + 1}
                     </div>
                     <div className="flex-1 min-w-0">
-                      {/* Header with category and years */}
+                      {/* Header with years */}
                       <div className="flex items-baseline gap-2 flex-wrap mb-1">
                         <h3 className="text-lg font-semibold text-neutral-900">{item.name}</h3>
                         <span className="text-sm text-neutral-500">{item.neighborhood}</span>
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded ${getCategoryStyle(item.category)}`}>
-                          {item.category.replace('-', ' ')}
-                        </span>
                         {item.yearsOpen && (
                           <span className="text-xs text-neutral-400">{item.yearsOpen}</span>
                         )}
@@ -249,16 +245,6 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
                                         {item.lastAddress}
                                       </a>
                                     </div>
-                                  </div>
-                                )}
-
-                                {/* Category */}
-                                {item.category && (
-                                  <div>
-                                    <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
-                                    <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${getCategoryStyle(item.category)}`}>
-                                      {item.category.replace('-', ' ')}
-                                    </span>
                                   </div>
                                 )}
 

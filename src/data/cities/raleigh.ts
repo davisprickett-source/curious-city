@@ -272,7 +272,6 @@ export const raleigh: CityData = {
             image: {
               src: '',
               alt: 'Dorton Arena architecture',
-              credit: 'Unsplash',
             },
             source: 'NC State Fair',
             location: { name: 'NC State Fairgrounds', stillExists: true },
@@ -814,19 +813,79 @@ export const raleigh: CityData = {
         intro: 'The locals\' spots. No bottle service, no dress code, no crowds from the suburbs.',
         spots: [
           {
-            name: 'The Borough',
-            neighborhood: 'Five Points',
-            vibe: 'Dive bar meets neighborhood hangout. Pool tables, cheap pitchers, zero pretense.',
-            order: 'PBR tallboy and quarters for the pool table.',
-            why: 'While everyone packs into Glenwood South, the Borough stays reliably chill. The kind of place where you walk in alone and leave with new friends. Cash preferred, vibes mandatory.',
-            address: '317 W Morgan St, Raleigh, NC 27601',
-            coordinates: { lat: 35.7805, lng: -78.6444 },
-            hours: '5pm-2am daily',
-            price: '$',
-            image: {
-              src: '',
-              alt: 'Dimly lit dive bar interior with pool table and neon signs',
-            },
+            name: 'Gussie\'s',
+            neighborhood: 'Downtown',
+            vibe: 'Neighborhood bar that nails the "see an old pal or meet a new friend" vibe. Restaurant, bar, and bottle shop rolled into one.',
+            order: 'House cocktail and something from the kitchen. The bartenders know their stuff.',
+            why: 'The kind of place where bartenders remember your name and locals actually bring their out-of-town friends. Craft beer, fine wine, solid food, and the implicit permission to linger. Morgan Street\'s living room.',
+            address: '927 W Morgan St Suite 116, Raleigh, NC 27603',
+            coordinates: { lat: 35.7815, lng: -78.6500 },
+            hours: 'Mon-Thu 4pm-midnight, Fri-Sat 11am-1am, Sun 11am-10pm',
+            price: '$$',
+            images: [
+              {
+                src: '/Raleigh/bars/gussies-1.png',
+                alt: 'Gussie\'s bar interior',
+              },
+              {
+                src: '/Raleigh/bars/gussies02.png',
+                alt: 'Gussie\'s cocktails and atmosphere',
+              },
+              {
+                src: '/Raleigh/bars/gussies-3.png',
+                alt: 'Gussie\'s bar and seating area',
+              },
+            ],
+          },
+          {
+            name: 'Boxcar Bar + Arcade',
+            neighborhood: 'Downtown',
+            vibe: 'Arcade games, craft beer, and a patio. The place where adulting means playing pinball with a bourbon in hand.',
+            order: 'Local draft and quarters for the arcade games. Donkey Kong won\'t play itself.',
+            why: 'Dozens of classic arcade games, full bar, year-round patio. It\'s the anti-Glenwood South—fun without trying too hard, unpretentious, and genuinely social. Kids allowed before 9pm, but it\'s 21+ after that.',
+            address: '330 W Davie St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7760, lng: -78.6450 },
+            hours: 'Mon-Fri 4pm-2am, Sat-Sun noon-2am',
+            price: '$$',
+            images: [
+              {
+                src: '/Raleigh/bars/boxcar-1.png',
+                alt: 'Boxcar Bar + Arcade interior with vintage games',
+              },
+              {
+                src: '/Raleigh/bars/boxcar-2.png',
+                alt: 'Boxcar arcade games and bar area',
+              },
+              {
+                src: '/Raleigh/bars/boxcar-3.png',
+                alt: 'Boxcar patio and outdoor seating',
+              },
+              {
+                src: '/Raleigh/bars/boxcar-4.png',
+                alt: 'Boxcar classic arcade machines',
+              },
+            ],
+          },
+          {
+            name: 'Raleigh Times Bar',
+            neighborhood: 'Downtown',
+            vibe: 'Former newspaper building with a rooftop, craft beer mecca, and downtown views. Belgian beer specialists.',
+            order: 'One of the Belgian imports on tap. The beer list is serious.',
+            why: 'The 2nd floor rooftop overlooks downtown, the Belgian beer selection is one of the best in the state, and it\'s been a downtown anchor since before downtown was cool. Locals go for the beer, stay for the patio.',
+            address: '14 E Hargett St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7795, lng: -78.6380 },
+            hours: 'Mon-Thu 11am-11pm, Fri-Sat 11am-2am, Sun 11am-11pm',
+            price: '$$',
+            images: [
+              {
+                src: '/Raleigh/bars/raleigh-times-1.png',
+                alt: 'Raleigh Times Bar rooftop patio',
+              },
+              {
+                src: '/Raleigh/bars/raleigh-times-2.png',
+                alt: 'Raleigh Times Bar interior and beer selection',
+              },
+            ],
           },
           {
             name: 'Watts & Ward',
@@ -838,40 +897,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7765, lng: -78.6367 },
             hours: '5pm-midnight Tue-Sat',
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Elegant cocktail bar with amber lighting and vintage decor',
-            },
-          },
-          {
-            name: 'Ruby Deluxe',
-            neighborhood: 'Warehouse District',
-            vibe: 'LGBTQ+ dive bar with drag nights, cheap drinks, and a dance floor that goes late.',
-            order: 'Well whiskey and soda. Save your money for tips.',
-            why: 'One of the last true queer dive bars in the Triangle. The crowd is welcoming, the drag shows are legendary, and the energy after midnight is unmatched anywhere else downtown.',
-            address: '415 S Salisbury St, Raleigh, NC 27601',
-            coordinates: { lat: 35.7755, lng: -78.6420 },
-            hours: '4pm-2am daily',
-            price: '$',
-            image: {
-              src: '',
-              alt: 'Colorful bar with neon lights and dance floor atmosphere',
-            },
-          },
-          {
-            name: 'Architect Bar',
-            neighborhood: 'Oakwood',
-            vibe: 'Craft cocktails in a converted bungalow. Intimate, unhurried, genuinely charming.',
-            order: 'Seasonal menu changes, but anything with local spirits is a good bet.',
-            why: 'Tucked in a residential neighborhood, feels like drinking at a friend\'s very well-curated house party. Small space means you\'ll overhear conversations and probably join them.',
-            address: '108 S Person St, Raleigh, NC 27601',
-            coordinates: { lat: 35.7811, lng: -78.6330 },
-            hours: '5pm-midnight Wed-Sun',
-            price: '$$',
-            image: {
-              src: '',
-              alt: 'Cozy craft cocktail bar with warm wood interior',
-            },
+            images: [
+              {
+                src: '/raleigh/bars/ward-1.png',
+                alt: 'Watts & Ward interior',
+              },
+              {
+                src: '/raleigh/bars/ward-2.png',
+                alt: 'Watts & Ward cocktails',
+              },
+              {
+                src: '/raleigh/bars/ward-3.png',
+                alt: 'Watts & Ward bar',
+              },
+            ],
           },
         ],
       },
@@ -919,6 +958,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7865, lng: -78.6482 },
             hours: '7am-5pm daily',
             price: '$$',
+            images: [
+              {
+                src: '/images/establishments/coffee-shops/raleigh/black-and-white-coffee-roasters/warehouse-interior-01.jpg',
+                alt: 'Black & White Coffee Roasters warehouse interior',
+              },
+              {
+                src: '/images/establishments/coffee-shops/raleigh/black-and-white-coffee-roasters/roasting-equipment-01.jpg',
+                alt: 'Black & White Coffee Roasters roasting equipment',
+              },
+              {
+                src: '/images/establishments/coffee-shops/raleigh/black-and-white-coffee-roasters/pour-over-01.jpg',
+                alt: 'Black & White Coffee Roasters pour-over service',
+              },
+            ],
           },
           {
             name: 'Sosta Cafe',
@@ -930,6 +983,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7912, lng: -78.6602 },
             hours: '7am-6pm Mon-Sat, 8am-5pm Sun',
             price: '$$',
+            images: [
+              {
+                src: '/images/establishments/coffee-shops/raleigh/sosta-cafe/cameron-village-01.jpg',
+                alt: 'Sosta Cafe in Cameron Village',
+              },
+              {
+                src: '/images/establishments/coffee-shops/raleigh/sosta-cafe/espresso-bar-01.jpg',
+                alt: 'Sosta Cafe espresso bar',
+              },
+              {
+                src: '/images/establishments/coffee-shops/raleigh/sosta-cafe/cornetti-01.jpg',
+                alt: 'Sosta Cafe traditional Italian cornetti',
+              },
+            ],
           },
         ],
       },
@@ -957,10 +1024,28 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://www.jubalavillage.com',
             instagram: '@jubalacoffee',
-            image: {
-              src: '',
-              alt: 'Modern coffee shop with precision brewing',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/jubala-1.png',
+                alt: 'Jubala Coffee interior and espresso bar',
+              },
+              {
+                src: '/Raleigh/coffee/jubala-2.png',
+                alt: 'Jubala Coffee precision brewing',
+              },
+              {
+                src: '/Raleigh/coffee/jubala3.png',
+                alt: 'Jubala Coffee modern seating area',
+              },
+              {
+                src: '/Raleigh/coffee/jubala4.png',
+                alt: 'Jubala Coffee fresh breakfast offerings',
+              },
+              {
+                src: '/Raleigh/coffee/jubala5.png',
+                alt: 'Jubala Coffee location exterior',
+              },
+            ],
           },
           {
             name: '321 Coffee',
@@ -974,10 +1059,20 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://www.321coffee.com',
             instagram: '@321coffee',
-            image: {
-              src: '',
-              alt: 'Warm community coffee shop with friendly atmosphere',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/321-1.png',
+                alt: '321 Coffee welcoming interior',
+              },
+              {
+                src: '/Raleigh/coffee/321-2.png',
+                alt: '321 Coffee barista at work',
+              },
+              {
+                src: '/Raleigh/coffee/321-3.png',
+                alt: '321 Coffee community atmosphere',
+              },
+            ],
           },
           {
             name: 'Iris Coffee Lab',
@@ -991,10 +1086,24 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://iriscoffeelab.com',
             instagram: '@iriscoffeelab',
-            image: {
-              src: '',
-              alt: 'Plant-filled modern coffee lab with natural light',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/iris1.png',
+                alt: 'Iris Coffee Lab plant-filled interior',
+              },
+              {
+                src: '/Raleigh/coffee/iris2.png',
+                alt: 'Iris Coffee Lab beautiful latte art',
+              },
+              {
+                src: '/Raleigh/coffee/iris3.png',
+                alt: 'Iris Coffee Lab Seaboard Station location',
+              },
+              {
+                src: '/Raleigh/coffee/iris4.png',
+                alt: 'Iris Coffee Lab seasonal specialty latte',
+              },
+            ],
           },
           {
             name: 'Heirloom Brewshop',
@@ -1008,10 +1117,20 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://heirloombrewshop.com',
             instagram: '@heirloombrewshop',
-            image: {
-              src: '',
-              alt: 'Minimalist Asian-inspired tea and coffee space',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/heirloom-1.png',
+                alt: 'Heirloom Brewshop minimalist interior',
+              },
+              {
+                src: '/Raleigh/coffee/heirloom2.png',
+                alt: 'Heirloom Brewshop downtown location',
+              },
+              {
+                src: '/Raleigh/coffee/heirloom3.png',
+                alt: 'Heirloom Brewshop specialty latte with house-made syrups',
+              },
+            ],
           },
           {
             name: 'Little Native Coffee Co.',
@@ -1024,10 +1143,20 @@ export const raleigh: CityData = {
             hours: '7am-5pm daily',
             price: '$$',
             instagram: '@littlenativecoffeeco',
-            image: {
-              src: '',
-              alt: 'Cozy historic coffee shop with plants and warm lighting',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/littlenative.png',
+                alt: 'Little Native Coffee Co. historic building exterior',
+              },
+              {
+                src: '/Raleigh/coffee/littlenative2.png',
+                alt: 'Little Native Coffee Co. cozy interior',
+              },
+              {
+                src: '/Raleigh/coffee/littlenative3.png',
+                alt: 'The Littlest Tea Room inside Little Native',
+              },
+            ],
           },
           {
             name: 'The Morning Times',
@@ -1041,10 +1170,20 @@ export const raleigh: CityData = {
             price: '$$',
             website: 'https://themorningtimes.com',
             instagram: '@morningtimesraleigh',
-            image: {
-              src: '',
-              alt: 'Exposed brick coffeehouse with warm bohemian atmosphere',
-            },
+            images: [
+              {
+                src: '/Raleigh/coffee/morningtimes1.png',
+                alt: 'The Morning Times exposed brick interior',
+              },
+              {
+                src: '/Raleigh/coffee/morningtimes-2.png',
+                alt: 'The Morning Times historic building',
+              },
+              {
+                src: '/Raleigh/coffee/morning-times-3.png',
+                alt: 'The Morning Times upstairs art gallery',
+              },
+            ],
           },
         ],
       },
@@ -1066,10 +1205,24 @@ export const raleigh: CityData = {
             hours: '11am-2:30pm, 5pm-9:30pm Tue-Sat',
             price: '$$',
             website: 'https://bidamanda.com',
-            image: {
-              src: '',
-              alt: 'Asian noodle soup with herbs and aromatics',
-            },
+            images: [
+              {
+                src: '/raleigh/restaurants/bida-manda-1.png',
+                alt: 'Bida Manda restaurant interior',
+              },
+              {
+                src: '/raleigh/restaurants/bida-manda-2.png',
+                alt: 'Bida Manda Laotian dishes',
+              },
+              {
+                src: '/raleigh/restaurants/bida-manda-3.png',
+                alt: 'Bida Manda dining space',
+              },
+              {
+                src: '/raleigh/restaurants/bida-manda-4.png',
+                alt: 'Bida Manda food presentation',
+              },
+            ],
           },
           {
             name: 'Dashi',
@@ -1081,10 +1234,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7748, lng: -78.6362 },
             hours: '11:30am-2pm, 5pm-9pm Tue-Sat',
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Rich tonkotsu ramen with soft-boiled egg and chashu',
-            },
+            images: [
+              {
+                src: '/raleigh/restaurants/dashi-1.png',
+                alt: 'Dashi ramen bowl',
+              },
+              {
+                src: '/raleigh/restaurants/dashi-2.png',
+                alt: 'Dashi restaurant interior',
+              },
+              {
+                src: '/raleigh/restaurants/dashi-3.png',
+                alt: 'Dashi Japanese small plates',
+              },
+            ],
           },
           {
             name: 'Stanbury',
@@ -1096,10 +1259,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7896, lng: -78.6333 },
             hours: '5:30pm-9pm Wed-Sat',
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Elegant farm-to-table dish with seasonal ingredients',
-            },
+            images: [
+              {
+                src: '/raleigh/restaurants/stanbury-1.png',
+                alt: 'Stanbury restaurant interior',
+              },
+              {
+                src: '/raleigh/restaurants/stanbury-2.png',
+                alt: 'Stanbury seasonal dish',
+              },
+              {
+                src: '/raleigh/restaurants/stanbury-3.png',
+                alt: 'Stanbury dining atmosphere',
+              },
+            ],
           },
           {
             name: 'Centro',
@@ -1111,10 +1284,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7783, lng: -78.6386 },
             hours: '11am-10pm Mon-Thu, 11am-11pm Fri-Sat, 11am-9pm Sun',
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Authentic Mexican tacos with fresh cilantro and lime',
-            },
+            images: [
+              {
+                src: '/raleigh/restaurants/centro-1.png',
+                alt: 'Centro Mexican restaurant',
+              },
+              {
+                src: '/raleigh/restaurants/centro-2.png',
+                alt: 'Centro tacos and dishes',
+              },
+              {
+                src: '/raleigh/restaurants/centro-3.png',
+                alt: 'Centro dining experience',
+              },
+            ],
           },
           {
             name: 'Oakwood Pizza Box',
@@ -1126,10 +1309,20 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7876, lng: -78.6335 },
             hours: '11am-9pm Wed-Sun',
             price: '$',
-            image: {
-              src: '',
-              alt: 'Fresh artisan pizza with melted cheese and toppings',
-            },
+            images: [
+              {
+                src: '/raleigh/restaurants/oakwood-1.png',
+                alt: 'Oakwood Pizza Box',
+              },
+              {
+                src: '/raleigh/restaurants/oakwood-2.png',
+                alt: 'Oakwood Pizza Box pies',
+              },
+              {
+                src: '/raleigh/restaurants/oakwood-3.png',
+                alt: 'Oakwood Pizza Box counter service',
+              },
+            ],
           },
         ],
       },
@@ -1615,6 +1808,10 @@ export const raleigh: CityData = {
             communityVoice: '"42nd Street was where Raleigh families ate for three generations." — News & Observer',
             lastAddress: '508 W Jones St, Raleigh',
             source: 'News & Observer, Indy Week',
+            image: {
+              src: '/raleigh/lost-loved/oyster-bar.png',
+              alt: '42nd Street Oyster Bar',
+            },
           },
           {
             id: 'raleigh-lost-2',
@@ -1659,6 +1856,10 @@ export const raleigh: CityData = {
             communityVoice: '"The Brewery was where Raleigh went to watch the game." — News & Observer',
             lastAddress: '3009 Hillsborough St, Raleigh',
             source: 'News & Observer, WRAL',
+            image: {
+              src: '/raleigh/lost-loved/the-brewery.png',
+              alt: 'The Brewery',
+            },
           },
           {
             id: 'raleigh-lost-5',
@@ -1672,6 +1873,10 @@ export const raleigh: CityData = {
             communityVoice: '"Reader\'s Corner was where Raleigh went to discover books." — Indy Week',
             lastAddress: '3201 Hillsborough St, Raleigh',
             source: 'News & Observer, Publisher\'s Weekly',
+            image: {
+              src: '/raleigh/lost-loved/readers.png',
+              alt: 'Reader\'s Corner bookstore',
+            },
           },
           {
             id: 'raleigh-lost-6',
@@ -1685,6 +1890,10 @@ export const raleigh: CityData = {
             communityVoice: '"The Rat was NC State\'s living room." — Technician',
             lastAddress: '2412 Hillsborough St, Raleigh',
             source: 'News & Observer, Technician',
+            image: {
+              src: '/raleigh/lost-loved/rathskellar.png',
+              alt: 'The Rathskeller',
+            },
           },
           {
             id: 'raleigh-lost-ad-2',
@@ -1703,6 +1912,10 @@ export const raleigh: CityData = {
             communityVoice: '"Volume 11 was where Raleigh got loud." — Indy Week',
             lastAddress: '1607 Glenwood Ave, Raleigh',
             source: 'Indy Week, WKNC',
+            image: {
+              src: '/raleigh/lost-loved/volume11.png',
+              alt: 'Volume 11 Tavern',
+            },
           },
           {
             id: 'raleigh-lost-8',
@@ -1716,6 +1929,10 @@ export const raleigh: CityData = {
             communityVoice: '"Clyde Cooper\'s used to be ours. Now it\'s a brand." — News & Observer',
             lastAddress: '109 E Davie St, Raleigh',
             source: 'News & Observer, Our State Magazine',
+            image: {
+              src: '/raleigh/lost-loved/clyde.png',
+              alt: 'Clyde Cooper\'s BBQ',
+            },
           },
         ],
       },

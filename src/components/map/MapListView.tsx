@@ -52,7 +52,7 @@ export function MapListView({ spots, cityName, citySlug, title }: MapListViewPro
   return (
     <>
       {/* Header and Nav */}
-      <Header cityName={cityName} citySlug={citySlug} />
+      <Header cityName={cityName} />
       <CityNav citySlug={citySlug} cityName={cityName} currentSection="coffee-shops" />
 
       {/* Main content */}

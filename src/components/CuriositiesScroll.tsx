@@ -330,16 +330,6 @@ function VideoAnimationCuriosity({ item, index, onSectionInView }: { item: Curio
                           </div>
                         )}
 
-                        {/* Category */}
-                        {item.category && (
-                          <div>
-                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
-                            <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                              {item.category}
-                            </span>
-                          </div>
-                        )}
-
                         {/* Year */}
                         {item.year && (
                           <div>
@@ -602,16 +592,6 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
                                 </span>
                               )}
                             </div>
-                          </div>
-                        )}
-
-                        {/* Category */}
-                        {item.category && (
-                          <div>
-                            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Category</h4>
-                            <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                              {item.category}
-                            </span>
                           </div>
                         )}
 

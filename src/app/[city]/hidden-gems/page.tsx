@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { getCity, getCityHiddenGems } from '@/data/cities'
+import { getCity, getCityHiddenGems, getCityHiddenGemsSection } from '@/data/cities'
 import { ShareLinks, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import HiddenGemsClient from './HiddenGemsClient'
@@ -17,6 +17,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
   }
 
   const gems = await getCityHiddenGems(citySlug)
+  const section = await getCityHiddenGemsSection(citySlug)
 
   return (
     <>
@@ -39,11 +40,22 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
             <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
               <div className="max-w-5xl">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  Hidden Gems in {city.name}
+                  {section?.title || `Hidden Gems in ${city.name}`}
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
-                  Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
-                </p>
+                {section?.teaser && (
+                  <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
+                    {section.teaser}
+                  </p>
+                )}
+                {section?.intro ? (
+                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                    {section.intro}
+                  </p>
+                ) : (
+                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                    Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
+                  </p>
+                )}
               </div>
               <div className="absolute top-6 right-6 md:top-8 md:right-8">
                 <ShareLinks title={`Hidden Gems in ${city.name} | Curious City`} variant="banner" />
@@ -56,11 +68,22 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    Hidden Gems in {city.name}
+                    {section?.title || `Hidden Gems in ${city.name}`}
                   </h1>
-                  <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
-                    Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
-                  </p>
+                  {section?.teaser && (
+                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mb-2">
+                      {section.teaser}
+                    </p>
+                  )}
+                  {section?.intro ? (
+                    <p className="text-base md:text-lg text-neutral-500 max-w-3xl">
+                      {section.intro}
+                    </p>
+                  ) : (
+                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
+                      Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
+                    </p>
+                  )}
                 </div>
                 <div className="hidden sm:block flex-shrink-0">
                   <ShareLinks title={`Hidden Gems in ${city.name} | Curious City`} variant="compact" />

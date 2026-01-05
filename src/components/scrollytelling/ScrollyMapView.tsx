@@ -14,6 +14,8 @@ interface ScrollyMapViewProps {
     attribution?: string
   }
   markerType?: 'coffee' | 'cocktail' | 'restaurant' | 'default'
+  showBanner?: boolean
+  bannerImage?: string
 }
 
 export function ScrollyMapView({
@@ -21,20 +23,24 @@ export function ScrollyMapView({
   cityName,
   title,
   intro,
-  markerType = 'coffee'
+  markerType = 'coffee',
+  showBanner = false,
+  bannerImage
 }: ScrollyMapViewProps) {
-  const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro
+  const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro/banner
   const [, setIsMapLoaded] = useState(false)
+  const [scrollToIndex, setScrollToIndex] = useState<number | null>(null)
 
   return (
     <div className="relative">
-      {/* Fixed background map (full screen, behind content) */}
-      <div className="fixed inset-0 z-0">
+      {/* Fixed background map (starts below nav) */}
+      <div className="fixed inset-0 z-0" style={{ top: '60px' }}>
         <ScrollyMap
           spots={spots}
           activeSpotIndex={activeSpotIndex}
           markerType={markerType}
           onMapLoaded={setIsMapLoaded}
+          onMarkerClick={(index) => setScrollToIndex(index)}
         />
       </div>
 
@@ -45,7 +51,11 @@ export function ScrollyMapView({
           cityName={cityName}
           title={title}
           intro={intro}
+          showBanner={showBanner}
+          bannerImage={bannerImage}
           onActiveIndexChange={setActiveSpotIndex}
+          scrollToIndex={scrollToIndex}
+          onScrollComplete={() => setScrollToIndex(null)}
         />
       </div>
     </div>

@@ -7,7 +7,8 @@
  * Handles header, in-content, and footer ads according to content type.
  */
 
-import { UniversalAd, createAdSlot } from './UniversalAd'
+import { UniversalAd } from './UniversalAd'
+import { createAdSlot } from '@/lib/ads/slots'
 import { adPlacements } from '@/lib/ads/config'
 import type { ReactNode } from 'react'
 

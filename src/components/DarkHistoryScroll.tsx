@@ -165,19 +165,11 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
 
             {/* Content */}
             <div className="flex-1 min-w-0">
-              {/* Header with category and year */}
-              <div className="flex items-baseline gap-2 flex-wrap mb-4">
+              {/* Header with year on same line */}
+              <div className="flex items-baseline gap-3 flex-wrap mb-4">
                 <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 leading-tight">{item.title}</h3>
-              </div>
-
-              <div className="flex items-center gap-2 mb-4">
-                {item.category && (
-                  <span className={`text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                    {item.category}
-                  </span>
-                )}
                 {item.year && (
-                  <span className="text-sm text-neutral-400 font-medium">{item.year}</span>
+                  <span className="text-lg text-neutral-600 font-semibold">{item.year}</span>
                 )}
               </div>
 
@@ -203,17 +195,27 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
 
               {/* Location */}
               {item.location && (
-                <div className="flex items-start gap-2 text-sm text-neutral-500 mb-4">
-                  <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>
-                    {item.location.name}
-                    {item.location.stillExists === false && (
-                      <span className="text-neutral-400 ml-1">(no longer exists)</span>
-                    )}
-                  </span>
+                <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Location</h4>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <div className="flex-1 min-w-0">
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.location.name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium text-sm"
+                      >
+                        {item.location.name}
+                      </a>
+                      {item.location.stillExists === false && (
+                        <span className="text-neutral-600 text-sm ml-1"> • No longer exists</span>
+                      )}
+                    </div>
+                  </div>
                 </div>
               )}
 
@@ -283,7 +285,7 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
                             ) : (
                               <span className="text-neutral-700 font-medium">{source.title}</span>
                             )}
-                            {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                            {(source.author || source.publisher || source.platform || source.show || source.director || source.year) && (
                               <span className="text-neutral-600">
                                 {source.author && <span> by {source.author}</span>}
                                 {source.publisher && <span> • {source.publisher}</span>}
@@ -291,7 +293,6 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
                                 {source.show && <span> • {source.show}</span>}
                                 {source.director && <span> • dir. {source.director}</span>}
                                 {source.year && <span> • {source.year}</span>}
-                                {source.isbn && <span> • ISBN: {source.isbn}</span>}
                               </span>
                             )}
                           </div>
@@ -340,21 +341,14 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
             variants={contentVariants}
             className="flex-1 min-w-0"
           >
-            {/* Header */}
-            <div className="mb-4">
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight mb-3">
+            {/* Header with year on same line */}
+            <div className="flex items-baseline gap-3 flex-wrap mb-4">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
                 {item.title}
               </h3>
-              <div className="flex items-center gap-2 flex-wrap">
-                {item.category && (
-                  <span className={`text-xs font-medium px-3 py-1 rounded-full ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                    {item.category}
-                  </span>
-                )}
-                {item.year && (
-                  <span className="text-sm text-neutral-400 font-medium">{item.year}</span>
-                )}
-              </div>
+              {item.year && (
+                <span className="text-lg text-neutral-600 font-semibold">{item.year}</span>
+              )}
             </div>
 
             {/* Verdict with animation */}
@@ -405,18 +399,34 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
 
             {/* Location */}
             {item.location && (
-              <div className="flex items-start gap-2 text-sm text-neutral-500 mb-4">
-                <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span>
-                  {item.location.name}
-                  {item.location.stillExists === false && (
-                    <span className="text-neutral-400 ml-1">(no longer exists)</span>
-                  )}
-                </span>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: 0.55, ease: [0.16, 1, 0.3, 1] as any }}
+                className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6"
+              >
+                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">Location</h4>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div className="flex-1 min-w-0">
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.location.name)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors font-medium text-sm"
+                    >
+                      {item.location.name}
+                    </a>
+                    {item.location.stillExists === false && (
+                      <span className="text-neutral-600 text-sm ml-1"> • No longer exists</span>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
             )}
 
             {/* Sources - premium formatting */}
@@ -491,7 +501,7 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
                           ) : (
                             <span className="text-neutral-700 font-medium">{source.title}</span>
                           )}
-                          {(source.author || source.publisher || source.platform || source.show || source.director || source.year || source.isbn) && (
+                          {(source.author || source.publisher || source.platform || source.show || source.director || source.year) && (
                             <span className="text-neutral-600">
                               {source.author && <span> by {source.author}</span>}
                               {source.publisher && <span> • {source.publisher}</span>}
@@ -499,7 +509,6 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
                               {source.show && <span> • {source.show}</span>}
                               {source.director && <span> • dir. {source.director}</span>}
                               {source.year && <span> • {source.year}</span>}
-                              {source.isbn && <span> • ISBN: {source.isbn}</span>}
                             </span>
                           )}
                         </div>

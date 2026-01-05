@@ -11,6 +11,7 @@ export {
   getAllDarkHistory,
   getCityCuriosities,
   getCityHiddenGems,
+  getCityHiddenGemsSection,
   getCityLocalFavorites,
   getCityBestOf,
   getCityDarkHistory,
@@ -18,5 +19,6 @@ export {
   getCityEvents,
   getCityScenes,
   getCityLostAndLoved,
+  getCityLostAndLovedSection,
   getAllLostAndLoved,
 } from './cities/index'

@@ -83,6 +83,21 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
 
   const allCuriosities = await getCityCuriosities(slug)
 
+  // Find the curiosities section for title/teaser/intro
+  const findSection = (items: any[]): any => {
+    for (const item of items) {
+      if (item.type === 'section' && item.title?.includes('Curiosit')) {
+        return item
+      }
+      if (item.items && Array.isArray(item.items)) {
+        const found = findSection(item.items)
+        if (found) return found
+      }
+    }
+    return null
+  }
+  const section = findSection(city.content)
+
   // Get available categories from the data with counts
   const categoryCounts = allCuriosities.reduce((acc: Record<string, number>, c: any) => {
     if (c.category) {
@@ -124,11 +139,18 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
             <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
               <div className="max-w-5xl">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  Curiosities of {city.name}
+                  {section?.title || `Curiosities of ${city.name}`}
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
-                  Forgotten history, underground secrets, and the peculiar facts that make this city unlike anywhere else.
-                </p>
+                {section?.teaser && (
+                  <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
+                    {section.teaser}
+                  </p>
+                )}
+                {section?.intro && (
+                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                    {section.intro}
+                  </p>
+                )}
               </div>
               <div className="absolute top-6 right-6 md:top-8 md:right-8">
                 <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="banner" />
@@ -141,11 +163,18 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    Curiosities of {city.name}
+                    {section?.title || `Curiosities of ${city.name}`}
                   </h1>
-                  <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
-                    Forgotten history, underground secrets, and the peculiar facts that make this city unlike anywhere else.
-                  </p>
+                  {section?.teaser && (
+                    <p className="text-xl text-neutral-700 max-w-3xl mb-2 font-medium">
+                      {section.teaser}
+                    </p>
+                  )}
+                  {section?.intro && (
+                    <p className="text-lg text-neutral-600 max-w-3xl">
+                      {section.intro}
+                    </p>
+                  )}
                 </div>
                 <div className="hidden sm:block flex-shrink-0">
                   <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="compact" />

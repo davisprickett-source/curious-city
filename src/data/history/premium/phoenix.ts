@@ -8,6 +8,11 @@ export const phoenix_premium_history: Record<string, History> = {
     subtitle: 'A city that shouldn\'t exist, existing grandly anyway',
     author: 'Curious City',
     publishedAt: '2024-12-22',
+    heroImage: {
+      src: '/sequences/phoenix/phoenix-1/frame-0001.jpg',
+      alt: 'Phoenix sprawling across the Sonoran Desert',
+      position: 'center',
+    },
     premium: {
       isPremium: true,
       estimatedReadTime: '18 min',

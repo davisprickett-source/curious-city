@@ -71,7 +71,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'Pirate ship on Tampa Bay',
-              credit: 'Unsplash',
             },
             source: 'Tampa Bay History Center',
             location: {
@@ -89,7 +88,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'José Martí Park in Ybor City',
-              credit: 'Unsplash',
             },
             source: 'Ybor City Museum State Park',
             location: {
@@ -124,7 +122,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'Tampa Bay coastline',
-              credit: 'Unsplash',
             },
             source: 'National Hurricane Center',
             location: {
@@ -159,7 +156,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'Lightning storm over Tampa Bay',
-              credit: 'Unsplash',
             },
             source: 'National Weather Service',
             location: {
@@ -189,7 +185,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'Chicken on city street',
-              credit: 'Unsplash',
             },
             source: 'City of Tampa ordinance',
             location: {
@@ -246,7 +241,6 @@ export const tampa: CityData = {
             image: {
               src: '',
               alt: 'University of Tampa minarets',
-              credit: 'Unsplash',
             },
             source: 'Henry B. Plant Museum',
             location: {
@@ -1065,10 +1059,13 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://buddybrew.com',
             instagram: '@buddybrewcoffee',
-            image: {
-              src: '',
-              alt: 'Bright specialty coffee shop with espresso bar',
-            },
+            images: [
+              {
+                src: 'https://images.getbento.com/accounts/9226f951460a3ed5a3486cffc800c309/media/images/buddy_brew.png?w=1000&fit=max&auto=compress,format&cs=origin&h=1000',
+                alt: 'Buddy Brew Coffee at Armature Works Tampa',
+                credit: 'Armature Works',
+              },
+            ],
           },
           {
             name: 'Blind Tiger Coffee Roasters',
@@ -1082,10 +1079,7 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://blindtigercafe.com',
             instagram: '@blindtigercafe',
-            image: {
-              src: '',
-              alt: 'Speakeasy-style coffee roaster in Ybor City',
-            },
+            images: [],
           },
           {
             name: 'Kahwa Coffee',
@@ -1099,10 +1093,7 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://kahwacoffee.com',
             instagram: '@kahwacoffee',
-            image: {
-              src: '',
-              alt: 'Tampa\'s premier local coffee roaster',
-            },
+            images: [],
           },
           {
             name: 'The Lab Coffee',
@@ -1115,10 +1106,7 @@ export const tampa: CityData = {
             hours: '7am-5pm daily',
             price: '$$',
             instagram: '@thelabcoffeetampa',
-            image: {
-              src: '',
-              alt: 'Industrial roastery with experimental coffee',
-            },
+            images: [],
           },
           {
             name: 'Cafe Quiquiriqui',
@@ -1132,10 +1120,13 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://hotelhaya.com',
             instagram: '@cafequiquiriqui',
-            image: {
-              src: '',
-              alt: 'Rich Cuban café con leche in historic Ybor',
-            },
+            images: [
+              {
+                src: 'https://hotelhaya.com/wp-content/uploads/2020/10/364A7469.Z_5-scaled-640x0-c-default.jpg',
+                alt: 'Cafe Quiquiriqui outdoor seating at Hotel Haya in Ybor City',
+                credit: 'Hotel Haya',
+              },
+            ],
           },
           {
             name: 'Shortwave Coffee',
@@ -1149,10 +1140,23 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://shortwavecoffee.com',
             instagram: '@shortwavecoffee',
-            image: {
-              src: '',
-              alt: 'Modern waterfront coffee shop with harbor views',
-            },
+            images: [
+              {
+                src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09591-scaled.jpg',
+                alt: 'Shortwave Coffee Tampa interior with modern seating',
+                credit: 'Shortwave Coffee',
+              },
+              {
+                src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09752-scaled.jpg',
+                alt: 'Shortwave Coffee espresso bar and roastery',
+                credit: 'Shortwave Coffee',
+              },
+              {
+                src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09624-scaled.jpg',
+                alt: 'Shortwave Coffee latte art and specialty drinks',
+                credit: 'Shortwave Coffee',
+              },
+            ],
           },
         ],
       },

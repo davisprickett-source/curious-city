@@ -1467,116 +1467,59 @@ export const minneapolis: CityData = {
         spots: [
           {
             name: 'Spyhouse Coffee',
-            neighborhood: 'Multiple Locations',
-            vibe: 'The Minneapolis coffee institution. Since 2000, Spyhouse has been the standard-bearer for specialty coffee in the Twin Cities — serious about sourcing, meticulous about roasting, and consistent across every cup.',
-            order: 'The Orion blend as a pour-over is their signature, but trust whatever single-origin they\'re featuring. The baristas know the farm, the altitude, the processing method. Ask them.',
-            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. Founded by a collective of artists and coffee obsessives, it started in a 1926 Whittier brownstone and grew into the city\'s most influential roaster. Each location has its own personality — the original Whittier\'s quirky nooks and mid-century furniture, Northeast\'s soaring industrial ceilings, Uptown\'s prime people-watching, Downtown\'s refined hotel-lobby elegance — but they\'re all united by the same ethos: coffee as craft, not commodity. Their roasting operation supplies restaurants across the Midwest, but they still act like a neighborhood shop.',
+            neighborhood: 'Whittier',
+            vibe: 'The original. Since 2000. Housed in a 1926 brownstone with tons of space, mid-century decor, and rotating local art.',
+            order: 'The Orion blend as a pour-over. Or trust whatever single-origin they\'re featuring.',
+            why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. The Whittier location is where it all started — quirky nooks, ambient lighting, and the best energy of all their spots. Their roasting operation is serious — this isn\'t coffee as aesthetic, it\'s coffee as craft.',
+            address: '2451 Nicollet Ave, Minneapolis, MN 55404',
+            coordinates: { lat: 44.9595, lng: -93.2780 },
             hours: '7am-6pm daily',
             price: '$$',
             website: 'https://spyhousecoffee.com',
             instagram: '@spyhousecoffee',
-            images: [
-              {
-                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
-                alt: 'Spyhouse Coffee Whittier location — the original — in a 1926 brownstone with mid-century decor',
-              },
-              {
-                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Northeast_2048x2048.jpg?v=1530814135',
-                alt: 'Spyhouse Coffee Northeast in converted warehouse with industrial ceilings and natural light',
-              },
-              {
-                src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Uptown_2048x2048.jpg?v=1529889311',
-                alt: 'Spyhouse Coffee Uptown with bright modern interior on Hennepin Avenue',
-              },
-              {
-                src: 'https://cdn.shopify.com/s/files/1/0266/4909/files/Emery_7_2048x2048.jpg?v=1555343491',
-                alt: 'Spyhouse Coffee Downtown inside Hotel Emery with refined lounge atmosphere',
-              },
-            ],
+            image: {
+              src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
+              alt: 'Spyhouse Coffee Whittier location in 1926 brownstone on Nicollet Ave',
+              credit: 'Spyhouse Coffee Roasters',
+            },
             menuImage: {
               src: '/images/establishments/coffee-shops/minneapolis/menus/spyhouse-coffee/menu.jpg',
               alt: 'Spyhouse Coffee menu board with specialty drinks and single-origin offerings',
             },
-            locations: [
-              {
-                name: 'Whittier (The Original)',
-                address: '2451 Nicollet Ave, Minneapolis, MN 55404',
-                neighborhood: 'Whittier',
-                coordinates: { lat: 44.9595, lng: -93.2780 },
-                note: 'Where it all started. Best energy, quirky nooks, rotating local art.',
-              },
-              {
-                name: 'Northeast Arts District',
-                address: '945 Broadway St NE, Minneapolis, MN 55413',
-                neighborhood: 'Northeast',
-                coordinates: { lat: 44.9968, lng: -93.2567 },
-                note: 'Most seating. Industrial warehouse vibes. Ideal for remote work.',
-              },
-              {
-                name: 'Uptown',
-                address: '2404 Hennepin Ave, Minneapolis, MN 55405',
-                neighborhood: 'Uptown',
-                coordinates: { lat: 44.9547, lng: -93.2976 },
-                note: 'Bright, modern, buzzing. Prime people-watching.',
-              },
-              {
-                name: 'Downtown (Hotel Emery)',
-                address: '215 S 4th St, Minneapolis, MN 55401',
-                neighborhood: 'Downtown',
-                coordinates: { lat: 44.9798, lng: -93.2653 },
-                note: 'Most refined. Extended food menu. Great for meetings.',
-              },
-            ],
           },
           {
             name: 'Dogwood Coffee',
-            neighborhood: 'Northeast & Longfellow',
-            vibe: 'The quiet masters. Dogwood has been roasting exceptional coffee since 2009 — long before it was trendy — with a focus on direct trade relationships and impeccable technique.',
-            order: 'Espresso, straight. Their beans are built for it. The cortado is perfectly balanced. Pastries come from local bakeries.',
-            why: 'Dogwood doesn\'t do gimmicks. No influencer bait, no Instagram moments — just really, really good coffee from people who\'ve been doing this longer than most. Their Northeast location is the roasting headquarters, with light pouring through tall windows and the hum of the roaster in the background. The East Lake spot is quieter, more neighborhood, the kind of place where baristas know your order after two visits. Both share the same philosophy: sourcing exceptional beans, roasting them with precision, and serving them without pretense. This is what Minneapolis coffee culture looks like when it stops trying to impress anyone.',
+            neighborhood: 'Northeast',
+            vibe: 'One of the oldest third-wave roasters in town. Serious about sourcing, unpretentious about everything else.',
+            order: 'Espresso, straight. Their beans are built for it.',
+            why: 'Dogwood has been quietly roasting exceptional coffee since before it was cool. No gimmicks, no influencer bait — just really, really good coffee from people who\'ve been doing this longer than most. This location is their roasting headquarters with great natural light for working.',
+            address: '1209 Tyler St NE, Minneapolis, MN 55413',
+            coordinates: { lat: 44.9951, lng: -93.2551 },
+            hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
             price: '$$',
             website: 'https://dogwoodcoffee.com',
             instagram: '@dogwoodcoffee',
             images: [
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-coffeebar-1168x780.jpg',
-                alt: 'Dogwood Coffee espresso bar with custom Synesso machine and warm wood finishes',
+                alt: 'Dogwood Coffee espresso bar with custom Synesso machine',
+                credit: 'Sprudge Coffee',
               },
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-cafe-532x780.jpg',
-                alt: 'Dogwood Coffee Northeast cafe interior with communal seating and natural light',
+                alt: 'Dogwood Coffee Northeast cafe interior',
+                credit: 'Sprudge Coffee',
               },
               {
                 src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-neon-520x780.jpg',
-                alt: 'Custom neon art installation at Dogwood Coffee Northeast',
-              },
-              {
-                src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-outside-cropped-1170x780.jpg',
-                alt: 'Dogwood Coffee East Lake exterior with clean modern signage',
+                alt: 'Custom neon installation at Dogwood Coffee',
+                credit: 'Sprudge Coffee',
               },
             ],
             menuImage: {
               src: '/images/establishments/coffee-shops/minneapolis/menus/dogwood-coffee/menu.jpg',
               alt: 'Dogwood Coffee espresso and specialty drink menu',
             },
-            locations: [
-              {
-                name: 'Northeast (Roasting HQ)',
-                address: '1209 Tyler St NE, Minneapolis, MN 55413',
-                neighborhood: 'Northeast',
-                coordinates: { lat: 44.9951, lng: -93.2551 },
-                hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
-                note: 'Roasting headquarters. Great natural light for working.',
-              },
-              {
-                name: 'East Lake',
-                address: '4021 E Lake St, Minneapolis, MN 55406',
-                neighborhood: 'Longfellow',
-                coordinates: { lat: 44.9484, lng: -93.2104 },
-                hours: '7am-7pm Mon-Fri, 8am-7pm Sat, 8am-5pm Sun',
-                note: 'Quieter neighborhood spot. More parking. Loyal locals.',
-              },
-            ],
           },
           {
             name: 'Matchbox Coffee',
@@ -1590,28 +1533,7 @@ export const minneapolis: CityData = {
             price: '$$',
             website: 'https://matchboxcoffeeshop.com',
             instagram: '@matchboxcoffeempls',
-            images: [
-              {
-                src: '/images/establishments/coffee-shops/minneapolis/photos/matchbox-coffee/interior-string-lights-01.jpg',
-                alt: 'Matchbox Coffee tiny interior with string lights draped overhead',
-              },
-              {
-                src: '/images/establishments/coffee-shops/minneapolis/photos/matchbox-coffee/cold-press-01.jpg',
-                alt: 'Cold press coffee method at Matchbox Coffee — different from cold brew',
-              },
-              {
-                src: '/images/establishments/coffee-shops/minneapolis/photos/matchbox-coffee/pastries-01.jpg',
-                alt: 'Fresh-baked pastries from local bakers at Matchbox Coffee',
-              },
-              {
-                src: '/images/establishments/coffee-shops/minneapolis/photos/matchbox-coffee/cozy-seating-01.jpg',
-                alt: 'Cozy seating area in worker-owned Matchbox Coffee',
-              },
-              {
-                src: '/images/establishments/coffee-shops/minneapolis/photos/matchbox-coffee/exterior-signage-01.jpg',
-                alt: 'Matchbox Coffee exterior in Northeast Minneapolis',
-              },
-            ],
+            images: [],
             menuImage: {
               src: '/images/establishments/coffee-shops/minneapolis/menus/matchbox-coffee/menu.jpg',
               alt: 'Matchbox Coffee menu board with cold press and pastries',
@@ -1631,20 +1553,20 @@ export const minneapolis: CityData = {
             instagram: '@backstorycoffee',
             images: [
               {
-                src: 'https://cdn.shopify.com/s/files/1/1583/5049/files/Backstory_Coffee_Roasters_North_Loop_web-5_480x480.jpg?v=1659814438',
-                alt: 'Backstory Coffee Roasters North Loop interior with dramatic plants and natural light',
+                src: '/minneapolis/coffee-shops/backstory.png',
+                alt: 'Backstory Coffee Roasters North Loop location with greenery',
               },
               {
-                src: 'https://dailycoffeenews.com/wp-content/uploads/2022/11/Backstory-Coffee-Minneapolis-bar.jpg',
-                alt: 'Backstory Coffee bar area with La Marzocco espresso machine and greenery',
+                src: '/minneapolis/coffee-shops/backstory-2.png',
+                alt: 'Backstory Coffee interior with plants and natural light',
               },
               {
-                src: 'https://dailycoffeenews.com/wp-content/uploads/2022/11/Backstory-Coffee-Minneapolis-Duffey.jpg',
-                alt: 'Backstory Coffee inside The Duffey building with high ceilings and plants',
+                src: '/minneapolis/coffee-shops/backstory-3.png',
+                alt: 'Backstory Coffee espresso bar and seating area',
               },
               {
-                src: '',
-                alt: 'Barista preparing drinks at Backstory Coffee Roasters',
+                src: '/minneapolis/coffee-shops/backstory-4.png',
+                alt: 'Backstory Coffee lush interior with floor-to-ceiling windows',
               },
             ],
             menuImage: {
@@ -1655,35 +1577,25 @@ export const minneapolis: CityData = {
           {
             name: 'Isles Bun & Coffee',
             neighborhood: 'Uptown',
-            vibe: 'The cinnamon roll is bigger than your face. Literally award-winning — World\'s Best Cinnamon Roll 2024. The coffee is almost an afterthought, but it\'s actually good too.',
-            order: 'The cinnamon roll. You came for the cinnamon roll. But really, get coffee too — solid espresso drinks and drip that don\'t embarrass themselves next to the pastry.',
-            why: 'Let\'s be honest: you\'re coming here for one thing, and it won World\'s Best Cinnamon Roll in 2024. The Isles bun is obscene — layers of butter-laminated dough, cinnamon swirled through every fold, cream cheese frosting that pools in the center. It takes two days to make each batch. They sell out regularly. Lines form on weekend mornings. This is a Minneapolis pilgrimage. But here\'s what surprises people: the coffee is actually excellent. Solid espresso drinks, smooth drip, baristas who care. The space is bright and welcoming, with a few tables and a counter. Come Wednesday through Sunday — they\'re closed Monday and Tuesday — and arrive early. Accept no substitutes. This is the one.',
+            vibe: 'The cinnamon roll is bigger than your face. Literally award-winning. The coffee is almost an afterthought.',
+            order: 'The cinnamon roll. You came for the cinnamon roll. Get coffee too.',
+            why: 'Their cinnamon bun won World\'s Best Cinnamon Roll in 2024. It\'s obscene. The coffee is actually good too — solid espresso drinks and drip — but let\'s be honest, you\'re here for the pastry. Arrive early or accept disappointment.',
             address: '1424 W 28th St, Minneapolis, MN 55408',
             coordinates: { lat: 44.9524, lng: -93.2941 },
-            hours: '7am-2pm Wed-Sun (Closed Mon-Tue)',
+            hours: '7am-2pm Wed-Sun',
             price: '$$',
             website: 'https://islesbun.com',
             instagram: '@islesbun',
             images: [
               {
                 src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-2.png',
-                alt: 'Isles Bun & Coffee — 2024 World\'s Best Cinnamon Rolls — trays of fresh-baked cinnamon rolls',
+                alt: 'Isles Bun & Coffee award-winning cinnamon rolls with cream cheese frosting',
+                credit: 'World\'s Best Cinnamon Rolls',
               },
               {
-                src: 'https://hipsterhack.blog/wp-content/uploads/2019/04/img_8633.jpg',
-                alt: 'Isles Bun & Coffee bakery counter with fresh pastries in Uptown Minneapolis',
-              },
-              {
-                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Cinnamon-Roll.jpg',
-                alt: 'Massive cinnamon roll with tangy cream cheese frosting at Isles Bun & Coffee',
-              },
-              {
-                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Exterior.jpg',
-                alt: 'Isles Bun & Coffee storefront near Lake of the Isles',
-              },
-              {
-                src: 'https://roadfood.com/wp-content/uploads/2019/11/Isles-Bun-and-Coffee-Interior.jpg',
-                alt: 'Cozy interior of Isles Bun & Coffee with open kitchen',
+                src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-4.png',
+                alt: 'Isles Bun & Coffee cinnamon roll close-up',
+                credit: 'World\'s Best Cinnamon Rolls',
               },
             ],
             menuImage: {
@@ -1693,10 +1605,10 @@ export const minneapolis: CityData = {
           },
           {
             name: 'Northern Coffeeworks',
-            neighborhood: 'Nokomis',
-            vibe: 'Blends named after Minnesota landmarks. All coffee roasted in-house. The kind of neighborhood spot where regulars are real neighbors, not laptop nomads passing through.',
-            order: 'The "Boundary Waters" blend is the move — earthy, smooth, tastes like a cabin morning. Or try "Cabin Vibes" if you want something lighter.',
-            why: 'Northern Coffeeworks feels like a secret, even though it\'s been here for years. Near Lake Nokomis, away from the trendy neighborhoods, this is where Minneapolis goes when it wants to actually get work done. The roasting operation is serious — all in-house, all carefully sourced — but the vibe is decidedly not. It\'s quiet. Productive. The kind of place where you can hear yourself think. The blends take their Minnesota identity seriously: "Boundary Waters," "Evergreen," "Cabin Vibes." They taste like they sound. The regulars are actual neighbors, people who walk here from the surrounding blocks, not Instagram tourists. If you want third-wave craft without third-wave attitude, this is it.',
+            neighborhood: 'Nokomis / Powderhorn',
+            vibe: 'All coffee roasted in-house. Blends named after Minnesota landmarks. Quiet and productive.',
+            order: 'The "Boundary Waters" blend. Fitting.',
+            why: 'If you want to actually get work done, this is the spot. Near Lake Nokomis, away from the trendy neighborhoods, with coffee that takes its Minnesota identity seriously — blends like "Cabin Vibes" and "Evergreen" that actually taste like they sound. Regulars are real neighbors, not laptop nomads.',
             address: '4208 28th Ave S, Minneapolis, MN 55406',
             coordinates: { lat: 44.9332, lng: -93.2305 },
             hours: '7am-4pm daily',
@@ -1705,24 +1617,14 @@ export const minneapolis: CityData = {
             instagram: '@northerncoffeeworks',
             images: [
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/59386797f7e0ab94fc2a2b08/1603117984789-DO8PY2ZX6N99EVAOIVAH/Northern%252BCoffeeworks%252B3.jpg',
-                alt: 'Northern Coffeeworks interior with Scandinavian-inspired design and natural light',
+                src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/Northern_Coffeeworks_Jamie_Cooper_2024_Minneapolis_500x.png?v=1731947718',
+                alt: 'Northern Coffeeworks Minneapolis coffee shop interior',
+                credit: 'Northern Coffeeworks',
               },
               {
-                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-interior-650x433.jpg',
-                alt: 'Northern Coffeeworks seating area with warm neighborhood atmosphere',
-              },
-              {
-                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-counter-650x433.jpg',
-                alt: 'Northern Coffeeworks counter with espresso machine and fresh pastries',
-              },
-              {
-                src: 'https://heavytable.com/wp-content/uploads/2017/09/northern-coffee-latte-650x433.jpg',
-                alt: 'Perfectly poured latte at Northern Coffeeworks',
-              },
-              {
-                src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/bwcabag.jpg?v=1705357884',
-                alt: 'Boundary Waters blend coffee bag from Northern Coffeeworks',
+                src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/NCW_JamieCooper_June2024_Minneapolis-43.jpg?v=1731947718',
+                alt: 'Northern Coffeeworks coffee bar and roasting area',
+                credit: 'Northern Coffeeworks',
               },
             ],
             menuImage: {
@@ -1752,36 +1654,24 @@ export const minneapolis: CityData = {
             website: 'https://owamni.com',
             images: [
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/bison-ribeye-01.jpg',
-                alt: 'Bison ribeye steak — Owamni\'s signature dish using Indigenous ingredients',
+                src: '/minneapolis/restaurants/owamni-1.png',
+                alt: 'Owamni Indigenous cuisine dining experience',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/interior-01.jpg',
-                alt: 'Owamni restaurant interior overlooking the Mississippi River',
+                src: '/minneapolis/restaurants/owamni-2.png',
+                alt: 'Owamni restaurant interior and ambiance',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/spoon-cake-01.jpg',
-                alt: 'Traditional Indigenous spoon cake dessert at Owamni',
+                src: '/minneapolis/restaurants/owamni-3.png',
+                alt: 'Owamni signature dishes',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/river-view-01.jpg',
-                alt: 'View of St. Anthony Falls and the Mississippi River from Owamni',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/wild-teas-01.jpg',
-                alt: 'Wild foraged tea service at Owamni',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/ingredients-display-01.jpg',
-                alt: 'Indigenous ingredients display showing pre-colonial foodways',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/owamni/interior-02.jpg',
-                alt: 'Owamni dining room with natural materials and Indigenous design elements',
+                src: '/minneapolis/restaurants/oramnii-4.png',
+                alt: 'Owamni plated presentation',
               },
             ],
             menuImage: {
-              src: '/images/establishments/restaurants/minneapolis/menus/owamni/menu.jpg',
+              src: '/minneapolis/restaurants/oawmni-menu.png',
               alt: 'Owamni Indigenous cuisine menu',
             },
           },
@@ -1798,28 +1688,16 @@ export const minneapolis: CityData = {
             website: 'https://mattsbar.com',
             images: [
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/jucy-lucy-cheese-01.jpg',
-                alt: 'Jucy Lucy burger with molten cheese oozing — Matt\'s Bar signature since 1954',
+                src: '/minneapolis/restaurants/matts-1.png',
+                alt: 'Matt\'s Bar exterior and iconic signage',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/burger-plated-01.jpg',
-                alt: 'Jucy Lucy served with fries at Matt\'s Bar',
+                src: '/minneapolis/restaurants/matts-2.png',
+                alt: 'Matt\'s Bar interior with classic dive bar atmosphere',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/interior-01.jpg',
-                alt: 'Matt\'s Bar dive bar interior — cash only, no pretense',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/exterior-neon-01.jpg',
-                alt: 'Matt\'s Bar classic neon sign on Cedar Avenue',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/kitchen-grill-01.jpg',
-                alt: 'Grill in action at Matt\'s Bar cooking Jucy Lucys',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/matts-bar/exterior-storefront-01.jpg',
-                alt: 'Matt\'s Bar storefront — unchanged since the 1950s',
+                src: '/minneapolis/restaurants/matts-3.png',
+                alt: 'The legendary Jucy Lucy burger at Matt\'s Bar',
               },
             ],
             menuImage: {
@@ -1876,32 +1754,20 @@ export const minneapolis: CityData = {
             price: '$',
             images: [
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/counter-14-stools-01.jpg',
-                alt: 'Al\'s Breakfast iconic 14-stool counter in Dinkytown',
+                src: '/minneapolis/restaurants/al-1.png',
+                alt: 'Al\'s Breakfast legendary 14-seat counter',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/blueberry-pancakes-01.jpg',
-                alt: 'Blueberry pancakes — Al\'s Breakfast signature dish since 1950',
+                src: '/minneapolis/restaurants/al-2.png',
+                alt: 'Al\'s Breakfast griddle and cooking area',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/griddle-cooking-01.jpg',
-                alt: 'Cooks working the griddle at Al\'s Breakfast narrow counter',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/hash-browns-eggs-01.jpg',
-                alt: 'The Wally — poached eggs over hash browns with hollandaise at Al\'s',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/narrow-interior-01.jpg',
-                alt: 'Al\'s Breakfast narrow 10-foot-wide interior with customers at counter',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/als-breakfast/exterior-storefront-01.jpg',
-                alt: 'Al\'s Breakfast exterior storefront in Dinkytown — unchanged since 1950',
+                src: '/minneapolis/restaurants/al-3.png',
+                alt: 'Al\'s Breakfast famous blueberry pancakes',
               },
             ],
             menuImage: {
-              src: '/images/establishments/restaurants/minneapolis/menus/als-breakfast/menu.jpg',
+              src: '/minneapolis/restaurants/al-menu.png',
               alt: 'Al\'s Breakfast diner menu',
             },
           },
@@ -1918,36 +1784,12 @@ export const minneapolis: CityData = {
             website: 'https://www.haihaimpls.com',
             images: [
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/pork-belly-buns-01.jpg',
-                alt: 'Pork belly steam buns — Hai Hai signature dish with pickled vegetables',
+                src: '/minneapolis/restaurants/hai-hai-1.png',
+                alt: 'Hai Hai restaurant exterior and vibrant atmosphere',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/papaya-salad-01.jpg',
-                alt: 'Green papaya salad with dried shrimp at Hai Hai',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/banh-beo-01.jpg',
-                alt: 'Banh beo steamed rice cakes with shrimp and scallion oil',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/vietnamese-coffee-01.jpg',
-                alt: 'Frozen Vietnamese coffee at Hai Hai',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/interior-tropical-01.jpg',
-                alt: 'Hai Hai tropical interior with bold wallpaper and vibrant atmosphere',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/hai-hai/food-casual-setting-01.jpg',
-                alt: 'Southeast Asian street food on plastic stools — Hai Hai patio vibes',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/58f611bf725e257176ce6e89/35a7b11b-b957-4f67-9e19-a4a3bb4093b1/060524_JBA_RC_WE_ARE_WINNER_FB_1200X628.jpg',
-                alt: 'Chef Christina Nguyen — 2024 James Beard Award Winner — with the Hai Hai team',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/58f611bf725e257176ce6e89/68ead651-285f-47d6-a25d-a398379faf0f/ChefChristinaNguyen%26HaiHaiTeam_BestChefMidwest+2.jpg',
-                alt: 'Chef Christina Nguyen celebrating Best Chef: Midwest at the James Beard Awards',
+                src: '/minneapolis/restaurants/hai-hai-2.png',
+                alt: 'Hai Hai Southeast Asian street food dishes',
               },
             ],
             menuImage: {
@@ -1967,36 +1809,12 @@ export const minneapolis: CityData = {
             price: '$$',
             images: [
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/diverse-food-spread-01.jpg',
-                alt: 'Diverse cuisines from around the world on Eat Street Nicollet Avenue',
+                src: '/minneapolis/restaurants/eat-street-1.png',
+                alt: 'Eat Street Nicollet Avenue corridor with diverse restaurants',
               },
               {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/ethiopian-injera-01.jpg',
-                alt: 'Ethiopian injera and tibs at Eat Street restaurant',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/pho-bowl-01.jpg',
-                alt: 'Pho at Quang Restaurant on Eat Street',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/tacos-al-pastor-01.jpg',
-                alt: 'Tacos al pastor from Mexican restaurant on Eat Street',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/somali-sambusas-01.jpg',
-                alt: 'Somali sambusas at Safari Restaurant on Eat Street',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/ethiopian-tibs-01.jpg',
-                alt: 'Ethiopian tibs with injera on Eat Street',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/restaurant-exterior-01.jpg',
-                alt: 'Nicollet Avenue restaurant corridor — Eat Street diverse cuisines',
-              },
-              {
-                src: '/images/establishments/restaurants/minneapolis/photos/eat-street/urban-street-dining-01.jpg',
-                alt: 'Eat Street Nicollet Avenue scene with global restaurants',
+                src: '/minneapolis/restaurants/eat-street-2.png',
+                alt: 'Eat Street global cuisine and street food scene',
               },
             ],
             menuImage: {
@@ -2017,20 +1835,16 @@ export const minneapolis: CityData = {
             website: 'https://www.boludo.com',
             images: [
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/cd76dcdf-252e-4318-971c-73f91cfa2e70/Boludo_el38_229.jpeg',
-                alt: 'Fresh-baked empanadas at Boludo — the dough is laminated and impossibly flaky',
+                src: '/minneapolis/restaurants/boludo-1.png',
+                alt: 'Boludo Argentine empanadas and pizza',
               },
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/7d417ac7-4199-42d3-a104-852e85120656/7E5A7950.jpg',
-                alt: 'Boludo interior — candlelit basement vibes and Argentine music',
-              },
-              {
-                src: 'https://images.squarespace-cdn.com/content/v1/681b6f9ef89cf3153f427ff8/e1400923-91c9-4d96-a9eb-99e03be8bc6a/Boludo_el38_258.jpeg',
-                alt: 'Empanada flight and natural wine at Boludo',
+                src: '/minneapolis/restaurants/boludo-2.png',
+                alt: 'Boludo restaurant interior with intimate candlelit atmosphere',
               },
             ],
             menuImage: {
-              src: '/images/establishments/restaurants/minneapolis/menus/boludo/menu.jpg',
+              src: '/minneapolis/restaurants/boludo-menu.png',
               alt: 'Boludo Argentine empanada menu',
             },
           },
@@ -2047,16 +1861,20 @@ export const minneapolis: CityData = {
             website: 'https://www.brasa.us',
             images: [
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/6849d8a0f7a1fa23194c8b68/7a118814-d9aa-4d72-9d64-9c08414330ea/Brasa_Hopkins_0232.jpg',
-                alt: 'Brasa rotisserie plate with half chicken, yams, and collard greens',
+                src: '/minneapolis/restaurants/brasa-1.png',
+                alt: 'Brasa Premium Rotisserie exterior and signage',
               },
               {
-                src: 'https://images.squarespace-cdn.com/content/v1/6849d8a0f7a1fa23194c8b68/476ebe06-bb11-4938-b4d3-594648516208/Brasa_Hopkins_0197.jpg',
-                alt: 'Brasa cafeteria-style counter with rotisserie meats and Southern sides',
+                src: '/minneapolis/restaurants/brasa-2.png',
+                alt: 'Brasa rotisserie chicken and Southern sides',
+              },
+              {
+                src: '/minneapolis/restaurants/brasa-3.png',
+                alt: 'Brasa cafeteria-style counter service',
               },
             ],
             menuImage: {
-              src: '/images/establishments/restaurants/minneapolis/menus/brasa-premium-rotisserie/menu.jpg',
+              src: '/minneapolis/restaurants/brasa-menu.png',
               alt: 'Brasa rotisserie and sides menu',
             },
           },

@@ -1,6 +1,5 @@
 'use client'
 
-import { MapThumbnail } from '@/components'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -37,12 +36,7 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
                   {index + 1}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-baseline gap-2 flex-wrap mb-2">
-                    <h3 className="text-xl font-semibold text-neutral-900">{gem.name}</h3>
-                    <span className="text-xs font-medium text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">
-                      {gem.category}
-                    </span>
-                  </div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">{gem.name}</h3>
 
                   {/* Images - carousel if multiple */}
                   {gem.images && gem.images.length > 0 && (
@@ -111,25 +105,11 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
 
                   <p className="text-neutral-600 leading-relaxed mb-6">{gem.description}</p>
 
-                  {/* Map and address section - matching bars format */}
-                  {(gem.coordinates || gem.address) && (
+                  {/* Address section */}
+                  {(gem.address) && (
                     <div className="mt-6 bg-neutral-50 rounded-xl overflow-hidden border border-neutral-200">
-                      <div className="flex flex-col md:flex-row">
-                        {gem.coordinates && (
-                          <div className="flex-shrink-0">
-                            <MapThumbnail
-                              lat={gem.coordinates.lat}
-                              lng={gem.coordinates.lng}
-                              name={gem.name}
-                              width={280}
-                              height={180}
-                              zoom={15}
-                              className="w-full md:w-[280px] h-[180px]"
-                            />
-                          </div>
-                        )}
-                        <div className="hidden md:block w-px bg-neutral-200" />
-                        <div className="flex flex-col gap-4 p-5 justify-center">
+                      <div className="flex flex-col">
+                        <div className="flex flex-col gap-4 p-5">
                           {gem.address && (() => {
                             const addressParts = gem.address.split(', ')
                             const streetAddress = addressParts[0]

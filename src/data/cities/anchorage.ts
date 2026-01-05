@@ -748,22 +748,22 @@ export const anchorage: CityData = {
         intro: 'Anchorage bars are unpretentious by necessity. The vibe is come-as-you-are.',
         spots: [
           {
-            name: 'The Bubbly Mermaid',
+            name: 'Blues Central',
             neighborhood: 'Downtown',
-            vibe: 'Champagne and oyster bar that shouldn\'t work in Alaska but does',
-            order: 'Oysters and sparkling wine',
-            why: 'Unexpectedly sophisticated, with oysters flown in from both coasts',
-            address: '917 W 6th Ave, Anchorage, AK 99501',
-            coordinates: { lat: 61.2178, lng: -149.8972 },
-            price: '$$$',
+            vibe: 'Hidden speakeasy with craft cocktails and live jazz',
+            order: 'Any of the Prohibition-era cocktails',
+            why: 'Tucked on the second floor of Williwaw, you need to find the phone booth and password to get in',
+            address: '609 F St, Anchorage, AK 99501',
+            coordinates: { lat: 61.2175, lng: -149.8878 },
+            price: '$$',
             images: [
               {
-                src: '',
-                alt: 'Fresh oysters on ice platter',
+                src: '/anchorage/bars/blues-central-1.jpg',
+                alt: '1920s-style speakeasy with vintage lighting and rock icons',
               },
               {
                 src: '',
-                alt: 'Champagne and oysters pairing',
+                alt: 'Prohibition-era craft cocktails',
               }
             ],
           },
@@ -778,11 +778,11 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: '',
+                src: '/anchorage/bars/49th-state-1.jpg',
                 alt: 'Craft brewery tap handles',
               },
               {
-                src: '',
+                src: '/anchorage/bars/49th-state-2.jpg',
                 alt: 'Brewpub interior with rustic decor',
               }
             ],
@@ -798,7 +798,7 @@ export const anchorage: CityData = {
             price: '$',
             images: [
               {
-                src: '',
+                src: '/anchorage/bars/darwins-theory-1.jpg',
                 alt: 'Classic neighborhood dive bar interior',
               },
               {
@@ -818,12 +818,16 @@ export const anchorage: CityData = {
             price: '$$',
             images: [
               {
-                src: '',
+                src: '/anchorage/bars/williwaw-1.jpg',
                 alt: 'Live music venue stage with lighting',
               },
               {
-                src: '',
+                src: '/anchorage/bars/williwaw-2.jpg',
                 alt: 'Concert venue interior with crowd',
+              },
+              {
+                src: '/anchorage/bars/williwaw-3.jpg',
+                alt: 'Williwaw concert venue with stage',
               }
             ],
           },
@@ -959,15 +963,15 @@ export const anchorage: CityData = {
             instagram: '@kaladibrotherscoffee',
             images: [
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kaladi-1.jpg',
                 alt: 'Coffee roasting equipment',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kaladi-2.jpg',
                 alt: 'Fresh roasted coffee beans',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kaladi-3.jpg',
                 alt: 'Classic coffee shop latte',
               }
             ],
@@ -986,11 +990,11 @@ export const anchorage: CityData = {
             instagram: '@steamdotcoffee',
             images: [
               {
-                src: '',
+                src: '/anchorage/coffee-shops/steamdot-1.jpg',
                 alt: 'Pour-over coffee being prepared',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/steamdot-2.jpeg',
                 alt: 'Modern minimalist coffee shop interior',
               },
               {
@@ -1012,11 +1016,11 @@ export const anchorage: CityData = {
             instagram: '@darkhorsecoffeeanchorage',
             images: [
               {
-                src: '',
+                src: '/anchorage/coffee-shops/dark-horse-1.jpg',
                 alt: 'Espresso machine at coffee shop',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/dark-horse-2.jpg',
                 alt: 'Cozy cafe with warm lighting',
               },
               {
@@ -1037,15 +1041,15 @@ export const anchorage: CityData = {
             price: '$',
             images: [
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kobuk-1.jpg',
                 alt: 'Bookstore cafe with vintage character',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kobuk-2.jpg',
                 alt: 'Classic vintage coffee shop interior',
               },
               {
-                src: '',
+                src: '/anchorage/coffee-shops/kobuk-3.jpg',
                 alt: 'Coffee and pastries display',
               }
             ],

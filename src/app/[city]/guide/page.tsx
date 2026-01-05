@@ -96,30 +96,26 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
         {/* Guide Categories */}
         <div className="container-page section-spacing">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-8 max-w-4xl mx-auto">
             {guideCategories.map((category) => (
               <Link
                 key={category.href}
                 href={category.href}
-                className="group block"
+                className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
               >
-                <div className="bg-white border-2 border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-xl transition-all duration-300 h-full">
-                  {/* Gradient Header */}
-                  <div className={`h-32 bg-gradient-to-br ${category.gradient}`} />
+                <div className="md:flex">
+                  {/* Gradient Side */}
+                  <div className={`md:w-2/5 h-64 md:h-full bg-gradient-to-br ${category.gradient}`} />
 
                   {/* Content */}
-                  <div className="p-6">
-                    <h2 className="text-2xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
+                  <div className="md:w-3/5 p-8 flex flex-col justify-center">
+                    <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
                       {category.title}
                     </h2>
-                    <p className="text-neutral-600 leading-relaxed">
+                    <p className="text-neutral-600 text-lg leading-relaxed mb-4">
                       {category.description}
                     </p>
-                  </div>
-
-                  {/* Footer */}
-                  <div className="px-6 pb-6">
-                    <div className="inline-flex items-center text-accent-600 font-medium group-hover:gap-2 transition-all">
+                    <div className="inline-flex items-center text-accent-600 font-semibold group-hover:gap-2 transition-all">
                       Explore
                       <svg
                         className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"

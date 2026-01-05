@@ -860,7 +860,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.valleybarphx.com/',
             image: {
-              src: '',
+              src: '/phoenix/bars/valley-bar.webp',
               alt: 'Basement speakeasy bar with live music stage',
             },
           },
@@ -875,7 +875,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://bitterandtwistedaz.com/',
             image: {
-              src: '',
+              src: '/phoenix/bars/bitter-twisted-interior.jpg',
               alt: 'Award-winning cocktail bar in historic Prohibition-era building',
             },
           },
@@ -890,7 +890,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.thevig.us/arcadia',
             image: {
-              src: '',
+              src: '/phoenix/bars/the-vig-patio.jpg',
               alt: 'Neighborhood bar patio with Adirondack chairs and fire pit',
             },
           },
@@ -905,7 +905,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://centurygrandphx.com/platform18',
             image: {
-              src: '',
+              src: '/phoenix/bars/platform-18-interior.webp',
               alt: 'Immersive vintage train car cocktail experience',
             },
           },
@@ -1037,7 +1037,7 @@ export const phoenix: CityData = {
             price: '$$$',
             website: 'https://www.bacanoraphx.com/',
             image: {
-              src: '',
+              src: '/phoenix/restaurants/bacanora-1.jpg',
               alt: 'Wood-fired Mexican cuisine from James Beard winner',
             },
           },
@@ -1052,7 +1052,7 @@ export const phoenix: CityData = {
             price: '$',
             website: 'https://carolinasmex.com/',
             image: {
-              src: '',
+              src: '/phoenix/restaurants/carolinas-1.jpg',
               alt: 'Fresh handmade Sonoran flour tortillas',
             },
           },
@@ -1067,7 +1067,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.pizzeriabianco.com/',
             image: {
-              src: '',
+              src: '/phoenix/restaurants/pizzeria-bianco-1.jpg',
               alt: 'Wood-fired artisan pizza from James Beard winner',
             },
           },
@@ -1082,7 +1082,7 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://tacochelo.com/',
             image: {
-              src: '',
+              src: '/phoenix/restaurants/taco-chelo-1.jpg',
               alt: 'Artful handmade tacos on Roosevelt Row',
             },
           },
@@ -1097,7 +1097,7 @@ export const phoenix: CityData = {
             price: '$',
             website: 'https://restaurantatoyac.com/',
             image: {
-              src: '',
+              src: '/phoenix/restaurants/atoyac-tlayuda.jpg',
               alt: 'Authentic Oaxacan tlayuda and mole',
             },
           },

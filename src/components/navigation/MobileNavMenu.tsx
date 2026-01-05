@@ -161,16 +161,23 @@ function MobileNavMenuContent({
 
                 {expandedCity === city.slug && (
                   <div className="bg-neutral-50 py-1">
-                    {citySections.map((section) => (
-                      <Link
-                        key={section.id}
-                        href={buildCityUrl(city.slug, section.id, true)}
-                        onClick={closeMenu}
-                        className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
-                      >
-                        {section.label}
-                      </Link>
-                    ))}
+                    {/* Section Links - Articles goes to city root, others to their paths */}
+                    {citySections.map((section) => {
+                      const href = section.id === 'articles'
+                        ? routes.city(city.slug)
+                        : buildCityUrl(city.slug, section.id, true)
+
+                      return (
+                        <Link
+                          key={section.id}
+                          href={href}
+                          onClick={closeMenu}
+                          className="block px-6 py-2 text-sm text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
+                        >
+                          {section.label}
+                        </Link>
+                      )
+                    })}
                   </div>
                 )}
               </div>

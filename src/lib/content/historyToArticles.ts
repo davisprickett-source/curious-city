@@ -13,6 +13,15 @@ import { getAllHistory, getHistory as getHistoryEssay } from '@/data/history'
  * Convert a single History essay to Article format
  */
 export function historyToArticle(history: History): Article {
+  // For video-sequence history essays, use the first frame as the featured image
+  const featuredImage = history.heroImage
+    ? {
+        src: history.heroImage.src,
+        alt: history.heroImage.alt || history.title,
+        credit: history.heroImage.credit,
+      }
+    : extractFirstVideoFrame(history.blocks, history.citySlug)
+
   return {
     slug: history.slug,
     citySlug: history.citySlug,
@@ -28,11 +37,7 @@ export function historyToArticle(history: History): Article {
     publishedAt: history.publishedAt || new Date().toISOString(),
     updatedAt: undefined,
 
-    featuredImage: history.heroImage ? {
-      src: history.heroImage.src,
-      alt: history.heroImage.alt || history.title,
-      credit: history.heroImage.credit,
-    } : undefined,
+    featuredImage,
 
     category: 'history',
     tags: extractTags(),
@@ -112,6 +117,44 @@ function convertBlocks(historyBlocks: History['blocks']): ArticleBlock[] {
       }
     })
     .filter((block): block is ArticleBlock => block !== null)
+}
+
+/**
+ * Extract the first video frame as featured image for video-sequence essays
+ */
+function extractFirstVideoFrame(blocks: History['blocks'], citySlug: string): Article['featuredImage'] {
+  const firstVideoBlock = blocks.find(b => b.type === 'video-sequence')
+  if (!firstVideoBlock || firstVideoBlock.type !== 'video-sequence') {
+    return undefined
+  }
+
+  // Extract sequence name from video path
+  const videoPath = firstVideoBlock.videoPath
+
+  // Handle new sequences format: /sequences/phoenix/phoenix-1
+  const sequenceMatch = videoPath.match(/\/sequences\/([^\/]+)\/([^\/]+)$/)
+  if (sequenceMatch) {
+    const city = sequenceMatch[1]
+    const sequenceName = sequenceMatch[2]
+    const frameName = city === 'tampa' ? 'frame_0001.jpg' : 'frame-0001.jpg'
+    return {
+      src: `/sequences/${city}/${sequenceName}/${frameName}`,
+      alt: `${citySlug} video sequence`,
+    }
+  }
+
+  // Handle Tampa old format: /Tampa/history-video/tampa-1.mp4
+  const tampaMatch = videoPath.match(/\/Tampa\/history-video\/([a-z-]+)-(\d+)\.mp4$/)
+  if (tampaMatch) {
+    const prefix = tampaMatch[1]
+    const num = tampaMatch[2]
+    return {
+      src: `/sequences/tampa/${prefix}-${num}/frame_0001.jpg`,
+      alt: `${citySlug} video sequence`,
+    }
+  }
+
+  return undefined
 }
 
 /**

@@ -95,15 +95,20 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
           <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
             <div className="max-w-5xl">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                Dark History of {city.name}
+                {section?.title || `Dark History of ${city.name}`}
               </h1>
+              {section?.teaser && (
+                <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
+                  {section.teaser}
+                </p>
+              )}
               {section?.intro ? (
-                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
+                <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
                   {section.intro}
                 </p>
               ) : (
-                <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
-                  Forgotten crimes, unsolved mysteries, and the darker chapters that shaped this city. The stories that don't make it into the brochures.
+                <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
+                  Forgotten crimes, unsolved mysteries, and the darker chapters that shaped this city.
                 </p>
               )}
             </div>

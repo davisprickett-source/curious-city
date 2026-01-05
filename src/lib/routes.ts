@@ -12,14 +12,14 @@
 // Main navigation sections (shown in primary nav)
 export type CitySection =
   | 'articles'
-  | 'discover'
+  | 'scenes'
   | 'events'
-  | 'guide'
 
 // Legacy sections (still accessible, not in main nav)
 export type LegacySection =
   | 'history'
-  | 'scenes'
+  | 'discover'
+  | 'guide'
   | 'coffee-shops'
   | 'bars'
   | 'restaurants'
@@ -49,16 +49,16 @@ export interface SectionDefinition {
 }
 
 export const citySections: SectionDefinition[] = [
-  { id: 'articles', label: 'Articles', path: '/articles' },
-  { id: 'discover', label: 'Discover', path: '/discover' },
+  { id: 'articles', label: 'Articles', path: '' }, // Articles are on the main city page
+  { id: 'scenes', label: 'Scenes', path: '/scenes' },
   { id: 'events', label: 'Events', path: '/events' },
-  { id: 'guide', label: 'Guide', path: '/guide' },
 ]
 
 // Legacy sections (keep for backward compatibility, will redirect)
 export const legacySections = [
   'history',
-  'scenes',
+  'discover',
+  'guide',
   'coffee-shops',
   'bars',
   'restaurants',
@@ -84,7 +84,7 @@ export const routes = {
   },
 
   // Main sections
-  cityArticles: (citySlug: string) => `/${citySlug}/articles`,
+  cityArticles: (citySlug: string) => `/${citySlug}`, // Articles are on the main city page
   cityArticle: (citySlug: string, articleSlug: string) => `/${citySlug}/articles/${articleSlug}`,
   cityDiscover: (citySlug: string) => `/${citySlug}/discover`,
   cityEvents: (citySlug: string) => `/${citySlug}/events`,

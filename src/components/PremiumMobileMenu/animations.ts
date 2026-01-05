@@ -26,39 +26,32 @@ export const ANIMATION_CONFIG = {
   LEVEL_TRANSITION_DISTANCE: 100, // pixels
 }
 
-// Hamburger icon line variants
+// Hamburger icon line variants (2 lines forming X)
 export const hamburgerLineVariants = {
   top: {
-    closed: { rotate: 0, y: 0, opacity: 1 },
-    open: { rotate: 45, y: 7, opacity: 1 },
-  },
-  middle: {
-    closed: { opacity: 1 },
-    open: { opacity: 0 },
+    closed: { rotate: 0, y: 0 },
+    open: { rotate: 45, y: 3 },
   },
   bottom: {
-    closed: { rotate: 0, y: 0, opacity: 1 },
-    open: { rotate: -45, y: -7, opacity: 1 },
+    closed: { rotate: 0, y: 0 },
+    open: { rotate: -45, y: -3 },
   },
 }
 
-// Overlay entrance/exit variants
+// Overlay entrance/exit variants (slide from right)
 export const overlayVariants: Variants = {
   initial: {
-    opacity: 0,
-    scaleY: 0,
+    x: '100%',
   },
   animate: {
-    opacity: 1,
-    scaleY: 1,
+    x: 0,
     transition: {
       duration: ANIMATION_CONFIG.OVERLAY_DURATION,
       ease: ANIMATION_CONFIG.OVERLAY_EASING,
     },
   },
   exit: {
-    opacity: 0,
-    scaleY: 0,
+    x: '100%',
     transition: {
       duration: ANIMATION_CONFIG.OVERLAY_EXIT_DURATION,
       ease: ANIMATION_CONFIG.OVERLAY_EASING,

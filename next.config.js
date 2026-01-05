@@ -187,6 +187,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'thefamoussteakhouse.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.oskarblues.com',
+      },
     ],
   },
   // Optimize package imports to reduce bundle size

@@ -100,12 +100,7 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
                       {index + 1}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-baseline gap-2 flex-wrap mb-2">
-                        <h3 className="text-xl font-semibold text-neutral-900">{favorite.name}</h3>
-                        <span className="text-xs font-medium text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">
-                          {favorite.category}
-                        </span>
-                      </div>
+                      <h3 className="text-xl font-semibold text-neutral-900 mb-2">{favorite.name}</h3>
 
                       {/* Images - use ImageCarousel component for client-side interactivity */}
                       {favorite.images && favorite.images.length > 0 && (
@@ -128,7 +123,7 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
                                   name={favorite.name}
                                   width={280}
                                   height={180}
-                                  zoom={15}
+                                  zoom={12}
                                   className="w-full md:w-[280px] h-[180px]"
                                 />
                               </div>

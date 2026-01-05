@@ -10,6 +10,7 @@ interface ScrollyMapProps {
   activeSpotIndex: number
   markerType?: 'coffee' | 'cocktail' | 'restaurant' | 'default'
   onMapLoaded?: (loaded: boolean) => void
+  onMarkerClick?: (index: number) => void
 }
 
 const MAP_STYLE = 'mapbox://styles/mapbox/dark-v11'
@@ -17,7 +18,8 @@ const MAP_STYLE = 'mapbox://styles/mapbox/dark-v11'
 export function ScrollyMap({
   spots,
   activeSpotIndex,
-  onMapLoaded
+  onMapLoaded,
+  onMarkerClick
 }: ScrollyMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
@@ -47,26 +49,34 @@ export function ScrollyMap({
         return
       }
 
+      // Calculate center point from bounds for initial view
+      const centerLng = (bounds.sw.lng + bounds.ne.lng) / 2
+      const centerLat = (bounds.sw.lat + bounds.ne.lat) / 2
+
       const map = new mapboxgl.default.Map({
         container: mapContainer.current!,
         style: MAP_STYLE,
-        bounds: [
-          [bounds.sw.lng, bounds.sw.lat],
-          [bounds.ne.lng, bounds.ne.lat],
-        ],
-        fitBoundsOptions: {
-          padding: { top: 100, bottom: 100, left: 100, right: 100 }
-        },
+        center: [centerLng, centerLat],
+        zoom: 11,
         attributionControl: false,
         interactive: false, // Disable all interactions for cinematic experience
       })
 
       map.on('load', () => {
+        // Fit to bounds once map is loaded
+        map.fitBounds([
+          [bounds.sw.lng, bounds.sw.lat],
+          [bounds.ne.lng, bounds.ne.lat],
+        ], {
+          padding: { top: 200, bottom: 200, left: 200, right: 200 },
+          duration: 0 // Instant fit on load
+        })
+
         setIsMapLoaded(true)
         onMapLoaded?.(true)
       })
 
-      // Disable all interactions
+      // Disable most interactions but allow clicking
       map.scrollZoom.disable()
       map.boxZoom.disable()
       map.dragPan.disable()
@@ -102,8 +112,20 @@ export function ScrollyMap({
 
         const isActive = index === activeSpotIndex
 
-        // Create primary marker
-        const el = createCoffeeMarker({ isActive, rank: index + 1 })
+        // Create primary marker with name
+        const el = createCoffeeMarker({
+          isActive,
+          rank: index + 1,
+          name: spot.name
+        })
+
+        // Add click handler
+        el.addEventListener('click', (e) => {
+          e.stopPropagation()
+          onMarkerClick?.(index)
+        })
+        el.style.cursor = 'pointer'
+        el.style.pointerEvents = 'auto'
 
         const marker = new mapboxgl.default.Marker({ element: el })
           .setLngLat([spot.coordinates.lng, spot.coordinates.lat])
@@ -146,7 +168,7 @@ export function ScrollyMap({
     if (!mapRef.current || !isMapLoaded) return
 
     if (activeSpotIndex < 0) {
-      // Intro section - show overview
+      // Intro section - show wider overview with more padding
       const allCoords = getAllCoordinates(spots)
       const bounds = getBounds(allCoords)
       if (bounds) {
@@ -154,8 +176,10 @@ export function ScrollyMap({
           [bounds.sw.lng, bounds.sw.lat],
           [bounds.ne.lng, bounds.ne.lat],
         ], {
-          padding: { top: 100, bottom: 100, left: 100, right: 100 },
+          padding: { top: 250, bottom: 250, left: 250, right: 250 },
           duration: 1500,
+          pitch: 0,
+          bearing: 0,
         })
       }
       return
@@ -164,13 +188,23 @@ export function ScrollyMap({
     const spot = spots[activeSpotIndex]
     if (!spot?.coordinates) return
 
+    // Use asymmetric padding to shift the view left while keeping marker visible
+    // This creates more space on the right for the card overlay
+    const rightPadding = typeof window !== 'undefined' ? window.innerWidth * 0.4 : 400
+
     mapRef.current.flyTo({
       center: [spot.coordinates.lng, spot.coordinates.lat],
       zoom: 15,
       pitch: 45,
       bearing: 0,
       duration: 1500,
-      essential: true, // Respects prefers-reduced-motion
+      essential: true,
+      padding: {
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: rightPadding // Shift view left by adding padding to right
+      }
     })
   }, [activeSpotIndex, isMapLoaded, spots])
 

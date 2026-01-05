@@ -1,14 +1,22 @@
 export function createCoffeeMarker(options: {
   isActive: boolean
   rank: number
+  name?: string
 }): HTMLDivElement {
-  const { isActive, rank } = options
+  const { isActive, rank, name } = options
+
+  const container = document.createElement('div')
+  container.className = 'coffee-marker-container'
+  container.style.position = 'relative'
+  container.style.display = 'flex'
+  container.style.flexDirection = 'column'
+  container.style.alignItems = 'center'
+  container.style.cursor = 'pointer'
 
   const el = document.createElement('div')
   el.className = 'coffee-marker'
   el.style.width = isActive ? '48px' : '36px'
   el.style.height = isActive ? '48px' : '36px'
-  el.style.cursor = 'pointer'
   el.style.transition = 'all 0.3s ease'
 
   // Coffee cup SVG with numbered badge
@@ -47,5 +55,26 @@ export function createCoffeeMarker(options: {
     el.style.animation = 'pulse-marker 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
   }
 
-  return el
+  container.appendChild(el)
+
+  // Add name label if provided
+  if (name) {
+    const label = document.createElement('div')
+    label.className = 'coffee-marker-label'
+    label.style.marginTop = '4px'
+    label.style.padding = '4px 8px'
+    label.style.backgroundColor = isActive ? '#c65d3b' : '#ffffff'
+    label.style.color = isActive ? '#ffffff' : '#1a1a1a'
+    label.style.fontSize = isActive ? '13px' : '11px'
+    label.style.fontWeight = '600'
+    label.style.borderRadius = '4px'
+    label.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)'
+    label.style.whiteSpace = 'nowrap'
+    label.style.fontFamily = 'system-ui, -apple-system, sans-serif'
+    label.style.transition = 'all 0.3s ease'
+    label.textContent = name
+    container.appendChild(label)
+  }
+
+  return container
 }

@@ -1,9 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { routes, type AnyCitySection } from '@/lib/routes'
+import { routes, citySections, type AnyCitySection } from '@/lib/routes'
 import { CitySelector } from './CitySelector'
-import { PageSelector } from './PageSelector'
 import { FilterBar } from './FilterBar'
 import { MobileNavMenu } from './MobileNavMenu'
 import type { EventView } from '@/components/EventFilter'
@@ -62,23 +61,33 @@ export function UnifiedNav({
             />
           </Link>
 
-          {/* City and Page Selectors */}
-          {citySlug && (
-            <>
-              <CitySelector
-                currentCitySlug={citySlug}
-                currentCityName={cityName}
-                currentSection={currentSection}
-                preserveFilters={true}
-              />
+          {/* City Selector - goes to main city page (which is the articles feed) */}
+          <CitySelector
+            currentCitySlug={citySlug}
+            currentCityName={cityName}
+            preserveFilters={false}
+          />
 
-              <PageSelector
-                citySlug={citySlug}
-                currentSection={currentSection}
-                preserveFilters={true}
-              />
-            </>
-          )}
+          {/* Section Links - only show if on a city page */}
+          {citySlug && citySections.map((section) => {
+            const isActive = currentSection === section.id
+            // Articles links to city root, others to their section path
+            const href = section.id === 'articles' ? `/${citySlug}` : `/${citySlug}${section.path}`
+
+            return (
+              <Link
+                key={section.id}
+                href={href}
+                className={`px-3 py-2 text-base font-medium rounded-lg transition-colors ${
+                  isActive
+                    ? 'bg-accent-50 text-accent-700'
+                    : 'text-neutral-700 hover:text-accent-700 hover:bg-accent-50'
+                }`}
+              >
+                {section.label}
+              </Link>
+            )
+          })}
 
           {/* Dynamic Filter Bar */}
           <div className="flex-1 flex items-center gap-2 overflow-x-auto scrollbar-hide ml-4">

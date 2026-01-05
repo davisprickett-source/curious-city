@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, Suspense } from 'react'
+import { useState, useRef, useEffect, Suspense } from 'react'
 import { CITY_METADATA } from '@/data/cities'
 import { useNavigation } from './hooks/useNavigation'
 import type { AnyCitySection } from '@/lib/routes'
@@ -20,26 +20,53 @@ function CitySelectorContent({
   preserveFilters = true,
 }: CitySelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const timeoutRef = useRef<NodeJS.Timeout>()
   const { buildCityUrl } = useNavigation()
 
   const cities = [...CITY_METADATA]
     .map((city) => ({ slug: city.slug, name: city.name }))
     .sort((a, b) => a.name.localeCompare(b.name))
 
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [])
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+    setIsOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    // Add a small delay before closing to make hover more forgiving
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false)
+    }, 150)
+  }
+
   if (!currentCitySlug || !currentCityName) {
     return null
   }
 
   return (
-    <div className="relative" onMouseLeave={() => setIsOpen(false)}>
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        onMouseEnter={() => setIsOpen(true)}
-        className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700 hover:text-accent-600 rounded-lg hover:bg-neutral-50 transition-colors"
+        className="flex items-center gap-1 px-3 py-2 text-base font-medium text-accent-600 hover:text-accent-700 rounded-lg hover:bg-neutral-50 transition-colors"
       >
         {currentCityName}
         <svg
-          className={`w-3.5 h-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -49,28 +76,30 @@ function CitySelectorContent({
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 top-full mt-1 w-56 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto z-50">
-          {cities.map((city) => {
-            const isActive = city.slug === currentCitySlug
+        <div className="absolute left-0 top-full pt-1 w-56 z-50">
+          <div className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto">
+            {cities.map((city) => {
+              const isActive = city.slug === currentCitySlug
 
-            return (
-              <Link
-                key={city.slug}
-                href={buildCityUrl(city.slug, currentSection, preserveFilters)}
-                onClick={() => setIsOpen(false)}
-                className={`
-                  block px-4 py-2 text-sm transition-colors
-                  ${
-                    isActive
-                      ? 'bg-accent-50 text-accent-700 font-medium'
-                      : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
-                  }
-                `}
-              >
-                {city.name}
-              </Link>
-            )
-          })}
+              return (
+                <Link
+                  key={city.slug}
+                  href={buildCityUrl(city.slug, currentSection, preserveFilters)}
+                  onClick={() => setIsOpen(false)}
+                  className={`
+                    block px-4 py-2 text-sm transition-colors
+                    ${
+                      isActive
+                        ? 'bg-accent-50 text-accent-700 font-medium'
+                        : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
+                    }
+                  `}
+                >
+                  {city.name}
+                </Link>
+              )
+            })}
+          </div>
         </div>
       )}
     </div>
@@ -80,7 +109,7 @@ function CitySelectorContent({
 export function CitySelector(props: CitySelectorProps) {
   return (
     <Suspense fallback={
-      <div className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-700">
+      <div className="flex items-center gap-1 px-3 py-2 text-base font-medium text-accent-600">
         {props.currentCityName || 'Loading...'}
       </div>
     }>

@@ -4,20 +4,18 @@ import { getAllCities } from '@/data/cities'
 import { Header, Footer } from '@/components'
 import { OrganizationSchema, WebsiteSchema } from '@/components/StructuredData'
 import { MasonryGrid } from '@/components/layout/MasonryGrid'
-import { ContentCard } from '@/components/cards/ContentCard'
-import { aggregateGlobalFeed } from '@/lib/content/aggregateFeed'
+import { PageCard } from '@/components/cards/PageCard'
+import { getAllPageCards, sortPageCards } from '@/lib/content/pages'
 
 export default async function HomePage() {
   const cities = await getAllCities()
 
-  // Get aggregated content feed
-  const feed = await aggregateGlobalFeed({
-    limit: 30,
-    sortBy: 'recent',
-  })
+  // Get all page cards from all cities
+  const allPageCards = await getAllPageCards()
+  const sortedPageCards = sortPageCards(allPageCards, 'recent')
 
-  // Featured history articles (top 2 for hero)
-  const featuredArticles = feed.items.filter(item => item.type === 'article').slice(0, 2)
+  // Featured pages (top 2 for hero - likely history essays)
+  const featuredPages = sortedPageCards.slice(0, 2)
 
   return (
     <>
@@ -43,7 +41,7 @@ export default async function HomePage() {
               <span className="sr-only">Curious City</span>
               <div className="max-w-4xl mx-auto mb-5 overflow-hidden rounded-2xl shadow-[0_18px_50px_-30px_rgba(0,0,0,0.45)]">
                 <Image
-                  src="/Curious%20Banner.png"
+                  src="/banners/Curious-Banner.png"
                   alt="Curious City banner"
                   width={1536}
                   height={512}
@@ -58,13 +56,13 @@ export default async function HomePage() {
             </div>
 
             {/* Featured Content - Magazine Style */}
-            {featuredArticles.length > 0 && (
+            {featuredPages.length > 0 && (
               <section className="mb-12">
                 <div className="grid gap-6 md:grid-cols-2">
-                  {featuredArticles.map((item, index) => (
-                    <ContentCard
-                      key={`featured-${index}`}
-                      data={item}
+                  {featuredPages.map((page, index) => (
+                    <PageCard
+                      key={`featured-${page.href}`}
+                      data={page}
                       variant="featured"
                       index={index}
                       priority={index === 0}
@@ -101,11 +99,12 @@ export default async function HomePage() {
                 xl: 3,
               }}
             >
-              {feed.items.slice(2).map((item, index) => (
-                <ContentCard
-                  key={`${item.type}-${index}`}
-                  data={item}
+              {sortedPageCards.slice(2).map((page, index) => (
+                <PageCard
+                  key={`${page.citySlug}-${page.pageType}`}
+                  data={page}
                   variant="standard"
+                  index={index}
                   priority={false}
                 />
               ))}

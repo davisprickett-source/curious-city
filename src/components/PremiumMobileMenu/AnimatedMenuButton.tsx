@@ -22,12 +22,12 @@ export function AnimatedMenuButton({ isOpen, onClick }: AnimatedMenuButtonProps)
         xmlns="http://www.w3.org/2000/svg"
         className="w-6 h-6"
       >
-        {/* Top line */}
+        {/* Top line - rotates to form X */}
         <motion.line
           x1="4"
-          y1="6"
+          y1="9"
           x2="20"
-          y2="6"
+          y2="9"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
@@ -38,33 +38,15 @@ export function AnimatedMenuButton({ isOpen, onClick }: AnimatedMenuButtonProps)
             duration: ANIMATION_CONFIG.ICON_DURATION,
             ease: ANIMATION_CONFIG.ICON_EASING,
           }}
-          style={{ originX: '12px', originY: '6px' }}
+          style={{ originX: '12px', originY: '12px' }}
         />
 
-        {/* Middle line */}
+        {/* Bottom line - rotates to form X */}
         <motion.line
           x1="4"
-          y1="12"
+          y1="15"
           x2="20"
-          y2="12"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          variants={hamburgerLineVariants.middle}
-          initial="closed"
-          animate={isOpen ? 'open' : 'closed'}
-          transition={{
-            duration: ANIMATION_CONFIG.ICON_DURATION,
-            ease: ANIMATION_CONFIG.ICON_EASING,
-          }}
-        />
-
-        {/* Bottom line */}
-        <motion.line
-          x1="4"
-          y1="18"
-          x2="20"
-          y2="18"
+          y2="15"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
@@ -75,7 +57,7 @@ export function AnimatedMenuButton({ isOpen, onClick }: AnimatedMenuButtonProps)
             duration: ANIMATION_CONFIG.ICON_DURATION,
             ease: ANIMATION_CONFIG.ICON_EASING,
           }}
-          style={{ originX: '12px', originY: '18px' }}
+          style={{ originX: '12px', originY: '12px' }}
         />
       </svg>
     </button>

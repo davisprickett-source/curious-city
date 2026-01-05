@@ -3,20 +3,83 @@
 import { useState } from 'react'
 import { BestOfSpot } from '@/types/content'
 import { ImageCarousel } from '@/components/ImageCarousel'
-import { motion, AnimatePresence } from 'framer-motion'
 
 interface ScrollySpotCardProps {
   spot: BestOfSpot
   rank: number
   totalSpots: number
+  onNavigate?: (action: 'list' | 'minimize' | 'close' | 'prev' | 'next') => void
+  onViewGlobal?: () => void
 }
 
-export function ScrollySpotCard({ spot, rank, totalSpots }: ScrollySpotCardProps) {
+export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlobal }: ScrollySpotCardProps) {
   const carouselImages = spot.images || (spot.image ? [spot.image] : [])
   const hasMultipleLocations = Boolean(spot.locations && spot.locations.length > 0)
 
   return (
     <div className="bg-white/95 backdrop-blur-xl border border-neutral-200 rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden">
+      {/* Navigation Controls Bar */}
+      <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-200 bg-neutral-50">
+        {/* Close button - goes back to map overview */}
+        <button
+          onClick={onViewGlobal}
+          className="md:hidden p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors"
+          title="Back to map overview"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => onNavigate?.('prev')}
+            disabled={rank === 1}
+            className="p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            title="Previous"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={() => onNavigate?.('next')}
+            disabled={rank === totalSpots}
+            className="p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            title="Next"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Name Header (above image) - all on one line */}
+      <div className="px-6 pt-6 pb-4 bg-gradient-to-b from-white to-transparent">
+        <div className="flex items-baseline gap-3 flex-wrap">
+          <div className="w-10 h-10 bg-[#c65d3b] text-white font-semibold rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+            {rank}
+          </div>
+          {spot.website ? (
+            <a
+              href={spot.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl md:text-3xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors"
+            >
+              {spot.name}
+            </a>
+          ) : (
+            <h3 className="text-2xl md:text-3xl font-bold text-neutral-900">{spot.name}</h3>
+          )}
+          <span className="text-base text-neutral-600">{spot.neighborhood}</span>
+          {spot.price && (
+            <span className="text-base text-[#c65d3b] font-semibold">{spot.price}</span>
+          )}
+        </div>
+      </div>
+
       {/* Image carousel */}
       {carouselImages.length > 0 && (
         <div className="aspect-[16/10]">
@@ -25,40 +88,6 @@ export function ScrollySpotCard({ spot, rank, totalSpots }: ScrollySpotCardProps
       )}
 
       <div className="p-6 md:p-8 space-y-5">
-        {/* Rank badge */}
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-[#c65d3b] text-white font-semibold rounded-full flex items-center justify-center shadow-lg">
-            {rank}
-          </div>
-          <div className="text-sm text-neutral-600">
-            / {totalSpots}
-          </div>
-        </div>
-
-        {/* Name and metadata */}
-        <div>
-          <div className="flex items-baseline gap-3 flex-wrap mb-2">
-            {spot.website ? (
-              <a
-                href={spot.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-3xl md:text-4xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors"
-              >
-                {spot.name}
-              </a>
-            ) : (
-              <h3 className="text-3xl md:text-4xl font-bold text-neutral-900">{spot.name}</h3>
-            )}
-          </div>
-          <div className="flex items-center gap-3 flex-wrap text-base">
-            <span className="text-neutral-700">{spot.neighborhood}</span>
-            {spot.price && (
-              <span className="text-[#c65d3b] font-semibold">{spot.price}</span>
-            )}
-          </div>
-        </div>
-
         {/* Vibe */}
         <p className="text-lg text-neutral-800 italic leading-relaxed">
           {spot.vibe}
@@ -200,30 +229,20 @@ function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; cr
         </svg>
       </button>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden"
-          >
-            <div className="p-4 bg-white">
-              <img
-                src={menuImage.src}
-                alt={menuImage.alt}
-                className="w-full h-auto rounded-lg shadow-md"
-              />
-              {menuImage.credit && (
-                <p className="text-xs text-neutral-500 mt-2 text-center">
-                  Photo: {menuImage.credit}
-                </p>
-              )}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen && (
+        <div className="p-4 bg-white border-t border-neutral-200 transition-all duration-300 ease-in-out">
+          <img
+            src={menuImage.src}
+            alt={menuImage.alt}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          {menuImage.credit && (
+            <p className="text-xs text-neutral-500 mt-2 text-center">
+              Photo: {menuImage.credit}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   )
 }

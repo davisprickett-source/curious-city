@@ -903,11 +903,11 @@ export const colorado_springs: CityData = {
             images: [
               {
                 src: 'https://www.oskarblues.com/wp-content/uploads/COS-Taproom-Interior.jpg',
-                alt: 'Oskar Blues Colorado Springs taproom interior with taps and industrial decor',
+                alt: 'Oskar Blues Colorado Springs taproom interior',
               },
               {
-                src: 'https://www.oskarblues.com/wp-content/uploads/Dales-Pale-Ale-Can.jpg',
-                alt: 'Dale\'s Pale Ale can - the first craft beer in a can',
+                src: 'https://www.oskarblues.com/wp-content/uploads/Dale.jpeg',
+                alt: "Dale's Pale Ale - the original canned craft beer",
               },
             ],
           },

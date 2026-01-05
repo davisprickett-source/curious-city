@@ -4,32 +4,16 @@ import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { AnimatedMenuButton } from './PremiumMobileMenu/AnimatedMenuButton'
 import { MenuOverlay } from './PremiumMobileMenu/MenuOverlay'
-import type { PremiumMobileMenuProps, NavigationLevel } from './PremiumMobileMenu/types'
 
-export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
+export function PremiumMobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
-  const [navigationLevel, setNavigationLevel] = useState<NavigationLevel>('cities')
-  const [selectedCity, setSelectedCity] = useState<string | null>(currentCitySlug || null)
 
   const buttonRef = useRef<HTMLDivElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
 
-  // Handle navigation between levels
-  const handleNavigate = (level: NavigationLevel, citySlug?: string) => {
-    setNavigationLevel(level)
-    if (citySlug) {
-      setSelectedCity(citySlug)
-    }
-  }
-
-  // Close menu and reset state
+  // Close menu
   const closeMenu = () => {
     setIsOpen(false)
-    // Reset to cities list after animation completes
-    setTimeout(() => {
-      setNavigationLevel('cities')
-      setSelectedCity(null)
-    }, 400) // Match overlay exit duration
   }
 
   // Handle Escape key to close menu
@@ -151,14 +135,7 @@ export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
 
       <div ref={menuRef}>
         <AnimatePresence>
-          {isOpen && (
-            <MenuOverlay
-              onClose={closeMenu}
-              navigationLevel={navigationLevel}
-              onNavigate={handleNavigate}
-              selectedCity={selectedCity}
-            />
-          )}
+          {isOpen && <MenuOverlay onClose={closeMenu} />}
         </AnimatePresence>
       </div>
     </div>

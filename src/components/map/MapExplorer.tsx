@@ -120,7 +120,7 @@ export function MapExplorer({ spots, cityName, citySlug, title }: MapExplorerPro
   return (
     <>
       {/* Header and Nav */}
-      <Header cityName={cityName} citySlug={citySlug} />
+      <Header cityName={cityName} />
       <CityNav citySlug={citySlug} cityName={cityName} currentSection="coffee-shops" />
 
       <div className="relative min-h-screen overflow-hidden">

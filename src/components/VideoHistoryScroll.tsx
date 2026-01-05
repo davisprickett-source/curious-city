@@ -7,6 +7,7 @@ import { History } from '@/types/content'
 import { UnifiedNav } from './navigation/UnifiedNav'
 import { MobileNavMenu } from './navigation/MobileNavMenu'
 import { ShareLinks } from './ShareLinks'
+import { getCity } from '@/data/cities'
 
 interface VideoHistoryScrollProps {
   history: History
@@ -34,10 +35,24 @@ const FRAME_COUNTS: Record<string, number> = {
   'phoenix-17': 50,
   'phoenix-18': 91,
   'phoenix-20': 91,
+
+  // Minneapolis sequences
+  'minn-1': 94,
+  'minn-2': 144,
+  'minn-3': 144,
+  'minn-4': 94,
+  'minn-5': 94,
+  'minn-6': 74,
+  'minn-7': 94,
+  'minn-8': 46,
+  'minn-9': 94,
+  'minn-10': 144,
+  'minn-11': 94,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const storyContentRef = useRef<HTMLDivElement>(null)
   const [scrollProgress, setScrollProgress] = useState(0)
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
   const [currentFrame, setCurrentFrame] = useState(1)
@@ -45,6 +60,14 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const [isLoading, setIsLoading] = useState(true)
   const loadedFramesRef = useRef<Set<string>>(new Set())
   const imagesRef = useRef<Map<string, HTMLImageElement>>(new Map())
+  const [cityName, setCityName] = useState('')
+
+  // Get city name
+  useEffect(() => {
+    getCity(history.citySlug).then(city => {
+      if (city) setCityName(city.name)
+    })
+  }, [history.citySlug])
 
   // Get all video sequence blocks
   const videoBlocks = history.blocks.filter(
@@ -77,7 +100,14 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   // Get frame path
   const getFramePath = (sequenceName: string, frameNum: number): string => {
     const paddedNum = String(frameNum).padStart(4, '0')
-    const city = sequenceName.split('-')[0]
+    const cityPrefix = sequenceName.split('-')[0]
+    // Map city prefixes to full city names
+    const cityMap: Record<string, string> = {
+      'minn': 'minneapolis',
+      'tampa': 'tampa',
+      'phoenix': 'phoenix'
+    }
+    const city = cityMap[cityPrefix] || cityPrefix
     const frameName = city === 'tampa' ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
@@ -138,15 +168,18 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
   // Handle scroll
   const handleScroll = useCallback(() => {
-    if (!containerRef.current) return
+    if (!containerRef.current || !storyContentRef.current) return
 
     const container = containerRef.current
-    const rect = container.getBoundingClientRect()
-    const containerTop = Math.max(0, -rect.top)
-    const containerHeight = Math.max(1, container.scrollHeight - window.innerHeight)
+    const storyContent = storyContentRef.current
+    const containerRect = container.getBoundingClientRect()
 
-    // Clamp progress to prevent overshoot at start/end
-    const rawProgress = containerTop / containerHeight
+    // Calculate scroll based only on story content area, not footer
+    const containerTop = Math.max(0, -containerRect.top)
+    const storyContentHeight = Math.max(1, storyContent.offsetHeight)
+
+    // Progress should complete when story content finishes scrolling
+    const rawProgress = containerTop / storyContentHeight
     const progress = Math.max(0, Math.min(0.9999, rawProgress)) // Cap at 0.9999 to prevent last frame shift
 
     setScrollProgress(progress * 100)
@@ -196,7 +229,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
             </Link>
             <MobileNavMenu
               citySlug={history.citySlug}
-              currentSection="history"
+              currentSection="articles"
             />
           </div>
         </div>
@@ -206,7 +239,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="hidden sm:block fixed top-0 left-0 right-0 z-50 bg-white">
         <UnifiedNav
           citySlug={history.citySlug}
-          currentSection="history"
+          currentSection="articles"
         />
       </div>
 
@@ -233,7 +266,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       {/* Split Screen Section - starts below nav to make video flush */}
       <div className="lg:flex lg:flex-row pt-[57px]" ref={containerRef}>
         {/* Left Side: Video (Sticky on both mobile and desktop) */}
-        <div className="w-full h-[50vh] sticky top-[57px] -mt-[57px] lg:w-[70%] lg:h-screen lg:top-[57px] lg:mt-0 bg-white flex items-center justify-center relative z-20">
+        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:w-[70%] lg:h-screen lg:top-[57px] lg:mt-0 bg-white flex items-center justify-center relative z-20">
           <img
             src={framePath}
             alt=""
@@ -253,9 +286,9 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
         <div className="w-full lg:w-[30%] bg-white relative">
           {/* Fade overlay - only fade the text on mobile at the top, positioned below video */}
-          {/* Calculate: 57px nav + 50vh video = position for top gradient */}
+          {/* Calculate: 57px nav + 30vh video = position for top gradient */}
           {/* Bottom gradient removed to avoid conflicts with Chrome's mobile nav bar */}
-          <div className="lg:hidden fixed left-0 right-0 h-16 bg-gradient-to-b from-white/80 via-white/40 to-transparent z-30 pointer-events-none" style={{ top: 'calc(57px + 50vh)' }} />
+          <div className="lg:hidden fixed left-0 right-0 h-16 bg-gradient-to-b from-white/80 via-white/40 to-transparent z-30 pointer-events-none" style={{ top: 'calc(57px + 30vh)' }} />
 
           {/* Desktop fade overlays - fade text at top and bottom of visible area */}
           <div className="hidden lg:block fixed top-[25vh] right-0 w-[30%] h-24 bg-gradient-to-b from-white/90 via-white/60 to-transparent z-30 pointer-events-none" />
@@ -267,66 +300,177 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
           {/* Mobile spacing - push content below the gradient */}
           <div className="lg:hidden h-24" />
 
-          <div className="px-6 md:px-10 pb-4 lg:pb-0 lg:py-0">
-            {/* Title with Share Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="mb-8"
-            >
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h1 className="text-3xl md:text-4xl font-bold leading-tight text-neutral-900 flex-1">
-                  {history.title}
-                </h1>
-                <ShareLinks title={history.title} variant="compact" />
-              </div>
-              {history.subtitle && (
-                <p className="text-base md:text-lg text-neutral-600 mb-3 leading-relaxed">
-                  {history.subtitle}
-                </p>
-              )}
-              <div className="flex flex-col gap-1 text-xs text-neutral-500">
-                {history.author && <span>By {history.author}</span>}
-                {history.premium?.estimatedReadTime && (
-                  <span>{history.premium.estimatedReadTime}</span>
-                )}
-              </div>
-            </motion.div>
-
-            {/* All content blocks in continuous flow */}
-            <div className="space-y-6">
-              {videoBlocks.map((videoBlock, vIdx) => (
-                <div key={videoBlock.id}>
-                  {videoBlock.textBlocks.map((block: any, bIdx: number) => (
-                    <TextBlock
-                      key={block.id || `${vIdx}-${bIdx}`}
-                      block={block}
-                      isFirst={vIdx === 0 && bIdx === 0}
-                    />
-                  ))}
+          {/* Story Content Area - ref attached here to measure only story, not footer */}
+          <div ref={storyContentRef}>
+            <div className="px-6 md:px-10 pb-4 lg:pb-0 lg:py-0">
+              {/* Title with Share Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8"
+              >
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <h1 className="text-3xl md:text-4xl font-bold leading-tight text-neutral-900 flex-1">
+                    {history.title}
+                  </h1>
+                  <ShareLinks title={history.title} variant="compact" />
                 </div>
-              ))}
-            </div>
-          </div>
+                {history.subtitle && (
+                  <p className="text-base md:text-lg text-neutral-600 mb-3 leading-relaxed">
+                    {history.subtitle}
+                  </p>
+                )}
+              </motion.div>
 
-          {/* Bottom spacing - centers content in middle of screen on desktop, minimal on mobile */}
-          <div className="h-4 lg:h-[50vh]" />
+              {/* All content blocks in continuous flow */}
+              <div className="space-y-6">
+                {videoBlocks.map((videoBlock, vIdx) => (
+                  <div key={videoBlock.id}>
+                    {videoBlock.textBlocks.map((block: any, bIdx: number) => (
+                      <TextBlock
+                        key={block.id || `${vIdx}-${bIdx}`}
+                        block={block}
+                        isFirst={vIdx === 0 && bIdx === 0}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom spacing - centers content in middle of screen on desktop, minimal on mobile */}
+            <div className="h-4 lg:h-[50vh]" />
+          </div>
 
           {/* Footer - appears at end of scroll */}
           <footer className="px-6 md:px-10 py-12 border-t border-neutral-200 bg-white">
-            <p className="text-sm text-neutral-500">
-              {history.author && `Written by ${history.author}`}
-            </p>
-            {history.publishedAt && (
-              <p className="text-xs text-neutral-400 mt-1">
-                Published {new Date(history.publishedAt).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
+            {/* Enhanced Share Section */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <div className="bg-gradient-to-r from-accent-50 to-amber-50 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-3">
+                  Share this story
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  Help others discover the untold stories of {cityName || history.citySlug}
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <ShareLinks
+                    title={history.title}
+                    url={`https://thecurious.city/${history.citySlug}/articles/${history.slug}`}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* More Stories Section */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <h3 className="text-xl font-bold text-neutral-900 mb-4">More Stories</h3>
+              <div className="flex flex-col gap-4">
+                {/* Tampa story (show on Phoenix) */}
+                {history.citySlug === 'phoenix' && (
+                  <Link
+                    href="/tampa/articles/sunshine-and-hustle"
+                    className="group relative overflow-hidden rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
+                      <img
+                        src="/sequences/tampa/tampa-1/frame_0001.jpg"
+                        alt="Tampa skyline"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-1">Tampa</div>
+                      <h4 className="font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
+                        Sunshine and Hustle
+                      </h4>
+                      <p className="text-sm text-neutral-600 line-clamp-2">
+                        A city of cigars, conquistadors, and perpetual reinvention
+                      </p>
+                    </div>
+                  </Link>
+                )}
+
+                {/* Phoenix story (show on Tampa) */}
+                {history.citySlug === 'tampa' && (
+                  <Link
+                    href="/phoenix/articles/the-air-conditioned-dream"
+                    className="group relative overflow-hidden rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
+                      <img
+                        src="/sequences/phoenix/phoenix-1/frame-0001.jpg"
+                        alt="Phoenix sprawling across the desert"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-1">Phoenix</div>
+                      <h4 className="font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
+                        The Air-Conditioned Dream
+                      </h4>
+                      <p className="text-sm text-neutral-600 line-clamp-2">
+                        A city that shouldn't exist, existing grandly anyway
+                      </p>
+                    </div>
+                  </Link>
+                )}
+
+                {/* Placeholder 1 */}
+                <div className="relative overflow-hidden rounded-xl bg-neutral-50 border-2 border-dashed border-neutral-300">
+                  <div className="aspect-[16/9] relative overflow-hidden bg-neutral-100 flex items-center justify-center">
+                    <svg className="w-12 h-12 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </div>
+                  <div className="p-4">
+                    <div className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-1">Coming Soon</div>
+                    <h4 className="font-bold text-neutral-400 mb-2">
+                      More City Stories
+                    </h4>
+                    <p className="text-sm text-neutral-400">
+                      New immersive histories launching soon
+                    </p>
+                  </div>
+                </div>
+
+                {/* Placeholder 2 */}
+                <div className="relative overflow-hidden rounded-xl bg-neutral-50 border-2 border-dashed border-neutral-300">
+                  <div className="aspect-[16/9] relative overflow-hidden bg-neutral-100 flex items-center justify-center">
+                    <svg className="w-12 h-12 text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </div>
+                  <div className="p-4">
+                    <div className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-1">Coming Soon</div>
+                    <h4 className="font-bold text-neutral-400 mb-2">
+                      More City Stories
+                    </h4>
+                    <p className="text-sm text-neutral-400">
+                      New immersive histories launching soon
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Link to text-only version */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <Link
+                href={`/${history.citySlug}/articles/${history.slug}?format=text`}
+                className="inline-flex items-center gap-2 text-sm text-accent-600 hover:text-accent-700 font-medium transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Read text-only version
+              </Link>
+              <p className="text-xs text-neutral-500 mt-2">
+                Prefer reading without the video? Switch to the standard article format.
               </p>
-            )}
+            </div>
+
           </footer>
         </div>
       </div>
