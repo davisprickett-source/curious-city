@@ -67,7 +67,6 @@ export const colorado_springs: CityData = {
             category: 'science',
             title: 'Tesla made lightning. Then he blacked out the city.',
             body: 'In 1899, Nikola Tesla chose Colorado Springs for the ultimate mad scientist playground: high altitude, dry air, and nobody to stop him from building an 80-foot lightning machine. His experimental station generated artificial lightning bolts reaching 135 feet—so powerful they fried the Colorado Springs Electric Company generator and plunged the entire city into darkness. The power company was not amused. Tesla claimed he received radio signals from Mars (probably just atmospheric static, but let him have this). His Colorado Springs notes, published posthumously, remain among the most enigmatic and borderline-incomprehensible documents in electrical engineering. The site where he nearly electrocuted himself daily? Now a parking lot at Foote Avenue and Kiowa Street, marked by a plaque that vastly undersells the chaos.',
-            year: '1899',
             images: [
               {
                 src: 'https://teslasciencecenter.org/wp-content/uploads/2014/04/Tesla-Lab-Colorado-Springs.jpg',
@@ -107,7 +106,6 @@ export const colorado_springs: CityData = {
             category: 'nature',
             title: 'Garden of the Gods is free forever (by law)',
             body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission—not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires—all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
-            year: '1909',
             images: [
               {
                 src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Balanced-Rock.jpg',
@@ -152,7 +150,6 @@ export const colorado_springs: CityData = {
             category: 'legend',
             title: 'NORAD\'s unofficial mascot is a blue alien',
             body: 'Cheyenne Mountain\'s Alternate Command Center sits 2,000 feet inside solid granite, designed to survive nuclear war. The bunker has an unofficial mascot: a blue alien figurine that "checks IDs" at the blast doors. According to military personnel, the tradition started during the Cold War, when operators needed levity while monitoring for the apocalypse. Because nothing says "existential dread" like a cheerful alien bouncer.',
-            source: 'Military interviews and memoirs',
             location: {
               name: 'Cheyenne Mountain Complex',
               stillExists: true,
@@ -164,7 +161,6 @@ export const colorado_springs: CityData = {
             category: 'history',
             title: 'The "Bone Wars" scientist had himself buried with his bones',
             body: 'In the 1870s-80s, rival paleontologists O.C. Marsh and Edward Drinker Cope waged the "Bone Wars"—a bitter, decades-long feud to discover dinosaur species. Garden of the Gods was a key battleground. Their teams sabotaged each other\'s digs, bribed workers, and destroyed fossils to prevent the other from publishing first. Cope was so competitive that when he died, he had himself buried with his skeleton collection so Marsh couldn\'t measure his skull. That\'s commitment to a grudge.',
-            year: '1877',
             source: 'American Museum of Natural History',
             location: {
               name: 'Garden of the Gods',
@@ -177,7 +173,6 @@ export const colorado_springs: CityData = {
             category: 'legend',
             title: 'An elephant caddied at the Broadmoor (then got taxidermied)',
             body: 'In the 1930s, Tessie the elephant was the Broadmoor resort\'s mascot. She reportedly carried golf bags for guests and appeared at events, because nothing says "luxury mountain resort" like a pachyderm caddy. When she died, her hide was preserved and mounted in the resort for decades. The tradition of eccentric animal mascots continued until the 1970s, when someone finally asked, "Why?"',
-            year: '1930s',
             source: 'Broadmoor Hotel archives',
             location: {
               name: 'The Broadmoor',
@@ -195,7 +190,6 @@ export const colorado_springs: CityData = {
             category: 'science',
             title: 'Congress called this chapel "fighter jets nose-diving"',
             body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design—17 aluminum-clad steel spires soaring 150 feet skyward—outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
-            year: '1962',
             images: [
               {
                 src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Exterior-2023.jpg',
@@ -235,7 +229,6 @@ export const colorado_springs: CityData = {
             category: 'history',
             title: '"America the Beautiful" was written on muleback',
             body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view—"purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains—she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',
-            year: '1893',
             images: [
               {
                 src: 'https://www.pikespeakhistoricalsociety.org/uploads/1/2/3/4/123456789/katharine-lee-bates-portrait.jpg',
@@ -271,7 +264,6 @@ export const colorado_springs: CityData = {
             category: 'nature',
             title: 'Manitou\'s eight springs taste wildly different',
             body: 'Manitou Springs has eight public mineral springs scattered throughout town, each bubbling with a unique combination of minerals that give them dramatically different tastes. The Navajo Spring is effervescent and slightly salty. The Iron Spring tastes metallic and rusty (it contains actual dissolved iron). The Shoshone is sulfurous. Some are sweet, others bitter, some fizzy with natural carbonation from deep underground CO2. The Ute people considered these springs sacred healing waters and traveled here for centuries. When William Jackson Palmer founded Colorado Springs in 1871, he marketed neighboring Manitou Springs as a health resort, building grand hotels to house tuberculosis patients seeking the "curative waters." Visitors would "take the waters" by drinking from each spring, believing the minerals healed various ailments. You can still taste all eight for free by following the self-guided Mineral Springs Walking Tour. Fair warning: the Iron Spring tastes like pennies.',
-            year: '1870s',
             images: [
               {
                 src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=1234',
@@ -307,7 +299,6 @@ export const colorado_springs: CityData = {
             category: 'culture',
             title: 'NORAD Tracks Santa because Sears printed the wrong number',
             body: 'On December 24, 1955, a Sears department store in Colorado Springs ran a newspaper ad inviting children to call Santa directly. But the phone number was misprinted—it connected to the Continental Air Defense Command (CONAD), NORAD\'s predecessor, at what\'s now Peterson Space Force Base. Colonel Harry Shoup, the officer on duty that night, was initially confused but quickly played along, checking his "radar" and giving children Santa\'s location. His staff continued answering calls all night. The tradition stuck. Today, NORAD Tracks Santa is a massive operation: over 1,500 volunteers answer calls, emails, and social media messages from more than 150 countries. The website receives millions of visitors every Christmas Eve. What started as a phone typo became one of the military\'s most beloved public relations traditions.',
-            year: '1955',
             images: [
               {
                 src: 'https://www.noradsanta.org/storage/images/2022/norad-tracks-santa-operations-center.jpg',
@@ -347,7 +338,6 @@ export const colorado_springs: CityData = {
             category: 'underground',
             title: 'Gold smugglers built an underground economy',
             body: 'During the 1890s Cripple Creek gold rush, "highgraders"—miners who stole ore—used secret tunnels to smuggle gold out of mines. Some tunnels connected directly to businesses in town, creating an entire underground economy. The practice became so common that mines eventually required workers to change into company-provided clothes before and after shifts to prevent theft. Strip searches were routine. Despite these measures, highgrading continued for decades, with some estimates suggesting millions of dollars in gold disappeared into the tunnels.',
-            year: '1890s',
             source: 'Cripple Creek District Museum',
             location: {
               name: 'Cripple Creek',
@@ -360,7 +350,6 @@ export const colorado_springs: CityData = {
             category: 'legend',
             title: 'The Incline was built for pipes, not people',
             body: 'The Manitou Incline—2,744 railroad ties climbing 2,000 vertical feet in less than a mile—was built in 1907 to haul pipes and materials up Pikes Peak for a hydroelectric project. When the railway closed decades later, locals started climbing it illegally, treating the abandoned infrastructure as an extreme workout. The city tried to stop them. They failed. By 2013, so many people were trespassing that the city gave up and legitimized it. Now it\'s a beloved masochistic tradition. It gains elevation faster than almost any trail in America, with grades exceeding 68%. Your legs will hate you.',
-            year: '1907',
             source: 'City of Manitou Springs',
             location: {
               name: 'Manitou Incline',
@@ -380,10 +369,6 @@ export const colorado_springs: CityData = {
               },
             ],
             source: 'United States Olympic Committee',
-            location: {
-              name: 'U.S. Olympic Training Center',
-              stillExists: true,
-            },
           },
           {
             id: 'cos-curiosity-7',
@@ -391,7 +376,6 @@ export const colorado_springs: CityData = {
             category: 'architecture',
             title: 'The cog railway got a $100 million do-over',
             body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (yes, of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure was beyond repair—it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. Every tie, rail, and switch was replaced. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that actually work at 14,000 feet. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles with grades up to 24%. The round-trip takes about 3 hours and costs more than your gym membership.',
-            year: '2021',
             images: [
               {
                 src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Cog-Railway-Train-Summit.jpg',
@@ -428,10 +412,6 @@ export const colorado_springs: CityData = {
             title: 'They call it the "Evangelical Vatican"',
             body: 'Focus on the Family\'s 81-acre campus employs about 700 people. Combined with New Life Church, The Navigators, Young Life headquarters, and dozens of other evangelical Christian organizations, Colorado Springs houses more religious ministries than perhaps any other American city. This concentration of evangelical power has earned it the nickname "Evangelical Vatican." Local politics reflect this reality: the city often votes dramatically differently from Denver, just 70 miles north. The influence is impossible to miss.',
             source: 'Pew Research Center',
-            location: {
-              name: 'Colorado Springs',
-              stillExists: true,
-            },
           },
           {
             id: 'cos-curiosity-12',
@@ -439,7 +419,6 @@ export const colorado_springs: CityData = {
             category: 'architecture',
             title: 'The city founder rebuilt his castle twice',
             body: 'William Jackson Palmer, Colorado Springs\' founder, built his wife a home in 1871, then kept expanding it into a 67-room Tudor-style castle until his death in 1909. He rebuilt it twice—once after a fire, once because his wife requested changes. The man founded an entire city but couldn\'t say no to home renovations. Today it\'s owned by The Navigators, a Christian organization. Visitors can tour the castle or stay overnight in rooms where Palmer probably argued about crown molding.',
-            year: '1909',
             source: 'Glen Eyrie Castle',
             location: {
               name: 'Glen Eyrie',

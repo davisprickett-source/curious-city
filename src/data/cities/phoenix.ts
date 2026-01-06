@@ -67,7 +67,6 @@ export const phoenix: CityData = {
             category: 'legend',
             title: 'The Phoenix Lights remain unexplained',
             body: 'On March 13, 1997, at approximately 8:30 PM, thousands of Arizona residents witnessed something extraordinary: a massive V-shaped formation of lights moving silently across the sky from Henderson, Nevada, through Phoenix, and down to Tucson. The formation was huge—some described it as a mile wide, blocking out stars as it passed overhead. Witnesses included pilots, police officers, and then-Governor Fife Symington, who initially held a press conference mocking the reports (his chief of staff appeared in an alien costume). A decade later, Symington admitted he\'d seen it too and called it "otherworldly." The U.S. Air Force claimed the lights were flares dropped during a training exercise at the Barry Goldwater Range. But witnesses insist the flares explanation only accounts for a second set of lights seen later that night—not the massive V-shaped craft that flew overhead. Multiple videos and photos were captured. It remains one of the most witnessed and well-documented UFO events in history.',
-            year: '1997',
             image: {
               src: '/phoenix/curiosities/v-lights-sky.png',
               alt: 'V-shaped formation of lights witnessed during Phoenix Lights event',
@@ -82,10 +81,6 @@ export const phoenix: CityData = {
                 url: 'https://www.nationalgeographic.com/science/article/phoenix-lights',
               },
             ],
-            location: {
-              name: 'Phoenix metropolitan area',
-              stillExists: false,
-            },
           },
           {
             id: 'phx-curiosity-2',
@@ -93,7 +88,6 @@ export const phoenix: CityData = {
             category: 'history',
             title: 'German POWs tunneled out and learned Arizona has fake rivers',
             body: 'Camp Papago Park, located in what\'s now east Phoenix, held German prisoners of war during WWII—many of them U-boat crews captured in the Atlantic. On December 23, 1944, 25 German officers executed "The Great Papago Escape," emerging from a 178-foot tunnel they\'d dug over three months using makeshift tools. The tunnel started under a bathhouse and extended beyond the camp fence. The Germans had built a collapsible boat, studied maps, and planned to float down the Gila River to Mexico. There was one problem: Arizona\'s "rivers" on maps are usually bone-dry. The escapees wandered the Sonoran Desert in confusion. Most were recaptured within days. The last holdout, U-boat Captain Jürgen Wattenberg, evaded capture until January 28, 1945—over a month on the run. All 25 were eventually caught. The tunnel entrance is now commemorated at Papago Park Golf Course.',
-            year: '1944',
             image: {
               src: '/phoenix/curiosities/wwii-prisoners.png',
               alt: 'German POW camp at Papago Park and escape tunnel site',
@@ -124,7 +118,6 @@ export const phoenix: CityData = {
             category: 'legend',
             title: 'The Lost Dutchman\'s Gold Mine has killed dozens of searchers',
             body: 'Somewhere in the jagged volcanic peaks of the Superstition Mountains—forty miles east of Phoenix, visible from any highway—lies a gold mine so rich it drove men to murder, madness, and death for over a century. The legend centers on Jacob Waltz, a German immigrant who arrived in Arizona in the 1860s. According to the story, Waltz found an incredibly rich vein of gold ore, possibly an old Spanish or Apache mine, and worked it secretly for decades. He\'d disappear into the Superstitions for weeks, returning with saddlebags of high-grade ore that he sold quietly in Phoenix. On his deathbed in 1891, Waltz supposedly gave directions to the mine—but the clues were contradictory, the landmarks vague, and the terrain brutal. Over the next 130 years, an estimated 8,000 people have searched for the Lost Dutchman\'s Mine. At least several dozen have died trying—from falls, dehydration, gunshots, and one famous 1931 decapitation that was never solved. In 2009, three hikers from Colorado vanished in the Superstitions and were never found. The state of Arizona now prohibits excavation in the wilderness area. Treasure hunters still come. The mine has never been located. Whether it ever existed at all remains genuinely unclear.',
-            year: '1891',
             image: {
               src: '/phoenix/curiosities/dutchman-gold.png',
               alt: 'Superstition Mountains hiding the Lost Dutchman gold mine',
@@ -141,7 +134,6 @@ export const phoenix: CityData = {
             category: 'science',
             title: 'Phoenix had 31 consecutive days over 110°F in 2023',
             body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds. The heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Climate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal.',
-            year: '2023',
             image: {
               src: '/phoenix/curiosities/heat-wave.png',
               alt: 'Phoenix heat wave thermometer showing extreme temperatures',
@@ -185,10 +177,6 @@ export const phoenix: CityData = {
                 url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm',
               },
             ],
-            location: {
-              name: 'State of Arizona',
-              stillExists: true,
-            },
           },
           {
             id: 'phx-curiosity-ad-2',
@@ -201,7 +189,6 @@ export const phoenix: CityData = {
             category: 'history',
             title: 'Modern Phoenix canals follow routes built 1,000 years ago',
             body: 'Between 300-1450 AD, the Hohokam people engineered over 500 miles of irrigation canals in the Salt River Valley—the most sophisticated pre-Columbian water system north of Mexico. These weren\'t simple ditches; they were precisely graded, maintained, and expanded over centuries to support a population of tens of thousands. When Anglo settlers arrived in the 1860s and founded Phoenix, they didn\'t start from scratch—they simply cleared out the ancient Hohokam canals and put them back into use. Today, the Salt River Project\'s modern canal system follows many of the same routes mapped out by Indigenous engineers a millennium ago. The Hohokam mysteriously abandoned their cities around 1450 AD, likely due to a combination of mega-drought, soil salinization, and social collapse. Their engineering legacy literally flows through modern Phoenix.',
-            year: '1450',
             image: {
               src: '/phoenix/curiosities/canals.png',
               alt: 'Ancient Hohokam canal system and modern Phoenix waterways',
@@ -262,7 +249,6 @@ export const phoenix: CityData = {
             category: 'history',
             title: 'This city is a monument to air conditioning',
             body: 'Phoenix is a monument to human stubbornness—five million people living in a place that routinely hits 115°F, where summer nights don\'t drop below 90°. None of this would exist without one invention. In 1940, Phoenix had just 65,000 residents—a dusty agricultural outpost where locals slept on screened porches and movie theaters advertised "refrigerated air" as the main attraction. Then Willis Carrier\'s window units became affordable for average homeowners in the early 1950s. The floodgates opened. By 1960: 439,000 people. By 1990: over two million. Today: fifth-largest city in America. The entire Sun Belt migration—Phoenix, Las Vegas, Houston, the sprawling Sunbelt suburbs—was made possible by mechanical cooling. But there\'s a dark flip side locals don\'t discuss with visitors: if the power grid fails during a July heat wave, Phoenix becomes genuinely lethal within hours. The city has no natural backup. No shade. No breeze. No water features. In 2023, Maricopa County recorded 645 heat-related deaths—more than any county in America. AC isn\'t a luxury here. It\'s life support.',
-            year: '1950s',
             image: {
               src: '/phoenix/curiosities/before-ac-phoenixx.png',
               alt: 'Phoenix before air conditioning era - small desert town',
@@ -295,7 +281,6 @@ export const phoenix: CityData = {
             category: 'history',
             title: 'The city\'s name is both boast and warning',
             body: 'Anglo settlers named the city "Phoenix" in 1868 specifically because it rose from the ruins of the Hohokam civilization that had previously flourished here. It was both a boast and a warning: a great civilization had already collapsed in this valley once. The name was chosen by "Lord" Darrell Duppa, an English adventurer who was almost certainly drunk at the time.',
-            year: '1868',
             image: {
               src: '/phoenix/curiosities/phoeni-origin-name.png',
               alt: 'Phoenix rising from Hohokam ruins - city name origin',
@@ -346,10 +331,6 @@ export const phoenix: CityData = {
               alt: 'Biodiverse Sonoran Desert landscape near Phoenix',
             },
             source: 'Arizona-Sonora Desert Museum',
-            location: {
-              name: 'Sonoran Desert',
-              stillExists: true,
-            },
           },
           {
             id: 'phx-curiosity-13',
@@ -385,7 +366,6 @@ export const phoenix: CityData = {
             category: 'architecture',
             title: 'Frank Lloyd Wright built his desert laboratory here',
             body: 'Taliesin West, in Scottsdale, was Frank Lloyd Wright\'s winter home and architecture school from 1937 until his death in 1959. He designed it to blend into the desert, using local stone and canvas. Students still live and work there. The building was never "finished"—Wright viewed it as an ongoing experiment in organic architecture, constantly evolving with the seasons and the desert light.',
-            year: '1937',
             image: {
               src: '/phoenix/curiosities/Taliesin-house.png',
               alt: 'Taliesin West - Frank Lloyd Wright desert laboratory',

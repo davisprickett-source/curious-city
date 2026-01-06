@@ -185,7 +185,6 @@ export const chicago: CityData = {
             category: 'legend',
             title: 'Lake Michigan once had its own pirate king',
             body: 'In 1850, James Strang led a breakaway Mormon sect to Beaver Island in northern Lake Michigan, crowned himself king, and got busy with the whole monarchy thing. He minted his own currency, raided passing ships, and ruled with absolute authority—because apparently the Great Lakes needed a supervillain. His kingdom lasted six years until two disgruntled subjects shot him. America\'s only monarchy ended not with revolution, but with poor employee relations.',
-            year: '1850',
             source: 'Great Lakes Maritime Heritage Center',
             location: {
               name: 'Beaver Island, Lake Michigan',
@@ -198,7 +197,6 @@ export const chicago: CityData = {
             category: 'science',
             title: 'The first nuclear reaction happened under a squash court',
             body: 'On December 2, 1942, beneath the stands of Stagg Field at the University of Chicago, Enrico Fermi and his team achieved the first controlled nuclear chain reaction. The experiment lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under a football stadium while students attended classes above. Today a Henry Moore sculpture marks the spot where the Atomic Age began with spectacularly poor risk assessment.',
-            year: '1942',
             images: [
               {
                 src: '/chicago/curiosities/reactor-1.png',
@@ -226,7 +224,6 @@ export const chicago: CityData = {
             category: 'history',
             title: 'The city was raised 14 feet while people kept shopping',
             body: 'In the 1850s, Chicago sat on a swamp with sewage pooling in the streets. Rather than relocate like reasonable people, engineers jacked up entire city blocks—buildings, sidewalks, and all—as much as 14 feet. The Briggs House hotel was raised while guests continued dining inside, oblivious to the fact that their building was literally levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
-            year: '1858',
             images: [
               {
                 src: '/chicago/curiosities/raising-1.png',
@@ -242,10 +239,6 @@ export const chicago: CityData = {
               }
             ],
             source: 'Chicago Historical Society',
-            location: {
-              name: 'Downtown Chicago',
-              stillExists: true,
-            },
           },
           {
             id: 'curiosity-4',
@@ -253,7 +246,6 @@ export const chicago: CityData = {
             category: 'history',
             title: 'The Eastland killed more people than the Titanic—at the dock',
             body: 'On July 24, 1915, the SS Eastland rolled over while still tied to the Chicago River wharf, killing 844 people headed to a company picnic. The ship never left the dock. Passengers were trapped between decks in the capsized hull 20 feet from shore. It remains the deadliest single-vessel disaster in Great Lakes history, yet the Titanic gets all the movies. Geography is destiny, even in tragedy.',
-            year: '1915',
             images: [
               {
                 src: '/chicago/curiosities/boat-disaster-1.png',
@@ -276,7 +268,6 @@ export const chicago: CityData = {
             category: 'invention',
             title: 'The Ferris Wheel was built to humiliate the Eiffel Tower',
             body: 'When Chicago hosted the 1893 World\'s Fair, organizers demanded something to eclipse Paris\'s Eiffel Tower. George Washington Gale Ferris Jr. delivered: a 264-foot steel wheel carrying 2,160 passengers in 36 cars. Critics predicted catastrophic failure. They were wrong. Over 1.4 million people rode it. Ferris proved his genius, died broke three years later, and watched creditors seize his masterwork. Vindication is expensive.',
-            year: '1893',
             images: [
               {
                 src: '/chicago/curiosities/ferris-1.png',
@@ -300,7 +291,6 @@ export const chicago: CityData = {
             category: 'underground',
             title: '60 miles of forgotten tunnels flooded downtown in 1992',
             body: 'Starting in 1899, workers dug 60 miles of narrow-gauge freight tunnels beneath the Loop to move coal and mail. Chicagoans completely forgot they existed. On April 13, 1992, a construction crew punctured a tunnel wall under the Chicago River. 250 million gallons poured into basements across downtown. The financial district shut down for weeks. The Loop ran on emergency generators. The bill: $1.95 billion for infrastructure nobody remembered building.',
-            year: '1992',
             images: [
               {
                 src: '/chicago/curiosities/flood-1.png',
@@ -312,10 +302,6 @@ export const chicago: CityData = {
               }
             ],
             source: 'Chicago Tribune historical archives',
-            location: {
-              name: 'Chicago Loop',
-              stillExists: true,
-            },
           },
           {
             id: 'curiosity-7',
@@ -323,7 +309,6 @@ export const chicago: CityData = {
             category: 'culture',
             title: 'Two bronze lions predict championship wins with perfect accuracy',
             body: 'Since 1920, the Art Institute\'s two bronze lions have been dressed for Chicago sports victories—Bears helmets, Blackhawks jerseys, Cubs caps. According to museum lore, when the lions wear gear before a championship game, Chicago wins. What started as informal fan enthusiasm became official museum tradition. Locals treat the prophecy with religious seriousness. The lions have better playoff records than most of the teams.',
-            year: '1920',
             images: [
               {
                 src: '/chicago/curiosities/lions-1.png',
@@ -350,7 +335,6 @@ export const chicago: CityData = {
             category: 'legend',
             title: 'America\'s first serial killer built a murder hotel for the World\'s Fair',
             body: 'H.H. Holmes constructed a massive building at 63rd and Wallace for the 1893 World\'s Fair and called it "The Castle." Inside: gas lines controlled from his office, soundproof rooms, a walk-in vault, and basement chutes leading to a crematorium. He confessed to 27 murders but likely killed over 200. The building was demolished in 1938. The empty lot remains one of Chicago\'s darkest addresses.',
-            year: '1893',
             source: 'Erik Larson, The Devil in the White City',
             location: {
               name: '63rd and Wallace Streets',
@@ -363,7 +347,6 @@ export const chicago: CityData = {
             category: 'science',
             title: 'Engineers reversed the Chicago River to save the city',
             body: 'By the 1880s, Chicago\'s sewage flowed directly into Lake Michigan—the same lake that supplied drinking water. Typhoid and cholera killed thousands. In 1900, engineers accomplished the impossible: they reversed the flow of the Chicago River using locks and canals, sending waste toward the Mississippi instead. St. Louis objected strenuously. Chicago didn\'t care. The river still flows backward today.',
-            year: '1900',
             images: [
               {
                 src: '/chicago/curiosities/reverse-1.png',
@@ -386,7 +369,6 @@ export const chicago: CityData = {
             category: 'underground',
             title: 'A hermit lived in the train station basement for 30 years',
             body: 'For three decades, a man known only as "The Hermit of Dearborn Station" lived in the forgotten subbasements of Chicago\'s oldest train depot. He fashioned a comfortable apartment among abandoned rail equipment, fed by sympathetic railroad workers who kept his secret. When the station was renovated in the 1980s, he vanished. No one ever learned his name. Chicago\'s infrastructure always has room for one more ghost.',
-            year: '1970s',
             source: 'Chicago Reader',
             location: {
               name: 'Dearborn Station',
@@ -399,7 +381,6 @@ export const chicago: CityData = {
             category: 'culture',
             title: 'Mrs. O\'Leary\'s cow was officially exonerated 126 years later',
             body: 'The story that Catherine O\'Leary\'s cow kicked over a lantern and started the Great Chicago Fire was fabricated by reporter Michael Ahern, who later admitted he invented it for a better story. The O\'Learys were poor Irish immigrants—convenient scapegoats. In 1997, the Chicago City Council officially cleared Catherine O\'Leary and her cow. It took 126 years to apologize. The real cause remains unknown.',
-            year: '1871',
             source: 'Chicago City Council Resolution, 1997',
             location: {
               name: 'DeKoven Street (Chicago Fire Academy)',
@@ -412,7 +393,6 @@ export const chicago: CityData = {
             category: 'architecture',
             title: 'The only post office you can drive through',
             body: 'The Old Chicago Main Post Office, completed in 1932, was built directly over Congress Parkway—the only postal facility in America where vehicles pass through the building itself. Mail trucks loaded on upper floors while traffic flowed beneath. The building sat magnificently vacant from 1997 to 2019, when developers converted it into the largest single-floor office space in America. Abandonment as investment strategy.',
-            year: '1932',
             source: 'National Register of Historic Places',
             location: {
               name: 'The Old Post Office, 433 W Van Buren',
@@ -425,7 +405,6 @@ export const chicago: CityData = {
             category: 'architecture',
             title: 'The world\'s first skyscraper rose from Chicago\'s ashes',
             body: 'Just 14 years after the Great Fire leveled the city, William Le Baron Jenney completed the Home Insurance Building in 1885—the world\'s first skyscraper. At 10 stories, it pioneered the steel-skeleton construction that made every modern high-rise possible. Every tall building on Earth descends from this Chicago innovation. The city demolished it in 1931 to build something taller, because sentimentality is for cities that lose fires.',
-            year: '1885',
             source: 'Chicago Architecture Center',
             location: {
               name: 'LaSalle and Adams Streets',
@@ -439,10 +418,6 @@ export const chicago: CityData = {
             title: 'Chicago\'s alleys are longer than its streets',
             body: 'Chicago has 1,900 miles of alleyways—more than its actual streets. The grid of back alleys was designed to hide garbage, deliveries, and utilities from view, creating a shadow city behind every block. Today the alleys host garage parties, murals, street art, and an entire subculture invisible from the front. Chicago has two faces. The alley is the honest one.',
             source: 'Chicago Department of Transportation',
-            location: {
-              name: 'Throughout Chicago',
-              stillExists: true,
-            },
           },
           {
             id: 'curiosity-15',
@@ -451,10 +426,6 @@ export const chicago: CityData = {
             title: 'The zipper, Twinkies, and spray paint were all invented here',
             body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
             source: 'Chicago History Museum',
-            location: {
-              name: 'Various Chicago locations',
-              stillExists: true,
-            },
           },
         ],
       },

@@ -122,10 +122,6 @@ export const fargo: CityData = {
               alt: 'Flat prairie horizon',
             },
             source: 'USGS',
-            location: {
-              name: 'Red River Valley',
-              stillExists: true,
-            },
           },
           {
             id: 'far-curiosity-ad-1',
@@ -160,10 +156,6 @@ export const fargo: CityData = {
               alt: 'Prairie sunset over flat horizon',
             },
             source: 'Local observation',
-            location: {
-              name: 'Red River Valley',
-              stillExists: true,
-            },
           },
           {
             id: 'far-curiosity-2',
@@ -171,16 +163,11 @@ export const fargo: CityData = {
             category: 'science',
             title: 'The temperature once swung 93 degrees in 12 hours',
             body: 'February 21, 1918: Fargo woke up to -33°F. By afternoon, it was 50°F. A warm Chinook wind roared across the prairie and turned frostbite conditions into shirtsleeve weather in a single morning. This isn\'t an anomaly—the Red River Valley\'s continental climate regularly produces violent temperature swings. One day you\'re dying. The next day you\'re fine.',
-            year: '1918',
             image: {
               src: '/fargo/curiosities/cold-hot-day.png',
               alt: 'Extreme temperature swing in Fargo',
             },
             source: 'National Weather Service',
-            location: {
-              name: 'Fargo',
-              stillExists: true,
-            },
           },
           {
             id: 'far-curiosity-ad-2',
@@ -193,7 +180,6 @@ export const fargo: CityData = {
             category: 'culture',
             title: 'The Fargo woodchipper is a real tourist attraction (despite everything)',
             body: 'The Coen Brothers\' 1996 film "Fargo" was barely filmed in Fargo. Its events were entirely fictional. But the city leaned into it anyway. The visitors center now displays a woodchipper with a fake leg sticking out, and tourists line up for photos. When you ask locals about it, they smile politely and point out that the accent is actually more Minnesotan. But they\'ll still sell you a T-shirt.',
-            year: '1996',
             source: 'Fargo-Moorhead CVB',
             location: {
               name: 'Fargo-Moorhead Visitors Center',
@@ -219,7 +205,6 @@ export const fargo: CityData = {
             category: 'invention',
             title: 'Microsoft has 2,000 employees here—and it\'s not random',
             body: 'Microsoft\'s Fargo campus is one of the company\'s largest outside Seattle, employing about 2,000 people. Why Fargo? The 2001 acquisition of Great Plains Software brought the campus. But low cost of living, no state income tax, and a steady pipeline of engineers from NDSU kept it growing. It\'s one big reason Fargo hasn\'t suffered the brain drain that\'s hollowed out rural America.',
-            year: '2001',
             image: {
               src: '/fargo/curiosities/fargo-microsoft.png',
               alt: 'Microsoft Fargo campus',
@@ -236,7 +221,6 @@ export const fargo: CityData = {
             category: 'nature',
             title: 'The river flows north, which makes floods catastrophic',
             body: 'The Red River flows north toward Canada. That means snow melts in the south first and pushes water toward still-frozen stretches downstream. Ice jams trap the flow and force it backward through Fargo. The 1997 flood was the worst in 500 years—the entire city mobilized to fill sandbags around the clock. A $2.75 billion diversion channel is now being built to stop it from happening again.',
-            year: '1997',
             image: {
               src: '/fargo/curiosities/cold-hot-day.png',
               alt: 'Red River during spring flooding',
@@ -253,7 +237,6 @@ export const fargo: CityData = {
             category: 'culture',
             title: 'Roger Maris broke Babe Ruth\'s record—and still doesn\'t get enough credit',
             body: 'Roger Maris grew up in Fargo. In 1961, he broke Babe Ruth\'s single-season home run record with 61 homers—a mark that stood for 37 years until steroid-era players passed him. The Roger Maris Museum in West Acres Mall is small, free, and genuinely moving: letters, artifacts, and the story of a man who never got the recognition he deserved. Most mall shoppers walk right past it.',
-            year: '1961',
             image: {
               src: '/fargo/curiosities/baseball.png',
               alt: 'Baseball history display',
@@ -275,10 +258,6 @@ export const fargo: CityData = {
               alt: 'Scandinavian heritage festival in Fargo',
             },
             source: 'Historical and Cultural Society of Clay County',
-            location: {
-              name: 'Fargo-Moorhead',
-              stillExists: true,
-            },
           },
           {
             id: 'far-curiosity-9',
@@ -291,10 +270,6 @@ export const fargo: CityData = {
               alt: 'Fargo school on a cold winter day',
             },
             source: 'National Weather Service',
-            location: {
-              name: 'Fargo',
-              stillExists: true,
-            },
           },
           {
             id: 'far-curiosity-10',
@@ -302,7 +277,6 @@ export const fargo: CityData = {
             category: 'culture',
             title: 'NDSU football has won 9 national championships since 2011',
             body: 'North Dakota State University has won 9 FCS national championships since 2011—a streak of dominance unmatched in college football at any level. The Fargodome sells out for every game despite winter kickoffs at -20°F. When quarterback Carson Wentz went #2 in the 2016 NFL Draft, it briefly put Fargo on the national sports map. But locals already knew.',
-            year: '2011',
             source: 'NCAA',
             location: {
               name: 'Fargodome',
@@ -331,12 +305,7 @@ export const fargo: CityData = {
             category: 'history',
             title: 'A fire burned down half the city—and split it in two for years',
             body: 'In 1893, a massive fire destroyed 31 blocks of downtown Fargo. The city rebuilt, but the disaster created a psychological divide between "Old Fargo" in the north and "New Fargo" in the south. The railroad tracks became an unofficial border. For years, tensions simmered. It wasn\'t until the early 1900s that the two halves fully integrated into one city again.',
-            year: '1893',
             source: 'Fargo-Moorhead CVB',
-            location: {
-              name: 'Downtown Fargo',
-              stillExists: true,
-            },
           },
         ],
       },

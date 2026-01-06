@@ -92,7 +92,6 @@ export const minneapolis: CityData = {
             category: 'history',
             title: 'Minneapolis was explicitly fair game for America\'s most wanted gangsters',
             body: 'During Prohibition, St. Paul operated under the "O\'Connor System" — a corrupt arrangement where gangsters like John Dillinger, Al Capone, Machine Gun Kelly, and Bonnie and Clyde could live peacefully in the city. The deal was simple: check in with the police chief, give him a cut, and commit no crimes within St. Paul city limits. Minneapolis, however, was explicitly excluded from this protection.\n\nThe result was predictable carnage. In 1932, more than 20% of all bank robberies in the entire United States occurred in Minnesota — most of them in Minneapolis. Gangsters lived comfortable lives across the river in St. Paul, then crossed over to rob Minneapolis banks before retreating to their sanctuary. When Dillinger was shot by FBI agents during a St. Paul shootout in 1934, he fled to his doctor\'s clinic in Minneapolis to hide and receive treatment. The arrangement lasted until federal pressure finally shut it down in the mid-1930s, but not before Minneapolis became America\'s most robbery-prone city.',
-            year: '1920s-1930s',
             sources: [
               {
                 title: 'Minnesota Historical Society',
@@ -119,7 +118,6 @@ export const minneapolis: CityData = {
             category: 'history',
             title: 'The world\'s largest flour mill exploded from dust ignition, killing 18',
             body: 'On May 2, 1878, the Washburn A Mill — then the largest flour mill on Earth — detonated in a fireball heard ten miles away in St. Paul. The explosion killed 18 workers instantly and destroyed six surrounding mills, erasing a third of Minneapolis\'s milling capacity in seconds. The culprit was something almost comically mundane: flour dust.\n\nMillstones grinding dry had created sparks. Those sparks ignited suspended flour particles. The resulting explosion had the force of a bomb. The disaster revolutionized industrial safety worldwide and directly led to the invention of dust collection systems. It also prompted the first systematic study of combustible dust hazards — research that now protects workers in grain elevators, sawmills, and factories across the globe. The mill\'s ruins were eventually converted into the Mill City Museum, which tells the story of Minneapolis\'s flour empire and the disaster that changed workplace safety forever.',
-            year: '1878',
             sources: [
               {
                 title: 'Minnesota Historical Society',
@@ -176,7 +174,6 @@ export const minneapolis: CityData = {
             category: 'invention',
             title: 'The Honeycrisp apple was literally one year away from the compost heap',
             body: 'In 1982, an experimental apple tree at the University of Minnesota — catalogued only as "MN 1711" — was scheduled for destruction. It had been in development for years and wasn\'t performing. A researcher named David Bedford gave it one final year to prove itself. That last-chance tree became the Honeycrisp, now Minnesota\'s official state fruit and one of the most commercially successful apples ever developed.\n\nThe Honeycrisp took 31 years from first cross-pollination to commercial release. Its cells are significantly larger than typical apples, creating the explosive crunch that made it famous. The apple was so successful that the University of Minnesota made millions in licensing fees from growers worldwide. It\'s been named alongside Google and the nicotine patch as one of 25 innovations that changed the world. Not bad for a tree that was one season away from the chipper.',
-            year: '1991',
             sources: [
               {
                 title: 'University of Minnesota: Honeycrisp Apple Story',
@@ -198,7 +195,6 @@ export const minneapolis: CityData = {
             category: 'underground',
             title: 'A 70-mile labyrinth of forgotten tunnels runs beneath the streets',
             body: 'Dating back to 1865, a massive tangle of telephone, gas, trolley, and hydropower tunnels sprawls beneath the Twin Cities — so extensive it\'s been compared to the Paris Catacombs. Most of it remains unexplored, unmapped, and largely forgotten. Century-old power tunnels near St. Anthony Falls predate the Civil War. Sandstone caves once housed mushroom farms, storage facilities, and Prohibition-era speakeasies like Wabasha Street Caves.\n\nIn 1992, a construction crew drilling downtown accidentally punched through a forgotten tunnel system, flooding basements across multiple city blocks. Many tunnel entrances have been sealed and lost entirely to institutional memory. The dangers are real: carbon monoxide accumulation, structural instability, and disorientation have led to deaths. Most access is now restricted, though some underground skyway connections remain public. The full extent of what\'s down there? Nobody really knows.',
-            year: '1865',
             sources: [
               {
                 title: 'Minnesota Historical Society: Underground Minneapolis',
@@ -259,7 +255,6 @@ export const minneapolis: CityData = {
             category: 'science',
             title: 'Live mussels work 24/7 guarding the city\'s drinking water',
             body: 'At the Minneapolis water treatment facility on the Mississippi River, the early-warning contamination system isn\'t electronic — it\'s biological. A team of live freshwater mussels, wired with sensors, monitors the water supply around the clock. When they detect toxins, they clamp their shells shut within seconds. The sensors catch this immediately and trigger alarms.\n\nMussels are absurdly sensitive to water quality changes, often more reliable than sophisticated electronic monitoring systems. They work continuously, require no calibration, filter water naturally as a bonus, and have been on the job since 2006. It\'s an elegant solution: deploy an organism that evolved for 400 million years to detect bad water, attach some sensors, and let biology do the work.',
-            year: '2006',
             sources: [
               {
                 title: 'Minneapolis Water Works',
@@ -278,7 +273,6 @@ export const minneapolis: CityData = {
             category: 'architecture',
             title: 'Two massive library caverns are carved 85 feet underground',
             body: 'Beneath the Elmer L. Andersen Library at the University of Minnesota, two caverns stretch 600 feet into St. Peter Sandstone — each the length of two football fields, 25 feet high, and 70 feet wide. The Minnesota Library Access Center sits 85 feet underground, storing over 1.5 million volumes on 17-foot-tall shelving in climate-controlled tunnels carved from the Mississippi River bluffs.\n\nExcavation took 20 months and removed nearly 100,000 cubic yards of sandstone. When completed in 2000, the tunnels were naturally at 57°F with 70% humidity — nearly ideal preservation conditions requiring minimal intervention. One cavern houses the state\'s rarest archives; the other serves Minnesota libraries via the Minitex lending system. The limestone roof provides natural protection from the elements, and there\'s room on university property for 18 additional caverns. Tours run during "Doors Open Minneapolis" and the Archives\' First Fridays, letting visitors descend into one of America\'s most unique research libraries.',
-            year: '2000',
             sources: [
               {
                 title: 'University of Minnesota Libraries: About Andersen Library',
@@ -305,7 +299,6 @@ export const minneapolis: CityData = {
             category: 'invention',
             title: 'Every Three Musketeers bar contains "Minneapolis Nougat"',
             body: 'Mars — the candy empire behind Milky Way, Snickers, and M&Ms — was founded in Minneapolis in 1920. The light, fluffy white confection inside every Three Musketeers bar was originally called "Minneapolis Nougat." The company eventually moved operations to New Jersey, but the recipe never changed. Every Three Musketeers bar you\'ve ever eaten contains a piece of Minneapolis history, even if the wrapper doesn\'t mention it.',
-            year: '1920',
             sources: [
               {
                 title: 'Mars, Inc. company history',
@@ -327,7 +320,6 @@ export const minneapolis: CityData = {
             category: 'culture',
             title: 'MST3K started as Minneapolis public access TV with homemade robots',
             body: 'Before Mystery Science Theater 3000 became a cult phenomenon, it premiered on KTMA — a Minneapolis public access station — in 1988. Creator Joel Hodgson built the original robot puppets (Crow, Tom Servo, Gypsy) in his Minneapolis apartment using household items and hardware store parts. The show\'s first episodes aired locally at odd hours, gained a following, moved to Comedy Central, ran for over a decade, and spawned multiple revivals. But it began in the most lo-fi way possible: local cable access with puppets made from a salad bowl, a lacrosse mask, and a gumball machine.',
-            year: '1988',
             sources: [
               {
                 title: 'MST3K Official Site',
@@ -349,7 +341,6 @@ export const minneapolis: CityData = {
             category: 'underground',
             title: 'The world\'s largest skyway system lets you avoid winter entirely',
             body: 'The Minneapolis Skyway System is the largest network of enclosed, climate-controlled pedestrian bridges on Earth — 80 blocks linked across 9.5 miles of downtown. You can walk from one end of the city center to the other without ever stepping outside. The first skyway opened in 1962, built by developer Leslie Park to compete with suburban shopping malls (including Southdale Center, also a Minneapolis invention — America\'s first fully enclosed mall).\n\nThe system now connects office towers, hotels, restaurants, and retail through second-story walkways that maintain a consistent 70°F regardless of the weather outside. When it\'s -20°F in January, thousands of workers commute entirely through skyways. It\'s both impressively practical and vaguely dystopian — a parallel city floating above the streets.',
-            year: '1962',
             sources: [
               {
                 title: 'Minneapolis Downtown Council',
@@ -372,7 +363,6 @@ export const minneapolis: CityData = {
             category: 'invention',
             title: 'The automatic pop-up toaster was invented here in 1926',
             body: 'Before 1926, making toast required constant attention, manual flipping, and frequent burnt bread. That year, the McGraw Electric Company in Minneapolis introduced the Toastmaster — the first automatic pop-up toaster. It could toast both sides simultaneously, monitor browning, and eject the finished toast without human intervention. A small innovation, perhaps, but one that genuinely changed breakfast routines worldwide. Every pop-up toaster since 1926 descends from the Minneapolis original.',
-            year: '1926',
             sources: [
               {
                 title: 'Minnesota Historical Society',
@@ -422,7 +412,6 @@ export const minneapolis: CityData = {
             category: 'history',
             title: 'St. Anthony was the original "Twin City" before St. Paul existed',
             body: 'Before St. Paul became Minneapolis\'s twin, the "Twin Cities" actually referred to Minneapolis and St. Anthony — two separate municipalities on opposite banks of St. Anthony Falls. They coexisted as independent rivals for twenty years until merging in 1872 to form modern Minneapolis. St. Paul didn\'t become the other half of the "Twin Cities" in public consciousness until later, after St. Anthony had already been absorbed and forgotten. The original twin city is now just the east bank of the falls.',
-            year: '1872',
             sources: [
               {
                 title: 'Minnesota Historical Society: St. Anthony Falls History',
@@ -471,7 +460,6 @@ export const minneapolis: CityData = {
             category: 'architecture',
             title: 'A cemetery chapel is covered in 10 million pieces of marble mosaic',
             body: 'Lakewood Cemetery\'s Memorial Chapel was designed by architect Harry Wild Jones as a scaled-down replica of Istanbul\'s Hagia Sophia. Completed in 1910 and built from St. Cloud granite, the building\'s interior dome is covered with a mosaic composed of 10 million individual pieces of marble. The craftsmanship is staggering — Byzantine-inspired patterns in a Minneapolis cemetery.\n\nThe chapel sits near the graves of Vice President Hubert Humphrey, Senator Paul Wellstone, entertainer Tiny Tim (who famously died onstage in Minneapolis), and generations of the Pillsbury and Washburn flour dynasties. It\'s one of the most beautiful buildings in the city, and it\'s in a graveyard.',
-            year: '1910',
             sources: [
               {
                 title: 'MNopedia: Lakewood Cemetery Memorial Chapel',

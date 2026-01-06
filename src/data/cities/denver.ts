@@ -72,7 +72,6 @@ export const denver: CityData = {
               src: '/denver/curiosities/bluecifer.png',
               alt: 'Blucifer - the blue mustang sculpture with glowing red eyes at Denver International Airport',
             },
-            source: 'Denver International Airport',
             location: {
               name: 'Denver International Airport',
               stillExists: true,
@@ -85,7 +84,6 @@ export const denver: CityData = {
             title: 'The city measured its own altitude wrong three times',
             body: 'Denver\'s whole identity is "Mile High City." It\'s on the license plates, the stadium, every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, someone carved "One Mile Above Sea Level" on the 13th step of the State Capitol. Tourists posed. Postcards sold. Then in 1969, engineering students actually measured it and discovered the marker was three steps too low. The legislature ceremoniously installed a new brass marker on the 18th step. Problem solved. Except in 2003, the National Geodetic Survey showed up with GPS and found the 18th step was also wrong—three feet too high. A third marker went on the 15th step. The original 1909 marker remains because tourists expect it. So now there are three "official" mile-high markers on the same staircase, none of which agree. The state just lives with it.',
             year: '2003',
-            source: 'Colorado State Capitol',
             location: {
               name: 'Colorado State Capitol',
               stillExists: true,
@@ -137,9 +135,8 @@ export const denver: CityData = {
             title: 'The internet\'s first serial killer ran cons from Capitol Hill',
             body: 'John Edward Robinson was a married businessman and self-styled philanthropist. He was also methodically murdering women he met through early internet chat rooms. In the 1980s and 90s, Robinson operated partly from the Colburn Hotel on Capitol Hill, using it as a meeting spot while promising women jobs, housing, and relationships. He delivered barrels. At least eight women are confirmed dead, some decomposing on his Missouri farm for over a decade. Investigators suspect more. The Colburn is now apartments. Real estate agents aren\'t required to disclose that one of America\'s most prolific killers operated from these rooms.',
             year: '1990s',
-            source: 'Denver Police Department records',
             location: {
-              name: 'Capitol Hill',
+              name: 'Colburn Hotel, Capitol Hill',
               stillExists: true,
             },
           },
@@ -169,10 +166,6 @@ export const denver: CityData = {
             body: 'Denver shouldn\'t exist. In November 1858, prospectors from Kansas founded "Denver City" at the confluence of Cherry Creek and the South Platte River. They found a little gold—enough to spark a rush. By early 1859, the deposits were exhausted. The "Pikes Peak or Bust" gold rush became a bust. Thousands arrived, found nothing, and turned around. Newspapers back East declared it a hoax. Denver\'s population collapsed. The town was weeks from abandonment when prospectors struck real gold at Gregory Gulch near Central City. Suddenly Denver had a purpose: supply hub, banking center, railhead for the mountain camps. The city survived because someone found gold in exactly the right place at the right time. A few months earlier, a few miles elsewhere, and Denver would be another ghost town footnote.',
             year: '1858',
             source: 'Colorado Historical Society',
-            location: {
-              name: 'Downtown Denver',
-              stillExists: true,
-            },
           },
           {
             id: 'den-curiosity-5',
@@ -184,7 +177,6 @@ export const denver: CityData = {
               src: '/denver/curiosities/bluecifer.png',
               alt: 'Denver International Airport and its infamous Blucifer sculpture',
             },
-            source: 'Denver International Airport',
             location: {
               name: 'Denver International Airport',
               stillExists: true,
@@ -201,10 +193,6 @@ export const denver: CityData = {
               alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
             },
             source: 'USGS',
-            location: {
-              name: 'Denver',
-              stillExists: true,
-            },
           },
           {
             id: 'den-curiosity-10',
@@ -229,10 +217,6 @@ export const denver: CityData = {
             title: 'Denver has more sun than San Diego (and worse sunburns)',
             body: 'Denver averages 300 days of sunshine annually—more than Miami, San Diego, or Los Angeles. But at 5,280 feet, UV exposure is 25% more intense than at sea level. Visitors consistently underestimate how quickly they\'ll fry and how viciously altitude hangovers hit. The sun is relentless. The hangovers are legendary. Locals develop leathery skin by 35. It\'s fine.',
             source: 'National Weather Service',
-            location: {
-              name: 'Denver',
-              stillExists: true,
-            },
           },
           {
             id: 'den-curiosity-14',
@@ -254,10 +238,6 @@ export const denver: CityData = {
             title: 'Secret tunnels connect downtown to mysterious destinations',
             body: 'A network of tunnels runs beneath downtown Denver, originally built for steam heating. During Prohibition, they connected speakeasies. Some lead to the Brown Palace Hotel, which has hosted every president since Teddy Roosevelt. Urban explorers claim the tunnels extend far beyond official maps. The city won\'t confirm or deny. The hotel doesn\'t comment. The tunnels remain.',
             source: 'Brown Palace Hotel historical records',
-            location: {
-              name: 'Downtown Denver',
-              stillExists: true,
-            },
           },
           {
             id: 'den-curiosity-11',

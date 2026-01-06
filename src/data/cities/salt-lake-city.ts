@@ -160,10 +160,6 @@ export const salt_lake_city: CityData = {
               alt: 'Wide Salt Lake City streets designed for oxen',
             },
             source: 'Salt Lake City Planning Division',
-            location: {
-              name: 'Downtown Salt Lake City',
-              stillExists: true,
-            },
           },
           {
             id: 'slc-curiosity-7',
@@ -238,10 +234,6 @@ export const salt_lake_city: CityData = {
               alt: 'Winter inversion pollution in Salt Lake Valley',
             },
             source: 'Utah Division of Air Quality',
-            location: {
-              name: 'Salt Lake Valley',
-              stillExists: true,
-            },
           },
           {
             id: 'slc-curiosity-11',

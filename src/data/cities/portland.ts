@@ -184,10 +184,6 @@ export const portland: CityData = {
               alt: 'The Portland Penny that decided the city\'s name',
             },
             source: 'Oregon Historical Society',
-            location: {
-              name: 'Portland',
-              stillExists: true,
-            },
           },
           {
             id: 'pdx-curiosity-12',
@@ -201,10 +197,6 @@ export const portland: CityData = {
               alt: 'Portland craft beer scene with local breweries',
             },
             source: 'Oregon Brewers Guild',
-            location: {
-              name: 'Portland',
-              stillExists: true,
-            },
           },
           {
             id: 'pdx-curiosity-13',
@@ -240,10 +232,6 @@ export const portland: CityData = {
               alt: 'Rainy day in Portland with people without umbrellas',
             },
             source: 'National Weather Service',
-            location: {
-              name: 'Portland',
-              stillExists: true,
-            },
           },
           {
             id: 'pdx-curiosity-11',
@@ -295,10 +283,6 @@ export const portland: CityData = {
               alt: 'Portland music venue scene and indie rock history',
             },
             source: 'Oregon Music Hall of Fame',
-            location: {
-              name: 'Portland',
-              stillExists: true,
-            },
           },
           {
             id: 'pdx-curiosity-9',

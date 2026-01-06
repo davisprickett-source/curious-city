@@ -124,7 +124,6 @@ export const raleigh: CityData = {
             title: 'The city is named after a man whose severed head became a family heirloom',
             body: 'Raleigh is named after Sir Walter Raleigh, the Elizabethan explorer and courtier who was beheaded in 1618. His preserved head was presented to his wife, Lady Raleigh, as a grim keepsake — and the family reportedly kept it for 29 years. The man never set foot in America, yet his decapitated head became a macabre family treasure that outlasted most marriages.',
             year: '1618',
-            source: 'Historical records',
           },
           {
             id: 'curiosity-ad-1',
@@ -138,7 +137,6 @@ export const raleigh: CityData = {
             title: 'A lost NASCAR superspeedway lies overgrown in the woods',
             body: 'Near Atlantic Avenue lie the overgrown remains of Raleigh Speedway, a one-mile banked NASCAR superspeedway built on a former airstrip in the 1950s. Bill France — who created Daytona — owned it. It was the first superspeedway in North Carolina with lights for night racing. Despite drawing crowds of 16,000+ when Raleigh\'s population was only 65,000, City Council refused to allow Sunday races and noise complaints from expanding suburbs killed it in 1959. The ruins are still visible in the woods. Tragically, teens later died racing their cars on the abandoned track.',
             year: '1952-1959',
-            source: 'WRAL Hidden History',
             location: { name: 'Near Atlantic Avenue', stillExists: true },
           },
           {
@@ -147,7 +145,6 @@ export const raleigh: CityData = {
             category: 'history',
             title: 'Over 900 graves lie beneath Dix Park — most unmarked for a century',
             body: 'The Dorothea Dix Hospital Cemetery contains over 900 graves, most unmarked until the 1990s due to mental illness stigma. For nearly a century, graves were marked only with a cross stamped with a case number to hide family shame. The site also contains unmarked graves of enslaved persons from the 5,000-acre Spring Hill Plantation, mentally ill patients, and orphans who died in the 1905 Nazareth Orphanage fire. At least 20 unmarked graves have been discovered, but there may be hundreds more forgotten people buried beneath what is now one of Raleigh\'s most popular parks.',
-            source: 'HMDB',
             location: { name: 'Dix Park', stillExists: true },
           },
           {
@@ -183,7 +180,6 @@ export const raleigh: CityData = {
                 url: 'https://abc11.com/post/we-revisit-downtown-raleighs-hidden-tunnels-waterway/2988847/',
               },
             ],
-            location: { name: 'Downtown Raleigh', stillExists: true },
           },
           {
             id: 'curiosity-ad-2',
@@ -206,7 +202,6 @@ export const raleigh: CityData = {
             category: 'history',
             title: 'NC State has underground steam tunnels with a mysterious shrine',
             body: 'NC State University has a complex network of underground steam tunnels that students used to explore before post-9/11 security tightened access. Urban explorers have found graffiti, hidden passages, and — most strangely — a shrine with recently-lit candles. Whether it\'s Pagan worship, evidence of a secret society, or just elaborate trolling remains a campus mystery.',
-            source: 'NC State student accounts',
             location: { name: 'NC State Campus', stillExists: true },
           },
           {
@@ -245,7 +240,6 @@ export const raleigh: CityData = {
             title: 'Lincoln\'s cousin married Andrew Johnson',
             body: 'In 1827, 18-year-old Andrew Johnson married 16-year-old Eliza McCardle. They were married by Justice of the Peace Mordecai Lincoln — first cousin of Thomas Lincoln, Abraham Lincoln\'s father. This means the man who would become president after Lincoln\'s assassination was connected to the Lincoln family years before either man held office. History loves a good setup.',
             year: '1827',
-            source: 'NCpedia',
           },
           {
             id: 'curiosity-11',
@@ -273,8 +267,6 @@ export const raleigh: CityData = {
             title: 'The giant acorn has a secret time capsule inside',
             body: 'The iconic 1,200-pound copper Great Raleigh Acorn used for New Year\'s Eve celebrations has a hidden time capsule etched inside its copper walls. In 2011, artist David Benson\'s daughter crawled inside and scribbled drawings and messages for future generations. The acorn\'s stem contains copper salvaged from the State Capitol dome — a piece of Raleigh history wrapped inside another.',
             year: '2011',
-            source: 'WRAL',
-            location: { name: 'Downtown Raleigh', stillExists: true },
           },
           {
             id: 'curiosity-12',
