@@ -5,7 +5,7 @@ export const portland_history: Record<string, History> = {
       slug: 'the-dream-of-the-nineties',
       citySlug: 'portland',
       title: 'The Dream of the Nineties',
-      subtitle: 'A city that invented a lifestyle and then got priced out of it',
+      subtitle: 'How a coin toss, 200 feet of rain, and a generation of California refugees built America\'s most self-conscious city',
       author: 'Curious City',
       publishedAt: '2024-12-22',
       blocks: [
@@ -33,7 +33,7 @@ export const portland_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'Shipping and Shipyards',
+          content: 'Before the Weird',
         },
         {
           id: 'p4',
@@ -63,7 +63,7 @@ export const portland_history: Record<string, History> = {
         {
           id: 'sub2',
           type: 'subheading',
-          content: 'The Weird Years',
+          content: 'Keep Portland Profitable',
         },
         {
           id: 'p7',
@@ -88,7 +88,7 @@ export const portland_history: Record<string, History> = {
         {
           id: 'sub3',
           type: 'subheading',
-          content: 'Crisis and Contradiction',
+          content: 'The Summer That Wasn\'t',
         },
         {
           id: 'p10',
@@ -133,7 +133,7 @@ export const portland_history: Record<string, History> = {
         {
           id: 'sub4',
           type: 'subheading',
-          content: 'Displacement and Dissonance',
+          content: 'The Displacement Nobody Talks About',
         },
         {
           id: 'p16',

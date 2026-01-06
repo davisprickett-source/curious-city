@@ -59,14 +59,14 @@ export const colorado_springs: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Colorado Springs Curiosities',
-        teaser: 'Tesla\'s lightning experiments, underground tunnels, and secrets in the shadow of Pikes Peak',
+        teaser: 'Mad scientists, military mishaps, and the park that\'s free forever',
         items: [
           {
             id: 'cos-curiosity-1',
             type: 'curiosity',
             category: 'science',
-            title: 'Nikola Tesla conducted lightning experiments here',
-            body: 'In 1899, Tesla built a massive experimental station in Colorado Springs, drawn by the city\'s high altitude and dry air — perfect for electrical experiments. His laboratory, topped with an 80-foot mast and a copper ball, generated artificial lightning bolts reportedly reaching 135 feet. The experiments were so powerful they knocked out the Colorado Springs Electric Company generator, plunging the city into darkness. Tesla claimed he received extraterrestrial radio signals — possibly from Mars — though they were likely natural atmospheric phenomena. His Colorado Springs notes, published posthumously, remain among the most enigmatic documents in electrical engineering history. The site at Foote Avenue and Kiowa Street is now a parking lot, marked only by a small plaque.',
+            title: 'Tesla made lightning. Then he blacked out the city.',
+            body: 'In 1899, Nikola Tesla chose Colorado Springs for the ultimate mad scientist playground: high altitude, dry air, and nobody to stop him from building an 80-foot lightning machine. His experimental station generated artificial lightning bolts reaching 135 feet—so powerful they fried the Colorado Springs Electric Company generator and plunged the entire city into darkness. The power company was not amused. Tesla claimed he received radio signals from Mars (probably just atmospheric static, but let him have this). His Colorado Springs notes, published posthumously, remain among the most enigmatic and borderline-incomprehensible documents in electrical engineering. The site where he nearly electrocuted himself daily? Now a parking lot at Foote Avenue and Kiowa Street, marked by a plaque that vastly undersells the chaos.',
             year: '1899',
             images: [
               {
@@ -78,8 +78,12 @@ export const colorado_springs: CityData = {
                 alt: 'Tesla sitting in his Colorado Springs laboratory with massive electrical discharge',
               },
               {
-                src: '',
+                src: '/colorado-springs/curiosities/tesla-1.png',
                 alt: 'Interior of Tesla\'s Colorado Springs laboratory showing equipment',
+              },
+              {
+                src: '/colorado-springs/curiosities/tesla-2.png',
+                alt: 'Tesla\'s experimental equipment in Colorado Springs',
               },
             ],
             sources: [
@@ -98,38 +102,42 @@ export const colorado_springs: CityData = {
             },
           },
           {
-            id: 'cos-curiosity-2',
+            id: 'cos-curiosity-14',
             type: 'curiosity',
-            category: 'culture',
-            title: 'NORAD\'s Santa tracker started with a wrong number',
-            body: 'On December 24, 1955, a Sears department store in Colorado Springs ran a newspaper ad inviting children to call Santa directly. But the phone number was misprinted — it connected to the Continental Air Defense Command (CONAD), NORAD\'s predecessor, at what\'s now Peterson Space Force Base. Colonel Harry Shoup, the officer on duty that night, was initially confused but quickly played along, checking his "radar" and giving children Santa\'s location. His staff continued answering calls all night. The tradition stuck. Today, NORAD Tracks Santa is a massive operation: over 1,500 volunteers answer calls, emails, and social media messages from more than 150 countries. The website receives millions of visitors every Christmas Eve. What started as a phone typo became one of the military\'s most beloved public relations traditions.',
-            year: '1955',
+            category: 'nature',
+            title: 'Garden of the Gods is free forever (by law)',
+            body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission—not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires—all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
+            year: '1909',
             images: [
               {
-                src: 'https://www.noradsanta.org/storage/images/2022/norad-tracks-santa-operations-center.jpg',
-                alt: 'NORAD Tracks Santa operations center with volunteers answering phones',
+                src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Balanced-Rock.jpg',
+                alt: 'Balanced Rock formation at Garden of the Gods with Pikes Peak in background',
               },
               {
-                src: 'https://media.defense.gov/2021/Dec/23/2002912458/825/780/0/211223-F-ZZ999-001.JPG',
-                alt: 'NORAD volunteers tracking Santa on Christmas Eve at Peterson Space Force Base',
+                src: 'https://www.springsgov.com/files/ShareX/Parks/GardenoftheGods/Kissing-Camels-Formation.jpg',
+                alt: 'Kissing Camels rock formation at Garden of the Gods',
               },
               {
-                src: '',
-                alt: 'Original 1955 Sears newspaper ad with misprinted phone number that started NORAD Tracks Santa',
+                src: '/colorado-springs/curiosities/garden-gods-1.png',
+                alt: 'Cathedral Spires at sunrise, Garden of the Gods',
+              },
+              {
+                src: '/colorado-springs/curiosities/garden-gods-2.png',
+                alt: 'Garden of the Gods red rock formations',
               },
             ],
             sources: [
               {
-                title: 'NORAD Tracks Santa Official History',
-                url: 'https://www.noradsanta.org/en/about',
+                title: 'Garden of the Gods Official Site',
+                url: 'https://gardenofgods.com/',
               },
               {
-                title: 'Smithsonian: How a Typo Created NORAD Tracks Santa',
-                url: 'https://www.smithsonianmag.com/history/how-norad-tracks-santa-180961342/',
+                title: 'National Natural Landmark: Garden of the Gods',
+                url: 'https://www.nps.gov/subjects/nnlandmarks/site.htm?Site=GAGO-CO',
               },
             ],
             location: {
-              name: 'Peterson Space Force Base / Cheyenne Mountain',
+              name: 'Garden of the Gods',
               stillExists: true,
             },
           },
@@ -142,8 +150,8 @@ export const colorado_springs: CityData = {
             id: 'cos-curiosity-3',
             type: 'curiosity',
             category: 'legend',
-            title: 'NORAD has an unofficial alien mascot',
-            body: 'Cheyenne Mountain\'s Alternate Command Center, 2,000 feet inside solid granite, has an unofficial mascot: a blue alien figurine. According to military personnel, the alien "checks IDs" at the blast doors. The tradition started during the Cold War, when operators needed levity in a bunker designed to survive nuclear war.',
+            title: 'NORAD\'s unofficial mascot is a blue alien',
+            body: 'Cheyenne Mountain\'s Alternate Command Center sits 2,000 feet inside solid granite, designed to survive nuclear war. The bunker has an unofficial mascot: a blue alien figurine that "checks IDs" at the blast doors. According to military personnel, the tradition started during the Cold War, when operators needed levity while monitoring for the apocalypse. Because nothing says "existential dread" like a cheerful alien bouncer.',
             source: 'Military interviews and memoirs',
             location: {
               name: 'Cheyenne Mountain Complex',
@@ -151,11 +159,82 @@ export const colorado_springs: CityData = {
             },
           },
           {
+            id: 'cos-curiosity-11',
+            type: 'curiosity',
+            category: 'history',
+            title: 'The "Bone Wars" scientist had himself buried with his bones',
+            body: 'In the 1870s-80s, rival paleontologists O.C. Marsh and Edward Drinker Cope waged the "Bone Wars"—a bitter, decades-long feud to discover dinosaur species. Garden of the Gods was a key battleground. Their teams sabotaged each other\'s digs, bribed workers, and destroyed fossils to prevent the other from publishing first. Cope was so competitive that when he died, he had himself buried with his skeleton collection so Marsh couldn\'t measure his skull. That\'s commitment to a grudge.',
+            year: '1877',
+            source: 'American Museum of Natural History',
+            location: {
+              name: 'Garden of the Gods',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-5',
+            type: 'curiosity',
+            category: 'legend',
+            title: 'An elephant caddied at the Broadmoor (then got taxidermied)',
+            body: 'In the 1930s, Tessie the elephant was the Broadmoor resort\'s mascot. She reportedly carried golf bags for guests and appeared at events, because nothing says "luxury mountain resort" like a pachyderm caddy. When she died, her hide was preserved and mounted in the resort for decades. The tradition of eccentric animal mascots continued until the 1970s, when someone finally asked, "Why?"',
+            year: '1930s',
+            source: 'Broadmoor Hotel archives',
+            location: {
+              name: 'The Broadmoor',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'cos-curiosity-9',
+            type: 'curiosity',
+            category: 'science',
+            title: 'Congress called this chapel "fighter jets nose-diving"',
+            body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design—17 aluminum-clad steel spires soaring 150 feet skyward—outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
+            year: '1962',
+            images: [
+              {
+                src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Exterior-2023.jpg',
+                alt: 'U.S. Air Force Academy Cadet Chapel with 17 aluminum spires against blue sky',
+              },
+              {
+                src: 'https://media.defense.gov/2019/May/16/2002134890/825/780/0/190516-F-ZZ999-1001.JPG',
+                alt: 'Interior of Air Force Academy Chapel showing dramatic stained glass',
+              },
+              {
+                src: '/colorado-springs/curiosities/chapel-1.png',
+                alt: 'Light streaming through stained glass at Air Force Academy Chapel',
+              },
+              {
+                src: '/colorado-springs/curiosities/chapel-2.png',
+                alt: 'Air Force Academy Chapel architectural details',
+              },
+            ],
+            sources: [
+              {
+                title: 'U.S. Air Force Academy: Chapel History',
+                url: 'https://www.usafa.edu/about/history-traditions/cadet-chapel/',
+              },
+              {
+                title: 'National Park Service: Air Force Academy National Historic Landmark',
+                url: 'https://www.nps.gov/places/us-air-force-academy-cadet-area.htm',
+              },
+            ],
+            location: {
+              name: 'US Air Force Academy',
+              stillExists: true,
+            },
+          },
+          {
             id: 'cos-curiosity-4',
             type: 'curiosity',
             category: 'history',
-            title: '"America the Beautiful" was written here on a mule',
-            body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view — "purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains — she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',
+            title: '"America the Beautiful" was written on muleback',
+            body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view—"purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains—she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',
             year: '1893',
             images: [
               {
@@ -187,126 +266,11 @@ export const colorado_springs: CityData = {
             },
           },
           {
-            id: 'cos-curiosity-5',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'An elephant once caddied at the Broadmoor',
-            body: 'In the 1930s, Tessie the elephant was a mascot at the Broadmoor resort. She reportedly carried golf bags for guests and appeared at events. When she died, her hide was preserved and mounted in the resort for decades. The tradition of eccentric animal mascots continued until the 1970s.',
-            year: '1930s',
-            source: 'Broadmoor Hotel archives',
-            location: {
-              name: 'The Broadmoor',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'cos-curiosity-6',
-            type: 'curiosity',
-            category: 'underground',
-            title: 'Gold smugglers used secret tunnels in Cripple Creek',
-            body: 'During the 1890s gold rush, "highgraders"—miners who stole ore—used tunnels to smuggle gold out of Cripple Creek mines. Some tunnels connected to businesses in town. The practice was so common that mines eventually required workers to change into company-provided clothes to prevent theft.',
-            year: '1890s',
-            source: 'Cripple Creek District Museum',
-            location: {
-              name: 'Cripple Creek',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-7',
-            type: 'curiosity',
-            category: 'architecture',
-            title: 'The highest cog railway in America rebuilt itself',
-            body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure needed more than repairs — it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that work at 14,000 feet. Every tie, rail, and switch was replaced. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles of track with grades up to 24%. Round-trip takes about 3 hours and offers one of the most spectacular train rides in America.',
-            year: '2021',
-            images: [
-              {
-                src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Cog-Railway-Train-Summit.jpg',
-                alt: 'New Pikes Peak Cog Railway train at summit with panoramic windows',
-              },
-              {
-                src: 'https://www.thedenverchannel.com/homepage-showcase/pikes-peak-cog-railway-historic-photo-1891.jpg',
-                alt: 'Historic 1891 Pikes Peak Cog Railway original train',
-              },
-              {
-                src: '',
-                alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
-              },
-            ],
-            sources: [
-              {
-                title: 'Pikes Peak Cog Railway Official Site',
-                url: 'https://www.cograilway.com/',
-              },
-              {
-                title: 'Railway Age: Pikes Peak Cog Railway Reopens After $100M Rebuild',
-                url: 'https://www.railwayage.com/passenger/pikes-peak-cog-railway-returns/',
-              },
-            ],
-            location: {
-              name: 'Manitou Springs to Pikes Peak summit',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-8',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Colorado Springs is the "Evangelical Vatican"',
-            body: 'Focus on the Family\'s 81-acre campus employs about 700 people. Combined with New Life Church, The Navigators, Young Life headquarters, and dozens of other organizations, Colorado Springs houses more evangelical Christian ministries than perhaps any other American city. Local politics reflect this: the city often votes differently from Denver.',
-            source: 'Pew Research Center',
-            location: {
-              name: 'Colorado Springs',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-9',
-            type: 'curiosity',
-            category: 'science',
-            title: 'The Air Force Academy chapel almost wasn\'t built',
-            body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design — 17 aluminum-clad steel spires soaring 150 feet skyward — outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
-            year: '1962',
-            images: [
-              {
-                src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Exterior-2023.jpg',
-                alt: 'U.S. Air Force Academy Cadet Chapel with 17 aluminum spires against blue sky',
-              },
-              {
-                src: 'https://media.defense.gov/2019/May/16/2002134890/825/780/0/190516-F-ZZ999-1001.JPG',
-                alt: 'Interior of Air Force Academy Chapel showing dramatic stained glass',
-              },
-              {
-                src: '',
-                alt: 'Light streaming through stained glass at Air Force Academy Chapel',
-              },
-            ],
-            sources: [
-              {
-                title: 'U.S. Air Force Academy: Chapel History',
-                url: 'https://www.usafa.edu/about/history-traditions/cadet-chapel/',
-              },
-              {
-                title: 'National Park Service: Air Force Academy National Historic Landmark',
-                url: 'https://www.nps.gov/places/us-air-force-academy-cadet-area.htm',
-              },
-            ],
-            location: {
-              name: 'US Air Force Academy',
-              stillExists: true,
-            },
-          },
-          {
             id: 'cos-curiosity-10',
             type: 'curiosity',
             category: 'nature',
-            title: 'Each of Manitou\'s springs tastes completely different',
-            body: 'Manitou Springs has eight public mineral springs scattered throughout town, each bubbling with a unique combination of minerals that give them dramatically different tastes. The Navajo Spring is effervescent and slightly salty. The Iron Spring tastes metallic and rusty (it contains actual dissolved iron). The Shoshone is sulfurous. Some are sweet, others bitter, some fizzy with natural carbonation from deep underground CO2. The Ute people considered these springs sacred healing waters and traveled here for centuries. When William Jackson Palmer founded Colorado Springs in 1871, he marketed neighboring Manitou Springs as a health resort, building grand hotels to house tuberculosis patients seeking the "curative waters." Visitors would "take the waters" by drinking from each spring, believing the minerals healed various ailments. You can still taste all eight for free by following the self-guided Mineral Springs Walking Tour.',
+            title: 'Manitou\'s eight springs taste wildly different',
+            body: 'Manitou Springs has eight public mineral springs scattered throughout town, each bubbling with a unique combination of minerals that give them dramatically different tastes. The Navajo Spring is effervescent and slightly salty. The Iron Spring tastes metallic and rusty (it contains actual dissolved iron). The Shoshone is sulfurous. Some are sweet, others bitter, some fizzy with natural carbonation from deep underground CO2. The Ute people considered these springs sacred healing waters and traveled here for centuries. When William Jackson Palmer founded Colorado Springs in 1871, he marketed neighboring Manitou Springs as a health resort, building grand hotels to house tuberculosis patients seeking the "curative waters." Visitors would "take the waters" by drinking from each spring, believing the minerals healed various ailments. You can still taste all eight for free by following the self-guided Mineral Springs Walking Tour. Fair warning: the Iron Spring tastes like pennies.',
             year: '1870s',
             images: [
               {
@@ -338,80 +302,55 @@ export const colorado_springs: CityData = {
             },
           },
           {
-            id: 'cos-curiosity-11',
+            id: 'cos-curiosity-2',
             type: 'curiosity',
-            category: 'history',
-            title: 'The "Bone Wars" raged through Garden of the Gods',
-            body: 'In the 1870s-80s, rival paleontologists O.C. Marsh and Edward Drinker Cope conducted the "Bone Wars"—a bitter feud to discover dinosaur species. Garden of the Gods was a key battleground. Their teams sometimes sabotaged each other\'s digs. Cope was so competitive he had himself buried with his bones so Marsh couldn\'t measure his skull.',
-            year: '1877',
-            source: 'American Museum of Natural History',
-            location: {
-              name: 'Garden of the Gods',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-12',
-            type: 'curiosity',
-            category: 'architecture',
-            title: 'Glen Eyrie\'s castle was rebuilt three times',
-            body: 'City founder William Jackson Palmer built his wife a home in 1871, then kept expanding it into a 67-room Tudor-style castle until his death in 1909. He rebuilt it twice—once after a fire, once because his wife wanted changes. Today it\'s owned by The Navigators, a Christian organization, and visitors can tour or stay overnight.',
-            year: '1909',
-            source: 'Glen Eyrie Castle',
-            location: {
-              name: 'Glen Eyrie',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-13',
-            type: 'curiosity',
-            category: 'science',
-            title: 'Olympic athletes train at altitude on purpose',
-            body: 'The U.S. Olympic & Paralympic Training Center chose Colorado Springs specifically for its 6,035-foot elevation. Training at altitude increases red blood cell production, improving oxygen delivery when athletes compete at lower elevations. The 35-acre complex has produced hundreds of Olympic medalists.',
-            image: {
-              src: '',
-              alt: 'Olympic training facility',
-            },
-            source: 'United States Olympic Committee',
-            location: {
-              name: 'U.S. Olympic Training Center',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-14',
-            type: 'curiosity',
-            category: 'nature',
-            title: 'Garden of the Gods was free because of one condition',
-            body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission — not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires — all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
-            year: '1909',
+            category: 'culture',
+            title: 'NORAD Tracks Santa because Sears printed the wrong number',
+            body: 'On December 24, 1955, a Sears department store in Colorado Springs ran a newspaper ad inviting children to call Santa directly. But the phone number was misprinted—it connected to the Continental Air Defense Command (CONAD), NORAD\'s predecessor, at what\'s now Peterson Space Force Base. Colonel Harry Shoup, the officer on duty that night, was initially confused but quickly played along, checking his "radar" and giving children Santa\'s location. His staff continued answering calls all night. The tradition stuck. Today, NORAD Tracks Santa is a massive operation: over 1,500 volunteers answer calls, emails, and social media messages from more than 150 countries. The website receives millions of visitors every Christmas Eve. What started as a phone typo became one of the military\'s most beloved public relations traditions.',
+            year: '1955',
             images: [
               {
-                src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Balanced-Rock.jpg',
-                alt: 'Balanced Rock formation at Garden of the Gods with Pikes Peak in background',
+                src: 'https://www.noradsanta.org/storage/images/2022/norad-tracks-santa-operations-center.jpg',
+                alt: 'NORAD Tracks Santa operations center with volunteers answering phones',
               },
               {
-                src: 'https://www.springsgov.com/files/ShareX/Parks/GardenoftheGods/Kissing-Camels-Formation.jpg',
-                alt: 'Kissing Camels rock formation at Garden of the Gods',
+                src: 'https://media.defense.gov/2021/Dec/23/2002912458/825/780/0/211223-F-ZZ999-001.JPG',
+                alt: 'NORAD volunteers tracking Santa on Christmas Eve at Peterson Space Force Base',
               },
               {
-                src: '',
-                alt: 'Cathedral Spires at sunrise, Garden of the Gods',
+                src: '/colorado-springs/curiosities/santa-1.png',
+                alt: 'Original 1955 Sears newspaper ad with misprinted phone number that started NORAD Tracks Santa',
+              },
+              {
+                src: '/colorado-springs/curiosities/santa-2.png',
+                alt: 'NORAD Santa tracking operations during Christmas Eve',
               },
             ],
             sources: [
               {
-                title: 'Garden of the Gods Official Site',
-                url: 'https://gardenofgods.com/',
+                title: 'NORAD Tracks Santa Official History',
+                url: 'https://www.noradsanta.org/en/about',
               },
               {
-                title: 'National Natural Landmark: Garden of the Gods',
-                url: 'https://www.nps.gov/subjects/nnlandmarks/site.htm?Site=GAGO-CO',
+                title: 'Smithsonian: How a Typo Created NORAD Tracks Santa',
+                url: 'https://www.smithsonianmag.com/history/how-norad-tracks-santa-180961342/',
               },
             ],
             location: {
-              name: 'Garden of the Gods',
+              name: 'Peterson Space Force Base / Cheyenne Mountain',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-6',
+            type: 'curiosity',
+            category: 'underground',
+            title: 'Gold smugglers built an underground economy',
+            body: 'During the 1890s Cripple Creek gold rush, "highgraders"—miners who stole ore—used secret tunnels to smuggle gold out of mines. Some tunnels connected directly to businesses in town, creating an entire underground economy. The practice became so common that mines eventually required workers to change into company-provided clothes before and after shifts to prevent theft. Strip searches were routine. Despite these measures, highgrading continued for decades, with some estimates suggesting millions of dollars in gold disappeared into the tunnels.',
+            year: '1890s',
+            source: 'Cripple Creek District Museum',
+            location: {
+              name: 'Cripple Creek',
               stillExists: true,
             },
           },
@@ -419,12 +358,91 @@ export const colorado_springs: CityData = {
             id: 'cos-curiosity-15',
             type: 'curiosity',
             category: 'legend',
-            title: 'The Manitou Incline was never meant for hiking',
-            body: 'The Manitou Incline—2,744 railroad ties climbing 2,000 vertical feet in less than a mile—was built in 1907 to haul pipes up Pikes Peak. When the railway closed, locals started climbing it illegally. The city finally legitimized it in 2013. It gains elevation faster than almost any trail in America, with grades exceeding 68%.',
+            title: 'The Incline was built for pipes, not people',
+            body: 'The Manitou Incline—2,744 railroad ties climbing 2,000 vertical feet in less than a mile—was built in 1907 to haul pipes and materials up Pikes Peak for a hydroelectric project. When the railway closed decades later, locals started climbing it illegally, treating the abandoned infrastructure as an extreme workout. The city tried to stop them. They failed. By 2013, so many people were trespassing that the city gave up and legitimized it. Now it\'s a beloved masochistic tradition. It gains elevation faster than almost any trail in America, with grades exceeding 68%. Your legs will hate you.',
             year: '1907',
             source: 'City of Manitou Springs',
             location: {
               name: 'Manitou Incline',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-13',
+            type: 'curiosity',
+            category: 'science',
+            title: 'Olympic athletes train here to suffer better',
+            body: 'The U.S. Olympic & Paralympic Training Center chose Colorado Springs specifically for its 6,035-foot elevation. The thin air means less oxygen, which forces your body to produce more red blood cells to compensate. When athletes compete at lower elevations, their oxygen-rich blood gives them an edge. It\'s legal doping via geography. The 35-acre complex has produced hundreds of Olympic medalists who all willingly came here to make breathing harder.',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/olympics.png',
+                alt: 'Olympic training facility in Colorado Springs',
+              },
+            ],
+            source: 'United States Olympic Committee',
+            location: {
+              name: 'U.S. Olympic Training Center',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-7',
+            type: 'curiosity',
+            category: 'architecture',
+            title: 'The cog railway got a $100 million do-over',
+            body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (yes, of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure was beyond repair—it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. Every tie, rail, and switch was replaced. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that actually work at 14,000 feet. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles with grades up to 24%. The round-trip takes about 3 hours and costs more than your gym membership.',
+            year: '2021',
+            images: [
+              {
+                src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Cog-Railway-Train-Summit.jpg',
+                alt: 'New Pikes Peak Cog Railway train at summit with panoramic windows',
+              },
+              {
+                src: 'https://www.thedenverchannel.com/homepage-showcase/pikes-peak-cog-railway-historic-photo-1891.jpg',
+                alt: 'Historic 1891 Pikes Peak Cog Railway original train',
+              },
+              {
+                src: '/colorado-springs/curiosities/cog.png',
+                alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
+              },
+            ],
+            sources: [
+              {
+                title: 'Pikes Peak Cog Railway Official Site',
+                url: 'https://www.cograilway.com/',
+              },
+              {
+                title: 'Railway Age: Pikes Peak Cog Railway Reopens After $100M Rebuild',
+                url: 'https://www.railwayage.com/passenger/pikes-peak-cog-railway-returns/',
+              },
+            ],
+            location: {
+              name: 'Manitou Springs to Pikes Peak summit',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-8',
+            type: 'curiosity',
+            category: 'culture',
+            title: 'They call it the "Evangelical Vatican"',
+            body: 'Focus on the Family\'s 81-acre campus employs about 700 people. Combined with New Life Church, The Navigators, Young Life headquarters, and dozens of other evangelical Christian organizations, Colorado Springs houses more religious ministries than perhaps any other American city. This concentration of evangelical power has earned it the nickname "Evangelical Vatican." Local politics reflect this reality: the city often votes dramatically differently from Denver, just 70 miles north. The influence is impossible to miss.',
+            source: 'Pew Research Center',
+            location: {
+              name: 'Colorado Springs',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'cos-curiosity-12',
+            type: 'curiosity',
+            category: 'architecture',
+            title: 'The city founder rebuilt his castle twice',
+            body: 'William Jackson Palmer, Colorado Springs\' founder, built his wife a home in 1871, then kept expanding it into a 67-room Tudor-style castle until his death in 1909. He rebuilt it twice—once after a fire, once because his wife requested changes. The man founded an entire city but couldn\'t say no to home renovations. Today it\'s owned by The Navigators, a Christian organization. Visitors can tour the castle or stay overnight in rooms where Palmer probably argued about crown molding.',
+            year: '1909',
+            source: 'Glen Eyrie Castle',
+            location: {
+              name: 'Glen Eyrie',
               stillExists: true,
             },
           },
@@ -886,7 +904,7 @@ export const colorado_springs: CityData = {
         id: 'cos-best-bars',
         type: 'best-of',
         category: 'bars',
-        title: 'Best Bars',
+        title: 'Springs After Hours',
         intro: 'The drinking scene is better than the evangelical reputation suggests.',
         spots: [
           {
@@ -982,7 +1000,7 @@ export const colorado_springs: CityData = {
         id: 'cos-best-cafes',
         type: 'best-of',
         category: 'cafes',
-        title: 'Best Coffee',
+        title: 'High Altitude Caffeine',
         intro: 'The altitude makes coffee taste different. These spots make it taste good.',
         spots: [
           {
@@ -1013,7 +1031,7 @@ export const colorado_springs: CityData = {
             neighborhood: 'Downtown',
             vibe: 'Minimalist with excellent espresso',
             order: 'Cortado or flat white',
-            why: 'Precise technique and consistent quality',
+            why: 'Loyal Coffee treats espresso extraction like a science—precise temperatures, exact timing, the kind of obsessive attention to detail that separates good espresso from great espresso. The minimalist downtown space strips away distractions, and the baristas are genuinely knowledgeable. If you care about the craft behind your cortado, this is your spot.',
             address: '124 N Tejon St, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8354, lng: -104.8248 },
             price: '$$',
@@ -1027,7 +1045,7 @@ export const colorado_springs: CityData = {
             neighborhood: 'North End',
             vibe: 'Eclectic with live music and events',
             order: 'Whatever\'s in the pastry case',
-            why: 'More than coffee — it\'s a community space',
+            why: 'Jives is more than a coffee shop—it\'s a community hub where local musicians play, artists display work, and neighbors actually know each other. The vibe is wonderfully eclectic and unpretentious, the kind of place that feels like a friend\'s living room. Live music nights bring out regulars, and the pastry case is stocked by local bakeries. It\'s been a North End fixture for years.',
             address: '32 S Wahsatch Ave, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8322, lng: -104.8206 },
             price: '$',
@@ -1041,7 +1059,7 @@ export const colorado_springs: CityData = {
             neighborhood: 'Ivywild',
             vibe: 'Inside a converted school with Ivywild School food hall',
             order: 'Cold brew on a summer day',
-            why: 'The Ivywild School complex is worth exploring',
+            why: 'The Ivywild School complex itself is the attraction—a gorgeously renovated 1916 elementary school transformed into a food hall, brewery, and gathering space. Building Three Coffee sits within this adaptive reuse wonder, serving solid cold brew and espresso in a setting you won\'t find anywhere else. Explore the rest of the building after your coffee.',
             address: '1604 S Cascade Ave, Colorado Springs, CO 80905',
             coordinates: { lat: 38.8188, lng: -104.8253 },
             price: '$$',
@@ -1056,7 +1074,7 @@ export const colorado_springs: CityData = {
         id: 'cos-best-restaurants',
         type: 'best-of',
         category: 'restaurants',
-        title: 'Best Restaurants',
+        title: 'Pike\'s Peak Plates',
         intro: 'The dining scene punches above its weight, from classic Western to unexpected global.',
         spots: [
           {
@@ -1175,7 +1193,7 @@ export const colorado_springs: CityData = {
         id: 'cos-coffee-shops',
         type: 'best-of',
         category: 'coffee-shops',
-        title: 'Best Coffee Shops',
+        title: 'Peak Roasts',
         intro: 'The altitude makes coffee taste different — and these spots make it taste exceptional.',
         spots: [
           {
@@ -1436,351 +1454,16 @@ export const colorado_springs: CityData = {
         id: 'cos-dark-history',
         type: 'section',
         title: 'Shadows of Pikes Peak',
-        teaser: 'Violence beneath the postcard scenery',
+        teaser: 'Ax murders, military conspiracies, and the blood in America\'s playground',
         intro: 'Colorado Springs sits in the shadow of Pikes Peak, a city of military precision, evangelical fervor, and stark natural beauty. But the same mountains that draw tourists also hide crimes. The Rampart Range has witnessed murders, mysterious disappearances, and stray bullets falling from the sky. From serial killers to unsolved ax murders to wildfires that consumed neighborhoods, this city\'s dark history reveals the violence lurking beneath the postcard scenery.',
         items: [
           {
             id: 'cos-dark-1',
             type: 'dark-history',
-            category: 'cold-case',
-            year: '1911',
-            title: 'The 1911 Ax Murders — Six Dead in Two Houses',
-            body: 'On the morning of September 17, 1911, someone stole an ax from a yard, entered two homes on West Dale Street, and brutally murdered six people with it. The victims were Alice May Burnham (25) and her children Alice (6) and John (3), plus Henry Wayne (30), his wife Blanche (26), and their daughter Blanche (2). All were found in their beds, heads caved in. Despite a massive investigation, no one was ever charged. Retired investigator Dwight Haverkorn wrote a book, "Murder in the Shadow of Pikes Peak" (2024), arguing this was part of a railroad-riding serial killer\'s spree that claimed 25 victims across five states in 1911.',
-            verdict: 'Unsolved after 114 years. Tied for the deadliest mass murder in Colorado Springs history.',
-            location: {
-              name: 'West Dale Street',
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'book',
-                title: 'Murder in the Shadow of Pikes Peak',
-                author: 'Dwight Haverkorn',
-                isbn: '9781467157964',
-                year: '2024',
-                url: 'https://www.amazon.com/Murder-Shadow-Pikes-Peak-Haverkorn/dp/1467157961',
-              },
-              {
-                type: 'article',
-                title: 'The 1911 Colorado Springs Ax Murders',
-                publisher: 'Colorado Springs Gazette',
-                url: 'https://gazette.com/news/1911-ax-murders-colorado-springs/',
-              },
-              {
-                type: 'video',
-                title: '1911 Colorado Springs Ax Murders - Unsolved Mystery',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=1911AxMurders',
-              },
-              {
-                type: 'article',
-                title: 'Colorado\'s Oldest Unsolved Mass Murder',
-                publisher: 'Denver Post',
-                url: 'https://www.denverpost.com/1911-ax-murders-unsolved/',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/1911-old-street.jpg',
-                alt: 'Early 1900s residential street scene, representative of West Dale Street where the 1911 ax murders occurred',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/overview-pikes-peak-1.jpg',
-                alt: 'Historic view of Pikes Peak and Colorado Springs from the early 1900s era',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-2',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1991',
-            title: 'Heather Dawn Church — Taken from Her Brother',
-            body: 'On September 17, 1991, 13-year-old Heather Dawn Church was babysitting her younger brother at their Black Forest home when she was abducted. Despite extensive searches, her body wasn\'t found until September 16, 1993 — exactly two years later — when a transient camper discovered her remains on Rampart Range Road, 30 miles away. She had died from blunt force trauma. Three fingerprints on a window screen led police to Robert Charles Browne, who lived half a mile away. He was convicted in 1995 and later claimed to have killed 48 people across multiple states, though he\'s only been convicted of two murders. Heather\'s case was covered on True Crime Garage podcast.',
-            verdict: 'Robert Charles Browne sentenced to life without parole. He remains at Limon Correctional Facility.',
-            location: {
-              name: 'Black Forest / Rampart Range Road',
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'podcast',
-                title: 'The Murder of Heather Church',
-                show: 'True Crime Garage',
-                platform: 'Spotify',
-                url: 'https://truecrimegarage.com/heather-church',
-              },
-              {
-                type: 'article',
-                title: 'Heather Church Case',
-                publisher: 'El Paso County Sheriff',
-                url: 'https://www.epcsheriffsoffice.com/heather-church-case',
-              },
-              {
-                type: 'video',
-                title: 'Robert Charles Browne: The Serial Killer Who Killed Heather Church',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=HeatherChurch',
-              },
-              {
-                type: 'article',
-                title: 'Robert Browne: Colorado\'s Most Prolific Serial Killer',
-                publisher: 'Colorado Springs Gazette',
-                url: 'https://gazette.com/news/robert-browne-serial-killer/',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/heather-church-forest.jpg',
-                alt: 'Dense forest terrain in the Black Forest area north of Colorado Springs where Heather Church was abducted',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/heather-church-dirt-road.jpg',
-                alt: 'Remote dirt road through the forest, similar to Rampart Range Road where Heather Church\'s remains were discovered',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'cos-dark-3',
-            type: 'dark-history',
-            category: 'disaster',
-            year: '2012',
-            title: 'Waldo Canyon Fire — The Day the Mountain Burned',
-            body: 'On June 23, 2012, a wildfire ignited in Waldo Canyon west of Colorado Springs. Within days, it became a firestorm. On June 26, shifting winds drove the fire into Mountain Shadows and other northwest neighborhoods. Residents had minutes to evacuate as flames jumped Interstate 25. The fire destroyed 346 homes and killed two people, burning 18,247 acres total. Entire streets were reduced to foundations and chimneys.',
-            verdict: 'Two dead, 346 homes destroyed. The fire changed how Colorado Springs thinks about wildfire risk.',
-            location: {
-              name: 'Waldo Canyon / Mountain Shadows neighborhood',
-              coordinates: { lat: 38.8786, lng: -104.9147 },
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'documentary',
-                title: 'The Fireline: Wildfire in Colorado',
-                platform: 'Rocky Mountain PBS',
-                url: 'https://www.rmpbs.org/blogs/rocky-mountain-pbs/the-fireline/',
-              },
-              {
-                type: 'video',
-                title: 'In Our Own Backyard: Reflections on the Waldo Canyon Fire',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=WaldoCanyonFire',
-              },
-              {
-                type: 'podcast',
-                title: 'Remembering the Waldo Canyon Fire',
-                publisher: 'City of Colorado Springs',
-                url: 'https://coloradosprings.gov/podcast-waldo-canyon',
-              },
-              {
-                type: 'article',
-                title: 'Waldo Canyon Fire: 10 Years Later',
-                publisher: 'Colorado Springs Gazette',
-                url: 'https://gazette.com/news/waldo-canyon-fire-10-years/',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
-                alt: 'Charred forest landscape after the Waldo Canyon Fire devastated the area west of Colorado Springs',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-4',
-            type: 'dark-history',
-            category: 'disaster',
-            year: '2013',
-            title: 'Black Forest Fire — Colorado\'s Most Destructive',
-            body: 'One year after Waldo Canyon, another fire struck. On June 11, 2013, the Black Forest Fire began near Highway 83. Fueled by 100°F heat, gusty winds, and drought-dry forests, it became the most destructive fire in Colorado history at the time, burning 14,280 acres and destroying at least 509 homes. Marc and Robin Herklotz, a married couple, died attempting to evacuate. The fire was ruled human-caused but investigators never determined exactly how it started. The Marshall Fire in Boulder County (2021) later surpassed it in homes destroyed.',
-            verdict: 'Two dead, 509 homes destroyed. The most destructive wildfire in Colorado history until 2021.',
-            location: {
-              name: 'Black Forest',
-              coordinates: { lat: 39.0139, lng: -104.7036 },
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'article',
-                title: 'Black Forest Fire',
-                publisher: 'NASA Earth Observatory',
-                url: 'https://earthobservatory.nasa.gov/images/81301/black-forest-fire',
-              },
-              {
-                type: 'article',
-                title: 'Black Forest Fire',
-                publisher: 'Colorado Encyclopedia',
-                url: 'https://coloradoencyclopedia.org/article/black-forest-fire',
-              },
-              {
-                type: 'video',
-                title: 'Black Forest Fire: Colorado\'s Most Destructive Wildfire',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=BlackForestFire',
-              },
-              {
-                type: 'article',
-                title: 'Black Forest Fire Investigation',
-                publisher: 'El Paso County Sheriff',
-                url: 'https://www.epcsheriffsoffice.com/black-forest-fire-investigation',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
-                alt: 'Devastated forest landscape showing the aftermath of the Black Forest Fire, Colorado\'s most destructive wildfire until 2021',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-5',
-            type: 'dark-history',
-            category: 'unsolved',
-            year: '2004',
-            title: 'Tim Watkins — Shot While Mountain Biking',
-            body: 'On October 12, 2004, 60-year-old Tim Watkins went mountain biking on Limbaugh Canyon Trail in Palmer Lake. When he didn\'t return, friends searched and found his bike. Days later, searchers found his body buried in a shallow grave off the trail. He had been shot. The case stumped investigators. Watkins had no known enemies. The location — near Rampart Range — raised questions about whether the shooting was random or targeted.',
-            verdict: 'Unsolved. The Rampart Range keeps its secrets.',
-            location: {
-              name: 'Limbaugh Canyon Trail, Palmer Lake',
-              coordinates: { lat: 39.1175, lng: -104.9097 },
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'podcast',
-                title: 'Colorado Cold Case: Season 3 - Tim Watkins',
-                publisher: 'Colorado Springs Gazette',
-                url: 'https://gazette.com/podcasts/colorado-cold-case/tim-watkins',
-              },
-              {
-                type: 'article',
-                title: 'Tim Watkins Cold Case Investigation',
-                publisher: 'El Paso County Sheriff',
-                url: 'https://www.epcsheriffsoffice.com/coldcase/tim-watkins',
-              },
-              {
-                type: 'video',
-                title: 'Tim Watkins Murder Mystery - Colorado Unsolved',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=TimWatkins',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/mountain-biking-trail.jpg',
-                alt: 'Mountain biking trail through Colorado forest, similar to Limbaugh Canyon Trail where Tim Watkins was killed',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'cos-dark-6',
-            type: 'dark-history',
-            category: 'crime',
-            year: '2007',
-            title: 'New Life Church Shooting',
-            body: 'On December 9, 2007, Matthew Murray opened fire at a Youth With A Mission (YWAM) training center in Arvada, killing two and wounding two. That afternoon, he drove to New Life Church in Colorado Springs and opened fire in the parking lot, killing two more people. Jeanne Assam, a former police officer serving as a volunteer security guard, engaged Murray and shot him multiple times. Murray then killed himself. Assam\'s actions likely prevented a massacre — Murray carried over 1,000 rounds of ammunition. The incident changed how churches approach security nationwide.',
-            verdict: 'Four dead, including the shooter. Jeanne Assam was hailed as a hero.',
-            location: {
-              name: 'New Life Church, 11025 Voyager Pkwy',
-              coordinates: { lat: 38.9170, lng: -104.7572 },
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'article',
-                title: 'New Life Church Shooting',
-                publisher: 'Denver7',
-                url: 'https://www.thedenverchannel.com/news/new-life-church-shooting',
-              },
-              {
-                type: 'article',
-                title: 'Church Shooting Hero Describes Moment of Truth',
-                publisher: 'CNN',
-                url: 'https://www.cnn.com/2007/US/12/10/church.shooting/',
-              },
-              {
-                type: 'video',
-                title: 'New Life Church Shooting: How Jeanne Assam Stopped a Mass Shooter',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=NewLifeChurch',
-              },
-              {
-                type: 'article',
-                title: 'The New Life Shooting Changed Church Security',
-                publisher: 'Christianity Today',
-                url: 'https://www.christianitytoday.com/ct/2007/new-life-church-shooting.html',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/modern-church.jpg',
-                alt: 'Modern megachurch building, representative of New Life Church where the 2007 shooting occurred',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-7',
-            type: 'dark-history',
-            category: 'crime',
-            year: '2015',
-            title: 'Planned Parenthood Shooting',
-            body: 'On November 27, 2015, Robert Dear opened fire at a Planned Parenthood clinic, killing three people and wounding nine in a five-hour siege. The dead were University of Colorado police officer Garrett Swasey, Iraq War veteran Ke\'Arre Stewart, and mother Jennifer Markovsky. Dear surrendered after a standoff. He reportedly said "no more baby parts" after his arrest, referencing debunked videos targeting Planned Parenthood. Dear was found incompetent to stand trial and never prosecuted. He died in federal custody on November 22, 2025, five days before the tenth anniversary.',
-            verdict: 'Three dead, nine wounded. Dear died in custody before trial. The motive was ideological violence.',
-            location: {
-              name: 'Planned Parenthood, 3480 Centennial Blvd',
-              coordinates: { lat: 38.8550, lng: -104.7883 },
-              stillExists: true,
-            },
-            sources: [
-              {
-                type: 'documentary',
-                title: '10 Years Later: The Shooting at Planned Parenthood',
-                platform: 'KOAA',
-                url: 'https://www.koaa.com/news/planned-parenthood-shooting',
-              },
-              {
-                type: 'article',
-                title: 'Planned Parenthood Shooting Coverage',
-                publisher: 'Colorado Public Radio',
-                url: 'https://www.cpr.org/planned-parenthood-shooting/',
-              },
-              {
-                type: 'article',
-                title: 'The Planned Parenthood Attack',
-                publisher: 'The New York Times',
-                url: 'https://www.nytimes.com/topic/subject/planned-parenthood-shooting',
-              },
-              {
-                type: 'video',
-                title: 'Planned Parenthood Shooting: What Happened in Colorado Springs',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=PPShooting',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/colorado-springs/vigil-candles.jpg',
-                alt: 'Memorial vigil candles honoring the victims of the Planned Parenthood shooting',
-              },
-            ],
-          },
-          {
-            id: 'cos-dark-8',
-            type: 'dark-history',
             category: 'crime',
             year: '2022',
-            title: 'Club Q Shooting — Five Dead',
-            body: 'On November 19, 2022, just before midnight on Transgender Day of Remembrance, a gunman entered Club Q, an LGBTQ+ nightclub, and opened fire with an AR-15-style rifle. Five people were killed: Daniel Aston (28), Raymond Green Vance (22), Kelly Loving (40), Ashley Paugh (35), and Derrick Rump (38). Twenty-five others were wounded. The shooter was subdued by patrons, including U.S. Army veteran Richard Fierro, who tackled him and beat him with his own gun. The attack was one of the deadliest against the LGBTQ+ community in U.S. history.',
+            title: 'Club Q Shooting — Five Dead on Transgender Day of Remembrance',
+            body: 'Just before midnight on November 19, 2022—Transgender Day of Remembrance—a gunman entered Club Q with an AR-15-style rifle and opened fire. Five people were killed: Daniel Aston (28), Raymond Green Vance (22), Kelly Loving (40), Ashley Paugh (35), and Derrick Rump (38). Twenty-five others were wounded. The massacre ended when patrons fought back. U.S. Army veteran Richard Fierro tackled the shooter and beat him with his own gun while others pinned him down. It was one of the deadliest attacks on the LGBTQ+ community in American history, and it happened in a city known for its evangelical megachurches and military culture. The shooter pleaded guilty and received five consecutive life sentences plus 2,208 years.',
             verdict: 'Five dead, 25 wounded. The shooter pleaded guilty and received life sentences. Tied for deadliest mass killing in Colorado Springs history.',
             location: {
               name: 'Club Q, 3430 N Academy Blvd',
@@ -1831,12 +1514,12 @@ export const colorado_springs: CityData = {
             ],
           },
           {
-            id: 'cos-dark-9',
+            id: 'cos-dark-2',
             type: 'dark-history',
             category: 'mystery',
             year: '2015',
-            title: 'The Rampart Range Stray Bullet Death',
-            body: 'On July 4, 2015, Glenn Martin was sitting by a campfire with his family at Rainbow Falls in Pike National Forest when a stray bullet fell from the sky and struck him in the head. He died within minutes. The bullet likely came from someone shooting recreationally in the Rampart Range, where target shooting is common but regulations are sparse. Despite investigations, no shooter was ever identified.',
+            title: 'Death by Stray Bullet — The Sky Rained Lead on July 4th',
+            body: 'Glenn Martin was sitting by a campfire with his family at Rainbow Falls in Pike National Forest when physics became fatal. It was July 4th, 2015. Somewhere in the Rampart Range—a place where target shooting is as common as pine trees—someone fired a gun. The bullet arced through the air, followed gravity\'s cruel parabola, and fell from the sky directly onto Glenn\'s head. He died within minutes. Despite investigations, no shooter was ever identified. The Rampart Range has sparse regulations and endless hiding spots. The bullet could have traveled from anywhere within miles. It\'s a reminder that in the mountains, what goes up doesn\'t always come down where you\'d expect—or want.',
             verdict: 'Unsolved. The Rampart Range remains a place where bullets fall from nowhere.',
             location: {
               name: 'Rainbow Falls, Pike National Forest (Rampart Range)',
@@ -1871,12 +1554,347 @@ export const colorado_springs: CityData = {
             ],
           },
           {
+            id: 'cos-dark-ad-1',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'cos-dark-3',
+            type: 'dark-history',
+            category: 'cold-case',
+            year: '1911',
+            title: 'The 1911 Ax Murders — Six Dead in Two Houses, Zero Answers',
+            body: 'On the morning of September 17, 1911, someone stole an ax from a yard on West Dale Street, walked into two neighboring homes, and systematically murdered six people in their beds. The victims: Alice May Burnham (25) and her children Alice (6) and John (3), plus Henry Wayne (30), his wife Blanche (26), and their daughter Blanche (2). All found with their heads caved in. Despite a massive investigation, no one was ever charged. A century later, retired investigator Dwight Haverkorn published "Murder in the Shadow of Pikes Peak" (2024), arguing this was part of a railroad-riding serial killer\'s spree across five states—25 victims in 1911 alone. The theory is compelling. The silence from 1911 is louder.',
+            verdict: 'Unsolved after 114 years. Tied for the deadliest mass murder in Colorado Springs history.',
+            location: {
+              name: 'West Dale Street',
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'book',
+                title: 'Murder in the Shadow of Pikes Peak',
+                author: 'Dwight Haverkorn',
+                isbn: '9781467157964',
+                year: '2024',
+                url: 'https://www.amazon.com/Murder-Shadow-Pikes-Peak-Haverkorn/dp/1467157961',
+              },
+              {
+                type: 'article',
+                title: 'The 1911 Colorado Springs Ax Murders',
+                publisher: 'Colorado Springs Gazette',
+                url: 'https://gazette.com/news/1911-ax-murders-colorado-springs/',
+              },
+              {
+                type: 'video',
+                title: '1911 Colorado Springs Ax Murders - Unsolved Mystery',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=1911AxMurders',
+              },
+              {
+                type: 'article',
+                title: 'Colorado\'s Oldest Unsolved Mass Murder',
+                publisher: 'Denver Post',
+                url: 'https://www.denverpost.com/1911-ax-murders-unsolved/',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/1911-old-street.jpg',
+                alt: 'Early 1900s residential street scene, representative of West Dale Street where the 1911 ax murders occurred',
+              },
+              {
+                src: '/images/dark-history/colorado-springs/overview-pikes-peak-1.jpg',
+                alt: 'Historic view of Pikes Peak and Colorado Springs from the early 1900s era',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-4',
+            type: 'dark-history',
+            category: 'disaster',
+            year: '2012',
+            title: 'Waldo Canyon Fire — When the Mountain Jumped I-25',
+            body: 'On June 23, 2012, a wildfire ignited in Waldo Canyon west of Colorado Springs. Within days, it became a firestorm visible from space. On June 26, shifting winds turned the fire into a dragon. It roared down the mountain and jumped Interstate 25—flames literally leaping over six lanes of highway—into the Mountain Shadows neighborhood. Residents had minutes to evacuate. Some didn\'t make it out in time and sheltered in basements as their houses burned above them. The fire destroyed 346 homes and killed two people, burning 18,247 acres total. Entire streets were reduced to stone chimneys and melted cars. The smell of ash hung over the city for weeks.',
+            verdict: 'Two dead, 346 homes destroyed. The fire changed how Colorado Springs thinks about wildfire risk.',
+            location: {
+              name: 'Waldo Canyon / Mountain Shadows neighborhood',
+              coordinates: { lat: 38.8786, lng: -104.9147 },
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'documentary',
+                title: 'The Fireline: Wildfire in Colorado',
+                platform: 'Rocky Mountain PBS',
+                url: 'https://www.rmpbs.org/blogs/rocky-mountain-pbs/the-fireline/',
+              },
+              {
+                type: 'video',
+                title: 'In Our Own Backyard: Reflections on the Waldo Canyon Fire',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=WaldoCanyonFire',
+              },
+              {
+                type: 'podcast',
+                title: 'Remembering the Waldo Canyon Fire',
+                publisher: 'City of Colorado Springs',
+                url: 'https://coloradosprings.gov/podcast-waldo-canyon',
+              },
+              {
+                type: 'article',
+                title: 'Waldo Canyon Fire: 10 Years Later',
+                publisher: 'Colorado Springs Gazette',
+                url: 'https://gazette.com/news/waldo-canyon-fire-10-years/',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
+                alt: 'Charred forest landscape after the Waldo Canyon Fire devastated the area west of Colorado Springs',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-5',
+            type: 'dark-history',
+            category: 'crime',
+            year: '1991',
+            title: 'Heather Dawn Church — Found Exactly Two Years Later',
+            body: 'On September 17, 1991, 13-year-old Heather Dawn Church was babysitting her younger brother at their Black Forest home when she vanished. Despite massive searches, her body wasn\'t found until September 16, 1993—exactly two years later, one day shy of the anniversary—when a transient camper discovered her remains on Rampart Range Road, 30 miles away. She had died from blunt force trauma. Three fingerprints on a window screen led police to Robert Charles Browne, who lived half a mile away. He was convicted in 1995. Later, in a bizarre jailhouse confession, Browne claimed to have killed 48 people across multiple states. He\'s only been convicted of two murders. He remains at Limon Correctional Facility, serving life without parole.',
+            verdict: 'Robert Charles Browne sentenced to life without parole. He remains at Limon Correctional Facility.',
+            location: {
+              name: 'Black Forest / Rampart Range Road',
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'podcast',
+                title: 'The Murder of Heather Church',
+                show: 'True Crime Garage',
+                platform: 'Spotify',
+                url: 'https://truecrimegarage.com/heather-church',
+              },
+              {
+                type: 'article',
+                title: 'Heather Church Case',
+                publisher: 'El Paso County Sheriff',
+                url: 'https://www.epcsheriffsoffice.com/heather-church-case',
+              },
+              {
+                type: 'video',
+                title: 'Robert Charles Browne: The Serial Killer Who Killed Heather Church',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=HeatherChurch',
+              },
+              {
+                type: 'article',
+                title: 'Robert Browne: Colorado\'s Most Prolific Serial Killer',
+                publisher: 'Colorado Springs Gazette',
+                url: 'https://gazette.com/news/robert-browne-serial-killer/',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/heather-church-forest.jpg',
+                alt: 'Dense forest terrain in the Black Forest area north of Colorado Springs where Heather Church was abducted',
+              },
+              {
+                src: '/images/dark-history/colorado-springs/heather-church-dirt-road.jpg',
+                alt: 'Remote dirt road through the forest, similar to Rampart Range Road where Heather Church\'s remains were discovered',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'cos-dark-6',
+            type: 'dark-history',
+            category: 'crime',
+            year: '2015',
+            title: 'Planned Parenthood Shooting — "No More Baby Parts"',
+            body: 'On November 27, 2015, Robert Dear walked into a Planned Parenthood clinic with a rifle and opened fire. For five hours, he held police at bay in a standoff that ended with three dead and nine wounded. The victims: University of Colorado police officer Garrett Swasey, Iraq War veteran Ke\'Arre Stewart, and mother Jennifer Markovsky. After his arrest, Dear reportedly said "no more baby parts"—referencing debunked propaganda videos that had circulated targeting Planned Parenthood. He was found incompetent to stand trial and never prosecuted. On November 22, 2025, five days before the tenth anniversary of the attack, Dear died in federal custody. The violence was ideological. The justice was never delivered.',
+            verdict: 'Three dead, nine wounded. Dear died in custody before trial. The motive was ideological violence.',
+            location: {
+              name: 'Planned Parenthood, 3480 Centennial Blvd',
+              coordinates: { lat: 38.8550, lng: -104.7883 },
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'documentary',
+                title: '10 Years Later: The Shooting at Planned Parenthood',
+                platform: 'KOAA',
+                url: 'https://www.koaa.com/news/planned-parenthood-shooting',
+              },
+              {
+                type: 'article',
+                title: 'Planned Parenthood Shooting Coverage',
+                publisher: 'Colorado Public Radio',
+                url: 'https://www.cpr.org/planned-parenthood-shooting/',
+              },
+              {
+                type: 'article',
+                title: 'The Planned Parenthood Attack',
+                publisher: 'The New York Times',
+                url: 'https://www.nytimes.com/topic/subject/planned-parenthood-shooting',
+              },
+              {
+                type: 'video',
+                title: 'Planned Parenthood Shooting: What Happened in Colorado Springs',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=PPShooting',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/vigil-candles.jpg',
+                alt: 'Memorial vigil candles honoring the victims of the Planned Parenthood shooting',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-7',
+            type: 'dark-history',
+            category: 'disaster',
+            year: '2013',
+            title: 'Black Forest Fire — 509 Homes Gone in Four Days',
+            body: 'One year after Waldo Canyon, the mountains burned again. On June 11, 2013, the Black Forest Fire began near Highway 83. Fueled by 100°F heat, gusty winds, and drought-dry pines, it became the most destructive fire in Colorado history—14,280 acres burned, at least 509 homes destroyed. Marc and Robin Herklotz, a married couple, died attempting to evacuate their property. The fire was ruled human-caused, but investigators never determined exactly how it started. For years, it held the grim record as Colorado\'s most destructive wildfire. Then the Marshall Fire in Boulder County (2021) burned 1,084 homes in a single afternoon and took the title. Black Forest is now second-worst. Cold comfort.',
+            verdict: 'Two dead, 509 homes destroyed. The most destructive wildfire in Colorado history until 2021.',
+            location: {
+              name: 'Black Forest',
+              coordinates: { lat: 39.0139, lng: -104.7036 },
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'Black Forest Fire',
+                publisher: 'NASA Earth Observatory',
+                url: 'https://earthobservatory.nasa.gov/images/81301/black-forest-fire',
+              },
+              {
+                type: 'article',
+                title: 'Black Forest Fire',
+                publisher: 'Colorado Encyclopedia',
+                url: 'https://coloradoencyclopedia.org/article/black-forest-fire',
+              },
+              {
+                type: 'video',
+                title: 'Black Forest Fire: Colorado\'s Most Destructive Wildfire',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=BlackForestFire',
+              },
+              {
+                type: 'article',
+                title: 'Black Forest Fire Investigation',
+                publisher: 'El Paso County Sheriff',
+                url: 'https://www.epcsheriffsoffice.com/black-forest-fire-investigation',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
+                alt: 'Devastated forest landscape showing the aftermath of the Black Forest Fire, Colorado\'s most destructive wildfire until 2021',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-8',
+            type: 'dark-history',
+            category: 'unsolved',
+            year: '2004',
+            title: 'Tim Watkins — Shot on the Trail, Buried in a Shallow Grave',
+            body: 'On October 12, 2004, 60-year-old Tim Watkins went mountain biking on Limbaugh Canyon Trail in Palmer Lake. When he didn\'t return, friends went looking and found his bike—abandoned, undamaged. Days later, searchers found his body buried in a shallow grave just off the trail. He had been shot. The case stumped investigators. Watkins had no known enemies, no debts, no drama. The location—near Rampart Range, a place already stained with violence—raised the obvious question: was this random or targeted? Nearly twenty years later, no one has been charged. The trail is still there. The answer is not.',
+            verdict: 'Unsolved. The Rampart Range keeps its secrets.',
+            location: {
+              name: 'Limbaugh Canyon Trail, Palmer Lake',
+              coordinates: { lat: 39.1175, lng: -104.9097 },
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'podcast',
+                title: 'Colorado Cold Case: Season 3 - Tim Watkins',
+                publisher: 'Colorado Springs Gazette',
+                url: 'https://gazette.com/podcasts/colorado-cold-case/tim-watkins',
+              },
+              {
+                type: 'article',
+                title: 'Tim Watkins Cold Case Investigation',
+                publisher: 'El Paso County Sheriff',
+                url: 'https://www.epcsheriffsoffice.com/coldcase/tim-watkins',
+              },
+              {
+                type: 'video',
+                title: 'Tim Watkins Murder Mystery - Colorado Unsolved',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=TimWatkins',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/mountain-biking-trail.jpg',
+                alt: 'Mountain biking trail through Colorado forest, similar to Limbaugh Canyon Trail where Tim Watkins was killed',
+              },
+            ],
+          },
+          {
+            id: 'cos-dark-9',
+            type: 'dark-history',
+            category: 'crime',
+            year: '2007',
+            title: 'New Life Church Shooting — Stopped by a Volunteer with a Gun',
+            body: 'On December 9, 2007, Matthew Murray went on a killing spree across Colorado. He started at a Youth With A Mission (YWAM) training center in Arvada, killing two and wounding two. That afternoon, he drove 70 miles to New Life Church in Colorado Springs and opened fire in the parking lot, killing two more. Then Jeanne Assam—a former police officer serving as a volunteer security guard—engaged Murray and shot him multiple times. He died by suicide moments later. Assam\'s actions likely prevented a massacre. Murray was carrying over 1,000 rounds of ammunition. The incident changed how churches across America approach security. It also became a political flashpoint: Was this a "good guy with a gun" scenario, or proof that armed civilians in houses of worship is dystopian?',
+            verdict: 'Four dead, including the shooter. Jeanne Assam was hailed as a hero.',
+            location: {
+              name: 'New Life Church, 11025 Voyager Pkwy',
+              coordinates: { lat: 38.9170, lng: -104.7572 },
+              stillExists: true,
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'New Life Church Shooting',
+                publisher: 'Denver7',
+                url: 'https://www.thedenverchannel.com/news/new-life-church-shooting',
+              },
+              {
+                type: 'article',
+                title: 'Church Shooting Hero Describes Moment of Truth',
+                publisher: 'CNN',
+                url: 'https://www.cnn.com/2007/US/12/10/church.shooting/',
+              },
+              {
+                type: 'video',
+                title: 'New Life Church Shooting: How Jeanne Assam Stopped a Mass Shooter',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=NewLifeChurch',
+              },
+              {
+                type: 'article',
+                title: 'The New Life Shooting Changed Church Security',
+                publisher: 'Christianity Today',
+                url: 'https://www.christianitytoday.com/ct/2007/new-life-church-shooting.html',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/colorado-springs/modern-church.jpg',
+                alt: 'Modern megachurch building, representative of New Life Church where the 2007 shooting occurred',
+              },
+            ],
+          },
+          {
             id: 'cos-dark-10',
             type: 'dark-history',
             category: 'haunting',
             year: '1890s–present',
-            title: 'Evergreen Cemetery — The Chapel of Shadows',
-            body: 'Evergreen Cemetery, established in 1871, is one of Colorado\'s oldest and most haunted burial grounds. More than 90,000 people are buried across its 220 acres. The historic chapel is the epicenter of paranormal activity — visitors report strange noises, unexplained sounds, and dark figures near the casket-lifting device and staircase. During nighttime tours, guests have photographed a flying figure hovering over tombstones — described as a five-foot cat-like entity that doesn\'t touch the ground. The cemetery was featured on the Biography Channel\'s "My Ghost Story." Even cemetery employees admit the place feels eerie, especially after dark.',
+            title: 'Evergreen Cemetery — Where 90,000 Dead Outnumber the Living',
+            body: 'Evergreen Cemetery, established in 1871, is one of Colorado\'s oldest burial grounds—and allegedly its most haunted. More than 90,000 people are buried across 220 acres. That\'s roughly half the population of modern Colorado Springs, except they\'re all underground. The historic chapel is the epicenter of paranormal activity: strange noises, dark figures near the casket-lifting device, footsteps on the staircase when no one\'s there. During nighttime tours, guests have photographed what they describe as a five-foot cat-like entity hovering over tombstones—floating, not walking. The cemetery was featured on the Biography Channel\'s "My Ghost Story." Even cemetery employees admit the place feels wrong after dark. Whether you believe in ghosts or not, 90,000 dead bodies in one location does create a certain atmosphere.',
             verdict: 'The cemetery is open to the public. The ghosts don\'t follow a schedule.',
             location: {
               name: 'Evergreen Cemetery, 1005 S Hancock Expy',

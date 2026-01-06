@@ -5,7 +5,7 @@ export const minneapolis_history: Record<string, History> = {
       slug: 'meeting-of-waters',
       citySlug: 'minneapolis',
       title: 'Meeting of Waters',
-      subtitle: 'A city built on confluence, power, and the quiet work of survival',
+      subtitle: 'Flour mills, frozen rivers, and the particular satisfaction of surviving January',
       author: 'Curious City',
       publishedAt: '2024-12-15',
       blocks: [
@@ -53,7 +53,7 @@ export const minneapolis_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'The Test of Winter',
+          content: 'Eleven Miles of Skyway',
         },
         {
           id: 'p6',

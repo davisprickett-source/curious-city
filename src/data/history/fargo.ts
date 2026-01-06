@@ -5,7 +5,7 @@ export const fargo_history: Record<string, History> = {
       slug: 'on-the-bed-of-a-vanished-lake',
       citySlug: 'fargo',
       title: 'On the Bed of a Vanished Lake',
-      subtitle: 'Flat horizons, frozen engines, and the insistence on staying',
+      subtitle: 'Forty below, biblical floods, and the stubborn midwestern insistence that this is a good place to live',
       author: 'Curious City',
       publishedAt: '2024-12-22',
       blocks: [
@@ -53,7 +53,7 @@ export const fargo_history: Record<string, History> = {
         {
           id: 'sub2',
           type: 'subheading',
-          content: 'Growth on the Prairie',
+          content: 'More Than the Movie',
         },
         {
           id: 'p6',

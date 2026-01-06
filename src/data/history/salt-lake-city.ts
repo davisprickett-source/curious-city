@@ -5,7 +5,7 @@ export const salt_lake_city_history: Record<string, History> = {
       slug: 'zion-in-the-desert',
       citySlug: 'salt-lake-city',
       title: 'Zion in the Desert',
-      subtitle: 'A city built on prophecy, water, and the tension between faith and freedom',
+      subtitle: 'Temple spires, tech startups, and the question of whose place this is now',
       author: 'Curious City',
       publishedAt: '2024-12-21',
       blocks: [
@@ -28,7 +28,7 @@ export const salt_lake_city_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'The Church and the City',
+          content: 'The $100 Billion Institution',
         },
         {
           id: 'p3',

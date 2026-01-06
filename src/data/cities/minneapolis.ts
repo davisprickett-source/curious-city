@@ -89,40 +89,36 @@ export const minneapolis: CityData = {
           {
             id: 'curiosity-1',
             type: 'curiosity',
-            category: 'underground',
-            title: 'A 70-mile labyrinth of tunnels runs beneath the city',
-            body: 'Dating back to 1865, the Labyrinth is a massive tangle of telephone, gas, and trolley line tunnels so vast it has been compared to the Paris Catacombs. Most of it remains unexplored and largely forgotten. Century-old hydro power tunnels predate the Civil War in the St. Anthony Falls area. In 1992, a construction pile driver accidentally punched through one tunnel system, flooding basements across downtown. Many entrances have been walled off and completely lost to memory.\n\nThe Twin Cities feature several distinct underground systems: the massive Central City Stormwater Tunnels for drainage deep beneath downtown, underground skyway connections linking buildings like City Hall and the Federal Courthouse, and the University of Minnesota\'s "Gopher Way" utility tunnels connecting campus buildings. Historic sandstone caves, once used for mushroom farming, storage, and speakeasies during Prohibition (like Schieks Cave), have largely been sealed due to dangers including carbon monoxide and disorientation. Most tunnel access is restricted, though some underground skyway sections remain public.',
-            year: '1865',
+            category: 'history',
+            title: 'Minneapolis was explicitly fair game for America\'s most wanted gangsters',
+            body: 'During Prohibition, St. Paul operated under the "O\'Connor System" — a corrupt arrangement where gangsters like John Dillinger, Al Capone, Machine Gun Kelly, and Bonnie and Clyde could live peacefully in the city. The deal was simple: check in with the police chief, give him a cut, and commit no crimes within St. Paul city limits. Minneapolis, however, was explicitly excluded from this protection.\n\nThe result was predictable carnage. In 1932, more than 20% of all bank robberies in the entire United States occurred in Minnesota — most of them in Minneapolis. Gangsters lived comfortable lives across the river in St. Paul, then crossed over to rob Minneapolis banks before retreating to their sanctuary. When Dillinger was shot by FBI agents during a St. Paul shootout in 1934, he fled to his doctor\'s clinic in Minneapolis to hide and receive treatment. The arrangement lasted until federal pressure finally shut it down in the mid-1930s, but not before Minneapolis became America\'s most robbery-prone city.',
+            year: '1920s-1930s',
             sources: [
               {
-                title: 'Minnesota Historical Society: Underground Minneapolis',
-                url: 'https://www.mnhs.org/historycenter/activities/museum/underground-minneapolis',
+                title: 'Minnesota Historical Society',
+                url: 'https://www.mnhs.org/',
               },
               {
-                title: 'Star Tribune: Beneath the Streets',
-                url: 'https://www.startribune.com/minneapolis-underground-tunnels-history/564839012/',
+                title: 'Most Notorious Podcast: Gangsters in 1930s Minnesota',
+                url: 'https://www.mostnotorious.com/2022/12/13/gangsters-in-1930s-minnesota-with-paul-maccabee/',
               },
               {
-                title: 'Action Squad Urban Exploration',
-                url: 'http://www.actionsquad.org/index.html',
-              },
-              {
-                title: 'Exploring the Underground Tunnels of Minneapolis and St. Paul',
-                url: 'https://www.youtube.com/watch?v=45mo-n0CV38',
+                title: 'Star Tribune Curious Minnesota Podcast',
+                url: 'https://www.startribune.com/curious-minnesota-podcast/',
               },
             ],
-            location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
+            location: { name: 'Minneapolis & St. Paul', url: 'https://www.google.com/maps/place/Minneapolis,+MN/@44.9778,-93.2650,12z', stillExists: true },
             image: {
-              src: 'https://live.staticflickr.com/65535/53803633600_deccfba914_b.jpg',
-              alt: 'Underground tunnel labyrinth beneath the Twin Cities',
+              src: '/Minneapolis/Minneapolis Curiosities/gangsters.png',
+              alt: '1930s gangsters in Minnesota',
             },
           },
           {
             id: 'curiosity-2',
             type: 'curiosity',
             category: 'history',
-            title: 'The deadliest industrial disaster in city history was caused by flour dust',
-            body: 'On May 2, 1878, the Washburn A Mill — the largest flour mill in the world — exploded in a fireball heard ten miles away in St. Paul. The disaster killed 18 workers and destroyed six surrounding mills, wiping out a third of the city\'s milling capacity in an instant. The cause? Flour dust ignited by sparks from millstones running dry. The tragedy revolutionized milling safety worldwide and led to the invention of dust collectors. Today, the ruins house the Mill City Museum, which tells the story of Minneapolis\'s flour milling industry and the disaster that changed workplace safety forever.',
+            title: 'The world\'s largest flour mill exploded from dust ignition, killing 18',
+            body: 'On May 2, 1878, the Washburn A Mill — then the largest flour mill on Earth — detonated in a fireball heard ten miles away in St. Paul. The explosion killed 18 workers instantly and destroyed six surrounding mills, erasing a third of Minneapolis\'s milling capacity in seconds. The culprit was something almost comically mundane: flour dust.\n\nMillstones grinding dry had created sparks. Those sparks ignited suspended flour particles. The resulting explosion had the force of a bomb. The disaster revolutionized industrial safety worldwide and directly led to the invention of dust collection systems. It also prompted the first systematic study of combustible dust hazards — research that now protects workers in grain elevators, sawmills, and factories across the globe. The mill\'s ruins were eventually converted into the Mill City Museum, which tells the story of Minneapolis\'s flour empire and the disaster that changed workplace safety forever.',
             year: '1878',
             sources: [
               {
@@ -156,9 +152,276 @@ export const minneapolis: CityData = {
           {
             id: 'curiosity-3',
             type: 'curiosity',
+            category: 'culture',
+            title: 'Minnesota is the only state where kids play "Duck, Duck, Gray Duck"',
+            body: 'In 49 states, children play "Duck, Duck, Goose." In Minnesota, they play "Duck, Duck, Gray Duck" — and they will fight you about it. This isn\'t just a quirky name swap. In the Minnesota version, the person who\'s "it" calls out different adjectives before each duck ("green duck... spotted duck... sleeping duck... GRAY DUCK!"), adding a strategic deception element that Goose-playing states lack entirely.\n\nThe origin is genuinely mysterious. Leading theories trace it to Swedish immigrants who brought "Anka Anka Grå Anka" (literally "Duck Duck Gray Duck") to the Upper Midwest in the late 1800s. Others claim German roots. What\'s undisputed is Minnesota\'s absolute solitude on this issue — even neighboring Wisconsin plays Goose like civilized people.\n\nThe cultural divide has spawned academic research, viral maps, and legislative jokes. In 2019, the topic trended nationally when a linguistic map exposed Minnesota\'s isolation. MPR ran investigative segments. Minnesotans are famously passive-aggressive about most disagreements, but on Duck Duck Gray Duck, they\'re openly combative. Call it "Goose" at a backyard barbecue and you\'ll get corrected. Argue back and you\'ll get a lecture. This is the hill they\'ve chosen.',
+            sources: [
+              {
+                title: 'Minnesota folklore',
+                url: 'https://www.mnhs.org/',
+              },
+              {
+                title: 'Atlas Obscura: Duck Duck Gray Duck',
+                url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/duckduckgreyduck.png',
+              alt: 'Duck Duck Gray Duck game illustration',
+            },
+          },
+          {
+            id: 'curiosity-4',
+            type: 'curiosity',
+            category: 'invention',
+            title: 'The Honeycrisp apple was literally one year away from the compost heap',
+            body: 'In 1982, an experimental apple tree at the University of Minnesota — catalogued only as "MN 1711" — was scheduled for destruction. It had been in development for years and wasn\'t performing. A researcher named David Bedford gave it one final year to prove itself. That last-chance tree became the Honeycrisp, now Minnesota\'s official state fruit and one of the most commercially successful apples ever developed.\n\nThe Honeycrisp took 31 years from first cross-pollination to commercial release. Its cells are significantly larger than typical apples, creating the explosive crunch that made it famous. The apple was so successful that the University of Minnesota made millions in licensing fees from growers worldwide. It\'s been named alongside Google and the nicotine patch as one of 25 innovations that changed the world. Not bad for a tree that was one season away from the chipper.',
+            year: '1991',
+            sources: [
+              {
+                title: 'University of Minnesota: Honeycrisp Apple Story',
+                url: 'https://cals.umn.edu/honeycrisp',
+              },
+              {
+                title: 'MPR News: How Honeycrisp Changed the Apple Industry',
+                url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/honeycrisps.png',
+              alt: 'Honeycrisp apples',
+            },
+          },
+          {
+            id: 'curiosity-5',
+            type: 'curiosity',
+            category: 'underground',
+            title: 'A 70-mile labyrinth of forgotten tunnels runs beneath the streets',
+            body: 'Dating back to 1865, a massive tangle of telephone, gas, trolley, and hydropower tunnels sprawls beneath the Twin Cities — so extensive it\'s been compared to the Paris Catacombs. Most of it remains unexplored, unmapped, and largely forgotten. Century-old power tunnels near St. Anthony Falls predate the Civil War. Sandstone caves once housed mushroom farms, storage facilities, and Prohibition-era speakeasies like Wabasha Street Caves.\n\nIn 1992, a construction crew drilling downtown accidentally punched through a forgotten tunnel system, flooding basements across multiple city blocks. Many tunnel entrances have been sealed and lost entirely to institutional memory. The dangers are real: carbon monoxide accumulation, structural instability, and disorientation have led to deaths. Most access is now restricted, though some underground skyway connections remain public. The full extent of what\'s down there? Nobody really knows.',
+            year: '1865',
+            sources: [
+              {
+                title: 'Minnesota Historical Society: Underground Minneapolis',
+                url: 'https://www.mnhs.org/historycenter/activities/museum/underground-minneapolis',
+              },
+              {
+                title: 'Star Tribune: Beneath the Streets',
+                url: 'https://www.startribune.com/minneapolis-underground-tunnels-history/564839012/',
+              },
+              {
+                title: 'Action Squad Urban Exploration',
+                url: 'http://www.actionsquad.org/index.html',
+              },
+              {
+                title: 'Exploring the Underground Tunnels of Minneapolis and St. Paul',
+                url: 'https://www.youtube.com/watch?v=45mo-n0CV38',
+              },
+            ],
+            location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
+            image: {
+              src: 'https://live.staticflickr.com/65535/53803633600_deccfba914_b.jpg',
+              alt: 'Underground tunnel labyrinth beneath the Twin Cities',
+            },
+          },
+          {
+            id: 'curiosity-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'curiosity-6',
+            type: 'curiosity',
+            category: 'law',
+            title: 'Serving Twinkies to elderly voters became a felony indictment',
+            body: 'A Minneapolis City Council candidate was once indicted by a grand jury for the crime of serving Twinkies to groups of elderly voters. Yes, really. The scandal led directly to the establishment of a fair campaign practices act that became known statewide as the "Twinkie Law" — legislation prohibiting candidates from providing anything of value to voters within a certain distance of polling places. The Minnesota political establishment apparently decided that cream-filled snack cakes posed an existential threat to democracy.',
+            sources: [
+              {
+                title: 'Minneapolis City Records',
+                url: 'https://www.minneapolismn.gov/',
+              },
+              {
+                title: 'UPI: Politician cleared of Twinkie charges',
+                url: 'https://www.upi.com/Archives/1986/06/04/Politician-cleared-of-Twinkie-charges/4851518241600/',
+              },
+              {
+                title: 'Mashed: What You Didn\'t Know About The Twinkies Law',
+                url: 'https://www.mashed.com/407663/what-you-didnt-know-about-the-twinkies-law/',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/twinkies.png',
+              alt: 'The Twinkie Law scandal',
+            },
+          },
+          {
+            id: 'curiosity-7',
+            type: 'curiosity',
+            category: 'science',
+            title: 'Live mussels work 24/7 guarding the city\'s drinking water',
+            body: 'At the Minneapolis water treatment facility on the Mississippi River, the early-warning contamination system isn\'t electronic — it\'s biological. A team of live freshwater mussels, wired with sensors, monitors the water supply around the clock. When they detect toxins, they clamp their shells shut within seconds. The sensors catch this immediately and trigger alarms.\n\nMussels are absurdly sensitive to water quality changes, often more reliable than sophisticated electronic monitoring systems. They work continuously, require no calibration, filter water naturally as a bonus, and have been on the job since 2006. It\'s an elegant solution: deploy an organism that evolved for 400 million years to detect bad water, attach some sensors, and let biology do the work.',
+            year: '2006',
+            sources: [
+              {
+                title: 'Minneapolis Water Works',
+                url: 'https://www.minneapolismn.gov/resident-services/water-sewer-utilities/',
+              },
+            ],
+            location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/mussels.png',
+              alt: 'Freshwater mussels used to monitor water quality',
+            },
+          },
+          {
+            id: 'curiosity-8',
+            type: 'curiosity',
+            category: 'architecture',
+            title: 'Two massive library caverns are carved 85 feet underground',
+            body: 'Beneath the Elmer L. Andersen Library at the University of Minnesota, two caverns stretch 600 feet into St. Peter Sandstone — each the length of two football fields, 25 feet high, and 70 feet wide. The Minnesota Library Access Center sits 85 feet underground, storing over 1.5 million volumes on 17-foot-tall shelving in climate-controlled tunnels carved from the Mississippi River bluffs.\n\nExcavation took 20 months and removed nearly 100,000 cubic yards of sandstone. When completed in 2000, the tunnels were naturally at 57°F with 70% humidity — nearly ideal preservation conditions requiring minimal intervention. One cavern houses the state\'s rarest archives; the other serves Minnesota libraries via the Minitex lending system. The limestone roof provides natural protection from the elements, and there\'s room on university property for 18 additional caverns. Tours run during "Doors Open Minneapolis" and the Archives\' First Fridays, letting visitors descend into one of America\'s most unique research libraries.',
+            year: '2000',
+            sources: [
+              {
+                title: 'University of Minnesota Libraries: About Andersen Library',
+                url: 'https://www.lib.umn.edu/spaces/andersen/building',
+              },
+              {
+                title: 'MinnPost: The Subterranean Caverns',
+                url: 'https://www.minnpost.com/stroll/2015/10/subterranean-caverns-protect-us-andersen-library-collections/',
+              },
+              {
+                title: 'Minitex: Minnesota Library Access Center',
+                url: 'https://minitex.umn.edu/units/minnesota-library-access-center-mlac',
+              },
+            ],
+            location: { name: 'Elmer L. Andersen Library, University of Minnesota', url: 'https://www.google.com/maps/place/Elmer+L.+Andersen+Library/@44.9727,-93.2354,17z', stillExists: true },
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/undergroundlibrary.png',
+              alt: 'Underground library tunnels carved into sandstone',
+            },
+          },
+          {
+            id: 'curiosity-9',
+            type: 'curiosity',
+            category: 'invention',
+            title: 'Every Three Musketeers bar contains "Minneapolis Nougat"',
+            body: 'Mars — the candy empire behind Milky Way, Snickers, and M&Ms — was founded in Minneapolis in 1920. The light, fluffy white confection inside every Three Musketeers bar was originally called "Minneapolis Nougat." The company eventually moved operations to New Jersey, but the recipe never changed. Every Three Musketeers bar you\'ve ever eaten contains a piece of Minneapolis history, even if the wrapper doesn\'t mention it.',
+            year: '1920',
+            sources: [
+              {
+                title: 'Mars, Inc. company history',
+                url: 'https://www.mars.com/about/history',
+              },
+              {
+                title: 'Minnesota Historical Society',
+                url: 'https://www.mnhs.org/',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/3 musketeers.png',
+              alt: 'Three Musketeers candy bar with Minneapolis Nougat',
+            },
+          },
+          {
+            id: 'curiosity-10',
+            type: 'curiosity',
+            category: 'culture',
+            title: 'MST3K started as Minneapolis public access TV with homemade robots',
+            body: 'Before Mystery Science Theater 3000 became a cult phenomenon, it premiered on KTMA — a Minneapolis public access station — in 1988. Creator Joel Hodgson built the original robot puppets (Crow, Tom Servo, Gypsy) in his Minneapolis apartment using household items and hardware store parts. The show\'s first episodes aired locally at odd hours, gained a following, moved to Comedy Central, ran for over a decade, and spawned multiple revivals. But it began in the most lo-fi way possible: local cable access with puppets made from a salad bowl, a lacrosse mask, and a gumball machine.',
+            year: '1988',
+            sources: [
+              {
+                title: 'MST3K Official Site',
+                url: 'https://www.mst3k.com/',
+              },
+              {
+                title: 'Wikipedia: Mystery Science Theater 3000',
+                url: 'https://en.wikipedia.org/wiki/Mystery_Science_Theater_3000',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/mystery science theater.png',
+              alt: 'Mystery Science Theater 3000',
+            },
+          },
+          {
+            id: 'curiosity-11',
+            type: 'curiosity',
+            category: 'underground',
+            title: 'The world\'s largest skyway system lets you avoid winter entirely',
+            body: 'The Minneapolis Skyway System is the largest network of enclosed, climate-controlled pedestrian bridges on Earth — 80 blocks linked across 9.5 miles of downtown. You can walk from one end of the city center to the other without ever stepping outside. The first skyway opened in 1962, built by developer Leslie Park to compete with suburban shopping malls (including Southdale Center, also a Minneapolis invention — America\'s first fully enclosed mall).\n\nThe system now connects office towers, hotels, restaurants, and retail through second-story walkways that maintain a consistent 70°F regardless of the weather outside. When it\'s -20°F in January, thousands of workers commute entirely through skyways. It\'s both impressively practical and vaguely dystopian — a parallel city floating above the streets.',
+            year: '1962',
+            sources: [
+              {
+                title: 'Minneapolis Downtown Council',
+                url: 'https://www.minneapolisdowntown.com/',
+              },
+              {
+                title: 'Minneapolis Skyway Guide',
+                url: 'https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/',
+              },
+            ],
+            location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/skyway.png',
+              alt: 'Minneapolis skyway system',
+            },
+          },
+          {
+            id: 'curiosity-12',
+            type: 'curiosity',
+            category: 'invention',
+            title: 'The automatic pop-up toaster was invented here in 1926',
+            body: 'Before 1926, making toast required constant attention, manual flipping, and frequent burnt bread. That year, the McGraw Electric Company in Minneapolis introduced the Toastmaster — the first automatic pop-up toaster. It could toast both sides simultaneously, monitor browning, and eject the finished toast without human intervention. A small innovation, perhaps, but one that genuinely changed breakfast routines worldwide. Every pop-up toaster since 1926 descends from the Minneapolis original.',
+            year: '1926',
+            sources: [
+              {
+                title: 'Minnesota Historical Society',
+                url: 'https://www.mnhs.org/',
+              },
+              {
+                title: 'Smithsonian Magazine',
+                url: 'https://www.smithsonianmag.com/',
+              },
+            ],
+            image: {
+              src: '/Minneapolis/Minneapolis Curiosities/toaster.png',
+              alt: 'Vintage pop-up toaster',
+            },
+          },
+          {
+            id: 'curiosity-13',
+            type: 'curiosity',
+            category: 'nature',
+            title: 'The Mississippi River\'s only waterfall is slowly walking upstream',
+            body: 'St. Anthony Falls is the only natural major waterfall on the Mississippi\'s entire 2,340-mile run from Minnesota to the Gulf of Mexico. It formed roughly 12,000 years ago about 10 miles downstream at Fort Snelling and has been retreating upstream ever since — about 4 feet per year as the water erodes the limestone. The falls were originally 180-200 feet high; they\'re now largely covered by a concrete apron installed to halt erosion.\n\nThis waterfall is the reason Minneapolis exists at all. It provided hydropower that made the city the flour milling capital of the world in the late 1800s. The falls are still slowly migrating, geologically speaking, though the concrete has slowed the pace to a crawl. Without human intervention, they\'d eventually reach their source.',
+            sources: [
+              {
+                title: 'National Park Service',
+                url: 'https://www.nps.gov/miss/learn/historyculture/stanthonyfalls.htm',
+              },
+            ],
+            location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
+            images: [
+              {
+                src: '/Minneapolis/Minneapolis Curiosities/falls-1.png',
+                alt: 'St. Anthony Falls',
+              },
+              {
+                src: '/Minneapolis/Minneapolis Curiosities/falls-2.png',
+                alt: 'St. Anthony Falls historic view',
+              },
+              {
+                src: '/Minneapolis/Minneapolis Curiosities/falls-3.png',
+                alt: 'St. Anthony Falls and surrounding area',
+              },
+            ],
+          },
+          {
+            id: 'curiosity-14',
+            type: 'curiosity',
             category: 'history',
-            title: 'The "Twin Cities" originally meant Minneapolis and a completely different city',
-            body: 'Before St. Paul became the other half of the Twin Cities, Minneapolis\'s "twin" was actually St. Anthony — the city on the east bank of St. Anthony Falls. These two "Twin Cities" existed as independent municipalities for twenty years until they merged in 1872 to form modern Minneapolis. St. Paul didn\'t become the sibling city in public consciousness until much later.',
+            title: 'St. Anthony was the original "Twin City" before St. Paul existed',
+            body: 'Before St. Paul became Minneapolis\'s twin, the "Twin Cities" actually referred to Minneapolis and St. Anthony — two separate municipalities on opposite banks of St. Anthony Falls. They coexisted as independent rivals for twenty years until merging in 1872 to form modern Minneapolis. St. Paul didn\'t become the other half of the "Twin Cities" in public consciousness until later, after St. Anthony had already been absorbed and forgotten. The original twin city is now just the east bank of the falls.',
             year: '1872',
             sources: [
               {
@@ -185,57 +448,11 @@ export const minneapolis: CityData = {
             },
           },
           {
-            id: 'curiosity-4',
-            type: 'curiosity',
-            category: 'invention',
-            title: 'The Honeycrisp apple was rescued from the reject pile',
-            body: 'In 1982, an apple variety labeled MN 1711 at the University of Minnesota was scheduled for destruction. A researcher saved it, giving it one more year to prove itself. That tree became the Honeycrisp — now Minnesota\'s official state fruit and one of the most popular apples in the world. It took 31 years to develop, and its cells are larger than most apples, creating its signature explosive crunch. The Honeycrisp has been recognized as one of 25 innovations that changed the world, alongside Google and the nicotine patch.',
-            year: '1991',
-            sources: [
-              {
-                title: 'University of Minnesota: Honeycrisp Apple Story',
-                url: 'https://cals.umn.edu/honeycrisp',
-              },
-              {
-                title: 'MPR News: How Honeycrisp Changed the Apple Industry',
-                url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/honeycrisps.png',
-              alt: 'Honeycrisp apples',
-            },
-          },
-          {
-            id: 'curiosity-5',
-            type: 'curiosity',
-            category: 'science',
-            title: 'Live mussels guard the city\'s drinking water supply',
-            body: 'At the Minneapolis water treatment facility on the Mississippi River, a team of live freshwater mussels serves as an early-warning system for contamination. Sensors attached to the mussels\' shells detect when they clamp shut — which they do within seconds of encountering toxins. Mussels are extraordinarily sensitive to water quality, more reliable than many electronic sensors. They work 24 hours a day, filter water naturally, and have been on the job since 2006.',
-            year: '2006',
-            sources: [
-              {
-                title: 'Minneapolis Water Works',
-                url: 'https://www.minneapolismn.gov/resident-services/water-sewer-utilities/',
-              },
-            ],
-            location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/mussels.png',
-              alt: 'Freshwater mussels used to monitor water quality',
-            },
-          },
-          {
-            id: 'curiosity-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'curiosity-6',
+            id: 'curiosity-15',
             type: 'curiosity',
             category: 'architecture',
-            title: 'City Hall\'s clock faces are larger than Big Ben\'s',
-            body: 'The clock faces on Minneapolis City Hall are actually larger than those on the Great Clock in London where Big Ben tolls the hours. The building also houses Father of Waters, a massive statue carved from the largest block of marble ever quarried, depicting a figure representing the Mississippi River. The statue weighs 30 tons and sits in the building\'s rotunda.',
+            title: 'City Hall\'s clock is bigger than Big Ben (and has a 30-ton marble statue)',
+            body: 'The clock faces on Minneapolis City Hall are larger than those on London\'s Great Clock of Westminster — the tower where Big Ben tolls. It\'s a genuinely massive timepiece on a Romanesque Revival building completed in 1906. Inside the rotunda sits an even more impressive feat: Father of Waters, a statue carved from the largest single block of marble ever quarried. The figure represents the Mississippi River, weighs 30 tons, and took sculptor Larkin Goldsmith Mead nearly a decade to complete. Visitors can see it for free.',
             sources: [
               {
                 title: 'City of Minneapolis',
@@ -249,159 +466,11 @@ export const minneapolis: CityData = {
             },
           },
           {
-            id: 'curiosity-7',
-            type: 'curiosity',
-            category: 'underground',
-            title: 'The world\'s largest skyway system connects 80 blocks',
-            body: 'The Minneapolis Skyway System is the largest network of enclosed, climate-controlled pedestrian bridges on Earth, linking 80 blocks across 9.5 miles of downtown. The first skyway opened in 1962, built by real estate developer Leslie Park to compete with indoor shopping malls like Southdale Center (also a Minneapolis invention — the first enclosed mall in America). You can walk from one end of downtown to the other without ever stepping outside.',
-            year: '1962',
-            sources: [
-              {
-                title: 'Minneapolis Downtown Council',
-                url: 'https://www.minneapolisdowntown.com/',
-              },
-              {
-                title: 'Minneapolis Skyway Guide',
-                url: 'https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/',
-              },
-            ],
-            location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/skyway.png',
-              alt: 'Minneapolis skyway system',
-            },
-          },
-          {
-            id: 'curiosity-8',
-            type: 'curiosity',
-            category: 'history',
-            title: 'St. Paul was a gangster haven — and Minneapolis was fair game',
-            body: 'During Prohibition, St. Paul became a sanctuary for America\'s most notorious criminals through the "O\'Connor System." Gangsters like John Dillinger, Al Capone, and Bonnie and Clyde agreed to check in with police, give them a cut, and commit no crimes within St. Paul city limits. Minneapolis, however, was explicitly fair game for criminal activity. In 1932, more than 20% of the nation\'s bank robberies occurred in Minnesota. When Dillinger was shot by FBI agents in St. Paul in 1934, he escaped to his doctor\'s clinic in Minneapolis to hide and receive treatment.',
-            year: '1920s-1930s',
-            sources: [
-              {
-                title: 'Minnesota Historical Society',
-                url: 'https://www.mnhs.org/',
-              },
-              {
-                title: 'Most Notorious Podcast: Gangsters in 1930s Minnesota',
-                url: 'https://www.mostnotorious.com/2022/12/13/gangsters-in-1930s-minnesota-with-paul-maccabee/',
-              },
-              {
-                title: 'Star Tribune Curious Minnesota Podcast',
-                url: 'https://www.startribune.com/curious-minnesota-podcast/',
-              },
-            ],
-            location: { name: 'Minneapolis & St. Paul', url: 'https://www.google.com/maps/place/Minneapolis,+MN/@44.9778,-93.2650,12z', stillExists: true },
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/gangsters.png',
-              alt: '1930s gangsters in Minnesota',
-            },
-          },
-          {
-            id: 'curiosity-9',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Minnesotans play a different children\'s game than the rest of America',
-            body: 'The classic childhood game known everywhere else as "Duck, Duck, Goose" is played differently in Minnesota. Here, it\'s called "Duck, Duck, Gray Duck" — and the person who is "it" calls out colors (duck, duck, blue duck, duck, purple duck, GRAY DUCK!) before tagging someone. The origin is murky, possibly tied to a Scandinavian game of the same name. Try calling it "Duck, Duck, Goose" here and you\'ll get corrected.',
-            sources: [
-              {
-                title: 'Minnesota folklore',
-                url: 'https://www.mnhs.org/',
-              },
-              {
-                title: 'Atlas Obscura: Duck Duck Gray Duck',
-                url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/duckduckgreyduck.png',
-              alt: 'Duck Duck Gray Duck game illustration',
-            },
-          },
-          {
-            id: 'curiosity-10',
+            id: 'curiosity-16',
             type: 'curiosity',
             category: 'architecture',
-            title: 'An underground library is carved into sandstone tunnels',
-            body: 'Beneath the Elmer L. Andersen Library at the University of Minnesota, two massive caverns stretch 600 feet into St. Peter Sandstone — each the length of two football fields, 25 feet high, and 70 feet wide. The Minnesota Library Access Center (MLAC) sits 85 feet underground, storing over 1.5 million volumes on 17-foot-tall shelving systems in climate-controlled tunnels carved from the Mississippi River bluffs.\n\nThe facility opened in 2000 after 20 months of excavation that removed nearly 100,000 cubic yards of sandstone. Upon opening, the tunnels were naturally at 57°F with 70% humidity — nearly perfect preservation conditions. One cavern houses the state\'s rarest archives and special collections, while the other serves libraries throughout Minnesota via the Minitex system. The limestone roof provides natural protection, and there\'s room on university property for 18 more such caverns. Tours are offered during "Doors Open Minneapolis" and the Archives\' First Fridays series, letting visitors descend into one of the country\'s most unique research libraries.',
-            year: '2000',
-            sources: [
-              {
-                title: 'University of Minnesota Libraries: About Andersen Library',
-                url: 'https://www.lib.umn.edu/spaces/andersen/building',
-              },
-              {
-                title: 'MinnPost: The Subterranean Caverns',
-                url: 'https://www.minnpost.com/stroll/2015/10/subterranean-caverns-protect-us-andersen-library-collections/',
-              },
-              {
-                title: 'Minitex: Minnesota Library Access Center',
-                url: 'https://minitex.umn.edu/units/minnesota-library-access-center-mlac',
-              },
-            ],
-            location: { name: 'Elmer L. Andersen Library, University of Minnesota', url: 'https://www.google.com/maps/place/Elmer+L.+Andersen+Library/@44.9727,-93.2354,17z', stillExists: true },
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/undergroundlibrary.png',
-              alt: 'Underground library tunnels carved into sandstone',
-            },
-          },
-          {
-            id: 'curiosity-11',
-            type: 'curiosity',
-            category: 'nature',
-            title: 'The only natural waterfall on the entire Mississippi River is here',
-            body: 'St. Anthony Falls is the only natural major waterfall along the Mississippi\'s 2,340-mile journey from Minnesota to the Gulf of Mexico. It formed roughly 12,000 years ago about 10 miles downstream at Fort Snelling and has been slowly retreating upstream ever since — about 4 feet per year. The falls were originally 180-200 feet high but are now largely covered by a concrete "apron" to prevent further erosion. This waterfall is why Minneapolis exists: it provided the power that made the city the flour milling capital of the world.',
-            sources: [
-              {
-                title: 'National Park Service',
-                url: 'https://www.nps.gov/miss/learn/historyculture/stanthonyfalls.htm',
-              },
-            ],
-            location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
-            images: [
-              {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-1.png',
-                alt: 'St. Anthony Falls',
-              },
-              {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-2.png',
-                alt: 'St. Anthony Falls historic view',
-              },
-              {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-3.png',
-                alt: 'St. Anthony Falls and surrounding area',
-              },
-            ],
-          },
-          {
-            id: 'curiosity-12',
-            type: 'curiosity',
-            category: 'invention',
-            title: 'The Three Musketeers bar contains "Minneapolis Nougat"',
-            body: 'Mars, the candy company behind the Milky Way and Snickers, was founded in Minneapolis in 1920. The light, fluffy white confection inside a Three Musketeers bar was originally called "Minneapolis Nougat." The company eventually moved to New Jersey, but the recipe stayed the same — a piece of Minneapolis history in every candy bar.',
-            year: '1920',
-            sources: [
-              {
-                title: 'Mars, Inc. company history',
-                url: 'https://www.mars.com/about/history',
-              },
-              {
-                title: 'Minnesota Historical Society',
-                url: 'https://www.mnhs.org/',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/3 musketeers.png',
-              alt: 'Three Musketeers candy bar with Minneapolis Nougat',
-            },
-          },
-          {
-            id: 'curiosity-13',
-            type: 'curiosity',
-            category: 'architecture',
-            title: 'Lakewood Cemetery\'s chapel was modeled after the Hagia Sophia',
-            body: 'The Memorial Chapel at Lakewood Cemetery was designed by Minneapolis architect Harry Wild Jones as a smaller replica of Istanbul\'s Hagia Sophia. Inside, the dome is covered with a mosaic of 10 million pieces of marble. The building is hewn from St. Cloud granite and completed in 1910. It sits near the graves of Hubert Humphrey, Paul Wellstone, Tiny Tim (who died on stage in Minneapolis), and generations of the Pillsbury and Washburn flour dynasties.',
+            title: 'A cemetery chapel is covered in 10 million pieces of marble mosaic',
+            body: 'Lakewood Cemetery\'s Memorial Chapel was designed by architect Harry Wild Jones as a scaled-down replica of Istanbul\'s Hagia Sophia. Completed in 1910 and built from St. Cloud granite, the building\'s interior dome is covered with a mosaic composed of 10 million individual pieces of marble. The craftsmanship is staggering — Byzantine-inspired patterns in a Minneapolis cemetery.\n\nThe chapel sits near the graves of Vice President Hubert Humphrey, Senator Paul Wellstone, entertainer Tiny Tim (who famously died onstage in Minneapolis), and generations of the Pillsbury and Washburn flour dynasties. It\'s one of the most beautiful buildings in the city, and it\'s in a graveyard.',
             year: '1910',
             sources: [
               {
@@ -430,80 +499,11 @@ export const minneapolis: CityData = {
             ],
           },
           {
-            id: 'curiosity-14',
-            type: 'curiosity',
-            category: 'law',
-            title: 'A candidate was indicted for giving Twinkies to voters',
-            body: 'A Minneapolis City Council candidate was once indicted by a grand jury for serving Twinkies to groups of elderly voters. The scandal led to the establishment of a fair campaign act that became commonly known as the "Twinkie Law." The law prohibits providing anything of value to voters within a certain distance of polling places.',
-            sources: [
-              {
-                title: 'Minneapolis City Records',
-                url: 'https://www.minneapolismn.gov/',
-              },
-              {
-                title: 'UPI: Politician cleared of Twinkie charges',
-                url: 'https://www.upi.com/Archives/1986/06/04/Politician-cleared-of-Twinkie-charges/4851518241600/',
-              },
-              {
-                title: 'Mashed: What You Didn\'t Know About The Twinkies Law',
-                url: 'https://www.mashed.com/407663/what-you-didnt-know-about-the-twinkies-law/',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/twinkies.png',
-              alt: 'The Twinkie Law scandal',
-            },
-          },
-          {
-            id: 'curiosity-15',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Mystery Science Theater 3000 started on Minneapolis public access TV',
-            body: 'Before becoming a cult phenomenon, Mystery Science Theater 3000 — the show where robots make fun of bad movies — first premiered on KTMA, a Minneapolis public access television station, in 1988. Creator Joel Hodgson built the first robot puppets in his Minneapolis apartment. The show ran for decades and spawned a revival, but it started in the humblest possible way: local cable access in Minneapolis.',
-            year: '1988',
-            sources: [
-              {
-                title: 'MST3K Official Site',
-                url: 'https://www.mst3k.com/',
-              },
-              {
-                title: 'Wikipedia: Mystery Science Theater 3000',
-                url: 'https://en.wikipedia.org/wiki/Mystery_Science_Theater_3000',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/mystery science theater.png',
-              alt: 'Mystery Science Theater 3000',
-            },
-          },
-          {
-            id: 'curiosity-16',
-            type: 'curiosity',
-            category: 'invention',
-            title: 'The pop-up toaster was invented here',
-            body: 'In 1926, the McGraw Electric Company in Minneapolis revolutionized breakfast by marketing the first automatic pop-up toaster under the brand name "Toastmaster." Before this invention, people had to manually flip bread and watch it carefully to prevent burning. The Toastmaster could toast both sides simultaneously and automatically eject the toast when done — a small innovation that changed morning routines worldwide.',
-            year: '1926',
-            sources: [
-              {
-                title: 'Minnesota Historical Society',
-                url: 'https://www.mnhs.org/',
-              },
-              {
-                title: 'Smithsonian Magazine',
-                url: 'https://www.smithsonianmag.com/',
-              },
-            ],
-            image: {
-              src: '/Minneapolis/Minneapolis Curiosities/toaster.png',
-              alt: 'Vintage pop-up toaster',
-            },
-          },
-          {
             id: 'curiosity-17',
             type: 'curiosity',
             category: 'architecture',
-            title: 'The largest urban sculpture garden in America is here',
-            body: 'The Minneapolis Sculpture Garden spans 11 acres and features more than 40 permanent art installations, making it the largest urban sculpture garden in the United States. The iconic "Spoonbridge and Cherry" by Claes Oldenburg and Coosje van Bruggen has become one of the most photographed landmarks in Minnesota. The garden is free and open year-round, connecting the Walker Art Center to Loring Park.',
+            title: 'The nation\'s largest urban sculpture garden is free year-round',
+            body: 'The Minneapolis Sculpture Garden spans 11 acres and contains more than 40 permanent installations, making it the largest urban sculpture garden in the United States. The centerpiece — Claes Oldenburg and Coosje van Bruggen\'s "Spoonbridge and Cherry" — has become one of Minnesota\'s most photographed landmarks, a 29-foot-tall spoon holding a 1,200-pound cherry with a fountain stem.\n\nThe garden connects the Walker Art Center to Loring Park and remains free and open to the public year-round. It\'s accessible, beautiful, occasionally weird, and genuinely impressive. If you only see one piece of public art in Minneapolis, it\'ll probably be the giant spoon.',
             location: { name: 'Minneapolis Sculpture Garden', url: 'https://www.google.com/maps/place/Minneapolis+Sculpture+Garden/@44.9691,-93.2890,17z', stillExists: true },
             sources: [
               {
@@ -2094,17 +2094,81 @@ export const minneapolis: CityData = {
         id: 'mpls-dark-history',
         type: 'section',
         title: 'Shadows Over Minneapolis',
-        teaser: 'Unsolved mysteries beneath the skyways',
-        intro: 'Minneapolis is a city of lakes, skyways, and shadows—where three young brothers vanished without a trace in 1951, where cold cases span generations, and where families still search for answers that may never come.',
+        teaser: 'Severed heads on park benches, frozen evidence, and the hot dog napkin that solved a murder',
+        intro: 'Minnesota Nice has a dark side. Between the skyways and the frozen river, Minneapolis harbors cold cases that span generations, bodies scattered like breadcrumbs across the city, and mysteries that won\'t stay buried—even when some of them literally won\'t stay buried.',
         items: [
+          {
+            id: 'mpls-dark-2',
+            type: 'dark-history',
+            category: 'unsolved',
+            year: '2021',
+            title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
+            body: 'On June 17, 2021, someone called 911 to report human remains behind the Ukrainian American Community Center near the Mississippi River. A few hours later, more remains turned up at NE 3rd and University. Five days after that, on June 22nd, a passerby discovered something on a bench at East Franklin Avenue and West River Parkway: the severed head of 36-year-old Adam Richard Johnson. The word "PERV" had been carved into his forehead. Police said the head appeared to have been frozen, then left to thaw in public view.\n\nOn July 4th—because holidays mean nothing to killers—more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when he was murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim—a conclusion that feels unnecessary when someone carves "PERV" into a frozen forehead and leaves it on a park bench.\n\nMinneapolis police spokesperson John Elder confirmed that some body parts remain unaccounted for. Despite the brazen public display across multiple high-traffic sites, no arrests have been made. The investigation remains open, which is police-speak for "we have no idea."',
+            verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
+            location: {
+              name: 'Multiple locations along Mississippi River, Minneapolis',
+              stillExists: true,
+              coordinates: { lat: 44.9889, lng: -93.2547 },
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'Gruesome Details in Minneapolis Dismemberment Case',
+                publisher: 'KARE11',
+                year: '2021',
+                url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
+              },
+              {
+                type: 'article',
+                title: 'Adam Johnson Murder: Still Unsolved',
+                publisher: 'Star Tribune',
+                year: '2022',
+                url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/',
+              },
+              {
+                type: 'article',
+                title: 'Severed Head With "Perv" Carved Into Forehead',
+                publisher: 'Medium',
+                author: 'Cat Leigh',
+                year: '2021',
+                url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5',
+              },
+              {
+                type: 'article',
+                title: 'Minneapolis Police Seek Help in Adam Johnson Case',
+                publisher: 'Fox 9',
+                year: '2021',
+                url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
+              },
+              {
+                type: 'podcast',
+                title: 'The Adam Johnson Dismemberment',
+                show: 'True Crime Minnesota',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/true-crime-minnesota/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'Adam Johnson Murder Investigation Update',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=AbC123XyZ45',
+              },
+            ],
+            images: [
+              {
+                src: '/Minneapolis/Minneapolis%20dark%20history/adam%20johnson.png',
+                alt: 'Adam Richard Johnson',
+              },
+            ],
+          },
           {
             id: 'mpls-dark-1',
             type: 'dark-history',
             category: 'unsolved',
             year: '1951',
-            title: 'The Klein Brothers: Minnesota\'s Oldest Missing Persons Case',
-            body: 'At 1:30 p.m. on November 10, 1951, three brothers—Kenneth Jr. (8), David (6), and Danny (4)—left their home at 2900 Colfax Avenue North to walk four blocks to Fairview Park at Lyndale and 29th Street. Their older brother Gordon, nine, stayed home sick. When Gordon went to retrieve them at dinner time, they were gone. The family called police at 8 p.m., but detectives didn\'t arrive at the Klein home until 6:30 p.m. the following day—nearly 24 hours after the boys vanished. Two of the boys\' caps were found in the nearby icy Mississippi River, leading authorities to drag the river fearing they\'d drowned. Nothing was recovered. The case was closed after just five days. Decades later, investigators learned a neighbor had poured fresh concrete in his basement and replaced his wooden truck bed the day after the boys disappeared. That neighbor became a suspect, but he died before he could be questioned. In 2021, advanced forensic techniques examined that concrete basement—finding nothing. Author Jack El-Hai\'s book "The Lost Brothers" and MPR\'s "Long Lost" podcast have kept the case alive, but 74 years later, no one knows what happened to Kenneth, David, and Danny Klein.',
-            verdict: 'Still unsolved. No suspects, no remains, no closure. Minnesota\'s oldest missing persons case on record.',
+            title: 'Three Brothers Walked to the Park. They Never Came Home.',
+            body: 'At 1:30 p.m. on November 10, 1951, three brothers—Kenneth Jr. (8), David (6), and Danny (4)—left their home at 2900 Colfax Avenue North to walk four blocks to Fairview Park. Their older brother Gordon, nine, stayed home sick. When Gordon went to retrieve them at dinner time, the park was empty.\n\nThe family called police at 8 p.m. Detectives didn\'t arrive at the Klein home until 6:30 p.m. the following day—nearly 24 hours after the boys vanished. Two of the boys\' caps were found floating in the icy Mississippi River. Authorities dragged the river, fearing the children had drowned. Nothing was recovered. The case was closed after five days.\n\nDecades later, investigators learned that a neighbor had poured fresh concrete in his basement and replaced his wooden truck bed the day after the boys disappeared. That neighbor became a suspect, but he died before he could be questioned. In 2021, advanced forensic techniques were used to examine the concrete basement. They found nothing.\n\nAuthor Jack El-Hai\'s book "The Lost Brothers" and MPR\'s "Long Lost" podcast have kept the case alive. But 74 years later, no one knows what happened to Kenneth, David, and Danny Klein. No bodies. No witnesses. No closure. Just three empty chairs at a dinner table and a park that\'s been rebuilt twice since 1951.',
+            verdict: 'Still unsolved. No suspects, no remains, no answers. Minnesota\'s oldest missing persons case. The concrete basement yielded nothing but dust.',
             location: {
               name: '2900 block of Colfax Avenue North, Minneapolis',
               stillExists: true,
@@ -2170,139 +2234,13 @@ export const minneapolis: CityData = {
             ],
           },
           {
-            id: 'mpls-dark-2',
-            type: 'dark-history',
-            category: 'unsolved',
-            year: '2021',
-            title: 'Adam Johnson Dismemberment: A Body Scattered Across the City',
-            body: 'On June 17, 2021, a passerby called 911 to report human remains behind the Ukrainian American Community Center at 300 NE Main Street, near the Mississippi River. Later that day, more remains appeared at NE 3rd and University. Five days later, on June 22nd, someone discovered remains on a bench at East Franklin Avenue and West River Parkway—the head of 36-year-old Adam Richard Johnson, with the word "PERV" carved into the forehead. Police said it appeared to have been frozen and was beginning to thaw. On July 4th, more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim. Minneapolis police spokesperson John Elder confirmed body parts remain unaccounted for. Despite the brazen public display across multiple sites, no arrests have been made. The investigation remains open, but years have passed without answers.',
-            verdict: 'Unsolved. No suspect has been publicly identified. Police confirm some remains were never recovered.',
-            location: {
-              name: 'Multiple locations along Mississippi River, Minneapolis',
-              stillExists: true,
-              coordinates: { lat: 44.9889, lng: -93.2547 },
-            },
-            sources: [
-              {
-                type: 'article',
-                title: 'Gruesome Details in Minneapolis Dismemberment Case',
-                publisher: 'KARE11',
-                year: '2021',
-                url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
-              },
-              {
-                type: 'article',
-                title: 'Adam Johnson Murder: Still Unsolved',
-                publisher: 'Star Tribune',
-                year: '2022',
-                url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/',
-              },
-              {
-                type: 'article',
-                title: 'Severed Head With "Perv" Carved Into Forehead',
-                publisher: 'Medium',
-                author: 'Cat Leigh',
-                year: '2021',
-                url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5',
-              },
-              {
-                type: 'article',
-                title: 'Minneapolis Police Seek Help in Adam Johnson Case',
-                publisher: 'Fox 9',
-                year: '2021',
-                url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
-              },
-              {
-                type: 'podcast',
-                title: 'The Adam Johnson Dismemberment',
-                show: 'True Crime Minnesota',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/true-crime-minnesota/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'Adam Johnson Murder Investigation Update',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=AbC123XyZ45',
-              },
-            ],
-            images: [
-              {
-                src: '/Minneapolis/Minneapolis%20dark%20history/adam%20johnson.png',
-                alt: 'Adam Richard Johnson',
-              },
-            ],
-          },
-          {
-            id: 'mpls-dark-3',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1984',
-            title: 'Cindy Gerdes: The Murder That Haunted a Police Chief Until He Died',
-            body: 'On March 8, 1984, 28-year-old Cindy Gerdes was found murdered in her bedroom at the Northlynn Apartments in Minneapolis. Police described it as "one of the worst recent homicides." Gerdes had been stabbed repeatedly around her neck, chest, and back, with a long open wound leading to her sternum—apparently from a missing French chef\'s stainless steel knife taken from the kitchen\'s butcher block. Her body had been posed. The primary suspect, Patrick Thomas Walsh, didn\'t emerge until 1991, after he murdered 35-year-old Pamela Sweeney in Roseville—a coworker who had rebuffed his romantic advances. Walsh had a 1976 conviction for choking a woman in her apartment and was linked to the 1980 disappearance of 22-year-old Cindy M. Brown. But investigators could never connect the forensic dots to charge him with Gerdes\' murder. Walsh is serving life in prison at Minnesota Correctional Facility in Stillwater for Sweeney\'s murder, but Gerdes\' case remains unsolved. Former Minneapolis Police Chief Tony Bouza, who died in 2023, was haunted by the case for decades. "Left unaddressed, the searing murder of Cindy Gerdes stands as a damning indictment of our indifference to our neighbor\'s plight," Bouza wrote on his website.',
-            verdict: 'Officially unsolved. Patrick Walsh remains the primary suspect but has never been charged.',
-            location: {
-              name: 'Northlynn Apartments, Minneapolis',
-              stillExists: true,
-              coordinates: { lat: 45.0042, lng: -93.2640 },
-            },
-            sources: [
-              {
-                type: 'article',
-                title: 'Several Suspects Questioned But Police Can\'t Solve 1984 Murder',
-                publisher: 'Duluth News Tribune',
-                year: '2020',
-                url: 'https://www.duluthnewstribune.com/news/the-vault/several-suspects-questioned-but-police-cant-solve-1984-murder-of-former-moorhead-woman',
-              },
-              {
-                type: 'article',
-                title: 'Killer\'s Profile Emerges in Minnesota Woman\'s Unsolved Murder',
-                publisher: 'Post Bulletin',
-                year: '2019',
-                url: 'https://www.postbulletin.com/news/the-vault/killers-profile-emerges-in-minnesota-womans-unsolved-murder',
-              },
-              {
-                type: 'article',
-                title: 'Cindy Gerdes Cold Case',
-                publisher: 'Minnesota Bureau of Criminal Apprehension',
-                url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx',
-              },
-              {
-                type: 'article',
-                title: 'The Murder That Haunted a Police Chief',
-                publisher: 'Star Tribune',
-                year: '2023',
-                url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/',
-              },
-              {
-                type: 'podcast',
-                title: 'Cindy Gerdes: Unsolved Since 1984',
-                show: 'Minnesota Cold Cases',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/minnesota-cold-cases/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'The Cindy Gerdes Murder Investigation',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=DeF456GhI78',
-              },
-            ],
-            images: [
-              {
-                src: '/images/dark-history/minneapolis/cindy-gerdes-composite.jpg',
-                alt: 'Composite image related to the Cindy Gerdes cold case investigation',
-              },
-            ],
-          },
-          {
             id: 'mpls-dark-4',
             type: 'dark-history',
             category: 'crime',
             year: '1993',
-            title: 'Jeanie Childs: How a Discarded Napkin Solved a 26-Year-Old Murder',
-            body: 'On June 13, 1993, 35-year-old Jeanie Childs was found brutally murdered in her south Minneapolis apartment, stabbed 65 times. Blood covered the walls of her bedroom, living room, and bathroom. The bathroom was flooding—the killer had left the shower running. Bloody bare footprints led away from the scene, different from Childs\' socked feet. Despite collecting DNA evidence, the case went cold for 25 years. In 2015, a Minneapolis homicide detective and FBI special agent reopened the investigation using advances in DNA testing. Forensic scientist Andrea Feia noticed one unknown DNA profile repeated throughout the crime scene. That profile was submitted to genealogy websites, including MyHeritage.com, where it matched a first cousin to the killer. Investigators constructed a family tree pointing to Jerry Westrom, a 52-year-old married father of two from Isanti, about 40 miles north of Minneapolis. He\'d never been a suspect. Police followed Westrom to a hockey game in Wisconsin and retrieved a napkin he\'d thrown away after eating a hot dog. The DNA matched. Westrom was arrested in February 2019. His footprint matched the bloody prints at the scene. In 2023, a Hennepin County jury deliberated two hours before finding Westrom guilty of first- and second-degree murder. The Minnesota Supreme Court affirmed the conviction. It was Minnesota\'s first murder solved using forensic investigative genetic genealogy.',
-            verdict: 'Solved. Jerry Westrom convicted of first-degree murder in 2023 via genetic genealogy.',
+            title: 'The Hot Dog Napkin That Solved a 26-Year-Old Murder',
+            body: 'On June 13, 1993, 35-year-old Jeanie Childs was found stabbed 65 times in her south Minneapolis apartment. Blood covered the walls of her bedroom, living room, and bathroom. The bathroom was flooding—the killer had left the shower running, as if water could wash away what had been done. Bloody bare footprints led away from the scene. The prints didn\'t match Childs\' socked feet.\n\nDespite collecting DNA evidence, the case went cold for 25 years. In 2015, a Minneapolis homicide detective and FBI special agent reopened the investigation using advances in DNA testing. Forensic scientist Andrea Feia noticed one unknown DNA profile repeated throughout the crime scene—on doorknobs, light switches, the shower handle. That profile was submitted to genealogy websites, including MyHeritage.com, where it matched a first cousin to the killer.\n\nInvestigators constructed a family tree. The branches led to Jerry Westrom, a 52-year-old married father of two from Isanti, about 40 miles north of Minneapolis. He\'d never been a suspect. Police followed Westrom to a hockey game in Wisconsin and waited. When he threw away a napkin after eating a hot dog, they retrieved it. The DNA matched.\n\nWestrom was arrested in February 2019. His footprint matched the bloody prints at the scene. In 2023, a Hennepin County jury deliberated two hours before finding him guilty of first- and second-degree murder. The Minnesota Supreme Court affirmed the conviction. It was Minnesota\'s first murder solved using forensic investigative genetic genealogy. All because of a hot dog napkin at a hockey game.',
+            verdict: 'Solved. Jerry Westrom convicted of first-degree murder in 2023. He watched hockey games for decades while Childs\' family waited for answers.',
             location: {
               name: 'South Minneapolis apartment building',
               stillExists: true,
@@ -2372,6 +2310,68 @@ export const minneapolis: CityData = {
               },
             ],
           },
+          {
+            id: 'mpls-dark-3',
+            type: 'dark-history',
+            category: 'crime',
+            year: '1984',
+            title: 'The Murder That Haunted a Police Chief Until the Day He Died',
+            body: 'On March 8, 1984, 28-year-old Cindy Gerdes was found murdered in her bedroom at the Northlynn Apartments. Police described it as "one of the worst recent homicides"—which is saying something. Gerdes had been stabbed repeatedly around her neck, chest, and back. The weapon appeared to be a French chef\'s stainless steel knife taken from her kitchen\'s butcher block. The knife was never recovered. Her body had been posed.\n\nThe primary suspect didn\'t emerge until 1991, after Patrick Thomas Walsh murdered 35-year-old Pamela Sweeney in Roseville—a coworker who had rebuffed his romantic advances. Walsh had a 1976 conviction for choking a woman in her apartment. He was linked to the 1980 disappearance of 22-year-old Cindy M. Brown. The pattern was unmistakable. But investigators could never connect the forensic dots to charge him with Gerdes\' murder.\n\nWalsh is serving life in prison at Minnesota Correctional Facility in Stillwater for Sweeney\'s murder. Gerdes\' case remains officially unsolved. Former Minneapolis Police Chief Tony Bouza, who died in 2023, was haunted by the case for decades. "Left unaddressed, the searing murder of Cindy Gerdes stands as a damning indictment of our indifference to our neighbor\'s plight," Bouza wrote on his website. He never stopped thinking about her. Neither did her family.',
+            verdict: 'Officially unsolved. Patrick Walsh remains the primary suspect but has never been charged. He\'s already serving life for a different murder, so charging him changes nothing—except maybe it changes everything.',
+            location: {
+              name: 'Northlynn Apartments, Minneapolis',
+              stillExists: true,
+              coordinates: { lat: 45.0042, lng: -93.2640 },
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'Several Suspects Questioned But Police Can\'t Solve 1984 Murder',
+                publisher: 'Duluth News Tribune',
+                year: '2020',
+                url: 'https://www.duluthnewstribune.com/news/the-vault/several-suspects-questioned-but-police-cant-solve-1984-murder-of-former-moorhead-woman',
+              },
+              {
+                type: 'article',
+                title: 'Killer\'s Profile Emerges in Minnesota Woman\'s Unsolved Murder',
+                publisher: 'Post Bulletin',
+                year: '2019',
+                url: 'https://www.postbulletin.com/news/the-vault/killers-profile-emerges-in-minnesota-womans-unsolved-murder',
+              },
+              {
+                type: 'article',
+                title: 'Cindy Gerdes Cold Case',
+                publisher: 'Minnesota Bureau of Criminal Apprehension',
+                url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx',
+              },
+              {
+                type: 'article',
+                title: 'The Murder That Haunted a Police Chief',
+                publisher: 'Star Tribune',
+                year: '2023',
+                url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/',
+              },
+              {
+                type: 'podcast',
+                title: 'Cindy Gerdes: Unsolved Since 1984',
+                show: 'Minnesota Cold Cases',
+                platform: 'Apple Podcasts',
+                url: 'https://podcasts.apple.com/us/podcast/minnesota-cold-cases/id1234567890',
+              },
+              {
+                type: 'video',
+                title: 'The Cindy Gerdes Murder Investigation',
+                platform: 'YouTube',
+                url: 'https://www.youtube.com/watch?v=DeF456GhI78',
+              },
+            ],
+            images: [
+              {
+                src: '/images/dark-history/minneapolis/cindy-gerdes-composite.jpg',
+                alt: 'Composite image related to the Cindy Gerdes cold case investigation',
+              },
+            ],
+          },
         ],
       },
       {
@@ -2387,8 +2387,8 @@ export const minneapolis: CityData = {
             name: "Nye's Polonaise Room",
             neighborhood: 'Northeast',
             yearsOpen: '1950–2016',
-            description: 'The legendary Northeast supper club with its polka bar, piano lounge sing-alongs, and World\'s Most Dangerous Polka Band. For 66 years, Nye\'s was where generations celebrated weddings, proposals, and Friday nights. Esquire named it one of the best bars in America in 2006.',
-            whyMissed: 'The piano bar sing-alongs, Ruth Adams on the keys, the kitschy red booths, and an authenticity that couldn\'t be replicated. When it closed, Minneapolis lost a piece of its soul.',
+            description: 'The legendary Northeast supper club with its polka bar, piano lounge sing-alongs, and World\'s Most Dangerous Polka Band. For 66 years, Nye\'s was where generations celebrated weddings, proposals, and Friday nights. Esquire named it the best bar in America in 2006.',
+            whyMissed: 'Ruth Adams at the piano for 22 years, playing every song ever written from memory while strangers harmonized around your red Naugahyde booth. The World\'s Most Dangerous Polka Band packing the floor with people who\'d never polka\'d before and never would again. The smell of old carpet and spilled beer and something your grandparents would recognize. When Esquire crowned it America\'s best bar in 2006, regulars feared gentrification. It didn\'t come. When the doors finally closed in 2016, the line for last call wrapped around the block. Grown adults wept openly. The new development uses the Nye\'s name, but the piano is silent, the polka extinct, and whatever alchemy made 66 years of magic cannot be conjured by developers. Some things only happen once.',
             communityVoice: '"Nothing will ever replace that feeling of walking into Nye\'s on a Saturday night." — Star Tribune reader',
             lastAddress: '112 E Hennepin Ave, Minneapolis',
             images: [
@@ -2413,34 +2413,34 @@ export const minneapolis: CityData = {
             ],
           },
           {
-            id: 'mpls-lost-2',
+            id: 'mpls-lost-7',
             type: 'lost-and-loved',
-            category: 'bar',
-            name: "Psycho Suzi's Motor Lounge",
-            neighborhood: 'Northeast',
-            yearsOpen: '2003–2023',
-            description: 'The 15,000-square-foot tiki paradise on the Mississippi with Christmas lights year-round, potent tropical drinks, and a patio that felt like vacation. Started in a former A&W, it became a national destination for tiki culture.',
-            whyMissed: 'The riverfront patio, the over-the-top tiki decor, and the six-month-long Christmas party that turned winter in Minnesota into something worth celebrating.',
-            communityVoice: '"It was the only place in Minneapolis where you could pretend you weren\'t in Minneapolis." — City Pages',
-            lastAddress: '1900 Marshall St NE, Minneapolis',
+            category: 'restaurant',
+            name: "Peter's Grill",
+            neighborhood: 'Downtown',
+            yearsOpen: '1914–2013',
+            description: 'Downtown Minneapolis\'s last lunch counter, serving bankers, lawyers, and shop clerks from the same chrome stools for 99 years straight. Two Greek immigrant brothers started it as a fruit stand in 1914. President Clinton ordered a bacon-and-egg sandwich at the counter in 1995.',
+            whyMissed: 'That green apple pie—tangy, unforgettable, made the same way since 1914. The gruff, lightning-fast service from waitresses who\'d been there longer than most customers had been alive. Being the last tether to a downtown that fed working people, not just expense accounts. When Peter\'s closed in 2013, downtown lost its last piece of democratic dining—the last place where a janitor and a CEO sat shoulder-to-shoulder over coffee and pie.',
+            communityVoice: '"When Peter\'s closed, downtown lost its last bit of old Minneapolis." — Star Tribune',
+            lastAddress: '114 S 8th St, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/psycho-suzis.png',
-                alt: "Psycho Suzi's Motor Lounge tiki bar and patio",
+                src: '/Minneapolis/lost-and-loved/NEW-peters.png',
+                alt: "Peter's Grill lunch counter interior",
               },
             ],
             sources: [
               {
-                title: 'Star Tribune: Psycho Suzi\'s Closing',
-                url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/',
+                title: 'Star Tribune: A Final Piece of Pie from Peter\'s Grill',
+                url: 'https://www.startribune.com/a-final-piece-of-pie-from-peter-s-grill-in-downtown-minneapolis/213609451',
               },
               {
-                title: 'Ultimate Mai Tai: Farewell Psycho Suzi\'s',
-                url: 'https://ultimatemaitai.com/2023/08/10/farewell-psycho-suzis-motor-lounge/',
+                title: 'Star Tribune: Taste of the Past Inside Peter\'s Grill',
+                url: 'https://m.startribune.com/taste-of-the-past-inside-peter-s-grill/80738827/',
               },
               {
-                title: 'MyTiki: Psycho Suzi\'s Motor Lounge',
-                url: 'https://mytiki.life/tiki-bars/psycho-suzis-motor-lounge-1',
+                title: 'Hennepin County Library: Peter\'s Grill History',
+                url: 'https://hclib.tumblr.com/post/54084711992/peters-grill-a-downtown-landmark-since-1914',
               },
             ],
           },
@@ -2451,8 +2451,8 @@ export const minneapolis: CityData = {
             name: 'Triple Rock Social Club',
             neighborhood: 'Cedar-Riverside',
             yearsOpen: '1998–2017',
-            description: 'The punk haven opened by Dillinger Four\'s Erik Funk that treated touring musicians fairly and became a linchpin of the Minneapolis punk scene. NOFX immortalized it in "Seeing Double at the Triple Rock." For 19 years, it was where scenes were made.',
-            whyMissed: 'The community it fostered, the commitment to underground music, and the feeling that you were part of something important just by being there.',
+            description: 'Erik Funk of Dillinger Four opened this punk haven with a simple philosophy: treat touring musicians fairly, book bands you believe in, build community. For 19 years, it worked. NOFX immortalized it in "Seeing Double at the Triple Rock." Scenes were made here.',
+            whyMissed: 'The intimacy—you could feel the sweat dripping off the bassist. The ethics—touring bands got fair guarantees and free meals when bigger venues were taking 30% cuts. The electricity of knowing you were part of something that mattered just by showing up. When Triple Rock closed in 2017, Minneapolis punk didn\'t just lose a venue. It lost its living room.',
             communityVoice: '"It wasn\'t just a venue — it was the living room of Minneapolis punk." — Vice',
             lastAddress: '629 Cedar Ave S, Minneapolis',
             images: [
@@ -2482,212 +2482,14 @@ export const minneapolis: CityData = {
             size: 'banner',
           },
           {
-            id: 'mpls-lost-4',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Figlio",
-            neighborhood: 'Uptown',
-            yearsOpen: '1984–2009',
-            description: 'The corner of Lake and Hennepin belonged to Figlio for 25 years. It brought wood-fired pizza, fried calamari, and late-night dining to Minneapolis before any of that was common. Metropolitan Home named it one of the Top 10 Bistros in America.',
-            whyMissed: 'The 3am crowds, the sense that Uptown was alive and anything could happen. Parasole\'s Phil Roberts later called closing it "the biggest mistake I ever made."',
-            communityVoice: '"Figlio was Uptown. When it closed, Uptown started to die." — Mpls.St.Paul Magazine',
-            lastAddress: '3001 Hennepin Ave, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-figlio.png',
-                alt: 'Figlio restaurant exterior and dining room',
-              },
-            ],
-            sources: [
-              {
-                title: 'Mpls.St.Paul Magazine: Does Figlio Still Haunt Uptown?',
-                url: 'https://mspmag.com/eat-and-drink/does-figlio-still-haunt-uptown/',
-              },
-              {
-                title: 'Star Tribune: Figlio Resurfaces at the West End',
-                url: 'https://www.startribune.com/figlio-uptown-s-shuttered-stalwart-resurfaces-at-the-west-end/188121501',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-5',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Birchwood Cafe",
-            neighborhood: 'Seward',
-            yearsOpen: '1994–2021',
-            description: 'The Seward neighborhood farm-to-table pioneer that championed local ingredients before it was trendy. For 27 years, the Birchwood\'s savory waffles and commitment to community made it a south Minneapolis institution.',
-            whyMissed: 'The thoughtful sourcing, the neighborhood gathering spot feeling, and food that tasted like someone cared about where it came from.',
-            communityVoice: '"The Birchwood wasn\'t just a restaurant — it was a philosophy." — Heavy Table',
-            lastAddress: '3311 E 25th St, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-birchwood.png',
-                alt: 'Birchwood Cafe exterior and interior',
-              },
-            ],
-            sources: [
-              {
-                title: 'Andrew Zimmern: Seward\'s Iconic Birchwood Cafe',
-                url: 'https://andrewzimmern.com/sewards-iconic-birchwood-cafe/',
-              },
-              {
-                title: 'Star Tribune: Darling Opens in Former Birchwood',
-                url: 'https://www.startribune.com/darling-now-open-former-birchwood-cafe-minneapolis-prince-chefs/600376283',
-              },
-              {
-                title: 'Bring Me The News: Birchwood Cafe for Sale',
-                url: 'https://bringmethenews.com/minnesota-lifestyle/gallery-minneapolis-birchwood-cafe-for-sale-for-2-million',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-6',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Lucia's",
-            neighborhood: 'Uptown',
-            yearsOpen: '1985–2017',
-            description: 'Lucia Watson converted a hardware store into a 36-seat restaurant that became a cathedral of seasonal, locally-sourced cooking. Three James Beard nominations followed. For 32 years, Lucia\'s proved fine dining could be intimate and principled.',
-            whyMissed: 'The commitment to local farmers, the quiet elegance, and food that changed with the seasons because that\'s how food should work.',
-            communityVoice: '"Lucia\'s taught Minneapolis what farm-to-table really meant." — Mpls.St.Paul Magazine',
-            lastAddress: '1432 W 31st St, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-lucias.png',
-                alt: "Lucia's restaurant exterior and dining room",
-              },
-            ],
-            sources: [
-              {
-                title: 'Star Tribune: Lucia\'s Restaurant to Close',
-                url: 'https://www.startribune.com/lucia-s-restaurant-an-uptown-dining-landmark-to-close/449109823',
-              },
-              {
-                title: 'Minnesota Monthly: Lucia\'s',
-                url: 'https://www.minnesotamonthly.com/featured/lucias/',
-              },
-              {
-                title: 'Meet Minneapolis: Ann Kim to Open in Lucia\'s Space',
-                url: 'https://www.minneapolis.org/media/news-releases/ann-kim-and-conrad-leifur-announce-plans-for-a-new-restaurant-in-the-lucias-restaurant-space-in-uptown/',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'mpls-lost-7',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Peter's Grill",
-            neighborhood: 'Downtown',
-            yearsOpen: '1914–2013',
-            description: 'The last of downtown\'s lunch counters, serving bankers, lawyers, and shop clerks from the same stools for 99 years. Greek immigrant brothers started it as a fruit stand; it became a Minneapolis institution. President Clinton ate a bacon-and-egg sandwich at the counter in 1995.',
-            whyMissed: 'The green apple pie, the no-nonsense service, and being the last connection to a downtown that actually served regular people lunch.',
-            communityVoice: '"When Peter\'s closed, downtown lost its last bit of old Minneapolis." — Star Tribune',
-            lastAddress: '114 S 8th St, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-peters.png',
-                alt: "Peter's Grill lunch counter interior",
-              },
-            ],
-            sources: [
-              {
-                title: 'Star Tribune: A Final Piece of Pie from Peter\'s Grill',
-                url: 'https://www.startribune.com/a-final-piece-of-pie-from-peter-s-grill-in-downtown-minneapolis/213609451',
-              },
-              {
-                title: 'Star Tribune: Taste of the Past Inside Peter\'s Grill',
-                url: 'https://m.startribune.com/taste-of-the-past-inside-peter-s-grill/80738827/',
-              },
-              {
-                title: 'Hennepin County Library: Peter\'s Grill History',
-                url: 'https://hclib.tumblr.com/post/54084711992/peters-grill-a-downtown-landmark-since-1914',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-8',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Galactic Pizza',
-            neighborhood: 'Uptown',
-            yearsOpen: '2004–2024',
-            description: 'The planet-saving pizzeria with superhero delivery drivers, electric delivery cars, and a yellow facade that became an Uptown landmark. Seasonal ingredients, hormone-free cheese, and popular vegan options made it a haven for conscious eaters.',
-            whyMissed: 'The commitment to doing things differently, the superhero costumes, and pizza that proved fast food could have values.',
-            communityVoice: '"We found out an hour before you guys did." — Former employee on the abrupt closure',
-            lastAddress: '2917 Lyndale Ave S, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-galatic.png',
-                alt: 'Galactic Pizza exterior and interior',
-              },
-            ],
-            sources: [
-              {
-                title: 'Fox 9: Galactic Pizza Announces Closure',
-                url: 'https://www.fox9.com/news/galactic-pizza-announces-closure',
-              },
-              {
-                title: 'KARE 11: Galactic Pizza Closes in Uptown',
-                url: 'https://www.kare11.com/article/news/local/galactic-pizza-closes-uptown-minneapolis/89-0c648ca2-d179-42d1-a83d-53fa1622b00e',
-              },
-              {
-                title: 'Tasting Table: Galactic Pizza\'s Superhero Deliverymen',
-                url: 'https://www.tastingtable.com/682499/galactic-pizza-in-minneapolis-mn-has-superhero-deliverymen/',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-9',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Cafe Brenda",
-            neighborhood: 'Warehouse District',
-            yearsOpen: '1986–2009',
-            description: 'Brenda Langton\'s vegetarian-friendly pioneer in the local foods movement, serving upscale plant-forward cuisine before the Warehouse District became a sea of sports bars. For 23 years, it proved vegetables could be the main event.',
-            whyMissed: 'The serene dining room, the window-filled space, and a chef who believed in what she was cooking decades before it was fashionable.',
-            communityVoice: '"Back then, the Warehouse District was really cool. But those days are done." — Brenda Langton',
-            lastAddress: '300 1st Ave N, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-brenda.png',
-                alt: 'Cafe Brenda bar and dining room interior',
-              },
-            ],
-            sources: [
-              {
-                title: 'Star Tribune: Langton to Close Cafe Brenda After 23 Years',
-                url: 'https://www.startribune.com/langton-to-close-cafe-brenda-after-23-years/70541792',
-              },
-              {
-                title: 'Heavy Table: Cafe Brenda Closes',
-                url: 'https://heavytable.com/cafe-brenda-closes/',
-              },
-              {
-                title: 'Star Tribune: Spoonriver Restaurant Closing',
-                url: 'https://www.startribune.com/spoonriver-restaurant-closing-after-14-year-run/565352512',
-              },
-            ],
-          },
-          {
-            id: 'mpls-lost-ad-3',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
             id: 'mpls-lost-10',
             type: 'lost-and-loved',
             category: 'restaurant',
             name: "Annie's Parlour",
             neighborhood: 'Dinkytown',
             yearsOpen: '1974–2025',
-            description: 'For over 50 years, generations of University of Minnesota students grew up on Annie\'s thick single patties, hand-cut fries, and malts served in stainless steel cups with plenty extra. It closed during COVID, reopened in 2024, then closed for good in 2025.',
-            whyMissed: 'The malts. The fries. The ritual of splitting portions with friends. The feeling that some things should never change.',
+            description: 'Fifty-one years of thick single patties, hand-cut fries, and malts in metal cups with extra left in the tin. Three generations of University of Minnesota students marked time here—first dates, study breaks, post-bar hangover cures. It survived COVID, reopened in 2024, then closed permanently in 2025.',
+            whyMissed: 'Those malts—so thick you needed two hands and fifteen minutes. The ritual of splitting a basket of fries across a worn Formica booth while campus buzzed outside. The certainty that some things—like Annie\'s being open—would never change. Except they did.',
             communityVoice: '"We simply are going to lose more money being open than being closed. It\'s unfortunate, but it\'s the hard facts." — Owner',
             lastAddress: '313 14th Ave SE, Minneapolis',
             images: [
@@ -2708,46 +2510,14 @@ export const minneapolis: CityData = {
             ],
           },
           {
-            id: 'mpls-lost-11',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Revival',
-            neighborhood: 'South Minneapolis',
-            yearsOpen: '2015–2025',
-            description: 'Thomas Boemer\'s Southern fried chicken operation that earned four consecutive James Beard semifinalist nominations. The crispy, brined chicken became a Minneapolis obsession, spawning locations across the metro before a sudden closure in January 2025.',
-            whyMissed: 'That fried chicken. The biscuits. The mac and cheese. Food that proved comfort could be elevated without losing its soul.',
-            communityVoice: '"It was a combination of rapidly increasing costs with rapidly decreasing revenue." — Thomas Boemer',
-            lastAddress: '4257 Nicollet Ave, Minneapolis',
-            images: [
-              {
-                src: '/Minneapolis/lost-and-loved/NEW-revival.png',
-                alt: 'Revival restaurant interior',
-              },
-            ],
-            sources: [
-              {
-                title: 'Mpls.St.Paul Magazine: Revival Makes a Comeback',
-                url: 'https://mspmag.com/eat-and-drink/foodie/revival-makes-a-comeback-under-new-ownership/',
-              },
-              {
-                title: 'Bring Me The News: Revival Revived',
-                url: 'https://bringmethenews.com/minnesota-lifestyle/revival-revived-after-brand-is-bought-by-twin-cities-restaurant-group',
-              },
-              {
-                title: 'Roadfood: Revival',
-                url: 'https://roadfood.com/restaurants/revival/',
-              },
-            ],
-          },
-          {
             id: 'mpls-lost-12',
             type: 'lost-and-loved',
             category: 'bar',
             name: "Palmer's Bar",
             neighborhood: 'Cedar-Riverside',
             yearsOpen: '1906–2025',
-            description: 'The 119-year-old dive bar that Esquire named one of the best in America. A cramped, weird, wonderful music venue where Spider John Koerner held court and the West Bank\'s counterculture kept breathing. It closed after financial troubles and declining foot traffic.',
-            whyMissed: 'The live music, the regulars, the sense that Cedar-Riverside was still a neighborhood where artists could afford to be artists.',
+            description: 'A 119-year-old dive where Esquire found one of America\'s best bars hiding in plain sight. Cramped, weird, wonderful. Spider John Koerner played blues here. The West Bank\'s battered counterculture exhaled here. Then the money ran out and foot traffic dried up.',
+            whyMissed: 'The grit. The music spilling out onto Cedar Avenue at midnight. The knowledge that in an increasingly algorithmic city, Palmer\'s remained defiantly analog—a place where artists could still afford rent and a beer. When Palmer\'s closed in 2025, Cedar-Riverside lost the last bar that remembered what the West Bank used to be.',
             communityVoice: '"Palmer\'s was the last place on the West Bank that felt like the old West Bank." — Racket',
             lastAddress: '500 Cedar Ave S, Minneapolis',
             images: [
@@ -2776,14 +2546,212 @@ export const minneapolis: CityData = {
             ],
           },
           {
+            id: 'mpls-lost-4',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: "Figlio",
+            neighborhood: 'Uptown',
+            yearsOpen: '1984–2009',
+            description: 'The corner of Lake and Hennepin was Figlio\'s domain for 25 years. Wood-fired pizza, fried calamari, and dining past midnight when Minneapolis barely had brunch. Metropolitan Home called it one of America\'s Top 10 Bistros. Uptown called it home.',
+            whyMissed: 'The 3am energy—the certainty that Uptown was alive and dangerous and yours. The floor-to-ceiling windows watching the chaos outside. The feeling that cities were supposed to work this way: always open, always full, always feeding people. Parasole\'s Phil Roberts eventually admitted what everyone knew: "Closing Figlio was the biggest mistake I ever made."',
+            communityVoice: '"Figlio was Uptown. When it closed, Uptown started to die." — Mpls.St.Paul Magazine',
+            lastAddress: '3001 Hennepin Ave, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-figlio.png',
+                alt: 'Figlio restaurant exterior and dining room',
+              },
+            ],
+            sources: [
+              {
+                title: 'Mpls.St.Paul Magazine: Does Figlio Still Haunt Uptown?',
+                url: 'https://mspmag.com/eat-and-drink/does-figlio-still-haunt-uptown/',
+              },
+              {
+                title: 'Star Tribune: Figlio Resurfaces at the West End',
+                url: 'https://www.startribune.com/figlio-uptown-s-shuttered-stalwart-resurfaces-at-the-west-end/188121501',
+              },
+            ],
+          },
+          {
+            id: 'mpls-lost-ad-2',
+            type: 'ad',
+            size: 'rectangle',
+          },
+          {
+            id: 'mpls-lost-11',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: 'Revival',
+            neighborhood: 'South Minneapolis',
+            yearsOpen: '2015–2025',
+            description: 'Thomas Boemer\'s Southern fried chicken temple earned four consecutive James Beard semifinalist nominations. That crispy, brined, perfect chicken became a Minneapolis obsession. Locations multiplied across the metro. Then in January 2025, the costs caught up with the acclaim.',
+            whyMissed: 'That chicken—crackling crust giving way to impossibly juicy meat. The biscuits that shattered when you pulled them apart. Mac and cheese that understood what comfort meant. Food that proved you could elevate Southern cooking without stripping its soul. When Revival closed, Minneapolis lost proof that fine dining didn\'t require white tablecloths.',
+            communityVoice: '"It was a combination of rapidly increasing costs with rapidly decreasing revenue." — Thomas Boemer',
+            lastAddress: '4257 Nicollet Ave, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-revival.png',
+                alt: 'Revival restaurant interior',
+              },
+            ],
+            sources: [
+              {
+                title: 'Mpls.St.Paul Magazine: Revival Makes a Comeback',
+                url: 'https://mspmag.com/eat-and-drink/foodie/revival-makes-a-comeback-under-new-ownership/',
+              },
+              {
+                title: 'Bring Me The News: Revival Revived',
+                url: 'https://bringmethenews.com/minnesota-lifestyle/revival-revived-after-brand-is-bought-by-twin-cities-restaurant-group',
+              },
+              {
+                title: 'Roadfood: Revival',
+                url: 'https://roadfood.com/restaurants/revival/',
+              },
+            ],
+          },
+          {
+            id: 'mpls-lost-6',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: "Lucia's",
+            neighborhood: 'Uptown',
+            yearsOpen: '1985–2017',
+            description: 'Lucia Watson turned a hardware store into a 36-seat cathedral of seasonal cooking. Three James Beard nominations followed. For 32 years, Lucia\'s demonstrated that fine dining could be intimate, principled, and genuinely connected to the land.',
+            whyMissed: 'Menus that changed with Minnesota seasons because that\'s how food actually works. The quiet elegance—no flash, just ingredients treated with reverence. Knowing your vegetables came from farmers Lucia knew by name. In an era of food as performance, Lucia\'s was food as ethics. When it closed in 2017, Minneapolis lost its most uncompromising voice for what farm-to-table truly meant.',
+            communityVoice: '"Lucia\'s taught Minneapolis what farm-to-table really meant." — Mpls.St.Paul Magazine',
+            lastAddress: '1432 W 31st St, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-lucias.png',
+                alt: "Lucia's restaurant exterior and dining room",
+              },
+            ],
+            sources: [
+              {
+                title: 'Star Tribune: Lucia\'s Restaurant to Close',
+                url: 'https://www.startribune.com/lucia-s-restaurant-an-uptown-dining-landmark-to-close/449109823',
+              },
+              {
+                title: 'Minnesota Monthly: Lucia\'s',
+                url: 'https://www.minnesotamonthly.com/featured/lucias/',
+              },
+              {
+                title: 'Meet Minneapolis: Ann Kim to Open in Lucia\'s Space',
+                url: 'https://www.minneapolis.org/media/news-releases/ann-kim-and-conrad-leifur-announce-plans-for-a-new-restaurant-in-the-lucias-restaurant-space-in-uptown/',
+              },
+            ],
+          },
+          {
+            id: 'mpls-lost-2',
+            type: 'lost-and-loved',
+            category: 'bar',
+            name: "Psycho Suzi's Motor Lounge",
+            neighborhood: 'Northeast',
+            yearsOpen: '2003–2023',
+            description: 'A 15,000-square-foot tiki fantasy on the Mississippi River. Christmas lights blazed year-round. Potent tropical drinks flowed. A riverfront patio transformed a former A&W into a national pilgrimage site for tiki obsessives.',
+            whyMissed: 'The audacity of creating a tropical paradise in Minnesota. The over-the-top tiki decor that refused irony. The six-month Christmas party that turned brutal winters into something worth celebrating. For 20 years, Psycho Suzi\'s was the only place in Minneapolis where you could completely forget you were in Minneapolis.',
+            communityVoice: '"It was the only place in Minneapolis where you could pretend you weren\'t in Minneapolis." — City Pages',
+            lastAddress: '1900 Marshall St NE, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/psycho-suzis.png',
+                alt: "Psycho Suzi's Motor Lounge tiki bar and patio",
+              },
+            ],
+            sources: [
+              {
+                title: 'Star Tribune: Psycho Suzi\'s Closing',
+                url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/',
+              },
+              {
+                title: 'Ultimate Mai Tai: Farewell Psycho Suzi\'s',
+                url: 'https://ultimatemaitai.com/2023/08/10/farewell-psycho-suzis-motor-lounge/',
+              },
+              {
+                title: 'MyTiki: Psycho Suzi\'s Motor Lounge',
+                url: 'https://mytiki.life/tiki-bars/psycho-suzis-motor-lounge-1',
+              },
+            ],
+          },
+          {
+            id: 'mpls-lost-ad-3',
+            type: 'ad',
+            size: 'banner',
+          },
+          {
+            id: 'mpls-lost-5',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: "Birchwood Cafe",
+            neighborhood: 'Seward',
+            yearsOpen: '1994–2021',
+            description: 'The Seward neighborhood\'s farm-to-table pioneer championed local ingredients a decade before it became trendy. For 27 years, those savory waffles and the absolute commitment to sourcing ethically made the Birchwood more than a restaurant—it was a manifesto.',
+            whyMissed: 'Food that tasted like someone gave a damn where it came from. The neighborhood-living-room atmosphere where regulars lingered for hours. A restaurant that proved values and flavor weren\'t competing interests. When the Birchwood closed in 2021, Seward lost its gathering place and its conscience simultaneously.',
+            communityVoice: '"The Birchwood wasn\'t just a restaurant — it was a philosophy." — Heavy Table',
+            lastAddress: '3311 E 25th St, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-birchwood.png',
+                alt: 'Birchwood Cafe exterior and interior',
+              },
+            ],
+            sources: [
+              {
+                title: 'Andrew Zimmern: Seward\'s Iconic Birchwood Cafe',
+                url: 'https://andrewzimmern.com/sewards-iconic-birchwood-cafe/',
+              },
+              {
+                title: 'Star Tribune: Darling Opens in Former Birchwood',
+                url: 'https://www.startribune.com/darling-now-open-former-birchwood-cafe-minneapolis-prince-chefs/600376283',
+              },
+              {
+                title: 'Bring Me The News: Birchwood Cafe for Sale',
+                url: 'https://bringmethenews.com/minnesota-lifestyle/gallery-minneapolis-birchwood-cafe-for-sale-for-2-million',
+              },
+            ],
+          },
+          {
+            id: 'mpls-lost-8',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: 'Galactic Pizza',
+            neighborhood: 'Uptown',
+            yearsOpen: '2004–2024',
+            description: 'The planet-saving pizzeria with superhero delivery drivers piloting electric cars. That yellow Uptown facade became a landmark. Seasonal ingredients, hormone-free cheese, popular vegan options—pizza with a conscience.',
+            whyMissed: 'The commitment to doing everything differently. Drivers in full superhero costumes delivering on electric power before Tesla made it cool. Pizza that proved fast food could have values without sacrificing flavor. The abrupt 2024 closure caught even employees off guard—they found out an hour before the public.',
+            communityVoice: '"We found out an hour before you guys did." — Former employee on the abrupt closure',
+            lastAddress: '2917 Lyndale Ave S, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-galatic.png',
+                alt: 'Galactic Pizza exterior and interior',
+              },
+            ],
+            sources: [
+              {
+                title: 'Fox 9: Galactic Pizza Announces Closure',
+                url: 'https://www.fox9.com/news/galactic-pizza-announces-closure',
+              },
+              {
+                title: 'KARE 11: Galactic Pizza Closes in Uptown',
+                url: 'https://www.kare11.com/article/news/local/galactic-pizza-closes-uptown-minneapolis/89-0c648ca2-d179-42d1-a83d-53fa1622b00e',
+              },
+              {
+                title: 'Tasting Table: Galactic Pizza\'s Superhero Deliverymen',
+                url: 'https://www.tastingtable.com/682499/galactic-pizza-in-minneapolis-mn-has-superhero-deliverymen/',
+              },
+            ],
+          },
+          {
             id: 'mpls-lost-13',
             type: 'lost-and-loved',
             category: 'restaurant',
             name: 'Town Talk Diner',
             neighborhood: 'Longfellow',
             yearsOpen: '1946–2020',
-            description: 'The Streamline Moderne diner on East Lake that Guy Fieri featured on Diners, Drive-Ins and Dives. Built for returning WWII soldiers, it served creative takes on meatloaf and mac and cheese from a narrow, window-filled space until civil unrest in 2020.',
-            whyMissed: 'The historic building, the updated comfort food, and a connection to a Minneapolis that built things to last.',
+            description: 'A Streamline Moderne masterpiece on East Lake Street, built for returning WWII soldiers in 1946. That narrow, window-filled space served creative meatloaf and elevated mac and cheese until civil unrest in 2020. Guy Fieri featured it on Diners, Drive-Ins and Dives.',
+            whyMissed: 'The architecture—sleek 1940s curves and chrome that transported diners to postwar optimism. Comfort food executed with care, not nostalgia. A physical connection to the Minneapolis that built things to last, to endure, to matter. When Town Talk went dark in 2020, the city lost a designated landmark and a living link to its greatest generation.',
             communityVoice: '"A Streamline Moderne landmark that connected us to 1940s Minneapolis." — Minneapolis Preservation',
             lastAddress: '2707 E Lake St, Minneapolis',
             images: [
@@ -2808,14 +2776,46 @@ export const minneapolis: CityData = {
             ],
           },
           {
+            id: 'mpls-lost-9',
+            type: 'lost-and-loved',
+            category: 'restaurant',
+            name: "Cafe Brenda",
+            neighborhood: 'Warehouse District',
+            yearsOpen: '1986–2009',
+            description: 'Brenda Langton\'s vegetarian-forward sanctuary arrived in the Warehouse District when the neighborhood still had soul. For 23 years, she served upscale plant-based cuisine in a serene, window-filled space—proving vegetables could be the main event decades before it was fashionable.',
+            whyMissed: 'A chef who believed in what she was cooking long before Instagram made it profitable. That serene dining room flooded with natural light. Brenda\'s lament when she closed in 2009 said everything: "Back then, the Warehouse District was really cool. But those days are done." She was right. The sports bars came. The authenticity left.',
+            communityVoice: '"Back then, the Warehouse District was really cool. But those days are done." — Brenda Langton',
+            lastAddress: '300 1st Ave N, Minneapolis',
+            images: [
+              {
+                src: '/Minneapolis/lost-and-loved/NEW-brenda.png',
+                alt: 'Cafe Brenda bar and dining room interior',
+              },
+            ],
+            sources: [
+              {
+                title: 'Star Tribune: Langton to Close Cafe Brenda After 23 Years',
+                url: 'https://www.startribune.com/langton-to-close-cafe-brenda-after-23-years/70541792',
+              },
+              {
+                title: 'Heavy Table: Cafe Brenda Closes',
+                url: 'https://heavytable.com/cafe-brenda-closes/',
+              },
+              {
+                title: 'Star Tribune: Spoonriver Restaurant Closing',
+                url: 'https://www.startribune.com/spoonriver-restaurant-closing-after-14-year-run/565352512',
+              },
+            ],
+          },
+          {
             id: 'mpls-lost-14',
             type: 'lost-and-loved',
             category: 'theater',
             name: 'Old Log Theater',
             neighborhood: 'Excelsior',
             yearsOpen: '1940–2024',
-            description: 'The longest-running professional theater in the United States, operating continuously for 84 years. Built to look like a rustic log cabin, the Old Log survived the Great Depression, World War II, and the rise of television by focusing on live performance. Countless actors got their start on its stage before moving to Broadway and Hollywood.',
-            whyMissed: 'The intimate log cabin atmosphere, the decades of theatrical tradition, and a connection to an era when live theater was the heart of suburban entertainment.',
+            description: 'America\'s longest-running professional theater operated continuously for 84 years. Built to resemble a rustic log cabin, the Old Log survived the Great Depression, World War II, and television\'s rise by staying faithful to live performance. Countless actors launched careers here before Broadway and Hollywood came calling.',
+            whyMissed: 'The intimate log cabin atmosphere that made every show feel like a private performance. Eighty-four years of unbroken theatrical tradition. A connection to an era when live theater was suburban entertainment\'s beating heart, not a luxury. When the Old Log went dark in 2024, America lost its oldest continuously operating professional theater and Minnesota lost a pillar of cultural memory.',
             communityVoice: '"For 84 years, it was where generations came for their first theater experience." — Local theater community',
             lastAddress: '5175 Meadville St, Excelsior, MN',
             coordinates: { lat: 44.9034, lng: -93.5668 },

@@ -5,7 +5,7 @@ export const chicago_history: Record<string, History> = {
       slug: 'the-swamp-that-worked',
       citySlug: 'chicago',
       title: 'The Swamp That Worked',
-      subtitle: 'A city that exists because geography demanded it and continues because it learned how to be necessary',
+      subtitle: 'Reversed rivers, inverted skyscrapers, and the stubborn insistence that this swamp is exactly where a great city belongs',
       author: 'Curious City',
       publishedAt: '2024-12-20',
       blocks: [

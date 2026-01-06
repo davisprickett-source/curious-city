@@ -5,7 +5,7 @@ export const anchorage_history: Record<string, History> = {
       slug: 'the-last-frontier-city',
       citySlug: 'anchorage',
       title: 'The Last Frontier City',
-      subtitle: 'Where wilderness begins at the edge of the parking lot',
+      subtitle: 'Strip malls, moose calving in backyards, and the strange normalcy of living at 61 degrees north',
       author: 'Curious City',
       publishedAt: '2024-12-22',
       blocks: [
@@ -28,7 +28,7 @@ export const anchorage_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'Oil Built This Place',
+          content: 'The Check Everyone Gets',
         },
         {
           id: 'p3',

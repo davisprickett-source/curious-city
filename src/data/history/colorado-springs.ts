@@ -5,7 +5,7 @@ export const colorado_springs_history: Record<string, History> = {
       slug: 'pikes-peak-or-bust',
       citySlug: 'colorado-springs',
       title: 'Pikes Peak or Bust',
-      subtitle: 'A city of contradictions at the foot of America\'s mountain',
+      subtitle: 'Megachurches, missile silos, and the evangelical Vatican hiding under 14,000 feet of granite',
       author: 'Curious City',
       publishedAt: '2024-12-21',
       heroImage: {
@@ -34,7 +34,7 @@ export const colorado_springs_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'The Mountain Watches',
+          content: '14,115 Feet of Witness',
         },
         {
           id: 'p3',

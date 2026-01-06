@@ -5,7 +5,7 @@ export const raleigh_history: Record<string, History> = {
       slug: 'invented-before-it-existed',
       citySlug: 'raleigh',
       title: 'Invented Before It Existed',
-      subtitle: 'A planned capital still figuring out what it\'s becoming',
+      subtitle: 'Red clay, research parks, and a city named for a man who never visited',
       author: 'Curious City',
       publishedAt: '2024-12-18',
       blocks: [
@@ -33,7 +33,7 @@ export const raleigh_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'The Triangle',
+          content: 'The Geometry of Innovation',
         },
         {
           id: 'p4',

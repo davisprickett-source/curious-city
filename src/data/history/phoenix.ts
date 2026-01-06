@@ -5,7 +5,7 @@ export const phoenix_history: Record<string, History> = {
       slug: 'the-air-conditioned-dream',
       citySlug: 'phoenix',
       title: 'The Air-Conditioned Dream',
-      subtitle: 'A city that shouldn\'t exist, existing grandly anyway',
+      subtitle: 'Five million people, eight inches of rain, and the absolute conviction that engineering beats ecology',
       author: 'Curious City',
       publishedAt: '2024-12-22',
       heroImage: {
@@ -39,7 +39,7 @@ export const phoenix_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'Air Conditioning and Explosion',
+          content: 'The Machine That Made It Possible',
         },
         {
           id: 'p4',

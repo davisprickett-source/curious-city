@@ -5,7 +5,7 @@ export const denver_history: Record<string, History> = {
       slug: 'mile-high-hustle',
       citySlug: 'denver',
       title: 'Mile High Hustle',
-      subtitle: 'A city that learned to sell its altitude and never stopped',
+      subtitle: 'Gold, silver, oil, weed, and the peculiar alchemy of turning mountain proximity into money',
       author: 'Curious City',
       publishedAt: '2024-12-22',
       blocks: [
@@ -33,7 +33,7 @@ export const denver_history: Record<string, History> = {
         {
           id: 'sub1',
           type: 'subheading',
-          content: 'Rails and Silver',
+          content: 'The Railroad That Saved Itself',
         },
         {
           id: 'p4',
@@ -68,7 +68,7 @@ export const denver_history: Record<string, History> = {
         {
           id: 'sub2',
           type: 'subheading',
-          content: 'Green Crosses and Growing Pains',
+          content: 'The Latest Legal Frontier',
         },
         {
           id: 'p8',

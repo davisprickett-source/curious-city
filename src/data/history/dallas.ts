@@ -5,7 +5,7 @@ export const dallas_history: Record<string, History> = {
       slug: 'will-to-exist',
       citySlug: 'dallas',
       title: 'The Will to Exist',
-      subtitle: 'A city with no reason to exist except the will to exist grandly',
+      subtitle: 'No river, no harbor, no geographic excuse—just 180 years of deciding to matter anyway',
       author: 'Curious City',
       publishedAt: '2024-12-21',
       blocks: [
@@ -63,7 +63,7 @@ export const dallas_history: Record<string, History> = {
         {
           id: 'sub2',
           type: 'subheading',
-          content: 'Wealth on Display',
+          content: 'The Ostentatious Kind',
         },
         {
           id: 'p7',
