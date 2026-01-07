@@ -3,7 +3,11 @@
  * Usage: npx tsx scripts/fetch-events.ts [city-slug]
  */
 
-import 'dotenv/config'
+import * as dotenv from 'dotenv'
+import * as path from 'path'
+
+// Load .env.local explicitly
+dotenv.config({ path: path.resolve(process.cwd(), '.env.local') })
 import { createTicketmasterClient } from '../src/lib/ticketmaster'
 import { createEventbriteClient } from '../src/lib/eventbrite'
 import { mergeEvents, filterEvents, formatForReview, normalizedToEventItem } from '../src/lib/event-aggregator'

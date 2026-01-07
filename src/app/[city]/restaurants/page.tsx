@@ -64,6 +64,7 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         markerType="restaurant"
         showBanner={true}
         bannerImage="/global-banners/restaurant-banner.png"
+        currentCategory="restaurants"
       />
 
       <Footer />

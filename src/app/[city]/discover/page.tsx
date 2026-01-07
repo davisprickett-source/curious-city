@@ -49,11 +49,12 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
       description: 'Unsolved mysteries and forgotten crimes',
       href: `/${slug}/dark-history`,
     },
-    {
-      title: 'Scenes',
-      description: 'Photo and video galleries',
-      href: `/${slug}/scenes`,
-    },
+    // Scenes hidden for v1 launch
+    // {
+    //   title: 'Scenes',
+    //   description: 'Photo and video galleries',
+    //   href: `/${slug}/scenes`,
+    // },
   ]
 
   return (

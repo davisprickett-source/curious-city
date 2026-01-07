@@ -25,7 +25,7 @@ export function HeroSlide({ data, isFirst = false, isActive }: HeroSlideProps) {
   const gradient = pageTypeGradients[data.pageType]
 
   return (
-    <div className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden">
+    <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
       {/* Background Image */}
       {data.thumbnail ? (
         <Image
@@ -46,83 +46,43 @@ export function HeroSlide({ data, isFirst = false, isActive }: HeroSlideProps) {
 
       {/* Content */}
       <div className="absolute inset-0 flex items-end">
-        <div className="container-page pb-12 md:pb-16">
+        <div className="container-page pb-14 md:pb-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-3xl"
           >
-            {/* First Slide: Show Value Prop ONLY */}
-            {isFirst ? (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              >
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-                  Where Cities <span className="text-accent-300">Tell Their Secrets</span>
-                </h1>
-                <p className="text-lg md:text-xl text-white/90 mb-8">
-                  Dark history, hidden curiosities, and the stories guidebooks won't tell you—from cities across America
-                </p>
-                <Link
-                  href="#content"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-lg transition-all duration-300 hover:gap-3 hover:shadow-xl"
-                >
-                  Start Exploring
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2.5}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </Link>
-              </motion.div>
-            ) : (
-              <>
-                {/* Article Content Slides - NO CITY PILL */}
-                <div className="mb-6">
-                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight">
-                    {data.title}
-                  </h2>
-                  <p className="text-base md:text-lg text-white/90 leading-relaxed mb-1">
-                    {data.teaser}
-                  </p>
-                  <p className="text-sm text-white/70">
-                    {data.cityName}
-                  </p>
-                </div>
+            {/* Article Content with City Name */}
+            <div className="mb-4 md:mb-6">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 md:mb-3 leading-tight">
+                <span className="text-accent-300">{data.cityName}:</span> {data.title}
+              </h2>
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed line-clamp-2 md:line-clamp-none">
+                {data.teaser}
+              </p>
+            </div>
 
-                {/* CTA Button */}
-                <Link
-                  href={data.href}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-lg transition-all duration-300 hover:gap-3 hover:shadow-xl"
-                >
-                  Read Story
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2.5}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
-              </>
-            )}
+            {/* CTA Button */}
+            <Link
+              href={data.href}
+              className="inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 bg-accent-500 hover:bg-accent-600 text-white text-sm md:text-base font-bold rounded-lg transition-all duration-300 hover:gap-3 hover:shadow-xl"
+            >
+              Read Story
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const tampa_premium_history: Record<string, History> = {
     slug: 'sunshine-and-hustle-premium',
     citySlug: 'tampa',
     title: 'Sunshine and Hustle',
-    subtitle: 'A city of cigars, conquistadors, and perpetual reinvention',
+    subtitle: 'Strip malls, strip clubs, and 300 million hand-rolled cigars that built a city in Miami\'s shadow',
     author: 'Curious City',
     publishedAt: '2024-12-22',
     premium: {
@@ -57,7 +57,7 @@ export const tampa_premium_history: Record<string, History> = {
           {
             id: 'sub1',
             type: 'subheading',
-            content: 'Ybor City and the Cigar Legacy',
+            content: 'The Neighborhood That Made Tampa',
           },
           {
             id: 'p3',

@@ -147,13 +147,18 @@ export class TicketmasterClient {
    * Fetch and normalize events for a city
    */
   async fetchNormalizedEvents(city: string, stateCode?: string, limit: number = 50): Promise<NormalizedEvent[]> {
+    // Ticketmaster requires ISO 8601 format without milliseconds: YYYY-MM-DDTHH:mm:ssZ
+    const formatForTicketmaster = (date: Date): string => {
+      return date.toISOString().replace(/\.\d{3}Z$/, 'Z')
+    }
+
     // Get events starting from today
-    const startDateTime = new Date().toISOString()
+    const startDateTime = formatForTicketmaster(new Date())
 
     // Get events up to 60 days from now
     const endDate = new Date()
     endDate.setDate(endDate.getDate() + 60)
-    const endDateTime = endDate.toISOString()
+    const endDateTime = formatForTicketmaster(endDate)
 
     const events = await this.searchEvents({
       city,

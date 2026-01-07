@@ -64,6 +64,7 @@ export default async function CityBarsPage({ params }: PageProps) {
         markerType="cocktail"
         showBanner={true}
         bannerImage="/global-banners/bar-banner.png"
+        currentCategory="bars"
       />
 
       <Footer />

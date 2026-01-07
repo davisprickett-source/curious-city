@@ -12,11 +12,11 @@
 // Main navigation sections (shown in primary nav)
 export type CitySection =
   | 'articles'
-  | 'scenes'
   | 'events'
 
-// Legacy sections (still accessible, not in main nav)
+// Legacy/hidden sections (still accessible, not in main nav)
 export type LegacySection =
+  | 'scenes' // Hidden for v1 launch
   | 'history'
   | 'discover'
   | 'guide'
@@ -50,12 +50,13 @@ export interface SectionDefinition {
 
 export const citySections: SectionDefinition[] = [
   { id: 'articles', label: 'Articles', path: '' }, // Articles are on the main city page
-  { id: 'scenes', label: 'Scenes', path: '/scenes' },
+  // { id: 'scenes', label: 'Scenes', path: '/scenes' }, // Hidden for v1 launch
   { id: 'events', label: 'Events', path: '/events' },
 ]
 
-// Legacy sections (keep for backward compatibility, will redirect)
+// Legacy/hidden sections (keep for backward compatibility)
 export const legacySections = [
+  'scenes', // Hidden for v1 launch
   'history',
   'discover',
   'guide',

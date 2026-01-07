@@ -93,6 +93,7 @@ export const fargo: CityData = {
         type: 'section',
         title: 'Fargo Curiosities',
         teaser: 'Ten-minute divorces, Bonnie & Clyde hideouts, and secrets on the frozen prairie',
+        intro: 'The Coen Brothers never filmed here—that was Minnesota. But the real Fargo is stranger than fiction. A city on the bed of a vanished glacial lake, so flat the Red River doesn\'t know which way to flow. Bonnie and Clyde hid out here and the cops walked right past. North Dakota once offered ten-minute divorces to anyone with train fare. The prairie keeps its secrets frozen.',
         items: [
           {
             id: 'far-curiosity-7',
@@ -511,8 +512,9 @@ export const fargo: CityData = {
               'Free museum inside West Acres Mall dedicated to Fargo\'s baseball legend who broke Babe Ruth\'s home run record. Contains letters and memorabilia showing "someone who never got the credit he deserved." Most shoppers walk right past it.',
             images: [
               {
-                src: '',
-                alt: 'Baseball memorabilia and historic photos displayed',
+                src: '/fargo/hidden-gems/roger-maris.jpg',
+                alt: 'Roger Maris in his Yankees uniform, 1960',
+                credit: 'Wikimedia Commons / Public Domain',
               },
             ],
             address: 'West Acres Mall, Fargo, ND',
@@ -530,8 +532,9 @@ export const fargo: CityData = {
               'Built around the founder\'s personal collection featuring a "wonderfully unexpected array" from ancient Asian artifacts and pre-Columbian pottery to European prints. "Diverse, sometimes quirky, and deeply personal nature." Lesser-known than Plains Art Museum despite being Moorhead\'s cultural gem.',
             images: [
               {
-                src: '',
-                alt: 'Eclectic art museum interior with diverse exhibits',
+                src: '/fargo/hidden-gems/rourke-museum.jpg',
+                alt: 'The Rourke Art Museum housed in historic 1915 Federal Courthouse building',
+                credit: 'Wikimedia Commons / CC BY-SA 3.0',
               },
             ],
             address: '523 S 4th St, Moorhead, MN 56560',
@@ -550,8 +553,9 @@ export const fargo: CityData = {
               'Relatively rare Civil War commemorative Union Soldier statue in North Dakota, a state far from the conflict. Sits in Island Park where most locals drive past without noticing. Part of Grand Army of the Republic memorial tradition.',
             images: [
               {
-                src: '',
-                alt: 'Civil War soldier statue monument in park',
+                src: '/fargo/hidden-gems/gar-statue.jpg',
+                alt: 'Grand Army of the Republic Civil War monument in Island Park, Fargo, 1940s',
+                credit: 'Digital Horizons / David Anderson',
               },
             ],
             address: 'Island Park, Fargo, ND',
@@ -569,8 +573,9 @@ export const fargo: CityData = {
               'Honors the "Lyric poet, father of Norwegian literature" — one of five Norwegian monuments erected following Norway\'s 1905 independence. Most people have no idea who he is or why his statue sits in Island Park. Part of Scandinavian Heritage Passport.',
             images: [
               {
-                src: '',
-                alt: 'Bronze statue of Norwegian poet on stone pedestal',
+                src: '/fargo/hidden-gems/wergeland-statue.jpg',
+                alt: 'Henrik Wergeland statue by Gustav Vigeland (identical statue in Oslo, 1908)',
+                credit: 'Wikimedia Commons / CC BY-SA 4.0',
               },
             ],
             address: 'Island Park, Fargo, ND',
@@ -588,8 +593,9 @@ export const fargo: CityData = {
               'Hand-carved wooden stave church replica behind Hjemkomst Center, built by one man. Most visitors to Hjemkomst see the Viking ship inside and miss the church outside. Traditional Norwegian construction technique dating to the Middle Ages.',
             images: [
               {
-                src: '',
-                alt: 'Norwegian stave church with distinctive wooden architecture',
+                src: '/fargo/hidden-gems/stave-church.jpg',
+                alt: 'Hopperstad Stave Church Replica at Hjemkomst Center, Moorhead',
+                credit: 'Wikimedia Commons / CC BY-SA 4.0',
               },
             ],
             address: 'Behind Hjemkomst Center, 202 1st Ave N, Moorhead, MN',
@@ -720,7 +726,7 @@ export const fargo: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Best Bars',
-        intro: 'Fargo bars are where winter is survived and Bison games are watched.',
+        intro: 'When it\'s -30°F outside, the bar becomes the living room. Fargo\'s drinking culture runs deep—from the college bars that empty when the Bison play to the downtown spots where regulars have their own stools. Unpretentious, affordable, and warm in every sense. These places kept people sane through a hundred winters.',
         spots: [
           {
             name: 'Würst Bier Hall',
@@ -789,7 +795,7 @@ export const fargo: CityData = {
         type: 'best-of',
         category: 'restaurants',
         title: 'Best Restaurants',
-        intro: 'The food scene has grown beyond hotdish, though you can still find that too.',
+        intro: 'For decades, "Fargo dining" meant hotdish and chain restaurants. That changed. The city now has Thai spots run by refugees, Mexican restaurants opened by immigrants who came for the meatpacking jobs and stayed, and farm-to-table places that take the "farm" part seriously because the farms are twenty minutes away. The food punches above its population.',
         spots: [
           {
             name: 'Rosewild',
@@ -1108,6 +1114,8 @@ export const fargo: CityData = {
         id: 'far-lost-loved',
         type: 'section',
         title: 'Lost Fargo',
+        teaser: 'Mexican Village, The Empire, and the spots that warmed Fargo winters',
+        intro: 'On the frozen prairie, the places that kept people warm mattered. These were the restaurants, bars, and gathering spots that gave Fargo-Moorhead its character—establishments where generations celebrated graduations, mourned losses, and survived winters together. The Red River Valley remembers its landmarks.',
         items: [
           {
             id: 'far-lost-2',

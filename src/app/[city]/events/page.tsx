@@ -99,21 +99,14 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
         eventCategories={selectedCategories}
       />
 
-      <main className="flex-1">
-        <div className="container-page section-spacing">
-          {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-start justify-between gap-4 mb-2">
-              <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900">
-                {viewTitles[view]}
-              </h1>
-              <div className="hidden sm:block flex-shrink-0">
-                <ShareLinks title={`Events in ${city.name} | Curious City`} variant="compact" />
-              </div>
-            </div>
-            <p className="text-lg text-neutral-600">
-              Events, new openings, pop-ups, and limited-time experiences.
-            </p>
+      <main className="flex-1 bg-white">
+        <div className="container-page py-6">
+          {/* Compact header - title and description inline */}
+          <div className="flex items-baseline justify-between gap-4 mb-6">
+            <h1 className="text-2xl md:text-3xl font-bold text-neutral-900">
+              {viewTitles[view]}
+            </h1>
+            <ShareLinks title={`Events in ${city.name} | Curious City`} variant="compact" />
           </div>
 
           {/* Events Content */}

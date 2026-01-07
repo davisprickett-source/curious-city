@@ -13,4 +13,10 @@ export interface AnimatedMenuButtonProps {
 
 export interface MenuOverlayProps {
   onClose: () => void
+  currentCitySlug?: string
+}
+
+export interface CitiesNavigationProps {
+  onClose: () => void
+  currentCitySlug?: string
 }

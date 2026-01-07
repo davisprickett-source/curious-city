@@ -20,29 +20,6 @@ interface FilterBarProps {
   darkHistoryCategoryCounts?: Record<string, number>
 }
 
-const curiosityCategoryLabels: Record<string, string> = {
-  history: 'History',
-  architecture: 'Architecture',
-  underground: 'Underground',
-  science: 'Science',
-  culture: 'Culture',
-  law: 'Law',
-  invention: 'Invention',
-  legend: 'Legend',
-  nature: 'Nature',
-}
-
-const darkHistoryCategoryLabels: Record<string, string> = {
-  unsolved: 'Unsolved',
-  crime: 'Crime',
-  disaster: 'Disaster',
-  mystery: 'Mystery',
-  macabre: 'Macabre',
-  forgotten: 'Forgotten',
-  haunting: 'Haunting',
-  'cold-case': 'Cold Case',
-}
-
 const scenesCategoryLabels: Record<string, string> = {
   street: 'Street',
   architecture: 'Architecture',
@@ -57,12 +34,6 @@ export function FilterBar({
   eventView,
   eventCategories,
   sceneCategory,
-  curiosityCategory,
-  availableCuriosityCategories = [],
-  curiosityCategoryCounts = {},
-  darkHistoryCategory,
-  availableDarkHistoryCategories = [],
-  darkHistoryCategoryCounts = {},
 }: FilterBarProps) {
   // No filters to show
   if (!currentSection || !citySlug) return null
@@ -96,46 +67,14 @@ export function FilterBar({
     )
   }
 
-  // Curiosities page: show category dropdown
+  // Curiosities page: no filters (removed for cleaner listicle experience)
   if (currentSection === 'curiosities') {
-    const categories = availableCuriosityCategories.map((cat) => ({
-      value: cat,
-      label: curiosityCategoryLabels[cat] || cat,
-      count: curiosityCategoryCounts[cat],
-    }))
-
-    return (
-      <div className="flex items-center gap-2">
-        <DropdownCategoryFilter
-          citySlug={citySlug}
-          basePath="curiosities"
-          categories={categories}
-          activeCategory={curiosityCategory}
-          label="Type"
-        />
-      </div>
-    )
+    return null
   }
 
-  // Dark History page: show category dropdown
+  // Dark History page: no filters (removed for cleaner listicle experience)
   if (currentSection === 'dark-history') {
-    const categories = availableDarkHistoryCategories.map((cat) => ({
-      value: cat,
-      label: darkHistoryCategoryLabels[cat] || cat,
-      count: darkHistoryCategoryCounts[cat],
-    }))
-
-    return (
-      <div className="flex items-center gap-2">
-        <DropdownCategoryFilter
-          citySlug={citySlug}
-          basePath="dark-history"
-          categories={categories}
-          activeCategory={darkHistoryCategory}
-          label="Type"
-        />
-      </div>
-    )
+    return null
   }
 
   // Other pages: no filters

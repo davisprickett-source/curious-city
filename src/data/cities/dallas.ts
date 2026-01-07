@@ -47,7 +47,7 @@ export const dallas: CityData = {
             meta: 'List',
             variant: 'compact',
             href: '/dallas/tacos',
-          },
+          }
         ],
       },
       {
@@ -60,6 +60,7 @@ export const dallas: CityData = {
         type: 'section',
         title: 'Dallas Curiosities',
         teaser: 'Underground cities, 30-foot eyeballs, and secrets beneath the Big D',
+        intro: 'Dallas has no natural harbor, no navigable river, and no particular reason to exist—yet it willed itself into becoming one of America\'s most powerful cities. That audacity shows everywhere: in the 30-foot fiberglass eyeball staring at nothing, the three-mile tunnel city nobody talks about, and a founding myth so murky that historians gave up trying to solve it.',
         items: [
           {
             id: 'dal-curiosity-1',
@@ -73,6 +74,10 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'underground',
             title: 'A 3-mile secret city runs beneath downtown',
+            image: {
+              src: '/dallas/curiosities/tunnels.png',
+              alt: 'Dallas underground tunnel system',
+            },
             body: 'Dallas has an extensive network of underground pedestrian tunnels connecting 36 city blocks — shops, restaurants, offices, all invisible from the street. The system was designed by Vincent Ponte, the same Montreal urban planner who created Montreal\'s famous Underground City, starting in 1969. Many entrances are unmarked and hidden in plain sight. Former mayor Laura Miller called it "the worst urban planning decision Dallas has ever made" because it drained street-level foot traffic into an invisible parallel world. You can walk three miles without ever seeing daylight.',
             source: 'D Magazine',
           },
@@ -93,6 +98,20 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'invention',
             title: 'The integrated circuit — the foundation of all modern technology — was invented here',
+            images: [
+              {
+                src: '/dallas/curiosities/circuit-1.png',
+                alt: 'Jack Kilby\'s integrated circuit at Texas Instruments',
+              },
+              {
+                src: '/dallas/curiosities/circuit-2.png',
+                alt: 'Early integrated circuit prototype',
+              },
+              {
+                src: '/dallas/curiosities/circuit-3.png',
+                alt: 'Texas Instruments integrated circuit development',
+              },
+            ],
             body: 'The integrated circuit, the foundation of all modern computing, was created in Dallas by Texas Instruments engineer Jack Kilby in 1958. This invention made computers, smartphones, and virtually every piece of modern electronics possible. Kilby won the Nobel Prize in 2000 for it. Every time you use any electronic device — this phone, that laptop, your car, the plane overhead — you\'re using Dallas technology. The entire digital age was born in a North Dallas lab.',
             source: 'Texas Instruments / Nobel Prize Archives',
             location: { name: 'Texas Instruments Lab', stillExists: true },
@@ -102,6 +121,20 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'architecture',
             title: 'A demolition accident created Dallas\'s own "Leaning Tower"',
+            images: [
+              {
+                src: '/dallas/curiosities/leaning-1.png',
+                alt: 'The Leaning Tower of Dallas',
+              },
+              {
+                src: '/dallas/curiosities/leaning-2.png',
+                alt: 'The Leaning Tower of Dallas from another angle',
+              },
+              {
+                src: '/dallas/curiosities/leaning-3.png',
+                alt: 'Visitors posing with the Leaning Tower of Dallas',
+              },
+            ],
             body: 'When a Dallas building was demolished in 2019, the core of the 11-story structure unexpectedly remained standing — and slightly leaning. People flocked to take photos pretending to hold up the "Leaning Tower of Dallas" just like tourists do in Pisa. It became an instant internet sensation and accidental tourist attraction. The city tried multiple times to bring it down. It refused to fall. For weeks, this stubborn concrete remnant stood as an unintentional monument to Dallas\'s will to exist. Eventually they succeeded. But for a brief, beautiful moment, Dallas had its own architectural disaster-turned-icon.',
             source: 'Dallas Morning News',
           },
@@ -110,6 +143,16 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'Deep Ellum was Dallas\'s first desegregated neighborhood',
+            images: [
+              {
+                src: '/dallas/curiosities/desegragated-1.png',
+                alt: 'Historic Deep Ellum neighborhood',
+              },
+              {
+                src: '/dallas/curiosities/desegragated-2.png',
+                alt: 'Deep Ellum street scene',
+              },
+            ],
             body: 'Deep Ellum\'s white immigrants welcomed Black residents into their shops in the late 1800s and early 1900s — something not seen in other parts of Dallas. The area was settled as a "freedmen\'s town" by former slaves after the Civil War and became a vibrant center for jazz and blues. Legendary musician Blind Lemon Jefferson could tell by the sound in his cup what type of coins people put in — if they only gave pennies, he\'d throw them back into the street. Much of Deep Ellum was demolished when I-345 was built, erasing blocks of this integrated history in the name of highway progress.',
             source: 'Deep Ellum Foundation',
             location: { name: 'Deep Ellum', stillExists: true },
@@ -119,6 +162,10 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'invention',
             title: 'The frozen margarita machine was invented here — inspired by 7-Eleven Slurpees',
+            image: {
+              src: '/dallas/curiosities/frozen-marg.png',
+              alt: 'Original frozen margarita machine',
+            },
             body: 'Mariano Martinez invented the frozen margarita machine in Dallas in 1971 after being inspired by the 7-Eleven Slurpee machine. He modified a soft-serve ice cream machine to dispense frozen margaritas at his restaurant, Mariano\'s. Perfectly fitting, since 7-Eleven itself started as an Oak Cliff ice house called Southland Ice Company in the 1920s. Dallas invented both the technology and the reason to use it. His original machine is now in the Smithsonian\'s National Museum of American History, preserved for posterity alongside the Star-Spangled Banner and Abraham Lincoln\'s top hat.',
             source: 'Smithsonian Institution',
           },
@@ -132,6 +179,16 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'The corner of Elm and Houston was cursed before JFK',
+            images: [
+              {
+                src: '/dallas/curiosities/elm-houston-1.png',
+                alt: 'Dealey Plaza and the Texas School Book Depository',
+              },
+              {
+                src: '/dallas/curiosities/elm-houston-2.png',
+                alt: 'Historic view of Elm and Houston corner',
+              },
+            ],
             body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. A building completed there in November 1898 was struck by lightning and burned to the ground in May 1901. It was rebuilt by fall 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
             source: 'Dallas Historical Society',
             location: { name: 'Dealey Plaza', stillExists: true },
@@ -143,8 +200,8 @@ export const dallas: CityData = {
             title: 'Big Tex was originally the world\'s largest Santa Claus',
             body: 'Before becoming the iconic 55-foot State Fair mascot, Big Tex was actually the world\'s largest Santa Claus in Kerens, Texas. The giant paper-mache figure was purchased by the State Fair in 1951, stripped of his red suit, transformed into a cowboy, and has greeted fairgoers with a booming "Howdy, folks!" ever since. Big Tex was destroyed by fire in 2012 — his head melted on live television — and rebuilt with a fireproof metal structure. Even Dallas icons get second acts.',
             image: {
-              src: '',
-              alt: 'Texas State Fair grounds',
+              src: '/dallas/curiosities/santa.png',
+              alt: 'Big Tex at the Texas State Fair',
             },
             source: 'State Fair of Texas',
             location: { name: 'Fair Park', stillExists: true },
@@ -154,6 +211,16 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'German POWs from Rommel\'s Afrika Korps were held at White Rock Lake',
+            images: [
+              {
+                src: '/dallas/curiosities/pow-camp-1.png',
+                alt: 'WWII POW camp at White Rock Lake',
+              },
+              {
+                src: '/dallas/curiosities/pow-camp-2.png',
+                alt: 'German POWs at the White Rock Lake camp',
+              },
+            ],
             body: 'In 1944, White Rock Lake served as a prisoner-of-war camp for German non-commissioned officers captured during Field Marshal Erwin "The Desert Fox" Rommel\'s North African campaign. Dallas held enemy combatants from WWII\'s most famous tank battles right in the middle of what is now one of the city\'s most popular parks. They were here, behind barbed wire, while Dallas families picnicked nearby. The war came to White Rock Lake.',
             source: 'Dallas Historical Society',
             location: { name: 'White Rock Lake', stillExists: true },
@@ -163,27 +230,29 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'Bonnie and Clyde escaped through "Devil\'s Back Porch"',
+            image: {
+              src: '/dallas/curiosities/devils-back-porch.png',
+              alt: 'Trinity Groves area, formerly Devil\'s Back Porch',
+            },
             body: 'To escape police, Bonnie and Clyde would cross an old bridge over the Trinity River into a dusty part of Dallas called the Devil\'s Back Porch — now Trinity Groves. What\'s now Singleton Boulevard used to be Eagle Ford Road, providing their getaway route over the West Fork of the Trinity River. They knew every back road, every blind spot, every shortcut through West Dallas. A speakeasy bar named Devil\'s Back Porch now commemorates this gangster history in the same location, because Dallas never met an outlaw story it didn\'t want to romanticize.',
             source: 'WFAA',
             location: { name: 'Trinity Groves', stillExists: true },
-          },
-          {
-            id: 'dal-curiosity-12',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'White Rock Lake is haunted by the Lady of the Lake',
-            body: 'White Rock Lake is home to Dallas\'s most famous ghost story. A young woman in a drenched 1930s evening dress reportedly flags down cars, claiming she was in a boating accident. She gives an address on Gaston Avenue, but when drivers arrive, she vanishes — leaving only a damp spot on the seat. A man at the house explains his daughter drowned in the lake years earlier. Reader\'s Digest named White Rock Lake one of the world\'s 14 most haunted bodies of water, alongside Loch Ness. The strange part: Dallas\'s unofficial lake historian can\'t find any death record matching the legend. The ghost may be a ghost of a ghost — a story haunting a lake, with no body to anchor it.',
-            image: {
-              src: '',
-              alt: 'Misty lake at night',
-            },
-            location: { name: 'White Rock Lake', stillExists: true },
           },
           {
             id: 'dal-curiosity-13',
             type: 'curiosity',
             category: 'culture',
             title: 'The term "Super Bowl" was coined by a Dallasite',
+            images: [
+              {
+                src: '/dallas/curiosities/super-bowl-1.png',
+                alt: 'Lamar Hunt and the Super Ball toy',
+              },
+              {
+                src: '/dallas/curiosities/super-bowl-2.png',
+                alt: 'Early Super Bowl memorabilia',
+              },
+            ],
             body: 'Lamar Hunt, the main founder of the American Football League and owner of the Kansas City Chiefs, coined the term "Super Bowl." He was inspired by watching his children play with a Super Ball toy. Hunt, a Dallas native and son of legendary oil tycoon H.L. Hunt, intended it as a placeholder until they figured out a better name — but "Super Bowl" stuck and became one of the most recognized sporting event names in history. The biggest game in American sports is named after a children\'s toy, thanks to Dallas.',
           },
           {
@@ -191,6 +260,20 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'architecture',
             title: 'Fair Park has the world\'s largest collection of Art Deco buildings',
+            images: [
+              {
+                src: '/dallas/curiosities/art-deco-1.png',
+                alt: 'Art Deco buildings at Fair Park',
+              },
+              {
+                src: '/dallas/curiosities/art-deco-2.png',
+                alt: 'Fair Park Art Deco architecture details',
+              },
+              {
+                src: '/dallas/curiosities/art-deco-3.png',
+                alt: 'Fair Park exposition hall',
+              },
+            ],
             body: 'Fair Park features the world\'s largest collection of Art Deco exposition buildings, constructed for the 1936 Texas Centennial Exposition. Around 30 of these magnificent structures still exist today, making it one of the most complete examples of Art Deco architecture anywhere on Earth. It\'s a National Historic Landmark — a genuine architectural treasure. Yet many Dallas residents have never explored it outside of State Fair season, when it\'s crowded with deep-fried everything and screaming children. Visit in the off-season. You\'ll have a 1930s wonderland almost to yourself.',
             source: 'National Park Service',
             location: { name: 'Fair Park', stillExists: true },
@@ -200,9 +283,13 @@ export const dallas: CityData = {
             type: 'curiosity',
             category: 'culture',
             title: 'German chocolate cake became famous because of Dallas',
+            image: {
+              src: '/dallas/curiosities/german-chocolate-cake.png',
+              alt: 'German chocolate cake',
+            },
             body: 'German chocolate is not actually German — it\'s named after English baker Samuel German, who developed the chocolate in 1852. But Dallas is the reason it\'s famous. In 1957, a Dallasite named Mrs. George Clay sent her recipe for "German\'s chocolate cake" to the Dallas Morning News. It was reprinted in newspapers nationwide and became an American classic — all because of one Dallas home baker who decided to share her recipe. Sometimes Dallas\'s greatest contributions are the smallest ones.',
             source: 'Dallas Morning News',
-          },
+          }
         ],
       },
       {
@@ -221,7 +308,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/nasher-sculpture.jpg',
                 alt: 'Nasher Sculpture Center garden with modern sculptures and trees',
-              },
+              }
             ],
             address: '2001 Flora St, Dallas, TX 75201',
             coordinates: { lat: 32.7896, lng: -96.7992 },
@@ -240,7 +327,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/white-rock-lake.jpg',
                 alt: 'View of White Rock Lake with Dallas skyline in distance',
-              },
+              }
             ],
             address: '8300 E Lawther Dr, Dallas, TX 75218',
             coordinates: { lat: 32.8272, lng: -96.7244 },
@@ -258,7 +345,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/deep-ellum.jpg',
                 alt: 'Deep Ellum street art and murals on building walls',
-              },
+              }
             ],
             address: 'Deep Ellum, Dallas, TX 75226',
             coordinates: { lat: 32.7848, lng: -96.7845 },
@@ -276,7 +363,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/dallas-farmers-market.jpg',
                 alt: 'Dallas Farmers Market produce stalls and crowds',
-              },
+              }
             ],
             address: '920 S Harwood St, Dallas, TX 75201',
             coordinates: { lat: 32.7770, lng: -96.7951 },
@@ -284,7 +371,7 @@ export const dallas: CityData = {
             price: 'Free to browse',
             website: 'https://dallasfarmersmarket.org',
             tip: 'Mudhen Meat and Greens for excellent local sourcing',
-          },
+          }
         ],
       },
       {
@@ -304,7 +391,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Underground tunnel system with shops and corridors',
-              },
+              }
             ],
             address: 'Entrances at Thanks-Giving Square, Renaissance Tower, One Main Place',
             coordinates: { lat: 32.7816, lng: -96.7995 },
@@ -322,7 +409,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Sunken urban garden with modern architecture',
-              },
+              }
             ],
             address: 'Between Pacific, Ervay, Bryan, and Akard, Downtown Dallas',
             coordinates: { lat: 32.7829, lng: -96.7982 },
@@ -341,7 +428,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Geometric abstract art in modern gallery space',
-              },
+              }
             ],
             address: '3109 Carlisle Street, Dallas, TX 75204',
             coordinates: { lat: 32.8055, lng: -96.7992 },
@@ -360,7 +447,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Large eyeball sculpture in urban setting',
-              },
+              }
             ],
             address: '1607 Main St, Dallas, TX (Joule Hotel courtyard)',
             coordinates: { lat: 32.7816, lng: -96.7999 },
@@ -378,7 +465,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Mythical creature sculpture combining multiple animals',
-              },
+              }
             ],
             address: 'Outside Livestock Building No. 2, Fair Park (near MLK Blvd)',
             coordinates: { lat: 32.7798, lng: -96.7616 },
@@ -401,7 +488,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Historic cemetery with weathered gravestones',
-              },
+              }
             ],
             address: 'Crown Hill Memorial Park (Bonnie) & Western Heights Cemetery (Clyde)',
             coordinates: { lat: 32.8633, lng: -96.8692 },
@@ -419,7 +506,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Vintage streetcar on urban rail line',
-              },
+              }
             ],
             address: '4.6-mile route with 37 stops connecting West Village to Downtown',
             coordinates: { lat: 32.8055, lng: -96.7992 },
@@ -438,7 +525,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Hiking trail through nature preserve with escarpment views',
-              },
+              }
             ],
             address: 'Cedar Hill (South Dallas)',
             coordinates: { lat: 32.6298, lng: -96.9685 },
@@ -456,7 +543,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Wildlife preserve with lake and migratory birds',
-              },
+              }
             ],
             address: 'South of Loop 12 and 4911 River Oaks Road',
             coordinates: { lat: 32.6951, lng: -96.8336 },
@@ -475,7 +562,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Hidden speakeasy interior with dim lighting',
-              },
+              }
             ],
             address: 'Deep Ellum',
             coordinates: { lat: 32.7848, lng: -96.7845 },
@@ -493,7 +580,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Intimate hotel bar with elegant cocktails',
-              },
+              }
             ],
             address: 'SOVA Hotel, Dallas',
             coordinates: { lat: 32.7896, lng: -96.8003 },
@@ -511,7 +598,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Intimate jazz club with stage and mood lighting',
-              },
+              }
             ],
             address: '1825 Abrams Rd, Ste B, Dallas, TX 75214',
             coordinates: { lat: 32.8419, lng: -96.7687 },
@@ -529,7 +616,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Colorful immersive art installation with LED lights',
-              },
+              }
             ],
             address: '3609 Parry Ave, Dallas, TX',
             coordinates: { lat: 32.7849, lng: -96.7846 },
@@ -548,7 +635,7 @@ export const dallas: CityData = {
               {
                 src: '',
                 alt: 'Massive used bookstore with floor-to-ceiling shelves',
-              },
+              }
             ],
             address: 'Northwest Highway location',
             coordinates: { lat: 32.8687, lng: -96.7706 },
@@ -566,7 +653,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/kalachandjis.jpg',
                 alt: 'Vegetarian buffet spread at Kalachandji\'s restaurant',
-              },
+              }
             ],
             address: '5430 Gurley Ave, Dallas, TX 75223',
             coordinates: { lat: 32.8160, lng: -96.7656 },
@@ -585,7 +672,7 @@ export const dallas: CityData = {
               {
                 src: '/images/gems/wild-detectives.jpg',
                 alt: 'Interior of Wild Detectives bookstore with books and bar',
-              },
+              }
             ],
             address: '314 W 8th St, Dallas, TX 75208',
             coordinates: { lat: 32.7460, lng: -96.8294 },
@@ -593,7 +680,7 @@ export const dallas: CityData = {
             price: 'Free to browse',
             website: 'https://thewilddetectives.com',
             tip: 'Check the calendar for readings and events',
-          },
+          }
         ],
       },
       {
@@ -606,62 +693,47 @@ export const dallas: CityData = {
           {
             id: 'dal-dark-1',
             type: 'dark-history',
-            category: 'unsolved',
-            year: '1990',
-            title: 'Lover\'s Lane Bandit Murders',
-            body: 'August 1990: Cheryl Henry and Andy Atkinson parked at a secluded lovers\' lane north of Dallas for what should have been an ordinary Friday night. By dawn, Atkinson was bound to a tree and nearly decapitated. Henry was found nude, buried beneath plywood with golf clubs driven into the earth above her like macabre grave markers. The rope work was methodical. The overkill suggested practice. DNA surfaced decades later but led nowhere prosecutors could follow.',
-            verdict: 'Cold case. The forensic evidence sits in storage while theories multiply—one-time sadist, passing serial killer, someone still driving these same roads.',
+            category: 'crime',
+            year: '1990–1991',
+            title: 'The Eyeball Killer',
+            image: {
+              src: '/dallas/dark-history/lovers-lane.png',
+              alt: 'Oak Cliff street at night',
+            },
+            body: 'Between December 1990 and March 1991, someone was hunting prostitutes in Oak Cliff—and taking souvenirs. Mary Lou Pratt was found shot in the head, her eyes surgically removed. Susan Peterson turned up the same way two months later. Then Shirley Williams, naked near a school, eyes gone. The precision suggested medical training. Police searched Charles Albright\'s home and found X-Acto blades, a copy of Gray\'s Anatomy, hundreds of close-up photos of women\'s eyes, and newspaper clippings about his own murders. No eyeballs were ever recovered. Albright, a former science teacher obsessed with taxidermy since childhood, was convicted of one murder and sentenced to life. He died in prison in 2020, still drawing eyes on his cell walls.',
+            verdict: 'Convicted. Charles Albright received life in prison for Shirley Williams\' murder. Charges in the other cases were dropped due to lack of evidence, though he remains the prime suspect in all four killings.',
             sources: [
               {
                 type: 'article',
-                title: 'The Lover\'s Lane Murders: Still Unsolved After 30 Years',
-                publisher: 'Houston Chronicle',
-                year: '2020',
-                url: 'https://www.houstonchronicle.com/news/houston-texas/crime/article/lovers-lane-murders-cold-case-15437892.php',
+                title: 'See No Evil',
+                publisher: 'Texas Monthly',
+                year: '1993',
+                url: 'https://www.texasmonthly.com/true-crime/see-no-evil-3/',
               },
               {
                 type: 'article',
-                title: 'Cheryl Henry and Andy Atkinson: The Lover\'s Lane Bandit',
-                publisher: 'Dallas Observer',
-                author: 'Simone Carter',
-                year: '2015',
-                url: 'https://www.dallasobserver.com/news/lovers-lane-bandit-murders-7137945',
+                title: 'Flashback: The Eyeball Killer stalked, murdered four Oak Cliff women in 1991',
+                publisher: 'Dallas Morning News',
+                year: '2017',
+                url: 'https://www.dallasnews.com/news/2017/11/01/flashback-the-eyeball-killer-stalked-murdered-four-oak-cliff-women-in-1991/',
               },
               {
                 type: 'article',
-                title: 'DNA Evidence Revives Hope in 1990 Double Murder',
-                publisher: 'WFAA',
-                year: '2018',
-                url: 'https://www.wfaa.com/article/news/crime/dna-lovers-lane-murders/287-589234567',
+                title: 'How a police storefront changed Jefferson and captured a serial killer',
+                publisher: 'Oak Cliff Advocate',
+                year: '2014',
+                url: 'https://oakcliff.advocatemag.com/2014/10/beat-cop-goes/',
               },
               {
-                type: 'podcast',
-                title: 'The Lover\'s Lane Murders',
-                show: 'True Crime Texas',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/true-crime-texas/id1234567890',
-              },
-              {
-                type: 'documentary',
-                title: 'Unsolved: The Lover\'s Lane Bandit',
-                platform: 'Investigation Discovery',
-                year: '2019',
-                url: 'https://www.investigationdiscovery.com/shows/unsolved-mysteries',
-              },
-              {
-                type: 'video',
-                title: 'The Lover\'s Lane Bandit: 1990 Double Murder',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                type: 'other',
+                title: 'Charles Albright',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Charles_Albright',
               },
             ],
             location: {
-              name: 'Secluded lovers\' lane, North Dallas outskirts',
+              name: 'Oak Cliff neighborhood',
               stillExists: true,
-            },
-            image: {
-              src: '/images/dark-history/dallas/dallas-suburban-1990s.jpg',
-              alt: 'Dallas suburban area in the 1990s, showing the kind of secluded neighborhoods where the crime occurred',
             },
           },
           {
@@ -669,61 +741,31 @@ export const dallas: CityData = {
             type: 'dark-history',
             category: 'haunting',
             year: 'c. 1900',
-            title: 'Crying Children of Carrollton',
-            body: 'Around 1900, a traveling peddler pried open a padlocked trunk in an abandoned shack near Carrollton. Inside: the skeletal remains of children who neighbors remembered begging for scraps weeks earlier. The family had vanished overnight—no names, no graves, no explanation. Just a trunk and an empty patch of dirt. On windless nights, locals still report thin, high wails drifting across vacant lots where nothing should be crying.',
-            verdict: 'Pure folklore now—no archival records survived, no trunk was preserved. The story endures because the silence that followed was absolute.',
+            title: 'The Crying Children of Carrollton',
+            image: {
+              src: '/dallas/dark-history/carrollton.png',
+              alt: 'Abandoned farmhouse ruins',
+            },
+            body: 'Around the turn of the century, a strange family moved into an abandoned farmhouse three miles outside Carrollton. When neighbors came to welcome them, the mother, father, and three children were cold and unsmiling—the well-meaning committee left feeling "thoroughly snubbed." A few months later, a traveling salesman passing the now-destroyed farmhouse heard something that stopped him: the unmistakable sobbing of a child. He looked toward the ruins and saw a small boy standing in a clearing. Then two more children appeared beside him. When the salesman walked closer, all three vanished. The family was never seen again. No records explain what happened. On certain nights, locals say you can still hear crying drifting across the vacant lots where the farmhouse once stood.',
+            verdict: 'Pure folklore. The story was recorded by Carrollton storyteller Zenita Fowler and published in "Ghost Stories of North Texas." No archival records of the family have been found.',
             sources: [
               {
                 type: 'book',
-                title: 'Ghosts of Dallas',
-                author: 'Mark McLaughlin',
-                isbn: '9781540243584',
-                year: '2018',
-                url: 'https://www.amazon.com/Ghosts-Dallas-Mark-McLaughlin/dp/1540243583',
-              },
-              {
-                type: 'book',
-                title: 'Texas Ghosts: Haunted Tales from the Lone Star State',
-                author: 'Alan Brown',
-                isbn: '9781496828262',
-                year: '2019',
-                url: 'https://www.amazon.com/Texas-Ghosts-Haunted-Tales-State/dp/1496828267',
+                title: 'Ghost Stories of North Texas',
+                author: 'Zenita Fowler',
+                year: '1990',
               },
               {
                 type: 'article',
-                title: 'The Dark Folklore of Dallas County',
-                publisher: 'Dallas Morning News',
-                year: '2017',
-                url: 'https://www.dallasnews.com/news/2017/10/31/dark-folklore-dallas-county/',
-              },
-              {
-                type: 'article',
-                title: 'Carrollton\'s Lost Ghost Stories',
-                publisher: 'Community Impact',
-                year: '2020',
-                url: 'https://communityimpact.com/dallas-fort-worth/carrollton/history/2020/10/30/carrollton-ghost-stories/',
-              },
-              {
-                type: 'podcast',
-                title: 'The Crying Children of Carrollton',
-                show: 'Haunted Texas',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/haunted-texas/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'Carrollton Ghost Stories: The Lost Children',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=WxYzAbCdEfG',
+                title: 'Mysterious past of Bethel Cemetery',
+                publisher: 'Carrollton Leader',
+                year: '2014',
+                url: 'https://starlocalmedia.com/carrolltonleader/mysterious-past-of-bethel-cemetery/article_e32cc07e-5b9c-11e4-8e6e-9b2d0b612636.html',
               },
             ],
             location: {
-              name: 'Old Carrollton backroads',
+              name: 'Old Carrollton farmland',
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/dallas/carrollton-historic.jpg',
-              alt: 'Historic view of the Carrollton area near Dallas in the early 1900s era when the tragedy reportedly occurred',
             },
           },
           {
@@ -731,60 +773,44 @@ export const dallas: CityData = {
             type: 'dark-history',
             category: 'cold-case',
             year: '1987',
-            title: 'Laurie Kay Bosman Strangling',
-            body: 'July 1987: 26-year-old Laurie Kay Bosman was strangled to death in her Far North Dallas apartment while her seven-year-old son, Shawn Chelf, slept in the next room. The killer slipped in and out of the garden-style complex without a trace. Decades later, Chelf became a Dallas cop and still pushes his mother\'s file through a backlog of more than 1,000 unsolved homicides. DNA has been preserved. The killer\'s name has not.',
-            verdict: 'Unsolved. Investigators hope genetic genealogy can finally extract a suspect from evidence that\'s been sitting in storage for 35 years.',
+            title: 'A Son\'s Quest for Justice',
+            image: {
+              src: '/dallas/dark-history/laurie-kay.png',
+              alt: 'Laurie Kay Bosman memorial',
+            },
+            body: 'March 1987: 25-year-old Laurie Kay Bosman was found strangled on her living room floor in her Far North Dallas apartment on Marsh Lane. Her door was slightly ajar but showed no signs of forced entry. Her security system wasn\'t activated. Her seven-year-old son, Shawn Chelf, had been sleeping in the next room. Police believed she knew her killer—her fiancé was out of the country, and other leads went nowhere. The case went cold for 27 years. Then Shawn Chelf became a police officer. He joined the Double Oak Police Department in 2013 and began pushing Dallas detectives to reopen his mother\'s file. They finally did. DNA samples that couldn\'t be tested in 1987 are now being analyzed with modern genetic genealogy techniques.',
+            verdict: 'Unsolved. The case was one of 323 murders in Dallas that year. Shawn Chelf, now a cop, continues to push for answers nearly four decades later.',
             sources: [
               {
                 type: 'article',
-                title: 'Son Becomes Cop to Solve Mother\'s 1987 Murder',
-                publisher: 'WFAA',
-                year: '2019',
-                url: 'https://www.wfaa.com/article/news/crime/son-becomes-cop-mothers-murder/287-567891234',
-              },
-              {
-                type: 'article',
-                title: 'Laurie Kay Bosman: Cold Case After 35 Years',
+                title: 'Unsolved: Shawn Chelf is looking for answers to his mother\'s death',
                 publisher: 'Dallas Morning News',
-                author: 'Jennifer Emily',
-                year: '2022',
-                url: 'https://www.dallasnews.com/news/crime/2022/07/15/laurie-bosman-cold-case/',
+                year: '2015',
+                url: 'https://interactives.dallasnews.com/2015/cold-cases/part2.html',
               },
               {
                 type: 'article',
-                title: 'Dallas\' 1,000+ Unsolved Homicides',
-                publisher: 'Dallas Observer',
-                year: '2021',
-                url: 'https://www.dallasobserver.com/news/dallas-unsolved-homicides-12345678',
+                title: 'Son of woman slain in 1987 becomes police officer, sees cold case reopened',
+                publisher: 'Dallas Morning News',
+                year: '2015',
+                url: 'https://www.dallasnews.com/news/crime/2015/08/26/son-of-woman-slain-in-1987-becomes-police-officer-sees-cold-case-reopened/',
               },
               {
                 type: 'article',
-                title: 'Genetic Genealogy Brings Hope to Cold Cases',
-                publisher: 'Texas Monthly',
-                year: '2023',
-                url: 'https://www.texasmonthly.com/articles/genetic-genealogy-cold-cases-texas/',
+                title: 'Son on Quest for Answers in Mother\'s Murder',
+                publisher: 'NBC DFW',
+                url: 'https://www.nbcdfw.com/news/local/son-on-quest-for-answers-in-mothers-murder/144785/',
               },
               {
-                type: 'podcast',
-                title: 'Laurie Kay Bosman: A Son\'s Quest for Justice',
-                show: 'Cold Case Files',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/cold-case-files/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'Cold Case: Laurie Kay Bosman Murder Investigation',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=YzAbCdEfGhI',
+                type: 'other',
+                title: 'Laurie Kay Bosman Case File',
+                publisher: 'Solve the Case',
+                url: 'https://www.solvethecase.org/case/1987-4/laurie-kay-bosman',
               },
             ],
             location: {
-              name: 'Far North Dallas apartment complex',
+              name: '18700 block of Marsh Lane, Far North Dallas',
               stillExists: true,
-            },
-            image: {
-              src: '/images/dark-history/dallas/north-dallas-apartment.jpg',
-              alt: 'North Dallas apartment complex area in the 1980s, representative of where the Bosman murder occurred',
             },
           },
           {
@@ -792,126 +818,261 @@ export const dallas: CityData = {
             type: 'dark-history',
             category: 'haunting',
             year: '1940s–present',
-            title: 'Lady of White Rock Lake',
-            body: 'Since the 1940s, motorists circling White Rock Lake have picked up the same waterlogged passenger: a woman in a soaked white dress who climbs into the back seat, gives an Oak Cliff address, then vanishes mid-route. She leaves behind nothing but damp upholstery and shaken drivers. Cab drivers logged her. Teenagers swore they saw her in the rearview. A Dallas socialite claimed she drove her halfway home. No one has ever identified the drowned woman, if she ever lived at all.',
-            verdict: 'Classic phantom hitchhiker legend—pure Dallas folklore, zero verified drowning victims to match the story.',
+            title: 'The Lady of White Rock Lake',
+            image: {
+              src: '/dallas/dark-history/lady-white-rock.png',
+              alt: 'Misty White Rock Lake at night',
+            },
+            body: 'Since the 1940s, motorists circling White Rock Lake have picked up the same waterlogged passenger: a pale woman in her twenties wearing a soaked evening dress who flags down cars at night. She climbs into the back seat, gives a Lakewood or Oak Cliff address, then vanishes before arrival—leaving nothing but a damp spot on the upholstery. The earliest published account appeared in 1943, but the legend is most often credited to Guy Malloy, Neiman Marcus\'s display director for 40 years, who loved telling the story. Some versions say she drowned in a boating accident; others claim suicide. Two real drownings have been suggested as the ghost\'s origin: Louise Ford Davis in 1935 and Rose Stone in 1942. But Sally Rodriguez, the lake\'s unofficial historian, has researched every death record. "I\'ve found lots of stories," she says, "but no stories that match." Reader\'s Digest named White Rock Lake one of the world\'s 14 most haunted bodies of water—listed right above Loch Ness.',
+            verdict: 'Pure Dallas folklore. The phantom hitchhiker is a classic urban legend type, and no verified drowning victim matches the story. But try telling that to anyone who\'s driven those dark lakeside roads alone.',
             sources: [
               {
-                type: 'book',
-                title: 'Ghosts of Dallas',
-                author: 'Mark McLaughlin',
-                isbn: '9781540243584',
-                year: '2018',
-                url: 'https://www.amazon.com/Ghosts-Dallas-Mark-McLaughlin/dp/1540243583',
-              },
-              {
-                type: 'book',
-                title: 'Weird Texas',
-                author: 'Wesley Treat, Rob Riggs, and Joe Nickell',
-                isbn: '9781402766893',
-                year: '2005',
-                url: 'https://www.amazon.com/Weird-Texas-Travel-Guides-Unusual/dp/1402766890',
+                type: 'article',
+                title: 'How White Rock\'s "Lady of the Lake" ghost story was sparked by a Neiman Marcus display genius',
+                publisher: 'Dallas Morning News',
+                year: '2021',
+                url: 'https://www.dallasnews.com/arts-entertainment/2021/10/31/how-white-rocks-lady-of-the-lake-ghost-story-was-sparked-by-a-neiman-marcus-display-genius/',
               },
               {
                 type: 'article',
-                title: 'The Lady of White Rock Lake: Dallas\' Most Famous Ghost',
+                title: 'Is Dallas\' White Rock Lake haunted? Curious Texas ghost hunts for an answer',
                 publisher: 'Dallas Morning News',
                 year: '2019',
-                url: 'https://www.dallasnews.com/news/curious-texas/2019/10/31/lady-white-rock-lake-dallas-famous-ghost/',
+                url: 'https://www.dallasnews.com/news/curious-texas/2019/01/31/is-dallas-white-rock-lake-haunted-curious-texas-ghost-hunts-for-an-answer/',
               },
               {
                 type: 'article',
-                title: 'White Rock Lake\'s Ghostly Hitchhiker',
-                publisher: 'Texas Monthly',
-                author: 'Katie Gutierrez',
-                year: '2020',
-                url: 'https://www.texasmonthly.com/articles/white-rock-lake-ghost-lady/',
+                title: 'Dallas, Texas ghost story: White Rock Lady of the Lake',
+                publisher: 'WFAA',
+                url: 'https://www.wfaa.com/article/features/dallas-texas-ghost-story-white-rocks-lady-of-the-lake-doesnt-exist-but-other-ghosts-just-might/287-6b22f6b0-b69c-4149-bdf2-f724a0987afb',
               },
               {
-                type: 'podcast',
-                title: 'The Lady of White Rock Lake',
-                show: 'Haunted Texas',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/haunted-texas/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'White Rock Lake Ghost: The Lady in White',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=AbCdEfGhIjK',
+                type: 'article',
+                title: 'Lady of the Lake',
+                publisher: 'For the Love of the Lake',
+                url: 'https://whiterocklake.org/lady-of-the-lake/',
               },
             ],
             location: {
-              name: 'White Rock Lake shoreline',
+              name: 'White Rock Lake',
               stillExists: true,
-            },
-            image: {
-              src: '/images/dark-history/dallas/white-rock-lake-1940s.jpg',
-              alt: 'White Rock Lake in Dallas during the 1940s era when the Lady of the Lake legend originated',
             },
           },
           {
             id: 'dal-dark-5',
             type: 'dark-history',
-            category: 'haunting',
-            year: '1950s',
-            title: 'Screaming Bridge Rivalry',
-            body: 'One Friday night in the 1950s, rival high school athletes decided to settle their beef with a car race across a narrow Trinity River bridge. Both vehicles hit the span at full throttle. The old timber bridge splintered under the weight, and both cars plunged into the black water below. The boys drowned together, locked in a contest that proved exactly nothing. Late-night anglers swear the bridge still screams when fog rolls in—crumpling steel mixed with the last gasps of teenagers who bet their lives on bragging rights.',
-            verdict: 'Urban legend stitched from multiple real bridge collapses. No single definitive incident matches the story, but the terror feels earned.',
+            category: 'disaster',
+            year: '1961',
+            title: 'The Screaming Bridge',
+            image: {
+              src: '/dallas/dark-history/screaming-bridge.png',
+              alt: 'Old wooden bridge in North Texas',
+            },
+            body: 'February 4, 1961: Six Arlington High School girls left a movie theater for a late-night joyride. As their car approached a wooden bridge on Arlington-Bedford Road at roughly 45 mph, the darkness and incline hid what lay ahead—the bridge had been burned out. Their car launched off the road and crashed into the opposite bank of the ravine, landing upside down. Mary Lou Goldner, 16, and Claudie Jean Reeves, 17, died instantly. Kathy Fleming died later. Three others survived with severe injuries. Ironically, Claudie\'s father was a highway patrolman; investigating officers paused their work to attend her funeral. A grand jury investigated four Arlington High boys for arson—they\'d set the bridge on fire as a "prank"—but called it "childish" and declined to press charges. The wooden bridge was soon replaced with a concrete culvert. But the legend migrated south to nearby Trammel Davis Road, now deep inside River Legacy Park, where visitors still claim to hear screaming on quiet nights.',
+            verdict: 'Documented tragedy. The 1961 accident is real and verified; the haunting legend that followed attached itself to multiple bridges in the Trinity River bottom.',
             sources: [
               {
-                type: 'book',
-                title: 'Ghosts of Dallas',
-                author: 'Mark McLaughlin',
-                isbn: '9781540243584',
-                year: '2018',
-                url: 'https://www.amazon.com/Ghosts-Dallas-Mark-McLaughlin/dp/1540243583',
-              },
-              {
-                type: 'book',
-                title: 'Haunted Texas: A Travel Guide',
-                author: 'Scott A. Johnson',
-                isbn: '9780762779413',
-                year: '2014',
-                url: 'https://www.amazon.com/Haunted-Texas-Travel-Scott-Johnson/dp/0762779411',
+                type: 'article',
+                title: 'Six Girls in a Chevy (Part 2): Screaming Bridge',
+                publisher: 'Hometown by Handlebar',
+                url: 'https://hometownbyhandlebar.com/?p=36562',
               },
               {
                 type: 'article',
-                title: 'North Texas Screaming Bridges and Ghost Stories',
-                publisher: 'Fort Worth Star-Telegram',
-                year: '2018',
-                url: 'https://www.star-telegram.com/entertainment/article219876345.html',
+                title: 'The Screaming Bridge',
+                publisher: 'Dallas Terrors',
+                url: 'https://dallasterrors.com/the-screaming-bridge/',
               },
               {
                 type: 'article',
-                title: 'Texas\' Most Haunted Bridges',
-                publisher: 'Dallas Observer',
-                year: '2019',
-                url: 'https://www.dallasobserver.com/news/haunted-bridges-texas-11839456',
+                title: 'Screaming Bridge at River Legacy Park',
+                publisher: 'Ghost Texas',
+                url: 'https://ghosttexas.com/screaming-bridge-at-river-legacy-park/',
               },
               {
-                type: 'podcast',
-                title: 'Screaming Bridges of North Texas',
-                show: 'Haunted Texas',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/haunted-texas/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'The Screaming Bridge: Dallas Urban Legend',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=LmNoPqRsTuV',
+                type: 'article',
+                title: 'Screaming Bridge: A Haunting Texas Urban Legend',
+                publisher: 'Texas Hill Country',
+                url: 'https://texashillcountry.com/screaming-bridge-legend/',
               },
             ],
             location: {
-              name: 'Trinity River backroads, north of Dallas',
-              stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/dallas/trinity-river-old-bridge.jpg',
-              alt: 'Historic Trinity River bridge in the Dallas area, representative of the narrow spans from the 1950s era',
+              name: 'River Legacy Park, Arlington (Trammel Davis Road bridge)',
+              stillExists: true,
             },
           },
+          {
+            id: 'dal-dark-6',
+            type: 'dark-history',
+            category: 'unsolved',
+            year: '1996',
+            title: 'The Girl Who Changed Everything',
+            images: [
+              {
+                src: '/dallas/dark-history/amber-1.png',
+                alt: 'Amber Hagerman memorial',
+              },
+              {
+                src: '/dallas/dark-history/amber-2.png',
+                alt: 'AMBER Alert system announcement',
+              },
+            ],
+            body: 'January 13, 1996: Nine-year-old Amber Hagerman took her new pink Christmas bike for a ride near her grandmother\'s house in Arlington. She and her little brother found a "cool" ramp in an abandoned Winn-Dixie parking lot two-tenths of a mile from home. Her brother went back; Amber stayed. At 3:15 p.m., a man in a black pickup truck grabbed her from behind. A 78-year-old retired sheriff\'s deputy witnessed it from his backyard and called 911, but could only describe the truck—a black 1980s or \'90s full-sized pickup with no chrome. Four days later, a dog walker found Amber\'s body in a creek bed near some apartments. Her throat had been cut. The medical examiner determined she\'d been kept alive for at least two days. Police have sifted through more than 8,000 leads over nearly three decades. No arrest has ever been made. But ten months after her death, Dallas-Fort Worth broadcasters launched a new emergency system in her name. The AMBER Alert has since helped recover over 1,200 children nationwide.',
+            verdict: 'Unsolved. The killer has never been identified despite decades of investigation and thousands of tips. The case remains active with Arlington Police.',
+            sources: [
+              {
+                type: 'article',
+                title: 'How A Nine-Year-Old\'s Horrifying Kidnapping And Murder Inspired The AMBER Alert System',
+                publisher: 'All That\'s Interesting',
+                url: 'https://allthatsinteresting.com/amber-hagerman',
+              },
+              {
+                type: 'article',
+                title: 'How Were Amber Alerts Created? The Amber Hagerman Cold Case',
+                publisher: 'A&E True Crime',
+                url: 'https://www.aetv.com/real-crime/how-did-amber-alerts-start-amber-hagerman',
+              },
+              {
+                type: 'article',
+                title: 'Still Searching for Amber\'s Killer',
+                publisher: 'National Center for Missing & Exploited Children',
+                year: '2021',
+                url: 'https://www.missingkids.org/blog/2021/still-searching-for-ambers-killer',
+              },
+              {
+                type: 'other',
+                title: 'Amber Hagerman Case File',
+                publisher: 'Solve the Case',
+                url: 'https://www.solvethecase.org/case/1996-5/amber-hagerman',
+              },
+              {
+                type: 'article',
+                title: 'About AMBER Alert',
+                publisher: 'U.S. Department of Justice',
+                url: 'https://amberalert.ojp.gov/about',
+              },
+            ],
+            location: {
+              name: 'Former Winn-Dixie parking lot, E. Abram St., Arlington',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'dal-dark-7',
+            type: 'dark-history',
+            category: 'crime',
+            year: '2016–2018',
+            title: 'The Pillowcase Killer',
+            images: [
+              {
+                src: '/dallas/dark-history/pillowcase-1.png',
+                alt: 'Dallas senior living facility',
+              },
+              {
+                src: '/dallas/dark-history/pillowcase-2.png',
+                alt: 'Billy Chemirmir investigation coverage',
+              },
+            ],
+            body: 'For two years, elderly women in upscale Dallas senior living communities kept dying in their sleep. Natural causes, the death certificates said—they were old, after all. But Billy Chemirmir wasn\'t a caregiver making house calls. He was a predator. The Kenyan immigrant would pose as a maintenance worker or medical professional, talk his way into apartments, then smother his victims with pillows and steal their jewelry. The smothering left almost no evidence. At least 18 women died before 91-year-old Mary Annis Bartel survived an attack in March 2018. "Go to bed. Don\'t fight me," he told her. She lost consciousness but lived. Her description led police to Chemirmir the next day—just as he was tossing a jewelry box into a dumpster. Inside: items belonging to his latest victim, 81-year-old Lu Thi Harris, found dead that same evening. Chemirmir was indicted for 22 murders, convicted of two, and sentenced to life without parole. In September 2023, his cellmate killed him in prison.',
+            verdict: 'Convicted. Chemirmir received two life sentences before being killed by his cellmate in 2023. Families of victims continue to push for accountability from the senior living facilities that failed to protect residents.',
+            sources: [
+              {
+                type: 'article',
+                title: 'Dallas serial killer Billy Chemirmir convicted, receives second life sentence',
+                publisher: 'WFAA',
+                year: '2022',
+                url: 'https://www.wfaa.com/article/news/crime/dallas-serial-killer-billy-chemirmir-convicted-of-capital-murder-in-death-of-another-elderly-victim-receives-second-life-sentence-officials-say/287-0f36d04d-4f2d-4d1e-9b73-7ddb77f5dc00',
+              },
+              {
+                type: 'article',
+                title: 'Convicted North Texas killer Billy Chemirmir killed in prison',
+                publisher: 'WFAA',
+                year: '2023',
+                url: 'https://www.wfaa.com/article/news/local/billy-chemirmir-killed-in-prison-texas-dallas-convicted-killer/287-caa6133d-a47b-4b26-8946-20ec46b623a1',
+              },
+              {
+                type: 'article',
+                title: 'Pillowcase Murders: Suspected Texas serial killer smothered elderly women in upscale nursing homes',
+                publisher: 'Fox News',
+                url: 'https://www.foxnews.com/us/pillowcase-murders-suspected-texas-serial-killer-smothered-elderly-women-upscale-nursing-homes',
+              },
+              {
+                type: 'article',
+                title: 'Billy Chemirmir, accused in deaths of 18 elderly women, killed in prison by cellmate',
+                publisher: 'NBC News',
+                year: '2023',
+                url: 'https://www.nbcnews.com/news/us-news/man-accused-deaths-18-elderly-women-texas-killed-prison-cellmate-rcna105839',
+              },
+              {
+                type: 'documentary',
+                title: 'Pillowcase Murders',
+                platform: 'Paramount+',
+                year: '2024',
+              },
+              {
+                type: 'other',
+                title: 'Billy Chemirmir',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Billy_Chemirmir',
+              },
+            ],
+            location: {
+              name: 'Various senior living facilities, Dallas and Collin County',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'dal-dark-8',
+            type: 'dark-history',
+            category: 'haunting',
+            year: '1938 (legend)',
+            title: 'Goatman\'s Bridge',
+            image: {
+              src: '/dallas/dark-history/goatman.png',
+              alt: 'Old Alton Bridge at dusk',
+            },
+            body: 'The story goes like this: In the late 1930s, a Black goat farmer named Oscar Washburn lived near the Old Alton Bridge in Denton County. He was good at his trade—so good he hung a sign on the bridge: "This Way to the Goatman." His success enraged local Klansmen. One night in August 1938, they crossed the bridge, dragged Washburn from his home, and hanged him from the iron trusses. But when they looked over the edge to make sure he was dead, the noose was empty. Panicked, they returned to his home and murdered his wife and children. Now, on dark nights, people report glowing eyes in the woods, the sound of hooves on the bridge, and a growling voice ordering them to leave. Paranormal investigators flock here. The reality is more complicated: researchers have found no census records of Oscar Washburn, no newspaper accounts of a 1938 lynching, no death certificates. But racist violence absolutely happened in Denton County during that era—the newspapers just didn\'t print the victims\' names. The Goatman may be a ghost story, but the terror it describes was real.',
+            verdict: 'Unverified legend. No historical records confirm Oscar Washburn existed, but the story reflects documented patterns of racial violence in 1930s North Texas.',
+            sources: [
+              {
+                type: 'article',
+                title: 'The Goatman of Old Alton Bridge: A tale rooted in Texas\' historical racial tensions',
+                publisher: 'Texas Standard / KERA',
+                year: '2023',
+                url: 'https://www.texasstandard.org/stories/goatman-denton-old-alton-bridge-texas-cryptids-lynching/',
+              },
+              {
+                type: 'article',
+                title: 'Denton\'s Haunted Bridge Legend Grows, But Does the Story Add Up?',
+                publisher: 'NBC DFW',
+                url: 'https://www.nbcdfw.com/news/local/dentons-haunted-bridge-legend-grows-but-does-the-story-add-up/44982/',
+              },
+              {
+                type: 'article',
+                title: 'The Goat Man and a Name',
+                publisher: 'Denton Public Library',
+                year: '2015',
+                url: 'https://dentonlibrary.wordpress.com/2015/11/04/the-goat-man-and-a-name/',
+              },
+              {
+                type: 'article',
+                title: 'A Historic Haunt: Old Alton Bridge',
+                publisher: 'Denton County Office of History and Culture',
+                year: '2017',
+                url: 'https://dentoncountyhistoryandculture.wordpress.com/2017/10/27/a-historic-haunt-old-alton-bridge/',
+              },
+              {
+                type: 'other',
+                title: 'Old Alton Bridge',
+                publisher: 'Wikipedia',
+                url: 'https://en.wikipedia.org/wiki/Old_Alton_Bridge',
+              },
+            ],
+            location: {
+              name: 'Old Alton Bridge, Denton/Copper Canyon',
+              stillExists: true,
+            },
+          }
         ],
       },
       {
@@ -993,7 +1154,7 @@ export const dallas: CityData = {
               src: '',
               alt: 'Eclectic dive bar with neon signs and retro decor',
             },
-          },
+          }
         ],
       },
       {
@@ -1001,7 +1162,7 @@ export const dallas: CityData = {
         type: 'best-of',
         category: 'cafes',
         title: 'Texas Roasts',
-        intro: 'The specialty coffee scene has grown up.',
+        intro: 'Dallas coffee culture snuck up on everyone. While the city was busy being Texas, a network of specialty roasters, third-wave cafés, and laptop-friendly spots emerged across the sprawl. Now you can find pour-overs as good as any coastal city, usually with better parking.',
         spots: [
           {
             name: 'Houndstooth Coffee',
@@ -1042,7 +1203,7 @@ export const dallas: CityData = {
             address: '8499 Garland Rd, Dallas, TX 75218',
             coordinates: { lat: 32.8231, lng: -96.7251 },
             price: '$',
-          },
+          }
         ],
       },
       {
@@ -1153,7 +1314,7 @@ export const dallas: CityData = {
               src: '',
               alt: 'Fresh roasted coffee beans at Noble Coyote roastery',
             },
-          },
+          }
         ],
       },
       {
@@ -1251,7 +1412,7 @@ export const dallas: CityData = {
               src: '',
               alt: 'Creative gourmet tacos with vibrant toppings',
             },
-          },
+          }
         ],
       },
       {
@@ -1387,7 +1548,7 @@ export const dallas: CityData = {
               coordinates: { lat: 32.7815, lng: -96.8032 },
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -1591,15 +1752,16 @@ export const dallas: CityData = {
             lastAddress: '3152 Lover\'s Ln, Dallas',
             coordinates: { lat: 32.8388, lng: -96.7682 },
             source: 'Dallas Morning News, D Magazine, Dallas Observer',
-          },
+          }
         ],
       },
     
       {
         id: 'dal-lost-and-loved',
         type: 'section',
-        title: 'Lost & Loved',
+        title: 'Lost Dallas',
         teaser: 'Hoffbrau Steaks, Lee Harvey\'s, and the Dallas institutions that vanished',
+        intro: 'Dallas tears down its landmarks with the same confidence it builds them. These were the steakhouses, honky-tonks, and dives where deals got done and memories got made—places that felt like they\'d last forever until they didn\'t. The city reinvents itself relentlessly. Some things deserve to be remembered.',
         items: [
           {
             id: 'dal-lost-1',
@@ -1714,8 +1876,8 @@ export const dallas: CityData = {
             communityVoice: '"Taco Cabana was Dallas\'s 2am safe haven." — Eater Dallas',
             lastAddress: 'Multiple locations',
             source: 'Dallas Morning News, Eater Dallas',
-          },
+          }
         ],
-      },
+      }
     ],
   }

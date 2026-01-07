@@ -6,7 +6,7 @@ import { CitiesNavigation } from './CitiesNavigation'
 import { MenuFooter } from './MenuFooter'
 import type { MenuOverlayProps } from './types'
 
-export function MenuOverlay({ onClose }: MenuOverlayProps) {
+export function MenuOverlay({ onClose, currentCitySlug }: MenuOverlayProps) {
   return (
     <motion.div
       id="premium-mobile-menu"
@@ -25,7 +25,7 @@ export function MenuOverlay({ onClose }: MenuOverlayProps) {
     >
       {/* Scrollable content area */}
       <div className="flex-1 overflow-y-auto overscroll-contain">
-        <CitiesNavigation onClose={onClose} />
+        <CitiesNavigation onClose={onClose} currentCitySlug={currentCitySlug} />
       </div>
 
       {/* Fixed footer with email */}

@@ -5,8 +5,9 @@ import { createPortal } from 'react-dom'
 import { AnimatePresence } from 'framer-motion'
 import { AnimatedMenuButton } from './PremiumMobileMenu/AnimatedMenuButton'
 import { MenuOverlay } from './PremiumMobileMenu/MenuOverlay'
+import type { PremiumMobileMenuProps } from './PremiumMobileMenu/types'
 
-export function PremiumMobileMenu() {
+export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
 
@@ -145,7 +146,7 @@ export function PremiumMobileMenu() {
       {mounted && createPortal(
         <div ref={menuRef}>
           <AnimatePresence>
-            {isOpen && <MenuOverlay onClose={closeMenu} />}
+            {isOpen && <MenuOverlay onClose={closeMenu} currentCitySlug={currentCitySlug} />}
           </AnimatePresence>
         </div>,
         document.body

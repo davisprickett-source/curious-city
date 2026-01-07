@@ -48,7 +48,7 @@ export default async function SitemapPage() {
   const discoverSubsections = [
     { label: 'Curiosities', path: 'curiosities' },
     { label: 'Dark History', path: 'dark-history' },
-    { label: 'Scenes', path: 'scenes' },
+    // { label: 'Scenes', path: 'scenes' }, // Hidden for v1 launch
   ]
 
   const globalCategories = [

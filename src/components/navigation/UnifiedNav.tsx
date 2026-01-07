@@ -123,7 +123,7 @@ export function UnifiedNav({
               className="h-8 w-auto"
             />
           </Link>
-          <PremiumMobileMenu />
+          <PremiumMobileMenu currentCitySlug={citySlug} />
         </div>
       </div>
     </nav>

@@ -44,7 +44,8 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
   // Filter spots with coordinates
   const spotsWithCoords = allSpots.filter(spot => spot.coordinates)
 
-  // Get intro from first section if available
+  // Get title and intro from first section if available
+  const sectionTitle = coffeeShopsList[0]?.title
   const introText = coffeeShopsList[0]?.intro
   const intro = introText ? { text: introText } : undefined
 
@@ -59,11 +60,10 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
       <ScrollyMapView
         spots={spotsWithCoords}
         cityName={city.name}
-        title={`Best Coffee Shops in ${city.name}`}
+        title={sectionTitle || `Best Coffee Shops in ${city.name}`}
         intro={intro}
         markerType="coffee"
-        showBanner={true}
-        bannerImage="/global-banners/coffee-banner.png"
+        currentCategory="coffee-shops"
       />
 
       <Footer />

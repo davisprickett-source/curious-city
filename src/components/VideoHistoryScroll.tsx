@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { History } from '@/types/content'
 import { UnifiedNav } from './navigation/UnifiedNav'
-import { MobileNavMenu } from './navigation/MobileNavMenu'
+import { PremiumMobileMenu } from './PremiumMobileMenu'
 import { ShareLinks } from './ShareLinks'
 import { getCity } from '@/data/cities'
 
@@ -48,6 +48,40 @@ const FRAME_COUNTS: Record<string, number> = {
   'minn-9': 94,
   'minn-10': 144,
   'minn-11': 94,
+
+  // Raleigh sequences
+  'raleigh-1': 94,
+  'raleigh-2': 144,
+  'raleigh-3': 94,
+  'raleigh-4': 144,
+  'raleigh-5': 57,
+  'raleigh-6': 94,
+  'raleigh-7': 94,
+  'raleigh-8': 66,
+  'raleigh-9': 94,
+  'raleigh-10': 94,
+  'raleigh-11': 94,
+  'raleigh-12': 144,
+
+  // Portland sequences
+  'portland-1': 192,
+  'portland-2': 125,
+  'portland-3': 125,
+  'portland-4': 125,
+  'portland-5': 192,
+  'portland-6': 125,
+  'portland-7': 125,
+  'portland-8': 125,
+  'portland-9': 125,
+  'portland-10': 125,
+  'portland-11': 125,
+  'portland-12': 125,
+  'portland-13': 106,
+  'portland-14': 192,
+  'portland-15': 192,
+  'portland-16': 125,
+  'portland-17': 117,
+  'portland-18': 125,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
@@ -73,8 +107,6 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const videoBlocks = history.blocks.filter(
     b => b.type === 'video-sequence'
   ) as Array<any>
-
-  const totalVideos = videoBlocks.length
 
   // Get sequence name from video path
   const getSequenceName = (videoPath: string): string => {
@@ -105,10 +137,14 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     const cityMap: Record<string, string> = {
       'minn': 'minneapolis',
       'tampa': 'tampa',
-      'phoenix': 'phoenix'
+      'phoenix': 'phoenix',
+      'raleigh': 'raleigh',
+      'portland': 'portland'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    const frameName = city === 'tampa' ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
+    // Tampa, Raleigh, and Portland use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
+    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland'
+    const frameName = usesUnderscore ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
 
@@ -166,6 +202,21 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     loadBatch(0, 20)
   }, [videoBlocks])
 
+  // Calculate weighted scroll thresholds based on scrollHeight values
+  const scrollWeights = useMemo(() => {
+    const weights = videoBlocks.map((block: any) => block.scrollHeight || 180)
+    const totalWeight = weights.reduce((sum: number, w: number) => sum + w, 0)
+
+    // Calculate cumulative thresholds (0 to 1)
+    const thresholds: number[] = []
+    let cumulative = 0
+    for (const w of weights) {
+      cumulative += w / totalWeight
+      thresholds.push(cumulative)
+    }
+    return { weights, totalWeight, thresholds }
+  }, [videoBlocks])
+
   // Handle scroll
   const handleScroll = useCallback(() => {
     if (!containerRef.current || !storyContentRef.current) return
@@ -180,13 +231,42 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
     // Progress should complete when story content finishes scrolling
     const rawProgress = containerTop / storyContentHeight
-    const progress = Math.max(0, Math.min(0.9999, rawProgress)) // Cap at 0.9999 to prevent last frame shift
 
-    setScrollProgress(progress * 100)
+    // Once scroll reaches the end, lock at 100% and don't update further
+    // This prevents frame shifts when scrolling into footer area
+    const isAtEnd = rawProgress >= 0.98
+    const progress = isAtEnd ? 1 : Math.max(0, Math.min(0.97, rawProgress))
 
-    const progressPerVideo = 1 / totalVideos
-    const currentIdx = Math.min(Math.floor(progress / progressPerVideo), totalVideos - 1)
-    const progressInVideo = Math.max(0, Math.min(0.9999, (progress - (currentIdx * progressPerVideo)) / progressPerVideo))
+    setScrollProgress(Math.min(progress * 100, 100))
+
+    // If at end, lock to last video and last frame - don't recalculate
+    if (isAtEnd) {
+      const lastVideoIdx = videoBlocks.length - 1
+      const lastBlock = videoBlocks[lastVideoIdx]
+      if (lastBlock) {
+        setCurrentVideoIndex(lastVideoIdx)
+        const seqName = getSequenceName(lastBlock.videoPath)
+        const frameCount = getFrameCount(seqName)
+        setCurrentFrame(frameCount) // Lock to last frame
+      }
+      return
+    }
+
+    // Find current video based on weighted thresholds
+    let currentIdx = 0
+    for (let i = 0; i < scrollWeights.thresholds.length; i++) {
+      if (progress < scrollWeights.thresholds[i]) {
+        currentIdx = i
+        break
+      }
+      currentIdx = i
+    }
+
+    // Calculate progress within current video
+    const prevThreshold = currentIdx > 0 ? scrollWeights.thresholds[currentIdx - 1] : 0
+    const currentThreshold = scrollWeights.thresholds[currentIdx]
+    const videoRange = currentThreshold - prevThreshold
+    const progressInVideo = Math.max(0, Math.min(0.97, (progress - prevThreshold) / videoRange))
 
     setCurrentVideoIndex(currentIdx)
 
@@ -199,7 +279,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       const frameNum = Math.max(1, Math.min(frameCount, targetFrame))
       setCurrentFrame(frameNum)
     }
-  }, [totalVideos, videoBlocks])
+  }, [videoBlocks, scrollWeights])
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -225,12 +305,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         <div className="container-page">
           <div className="flex items-center justify-between h-14">
             <Link href="/" className="flex items-center font-semibold text-neutral-900 tracking-tight">
-              <span className="text-lg">Curious City</span>
+              <img
+                src="/logos/CCs.png"
+                alt="Curious City"
+                className="h-8 w-auto"
+              />
             </Link>
-            <MobileNavMenu
-              citySlug={history.citySlug}
-              currentSection="articles"
-            />
+            <PremiumMobileMenu currentCitySlug={history.citySlug} />
           </div>
         </div>
       </div>
@@ -239,6 +320,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="hidden sm:block fixed top-0 left-0 right-0 z-50 bg-white">
         <UnifiedNav
           citySlug={history.citySlug}
+          cityName={cityName}
           currentSection="articles"
         />
       </div>
@@ -339,12 +421,12 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
               </div>
             </div>
 
-            {/* Bottom spacing - centers content in middle of screen on desktop, minimal on mobile */}
-            <div className="h-4 lg:h-[50vh]" />
+            {/* Bottom spacing - minimal gap before share section */}
+            <div className="h-8" />
           </div>
 
           {/* Footer - appears at end of scroll */}
-          <footer className="px-6 md:px-10 py-12 border-t border-neutral-200 bg-white">
+          <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
             {/* Enhanced Share Section */}
             <div className="mb-8 pb-8 border-b border-neutral-200">
               <div className="bg-gradient-to-r from-accent-50 to-amber-50 rounded-2xl p-6 md:p-8">

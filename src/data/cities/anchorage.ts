@@ -60,6 +60,7 @@ export const anchorage: CityData = {
         type: 'section',
         title: 'Anchorage Curiosities',
         teaser: 'CIA spy devices, Cold War relics, and secrets at the edge of wilderness',
+        intro: 'Anchorage is where the wilderness starts at the edge of the parking lot and ends somewhere in Siberia. Moose outnumber people in some neighborhoods. The Cold War left behind nuclear-powered spy devices on mountaintops. And twice daily, a surfable tidal wave rolls through waters that will swallow you whole if you step off your board. Nothing here is normal.',
         items: [
           {
             id: 'anc-curiosity-1',
@@ -762,7 +763,7 @@ export const anchorage: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Last Frontier Pours',
-        intro: 'Anchorage bars are unpretentious by necessity. The vibe is come-as-you-are.',
+        intro: 'Anchorage bars don\'t pretend to be anything they\'re not. In a city where people arrive in Carhartts and leave in the same Carhartts, the drinking culture is unpretentious by design. Legendary dives that have survived earthquakes, craft cocktail spots that emerged despite the isolation, and neighborhood bars where the bartender remembers your drink and your dog\'s name.',
         spots: [
           {
             name: 'Blues Central',
@@ -863,7 +864,7 @@ export const anchorage: CityData = {
         type: 'best-of',
         category: 'restaurants',
         title: 'Alaska Eats',
-        intro: 'Alaska seafood is the star. Everything else is imported, but the fish is the real thing.',
+        intro: 'In Alaska, the seafood isn\'t a menu section—it\'s the entire point. Salmon pulled from waters you can see from downtown, halibut that was swimming yesterday, king crab that costs what it costs because it\'s actually fresh. Everything else has to be shipped in, but the fish is the best on Earth. These restaurants know how to honor it.',
         spots: [
           {
             name: 'Simon & Seafort\'s',
@@ -888,7 +889,7 @@ export const anchorage: CityData = {
                 alt: 'Simon & Seafort\'s atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/simon-menu.png',
+            menuImage: { src: '/anchorage/establishments/simon-menu.png', alt: 'Simon & Seafort\'s menu' },
           },
           {
             name: 'Moose\'s Tooth Pub & Pizzeria',
@@ -913,7 +914,7 @@ export const anchorage: CityData = {
                 alt: 'Moose\'s Tooth pizzeria atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/moosetooth-menu-1.png',
+            menuImage: { src: '/anchorage/establishments/moosetooth-menu-1.png', alt: 'Moose\'s Tooth menu' },
           },
           {
             name: 'Snow City Cafe',
@@ -938,7 +939,7 @@ export const anchorage: CityData = {
                 alt: 'Snow City Cafe atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/snowcity-menu.png',
+            menuImage: { src: '/anchorage/establishments/snowcity-menu.png', alt: 'Snow City Cafe menu' },
           },
           {
             name: 'Spenard Roadhouse',
@@ -963,7 +964,7 @@ export const anchorage: CityData = {
                 alt: 'Spenard Roadhouse atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/spenard-roadhouse-menu.png',
+            menuImage: { src: '/anchorage/establishments/spenard-roadhouse-menu.png', alt: 'Spenard Roadhouse menu' },
           },
           {
             name: 'Kinley\'s Restaurant',
@@ -984,7 +985,7 @@ export const anchorage: CityData = {
                 alt: 'Kinley\'s fine dining atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/kinleys-menu.png',
+            menuImage: { src: '/anchorage/establishments/kinleys-menu.png', alt: 'Kinley\'s menu' },
           },
         ],
       },
@@ -1056,7 +1057,7 @@ export const anchorage: CityData = {
                 alt: 'SteamDot atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/steamdot-menu-1.png',
+            menuImage: { src: '/anchorage/establishments/steamdot-menu-1.png', alt: 'SteamDot Coffee menu' },
           },
           {
             name: 'Dark Horse Coffee Co.',
@@ -1091,7 +1092,7 @@ export const anchorage: CityData = {
                 alt: 'Dark Horse Coffee atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/dark-horse-menu.png',
+            menuImage: { src: '/anchorage/establishments/dark-horse-menu.png', alt: 'Dark Horse Coffee menu' },
           },
           {
             name: 'The Kobuk Coffee Company',
@@ -1139,7 +1140,7 @@ export const anchorage: CityData = {
                 alt: 'Spenard Joe\'s atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/spenardjoes-menu-1.png',
+            menuImage: { src: '/anchorage/establishments/spenardjoes-menu-1.png', alt: 'Spenard Joe\'s menu' },
           },
           {
             name: 'Black Cup Coffee House',
@@ -1167,7 +1168,7 @@ export const anchorage: CityData = {
                 alt: 'Black Cup Coffee atmosphere',
               }
             ],
-            menu_image: '/anchorage/establishments/blackcup-menu.png',
+            menuImage: { src: '/anchorage/establishments/blackcup-menu.png', alt: 'Black Cup Coffee menu' },
           },
         ],
       },
@@ -1776,6 +1777,7 @@ export const anchorage: CityData = {
         type: 'section',
         title: 'Lost Anchorage',
         teaser: 'Chilkoot Charlie\'s, Earthquake Park, and the Alaska legends that closed',
+        intro: 'In a city where darkness lasts twenty hours in winter, the places that kept the lights on mattered more than most. These were the legendary dives, roadhouses, and gathering spots that gave Anchorage its frontier character—establishments that felt like they\'d been there since statehood. The Last Frontier loses its landmarks quietly.',
         items: [
           {
             id: 'anc-lost-1',

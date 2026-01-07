@@ -72,6 +72,30 @@ export default async function HomePage() {
           </div>
         </ThemeSection>
 
+        {/* Curiosities Section */}
+        <ThemeSection theme="discovery">
+          <SectionHeader
+            eyebrow="STRANGE BUT TRUE"
+            title="Local Curiosities"
+            description="The weird, wonderful, and downright bizarre things that make each city unique"
+            link={{
+              href: '/category/curiosities',
+              text: 'See More',
+            }}
+          />
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr">
+            {curatedContent.curiosities.map((page, index) => (
+              <PageCard
+                key={page.href}
+                data={page}
+                variant="featured"
+                index={index}
+              />
+            ))}
+          </div>
+        </ThemeSection>
+
         {/* Ad Placement #2 - Rectangle between sections */}
         <div className="container-page py-8">
           <UniversalAd

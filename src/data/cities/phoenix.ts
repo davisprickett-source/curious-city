@@ -60,6 +60,7 @@ export const phoenix: CityData = {
         type: 'section',
         title: 'Phoenix Curiosities',
         teaser: 'UFO sightings, German escapees, and the architecture of denial',
+        intro: 'Five million people chose to live in a place where summer heat kills more than hurricanes and earthquakes combined. Phoenix exists through sheer climate denial and borrowed water—and the strangeness runs deep. From one of history\'s most witnessed UFO events to escaped Nazi POWs building the city\'s landmarks, the Valley of the Sun keeps its secrets baking in plain sight.',
         items: [
           {
             id: 'phx-curiosity-1',
@@ -827,7 +828,7 @@ export const phoenix: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Desert Nightcaps',
-        intro: 'Phoenix drinks outdoors when the weather permits, which is October through April.',
+        intro: 'Phoenix drinking culture splits the year in half. October through April, every bar has a patio and the desert nights are perfect. Summer means air conditioning, dark rooms, and frozen drinks. The city has cultivated a cocktail scene that rivals any in the Southwest—from speakeasies hidden in strip malls to mezcal bars that take the desert seriously.',
         spots: [
           {
             name: 'Valley Bar',
@@ -1004,7 +1005,7 @@ export const phoenix: CityData = {
         type: 'best-of',
         category: 'restaurants',
         title: 'Sonoran Tables',
-        intro: 'Sonoran Mexican food is the star. Everything else is imported.',
+        intro: 'Sonoran Mexican is the native cuisine—flour tortillas, carne asada, green chile that means business. But Phoenix has grown into something more: James Beard-recognized chefs, immigrant-run restaurants that span the globe, and a late-night food scene that runs as hot as the summers. The city eats seriously now.',
         spots: [
           {
             name: 'Bacanora',
@@ -1808,6 +1809,7 @@ export const phoenix: CityData = {
         type: 'section',
         title: 'Lost Phoenix',
         teaser: 'The legendary bars, diners, and theaters swallowed by sprawl and heat',
+        intro: 'Phoenix sprawls fast and forgets faster. In a city always building outward, the old gets bulldozed for the new with ruthless efficiency. These were the air-conditioned oases, neon-lit diners, and dive bars that gave Phoenix its character before the chains moved in. Some fell to developers. Some to the heat. All are missed.',
         items: [
           {
             id: 'phx-lost-1',

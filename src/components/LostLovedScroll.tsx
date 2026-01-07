@@ -55,7 +55,6 @@ function LostLovedSection({
     triggerOnce: false,
   })
 
-  const prefersReducedMotion = useReducedMotion()
   const isEven = index % 2 === 0
 
   useEffect(() => {
@@ -74,7 +73,7 @@ function LostLovedSection({
       transition: {
         duration: 0.8,
         delay: 0.2,
-        ease: [0.16, 1, 0.3, 1],
+        ease: [0.16, 1, 0.3, 1] as const,
       },
     },
   }
@@ -87,21 +86,7 @@ function LostLovedSection({
       transition: {
         duration: 0.8,
         delay: 0.4,
-        ease: [0.16, 1, 0.3, 1],
-      },
-    },
-  }
-
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.95, x: isEven ? 60 : -60 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        delay: 0.6,
-        ease: [0.16, 1, 0.3, 1],
+        ease: [0.16, 1, 0.3, 1] as const,
       },
     },
   }
@@ -112,45 +97,43 @@ function LostLovedSection({
   return (
     <motion.section
       ref={inViewRef}
-      className="relative min-h-screen flex items-center py-16 md:py-20"
+      className="relative min-h-[70vh] flex items-center py-16 px-4"
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
     >
       {/* Vintage background gradient - sepia/amber tones */}
       <div className={`absolute inset-0 bg-gradient-to-br ${
         isEven
-          ? 'from-amber-50/10 via-amber-900/5 to-white'
-          : 'from-orange-50/10 via-orange-900/5 to-white'
+          ? 'from-amber-50/30 via-white to-white'
+          : 'from-orange-50/30 via-white to-white'
       }`} />
 
-      <div className="container-page relative z-10">
-        <div className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${isEven ? '' : 'md:flex-row-reverse'}`}>
-          {/* Number Badge - Vintage style */}
+      <div className="max-w-5xl mx-auto w-full relative z-10">
+        <div className={`flex flex-col md:flex-row gap-8 md:gap-12 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
+          {/* Number Badge - Vintage style, inline */}
           <motion.div
             variants={numberVariants}
-            className={`absolute top-4 ${isEven ? 'left-4 md:left-8' : 'right-4 md:right-8'} z-20`}
+            className="flex-shrink-0"
           >
             <div className="relative">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-amber-600 to-orange-600 flex items-center justify-center shadow-2xl border-4 border-amber-50">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-amber-600 to-orange-600 flex items-center justify-center shadow-lg border-2 border-amber-200">
                 <span className="text-2xl md:text-3xl font-bold text-white">
                   {String(index + 1).padStart(2, '0')}
                 </span>
               </div>
-              {/* Vintage stamp effect */}
-              <div className="absolute inset-0 rounded-full border-2 border-dashed border-amber-300/50 scale-110" />
             </div>
           </motion.div>
 
           {/* Content Side */}
           <motion.div
             variants={contentVariants}
-            className={`${isEven ? 'md:order-1' : 'md:order-2'} space-y-6`}
+            className="flex-1 space-y-6"
           >
             {/* Header */}
-            <div>
+            <div className="mb-4">
               {/* Years Badge */}
               {item.yearsOpen && (
-                <div className="inline-block px-4 py-1 bg-amber-100 border border-amber-300 rounded-full mb-4">
+                <div className="inline-block px-4 py-1 bg-amber-100 border border-amber-300 rounded-full mb-3">
                   <span className="text-sm font-semibold text-amber-900 tracking-wide">
                     {item.yearsOpen}
                   </span>
@@ -158,7 +141,7 @@ function LostLovedSection({
               )}
 
               {/* Name */}
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-2 leading-tight">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-neutral-900 mb-2 leading-tight">
                 {item.name}
               </h3>
 
@@ -170,16 +153,60 @@ function LostLovedSection({
               )}
             </div>
 
+            {/* Image - now in content flow */}
+            {allImages.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                className="mb-6"
+              >
+                <div className="relative overflow-hidden rounded-2xl shadow-xl">
+                  {allImages.length === 1 ? (
+                    <div className="relative aspect-[4/3] md:aspect-[16/9]">
+                      <Image
+                        src={allImages[0].src}
+                        alt={allImages[0].alt || item.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 800px"
+                      />
+                      {/* Subtle sepia overlay for vintage feel */}
+                      <div className="absolute inset-0 bg-amber-900/5 mix-blend-multiply pointer-events-none" />
+                      {/* Image credit overlay */}
+                      {allImages[0].credit && (
+                        <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+                          {allImages[0].credit}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <ImageCarousel
+                      images={allImages.map(img => ({ ...img, alt: img.alt || item.name }))}
+                    />
+                  )}
+                </div>
+              </motion.div>
+            )}
+
             {/* Description */}
             <div className="prose prose-lg max-w-none">
-              <p className="text-neutral-700 leading-relaxed">
+              <p className="text-lg text-neutral-700 leading-relaxed">
                 {item.description}
               </p>
             </div>
 
             {/* Why Missed - Emotional callout */}
             <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-500 rounded-lg p-6">
-              <div className="absolute top-3 right-3 text-4xl opacity-10">💔</div>
+              {/* Cracked heart icon */}
+              <div className="absolute top-3 right-3 opacity-10">
+                <svg className="w-12 h-12 text-amber-800" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  <path d="M12 5.5L10.5 10.5L12 12L13.5 10.5L12 5.5z" fill="white" opacity="0.8" />
+                  <path d="M11.5 12.5L10 16.5L12 18L14 16.5L12.5 12.5L12 13L11.5 12.5z" fill="white" opacity="0.8" />
+                </svg>
+              </div>
               <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
                 Why It's Missed
               </h4>
@@ -279,52 +306,6 @@ function LostLovedSection({
                     </div>
                   )}
                 </div>
-              </div>
-            )}
-          </motion.div>
-
-          {/* Image Side */}
-          <motion.div
-            variants={imageVariants}
-            className={`${isEven ? 'md:order-2' : 'md:order-1'}`}
-          >
-            {allImages.length > 0 && (
-              <div className="relative">
-                {/* Vintage frame effect */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-amber-200 via-amber-100 to-orange-100 rounded-2xl -rotate-1" />
-                <div className="absolute -inset-3 bg-gradient-to-tl from-amber-100 via-white to-amber-50 rounded-2xl rotate-1" />
-
-                {/* Image container with sepia overlay */}
-                <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                  {allImages.length === 1 ? (
-                    <div className="relative aspect-[4/3]">
-                      <Image
-                        src={allImages[0].src}
-                        alt={allImages[0].alt || item.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                      {/* Subtle sepia overlay for vintage feel */}
-                      <div className="absolute inset-0 bg-amber-900/5 mix-blend-multiply pointer-events-none" />
-                    </div>
-                  ) : (
-                    <ImageCarousel
-                      images={allImages}
-                      alt={item.name}
-                      autoPlay={false}
-                      showControls={true}
-                      aspectRatio="4/3"
-                    />
-                  )}
-                </div>
-
-                {/* Image credit */}
-                {allImages[0].credit && (
-                  <p className="mt-2 text-xs text-neutral-500 italic text-center">
-                    Photo: {allImages[0].credit}
-                  </p>
-                )}
               </div>
             )}
           </motion.div>

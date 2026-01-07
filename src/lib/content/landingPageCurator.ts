@@ -7,6 +7,7 @@ import { getAllPageCards } from './pages'
 export interface CuratedLandingContent {
   heroSlides: PageCardData[]
   darkStories: PageCardData[]
+  curiosities: PageCardData[]
   discoveries: PageCardData[]
   lostLandmarks: PageCardData[]
   moreStories: PageCardData[]
@@ -37,21 +38,6 @@ function diversifyByCities(
   if (result.length < maxCards) {
     const remaining = cards.filter((card) => !result.includes(card))
     result.push(...remaining.slice(0, maxCards - result.length))
-  }
-
-  return result
-}
-
-/**
- * Interleave two arrays for variety (A, B, A, B pattern)
- */
-function interleave<T>(arr1: T[], arr2: T[]): T[] {
-  const result: T[] = []
-  const maxLen = Math.max(arr1.length, arr2.length)
-
-  for (let i = 0; i < maxLen; i++) {
-    if (arr1[i]) result.push(arr1[i])
-    if (arr2[i]) result.push(arr2[i])
   }
 
   return result
@@ -114,41 +100,31 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
 
   // Prioritize cards with thumbnails for visual sections
   const cardsWithThumbnails = allCards.filter((card) => card.thumbnail)
-  const cardsWithoutThumbnails = allCards.filter((card) => !card.thumbnail)
 
-  // Hero Slides: Top 5 pieces across categories
-  // - 2 history essays (most recent with video if available)
-  // - 1 dark-history
-  // - 1 curiosity
-  // - 1 lost-loved
-  const historyCards = cardsWithThumbnails
-    .filter((c) => c.pageType === 'history' && c.publishedAt)
-    .sort((a, b) => {
-      if (a.publishedAt && b.publishedAt) {
-        return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-      }
-      return 0
-    })
-    .slice(0, 2)
+  // Hero Slides: Premium essays + one featured article
+  // Priority order: Tampa, Phoenix, Raleigh, Minneapolis essays, then one other
+  const premiumEssaySlugs = [
+    '/tampa/articles/sunshine-and-hustle',
+    '/phoenix/articles/the-air-conditioned-dream',
+    '/raleigh/articles/invented-before-it-existed',
+    '/minneapolis/articles/nice-with-an-edge',
+  ]
 
-  const darkHistoryCards = cardsWithThumbnails
-    .filter((c) => c.pageType === 'dark-history')
+  // Find the premium essays in order
+  const premiumEssays = premiumEssaySlugs
+    .map((slug) => allCards.find((c) => c.href === slug))
+    .filter((c): c is PageCardData => c !== undefined)
+
+  // Add one more featured article (dark-history or curiosity with good thumbnail)
+  const otherFeatured = cardsWithThumbnails
+    .filter(
+      (c) =>
+        (c.pageType === 'dark-history' || c.pageType === 'curiosities') &&
+        !premiumEssaySlugs.includes(c.href)
+    )
     .slice(0, 1)
 
-  const curiosityCards = cardsWithThumbnails
-    .filter((c) => c.pageType === 'curiosities')
-    .slice(0, 1)
-
-  const lostLovedCards = cardsWithThumbnails
-    .filter((c) => c.pageType === 'lost-loved')
-    .slice(0, 1)
-
-  const heroSlides = [
-    ...historyCards,
-    ...darkHistoryCards,
-    ...curiosityCards,
-    ...lostLovedCards,
-  ].slice(0, 5)
+  const heroSlides = [...premiumEssays, ...otherFeatured].slice(0, 5)
 
   // Dark Stories: 4 dark-history items from diverse cities
   const darkStories = diversifyByCities(
@@ -158,16 +134,20 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
     4
   )
 
-  // Discoveries: Mix of 2 curiosities + 2 hidden-gems (interleaved)
-  const curiosities = cardsWithThumbnails
-    .filter((c) => c.pageType === 'curiosities' && !heroSlides.includes(c))
-    .slice(0, 2)
+  // Curiosities: 4 curiosity items from diverse cities
+  const curiosities = diversifyByCities(
+    cardsWithThumbnails
+      .filter((c) => c.pageType === 'curiosities' && !heroSlides.includes(c))
+      .slice(0, 8),
+    4
+  )
 
+  // Discoveries: Mix of hidden-gems (since curiosities now has own section)
   const hiddenGems = cardsWithThumbnails
     .filter((c) => c.pageType === 'hidden-gems' && !heroSlides.includes(c))
-    .slice(0, 2)
+    .slice(0, 4)
 
-  const discoveries = interleave(curiosities, hiddenGems).slice(0, 4)
+  const discoveries = hiddenGems
 
   // Lost Landmarks: 4 lost-loved items from diverse cities
   const lostLandmarks = diversifyByCities(
@@ -181,6 +161,7 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   const featured = new Set([
     ...heroSlides.map((c) => c.href),
     ...darkStories.map((c) => c.href),
+    ...curiosities.map((c) => c.href),
     ...discoveries.map((c) => c.href),
     ...lostLandmarks.map((c) => c.href),
   ])
@@ -191,6 +172,7 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   return {
     heroSlides,
     darkStories,
+    curiosities,
     discoveries,
     lostLandmarks,
     moreStories,

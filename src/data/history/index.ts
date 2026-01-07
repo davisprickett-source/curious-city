@@ -17,6 +17,8 @@ import { portland_history } from './portland'
 import { minneapolis_premium_history } from './premium/minneapolis'
 import { tampa_premium_history } from './premium/tampa'
 import { phoenix_premium_history } from './premium/phoenix'
+import { raleigh_premium_history } from './premium/raleigh'
+import { portland_premium_history } from './premium/portland'
 
 // Re-export individual history collections
 export { minneapolis_history }
@@ -36,7 +38,7 @@ export { portland_history }
 export const history: HistoryIndex = {
   'minneapolis': { ...minneapolis_premium_history, ...minneapolis_history },
   'fargo': fargo_history,
-  'raleigh': raleigh_history,
+  'raleigh': { ...raleigh_history, ...raleigh_premium_history },
   'chicago': chicago_history,
   'salt-lake-city': salt_lake_city_history,
   'colorado-springs': colorado_springs_history,
@@ -45,7 +47,7 @@ export const history: HistoryIndex = {
   'denver': denver_history,
   'tampa': { ...tampa_history, ...tampa_premium_history },
   'phoenix': { ...phoenix_history, ...phoenix_premium_history },
-  'portland': portland_history,
+  'portland': { ...portland_history, ...portland_premium_history },
 }
 
 export function getHistory(citySlug: string, historySlug: string): History | null {

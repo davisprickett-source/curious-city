@@ -60,6 +60,7 @@ export const tampa: CityData = {
         type: 'section',
         title: 'Tampa Curiosities',
         teaser: 'Fictional pirates, cigar rollers, and the secrets beneath the sunshine',
+        intro: 'Tampa throws the biggest pirate parade in America for a buccaneer who never existed, invented the Cuban sandwich, and calls itself the Lightning Capital of North America. The city was built by cigar rollers who got their news read aloud while they worked—and that theatrical streak never left. From Ybor City\'s revolutionary past to the storms that define its summers, Tampa\'s oddities hit different.',
         items: [
           {
             id: 'tam-curiosity-1',
@@ -156,10 +157,16 @@ export const tampa: CityData = {
             title: 'Part of Ybor City is sovereign Cuban territory',
             body: 'The José Martí Park in Ybor City was deeded to the Republic of Cuba in 1956 and remains sovereign Cuban soil to this day—one of the only pieces of foreign sovereign territory in the United States outside of embassies. Fidel Castro gave a speech there in 1955 to raise money for the revolution. Decades of Cold War hostility, trade embargoes, and diplomatic deep-freeze haven\'t changed the deed. In the middle of Tampa, Cuba still owns a park.',
             year: '1956',
-            image: {
-              src: '/tampa/curiosities/cuba-ybor-1.png',
-              alt: 'José Martí Park in Ybor City',
-            },
+            images: [
+              {
+                src: '/tampa/curiosities/cuba-ybor-1.png',
+                alt: 'José Martí Park in Ybor City',
+              },
+              {
+                src: '/tampa/curiosities/cuba-ybor-2.png',
+                alt: 'José Martí Park monument and Cuban territory marker',
+              },
+            ],
             source: 'Ybor City Museum State Park',
             location: {
               name: 'José Martí Park, Ybor City',
@@ -1340,6 +1347,10 @@ export const tampa: CityData = {
                 src: '/Tampa/dark-history/licata-axe.png',
                 alt: 'The Licata family home in Ybor City',
               },
+              {
+                src: '/Tampa/dark-history/licata-aces2.png',
+                alt: 'Victor Licata newspaper coverage and crime scene',
+              },
             ],
             location: {
               name: '1707 5th Ave, Ybor City',
@@ -1873,6 +1884,7 @@ export const tampa: CityData = {
         type: 'section',
         title: 'Lost Tampa',
         teaser: 'The Columbia, Ybor nightclubs, and Tampa\'s legendary lost establishments',
+        intro: 'Tampa\'s history is written in cigar smoke and neon. From the Latin clubs of Ybor City to the waterfront dives that served fishermen at dawn, these were the places that gave the city its flavor. Some closed when the neighborhoods changed. Some when the owners got tired. All left a hole that chains can\'t fill.',
         items: [
           {
             id: 'tampa-lost-2',

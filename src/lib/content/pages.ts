@@ -19,7 +19,9 @@ function extractFirstVideoFrame(blocks: History['blocks']): string | undefined {
   if (sequenceMatch) {
     const city = sequenceMatch[1]
     const sequenceName = sequenceMatch[2]
-    const frameName = city === 'tampa' ? 'frame_0001.jpg' : 'frame-0001.jpg'
+    // Tampa, Raleigh, and Portland use underscore (frame_0001.jpg), others use dash
+    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland'
+    const frameName = usesUnderscore ? 'frame_0001.jpg' : 'frame-0001.jpg'
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
 

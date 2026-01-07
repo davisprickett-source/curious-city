@@ -47,7 +47,7 @@ export const portland: CityData = {
             meta: 'List',
             variant: 'compact',
             href: '/portland/coffee-roasters',
-          },
+          }
         ],
       },
       {
@@ -60,6 +60,7 @@ export const portland: CityData = {
         type: 'section',
         title: 'Portland Curiosities',
         teaser: 'Black exclusion laws, Shanghai tunnels, and the dark roots of weird Portland',
+        intro: 'Keep Portland Weird started as a plea to shop local. But the weird goes deeper—into Shanghai tunnels where men were kidnapped and sold to ship captains, to a state founded with explicit Black exclusion laws, to a harbor where a warship once shelled the city by accident. Portland\'s reputation for quirk sits atop a foundation considerably darker than the coffee.',
         items: [
           {
             id: 'pdx-curiosity-3',
@@ -213,7 +214,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/highway-park-2.png',
                 alt: 'Tom McCall Waterfront Park after freeway removal',
-              },
+              }
             ],
             source: 'Portland Parks & Recreation',
             location: {
@@ -264,7 +265,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/powells-books-2.png',
                 alt: 'Interior of Powell\'s Books with color-coded rooms',
-              },
+              }
             ],
             source: 'Powell\'s Books',
             location: {
@@ -302,7 +303,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/park-3.png',
                 alt: 'Forest Park urban forest canopy',
-              },
+              }
             ],
             source: 'Forest Park Conservancy',
             location: {
@@ -326,7 +327,7 @@ export const portland: CityData = {
               name: 'Voodoo Doughnut Old Town',
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -345,7 +346,7 @@ export const portland: CityData = {
               {
                 src: '/portland/curiosities/Powells-books-1.png',
                 alt: 'Powell\'s Books interior with towering shelves',
-              },
+              }
             ],
             address: '1005 W Burnside St, Portland, OR 97209',
             coordinates: { lat: 45.5231, lng: -122.6811 },
@@ -364,7 +365,7 @@ export const portland: CityData = {
               {
                 src: '',
                 alt: 'Portland Japanese Garden',
-              },
+              }
             ],
             address: '611 SW Kingston Ave, Portland, OR 97205',
             coordinates: { lat: 45.5189, lng: -122.7067 },
@@ -388,7 +389,7 @@ export const portland: CityData = {
               {
                 src: '/portland/curiosities/park-1.png',
                 alt: 'Trail through Forest Park',
-              },
+              }
             ],
             address: 'Multiple trailheads; Pittock Mansion is a good start',
             coordinates: { lat: 45.5395, lng: -122.7167 },
@@ -406,7 +407,7 @@ export const portland: CityData = {
               {
                 src: '',
                 alt: 'Multnomah Falls with bridge',
-              },
+              }
             ],
             address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
             coordinates: { lat: 45.5762, lng: -122.1158 },
@@ -425,7 +426,7 @@ export const portland: CityData = {
               {
                 src: '',
                 alt: 'Lan Su Chinese Garden pavilion',
-              },
+              }
             ],
             address: '239 NW Everett St, Portland, OR 97209',
             coordinates: { lat: 45.5256, lng: -122.6728 },
@@ -433,7 +434,7 @@ export const portland: CityData = {
             price: '$14 adults',
             website: 'https://lansugarden.org',
             tip: 'The tea service is worth the extra cost',
-          },
+          }
         ],
       },
       {
@@ -457,7 +458,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/bunker-2.png',
                 alt: 'Kelly Butte Cold War bunker entrance',
-              },
+              }
             ],
             address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
             coordinates: { lat: 45.4975, lng: -122.5592 },
@@ -475,7 +476,7 @@ export const portland: CityData = {
               {
                 src: '/portland/curiosities/shanghai-tunnels.png',
                 alt: 'Shanghai Tunnels beneath Old Town',
-              },
+              }
             ],
             address: '226 NW Davis St, Portland, OR 97209',
             coordinates: { lat: 45.5244, lng: -122.6728 },
@@ -499,7 +500,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/cemetery.png',
                 alt: 'Lone Fir Cemetery Block 14 unmarked area',
-              },
+              }
             ],
             address: 'SE 26th Ave & Stark St, Portland, OR 97214',
             coordinates: { lat: 45.5206, lng: -122.6397 },
@@ -517,7 +518,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/stone.png',
                 alt: 'Willamette Stone survey marker',
-              },
+              }
             ],
             address: 'Skyline Blvd, Portland, OR 97231',
             coordinates: { lat: 45.5425, lng: -122.7697 },
@@ -535,7 +536,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/ota-tofu.png',
                 alt: 'Ota Tofu shop',
-              },
+              }
             ],
             address: '529 SE Grand Ave, Portland, OR 97214',
             coordinates: { lat: 45.5167, lng: -122.6606 },
@@ -554,7 +555,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/museum.png',
                 alt: 'Zymoglyphic Museum diorama',
-              },
+              }
             ],
             address: 'Mt. Tabor neighborhood (exact address provided upon appointment)',
             coordinates: { lat: 45.5122, lng: -122.5931 },
@@ -573,7 +574,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/hat-museum.png',
                 alt: 'National Hat Museum collection',
-              },
+              }
             ],
             address: '1928 SE Ladd Ave, Portland, OR 97214',
             coordinates: { lat: 45.5083, lng: -122.6447 },
@@ -597,7 +598,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/vacuum.png',
                 alt: 'Stark\'s Vacuum Museum',
-              },
+              }
             ],
             address: '107 NE Grand Ave, Portland, OR 97232',
             coordinates: { lat: 45.5236, lng: -122.6606 },
@@ -616,7 +617,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/mystery-hole.png',
                 alt: 'Woodstock Mystery Hole entrance',
-              },
+              }
             ],
             address: 'Woodstock neighborhood (exact location revealed upon booking)',
             coordinates: { lat: 45.4797, lng: -122.6147 },
@@ -638,7 +639,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/cafe-house-2.png',
                 alt: 'Rimsky-Korsakoffee House interior',
-              },
+              }
             ],
             address: '707 SE 12th Ave, Portland, OR 97214',
             coordinates: { lat: 45.5158, lng: -122.6536 },
@@ -656,7 +657,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/troll.png',
                 alt: 'Portland Troll Bridge covered in plastic trolls',
-              },
+              }
             ],
             address: 'NW McNamee Rd, Portland, OR 97231',
             coordinates: { lat: 45.5997, lng: -122.8147 },
@@ -674,7 +675,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/hippo.png',
                 alt: 'Hippo Hardware interior with hippo collection',
-              },
+              }
             ],
             address: '1040 E Burnside St, Portland, OR 97214',
             coordinates: { lat: 45.5231, lng: -122.6547 },
@@ -702,7 +703,7 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/botanical-2.png',
                 alt: 'Leach Botanical Garden scenery',
-              },
+              }
             ],
             address: '6704 SE 122nd Ave, Portland, OR 97236',
             coordinates: { lat: 45.4797, lng: -122.5378 },
@@ -721,7 +722,7 @@ export const portland: CityData = {
               {
                 src: '/portland/curiosities/Mill-Ends-Park.png',
                 alt: 'Mill Ends Park - world\'s smallest park',
-              },
+              }
             ],
             address: 'SW Naito Pkwy & Taylor St, Portland, OR 97204',
             coordinates: { lat: 45.5156, lng: -122.6733 },
@@ -739,14 +740,14 @@ export const portland: CityData = {
               {
                 src: '/portland/hidden-gems/mississippie-avenue.png',
                 alt: 'Mississippi Avenue storefronts',
-              },
+              }
             ],
             address: 'N Mississippi Ave between Fremont and Skidmore',
             coordinates: { lat: 45.5497, lng: -122.6756 },
             hours: 'Businesses vary',
             price: 'Free to explore',
             tip: 'Prost! for German beer, Interurban for cocktails',
-          },
+          }
         ],
       },
       {
@@ -754,7 +755,7 @@ export const portland: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Weird City Pours',
-        intro: 'Portland takes its drinking seriously — from craft cocktails to dive bars.',
+        intro: 'Portland\'s bar scene is an argument in liquid form. Divey enough to feel dangerous, crafty enough to charge $18 for a cocktail with house-made bitters. The city pioneered the modern cocktail revival while never abandoning the dives where cash is preferred and ambition isn\'t. These are the spots where Portland actually drinks.',
         spots: [
           {
             name: 'Expatriate',
@@ -830,7 +831,7 @@ export const portland: CityData = {
               src: '',
               alt: 'Historic craft beer bar with extensive tap selection',
             },
-          },
+          }
         ],
       },
       {
@@ -914,7 +915,7 @@ export const portland: CityData = {
               src: '',
               alt: 'House-made pasta and seasonal Italian dishes',
             },
-          },
+          }
         ],
       },
       {
@@ -1024,7 +1025,7 @@ export const portland: CityData = {
               src: '',
               alt: 'Vietnamese iced coffee with condensed milk',
             },
-          },
+          }
         ],
       },
       {
@@ -1086,7 +1087,7 @@ export const portland: CityData = {
                 title: 'Timeline: The Kyron Horman case',
                 publisher: 'KOIN 6',
                 url: 'https://www.koin.com/news/kyron-horman-timeline/',
-              },
+              }
             ],
             location: {
               name: 'Skyline Elementary School, West Hills',
@@ -1096,19 +1097,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/kyron.png',
                 alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
-              },
-              {
-                src: '/images/dark-history/portland/elementary-school.jpg',
-                alt: 'Elementary school building, representative of Skyline Elementary where 7-year-old Kyron Horman vanished in 2010',
-              },
-              {
-                src: '/images/dark-history/portland/school-hallway.jpg',
-                alt: 'Empty school hallway, evoking the mystery of Kyron Horman who disappeared from his school and was never found',
-              },
-              {
-                src: '/images/dark-history/portland/missing-poster.jpg',
-                alt: 'Missing person context, representing Oregon\'s largest criminal investigation that yielded no answers',
-              },
+              }
             ],
           },
           {
@@ -1157,7 +1146,7 @@ export const portland: CityData = {
                 title: 'Shanghaiing',
                 publisher: 'Wikipedia',
                 url: 'https://en.wikipedia.org/wiki/Shanghaiing',
-              },
+              }
             ],
             location: {
               name: 'Old Town Chinatown (underground)',
@@ -1167,19 +1156,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/shanghai-tunnels.png',
                 alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
-              },
-              {
-                src: '/images/dark-history/portland/shanghai-tunnels-underground.jpg',
-                alt: 'Dark underground tunnel passage, representative of Portland\'s Shanghai Tunnels where men were kidnapped and held',
-              },
-              {
-                src: '/images/dark-history/portland/old-town-street.jpg',
-                alt: 'Historic Old Town Chinatown street, above the infamous Shanghai Tunnels network',
-              },
-              {
-                src: '/images/dark-history/portland/old-brick-alley.jpg',
-                alt: 'Old brick alley in Portland\'s historic district, where saloons had trapdoors to underground tunnels',
-              },
+              }
             ],
           },
           {
@@ -1229,7 +1206,7 @@ export const portland: CityData = {
                 isbn: '9780870714672',
                 year: '1987',
                 url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678',
-              },
+              }
             ],
             location: {
               name: 'Delta Park (former Vanport site)',
@@ -1239,15 +1216,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/Portland-Flood.png',
                 alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
-              },
-              {
-                src: '/images/dark-history/portland/vanport-flood-columbia-river.jpg',
-                alt: 'Columbia River flood plain near Portland, site of the catastrophic 1948 Vanport Flood',
-              },
-              {
-                src: '/images/dark-history/portland/misty-river.jpg',
-                alt: 'Misty Columbia River landscape, where the flood destroyed Oregon\'s second-largest city in 35 minutes',
-              },
+              }
             ],
           },
           {
@@ -1288,7 +1257,7 @@ export const portland: CityData = {
                 title: 'Portland\'s Most Haunted Locations',
                 publisher: 'Travel Channel',
                 url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations',
-              },
+              }
             ],
             location: {
               name: 'White Eagle Saloon, 836 N Russell St',
@@ -1298,19 +1267,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/saloon.png',
                 alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
-              },
-              {
-                src: '/images/dark-history/portland/vintage-bar.jpg',
-                alt: 'Vintage bar interior, representative of the historic White Eagle Saloon known as "Bucket of Blood"',
-              },
-              {
-                src: '/images/dark-history/portland/old-bar-exterior.jpg',
-                alt: 'Historic bar exterior, evoking the White Eagle Saloon\'s 1905 origins as a shanghaiing site',
-              },
-              {
-                src: '/images/dark-history/portland/dark-alley.jpg',
-                alt: 'Dark alley behind historic saloon, where Portland\'s most haunted bar has witnessed violence for over a century',
-              },
+              }
             ],
           },
           {
@@ -1360,7 +1317,7 @@ export const portland: CityData = {
                 show: 'Serial Killers',
                 platform: 'Spotify',
                 url: 'https://open.spotify.com/episode/I5Killer',
-              },
+              }
             ],
             location: {
               name: 'Interstate 5 corridor',
@@ -1370,15 +1327,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/i-5-killer.png',
                 alt: 'Historical documentation and evidence related to the I-5 Killer case',
-              },
-              {
-                src: '/images/dark-history/portland/highway-aerial.jpg',
-                alt: 'Aerial view of Interstate 5 highway corridor through Oregon, where serial killer Randall Woodfield hunted victims in 1980-1981',
-              },
-              {
-                src: '/images/dark-history/portland/old-portland-building.jpg',
-                alt: 'Historic Portland residential building from the era when the I-5 Killer terrorized the city',
-              },
+              }
             ],
           },
           {
@@ -1419,7 +1368,7 @@ export const portland: CityData = {
                 title: 'Is Pittock Mansion Really Haunted?',
                 publisher: 'Portland Living',
                 url: 'https://www.portlandliving.com/pittock-mansion-haunted/',
-              },
+              }
             ],
             location: {
               name: 'Pittock Mansion, 3229 NW Pittock Dr',
@@ -1429,15 +1378,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/mansion.png',
                 alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
-              },
-              {
-                src: '/images/dark-history/portland/historic-house.jpg',
-                alt: 'Historic French Renaissance mansion, representative of Pittock Mansion built in 1914',
-              },
-              {
-                src: '/images/dark-history/portland/portland-waterfront.jpg',
-                alt: 'Portland cityscape view from West Hills, where Pittock Mansion overlooks the city the Pittocks helped build',
-              },
+              }
             ],
           },
           {
@@ -1479,7 +1420,7 @@ export const portland: CityData = {
                 show: 'Pacific Northwest Murders',
                 platform: 'Apple Podcasts',
                 url: 'https://podcasts.apple.com/podcast/forest-park-murders',
-              },
+              }
             ],
             location: {
               name: 'Forest Park',
@@ -1489,19 +1430,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/forest-park.png',
                 alt: 'Forest Park location where the Forest Park Killer crimes occurred',
-              },
-              {
-                src: '/images/dark-history/portland/forest-park-trails.jpg',
-                alt: 'Forest Park hiking trail through old-growth forest, where three women were murdered in 1999',
-              },
-              {
-                src: '/images/dark-history/portland/forest-dark-path.jpg',
-                alt: 'Dark forest path in Portland\'s Forest Park, the urban wilderness that became a crime scene',
-              },
-              {
-                src: '/images/dark-history/portland/moody-forest.jpg',
-                alt: 'Moody Pacific Northwest forest, representing the 5,200-acre Forest Park where bodies were hidden',
-              },
+              }
             ],
           },
           {
@@ -1550,7 +1479,7 @@ export const portland: CityData = {
                 isbn: '9781467137829',
                 year: '2016',
                 url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820',
-              },
+              }
             ],
             location: {
               name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
@@ -1560,19 +1489,7 @@ export const portland: CityData = {
               {
                 src: '/Portland/Dark-history/lone-fer-2.png',
                 alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
-              },
-              {
-                src: '/images/dark-history/portland/cemetery-headstones.jpg',
-                alt: 'Historic cemetery headstones at Lone Fir Cemetery, holding over 25,000 graves including 10,000 unmarked',
-              },
-              {
-                src: '/images/dark-history/portland/cemetery-angel.jpg',
-                alt: 'Cemetery angel statue, representing Lone Fir where 185 asylum patients are buried alongside their doctor',
-              },
-              {
-                src: '/images/dark-history/portland/cemetery-path.jpg',
-                alt: 'Tree-lined cemetery path at Lone Fir, where visitors report ghostly figures among forgotten graves',
-              },
+              }
             ],
           },
           {
@@ -1621,7 +1538,7 @@ export const portland: CityData = {
                 title: 'Oregon was founded as a racist utopia',
                 publisher: 'The Atlantic',
                 url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
-              },
+              }
             ],
             location: {
               name: 'State of Oregon',
@@ -1631,17 +1548,9 @@ export const portland: CityData = {
               {
                 src: '/Portland/curiosities/black-exclusion.png',
                 alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
-              },
-              {
-                src: '/images/dark-history/portland/exclusion-laws-1.jpg',
-                alt: 'Historical document from Library of Congress related to Oregon\'s constitutional history and exclusion laws',
-              },
-              {
-                src: '/images/dark-history/portland/old-documents.jpg',
-                alt: 'Vintage legal documents and archives, representing Oregon\'s 1857 constitution with black exclusion clause',
-              },
+              }
             ],
-          },
+          }
         ],
       },
     
@@ -1650,6 +1559,7 @@ export const portland: CityData = {
         type: 'section',
         title: 'Lost Portland',
         teaser: 'Rimsky-Korsakoffee, Satyricon, and the places where Portland was genuinely strange',
+        intro: 'Keep Portland Weird was always about the people, not the slogan. These were the venues, cafes, and dives where weirdness was earned—places that didn\'t need a brand because they were too busy being themselves. Rising rents and changing times closed the doors. The weird that replaced them is different.',
         items: [
           {
             id: 'pdx-lost-1',
@@ -1764,8 +1674,8 @@ export const portland: CityData = {
             communityVoice: '"Obi was where Portland learned to eat well." — The Oregonian',
             lastAddress: '101 NW 2nd Ave, Portland',
             source: 'The Oregonian, Eater Portland',
-          },
+          }
         ],
-      },
+      }
     ],
   }

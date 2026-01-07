@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import { Metadata } from 'next'
-import { getAllHiddenGems } from '@/data/cities'
 import { Header, Footer } from '@/components'
+import { getAllPageCards } from '@/lib/content/pages'
+import { PageCard } from '@/components/cards/PageCard'
 
 export const metadata: Metadata = {
   title: 'Hidden Gems | Curious City',
@@ -9,18 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default async function HiddenGemsPage() {
-  const allGems = await getAllHiddenGems()
+  const allCards = await getAllPageCards()
 
-  // Group gems by city
-  const gemsByCity = allGems.reduce((acc, { citySlug, cityName, gem }) => {
-    if (!acc[citySlug]) {
-      acc[citySlug] = { cityName, gems: [] }
-    }
-    acc[citySlug].gems.push(gem)
-    return acc
-  }, {} as Record<string, { cityName: string; gems: any[] }>)
-
-  const cities = Object.entries(gemsByCity)
+  // Filter to hidden-gems articles only
+  const hiddenGemCards = allCards.filter((card) => card.pageType === 'hidden-gems')
 
   return (
     <>
@@ -29,67 +21,33 @@ export default async function HiddenGemsPage() {
       <main className="flex-1">
         <div className="container-page section-spacing">
           {/* Hero */}
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
               Hidden Gems
             </h1>
-            <p className="text-lg text-neutral-600 max-w-2xl">
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
               Places the locals know about. Museums, parks, shops, and experiences
               that don't make it into the tourist guides.
             </p>
           </div>
 
-          {/* Gems by City */}
-          {cities.length > 0 ? (
-            <div className="space-y-12">
-              {cities.map(([citySlug, { cityName, gems }]) => (
-                <section key={citySlug}>
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-xl font-semibold text-neutral-900">
-                      {cityName}
-                    </h2>
-                    <Link
-                      href={`/${citySlug}`}
-                      className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors"
-                    >
-                      View city →
-                    </Link>
-                  </div>
-                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {gems.map((gem) => (
-                      <div
-                        key={gem.id}
-                        className="p-5 bg-white rounded-xl border border-neutral-200"
-                      >
-                        <div className="flex items-start justify-between mb-2">
-                          <h3 className="font-semibold text-neutral-900">
-                            {gem.name}
-                          </h3>
-                          <span className="text-xs font-medium text-neutral-500 bg-neutral-100 px-2 py-1 rounded">
-                            {gem.category}
-                          </span>
-                        </div>
-                        <p className="text-sm text-neutral-600 mb-3">
-                          {gem.description}
-                        </p>
-                        {gem.location && (
-                          <p className="text-xs text-neutral-500">
-                            {gem.location}
-                          </p>
-                        )}
-                        {gem.tip && (
-                          <p className="text-xs text-neutral-500 mt-2 italic">
-                            Tip: {gem.tip}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </section>
+          {/* Single Column Article Feed */}
+          {hiddenGemCards.length > 0 ? (
+            <div className="space-y-8 max-w-4xl mx-auto">
+              {hiddenGemCards.map((card, index) => (
+                <PageCard
+                  key={card.href}
+                  data={card}
+                  variant="standard"
+                  index={index}
+                  priority={index === 0}
+                />
               ))}
             </div>
           ) : (
-            <p className="text-neutral-500">No hidden gems yet. Check back soon!</p>
+            <div className="text-center py-12">
+              <p className="text-neutral-500 mb-4">No hidden gems articles yet. Check back soon!</p>
+            </div>
           )}
         </div>
       </main>

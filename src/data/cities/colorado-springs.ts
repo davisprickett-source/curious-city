@@ -47,7 +47,7 @@ export const colorado_springs: CityData = {
             meta: 'Guide',
             variant: 'compact',
             href: '/colorado-springs/incline-guide',
-          },
+          }
         ],
       },
       {
@@ -60,6 +60,7 @@ export const colorado_springs: CityData = {
         type: 'section',
         title: 'Colorado Springs Curiosities',
         teaser: 'Mad scientists, military mishaps, and the park that\'s free forever',
+        intro: 'Colorado Springs was built as a health resort for tuberculosis patients, became an evangelical stronghold, and now houses more military installations than most countries. Nikola Tesla once blacked out the city with his lightning experiments. Garden of the Gods is free forever because a railroad baron put it in his will. The contradictions run deep, and so do the stories.',
         items: [
           {
             id: 'cos-curiosity-1',
@@ -83,7 +84,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/tesla-2.png',
                 alt: 'Tesla\'s experimental equipment in Colorado Springs',
-              },
+              }
             ],
             sources: [
               {
@@ -93,7 +94,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'PBS: Tesla\'s Lost Inventions',
                 url: 'https://www.pbs.org/tesla/ll/ll_colspr.html',
-              },
+              }
             ],
             location: {
               name: 'Foote Avenue and Kiowa Street (demolished)',
@@ -122,7 +123,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/garden-gods-2.png',
                 alt: 'Garden of the Gods red rock formations',
-              },
+              }
             ],
             sources: [
               {
@@ -132,7 +133,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'National Natural Landmark: Garden of the Gods',
                 url: 'https://www.nps.gov/subjects/nnlandmarks/site.htm?Site=GAGO-CO',
-              },
+              }
             ],
             location: {
               name: 'Garden of the Gods',
@@ -206,7 +207,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/chapel-2.png',
                 alt: 'Air Force Academy Chapel architectural details',
-              },
+              }
             ],
             sources: [
               {
@@ -216,7 +217,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'National Park Service: Air Force Academy National Historic Landmark',
                 url: 'https://www.nps.gov/places/us-air-force-academy-cadet-area.htm',
-              },
+              }
             ],
             location: {
               name: 'US Air Force Academy',
@@ -241,7 +242,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Original manuscript of America the Beautiful by Katharine Lee Bates',
-              },
+              }
             ],
             sources: [
               {
@@ -251,7 +252,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'Pikes Peak Historical Society: Katharine Lee Bates',
                 url: 'https://www.pikespeakhistoricalsociety.org/',
-              },
+              }
             ],
             location: {
               name: 'Pikes Peak summit',
@@ -276,7 +277,7 @@ export const colorado_springs: CityData = {
               {
                 src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=5678',
                 alt: 'Visitor drinking from natural mineral spring in Manitou Springs',
-              },
+              }
             ],
             sources: [
               {
@@ -286,7 +287,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'Colorado Encyclopedia: Manitou Springs Mineral Water',
                 url: 'https://coloradoencyclopedia.org/article/manitou-springs',
-              },
+              }
             ],
             location: {
               name: 'Manitou Springs',
@@ -315,7 +316,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/santa-2.png',
                 alt: 'NORAD Santa tracking operations during Christmas Eve',
-              },
+              }
             ],
             sources: [
               {
@@ -325,7 +326,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'Smithsonian: How a Typo Created NORAD Tracks Santa',
                 url: 'https://www.smithsonianmag.com/history/how-norad-tracks-santa-180961342/',
-              },
+              }
             ],
             location: {
               name: 'Peterson Space Force Base / Cheyenne Mountain',
@@ -366,7 +367,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/olympics.png',
                 alt: 'Olympic training facility in Colorado Springs',
-              },
+              }
             ],
             source: 'United States Olympic Committee',
           },
@@ -388,7 +389,7 @@ export const colorado_springs: CityData = {
               {
                 src: '/colorado-springs/curiosities/cog.png',
                 alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
-              },
+              }
             ],
             sources: [
               {
@@ -398,7 +399,7 @@ export const colorado_springs: CityData = {
               {
                 title: 'Railway Age: Pikes Peak Cog Railway Reopens After $100M Rebuild',
                 url: 'https://www.railwayage.com/passenger/pikes-peak-cog-railway-returns/',
-              },
+              }
             ],
             location: {
               name: 'Manitou Springs to Pikes Peak summit',
@@ -424,7 +425,7 @@ export const colorado_springs: CityData = {
               name: 'Glen Eyrie',
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -445,7 +446,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Red rock formations at Garden of the Gods with Pikes Peak in background',
-              },
+              }
             ],
             address: '1805 N 30th St, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8783, lng: -104.8818 },
@@ -465,7 +466,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Pikes Peak summit with scenic mountain views',
-              },
+              }
             ],
             address: 'Pikes Peak Hwy, Cascade, CO 80809',
             coordinates: { lat: 38.8409, lng: -105.0423 },
@@ -485,7 +486,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Steep steps of the Manitou Incline climbing mountainside',
-              },
+              }
             ],
             address: 'Ruxton Ave & Hydro St, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8556, lng: -104.9394 },
@@ -505,7 +506,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Seven Falls cascading down canyon walls',
-              },
+              }
             ],
             address: '2850 S Cheyenne Canyon Rd, Colorado Springs, CO 80906',
             coordinates: { lat: 38.7831, lng: -104.8783 },
@@ -525,7 +526,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Distinctive spires of Air Force Academy Cadet Chapel',
-              },
+              }
             ],
             address: '2346 Academy Dr, USAF Academy, CO 80840',
             coordinates: { lat: 38.9906, lng: -104.8902 },
@@ -533,7 +534,7 @@ export const colorado_springs: CityData = {
             price: 'Free (photo ID required for visitors 18+)',
             website: 'https://www.usafa.edu/',
             tip: 'Check website for closure dates due to academy events.',
-          },
+          }
         ],
       },
       {
@@ -555,7 +556,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Abandoned railroad tunnel entrance in mountain wilderness',
-              },
+              }
             ],
             address: 'Gold Camp Rd, Colorado Springs, CO 80906',
             coordinates: { lat: 38.7945, lng: -104.9156 },
@@ -574,7 +575,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Historic tuberculosis treatment tent structure',
-              },
+              }
             ],
             address: 'Scattered throughout Colorado Springs neighborhoods',
             coordinates: { lat: 38.8339, lng: -104.8214 },
@@ -593,7 +594,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Detailed miniature city with tiny buildings and characters',
-              },
+              }
             ],
             address: '2418 W Colorado Ave, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8385, lng: -104.8554 },
@@ -613,7 +614,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Stone ruins of abandoned tuberculosis sanatorium',
-              },
+              }
             ],
             address: 'Near Cheyenne Mountain Zoo access roads',
             coordinates: { lat: 38.7712, lng: -104.8512 },
@@ -632,7 +633,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Large kinetic wind sculpture spinning against sky',
-              },
+              }
             ],
             address: '2057 Pine Grove Ave, Colorado Springs, CO 80906',
             coordinates: { lat: 38.8156, lng: -104.8489 },
@@ -651,7 +652,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Historic military aircraft on display',
-              },
+              }
             ],
             address: '150 E Ent Ave, Peterson SFB, CO 80914',
             coordinates: { lat: 38.8125, lng: -104.7009 },
@@ -679,7 +680,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Hiking trail winding through Paint Mines badlands landscape',
-              },
+              }
             ],
             address: '29950 Paint Mine Rd, Calhan, CO 80808',
             coordinates: { lat: 39.0042, lng: -104.4825 },
@@ -699,7 +700,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Display cases with mounted insect specimens',
-              },
+              }
             ],
             address: '710 Rock Creek Canyon Rd, Colorado Springs, CO 80926',
             coordinates: { lat: 38.7234, lng: -104.8712 },
@@ -719,7 +720,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Dimly lit underground bar with vintage décor',
-              },
+              }
             ],
             address: '113 E Pikes Peak Ave, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8339, lng: -104.8214 },
@@ -739,7 +740,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Handmade vintage dolls on display',
-              },
+              }
             ],
             address: '2413 W Colorado Ave, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8385, lng: -104.8545 },
@@ -765,7 +766,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Grand staircase inside Miramont Castle with ornate woodwork',
                 caption: 'Victorian grandeur inside the castle',
-              },
+              }
             ],
             address: '9 Capitol Hill Ave, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8549, lng: -104.9147 },
@@ -785,7 +786,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Historic pottery building with decorative tilework',
-              },
+              }
             ],
             address: '600 S 21st St, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8201, lng: -104.8089 },
@@ -804,7 +805,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Clear quartz crystals and minerals in rock matrix',
-              },
+              }
             ],
             address: 'Crystal Park Rd, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8756, lng: -105.0234 },
@@ -823,7 +824,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Historic ranch buildings with mountain backdrop',
-              },
+              }
             ],
             address: '3105 Gateway Rd, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8845, lng: -104.8934 },
@@ -843,7 +844,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Historic Victorian mansion with ornate architecture',
-              },
+              }
             ],
             address: '20 N Cascade Ave, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8356, lng: -104.8245 },
@@ -868,7 +869,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Vintage fortune-telling machine at Penny Arcade',
                 caption: 'Antique fortune tellers in glass cases',
-              },
+              }
             ],
             address: '930 Manitou Ave, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8573, lng: -104.9119 },
@@ -876,7 +877,7 @@ export const colorado_springs: CityData = {
             price: 'Free entry, games 1¢-25¢',
             website: 'https://www.pennyarcade.com/',
             tip: 'Bring rolls of pennies and quarters — you\'ll want to play everything.',
-          },
+          }
         ],
       },
       {
@@ -884,7 +885,7 @@ export const colorado_springs: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Springs After Hours',
-        intro: 'The drinking scene is better than the evangelical reputation suggests.',
+        intro: 'Colorado Springs has a reputation for megachurches and military bases, but the bar scene tells a different story. Craft breweries thriving in Manitou Springs, downtown cocktail spots that would fit in Denver, and dive bars where airmen and artists share space. The evangelical reputation is real—but so is the thirst.',
         spots: [
           {
             name: 'Oskar Blues Grill & Brew',
@@ -905,7 +906,7 @@ export const colorado_springs: CityData = {
               {
                 src: 'https://www.oskarblues.com/wp-content/uploads/Dale.jpeg',
                 alt: "Dale's Pale Ale - the original canned craft beer",
-              },
+              }
             ],
           },
           {
@@ -923,7 +924,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Dive Inn interior with pool tables and neon beer signs',
                 caption: 'No pretense — just cheap drinks and pool',
-              },
+              }
             ],
           },
           {
@@ -946,7 +947,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Principal\'s Office bar with creative cocktail ingredients',
                 caption: 'Mixology as craft, not pretense',
-              },
+              }
             ],
           },
           {
@@ -970,9 +971,9 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Copper brewing equipment visible behind glass at Phantom Canyon',
                 caption: 'House-brewed beer since 1993',
-              },
+              }
             ],
-          },
+          }
         ],
       },
       {
@@ -980,7 +981,7 @@ export const colorado_springs: CityData = {
         type: 'best-of',
         category: 'cafes',
         title: 'High Altitude Caffeine',
-        intro: 'The altitude makes coffee taste different. These spots make it taste good.',
+        intro: 'Brewing at 6,000 feet requires adjustment—water boils at lower temps, extraction changes, the whole science shifts. The roasters here have figured it out. From old-school cafés that fueled Pike\'s Peak climbers for decades to third-wave spots with mountain views, Colorado Springs takes its coffee as seriously as its hiking.',
         spots: [
           {
             name: 'Switchback Coffee Roasters',
@@ -1002,7 +1003,7 @@ export const colorado_springs: CityData = {
               {
                 src: '',
                 alt: 'Pour-over coffee being brewed at Switchback Coffee',
-              },
+              }
             ],
           },
           {
@@ -1046,7 +1047,7 @@ export const colorado_springs: CityData = {
               src: '',
               alt: 'Cold brew coffee in converted school building cafe',
             },
-          },
+          }
         ],
       },
       {
@@ -1077,7 +1078,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'The Rabbit Hole underground dining room with exposed brick',
                 caption: 'Stylish underground space',
-              },
+              }
             ],
           },
           {
@@ -1101,7 +1102,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Fried chicken plate with collard greens and cornbread at Shuga\'s',
                 caption: 'Real Southern soul food',
-              },
+              }
             ],
           },
           {
@@ -1125,7 +1126,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Wood-fired pizza oven at 900°F at Pizzeria Rustica',
                 caption: 'Fired at 900°F in a wood-burning oven',
-              },
+              }
             ],
           },
           {
@@ -1144,7 +1145,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Perfectly seared ribeye steak at The Famous steakhouse',
                 caption: 'Ribeye done right — no gimmicks needed',
-              },
+              }
             ],
           },
           {
@@ -1163,9 +1164,9 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Korean-inspired bowl with fresh vegetables at Adam\'s Mountain Cafe',
                 caption: 'Unexpected global flavors in the mountains',
-              },
+              }
             ],
-          },
+          }
         ],
       },
       {
@@ -1197,7 +1198,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Barista pouring cortado at Loyal Coffee',
                 caption: 'Impeccable espresso technique',
-              },
+              }
             ],
           },
           {
@@ -1222,7 +1223,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Coffee roasting equipment at Story Coffee',
                 caption: 'Roasting beans on-site',
-              },
+              }
             ],
           },
           {
@@ -1247,7 +1248,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Pour-over coffee being brewed at Switchback Coffee',
                 caption: 'Single-origin pour-overs',
-              },
+              }
             ],
           },
           {
@@ -1267,7 +1268,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Wayfinder Coffee with mountaineering aesthetic and maps on walls',
                 caption: 'Adventure-inspired without being kitschy',
-              },
+              }
             ],
           },
           {
@@ -1286,7 +1287,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Building 3 Coffee inside Ivywild School with high ceilings',
                 caption: 'Industrial-chic inside a converted school',
-              },
+              }
             ],
           },
           {
@@ -1306,9 +1307,9 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Jives Coffee Lounge with eclectic decor and local art',
                 caption: 'A community hub, not just a coffee shop',
-              },
+              }
             ],
-          },
+          }
         ],
       },
       {
@@ -1426,7 +1427,7 @@ export const colorado_springs: CityData = {
               coordinates: { lat: 38.9983, lng: -104.8608 },
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -1479,17 +1480,9 @@ export const colorado_springs: CityData = {
                 title: 'Club Q Investigation and Aftermath',
                 publisher: 'CNN',
                 url: 'https://www.cnn.com/club-q-colorado-springs-shooting',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/pride-memorial.jpg',
-                alt: 'Pride flag memorial honoring the victims of the Club Q shooting on Transgender Day of Remembrance',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/rainbow-flag.jpg',
-                alt: 'Rainbow pride flag symbolizing the LGBTQ+ community attacked at Club Q',
-              },
             ],
           },
           {
@@ -1523,13 +1516,9 @@ export const colorado_springs: CityData = {
                 title: 'Glenn Martin Stray Bullet Death - Rampart Range Mystery',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=GlennMartin',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/mountain-camping.jpg',
-                alt: 'Mountain campsite in Pike National Forest, similar to Rainbow Falls where Glenn Martin was killed by a stray bullet',
-              },
             ],
           },
           {
@@ -1575,17 +1564,9 @@ export const colorado_springs: CityData = {
                 title: 'Colorado\'s Oldest Unsolved Mass Murder',
                 publisher: 'Denver Post',
                 url: 'https://www.denverpost.com/1911-ax-murders-unsolved/',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/1911-old-street.jpg',
-                alt: 'Early 1900s residential street scene, representative of West Dale Street where the 1911 ax murders occurred',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/overview-pikes-peak-1.jpg',
-                alt: 'Historic view of Pikes Peak and Colorado Springs from the early 1900s era',
-              },
             ],
           },
           {
@@ -1625,13 +1606,9 @@ export const colorado_springs: CityData = {
                 title: 'Waldo Canyon Fire: 10 Years Later',
                 publisher: 'Colorado Springs Gazette',
                 url: 'https://gazette.com/news/waldo-canyon-fire-10-years/',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
-                alt: 'Charred forest landscape after the Waldo Canyon Fire devastated the area west of Colorado Springs',
-              },
             ],
           },
           {
@@ -1671,17 +1648,9 @@ export const colorado_springs: CityData = {
                 title: 'Robert Browne: Colorado\'s Most Prolific Serial Killer',
                 publisher: 'Colorado Springs Gazette',
                 url: 'https://gazette.com/news/robert-browne-serial-killer/',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/heather-church-forest.jpg',
-                alt: 'Dense forest terrain in the Black Forest area north of Colorado Springs where Heather Church was abducted',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/heather-church-dirt-road.jpg',
-                alt: 'Remote dirt road through the forest, similar to Rampart Range Road where Heather Church\'s remains were discovered',
-              },
             ],
           },
           {
@@ -1726,13 +1695,9 @@ export const colorado_springs: CityData = {
                 title: 'Planned Parenthood Shooting: What Happened in Colorado Springs',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=PPShooting',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/vigil-candles.jpg',
-                alt: 'Memorial vigil candles honoring the victims of the Planned Parenthood shooting',
-              },
             ],
           },
           {
@@ -1772,13 +1737,9 @@ export const colorado_springs: CityData = {
                 title: 'Black Forest Fire Investigation',
                 publisher: 'El Paso County Sheriff',
                 url: 'https://www.epcsheriffsoffice.com/black-forest-fire-investigation',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/burned-forest.jpg',
-                alt: 'Devastated forest landscape showing the aftermath of the Black Forest Fire, Colorado\'s most destructive wildfire until 2021',
-              },
             ],
           },
           {
@@ -1812,13 +1773,9 @@ export const colorado_springs: CityData = {
                 title: 'Tim Watkins Murder Mystery - Colorado Unsolved',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=TimWatkins',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/mountain-biking-trail.jpg',
-                alt: 'Mountain biking trail through Colorado forest, similar to Limbaugh Canyon Trail where Tim Watkins was killed',
-              },
             ],
           },
           {
@@ -1858,13 +1815,9 @@ export const colorado_springs: CityData = {
                 title: 'The New Life Shooting Changed Church Security',
                 publisher: 'Christianity Today',
                 url: 'https://www.christianitytoday.com/ct/2007/new-life-church-shooting.html',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/modern-church.jpg',
-                alt: 'Modern megachurch building, representative of New Life Church where the 2007 shooting occurred',
-              },
             ],
           },
           {
@@ -1904,19 +1857,11 @@ export const colorado_springs: CityData = {
                 title: 'Evergreen Cemetery: Colorado\'s Most Haunted Graveyard',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=EvergreenCemetery',
-              },
+              }
             ],
             images: [
-              {
-                src: '/images/dark-history/colorado-springs/old-cemetery.jpg',
-                alt: 'Historic Evergreen Cemetery in Colorado Springs, established 1871, known for paranormal activity',
-              },
-              {
-                src: '/images/dark-history/colorado-springs/historic-cemetery.jpg',
-                alt: 'Old tombstones and mature trees at Evergreen Cemetery, one of Colorado\'s most haunted sites',
-              },
             ],
-          },
+          }
         ],
       },
       {
@@ -1943,7 +1888,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Cathedral Spires at sunrise, Garden of the Gods',
                 caption: 'Cathedral Spires at golden hour',
-              },
+              }
             ],
           },
           {
@@ -1965,7 +1910,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Light streaming through stained glass at Air Force Academy Chapel',
                 caption: 'A sanctuary of light and geometry',
-              },
+              }
             ],
           },
           {
@@ -1987,7 +1932,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
                 caption: 'Panoramic windows frame the journey',
-              },
+              }
             ],
           },
           {
@@ -2004,7 +1949,7 @@ export const colorado_springs: CityData = {
                 src: 'https://visitcos.com/imager/s3_us-west-1_amazonaws_com/areadevelopmentpartnership-com/images/Manitou-Springs-Iron-Fountain_8ad17d8a88f9a7f96aa41f5f80f5c0e1.jpg',
                 alt: 'Iron Spring mineral fountain in Manitou Springs with rusty water',
                 caption: 'Iron Spring — each spring tastes completely different',
-              },
+              }
             ],
           },
           {
@@ -2026,7 +1971,7 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'Hiking trail winding through Paint Mines badlands landscape',
                 caption: 'Colorado\'s hidden badlands',
-              },
+              }
             ],
           },
           {
@@ -2038,10 +1983,10 @@ export const colorado_springs: CityData = {
                 src: '',
                 alt: 'The Broadmoor resort reflecting in Cheyenne Lake with mountains behind',
                 caption: 'The Broadmoor — a century of Colorado elegance',
-              },
+              }
             ],
-          },
+          }
         ],
-      },
+      }
     ],
   }

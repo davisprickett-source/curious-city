@@ -27,14 +27,31 @@ export const ANIMATION_CONFIG = {
 }
 
 // Hamburger icon line variants (2 lines forming X)
+// Lines start at y=8 and y=16, move to y=12 (center), then rotate to form X
 export const hamburgerLineVariants = {
   top: {
-    closed: { rotate: 0, y: 0 },
-    open: { rotate: 45, y: 6 },
+    closed: {
+      y1: 8,
+      y2: 8,
+      rotate: 0,
+    },
+    open: {
+      y1: 12,
+      y2: 12,
+      rotate: 45, // Rotate 45° clockwise
+    },
   },
   bottom: {
-    closed: { rotate: 0, y: 0 },
-    open: { rotate: -45, y: -6 },
+    closed: {
+      y1: 16,
+      y2: 16,
+      rotate: 0,
+    },
+    open: {
+      y1: 12,
+      y2: 12,
+      rotate: -45, // Rotate 45° counter-clockwise
+    },
   },
 }
 

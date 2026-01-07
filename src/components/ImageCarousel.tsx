@@ -111,8 +111,8 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
           </svg>
         </button>
 
-        {/* Minimalistic dot indicators - smaller, thin outlines */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+        {/* Minimalistic dot indicators - small circles with subtle fill */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
           {images.map((_, index) => (
             <button
               key={index}
@@ -120,10 +120,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
                 e.stopPropagation()
                 setCurrentIndex(index)
               }}
-              className={`rounded-full transition-all duration-300 ${
+              className={`w-[5px] h-[5px] rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? 'w-2 h-2 border-2 border-[#B7410E] bg-transparent'
-                  : 'w-2 h-2 border border-neutral-600/60 bg-transparent hover:border-neutral-500'
+                  ? 'border-[1.5px] border-[#B7410E] bg-[#B7410E]/20'
+                  : 'border-[1.5px] border-white/70 bg-white/15 hover:border-white/90'
               }`}
               aria-label={`Go to image ${index + 1}`}
             />

@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
-import { ShareLinks, Footer } from '@/components'
+import { ShareLinks, Footer, NewsletterSignup, RelatedContent } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 // Dynamically import heavy scroll component
@@ -125,64 +125,55 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
       />
 
       <main className="flex-1 bg-white">
-        {/* Hero Header - Cities with special banners */}
-        {(city.slug === 'minneapolis' || city.slug === 'raleigh') ? (
-          <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
-            <img
-              src={city.slug === 'minneapolis'
-                ? "/Minneapolis Curiosities/banner.png"
-                : "/Raleigh/Curiosities/raleigh-curiosities.png"}
-              alt={`Curiosities of ${city.name}`}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
-            <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
-              <div className="max-w-5xl">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  {section?.title || `Curiosities of ${city.name}`}
+        {/* Hero Header with Banner - Full Screen */}
+        <div className="relative min-h-screen flex flex-col">
+          <img
+            src={city.slug === 'minneapolis'
+              ? "/Minneapolis Curiosities/banner.png"
+              : city.slug === 'raleigh'
+              ? "/Raleigh/Curiosities/raleigh-curiosities.png"
+              : "/global-banners/curiosities.png"}
+            alt={`Curiosities of ${city.name}`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
+
+          {/* Content centered in hero */}
+          <div className="relative flex-1 container-page flex flex-col justify-center items-start py-20">
+            <div className="max-w-5xl">
+              {/* Title with Share Button */}
+              <div className="flex items-start justify-between gap-6 mb-6">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
+                  {section?.title ? `${section.title} in ${city.name}` : `Curiosities of ${city.name}`}
                 </h1>
-                {section?.teaser && (
-                  <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
-                    {section.teaser}
-                  </p>
-                )}
-                {section?.intro && (
-                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-                    {section.intro}
-                  </p>
-                )}
+                <div className="flex-shrink-0 mt-2">
+                  <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="banner" />
+                </div>
               </div>
-              <div className="absolute top-6 right-6 md:top-8 md:right-8">
-                <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="banner" />
+
+              {/* Teaser/Hook */}
+              {section?.teaser && (
+                <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-6">
+                  {section.teaser}
+                </p>
+              )}
+
+              {/* Intro in opacity cell */}
+              <div className="bg-black/40 backdrop-blur-sm rounded-lg px-6 py-4 max-w-3xl">
+                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                  {section?.intro || `Fascinating facts, forgotten history, and the strange stories that make ${city.name} unique.`}
+                </p>
               </div>
             </div>
           </div>
-        ) : (
-          <div className="border-b border-neutral-200 bg-gradient-to-b from-neutral-50 to-white">
-            <div className="container-page py-12 md:py-16">
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    {section?.title || `Curiosities of ${city.name}`}
-                  </h1>
-                  {section?.teaser && (
-                    <p className="text-xl text-neutral-700 max-w-3xl mb-2 font-medium">
-                      {section.teaser}
-                    </p>
-                  )}
-                  {section?.intro && (
-                    <p className="text-lg text-neutral-600 max-w-3xl">
-                      {section.intro}
-                    </p>
-                  )}
-                </div>
-                <div className="hidden sm:block flex-shrink-0">
-                  <ShareLinks title={`Curiosities of ${city.name} | Curious City`} variant="compact" />
-                </div>
-              </div>
-            </div>
+
+          {/* Scroll indicator arrow */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7" />
+            </svg>
           </div>
-        )}
+        </div>
 
         {/* Scrollytelling Content */}
         {curiosities.length > 0 ? (
@@ -195,6 +186,16 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
             </div>
           </div>
         )}
+
+        {/* End of content section */}
+        <div className="container-page py-12 space-y-8">
+          <RelatedContent
+            citySlug={city.slug}
+            cityName={city.name}
+            contentType="curiosities"
+          />
+          <NewsletterSignup currentCity={city.slug} />
+        </div>
       </main>
 
       <Footer />

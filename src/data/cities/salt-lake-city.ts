@@ -47,7 +47,7 @@ export const salt_lake_city: CityData = {
             meta: 'Guide',
             variant: 'compact',
             href: '/salt-lake-city/liquor-laws',
-          },
+          }
         ],
       },
       {
@@ -60,6 +60,7 @@ export const salt_lake_city: CityData = {
         type: 'section',
         title: 'Salt Lake City Curiosities',
         teaser: 'Secret temple tunnels, modern mummification pyramids, and the Great Salt Lake\'s mysteries',
+        intro: 'The LDS church built this city from desert, and the contradictions run deep—from secret temple tunnels to a thriving counterculture that exists precisely because the dominant culture is so dominant. Add a flamingo that survived 18 winters, a pyramid where you can get mummified, and a lake so salty it makes swimming feel like floating in soup.',
         items: [
           {
             id: 'slc-curiosity-1',
@@ -176,7 +177,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/curiosities/gulls-2.png',
                 alt: 'Seagull Monument at Temple Square',
-              },
+              }
             ],
             source: 'Utah Historical Quarterly',
             location: {
@@ -316,7 +317,7 @@ export const salt_lake_city: CityData = {
               name: 'Wasatch Mountains',
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -335,7 +336,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/spiral-jetty.jpg',
                 alt: 'Spiral Jetty earthwork sculpture extending into the pink waters of Great Salt Lake',
-              },
+              }
             ],
             address: 'Rozel Point, Box Elder County, UT',
             coordinates: { lat: 41.4375, lng: -112.6689 },
@@ -354,7 +355,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/bonneville-salt-flats.jpg',
                 alt: 'Vast white salt flats stretching to the horizon under blue sky',
-              },
+              }
             ],
             address: 'Bonneville Salt Flats, Wendover, UT',
             coordinates: { lat: 40.7578, lng: -113.8983 },
@@ -372,7 +373,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/red-butte-garden.jpg',
                 alt: 'Colorful flower displays at Red Butte Garden with mountain backdrop',
-              },
+              }
             ],
             address: '300 Wakara Way, Salt Lake City, UT 84108',
             coordinates: { lat: 40.7664, lng: -111.8261 },
@@ -391,7 +392,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/this-is-the-place.jpg',
                 alt: 'Historic pioneer village with covered wagons and period buildings',
-              },
+              }
             ],
             address: '2601 Sunnyside Ave, Salt Lake City, UT 84108',
             coordinates: { lat: 40.7522, lng: -111.8147 },
@@ -410,7 +411,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/gilgal-garden.jpg',
                 alt: 'Stone sphinx sculpture with Joseph Smith\'s face at Gilgal Garden',
-              },
+              }
             ],
             address: '749 E 500 S, Salt Lake City, UT 84102',
             coordinates: { lat: 40.7594, lng: -111.8692 },
@@ -418,7 +419,7 @@ export const salt_lake_city: CityData = {
             price: 'Free',
             accessibility: 'Mostly accessible, some uneven paths',
             tip: 'Read the inscriptions — the builder had a lot on his mind',
-          },
+          }
         ],
       },
       {
@@ -438,7 +439,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Modern pyramid structure in urban setting',
-              },
+              }
             ],
             address: 'Salt Lake City (exact address by appointment)',
             coordinates: { lat: 40.7608, lng: -111.8910 },
@@ -457,7 +458,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Vintage race car collection in private museum',
-              },
+              }
             ],
             address: '165 E 600 S, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7607, lng: -111.8860 },
@@ -475,7 +476,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Victorian-era museum interior with unusual historical artifacts',
-              },
+              }
             ],
             address: '300 N Main Street, Salt Lake City, UT',
             coordinates: { lat: 40.7728, lng: -111.8894 },
@@ -493,7 +494,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/lily-gray.png',
                 alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666"',
-              },
+              }
             ],
             address: 'Salt Lake City Cemetery, Section X1',
             coordinates: { lat: 40.7769, lng: -111.8623 },
@@ -512,7 +513,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Mountain canyon trail with creek and aspen trees',
-              },
+              }
             ],
             address: '4275 S 4260 E (end of White Way), Millcreek',
             coordinates: { lat: 40.6969, lng: -111.7772 },
@@ -530,7 +531,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Mountain lake with cliffs and clear green water',
-              },
+              }
             ],
             address: 'Uinta Mountains (about 1 hour from SLC)',
             coordinates: { lat: 40.5983, lng: -110.9625 },
@@ -553,7 +554,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Small artistic cabins in wooded park setting',
-              },
+              }
             ],
             address: 'Along Emigration Creek, Salt Lake City',
             coordinates: { lat: 40.7640, lng: -111.8403 },
@@ -571,7 +572,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Urban rooftop garden with city skyline views',
-              },
+              }
             ],
             address: 'Main Library, downtown SLC',
             coordinates: { lat: 40.7630, lng: -111.8883 },
@@ -590,7 +591,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Panoramic city view from high-rise observation deck',
-              },
+              }
             ],
             address: 'Church Office Building, downtown',
             coordinates: { lat: 40.7707, lng: -111.8919 },
@@ -608,7 +609,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
-              },
+              }
             ],
             address: '209 E 500 S (inside Leonardo Museum)',
             coordinates: { lat: 40.7623, lng: -111.8842 },
@@ -627,7 +628,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Japanese garden with lotus flowers and water features',
-              },
+              }
             ],
             address: '1000 S 900 W (Jordan Park)',
             coordinates: { lat: 40.7511, lng: -111.9128 },
@@ -646,7 +647,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Small intimate music venue with stage and crowd',
-              },
+              }
             ],
             address: '741 S Kilby Ct, Salt Lake City, UT 84101',
             coordinates: { lat: 40.7530, lng: -111.8775 },
@@ -665,7 +666,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
-              },
+              }
             ],
             address: 'Behind/below Bodega, downtown SLC',
             coordinates: { lat: 40.7630, lng: -111.8883 },
@@ -683,7 +684,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '',
                 alt: 'Victorian houses on steep hillside street',
-              },
+              }
             ],
             address: 'North of downtown, near Capitol Hill',
             coordinates: { lat: 40.7780, lng: -111.8940 },
@@ -701,7 +702,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/images/gems/the-pie-underground.jpg',
                 alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
-              },
+              }
             ],
             address: '1320 E 200 S, Salt Lake City, UT 84102',
             coordinates: { lat: 40.7630, lng: -111.8581 },
@@ -709,7 +710,7 @@ export const salt_lake_city: CityData = {
             price: '$$',
             website: 'https://thepie.com',
             tip: 'Get "The Pie" combo slice — cheese, pepperoni, sausage, mushroom, olive',
-          },
+          }
         ],
       },
       {
@@ -717,7 +718,7 @@ export const salt_lake_city: CityData = {
         type: 'best-of',
         category: 'bars',
         title: 'Drinking in Zion',
-        intro: 'Yes, you can drink in Utah. These spots know how to work around the quirks.',
+        intro: 'Utah liquor laws are weird, but the bar scene has evolved in spite of them. From speakeasies that predate repeal to craft cocktail spots that rival anything in Denver or Portland, Salt Lake has quietly built something special. The bartenders here are used to explaining the laws—and then ignoring them as creatively as possible.',
         spots: [
           {
             name: 'Bar X',
@@ -788,7 +789,7 @@ export const salt_lake_city: CityData = {
               src: '',
               alt: 'Dark dive bar interior with neon signs',
             },
-          },
+          }
         ],
       },
       {
@@ -796,7 +797,7 @@ export const salt_lake_city: CityData = {
         type: 'best-of',
         category: 'cafes',
         title: 'Caffeinated Zion',
-        intro: 'For a city once suspicious of hot drinks, the coffee scene has exploded.',
+        intro: 'The LDS church famously discourages coffee, which makes Salt Lake\'s thriving café culture a quiet rebellion. Third-wave roasters, laptop-friendly spots with mountain views, and espresso bars that would hold their own in any West Coast city. The caffeine runs strong here—maybe because it\'s so recently permitted.',
         spots: [
           {
             name: 'Publik Coffee',
@@ -837,7 +838,7 @@ export const salt_lake_city: CityData = {
             address: '161 E Broadway, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7615, lng: -111.8859 },
             price: '$$',
-          },
+          }
         ],
       },
       {
@@ -845,7 +846,7 @@ export const salt_lake_city: CityData = {
         type: 'best-of',
         category: 'restaurants',
         title: 'Mountain Dining',
-        intro: 'The dining scene has grown far beyond funeral potatoes.',
+        intro: 'Salt Lake\'s food scene has transformed from potluck basics to genuine destination dining. James Beard nominations, immigrant-run kitchens bringing flavors from across the globe, and farm-to-table spots taking advantage of Utah\'s surprisingly good growing conditions. The funeral potatoes are still around—but now they\'re competing with real contenders.',
         spots: [
           {
             name: 'Current Fish & Oyster',
@@ -916,7 +917,7 @@ export const salt_lake_city: CityData = {
               src: '',
               alt: 'Fresh sushi platter with salmon and tuna',
             },
-          },
+          }
         ],
       },
       {
@@ -1042,7 +1043,7 @@ export const salt_lake_city: CityData = {
               coordinates: { lat: 40.7522, lng: -111.8147 },
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -1152,7 +1153,7 @@ export const salt_lake_city: CityData = {
               src: '',
               alt: 'Light-filled modern coffee shop interior',
             },
-          },
+          }
         ],
       },
       {
@@ -1174,7 +1175,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/gary-gilmore.png',
                 alt: 'Gary Gilmore mugshot from 1976',
-              },
+              }
             ],
             location: {
               name: 'Utah State Prison, Draper',
@@ -1219,7 +1220,7 @@ export const salt_lake_city: CityData = {
                 title: 'Gary Gilmore\'s Last Words',
                 publisher: 'Salt Lake Tribune',
                 url: 'https://www.sltrib.com/news/gary-gilmore-execution',
-              },
+              }
             ],
           },
           {
@@ -1234,7 +1235,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/grave-robber.png',
                 alt: 'Antelope Island in the Great Salt Lake where Jean Baptiste, the grave robber, was banished in 1862',
-              },
+              }
             ],
             location: {
               name: 'Antelope Island State Park',
@@ -1264,7 +1265,7 @@ export const salt_lake_city: CityData = {
                 title: 'Utah\'s Most Haunted: Antelope Island',
                 publisher: 'KSL',
                 url: 'https://www.ksl.com/article/antelope-island-haunted-jean-baptiste',
-              },
+              }
             ],
           },
           {
@@ -1287,7 +1288,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/hi-fi-3.png',
                 alt: 'Memorial and remembrance of the Hi-Fi murders victims',
-              },
+              }
             ],
             location: {
               name: '2323 Washington Blvd, Ogden',
@@ -1324,7 +1325,7 @@ export const salt_lake_city: CityData = {
                 title: 'Hi-Fi Murders Digital Exhibit',
                 publisher: 'Weber State University',
                 url: 'https://cdm.weber.edu/digital/collection/p15795coll15',
-              },
+              }
             ],
           },
           {
@@ -1339,7 +1340,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/susan-powel.png',
                 alt: 'Susan Powell, who disappeared from West Valley City in 2009 and has never been found',
-              },
+              }
             ],
             location: {
               name: 'West Valley City / West Desert',
@@ -1383,7 +1384,7 @@ export const salt_lake_city: CityData = {
                 platform: 'Investigation Discovery',
                 year: '2019',
                 url: 'https://www.investigationdiscovery.com/shows/susan-powell',
-              },
+              }
             ],
           },
           {
@@ -1398,7 +1399,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/mountain-meadows.png',
                 alt: 'Monument at Mountain Meadows Massacre site in southern Utah',
-              },
+              }
             ],
             location: {
               name: 'Mountain Meadows, Washington County',
@@ -1435,7 +1436,7 @@ export const salt_lake_city: CityData = {
                 title: 'Mountain Meadows Massacre',
                 publisher: 'American Heritage',
                 url: 'https://www.americanheritage.com/mountain-meadows-massacre',
-              },
+              }
             ],
           },
           {
@@ -1450,7 +1451,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/purple-lady.png',
                 alt: 'Rio Grande Depot in Salt Lake City, said to be haunted by the Purple Lady',
-              },
+              }
             ],
             location: {
               name: 'Rio Grande Depot, 300 S Rio Grande St',
@@ -1480,7 +1481,7 @@ export const salt_lake_city: CityData = {
                 title: 'Utah\'s Haunted Train Station',
                 publisher: 'Visit Utah',
                 url: 'https://www.visitutah.com/articles/rio-grande-depot-haunted',
-              },
+              }
             ],
           },
           {
@@ -1491,10 +1492,6 @@ export const salt_lake_city: CityData = {
             title: 'Ted Bundy\'s Utah Hunting Ground',
             body: 'Ted Bundy arrived in Salt Lake City in September 1974, enrolling at the University of Utah Law School. He rented an apartment in the Avenues and began hunting. Nancy Wilcox, a 16-year-old cheerleader, vanished on October 2—Bundy later confessed to killing her but couldn\'t remember where he left her body, somewhere near Capitol Reef. Melissa Smith, 17, daughter of a Midvale police chief, disappeared October 18. Her body was found nine days later. Bundy was first arrested in Salt Lake City on August 16, 1975, after a highway patrol officer noticed him driving with his headlights off and found a ski mask, handcuffs, and a crowbar in his VW Beetle. He was convicted of kidnapping Carol DaRonch, who had escaped. Utah\'s arrest led to his extradition to Colorado, his dramatic escapes, and eventually his Florida murders and execution. Before he died in 1989, Bundy confessed to at least 30 killings—but Utah investigators believe there are more victims in the West Desert who were never found.',
             verdict: 'At least three confirmed Utah victims. Nancy Wilcox\'s body has never been recovered. The desert doesn\'t give up all its secrets.',
-            image: {
-              src: '/images/dark-history/salt-lake-city/ted-bundy-mugshot.jpg',
-              alt: 'Ted Bundy police mugshot from his 1975 arrest in Utah',
-            },
             location: {
               name: 'Salt Lake Valley, Utah County',
               stillExists: true,
@@ -1538,7 +1535,7 @@ export const salt_lake_city: CityData = {
                 title: 'The Utah Connection',
                 publisher: 'KSL',
                 url: 'https://www.ksl.com/article/ted-bundy-utah-victims',
-              },
+              }
             ],
           },
           {
@@ -1553,7 +1550,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/rosie.png',
                 alt: 'Memorial for Rosie Tapia, the 6-year-old girl abducted and murdered in Salt Lake City in 1995',
-              },
+              }
             ],
             location: {
               name: '800 West, Salt Lake City',
@@ -1583,7 +1580,7 @@ export const salt_lake_city: CityData = {
                 title: 'Justice for Rosie: Family Never Gives Up',
                 publisher: 'KSL',
                 url: 'https://www.ksl.com/article/justice-for-rosie-tapia',
-              },
+              }
             ],
           },
           {
@@ -1602,7 +1599,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/arthur-bishop-2.png',
                 alt: 'Salt Lake County courthouse where Arthur Gary Bishop was tried',
-              },
+              }
             ],
             location: {
               name: 'Salt Lake County',
@@ -1639,7 +1636,7 @@ export const salt_lake_city: CityData = {
                 title: 'The Arthur Gary Bishop Case',
                 publisher: '890 KDXU',
                 url: 'https://kdxu.com/news/local-news/arthur-gary-bishop-case',
-              },
+              }
             ],
           },
           {
@@ -1654,7 +1651,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/lafferty.png',
                 alt: 'The Lafferty brothers who murdered Brenda and Erica Lafferty in American Fork, Utah',
-              },
+              }
             ],
             location: {
               name: 'American Fork',
@@ -1700,7 +1697,7 @@ export const salt_lake_city: CityData = {
                 title: 'Remembering Brenda and Erica Lafferty',
                 publisher: 'Deseret News',
                 url: 'https://www.deseret.com/utah/lafferty-murders-brenda-erica',
-              },
+              }
             ],
           },
           {
@@ -1715,7 +1712,7 @@ export const salt_lake_city: CityData = {
               {
                 src: '/salt-lake-city/dark-history/lily-gray.png',
                 alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666" in Salt Lake City Cemetery',
-              },
+              }
             ],
             location: {
               name: 'Salt Lake City Cemetery, Section X1',
@@ -1745,10 +1742,10 @@ export const salt_lake_city: CityData = {
                 title: 'Utah\'s Strangest Gravestone',
                 publisher: 'Deseret News',
                 url: 'https://www.deseret.com/utah/lilly-gray-beast-666-headstone',
-              },
+              }
             ],
-          },
+          }
         ],
-      },
+      }
     ],
   }

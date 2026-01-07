@@ -81,6 +81,7 @@ export const raleigh: CityData = {
         type: 'section',
         title: 'Raleigh Curiosities',
         teaser: 'Cold War bunkers turned punk venues, hidden tunnels, and the City of Oaks\' secrets',
+        intro: 'Raleigh was planned before it existed—a capital invented on paper and built from scratch in the wilderness. But the planned city developed unplanned depths: a Cold War bunker that became a legendary punk venue, tunnels beneath the Capitol, and a Krispy Kreme empire that started here. The City of Oaks has roots deeper than anyone advertises.',
         items: [
           {
             id: 'curiosity-1',
@@ -124,6 +125,11 @@ export const raleigh: CityData = {
             title: 'The city is named after a man whose severed head became a family heirloom',
             body: 'Raleigh is named after Sir Walter Raleigh, the Elizabethan explorer and courtier who was beheaded in 1618. His preserved head was presented to his wife, Lady Raleigh, as a grim keepsake — and the family reportedly kept it for 29 years. The man never set foot in America, yet his decapitated head became a macabre family treasure that outlasted most marriages.',
             year: '1618',
+            image: {
+              src: '/Raleigh/Curiosities/GettyImages-71625429-5c79ca3ec9e77c0001fd59dc-walter raleigh.webp',
+              alt: 'Portrait of Sir Walter Raleigh',
+              credit: 'Getty Images',
+            },
           },
           {
             id: 'curiosity-ad-1',
@@ -137,6 +143,11 @@ export const raleigh: CityData = {
             title: 'A lost NASCAR superspeedway lies overgrown in the woods',
             body: 'Near Atlantic Avenue lie the overgrown remains of Raleigh Speedway, a one-mile banked NASCAR superspeedway built on a former airstrip in the 1950s. Bill France — who created Daytona — owned it. It was the first superspeedway in North Carolina with lights for night racing. Despite drawing crowds of 16,000+ when Raleigh\'s population was only 65,000, City Council refused to allow Sunday races and noise complaints from expanding suburbs killed it in 1959. The ruins are still visible in the woods. Tragically, teens later died racing their cars on the abandoned track.',
             year: '1952-1959',
+            image: {
+              src: '/Raleigh/Curiosities/raleigh speedway.png',
+              alt: 'Aerial view of abandoned Raleigh Speedway',
+              credit: 'Historical Photo',
+            },
             location: { name: 'Near Atlantic Avenue', stillExists: true },
           },
           {
@@ -145,6 +156,11 @@ export const raleigh: CityData = {
             category: 'history',
             title: 'Over 900 graves lie beneath Dix Park — most unmarked for a century',
             body: 'The Dorothea Dix Hospital Cemetery contains over 900 graves, most unmarked until the 1990s due to mental illness stigma. For nearly a century, graves were marked only with a cross stamped with a case number to hide family shame. The site also contains unmarked graves of enslaved persons from the 5,000-acre Spring Hill Plantation, mentally ill patients, and orphans who died in the 1905 Nazareth Orphanage fire. At least 20 unmarked graves have been discovered, but there may be hundreds more forgotten people buried beneath what is now one of Raleigh\'s most popular parks.',
+            image: {
+              src: '/Raleigh/Curiosities/dix-cemetary.png',
+              alt: 'Dorothea Dix Hospital Cemetery with unmarked graves',
+              credit: 'Historical Photo',
+            },
             location: { name: 'Dix Park', stillExists: true },
           },
           {
@@ -193,6 +209,11 @@ export const raleigh: CityData = {
             title: 'Raleigh invented the barcode that runs global capitalism',
             body: 'George Joseph Laurer, born in Raleigh in 1925, invented the UPC barcode while working at IBM\'s Research Triangle Park in the early 1970s. The original design was a circular bulls eye pattern, but it smeared during printing. Laurer created the vertical stripe pattern now found on virtually every product sold worldwide. He held 28 patents and died at his home in Wendell (near Raleigh) in 2019 at age 94. Every time you scan something at a store — every transaction, every inventory count, every supply chain ping — you\'re using technology invented in the genteel South to optimize late-stage capitalism. The irony is exquisite.',
             year: '1970s',
+            image: {
+              src: '/Raleigh/Curiosities/UPC-image.png',
+              alt: 'UPC barcode',
+              credit: 'IBM Research',
+            },
             source: 'IBM Research',
             location: { name: 'Research Triangle Park', stillExists: true },
           },
@@ -202,6 +223,11 @@ export const raleigh: CityData = {
             category: 'history',
             title: 'NC State has underground steam tunnels with a mysterious shrine',
             body: 'NC State University has a complex network of underground steam tunnels that students used to explore before post-9/11 security tightened access. Urban explorers have found graffiti, hidden passages, and — most strangely — a shrine with recently-lit candles. Whether it\'s Pagan worship, evidence of a secret society, or just elaborate trolling remains a campus mystery.',
+            image: {
+              src: '/Raleigh/Curiosities/NCState-steam.png',
+              alt: 'NC State steam tunnels entrance',
+              credit: 'Urban Exploration Photo',
+            },
             location: { name: 'NC State Campus', stillExists: true },
           },
           {
@@ -240,6 +266,11 @@ export const raleigh: CityData = {
             title: 'Lincoln\'s cousin married Andrew Johnson',
             body: 'In 1827, 18-year-old Andrew Johnson married 16-year-old Eliza McCardle. They were married by Justice of the Peace Mordecai Lincoln — first cousin of Thomas Lincoln, Abraham Lincoln\'s father. This means the man who would become president after Lincoln\'s assassination was connected to the Lincoln family years before either man held office. History loves a good setup.',
             year: '1827',
+            image: {
+              src: '/Raleigh/Curiosities/andrew-johnson-marriage.png',
+              alt: 'Andrew Johnson and Eliza McCardle wedding illustration',
+              credit: 'Historical Illustration',
+            },
           },
           {
             id: 'curiosity-11',
@@ -249,7 +280,7 @@ export const raleigh: CityData = {
             body: 'In 1952, the North Carolina State Fair needed a livestock pavilion. What they got was the most important architectural innovation since the flying buttress. The J.S. Dorton Arena — designed by Polish-born architect Matthew Nowicki, who died in a plane crash before seeing it completed — featured the world\'s first column-free suspended roof: two intersecting parabolic arches supporting a saddle-shaped concrete roof that spans 300 feet without a single interior column. The engineering was so novel that contractors initially refused to construct it. Today, every domed stadium, every convention center, every cable-stayed arena in the world owes something to this building designed to host cattle shows and 4-H competitions. The American Institute of Architects calls it one of the most significant buildings in American history. And twice a year, during the state fair, people walk past it to get funnel cakes without realizing they\'re standing next to a genuine masterpiece.',
             year: '1952',
             image: {
-              src: '',
+              src: '/Raleigh/Curiosities/dorton-arena.png',
               alt: 'Dorton Arena architecture',
             },
             source: 'NC State Fair',
@@ -267,6 +298,11 @@ export const raleigh: CityData = {
             title: 'The giant acorn has a secret time capsule inside',
             body: 'The iconic 1,200-pound copper Great Raleigh Acorn used for New Year\'s Eve celebrations has a hidden time capsule etched inside its copper walls. In 2011, artist David Benson\'s daughter crawled inside and scribbled drawings and messages for future generations. The acorn\'s stem contains copper salvaged from the State Capitol dome — a piece of Raleigh history wrapped inside another.',
             year: '2011',
+            image: {
+              src: '/Raleigh/Curiosities/Photo_277932213_Raleigh_Acorn_c_Zimmytws_Dreamstime_cropped_80a53270-f38a-4467-ad13-252e1b1c4f31.jpg',
+              alt: 'The Great Raleigh Acorn at New Year\'s Eve celebration',
+              credit: 'Dreamstime',
+            },
           },
           {
             id: 'curiosity-12',
@@ -274,6 +310,11 @@ export const raleigh: CityData = {
             category: 'law',
             title: 'Stealing kitchen grease is a felony here',
             body: 'In Raleigh, stealing used kitchen grease is a Class H felony if you steal $1,000 worth. This bizarre-sounding law addresses the surprisingly lucrative black market for restaurant grease, which is valuable for biodiesel production. Grease thieves have become a genuine problem for restaurants across the country.',
+            image: {
+              src: '/Raleigh/Curiosities/grease.png',
+              alt: 'Restaurant grease collection container',
+              credit: 'Photo',
+            },
             source: 'NC General Statutes',
           },
           {
@@ -283,6 +324,11 @@ export const raleigh: CityData = {
             title: 'The state capital was decided in a tavern called Bloomsbury',
             body: 'The Joel Lane House on Hargett Street — originally called Bloomsbury — served as the tavern and meeting place where North Carolina\'s legislators ultimately chose Raleigh as the state capital in 1788. Joel Lane sold 1,000 acres for the new capital city. The house still stands today, one of the oldest buildings in Wake County, though most people walk past it without knowing its significance.',
             year: '1788',
+            image: {
+              src: '/Raleigh/Curiosities/joel-lane-house.png',
+              alt: 'Historic Joel Lane House (Bloomsbury)',
+              credit: 'Historical Photo',
+            },
             source: 'Joel Lane House',
             location: { name: 'Joel Lane House, Hargett Street', stillExists: true },
           },
@@ -293,6 +339,18 @@ export const raleigh: CityData = {
             title: 'Raleigh\'s double-sided flag is one of only 450 in America',
             body: 'Raleigh is one of only 450 cities nationwide with an official municipal flag, and even rarer — it\'s double-sided. Adopted in 1960, one side features the Seal of Raleigh while the other shows a modified version of Sir Walter Raleigh\'s coat of arms. Double-sided municipal flags are extremely uncommon in the United States.',
             year: '1960',
+            images: [
+              {
+                src: '/Raleigh/Curiosities/raleigh-flag-1.png',
+                alt: 'Raleigh flag - Seal of Raleigh side',
+                credit: 'City of Raleigh',
+              },
+              {
+                src: '/Raleigh/Curiosities/raleigh-flag-2.png',
+                alt: 'Raleigh flag - Sir Walter Raleigh coat of arms side',
+                credit: 'City of Raleigh',
+              },
+            ],
             source: 'City of Raleigh',
           },
           {
@@ -301,6 +359,11 @@ export const raleigh: CityData = {
             category: 'nature',
             title: 'The "City of Oaks" nickname is measurable from space',
             body: 'Raleigh\'s tree canopy covers approximately 55% of the city, one of the highest percentages among major U.S. urban areas. The "City of Oaks" nickname isn\'t just marketing — it\'s measurable from space. The urban forest is a defining characteristic that affects everything from summer temperatures to property values.',
+            image: {
+              src: '/Raleigh/Curiosities/raleigh-tree-coverage.png',
+              alt: 'Aerial view of Raleigh showing extensive tree canopy',
+              credit: 'Trust for Public Land',
+            },
             source: 'Trust for Public Land',
           },
         ],
@@ -2059,6 +2122,7 @@ export const raleigh: CityData = {
         type: 'section',
         title: 'Lost Raleigh',
         teaser: 'The Rathskeller, 42nd Street Oyster Bar, and the places where Raleigh used to gather',
+        intro: 'The Triangle grows fast, and growth has a price. These were the restaurants, bars, and venues that anchored Raleigh before the tech boom—places where NC State students became regulars and regulars became lifers. Some couldn\'t survive the pandemic. Some couldn\'t survive the rent. All shaped the city that replaced them.',
         items: [
           {
             id: 'raleigh-lost-1',

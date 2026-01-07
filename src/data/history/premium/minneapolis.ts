@@ -5,7 +5,7 @@ export const minneapolis_premium_history: Record<string, History> = {
     slug: 'meeting-of-waters-premium',
     citySlug: 'minneapolis',
     title: 'Meeting of Waters',
-    subtitle: 'A city built on confluence, power, and the quiet work of survival',
+    subtitle: 'Flour mills, frozen rivers, and the particular satisfaction of surviving January',
     author: 'Curious City',
     publishedAt: '2024-12-15',
     heroImage: {

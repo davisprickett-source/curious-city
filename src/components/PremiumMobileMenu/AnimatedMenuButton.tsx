@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { hamburgerLineVariants, ANIMATION_CONFIG } from './animations'
+import { ANIMATION_CONFIG } from './animations'
 import type { AnimatedMenuButtonProps } from './types'
 
 export function AnimatedMenuButton({ isOpen, onClick }: AnimatedMenuButtonProps) {
@@ -14,52 +14,36 @@ export function AnimatedMenuButton({ isOpen, onClick }: AnimatedMenuButtonProps)
       aria-controls="premium-mobile-menu"
       aria-haspopup="true"
     >
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6"
-      >
-        {/* Top line - rotates to form X */}
-        <motion.line
-          x1="4"
-          y1="9"
-          x2="20"
-          y2="9"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          variants={hamburgerLineVariants.top}
-          initial="closed"
-          animate={isOpen ? 'open' : 'closed'}
+      {/* Container for the hamburger/X icon */}
+      <div className="relative w-6 h-6 flex flex-col items-center justify-center">
+        {/* Top line */}
+        <motion.span
+          className="absolute w-5 h-0.5 bg-current rounded-full"
+          initial={false}
+          animate={{
+            y: isOpen ? 0 : -4,
+            rotate: isOpen ? 45 : 0,
+          }}
           transition={{
             duration: ANIMATION_CONFIG.ICON_DURATION,
             ease: ANIMATION_CONFIG.ICON_EASING,
           }}
-          style={{ originX: '12px', originY: '12px' }}
         />
 
-        {/* Bottom line - rotates to form X */}
-        <motion.line
-          x1="4"
-          y1="15"
-          x2="20"
-          y2="15"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          variants={hamburgerLineVariants.bottom}
-          initial="closed"
-          animate={isOpen ? 'open' : 'closed'}
+        {/* Bottom line */}
+        <motion.span
+          className="absolute w-5 h-0.5 bg-current rounded-full"
+          initial={false}
+          animate={{
+            y: isOpen ? 0 : 4,
+            rotate: isOpen ? -45 : 0,
+          }}
           transition={{
             duration: ANIMATION_CONFIG.ICON_DURATION,
             ease: ANIMATION_CONFIG.ICON_EASING,
           }}
-          style={{ originX: '12px', originY: '12px' }}
         />
-      </svg>
+      </div>
     </button>
   )
 }

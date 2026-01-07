@@ -16,6 +16,8 @@ interface ScrollyMapViewProps {
   markerType?: 'coffee' | 'cocktail' | 'restaurant' | 'default'
   showBanner?: boolean
   bannerImage?: string
+  /** Current category to exclude from bottom links */
+  currentCategory?: string
 }
 
 export function ScrollyMapView({
@@ -25,7 +27,8 @@ export function ScrollyMapView({
   intro,
   markerType = 'coffee',
   showBanner = false,
-  bannerImage
+  bannerImage,
+  currentCategory
 }: ScrollyMapViewProps) {
   const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro/banner
   const [, setIsMapLoaded] = useState(false)
@@ -56,6 +59,7 @@ export function ScrollyMapView({
           onActiveIndexChange={setActiveSpotIndex}
           scrollToIndex={scrollToIndex}
           onScrollComplete={() => setScrollToIndex(null)}
+          currentCategory={currentCategory}
         />
       </div>
     </div>

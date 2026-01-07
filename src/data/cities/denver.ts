@@ -60,6 +60,7 @@ export const denver: CityData = {
         type: 'section',
         title: 'Denver Curiosities',
         teaser: 'Demonic horses, buried bodies, and the secrets beneath the sunshine',
+        intro: 'Denver sells itself on 300 days of sunshine and easy mountain access. What it doesn\'t mention: the demon horse that killed its creator, the airport conspiracy theories that refuse to die, and the unsettling amount of bodies discovered beneath construction sites. The Mile High City has altitude sickness and strange secrets in equal measure.',
         items: [
           {
             id: 'den-curiosity-1',
@@ -135,6 +136,11 @@ export const denver: CityData = {
             title: 'The internet\'s first serial killer ran cons from Capitol Hill',
             body: 'John Edward Robinson was a married businessman and self-styled philanthropist. He was also methodically murdering women he met through early internet chat rooms. In the 1980s and 90s, Robinson operated partly from the Colburn Hotel on Capitol Hill, using it as a meeting spot while promising women jobs, housing, and relationships. He delivered barrels. At least eight women are confirmed dead, some decomposing on his Missouri farm for over a decade. Investigators suspect more. The Colburn is now apartments. Real estate agents aren\'t required to disclose that one of America\'s most prolific killers operated from these rooms.',
             year: '1990s',
+            image: {
+              src: '/denver/curiosities/colburn.png',
+              alt: 'The historic Colburn Hotel on Capitol Hill',
+              credit: 'Historical Photo',
+            },
             location: {
               name: 'Colburn Hotel, Capitol Hill',
               stillExists: true,
@@ -152,6 +158,18 @@ export const denver: CityData = {
             title: 'Denver trademarked the word "cheeseburger"',
             body: 'In 1935, Louis Ballast of the Humpty Dumpty Drive-In trademarked the word "cheeseburger" after claiming to invent it. Whether he was actually first is disputed—Pasadena has a competing claim from the same year—but Denver\'s trademark was real. It has since expired. The drive-in is demolished. The argument continues. Denver still claims the cheeseburger. Pasadena refuses to concede. No one will ever know.',
             year: '1935',
+            images: [
+              {
+                src: '/denver/curiosities/cheeseburger-1.png',
+                alt: 'Historic cheeseburger and Humpty Dumpty Drive-In',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/denver/curiosities/cheeseburger-2.png',
+                alt: 'Vintage cheeseburger advertisement',
+                credit: 'Historical Photo',
+              },
+            ],
             source: 'US Patent and Trademark Office',
             location: {
               name: 'Humpty Dumpty Drive-In (demolished)',
@@ -165,6 +183,23 @@ export const denver: CityData = {
             title: 'The city almost died before it started',
             body: 'Denver shouldn\'t exist. In November 1858, prospectors from Kansas founded "Denver City" at the confluence of Cherry Creek and the South Platte River. They found a little gold—enough to spark a rush. By early 1859, the deposits were exhausted. The "Pikes Peak or Bust" gold rush became a bust. Thousands arrived, found nothing, and turned around. Newspapers back East declared it a hoax. Denver\'s population collapsed. The town was weeks from abandonment when prospectors struck real gold at Gregory Gulch near Central City. Suddenly Denver had a purpose: supply hub, banking center, railhead for the mountain camps. The city survived because someone found gold in exactly the right place at the right time. A few months earlier, a few miles elsewhere, and Denver would be another ghost town footnote.',
             year: '1858',
+            images: [
+              {
+                src: '/denver/curiosities/almost-died-1.png',
+                alt: 'Early Denver City during the gold rush',
+                credit: 'Colorado Historical Society',
+              },
+              {
+                src: '/denver/curiosities/almost-died-2.png',
+                alt: 'Pikes Peak or Bust prospectors',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/denver/curiosities/almost-died-3.png',
+                alt: 'Cherry Creek gold rush camp',
+                credit: 'Historical Photo',
+              },
+            ],
             source: 'Colorado Historical Society',
           },
           {
@@ -216,6 +251,11 @@ export const denver: CityData = {
             category: 'science',
             title: 'Denver has more sun than San Diego (and worse sunburns)',
             body: 'Denver averages 300 days of sunshine annually—more than Miami, San Diego, or Los Angeles. But at 5,280 feet, UV exposure is 25% more intense than at sea level. Visitors consistently underestimate how quickly they\'ll fry and how viciously altitude hangovers hit. The sun is relentless. The hangovers are legendary. Locals develop leathery skin by 35. It\'s fine.',
+            image: {
+              src: '/denver/curiosities/denver-sunshine.png',
+              alt: 'Denver skyline under bright sunshine',
+              credit: 'Photo',
+            },
             source: 'National Weather Service',
           },
           {
@@ -225,6 +265,11 @@ export const denver: CityData = {
             title: 'Colorado legalized weed first, then corporatized it',
             body: 'In 2012, Colorado voters made the state the first (along with Washington) to legalize recreational cannabis. Dispensaries opened January 1, 2014 to lines around the block and international media. The rebellious experiment is now heavily regulated bureaucracy. Corporate chains dominate. Annual sales exceed $1.5 billion. The industry has lobbyists and tax accountants. Very punk rock.',
             year: '2012',
+            image: {
+              src: '/denver/curiosities/cannabis.png',
+              alt: 'Colorado cannabis dispensary',
+              credit: 'Photo',
+            },
             source: 'Colorado Department of Revenue',
             location: {
               name: 'State of Colorado',
@@ -237,6 +282,11 @@ export const denver: CityData = {
             category: 'underground',
             title: 'Secret tunnels connect downtown to mysterious destinations',
             body: 'A network of tunnels runs beneath downtown Denver, originally built for steam heating. During Prohibition, they connected speakeasies. Some lead to the Brown Palace Hotel, which has hosted every president since Teddy Roosevelt. Urban explorers claim the tunnels extend far beyond official maps. The city won\'t confirm or deny. The hotel doesn\'t comment. The tunnels remain.',
+            image: {
+              src: '/denver/curiosities/denver-tunnels.png',
+              alt: 'Underground tunnels beneath downtown Denver',
+              credit: 'Historical Photo',
+            },
             source: 'Brown Palace Hotel historical records',
           },
           {
@@ -245,6 +295,11 @@ export const denver: CityData = {
             category: 'culture',
             title: 'Denver has more breweries than any American city',
             body: 'The Denver metro has over 150 craft breweries—more than any US city. Coors in Golden (technically a suburb) is the world\'s largest single-site brewery. The Great American Beer Festival happens here annually. Even the airport has craft beer taps past security. You cannot throw a rock without hitting an IPA. Do not throw rocks in breweries.',
+            image: {
+              src: '/denver/curiosities/breweries-2.png',
+              alt: 'Denver craft brewery scene',
+              credit: 'Photo',
+            },
             source: 'Colorado Brewers Guild',
             location: {
               name: 'Denver Metro',
@@ -1603,6 +1658,7 @@ export const denver: CityData = {
         type: 'section',
         title: 'Lost Denver',
         teaser: 'Pete\'s Kitchen, El Chapultepec, and the places where Denver used to gather',
+        intro: 'Denver reinvented itself from cow town to craft beer capital in a generation, and the transformation wasn\'t gentle. These were the all-night diners, jazz clubs, and neighborhood joints that gave the city its soul before the condos came. The Mile High City climbs fast. Not everything makes it to the top.',
         items: [
           {
             id: 'denver-lost-4',

@@ -47,8 +47,9 @@ export const ScrollySection = forwardRef<HTMLElement, ScrollySectionProps>(
     }, [inView, index, onInView])
 
     // For spot cards (index >= 0), position more to the right to show map on left
+    // On mobile, center the cards so they're fully visible
     const isSpotCard = index >= 0
-    const justifyClass = isSpotCard ? 'justify-end pr-8 md:pr-16 lg:pr-24' : 'justify-center'
+    const justifyClass = isSpotCard ? 'justify-center md:justify-end md:pr-16 lg:pr-24' : 'justify-center'
 
     // Disable animations on mobile to prevent blinking/shaking
     const animationProps = isMobile

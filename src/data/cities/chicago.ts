@@ -118,7 +118,7 @@ export const chicago: CityData = {
             category: 'opening',
             tags: ['art', 'museum', 'exclusive'],
             href: 'https://mcachicago.org',
-          },
+          }
         ],
       },
       {
@@ -144,7 +144,7 @@ export const chicago: CityData = {
             meta: 'List',
             variant: 'compact',
             href: '/chicago/lakefront-running',
-          },
+          }
         ],
       },
       {
@@ -170,7 +170,7 @@ export const chicago: CityData = {
             title: 'The Seven Toppings of a Chicago Dog',
             description: 'Mustard, onion, relish, pickle, tomato, sport peppers, celery salt. Never ketchup.',
             variant: 'compact',
-          },
+          }
         ],
       },
       {
@@ -178,6 +178,7 @@ export const chicago: CityData = {
         type: 'section',
         title: 'Chicago Curiosities',
         teaser: 'Flooded freight tunnels, reversed rivers, and the secrets beneath the L',
+        intro: 'Chicago reversed its river to stop poisoning itself, lifted entire buildings to create a sewer system, and built a freight tunnel network so elaborate that when it flooded in 1992, nobody remembered it existed. This is a city that solves problems through sheer audacity—and leaves the evidence buried beneath the streets.',
         items: [
           {
             id: 'curiosity-1',
@@ -426,7 +427,7 @@ export const chicago: CityData = {
             title: 'The zipper, Twinkies, and spray paint were all invented here',
             body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
             source: 'Chicago History Museum',
-          },
+          }
         ],
       },
       {
@@ -445,7 +446,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Cloud Gate sculpture reflecting Chicago skyline',
-              },
+              }
             ],
             address: 'Millennium Park, 201 E Randolph St, Chicago, IL 60602',
             coordinates: { lat: 41.8827, lng: -87.6233 },
@@ -464,7 +465,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Art Institute of Chicago exterior with bronze lion statues',
-              },
+              }
             ],
             address: '111 S Michigan Ave, Chicago, IL 60603',
             coordinates: { lat: 41.8796, lng: -87.6237 },
@@ -483,7 +484,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Navy Pier with Ferris wheel and Chicago skyline',
-              },
+              }
             ],
             address: '600 E Grand Ave, Chicago, IL 60611',
             coordinates: { lat: 41.8917, lng: -87.6086 },
@@ -502,7 +503,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Chicago skyline view from John Hancock Observatory',
-              },
+              }
             ],
             address: '875 N Michigan Ave, 94th Floor, Chicago, IL 60611',
             coordinates: { lat: 41.8989, lng: -87.6230 },
@@ -521,7 +522,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Michigan Avenue Magnificent Mile with shopping and architecture',
-              },
+              }
             ],
             address: 'Michigan Ave from Chicago River to Oak St, Chicago, IL 60611',
             coordinates: { lat: 41.8957, lng: -87.6244 },
@@ -540,7 +541,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Willis Tower Skydeck glass ledge extending over city',
-              },
+              }
             ],
             address: '233 S Wacker Dr, Chicago, IL 60606',
             coordinates: { lat: 41.8789, lng: -87.6359 },
@@ -548,7 +549,7 @@ export const chicago: CityData = {
             price: '$30-40 adults depending on time',
             website: 'https://www.theskydeck.com',
             tip: 'Buy tickets online to skip the ticket line (you\'ll still wait for elevators). Visit at sunset for day-to-night views.',
-          },
+          }
         ],
       },
       {
@@ -568,7 +569,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Underground tunnel with brick archways and dim lighting',
-              },
+              }
             ],
             address: 'Beneath downtown Chicago',
             coordinates: { lat: 41.8781, lng: -87.6298 },
@@ -587,7 +588,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Abandoned elevated train station with overgrown platform',
-              },
+              }
             ],
             address: 'Eisenhower Expressway near California Ave, Chicago, IL',
             coordinates: { lat: 41.8743, lng: -87.6971 },
@@ -606,7 +607,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Historic restaurant interior with exposed brick and vintage details',
-              },
+              }
             ],
             address: '226 S Wabash Ave, Chicago, IL 60604',
             coordinates: { lat: 41.8791, lng: -87.6259 },
@@ -625,7 +626,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Historic limestone gate with ornate architecture standing alone',
-              },
+              }
             ],
             address: '850 W Exchange Ave, Chicago, IL 60609',
             coordinates: { lat: 41.8151, lng: -87.6578 },
@@ -649,7 +650,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Historic stone bridge and lamp posts in park setting',
-              },
+              }
             ],
             address: 'Jackson Park, 6401 S Stony Island Ave, Chicago, IL 60637',
             coordinates: { lat: 41.7838, lng: -87.5806 },
@@ -668,7 +669,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Tranquil garden with lily pond and stone pathways',
-              },
+              }
             ],
             address: '125 W Fullerton Pkwy, Chicago, IL 60614',
             coordinates: { lat: 41.9257, lng: -87.6343 },
@@ -687,7 +688,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Neo-gothic church spire rising above city buildings',
-              },
+              }
             ],
             address: '77 W Washington St, Chicago, IL 60602',
             coordinates: { lat: 41.8831, lng: -87.6298 },
@@ -711,7 +712,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Nearly windowless urban building with industrial purpose',
-              },
+              }
             ],
             address: 'State St & Adams St, Chicago, IL 60603',
             coordinates: { lat: 41.8793, lng: -87.6276 },
@@ -729,7 +730,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Quiet neighborhood beach with sand and lake view',
-              },
+              }
             ],
             address: 'Granville Ave & Lake Michigan, Chicago, IL 60660',
             coordinates: { lat: 42.0094, lng: -87.6549 },
@@ -748,7 +749,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Detailed miniature room diorama with period furniture',
-              },
+              }
             ],
             address: 'Art Institute of Chicago, 111 S Michigan Ave, Lower Level',
             coordinates: { lat: 41.8796, lng: -87.6237 },
@@ -767,7 +768,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Ornate historic movie theater interior with starlit ceiling',
-              },
+              }
             ],
             address: '3733 N Southport Ave, Chicago, IL 60613',
             coordinates: { lat: 41.9484, lng: -87.6640 },
@@ -786,7 +787,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Rooftop garden with hanging plants and string lights',
-              },
+              }
             ],
             address: '1924 W Chicago Ave (above Roots Pizza), Chicago, IL 60622',
             coordinates: { lat: 41.8958, lng: -87.6758 },
@@ -805,7 +806,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Gothic library interior with wooden shelves and reading spaces',
-              },
+              }
             ],
             address: '1116 E 59th St, Chicago, IL 60637',
             coordinates: { lat: 41.7886, lng: -87.5987 },
@@ -824,7 +825,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Graffiti-covered permission wall with colorful street art',
-              },
+              }
             ],
             address: 'Between Medill & Fullerton, west of Milwaukee Ave, Chicago, IL',
             coordinates: { lat: 41.9245, lng: -87.7050 },
@@ -843,7 +844,7 @@ export const chicago: CityData = {
               {
                 src: '',
                 alt: 'Historic theater building exterior with vintage marquee',
-              },
+              }
             ],
             address: '2433 N Lincoln Ave, Chicago, IL 60614',
             coordinates: { lat: 41.9267, lng: -87.6489 },
@@ -851,7 +852,7 @@ export const chicago: CityData = {
             price: 'Exterior viewable anytime',
             website: 'https://www.biography-theater.com',
             tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
-          },
+          }
         ],
       },
       {
@@ -950,7 +951,7 @@ export const chicago: CityData = {
               src: '/images/bars/simons.jpg',
               alt: 'Vintage tavern interior with nautical decorations',
             },
-          },
+          }
         ],
       },
       {
@@ -1008,7 +1009,7 @@ export const chicago: CityData = {
             coordinates: { lat: 41.9842, lng: -87.6686 },
             hours: '6:30am-5pm Mon-Fri, 7am-5pm Sat-Sun',
             price: '$',
-          },
+          }
         ],
       },
       {
@@ -1112,7 +1113,7 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.bridgeportcoffee.net',
             instagram: '@bridgeportcoffee',
-          },
+          }
         ],
       },
       {
@@ -1230,7 +1231,7 @@ export const chicago: CityData = {
               src: '/images/restaurants/lou-mitchells.jpg',
               alt: 'Classic diner breakfast with double-yolk eggs',
             },
-          },
+          }
         ],
       },
       {
@@ -1386,7 +1387,7 @@ export const chicago: CityData = {
               coordinates: { lat: 41.8819, lng: -87.6278 },
               stillExists: true,
             },
-          },
+          }
         ],
       },
       {
@@ -1455,16 +1456,12 @@ export const chicago: CityData = {
                 title: 'The Murder Castle: H.H. Holmes Explained',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=kU7JuFGnJTU',
-              },
+              }
             ],
             location: {
               name: '63rd and Wallace Street, Englewood',
               coordinates: { lat: 41.7794, lng: -87.6394 },
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/chicago/hh-holmes.jpg',
-              alt: 'H.H. Holmes, America\'s first documented serial killer, photographed in 1895',
             },
           },
           {
@@ -1518,16 +1515,12 @@ export const chicago: CityData = {
                 title: 'The Iroquois Theatre Disaster Explained',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=lFrjrQJCZCw',
-              },
+              }
             ],
             location: {
               name: 'Randolph Street, Loop (site now occupied by Oriental Theatre)',
               coordinates: { lat: 41.8847, lng: -87.6279 },
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/chicago/iroquois-theatre.jpg',
-              alt: 'The Iroquois Theatre exterior before the devastating fire of December 30, 1903',
             },
           },
           {
@@ -1581,16 +1574,12 @@ export const chicago: CityData = {
                 title: 'St. Valentine\'s Day Massacre: The True Story',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=OjL6BqjfKYk',
-              },
+              }
             ],
             location: {
               name: '2122 North Clark Street (building demolished in 1967)',
               coordinates: { lat: 41.9204, lng: -87.6363 },
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/chicago/valentines-massacre.jpg',
-              alt: 'Crime scene photograph from the St. Valentine\'s Day Massacre, February 14, 1929',
             },
           },
           {
@@ -1643,15 +1632,11 @@ export const chicago: CityData = {
                 title: 'The Grimes Sisters: Unsolved After 65 Years',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=MnOpQrStUvY',
-              },
+              }
             ],
             location: {
               name: 'Bodies found in Willow Springs; last seen in Brighton Park',
               stillExists: true,
-            },
-            image: {
-              src: '/images/dark-history/chicago/elvis-1956.jpg',
-              alt: 'Elvis Presley in 1957, promoting "Jailhouse Rock" - the sisters went to see his film "Love Me Tender" the night they disappeared',
             },
           },
           {
@@ -1710,16 +1695,12 @@ export const chicago: CityData = {
                 title: 'Our Lady of the Angels School Fire: The Tragedy',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=UoFQ9v3qKtc',
-              },
+              }
             ],
             location: {
               name: 'Our Lady of the Angels School, 909 N Avers Ave, Humboldt Park',
               coordinates: { lat: 41.8965, lng: -87.7211 },
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/chicago/ola-fire.jpg',
-              alt: 'Our Lady of the Angels School fire, December 1, 1958 - firefighters battle the blaze',
             },
           },
           {
@@ -1781,16 +1762,12 @@ export const chicago: CityData = {
                 title: 'John Wayne Gacy: The Killer Clown Documentary',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=fTDzNQF3QoI',
-              },
+              }
             ],
             location: {
               name: '8213 W Summerdale Ave, Norwood Park Township',
               coordinates: { lat: 42.0090, lng: -87.8416 },
               stillExists: false,
-            },
-            image: {
-              src: '/images/dark-history/chicago/gacy-mugshot.jpg',
-              alt: 'John Wayne Gacy police mugshot following his arrest in 1978',
             },
           },
           {
@@ -1855,16 +1832,12 @@ export const chicago: CityData = {
                 title: 'American Airlines Flight 191: The Deadliest Crash',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=rVXIvdxNzXQ',
-              },
+              }
             ],
             location: {
               name: 'Near O\'Hare Airport, Des Plaines',
               coordinates: { lat: 42.0022, lng: -87.9384 },
               stillExists: true,
-            },
-            image: {
-              src: '/images/dark-history/chicago/aa-dc10.jpg',
-              alt: 'American Airlines DC-10 aircraft, the same model as Flight 191',
             },
           },
           {
@@ -1919,17 +1892,13 @@ export const chicago: CityData = {
                 title: 'The Tylenol Murders: Unsolved After 40 Years',
                 platform: 'YouTube',
                 url: 'https://www.youtube.com/watch?v=pBdz3Uq6CT8',
-              },
+              }
             ],
             location: {
               name: 'Multiple Chicago suburbs',
               stillExists: true,
             },
-            image: {
-              src: '/images/dark-history/chicago/tylenol-1982.jpg',
-              alt: '1982 Tylenol bottles being removed from shelves during the poisoning crisis',
-            },
-          },
+          }
         ],
       },
     
@@ -1938,6 +1907,7 @@ export const chicago: CityData = {
         type: 'section',
         title: 'Lost Chicago',
         teaser: 'Hot Doug\'s, The Uptown Theatre, and the places that made Chicago feel like Chicago',
+        intro: 'Chicago is a city that demolishes its history with the same enthusiasm it once built it. These were the restaurants, bars, and theaters that defined neighborhoods—places where everyone knew your order and the walls absorbed decades of stories. The city changes fast. Memory is all that keeps some doors open.',
         items: [
           {
             id: 'chicago-lost-1',
@@ -2095,8 +2065,8 @@ export const chicago: CityData = {
             communityVoice: '"Frontera Fresco made O\'Hare bearable." — Bon Appétit',
             lastAddress: "Terminal 3, O'Hare International Airport, Chicago",
             source: 'Chicago Tribune, Bon Appétit',
-          },
+          }
         ],
-      },
+      }
     ],
   }

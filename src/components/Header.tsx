@@ -1,9 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
 import { CITY_METADATA } from '@/data/cities'
-import { routes, citySections } from '@/lib/routes'
+import { routes } from '@/lib/routes'
 import { PremiumMobileMenu } from './PremiumMobileMenu'
 
 interface HeaderProps {
@@ -17,17 +16,17 @@ export function Header({ cityName }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-white backdrop-blur-md border-b border-neutral-100 ui-sans">
       <div className="container-page">
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center h-14 gap-2">
           {/* Logo */}
           <Link
             href={routes.home()}
-            className="flex items-center gap-3 font-semibold text-neutral-900 hover:text-accent-600 transition-colors tracking-tight"
+            className="flex items-center font-semibold text-neutral-900 hover:text-accent-600 transition-colors tracking-tight"
           >
-            {/* Mobile: Icon only */}
+            {/* Mobile: Small logo */}
             <img
-              src="/icon.png"
+              src="/logos/CCs.png"
               alt="Curious City"
-              className="h-8 w-8 sm:hidden"
+              className="h-7 w-auto sm:hidden"
             />
             {/* Desktop: Full logo */}
             <img
@@ -35,22 +34,20 @@ export function Header({ cityName }: HeaderProps) {
               alt="Curious City"
               className="hidden sm:block h-8 w-auto"
             />
-            {cityName && (
-              <>
-                <span className="w-px h-5 bg-neutral-200" aria-hidden="true" />
-                <span className="text-neutral-500 font-normal text-[15px]">{cityName}</span>
-              </>
-            )}
           </Link>
 
-          {/* Navigation */}
-          <nav className="flex items-center gap-1">
-            {/* Cities dropdown - main navigation */}
-            <CitiesDropdown />
+          {/* Cities dropdown - after logo like city pages */}
+          <CitiesDropdown />
 
-            {/* Premium mobile menu button */}
-            <PremiumMobileMenu />
-          </nav>
+          {cityName && (
+            <span className="text-neutral-500 font-normal text-[15px]">{cityName}</span>
+          )}
+
+          {/* Spacer */}
+          <div className="flex-1" />
+
+          {/* Premium mobile menu button */}
+          <PremiumMobileMenu />
         </div>
       </div>
     </header>
@@ -68,7 +65,7 @@ function CitiesDropdown() {
       </button>
 
       {/* Dropdown - Simple city list only */}
-      <div className="absolute right-0 top-full mt-1 w-48 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+      <div className="absolute left-0 top-full mt-1 w-48 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
         {cities.map((city) => (
           <Link
             key={city.slug}

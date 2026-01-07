@@ -26,11 +26,11 @@ export function HeroCarousel({ slides, autoPlayInterval = 6000 }: HeroCarouselPr
     return () => clearInterval(interval)
   }, [isPaused, slides.length, autoPlayInterval])
 
-  // Hide branding after 3 seconds
+  // Hide branding after 6 seconds (longer for description to show)
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowBranding(false)
-    }, 3000)
+    }, 6000)
 
     return () => clearTimeout(timer)
   }, [])
@@ -86,24 +86,24 @@ export function HeroCarousel({ slides, autoPlayInterval = 6000 }: HeroCarouselPr
                 </h1>
               </motion.div>
 
-              {/* Tagline */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className="text-lg md:text-xl text-neutral-300"
-              >
-                Local content for curious people
-              </motion.p>
-
               {/* Animated underline */}
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 0.8, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 className="mt-6 h-1 w-32 mx-auto bg-gradient-to-r from-accent-600 via-accent-500 to-accent-600 rounded-full"
                 style={{ transformOrigin: 'left' }}
               />
+
+              {/* Site description */}
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 2.0 }}
+                className="mt-8 text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed"
+              >
+                Discover the untold stories, dark histories, and hidden secrets of cities across America
+              </motion.p>
             </div>
           </motion.div>
         )}
@@ -125,9 +125,9 @@ export function HeroCarousel({ slides, autoPlayInterval = 6000 }: HeroCarouselPr
         ))}
       </div>
 
-      {/* Navigation Dots - Bottom Center */}
+      {/* Navigation Dots - Bottom Center (higher on mobile to avoid CTA overlap) */}
       {slides.length > 1 && (
-        <div className="absolute bottom-6 left-0 right-0 z-10">
+        <div className="absolute bottom-4 md:bottom-6 left-0 right-0 z-10">
           <div className="container-page">
             <div className="flex items-center justify-center gap-2">
               {slides.map((_, index) => (

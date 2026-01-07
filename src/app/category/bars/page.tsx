@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import { Metadata } from 'next'
-import { getAllBestOf } from '@/data/cities'
 import { Header, Footer } from '@/components'
+import { getAllPageCards } from '@/lib/content/pages'
+import { PageCard } from '@/components/cards/PageCard'
 
 export const metadata: Metadata = {
   title: 'Best Bars | Curious City',
@@ -9,7 +9,12 @@ export const metadata: Metadata = {
 }
 
 export default async function BarsPage() {
-  const allBars = await getAllBestOf('bars')
+  const allCards = await getAllPageCards()
+
+  // Filter to bars articles only (guide pages with /bars in href)
+  const barCards = allCards.filter((card) =>
+    card.pageType === 'guide' && card.href.includes('/bars')
+  )
 
   return (
     <>
@@ -18,76 +23,33 @@ export default async function BarsPage() {
       <main className="flex-1">
         <div className="container-page section-spacing">
           {/* Hero */}
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
               Best Bars
             </h1>
-            <p className="text-lg text-neutral-600 max-w-2xl">
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
               Dive bars, cocktail lounges, and neighborhood favorites.
               Where locals actually drink.
             </p>
           </div>
 
-          {/* Bars by City */}
-          {allBars.length > 0 ? (
-            <div className="space-y-12">
-              {allBars.map(({ citySlug, cityName, bestOf }) => (
-                <section key={`${citySlug}-${bestOf.category}`}>
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-xl font-semibold text-neutral-900">
-                      {cityName}
-                    </h2>
-                    <Link
-                      href={`/${citySlug}`}
-                      className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors"
-                    >
-                      View city →
-                    </Link>
-                  </div>
-                  {bestOf.intro && (
-                    <p className="text-neutral-600 mb-4">{bestOf.intro}</p>
-                  )}
-                  <div className="grid gap-4 md:grid-cols-2">
-                    {bestOf.spots.map((spot: any, index: number) => (
-                      <div
-                        key={`${citySlug}-bar-${index}`}
-                        className="p-5 bg-white rounded-xl border border-neutral-200"
-                      >
-                        <div className="flex items-start justify-between mb-2">
-                          <div>
-                            <h3 className="font-semibold text-neutral-900">
-                              {spot.name}
-                            </h3>
-                            <p className="text-xs text-neutral-500">
-                              {spot.neighborhood}
-                              {spot.price && ` · ${spot.price}`}
-                            </p>
-                          </div>
-                        </div>
-                        <p className="text-sm text-neutral-600 mb-2 italic">
-                          {spot.vibe}
-                        </p>
-                        {spot.order && (
-                          <p className="text-sm text-neutral-700 mb-2">
-                            <span className="font-medium">Order:</span> {spot.order}
-                          </p>
-                        )}
-                        <p className="text-sm text-neutral-500">
-                          {spot.why}
-                        </p>
-                        {spot.address && (
-                          <p className="text-xs text-neutral-400 mt-3">
-                            {spot.address}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </section>
+          {/* Single Column Article Feed */}
+          {barCards.length > 0 ? (
+            <div className="space-y-8 max-w-4xl mx-auto">
+              {barCards.map((card, index) => (
+                <PageCard
+                  key={card.href}
+                  data={card}
+                  variant="standard"
+                  index={index}
+                  priority={index === 0}
+                />
               ))}
             </div>
           ) : (
-            <p className="text-neutral-500">No bar recommendations yet. Check back soon!</p>
+            <div className="text-center py-12">
+              <p className="text-neutral-500 mb-4">No bar guides yet. Check back soon!</p>
+            </div>
           )}
         </div>
       </main>

@@ -5,11 +5,11 @@ export const phoenix_premium_history: Record<string, History> = {
     slug: 'the-air-conditioned-dream-premium',
     citySlug: 'phoenix',
     title: 'The Air-Conditioned Dream',
-    subtitle: 'A city that shouldn\'t exist, existing grandly anyway',
+    subtitle: 'Five million people, eight inches of rain, and the absolute conviction that engineering beats ecology',
     author: 'Curious City',
     publishedAt: '2024-12-22',
     heroImage: {
-      src: '/sequences/phoenix/phoenix-1/frame-0001.jpg',
+      src: '/sequences/phoenix/phoenix-1/frame_0001.jpg',
       alt: 'Phoenix sprawling across the Sonoran Desert',
       position: 'center',
     },

@@ -1,42 +1,74 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { CITY_METADATA } from '@/data/cities'
-import { staggerContainerVariants, itemVariants } from './animations'
+import type { CitiesNavigationProps } from './types'
 
 // Sort cities alphabetically
 const cities = [...CITY_METADATA].sort((a, b) => a.name.localeCompare(b.name))
 
-interface CitiesNavigationProps {
-  onClose: () => void
+// Custom variants without exit animation to prevent disappearing on click
+const noExitContainerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.2,
+    },
+  },
 }
 
-export function CitiesNavigation({ onClose }: CitiesNavigationProps) {
+const noExitItemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+export function CitiesNavigation({ onClose, currentCitySlug }: CitiesNavigationProps) {
   return (
     <motion.div
-      variants={staggerContainerVariants}
+      variants={noExitContainerVariants}
       initial="hidden"
       animate="visible"
-      exit="exit"
       className="px-8 pt-20 pb-6"
     >
-      <div className="eyebrow text-neutral-500 mb-8">Cities</div>
+      <div className="eyebrow text-accent-600 mb-8">Cities</div>
 
       <motion.ul role="list" className="space-y-6">
-        {cities.map((city) => (
-          <motion.li key={city.slug} variants={itemVariants}>
-            <Link
-              href={`/${city.slug}`}
-              onClick={onClose}
-              className="group block w-full text-left transition-colors hover:text-accent-600 focus:outline-none focus:text-accent-600"
-            >
-              <span className="text-[clamp(2.5rem,8vw,3.8rem)] font-semibold leading-none tracking-tight text-neutral-900 group-hover:text-accent-600 group-focus:text-accent-600 transition-colors">
-                {city.name}
-              </span>
-            </Link>
-          </motion.li>
-        ))}
+        {cities.map((city) => {
+          const isCurrent = city.slug === currentCitySlug
+          return (
+            <motion.li key={city.slug} variants={noExitItemVariants}>
+              <Link
+                href={`/${city.slug}`}
+                onClick={onClose}
+                className="group flex items-center gap-3 w-full text-left transition-colors hover:text-accent-600 focus:outline-none focus:text-accent-600"
+                aria-current={isCurrent ? 'page' : undefined}
+              >
+                {isCurrent && (
+                  <span className="text-accent-600 text-2xl">→</span>
+                )}
+                <span
+                  className={`text-[clamp(2.5rem,8vw,3.8rem)] font-semibold leading-none tracking-tight transition-colors ${
+                    isCurrent
+                      ? 'text-accent-600'
+                      : 'text-neutral-900 group-hover:text-accent-600 group-focus:text-accent-600'
+                  }`}
+                >
+                  {city.name}
+                </span>
+              </Link>
+            </motion.li>
+          )
+        })}
       </motion.ul>
     </motion.div>
   )
