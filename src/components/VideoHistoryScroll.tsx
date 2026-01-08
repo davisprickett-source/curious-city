@@ -392,6 +392,17 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="hidden lg:block fixed top-0 left-0 right-0 h-[25vh] bg-white z-40 pointer-events-none" />
       <div className="hidden lg:block fixed bottom-0 left-0 right-0 h-[25vh] bg-white z-40 pointer-events-none" />
 
+      {/* Fade overlays - positioned outside text column to avoid stacking context issues */}
+      {/* Mobile fade overlay - positioned right below video */}
+      <div
+        className="lg:hidden fixed left-0 right-0 h-20 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none"
+        style={{ top: 'calc(57px + 30vh)' }}
+      />
+
+      {/* Desktop fade overlays - fade text at top and bottom of visible area */}
+      <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '25vh' }} />
+      <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-t from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ bottom: '25vh' }} />
+
       {/* Split Screen Section - starts below nav to make video flush */}
       <div className="lg:flex lg:flex-row pt-[57px]" ref={containerRef}>
         {/* Left Side: Video (Sticky on both mobile and desktop) */}
@@ -415,14 +426,6 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
         <div className="w-full lg:w-[30%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          {/* Fade overlay - only fade the text on mobile at the top, positioned below video */}
-          {/* Using fixed vh values instead of calc() to reduce mobile repaints */}
-          <div className="lg:hidden fixed left-0 right-0 h-16 bg-gradient-to-b from-white via-white/50 to-transparent z-30 pointer-events-none" style={{ top: 'calc(57px + 30vh)', willChange: 'transform', transform: 'translateZ(0)' }} />
-
-          {/* Desktop fade overlays - fade text at top and bottom of visible area */}
-          <div className="hidden lg:block fixed top-[25vh] right-0 w-[30%] h-24 bg-gradient-to-b from-white/90 via-white/60 to-transparent z-30 pointer-events-none" />
-          <div className="hidden lg:block fixed bottom-[25vh] right-0 w-[30%] h-24 bg-gradient-to-t from-white/90 via-white/60 to-transparent z-30 pointer-events-none" />
-
           {/* Top spacing - centers content in middle of screen on desktop */}
           <div className="hidden lg:block" style={{ height: '50vh' }} />
 
