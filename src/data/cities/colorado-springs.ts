@@ -898,6 +898,7 @@ export const colorado_springs: CityData = {
             hours: 'Daily 11am-10pm',
             price: '$$',
             website: 'https://www.oskarblues.com/visit/colorado-springs/',
+            instagram: '@oskarbluescos',
             images: [
               {
                 src: 'https://www.oskarblues.com/wp-content/uploads/COS-Taproom-Interior.jpg',
@@ -937,6 +938,8 @@ export const colorado_springs: CityData = {
             coordinates: { lat: 38.8470, lng: -104.8700 },
             hours: 'Tue-Sat 4pm-midnight',
             price: '$$$',
+            website: 'https://principalsoffice.co/',
+            instagram: '@poativywild',
             images: [
               {
                 src: 'https://principalsofficecos.com/wp-content/uploads/Principals-Office-Seasonal-Cocktail.jpg',
@@ -961,6 +964,7 @@ export const colorado_springs: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
             price: '$$',
             website: 'https://www.phantomcanyon.com',
+            instagram: '@phantomcanyon',
             images: [
               {
                 src: 'https://phantomcanyon.com/wp-content/uploads/Phantom-Canyon-Historic-Interior.jpg',
@@ -1068,6 +1072,7 @@ export const colorado_springs: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-midnight, Sun 10am-9pm',
             price: '$$',
             website: 'https://therabbitholecos.com',
+            instagram: '@therabbithole719',
             images: [
               {
                 src: 'https://therabbitholecos.com/wp-content/uploads/Rabbit-Hole-Burger.jpg',
@@ -1092,6 +1097,7 @@ export const colorado_springs: CityData = {
             hours: 'Tue-Sat 11am-8pm, Sun 11am-6pm',
             price: '$$',
             website: 'https://shugas.com',
+            instagram: '@shugasrestaurant',
             images: [
               {
                 src: 'https://shugas.com/wp-content/uploads/Shugas-Mac-and-Cheese.jpg',
@@ -1116,6 +1122,7 @@ export const colorado_springs: CityData = {
             hours: 'Tue-Sun 11am-9pm',
             price: '$$',
             website: 'https://pizzeriarusticacos.com',
+            instagram: '@pizzeriarustica',
             images: [
               {
                 src: 'https://pizzeriarusticacos.com/wp-content/uploads/Pizzeria-Rustica-Margherita.jpg',
@@ -1140,6 +1147,7 @@ export const colorado_springs: CityData = {
             hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm',
             price: '$$$',
             website: 'https://thefamoussteakhouse.com',
+            instagram: '@famoussteakhouse',
             images: [
               {
                 src: '',
@@ -1159,6 +1167,7 @@ export const colorado_springs: CityData = {
             hours: 'Wed-Sun 8am-3pm',
             price: '$$',
             website: 'https://adamsmountaincafe.com',
+            instagram: '@adamsmountaincafe',
             images: [
               {
                 src: '',

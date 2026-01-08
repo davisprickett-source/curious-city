@@ -737,7 +737,9 @@ export const fargo: CityData = {
             address: '630 1st Ave N, Fargo, ND 58102',
             coordinates: { lat: 46.8776, lng: -96.7894 },
             price: '$$',
+            hours: 'Wed-Thu 11am-9pm, Fri-Sat 11am-midnight, Sun 11am-9pm, Mon-Tue 4pm-9pm',
             website: 'https://wurstfargo.com/',
+            instagram: '@wurstfargo',
             image: {
               src: '',
               alt: 'German beer hall with communal tables and beer flights',
@@ -752,7 +754,9 @@ export const fargo: CityData = {
             address: '226 Broadway N, 2nd Floor, Fargo, ND 58102',
             coordinates: { lat: 46.8766, lng: -96.7897 },
             price: '$',
+            hours: 'Event-based (check calendar)',
             website: 'https://aquariumfargo.com/',
+            instagram: '@aquariumfargo',
             image: {
               src: '',
               alt: 'Intimate live music venue with stage',
@@ -767,7 +771,9 @@ export const fargo: CityData = {
             address: '518 1st Ave N, Fargo, ND 58102',
             coordinates: { lat: 46.8774, lng: -96.7900 },
             price: '$$',
+            hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
             website: 'https://jlbeers.com/518/',
+            instagram: '@jlbeersdowntown',
             image: {
               src: '',
               alt: 'Craft beer taps at bar with neon glow',
@@ -782,7 +788,9 @@ export const fargo: CityData = {
             address: '10 8th St S, Moorhead, MN 56560',
             coordinates: { lat: 46.8734, lng: -96.7688 },
             price: '$',
+            hours: 'Sun-Wed 11am-midnight, Thu-Sat 11am-2am',
             website: 'https://micksoffice.com/',
+            instagram: '@micks_office',
             image: {
               src: '',
               alt: 'Classic neighborhood bar interior',
@@ -806,7 +814,9 @@ export const fargo: CityData = {
             address: '215 Broadway N, Fargo, ND 58102',
             coordinates: { lat: 46.8756, lng: -96.7897 },
             price: '$$$$',
+            hours: 'Daily 7am-midnight (dinner 5pm-10pm)',
             website: 'https://jasperfargo.com/rosewild/',
+            instagram: '@rosewildfargo',
             image: {
               src: '',
               alt: 'Elegant Nordic-inspired farm-to-table dish',
@@ -821,7 +831,9 @@ export const fargo: CityData = {
             address: '1545 University Dr S, Fargo, ND 58103',
             coordinates: { lat: 46.8609, lng: -96.7897 },
             price: '$$',
+            hours: 'Mon-Sat 8am-9pm, Closed Sun',
             website: 'https://lunafargo.com/',
+            instagram: '@luna.fargo',
             image: {
               src: '',
               alt: 'Cozy neighborhood coffee shop and kitchen',
@@ -836,7 +848,9 @@ export const fargo: CityData = {
             address: '520 1st Ave N, Fargo, ND 58102',
             coordinates: { lat: 46.8774, lng: -96.7899 },
             price: '$$',
+            hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-midnight, Closed Sun',
             website: 'https://www.vinyltaco.com/',
+            instagram: '@vinyltaco',
             image: {
               src: '',
               alt: 'Creative fusion tacos in a music-themed space',
@@ -851,7 +865,9 @@ export const fargo: CityData = {
             address: '606 Main Ave, Fargo, ND 58103',
             coordinates: { lat: 46.8774, lng: -96.7892 },
             price: '$',
+            hours: 'Sun-Thu 11am-10pm, Fri-Sat 11am-midnight',
             website: 'https://rhombusguyspizza.com/',
+            instagram: '@rhombuspizza',
             image: {
               src: '',
               alt: 'Detroit-style pizza with thick crispy crust',

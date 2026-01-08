@@ -303,6 +303,23 @@ export const salt_lake_city: CityData = {
             },
           },
           {
+            id: 'slc-curiosity-balloon',
+            type: 'curiosity',
+            category: 'history',
+            title: 'Japanese balloon bombs floated over Utah during WWII',
+            body: 'In 1945, a rancher in Box Elder County spotted a 33-foot balloon drifting over Blue Creek Valley. Sheriff Warren Hyde grabbed the strange device with his bare hands and held on for 45 minutes in the freezing wind while help was summoned. It was a Japanese Fu-Go balloon bomb—one of 9,300 launched across the Pacific on the jet stream. The FBI swore Hyde to silence for decades. The sand in the ballast bags helped identify Japanese launch sites, leading to bombing raids that ended the program.',
+            year: '1945',
+            image: {
+              src: '/Salt-Lake-City/articles/balloon-bomb.png',
+              alt: 'Japanese Fu-Go balloon bomb during WWII',
+            },
+            source: 'National Archives, declassified WWII records',
+            location: {
+              name: 'Blue Creek Valley, Box Elder County',
+              stillExists: true,
+            },
+          },
+          {
             id: 'slc-curiosity-15',
             type: 'curiosity',
             category: 'nature',
@@ -769,7 +786,7 @@ export const salt_lake_city: CityData = {
             id: 'gem-student-1',
             type: 'hidden-gem',
             name: 'The Pie Pizzeria (Underground)',
-            category: 'Restaurant',
+            category: 'restaurant',
             description: 'Every college town has a pizza joint that defines the student experience. At the University of Utah, it\'s The Pie—specifically the underground location on 200 South, where the walls are covered floor-to-ceiling in decades of graffiti, the tables are perpetually sticky, and the slices are big enough to fold in half and eat like a taco. The Pie has been here since 1980, feeding generations of undergrads, grad students, late-night studiers, and hungover Sundance attendees. The decor hasn\'t changed. The recipe hasn\'t changed. The prices have barely changed. You order at the counter, find a seat in the controlled chaos, and eat pizza in a room that smells like it\'s absorbed forty years of cheese and institutional rebellion. It\'s not the best pizza in Salt Lake—it\'s something better: the pizza that Salt Lake remembers.',
             images: [
               {
@@ -810,10 +827,23 @@ export const salt_lake_city: CityData = {
             address: '155 E 200 S, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7648, lng: -111.8867 },
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Elegant cocktail bar with warm amber lighting',
-            },
+            hours: 'Tue-Sat 4pm-1am, Sun-Mon 6pm-1am',
+            website: 'https://barxslc.com/',
+            instagram: '@barxslc',
+            images: [
+              {
+                src: '/salt-lake-city/bars/bar-x-1.png',
+                alt: 'Bar X interior',
+              },
+              {
+                src: '/salt-lake-city/bars/bar-x-2.png',
+                alt: 'Bar X cocktails',
+              },
+              {
+                src: '/salt-lake-city/bars/bar-x-3.png',
+                alt: 'Bar X atmosphere',
+              }
+            ],
           },
           {
             name: 'Beer Bar',
@@ -824,52 +854,96 @@ export const salt_lake_city: CityData = {
             address: '161 E 200 S, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7648, lng: -111.8865 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Craft beer taps lined up at a bar',
-            },
+            hours: 'Daily 12pm-1am',
+            website: 'https://beerbarslc.com/',
+            instagram: '@beerbarslc',
+            images: [
+              {
+                src: '/salt-lake-city/bars/beer-bar-1.png',
+                alt: 'Beer Bar interior',
+              },
+              {
+                src: '/salt-lake-city/bars/beer-bar-2.png',
+                alt: 'Beer Bar taps',
+              }
+            ],
           },
           {
             name: 'White Horse',
             neighborhood: 'Downtown',
-            vibe: 'Speakeasy vibes with creative cocktails',
+            vibe: 'Speakeasy vibes with creative cocktails (temporarily closed)',
             order: 'The seasonal menu — they rotate constantly',
-            why: 'White Horse has the speakeasy aesthetic that other bars try too hard to achieve—dim lighting, leather seats, and bartenders who treat cocktail-making as a craft. The seasonal menus rotate frequently, so regulars never get bored. Small and intimate, which means weekend waits are real. Worth it for the inventive drinks that push beyond the classics while respecting their foundations.',
+            why: 'White Horse has the speakeasy aesthetic that other bars try too hard to achieve—dim lighting, leather seats, and bartenders who treat cocktail-making as a craft. The seasonal menus rotate frequently, so regulars never get bored. Small and intimate, which means weekend waits are real. Worth it for the inventive drinks that push beyond the classics while respecting their foundations. Note: Temporarily closed after an August 2025 fire damaged the block—check their Instagram for reopening updates.',
             address: '325 Main St, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7615, lng: -111.8906 },
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Craft cocktail with artistic garnish',
-            },
+            hours: 'Temporarily closed (was 11am-1am daily)',
+            website: 'https://www.whitehorseslc.com/',
+            instagram: '@whitehorseslc',
+            images: [
+              {
+                src: '/salt-lake-city/bars/white-horse-1.png',
+                alt: 'White Horse interior',
+              },
+              {
+                src: '/salt-lake-city/bars/white-horse-2.png',
+                alt: 'White Horse cocktails',
+              },
+              {
+                src: '/salt-lake-city/bars/white-horse-3.png',
+                alt: 'White Horse bar',
+              },
+              {
+                src: '/salt-lake-city/bars/white-horse-4.png',
+                alt: 'White Horse atmosphere',
+              }
+            ],
           },
           {
             name: 'Whiskey Street',
             neighborhood: 'Downtown',
-            vibe: 'Whiskey-forward with panoramic city views',
+            vibe: 'Whiskey-forward with panoramic city views (temporarily closed)',
             order: 'Something from their 300+ whiskey selection',
-            why: 'Whiskey Street has 300+ whiskeys and the kind of rooftop patio that reminds you Salt Lake is surrounded by mountains. The Wasatch views at sunset, drink in hand, are genuinely spectacular. The whiskey selection is serious—organized by region, age, style—and the bartenders can guide you through it without being pretentious about it. Good for groups, good for dates, good for impressing visitors.',
+            why: 'Whiskey Street has 300+ whiskeys and the kind of rooftop patio that reminds you Salt Lake is surrounded by mountains. The Wasatch views at sunset, drink in hand, are genuinely spectacular. The whiskey selection is serious—organized by region, age, style—and the bartenders can guide you through it without being pretentious about it. Good for groups, good for dates, good for impressing visitors. Note: Temporarily closed after an August 2025 fire—follow their Instagram for reopening updates.',
             address: '323 Main St, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7614, lng: -111.8906 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Whiskey glass with amber liquid on wooden bar',
-            },
+            hours: 'Temporarily closed (was 11am-1am daily)',
+            website: 'https://www.whiskeystreet.com/',
+            instagram: '@whiskey_street_slc',
+            images: [
+              {
+                src: '/salt-lake-city/bars/whiskey-street-1.png',
+                alt: 'Whiskey Street interior',
+              },
+              {
+                src: '/salt-lake-city/bars/whiskey-street-2.png',
+                alt: 'Whiskey Street bar',
+              }
+            ],
           },
           {
-            name: 'Purgatory Bar',
+            name: 'Twilite Lounge',
             neighborhood: 'Downtown',
-            vibe: 'Divey, dark, and unapologetic',
-            order: 'Cheap beer and a shot',
-            why: 'Every city needs a proper dive bar, and in a town of carefully crafted cocktail programs, Purgatory is the dark, unpretentious antidote. Cheap drinks, no frills, and the kind of crowd that\'s been coming here since before downtown got polished. Pool table, jukebox, the occasional local band. This is where Salt Lake service industry workers drink after their shifts.',
-            address: '56 W 400 S, Salt Lake City, UT 84101',
-            coordinates: { lat: 40.7603, lng: -111.8933 },
+            vibe: 'Timewarp dive bar since 1947',
+            order: 'Cheap beer — whatever\'s coldest',
+            why: 'Twilite has been pouring cheap drinks in downtown Salt Lake since 1947, which makes it older than the interstate highway system. The interior is a throwback to the \'70s—wood paneling, vintage beer signs, booths worn smooth by decades of elbows—and the prices haven\'t caught up with inflation. This is where you go when you want a drink without a story behind it, a bar where nobody\'s trying to impress anyone. Cash is preferred, the jukebox is excellent, and the bartenders have seen everything. Pure, unreconstructed dive bar energy in a city increasingly full of $16 cocktails.',
+            address: '347 E 200 S, Salt Lake City, UT 84111',
+            coordinates: { lat: 40.7648, lng: -111.8823 },
             price: '$',
-            image: {
-              src: '',
-              alt: 'Dark dive bar interior with neon signs',
-            },
+            hours: 'Mon-Sat 1pm-2am, Sun 11am-12am',
+            website: 'https://twilitelounge.com/',
+            instagram: '@slctwilitelounge',
+            images: [
+              {
+                src: '/salt-lake-city/bars/twilite-1.png',
+                alt: 'Twilite Lounge interior',
+              },
+              {
+                src: '/salt-lake-city/bars/twilite-2.png',
+                alt: 'Twilite Lounge bar',
+              }
+            ],
           }
         ],
       },
@@ -886,9 +960,30 @@ export const salt_lake_city: CityData = {
             vibe: 'Minimalist roaster with serious sourcing',
             order: 'Pour-over with whatever\'s single origin',
             why: 'Publik brought third-wave coffee culture to Salt Lake before the rest of the city caught on. They source directly from farms, roast in small batches, and the baristas can tell you exactly where your beans came from and how they were processed. The minimalist industrial space in 9th and 9th is their flagship—a neighborhood perfect for coffee-shop culture. This is where Salt Lake\'s coffee obsession began.',
-            address: '975 S 900 E, Salt Lake City, UT 84105',
-            coordinates: { lat: 40.7514, lng: -111.8611 },
+            address: '975 S West Temple, Salt Lake City, UT 84101',
+            coordinates: { lat: 40.7514, lng: -111.8995 },
             price: '$$',
+            hours: 'Mon-Fri 7am-6pm, Sat-Sun 8am-6pm',
+            website: 'https://publikcoffee.com/',
+            instagram: '@publikcoffee',
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/publik-01.png',
+                alt: 'Publik Coffee interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-2.png',
+                alt: 'Publik Coffee bar',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-3.png',
+                alt: 'Publik Coffee drinks',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-4.png',
+                alt: 'Publik Coffee atmosphere',
+              }
+            ],
           },
           {
             name: 'Café on 1st',
@@ -896,29 +991,75 @@ export const salt_lake_city: CityData = {
             vibe: 'Cozy neighborhood spot with food',
             order: 'Breakfast burrito and a drip coffee',
             why: 'Café on 1st is the neighborhood coffee shop that Capitol Hill needed—the kind of place where regulars have "usual" orders and the staff knows your name within a few visits. The breakfast burritos are legitimately good, the coffee is solid without trying too hard, and the cozy space feels like an extension of someone\'s living room. This is local coffee culture at its most genuine.',
-            address: '62 E 1st Ave, Salt Lake City, UT 84103',
+            address: '39 I St, Salt Lake City, UT 84103',
             coordinates: { lat: 40.7781, lng: -111.8877 },
             price: '$',
+            hours: 'Mon-Fri 7am-2pm, Sat-Sun 8:30am-2:30pm',
+            instagram: '@cafeon1st',
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/cafe-on-1st-1.png',
+                alt: 'Café on 1st interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/cafe-on-1st-2.png',
+                alt: 'Café on 1st food',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/cafe-on-1st-3.png',
+                alt: 'Café on 1st atmosphere',
+              }
+            ],
           },
           {
             name: '3 Cups',
-            neighborhood: 'Sugar House',
+            neighborhood: 'Holladay',
             vibe: 'Funky, colorful, good energy',
             order: 'Their house chai is excellent',
-            why: '3 Cups doesn\'t care about minimalist aesthetics or third-wave pretensions. The space is colorful, eclectic, and covered in art. The house chai is famously excellent—spiced right and made from scratch. The energy is creative and funky, matching Sugar House\'s personality. If the sterile modern coffee shop isn\'t your vibe, 3 Cups is the delightfully weird alternative.',
-            address: '2168 S Highland Dr, Salt Lake City, UT 84106',
-            coordinates: { lat: 40.7265, lng: -111.8578 },
+            why: '3 Cups doesn\'t care about minimalist aesthetics or third-wave pretensions. The space is colorful, eclectic, and covered in art. The house chai is famously excellent—spiced right and made from scratch. The energy is creative and funky, a family-owned spot that\'s been an inclusive community hub since 2014. If the sterile modern coffee shop isn\'t your vibe, 3 Cups is the delightfully weird alternative.',
+            address: '4670 S 2300 E, Holladay, UT 84117',
+            coordinates: { lat: 40.6869, lng: -111.8267 },
             price: '$',
+            hours: 'Mon 6am-5pm, Tue-Thu 6am-9pm, Fri-Sat 6am-10pm, Sun 7am-5pm',
+            website: 'https://www.3cups.coffee/',
+            instagram: '@3_cups_coffee',
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/3-cups-1.png',
+                alt: '3 Cups interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/3-cups-2.png',
+                alt: '3 Cups colorful decor',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/3-cups-3.png',
+                alt: '3 Cups atmosphere',
+              }
+            ],
           },
           {
             name: 'Blue Copper Coffee',
-            neighborhood: 'Downtown',
+            neighborhood: 'Central Ninth',
             vibe: 'Third-wave serious with great design',
             order: 'Whatever\'s on espresso',
-            why: 'Blue Copper takes coffee seriously without being insufferable about it. The downtown space is architecturally stunning—all clean lines and natural light—and the espresso program is dialed in tight. They roast their own beans and train their baristas properly. It\'s the kind of place where you can actually work for hours without being judged, and the coffee keeps getting better.',
-            address: '161 E Broadway, Salt Lake City, UT 84111',
-            coordinates: { lat: 40.7615, lng: -111.8859 },
+            why: 'Blue Copper takes coffee seriously without being insufferable about it. One of Salt Lake\'s first third-wave roasters since 2013, the space is architecturally stunning—all clean lines and natural light—and the espresso program is dialed in tight. They roast their own beans and train their baristas properly. It\'s the kind of place where you can actually work for hours without being judged, and the coffee keeps getting better.',
+            address: '179 W 900 S, Salt Lake City, UT 84101',
+            coordinates: { lat: 40.7615, lng: -111.8935 },
             price: '$$',
+            hours: 'Mon-Fri 8am-3pm, Sat-Sun 9am-4pm',
+            website: 'https://bluecopperslc.com/',
+            instagram: '@bluecoppercoffee',
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/blue-copper-1.png',
+                alt: 'Blue Copper Coffee interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/blue-copper-2.png',
+                alt: 'Blue Copper Coffee bar',
+              }
+            ],
           }
         ],
       },
@@ -930,20 +1071,6 @@ export const salt_lake_city: CityData = {
         intro: 'Salt Lake\'s food scene has transformed from potluck basics to genuine destination dining. James Beard nominations, immigrant-run kitchens bringing flavors from across the globe, and farm-to-table spots taking advantage of Utah\'s surprisingly good growing conditions. The funeral potatoes are still around—but now they\'re competing with real contenders.',
         spots: [
           {
-            name: 'Current Fish & Oyster',
-            neighborhood: 'Downtown',
-            vibe: 'Seafood-focused with craft cocktails',
-            order: 'Whatever\'s fresh from the raw bar',
-            why: 'A seafood restaurant in the middle of the Intermountain West shouldn\'t work, but Current makes it work. They fly fish in daily—actually daily—and the raw bar is as good as you\'d find on either coast. The cocktail program is equally serious. It\'s the kind of restaurant that surprises people who assume Salt Lake is all funeral potatoes and Jell-O salad. Reservations recommended.',
-            address: '279 E 300 S, Salt Lake City, UT 84111',
-            coordinates: { lat: 40.7639, lng: -111.8845 },
-            price: '$$$',
-            image: {
-              src: '',
-              alt: 'Fresh oysters on ice with lemon wedges',
-            },
-          },
-          {
             name: 'Red Iguana',
             neighborhood: 'North Temple',
             vibe: 'Legendary Mexican with seven moles',
@@ -952,10 +1079,32 @@ export const salt_lake_city: CityData = {
             address: '736 W North Temple, Salt Lake City, UT 84116',
             coordinates: { lat: 40.7716, lng: -111.9091 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Rich Mexican mole sauce over enchiladas',
-            },
+            hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 11am-9pm',
+            website: 'https://www.rediguana.com/',
+            instagram: '@rediguanarestaurant',
+            images: [
+              {
+                src: '/salt-lake-city/restaurants/red-iguana-1.png',
+                alt: 'Red Iguana restaurant exterior',
+              },
+              {
+                src: '/salt-lake-city/restaurants/red-iguana-2.png',
+                alt: 'Red Iguana mole dishes',
+              },
+              {
+                src: '/salt-lake-city/restaurants/red-iguana-3.png',
+                alt: 'Red Iguana interior dining room',
+              },
+              {
+                src: '/salt-lake-city/restaurants/red-iguana-4.png',
+                alt: 'Red Iguana Mexican food',
+              },
+              {
+                src: '/salt-lake-city/restaurants/red-iguana-5.png',
+                alt: 'Red Iguana atmosphere',
+              }
+            ],
+            menuImage: { src: '/salt-lake-city/restaurants/red-iguana-menu.png', alt: 'Red Iguana menu' },
           },
           {
             name: 'HSL',
@@ -966,10 +1115,28 @@ export const salt_lake_city: CityData = {
             address: '418 E 200 S, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7652, lng: -111.8821 },
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Elegant farm-to-table dish with seasonal vegetables',
-            },
+            hours: 'Tue-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Closed Sun-Mon',
+            website: 'https://www.hslrestaurant.com/',
+            instagram: '@hslrestaurant',
+            images: [
+              {
+                src: '/salt-lake-city/restaurants/HSL-1.png',
+                alt: 'HSL restaurant interior',
+              },
+              {
+                src: '/salt-lake-city/restaurants/HSL-2.png',
+                alt: 'HSL farm-to-table dishes',
+              },
+              {
+                src: '/salt-lake-city/restaurants/HSL-3.png',
+                alt: 'HSL seasonal cuisine',
+              },
+              {
+                src: '/salt-lake-city/restaurants/HSL-4.png',
+                alt: 'HSL dining atmosphere',
+              }
+            ],
+            menuImage: { src: '/salt-lake-city/restaurants/HSL-menu.png', alt: 'HSL menu' },
           },
           {
             name: 'Pretty Bird',
@@ -980,10 +1147,28 @@ export const salt_lake_city: CityData = {
             address: '146 S Regent St, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7649, lng: -111.8909 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Crispy fried chicken sandwich with pickles',
-            },
+            hours: 'Mon-Tue 11am-9pm, Wed-Sat 11am-10pm, Sun 11am-4pm',
+            website: 'https://prettybirdchicken.com/',
+            instagram: '@prettybirdchicken',
+            images: [
+              {
+                src: '/salt-lake-city/restaurants/pretrty-bird-1.png',
+                alt: 'Pretty Bird restaurant',
+              },
+              {
+                src: '/salt-lake-city/restaurants/pretty-bird-2.png',
+                alt: 'Pretty Bird hot chicken sandwich',
+              },
+              {
+                src: '/salt-lake-city/restaurants/pretty-bird-3.png',
+                alt: 'Pretty Bird interior',
+              },
+              {
+                src: '/salt-lake-city/restaurants/pretty-bird-4.png',
+                alt: 'Pretty Bird dining atmosphere',
+              }
+            ],
+            menuImage: { src: '/salt-lake-city/restaurants/pretty-bird-menu.png', alt: 'Pretty Bird menu' },
           },
           {
             name: 'Takashi',
@@ -994,10 +1179,28 @@ export const salt_lake_city: CityData = {
             address: '18 W Market St, Salt Lake City, UT 84101',
             coordinates: { lat: 40.7623, lng: -111.8910 },
             price: '$$$',
-            image: {
-              src: '',
-              alt: 'Fresh sushi platter with salmon and tuna',
-            },
+            hours: 'Mon-Fri 11:30am-2pm & 5:30pm-10pm, Sat 5pm-10pm, Closed Sun',
+            website: 'https://www.takashisushi.com/',
+            instagram: '@takashi_slc',
+            images: [
+              {
+                src: '/salt-lake-city/restaurants/takashi-1.png',
+                alt: 'Takashi restaurant interior',
+              },
+              {
+                src: '/salt-lake-city/restaurants/takashi-2.png',
+                alt: 'Takashi sushi platter',
+              },
+              {
+                src: '/salt-lake-city/restaurants/takashi-3.png',
+                alt: 'Takashi omakase experience',
+              },
+              {
+                src: '/salt-lake-city/restaurants/takashi-4.png',
+                alt: 'Takashi dining atmosphere',
+              }
+            ],
+            menuImage: { src: '/salt-lake-city/restaurants/takashi-menu.png', alt: 'Takashi menu' },
           }
         ],
       },
@@ -1163,10 +1366,24 @@ export const salt_lake_city: CityData = {
             price: '$$',
             website: 'https://publikcoffee.com',
             instagram: '@publikcoffee',
-            image: {
-              src: '',
-              alt: 'Third-wave pour-over coffee preparation',
-            },
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/publik-01.png',
+                alt: 'Publik Coffee interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-2.png',
+                alt: 'Publik Coffee bar',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-3.png',
+                alt: 'Publik Coffee drinks',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/publik-4.png',
+                alt: 'Publik Coffee atmosphere',
+              }
+            ],
           },
           {
             name: 'Caffe d\'Bolla',
@@ -1197,10 +1414,20 @@ export const salt_lake_city: CityData = {
             price: '$$',
             website: 'https://sugarhousecoffee.com',
             instagram: '@sugarhousecoffee',
-            image: {
-              src: '',
-              alt: 'Cozy bohemian coffee shop with live music setup',
-            },
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/sugarhouse-1.png',
+                alt: 'Sugar House Coffee interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/sugarhouse-2.png',
+                alt: 'Sugar House Coffee atmosphere',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/sugarhouse-3.png',
+                alt: 'Sugar House Coffee vibe',
+              }
+            ],
           },
           {
             name: 'Jack Mormon Coffee',
@@ -1213,10 +1440,20 @@ export const salt_lake_city: CityData = {
             hours: '7am-6pm daily',
             price: '$',
             instagram: '@jackmormoncoffee',
-            image: {
-              src: '',
-              alt: 'Classic coffee cup in neighborhood cafe setting',
-            },
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/jack-mormon-1.png',
+                alt: 'Jack Mormon Coffee interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/jack-mormon-2.png',
+                alt: 'Jack Mormon Coffee drinks',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/jack-mormon-3.png',
+                alt: 'Jack Mormon Coffee atmosphere',
+              }
+            ],
           },
           {
             name: 'La Barba',
@@ -1230,10 +1467,16 @@ export const salt_lake_city: CityData = {
             price: '$$',
             website: 'https://labarbacoffee.com',
             instagram: '@labarbacoffee',
-            image: {
-              src: '',
-              alt: 'Light-filled modern coffee shop interior',
-            },
+            images: [
+              {
+                src: '/salt-lake-city/coffee-shops/barba-1.png',
+                alt: 'La Barba interior',
+              },
+              {
+                src: '/salt-lake-city/coffee-shops/barba-2.png',
+                alt: 'La Barba coffee bar',
+              }
+            ],
           }
         ],
       },
@@ -1826,6 +2069,111 @@ export const salt_lake_city: CityData = {
               }
             ],
           }
+        ],
+      },
+      {
+        id: 'slc-lost-loved',
+        type: 'section',
+        title: 'Lost & Loved',
+        teaser: 'The places Salt Lake still mourns',
+        intro: 'Salt Lake City has lost more than its share of beloved institutions—victims of lease disputes, family feuds, fires, and the relentless march of development. These are the places that still come up in conversation, the ones that make longtime residents sigh and say "remember when." Some burned. Some were demolished for condos. Some just couldn\'t survive the economics. All of them left holes that haven\'t quite been filled.',
+        items: [
+          {
+            id: 'lost-1',
+            type: 'lost-and-loved',
+            name: 'Current Fish & Oyster',
+            category: 'restaurant',
+            neighborhood: 'Downtown',
+            yearsOpen: '2014–2024',
+            description: 'A seafood restaurant in the middle of the Intermountain West shouldn\'t have worked—but Current made it work for a decade. They flew fish in daily, actually daily, and the raw bar rivaled anything on either coast. The cocktail program was equally serious, the space was sleek without being cold, and reservations were genuinely hard to get.',
+            whyMissed: 'Current proved Salt Lake could support destination dining at a national level. The oysters were legendary.',
+            images: [
+              {
+                src: '',
+                alt: 'Current Fish & Oyster restaurant interior',
+              }
+            ],
+          },
+          {
+            id: 'lost-2',
+            type: 'lost-and-loved',
+            name: 'The Zephyr Club',
+            category: 'music-venue',
+            neighborhood: 'Downtown',
+            yearsOpen: '1983–2003',
+            description: 'At its peak in the late \'80s and early \'90s, The Zephyr was the epicenter of Salt Lake\'s live music scene—a 400-capacity room with art deco details, a gleaming metal door framed by glass blocks, and acoustics that made every seat feel close to the stage. Warren Zevon played here. Robert Palmer. Countless local blues and rock acts that defined a generation.',
+            whyMissed: 'Nothing has filled the void left by The Zephyr. It was where Salt Lake\'s music scene happened.',
+            images: [
+              {
+                src: '',
+                alt: 'The Zephyr Club exterior with art deco facade',
+              }
+            ],
+          },
+          {
+            id: 'lost-3',
+            type: 'lost-and-loved',
+            name: 'The Training Table',
+            category: 'restaurant',
+            neighborhood: 'Various',
+            yearsOpen: '1977–2016',
+            description: 'For 39 years, The Training Table was Utah\'s burger institution—not because the burgers were fancy, but because the experience was perfect. You\'d slide into a booth, pick up the telephone mounted on your table, and call in your order. The cheese fries with dipping sauce were legendary.',
+            whyMissed: 'Those cheese fries. That dipping sauce. Utahns who moved away still dream about them.',
+            images: [
+              {
+                src: '',
+                alt: 'The Training Table restaurant booth with table phone',
+              }
+            ],
+          },
+          {
+            id: 'lost-4',
+            type: 'lost-and-loved',
+            name: 'ZCMI Center & Crossroads Plaza',
+            category: 'shop',
+            neighborhood: 'Downtown',
+            yearsOpen: '1975–2007',
+            description: 'Before City Creek Center, downtown Salt Lake had two malls facing each other across Main Street. ZCMI was Utah\'s first department store, founded in 1868. Crossroads opened in 1978, anchored by Nordstrom. Together, they were downtown—where generations bought school clothes and saw Santa.',
+            whyMissed: 'The democratic chaos of a real mall, replaced by curated retail that feels more like a temple than a town square.',
+            images: [
+              {
+                src: '',
+                alt: 'ZCMI Center mall interior before demolition',
+              }
+            ],
+          },
+          {
+            id: 'lost-5',
+            type: 'lost-and-loved',
+            name: 'Saltair Resort',
+            category: 'entertainment',
+            neighborhood: 'Great Salt Lake',
+            yearsOpen: '1893–1970',
+            description: 'They called it the "Coney Island of the West"—a Moorish fantasy palace rising from the Great Salt Lake, built in 1893. At its peak in the 1920s, Saltair drew half a million visitors a year. The Beach Boys immortalized it in their 1965 song "Salt Lake City."',
+            whyMissed: 'It burned twice and never came back. Today only wooden pilings remain, stretching into the lake like a skeleton.',
+            images: [
+              {
+                src: '',
+                alt: 'Historic Saltair Resort on the Great Salt Lake',
+              }
+            ],
+          },
+          {
+            id: 'lost-6',
+            type: 'lost-and-loved',
+            name: 'Cedars of Lebanon',
+            category: 'restaurant',
+            neighborhood: 'Downtown',
+            yearsOpen: '1981–2019',
+            description: 'For 38 years, Cedars of Lebanon was Utah\'s first and best introduction to Eastern Mediterranean cuisine—Armenian, Lebanese, Greek, Moroccan, all under one roof at a time when Salt Lake\'s idea of ethnic food was Taco Bell. The mezze platters were legendary.',
+            whyMissed: 'For immigrants from the Middle East, Cedars was a taste of home. For everyone else, it was an education.',
+            images: [
+              {
+                src: '',
+                alt: 'Cedars of Lebanon restaurant exterior',
+              }
+            ],
+          },
         ],
       }
     ],

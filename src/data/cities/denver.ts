@@ -776,7 +776,9 @@ export const denver: CityData = {
             address: '3160 Tejon St, Denver, CO 80211',
             coordinates: { lat: 39.7603, lng: -105.0131 },
             price: '$$$',
+            hours: 'Daily 5pm-1am',
             website: 'https://williamsandgraham.com/',
+            instagram: '@williamsandgraham',
             image: {
               src: '/denver/hidden-gems/speakeasy-2.png',
               alt: 'Williams & Graham intimate speakeasy bar with warm lighting and craft cocktails',
@@ -791,7 +793,9 @@ export const denver: CityData = {
             address: '1280 25th St, Denver, CO 80205',
             coordinates: { lat: 39.7553, lng: -104.9872 },
             price: '$$$',
+            hours: 'Daily 5pm-12am',
             website: 'https://www.deathandcompany.com/',
+            instagram: '@deathandcompany',
             image: {
               src: '',
               alt: 'Sophisticated cocktail bar interior with mood lighting',
@@ -806,7 +810,9 @@ export const denver: CityData = {
             address: '1543 Champa St, Denver, CO 80202',
             coordinates: { lat: 39.7469, lng: -104.9939 },
             price: '$$$',
+            hours: 'Sun-Wed 5pm-11pm, Thu-Sat 5pm-1am',
             website: 'https://www.unionlodge1.com/',
+            instagram: '@unionlodge1',
             image: {
               src: '',
               alt: 'Historic cocktail bar with vintage decor and classic drinks',
@@ -821,7 +827,9 @@ export const denver: CityData = {
             address: '2920 Larimer St, Denver, CO 80205',
             coordinates: { lat: 39.7593, lng: -104.9798 },
             price: '$$',
-            website: 'https://rfratiobeerworks.com/',
+            hours: 'Mon-Wed 12pm-11pm, Thu-Fri 12pm-12am, Sat 11am-12am, Sun 11am-11pm',
+            website: 'https://ratiobeerworks.com/',
+            instagram: '@ratiobeerworks',
             image: {
               src: '/denver/curiosities/breweries-1.png',
               alt: 'Ratio Beerworks craft brewery taproom with industrial RiNo decor',
@@ -836,7 +844,9 @@ export const denver: CityData = {
             address: '2550 15th St, Denver, CO 80211',
             coordinates: { lat: 39.7597, lng: -105.0158 },
             price: '$$$',
-            website: 'https://www.almalohidenver.com/',
+            hours: 'Daily 4pm-12am',
+            website: 'https://www.mezcaleriaalma.com/',
+            instagram: '@mezcaleriaalma',
             image: {
               src: '',
               alt: 'Mezcal bar with agave spirits and warm lighting',
@@ -860,7 +870,9 @@ export const denver: CityData = {
             address: '3330 Brighton Blvd #201, Denver, CO 80216',
             coordinates: { lat: 39.7679, lng: -104.9749 },
             price: '$$$',
+            hours: 'Mon-Fri 5pm-10pm, Sat-Sun 10:30am-2pm & 5pm-10pm',
             website: 'https://www.eatwithsafta.com/',
+            instagram: '@eatwithsafta',
             image: {
               src: '',
               alt: 'Israeli mezze spread with hummus and laffa bread',
@@ -875,7 +887,9 @@ export const denver: CityData = {
             address: '3500 Larimer St, Denver, CO 80205',
             coordinates: { lat: 39.7634, lng: -104.9745 },
             price: '$$',
+            hours: 'Mon-Sat 5pm-10pm, closed Sun',
             website: 'https://hopalleydenver.com/',
+            instagram: '@hopalleydenver',
             image: {
               src: '',
               alt: 'Sichuan-style Chinese cuisine with bold flavors',
@@ -890,7 +904,9 @@ export const denver: CityData = {
             address: '1801 California St, Denver, CO 80202',
             coordinates: { lat: 39.7478, lng: -104.9917 },
             price: '$$$$',
+            hours: 'Mon 4pm-10pm, Tue-Thu 11am-2pm & 4pm-10pm, Fri-Sat 4pm-11pm, Sun 4pm-10pm',
             website: 'https://www.guardandgrace.com/',
+            instagram: '@guardandgracesteakhouse',
             image: {
               src: '/denver/hidden-gems/steakhouse-2.png',
               alt: 'Guard and Grace premium dry-aged steak with elegant presentation',
@@ -905,7 +921,9 @@ export const denver: CityData = {
             address: '4058 Tejon St, Denver, CO 80211',
             coordinates: { lat: 39.7720, lng: -105.0139 },
             price: '$$$$',
+            hours: 'Tue-Thu 5pm-8pm, Fri-Sun 5pm-8:30pm, closed Mon',
             website: 'https://www.thewolfstailor.com/',
+            instagram: '@thewolfstailor',
             image: {
               src: '',
               alt: 'Artisanal tasting menu dish with seasonal ingredients',
@@ -920,7 +938,9 @@ export const denver: CityData = {
             address: '3300 West 32nd Ave, Denver, CO 80211',
             coordinates: { lat: 39.7583, lng: -105.0344 },
             price: '$$',
+            hours: 'Mon-Thu 4pm-9pm, Fri-Sun 11am-9pm',
             website: 'https://www.tacostequilawhiskey.com/',
+            instagram: '@ttw_denver',
             image: {
               src: '',
               alt: 'Authentic street tacos with fresh toppings',

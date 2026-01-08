@@ -766,7 +766,9 @@ export const portland: CityData = {
             address: '5424 NE 30th Ave, Portland, OR 97211',
             coordinates: { lat: 45.5592, lng: -122.6319 },
             price: '$$$',
+            hours: 'Daily 5pm-12am',
             website: 'http://expatriatepdx.com/',
+            instagram: '@expatriatepdx',
             image: {
               src: '',
               alt: 'Intimate cocktail bar with Asian-inspired drinks',
@@ -781,7 +783,9 @@ export const portland: CityData = {
             address: '1124 SW Alder St, Portland, OR 97205',
             coordinates: { lat: 45.5206, lng: -122.6814 },
             price: '$$$$',
+            hours: 'Tue-Thu 4pm-10pm, Fri-Sat 4pm-11pm',
             website: 'https://mwlpdx.com/',
+            instagram: '@multnomahwhiskeylibrary',
             image: {
               src: '',
               alt: 'Vintage whiskey library with brick walls and rare bottles',
@@ -796,7 +800,9 @@ export const portland: CityData = {
             address: '2733 NE Broadway, Portland, OR 97232',
             coordinates: { lat: 45.5370, lng: -122.6378 },
             price: '$$$',
+            hours: 'Daily 4pm-12am',
             website: 'https://www.halepele.com/',
+            instagram: '@halepele',
             image: {
               src: '',
               alt: 'Tiki bar with exotic cocktails and tropical decor',
@@ -811,7 +817,9 @@ export const portland: CityData = {
             address: '1011 NE Alberta St, Portland, OR 97211',
             coordinates: { lat: 45.5589, lng: -122.6494 },
             price: '$$',
+            hours: 'Mon-Thu 12pm-12am, Fri 12pm-1am, Sat 10am-1am, Sun 10am-12am',
             website: 'https://thebyeandbye.com/',
+            instagram: '@byeandbyeportland',
             image: {
               src: '',
               alt: 'Vegan bar with spacious patio on Alberta Street',
@@ -826,7 +834,9 @@ export const portland: CityData = {
             address: '204 SE Oak St, Portland, OR 97214',
             coordinates: { lat: 45.5208, lng: -122.6594 },
             price: '$$',
+            hours: 'Mon 12pm-4pm, Tue-Thu 12pm-7pm, Fri-Sat 12pm-8pm',
             website: 'https://www.producerowcafe.com/',
+            instagram: '@producerowpdx',
             image: {
               src: '',
               alt: 'Historic craft beer bar with extensive tap selection',
@@ -850,7 +860,9 @@ export const portland: CityData = {
             address: '734 E Burnside St, Portland, OR 97214',
             coordinates: { lat: 45.5231, lng: -122.6575 },
             price: '$$$',
+            hours: 'Daily 4pm-10pm',
             website: 'https://www.canardrestaurant.com/',
+            instagram: '@canard_restaurant',
             image: {
               src: '',
               alt: 'French-inspired wine bar with award-winning list',
@@ -865,7 +877,9 @@ export const portland: CityData = {
             address: '7937 SE Stark St, Portland, OR 97215',
             coordinates: { lat: 45.5190, lng: -122.5824 },
             price: '$$',
+            hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Sun 4:30pm-9pm',
             website: 'https://www.yaowaratpdx.com/',
+            instagram: '@yaowaratpdx',
             image: {
               src: '',
               alt: 'Thai-Chinese street food from Bangkok Chinatown',
@@ -880,7 +894,9 @@ export const portland: CityData = {
             address: '2337 E Burnside St, Portland, OR 97214',
             coordinates: { lat: 45.5231, lng: -122.6389 },
             price: '$$',
+            hours: 'Daily 8:30am-2pm & 4:30pm-9pm',
             website: 'https://screendoorrestaurant.com/',
+            instagram: '@screendoorrestaurant',
             image: {
               src: '',
               alt: 'Southern fried chicken and waffles brunch',
@@ -895,7 +911,9 @@ export const portland: CityData = {
             address: '1212 SE Hawthorne Blvd, Portland, OR 97214',
             coordinates: { lat: 45.5119, lng: -122.6534 },
             price: '$$',
+            hours: 'Daily 11am-10pm',
             website: 'https://www.lardosandwiches.com/',
+            instagram: '@lardopdx',
             image: {
               src: '',
               alt: 'Gourmet pork sandwiches and dirty fries',
@@ -910,7 +928,9 @@ export const portland: CityData = {
             address: '3377 SE Division St, Portland, OR 97202',
             coordinates: { lat: 45.5047, lng: -122.6306 },
             price: '$$$',
+            hours: 'Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm',
             website: 'https://avagenes.com/',
+            instagram: '@avagenes',
             image: {
               src: '',
               alt: 'House-made pasta and seasonal Italian dishes',

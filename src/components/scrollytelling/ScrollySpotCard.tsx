@@ -17,7 +17,7 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
   const hasMultipleLocations = Boolean(spot.locations && spot.locations.length > 0)
 
   return (
-    <div className="bg-white/95 backdrop-blur-xl border border-neutral-200 rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden">
+    <div className="bg-white/95 backdrop-blur-xl border border-neutral-200 rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden contain-layout">
       {/* Navigation Controls Bar */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-200 bg-neutral-50">
         {/* Close button - goes back to map overview */}

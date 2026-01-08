@@ -28,9 +28,10 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   if (!images || images.length === 0) return null
 
   // Single image - no carousel needed
+  // Use consistent aspect ratio to prevent layout shift during resize
   if (images.length === 1) {
     return (
-      <div className={`relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 ${className}`}>
+      <div className={`relative aspect-[16/10] rounded-lg overflow-hidden bg-neutral-100 contain-layout ${className}`}>
         <img
           src={images[0].src}
           alt={images[0].alt}
@@ -48,8 +49,9 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   return (
     <div className={`relative ${className}`}>
       {/* Main image container - click to advance */}
+      {/* Use consistent aspect ratio to prevent layout shift during resize */}
       <div
-        className="relative aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer group"
+        className="relative aspect-[16/10] rounded-lg overflow-hidden bg-neutral-100 cursor-pointer group contain-layout"
         onClick={goToNext}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

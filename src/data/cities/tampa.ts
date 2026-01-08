@@ -939,6 +939,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9369, lng: -82.4808 },
             price: '$$$',
             website: 'https://www.jekyllhydepark.com/',
+            instagram: '@jekyllhydepark',
+            hours: 'Tue-Wed 5pm-11pm, Thu-Sat 5pm-1am, closed Sun-Mon',
             image: {
               src: '',
               alt: 'Sophisticated speakeasy with intimate lighting',
@@ -954,6 +956,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9601, lng: -82.4445 },
             price: '$$',
             website: 'https://www.thebricksybor.com/',
+            instagram: '@thebricksybor',
+            hours: 'Wed-Thu 4pm-12am, Fri 4pm-1am, Sat 12pm-1am, Sun 12pm-9pm, closed Mon-Tue',
             image: {
               src: '',
               alt: 'Open-air corner bar in historic Ybor City',
@@ -969,6 +973,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9856, lng: -82.4589 },
             price: '$$',
             website: 'https://independentbartampa.com/',
+            instagram: '@indieseminoleheights',
+            hours: 'Mon-Thu 11am-12am, Fri-Sat 11am-1am, Sun 11am-12am',
             image: {
               src: '',
               alt: 'Belgian beer hall in converted gas station',
@@ -984,6 +990,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9625, lng: -82.4437 },
             price: '$$',
             website: 'https://www.cigarcitycider.com/',
+            instagram: '@cigarcitycider_mead',
+            hours: 'Wed-Fri 5pm-12am, Sat-Sun 12pm-12am, closed Mon-Tue',
             image: {
               src: '',
               alt: 'Craft cider flight with Florida ingredients',
@@ -998,6 +1006,9 @@ export const tampa: CityData = {
             address: '1410 E 7th Ave, Tampa, FL 33605',
             coordinates: { lat: 27.9600, lng: -82.4420 },
             price: '$$$',
+            website: 'https://roaston7th.com/madame-fortune/',
+            instagram: '@madamefortunetpa',
+            hours: 'Wed-Thu 5pm-10pm, Fri-Sat 4pm-1am, Sun 4pm-10pm, closed Mon-Tue',
             image: {
               src: '',
               alt: 'Intimate speakeasy with craft cocktails and desserts',
@@ -1022,6 +1033,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9980, lng: -82.4588 },
             price: '$$$',
             website: 'http://www.roosterandthetill.com/',
+            instagram: '@roosterandthetill',
+            hours: 'Wed-Thu 5pm-9pm, Fri-Sat 5pm-10pm, closed Sun-Tue',
             image: {
               src: '',
               alt: 'Farm-to-table modern American cuisine',
@@ -1037,6 +1050,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9689, lng: -82.4437 },
             price: '$',
             website: 'https://www.lasegundabakery.com/',
+            instagram: '@lasegundabakery',
+            hours: 'Daily 6:30am-3pm',
             image: {
               src: '',
               alt: 'Fresh Cuban bread and pastries from historic bakery',
@@ -1052,6 +1067,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9369, lng: -82.4808 },
             price: '$$$$',
             website: 'https://bernssteakhouse.com/',
+            instagram: '@bernssteakhouse',
+            hours: 'Tue-Thu 5pm-10pm, Fri-Sat 5pm-11pm, Sun 5pm-10pm, closed Mon',
             image: {
               src: '',
               alt: 'Legendary dry-aged steak from iconic steakhouse',
@@ -1067,6 +1084,8 @@ export const tampa: CityData = {
             coordinates: { lat: 27.9567, lng: -82.4594 },
             price: '$$$',
             website: 'https://ulele.com/',
+            instagram: '@uleletampa',
+            hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
             image: {
               src: '',
               alt: 'Charbroiled oysters from riverside restaurant',
@@ -1081,6 +1100,7 @@ export const tampa: CityData = {
             address: '3904 N Armenia Ave, Tampa, FL 33607',
             coordinates: { lat: 27.9633, lng: -82.4806 },
             website: 'https://www.westtampasandwichshoprestaurant.com/',
+            hours: 'Mon-Sat 6am-3pm, closed Sun',
             price: '$',
             image: {
               src: '',

@@ -100,6 +100,16 @@ const FRAME_COUNTS: Record<string, number> = {
   'dallas-14': 95,
   'dallas-15': 125,
   'dallas-16': 125,
+  // Salt Lake City sequences
+  'slc-1': 125,
+  'slc-2': 125,
+  'slc-3': 125,
+  'slc-4': 125,
+  'slc-5': 84,
+  'slc-6': 125,
+  'slc-7': 125,
+  'slc-8': 125,
+  'slc-9': 100,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
@@ -158,11 +168,12 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'phoenix': 'phoenix',
       'raleigh': 'raleigh',
       'portland': 'portland',
-      'dallas': 'dallas'
+      'dallas': 'dallas',
+      'slc': 'salt-lake-city'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // Tampa, Raleigh, Portland, and Dallas use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
-    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas'
+    // Tampa, Raleigh, Portland, Dallas, and SLC use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
+    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas' || city === 'salt-lake-city'
     const frameName = usesUnderscore ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
@@ -251,10 +262,11 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     // Progress should complete when story content finishes scrolling
     const rawProgress = containerTop / storyContentHeight
 
-    // Once scroll reaches the end, lock at 100% and don't update further
+    // Once scroll reaches the very end, lock at 100% and don't update further
     // This prevents frame shifts when scrolling into footer area
-    const isAtEnd = rawProgress >= 0.98
-    const progress = isAtEnd ? 1 : Math.max(0, Math.min(0.97, rawProgress))
+    // Using 0.995 to allow final video to play through almost completely
+    const isAtEnd = rawProgress >= 0.995
+    const progress = isAtEnd ? 1 : Math.max(0, Math.min(0.99, rawProgress))
 
     setScrollProgress(Math.min(progress * 100, 100))
 
@@ -285,7 +297,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     const prevThreshold = currentIdx > 0 ? scrollWeights.thresholds[currentIdx - 1] : 0
     const currentThreshold = scrollWeights.thresholds[currentIdx]
     const videoRange = currentThreshold - prevThreshold
-    const progressInVideo = Math.max(0, Math.min(0.97, (progress - prevThreshold) / videoRange))
+    const progressInVideo = Math.max(0, Math.min(0.99, (progress - prevThreshold) / videoRange))
 
     setCurrentVideoIndex(currentIdx)
 

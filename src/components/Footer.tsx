@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const categories = [
   { href: '/essays', label: 'Essays' },
@@ -9,12 +10,18 @@ const categories = [
 ]
 
 const cities = [
-  { href: '/minneapolis', label: 'Minneapolis' },
-  { href: '/fargo', label: 'Fargo' },
-  { href: '/denver', label: 'Denver' },
+  { href: '/anchorage', label: 'Anchorage' },
+  { href: '/chicago', label: 'Chicago' },
+  { href: '/colorado-springs', label: 'Colorado Springs' },
   { href: '/dallas', label: 'Dallas' },
+  { href: '/denver', label: 'Denver' },
+  { href: '/fargo', label: 'Fargo' },
+  { href: '/minneapolis', label: 'Minneapolis' },
   { href: '/phoenix', label: 'Phoenix' },
   { href: '/portland', label: 'Portland' },
+  { href: '/raleigh', label: 'Raleigh' },
+  { href: '/salt-lake-city', label: 'Salt Lake City' },
+  { href: '/tampa', label: 'Tampa' },
 ]
 
 export function Footer() {
@@ -24,7 +31,14 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-12">
           {/* Brand & About */}
           <div className="md:col-span-5 lg:col-span-4">
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-flex items-center gap-2 mb-4">
+              <Image
+                src="/logos/CCs.png"
+                alt="Curious City"
+                width={28}
+                height={28}
+                className="brightness-0 invert opacity-90"
+              />
               <span className="text-xl font-semibold text-white tracking-tight ui-sans">
                 Curious City
               </span>
@@ -56,9 +70,9 @@ export function Footer() {
           </div>
 
           {/* Cities */}
-          <div className="md:col-span-4 lg:col-span-3">
+          <div className="md:col-span-4 lg:col-span-4">
             <h3 className="eyebrow text-neutral-500 mb-4">Cities</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
+            <ul className="grid grid-cols-3 gap-x-4 gap-y-2">
               {cities.map((city) => (
                 <li key={city.href}>
                   <Link

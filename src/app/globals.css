@@ -182,6 +182,19 @@
     will-change: transform, opacity;
   }
 
+  /* CSS containment utilities to prevent layout thrashing during resize */
+  .contain-layout {
+    contain: layout;
+  }
+
+  .contain-strict {
+    contain: strict;
+  }
+
+  .contain-content {
+    contain: content;
+  }
+
   /* Screen reader only class */
   .sr-only {
     position: absolute;

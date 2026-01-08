@@ -15,18 +15,18 @@ interface ScrollySectionProps {
 export const ScrollySection = forwardRef<HTMLElement, ScrollySectionProps>(
   ({ children, index, onInView, className = '' }, forwardedRef) => {
     const internalRef = useRef<HTMLElement>(null)
-    const [isMobile, setIsMobile] = useState(false)
+    // Check mobile only once on mount - no resize listener to prevent flashing
+    const [isMobile, setIsMobile] = useState(true) // Default to mobile (no animation) for SSR
     const { ref: inViewRef, inView } = useInView({
       threshold: 0.5, // 50% visibility
       triggerOnce: false, // Re-trigger on scroll back up
     })
 
-    // Detect mobile on mount
+    // Check mobile only once on mount - no continuous resize listener
     useEffect(() => {
-      const checkMobile = () => setIsMobile(window.innerWidth < 768)
-      checkMobile()
-      window.addEventListener('resize', checkMobile)
-      return () => window.removeEventListener('resize', checkMobile)
+      // Only enable animations on larger screens at mount time
+      // This prevents the flashing/shaking during window resize
+      setIsMobile(window.innerWidth < 768)
     }, [])
 
     // Combine refs for intersection observer and parent
@@ -64,7 +64,7 @@ export const ScrollySection = forwardRef<HTMLElement, ScrollySectionProps>(
       <motion.section
         ref={setRefs}
         {...animationProps}
-        className={`min-h-screen flex items-center ${justifyClass} px-4 py-20 ${className}`}
+        className={`min-h-screen flex items-center ${justifyClass} px-4 py-20 contain-layout ${className}`}
       >
         {children}
       </motion.section>

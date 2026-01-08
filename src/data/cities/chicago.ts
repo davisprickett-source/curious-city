@@ -186,6 +186,12 @@ export const chicago: CityData = {
             category: 'legend',
             title: 'Lake Michigan once had its own pirate king',
             body: 'In 1850, James Strang led a breakaway Mormon sect to Beaver Island in northern Lake Michigan, crowned himself king, and got busy with the whole monarchy thing. He minted his own currency, raided passing ships, and ruled with absolute authority—because apparently the Great Lakes needed a supervillain. His kingdom lasted six years until two disgruntled subjects shot him. America\'s only monarchy ended not with revolution, but with poor employee relations.',
+            images: [
+              {
+                src: '/chicago/curiosities/weird-king.png',
+                alt: 'King James Strang of Beaver Island',
+              }
+            ],
             source: 'Great Lakes Maritime Heritage Center',
             location: {
               name: 'Beaver Island, Lake Michigan',
@@ -336,6 +342,12 @@ export const chicago: CityData = {
             category: 'legend',
             title: 'America\'s first serial killer built a murder hotel for the World\'s Fair',
             body: 'H.H. Holmes constructed a massive building at 63rd and Wallace for the 1893 World\'s Fair and called it "The Castle." Inside: gas lines controlled from his office, soundproof rooms, a walk-in vault, and basement chutes leading to a crematorium. He confessed to 27 murders but likely killed over 200. The building was demolished in 1938. The empty lot remains one of Chicago\'s darkest addresses.',
+            images: [
+              {
+                src: '/chicago/curiosities/the-castle.png',
+                alt: 'H.H. Holmes Murder Castle',
+              }
+            ],
             source: 'Erik Larson, The Devil in the White City',
             location: {
               name: '63rd and Wallace Streets',
@@ -365,18 +377,6 @@ export const chicago: CityData = {
             },
           },
           {
-            id: 'curiosity-10',
-            type: 'curiosity',
-            category: 'underground',
-            title: 'A hermit lived in the train station basement for 30 years',
-            body: 'For three decades, a man known only as "The Hermit of Dearborn Station" lived in the forgotten subbasements of Chicago\'s oldest train depot. He fashioned a comfortable apartment among abandoned rail equipment, fed by sympathetic railroad workers who kept his secret. When the station was renovated in the 1980s, he vanished. No one ever learned his name. Chicago\'s infrastructure always has room for one more ghost.',
-            source: 'Chicago Reader',
-            location: {
-              name: 'Dearborn Station',
-              stillExists: true,
-            },
-          },
-          {
             id: 'curiosity-11',
             type: 'curiosity',
             category: 'culture',
@@ -394,6 +394,16 @@ export const chicago: CityData = {
             category: 'architecture',
             title: 'The only post office you can drive through',
             body: 'The Old Chicago Main Post Office, completed in 1932, was built directly over Congress Parkway—the only postal facility in America where vehicles pass through the building itself. Mail trucks loaded on upper floors while traffic flowed beneath. The building sat magnificently vacant from 1997 to 2019, when developers converted it into the largest single-floor office space in America. Abandonment as investment strategy.',
+            images: [
+              {
+                src: '/chicago/curiosities/post-office-1.png',
+                alt: 'Old Chicago Main Post Office spanning Congress Parkway',
+              },
+              {
+                src: '/chicago/curiosities/post-office-2.png',
+                alt: 'Historic Chicago Post Office architecture',
+              }
+            ],
             source: 'National Register of Historic Places',
             location: {
               name: 'The Old Post Office, 433 W Van Buren',
@@ -406,6 +416,12 @@ export const chicago: CityData = {
             category: 'architecture',
             title: 'The world\'s first skyscraper rose from Chicago\'s ashes',
             body: 'Just 14 years after the Great Fire leveled the city, William Le Baron Jenney completed the Home Insurance Building in 1885—the world\'s first skyscraper. At 10 stories, it pioneered the steel-skeleton construction that made every modern high-rise possible. Every tall building on Earth descends from this Chicago innovation. The city demolished it in 1931 to build something taller, because sentimentality is for cities that lose fires.',
+            images: [
+              {
+                src: '/chicago/curiosities/first-skyscraper.png',
+                alt: 'Home Insurance Building - world\'s first skyscraper',
+              }
+            ],
             source: 'Chicago Architecture Center',
             location: {
               name: 'LaSalle and Adams Streets',
@@ -418,6 +434,12 @@ export const chicago: CityData = {
             category: 'culture',
             title: 'Chicago\'s alleys are longer than its streets',
             body: 'Chicago has 1,900 miles of alleyways—more than its actual streets. The grid of back alleys was designed to hide garbage, deliveries, and utilities from view, creating a shadow city behind every block. Today the alleys host garage parties, murals, street art, and an entire subculture invisible from the front. Chicago has two faces. The alley is the honest one.',
+            images: [
+              {
+                src: '/chicago/curiosities/alley.png',
+                alt: 'Chicago alleyway with murals and street art',
+              }
+            ],
             source: 'Chicago Department of Transportation',
           },
           {
@@ -872,6 +894,8 @@ export const chicago: CityData = {
             coordinates: { lat: 41.9268, lng: -87.7019 },
             hours: '6pm-2am Mon-Fri, 7pm-3am Sat, 7pm-2am Sun',
             price: '$$',
+            website: 'https://whistlerchicago.com/',
+            instagram: '@whistlerchicago',
             image: {
               src: '/images/bars/whistler.jpg',
               alt: 'Dimly lit cocktail bar with art on walls',
@@ -887,6 +911,8 @@ export const chicago: CityData = {
             coordinates: { lat: 41.8540, lng: -87.6464 },
             hours: '4pm-2am daily',
             price: '$',
+            website: 'https://www.skylarkchicago.com/',
+            instagram: '@skylark_chicago',
             image: {
               src: '/images/bars/skylark.jpg',
               alt: 'Classic dive bar interior with neon signs',
@@ -902,6 +928,8 @@ export const chicago: CityData = {
             coordinates: { lat: 41.9093, lng: -87.6775 },
             hours: '6pm-2am Sun-Fri, 6pm-3am Sat',
             price: '$$$',
+            website: 'https://www.theviolethour.com/',
+            instagram: '@violethourchicago',
             image: {
               src: '/images/bars/violet-hour.jpg',
               alt: 'Dark speakeasy interior with velvet seating',
@@ -917,24 +945,11 @@ export const chicago: CityData = {
             coordinates: { lat: 41.8381, lng: -87.6516 },
             hours: '3pm-2am Mon-Sat, 12pm-2am Sun',
             price: '$',
+            website: 'https://www.community-bar.com/',
+            instagram: '@mariasbar',
             image: {
               src: '/images/bars/marias.jpg',
               alt: 'Packed neighborhood bar with bottle shop shelves',
-            },
-          },
-          {
-            name: 'Lost Lake',
-            neighborhood: 'Logan Square',
-            vibe: 'Tiki bar from the Violet Hour team. Tropical escapism done right.',
-            order: 'The Jet Pilot or any of the house originals. They don\'t do lazy drinks.',
-            why: 'The best tiki bar in Chicago, possibly the Midwest. The attention to detail is obsessive — house-made syrups, proper ice, correct glassware. A vacation without leaving the city.',
-            address: '3154 W Diversey Ave, Chicago, IL 60647',
-            coordinates: { lat: 41.9318, lng: -87.7074 },
-            hours: '5pm-2am Sun-Fri, 5pm-3am Sat',
-            price: '$$',
-            image: {
-              src: '/images/bars/lost-lake.jpg',
-              alt: 'Tiki bar with tropical decor and colorful drinks',
             },
           },
           {
@@ -947,6 +962,8 @@ export const chicago: CityData = {
             coordinates: { lat: 41.9760, lng: -87.6684 },
             hours: '11am-2am Mon-Sat, 11am-12am Sun',
             price: '$',
+            website: 'https://www.simonstavern.com/',
+            instagram: '@simonstavern',
             image: {
               src: '/images/bars/simons.jpg',
               alt: 'Vintage tavern interior with nautical decorations',
@@ -1149,6 +1166,7 @@ export const chicago: CityData = {
             hours: '3:30pm-9:30pm Mon-Thu, 3:30pm-10:30pm Fri-Sat, 3:30pm-9pm Sun',
             price: '$$$',
             website: 'https://avecrestaurant.com',
+            instagram: '@avecchicago',
             image: {
               src: '/images/restaurants/avec.jpg',
               alt: 'Communal table with Mediterranean dishes',
@@ -1164,6 +1182,8 @@ export const chicago: CityData = {
             coordinates: { lat: 41.8059, lng: -87.7233 },
             hours: 'Sat-Sun 8am-5pm only',
             price: '$',
+            website: 'https://www.birrieriazaragoza.com/',
+            instagram: '@birrieriazaragoza',
             image: {
               src: '/images/restaurants/zaragoza.jpg',
               alt: 'Traditional birria de chivo with consomé',
@@ -1180,6 +1200,7 @@ export const chicago: CityData = {
             hours: '11am-10pm Tue-Sun, closed Mon',
             price: '$$',
             website: 'https://sunwahbbq.com',
+            instagram: '@sunwahbbq',
             image: {
               src: '/images/restaurants/sun-wah.jpg',
               alt: 'Whole Peking duck hanging with lacquered skin',
@@ -1212,6 +1233,7 @@ export const chicago: CityData = {
             hours: 'Wed-Sun, seatings at 5pm and 8pm',
             price: '$$$$',
             website: 'https://www.smythandtheloyalist.com',
+            instagram: '@smythchicago',
             image: {
               src: '/images/restaurants/smyth.jpg',
               alt: 'Elegant tasting menu dish with seasonal ingredients',
@@ -1405,6 +1427,12 @@ export const chicago: CityData = {
             title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
             body: 'During the 1893 World\'s Fair, Dr. H.H. Holmes lured victims to his custom-built "Murder Castle"—a hotel he personally designed with soundproof rooms, secret passages, gas chambers, a greased chute to the basement, and his own crematorium. Holmes confessed to 27 murders but the actual count was likely far higher. He targeted young women who came to Chicago for the fair, using charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools, because waste not, want not. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory.',
             verdict: 'Holmes was hanged in 1896. The true body count remains unknown. The lot sat empty for over a century.',
+            images: [
+              {
+                src: '/chicago/dark-history/holmes-1.png',
+                alt: 'H.H. Holmes Murder Castle illustration',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1472,6 +1500,20 @@ export const chicago: CityData = {
             title: 'The "Fireproof" Theater That Killed 602 People',
             body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
             verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',
+            images: [
+              {
+                src: '/chicago/dark-history/theatrefire-1.png',
+                alt: 'Iroquois Theatre fire historic image',
+              },
+              {
+                src: '/chicago/dark-history/theatrefire-2.png',
+                alt: 'Iroquois Theatre aftermath',
+              },
+              {
+                src: '/chicago/dark-history/theatrefire-3.png',
+                alt: 'Iroquois Theatre memorial',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1531,6 +1573,16 @@ export const chicago: CityData = {
             title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
             body: 'On February 14, 1929, seven members of Chicago\'s North Side Gang were lined up against a garage wall at 2122 North Clark Street and executed with Thompson submachine guns. The killers wore police uniforms—because if you\'re going to murder seven men in broad daylight, you might as well look official. The hit, widely believed orchestrated by Al Capone to eliminate rival Bugs Moran, shocked a nation that thought it had seen peak Prohibition violence. Ironically, Moran was supposed to be there but arrived late. Punctuality saves lives. No one was ever convicted. The massacre helped turn public opinion against Prohibition and led to the creation of America\'s first crime laboratory—because Chicago needed scientific help identifying which mob was killing which.',
             verdict: 'Officially unsolved, though Capone\'s fingerprints are everywhere but the court record. Seven dead. Zero convictions.',
+            images: [
+              {
+                src: '/chicago/dark-history/masscare-1.png',
+                alt: 'St. Valentine\'s Day Massacre crime scene',
+              },
+              {
+                src: '/chicago/dark-history/massacre-2.png',
+                alt: 'St. Valentine\'s Day Massacre aftermath',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1590,6 +1642,12 @@ export const chicago: CityData = {
             title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
             body: 'On December 28, 1956, Barbara (15) and Patricia (12) Grimes left home to see "Love Me Tender" at the Brighton Theater. They\'d already seen Elvis\'s movie debut 11 times. They never made it to a 12th. Three weeks later, their naked, frozen bodies were found dumped along German Church Road in Willow Springs. Despite one of the largest investigations in Chicago history—300 officers, thousands of interviews, even a personal plea from Elvis himself urging the killer to come forward—no one was ever charged. Multiple men falsely confessed. The case file remains open nearly 70 years later. The sisters went to see a movie about love and came home in body bags.',
             verdict: 'Unsolved. Chicago PD still accepts tips. The killer either died or kept his mouth shut for seven decades.',
+            images: [
+              {
+                src: '/chicago/dark-history/grimes-1.png',
+                alt: 'The Grimes Sisters missing persons case',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1652,6 +1710,16 @@ export const chicago: CityData = {
             title: 'Our Lady of the Angels: The School Fire That Changed America',
             body: 'On December 1, 1958, fire broke out in the basement of Our Lady of the Angels School in Humboldt Park during afternoon classes. The blaze spread rapidly through the 55-year-old wooden structure. 92 children and 3 nuns died—most from smoke inhalation, others from jumping from second-story windows onto concrete. Parents arriving to pick up their children found bodies lined up on the sidewalk, covered with coats. The cause was never definitively determined, though arson was suspected. The tragedy shocked a nation that assumed schools were safe and led to comprehensive fire safety reforms: mandatory sprinklers, fire drills, panic bars, fire-resistant construction. Every fire code in every American school today exists because 95 people burned to death in a Catholic elementary school on the Northwest Side.',
             verdict: 'Second-deadliest school fire in U.S. history. No one was ever charged. Schools nationwide installed sprinklers.',
+            images: [
+              {
+                src: '/chicago/dark-history/schoolfire-1.png',
+                alt: 'Our Lady of the Angels School fire aftermath',
+              },
+              {
+                src: '/chicago/dark-history/schoolfire-2.png',
+                alt: 'Our Lady of the Angels School memorial',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1711,6 +1779,16 @@ export const chicago: CityData = {
             title: 'John Wayne Gacy: The Killer Clown Who Buried 29 Bodies Under His House',
             body: 'Between 1972 and 1978, John Wayne Gacy raped, tortured, and murdered at least 33 teenage boys and young men, burying 26 in the crawl space beneath his Norwood Park ranch house, three more on his property, and dumping four in the Des Plaines River when he ran out of room. Gacy was a respected community member, Democratic precinct captain, and married father who performed as "Pogo the Clown" at children\'s hospitals and charity events—which is the kind of detail that makes the horror somehow worse. He was finally caught in 1978 after 15-year-old Robert Piest disappeared following a job interview at Gacy\'s construction company. When police obtained a search warrant, the smell from the crawl space told them everything. The case revealed how a predator could hide in plain sight for six years while his house literally filled with corpses.',
             verdict: 'Convicted of 33 murders. Executed in 1994. The true victim count may be higher—four bodies remain unidentified.',
+            images: [
+              {
+                src: '/chicago/dark-history/gacy-1.png',
+                alt: 'John Wayne Gacy case investigation',
+              },
+              {
+                src: '/chicago/dark-history/gacy-2.png',
+                alt: 'Gacy house excavation',
+              }
+            ],
             sources: [
               {
                 type: 'book',
@@ -1781,6 +1859,16 @@ export const chicago: CityData = {
             category: 'disaster',
             year: '1979',
             title: 'Flight 191: The Deadliest Plane Crash in American History',
+            images: [
+              {
+                src: '/chicago/dark-history/flight-1.png',
+                alt: 'American Airlines Flight 191 crash site',
+              },
+              {
+                src: '/chicago/dark-history/fligh-2.png',
+                alt: 'Flight 191 memorial',
+              }
+            ],
             body: 'On May 25, 1979, American Airlines Flight 191—a DC-10 bound for Los Angeles—lost its left engine during takeoff from O\'Hare. The 13-ton engine and pylon tore away and flipped over the wing. The plane rolled left, stalled, crashed into a field in Des Plaines, and exploded in a fireball visible for miles. All 271 aboard died, plus two on the ground. 273 total. It remains the deadliest aviation disaster in U.S. history. The cause: improper maintenance procedures and a flawed design that severed hydraulic lines when the engine detached. American Airlines had been using a forklift method to save 200 man-hours per engine change. The shortcut cost 273 lives. The FAA grounded all DC-10s for over a month. New regulations followed. A memorial now stands near the crash site, marking the spot where cutting corners caught up with American aviation.',
             verdict: 'Improper maintenance, design flaws, corporate shortcuts. 273 dead. The DC-10\'s reputation never recovered.',
             sources: [
@@ -1848,6 +1936,16 @@ export const chicago: CityData = {
             title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
             body: 'In late September 1982, seven people in the Chicago area died after taking Extra-Strength Tylenol capsules laced with potassium cyanide. The victims—ranging from a 12-year-old girl to a 35-year-old postal worker—bought bottles from different stores across the suburbs, meaning someone was walking into pharmacies and placing poisoned pills on shelves like a twisted scavenger hunt. The murders sparked nationwide panic and an immediate recall of 31 million bottles. The case led to tamper-proof packaging, changed consumer product safety forever, and introduced America to the concept that someone might kill you for absolutely no reason other than the thrill of randomness. Despite one of the FBI\'s most intensive investigations and 40+ years of tips, no one has ever been charged. James Lewis, who sent an extortion letter, spent time in prison for that but was never connected to the murders. The killer is either dead or still out there, having gotten away with one of the most terrifying crimes in American history.',
             verdict: 'Unsolved. The case remains open. All victims died within 72 hours. The killer was never caught.',
+            images: [
+              {
+                src: '/chicago/dark-history/tylenol-1.png',
+                alt: 'Tylenol poisoning case investigation',
+              },
+              {
+                src: '/chicago/dark-history/tylenol-2.png',
+                alt: 'Tylenol recall and tamper-proof packaging',
+              }
+            ],
             sources: [
               {
                 type: 'book',

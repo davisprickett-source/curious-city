@@ -1370,6 +1370,7 @@ export const minneapolis: CityData = {
             hours: '6pm-1am Wed-Sun',
             price: '$$$',
             website: 'https://www.volsteads.net/',
+            instagram: '@volsteads',
             images: [
               {
                 src: 'https://mspmag.com/downloads/24590/download/0216-SecretSpeakeasy_640.jpg?cb=5303b833f0951ea0a657d6eb226fcc1c&w=640',
@@ -1392,6 +1393,7 @@ export const minneapolis: CityData = {
             hours: '4pm-midnight Mon-Thu, 4pm-1am Fri-Sat',
             price: '$$$',
             website: 'https://thelivingroom-prohibition.com/',
+            instagram: '@prohibitionfoshay',
             images: [
               {
                 src: 'https://www.hotel-scoop.com/wp-content/uploads/2016/02/DSC05129.jpg',
@@ -1422,6 +1424,7 @@ export const minneapolis: CityData = {
             hours: 'Thu 4-10pm, Fri 4-10pm, Sat 2-10pm',
             price: '$$',
             website: 'https://www.bumblingfools.com/',
+            instagram: '@bumbling_fools_mead',
             images: [
               {
                 src: 'https://lede-admin.racketmn.com/wp-content/uploads/sites/37/2023/04/PXL_20230415_151738286.jpg?w=2880',
@@ -1456,6 +1459,7 @@ export const minneapolis: CityData = {
             hours: '4pm-10pm Sun-Thu, 4pm-midnight Fri-Sat',
             price: '$$',
             website: 'https://moto-i.com/',
+            instagram: '@motoisake',
             images: [
               {
                 src: 'https://mspmag.com/downloads/60116/download/motoi_classic_ramen%20%282%29.jpg',
@@ -1490,6 +1494,7 @@ export const minneapolis: CityData = {
             hours: '5pm-midnight daily',
             price: '$$$',
             website: 'https://www.floraroommpls.com/',
+            instagram: '@floraroommpls',
             images: [
               {
                 src: 'https://images.squarespace-cdn.com/content/v1/64429caacaf4007617305f6d/3def10a0-ffe6-485a-ac1b-50f7cf76b4fc/Porzana_Preview_0059.jpg',
@@ -1524,6 +1529,7 @@ export const minneapolis: CityData = {
             hours: '3pm-10pm Mon-Thu, 12pm-11pm Fri-Sat, 12pm-9pm Sun',
             price: '$$',
             website: 'https://pryesbrewing.com',
+            instagram: '@pryesbrewing',
             images: [
               {
                 src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1623983830921-6G4FZ19VMJN0AF8QTFNI/Q01A4799.JPG',
@@ -1558,6 +1564,7 @@ export const minneapolis: CityData = {
             hours: '11am-2am daily',
             price: '$',
             website: 'https://grumpys-bar.com/',
+            instagram: '@grumpysnortheast',
             images: [
               {
                 src: 'https://mspmag.com/downloads/47272/download/Abrams_Grumpys-1111crop.jpg?cb=522bc8db81e14f92f404860401f2ac7f&w=1280',
@@ -1856,6 +1863,7 @@ export const minneapolis: CityData = {
             hours: '5pm-9pm Wed-Sun',
             price: '$$$$',
             website: 'https://owamni.com',
+            instagram: '@owamni',
             images: [
               {
                 src: '/minneapolis/restaurants/owamni-1.png',
@@ -1986,6 +1994,7 @@ export const minneapolis: CityData = {
             hours: '11am-10pm daily',
             price: '$$',
             website: 'https://www.haihaimpls.com',
+            instagram: '@haihaimpls',
             images: [
               {
                 src: '/minneapolis/restaurants/hai-hai-1.png',
@@ -2037,6 +2046,7 @@ export const minneapolis: CityData = {
             hours: '5pm-10pm Wed-Sun',
             price: '$$',
             website: 'https://www.boludo.com',
+            instagram: '@boludo___',
             images: [
               {
                 src: '/minneapolis/restaurants/boludo-1.png',

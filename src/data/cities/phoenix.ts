@@ -839,7 +839,9 @@ export const phoenix: CityData = {
             address: '130 N Central Ave, Basement, Phoenix, AZ 85004',
             coordinates: { lat: 33.4492, lng: -112.0740 },
             price: '$$',
+            hours: 'Tue-Sun 6pm-2am, Closed Mon',
             website: 'https://www.valleybarphx.com/',
+            instagram: '@valleybarphx',
             image: {
               src: '/phoenix/bars/valley-bar.webp',
               alt: 'Basement speakeasy bar with live music stage',
@@ -854,7 +856,9 @@ export const phoenix: CityData = {
             address: '1 W Jefferson St, Phoenix, AZ 85003',
             coordinates: { lat: 33.4481, lng: -112.0751 },
             price: '$$$',
+            hours: 'Tue-Fri 4pm-2am, Sat 2pm-2am (Happy Hour 4-6pm)',
             website: 'https://bitterandtwistedaz.com/',
+            instagram: '@bitterandtwisted_az',
             image: {
               src: '/phoenix/bars/bitter-twisted-interior.jpg',
               alt: 'Award-winning cocktail bar in historic Prohibition-era building',
@@ -869,7 +873,9 @@ export const phoenix: CityData = {
             address: '4041 N 40th St, Phoenix, AZ 85018',
             coordinates: { lat: 33.4969, lng: -111.9911 },
             price: '$$',
+            hours: 'Mon-Thu 11am-10pm, Fri 11am-11pm, Sat 10am-11pm, Sun 10am-10pm',
             website: 'https://www.thevig.us/arcadia',
+            instagram: '@thevigaz',
             image: {
               src: '/phoenix/bars/the-vig-patio.jpg',
               alt: 'Neighborhood bar patio with Adirondack chairs and fire pit',
@@ -1016,7 +1022,9 @@ export const phoenix: CityData = {
             address: '1301 Grand Ave, Phoenix, AZ 85007',
             coordinates: { lat: 33.4560, lng: -112.0868 },
             price: '$$$',
+            hours: 'Mon-Sat 5pm-10pm, Sun Brunch 11am-3pm',
             website: 'https://www.bacanoraphx.com/',
+            instagram: '@bacanoraphx',
             image: {
               src: '/phoenix/restaurants/bacanora-1.jpg',
               alt: 'Wood-fired Mexican cuisine from James Beard winner',
@@ -1031,7 +1039,9 @@ export const phoenix: CityData = {
             address: '1202 E Mohave St, Phoenix, AZ 85034',
             coordinates: { lat: 33.4367, lng: -112.0547 },
             price: '$',
+            hours: 'Mon-Sat 7am-5pm (original), Closed Sun',
             website: 'https://carolinasmex.com/',
+            instagram: '@carolinas_mexican_food',
             image: {
               src: '/phoenix/restaurants/carolinas-1.jpg',
               alt: 'Fresh handmade Sonoran flour tortillas',
@@ -1046,7 +1056,9 @@ export const phoenix: CityData = {
             address: '623 E Adams St, Phoenix, AZ 85004',
             coordinates: { lat: 33.4486, lng: -112.0661 },
             price: '$$',
+            hours: 'Daily 11am-9pm',
             website: 'https://www.pizzeriabianco.com/',
+            instagram: '@pizzeriabianco',
             image: {
               src: '/phoenix/restaurants/pizzeria-bianco-1.jpg',
               alt: 'Wood-fired artisan pizza from James Beard winner',

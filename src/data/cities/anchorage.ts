@@ -768,12 +768,14 @@ export const anchorage: CityData = {
           {
             name: 'Blues Central',
             neighborhood: 'Downtown',
-            vibe: 'Hidden speakeasy with craft cocktails and live jazz',
+            vibe: 'Hidden speakeasy with craft cocktails and live jazz (temporarily closed)',
             order: 'Any of the Prohibition-era cocktails',
-            why: 'Tucked on the second floor of Williwaw, you need to find the phone booth and password to get in',
+            why: 'Tucked on the second floor of Williwaw, you need to find the phone booth and password to get in. Note: Currently closed—check Williwaw\'s website for updates on reopening.',
             address: '609 F St, Anchorage, AK 99501',
             coordinates: { lat: 61.2175, lng: -149.8878 },
             price: '$$',
+            hours: 'Temporarily closed',
+            website: 'http://williwawsocial.com/',
             images: [
               {
                 src: '/anchorage/bars/blues-central-1.jpg',
@@ -798,6 +800,9 @@ export const anchorage: CityData = {
             address: '717 W 3rd Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2189, lng: -149.8917 },
             price: '$$',
+            hours: 'Mon-Sat 11am-11pm, Sun 11am-10pm',
+            website: 'https://www.49thstatebrewing.com/',
+            instagram: '@49thstatebrewing',
             images: [
               {
                 src: '/anchorage/bars/49th-state-1.jpg',
@@ -811,13 +816,15 @@ export const anchorage: CityData = {
           },
           {
             name: 'Darwin\'s Theory',
-            neighborhood: 'Spenard',
+            neighborhood: 'Downtown',
             vibe: 'Neighborhood bar with strong drinks and zero attitude',
-            order: 'Beer and a shot',
-            why: 'Spenard is Anchorage\'s weird neighborhood, and this bar fits',
+            order: 'Beer and a shot—plus free popcorn',
+            why: 'Voted best dive bar, best small bar, and best jukebox in Anchorage by readers. Darwin\'s hasn\'t caved to trends—no 15 taps of local IPAs, just cans and bottles. The jukebox is free and not connected to the internet. The owner Darwin is allegedly the world\'s biggest seller of Cinnamon Schnapps. This is the real deal.',
             address: '426 G St, Anchorage, AK 99501',
             coordinates: { lat: 61.2173, lng: -149.8856 },
             price: '$',
+            hours: 'Mon-Sun 10am-2:30am (Fri-Sat til 3am)',
+            website: 'http://darwinstheoryalaska.com/',
             images: [
               {
                 src: '/anchorage/bars/darwins-theory-1.jpg',
@@ -842,6 +849,9 @@ export const anchorage: CityData = {
             address: '609 F St, Anchorage, AK 99501',
             coordinates: { lat: 61.2175, lng: -149.8878 },
             price: '$$',
+            hours: 'Thu-Sat 5pm-2am (varies by event)',
+            website: 'http://williwawsocial.com/',
+            instagram: '@williwawsocial',
             images: [
               {
                 src: '/anchorage/bars/williwaw-1.jpg',
@@ -875,6 +885,9 @@ export const anchorage: CityData = {
             address: '420 L St, Anchorage, AK 99501',
             coordinates: { lat: 61.2156, lng: -149.8814 },
             price: '$$$',
+            hours: 'Mon-Fri 11:30am-9pm, Sat-Sun 11am-9pm',
+            website: 'https://www.simonandseaforts.com/',
+            instagram: '@simonandseaforts',
             images: [
               {
                 src: '/anchorage/establishments/simon-1.png',
@@ -900,6 +913,9 @@ export const anchorage: CityData = {
             address: '3300 Old Seward Hwy, Anchorage, AK 99503',
             coordinates: { lat: 61.1903, lng: -149.8764 },
             price: '$$',
+            hours: 'Mon-Fri 10:30am-11pm, Sat-Sun 11am-11pm',
+            website: 'https://www.moosestoothak.com/',
+            instagram: '@moosestoothpub',
             images: [
               {
                 src: '/anchorage/establishments/moosetooth-1.png',
@@ -925,6 +941,9 @@ export const anchorage: CityData = {
             address: '1034 W 4th Ave, Anchorage, AK 99501',
             coordinates: { lat: 61.2181, lng: -149.9008 },
             price: '$$',
+            hours: 'Daily 7am-3pm',
+            website: 'https://www.snowcitycafe.com/',
+            instagram: '@snowcitycafe',
             images: [
               {
                 src: '/anchorage/establishments/snowcity-1.png',
@@ -950,6 +969,9 @@ export const anchorage: CityData = {
             address: '1049 W Northern Lights Blvd, Anchorage, AK 99503',
             coordinates: { lat: 61.1947, lng: -149.9022 },
             price: '$$',
+            hours: 'Daily 9am-10pm',
+            website: 'https://www.spenardroadhouse.com/',
+            instagram: '@spenardrh',
             images: [
               {
                 src: '/anchorage/establishments/spenard-roadhouse-1.png',
@@ -968,13 +990,16 @@ export const anchorage: CityData = {
           },
           {
             name: 'Kinley\'s Restaurant',
-            neighborhood: 'Downtown',
+            neighborhood: 'Midtown',
             vibe: 'Modern Alaskan with indigenous influences',
             order: 'Tasting menu or whatever features local catch',
             why: 'Kinley\'s is what happens when a chef actually commits to showcasing Alaska\'s ingredients: local seafood, foraged greens, indigenous techniques, and a tasting menu that tells a story about place. This is the restaurant that proves Anchorage can compete on a national level. The space is elegant but not stuffy. Reservations are essential. For a city this isolated, having a restaurant this ambitious is something worth celebrating.',
-            address: '501 W 3rd Ave, Anchorage, AK 99501',
-            coordinates: { lat: 61.2185, lng: -149.8883 },
+            address: '3230 Seward Hwy, Anchorage, AK 99503',
+            coordinates: { lat: 61.1891, lng: -149.8764 },
             price: '$$$$',
+            hours: 'Tue-Fri 11:30am-9pm, Sat 5pm-10pm, Closed Sun-Mon',
+            website: 'https://www.kinleysrestaurant.com/',
+            instagram: '@kinleysrestaurant',
             images: [
               {
                 src: '/anchorage/establishments/kinleys-1.png',

@@ -885,6 +885,8 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7815, lng: -78.6500 },
             hours: 'Mon-Thu 4pm-midnight, Fri-Sat 11am-1am, Sun 11am-10pm',
             price: '$$',
+            website: 'https://www.gussiesraleigh.com/',
+            instagram: '@gussiesraleigh',
             images: [
               {
                 src: '/Raleigh/bars/gussies-1.png',
@@ -910,6 +912,8 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7760, lng: -78.6450 },
             hours: 'Mon-Fri 4pm-2am, Sat-Sun noon-2am',
             price: '$$',
+            website: 'https://theboxcarbar.com/',
+            instagram: '@boxcarral',
             images: [
               {
                 src: '/Raleigh/bars/boxcar-1.png',
@@ -939,6 +943,8 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7795, lng: -78.6380 },
             hours: 'Mon-Thu 11am-11pm, Fri-Sat 11am-2am, Sun 11am-11pm',
             price: '$$',
+            website: 'https://www.raleightimesbar.com/',
+            instagram: '@raleightimesbar',
             images: [
               {
                 src: '/Raleigh/bars/raleigh-times-1.png',
@@ -958,8 +964,10 @@ export const raleigh: CityData = {
             why: 'Hidden beneath Fayetteville Street with an entrance that takes some finding. The cocktails are genuinely excellent, the space is intimate, and it feels like a real discovery. Reservations help.',
             address: '200 S Blount St, Raleigh, NC 27601',
             coordinates: { lat: 35.7765, lng: -78.6367 },
-            hours: '5pm-midnight Tue-Sat',
+            hours: 'Tue-Sat 4pm-2am, Sun 2pm-midnight, Closed Mon',
             price: '$$$',
+            website: 'https://wattsandward.com/',
+            instagram: '@wattsandward',
             images: [
               {
                 src: '/raleigh/bars/ward-1.png',
@@ -995,10 +1003,12 @@ export const raleigh: CityData = {
             vibe: 'Bright, clean, serious about coffee but not about attitude.',
             order: 'Nitro cold brew and their famous cinnamon roll. Split it — it\'s enormous.',
             why: 'The Lafayette Village location is bigger and less cramped than the downtown outpost. Solid work vibes, fast wifi, and coffee that\'s worth the trip to North Raleigh.',
-            address: '8411 Brier Creek Pkwy, Raleigh, NC 27617',
+            address: '8450 Honeycutt Rd, Raleigh, NC 27615',
             coordinates: { lat: 35.8674, lng: -78.7876 },
-            hours: '7am-6pm Mon-Sat, 8am-5pm Sun',
+            hours: 'Mon-Fri 7am-5pm, Sat-Sun 8am-5pm',
             price: '$$',
+            website: 'https://www.jubalacoffee.com/',
+            instagram: '@jubalacoffee',
           },
           {
             name: 'Morning Times',
@@ -1010,6 +1020,8 @@ export const raleigh: CityData = {
             coordinates: { lat: 35.7795, lng: -78.6384 },
             hours: '7am-7pm Mon-Fri, 8am-7pm Sat-Sun',
             price: '$$',
+            website: 'https://www.morningtimes-raleigh.com/',
+            instagram: '@themorningtimes',
           },
           {
             name: 'Black & White Coffee Roasters',
@@ -1019,8 +1031,10 @@ export const raleigh: CityData = {
             why: 'If you care about coffee — like, really care — this is the spot. The roastery is on-site, the sourcing is meticulous, and the drinks are genuinely world-class.',
             address: '417 W Peace St, Raleigh, NC 27603',
             coordinates: { lat: 35.7865, lng: -78.6482 },
-            hours: '7am-5pm daily',
+            hours: 'Mon-Fri 8am-6pm, Sat 9am-6pm, Sun 9am-3pm',
             price: '$$',
+            website: 'https://www.blackwhiteroasters.com/',
+            instagram: '@blackwhiteroasters',
             images: [
               {
                 src: '/images/establishments/coffee-shops/raleigh/black-and-white-coffee-roasters/warehouse-interior-01.jpg',
@@ -1265,9 +1279,10 @@ export const raleigh: CityData = {
             why: 'One of the few Laotian restaurants in the state, and easily one of the best meals in Raleigh. The flavors are bold, the portions generous, and the space is gorgeous without being intimidating.',
             address: '222 S Blount St, Raleigh, NC 27601',
             coordinates: { lat: 35.7770, lng: -78.6365 },
-            hours: '11am-2:30pm, 5pm-9:30pm Tue-Sat',
+            hours: 'Lunch Fri-Sun 11am-2:30pm, Dinner Mon-Sun 5pm-10pm',
             price: '$$',
             website: 'https://bidamanda.com',
+            instagram: '@bidamanda',
             images: [
               {
                 src: '/raleigh/restaurants/bida-manda-1.png',
@@ -1293,10 +1308,12 @@ export const raleigh: CityData = {
             vibe: 'Ramen and Japanese small plates that punch way above their weight.',
             order: 'Tonkotsu ramen with a soft egg add-on. Get the buns too.',
             why: 'Hidden down an alley near Moore Square, Dashi has some of the best ramen in the Triangle. The space is small, the wait can be real, but the broth is worth it.',
-            address: '201 E Davie St, Raleigh, NC 27601',
-            coordinates: { lat: 35.7748, lng: -78.6362 },
-            hours: '11:30am-2pm, 5pm-9pm Tue-Sat',
+            address: '415 E Chapel Hill St, Durham, NC 27701',
+            coordinates: { lat: 35.9940, lng: -78.8986 },
+            hours: 'Daily 11:30am-10pm',
             price: '$$',
+            website: 'https://www.dashiramen.com/',
+            instagram: '@dashiramen',
             images: [
               {
                 src: '/raleigh/restaurants/dashi-1.png',

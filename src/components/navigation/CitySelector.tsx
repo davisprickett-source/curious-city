@@ -64,7 +64,9 @@ function CitySelectorContent({
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1 px-3 py-2 text-base font-medium text-accent-600 hover:text-accent-700 rounded-lg hover:bg-neutral-50 transition-colors"
       >
-        {currentCityName}
+        <span className="text-neutral-900">Curious</span>
+        <span className="text-neutral-400 mx-0.5">|</span>
+        <span>{currentCityName}</span>
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
@@ -109,8 +111,10 @@ function CitySelectorContent({
 export function CitySelector(props: CitySelectorProps) {
   return (
     <Suspense fallback={
-      <div className="flex items-center gap-1 px-3 py-2 text-base font-medium text-accent-600">
-        {props.currentCityName || 'Loading...'}
+      <div className="flex items-center gap-1 px-3 py-2 text-base font-medium">
+        <span className="text-neutral-900">Curious</span>
+        <span className="text-neutral-400 mx-0.5">|</span>
+        <span className="text-accent-600">{props.currentCityName || 'Loading...'}</span>
       </div>
     }>
       <CitySelectorContent {...props} />
