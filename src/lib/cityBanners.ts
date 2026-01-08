@@ -12,7 +12,7 @@ export const CITY_BANNERS: Record<string, string> = {
   'fargo': '/fargo/curiosities/wood-chipper-1.png',
   'denver': '/denver/curiosities/blue-bear-1.png',
   'tampa': '/sequences/tampa/tampa-1/frame_0001.jpg',
-  'phoenix': '/sequences/phoenix/phoenix-1/frame-0001.jpg',
+  'phoenix': '/sequences/phoenix/phoenix-1/frame_0001.jpg',
   'portland': '/sequences/portland/portland-1/frame_0001.jpg',
 }
 

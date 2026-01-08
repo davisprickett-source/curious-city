@@ -172,8 +172,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'slc': 'salt-lake-city'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // Tampa, Raleigh, Portland, Dallas, and SLC use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
-    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas' || city === 'salt-lake-city'
+    // Tampa, Raleigh, Portland, Dallas, SLC, and Phoenix use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
+    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas' || city === 'salt-lake-city' || city === 'phoenix'
     const frameName = usesUnderscore ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
@@ -532,7 +532,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                   >
                     <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
                       <img
-                        src="/sequences/phoenix/phoenix-1/frame-0001.jpg"
+                        src="/sequences/phoenix/phoenix-1/frame_0001.jpg"
                         alt="Phoenix sprawling across the desert"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
