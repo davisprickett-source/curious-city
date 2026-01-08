@@ -69,7 +69,10 @@ export function DropdownEventFilters({
         params.set('categories', newCategories.join(','))
       }
 
-      router.push(`${pathname}?${params.toString()}`, { scroll: false })
+      const newUrl = params.toString() ? `${pathname}?${params.toString()}` : pathname
+      router.push(newUrl, { scroll: false })
+      // Force server component to re-render with new params
+      router.refresh()
     },
     [searchParams, pathname, router]
   )

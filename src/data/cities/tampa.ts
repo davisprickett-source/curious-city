@@ -941,10 +941,12 @@ export const tampa: CityData = {
             website: 'https://www.jekyllhydepark.com/',
             instagram: '@jekyllhydepark',
             hours: 'Tue-Wed 5pm-11pm, Thu-Sat 5pm-1am, closed Sun-Mon',
-            image: {
-              src: '',
-              alt: 'Sophisticated speakeasy with intimate lighting',
-            },
+            images: [
+              { src: '/Tampa/bars/Jekyll-1.png', alt: 'Jekyll speakeasy interior' },
+              { src: '/Tampa/bars/Jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
+              { src: '/Tampa/bars/Jekyll-3.png', alt: 'Intimate bar seating' },
+              { src: '/Tampa/bars/Jekyll-4.png', alt: 'Jekyll moody ambiance' },
+            ],
           },
           {
             name: 'The Bricks of Ybor',
@@ -958,10 +960,11 @@ export const tampa: CityData = {
             website: 'https://www.thebricksybor.com/',
             instagram: '@thebricksybor',
             hours: 'Wed-Thu 4pm-12am, Fri 4pm-1am, Sat 12pm-1am, Sun 12pm-9pm, closed Mon-Tue',
-            image: {
-              src: '',
-              alt: 'Open-air corner bar in historic Ybor City',
-            },
+            images: [
+              { src: '/Tampa/bars/bricks-1.png', alt: 'The Bricks open-air patio' },
+              { src: '/Tampa/bars/bricks-2.png', alt: 'The Bricks bar interior' },
+              { src: '/Tampa/bars/bricks-3.png', alt: 'Corner bar on 7th Avenue' },
+            ],
           },
           {
             name: 'The Independent',
@@ -975,10 +978,10 @@ export const tampa: CityData = {
             website: 'https://independentbartampa.com/',
             instagram: '@indieseminoleheights',
             hours: 'Mon-Thu 11am-12am, Fri-Sat 11am-1am, Sun 11am-12am',
-            image: {
-              src: '',
-              alt: 'Belgian beer hall in converted gas station',
-            },
+            images: [
+              { src: '/Tampa/bars/independent.png', alt: 'The Independent beer hall exterior' },
+              { src: '/Tampa/bars/independent-2.png', alt: 'Belgian beer selection' },
+            ],
           },
           {
             name: 'Cigar City Cider and Mead',
@@ -992,10 +995,11 @@ export const tampa: CityData = {
             website: 'https://www.cigarcitycider.com/',
             instagram: '@cigarcitycider_mead',
             hours: 'Wed-Fri 5pm-12am, Sat-Sun 12pm-12am, closed Mon-Tue',
-            image: {
-              src: '',
-              alt: 'Craft cider flight with Florida ingredients',
-            },
+            images: [
+              { src: '/Tampa/bars/cigar-city.png', alt: 'Cigar City Cider tasting room' },
+              { src: '/Tampa/bars/cigar-city-2.png', alt: 'Cider and mead flight' },
+              { src: '/Tampa/bars/cigar-city-3.png', alt: 'Craft ciders on tap' },
+            ],
           },
           {
             name: 'Madame Fortune Dessert + HiFi Parlour',
@@ -1009,10 +1013,11 @@ export const tampa: CityData = {
             website: 'https://roaston7th.com/madame-fortune/',
             instagram: '@madamefortunetpa',
             hours: 'Wed-Thu 5pm-10pm, Fri-Sat 4pm-1am, Sun 4pm-10pm, closed Mon-Tue',
-            image: {
-              src: '',
-              alt: 'Intimate speakeasy with craft cocktails and desserts',
-            },
+            images: [
+              { src: '/Tampa/bars/madame-1.png', alt: 'Madame Fortune speakeasy entrance' },
+              { src: '/Tampa/bars/madame-2.png', alt: 'Craft cocktail and dessert' },
+              { src: '/Tampa/bars/madame-3.png', alt: 'Intimate HiFi parlour' },
+            ],
           },
         ],
       },
@@ -1035,10 +1040,13 @@ export const tampa: CityData = {
             website: 'http://www.roosterandthetill.com/',
             instagram: '@roosterandthetill',
             hours: 'Wed-Thu 5pm-9pm, Fri-Sat 5pm-10pm, closed Sun-Tue',
-            image: {
-              src: '',
-              alt: 'Farm-to-table modern American cuisine',
-            },
+            images: [
+              { src: '/Tampa/restaurants/rooster-0.png', alt: 'Rooster & the Till exterior' },
+              { src: '/Tampa/restaurants/rooster-1.png', alt: 'Farm-to-table plating' },
+              { src: '/Tampa/restaurants/rooster-2.png', alt: 'Open kitchen at Rooster & the Till' },
+              { src: '/Tampa/restaurants/rooster-3.png', alt: 'Seasonal dish presentation' },
+              { src: '/Tampa/restaurants/rooster-4.png', alt: 'Dining room ambiance' },
+            ],
           },
           {
             name: 'La Segunda Central Bakery',
@@ -1052,10 +1060,11 @@ export const tampa: CityData = {
             website: 'https://www.lasegundabakery.com/',
             instagram: '@lasegundabakery',
             hours: 'Daily 6:30am-3pm',
-            image: {
-              src: '',
-              alt: 'Fresh Cuban bread and pastries from historic bakery',
-            },
+            images: [
+              { src: '/Tampa/restaurants/segunda-1.png', alt: 'La Segunda bakery storefront' },
+              { src: '/Tampa/restaurants/segunda-2.png', alt: 'Fresh Cuban bread' },
+              { src: '/Tampa/restaurants/segunda-3.png', alt: 'Cuban sandwich on fresh-baked bread' },
+            ],
           },
           {
             name: 'Bern\'s Steak House',
@@ -1069,10 +1078,12 @@ export const tampa: CityData = {
             website: 'https://bernssteakhouse.com/',
             instagram: '@bernssteakhouse',
             hours: 'Tue-Thu 5pm-10pm, Fri-Sat 5pm-11pm, Sun 5pm-10pm, closed Mon',
-            image: {
-              src: '',
-              alt: 'Legendary dry-aged steak from iconic steakhouse',
-            },
+            images: [
+              { src: '/Tampa/restaurants/berns-1.png', alt: 'Bern\'s Steak House exterior' },
+              { src: '/Tampa/restaurants/berns-2.png', alt: 'Dry-aged steak presentation' },
+              { src: '/Tampa/restaurants/berns-3.png', alt: 'Famous Dessert Room' },
+              { src: '/Tampa/restaurants/berns-4.png', alt: 'Wine cellar collection' },
+            ],
           },
           {
             name: 'Ulele',
@@ -1086,10 +1097,11 @@ export const tampa: CityData = {
             website: 'https://ulele.com/',
             instagram: '@uleletampa',
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
-            image: {
-              src: '',
-              alt: 'Charbroiled oysters from riverside restaurant',
-            },
+            images: [
+              { src: '/Tampa/restaurants/ulele-1.png', alt: 'Ulele riverside building' },
+              { src: '/Tampa/restaurants/ulele-2.png', alt: 'Barbacoa grill in action' },
+              { src: '/Tampa/restaurants/ulele-3.png', alt: 'Charbroiled oysters' },
+            ],
           },
           {
             name: 'West Tampa Sandwich Shop',
@@ -1102,10 +1114,11 @@ export const tampa: CityData = {
             website: 'https://www.westtampasandwichshoprestaurant.com/',
             hours: 'Mon-Sat 6am-3pm, closed Sun',
             price: '$',
-            image: {
-              src: '',
-              alt: 'Authentic Cuban sandwich',
-            },
+            images: [
+              { src: '/Tampa/restaurants/west-tampa-1.png', alt: 'West Tampa Sandwich Shop counter' },
+              { src: '/Tampa/restaurants/west-tampa-2.png', alt: 'Cuban sandwich' },
+              { src: '/Tampa/restaurants/west-tampa-3.png', alt: 'Neighborhood sandwich shop' },
+            ],
           },
         ],
       },

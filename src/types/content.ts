@@ -169,6 +169,10 @@ export interface EventItem {
 
   // Auto-expiration
   expiresAt?: string // When to stop showing this event (if different from endDate)
+
+  // Curation & scoring
+  featured?: boolean // Manually marked as featured/highlighted
+  relevanceScore?: number // Auto-calculated relevance (0-100)
 }
 
 // Events content item (can coexist with ThisWeekContentItem)

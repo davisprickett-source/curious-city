@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityEvents } from '@/data/cities'
-import { ShareLinks, EventTimeBuckets, Footer } from '@/components'
+import { ShareLinks, Footer } from '@/components'
+import { FeaturedEventsSection } from '@/components/FeaturedEventsSection'
+import { EventListByDate } from '@/components/EventListByDate'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { filterEventsByCategories } from '@/utils/eventCategoryUtils'
 import {
@@ -10,6 +12,7 @@ import {
   filterTodayEvents,
   filterWeekendEvents,
   filterThisMonthEvents,
+  sortEventsByDate,
 } from '@/utils/eventStatus'
 import type { EventItem, EventsContentItem } from '@/types/content'
 import type { EventView } from '@/components/EventFilter'
@@ -111,7 +114,18 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 
           {/* Events Content */}
           {filteredEvents.length > 0 ? (
-            <EventTimeBuckets events={filteredEvents} view={view} />
+            <>
+              {/* Featured Events - only show on week/month view */}
+              {(view === 'week' || view === 'month') && (
+                <FeaturedEventsSection events={sortEventsByDate(filteredEvents)} maxEvents={4} />
+              )}
+
+              {/* Dense Event List grouped by date */}
+              <EventListByDate
+                events={sortEventsByDate(filteredEvents)}
+                emptyMessage="No events match your filters"
+              />
+            </>
           ) : activeEvents.length > 0 ? (
             <div className="text-center py-12">
               <p className="text-neutral-500 mb-2">No events match your current filters.</p>
