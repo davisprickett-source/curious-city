@@ -378,10 +378,11 @@ export function LostLovedScroll({ items, cityName }: LostLovedScrollProps) {
                   }`}
                   aria-label={`Jump to ${item.name}`}
                 />
-                {/* Tooltip */}
+                {/* Tooltip - wider, max 2 lines */}
                 <div className="absolute right-7 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
-                  <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2.5 rounded-xl shadow-2xl max-w-[280px] whitespace-nowrap">
-                    <span className="font-medium">{index + 1}.</span> {item.name.substring(0, 50)}{item.name.length > 50 ? '...' : ''}
+                  <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-lg shadow-2xl w-[320px] whitespace-normal">
+                    <span className="font-medium">{index + 1}.</span>{' '}
+                    <span className="line-clamp-2">{item.name}</span>
                   </div>
                 </div>
               </li>

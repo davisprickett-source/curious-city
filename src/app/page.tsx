@@ -10,6 +10,7 @@ import { ThemeSection } from '@/components/landing/ThemeSection'
 import { SectionHeader } from '@/components/landing/SectionHeader'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
+import { getCityBanner } from '@/lib/cityBanners'
 
 export default async function HomePage() {
   const cities = await getAllCities()
@@ -226,36 +227,57 @@ export default async function HomePage() {
               />
 
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {cities.map((city) => (
-                  <Link
-                    key={city.slug}
-                    href={`/${city.slug}`}
-                    className="group block p-6 bg-white rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                  >
-                    <h3 className="text-xl font-bold text-neutral-900 group-hover:text-accent-700 transition-colors mb-2">
-                      {city.name}
-                    </h3>
-                    {city.tagline && (
-                      <p className="text-sm text-neutral-600 mb-4">{city.tagline}</p>
-                    )}
-                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent-600 group-hover:gap-3 transition-all">
-                      Explore
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2.5}
-                          d="M13 7l5 5-5 5M6 12h12"
-                        />
-                      </svg>
-                    </span>
-                  </Link>
-                ))}
+                {cities.map((city) => {
+                  const bannerImage = getCityBanner(city.slug)
+                  return (
+                    <Link
+                      key={city.slug}
+                      href={`/${city.slug}`}
+                      className="group relative block overflow-hidden rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    >
+                      {/* Background image with overlay */}
+                      {bannerImage && (
+                        <div className="absolute inset-0">
+                          <img
+                            src={bannerImage}
+                            alt=""
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/60 to-neutral-900/40 group-hover:from-neutral-900/95 group-hover:via-neutral-900/70 transition-colors" />
+                        </div>
+                      )}
+                      {/* Fallback background for cities without banners */}
+                      {!bannerImage && (
+                        <div className="absolute inset-0 bg-gradient-to-br from-accent-600 to-accent-800" />
+                      )}
+                      {/* Content */}
+                      <div className="relative p-6 min-h-[140px] flex flex-col justify-end">
+                        <h3 className="text-xl font-bold text-white mb-1 drop-shadow-lg">
+                          {city.name}
+                        </h3>
+                        {city.tagline && (
+                          <p className="text-sm text-white/80 mb-3 line-clamp-2">{city.tagline}</p>
+                        )}
+                        <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/90 group-hover:text-white group-hover:gap-3 transition-all">
+                          Explore
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2.5}
+                              d="M13 7l5 5-5 5M6 12h12"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </Link>
+                  )
+                })}
               </div>
             </section>
           </div>

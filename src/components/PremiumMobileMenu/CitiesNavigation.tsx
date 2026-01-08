@@ -9,25 +9,27 @@ import type { CitiesNavigationProps } from './types'
 const cities = [...CITY_METADATA].sort((a, b) => a.name.localeCompare(b.name))
 
 // Custom variants without exit animation to prevent disappearing on click
+// Wave animation: items slide in from bottom-left with stagger
 const noExitContainerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.2,
+      staggerChildren: 0.06, // Slightly slower stagger for more pronounced wave
+      delayChildren: 0.15,
     },
   },
 }
 
 const noExitItemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 24, x: -16 },
   visible: {
     opacity: 1,
     y: 0,
+    x: 0,
     transition: {
-      duration: 0.5,
-      ease: [0.16, 1, 0.3, 1] as const,
+      duration: 0.4,
+      ease: [0.25, 0.46, 0.45, 0.94] as const, // Smooth ease-out for wave effect
     },
   },
 }

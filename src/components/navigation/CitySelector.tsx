@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useRef, useEffect, Suspense } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { CITY_METADATA } from '@/data/cities'
 import { useNavigation } from './hooks/useNavigation'
 import type { AnyCitySection } from '@/lib/routes'
@@ -77,33 +78,51 @@ function CitySelectorContent({
         </svg>
       </button>
 
-      {isOpen && (
-        <div className="absolute left-0 top-full pt-1 w-56 z-50">
-          <div className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto">
-            {cities.map((city) => {
-              const isActive = city.slug === currentCitySlug
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
+            className="absolute left-0 top-full pt-1 w-56 z-50"
+          >
+            <div className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto">
+              {cities.map((city, index) => {
+                const isActive = city.slug === currentCitySlug
 
-              return (
-                <Link
-                  key={city.slug}
-                  href={buildCityUrl(city.slug, currentSection, preserveFilters)}
-                  onClick={() => setIsOpen(false)}
-                  className={`
-                    block px-4 py-2 text-sm transition-colors
-                    ${
-                      isActive
-                        ? 'bg-accent-50 text-accent-700 font-medium'
-                        : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
-                    }
-                  `}
-                >
-                  {city.name}
-                </Link>
-              )
-            })}
-          </div>
-        </div>
-      )}
+                return (
+                  <motion.div
+                    key={city.slug}
+                    initial={{ opacity: 0, x: -12 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.25,
+                      delay: index * 0.03, // Staggered wave effect
+                      ease: [0.4, 0, 0.2, 1]
+                    }}
+                  >
+                    <Link
+                      href={buildCityUrl(city.slug, currentSection, preserveFilters)}
+                      onClick={() => setIsOpen(false)}
+                      className={`
+                        block px-4 py-2 text-sm transition-colors
+                        ${
+                          isActive
+                            ? 'bg-accent-50 text-accent-700 font-medium'
+                            : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
+                        }
+                      `}
+                    >
+                      {city.name}
+                    </Link>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

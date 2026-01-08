@@ -598,10 +598,11 @@ export function DarkHistoryScroll({ items, cityName: _cityName }: DarkHistoryScr
                     : 'bg-neutral-400 border border-neutral-500 group-hover:bg-neutral-600 group-hover:scale-150 group-hover:shadow-md'
                 }`}
               />
-              {/* Tooltip */}
+              {/* Tooltip - wider, max 2 lines */}
               <div className="absolute right-7 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
-                <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2.5 rounded-xl shadow-2xl max-w-[280px]">
-                  <span className="font-medium">{index + 1}.</span> {item.title.substring(0, 60)}{item.title.length > 60 ? '...' : ''}
+                <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-lg shadow-2xl w-[320px] whitespace-normal">
+                  <span className="font-medium">{index + 1}.</span>{' '}
+                  <span className="line-clamp-2">{item.title}</span>
                 </div>
               </div>
             </button>
