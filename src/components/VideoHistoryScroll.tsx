@@ -172,10 +172,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'slc': 'salt-lake-city'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // Tampa, Raleigh, Portland, Dallas, SLC, and Phoenix use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
-    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas' || city === 'salt-lake-city' || city === 'phoenix'
-    const frameName = usesUnderscore ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
-    return `/sequences/${city}/${sequenceName}/${frameName}`
+    // All sequences use underscore format: frame_0001.jpg
+    return `/sequences/${city}/${sequenceName}/frame_${paddedNum}.jpg`
   }
 
   // Preload frames progressively

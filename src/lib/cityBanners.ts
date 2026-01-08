@@ -2,7 +2,7 @@
 // Used in "Explore Cities" sections and city link cards
 
 export const CITY_BANNERS: Record<string, string> = {
-  'minneapolis': '/sequences/minneapolis/minn-1/frame-0001.jpg',
+  'minneapolis': '/sequences/minneapolis/minn-1/frame_0001.jpg',
   'raleigh': '/sequences/raleigh/raleigh-1/frame_0001.jpg',
   'chicago': '/chicago/dark-history/theatrefire-1.png',
   'salt-lake-city': '/sequences/salt-lake-city/slc-1/frame_0001.jpg',

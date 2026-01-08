@@ -19,6 +19,7 @@ const CITY_SLUGS = [
   'tampa',
   'phoenix',
   'portland',
+  'seattle',
 ] as const
 
 // Static city metadata for client components (name + slug only, no content)
@@ -35,6 +36,7 @@ export const CITY_METADATA = [
   { slug: 'tampa', name: 'Tampa' },
   { slug: 'phoenix', name: 'Phoenix' },
   { slug: 'portland', name: 'Portland' },
+  { slug: 'seattle', name: 'Seattle' },
 ] as const
 
 // Dynamic import functions for each city
@@ -51,6 +53,7 @@ const cityLoaders: Record<string, () => Promise<CityData>> = {
   'tampa': () => import('./tampa').then(m => m.tampa),
   'phoenix': () => import('./phoenix').then(m => m.phoenix),
   'portland': () => import('./portland').then(m => m.portland),
+  'seattle': () => import('./seattle').then(m => m.seattle),
 }
 
 // Cache for loaded cities to avoid re-importing

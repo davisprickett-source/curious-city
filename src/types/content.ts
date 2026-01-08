@@ -156,8 +156,8 @@ export interface EventItem {
   isRecurring?: boolean
   recurrenceRule?: string // "every Friday" or cron-like syntax
 
-  // Display metadata
-  category: 'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'
+  // Display metadata - genre-based categories
+  category: 'concerts' | 'nightlife' | 'food-drink' | 'art' | 'comedy' | 'sports' | 'theater' | 'markets'
   tags?: string[] // ["free", "family-friendly", "outdoor"]
 
   // Additional info links

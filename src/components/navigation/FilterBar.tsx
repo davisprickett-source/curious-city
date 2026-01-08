@@ -2,14 +2,12 @@
 
 import { DropdownEventFilters } from './DropdownEventFilters'
 import { DropdownCategoryFilter } from './DropdownCategoryFilter'
-import type { EventView } from '@/components/EventFilter'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
 import type { AnyCitySection } from '@/lib/routes'
 
 interface FilterBarProps {
   currentSection?: AnyCitySection
   citySlug?: string
-  eventView?: EventView
   eventCategories?: EventCategory[]
   sceneCategory?: string
   curiosityCategory?: string
@@ -31,18 +29,17 @@ const scenesCategoryLabels: Record<string, string> = {
 export function FilterBar({
   currentSection,
   citySlug,
-  eventView,
   eventCategories,
   sceneCategory,
 }: FilterBarProps) {
   // No filters to show
   if (!currentSection || !citySlug) return null
 
-  // Events page: show combined time and category dropdown
+  // Events page: show combined category dropdown
   if (currentSection === 'events') {
     return (
       <div className="flex items-center gap-2">
-        <DropdownEventFilters currentView={eventView} selectedCategories={eventCategories} />
+        <DropdownEventFilters selectedCategories={eventCategories} />
       </div>
     )
   }
