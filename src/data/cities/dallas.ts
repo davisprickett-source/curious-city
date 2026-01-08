@@ -70,18 +70,6 @@ export const dallas: CityData = {
             body: 'Dallas is the ninth-largest city in America, one of the most economically powerful metros on Earth, and nobody actually knows where the name came from. The founder, John Neely Bryan — a Tennessee lawyer who arrived in 1841 and built a cabin on the Trinity River — named the settlement "Dallas" but never explained why. The official historical marker claims it honors Vice President George Mifflin Dallas, but Bryan established the town before Dallas took office, and there\'s no evidence they ever met. Other theories: Bryan was honoring George\'s brother, Commodore Alexander James Dallas. Or two Dallas brothers who were his friends. Or a Dallas County in Alabama. Or it\'s corrupted from a Native American word. Bryan spent his final years in an insane asylum in Austin and took the answer to his grave. The mystery has persisted for 180 years. Historians have given up. Dallas just... is.',
           },
           {
-            id: 'dal-curiosity-2',
-            type: 'curiosity',
-            category: 'underground',
-            title: 'A 3-mile secret city runs beneath downtown',
-            image: {
-              src: '/dallas/curiosities/tunnels.png',
-              alt: 'Dallas underground tunnel system',
-            },
-            body: 'Dallas has an extensive network of underground pedestrian tunnels connecting 36 city blocks — shops, restaurants, offices, all invisible from the street. The system was designed by Vincent Ponte, the same Montreal urban planner who created Montreal\'s famous Underground City, starting in 1969. Many entrances are unmarked and hidden in plain sight. Former mayor Laura Miller called it "the worst urban planning decision Dallas has ever made" because it drained street-level foot traffic into an invisible parallel world. You can walk three miles without ever seeing daylight.',
-            source: 'D Magazine',
-          },
-          {
             id: 'dal-curiosity-3',
             type: 'curiosity',
             category: 'law',
@@ -389,7 +377,7 @@ export const dallas: CityData = {
             description: 'A 3-mile underground pedestrian network connecting 36 city blocks downtown, designed by the same planner who created Montreal\'s Underground City. Former mayor Laura Miller called it "the worst urban planning decision Dallas has ever made." Largely empty between rush hours and eerily atmospheric.',
             images: [
               {
-                src: '',
+                src: '/dallas/curiosities/tunnels.png',
                 alt: 'Underground tunnel system with shops and corridors',
               }
             ],
@@ -407,8 +395,12 @@ export const dallas: CityData = {
             description: 'A serene urban garden set 15 feet below ground in downtown, featuring an upended nautilus with a conical chapel inside containing a helix of clerestory stained glass windows rising 90 feet. Designed by architect Philip Johnson in 1976. A meditative escape largely forgotten by locals.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/Thanks-giving-1.png',
                 alt: 'Sunken urban garden with modern architecture',
+              },
+              {
+                src: '/dallas/hidden-gems/Thanks-giving-2.png',
+                alt: 'Thanks-Giving Square chapel interior',
               }
             ],
             address: 'Between Pacific, Ervay, Bryan, and Akard, Downtown Dallas',
@@ -426,8 +418,16 @@ export const dallas: CityData = {
             description: 'The only museum in North America dedicated to geometric abstraction and the MADI movement. Called "one of the most underrated art museums in Dallas." Small but internationally significant collection.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/MADI-1.png',
                 alt: 'Geometric abstract art in modern gallery space',
+              },
+              {
+                src: '/dallas/hidden-gems/MADI-2.png',
+                alt: 'MADI art exhibition',
+              },
+              {
+                src: '/dallas/hidden-gems/MADI-3.png',
+                alt: 'Colorful geometric sculptures',
               }
             ],
             address: '3109 Carlisle Street, Dallas, TX 75204',
@@ -445,8 +445,12 @@ export const dallas: CityData = {
             description: 'A 30-foot-tall fiberglass, resin, and steel sculpture by artist Tony Tasset, modeled after his own eye. Located in the Joule Hotel courtyard, now used as Dallas\'s most unique private event space.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/eyeball.png',
                 alt: 'Large eyeball sculpture in urban setting',
+              },
+              {
+                src: '/dallas/hidden-gems/eyeball-2.png',
+                alt: 'Giant eyeball from another angle',
               }
             ],
             address: '1607 Main St, Dallas, TX (Joule Hotel courtyard)',
@@ -463,7 +467,7 @@ export const dallas: CityData = {
             description: 'A chimera sculpture featuring the mane and neck of a horse, turkey tail, pig body, duck wings, sheep\'s head, and Texas longhorns. Created for the 1936 Texas Centennial, mysteriously disappeared in 1941, replaced in 1998. One of Fair Park\'s most obscure treasures.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/woofus-1.png',
                 alt: 'Mythical creature sculpture combining multiple animals',
               }
             ],
@@ -486,8 +490,12 @@ export const dallas: CityData = {
             description: 'The separate graves of Dallas\'s most infamous outlaws. Bonnie is at Crown Hill Memorial Park, Clyde at Western Heights Cemetery. Visitors leave cigarettes, bullets, and flowers. As of 2025, there\'s an active legal battle to reunite them.',
             images: [
               {
-                src: '',
-                alt: 'Historic cemetery with weathered gravestones',
+                src: '/dallas/hidden-gems/bonnieclyde-1.png',
+                alt: 'Bonnie Parker\'s grave site',
+              },
+              {
+                src: '/dallas/hidden-gems/bonnieclyde-2.png',
+                alt: 'Clyde Barrow\'s grave site',
               }
             ],
             address: 'Crown Hill Memorial Park (Bonnie) & Western Heights Cemetery (Clyde)',
@@ -504,7 +512,7 @@ export const dallas: CityData = {
             description: 'Free vintage streetcar system using restored historic vehicles from as old as 1909 (not modern replicas). Runs 7 days a week throughout Uptown and Arts District. Provides 500,000 rides per year but remains hidden to those unfamiliar with Dallas.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/m-trolley.png',
                 alt: 'Vintage streetcar on urban rail line',
               }
             ],
@@ -523,8 +531,20 @@ export const dallas: CityData = {
             description: 'A 600-acre Audubon preserve atop an escarpment with 9 miles of looping trails at one of the highest elevations in the Metroplex (755 feet). Organizes special Full Moon Hikes. Lesser-known than White Rock Lake.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/cedar-ridge-1.png',
                 alt: 'Hiking trail through nature preserve with escarpment views',
+              },
+              {
+                src: '/dallas/hidden-gems/cedar-ridge-2.png',
+                alt: 'Cedar Ridge Preserve overlook',
+              },
+              {
+                src: '/dallas/hidden-gems/cedar-ridge-3-0.png',
+                alt: 'Trail through Cedar Ridge',
+              },
+              {
+                src: '/dallas/hidden-gems/cedar-ridge-4.png',
+                alt: 'Views from Cedar Ridge Preserve',
               }
             ],
             address: 'Cedar Hill (South Dallas)',
@@ -541,8 +561,12 @@ export const dallas: CityData = {
             description: 'A 296-acre preserve in the Great Trinity Forest near the historic Freedman\'s community of Joppa. Lemmon Lake is a hidden gem for observing migratory birds. Trail cameras document white-tailed deer, coyotes, and feral hogs.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/lemmonlake-1.png',
                 alt: 'Wildlife preserve with lake and migratory birds',
+              },
+              {
+                src: '/dallas/hidden-gems/lemmonlake-2.png',
+                alt: 'Lemmon Lake shoreline',
               }
             ],
             address: 'South of Loop 12 and 4911 River Oaks Road',
@@ -560,8 +584,12 @@ export const dallas: CityData = {
             description: 'Secret speakeasy located inside a barber shop in Deep Ellum. Walk past the row of stylists and follow the sound of music to find a green light on the door of the back room, where the salon transforms into a saloon.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/barberspeakeasy-1.png',
                 alt: 'Hidden speakeasy interior with dim lighting',
+              },
+              {
+                src: '/dallas/hidden-gems/barberspeakeasy-2.png',
+                alt: 'Barber shop front concealing the speakeasy',
               }
             ],
             address: 'Deep Ellum',
@@ -578,8 +606,12 @@ export const dallas: CityData = {
             description: 'The most intimate and hidden speakeasy in Dallas. Check in at the front desk of SOVA Hotel and receive a pin code for a small bar in one of its normally labeled rooms. Japanese-inspired cocktails.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/room520-1.png',
                 alt: 'Intimate hotel bar with elegant cocktails',
+              },
+              {
+                src: '/dallas/hidden-gems/room520-2.png',
+                alt: 'Room 520 interior',
               }
             ],
             address: 'SOVA Hotel, Dallas',
@@ -596,8 +628,16 @@ export const dallas: CityData = {
             description: 'A small jazz club above the historic Lakewood Theater offering live jazz seven nights a week since 1988. "Not a place you find by accident." Everyone from bassist Chuck Rainey to keyboardists for Michael Bublé have played here.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/balconyclub-1.png',
                 alt: 'Intimate jazz club with stage and mood lighting',
+              },
+              {
+                src: '/dallas/hidden-gems/balconyclub-2.png',
+                alt: 'Live jazz performance at The Balcony Club',
+              },
+              {
+                src: '/dallas/hidden-gems/balconyclub-3.png',
+                alt: 'The Balcony Club atmosphere',
               }
             ],
             address: '1825 Abrams Rd, Ste B, Dallas, TX 75214',
@@ -614,8 +654,24 @@ export const dallas: CityData = {
             description: 'Part interactive art installation, part Instagram fever dream. Features 20+ unique photo opportunities, 6000 LEDs, 5000 balloons, 200 pounds of cotton, 5 miles of ribbon, and a unicorn. Multi-room with hidden doors and blacklight elements.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/vomit-1.png',
                 alt: 'Colorful immersive art installation with LED lights',
+              },
+              {
+                src: '/dallas/hidden-gems/vomit-2.png',
+                alt: 'Rainbow Vomit balloon room',
+              },
+              {
+                src: '/dallas/hidden-gems/vomit-3.png',
+                alt: 'Rainbow Vomit blacklight exhibit',
+              },
+              {
+                src: '/dallas/hidden-gems/vomit-4.png',
+                alt: 'Rainbow Vomit interactive display',
+              },
+              {
+                src: '/dallas/hidden-gems/vomit-5.png',
+                alt: 'Rainbow Vomit unicorn installation',
               }
             ],
             address: '3609 Parry Ave, Dallas, TX',
@@ -633,8 +689,16 @@ export const dallas: CityData = {
             description: 'A giant 54,000 square foot used book warehouse - five times larger than their average store, holding over half a million books. Described as "labyrinthine" and one of Dallas\'s most underrated spots.',
             images: [
               {
-                src: '',
+                src: '/dallas/hidden-gems/bigbooks-1.png',
                 alt: 'Massive used bookstore with floor-to-ceiling shelves',
+              },
+              {
+                src: '/dallas/hidden-gems/bigbooks-2.png',
+                alt: 'Half Price Books aisles',
+              },
+              {
+                src: '/dallas/hidden-gems/bigbooks-3.png',
+                alt: 'Labyrinthine book stacks',
               }
             ],
             address: 'Northwest Highway location',
@@ -651,8 +715,16 @@ export const dallas: CityData = {
             description: 'A vegetarian buffet inside a Hare Krishna temple that\'s been open since 1982. The food is genuinely good — Indian-inspired, always vegetarian — and the setting is unlike anything else in Dallas.',
             images: [
               {
-                src: '/images/gems/kalachandjis.jpg',
+                src: '/dallas/hidden-gems/vegan-resto-1.png',
                 alt: 'Vegetarian buffet spread at Kalachandji\'s restaurant',
+              },
+              {
+                src: '/dallas/hidden-gems/vegan-resto-2.png',
+                alt: 'Kalachandji\'s temple dining room',
+              },
+              {
+                src: '/dallas/hidden-gems/vegan-resto-3.png',
+                alt: 'Kalachandji\'s garden setting',
               }
             ],
             address: '5430 Gurley Ave, Dallas, TX 75223',
@@ -670,8 +742,20 @@ export const dallas: CityData = {
             description: 'Part bookstore, part bar, part event space in Bishop Arts. Literary culture with cocktails and a backyard patio. Regular readings, discussions, and the kind of intentional community rare in Dallas.',
             images: [
               {
-                src: '/images/gems/wild-detectives.jpg',
+                src: '/dallas/hidden-gems/dallas-book-pub-1.png',
                 alt: 'Interior of Wild Detectives bookstore with books and bar',
+              },
+              {
+                src: '/dallas/hidden-gems/dallas-book-pub-2.png',
+                alt: 'Wild Detectives bar area',
+              },
+              {
+                src: '/dallas/hidden-gems/dallas-book-pub-3.png',
+                alt: 'Wild Detectives patio',
+              },
+              {
+                src: '/dallas/hidden-gems/dallas-book-pub-4.png',
+                alt: 'Wild Detectives book shelves',
               }
             ],
             address: '314 W 8th St, Dallas, TX 75208',

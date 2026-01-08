@@ -50,9 +50,10 @@ function getSourceIcon(type?: string) {
   }
 }
 
-// Image Carousel Component
+// Image Carousel Component - styled to match standard ImageCarousel
 function ImageCarousel({ images, title }: { images: Array<{ src: string; alt: string; caption?: string; credit?: string }>; title: string }) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length)
@@ -70,55 +71,73 @@ function ImageCarousel({ images, title }: { images: Array<{ src: string; alt: st
 
   return (
     <div className="mb-6">
-      <div className="relative overflow-hidden rounded-2xl shadow-xl group">
+      <div
+        className="relative overflow-hidden rounded-2xl shadow-xl cursor-pointer group"
+        onClick={goToNext}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {/* Image */}
         <div className="relative aspect-[4/3] md:aspect-[16/9]">
           <img
             src={currentImage.src}
             alt={currentImage.alt || title}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transition-opacity duration-300"
           />
 
           {/* Credit overlay on top */}
           {currentImage.credit && (
-            <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+            <div className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
               {currentImage.credit}
             </div>
           )}
         </div>
 
-        {/* Navigation Arrows - only show if more than 1 image */}
+        {/* Navigation Arrows - animated slide in/out on hover */}
         {images.length > 1 && (
           <>
             <button
-              onClick={goToPrev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+              onClick={(e) => {
+                e.stopPropagation()
+                goToPrev()
+              }}
+              className={`absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 ${
+                isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'
+              }`}
               aria-label="Previous image"
             >
-              <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5} strokeLinecap="round">
+                <path d="M15 5l-7 7 7 7" />
               </svg>
             </button>
             <button
-              onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+              onClick={(e) => {
+                e.stopPropagation()
+                goToNext()
+              }}
+              className={`absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 ${
+                isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'
+              }`}
               aria-label="Next image"
             >
-              <svg className="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5} strokeLinecap="round">
+                <path d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
-            {/* Minimalistic dot indicators - smaller, thin outlines */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+            {/* Minimalistic dot indicators - matching standard ImageCarousel style */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
               {images.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => goToIndex(index)}
-                  className={`rounded-full transition-all duration-300 ${
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    goToIndex(index)
+                  }}
+                  className={`w-[5px] h-[5px] rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? 'w-2 h-2 border-2 border-white bg-transparent'
-                      : 'w-2 h-2 border border-white/60 bg-transparent hover:border-white'
+                      ? 'border-[1.5px] border-[#B7410E] bg-[#B7410E]/20'
+                      : 'border-[1.5px] border-white/70 bg-white/15 hover:border-white/90'
                   }`}
                   aria-label={`Go to image ${index + 1}`}
                 />

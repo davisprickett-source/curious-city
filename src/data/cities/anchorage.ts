@@ -432,7 +432,7 @@ export const anchorage: CityData = {
             type: 'hidden-gem',
             name: 'Nike Site Summit',
             category: 'Cold War Relic',
-            description: 'A 244-acre abandoned Nike Hercules missile battery atop Mount Gordon Lyon, operational 1959-1979 as part of the "Rings of Steel" defense against Soviet attacks. One of the most complete Nike sites left in the U.S. Guided tours only through military base.',
+            description: 'At the height of the Cold War, Anchorage sat directly in the crosshairs of Soviet bombers flying over the pole—so the U.S. Army built a ring of nuclear-armed missiles around the city. Nike Site Summit, perched atop Mount Gordon Lyon at 4,500 feet, was part of this "Ring of Steel" from 1959 to 1979. The missiles are long gone, but the concrete bunkers, launch pads, and control buildings remain frozen in time—one of the most complete Nike Hercules sites left in America. Tours (offered through Joint Base Elmendorf-Richardson) take you through barracks where soldiers waited for orders that never came, past empty silos that once held weapons capable of destroying formations of Soviet aircraft, and along ridges with views of the city those weapons were meant to protect. The site feels like a time capsule from an era when nuclear war felt inevitable and Anchorage was ground zero.',
             images: [
               {
                 src: '',
@@ -443,14 +443,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.24, lng: -149.66 },
             hours: 'Tours only through Joint Base Elmendorf-Richardson',
             price: 'Varies by tour',
-            tip: 'Book well in advance - tours fill up quickly for this rare site',
+            tip: 'Tours book out weeks in advance during summer—check the JBER recreation website early.',
           },
           {
             id: 'gem-cultural-1',
             type: 'hidden-gem',
             name: 'Eklutna Spirit Houses Cemetery',
             category: 'Cultural Site',
-            description: 'Over 100 brightly colored spirit houses blending Dena\'ina Athabascan and Russian Orthodox burial traditions. Bodies buried with blankets, then spirit houses painted in family colors placed 40 days later. Left to decay naturally per Athabascan tradition. Site settled over 800 years ago.',
+            description: 'Twenty-five miles north of Anchorage, at the oldest continuously inhabited site in the region, over 100 brightly painted spirit houses stand among the birch trees—a tradition that exists nowhere else on Earth. When Russian Orthodox missionaries arrived in the 1800s, the Dena\'ina Athabascan people merged their burial practices with the new faith: bodies are buried with blankets in the Orthodox tradition, but 40 days later, families build small wooden spirit houses over the graves, painted in clan colors that identify family lines. Per Athabascan tradition, the houses are left to decay naturally—new wood standing next to weathered predecessors going back generations. The adjacent St. Nicholas Russian Orthodox Church, built in 1870, is the second-oldest building in Anchorage. This is sacred ground, still used for burials today, and visitors are welcome to witness a tradition that bridges centuries and cultures.',
             images: [
               {
                 src: '',
@@ -461,14 +461,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.46, lng: -149.35 },
             hours: 'Open daily',
             price: 'Small donation appreciated',
-            tip: 'Photography allowed but be respectful - oldest inhabited location in Anchorage area',
+            tip: 'The Heritage House offers guided tours that explain the traditions in depth. Photography is allowed but keep your voice down—this is an active cemetery.',
           },
           {
             id: 'gem-earthquake-1',
             type: 'hidden-gem',
             name: 'Earthquake Park',
             category: 'Historic Site',
-            description: 'Site of catastrophic 1964 landslide where 75 houses in Turnagain Heights slid into Cook Inlet during the 9.2 magnitude quake. Ground remains visibly uneven with rippling hills showing soil liquefaction effects nearly 60 years later.',
+            description: 'On Good Friday 1964, the ground shook for four and a half minutes. The 9.2-magnitude earthquake—the second most powerful ever recorded—devastated Anchorage, and nowhere more dramatically than Turnagain Heights, where an entire bluff liquefied and slid into Cook Inlet, taking 75 homes with it. The bodies were never recovered; the ground was too unstable to search. Today, Earthquake Park preserves the landslide zone, and sixty years later, you can still see what happened: rippling hills, sudden drops, and terrain that looks like it was stirred by a giant spoon. The destruction is frozen in time, overgrown with grass and birch but unmistakably wrong. Interpretive signs tell the story of the families who lost everything in minutes. On clear days, you can see Denali from the overlook—beauty and catastrophe occupying the same view.',
             images: [
               {
                 src: '',
@@ -480,14 +480,14 @@ export const anchorage: CityData = {
             hours: 'Open daily',
             price: 'Free',
             website: 'https://www.muni.org/parks',
-            tip: 'Walk the paved loop to see visible ground displacement - interpretive signs tell the story',
+            tip: 'The Tony Knowles Coastal Trail runs through the park—you can bike here from downtown in 20 minutes.',
           },
           {
             id: 'gem-museum-1',
             type: 'hidden-gem',
             name: 'Little Lithuanian Museum',
             category: 'Appointment-Only Museum',
-            description: 'Incredibly intimate museum in a tiny yellow house in Chugiak run by Svaja Worthington, showcasing Lithuanian heritage through family heirlooms, traditional clothing, and artifacts. Also serves as Honorary Consulate of Lithuania.',
+            description: 'In a tiny yellow house in Chugiak, Svaja Worthington runs what might be the most personal museum in Alaska. Svaja\'s family fled Lithuania when the Soviets invaded in 1944; she was four years old. The artifacts she displays—traditional clothing, family photographs, handwritten letters, folk art—are her family\'s possessions, carried through refugee camps across Europe before finally arriving in Alaska. The museum also serves as the Honorary Consulate of Lithuania, which means Svaja is both the curator and the closest thing to an ambassador within a thousand miles. She guides every visitor herself, telling stories that connect the objects to the history they represent. It\'s not a museum in the institutional sense—it\'s a woman sharing her family\'s survival with anyone curious enough to ask.',
             images: [
               {
                 src: '',
@@ -498,14 +498,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.39, lng: -149.47 },
             hours: 'By appointment only, June-September',
             price: 'Free',
-            tip: 'Svaja personally guides every visitor - deeply personal experience',
+            tip: 'Call ahead and bring questions—Svaja has stories that aren\'t in any history books.',
           },
           {
             id: 'gem-museum-2',
             type: 'hidden-gem',
             name: 'Alaska Law Enforcement Museum',
             category: 'Niche Museum',
-            description: 'Over 3,000 sq ft of law enforcement history including a restored 1952 Hudson Hornet patrol car, antique radios, wire-tapping equipment, shackles, vintage uniforms, and badges from Territorial period through Statehood. Alaska\'s only collection of historical law enforcement memorabilia.',
+            description: 'Alaska didn\'t become a state until 1959, and before that, law enforcement in the territory was... creative. This 3,000-square-foot museum downtown traces that history through the objects officers carried and criminals encountered: a 1952 Hudson Hornet patrol car restored to showroom condition, wire-tapping equipment from the bootlegging era, territorial badges from before anyone agreed on what Alaska even was, antique radios that connected officers across distances that would take days to cross. The shackles are unnerving. The vintage uniforms are surprisingly dapper. The stories—gold rush justice, Prohibition-era smuggling, bush pilots doubling as lawmen—feel like they belong in novels. Alaska\'s only law enforcement museum sits quietly downtown, passed by tourists who don\'t know it exists, guarding artifacts from an era when the law had to improvise.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-police-1.png',
@@ -521,7 +521,7 @@ export const anchorage: CityData = {
             hours: 'Wed-Fri 10am-4pm, Sat 12-5pm (closed Sun-Tue)',
             price: '$5 ($3 for military, law enforcement, youth, seniors)',
             website: 'https://foast.org/museum',
-            tip: 'The Hudson Hornet patrol car is a highlight',
+            tip: 'Ask about the territorial period—the stories of pre-statehood law enforcement are wilder than anything in the displays.',
           },
           {
             id: 'anc-gem-ad-1',
@@ -533,7 +533,7 @@ export const anchorage: CityData = {
             type: 'hidden-gem',
             name: 'Campbell Creek Gorge Overlook',
             category: 'Secret Viewpoint',
-            description: 'Tree-covered overlook gazing hundreds of feet down a sheer cliff to Campbell Creek crashing through a narrow canyon. One of Anchorage\'s best-kept secrets. Not well-marked.',
+            description: 'Anchorage is full of people who\'ve lived here for years without knowing that a 200-foot canyon cuts through the Chugach foothills ten minutes from downtown. The Campbell Creek Gorge Overlook is unmarked, unimproved, and unknown to most—a tree-shrouded ledge where you look straight down at whitewater crashing through a slot canyon that feels transplanted from the Southwest. The trail to reach it isn\'t on most maps; you have to know which fork to take from the Hillside Ski Chalet parking lot. Stand at the edge and the city feels impossibly far away—just rushing water, sheer rock, and the kind of silence that makes you understand why people move to Alaska and never leave.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-campbell-1.png',
@@ -548,14 +548,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.10, lng: -149.71 },
             hours: 'Dawn to dusk',
             price: 'Free',
-            tip: 'Arrive early for best light - ask locals for exact trailhead',
+            tip: 'The overlook is unfenced and the drop is real—keep back from the edge, especially in wet conditions.',
           },
           {
             id: 'gem-aurora-1',
             type: 'hidden-gem',
             name: 'Glen Alps Aurora Viewpoint',
             category: 'Northern Lights Spot',
-            description: 'At 2,200 feet elevation with views of Anchorage Bowl and five mountain ranges - possibly the BEST aurora viewing spot in Anchorage. Overlook provides northern exposure away from city lights. Best viewing near midnight August-April.',
+            description: 'When the aurora forecast goes active, half of Anchorage drives to the same crowded pullouts on the Glenn Highway. The other half—the ones who know—drive to Glen Alps. At 2,200 feet, above the city lights and facing north toward the Alaska Range, this Chugach State Park trailhead offers what might be the best aurora viewing within reach of the city. Five mountain ranges ring the horizon. The Anchorage Bowl glitters below. And when the lights come—green curtains rippling across the sky, sometimes pink, sometimes purple—you watch from a parking lot that feels like a front-row seat to the universe. Dress for genuine cold. Arrive before dark to claim a spot. And check the aurora forecast before driving up—when it\'s active, the parking lot fills with photographers, champagne toasts, and Alaskans who never get tired of watching the sky.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-glenalps1.png',
@@ -570,14 +570,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.102, lng: -149.676 },
             hours: '24/7; best viewing near midnight Aug-Apr',
             price: '$5 parking fee',
-            tip: 'Arrive before dark to secure parking during active aurora nights - dress warmly',
+            tip: 'The University of Alaska Fairbanks aurora forecast is gospel—check it before driving up. Bring hand warmers; it\'s 15-20 degrees colder than downtown.',
           },
           {
             id: 'gem-wildlife-1',
             type: 'hidden-gem',
             name: 'Ship Creek Urban Salmon Viewing',
             category: 'Urban Wildlife',
-            description: '10-minute walk from downtown to watch king salmon (May-June) and silver salmon (July-Sept) at fish ladders and spillway. One of best urban salmon fishing spots in America. Rent gear on-site.',
+            description: 'In most cities, a creek running through downtown is a sad afterthought. In Anchorage, Ship Creek fills with thousands of salmon every summer—king salmon in May and June, silvers from July through September—and you can watch them fight upstream from viewing platforms a ten-minute walk from the hotel district. The fish ladders and spillway at the William Jack Hernandez Sport Fish Hatchery give you close-up views of salmon in their final, desperate push to spawn. Better yet, you can fish: Ship Creek is one of the best urban salmon fishing spots in America, and you can rent gear on-site if you didn\'t bring your own. The Alaska Railroad rumbles past on schedule. Eagles circle overhead. The whole scene feels impossibly Alaskan, and it\'s hiding in plain sight downtown.',
             images: [
               {
                 src: '',
@@ -589,14 +589,14 @@ export const anchorage: CityData = {
             hours: 'Open daily; best July-September',
             price: 'Free (fishing license required to fish)',
             website: 'https://www.alaska.org/detail/salmon-viewing-at-ship-creek',
-            tip: 'Watch from viewing platforms and pedestrian bridges - Alaska Railroad trains pass regularly',
+            tip: 'Peak salmon runs happen mid-July through August. The combat fishing (shoulder-to-shoulder anglers) is part of the spectacle.',
           },
           {
             id: 'gem-nature-2',
             type: 'hidden-gem',
             name: 'Turnagain Arm Bore Tide',
             category: 'Natural Phenomenon',
-            description: 'Wave up to 10 feet high thundering into Turnagain Arm at 6-24 mph twice daily during extreme tides. Local surfers ride for miles. Best during new/full moons, especially fall equinox. Arrives ~1 hr 15 min after low tide at Beluga Point.',
+            description: 'Twice a day, during extreme tides, a wall of water up to ten feet high comes thundering into Turnagain Arm at speeds up to 24 mph—one of the largest bore tides in North America. The physics are dramatic: a 40-foot tidal swing funnels into a narrow, shallow arm, compressing into a wave that advances for miles. Local surfers ride the bore for distances that would be impossible in ocean surf. Kayakers paddle frantically to stay ahead of it. From the viewing point at Beluga Point, you watch the wave approach like a freight train made of water, churning the silty inlet white as it passes. The bore tide happens on a schedule dictated by the moon, strongest during new and full moons, most dramatic around the fall equinox. Miss the timing and you\'ll see nothing. Nail it and you\'ll witness one of Alaska\'s most surreal natural phenomena.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-wave-1.png',
@@ -612,14 +612,14 @@ export const anchorage: CityData = {
             hours: 'Check tide charts; arrive 30 min before predicted arrival',
             price: 'Free to view',
             website: 'https://www.alaska.org/advice/alaska-bore-tide',
-            tip: 'DO NOT walk on mudflats - quicksand-like silt has caused fatal drownings',
+            tip: 'NEVER walk on the mudflats. The glacial silt acts like quicksand and has killed people who wandered out. Watch from solid ground only.',
           },
           {
             id: 'gem-quirky-1',
             type: 'hidden-gem',
             name: 'World\'s Largest Chocolate Waterfall',
             category: 'Quirky Attraction',
-            description: '20-foot chocolate waterfall with 3,000+ pounds of chocolate flowing through copper candy kettles. Created in 1994 by Homer artist Mike Sirl. Display only (not drinkable). While not Guinness-certified, likely the world\'s largest.',
+            description: 'Inside an unassuming candy factory south of downtown, a 20-foot waterfall of molten chocolate cascades through three tiers of vintage copper candy kettles—over 3,000 pounds of chocolate in continuous flow. Homer artist Mike Sirl built this confectionary monument in 1994, and while Guinness has never officially certified it, no one has stepped forward to claim a larger one. You can\'t drink from it (health codes being what they are), but you can stand and watch chocolate fall in sheets while contemplating the glorious absurdity of building something like this in Alaska, of all places. The surrounding store sells wild berry products, fudge, and tourist kitsch, but the waterfall is the draw. It\'s free to view, delightfully weird, and exactly the kind of thing that shouldn\'t exist but does.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-chocolate-1.png',
@@ -635,14 +635,14 @@ export const anchorage: CityData = {
             hours: 'Store hours (typically 9am-7pm)',
             price: 'Free to view',
             website: 'https://akwildberry.com',
-            tip: 'Factory tours available - gift shop has chocolate treats',
+            tip: 'Factory tours explain how they keep 3,000 pounds of chocolate at the perfect temperature year-round. The fudge is worth buying.',
           },
           {
             id: 'gem-trail-1',
             type: 'hidden-gem',
             name: 'Anchorage Light Speed Planet Walk',
             category: 'Public Art Trail',
-            description: 'Scale model solar system from Sun (5th & G Street downtown) to Pluto (Kincaid Chalet) - walking at leisurely pace mimics light speed. Takes 5.5 hours to walk entire route. Designed by high school astronomy student.',
+            description: 'A high school astronomy student designed this: a scale-model solar system stretching from downtown Anchorage to the Kincaid Park chalet, with the Sun at 5th and G Street and Pluto 5.5 hours away on foot. The brilliance is in the math—if you walk at a casual pace, you\'re moving at the speed of light relative to the model. Earth is an eight-minute walk from the Sun. Jupiter takes 45 minutes. By the time you reach Pluto, you\'ve covered miles of Anchorage\'s best trail system and gained an intuitive understanding of just how empty and vast the solar system actually is. Most people don\'t walk the whole thing. Most people don\'t need to. Just walking from the Sun to Mars will change how you think about space.',
             images: [
               {
                 src: '',
@@ -654,7 +654,7 @@ export const anchorage: CityData = {
             hours: '24/7',
             price: 'Free',
             website: 'https://anchorageplanetwalk.org',
-            tip: 'Earth is 8-min walk, Jupiter 45-min, Pluto 5.5 hours - walk as much or as little as you like',
+            tip: 'Rent bikes downtown and ride the coastal trail to the outer planets. You can reach Saturn in about an hour.',
           },
           {
             id: 'anc-gem-ad-2',
@@ -666,7 +666,7 @@ export const anchorage: CityData = {
             type: 'hidden-gem',
             name: 'Oscar Anderson House Museum',
             category: 'Historic House',
-            description: 'Anchorage\'s ONLY historic house museum - the first wood-frame house in Anchorage (1915), built by Oscar Anderson who claimed to be the 18th person to set foot in Anchorage. Fully restored to 1915 appearance. Named Distinctive Destination by National Trust.',
+            description: 'Anchorage didn\'t exist until 1915. That year, the Alaska Railroad began construction, and a tent city sprang up at Ship Creek to house the workers. Oscar Anderson claimed to be the 18th person to arrive—he kept count. The wood-frame house he built that summer is now Anchorage\'s only historic house museum, restored to its 1915 appearance and designated a National Trust Distinctive Destination. Anderson went on to become one of early Anchorage\'s most prominent citizens: meat packer, coal dealer, aviation pioneer, newspaper owner. His house sits in Elderberry Park, steps from the coastal trail, a reminder that this city of 300,000 began barely a century ago with a railroad, a handful of tents, and people like Oscar Anderson who saw opportunity in the wilderness. The 45-minute tours are led by docents who know the stories that don\'t make the history books.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-andersonhouse-1.png',
@@ -681,14 +681,14 @@ export const anchorage: CityData = {
             coordinates: { lat: 61.2159, lng: -149.8967 },
             hours: 'Varies seasonally; 45-minute guided tours',
             price: '$7-10',
-            tip: 'Anderson was active in meat packing, coal, aviation, and newspapers',
+            tip: 'Combine with a walk on the Tony Knowles Coastal Trail, which starts right outside.',
           },
           {
             id: 'gem-cultural-2',
             type: 'hidden-gem',
             name: 'Indigenous Place Names Project Markers',
             category: 'Cultural Art',
-            description: '32 sculptural markers throughout Anchorage featuring Dena\'ina language, traditional fire bag designs, and place name stories. Each features "you are walking on Dena\'ina land." Artwork by Melissa Shaginoff at parks and trails.',
+            description: 'Before Anchorage was Anchorage, it was Dena\'ina land—and the Dena\'ina Athabascan people had names for every creek, inlet, and mountain. The Indigenous Place Names Project is slowly restoring that language to the landscape: 32 sculptural markers now stand along Anchorage trails and parks, each featuring a Dena\'ina place name, its English translation, and the story behind it. Artist Melissa Shaginoff designed the markers to incorporate traditional fire bag patterns and contemporary Indigenous art. Each one reads "You are walking on Dena\'ina land"—a simple statement that reframes the city around you. Find them at Westchester Lagoon, Muldoon Park, Potter Marsh, Point Woronzof, and along the Chester Creek trail system. The project is ongoing; new markers appear regularly.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-names-1.png',
@@ -704,14 +704,14 @@ export const anchorage: CityData = {
             hours: 'Park hours',
             price: 'Free',
             website: 'https://anchorageparkfoundation.org/indigenous-placemaking',
-            tip: 'Look for artwork along Chester Creek and other major trails',
+            tip: 'Download the project map from the Anchorage Park Foundation website to find all 32 markers.',
           },
           {
             id: 'gem-brewery-1',
             type: 'hidden-gem',
             name: 'Midnight Sun Brewing Company',
             category: 'Brewery',
-            description: 'One of Alaska\'s best breweries with a huge tap list and excellent food. The brewing facility is impressive, and they don\'t take themselves too seriously.',
+            description: 'Alaska has a surprisingly excellent craft beer scene, and Midnight Sun is the flagship. The brewery operates out of an industrial park south of downtown—not exactly scenic from the outside, but inside you\'ll find one of the largest tap lists in the state, a kitchen that takes food as seriously as the beer, and a vibe that manages to be both polished and unpretentious. The Sockeye Red IPA is the signature, but the rotating seasonals are why regulars keep coming back. The brewing facility is visible from the taproom, and the staff can explain exactly what\'s happening in those massive fermentation tanks. Midnight Sun doesn\'t take itself too seriously—the beer names and label art lean playful—but the brewing is dead serious. This is where Alaskan craft beer grew up.',
             images: [
               {
                 src: '',
@@ -727,14 +727,14 @@ export const anchorage: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
             price: '$$',
             website: 'https://midnightsunbrewing.com',
-            tip: 'The Sockeye Red IPA is the flagship',
+            tip: 'The M Street Porter and Arctic Devil Barleywine are both medal winners. Pair the Sockeye Red with the smoked salmon appetizer.',
           },
           {
             id: 'gem-wildlife-2',
             type: 'hidden-gem',
             name: 'Alaska Wildlife Conservation Center',
             category: 'Wildlife',
-            description: 'A rescue facility where you can see bears, moose, musk oxen, and other Alaskan animals up close. Most animals were orphaned or injured. A guaranteed way to see wildlife.',
+            description: 'Seeing Alaskan wildlife in the wild is never guaranteed—bears might be fishing elsewhere, moose might be browsing out of sight, caribou might be a hundred miles north. The Alaska Wildlife Conservation Center offers a guarantee: orphaned and injured animals, unable to survive in the wild, living out their lives where visitors can see them up close. The brown bears are the stars, but the moose, musk oxen, caribou, wolves, and porcupines each have their own enclosures spread across the facility. This isn\'t a zoo—it\'s a rescue center that happens to allow visitors. The animals have space, the presentations are educational rather than performative, and the drive to get here (45 minutes south, along Turnagain Arm) is one of the most scenic in America. For visitors with limited time who want a guaranteed wildlife encounter, this is the answer.',
             images: [
               {
                 src: '/anchorage/curiosities/curious-conservation-1.png',
@@ -754,7 +754,7 @@ export const anchorage: CityData = {
             hours: 'Daily 10am-5pm',
             price: '$15 adults',
             website: 'https://alaskawildlife.org',
-            tip: 'Combine with a drive down Turnagain Arm — one of the most scenic drives in America',
+            tip: 'Time your drive for the bore tide if possible—you pass Beluga Point on the way. The musk oxen are most active in cooler weather.',
           },
         ],
       },

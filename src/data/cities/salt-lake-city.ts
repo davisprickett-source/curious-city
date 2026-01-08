@@ -434,11 +434,15 @@ export const salt_lake_city: CityData = {
             type: 'hidden-gem',
             name: 'Summum Pyramid - Modern Mummification',
             category: 'Unusual Religious Site',
-            description: 'A 40-foot pyramid housing a modern religious group that practices contemporary mummification. The only place in the world offering modern mummification services for humans and pets (over 600 pets mummified). The founder\'s mummified body rests inside in a gold-covered bronze sarcophagus. Tours available by appointment.',
+            description: 'In a quiet Salt Lake neighborhood sits a 40-foot bronze-and-concrete pyramid that would look more at home in Giza than Utah—and inside, a religious movement practices the only modern mummification on Earth. Summum was founded in 1975 by Claude "Corky" Nowell, who claimed to have received teachings from advanced beings. When Corky died in 2008, his followers mummified him in a gold-covered bronze sarcophagus that now rests inside the pyramid. Over 1,500 people have arranged for their own future mummifications; more than 600 pets have already been preserved. The process takes 77 days and costs around $67,000 for humans. The building is legally zoned as a bonded winery—they produce "nectar publications" (ceremonial wine)—because Utah wouldn\'t approve a pyramid-shaped church. Tours are free, surreal, and available by appointment.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/pyramid-1.png',
                 alt: 'Modern pyramid structure in urban setting',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/pyramid-2.png',
+                alt: 'Summum Pyramid interior',
               }
             ],
             address: 'Salt Lake City (exact address by appointment)',
@@ -446,50 +450,66 @@ export const salt_lake_city: CityData = {
             hours: 'Tours by appointment only',
             price: 'Free tours',
             website: 'https://www.summum.us',
-            tip: 'The building is legally zoned as a bonded winery, not a church',
+            tip: 'Ask about the mummified cats—they\'re displayed in the meditation room.',
           },
           {
             id: 'gem-museum-1',
             type: 'hidden-gem',
             name: 'Price Museum of Speed',
             category: 'Private Car Museum',
-            description: 'Private collection of 30+ vintage race cars including the legendary Mormon Meteor III, 1904 Peerless Green Dragon, and 1929 Bugatti 35B. Features cars from Grand Prix, Le Mans, and Indianapolis. Open only 2nd Wednesday of each month.',
+            description: 'Hidden in an unassuming downtown building is one of the most significant private racing collections in America—and it\'s open to the public exactly three hours per month. The Mormon Meteor III is the crown jewel: Ab Jenkins drove this streamlined beast to 24-hour speed records on the Bonneville Salt Flats in 1940, averaging 161 mph for an entire day and night. The collection includes over 30 racing machines spanning a century—a 1904 Peerless Green Dragon, a 1929 Bugatti Type 35B, Indianapolis veterans, Grand Prix legends. John Price spent decades quietly assembling cars that tell the history of human obsession with going faster. No crowds, no gift shop, no velvet ropes—just you, the cars, and sometimes Price himself explaining why a particular engine note still haunts him.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/speed-1.png',
                 alt: 'Vintage race car collection in private museum',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/speed-2.png',
+                alt: 'Historic racing vehicles at Price Museum',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/speed-3.png',
+                alt: 'Mormon Meteor III at Price Museum of Speed',
               }
             ],
             address: '165 E 600 S, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7607, lng: -111.8860 },
             hours: '2nd Wednesday of month, 9am-12pm (or by appointment)',
             price: 'Free',
-            tip: 'Call (801) 906-0157 to confirm open status before visiting',
+            tip: 'Call (801) 906-0157 to confirm—if Price is traveling, it stays locked.',
           },
           {
             id: 'gem-museum-2',
             type: 'hidden-gem',
             name: 'Pioneer Memorial Museum Oddities',
             category: 'Historical Museum',
-            description: 'World\'s largest collection of pioneer artifacts featuring bizarre items: bottles full of human teeth, Victorian hair art, taxidermied two-headed lamb, petrified potato, rattlesnake rattle collections, wooden prosthetic leg, and a bloodstone with alleged magical properties.',
+            description: 'The Daughters of Utah Pioneers run this 38-room museum that officially celebrates Mormon pioneer heritage—but wander past the quilts and wagon wheels and you\'ll find one of America\'s strangest accidental collections. Bottles filled with human teeth extracted during the trek west. Victorian mourning jewelry woven from the hair of the dead. A taxidermied two-headed lamb born on a frontier farm. A petrified potato carried across the plains as a good luck charm. Rattlesnake rattles, dozens of them, collected from the snakes that made desert nights dangerous. A hand-carved wooden leg that walked someone to Zion. A bloodstone that pioneers believed could stop hemorrhaging. The museum doesn\'t play up the weirdness—it\'s all presented with the same earnest reverence as the spinning wheels and butter churns. That\'s what makes it perfect: you have to hunt for the bizarre, and it\'s everywhere.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/pioneer-1.png',
                 alt: 'Victorian-era museum interior with unusual historical artifacts',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/pioneer-2.png',
+                alt: 'Pioneer Memorial Museum oddities collection',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/pioneer-3.png',
+                alt: 'Historic pioneer artifacts display',
               }
             ],
             address: '300 N Main Street, Salt Lake City, UT',
             coordinates: { lat: 40.7728, lng: -111.8894 },
             hours: 'Monday-Friday, 9am-4pm',
             price: 'Free',
-            tip: 'Most visitors focus on the main exhibits and miss the truly bizarre artifacts',
+            tip: 'The hair art is on the second floor—look for the Victorian wreaths made entirely of human hair.',
           },
           {
             id: 'gem-cemetery-1',
             type: 'hidden-gem',
             name: 'Lilly E. Gray\'s "Victim of the Beast 666" Grave',
             category: 'Cemetery Oddity',
-            description: 'Mysterious gravestone inscribed "Victim of the Beast 666". Woman died of natural causes in 1958; her anti-government husband blamed "the beast" (government) for her death and had the cryptic epitaph carved. One of most visited graves in cemetery despite ordinary circumstances.',
+            description: 'Lilly E. Gray died of natural causes in 1958. She was 77, had no criminal record, and by all accounts lived an unremarkable life. But her gravestone—"Victim of the Beast 666"—has drawn thousands of visitors and spawned decades of speculation. Was she murdered by a cult? Possessed? The truth is stranger and sadder: her husband Elmer was a paranoid anti-government eccentric who spent time in prison and believed "the beast" was the federal government. When Lilly died, Elmer blamed them and paid for the cryptic epitaph that turned an ordinary grave into Salt Lake\'s most mysterious landmark. Researchers have traced Elmer\'s paper trail—arrests, letters, grievances—and found a man at war with institutions he believed had persecuted him. Lilly became his final monument to that rage. Her grave is the most visited in the cemetery, surrounded by the unremarkable dead, forever marked by her husband\'s obsession.',
             images: [
               {
                 src: '/salt-lake-city/dark-history/lily-gray.png',
@@ -501,43 +521,55 @@ export const salt_lake_city: CityData = {
             hours: 'Cemetery hours',
             price: 'Free',
             website: 'https://www.slc.gov/parks/cemeteries/slc-cemetery/',
-            tip: 'Cemetery also contains graves of traffic light inventor and cross-dressing soprano Madame Pattirini',
+            tip: 'While you\'re here: the cemetery also holds Lester Wire (invented the traffic light) and "Madame Pattirini," a cross-dressing soprano whose true identity wasn\'t revealed until death.',
           },
           {
             id: 'gem-nature-1',
             type: 'hidden-gem',
             name: 'Neff\'s Canyon',
             category: 'Hidden Trail',
-            description: 'Peaceful alternative to crowded Mill Creek. 7-mile hard trail with 3,562 ft elevation gain. Shady canyon with creek, aspen groves, abundant wildflowers, unique Salt Lake Valley views. Popular among locals for early morning hikes.',
+            description: 'While tourists and Instagram hikers clog Mill Creek Canyon every weekend, locals slip away to Neff\'s Canyon—a brutal, beautiful 7-mile climb that gains 3,562 feet and rewards with the kind of solitude Salt Lake\'s popular trails forgot decades ago. The trailhead hides at the end of a residential street in Millcreek, unmarked enough that most people drive right past. The canyon is shaded and creek-fed in summer, golden with aspens in fall, and snowshoe-worthy in winter. Wildflowers carpet the meadow halfway up. The ridge at the top offers panoramic views into Big Cottonwood Canyon that feel earned, not given. Neff\'s is where Salt Lakers go when they remember why they moved here—and where they don\'t tell newcomers about.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/neffs-1.png',
                 alt: 'Mountain canyon trail with creek and aspen trees',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/neffs-2.png',
+                alt: 'Neff\'s Canyon trail views',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/neffs-3.png',
+                alt: 'Wildflowers along Neff\'s Canyon',
               }
             ],
             address: '4275 S 4260 E (end of White Way), Millcreek',
             coordinates: { lat: 40.6969, lng: -111.7772 },
             hours: 'Dawn to dusk; no parking after 10pm',
             price: 'Free',
-            tip: 'Stop at peaceful meadow or push to ridge for Big Cottonwood Canyon panoramas',
+            tip: 'Start early—the meadow at mile 3 is perfect for sunrise, and you\'ll beat the heat on the exposed upper sections.',
           },
           {
             id: 'gem-nature-2',
             type: 'hidden-gem',
             name: 'Wall Lake',
             category: 'Secret Swimming Hole',
-            description: 'Large icy-green pool about 1 mile from Crystal Lake Trailhead in Uintas. Features tall cliffs for jumping at southeastern end. Crowds dissipate quickly past Crystal Lake, making this a local favorite. Avoid weekends.',
+            description: 'Everyone knows Crystal Lake in the Uintas—it\'s the first lake past the trailhead, and on summer weekends it\'s a zoo. But keep walking another mile and the crowds vanish. Wall Lake sits in a cirque of granite, its water an impossible shade of icy green, with cliffs at the southeastern end tall enough to jump from if you\'re brave and stupid in equal measure. The lake is deep, cold even in August, and ringed by wildflowers that somehow survive at 10,000 feet. Locals treat Wall Lake like a secret handshake—mentioning it to the right people signals you know the real Wasatch. Arrive at dawn on a Tuesday and you might have the whole thing to yourself. Show up on a Saturday and you\'ll share it with every other local who reads articles like this one.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/wall-lake-1.png',
                 alt: 'Mountain lake with cliffs and clear green water',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/wall-lake-2.png',
+                alt: 'Wall Lake swimming hole in the Uintas',
               }
             ],
             address: 'Uinta Mountains (about 1 hour from SLC)',
             coordinates: { lat: 40.5983, lng: -110.9625 },
             hours: 'Dawn to dusk',
             price: 'Free',
-            tip: 'Arrive early weekday mornings for solitude - locals guard this spot',
+            tip: 'The cliff jumping spot is at the far end—test depth before you leap. Water temp rarely breaks 60°F.',
           },
           {
             id: 'slc-gem-ad-1',
@@ -549,29 +581,41 @@ export const salt_lake_city: CityData = {
             type: 'hidden-gem',
             name: 'Allen Park (Hobbitville)',
             category: 'Historic Park',
-            description: '8-acre property formerly shrouded in mystery with urban legends about hermits and hobbits. Actually a 1930s bird sanctuary turned counterculture hub with small artistic cabins and peacocks. Opened to public in 2020 after decades of private ownership.',
+            description: 'For decades, Salt Lake children whispered about "Hobbitville"—a mysterious property along Emigration Creek where tiny houses dotted the woods, peacocks roamed free, and strange hermits supposedly lived in seclusion. Parents warned kids away. Teenagers snuck in anyway. The truth was weirder than the legends: in the 1930s, a wealthy couple built a bird sanctuary here, then opened it to artists and eccentrics who constructed whimsical cabins among the trees. By the 1960s it was a counterculture commune. By the 1980s it was abandoned, overgrown, and perfect for urban mythology. In 2020, Salt Lake finally acquired the 8-acre property and opened it to the public. The peacocks are gone, but the tiny houses remain—hobbit-sized structures slowly being reclaimed by the forest, monuments to a Salt Lake that existed before conformity became the brand.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/hobbitville-1.png',
                 alt: 'Small artistic cabins in wooded park setting',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/hobbitville-2.png',
+                alt: 'Allen Park Hobbitville structures',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/hobbitville-3.png',
+                alt: 'Whimsical buildings at Hobbitville',
               }
             ],
             address: 'Along Emigration Creek, Salt Lake City',
             coordinates: { lat: 40.7640, lng: -111.8403 },
             hours: 'Park hours',
             price: 'Free',
-            tip: 'Look for the original small houses built in the 1930s-60s for artists',
+            tip: 'The trail along Emigration Creek connects to the larger trail system—you can walk here from the University.',
           },
           {
             id: 'gem-viewpoint-1',
             type: 'hidden-gem',
             name: 'Salt Lake Public Library Rooftop Garden',
             category: 'Secret Viewpoint',
-            description: 'Rooftop garden with panoramic city/mountain views, reading gardens, and bee farm. One of best views in entire city, completely free. Perfect for sunset.',
+            description: 'Moshe Safdie designed Salt Lake\'s main library to be climbed—a curved glass-and-concrete building with a public walkway that spirals to the roof. Most visitors never make it past the books. Their loss. The rooftop garden offers 360-degree views of downtown, the Wasatch Range, and the Great Salt Lake, plus reading nooks, native plants, and a working bee farm that produces honey sold in the gift shop. At sunset, the mountains turn pink and the city glows amber and you remember that Salt Lake, for all its contradictions, occupies one of the most dramatic settings in North America. All of this is free, open during library hours, and almost entirely ignored by tourists who came for Temple Square and left without looking up.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/rooftop-garden-1.png',
                 alt: 'Urban rooftop garden with city skyline views',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/rooftop-2.png',
+                alt: 'Salt Lake Library rooftop garden',
               }
             ],
             address: 'Main Library, downtown SLC',
@@ -579,55 +623,71 @@ export const salt_lake_city: CityData = {
             hours: 'Library hours',
             price: 'Free',
             website: 'https://services.slcpl.org',
-            tip: 'Many don\'t know it\'s accessible - take elevator to rooftop',
+            tip: 'Take the elevator to the 5th floor, then follow signs to the rooftop. The urban garden path winds past reading alcoves perfect for hiding with a book.',
           },
           {
             id: 'gem-viewpoint-2',
             type: 'hidden-gem',
             name: 'Church Office Building Observation Deck',
             category: 'Secret Viewpoint',
-            description: 'Observation deck on 28th floor with expansive views of Temple Square, Great Salt Lake, and surrounding mountains. Open weekdays. Most people don\'t know public can access it.',
+            description: 'The LDS Church\'s 28-story administrative headquarters dominates Temple Square—and on the top floor, open to anyone who asks, is one of the best free views in the American West. The observation deck offers floor-to-ceiling windows facing every direction: Temple Square directly below, the Wasatch Range to the east, the Great Salt Lake shimmering to the northwest, and downtown Salt Lake spreading south. Most tourists spend hours at Temple Square without ever knowing they can ride an elevator to the top of the adjacent tower. There\'s a small exhibit about church history, but the real draw is the view. Free, air-conditioned, and somehow always uncrowded. You don\'t have to be Mormon. You just have to know it exists.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/observation-deck-1.png',
                 alt: 'Panoramic city view from high-rise observation deck',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/observation-deck-2.png',
+                alt: 'View from Church Office Building observation deck',
               }
             ],
             address: 'Church Office Building, downtown',
             coordinates: { lat: 40.7707, lng: -111.8919 },
-            hours: 'Weekdays',
+            hours: 'Weekdays 9am-5pm',
             price: 'Free',
-            tip: 'Hidden in plain sight - just ask for access to observation deck',
+            tip: 'Enter through the main lobby and tell the desk you\'re visiting the observation deck. They\'ll direct you to the express elevator.',
           },
           {
             id: 'gem-books-1',
             type: 'hidden-gem',
             name: 'Ken Sanders Rare Books',
             category: 'Bookstore',
-            description: 'Legendary 3-floor antiquarian bookshop inside Leonardo Museum. Specializes in Utah/Mormon history, Western Americana, Grand Canyon, Colorado River. Features vintage postcards, posters, very narrow aisles packed floor-to-ceiling. Operated by Ken Sanders.',
+            description: 'Ken Sanders was Edward Abbey\'s close friend and literary executor, which tells you everything about the kind of bookstore this is. Three floors of antiquarian madness crammed into a space where the aisles are barely shoulder-width and the stacks reach the ceiling. Sanders specializes in Western Americana, Mormon history, Colorado River exploration, and Grand Canyon literature—the kind of rare books that serious collectors travel across the country to find. But the shop also overflows with vintage postcards, WPA posters, maps that predate statehood, and paperbacks priced to sell. Sanders himself is often there, holding court, telling stories about Abbey and the desert and the old Salt Lake that developers are erasing. The shop sits just off the corner, easy to miss, guarded by its own obscurity. Prices are surprisingly reasonable. The experience is priceless.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/rarebooks-1.png',
                 alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/rarebooks-2.png',
+                alt: 'Ken Sanders Rare Books interior',
               }
             ],
-            address: '209 E 500 S (inside Leonardo Museum)',
+            address: '268 S 200 E, Salt Lake City, UT 84111',
             coordinates: { lat: 40.7623, lng: -111.8842 },
-            hours: 'Bookstore hours',
+            hours: 'Mon-Sat 10am-6pm',
             price: 'Browsing free',
             website: 'https://www.kensandersbooks.com',
-            tip: 'Prices very reasonable; narrow aisles limit accessibility',
+            tip: 'Ask about Edward Abbey—Sanders has stories that never made it into the biographies.',
           },
           {
             id: 'gem-garden-1',
             type: 'hidden-gem',
             name: 'International Peace Gardens',
             category: 'Hidden Garden',
-            description: '11-acre garden with 28 countries represented along Jordan River. Japanese garden features bamboo, pines, lotus, water lilies. Hidden treasure in Glendale neighborhood, just 2 miles from downtown but little-known.',
+            description: 'Two miles from Temple Square, in a working-class neighborhood that tourists never visit, 28 countries have built gardens along the Jordan River. The Japanese garden is the showpiece—bamboo groves, stone lanterns, koi ponds, a moon bridge arcing over water lilies—but Greece, Germany, India, and two dozen other nations have staked their claims in this 11-acre oasis. Salt Lake\'s immigrant communities built these gardens starting in 1939, a Depression-era project that somehow survived and grew. The result is a world tour in a single afternoon: manicured European formalism giving way to tropical plantings, Buddhist sculpture neighbors Scandinavian modernism. Most Salt Lakers don\'t know this place exists. Even the ones who do rarely visit. On a weekday morning, you might have an entire country to yourself.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/peacegarden-1.png',
                 alt: 'Japanese garden with lotus flowers and water features',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/peacegarden-2.png',
+                alt: 'International Peace Gardens paths',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/peacegarden-3.png',
+                alt: 'Gardens from different nations at Peace Gardens',
               }
             ],
             address: '1000 S 900 W (Jordan Park)',
@@ -635,73 +695,94 @@ export const salt_lake_city: CityData = {
             hours: '7am-10pm year-round',
             price: 'Free',
             website: 'https://www.internationalpeacegardens.org',
-            tip: 'Best May-October for blooms; locals often unaware this exists',
+            tip: 'The Japanese garden is most photogenic in early morning light. Lotus bloom July through September.',
           },
           {
             id: 'gem-venue-1',
             type: 'hidden-gem',
             name: 'Kilby Court',
             category: 'Underground Music Venue',
-            description: 'SLC\'s longest-running all-ages venue (est. 1999). Capacity 200, described as "no bigger than a two-car garage." DIY backyard atmosphere where fans see artists before they\'re famous. Dry venue.',
+            description: 'Since 1999, Kilby Court has operated out of a space no bigger than a two-car garage in an industrial alley west of downtown—and somehow became the most important music venue in Salt Lake history. The Killers played here before anyone knew their name. Modest Mouse, Band of Horses, The Shins—all passed through this room that holds maybe 200 people if everyone breathes in. The walls are covered in band stickers and handwritten set lists. The sound is imperfect in the way that makes live music feel alive. Kilby is all-ages and alcohol-free, which means the crowd comes for the music, period. Artists play for almost nothing because the room has a reputation that travels. In a city where venues come and go, Kilby has survived 25 years on pure DIY stubbornness. Check the calendar. Buy a ticket. Stand three feet from someone who might be famous in two years.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/kilby-1.png',
                 alt: 'Small intimate music venue with stage and crowd',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/kilby-2.png',
+                alt: 'Kilby Court venue interior',
               }
             ],
             address: '741 S Kilby Ct, Salt Lake City, UT 84101',
             coordinates: { lat: 40.7530, lng: -111.8775 },
             hours: 'Varies by show',
-            price: 'Varies by show',
+            price: 'Usually $10-20',
             website: 'https://www.kilbycourt.com',
-            tip: 'Intimate artist/crowd interaction - springboard for local and touring artists',
+            tip: 'Arrive early—capacity is tiny and popular shows sell out. The alley can be hard to find after dark.',
           },
           {
             id: 'gem-speakeasy-1',
             type: 'hidden-gem',
             name: 'The Rest (Hidden Speakeasy at Bodega)',
             category: 'Secret Restaurant',
-            description: 'Subterranean speakeasy with hunting-lodge vibe. Requires reservations. Unique food beyond typical bar fare, including signature Beer Can Chicken. Modern hidden gem requiring password or special entrance.',
+            description: 'In a state with some of America\'s strangest liquor laws, it\'s fitting that one of Salt Lake\'s best restaurants hides beneath a taco shop. The Rest occupies the basement below Bodega, accessed through an unmarked door that requires reservations to open. The space channels a 1920s hunting lodge—leather, wood, taxidermy, low lighting—with a menu that goes far beyond bar food. The Beer Can Chicken is legendary: a whole bird roasted upright over a can of Uinta, served with sides meant for sharing. Cocktails are serious but not pretentious. Desserts are mandatory. The speakeasy concept is overdone in most cities, but The Rest earns it—partly because Utah\'s relationship with alcohol has always been complicated, and partly because hiding something this good feels appropriately subversive.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/therest-1.png',
                 alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/therest-2.png',
+                alt: 'The Rest speakeasy dining room',
               }
             ],
-            address: 'Behind/below Bodega, downtown SLC',
+            address: '331 S Main St (below Bodega), Salt Lake City, UT 84111',
             coordinates: { lat: 40.7630, lng: -111.8883 },
-            hours: 'Dinner hours',
+            hours: 'Wed-Sat, dinner service',
             price: '$$$',
-            tip: 'Reservations essential; ask for Beer Can Chicken and dessert',
+            website: 'https://www.bodega331.com',
+            tip: 'Reservations are essential—walk-ins almost never work. Order the chicken for two even if you\'re not that hungry.',
           },
           {
             id: 'gem-neighborhood-1',
             type: 'hidden-gem',
             name: 'Marmalade District',
             category: 'Historic Neighborhood',
-            description: 'SLC\'s oldest residential area with streets named after fruits. Rare San Francisco-influenced architecture (Italianate, Victorian, Gothic Revival) brought by 1800s merchants. Steep, narrow, angular streets with hilly terrain creating unique SF-like character. National Historic Register (1982).',
+            description: 'Salt Lake\'s street grid is famously wide and rational—except in the Marmalade District, where narrow lanes named Apricot, Quince, and Almond wind up steep hillsides in complete defiance of city planning. The neighborhood exists because 19th-century merchants who\'d made money in San Francisco built homes here in the styles they remembered: Italianate, Queen Anne, Gothic Revival, Carpenter Gothic. The terrain reminded them of Nob Hill, so they imported the architecture. The result is Salt Lake\'s oldest residential neighborhood and its strangest—a pocket of Victorian San Francisco dropped into the Mormon grid, named for the fruit trees that once covered the slopes. Listed on the National Register since 1982, the Marmalade has gentrified but not homogenized. The best way to experience it is on foot, climbing the hills, discovering houses that look teleported from another city, another century.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/hidden-gems/marmalade-1.png',
                 alt: 'Victorian houses on steep hillside street',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/marmalde-2.png',
+                alt: 'Marmalade District historic architecture',
               }
             ],
             address: 'North of downtown, near Capitol Hill',
             coordinates: { lat: 40.7780, lng: -111.8940 },
-            hours: 'Always open for walking/driving',
+            hours: 'Always open for walking',
             price: 'Free',
-            tip: 'Look for Victorian homes with West Coast architectural influences',
+            tip: 'Park near the Capitol and walk down—the views of downtown are better when you\'re descending.',
           },
           {
             id: 'gem-student-1',
             type: 'hidden-gem',
             name: 'The Pie Pizzeria (Underground)',
             category: 'Restaurant',
-            description: 'A University of Utah institution since 1980, the underground location is covered floor-to-ceiling in graffiti. Massive pizza slices, sticky tables, and a vibe that hasn\'t changed in decades.',
+            description: 'Every college town has a pizza joint that defines the student experience. At the University of Utah, it\'s The Pie—specifically the underground location on 200 South, where the walls are covered floor-to-ceiling in decades of graffiti, the tables are perpetually sticky, and the slices are big enough to fold in half and eat like a taco. The Pie has been here since 1980, feeding generations of undergrads, grad students, late-night studiers, and hungover Sundance attendees. The decor hasn\'t changed. The recipe hasn\'t changed. The prices have barely changed. You order at the counter, find a seat in the controlled chaos, and eat pizza in a room that smells like it\'s absorbed forty years of cheese and institutional rebellion. It\'s not the best pizza in Salt Lake—it\'s something better: the pizza that Salt Lake remembers.',
             images: [
               {
-                src: '/images/gems/the-pie-underground.jpg',
+                src: '/Salt-Lake-City/hidden-gems/thepie-1.png',
                 alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/thepie-2.png',
+                alt: 'The Pie Pizzeria interior',
+              },
+              {
+                src: '/Salt-Lake-City/hidden-gems/thepie-3.png',
+                alt: 'The Pie Underground atmosphere',
               }
             ],
             address: '1320 E 200 S, Salt Lake City, UT 84102',
@@ -709,7 +790,7 @@ export const salt_lake_city: CityData = {
             hours: '11am-11pm daily',
             price: '$$',
             website: 'https://thepie.com',
-            tip: 'Get "The Pie" combo slice — cheese, pepperoni, sausage, mushroom, olive',
+            tip: 'The combo slice is the move. Add a side of ranch and don\'t overthink it.',
           }
         ],
       },

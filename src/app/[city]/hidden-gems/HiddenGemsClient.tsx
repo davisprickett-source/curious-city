@@ -1,7 +1,6 @@
 'use client'
 
-import Image from 'next/image'
-import { useState } from 'react'
+import { ImageCarousel } from '@/components/ImageCarousel'
 
 interface HiddenGemsClientProps {
   gems: any[]
@@ -9,22 +8,6 @@ interface HiddenGemsClientProps {
 }
 
 export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientProps) {
-  const [imageIndexes, setImageIndexes] = useState<Record<string, number>>({})
-
-  const nextImage = (gemId: string, totalImages: number) => {
-    setImageIndexes(prev => ({
-      ...prev,
-      [gemId]: ((prev[gemId] || 0) + 1) % totalImages
-    }))
-  }
-
-  const prevImage = (gemId: string, totalImages: number) => {
-    setImageIndexes(prev => ({
-      ...prev,
-      [gemId]: ((prev[gemId] || 0) - 1 + totalImages) % totalImages
-    }))
-  }
-
   return (
     <div className="container-page section-spacing">
       {gems.length > 0 ? (
@@ -38,68 +21,10 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
                 <div className="flex-1 min-w-0">
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">{gem.name}</h3>
 
-                  {/* Images - carousel if multiple */}
+                  {/* Images - using standard ImageCarousel component */}
                   {gem.images && gem.images.length > 0 && (
                     <div className="mb-6">
-                      {gem.images.length === 1 ? (
-                        <div className="relative w-full h-96 rounded-xl overflow-hidden">
-                          <Image
-                            src={gem.images[0].src}
-                            alt={gem.images[0].alt}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 800px"
-                          />
-                        </div>
-                      ) : (
-                        <div className="relative group">
-                          <div className="relative w-full h-96 rounded-xl overflow-hidden">
-                            <Image
-                              src={gem.images[imageIndexes[gem.id] || 0].src}
-                              alt={gem.images[imageIndexes[gem.id] || 0].alt}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 100vw, 800px"
-                            />
-                          </div>
-
-                          {/* Previous button */}
-                          <button
-                            onClick={() => prevImage(gem.id, gem.images.length)}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                            aria-label="Previous image"
-                          >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                            </svg>
-                          </button>
-
-                          {/* Next button */}
-                          <button
-                            onClick={() => nextImage(gem.id, gem.images.length)}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                            aria-label="Next image"
-                          >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </button>
-
-                          {/* Dot indicators */}
-                          <div className="flex justify-center gap-1.5 mt-3">
-                            {gem.images.map((_: any, imgIndex: number) => (
-                              <button
-                                key={imgIndex}
-                                onClick={() => setImageIndexes(prev => ({ ...prev, [gem.id]: imgIndex }))}
-                                className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                                  imgIndex === (imageIndexes[gem.id] || 0) ? 'bg-neutral-700' : 'bg-neutral-300'
-                                }`}
-                                aria-label={`Go to image ${imgIndex + 1}`}
-                              />
-                            ))}
-                          </div>
-                        </div>
-                      )}
+                      <ImageCarousel images={gem.images} />
                     </div>
                   )}
 

@@ -55,8 +55,8 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
       />
 
       <main className="flex-1">
-        {/* Hero Header with Banner - Full Screen */}
-        <div className="relative min-h-screen flex flex-col">
+        {/* Hero Header with Banner - Exactly Viewport Height */}
+        <div className="relative h-[100dvh] flex flex-col">
           <img
             src="/global-banners/scenes.png"
             alt={`Scenes from ${city.name}`}

@@ -125,8 +125,8 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
       />
 
       <main className="flex-1 bg-white">
-        {/* Hero Header with Banner - Full Screen */}
-        <div className="relative min-h-screen flex flex-col">
+        {/* Hero Header with Banner - Exactly Viewport Height */}
+        <div className="relative h-[100dvh] flex flex-col">
           <img
             src={city.slug === 'minneapolis'
               ? "/Minneapolis Curiosities/banner.png"

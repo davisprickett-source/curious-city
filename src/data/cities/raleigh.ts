@@ -501,9 +501,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'NC State Steam Tunnels',
             category: 'Underground & Secret',
-            description: 'Off-limits urban exploration site with graffiti and mysterious shrine containing recently-lit candles. Associated with campus ghost stories and a 1988 murder plot. Sealed after 9/11 but legends persist.',
+            description: 'Beneath NC State\'s campus runs a network of steam tunnels—miles of concrete passages carrying heating pipes between buildings, accessed through manholes and basement doors. For decades, students treated the tunnels as an illicit rite of passage: descend into the dark, navigate by flashlight, leave your mark in spray paint, maybe encounter the shrine where someone keeps lit candles burning for reasons no one can explain. Campus legends connected the tunnels to everything from ghost sightings to a 1988 murder plot (real) to secret Cold War bunkers (less real). After 9/11, the university sealed most access points and added security cameras, but the legends only grew. The tunnels still exist—steam still flows through them—but the era of student exploration is over. What remains is the mythology: a hidden world beneath the quad, proof that even well-lit campuses have their undergrounds.',
             location: 'NC State Campus (off-limits)',
-            tip: 'Do not attempt to access — for historical interest only',
+            tip: 'Do not attempt to access — university police actively patrol. The legends are the attraction now.',
             images: [
               {
                 src: '/raleigh/hidden-gems/steam-tunnels-1.png',
@@ -525,9 +525,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Old Highway 98 Ghost Road',
             category: 'Abandoned & Lost',
-            description: 'Crumbling abandoned highway that disappears beneath Falls Lake. Hike 10+ minutes down the road before it vanishes underwater. Flooded when Falls Lake was created.',
+            description: 'When the Army Corps of Engineers created Falls Lake in 1981, they flooded entire communities—and the roads that connected them. Old Highway 98 was one of those roads. Today, you can hike down the abandoned asphalt for ten minutes or more, watching the pavement crumble and crack, overtaken by weeds and saplings, until the road simply disappears beneath the lake\'s surface. It\'s an eerie experience: walking a highway that goes nowhere, past faded lane markings that once carried traffic, into water that swallowed a landscape. Depending on lake levels, more or less of the road is visible. During droughts, you can see the road continuing underwater, disappearing into the murky depths. The feeling is post-apocalyptic—a reminder that human infrastructure is temporary, and that North Carolina is full of drowned places.',
             location: 'Falls Lake area',
-            tip: 'Wear hiking boots — road is crumbling',
+            tip: 'Wear hiking boots—the road surface is broken and slippery. Water levels vary seasonally.',
             images: [
               {
                 src: '/raleigh/hidden-gems/ghost-road.png',
@@ -540,8 +540,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Millbrook Village',
             category: 'Abandoned & Lost',
-            description: '150+ year-old abandoned gristmill and village from the 1860s, hidden along Marsh Creek in overgrown woods. Once-thriving mill community now forgotten.',
-            location: 'Marsh Creek',
+            description: 'Hidden in overgrown woods along Marsh Creek, stone foundations and chimney remnants mark where Millbrook Village once stood—a thriving gristmill community from the 1860s, now completely forgotten. The mill processed grain for surrounding farms; a small village grew around it with homes, a store, and the rhythms of rural Carolina life. After the Civil War, the economics changed. The mill closed. The village emptied. The forest moved in. Today, finding Millbrook requires bushwhacking through underbrush to locate walls that once enclosed kitchens, stone steps that once led to front doors. Most Raleigh residents drive past the access point without any idea that a 19th-century village lies abandoned in the trees. There are no signs, no markers, no preservation. Just ruins slowly returning to earth.',
+            location: 'Marsh Creek area (requires hiking through woods)',
+            tip: 'Bring GPS and be prepared for off-trail exploration. The site is on public land but not maintained.',
             images: [
               {
                 src: '/raleigh/hidden-gems/millbrook.png',
@@ -554,8 +555,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Bloomsbury Park Ghost Site',
             category: 'Abandoned & Lost',
-            description: 'Early 1900s trolley park with roller coaster, carousel, and dance pavilion. Completely demolished; only exists in historical records. Raleigh\'s lost amusement park from the streetcar era.',
-            location: 'Historical site only',
+            description: 'Before Six Flags, before Carowinds, there was Bloomsbury Park—Raleigh\'s own amusement park, built in 1912 at the end of a streetcar line to give passengers a reason to ride. For two decades, Raleighites came here to ride the roller coaster, spin on the carousel, dance in the pavilion, and escape the summer heat at the swimming pool. The park was the social center of early 20th-century Raleigh, the place where couples courted and families gathered. Then the streetcar company failed, the Depression hit, and Bloomsbury closed in 1932. The rides were dismantled. The buildings were demolished. Today, nothing remains except historical photographs and the memories of Raleighites old enough to remember when their city had its own amusement park—a ghost site that exists only in archives and imagination.',
+            location: 'Historical site only (approximate location near current Bloomsbury neighborhood)',
+            tip: 'View historic photos at the State Archives of North Carolina or Olivia Raney Local History Library.',
             images: [
               {
                 src: '/raleigh/hidden-gems/ghost-site-1.png',
@@ -630,9 +632,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Isabelle Bowen Henderson Secret Garden',
             category: 'Secret Garden',
-            description: 'Nearly century-old garden from the 1930s hidden behind an ivy curtain. Privately-owned oasis behind a normal sidewalk. Rare public tours for $15.',
-            location: 'Behind ivy curtain on sidewalk',
-            tip: 'Watch for rare tour announcements',
+            description: 'Walk down a normal Raleigh sidewalk in the Cameron Park neighborhood and you\'ll pass what looks like an ordinary house with an ivy-covered fence. But behind that ivy curtain lies one of Raleigh\'s most spectacular private gardens—a nearly century-old landscape designed by Isabelle Bowen Henderson in the 1930s and maintained by successive owners who understood its value. The garden covers over an acre, with winding paths, formal plantings, mature trees, and the kind of meticulous design that takes generations to achieve. The property is privately owned and closed to the public, which only adds to its mystique. Once or twice a year, the Raleigh Historic Society or similar organizations arrange tours for $15—when they do, tickets sell out instantly. If you miss the tours, you can only imagine what lies behind the ivy.',
+            location: 'Cameron Park neighborhood (exact address protected)',
+            tip: 'Follow the Cameron Park Historic District Association for rare tour announcements.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/secret-garden.png',
@@ -649,9 +651,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Raleigh Little Theatre Rose Garden',
             category: 'Secret Garden',
-            description: 'Built by WPA into a natural ravine in 1939. 6.5 acres with 1,200 roses of 60 varieties. Transformed from "unsightly clay pit of red mud and weeds" into terraced landscape with 2,000-seat amphitheater.',
-            location: 'Behind Raleigh Little Theatre',
-            tip: 'Free and open to public',
+            description: 'In 1939, a Depression-era WPA crew transformed an "unsightly clay pit of red mud and weeds" into what is now one of the South\'s most beautiful rose gardens. The 6.5-acre site occupies a natural ravine behind Raleigh Little Theatre, terraced with stone walls and planted with over 1,200 roses representing 60 varieties. A 2,000-seat stone amphitheater rises from the center, used for outdoor performances on summer evenings. The garden is free, open to the public, and almost entirely ignored by tourists who stick to downtown. Peak bloom happens in late April and early May, when the roses explode in color and the air smells impossibly sweet. This is where Raleigh couples have gotten engaged for 80 years, where families have picnicked for generations, and where the WPA\'s legacy still blooms.',
+            location: '301 Pogue St, Raleigh, NC 27607',
+            tip: 'Visit in late April for peak bloom. The amphitheater hosts summer Shakespeare performances.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/rose-garden-1.png',
@@ -668,8 +670,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Robertson Millpond Preserve',
             category: 'Secret Garden',
-            description: 'Only bald cypress habitat in Raleigh area. 85-acre serene forest perfect for kayaking. Unique ecosystem in Piedmont landscape.',
-            location: 'Wendell',
+            description: 'Bald cypress trees don\'t belong in the Piedmont—their natural range is the coastal plain, where swamps and blackwater rivers create the wet conditions they need. Robertson Millpond Preserve is a biological anomaly: 85 acres of bald cypress forest 30 minutes from downtown Raleigh, the only such habitat in the region. The millpond was created in the 1800s when a dam backed up the creek; the resulting wetland allowed cypress to colonize far outside their normal range. Today, you can kayak through cathedral-like stands of ancient cypress, their knees rising from the dark water, their canopy filtering the light into something that feels more like Louisiana than North Carolina. Bring your own kayak or canoe—there are no rentals. Arrive at dawn when mist rises from the water and the silence is absolute.',
+            location: 'Wendell, NC (about 25 minutes from downtown Raleigh)',
+            tip: 'Bring your own kayak—no rentals available. Dawn is best for photos and solitude.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/millpond-1.png',
@@ -714,9 +717,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Geodetic Survey Stones',
             category: 'Quirky Architecture',
-            description: 'Unusual arrangement of cut stones in Union Square — "Mini-Stonehenge." Hidden in plain sight with no signage. Historic surveying markers in mysterious pattern.',
-            location: 'Union Square',
-            tip: 'Look for stones arranged in geometric pattern',
+            description: 'In Union Square, arranged in a precise geometric pattern, sits a collection of cut granite stones that locals have nicknamed "Mini-Stonehenge." There\'s no sign, no plaque, no explanation—just stones arranged with obvious intentionality in the middle of a public park. The truth is more mundane but still fascinating: these are geodetic survey markers, placed in the late 1800s as part of the U.S. Coast and Geodetic Survey to establish precise geographic coordinates for mapping purposes. The stones mark calibration points and meridian lines. For surveyors, they\'re technical infrastructure. For everyone else, they\'re a mysterious arrangement hiding in plain sight, a reminder that even ordinary parks contain layers of history no one thinks to explain.',
+            location: 'Union Square Park, downtown Raleigh',
+            tip: 'Look near the center of the park for the stone pattern. Early morning offers the best light for photography.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/survey-stones.png',
@@ -729,9 +732,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Historic Raleigh Water Tower',
             category: 'Quirky Architecture',
-            description: '1886 water tower housing Raleigh\'s first municipal water system. Now The Tower Escapes (escape room venue). National Historic Site most people don\'t know about.',
-            location: 'Downtown',
-            tip: 'Book an escape room to see the interior',
+            description: 'Rising 90 feet above downtown, this Romanesque brick tower has been a Raleigh landmark since 1886—when it was the city\'s first municipal water system, pumping water to a growing capital. The tower held 350,000 gallons and represented cutting-edge infrastructure for its time. When modern water systems made it obsolete, the city couldn\'t bring itself to demolish something so beautiful. It sat empty for decades, a National Historic Landmark that most Raleighites walked past without a second glance. In 2019, entrepreneurs transformed the interior into The Tower Escapes, an escape room venue where solving puzzles unlocks rooms in the historic structure. It\'s the only way to see the inside—and one of the few chances to experience Raleigh history that most locals don\'t even know exists.',
+            location: '115 W Morgan St, Raleigh, NC 27601',
+            tip: 'Book an escape room experience to see the interior. The tower is lit at night and makes for dramatic photography.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/tower-1.png',
@@ -763,8 +766,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Mordecai Historic Park',
             category: 'Hidden History',
-            description: 'A quiet pocket of antebellum history just north of downtown. Includes the birthplace of President Andrew Johnson, relocated here piece by piece.',
-            location: 'Mordecai',
+            description: 'Just north of downtown, a pocket of antebellum Raleigh survives—the Mordecai plantation, preserved as a historic park with the oldest house in the city still on its original foundation. The main house dates to 1785. The grounds contain several other historic structures, including the birthplace of President Andrew Johnson, which was disassembled and moved here piece by piece to save it from demolition. Johnson was born in a tiny kitchen building in 1808, the son of a working-class Raleigh family, before rising to become Lincoln\'s vice president and the man who oversaw Reconstruction. The park offers a rare glimpse into antebellum Raleigh—both the grandeur of plantation life and the complicated history that underlies it.',
+            location: '1 Mimosa St, Raleigh, NC 27604',
+            tip: 'Guided tours run on the hour. The Andrew Johnson birthplace requires a tour to enter.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/mordecai.png',
@@ -777,8 +781,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Dr. M.T. Pope House Museum',
             category: 'Hidden History',
-            description: 'The ONLY African American house museum in the entire state of North Carolina. Built 1901, small museum with limited publicity. Important Civil Rights history site.',
-            location: 'South Wilmington Street',
+            description: 'North Carolina has no shortage of historic house museums, but the Dr. M.T. Pope House holds a distinction no other can claim: it\'s the only African American house museum in the entire state. Dr. Manassa Thomas Pope built this Queen Anne-style home in 1901, at the height of Jim Crow, establishing himself as one of Raleigh\'s most prominent Black physicians. The house served as both his residence and medical practice, treating Black patients who were turned away from white hospitals. Pope was also a civil rights leader, co-founding the North Carolina Mutual Life Insurance Company and advocating for Black suffrage. The museum receives almost no publicity—most Raleighites don\'t know it exists. Inside, artifacts and photographs tell the story of Black life in the segregated South, and of one man who built a legacy against the odds.',
+            location: '511 S Wilmington St, Raleigh, NC 27601',
+            tip: 'Tours by appointment. Call ahead—the museum operates on limited hours.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/pope-house-1.png',
@@ -795,9 +800,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Ray Price Harley Museum',
             category: 'Hidden History',
-            description: 'Racing bikes and trophies hidden on the second floor above a motorcycle dealership. Most people don\'t go upstairs at dealerships. Must ask to access.',
-            location: 'Ray Price Harley-Davidson',
-            tip: 'Ask staff for access to second floor museum',
+            description: 'Inside Ray Price Harley-Davidson—a functioning motorcycle dealership on Capital Boulevard—there\'s a second floor most customers never visit. Up there, hidden above the showroom floor, sits a world-class collection of vintage racing motorcycles, trophies, and memorabilia spanning decades of American motorcycle racing history. Ray Price was a legendary drag racer before he became a dealer; the museum preserves that legacy. Rare machines, championship hardware, and racing leathers share space with photographs from an era when motorcycle drag racing drew crowds in the tens of thousands. You have to ask to go upstairs. Most people buying motorcycles don\'t think to ask. That\'s why it qualifies as hidden.',
+            location: '1126 Capital Blvd, Raleigh, NC 27603',
+            tip: 'Just ask any staff member for access to the second-floor museum. It\'s free and open during business hours.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/harley-1.png',
@@ -814,25 +819,27 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Dorothea Dix Hospital Cemetery',
             category: 'Haunted & Mysterious',
-            description: 'Cemetery with ~900 patient burials (1859-1970) at rear of Dix Park. Only 275 gravesites remain after restoration. Former "lunatic asylum" with dark history. Dark History Tours offered.',
-            location: 'Rear of Dix Park',
+            description: 'At the rear of Dix Park, away from the sunflower fields and skyline views that draw weekend crowds, lies a small cemetery where approximately 900 patients of the former Dorothea Dix Hospital were buried between 1859 and 1970. The hospital—originally called the "Insane Asylum of North Carolina"—was the state\'s first psychiatric facility, and for over a century, patients who died there were buried in these grounds. Many graves were marked only with numbers, not names. A 2014 restoration project identified and restored 275 gravesites, adding proper markers and a memorial. The cemetery is quiet, shaded, and deeply unsettling in the way that all institutional burial grounds are. Dark History Tours offers occasional guided walks that explore both the cemetery and the broader history of mental health treatment in North Carolina.',
+            location: 'Rear of Dix Park (follow signs past the Big Field)',
+            tip: 'Visit at dusk for the most atmospheric experience. Dark History Tours runs occasional themed walks.',
           },
           {
             id: 'gem-20',
             type: 'hidden-gem',
             name: 'Spring Hill House & Hunter Cemetery',
             category: 'Haunted & Mysterious',
-            description: 'Oldest marked grave in Wake County (Theophilus Hunter Sr., 1798) — pre-dates Raleigh itself. Motion sensor triggered nightly on staircase. Visitors report hearing baby wails.',
-            location: 'NC State Centennial Campus',
-            tip: 'On campus but not well-marked',
+            description: 'Tucked away on NC State\'s Centennial Campus, surrounded by research buildings and startup incubators, stands one of the oldest structures in Wake County—and a cemetery whose oldest grave predates Raleigh itself. Theophilus Hunter Sr. was buried here in 1798, sixteen years before the city was even founded. The Spring Hill plantation house, built around 1790, still stands nearby, now serving as a faculty club. But the real draw for ghost hunters is the persistent reports of paranormal activity: motion sensors triggered nightly on the staircase, visitors hearing infant wails with no source, cold spots that defy explanation. NC State maintains the property with academic skepticism, but the legends persist.',
+            location: 'NC State Centennial Campus (look for Spring Hill Lane)',
+            tip: 'The cemetery is open to visitors but not well-marked. Look for the small graveyard behind the Spring Hill house.',
           },
           {
             id: 'gem-21',
             type: 'hidden-gem',
             name: 'Person Street Pharmacy',
             category: 'Quirky Specialty',
-            description: 'A functioning pharmacy with a tiny lunch counter that hasn\'t changed since 1910. The pimento cheese sandwich is the move.',
-            location: 'Person Street',
+            description: 'Step inside Person Street Pharmacy and you step back to 1910—the year the business opened. The pharmacy still functions as a pharmacy, filling prescriptions and selling bandages, but tucked in the back is a tiny lunch counter with eight stools and a menu that hasn\'t changed in decades. The pimento cheese sandwich is the move, served on white bread with a bag of chips and a Cheerwine. Old-timers from the Oakwood neighborhood have been eating here for fifty years. The counter is almost too small to notice; most people grab their prescriptions and leave without realizing there\'s food. That\'s the point. This isn\'t a restaurant pretending to be old. It\'s a lunch counter that simply never stopped being what it always was.',
+            location: '515 N Person St, Raleigh, NC 27604',
+            tip: 'Cash only at the lunch counter. The pimento cheese sandwich and a Cheerwine is the classic order.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/person-pharmacy.png',
@@ -845,8 +852,9 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Free Expression Tunnel',
             category: 'Quirky Specialty',
-            description: 'NC State graffiti tunnel connecting campuses since 1967. Constantly repainted (sometimes multiple times per day). Atlas Obscura featured. Students claim it as free speech zone.',
-            location: 'NC State Campus',
+            description: 'Since 1967, a pedestrian tunnel beneath the railroad tracks on NC State\'s campus has served as the university\'s unofficial free speech zone—a 100-yard canvas where anyone can paint anything at any time. The walls are repainted constantly, sometimes multiple times in a single day. Political statements, club advertisements, marriage proposals, memorial tributes, inside jokes, and pure artistic expression layer on top of each other in a constantly evolving collage. The paint is so thick in places that it drips like stalactites. Walking through the tunnel is like walking through the collective unconscious of NC State, with all its passion, humor, and occasional controversy on display. Featured on Atlas Obscura as one of America\'s most unusual free speech monuments.',
+            location: 'Between Main Campus and North Campus, NC State University',
+            tip: 'Bring paint if you want to add your own contribution—it\'s actively encouraged. Visit late at night to watch students painting.',
             images: [
               {
                 src: '/Raleigh/hidden-gems/free-expression-1.png',

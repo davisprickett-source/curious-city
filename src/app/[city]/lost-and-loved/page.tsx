@@ -59,8 +59,8 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
       />
 
       <main className="flex-1">
-        {/* Hero Header with Banner - Full Screen */}
-        <div className="relative min-h-screen flex flex-col">
+        {/* Hero Header with Banner - Exactly Viewport Height */}
+        <div className="relative h-[100dvh] flex flex-col">
           <img
             src={city.slug === 'minneapolis'
               ? "/Minneapolis/lost-and-loved/lovedlost-banner.png"

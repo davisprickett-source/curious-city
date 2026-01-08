@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo, memo } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { History } from '@/types/content'
@@ -82,6 +82,24 @@ const FRAME_COUNTS: Record<string, number> = {
   'portland-16': 125,
   'portland-17': 117,
   'portland-18': 125,
+
+  // Dallas sequences
+  'dallas-1': 98,
+  'dallas-2': 125,
+  'dallas-3': 125,
+  'dallas-4': 125,
+  'dallas-5': 81,
+  'dallas-6': 125,
+  'dallas-7': 125,
+  'dallas-8': 75,
+  'dallas-9': 125,
+  'dallas-10': 125,
+  'dallas-11': 80,
+  'dallas-12': 117,
+  'dallas-13': 125,
+  'dallas-14': 95,
+  'dallas-15': 125,
+  'dallas-16': 125,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
@@ -139,11 +157,12 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'tampa': 'tampa',
       'phoenix': 'phoenix',
       'raleigh': 'raleigh',
-      'portland': 'portland'
+      'portland': 'portland',
+      'dallas': 'dallas'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // Tampa, Raleigh, and Portland use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
-    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland'
+    // Tampa, Raleigh, Portland, and Dallas use underscore (frame_0001.jpg), others use dash (frame-0001.jpg)
+    const usesUnderscore = city === 'tampa' || city === 'raleigh' || city === 'portland' || city === 'dallas'
     const frameName = usesUnderscore ? `frame_${paddedNum}.jpg` : `frame-${paddedNum}.jpg`
     return `/sequences/${city}/${sequenceName}/${frameName}`
   }
@@ -281,11 +300,26 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     }
   }, [videoBlocks, scrollWeights])
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll()
-    return () => window.removeEventListener('scroll', handleScroll)
+  // Throttle scroll handler with requestAnimationFrame for smoother mobile performance
+  const rafRef = useRef<number | null>(null)
+  const throttledHandleScroll = useCallback(() => {
+    if (rafRef.current !== null) return // Skip if already scheduled
+    rafRef.current = requestAnimationFrame(() => {
+      handleScroll()
+      rafRef.current = null
+    })
   }, [handleScroll])
+
+  useEffect(() => {
+    window.addEventListener('scroll', throttledHandleScroll, { passive: true })
+    handleScroll() // Initial call
+    return () => {
+      window.removeEventListener('scroll', throttledHandleScroll)
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current)
+      }
+    }
+  }, [throttledHandleScroll, handleScroll])
 
   const getCurrentFramePath = () => {
     const currentBlock = videoBlocks[currentVideoIndex]
@@ -295,7 +329,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   }
 
   const framePath = getCurrentFramePath()
-  const frameOpacity = loadedFramesRef.current.has(framePath) ? 1 : 0.5
+  // Always use full opacity to prevent flashing on scroll - frames load fast enough
+  const frameOpacity = 1
 
   return (
     <>
@@ -348,13 +383,14 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       {/* Split Screen Section - starts below nav to make video flush */}
       <div className="lg:flex lg:flex-row pt-[57px]" ref={containerRef}>
         {/* Left Side: Video (Sticky on both mobile and desktop) */}
-        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:w-[70%] lg:h-screen lg:top-[57px] lg:mt-0 bg-white flex items-center justify-center relative z-20">
+        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:w-[70%] lg:h-screen lg:top-[57px] lg:mt-0 bg-white flex items-center justify-center relative z-20 will-change-transform">
           <img
             src={framePath}
             alt=""
-            className="w-full h-full object-cover lg:object-contain"
+            className="w-full h-full object-cover lg:object-contain will-change-transform"
             style={{
               opacity: frameOpacity,
+              transform: 'translateZ(0)', // Force GPU layer for smoother rendering
             }}
           />
 
@@ -366,11 +402,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         </div>
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
-        <div className="w-full lg:w-[30%] bg-white relative">
+        <div className="w-full lg:w-[30%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
           {/* Fade overlay - only fade the text on mobile at the top, positioned below video */}
-          {/* Calculate: 57px nav + 30vh video = position for top gradient */}
-          {/* Bottom gradient removed to avoid conflicts with Chrome's mobile nav bar */}
-          <div className="lg:hidden fixed left-0 right-0 h-16 bg-gradient-to-b from-white/80 via-white/40 to-transparent z-30 pointer-events-none" style={{ top: 'calc(57px + 30vh)' }} />
+          {/* Using fixed vh values instead of calc() to reduce mobile repaints */}
+          <div className="lg:hidden fixed left-0 right-0 h-16 bg-gradient-to-b from-white via-white/50 to-transparent z-30 pointer-events-none" style={{ top: 'calc(57px + 30vh)', willChange: 'transform', transform: 'translateZ(0)' }} />
 
           {/* Desktop fade overlays - fade text at top and bottom of visible area */}
           <div className="hidden lg:block fixed top-[25vh] right-0 w-[30%] h-24 bg-gradient-to-b from-white/90 via-white/60 to-transparent z-30 pointer-events-none" />
@@ -560,7 +595,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   )
 }
 
-function TextBlock({ block, isFirst }: { block: any; isFirst?: boolean }) {
+// Memoized TextBlock to prevent re-renders when video frame changes
+const TextBlock = memo(function TextBlock({ block, isFirst }: { block: any; isFirst?: boolean }) {
   switch (block.type) {
     case 'paragraph':
       return (
@@ -611,4 +647,4 @@ function TextBlock({ block, isFirst }: { block: any; isFirst?: boolean }) {
     default:
       return null
   }
-}
+})
