@@ -3421,8 +3421,8 @@ export const minneapolis: CityData = {
             description: 'The Minneapolis skyline transforms after dark. Downtown towers glow against the night sky, the 35W bridge lights up in blue, and the city reveals a different character — quieter, more contemplative, yet still electric.',
             media: {
               type: 'video',
-              src: 'https://videos.pexels.com/video-files/17153904/17153904-uhd_2560_1440_25fps.mp4',
-              poster: 'https://images.pexels.com/videos/17153904/pexels-photo-17153904.jpeg',
+              src: '',
+              poster: '',
               alt: 'Aerial drone footage of illuminated Minneapolis downtown at night',
               caption: 'Minneapolis skyline after dark — drone footage',
               duration: '0:14',
@@ -3436,8 +3436,8 @@ export const minneapolis: CityData = {
             description: 'The only stone arch bridge ever built across the Mississippi. Completed in 1883 to carry trains over St. Anthony Falls, it now carries pedestrians and cyclists with one of the best views in the city.',
             media: {
               type: 'video',
-              src: 'https://videos.pexels.com/video-files/3720032/3720032-uhd_2732_1440_25fps.mp4',
-              poster: 'https://images.pexels.com/videos/3720032/free-video-3720032.jpg',
+              src: '',
+              poster: '',
               alt: 'Stone Arch Bridge spanning the Mississippi River in winter',
               caption: 'Stone Arch Bridge — Minneapolis\'s most iconic landmark',
               duration: '0:19',
@@ -3453,7 +3453,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis Chain of Lakes photo from Meet Minneapolis or local photographer
-                src: 'https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Peaceful lake water under blue skies with green trees along shore',
                 caption: 'The Chain of Lakes — Minneapolis\'s urban oasis',
               }
@@ -3467,8 +3467,8 @@ export const minneapolis: CityData = {
             description: 'The only major waterfall on the Mississippi River. For the Dakota people, it was a sacred site called Owáhmenah — "falling water." For European settlers, it powered the flour mills that built Minneapolis. The ruins remain, haunting and beautiful.',
             media: {
               type: 'video',
-              src: 'https://videos.pexels.com/video-files/855668/855668-hd_1920_1080_25fps.mp4',
-              poster: 'https://images.pexels.com/videos/855668/free-video-855668.jpg',
+              src: '',
+              poster: '',
               alt: 'Waterfall cascading over rocks with forest surroundings',
               caption: 'St. Anthony Falls — the waterfall that powered Minneapolis',
               duration: '0:11',
@@ -3483,8 +3483,8 @@ export const minneapolis: CityData = {
             description: 'A 53-foot waterfall in the heart of the city, immortalized by Longfellow in "The Song of Hiawatha." The gorge below offers trails through old-growth forest. In summer, water roars over limestone. In winter, it freezes into cathedral spires of ice.',
             media: {
               type: 'video',
-              src: 'https://videos.pexels.com/video-files/5345336/5345336-uhd_2560_1440_30fps.mp4',
-              poster: 'https://images.pexels.com/videos/5345336/pexels-photo-5345336.jpeg',
+              src: '',
+              poster: '',
               alt: 'Waterfall cascading through forest',
               caption: 'Minnehaha Falls — a 53-foot waterfall in the city',
               duration: '0:16',
@@ -3499,7 +3499,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis parkway photo
-                src: 'https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Tree-lined path through urban park with autumn colors',
                 caption: 'Fall along the Grand Rounds parkway system',
               }
@@ -3515,7 +3515,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis City Hall or Foshay Tower photo
-                src: 'https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Historic architecture and modern skyline at dusk',
                 caption: 'Minneapolis architecture — where history meets modernity',
               }
@@ -3530,7 +3530,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Mill City Museum photo from Meet Minneapolis
-                src: 'https://images.pexels.com/photos/931113/pexels-photo-931113.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Historic industrial architecture preserved alongside modern development',
                 caption: 'The Mill District — built on flour and water power',
               }
@@ -3546,7 +3546,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis Central Library photo
-                src: 'https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Modern glass architecture with dramatic interior lighting',
                 caption: 'Minneapolis Central Library — César Pelli\'s light-filled design',
               }
@@ -3561,7 +3561,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Orpheum Theatre interior photo
-                src: 'https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Historic theater interior with ornate architectural details',
                 caption: 'Hennepin Avenue\'s grand theaters',
               }
@@ -3577,7 +3577,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Northeast Minneapolis mural or street scene
-                src: 'https://images.pexels.com/photos/5802549/pexels-photo-5802549.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Urban neighborhood with creative businesses and street art',
                 caption: 'Northeast Minneapolis — arts, murals, and microbreweries',
               }
@@ -3592,7 +3592,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Uptown Minneapolis street scene
-                src: 'https://images.pexels.com/photos/2383277/pexels-photo-2383277.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Bustling urban intersection with shops and pedestrians',
                 caption: 'Uptown Minneapolis — Lake and Hennepin corner',
               }
@@ -3608,7 +3608,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Spoonbridge and Cherry photo from Meet Minneapolis
-                src: 'https://images.pexels.com/photos/931113/pexels-photo-931113.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Public sculpture park with contemporary art installations',
                 caption: 'Minneapolis Sculpture Garden — 11 acres of contemporary art',
               }
@@ -3623,7 +3623,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic George Floyd Square memorial photo
-                src: 'https://images.pexels.com/photos/248883/pexels-photo-248883.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Community memorial and gathering space',
                 caption: 'George Floyd Square — a living memorial at 38th and Chicago',
               }
@@ -3639,7 +3639,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis winter scene - frozen lake or skyway
-                src: 'https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Frozen urban landscape with snow-covered trees and ice',
                 caption: 'Winter on the Chain of Lakes',
               }
@@ -3654,7 +3654,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Minneapolis fall foliage photo - parkway or lakes
-                src: 'https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Autumn trees with vibrant fall colors along tree-lined path',
                 caption: 'Peak fall color along Minneapolis parkways',
               }
@@ -3670,7 +3670,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic First Avenue exterior night photo
-                src: 'https://images.pexels.com/photos/10546892/pexels-photo-10546892.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Iconic nightclub exterior with marquee and city lights',
                 caption: 'First Avenue — where Prince recorded Purple Rain',
               }
@@ -3685,7 +3685,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Hennepin Avenue night scene photo
-                src: 'https://images.pexels.com/photos/10546892/pexels-photo-10546892.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Urban street at night with theater marquees and city lights',
                 caption: 'Hennepin Avenue — Minneapolis\'s entertainment district',
               }
@@ -3701,7 +3701,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic Midtown Global Market photo
-                src: 'https://images.pexels.com/photos/5802549/pexels-photo-5802549.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Bustling food market with diverse vendors and communal seating',
                 caption: 'Midtown Global Market — the world under one roof',
               }
@@ -3716,7 +3716,7 @@ export const minneapolis: CityData = {
             images: [
               {
                 // TODO: Replace with authentic North Loop restaurant photo
-                src: 'https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                src: '',
                 alt: 'Modern restaurant interior with industrial design elements',
                 caption: 'North Loop restaurants — warehouse chic meets craft cuisine',
               }
