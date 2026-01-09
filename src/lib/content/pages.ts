@@ -1,6 +1,7 @@
 import { getCity, getAllCities } from '@/data/cities'
 import { getHistoryForCity } from '@/data/history'
 import type { History } from '@/types/content'
+import type { Article } from '@/types/article'
 
 /**
  * Extract the first video frame as thumbnail for video-sequence essays
@@ -102,33 +103,30 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
 
   const pageCards: PageCardData[] = []
 
-  // 1. History Essays - get the first/primary essay for this city
+  // 1. History Essays - get all essays for this city
   const cityHistory = getHistoryForCity(citySlug)
   if (cityHistory.length > 0) {
     // Filter out "-premium" versions (those should be accessed via /articles route)
-    // Prefer the premium video version if available, otherwise use the standard version
     const nonPremiumHistory = cityHistory.filter(h => !h.slug.endsWith('-premium'))
 
-    // Sort by publishedAt to get the most recent or featured essay
+    // Sort by publishedAt to get the most recent first
     const sortedHistory = [...nonPremiumHistory].sort((a, b) => {
       if (!a.publishedAt || !b.publishedAt) return 0
       return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
     })
 
-    if (sortedHistory.length > 0) {
-      const primaryEssay = sortedHistory[0]
-
+    // Add all history essays as page cards
+    for (const essay of sortedHistory) {
       // Check if there's a premium video version available
-      const premiumSlug = `${primaryEssay.slug}-premium`
+      const premiumSlug = `${essay.slug}-premium`
       const premiumVersion = cityHistory.find(h => h.slug === premiumSlug)
 
       // Use premium version for article link if it exists and has video sequences
       const hasVideoSequences = premiumVersion?.blocks.some(b => b.type === 'video-sequence')
-      const targetEssay = (hasVideoSequences && premiumVersion) ? premiumVersion : primaryEssay
+      const targetEssay = (hasVideoSequences && premiumVersion) ? premiumVersion : essay
 
-      // Remove "-premium" suffix from the slug for cleaner URLs
-      // The article page will still access the premium content via the base slug
-      const displaySlug = primaryEssay.slug
+      // Use the base slug for cleaner URLs
+      const displaySlug = essay.slug
 
       // Get thumbnail - prefer first video frame for video essays, then heroImage
       const thumbnail = hasVideoSequences
@@ -147,6 +145,28 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
         publishedAt: targetEssay.publishedAt,
       })
     }
+  }
+
+  // 1b. Native Articles - load from city's articles directory
+  try {
+    const articlesModule = await import(`@/data/cities/${citySlug}/articles`)
+    const nativeArticles: Article[] = articlesModule.default || articlesModule.articles || []
+
+    for (const article of nativeArticles) {
+      pageCards.push({
+        type: 'page',
+        pageType: 'history',
+        citySlug: city.slug,
+        cityName: city.name,
+        title: article.title,
+        teaser: article.subtitle || article.excerpt || `Discover more about ${city.name}`,
+        href: `/${city.slug}/articles/${article.slug}`,
+        thumbnail: article.featuredImage?.src,
+        publishedAt: article.publishedAt,
+      })
+    }
+  } catch {
+    // City might not have native articles yet, that's okay
   }
 
   // 2. Dark History section

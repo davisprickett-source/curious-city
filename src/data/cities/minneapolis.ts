@@ -34,12 +34,12 @@ export const minneapolis: CityData = {
         title: 'Events This Week',
         intro: 'Happening now and coming up — pop-ups, openings, and things you shouldn\'t miss in Minneapolis.',
         items: [
-          // Event 1: Concert happening today
+          // Event 1: Concert happening today (Friday Jan 9)
           {
             title: 'First Avenue Punk Night: Local Legends Reunion',
             description: 'The legendary venue that launched Prince hosts a reunion of Minneapolis punk icons. Three bands, one unforgettable night in the room where it all started.',
-            startDate: '2026-01-07T19:00:00',
-            endDate: '2026-01-07T23:30:00',
+            startDate: '2026-01-09T19:00:00',
+            endDate: '2026-01-09T23:30:00',
             location: 'First Avenue, Downtown',
             category: 'concerts',
             tags: ['music', 'nightlife'],
@@ -50,12 +50,12 @@ export const minneapolis: CityData = {
             },
             featured: true,
           },
-          // Event 2: Farmers market today
+          // Event 2: Farmers market today (Friday Jan 9)
           {
             title: 'Mill City Farmers Market Winter Edition',
             description: 'Year-round indoor market in the historic mill ruins. Local produce, artisan goods, and hot food from Minneapolis vendors.',
-            startDate: '2026-01-07T08:00:00',
-            endDate: '2026-01-07T13:00:00',
+            startDate: '2026-01-09T08:00:00',
+            endDate: '2026-01-09T13:00:00',
             location: 'Mill City Museum, Mill District',
             category: 'markets',
             tags: ['food', 'free', 'outdoor'],
@@ -65,12 +65,12 @@ export const minneapolis: CityData = {
               alt: 'Mill City Farmers Market with vendors and historic mill backdrop',
             },
           },
-          // Event 3: Free Thursday tomorrow
+          // Event 3: Art event today (Friday Jan 9)
           {
-            title: 'Walker Art Center: Free Thursday Night',
+            title: 'Walker Art Center: Free Friday Night',
             description: 'Explore contemporary art with free admission to galleries, plus live music in the lobby and discounted drinks at Esker Grove.',
-            startDate: '2026-01-08T17:00:00',
-            endDate: '2026-01-08T21:00:00',
+            startDate: '2026-01-09T17:00:00',
+            endDate: '2026-01-09T21:00:00',
             location: 'Walker Art Center, Uptown',
             category: 'art',
             tags: ['art', 'free'],
@@ -172,11 +172,11 @@ export const minneapolis: CityData = {
             category: 'sports',
             tags: ['outdoor', 'free'],
           },
-          // Event 11: Seasonal this month
+          // Event 11: Seasonal this month (ongoing)
           {
             title: 'Midtown Greenway Ice Trail',
             description: 'The sunken bike path transforms into a 5-mile skating trail through the heart of Minneapolis. Lit at night, plowed and maintained daily.',
-            startDate: '2026-01-07T00:00:00',
+            startDate: '2026-01-01T00:00:00',
             endDate: '2026-02-28T23:59:00',
             isAllDay: true,
             location: 'Midtown Greenway (multiple access points)',
@@ -188,11 +188,11 @@ export const minneapolis: CityData = {
               alt: 'Ice skating on the Midtown Greenway at night',
             },
           },
-          // Event 12: Closing - last chance
+          // Event 12: Closing - last chance (ongoing)
           {
             title: 'Last Weeks: Can Can Wonderland Mini Golf',
             description: 'The artist-designed mini golf course and bar announces closure. Final chance to play 18 holes of the weirdest, most creative course in the Midwest.',
-            startDate: '2026-01-07T12:00:00',
+            startDate: '2026-01-01T12:00:00',
             endDate: '2026-01-31T23:00:00',
             location: 'Can Can Wonderland, St. Paul',
             category: 'nightlife',
@@ -246,12 +246,12 @@ export const minneapolis: CityData = {
             featured: true,
           },
           // === MORE MOCK EVENTS FOR TESTING ===
-          // Today - more events
+          // Today (Friday Jan 9) - more events
           {
             title: 'Acme Comedy Club: Stand-Up Showcase',
             description: 'Five of the Midwest\'s funniest comedians take the stage. Two-drink minimum, unlimited laughs.',
-            startDate: '2026-01-08T20:00:00',
-            endDate: '2026-01-08T22:30:00',
+            startDate: '2026-01-09T20:00:00',
+            endDate: '2026-01-09T22:30:00',
             location: 'Acme Comedy Co., Downtown',
             category: 'comedy',
             tags: ['comedy', 'nightlife'],
@@ -260,8 +260,8 @@ export const minneapolis: CityData = {
           {
             title: 'Modist Brewing: New IPA Release Party',
             description: 'Be first to try "False Pattern" — a hazy IPA with local Mighty Axe hops. Live DJ, food trucks, brewery tours.',
-            startDate: '2026-01-08T16:00:00',
-            endDate: '2026-01-08T22:00:00',
+            startDate: '2026-01-09T16:00:00',
+            endDate: '2026-01-09T22:00:00',
             location: 'Modist Brewing, North Loop',
             category: 'food-drink',
             tags: ['beer', 'food', 'music'],
@@ -270,18 +270,18 @@ export const minneapolis: CityData = {
           {
             title: 'Yoga in the Skyways',
             description: 'Free morning yoga in the downtown skyway system. Mats provided. Perfect for the lunch crowd escape.',
-            startDate: '2026-01-08T07:00:00',
-            endDate: '2026-01-08T08:00:00',
+            startDate: '2026-01-09T07:00:00',
+            endDate: '2026-01-09T08:00:00',
             location: 'IDS Center Skyway, Downtown',
             category: 'sports',
             tags: ['fitness', 'free'],
           },
-          // Tomorrow
+          // Tomorrow (Saturday Jan 10)
           {
             title: 'Bryant-Lake Bowl: Burlesque Night',
             description: 'The legendary bowling alley/theater hosts its monthly burlesque revue. Campy, clever, and very Minneapolis.',
-            startDate: '2026-01-09T21:00:00',
-            endDate: '2026-01-09T23:30:00',
+            startDate: '2026-01-10T21:00:00',
+            endDate: '2026-01-10T23:30:00',
             location: 'Bryant-Lake Bowl, Uptown',
             category: 'nightlife',
             tags: ['nightlife', 'theater'],
@@ -290,23 +290,23 @@ export const minneapolis: CityData = {
           {
             title: 'Minneapolis Farmers Market: Winter Indoor',
             description: 'The historic market moves indoors with local produce, meats, cheeses, and crafts from 100+ Minnesota vendors.',
-            startDate: '2026-01-09T06:00:00',
-            endDate: '2026-01-09T13:00:00',
+            startDate: '2026-01-10T06:00:00',
+            endDate: '2026-01-10T13:00:00',
             location: 'Minneapolis Farmers Market, Lyndale',
             category: 'markets',
             tags: ['food', 'shopping', 'free'],
           },
           {
-            title: 'Mia Third Thursday: After Dark',
-            description: 'The Minneapolis Institute of Art stays open late with live music, cash bar, and themed gallery tours.',
-            startDate: '2026-01-09T18:00:00',
-            endDate: '2026-01-09T21:00:00',
+            title: 'Mia Saturday Art Lab',
+            description: 'The Minneapolis Institute of Art hosts hands-on art activities for all ages. Free admission, free activities.',
+            startDate: '2026-01-10T11:00:00',
+            endDate: '2026-01-10T15:00:00',
             location: 'Minneapolis Institute of Art',
             category: 'art',
-            tags: ['art', 'free', 'nightlife'],
+            tags: ['art', 'free', 'family-friendly'],
             href: 'https://artsmia.org',
           },
-          // This weekend - Friday
+          // This weekend - Saturday Jan 10
           {
             title: 'Icehouse: Jazz Residency with Atlantis Quartet',
             description: 'The acclaimed local jazz ensemble kicks off their winter residency. Intimate room, world-class improvisation.',

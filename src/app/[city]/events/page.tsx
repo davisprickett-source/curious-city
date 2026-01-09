@@ -6,11 +6,15 @@ import { ShareLinks, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { DayEventRow } from '@/components/events/DayEventRow'
 import { CategoryFilterPills } from '@/components/events/CategoryFilterPills'
-import { filterEventsByCategories } from '@/utils/eventCategoryUtils'
+import { TimePeriodTabs } from '@/components/events/TimePeriodTabs'
+import { filterEventsByCategories, EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
+import { filterEventsByDateRange, getPeriodFromParams, getDateRangeLabel } from '@/utils/eventDateFilters'
 import {
   filterActiveEvents,
   sortEventsByDate,
   groupEventsByDate,
+  getEventDisplayDate,
+  getEventDisplayTime,
 } from '@/utils/eventStatus'
 import { parseDate, isToday as checkIsToday, isTomorrow as checkIsTomorrow } from '@/utils/dateUtils'
 import type { EventItem, EventsContentItem } from '@/types/content'
@@ -18,7 +22,7 @@ import type { EventCategory } from '@/utils/eventCategoryUtils'
 
 interface PageProps {
   params: Promise<{ city: string }>
-  searchParams: Promise<{ categories?: string }>
+  searchParams: Promise<{ categories?: string; period?: string; date?: string }>
 }
 
 export async function generateStaticParams() {
@@ -42,12 +46,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CityEventsPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
-  const { categories: categoriesParam } = await searchParams
+  const { categories: categoriesParam, period: periodParam, date: dateParam } = await searchParams
   const city = await getCity(slug)
 
   if (!city) {
     notFound()
   }
+
+  // Determine time period from URL
+  const { period, customDate } = getPeriodFromParams(periodParam, dateParam)
 
   // Get selected categories from URL
   const selectedCategories = categoriesParam
@@ -58,23 +65,25 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
   const eventsSections = await getCityEvents(slug) as EventsContentItem[]
   const allEvents: EventItem[] = eventsSections.flatMap((section) => section.items)
 
-  // Filter to only active events
+  // SERVER-SIDE FILTERING: Only load events for the selected time period
+  // This keeps the payload small regardless of total event count
   const activeEvents = filterActiveEvents(allEvents)
+  const dateFilteredEvents = filterEventsByDateRange(activeEvents, period, customDate)
 
-  // Filter by selected categories
-  const filteredEvents = filterEventsByCategories(activeEvents, selectedCategories)
+  // Client-side category filtering within the already-loaded slice
+  const filteredEvents = filterEventsByCategories(dateFilteredEvents, selectedCategories)
 
   // Sort and group by date
   const sortedEvents = sortEventsByDate(filteredEvents)
   const groupedEvents = groupEventsByDate(sortedEvents)
 
-  // Get featured events (top featured or high relevance)
-  const featuredEvents = sortedEvents
-    .filter(e => e.featured || (e.relevanceScore && e.relevanceScore >= 70))
-    .slice(0, 6)
+  // Get featured events (only show when no filters active)
+  const featuredEvents = period === 'week' && selectedCategories.length === 0
+    ? sortedEvents.filter(e => e.featured || (e.relevanceScore && e.relevanceScore >= 70)).slice(0, 6)
+    : []
 
-  // Determine which days to show expanded (first 4 days)
-  const EXPANDED_DAYS = 4
+  // Date range label for display
+  const dateRangeLabel = getDateRangeLabel(period, customDate)
 
   return (
     <>
@@ -88,7 +97,7 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
       <main className="flex-1 bg-white">
         {/* Header */}
         <div className="container-page pt-6 pb-4">
-          <div className="flex items-baseline justify-between gap-4">
+          <div className="flex items-baseline justify-between gap-4 mb-4">
             <h1 className="text-2xl md:text-3xl font-bold text-neutral-900">
               Events in {city.name}
             </h1>
@@ -98,11 +107,21 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 
         {/* Sticky Filter Bar */}
         <div className="sticky top-14 z-20 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
-          <div className="container-page">
-            <Suspense fallback={<div className="h-12" />}>
+          <div className="container-page py-3 space-y-3">
+            {/* Time Period Tabs */}
+            <Suspense fallback={<div className="h-10" />}>
+              <TimePeriodTabs
+                currentPeriod={period}
+                currentDate={customDate}
+                citySlug={city.slug}
+              />
+            </Suspense>
+
+            {/* Category Filter Pills */}
+            <Suspense fallback={<div className="h-10" />}>
               <CategoryFilterPills
                 selectedCategories={selectedCategories}
-                events={activeEvents}
+                events={dateFilteredEvents}
               />
             </Suspense>
           </div>
@@ -110,10 +129,20 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 
         {/* Events Content */}
         <div className="py-6">
+          {/* Date range indicator */}
+          <div className="container-page mb-4">
+            <p className="text-sm text-neutral-500">
+              Showing events for <span className="font-medium text-neutral-700">{dateRangeLabel}</span>
+              {filteredEvents.length > 0 && (
+                <span className="text-neutral-400"> ({filteredEvents.length} event{filteredEvents.length !== 1 ? 's' : ''})</span>
+              )}
+            </p>
+          </div>
+
           {filteredEvents.length > 0 ? (
             <>
               {/* Featured Events Row */}
-              {featuredEvents.length > 0 && selectedCategories.length === 0 && (
+              {featuredEvents.length > 0 && (
                 <section className="mb-8">
                   <div className="flex items-center gap-3 mb-3 px-4">
                     <h2 className="text-lg font-bold text-accent-600">Featured</h2>
@@ -127,28 +156,13 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
                 </section>
               )}
 
-              {/* Day Rows */}
-              {groupedEvents.map((group, index) => {
-                // Parse the date from the group
-                // The date string is formatted like "Wednesday, January 8, 2026" or "Today", "Tomorrow"
+              {/* Day Rows - All expanded since we're showing a limited time range */}
+              {groupedEvents.map((group) => {
                 const dateStr = group.date
                 const firstEvent = group.events[0]
                 const eventDate = parseDate(firstEvent.startDate)
                 const isToday = checkIsToday(eventDate)
                 const isTomorrow = checkIsTomorrow(eventDate)
-
-                // Only show first N days expanded
-                if (index >= EXPANDED_DAYS) {
-                  return (
-                    <CollapsedDayRow
-                      key={dateStr}
-                      dateLabel={dateStr}
-                      eventCount={group.events.length}
-                      events={group.events}
-                      date={eventDate}
-                    />
-                  )
-                }
 
                 return (
                   <DayEventRow
@@ -161,15 +175,17 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
                 )
               })}
             </>
-          ) : activeEvents.length > 0 ? (
+          ) : dateFilteredEvents.length > 0 ? (
             <div className="text-center py-12">
-              <p className="text-neutral-500 mb-2">No events match your current filters.</p>
+              <p className="text-neutral-500 mb-2">No events match your selected categories.</p>
               <p className="text-sm text-neutral-400">Try selecting different categories above.</p>
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-neutral-500 mb-2">No events listed for {city.name} yet.</p>
-              <p className="text-sm text-neutral-400">Check back soon for upcoming events!</p>
+              <p className="text-neutral-500 mb-2">No events found for {dateRangeLabel.toLowerCase()}.</p>
+              <p className="text-sm text-neutral-400">
+                Try selecting a different time period or check back later.
+              </p>
             </div>
           )}
         </div>
@@ -181,9 +197,6 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
 }
 
 // Featured event card (larger format)
-import { EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
-import { getEventDisplayDate, getEventDisplayTime } from '@/utils/eventStatus'
-
 function FeaturedEventCard({ event }: { event: EventItem }) {
   const categoryMeta = EVENT_CATEGORIES[event.category]
   const displayDate = getEventDisplayDate(event)
@@ -245,46 +258,5 @@ function FeaturedEventCard({ event }: { event: EventItem }) {
         </div>
       </div>
     </a>
-  )
-}
-
-// Collapsed day row (for days beyond the first few)
-function CollapsedDayRow({
-  dateLabel,
-  eventCount,
-  events,
-  date
-}: {
-  dateLabel: string
-  eventCount: number
-  events: EventItem[]
-  date: Date
-}) {
-  // This is a server component, but we need client interactivity
-  // For now, render as a simple expandable section
-  return (
-    <details className="mb-4 group">
-      <summary className="cursor-pointer list-none px-4 py-3 bg-neutral-50 hover:bg-neutral-100 transition-colors rounded-lg mx-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <svg
-              className="w-4 h-4 text-neutral-400 transition-transform group-open:rotate-90"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-            <span className="font-semibold text-neutral-900">{dateLabel}</span>
-          </div>
-          <span className="text-xs text-neutral-400 bg-neutral-200 px-2 py-0.5 rounded-full">
-            {eventCount} event{eventCount !== 1 ? 's' : ''}
-          </span>
-        </div>
-      </summary>
-      <div className="mt-2">
-        <DayEventRow date={date} events={events} />
-      </div>
-    </details>
   )
 }

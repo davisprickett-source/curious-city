@@ -153,14 +153,25 @@ export function filterEvents(
  * Convert NormalizedEvent to EventItem (for cities.ts)
  */
 export function normalizedToEventItem(event: NormalizedEvent): EventItem {
-  // Map source categories to our categories
-  const categoryMap: Record<string, EventItem['category']> = {
-    event: 'event',
-    seasonal: 'seasonal',
-    popup: 'popup',
-    opening: 'opening',
-    closing: 'closing',
-    limited: 'limited',
+  // Infer category from event tags and title
+  function inferCategory(): EventItem['category'] {
+    const tags = event.tags?.map(t => t.toLowerCase()) || []
+    const title = event.title.toLowerCase()
+    const desc = event.description.toLowerCase()
+    const text = `${title} ${desc} ${tags.join(' ')}`
+
+    if (text.includes('comedy') || text.includes('stand-up') || text.includes('improv')) return 'comedy'
+    if (text.includes('concert') || text.includes('live music') || text.includes('band') || text.includes('jazz') || text.includes('orchestra')) return 'concerts'
+    if (text.includes('dj') || text.includes('club') || text.includes('dance party') || text.includes('nightlife') || text.includes('karaoke')) return 'nightlife'
+    if (text.includes('food') || text.includes('beer') || text.includes('wine') || text.includes('tasting') || text.includes('brewery') || text.includes('restaurant')) return 'food-drink'
+    if (text.includes('art') || text.includes('gallery') || text.includes('exhibition') || text.includes('museum')) return 'art'
+    if (text.includes('theater') || text.includes('theatre') || text.includes('play') || text.includes('musical') || text.includes('film') || text.includes('movie')) return 'theater'
+    if (text.includes('market') || text.includes('fair') || text.includes('craft') || text.includes('vintage') || text.includes('swap')) return 'markets'
+    if (text.includes('sport') || text.includes('game') || text.includes('race') || text.includes('fitness') || text.includes('yoga')) return 'sports'
+
+    // Default to concerts for music-related, food-drink for others
+    if (tags.includes('music')) return 'concerts'
+    return 'food-drink'
   }
 
   return {
@@ -169,7 +180,7 @@ export function normalizedToEventItem(event: NormalizedEvent): EventItem {
     startDate: event.startDate,
     endDate: event.endDate,
     location: event.venue ? `${event.venue}, ${event.city}` : event.city,
-    category: event.category ? categoryMap[event.category] || 'event' : 'event',
+    category: inferCategory(),
     tags: event.tags,
     href: event.url,
     image: event.image

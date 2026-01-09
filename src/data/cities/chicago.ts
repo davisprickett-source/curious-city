@@ -37,7 +37,7 @@ export const chicago: CityData = {
             endDate: '2025-12-28T22:00:00',
             isAllDay: false,
             location: 'Millennium Park',
-            category: 'seasonal',
+            category: 'art',
             tags: ['free', 'family-friendly', 'outdoor'],
             image: {
               src: '/images/events/millennium-park-lights.jpg',
@@ -50,7 +50,7 @@ export const chicago: CityData = {
             startDate: '2025-12-26T10:00:00',
             endDate: '2025-12-26T20:00:00',
             location: 'Art Institute of Chicago',
-            category: 'closing',
+            category: 'art',
             tags: ['art', 'museum'],
             href: 'https://www.artic.edu',
             image: {
@@ -64,7 +64,7 @@ export const chicago: CityData = {
             startDate: '2025-12-27T20:00:00',
             endDate: '2025-12-27T23:00:00',
             location: 'Logan Square (address sent upon RSVP)',
-            category: 'popup',
+            category: 'comedy',
             tags: ['comedy', 'nightlife'],
             href: 'https://example.com/comedy-rsvp',
           },
@@ -74,7 +74,7 @@ export const chicago: CityData = {
             startDate: '2025-12-31T19:00:00',
             endDate: '2026-01-01T01:00:00',
             location: 'Navy Pier',
-            category: 'event',
+            category: 'nightlife',
             tags: ['free', 'family-friendly', 'fireworks'],
             image: {
               src: '/images/events/navy-pier-nye.jpg',
@@ -87,7 +87,7 @@ export const chicago: CityData = {
             startDate: '2025-12-28T11:00:00',
             endDate: '2025-12-28T18:00:00',
             location: 'Chicago Riverwalk',
-            category: 'seasonal',
+            category: 'markets',
             tags: ['market', 'shopping', 'outdoor'],
           },
           {
@@ -96,7 +96,7 @@ export const chicago: CityData = {
             startDate: '2025-12-28T21:00:00',
             endDate: '2025-12-28T02:00:00',
             location: 'Green Mill Cocktail Lounge, Uptown',
-            category: 'event',
+            category: 'concerts',
             tags: ['music', 'jazz', 'historic'],
             href: 'https://greenmilljazz.com',
           },
@@ -106,7 +106,7 @@ export const chicago: CityData = {
             startDate: '2025-12-29T14:00:00',
             endDate: '2025-12-29T18:00:00',
             location: 'Pilsen Community Center',
-            category: 'event',
+            category: 'food-drink',
             tags: ['food', 'competition'],
           },
           {
@@ -115,7 +115,7 @@ export const chicago: CityData = {
             startDate: '2026-01-02T18:00:00',
             endDate: '2026-01-02T21:00:00',
             location: 'Museum of Contemporary Art Chicago',
-            category: 'opening',
+            category: 'art',
             tags: ['art', 'museum', 'exclusive'],
             href: 'https://mcachicago.org',
           }

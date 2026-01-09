@@ -1,3 +1,5 @@
 export { EventCard } from './EventCard'
 export { DayEventRow } from './DayEventRow'
 export { CategoryFilterPills } from './CategoryFilterPills'
+export { TimePeriodTabs } from './TimePeriodTabs'
+export type { TimePeriod } from './TimePeriodTabs'

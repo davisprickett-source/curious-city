@@ -321,12 +321,25 @@ export function convertLegacyToEventItem(
     date?: string
     time?: string
     location?: string
-    category?: 'event' | 'opening' | 'closing' | 'seasonal' | 'limited' | 'popup'
+    category?: string
     href?: string
     image?: { src: string; alt: string }
   },
   fallbackDate: string = new Date().toISOString()
 ): EventItem {
+  // Map old categories to new genre-based categories
+  function mapLegacyCategory(oldCategory?: string): EventItem['category'] {
+    const mapping: Record<string, EventItem['category']> = {
+      'event': 'concerts',
+      'opening': 'food-drink',
+      'closing': 'food-drink',
+      'seasonal': 'markets',
+      'limited': 'food-drink',
+      'popup': 'food-drink',
+    }
+    return oldCategory && mapping[oldCategory] ? mapping[oldCategory] : 'concerts'
+  }
+
   return {
     title: legacy.title,
     description: legacy.description,
@@ -334,6 +347,6 @@ export function convertLegacyToEventItem(
     href: legacy.href,
     image: legacy.image,
     startDate: fallbackDate, // This would need manual conversion
-    category: legacy.category || 'event',
+    category: mapLegacyCategory(legacy.category),
   }
 }

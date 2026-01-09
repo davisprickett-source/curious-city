@@ -120,7 +120,7 @@ export function validateAllEvents(events: EventItem[], daysThreshold: number = 7
  */
 export function generateEventTemplate(
   title: string = 'Event Title',
-  category: EventItem['category'] = 'event'
+  category: EventItem['category'] = 'concerts'
 ): string {
   const now = new Date()
   const tomorrow = new Date(now)

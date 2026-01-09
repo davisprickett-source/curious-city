@@ -5,7 +5,6 @@ import { routes, citySections, type AnyCitySection } from '@/lib/routes'
 import { CitySelector } from './CitySelector'
 import { FilterBar } from './FilterBar'
 import { PremiumMobileMenu } from '@/components/PremiumMobileMenu'
-import type { EventView } from '@/components/EventFilter'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
 
 interface UnifiedNavProps {
@@ -15,7 +14,6 @@ interface UnifiedNavProps {
   currentSection?: AnyCitySection
 
   // Filter state (from URL searchParams)
-  eventView?: EventView
   eventCategories?: EventCategory[]
   sceneCategory?: string
   curiosityCategory?: string
@@ -33,7 +31,6 @@ export function UnifiedNav({
   citySlug,
   cityName,
   currentSection,
-  eventView,
   eventCategories,
   sceneCategory,
   curiosityCategory,
@@ -97,7 +94,6 @@ export function UnifiedNav({
               <FilterBar
                 currentSection={currentSection}
                 citySlug={citySlug}
-                eventView={eventView}
                 eventCategories={eventCategories}
                 sceneCategory={sceneCategory}
                 curiosityCategory={curiosityCategory}

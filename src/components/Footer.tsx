@@ -21,6 +21,7 @@ const cities = [
   { href: '/portland', label: 'Portland' },
   { href: '/raleigh', label: 'Raleigh' },
   { href: '/salt-lake-city', label: 'Salt Lake City' },
+  { href: '/seattle', label: 'Seattle' },
   { href: '/tampa', label: 'Tampa' },
 ]
 
