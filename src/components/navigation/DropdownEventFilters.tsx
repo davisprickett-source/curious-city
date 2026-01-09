@@ -3,7 +3,7 @@
 import { useSearchParams, usePathname, useRouter } from 'next/navigation'
 import { useState, useCallback } from 'react'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
-import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
+import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 
 interface DropdownEventFiltersProps {
   selectedCategories?: EventCategory[]
@@ -91,17 +91,16 @@ export function DropdownEventFilters({
                       w-full flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-colors text-left
                       ${
                         isSelected
-                          ? 'bg-accent-50 text-accent-700 font-medium'
-                          : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
+                          ? 'bg-neutral-900 text-white font-medium'
+                          : 'text-neutral-700 hover:bg-neutral-100'
                       }
                     `}
                   >
                     <div
-                      className={`w-2 h-2 rounded-full ${
-                        isSelected ? getCategoryColorClass(categoryId) : 'bg-neutral-300'
+                      className={`w-1.5 h-1.5 rounded-full ${
+                        isSelected ? 'bg-white' : 'bg-neutral-400'
                       }`}
                     />
-                    <span>{category.icon}</span>
                     <span>{category.label}</span>
                   </button>
                 )

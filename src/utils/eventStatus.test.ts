@@ -41,7 +41,7 @@ describe('eventStatus utilities', () => {
     title: 'Test Event',
     description: 'A test event',
     startDate: new Date(Date.UTC(2024, 0, 10, 18, 0, 0, 0)).toISOString(), // 6pm same day UTC
-    category: 'event',
+    category: 'concerts',
     ...overrides,
   })
 

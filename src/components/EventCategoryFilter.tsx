@@ -3,7 +3,7 @@
 import { useSearchParams, usePathname, useRouter } from 'next/navigation'
 import { useCallback } from 'react'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
-import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
+import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 
 // Re-export for convenience
 export type { EventCategory } from '@/utils/eventCategoryUtils'
@@ -22,7 +22,6 @@ export function EventCategoryFilter() {
     const params = new URLSearchParams(searchParams.toString())
 
     if (newCategories.length === 0 || newCategories.length === ALL_EVENT_CATEGORIES.length) {
-      // All selected or none selected = show all (remove param)
       params.delete('categories')
     } else {
       params.set('categories', newCategories.join(','))
@@ -34,10 +33,8 @@ export function EventCategoryFilter() {
 
   const toggleCategory = (categoryId: EventCategory) => {
     if (selectedCategories.includes(categoryId)) {
-      // Remove category
       updateCategories(selectedCategories.filter(c => c !== categoryId))
     } else {
-      // Add category
       updateCategories([...selectedCategories, categoryId])
     }
   }
@@ -74,15 +71,14 @@ export function EventCategoryFilter() {
             key={categoryId}
             onClick={() => toggleCategory(categoryId)}
             className={`
-              px-3 py-1.5 rounded-full text-sm font-medium transition-colors flex items-center gap-1.5
+              px-3 py-1.5 rounded-full text-sm font-medium transition-colors
               ${isSelected
-                ? `${getCategoryColorClass(categoryId)} text-white`
+                ? 'bg-neutral-900 text-white'
                 : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }
             `}
           >
-            <span>{category.icon}</span>
-            <span>{category.label}</span>
+            {category.label}
           </button>
         )
       })}

@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 
-export type TimePeriod = 'today' | 'weekend' | 'week' | 'custom'
+export type TimePeriod = 'today' | 'weekend' | 'week' | 'next-week' | 'custom'
 
 interface TimePeriodTabsProps {
   currentPeriod: TimePeriod
@@ -15,6 +15,7 @@ const PERIODS: { id: TimePeriod; label: string }[] = [
   { id: 'today', label: 'Today' },
   { id: 'weekend', label: 'This Weekend' },
   { id: 'week', label: 'This Week' },
+  { id: 'next-week', label: 'Next Week' },
 ]
 
 export function TimePeriodTabs({ currentPeriod, currentDate, citySlug }: TimePeriodTabsProps) {

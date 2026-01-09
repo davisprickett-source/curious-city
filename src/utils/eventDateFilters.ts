@@ -6,7 +6,7 @@
 import type { EventItem } from '@/types/content'
 import { parseDate } from './dateUtils'
 
-export type TimePeriod = 'today' | 'weekend' | 'week' | 'custom'
+export type TimePeriod = 'today' | 'weekend' | 'week' | 'next-week' | 'custom'
 
 /**
  * Get the date range for a given time period
@@ -59,6 +59,21 @@ export function getDateRange(period: TimePeriod, customDate?: string): { start: 
       endOfWeek.setDate(today.getDate() + 7)
       endOfWeek.setHours(23, 59, 59, 999)
       return { start: today, end: endOfWeek }
+    }
+
+    case 'next-week': {
+      // Find next week (Monday to Sunday after this week)
+      const dayOfWeek = today.getDay()
+      // Days until next Monday (if today is Sunday, next Monday is tomorrow)
+      const daysUntilNextMonday = dayOfWeek === 0 ? 1 : 8 - dayOfWeek
+      const nextMonday = new Date(today)
+      nextMonday.setDate(today.getDate() + daysUntilNextMonday)
+
+      const nextSunday = new Date(nextMonday)
+      nextSunday.setDate(nextMonday.getDate() + 6)
+      nextSunday.setHours(23, 59, 59, 999)
+
+      return { start: nextMonday, end: nextSunday }
     }
 
     case 'custom': {
@@ -132,6 +147,8 @@ export function getDateRangeLabel(period: TimePeriod, customDate?: string): stri
       return `This Weekend (${formatShortDate(start)} - ${formatShortDate(end)})`
     case 'week':
       return `This Week (${formatShortDate(start)} - ${formatShortDate(end)})`
+    case 'next-week':
+      return `Next Week (${formatShortDate(start)} - ${formatShortDate(end)})`
     case 'custom':
       return formatDate(start)
     default:
@@ -150,7 +167,7 @@ export function getPeriodFromParams(
     return { period: 'custom', customDate: dateParam }
   }
 
-  if (periodParam === 'today' || periodParam === 'weekend') {
+  if (periodParam === 'today' || periodParam === 'weekend' || periodParam === 'next-week') {
     return { period: periodParam }
   }
 

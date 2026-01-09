@@ -3,7 +3,7 @@
 import { useSearchParams, usePathname, useRouter } from 'next/navigation'
 import { useCallback } from 'react'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
-import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
+import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 
 interface InlineEventCategoryFilterProps {
   selectedCategories?: EventCategory[]
@@ -51,15 +51,14 @@ export function InlineEventCategoryFilter({
             key={categoryId}
             onClick={() => toggleCategory(categoryId)}
             className={`
-              px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors flex items-center gap-1
+              px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors
               ${isSelected
-                ? `${getCategoryColorClass(categoryId)} text-white`
+                ? 'bg-neutral-900 text-white'
                 : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }
             `}
           >
-            <span>{category.icon}</span>
-            <span>{category.label}</span>
+            {category.label}
           </button>
         )
       })}

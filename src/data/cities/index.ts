@@ -306,10 +306,32 @@ export async function getCityLostAndLovedSection(slug: string) {
 }
 
 // Get events for a specific city
+// Merges city-defined events with API-fetched events from Ticketmaster/Eventbrite
 export async function getCityEvents(slug: string) {
   const city = await getCity(slug)
   if (!city) return []
-  return findItemsOfType<any>(city.content, 'events')
+
+  // Get events sections from city data (manually defined in city files)
+  const citySections = findItemsOfType<any>(city.content, 'events')
+
+  // Load API events for this city using the generic loader
+  try {
+    const { getCityEventsArray } = await import('@/data/events/loader')
+    const events = await getCityEventsArray(slug)
+    if (events && events.length > 0) {
+      // Add API events as a section
+      citySections.push({
+        id: 'api-events',
+        type: 'events',
+        title: 'Events',
+        items: events,
+      })
+    }
+  } catch {
+    // API events may not exist yet - that's fine
+  }
+
+  return citySections
 }
 
 // Get scenes (visual media) for a specific city

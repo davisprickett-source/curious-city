@@ -1,13 +1,18 @@
 /**
- * Fetch events from APIs and generate files for curation
+ * Fetch events from APIs and scrapers, generate files for curation
  *
  * Usage:
  *   npx tsx scripts/fetch-events.ts [city-slug]           # Fetch and preview
  *   npx tsx scripts/fetch-events.ts [city-slug] --write   # Fetch and write file
  *   npx tsx scripts/fetch-events.ts --all                 # Fetch all cities
  *
+ * Sources:
+ * - Ticketmaster API (concerts, sports, theater)
+ * - Eventbrite API (community events, workshops)
+ * - Songkick scraper (concerts at indie venues)
+ *
  * The script will:
- * 1. Fetch events from Ticketmaster and Eventbrite
+ * 1. Fetch events from all sources
  * 2. Score events using city-specific rules
  * 3. Generate a TypeScript file for review
  * 4. You review/edit the file, then merge to deploy
@@ -25,6 +30,7 @@ import { createEventbriteClient } from '../src/lib/eventbrite'
 import { mergeEvents, normalizedToEventItem } from '../src/lib/event-aggregator'
 import { getCityEventConfig, getAllCityEventConfigs } from '../src/lib/city-event-configs'
 import { scoreEvent, shouldAutoFeature, shouldAutoHide } from '../src/lib/event-scoring'
+import { SongkickProvider } from '../src/lib/providers/scrapers/songkick'
 import type { NormalizedEvent } from '../src/lib/api-types'
 
 interface ScoredEvent extends NormalizedEvent {
@@ -55,6 +61,7 @@ async function fetchEventsForCity(citySlug: string, writeFile: boolean = false) 
   // Initialize API clients
   let ticketmasterEvents: NormalizedEvent[] = []
   let eventbriteEvents: NormalizedEvent[] = []
+  let songkickEvents: NormalizedEvent[] = []
 
   // Fetch from Ticketmaster
   try {
@@ -91,9 +98,28 @@ async function fetchEventsForCity(citySlug: string, writeFile: boolean = false) 
     console.error('❌ Eventbrite error:', error)
   }
 
-  // Merge and deduplicate
+  // Fetch from Songkick (venue scraper)
+  try {
+    const songkick = new SongkickProvider()
+    if (await songkick.isAvailable()) {
+      console.log('📡 Fetching from Songkick...')
+      const result = await songkick.fetchEvents(citySlug, { limit: 100 })
+      songkickEvents = result.events
+      console.log(`   ✅ Found ${songkickEvents.length} events from Songkick\n`)
+      if (result.errors.length > 0) {
+        console.log(`   ⚠️  Songkick errors: ${result.errors.join(', ')}`)
+      }
+    } else {
+      console.log('⚠️  Skipping Songkick (not available)\n')
+    }
+  } catch (error) {
+    console.error('❌ Songkick error:', error)
+  }
+
+  // Merge and deduplicate all sources
   console.log('🔄 Merging and deduplicating...')
-  const mergedEvents = mergeEvents(ticketmasterEvents, eventbriteEvents)
+  const apiMerged = mergeEvents(ticketmasterEvents, eventbriteEvents)
+  const mergedEvents = mergeEvents(apiMerged, songkickEvents)
   console.log(`   ${mergedEvents.length} unique events after deduplication\n`)
 
   // Score events
@@ -199,7 +225,7 @@ function generateEventFile(
  * ${cityName} - API-Fetched Events
  *
  * Auto-generated on: ${now}
- * Source: Ticketmaster, Eventbrite
+ * Sources: Ticketmaster, Eventbrite, Songkick
  *
  * REVIEW CHECKLIST:
  * [ ] Remove boring/corporate events

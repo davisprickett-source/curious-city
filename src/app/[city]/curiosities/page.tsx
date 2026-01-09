@@ -98,16 +98,6 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
   }
   const section = findSection(city.content)
 
-  // Get available categories from the data with counts
-  const categoryCounts = allCuriosities.reduce((acc: Record<string, number>, c: any) => {
-    if (c.category) {
-      acc[c.category] = (acc[c.category] || 0) + 1
-    }
-    return acc
-  }, {})
-
-  const availableCategories = Object.keys(categoryCounts)
-
   // Filter by category if selected
   const curiosities = activeCategory
     ? allCuriosities.filter((c: any) => c.category === activeCategory)
@@ -119,9 +109,6 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
         citySlug={city.slug}
         cityName={city.name}
         currentSection="curiosities"
-        curiosityCategory={activeCategory}
-        availableCuriosityCategories={availableCategories}
-        curiosityCategoryCounts={categoryCounts}
       />
 
       <main className="flex-1 bg-white">

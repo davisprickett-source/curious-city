@@ -488,6 +488,49 @@ export const cityEventConfigs: Record<string, CityEventConfig> = {
       eventbrite: { locationAddress: 'Fargo, ND' },
     },
   },
+
+  seattle: {
+    slug: 'seattle',
+    name: 'Seattle',
+    venues: {
+      premium: [
+        'The Showbox',
+        'Neumos',
+        'The Crocodile',
+        'Triple Door',
+        'Seattle Art Museum',
+        'MoPOP',
+        'Paramount Theatre',
+        'Moore Theatre',
+      ],
+      good: [
+        'Tractor Tavern',
+        'The Vera Project',
+        'Barboza',
+        'Clock-Out Lounge',
+        'Nectar Lounge',
+        'Fremont Abbey',
+        'SIFF Cinema',
+        'Northwest Film Forum',
+        'Elliott Bay Book Company',
+        'Easy Street Records',
+      ],
+      avoid: [
+        'Washington State Convention Center',
+        'Climate Pledge Arena',
+        'Lumen Field',
+        'T-Mobile Park',
+        'Marriott',
+        'Hilton',
+      ],
+    },
+    priorityCategories: ['music', 'indie', 'coffee', 'tech', 'film'],
+    coolTags: ['local', 'indie', 'grunge', 'pacific northwest', 'DIY'],
+    api: {
+      ticketmaster: { stateCode: 'WA' },
+      eventbrite: { locationAddress: 'Seattle, WA' },
+    },
+  },
 }
 
 export function getCityEventConfig(slug: string): CityEventConfig | undefined {

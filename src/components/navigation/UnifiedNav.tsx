@@ -5,7 +5,6 @@ import { routes, citySections, type AnyCitySection } from '@/lib/routes'
 import { CitySelector } from './CitySelector'
 import { FilterBar } from './FilterBar'
 import { PremiumMobileMenu } from '@/components/PremiumMobileMenu'
-import type { EventCategory } from '@/utils/eventCategoryUtils'
 
 interface UnifiedNavProps {
   // Context
@@ -14,14 +13,7 @@ interface UnifiedNavProps {
   currentSection?: AnyCitySection
 
   // Filter state (from URL searchParams)
-  eventCategories?: EventCategory[]
   sceneCategory?: string
-  curiosityCategory?: string
-  availableCuriosityCategories?: string[]
-  curiosityCategoryCounts?: Record<string, number>
-  darkHistoryCategory?: string
-  availableDarkHistoryCategories?: string[]
-  darkHistoryCategoryCounts?: Record<string, number>
 
   // Optional customization
   customFilters?: React.ReactNode
@@ -31,14 +23,7 @@ export function UnifiedNav({
   citySlug,
   cityName,
   currentSection,
-  eventCategories,
   sceneCategory,
-  curiosityCategory,
-  availableCuriosityCategories,
-  curiosityCategoryCounts,
-  darkHistoryCategory,
-  availableDarkHistoryCategories,
-  darkHistoryCategoryCounts,
   customFilters,
 }: UnifiedNavProps) {
   return (
@@ -94,14 +79,7 @@ export function UnifiedNav({
               <FilterBar
                 currentSection={currentSection}
                 citySlug={citySlug}
-                eventCategories={eventCategories}
                 sceneCategory={sceneCategory}
-                curiosityCategory={curiosityCategory}
-                availableCuriosityCategories={availableCuriosityCategories}
-                curiosityCategoryCounts={curiosityCategoryCounts}
-                darkHistoryCategory={darkHistoryCategory}
-                availableDarkHistoryCategories={availableDarkHistoryCategories}
-                darkHistoryCategoryCounts={darkHistoryCategoryCounts}
               />
             )}
           </div>

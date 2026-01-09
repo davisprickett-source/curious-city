@@ -34,8 +34,8 @@ function CityItem({
 }) {
   const [isHovered, setIsHovered] = useState(false)
 
-  // Reverse stagger for exit animation (last items exit first)
-  const exitDelay = isClosing ? (totalItems - index - 1) * 0.02 : 0
+  // Reverse stagger for exit animation (last items exit first, like closing a fan)
+  const exitDelay = isClosing ? (totalItems - index - 1) * 0.025 : 0
 
   return (
     <motion.div
@@ -47,10 +47,10 @@ function CityItem({
       }}
       exit={{
         opacity: 0,
-        x: -12,
-        scale: 0.95,
+        x: -16,
+        scale: 0.92,
         transition: {
-          duration: 0.15,
+          duration: 0.18,
           delay: exitDelay,
           ease: [0.4, 0, 1, 1]
         }
@@ -64,7 +64,7 @@ function CityItem({
       onMouseLeave={() => setIsHovered(false)}
       className="relative"
     >
-      {/* Animated highlight background */}
+      {/* Animated highlight background - fast transition for responsive hover */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-accent-50 via-accent-100/80 to-accent-50 rounded-md mx-1"
         initial={{ scaleX: 0, opacity: 0 }}
@@ -73,8 +73,8 @@ function CityItem({
           opacity: isHovered || isActive ? 1 : 0
         }}
         transition={{
-          duration: 0.2,
-          ease: [0.4, 0, 0.2, 1]
+          duration: 0.08,
+          ease: 'easeOut'
         }}
         style={{ originX: 0 }}
       />
@@ -93,7 +93,7 @@ function CityItem({
             x: isHovered ? 4 : 0,
             color: isHovered || isActive ? 'rgb(var(--accent-700))' : 'rgb(64, 64, 64)',
           }}
-          transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ duration: 0.08, ease: 'easeOut' }}
         >
           {city.name}
         </motion.span>
@@ -106,7 +106,7 @@ function CityItem({
             opacity: isHovered ? 1 : 0,
             x: isHovered ? 0 : -8
           }}
-          transition={{ duration: 0.15 }}
+          transition={{ duration: 0.08, ease: 'easeOut' }}
         >
           →
         </motion.span>
@@ -150,19 +150,21 @@ function CitySelectorContent({
   const handleMouseLeave = () => {
     // Mark as closing to trigger reverse animation
     setIsClosing(true)
-    // Add delay for exit animation to complete
+    // Set isOpen to false to trigger AnimatePresence exit animations
+    // Keep isClosing true so exit stagger calculates correctly
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false)
-      setIsClosing(false)
-    }, 200)
+      // Reset isClosing after exit animations complete
+      setTimeout(() => setIsClosing(false), 300)
+    }, 50) // Small delay before starting exit
   }
 
   const handleClose = () => {
     setIsClosing(true)
     setTimeout(() => {
       setIsOpen(false)
-      setIsClosing(false)
-    }, 150)
+      setTimeout(() => setIsClosing(false), 300)
+    }, 50)
   }
 
   if (!currentCitySlug || !currentCityName) {
@@ -209,10 +211,10 @@ function CitySelectorContent({
             exit={{
               opacity: 0,
               y: -8,
-              scale: 0.98,
+              scale: 0.96,
               transition: {
                 duration: 0.2,
-                delay: cities.length * 0.015, // Wait for items to exit first
+                delay: cities.length * 0.02, // Wait for items to exit first
                 ease: [0.4, 0, 1, 1]
               }
             }}

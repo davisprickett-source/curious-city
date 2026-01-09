@@ -57,16 +57,6 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
   const allItems = await getCityDarkHistory(slug)
   const section = await getCityDarkHistorySection(slug)
 
-  // Get available categories from the data with counts
-  const categoryCounts = allItems.reduce((acc: Record<string, number>, item: any) => {
-    if (item.category) {
-      acc[item.category] = (acc[item.category] || 0) + 1
-    }
-    return acc
-  }, {})
-
-  const availableCategories = Object.keys(categoryCounts)
-
   // Filter by category if selected
   const items = activeCategory
     ? allItems.filter((item: any) => item.category === activeCategory)
@@ -78,9 +68,6 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
         citySlug={city.slug}
         cityName={city.name}
         currentSection="dark-history"
-        darkHistoryCategory={activeCategory}
-        availableDarkHistoryCategories={availableCategories}
-        darkHistoryCategoryCounts={categoryCounts}
       />
 
       <main className="flex-1 bg-white">

@@ -154,7 +154,7 @@ export interface EventbriteResponse {
 }
 
 // Event source types
-export type EventSource = 'ticketmaster' | 'eventbrite' | 'manual' | 'local-blog' | 'venue-direct' | 'legacy'
+export type EventSource = 'ticketmaster' | 'eventbrite' | 'manual' | 'local-blog' | 'venue-direct' | 'venue-scraper' | 'ical' | 'rss' | 'meetup' | 'reddit' | 'legacy'
 
 // Normalized event type (common format)
 export interface NormalizedEvent {

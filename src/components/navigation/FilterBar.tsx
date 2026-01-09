@@ -1,21 +1,12 @@
 'use client'
 
-import { DropdownEventFilters } from './DropdownEventFilters'
 import { DropdownCategoryFilter } from './DropdownCategoryFilter'
-import type { EventCategory } from '@/utils/eventCategoryUtils'
 import type { AnyCitySection } from '@/lib/routes'
 
 interface FilterBarProps {
   currentSection?: AnyCitySection
   citySlug?: string
-  eventCategories?: EventCategory[]
   sceneCategory?: string
-  curiosityCategory?: string
-  availableCuriosityCategories?: string[]
-  curiosityCategoryCounts?: Record<string, number>
-  darkHistoryCategory?: string
-  availableDarkHistoryCategories?: string[]
-  darkHistoryCategoryCounts?: Record<string, number>
 }
 
 const scenesCategoryLabels: Record<string, string> = {
@@ -29,19 +20,14 @@ const scenesCategoryLabels: Record<string, string> = {
 export function FilterBar({
   currentSection,
   citySlug,
-  eventCategories,
   sceneCategory,
 }: FilterBarProps) {
   // No filters to show
   if (!currentSection || !citySlug) return null
 
-  // Events page: show combined category dropdown
+  // Events page: filters are on the page itself, not in navbar
   if (currentSection === 'events') {
-    return (
-      <div className="flex items-center gap-2">
-        <DropdownEventFilters selectedCategories={eventCategories} />
-      </div>
-    )
+    return null
   }
 
   // Scenes page: show category dropdown

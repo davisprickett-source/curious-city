@@ -191,6 +191,7 @@ export function groupEventsByStatus(events: EventItem[]): Record<EventStatus, Ev
  * Groups events by date for display
  */
 export interface EventsByDate {
+  dateKey: string // YYYY-MM-DD for unique key
   date: string // Human-readable date
   events: EventItem[]
 }
@@ -213,6 +214,7 @@ export function groupEventsByDate(events: EventItem[]): EventsByDate[] {
     .map(([dateKey, events]) => {
       const date = parseDate(dateKey)
       return {
+        dateKey, // Include the raw key for React
         date: formatRelativeDate(date),
         events: events.sort((a, b) => {
           const aDate = parseDate(a.startDate)

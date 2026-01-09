@@ -15,7 +15,7 @@ export interface CuratedEvent extends EventItem {
   addedAt?: string
 
   // Source of the event (for tracking)
-  source?: 'manual' | 'api' | 'local-blog' | 'venue-direct'
+  source?: 'manual' | 'api' | 'local-blog' | 'venue-direct' | 'venue-scraper' | 'ticketmaster' | 'eventbrite' | 'ical' | 'rss' | 'meetup' | 'reddit'
 
   // Override the auto-calculated score
   scoreOverride?: number

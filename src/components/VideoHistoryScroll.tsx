@@ -184,8 +184,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'slc': 'salt-lake-city'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // All sequences use underscore format: frame_0001.jpg
-    return `/sequences/${city}/${sequenceName}/frame_${paddedNum}.jpg`
+    // All sequences use underscore format: frame_0001.webp
+    return `/sequences/${city}/${sequenceName}/frame_${paddedNum}.webp`
   }
 
   // Preload frames progressively
@@ -517,7 +517,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                   >
                     <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
                       <img
-                        src="/sequences/tampa/tampa-1/frame_0001.jpg"
+                        src="/sequences/tampa/tampa-1/frame_0001.webp"
                         alt="Tampa skyline"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -542,7 +542,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                   >
                     <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
                       <img
-                        src="/sequences/phoenix/phoenix-1/frame_0001.jpg"
+                        src="/sequences/phoenix/phoenix-1/frame_0001.webp"
                         alt="Phoenix sprawling across the desert"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

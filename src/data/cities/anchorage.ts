@@ -132,6 +132,12 @@ export const anchorage: CityData = {
             category: 'culture',
             title: 'Alaska pays you $1,300 a year just for living here',
             body: 'Every October, every Alaskan gets an oil money check in the mail. The Permanent Fund Dividend has paid out anywhere from $331 to $2,072 annually since 1982. Retailers throw "PFD sales." Former residents mysteriously reappear to collect. The state\'s population temporarily spikes. It\'s the only place in America where breathing qualifies you for passive income, and Alaskans will fight you if you suggest touching the fund.',
+            images: [
+              {
+                src: '/anchorage/curiosities/PFD.png',
+                alt: 'Alaska Permanent Fund Dividend check',
+              }
+            ],
             source: 'Alaska Permanent Fund Corporation',
           },
           {
@@ -256,32 +262,15 @@ export const anchorage: CityData = {
             category: 'culture',
             title: 'Over 100 languages are spoken in Anchorage schools',
             body: 'Mountain View, a northeast Anchorage neighborhood, ranks as one of the most diverse census tracts in America. Refugees from Sudan, Bhutan, and Somalia live alongside Pacific Islanders, Indigenous Alaskans, and transplants from everywhere else. Over 100 languages echo through Anchorage schools. It\'s the kind of diversity you\'d expect in Queens or the Bay Area—not at the edge of the Arctic.',
+            images: [
+              {
+                src: '/anchorage/curiosities/mountain-view-diversity.png',
+                alt: 'Diverse Mountain View neighborhood in Anchorage',
+              }
+            ],
             source: 'U.S. Census Bureau',
             location: {
               name: 'Mountain View neighborhood',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'anc-curiosity-11',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'You can walk through a neighborhood the earthquake swallowed',
-            body: 'Earthquake Park preserves the exact spot where 75 houses slid into Cook Inlet during the 1964 quake. The ground still ripples and buckles—what was once flat suburban streets is now hummocky, broken terrain. Interpretive signs show before-and-after photos: tidy homes, then nothing. You\'re walking on land that liquefied and ate an entire neighborhood. The earth hasn\'t forgotten, and neither should you.',
-            year: '1964',
-            images: [
-              {
-                src: '/anchorage/curiosities/quake-park.png',
-                alt: 'Alaska landscape terrain',
-              },
-              {
-                src: '/anchorage/curiosities/quake-park-2.png',
-                alt: 'Alaska natural landscape',
-              }
-            ],
-            source: 'Municipality of Anchorage',
-            location: {
-              name: 'Earthquake Park',
               stillExists: true,
             },
           },
@@ -290,7 +279,17 @@ export const anchorage: CityData = {
             type: 'curiosity',
             category: 'culture',
             title: 'Anchorage is geographically closer to Tokyo than Miami',
-            body: 'Anchorage sits on the great circle route between North America and Asia. Flights from New York to Tokyo pass almost directly overhead. This geographic accident turned Ted Stevens Airport into a global cargo hub—FedEx and UPS refuel here, transferring freight between continents. Your Amazon package from Shenzhen probably stopped in Anchorage. Geography made this city relevant whether it wanted to be or not.',
+            body: 'Anchorage sits on the great circle route between North America and Asia—90% of the industrialized world is within 9.5 hours of Ted Stevens Airport. This geographic accident turned it into the 4th busiest cargo airport in the world. FedEx and UPS refuel here, transferring freight between continents. Flights from New York to Tokyo pass almost directly overhead. Your Amazon package from Shenzhen probably stopped in Anchorage. Geography made this city relevant whether it wanted to be or not.',
+            images: [
+              {
+                src: '/anchorage/curiosities/tokyo-miami-1.png',
+                alt: 'Global flight path diagram showing Anchorage location',
+              },
+              {
+                src: '/anchorage/curiosities/tokyo-miami-2.png',
+                alt: 'Ted Stevens Airport cargo operations',
+              }
+            ],
             source: 'Ted Stevens Anchorage International Airport',
             location: {
               name: 'Ted Stevens International Airport',
@@ -319,6 +318,12 @@ export const anchorage: CityData = {
             category: 'legend',
             title: 'The Alaska Triangle has swallowed 16,000 people since 1988',
             body: 'A region stretching from Juneau to Barrow to Anchorage has a missing persons rate four times the national average. Since 1988, over 16,000 people have vanished—most in the wilderness, some under circumstances that defy explanation. The Alaska Triangle isn\'t supernatural; it\'s geographical reality meeting human fragility. The wilderness here doesn\'t need a legend. It just needs time.',
+            images: [
+              {
+                src: '/anchorage/curiosities/triangle.png',
+                alt: 'Map of the Alaska Triangle region',
+              }
+            ],
             source: 'Alaska State Troopers',
           },
         ],
@@ -435,8 +440,12 @@ export const anchorage: CityData = {
             description: 'At the height of the Cold War, Anchorage sat directly in the crosshairs of Soviet bombers flying over the pole—so the U.S. Army built a ring of nuclear-armed missiles around the city. Nike Site Summit, perched atop Mount Gordon Lyon at 4,500 feet, was part of this "Ring of Steel" from 1959 to 1979. The missiles are long gone, but the concrete bunkers, launch pads, and control buildings remain frozen in time—one of the most complete Nike Hercules sites left in America. Tours (offered through Joint Base Elmendorf-Richardson) take you through barracks where soldiers waited for orders that never came, past empty silos that once held weapons capable of destroying formations of Soviet aircraft, and along ridges with views of the city those weapons were meant to protect. The site feels like a time capsule from an era when nuclear war felt inevitable and Anchorage was ground zero.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/cia-nike-1.png',
                 alt: 'Abandoned Cold War military installation on mountaintop',
+              },
+              {
+                src: '/anchorage/hidden-gems/cia-nike-2.png',
+                alt: 'Nike Site Summit Cold War bunker remains',
               },
             ],
             address: 'Mount Gordon Lyon, 12.5 miles east of downtown',
@@ -453,8 +462,12 @@ export const anchorage: CityData = {
             description: 'Twenty-five miles north of Anchorage, at the oldest continuously inhabited site in the region, over 100 brightly painted spirit houses stand among the birch trees—a tradition that exists nowhere else on Earth. When Russian Orthodox missionaries arrived in the 1800s, the Dena\'ina Athabascan people merged their burial practices with the new faith: bodies are buried with blankets in the Orthodox tradition, but 40 days later, families build small wooden spirit houses over the graves, painted in clan colors that identify family lines. Per Athabascan tradition, the houses are left to decay naturally—new wood standing next to weathered predecessors going back generations. The adjacent St. Nicholas Russian Orthodox Church, built in 1870, is the second-oldest building in Anchorage. This is sacred ground, still used for burials today, and visitors are welcome to witness a tradition that bridges centuries and cultures.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/eklutna-1.png',
                 alt: 'Colorful spirit houses in cemetery setting',
+              },
+              {
+                src: '/anchorage/hidden-gems/eklutna-2.png',
+                alt: 'Eklutna Spirit Houses with Russian Orthodox church',
               },
             ],
             address: 'St. Nicholas Russian Orthodox Church, Eklutna Village (25 miles north)',
@@ -471,8 +484,12 @@ export const anchorage: CityData = {
             description: 'On Good Friday 1964, the ground shook for four and a half minutes. The 9.2-magnitude earthquake—the second most powerful ever recorded—devastated Anchorage, and nowhere more dramatically than Turnagain Heights, where an entire bluff liquefied and slid into Cook Inlet, taking 75 homes with it. The bodies were never recovered; the ground was too unstable to search. Today, Earthquake Park preserves the landslide zone, and sixty years later, you can still see what happened: rippling hills, sudden drops, and terrain that looks like it was stirred by a giant spoon. The destruction is frozen in time, overgrown with grass and birch but unmistakably wrong. Interpretive signs tell the story of the families who lost everything in minutes. On clear days, you can see Denali from the overlook—beauty and catastrophe occupying the same view.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/quake-park.png',
                 alt: 'Uneven terrain showing earthquake damage effects',
+              },
+              {
+                src: '/anchorage/hidden-gems/quake-park-2.png',
+                alt: 'Earthquake Park interpretive trail',
               },
             ],
             address: 'Earthquake Park, West Northern Lights Blvd',
@@ -490,8 +507,12 @@ export const anchorage: CityData = {
             description: 'In a tiny yellow house in Chugiak, Svaja Worthington runs what might be the most personal museum in Alaska. Svaja\'s family fled Lithuania when the Soviets invaded in 1944; she was four years old. The artifacts she displays—traditional clothing, family photographs, handwritten letters, folk art—are her family\'s possessions, carried through refugee camps across Europe before finally arriving in Alaska. The museum also serves as the Honorary Consulate of Lithuania, which means Svaja is both the curator and the closest thing to an ambassador within a thousand miles. She guides every visitor herself, telling stories that connect the objects to the history they represent. It\'s not a museum in the institutional sense—it\'s a woman sharing her family\'s survival with anyone curious enough to ask.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/lithuanian-1.png',
                 alt: 'Small historic house museum with traditional artifacts',
+              },
+              {
+                src: '/anchorage/hidden-gems/lithuanian-2.png',
+                alt: 'Lithuanian folk costumes and artifacts collection',
               },
             ],
             address: 'Chugiak (contact for exact location)',
@@ -645,8 +666,12 @@ export const anchorage: CityData = {
             description: 'A high school astronomy student designed this: a scale-model solar system stretching from downtown Anchorage to the Kincaid Park chalet, with the Sun at 5th and G Street and Pluto 5.5 hours away on foot. The brilliance is in the math—if you walk at a casual pace, you\'re moving at the speed of light relative to the model. Earth is an eight-minute walk from the Sun. Jupiter takes 45 minutes. By the time you reach Pluto, you\'ve covered miles of Anchorage\'s best trail system and gained an intuitive understanding of just how empty and vast the solar system actually is. Most people don\'t walk the whole thing. Most people don\'t need to. Just walking from the Sun to Mars will change how you think about space.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/curious-solar-planet-walk-1.png',
                 alt: 'Planet model markers along urban trail',
+              },
+              {
+                src: '/anchorage/hidden-gems/curious-solar-planet-walk-2.png',
+                alt: 'Anchorage Light Speed Planet Walk solar system model',
               },
             ],
             address: 'Starts: 5th Ave & G Street (The Sun)',
@@ -714,11 +739,11 @@ export const anchorage: CityData = {
             description: 'Alaska has a surprisingly excellent craft beer scene, and Midnight Sun is the flagship. The brewery operates out of an industrial park south of downtown—not exactly scenic from the outside, but inside you\'ll find one of the largest tap lists in the state, a kitchen that takes food as seriously as the beer, and a vibe that manages to be both polished and unpretentious. The Sockeye Red IPA is the signature, but the rotating seasonals are why regulars keep coming back. The brewing facility is visible from the taproom, and the staff can explain exactly what\'s happening in those massive fermentation tanks. Midnight Sun doesn\'t take itself too seriously—the beer names and label art lean playful—but the brewing is dead serious. This is where Alaskan craft beer grew up.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/midnight-sun-1.png',
                 alt: 'Craft brewery tap room with beer selection',
               },
               {
-                src: '',
+                src: '/anchorage/hidden-gems/midnigh-sun-2.png',
                 alt: 'Brewery equipment and tanks',
               }
             ],

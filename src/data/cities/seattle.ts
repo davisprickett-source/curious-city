@@ -52,6 +52,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Pioneer Square Underground', url: 'https://www.google.com/maps/place/Pioneer+Square,+Seattle,+WA', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/underground-1.png', alt: 'Seattle Underground Tour passage' },
+            { src: '/seattle/curiosities/underground-02.png', alt: 'Buried storefronts beneath Pioneer Square' },
+          ],
         },
         {
           id: 'curiosity-2',
@@ -70,6 +74,9 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Somewhere over Washington State', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/cooper.png', alt: 'D.B. Cooper FBI sketch and case materials' },
+          ],
         },
         {
           id: 'curiosity-ad-1',
@@ -89,6 +96,9 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Fremont Troll', url: 'https://www.google.com/maps/place/Fremont+Troll/@47.6508,-122.3468,17z', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/troll.png', alt: 'Fremont Troll sculpture under Aurora Bridge' },
+          ],
         },
         {
           id: 'curiosity-4',
@@ -103,6 +113,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Pike Place Gum Wall', url: 'https://www.google.com/maps/place/Gum+Wall/@47.6084,-122.3403,17z', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/gumwall-1.png', alt: 'Pike Place Gum Wall covered in chewed gum' },
+            { src: '/seattle/curiosities/gumwall-2.png', alt: 'Close-up of colorful gum wall' },
+          ],
         },
         {
           id: 'curiosity-5',
@@ -117,6 +131,9 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'International District', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/japanese-war.png', alt: 'Japanese internment in Seattle history' },
+          ],
         },
         {
           id: 'curiosity-6',
@@ -135,6 +152,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Space Needle', url: 'https://www.google.com/maps/place/Space+Needle/@47.6205,-122.3493,17z', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/needle-1.png', alt: 'Space Needle against Seattle skyline' },
+            { src: '/seattle/curiosities/needle-2.png', alt: 'Space Needle observation deck' },
+          ],
         },
         {
           id: 'curiosity-ad-2',
@@ -154,6 +175,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Capitol Hill', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/espresso-1.png', alt: 'Seattle coffee culture' },
+            { src: '/seattle/curiosities/espresso-2.png', alt: 'Espresso preparation in Seattle cafe' },
+          ],
         },
         {
           id: 'curiosity-8',
@@ -186,6 +211,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Capitol Hill and Downtown', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/grunge-1.png', alt: 'Seattle grunge music scene' },
+            { src: '/seattle/curiosities/grunge-2.png', alt: 'Grunge era Seattle musicians' },
+          ],
         },
         {
           id: 'curiosity-10',
@@ -222,6 +251,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Puget Sound and San Juan Islands', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/orca-pods-1.png', alt: 'Orca whale in Puget Sound' },
+            { src: '/seattle/curiosities/orca-pods-2.png', alt: 'Southern Resident killer whales' },
+          ],
         },
         {
           id: 'curiosity-12',
@@ -236,6 +269,10 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Fremont', url: 'https://www.google.com/maps/place/Statue+of+Lenin/@47.6514,-122.3512,17z', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/lenin01.png', alt: 'Lenin statue in Fremont' },
+            { src: '/seattle/curiosities/lenin02.png', alt: 'Soviet Lenin statue Seattle' },
+          ],
         }
       ],
     },
@@ -307,7 +344,10 @@ export const seattle: CityData = {
               name: 'Seattle Pinball Museum',
               category: 'Museum',
               description: 'Over 50 playable pinball machines spanning 60 years of arcade history. One admission price, unlimited play. Machines range from 1960s electromechanical classics to modern digital marvels. The curators rotate machines regularly, so there\'s always something new. It\'s in the basement of a Chinatown-International District building, easy to miss if you\'re not looking.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/pinball-1.png', alt: 'Vintage pinball machines at Seattle Pinball Museum' },
+                { src: '/seattle/hidden-gems/pinball-2.png', alt: 'Classic arcade pinball games' },
+              ],
               address: '508 Maynard Ave S, Seattle, WA 98104',
               coordinates: { lat: 47.5992, lng: -122.3254 },
               hours: 'Wed-Sun 12pm-6pm',
@@ -321,7 +361,11 @@ export const seattle: CityData = {
               name: 'The Secret Stairways of Seattle',
               category: 'Urban Exploration',
               description: 'Seattle is built on steep hills, and the city has over 650 public stairways — many hidden in residential neighborhoods, cutting through forested ravines, or connecting streets that would otherwise require miles of detour. Some have been nicknamed: the "Counterbalance" stairs on Queen Anne, the "Ravenna" stairs descending into the park, the "Blaine" stairs with their garden terraces.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/stairs-1.png', alt: 'Hidden stairway in Seattle neighborhood' },
+                { src: '/seattle/hidden-gems/stairs-2.png', alt: 'Seattle public stairway through forest' },
+                { src: '/seattle/hidden-gems/stairs-3.png', alt: 'Secret stairway with garden terraces' },
+              ],
               address: 'Various locations citywide',
               coordinates: { lat: 47.6158, lng: -122.3270 },
               hours: 'Always accessible',
@@ -334,7 +378,11 @@ export const seattle: CityData = {
               name: 'The Ruins at Volunteer Park',
               category: 'Hidden History',
               description: 'Behind the Asian Art Museum in Volunteer Park, partially hidden in the landscaping, are the remains of a 1912 conservatory foundation. The conservatory was demolished in 1969, but its basement level remains — vine-covered brick walls, empty window frames, and the ghosts of Seattle\'s Gilded Age.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/volunteer-1.png', alt: 'Ruins at Volunteer Park' },
+                { src: '/seattle/hidden-gems/volunteer-2.png', alt: 'Historic conservatory foundation remains' },
+                { src: '/seattle/hidden-gems/volunteer-3.png', alt: 'Vine-covered brick walls at Volunteer Park' },
+              ],
               address: '1400 E Prospect St, Seattle, WA 98112',
               coordinates: { lat: 47.6303, lng: -122.3145 },
               hours: 'Park hours',
@@ -347,7 +395,10 @@ export const seattle: CityData = {
               name: 'Georgetown Steam Plant',
               category: 'Industrial History',
               description: 'A National Historic Landmark from 1906, this is the last surviving example of a pre-World War I steam-electric generating plant in the U.S. The turbines and generators are intact and occasionally demonstrated. Open for tours one weekend a month, but most Seattleites have never heard of it.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/steam-1.png', alt: 'Georgetown Steam Plant interior' },
+                { src: '/seattle/hidden-gems/steam-2.png', alt: 'Historic turbines and generators' },
+              ],
               address: '6505 13th Ave S, Seattle, WA 98108',
               coordinates: { lat: 47.5394, lng: -122.3156 },
               hours: 'Second Sunday of month, 12pm-4pm',
@@ -373,7 +424,10 @@ export const seattle: CityData = {
               name: 'Discovery Park\'s Hidden Beach',
               category: 'Nature',
               description: 'Seattle\'s largest park hides a secret: a 2.8-mile trail descending through forest to a wild beach with views of Mount Rainier, the Olympics, and Puget Sound. The lighthouse at the end is one of the most photographed spots in Seattle, but most visitors never make the trek down.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/hiddenbeach-1.png', alt: 'Hidden beach at Discovery Park' },
+                { src: '/seattle/hidden-gems/hiddenbeach-02.png', alt: 'Discovery Park lighthouse and beach' },
+              ],
               address: '3801 Discovery Park Blvd, Seattle, WA 98199',
               coordinates: { lat: 47.6617, lng: -122.4186 },
               hours: 'Daily 4am-11:30pm',
@@ -387,7 +441,10 @@ export const seattle: CityData = {
               name: 'Kubota Garden',
               category: 'Garden',
               description: 'A 20-acre Japanese-American garden created by self-taught landscaper Fujitaro Kubota starting in 1927. Free to visit, rarely crowded, and absolutely stunning — especially in spring when the azaleas bloom and fall when the maples turn. It\'s a National Historic Landmark that most Seattle residents have never visited.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/kubota-1.png', alt: 'Kubota Garden Japanese landscape' },
+                { src: '/seattle/hidden-gems/kubota-2.png', alt: 'Moon Bridge at Kubota Garden' },
+              ],
               address: '9817 55th Ave S, Seattle, WA 98118',
               coordinates: { lat: 47.5098, lng: -122.2674 },
               hours: 'Daily 6am-10pm',
@@ -401,7 +458,10 @@ export const seattle: CityData = {
               name: 'Carkeek Park Salmon Runs',
               category: 'Nature',
               description: 'Every fall, chum and coho salmon return to spawn in Piper\'s Creek, which runs through this North Seattle park. You can watch them from bridges built specifically for viewing. Kids love the salmon-shaped playground and the beach access at the bottom of the park.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/salmon-1.png', alt: 'Salmon run at Carkeek Park' },
+                { src: '/seattle/hidden-gems/salmon-2.png', alt: 'Salmon spawning in Piper\'s Creek' },
+              ],
               address: '950 NW Carkeek Park Rd, Seattle, WA 98177',
               coordinates: { lat: 47.7112, lng: -122.3755 },
               hours: 'Daily 6am-10pm',
@@ -426,7 +486,11 @@ export const seattle: CityData = {
               name: 'Ye Olde Curiosity Shop',
               category: 'Oddities',
               description: 'Operating on the Seattle waterfront since 1899, this shop is equal parts tourist trap and genuine cabinet of curiosities. Real shrunken heads. A mummy named Sylvester. A two-headed calf. It\'s the kind of place your great-grandparents visited, and somehow it still exists.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/yeoldcuriosity-1.png', alt: 'Ye Olde Curiosity Shop storefront' },
+                { src: '/seattle/hidden-gems/yeoldcuriosity-2.png', alt: 'Oddities and curiosities display' },
+                { src: '/seattle/hidden-gems/yeoldcuriosity-3.png', alt: 'Cabinet of curiosities at Ye Olde' },
+              ],
               address: '1001 Alaskan Way, Seattle, WA 98101',
               coordinates: { lat: 47.6058, lng: -122.3408 },
               hours: 'Daily 10am-6pm',
@@ -440,7 +504,9 @@ export const seattle: CityData = {
               name: 'The Hat n\' Boots',
               category: 'Roadside Americana',
               description: 'A giant cowboy hat (44 feet wide) and matching boots (22 feet tall) from a 1950s gas station, now relocated to Oxbow Park in Georgetown. They sat abandoned for years before the community saved and restored them. Pure Americana kitsch, free to visit.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/hat-boots-1.png', alt: 'Giant cowboy hat and boots in Georgetown' },
+              ],
               address: '6430 Corson Ave S, Seattle, WA 98108',
               coordinates: { lat: 47.5425, lng: -122.3248 },
               hours: 'Park hours',
@@ -453,7 +519,11 @@ export const seattle: CityData = {
               name: 'Archie McPhee',
               category: 'Weird Shopping',
               description: 'The mecca of weird. Rubber chickens, bacon bandages, yodeling pickles, and an astounding array of things you didn\'t know existed and now desperately need. This Wallingford institution has been selling bizarre novelties since 1983. The store itself is an experience.',
-              images: [],
+              images: [
+                { src: '/seattle/hidden-gems/archie-1.png', alt: 'Archie McPhee store exterior' },
+                { src: '/seattle/hidden-gems/archie-2.png', alt: 'Weird novelties and rubber chickens' },
+                { src: '/seattle/hidden-gems/archie-3.png', alt: 'Inside Archie McPhee novelty store' },
+              ],
               address: '1300 N 45th St, Seattle, WA 98103',
               coordinates: { lat: 47.6614, lng: -122.3458 },
               hours: 'Daily 10am-7pm',
@@ -484,7 +554,11 @@ export const seattle: CityData = {
           price: '$$$',
           website: 'https://www.canonseattle.com',
           instagram: '@canonseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/canon-1.png', alt: 'Canon whiskey bar interior' },
+            { src: '/seattle/bars/canon-2.png', alt: 'Canon cocktail and whiskey collection' },
+            { src: '/seattle/bars/canon-3.png', alt: 'Canon Capitol Hill' },
+          ],
         },
         {
           name: 'The Walrus and the Carpenter',
@@ -498,7 +572,11 @@ export const seattle: CityData = {
           price: '$$$',
           website: 'https://www.thewalrusbar.com',
           instagram: '@thewalrusseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/walrus-1.png', alt: 'The Walrus and the Carpenter oyster bar' },
+            { src: '/seattle/bars/walrus-2.png', alt: 'Fresh oysters at The Walrus' },
+            { src: '/seattle/bars/walrus-3.png', alt: 'The Walrus Ballard interior' },
+          ],
         },
         {
           name: 'Navy Strength',
@@ -512,7 +590,11 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.navystrengthseattle.com',
           instagram: '@navystrengthseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/navy-1.png', alt: 'Navy Strength tiki bar interior' },
+            { src: '/seattle/bars/navy-2.png', alt: 'Tropical cocktails at Navy Strength' },
+            { src: '/seattle/bars/navy-3.png', alt: 'Navy Strength Belltown' },
+          ],
         },
         {
           name: 'Bathtub Gin & Co.',
@@ -526,7 +608,11 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.bathtubginseattle.com',
           instagram: '@bathtubginseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/bathtub-1.png', alt: 'Bathtub Gin speakeasy interior' },
+            { src: '/seattle/bars/bathtub-2.png', alt: 'Craft gin cocktails at Bathtub Gin' },
+            { src: '/seattle/bars/bathtub-3.png', alt: 'Bathtub Gin & Co. atmosphere' },
+          ],
         },
         {
           name: 'The Nest',
@@ -540,7 +626,12 @@ export const seattle: CityData = {
           price: '$$$',
           website: 'https://www.thenestseattle.com',
           instagram: '@thenestseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/nest-1.png', alt: 'The Nest rooftop bar views' },
+            { src: '/seattle/bars/nest-2.png', alt: 'Sunset cocktails at The Nest' },
+            { src: '/seattle/bars/nest-3.png', alt: 'The Nest Thompson Hotel rooftop' },
+            { src: '/seattle/bars/nest-4.png', alt: 'Elliott Bay views from The Nest' },
+          ],
         },
         {
           name: 'The Hideout',
@@ -554,7 +645,11 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.hideoutseattle.com',
           instagram: '@hideoutseattle',
-          images: [],
+          images: [
+            { src: '/seattle/bars/hidoeut-1.png', alt: 'The Hideout art bar interior' },
+            { src: '/seattle/bars/hidoeut-2.png', alt: 'Craft cocktails at The Hideout' },
+            { src: '/seattle/bars/hidoeut-3.png', alt: 'The Hideout First Hill' },
+          ],
         },
       ],
     },
@@ -582,7 +677,11 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://espressovivace.com',
           instagram: '@espressovivace',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/vivace-1.png', alt: 'Espresso Vivace latte art' },
+            { src: '/seattle/coffee/vivace-2.png', alt: 'Vivace espresso bar Capitol Hill' },
+            { src: '/seattle/coffee/vivace-3.png', alt: 'Espresso Vivace coffee preparation' },
+          ],
         },
         {
           name: 'Victrola Coffee Roasters',
@@ -596,7 +695,12 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.victrolacoffee.com',
           instagram: '@victrolacoffee',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/victrola-1.png', alt: 'Victrola Coffee Roasters interior' },
+            { src: '/seattle/coffee/victrola-2.png', alt: 'Victrola coffee roasting' },
+            { src: '/seattle/coffee/victrola-3.png', alt: 'Pour over at Victrola' },
+            { src: '/seattle/coffee/victrola-4.png', alt: 'Victrola Capitol Hill location' },
+          ],
         },
         {
           name: 'Caffè Vita',
@@ -610,7 +714,12 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.caffevita.com',
           instagram: '@caffevita',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/vita-1.png', alt: 'Caffè Vita espresso' },
+            { src: '/seattle/coffee/vita-2.png', alt: 'Vita coffee shop interior' },
+            { src: '/seattle/coffee/vita-3.png', alt: 'Caffè Vita Capitol Hill' },
+            { src: '/seattle/coffee/vita-4.png', alt: 'Vita coffee beans and roasting' },
+          ],
         },
         {
           name: 'Slate Coffee Roasters',
@@ -624,7 +733,11 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.slatecoffee.com',
           instagram: '@slatecoffee',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/slate-1.png', alt: 'Slate Coffee deconstructed latte' },
+            { src: '/seattle/coffee/slate-2.png', alt: 'Slate Coffee Ballard interior' },
+            { src: '/seattle/coffee/slate-3.png', alt: 'Slate Coffee minimalist design' },
+          ],
         },
         {
           name: 'Herkimer Coffee',
@@ -638,7 +751,12 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.herkimercoffee.com',
           instagram: '@herkimercoffee',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/herkimer-1.png', alt: 'Herkimer Coffee pour over' },
+            { src: '/seattle/coffee/herkimer-2.png', alt: 'Herkimer Greenwood interior' },
+            { src: '/seattle/coffee/herkimer-3.png', alt: 'Herkimer Coffee espresso' },
+            { src: '/seattle/coffee/herkimer-4.png', alt: 'Herkimer Coffee neighborhood vibe' },
+          ],
         },
         {
           name: 'Elm Coffee Roasters',
@@ -652,7 +770,12 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://www.elmcoffeeroasters.com',
           instagram: '@elmcoffee',
-          images: [],
+          images: [
+            { src: '/seattle/coffee/elm-1.png', alt: 'Elm Coffee Roasters light-filled interior' },
+            { src: '/seattle/coffee/elm-2.png', alt: 'Elm Coffee filter brewing' },
+            { src: '/seattle/coffee/elm-3.png', alt: 'Elm Coffee Pioneer Square' },
+            { src: '/seattle/coffee/elm-4.png', alt: 'Elm Coffee pastries and coffee' },
+          ],
         },
       ],
     },
@@ -680,7 +803,11 @@ export const seattle: CityData = {
           price: '$$$',
           website: 'https://www.musangseattle.com',
           instagram: '@musangseattle',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/musang-1.png', alt: 'Musang Filipino cuisine' },
+            { src: '/seattle/restaurants/musang-2.png', alt: 'Musang kare-kare dish' },
+            { src: '/seattle/restaurants/musang-3.png', alt: 'Musang Beacon Hill interior' },
+          ],
         },
         {
           name: 'Canlis',
@@ -694,7 +821,11 @@ export const seattle: CityData = {
           price: '$$$$',
           website: 'https://www.canlis.com',
           instagram: '@canlisrestaurant',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/canlis-1.png', alt: 'Canlis fine dining interior' },
+            { src: '/seattle/restaurants/canlis-2.png', alt: 'Canlis tasting menu presentation' },
+            { src: '/seattle/restaurants/canlis-3.png', alt: 'Canlis Lake Union views' },
+          ],
         },
         {
           name: 'Maneki',
@@ -708,7 +839,12 @@ export const seattle: CityData = {
           price: '$$',
           website: 'https://manekiseattle.com',
           instagram: '@manekiseattle',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/maneki-1.png', alt: 'Maneki Japanese restaurant interior' },
+            { src: '/seattle/restaurants/maneki-2.png', alt: 'Maneki traditional Japanese dishes' },
+            { src: '/seattle/restaurants/maneki-3.png', alt: 'Maneki International District' },
+            { src: '/seattle/restaurants/maneki-4.png', alt: 'Maneki tatami room' },
+          ],
         },
         {
           name: 'Un Bien',
@@ -722,7 +858,11 @@ export const seattle: CityData = {
           price: '$',
           website: 'https://www.unbienseattle.com',
           instagram: '@unbienseattle',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/unbien-1.png', alt: 'Un Bien Caribbean roast pork sandwich' },
+            { src: '/seattle/restaurants/unbien-2.png', alt: 'Un Bien Ballard counter' },
+            { src: '/seattle/restaurants/unbien-3.png', alt: 'Un Bien sandwich preparation' },
+          ],
         },
         {
           name: 'Pho Bac',
@@ -736,7 +876,11 @@ export const seattle: CityData = {
           price: '$',
           website: 'https://www.thephobac.com',
           instagram: '@phobacseattle',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/phobac-1.png', alt: 'Pho Bac signature pho' },
+            { src: '/seattle/restaurants/phobac-2.png', alt: 'Pho Bac International District' },
+            { src: '/seattle/restaurants/phobac-3.png', alt: 'Pho Bac noodle bowl' },
+          ],
         },
         {
           name: 'Surrell',
@@ -750,7 +894,12 @@ export const seattle: CityData = {
           price: '$$$$',
           website: 'https://surrellseattle.com',
           instagram: '@surrellseattle',
-          images: [],
+          images: [
+            { src: '/seattle/restaurants/surrell-1.png', alt: 'Surrell tasting menu course' },
+            { src: '/seattle/restaurants/surrell-2.png', alt: 'Surrell intimate dining room' },
+            { src: '/seattle/restaurants/surrell-3.png', alt: 'Surrell Washington wine selection' },
+            { src: '/seattle/restaurants/surrell-4.png', alt: 'Surrell Madison Valley' },
+          ],
         },
       ],
     },
@@ -821,7 +970,10 @@ export const seattle: CityData = {
               url: 'https://en.wikipedia.org/wiki/Wah_Mee_massacre',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/wah-mee-1.png', alt: 'Wah Mee Club building exterior' },
+            { src: '/seattle/dark-history/wah-mee-2.png', alt: 'Historic Louisa Hotel in Chinatown' },
+          ],
         },
         {
           id: 'dark-2',
@@ -877,7 +1029,10 @@ export const seattle: CityData = {
               url: 'https://en.wikipedia.org/wiki/Ann_Rule',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/bundy-1.png', alt: 'Ted Bundy case documentation' },
+            { src: '/seattle/dark-history/bundy-2.png', alt: 'University District Seattle 1970s' },
+          ],
         },
         {
           id: 'dark-3',
@@ -935,7 +1090,9 @@ export const seattle: CityData = {
               url: 'https://www.spreaker.com/episode/gary-ridgway-aka-the-green-river-killer-serial-killer-documentary--65710305',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/green-river.png', alt: 'Green River investigation site' },
+          ],
         },
         {
           id: 'dark-ad-1',
@@ -1011,7 +1168,10 @@ export const seattle: CityData = {
               url: 'https://www.jstor.org/stable/40267998',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/everett-1.png', alt: 'Everett Massacre historical photo' },
+            { src: '/seattle/dark-history/everett-2.png', alt: 'IWW workers and Everett docks' },
+          ],
         },
         {
           id: 'dark-5',
@@ -1079,7 +1239,10 @@ export const seattle: CityData = {
               url: 'https://www.legallyobscene.com/capitol-hill-massacre-kyle-huff/',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/capitol-hill-1.png', alt: 'Capitol Hill neighborhood' },
+            { src: '/seattle/dark-history/capitol-hill-2.png', alt: 'Capitol Hill memorial' },
+          ],
         },
         {
           id: 'dark-6',
@@ -1153,7 +1316,11 @@ export const seattle: CityData = {
               url: 'https://en.wikipedia.org/wiki/Wellington,_Washington',
             }
           ],
-          images: [],
+          images: [
+            { src: '/seattle/dark-history/avalanche-1.png', alt: 'Wellington avalanche disaster site' },
+            { src: '/seattle/dark-history/avanlanche-2.png', alt: 'Great Northern Railway snow conditions' },
+            { src: '/seattle/dark-history/avalanche-3.png', alt: 'Stevens Pass historic photo' },
+          ],
         },
       ],
     },
@@ -1194,7 +1361,10 @@ export const seattle: CityData = {
           whyMissed: 'The Off Ramp was the sweaty, smoke-filled room where Seattle\'s music scene incubated. For $5, you could see bands that would sell out stadiums within a year. The sound was terrible. The bathrooms were worse. But the energy was unmatchable. When it closed in 2003, an era ended. The building that replaced it has no memory of the thousands of shows, the broken drumsticks, or the moment Kurt Cobain first stepped on that stage.',
           communityVoice: '"Every important band in Seattle history played the Off Ramp. That stage was sacred ground." — Seattle musician',
           lastAddress: '109 Eastlake Ave E, Seattle',
-          images: [],
+          images: [
+            { src: '/seattle/lost-loved/offramp-1.png', alt: 'The Off Ramp music venue' },
+            { src: '/seattle/lost-loved/offramp-2.png', alt: 'Off Ramp stage where grunge was born' },
+          ],
           sources: [
             {
               title: 'Seattle Music History: The Off Ramp',
@@ -1213,7 +1383,11 @@ export const seattle: CityData = {
           whyMissed: 'Bakeman\'s had rules: Know your order before you reach the counter. No substitutions. No credit cards. No nonsense. The turkey sandwich was carved fresh and piled high. The meatloaf was your grandmother\'s recipe if your grandmother knew what she was doing. Downtown office workers planned their days around the lunch rush. When the pandemic closed it in 2020, the family decided not to reopen. Pioneer Square lost its soul.',
           communityVoice: '"If you didn\'t know the rules, the counter lady would let you know. But if you were a regular, she\'d have your order ready before you opened your mouth." — Downtown worker',
           lastAddress: '122 Cherry St, Seattle',
-          images: [],
+          images: [
+            { src: '/seattle/lost-loved/bakemans-1.png', alt: 'Bakeman\'s Restaurant counter' },
+            { src: '/seattle/lost-loved/bakemans-2.png', alt: 'Famous Bakeman\'s turkey sandwich' },
+            { src: '/seattle/lost-loved/bakemans-3.png', alt: 'Bakeman\'s lunch rush' },
+          ],
           sources: [
             {
               title: 'Seattle Times: Bakeman\'s Closes',
@@ -1232,7 +1406,10 @@ export const seattle: CityData = {
           whyMissed: 'Vito\'s was where your grandfather took your grandmother on dates — and where their grandkids discovered what nightlife could be. The jazz was live, the cocktails were stiff, and the Italian food was secondary to the atmosphere. It closed, reopened, and closed again. Each iteration tried to capture the original magic. None quite succeeded. Some rooms can\'t be rebuilt.',
           communityVoice: '"They don\'t make places like Vito\'s anymore. Every booth had a story." — Seattle jazz fan',
           lastAddress: '927 9th Ave, Seattle',
-          images: [],
+          images: [
+            { src: '/seattle/lost-loved/vitos-1.png', alt: 'Vito\'s Italian supper club interior' },
+            { src: '/seattle/lost-loved/vitos-2.png', alt: 'Vito\'s red vinyl booths' },
+          ],
           sources: [
             {
               title: 'Seattle PI: Remembering Vito\'s',
@@ -1251,30 +1428,13 @@ export const seattle: CityData = {
           whyMissed: 'While the Off Ramp nurtured grunge\'s first wave, RKCNDY (pronounced "Rock Candy") was where the scene went next. The venue was deliberately all-ages, ensuring that high schoolers could see bands before they turned 21. The bookings ranged from local punk to touring indie rock. The crowd was young, intense, and devoted. When RKCNDY closed in 2000, Seattle\'s all-ages scene never fully recovered.',
           communityVoice: '"RKCNDY was the first place that treated us like real fans. We weren\'t old enough to drink, but we were old enough to belong." — Former attendee',
           lastAddress: '1812 Yale Ave, Seattle',
-          images: [],
+          images: [
+            { src: '/seattle/lost-loved/rkcndy-2.png', alt: 'RKCNDY all-ages punk venue' },
+          ],
           sources: [
             {
               title: 'Seattle Weekly: All-Ages History',
               url: 'https://www.seattleweekly.com/',
-            }
-          ],
-        },
-        {
-          id: 'lost-6',
-          type: 'lost-and-loved',
-          category: 'bar',
-          name: 'The Comet Tavern',
-          neighborhood: 'Capitol Hill',
-          yearsOpen: '1952-2013 (original)',
-          description: 'The quintessential Capitol Hill dive — pool tables, cheap beer, and a jukebox that leaned punk rock. Every generation of Seattle musicians drank here.',
-          whyMissed: 'The Comet was where Seattle went to be itself, without pretense or performance. The jukebox was legendary — curated by decades of regulars who loved loud, fast music. The pool tables were worn. The bathrooms were questionable. But the Comet never tried to be anything other than a neighborhood bar where musicians and misfits felt at home. It "reopened" under new ownership, but regulars say it\'s not the same.',
-          communityVoice: '"You could walk into the Comet any night and see someone who\'d been drinking there since the \'70s sitting next to some kid who\'d just moved to town. That was the magic." — Capitol Hill regular',
-          lastAddress: '922 E Pike St, Seattle',
-          images: [],
-          sources: [
-            {
-              title: 'The Stranger: Capitol Hill Bars',
-              url: 'https://www.thestranger.com/',
             }
           ],
         },

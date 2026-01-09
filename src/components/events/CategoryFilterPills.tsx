@@ -1,13 +1,13 @@
 'use client'
 
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
-import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES, getCategoryColorClass } from '@/utils/eventCategoryUtils'
+import { EVENT_CATEGORIES, ALL_EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 import type { EventCategory } from '@/utils/eventCategoryUtils'
 import type { EventItem } from '@/types/content'
 
 interface CategoryFilterPillsProps {
   selectedCategories: EventCategory[]
-  events: EventItem[] // For counting
+  events: EventItem[]
 }
 
 export function CategoryFilterPills({ selectedCategories, events }: CategoryFilterPillsProps) {
@@ -26,10 +26,8 @@ export function CategoryFilterPills({ selectedCategories, events }: CategoryFilt
 
     let newCategories: EventCategory[]
     if (selectedCategories.includes(category)) {
-      // Remove category
       newCategories = selectedCategories.filter(c => c !== category)
     } else {
-      // Add category
       newCategories = [...selectedCategories, category]
     }
 
@@ -53,18 +51,17 @@ export function CategoryFilterPills({ selectedCategories, events }: CategoryFilt
   }
 
   return (
-    <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide py-2" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+    <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide py-1" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
       {/* All filter */}
       <button
         onClick={clearAll}
-        className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+        className={`flex-shrink-0 px-3 py-1 rounded-full text-sm transition-colors ${
           selectedCategories.length === 0
             ? 'bg-neutral-900 text-white'
-            : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+            : 'bg-neutral-100 text-neutral-500 hover:text-neutral-700 hover:bg-neutral-200'
         }`}
       >
         All
-        <span className="ml-1.5 text-xs opacity-70">({events.length})</span>
       </button>
 
       {/* Category pills */}
@@ -73,22 +70,22 @@ export function CategoryFilterPills({ selectedCategories, events }: CategoryFilt
         const isSelected = selectedCategories.includes(category)
         const count = categoryCounts[category]
 
-        // Hide categories with no events
         if (count === 0) return null
 
         return (
           <button
             key={category}
             onClick={() => toggleCategory(category)}
-            className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+            className={`flex-shrink-0 px-3 py-1 rounded-full text-sm transition-colors ${
               isSelected
-                ? `${getCategoryColorClass(category)} text-white`
-                : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+                ? 'bg-neutral-900 text-white'
+                : 'bg-neutral-100 text-neutral-500 hover:text-neutral-700 hover:bg-neutral-200'
             }`}
           >
-            <span>{meta.icon}</span>
-            <span>{meta.label}</span>
-            <span className={`text-xs ${isSelected ? 'opacity-80' : 'opacity-60'}`}>({count})</span>
+            {meta.label}
+            <span className={`ml-1 text-xs ${isSelected ? 'text-neutral-400' : 'text-neutral-400'}`}>
+              {count}
+            </span>
           </button>
         )
       })}
