@@ -110,6 +110,18 @@ const FRAME_COUNTS: Record<string, number> = {
   'slc-7': 125,
   'slc-8': 125,
   'slc-9': 100,
+  // Anchorage sequences
+  'anchorage-1': 192,
+  'anchorage-2': 125,
+  'anchorage-3': 125,
+  'anchorage-4': 125,
+  'anchorage-5': 125,
+  'anchorage-6': 125,
+  'anchorage-7': 131,
+  'anchorage-8': 68,
+  'anchorage-9': 107,
+  'anchorage-10': 125,
+  'anchorage-11': 125,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {

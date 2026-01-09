@@ -14,6 +14,107 @@ interface CitySelectorProps {
   preserveFilters?: boolean
 }
 
+// Individual city item with hover animation
+function CityItem({
+  city,
+  isActive,
+  href,
+  onClose,
+  index,
+  totalItems,
+  isClosing,
+}: {
+  city: { slug: string; name: string }
+  isActive: boolean
+  href: string
+  onClose: () => void
+  index: number
+  totalItems: number
+  isClosing: boolean
+}) {
+  const [isHovered, setIsHovered] = useState(false)
+
+  // Reverse stagger for exit animation (last items exit first)
+  const exitDelay = isClosing ? (totalItems - index - 1) * 0.02 : 0
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -16, scale: 0.95 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        scale: 1,
+      }}
+      exit={{
+        opacity: 0,
+        x: -12,
+        scale: 0.95,
+        transition: {
+          duration: 0.15,
+          delay: exitDelay,
+          ease: [0.4, 0, 1, 1]
+        }
+      }}
+      transition={{
+        duration: 0.25,
+        delay: index * 0.03,
+        ease: [0.16, 1, 0.3, 1]
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="relative"
+    >
+      {/* Animated highlight background */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-accent-50 via-accent-100/80 to-accent-50 rounded-md mx-1"
+        initial={{ scaleX: 0, opacity: 0 }}
+        animate={{
+          scaleX: isHovered || isActive ? 1 : 0,
+          opacity: isHovered || isActive ? 1 : 0
+        }}
+        transition={{
+          duration: 0.2,
+          ease: [0.4, 0, 0.2, 1]
+        }}
+        style={{ originX: 0 }}
+      />
+
+      <Link
+        href={href}
+        onClick={onClose}
+        className="relative block px-4 py-2.5 text-sm transition-colors z-10"
+      >
+        <motion.span
+          className={`
+            inline-block
+            ${isActive ? 'text-accent-700 font-semibold' : 'text-neutral-700'}
+          `}
+          animate={{
+            x: isHovered ? 4 : 0,
+            color: isHovered || isActive ? 'rgb(var(--accent-700))' : 'rgb(64, 64, 64)',
+          }}
+          transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+        >
+          {city.name}
+        </motion.span>
+
+        {/* Arrow indicator on hover */}
+        <motion.span
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-accent-500"
+          initial={{ opacity: 0, x: -8 }}
+          animate={{
+            opacity: isHovered ? 1 : 0,
+            x: isHovered ? 0 : -8
+          }}
+          transition={{ duration: 0.15 }}
+        >
+          →
+        </motion.span>
+      </Link>
+    </motion.div>
+  )
+}
+
 function CitySelectorContent({
   currentCitySlug,
   currentCityName,
@@ -21,6 +122,7 @@ function CitySelectorContent({
   preserveFilters = true,
 }: CitySelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isClosing, setIsClosing] = useState(false)
   const timeoutRef = useRef<NodeJS.Timeout>()
   const { buildCityUrl } = useNavigation()
 
@@ -41,13 +143,25 @@ function CitySelectorContent({
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
+    setIsClosing(false)
     setIsOpen(true)
   }
 
   const handleMouseLeave = () => {
-    // Add a small delay before closing to make hover more forgiving
+    // Mark as closing to trigger reverse animation
+    setIsClosing(true)
+    // Add delay for exit animation to complete
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false)
+      setIsClosing(false)
+    }, 200)
+  }
+
+  const handleClose = () => {
+    setIsClosing(true)
+    setTimeout(() => {
+      setIsOpen(false)
+      setIsClosing(false)
     }, 150)
   }
 
@@ -62,64 +176,70 @@ function CitySelectorContent({
       onMouseLeave={handleMouseLeave}
     >
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          if (isOpen) {
+            handleClose()
+          } else {
+            setIsClosing(false)
+            setIsOpen(true)
+          }
+        }}
         className="flex items-center gap-1 px-3 py-2 text-base font-medium text-accent-600 hover:text-accent-700 rounded-lg hover:bg-neutral-50 transition-colors"
       >
         <span className="text-neutral-900">Curious</span>
         <span className="text-neutral-400 mx-0.5">|</span>
         <span>{currentCityName}</span>
-        <svg
-          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+        <motion.svg
+          className="w-4 h-4"
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
+        </motion.svg>
       </button>
 
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
+            initial={{ opacity: 0, y: -8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{
+              opacity: 0,
+              y: -8,
+              scale: 0.98,
+              transition: {
+                duration: 0.2,
+                delay: cities.length * 0.015, // Wait for items to exit first
+                ease: [0.4, 0, 1, 1]
+              }
+            }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             className="absolute left-0 top-full pt-1 w-56 z-50"
           >
-            <div className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto">
-              {cities.map((city, index) => {
-                const isActive = city.slug === currentCitySlug
-
-                return (
-                  <motion.div
+            <motion.div
+              className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto overflow-x-hidden"
+              initial={{ boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
+              animate={{ boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }}
+              transition={{ duration: 0.3 }}
+            >
+              <AnimatePresence mode="popLayout">
+                {cities.map((city, index) => (
+                  <CityItem
                     key={city.slug}
-                    initial={{ opacity: 0, x: -12 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{
-                      duration: 0.25,
-                      delay: index * 0.03, // Staggered wave effect
-                      ease: [0.4, 0, 0.2, 1]
-                    }}
-                  >
-                    <Link
-                      href={buildCityUrl(city.slug, currentSection, preserveFilters)}
-                      onClick={() => setIsOpen(false)}
-                      className={`
-                        block px-4 py-2 text-sm transition-colors
-                        ${
-                          isActive
-                            ? 'bg-accent-50 text-accent-700 font-medium'
-                            : 'text-neutral-700 hover:bg-accent-50 hover:text-accent-700'
-                        }
-                      `}
-                    >
-                      {city.name}
-                    </Link>
-                  </motion.div>
-                )
-              })}
-            </div>
+                    city={city}
+                    isActive={city.slug === currentCitySlug}
+                    href={buildCityUrl(city.slug, currentSection, preserveFilters)}
+                    onClose={handleClose}
+                    index={index}
+                    totalItems={cities.length}
+                    isClosing={isClosing}
+                  />
+                ))}
+              </AnimatePresence>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

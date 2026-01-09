@@ -21,6 +21,7 @@ import { raleigh_premium_history } from './premium/raleigh'
 import { portland_premium_history } from './premium/portland'
 import { dallas_premium_history } from './premium/dallas'
 import { salt_lake_city_premium_history } from './premium/salt-lake-city'
+import { anchorage_premium_history } from './premium/anchorage'
 
 // Re-export individual history collections
 export { minneapolis_history }
@@ -45,7 +46,7 @@ export const history: HistoryIndex = {
   'salt-lake-city': { ...salt_lake_city_history, ...salt_lake_city_premium_history },
   'colorado-springs': colorado_springs_history,
   'dallas': { ...dallas_history, ...dallas_premium_history },
-  'anchorage': anchorage_history,
+  'anchorage': { ...anchorage_history, ...anchorage_premium_history },
   'denver': denver_history,
   'tampa': { ...tampa_history, ...tampa_premium_history },
   'phoenix': { ...phoenix_history, ...phoenix_premium_history },
