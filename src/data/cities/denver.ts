@@ -462,8 +462,8 @@ export const denver: CityData = {
             description: 'Network of tunnels connecting nine buildings throughout the Capitol complex, running entire blocks under city streets. Contains old ore cart tracks, heavy vault doors once used by state treasurer. Most Denver residents have no idea these exist.',
             images: [
               {
-                src: '/denver/hidden-gems/capitol-tunnels.png',
-                alt: 'Colorado State Capitol building',
+                src: '/denver/hidden-gems/tunnels.png',
+                alt: 'Colorado State Capitol underground tunnels',
               },
             ],
             address: '200 E Colfax Ave, Denver, CO 80203',
@@ -504,8 +504,12 @@ export const denver: CityData = {
             description: 'Built over thousands of unclaimed graves from Mount Prospect Cemetery (1858). In 1893, undertaker E.P. McGovern dismembered corpses to fit in child-sized coffins. Estimated 3,000 bodies still buried under the park. Bodies discovered as recently as 2010 and 2022.',
             images: [
               {
-                src: '/denver/hidden-gems/cheesman-park.png',
+                src: '/denver/hidden-gems/cheesman-1.png',
                 alt: 'Cheesman Park Denver',
+              },
+              {
+                src: '/denver/hidden-gems/cheesman-2.png',
+                alt: 'Cheesman Park pavilion',
               },
             ],
             address: '1599 E 13th Ave, Denver, CO 80218',
@@ -522,8 +526,12 @@ export const denver: CityData = {
             description: 'Built 1901-1904 for $1 million, this massive powerhouse generated electricity for Denver\'s 160+ mile streetcar system. Could pump out 9,500 kilowatts. Ceased operations in 1955. Now the REI flagship store - most shoppers don\'t know the history.',
             images: [
               {
-                src: '/denver/hidden-gems/tramway-powerhouse.png',
+                src: '/denver/hidden-gems/powerhouse-1.png',
                 alt: 'Denver Tramway Powerhouse (now REI)',
+              },
+              {
+                src: '/denver/hidden-gems/powerhouse-2.png',
+                alt: 'Denver Tramway Powerhouse interior',
               },
             ],
             address: '1416 Platte St, Denver, CO 80202',
