@@ -1208,10 +1208,28 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.intelligentsia.com',
             instagram: '@intelligentsiacoffee',
-            image: {
-              src: '',
-              alt: 'Modern coffee bar with precision brewing equipment',
-            },
+            images: [
+              {
+                src: '/chicago/coffee/intelegensia-1.png',
+                alt: 'Intelligentsia Coffee bar',
+              },
+              {
+                src: '/chicago/coffee/intelegensia-2.png',
+                alt: 'Intelligentsia pour-over station',
+              },
+              {
+                src: '/chicago/coffee/intelegensia-3.png',
+                alt: 'Intelligentsia coffee beans',
+              },
+              {
+                src: '/chicago/coffee/intelegensia-4.png',
+                alt: 'Intelligentsia Millennium Park location',
+              },
+              {
+                src: '/chicago/coffee/intelegensia-5.png',
+                alt: 'Intelligentsia latte art',
+              }
+            ],
           },
           {
             name: 'Dark Matter Coffee',
@@ -1225,10 +1243,24 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.darkmattercoffee.com',
             instagram: '@darkmattercoffee',
-            image: {
-              src: '',
-              alt: 'Artfully decorated indie coffee shop with character',
-            },
+            images: [
+              {
+                src: '/chicago/coffee/darkmatter-1.png',
+                alt: 'Dark Matter Coffee shop interior',
+              },
+              {
+                src: '/chicago/coffee/darkmatter-2.png',
+                alt: 'Dark Matter barrel-aged coffee',
+              },
+              {
+                src: '/chicago/coffee/darkmatter-3.png',
+                alt: 'Dark Matter roasting operation',
+              },
+              {
+                src: '/chicago/coffee/darkmatter-4.png',
+                alt: 'Dark Matter coffee drinks',
+              }
+            ],
           },
           {
             name: 'The Wormhole Coffee',
@@ -1242,6 +1274,20 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.thewormhole.us',
             instagram: '@wormholecoffee',
+            images: [
+              {
+                src: '/chicago/coffee/wormhole-1.png',
+                alt: 'The Wormhole Coffee DeLorean interior',
+              },
+              {
+                src: '/chicago/coffee/wormhole-2.png',
+                alt: 'The Wormhole Coffee 80s decor',
+              },
+              {
+                src: '/chicago/coffee/wormhole-3.png',
+                alt: 'The Wormhole Coffee vanilla latte',
+              }
+            ],
           },
           {
             name: 'Hexe Coffee Co.',
@@ -1255,6 +1301,20 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.hexecoffee.com',
             instagram: '@hexecoffeeco',
+            images: [
+              {
+                src: '/chicago/coffee/hexe-1.png',
+                alt: 'Hexe Coffee Co. interior',
+              },
+              {
+                src: '/chicago/coffee/hexe-2.png',
+                alt: 'Hexe Coffee roasting',
+              },
+              {
+                src: '/chicago/coffee/hexe-3.png',
+                alt: 'Hexe Coffee pastries',
+              }
+            ],
           },
           {
             name: 'Loba Pastry + Coffee',
@@ -1268,10 +1328,20 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.lobachicago.com',
             instagram: '@lobachicago',
-            image: {
-              src: '',
-              alt: 'Artisan pastries in a warm bakery setting',
-            },
+            images: [
+              {
+                src: '/chicago/coffee/loba-1.png',
+                alt: 'Loba Pastry + Coffee pastries',
+              },
+              {
+                src: '/chicago/coffee/loba-2.png',
+                alt: 'Loba bakery interior',
+              },
+              {
+                src: '/chicago/coffee/loba-3.png',
+                alt: 'Loba coffee and pastry',
+              }
+            ],
           },
           {
             name: 'Bridgeport Coffee',
@@ -1285,6 +1355,24 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://www.bridgeportcoffee.net',
             instagram: '@bridgeportcoffee',
+            images: [
+              {
+                src: '/chicago/coffee/bridgeport-1.png',
+                alt: 'Bridgeport Coffee interior',
+              },
+              {
+                src: '/chicago/coffee/bridgeport-2.png',
+                alt: 'Bridgeport Coffee roasting',
+              },
+              {
+                src: '/chicago/coffee/bridgeport-3.png',
+                alt: 'Bridgeport Coffee neighborhood vibe',
+              },
+              {
+                src: '/chicago/coffee/bridgeport-4.png',
+                alt: 'Bridgeport Coffee drinks',
+              }
+            ],
           }
         ],
       },
