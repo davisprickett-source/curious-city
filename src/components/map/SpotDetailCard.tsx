@@ -39,6 +39,7 @@ const cardVariants = {
 export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose }: SpotDetailCardProps) {
   const carouselImages = spot.images || (spot.image ? [spot.image] : [])
   const hasMultipleLocations = Boolean(spot.locations && spot.locations.length > 0)
+  const [mobileExpanded, setMobileExpanded] = useState(false)
 
   return (
     <>
@@ -126,6 +127,8 @@ export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose
                 carouselImages={carouselImages}
                 hasMultipleLocations={hasMultipleLocations}
                 isMobile
+                mobileExpanded={mobileExpanded}
+                setMobileExpanded={setMobileExpanded}
               />
             </div>
           </motion.div>
@@ -143,7 +146,9 @@ function CardContent({
   onPrev,
   carouselImages,
   hasMultipleLocations,
-  isMobile = false
+  isMobile = false,
+  mobileExpanded = false,
+  setMobileExpanded
 }: {
   spot: BestOfSpot
   rank: number
@@ -153,6 +158,8 @@ function CardContent({
   carouselImages: any[]
   hasMultipleLocations: boolean
   isMobile?: boolean
+  mobileExpanded?: boolean
+  setMobileExpanded?: (expanded: boolean) => void
 }) {
   return (
     <div className="space-y-6">
@@ -202,6 +209,36 @@ function CardContent({
         {spot.vibe}
       </p>
 
+      {/* Mobile: More Details toggle */}
+      {isMobile && setMobileExpanded && (
+        <button
+          onClick={() => setMobileExpanded(!mobileExpanded)}
+          className="w-full flex items-center justify-between px-4 py-3 bg-neutral-100 hover:bg-neutral-200 rounded-xl transition-colors"
+          aria-expanded={mobileExpanded}
+        >
+          <span className="text-base font-semibold text-neutral-900">
+            {mobileExpanded ? 'Less' : 'More Details'}
+          </span>
+          <svg
+            className={`w-5 h-5 text-neutral-600 transition-transform duration-200 ${mobileExpanded ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      )}
+
+      {/* Collapsible content - always visible on desktop, toggle on mobile */}
+      {(!isMobile || mobileExpanded) && (
+        <motion.div
+          initial={isMobile ? { height: 0, opacity: 0 } : false}
+          animate={{ height: 'auto', opacity: 1 }}
+          exit={isMobile ? { height: 0, opacity: 0 } : undefined}
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          className="space-y-6 overflow-hidden"
+        >
       {/* The Order */}
       {spot.order && (
         <div className="border-l-4 border-[#c65d3b] pl-4 py-2 bg-amber-50/50 rounded-r-lg">
@@ -319,6 +356,8 @@ function CardContent({
           </a>
         )}
       </div>
+        </motion.div>
+      )}
 
       {/* Navigation buttons */}
       <div className="pt-6 border-t border-neutral-200">
