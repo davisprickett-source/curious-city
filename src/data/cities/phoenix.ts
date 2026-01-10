@@ -917,10 +917,24 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://www.cartelcoffeelab.com',
             instagram: '@cartelcoffeelab',
-            image: {
-              src: '',
-              alt: 'Specialty coffee bar with precision brewing equipment',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/catel-1.png',
+                alt: 'Cartel Coffee Lab interior',
+              },
+              {
+                src: '/phoenix/coffee/catel-2.png',
+                alt: 'Cartel Coffee Lab pour-over bar',
+              },
+              {
+                src: '/phoenix/coffee/catel-3.png',
+                alt: 'Cartel Coffee Lab latte art',
+              },
+              {
+                src: '/phoenix/coffee/catel-4.png',
+                alt: 'Cartel Coffee Lab coffee service',
+              }
+            ],
           },
           {
             name: 'Window Coffee Bar',
@@ -933,10 +947,20 @@ export const phoenix: CityData = {
             hours: '7am-3pm daily',
             price: '$$',
             instagram: '@windowcoffeebar',
-            image: {
-              src: '',
-              alt: 'Cheery specialty coffee shop with Mexican house roast',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/windowcoffee-1.png',
+                alt: 'Window Coffee Bar exterior',
+              },
+              {
+                src: '/phoenix/coffee/windowcoffee-2.png',
+                alt: 'Window Coffee Bar drinks',
+              },
+              {
+                src: '/phoenix/coffee/windowcoffee-3.png',
+                alt: 'Window Coffee Bar Mexican roast',
+              }
+            ],
           },
           {
             name: 'A.T. Oasis',
@@ -950,10 +974,24 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://atoasiscoffee.com',
             instagram: '@atoasiscoffee',
-            image: {
-              src: '',
-              alt: 'Ethiopian coffee with traditional ceremony setting',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/oasis-1.png',
+                alt: 'A.T. Oasis Ethiopian coffee',
+              },
+              {
+                src: '/phoenix/coffee/oasis-2.png',
+                alt: 'A.T. Oasis coffee ceremony',
+              },
+              {
+                src: '/phoenix/coffee/oasis-3.png',
+                alt: 'A.T. Oasis interior',
+              },
+              {
+                src: '/phoenix/coffee/oasis-4.png',
+                alt: 'A.T. Oasis ginger spice coffee',
+              }
+            ],
           },
           {
             name: 'Lola Coffee',
@@ -967,10 +1005,20 @@ export const phoenix: CityData = {
             price: '$$',
             website: 'https://lolacoffeebar.com',
             instagram: '@lolacoffeebar',
-            image: {
-              src: '',
-              alt: 'Family-owned neighborhood coffee shop',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/lola-1.png',
+                alt: 'Lola Coffee interior',
+              },
+              {
+                src: '/phoenix/coffee/lola-2.png',
+                alt: 'Lola Coffee espresso drinks',
+              },
+              {
+                src: '/phoenix/coffee/lola-3.png',
+                alt: 'Lola Coffee neighborhood vibe',
+              }
+            ],
           },
           {
             name: 'Bang Bang Coffee',
@@ -983,10 +1031,16 @@ export const phoenix: CityData = {
             hours: '7am-2pm daily',
             price: '$$',
             instagram: '@bangbangcoffeebar',
-            image: {
-              src: '',
-              alt: 'Charming red brick coffee window with outdoor seating',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/bangbang-1.png',
+                alt: 'Bang Bang Coffee red brick building',
+              },
+              {
+                src: '/phoenix/coffee/bangbang-2.png',
+                alt: 'Bang Bang Coffee outdoor seating under palms',
+              }
+            ],
           },
           {
             name: 'Blue Corn Cafe & Bakery',
@@ -999,10 +1053,16 @@ export const phoenix: CityData = {
             hours: '7am-2pm Wed-Sun',
             price: '$$',
             instagram: '@bluecorncafeandbakery',
-            image: {
-              src: '',
-              alt: 'Indigenous-owned bakery with fresh sourdough and pastries',
-            },
+            images: [
+              {
+                src: '/phoenix/coffee/bluecorn-1.png',
+                alt: 'Blue Corn Cafe sourdough and pastries',
+              },
+              {
+                src: '/phoenix/coffee/bluecorn-2.png',
+                alt: 'Blue Corn Cafe bakery interior',
+              }
+            ],
           },
         ],
       },
