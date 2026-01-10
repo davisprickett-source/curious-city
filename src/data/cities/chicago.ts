@@ -382,6 +382,12 @@ export const chicago: CityData = {
             category: 'culture',
             title: 'Mrs. O\'Leary\'s cow was officially exonerated 126 years later',
             body: 'The story that Catherine O\'Leary\'s cow kicked over a lantern and started the Great Chicago Fire was fabricated by reporter Michael Ahern, who later admitted he invented it for a better story. The O\'Learys were poor Irish immigrants—convenient scapegoats. In 1997, the Chicago City Council officially cleared Catherine O\'Leary and her cow. It took 126 years to apologize. The real cause remains unknown.',
+            images: [
+              {
+                src: '/chicago/curiosities/oleary-cow.png',
+                alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend',
+              }
+            ],
             source: 'Chicago City Council Resolution, 1997',
             location: {
               name: 'DeKoven Street (Chicago Fire Academy)',
@@ -448,6 +454,12 @@ export const chicago: CityData = {
             category: 'invention',
             title: 'The zipper, Twinkies, and spray paint were all invented here',
             body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
+            images: [
+              {
+                src: '/chicago/curiosities/twinkies-zipper-spraypaint.png',
+                alt: 'Chicago inventions: the zipper, Twinkies, and spray paint',
+              }
+            ],
             source: 'Chicago History Museum',
           }
         ],
@@ -589,8 +601,12 @@ export const chicago: CityData = {
             description: 'Sixty miles of underground freight tunnels run beneath downtown Chicago, built between 1899 and 1906 to move coal and goods via electric railway cars. The system worked until 1959. In 1992, a contractor drove a piling through the tunnel roof into the Chicago River, causing the Great Chicago Flood that flooded basements across the Loop. The tunnels were sealed after 9/11. Most Chicagoans have no idea this network exists. You can\'t visit — access is restricted to utility workers — but the knowledge that an entire subterranean city runs beneath your feet changes how you see the streets. Some sections are still used for fiber optic cables and utilities. Others sit empty, slowly flooding with groundwater. The tunnel system is Chicago\'s best-kept infrastructure secret.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/freight-tunnel-1.png',
                 alt: 'Underground tunnel with brick archways and dim lighting',
+              },
+              {
+                src: '/chicago/hidden-gems/freight-tunnel-2.png',
+                alt: 'Historic Chicago freight tunnel system',
               }
             ],
             address: 'Beneath downtown Chicago',
@@ -608,8 +624,12 @@ export const chicago: CityData = {
             description: 'An abandoned L station sits in the median of the Eisenhower Expressway, closed since 1973 and visible from passing Blue Line trains. The California station was part of the original Garfield Park elevated line, abandoned when the Congress Line (now Blue Line) was rerouted. The platform is still there — rusted, overgrown with weeds, covered in graffiti. No public access, but you can see it clearly if you ride the Blue Line between UIC-Halsted and Illinois Medical District. Watching an abandoned station flash past while you ride a functioning train creates a strange temporal overlap — this is what infrastructure death looks like in a city that doesn\'t tear everything down.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/blue-line-1.png',
                 alt: 'Abandoned elevated train station with overgrown platform',
+              },
+              {
+                src: '/chicago/hidden-gems/blue-line-2.png',
+                alt: 'California ghost station visible from Blue Line',
               }
             ],
             address: 'Eisenhower Expressway near California Ave, Chicago, IL',
@@ -627,8 +647,16 @@ export const chicago: CityData = {
             description: 'A confirmed Al Capone location where original speakeasy architecture is still visible above the ceiling — exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. The basement tunnel system is sealed now, but you can still see where bootleggers moved inventory. The restaurant serves deep-dish pizza and Italian beef in a space where gangsters once ran liquor. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/exchequer-1.png',
                 alt: 'Historic restaurant interior with exposed brick and vintage details',
+              },
+              {
+                src: '/chicago/hidden-gems/exchequer-2.png',
+                alt: 'Exchequer Restaurant speakeasy architecture',
+              },
+              {
+                src: '/chicago/hidden-gems/exchequer-3.png',
+                alt: 'Al Capone era speakeasy details at Exchequer',
               }
             ],
             address: '226 S Wabash Ave, Chicago, IL 60604',
@@ -646,8 +674,20 @@ export const chicago: CityData = {
             description: 'The only remaining structure from the Union Stock Yards, once the largest meatpacking complex in the world (1865-1971). This neo-gothic limestone gate from 1877 is the sole survivor of an industrial empire that defined Chicago. At its peak, the stockyards processed 18 million animals annually. Upton Sinclair wrote The Jungle about conditions here. The smell could be detected miles away. Now: one ornate gate standing alone on Exchange Avenue, a National Historic Landmark marking an industry that no longer exists. Behind the gate: industrial lots, some new development, and the absence of what was once the economic engine of the Midwest.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/stockyard-1.png',
                 alt: 'Historic limestone gate with ornate architecture standing alone',
+              },
+              {
+                src: '/chicago/hidden-gems/stockyard-2.png',
+                alt: 'Union Stock Yard Gate architectural details',
+              },
+              {
+                src: '/chicago/hidden-gems/stockyard-3.png',
+                alt: 'Union Stock Yard Gate historic landmark',
+              },
+              {
+                src: '/chicago/hidden-gems/stockyard-4.png',
+                alt: 'Union Stock Yard Gate from street level',
               }
             ],
             address: '850 W Exchange Ave, Chicago, IL 60609',
@@ -670,8 +710,12 @@ export const chicago: CityData = {
             description: 'Scattered throughout Jackson Park: original arc lamp posts designed by Charles Atwood, Westinghouse manhole covers fabricated for the fair, the Wooded Island\'s Japanese garden on the site of the Phoenix Pavilion, and the Columbia Stone Pedestrian Bridge. The 1893 World\'s Columbian Exposition was demolished after the fair — almost everything burned or was torn down. These fragments are what remains of the "White City" that introduced Ferris wheels, Cracker Jack, and electric lighting on a scale never seen before. Most visitors to Jackson Park walk past 130-year-old infrastructure without realizing they\'re treading on World\'s Fair history.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/jacksonpark-1.png',
                 alt: 'Historic stone bridge and lamp posts in park setting',
+              },
+              {
+                src: '/chicago/hidden-gems/jacksonpark-2.png',
+                alt: '1893 World\'s Fair remnants in Jackson Park',
               }
             ],
             address: 'Jackson Park, 6401 S Stony Island Ave, Chicago, IL 60637',
@@ -689,8 +733,12 @@ export const chicago: CityData = {
             description: 'A hidden Prairie School garden designed by Alfred Caldwell in 1936, rebuilt in 2013, and somehow still unknown to most Chicagoans. The lily pool sits at the north end of Lincoln Park Zoo — a serene landscape of water, stone, and native plants arranged in the Frank Lloyd Wright tradition of organic architecture. The space looks like a Monet painting come to life. Stone pathways wind through water gardens. Native plants bloom in careful succession. The council ring of stone benches invites contemplation. This is landscape architecture as art, quietly succeeding in a city that usually prefers loud.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/lily-1.png',
                 alt: 'Tranquil garden with lily pond and stone pathways',
+              },
+              {
+                src: '/chicago/hidden-gems/lily-2.png',
+                alt: 'Alfred Caldwell Lily Pool Prairie School garden',
               }
             ],
             address: '125 W Fullerton Pkwy, Chicago, IL 60614',
@@ -708,8 +756,16 @@ export const chicago: CityData = {
             description: 'The world\'s highest church sits 400 feet above street level inside the spire of the First United Methodist Church — a neo-gothic skyscraper in the Loop that\'s also the world\'s tallest church building at 568 feet. The Sky Chapel seats 30 people in a space accessible via elevator to the 22nd floor, then a narrow staircase. Eight stained glass windows, a small altar, and views across downtown. The chapel was designed for small weddings and quiet services. Most people walk past this building daily without realizing they\'re passing a church in the sky. Free tours are offered, but you have to ask.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/temple-sky-1.png',
                 alt: 'Neo-gothic church spire rising above city buildings',
+              },
+              {
+                src: '/chicago/hidden-gems/temple-sky-2.png',
+                alt: 'Chicago Temple Sky Chapel interior',
+              },
+              {
+                src: '/chicago/hidden-gems/temple-sky-3.png',
+                alt: 'Sky Chapel stained glass windows',
               }
             ],
             address: '77 W Washington St, Chicago, IL 60602',
@@ -732,7 +788,7 @@ export const chicago: CityData = {
             description: 'Four nearly-windowless floors sit above the CVS pharmacy at State and Adams, containing floor-to-ceiling tanks that produce ice and chilled water for Loop buildings. Most people walk past this every day without noticing the building has almost no windows. The "ice water factory" is a utilitarian structure hiding in plain sight — functional infrastructure disguised as architecture. The tanks inside serve the State Street district\'s cooling needs. The building does exactly one thing, does it efficiently, and makes no aesthetic argument for itself. This is architecture as pure utility.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/state-adams.png',
                 alt: 'Nearly windowless urban building with industrial purpose',
               }
             ],
@@ -750,8 +806,12 @@ export const chicago: CityData = {
             description: 'A tiny secret beach in Rogers Park where locals bring hammocks and books for quiet afternoons. No lifeguards, no concessions, no crowds — just a small stretch of sand at the end of Granville Avenue that most Chicagoans don\'t know exists. The beach sits tucked between larger public beaches, small enough to miss but perfect for reading or swimming without the Navy Pier energy. The view includes lake, sky, and the kind of urban solitude that cities promise but rarely deliver. Combine with Jarvis Beach and Lane Beach for a low-key North Side beach day.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/granville-1.png',
                 alt: 'Quiet neighborhood beach with sand and lake view',
+              },
+              {
+                src: '/chicago/hidden-gems/granville-2.png',
+                alt: 'Granville Beach hidden spot on Lake Michigan',
               }
             ],
             address: 'Granville Ave & Lake Michigan, Chicago, IL 60660',
@@ -769,8 +829,20 @@ export const chicago: CityData = {
             description: 'Sixty-eight tiny, meticulously detailed diorama rooms in the Art Institute\'s basement, created by Narcissa Niblack Thorne at 1-inch scale between 1932 and 1940. Each room recreates European and American interiors from the 16th to 20th centuries with working hinges, upholstered furniture, hand-painted wallpaper, and miniature art. The craftsmanship is extraordinary — these aren\'t dollhouses, they\'re architectural models built by master craftsmen. Most visitors to the Art Institute never make it down here, which means you can spend an hour studying furniture that\'s an inch tall in a quiet basement gallery while everyone else fights for a photo of Nighthawks.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/thorne-1.png',
                 alt: 'Detailed miniature room diorama with period furniture',
+              },
+              {
+                src: '/chicago/hidden-gems/thorne-2.png',
+                alt: 'Thorne Miniature Rooms European interior',
+              },
+              {
+                src: '/chicago/hidden-gems/thorne-3.png',
+                alt: 'Thorne Rooms intricate craftsmanship detail',
+              },
+              {
+                src: '/chicago/hidden-gems/thorne-4.png',
+                alt: 'Narcissa Thorne miniature room collection',
               }
             ],
             address: 'Art Institute of Chicago, 111 S Michigan Ave, Lower Level',
@@ -788,8 +860,16 @@ export const chicago: CityData = {
             description: 'A 1929 movie palace that never stopped showing films, preserving the experience of watching a movie in an ornate atmospheric theater. The ceiling is painted to look like a night sky with twinkling stars and moving clouds. The organ still rises from the orchestra pit for special screenings. The Music Box programs classics, cult films, foreign cinema, and midnight movies — this is where you watch The Room with 200 people shouting at the screen, or catch a 35mm print of a Hitchcock film. The theater has been lovingly maintained, which means it feels like 1929 in the best possible way. Popcorn is fresh. The balcony is intact. Movies look better here.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/musicbox-1.png',
                 alt: 'Ornate historic movie theater interior with starlit ceiling',
+              },
+              {
+                src: '/chicago/hidden-gems/musicbox-2.png',
+                alt: 'Music Box Theatre atmospheric ceiling',
+              },
+              {
+                src: '/chicago/hidden-gems/musicbox-3.png',
+                alt: 'Music Box Theatre vintage organ and architecture',
               }
             ],
             address: '3733 N Southport Ave, Chicago, IL 60613',
@@ -807,8 +887,20 @@ export const chicago: CityData = {
             description: 'Chicago\'s "secret garden" sits above Roots Handmade Pizza in West Town — a 1,000 sq ft rooftop space with vertical hanging gardens, string lights, and the kind of atmosphere that makes you forget you\'re in a city. The bar serves craft cocktails and local beer. The menu is farm-to-table without being precious about it. The space feels like someone\'s well-designed backyard, except it\'s four stories up with skyline views. This isn\'t a flashy rooftop lounge; it\'s a quiet space that succeeds by being thoughtfully made. Open seasonally, weather-dependent. Go for sunset.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/homestead-1.png',
                 alt: 'Rooftop garden with hanging plants and string lights',
+              },
+              {
+                src: '/chicago/hidden-gems/homestead-2.png',
+                alt: 'Homestead on the Roof vertical gardens',
+              },
+              {
+                src: '/chicago/hidden-gems/homestead-3.png',
+                alt: 'Homestead rooftop bar atmosphere',
+              },
+              {
+                src: '/chicago/hidden-gems/homestead-4.png',
+                alt: 'Homestead secret garden skyline view',
               }
             ],
             address: '1924 W Chicago Ave (above Roots Pizza), Chicago, IL 60622',
@@ -826,8 +918,12 @@ export const chicago: CityData = {
             description: 'The University of Chicago\'s Harper Memorial Library contains two hidden spaces: a basement "library beneath a library" with study spaces accessible through unmarked doors, and a space between the ceiling and roof peak that students have accessed for decades. The basement library is open to anyone who knows to look for it — quiet, wood-paneled, ideal for studying. The upper space is technically off-limits but generations of UChicago students have found ways in. The building itself is neo-gothic grandeur, designed to make education feel like a cathedral. The secret spaces make it feel like exploration.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/harper-1.png',
                 alt: 'Gothic library interior with wooden shelves and reading spaces',
+              },
+              {
+                src: '/chicago/hidden-gems/harper-2.png',
+                alt: 'Harper Memorial Library hidden basement study',
               }
             ],
             address: '1116 E 59th St, Chicago, IL 60637',
@@ -845,8 +941,12 @@ export const chicago: CityData = {
             description: 'A four-sided permission wall surrounding 3,300 sq ft between Medill and Fullerton west of Milwaukee — one of Chicago\'s most heavily concentrated legal graffiti spots. Artists can paint here without legal consequences, which means the work changes constantly. Some pieces last weeks. Others get buffed in days. The quality ranges from amateur to professional, which is the point — this is street art as living practice, not curated museum display. The wall sits in a Logan Square alley most people would never walk down, which makes finding it feel like discovery. Bring a camera. The art won\'t be the same next month.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/permission-1.png',
                 alt: 'Graffiti-covered permission wall with colorful street art',
+              },
+              {
+                src: '/chicago/hidden-gems/permission-2.png',
+                alt: 'Project Logan legal graffiti wall murals',
               }
             ],
             address: 'Between Medill & Fullerton, west of Milwaukee Ave, Chicago, IL',
@@ -864,8 +964,12 @@ export const chicago: CityData = {
             description: 'The actual location where FBI agents shot John Dillinger on July 22, 1934, after he watched a movie. The theater on Lincoln Avenue still stands, now operating as a live venue. A historical marker notes the spot where "Public Enemy No. 1" died. The movie he watched: Manhattan Melodrama. The woman who tipped off the FBI (the "Lady in Red") was actually wearing orange. Dillinger walked out of this theater into an ambush that\'s now Chicago crime folklore. The building has been renovated, but standing outside the former theater entrance connects you to a specific moment when federal law enforcement killed a celebrity criminal on a Chicago street.',
             images: [
               {
-                src: '',
+                src: '/chicago/hidden-gems/bigraph-1.png',
                 alt: 'Historic theater building exterior with vintage marquee',
+              },
+              {
+                src: '/chicago/hidden-gems/biograph-2.png',
+                alt: 'Biograph Theater where Dillinger was killed',
               }
             ],
             address: '2433 N Lincoln Ave, Chicago, IL 60614',
@@ -896,10 +1000,20 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://whistlerchicago.com/',
             instagram: '@whistlerchicago',
-            image: {
-              src: '/images/bars/whistler.jpg',
-              alt: 'Dimly lit cocktail bar with art on walls',
-            },
+            images: [
+              {
+                src: '/chicago/bars/whistler-1.png',
+                alt: 'The Whistler bar interior with art on walls',
+              },
+              {
+                src: '/chicago/bars/whistler-2.png',
+                alt: 'The Whistler cocktail bar seating',
+              },
+              {
+                src: '/chicago/bars/whistler-3.png',
+                alt: 'The Whistler live music performance',
+              }
+            ],
           },
           {
             name: 'Skylark',
@@ -913,27 +1027,58 @@ export const chicago: CityData = {
             price: '$',
             website: 'https://www.skylarkchicago.com/',
             instagram: '@skylark_chicago',
-            image: {
-              src: '/images/bars/skylark.jpg',
-              alt: 'Classic dive bar interior with neon signs',
-            },
+            images: [
+              {
+                src: '/chicago/bars/skylark-1.png',
+                alt: 'Skylark dive bar interior with neon signs',
+              },
+              {
+                src: '/chicago/bars/skylark-2.png',
+                alt: 'Skylark bar jukebox and seating',
+              },
+              {
+                src: '/chicago/bars/skylark-3.png',
+                alt: 'Skylark neighborhood crowd',
+              }
+            ],
           },
           {
-            name: 'The Violet Hour',
-            neighborhood: 'Wicker Park',
-            vibe: 'The bar that launched Chicago\'s craft cocktail scene. Unmarked entrance, serious drinks, no standing.',
-            order: 'Tell them what you like and trust the bartender. Or get the Juliet & Romeo.',
-            why: 'Opened in 2007 and still setting the standard. The no-standing policy keeps the vibe right. The drinks are immaculate. Yes, there\'s usually a wait, and yes, it\'s worth it.',
-            address: '1520 N Damen Ave, Chicago, IL 60622',
-            coordinates: { lat: 41.9093, lng: -87.6775 },
-            hours: '6pm-2am Sun-Fri, 6pm-3am Sat',
+            name: 'The Empty Bottle',
+            neighborhood: 'Ukrainian Village',
+            vibe: 'The indie rock institution. Cheap drinks, legendary sound, and Monday night shows that are always free.',
+            order: 'PBR tall boy. This isn\'t a cocktail bar.',
+            why: 'Since 1992, The Empty Bottle has been where Chicago\'s music scene happens. The sound system is impeccable, the bookings are adventurous, and the free Monday shows have launched careers. It\'s a bar that happens to have world-class live music, not the other way around.',
+            address: '1035 N Western Ave, Chicago, IL 60622',
+            coordinates: { lat: 41.8998, lng: -87.6873 },
+            hours: '5pm-2am Mon-Fri, 3pm-3am Sat, 3pm-2am Sun',
+            price: '$',
+            website: 'https://emptybottle.com/',
+            instagram: '@emptybottle',
+          },
+          {
+            name: 'Old Town Ale House',
+            neighborhood: 'Old Town',
+            vibe: 'Opened in 1958, walls covered in satirical nude paintings of politicians. Second City comedians have been drinking here for decades.',
+            order: 'Whatever\'s cheap. The beer is cold and the whiskey is honest.',
+            why: 'Chris Farley, John Belushi, Bill Murray — the comedy legends all drank here between Second City shows. Owner Bruce Elliott paints the portraits on the walls, including unflattering nudes of every president. No TVs, no pretense, just Chicago history in a glass.',
+            address: '219 W North Ave, Chicago, IL 60610',
+            coordinates: { lat: 41.9114, lng: -87.6344 },
+            hours: '12pm-4am Mon-Fri, 12pm-5am Sat, 12pm-4am Sun',
+            price: '$',
+            instagram: '@oldtownalehouse',
+          },
+          {
+            name: 'Three Dots and a Dash',
+            neighborhood: 'River North',
+            vibe: 'Hidden tiki paradise in a River North alley. Elaborate rum drinks, tropical kitsch, zero irony.',
+            order: 'The namesake Three Dots and a Dash — rum, honey, lime, allspice, served in a ceramic tiki mug.',
+            why: 'Finding this bar requires navigating an alley behind a Tex-Mex restaurant, which keeps out the wrong crowd. Inside is a Polynesian fever dream with 100+ rums, flaming drinks, and bartenders who take tiki seriously. It\'s maximalist escapism done right.',
+            address: '435 N Clark St, Chicago, IL 60654',
+            coordinates: { lat: 41.8903, lng: -87.6310 },
+            hours: '5pm-12am Sun-Thu, 5pm-2am Fri-Sat',
             price: '$$$',
-            website: 'https://www.theviolethour.com/',
-            instagram: '@violethourchicago',
-            image: {
-              src: '/images/bars/violet-hour.jpg',
-              alt: 'Dark speakeasy interior with velvet seating',
-            },
+            website: 'https://threedotschicago.com/',
+            instagram: '@threedotschicago',
           },
           {
             name: 'Maria\'s Packaged Goods & Community Bar',
@@ -947,10 +1092,20 @@ export const chicago: CityData = {
             price: '$',
             website: 'https://www.community-bar.com/',
             instagram: '@mariasbar',
-            image: {
-              src: '/images/bars/marias.jpg',
-              alt: 'Packed neighborhood bar with bottle shop shelves',
-            },
+            images: [
+              {
+                src: '/chicago/bars/marias-1.png',
+                alt: 'Maria\'s Packaged Goods bar interior',
+              },
+              {
+                src: '/chicago/bars/marias-2.png',
+                alt: 'Maria\'s craft beer selection',
+              },
+              {
+                src: '/chicago/bars/marias-3.png',
+                alt: 'Maria\'s Community Bar neighborhood crowd',
+              }
+            ],
           },
           {
             name: 'Simon\'s Tavern',
@@ -965,8 +1120,8 @@ export const chicago: CityData = {
             website: 'https://www.simonstavern.com/',
             instagram: '@simonstavern',
             image: {
-              src: '/images/bars/simons.jpg',
-              alt: 'Vintage tavern interior with nautical decorations',
+              src: '/chicago/bars/simons-1.png',
+              alt: 'Simon\'s Tavern vintage interior with nautical decorations',
             },
           }
         ],
@@ -2080,6 +2235,33 @@ export const chicago: CityData = {
             communityVoice: '"Sonotheque proved Chicago could have a world-class electronic music scene." — Resident Advisor',
             lastAddress: '1444 W Chicago Ave, Chicago',
             source: 'Chicago Tribune, Resident Advisor',
+          },
+          {
+            id: 'chicago-lost-violet-hour',
+            type: 'lost-and-loved',
+            category: 'bar',
+            name: 'The Violet Hour',
+            neighborhood: 'Wicker Park',
+            yearsOpen: '2007–2025',
+            description: 'The speakeasy that launched Chicago\'s craft cocktail revolution. Hidden behind an unmarked door on Damen Avenue, The Violet Hour brought velvet curtains, house rules banning cell phones, and bartenders who treated cocktails as high art. No standing, no Cosmos, no Budweiser — just immaculate drinks in an intimate room where conversation mattered more than being seen.',
+            whyMissed: 'The Juliet & Romeo cocktail. The no-standing policy that made every seat feel earned. The proof that Chicago could have a world-class cocktail scene. It won the James Beard Award for Outstanding Bar in 2015 and trained a generation of bartenders. When plumbing issues and landlord disputes closed it in 2025, Chicago lost its cocktail cathedral.',
+            communityVoice: '"The Violet Hour didn\'t just serve drinks — it taught Chicago how to drink." — Chicago Magazine',
+            lastAddress: '1520 N Damen Ave, Chicago',
+            source: 'Chicago Tribune, Block Club Chicago',
+            images: [
+              {
+                src: '/chicago/bars/violet-1.png',
+                alt: 'The Violet Hour speakeasy interior with velvet seating',
+              },
+              {
+                src: '/chicago/bars/violet-2.png',
+                alt: 'The Violet Hour craft cocktails',
+              },
+              {
+                src: '/chicago/bars/violet-3.png',
+                alt: 'The Violet Hour bar and bartenders',
+              }
+            ],
           },
           {
             id: 'chicago-lost-5',
