@@ -233,6 +233,16 @@ export const seattle: CityData = {
             }
           ],
           location: { name: 'Downtown Seattle', stillExists: true },
+          images: [
+            {
+              src: '/seattle/curiosities/strik-1.png',
+              alt: 'Seattle General Strike of 1919',
+            },
+            {
+              src: '/seattle/curiosities/strike-2.png',
+              alt: 'Seattle workers during the 1919 General Strike',
+            }
+          ],
         },
         {
           id: 'curiosity-11',
