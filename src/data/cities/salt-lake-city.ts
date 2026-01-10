@@ -2089,8 +2089,24 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Current proved Salt Lake could support destination dining at a national level. The oysters were legendary.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/current-1.png',
                 alt: 'Current Fish & Oyster restaurant interior',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/current-2.png',
+                alt: 'Current Fish & Oyster raw bar',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/current-3.png',
+                alt: 'Current Fish & Oyster dining room',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/current-5.png',
+                alt: 'Current Fish & Oyster dishes',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/current-6.png',
+                alt: 'Current Fish & Oyster seafood selection',
               }
             ],
           },
@@ -2105,8 +2121,16 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Nothing has filled the void left by The Zephyr. It was where Salt Lake\'s music scene happened.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/zephr-1.png',
                 alt: 'The Zephyr Club exterior with art deco facade',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/zephr-2.png',
+                alt: 'The Zephyr Club interior stage',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/zephyr-3.png',
+                alt: 'The Zephyr Club live performance',
               }
             ],
           },
@@ -2121,8 +2145,16 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Those cheese fries. That dipping sauce. Utahns who moved away still dream about them.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/trainingtable-1.png',
                 alt: 'The Training Table restaurant booth with table phone',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/trainingtable-2.png',
+                alt: 'The Training Table cheese fries',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/trainingtable-3.png',
+                alt: 'The Training Table interior',
               }
             ],
           },
@@ -2137,8 +2169,16 @@ export const salt_lake_city: CityData = {
             whyMissed: 'The democratic chaos of a real mall, replaced by curated retail that feels more like a temple than a town square.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/ZCMI-01.png',
                 alt: 'ZCMI Center mall interior before demolition',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/ZCMI-2.png',
+                alt: 'ZCMI department store exterior',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/ZCMI-3.png',
+                alt: 'Crossroads Plaza shopping center',
               }
             ],
           },
@@ -2153,8 +2193,12 @@ export const salt_lake_city: CityData = {
             whyMissed: 'It burned twice and never came back. Today only wooden pilings remain, stretching into the lake like a skeleton.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/saltair-1.png',
                 alt: 'Historic Saltair Resort on the Great Salt Lake',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/saltair-2.png',
+                alt: 'Saltair Resort pavilion and beach',
               }
             ],
           },
@@ -2169,8 +2213,16 @@ export const salt_lake_city: CityData = {
             whyMissed: 'For immigrants from the Middle East, Cedars was a taste of home. For everyone else, it was an education.',
             images: [
               {
-                src: '',
+                src: '/Salt-Lake-City/lost-loved/cedars-1.png',
                 alt: 'Cedars of Lebanon restaurant exterior',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/cedars-2.png',
+                alt: 'Cedars of Lebanon mezze platter',
+              },
+              {
+                src: '/Salt-Lake-City/lost-loved/cedars-3.png',
+                alt: 'Cedars of Lebanon dining room',
               }
             ],
           },
