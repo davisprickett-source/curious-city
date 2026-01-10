@@ -1075,8 +1075,8 @@ export const denver: CityData = {
             verdict: 'Killed its creator. Installed posthumously. Still greets every arrival with glowing demon eyes.',
             images: [
               {
-                src: '/denver/dark-history/dia-3.png',
-                alt: 'Blue mustang sculpture "Blucifer" at Denver International Airport entrance',
+                src: '/denver/curiosities/bluecifer.png',
+                alt: 'Blucifer - the blue mustang sculpture with glowing red eyes',
               },
               {
                 src: '/denver/dark-history/dia-4.png',
