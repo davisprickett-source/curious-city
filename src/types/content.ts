@@ -238,6 +238,9 @@ export interface CuriosityContentItem extends BaseContentItem {
     url?: string
     stillExists?: boolean
   }
+  // City homepage hero carousel
+  featured?: boolean
+  featuredOrder?: number
 }
 
 // Hidden gem - a place or experience recommendation
@@ -277,6 +280,9 @@ export interface HiddenGemContentItem extends BaseContentItem {
     title: string
     url?: string
   }>
+  // City homepage hero carousel
+  featured?: boolean
+  featuredOrder?: number
 }
 
 // Iconic spot - well-known landmark or must-see attraction
@@ -463,6 +469,9 @@ export interface DarkHistoryContentItem extends BaseContentItem {
     }
     stillExists?: boolean
   }
+  // City homepage hero carousel
+  featured?: boolean
+  featuredOrder?: number
 }
 
 // Lost & Loved - closed businesses with emotional resonance
@@ -501,6 +510,9 @@ export interface LostAndLovedContentItem extends BaseContentItem {
     title: string
     url?: string
   }>
+  // City homepage hero carousel
+  featured?: boolean
+  featuredOrder?: number
 }
 
 // Scene - visual media item (photo or video)
@@ -568,6 +580,11 @@ export interface CityData {
   eventbriteCity?: string
   latitude?: number
   longitude?: number
+  // City homepage hero video animation
+  heroVideo?: {
+    sequencePath: string    // e.g., "tampa/tampa-1"
+    fallbackImage?: string  // Static fallback if video fails
+  }
 }
 
 // Cities index

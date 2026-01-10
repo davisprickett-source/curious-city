@@ -4,6 +4,10 @@ export const tampa: CityData = {
     slug: 'tampa',
     name: 'Tampa',
     tagline: 'Cigars, lightning, and perpetual reinvention',
+    heroVideo: {
+      sequencePath: 'tampa/tampa-1',
+      fallbackImage: '/banners/Tampa-Banner.png',
+    },
     content: [
       {
         id: 'intro-text',
@@ -67,6 +71,8 @@ export const tampa: CityData = {
             type: 'curiosity',
             category: 'legend',
             title: 'Tampa\'s favorite pirate never existed',
+            featured: true,
+            featuredOrder: 1,
             body: 'José Gaspar—the fearsome pirate who supposedly terrorized the Gulf Coast, amassed untold riches, and gives Tampa\'s beloved Gasparilla festival its name—almost certainly never existed. There\'s no historical record of him in Spanish naval archives, no contemporary accounts, no bounty notices, nothing. The legend was cooked up around 1900 by a publicist working for the Charlotte Harbor and Northern Railway, who needed a hook to lure tourists to southwest Florida. He invented a colorful backstory: Gaspar was a disgraced Spanish naval officer who turned pirate, captured princesses, buried treasure on Gasparilla Island, and dramatically killed himself rather than be captured by the U.S. Navy in 1821. It\'s complete fiction—but Tampa ran with it. Every January since 1904, the city hosts one of America\'s largest parades: a fully-rigged pirate ship "invades" the harbor, the mayor surrenders the city keys, and half a million people line Bayshore Boulevard to watch krewes throw beads from floats. The whole thing celebrates a man who never lived. Tampa knows. Tampa doesn\'t care. The party\'s too good.',
             year: '1904',
             image: {
@@ -106,6 +112,8 @@ export const tampa: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'Tampa is literally the Lightning Capital of North America',
+            featured: true,
+            featuredOrder: 5,
             body: 'The Tampa Bay area averages over 100 thunderstorm days per year—more lightning strikes than anywhere else in the U.S. The combination of sea breezes from the Gulf and the Atlantic creates perfect atmospheric conditions for daily afternoon violence. The NHL\'s Tampa Bay Lightning wasn\'t named for branding purposes; lightning defines Tampa summers the way snow defines Buffalo winters. Golfers learn to be off the course by 2pm. Locals set their watches by the rumble.',
             image: {
               src: '/tampa/curiosities/lightning-capital.png',
@@ -122,6 +130,8 @@ export const tampa: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'Cigar rollers hired readers to radicalize them with literature',
+            featured: true,
+            featuredOrder: 4,
             body: 'Before podcasts, before radio, Ybor City\'s cigar factories invented their own form of entertainment: the lector. These weren\'t just readers—they were performers, educators, and agitators. Hired by the workers themselves (who pooled pennies from each day\'s wages), lectors stood on elevated wooden platforms called tribunas and read aloud for hours while hundreds of workers hand-rolled cigars below. Mornings might start with newspapers—La Traducción, El Internacional, or papers from Havana—covering labor movements, anarchist theory, and Cuban independence. Afternoons shifted to serialized novels: Cervantes, Zola, Tolstoy, Victor Hugo. The Count of Monte Cristo was so popular in Tampa\'s factories that a cigar brand was named after it—Montecristo cigars exist because Ybor City rollers loved Dumas. Factory owners hated the practice, correctly suspecting that lectors were radicalizing their workforce. In 1931, during a bitter strike, owners banned lectors entirely and replaced them with radios playing sanitized content. The tradition died, but it had already done its work: Ybor\'s immigrant workers were among the most literate, politically engaged laborers in America.',
             year: '1890s',
             image: {
@@ -488,6 +498,8 @@ export const tampa: CityData = {
             type: 'hidden-gem',
             name: 'Bunker Bar at Le Méridien',
             category: 'Underground & Secret',
+            featured: true,
+            featuredOrder: 3,
             description: 'Hidden in the basement of Le Méridien Tampa — housed in the historic 1905 Federal Courthouse — sits one of downtown\'s most atmospheric bars. The Bunker occupies an original bank vault, its massive steel door still mounted on its hinges, three-foot-thick walls, and safety deposit boxes embedded in the brick. The space served as the courthouse\'s secure evidence room and later as a bank vault when the building was renovated. The juxtaposition is perfect: sip craft cocktails in a space designed to be impenetrable. Upstairs, the building\'s grand courtrooms once hosted trials of bootleggers and gangsters during Tampa\'s mob era. Charlie Wall — "The White Shadow" and Tampa\'s most notorious mob boss — testified here multiple times in the 1940s and 1950s before his brutal unsolved murder in 1955. The courthouse was also where federal prosecutors went after Santo Trafficante Sr. and the Italian mob that eventually pushed Wall out. Today, the intimate 30-seat bar maintains the original industrial aesthetic: exposed brick, low ceilings, dim Edison bulb lighting, and cocktails served where evidence and cash once sat locked away.',
             location: 'Downtown',
             address: '601 N Florida Ave, Tampa, FL 33602',
@@ -1255,6 +1267,8 @@ export const tampa: CityData = {
             category: 'disaster',
             year: '1980',
             title: 'The Sunshine Skyway Collapse',
+            featured: true,
+            featuredOrder: 2,
             body: 'On May 9, 1980, the freighter MV Summit Venture was navigating Tampa Bay in near-zero visibility when its radar failed during a squall. What came next played out in horrifying slow motion: the 609-foot ship, blinded by 60 mph winds and punishing rain, struck a support column of the Sunshine Skyway Bridge. A 1,400-foot section of steel cantilever span collapsed into the bay 165 feet below. A Greyhound bus carrying 26 passengers, a pickup truck, and six other vehicles plunged with it. Thirty-five people died. The youngest was a baby. The oldest, ninety-two. Only one person survived the fall: Wesley MacIntire, whose truck bounced off the ship\'s bow before hitting water. The pilot, John Lerro, was cleared of wrongdoing but haunted by the tragedy—he died in 2002, broken. Drivers crossing the new bridge still report seeing a blonde woman standing in the roadway who vanishes when they stop.',
             verdict: 'Thirty-five dead. The new bridge, completed in 1987, features "dolphin" protective barriers. The old southbound span is now the world\'s longest fishing pier.',
             sources: [
@@ -1925,6 +1939,8 @@ export const tampa: CityData = {
             category: 'music-venue',
             name: 'The Ritz Ybor',
             neighborhood: 'Ybor City',
+            featured: true,
+            featuredOrder: 6,
             yearsOpen: '1917–2018',
             description: 'For over a century, The Ritz was where Tampa heard history happen. Elvis shook his hips here in the \'50s. The Ramones tore through three-chord fury. Jazz legends played the early years. Punk bands destroyed the stage in the \'80s. EDM rattled the walls in the 2010s. Every generation claimed this room as theirs. It closed in 2018, briefly flickered back to life, then went dark for good. Now it sits empty on 7th Avenue—a silent monument to a music scene that once mattered.',
             whyMissed: 'The sweat-soaked history embedded in every floorboard. The feeling that greatness had stood on that exact stage. The knowledge that Tampa once had a music scene worthy of the name. The Ritz was proof.',

@@ -1,6 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
+import { motion, AnimatePresence } from 'framer-motion'
 import { CITY_METADATA } from '@/data/cities'
 import { routes } from '@/lib/routes'
 import { PremiumMobileMenu } from './PremiumMobileMenu'
@@ -54,28 +56,92 @@ export function Header({ cityName }: HeaderProps) {
   )
 }
 
+// Animation variants for staggered dropdown
+const dropdownVariants = {
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: 'afterChildren', // Wait for children to exit before container fades
+      staggerChildren: 0.03,
+      staggerDirection: -1, // Reverse stagger on exit (bottom to top)
+    },
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      when: 'beforeChildren', // Container fades in, then children stagger
+      staggerChildren: 0.04,
+      delayChildren: 0.05,
+      staggerDirection: 1, // Normal stagger on enter (top to bottom)
+    },
+  },
+}
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: -8,
+    transition: {
+      duration: 0.15,
+      ease: 'easeIn' as const,
+    },
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.2,
+      ease: 'easeOut' as const,
+    },
+  },
+}
+
 function CitiesDropdown() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <div className="relative hidden sm:block group">
+    <div
+      className="relative hidden sm:block"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-neutral-500 hover:text-accent-600 transition-colors">
         Cities
-        <svg className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <motion.svg
+          className="w-3.5 h-3.5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
+        </motion.svg>
       </button>
 
       {/* Dropdown - Simple city list only */}
-      <div className="absolute left-0 top-full mt-1 w-48 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-        {cities.map((city) => (
-          <Link
-            key={city.slug}
-            href={routes.city(city.slug)}
-            className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="absolute left-0 top-full mt-1 w-48 py-2 bg-white rounded-xl shadow-xl border border-neutral-100 overflow-hidden"
+            variants={dropdownVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
           >
-            {city.name}
-          </Link>
-        ))}
-      </div>
+            {cities.map((city) => (
+              <motion.div key={city.slug} variants={itemVariants}>
+                <Link
+                  href={routes.city(city.slug)}
+                  className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors"
+                >
+                  {city.name}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

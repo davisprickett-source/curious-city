@@ -1,22 +1,19 @@
-import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 import { Footer, RelatedCities } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import { getCityPageCards } from '@/lib/content/pages'
-import { PageCard } from '@/components/cards/PageCard'
-
-const cityBanners: Record<string, string> = {
-  minneapolis: '/banners/Minneapolis-banner.png',
-  dallas: '/banners/Dallas-banner.png',
-  raleigh: '/banners/Raleigh-banner.png',
-  denver: '/banners/Denver-Banner.png',
-  tampa: '/banners/Tampa-Banner.png',
-  phoenix: '/banners/Phoenix Banner.png',
-  portland: '/banners/Portland Banner.png',
-  'salt-lake-city': '/banners/Salt Lake City Banner.png',
-}
+import {
+  getCityFeaturedEntries,
+  getCityArticleSummaries,
+  getCityListiclePages,
+  getCityEstablishmentCategories,
+} from '@/lib/content/cityHomepage'
+import { CityHeroSection } from '@/components/city/CityHeroSection'
+import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSection'
+import { ArticleScrollCard } from '@/components/cards/ArticleScrollCard'
+import { ListicleTypeCard } from '@/components/cards/ListicleTypeCard'
+import { EstablishmentCategoryCard } from '@/components/cards/EstablishmentCategoryCard'
 
 interface CityPageProps {
   params: Promise<{ city: string }>
@@ -37,7 +34,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
 
   return {
     title: `${city.name} | Curious City`,
-    description: city.tagline || `Local content from ${city.name}`,
+    description: city.tagline || `Discover the untold stories, dark histories, and hidden secrets of ${city.name}`,
   }
 }
 
@@ -49,10 +46,18 @@ export default async function CityPage({ params }: CityPageProps) {
     notFound()
   }
 
-  const bannerSrc = cityBanners[city.slug]
-
-  // Get all page cards for this city
-  const pageCards = await getCityPageCards(slug)
+  // Fetch all data for the new homepage layout
+  const [
+    featuredEntries,
+    articles,
+    listiclePages,
+    establishmentCategories,
+  ] = await Promise.all([
+    getCityFeaturedEntries(slug),
+    getCityArticleSummaries(slug),
+    getCityListiclePages(slug),
+    getCityEstablishmentCategories(slug),
+  ])
 
   return (
     <>
@@ -62,48 +67,79 @@ export default async function CityPage({ params }: CityPageProps) {
         currentSection="articles"
       />
 
-      {bannerSrc && (
-        <div className="container-page pt-8">
-          <div className="overflow-hidden rounded-2xl shadow-[0_18px_50px_-30px_rgba(0,0,0,0.45)]">
-            <Image
-              src={bannerSrc}
-              alt={`${city.name} banner`}
-              width={1536}
-              height={512}
-              className="w-full h-auto"
-              priority
-            />
+      {/* Hero Section with video and featured entries carousel */}
+      <CityHeroSection
+        city={city}
+        featuredEntries={featuredEntries}
+      />
+
+      <main className="flex-1 bg-white">
+        {/* Articles Section */}
+        {articles.length > 0 && (
+          <HorizontalScrollSection
+            title="Articles"
+            eyebrow="Deep Dives"
+            description="Longform stories and essays exploring the city's history and culture"
+            viewAllLink={{
+              href: `/${city.slug}/articles`,
+              text: 'View all articles',
+            }}
+          >
+            {articles.map((article, index) => (
+              <ArticleScrollCard
+                key={article.slug}
+                article={article}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
+
+        {/* Listicles Section (Discover) */}
+        {listiclePages.length > 0 && (
+          <HorizontalScrollSection
+            title="Discover"
+            eyebrow="Explore"
+            description="Curated collections of curiosities, dark history, hidden gems, and more"
+            className="bg-neutral-50"
+          >
+            {listiclePages.map((listicle, index) => (
+              <ListicleTypeCard
+                key={listicle.type}
+                listicle={listicle}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
+
+        {/* Establishments Section (The Guide) */}
+        {establishmentCategories.length > 0 && (
+          <HorizontalScrollSection
+            title="The Guide"
+            eyebrow="Best Of"
+            description="Our picks for the best bars, restaurants, and coffee shops"
+            viewAllLink={{
+              href: `/${city.slug}/guide`,
+              text: 'View full guide',
+            }}
+          >
+            {establishmentCategories.map((category, index) => (
+              <EstablishmentCategoryCard
+                key={category.category}
+                category={category}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
+
+        {/* Related Cities */}
+        <section className="py-16 bg-neutral-50">
+          <div className="container-page">
+            <RelatedCities currentCitySlug={slug} />
           </div>
-        </div>
-      )}
-
-      <main className="flex-1">
-        <div className="container-page section-spacing">
-          {/* City Introduction */}
-          {city.tagline && (
-            <div className="mb-12 text-center">
-              <p className="text-2xl md:text-3xl text-neutral-600 max-w-3xl mx-auto">{city.tagline}</p>
-            </div>
-          )}
-
-          {/* Premium 1-Column Feed */}
-          <section className="mb-16">
-            <div className="space-y-8 max-w-4xl mx-auto">
-              {pageCards.map((pageCard, index) => (
-                <PageCard
-                  key={pageCard.href}
-                  data={pageCard}
-                  variant="standard"
-                  index={index}
-                  priority={index === 0}
-                />
-              ))}
-            </div>
-          </section>
-
-          {/* Related Cities */}
-          <RelatedCities currentCitySlug={slug} />
-        </div>
+        </section>
       </main>
 
       <Footer />
