@@ -881,10 +881,24 @@ export const denver: CityData = {
             hours: 'Mon-Fri 5pm-10pm, Sat-Sun 10:30am-2pm & 5pm-10pm',
             website: 'https://www.eatwithsafta.com/',
             instagram: '@eatwithsafta',
-            image: {
-              src: '',
-              alt: 'Israeli mezze spread with hummus and laffa bread',
-            },
+            images: [
+              {
+                src: '/denver/restaurants/safta-1.png',
+                alt: 'Safta hummus and laffa bread',
+              },
+              {
+                src: '/denver/restaurants/safta-2.png',
+                alt: 'Safta Israeli mezze spread',
+              },
+              {
+                src: '/denver/restaurants/safta-3.png',
+                alt: 'Safta restaurant interior',
+              },
+              {
+                src: '/denver/restaurants/safta-4.png',
+                alt: 'Safta lamb shoulder',
+              }
+            ],
           },
           {
             name: 'Hop Alley',
@@ -898,10 +912,20 @@ export const denver: CityData = {
             hours: 'Mon-Sat 5pm-10pm, closed Sun',
             website: 'https://hopalleydenver.com/',
             instagram: '@hopalleydenver',
-            image: {
-              src: '',
-              alt: 'Sichuan-style Chinese cuisine with bold flavors',
-            },
+            images: [
+              {
+                src: '/denver/restaurants/hopalley-1.png',
+                alt: 'Hop Alley kung pao pastrami',
+              },
+              {
+                src: '/denver/restaurants/hopalley-2.png',
+                alt: 'Hop Alley Sichuan dishes',
+              },
+              {
+                src: '/denver/restaurants/hopalley-3.png',
+                alt: 'Hop Alley restaurant interior',
+              }
+            ],
           },
           {
             name: 'Guard and Grace',
@@ -915,10 +939,28 @@ export const denver: CityData = {
             hours: 'Mon 4pm-10pm, Tue-Thu 11am-2pm & 4pm-10pm, Fri-Sat 4pm-11pm, Sun 4pm-10pm',
             website: 'https://www.guardandgrace.com/',
             instagram: '@guardandgracesteakhouse',
-            image: {
-              src: '/denver/hidden-gems/steakhouse-2.png',
-              alt: 'Guard and Grace premium dry-aged steak with elegant presentation',
-            },
+            images: [
+              {
+                src: '/denver/restaurants/guardgrace-1.png',
+                alt: 'Guard and Grace dry-aged ribeye',
+              },
+              {
+                src: '/denver/restaurants/guardgrace-2.png',
+                alt: 'Guard and Grace restaurant interior',
+              },
+              {
+                src: '/denver/restaurants/guardgrace-3.png',
+                alt: 'Guard and Grace wine room',
+              },
+              {
+                src: '/denver/restaurants/guardgrace-4.png',
+                alt: 'Guard and Grace oak-fired kitchen',
+              },
+              {
+                src: '/denver/restaurants/guardgrace-5.png',
+                alt: 'Guard and Grace seafood',
+              }
+            ],
           },
           {
             name: 'The Wolf\'s Tailor',
@@ -932,10 +974,20 @@ export const denver: CityData = {
             hours: 'Tue-Thu 5pm-8pm, Fri-Sun 5pm-8:30pm, closed Mon',
             website: 'https://www.thewolfstailor.com/',
             instagram: '@thewolfstailor',
-            image: {
-              src: '',
-              alt: 'Artisanal tasting menu dish with seasonal ingredients',
-            },
+            images: [
+              {
+                src: '/denver/restaurants/wolfs-1.png',
+                alt: 'Wolf\'s Tailor tasting menu dish',
+              },
+              {
+                src: '/denver/restaurants/wolfs-2.png',
+                alt: 'Wolf\'s Tailor seasonal course',
+              },
+              {
+                src: '/denver/restaurants/wolfs-3.png',
+                alt: 'Wolf\'s Tailor pasta course',
+              }
+            ],
           },
           {
             name: 'Tacos Tequila Whiskey',
@@ -949,10 +1001,20 @@ export const denver: CityData = {
             hours: 'Mon-Thu 4pm-9pm, Fri-Sun 11am-9pm',
             website: 'https://www.tacostequilawhiskey.com/',
             instagram: '@ttw_denver',
-            image: {
-              src: '',
-              alt: 'Authentic street tacos with fresh toppings',
-            },
+            images: [
+              {
+                src: '/denver/restaurants/tacostequila-1.png',
+                alt: 'Tacos Tequila Whiskey al pastor tacos',
+              },
+              {
+                src: '/denver/restaurants/tacostequila-2.png',
+                alt: 'Tacos Tequila Whiskey mezcal selection',
+              },
+              {
+                src: '/denver/restaurants/tacostequila-3.png',
+                alt: 'Tacos Tequila Whiskey restaurant',
+              }
+            ],
           },
         ],
       },
