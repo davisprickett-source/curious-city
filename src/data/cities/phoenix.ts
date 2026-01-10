@@ -842,10 +842,20 @@ export const phoenix: CityData = {
             hours: 'Tue-Sun 6pm-2am, Closed Mon',
             website: 'https://www.valleybarphx.com/',
             instagram: '@valleybarphx',
-            image: {
-              src: '/phoenix/bars/valley-bar.webp',
-              alt: 'Basement speakeasy bar with live music stage',
-            },
+            images: [
+              {
+                src: '/phoenix/bars/valleybar-1.png',
+                alt: 'Valley Bar underground lounge',
+              },
+              {
+                src: '/phoenix/bars/valleybar-2.png',
+                alt: 'Valley Bar live music venue',
+              },
+              {
+                src: '/phoenix/bars/valleybar-3.png',
+                alt: 'Valley Bar games and atmosphere',
+              }
+            ],
           },
           {
             name: 'Bitter & Twisted',
@@ -859,10 +869,24 @@ export const phoenix: CityData = {
             hours: 'Tue-Fri 4pm-2am, Sat 2pm-2am (Happy Hour 4-6pm)',
             website: 'https://bitterandtwistedaz.com/',
             instagram: '@bitterandtwisted_az',
-            image: {
-              src: '/phoenix/bars/bitter-twisted-interior.jpg',
-              alt: 'Award-winning cocktail bar in historic Prohibition-era building',
-            },
+            images: [
+              {
+                src: '/phoenix/bars/bitter-twisted-1.png',
+                alt: 'Bitter & Twisted cocktail bar interior',
+              },
+              {
+                src: '/phoenix/bars/bitter-twisted-2.png',
+                alt: 'Bitter & Twisted craft cocktails',
+              },
+              {
+                src: '/phoenix/bars/bitter-twisted-3.png',
+                alt: 'Bitter & Twisted historic Luhrs Building',
+              },
+              {
+                src: '/phoenix/bars/bitter-twisted-4.png',
+                alt: 'Bitter & Twisted bar atmosphere',
+              }
+            ],
           },
           {
             name: 'The Vig',
@@ -876,10 +900,24 @@ export const phoenix: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri 11am-11pm, Sat 10am-11pm, Sun 10am-10pm',
             website: 'https://www.thevig.us/arcadia',
             instagram: '@thevigaz',
-            image: {
-              src: '/phoenix/bars/the-vig-patio.jpg',
-              alt: 'Neighborhood bar patio with Adirondack chairs and fire pit',
-            },
+            images: [
+              {
+                src: '/phoenix/bars/the-vig-patio.jpg',
+                alt: 'The Vig patio with Adirondack chairs and fire pit',
+              },
+              {
+                src: '/phoenix/bars/vig-2.png',
+                alt: 'The Vig Arcadia atmosphere',
+              },
+              {
+                src: '/phoenix/bars/vig-3.png',
+                alt: 'The Vig outdoor seating',
+              },
+              {
+                src: '/phoenix/bars/vig-4.png',
+                alt: 'The Vig neighborhood bar vibe',
+              }
+            ],
           },
           {
             name: 'Platform 18',
@@ -891,10 +929,20 @@ export const phoenix: CityData = {
             coordinates: { lat: 33.4938, lng: -111.9939 },
             price: '$$$',
             website: 'https://centurygrandphx.com/platform18',
-            image: {
-              src: '/phoenix/bars/platform-18-interior.webp',
-              alt: 'Immersive vintage train car cocktail experience',
-            },
+            images: [
+              {
+                src: '/phoenix/bars/platform-18-interior.webp',
+                alt: 'Platform 18 vintage train car interior',
+              },
+              {
+                src: '/phoenix/bars/platform18-2.png',
+                alt: 'Platform 18 cocktail experience',
+              },
+              {
+                src: '/phoenix/bars/platform18-3.png',
+                alt: 'Platform 18 Pullman carriage atmosphere',
+              }
+            ],
           },
         ],
       },
