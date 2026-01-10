@@ -1305,10 +1305,24 @@ export const chicago: CityData = {
             coordinates: { lat: 41.9097, lng: -87.8159 },
             hours: '7am-7pm Mon-Sat, closed Sun',
             price: '$',
-            image: {
-              src: '/images/restaurants/johnnies.jpg',
-              alt: 'Italian beef sandwich dripping with gravy',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/johnnies-1.png',
+                alt: 'Johnnie\'s Beef Italian beef sandwich',
+              },
+              {
+                src: '/chicago/restaurants/johnnies-2.png',
+                alt: 'Johnnie\'s Beef counter and kitchen',
+              },
+              {
+                src: '/chicago/restaurants/johnnies-3.png',
+                alt: 'Johnnie\'s Beef exterior',
+              },
+              {
+                src: '/chicago/restaurants/johnnies-4.png',
+                alt: 'Johnnie\'s Beef standing counter',
+              }
+            ],
           },
           {
             name: 'Avec',
@@ -1322,10 +1336,28 @@ export const chicago: CityData = {
             price: '$$$',
             website: 'https://avecrestaurant.com',
             instagram: '@avecchicago',
-            image: {
-              src: '/images/restaurants/avec.jpg',
-              alt: 'Communal table with Mediterranean dishes',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/avec-1.png',
+                alt: 'Avec communal table with Mediterranean dishes',
+              },
+              {
+                src: '/chicago/restaurants/avec-2.png',
+                alt: 'Avec chorizo-stuffed dates',
+              },
+              {
+                src: '/chicago/restaurants/avec-3.png',
+                alt: 'Avec restaurant interior',
+              },
+              {
+                src: '/chicago/restaurants/avec-4.png',
+                alt: 'Avec wood-fired dishes',
+              },
+              {
+                src: '/chicago/restaurants/avec-5.png',
+                alt: 'Avec West Loop dining room',
+              }
+            ],
           },
           {
             name: 'Birrieria Zaragoza',
@@ -1339,10 +1371,28 @@ export const chicago: CityData = {
             price: '$',
             website: 'https://www.birrieriazaragoza.com/',
             instagram: '@birrieriazaragoza',
-            image: {
-              src: '/images/restaurants/zaragoza.jpg',
-              alt: 'Traditional birria de chivo with consomé',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/zaragoze-1.png',
+                alt: 'Birrieria Zaragoza birria de chivo',
+              },
+              {
+                src: '/chicago/restaurants/zaragoze-2.png',
+                alt: 'Birrieria Zaragoza consomé',
+              },
+              {
+                src: '/chicago/restaurants/zaragoze-3.png',
+                alt: 'Birrieria Zaragoza tacos',
+              },
+              {
+                src: '/chicago/restaurants/zaragoze-4.png',
+                alt: 'Birrieria Zaragoza restaurant interior',
+              },
+              {
+                src: '/chicago/restaurants/zaragoze-5.png',
+                alt: 'Birrieria Zaragoza family tradition',
+              }
+            ],
           },
           {
             name: 'Sun Wah BBQ',
@@ -1356,10 +1406,24 @@ export const chicago: CityData = {
             price: '$$',
             website: 'https://sunwahbbq.com',
             instagram: '@sunwahbbq',
-            image: {
-              src: '/images/restaurants/sun-wah.jpg',
-              alt: 'Whole Peking duck hanging with lacquered skin',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/sunwah-1.png',
+                alt: 'Sun Wah BBQ Peking duck',
+              },
+              {
+                src: '/chicago/restaurants/sunwah-2.png',
+                alt: 'Sun Wah BBQ duck carving tableside',
+              },
+              {
+                src: '/chicago/restaurants/sunwah-3.png',
+                alt: 'Sun Wah BBQ roast meats in window',
+              },
+              {
+                src: '/chicago/restaurants/sunwah-4.png',
+                alt: 'Sun Wah BBQ three-course duck dinner',
+              }
+            ],
           },
           {
             name: 'Portillo\'s',
@@ -1372,10 +1436,20 @@ export const chicago: CityData = {
             hours: '10am-10pm daily',
             price: '$',
             website: 'https://www.portillos.com',
-            image: {
-              src: '/images/restaurants/portillos.jpg',
-              alt: 'Italian beef and hot dog at Portillo\'s counter',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/portillos-1.png',
+                alt: 'Portillo\'s Italian beef sandwich',
+              },
+              {
+                src: '/chicago/restaurants/portillos-2.png',
+                alt: 'Portillo\'s chocolate cake shake',
+              },
+              {
+                src: '/chicago/restaurants/portillos-3.png',
+                alt: 'Portillo\'s restaurant interior',
+              }
+            ],
           },
           {
             name: 'Smyth',
@@ -1389,10 +1463,36 @@ export const chicago: CityData = {
             price: '$$$$',
             website: 'https://www.smythandtheloyalist.com',
             instagram: '@smythchicago',
-            image: {
-              src: '/images/restaurants/smyth.jpg',
-              alt: 'Elegant tasting menu dish with seasonal ingredients',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/smyth-1.png',
+                alt: 'Smyth tasting menu dish',
+              },
+              {
+                src: '/chicago/restaurants/smyth-2.png',
+                alt: 'Smyth seasonal ingredients presentation',
+              },
+              {
+                src: '/chicago/restaurants/smyth-3.png',
+                alt: 'Smyth farm-to-table course',
+              },
+              {
+                src: '/chicago/restaurants/smyth-4.png',
+                alt: 'Smyth intimate dining room',
+              },
+              {
+                src: '/chicago/restaurants/smyth-5.png',
+                alt: 'Smyth Midwestern cuisine',
+              },
+              {
+                src: '/chicago/restaurants/smyth-6.png',
+                alt: 'Smyth chef preparation',
+              },
+              {
+                src: '/chicago/restaurants/smyth-7.png',
+                alt: 'Smyth dessert course',
+              }
+            ],
           },
           {
             name: 'Lou Mitchell\'s',
@@ -1404,10 +1504,20 @@ export const chicago: CityData = {
             coordinates: { lat: 41.8786, lng: -87.6412 },
             hours: '5:30am-3pm Mon-Sat, 7am-3pm Sun',
             price: '$',
-            image: {
-              src: '/images/restaurants/lou-mitchells.jpg',
-              alt: 'Classic diner breakfast with double-yolk eggs',
-            },
+            images: [
+              {
+                src: '/chicago/restaurants/lou-mitchells-1.png',
+                alt: 'Lou Mitchell\'s classic breakfast',
+              },
+              {
+                src: '/chicago/restaurants/lou-mitchells-2.png',
+                alt: 'Lou Mitchell\'s double-yolk eggs and Greek toast',
+              },
+              {
+                src: '/chicago/restaurants/lou-mitchells-3.png',
+                alt: 'Lou Mitchell\'s diner interior',
+              }
+            ],
           }
         ],
       },
