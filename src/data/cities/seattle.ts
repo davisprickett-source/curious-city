@@ -1352,7 +1352,20 @@ export const seattle: CityData = {
           whyMissed: 'The Dog House was where Seattle went when everywhere else was closed. For 60 years, it served working-class breakfast to night-shift workers, post-bar revelers, and anyone who needed a warm booth and endless coffee. The waitresses were legendary — tough, fast, and impossibly kind to regulars. When it closed in 1994 to make way for a condo development, the neon sign was salvaged and preserved. But the 24-hour refuge, the $2 breakfast specials, and the particular 3 a.m. magic of the place — that\'s gone forever.',
           communityVoice: '"I spent countless late nights at the Dog House. It was the last honest place in a changing city." — Seattle native',
           lastAddress: '2230 7th Ave, Seattle',
-          images: [],
+          images: [
+            {
+              src: '/seattle/lost-loved/doghouse-1.png',
+              alt: 'The Dog House restaurant exterior with neon sign',
+            },
+            {
+              src: '/seattle/lost-loved/doghouse-2.png',
+              alt: 'The Dog House interior and counter',
+            },
+            {
+              src: '/seattle/lost-loved/doghouse-3.png',
+              alt: 'The Dog House late night scene',
+            }
+          ],
           sources: [
             {
               title: 'HistoryLink: Dog House Restaurant',
