@@ -2,20 +2,24 @@
  * Fetch events from APIs and scrapers, generate files for curation
  *
  * Usage:
- *   npx tsx scripts/fetch-events.ts [city-slug]           # Fetch and preview
- *   npx tsx scripts/fetch-events.ts [city-slug] --write   # Fetch and write file
- *   npx tsx scripts/fetch-events.ts --all                 # Fetch all cities
+ *   npx tsx scripts/fetch-events.ts [city-slug]                      # Fetch and preview
+ *   npx tsx scripts/fetch-events.ts [city-slug] --write              # Fetch and write file
+ *   npx tsx scripts/fetch-events.ts [city-slug] --enrich-images      # Also fetch images from Wikipedia
+ *   npx tsx scripts/fetch-events.ts [city-slug] --write --enrich-images  # Write with images
+ *   npx tsx scripts/fetch-events.ts --all                            # Fetch all cities
  *
  * Sources:
  * - Ticketmaster API (concerts, sports, theater)
  * - Eventbrite API (community events, workshops)
  * - Songkick scraper (concerts at indie venues)
+ * - Wikipedia (fallback images for artists/venues)
  *
  * The script will:
  * 1. Fetch events from all sources
- * 2. Score events using city-specific rules
- * 3. Generate a TypeScript file for review
- * 4. You review/edit the file, then merge to deploy
+ * 2. (Optional) Enrich events with images from Wikipedia
+ * 3. Score events using city-specific rules
+ * 4. Generate a TypeScript file for review
+ * 5. You review/edit the file, then merge to deploy
  */
 
 import * as dotenv from 'dotenv'
@@ -30,7 +34,8 @@ import { createEventbriteClient } from '../src/lib/eventbrite'
 import { mergeEvents, normalizedToEventItem } from '../src/lib/event-aggregator'
 import { getCityEventConfig, getAllCityEventConfigs } from '../src/lib/city-event-configs'
 import { scoreEvent, shouldAutoFeature, shouldAutoHide } from '../src/lib/event-scoring'
-import { SongkickProvider } from '../src/lib/providers/scrapers/songkick'
+import { getVenueScrapersForCity } from '../src/lib/providers/scrapers'
+import { enrichEventsWithImages } from '../src/lib/image-fetcher'
 import type { NormalizedEvent } from '../src/lib/api-types'
 
 interface ScoredEvent extends NormalizedEvent {
@@ -61,7 +66,6 @@ async function fetchEventsForCity(citySlug: string, writeFile: boolean = false) 
   // Initialize API clients
   let ticketmasterEvents: NormalizedEvent[] = []
   let eventbriteEvents: NormalizedEvent[] = []
-  let songkickEvents: NormalizedEvent[] = []
 
   // Fetch from Ticketmaster
   try {
@@ -98,29 +102,43 @@ async function fetchEventsForCity(citySlug: string, writeFile: boolean = false) 
     console.error('❌ Eventbrite error:', error)
   }
 
-  // Fetch from Songkick (venue scraper)
-  try {
-    const songkick = new SongkickProvider()
-    if (await songkick.isAvailable()) {
-      console.log('📡 Fetching from Songkick...')
-      const result = await songkick.fetchEvents(citySlug, { limit: 100 })
-      songkickEvents = result.events
-      console.log(`   ✅ Found ${songkickEvents.length} events from Songkick\n`)
-      if (result.errors.length > 0) {
-        console.log(`   ⚠️  Songkick errors: ${result.errors.join(', ')}`)
+  // Fetch from venue scrapers (Songkick + city-specific venues)
+  let venueScraperEvents: NormalizedEvent[] = []
+  const venueScrapers = getVenueScrapersForCity(citySlug)
+
+  for (const scraper of venueScrapers) {
+    try {
+      if (await scraper.isAvailable()) {
+        console.log(`📡 Fetching from ${scraper.name}...`)
+        const result = await scraper.fetchEvents(citySlug, { limit: 100 })
+        console.log(`   ✅ Found ${result.events.length} events from ${scraper.name}`)
+        venueScraperEvents.push(...result.events)
+        if (result.errors.length > 0) {
+          console.log(`   ⚠️  ${scraper.name} errors: ${result.errors.join(', ')}`)
+        }
+      } else {
+        console.log(`⚠️  Skipping ${scraper.name} (not available)`)
       }
-    } else {
-      console.log('⚠️  Skipping Songkick (not available)\n')
+    } catch (error) {
+      console.error(`❌ ${scraper.name} error:`, error)
     }
-  } catch (error) {
-    console.error('❌ Songkick error:', error)
   }
+
+  if (venueScrapers.length > 0) console.log('')
 
   // Merge and deduplicate all sources
   console.log('🔄 Merging and deduplicating...')
   const apiMerged = mergeEvents(ticketmasterEvents, eventbriteEvents)
-  const mergedEvents = mergeEvents(apiMerged, songkickEvents)
+  let mergedEvents = mergeEvents(apiMerged, venueScraperEvents)
   console.log(`   ${mergedEvents.length} unique events after deduplication\n`)
+
+  // Enrich events without images (if --enrich-images flag is set)
+  const enrichImages = process.argv.includes('--enrich-images')
+  if (enrichImages) {
+    console.log('🖼️  Enriching events with images from Wikipedia...')
+    mergedEvents = await enrichEventsWithImages(mergedEvents, { concurrency: 3, delayMs: 300 })
+    console.log('')
+  }
 
   // Score events
   console.log('📊 Scoring events...')
@@ -260,6 +278,13 @@ export const ${toCamelCase(citySlug)}ApiEvents: CuratedEvent[] = [
     if (eventItem.href) {
       output += `    href: '${eventItem.href}',\n`
     }
+    // Include image if available from API
+    if (eventItem.image?.src) {
+      output += `    image: {\n`
+      output += `      src: '${eventItem.image.src}',\n`
+      output += `      alt: ${JSON.stringify(eventItem.image.alt)},\n`
+      output += `    },\n`
+    }
     if (event.autoFeatured) {
       output += `    featured: true,\n`
     }
@@ -282,9 +307,11 @@ async function main() {
 
   if (args.length === 0) {
     console.log('Usage:')
-    console.log('  npx tsx scripts/fetch-events.ts [city-slug]           # Preview events')
-    console.log('  npx tsx scripts/fetch-events.ts [city-slug] --write   # Generate file')
-    console.log('  npx tsx scripts/fetch-events.ts --all                 # All cities')
+    console.log('  npx tsx scripts/fetch-events.ts [city-slug]                      # Preview events')
+    console.log('  npx tsx scripts/fetch-events.ts [city-slug] --write              # Generate file')
+    console.log('  npx tsx scripts/fetch-events.ts [city-slug] --enrich-images      # Fetch fallback images')
+    console.log('  npx tsx scripts/fetch-events.ts [city-slug] --write --enrich-images')
+    console.log('  npx tsx scripts/fetch-events.ts --all                            # All cities')
     console.log('\nAvailable cities:')
     getAllCityEventConfigs().forEach((c) => console.log(`  - ${c.slug}`))
     process.exit(1)

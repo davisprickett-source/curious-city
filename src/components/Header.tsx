@@ -57,21 +57,21 @@ export function Header({ cityName }: HeaderProps) {
 }
 
 // Animation variants for staggered dropdown
+// Container uses clipPath to reveal/hide in sync with content
 const dropdownVariants = {
   hidden: {
-    opacity: 0,
+    clipPath: 'inset(0 0 100% 0)', // Clip from bottom up (hide)
     transition: {
-      when: 'afterChildren', // Wait for children to exit before container fades
-      staggerChildren: 0.03,
+      clipPath: { duration: 0.25, ease: 'easeIn' as const },
+      staggerChildren: 0.025,
       staggerDirection: -1, // Reverse stagger on exit (bottom to top)
     },
   },
   visible: {
-    opacity: 1,
+    clipPath: 'inset(0 0 0 0)', // Fully visible
     transition: {
-      when: 'beforeChildren', // Container fades in, then children stagger
+      clipPath: { duration: 0.3, ease: 'easeOut' as const },
       staggerChildren: 0.04,
-      delayChildren: 0.05,
       staggerDirection: 1, // Normal stagger on enter (top to bottom)
     },
   },
@@ -80,9 +80,9 @@ const dropdownVariants = {
 const itemVariants = {
   hidden: {
     opacity: 0,
-    y: -8,
+    y: -6,
     transition: {
-      duration: 0.15,
+      duration: 0.12,
       ease: 'easeIn' as const,
     },
   },
@@ -90,7 +90,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.2,
+      duration: 0.15,
       ease: 'easeOut' as const,
     },
   },

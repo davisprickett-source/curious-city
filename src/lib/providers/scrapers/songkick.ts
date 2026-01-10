@@ -306,6 +306,12 @@ export class SongkickProvider extends BaseScraperProvider {
         'colorado-springs': 'Colorado Springs',
       }
 
+      // Try to extract image from context
+      const imgMatch = context.match(/<img[^>]*src="([^"]+)"[^>]*>/i) ||
+                       context.match(/data-src="([^"]+)"/i) ||
+                       context.match(/style="[^"]*background-image:\s*url\(['"]*([^'")\s]+)/i)
+      const imageUrl = imgMatch ? imgMatch[1] : undefined
+
       events.push({
         source: 'venue-scraper',
         sourceId: `songkick-${eventId}`,
@@ -317,6 +323,7 @@ export class SongkickProvider extends BaseScraperProvider {
         city: cityNames[citySlug] || citySlug,
         category: 'concerts',
         isFree: false,
+        image: imageUrl ? { url: imageUrl } : undefined,
         tags: ['music', 'live', 'concert'],
         relevanceScore: Math.min(100, Math.round(relevanceScore)),
       })

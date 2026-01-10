@@ -71,7 +71,18 @@ export class TicketmasterClient {
   normalizeEvent(event: TicketmasterEvent, city: string): NormalizedEvent {
     const venue = event._embedded?.venues?.[0]
     const classification = event.classifications?.[0]
-    const image = event.images?.find((img) => img.width >= 800)
+    // Get the best available image - prefer larger images but accept any
+    const image = event.images?.length
+      ? event.images.reduce((best, img) => {
+          // Prefer images >= 800px, but fall back to largest available
+          if (!best) return img
+          if (img.width >= 800 && best.width < 800) return img
+          if (img.width >= 800 && best.width >= 800) {
+            return img.width > best.width ? img : best
+          }
+          return img.width > best.width ? img : best
+        }, event.images[0])
+      : undefined
 
     // Extract start/end dates
     const startDate = event.dates.start.dateTime || `${event.dates.start.localDate}T${event.dates.start.localTime || '00:00:00'}`

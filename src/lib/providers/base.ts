@@ -26,6 +26,16 @@ export abstract class BaseProvider implements EventProvider {
     }
   }
 
+  /** Provider display name */
+  get name(): string {
+    return this.config.name
+  }
+
+  /** Provider slug */
+  get slug(): string {
+    return this.config.slug
+  }
+
   /**
    * Check if provider is available - must be implemented by subclass
    */
