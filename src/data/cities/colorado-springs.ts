@@ -1495,6 +1495,9 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/clubq-1.png', alt: 'Club Q memorial' },
+              { src: '/colorado-springs/dark-history/clubq-2.png', alt: 'Club Q memorial site' },
+              { src: '/colorado-springs/dark-history/clubq-3.png', alt: 'Club Q community remembrance' },
             ],
           },
           {
@@ -1531,6 +1534,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/straybullet-1.png', alt: 'Rampart Range area' },
+              { src: '/colorado-springs/dark-history/straybullet-2.png', alt: 'Rainbow Falls Pike National Forest' },
             ],
           },
           {
@@ -1579,6 +1584,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/axmurder-1.png', alt: 'Historic West Dale Street area' },
+              { src: '/colorado-springs/dark-history/axmurder-2.png', alt: 'Colorado Springs 1911' },
             ],
           },
           {
@@ -1621,6 +1628,9 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/waldo-1.png', alt: 'Waldo Canyon Fire' },
+              { src: '/colorado-springs/dark-history/waldo-2.png', alt: 'Waldo Canyon Fire destruction' },
+              { src: '/colorado-springs/dark-history/waldo-3.png', alt: 'Waldo Canyon aftermath' },
             ],
           },
           {
@@ -1663,6 +1673,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/heather-1.png', alt: 'Black Forest area' },
+              { src: '/colorado-springs/dark-history/heather-2.png', alt: 'Rampart Range Road' },
             ],
           },
           {
@@ -1710,6 +1722,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/plannedparenthood-1.png', alt: 'Planned Parenthood Colorado Springs' },
+              { src: '/colorado-springs/dark-history/plannedparenthood-2.png', alt: 'Memorial for victims' },
             ],
           },
           {
@@ -1752,6 +1766,9 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/blackforest-1.png', alt: 'Black Forest Fire' },
+              { src: '/colorado-springs/dark-history/blackforest-2.png', alt: 'Black Forest Fire destruction' },
+              { src: '/colorado-springs/dark-history/blackforest-3.png', alt: 'Black Forest aftermath' },
             ],
           },
           {
@@ -1788,6 +1805,7 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/watkins.png', alt: 'Palmer Lake trail area' },
             ],
           },
           {
@@ -1830,6 +1848,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/newlifechurch-1.png', alt: 'New Life Church' },
+              { src: '/colorado-springs/dark-history/newlifechurch-2.png', alt: 'New Life Church memorial' },
             ],
           },
           {
@@ -1872,6 +1892,8 @@ export const colorado_springs: CityData = {
               }
             ],
             images: [
+              { src: '/colorado-springs/dark-history/evergreen-1.png', alt: 'Evergreen Cemetery' },
+              { src: '/colorado-springs/dark-history/evergreen-2.png', alt: 'Evergreen Cemetery historic chapel' },
             ],
           }
         ],
