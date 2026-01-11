@@ -305,7 +305,7 @@ export async function getCityListiclePages(citySlug: string): Promise<ListiclePa
       type: 'dark-history',
       title: (section && 'title' in section && section.title) || 'Dark History',
       teaser: (section && 'teaser' in section && section.teaser) ||
-        `Unsolved mysteries and darker chapters of ${city.name}`,
+        `${city.name}'s unsolved mysteries and darker historical chapters`,
       entryCount: allDarkHistory.length,
       thumbnail: firstWithImage ? getFirstImage(firstWithImage)?.src : undefined,
       href: `/${city.slug}/dark-history`,
@@ -322,7 +322,7 @@ export async function getCityListiclePages(citySlug: string): Promise<ListiclePa
       type: 'curiosities',
       title: (section && 'title' in section && section.title) || 'Curiosities',
       teaser: (section && 'teaser' in section && section.teaser) ||
-        `Fascinating facts and surprising stories about ${city.name}`,
+        `${city.name}'s fascinating facts and surprising stories`,
       entryCount: allCuriosities.length,
       thumbnail: firstWithImage ? getFirstImage(firstWithImage)?.src : undefined,
       href: `/${city.slug}/curiosities`,
@@ -339,7 +339,7 @@ export async function getCityListiclePages(citySlug: string): Promise<ListiclePa
       type: 'hidden-gems',
       title: (section && 'title' in section && section.title) || 'Hidden Gems',
       teaser: (section && 'teaser' in section && section.teaser) ||
-        `Secret spots and local treasures in ${city.name}`,
+        `${city.name}'s secret spots and local treasures`,
       entryCount: allHiddenGems.length,
       thumbnail: firstWithImage ? getFirstImage(firstWithImage)?.src : undefined,
       href: `/${city.slug}/hidden-gems`,
@@ -356,7 +356,7 @@ export async function getCityListiclePages(citySlug: string): Promise<ListiclePa
       type: 'lost-loved',
       title: (section && 'title' in section && section.title) || 'Lost & Loved',
       teaser: (section && 'teaser' in section && section.teaser) ||
-        `Beloved places we miss from ${city.name}`,
+        `${city.name}'s beloved places we miss`,
       entryCount: allLostAndLoved.length,
       thumbnail: firstWithImage ? getFirstImage(firstWithImage)?.src : undefined,
       href: `/${city.slug}/lost-and-loved`,
@@ -383,7 +383,6 @@ export async function getCityEstablishmentCategories(citySlug: string): Promise<
     bars: { title: 'Best Bars', route: 'bars' },
     restaurants: { title: 'Best Restaurants', route: 'restaurants' },
     'coffee-shops': { title: 'Best Coffee Shops', route: 'coffee-shops' },
-    cafes: { title: 'Best Cafes', route: 'cafes' },
     bakeries: { title: 'Best Bakeries', route: 'bakeries' },
     cocktails: { title: 'Best Cocktails', route: 'cocktails' },
     dives: { title: 'Best Dive Bars', route: 'dives' },
@@ -394,24 +393,21 @@ export async function getCityEstablishmentCategories(citySlug: string): Promise<
   }
 
   for (const section of bestOfSections) {
-    if (section.spots && section.spots.length > 0) {
-      const info = categoryInfo[section.category] || {
-        title: section.title || `Best ${section.category}`,
-        route: section.category,
-      }
+    // Only include categories that have pages (defined in categoryInfo)
+    const info = categoryInfo[section.category]
+    if (!info || !section.spots || section.spots.length === 0) continue
 
-      // Get first spot's image as thumbnail
-      const firstSpot = section.spots[0]
-      const thumbnail = firstSpot?.images?.[0]?.src || firstSpot?.image?.src
+    // Get first spot's image as thumbnail
+    const firstSpot = section.spots[0]
+    const thumbnail = firstSpot?.images?.[0]?.src || firstSpot?.image?.src
 
-      categories.push({
-        category: section.category,
-        title: info.title,
-        spotCount: section.spots.length,
-        thumbnail,
-        href: `/${city.slug}/${info.route}`,
-      })
-    }
+    categories.push({
+      category: section.category,
+      title: info.title,
+      spotCount: section.spots.length,
+      thumbnail,
+      href: `/${city.slug}/${info.route}`,
+    })
   }
 
   return categories
@@ -531,7 +527,7 @@ export async function getExploreLinks(
     if (['bars', 'restaurants', 'coffee-shops'].includes(type)) {
       links.push({
         type,
-        title: `${est.title} in ${cityName}`,
+        title: `${cityName}'s ${est.title}`,
         teaser: exploreTeasers[type] || est.title,
         thumbnail: est.thumbnail,
         href: est.href,
@@ -553,7 +549,7 @@ export async function getExploreLinks(
 
     links.push({
       type,
-      title: `${page.title} in ${cityName}`,
+      title: `${cityName}'s ${page.title}`,
       teaser: exploreTeasers[type] || page.teaser,
       thumbnail: page.thumbnail,
       href: page.href,

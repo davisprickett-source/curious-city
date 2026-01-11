@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   if (!city) return {}
 
   return {
-    title: `${city.name} Guide - Best Bars, Restaurants & Hidden Gems - The Curious City`,
-    description: `Your essential guide to ${city.name} - the best bars, restaurants, coffee shops, and hidden gems curated by locals.`,
+    title: `${city.name} Guide - Best Bars, Restaurants & Coffee Shops | Curious City`,
+    description: `Your essential guide to ${city.name} - the best bars, restaurants, and coffee shops curated by locals.`,
   }
 }
 
@@ -30,42 +30,25 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const city = await getCity(slug)
   if (!city) notFound()
 
+  // Only establishment categories - listicles (hidden gems, local favorites, lost & loved) are in Discover
   const guideCategories = [
     {
       title: 'Best Bars',
       description: 'Cocktail lounges, dive bars, and neighborhood favorites',
       href: `/${slug}/bars`,
-      gradient: 'from-amber-500 to-orange-600',
+      gradient: 'from-indigo-600 to-indigo-900',
     },
     {
       title: 'Best Restaurants',
-      description: 'From fine dining to hidden gems, the city\'s culinary highlights',
+      description: 'From fine dining to neighborhood spots, the city\'s culinary highlights',
       href: `/${slug}/restaurants`,
-      gradient: 'from-red-500 to-pink-600',
+      gradient: 'from-amber-600 to-amber-900',
     },
     {
       title: 'Best Coffee Shops',
       description: 'Local roasters, cozy cafes, and third wave coffee',
       href: `/${slug}/coffee-shops`,
-      gradient: 'from-yellow-600 to-amber-700',
-    },
-    {
-      title: 'Hidden Gems',
-      description: 'Off-the-beaten-path spots that locals love',
-      href: `/${slug}/hidden-gems`,
-      gradient: 'from-emerald-500 to-teal-600',
-    },
-    {
-      title: 'Local Favorites',
-      description: 'Iconic establishments that define the city',
-      href: `/${slug}/local-favorites`,
-      gradient: 'from-blue-500 to-indigo-600',
-    },
-    {
-      title: 'Lost & Loved',
-      description: 'Beloved places we miss and remember',
-      href: `/${slug}/lost-and-loved`,
-      gradient: 'from-slate-500 to-gray-600',
+      gradient: 'from-stone-600 to-stone-900',
     },
   ]
 
@@ -86,8 +69,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 Your Guide to {city.name}
               </h1>
               <p className="text-xl text-neutral-300 leading-relaxed">
-                The essential guide to eating, drinking, and exploring {city.name}.
-                Curated lists of the best bars, restaurants, coffee shops, and hidden gems—all
+                The essential guide to eating and drinking in {city.name}.
+                Curated lists of the best bars, restaurants, and coffee shops—all
                 vetted by locals who know the city inside out.
               </p>
             </div>

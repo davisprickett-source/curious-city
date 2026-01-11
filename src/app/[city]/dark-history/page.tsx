@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Dark History of ${city.name} | Curious City`,
-    description: `Forgotten crimes, unsolved mysteries, and the darker chapters of ${city.name}'s history.`,
+    title: `${city.name}'s Dark History | Curious City`,
+    description: `${city.name}'s forgotten crimes, unsolved mysteries, and darker historical chapters.`,
   }
 }
 
@@ -86,7 +86,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-              {section?.title || `Dark History of ${city.name}`}
+              {section?.title || `${city.name}'s Dark History`}
             </h1>
 
             {/* Teaser/Hook */}
@@ -104,7 +104,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
             {/* Share links */}
             <div className="flex items-center justify-between py-6 border-y border-neutral-200">
               <span className="text-sm text-neutral-500">{items.length} stories</span>
-              <ShareLinks title={`Dark History of ${city.name} | Curious City`} />
+              <ShareLinks title={`${city.name}'s Dark History | Curious City`} />
             </div>
           </div>
         </div>

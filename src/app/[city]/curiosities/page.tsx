@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Curiosities of ${city.name} | Curious City`,
-    description: `Fascinating facts, forgotten history, and the strange stories that make ${city.name} unique.`,
+    title: `${city.name}'s Curiosities | Curious City`,
+    description: `${city.name}'s fascinating facts, forgotten history, and strange stories.`,
   }
 }
 
@@ -127,7 +127,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-              {section?.title || `Curiosities of ${city.name}`}
+              {section?.title || `${city.name}'s Curiosities`}
             </h1>
 
             {/* Teaser/Hook */}
@@ -145,7 +145,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
             {/* Share links */}
             <div className="flex items-center justify-between py-6 border-y border-neutral-200">
               <span className="text-sm text-neutral-500">{curiosities.length} curiosities</span>
-              <ShareLinks title={`Curiosities of ${city.name} | Curious City`} />
+              <ShareLinks title={`${city.name}'s Curiosities | Curious City`} />
             </div>
           </div>
         </div>

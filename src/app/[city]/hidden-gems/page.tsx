@@ -33,14 +33,14 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
           <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
             <img
               src="/Minneapolis/hidden-gems/hidden-gems-banner.png"
-              alt="Hidden Gems in Minneapolis"
+              alt="Minneapolis's Hidden Gems"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
             <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
               <div className="max-w-5xl">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  {section?.title || `Hidden Gems in ${city.name}`}
+                  {section?.title || `${city.name}'s Hidden Gems`}
                 </h1>
                 {section?.teaser && (
                   <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
@@ -58,7 +58,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
                 )}
               </div>
               <div className="absolute top-6 right-6 md:top-8 md:right-8">
-                <ShareLinks title={`Hidden Gems in ${city.name} | Curious City`} variant="banner" />
+                <ShareLinks title={`${city.name}'s Hidden Gems | Curious City`} variant="banner" />
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    {section?.title || `Hidden Gems in ${city.name}`}
+                    {section?.title || `${city.name}'s Hidden Gems`}
                   </h1>
                   {section?.teaser && (
                     <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mb-2">
@@ -86,7 +86,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
                   )}
                 </div>
                 <div className="hidden sm:block flex-shrink-0">
-                  <ShareLinks title={`Hidden Gems in ${city.name} | Curious City`} variant="compact" />
+                  <ShareLinks title={`${city.name}'s Hidden Gems | Curious City`} variant="compact" />
                 </div>
               </div>
             </div>

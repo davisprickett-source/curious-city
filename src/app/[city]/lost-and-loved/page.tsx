@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Lost & Loved in ${city.name} | Curious City`,
-    description: `The beloved businesses that shaped ${city.name} and the spaces they left behind. Restaurants, bars, and institutions we still miss.`,
+    title: `${city.name}'s Lost & Loved | Curious City`,
+    description: `${city.name}'s beloved businesses and the spaces they left behind. Restaurants, bars, and institutions we still miss.`,
   }
 }
 
@@ -74,7 +74,7 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-              {section?.title || `Lost & Loved in ${city.name}`}
+              {section?.title || `${city.name}'s Lost & Loved`}
             </h1>
 
             {/* Teaser/Hook */}
@@ -92,7 +92,7 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
             {/* Share links */}
             <div className="flex items-center justify-between py-6 border-y border-neutral-200">
               <span className="text-sm text-neutral-500">{items.length} places</span>
-              <ShareLinks title={`Lost & Loved in ${city.name} | Curious City`} />
+              <ShareLinks title={`${city.name}'s Lost & Loved | Curious City`} />
             </div>
           </div>
         </div>

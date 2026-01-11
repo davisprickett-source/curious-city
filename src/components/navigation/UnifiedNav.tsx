@@ -94,8 +94,7 @@ export function UnifiedNav({
           {/* Section Links - only show if on a city page */}
           {citySlug && citySections.map((section) => {
             const isActive = currentSection === section.id
-            // Articles links to city root, others to their section path
-            const href = section.id === 'articles' ? `/${citySlug}` : `/${citySlug}${section.path}`
+            const href = `/${citySlug}${section.path}`
 
             return (
               <Link

@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Best Coffee Shops in ${city.name} | Curious City`,
-    description: `The best coffee shops in ${city.name} - cozy cafes, third-wave roasters, and neighborhood favorites.`,
+    title: `${city.name}'s Best Coffee Shops | Curious City`,
+    description: `${city.name}'s best coffee shops - cozy cafes, third-wave roasters, and neighborhood favorites.`,
   }
 }
 
@@ -64,7 +64,7 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
       <ScrollyMapView
         spots={spotsWithCoords}
         cityName={city.name}
-        title={sectionTitle || `Best Coffee Shops in ${city.name}`}
+        title={sectionTitle || `${city.name}'s Best Coffee Shops`}
         intro={intro}
         markerType="coffee"
         currentCategory="coffee-shops"

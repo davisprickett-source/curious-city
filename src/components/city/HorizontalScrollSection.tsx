@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect, useCallback, Children, cloneElement, isValidElement } from 'react'
+import { useRef, useEffect, useCallback, Children, cloneElement, isValidElement, useState } from 'react'
 import Link from 'next/link'
 
 interface HorizontalScrollSectionProps {
@@ -32,6 +32,7 @@ export function HorizontalScrollSection({
 }: HorizontalScrollSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const isResettingRef = useRef(false)
+  const [isReady, setIsReady] = useState(false)
 
   // Convert children to array for duplication
   const childArray = Children.toArray(children)
@@ -76,8 +77,20 @@ export function HorizontalScrollSection({
 
     // Start in the middle set for infinite scroll
     if (enableInfinite) {
-      const oneSetWidth = el.scrollWidth / 3
-      el.scrollLeft = oneSetWidth
+      // Use double RAF to ensure layout is complete before positioning
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const oneSetWidth = el.scrollWidth / 3
+          // Add small offset (20px) to hide any gap/sliver from previous set
+          el.scrollLeft = oneSetWidth + 20
+          // Small delay to ensure scroll position is applied before showing
+          setTimeout(() => {
+            setIsReady(true)
+          }, 50)
+        })
+      })
+    } else {
+      setIsReady(true)
     }
 
     checkScroll()
@@ -99,7 +112,8 @@ export function HorizontalScrollSection({
       // Reset to middle position when children change
       requestAnimationFrame(() => {
         const oneSetWidth = el.scrollWidth / 3
-        el.scrollLeft = oneSetWidth
+        // Add small offset to hide any gap/sliver from previous set
+        el.scrollLeft = oneSetWidth + 20
         checkScroll()
       })
     } else {
@@ -135,7 +149,7 @@ export function HorizontalScrollSection({
   }
 
   return (
-    <section className={`py-10 md:py-16 ${className}`}>
+    <section className={`py-8 md:py-10 ${className}`}>
       {/* Section Header */}
       <div className="container-page mb-6 md:mb-8">
         <div className="flex items-end justify-between gap-4">
@@ -179,14 +193,17 @@ export function HorizontalScrollSection({
       </div>
 
       {/* Scrollable Content */}
-      <div className="relative">
-        {/* Scroll container */}
+      <div className={`relative ${isReady ? '' : 'overflow-hidden'}`}>
+        {/* Scroll container - match container-page padding (px-6 md:px-8 xl:px-12) */}
         <div
           ref={scrollRef}
           className="flex flex-nowrap gap-5 overflow-x-auto scrollbar-hide px-6 md:px-8 xl:px-12"
           style={{
             scrollSnapType: enableInfinite ? 'none' : 'x mandatory',
             WebkitOverflowScrolling: 'touch',
+            opacity: isReady ? 1 : 0,
+            visibility: isReady ? 'visible' : 'hidden',
+            transition: 'opacity 150ms ease-out',
           }}
         >
           {renderItems()}

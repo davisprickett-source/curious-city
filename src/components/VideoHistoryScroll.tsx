@@ -433,8 +433,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
       {/* Split Screen Section - starts below nav to make video flush */}
       <div className="lg:flex lg:flex-row pt-[57px]" ref={containerRef}>
-        {/* Left Side: Video (Sticky on both mobile and desktop) */}
-        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:w-[70%] lg:h-screen lg:top-[57px] lg:mt-0 bg-white flex items-center justify-center relative z-20 will-change-transform">
+        {/* Left Side: Video (Sticky on mobile, Fixed on desktop) */}
+        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:fixed lg:left-0 lg:top-[57px] lg:w-[70%] lg:h-[calc(100vh-57px)] lg:mt-0 bg-white flex items-center justify-center z-20 will-change-transform">
           <img
             src={framePath}
             alt=""
@@ -453,7 +453,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         </div>
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
-        <div className="w-full lg:w-[30%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
+        <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
           {/* Top spacing - centers content in middle of screen on desktop */}
           <div className="hidden lg:block" style={{ height: '50vh' }} />
 
@@ -476,13 +476,11 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                   </h1>
                   <button
                     onClick={() => {
-                      if (navigator.share) {
-                        navigator.share({ title: history.title, url: window.location.href })
-                      } else {
-                        navigator.clipboard.writeText(window.location.href)
-                      }
+                      navigator.clipboard.writeText(window.location.href)
+                      alert('Link copied!')
                     }}
                     className="flex-shrink-0 text-accent-600 hover:text-accent-700 font-bold text-sm uppercase tracking-wider transition-colors"
+                    title="Copy link"
                   >
                     Share
                   </button>
@@ -526,27 +524,62 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
           {/* Footer - appears at end of scroll */}
           <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
-            {/* Simple Share Button */}
+            {/* Share Options */}
             <div className="mb-8 pb-8 border-b border-neutral-200">
-              <button
-                onClick={() => {
-                  if (navigator.share) {
-                    navigator.share({
-                      title: history.title,
-                      url: `https://thecurious.city/${history.citySlug}/articles/${history.slug}`
-                    })
-                  } else {
-                    navigator.clipboard.writeText(`https://thecurious.city/${history.citySlug}/articles/${history.slug}`)
-                    alert('Link copied!')
-                  }
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-accent-600 hover:bg-accent-700 text-white font-bold rounded-lg transition-colors"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                </svg>
-                Share this story
-              </button>
+              <h4 className="font-bold text-neutral-900 mb-4">Share this story</h4>
+              <div className="flex flex-wrap gap-3">
+                {/* Copy Link */}
+                <button
+                  onClick={() => {
+                    const url = `https://thecurious.city/${history.citySlug}/articles/${history.slug}`
+                    navigator.clipboard.writeText(url)
+                    alert('Link copied to clipboard!')
+                  }}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-medium rounded-lg transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  Copy link
+                </button>
+
+                {/* X (Twitter) */}
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(history.title)}&url=${encodeURIComponent(`https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 hover:bg-neutral-800 text-white font-medium rounded-lg transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  Share on X
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#166FE5] text-white font-medium rounded-lg transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                  Facebook
+                </a>
+
+                {/* Email */}
+                <a
+                  href={`mailto:?subject=${encodeURIComponent(history.title)}&body=${encodeURIComponent(`Check out this story: https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-medium rounded-lg transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Email
+                </a>
+              </div>
             </div>
 
             {/* More Stories Section */}

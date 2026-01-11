@@ -150,23 +150,22 @@ export const colorado_springs: CityData = {
             size: 'banner',
           },
           {
-            id: 'cos-curiosity-3',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'NORAD\'s unofficial mascot is a blue alien',
-            body: 'Cheyenne Mountain\'s Alternate Command Center sits 2,000 feet inside solid granite, designed to survive nuclear war. The bunker has an unofficial mascot: a blue alien figurine that "checks IDs" at the blast doors. According to military personnel, the tradition started during the Cold War, when operators needed levity while monitoring for the apocalypse. Because nothing says "existential dread" like a cheerful alien bouncer.',
-            location: {
-              name: 'Cheyenne Mountain Complex',
-              stillExists: true,
-            },
-          },
-          {
-            id: 'cos-curiosity-11',
+            id: 'cos-curiosity-dino',
             type: 'curiosity',
             category: 'history',
-            title: 'The "Bone Wars" scientist had himself buried with his bones',
-            body: 'In the 1870s-80s, rival paleontologists O.C. Marsh and Edward Drinker Cope waged the "Bone Wars"—a bitter, decades-long feud to discover dinosaur species. Garden of the Gods was a key battleground. Their teams sabotaged each other\'s digs, bribed workers, and destroyed fossils to prevent the other from publishing first. Cope was so competitive that when he died, he had himself buried with his skeleton collection so Marsh couldn\'t measure his skull. That\'s commitment to a grudge.',
-            source: 'American Museum of Natural History',
+            title: 'A dinosaur hid in plain sight at Yale for 130 years',
+            body: 'In 1878, Colorado College professor James H. Kerr discovered a dinosaur skull in Garden of the Gods. O.C. Marsh—one of the infamous "Bone Wars" paleontologists—took the fossil, identified it as a Camptosaurus, and shipped it to Yale. Then everyone forgot about it. For 130 years, the skull sat in a museum drawer while knowledge of the discovery vanished from Colorado Springs entirely. In 1995, park interpreters researching exhibits were shocked to learn a dinosaur had ever been found here. When Dr. Ken Carpenter finally re-examined the skull in 2006, he realized Marsh had gotten it wrong: this was no Camptosaurus. It was an entirely new species—the only one ever found. They named it Theiophytalia kerri, "belonging to the Garden of the Gods," honoring the professor whose discovery spent a century collecting dust 1,800 miles away.',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/dino-1.png',
+                alt: 'Theiophytalia kerri dinosaur skull replica at Garden of the Gods Visitor Center',
+              },
+              {
+                src: '/colorado-springs/curiosities/dino-2.png',
+                alt: 'Garden of the Gods rock formations where the dinosaur was discovered',
+              },
+            ],
+            source: 'Garden of the Gods Visitor Center',
             location: {
               name: 'Garden of the Gods',
               stillExists: true,
@@ -178,6 +177,16 @@ export const colorado_springs: CityData = {
             category: 'legend',
             title: 'An elephant caddied at the Broadmoor (then got taxidermied)',
             body: 'In the 1930s, Tessie the elephant was the Broadmoor resort\'s mascot. She reportedly carried golf bags for guests and appeared at events, because nothing says "luxury mountain resort" like a pachyderm caddy. When she died, her hide was preserved and mounted in the resort for decades. The tradition of eccentric animal mascots continued until the 1970s, when someone finally asked, "Why?"',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/broadmoor-1.png',
+                alt: 'The Broadmoor resort with Cheyenne Mountain in the background',
+              },
+              {
+                src: '/colorado-springs/curiosities/broadmoor-2.png',
+                alt: 'Historic photo of The Broadmoor resort',
+              },
+            ],
             source: 'Broadmoor Hotel archives',
             location: {
               name: 'The Broadmoor',
@@ -237,19 +246,19 @@ export const colorado_springs: CityData = {
             featuredOrder: 4,
             category: 'history',
             title: '"America the Beautiful" was written on muleback',
-            body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view—"purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains—she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',
+            body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view—"purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains—she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Today, a 17-acre downtown park bears the song\'s name, featuring a 40-foot fountain and memorial plaques. A bronze statue of Bates stands outside the Pioneers Museum, forever gazing up at the peak that inspired her.',
             images: [
               {
-                src: 'https://www.pikespeakhistoricalsociety.org/uploads/1/2/3/4/123456789/katharine-lee-bates-portrait.jpg',
+                src: '/colorado-springs/curiosities/bates-1.png',
                 alt: 'Portrait of Katharine Lee Bates, author of America the Beautiful',
               },
               {
-                src: 'https://www.americanheritage.com/sites/default/files/images/articles/web/2010/3/featured/pikes-peak-summit-view-1890s.jpg',
-                alt: 'View from Pikes Peak summit showing purple mountains and plains, circa 1890s',
+                src: '/colorado-springs/curiosities/bates-2.png',
+                alt: 'View from Pikes Peak summit showing purple mountains and plains',
               },
               {
-                src: '',
-                alt: 'Original manuscript of America the Beautiful by Katharine Lee Bates',
+                src: '/colorado-springs/curiosities/bates-3.png',
+                alt: 'America the Beautiful Park with fountain in Colorado Springs',
               }
             ],
             sources: [
@@ -275,15 +284,15 @@ export const colorado_springs: CityData = {
             body: 'Manitou Springs has eight public mineral springs scattered throughout town, each bubbling with a unique combination of minerals that give them dramatically different tastes. The Navajo Spring is effervescent and slightly salty. The Iron Spring tastes metallic and rusty (it contains actual dissolved iron). The Shoshone is sulfurous. Some are sweet, others bitter, some fizzy with natural carbonation from deep underground CO2. The Ute people considered these springs sacred healing waters and traveled here for centuries. When William Jackson Palmer founded Colorado Springs in 1871, he marketed neighboring Manitou Springs as a health resort, building grand hotels to house tuberculosis patients seeking the "curative waters." Visitors would "take the waters" by drinking from each spring, believing the minerals healed various ailments. You can still taste all eight for free by following the self-guided Mineral Springs Walking Tour. Fair warning: the Iron Spring tastes like pennies.',
             images: [
               {
-                src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=1234',
+                src: '/colorado-springs/curiosities/manitou-1.png',
                 alt: 'Historic Shoshone Spring fountain in downtown Manitou Springs',
               },
               {
-                src: 'https://visitcos.com/imager/s3_us-west-1_amazonaws_com/areadevelopmentpartnership-com/images/Manitou-Springs-Iron-Fountain_8ad17d8a88f9a7f96aa41f5f80f5c0e1.jpg',
-                alt: 'Iron Spring mineral fountain in Manitou Springs with rusty water',
+                src: '/colorado-springs/curiosities/manitou-2.png',
+                alt: 'Iron Spring mineral fountain in Manitou Springs',
               },
               {
-                src: 'https://www.manitousprings.org/ImageRepository/Document?documentId=5678',
+                src: '/colorado-springs/curiosities/manitou-3.png',
                 alt: 'Visitor drinking from natural mineral spring in Manitou Springs',
               }
             ],
@@ -344,10 +353,20 @@ export const colorado_springs: CityData = {
           {
             id: 'cos-curiosity-6',
             type: 'curiosity',
-            category: 'underground',
-            title: 'Gold smugglers built an underground economy',
-            body: 'During the 1890s Cripple Creek gold rush, "highgraders"—miners who stole ore—used secret tunnels to smuggle gold out of mines. Some tunnels connected directly to businesses in town, creating an entire underground economy. The practice became so common that mines eventually required workers to change into company-provided clothes before and after shifts to prevent theft. Strip searches were routine. Despite these measures, highgrading continued for decades, with some estimates suggesting millions of dollars in gold disappeared into the tunnels.',
-            source: 'Cripple Creek District Museum',
+            category: 'history',
+            title: 'Miners stole $20 million in gold—one lunch pail at a time',
+            body: 'During the 1890s Cripple Creek gold rush, "highgrading" became an art form. Miners hid ore in hollowed-out boot heels, reinforced lunch pails with shoulder straps to handle the extra weight, wore pocket belts stuffed with rocks, and even ground ore to dust and rolled around in it before leaving. The stolen gold ended up at crooked assay offices that operated as fences—a network so organized it became "a regular business with collection routes." Mine owners fought back with strip searches and company-issued clothes, but over 25 years, an estimated $20 million in gold walked out of the mines one shift at a time.',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/mining-1.png',
+                alt: 'Historic Cripple Creek gold mining operations',
+              },
+              {
+                src: '/colorado-springs/curiosities/mining-2.png',
+                alt: 'Cripple Creek mining district in the 1890s',
+              },
+            ],
+            source: 'Western Mining History',
             location: {
               name: 'Cripple Creek',
               stillExists: true,
@@ -359,6 +378,16 @@ export const colorado_springs: CityData = {
             category: 'legend',
             title: 'The Incline was built for pipes, not people',
             body: 'The Manitou Incline—2,744 railroad ties climbing 2,000 vertical feet in less than a mile—was built in 1907 to haul pipes and materials up Pikes Peak for a hydroelectric project. When the railway closed decades later, locals started climbing it illegally, treating the abandoned infrastructure as an extreme workout. The city tried to stop them. They failed. By 2013, so many people were trespassing that the city gave up and legitimized it. Now it\'s a beloved masochistic tradition. It gains elevation faster than almost any trail in America, with grades exceeding 68%. Your legs will hate you.',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/incline-1.png',
+                alt: 'The Manitou Incline climbing steeply up the mountainside',
+              },
+              {
+                src: '/colorado-springs/curiosities/incline-2.png',
+                alt: 'Hikers ascending the Manitou Incline stairs',
+              },
+            ],
             source: 'City of Manitou Springs',
             location: {
               name: 'Manitou Incline',
@@ -420,6 +449,12 @@ export const colorado_springs: CityData = {
             category: 'culture',
             title: 'They call it the "Evangelical Vatican"',
             body: 'Focus on the Family\'s 81-acre campus employs about 700 people. Combined with New Life Church, The Navigators, Young Life headquarters, and dozens of other evangelical Christian organizations, Colorado Springs houses more religious ministries than perhaps any other American city. This concentration of evangelical power has earned it the nickname "Evangelical Vatican." Local politics reflect this reality: the city often votes dramatically differently from Denver, just 70 miles north. The influence is impossible to miss.',
+            images: [
+              {
+                src: '/colorado-springs/curiosities/evangelical.png',
+                alt: 'Focus on the Family campus in Colorado Springs',
+              },
+            ],
             source: 'Pew Research Center',
           },
           {

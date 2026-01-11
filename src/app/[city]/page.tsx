@@ -70,7 +70,7 @@ export default async function CityPage({ params }: CityPageProps) {
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}
-        currentSection="articles"
+        currentSection="home"
       />
 
       {/* Hero Section with video and featured entries carousel */}
@@ -85,7 +85,7 @@ export default async function CityPage({ params }: CityPageProps) {
           <HorizontalScrollSection
             title="Articles"
             eyebrow="Deep Dives"
-            description="Longform stories and essays exploring the city's history and culture"
+            description={`Longform stories and essays exploring ${city.name}'s history and culture`}
             viewAllLink={{
               href: `/${city.slug}/articles`,
               text: 'View all articles',
@@ -108,6 +108,10 @@ export default async function CityPage({ params }: CityPageProps) {
             eyebrow="Explore"
             description="Curated collections of curiosities, dark history, hidden gems, and more"
             className="bg-neutral-50"
+            viewAllLink={{
+              href: `/${city.slug}/discover`,
+              text: 'View all collections',
+            }}
           >
             {listiclePages.map((listicle, index) => (
               <ListicleTypeCard
@@ -146,6 +150,10 @@ export default async function CityPage({ params }: CityPageProps) {
             title="Other Cities"
             eyebrow="Journey"
             className="bg-neutral-50"
+            viewAllLink={{
+              href: '/cities',
+              text: 'View all cities',
+            }}
           >
             {otherCities.map((otherCity, index) => (
               <CityScrollCard

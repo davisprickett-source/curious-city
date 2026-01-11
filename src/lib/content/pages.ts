@@ -181,7 +181,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
       citySlug: city.slug,
       cityName: city.name,
       title: darkHistorySection.title || 'Dark History',
-      teaser: darkHistorySection.teaser || `Unsolved mysteries and darker chapters of ${city.name}`,
+      teaser: darkHistorySection.teaser || `${city.name}'s unsolved mysteries and darker historical chapters`,
       href: `/${city.slug}/dark-history`,
       thumbnail: extractThumbnail(darkHistorySection),
     })
@@ -199,7 +199,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
       citySlug: city.slug,
       cityName: city.name,
       title: curiositiesSection.title || 'Curiosities',
-      teaser: curiositiesSection.teaser || `Fascinating facts and surprising stories about ${city.name}`,
+      teaser: curiositiesSection.teaser || `${city.name}'s fascinating facts and surprising stories`,
       href: `/${city.slug}/curiosities`,
       thumbnail: extractThumbnail(curiositiesSection),
     })
@@ -217,7 +217,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
       citySlug: city.slug,
       cityName: city.name,
       title: hiddenGemsSection.title || 'Hidden Gems',
-      teaser: hiddenGemsSection.teaser || `Off-the-beaten-path spots and local secrets in ${city.name}`,
+      teaser: hiddenGemsSection.teaser || `${city.name}'s off-the-beaten-path spots and local secrets`,
       href: `/${city.slug}/hidden-gems`,
       thumbnail: extractThumbnail(hiddenGemsSection),
     })
@@ -235,7 +235,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
       citySlug: city.slug,
       cityName: city.name,
       title: lostLovedSection.title || 'Lost & Loved',
-      teaser: lostLovedSection.teaser || `Beloved places we miss from ${city.name}`,
+      teaser: lostLovedSection.teaser || `${city.name}'s beloved places we miss`,
       href: `/${city.slug}/lost-and-loved`,
       thumbnail: extractThumbnail(lostLovedSection),
     })
@@ -268,7 +268,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
     'restaurants': {
       route: 'restaurants',
       gradient: 'from-red-500 to-pink-600',
-      description: "From fine dining to hidden gems, the city's culinary highlights"
+      description: 'From fine dining to hidden gems - the best places to eat'
     },
     'coffee-shops': {
       route: 'coffee-shops',

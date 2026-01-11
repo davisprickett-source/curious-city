@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Local Favorites in ${city.name} | Curious City`,
-    description: `The landmarks that define ${city.name} - iconic spots everyone knows and locals secretly love.`,
+    title: `${city.name}'s Local Favorites | Curious City`,
+    description: `${city.name}'s iconic landmarks - spots everyone knows and locals secretly love.`,
   }
 }
 
@@ -51,21 +51,21 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
           <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
             <img
               src="/Minneapolis/local-favorites/local-favorites-banner.png"
-              alt="Local Favorites in Minneapolis"
+              alt="Minneapolis's Local Favorites"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
             <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
               <div className="max-w-5xl">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  Local Favorites in {city.name}
+                  {city.name}'s Local Favorites
                 </h1>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl font-medium leading-relaxed">
-                  The landmarks that define the city. Places everyone knows, tourists flock to, and locals secretly love despite claiming they're overrated.
+                  The landmarks that define {city.name}. Places everyone knows, tourists flock to, and locals secretly love despite claiming they're overrated.
                 </p>
               </div>
               <div className="absolute top-6 right-6 md:top-8 md:right-8">
-                <ShareLinks title={`Local Favorites in ${city.name} | Curious City`} variant="banner" />
+                <ShareLinks title={`${city.name}'s Local Favorites | Curious City`} variant="banner" />
               </div>
             </div>
           </div>
@@ -75,14 +75,14 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    Local Favorites in {city.name}
+                    {city.name}'s Local Favorites
                   </h1>
                   <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
-                    The landmarks that define the city. Places everyone knows, tourists flock to, and locals secretly love despite claiming they're overrated.
+                    The landmarks that define {city.name}. Places everyone knows, tourists flock to, and locals secretly love despite claiming they're overrated.
                   </p>
                 </div>
                 <div className="hidden sm:block flex-shrink-0">
-                  <ShareLinks title={`Local Favorites in ${city.name} | Curious City`} variant="compact" />
+                  <ShareLinks title={`${city.name}'s Local Favorites | Curious City`} variant="compact" />
                 </div>
               </div>
             </div>

@@ -11,7 +11,10 @@
 
 // Main navigation sections (shown in primary nav)
 export type CitySection =
+  | 'home'
   | 'articles'
+  | 'discover'
+  | 'guide'
   | 'events'
 
 // Legacy/hidden sections (still accessible, not in main nav)
@@ -43,14 +46,16 @@ export type GlobalCategory =
 // ============================================
 
 export interface SectionDefinition {
-  id: CitySection
+  id: CitySection | 'events' // events hidden for now but type still valid
   label: string
   path: string
 }
 
 export const citySections: SectionDefinition[] = [
-  { id: 'articles', label: 'Articles', path: '' }, // Articles are on the main city page
-  // { id: 'scenes', label: 'Scenes', path: '/scenes' }, // Hidden for v1 launch
+  { id: 'home', label: 'Home', path: '' }, // City homepage
+  { id: 'articles', label: 'Articles', path: '/articles' },
+  { id: 'discover', label: 'Discover', path: '/discover' },
+  { id: 'guide', label: 'Guide', path: '/guide' },
   { id: 'events', label: 'Events', path: '/events' },
 ]
 

@@ -12,6 +12,7 @@ import { denver_history } from './denver'
 import { tampa_history } from './tampa'
 import { phoenix_history } from './phoenix'
 import { portland_history } from './portland'
+import { seattle_history } from './seattle'
 
 // Premium history essays
 import { minneapolis_premium_history } from './premium/minneapolis'
@@ -37,6 +38,7 @@ export { denver_history }
 export { tampa_history }
 export { phoenix_history }
 export { portland_history }
+export { seattle_history }
 
 // Combined history index (includes both regular and premium)
 export const history: HistoryIndex = {
@@ -52,6 +54,7 @@ export const history: HistoryIndex = {
   'tampa': { ...tampa_history, ...tampa_premium_history },
   'phoenix': { ...phoenix_history, ...phoenix_premium_history },
   'portland': { ...portland_history, ...portland_premium_history },
+  'seattle': seattle_history,
 }
 
 export function getHistory(citySlug: string, historySlug: string): History | null {

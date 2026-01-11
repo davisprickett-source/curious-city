@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Events in ${city.name} | Curious City`,
-    description: `Discover concerts, nightlife, food & drink events, art shows, comedy, sports, theater, and markets in ${city.name}.`,
+    title: `${city.name}'s Events | Curious City`,
+    description: `${city.name}'s concerts, nightlife, food & drink events, art shows, comedy, sports, theater, and markets.`,
   }
 }
 
@@ -105,7 +105,7 @@ export default async function CityEventsPage({ params, searchParams }: PageProps
                   )}
                 </p>
               </div>
-              <ShareLinks title={`Events in ${city.name} | Curious City`} variant="compact" />
+              <ShareLinks title={`${city.name}'s Events | Curious City`} variant="compact" />
             </div>
           </div>
         </div>

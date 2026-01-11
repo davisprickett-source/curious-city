@@ -442,11 +442,11 @@ export const anchorage: CityData = {
             description: 'At the height of the Cold War, Anchorage sat directly in the crosshairs of Soviet bombers flying over the pole—so the U.S. Army built a ring of nuclear-armed missiles around the city. Nike Site Summit, perched atop Mount Gordon Lyon at 4,500 feet, was part of this "Ring of Steel" from 1959 to 1979. The missiles are long gone, but the concrete bunkers, launch pads, and control buildings remain frozen in time—one of the most complete Nike Hercules sites left in America. Tours (offered through Joint Base Elmendorf-Richardson) take you through barracks where soldiers waited for orders that never came, past empty silos that once held weapons capable of destroying formations of Soviet aircraft, and along ridges with views of the city those weapons were meant to protect. The site feels like a time capsule from an era when nuclear war felt inevitable and Anchorage was ground zero.',
             images: [
               {
-                src: '/anchorage/hidden-gems/cia-nike-1.png',
+                src: '/anchorage/hidden-gems/nike-site-1.png',
                 alt: 'Abandoned Cold War military installation on mountaintop',
               },
               {
-                src: '/anchorage/hidden-gems/cia-nike-2.png',
+                src: '/anchorage/hidden-gems/nike-site-2.png',
                 alt: 'Nike Site Summit Cold War bunker remains',
               },
             ],
@@ -605,8 +605,12 @@ export const anchorage: CityData = {
             description: 'In most cities, a creek running through downtown is a sad afterthought. In Anchorage, Ship Creek fills with thousands of salmon every summer—king salmon in May and June, silvers from July through September—and you can watch them fight upstream from viewing platforms a ten-minute walk from the hotel district. The fish ladders and spillway at the William Jack Hernandez Sport Fish Hatchery give you close-up views of salmon in their final, desperate push to spawn. Better yet, you can fish: Ship Creek is one of the best urban salmon fishing spots in America, and you can rent gear on-site if you didn\'t bring your own. The Alaska Railroad rumbles past on schedule. Eagles circle overhead. The whole scene feels impossibly Alaskan, and it\'s hiding in plain sight downtown.',
             images: [
               {
-                src: '',
+                src: '/anchorage/hidden-gems/shipcreek-1.png',
                 alt: 'Salmon swimming upstream in urban creek setting',
+              },
+              {
+                src: '/anchorage/hidden-gems/shipcreek-2.png',
+                alt: 'Ship Creek urban salmon viewing area',
               },
             ],
             address: 'Ship Creek Overlook Park, East Whitney Road',
@@ -1232,7 +1236,7 @@ export const anchorage: CityData = {
         type: 'section',
         title: 'Darkness at the Edge',
         teaser: 'Serial killers, missing women, and the wilderness that hides everything',
-        intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The vastness of the wilderness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. Anchorage, as the state\'s largest city, has been home to some of America\'s most methodical killers.',
+        intro: 'Alaska has the highest rate of serial killings per capita in the nation—15.65 per million inhabitants. The wilderness that surrounds Anchorage offers something that killers need: a place to make people disappear. The vastness, sparse law enforcement, transient population, and months of darkness create conditions where predators thrive and victims vanish. The frontier has always been a place where law was thin and consequences could be outrun. Alaska perfected this dynamic.',
         items: [
           {
             id: 'anc-dark-1',
@@ -1370,7 +1374,7 @@ export const anchorage: CityData = {
             category: 'crime',
             year: '1971–1983',
             title: 'Robert Hansen: The Baker Who Hunted Women',
-            body: 'Robert Hansen baked bread by day and hunted women by night. A respected Anchorage baker with a wife and kids, Hansen kidnapped at least 17 women over twelve years, flew them to remote wilderness in his private plane, released them, and hunted them with a rifle like they were caribou. Most victims were dancers and sex workers from Fourth Avenue—women Hansen calculated nobody would miss. He was methodical, patient, and absolutely certain he\'d never be caught. Only 12 bodies have been recovered. The rest are still out there.',
+            body: 'Robert Hansen baked bread by day and hunted women by night. A respected Anchorage baker with a wife and kids, Hansen kidnapped at least 17 women over twelve years, flew them to remote wilderness in his private plane, released them, and hunted them with a rifle like they were caribou. Most victims were dancers and sex workers from Fourth Avenue. He chose victims he believed nobody would miss. He was right about many of them. Only 12 bodies have been recovered. The rest are still out there, somewhere in those 365 million acres of wilderness.',
             images: [
               {
                 src: '/anchorage/dark-history/hansen-1.png',
@@ -1436,7 +1440,7 @@ export const anchorage: CityData = {
             category: 'macabre',
             year: 'Ongoing',
             title: 'The Darkness That Lives Here',
-            body: 'December in Anchorage brings five hours of daylight. Alaska leads the nation in Seasonal Affective Disorder—10% of residents versus 1% near the equator. The state\'s suicide rate is double the national average. It ranks first in alcohol-related deaths per capita. The long, dark winters don\'t just mess with your mood—they shape what kind of place this is, what kind of things happen here, what kind of things go unnoticed until spring thaw reveals them. The darkness isn\'t metaphorical. It\'s a fact of life at 61°N, and it changes people.',
+            body: 'December in Anchorage brings five hours of daylight. The sun scrapes along the southern horizon, barely cresting the mountains before beginning its descent. This darkness does things to people. Alaska leads the nation in Seasonal Affective Disorder—10% of residents versus 1% near the equator. The state\'s suicide rate is double the national average. It ranks first in alcohol-related deaths per capita. The long, dark winters shape what kind of place this is, what kind of things happen here, what kind of things go unnoticed until spring thaw reveals them. Living here requires adjusting to rhythms that humans did not evolve for.',
             images: [
               {
                 src: '/anchorage/dark-history/darkness-.png',

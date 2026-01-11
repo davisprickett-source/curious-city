@@ -27,7 +27,7 @@ const cities = [
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-900 text-neutral-300 mt-16">
+    <footer className="bg-neutral-900 text-neutral-300">
       <div className="container-page py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-12">
           {/* Brand & About */}
