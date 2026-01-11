@@ -155,15 +155,15 @@ export function HorizontalScrollSection({
         <div className="flex items-end justify-between gap-4">
           <div className="min-w-0 flex-1">
             {eyebrow && (
-              <div className="eyebrow mb-2 text-accent-600">
+              <div className="eyebrow mb-2 text-accent-600 text-sm md:text-base">
                 {eyebrow}
               </div>
             )}
-            <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-neutral-900">
+            <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-neutral-900">
               {title}
             </h2>
             {description && (
-              <p className="mt-2 text-base md:text-lg xl:text-xl text-neutral-600 max-w-2xl">
+              <p className="mt-2 text-lg md:text-xl xl:text-2xl text-neutral-600 max-w-3xl">
                 {description}
               </p>
             )}

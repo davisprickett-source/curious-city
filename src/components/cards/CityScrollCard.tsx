@@ -136,22 +136,22 @@ export function CityScrollCard({ city, index = 0 }: CityScrollCardProps) {
           </div>
 
           {/* Content */}
-          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[260px] md:min-h-[280px] xl:min-h-[300px]">
+          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[280px] md:min-h-[300px] xl:min-h-[320px]">
             {/* City Name */}
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">
               {city.name}
             </h3>
 
             {/* Tagline */}
             {city.tagline && (
-              <p className="text-sm md:text-base text-white/80 leading-relaxed line-clamp-2">
+              <p className="text-base md:text-lg text-white/80 leading-relaxed line-clamp-2">
                 {city.tagline}
               </p>
             )}
 
             {/* Explore link */}
             <div className="mt-4 flex items-center text-white/70 group-hover:text-white transition-colors">
-              <span className="text-sm md:text-base font-medium">Explore</span>
+              <span className="text-base md:text-lg font-medium">Explore</span>
               <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

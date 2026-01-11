@@ -149,6 +149,7 @@ export default async function CityPage({ params }: CityPageProps) {
           <HorizontalScrollSection
             title="Other Cities"
             eyebrow="Journey"
+            description="Strange tales and forgotten histories from coast to coast"
             className="bg-neutral-50"
             viewAllLink={{
               href: '/cities',

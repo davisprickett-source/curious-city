@@ -110,20 +110,20 @@ export function EstablishmentCategoryCard({ category, index = 0 }: Establishment
           </div>
 
           {/* Content */}
-          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[260px] md:min-h-[280px] xl:min-h-[300px]">
+          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[280px] md:min-h-[300px] xl:min-h-[320px]">
             {/* Title */}
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
               {category.title}
             </h3>
 
             {/* Description */}
-            <p className="text-sm md:text-base text-white/85 leading-relaxed">
+            <p className="text-base md:text-lg text-white/85 leading-relaxed">
               {config.description}
             </p>
 
             {/* View map link */}
             <div className="mt-4 flex items-center text-white/70 group-hover:text-white transition-colors">
-              <span className="text-sm md:text-base font-medium">View map</span>
+              <span className="text-base md:text-lg font-medium">View map</span>
               <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

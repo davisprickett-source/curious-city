@@ -1,16 +1,12 @@
-import Link from 'next/link'
 import { getAllCities } from '@/data/cities'
-import { Header, Footer } from '@/components'
+import { Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { OrganizationSchema, WebsiteSchema } from '@/components/StructuredData'
-import { MasonryGrid } from '@/components/layout/MasonryGrid'
-import { PageCard } from '@/components/cards/PageCard'
 import { curateLandingPageContent } from '@/lib/content/landingPageCurator'
-import { HeroCarousel } from '@/components/landing/HeroCarousel'
-import { ThemeSection } from '@/components/landing/ThemeSection'
-import { SectionHeader } from '@/components/landing/SectionHeader'
-import { UniversalAd } from '@/components/ads/UniversalAd'
-import { createAdSlot } from '@/lib/ads/slots'
-import { getCityBanner } from '@/lib/cityBanners'
+import { LandingHeroSection } from '@/components/landing/LandingHeroSection'
+import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSection'
+import { LandingScrollCard } from '@/components/cards/LandingScrollCard'
+import { CityScrollCard } from '@/components/cards/CityScrollCard'
 
 export default async function HomePage() {
   const cities = await getAllCities()
@@ -30,271 +26,118 @@ export default async function HomePage() {
         description="Local content for curious people. History, guides, and hidden gems from cities across America."
       />
 
-      <Header />
+      <UnifiedNav />
 
-      <main className="flex-1">
-        {/* Hero Carousel - Auto-rotating featured content */}
-        <HeroCarousel slides={curatedContent.heroSlides} />
+      {/* Hero Section with featured content carousel */}
+      <LandingHeroSection slides={curatedContent.heroSlides} />
 
-        {/* Ad Placement #1 - Leaderboard after hero */}
-        <div id="content" className="container-page py-8">
-          <UniversalAd
-            slot={createAdSlot('landing-hero-leaderboard', 'leaderboard', {
-              page: 'landing',
-              position: 'hero',
-            })}
-            className="mx-auto"
-          />
-        </div>
-
-        {/* Dark Stories Section */}
-        <ThemeSection theme="dark">
-          <SectionHeader
-            eyebrow="CHILLING TALES"
-            title="Dark Stories"
+      <main className="flex-1 bg-white">
+        {/* Dark History Section */}
+        {curatedContent.darkStories.length > 0 && (
+          <HorizontalScrollSection
+            title="Dark History"
+            eyebrow="Chilling Tales"
             description="Unsolved mysteries, true crime, and the darker chapters of American history"
-            link={{
+            viewAllLink={{
               href: '/category/dark-history',
-              text: 'View All',
+              text: 'View all dark history',
             }}
-            theme="light"
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr">
+          >
             {curatedContent.darkStories.map((page, index) => (
-              <PageCard
+              <LandingScrollCard
                 key={page.href}
                 data={page}
-                variant="featured"
                 index={index}
-                priority={index < 2}
               />
             ))}
-          </div>
-        </ThemeSection>
+          </HorizontalScrollSection>
+        )}
 
         {/* Curiosities Section */}
-        <ThemeSection theme="discovery">
-          <SectionHeader
-            eyebrow="STRANGE BUT TRUE"
+        {curatedContent.curiosities.length > 0 && (
+          <HorizontalScrollSection
             title="Local Curiosities"
+            eyebrow="Strange But True"
             description="The weird, wonderful, and downright bizarre things that make each city unique"
-            link={{
+            className="bg-neutral-50"
+            viewAllLink={{
               href: '/category/curiosities',
-              text: 'See More',
+              text: 'View all curiosities',
             }}
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr">
+          >
             {curatedContent.curiosities.map((page, index) => (
-              <PageCard
+              <LandingScrollCard
                 key={page.href}
                 data={page}
-                variant="featured"
                 index={index}
               />
             ))}
-          </div>
-        </ThemeSection>
+          </HorizontalScrollSection>
+        )}
 
-        {/* Ad Placement #2 - Rectangle between sections */}
-        <div className="container-page py-8">
-          <UniversalAd
-            slot={createAdSlot('landing-section1-rectangle', 'rectangle', {
-              page: 'landing',
-              position: 'section1',
-            })}
-            className="mx-auto"
-          />
-        </div>
-
-        {/* Hidden Discoveries Section */}
-        <ThemeSection theme="discovery">
-          <SectionHeader
-            eyebrow="OFF THE BEATEN PATH"
-            title="Hidden Discoveries"
-            description="Fascinating curiosities and secret spots you won't find in guidebooks"
-            link={{
+        {/* Hidden Gems Section */}
+        {curatedContent.discoveries.length > 0 && (
+          <HorizontalScrollSection
+            title="Hidden Gems"
+            eyebrow="Off The Beaten Path"
+            description="Secret spots and fascinating discoveries you won't find in guidebooks"
+            viewAllLink={{
               href: '/category/hidden-gems',
-              text: 'Explore More',
+              text: 'View all hidden gems',
             }}
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr">
+          >
             {curatedContent.discoveries.map((page, index) => (
-              <PageCard
+              <LandingScrollCard
                 key={page.href}
                 data={page}
-                variant="featured"
                 index={index}
               />
             ))}
-          </div>
-        </ThemeSection>
+          </HorizontalScrollSection>
+        )}
 
-        {/* Ad Placement #3 - Banner between sections */}
-        <div className="container-page py-8">
-          <UniversalAd
-            slot={createAdSlot('landing-section2-banner', 'banner', {
-              page: 'landing',
-              position: 'section2',
-            })}
-            className="mx-auto"
-          />
-        </div>
-
-        {/* Lost Landmarks Section */}
-        <ThemeSection theme="nostalgic">
-          <SectionHeader
-            eyebrow="NOSTALGIA"
-            title="Lost Landmarks"
+        {/* Lost & Loved Section */}
+        {curatedContent.lostLandmarks.length > 0 && (
+          <HorizontalScrollSection
+            title="Lost & Loved"
+            eyebrow="Nostalgia"
             description="Beloved places and cherished memories from cities' golden eras"
-            link={{
+            className="bg-neutral-50"
+            viewAllLink={{
               href: '/category/lost-and-loved',
-              text: 'Remember More',
+              text: 'View all lost landmarks',
             }}
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr">
+          >
             {curatedContent.lostLandmarks.map((page, index) => (
-              <PageCard
+              <LandingScrollCard
                 key={page.href}
                 data={page}
-                variant="featured"
                 index={index}
               />
             ))}
-          </div>
-        </ThemeSection>
+          </HorizontalScrollSection>
+        )}
 
-        {/* Ad Placement #4 - Rectangle before more stories */}
-        <div className="container-page py-8">
-          <UniversalAd
-            slot={createAdSlot('landing-section3-rectangle', 'rectangle', {
-              page: 'landing',
-              position: 'section3',
-            })}
-            className="mx-auto"
-          />
-        </div>
-
-        {/* More Stories Grid - Compact cards */}
-        <div className="container-page section-spacing">
-          <section>
-            <SectionHeader
-              title="More Stories to Explore"
-              description="Discover more fascinating content from cities across America"
-            />
-
-            <MasonryGrid
-              columns={{
-                sm: 1,
-                md: 2,
-                lg: 3,
-                xl: 3,
-              }}
-            >
-              {curatedContent.moreStories.map((page, index) => (
-                <PageCard
-                  key={page.href}
-                  data={page}
-                  variant="compact"
-                  index={index}
-                />
-              ))}
-            </MasonryGrid>
-          </section>
-        </div>
-
-        {/* Ad Placement #5 - Leaderboard before cities */}
-        <div className="container-page py-8">
-          <UniversalAd
-            slot={createAdSlot('landing-bottom-leaderboard', 'leaderboard', {
-              page: 'landing',
-              position: 'bottom',
-            })}
-            className="mx-auto"
-          />
-        </div>
-
-        {/* Cities Explorer Section - Redesigned */}
-        <div className="bg-gradient-to-b from-neutral-50 to-white border-t border-neutral-200">
-          <div className="container-page section-spacing py-16">
-            <section>
-              <SectionHeader
-                title="Explore Cities"
-                description="Choose a city to discover its hidden stories, local secrets, and fascinating history"
+        {/* Cities Section */}
+        {cities.length > 0 && (
+          <HorizontalScrollSection
+            title="Explore Cities"
+            eyebrow="Journey"
+            description="Choose a city to discover its hidden stories and local secrets"
+            viewAllLink={{
+              href: '/cities',
+              text: 'View all cities',
+            }}
+          >
+            {cities.map((city, index) => (
+              <CityScrollCard
+                key={city.slug}
+                city={city}
+                index={index}
               />
-
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {cities.map((city) => {
-                  const bannerImage = getCityBanner(city.slug)
-                  return (
-                    <Link
-                      key={city.slug}
-                      href={`/${city.slug}`}
-                      className="group relative block overflow-hidden rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                      {/* Background image with overlay */}
-                      {bannerImage && (
-                        <div className="absolute inset-0">
-                          <img
-                            src={bannerImage}
-                            alt=""
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/60 to-neutral-900/40 group-hover:from-neutral-900/95 group-hover:via-neutral-900/70 transition-colors" />
-                        </div>
-                      )}
-                      {/* Fallback background for cities without banners */}
-                      {!bannerImage && (
-                        <div className="absolute inset-0 bg-gradient-to-br from-accent-600 to-accent-800" />
-                      )}
-                      {/* Content */}
-                      <div className="relative p-6 min-h-[140px] flex flex-col justify-end">
-                        <h3 className="text-xl font-bold text-white mb-1 drop-shadow-lg">
-                          {city.name}
-                        </h3>
-                        {city.tagline && (
-                          <p className="text-sm text-white/80 mb-3 line-clamp-2">{city.tagline}</p>
-                        )}
-                        <span className="inline-flex items-center gap-2 text-sm font-semibold text-white/90 group-hover:text-white group-hover:gap-3 transition-all">
-                          Explore
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2.5}
-                              d="M13 7l5 5-5 5M6 12h12"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            </section>
-          </div>
-        </div>
-
-        {/* Ad Placement #6 - Banner in footer area */}
-        <div className="bg-neutral-50 border-t border-neutral-200">
-          <div className="container-page py-8">
-            <UniversalAd
-              slot={createAdSlot('landing-footer-banner', 'banner', {
-                page: 'landing',
-                position: 'footer',
-              })}
-              className="mx-auto"
-            />
-          </div>
-        </div>
+            ))}
+          </HorizontalScrollSection>
+        )}
       </main>
 
       <Footer />

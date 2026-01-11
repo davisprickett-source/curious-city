@@ -4,63 +4,48 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import type { FeaturedEntry, FeaturedEntryType } from '@/lib/content/cityHomepage'
-import type { CityData } from '@/types/content'
+import type { PageCardData } from '@/lib/content/pages'
 
-interface CityHeroSectionProps {
-  city: CityData
-  featuredEntries: FeaturedEntry[]
+interface LandingHeroSectionProps {
+  slides: PageCardData[]
   autoPlayInterval?: number
 }
 
-// Type badge colors for the small indicator
-const typeColors: Record<FeaturedEntryType, string> = {
-  article: 'bg-blue-500',
-  curiosity: 'bg-purple-500',
-  'dark-history': 'bg-red-500',
-  'hidden-gem': 'bg-emerald-500',
-  'lost-and-loved': 'bg-orange-500',
+// Type labels for display
+const typeLabels: Record<string, string> = {
+  'dark-history': 'Dark History',
+  'curiosities': 'Curiosity',
+  'hidden-gems': 'Hidden Gem',
+  'lost-loved': 'Lost & Loved',
+  'article': 'Article',
 }
 
-// City hero banner images for intro slide
-const cityHeroBanners: Record<string, string> = {
-  'anchorage': '/banners/hero-city-images/anchorage-skyline.png',
-  'chicago': '/banners/hero-city-images/chicago-skyline.png',
-  'colorado-springs': '/banners/hero-city-images/colorado-springs-skyline.png',
-  'dallas': '/banners/hero-city-images/dallas-skyline.png',
-  'denver': '/banners/hero-city-images/denver-skyline.png',
-  'fargo': '/banners/hero-city-images/fargo-skyline.png',
-  'minneapolis': '/banners/hero-city-images/minneapolis-skyline.png',
-  'phoenix': '/banners/hero-city-images/phoenix-skyline.png',
-  'portland': '/banners/hero-city-images/portland-skyline.png',
-  'raleigh': '/banners/hero-city-images/raleigh-skyline.png',
-  'seattle': '/banners/hero-city-images/seattle-skyline.png',
-  'salt-lake-city': '/banners/hero-city-images/SLC-skyline.png',
-  'tampa': '/banners/hero-city-images/tampa-skyline.png',
+// Type badge colors
+const typeColors: Record<string, string> = {
+  'dark-history': 'bg-red-500',
+  'curiosities': 'bg-amber-500',
+  'hidden-gems': 'bg-emerald-500',
+  'lost-loved': 'bg-orange-500',
+  'article': 'bg-blue-500',
 }
 
 /**
- * City homepage hero section - Full-width carousel banner
- * - Intro slide (city name + tagline) rotates with featured entries
- * - Featured entries show as subsequent slides
- * - Auto-rotating with navigation dots
+ * Landing page hero section
+ * - Intro slide with branding rotates with featured content
+ * - Matches city hero section style but for the main landing page
  */
-export function CityHeroSection({
-  city,
-  featuredEntries,
-  autoPlayInterval = 8000, // Slower timing
-}: CityHeroSectionProps) {
-  // Index 0 = intro slide, 1+ = featured entries
+export function LandingHeroSection({
+  slides,
+  autoPlayInterval = 8000,
+}: LandingHeroSectionProps) {
+  // Index 0 = intro slide, 1+ = featured content
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
 
-  // Fallback to city banner if no featured entries
-  const fallbackImage = city.heroVideo?.fallbackImage || city.heroImage?.src
-
-  // Total slides = 1 (intro) + number of featured entries
-  const totalSlides = 1 + featuredEntries.length
+  // Total slides = 1 (intro) + number of content slides
+  const totalSlides = 1 + slides.length
   const isIntroSlide = currentIndex === 0
-  const currentEntry = !isIntroSlide ? featuredEntries[currentIndex - 1] : null
+  const currentSlide = !isIntroSlide ? slides[currentIndex - 1] : null
 
   // Auto-play logic
   useEffect(() => {
@@ -82,16 +67,16 @@ export function CityHeroSection({
   // Get current background image
   const getCurrentImage = () => {
     if (isIntroSlide) {
-      // Use city-specific hero banner for intro slide
-      return cityHeroBanners[city.slug] || fallbackImage
+      // Use a collage or generic hero for intro
+      return '/banners/hero-city-images/minneapolis-skyline.png'
     }
-    return currentEntry?.image?.src || fallbackImage
+    return currentSlide?.thumbnail
   }
 
   return (
     <section className="relative w-full bg-neutral-900">
-      {/* Banner Container - shorter/wider aspect on mobile for better skyline visibility */}
-      <div className="relative h-[35vh] sm:h-[45vh] md:h-[50vh] min-h-[200px] max-h-[350px] sm:max-h-[500px] md:max-h-[600px] overflow-hidden">
+      {/* Banner Container - matches city hero sizing */}
+      <div className="relative h-[40vh] sm:h-[45vh] md:h-[50vh] min-h-[280px] max-h-[400px] sm:max-h-[500px] md:max-h-[600px] overflow-hidden">
         {/* Background Images */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -105,7 +90,7 @@ export function CityHeroSection({
             {getCurrentImage() ? (
               <Image
                 src={getCurrentImage()!}
-                alt={isIntroSlide ? `${city.name} cityscape` : (currentEntry?.image?.alt || city.name)}
+                alt={isIntroSlide ? 'Curious City' : (currentSlide?.title || 'Featured content')}
                 fill
                 className="object-cover"
                 priority={currentIndex === 0}
@@ -117,16 +102,15 @@ export function CityHeroSection({
           </motion.div>
         </AnimatePresence>
 
-        {/* Gradient overlay - nuanced with subtle accent tones */}
+        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-br from-accent-900/20 via-transparent to-purple-900/10" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-blue-900/10" />
 
         {/* Content */}
         <div className="relative h-full container-page flex flex-col justify-end pb-8 sm:pb-10 md:pb-14">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
-              /* Intro Slide - City name and tagline */
+              /* Intro Slide - Branding */
               <motion.div
                 key="intro"
                 initial={{ opacity: 0, y: 20 }}
@@ -135,7 +119,7 @@ export function CityHeroSection({
                 transition={{ duration: 0.6 }}
               >
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-4">
-                  <span className="text-accent-400">Curious</span> {city.name}
+                  <span className="text-accent-400">Curious</span> City
                 </h1>
 
                 {/* Animated underline */}
@@ -147,19 +131,17 @@ export function CityHeroSection({
                   style={{ transformOrigin: 'left' }}
                 />
 
-                {city.tagline && (
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.5 }}
-                    className="text-xl sm:text-2xl md:text-3xl text-white/90 max-w-3xl leading-relaxed"
-                  >
-                    {city.tagline}
-                  </motion.p>
-                )}
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  className="text-xl sm:text-2xl md:text-3xl text-white/90 max-w-3xl leading-relaxed"
+                >
+                  Untold stories, dark histories, and hidden secrets of cities across America
+                </motion.p>
               </motion.div>
-            ) : currentEntry ? (
-              /* Featured Entry Slide */
+            ) : currentSlide ? (
+              /* Featured Content Slide */
               <motion.div
                 key={currentIndex}
                 initial={{ opacity: 0, y: 10 }}
@@ -167,24 +149,26 @@ export function CityHeroSection({
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.4 }}
               >
-                <Link href={currentEntry.href} className="group block">
-                  {/* Type indicator dot */}
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className={`w-2.5 h-2.5 rounded-full ${typeColors[currentEntry.type]}`} />
-                    <span className="text-sm uppercase tracking-wider text-white/70">
-                      {currentEntry.type.replace('-', ' ')}
+                <Link href={currentSlide.href} className="group block">
+                  {/* Type indicator */}
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className={`w-2 h-2 rounded-full ${typeColors[currentSlide.pageType] || 'bg-neutral-500'}`} />
+                    <span className="text-xs uppercase tracking-wider text-white/70">
+                      {currentSlide.cityName} · {typeLabels[currentSlide.pageType] || currentSlide.pageType}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
-                    {currentEntry.title}
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
+                    {currentSlide.title}
                   </h2>
 
                   {/* Teaser */}
-                  <p className="text-lg sm:text-lg md:text-xl text-white/80 max-w-3xl line-clamp-2 mb-4">
-                    {currentEntry.teaser}
-                  </p>
+                  {currentSlide.teaser && (
+                    <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl line-clamp-2 mb-4">
+                      {currentSlide.teaser}
+                    </p>
+                  )}
 
                   {/* Read more CTA */}
                   <span className="inline-flex items-center text-base md:text-lg font-semibold text-white group-hover:text-accent-300 transition-colors">
@@ -199,7 +183,7 @@ export function CityHeroSection({
           </AnimatePresence>
         </div>
 
-        {/* Navigation dots - minimal on mobile, proper size on larger screens */}
+        {/* Navigation dots */}
         {totalSlides > 1 && (
           <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-1 sm:gap-1.5 md:gap-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
