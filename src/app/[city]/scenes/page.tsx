@@ -54,43 +54,35 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
         sceneCategory={activeCategory}
       />
 
-      <main className="flex-1">
-        {/* Hero Header with Banner - Exactly Viewport Height */}
-        <div className="relative h-[100dvh] flex flex-col">
-          <img
-            src="/global-banners/scenes.png"
-            alt={`Scenes from ${city.name}`}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
-
-          {/* Content centered in hero */}
-          <div className="relative flex-1 container-page flex flex-col justify-center items-start py-20">
-            <div className="max-w-5xl">
-              {/* Title with Share Button */}
-              <div className="flex items-start justify-between gap-6 mb-6">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-                  Scenes from {city.name}
-                </h1>
-                <div className="flex-shrink-0 mt-2">
-                  <ShareLinks title={`Scenes from ${city.name} | Curious City`} variant="banner" />
-                </div>
-              </div>
-
-              {/* Intro in opacity cell */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-lg px-6 py-4 max-w-3xl">
-                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  Visual moments and glimpses of daily life. Street photography, architecture, and the character that makes {city.name} unique.
-                </p>
-              </div>
+      <main className="flex-1 bg-white">
+        {/* Article-style Header */}
+        <div className="container-page pt-8 pb-12">
+          <div className="max-w-3xl">
+            {/* Category pill */}
+            <div className="flex items-center gap-3 mb-6">
+              <span className="px-3 py-1 bg-violet-100 text-violet-700 text-sm font-medium rounded-full">
+                Scenes
+              </span>
+              <span className="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">
+                {city.name}
+              </span>
             </div>
-          </div>
 
-          {/* Scroll indicator arrow */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7" />
-            </svg>
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
+              Scenes from {city.name}
+            </h1>
+
+            {/* Intro */}
+            <p className="text-lg text-neutral-600 leading-relaxed mb-8">
+              Visual moments and glimpses of daily life. Street photography, architecture, and the character that makes {city.name} unique.
+            </p>
+
+            {/* Share links */}
+            <div className="flex items-center justify-between py-6 border-y border-neutral-200">
+              <span className="text-sm text-neutral-500">{scenes.length} scenes</span>
+              <ShareLinks title={`Scenes from ${city.name} | Curious City`} />
+            </div>
           </div>
         </div>
 

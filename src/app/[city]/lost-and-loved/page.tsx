@@ -58,53 +58,42 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
         currentSection="lost-and-loved"
       />
 
-      <main className="flex-1">
-        {/* Hero Header with Banner - Exactly Viewport Height */}
-        <div className="relative h-[100dvh] flex flex-col">
-          <img
-            src={city.slug === 'minneapolis'
-              ? "/Minneapolis/lost-and-loved/lovedlost-banner.png"
-              : "/global-banners/lost-and-loved.png"}
-            alt={`Lost & Loved in ${city.name}`}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          {/* Vintage sepia overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-amber-900/40 via-orange-900/30 to-amber-950/60" />
-
-          {/* Content centered in hero */}
-          <div className="relative flex-1 container-page flex flex-col justify-center items-start py-20">
-            <div className="max-w-5xl">
-              {/* Title with Share Button */}
-              <div className="flex items-start justify-between gap-6 mb-6">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-                  {section?.title ? `${section.title} in ${city.name}` : `Lost & Loved in ${city.name}`}
-                </h1>
-                <div className="flex-shrink-0 mt-2">
-                  <ShareLinks title={`Lost & Loved in ${city.name} | Curious City`} variant="banner" />
-                </div>
-              </div>
-
-              {/* Teaser/Hook */}
-              {section?.teaser && (
-                <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-6">
-                  {section.teaser}
-                </p>
-              )}
-
-              {/* Intro in opacity cell */}
-              <div className="bg-amber-950/40 backdrop-blur-sm rounded-lg px-6 py-4 max-w-3xl">
-                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                  {section?.intro || "The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss."}
-                </p>
-              </div>
+      <main className="flex-1 bg-white">
+        {/* Article-style Header */}
+        <div className="container-page pt-8 pb-12">
+          <div className="max-w-3xl">
+            {/* Category pill */}
+            <div className="flex items-center gap-3 mb-6">
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 text-sm font-medium rounded-full">
+                Lost & Loved
+              </span>
+              <span className="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">
+                {city.name}
+              </span>
             </div>
-          </div>
 
-          {/* Scroll indicator arrow */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7" />
-            </svg>
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
+              {section?.title || `Lost & Loved in ${city.name}`}
+            </h1>
+
+            {/* Teaser/Hook */}
+            {section?.teaser && (
+              <p className="text-xl md:text-2xl text-neutral-700 font-medium leading-relaxed mb-6">
+                {section.teaser}
+              </p>
+            )}
+
+            {/* Intro */}
+            <p className="text-lg text-neutral-600 leading-relaxed mb-8">
+              {section?.intro || "The beloved businesses that shaped this city and the spaces they left behind. The restaurants, bars, and institutions we still miss."}
+            </p>
+
+            {/* Share links */}
+            <div className="flex items-center justify-between py-6 border-y border-neutral-200">
+              <span className="text-sm text-neutral-500">{items.length} places</span>
+              <ShareLinks title={`Lost & Loved in ${city.name} | Curious City`} />
+            </div>
           </div>
         </div>
 
