@@ -1,55 +1,66 @@
 import { Metadata } from 'next'
-import { Header, Footer } from '@/components'
-import { getAllPageCards } from '@/lib/content/pages'
-import { PageCard } from '@/components/cards/PageCard'
+import { Footer } from '@/components'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { CategoryHeroSection } from '@/components/category/CategoryHeroSection'
+import { CategoryCard } from '@/components/cards/CategoryCard'
+import { curateCategoryPageContent, getCategoryMeta } from '@/lib/content/categoryPageCurator'
+
+const categoryMeta = getCategoryMeta('curiosities')
 
 export const metadata: Metadata = {
-  title: 'Local Curiosities | Curious City',
-  description: 'Strange, wonderful, and bizarre local curiosities from cities across America.',
+  title: `${categoryMeta.title} | Curious City`,
+  description: categoryMeta.description,
 }
 
 export default async function CuriositiesPage() {
-  const allCards = await getAllPageCards()
-
-  // Filter to curiosities articles only
-  const curiosityCards = allCards.filter((card) => card.pageType === 'curiosities')
+  const { heroSlides, allCards } = await curateCategoryPageContent('curiosities')
 
   return (
     <>
-      <Header />
+      <UnifiedNav />
 
-      <main className="flex-1">
-        <div className="container-page section-spacing">
-          {/* Hero */}
-          <div className="mb-12 text-center">
-            <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
-              Local Curiosities
-            </h1>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              The weird, wonderful, and downright bizarre things that make each city unique.
-              Strange landmarks, unusual traditions, and the oddities that locals love.
-            </p>
+      {/* Hero Section with featured cities */}
+      <CategoryHeroSection
+        category="curiosities"
+        title={categoryMeta.title}
+        tagline={categoryMeta.tagline}
+        slides={heroSlides}
+      />
+
+      <main className="flex-1 bg-white">
+        {/* All Cities Grid */}
+        <section className="py-12 md:py-16">
+          <div className="container-page">
+            <div className="mb-8 md:mb-10">
+              <p className="eyebrow mb-2 text-amber-600 text-sm md:text-base">
+                Explore
+              </p>
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-neutral-900">
+                By City
+              </h2>
+              <p className="mt-2 text-lg md:text-xl text-neutral-600 max-w-2xl">
+                Strange landmarks, unusual traditions, and the oddities that make each place special.
+              </p>
+            </div>
+
+            {allCards.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {allCards.map((card, index) => (
+                  <CategoryCard
+                    key={card.href}
+                    data={card}
+                    index={index}
+                    priority={index < 3}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-neutral-500">No curiosities content yet. Check back soon!</p>
+              </div>
+            )}
           </div>
-
-          {/* Single Column Article Feed */}
-          {curiosityCards.length > 0 ? (
-            <div className="space-y-8 max-w-4xl mx-auto">
-              {curiosityCards.map((card, index) => (
-                <PageCard
-                  key={card.href}
-                  data={card}
-                  variant="standard"
-                  index={index}
-                  priority={index === 0}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-neutral-500 mb-4">No curiosities articles yet. Check back soon!</p>
-            </div>
-          )}
-        </div>
+        </section>
       </main>
 
       <Footer />
