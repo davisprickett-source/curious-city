@@ -133,7 +133,7 @@ export function CityHeroSection({
                 transition={{ duration: 0.6 }}
               >
                 <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg mb-4">
-                  {city.name}
+                  <span className="text-accent-400">Curious</span> {city.name}
                 </h1>
 
                 {/* Animated underline */}
