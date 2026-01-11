@@ -910,14 +910,8 @@ export const colorado_springs: CityData = {
             website: 'https://switchbackroasters.com',
             instagram: '@switchbackroasters',
             images: [
-              {
-                src: 'https://switchbackroasters.com/wp-content/uploads/downtown-location-interior.jpg',
-                alt: 'Switchback Coffee Roasters downtown location interior with roasting equipment',
-              },
-              {
-                src: '',
-                alt: 'Pour-over coffee being brewed at Switchback Coffee',
-              }
+              { src: '/colorado-springs/coffee/switchback-1.png', alt: 'Switchback Coffee Roasters interior' },
+              { src: '/colorado-springs/coffee/switchback-2.png', alt: 'Pour-over coffee at Switchback' },
             ],
           },
           {
@@ -929,10 +923,13 @@ export const colorado_springs: CityData = {
             address: '124 N Tejon St, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8354, lng: -104.8248 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Perfectly crafted cortado with latte art',
-            },
+            images: [
+              { src: '/colorado-springs/coffee/loyal-1.png', alt: 'Loyal Coffee minimalist interior' },
+              { src: '/colorado-springs/coffee/loyal-2.png', alt: 'Cortado with latte art' },
+              { src: '/colorado-springs/coffee/loyal-3.png', alt: 'Espresso extraction' },
+              { src: '/colorado-springs/coffee/loyal-4.png', alt: 'Loyal Coffee bar' },
+              { src: '/colorado-springs/coffee/loyal-5.png', alt: 'Barista at work' },
+            ],
           },
           {
             name: 'Jives Coffee Lounge',
@@ -943,10 +940,11 @@ export const colorado_springs: CityData = {
             address: '32 S Wahsatch Ave, Colorado Springs, CO 80903',
             coordinates: { lat: 38.8322, lng: -104.8206 },
             price: '$',
-            image: {
-              src: '',
-              alt: 'Cozy coffee lounge with eclectic decor',
-            },
+            images: [
+              { src: '/colorado-springs/coffee/jives-1.png', alt: 'Jives Coffee Lounge interior' },
+              { src: '/colorado-springs/coffee/jives-2.png', alt: 'Eclectic decor and local art' },
+              { src: '/colorado-springs/coffee/jives-3.png', alt: 'Live music setup' },
+            ],
           },
           {
             name: 'Building Three Coffee',
@@ -957,10 +955,11 @@ export const colorado_springs: CityData = {
             address: '1604 S Cascade Ave, Colorado Springs, CO 80905',
             coordinates: { lat: 38.8188, lng: -104.8253 },
             price: '$$',
-            image: {
-              src: '',
-              alt: 'Cold brew coffee in converted school building cafe',
-            },
+            images: [
+              { src: '/colorado-springs/coffee/building-3-1.png', alt: 'Building 3 Coffee in Ivywild School' },
+              { src: '/colorado-springs/coffee/building-3-2.png', alt: 'High ceilings and original details' },
+              { src: '/colorado-springs/coffee/building-3-3.png', alt: 'Coffee bar' },
+            ],
           }
         ],
       },
@@ -1108,16 +1107,11 @@ export const colorado_springs: CityData = {
             website: 'https://loyalcoffee.co',
             instagram: '@loyalcoffee',
             images: [
-              {
-                src: 'https://loyalcoffee.co/wp-content/uploads/Loyal-Coffee-Interior-Downtown.jpg',
-                alt: 'Loyal Coffee downtown location with minimalist design and natural light',
-                caption: 'Minimalist design lets the coffee speak for itself',
-              },
-              {
-                src: '',
-                alt: 'Barista pouring cortado at Loyal Coffee',
-                caption: 'Impeccable espresso technique',
-              }
+              { src: '/colorado-springs/coffee/loyal-1.png', alt: 'Loyal Coffee minimalist interior' },
+              { src: '/colorado-springs/coffee/loyal-2.png', alt: 'Cortado with latte art' },
+              { src: '/colorado-springs/coffee/loyal-3.png', alt: 'Espresso extraction' },
+              { src: '/colorado-springs/coffee/loyal-4.png', alt: 'Loyal Coffee bar' },
+              { src: '/colorado-springs/coffee/loyal-5.png', alt: 'Barista at work' },
             ],
           },
           {
@@ -1133,16 +1127,8 @@ export const colorado_springs: CityData = {
             website: 'https://storycoffeecompany.com',
             instagram: '@storycoffeeco',
             images: [
-              {
-                src: 'https://storycoffeecompany.com/wp-content/uploads/Story-Coffee-Ivywild-Interior.jpg',
-                alt: 'Story Coffee inside converted Ivywild School building',
-                caption: 'A converted 1916 school turned coffee haven',
-              },
-              {
-                src: '',
-                alt: 'Coffee roasting equipment at Story Coffee',
-                caption: 'Roasting beans on-site',
-              }
+              { src: '/colorado-springs/coffee/story-1.png', alt: 'Story Coffee in Ivywild School' },
+              { src: '/colorado-springs/coffee/story-2.png', alt: 'Coffee roasting at Story' },
             ],
           },
           {
@@ -1158,16 +1144,8 @@ export const colorado_springs: CityData = {
             website: 'https://switchbackroasters.com',
             instagram: '@switchbackroasters',
             images: [
-              {
-                src: 'https://switchbackroasters.com/wp-content/uploads/downtown-location-interior.jpg',
-                alt: 'Switchback Coffee Roasters downtown location interior',
-                caption: 'Mountain-town soul without pretension',
-              },
-              {
-                src: '',
-                alt: 'Pour-over coffee being brewed at Switchback Coffee',
-                caption: 'Single-origin pour-overs',
-              }
+              { src: '/colorado-springs/coffee/switchback-1.png', alt: 'Switchback Coffee Roasters interior' },
+              { src: '/colorado-springs/coffee/switchback-2.png', alt: 'Pour-over coffee at Switchback' },
             ],
           },
           {
@@ -1183,11 +1161,9 @@ export const colorado_springs: CityData = {
             website: 'https://wayfindercoffee.com',
             instagram: '@wayfindercoffeeco',
             images: [
-              {
-                src: '',
-                alt: 'Wayfinder Coffee with mountaineering aesthetic and maps on walls',
-                caption: 'Adventure-inspired without being kitschy',
-              }
+              { src: '/colorado-springs/coffee/wayfinder-1.png', alt: 'Wayfinder Coffee interior' },
+              { src: '/colorado-springs/coffee/wayfinder-2.png', alt: 'Mountaineering aesthetic' },
+              { src: '/colorado-springs/coffee/wayfinder-3.png', alt: 'Maps and outdoor decor' },
             ],
           },
           {
@@ -1202,11 +1178,9 @@ export const colorado_springs: CityData = {
             price: '$$',
             instagram: '@building3coffee',
             images: [
-              {
-                src: '',
-                alt: 'Building 3 Coffee inside Ivywild School with high ceilings',
-                caption: 'Industrial-chic inside a converted school',
-              }
+              { src: '/colorado-springs/coffee/building-3-1.png', alt: 'Building 3 Coffee in Ivywild School' },
+              { src: '/colorado-springs/coffee/building-3-2.png', alt: 'High ceilings and original details' },
+              { src: '/colorado-springs/coffee/building-3-3.png', alt: 'Coffee bar' },
             ],
           },
           {
@@ -1222,11 +1196,9 @@ export const colorado_springs: CityData = {
             website: 'https://jivescoffee.com',
             instagram: '@jivescoffeelounge',
             images: [
-              {
-                src: '',
-                alt: 'Jives Coffee Lounge with eclectic decor and local art',
-                caption: 'A community hub, not just a coffee shop',
-              }
+              { src: '/colorado-springs/coffee/jives-1.png', alt: 'Jives Coffee Lounge interior' },
+              { src: '/colorado-springs/coffee/jives-2.png', alt: 'Eclectic decor and local art' },
+              { src: '/colorado-springs/coffee/jives-3.png', alt: 'Live music setup' },
             ],
           }
         ],
