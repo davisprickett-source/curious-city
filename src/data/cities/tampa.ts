@@ -1209,11 +1209,11 @@ export const tampa: CityData = {
             website: 'https://buddybrew.com',
             instagram: '@buddybrewcoffee',
             images: [
-              {
-                src: 'https://images.getbento.com/accounts/9226f951460a3ed5a3486cffc800c309/media/images/buddy_brew.png?w=1000&fit=max&auto=compress,format&cs=origin&h=1000',
-                alt: 'Buddy Brew Coffee at Armature Works Tampa',
-                credit: 'Armature Works',
-              },
+              { src: '/Tampa/coffee-shops/buddybrew-1.png', alt: 'Buddy Brew Coffee Tampa' },
+              { src: '/Tampa/coffee-shops/buddybrew-2.png', alt: 'Buddy Brew Coffee interior' },
+              { src: '/Tampa/coffee-shops/buddybrew-3.png', alt: 'Buddy Brew Coffee drinks' },
+              { src: '/Tampa/coffee-shops/buddybrew-4.png', alt: 'Buddy Brew Coffee roasting' },
+              { src: '/Tampa/coffee-shops/buddybrew-5.png', alt: 'Buddy Brew Coffee location' },
             ],
           },
           {
@@ -1228,7 +1228,12 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://blindtigercafe.com',
             instagram: '@blindtigercafe',
-            images: [],
+            images: [
+              { src: '/Tampa/coffee-shops/blindtiger-1.png', alt: 'Blind Tiger Coffee Roasters' },
+              { src: '/Tampa/coffee-shops/blindtiger-2.png', alt: 'Blind Tiger Coffee interior' },
+              { src: '/Tampa/coffee-shops/blindtiger-3.png', alt: 'Blind Tiger Coffee drinks' },
+              { src: '/Tampa/coffee-shops/blindtiger-4.png', alt: 'Blind Tiger Coffee Ybor' },
+            ],
           },
           {
             name: 'Kahwa Coffee',
@@ -1242,7 +1247,11 @@ export const tampa: CityData = {
             price: '$$',
             website: 'https://kahwacoffee.com',
             instagram: '@kahwacoffee',
-            images: [],
+            images: [
+              { src: '/Tampa/coffee-shops/kahwa-1.png', alt: 'Kahwa Coffee Tampa' },
+              { src: '/Tampa/coffee-shops/kahwa-2.png', alt: 'Kahwa Coffee interior' },
+              { src: '/Tampa/coffee-shops/kahwa-3.png', alt: 'Kahwa Coffee drinks' },
+            ],
           },
           {
             name: 'The Lab Coffee',
@@ -1255,7 +1264,11 @@ export const tampa: CityData = {
             hours: '7am-5pm daily',
             price: '$$',
             instagram: '@thelabcoffeetampa',
-            images: [],
+            images: [
+              { src: '/Tampa/coffee-shops/thelab-1.png', alt: 'The Lab Coffee Tampa' },
+              { src: '/Tampa/coffee-shops/thelab-2.png', alt: 'The Lab Coffee roastery' },
+              { src: '/Tampa/coffee-shops/thelab-3.png', alt: 'The Lab Coffee brewing' },
+            ],
           },
           {
             name: 'Cafe Quiquiriqui',
@@ -1270,6 +1283,8 @@ export const tampa: CityData = {
             website: 'https://hotelhaya.com',
             instagram: '@cafequiquiriqui',
             images: [
+              { src: '/Tampa/coffee-shops/quiquiirqui-1.png', alt: 'Cafe Quiquiriqui Tampa' },
+              { src: '/Tampa/coffee-shops/quiquiirqui-2.png', alt: 'Cafe Quiquiriqui interior' },
               {
                 src: 'https://hotelhaya.com/wp-content/uploads/2020/10/364A7469.Z_5-scaled-640x0-c-default.jpg',
                 alt: 'Cafe Quiquiriqui outdoor seating at Hotel Haya in Ybor City',
