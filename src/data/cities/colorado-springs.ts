@@ -556,10 +556,8 @@ export const colorado_springs: CityData = {
             description:
               'Nine railroad tunnels carved through granite cliffs in the 1890s for the "Short Line" connecting Colorado Springs to Cripple Creek gold mines. Three have collapsed, including the infamous Tunnel #3. Local legends speak of ghostly children and miners who died in construction accidents. The surviving tunnels offer eerie mountain drives.',
             images: [
-              {
-                src: '',
-                alt: 'Abandoned railroad tunnel entrance in mountain wilderness',
-              }
+              { src: '/colorado-springs/hidden-gems/tunnels-1.png', alt: 'Gold Camp Road tunnel entrance' },
+              { src: '/colorado-springs/hidden-gems/tunnels-2.png', alt: 'Inside Gold Camp Road tunnel' },
             ],
             address: 'Gold Camp Rd, Colorado Springs, CO 80906',
             coordinates: { lat: 38.7945, lng: -104.9156 },
@@ -575,10 +573,8 @@ export const colorado_springs: CityData = {
             description:
               'Tiny teepee-like houses (Gardiner Sanitary Tents) built for TB patients when one-third of Colorado Springs\' population had tuberculosis in the 1880s-1940s. These small canvas-and-wood structures offered open-air treatment. Now scattered throughout neighborhoods, repurposed as garden sheds, art studios, and bus stops. Most people don\'t recognize their significance.',
             images: [
-              {
-                src: '',
-                alt: 'Historic tuberculosis treatment tent structure',
-              }
+              { src: '/colorado-springs/hidden-gems/tb-huts-1.png', alt: 'Historic tuberculosis hut' },
+              { src: '/colorado-springs/hidden-gems/tb-huts-2.png', alt: 'Repurposed TB hut structure' },
             ],
             address: 'Scattered throughout Colorado Springs neighborhoods',
             coordinates: { lat: 38.8339, lng: -104.8214 },
@@ -594,10 +590,9 @@ export const colorado_springs: CityData = {
             description:
               'A 3,000-square-foot miniature city at 1:6 scale depicting gritty urban neighborhoods with 500+ hand-sculpted characters, working streetlights, holograms, and visual illusions. Created by vagabond artist Michael Garman over decades. Includes a tiny movie theater playing Casablanca. Interactive scavenger hunt reveals hidden details.',
             images: [
-              {
-                src: '',
-                alt: 'Detailed miniature city with tiny buildings and characters',
-              }
+              { src: '/colorado-springs/hidden-gems/magic-town-1.png', alt: 'Magic Town miniature city' },
+              { src: '/colorado-springs/hidden-gems/magic-town-2.png', alt: 'Detailed miniature street scene' },
+              { src: '/colorado-springs/hidden-gems/magic-town-3.png', alt: 'Magic Town characters and buildings' },
             ],
             address: '2418 W Colorado Ave, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8385, lng: -104.8554 },
@@ -606,25 +601,23 @@ export const colorado_springs: CityData = {
             website: 'https://michaelgarman.com/',
             tip: 'Look for the tiny working movie theater — it actually plays films.',
           },
-          {
-            id: 'gem-mwa-sanatorium',
-            type: 'hidden-gem',
-            name: 'MWA Tuberculosis Sanatorium Ruins',
-            category: 'Abandoned Medical Site',
-            description:
-              'Ruins of the Modern Woodmen of America Sanatorium (1909-1947), once internationally recognized as one of the most restorative TB healing centers. Located in the shadow of Blodgett Peak, it served 12,000 patients when Colorado Springs was known as the "World\'s Sanatorium." Foundation remnants and stone walls remain.',
-            images: [
-              {
-                src: '',
-                alt: 'Stone ruins of abandoned tuberculosis sanatorium',
-              }
-            ],
-            address: 'Near Cheyenne Mountain Zoo access roads',
-            coordinates: { lat: 38.7712, lng: -104.8512 },
-            hours: 'Viewable from public areas only',
-            price: 'Free',
-            tip: 'Access is limited — respect private property boundaries.',
-          },
+          /*
+           * ARCHIVED - Inaccurate "ruins" description; site is now Mount St. Francis nursing facility
+           * TB huts entry already covers the more interesting scattered remnants
+           *
+           * MWA Tuberculosis Sanatorium (1909-1947)
+           * - Modern Woodmen of America Sanatorium, 9 miles NW of Colorado Springs
+           * - Largest of 17 sanatoriums in Pikes Peak region
+           * - 1000-acre campus with ~200 octagonal Gardiner tent cottages
+           * - Served 12,000 patients when city was known as "World's Sanatorium"
+           * - Now Mount St. Francis, operated by Sisters of St. Francis (skilled nursing)
+           * - Covered sleeping porches on hospital building still visible
+           *
+           * Sources:
+           * - https://www.cspm.org/wp-content/uploads/2020/06/ON-A-COUGH-AND-A-PRAYER.pdf
+           * - https://gazette.com/news/a-healing-past-tuberculosis-sanitoriums-were-springs-1st-major-economic-driver/
+           * - https://digitalcollections.ppld.org/nodes/view/88077
+           */
           {
             id: 'gem-starr-kempf-sculptures',
             type: 'hidden-gem',
@@ -633,10 +626,7 @@ export const colorado_springs: CityData = {
             description:
               'Elaborate steel wind sculptures (30-50 feet tall) created by artist Starr Kempf (1917-1995) in his residential front yard. Some power spotlights, one triggers music. Bird and weather vane forms spin with mountain winds. Three sculptures moved to Creekwalk park. Requires insider knowledge to find.',
             images: [
-              {
-                src: '',
-                alt: 'Large kinetic wind sculpture spinning against sky',
-              }
+              { src: '/colorado-springs/hidden-gems/kinetic.png', alt: 'Starr Kempf kinetic wind sculpture' },
             ],
             address: '2057 Pine Grove Ave, Colorado Springs, CO 80906',
             coordinates: { lat: 38.8156, lng: -104.8489 },
@@ -652,10 +642,9 @@ export const colorado_springs: CityData = {
             description:
               'Colorado\'s oldest aviation museum housed in 1928-1941 historic airfield structures on the National Register. Focuses on Air Defense Command and Space Force history. Located on Peterson Space Force Base — requires advance reservation minimum 1 day prior. Strict civilian access procedures. Open only Wed-Fri 10am-3pm.',
             images: [
-              {
-                src: '',
-                alt: 'Historic military aircraft on display',
-              }
+              { src: '/colorado-springs/hidden-gems/air-space-1.png', alt: 'Peterson Air & Space Museum aircraft' },
+              { src: '/colorado-springs/hidden-gems/air-space-2.png', alt: 'Historic military aircraft display' },
+              { src: '/colorado-springs/hidden-gems/air-space-3.png', alt: 'Museum aviation exhibits' },
             ],
             address: '150 E Ent Ave, Peterson SFB, CO 80914',
             coordinates: { lat: 38.8125, lng: -104.7009 },
@@ -672,18 +661,9 @@ export const colorado_springs: CityData = {
             description:
               '750 acres of colorful hoodoos, spires, and selenite clay formations in whites, golds, reds, and purples. Iron oxide-colored clay deposits were used by Native Americans to create paint. 45 minutes east of Colorado Springs in rural El Paso County. Even lifelong Colorado natives haven\'t heard of it. No climbing allowed to protect formations.',
             images: [
-              {
-                src: 'https://www.paintmines.org/uploads/paint-mines-hoodoos-sunset-purple.jpg',
-                alt: 'Colorful clay hoodoos and spires glowing purple and orange at sunset at Paint Mines',
-              },
-              {
-                src: 'https://www.elpasoco.com/wp-content/uploads/Paint-Mines-Spires-Close-Up.jpg',
-                alt: 'Close-up of layered clay formations showing bands of white, pink, and purple',
-              },
-              {
-                src: '',
-                alt: 'Hiking trail winding through Paint Mines badlands landscape',
-              }
+              { src: '/colorado-springs/hidden-gems/paint-mines-1.png', alt: 'Paint Mines colorful hoodoos' },
+              { src: '/colorado-springs/hidden-gems/paint-mines-2.png', alt: 'Paint Mines clay formations' },
+              { src: '/colorado-springs/hidden-gems/paint-mines-3.png', alt: 'Paint Mines landscape' },
             ],
             address: '29950 Paint Mine Rd, Calhan, CO 80808',
             coordinates: { lat: 39.0042, lng: -104.4825 },
@@ -700,10 +680,10 @@ export const colorado_springs: CityData = {
             description:
               'World-class bug museum with nearly 8,000 exotic insect specimens from James May\'s collection. Giant roadside beetle marks the location. Housed in what looks like an RV park, it belies its world-class quality with kitschy exterior. Features rare specimens from around the globe including massive tropical beetles and butterflies.',
             images: [
-              {
-                src: '',
-                alt: 'Display cases with mounted insect specimens',
-              }
+              { src: '/colorado-springs/hidden-gems/bugs-1.png', alt: 'May Natural History Museum insect display' },
+              { src: '/colorado-springs/hidden-gems/bugs-2.png', alt: 'Exotic insect specimens' },
+              { src: '/colorado-springs/hidden-gems/bugs-3.png', alt: 'Giant beetle collection' },
+              { src: '/colorado-springs/hidden-gems/bugs-4.png', alt: 'Tropical butterfly specimens' },
             ],
             address: '710 Rock Creek Canyon Rd, Colorado Springs, CO 80926',
             coordinates: { lat: 38.7234, lng: -104.8712 },
@@ -712,26 +692,7 @@ export const colorado_springs: CityData = {
             website: 'https://coloradobugs.org/',
             tip: 'Don\'t judge by the exterior — the collection inside is world-class.',
           },
-          {
-            id: 'gem-rabbit-hole',
-            type: 'hidden-gem',
-            name: 'The Rabbit Hole',
-            category: 'Underground Speakeasy',
-            description:
-              'Underground speakeasy in downtown Colorado Springs with mysterious, whimsical Alice in Wonderland atmosphere. Creative New American dishes served in intimate below-street setting. Requires insider knowledge to find the entrance. Dim lighting, craft cocktails, and quirky décor create immersive experience.',
-            images: [
-              {
-                src: '',
-                alt: 'Dimly lit underground bar with vintage décor',
-              }
-            ],
-            address: '113 E Pikes Peak Ave, Colorado Springs, CO 80903',
-            coordinates: { lat: 38.8339, lng: -104.8214 },
-            hours: 'Tue-Sat 5pm-12am',
-            price: '$$-$$$',
-            website: 'https://www.rabbitholebar.com/',
-            tip: 'Look for the subtle entrance — it\'s intentionally hard to find.',
-          },
+          /* The Rabbit Hole - MOVED to bars section */
           {
             id: 'gem-simpich-dolls',
             type: 'hidden-gem',
@@ -740,10 +701,10 @@ export const colorado_springs: CityData = {
             description:
               'Nearly 500 handmade character dolls and marionettes created by Jan and Bob Simpich from 1953-2007. Delicate carolers and Santa figures showcase craftsmanship. Closed in 2021 after 70 years, reopened online 2024. Must call 719-465-2492 for appointments. Housed in historic Old Colorado City building.',
             images: [
-              {
-                src: '',
-                alt: 'Handmade vintage dolls on display',
-              }
+              { src: '/colorado-springs/hidden-gems/doll-museum-1.png', alt: 'Simpich character dolls' },
+              { src: '/colorado-springs/hidden-gems/doll-museum-2.png', alt: 'Handmade caroler dolls' },
+              { src: '/colorado-springs/hidden-gems/doll-museum-3.png', alt: 'Vintage marionettes' },
+              { src: '/colorado-springs/hidden-gems/doll-museum-4.png', alt: 'Santa figure collection' },
             ],
             address: '2413 W Colorado Ave, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8385, lng: -104.8545 },
@@ -760,16 +721,8 @@ export const colorado_springs: CityData = {
             description:
               '1895 Victorian castle with 40+ rooms, secret staircases, and hidden doors. Eclectic mix of French Gothic, Byzantine, and Tudor architecture. Labyrinthine layout with intentional secret spaces designed by priest Jean Baptiste Francolon. Reportedly haunted. Queen\'s Parlour Tea Room operates in former greenhouse.',
             images: [
-              {
-                src: 'https://miramontcastle.org/wp-content/uploads/Miramont-Castle-Exterior-Front.jpg',
-                alt: 'Miramont Castle exterior showing eclectic mix of architectural styles',
-                caption: 'Nine architectural styles in one building',
-              },
-              {
-                src: '',
-                alt: 'Grand staircase inside Miramont Castle with ornate woodwork',
-                caption: 'Victorian grandeur inside the castle',
-              }
+              { src: '/colorado-springs/hidden-gems/miramont-1.png', alt: 'Miramont Castle exterior' },
+              { src: '/colorado-springs/hidden-gems/miramont-2.png', alt: 'Miramont Castle interior' },
             ],
             address: '9 Capitol Hill Ave, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8549, lng: -104.9147 },
@@ -786,35 +739,16 @@ export const colorado_springs: CityData = {
             description:
               '1908 building with 5,000+ tile and terra cotta components — one of the most important tile installations in the United States. Original Van Briggle pottery factory operated 1908-1968. Now houses Colorado College Facilities Services. Pottery festival tours available. Features Art Nouveau designs in distinctive matte glazes.',
             images: [
-              {
-                src: '',
-                alt: 'Historic pottery building with decorative tilework',
-              }
+              { src: '/colorado-springs/hidden-gems/pottery-1.png', alt: 'Van Briggle Pottery building exterior' },
+              { src: '/colorado-springs/hidden-gems/pottery-2.png', alt: 'Decorative tile details' },
+              { src: '/colorado-springs/hidden-gems/pottey-3.png', alt: 'Art Nouveau tilework' },
+              { src: '/colorado-springs/hidden-gems/pottery-4.png', alt: 'Terra cotta ornamentation' },
             ],
             address: '600 S 21st St, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8201, lng: -104.8089 },
             hours: 'Exterior viewable anytime; interior tours during pottery festival',
             price: 'Free',
             tip: 'Visit during the annual Colorado Springs Pottery Festival for interior access.',
-          },
-          {
-            id: 'gem-crystal-park',
-            type: 'hidden-gem',
-            name: 'Crystal Park Quartz Collecting Area',
-            category: 'Mineral Collecting',
-            description:
-              '2,000-acre gated mountain community above Manitou Springs named for quartz and gemstone crystals. Miarolitic cavities in pegmatites contain amazonite, smoky quartz, and fluorite. One of Colorado\'s oldest collecting localities. Private gated community with toll road access — collection only allowed on National Forest land outside gates.',
-            images: [
-              {
-                src: '',
-                alt: 'Clear quartz crystals and minerals in rock matrix',
-              }
-            ],
-            address: 'Crystal Park Rd, Manitou Springs, CO 80829',
-            coordinates: { lat: 38.8756, lng: -105.0234 },
-            hours: 'Dawn-dusk (National Forest areas only)',
-            price: 'Toll road fee applies',
-            tip: 'Bring rock hammer and collect only from designated National Forest areas.',
           },
           {
             id: 'gem-rock-ledge-ranch',
@@ -824,10 +758,9 @@ export const colorado_springs: CityData = {
             description:
               'National Register site depicting four time periods: 1775 American Indian camp, 1860s homestead, 1880s ranch, and 1907 Edwardian estate. "Half-hidden among evergreens" adjacent to Garden of the Gods, most visitors miss it entirely. Living history interpreters demonstrate period-appropriate activities. Donated by General William Jackson Palmer.',
             images: [
-              {
-                src: '',
-                alt: 'Historic ranch buildings with mountain backdrop',
-              }
+              { src: '/colorado-springs/hidden-gems/rock-ledge-1.png', alt: 'Rock Ledge Ranch historic buildings' },
+              { src: '/colorado-springs/hidden-gems/rock-ledge-2.png', alt: 'Living history demonstration' },
+              { src: '/colorado-springs/hidden-gems/rock-ledge-3.png', alt: 'Edwardian estate grounds' },
             ],
             address: '3105 Gateway Rd, Colorado Springs, CO 80904',
             coordinates: { lat: 38.8845, lng: -104.8934 },
@@ -836,25 +769,24 @@ export const colorado_springs: CityData = {
             website: 'https://rockledgeranch.com/',
             tip: 'Visit during living history events for the full experience.',
           },
-          {
-            id: 'gem-el-paso-club-dragon',
-            type: 'hidden-gem',
-            name: 'El Paso Club Dragon Finial',
-            category: 'Architectural Oddity',
-            description:
-              'Queen Anne mansion (1883) with scaly mythological dragon\'s tail pointing skyward from the roofline. Oldest private club west of Mississippi. Architectural detail most people never notice. Dragon signifies "determination to guard the male sanctum" of this historic gentlemen\'s club. Still operates as private club today.',
-            images: [
-              {
-                src: '',
-                alt: 'Historic Victorian mansion with ornate architecture',
-              }
-            ],
-            address: '20 N Cascade Ave, Colorado Springs, CO 80903',
-            coordinates: { lat: 38.8356, lng: -104.8245 },
-            hours: 'Private club — exterior viewing only',
-            price: 'Free (exterior viewing)',
-            tip: 'Look up at the roofline on the east side to spot the dragon tail.',
-          },
+          /*
+           * REMOVED - Not compelling enough as standalone hidden gem
+           * Research preserved for potential future use:
+           *
+           * El Paso Club Dragon Finial (30 E. Platte Ave)
+           * - Queen Anne mansion built 1883 for James Hutchison Kerr (Colorado College professor)
+           * - Dragon finial made by Hassell Iron Works, sits atop corner tower
+           * - El Paso Club is 2nd oldest private men's club west of Chicago (est. 1877)
+           * - Club purchased the Kerr mansion in 1890
+           * - Two finial experts (Colorado College & Princeton) concluded dragon design
+           *   "signifies the determination of the dragon to guard the male sanctum"
+           * - Building additions/renovations by architect Thomas MacLaren in 1909
+           *
+           * Sources:
+           * - https://sah-archipedia.org/buildings/CO-01-EP18
+           * - https://gazette.com/life/unusual-gems-lurk-in-colorado-springs-architectural-landscape/
+           * - https://www.elpasoclub.com/history
+           */
           {
             id: 'gem-penny-arcade',
             type: 'hidden-gem',
@@ -863,16 +795,10 @@ export const colorado_springs: CityData = {
             description:
               '500+ antique arcade machines and kiddie rides across multiple buildings. Games from the 1930s played at original prices — literally pennies. Established 1933. Some machines over 100 years old. Fortune tellers, horse races, strength testers, and mutoscopes. Family-owned and operated for nearly a century.',
             images: [
-              {
-                src: 'https://pennyarcadecamparkfun.com/wp-content/uploads/Penny-Arcade-Interior-Vintage-Games.jpg',
-                alt: 'Interior of Penny Arcade with vintage games and wooden floors',
-                caption: 'A time capsule from 1932',
-              },
-              {
-                src: '',
-                alt: 'Vintage fortune-telling machine at Penny Arcade',
-                caption: 'Antique fortune tellers in glass cases',
-              }
+              { src: '/colorado-springs/hidden-gems/pennyarcade-1.png', alt: 'Penny Arcade vintage games' },
+              { src: '/colorado-springs/hidden-gems/pennyarcade-2.png', alt: 'Antique arcade machines' },
+              { src: '/colorado-springs/hidden-gems/pennyarcade-3.png', alt: 'Fortune telling machine' },
+              { src: '/colorado-springs/hidden-gems/pennyarcade-4.png', alt: 'Historic kiddie rides' },
             ],
             address: '930 Manitou Ave, Manitou Springs, CO 80829',
             coordinates: { lat: 38.8573, lng: -104.9119 },
@@ -890,45 +816,38 @@ export const colorado_springs: CityData = {
         title: 'Springs After Hours',
         intro: 'Colorado Springs has a reputation for megachurches and military bases, but the bar scene tells a different story. Craft breweries thriving in Manitou Springs, downtown cocktail spots that would fit in Denver, and dive bars where airmen and artists share space. The evangelical reputation is real—but so is the thirst.',
         spots: [
+          /*
+           * ARCHIVED - Closed December 29, 2024
+           *
+           * Oskar Blues Grill & Brew
+           * - 118 N Tejon St, Colorado Springs, CO 80903
+           * - Opened October 2017, replacing Old Chicago (which was there 33 years)
+           * - Invented canned craft beer movement in 2002
+           * - Closed due to post-COVID hospitality challenges and downtown construction
+           *
+           * Sources:
+           * - https://gazette.com/2025/12/30/oskar-blues-closes-in-downtown-colorado-springs/
+           * - https://www.fox21news.com/news/oskar-blues-grill-brew-closed-as-of-dec-29/
+           */
+          /*
+           * REMOVED - Wrong city (Dive Inn is in Denver, not Colorado Springs)
+           * Dive Inn is at 1380 S Broadway, Denver, CO 80210
+           */
           {
-            name: 'Oskar Blues Grill & Brew',
+            name: 'The Rabbit Hole',
             neighborhood: 'Downtown',
-            vibe: 'Craft brewery that started the canned craft beer movement. Lively taproom with Southern-inspired food, live music, and serious beer credentials.',
-            order: 'Dale\'s Pale Ale — the original canned craft beer that changed the industry.',
-            why: 'Oskar Blues literally invented the craft beer in a can movement in 2002, proving quality beer didn\'t need bottles. Their Colorado Springs location brings the same energy and innovation that started in Lyons. The Dale\'s Pale Ale you\'re drinking here revolutionized an entire industry.',
-            address: '118 N Tejon St, Colorado Springs, CO 80903',
-            coordinates: { lat: 38.8349, lng: -104.8247 },
-            hours: 'Daily 11am-10pm',
-            price: '$$',
-            website: 'https://www.oskarblues.com/visit/colorado-springs/',
-            instagram: '@oskarbluescos',
+            vibe: 'Underground speakeasy with whimsical Alice in Wonderland atmosphere. Creative New American dishes served in intimate below-street setting. Requires insider knowledge to find the entrance.',
+            order: 'Ask the bartender for their seasonal craft cocktail — the menu rotates with creativity.',
+            why: 'In a city not known for speakeasies, The Rabbit Hole delivers genuine underground mystique. Dim lighting, quirky décor, and craft cocktails create an immersive experience. The entrance requires insider knowledge, and once you descend, you\'re in a different world. It\'s the kind of place Colorado Springs shouldn\'t have but does.',
+            address: '113 E Pikes Peak Ave, Colorado Springs, CO 80903',
+            coordinates: { lat: 38.8339, lng: -104.8214 },
+            hours: 'Tue-Sat 4pm-midnight',
+            price: '$$$',
+            website: 'https://therabbitholecs.com/',
             images: [
-              {
-                src: 'https://www.oskarblues.com/wp-content/uploads/COS-Taproom-Interior.jpg',
-                alt: 'Oskar Blues Colorado Springs taproom interior',
-              },
-              {
-                src: 'https://www.oskarblues.com/wp-content/uploads/Dale.jpeg',
-                alt: "Dale's Pale Ale - the original canned craft beer",
-              }
-            ],
-          },
-          {
-            name: 'Dive Inn',
-            neighborhood: 'Downtown',
-            vibe: 'No pretense, no craft cocktails, no Edison bulbs — just a proper dive bar with cheap drinks, pool tables, and regulars who remember when this was the only kind of bar in town.',
-            order: 'PBR and a shot of well whiskey. You\'re not here for artisanal anything.',
-            why: 'In a city increasingly dominated by craft breweries and upscale cocktail lounges, Dive Inn is refreshingly, unapologetically unpretentious. Sticky floors, neon beer signs, a jukebox that still plays, and drinks priced like it\'s 1995. This is where service industry workers come after shift, where you can shoot pool without a crowd of tech bros watching, where nobody cares what you\'re wearing. It\'s the real thing — and in Colorado Springs\' evolving downtown, that\'s rarer than you\'d think.',
-            address: '211 E Colorado Ave, Colorado Springs, CO 80903',
-            coordinates: { lat: 38.8328, lng: -104.8209 },
-            hours: 'Daily 11am-2am',
-            price: '$',
-            images: [
-              {
-                src: '',
-                alt: 'Dive Inn interior with pool tables and neon beer signs',
-                caption: 'No pretense — just cheap drinks and pool',
-              }
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-1.png', alt: 'The Rabbit Hole speakeasy entrance' },
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-2.png', alt: 'Underground bar ambiance' },
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-3.png', alt: 'Whimsical speakeasy décor' },
             ],
           },
           {
