@@ -72,16 +72,8 @@ export const colorado_springs: CityData = {
             body: 'In 1899, Nikola Tesla chose Colorado Springs for the ultimate mad scientist playground: high altitude, dry air, and nobody to stop him from building an 80-foot lightning machine. His experimental station generated artificial lightning bolts reaching 135 feet—so powerful they fried the Colorado Springs Electric Company generator and plunged the entire city into darkness. The power company was not amused. Tesla claimed he received radio signals from Mars (probably just atmospheric static, but let him have this). His Colorado Springs notes, published posthumously, remain among the most enigmatic and borderline-incomprehensible documents in electrical engineering. The site where he nearly electrocuted himself daily? Now a parking lot at Foote Avenue and Kiowa Street, marked by a plaque that vastly undersells the chaos.',
             images: [
               {
-                src: 'https://teslasciencecenter.org/wp-content/uploads/2014/04/Tesla-Lab-Colorado-Springs.jpg',
-                alt: 'Nikola Tesla\'s experimental station in Colorado Springs with lightning coil',
-              },
-              {
-                src: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Tesla_colorado.jpg',
-                alt: 'Tesla sitting in his Colorado Springs laboratory with massive electrical discharge',
-              },
-              {
                 src: '/colorado-springs/curiosities/tesla-1.png',
-                alt: 'Interior of Tesla\'s Colorado Springs laboratory showing equipment',
+                alt: 'Nikola Tesla\'s experimental station in Colorado Springs',
               },
               {
                 src: '/colorado-springs/curiosities/tesla-2.png',
@@ -112,14 +104,6 @@ export const colorado_springs: CityData = {
             title: 'Garden of the Gods is free forever (by law)',
             body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission—not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires—all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
             images: [
-              {
-                src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Balanced-Rock.jpg',
-                alt: 'Balanced Rock formation at Garden of the Gods with Pikes Peak in background',
-              },
-              {
-                src: 'https://www.springsgov.com/files/ShareX/Parks/GardenoftheGods/Kissing-Camels-Formation.jpg',
-                alt: 'Kissing Camels rock formation at Garden of the Gods',
-              },
               {
                 src: '/colorado-springs/curiosities/garden-gods-1.png',
                 alt: 'Cathedral Spires at sunrise, Garden of the Gods',
@@ -208,20 +192,12 @@ export const colorado_springs: CityData = {
             body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design—17 aluminum-clad steel spires soaring 150 feet skyward—outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
             images: [
               {
-                src: 'https://www.usafa.edu/app/uploads/Cadet-Chapel-Exterior-2023.jpg',
-                alt: 'U.S. Air Force Academy Cadet Chapel with 17 aluminum spires against blue sky',
-              },
-              {
-                src: 'https://media.defense.gov/2019/May/16/2002134890/825/780/0/190516-F-ZZ999-1001.JPG',
-                alt: 'Interior of Air Force Academy Chapel showing dramatic stained glass',
-              },
-              {
                 src: '/colorado-springs/curiosities/chapel-1.png',
-                alt: 'Light streaming through stained glass at Air Force Academy Chapel',
+                alt: 'Air Force Academy Cadet Chapel with aluminum spires',
               },
               {
                 src: '/colorado-springs/curiosities/chapel-2.png',
-                alt: 'Air Force Academy Chapel architectural details',
+                alt: 'Interior of Air Force Academy Chapel with stained glass',
               }
             ],
             sources: [
@@ -319,14 +295,6 @@ export const colorado_springs: CityData = {
             body: 'On December 24, 1955, a Sears department store in Colorado Springs ran a newspaper ad inviting children to call Santa directly. But the phone number was misprinted—it connected to the Continental Air Defense Command (CONAD), NORAD\'s predecessor, at what\'s now Peterson Space Force Base. Colonel Harry Shoup, the officer on duty that night, was initially confused but quickly played along, checking his "radar" and giving children Santa\'s location. His staff continued answering calls all night. The tradition stuck. Today, NORAD Tracks Santa is a massive operation: over 1,500 volunteers answer calls, emails, and social media messages from more than 150 countries. The website receives millions of visitors every Christmas Eve. What started as a phone typo became one of the military\'s most beloved public relations traditions.',
             images: [
               {
-                src: 'https://www.noradsanta.org/storage/images/2022/norad-tracks-santa-operations-center.jpg',
-                alt: 'NORAD Tracks Santa operations center with volunteers answering phones',
-              },
-              {
-                src: 'https://media.defense.gov/2021/Dec/23/2002912458/825/780/0/211223-F-ZZ999-001.JPG',
-                alt: 'NORAD volunteers tracking Santa on Christmas Eve at Peterson Space Force Base',
-              },
-              {
                 src: '/colorado-springs/curiosities/santa-1.png',
                 alt: 'Original 1955 Sears newspaper ad with misprinted phone number that started NORAD Tracks Santa',
               },
@@ -416,16 +384,8 @@ export const colorado_springs: CityData = {
             body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (yes, of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure was beyond repair—it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. Every tie, rail, and switch was replaced. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that actually work at 14,000 feet. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles with grades up to 24%. The round-trip takes about 3 hours and costs more than your gym membership.',
             images: [
               {
-                src: 'https://www.cograilway.com/wp-content/uploads/2021/05/Pikes-Peak-Cog-Railway-Train-Summit.jpg',
-                alt: 'New Pikes Peak Cog Railway train at summit with panoramic windows',
-              },
-              {
-                src: 'https://www.thedenverchannel.com/homepage-showcase/pikes-peak-cog-railway-historic-photo-1891.jpg',
-                alt: 'Historic 1891 Pikes Peak Cog Railway original train',
-              },
-              {
                 src: '/colorado-springs/curiosities/cog.png',
-                alt: 'Interior of new Pikes Peak Cog Railway with large panoramic windows',
+                alt: 'Pikes Peak Cog Railway train with panoramic windows',
               }
             ],
             sources: [
