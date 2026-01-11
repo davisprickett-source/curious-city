@@ -122,6 +122,23 @@ const FRAME_COUNTS: Record<string, number> = {
   'anchorage-9': 107,
   'anchorage-10': 125,
   'anchorage-11': 125,
+  // Denver sequences
+  'denver-1': 78,
+  'denver-2': 60,
+  'denver-3': 58,
+  'denver-4': 120,
+  'denver-5': 78,
+  'denver-6': 61,
+  'denver-7': 78,
+  'denver-8': 78,
+  'denver-9': 78,
+  'denver-10': 78,
+  'denver-11': 78,
+  'denver-12': 27,
+  'denver-13': 68,
+  'denver-14': 78,
+  'denver-15': 120,
+  'denver-16': 78,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
@@ -181,7 +198,9 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'raleigh': 'raleigh',
       'portland': 'portland',
       'dallas': 'dallas',
-      'slc': 'salt-lake-city'
+      'slc': 'salt-lake-city',
+      'anchorage': 'anchorage',
+      'denver': 'denver'
     }
     const city = cityMap[cityPrefix] || cityPrefix
     // All sequences use underscore format: frame_0001.webp

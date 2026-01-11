@@ -83,6 +83,13 @@ export const bootleggersCove: Article = {
           content: 'Quality varied wildly. Some speakeasies served genuine imported whiskey, smuggled from Canada or the Lower 48 at considerable expense. Others served "hooch" — locally distilled moonshine that could range from drinkable to deadly. More than a few Anchorage residents went blind or died from badly made liquor. It was a risk drinkers accepted.',
         },
         {
+          type: 'image',
+          src: '/anchorage/articles/bootleggers-cove-still.jpg',
+          alt: 'Two men standing with a confiscated moonshine still during Prohibition, one holding up a bottle of liquor',
+          caption: 'A typical Prohibition-era still. Operations like this dotted the Alaskan wilderness, producing "hooch" of wildly varying quality — some drinkable, some deadly.',
+          credit: 'National Photo Company Collection / Library of Congress',
+        },
+        {
           type: 'callout',
           variant: 'info',
           title: 'The Numbers',
@@ -152,6 +159,13 @@ export const bootleggersCove: Article = {
         {
           type: 'paragraph',
           content: 'The bounty system worked, sort of. Stills were busted with some regularity. But new stills appeared as fast as old ones were destroyed. The demand was too strong, the profits too good, the enforcement too weak. The bounty system made Prohibition marginally more inconvenient for bootleggers, but it didn\'t make Anchorage dry.',
+        },
+        {
+          type: 'image',
+          src: '/anchorage/articles/bootleggers-cove-liquor-pour.jpg',
+          alt: 'New York City Deputy Police Commissioner watching agents pour confiscated liquor into a sewer during Prohibition',
+          caption: 'Agents pour confiscated liquor into the sewer during a Prohibition raid. Scenes like this played out across America — though in Alaska, enforcement was even more sporadic.',
+          credit: 'Library of Congress',
         },
         {
           type: 'callout',

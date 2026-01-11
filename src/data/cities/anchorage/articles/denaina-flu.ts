@@ -14,7 +14,7 @@ export const denainaFlu: Article = {
   featuredImage: {
     src: '/anchorage/articles/denaina-flu.png',
     alt: 'Historic photograph of Ship Creek tent city, Anchorage, 1915',
-    credit: 'Anchorage Museum',
+    credit: 'August Cohn Photograph Album / Library of Congress',
   },
   category: 'history',
   tags: ['anchorage', 'indigenous-history', 'denaina', '1918-flu', 'pandemic', 'colonization', 'forgotten-history'],
@@ -73,6 +73,13 @@ export const denainaFlu: Article = {
         {
           type: 'paragraph',
           content: 'Ship Creek was Dena\'ina territory. The creek itself was called Dgheyay Kaq\' in Dena\'ina — a fishing site used for generations. But the railroad needed the location, and nobody asked the Dena\'ina\'s permission. Workers began arriving in 1915. Within months, a tent city of 2,000 people had sprung up at the creek\'s mouth.',
+        },
+        {
+          type: 'image',
+          src: '/anchorage/articles/denaina-flu-tent-city.jpg',
+          alt: 'Aerial view of Ship Creek tent city from the hill on the north side, showing wooden Alaska Engineering Commission headquarters, June 1915',
+          caption: 'The tent city at Ship Creek, June 1915. Within months, thousands of workers arrived to build the railroad — on land the Dena\'ina had occupied for centuries.',
+          credit: 'August Cohn Photograph Album / Library of Congress',
         },
         {
           type: 'paragraph',

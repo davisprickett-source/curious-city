@@ -44,8 +44,22 @@ export const boggsBegich: Article = {
           content: 'Hale Boggs was a political giant. The Louisiana congressman had served in the House since 1947, rising to become Majority Leader — the second-ranking Democrat in Congress, behind only Speaker Carl Albert. He was a confidant of presidents, a master of legislative politics, and one of the most powerful men in Washington. He had served on the Warren Commission that investigated JFK\'s assassination.',
         },
         {
+          type: 'image',
+          src: '/anchorage/articles/boggs-begich-hale-boggs.jpg',
+          alt: 'Official congressional portrait of Hale Boggs, House Majority Leader from Louisiana',
+          caption: 'House Majority Leader Hale Boggs, circa 1957. At the time of his disappearance, he was the second-most powerful Democrat in America.',
+          credit: 'Collection of the U.S. House of Representatives',
+        },
+        {
           type: 'paragraph',
           content: 'Nick Begich was Alaska\'s rising star. Elected in 1970, the young Democrat had quickly made a name for himself as an advocate for Alaska Native rights and resource development. He was popular at home and respected in Washington. At 40 years old, he seemed destined for a long career. October 1972 found him running for re-election in a campaign he was expected to win easily.',
+        },
+        {
+          type: 'image',
+          src: '/anchorage/articles/boggs-begich-nick-begich.jpg',
+          alt: 'Official congressional portrait of Nick Begich, at-large Representative from Alaska',
+          caption: 'Congressman Nick Begich of Alaska, circa 1971. He was 40 years old when he vanished — and would win re-election posthumously.',
+          credit: 'Library of Congress',
         },
         {
           type: 'paragraph',

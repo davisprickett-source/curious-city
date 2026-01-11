@@ -1054,6 +1054,24 @@ export const chicago: CityData = {
             price: '$',
             website: 'https://emptybottle.com/',
             instagram: '@emptybottle',
+            images: [
+              {
+                src: '/chicago/bars/emptybottle-1.png',
+                alt: 'The Empty Bottle exterior',
+              },
+              {
+                src: '/chicago/bars/emptybottle-2.png',
+                alt: 'The Empty Bottle stage and sound system',
+              },
+              {
+                src: '/chicago/bars/emptybottle-3.png',
+                alt: 'The Empty Bottle bar interior',
+              },
+              {
+                src: '/chicago/bars/emptybottle-4.png',
+                alt: 'The Empty Bottle crowd at a show',
+              }
+            ],
           },
           {
             name: 'Old Town Ale House',
@@ -1066,6 +1084,20 @@ export const chicago: CityData = {
             hours: '12pm-4am Mon-Fri, 12pm-5am Sat, 12pm-4am Sun',
             price: '$',
             instagram: '@oldtownalehouse',
+            images: [
+              {
+                src: '/chicago/bars/oldtown-1.png',
+                alt: 'Old Town Ale House interior with paintings',
+              },
+              {
+                src: '/chicago/bars/oldtown-2.png',
+                alt: 'Old Town Ale House bar',
+              },
+              {
+                src: '/chicago/bars/oldtown-3.png',
+                alt: 'Old Town Ale House wall art',
+              }
+            ],
           },
           {
             name: 'Three Dots and a Dash',
@@ -1079,6 +1111,20 @@ export const chicago: CityData = {
             price: '$$$',
             website: 'https://threedotschicago.com/',
             instagram: '@threedotschicago',
+            images: [
+              {
+                src: '/chicago/bars/three-dots-1.png',
+                alt: 'Three Dots and a Dash tiki bar interior',
+              },
+              {
+                src: '/chicago/bars/three-dots-2.png',
+                alt: 'Three Dots and a Dash cocktails',
+              },
+              {
+                src: '/chicago/bars/three-dots-3.png',
+                alt: 'Three Dots and a Dash tropical decor',
+              }
+            ],
           },
           {
             name: 'Maria\'s Packaged Goods & Community Bar',
