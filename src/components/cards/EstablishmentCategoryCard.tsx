@@ -83,7 +83,7 @@ export function EstablishmentCategoryCard({ category, index = 0 }: Establishment
         delay: index * 0.08,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className="flex-none w-[340px] md:w-[400px]"
+      className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"
       style={{ scrollSnapAlign: 'start' }}
     >
       <Link
@@ -110,25 +110,20 @@ export function EstablishmentCategoryCard({ category, index = 0 }: Establishment
           </div>
 
           {/* Content */}
-          <div className="relative p-6 flex flex-col justify-end min-h-[280px]">
-            {/* Icon */}
-            <div className="mb-4 text-white/80">
-              {config.icon}
-            </div>
-
+          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[260px] md:min-h-[280px] xl:min-h-[300px]">
             {/* Title */}
-            <h3 className="text-2xl font-bold text-white mb-3">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
               {category.title}
             </h3>
 
             {/* Description */}
-            <p className="text-sm text-white/85 leading-relaxed">
+            <p className="text-sm md:text-base text-white/85 leading-relaxed">
               {config.description}
             </p>
 
             {/* View map link */}
             <div className="mt-4 flex items-center text-white/70 group-hover:text-white transition-colors">
-              <span className="text-sm font-medium">View map</span>
+              <span className="text-sm md:text-base font-medium">View map</span>
               <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

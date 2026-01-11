@@ -60,7 +60,7 @@ export default async function CityPage({ params }: CityPageProps) {
   ])
 
   return (
-    <>
+    <div className="city-page-wrapper">
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}
@@ -143,6 +143,6 @@ export default async function CityPage({ params }: CityPageProps) {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }

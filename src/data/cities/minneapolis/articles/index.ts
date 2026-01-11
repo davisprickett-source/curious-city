@@ -1,4 +1,8 @@
 import type { Article } from '@/types/article'
+import { bohemianFlats } from './bohemian-flats'
+import { gatewayDistrict } from './gateway-district'
+import { somaliMinneapolis } from './somali-minneapolis'
+import { washburnMill } from './washburn-mill'
 
 export const duckDuckGreyDuck: Article = {
   slug: 'duck-duck-grey-duck',
@@ -384,4 +388,4 @@ export const newRestaurantsNortheast: Article = {
   },
 }
 
-export const articles: Article[] = [duckDuckGreyDuck, newRestaurantsNortheast]
+export const articles: Article[] = [duckDuckGreyDuck, newRestaurantsNortheast, bohemianFlats, gatewayDistrict, washburnMill, somaliMinneapolis]

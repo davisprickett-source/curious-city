@@ -65,6 +65,8 @@ export const phoenix: CityData = {
           {
             id: 'phx-curiosity-1',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'legend',
             title: 'The Phoenix Lights remain unexplained',
             body: 'On March 13, 1997, at approximately 8:30 PM, thousands of Arizona residents witnessed something extraordinary: a massive V-shaped formation of lights moving silently across the sky from Henderson, Nevada, through Phoenix, and down to Tucson. The formation was huge—some described it as a mile wide, blocking out stars as it passed overhead. Witnesses included pilots, police officers, and then-Governor Fife Symington, who initially held a press conference mocking the reports (his chief of staff appeared in an alien costume). A decade later, Symington admitted he\'d seen it too and called it "otherworldly." The U.S. Air Force claimed the lights were flares dropped during a training exercise at the Barry Goldwater Range. But witnesses insist the flares explanation only accounts for a second set of lights seen later that night—not the massive V-shaped craft that flew overhead. Multiple videos and photos were captured. It remains one of the most witnessed and well-documented UFO events in history.',
@@ -1214,6 +1216,8 @@ export const phoenix: CityData = {
           {
             id: 'phx-dark-1',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 2,
             category: 'crime',
             year: '1931',
             title: 'The Trunk Murderess',
@@ -1289,6 +1293,8 @@ export const phoenix: CityData = {
           {
             id: 'phx-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'crime',
             year: '2005–2006',
             title: 'The Summer of Fear',
@@ -1357,6 +1363,8 @@ export const phoenix: CityData = {
           {
             id: 'phx-dark-3',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 4,
             category: 'haunting',
             year: '1928–present',
             title: 'The Ghosts of Hotel San Carlos',

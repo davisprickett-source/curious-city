@@ -75,8 +75,14 @@
 }
 
 @layer components {
+  /* Main content container - max 1280px */
   .container-page {
     @apply w-full max-w-7xl mx-auto px-6 md:px-8 xl:px-12;
+  }
+
+  /* City page wrapper - constrains entire layout on ultra-wide screens */
+  .city-page-wrapper {
+    @apply w-full max-w-[1600px] mx-auto;
   }
 
   .section-spacing {

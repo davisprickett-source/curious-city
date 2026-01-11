@@ -435,6 +435,8 @@ export const anchorage: CityData = {
           {
             id: 'gem-coldwar-1',
             type: 'hidden-gem',
+            featured: true,
+            featuredOrder: 4,
             name: 'Nike Site Summit',
             category: 'Cold War Relic',
             description: 'At the height of the Cold War, Anchorage sat directly in the crosshairs of Soviet bombers flying over the pole—so the U.S. Army built a ring of nuclear-armed missiles around the city. Nike Site Summit, perched atop Mount Gordon Lyon at 4,500 feet, was part of this "Ring of Steel" from 1959 to 1979. The missiles are long gone, but the concrete bunkers, launch pads, and control buildings remain frozen in time—one of the most complete Nike Hercules sites left in America. Tours (offered through Joint Base Elmendorf-Richardson) take you through barracks where soldiers waited for orders that never came, past empty silos that once held weapons capable of destroying formations of Soviet aircraft, and along ridges with views of the city those weapons were meant to protect. The site feels like a time capsule from an era when nuclear war felt inevitable and Anchorage was ground zero.',
@@ -457,6 +459,8 @@ export const anchorage: CityData = {
           {
             id: 'gem-cultural-1',
             type: 'hidden-gem',
+            featured: true,
+            featuredOrder: 5,
             name: 'Eklutna Spirit Houses Cemetery',
             category: 'Cultural Site',
             description: 'Twenty-five miles north of Anchorage, at the oldest continuously inhabited site in the region, over 100 brightly painted spirit houses stand among the birch trees—a tradition that exists nowhere else on Earth. When Russian Orthodox missionaries arrived in the 1800s, the Dena\'ina Athabascan people merged their burial practices with the new faith: bodies are buried with blankets in the Orthodox tradition, but 40 days later, families build small wooden spirit houses over the graves, painted in clan colors that identify family lines. Per Athabascan tradition, the houses are left to decay naturally—new wood standing next to weathered predecessors going back generations. The adjacent St. Nicholas Russian Orthodox Church, built in 1870, is the second-oldest building in Anchorage. This is sacred ground, still used for burials today, and visitors are welcome to witness a tradition that bridges centuries and cultures.',
@@ -1022,6 +1026,7 @@ export const anchorage: CityData = {
             address: '3230 Seward Hwy, Anchorage, AK 99503',
             coordinates: { lat: 61.1891, lng: -149.8764 },
             price: '$$$$',
+            tier: 'fine-dining',
             hours: 'Tue-Fri 11:30am-9pm, Sat 5pm-10pm, Closed Sun-Mon',
             website: 'https://www.kinleysrestaurant.com/',
             instagram: '@kinleysrestaurant',
@@ -1232,6 +1237,8 @@ export const anchorage: CityData = {
           {
             id: 'anc-dark-1',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 1,
             category: 'crime',
             year: '2001–2012',
             title: 'Israel Keyes: The Methodical Monster',
@@ -1293,6 +1300,8 @@ export const anchorage: CityData = {
           {
             id: 'anc-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 2,
             category: 'disaster',
             year: '1964',
             title: 'Good Friday Earthquake: When the Earth Ate Anchorage',
@@ -1356,6 +1365,8 @@ export const anchorage: CityData = {
           {
             id: 'anc-dark-3',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'crime',
             year: '1971–1983',
             title: 'Robert Hansen: The Baker Who Hunted Women',
@@ -1819,9 +1830,72 @@ export const anchorage: CityData = {
               stillExists: true,
             },
           },
+          {
+            id: 'anc-dark-12',
+            type: 'dark-history',
+            category: 'unsolved',
+            year: '2003',
+            title: 'The Torso Murders: Bodies Without Names',
+            body: 'In June 2003, an 11-year-old boy found a torso in the mud along Turnagain Arm—no head, no legs. It was Desiree Lekanoff, 22, Alaska Native, once a sex worker on Spenard. Three months later, another torso washed up: Michelle Rothe, 32. She\'d never even been reported missing. Both women had ties to Spenard\'s underworld. Investigators found connections to at least five other missing women. No one has ever been charged. No more torsos have appeared since 2003—suggesting the killer stopped, moved away, or learned to dispose of bodies differently.',
+            verdict: 'Completely unsolved. The connection to other missing women suggests a serial killer who was never caught. The case remains open.',
+            sources: [
+              {
+                type: 'article',
+                title: 'Alaska Underworld: Torso Cases Remain Unsolved',
+                publisher: 'Anchorage Daily News',
+                year: '2009',
+                url: 'https://www.adn.com/alaska-news/article/alaska-underworld-more-than-5-years-after-torsos-wash-anchorage-cases-remain-unsolved/2009/01/22/',
+              },
+              {
+                type: 'article',
+                title: 'The Dark Side of Anchorage: Unsolved Murders',
+                publisher: 'True Crime Diva',
+                url: 'https://truecrimediva.com/the-dark-side-of-anchorage-alaska-part-ii-unsolved-murders-1991-2003/',
+              },
+            ],
+            location: {
+              name: 'Turnagain Arm; Spenard',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'anc-dark-13',
+            type: 'dark-history',
+            category: 'forgotten',
+            year: '1950s',
+            title: 'The Burning of Rogers Park: When Integration Meant Arson',
+            body: 'In 1950s Anchorage, racial segregation was written directly into property deeds—restrictive covenants that prohibited sale to anyone who wasn\'t white, specifically excluding Black residents and Alaska Natives. When Alvin Campbell, a Black pioneer, purchased a home in the segregated Rogers Park neighborhood, he was met with racist taunts. Days before his family could move in, the house was burned to the ground. It wasn\'t an isolated incident—it was part of a pattern of violent resistance to integration that most Anchorage residents have never heard of.',
+            verdict: 'The arson was never solved. Thousands of Anchorage homes still have these illegal covenants on their deeds. The NAACP opened its first Alaska branch in 1951 partly in response.',
+            sources: [
+              {
+                type: 'article',
+                title: 'History of Racial Segregation in Alaska',
+                publisher: 'KTOO',
+                year: '2022',
+                url: 'https://www.ktoo.org/2022/02/20/history-of-racial-segregation-in-alaska/',
+              },
+              {
+                type: 'article',
+                title: 'Illegal for Decades, Many Anchorage Homes Still Have Covenants That Prohibit Sale to Blacks and Alaska Natives',
+                publisher: 'KTOO',
+                year: '2020',
+                url: 'https://www.ktoo.org/2020/03/05/illegal-for-decades-many-anchorage-homes-still-have-covenants-that-prohibit-sale-to-blacks-and-alaska-natives/',
+              },
+              {
+                type: 'exhibit',
+                title: 'Black Lives in Alaska: Journey, Justice, Joy',
+                publisher: 'Anchorage Museum',
+                url: 'https://www.anchoragemuseum.org/exhibits/black-lives-in-alaska-journey-justice-joy/',
+              },
+            ],
+            location: {
+              name: 'Rogers Park neighborhood',
+              stillExists: true,
+            },
+          },
         ],
       },
-    
+
       {
         id: 'anc-lost-and-loved',
         type: 'section',

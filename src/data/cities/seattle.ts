@@ -86,6 +86,8 @@ export const seattle: CityData = {
         {
           id: 'curiosity-3',
           type: 'curiosity',
+          featured: true,
+          featuredOrder: 2,
           category: 'culture',
           title: 'The Fremont Troll crushes a VW Bug under the Aurora Bridge',
           body: 'Under the north end of the Aurora Bridge in the Fremont neighborhood lurks an 18-foot concrete troll, clutching an actual Volkswagen Beetle in its massive clawed hand. The sculpture was created in 1990 as part of a competition to rehabilitate the space beneath the bridge, which had become a haven for drug dealers and criminal activity.\n\nArtists Steve Badanes, Will Martin, Donna Walter, and Ross Whitehead won the competition with their troll concept — a creature from Scandinavian folklore guarding its territory. The VW Bug contains a time capsule with a bust of Elvis. The one-eyed giant (the other eye is a hubcap) has become one of Seattle\'s most photographed landmarks.\n\nFremont\'s official motto is "De Libertas Quirkas" — the Freedom to be Peculiar — and the troll embodies that spirit. Locals have proposed building a companion "Bridge Ogre" on the south end, but so far the troll guards his underpass alone.',
@@ -368,6 +370,8 @@ export const seattle: CityData = {
             {
               id: 'gem-2',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 5,
               name: 'The Secret Stairways of Seattle',
               category: 'Urban Exploration',
               description: 'Seattle is built on steep hills, and the city has over 650 public stairways — many hidden in residential neighborhoods, cutting through forested ravines, or connecting streets that would otherwise require miles of detour. Some have been nicknamed: the "Counterbalance" stairs on Queen Anne, the "Ravenna" stairs descending into the park, the "Blaine" stairs with their garden terraces.',
@@ -829,6 +833,7 @@ export const seattle: CityData = {
           coordinates: { lat: 47.6432, lng: -122.3475 },
           hours: '5pm-9pm Mon-Sat',
           price: '$$$$',
+          tier: 'fine-dining',
           website: 'https://www.canlis.com',
           instagram: '@canlisrestaurant',
           images: [
@@ -902,6 +907,7 @@ export const seattle: CityData = {
           coordinates: { lat: 47.6244, lng: -122.3009 },
           hours: '4pm-9pm Tue-Fri, 2pm-9pm Sat',
           price: '$$$$',
+          tier: 'fine-dining',
           website: 'https://surrellseattle.com',
           instagram: '@surrellseattle',
           images: [
@@ -928,6 +934,8 @@ export const seattle: CityData = {
         {
           id: 'dark-1',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
           category: 'crime',
           year: '1983',
           title: 'The Wah Mee Massacre: Seattle\'s Deadliest Mass Murder',
@@ -988,6 +996,8 @@ export const seattle: CityData = {
         {
           id: 'dark-2',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 3,
           category: 'crime',
           year: '1974-1978',
           title: 'Ted Bundy Began His Killing Spree in Seattle',
@@ -1376,6 +1386,8 @@ export const seattle: CityData = {
         {
           id: 'lost-2',
           type: 'lost-and-loved',
+          featured: true,
+          featuredOrder: 4,
           category: 'music-venue',
           name: 'The Off Ramp',
           neighborhood: 'Eastlake',

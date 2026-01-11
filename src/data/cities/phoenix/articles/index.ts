@@ -1,4 +1,6 @@
 import type { Article } from '@/types/article'
+import { mysteryCastle } from './mystery-castle'
+import { winnieRuthJudd } from './winnie-ruth-judd'
 
 export const phoenixLights: Article = {
   slug: 'phoenix-lights',
@@ -198,4 +200,4 @@ export const phoenixLights: Article = {
   },
 }
 
-export const articles: Article[] = [phoenixLights]
+export const articles: Article[] = [phoenixLights, mysteryCastle, winnieRuthJudd]

@@ -65,6 +65,8 @@ export const denver: CityData = {
           {
             id: 'den-curiosity-1',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'legend',
             title: 'The demonic airport horse murdered its creator',
             body: '"Blucifer"—the 32-foot blue mustang with glowing red eyes at Denver International Airport—is legitimately cursed. In 2006, a piece of the sculpture fell on artist Luis Jiménez during construction, severing an artery in his leg and killing him. The horse was installed posthumously two years later. Locals have repeatedly petitioned to have it removed. The airport has repeatedly declined. Every arriving passenger is greeted by a hell-stallion that claimed its creator. Welcome to Denver.',
@@ -98,6 +100,8 @@ export const denver: CityData = {
           {
             id: 'den-curiosity-2',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'underground',
             title: 'A park covers thousands of forgotten corpses',
             body: 'Cheesman Park was once Mount Prospect Cemetery. When the city converted it to a park in 1893, contractors were paid $1.90 per body to relocate graves. They found a lucrative loophole: hack corpses into pieces to maximize the body count. An estimated 2,000 bodies were never moved—just paved over. Construction projects still occasionally unearth bones. Locals picnic directly above the dead. The park is lovely.',
@@ -936,6 +940,7 @@ export const denver: CityData = {
             address: '1801 California St, Denver, CO 80202',
             coordinates: { lat: 39.7478, lng: -104.9917 },
             price: '$$$$',
+            tier: 'fine-dining',
             hours: 'Mon 4pm-10pm, Tue-Thu 11am-2pm & 4pm-10pm, Fri-Sat 4pm-11pm, Sun 4pm-10pm',
             website: 'https://www.guardandgrace.com/',
             instagram: '@guardandgracesteakhouse',
@@ -971,6 +976,7 @@ export const denver: CityData = {
             address: '4058 Tejon St, Denver, CO 80211',
             coordinates: { lat: 39.7720, lng: -105.0139 },
             price: '$$$$',
+            tier: 'fine-dining',
             hours: 'Tue-Thu 5pm-8pm, Fri-Sun 5pm-8:30pm, closed Mon',
             website: 'https://www.thewolfstailor.com/',
             instagram: '@thewolfstailor',
@@ -1232,6 +1238,8 @@ export const denver: CityData = {
           {
             id: 'den-dark-1',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'disaster',
             year: '1864',
             title: 'The Sand Creek Massacre',
@@ -1287,6 +1295,8 @@ export const denver: CityData = {
           {
             id: 'den-dark-7',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 4,
             category: 'unsolved',
             year: '1970',
             title: 'The Lumber Baron Inn Murders',
@@ -1338,6 +1348,8 @@ export const denver: CityData = {
           {
             id: 'den-dark-13',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 5,
             category: 'crime',
             year: '1874',
             title: 'Alferd Packer: The Colorado Cannibal',

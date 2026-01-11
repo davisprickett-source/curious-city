@@ -370,6 +370,7 @@ export interface BestOfSpot {
   locations?: SpotLocation[]
   hours?: string
   price?: '$' | '$$' | '$$$' | '$$$$'
+  tier?: 'fine-dining' // For special occasion / high-end spots
   website?: string
   instagram?: string
   facebook?: string

@@ -98,6 +98,8 @@ export const fargo: CityData = {
           {
             id: 'far-curiosity-7',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'history',
             title: 'Bonnie and Clyde hid out here—and the cops walked right past them',
             body: 'In 1932, Bonnie Parker and Clyde Barrow spent several weeks holed up in a Fargo apartment, laying low after a string of robberies across the Midwest. They even posed for photos. Local police never recognized them. The apartment building still stands at 507 4th Street South, unmarked—the city has mixed feelings about celebrating outlaws who got away with it.',
@@ -115,6 +117,8 @@ export const fargo: CityData = {
           {
             id: 'far-curiosity-3',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'science',
             title: 'Fargo sits on the bed of a lake bigger than all five Great Lakes combined',
             body: 'That perfectly flat horizon? It\'s the silted floor of glacial Lake Agassiz, which covered 110,000 square miles 10,000 years ago—larger than Superior, Michigan, Huron, Erie, and Ontario put together. When the ice dam broke, it drained catastrophically into the ocean, possibly triggering a global cooling event. The flatness isn\'t boring. It\'s apocalyptic.',
@@ -977,6 +981,8 @@ export const fargo: CityData = {
           {
             id: 'far-dark-1',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'unsolved',
             year: '1978',
             title: 'William "Billy" Wolf Dismemberment',

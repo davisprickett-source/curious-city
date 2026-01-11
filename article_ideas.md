@@ -52,6 +52,12 @@
 - **H.H. Holmes Murder Castle**: America's first serial killer and the World's Fair
 - **The City That Raised Itself**: How Chicago lifted entire buildings to escape the swamp
 - **Lake Michigan's Pirate King**: James Strang's Mormon breakaway kingdom on Beaver Island
+- **The Iroquois Theater Fire**: December 30, 1903 - 602 deaths in 15 minutes, deadliest building fire in US history. More people died than in the Great Chicago Fire. A faulty asbestos fire curtain, locked exits, and no fire alarms. The disaster led to modern fire codes nationwide, yet almost no one remembers it. The building's site is now the Oriental Theatre.
+- **Maxwell Street Blues Market**: The open-air market where electric Chicago blues was born. Muddy Waters, Howlin' Wolf, Bo Diddley all played the streets. UIC demolished it for parking lots in the 1990s despite massive protests. The soul of Chicago blues paved over for cars.
+- **Chicago Pile-1: The Atomic Age Began Under a Squash Court**: On December 2, 1942, Enrico Fermi achieved the first controlled nuclear chain reaction beneath the abandoned football stands at Stagg Field. The atomic age literally began under a university sports facility. A Henry Moore sculpture marks the spot where humanity split the atom.
+- **The Max Headroom Broadcast Hijacking**: On November 22, 1987, someone in a Max Headroom mask hijacked WGN and PBS broadcasts. The signal intrusion lasted 90 seconds, featured bizarre spanking and gibberish. The FBI investigated for years. It remains the only unsolved broadcast signal intrusion in American history.
+- **Chicago Invented House Music**: The Warehouse (1977-1983) and DJ Frankie Knuckles created a genre. "House" literally means "from The Warehouse." This music spread globally, but Chicago rarely gets credit for birthing electronic dance music.
+- **Urban Renewal Displaced More People Than the Great Fire**: Between 1948-1963, Chicago's "slum clearance" demolished neighborhoods and displaced over 300,000 people - more than the Great Fire of 1871. Bronzeville, Maxwell Street, and other communities were erased for highways and housing projects that often failed.
 
 ### Raleigh
 - **The Barcode Was Invented Here**: George Laurer and the UPC code that runs global capitalism
@@ -77,6 +83,12 @@
 - **The Shanghai Tunnels**: Myth vs. reality of kidnapping tunnels
 - **Powell's City of Books**: The world's largest independent bookstore that gives you a map
 - **Portland Invented Craft Beer**: Before "craft beer" was even a term
+- **Dr. Marie Equi: Portland's Lesbian Anarchist Doctor**: A radical physician who performed abortions, marched for women's suffrage, was beaten by cops, and imprisoned for sedition during WWI. She lived openly with her female partner in early 1900s Portland. One of the most remarkable forgotten figures in Oregon history.
+- **The Albina Displacement: Oregon's Largest Black Neighborhood Erased**: Over 1,100 Black-owned homes demolished between 1956-1973 for I-5, Memorial Coliseum, and Emanuel Hospital expansion. The deliberate destruction of Portland's Black community that never recovered. Albina was 80% Black in 1950; the same area is 25% Black today.
+- **Jantzen Beach: The Largest Amusement Park in America, Demolished**: In the 1920s-1960s, Jantzen Beach was the nation's largest amusement park at 123 acres - bigger than Coney Island. The Big Dipper roller coaster, the Jantzen Beach Carousel (now in Mall of America). Demolished in 1970 for a strip mall. The carousel was the only thing saved.
+- **The Portland Vice Scandal (1912-1913)**: A massive police crackdown on Portland's gay community led to mass arrests, public trials, and national headlines. The scandal directly contributed to Oregon's passage of eugenics laws. A dark chapter in LGBTQ+ history rarely discussed.
+- **Portland's 180+ Hidden Stairways**: Public staircases built into the West Hills in the early 1900s connecting neighborhoods before cars. Many are overgrown and forgotten. Locals have catalogued over 180 of them - a secret pedestrian network hiding in plain sight.
+- **Mill Ends Park: World's Smallest Park (Official)**: A 452-square-inch circle in a median strip, established in 1948 by journalist Dick Fagan as a "leprechaun colony." Officially recognized by Guinness as the world's smallest park. Contains a tiny swimming pool (added by mysterious pranksters) and occasionally hosts "world's smallest" events.
 
 ### Phoenix
 - **The Lost Dutchman's Gold Mine**: A legend that has killed dozens of searchers
@@ -84,6 +96,14 @@
 - **Hohokam Canals**: Modern Phoenix canals follow 1,000-year-old routes
 - **A City That Shouldn't Exist**: Phoenix as monument to air conditioning and stubbornness
 - **2023 Heat Deaths**: 645 people died - the reality of living in 110+ degree heat
+- **Winnie Ruth Judd: The Trunk Murderess**: In 1931, she killed two friends, dismembered one body, stuffed them in trunks, and took a train to LA. The nation was obsessed. She was sentenced to hang but declared insane. She escaped the asylum SEVEN TIMES - once living undetected for six years as a nanny in California. Died at 93 in 1998. Phoenix's most infamous crime story.
+- **Mystery Castle: A Father's Secret 18-Room Desert Castle**: Boyce Gulley disappeared from his wife and daughter in 1929 after a tuberculosis diagnosis. For 16 years he secretly built an 18-room castle from junk, car parts, and desert stone - with hidden treasure and notes for his daughter. She only discovered it after his death. She lived there until 2010. Now threatened with demolition.
+- **The Golden Gate Barrio: 6,000 Families Erased for an Airport**: From the 1970s-1990s, Phoenix demolished the Golden Gate neighborhood for Sky Harbor expansion. Nearly 6,000 families displaced. One of the few integrated neighborhoods in Phoenix, wiped out. The "progress" came at the cost of a historic minority community.
+- **Phoenix Demolished 97 of 175 Significant Black Historic Sites**: A 2004 survey identified 175 historically significant African American properties. Today, 97 are gone. Including the home and hospital of Dr. Winston Hackett, Arizona's first Black physician. Phoenix's Black history is being systematically erased.
+- **Don Bolles: The Journalist Killed by Car Bomb**: In 1976, investigative reporter Don Bolles was murdered by car bomb in a Phoenix hotel parking garage. He was exposing organized crime and corrupt land deals. His death sparked the "Arizona Project" - 38 journalists who came to finish his investigation. The story he died for.
+- **The Hohokam Vanishing**: A civilization of 40,000+ people who built 135+ miles of canals, thrived in the Salt River Valley for over 1,000 years, then mysteriously vanished around 1450 AD. Modern Phoenix uses the same canal routes they built. Nobody knows why they disappeared. Their name means "those who are gone."
+- **The Orpheum Theatre Ghost**: Built in 1929, this Spanish Baroque Revival theater is said to be haunted by a woman who committed suicide in the building. Staff report cold spots, flickering lights, and a woman in white. The theater was nearly demolished in the 1980s but saved by preservationists.
+- **The Superstition Mountains Death Toll**: The search for the Lost Dutchman's Gold has claimed dozens of lives. Adolf Ruth was found headless in 1931. Three hikers vanished in 2010. Bodies turn up in crevices. The Apache believed it was a gateway to the underworld. People still die looking for gold that may not exist.
 
 ### Anchorage
 - **Surfable Tidal Wave With Quicksand**: Turnagain Arm's deadly bore tide

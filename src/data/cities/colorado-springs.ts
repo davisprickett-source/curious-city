@@ -65,6 +65,8 @@ export const colorado_springs: CityData = {
           {
             id: 'cos-curiosity-1',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'science',
             title: 'Tesla made lightning. Then he blacked out the city.',
             body: 'In 1899, Nikola Tesla chose Colorado Springs for the ultimate mad scientist playground: high altitude, dry air, and nobody to stop him from building an 80-foot lightning machine. His experimental station generated artificial lightning bolts reaching 135 feet—so powerful they fried the Colorado Springs Electric Company generator and plunged the entire city into darkness. The power company was not amused. Tesla claimed he received radio signals from Mars (probably just atmospheric static, but let him have this). His Colorado Springs notes, published posthumously, remain among the most enigmatic and borderline-incomprehensible documents in electrical engineering. The site where he nearly electrocuted himself daily? Now a parking lot at Foote Avenue and Kiowa Street, marked by a plaque that vastly undersells the chaos.',
@@ -104,6 +106,8 @@ export const colorado_springs: CityData = {
           {
             id: 'cos-curiosity-14',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'nature',
             title: 'Garden of the Gods is free forever (by law)',
             body: 'In 1879, railroad magnate Charles Elliott Perkins purchased 480 acres of dramatic red rock formations for a summer home. He never built it. When Perkins died in 1909, his will gifted the land to Colorado Springs with one iron-clad condition: "It shall be open, forever, free to the public." The city accepted. Over the years, additional donations expanded it to 1,367 acres. True to Perkins\' wishes, Garden of the Gods has never charged admission—not for parking, not for trails, not for rock climbing. The red sandstone fins and towers are 300 million years old, originally deposited as sand dunes and beaches. When the Rocky Mountains thrust upward 65 million years ago, these ancient rocks tilted nearly vertical. Balanced Rock, Kissing Camels, Cathedral Spires—all free, forever. Over 6 million visitors a year walk through a park that exists because one man insisted beauty belongs to everyone.',
@@ -188,6 +192,8 @@ export const colorado_springs: CityData = {
           {
             id: 'cos-curiosity-9',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 3,
             category: 'science',
             title: 'Congress called this chapel "fighter jets nose-diving"',
             body: 'When architect Walter Netsch presented his design for the U.S. Air Force Academy Cadet Chapel in 1956, the reaction was explosive. The modernist design—17 aluminum-clad steel spires soaring 150 feet skyward—outraged traditionalists. Critics called it "a pile of broken glass," "fighter jets nose-diving into the ground," and worse. Members of Congress tried to block funding. Religious groups objected to its unconventional design. Netsch defended it as expressing "aspiration to the heavens" in a form befitting the Space Age. Construction proceeded despite protests, finishing in 1962 at a cost of $3.5 million. Inside, light streams through stained glass panels in the Protestant chapel, while Catholic, Jewish, Buddhist, and Muslim chapels occupy the lower levels. Today, it\'s a National Historic Landmark, one of the most photographed buildings in Colorado, and widely considered a masterpiece of modernist religious architecture. What Congress almost killed became the Academy\'s defining icon.',
@@ -227,6 +233,8 @@ export const colorado_springs: CityData = {
           {
             id: 'cos-curiosity-4',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 4,
             category: 'history',
             title: '"America the Beautiful" was written on muleback',
             body: 'On July 22, 1893, Wellesley College English professor Katharine Lee Bates rode a prairie wagon to the halfway house on Pikes Peak, then continued to the 14,115-foot summit on muleback. The ascent took hours through thin air and treacherous switchbacks. When she reached the top and saw the view—"purple mountain majesties" stretching west, "amber waves of grain" spreading east across the Great Plains—she was overwhelmed. She scribbled notes that evening in her Colorado Springs hotel room, which became the poem "America the Beautiful." Published in 1895 and set to music in 1910, it has been performed at presidential inaugurations, proposed as a replacement for the national anthem, and sung at countless patriotic events. Bates never imagined her mule ride would produce one of America\'s most beloved songs. She later revised it twice, but the imagery she saw from Pikes Peak remained.',

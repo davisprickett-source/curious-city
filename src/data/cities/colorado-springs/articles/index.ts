@@ -1,4 +1,6 @@
 import type { Article } from '@/types/article'
+import { axeMurders } from './axe-murders'
+import { tuberculosisCity } from './tuberculosis-city'
 
 export const teslaLab: Article = {
   slug: 'tesla-colorado-springs-lab',
@@ -179,4 +181,4 @@ export const teslaLab: Article = {
   },
 }
 
-export const articles: Article[] = [teslaLab]
+export const articles: Article[] = [teslaLab, tuberculosisCity, axeMurders]

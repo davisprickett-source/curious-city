@@ -449,6 +449,8 @@ export const salt_lake_city: CityData = {
           {
             id: 'gem-underground-1',
             type: 'hidden-gem',
+            featured: true,
+            featuredOrder: 1,
             name: 'Summum Pyramid - Modern Mummification',
             category: 'Unusual Religious Site',
             description: 'In a quiet Salt Lake neighborhood sits a 40-foot bronze-and-concrete pyramid that would look more at home in Giza than Utah—and inside, a religious movement practices the only modern mummification on Earth. Summum was founded in 1975 by Claude "Corky" Nowell, who claimed to have received teachings from advanced beings. When Corky died in 2008, his followers mummified him in a gold-covered bronze sarcophagus that now rests inside the pyramid. Over 1,500 people have arranged for their own future mummifications; more than 600 pets have already been preserved. The process takes 77 days and costs around $67,000 for humans. The building is legally zoned as a bonded winery—they produce "nectar publications" (ceremonial wine)—because Utah wouldn\'t approve a pyramid-shaped church. Tours are free, surreal, and available by appointment.',
@@ -1490,6 +1492,8 @@ export const salt_lake_city: CityData = {
           {
             id: 'slc-dark-1',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 2,
             category: 'crime',
             year: '1977',
             title: 'Gary Gilmore: "Let\'s Do It"',
@@ -1550,6 +1554,8 @@ export const salt_lake_city: CityData = {
           {
             id: 'slc-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'haunting',
             year: '1862–present',
             title: 'The Grave Robber of Antelope Island',
@@ -1714,6 +1720,8 @@ export const salt_lake_city: CityData = {
           {
             id: 'slc-dark-5',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 4,
             category: 'crime',
             year: '1857',
             title: 'The Mountain Meadows Massacre',
@@ -2185,6 +2193,8 @@ export const salt_lake_city: CityData = {
           {
             id: 'lost-5',
             type: 'lost-and-loved',
+            featured: true,
+            featuredOrder: 5,
             name: 'Saltair Resort',
             category: 'entertainment',
             neighborhood: 'Great Salt Lake',

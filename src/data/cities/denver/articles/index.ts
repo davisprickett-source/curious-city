@@ -1,4 +1,7 @@
 import type { Article } from '@/types/article'
+import { castlewoodDam } from './castlewood-dam'
+import { flight629 } from './flight-629'
+import { hopAlley } from './hop-alley'
 
 export const blucifer: Article = {
   slug: 'blucifer-demon-horse',
@@ -237,4 +240,4 @@ export const blucifer: Article = {
   },
 }
 
-export const articles: Article[] = [blucifer]
+export const articles: Article[] = [blucifer, hopAlley, castlewoodDam, flight629]

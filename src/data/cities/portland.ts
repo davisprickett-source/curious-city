@@ -447,6 +447,8 @@ export const portland: CityData = {
           {
             id: 'gem-underground-1',
             type: 'hidden-gem',
+            featured: true,
+            featuredOrder: 4,
             name: 'Kelly Butte Cold War Bunker',
             category: 'Underground',
             description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
@@ -1123,6 +1125,8 @@ export const portland: CityData = {
           {
             id: 'pdx-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 1,
             category: 'crime',
             year: '1850s–1940s',
             title: 'Portland Drugged Men Through Trapdoors and Sold Them to Sea Captains',
@@ -1182,6 +1186,8 @@ export const portland: CityData = {
           {
             id: 'pdx-dark-3',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 2,
             category: 'disaster',
             year: '1948',
             title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
@@ -1242,6 +1248,8 @@ export const portland: CityData = {
           {
             id: 'pdx-dark-7',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'haunting',
             year: '1905–present',
             title: 'The Bar Called "Bucket of Blood" Where Ghosts Order Drinks',

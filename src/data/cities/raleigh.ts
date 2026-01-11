@@ -86,6 +86,8 @@ export const raleigh: CityData = {
           {
             id: 'curiosity-1',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'underground',
             title: 'A Cold War bunker became Raleigh\'s legendary punk scene',
             body: 'Beneath what is now The Fresh Market in the Village District lies a sealed 20,000-square-foot bomb shelter that hosted The Ramones, Iggy Pop, The Police, Sonic Youth, Pat Benatar, Steve Martin, and George Carlin between 1971 and 1984. The entrance was designed to look like a New York City subway station — paintings of trains, the whole bit. David Sedaris, who spent his high school years in Raleigh, remembered thinking "This is what New York is like!" Thirty nightclubs, shops, and restaurants filled the complex before fire code violations shut it down in 1984. Now it\'s sealed. Your organic kale sits directly above where punk happened.',
@@ -166,6 +168,8 @@ export const raleigh: CityData = {
           {
             id: 'curiosity-2',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'underground',
             title: 'An entire river flows through downtown in a Victorian tunnel',
             body: 'The Pigeon House Branch — formerly Buffalo Branch — is a river that flows through downtown Raleigh via a century-old cobblestone tunnel system beneath West and Peace Streets. Built in the early 1900s to "tame" this "rambunctious" creek, the rectangular tunnel with support pillars feels like a mine shaft and takes 15 minutes to walk through. Most people have no idea this waterway exists beneath their feet. The stream will be resurrected in the new Smoky Hollow Park between 2025 and 2027.',
@@ -687,6 +691,8 @@ export const raleigh: CityData = {
           {
             id: 'gem-11',
             type: 'hidden-gem',
+            featured: true,
+            featuredOrder: 3,
             name: 'Cloud Chamber for the Trees and Sky',
             category: 'Quirky Architecture',
             description: 'British artist Chris Drury built this walk-in camera obscura in 2003 as a permanent installation in the NC Museum of Art\'s woodland park. From outside, it looks like something out of a fairy tale — a rustic stone and wood dome resembling a hobbit house or ancient cairn, nestled among the trees. But step inside, and the magic happens. Through a small aperture in the roof, natural light projects a live, inverted image of the surrounding forest canopy onto a white circular disk inside. Trees sway upside-down in real time. Clouds drift across the sky. Birds fly through the projection. It\'s an ancient technology — the same principle behind the first cameras — experienced in a meditative, almost spiritual way. The chamber is free, always open, and requires no electricity. Most museum visitors miss it entirely, preferring the indoor galleries. That\'s part of the charm. Featured on Atlas Obscura.',
@@ -980,6 +986,52 @@ export const raleigh: CityData = {
               {
                 src: '/raleigh/bars/ward-3.png',
                 alt: 'Watts & Ward bar',
+              },
+            ],
+          },
+          {
+            name: 'The Architect Bar & Social House',
+            neighborhood: 'Downtown',
+            vibe: 'Rooftop cocktails with the best skyline views in Raleigh. Actually good drinks, not just views.',
+            order: 'Whatever seasonal cocktail they\'re featuring. The bartenders are serious about their craft.',
+            why: 'Yes, it\'s a rooftop bar — but it\'s a rooftop bar where the cocktails are genuinely excellent, not afterthoughts. The space is gorgeous, the downtown views are the best you\'ll find, and the vibe manages to be upscale without being exclusive. Perfect for impressing visitors or reminding yourself that Raleigh has a skyline.',
+            address: '108 1/2 E Hargett St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7798, lng: -78.6378 },
+            hours: 'Mon-Wed 5pm-midnight, Thu-Sat 5pm-2am, Sun 5pm-midnight',
+            price: '$$$',
+            website: 'https://www.thearchitectbar.com/',
+            instagram: '@thearchitectbar',
+            images: [
+              {
+                src: '/raleigh/bars/architect-1.png',
+                alt: 'The Architect rooftop views',
+              },
+              {
+                src: '/raleigh/bars/architect-2.png',
+                alt: 'The Architect cocktails',
+              },
+            ],
+          },
+          {
+            name: 'The Haymaker',
+            neighborhood: 'Downtown',
+            vibe: 'Neighborhood dive with pool tables, cheap beer, and zero pretense. The anti-Glenwood.',
+            order: 'PBR tallboy, shot of whiskey. Maybe some wings. Keep it simple.',
+            why: 'Every city needs a good dive bar, and The Haymaker is Raleigh\'s. Pool tables in the back, cheap drinks, a crowd that\'s actually from here. It\'s the bar where service industry people go after their shifts, where nobody\'s trying to network, where you can shoot pool until 2am without anyone bothering you.',
+            address: '224 S Blount St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7762, lng: -78.6365 },
+            hours: '3pm-2am daily',
+            price: '$',
+            website: 'https://www.haymakerbar.com/',
+            instagram: '@thehaymakerbar',
+            images: [
+              {
+                src: '/raleigh/bars/haymaker-1.png',
+                alt: 'The Haymaker dive bar interior',
+              },
+              {
+                src: '/raleigh/bars/haymaker-2.png',
+                alt: 'The Haymaker pool tables',
               },
             ],
           },
@@ -1401,6 +1453,60 @@ export const raleigh: CityData = {
               {
                 src: '/raleigh/restaurants/oakwood-3.png',
                 alt: 'Oakwood Pizza Box counter service',
+              },
+            ],
+          },
+          {
+            name: 'Brewery Bhavana',
+            neighborhood: 'Downtown',
+            vibe: 'Part dim sum, part craft brewery, part bookstore, part flower shop. Somehow it all works.',
+            order: 'Dim sum — the siu mai, har gow, and char siu bao are excellent. Pair with one of their house-brewed beers.',
+            why: 'Brewery Bhavana shouldn\'t make sense. A dim sum restaurant that\'s also a brewery that\'s also an independent bookstore that\'s also a flower shop? But chef/owner Vansana Nolintha (from Bida Manda next door) made it work beautifully. The space is stunning — high ceilings, natural light, books everywhere. The dim sum rivals anything in bigger cities. The beers are thoughtfully crafted. And yes, you can buy orchids on your way out.',
+            address: '218 S Blount St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7772, lng: -78.6365 },
+            hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
+            price: '$$',
+            website: 'https://brewerybhavana.com/',
+            instagram: '@brewerybhavana',
+            images: [
+              {
+                src: '/raleigh/restaurants/bhavana-1.png',
+                alt: 'Brewery Bhavana dim sum',
+              },
+              {
+                src: '/raleigh/restaurants/bhavana-2.png',
+                alt: 'Brewery Bhavana interior with books',
+              },
+              {
+                src: '/raleigh/restaurants/bhavana-3.png',
+                alt: 'Brewery Bhavana craft beer and dim sum',
+              },
+            ],
+          },
+          {
+            name: 'Poole\'s Diner',
+            neighborhood: 'Downtown',
+            vibe: 'Chef Ashley Christensen\'s flagship — Southern comfort elevated, served under a vintage neon sign.',
+            order: 'The macaroni au gratin is legendary. Get it as a side or get it as a meal. Nobody will judge.',
+            why: 'Ashley Christensen won the 2019 James Beard Award for Outstanding Chef — the highest individual honor — and Poole\'s is where it started. The space is a lovingly restored 1940s diner, complete with original pie case and that iconic neon sign. The menu changes daily but always hits that sweet spot between Southern tradition and refined technique. The mac and cheese isn\'t just good — it\'s the dish that put Raleigh on the national food map.',
+            address: '426 S McDowell St, Raleigh, NC 27601',
+            coordinates: { lat: 35.7752, lng: -78.6358 },
+            hours: 'Wed-Sat 5:30pm-10pm, Sun 10:30am-2:30pm, Closed Mon-Tue',
+            price: '$$$',
+            website: 'https://ac-restaurants.com/pooles/',
+            instagram: '@poolesdiner',
+            images: [
+              {
+                src: '/raleigh/restaurants/pooles-1.png',
+                alt: 'Poole\'s Diner neon sign',
+              },
+              {
+                src: '/raleigh/restaurants/pooles-2.png',
+                alt: 'Poole\'s macaroni au gratin',
+              },
+              {
+                src: '/raleigh/restaurants/pooles-3.png',
+                alt: 'Poole\'s Diner interior',
               },
             ],
           },

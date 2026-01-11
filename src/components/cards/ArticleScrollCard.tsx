@@ -12,8 +12,8 @@ interface ArticleScrollCardProps {
 
 /**
  * Article card for horizontal scroll sections
- * - Larger card with prominent image
- * - Title and longer teaser
+ * - Full-bleed image background like establishment cards
+ * - Title and teaser with gradient overlay
  * - No badge pills
  */
 export function ArticleScrollCard({ article, index = 0 }: ArticleScrollCardProps) {
@@ -26,44 +26,51 @@ export function ArticleScrollCard({ article, index = 0 }: ArticleScrollCardProps
         delay: index * 0.08,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className="flex-none w-[340px] md:w-[400px]"
+      className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"
       style={{ scrollSnapAlign: 'start' }}
     >
       <Link
         href={article.href}
         className="block group h-full"
       >
-        <div className="relative bg-white rounded-xl border border-neutral-200 overflow-hidden h-full hover:border-accent-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-          {/* Image */}
-          <div className="relative aspect-[16/9] overflow-hidden bg-neutral-100">
+        <div className="relative h-full rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          {/* Background Image or Gradient */}
+          <div className="absolute inset-0">
             {article.thumbnail ? (
-              <Image
-                src={article.thumbnail}
-                alt={article.title}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="400px"
-              />
+              <>
+                <Image
+                  src={article.thumbnail}
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="400px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/50 to-neutral-900/30" />
+              </>
             ) : (
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
-                <span className="text-5xl font-bold text-white/20">
-                  {article.title.charAt(0)}
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600 to-orange-700" />
             )}
           </div>
 
           {/* Content */}
-          <div className="p-5">
+          <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[260px] md:min-h-[280px] xl:min-h-[300px]">
             {/* Title */}
-            <h3 className="text-lg font-semibold text-neutral-900 mb-2 line-clamp-2 group-hover:text-accent-600 transition-colors">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-3 line-clamp-2">
               {article.title}
             </h3>
 
             {/* Teaser */}
-            <p className="text-sm text-neutral-600 line-clamp-3 leading-relaxed">
+            <p className="text-sm md:text-base text-white/85 leading-relaxed line-clamp-3">
               {article.teaser}
             </p>
+
+            {/* Read link */}
+            <div className="mt-4 flex items-center text-white/70 group-hover:text-white transition-colors">
+              <span className="text-sm md:text-base font-medium">Read</span>
+              <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
           </div>
         </div>
       </Link>

@@ -13,6 +13,7 @@ interface FeaturedEntryCarouselProps {
 
 // Type badge colors
 const typeBadges: Record<FeaturedEntryType, { bg: string; text: string; label: string }> = {
+  article: { bg: 'bg-blue-100', text: 'text-blue-800', label: 'Article' },
   curiosity: { bg: 'bg-purple-100', text: 'text-purple-800', label: 'Curiosity' },
   'dark-history': { bg: 'bg-red-100', text: 'text-red-800', label: 'Dark History' },
   'hidden-gem': { bg: 'bg-emerald-100', text: 'text-emerald-800', label: 'Hidden Gem' },

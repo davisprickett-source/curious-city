@@ -24,7 +24,7 @@ import type { Article } from '@/types/article'
 // Types
 // ============================================
 
-export type FeaturedEntryType = 'curiosity' | 'dark-history' | 'hidden-gem' | 'lost-and-loved'
+export type FeaturedEntryType = 'curiosity' | 'dark-history' | 'hidden-gem' | 'lost-and-loved' | 'article'
 
 export interface FeaturedEntry {
   id: string
@@ -140,13 +140,53 @@ function findSection(
 
 /**
  * Get featured entries for the hero carousel
- * Returns all entries marked with featured: true, sorted by featuredOrder
+ * Returns history essays first, then entries marked with featured: true, sorted by featuredOrder
  */
 export async function getCityFeaturedEntries(citySlug: string): Promise<FeaturedEntry[]> {
   const city = await getCity(citySlug)
   if (!city) return []
 
-  const entries: FeaturedEntry[] = []
+  const articleEntries: FeaturedEntry[] = []
+  const listicleEntries: FeaturedEntry[] = []
+
+  // Get history essays first - they always appear at the start
+  const historyEssays = getHistoryForCity(citySlug)
+  const nonPremiumHistory = historyEssays.filter(h => !h.slug.endsWith('-premium'))
+
+  for (const essay of nonPremiumHistory) {
+    // Check for premium video version
+    const premiumSlug = `${essay.slug}-premium`
+    const premiumVersion = historyEssays.find(h => h.slug === premiumSlug)
+    const hasVideoSequences = premiumVersion?.blocks.some(b => b.type === 'video-sequence')
+    const targetEssay = (hasVideoSequences && premiumVersion) ? premiumVersion : essay
+
+    // Get thumbnail
+    let thumbnail: string | undefined
+    if (hasVideoSequences && targetEssay.blocks) {
+      const videoBlock = targetEssay.blocks.find(b => b.type === 'video-sequence')
+      if (videoBlock && videoBlock.type === 'video-sequence') {
+        const sequenceMatch = videoBlock.videoPath.match(/\/sequences\/([^\/]+)\/([^\/]+)$/)
+        if (sequenceMatch) {
+          thumbnail = `/sequences/${sequenceMatch[1]}/${sequenceMatch[2]}/frame_0001.jpg`
+        }
+      }
+    }
+    if (!thumbnail && targetEssay.heroImage?.src) {
+      thumbnail = targetEssay.heroImage.src
+    }
+
+    articleEntries.push({
+      id: essay.slug,
+      type: 'article',
+      citySlug: city.slug,
+      cityName: city.name,
+      title: targetEssay.title,
+      teaser: targetEssay.subtitle || `A deep dive into ${city.name}'s fascinating past`,
+      image: thumbnail ? { src: thumbnail, alt: targetEssay.title } : undefined,
+      href: `/${city.slug}/articles/${essay.slug}`,
+      featuredOrder: 0, // Articles always first
+    })
+  }
 
   // Collect all listicle items with featured: true
   const curiosities = findItemsByType<CuriosityContentItem>(city.content, 'curiosity')
@@ -157,7 +197,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   // Process curiosities
   for (const item of curiosities) {
     if (item.featured) {
-      entries.push({
+      listicleEntries.push({
         id: item.id,
         type: 'curiosity',
         citySlug: city.slug,
@@ -174,7 +214,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   // Process dark history
   for (const item of darkHistory) {
     if (item.featured) {
-      entries.push({
+      listicleEntries.push({
         id: item.id,
         type: 'dark-history',
         citySlug: city.slug,
@@ -191,7 +231,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   // Process hidden gems
   for (const item of hiddenGems) {
     if (item.featured) {
-      entries.push({
+      listicleEntries.push({
         id: item.id,
         type: 'hidden-gem',
         citySlug: city.slug,
@@ -208,7 +248,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   // Process lost & loved
   for (const item of lostAndLoved) {
     if (item.featured) {
-      entries.push({
+      listicleEntries.push({
         id: item.id,
         type: 'lost-and-loved',
         citySlug: city.slug,
@@ -222,8 +262,9 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
     }
   }
 
-  // Sort by featuredOrder
-  return entries.sort((a, b) => a.featuredOrder - b.featuredOrder)
+  // Sort listicle entries by featuredOrder, then combine with articles first
+  const sortedListicleEntries = listicleEntries.sort((a, b) => a.featuredOrder - b.featuredOrder)
+  return [...articleEntries, ...sortedListicleEntries]
 }
 
 /**
@@ -368,12 +409,14 @@ export async function getCityEstablishmentCategories(citySlug: string): Promise<
 
 /**
  * Get article summaries for the articles section
+ * History essays come first, then native articles, each sorted by date
  */
 export async function getCityArticleSummaries(citySlug: string): Promise<ArticleSummary[]> {
   const city = await getCity(citySlug)
   if (!city) return []
 
-  const articles: ArticleSummary[] = []
+  const historyArticles: ArticleSummary[] = []
+  const nativeArticles: ArticleSummary[] = []
 
   // Get history essays
   const historyEssays = getHistoryForCity(citySlug)
@@ -401,7 +444,7 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
       thumbnail = targetEssay.heroImage.src
     }
 
-    articles.push({
+    historyArticles.push({
       slug: essay.slug,
       citySlug: city.slug,
       title: targetEssay.title,
@@ -415,10 +458,10 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
   // Get native articles
   try {
     const articlesModule = await import(`@/data/cities/${citySlug}/articles`)
-    const nativeArticles: Article[] = articlesModule.default || articlesModule.articles || []
+    const articles: Article[] = articlesModule.default || articlesModule.articles || []
 
-    for (const article of nativeArticles) {
-      articles.push({
+    for (const article of articles) {
+      nativeArticles.push({
         slug: article.slug,
         citySlug: city.slug,
         title: article.title,
@@ -432,9 +475,15 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
     // City might not have native articles yet
   }
 
-  // Sort by publishedAt (most recent first)
-  return articles.sort((a, b) => {
+  // Sort each group by date (most recent first)
+  const sortByDate = (a: ArticleSummary, b: ArticleSummary) => {
     if (!a.publishedAt || !b.publishedAt) return 0
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  })
+  }
+
+  // Return history essays first, then native articles
+  return [
+    ...historyArticles.sort(sortByDate),
+    ...nativeArticles.sort(sortByDate),
+  ]
 }

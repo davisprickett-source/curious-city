@@ -1549,6 +1549,7 @@ export const chicago: CityData = {
             coordinates: { lat: 41.8855, lng: -87.6613 },
             hours: 'Wed-Sun, seatings at 5pm and 8pm',
             price: '$$$$',
+            tier: 'fine-dining',
             website: 'https://www.smythandtheloyalist.com',
             instagram: '@smythchicago',
             images: [
@@ -1775,6 +1776,8 @@ export const chicago: CityData = {
           {
             id: 'chi-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 1,
             category: 'crime',
             year: '1893-1896',
             title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
@@ -1848,6 +1851,8 @@ export const chicago: CityData = {
           {
             id: 'chi-dark-4',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 2,
             category: 'disaster',
             year: '1903',
             title: 'The "Fireproof" Theater That Killed 602 People',
@@ -1921,6 +1926,8 @@ export const chicago: CityData = {
           {
             id: 'chi-dark-5',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'crime',
             year: '1929',
             title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
@@ -2058,6 +2065,8 @@ export const chicago: CityData = {
           {
             id: 'chi-dark-7',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 4,
             category: 'disaster',
             year: '1958',
             title: 'Our Lady of the Angels: The School Fire That Changed America',

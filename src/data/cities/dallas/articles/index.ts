@@ -1,4 +1,7 @@
 import type { Article } from '@/types/article'
+import { southDallasBombings } from './south-dallas-bombings'
+import { freedmansCemetery } from './freedmans-cemetery'
+import { lakeCliffPark } from './lake-cliff-park'
 
 export const integratedCircuit: Article = {
   slug: 'integrated-circuit-invention',
@@ -209,4 +212,4 @@ export const integratedCircuit: Article = {
   },
 }
 
-export const articles: Article[] = [integratedCircuit]
+export const articles: Article[] = [integratedCircuit, southDallasBombings, freedmansCemetery, lakeCliffPark]

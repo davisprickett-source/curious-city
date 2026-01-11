@@ -1,4 +1,6 @@
 import type { Article } from '@/types/article'
+import { plumAlley } from './plum-alley'
+import { victimOfTheBeast } from './victim-of-the-beast'
 
 export const japanBalloonBombs: Article = {
   slug: 'japan-balloon-bombs-utah',
@@ -161,5 +163,5 @@ export const japanBalloonBombs: Article = {
   },
 }
 
-export const articles: Article[] = [japanBalloonBombs]
+export const articles: Article[] = [japanBalloonBombs, plumAlley, victimOfTheBeast]
 export default articles

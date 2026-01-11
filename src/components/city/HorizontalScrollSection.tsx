@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useEffect, useCallback, Children, cloneElement, isValidElement } from 'react'
 import Link from 'next/link'
 
 interface HorizontalScrollSectionProps {
@@ -16,10 +16,10 @@ interface HorizontalScrollSectionProps {
 }
 
 /**
- * Horizontal scroll section with native scroll behavior
+ * Infinite horizontal scroll section
  * - Section header with title and optional "View All" link
- * - Native horizontal scroll on all devices
- * - Edge fade indicators when content overflows
+ * - Infinite loop scrolling (wraps around seamlessly)
+ * - Edge fade indicators
  * - Scroll snap for card alignment
  */
 export function HorizontalScrollSection({
@@ -31,21 +31,54 @@ export function HorizontalScrollSection({
   className = '',
 }: HorizontalScrollSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(false)
+  const isResettingRef = useRef(false)
 
-  // Check scroll position for fade indicators
-  const checkScroll = () => {
+  // Convert children to array for duplication
+  const childArray = Children.toArray(children)
+  const itemCount = childArray.length
+
+  // Only enable infinite scroll if we have enough items
+  const enableInfinite = itemCount >= 3
+
+  // Check scroll position for infinite loop
+  const checkScroll = useCallback(() => {
     const el = scrollRef.current
-    if (!el) return
+    if (!el || isResettingRef.current) return
 
-    setCanScrollLeft(el.scrollLeft > 0)
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10)
-  }
+    if (!enableInfinite) return
+
+    const { scrollLeft, scrollWidth } = el
+
+    // Calculate the width of one set of items (approximate)
+    const oneSetWidth = scrollWidth / 3 // We have 3 copies
+
+    // If scrolled past the second set, jump back to first set
+    if (scrollLeft >= oneSetWidth * 2 - 50) {
+      isResettingRef.current = true
+      el.scrollLeft = scrollLeft - oneSetWidth
+      requestAnimationFrame(() => {
+        isResettingRef.current = false
+      })
+    }
+    // If scrolled before the first set, jump to second set
+    else if (scrollLeft <= 50) {
+      isResettingRef.current = true
+      el.scrollLeft = scrollLeft + oneSetWidth
+      requestAnimationFrame(() => {
+        isResettingRef.current = false
+      })
+    }
+  }, [enableInfinite])
 
   useEffect(() => {
     const el = scrollRef.current
     if (!el) return
+
+    // Start in the middle set for infinite scroll
+    if (enableInfinite) {
+      const oneSetWidth = el.scrollWidth / 3
+      el.scrollLeft = oneSetWidth
+    }
 
     checkScroll()
     el.addEventListener('scroll', checkScroll)
@@ -55,12 +88,51 @@ export function HorizontalScrollSection({
       el.removeEventListener('scroll', checkScroll)
       window.removeEventListener('resize', checkScroll)
     }
-  }, [])
+  }, [checkScroll, enableInfinite])
 
   // Re-check when children change
   useEffect(() => {
-    checkScroll()
-  }, [children])
+    const el = scrollRef.current
+    if (!el) return
+
+    if (enableInfinite) {
+      // Reset to middle position when children change
+      requestAnimationFrame(() => {
+        const oneSetWidth = el.scrollWidth / 3
+        el.scrollLeft = oneSetWidth
+        checkScroll()
+      })
+    } else {
+      checkScroll()
+    }
+  }, [children, enableInfinite, checkScroll])
+
+  // Clone children with unique keys for infinite scroll
+  const renderItems = () => {
+    if (!enableInfinite) {
+      return childArray
+    }
+
+    // Create 3 copies: [clone] [original] [clone]
+    // This allows seamless looping in both directions
+    const cloneItems = (items: React.ReactNode[], keyPrefix: string) => {
+      return items.map((child, index) => {
+        if (isValidElement(child)) {
+          return cloneElement(child, {
+            key: `${keyPrefix}-${index}`,
+            index: index, // Reset animation index for clones
+          } as Record<string, unknown>)
+        }
+        return child
+      })
+    }
+
+    return [
+      ...cloneItems(childArray, 'clone-start'),
+      ...cloneItems(childArray, 'original'),
+      ...cloneItems(childArray, 'clone-end'),
+    ]
+  }
 
   return (
     <section className={`py-10 md:py-16 ${className}`}>
@@ -73,11 +145,11 @@ export function HorizontalScrollSection({
                 {eyebrow}
               </div>
             )}
-            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900">
+            <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-neutral-900">
               {title}
             </h2>
             {description && (
-              <p className="mt-2 text-base md:text-lg text-neutral-600 max-w-2xl">
+              <p className="mt-2 text-base md:text-lg xl:text-xl text-neutral-600 max-w-2xl">
                 {description}
               </p>
             )}
@@ -108,30 +180,16 @@ export function HorizontalScrollSection({
 
       {/* Scrollable Content */}
       <div className="relative">
-        {/* Left fade indicator */}
-        <div
-          className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
-            canScrollLeft ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-
-        {/* Right fade indicator */}
-        <div
-          className={`absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
-            canScrollRight ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-
-        {/* Scroll container - left padding matches container-page for alignment */}
+        {/* Scroll container */}
         <div
           ref={scrollRef}
-          className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pl-6 pr-6 md:pl-8 md:pr-8 xl:pl-[max(3rem,calc((100vw-80rem)/2+3rem))] xl:pr-12"
+          className="flex flex-nowrap gap-5 overflow-x-auto scrollbar-hide px-6 md:px-8 xl:px-12"
           style={{
-            scrollSnapType: 'x mandatory',
+            scrollSnapType: enableInfinite ? 'none' : 'x mandatory',
             WebkitOverflowScrolling: 'touch',
           }}
         >
-          {children}
+          {renderItems()}
         </div>
       </div>
     </section>

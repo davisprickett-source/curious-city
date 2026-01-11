@@ -679,6 +679,8 @@ export const minneapolis: CityData = {
           {
             id: 'curiosity-1',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'history',
             title: 'Minneapolis was explicitly fair game for America\'s most wanted gangsters',
             body: 'During Prohibition, St. Paul operated under the "O\'Connor System" — a corrupt arrangement where gangsters like John Dillinger, Al Capone, Machine Gun Kelly, and Bonnie and Clyde could live peacefully in the city. The deal was simple: check in with the police chief, give him a cut, and commit no crimes within St. Paul city limits. Minneapolis, however, was explicitly excluded from this protection.\n\nThe result was predictable carnage. In 1932, more than 20% of all bank robberies in the entire United States occurred in Minnesota — most of them in Minneapolis. Gangsters lived comfortable lives across the river in St. Paul, then crossed over to rob Minneapolis banks before retreating to their sanctuary. When Dillinger was shot by FBI agents during a St. Paul shootout in 1934, he fled to his doctor\'s clinic in Minneapolis to hide and receive treatment. The arrangement lasted until federal pressure finally shut it down in the mid-1930s, but not before Minneapolis became America\'s most robbery-prone city.',
@@ -705,6 +707,8 @@ export const minneapolis: CityData = {
           {
             id: 'curiosity-2',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'history',
             title: 'The world\'s largest flour mill exploded from dust ignition, killing 18',
             body: 'On May 2, 1878, the Washburn A Mill — then the largest flour mill on Earth — detonated in a fireball heard ten miles away in St. Paul. The explosion killed 18 workers instantly and destroyed six surrounding mills, erasing a third of Minneapolis\'s milling capacity in seconds. The culprit was something almost comically mundane: flour dust.\n\nMillstones grinding dry had created sparks. Those sparks ignited suspended flour particles. The resulting explosion had the force of a bomb. The disaster revolutionized industrial safety worldwide and directly led to the invention of dust collection systems. It also prompted the first systematic study of combustible dust hazards — research that now protects workers in grain elevators, sawmills, and factories across the globe. The mill\'s ruins were eventually converted into the Mill City Museum, which tells the story of Minneapolis\'s flour empire and the disaster that changed workplace safety forever.',
@@ -1245,6 +1249,8 @@ export const minneapolis: CityData = {
         {
           id: 'gem-underground-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Orfield Labs Quiet Chamber',
           category: 'Experience',
           description: 'Certified by Guinness as the quietest place on Earth, the anechoic chamber at Orfield Labs in South Minneapolis absorbs 99.99% of sound. The walls are covered in 3-foot wedges of fiberglass, and the floor is a suspended mesh you stand on. In the absence of external sound, you start hearing things you never knew existed: your heartbeat, blood flowing through your veins, the whoosh of your eyeballs moving in their sockets. Most people become disoriented within 30 minutes. Some hallucinate. NASA uses similar chambers to test astronauts. It\'s a genuinely surreal experience that challenges your sense of reality.',
@@ -2236,6 +2242,7 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9789, lng: -93.2569 },
             hours: '5pm-9pm Wed-Sun',
             price: '$$$$',
+            tier: 'fine-dining',
             website: 'https://owamni.com',
             instagram: '@owamni',
             images: [
@@ -2688,6 +2695,8 @@ export const minneapolis: CityData = {
           {
             id: 'mpls-dark-2',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 4,
             category: 'unsolved',
             year: '2021',
             title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
@@ -2956,6 +2965,8 @@ export const minneapolis: CityData = {
           {
             id: 'mpls-lost-1',
             type: 'lost-and-loved',
+            featured: true,
+            featuredOrder: 5,
             category: 'bar',
             name: "Nye's Polonaise Room",
             neighborhood: 'Northeast',

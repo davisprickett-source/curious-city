@@ -1,4 +1,6 @@
 import type { Article } from '@/types/article'
+import { coalCountry } from './coal-country'
+import { wellingtonAvalanche } from './wellington-avalanche'
 
 export const dbCooper: Article = {
   slug: 'db-cooper',
@@ -250,4 +252,4 @@ export const dbCooper: Article = {
   },
 }
 
-export const articles: Article[] = [dbCooper]
+export const articles: Article[] = [dbCooper, wellingtonAvalanche, coalCountry]

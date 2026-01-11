@@ -84,6 +84,8 @@ export const dallas: CityData = {
           {
             id: 'dal-curiosity-4',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 1,
             category: 'invention',
             title: 'The integrated circuit — the foundation of all modern technology — was invented here',
             images: [
@@ -107,6 +109,8 @@ export const dallas: CityData = {
           {
             id: 'dal-curiosity-5',
             type: 'curiosity',
+            featured: true,
+            featuredOrder: 2,
             category: 'architecture',
             title: 'A demolition accident created Dallas\'s own "Leaning Tower"',
             images: [
@@ -988,6 +992,8 @@ export const dallas: CityData = {
           {
             id: 'dal-dark-6',
             type: 'dark-history',
+            featured: true,
+            featuredOrder: 3,
             category: 'unsolved',
             year: '1996',
             title: 'The Girl Who Changed Everything',

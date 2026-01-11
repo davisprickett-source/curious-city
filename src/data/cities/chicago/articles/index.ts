@@ -1,4 +1,6 @@
 import type { Article } from '@/types/article'
+import { iroquoisTheater } from './iroquois-theater'
+import { maxHeadroom } from './max-headroom'
 
 export const eastlandDisaster: Article = {
   slug: 'eastland-disaster',
@@ -233,4 +235,4 @@ export const eastlandDisaster: Article = {
   },
 }
 
-export const articles: Article[] = [eastlandDisaster]
+export const articles: Article[] = [eastlandDisaster, iroquoisTheater, maxHeadroom]
