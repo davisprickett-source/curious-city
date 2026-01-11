@@ -983,16 +983,9 @@ export const colorado_springs: CityData = {
             website: 'https://therabbitholecos.com',
             instagram: '@therabbithole719',
             images: [
-              {
-                src: 'https://therabbitholecos.com/wp-content/uploads/Rabbit-Hole-Burger.jpg',
-                alt: 'The Rabbit Hole\'s famous burger with perfectly melted cheese',
-                caption: 'Legendary burger, meticulously executed',
-              },
-              {
-                src: '',
-                alt: 'The Rabbit Hole underground dining room with exposed brick',
-                caption: 'Stylish underground space',
-              }
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-1.png', alt: 'The Rabbit Hole entrance' },
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-2.png', alt: 'Underground dining room' },
+              { src: '/colorado-springs/hidden-gems/rabbit-hole-3.png', alt: 'Stylish underground space' },
             ],
           },
           {
@@ -1008,16 +1001,9 @@ export const colorado_springs: CityData = {
             website: 'https://shugas.com',
             instagram: '@shugasrestaurant',
             images: [
-              {
-                src: 'https://shugas.com/wp-content/uploads/Shugas-Mac-and-Cheese.jpg',
-                alt: 'Shuga\'s famous mac and cheese with golden crust',
-                caption: 'Mac and cheese made with love',
-              },
-              {
-                src: '',
-                alt: 'Fried chicken plate with collard greens and cornbread at Shuga\'s',
-                caption: 'Real Southern soul food',
-              }
+              { src: '/colorado-springs/restaurants/shugas-1.png', alt: 'Shuga\'s mac and cheese' },
+              { src: '/colorado-springs/restaurants/shugas-2.png', alt: 'Fried chicken and sides' },
+              { src: '/colorado-springs/restaurants/shugas-3.png', alt: 'Southern soul food' },
             ],
           },
           {
@@ -1033,16 +1019,7 @@ export const colorado_springs: CityData = {
             website: 'https://pizzeriarusticacos.com',
             instagram: '@pizzeriarustica',
             images: [
-              {
-                src: 'https://pizzeriarusticacos.com/wp-content/uploads/Pizzeria-Rustica-Margherita.jpg',
-                alt: 'VPN-certified Neapolitan Margherita pizza with leopard-spotted crust',
-                caption: 'Authentic Neapolitan pizza, VPN-certified',
-              },
-              {
-                src: '',
-                alt: 'Wood-fired pizza oven at 900°F at Pizzeria Rustica',
-                caption: 'Fired at 900°F in a wood-burning oven',
-              }
+              { src: '/colorado-springs/restaurants/rustica-1.png', alt: 'Neapolitan Margherita pizza' },
             ],
           },
           {
@@ -1058,11 +1035,8 @@ export const colorado_springs: CityData = {
             website: 'https://thefamoussteakhouse.com',
             instagram: '@famoussteakhouse',
             images: [
-              {
-                src: '',
-                alt: 'Perfectly seared ribeye steak at The Famous steakhouse',
-                caption: 'Ribeye done right — no gimmicks needed',
-              }
+              { src: '/colorado-springs/restaurants/thefamous-1.png', alt: 'Ribeye steak at The Famous' },
+              { src: '/colorado-springs/restaurants/thefamous-2.png', alt: 'Classic steakhouse interior' },
             ],
           },
           {
@@ -1078,11 +1052,9 @@ export const colorado_springs: CityData = {
             website: 'https://adamsmountaincafe.com',
             instagram: '@adamsmountaincafe',
             images: [
-              {
-                src: '',
-                alt: 'Korean-inspired bowl with fresh vegetables at Adam\'s Mountain Cafe',
-                caption: 'Unexpected global flavors in the mountains',
-              }
+              { src: '/colorado-springs/restaurants/adams-mtn-1.png', alt: 'Korean-inspired bowl' },
+              { src: '/colorado-springs/restaurants/adams-mtn-2.png', alt: 'Fresh seasonal dishes' },
+              { src: '/colorado-springs/restaurants/adams-mtn-3.png', alt: 'Adam\'s Mountain Cafe interior' },
             ],
           }
         ],
