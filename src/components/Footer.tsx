@@ -55,7 +55,7 @@ export function Footer() {
 
           {/* Explore */}
           <div className="md:col-span-3 lg:col-span-2 lg:col-start-6">
-            <h3 className="eyebrow text-neutral-500 mb-4">Explore</h3>
+            <h3 className="eyebrow text-accent-500 mb-4">Explore</h3>
             <ul className="space-y-2">
               {categories.map((item) => (
                 <li key={item.href}>
@@ -72,13 +72,13 @@ export function Footer() {
 
           {/* Cities */}
           <div className="md:col-span-4 lg:col-span-4">
-            <h3 className="eyebrow text-neutral-500 mb-4">Cities</h3>
-            <ul className="grid grid-cols-3 gap-x-4 gap-y-2">
+            <h3 className="eyebrow text-accent-500 mb-4">Cities</h3>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2">
               {cities.map((city) => (
                 <li key={city.href}>
                   <Link
                     href={city.href}
-                    className="text-sm text-neutral-400 hover:text-white transition-colors"
+                    className="text-sm text-neutral-400 hover:text-white transition-colors whitespace-nowrap"
                   >
                     {city.label}
                   </Link>

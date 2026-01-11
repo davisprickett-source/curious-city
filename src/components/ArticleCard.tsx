@@ -80,17 +80,8 @@ export function ArticleCard({ article, citySlug }: ArticleCardProps) {
           </p>
 
           {/* Meta */}
-          <div className="flex items-center justify-between text-xs text-neutral-500">
+          <div className="text-xs text-neutral-500">
             <span>{article.author.name}</span>
-            {article.tags && article.tags.length > 0 && (
-              <div className="flex gap-1">
-                {article.tags.slice(0, 2).map((tag) => (
-                  <span key={tag} className="text-neutral-400">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </article>

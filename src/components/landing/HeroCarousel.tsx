@@ -129,15 +129,15 @@ export function HeroCarousel({ slides, autoPlayInterval = 6000 }: HeroCarouselPr
       {slides.length > 1 && (
         <div className="absolute bottom-4 md:bottom-6 left-0 right-0 z-10">
           <div className="container-page">
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-1.5">
               {slides.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
+                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? 'w-8 bg-white'
-                      : 'w-2 bg-white/50 hover:bg-white/75'
+                      ? 'bg-white'
+                      : 'bg-white/40 hover:bg-white/60'
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />

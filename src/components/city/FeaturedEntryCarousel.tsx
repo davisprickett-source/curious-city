@@ -159,15 +159,15 @@ export function FeaturedEntryCarousel({
 
       {/* Navigation dots */}
       {entries.length > 1 && (
-        <div className="flex items-center justify-center gap-2 mt-4">
+        <div className="flex items-center justify-center gap-1.5 mt-4">
           {entries.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? 'w-6 bg-white'
-                  : 'w-2 bg-white/50 hover:bg-white/75'
+                  ? 'bg-white'
+                  : 'bg-white/40 hover:bg-white/60'
               }`}
               aria-label={`Go to entry ${index + 1}`}
             />

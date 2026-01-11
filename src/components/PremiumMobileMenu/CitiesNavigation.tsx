@@ -46,7 +46,8 @@ export function CitiesNavigation({ onClose, currentCitySlug }: CitiesNavigationP
 
       <motion.ul role="list" className="space-y-6">
         {cities.map((city) => {
-          const isCurrent = city.slug === currentCitySlug
+          // Strict equality check - only true if slugs match exactly
+          const isCurrent = Boolean(currentCitySlug) && city.slug === currentCitySlug
           return (
             <motion.li key={city.slug} variants={noExitItemVariants}>
               <Link
@@ -62,7 +63,7 @@ export function CitiesNavigation({ onClose, currentCitySlug }: CitiesNavigationP
                   className={`text-[clamp(2.5rem,8vw,3.8rem)] font-semibold leading-none tracking-tight transition-colors ${
                     isCurrent
                       ? 'text-accent-600'
-                      : 'text-neutral-900 group-hover:text-accent-600 group-focus:text-accent-600'
+                      : '!text-neutral-900 group-hover:text-accent-600 group-focus:text-accent-600'
                   }`}
                 >
                   {city.name}

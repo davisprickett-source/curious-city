@@ -10,6 +10,9 @@
   html {
     -webkit-tap-highlight-color: transparent;
     /* Removed scroll-behavior: smooth - Lenis handles smooth scrolling now */
+    /* Prevent iOS overscroll/bounce that can move entire viewport */
+    overscroll-behavior: none;
+    overflow-x: hidden;
   }
 
   body {
@@ -18,6 +21,10 @@
     line-height: 1.75;
     letter-spacing: -0.01em;
     @apply bg-[#f8f7f4] text-neutral-900 antialiased;
+    /* Prevent horizontal scroll and overscroll bounce on mobile */
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -83,6 +90,9 @@
   /* City page wrapper - constrains entire layout on ultra-wide screens */
   .city-page-wrapper {
     @apply w-full max-w-[1600px] mx-auto;
+    /* Prevent content from shifting during scroll on mobile */
+    overscroll-behavior: contain;
+    overflow-x: hidden;
   }
 
   .section-spacing {

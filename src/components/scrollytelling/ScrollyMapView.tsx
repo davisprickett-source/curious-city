@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { BestOfSpot } from '@/types/content'
 import { ScrollyMap } from './ScrollyMap'
 import { ScrollyContent } from './ScrollyContent'
+import { type ExploreLink } from './ExploreCard'
 
 interface ScrollyMapViewProps {
   spots: BestOfSpot[]
@@ -18,6 +19,8 @@ interface ScrollyMapViewProps {
   bannerImage?: string
   /** Current category to exclude from bottom links */
   currentCategory?: string
+  /** Explore links with thumbnails for the bottom section */
+  exploreLinks?: ExploreLink[]
 }
 
 export function ScrollyMapView({
@@ -28,7 +31,8 @@ export function ScrollyMapView({
   markerType = 'coffee',
   showBanner = false,
   bannerImage,
-  currentCategory
+  currentCategory,
+  exploreLinks
 }: ScrollyMapViewProps) {
   const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro/banner
   const [, setIsMapLoaded] = useState(false)
@@ -60,6 +64,7 @@ export function ScrollyMapView({
           scrollToIndex={scrollToIndex}
           onScrollComplete={() => setScrollToIndex(null)}
           currentCategory={currentCategory}
+          exploreLinks={exploreLinks}
         />
       </div>
     </div>

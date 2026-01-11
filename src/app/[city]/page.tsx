@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import { getCity, getAllCitySlugs } from '@/data/cities'
-import { Footer, RelatedCities } from '@/components'
+import { getCity, getAllCitySlugs, getAllCities } from '@/data/cities'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import {
   getCityFeaturedEntries,
@@ -14,6 +14,7 @@ import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSecti
 import { ArticleScrollCard } from '@/components/cards/ArticleScrollCard'
 import { ListicleTypeCard } from '@/components/cards/ListicleTypeCard'
 import { EstablishmentCategoryCard } from '@/components/cards/EstablishmentCategoryCard'
+import { CityScrollCard } from '@/components/cards/CityScrollCard'
 
 interface CityPageProps {
   params: Promise<{ city: string }>
@@ -52,12 +53,17 @@ export default async function CityPage({ params }: CityPageProps) {
     articles,
     listiclePages,
     establishmentCategories,
+    allCities,
   ] = await Promise.all([
     getCityFeaturedEntries(slug),
     getCityArticleSummaries(slug),
     getCityListiclePages(slug),
     getCityEstablishmentCategories(slug),
+    getAllCities(),
   ])
+
+  // Filter out current city for the "Other Cities" section
+  const otherCities = allCities.filter((c) => c.slug !== slug)
 
   return (
     <div className="city-page-wrapper">
@@ -134,12 +140,22 @@ export default async function CityPage({ params }: CityPageProps) {
           </HorizontalScrollSection>
         )}
 
-        {/* Related Cities */}
-        <section className="py-16 bg-neutral-50">
-          <div className="container-page">
-            <RelatedCities currentCitySlug={slug} />
-          </div>
-        </section>
+        {/* Other Cities */}
+        {otherCities.length > 0 && (
+          <HorizontalScrollSection
+            title="Other Cities"
+            eyebrow="Journey"
+            className="bg-neutral-50"
+          >
+            {otherCities.map((otherCity, index) => (
+              <CityScrollCard
+                key={otherCity.slug}
+                city={otherCity}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
       </main>
 
       <Footer />

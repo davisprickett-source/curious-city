@@ -6,6 +6,7 @@ import { ScrollySection } from './ScrollySection'
 import { ScrollySpotCard } from './ScrollySpotCard'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
+import { ExploreCard, type ExploreLink } from './ExploreCard'
 
 interface ScrollyContentProps {
   spots: BestOfSpot[]
@@ -22,6 +23,8 @@ interface ScrollyContentProps {
   onScrollComplete?: () => void
   /** Current category to exclude from bottom links (e.g., 'bars', 'restaurants', 'coffee-shops') */
   currentCategory?: string
+  /** Explore links with thumbnails for the bottom section */
+  exploreLinks?: ExploreLink[]
 }
 
 export function ScrollyContent({
@@ -34,7 +37,8 @@ export function ScrollyContent({
   onActiveIndexChange,
   scrollToIndex,
   onScrollComplete,
-  currentCategory
+  currentCategory,
+  exploreLinks = []
 }: ScrollyContentProps) {
   // Note: showBanner and bannerImage are kept for backwards compatibility
   // but the banner has been removed in favor of a unified intro section
@@ -170,60 +174,71 @@ export function ScrollyContent({
           <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
             From hidden bars to historic curiosities, there's more to discover.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 max-w-4xl mx-auto">
-            {currentCategory !== 'bars' && (
-              <a
-                href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/bars`}
-                className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                  </svg>
-                  <span className="text-lg font-semibold text-white">Best Bars</span>
-                </div>
-              </a>
-            )}
-            {currentCategory !== 'restaurants' && (
-              <a
-                href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/restaurants`}
-                className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                  <span className="text-lg font-semibold text-white">Restaurants</span>
-                </div>
-              </a>
-            )}
-            {currentCategory !== 'coffee-shops' && (
-              <a
-                href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/coffee-shops`}
-                className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                  <span className="text-lg font-semibold text-white">Coffee Shops</span>
-                </div>
-              </a>
-            )}
-            {currentCategory !== 'curiosities' && (
-              <a
-                href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/curiosities`}
-                className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="flex flex-col items-center gap-3">
-                  <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  <span className="text-lg font-semibold text-white">Curiosities</span>
-                </div>
-              </a>
-            )}
-          </div>
+
+          {/* Image-backed explore cards when available */}
+          {exploreLinks.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 max-w-5xl mx-auto">
+              {exploreLinks.map((link) => (
+                <ExploreCard key={link.href} link={link} />
+              ))}
+            </div>
+          ) : (
+            /* Fallback simple cards */
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 max-w-4xl mx-auto">
+              {currentCategory !== 'bars' && (
+                <a
+                  href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/bars`}
+                  className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <div className="flex flex-col items-center gap-3">
+                    <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    <span className="text-lg font-semibold text-white">Best Bars</span>
+                  </div>
+                </a>
+              )}
+              {currentCategory !== 'restaurants' && (
+                <a
+                  href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/restaurants`}
+                  className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <div className="flex flex-col items-center gap-3">
+                    <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <span className="text-lg font-semibold text-white">Restaurants</span>
+                  </div>
+                </a>
+              )}
+              {currentCategory !== 'coffee-shops' && (
+                <a
+                  href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/coffee-shops`}
+                  className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <div className="flex flex-col items-center gap-3">
+                    <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <span className="text-lg font-semibold text-white">Coffee Shops</span>
+                  </div>
+                </a>
+              )}
+              {currentCategory !== 'curiosities' && (
+                <a
+                  href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/curiosities`}
+                  className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <div className="flex flex-col items-center gap-3">
+                    <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                    <span className="text-lg font-semibold text-white">Curiosities</span>
+                  </div>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </ScrollySection>
     </div>

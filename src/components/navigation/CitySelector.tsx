@@ -65,19 +65,21 @@ function CityItem({
       className="relative"
     >
       {/* Animated highlight background - fast transition for responsive hover */}
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-accent-50 via-accent-100/80 to-accent-50 rounded-md mx-1"
-        initial={{ scaleX: 0, opacity: 0 }}
-        animate={{
-          scaleX: isHovered || isActive ? 1 : 0,
-          opacity: isHovered || isActive ? 1 : 0
-        }}
-        transition={{
-          duration: 0.08,
-          ease: 'easeOut'
-        }}
-        style={{ originX: 0 }}
-      />
+      <AnimatePresence>
+        {(isHovered || isActive) && (
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-accent-50 via-accent-100/80 to-accent-50 rounded-md mx-1"
+            initial={{ scaleX: 0, opacity: 0 }}
+            animate={{ scaleX: 1, opacity: 1 }}
+            exit={{ scaleX: 0, opacity: 0 }}
+            transition={{
+              duration: 0.08,
+              ease: 'easeOut'
+            }}
+            style={{ originX: 0 }}
+          />
+        )}
+      </AnimatePresence>
 
       <Link
         href={href}
@@ -86,13 +88,12 @@ function CityItem({
       >
         <motion.span
           className={`
-            inline-block
-            ${isActive ? 'text-accent-700 font-semibold' : 'text-neutral-700'}
+            inline-block transition-colors duration-75
+            ${isActive ? 'text-accent-700 font-semibold' : '!text-neutral-700'}
+            ${isHovered && !isActive ? '!text-accent-700' : ''}
           `}
-          animate={{
-            x: isHovered ? 4 : 0,
-            color: isHovered || isActive ? 'rgb(var(--accent-700))' : 'rgb(64, 64, 64)',
-          }}
+          initial={{ x: 0 }}
+          animate={{ x: isHovered ? 4 : 0 }}
           transition={{ duration: 0.08, ease: 'easeOut' }}
         >
           {city.name}
@@ -232,7 +233,7 @@ function CitySelectorContent({
                   <CityItem
                     key={city.slug}
                     city={city}
-                    isActive={city.slug === currentCitySlug}
+                    isActive={Boolean(currentCitySlug) && city.slug === currentCitySlug}
                     href={buildCityUrl(city.slug, currentSection, preserveFilters)}
                     onClose={handleClose}
                     index={index}

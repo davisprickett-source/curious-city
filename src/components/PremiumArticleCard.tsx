@@ -104,23 +104,9 @@ export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleC
 
               {/* Meta & CTA */}
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="text-sm font-medium text-neutral-700">
-                    {article.author.name}
-                  </span>
-                  {article.tags && article.tags.length > 0 && (
-                    <div className="hidden sm:flex gap-2">
-                      {article.tags.slice(0, 3).map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-xs text-neutral-400 bg-neutral-100 px-2 py-1 rounded"
-                        >
-                          #{tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <span className="text-sm font-medium text-neutral-700">
+                  {article.author.name}
+                </span>
 
                 {/* Read Arrow */}
                 <div className="inline-flex items-center text-accent-600 font-semibold gap-2 group-hover:gap-3 transition-all duration-300">

@@ -90,8 +90,8 @@ export function CityHeroSection({
 
   return (
     <section className="relative w-full bg-neutral-900">
-      {/* Banner Container */}
-      <div className="relative h-[50vh] min-h-[400px] max-h-[600px] overflow-hidden">
+      {/* Banner Container - shorter/wider aspect on mobile for better skyline visibility */}
+      <div className="relative h-[35vh] sm:h-[45vh] md:h-[50vh] min-h-[200px] max-h-[350px] sm:max-h-[500px] md:max-h-[600px] overflow-hidden">
         {/* Background Images */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -121,7 +121,7 @@ export function CityHeroSection({
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
 
         {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-end pb-10 md:pb-14">
+        <div className="relative h-full container-page flex flex-col justify-end pb-8 sm:pb-10 md:pb-14">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - City name and tagline */
@@ -132,7 +132,7 @@ export function CityHeroSection({
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg mb-4">
+                <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg mb-4">
                   {city.name}
                 </h1>
 
@@ -150,7 +150,7 @@ export function CityHeroSection({
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl leading-relaxed"
+                    className="text-xl sm:text-xl md:text-2xl text-white/90 max-w-2xl leading-relaxed"
                   >
                     {city.tagline}
                   </motion.p>
@@ -175,17 +175,17 @@ export function CityHeroSection({
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-3xl">
+                  <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-3xl">
                     {currentEntry.title}
                   </h2>
 
                   {/* Teaser */}
-                  <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl line-clamp-2 mb-4">
+                  <p className="text-base sm:text-base md:text-lg text-white/80 max-w-2xl line-clamp-2 mb-4">
                     {currentEntry.teaser}
                   </p>
 
                   {/* Read more CTA */}
-                  <span className="inline-flex items-center text-sm md:text-base font-semibold text-white group-hover:text-accent-300 transition-colors">
+                  <span className="inline-flex items-center text-base md:text-base font-semibold text-white group-hover:text-accent-300 transition-colors">
                     Read more
                     <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -197,17 +197,17 @@ export function CityHeroSection({
           </AnimatePresence>
         </div>
 
-        {/* Navigation dots */}
+        {/* Navigation dots - extremely tiny on mobile */}
         {totalSlides > 1 && (
-          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-8 flex items-center gap-2">
+          <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-[3px] sm:gap-1 md:gap-1.5">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
+                className={`rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-6 bg-white'
-                    : 'w-2 bg-white/50 hover:bg-white/75'
+                    ? 'w-2 h-[3px] sm:w-3 sm:h-1 md:w-5 md:h-1.5 bg-white'
+                    : 'w-[3px] h-[3px] sm:w-1 sm:h-1 md:w-1.5 md:h-1.5 bg-white/50 hover:bg-white/75'
                 }`}
                 aria-label={index === 0 ? 'Go to intro' : `Go to slide ${index}`}
               />

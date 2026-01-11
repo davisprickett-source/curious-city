@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { ScrollyMapView } from '@/components/scrollytelling'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { Footer } from '@/components'
+import { getExploreLinks } from '@/lib/content/cityHomepage'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -47,6 +49,9 @@ export default async function CityBarsPage({ params }: PageProps) {
   const introText = barsList[0]?.intro
   const intro = introText ? { text: introText } : undefined
 
+  // Get explore links for bottom section
+  const exploreLinks = await getExploreLinks(slug, city.name, 'bars')
+
   return (
     <>
       <UnifiedNav
@@ -64,7 +69,10 @@ export default async function CityBarsPage({ params }: PageProps) {
         showBanner={true}
         bannerImage="/global-banners/bar-banner.png"
         currentCategory="bars"
+        exploreLinks={exploreLinks}
       />
+
+      <Footer />
     </>
   )
 }

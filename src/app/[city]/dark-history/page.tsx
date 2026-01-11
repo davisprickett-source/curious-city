@@ -134,7 +134,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
         {/* End of Article Flow */}
         <div className="container-page py-12 space-y-8">
           <RelatedContent citySlug={city.slug} cityName={city.name} contentType="dark-history" />
-          <NewsletterSignup currentCity={city.slug} />
+          <NewsletterSignup />
         </div>
       </main>
 

@@ -181,7 +181,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
             cityName={city.name}
             contentType="curiosities"
           />
-          <NewsletterSignup currentCity={city.slug} />
+          <NewsletterSignup />
         </div>
       </main>
 

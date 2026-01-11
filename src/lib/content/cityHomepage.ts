@@ -63,6 +63,16 @@ export interface ArticleSummary {
   thumbnail?: string
   href: string
   publishedAt?: string
+  /** Source type for color coding: 'history' for history essays, or article category */
+  source?: 'history' | 'guide' | 'feature' | 'news' | 'list' | 'interview' | 'opinion' | 'event-coverage'
+}
+
+export interface ExploreLink {
+  type: 'bars' | 'restaurants' | 'coffee-shops' | 'curiosities' | 'dark-history' | 'hidden-gems' | 'lost-loved'
+  title: string
+  teaser: string
+  thumbnail?: string
+  href: string
 }
 
 // ============================================
@@ -452,6 +462,7 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
       thumbnail,
       href: `/${city.slug}/articles/${essay.slug}`,
       publishedAt: targetEssay.publishedAt,
+      source: 'history',
     })
   }
 
@@ -469,6 +480,7 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
         thumbnail: article.featuredImage?.src,
         href: `/${city.slug}/articles/${article.slug}`,
         publishedAt: article.publishedAt,
+        source: (article.category as ArticleSummary['source']) || 'feature',
       })
     }
   } catch {
@@ -486,4 +498,67 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
     ...historyArticles.sort(sortByDate),
     ...nativeArticles.sort(sortByDate),
   ]
+}
+
+// Teaser descriptions for different content types
+const exploreTeasers: Record<string, string> = {
+  bars: 'Dive bars, cocktail lounges, and neighborhood favorites',
+  restaurants: 'From fine dining to hidden gems and local favorites',
+  'coffee-shops': 'Local roasters, cozy cafes, and third wave spots',
+  curiosities: 'Fascinating facts and surprising stories',
+  'dark-history': 'Unsolved mysteries and darker chapters',
+  'hidden-gems': 'Secret spots and local treasures',
+  'lost-loved': 'Beloved places we miss',
+}
+
+/**
+ * Get explore links for the bottom of establishment pages
+ * Returns links to other categories (establishments + listicles) with thumbnails
+ */
+export async function getExploreLinks(
+  citySlug: string,
+  cityName: string,
+  excludeCategory?: string
+): Promise<ExploreLink[]> {
+  const links: ExploreLink[] = []
+
+  // Get establishment categories
+  const establishments = await getCityEstablishmentCategories(citySlug)
+  for (const est of establishments) {
+    if (est.category === excludeCategory) continue
+
+    const type = est.category as ExploreLink['type']
+    if (['bars', 'restaurants', 'coffee-shops'].includes(type)) {
+      links.push({
+        type,
+        title: `${est.title} in ${cityName}`,
+        teaser: exploreTeasers[type] || est.title,
+        thumbnail: est.thumbnail,
+        href: est.href,
+      })
+    }
+  }
+
+  // Get listicle pages
+  const listicles = await getCityListiclePages(citySlug)
+  for (const page of listicles) {
+    const typeMap: Record<string, ExploreLink['type']> = {
+      'dark-history': 'dark-history',
+      curiosities: 'curiosities',
+      'hidden-gems': 'hidden-gems',
+      'lost-loved': 'lost-loved',
+    }
+    const type = typeMap[page.type]
+    if (!type || page.type === excludeCategory) continue
+
+    links.push({
+      type,
+      title: `${page.title} in ${cityName}`,
+      teaser: exploreTeasers[type] || page.teaser,
+      thumbnail: page.thumbnail,
+      href: page.href,
+    })
+  }
+
+  return links
 }
