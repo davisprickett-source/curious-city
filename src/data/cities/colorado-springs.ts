@@ -863,16 +863,10 @@ export const colorado_springs: CityData = {
             website: 'https://principalsoffice.co/',
             instagram: '@poativywild',
             images: [
-              {
-                src: 'https://principalsofficecos.com/wp-content/uploads/Principals-Office-Seasonal-Cocktail.jpg',
-                alt: 'Seasonal craft cocktail at Principal\'s Office with fresh herbs',
-                caption: 'Craft cocktails with Colorado ingredients',
-              },
-              {
-                src: '',
-                alt: 'Principal\'s Office bar with creative cocktail ingredients',
-                caption: 'Mixology as craft, not pretense',
-              }
+              { src: '/colorado-springs/bars/principal-1.png', alt: 'Principal\'s Office craft cocktail' },
+              { src: '/colorado-springs/bars/principal-2.png', alt: 'Principal\'s Office bar interior' },
+              { src: '/colorado-springs/bars/principal-3.png', alt: 'Seasonal cocktail with fresh herbs' },
+              { src: '/colorado-springs/bars/principal-4.png', alt: 'Creative mixology' },
             ],
           },
           {
@@ -888,16 +882,10 @@ export const colorado_springs: CityData = {
             website: 'https://www.phantomcanyon.com',
             instagram: '@phantomcanyon',
             images: [
-              {
-                src: 'https://phantomcanyon.com/wp-content/uploads/Phantom-Canyon-Historic-Interior.jpg',
-                alt: 'Phantom Canyon Brewing historic interior with exposed brick and tin ceilings',
-                caption: 'Brewing inside a beautifully restored 1901 building',
-              },
-              {
-                src: '',
-                alt: 'Copper brewing equipment visible behind glass at Phantom Canyon',
-                caption: 'House-brewed beer since 1993',
-              }
+              { src: '/colorado-springs/bars/phantom-1.png', alt: 'Phantom Canyon historic interior' },
+              { src: '/colorado-springs/bars/phantom-2.png', alt: 'Phantom Canyon brewing equipment' },
+              { src: '/colorado-springs/bars/phantom-3.png', alt: 'Exposed brick and tin ceilings' },
+              { src: '/colorado-springs/bars/phantom-4.png', alt: 'Phantom Canyon bar' },
             ],
           }
         ],
