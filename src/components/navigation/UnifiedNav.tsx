@@ -29,25 +29,28 @@ export function UnifiedNav({
 }: UnifiedNavProps) {
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
-  const ticking = useRef(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (ticking.current) return
+    let rafId: number | null = null
 
-      ticking.current = true
-      requestAnimationFrame(() => {
+    const handleScroll = () => {
+      if (rafId) return
+
+      rafId = requestAnimationFrame(() => {
         const currentScrollY = window.scrollY
-        const scrollDelta = currentScrollY - lastScrollY.current
 
         // Only apply hide/show on mobile (sm breakpoint is 640px)
         if (window.innerWidth < 640) {
-          // Show navbar when scrolling up or at top
-          if (scrollDelta < -5 || currentScrollY < 50) {
+          // Always show at top of page
+          if (currentScrollY < 50) {
             setIsVisible(true)
           }
-          // Hide navbar when scrolling down past threshold
-          else if (scrollDelta > 5 && currentScrollY > 100) {
+          // Show when scrolling up
+          else if (currentScrollY < lastScrollY.current) {
+            setIsVisible(true)
+          }
+          // Hide when scrolling down past threshold
+          else if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
             setIsVisible(false)
           }
         } else {
@@ -55,12 +58,18 @@ export function UnifiedNav({
         }
 
         lastScrollY.current = currentScrollY
-        ticking.current = false
+        rafId = null
       })
     }
 
+    // Initialize lastScrollY
+    lastScrollY.current = window.scrollY
+
     window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (rafId) cancelAnimationFrame(rafId)
+    }
   }, [])
 
   return (
