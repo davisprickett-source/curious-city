@@ -1146,9 +1146,8 @@ export const tampa: CityData = {
             instagram: '@columbiarestaurant',
             hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 11am-9pm',
             images: [
-              { src: '/Tampa/restaurants/columbia-1.png', alt: 'Columbia Restaurant historic dining room' },
-              { src: '/Tampa/restaurants/columbia-2.png', alt: 'Columbia 1905 Salad tableside' },
-              { src: '/Tampa/restaurants/columbia-3.png', alt: 'Columbia Spanish tile interior' },
+              { src: '/Tampa/hidden-gems/columbia-1.png', alt: 'Columbia Restaurant historic dining room' },
+              { src: '/Tampa/hidden-gems/columbia-2.png', alt: 'Columbia Restaurant dining area' },
             ],
           },
         ],
