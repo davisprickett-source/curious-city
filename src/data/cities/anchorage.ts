@@ -1882,8 +1882,8 @@ export const anchorage: CityData = {
                 url: 'https://www.ktoo.org/2020/03/05/illegal-for-decades-many-anchorage-homes-still-have-covenants-that-prohibit-sale-to-blacks-and-alaska-natives/',
               },
               {
-                type: 'exhibit',
-                title: 'Black Lives in Alaska: Journey, Justice, Joy',
+                type: 'other',
+                title: 'Black Lives in Alaska: Journey, Justice, Joy (Exhibit)',
                 publisher: 'Anchorage Museum',
                 url: 'https://www.anchoragemuseum.org/exhibits/black-lives-in-alaska-journey-justice-joy/',
               },
