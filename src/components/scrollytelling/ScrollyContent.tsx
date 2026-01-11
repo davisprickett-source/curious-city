@@ -25,6 +25,8 @@ interface ScrollyContentProps {
   currentCategory?: string
   /** Explore links with thumbnails for the bottom section */
   exploreLinks?: ExploreLink[]
+  /** Footer component to render at the end */
+  footer?: React.ReactNode
 }
 
 export function ScrollyContent({
@@ -38,7 +40,8 @@ export function ScrollyContent({
   scrollToIndex,
   onScrollComplete,
   currentCategory,
-  exploreLinks = []
+  exploreLinks = [],
+  footer
 }: ScrollyContentProps) {
   // Note: showBanner and bannerImage are kept for backwards compatibility
   // but the banner has been removed in favor of a unified intro section
@@ -241,6 +244,13 @@ export function ScrollyContent({
           )}
         </div>
       </ScrollySection>
+
+      {/* Footer - rendered inside scrollable content for proper z-index stacking */}
+      {footer && (
+        <div className="relative">
+          {footer}
+        </div>
+      )}
     </div>
   )
 }

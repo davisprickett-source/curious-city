@@ -18,6 +18,9 @@ interface UnifiedNavProps {
 
   // Optional customization
   customFilters?: React.ReactNode
+
+  // Use fixed positioning (for pages with fixed map backgrounds like scrolly pages)
+  useFixedPosition?: boolean
 }
 
 export function UnifiedNav({
@@ -26,11 +29,18 @@ export function UnifiedNav({
   currentSection,
   sceneCategory,
   customFilters,
+  useFixedPosition = false,
 }: UnifiedNavProps) {
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
 
   useEffect(() => {
+    // Skip scroll hide/show behavior when using fixed positioning
+    if (useFixedPosition) {
+      setIsVisible(true)
+      return
+    }
+
     let rafId: number | null = null
 
     const handleScroll = () => {
@@ -70,12 +80,18 @@ export function UnifiedNav({
       window.removeEventListener('scroll', handleScroll)
       if (rafId) cancelAnimationFrame(rafId)
     }
-  }, [])
+  }, [useFixedPosition])
+
+  // For scrolly pages: use relative on mobile so nav scrolls away completely, sticky on desktop
+  // For regular pages: always sticky
+  const positionClass = useFixedPosition
+    ? 'relative sm:sticky sm:top-0'
+    : 'sticky top-0'
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-white backdrop-blur-md border-b border-neutral-100 ui-sans transition-transform duration-300 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full sm:translate-y-0'
+      className={`${positionClass} z-50 bg-white backdrop-blur-md border-b border-neutral-100 ui-sans transition-transform duration-300 ${
+        !useFixedPosition && !isVisible ? '-translate-y-full sm:translate-y-0' : ''
       }`}
     >
       <div className="container-page">

@@ -19,8 +19,8 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
 
   return (
     <div className="bg-white/95 backdrop-blur-xl border border-neutral-200 rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden contain-layout">
-      {/* Navigation Controls Bar - compact on mobile */}
-      <div className="flex items-center justify-between px-3 py-1.5 sm:px-4 sm:py-3 border-b border-neutral-200 bg-neutral-50">
+      {/* Navigation Controls Bar - very compact on mobile */}
+      <div className="flex items-center justify-between px-2 py-0.5 sm:px-4 sm:py-3 border-b border-neutral-200 bg-neutral-50">
         {/* Close button - goes back to map overview - always rust colored */}
         <button
           onClick={onViewGlobal}
@@ -58,10 +58,10 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
 
       {/* Name Header (above image) - compact single line on mobile */}
       <div className="px-3 sm:px-6 pt-2 sm:pt-6 pb-2 sm:pb-4 bg-gradient-to-b from-white to-transparent">
-        <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
-          <div className="w-6 h-6 sm:w-10 sm:h-10 bg-[#c65d3b] text-white text-xs sm:text-base font-semibold rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+        <div className="flex items-baseline gap-1.5 sm:gap-3 min-w-0">
+          <span className="w-5 h-5 sm:w-10 sm:h-10 bg-[#c65d3b] text-white text-[10px] sm:text-base font-semibold rounded-full inline-flex items-center justify-center shadow-lg flex-shrink-0 relative -top-px sm:top-0">
             {rank}
-          </div>
+          </span>
           <div className="flex items-baseline gap-1.5 sm:gap-2 min-w-0 flex-1 flex-wrap sm:flex-nowrap">
             {spot.website ? (
               <a
@@ -90,28 +90,11 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
         </div>
       )}
 
-      <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5">
+      <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 pb-2 sm:pb-6 md:pb-8">
         {/* Vibe/Hook - Always visible */}
         <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed">
           {spot.vibe}
         </p>
-
-        {/* Mobile: "More Details" dropdown button */}
-        <button
-          onClick={() => setIsDetailsOpen(!isDetailsOpen)}
-          className="sm:hidden w-full flex items-center justify-between px-4 py-3 bg-neutral-50 hover:bg-neutral-100 rounded-lg transition-colors border border-neutral-200"
-          aria-expanded={isDetailsOpen}
-        >
-          <span className="text-sm font-semibold text-neutral-700">More Details</span>
-          <svg
-            className={`w-5 h-5 text-neutral-500 transition-transform duration-200 ${isDetailsOpen ? 'rotate-180' : ''}`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
 
         {/* Details section - hidden on mobile unless expanded, always visible on desktop */}
         <div className={`space-y-5 ${isDetailsOpen ? 'block' : 'hidden'} sm:block`}>
@@ -221,6 +204,23 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
           </div>
         </div>
       </div>
+
+      {/* Mobile: "More Details" button - spans full width at bottom with rounded corners */}
+      <button
+        onClick={() => setIsDetailsOpen(!isDetailsOpen)}
+        className="sm:hidden w-full flex items-center justify-between px-4 py-3 bg-neutral-100 hover:bg-neutral-200 transition-colors rounded-b-2xl border-t border-neutral-200"
+        aria-expanded={isDetailsOpen}
+      >
+        <span className="text-sm font-semibold text-neutral-700">{isDetailsOpen ? 'Less' : 'More Details'}</span>
+        <svg
+          className={`w-5 h-5 text-neutral-500 transition-transform duration-200 ${isDetailsOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
     </div>
   )
 }

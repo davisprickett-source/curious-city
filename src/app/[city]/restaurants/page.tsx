@@ -58,6 +58,7 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         citySlug={city.slug}
         cityName={city.name}
         currentSection="restaurants"
+        useFixedPosition
       />
 
       <ScrollyMapView
@@ -70,9 +71,8 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         bannerImage="/global-banners/restaurant-banner.png"
         currentCategory="restaurants"
         exploreLinks={exploreLinks}
+        footer={<Footer />}
       />
-
-      <Footer />
     </>
   )
 }

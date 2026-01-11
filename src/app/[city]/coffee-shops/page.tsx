@@ -59,6 +59,7 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
         citySlug={city.slug}
         cityName={city.name}
         currentSection="coffee-shops"
+        useFixedPosition
       />
 
       <ScrollyMapView
@@ -69,9 +70,8 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
         markerType="coffee"
         currentCategory="coffee-shops"
         exploreLinks={exploreLinks}
+        footer={<Footer />}
       />
-
-      <Footer />
     </>
   )
 }

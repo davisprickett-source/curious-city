@@ -21,6 +21,8 @@ interface ScrollyMapViewProps {
   currentCategory?: string
   /** Explore links with thumbnails for the bottom section */
   exploreLinks?: ExploreLink[]
+  /** Footer component to render at the end of scrollable content */
+  footer?: React.ReactNode
 }
 
 export function ScrollyMapView({
@@ -32,7 +34,8 @@ export function ScrollyMapView({
   showBanner = false,
   bannerImage,
   currentCategory,
-  exploreLinks
+  exploreLinks,
+  footer
 }: ScrollyMapViewProps) {
   const [activeSpotIndex, setActiveSpotIndex] = useState(-1) // -1 = intro/banner
   const [, setIsMapLoaded] = useState(false)
@@ -65,6 +68,7 @@ export function ScrollyMapView({
           onScrollComplete={() => setScrollToIndex(null)}
           currentCategory={currentCategory}
           exploreLinks={exploreLinks}
+          footer={footer}
         />
       </div>
     </div>

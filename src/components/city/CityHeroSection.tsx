@@ -134,7 +134,7 @@ export function CityHeroSection({
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-4">
+                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2 sm:mb-4">
                   <span className="text-accent-400">Curious</span> {city.name}
                 </h1>
 
@@ -143,7 +143,7 @@ export function CityHeroSection({
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  className="h-1.5 w-28 md:w-36 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mb-6"
+                  className="h-1 sm:h-1.5 w-20 sm:w-28 md:w-36 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mb-3 sm:mb-6"
                   style={{ transformOrigin: 'left' }}
                 />
 
@@ -152,7 +152,7 @@ export function CityHeroSection({
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="text-xl sm:text-2xl md:text-3xl text-white/90 max-w-3xl leading-relaxed"
+                    className="text-base sm:text-2xl md:text-3xl text-white/90 max-w-3xl leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none"
                   >
                     {city.tagline}
                   </motion.p>
@@ -169,27 +169,27 @@ export function CityHeroSection({
               >
                 <Link href={currentEntry.href} className="group block">
                   {/* Type indicator dot */}
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className={`w-2.5 h-2.5 rounded-full ${typeColors[currentEntry.type]}`} />
-                    <span className="text-sm uppercase tracking-wider text-white/70">
+                  <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-3">
+                    <span className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full ${typeColors[currentEntry.type]}`} />
+                    <span className="text-xs sm:text-sm uppercase tracking-wider text-white/70">
                       {currentEntry.type.replace('-', ' ')}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
+                  <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-accent-300 transition-colors max-w-4xl line-clamp-2">
                     {currentEntry.title}
                   </h2>
 
                   {/* Teaser */}
-                  <p className="text-lg sm:text-lg md:text-xl text-white/80 max-w-3xl line-clamp-2 mb-4">
+                  <p className="text-sm sm:text-lg md:text-xl text-white/80 max-w-3xl line-clamp-1 sm:line-clamp-2 mb-2 sm:mb-4">
                     {currentEntry.teaser}
                   </p>
 
                   {/* Read more CTA */}
-                  <span className="inline-flex items-center text-base md:text-lg font-semibold text-white group-hover:text-accent-300 transition-colors">
+                  <span className="inline-flex items-center text-sm sm:text-base md:text-lg font-semibold text-white group-hover:text-accent-300 transition-colors">
                     Read more
-                    <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1 sm:ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
@@ -199,17 +199,17 @@ export function CityHeroSection({
           </AnimatePresence>
         </div>
 
-        {/* Navigation dots - minimal on mobile, proper size on larger screens */}
+        {/* Navigation dots - tiny on mobile (~3px), proper size on larger screens */}
         {totalSlides > 1 && (
-          <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-1 sm:gap-1.5 md:gap-2">
+          <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-[3px] sm:gap-1.5 md:gap-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-4 h-1 sm:w-5 sm:h-1.5 md:w-6 md:h-2 bg-white'
-                    : 'w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-white/50 hover:bg-white/75'
+                    ? 'w-2 h-[3px] sm:w-5 sm:h-1.5 md:w-6 md:h-2 bg-white'
+                    : 'w-[3px] h-[3px] sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-white/40 hover:bg-white/75'
                 }`}
                 aria-label={index === 0 ? 'Go to intro' : `Go to slide ${index}`}
               />
