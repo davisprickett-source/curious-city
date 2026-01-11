@@ -197,17 +197,17 @@ export function CityHeroSection({
           </AnimatePresence>
         </div>
 
-        {/* Navigation dots - truly tiny on mobile (2px dots) */}
+        {/* Navigation dots - minimal on mobile, proper size on larger screens */}
         {totalSlides > 1 && (
-          <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-[2px] sm:gap-1 md:gap-1.5">
+          <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-6 md:right-8 flex items-center gap-1 sm:gap-1.5 md:gap-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-[6px] h-[2px] sm:w-3 sm:h-1 md:w-5 md:h-1.5 bg-white'
-                    : 'w-[2px] h-[2px] sm:w-1 sm:h-1 md:w-1.5 md:h-1.5 bg-white/60 hover:bg-white/75'
+                    ? 'w-4 h-1 sm:w-5 sm:h-1.5 md:w-6 md:h-2 bg-white'
+                    : 'w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-white/50 hover:bg-white/75'
                 }`}
                 aria-label={index === 0 ? 'Go to intro' : `Go to slide ${index}`}
               />

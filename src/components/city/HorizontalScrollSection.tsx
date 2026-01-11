@@ -153,7 +153,7 @@ export function HorizontalScrollSection({
       {/* Section Header */}
       <div className="container-page mb-6 md:mb-8">
         <div className="flex items-end justify-between gap-4">
-          <div>
+          <div className="min-w-0 flex-1">
             {eyebrow && (
               <div className="eyebrow mb-2 text-accent-600">
                 {eyebrow}
@@ -171,9 +171,10 @@ export function HorizontalScrollSection({
           {viewAllLink && (
             <Link
               href={viewAllLink.href}
-              className="ui-sans text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors whitespace-nowrap flex items-center gap-1 group"
+              className="ui-sans text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors flex-shrink-0 flex items-center gap-1 group"
             >
-              {viewAllLink.text}
+              <span className="hidden sm:inline">{viewAllLink.text}</span>
+              <span className="sm:hidden">View All</span>
               <svg
                 className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                 fill="none"
