@@ -3,6 +3,7 @@ import { Inter, Lora } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -140,6 +141,7 @@ export default function RootLayout({
             {children}
           </div>
         </SmoothScrollProvider>
+        <Analytics />
       </body>
     </html>
   )
