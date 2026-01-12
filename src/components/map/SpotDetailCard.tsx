@@ -9,9 +9,6 @@ interface SpotDetailCardProps {
   spot: BestOfSpot
   rank: number
   totalSpots: number
-  onNext: () => void
-  onPrev: () => void
-  onClose?: () => void
 }
 
 const cardVariants = {
@@ -36,7 +33,7 @@ const cardVariants = {
   }
 }
 
-export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose }: SpotDetailCardProps) {
+export function SpotDetailCard({ spot, rank, totalSpots }: SpotDetailCardProps) {
   const carouselImages = spot.images || (spot.image ? [spot.image] : [])
   const hasMultipleLocations = Boolean(spot.locations && spot.locations.length > 0)
   const [mobileExpanded, setMobileExpanded] = useState(false)
@@ -71,8 +68,6 @@ export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose
                 spot={spot}
                 rank={rank}
                 totalSpots={totalSpots}
-                onNext={onNext}
-                onPrev={onPrev}
                 carouselImages={carouselImages}
                 hasMultipleLocations={hasMultipleLocations}
               />
@@ -110,8 +105,6 @@ export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose
                 spot={spot}
                 rank={rank}
                 totalSpots={totalSpots}
-                onNext={onNext}
-                onPrev={onPrev}
                 carouselImages={carouselImages}
                 hasMultipleLocations={hasMultipleLocations}
                 isMobile
@@ -130,8 +123,6 @@ function CardContent({
   spot,
   rank,
   totalSpots,
-  onNext,
-  onPrev,
   carouselImages,
   hasMultipleLocations,
   isMobile = false,
@@ -141,8 +132,6 @@ function CardContent({
   spot: BestOfSpot
   rank: number
   totalSpots: number
-  onNext: () => void
-  onPrev: () => void
   carouselImages: any[]
   hasMultipleLocations: boolean
   isMobile?: boolean

@@ -153,9 +153,6 @@ export function MapExplorer({ spots, cityName, citySlug, title }: MapExplorerPro
             spot={spotsWithCoords[activeSpotIndex]}
             rank={activeSpotIndex + 1}
             totalSpots={spotsWithCoords.length}
-            onNext={() => handleSpotChange(activeSpotIndex + 1)}
-            onPrev={() => handleSpotChange(activeSpotIndex - 1)}
-            onClose={() => setShowCard(false)}
           />
         )}
 
