@@ -4,7 +4,7 @@ export const config = {
   state: 'Minnesota',
   tagline: 'Mill City vibes and urban curiosity',
   heroImage: {
-    src: '/Minneapolis Curiosities/banner.png',
+    src: '/minneapolis/curiosities/banner.png',
     alt: 'Minneapolis curiosities banner',
   },
   location: {

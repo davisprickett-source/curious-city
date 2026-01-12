@@ -310,7 +310,7 @@ export const salt_lake_city: CityData = {
             body: 'In 1945, a rancher in Box Elder County spotted a 33-foot balloon drifting over Blue Creek Valley. Sheriff Warren Hyde grabbed the strange device with his bare hands and held on for 45 minutes in the freezing wind while help was summoned. It was a Japanese Fu-Go balloon bomb—one of 9,300 launched across the Pacific on the jet stream. The FBI swore Hyde to silence for decades. The sand in the ballast bags helped identify Japanese launch sites, leading to bombing raids that ended the program.',
             year: '1945',
             image: {
-              src: '/Salt-Lake-City/articles/balloon-bomb.png',
+              src: '/salt-lake-city/articles/balloon-bomb.png',
               alt: 'Japanese Fu-Go balloon bomb during WWII',
             },
             source: 'National Archives, declassified WWII records',
@@ -456,11 +456,11 @@ export const salt_lake_city: CityData = {
             description: 'In a quiet Salt Lake neighborhood sits a 40-foot bronze-and-concrete pyramid that would look more at home in Giza than Utah—and inside, a religious movement practices the only modern mummification on Earth. Summum was founded in 1975 by Claude "Corky" Nowell, who claimed to have received teachings from advanced beings. When Corky died in 2008, his followers mummified him in a gold-covered bronze sarcophagus that now rests inside the pyramid. Over 1,500 people have arranged for their own future mummifications; more than 600 pets have already been preserved. The process takes 77 days and costs around $67,000 for humans. The building is legally zoned as a bonded winery—they produce "nectar publications" (ceremonial wine)—because Utah wouldn\'t approve a pyramid-shaped church. Tours are free, surreal, and available by appointment.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/pyramid-1.png',
+                src: '/salt-lake-city/hidden-gems/pyramid-1.png',
                 alt: 'Modern pyramid structure in urban setting',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/pyramid-2.png',
+                src: '/salt-lake-city/hidden-gems/pyramid-2.png',
                 alt: 'Summum Pyramid interior',
               }
             ],
@@ -479,15 +479,15 @@ export const salt_lake_city: CityData = {
             description: 'Hidden in an unassuming downtown building is one of the most significant private racing collections in America—and it\'s open to the public exactly three hours per month. The Mormon Meteor III is the crown jewel: Ab Jenkins drove this streamlined beast to 24-hour speed records on the Bonneville Salt Flats in 1940, averaging 161 mph for an entire day and night. The collection includes over 30 racing machines spanning a century—a 1904 Peerless Green Dragon, a 1929 Bugatti Type 35B, Indianapolis veterans, Grand Prix legends. John Price spent decades quietly assembling cars that tell the history of human obsession with going faster. No crowds, no gift shop, no velvet ropes—just you, the cars, and sometimes Price himself explaining why a particular engine note still haunts him.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/speed-1.png',
+                src: '/salt-lake-city/hidden-gems/speed-1.png',
                 alt: 'Vintage race car collection in private museum',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/speed-2.png',
+                src: '/salt-lake-city/hidden-gems/speed-2.png',
                 alt: 'Historic racing vehicles at Price Museum',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/speed-3.png',
+                src: '/salt-lake-city/hidden-gems/speed-3.png',
                 alt: 'Mormon Meteor III at Price Museum of Speed',
               }
             ],
@@ -505,15 +505,15 @@ export const salt_lake_city: CityData = {
             description: 'The Daughters of Utah Pioneers run this 38-room museum that officially celebrates Mormon pioneer heritage—but wander past the quilts and wagon wheels and you\'ll find one of America\'s strangest accidental collections. Bottles filled with human teeth extracted during the trek west. Victorian mourning jewelry woven from the hair of the dead. A taxidermied two-headed lamb born on a frontier farm. A petrified potato carried across the plains as a good luck charm. Rattlesnake rattles, dozens of them, collected from the snakes that made desert nights dangerous. A hand-carved wooden leg that walked someone to Zion. A bloodstone that pioneers believed could stop hemorrhaging. The museum doesn\'t play up the weirdness—it\'s all presented with the same earnest reverence as the spinning wheels and butter churns. That\'s what makes it perfect: you have to hunt for the bizarre, and it\'s everywhere.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/pioneer-1.png',
+                src: '/salt-lake-city/hidden-gems/pioneer-1.png',
                 alt: 'Victorian-era museum interior with unusual historical artifacts',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/pioneer-2.png',
+                src: '/salt-lake-city/hidden-gems/pioneer-2.png',
                 alt: 'Pioneer Memorial Museum oddities collection',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/pioneer-3.png',
+                src: '/salt-lake-city/hidden-gems/pioneer-3.png',
                 alt: 'Historic pioneer artifacts display',
               }
             ],
@@ -550,15 +550,15 @@ export const salt_lake_city: CityData = {
             description: 'While tourists and Instagram hikers clog Mill Creek Canyon every weekend, locals slip away to Neff\'s Canyon—a brutal, beautiful 7-mile climb that gains 3,562 feet and rewards with the kind of solitude Salt Lake\'s popular trails forgot decades ago. The trailhead hides at the end of a residential street in Millcreek, unmarked enough that most people drive right past. The canyon is shaded and creek-fed in summer, golden with aspens in fall, and snowshoe-worthy in winter. Wildflowers carpet the meadow halfway up. The ridge at the top offers panoramic views into Big Cottonwood Canyon that feel earned, not given. Neff\'s is where Salt Lakers go when they remember why they moved here—and where they don\'t tell newcomers about.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/neffs-1.png',
+                src: '/salt-lake-city/hidden-gems/neffs-1.png',
                 alt: 'Mountain canyon trail with creek and aspen trees',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/neffs-2.png',
+                src: '/salt-lake-city/hidden-gems/neffs-2.png',
                 alt: 'Neff\'s Canyon trail views',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/neffs-3.png',
+                src: '/salt-lake-city/hidden-gems/neffs-3.png',
                 alt: 'Wildflowers along Neff\'s Canyon',
               }
             ],
@@ -576,11 +576,11 @@ export const salt_lake_city: CityData = {
             description: 'Everyone knows Crystal Lake in the Uintas—it\'s the first lake past the trailhead, and on summer weekends it\'s a zoo. But keep walking another mile and the crowds vanish. Wall Lake sits in a cirque of granite, its water an impossible shade of icy green, with cliffs at the southeastern end tall enough to jump from if you\'re brave and stupid in equal measure. The lake is deep, cold even in August, and ringed by wildflowers that somehow survive at 10,000 feet. Locals treat Wall Lake like a secret handshake—mentioning it to the right people signals you know the real Wasatch. Arrive at dawn on a Tuesday and you might have the whole thing to yourself. Show up on a Saturday and you\'ll share it with every other local who reads articles like this one.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/wall-lake-1.png',
+                src: '/salt-lake-city/hidden-gems/wall-lake-1.png',
                 alt: 'Mountain lake with cliffs and clear green water',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/wall-lake-2.png',
+                src: '/salt-lake-city/hidden-gems/wall-lake-2.png',
                 alt: 'Wall Lake swimming hole in the Uintas',
               }
             ],
@@ -603,15 +603,15 @@ export const salt_lake_city: CityData = {
             description: 'For decades, Salt Lake children whispered about "Hobbitville"—a mysterious property along Emigration Creek where tiny houses dotted the woods, peacocks roamed free, and strange hermits supposedly lived in seclusion. Parents warned kids away. Teenagers snuck in anyway. The truth was weirder than the legends: in the 1930s, a wealthy couple built a bird sanctuary here, then opened it to artists and eccentrics who constructed whimsical cabins among the trees. By the 1960s it was a counterculture commune. By the 1980s it was abandoned, overgrown, and perfect for urban mythology. In 2020, Salt Lake finally acquired the 8-acre property and opened it to the public. The peacocks are gone, but the tiny houses remain—hobbit-sized structures slowly being reclaimed by the forest, monuments to a Salt Lake that existed before conformity became the brand.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/hobbitville-1.png',
+                src: '/salt-lake-city/hidden-gems/hobbitville-1.png',
                 alt: 'Small artistic cabins in wooded park setting',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/hobbitville-2.png',
+                src: '/salt-lake-city/hidden-gems/hobbitville-2.png',
                 alt: 'Allen Park Hobbitville structures',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/hobbitville-3.png',
+                src: '/salt-lake-city/hidden-gems/hobbitville-3.png',
                 alt: 'Whimsical buildings at Hobbitville',
               }
             ],
@@ -629,11 +629,11 @@ export const salt_lake_city: CityData = {
             description: 'Moshe Safdie designed Salt Lake\'s main library to be climbed—a curved glass-and-concrete building with a public walkway that spirals to the roof. Most visitors never make it past the books. Their loss. The rooftop garden offers 360-degree views of downtown, the Wasatch Range, and the Great Salt Lake, plus reading nooks, native plants, and a working bee farm that produces honey sold in the gift shop. At sunset, the mountains turn pink and the city glows amber and you remember that Salt Lake, for all its contradictions, occupies one of the most dramatic settings in North America. All of this is free, open during library hours, and almost entirely ignored by tourists who came for Temple Square and left without looking up.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/rooftop-garden-1.png',
+                src: '/salt-lake-city/hidden-gems/rooftop-garden-1.png',
                 alt: 'Urban rooftop garden with city skyline views',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/rooftop-2.png',
+                src: '/salt-lake-city/hidden-gems/rooftop-2.png',
                 alt: 'Salt Lake Library rooftop garden',
               }
             ],
@@ -652,11 +652,11 @@ export const salt_lake_city: CityData = {
             description: 'The LDS Church\'s 28-story administrative headquarters dominates Temple Square—and on the top floor, open to anyone who asks, is one of the best free views in the American West. The observation deck offers floor-to-ceiling windows facing every direction: Temple Square directly below, the Wasatch Range to the east, the Great Salt Lake shimmering to the northwest, and downtown Salt Lake spreading south. Most tourists spend hours at Temple Square without ever knowing they can ride an elevator to the top of the adjacent tower. There\'s a small exhibit about church history, but the real draw is the view. Free, air-conditioned, and somehow always uncrowded. You don\'t have to be Mormon. You just have to know it exists.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/observation-deck-1.png',
+                src: '/salt-lake-city/hidden-gems/observation-deck-1.png',
                 alt: 'Panoramic city view from high-rise observation deck',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/observation-deck-2.png',
+                src: '/salt-lake-city/hidden-gems/observation-deck-2.png',
                 alt: 'View from Church Office Building observation deck',
               }
             ],
@@ -674,11 +674,11 @@ export const salt_lake_city: CityData = {
             description: 'Ken Sanders was Edward Abbey\'s close friend and literary executor, which tells you everything about the kind of bookstore this is. Three floors of antiquarian madness crammed into a space where the aisles are barely shoulder-width and the stacks reach the ceiling. Sanders specializes in Western Americana, Mormon history, Colorado River exploration, and Grand Canyon literature—the kind of rare books that serious collectors travel across the country to find. But the shop also overflows with vintage postcards, WPA posters, maps that predate statehood, and paperbacks priced to sell. Sanders himself is often there, holding court, telling stories about Abbey and the desert and the old Salt Lake that developers are erasing. The shop sits just off the corner, easy to miss, guarded by its own obscurity. Prices are surprisingly reasonable. The experience is priceless.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/rarebooks-1.png',
+                src: '/salt-lake-city/hidden-gems/rarebooks-1.png',
                 alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/rarebooks-2.png',
+                src: '/salt-lake-city/hidden-gems/rarebooks-2.png',
                 alt: 'Ken Sanders Rare Books interior',
               }
             ],
@@ -697,15 +697,15 @@ export const salt_lake_city: CityData = {
             description: 'Two miles from Temple Square, in a working-class neighborhood that tourists never visit, 28 countries have built gardens along the Jordan River. The Japanese garden is the showpiece—bamboo groves, stone lanterns, koi ponds, a moon bridge arcing over water lilies—but Greece, Germany, India, and two dozen other nations have staked their claims in this 11-acre oasis. Salt Lake\'s immigrant communities built these gardens starting in 1939, a Depression-era project that somehow survived and grew. The result is a world tour in a single afternoon: manicured European formalism giving way to tropical plantings, Buddhist sculpture neighbors Scandinavian modernism. Most Salt Lakers don\'t know this place exists. Even the ones who do rarely visit. On a weekday morning, you might have an entire country to yourself.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/peacegarden-1.png',
+                src: '/salt-lake-city/hidden-gems/peacegarden-1.png',
                 alt: 'Japanese garden with lotus flowers and water features',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/peacegarden-2.png',
+                src: '/salt-lake-city/hidden-gems/peacegarden-2.png',
                 alt: 'International Peace Gardens paths',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/peacegarden-3.png',
+                src: '/salt-lake-city/hidden-gems/peacegarden-3.png',
                 alt: 'Gardens from different nations at Peace Gardens',
               }
             ],
@@ -724,11 +724,11 @@ export const salt_lake_city: CityData = {
             description: 'Since 1999, Kilby Court has operated out of a space no bigger than a two-car garage in an industrial alley west of downtown—and somehow became the most important music venue in Salt Lake history. The Killers played here before anyone knew their name. Modest Mouse, Band of Horses, The Shins—all passed through this room that holds maybe 200 people if everyone breathes in. The walls are covered in band stickers and handwritten set lists. The sound is imperfect in the way that makes live music feel alive. Kilby is all-ages and alcohol-free, which means the crowd comes for the music, period. Artists play for almost nothing because the room has a reputation that travels. In a city where venues come and go, Kilby has survived 25 years on pure DIY stubbornness. Check the calendar. Buy a ticket. Stand three feet from someone who might be famous in two years.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/kilby-1.png',
+                src: '/salt-lake-city/hidden-gems/kilby-1.png',
                 alt: 'Small intimate music venue with stage and crowd',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/kilby-2.png',
+                src: '/salt-lake-city/hidden-gems/kilby-2.png',
                 alt: 'Kilby Court venue interior',
               }
             ],
@@ -747,11 +747,11 @@ export const salt_lake_city: CityData = {
             description: 'In a state with some of America\'s strangest liquor laws, it\'s fitting that one of Salt Lake\'s best restaurants hides beneath a taco shop. The Rest occupies the basement below Bodega, accessed through an unmarked door that requires reservations to open. The space channels a 1920s hunting lodge—leather, wood, taxidermy, low lighting—with a menu that goes far beyond bar food. The Beer Can Chicken is legendary: a whole bird roasted upright over a can of Uinta, served with sides meant for sharing. Cocktails are serious but not pretentious. Desserts are mandatory. The speakeasy concept is overdone in most cities, but The Rest earns it—partly because Utah\'s relationship with alcohol has always been complicated, and partly because hiding something this good feels appropriately subversive.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/therest-1.png',
+                src: '/salt-lake-city/hidden-gems/therest-1.png',
                 alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/therest-2.png',
+                src: '/salt-lake-city/hidden-gems/therest-2.png',
                 alt: 'The Rest speakeasy dining room',
               }
             ],
@@ -770,11 +770,11 @@ export const salt_lake_city: CityData = {
             description: 'Salt Lake\'s street grid is famously wide and rational—except in the Marmalade District, where narrow lanes named Apricot, Quince, and Almond wind up steep hillsides in complete defiance of city planning. The neighborhood exists because 19th-century merchants who\'d made money in San Francisco built homes here in the styles they remembered: Italianate, Queen Anne, Gothic Revival, Carpenter Gothic. The terrain reminded them of Nob Hill, so they imported the architecture. The result is Salt Lake\'s oldest residential neighborhood and its strangest—a pocket of Victorian San Francisco dropped into the Mormon grid, named for the fruit trees that once covered the slopes. Listed on the National Register since 1982, the Marmalade has gentrified but not homogenized. The best way to experience it is on foot, climbing the hills, discovering houses that look teleported from another city, another century.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/marmalade-1.png',
+                src: '/salt-lake-city/hidden-gems/marmalade-1.png',
                 alt: 'Victorian houses on steep hillside street',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/marmalde-2.png',
+                src: '/salt-lake-city/hidden-gems/marmalde-2.png',
                 alt: 'Marmalade District historic architecture',
               }
             ],
@@ -792,15 +792,15 @@ export const salt_lake_city: CityData = {
             description: 'Every college town has a pizza joint that defines the student experience. At the University of Utah, it\'s The Pie—specifically the underground location on 200 South, where the walls are covered floor-to-ceiling in decades of graffiti, the tables are perpetually sticky, and the slices are big enough to fold in half and eat like a taco. The Pie has been here since 1980, feeding generations of undergrads, grad students, late-night studiers, and hungover Sundance attendees. The decor hasn\'t changed. The recipe hasn\'t changed. The prices have barely changed. You order at the counter, find a seat in the controlled chaos, and eat pizza in a room that smells like it\'s absorbed forty years of cheese and institutional rebellion. It\'s not the best pizza in Salt Lake—it\'s something better: the pizza that Salt Lake remembers.',
             images: [
               {
-                src: '/Salt-Lake-City/hidden-gems/thepie-1.png',
+                src: '/salt-lake-city/hidden-gems/thepie-1.png',
                 alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/thepie-2.png',
+                src: '/salt-lake-city/hidden-gems/thepie-2.png',
                 alt: 'The Pie Pizzeria interior',
               },
               {
-                src: '/Salt-Lake-City/hidden-gems/thepie-3.png',
+                src: '/salt-lake-city/hidden-gems/thepie-3.png',
                 alt: 'The Pie Underground atmosphere',
               }
             ],
@@ -2097,23 +2097,23 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Current proved Salt Lake could support destination dining at a national level. The oysters were legendary.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/current-1.png',
+                src: '/salt-lake-city/lost-loved/current-1.png',
                 alt: 'Current Fish & Oyster restaurant interior',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/current-2.png',
+                src: '/salt-lake-city/lost-loved/current-2.png',
                 alt: 'Current Fish & Oyster raw bar',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/current-3.png',
+                src: '/salt-lake-city/lost-loved/current-3.png',
                 alt: 'Current Fish & Oyster dining room',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/current-5.png',
+                src: '/salt-lake-city/lost-loved/current-5.png',
                 alt: 'Current Fish & Oyster dishes',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/current-6.png',
+                src: '/salt-lake-city/lost-loved/current-6.png',
                 alt: 'Current Fish & Oyster seafood selection',
               }
             ],
@@ -2129,15 +2129,15 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Nothing has filled the void left by The Zephyr. It was where Salt Lake\'s music scene happened.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/zephr-1.png',
+                src: '/salt-lake-city/lost-loved/zephr-1.png',
                 alt: 'The Zephyr Club exterior with art deco facade',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/zephr-2.png',
+                src: '/salt-lake-city/lost-loved/zephr-2.png',
                 alt: 'The Zephyr Club interior stage',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/zephyr-3.png',
+                src: '/salt-lake-city/lost-loved/zephyr-3.png',
                 alt: 'The Zephyr Club live performance',
               }
             ],
@@ -2153,15 +2153,15 @@ export const salt_lake_city: CityData = {
             whyMissed: 'Those cheese fries. That dipping sauce. Utahns who moved away still dream about them.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/trainingtable-1.png',
+                src: '/salt-lake-city/lost-loved/trainingtable-1.png',
                 alt: 'The Training Table restaurant booth with table phone',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/trainingtable-2.png',
+                src: '/salt-lake-city/lost-loved/trainingtable-2.png',
                 alt: 'The Training Table cheese fries',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/trainingtable-3.png',
+                src: '/salt-lake-city/lost-loved/trainingtable-3.png',
                 alt: 'The Training Table interior',
               }
             ],
@@ -2177,15 +2177,15 @@ export const salt_lake_city: CityData = {
             whyMissed: 'The democratic chaos of a real mall, replaced by curated retail that feels more like a temple than a town square.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/ZCMI-01.png',
+                src: '/salt-lake-city/lost-loved/ZCMI-01.png',
                 alt: 'ZCMI Center mall interior before demolition',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/ZCMI-2.png',
+                src: '/salt-lake-city/lost-loved/ZCMI-2.png',
                 alt: 'ZCMI department store exterior',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/ZCMI-3.png',
+                src: '/salt-lake-city/lost-loved/ZCMI-3.png',
                 alt: 'Crossroads Plaza shopping center',
               }
             ],
@@ -2203,11 +2203,11 @@ export const salt_lake_city: CityData = {
             whyMissed: 'It burned twice and never came back. Today only wooden pilings remain, stretching into the lake like a skeleton.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/saltair-1.png',
+                src: '/salt-lake-city/lost-loved/saltair-1.png',
                 alt: 'Historic Saltair Resort on the Great Salt Lake',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/saltair-2.png',
+                src: '/salt-lake-city/lost-loved/saltair-2.png',
                 alt: 'Saltair Resort pavilion and beach',
               }
             ],
@@ -2223,15 +2223,15 @@ export const salt_lake_city: CityData = {
             whyMissed: 'For immigrants from the Middle East, Cedars was a taste of home. For everyone else, it was an education.',
             images: [
               {
-                src: '/Salt-Lake-City/lost-loved/cedars-1.png',
+                src: '/salt-lake-city/lost-loved/cedars-1.png',
                 alt: 'Cedars of Lebanon restaurant exterior',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/cedars-2.png',
+                src: '/salt-lake-city/lost-loved/cedars-2.png',
                 alt: 'Cedars of Lebanon mezze platter',
               },
               {
-                src: '/Salt-Lake-City/lost-loved/cedars-3.png',
+                src: '/salt-lake-city/lost-loved/cedars-3.png',
                 alt: 'Cedars of Lebanon dining room',
               }
             ],

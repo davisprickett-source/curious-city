@@ -70,7 +70,7 @@ export const portland: CityData = {
             body: 'In 1971, a man in a business suit calling himself Dan Cooper hijacked Northwest Orient Flight 305, demanded $200,000 (about $1.5 million today), and parachuted into a thunderstorm somewhere over southwestern Washington. He was never found. The case consumed the FBI for decades. Then in 1980, an 8-year-old boy digging a firepit along the Columbia River near Portland unearthed $5,800 in disintegrating twenties—serial numbers matching Cooper\'s ransom. The rest of the money? Gone. The man? Vanished. It remains the only unsolved hijacking in American aviation history and the Pacific Northwest\'s most enduring mystery.',
             year: '1971',
             image: {
-              src: '/Portland/curiosities/DB-Cooper.png',
+              src: '/portland/curiosities/DB-Cooper.png',
               alt: 'D.B. Cooper hijacking over Portland area',
             },
             source: 'FBI records',
@@ -87,7 +87,7 @@ export const portland: CityData = {
             body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. The park still exists today. Locals still decorate it seasonally. The leprechaun, as far as anyone knows, never left.',
             year: '1948',
             image: {
-              src: '/Portland/curiosities/Mill-Ends-Park.png',
+              src: '/portland/curiosities/Mill-Ends-Park.png',
               alt: 'Mill Ends Park, the world\'s smallest park in Portland',
             },
             source: 'Guinness World Records',
@@ -109,7 +109,7 @@ export const portland: CityData = {
             body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
             year: '1857',
             image: {
-              src: '/Portland/curiosities/black-exclusion.png',
+              src: '/portland/curiosities/black-exclusion.png',
               alt: 'Oregon black exclusion laws historical document',
             },
             source: 'Oregon Historical Society',
@@ -126,7 +126,7 @@ export const portland: CityData = {
             body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in 2024 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition to self-service felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed.',
             year: '2024',
             image: {
-              src: '/Portland/curiosities/Portland-gas-service.png',
+              src: '/portland/curiosities/Portland-gas-service.png',
               alt: 'Oregon gas station attendant filling car',
             },
             source: 'Oregon Legislature',
@@ -143,7 +143,7 @@ export const portland: CityData = {
             body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
             year: '1948',
             image: {
-              src: '/Portland/curiosities/Portland-Flood.png',
+              src: '/portland/curiosities/Portland-Flood.png',
               alt: 'Vanport flood destruction in 1948',
             },
             source: 'Oregon Historical Society',
@@ -164,7 +164,7 @@ export const portland: CityData = {
             title: 'The Shanghai Tunnels might be Portland\'s most profitable myth',
             body: 'The story goes like this: beneath Old Town, a network of tunnels connected bars and hotels to the waterfront, where unsuspecting men were drugged, dragged underground, and sold to ship captains desperate for crews—a practice called "shanghaiing." The tunnels exist. Shanghaiing definitely happened in Portland. But did the tunnels get used for kidnapping? Historians are skeptical. Most evidence suggests they were just for moving cargo between basements and the docks. Tour companies, however, have built an entire industry on the dramatic version. Truth is boring. Kidnapping tunnels sell tickets.',
             image: {
-              src: '/Portland/curiosities/shanghai-tunnels.png',
+              src: '/portland/curiosities/shanghai-tunnels.png',
               alt: 'Underground Shanghai tunnels in Portland Old Town',
             },
             source: 'Oregon Encyclopedia',
@@ -181,7 +181,7 @@ export const portland: CityData = {
             body: 'In 1845, two New England transplants—Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine—founded a settlement on the Willamette River and immediately disagreed on what to call it. Both wanted to name it after their respective hometowns. Neither would budge. So they flipped a coin. Pettygrove won. Portland, Oregon was born. Had the copper penny landed differently, you\'d be reading about Boston, Oregon right now—a timeline too cursed to contemplate. The "Portland Penny" is on display at the Oregon Historical Society, where it continues to represent the city\'s entire identity hinging on a 50/50 chance.',
             year: '1845',
             image: {
-              src: '/Portland/curiosities/coin-flip.png',
+              src: '/portland/curiosities/coin-flip.png',
               alt: 'The Portland Penny that decided the city\'s name',
             },
             source: 'Oregon Historical Society',
@@ -194,7 +194,7 @@ export const portland: CityData = {
             body: 'In 1984, Widmer Brothers and BridgePort Brewing opened in Portland, years before anyone called it "craft beer." They were just making beer that didn\'t taste like water. The term wouldn\'t be coined for another decade. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, running since 1988, is one of the largest outdoor craft beer events in the country. What started as a handful of weirdos brewing in warehouses became an entire economic sector. Portland didn\'t follow the craft beer trend. It created it.',
             year: '1984',
             image: {
-              src: '/Portland/curiosities/beer.png',
+              src: '/portland/curiosities/beer.png',
               alt: 'Portland craft beer scene with local breweries',
             },
             source: 'Oregon Brewers Guild',
@@ -208,11 +208,11 @@ export const portland: CityData = {
             year: '1974',
             images: [
               {
-                src: '/Portland/curiosities/highway-park-1.png',
+                src: '/portland/curiosities/highway-park-1.png',
                 alt: 'Harbor Drive freeway before demolition',
               },
               {
-                src: '/Portland/curiosities/highway-park-2.png',
+                src: '/portland/curiosities/highway-park-2.png',
                 alt: 'Tom McCall Waterfront Park after freeway removal',
               }
             ],
@@ -229,7 +229,7 @@ export const portland: CityData = {
             title: 'Portland gets less rain than New York, Houston, or Miami',
             body: 'Portland averages 36 inches of rain per year. New York gets 46 inches. Houston gets 50. Miami gets 62. The Pacific Northwest\'s rainy reputation isn\'t about quantity—it\'s about relentlessness. Portland doesn\'t dump rain all at once like other cities. It drizzles. Constantly. From October to June, the sky stays gray and the rain never quite stops, but never quite commits either. It\'s meteorological psychological warfare. Real Portlanders don\'t carry umbrellas. They wear layers, embrace dampness, and develop an adversarial relationship with the sun.',
             image: {
-              src: '/Portland/curiosities/Portland-Rain.png',
+              src: '/portland/curiosities/Portland-Rain.png',
               alt: 'Rainy day in Portland with people without umbrellas',
             },
             source: 'National Weather Service',
@@ -242,7 +242,7 @@ export const portland: CityData = {
             body: 'In 1962, a farmer plowing his field near Tualatin hit something massive: mastodon bones. The skeleton dated to roughly 10,000 years ago, at the tail end of the last Ice Age. But the real discovery was the cut marks—clear evidence of human butchering. Someone had carved meat from this animal. It proved that humans and megafauna coexisted in the Portland area for thousands of years. The Tualatin Mastodon now resides at the Oregon Museum of Science and Industry, a reminder that this land was occupied long before coin flips and city planning.',
             year: '1962',
             image: {
-              src: '/Portland/curiosities/bones.png',
+              src: '/portland/curiosities/bones.png',
               alt: 'Tualatin Mastodon skeleton at OMSI',
             },
             source: 'Oregon Museum of Science and Industry',
@@ -259,11 +259,11 @@ export const portland: CityData = {
             body: 'Powell\'s occupies an entire city block—68,000 square feet holding over a million books. The rooms are color-coded. New and used books share the same shelves. They hand you a map at the entrance because people genuinely get lost. For a generation of Portlanders, Powell\'s wasn\'t just a bookstore—it was a third place, a refuge, a reason to move here. You could spend an entire rainy afternoon wandering the stacks and leave with six books you didn\'t know you needed. It\'s the world\'s largest independent bookstore, and in an era of Amazon dominance, the fact that it still exists feels like a minor miracle.',
             images: [
               {
-                src: '/Portland/curiosities/Powells-books-1.png',
+                src: '/portland/curiosities/Powells-books-1.png',
                 alt: 'Powell\'s City of Books exterior on full city block',
               },
               {
-                src: '/Portland/curiosities/powells-books-2.png',
+                src: '/portland/curiosities/powells-books-2.png',
                 alt: 'Interior of Powell\'s Books with color-coded rooms',
               }
             ],
@@ -280,7 +280,7 @@ export const portland: CityData = {
             title: 'Portland\'s music scene has always punched absurdly above its weight',
             body: 'For a mid-sized city in the corner of the country, Portland has produced a ridiculous amount of iconic music: Elliott Smith, The Decemberists, Modest Mouse, Sleater-Kinney, Everclear, Pink Martini, The Shins. The Crystal Ballroom has hosted shows since 1914. The all-ages venue scene in the \'90s and 2000s gave an entire generation of teenagers a place to see live music and start bands. K Records in nearby Olympia created a Pacific Northwest DIY ethos that spread nationally. It wasn\'t an accident. It was cheap rent, a thriving arts culture, and a city that left its weirdos alone long enough to create something.',
             image: {
-              src: '/Portland/curiosities/music-scene.png',
+              src: '/portland/curiosities/music-scene.png',
               alt: 'Portland music venue scene and indie rock history',
             },
             source: 'Oregon Music Hall of Fame',
@@ -293,15 +293,15 @@ export const portland: CityData = {
             body: 'Forest Park covers 5,200 acres with over 80 miles of trails—one of the largest urban forests in the United States. Within minutes of downtown, you can be surrounded by old-growth Douglas firs, encounter elk, and completely lose sight of the city. The Wildwood Trail stretches 30 miles through the canopy. It\'s the kind of resource that defines a city\'s character—and that locals take entirely for granted until they move somewhere else and realize most cities don\'t have a temperate rainforest within city limits.',
             images: [
               {
-                src: '/Portland/curiosities/park-1.png',
+                src: '/portland/curiosities/park-1.png',
                 alt: 'Forest Park trail through old growth Douglas firs',
               },
               {
-                src: '/Portland/curiosities/park-2.png',
+                src: '/portland/curiosities/park-2.png',
                 alt: 'Wildwood Trail winding through Forest Park',
               },
               {
-                src: '/Portland/curiosities/park-3.png',
+                src: '/portland/curiosities/park-3.png',
                 alt: 'Forest Park urban forest canopy',
               }
             ],
@@ -319,7 +319,7 @@ export const portland: CityData = {
             body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was a genuinely strange idea. They sold a Pepto-Bismol doughnut and a NyQuil-frosted doughnut before the FDA shut that down. It was weird in the way Portland used to be weird—unselfconscious, a little gross, and doing it for the bit. Then it got famous. Now there are locations in multiple states, the lines are full of tourists with selfie sticks, and every local will tell you to go to Blue Star or Pip\'s Original instead. Voodoo isn\'t weird anymore. It\'s a brand. And that might be the most Portland story of all.',
             year: '2003',
             image: {
-              src: '/Portland/curiosities/voodoo.png',
+              src: '/portland/curiosities/voodoo.png',
               alt: 'Voodoo Doughnut shop in Portland Old Town',
             },
             source: 'Voodoo Doughnut',
@@ -1117,7 +1117,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/kyron.png',
+                src: '/portland/Dark-history/kyron.png',
                 alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
               }
             ],
@@ -1178,7 +1178,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/curiosities/shanghai-tunnels.png',
+                src: '/portland/curiosities/shanghai-tunnels.png',
                 alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
               }
             ],
@@ -1240,7 +1240,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/curiosities/Portland-Flood.png',
+                src: '/portland/curiosities/Portland-Flood.png',
                 alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
               }
             ],
@@ -1293,7 +1293,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/saloon.png',
+                src: '/portland/Dark-history/saloon.png',
                 alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
               }
             ],
@@ -1353,7 +1353,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/i-5-killer.png',
+                src: '/portland/Dark-history/i-5-killer.png',
                 alt: 'Historical documentation and evidence related to the I-5 Killer case',
               }
             ],
@@ -1404,7 +1404,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/mansion.png',
+                src: '/portland/Dark-history/mansion.png',
                 alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
               }
             ],
@@ -1456,7 +1456,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/forest-park.png',
+                src: '/portland/Dark-history/forest-park.png',
                 alt: 'Forest Park location where the Forest Park Killer crimes occurred',
               }
             ],
@@ -1515,7 +1515,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/Dark-history/lone-fer-2.png',
+                src: '/portland/Dark-history/lone-fer-2.png',
                 alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
               }
             ],
@@ -1574,7 +1574,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/Portland/curiosities/black-exclusion.png',
+                src: '/portland/curiosities/black-exclusion.png',
                 alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
               }
             ],

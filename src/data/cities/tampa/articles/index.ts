@@ -14,7 +14,7 @@ export const gasparillaArticle: Article = {
   },
   publishedAt: '2025-01-09T12:00:00Z',
   featuredImage: {
-    src: '/Tampa/gasparilla-ship.jpg',
+    src: '/tampa/gasparilla-ship.jpg',
     alt: 'The Jose Gasparilla II pirate ship entering Tampa Bay',
     credit: 'Tampa Bay History Center',
   },

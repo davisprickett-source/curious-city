@@ -931,10 +931,10 @@ export const tampa: CityData = {
             instagram: '@jekyllhydepark',
             hours: 'Tue-Wed 5pm-11pm, Thu-Sat 5pm-1am, closed Sun-Mon',
             images: [
-              { src: '/Tampa/bars/Jekyll-1.png', alt: 'Jekyll speakeasy interior' },
-              { src: '/Tampa/bars/Jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
-              { src: '/Tampa/bars/Jekyll-3.png', alt: 'Intimate bar seating' },
-              { src: '/Tampa/bars/Jekyll-4.png', alt: 'Jekyll moody ambiance' },
+              { src: '/tampa/bars/Jekyll-1.png', alt: 'Jekyll speakeasy interior' },
+              { src: '/tampa/bars/Jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
+              { src: '/tampa/bars/Jekyll-3.png', alt: 'Intimate bar seating' },
+              { src: '/tampa/bars/Jekyll-4.png', alt: 'Jekyll moody ambiance' },
             ],
           },
           {
@@ -950,9 +950,9 @@ export const tampa: CityData = {
             instagram: '@thebricksybor',
             hours: 'Wed-Thu 4pm-12am, Fri 4pm-1am, Sat 12pm-1am, Sun 12pm-9pm, closed Mon-Tue',
             images: [
-              { src: '/Tampa/bars/bricks-1.png', alt: 'The Bricks open-air patio' },
-              { src: '/Tampa/bars/bricks-2.png', alt: 'The Bricks bar interior' },
-              { src: '/Tampa/bars/bricks-3.png', alt: 'Corner bar on 7th Avenue' },
+              { src: '/tampa/bars/bricks-1.png', alt: 'The Bricks open-air patio' },
+              { src: '/tampa/bars/bricks-2.png', alt: 'The Bricks bar interior' },
+              { src: '/tampa/bars/bricks-3.png', alt: 'Corner bar on 7th Avenue' },
             ],
           },
           {
@@ -968,8 +968,8 @@ export const tampa: CityData = {
             instagram: '@indieseminoleheights',
             hours: 'Mon-Thu 11am-12am, Fri-Sat 11am-1am, Sun 11am-12am',
             images: [
-              { src: '/Tampa/bars/independent.png', alt: 'The Independent beer hall exterior' },
-              { src: '/Tampa/bars/independent-2.png', alt: 'Belgian beer selection' },
+              { src: '/tampa/bars/independent.png', alt: 'The Independent beer hall exterior' },
+              { src: '/tampa/bars/independent-2.png', alt: 'Belgian beer selection' },
             ],
           },
           {
@@ -985,9 +985,9 @@ export const tampa: CityData = {
             instagram: '@cigarcitycider_mead',
             hours: 'Wed-Fri 5pm-12am, Sat-Sun 12pm-12am, closed Mon-Tue',
             images: [
-              { src: '/Tampa/bars/cigar-city.png', alt: 'Cigar City Cider tasting room' },
-              { src: '/Tampa/bars/cigar-city-2.png', alt: 'Cider and mead flight' },
-              { src: '/Tampa/bars/cigar-city-3.png', alt: 'Craft ciders on tap' },
+              { src: '/tampa/bars/cigar-city.png', alt: 'Cigar City Cider tasting room' },
+              { src: '/tampa/bars/cigar-city-2.png', alt: 'Cider and mead flight' },
+              { src: '/tampa/bars/cigar-city-3.png', alt: 'Craft ciders on tap' },
             ],
           },
           {
@@ -1003,9 +1003,9 @@ export const tampa: CityData = {
             instagram: '@madamefortunetpa',
             hours: 'Wed-Thu 5pm-10pm, Fri-Sat 4pm-1am, Sun 4pm-10pm, closed Mon-Tue',
             images: [
-              { src: '/Tampa/bars/madame-1.png', alt: 'Madame Fortune speakeasy entrance' },
-              { src: '/Tampa/bars/madame-2.png', alt: 'Craft cocktail and dessert' },
-              { src: '/Tampa/bars/madame-3.png', alt: 'Intimate HiFi parlour' },
+              { src: '/tampa/bars/madame-1.png', alt: 'Madame Fortune speakeasy entrance' },
+              { src: '/tampa/bars/madame-2.png', alt: 'Craft cocktail and dessert' },
+              { src: '/tampa/bars/madame-3.png', alt: 'Intimate HiFi parlour' },
             ],
           },
         ],
@@ -1030,11 +1030,11 @@ export const tampa: CityData = {
             instagram: '@roosterandthetill',
             hours: 'Wed-Thu 5pm-9pm, Fri-Sat 5pm-10pm, closed Sun-Tue',
             images: [
-              { src: '/Tampa/restaurants/rooster-0.png', alt: 'Rooster & the Till exterior' },
-              { src: '/Tampa/restaurants/rooster-1.png', alt: 'Farm-to-table plating' },
-              { src: '/Tampa/restaurants/rooster-2.png', alt: 'Open kitchen at Rooster & the Till' },
-              { src: '/Tampa/restaurants/rooster-3.png', alt: 'Seasonal dish presentation' },
-              { src: '/Tampa/restaurants/rooster-4.png', alt: 'Dining room ambiance' },
+              { src: '/tampa/restaurants/rooster-0.png', alt: 'Rooster & the Till exterior' },
+              { src: '/tampa/restaurants/rooster-1.png', alt: 'Farm-to-table plating' },
+              { src: '/tampa/restaurants/rooster-2.png', alt: 'Open kitchen at Rooster & the Till' },
+              { src: '/tampa/restaurants/rooster-3.png', alt: 'Seasonal dish presentation' },
+              { src: '/tampa/restaurants/rooster-4.png', alt: 'Dining room ambiance' },
             ],
           },
           {
@@ -1050,9 +1050,9 @@ export const tampa: CityData = {
             instagram: '@lasegundabakery',
             hours: 'Daily 6:30am-3pm',
             images: [
-              { src: '/Tampa/restaurants/segunda-1.png', alt: 'La Segunda bakery storefront' },
-              { src: '/Tampa/restaurants/segunda-2.png', alt: 'Fresh Cuban bread' },
-              { src: '/Tampa/restaurants/segunda-3.png', alt: 'Cuban sandwich on fresh-baked bread' },
+              { src: '/tampa/restaurants/segunda-1.png', alt: 'La Segunda bakery storefront' },
+              { src: '/tampa/restaurants/segunda-2.png', alt: 'Fresh Cuban bread' },
+              { src: '/tampa/restaurants/segunda-3.png', alt: 'Cuban sandwich on fresh-baked bread' },
             ],
           },
           {
@@ -1069,10 +1069,10 @@ export const tampa: CityData = {
             instagram: '@bernssteakhouse',
             hours: 'Tue-Thu 5pm-10pm, Fri-Sat 5pm-11pm, Sun 5pm-10pm, closed Mon',
             images: [
-              { src: '/Tampa/restaurants/berns-1.png', alt: 'Bern\'s Steak House exterior' },
-              { src: '/Tampa/restaurants/berns-2.png', alt: 'Dry-aged steak presentation' },
-              { src: '/Tampa/restaurants/berns-3.png', alt: 'Famous Dessert Room' },
-              { src: '/Tampa/restaurants/berns-4.png', alt: 'Wine cellar collection' },
+              { src: '/tampa/restaurants/berns-1.png', alt: 'Bern\'s Steak House exterior' },
+              { src: '/tampa/restaurants/berns-2.png', alt: 'Dry-aged steak presentation' },
+              { src: '/tampa/restaurants/berns-3.png', alt: 'Famous Dessert Room' },
+              { src: '/tampa/restaurants/berns-4.png', alt: 'Wine cellar collection' },
             ],
           },
           {
@@ -1088,9 +1088,9 @@ export const tampa: CityData = {
             instagram: '@uleletampa',
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
             images: [
-              { src: '/Tampa/restaurants/ulele-1.png', alt: 'Ulele riverside building' },
-              { src: '/Tampa/restaurants/ulele-2.png', alt: 'Barbacoa grill in action' },
-              { src: '/Tampa/restaurants/ulele-3.png', alt: 'Charbroiled oysters' },
+              { src: '/tampa/restaurants/ulele-1.png', alt: 'Ulele riverside building' },
+              { src: '/tampa/restaurants/ulele-2.png', alt: 'Barbacoa grill in action' },
+              { src: '/tampa/restaurants/ulele-3.png', alt: 'Charbroiled oysters' },
             ],
           },
           {
@@ -1105,9 +1105,9 @@ export const tampa: CityData = {
             hours: 'Mon-Sat 6am-3pm, closed Sun',
             price: '$',
             images: [
-              { src: '/Tampa/restaurants/west-tampa-1.png', alt: 'West Tampa Sandwich Shop counter' },
-              { src: '/Tampa/restaurants/west-tampa-2.png', alt: 'Cuban sandwich' },
-              { src: '/Tampa/restaurants/west-tampa-3.png', alt: 'Neighborhood sandwich shop' },
+              { src: '/tampa/restaurants/west-tampa-1.png', alt: 'West Tampa Sandwich Shop counter' },
+              { src: '/tampa/restaurants/west-tampa-2.png', alt: 'Cuban sandwich' },
+              { src: '/tampa/restaurants/west-tampa-3.png', alt: 'Neighborhood sandwich shop' },
             ],
           },
           {
@@ -1123,8 +1123,8 @@ export const tampa: CityData = {
             instagram: '@columbiarestaurant',
             hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 11am-9pm',
             images: [
-              { src: '/Tampa/hidden-gems/columbia-1.png', alt: 'Columbia Restaurant historic dining room' },
-              { src: '/Tampa/hidden-gems/columbia-2.png', alt: 'Columbia Restaurant dining area' },
+              { src: '/tampa/hidden-gems/columbia-1.png', alt: 'Columbia Restaurant historic dining room' },
+              { src: '/tampa/hidden-gems/columbia-2.png', alt: 'Columbia Restaurant dining area' },
             ],
           },
         ],
@@ -1149,11 +1149,11 @@ export const tampa: CityData = {
             website: 'https://buddybrew.com',
             instagram: '@buddybrewcoffee',
             images: [
-              { src: '/Tampa/coffee-shops/buddybrew-1.png', alt: 'Buddy Brew Coffee Tampa' },
-              { src: '/Tampa/coffee-shops/buddybrew-2.png', alt: 'Buddy Brew Coffee interior' },
-              { src: '/Tampa/coffee-shops/buddybrew-3.png', alt: 'Buddy Brew Coffee drinks' },
-              { src: '/Tampa/coffee-shops/buddybrew-4.png', alt: 'Buddy Brew Coffee roasting' },
-              { src: '/Tampa/coffee-shops/buddybrew-5.png', alt: 'Buddy Brew Coffee location' },
+              { src: '/tampa/coffee-shops/buddybrew-1.png', alt: 'Buddy Brew Coffee Tampa' },
+              { src: '/tampa/coffee-shops/buddybrew-2.png', alt: 'Buddy Brew Coffee interior' },
+              { src: '/tampa/coffee-shops/buddybrew-3.png', alt: 'Buddy Brew Coffee drinks' },
+              { src: '/tampa/coffee-shops/buddybrew-4.png', alt: 'Buddy Brew Coffee roasting' },
+              { src: '/tampa/coffee-shops/buddybrew-5.png', alt: 'Buddy Brew Coffee location' },
             ],
           },
           {
@@ -1169,10 +1169,10 @@ export const tampa: CityData = {
             website: 'https://blindtigercafe.com',
             instagram: '@blindtigercafe',
             images: [
-              { src: '/Tampa/coffee-shops/blindtiger-1.png', alt: 'Blind Tiger Coffee Roasters' },
-              { src: '/Tampa/coffee-shops/blindtiger-2.png', alt: 'Blind Tiger Coffee interior' },
-              { src: '/Tampa/coffee-shops/blindtiger-3.png', alt: 'Blind Tiger Coffee drinks' },
-              { src: '/Tampa/coffee-shops/blindtiger-4.png', alt: 'Blind Tiger Coffee Ybor' },
+              { src: '/tampa/coffee-shops/blindtiger-1.png', alt: 'Blind Tiger Coffee Roasters' },
+              { src: '/tampa/coffee-shops/blindtiger-2.png', alt: 'Blind Tiger Coffee interior' },
+              { src: '/tampa/coffee-shops/blindtiger-3.png', alt: 'Blind Tiger Coffee drinks' },
+              { src: '/tampa/coffee-shops/blindtiger-4.png', alt: 'Blind Tiger Coffee Ybor' },
             ],
           },
           {
@@ -1188,9 +1188,9 @@ export const tampa: CityData = {
             website: 'https://kahwacoffee.com',
             instagram: '@kahwacoffee',
             images: [
-              { src: '/Tampa/coffee-shops/kahwa-1.png', alt: 'Kahwa Coffee Tampa' },
-              { src: '/Tampa/coffee-shops/kahwa-2.png', alt: 'Kahwa Coffee interior' },
-              { src: '/Tampa/coffee-shops/kahwa-3.png', alt: 'Kahwa Coffee drinks' },
+              { src: '/tampa/coffee-shops/kahwa-1.png', alt: 'Kahwa Coffee Tampa' },
+              { src: '/tampa/coffee-shops/kahwa-2.png', alt: 'Kahwa Coffee interior' },
+              { src: '/tampa/coffee-shops/kahwa-3.png', alt: 'Kahwa Coffee drinks' },
             ],
           },
           {
@@ -1205,9 +1205,9 @@ export const tampa: CityData = {
             price: '$$',
             instagram: '@thelabcoffeetampa',
             images: [
-              { src: '/Tampa/coffee-shops/thelab-1.png', alt: 'The Lab Coffee Tampa' },
-              { src: '/Tampa/coffee-shops/thelab-2.png', alt: 'The Lab Coffee roastery' },
-              { src: '/Tampa/coffee-shops/thelab-3.png', alt: 'The Lab Coffee brewing' },
+              { src: '/tampa/coffee-shops/thelab-1.png', alt: 'The Lab Coffee Tampa' },
+              { src: '/tampa/coffee-shops/thelab-2.png', alt: 'The Lab Coffee roastery' },
+              { src: '/tampa/coffee-shops/thelab-3.png', alt: 'The Lab Coffee brewing' },
             ],
           },
           {
@@ -1223,8 +1223,8 @@ export const tampa: CityData = {
             website: 'https://hotelhaya.com',
             instagram: '@cafequiquiriqui',
             images: [
-              { src: '/Tampa/coffee-shops/quiquiirqui-1.png', alt: 'Cafe Quiquiriqui Tampa' },
-              { src: '/Tampa/coffee-shops/quiquiirqui-2.png', alt: 'Cafe Quiquiriqui interior' },
+              { src: '/tampa/coffee-shops/quiquiirqui-1.png', alt: 'Cafe Quiquiriqui Tampa' },
+              { src: '/tampa/coffee-shops/quiquiirqui-2.png', alt: 'Cafe Quiquiriqui interior' },
               {
                 src: 'https://hotelhaya.com/wp-content/uploads/2020/10/364A7469.Z_5-scaled-640x0-c-default.jpg',
                 alt: 'Cafe Quiquiriqui outdoor seating at Hotel Haya in Ybor City',
@@ -1332,7 +1332,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/skyway-collapse.png',
+                src: '/tampa/dark-history/skyway-collapse.png',
                 alt: 'The Sunshine Skyway Bridge collapse',
               },
             ],
@@ -1401,11 +1401,11 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/licata-axe.png',
+                src: '/tampa/dark-history/licata-axe.png',
                 alt: 'The Licata family home in Ybor City',
               },
               {
-                src: '/Tampa/dark-history/licata-aces2.png',
+                src: '/tampa/dark-history/licata-aces2.png',
                 alt: 'Victor Licata newspaper coverage and crime scene',
               },
             ],
@@ -1469,7 +1469,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/bobby-joe-long.png',
+                src: '/tampa/dark-history/bobby-joe-long.png',
                 alt: 'Bobby Joe Long and the Nebraska Avenue corridor',
               },
             ],
@@ -1514,7 +1514,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/gulf-killer.png',
+                src: '/tampa/dark-history/gulf-killer.png',
                 alt: 'The Dale Mabry Strip and Pasco County areas',
               },
             ],
@@ -1573,7 +1573,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/rogers-family.png',
+                src: '/tampa/dark-history/rogers-family.png',
                 alt: 'Tampa Bay waters where the Rogers family was found',
               },
             ],
@@ -1644,7 +1644,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/seminole-heights.png',
+                src: '/tampa/dark-history/seminole-heights.png',
                 alt: 'The Seminole Heights neighborhood',
               },
             ],
@@ -1708,7 +1708,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/plant-hall.png',
+                src: '/tampa/dark-history/plant-hall.png',
                 alt: 'Plant Hall at University of Tampa',
               },
             ],
@@ -1773,7 +1773,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/mafia-ybor.png',
+                src: '/tampa/dark-history/mafia-ybor.png',
                 alt: 'Ybor City during the era of mob violence',
               },
             ],
@@ -1849,7 +1849,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/seat-308.png',
+                src: '/tampa/dark-history/seat-308.png',
                 alt: 'Historic Tampa Theatre interior with ornate Mediterranean architecture',
               },
             ],
@@ -1925,7 +1925,7 @@ export const tampa: CityData = {
             ],
             images: [
               {
-                src: '/Tampa/dark-history/cuban-club.png',
+                src: '/tampa/dark-history/cuban-club.png',
                 alt: 'The haunted Cuban Club in Ybor City',
               },
             ],

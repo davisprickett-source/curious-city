@@ -700,7 +700,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Minneapolis & St. Paul', url: 'https://www.google.com/maps/place/Minneapolis,+MN/@44.9778,-93.2650,12z', stillExists: true },
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/gangsters.png',
+              src: '/minneapolis/curiosities/gangsters.png',
               alt: '1930s gangsters in Minnesota',
             },
           },
@@ -732,7 +732,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Mill City Museum', url: 'https://www.google.com/maps/place/Mill+City+Museum/@44.9789,-93.2571,17z', stillExists: true },
             image: {
-              src: '/Minneapolis/mill curiosity 2.png',
+              src: '/minneapolis/curiosities/mill-curiosity-2.png',
               alt: 'The Great Mill Disaster of 1878 in Minneapolis',
             },
           },
@@ -758,7 +758,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/duckduckgreyduck.png',
+              src: '/minneapolis/curiosities/duckduckgreyduck.png',
               alt: 'Duck Duck Gray Duck game illustration',
             },
           },
@@ -779,7 +779,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/honeycrisps.png',
+              src: '/minneapolis/curiosities/honeycrisps.png',
               alt: 'Honeycrisp apples',
             },
           },
@@ -839,7 +839,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/twinkies.png',
+              src: '/minneapolis/curiosities/twinkies.png',
               alt: 'The Twinkie Law scandal',
             },
           },
@@ -857,7 +857,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/mussels.png',
+              src: '/minneapolis/curiosities/mussels.png',
               alt: 'Freshwater mussels used to monitor water quality',
             },
           },
@@ -883,7 +883,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Elmer L. Andersen Library, University of Minnesota', url: 'https://www.google.com/maps/place/Elmer+L.+Andersen+Library/@44.9727,-93.2354,17z', stillExists: true },
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/undergroundlibrary.png',
+              src: '/minneapolis/curiosities/undergroundlibrary.png',
               alt: 'Underground library tunnels carved into sandstone',
             },
           },
@@ -904,7 +904,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/3 musketeers.png',
+              src: '/minneapolis/curiosities/3 musketeers.png',
               alt: 'Three Musketeers candy bar with Minneapolis Nougat',
             },
           },
@@ -925,7 +925,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/mystery science theater.png',
+              src: '/minneapolis/curiosities/mystery science theater.png',
               alt: 'Mystery Science Theater 3000',
             },
           },
@@ -947,7 +947,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/skyway.png',
+              src: '/minneapolis/curiosities/skyway.png',
               alt: 'Minneapolis skyway system',
             },
           },
@@ -968,7 +968,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/toaster.png',
+              src: '/minneapolis/curiosities/toaster.png',
               alt: 'Vintage pop-up toaster',
             },
           },
@@ -987,15 +987,15 @@ export const minneapolis: CityData = {
             location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
             images: [
               {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-1.png',
+                src: '/minneapolis/curiosities/falls-1.png',
                 alt: 'St. Anthony Falls',
               },
               {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-2.png',
+                src: '/minneapolis/curiosities/falls-2.png',
                 alt: 'St. Anthony Falls historic view',
               },
               {
-                src: '/Minneapolis/Minneapolis Curiosities/falls-3.png',
+                src: '/minneapolis/curiosities/falls-3.png',
                 alt: 'St. Anthony Falls and surrounding area',
               }
             ],
@@ -1026,7 +1026,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
             image: {
-              src: '/Minneapolis/st anthony original twin.png',
+              src: '/minneapolis/curiosities/st-anthony-original-twin.png',
               alt: 'Historic St. Anthony, the original Twin City of Minneapolis',
             },
           },
@@ -1044,7 +1044,7 @@ export const minneapolis: CityData = {
             ],
             location: { name: 'Minneapolis City Hall', url: 'https://www.google.com/maps/place/Minneapolis+City+Hall/@44.9770,-93.2650,17z', stillExists: true },
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
+              src: '/minneapolis/curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
               alt: 'Minneapolis City Hall with its iconic clock tower',
             },
           },
@@ -1067,15 +1067,15 @@ export const minneapolis: CityData = {
             location: { name: 'Lakewood Cemetery', url: 'https://www.google.com/maps/place/Lakewood+Cemetery/@44.9487,-93.3019,17z', stillExists: true },
             images: [
               {
-                src: '/Minneapolis/Minneapolis Curiosities/Lakewood_Cemetery_Memorial_Chapel-1.jpg',
+                src: '/minneapolis/curiosities/Lakewood_Cemetery_Memorial_Chapel-1.jpg',
                 alt: 'Lakewood Cemetery Memorial Chapel exterior',
               },
               {
-                src: '/Minneapolis/Minneapolis Curiosities/lakewood-2.png',
+                src: '/minneapolis/curiosities/lakewood-2.png',
                 alt: 'Lakewood Cemetery Memorial Chapel interior dome',
               },
               {
-                src: '/Minneapolis/Minneapolis Curiosities/lakewood-3.png',
+                src: '/minneapolis/curiosities/lakewood-3.png',
                 alt: 'Lakewood Cemetery Memorial Chapel mosaic detail',
               }
             ],
@@ -1094,7 +1094,7 @@ export const minneapolis: CityData = {
               }
             ],
             image: {
-              src: '/Minneapolis/Minneapolis Curiosities/sculpture garden.png',
+              src: '/minneapolis/curiosities/sculpture garden.png',
               alt: 'Minneapolis Sculpture Garden',
             },
           }
@@ -1114,7 +1114,7 @@ export const minneapolis: CityData = {
       description: 'Yes, really. Locals say it\'s overrated, but it\'s genuinely fun to wander. The Nickelodeon Universe rides are legitimately good, and people-watching is unmatched.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/mall-of-america.png',
+          src: '/minneapolis/hidden-gems/mall-of-america.png',
           alt: 'Nickelodeon Universe theme park inside Mall of America',
         }
       ],
@@ -1133,7 +1133,7 @@ export const minneapolis: CityData = {
       description: 'This museum is literally built into the ruins of the Washburn A Mill, which exploded in 1878 in the deadliest industrial disaster in Minneapolis history. Eighteen workers died when flour dust ignited. Today, you ride an "flour tower" elevator through the ruins while learning the city\'s milling history — how Minneapolis became the flour capital of the world before the industry moved west. The rooftop observation deck offers stunning views of the Mississippi and the Stone Arch Bridge.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/mill-city-museum.png',
+          src: '/minneapolis/hidden-gems/mill-city-museum.png',
           alt: 'Mill City Museum built into historic mill ruins',
         }
       ],
@@ -1158,11 +1158,11 @@ export const minneapolis: CityData = {
       description: 'Better than you\'d expect. Current Charles Schulz exhibit, excellent WWII display, and interactive Minnesota history. Near the State Capitol and Science Museum.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/history-center-1.png',
+          src: '/minneapolis/hidden-gems/history-center-1.png',
           alt: 'Minnesota History Center building exterior in St. Paul',
         },
         {
-          src: '/Minneapolis/hidden-gems/history-center-2.png',
+          src: '/minneapolis/hidden-gems/history-center-2.png',
           alt: 'Interactive exhibits at Minnesota History Center',
         }
       ],
@@ -1181,7 +1181,7 @@ export const minneapolis: CityData = {
       description: 'Where the Mississippi and Minnesota rivers meet — a confluence sacred to the Dakota people. Hiking trails, river views, and the historic fort on the bluffs above.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/fort.png',
+          src: '/minneapolis/hidden-gems/fort.png',
           alt: 'Fort Snelling State Park at the confluence of Mississippi and Minnesota rivers',
         }
       ],
@@ -1200,7 +1200,7 @@ export const minneapolis: CityData = {
       description: 'Scenic trails along the Minnesota River with excellent birding. Free, uncrowded, and surprisingly wild for being so close to the airport.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/refuge.png',
+          src: '/minneapolis/hidden-gems/refuge.png',
           alt: 'Wetland trails at Minnesota Valley National Wildlife Refuge',
         }
       ],
@@ -1219,7 +1219,7 @@ export const minneapolis: CityData = {
       description: 'Dramatic bluffs overlooking the St. Croix River on the Wisconsin border. Some of the best hiking in the metro, especially for fall colors.',
       images: [
         {
-          src: '/Minneapolis/hidden-gems/afton.png',
+          src: '/minneapolis/hidden-gems/afton.png',
           alt: 'Scenic overlook of St. Croix River valley at Afton State Park',
         }
       ],
@@ -1256,7 +1256,7 @@ export const minneapolis: CityData = {
           description: 'Certified by Guinness as the quietest place on Earth, the anechoic chamber at Orfield Labs in South Minneapolis absorbs 99.99% of sound. The walls are covered in 3-foot wedges of fiberglass, and the floor is a suspended mesh you stand on. In the absence of external sound, you start hearing things you never knew existed: your heartbeat, blood flowing through your veins, the whoosh of your eyeballs moving in their sockets. Most people become disoriented within 30 minutes. Some hallucinate. NASA uses similar chambers to test astronauts. It\'s a genuinely surreal experience that challenges your sense of reality.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/quiet-chamber.png',
+              src: '/minneapolis/hidden-gems/quiet-chamber.png',
               alt: 'Orfield Labs anechoic chamber interior with sound-absorbing foam wedges',
             }
           ],
@@ -1275,15 +1275,15 @@ export const minneapolis: CityData = {
           description: 'Artist Allen Christian has spent 30 years transforming his studio into a living sculpture garden. Animated creatures made from bowling balls, pressure cookers, and chicken feet greet you at the door. Some sculptures talk. Others move on their own. It feels less like a museum and more like stepping into someone\'s fever dream. Christian himself is usually there, tinkering with a new creation or explaining how he brings inanimate objects to life. The space is cluttered, chaotic, and absolutely magical. Most locals have never heard of it, despite being open since the \'90s.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/balls-1.png',
+              src: '/minneapolis/hidden-gems/balls-1.png',
               alt: 'House of Balls sculpture studio with found-object art',
             },
             {
-              src: '/Minneapolis/hidden-gems/balls-2.png',
+              src: '/minneapolis/hidden-gems/balls-2.png',
               alt: 'Animated creatures made from bowling balls and found objects',
             },
             {
-              src: '/Minneapolis/hidden-gems/balls-3.png',
+              src: '/minneapolis/hidden-gems/balls-3.png',
               alt: 'House of Balls interior with sculptures',
             }
           ],
@@ -1303,11 +1303,11 @@ export const minneapolis: CityData = {
           description: 'These sandstone caves have had many lives: 1840s mushroom farm, Prohibition speakeasy (allegedly frequented by Ma Barker, John Dillinger, and other gangsters), 1930s nightclub called Castle Royal, and now an event space. The caves stay a constant 52°F year-round. Every Thursday night, they host swing dancing in the main cavern — live bands, lessons for beginners, and an atmosphere you genuinely cannot replicate anywhere else. The guided cave tours tell stories of bootleggers, murder, and the gangster era of St. Paul when the city had a corrupt "O\'Connor Layover Agreement" that gave criminals safe haven.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/caves-1.png',
+              src: '/minneapolis/hidden-gems/caves-1.png',
               alt: 'Swing dancing inside Wabasha Street Caves',
             },
             {
-              src: '/Minneapolis/hidden-gems/caves-2.png',
+              src: '/minneapolis/hidden-gems/caves-2.png',
               alt: 'Historic underground cave venue interior',
             }
           ],
@@ -1326,7 +1326,7 @@ export const minneapolis: CityData = {
           description: 'The University of Minnesota has an 8-segment underground tunnel and skyway system connecting East Bank and West Bank campuses. Students use it daily to avoid Minnesota winters, but most don\'t know its history. The tunnels date back to the 1920s and were expanded through the decades. Some sections feel utilitarian and brutalist. Others are surprisingly ornate. It\'s separate from the legendary (but off-limits) steam tunnels that run beneath campus. The Gopher Way is open to the public during building hours, and walking the full route feels like urban exploration without breaking any rules.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/gopher-way.png',
+              src: '/minneapolis/hidden-gems/gopher-way.png',
               alt: 'Underground tunnel system at University of Minnesota',
             }
           ],
@@ -1373,11 +1373,11 @@ export const minneapolis: CityData = {
           description: 'The only museum in the world devoted to medical electricity. Earl Bakken (co-founder of Medtronic, inventor of the wearable pacemaker) created this tribute to the intersection of electricity and life. The collection includes antique electro-therapy devices from the 1800s, a Victorian-era belt designed to stimulate genitals with electricity (for "vitality"), and interactive exhibits where you can make your hair stand on end with static. Kids love "Frankenstein\'s Laboratory" and "Ben Franklin\'s Electricity Party." Adults are quietly horrified by how much quackery passed for medicine. The museum sits on the west shore of Bde Maka Ska in a Tudor mansion, which adds to the surreal atmosphere.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/electric-1.png',
+              src: '/minneapolis/hidden-gems/electric-1.png',
               alt: 'The Bakken Museum medical electricity exhibits',
             },
             {
-              src: '/Minneapolis/hidden-gems/electric-2.png',
+              src: '/minneapolis/hidden-gems/electric-2.png',
               alt: 'Victorian electro-therapy devices display',
             }
           ],
@@ -1397,11 +1397,11 @@ export const minneapolis: CityData = {
           description: 'James Fiorentino spent decades amassing the world\'s largest collection of German Black Forest cuckoo clocks — over 800 of them. When he passed away in 2021, he left instructions: open the collection to the public, free of charge, forever. Now his North Loop home is a surreal museum where every wall is covered in clocks. Every hour, hundreds of mechanical birds emerge simultaneously. The collection also includes vintage record players, pipe organs, polished Lake Superior agate spheres, and WWII memorabilia. Tours are by reservation only, and Fiorentino\'s widow runs them personally. It\'s like visiting someone\'s eccentric grandfather\'s attic, if that grandfather was obsessed with precision timekeeping.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/clocks-1.png',
+              src: '/minneapolis/hidden-gems/clocks-1.png',
               alt: 'Walls covered with hundreds of cuckoo clocks',
             },
             {
-              src: '/Minneapolis/hidden-gems/clocks-2.png',
+              src: '/minneapolis/hidden-gems/clocks-2.png',
               alt: 'Cuckoo clock collection display',
             }
           ],
@@ -1420,15 +1420,15 @@ export const minneapolis: CityData = {
           description: '12,000 square feet of operating model railroads, built lovingly by volunteers over 75+ years. Multiple scales, multiple eras, including detailed recreations of historic Twin Cities rail lines. The real magic happens during "Night Trains" events (November-February) when the lights go down and the miniature cities glow. It\'s mesmerizing for kids and adults alike, though adults tend to stay longer. The museum is tucked in an industrial area between the downtowns, so most people have no idea it exists. Run entirely by volunteers who genuinely love explaining the history of every tiny building.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/trains-1.png',
+              src: '/minneapolis/hidden-gems/trains-1.png',
               alt: 'Detailed model railroad diorama',
             },
             {
-              src: '/Minneapolis/hidden-gems/trains-2.png',
+              src: '/minneapolis/hidden-gems/trains-2.png',
               alt: 'Model railroad miniature city at night',
             },
             {
-              src: '/Minneapolis/hidden-gems/trains-3.png',
+              src: '/minneapolis/hidden-gems/trains-3.png',
               alt: 'Volunteers operating model trains',
             }
           ],
@@ -1448,7 +1448,7 @@ export const minneapolis: CityData = {
           description: 'Inspired by Little Free Libraries, this 3ft x 2ft micro-museum is built into a vintage fire-hose cabinet outside Workhorse Coffee Bar. Each month, a different local artist curates a miniature exhibition. Past shows have included "Tiny Chairs," "Lost Mittens of St. Paul," matchbook art, and "Things I Found Under My Porch." It\'s easy to walk right past it. But once you know it\'s there, you\'ll check it every time you\'re nearby. The art changes monthly, so there\'s always something new. It\'s a love letter to hyperlocal culture and proof that museums don\'t need marble halls to matter.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/smallestmuseum-1.png',
+              src: '/minneapolis/hidden-gems/smallestmuseum-1.png',
               alt: 'Tiny museum display in vintage fire-hose cabinet',
             }
           ],
@@ -1481,7 +1481,7 @@ export const minneapolis: CityData = {
           description: 'The first and largest double helix staircase in the United States, built in 1905 for the Munsingwear underwear factory. Two spiral staircases twist around each other, allowing workers on different shifts to pass simultaneously without ever crossing paths. It\'s an architectural marvel that almost nobody knows about. The building is now home to interior design showrooms, and the staircase is tucked at the far end near Lyndale Avenue. You can view floors 1-4 without issue, though some designers working in the building will let you climb higher if you ask nicely.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/helix-stairs.png',
+              src: '/minneapolis/hidden-gems/helix-stairs.png',
               alt: 'Double helix spiral staircase at International Market Square',
             }
           ],
@@ -1501,15 +1501,15 @@ export const minneapolis: CityData = {
           description: 'Beneath the Hennepin Avenue Bridge, Minneapolis has exposed the excavated footings of the first three bridges to cross the Mississippi River here (dating to 1855). The park displays archaeological artifacts in situ, with interpretive markers explaining how the bridges were built and why they collapsed. You can see remnants of the original stone construction and tunnels from the bridge builders. It\'s a tiny park under a busy bridge, so it\'s easy to miss. But for history nerds, it\'s a goldmine. The Grain Belt Beer sign glows overhead at night, adding an iconic Minneapolis backdrop.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/bridge-1.png',
+              src: '/minneapolis/hidden-gems/bridge-1.png',
               alt: 'Archaeological excavation of original bridge footings',
             },
             {
-              src: '/Minneapolis/hidden-gems/bridge-2.png',
+              src: '/minneapolis/hidden-gems/bridge-2.png',
               alt: 'First Bridge Park archaeological site',
             },
             {
-              src: '/Minneapolis/hidden-gems/bridge-3.png',
+              src: '/minneapolis/hidden-gems/bridge-3.png',
               alt: 'Historic bridge remnants and interpretive markers',
             }
           ],
@@ -1529,7 +1529,7 @@ export const minneapolis: CityData = {
           description: 'On the highest natural point in Minneapolis sits a unique "witch\'s hat" shaped water tower from 1913. It\'s exactly what it sounds like: a conical roof on a tower that looks like something from a fairy tale. The observation deck inside offers 360° views of the city, but there\'s a catch — it\'s only open ONE day per year (first Friday after Memorial Day). Locals camp out in line for the rare chance to climb the 101+16 steps. The tower is currently closed for repairs until late spring 2025, but you can admire the exterior anytime from Prospect Park.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/witch-tower.png',
+              src: '/minneapolis/hidden-gems/witch-tower.png',
               alt: 'Witch\'s Hat Water Tower on Minneapolis\'s highest point',
             }
           ],
@@ -1557,7 +1557,7 @@ export const minneapolis: CityData = {
           description: 'Hidden behind Wildflyer Coffee in an old warehouse, the Trylon is a 90-seat nonprofit microcinema showing repertory films on actual 16mm and 35mm film prints. Voted best theater in the Twin Cities, it specializes in forgotten B-horror, kung fu classics, rare documentaries, and cult films you\'d never find on streaming. The vibe is "fantasy-noir scrappy theater" — velvet curtains, film posters everywhere, and an audience that genuinely loves cinema. Showtimes are sporadic and announced via their website and social media. If you\'re nostalgic for video store discovery, this is your church.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/trylon-cinema.png',
+              src: '/minneapolis/hidden-gems/trylon-cinema.png',
               alt: 'Trylon Cinema microcinema interior',
             }
           ],
@@ -1577,11 +1577,11 @@ export const minneapolis: CityData = {
           description: 'A contemporary underground art hub in Elliot Park featuring digital media, live painting, performance art, DJ nights, and artist talks. Gamut pushes boundaries — this isn\'t your sanitized white-cube gallery. Expect street art, new media installations, and one-night-only warehouse exhibitions that feel more like underground raves than art openings. The gallery focuses on emerging artists and experimental formats. Check their Instagram for events, because they happen fast and disappear just as quickly.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/gamut-1.png',
+              src: '/minneapolis/hidden-gems/gamut-1.png',
               alt: 'Gamut Gallery contemporary art installation',
             },
             {
-              src: '/Minneapolis/hidden-gems/gamut-2.png',
+              src: '/minneapolis/hidden-gems/gamut-2.png',
               alt: 'Gamut Gallery event space',
             }
           ],
@@ -1614,7 +1614,7 @@ export const minneapolis: CityData = {
           description: 'The oldest public wildflower garden in the U.S., tucked inside Theodore Wirth Park. Native wetlands, prairies, and woodlands that feel hours from the city.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/wildflower.png',
+              src: '/minneapolis/hidden-gems/wildflower.png',
               alt: 'Wooden boardwalk through wetlands at Eloise Butler Wildflower Garden',
             }
           ],
@@ -1633,7 +1633,7 @@ export const minneapolis: CityData = {
           description: 'A great blue heron nesting colony on small Mississippi River islands, visible from Marshall Terrace Park in Northeast Minneapolis. Late March through summer, you can watch herons build nests, raise chicks, and fish in the shallows. Bring binoculars and walk down the 20 riverbank steps for a closer view. The National Park Service hosts a "Welcome Back the Herons" celebration each March when they return from migration. It\'s one of those magical urban nature spots that feels miles from the city, even though you\'re minutes from downtown.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/rookery.png',
+              src: '/minneapolis/hidden-gems/rookery.png',
               alt: 'Great blue herons nesting on Mississippi River islands',
             }
           ],
@@ -1653,11 +1653,11 @@ export const minneapolis: CityData = {
           description: 'The Midtown Greenway is a 5.7-mile bike trail in a sunken railway corridor crossing Minneapolis. Most people use it for commuting and miss the good stuff: 28 hidden trail exits leading to neighborhood secrets, community gardens, underground art installations, and quiet pocket parks. The trail sits in the old Milwaukee Road railway gorge and is grade-separated from traffic. It\'s plowed in winter, lit at night, and named best urban bike trail by USA Today. But the real magic is getting off the main trail and exploring the 28 side exits.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/greenway-1.png',
+              src: '/minneapolis/hidden-gems/greenway-1.png',
               alt: 'Midtown Greenway bike trail in sunken corridor',
             },
             {
-              src: '/Minneapolis/hidden-gems/greenway-2.png',
+              src: '/minneapolis/hidden-gems/greenway-2.png',
               alt: 'Midtown Greenway trail features',
             }
           ],
@@ -1685,11 +1685,11 @@ export const minneapolis: CityData = {
           description: 'For over a century, Ingebretsen\'s has been the heart of Minneapolis\'s Scandinavian community. This is where you find lefse (Norwegian flatbread) made fresh, Swedish meatball mix from the butcher counter, lingonberry jam, and lutefisk for the adventurous. The gift shop carries traditional rosemaling, Dala horses, and wool sweaters from Norway. Minnesota and Wisconsin have more people of Norwegian and Swedish descent than anywhere outside Scandinavia, and this store is their cultural anchor. Around Christmas, the lines for holiday specialties stretch out the door.',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/Ingebretsen-1.png',
+              src: '/minneapolis/hidden-gems/Ingebretsen-1.png',
               alt: 'Ingebretsen\'s Scandinavian specialty shop exterior',
             },
             {
-              src: '/Minneapolis/hidden-gems/Ingebretsen-2.png',
+              src: '/minneapolis/hidden-gems/Ingebretsen-2.png',
               alt: 'Ingebretsen\'s interior with Scandinavian foods and gifts',
             }
           ],
@@ -1708,15 +1708,15 @@ export const minneapolis: CityData = {
           description: 'The nation\'s first all-vegan butcher shop. Plant-based "meats" and "cheeses" displayed exactly like a traditional butcher case: Italian "sausages," smoked "ribs," deli "meats," and artisan "cheeses." The concept seems contradictory, which is part of the charm. Siblings Aubry and Kale Walch (yes, really, Kale) opened it in 2016 and it became a cult hit. Even meat-eaters admit the products are shockingly good. The shop is in Northeast Minneapolis, slightly off the main tourist path, so locals-in-the-know make pilgrimages for the "Korean BBQ ribs."',
           images: [
             {
-              src: '/Minneapolis/hidden-gems/herb-butcher-1.png',
+              src: '/minneapolis/hidden-gems/herb-butcher-1.png',
               alt: 'The Herbivorous Butcher vegan butcher shop display',
             },
             {
-              src: '/Minneapolis/hidden-gems/herb-butcher-2.png',
+              src: '/minneapolis/hidden-gems/herb-butcher-2.png',
               alt: 'Plant-based meats display case',
             },
             {
-              src: '/Minneapolis/hidden-gems/herb-butcher-3.png',
+              src: '/minneapolis/hidden-gems/herb-butcher-3.png',
               alt: 'Herbivorous Butcher interior',
             }
           ],
@@ -2753,7 +2753,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis/Minneapolis%20dark%20history/adam%20johnson.png',
+                src: '/minneapolis/dark-history/adam%20johnson.png',
                 alt: 'Adam Richard Johnson',
               }
             ],
@@ -2890,7 +2890,7 @@ export const minneapolis: CityData = {
             ],
             images: [
               {
-                src: '/Minneapolis/Minneapolis%20dark%20history/childs.png',
+                src: '/minneapolis/dark-history/childs.png',
                 alt: 'Jeanie Childs cold case investigation',
               }
             ],
@@ -2977,7 +2977,7 @@ export const minneapolis: CityData = {
             lastAddress: '112 E Hennepin Ave, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/nyes-polonaise.png',
+                src: '/minneapolis/lost-and-loved/nyes-polonaise.png',
                 alt: "Nye's Polonaise Room exterior and interior",
               }
             ],
@@ -3009,7 +3009,7 @@ export const minneapolis: CityData = {
             lastAddress: '114 S 8th St, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-peters.png',
+                src: '/minneapolis/lost-and-loved/NEW-peters.png',
                 alt: "Peter's Grill lunch counter interior",
               }
             ],
@@ -3041,7 +3041,7 @@ export const minneapolis: CityData = {
             lastAddress: '629 Cedar Ave S, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-triple-rock.png',
+                src: '/minneapolis/lost-and-loved/NEW-triple-rock.png',
                 alt: 'Triple Rock Social Club exterior and interior',
               }
             ],
@@ -3078,7 +3078,7 @@ export const minneapolis: CityData = {
             lastAddress: '313 14th Ave SE, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-Annies.png',
+                src: '/minneapolis/lost-and-loved/NEW-Annies.png',
                 alt: "Annie's Parlour exterior and interior",
               }
             ],
@@ -3106,7 +3106,7 @@ export const minneapolis: CityData = {
             lastAddress: '500 Cedar Ave S, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-palmers.png',
+                src: '/minneapolis/lost-and-loved/NEW-palmers.png',
                 alt: "Palmer's Bar exterior and interior",
               }
             ],
@@ -3142,7 +3142,7 @@ export const minneapolis: CityData = {
             lastAddress: '3001 Hennepin Ave, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-figlio.png',
+                src: '/minneapolis/lost-and-loved/NEW-figlio.png',
                 alt: 'Figlio restaurant exterior and dining room',
               }
             ],
@@ -3175,7 +3175,7 @@ export const minneapolis: CityData = {
             lastAddress: '4257 Nicollet Ave, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-revival.png',
+                src: '/minneapolis/lost-and-loved/NEW-revival.png',
                 alt: 'Revival restaurant interior',
               }
             ],
@@ -3207,7 +3207,7 @@ export const minneapolis: CityData = {
             lastAddress: '1432 W 31st St, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-lucias.png',
+                src: '/minneapolis/lost-and-loved/NEW-lucias.png',
                 alt: "Lucia's restaurant exterior and dining room",
               }
             ],
@@ -3239,7 +3239,7 @@ export const minneapolis: CityData = {
             lastAddress: '1900 Marshall St NE, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/psycho-suzis.png',
+                src: '/minneapolis/lost-and-loved/psycho-suzis.png',
                 alt: "Psycho Suzi's Motor Lounge tiki bar and patio",
               }
             ],
@@ -3276,7 +3276,7 @@ export const minneapolis: CityData = {
             lastAddress: '3311 E 25th St, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-birchwood.png',
+                src: '/minneapolis/lost-and-loved/NEW-birchwood.png',
                 alt: 'Birchwood Cafe exterior and interior',
               }
             ],
@@ -3308,7 +3308,7 @@ export const minneapolis: CityData = {
             lastAddress: '2917 Lyndale Ave S, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-galatic.png',
+                src: '/minneapolis/lost-and-loved/NEW-galatic.png',
                 alt: 'Galactic Pizza exterior and interior',
               }
             ],
@@ -3340,7 +3340,7 @@ export const minneapolis: CityData = {
             lastAddress: '2707 E Lake St, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-Town-talk.png',
+                src: '/minneapolis/lost-and-loved/NEW-Town-talk.png',
                 alt: 'Town Talk Diner exterior',
               }
             ],
@@ -3372,7 +3372,7 @@ export const minneapolis: CityData = {
             lastAddress: '300 1st Ave N, Minneapolis',
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-brenda.png',
+                src: '/minneapolis/lost-and-loved/NEW-brenda.png',
                 alt: 'Cafe Brenda bar and dining room interior',
               }
             ],
@@ -3405,7 +3405,7 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9034, lng: -93.5668 },
             images: [
               {
-                src: '/Minneapolis/lost-and-loved/NEW-log.png',
+                src: '/minneapolis/lost-and-loved/NEW-log.png',
                 alt: 'Old Log Theater rustic log cabin exterior',
               }
             ],

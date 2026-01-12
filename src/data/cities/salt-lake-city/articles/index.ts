@@ -14,7 +14,7 @@ export const japanBalloonBombs: Article = {
   },
   publishedAt: '2025-01-08T12:00:00Z',
   featuredImage: {
-    src: '/Salt-Lake-City/articles/balloon-bomb.png',
+    src: '/salt-lake-city/articles/balloon-bomb.png',
     alt: 'Japanese Fu-Go balloon bomb during WWII',
     credit: 'National Archives',
   },

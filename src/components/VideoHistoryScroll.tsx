@@ -431,10 +431,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '25vh' }} />
       <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-t from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ bottom: '25vh' }} />
 
-      {/* Split Screen Section - starts below nav to make video flush */}
-      <div className="lg:flex lg:flex-row pt-[57px]" ref={containerRef}>
+      {/* Split Screen Section - mt-[57px] on mobile to clear fixed nav */}
+      <div className="mt-[57px] lg:mt-0 lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Sticky on mobile, Fixed on desktop) */}
-        <div className="w-full h-[30vh] sticky top-[57px] -mt-[57px] lg:fixed lg:left-0 lg:top-[57px] lg:w-[70%] lg:h-[calc(100vh-57px)] lg:mt-0 bg-white flex items-center justify-center z-20 will-change-transform">
+        <div className="w-full h-[30vh] sticky top-[57px] lg:fixed lg:left-0 lg:top-[57px] lg:w-[70%] lg:h-[calc(100vh-57px)] bg-white flex items-center justify-center z-20 will-change-transform">
           <img
             src={framePath}
             alt=""
