@@ -75,12 +75,6 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
   // Get related articles
   const relatedArticles = await getRelatedArticles(article, 3)
 
-  const publishDate = new Date(article.publishedAt).toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
-
   return (
     <>
       <UnifiedNav
