@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getCity, getCityHiddenGems, getCityHiddenGemsSection } from '@/data/cities'
-import { ShareLinks, Footer } from '@/components'
+import { ShareButton } from '@/components/ShareButton'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import HiddenGemsClient from './HiddenGemsClient'
 
@@ -28,70 +29,36 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
       />
 
       <main className="flex-1 bg-white">
-        {/* Hero Header with Banner - Minneapolis only */}
-        {city.slug === 'minneapolis' ? (
-          <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
-            <img
-              src="/Minneapolis/hidden-gems/hidden-gems-banner.png"
-              alt="Minneapolis's Hidden Gems"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
-            <div className="relative container-page h-full flex flex-col justify-center items-start py-20">
-              <div className="max-w-5xl">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                  {section?.title || `${city.name}'s Hidden Gems`}
-                </h1>
-                {section?.teaser && (
-                  <p className="text-xl md:text-2xl text-white/90 max-w-3xl font-medium leading-relaxed mb-4">
-                    {section.teaser}
-                  </p>
-                )}
-                {section?.intro ? (
-                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-                    {section.intro}
-                  </p>
-                ) : (
-                  <p className="text-lg md:text-xl text-white/80 max-w-4xl leading-relaxed">
-                    Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
-                  </p>
-                )}
+        {/* Hero Section - Dark Background */}
+        <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
+          <div className="container-page py-12 md:py-16">
+            <div className="max-w-3xl mx-auto">
+              {/* Share Button at Top */}
+              <div className="mb-6">
+                <ShareButton title={`${city.name}'s Hidden Gems`} />
               </div>
-              <div className="absolute top-6 right-6 md:top-8 md:right-8">
-                <ShareLinks title={`${city.name}'s Hidden Gems | Curious City`} variant="banner" />
-              </div>
+
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                {section?.title || `${city.name}'s Hidden Gems`}
+              </h1>
+
+              {/* Teaser/Hook in Italics */}
+              {section?.teaser && (
+                <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
+                  {section.teaser}
+                </p>
+              )}
+
+              {/* Intro if exists */}
+              {section?.intro && (
+                <p className="text-lg text-white/80 leading-relaxed">
+                  {section.intro}
+                </p>
+              )}
             </div>
           </div>
-        ) : (
-          <div className="border-b border-neutral-200 bg-gradient-to-b from-neutral-50 to-white">
-            <div className="container-page py-12 md:py-16">
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-3">
-                    {section?.title || `${city.name}'s Hidden Gems`}
-                  </h1>
-                  {section?.teaser && (
-                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mb-2">
-                      {section.teaser}
-                    </p>
-                  )}
-                  {section?.intro ? (
-                    <p className="text-base md:text-lg text-neutral-500 max-w-3xl">
-                      {section.intro}
-                    </p>
-                  ) : (
-                    <p className="text-lg md:text-xl text-neutral-600 max-w-3xl">
-                      Places the locals know about. Museums, parks, shops, and experiences that don't make it into the tourist guides.
-                    </p>
-                  )}
-                </div>
-                <div className="hidden sm:block flex-shrink-0">
-                  <ShareLinks title={`${city.name}'s Hidden Gems | Curious City`} variant="compact" />
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        </div>
 
         <HiddenGemsClient gems={gems} cityName={city.name} />
       </main>

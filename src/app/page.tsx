@@ -6,6 +6,7 @@ import { curateLandingPageContent } from '@/lib/content/landingPageCurator'
 import { LandingHeroSection } from '@/components/landing/LandingHeroSection'
 import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSection'
 import { LandingScrollCard } from '@/components/cards/LandingScrollCard'
+import { ArticleScrollCard } from '@/components/cards/ArticleScrollCard'
 import { CityScrollCard } from '@/components/cards/CityScrollCard'
 
 export default async function HomePage() {
@@ -26,12 +27,34 @@ export default async function HomePage() {
         description="Local content for curious people. History, guides, and hidden gems from cities across America."
       />
 
-      <UnifiedNav />
+      <div className="city-page-wrapper">
+        <UnifiedNav />
 
-      {/* Hero Section with featured content carousel */}
-      <LandingHeroSection slides={curatedContent.heroSlides} />
+        {/* Hero Section with featured content carousel */}
+        <LandingHeroSection slides={curatedContent.heroSlides} />
 
       <main className="flex-1 bg-white">
+        {/* Featured Articles Section */}
+        {curatedContent.featuredArticles.length > 0 && (
+          <HorizontalScrollSection
+            title="Featured Articles"
+            eyebrow="Deep Dives"
+            description="Longform stories exploring the untold histories and hidden secrets of American cities"
+            viewAllLink={{
+              href: '/articles',
+              text: 'View all articles',
+            }}
+          >
+            {curatedContent.featuredArticles.map((article, index) => (
+              <ArticleScrollCard
+                key={article.href}
+                article={article}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
+
         {/* Dark History Section */}
         {curatedContent.darkStories.length > 0 && (
           <HorizontalScrollSection
@@ -140,7 +163,8 @@ export default async function HomePage() {
         )}
       </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   )
 }

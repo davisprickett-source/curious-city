@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
-import { ShareLinks, Footer, NewsletterSignup, RelatedContent } from '@/components'
+import { ShareButton } from '@/components/ShareButton'
+import { Footer, NewsletterSignup, RelatedContent } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 // Dynamically import heavy scroll component
@@ -112,40 +113,33 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
       />
 
       <main className="flex-1 bg-white">
-        {/* Article-style Header */}
-        <div className="container-page pt-8 pb-12">
-          <div className="max-w-3xl">
-            {/* Category pill */}
-            <div className="flex items-center gap-3 mb-6">
-              <span className="px-3 py-1 bg-amber-100 text-amber-700 text-sm font-medium rounded-full">
-                Curiosities
-              </span>
-              <span className="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">
-                {city.name}
-              </span>
-            </div>
+        {/* Hero Section - Dark Background */}
+        <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
+          <div className="container-page py-12 md:py-16">
+            <div className="max-w-3xl mx-auto">
+              {/* Share Button at Top */}
+              <div className="mb-6">
+                <ShareButton title={`${city.name}'s Curiosities`} />
+              </div>
 
-            {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-              {section?.title || `${city.name}'s Curiosities`}
-            </h1>
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                {section?.title || `${city.name}'s Curiosities`}
+              </h1>
 
-            {/* Teaser/Hook */}
-            {section?.teaser && (
-              <p className="text-xl md:text-2xl text-neutral-700 font-medium leading-relaxed mb-6">
-                {section.teaser}
-              </p>
-            )}
+              {/* Teaser/Hook in Italics */}
+              {section?.teaser && (
+                <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
+                  {section.teaser}
+                </p>
+              )}
 
-            {/* Intro */}
-            <p className="text-lg text-neutral-600 leading-relaxed mb-8">
-              {section?.intro || `Fascinating facts, forgotten history, and the strange stories that make ${city.name} unique.`}
-            </p>
-
-            {/* Share links */}
-            <div className="flex items-center justify-between py-6 border-y border-neutral-200">
-              <span className="text-sm text-neutral-500">{curiosities.length} curiosities</span>
-              <ShareLinks title={`${city.name}'s Curiosities | Curious City`} />
+              {/* Intro if exists */}
+              {section?.intro && (
+                <p className="text-lg text-white/80 leading-relaxed">
+                  {section.intro}
+                </p>
+              )}
             </div>
           </div>
         </div>

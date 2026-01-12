@@ -3,13 +3,13 @@ import { getCity } from '@/data/cities'
 import { getHistory } from '@/data/history'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { ShareButton } from '@/components/ShareButton'
 import { ArticleRenderer } from '@/components/ArticleRenderer'
 import { VideoHistoryScroll } from '@/components/VideoHistoryScroll'
 import { ArticleCardCompact } from '@/components/ArticleCard'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -128,7 +128,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
               <div className="max-w-3xl mx-auto">
                 {/* Share Button at Top */}
                 <div className="mb-6">
-                  <span className="text-[#c65d3b] text-sm font-bold tracking-wider uppercase">SHARE</span>
+                  <ShareButton title={article.title} />
                 </div>
 
                 {/* Title */}
@@ -142,33 +142,6 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
                     {article.subtitle}
                   </p>
                 )}
-              </div>
-            </div>
-          </div>
-
-          {/* Intro Section - White Background */}
-          <div className="bg-white border-b border-neutral-200">
-            <div className="container-page py-8">
-              <div className="max-w-3xl mx-auto">
-                {/* Author */}
-                <div className="flex items-center gap-3 mb-8">
-                  {article.author.avatar && (
-                    <div className="relative w-12 h-12 rounded-full overflow-hidden bg-neutral-200">
-                      <Image
-                        src={article.author.avatar}
-                        alt={article.author.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  <div>
-                    <p className="font-medium text-neutral-900">{article.author.name}</p>
-                    {article.author.bio && (
-                      <p className="text-sm text-neutral-600">{article.author.bio}</p>
-                    )}
-                  </div>
-                </div>
               </div>
             </div>
           </div>

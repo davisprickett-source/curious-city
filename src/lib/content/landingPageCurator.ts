@@ -1,11 +1,15 @@
 import type { PageCardData } from './pages'
 import { getAllPageCards } from './pages'
+import type { ArticleSummary } from './cityHomepage'
+import type { Article } from '@/types/article'
+import { getAllArticles } from '@/lib/queries/articles'
 
 /**
  * Curated content sections for the landing page
  */
 export interface CuratedLandingContent {
   heroSlides: PageCardData[]
+  featuredArticles: ArticleSummary[]
   darkStories: PageCardData[]
   curiosities: PageCardData[]
   discoveries: PageCardData[]
@@ -16,12 +20,13 @@ export interface CuratedLandingContent {
 /**
  * Diversify cards by city - ensures no single city dominates a section
  * Max 2 cards per city in any section
+ * Generic version that works with any type that has a citySlug property
  */
-function diversifyByCities(
-  cards: PageCardData[],
+function diversifyByCities<T extends { citySlug: string }>(
+  cards: T[],
   maxCards: number
-): PageCardData[] {
-  const result: PageCardData[] = []
+): T[] {
+  const result: T[] = []
   const cityCounts: Record<string, number> = {}
 
   for (const card of cards) {
@@ -93,6 +98,48 @@ function sortByDiversityAndRecency(cards: PageCardData[]): PageCardData[] {
 }
 
 /**
+ * Convert Article type to ArticleSummary type for horizontal scroll cards
+ */
+function articleToSummary(article: Article): ArticleSummary {
+  return {
+    slug: article.slug,
+    citySlug: article.citySlug,
+    title: article.title,
+    teaser: article.subtitle || article.excerpt,
+    thumbnail: article.featuredImage?.src,
+    href: `/${article.citySlug}/articles/${article.slug}`,
+    publishedAt: article.publishedAt,
+    source: article.category as ArticleSummary['source'],
+  }
+}
+
+/**
+ * Curate featured articles for the landing page
+ * Returns 8 diverse articles from across all cities
+ */
+async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
+  // Get recent articles with images
+  const allArticles = await getAllArticles({
+    limit: 20,
+    sortBy: 'publishedAt',
+    sortOrder: 'desc',
+  })
+
+  // Filter to only articles with featured images
+  const articlesWithImages = allArticles.filter(
+    (article) => article.featuredImage?.src
+  )
+
+  // Convert to ArticleSummary format
+  const articleSummaries = articlesWithImages.map(articleToSummary)
+
+  // Apply city diversity (max 2 per city)
+  const diverseArticles = diversifyByCities(articleSummaries, 8)
+
+  return diverseArticles
+}
+
+/**
  * Curate landing page content with smart filtering and diversity
  */
 export async function curateLandingPageContent(): Promise<CuratedLandingContent> {
@@ -100,6 +147,9 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
 
   // Prioritize cards with thumbnails for visual sections
   const cardsWithThumbnails = allCards.filter((card) => card.thumbnail)
+
+  // Get featured articles
+  const featuredArticles = await curateFeaturedArticles()
 
   // Hero Slides: Premium essays + one featured article
   // Priority order: Tampa, Phoenix, Raleigh, Minneapolis essays, then one other
@@ -171,6 +221,7 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
 
   return {
     heroSlides,
+    featuredArticles,
     darkStories,
     curiosities,
     discoveries,
