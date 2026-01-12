@@ -71,7 +71,8 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
         currentSection="dark-history"
       />
 
-      <main className="flex-1 bg-white">
+      <div className="city-page-wrapper">
+        <main className="flex-1 bg-white">
         {/* Hero Section - Dark Background */}
         <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
           <div className="container-page py-12 md:py-16">
@@ -119,12 +120,13 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
 
         {/* End of Article Flow */}
         <div className="container-page py-12 space-y-8">
-          <RelatedContent citySlug={city.slug} cityName={city.name} contentType="dark-history" />
+          <RelatedContent citySlug={city.slug} contentType="dark-history" />
           <NewsletterSignup />
         </div>
-      </main>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   )
 }

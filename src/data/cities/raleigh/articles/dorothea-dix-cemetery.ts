@@ -31,6 +31,13 @@ export const dorotheaDixCemetery: Article = {
           content: 'The Dorothea Dix Hospital Cemetery sits on three acres near downtown Raleigh, part of the sprawling grounds that once housed North Carolina\'s largest psychiatric institution. Over 900 people are buried here — patients who died between 1859 and 1970, most of them abandoned by families too ashamed to claim them. For generations, they were forgotten. Now, slowly, volunteers are giving them back their names.',
         },
         {
+          type: 'image',
+          src: '/raleigh/dix/dix-1.png',
+          alt: 'Rows of numbered grave markers at Dorothea Dix Cemetery',
+          caption: 'The cemetery contains over 900 graves, many marked only with numbers for over a century.',
+          credit: 'Historical Photo',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Hospital',
@@ -46,6 +53,13 @@ export const dorotheaDixCemetery: Article = {
         {
           type: 'paragraph',
           content: 'When they died, most were buried on hospital grounds. The cemetery began accepting patients in 1859 and continued until 1970. The graves accumulated: rows of identical crosses, each marked with a number, spreading across the hillside like a field of anonymous memory.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/dix/dix-2.png',
+          alt: 'Historic Dorothea Dix Hospital building',
+          caption: 'Dorothea Dix Hospital operated as a psychiatric institution from 1856 to 2012.',
+          credit: 'State Archives of North Carolina',
         },
         {
           type: 'quote',
@@ -75,6 +89,13 @@ export const dorotheaDixCemetery: Article = {
           content: 'The numbered graves served this purpose. A family could tell themselves their relative had simply vanished. There was no gravestone with a name, no marker connecting them to the shameful truth. The patient became a number, and the number became nothing.',
         },
         {
+          type: 'image',
+          src: '/raleigh/dix/dix-3.png',
+          alt: 'Close-up of a numbered grave marker showing stamped metal tag',
+          caption: 'Each grave was marked only with a number - the patient\'s hospital case number, nothing more.',
+          credit: 'Historical Photo',
+        },
+        {
           type: 'callout',
           variant: 'info',
           title: 'The Numbers',
@@ -94,6 +115,13 @@ export const dorotheaDixCemetery: Article = {
           content: 'There are Civil War veterans in the cemetery, including Eli Hill — a Union soldier with the United States Colored Troops who had once been enslaved. There are members of the Lumbee tribe from southeastern North Carolina. There are immigrants, farmers, factory workers — a cross-section of North Carolina buried beneath numbered crosses.',
         },
         {
+          type: 'image',
+          src: '/raleigh/dix/dix-4.png',
+          alt: 'Historic photo of Dorothea Dix Hospital patients',
+          caption: 'Patients at Dorothea Dix came from all walks of life - veterans, immigrants, farmers, and those society simply didn\'t want.',
+          credit: 'State Archives of North Carolina',
+        },
+        {
           type: 'paragraph',
           content: 'Some were institutionalized for being "immoral" — a catch-all category that included everything from adultery to homosexuality to simply being a woman who didn\'t obey her husband. The hospital was a dumping ground for people society didn\'t want, and the cemetery was where they ended up when society was done with them.',
         },
@@ -109,6 +137,13 @@ export const dorotheaDixCemetery: Article = {
         {
           type: 'paragraph',
           content: 'After burials stopped in 1970, the cemetery fell into neglect. The grounds were poorly maintained. Markers sank into the earth, became overgrown, disappeared. An adjacent landfill encroached on the cemetery\'s edges — some graves may have been covered entirely. The dead, already forgotten, became even more invisible.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/dix/dix-5.png',
+          alt: 'Overgrown and neglected grave markers at Dorothea Dix Cemetery',
+          caption: 'Decades of neglect left the cemetery overgrown, with markers sinking into the earth and disappearing.',
+          credit: 'Historical Photo',
         },
         {
           type: 'paragraph',
@@ -134,8 +169,22 @@ export const dorotheaDixCemetery: Article = {
           content: 'The restoration effort has been slow and painstaking. Volunteers have spent thousands of hours digging through archives, comparing records, and physically cleaning and repairing the cemetery. Each name recovered is a small victory against a century of forgetting.',
         },
         {
+          type: 'image',
+          src: '/raleigh/dix/dix-6.png',
+          alt: 'Volunteers working to restore grave markers at Dorothea Dix Cemetery',
+          caption: 'Volunteers have spent thousands of hours cleaning markers, researching archives, and restoring the cemetery.',
+          credit: 'City of Raleigh',
+        },
+        {
           type: 'paragraph',
           content: 'In 1991, volunteers installed a memorial wall listing the names of identified patients. Over the years, additional research has identified more — the current count exceeds 800 named individuals. But dozens of graves remain anonymous, their occupants still known only by numbers.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/dix/dix-7.png',
+          alt: 'Memorial wall listing names of identified patients',
+          caption: 'The memorial wall now lists over 800 names - patients finally reclaimed from anonymity.',
+          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',
@@ -161,6 +210,13 @@ export const dorotheaDixCemetery: Article = {
           content: 'The Dorothea Dix Hospital campus is now Dorothea Dix Park — a 308-acre urban park that will eventually become one of the largest in the Southeast. The hospital buildings have been demolished. The grounds are being transformed into meadows, forests, and recreational areas.',
         },
         {
+          type: 'image',
+          src: '/raleigh/dix/dix-8.png',
+          alt: 'Dorothea Dix Park with preserved cemetery grounds',
+          caption: 'The cemetery is now part of Dorothea Dix Park, preserved as a place of memory within the urban park.',
+          credit: 'City of Raleigh',
+        },
+        {
           type: 'paragraph',
           content: 'The cemetery will remain. Park planners have committed to preserving and commemorating the burial ground, integrating it into the larger park as a place of memory and reflection. The goal is to ensure that even as the hospital disappears, the people who lived and died there are not forgotten.',
         },
@@ -174,6 +230,13 @@ export const dorotheaDixCemetery: Article = {
         {
           type: 'paragraph',
           content: 'Walk through the Dorothea Dix Cemetery today and you\'ll see rows of small crosses, some with names now restored, others still bearing only numbers. Each marker represents a person — someone\'s child, someone\'s parent, someone who lived and suffered and died in a psychiatric hospital over a century ago.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/dix/dix-9.png',
+          alt: 'Restored grave markers with names at Dorothea Dix Cemetery',
+          caption: 'Today, many markers now bear names instead of numbers - identities finally restored after a century.',
+          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',

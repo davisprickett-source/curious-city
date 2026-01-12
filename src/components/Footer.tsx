@@ -38,9 +38,10 @@ export function Footer() {
                 alt="Curious City"
                 width={28}
                 height={28}
-                className="brightness-0 invert opacity-90"
+                className="opacity-90"
+                style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(45%) saturate(1068%) hue-rotate(337deg) brightness(89%) contrast(87%)' }}
               />
-              <span className="text-xl font-semibold text-white tracking-tight ui-sans">
+              <span className="text-xl font-semibold text-[#c65d3b] tracking-tight ui-sans">
                 Curious City
               </span>
             </Link>

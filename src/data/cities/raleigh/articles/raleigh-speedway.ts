@@ -31,6 +31,13 @@ export const raleighSpeedway: Article = {
           content: 'In the 1950s, this was one of the fastest tracks in the South. Lee Petty raced here. Fireball Roberts raced here. The track had the first permanent lights in NASCAR history, making it the first speedway to host night races. Bill France Sr., the founder of NASCAR himself, built it. He thought Raleigh would be the capital of Southern racing.',
         },
         {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-1.png',
+          alt: 'Aerial view of Raleigh Speedway in its heyday',
+          caption: 'Raleigh Speedway in the 1950s - a one-mile superspeedway where NASCAR legends competed.',
+          credit: 'NASCAR Archives',
+        },
+        {
           type: 'paragraph',
           content: 'He was wrong. The track lasted seven years. Now it\'s a ghost, a fragment of asphalt slowly being reclaimed by the forest.',
         },
@@ -48,8 +55,22 @@ export const raleighSpeedway: Article = {
           content: 'The location made sense. Raleigh was the capital of North Carolina, the heart of stock car country. The track was accessible to fans across the region. And unlike the beach courses where NASCAR had started, this was a purpose-built superspeedway — fast, banked, and designed for the kind of racing that would define the sport\'s future.',
         },
         {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-2.png',
+          alt: 'Raleigh Speedway grandstands and facilities',
+          caption: 'The speedway featured professional facilities and grandstands designed to rival any track in the South.',
+          credit: 'Raleigh Speedway Historical Project',
+        },
+        {
           type: 'paragraph',
           content: 'France invested in the track heavily. In 1955, he installed permanent lighting — the first at any NASCAR facility. Night racing was born in Raleigh. For a brief moment, the track was the most advanced in the sport.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-3.png',
+          alt: 'Night racing under the lights at Raleigh Speedway',
+          caption: 'The track\'s permanent lighting system was the first in NASCAR history, making night racing possible.',
+          credit: 'NASCAR Archives',
         },
         {
           type: 'quote',
@@ -71,12 +92,26 @@ export const raleighSpeedway: Article = {
           content: 'The races at Raleigh Speedway drew the biggest names in early NASCAR. Lee Petty — Richard Petty\'s father, a three-time NASCAR champion — won multiple races at the track. Fireball Roberts, one of the most legendary drivers of the era, competed regularly. Tim Flock, Buck Baker, Junior Johnson — the giants of 1950s stock car racing all raced at Raleigh.',
         },
         {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-4.png',
+          alt: 'Stock cars racing on Raleigh Speedway',
+          caption: 'NASCAR legends like Lee Petty and Fireball Roberts competed on the one-mile oval.',
+          credit: 'NASCAR Archives',
+        },
+        {
           type: 'paragraph',
           content: 'The track hosted both NASCAR Grand National races (the predecessor to today\'s Cup Series) and Convertible Division races — a now-defunct series where drivers raced with their tops down. It also hosted AAA Indy car events, drawing open-wheel racers to the Raleigh oval.',
         },
         {
           type: 'paragraph',
           content: 'The night races were the main attraction. Under the lights, with engines roaring and dust rising in the humid Carolina air, Raleigh Speedway was as exciting as any track in America. Thousands of fans packed the grandstands. For seven years, this was big-time racing.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-5.png',
+          alt: 'Crowds at Raleigh Speedway during a race',
+          caption: 'Thousands of fans packed the grandstands for night races at the track.',
+          credit: 'Raleigh Speedway Historical Project',
         },
         {
           type: 'callout',
@@ -102,6 +137,13 @@ export const raleighSpeedway: Article = {
           content: 'The last NASCAR race at Raleigh Speedway was held in 1958. The track sat dormant for eight more years, slowly deteriorating. In 1966, the property was sold. The following year, the track was demolished and an industrial park rose on the site.',
         },
         {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-6.png',
+          alt: 'Abandoned Raleigh Speedway showing deterioration',
+          caption: 'After racing ended in 1958, the track sat dormant for years before demolition.',
+          credit: 'Historical Photo',
+        },
+        {
           type: 'quote',
           content: 'The city killed us. They wanted us gone because we were loud and we attracted the wrong kind of people. They got their wish. Raleigh could have been Daytona. Instead, it became another industrial park.',
           attribution: 'Former track employee',
@@ -123,6 +165,13 @@ export const raleighSpeedway: Article = {
         {
           type: 'paragraph',
           content: 'Hidden in the woods behind a Progress Energy substation, about ninety feet of the track\'s backstretch still exists. The asphalt is cracked and weathered, covered with pine needles and leaves. Trees have grown through the pavement in places. But if you know where to look, you can still walk on the surface where Fireball Roberts once pushed 150 miles per hour.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-7.png',
+          alt: 'Surviving fragment of Raleigh Speedway asphalt in the woods',
+          caption: 'About 90 feet of the track\'s backstretch survives, hidden in the woods near Atlantic Avenue.',
+          credit: 'Raleigh Speedway Historical Project',
         },
         {
           type: 'paragraph',
@@ -161,6 +210,13 @@ export const raleighSpeedway: Article = {
         {
           type: 'paragraph',
           content: 'In the woods near Atlantic Avenue, ninety feet of asphalt curve through the trees. Pine needles cover the track surface. Weeds push through cracks in the pavement. It doesn\'t look like much — just another forgotten fragment of an earlier Raleigh, slowly returning to the forest.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/speedway/speedway-8.png',
+          alt: 'Modern view of the surviving track fragment',
+          caption: 'The cracked asphalt curves through the trees - all that remains of a NASCAR legend.',
+          credit: 'Modern Photo',
         },
         {
           type: 'paragraph',

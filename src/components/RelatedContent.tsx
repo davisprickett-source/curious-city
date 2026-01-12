@@ -1,83 +1,22 @@
 import Link from 'next/link'
-import {
-  getCityCuriosities,
-  getCityDarkHistory,
-  getCityHiddenGems,
-  getCityLocalFavorites,
-  getCityLostAndLoved,
-  getCityBestOf,
-  CITY_METADATA
-} from '@/data/cities'
+import Image from 'next/image'
+import { CITY_METADATA } from '@/data/cities'
+import { getCityFeaturedEntries } from '@/lib/content/cityHomepage'
 
 interface RelatedContentProps {
   citySlug: string
-  cityName: string
   contentType: 'curiosities' | 'dark-history'
-  maxItems?: number
 }
 
-// Type for a related page link
-interface RelatedPage {
+// Type for a related content item
+interface RelatedItem {
   id: string
   title: string
-  description: string
+  teaser: string
+  image?: string
   href: string
-  label: string
+  cityName?: string
 }
-
-// Page type configurations with their styles
-const PAGE_TYPES = {
-  'dark-history': {
-    label: 'Dark History',
-    style: 'bg-neutral-800 text-neutral-100',
-    getTitle: (city: string) => `Dark History of ${city}`,
-    getDescription: () => 'Crimes, disasters, and mysteries'
-  },
-  'curiosities': {
-    label: 'Curiosities',
-    style: 'bg-amber-50 text-amber-700',
-    getTitle: (city: string) => `Curiosities of ${city}`,
-    getDescription: () => 'Strange facts and hidden stories'
-  },
-  'hidden-gems': {
-    label: 'Hidden Gems',
-    style: 'bg-emerald-50 text-emerald-700',
-    getTitle: (city: string) => `Hidden Gems in ${city}`,
-    getDescription: () => 'Off-the-beaten-path discoveries'
-  },
-  'local-favorites': {
-    label: 'Local Favorites',
-    style: 'bg-blue-50 text-blue-700',
-    getTitle: (city: string) => `Local Favorites in ${city}`,
-    getDescription: () => 'Where the locals go'
-  },
-  'lost-and-loved': {
-    label: 'Lost & Loved',
-    style: 'bg-orange-50 text-orange-700',
-    getTitle: (city: string) => `Lost & Loved in ${city}`,
-    getDescription: () => 'Beloved places we miss'
-  },
-  'restaurants': {
-    label: 'Restaurants',
-    style: 'bg-red-50 text-red-700',
-    getTitle: (city: string) => `Best Restaurants in ${city}`,
-    getDescription: () => 'Where to eat'
-  },
-  'coffee-shops': {
-    label: 'Coffee Shops',
-    style: 'bg-amber-100 text-amber-800',
-    getTitle: (city: string) => `Best Coffee Shops in ${city}`,
-    getDescription: () => 'Best local coffee'
-  },
-  'bars': {
-    label: 'Bars',
-    style: 'bg-purple-50 text-purple-700',
-    getTitle: (city: string) => `Best Bars in ${city}`,
-    getDescription: () => 'Where to drink'
-  }
-} as const
-
-type PageType = keyof typeof PAGE_TYPES
 
 // Shuffle helper
 function shuffle<T>(array: T[]): T[] {
@@ -89,126 +28,109 @@ function shuffle<T>(array: T[]): T[] {
   return arr
 }
 
-// Check if a city has content for a specific page type
-async function hasContent(citySlug: string, pageType: PageType): Promise<boolean> {
-  try {
-    switch (pageType) {
-      case 'dark-history':
-        return (await getCityDarkHistory(citySlug)).length > 0
-      case 'curiosities':
-        return (await getCityCuriosities(citySlug)).length > 0
-      case 'hidden-gems':
-        return (await getCityHiddenGems(citySlug)).length > 0
-      case 'local-favorites':
-        return (await getCityLocalFavorites(citySlug)).length > 0
-      case 'lost-and-loved':
-        return (await getCityLostAndLoved(citySlug)).length > 0
-      case 'restaurants':
-        return (await getCityBestOf(citySlug, 'restaurants')).length > 0
-      case 'coffee-shops':
-        return (await getCityBestOf(citySlug, 'coffee-shops')).length > 0
-      case 'bars':
-        return (await getCityBestOf(citySlug, 'bars')).length > 0
-      default:
-        return false
-    }
-  } catch {
-    return false
-  }
-}
-
 export async function RelatedContent({
   citySlug,
-  cityName,
   contentType,
-  maxItems = 3,
 }: RelatedContentProps) {
-  const relatedPages: RelatedPage[] = []
+  const relatedItems: RelatedItem[] = []
+  const usedIds = new Set<string>()
 
-  // Define which page types to show based on current content type
-  // Prioritize complementary content
-  const sameCity: PageType[] = contentType === 'curiosities'
-    ? ['dark-history', 'hidden-gems', 'restaurants', 'lost-and-loved', 'coffee-shops', 'bars']
-    : ['curiosities', 'hidden-gems', 'restaurants', 'lost-and-loved', 'coffee-shops', 'bars']
+  try {
+    // 1. Get 2 same-type pages from OTHER cities
+    const otherCities = shuffle(CITY_METADATA.filter(c => c.slug !== citySlug))
+    let sameTypeCount = 0
 
-  // 1. Add related pages from the same city (up to 2)
-  let sameCityAdded = 0
-  for (const pageType of sameCity) {
-    if (sameCityAdded >= 2) break
+    for (const otherCity of otherCities) {
+      if (sameTypeCount >= 2) break
 
-    const has = await hasContent(citySlug, pageType)
-    if (has) {
-      const config = PAGE_TYPES[pageType]
-      relatedPages.push({
-        id: `${citySlug}-${pageType}`,
-        title: config.getTitle(cityName),
-        description: config.getDescription(),
-        href: `/${citySlug}/${pageType}`,
-        label: config.label
+      const otherCityEntries = await getCityFeaturedEntries(otherCity.slug)
+      const matchingType = otherCityEntries.find((entry) => {
+        const isMatch =
+          (contentType === 'curiosities' && entry.type === 'curiosity') ||
+          (contentType === 'dark-history' && entry.type === 'dark-history')
+        return isMatch && !usedIds.has(entry.id)
       })
-      sameCityAdded++
-    }
-  }
 
-  // 2. Add the same content type from another city
-  const otherCities = CITY_METADATA.filter(c => c.slug !== citySlug)
-  const shuffledCities = shuffle(otherCities)
-
-  for (const otherCity of shuffledCities) {
-    if (relatedPages.length >= maxItems) break
-
-    const has = await hasContent(otherCity.slug, contentType)
-    if (has) {
-      const config = PAGE_TYPES[contentType]
-      relatedPages.push({
-        id: `${otherCity.slug}-${contentType}`,
-        title: config.getTitle(otherCity.name),
-        description: config.getDescription(),
-        href: `/${otherCity.slug}/${contentType}`,
-        label: config.label
-      })
-      break // Only add one from another city
-    }
-  }
-
-  // 3. If we need more, add additional pages from the same city
-  if (relatedPages.length < maxItems) {
-    for (const pageType of sameCity) {
-      if (relatedPages.length >= maxItems) break
-      if (relatedPages.some(p => p.id === `${citySlug}-${pageType}`)) continue
-
-      const has = await hasContent(citySlug, pageType)
-      if (has) {
-        const config = PAGE_TYPES[pageType]
-        relatedPages.push({
-          id: `${citySlug}-${pageType}`,
-          title: config.getTitle(cityName),
-          description: config.getDescription(),
-          href: `/${citySlug}/${pageType}`,
-          label: config.label
+      if (matchingType) {
+        relatedItems.push({
+          id: matchingType.id,
+          title: matchingType.title,
+          teaser: matchingType.teaser,
+          image: matchingType.image?.src,
+          href: matchingType.href,
+          cityName: otherCity.name,
         })
+        usedIds.add(matchingType.id)
+        sameTypeCount++
       }
     }
+
+    // 2. Get 2 different-type pages from SAME city
+    const sameCityEntries = await getCityFeaturedEntries(citySlug)
+    const differentTypeEntries = sameCityEntries.filter((entry) => {
+      const isDifferent =
+        (contentType === 'curiosities' && entry.type !== 'curiosity') ||
+        (contentType === 'dark-history' && entry.type !== 'dark-history')
+      return isDifferent && !usedIds.has(entry.id)
+    })
+
+    for (const entry of differentTypeEntries.slice(0, 2)) {
+      relatedItems.push({
+        id: entry.id,
+        title: entry.title,
+        teaser: entry.teaser,
+        image: entry.image?.src,
+        href: entry.href,
+      })
+      usedIds.add(entry.id)
+    }
+
+  } catch (error) {
+    console.error('Error fetching related content:', error)
   }
 
-  if (relatedPages.length === 0) return null
+  if (relatedItems.length === 0) return null
 
   return (
     <section className="mt-12 pt-8 border-t border-neutral-200">
-      <h2 className="eyebrow text-neutral-500 mb-4">More to Explore</h2>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {relatedPages.slice(0, maxItems).map((page) => (
-            <Link
-              key={page.id}
-              href={page.href}
-              className="group block p-4 bg-white rounded-xl border border-neutral-200 hover:border-accent-300 hover:shadow-md transition-all"
-            >
-              <h3 className="font-semibold text-neutral-900 group-hover:text-accent-600 transition-colors line-clamp-2 text-sm">
-                {page.title}
+      <h2 className="text-2xl font-bold text-neutral-900 mb-6">Explore More</h2>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {relatedItems.map((item) => (
+          <Link
+            key={item.id}
+            href={item.href}
+            className="group block overflow-hidden rounded-xl bg-white border border-neutral-200 hover:border-accent-300 hover:shadow-lg transition-all duration-300"
+          >
+            {/* Image */}
+            {item.image && (
+              <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              </div>
+            )}
+
+            {/* Content */}
+            <div className="p-5">
+              {item.cityName && (
+                <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-2">
+                  {item.cityName}
+                </div>
+              )}
+              <h3 className="text-lg font-bold text-neutral-900 group-hover:text-accent-600 transition-colors mb-2 leading-tight">
+                {item.title}
               </h3>
-              <p className="text-xs text-neutral-500 mt-1">{page.description}</p>
-            </Link>
-          ))}
+              <p className="text-sm text-neutral-600 leading-relaxed line-clamp-2">
+                {item.teaser}
+              </p>
+            </div>
+          </Link>
+        ))}
       </div>
     </section>
   )

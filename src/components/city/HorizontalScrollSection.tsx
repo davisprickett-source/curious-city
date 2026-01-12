@@ -153,7 +153,7 @@ export function HorizontalScrollSection({
   }
 
   return (
-    <section className={`py-8 md:py-10 ${className}`}>
+    <section className={`py-8 md:py-10 overflow-x-hidden ${className}`}>
       {/* Section Header */}
       <div className="container-page mb-6 md:mb-8">
         <div className="flex items-end justify-between gap-4">

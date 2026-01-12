@@ -14,9 +14,9 @@ export default async function ArticlesPage() {
 
   return (
     <>
-      <div className="city-page-wrapper">
-        <UnifiedNav />
+      <UnifiedNav />
 
+      <div className="city-page-wrapper">
         <main className="flex-1 bg-white">
           {/* Hero Header */}
           <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">

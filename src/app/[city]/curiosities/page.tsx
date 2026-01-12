@@ -112,7 +112,8 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
         currentSection="curiosities"
       />
 
-      <main className="flex-1 bg-white">
+      <div className="city-page-wrapper">
+        <main className="flex-1 bg-white">
         {/* Hero Section - Dark Background */}
         <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
           <div className="container-page py-12 md:py-16">
@@ -158,16 +159,13 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
 
         {/* End of content section */}
         <div className="container-page py-12 space-y-8">
-          <RelatedContent
-            citySlug={city.slug}
-            cityName={city.name}
-            contentType="curiosities"
-          />
+          <RelatedContent citySlug={city.slug} contentType="curiosities" />
           <NewsletterSignup />
         </div>
-      </main>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   )
 }

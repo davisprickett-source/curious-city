@@ -2297,19 +2297,6 @@ export const phoenix: CityData = {
         title: 'Lost & Loved',
         items: [
           {
-            id: 'phx-lost-1',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Los Olivos',
-            neighborhood: 'Downtown Phoenix',
-            yearsOpen: '1945–2018',
-            description: 'The Mexican restaurant in a hacienda-style building where Arizona politicians, lawyers, and families ate chimichangas (which Los Olivos claims to have invented) for 73 years. The margaritas were strong, the atmosphere old Arizona, and the patio shaded by olive trees. When it closed in 2018, Phoenix lost a piece of its pre-sprawl identity.',
-            whyMissed: 'The chimichanga origin story, the shaded patio, and the sense that Phoenix remembered its Mexican heritage. Los Olivos was Phoenix before Phoenix became a suburb.',
-            communityVoice: '"Los Olivos was where Arizona made deals." — Arizona Republic',
-            lastAddress: '2820 E Roosevelt St, Phoenix',
-            source: 'Arizona Republic, Phoenix New Times',
-          },
-          {
             id: 'phx-lost-2',
             type: 'lost-and-loved',
             category: 'bar',

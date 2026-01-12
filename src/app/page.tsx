@@ -27,13 +27,13 @@ export default async function HomePage() {
         description="Local content for curious people. History, guides, and hidden gems from cities across America."
       />
 
-      <div className="city-page-wrapper">
-        <UnifiedNav />
+      <UnifiedNav />
 
+      <div className="city-page-wrapper">
         {/* Hero Section with featured content carousel */}
         <LandingHeroSection slides={curatedContent.heroSlides} />
 
-      <main className="flex-1 bg-white">
+        <main className="flex-1 bg-white overflow-x-hidden">
         {/* Featured Articles Section */}
         {curatedContent.featuredArticles.length > 0 && (
           <HorizontalScrollSection

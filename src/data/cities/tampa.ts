@@ -931,10 +931,10 @@ export const tampa: CityData = {
             instagram: '@jekyllhydepark',
             hours: 'Tue-Wed 5pm-11pm, Thu-Sat 5pm-1am, closed Sun-Mon',
             images: [
-              { src: '/tampa/bars/Jekyll-1.png', alt: 'Jekyll speakeasy interior' },
-              { src: '/tampa/bars/Jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
-              { src: '/tampa/bars/Jekyll-3.png', alt: 'Intimate bar seating' },
-              { src: '/tampa/bars/Jekyll-4.png', alt: 'Jekyll moody ambiance' },
+              { src: '/tampa/bars/jekyll-1.png', alt: 'Jekyll speakeasy interior' },
+              { src: '/tampa/bars/jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
+              { src: '/tampa/bars/jekyll-3.png', alt: 'Intimate bar seating' },
+              { src: '/tampa/bars/jekyll-4.png', alt: 'Jekyll moody ambiance' },
             ],
           },
           {

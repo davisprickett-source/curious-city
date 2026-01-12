@@ -157,7 +157,7 @@ export const salt_lake_city: CityData = {
             title: 'Streets were designed wide enough for oxen U-turns',
             body: 'Brigham Young mandated streets wide enough for a team of oxen pulling a wagon to turn around completely without—as he allegedly put it—"resorting to profanity." Main Street is 132 feet wide, roughly the width of a modern four-lane highway with parking on both sides. The grid system uses Temple Square as its origin point: every address tells you exactly how far from the temple you are. Urban planning as theodicy.',
             image: {
-              src: '/salt-lake-city/curiosities/SLC-streets.png',
+              src: '/salt-lake-city/curiosities/slc-streets.png',
               alt: 'Wide Salt Lake City streets designed for oxen',
             },
             source: 'Salt Lake City Planning Division',
@@ -1122,23 +1122,23 @@ export const salt_lake_city: CityData = {
             instagram: '@hslrestaurant',
             images: [
               {
-                src: '/salt-lake-city/restaurants/HSL-1.png',
+                src: '/salt-lake-city/restaurants/hsl-1.png',
                 alt: 'HSL restaurant interior',
               },
               {
-                src: '/salt-lake-city/restaurants/HSL-2.png',
+                src: '/salt-lake-city/restaurants/hsl-2.png',
                 alt: 'HSL farm-to-table dishes',
               },
               {
-                src: '/salt-lake-city/restaurants/HSL-3.png',
+                src: '/salt-lake-city/restaurants/hsl-3.png',
                 alt: 'HSL seasonal cuisine',
               },
               {
-                src: '/salt-lake-city/restaurants/HSL-4.png',
+                src: '/salt-lake-city/restaurants/hsl-4.png',
                 alt: 'HSL dining atmosphere',
               }
             ],
-            menuImage: { src: '/salt-lake-city/restaurants/HSL-menu.png', alt: 'HSL menu' },
+            menuImage: { src: '/salt-lake-city/restaurants/hsl-menu.png', alt: 'HSL menu' },
           },
           {
             name: 'Pretty Bird',
@@ -2177,15 +2177,15 @@ export const salt_lake_city: CityData = {
             whyMissed: 'The democratic chaos of a real mall, replaced by curated retail that feels more like a temple than a town square.',
             images: [
               {
-                src: '/salt-lake-city/lost-loved/ZCMI-01.png',
+                src: '/salt-lake-city/lost-loved/zcmi-01.png',
                 alt: 'ZCMI Center mall interior before demolition',
               },
               {
-                src: '/salt-lake-city/lost-loved/ZCMI-2.png',
+                src: '/salt-lake-city/lost-loved/zcmi-2.png',
                 alt: 'ZCMI department store exterior',
               },
               {
-                src: '/salt-lake-city/lost-loved/ZCMI-3.png',
+                src: '/salt-lake-city/lost-loved/zcmi-3.png',
                 alt: 'Crossroads Plaza shopping center',
               }
             ],

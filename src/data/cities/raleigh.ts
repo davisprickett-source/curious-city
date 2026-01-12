@@ -94,14 +94,59 @@ export const raleigh: CityData = {
             year: '1971-1984',
             images: [
               {
-                src: '/raleigh/curiosities/raleigh-bunker-main.webp',
-                alt: 'The Village Underground entrance in Raleigh',
+                src: '/raleigh/underground/underground-1.png',
+                alt: 'The Village Underground entrance designed to look like a NYC subway station',
                 credit: 'Historical Photo',
               },
               {
-                src: '/raleigh/curiosities/raleigh-bunker2.webp',
-                alt: 'Inside the Village Underground complex',
+                src: '/raleigh/underground/underground-2.png',
+                alt: 'Interior of the Village Underground complex showing shops and passageways',
                 credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-3.png',
+                alt: 'The underground nightclub space where legendary bands performed',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-4.png',
+                alt: 'Village Underground restaurant and entertainment area',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-5.png',
+                alt: 'The painted subway train murals that made visitors think of New York',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-6.png',
+                alt: 'Concert poster or promotional material from Village Underground era',
+                credit: 'Historical Collection',
+              },
+              {
+                src: '/raleigh/underground/underground-7.png',
+                alt: 'Crowded nightclub scene at Village Underground',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-8.png',
+                alt: 'The Cold War bunker architecture and infrastructure',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-9.png',
+                alt: 'One of the thirty shops or restaurants in the complex',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-10.png',
+                alt: 'Village Underground in its heyday with patrons',
+                credit: 'Historical Photo',
+              },
+              {
+                src: '/raleigh/underground/underground-11.png',
+                alt: 'The Fresh Market location today, above the sealed bunker',
+                credit: 'Modern Photo',
               },
             ],
             sources: [
@@ -128,7 +173,7 @@ export const raleigh: CityData = {
             body: 'Raleigh is named after Sir Walter Raleigh, the Elizabethan explorer and courtier who was beheaded in 1618. His preserved head was presented to his wife, Lady Raleigh, as a grim keepsake — and the family reportedly kept it for 29 years. The man never set foot in America, yet his decapitated head became a macabre family treasure that outlasted most marriages.',
             year: '1618',
             image: {
-              src: '/raleigh/curiosities/GettyImages-71625429-5c79ca3ec9e77c0001fd59dc-walter raleigh.webp',
+              src: '/raleigh/curiosities/walter-raleigh.webp',
               alt: 'Portrait of Sir Walter Raleigh',
               credit: 'Getty Images',
             },
@@ -181,7 +226,7 @@ export const raleigh: CityData = {
                 credit: 'Raleigh Commons',
               },
               {
-                src: '/raleigh/curiosities/2988893_1Raleigh-Aqueduct-Exploration.jpg',
+                src: '/raleigh/curiosities/raleigh-aqueduct-exploration.jpg',
                 alt: 'Inside the Pigeon House Branch tunnel system',
                 credit: 'ABC11',
               },
@@ -214,7 +259,7 @@ export const raleigh: CityData = {
             body: 'George Joseph Laurer, born in Raleigh in 1925, invented the UPC barcode while working at IBM\'s Research Triangle Park in the early 1970s. The original design was a circular bulls eye pattern, but it smeared during printing. Laurer created the vertical stripe pattern now found on virtually every product sold worldwide. He held 28 patents and died at his home in Wendell (near Raleigh) in 2019 at age 94. Every time you scan something at a store — every transaction, every inventory count, every supply chain ping — you\'re using technology invented in the genteel South to optimize late-stage capitalism. The irony is exquisite.',
             year: '1970s',
             image: {
-              src: '/raleigh/curiosities/UPC-image.png',
+              src: '/raleigh/curiosities/upc-image.png',
               alt: 'UPC barcode',
               credit: 'IBM Research',
             },
@@ -228,7 +273,7 @@ export const raleigh: CityData = {
             title: 'NC State has underground steam tunnels with a mysterious shrine',
             body: 'NC State University has a complex network of underground steam tunnels that students used to explore before post-9/11 security tightened access. Urban explorers have found graffiti, hidden passages, and — most strangely — a shrine with recently-lit candles. Whether it\'s Pagan worship, evidence of a secret society, or just elaborate trolling remains a campus mystery.',
             image: {
-              src: '/raleigh/curiosities/NCState-steam.png',
+              src: '/raleigh/curiosities/ncstate-steam.png',
               alt: 'NC State steam tunnels entrance',
               credit: 'Urban Exploration Photo',
             },
@@ -247,7 +292,7 @@ export const raleigh: CityData = {
             body: 'Andrew Johnson, the 17th President, was born on December 29, 1808 in the upstairs loft of a detached kitchen at Casso\'s Inn, a roadside tavern in Raleigh. His father Jacob worked as a hostler and Capitol janitor; his mother Mary was a weaver. The structure later served as a flophouse for hobos during the Great Depression and was only moved to Mordecai Historic Park in 1975. Strangely, when President Johnson returned to Raleigh in 1867, newspapers made no mention whatsoever of any visit to his birthplace.',
             year: '1808',
             image: {
-              src: '/raleigh/curiosities/Andrew Johnson.png',
+              src: '/raleigh/curiosities/andrew-johnson.png',
               alt: 'Andrew Johnson birthplace at Mordecai Historic Park',
               credit: 'NCpedia',
             },
@@ -303,7 +348,7 @@ export const raleigh: CityData = {
             body: 'The iconic 1,200-pound copper Great Raleigh Acorn used for New Year\'s Eve celebrations has a hidden time capsule etched inside its copper walls. In 2011, artist David Benson\'s daughter crawled inside and scribbled drawings and messages for future generations. The acorn\'s stem contains copper salvaged from the State Capitol dome — a piece of Raleigh history wrapped inside another.',
             year: '2011',
             image: {
-              src: '/raleigh/curiosities/Photo_277932213_Raleigh_Acorn_c_Zimmytws_Dreamstime_cropped_80a53270-f38a-4467-ad13-252e1b1c4f31.jpg',
+              src: '/raleigh/curiosities/raleigh-acorn.jpg',
               alt: 'The Great Raleigh Acorn at New Year\'s Eve celebration',
               credit: 'Dreamstime',
             },
@@ -2310,6 +2355,11 @@ export const raleigh: CityData = {
             communityVoice: '"Kings catered to music fans and musicians in a way that was entirely different." — Raleigh Magazine',
             lastAddress: '14 W Martin St, Raleigh',
             source: 'Raleigh Magazine, News & Observer, Indy Week',
+            image: {
+              src: '/raleigh/lost-loved/kings.png',
+              alt: 'Kings music venue in downtown Raleigh',
+              credit: 'Historical Photo',
+            },
           },
           {
             id: 'raleigh-lost-3',
@@ -2345,6 +2395,11 @@ export const raleigh: CityData = {
             communityVoice: '"Cup A Joe was where Raleigh went to feel local." — Technician',
             lastAddress: '3100 Hillsborough St, Raleigh',
             source: 'News & Observer, Technician',
+            image: {
+              src: '/raleigh/lost-loved/cup-a-joe.png',
+              alt: 'Cup A Joe coffee shop on Hillsborough Street',
+              credit: 'Historical Photo',
+            },
           },
           {
             id: 'raleigh-lost-5',

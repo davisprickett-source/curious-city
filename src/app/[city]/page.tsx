@@ -66,20 +66,21 @@ export default async function CityPage({ params }: CityPageProps) {
   const otherCities = allCities.filter((c) => c.slug !== slug)
 
   return (
-    <div className="city-page-wrapper">
+    <>
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}
         currentSection="home"
       />
 
-      {/* Hero Section with video and featured entries carousel */}
-      <CityHeroSection
-        city={city}
-        featuredEntries={featuredEntries}
-      />
+      <div className="city-page-wrapper">
+        {/* Hero Section with video and featured entries carousel */}
+        <CityHeroSection
+          city={city}
+          featuredEntries={featuredEntries}
+        />
 
-      <main className="flex-1 bg-white">
+        <main className="flex-1 bg-white overflow-x-hidden">
         {/* Articles Section */}
         {articles.length > 0 && (
           <HorizontalScrollSection
@@ -167,7 +168,8 @@ export default async function CityPage({ params }: CityPageProps) {
         )}
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   )
 }

@@ -70,7 +70,7 @@ export const portland: CityData = {
             body: 'In 1971, a man in a business suit calling himself Dan Cooper hijacked Northwest Orient Flight 305, demanded $200,000 (about $1.5 million today), and parachuted into a thunderstorm somewhere over southwestern Washington. He was never found. The case consumed the FBI for decades. Then in 1980, an 8-year-old boy digging a firepit along the Columbia River near Portland unearthed $5,800 in disintegrating twenties—serial numbers matching Cooper\'s ransom. The rest of the money? Gone. The man? Vanished. It remains the only unsolved hijacking in American aviation history and the Pacific Northwest\'s most enduring mystery.',
             year: '1971',
             image: {
-              src: '/portland/curiosities/DB-Cooper.png',
+              src: '/portland/curiosities/db-cooper.png',
               alt: 'D.B. Cooper hijacking over Portland area',
             },
             source: 'FBI records',
@@ -87,7 +87,7 @@ export const portland: CityData = {
             body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. The park still exists today. Locals still decorate it seasonally. The leprechaun, as far as anyone knows, never left.',
             year: '1948',
             image: {
-              src: '/portland/curiosities/Mill-Ends-Park.png',
+              src: '/portland/curiosities/mill-ends-park.png',
               alt: 'Mill Ends Park, the world\'s smallest park in Portland',
             },
             source: 'Guinness World Records',
@@ -143,7 +143,7 @@ export const portland: CityData = {
             body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
             year: '1948',
             image: {
-              src: '/portland/curiosities/Portland-Flood.png',
+              src: '/portland/curiosities/portland-flood.png',
               alt: 'Vanport flood destruction in 1948',
             },
             source: 'Oregon Historical Society',
@@ -259,7 +259,7 @@ export const portland: CityData = {
             body: 'Powell\'s occupies an entire city block—68,000 square feet holding over a million books. The rooms are color-coded. New and used books share the same shelves. They hand you a map at the entrance because people genuinely get lost. For a generation of Portlanders, Powell\'s wasn\'t just a bookstore—it was a third place, a refuge, a reason to move here. You could spend an entire rainy afternoon wandering the stacks and leave with six books you didn\'t know you needed. It\'s the world\'s largest independent bookstore, and in an era of Amazon dominance, the fact that it still exists feels like a minor miracle.',
             images: [
               {
-                src: '/portland/curiosities/Powells-books-1.png',
+                src: '/portland/curiosities/powells-books-1.png',
                 alt: 'Powell\'s City of Books exterior on full city block',
               },
               {
@@ -344,7 +344,7 @@ export const portland: CityData = {
             description: 'The world\'s largest independent bookstore, occupying an entire city block. New and used books mixed together on the same shelves. Multiple rooms organized by color. Maps provided at entry.',
             images: [
               {
-                src: '/portland/curiosities/Powells-books-1.png',
+                src: '/portland/curiosities/powells-books-1.png',
                 alt: 'Powell\'s Books interior with towering shelves',
               }
             ],
@@ -722,7 +722,7 @@ export const portland: CityData = {
             description: 'The world\'s smallest park at 452 square inches—a flower-filled traffic median with a wild backstory. Oregon Journal columnist Dick Fagan created it in 1948 after the city abandoned a light pole hole, then spent decades writing elaborate fiction about the leprechaun who lived there. The city made it official in 1976. Locals still decorate it seasonally: tiny Christmas trees, miniature swimming pools, even a small grassy lawn. England briefly contested Portland\'s Guinness record in 2018, but the crown stayed here.',
             images: [
               {
-                src: '/portland/curiosities/Mill-Ends-Park.png',
+                src: '/portland/curiosities/mill-ends-park.png',
                 alt: 'Mill Ends Park - world\'s smallest park',
               }
             ],
@@ -1240,7 +1240,7 @@ export const portland: CityData = {
             },
             images: [
               {
-                src: '/portland/curiosities/Portland-Flood.png',
+                src: '/portland/curiosities/portland-flood.png',
                 alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
               }
             ],
@@ -1586,22 +1586,9 @@ export const portland: CityData = {
         id: 'pdx-lost-and-loved',
         type: 'section',
         title: 'Lost Portland',
-        teaser: 'Rimsky-Korsakoffee, Satyricon, and the places where Portland was genuinely strange',
+        teaser: 'Satyricon, Old Wives\' Tales, and the places where Portland was genuinely strange',
         intro: 'Keep Portland Weird was always about the people, not the slogan. These were the venues, cafes, and dives where weirdness was earned—places that didn\'t need a brand because they were too busy being themselves. Rising rents and changing times closed the doors. The weird that replaced them is different.',
         items: [
-          {
-            id: 'pdx-lost-1',
-            type: 'lost-and-loved',
-            category: 'cafe',
-            name: 'Rimsky-Korsakoffee House',
-            neighborhood: 'Southeast Portland',
-            yearsOpen: '1980–2020',
-            description: 'The absurdist coffee house where tables slowly sank into the floor, the bathroom came with operating instructions, and desserts appeared at midnight like clockwork. For 40 years, this was Portland\'s temple of genuine weirdness—not the branded, sellable kind, but the real, unhinged thing. The pandemic killed it, and Portland lost its strangest landmark.',
-            whyMissed: 'The hydraulic tables that descended while you sat, the midnight tiramisu ritual, and the certainty that Portland\'s weirdness once came from the heart, not a marketing deck. Rimsky\'s didn\'t explain itself or apologize.',
-            communityVoice: '"Rimsky\'s was weird before weird was a brand." — Portland Mercury',
-            lastAddress: '707 SE 12th Ave, Portland',
-            source: 'The Oregonian, Portland Mercury',
-          },
           {
             id: 'pdx-lost-2',
             type: 'lost-and-loved',
@@ -1614,6 +1601,24 @@ export const portland: CityData = {
             communityVoice: '"Satyricon was where Portland got loud and stayed loud." — The Oregonian',
             lastAddress: '125 NW 6th Ave, Portland',
             source: 'The Oregonian, Portland Mercury',
+            images: [
+              {
+                src: '/portland/lost-loved/satyricon-1.png',
+                alt: 'Satyricon club exterior',
+              },
+              {
+                src: '/portland/lost-loved/satyricon-02.png',
+                alt: 'Satyricon interior with band stickers',
+              },
+              {
+                src: '/portland/lost-loved/satyricon-03.png',
+                alt: 'Satyricon stage and crowd',
+              },
+              {
+                src: '/portland/lost-loved/satyricon-04.png',
+                alt: 'Satyricon band performance',
+              }
+            ],
           },
           {
             id: 'pdx-lost-3',
@@ -1622,6 +1627,10 @@ export const portland: CityData = {
             name: 'Old Wives\' Tales',
             neighborhood: 'Southeast Portland',
             yearsOpen: '1979–2016',
+            images: [
+              { src: '/portland/lost-loved/wives-tales-1.png', alt: 'Old Wives\' Tales restaurant exterior' },
+              { src: '/portland/lost-loved/wives-tales-2.png', alt: 'Old Wives\' Tales interior and play area' },
+            ],
             description: 'The vegetarian restaurant with a kids\' play area that doubled as childcare, community bulletin boards plastered with activist flyers, and a vibe that preserved 1970s Portland in amber. For 37 years, this was where Southeast Portland families ate tempeh scrambles while their toddlers played and their manifestos photocopied. When it closed in 2016, Portland lost its progressive past tense.',
             whyMissed: 'The play area that let parents finish a meal, the sense that community mattered more than branding, and the radical idea that affordability was a feature, not a bug. Old Wives\' Tales was Portland before Portland got expensive and embarrassed about it.',
             communityVoice: '"Old Wives\' Tales was where Portland raised its kids." — Portland Mercury',
@@ -1640,6 +1649,10 @@ export const portland: CityData = {
             name: 'Berbati\'s Pan',
             neighborhood: 'Old Town',
             yearsOpen: '1985–2010',
+            images: [
+              { src: '/portland/lost-loved/barbati-1.png', alt: 'Berbati\'s Pan exterior' },
+              { src: '/portland/lost-loved/barbati-2.png', alt: 'Berbati\'s Pan music venue interior' },
+            ],
             description: 'The Greek restaurant that moonlighted as a music venue where Nirvana, Elliott Smith, and The Shins played before fame found them. For 25 years, Berbati\'s was the room where Portland\'s indie bands proved themselves on a stage flanked by Mediterranean murals. When it closed in 2010, Portland lost the place that said yes when nobody else would.',
             whyMissed: 'The 200-person intimacy that made every show feel like a secret, the Greek food that anchored the space in immigrant ambition, and the knowledge that Portland once mattered enough to break bands. Berbati\'s was proof the city had taste before algorithms did.',
             communityVoice: '"Berbati\'s was where Portland bands became Portland bands." — Willamette Week',
@@ -1653,6 +1666,9 @@ export const portland: CityData = {
             name: 'Pied Cow Coffeehouse',
             neighborhood: 'Southeast Portland',
             yearsOpen: '1994–2020',
+            images: [
+              { src: '/portland/lost-loved/piedcow.png', alt: 'Pied Cow Coffeehouse Victorian house exterior' },
+            ],
             description: 'The Victorian house that became a hookah lounge that became a time machine. Mismatched furniture, garden patio, and a pace that made three hours feel like twenty minutes. For 26 years, Pied Cow was where Portland remembered that lingering was a virtue, not a vice. The pandemic ended the spell.',
             whyMissed: 'The backyard Eden with strings of lights, the hookahs that made conversation feel ceremonial, and the radical notion that Portland didn\'t have to hustle. Pied Cow was permission to slow down.',
             communityVoice: '"Pied Cow was where Portland went to escape time." — Willamette Week',
@@ -1666,6 +1682,10 @@ export const portland: CityData = {
             name: 'Reading Frenzy',
             neighborhood: 'Downtown Portland',
             yearsOpen: '1994–2012',
+            images: [
+              { src: '/portland/lost-loved/reading-frenzy-1.png', alt: 'Reading Frenzy bookstore exterior' },
+              { src: '/portland/lost-loved/reading-frenzy-2.png', alt: 'Reading Frenzy zine and book collection interior' },
+            ],
             description: 'The zine shop and independent press outpost that sold self-stapled manifestos, political pamphlets still warm from the copier, and art books you\'d never see at Powell\'s. For 18 years, Reading Frenzy was the nerve center of Portland\'s DIY publishing underground—the place that proved you didn\'t need a press, just a Xerox machine and something to say.',
             whyMissed: 'The zines with print runs of 50, the artists hawking their own work at the counter, and the democracy of it all—any voice with 75 cents for photocopies could publish. Reading Frenzy was Portland\'s conscience before the algorithm killed the underground.',
             communityVoice: '"Reading Frenzy was where Portland\'s weirdos published." — Willamette Week',
@@ -1684,6 +1704,9 @@ export const portland: CityData = {
             name: 'Laurelhurst Theater (original ownership)',
             neighborhood: 'Southeast Portland',
             yearsOpen: '1923–2020',
+            images: [
+              { src: '/portland/lost-loved/laurelhurst-theater.png', alt: 'Laurelhurst Theater historic exterior' },
+            ],
             description: 'The neighborhood movie palace where second-run films cost $4, pizza arrived mid-movie, and beer flowed from the lobby. For nearly a century, Laurelhurst was Southeast Portland\'s living room—the place where you watched Pulp Fiction for the third time on a screen that mattered. The original owners sold in 2020. The theater survives, but locals swear the magic left with the deed.',
             whyMissed: 'The $4 ticket that made cinema democratic, the pizza-and-beer ritual that made moviegoing communal, and the certainty that Portland valued neighborhood institutions over corporate chains. The original Laurelhurst trusted you to bring a beer into the dark.',
             communityVoice: '"Laurelhurst was where Portland went to the movies." — Portland Mercury',
@@ -1694,14 +1717,18 @@ export const portland: CityData = {
             id: 'pdx-lost-8',
             type: 'lost-and-loved',
             category: 'restaurant',
-            name: 'Obi Restaurant',
+            name: 'Oba Restaurant',
             neighborhood: 'Pearl District',
-            yearsOpen: '2001–2015',
-            description: 'The sushi restaurant in a converted Pearl District warehouse that brought omakase to Portland before the neighborhood learned to pronounce it. Chef Oba\'s tasting menus were legend, the sake list ran 40 deep, and the vibe stayed sophisticated without ever getting stuffy. When it closed in 2015, Portland lost a pioneer who proved the city could do world-class without the world-class attitude.',
-            whyMissed: 'The omakase that taught a city how to trust a chef, the sake pairings that turned education into pleasure, and the warehouse space that made refinement feel approachable. Obi arrived before the Pearl became a luxury brand and left before it forgot what it was.',
-            communityVoice: '"Obi was where Portland learned to eat well." — The Oregonian',
-            lastAddress: '101 NW 2nd Ave, Portland',
-            source: 'The Oregonian, Eater Portland',
+            yearsOpen: '2000s–2015',
+            images: [
+              { src: '/portland/lost-loved/oba-1.png', alt: 'Oba Restaurant exterior' },
+              { src: '/portland/lost-loved/oba-2.png', alt: 'Oba Restaurant interior and bar' },
+            ],
+            description: 'The bright and convivial Nuevo Latino restaurant that brought bold flavors and warmth to the Pearl District before the neighborhood decided everything had to be minimalist. Oba served ceviche, empanadas, and rum-forward cocktails in a space that felt like a celebration—vibrant colors, communal energy, and the kind of hospitality that made you stay for another round. When it closed, Portland lost a reminder that sophistication doesn\'t have to whisper.',
+            whyMissed: 'The Latin American flavors that felt authentic without being precious, the bar scene that stayed lively without turning bro-y, and the proof that the Pearl District once had room for color and joy. Oba was festive before the neighborhood forgot how to party.',
+            communityVoice: '"Oba brought life to the Pearl District." — Yelp reviewers',
+            lastAddress: '555 NW 12th Ave, Portland',
+            source: 'Yelp, Portland restaurant archives',
           }
         ],
       }

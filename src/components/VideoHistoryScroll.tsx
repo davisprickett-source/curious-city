@@ -3,10 +3,13 @@
 import { useState, useEffect, useRef, useCallback, useMemo, memo } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import NextImage from 'next/image'
 import { History } from '@/types/content'
 import { UnifiedNav } from './navigation/UnifiedNav'
 import { PremiumMobileMenu } from './PremiumMobileMenu'
+import { ShareButton } from './ShareButton'
 import { getCity } from '@/data/cities'
+import { getCityFeaturedEntries } from '@/lib/content/cityHomepage'
 
 interface VideoHistoryScrollProps {
   history: History
@@ -427,9 +430,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         style={{ top: 'calc(57px + 30vh)' }}
       />
 
-      {/* Desktop fade overlays - fade text at top and bottom of visible area */}
+      {/* Desktop fade overlay - fade text at top of visible area only */}
       <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '25vh' }} />
-      <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-t from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ bottom: '25vh' }} />
 
       {/* Split Screen Section */}
       <div className="lg:flex lg:flex-row" ref={containerRef}>
@@ -470,21 +472,12 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                 transition={{ duration: 0.8 }}
                 className="mb-8"
               >
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <h1 className="text-3xl md:text-4xl font-bold leading-tight text-neutral-900 flex-1">
-                    {history.title}
-                  </h1>
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(window.location.href)
-                      alert('Link copied!')
-                    }}
-                    className="flex-shrink-0 text-accent-600 hover:text-accent-700 font-bold text-sm uppercase tracking-wider transition-colors"
-                    title="Copy link"
-                  >
-                    Share
-                  </button>
+                <div className="mb-4">
+                  <ShareButton title={history.title} />
                 </div>
+                <h1 className="text-3xl md:text-4xl font-bold leading-tight text-neutral-900 mb-2">
+                  {history.title}
+                </h1>
 
                 {/* Underline bar */}
                 <motion.div
@@ -524,74 +517,22 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
           {/* Footer - appears at end of scroll */}
           <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
+            {/* Explore More Section */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <h3 className="text-xl font-bold text-neutral-900 mb-4">Explore More</h3>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <RelatedStoryCards currentCity={history.citySlug} currentSlug={history.slug} />
+              </div>
+            </div>
+
             {/* Share Options */}
             <div className="mb-8 pb-8 border-b border-neutral-200">
               <h4 className="font-bold text-neutral-900 mb-4">Share this story</h4>
-              <div className="flex flex-wrap gap-3">
-                {/* Copy Link */}
-                <button
-                  onClick={() => {
-                    const url = `https://thecurious.city/${history.citySlug}/articles/${history.slug}`
-                    navigator.clipboard.writeText(url)
-                    alert('Link copied to clipboard!')
-                  }}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-medium rounded-lg transition-colors"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                  Copy link
-                </button>
-
-                {/* X (Twitter) */}
-                <a
-                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(history.title)}&url=${encodeURIComponent(`https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 hover:bg-neutral-800 text-white font-medium rounded-lg transition-colors"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                  Share on X
-                </a>
-
-                {/* Facebook */}
-                <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#166FE5] text-white font-medium rounded-lg transition-colors"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                  </svg>
-                  Facebook
-                </a>
-
-                {/* Email */}
-                <a
-                  href={`mailto:?subject=${encodeURIComponent(history.title)}&body=${encodeURIComponent(`Check out this story: https://thecurious.city/${history.citySlug}/articles/${history.slug}`)}`}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-medium rounded-lg transition-colors"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  Email
-                </a>
-              </div>
-            </div>
-
-            {/* More Stories Section */}
-            <div className="mb-8 pb-8 border-b border-neutral-200">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4">More Stories</h3>
-              <div className="flex flex-col gap-4">
-                <RelatedStoryCards currentCity={history.citySlug} />
-              </div>
+              <ShareButton title={history.title} />
             </div>
 
             {/* Newsletter Signup */}
-            <div className="mb-8 pb-8 border-b border-neutral-200">
+            <div className="mb-8">
               <h4 className="font-bold text-neutral-900 mb-2">Stay curious</h4>
               <p className="text-sm text-neutral-600 mb-3">New stories delivered to your inbox.</p>
               <form
@@ -673,81 +614,121 @@ const cityHistoryEssays: Record<string, { title: string; subtitle: string; slug:
   ],
 }
 
-function RelatedStoryCards({ currentCity }: { currentCity: string }) {
-  // Get stories from other cities (not the current one)
-  const otherCities = Object.entries(cityHistoryEssays)
-    .filter(([city]) => city !== currentCity)
-    .slice(0, 2)
+function RelatedStoryCards({ currentCity, currentSlug }: { currentCity: string; currentSlug: string }) {
+  const [items, setItems] = useState<Array<{
+    id: string
+    title: string
+    teaser: string
+    image: string
+    href: string
+    cityName?: string
+    badge: string
+  }>>([])
 
-  // Get pages from current city (curiosities, dark-history, etc.)
-  const cityPages = [
-    { title: 'Curiosities', href: `/${currentCity}/curiosities`, type: 'curiosities' },
-    { title: 'Dark History', href: `/${currentCity}/dark-history`, type: 'dark-history' },
-  ]
+  useEffect(() => {
+    async function fetchRelatedContent() {
+      const relatedItems: Array<{
+        id: string
+        title: string
+        teaser: string
+        image: string
+        href: string
+        cityName?: string
+        badge: string
+      }> = []
+      const usedIds = new Set<string>()
+
+      // 1. Get 2 articles from OTHER cities
+      const otherCities = Object.entries(cityHistoryEssays)
+        .filter(([city]) => city !== currentCity)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 2)
+
+      for (const [city, essays] of otherCities) {
+        for (const essay of essays) {
+          const itemId = `${city}-${essay.slug}`
+          if (!usedIds.has(itemId) && essay.slug !== currentSlug) {
+            const cityName = city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+            relatedItems.push({
+              id: itemId,
+              title: essay.title,
+              teaser: essay.subtitle,
+              image: essay.thumbnail,
+              href: `/${city}/articles/${essay.slug}`,
+              cityName,
+              badge: 'Article',
+            })
+            usedIds.add(itemId)
+            break
+          }
+        }
+      }
+
+      // 2. Get 2 discover pages from SAME city
+      try {
+        const sameCityEntries = await getCityFeaturedEntries(currentCity)
+        const discoverPages = sameCityEntries
+          .filter((entry) => !usedIds.has(entry.id))
+          .slice(0, 2)
+
+        for (const entry of discoverPages) {
+          const badgeText = entry.type === 'curiosity' ? 'Curiosity' : entry.type === 'dark-history' ? 'Dark History' : 'Discover'
+          relatedItems.push({
+            id: entry.id,
+            title: entry.title,
+            teaser: entry.teaser,
+            image: entry.image?.src || '',
+            href: entry.href,
+            badge: badgeText,
+          })
+          usedIds.add(entry.id)
+        }
+      } catch (error) {
+        console.error('Error fetching discover pages:', error)
+      }
+
+      setItems(relatedItems)
+    }
+
+    fetchRelatedContent()
+  }, [currentCity, currentSlug])
 
   return (
     <>
-      {/* Other city history essays */}
-      {otherCities.map(([city, essays]) => (
-        essays.map(essay => (
-          <Link
-            key={`${city}-${essay.slug}`}
-            href={`/${city}/articles/${essay.slug}`}
-            className="group relative overflow-hidden rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-all duration-300 hover:shadow-lg"
-          >
-            <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
-              <img
-                src={essay.thumbnail}
-                alt={essay.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-1">
-                {city.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
-              </div>
-              <h4 className="font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
-                {essay.title}
-              </h4>
-              <p className="text-sm text-neutral-600 line-clamp-2">
-                {essay.subtitle}
-              </p>
-            </div>
-          </Link>
-        ))
-      ))}
-
-      {/* Current city pages */}
-      {cityPages.map(page => (
+      {items.map((item) => (
         <Link
-          key={page.href}
-          href={page.href}
-          className="group flex items-center gap-4 p-4 rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-all duration-300"
+          key={item.id}
+          href={item.href}
+          className="group relative overflow-hidden rounded-xl bg-white border border-neutral-200 hover:border-accent-300 transition-all duration-300 hover:shadow-lg"
         >
-          <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-            page.type === 'dark-history' ? 'bg-red-100' : 'bg-purple-100'
-          }`}>
-            {page.type === 'dark-history' ? (
-              <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            )}
+          <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
+            <NextImage
+              src={item.image}
+              alt={item.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            <div className="absolute top-3 left-3">
+              <span className="inline-block px-2.5 py-1 bg-accent-600 text-white text-xs font-bold uppercase tracking-wider rounded">
+                {item.badge}
+              </span>
+            </div>
           </div>
-          <div className="flex-1">
-            <h4 className="font-bold text-neutral-900 group-hover:text-accent-600 transition-colors">
-              {page.title}
+          <div className="p-5">
+            {item.cityName && (
+              <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-2">
+                {item.cityName}
+              </div>
+            )}
+            <h4 className="text-lg font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors leading-tight">
+              {item.title}
             </h4>
-            <p className="text-sm text-neutral-500">
-              Explore more from this city
+            <p className="text-sm text-neutral-600 line-clamp-2 leading-relaxed">
+              {item.teaser}
             </p>
           </div>
-          <svg className="w-5 h-5 text-neutral-400 group-hover:text-accent-600 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
         </Link>
       ))}
     </>

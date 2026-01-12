@@ -50,6 +50,7 @@ export function UnifiedNav({
         const currentScrollY = window.scrollY
 
         // Only apply hide/show on mobile (sm breakpoint is 640px)
+        // Desktop nav is ALWAYS visible and sticky
         if (window.innerWidth < 640) {
           // Always show at top of page
           if (currentScrollY < 50) {
@@ -64,6 +65,7 @@ export function UnifiedNav({
             setIsVisible(false)
           }
         } else {
+          // Desktop: always visible
           setIsVisible(true)
         }
 

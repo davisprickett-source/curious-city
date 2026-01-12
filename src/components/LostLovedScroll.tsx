@@ -199,12 +199,13 @@ function LostLovedSection({
 
             {/* Why Missed - Emotional callout */}
             <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-500 rounded-lg p-6">
-              {/* Cracked heart icon */}
+              {/* Broken heart icon */}
               <div className="absolute top-3 right-3 opacity-10">
-                <svg className="w-12 h-12 text-amber-800" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  <path d="M12 5.5L10.5 10.5L12 12L13.5 10.5L12 5.5z" fill="white" opacity="0.8" />
-                  <path d="M11.5 12.5L10 16.5L12 18L14 16.5L12.5 12.5L12 13L11.5 12.5z" fill="white" opacity="0.8" />
+                <svg className="w-14 h-14 text-amber-800" viewBox="0 0 48 48" fill="currentColor">
+                  {/* Left half of broken heart with jagged edge */}
+                  <path d="M14 7C9 7 5 11 5 16c0 8 7 13 17 24V16l-1 3-1-2-1 3-1-2-1 3-1-2V16C15 11 14 7 14 7z" />
+                  {/* Right half of broken heart with jagged edge - offset to the right */}
+                  <path d="M34 7C39 7 43 11 43 16c0 8-7 13-17 24V16l1 3 1-2 1 3 1-2 1 3 1-2V16C33 11 34 7 34 7z" transform="translate(2.5, 0)" />
                 </svg>
               </div>
               <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
