@@ -168,9 +168,7 @@ function CitySelectorContent({
     }, 50)
   }
 
-  if (!currentCitySlug || !currentCityName) {
-    return null
-  }
+  const hasCity = currentCitySlug && currentCityName
 
   return (
     <div
@@ -191,7 +189,7 @@ function CitySelectorContent({
       >
         <span className="text-neutral-900">Curious</span>
         <span className="text-neutral-400 mx-0.5">|</span>
-        <span>{currentCityName}</span>
+        <span>{hasCity ? currentCityName : 'City'}</span>
         <motion.svg
           className="w-4 h-4"
           animate={{ rotate: isOpen ? 180 : 0 }}
@@ -233,7 +231,7 @@ function CitySelectorContent({
                   <CityItem
                     key={city.slug}
                     city={city}
-                    isActive={Boolean(currentCitySlug) && city.slug === currentCitySlug}
+                    isActive={!!hasCity && city.slug === currentCitySlug}
                     href={buildCityUrl(city.slug, currentSection, preserveFilters)}
                     onClose={handleClose}
                     index={index}
@@ -251,12 +249,14 @@ function CitySelectorContent({
 }
 
 export function CitySelector(props: CitySelectorProps) {
+  const hasCity = props.currentCitySlug && props.currentCityName
+
   return (
     <Suspense fallback={
       <div className="flex items-center gap-1 px-3 py-2 text-base font-medium">
         <span className="text-neutral-900">Curious</span>
         <span className="text-neutral-400 mx-0.5">|</span>
-        <span className="text-accent-600">{props.currentCityName || 'Loading...'}</span>
+        <span className="text-accent-600">{hasCity ? props.currentCityName : 'City'}</span>
       </div>
     }>
       <CitySelectorContent {...props} />

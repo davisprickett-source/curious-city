@@ -348,6 +348,27 @@ export const phoenix: CityData = {
             },
           },
           {
+            id: 'phx-curiosity-bunker',
+            type: 'curiosity',
+            category: 'history',
+            title: 'There\'s a Cold War bunker hidden under Papago Park',
+            body: 'Built in 1956, a nuclear bunker sits cut into the red sandstone hills of Papago Park, 20 feet underground with foot-thick concrete walls. It\'s now Maricopa County Emergency Management headquarters. The bunker still contains original Cold War artifacts: gas masks, WWII cots, emergency water supplies. You can see the entrance from hiking trails, but it remains an active government facility—not open to the public. Just another piece of Phoenix\'s strange history hiding in plain sight.',
+            image: {
+              src: '',
+              alt: 'Cold War era bunker entrance in desert hillside',
+            },
+            sources: [
+              {
+                title: 'Maricopa County Emergency Management',
+                url: 'https://www.maricopa.gov/625/Emergency-Management',
+              },
+            ],
+            location: {
+              name: 'Papago Park, Phoenix',
+              stillExists: true,
+            },
+          },
+          {
             id: 'phx-curiosity-14',
             type: 'curiosity',
             category: 'culture',
@@ -512,48 +533,10 @@ export const phoenix: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Phoenix',
-        teaser: 'Cold War bunkers, forgotten ruins, and secrets hiding in the desert sun',
+        teaser: 'Castles, cemeteries, speakeasies, and secrets hiding in the desert sun',
         intro:
-          'These aren\'t in the guidebooks. A Cold War bunker 20 feet underground in Papago Park, Japanese internment camp ruins fading into tribal land, underground bars with no signage, and a three-tiered wedding cake castle that never opened. Phoenix\'s obscure history hides in plain sight under the desert sun.',
+          'These aren\'t in the guidebooks. A three-tiered wedding cake castle that never opened as a hotel. Underground bars with no signage. Historic cemeteries hiding Lost Dutchman legends. Phoenix\'s obscure gems hide in plain sight under the desert sun.',
         items: [
-          {
-            id: 'gem-papago-bunker',
-            type: 'hidden-gem',
-            name: 'Papago Park Cold War Bunker',
-            category: 'Cold War Relic',
-            description:
-              'Built 1956, cut into red sandstone hill 20 feet underground with foot-thick concrete walls. Now Maricopa County Emergency Management headquarters. Contains original Cold War artifacts: gas masks, WWII cots, emergency water. Still operational government facility — not typically open to public.',
-            images: [
-              {
-                src: '',
-                alt: 'Cold War era bunker entrance in desert hillside',
-              },
-            ],
-            address: 'Papago Park, Phoenix, AZ',
-            coordinates: { lat: 33.4555, lng: -111.9483 },
-            hours: 'Not open to public',
-            price: 'N/A',
-            tip: 'Visible from trails but access restricted — active government facility.',
-          },
-          {
-            id: 'gem-rivers-internment',
-            type: 'hidden-gem',
-            name: 'Rivers Relocation Center Remnants',
-            category: 'Japanese Internment Site',
-            description:
-              'WWII Japanese internment camp ruins on tribal land. Nearly 900 barracks once stood (Canal and Butte camps). At least 230 ornate garden ponds built by prisoners remain. Tribe letting nature reclaim the site — no preserved structures, intentionally fading into history.',
-            images: [
-              {
-                src: '',
-                alt: 'Desert landscape with ruins and remnant structures',
-              },
-            ],
-            address: 'Gila River Indian Reservation (remote location)',
-            coordinates: { lat: 33.2450, lng: -111.9550 },
-            hours: 'Tribal land — respect access restrictions',
-            price: 'Free',
-            tip: 'Remote location with minimal preservation — fading into history by design.',
-          },
           {
             id: 'gem-tovrea-castle',
             type: 'hidden-gem',
@@ -1927,6 +1910,39 @@ export const phoenix: CityData = {
               {
                 src: '/phoenix/dark-history/rosson-house-2.png',
                 alt: 'Phoenix streets during deadly heat, showing the urban environment where nearly 300 homeless people died in one summer',
+              },
+            ],
+          },
+          {
+            id: 'phx-dark-11',
+            type: 'dark-history',
+            category: 'forgotten',
+            year: '1942–1945',
+            title: 'The Gila River Internment Camps',
+            body: 'After Pearl Harbor, the U.S. government forcibly relocated over 13,000 Japanese Americans to two camps on the Gila River Indian Reservation—Butte Camp and Canal Camp. Nearly 900 barracks were built on tribal land. Families lost everything: homes, businesses, dignity. In the brutal Arizona heat, internees built over 230 ornate garden ponds and created baseball diamonds, trying to maintain humanity in an inhumane situation. The Pima people, themselves no strangers to government oppression, had opposed the camps on their land. After the war, the barracks were dismantled. Today, the Gila River Indian Community has made a deliberate choice: let nature reclaim the site. No preserved structures. No museum. The remnants of those garden ponds—visible from the air, crumbling on the ground—are fading into history. The tribe views this as appropriate: a painful chapter that doesn\'t need monuments, just memory.',
+            verdict: '13,000 imprisoned. The desert is slowly erasing the evidence, but not the injustice.',
+            sources: [
+              {
+                type: 'article',
+                title: 'Gila River Internment Camp',
+                publisher: 'Densho Encyclopedia',
+                url: 'https://encyclopedia.densho.org/Gila_River/',
+              },
+              {
+                type: 'article',
+                title: 'Japanese Internment in Arizona',
+                publisher: 'Arizona State Library',
+                url: 'https://azlibrary.gov/japanese-internment-arizona',
+              },
+            ],
+            location: {
+              name: 'Gila River Indian Reservation',
+              stillExists: true,
+            },
+            images: [
+              {
+                src: '',
+                alt: 'Desert landscape where Gila River internment camps once held 13,000 Japanese Americans',
               },
             ],
           },
