@@ -43,8 +43,8 @@ export function ScrollyMapView({
 
   return (
     <div className="relative">
-      {/* Fixed background map (starts below nav) */}
-      <div className="fixed inset-0 z-0" style={{ top: '60px' }}>
+      {/* Fixed background map (full screen on mobile where nav scrolls, below nav on desktop) */}
+      <div className="fixed inset-0 z-0 sm:top-[60px]">
         <ScrollyMap
           spots={spots}
           activeSpotIndex={activeSpotIndex}

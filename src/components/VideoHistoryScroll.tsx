@@ -431,10 +431,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '25vh' }} />
       <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-t from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ bottom: '25vh' }} />
 
-      {/* Split Screen Section - mt-[57px] on mobile to clear fixed nav */}
-      <div className="mt-[57px] lg:mt-0 lg:flex lg:flex-row" ref={containerRef}>
-        {/* Left Side: Video (Sticky on mobile, Fixed on desktop) */}
-        <div className="w-full h-[30vh] sticky top-[57px] lg:fixed lg:left-0 lg:top-[57px] lg:w-[70%] lg:h-[calc(100vh-57px)] bg-white flex items-center justify-center z-20 will-change-transform">
+      {/* Split Screen Section */}
+      <div className="lg:flex lg:flex-row" ref={containerRef}>
+        {/* Left Side: Video (Fixed on all screens) */}
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:h-[calc(100vh-57px)] bg-white flex items-center justify-center z-20 will-change-transform">
           <img
             src={framePath}
             alt=""
@@ -454,11 +454,11 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
         <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          {/* Mobile spacer - push content below nav + fixed video */}
+          <div className="lg:hidden" style={{ height: 'calc(57px + 30vh)' }} />
+
           {/* Top spacing - centers content in middle of screen on desktop */}
           <div className="hidden lg:block" style={{ height: '50vh' }} />
-
-          {/* Mobile spacing - push content well below the gradient so title is clearly visible */}
-          <div className="lg:hidden h-32" />
 
           {/* Story Content Area - ref attached here to measure only story, not footer */}
           <div ref={storyContentRef}>

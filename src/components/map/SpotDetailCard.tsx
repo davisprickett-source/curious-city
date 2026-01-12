@@ -113,11 +113,11 @@ export function SpotDetailCard({ spot, rank, totalSpots, onNext, onPrev, onClose
             style={{ willChange: 'transform' }}
           >
             {/* Drag handle */}
-            <div className="sticky top-0 bg-white z-10 pt-3 pb-2 flex justify-center border-b border-neutral-100">
-              <div className="w-12 h-1 bg-neutral-300 rounded-full" />
+            <div className="sticky top-0 bg-white z-10 pt-2 pb-1 flex justify-center border-b border-neutral-100">
+              <div className="w-10 h-1 bg-neutral-300 rounded-full" />
             </div>
 
-            <div className="px-6 pb-8">
+            <div className="px-5 pb-6">
               <CardContent
                 spot={spot}
                 rank={rank}
@@ -162,13 +162,13 @@ function CardContent({
   setMobileExpanded?: (expanded: boolean) => void
 }) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Rank badge */}
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-[#c65d3b] text-white font-semibold rounded-full flex items-center justify-center shadow-md">
+      <div className="flex items-center gap-2 pt-2">
+        <div className="w-8 h-8 bg-[#c65d3b] text-white text-sm font-semibold rounded-full flex items-center justify-center shadow-md">
           {rank}
         </div>
-        <div className="text-sm text-neutral-500">
+        <div className="text-sm text-neutral-400">
           / {totalSpots}
         </div>
       </div>
@@ -360,52 +360,52 @@ function CardContent({
       )}
 
       {/* Navigation buttons */}
-      <div className="pt-6 border-t border-neutral-200">
-        <div className="grid grid-cols-2 gap-3">
+      <div className="pt-4 border-t border-neutral-200">
+        <div className="grid grid-cols-2 gap-2">
           <button
             onClick={onPrev}
             disabled={rank === 1}
             className="
-              flex items-center justify-center gap-3
-              px-6 py-4
+              flex items-center justify-center gap-2
+              px-4 py-3
               bg-neutral-100
               hover:bg-neutral-200
               disabled:opacity-40
               disabled:cursor-not-allowed
-              rounded-xl
+              rounded-lg
               transition-all
               hover:scale-[1.02]
               active:scale-[0.98]
-              text-base font-semibold
+              text-sm font-semibold
               text-neutral-900
-              min-h-[56px]
+              min-h-[44px]
               focus:outline-none focus:ring-2 focus:ring-[#c65d3b] focus:ring-offset-2
             "
             aria-label="Previous spot"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
             </svg>
-            Previous
+            Prev
           </button>
 
           <button
             onClick={onNext}
             disabled={rank === totalSpots}
             className="
-              flex items-center justify-center gap-3
-              px-6 py-4
+              flex items-center justify-center gap-2
+              px-4 py-3
               bg-[#c65d3b]
               hover:bg-[#b54d2d]
               disabled:opacity-40
               disabled:cursor-not-allowed
               text-white
-              rounded-xl
+              rounded-lg
               transition-all
               hover:scale-[1.02]
               active:scale-[0.98]
-              text-base font-semibold
-              min-h-[56px]
+              text-sm font-semibold
+              min-h-[44px]
               focus:outline-none focus:ring-2 focus:ring-[#c65d3b] focus:ring-offset-2
               shadow-md
               hover:shadow-lg
@@ -413,7 +413,7 @@ function CardContent({
             aria-label="Next spot"
           >
             Next
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
           </button>
