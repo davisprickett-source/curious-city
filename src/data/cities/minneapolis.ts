@@ -3531,7 +3531,7 @@ export const minneapolis: CityData = {
           {
             id: 'mpls-lost-15',
             type: 'lost-and-loved',
-            category: 'media',
+            category: 'institution',
             name: 'City Pages',
             neighborhood: 'Minneapolis',
             yearsOpen: '1979–2020',
