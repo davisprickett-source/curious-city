@@ -912,8 +912,8 @@ export const minneapolis: CityData = {
             id: 'curiosity-10',
             type: 'curiosity',
             category: 'culture',
-            title: 'MST3K started as Minneapolis public access TV with homemade robots',
-            body: 'Before Mystery Science Theater 3000 became a cult phenomenon, it premiered on KTMA — a Minneapolis public access station — in 1988. Creator Joel Hodgson built the original robot puppets (Crow, Tom Servo, Gypsy) in his Minneapolis apartment using household items and hardware store parts. The show\'s first episodes aired locally at odd hours, gained a following, moved to Comedy Central, ran for over a decade, and spawned multiple revivals. But it began in the most lo-fi way possible: local cable access with puppets made from a salad bowl, a lacrosse mask, and a gumball machine.',
+            title: 'MST3K started as Minneapolis UHF TV with homemade robots',
+            body: 'Before Mystery Science Theater 3000 became a cult phenomenon, it premiered on KTMA — a Minneapolis UHF independent station — in 1988. Creator Joel Hodgson built the original robot puppets (Crow, Tom Servo, Gypsy) in his Minneapolis apartment using household items and hardware store parts. The show\'s first episodes aired locally at odd hours, gained a following, moved to Comedy Central, ran for over a decade, and spawned multiple revivals. But it began in the most lo-fi way possible: local UHF television with puppets made from a salad bowl, a lacrosse mask, and a gumball machine.',
             sources: [
               {
                 title: 'MST3K Official Site',
@@ -949,6 +949,28 @@ export const minneapolis: CityData = {
             image: {
               src: '/minneapolis/curiosities/skyway.png',
               alt: 'Minneapolis skyway system',
+            },
+          },
+          {
+            id: 'curiosity-18',
+            type: 'curiosity',
+            category: 'invention',
+            title: 'The world\'s first indoor shopping mall opened in Edina in 1956',
+            body: 'On October 8, 1956, Southdale Center opened in Edina — the first fully enclosed, climate-controlled shopping mall in world history. Architect Victor Gruen designed a "shopping town" with two department stores anchoring a garden-filled central court under a climate-controlled roof. The idea was revolutionary: shoppers could browse in comfort regardless of Minnesota\'s brutal winters or humid summers.\n\nGruen envisioned Southdale as a European-style town square transplanted to the suburbs — complete with a sidewalk cafe, sculptures, and a goldfish pond. Retailers were skeptical. They thought shoppers wouldn\'t enter a building without windows. They were wrong. Southdale was immediately successful, and the concept spread worldwide. Every enclosed mall, from Mall of America to shopping centers in Dubai, descends from this Edina prototype.\n\nIronically, Gruen later called American malls "bastard developments" that perverted his original vision of community-centered spaces. He wanted town squares; he got consumer temples. But the innovation — bringing the outdoors inside, controlling climate for commerce — changed how the world shops.',
+            sources: [
+              {
+                title: 'Minnesota Historical Society: Southdale',
+                url: 'https://www.mnhs.org/mnopedia/southdale-center',
+              },
+              {
+                title: 'Smithsonian: The Man Who Invented the Shopping Mall',
+                url: 'https://www.smithsonianmag.com/history/the-man-who-invented-the-shopping-mall-180953305/',
+              }
+            ],
+            location: { name: 'Southdale Center, Edina', url: 'https://www.google.com/maps/place/Southdale+Center/@44.8810,-93.3228,15z', stillExists: true },
+            image: {
+              src: '/minneapolis/curiosities/southdale.png',
+              alt: 'Southdale Center in 1956 - world\'s first enclosed shopping mall',
             },
           },
           {
@@ -1229,6 +1251,25 @@ export const minneapolis: CityData = {
       price: '$7 vehicle day pass',
       website: 'https://www.dnr.state.mn.us/state_parks/afton',
       tip: 'The river bluff trails are stunning but steep',
+    },
+    {
+      id: 'iconic-7',
+      type: 'iconic-spot',
+      name: 'First Avenue',
+      category: 'Music Venue',
+      description: 'The legendary nightclub where Prince filmed "Purple Rain" and launched his career. That exterior — black walls covered in white stars bearing the names of artists who\'ve played here — is one of the most iconic images in rock history. Prince. The Replacements. Hüsker Dü. Atmosphere. Every band that mattered to Minneapolis started or passed through these doors. The main room still hosts touring acts and local legends. The adjacent 7th Street Entry is where careers begin.',
+      images: [
+        {
+          src: '/minneapolis/iconic/first-avenue.png',
+          alt: 'First Avenue nightclub exterior with iconic stars',
+        }
+      ],
+      address: '701 N 1st Ave, Minneapolis, MN 55403',
+      coordinates: { lat: 44.9797, lng: -93.2762 },
+      hours: 'Varies by show',
+      price: '$15-50 depending on artist',
+      website: 'https://first-avenue.com',
+      tip: 'Check the calendar for local acts at 7th Street Entry — that\'s where you\'ll see the next big thing',
     }
   ],
 },
@@ -1526,7 +1567,7 @@ export const minneapolis: CityData = {
           type: 'hidden-gem',
           name: 'Witch\'s Hat Water Tower',
           category: 'Architecture',
-          description: 'On the highest natural point in Minneapolis sits a unique "witch\'s hat" shaped water tower from 1913. It\'s exactly what it sounds like: a conical roof on a tower that looks like something from a fairy tale. The observation deck inside offers 360° views of the city, but there\'s a catch — it\'s only open ONE day per year (first Friday after Memorial Day). Locals camp out in line for the rare chance to climb the 101+16 steps. The tower is currently closed for repairs until late spring 2025, but you can admire the exterior anytime from Prospect Park.',
+          description: 'On the highest natural point in Minneapolis sits a unique "witch\'s hat" shaped water tower from 1913. It\'s exactly what it sounds like: a conical roof on a tower that looks like something from a fairy tale. The observation deck inside offers 360° views of the city, but there\'s a catch — it\'s only open ONE day per year (first Friday after Memorial Day). Locals camp out in line for the rare chance to climb the 101+16 steps. You can admire the exterior anytime from Prospect Park.',
           images: [
             {
               src: '/minneapolis/hidden-gems/witch-tower.png',
@@ -1535,7 +1576,7 @@ export const minneapolis: CityData = {
           ],
           address: '55 SE Malcolm Ave, Minneapolis, MN 55414',
           coordinates: { lat: 44.9703, lng: -93.2167 },
-          hours: 'Currently closed for repairs (reopening late spring 2025)',
+          hours: 'Open ONE day per year (first Friday after Memorial Day)',
           price: 'Free on open day',
           website: 'https://prospectparkmpls.org/tower.html',
           tip: 'Mark your calendar for late May/early June when it reopens — the line gets long',
@@ -2472,6 +2513,29 @@ export const minneapolis: CityData = {
               src: '/minneapolis/restaurants/brasa-menu.png',
               alt: 'Brasa rotisserie and sides menu',
             },
+          },
+          {
+            name: 'Kramarczuk\'s',
+            neighborhood: 'Northeast',
+            vibe: 'A Ukrainian-Polish deli and sausage house that\'s been anchoring Northeast Minneapolis since 1954. Three generations of the Kramarczuk family have served kielbasa, pierogi, and borscht to workers, artists, and anyone who knows where the real food is.',
+            order: 'The kielbasa plate with sauerkraut and horseradish — it\'s what built this place. The pierogi, fried or boiled. The borscht if it\'s winter. A slice of poppy seed roll for the road. Stand at the deli counter and point at whatever looks good.',
+            why: 'Wasyl Kramarczuk fled Soviet Ukraine for Minneapolis in 1949, started making sausages in 1954, and his family has never stopped. The recipes haven\'t changed. The deli case still groans with smoked meats, stuffed cabbage, and Eastern European pickles. The dining room upstairs serves hot plates while Babcias argue in Ukrainian at the next table. This is what ethnic food looked like before "authentic" became a marketing term. Northeast Minneapolis was built by immigrants from Poland, Ukraine, and Eastern Europe — and Kramarczuk\'s is where their grandchildren still come to eat. The annual Pierogi Festival draws crowds that wrap around the block. It\'s not nostalgia. It\'s just lunch.',
+            address: '215 E Hennepin Ave, Minneapolis, MN 55414',
+            coordinates: { lat: 44.9892, lng: -93.2586 },
+            hours: 'Mon-Sat 8am-8pm, Sun 10am-6pm',
+            price: '$$',
+            website: 'https://kramarczuks.com',
+            instagram: '@kramarczuks',
+            images: [
+              {
+                src: '/minneapolis/restaurants/kramarczuks-1.png',
+                alt: 'Kramarczuk\'s deli counter with Eastern European sausages and meats',
+              }
+            ],
+            menuImage: {
+              src: '/minneapolis/restaurants/kramarczuks-menu.png',
+              alt: 'Kramarczuk\'s deli and restaurant menu',
+            },
           }
         ],
       },
@@ -2737,19 +2801,6 @@ export const minneapolis: CityData = {
                 year: '2021',
                 url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
               },
-              {
-                type: 'podcast',
-                title: 'The Adam Johnson Dismemberment',
-                show: 'True Crime Minnesota',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/true-crime-minnesota/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'Adam Johnson Murder Investigation Update',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=AbC123XyZ45',
-              }
             ],
             images: [
               {
@@ -2808,12 +2859,6 @@ export const minneapolis: CityData = {
                 platform: 'MPR',
                 url: 'https://www.mprnews.org/podcast/long-lost',
               },
-              {
-                type: 'video',
-                title: 'The Klein Brothers: Minnesota\'s Oldest Missing Persons Case',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=XyZ123AbCdE',
-              }
             ],
             images: [
             ],
@@ -2874,19 +2919,6 @@ export const minneapolis: CityData = {
                 year: '2023',
                 url: 'https://www.cbsnews.com/news/jeanie-childs-jerry-westrom-minneapolis-cold-case-murder/',
               },
-              {
-                type: 'podcast',
-                title: 'Genetic Genealogy Solves 26-Year-Old Murder',
-                show: 'True Crime Minnesota',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/true-crime-minnesota/id1234567890',
-              },
-              {
-                type: 'video',
-                title: 'How a Discarded Napkin Solved a Murder',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=GhI789JkL01',
-              }
             ],
             images: [
               {
@@ -2936,18 +2968,98 @@ export const minneapolis: CityData = {
                 year: '2023',
                 url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/',
               },
+            ],
+            images: [
+            ],
+          },
+          {
+            id: 'mpls-dark-5',
+            type: 'dark-history',
+            category: 'disaster',
+            year: '2007',
+            title: 'The Bridge That Fell During Rush Hour',
+            body: 'At 6:05 p.m. on August 1, 2007, the I-35W Mississippi River bridge collapsed without warning during the evening rush hour. The eight-lane interstate bridge, carrying 140,000 vehicles daily, dropped 60 feet into the river below. 111 vehicles plunged with it. 13 people died. 145 were injured. A school bus carrying 52 children teetered on the edge of the collapsed span — every child survived, pulled to safety by passersby who climbed into the wreckage.\n\nThe cause was a design flaw that had existed since the bridge opened in 1967. Gusset plates — the steel sheets connecting the bridge\'s structural elements — were half as thick as they should have been. For forty years, the bridge held. Then, on a summer evening with construction crews adding weight to the deck, it didn\'t.\n\nThe collapse became a national symbol of America\'s crumbling infrastructure. The replacement bridge was built in just over a year — an engineering feat driven by urgency and shame. Memorial plaques at each end of the new bridge list the 13 names. The wreckage was hauled to a fenced storage facility where NTSB investigators spent years studying the failure. Most of it remains there, rusting in a field, a monument to what happens when infrastructure is neglected until it kills people.',
+            verdict: 'Design flaw identified. No criminal charges. 13 dead. The bridge that replaced it was built in 14 months.',
+            location: {
+              name: 'I-35W Bridge over Mississippi River, Minneapolis',
+              stillExists: false,
+              coordinates: { lat: 44.9778, lng: -93.2467 },
+            },
+            sources: [
               {
-                type: 'podcast',
-                title: 'Cindy Gerdes: Unsolved Since 1984',
-                show: 'Minnesota Cold Cases',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/minnesota-cold-cases/id1234567890',
+                type: 'article',
+                title: 'I-35W Bridge Collapse',
+                publisher: 'Minnesota Historical Society',
+                url: 'https://www.mnhs.org/mnopedia/search/index/i-35w-bridge-collapse',
               },
               {
-                type: 'video',
-                title: 'The Cindy Gerdes Murder Investigation',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=DeF456GhI78',
+                type: 'article',
+                title: 'Remembering the I-35W Bridge Collapse',
+                publisher: 'Star Tribune',
+                year: '2017',
+                url: 'https://www.startribune.com/10-years-after-the-35w-bridge-collapse/435838933/',
+              },
+              {
+                type: 'report',
+                title: 'NTSB Highway Accident Report',
+                publisher: 'National Transportation Safety Board',
+                year: '2008',
+                url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR0803.pdf',
+              },
+              {
+                type: 'article',
+                title: 'The Bridge Collapse That Changed American Infrastructure',
+                publisher: 'NPR',
+                year: '2017',
+                url: 'https://www.npr.org/2017/08/01/540669701/10-years-after-bridge-collapse-america-is-still-crumbling',
+              }
+            ],
+            images: [
+            ],
+          },
+          {
+            id: 'mpls-dark-6',
+            type: 'dark-history',
+            featured: true,
+            featuredOrder: 1,
+            category: 'injustice',
+            year: '2020',
+            title: 'The Corner That Became a Country\'s Reckoning',
+            body: '38th Street and Chicago Avenue was an unremarkable South Minneapolis intersection — a Cup Foods convenience store, a bus stop, some apartments. On May 25, 2020, George Floyd was killed here by Minneapolis police officer Derek Chauvin, who knelt on his neck for over nine minutes while Floyd said he couldn\'t breathe. A teenager named Darnella Frazier filmed it on her phone. The video went everywhere. The world watched a man die on a Minneapolis sidewalk.\n\nWhat happened next transformed the intersection itself. Within days, barricades went up. The corner became "George Floyd Square" — an autonomous zone that the city couldn\'t or wouldn\'t clear. A 30-foot steel fist sculpture rose at the center. Murals covered every surface. Flowers and candles accumulated at the spot where Floyd died. For over a year, residents controlled access, turning away traffic, creating a memorial that was also a protest.\n\nThe tension between mourning and neighborhood function has never resolved. Some residents wanted their streets back. Others insisted the memorial must remain undisturbed. The city eventually reopened the intersection to traffic in 2021, but the fist still stands, the murals remain, and the corner carries a weight that won\'t lift. Cup Foods — where Floyd allegedly used a counterfeit $20 bill, the reason police were called — still operates, its role in the story complicated and contested.\n\nChauvin was convicted of murder in 2021 and later pleaded guilty to federal civil rights violations. But the intersection isn\'t about his conviction. It\'s about what a corner becomes when something unforgivable happens there. People still visit. They leave flowers. They take photos of the fist. They stand where Floyd lay. Minneapolis has many dark chapters, but this one is still being written on a South Side corner that used to be unremarkable.',
+            verdict: 'Derek Chauvin convicted of murder (2021), sentenced to 22.5 years. The intersection remains a memorial and a wound.',
+            location: {
+              name: '38th Street and Chicago Avenue, Minneapolis',
+              stillExists: true,
+              coordinates: { lat: 44.9341, lng: -93.2617 },
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'George Floyd Square: What Happened to the Intersection',
+                publisher: 'New York Times',
+                year: '2021',
+                url: 'https://www.nytimes.com/2021/05/25/us/george-floyd-square.html',
+              },
+              {
+                type: 'article',
+                title: 'The Uncomfortable Question of What to Do With George Floyd Square',
+                publisher: 'Star Tribune',
+                year: '2022',
+                url: 'https://www.startribune.com/what-happens-to-george-floyd-square/600156432/',
+              },
+              {
+                type: 'article',
+                title: 'Minneapolis Reopens George Floyd Square to Traffic',
+                publisher: 'MPR News',
+                year: '2021',
+                url: 'https://www.mprnews.org/story/2021/06/03/minneapolis-reopens-george-floyd-square-to-traffic',
+              },
+              {
+                type: 'article',
+                title: 'Darnella Frazier, Who Filmed Floyd\'s Murder, Awarded Pulitzer',
+                publisher: 'NPR',
+                year: '2021',
+                url: 'https://www.npr.org/2021/06/11/1005601724/darnella-frazier-teen-who-filmed-george-floyds-murder-wins-pulitzer-prize-citat',
               }
             ],
             images: [
@@ -3413,6 +3525,38 @@ export const minneapolis: CityData = {
               {
                 title: 'Old Log Theater',
                 url: 'https://www.oldlog.com/',
+              }
+            ],
+          },
+          {
+            id: 'mpls-lost-15',
+            type: 'lost-and-loved',
+            category: 'media',
+            name: 'City Pages',
+            neighborhood: 'Minneapolis',
+            yearsOpen: '1979–2020',
+            description: 'For 41 years, City Pages was the alternative weekly that defined Minneapolis culture. Free, irreverent, and fiercely local, it covered the music, politics, food, and weirdness that mainstream media ignored. The annual "Best Of" issue was a cultural institution. Then the pandemic hit, advertising collapsed, and the presses stopped.',
+            whyMissed: 'That stack of free papers by the coffee shop door. The "Savage Love" column. Restaurant reviews that actually told you where to eat. Concert listings that introduced you to bands you\'d never heard of. Investigative journalism that made politicians uncomfortable. City Pages was how Minneapolis talked to itself — how neighborhoods learned about each other, how scenes got documented, how local culture got validated. When it folded in October 2020, the city lost more than a newspaper. It lost its mirror.',
+            communityVoice: '"City Pages was the soul of Minneapolis. When it died, part of the city died with it." — Former reader',
+            lastAddress: '650 3rd Ave S, Minneapolis',
+            images: [
+              {
+                src: '/minneapolis/lost-and-loved/city-pages.png',
+                alt: 'City Pages newspaper stands and covers',
+              }
+            ],
+            sources: [
+              {
+                title: 'Star Tribune: City Pages Closes After 41 Years',
+                url: 'https://www.startribune.com/city-pages-to-close-after-more-than-four-decades/572867371/',
+              },
+              {
+                title: 'MPR News: City Pages Shutdown',
+                url: 'https://www.mprnews.org/story/2020/10/29/city-pages-to-close-after-41-years',
+              },
+              {
+                title: 'Racket: What We Lost When City Pages Died',
+                url: 'https://racketmn.com/what-we-lost-when-city-pages-died/',
               }
             ],
           }
