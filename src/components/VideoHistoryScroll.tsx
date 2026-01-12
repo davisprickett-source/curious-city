@@ -454,8 +454,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
         <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          {/* Mobile spacer - push content below nav + fixed video */}
-          <div className="lg:hidden" style={{ height: 'calc(57px + 30vh)' }} />
+          {/* Mobile spacer - push content below nav + fixed video + extra space for title visibility */}
+          <div className="lg:hidden" style={{ height: 'calc(57px + 30vh + 25vh)' }} />
 
           {/* Top spacing - centers content in middle of screen on desktop */}
           <div className="hidden lg:block" style={{ height: '50vh' }} />

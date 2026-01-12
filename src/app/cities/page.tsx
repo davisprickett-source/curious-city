@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   description: 'Explore all the cities covered by Curious City - local stories, hidden gems, dark history, and more.',
 }
 
+// Helper function to get skyline image path for a city
+function getSkylineImage(citySlug: string): string {
+  // Map city slugs to skyline image filenames
+  const skylineMap: Record<string, string> = {
+    'anchorage': 'anchorage-skyline.png',
+    'chicago': 'chicago-skyline.png',
+    'colorado-springs': 'colorado-springs-skyline.png',
+    'dallas': 'dallas-skyline.png',
+    'denver': 'denver-skyline.png',
+    'fargo': 'fargo-skyline.png',
+    'minneapolis': 'minneapolis-skyline.png',
+    'phoenix': 'phoenix-skyline.png',
+    'portland': 'portland-skyline.png',
+    'raleigh': 'raleigh-skyline.png',
+    'seattle': 'seattle-skyline.png',
+    'salt-lake-city': 'SLC-skyline.png',
+    'tampa': 'tampa-skyline.png',
+  }
+
+  return `/banners/hero-city-images/${skylineMap[citySlug] || 'fallback.png'}`
+}
+
 export default async function CitiesPage() {
   const cities = await getAllCities()
 
@@ -37,7 +59,7 @@ export default async function CitiesPage() {
         <div className="container-page py-10 md:py-14">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {cities.map((city) => {
-              const heroImage = city.heroImage?.src || city.heroVideo?.fallbackImage
+              const skylineImage = getSkylineImage(city.slug)
 
               return (
                 <Link
@@ -48,20 +70,14 @@ export default async function CitiesPage() {
                   <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                     {/* Background */}
                     <div className="absolute inset-0">
-                      {heroImage ? (
-                        <>
-                          <Image
-                            src={heroImage}
-                            alt={city.name}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/50 to-neutral-900/20" />
-                        </>
-                      ) : (
-                        <div className="absolute inset-0 bg-gradient-to-br from-neutral-700 to-neutral-900" />
-                      )}
+                      <Image
+                        src={skylineImage}
+                        alt={`${city.name} skyline`}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/50 to-neutral-900/20" />
                     </div>
 
                     {/* Content */}

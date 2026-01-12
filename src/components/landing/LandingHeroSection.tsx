@@ -107,7 +107,7 @@ export function LandingHeroSection({
         <div className="absolute inset-0 bg-gradient-to-br from-accent-900/20 via-transparent to-purple-900/10" />
 
         {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-end pb-8 sm:pb-10 md:pb-14">
+        <div className="relative h-full container-page flex flex-col justify-start pt-16 sm:justify-end sm:pt-0 sm:pb-10 md:pb-14">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - Branding */
@@ -192,8 +192,8 @@ export function LandingHeroSection({
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-4 h-1 sm:w-5 sm:h-1.5 md:w-6 md:h-2 bg-white'
-                    : 'w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-white/50 hover:bg-white/75'
+                    ? 'w-3 h-0.5 sm:w-5 sm:h-1.5 md:w-6 md:h-2 bg-white'
+                    : 'w-0.5 h-0.5 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-white/50 hover:bg-white/75'
                 }`}
                 aria-label={index === 0 ? 'Go to intro' : `Go to slide ${index}`}
               />

@@ -129,56 +129,36 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             </div>
           )}
 
-          {/* Featured Image */}
-          {article.featuredImage && (
-            <div className="relative w-full aspect-[21/9] bg-neutral-900 mb-12">
-              <Image
-                src={article.featuredImage.src}
-                alt={article.featuredImage.alt}
-                fill
-                className="object-cover"
-                priority
-                sizes="100vw"
-              />
-              {article.featuredImage.credit && (
-                <div className="absolute bottom-4 right-4 text-xs text-white bg-black/50 px-2 py-1 rounded">
-                  Photo: {article.featuredImage.credit}
+          {/* Hero Section - Dark Background */}
+          <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
+            <div className="container-page py-12 md:py-16">
+              <div className="max-w-3xl mx-auto">
+                {/* Share Button at Top */}
+                <div className="mb-6">
+                  <span className="text-[#c65d3b] text-sm font-bold tracking-wider uppercase">SHARE</span>
                 </div>
-              )}
-            </div>
-          )}
 
-          {/* Article Meta & Title */}
-          <div className="container-page">
-            <div className="max-w-3xl mx-auto">
-              {/* Category, City & Date Pills */}
-              <div className="flex items-center flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-accent-100 text-accent-700 text-sm font-medium rounded-full">
-                  {article.category}
-                </span>
-                <span className="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm font-medium rounded-full">
-                  {city.name}
-                </span>
-                <time className="px-3 py-1 bg-neutral-100 text-neutral-600 text-sm rounded-full" dateTime={article.publishedAt}>
-                  {publishDate}
-                </time>
+                {/* Title */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                  {article.title}
+                </h1>
+
+                {/* Subtitle/Hook in Italics */}
+                {article.subtitle && (
+                  <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed">
+                    {article.subtitle}
+                  </p>
+                )}
               </div>
+            </div>
+          </div>
 
-              {/* Title */}
-              <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-                {article.title}
-              </h1>
-
-              {/* Subtitle */}
-              {article.subtitle && (
-                <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                  {article.subtitle}
-                </p>
-              )}
-
-              {/* Author */}
-              <div className="flex items-center justify-between py-6 border-y border-neutral-200 mb-12">
-                <div className="flex items-center gap-3">
+          {/* Intro Section - White Background */}
+          <div className="bg-white border-b border-neutral-200">
+            <div className="container-page py-8">
+              <div className="max-w-3xl mx-auto">
+                {/* Author */}
+                <div className="flex items-center gap-3 mb-8">
                   {article.author.avatar && (
                     <div className="relative w-12 h-12 rounded-full overflow-hidden bg-neutral-200">
                       <Image
@@ -196,12 +176,13 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
                     )}
                   </div>
                 </div>
-
-                <ShareLinks
-                  title={article.title}
-                  url={`https://thecurious.city/${citySlug}/articles/${slug}`}
-                />
               </div>
+            </div>
+          </div>
+
+          {/* Article Content */}
+          <div className="container-page">
+            <div className="max-w-3xl mx-auto">
 
               {/* Header Ad */}
               <UniversalAd

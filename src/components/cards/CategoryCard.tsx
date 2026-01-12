@@ -14,8 +14,8 @@ interface CategoryCardProps {
 // Page type gradient colors
 const typeGradients: Record<string, { overlay: string; fallback: string }> = {
   'dark-history': {
-    overlay: 'from-red-900/90 via-red-900/60 to-red-900/30',
-    fallback: 'from-red-700 to-red-950',
+    overlay: 'from-black/90 via-black/60 to-black/30',
+    fallback: 'from-neutral-900 to-black',
   },
   'curiosities': {
     overlay: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',

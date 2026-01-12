@@ -81,8 +81,10 @@ export function HorizontalScrollSection({
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           const oneSetWidth = el.scrollWidth / 3
-          // Add small offset (20px) to hide any gap/sliver from previous set
-          el.scrollLeft = oneSetWidth + 20
+          // Add small offset to hide any gap/sliver from previous set
+          // Use smaller offset on mobile to prevent cutting off first card
+          const offset = window.innerWidth < 768 ? 5 : 20
+          el.scrollLeft = oneSetWidth + offset
           // Small delay to ensure scroll position is applied before showing
           setTimeout(() => {
             setIsReady(true)
@@ -113,7 +115,9 @@ export function HorizontalScrollSection({
       requestAnimationFrame(() => {
         const oneSetWidth = el.scrollWidth / 3
         // Add small offset to hide any gap/sliver from previous set
-        el.scrollLeft = oneSetWidth + 20
+        // Use smaller offset on mobile to prevent cutting off first card
+        const offset = window.innerWidth < 768 ? 5 : 20
+        el.scrollLeft = oneSetWidth + offset
         checkScroll()
       })
     } else {

@@ -48,7 +48,7 @@ export function Footer() {
               Local content for curious people. We uncover the hidden stories,
               overlooked places, and forgotten history that make each city unique.
             </p>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-[#c65d3b]">
               Made with curiosity.
             </p>
           </div>
