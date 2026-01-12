@@ -150,6 +150,11 @@ function CardContent({
       {/* Name and metadata */}
       <div>
         <div className="flex items-baseline gap-3 flex-wrap mb-3">
+          {/* Rank badge */}
+          <div className="w-8 h-8 bg-[#c65d3b] text-white text-sm font-semibold rounded-full flex items-center justify-center shadow-md flex-shrink-0">
+            {rank}
+          </div>
+
           {spot.website ? (
             <a
               href={spot.website}
@@ -162,6 +167,10 @@ function CardContent({
           ) : (
             <h3 className="text-4xl font-bold text-neutral-900">{spot.name}</h3>
           )}
+
+          <span className="text-sm text-neutral-400">
+            / {totalSpots}
+          </span>
         </div>
         <div className="flex items-center gap-3 flex-wrap text-base">
           <span className="text-neutral-600">{spot.neighborhood}</span>
