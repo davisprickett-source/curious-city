@@ -148,14 +148,9 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const [currentFrame, setCurrentFrame] = useState(1)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
-  const [keyframesLoaded, setKeyframesLoaded] = useState(false)
-  const [currentSequenceLoaded, setCurrentSequenceLoaded] = useState(false)
   const loadedFramesRef = useRef<Set<string>>(new Set())
   const imagesRef = useRef<Map<string, HTMLImageElement>>(new Map())
-  const frameAccessOrder = useRef<string[]>([]) // LRU tracking
   const [cityName, setCityName] = useState('')
-  const KEYFRAME_INTERVAL = 8 // Load every 8th frame as keyframe
-  const MAX_CACHE_SIZE = 200 // Maximum frames to keep in memory
 
   // Get city name
   useEffect(() => {
@@ -211,161 +206,59 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     return `/sequences/${city}/${sequenceName}/frame_${paddedNum}.webp`
   }
 
-  // LRU Cache management - evict oldest frames when cache is full
-  const addToCache = useCallback((framePath: string, img: HTMLImageElement) => {
-    // Add to cache
-    imagesRef.current.set(framePath, img)
-    loadedFramesRef.current.add(framePath)
+  // Preload frames progressively
+  useEffect(() => {
+    const totalFramesToLoad: string[] = []
 
-    // Update LRU order
-    const existingIndex = frameAccessOrder.current.indexOf(framePath)
-    if (existingIndex !== -1) {
-      frameAccessOrder.current.splice(existingIndex, 1)
-    }
-    frameAccessOrder.current.push(framePath)
-
-    // Evict oldest frames if cache is full
-    while (frameAccessOrder.current.length > MAX_CACHE_SIZE) {
-      const oldestFrame = frameAccessOrder.current.shift()
-      if (oldestFrame) {
-        imagesRef.current.delete(oldestFrame)
-        loadedFramesRef.current.delete(oldestFrame)
+    videoBlocks.forEach((block) => {
+      const seqName = getSequenceName(block.videoPath)
+      const frameCount = getFrameCount(seqName)
+      for (let i = 1; i <= frameCount; i++) {
+        totalFramesToLoad.push(getFramePath(seqName, i))
       }
-    }
-  }, [MAX_CACHE_SIZE])
-
-  // Helper to load a single frame
-  const loadFrame = useCallback((framePath: string): Promise<void> => {
-    return new Promise((resolve) => {
-      if (loadedFramesRef.current.has(framePath)) {
-        resolve()
-        return
-      }
-
-      const img = new Image()
-      img.onload = () => {
-        addToCache(framePath, img)
-        resolve()
-      }
-      img.onerror = () => {
-        resolve()
-      }
-      img.src = framePath
     })
-  }, [addToCache])
 
-  // Phase 1: Load keyframes for all sequences
-  useEffect(() => {
-    const loadKeyframes = async () => {
-      const keyframesToLoad: string[] = []
+    const totalFrames = totalFramesToLoad.length
+    let loadedCount = 0
 
-      videoBlocks.forEach((block) => {
-        const seqName = getSequenceName(block.videoPath)
-        const frameCount = getFrameCount(seqName)
-        // Load every Nth frame as keyframe
-        for (let i = 1; i <= frameCount; i += KEYFRAME_INTERVAL) {
-          keyframesToLoad.push(getFramePath(seqName, i))
-        }
-      })
+    const loadBatch = async (startIdx: number, batchSize: number) => {
+      const batch = totalFramesToLoad.slice(startIdx, startIdx + batchSize)
 
-      const totalKeyframes = keyframesToLoad.length
-      let loadedCount = 0
+      await Promise.all(
+        batch.map((framePath) => {
+          return new Promise<void>((resolve) => {
+            if (loadedFramesRef.current.has(framePath)) {
+              loadedCount++
+              resolve()
+              return
+            }
 
-      // Load in batches
-      const batchSize = 10
-      for (let i = 0; i < keyframesToLoad.length; i += batchSize) {
-        const batch = keyframesToLoad.slice(i, i + batchSize)
-        await Promise.all(batch.map(async (framePath) => {
-          await loadFrame(framePath)
-          loadedCount++
-          setLoadingProgress(Math.round((loadedCount / totalKeyframes) * 100))
-        }))
-      }
+            const img = new Image()
+            img.onload = () => {
+              loadedFramesRef.current.add(framePath)
+              imagesRef.current.set(framePath, img)
+              loadedCount++
+              setLoadingProgress(Math.round((loadedCount / totalFrames) * 100))
+              resolve()
+            }
+            img.onerror = () => {
+              loadedCount++
+              resolve()
+            }
+            img.src = framePath
+          })
+        })
+      )
 
-      setKeyframesLoaded(true)
-      setIsLoading(false)
-    }
-
-    loadKeyframes()
-  }, [videoBlocks, loadFrame, KEYFRAME_INTERVAL])
-
-  // Phase 2: Load current sequence fully + adjacent sequences
-  useEffect(() => {
-    if (!keyframesLoaded) return
-
-    const loadCurrentAndAdjacent = async () => {
-      // Load current sequence
-      const sequencesToLoad = [currentVideoIndex]
-
-      // Also load adjacent sequences for smoother transitions
-      if (currentVideoIndex > 0) sequencesToLoad.push(currentVideoIndex - 1)
-      if (currentVideoIndex < videoBlocks.length - 1) sequencesToLoad.push(currentVideoIndex + 1)
-
-      for (const seqIdx of sequencesToLoad) {
-        const block = videoBlocks[seqIdx]
-        if (!block) continue
-
-        const seqName = getSequenceName(block.videoPath)
-        const frameCount = getFrameCount(seqName)
-        const framesToLoad: string[] = []
-
-        // Load all frames for this sequence
-        for (let i = 1; i <= frameCount; i++) {
-          const framePath = getFramePath(seqName, i)
-          if (!loadedFramesRef.current.has(framePath)) {
-            framesToLoad.push(framePath)
-          }
-        }
-
-        // Load in batches
-        const batchSize = 15
-        for (let i = 0; i < framesToLoad.length; i += batchSize) {
-          const batch = framesToLoad.slice(i, i + batchSize)
-          await Promise.all(batch.map(framePath => loadFrame(framePath)))
-        }
-      }
-
-      setCurrentSequenceLoaded(true)
-    }
-
-    setCurrentSequenceLoaded(false) // Reset when video changes
-    loadCurrentAndAdjacent()
-  }, [keyframesLoaded, currentVideoIndex, videoBlocks, loadFrame])
-
-  // Phase 3: Background load other sequences progressively
-  useEffect(() => {
-    if (!currentSequenceLoaded) return
-
-    const loadRemainingSequences = async () => {
-      // Load sequences adjacent to current first, then expand outward
-      const sequencesToLoad: number[] = []
-      for (let offset = 1; offset < videoBlocks.length; offset++) {
-        const prevIdx = currentVideoIndex - offset
-        const nextIdx = currentVideoIndex + offset
-        if (prevIdx >= 0) sequencesToLoad.push(prevIdx)
-        if (nextIdx < videoBlocks.length) sequencesToLoad.push(nextIdx)
-      }
-
-      for (const seqIdx of sequencesToLoad) {
-        const block = videoBlocks[seqIdx]
-        if (!block) continue
-
-        const seqName = getSequenceName(block.videoPath)
-        const frameCount = getFrameCount(seqName)
-
-        // Load all frames
-        for (let i = 1; i <= frameCount; i++) {
-          const framePath = getFramePath(seqName, i)
-          if (!loadedFramesRef.current.has(framePath)) {
-            await loadFrame(framePath)
-          }
-        }
+      if (startIdx + batchSize < totalFrames) {
+        setTimeout(() => loadBatch(startIdx + batchSize, batchSize), 10)
+      } else {
+        setIsLoading(false)
       }
     }
 
-    // Run in background, don't await
-    loadRemainingSequences()
-  }, [currentSequenceLoaded, currentVideoIndex, videoBlocks, loadFrame])
+    loadBatch(0, 20)
+  }, [videoBlocks])
 
   // Calculate weighted scroll thresholds based on scrollHeight values
   const scrollWeights = useMemo(() => {
@@ -468,31 +361,14 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     }
   }, [throttledHandleScroll, handleScroll])
 
-  // Get current frame path with fallback to nearest keyframe
   const getCurrentFramePath = () => {
     const currentBlock = videoBlocks[currentVideoIndex]
-    if (!currentBlock) return { path: '', isLoaded: true, nearestKeyframe: null }
-
+    if (!currentBlock) return ''
     const seqName = getSequenceName(currentBlock.videoPath)
-    const targetPath = getFramePath(seqName, currentFrame)
-
-    // Check if exact frame is loaded
-    if (loadedFramesRef.current.has(targetPath)) {
-      return { path: targetPath, isLoaded: true, nearestKeyframe: null }
-    }
-
-    // Fall back to nearest keyframe
-    const keyframeNum = Math.floor(currentFrame / KEYFRAME_INTERVAL) * KEYFRAME_INTERVAL || 1
-    const keyframePath = getFramePath(seqName, keyframeNum)
-
-    return {
-      path: keyframePath,
-      isLoaded: false,
-      nearestKeyframe: keyframeNum
-    }
+    return getFramePath(seqName, currentFrame)
   }
 
-  const { path: framePath, isLoaded: frameIsLoaded } = getCurrentFramePath()
+  const framePath = getCurrentFramePath()
   // Always use full opacity to prevent flashing on scroll - frames load fast enough
   const frameOpacity = 1
 
@@ -569,32 +445,17 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
             }}
           />
 
-          {/* Initial keyframe loading */}
-          {isLoading && loadingProgress < 100 && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-neutral-900/90">
-              <div className="text-center">
-                <div className="mb-3">
-                  <div className="w-12 h-12 border-4 border-neutral-600 border-t-white rounded-full animate-spin mx-auto" />
-                </div>
-                <span className="text-white text-lg font-medium">Loading keyframes...</span>
-                <div className="text-neutral-400 text-sm mt-2">{loadingProgress}%</div>
-              </div>
-            </div>
-          )}
-
-          {/* Frame not loaded fallback - show subtle indicator */}
-          {!isLoading && !frameIsLoaded && (
-            <div className="absolute bottom-4 right-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-2">
-              <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
-              Loading frames...
+          {isLoading && loadingProgress < 10 && (
+            <div className="absolute inset-0 flex items-center justify-center bg-neutral-900">
+              <span className="text-neutral-400 text-sm">{loadingProgress}%</span>
             </div>
           )}
         </div>
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
         <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          {/* Mobile spacer - push content below nav + fixed video + extra space for title visibility */}
-          <div className="lg:hidden" style={{ height: 'calc(57px + 30vh + 25vh)' }} />
+          {/* Mobile spacer - push content below nav + fixed video */}
+          <div className="lg:hidden" style={{ height: 'calc(57px + 30vh)' }} />
 
           {/* Top spacing - centers content in middle of screen on desktop */}
           <div className="hidden lg:block" style={{ height: '50vh' }} />
