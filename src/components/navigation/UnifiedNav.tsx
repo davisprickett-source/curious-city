@@ -84,11 +84,11 @@ export function UnifiedNav({
     }
   }, [useFixedPosition])
 
-  // For scrolly pages: use relative on mobile so nav scrolls away completely, sticky on desktop
-  // For regular pages: always sticky
+  // For scrolly pages: use relative on mobile so nav scrolls away completely, fixed on desktop
+  // For regular pages: always fixed on desktop, sticky on mobile for hide/show
   const positionClass = useFixedPosition
-    ? 'relative sm:sticky sm:top-0'
-    : 'sticky top-0'
+    ? 'relative sm:fixed sm:top-0 sm:left-0 sm:right-0'
+    : 'sticky top-0 sm:fixed sm:left-0 sm:right-0'
 
   return (
     <nav
