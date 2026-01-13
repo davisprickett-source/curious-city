@@ -67,7 +67,7 @@ export const anchorage: CityData = {
             type: 'curiosity',
             category: 'nature',
             title: 'Surfers ride a tidal wave that hides quicksand capable of killing you',
-            body: 'Twice daily, a 6-foot wall of water barrels up Turnagain Arm at 15 mph—a bore tide you can surf for miles. The catch? The silty glacial water conceals quicksand that\'s swallowed people whole. Local surfers have mapped the safe zones through trial, error, and decades of bodies. One wrong step off your board and the inlet doesn\'t let go.',
+            body: 'Twice daily, a 6-foot wall of water barrels up Turnagain Arm at 15 mph—a bore tide you can surf for miles. The catch? The silty glacial mudflats conceal quicksand that\'s killed at least four people since 1978. Get trapped waist-deep, and you\'ll drown when the tide returns. Rescuers can\'t free you before the water rises. Local surfers know where to step. One wrong move off your board and the inlet doesn\'t let go.',
             images: [
               {
                 src: '/anchorage/curiosities/surf-1.png',
@@ -261,7 +261,7 @@ export const anchorage: CityData = {
             type: 'curiosity',
             category: 'culture',
             title: 'Over 100 languages are spoken in Anchorage schools',
-            body: 'Mountain View, a northeast Anchorage neighborhood, ranks as one of the most diverse census tracts in America. Refugees from Sudan, Bhutan, and Somalia live alongside Pacific Islanders, Indigenous Alaskans, and transplants from everywhere else. Over 100 languages echo through Anchorage schools. It\'s the kind of diversity you\'d expect in Queens or the Bay Area—not at the edge of the Arctic.',
+            body: 'Mountain View, a northeast Anchorage neighborhood, ranks as one of the most diverse census tracts in America. Refugees from Sudan, Bhutan, and Somalia live alongside Pacific Islanders, Indigenous Alaskans, and transplants from everywhere else. In 2024, the school district counted 112 languages spoken by students and families. It\'s the kind of diversity you\'d expect in Queens or the Bay Area—not at the edge of the Arctic.',
             images: [
               {
                 src: '/anchorage/curiosities/mountain-view-diversity.png',
@@ -309,7 +309,7 @@ export const anchorage: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'Alaska voted twice to move the capital here—then refused to pay for it',
-            body: 'Juneau, Alaska\'s capital, is inaccessible by road. You can only reach it by plane or boat. In 1976 and again in 1994, voters approved moving the capital to a site near Anchorage. Both times, the funding ballot failed. Alaskans wanted a more practical capital—they just didn\'t want to pay for new government buildings. So Juneau remains the capital, inaccessible and inexplicable, because fiscal conservatism beat out logic.',
+            body: 'Juneau, Alaska\'s capital, is inaccessible by road. You can only reach it by plane or boat. In 1974, voters approved moving the capital near Anchorage. In 1976, they picked Willow as the site. Then in 1982, they rejected the $2.8 billion price tag. In 1994, they voted down moving it to Wasilla. Alaskans wanted a practical capital—they just didn\'t want to pay for it. So Juneau remains the capital, inaccessible and inexplicable, because fiscal conservatism beat out logic.',
             source: 'Alaska State Legislature',
           },
           {

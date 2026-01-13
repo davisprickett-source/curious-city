@@ -83,8 +83,8 @@ export const portland: CityData = {
             id: 'pdx-curiosity-4',
             type: 'curiosity',
             category: 'culture',
-            title: 'The world\'s smallest park is 2 feet wide and has a leprechaun',
-            body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. The park still exists today. Locals still decorate it seasonally. The leprechaun, as far as anyone knows, never left.',
+            title: 'The world\'s smallest park is 2 feet wide and has a leprechaun (UPDATE: Japan stole the title)',
+            body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
             year: '1948',
             image: {
               src: '/portland/curiosities/mill-ends-park.png',
@@ -122,9 +122,9 @@ export const portland: CityData = {
             id: 'pdx-curiosity-7',
             type: 'curiosity',
             category: 'law',
-            title: 'Pumping your own gas was a crime in Oregon until 2024',
-            body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in 2024 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition to self-service felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed.',
-            year: '2024',
+            title: 'Pumping your own gas was a crime in Oregon until 2023',
+            body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in August 2023 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed. New Jersey remains the only state where you still can\'t pump your own gas.',
+            year: '2023',
             image: {
               src: '/portland/curiosities/Portland-gas-service.png',
               alt: 'Oregon gas station attendant filling car',
