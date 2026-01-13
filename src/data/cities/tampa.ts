@@ -195,10 +195,6 @@ export const tampa: CityData = {
             title: 'Tampa hasn\'t been hit by a major hurricane in over a century',
             body: 'The Tampa Bay area has been extraordinarily, improbably lucky: no major hurricane has made direct landfall since 1921. The bay\'s funnel shape means storm surge from a Cat 4 or 5 could flood downtown under 20+ feet of water. Insurance models show it would be one of the costliest disasters in American history. Meteorologists call Tampa\'s coastline uniquely vulnerable. Everyone who lives here knows the luck will eventually run out. Nobody knows when. The waiting is the hard part.',
             year: '1921',
-            image: {
-              src: '',
-              alt: 'Tampa Bay coastline',
-            },
             source: 'National Hurricane Center',
             location: {
               name: 'Tampa Bay',

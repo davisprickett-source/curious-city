@@ -275,10 +275,6 @@ export const fargo: CityData = {
             category: 'underground',
             title: 'Downtown has a skyway system so you can survive -40°F in a suit',
             body: 'Like Minneapolis and St. Paul, Fargo built a network of elevated, climate-controlled walkways connecting downtown buildings. On days when the wind chill hits -40°F, office workers can walk for blocks without putting on a coat. The skyway has its own culture—regulars know which routes are fastest, which corners get crowded, and where people stop to chat.',
-            image: {
-              src: '',
-              alt: 'Downtown skyway system',
-            },
             source: 'Downtown Community Partnership',
             location: {
               name: 'Downtown Fargo',
@@ -399,12 +395,6 @@ export const fargo: CityData = {
             category: 'Hidden Archive',
             description:
               'Located in an off-campus industrial warehouse (former Knox Lumber Company), this archive contains heavy boxes of original glass plate negatives from the late 1800s-1930s showing early NDSU campus life. Lead archivist notes "A lot of people don\'t realize this is available." Nearly destroyed by flooding 25 years ago when housed in a basement. Requires appointment or insider knowledge to access.',
-            images: [
-              {
-                src: '',
-                alt: 'Historical archives with glass plate negatives and documents',
-              },
-            ],
             address: '3551 Seventh Ave N, Fargo, ND 58102',
             coordinates: { lat: 46.8945, lng: -96.8123 },
             hours: 'By appointment only',
@@ -418,12 +408,6 @@ export const fargo: CityData = {
             category: 'Prohibition History',
             description:
               'In 1927, three blocks in Moorhead had 14 speakeasies in a three-block radius — "almost as many places where you could illegally buy alcohol as seven blocks of downtown Fargo do today." Researchers mapped them using arrest records. Most buildings still stand. Rustica Eatery operates in the oldest surviving "blind pig."',
-            images: [
-              {
-                src: '',
-                alt: 'Historic bar interior with Prohibition-era atmosphere',
-              },
-            ],
             address: 'Three blocks surrounding 1st Ave N, Moorhead, MN',
             coordinates: { lat: 46.8740, lng: -96.7670 },
             hours: 'Walk the historic blocks anytime',
@@ -437,12 +421,6 @@ export const fargo: CityData = {
             category: 'Oddities Shop',
             description:
               'Specializes in "vintage sex history, vintage & antique religious items, medical items, and oddities." They joke about riffing on "den of iniquity" given the smut and oddities. Features mid-century kitsch, vintage paperbacks and pulps, old advertising. Hidden inside First Avenue Market.',
-            images: [
-              {
-                src: '',
-                alt: 'Vintage oddities and antiques displayed in shop',
-              },
-            ],
             address: 'First Avenue Market, Downtown Fargo',
             coordinates: { lat: 46.8779, lng: -96.7898 },
             hours: '7 days a week (market hours)',
@@ -457,12 +435,6 @@ export const fargo: CityData = {
             category: 'Miniatures Shop',
             description:
               'North Dakota\'s smallest store selling only tiny items — jewelry, prints, gift baskets, quirky miniatures. Featured by Atlas Obscura. Open 360+ days a year but tucked inside Brewhalla market, easy to miss. The store itself is barely bigger than a closet.',
-            images: [
-              {
-                src: '',
-                alt: 'Tiny miniature items and collectibles displayed',
-              },
-            ],
             address: 'Inside Brewhalla, 1666 1st Ave N, Fargo, ND 58102',
             coordinates: { lat: 46.8869, lng: -96.7894 },
             hours: 'Daily (Brewhalla hours)',
@@ -577,12 +549,6 @@ export const fargo: CityData = {
             category: 'Urban Permaculture',
             description:
               'Depaved in 2008, planted Spring 2009. Features permaculture principles with fruit trees, berry shrubs, perennial vegetable guilds. Audubon backyard bird habitat "perfect for wandering, sitting and reading, drawing and painting as well as bird watching." Hidden in plain sight.',
-            images: [
-              {
-                src: '',
-                alt: 'Urban garden with fruit trees and native plants',
-              },
-            ],
             address: 'Corner of NE Fargo and N Williams Ave, Fargo, ND',
             coordinates: { lat: 46.8890, lng: -96.7756 },
             hours: 'Dawn to dusk',
@@ -597,12 +563,6 @@ export const fargo: CityData = {
             category: 'Public Art',
             description:
               'Designated in 2015 as a legal street art wall behind The Forum building. The art changes frequently as local artists paint over previous works. Even locals might not know it exists or where it is. Part of Fargo\'s growing mural scene.',
-            images: [
-              {
-                src: '',
-                alt: 'Colorful street art murals on alley wall',
-              },
-            ],
             address: 'Behind The Forum, 1st Ave N between 4th and 5th St, Fargo',
             coordinates: { lat: 46.8780, lng: -96.7850 },
             hours: 'Always accessible',
@@ -616,12 +576,6 @@ export const fargo: CityData = {
             category: 'Hidden Art',
             description:
               '"Welcome to Roberts Alley" mural and retro mural by Adam Wiedman honoring the site\'s history. Most people walk right past the alley entrances. Part of downtown Fargo\'s hidden art scene that exists off the main streets.',
-            images: [
-              {
-                src: '',
-                alt: 'Alley mural with retro design',
-              },
-            ],
             address: 'Roberts Alley, Downtown Fargo',
             coordinates: { lat: 46.8774, lng: -96.7900 },
             hours: 'Always accessible',
@@ -635,12 +589,6 @@ export const fargo: CityData = {
             category: 'Interactive Art',
             description:
               'Contains over 20 hidden pictures in the mural behind Black Coffee & Waffle Bar. You have to know to look for it. Interactive public art that rewards close observation. Local favorite for photography.',
-            images: [
-              {
-                src: '',
-                alt: 'Detailed mural with hidden images',
-              },
-            ],
             address: 'Alley behind Black Coffee & Waffle Bar, Fargo',
             coordinates: { lat: 46.8775, lng: -96.7895 },
             hours: 'Always accessible',
@@ -654,12 +602,6 @@ export const fargo: CityData = {
             category: 'Hidden Public Art',
             description:
               'Unique artist-designed planters in downtown Moorhead that most people assume are just regular planters. Between M&H Gas Station and Ace Hardware. Public art disguised as street furniture — hidden in plain sight.',
-            images: [
-              {
-                src: '',
-                alt: 'Artistic planters with unique designs on city street',
-              },
-            ],
             address: 'Between M&H and Ace Hardware, downtown Moorhead',
             coordinates: { lat: 46.8735, lng: -96.7665 },
             hours: 'Always visible',
@@ -673,12 +615,6 @@ export const fargo: CityData = {
             category: 'Abandoned Building',
             description:
               'Last class graduated in 1997 when it was Cass Valley North High School. Sits as a "rare spot in an otherwise budding town" as Argusville experienced a population boom but left the school behind. 15 minutes north of Fargo off I-29.',
-            images: [
-              {
-                src: '',
-                alt: 'Abandoned school building exterior',
-              },
-            ],
             address: 'Argusville, ND (15 minutes north of Fargo off I-29)',
             coordinates: { lat: 47.0534, lng: -96.9234 },
             hours: 'Private property — exterior viewing only',
@@ -706,10 +642,6 @@ export const fargo: CityData = {
             hours: 'Wed-Thu 11am-9pm, Fri-Sat 11am-midnight, Sun 11am-9pm, Mon-Tue 4pm-9pm',
             website: 'https://wurstfargo.com/',
             instagram: '@wurstfargo',
-            image: {
-              src: '',
-              alt: 'German beer hall with communal tables and beer flights',
-            },
           },
           {
             name: 'The Aquarium',
@@ -723,10 +655,6 @@ export const fargo: CityData = {
             hours: 'Event-based (check calendar)',
             website: 'https://aquariumfargo.com/',
             instagram: '@aquariumfargo',
-            image: {
-              src: '',
-              alt: 'Intimate live music venue with stage',
-            },
           },
           {
             name: 'JL Beers',
@@ -740,10 +668,6 @@ export const fargo: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
             website: 'https://jlbeers.com/518/',
             instagram: '@jlbeersdowntown',
-            image: {
-              src: '',
-              alt: 'Craft beer taps at bar with neon glow',
-            },
           },
           {
             name: 'Mick\'s Office',
@@ -757,10 +681,6 @@ export const fargo: CityData = {
             hours: 'Sun-Wed 11am-midnight, Thu-Sat 11am-2am',
             website: 'https://micksoffice.com/',
             instagram: '@micks_office',
-            image: {
-              src: '',
-              alt: 'Classic neighborhood bar interior',
-            },
           },
         ],
       },
@@ -783,10 +703,6 @@ export const fargo: CityData = {
             hours: 'Daily 7am-midnight (dinner 5pm-10pm)',
             website: 'https://jasperfargo.com/rosewild/',
             instagram: '@rosewildfargo',
-            image: {
-              src: '',
-              alt: 'Elegant Nordic-inspired farm-to-table dish',
-            },
           },
           {
             name: 'Luna Fargo',
@@ -800,10 +716,6 @@ export const fargo: CityData = {
             hours: 'Mon-Sat 8am-9pm, Closed Sun',
             website: 'https://lunafargo.com/',
             instagram: '@luna.fargo',
-            image: {
-              src: '',
-              alt: 'Cozy neighborhood coffee shop and kitchen',
-            },
           },
           {
             name: 'Vinyl Taco',
@@ -817,10 +729,6 @@ export const fargo: CityData = {
             hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-midnight, Closed Sun',
             website: 'https://www.vinyltaco.com/',
             instagram: '@vinyltaco',
-            image: {
-              src: '',
-              alt: 'Creative fusion tacos in a music-themed space',
-            },
           },
           {
             name: 'Rhombus Guys',
@@ -834,10 +742,6 @@ export const fargo: CityData = {
             hours: 'Sun-Thu 11am-10pm, Fri-Sat 11am-midnight',
             website: 'https://rhombusguyspizza.com/',
             instagram: '@rhombuspizza',
-            image: {
-              src: '',
-              alt: 'Detroit-style pizza with thick crispy crust',
-            },
           },
         ],
       },
@@ -860,10 +764,6 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://20below.coffee',
             instagram: '@twentybelowcoffee',
-            image: {
-              src: '',
-              alt: 'Cozy coffee shop with exposed brick and warm lighting',
-            },
           },
           {
             name: 'Atomic Coffee',
@@ -877,10 +777,6 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://atomiccoffeebar.com',
             instagram: '@atomiccoffeebar',
-            image: {
-              src: '',
-              alt: 'Industrial-chic coffee shop with natural light',
-            },
           },
           {
             name: 'Thunder Coffee',
@@ -893,10 +789,6 @@ export const fargo: CityData = {
             hours: '7am-7pm Mon-Fri, 8am-7pm Sat, 9am-5pm Sun',
             price: '$$',
             instagram: '@thundercoffeefargo',
-            image: {
-              src: '',
-              alt: 'Friendly neighborhood coffee shop with seasonal drinks',
-            },
           },
           {
             name: 'Black Coffee & Waffle Bar',
@@ -909,10 +801,6 @@ export const fargo: CityData = {
             hours: '8am-3pm daily',
             price: '$$',
             instagram: '@blackcoffeeandwafflebar',
-            image: {
-              src: '',
-              alt: 'Fresh waffles and handcrafted coffee',
-            },
           },
           {
             name: 'Babb\'s Coffee House',
@@ -926,10 +814,6 @@ export const fargo: CityData = {
             price: '$$',
             website: 'https://babbscoffeehouse.com',
             instagram: '@babbscoffeehouse',
-            image: {
-              src: '',
-              alt: 'Seattle-themed coffee shop with classic espresso',
-            },
           },
         ],
       },
