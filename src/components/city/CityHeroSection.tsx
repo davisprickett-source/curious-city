@@ -35,7 +35,7 @@ const cityHeroBanners: Record<string, string> = {
   'portland': '/banners/hero-city-images/portland-skyline.png',
   'raleigh': '/banners/hero-city-images/raleigh-skyline.png',
   'seattle': '/banners/hero-city-images/seattle-skyline.png',
-  'salt-lake-city': '/banners/hero-city-images/SLC-skyline.png',
+  'salt-lake-city': '/banners/hero-city-images/slc-skyline.png',
   'tampa': '/banners/hero-city-images/tampa-skyline.png',
 }
 

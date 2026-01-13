@@ -817,13 +817,13 @@ export const raleigh: CityData = {
             type: 'hidden-gem',
             name: 'Rooftop Arrow',
             category: 'Quirky Architecture',
-            description: 'A massive faded yellow arrow painted on the rooftop of The Architect Bar building in downtown Raleigh — a relic from aviation\'s early days. Before radar and GPS, pilots navigated cross-country using visual landmarks. In the 1920s and 30s, the federal government painted giant directional arrows on rooftops across America, pointing pilots toward the nearest airport. This arrow pointed to Raleigh Municipal Airport (now closed). Most of these navigation arrows have been painted over or demolished, making Raleigh\'s one of the few survivors. The arrow is only visible from above — drones, tall buildings, or from The Architect Bar\'s rooftop deck. WRAL captured aerial footage showing the arrow still clearly visible despite decades of weathering. It\'s a hidden piece of aviation history, literally hiding in plain sight above downtown.',
+            description: 'A massive faded yellow arrow painted on a downtown Raleigh rooftop — a relic from aviation\'s early days. Before radar and GPS, pilots navigated cross-country using visual landmarks. In the 1920s and 30s, the federal government painted giant directional arrows on rooftops across America, pointing pilots toward the nearest airport. This arrow pointed to Raleigh Municipal Airport (now closed). Most of these navigation arrows have been painted over or demolished, making Raleigh\'s one of the few survivors. The arrow is only visible from above — drones, tall buildings, or aerial photography. WRAL captured aerial footage showing the arrow still clearly visible despite decades of weathering. It\'s a hidden piece of aviation history, literally hiding in plain sight above downtown.',
             location: '113 Fayetteville St, Raleigh, NC 27601',
             coordinates: { lat: 35.7756, lng: -78.6382 },
-            hours: 'Visible from The Architect Bar rooftop (bar hours vary)',
-            price: 'Free to view from rooftop bar (drink purchase expected)',
+            hours: 'Visible from aerial views anytime',
+            price: 'Free (view from drones or tall buildings)',
             website: 'https://www.wral.com/raleigh-from-above-hidden-messages-and-history-only-visible-from-above/19620335/',
-            tip: 'Best seen from The Architect Bar rooftop on a clear day',
+            tip: 'Best seen from aerial photography or drone footage on clear days',
             images: [
               {
                 src: '/raleigh/hidden-gems/arrow.png',
@@ -1050,29 +1050,6 @@ export const raleigh: CityData = {
               {
                 src: '/raleigh/bars/ward-3.png',
                 alt: 'Watts & Ward bar',
-              },
-            ],
-          },
-          {
-            name: 'The Architect Bar & Social House',
-            neighborhood: 'Downtown',
-            vibe: 'Rooftop cocktails with the best skyline views in Raleigh. Actually good drinks, not just views.',
-            order: 'Whatever seasonal cocktail they\'re featuring. The bartenders are serious about their craft.',
-            why: 'Yes, it\'s a rooftop bar — but it\'s a rooftop bar where the cocktails are genuinely excellent, not afterthoughts. The space is gorgeous, the downtown views are the best you\'ll find, and the vibe manages to be upscale without being exclusive. Perfect for impressing visitors or reminding yourself that Raleigh has a skyline.',
-            address: '108 1/2 E Hargett St, Raleigh, NC 27601',
-            coordinates: { lat: 35.7798, lng: -78.6378 },
-            hours: 'Mon-Wed 5pm-midnight, Thu-Sat 5pm-2am, Sun 5pm-midnight',
-            price: '$$$',
-            website: 'https://www.thearchitectbar.com/',
-            instagram: '@thearchitectbar',
-            images: [
-              {
-                src: '/raleigh/bars/architect-1.png',
-                alt: 'The Architect rooftop views',
-              },
-              {
-                src: '/raleigh/bars/architect-2.png',
-                alt: 'The Architect cocktails',
               },
             ],
           },

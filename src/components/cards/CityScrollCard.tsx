@@ -79,7 +79,7 @@ const citySkylineImages: Record<string, string> = {
   'minneapolis': '/banners/hero-city-images/minneapolis-skyline.png',
   'raleigh': '/banners/hero-city-images/raleigh-skyline.png',
   'chicago': '/banners/hero-city-images/chicago-skyline.png',
-  'salt-lake-city': '/banners/hero-city-images/SLC-skyline.png',
+  'salt-lake-city': '/banners/hero-city-images/slc-skyline.png',
   'colorado-springs': '/banners/hero-city-images/colorado-springs-skyline.png',
   'dallas': '/banners/hero-city-images/dallas-skyline.png',
   'anchorage': '/banners/hero-city-images/anchorage-skyline.png',

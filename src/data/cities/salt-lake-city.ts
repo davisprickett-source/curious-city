@@ -87,7 +87,7 @@ export const salt_lake_city: CityData = {
             body: 'Beneath Temple Square, a network of tunnels allows church leaders to move between the Salt Lake Temple, the Church Office Building, and other facilities without surfacing. Built for security and convenience in the 1960s, the tunnels became secure passages for dignitaries during the 2002 Winter Olympics. The church doesn\'t publicly discuss them, which only makes them more intriguing. Every theocracy needs its secret corridors.',
             year: '1960s',
             image: {
-              src: '/salt-lake-city/curiosities/SLC-tunnels.png',
+              src: '/salt-lake-city/curiosities/slc-tunnels.png',
               alt: 'Underground tunnels beneath Temple Square',
             },
             source: 'Salt Lake Tribune investigative reports',

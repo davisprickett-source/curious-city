@@ -25,7 +25,7 @@ function getSkylineImage(citySlug: string): string {
     'portland': 'portland-skyline.png',
     'raleigh': 'raleigh-skyline.png',
     'seattle': 'seattle-skyline.png',
-    'salt-lake-city': 'SLC-skyline.png',
+    'salt-lake-city': 'slc-skyline.png',
     'tampa': 'tampa-skyline.png',
   }
 

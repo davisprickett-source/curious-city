@@ -3121,7 +3121,7 @@ export const minneapolis: CityData = {
             lastAddress: '114 S 8th St, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-peters.png',
+                src: '/minneapolis/lost-and-loved/new-peters.png',
                 alt: "Peter's Grill lunch counter interior",
               }
             ],
@@ -3153,7 +3153,7 @@ export const minneapolis: CityData = {
             lastAddress: '629 Cedar Ave S, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-triple-rock.png',
+                src: '/minneapolis/lost-and-loved/new-triple-rock.png',
                 alt: 'Triple Rock Social Club exterior and interior',
               }
             ],
@@ -3190,7 +3190,7 @@ export const minneapolis: CityData = {
             lastAddress: '313 14th Ave SE, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-Annies.png',
+                src: '/minneapolis/lost-and-loved/new-Annies.png',
                 alt: "Annie's Parlour exterior and interior",
               }
             ],
@@ -3218,7 +3218,7 @@ export const minneapolis: CityData = {
             lastAddress: '500 Cedar Ave S, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-palmers.png',
+                src: '/minneapolis/lost-and-loved/new-palmers.png',
                 alt: "Palmer's Bar exterior and interior",
               }
             ],
@@ -3254,7 +3254,7 @@ export const minneapolis: CityData = {
             lastAddress: '3001 Hennepin Ave, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-figlio.png',
+                src: '/minneapolis/lost-and-loved/new-figlio.png',
                 alt: 'Figlio restaurant exterior and dining room',
               }
             ],
@@ -3287,7 +3287,7 @@ export const minneapolis: CityData = {
             lastAddress: '4257 Nicollet Ave, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-revival.png',
+                src: '/minneapolis/lost-and-loved/new-revival.png',
                 alt: 'Revival restaurant interior',
               }
             ],
@@ -3319,7 +3319,7 @@ export const minneapolis: CityData = {
             lastAddress: '1432 W 31st St, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-lucias.png',
+                src: '/minneapolis/lost-and-loved/new-lucias.png',
                 alt: "Lucia's restaurant exterior and dining room",
               }
             ],
@@ -3388,7 +3388,7 @@ export const minneapolis: CityData = {
             lastAddress: '3311 E 25th St, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-birchwood.png',
+                src: '/minneapolis/lost-and-loved/new-birchwood.png',
                 alt: 'Birchwood Cafe exterior and interior',
               }
             ],
@@ -3420,7 +3420,7 @@ export const minneapolis: CityData = {
             lastAddress: '2917 Lyndale Ave S, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-galatic.png',
+                src: '/minneapolis/lost-and-loved/new-galatic.png',
                 alt: 'Galactic Pizza exterior and interior',
               }
             ],
@@ -3452,7 +3452,7 @@ export const minneapolis: CityData = {
             lastAddress: '2707 E Lake St, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-Town-talk.png',
+                src: '/minneapolis/lost-and-loved/new-Town-talk.png',
                 alt: 'Town Talk Diner exterior',
               }
             ],
@@ -3484,7 +3484,7 @@ export const minneapolis: CityData = {
             lastAddress: '300 1st Ave N, Minneapolis',
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-brenda.png',
+                src: '/minneapolis/lost-and-loved/new-brenda.png',
                 alt: 'Cafe Brenda bar and dining room interior',
               }
             ],
@@ -3517,7 +3517,7 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9034, lng: -93.5668 },
             images: [
               {
-                src: '/minneapolis/lost-and-loved/NEW-log.png',
+                src: '/minneapolis/lost-and-loved/new-log.png',
                 alt: 'Old Log Theater rustic log cabin exterior',
               }
             ],
