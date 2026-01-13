@@ -375,7 +375,7 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
   )
 }
 
-export default function HiddenGemsScroll({ gems, cityName }: HiddenGemsScrollProps) {
+export default function HiddenGemsScroll({ gems, cityName: _cityName }: HiddenGemsScrollProps) {
   const [currentSection, setCurrentSection] = useState(0)
 
   return (
