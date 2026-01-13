@@ -92,28 +92,9 @@ export const fargo: CityData = {
         id: 'curiosities',
         type: 'section',
         title: 'Fargo Curiosities',
-        teaser: 'Ten-minute divorces, Bonnie & Clyde hideouts, and secrets on the frozen prairie',
-        intro: 'The Coen Brothers never filmed here—that was Minnesota. But the real Fargo is stranger than fiction. A city on the bed of a vanished glacial lake, so flat the Red River doesn\'t know which way to flow. Bonnie and Clyde hid out here and the cops walked right past. North Dakota once offered ten-minute divorces to anyone with train fare. The prairie keeps its secrets frozen.',
+        teaser: 'Ten-minute divorces, glacial lake beds, and secrets on the frozen prairie',
+        intro: 'The Coen Brothers never filmed here—that was Minnesota. But the real Fargo is stranger than fiction. A city on the bed of a vanished glacial lake, so flat the Red River doesn\'t know which way to flow. North Dakota once offered ten-minute divorces to anyone with train fare. The prairie keeps its secrets frozen.',
         items: [
-          {
-            id: 'far-curiosity-7',
-            type: 'curiosity',
-            featured: true,
-            featuredOrder: 1,
-            category: 'history',
-            title: 'Bonnie and Clyde hid out here—and the cops walked right past them',
-            body: 'In 1932, Bonnie Parker and Clyde Barrow spent several weeks holed up in a Fargo apartment, laying low after a string of robberies across the Midwest. They even posed for photos. Local police never recognized them. The apartment building still stands at 507 4th Street South, unmarked—the city has mixed feelings about celebrating outlaws who got away with it.',
-            year: '1932',
-            image: {
-              src: '/fargo/curiosities/bonnie-clyde.png',
-              alt: 'Historic apartment building',
-            },
-            source: 'North Dakota History magazine',
-            location: {
-              name: '507 4th Street South',
-              stillExists: true,
-            },
-          },
           {
             id: 'far-curiosity-3',
             type: 'curiosity',
@@ -407,9 +388,9 @@ export const fargo: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Fargo',
-        teaser: 'Prohibition speakeasies, Bonnie & Clyde\'s hideout, and where Fargo gets weird',
+        teaser: 'Prohibition speakeasies, hidden archives, and where Fargo gets weird',
         intro:
-          'These aren\'t in the guidebooks. Forgotten Prohibition speakeasies, an industrial warehouse full of century-old glass plate negatives, artist-designed planters disguised as ordinary street furniture, and the apartment where Bonnie and Clyde hid in 1932. Fargo\'s obscure history is colder and weirder than you think.',
+          'These aren\'t in the guidebooks. Forgotten Prohibition speakeasies, an industrial warehouse full of century-old glass plate negatives, artist-designed planters disguised as ordinary street furniture. Fargo\'s obscure history is colder and weirder than you think.',
         items: [
           {
             id: 'gem-ndsu-archives',
@@ -429,25 +410,6 @@ export const fargo: CityData = {
             hours: 'By appointment only',
             price: 'Free',
             tip: 'Call ahead for appointment — this isn\'t listed on campus maps.',
-          },
-          {
-            id: 'gem-bonnie-clyde-apartment',
-            type: 'hidden-gem',
-            name: 'Bonnie and Clyde\'s Hideout Apartment',
-            category: 'Criminal History',
-            description:
-              'In 1932, Bonnie Parker and Clyde Barrow spent several weeks hiding in this apartment after robberies. No plaque marks it — "the city has mixed feelings about celebrating outlaws." The building still stands, unmarked and unknown to most. One of Fargo\'s best-kept secrets.',
-            images: [
-              {
-                src: '',
-                alt: '1930s apartment building exterior',
-              },
-            ],
-            address: '507 4th Street South, Fargo, ND 58103',
-            coordinates: { lat: 46.8723, lng: -96.7945 },
-            hours: 'Private residence — exterior viewing only',
-            price: 'Free',
-            tip: 'No marker exists — locals deliberately keep this quiet.',
           },
           {
             id: 'gem-moorhead-speakeasies',
