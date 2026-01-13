@@ -213,7 +213,7 @@ function CitySelectorContent({
               scale: 0.96,
               transition: {
                 duration: 0.2,
-                delay: cities.length * 0.02, // Wait for items to exit first
+                delay: (cities.length - 1) * 0.025 + 0.18, // Wait for all items to exit (longest delay + duration)
                 ease: [0.4, 0, 1, 1]
               }
             }}
@@ -226,20 +226,18 @@ function CitySelectorContent({
               animate={{ boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }}
               transition={{ duration: 0.3 }}
             >
-              <AnimatePresence mode="popLayout">
-                {cities.map((city, index) => (
-                  <CityItem
-                    key={city.slug}
-                    city={city}
-                    isActive={!!hasCity && city.slug === currentCitySlug}
-                    href={buildCityUrl(city.slug, currentSection, preserveFilters)}
-                    onClose={handleClose}
-                    index={index}
-                    totalItems={cities.length}
-                    isClosing={isClosing}
-                  />
-                ))}
-              </AnimatePresence>
+              {cities.map((city, index) => (
+                <CityItem
+                  key={city.slug}
+                  city={city}
+                  isActive={!!hasCity && city.slug === currentCitySlug}
+                  href={buildCityUrl(city.slug, currentSection, preserveFilters)}
+                  onClose={handleClose}
+                  index={index}
+                  totalItems={cities.length}
+                  isClosing={isClosing}
+                />
+              ))}
             </motion.div>
           </motion.div>
         )}

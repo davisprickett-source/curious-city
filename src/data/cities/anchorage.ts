@@ -860,10 +860,6 @@ export const anchorage: CityData = {
             website: 'http://darwinstheoryalaska.com/',
             images: [
               {
-                src: '/anchorage/bars/darwins-theory-1.jpg',
-                alt: 'Classic neighborhood dive bar interior',
-              },
-              {
                 src: '/anchorage/establishments/darin-1.png',
                 alt: 'Darwin\'s Theory bar exterior',
               },
@@ -1095,14 +1091,6 @@ export const anchorage: CityData = {
             website: 'https://steamdot.com',
             instagram: '@steamdotcoffee',
             images: [
-              {
-                src: '/anchorage/coffee-shops/steamdot-1.jpg',
-                alt: 'Pour-over coffee being prepared',
-              },
-              {
-                src: '/anchorage/coffee-shops/steamdot-2.jpeg',
-                alt: 'Modern minimalist coffee shop interior',
-              },
               {
                 src: '/anchorage/establishments/steamdot-1.png',
                 alt: 'SteamDot Coffee Roasters interior',
