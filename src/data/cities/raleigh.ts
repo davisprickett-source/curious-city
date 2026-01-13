@@ -1074,6 +1074,10 @@ export const raleigh: CityData = {
                 src: '/raleigh/bars/haymaker-2.png',
                 alt: 'The Haymaker pool tables',
               },
+              {
+                src: '/raleigh/bars/haymaker-3.png',
+                alt: 'The Haymaker bar',
+              },
             ],
           },
         ],
@@ -1496,6 +1500,10 @@ export const raleigh: CityData = {
                 src: '/raleigh/restaurants/bhavana-3.png',
                 alt: 'Brewery Bhavana craft beer and dim sum',
               },
+              {
+                src: '/raleigh/restaurants/bhavana-4.png',
+                alt: 'Brewery Bhavana space',
+              },
             ],
           },
           {
@@ -1523,6 +1531,14 @@ export const raleigh: CityData = {
                 src: '/raleigh/restaurants/pooles-3.png',
                 alt: 'Poole\'s Diner interior',
               },
+              {
+                src: '/raleigh/restaurants/pooles-4.png',
+                alt: 'Poole\'s Diner',
+              },
+              {
+                src: '/raleigh/restaurants/pooles-5.png',
+                alt: 'Poole\'s Diner',
+              },
             ],
           },
           {
@@ -1537,6 +1553,20 @@ export const raleigh: CityData = {
             price: '$$$',
             website: 'https://crawfordandsonrestaurant.com/',
             instagram: '@crawfordandson',
+            images: [
+              {
+                src: '/raleigh/restaurants/crawford-1.png',
+                alt: 'Crawford and Son interior',
+              },
+              {
+                src: '/raleigh/restaurants/crawford-2.png',
+                alt: 'Crawford and Son dishes',
+              },
+              {
+                src: '/raleigh/restaurants/crawford-3.png',
+                alt: 'Crawford and Son',
+              },
+            ],
           },
           {
             name: 'Death & Taxes',
@@ -1550,6 +1580,20 @@ export const raleigh: CityData = {
             price: '$$$$',
             website: 'https://ac-restaurants.com/death-taxes/',
             instagram: '@deathandtaxesnc',
+            images: [
+              {
+                src: '/raleigh/restaurants/death-taxes-1.png',
+                alt: 'Death & Taxes interior',
+              },
+              {
+                src: '/raleigh/restaurants/death-taxes-2.png',
+                alt: 'Death & Taxes wood-fired dishes',
+              },
+              {
+                src: '/raleigh/restaurants/death-taxes-3.png',
+                alt: 'Death & Taxes',
+              },
+            ],
           },
           {
             name: 'Second Empire',
@@ -1563,6 +1607,20 @@ export const raleigh: CityData = {
             price: '$$$$',
             website: 'https://www.second-empire.com/',
             instagram: '@secondempire',
+            images: [
+              {
+                src: '/raleigh/restaurants/second-empire-1.png',
+                alt: 'Second Empire Victorian mansion exterior',
+              },
+              {
+                src: '/raleigh/restaurants/second-empire-2.png',
+                alt: 'Second Empire interior',
+              },
+              {
+                src: '/raleigh/restaurants/second-empire-3.png',
+                alt: 'Second Empire fine dining',
+              },
+            ],
           },
         ],
       },
