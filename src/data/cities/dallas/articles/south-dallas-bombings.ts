@@ -24,7 +24,7 @@ export const southDallasBombings: Article = {
       blocks: [
         {
           type: 'paragraph',
-          content: 'On the night of February 8, 1950, a bomb exploded at 4500 Exline Street in South Dallas. The house belonged to a Black family who had recently moved into what had been a white neighborhood. Nobody was killed, but the message was clear: you are not welcome here. Get out, or next time will be worse.',
+          content: 'On the night of February 8, 1950, a bomb exploded at 4500 Exline Street in South Dallas. The house belonged to Horace Bonner, a Black veteran who had bought a home in what had been a white neighborhood. Nobody was killed, but the message was clear: you are not welcome here. Get out, or next time will be worse.',
         },
         {
           type: 'paragraph',

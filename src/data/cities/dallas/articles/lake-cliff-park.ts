@@ -4,17 +4,17 @@ export const lakeCliffPark: Article = {
   slug: 'lake-cliff-park',
   citySlug: 'dallas',
   title: 'The Coney Island Dallas Forgot',
-  subtitle: 'Lake Cliff Park was once the largest amusement park in the Southwest — 65 acres of roller coasters, natatoriums, and vaudeville theaters. By 1930, it was gone. Today, almost nobody in Dallas knows it existed. The lake is still there. The memories are not.',
-  excerpt: 'In the early 1900s, Lake Cliff Park was the entertainment capital of Dallas. Roller coasters looped over a spring-fed lake. A massive natatorium drew thousands of swimmers. Vaudeville shows packed the pavilion. For three decades, Lake Cliff was where Dallas went to have fun. Then the Depression came, the park closed, and Dallas erased it from memory. Today, a quiet city park sits where the roller coasters once ran. Almost nothing marks what was lost.',
+  subtitle: 'Lake Cliff Park was once the largest amusement park in the Southwest — 65 acres of roller coasters, natatoriums, and vaudeville theaters. By 1913, it was gone. Today, almost nobody in Dallas knows it existed. The lake is still there. The memories are not.',
+  excerpt: 'In the early 1900s, Lake Cliff Park was the entertainment capital of Dallas. Roller coasters looped over a spring-fed lake. A massive natatorium drew thousands of swimmers. Vaudeville shows packed the pavilion. Then came the 1908 flood that wiped out the bridges and trolley lines. Without easy access from Dallas, the park couldn\'t survive. It closed in 1913, and Dallas erased it from memory. Today, a quiet city park sits where the roller coasters once ran. Almost nothing marks what was lost.',
   author: {
     name: 'The Curious City',
     bio: 'Stories of vanished places',
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/lake-cliff-park.png',
-    alt: 'Lake Cliff Park natatorium and roller coaster, circa 1910',
-    credit: 'Dallas Historical Society',
+    src: '/dallas/articles/lake-cliff-park/shoot-the-chutes-1908.jpg',
+    alt: 'The Shoot-the-Chutes water ride at Lake Cliff Park, Dallas, 1908',
+    credit: 'Flashback Dallas',
   },
   category: 'history',
   tags: ['dallas', 'amusement-park', 'entertainment', 'forgotten-history', 'oak-cliff', 'early-1900s'],
@@ -28,11 +28,15 @@ export const lakeCliffPark: Article = {
         },
         {
           type: 'paragraph',
-          content: 'Lake Cliff Park was the entertainment capital of Dallas. From its opening in 1906 until its decline in the late 1920s, it was where the city went to have fun — a place of technological marvels, manufactured thrills, and carefully designed escape. Thousands of visitors came every weekend. The park was famous across Texas and beyond.',
+          content: 'Lake Cliff Park was the entertainment capital of Dallas. From its opening in 1906 until its sudden demise just seven years later, it was where the city went to have fun — a place of technological marvels, manufactured thrills, and carefully designed escape. On its grand opening day, July 5, 1906, 12,000 people swarmed through the gates. Thousands came every weekend after. The park was famous across Texas and beyond.',
         },
         {
           type: 'paragraph',
-          content: 'Then it vanished. By 1930, Lake Cliff Park was gone — demolished, forgotten, erased from the city\'s memory as thoroughly as if it had never existed. Today, a quiet neighborhood park occupies part of the site. The lake remains, smaller than it once was. Almost nothing marks what was there. Dallas forgot its Coney Island, and never thought to remember.',
+          content: 'Then disaster struck. A catastrophic flood in May 1908 destroyed the bridges linking Oak Cliff to Dallas and wiped out the trolley tracks that brought visitors to the park. Without easy access, attendance plummeted. The park struggled on for five more years before financial reality forced its closure in 1913. Dallas had barely gotten to know its Coney Island before it was gone.',
+        },
+        {
+          type: 'paragraph',
+          content: 'Today, a quiet neighborhood park occupies part of the site. The lake remains, smaller than it once was. Almost nothing marks what was there. Dallas forgot its Coney Island, and never thought to remember.',
         },
         {
           type: 'heading',
@@ -56,6 +60,13 @@ export const lakeCliffPark: Article = {
           content: 'The Lake Cliff natatorium is the largest and finest in the South. Its waters are pure and cool, drawn from natural springs. One may swim in comfort while outside the temperature exceeds 100 degrees.',
           attribution: 'Dallas Morning News',
           role: '1908',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/lake-cliff-park/swimming-pool-1907.jpg',
+          alt: 'Swimmers at Lake Cliff Park natatorium, circa 1907',
+          caption: 'The Lake Cliff natatorium could hold 3,000 swimmers at once. Fed by natural springs, the water stayed cool even in brutal Texas summers — a miraculous relief before air conditioning.',
+          credit: 'Flashback Dallas / Coltera Collection',
         },
         {
           type: 'ad',
@@ -86,7 +97,14 @@ export const lakeCliffPark: Article = {
           type: 'callout',
           variant: 'info',
           title: 'The Golden Age',
-          content: 'At its peak around 1910-1915, Lake Cliff Park drew over 200,000 visitors per year — remarkable for a city whose population was only about 100,000. On busy summer weekends, the streetcars from downtown ran constantly, packed with families heading to the park.',
+          content: 'At its peak around 1906-1908, Lake Cliff Park drew hundreds of thousands of visitors — remarkable for a city whose population was only about 100,000. The Shoot-the-Chutes alone had 125,000 riders in its first year. On busy summer weekends, the streetcars from downtown ran constantly, packed with families heading to the park.',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/lake-cliff-park/skating-rink.jpg',
+          alt: 'The world\'s largest skating rink at Lake Cliff Park, Dallas',
+          caption: 'Lake Cliff boasted "the world\'s largest skating rink" — one of many superlatives the park claimed as it competed with amusement parks across the country.',
+          credit: 'Cook Collection / DeGolyer Library, SMU',
         },
         {
           type: 'heading',
@@ -129,19 +147,30 @@ export const lakeCliffPark: Article = {
         {
           type: 'heading',
           level: 2,
-          content: 'The Decline',
+          content: 'The Flood',
         },
         {
           type: 'paragraph',
-          content: 'The end came gradually, then all at once. By the early 1920s, Lake Cliff Park was struggling. The automobile had changed entertainment — why take the streetcar to Lake Cliff when you could drive somewhere new? Movie theaters offered air-conditioned escape without the effort of a trip across the city. Tastes were changing.',
+          content: 'In May 1908, a catastrophic flood struck Dallas. The Trinity River swelled beyond its banks, submerging vast areas of the city. The flood collapsed the long bridge connecting Dallas to Oak Cliff — the main thoroughfare since 1890. Trolley tracks were washed out. The infrastructure that brought visitors to Lake Cliff Park was destroyed.',
         },
         {
           type: 'paragraph',
-          content: 'The park changed hands multiple times as owners struggled to keep it profitable. Attractions were sold off or fell into disrepair. The roller coasters stopped running. The natatorium, once the jewel of Dallas entertainment, began to crumble. By the late 1920s, Lake Cliff Park was a shadow of itself.',
+          content: 'The park\'s fortunes collapsed with the bridges. Without trolleys, most Dallas residents couldn\'t easily reach Lake Cliff. Those with enough money could take longer routes or private transportation, but the working and middle-class families who had filled the park on summer weekends simply stopped coming. Attendance plummeted.',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/lake-cliff-park/concert-1906.jpg',
+          alt: 'Sunday afternoon concert at Lake Cliff Park, 1906',
+          caption: '1906: Sunday concerts drew massive crowds to Lake Cliff Park. Two years later, the 1908 flood would destroy the transportation links that brought these audiences.',
+          credit: 'Portal to Texas History',
         },
         {
           type: 'paragraph',
-          content: 'The Depression finished what changing tastes had started. The park closed definitively around 1930. The rides were dismantled and sold for scrap. The buildings were demolished. The land was subdivided and sold. Within a few years, there was almost nothing left to show that Lake Cliff Park had ever existed.',
+          content: 'Charles Mangold and his partners tried to keep the park running, but the economics were brutal. The park had been expensive to build and maintain even when fully patronized. With attendance down, revenues couldn\'t cover costs. The dream that had opened with 12,000 visitors in 1906 was dying.',
+        },
+        {
+          type: 'paragraph',
+          content: 'In 1913, just seven years after its triumphant opening, Lake Cliff Park closed for good. Mangold sold 44 acres to the City of Dallas for $55,000 — a fraction of what he had invested. The amusement park era was over. The rides were dismantled. The buildings came down. Within a few years, there was little left to show that the Southwest\'s greatest playground had ever existed.',
         },
         {
           type: 'quote',
@@ -163,6 +192,13 @@ export const lakeCliffPark: Article = {
           content: 'Today, Lake Cliff Park is a 45-acre city park in the Oak Cliff neighborhood of Dallas. The lake remains — much smaller than it was, its springs partially diverted, but still there. Ducks swim where thousands once splashed in the natatorium. Joggers run paths where roller coasters once looped.',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/lake-cliff-park/lake-cliff-park-wide-angle.jpg',
+          alt: 'Wide angle view of Lake Cliff Park and pool from early 1900s',
+          caption: 'Lake Cliff Park at its peak: a 65-acre wonderland of manufactured joy. Within seven years of opening, it would all be gone.',
+          credit: 'Dallas Municipal Archives / Portal to Texas History',
+        },
+        {
           type: 'paragraph',
           content: 'Almost nothing marks the site\'s history. A historical plaque offers a brief summary. Old photographs exist in archives. But the park itself gives no indication of what it once was. The roller coasters, the natatorium, the pavilions, the crowds — all erased so completely that even longtime Oak Cliff residents often don\'t know the story.',
         },
@@ -175,15 +211,15 @@ export const lakeCliffPark: Article = {
         },
         {
           type: 'paragraph',
-          content: 'Lake Cliff Park was the Coney Island of the Southwest — 65 acres of roller coasters, natatoriums, and vaudeville shows where Dallas went to escape the heat and the ordinary. For three decades, it was the entertainment capital of North Texas. Thousands of visitors came every weekend. Children begged their parents to take them. The lights sparkled over the lake.',
+          content: 'Lake Cliff Park was the Coney Island of the Southwest — 65 acres of roller coasters, natatoriums, and vaudeville shows where Dallas went to escape the heat and the ordinary. For seven glorious years, it was the entertainment capital of North Texas. On its opening day in 1906, 12,000 people swarmed through the gates. Thousands came every weekend after. Children begged their parents to take them. The lights sparkled over the lake. The Shoot-the-Chutes carried 125,000 riders in its first year alone.',
         },
         {
           type: 'paragraph',
-          content: 'Then the cars came, and the movies, and the Depression. The rides stopped running. The buildings came down. The land was sold. Dallas moved on to newer entertainments and forgot the old. The Coney Island of the Southwest became a quiet neighborhood park, and the memories faded with the generation that held them.',
+          content: 'Then came the flood. In May 1908, the Trinity River destroyed the bridges and trolley lines that connected Dallas to Oak Cliff. Without easy access, the park couldn\'t survive. It limped along for five more years before closing in 1913. The rides were dismantled. The buildings came down. The land was sold to the city for a fraction of what it had cost. Dallas\'s Coney Island lasted just seven years.',
         },
         {
           type: 'paragraph',
-          content: 'The lake is still there. The springs still feed it, though less than they once did. On summer evenings, families picnic on the grass where the Figure Eight roller coaster once screamed. They have no idea what was lost. Dallas built a paradise, used it up, and threw it away. That\'s how the city has always operated. Lake Cliff Park was just another thing Dallas forgot.',
+          content: 'The lake is still there. The springs still feed it, though less than they once did. On summer evenings, families picnic on the grass where roller coasters once screamed. They have no idea what was lost. Dallas built a paradise, barely got to use it, and let nature take it away. The city mourned briefly, then forgot completely. Lake Cliff Park was the Southwest\'s greatest playground — until one flood destroyed the trolley tracks and erased it from history.',
         },
         {
           type: 'callout',
@@ -196,6 +232,6 @@ export const lakeCliffPark: Article = {
   },
   defaultFormat: 'longform',
   seo: {
-    metaDescription: 'Lake Cliff Park was once the largest amusement park in the Southwest — 65 acres of roller coasters and a massive natatorium. By 1930, it was gone. Dallas completely forgot it existed.',
+    metaDescription: 'Lake Cliff Park was once the largest amusement park in the Southwest — 65 acres of roller coasters and a massive natatorium. A 1908 flood killed it. By 1913, it was gone. Dallas completely forgot it existed.',
   },
 }
