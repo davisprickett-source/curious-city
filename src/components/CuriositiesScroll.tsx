@@ -952,7 +952,7 @@ export function CuriositiesScroll({ curiosities, cityName: _cityName }: Curiosit
       {/* Curiosities Sections */}
       <div>
         {curiosities.map((item, index) => (
-          <div key={item.id} data-curiosity-section>
+          <div key={item.id} id={item.id} data-curiosity-section>
             {item.videoAnimation ? (
               <VideoAnimationCuriosity
                 item={item}

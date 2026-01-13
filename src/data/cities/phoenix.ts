@@ -2395,7 +2395,7 @@ export const phoenix: CityData = {
         title: 'Lost & Loved',
         items: [
           {
-            id: 'phx-lost-2',
+            id: 'phx-lost-14',
             type: 'lost-and-loved',
             category: 'bar',
             name: 'The Bikini Lounge',
@@ -2408,7 +2408,7 @@ export const phoenix: CityData = {
             source: 'Arizona Republic, Phoenix New Times',
           },
           {
-            id: 'phx-lost-3',
+            id: 'phx-lost-15',
             type: 'lost-and-loved',
             category: 'music-venue',
             name: 'The Mason Jar',
@@ -2436,7 +2436,7 @@ export const phoenix: CityData = {
             size: 'banner',
           },
           {
-            id: 'phx-lost-4',
+            id: 'phx-lost-16',
             type: 'lost-and-loved',
             category: 'restaurant',
             name: 'Monti\'s La Casa Vieja',
@@ -2449,7 +2449,7 @@ export const phoenix: CityData = {
             source: 'Arizona Republic, Phoenix New Times',
           },
           {
-            id: 'phx-lost-5',
+            id: 'phx-lost-17',
             type: 'lost-and-loved',
             category: 'bookstore',
             name: 'Changing Hands Bookstore (original Tempe location)',
@@ -2466,7 +2466,7 @@ export const phoenix: CityData = {
             source: 'Arizona Republic, Publisher\'s Weekly',
           },
           {
-            id: 'phx-lost-6',
+            id: 'phx-lost-18',
             type: 'lost-and-loved',
             category: 'cafe',
             name: 'Willow House',
@@ -2484,7 +2484,7 @@ export const phoenix: CityData = {
             size: 'rectangle',
           },
           {
-            id: 'phx-lost-7',
+            id: 'phx-lost-19',
             type: 'lost-and-loved',
             category: 'restaurant',
             name: 'Macayo\'s (original location)',

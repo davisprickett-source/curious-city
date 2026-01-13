@@ -369,7 +369,7 @@ export function LostLovedScroll({ items, cityName }: LostLovedScrollProps) {
               <li key={index} className="relative group">
                 <button
                   onClick={() => {
-                    const element = document.getElementById(`lost-loved-${index}`)
+                    const element = document.getElementById(item.id)
                     element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
                   }}
                   className={`block w-3 h-3 rounded-full border-2 transition-all duration-300 ease-out ${
@@ -395,7 +395,7 @@ export function LostLovedScroll({ items, cityName }: LostLovedScrollProps) {
       {/* Sections */}
       <div>
         {items.map((item, index) => (
-          <div key={item.id} id={`lost-loved-${index}`}>
+          <div key={item.id} id={item.id}>
             <LostLovedSection
               item={item}
               index={index}

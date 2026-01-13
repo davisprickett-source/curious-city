@@ -63,23 +63,6 @@ export const portland: CityData = {
         intro: 'Keep Portland Weird started as a plea to shop local. But the weird goes deeper—into Shanghai tunnels where men were kidnapped and sold to ship captains, to a state founded with explicit Black exclusion laws, to a harbor where a warship once shelled the city by accident. Portland\'s reputation for quirk sits atop a foundation considerably darker than the coffee.',
         items: [
           {
-            id: 'pdx-curiosity-3',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'D.B. Cooper vanished into thin air—possibly over Portland',
-            body: 'In 1971, a man in a business suit calling himself Dan Cooper hijacked Northwest Orient Flight 305, demanded $200,000 (about $1.5 million today), and parachuted into a thunderstorm somewhere over southwestern Washington. He was never found. The case consumed the FBI for decades. Then in 1980, an 8-year-old boy digging a firepit along the Columbia River near Portland unearthed $5,800 in disintegrating twenties—serial numbers matching Cooper\'s ransom. The rest of the money? Gone. The man? Vanished. It remains the only unsolved hijacking in American aviation history and the Pacific Northwest\'s most enduring mystery.',
-            year: '1971',
-            image: {
-              src: '/portland/curiosities/db-cooper.png',
-              alt: 'D.B. Cooper hijacking over Portland area',
-            },
-            source: 'FBI records',
-            location: {
-              name: 'Columbia River area',
-              stillExists: true,
-            },
-          },
-          {
             id: 'pdx-curiosity-4',
             type: 'curiosity',
             category: 'culture',
@@ -441,8 +424,8 @@ export const portland: CityData = {
         id: 'hidden-gems',
         type: 'section',
         title: 'Hidden Portland',
-        teaser: 'Cold War bunkers, Shanghai tunnels, and the world\'s smallest park',
-        intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and the world\'s smallest park. This is where Portland gets genuinely obscure.',
+        teaser: 'Cold War bunkers, Shanghai tunnels, and underground speakeasies',
+        intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and underground speakeasies. This is where Portland gets genuinely obscure.',
         items: [
           {
             id: 'gem-underground-1',
@@ -713,24 +696,6 @@ export const portland: CityData = {
             price: '$8 adults/$5 youth (free admission available by request)',
             website: 'https://www.leachgarden.org',
             tip: 'A secret garden hiding in plain sight',
-          },
-          {
-            id: 'gem-nature-2',
-            type: 'hidden-gem',
-            name: 'Mill Ends Park',
-            category: 'World Record',
-            description: 'The world\'s smallest park at 452 square inches—a flower-filled traffic median with a wild backstory. Oregon Journal columnist Dick Fagan created it in 1948 after the city abandoned a light pole hole, then spent decades writing elaborate fiction about the leprechaun who lived there. The city made it official in 1976. Locals still decorate it seasonally: tiny Christmas trees, miniature swimming pools, even a small grassy lawn. England briefly contested Portland\'s Guinness record in 2018, but the crown stayed here.',
-            images: [
-              {
-                src: '/portland/curiosities/mill-ends-park.png',
-                alt: 'Mill Ends Park - world\'s smallest park',
-              }
-            ],
-            address: 'SW Naito Pkwy & Taylor St, Portland, OR 97204',
-            coordinates: { lat: 45.5156, lng: -122.6733 },
-            hours: 'Open 24/7',
-            price: 'Free',
-            tip: 'Look for the tiny circle of plants in the median',
           },
           {
             id: 'gem-nature-3',

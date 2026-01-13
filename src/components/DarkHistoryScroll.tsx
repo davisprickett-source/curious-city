@@ -613,7 +613,7 @@ export function DarkHistoryScroll({ items, cityName: _cityName }: DarkHistoryScr
       {/* Dark History Sections */}
       <div>
         {items.map((item, index) => (
-          <div key={item.id} data-dark-history-section>
+          <div key={item.id} id={item.id} data-dark-history-section>
             <DarkHistorySection
               item={item}
               index={index}
