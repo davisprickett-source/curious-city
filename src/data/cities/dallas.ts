@@ -655,12 +655,12 @@ export const dallas: CityData = {
             description: 'The most intimate and hidden speakeasy in Dallas. Check in at the front desk of SOVA Hotel and receive a pin code for a small bar in one of its normally labeled rooms. Japanese-inspired cocktails.',
             images: [
               {
-                src: '/dallas/hidden-gems/room520-1.png',
-                alt: 'Intimate hotel bar with elegant cocktails',
+                src: '/dallas/establishments/room520-hero.jpg',
+                alt: 'Intimate speakeasy with craft cocktails at Room 520',
               },
               {
-                src: '/dallas/hidden-gems/room520-2.png',
-                alt: 'Room 520 interior',
+                src: '/dallas/establishments/room520-interior.jpg',
+                alt: 'Cozy interior of Room 520 speakeasy in SOVA Hotel',
               }
             ],
             address: 'SOVA Hotel, Dallas',
@@ -764,12 +764,12 @@ export const dallas: CityData = {
             description: 'A vegetarian buffet inside a Hare Krishna temple that\'s been open since 1982. The food is genuinely good — Indian-inspired, always vegetarian — and the setting is unlike anything else in Dallas.',
             images: [
               {
-                src: '/dallas/hidden-gems/vegan-resto-1.png',
-                alt: 'Vegetarian buffet spread at Kalachandji\'s restaurant',
+                src: '/dallas/establishments/kalachandjis-patio.jpg',
+                alt: 'Beautiful outdoor patio at Kalachandji\'s with temple gardens',
               },
               {
-                src: '/dallas/hidden-gems/vegan-resto-2.png',
-                alt: 'Kalachandji\'s temple dining room',
+                src: '/dallas/establishments/kalachandjis-window.jpg',
+                alt: 'Kalachandji\'s temple dining room interior',
               },
               {
                 src: '/dallas/hidden-gems/vegan-resto-3.png',
@@ -790,6 +790,10 @@ export const dallas: CityData = {
             category: 'Bookstore/Bar',
             description: 'Part bookstore, part bar, part event space in Bishop Arts. Literary culture with cocktails and a backyard patio. Regular readings, discussions, and the kind of intentional community rare in Dallas.',
             images: [
+              {
+                src: '/dallas/establishments/wild-detectives-branded.jpg',
+                alt: 'The Wild Detectives bookstore bar venue in Bishop Arts District',
+              },
               {
                 src: '/dallas/hidden-gems/dallas-book-pub-1.png',
                 alt: 'Interior of Wild Detectives bookstore with books and bar',
@@ -813,6 +817,148 @@ export const dallas: CityData = {
             price: 'Free to browse',
             website: 'https://thewilddetectives.com',
             tip: 'Check the calendar for readings and events',
+          },
+          {
+            id: 'gem-bbq-1',
+            type: 'hidden-gem',
+            name: 'Pecan Lodge',
+            category: 'Restaurant',
+            description: 'Dallas\'s most award-winning BBQ, smoked in a pit and steeped in tradition. Located in Deep Ellum since 2010, this BBQ joint has lines out the door for a reason — their brisket is consistently ranked among the best in Texas.',
+            images: [
+              {
+                src: '/dallas/establishments/pecan-lodge-hero.jpg',
+                alt: 'Pecan Lodge BBQ in Deep Ellum',
+              },
+              {
+                src: '/dallas/establishments/pecan-lodge-smoke.jpg',
+                alt: 'Smoked BBQ at Pecan Lodge',
+              }
+            ],
+            address: '2702 Main St, Dallas, TX 75226',
+            coordinates: { lat: 32.7849, lng: -96.7846 },
+            hours: 'Wed-Sun 11am till sold out',
+            price: '$$',
+            website: 'https://pecanlodge.com',
+            tip: 'Arrive early — they often sell out by mid-afternoon',
+          },
+          {
+            id: 'gem-italian-1',
+            type: 'hidden-gem',
+            name: 'Lucia',
+            category: 'Restaurant',
+            description: 'A jewel box of a restaurant in Bishop Arts District. Chef David Uygur\'s intimate Italian spot has blue walls, vintage mirrors, and multiple James Beard nominations. MICHELIN Bib Gourmand awarded. The handmade pasta is exceptional.',
+            images: [
+              {
+                src: '/dallas/establishments/lucia-pasta-1.jpg',
+                alt: 'Handmade pasta at Lucia Dallas',
+              },
+              {
+                src: '/dallas/establishments/lucia-interior.jpg',
+                alt: 'Intimate interior at Lucia restaurant',
+              }
+            ],
+            address: '287 N Bishop Ave, Dallas, TX 75208',
+            coordinates: { lat: 32.7460, lng: -96.8294 },
+            hours: 'Dinner Tue-Sun',
+            price: '$$$',
+            website: 'https://www.luciadallas.com',
+            tip: 'Reservations essential — this 40-seat spot books up fast',
+          },
+          {
+            id: 'gem-coffee-1',
+            type: 'hidden-gem',
+            name: 'Ascension Coffee',
+            category: 'Coffee Shop',
+            description: 'Dallas\'s answer to third-wave coffee culture. Six locations across Dallas-Fort Worth, each with its own character but all serving meticulously sourced beans. The Design District location has become a local institution.',
+            images: [
+              {
+                src: '/dallas/establishments/ascension-cherries.jpg',
+                alt: 'Coffee sourcing at Ascension Coffee',
+              },
+              {
+                src: '/dallas/establishments/ascension-coffee-home.jpg',
+                alt: 'Ascension Coffee lifestyle',
+              }
+            ],
+            address: '1621 Oak Lawn Ave (Design District) + 5 other locations',
+            coordinates: { lat: 32.8042, lng: -96.8067 },
+            hours: 'Daily 7am-7pm',
+            price: '$',
+            website: 'https://ascension.coffee',
+            tip: 'Try the espresso tonic on a hot Dallas day',
+          },
+          {
+            id: 'gem-bbq-2',
+            type: 'hidden-gem',
+            name: 'Cattleack Barbeque',
+            category: 'Restaurant',
+            description: 'A tiny North Dallas BBQ spot that earned a MICHELIN Bib Gourmand in 2025. Only open three days a week (plus the first Saturday of every month). When they sell out — which they do — they close for the day. Worth the limited hours.',
+            images: [
+              {
+                src: '/dallas/establishments/cattleack-hero.jpg',
+                alt: 'Cattleack Barbeque interior',
+              },
+              {
+                src: '/dallas/establishments/cattleack-michelin-2025.png',
+                alt: 'Cattleack Barbeque MICHELIN Bib Gourmand 2025',
+              }
+            ],
+            address: '13628 Gamma Rd, Dallas, TX 75244',
+            coordinates: { lat: 32.9474, lng: -96.8364 },
+            hours: 'Wed-Fri + first Sat, 10am till sold out',
+            price: '$$',
+            website: 'https://cattleackbbq.com',
+            tip: 'MICHELIN Bib Gourmand 2025 — arrive when doors open',
+          },
+          {
+            id: 'gem-sushi-1',
+            type: 'hidden-gem',
+            name: 'Uchi Dallas',
+            category: 'Restaurant',
+            description: 'James Beard Award-winning Chef Tyson Cole\'s elevated Japanese cuisine. The Uptown location brings Austin\'s most celebrated sushi to Dallas. Contemporary takes on sushi and hot dishes, with impeccable presentation and an extensive sake list.',
+            images: [
+              {
+                src: '/dallas/establishments/uchi-madai.jpg',
+                alt: 'Madai crudo at Uchi Dallas',
+              },
+              {
+                src: '/dallas/establishments/uchi-wagyu-hotrock.jpg',
+                alt: 'Wagyu hot rock at Uchi Dallas',
+              },
+              {
+                src: '/dallas/establishments/uchi-private-dining.jpg',
+                alt: 'Uchi Dallas private dining room',
+              }
+            ],
+            address: '2817 Maple Ave, Dallas, TX 75201',
+            coordinates: { lat: 32.8042, lng: -96.8003 },
+            hours: 'Dinner daily, Happy Hour 5-6:30pm',
+            price: '$$$',
+            website: 'https://uchi.uchirestaurants.com/location/sushi-dallas/',
+            tip: 'Happy hour (5-6:30pm) offers the tasting menu at a discount',
+          },
+          {
+            id: 'gem-coffee-2',
+            type: 'hidden-gem',
+            name: 'Merit Coffee',
+            category: 'Coffee Shop',
+            description: 'Texas-based specialty coffee roasters with multiple Dallas locations. Known for direct-trade relationships with coffee farmers and meticulous roasting. The Main Street location in Deep Ellum is bright and minimalist, perfect for laptop work or slow mornings.',
+            images: [
+              {
+                src: '/dallas/establishments/merit-coffee-deep-ellum.jpg',
+                alt: 'Merit Coffee cafe in Deep Ellum',
+              },
+              {
+                src: '/dallas/establishments/merit-coffee-product.jpg',
+                alt: 'Merit Coffee specialty drinks',
+              }
+            ],
+            address: '2639 Main St (Deep Ellum) + 3 other Dallas locations',
+            coordinates: { lat: 32.7849, lng: -96.7846 },
+            hours: 'Daily 7am-6pm',
+            price: '$',
+            website: 'https://meritcoffee.com',
+            tip: 'Try the seasonal single-origin pour-overs',
           }
         ],
       },

@@ -323,6 +323,29 @@ export const denver: CityData = {
               stillExists: true,
             },
           },
+          {
+            id: 'den-curiosity-16',
+            type: 'curiosity',
+            category: 'nature',
+            title: 'Red Rocks is 300 million years of perfect acoustics',
+            body: 'Red Rocks Amphitheatre isn\'t a venue—it\'s a geological accident that happens to host concerts. The two massive sandstone formations (Ship Rock and Creation Rock) rose from a prehistoric ocean floor 300 million years ago, were tilted vertical during mountain-building, and created what acousticians call "the only naturally perfect amphitheater in the world." The rocks amplify sound naturally. No stadium comes close. In 1911, opera singer Mary Garden declared she\'d never heard better acoustics at any opera house in the world. In 2021, it was the highest-grossing venue on Earth. The Beatles played here in 1964. U2 filmed "Under a Blood Red Sky" here in 1983. Every artist wants this on their resume. The rocks don\'t care. They\'ll be here 300 million years after the last encore.',
+            year: '1941',
+            images: [
+              {
+                src: '/denver/curiosities/red-rocks-1.png',
+                alt: 'Red Rocks Amphitheatre natural rock formations',
+              },
+              {
+                src: '/denver/curiosities/red-rocks-2.png',
+                alt: 'Red Rocks concert with dramatic rock walls',
+              },
+            ],
+            source: 'Red Rocks Amphitheatre, National Geographic',
+            location: {
+              name: 'Red Rocks Park, Morrison (15 miles west of Denver)',
+              stillExists: true,
+            },
+          },
         ],
       },
       {

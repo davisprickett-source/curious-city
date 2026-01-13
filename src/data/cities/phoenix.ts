@@ -90,7 +90,7 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'German POWs tunneled out and learned Arizona has fake rivers',
-            body: 'Camp Papago Park, located in what\'s now east Phoenix, held German prisoners of war during WWII—many of them U-boat crews captured in the Atlantic. On December 23, 1944, 25 German officers executed "The Great Papago Escape," emerging from a 178-foot tunnel they\'d dug over three months using makeshift tools. The tunnel started under a bathhouse and extended beyond the camp fence. The Germans had built a collapsible boat, studied maps, and planned to float down the Gila River to Mexico. There was one problem: Arizona\'s "rivers" on maps are usually bone-dry. The escapees wandered the Sonoran Desert in confusion. Most were recaptured within days. The last holdout, U-boat Captain Jürgen Wattenberg, evaded capture until January 28, 1945—over a month on the run. All 25 were eventually caught. The tunnel entrance is now commemorated at Papago Park Golf Course.',
+            body: 'Camp Papago Park held German POWs during WWII—most of them U-boat officers who assumed they were clever. On December 23, 1944, 25 Germans executed "The Great Papago Escape": a 178-foot tunnel dug with makeshift tools, a collapsible boat, and maps showing the Gila River flowing conveniently to Mexico. One small problem: Arizona puts "rivers" on maps as a sick joke. The Gila was completely dry. Picture 25 sunburned Germans dragging a boat across cracked mud, slowly realizing they\'d planned an aquatic escape in a desert. Most surrendered within days. U-boat Captain Jürgen Wattenberg—too stubborn or too German to quit—lasted 36 days before capture. The tunnel entrance is now a plaque at Papago Park Golf Course, commemorating history\'s most geographically confused prison break.',
             image: {
               src: '/phoenix/curiosities/wwii-prisoners.png',
               alt: 'German POW camp at Papago Park and escape tunnel site',
@@ -165,7 +165,7 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'law',
             title: 'Cutting down a saguaro is a felony (one fought back)',
-            body: 'The iconic saguaro cactus (Carnegiea gigantea) grows nowhere else on Earth except the Sonoran Desert. They can live 200 years and reach 40 feet tall, but growth is excruciatingly slow—it takes 10 years to grow one inch, and 75-100 years before a saguaro sprouts its first arm. Because of this, Arizona law protects them fiercely. Under the Arizona Native Plant Law, destroying, collecting, or moving a saguaro without a permit is a Class 4 felony carrying up to 3.75 years in prison and fines up to $150,000. When developers build in the Sonoran Desert, every saguaro must be surveyed, tagged, and either avoided or transplanted at costs reaching $1,000+ per cactus. Despite the law, cactus poaching remains a problem—landscapers illegally harvest saguaros from public land to sell to resorts and homeowners. In 1982, a man shot a saguaro with his shotgun near Lake Pleasant; the cactus fell on him and killed him. The story became a dark Arizona legend.',
+            body: 'Saguaros grow nowhere else on Earth. They take 10 years to grow one inch. Seventy-five years before sprouting an arm. Two centuries to reach full height. Arizona protects them with Class 4 felony charges: up to 3.75 years in prison, $150,000 fines. Developers pay $1,000+ to transplant each one. Landscapers still poach them from public land anyway. In 1982, a man near Lake Pleasant decided to shoot a 27-foot saguaro with his shotgun. The cactus fell on him. Killed him instantly. A 4-foot section crushed his chest. They found him pinned under a thousand pounds of cactus he\'d just murdered. Locals call it karma. Botanists call it "spear death." Either way, the cactus won.',
             image: {
               src: '/phoenix/curiosities/cactus.png',
               alt: 'Towering saguaro cactus protected by Arizona law',
@@ -283,7 +283,7 @@ export const phoenix: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'The city\'s name is both boast and warning',
-            body: 'Anglo settlers named the city "Phoenix" in 1868 specifically because it rose from the ruins of the Hohokam civilization that had previously flourished here. It was both a boast and a warning: a great civilization had already collapsed in this valley once. The name was chosen by "Lord" Darrell Duppa, an English adventurer who was almost certainly drunk at the time.',
+            body: 'Anglo settlers named the city "Phoenix" in 1868 because it rose from the ruins of the Hohokam civilization—which had already collapsed here once. Boast and warning in one word. The brilliant naming convention came from "Lord" Darrell Duppa, a Cambridge-educated English drunk who claimed nobility nobody could verify. He suggested "Phoenix" while almost certainly hammered. The city council, equally drunk or impressed by his accent, agreed. Now five million people live in a city named after a mythical bird, commemorating a dead civilization, by a fake lord who was probably shitfaced. Perfect metaphor.',
             image: {
               src: '/phoenix/curiosities/phoeni-origin-name.png',
               alt: 'Phoenix rising from Hohokam ruins - city name origin',
@@ -401,6 +401,81 @@ export const phoenix: CityData = {
             source: 'Frank Lloyd Wright Foundation',
             location: {
               name: 'Taliesin West, Scottsdale',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'phx-curiosity-pyramid',
+            type: 'curiosity',
+            category: 'legend',
+            title: 'Arizona\'s first governor is buried in a King Tut pyramid',
+            body: 'George W.P. Hunt served as Arizona\'s first governor for seven terms. When King Tut\'s tomb was discovered in 1922, Hunt became obsessed with pyramid burial. He commissioned a white-tiled pyramid tomb in Papago Park for himself and his family—complete with Egyptian hieroglyphics and a copper dome. Hunt was a progressive who fought for women\'s suffrage, abolished child labor, and did his own grocery shopping (scandalous for 1920s men). He also knitted scarves for soldiers during WWI. When he died in 1934, they entombed him in his pyramid. His wife Annie joined him there in 1940. The tomb still stands on a red sandstone hill, visible from the highway—Arizona\'s weirdest monument to its least conventional governor.',
+            image: {
+              src: '/phoenix/curiosities/hunt-pyramid.png',
+              alt: 'Governor Hunt pyramid tomb in Papago Park',
+            },
+            sources: [
+              {
+                title: 'Arizona State Library: Governor George W.P. Hunt',
+                url: 'https://azlibrary.gov/dazl/george-wp-hunt',
+              },
+              {
+                title: 'Downtown Phoenix: Fun Facts About Phoenix',
+                url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
+              },
+            ],
+            location: {
+              name: 'Papago Park',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'phx-curiosity-ancient-houses',
+            type: 'curiosity',
+            category: 'history',
+            title: 'They built a convention center on top of 3,000-year-old houses',
+            body: 'In 2006, while demolishing the old Phoenix Civic Plaza for the new convention center, archaeologists found something: Hohokam houses. Three thousand years old. Older than Rome. Older than the pyramids at Giza by a millennium. The Hohokam had built an entire neighborhood here, with pit houses, storage pits, and cooking hearths. Phoenix had unknowingly paved over them in the 1970s, then held conferences and trade shows on top of ancient homes for decades. The archaeologists excavated what they could before construction deadlines forced them to stop. Most of the site was destroyed. The convention center opened on schedule in 2008. Somewhere under the ballrooms and expo halls, 3,000 years of Indigenous history is buried under concrete. Phoenix keeps building on graves.',
+            image: {
+              src: '/phoenix/curiosities/ancient-houses.png',
+              alt: 'Archaeological excavation of 3,000-year-old Hohokam houses under Phoenix Convention Center',
+            },
+            sources: [
+              {
+                title: 'ASU News: Historic Photos of Phoenix',
+                url: 'https://news.asu.edu/content/historic-photos-phoenix-blend-facts-stories-and-photography',
+              },
+              {
+                title: 'Visit Phoenix: Unique Facts About Phoenix History',
+                url: 'https://www.visitphoenix.com/stories/post/11-unique-facts-you-didnt-know-about-phoenixs-history/',
+              },
+            ],
+            location: {
+              name: 'Phoenix Convention Center',
+              stillExists: true,
+            },
+          },
+          {
+            id: 'phx-curiosity-melindas-alley',
+            type: 'curiosity',
+            category: 'underground',
+            title: 'A speakeasy operates on the site of a 19th-century Black-owned brothel',
+            body: 'Beneath downtown Phoenix, in a narrow brick-lined passageway built after a 1910 fire, sits Melinda\'s Alley—a speakeasy bar on the site of a brothel run by Malinda Curtis, a Black proprietrix in the 1800s. The Adams Hotel was built above the old tunnels. Through subsequent demolitions and remodels, the underground passage survived. Today, a heavy door behind a multicolored mural opens to the bar—but only when a red light signals it\'s open. Inside, exposed brick walls, dim lighting, and a bank vault door from the old Valley National Bank preserve the hidden history. It\'s one of Phoenix\'s rare acknowledgments of its multicultural past, buried literally underground.',
+            image: {
+              src: '/phoenix/curiosities/melindas-alley.png',
+              alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
+            },
+            sources: [
+              {
+                title: 'Phoenix Magazine: 25 Best-Kept Secrets in Phoenix',
+                url: 'https://www.phoenixmag.com/2024/09/05/the-25-best-kept-secrets-in-phoenix/',
+              },
+              {
+                title: 'Downtown Phoenix: Fun Facts',
+                url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
+              },
+            ],
+            location: {
+              name: 'Downtown Phoenix',
               stillExists: true,
             },
           },
