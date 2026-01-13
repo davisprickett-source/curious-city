@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityLostAndLoved, getCityLostAndLovedSection } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
-import { Footer } from '@/components'
+import { Footer, RelatedContent, NewsletterSignup } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 
 // Dynamically import the scroll component (client-only)
@@ -93,6 +93,12 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
 
         {/* Premium Scroll Component */}
         <LostLovedScroll items={items} cityName={city.name} />
+
+        {/* End of Page Flow */}
+        <div className="container-page py-12 space-y-8">
+          <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
+          <NewsletterSignup />
+        </div>
       </main>
 
       <Footer />

@@ -1,12 +1,11 @@
-import { getArticle, getRelatedArticles } from '@/lib/queries/articles'
+import { getArticle } from '@/lib/queries/articles'
 import { getCity } from '@/data/cities'
 import { getHistory } from '@/data/history'
-import { Footer } from '@/components'
+import { Footer, RelatedContent, NewsletterSignup } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { ShareButton } from '@/components/ShareButton'
 import { ArticleRenderer } from '@/components/ArticleRenderer'
 import { VideoHistoryScroll } from '@/components/VideoHistoryScroll'
-import { ArticleCardCompact } from '@/components/ArticleCard'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
 import { notFound } from 'next/navigation'
@@ -72,8 +71,6 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
     return <VideoHistoryScroll history={historyEssay} />
   }
 
-  // Get related articles
-  const relatedArticles = await getRelatedArticles(article, 3)
 
   return (
     <>
@@ -167,8 +164,8 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
                 articleSlug={slug}
               />
 
-              {/* Tags */}
-              {article.tags && article.tags.length > 0 && (
+              {/* Tags - Hidden */}
+              {/* {article.tags && article.tags.length > 0 && (
                 <div className="mt-12 pt-8 border-t border-neutral-200">
                   <div className="flex flex-wrap gap-2">
                     {article.tags.map((tag) => (
@@ -181,7 +178,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
                     ))}
                   </div>
                 </div>
-              )}
+              )} */}
 
               {/* Footer Ad */}
               <UniversalAd
@@ -196,23 +193,11 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
           </div>
         </article>
 
-        {/* Related Articles */}
-        {relatedArticles.length > 0 && (
-          <section className="bg-neutral-50 py-16">
-            <div className="container-page">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-bold text-neutral-900 mb-8">
-                  Related Articles
-                </h2>
-                <div className="space-y-6">
-                  {relatedArticles.map((related) => (
-                    <ArticleCardCompact key={related.slug} article={related} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
+        {/* End of Article Flow */}
+        <div className="container-page py-12 space-y-8">
+          <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
+          <NewsletterSignup />
+        </div>
       </main>
 
       <Footer />

@@ -2,10 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { CITY_METADATA } from '@/data/cities'
 import { getCityFeaturedEntries } from '@/lib/content/cityHomepage'
+import { getAllArticles } from '@/lib/queries/articles'
 
 interface RelatedContentProps {
   citySlug: string
-  contentType: 'curiosities' | 'dark-history'
+  contentType: 'curiosities' | 'dark-history' | 'articles' | 'lost-and-loved'
+  currentSlug?: string // To exclude current article/item
 }
 
 // Type for a related content item
@@ -31,58 +33,99 @@ function shuffle<T>(array: T[]): T[] {
 export async function RelatedContent({
   citySlug,
   contentType,
+  currentSlug,
 }: RelatedContentProps) {
   const relatedItems: RelatedItem[] = []
   const usedIds = new Set<string>()
 
   try {
-    // 1. Get 2 same-type pages from OTHER cities
-    const otherCities = shuffle(CITY_METADATA.filter(c => c.slug !== citySlug))
-    let sameTypeCount = 0
+    // Handle articles differently
+    if (contentType === 'articles') {
+      // 1. Get 2 articles from OTHER cities
+      const allArticles = await getAllArticles({ limit: 50 })
+      const otherCityArticles = shuffle(
+        allArticles.filter(a => a.citySlug !== citySlug && a.slug !== currentSlug)
+      )
 
-    for (const otherCity of otherCities) {
-      if (sameTypeCount >= 2) break
-
-      const otherCityEntries = await getCityFeaturedEntries(otherCity.slug)
-      const matchingType = otherCityEntries.find((entry) => {
-        const isMatch =
-          (contentType === 'curiosities' && entry.type === 'curiosity') ||
-          (contentType === 'dark-history' && entry.type === 'dark-history')
-        return isMatch && !usedIds.has(entry.id)
-      })
-
-      if (matchingType) {
+      for (const article of otherCityArticles.slice(0, 2)) {
+        const cityInfo = CITY_METADATA.find(c => c.slug === article.citySlug)
         relatedItems.push({
-          id: matchingType.id,
-          title: matchingType.title,
-          teaser: matchingType.teaser,
-          image: matchingType.image?.src,
-          href: matchingType.href,
-          cityName: otherCity.name,
+          id: `article-${article.slug}`,
+          title: article.title,
+          teaser: article.subtitle || article.excerpt,
+          image: article.featuredImage?.src,
+          href: `/${article.citySlug}/articles/${article.slug}`,
+          cityName: cityInfo?.name,
         })
-        usedIds.add(matchingType.id)
-        sameTypeCount++
+        usedIds.add(`article-${article.slug}`)
       }
-    }
 
-    // 2. Get 2 different-type pages from SAME city
-    const sameCityEntries = await getCityFeaturedEntries(citySlug)
-    const differentTypeEntries = sameCityEntries.filter((entry) => {
-      const isDifferent =
-        (contentType === 'curiosities' && entry.type !== 'curiosity') ||
-        (contentType === 'dark-history' && entry.type !== 'dark-history')
-      return isDifferent && !usedIds.has(entry.id)
-    })
+      // 2. Get 2 discover pages from SAME city
+      const sameCityEntries = await getCityFeaturedEntries(citySlug)
+      for (const entry of sameCityEntries.slice(0, 2)) {
+        if (!usedIds.has(entry.id)) {
+          relatedItems.push({
+            id: entry.id,
+            title: entry.title,
+            teaser: entry.teaser,
+            image: entry.image?.src,
+            href: entry.href,
+          })
+          usedIds.add(entry.id)
+        }
+      }
+    } else {
+      // Original logic for curiosities, dark-history, lost-and-loved
+      // 1. Get 2 same-type pages from OTHER cities
+      const otherCities = shuffle(CITY_METADATA.filter(c => c.slug !== citySlug))
+      let sameTypeCount = 0
 
-    for (const entry of differentTypeEntries.slice(0, 2)) {
-      relatedItems.push({
-        id: entry.id,
-        title: entry.title,
-        teaser: entry.teaser,
-        image: entry.image?.src,
-        href: entry.href,
+      for (const otherCity of otherCities) {
+        if (sameTypeCount >= 2) break
+
+        const otherCityEntries = await getCityFeaturedEntries(otherCity.slug)
+        const matchingType = otherCityEntries.find((entry) => {
+          const isMatch =
+            (contentType === 'curiosities' && entry.type === 'curiosity') ||
+            (contentType === 'dark-history' && entry.type === 'dark-history') ||
+            (contentType === 'lost-and-loved' && entry.type === 'lost-loved')
+          return isMatch && !usedIds.has(entry.id)
+        })
+
+        if (matchingType) {
+          relatedItems.push({
+            id: matchingType.id,
+            title: matchingType.title,
+            teaser: matchingType.teaser,
+            image: matchingType.image?.src,
+            href: matchingType.href,
+            cityName: otherCity.name,
+          })
+          usedIds.add(matchingType.id)
+          sameTypeCount++
+        }
+      }
+
+      // 2. Get 2 different-type pages from SAME city
+      const sameCityEntries = await getCityFeaturedEntries(citySlug)
+      const differentTypeEntries = sameCityEntries.filter((entry) => {
+        const isDifferent =
+          (contentType === 'curiosities' && entry.type !== 'curiosity') ||
+          (contentType === 'dark-history' && entry.type !== 'dark-history') ||
+          (contentType === 'lost-and-loved' && entry.type !== 'lost-loved')
+        return isDifferent && !usedIds.has(entry.id)
       })
-      usedIds.add(entry.id)
+
+      for (const entry of differentTypeEntries.slice(0, 2)) {
+        relatedItems.push({
+          id: entry.id,
+          title: entry.title,
+          teaser: entry.teaser,
+          image: entry.image?.src,
+          href: entry.href,
+        })
+        usedIds.add(entry.id)
+      }
     }
 
   } catch (error) {
