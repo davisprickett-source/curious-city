@@ -170,7 +170,7 @@ export const raleigh: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'The city is named after a man whose severed head became a family heirloom',
-            body: 'Raleigh is named after Sir Walter Raleigh, the Elizabethan explorer and courtier who was beheaded in 1618. His preserved head was presented to his wife, Lady Raleigh, as a grim keepsake — and the family reportedly kept it for 29 years. The man never set foot in America, yet his decapitated head became a macabre family treasure that outlasted most marriages.',
+            body: 'Sir Walter Raleigh never set foot in America. When he was beheaded in 1618, his preserved head was presented to his wife as a grim keepsake—and the family kept it for 29 years. The decapitated head outlasted most marriages. The city of Raleigh is named after this man whose severed head became a macabre family treasure.',
             year: '1618',
             image: {
               src: '/raleigh/curiosities/walter-raleigh.webp',
@@ -188,7 +188,7 @@ export const raleigh: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'A lost NASCAR superspeedway lies overgrown in the woods',
-            body: 'Near Atlantic Avenue lie the overgrown remains of Raleigh Speedway, a one-mile banked NASCAR superspeedway built on a former airstrip in the 1950s. Bill France — who created Daytona — owned it. It was the first superspeedway in North Carolina with lights for night racing. Despite drawing crowds of 16,000+ when Raleigh\'s population was only 65,000, City Council refused to allow Sunday races and noise complaints from expanding suburbs killed it in 1959. The ruins are still visible in the woods. Tragically, teens later died racing their cars on the abandoned track.',
+            body: 'Bill France—the man who invented Daytona—built a high-speed racing temple in 1950s Raleigh. The one-mile banked superspeedway drew crowds of 16,000+ when the entire city had only 65,000 people. It was the first track in North Carolina with lights for night racing. City Council refused to allow Sunday races. Noise complaints from expanding suburbs killed it in 1959. The ruins still sit near Atlantic Avenue, overgrown but visible if you know where to look. Tragically, teens later died racing their cars on the abandoned track.',
             year: '1952-1959',
             image: {
               src: '/raleigh/curiosities/raleigh speedway.png',

@@ -39,8 +39,8 @@ export const seattle: CityData = {
           id: 'curiosity-1',
           type: 'curiosity',
           category: 'underground',
-          title: 'There\'s a buried ghost city beneath downtown Seattle\'s streets',
-          body: 'In 1889, the Great Seattle Fire burned 25 blocks of the original downtown to the ground. When the city rebuilt, officials faced a problem: the original streets were at sea level and regularly flooded with sewage during high tide. Their solution was radical — raise the entire city by one to two stories.\n\nNew buildings were constructed on top of the ruins, with their entrances moved to the second floor. The old ground-level storefronts became basements. Underground sidewalks connected buildings for years while the city slowly filled in the gaps with dirt. Eventually, the underground was abandoned and forgotten.\n\nToday, Bill Speidel\'s Underground Tour takes visitors through preserved portions of this buried city — crumbling storefronts, abandoned bank vaults, and the remnants of Seattle\'s original downtown, frozen in time beneath Pioneer Square. Some sections are still being discovered. The city literally stands on its own corpse.',
+          title: 'Seattle literally buried its past and built a new city on top',
+          body: 'In 1889, a glue pot in a woodworking shop caught fire and burned 25 blocks of downtown Seattle to ash. Instead of rebuilding on the ruins, officials decided on a bold solution to the city\'s sewage-flooding problem: raise the entire downtown by one to two stories.\n\nThey built new buildings with their "first floors" one story up. The old ground level — complete with storefronts, sidewalks, and banks — became basements. For years, you could walk the underground sidewalks while construction continued overhead. Eventually, the city filled in the gaps, sealed it off, and forgot about it.\n\nThat buried city is still there. Bill Speidel\'s Underground Tour now leads visitors through perfectly preserved storefronts, bank vaults, and cobblestone streets beneath Pioneer Square. It\'s not a metaphor — Seattle\'s original downtown is literally under your feet, entombed like Pompeii but with more plumbing problems.',
           sources: [
             {
               title: 'Bill Speidel\'s Underground Tour',
@@ -61,8 +61,8 @@ export const seattle: CityData = {
           id: 'curiosity-2',
           type: 'curiosity',
           category: 'history',
-          title: 'D.B. Cooper vanished into thin air over Washington — and was never found',
-          body: 'On November 24, 1971, a man using the alias Dan Cooper (misreported as "D.B. Cooper") boarded Northwest Orient Airlines Flight 305 from Portland to Seattle. Shortly after takeoff, he handed a flight attendant a note: he had a bomb, and he wanted $200,000 in $20 bills plus four parachutes.\n\nThe plane landed in Seattle. Cooper released the passengers, collected his ransom and parachutes, and demanded the plane fly to Mexico City at low altitude with the landing gear down. Somewhere over southwestern Washington, Cooper lowered the rear staircase and jumped into the night at 10,000 feet, carrying 21 pounds of cash strapped to his body.\n\nHe was never seen again. The FBI searched the wilderness for years. In 1980, a boy found $5,800 of the ransom money on the banks of the Columbia River — the only physical evidence ever recovered. The case remained the FBI\'s only unsolved hijacking until they officially suspended the investigation in 2016.\n\nHundreds of suspects have been proposed. Deathbed confessions have been investigated. Amateur sleuths still comb the Washington wilderness. But D.B. Cooper\'s true identity, and whether he survived the jump, remains one of America\'s greatest unsolved mysteries.',
+          title: 'D.B. Cooper jumped out of a plane with $200,000 and vanished forever',
+          body: 'On November 24, 1971, a man in a business suit calling himself Dan Cooper bought a one-way ticket from Portland to Seattle, ordered a bourbon and soda, and quietly handed a flight attendant a note: "I have a bomb." He wanted $200,000 in twenties and four parachutes. The airline complied.\n\nThe plane landed in Seattle. Cooper released the passengers, collected his cash (21 pounds of bills), and ordered the crew to fly to Mexico City — low and slow, with the landing gear down. Somewhere over southwestern Washington, near the Oregon border, he opened the rear staircase, stepped into the night at 10,000 feet in a freezing rainstorm, and disappeared.\n\nThe FBI spent decades searching. They found nothing. In 1980, a kid on a camping trip found $5,800 of soggy ransom money on a Columbia River sandbar — the only trace of Cooper ever recovered. Did he die? Did he live? Did he walk away from the greatest heist in aviation history?\n\nNo one knows. The FBI gave up in 2016. Cooper — whose name was actually misreported as "D.B." by journalists — remains the only unsolved hijacking in American history, and probably the coolest criminal no one can prove existed.',
           sources: [
             {
               title: 'FBI: D.B. Cooper Case',
@@ -106,8 +106,8 @@ export const seattle: CityData = {
           id: 'curiosity-4',
           type: 'curiosity',
           category: 'culture',
-          title: 'Pike Place\'s Gum Wall contains an estimated million pieces of chewed gum',
-          body: 'In a narrow alley near Pike Place Market, both walls are covered — floor to ceiling — with chewed gum. The tradition started in the early 1990s when patrons waiting in line for the Market Theater began sticking their gum to the wall. Theater workers tried to scrape it off. The gum kept coming back.\n\nBy 1999, the Market officially declared it a tourist attraction. The wall is now covered in an estimated one million pieces of gum, some shaped into words, hearts, and elaborate designs. In 2015, after 20 years of accumulation, the wall was steam-cleaned for the first time, removing 2,350 pounds of gum. It took 130 hours.\n\nWithin days, visitors had started a new layer. The Gum Wall has been named one of the world\'s "germiest tourist attractions," but that hasn\'t stopped anyone. It\'s gloriously disgusting, inexplicably beloved, and thoroughly Seattle.',
+          title: 'The Gum Wall is exactly what it sounds like, and way more disgusting',
+          body: 'In an alley next to Pike Place Market, both walls are plastered floor-to-ceiling with an estimated one million pieces of chewed gum. Every color. Every texture. Some formed into hearts and words. Most just blobs of masticated ABC gum (Already Been Chewed) from strangers\' mouths.\n\nIt started in the early 1990s when theater-goers waiting in line began sticking their gum to the bricks. Staff tried scraping it off. The gum kept coming. Eventually the Market gave up and declared it a tourist attraction in 1999.\n\nIn 2015, after two decades of accumulation, they finally steam-cleaned the walls. It took 130 hours to remove 2,350 pounds of gum. Within 48 hours, tourists had started a fresh layer.\n\nThe Gum Wall has been named one of the world\'s "germiest tourist attractions" and probably harbors enough bacteria to create new life forms. People love it anyway. It\'s absolutely vile, completely Seattle, and somehow everybody wants a photo.',
           sources: [
             {
               title: 'Seattle Times: Pike Place Gum Wall',
@@ -124,8 +124,8 @@ export const seattle: CityData = {
           id: 'curiosity-5',
           type: 'curiosity',
           category: 'history',
-          title: 'Seattle once briefly declared war on Japan — unilaterally',
-          body: 'In 1942, following the attack on Pearl Harbor and the internment of Japanese Americans, Seattle\'s Mayor Earl Millikin issued a proclamation that some interpreted as a unilateral declaration of war against Japan. The proclamation declared that Seattle was "at war with the Empire of Japan" and ordered all Japanese nationals to register with the police.\n\nThe gesture was symbolic and legally meaningless — cities can\'t declare war — but it captured the hysterical atmosphere of the time. Seattle had one of the largest Japanese-American populations on the West Coast, and the internment that followed devastated the community. Japantown, once thriving in the International District, was hollowed out.\n\nThe story is largely forgotten today, but it serves as a reminder of how quickly fear can override reason — and how local governments participated in one of America\'s greatest civil liberties violations.',
+          title: 'Seattle\'s mayor tried to declare war on Japan (cities can\'t do that)',
+          body: 'In 1942, shortly after Pearl Harbor, Seattle Mayor Earl Millikin issued a proclamation declaring that Seattle was "at war with the Empire of Japan" and ordering all Japanese nationals to register with police. Cities can\'t declare war. Millikin knew this. He did it anyway.\n\nThe proclamation was symbolic and legally meaningless, but it captured the hysteria of the moment. Seattle had one of the largest Japanese-American populations on the West Coast — over 6,000 people. Japantown in the International District was thriving: businesses, temples, community centers. Within months, Executive Order 9066 forced the entire community into internment camps.\n\nWhen they returned years later, Japantown was gone. Businesses shuttered. Homes sold. The community scattered. What the war didn\'t destroy, Seattle\'s complicity did.\n\nThe story is mostly forgotten now. There\'s no plaque marking what happened. But it\'s a reminder that cities don\'t need legal authority to participate in atrocities — they just need fear and a willing mayor.',
           sources: [
             {
               title: 'Densho: Seattle and Japanese Internment',
@@ -200,8 +200,8 @@ export const seattle: CityData = {
           id: 'curiosity-9',
           type: 'curiosity',
           category: 'culture',
-          title: 'Grunge was born in Seattle basements and changed music forever',
-          body: 'In the late 1980s, a musical movement was brewing in Seattle\'s damp basements and dive bars. Bands like Nirvana, Pearl Jam, Soundgarden, and Alice in Chains fused punk aggression with heavy metal riffs and lyrics of alienation and irony. They called it "grunge."\n\nThe scene centered around Sub Pop Records, founded in 1986, and venues like the Central Saloon, the Off Ramp, and the Crocodile Cafe. When Nirvana\'s "Nevermind" exploded in 1991, the major labels descended on Seattle like gold rush prospectors. Within months, flannel shirts and combat boots went from thrift-store staples to runway fashion.\n\nKurt Cobain\'s death in 1994 marked the beginning of the end, but grunge\'s impact was permanent. It killed hair metal, launched alternative rock into the mainstream, and established Seattle as a music city to rival New York and Los Angeles. The original venues are mostly gone, but the music echoes.',
+          title: 'Seattle accidentally invented grunge and killed hair metal forever',
+          body: 'In the late 1980s, a bunch of Seattle bands were doing something weird in dive bars and damp basements: mixing punk\'s rage with metal\'s riffs and lyrics about alienation, apathy, and thrift store fashion. Nirvana, Pearl Jam, Soundgarden, Alice in Chains. Someone called it "grunge." The name stuck.\n\nSub Pop Records documented the scene. Venues like the Central Saloon, Off Ramp, and Crocodile Cafe hosted the shows. Everything was small, local, underground. Then Nirvana\'s "Nevermind" exploded in 1991 and suddenly flannel was high fashion, major labels were signing anything from Seattle, and MTV couldn\'t stop playing videos shot in the rain.\n\nKurt Cobain\'s suicide in 1994 essentially ended it. Hair metal was dead. Alternative rock owned the mainstream. Seattle went from scrappy music town to genuine cultural capital overnight. Most of the original venues are gone now, bulldozed for condos. But for a few years, Seattle owned the sound of young American angst.',
           sources: [
             {
               title: 'Rolling Stone: The History of Grunge',
@@ -272,8 +272,8 @@ export const seattle: CityData = {
           id: 'curiosity-12',
           type: 'curiosity',
           category: 'culture',
-          title: 'A Lenin statue salvaged from communist Slovakia stands in Fremont',
-          body: 'A 16-foot bronze statue of Vladimir Lenin, originally erected in Poprad, Czechoslovakia, now stands in Seattle\'s Fremont neighborhood. After the fall of communism, the statue was destined for the smelter. An American teacher named Lewis Carpenter found it face-down in a Slovakian junkyard, mortgaged his house to buy it, and shipped it to Issaquah, Washington.\n\nCarpenter died before finding a permanent home for the statue, and his family put it up for sale. It landed in Fremont in 1995, where it\'s been decorated, vandalized, and debated ever since. Locals regularly dress Lenin in drag, paint his hands blood-red, and adorn him with Christmas lights.\n\nThe statue remains for sale for $250,000, but no buyer has emerged. Critics argue it glorifies a dictator; supporters call it art salvaged from history. Fremont, characteristically, refuses to resolve the argument. Lenin stays.',
+          title: 'A 7-ton Lenin statue from Slovakia stands in Fremont (and nobody can agree why)',
+          body: 'A massive bronze statue of Vladimir Lenin — 16 feet tall, 7 tons, originally erected in communist Czechoslovakia — now stands on a street corner in Seattle\'s Fremont neighborhood. After the fall of communism, it was headed for the smelter. An American teacher named Lewis Carpenter found it face-down in a Slovakian scrapyard, mortgaged his house for $13,000 to buy it, and shipped 7 tons of Soviet art to Washington.\n\nCarpenter died before selling it. His family put it on the market. A Fremont arts group installed it as a "temporary" installation in 1995. That was 30 years ago.\n\nLocals dress Lenin in drag during Pride. They paint his hands blood-red for May Day. He gets a Santa hat at Christmas. The statue is still technically for sale ($250,000, no takers). Some people think it glorifies a mass murderer. Others call it reclaimed Cold War art. Fremont\'s official position: who cares, it looks cool.\n\nNext to the Lenin statue is a Soviet submarine and a troll crushing a VW Bug. This is the most Fremont possible outcome.',
           sources: [
             {
               title: 'Atlas Obscura: Fremont Lenin Statue',
@@ -284,6 +284,48 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/curiosities/lenin01.png', alt: 'Lenin statue in Fremont' },
             { src: '/seattle/curiosities/lenin02.png', alt: 'Soviet Lenin statue Seattle' },
+          ],
+        },
+        {
+          id: 'curiosity-13',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Bruce Lee is buried in Seattle next to his son Brandon',
+          body: 'Bruce Lee — the martial arts legend who revolutionized action cinema — is buried in Lake View Cemetery on Seattle\'s Capitol Hill, next to his son Brandon, who died filming "The Crow" in 1993. Both graves are constantly covered in flowers, coins, and tributes from visitors around the world.\n\nLee was born in San Francisco but grew up in Hong Kong. He moved to Seattle at 18 to finish high school and attend the University of Washington, where he studied philosophy and opened his first martial arts school. He taught kung fu in Capitol Hill before moving to California to pursue Hollywood.\n\nAfter his death in 1973 at age 32 (under circumstances still debated), his family chose Seattle as his final resting place. The grave site became a pilgrimage destination — one of the most visited celebrity graves in the world. Lake View Cemetery provides maps to find it.\n\nSeattle claims Bruce Lee more than any other city, even though he spent most of his adult life elsewhere. He learned to teach here. Fell in love here. Planted roots. That apparently counts.',
+          sources: [
+            {
+              title: 'Lake View Cemetery: Bruce Lee',
+              url: 'https://lakeviewseattle.com/bruce-lee/',
+            },
+            {
+              title: 'Seattle Globalist: Bruce Lee\'s Grave',
+              url: 'https://seattleglobalist.com/2015/04/10/bruce-lee-grave-seattle-landmark-global-attraction/34662',
+            }
+          ],
+          location: { name: 'Lake View Cemetery, Capitol Hill', url: 'https://www.google.com/maps/place/Bruce+Lee+Grave+Site/@47.6301,-122.3219,17z', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/bruce-lee-grave.png', alt: 'Bruce Lee grave site in Seattle' },
+          ],
+        },
+        {
+          id: 'curiosity-14',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Jimi Hendrix grew up in Seattle\'s Central District before conquering the world',
+          body: 'Jimi Hendrix — arguably the greatest guitarist who ever lived — was born and raised in Seattle. He spent the first 18 years of his life in the Central District, playing guitar in his bedroom, sitting in with local R&B bands, and learning to make a Stratocaster sound like the voice of God.\n\nHe left Seattle in 1961 to join the Army (where he met his future bassist, Billy Cox), then spent years as a sideman for Little Richard and the Isley Brothers. He didn\'t become "Jimi Hendrix" until 1966 in London. Three years later he played Woodstock. A year after that, he was dead at 27.\n\nHendrix is buried at Greenwood Memorial Park in Renton (just south of Seattle) beneath a massive granite dome supported by three columns. His grave sees thousands of visitors annually. Flowers, guitar picks, and handwritten notes pile up constantly.\n\nSeattle has complicated feelings about Hendrix — the city largely ignored him until after he was famous and dead. But it claims him now. A bronze statue stands in Capitol Hill. MoPOP (Museum of Pop Culture) has an entire Hendrix wing. The city that didn\'t know what to do with him in life has turned him into a tourist attraction in death.',
+          sources: [
+            {
+              title: 'Jimi Hendrix Memorial',
+              url: 'https://www.jimihendrixmemorial.com/',
+            },
+            {
+              title: 'Seattle Times: Jimi Hendrix Memorial',
+              url: 'https://www.seattletimes.com/pacific-nw-magazine/the-jimi-hendrix-memorial-in-renton-honors-a-musical-giant-in-grand-style/',
+            }
+          ],
+          location: { name: 'Central District (statue in Capitol Hill, grave in Renton)', stillExists: true },
+          images: [
+            { src: '/seattle/curiosities/hendrix-memorial.png', alt: 'Jimi Hendrix memorial in Renton' },
           ],
         }
       ],
@@ -938,8 +980,8 @@ export const seattle: CityData = {
           featuredOrder: 1,
           category: 'crime',
           year: '1983',
-          title: 'The Wah Mee Massacre: Seattle\'s Deadliest Mass Murder',
-          body: 'On February 19, 1983, three armed men entered the Wah Mee gambling club in Seattle\'s International District and systematically shot 14 people execution-style. Thirteen died immediately or soon after. Only one victim, Wai Chin, survived by playing dead despite being shot in the face and neck.\n\nThe Wah Mee was an illegal but tolerated gambling den that had operated for decades in the basement of the Louisa Hotel. The killers — Benjamin Ng, Kwan Fai "Willie" Mak, and Tony Ng — were former members of the Hong Kong-based Sun Yee On triad who had been losing money gambling. They targeted the club on a night when they knew the take would be substantial.\n\nWai Chin\'s survival was crucial. Despite his injuries, he identified the killers. All three were arrested within days. Willie Mak and Benjamin Ng received death sentences (later commuted to life without parole). Tony Ng received a life sentence.\n\nThe Wah Mee massacre remains the deadliest mass murder in Seattle history and one of the deadliest in Washington state. The club never reopened. The building still stands, its basement sealed.',
+          title: 'The Wah Mee Massacre killed 13 people in a basement gambling club',
+          body: 'On the night of February 19, 1983, three men entered the Wah Mee gambling club in the basement of the Louisa Hotel in Seattle\'s Chinatown-International District. Over the next hour, they bound, robbed, and systematically executed 14 people — shooting each in the head at point-blank range. Thirteen died. One survived.\n\nThe Wah Mee was an illegal but tolerated gambling den that had operated for decades. The killers — Benjamin Ng (age 20), Kwan Fai "Willie" Mak (22), and Tony Ng (25, no relation) — were former members of a Hong Kong triad who\'d been losing money at the tables. They picked a busy night when they knew the club would be flush with cash.\n\nWai Chin, 62, a Navy veteran and dealer, survived by playing dead despite being shot in the face and neck. His testimony identified all three killers. Within days, all were arrested. Willie Mak and Benjamin Ng got death sentences (later commuted to life). Tony Ng got life with a chance of parole — he served 28 years before being deported to Hong Kong in 2014.\n\nIt remains Washington state\'s deadliest mass murder. The club never reopened. The basement is sealed. A memorial plaque marks the site.',
           verdict: 'Solved. All three perpetrators convicted and imprisoned for life. The Wah Mee building is now residential; a memorial plaque marks the site.',
           location: {
             name: 'Louisa Hotel, 669 S King St (Chinatown-International District)',
@@ -1000,8 +1042,8 @@ export const seattle: CityData = {
           featuredOrder: 3,
           category: 'crime',
           year: '1974-1978',
-          title: 'Ted Bundy Began His Killing Spree in Seattle',
-          body: 'Before Ted Bundy became America\'s most notorious serial killer, he was a University of Washington psychology student, a crisis hotline volunteer, and a rising star in Washington Republican politics. He was also murdering women across the Pacific Northwest.\n\nBundy\'s first confirmed kills occurred in Seattle in 1974. Lynda Ann Healy, a UW student, vanished from her basement apartment near campus on January 31. Her bedsheets were bloodstained; her nightgown was left behind. Donna Gail Manson disappeared from Evergreen State College in March. Bundy would kill at least four more women in Washington before moving his hunting ground to Utah, Colorado, and eventually Florida.\n\nWhat made Bundy especially terrifying was his normalcy. He was handsome, articulate, and charming. He worked at a suicide hotline where he sat beside Ann Rule, who would later write "The Stranger Beside Me" about their relationship. He was active in local politics. Nobody suspected him.\n\nBundy was eventually captured, escaped twice, and killed three more women in Florida before his final arrest in 1978. He confessed to 30 murders but hinted at more. He was executed in Florida\'s electric chair in 1989. Seattle was where it started.',
+          title: 'Ted Bundy started killing in Seattle while volunteering at a suicide hotline',
+          body: 'Before Ted Bundy became America\'s most infamous serial killer, he was a University of Washington psychology student, a Republican Party volunteer, and a crisis hotline counselor. He sat beside Ann Rule — the true crime writer who would later document their friendship in "The Stranger Beside Me" — taking calls from people in distress. He was charming, articulate, and handsome. Nobody suspected he was killing women.\n\nBundy\'s first confirmed murder was in Seattle in 1974. On January 31, Lynda Ann Healy, a 21-year-old UW student, vanished from her basement apartment near campus. Police found her bed soaked with blood and her nightgown stuffed in the closet. She was never seen alive again. Over the next several months, at least five more young women disappeared from Seattle and the surrounding area.\n\nWhat made Bundy terrifying wasn\'t just the murders — it was how normal he seemed. Good-looking, well-spoken, educated, politically connected. The kind of guy you\'d trust. That was the point.\n\nHe eventually killed at least 30 women across seven states (the real number is likely higher). He was caught, escaped twice, killed more women in Florida, and was finally executed in 1989. But it started in Seattle, with young women who vanished from the U-District and never came home.',
           verdict: 'Solved. Ted Bundy was executed on January 24, 1989, having confessed to 30 murders. The true number is unknown.',
           location: {
             name: 'University District, Seattle',
@@ -1358,8 +1400,8 @@ export const seattle: CityData = {
           name: 'The Dog House',
           neighborhood: 'Belltown',
           yearsOpen: '1934-1994',
-          description: 'Seattle\'s original 24-hour greasy spoon, where fishermen, drunks, artists, and insomniacs gathered for cheap eggs and coffee at 4 a.m. The neon sign became a Belltown landmark.',
-          whyMissed: 'The Dog House was where Seattle went when everywhere else was closed. For 60 years, it served working-class breakfast to night-shift workers, post-bar revelers, and anyone who needed a warm booth and endless coffee. The waitresses were legendary — tough, fast, and impossibly kind to regulars. When it closed in 1994 to make way for a condo development, the neon sign was salvaged and preserved. But the 24-hour refuge, the $2 breakfast specials, and the particular 3 a.m. magic of the place — that\'s gone forever.',
+          description: 'Seattle\'s legendary 24-hour greasy spoon. For 60 years, the Dog House was where fishermen, barflies, artists, and insomniacs went when nowhere else was open. Cheap eggs, endless coffee, and the neon sign that defined Belltown.',
+          whyMissed: 'The Dog House didn\'t close — it was open 24 hours a day for 60 years straight. Night-shift workers. Post-bar drunks. Insomniacs nursing heartbreak over scrambled eggs at 4 a.m. The waitresses were legendary — gruff, lightning-fast, impossibly kind to regulars, and they never forgot your order.\n\nWhen it finally shuttered in 1994 for a condo development, they saved the neon sign but lost everything else. The $2 breakfast specials. The booth where you could sit as long as you needed. The particular 3 a.m. alchemy of strangers eating eggs together in silence. That kind of place doesn\'t exist anymore. Seattle got expensive and lost its all-night soul.',
           communityVoice: '"I spent countless late nights at the Dog House. It was the last honest place in a changing city." — Seattle native',
           lastAddress: '2230 7th Ave, Seattle',
           images: [
@@ -1392,8 +1434,8 @@ export const seattle: CityData = {
           name: 'The Off Ramp',
           neighborhood: 'Eastlake',
           yearsOpen: '1988-2003',
-          description: 'The dive venue where grunge was born. Nirvana, Pearl Jam, Soundgarden, and Alice in Chains all played the tiny stage before they were famous.',
-          whyMissed: 'The Off Ramp was the sweaty, smoke-filled room where Seattle\'s music scene incubated. For $5, you could see bands that would sell out stadiums within a year. The sound was terrible. The bathrooms were worse. But the energy was unmatchable. When it closed in 2003, an era ended. The building that replaced it has no memory of the thousands of shows, the broken drumsticks, or the moment Kurt Cobain first stepped on that stage.',
+          description: 'The dive bar where grunge was born. Nirvana, Pearl Jam, Soundgarden, Alice in Chains — they all played this tiny stage when nobody knew their names. Five-dollar cover. Terrible sound. Perfect energy.',
+          whyMissed: 'The Off Ramp was a cramped, sweaty, smoke-choked dive with terrible acoustics and bathrooms that violated health codes. It was also the most important music venue in Seattle history.\n\nFor $5, you could see Nirvana before "Smells Like Teen Spirit." Pearl Jam before they had a record deal. Soundgarden before anyone outside Seattle had heard of them. The stage was tiny. The floor was sticky. The sound system was garbage. None of that mattered. The energy was everything.\n\nWhen it closed in 2003, they bulldozed it for condos. The people who live there now have no idea they\'re sleeping where Kurt Cobain played his first Seattle shows. That stage was sacred ground. Now it\'s somebody\'s kitchen.',
           communityVoice: '"Every important band in Seattle history played the Off Ramp. That stage was sacred ground." — Seattle musician',
           lastAddress: '109 Eastlake Ave E, Seattle',
           images: [

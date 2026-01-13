@@ -101,7 +101,7 @@ export const salt_lake_city: CityData = {
             type: 'curiosity',
             category: 'law',
             title: 'Grocery store beer was capped at 3.2% until 2019',
-            body: 'For decades, Utah law restricted beer sold outside state-run liquor stores to 3.2% alcohol by weight—essentially beer-flavored water. National breweries created special "Utah formulations" of their products. The law finally changed in November 2019, but quirks remain: no wine at grocery stores, bars still pour behind "Zion curtains," and the private club system makes no sense to anyone, including Utahns. Progress is incremental in the Beehive State.',
+            body: 'For decades, Utah law forced breweries to choose: water down your beer to 3.2% alcohol or skip the state entirely. Major brands created embarrassing "Utah formulations" of their products—essentially beer-flavored water you could buy at grocery stores. The law finally changed in November 2019, but quirks remain: no wine at grocery stores, bars still pour behind "Zion curtains," and the private club system makes no sense to anyone, including Utahns. Progress is incremental in the Beehive State.',
             year: '2019',
             image: {
               src: '/salt-lake-city/curiosities/beer.png',

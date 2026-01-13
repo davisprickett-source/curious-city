@@ -203,7 +203,7 @@ export const chicago: CityData = {
             type: 'curiosity',
             category: 'science',
             title: 'The first nuclear reaction happened under a squash court',
-            body: 'On December 2, 1942, beneath the stands of Stagg Field at the University of Chicago, Enrico Fermi and his team achieved the first controlled nuclear chain reaction. The experiment lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under a football stadium while students attended classes above. Today a Henry Moore sculpture marks the spot where the Atomic Age began with spectacularly poor risk assessment.',
+            body: 'December 2, 1942. Beneath a football stadium, Enrico Fermi split an atom. The reaction lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under Stagg Field while students attended classes above. The Atomic Age began with spectacularly poor risk assessment. Today a Henry Moore sculpture marks the spot where it happened.',
             images: [
               {
                 src: '/chicago/curiosities/reactor-1.png',
@@ -230,7 +230,7 @@ export const chicago: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'The city was raised 14 feet while people kept shopping',
-            body: 'In the 1850s, Chicago sat on a swamp with sewage pooling in the streets. Rather than relocate like reasonable people, engineers jacked up entire city blocks—buildings, sidewalks, and all—as much as 14 feet. The Briggs House hotel was raised while guests continued dining inside, oblivious to the fact that their building was literally levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
+            body: 'Chicago was built on a swamp. Literally. Sewage pooled in the streets. Instead of moving like normal cities, engineers lifted the entire downtown—14 feet up—buildings, sidewalks, everything. The Briggs House hotel rose mid-dinner service while oblivious guests kept eating, unaware their building was levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
             images: [
               {
                 src: '/chicago/curiosities/raising-1.png',

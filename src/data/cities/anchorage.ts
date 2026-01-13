@@ -108,7 +108,7 @@ export const anchorage: CityData = {
             type: 'curiosity',
             category: 'history',
             title: 'The CIA trained Alaskan civilians to become Soviet-occupied guerrillas',
-            body: 'Operation Washtub didn\'t just plant nuclear-powered listening devices across remote Alaska during the Cold War—it recruited ordinary civilians as "sleeper agents" trained to stay behind after Soviet invasion. These Alaskans were taught sabotage, intelligence gathering, and survival tactics for operating in occupied territory. The program ran 1951-1959. The government didn\'t declassify it for decades, probably because the whole thing sounds completely insane.',
+            body: 'Operation Washtub didn\'t just plant nuclear-powered listening devices across remote Alaska during the Cold War—it trained ordinary Alaskans to become ghosts. If the Soviets invaded, they\'d stay behind to sabotage, spy, and survive in occupied territory. The CIA recruited "sleeper agents" and taught them how to operate in enemy-controlled Alaska. The program ran 1951-1959. The government didn\'t declassify it for decades, probably because the whole thing sounds completely insane.',
             year: '1951',
             images: [
               {

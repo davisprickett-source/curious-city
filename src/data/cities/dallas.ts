@@ -90,20 +90,20 @@ export const dallas: CityData = {
             title: 'The integrated circuit — the foundation of all modern technology — was invented here',
             images: [
               {
-                src: '/dallas/curiosities/circuit-1.png',
-                alt: 'Jack Kilby\'s integrated circuit at Texas Instruments',
+                src: '/dallas/curiosities/circuit-kilby-smithsonian.jpg',
+                alt: 'Jack Kilby\'s original 1958 integrated circuit, phase-shift oscillator',
               },
               {
-                src: '/dallas/curiosities/circuit-2.png',
-                alt: 'Early integrated circuit prototype',
+                src: '/dallas/curiosities/circuit-kilby-original.jpg',
+                alt: 'Kilby\'s germanium solid-circuit oscillator from September 1958',
               },
               {
-                src: '/dallas/curiosities/circuit-3.png',
-                alt: 'Texas Instruments integrated circuit development',
+                src: '/dallas/curiosities/circuit-bullock-museum.jpg',
+                alt: 'First integrated circuit prototype, 7/16" × 1/16", on display at Texas State History Museum',
               },
             ],
-            body: 'The integrated circuit, the foundation of all modern computing, was created in Dallas by Texas Instruments engineer Jack Kilby in 1958. This invention made computers, smartphones, and virtually every piece of modern electronics possible. Kilby won the Nobel Prize in 2000 for it. Every time you use any electronic device — this phone, that laptop, your car, the plane overhead — you\'re using Dallas technology. The entire digital age was born in a North Dallas lab.',
-            source: 'Texas Instruments / Nobel Prize Archives',
+            body: 'On September 12, 1958, Texas Instruments engineer Jack Kilby demonstrated the first integrated circuit — a phase-shift oscillator carved from a piece of germanium measuring just 7/16" by 1/16". This invention made computers, smartphones, and virtually every piece of modern electronics possible. Only six prototypes exist today, scattered across museums worldwide. Kilby won the Nobel Prize in Physics in 2000 for this work. Every time you use any electronic device — this phone, that laptop, your car, the plane overhead — you\'re using Dallas technology. The entire digital age was born in a TI lab on a summer day in 1958.',
+            source: 'Smithsonian National Museum of American History / Texas State History Museum',
             location: { name: 'Texas Instruments Lab', stillExists: true },
           },
           {
@@ -181,7 +181,7 @@ export const dallas: CityData = {
                 alt: 'Historic view of Elm and Houston corner',
               },
             ],
-            body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. A building completed there in November 1898 was struck by lightning and burned to the ground in May 1901. It was rebuilt by fall 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
+            body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. In 1898, the Southern Rock Island Plow Company built a five-story structure on the site. On May 4, 1901, it was struck by lightning and burned to the ground. A seven-story building was rebuilt on the same foundation in 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
             source: 'Dallas Historical Society',
             location: { name: 'Dealey Plaza', stillExists: true },
           },
