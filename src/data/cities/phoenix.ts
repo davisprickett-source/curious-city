@@ -219,15 +219,15 @@ export const phoenix: CityData = {
             body: 'Atop a red sandstone butte in Papago Park sits a natural opening—a weathered hole eroded through the rock over thousands of years. The Hohokam people recognized its astronomical significance centuries ago. On both the summer and winter solstices, sunrise light streams through the opening in precise alignment, creating dramatic patterns of light and shadow on the rock face. Archaeologists believe the Hohokam used this site for ceremonial observations, marking the turning points of the year for agricultural planning. The alignment is too precise to be coincidental. Modern Phoenix has built a popular hiking trail to the summit—it\'s one of the most photographed spots in the city, especially at sunrise on December 21 and June 21 when photographers gather to capture the solstice light show. The Hole in the Rock is a reminder that Phoenix\'s Indigenous astronomers were here long before the city, watching the same sun rise over the same desert, tracking time in stone.',
             images: [
               {
-                src: 'https://www.phoenix.gov/parks/images/hole-in-rock-papago-park.jpg',
+                src: '/phoenix/curiosities/rock-hole-1.png',
                 alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening',
               },
               {
-                src: '',
+                src: '/phoenix/curiosities/rock-hole-2.png',
                 alt: 'Sunrise light streaming through Hole in the Rock during winter solstice',
               },
               {
-                src: '',
+                src: '/phoenix/curiosities/rock-hole-3.png',
                 alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock',
               },
             ],
@@ -341,6 +341,10 @@ export const phoenix: CityData = {
             category: 'science',
             title: 'The pavement will give you third-degree burns in seconds',
             body: 'Asphalt and concrete absorb heat all day and radiate it at night, creating an "urban heat island" effect that makes Phoenix even hotter than surrounding desert. Ground surfaces can exceed 170°F—hot enough to cause third-degree burns in seconds. Phoenix is experimenting with reflective "cool pavement" coatings to reduce temperatures. Early results show it works in theory but feels hotter to pedestrians because it reflects heat upward.',
+            image: {
+              src: '/phoenix/curiosities/pavement-heat.png',
+              alt: 'Phoenix pavement showing extreme heat damage and temperature readings',
+            },
             source: 'Arizona State University Urban Climate Research Center',
             location: {
               name: 'Phoenix',
@@ -354,7 +358,7 @@ export const phoenix: CityData = {
             title: 'There\'s a Cold War bunker hidden under Papago Park',
             body: 'Built in 1956, a nuclear bunker sits cut into the red sandstone hills of Papago Park, 20 feet underground with foot-thick concrete walls. It\'s now Maricopa County Emergency Management headquarters. The bunker still contains original Cold War artifacts: gas masks, WWII cots, emergency water supplies. You can see the entrance from hiking trails, but it remains an active government facility—not open to the public. Just another piece of Phoenix\'s strange history hiding in plain sight.',
             image: {
-              src: '',
+              src: '/phoenix/curiosities/cold-war-bunker.png',
               alt: 'Cold War era bunker entrance in desert hillside',
             },
             sources: [
