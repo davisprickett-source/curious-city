@@ -141,6 +141,21 @@ const FRAME_COUNTS: Record<string, number> = {
   'denver-14': 78,
   'denver-15': 120,
   'denver-16': 78,
+  // Fargo sequences
+  'fargo-1': 78,
+  'fargo-2': 78,
+  'fargo-3': 78,
+  'fargo-4': 78,
+  'fargo-5': 78,
+  'fargo-6': 78,
+  'fargo-7': 66,
+  'fargo-8': 78,
+  'fargo-9': 78,
+  'fargo-10': 78,
+  'fargo-11': 54,
+  'fargo-12': 78,
+  'fargo-13': 78,
+  'fargo-14': 78,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {

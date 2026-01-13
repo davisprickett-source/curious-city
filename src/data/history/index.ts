@@ -16,6 +16,7 @@ import { seattle_history } from './seattle'
 
 // Premium history essays
 import { minneapolis_premium_history } from './premium/minneapolis'
+import { fargo_premium_history } from './premium/fargo'
 import { tampa_premium_history } from './premium/tampa'
 import { phoenix_premium_history } from './premium/phoenix'
 import { raleigh_premium_history } from './premium/raleigh'
@@ -44,7 +45,7 @@ export { seattle_history }
 // Combined history index (includes both regular and premium)
 export const history: HistoryIndex = {
   'minneapolis': { ...minneapolis_premium_history, ...minneapolis_history },
-  'fargo': fargo_history,
+  'fargo': { ...fargo_history, ...fargo_premium_history },
   'raleigh': { ...raleigh_history, ...raleigh_premium_history },
   'chicago': { ...chicago_history, ...chicago_premium_history },
   'salt-lake-city': { ...salt_lake_city_history, ...salt_lake_city_premium_history },
