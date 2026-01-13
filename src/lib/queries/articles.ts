@@ -22,7 +22,25 @@ export async function getArticlesForCity(
 
   // Get history essays converted to articles
   const historyArticles = await getHistoryArticlesForCity(citySlug)
-  articles.push(...historyArticles)
+
+  // Filter out text-only versions if a scrollytelling version exists
+  // Text-only versions don't have -premium suffix, scrollytelling versions do
+  const filteredHistoryArticles = historyArticles.filter(article => {
+    // Keep articles that end with -premium (scrollytelling versions)
+    if (article.slug.endsWith('-premium')) {
+      return true
+    }
+
+    // For articles without -premium, check if a -premium version exists
+    const premiumVersionExists = historyArticles.some(a =>
+      a.slug === `${article.slug}-premium`
+    )
+
+    // Only keep text-only version if no premium version exists
+    return !premiumVersionExists
+  })
+
+  articles.push(...filteredHistoryArticles)
 
   // Try loading native articles from city's articles directory
   try {
@@ -36,8 +54,8 @@ export async function getArticlesForCity(
   // Apply filters
   articles = applyFilters(articles, options)
 
-  // Apply sorting
-  articles = applySorting(articles, options)
+  // Sort scrollytelling articles first, then by publish date
+  articles = sortWithScrollytellingFirst(articles, options)
 
   // Apply pagination
   const start = options?.offset || 0
@@ -274,6 +292,30 @@ function applySorting(
     if (aValue > bValue) return sortOrder === 'asc' ? 1 : -1
     return 0
   })
+}
+
+/**
+ * Helper: Sort articles with scrollytelling versions first
+ * Scrollytelling articles (ending in -premium) appear first, then regular articles by date
+ */
+function sortWithScrollytellingFirst(
+  articles: Article[],
+  options?: ArticleQueryOptions
+): Article[] {
+  // Separate scrollytelling and regular articles
+  const scrollytellingArticles = articles.filter(a => a.slug.endsWith('-premium'))
+  const regularArticles = articles.filter(a => !a.slug.endsWith('-premium'))
+
+  // Sort each group by publish date (most recent first)
+  const sortedScrollytelling = applySorting(scrollytellingArticles, {
+    ...options,
+    sortBy: 'publishedAt',
+    sortOrder: 'desc',
+  })
+  const sortedRegular = applySorting(regularArticles, options)
+
+  // Combine with scrollytelling first
+  return [...sortedScrollytelling, ...sortedRegular]
 }
 
 /**
