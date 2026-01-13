@@ -1636,6 +1636,8 @@ export const dallas: CityData = {
         id: 'dal-lost-loved',
         type: 'section',
         title: 'Lost Dallas',
+        teaser: 'The Grape, Lee Harvey\'s, Lakewood Theater, and the soul Dallas demolished for parking',
+        intro: 'Dallas tears down faster than it builds memory. In a city that worships the new, the old is disposable—unless you were there when it mattered. These were the restaurants where first dates turned into anniversaries, the bars where Oak Cliff found its voice, and the theaters that made neighborhoods feel permanent. The skyline keeps climbing. The stories keep disappearing.',
         items: [
           {
             id: 'dal-lost-1',

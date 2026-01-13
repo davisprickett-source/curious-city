@@ -1956,7 +1956,7 @@ export const phoenix: CityData = {
         id: 'phx-lost-loved',
         type: 'section',
         title: 'Lost Phoenix',
-        teaser: 'The legendary bars, diners, and theaters swallowed by sprawl and heat',
+        teaser: 'Pink Pony, Sing High, Carly\'s Bistro, and the places Phoenix bulldozed for parking lots',
         intro: 'Phoenix sprawls fast and forgets faster. In a city always building outward, the old gets bulldozed for the new with ruthless efficiency. These were the air-conditioned oases, neon-lit diners, and dive bars that gave Phoenix its character before the chains moved in. Some fell to developers. Some to the heat. All are missed.',
         items: [
           {
