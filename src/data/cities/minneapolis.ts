@@ -891,21 +891,25 @@ export const minneapolis: CityData = {
             id: 'curiosity-9',
             type: 'curiosity',
             category: 'invention',
-            title: 'Every Three Musketeers bar contains "Minneapolis Nougat"',
-            body: 'Mars — the candy empire behind Milky Way, Snickers, and M&Ms — was founded in Minneapolis in 1920. The light, fluffy white confection inside every Three Musketeers bar was originally called "Minneapolis Nougat." The company eventually moved operations to New Jersey, but the recipe never changed. Every Three Musketeers bar you\'ve ever eaten contains a piece of Minneapolis history, even if the wrapper doesn\'t mention it.',
+            title: 'The Milky Way bar was invented here using "Minneapolis Nougat"',
+            body: 'Mars — the candy empire behind Milky Way, Snickers, and M&Ms — was founded by Frank Mars in Minneapolis in 1920. The breakthrough came from a local innovation: the Minneapolis-based Pendergast Candy Company had developed a revolutionary new nougat recipe using egg whites to create a fluffy texture, unlike the chewy nougat the world had previously known. This became famous nationwide as "Minneapolis Nougat" or "Minnesota Nougat."\n\nFrank Mars used this Minneapolis nougat to create the Milky Way bar in 1923, advertised as "a chocolate malted milk in a candy bar." It became the best-selling candy bar in America. Later, in 1932, Mars introduced the 3 Musketeers bar, originally with three flavors (chocolate, strawberry, and vanilla—hence the name from Alexandre Dumas\' novel). Wartime sugar restrictions eliminated the vanilla and strawberry, leaving only chocolate. But both bars trace their roots to Minneapolis and that revolutionary fluffy nougat invented here.',
             sources: [
+              {
+                title: 'FOX 9: How Frank Mars started a candy bar empire in Minnesota',
+                url: 'https://www.fox9.com/news/the-milky-way-how-frank-mars-a-minnesotan-created-a-candy-bar-empire',
+              },
               {
                 title: 'Mars, Inc. company history',
                 url: 'https://www.mars.com/about/history',
               },
               {
-                title: 'Minnesota Historical Society',
-                url: 'https://www.mnhs.org/',
+                title: '3 Musketeers history',
+                url: 'https://en.wikipedia.org/wiki/3_Musketeers_(chocolate_bar)',
               }
             ],
             image: {
-              src: '/minneapolis/curiosities/3 musketeers.png',
-              alt: 'Three Musketeers candy bar with Minneapolis Nougat',
+              src: '/minneapolis/curiosities/3-musketeers.png',
+              alt: 'Milky Way and 3 Musketeers bars - both made with Minneapolis Nougat',
             },
           },
           {
@@ -968,10 +972,20 @@ export const minneapolis: CityData = {
               }
             ],
             location: { name: 'Southdale Center, Edina', url: 'https://www.google.com/maps/place/Southdale+Center/@44.8810,-93.3228,15z', stillExists: true },
-            image: {
-              src: '/minneapolis/curiosities/southdale.png',
-              alt: 'Southdale Center in 1956 - world\'s first enclosed shopping mall',
-            },
+            images: [
+              {
+                src: '/minneapolis/curiosities/indoor-mall-1.png',
+                alt: 'Southdale Center interior in 1956 - world\'s first enclosed shopping mall',
+              },
+              {
+                src: '/minneapolis/curiosities/indoor-mall-2.png',
+                alt: 'Southdale Center central court with garden features',
+              },
+              {
+                src: '/minneapolis/curiosities/indoor-mall-3.png',
+                alt: 'Southdale Center historic interior view',
+              }
+            ],
           },
           {
             id: 'curiosity-12',
@@ -1065,10 +1079,20 @@ export const minneapolis: CityData = {
               }
             ],
             location: { name: 'Minneapolis City Hall', url: 'https://www.google.com/maps/place/Minneapolis+City+Hall/@44.9770,-93.2650,17z', stillExists: true },
-            image: {
-              src: '/minneapolis/curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
-              alt: 'Minneapolis City Hall with its iconic clock tower',
-            },
+            images: [
+              {
+                src: '/minneapolis/curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
+                alt: 'Minneapolis City Hall with its iconic clock tower',
+              },
+              {
+                src: '/minneapolis/curiosities/father-of-waters-1.png',
+                alt: 'Father of Waters statue - 30-ton marble sculpture in City Hall rotunda',
+              },
+              {
+                src: '/minneapolis/curiosities/father-of-waters-2.png',
+                alt: 'Father of Waters statue detail showing craftsmanship',
+              }
+            ],
           },
           {
             id: 'curiosity-16',
@@ -2861,6 +2885,10 @@ export const minneapolis: CityData = {
               },
             ],
             images: [
+              {
+                src: '/minneapolis/dark-history/klein-brothers-family.png',
+                alt: 'Klein Brothers family photo - Kenneth Jr., David, and Danny',
+              }
             ],
           },
           {
@@ -2970,6 +2998,14 @@ export const minneapolis: CityData = {
               },
             ],
             images: [
+              {
+                src: '/minneapolis/dark-history/cindy-gerdes-1.png',
+                alt: 'Cindy Gerdes cold case investigation',
+              },
+              {
+                src: '/minneapolis/dark-history/cindy-gerdes-2.png',
+                alt: 'Cindy Gerdes memorial',
+              }
             ],
           },
           {
@@ -3015,6 +3051,22 @@ export const minneapolis: CityData = {
               }
             ],
             images: [
+              {
+                src: '/minneapolis/dark-history/bridge-1.png',
+                alt: 'I-35W bridge collapse scene - August 1, 2007',
+              },
+              {
+                src: '/minneapolis/dark-history/bridge-2.png',
+                alt: 'I-35W bridge collapse rescue operations',
+              },
+              {
+                src: '/minneapolis/dark-history/bridge-3.png',
+                alt: 'I-35W bridge wreckage in Mississippi River',
+              },
+              {
+                src: '/minneapolis/dark-history/bridge-4.png',
+                alt: 'I-35W bridge collapse aerial view',
+              }
             ],
           },
           {
@@ -3063,6 +3115,69 @@ export const minneapolis: CityData = {
               }
             ],
             images: [
+              {
+                src: '/minneapolis/dark-history/floyd-1.png',
+                alt: 'George Floyd Square memorial with steel fist sculpture',
+              },
+              {
+                src: '/minneapolis/dark-history/floyd-2.png',
+                alt: 'George Floyd Square murals and memorials',
+              },
+              {
+                src: '/minneapolis/dark-history/floyd-3.png',
+                alt: 'George Floyd Square community gathering',
+              },
+              {
+                src: '/minneapolis/dark-history/floyd-4.png',
+                alt: '38th and Chicago - the intersection that changed America',
+              }
+            ],
+          },
+          {
+            id: 'mpls-dark-7',
+            type: 'dark-history',
+            category: 'unsolved',
+            year: '1987',
+            title: 'Three Black Women Murdered in Two Weeks. Police Said the Cases Weren\'t Connected.',
+            body: 'Between November 20 and December 4, 1987, three Black women were found murdered in Twin Cities suburbs. All were in their twenties or thirties. All had been bound. All appeared to have been killed elsewhere before their bodies were dumped. The Minneapolis Urban League urged authorities to investigate possible connections. Police insisted the cases were unrelated. None of the murders have been solved.\n\nTahrita McKinnies, 20, was found frozen in a Brooklyn Park field on November 20, shot in the head. She was seven months pregnant. Her mother, St. Deoloris "Dee" McKinnies, was the first Black woman sworn in as a Minneapolis police officer. Two weeks later, on December 2, Armongene Mason, 40, was discovered on the shoulder of Anoka County Road 23 in Columbus Township—nearly 30 miles from her Minneapolis home. A nursing assistant who had overcome severe epilepsy to build a stable life, Mason had been stabbed, strangled, and bound with ligature marks on her wrists and ankles before being dumped naked on the roadside.\n\nTwo days after that, on December 4, Felicia Fonda Williams, 26, was found near the shores of Wirth Lake in Golden Valley. She had been strangled and was wrapped in white bed sheets. McKinnies and Williams had met each other the previous year, though they weren\'t known to be close friends. According to Urban League president Gleason Glover, "All the victims were Black women about the same age and all were bound in some way." The similarities were undeniable. The police response was not what the families wanted to hear.\n\nDespite the clustering—three Black women, two weeks, all bound, all dumped in suburban locations—Minneapolis and suburban police departments maintained the murders were not connected. A suspect was arrested in Williams\' case but was quickly released. McKinnies\' mother, a police officer herself, watched investigators fail to find answers. Mason\'s case went cold within months. Nearly 40 years later, the Anoka County Sheriff\'s Office Cold Case Unit still seeks tips on Mason\'s murder. No arrests have ever been made in any of the three cases.\n\nThe families are still waiting. The questions remain: Were the cases actually unrelated, or did the system fail to connect dots it should have seen? Three women. Two weeks. Zero convictions.',
+            verdict: 'All three cases remain unsolved. No arrests, no convictions, no answers. Anoka County Cold Case Unit still seeking tips: ACSOColdCases@anokacountymn.gov',
+            location: {
+              name: 'Brooklyn Park, Columbus Township, Golden Valley',
+              stillExists: true,
+              coordinates: { lat: 45.0594, lng: -93.3563 },
+            },
+            sources: [
+              {
+                type: 'article',
+                title: 'She Was Found on the Side of a Suburban Road, Murdered. Then Her Case Went Cold.',
+                publisher: 'Brainerd Dispatch',
+                year: '2024',
+                url: 'https://www.brainerddispatch.com/news/the-vault/she-was-found-on-the-side-of-a-suburban-road-murdered-then-her-case-went-cold',
+              },
+              {
+                type: 'article',
+                title: 'Armongene Mason Cold Case',
+                publisher: 'Anoka County Sheriff\'s Office',
+                url: 'https://www.anokacountymn.gov/1614/Cold-Case-Homicides',
+              },
+              {
+                type: 'database',
+                title: 'Minnesota Unsolved Cases Database',
+                publisher: 'Minnesota Department of Public Safety',
+                url: 'https://portal.dps.mn.gov/bca/unsolved-cases/Pages/gallery.aspx',
+              },
+              {
+                type: 'article',
+                title: 'Three Black Women Found Dead in Two Weeks',
+                publisher: 'Star Tribune Archives',
+                year: '1987',
+              }
+            ],
+            images: [
+              {
+                src: '/minneapolis/dark-history/three-victims.png',
+                alt: 'Tahrita McKinnies, Armongene Mason, and Felicia Fonda Williams - three victims, 1987',
+              }
             ],
           }
         ],
