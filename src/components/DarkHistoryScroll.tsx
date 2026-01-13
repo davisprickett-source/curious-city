@@ -569,10 +569,10 @@ export function DarkHistoryScroll({ items, cityName: _cityName }: DarkHistoryScr
 
   return (
     <div className="relative">
-      {/* Fixed Progress Bar - darker theme */}
+      {/* Fixed Progress Bar - rust/accent color */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-neutral-900/10 z-50">
         <motion.div
-          className="h-full bg-neutral-900"
+          className="h-full bg-accent-600"
           style={{ width: `${scrollProgress}%` }}
           transition={{ duration: 0.1 }}
         />

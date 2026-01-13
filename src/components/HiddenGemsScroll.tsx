@@ -376,30 +376,88 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
 }
 
 export default function HiddenGemsScroll({ gems, cityName: _cityName }: HiddenGemsScrollProps) {
-  const [currentSection, setCurrentSection] = useState(0)
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [activeSection, setActiveSection] = useState(0)
+
+  // Track scroll progress
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight
+      const scrollTop = window.scrollY
+      const progress = (scrollTop / (documentHeight - windowHeight)) * 100
+      setScrollProgress(Math.min(progress, 100))
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Handle section navigation
+  const scrollToSection = (index: number) => {
+    const sections = document.querySelectorAll('[data-hidden-gem-section]')
+    if (sections[index]) {
+      sections[index].scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }
+
+  const handleSectionInView = (index: number) => {
+    setActiveSection(index)
+  }
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Scroll Progress Indicator */}
-      <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-neutral-100">
+    <div className="relative">
+      {/* Fixed Progress Bar - rust/accent color */}
+      <div className="fixed top-0 left-0 right-0 h-1 bg-neutral-100 z-50">
         <motion.div
-          className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-          style={{
-            width: `${((currentSection + 1) / gems.length) * 100}%`,
-          }}
-          transition={{ duration: 0.3 }}
+          className="h-full bg-accent-600"
+          style={{ width: `${scrollProgress}%` }}
+          transition={{ duration: 0.1 }}
         />
       </div>
 
-      {/* Content */}
-      <div className="relative">
+      {/* Navigation Dots - Fixed on right side */}
+      <div className="hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-3">
+        {gems.map((gem, index) => {
+          const isActive = activeSection === index
+          const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
+
+          return (
+            <button
+              key={gem.id}
+              onClick={() => scrollToSection(index)}
+              className="group relative"
+              aria-label={`Jump to hidden gem ${index + 1}: ${gem.name}`}
+            >
+              <div
+                className={`w-3 h-3 rounded-full transition-all duration-300 ease-out ${
+                  isActive
+                    ? `${categoryStyles.bg} ${categoryStyles.accent} border-2 scale-125 shadow-lg`
+                    : 'bg-neutral-400 border border-neutral-500 group-hover:bg-neutral-600 group-hover:scale-150 group-hover:shadow-md'
+                }`}
+              />
+              {/* Tooltip - wider, max 2 lines */}
+              <div className="absolute right-7 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
+                <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-lg shadow-2xl w-[320px] whitespace-normal">
+                  <span className="font-medium">{index + 1}.</span>{' '}
+                  <span className="line-clamp-2">{gem.name}</span>
+                </div>
+              </div>
+            </button>
+          )
+        })}
+      </div>
+
+      {/* Hidden Gems Sections */}
+      <div>
         {gems.map((gem, index) => (
-          <HiddenGemSection
-            key={gem.id}
-            gem={gem}
-            index={index}
-            onSectionInView={setCurrentSection}
-          />
+          <div key={gem.id} data-hidden-gem-section>
+            <HiddenGemSection
+              gem={gem}
+              index={index}
+              onSectionInView={handleSectionInView}
+            />
+          </div>
         ))}
       </div>
     </div>
