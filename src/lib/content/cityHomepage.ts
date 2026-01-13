@@ -177,7 +177,8 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
       if (videoBlock && videoBlock.type === 'video-sequence') {
         const sequenceMatch = videoBlock.videoPath.match(/\/sequences\/([^\/]+)\/([^\/]+)$/)
         if (sequenceMatch) {
-          thumbnail = `/sequences/${sequenceMatch[1]}/${sequenceMatch[2]}/frame_0001.jpg`
+          // Try webp first (newer format), then jpg (legacy)
+          thumbnail = `/sequences/${sequenceMatch[1]}/${sequenceMatch[2]}/frame_0001.webp`
         }
       }
     }
@@ -193,7 +194,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
       title: targetEssay.title,
       teaser: targetEssay.subtitle || `A deep dive into ${city.name}'s fascinating past`,
       image: thumbnail ? { src: thumbnail, alt: targetEssay.title } : undefined,
-      href: `/${city.slug}/articles/${essay.slug}`,
+      href: `/${city.slug}/articles/${targetEssay.slug}`,
       featuredOrder: 0, // Articles always first
     })
   }
@@ -442,7 +443,8 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
       if (videoBlock && videoBlock.type === 'video-sequence') {
         const sequenceMatch = videoBlock.videoPath.match(/\/sequences\/([^\/]+)\/([^\/]+)$/)
         if (sequenceMatch) {
-          thumbnail = `/sequences/${sequenceMatch[1]}/${sequenceMatch[2]}/frame_0001.jpg`
+          // Try webp first (newer format), then jpg (legacy)
+          thumbnail = `/sequences/${sequenceMatch[1]}/${sequenceMatch[2]}/frame_0001.webp`
         }
       }
     }
@@ -451,12 +453,12 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
     }
 
     historyArticles.push({
-      slug: essay.slug,
+      slug: targetEssay.slug,
       citySlug: city.slug,
       title: targetEssay.title,
       teaser: targetEssay.subtitle || `A deep dive into ${city.name}'s fascinating past`,
       thumbnail,
-      href: `/${city.slug}/articles/${essay.slug}`,
+      href: `/${city.slug}/articles/${targetEssay.slug}`,
       publishedAt: targetEssay.publishedAt,
       source: 'history',
     })
