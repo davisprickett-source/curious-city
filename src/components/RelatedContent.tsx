@@ -88,7 +88,7 @@ export async function RelatedContent({
           const isMatch =
             (contentType === 'curiosities' && entry.type === 'curiosity') ||
             (contentType === 'dark-history' && entry.type === 'dark-history') ||
-            (contentType === 'lost-and-loved' && entry.type === 'lost-loved')
+            (contentType === 'lost-and-loved' && entry.type === 'lost-and-loved')
           return isMatch && !usedIds.has(entry.id)
         })
 
@@ -112,7 +112,7 @@ export async function RelatedContent({
         const isDifferent =
           (contentType === 'curiosities' && entry.type !== 'curiosity') ||
           (contentType === 'dark-history' && entry.type !== 'dark-history') ||
-          (contentType === 'lost-and-loved' && entry.type !== 'lost-loved')
+          (contentType === 'lost-and-loved' && entry.type !== 'lost-and-loved')
         return isDifferent && !usedIds.has(entry.id)
       })
 
