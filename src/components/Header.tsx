@@ -26,13 +26,13 @@ export function Header({ cityName }: HeaderProps) {
           >
             {/* Mobile: Small logo */}
             <img
-              src="/logos/CCs.png"
+              src="/logos/ccs.png"
               alt="Curious City"
               className="h-7 w-auto sm:hidden"
             />
             {/* Desktop: Full logo */}
             <img
-              src="/logos/CCs.png"
+              src="/logos/ccs.png"
               alt="Curious City"
               className="hidden sm:block h-8 w-auto"
             />

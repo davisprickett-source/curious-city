@@ -105,7 +105,7 @@ export function UnifiedNav({
             className="flex items-center font-semibold text-neutral-900 hover:text-accent-600 transition-colors tracking-tight"
           >
             <img
-              src="/logos/CCs.png"
+              src="/logos/ccs.png"
               alt="Curious City"
               className="h-8 w-auto"
             />
@@ -159,7 +159,7 @@ export function UnifiedNav({
             className="flex items-center font-semibold text-neutral-900 tracking-tight"
           >
             <img
-              src="/logos/CCs.png"
+              src="/logos/ccs.png"
               alt="Curious City"
               className="h-8 w-auto"
             />

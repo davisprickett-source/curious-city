@@ -34,7 +34,7 @@ export function Footer() {
           <div className="md:col-span-5 lg:col-span-4">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
               <Image
-                src="/logos/CCs.png"
+                src="/logos/ccs.png"
                 alt="Curious City"
                 width={28}
                 height={28}

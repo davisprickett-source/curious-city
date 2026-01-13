@@ -6,7 +6,7 @@ export const tampa: CityData = {
     tagline: 'Cigars, lightning, and perpetual reinvention',
     heroVideo: {
       sequencePath: 'tampa/tampa-1',
-      fallbackImage: '/banners/Tampa-Banner.png',
+      fallbackImage: '/banners/tampa-banner.png',
     },
     content: [
       {

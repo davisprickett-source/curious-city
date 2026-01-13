@@ -384,7 +384,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
           <div className="flex items-center justify-between h-14">
             <Link href="/" className="flex items-center font-semibold text-neutral-900 tracking-tight">
               <img
-                src="/logos/CCs.png"
+                src="/logos/ccs.png"
                 alt="Curious City"
                 className="h-8 w-auto"
               />
