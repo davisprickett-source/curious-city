@@ -289,6 +289,18 @@ export const fargo: CityData = {
             body: 'In 1893, a massive fire destroyed 31 blocks of downtown Fargo. The city rebuilt, but the disaster created a psychological divide between "Old Fargo" in the north and "New Fargo" in the south. The railroad tracks became an unofficial border. For years, tensions simmered. It wasn\'t until the early 1900s that the two halves fully integrated into one city again.',
             source: 'Fargo-Moorhead CVB',
           },
+          {
+            id: 'far-curiosity-16',
+            type: 'curiosity',
+            category: 'history',
+            title: 'North Dakota banned booze in 1889—so everyone just crossed the bridge to Moorhead',
+            body: 'When North Dakota adopted a constitution outlawing liquor in 1889, Moorhead\'s mayor—who happened to be a brewer—declared: "Let the saloons come. The more the better." Free taxis called "jag wagons" shuttled Fargo residents across the Red River to drink at the House of Lords, the Rathskeller, and the Three Orphans Saloon. One in 10 Moorhead families made their living from the liquor business. The party lasted until 1915 when Clay County voted to go dry—8,000 people attended a final street party with fireworks. Then national Prohibition hit in 1920, and speakeasies popped up in both cities. By 1927, three blocks in Moorhead had 14 blind pigs—researchers mapped them using arrest records. Most buildings still stand.',
+            source: 'MinnPost',
+            location: {
+              name: 'First Avenue North, Moorhead',
+              stillExists: true,
+            },
+          },
         ],
       },
       {
@@ -402,19 +414,6 @@ export const fargo: CityData = {
             tip: 'Call ahead for appointment — this isn\'t listed on campus maps.',
           },
           {
-            id: 'gem-moorhead-speakeasies',
-            type: 'hidden-gem',
-            name: 'Former Moorhead Speakeasy District',
-            category: 'Prohibition History',
-            description:
-              'In 1927, three blocks in Moorhead had 14 speakeasies in a three-block radius — "almost as many places where you could illegally buy alcohol as seven blocks of downtown Fargo do today." Researchers mapped them using arrest records. Most buildings still stand. Rustica Eatery operates in the oldest surviving "blind pig."',
-            address: 'Three blocks surrounding 1st Ave N, Moorhead, MN',
-            coordinates: { lat: 46.8740, lng: -96.7670 },
-            hours: 'Walk the historic blocks anytime',
-            price: 'Free',
-            tip: 'Rustica Eatery is in the oldest surviving speakeasy — most diners don\'t know.',
-          },
-          {
             id: 'gem-den-of-antiquity',
             type: 'hidden-gem',
             name: 'Den of Antiquity',
@@ -440,26 +439,6 @@ export const fargo: CityData = {
             hours: 'Daily (Brewhalla hours)',
             price: 'Items vary',
             tip: 'Look for the smallest storefront inside Brewhalla — it\'s literally tiny.',
-          },
-          {
-            id: 'gem-roger-maris',
-            type: 'hidden-gem',
-            name: 'Roger Maris Museum',
-            category: 'Sports Museum',
-            description:
-              'Free museum inside West Acres Mall dedicated to Fargo\'s baseball legend who broke Babe Ruth\'s home run record. Contains letters and memorabilia showing "someone who never got the credit he deserved." Most shoppers walk right past it.',
-            images: [
-              {
-                src: '/fargo/hidden-gems/roger-maris.jpg',
-                alt: 'Roger Maris in his Yankees uniform, 1960',
-                credit: 'Wikimedia Commons / Public Domain',
-              },
-            ],
-            address: 'West Acres Mall, Fargo, ND',
-            coordinates: { lat: 46.8456, lng: -96.8600 },
-            hours: 'Mall hours',
-            price: 'Free',
-            tip: 'Inside a shopping mall — most visitors never notice it exists.',
           },
           {
             id: 'gem-rourke-museum',
