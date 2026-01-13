@@ -2227,7 +2227,7 @@ export const raleigh: CityData = {
               },
               {
                 type: 'article',
-                title: 'Grace\'s Staircase: Raleigh\'s Most Haunted Stairs',
+                title: 'Grace\'s Staircase: The Most Haunted Stairs in Town',
                 publisher: 'Tobacco Road Tours',
                 url: 'https://tobaccoroadtours.com/briggs-hardware-haunted/',
               },

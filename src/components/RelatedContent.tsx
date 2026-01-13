@@ -74,8 +74,60 @@ export async function RelatedContent({
           usedIds.add(entry.id)
         }
       }
+    } else if (contentType === 'lost-and-loved') {
+      // Special logic for lost-and-loved: show varied interesting content, not just other cities' lost-and-loved
+      // Mix of dark history, curiosities, and articles from various cities
+
+      // 1. Get 2 interesting entries from OTHER cities (varied types - dark history, curiosities, articles)
+      const otherCities = shuffle(CITY_METADATA.filter(c => c.slug !== citySlug))
+      let otherCityCount = 0
+
+      for (const otherCity of otherCities) {
+        if (otherCityCount >= 2) break
+
+        const otherCityEntries = await getCityFeaturedEntries(otherCity.slug)
+        // Prioritize dark-history and curiosities (more interesting than more lost-and-loved)
+        const interestingEntry = shuffle(
+          otherCityEntries.filter(entry =>
+            (entry.type === 'dark-history' || entry.type === 'curiosity') &&
+            !usedIds.has(entry.id)
+          )
+        )[0]
+
+        if (interestingEntry) {
+          relatedItems.push({
+            id: interestingEntry.id,
+            title: interestingEntry.title,
+            teaser: interestingEntry.teaser,
+            image: interestingEntry.image?.src,
+            href: interestingEntry.href,
+            cityName: otherCity.name,
+          })
+          usedIds.add(interestingEntry.id)
+          otherCityCount++
+        }
+      }
+
+      // 2. Get 2 varied entries from SAME city (anything except lost-and-loved)
+      const sameCityEntries = await getCityFeaturedEntries(citySlug)
+      const variedEntries = shuffle(
+        sameCityEntries.filter((entry) =>
+          entry.type !== 'lost-and-loved' && !usedIds.has(entry.id)
+        )
+      )
+
+      for (const entry of variedEntries.slice(0, 2)) {
+        relatedItems.push({
+          id: entry.id,
+          title: entry.title,
+          teaser: entry.teaser,
+          image: entry.image?.src,
+          href: entry.href,
+        })
+        usedIds.add(entry.id)
+      }
     } else {
-      // Original logic for curiosities, dark-history, lost-and-loved
+      // Original logic for curiosities and dark-history
       // 1. Get 2 same-type pages from OTHER cities
       const otherCities = shuffle(CITY_METADATA.filter(c => c.slug !== citySlug))
       let sameTypeCount = 0
@@ -87,8 +139,7 @@ export async function RelatedContent({
         const matchingType = otherCityEntries.find((entry) => {
           const isMatch =
             (contentType === 'curiosities' && entry.type === 'curiosity') ||
-            (contentType === 'dark-history' && entry.type === 'dark-history') ||
-            (contentType === 'lost-and-loved' && entry.type === 'lost-and-loved')
+            (contentType === 'dark-history' && entry.type === 'dark-history')
           return isMatch && !usedIds.has(entry.id)
         })
 
@@ -111,8 +162,7 @@ export async function RelatedContent({
       const differentTypeEntries = sameCityEntries.filter((entry) => {
         const isDifferent =
           (contentType === 'curiosities' && entry.type !== 'curiosity') ||
-          (contentType === 'dark-history' && entry.type !== 'dark-history') ||
-          (contentType === 'lost-and-loved' && entry.type !== 'lost-and-loved')
+          (contentType === 'dark-history' && entry.type !== 'dark-history')
         return isDifferent && !usedIds.has(entry.id)
       })
 

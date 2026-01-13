@@ -11,24 +11,6 @@ interface LandingHeroSectionProps {
   autoPlayInterval?: number
 }
 
-// Type labels for display
-const typeLabels: Record<string, string> = {
-  'dark-history': 'Dark History',
-  'curiosities': 'Curiosity',
-  'hidden-gems': 'Hidden Gem',
-  'lost-loved': 'Lost & Loved',
-  'article': 'Article',
-}
-
-// Type badge colors
-const typeColors: Record<string, string> = {
-  'dark-history': 'bg-red-500',
-  'curiosities': 'bg-amber-500',
-  'hidden-gems': 'bg-emerald-500',
-  'lost-loved': 'bg-orange-500',
-  'article': 'bg-blue-500',
-}
-
 /**
  * Landing page hero section
  * - Intro slide with branding rotates with featured content
@@ -150,16 +132,15 @@ export function LandingHeroSection({
                 transition={{ duration: 0.4 }}
               >
                 <Link href={currentSlide.href} className="group block">
-                  {/* Type indicator */}
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`w-2 h-2 rounded-full ${typeColors[currentSlide.pageType] || 'bg-neutral-500'}`} />
-                    <span className="text-xs uppercase tracking-wider text-white/70">
-                      {currentSlide.cityName} · {typeLabels[currentSlide.pageType] || currentSlide.pageType}
+                  {/* City name - large and prominent */}
+                  <div className="mb-2">
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-accent-600 uppercase tracking-tight">
+                      {currentSlide.cityName}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
                     {currentSlide.title}
                   </h2>
 

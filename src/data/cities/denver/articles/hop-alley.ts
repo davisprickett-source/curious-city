@@ -4,7 +4,7 @@ export const hopAlley: Article = {
   slug: 'hop-alley',
   citySlug: 'denver',
   title: 'The Halloween Massacre Denver Forgot',
-  subtitle: 'On October 31, 1880, a white mob of 3,000 destroyed Denver\'s Chinatown in a single night. One man was lynched. The community was erased. For over a century, the city\'s only marker called it a "riot." The Chinese started it, the plaque implied. They didn\'t.',
+  subtitle: 'On October 31, 1880, a white mob of 3,000 destroyed the city\'s Chinatown in a single night. One man was lynched. The community was erased. For over a century, the only marker called it a "riot." The Chinese started it, the plaque implied. They didn\'t.',
   excerpt: 'Denver\'s Chinatown was thriving in 1880 — laundries, restaurants, over 400 residents in a neighborhood called Hop Alley. Then, on Halloween night, a bar fight escalated into a race riot. A mob of 3,000 white men destroyed every Chinese business, beat residents in the streets, and lynched a man named Look Young. The Chinese consul demanded reparations. The federal government refused. The killers were acquitted. For 142 years, Denver\'s only marker blamed the victims. It wasn\'t corrected until 2022.',
   author: {
     name: 'The Curious City',

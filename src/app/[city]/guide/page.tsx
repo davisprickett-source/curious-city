@@ -1,7 +1,8 @@
-import { getCity, getAllCitySlugs } from '@/data/cities'
+import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
@@ -30,24 +31,45 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const city = await getCity(slug)
   if (!city) notFound()
 
+  // Fetch representative establishments for each category
+  const barsList = await getCityBestOf(slug, 'bars')
+  const restaurantsList = await getCityBestOf(slug, 'restaurants')
+  const coffeeList = await getCityBestOf(slug, 'coffee-shops')
+
+  // Get first spot with image from each category
+  const getFirstSpotWithImage = (lists: any[]) => {
+    for (const list of lists) {
+      const spot = list.spots?.find((s: any) => s.images && s.images.length > 0)
+      if (spot) return spot
+    }
+    return null
+  }
+
+  const barSpot = getFirstSpotWithImage(barsList)
+  const restaurantSpot = getFirstSpotWithImage(restaurantsList)
+  const coffeeSpot = getFirstSpotWithImage(coffeeList)
+
   // Only establishment categories - listicles (hidden gems, local favorites, lost & loved) are in Discover
   const guideCategories = [
     {
       title: 'Best Bars',
       description: 'Cocktail lounges, dive bars, and neighborhood favorites',
       href: `/${slug}/bars`,
+      image: barSpot?.images?.[0],
       gradient: 'from-indigo-600 to-indigo-900',
     },
     {
       title: 'Best Restaurants',
       description: 'From fine dining to neighborhood spots, the city\'s culinary highlights',
       href: `/${slug}/restaurants`,
+      image: restaurantSpot?.images?.[0],
       gradient: 'from-amber-600 to-amber-900',
     },
     {
       title: 'Best Coffee Shops',
       description: 'Local roasters, cozy cafes, and third wave coffee',
       href: `/${slug}/coffee-shops`,
+      image: coffeeSpot?.images?.[0],
       gradient: 'from-stone-600 to-stone-900',
     },
   ]
@@ -87,8 +109,23 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
               >
                 <div className="md:flex">
-                  {/* Gradient Side */}
-                  <div className={`md:w-2/5 h-64 md:h-full bg-gradient-to-br ${category.gradient}`} />
+                  {/* Image or Gradient Side */}
+                  <div className="md:w-2/5 h-64 md:h-full relative">
+                    {category.image ? (
+                      <>
+                        <Image
+                          src={category.image.src}
+                          alt={category.image.alt}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 40vw"
+                        />
+                        <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-40 group-hover:opacity-30 transition-opacity`} />
+                      </>
+                    ) : (
+                      <div className={`w-full h-full bg-gradient-to-br ${category.gradient}`} />
+                    )}
+                  </div>
 
                   {/* Content */}
                   <div className="md:w-3/5 p-8 flex flex-col justify-center">
