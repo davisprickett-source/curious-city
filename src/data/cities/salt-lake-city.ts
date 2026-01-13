@@ -2082,8 +2082,8 @@ export const salt_lake_city: CityData = {
       {
         id: 'slc-lost-loved',
         type: 'section',
-        title: 'Lost & Loved',
-        teaser: 'The places Salt Lake still mourns',
+        title: 'Lost Salt Lake City',
+        teaser: 'Current Fish, The Zephyr Club, Training Table, and the places that made Salt Lake feel like home',
         intro: 'Salt Lake City has lost more than its share of beloved institutions—victims of lease disputes, family feuds, fires, and the relentless march of development. These are the places that still come up in conversation, the ones that make longtime residents sigh and say "remember when." Some burned. Some were demolished for condos. Some just couldn\'t survive the economics. All of them left holes that haven\'t quite been filled.',
         items: [
           {

@@ -3,7 +3,7 @@ import { getCity, getCityHiddenGems, getCityHiddenGemsSection } from '@/data/cit
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import HiddenGemsClient from './HiddenGemsClient'
+import HiddenGemsScroll from '@/components/HiddenGemsScroll'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -60,7 +60,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
           </div>
         </div>
 
-        <HiddenGemsClient gems={gems} cityName={city.name} />
+        <HiddenGemsScroll gems={gems} cityName={city.name} />
       </main>
 
       <Footer />
