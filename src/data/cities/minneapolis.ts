@@ -117,7 +117,8 @@ export const minneapolis: CityData = {
             category: 'food-drink',
             tags: ['food', 'family-friendly'],
             moreInfo: [
-              { title: 'Register', url: 'https://ingebretsens.com/classes', type: 'rsvp' }],
+              { title: 'Register', url: 'https://ingebretsens.com/classes', type: 'rsvp' },
+            ],
           },
           // Event 7: New opening this week
           {
@@ -432,7 +433,8 @@ export const minneapolis: CityData = {
             category: 'food-drink',
             tags: ['food', 'beer'],
             moreInfo: [
-              { title: 'Buy Tickets', url: 'https://sociablecider.com/events', type: 'tickets' }],
+              { title: 'Buy Tickets', url: 'https://sociablecider.com/events', type: 'tickets' },
+            ],
           },
           {
             title: 'Minneapolis Sculpture Garden: Ice Sculpture Walk',
@@ -612,7 +614,8 @@ export const minneapolis: CityData = {
             location: 'Wrecktangle Pizza, Northeast',
             category: 'food-drink',
             tags: ['food'],
-          }],
+          },
+        ],
       },
       {
         id: 'this-week',
@@ -1406,7 +1409,7 @@ export const minneapolis: CityData = {
           name: 'Nicollet Island\'s Hidden History',
           category: 'Urban History',
           description: 'Nicollet Island sits in the middle of the Mississippi River, connected by bridges to downtown. Most people walk across it without realizing its secrets: Three hidden cave systems sealed since the 1880s (Neapolitan Caves with iron-red swirls, Bloody Snake Passage with scarlet flowstones, and Satan\'s Cave with carved demonic figures). The island was sacred ground for the Dakota people and later home to Minneapolis\'s first wealthy neighborhoods. Today, a few Victorian houses remain, relocated from other parts of the city. The island has trails, river views, and ghost stories. Few tourists realize they\'re walking above sealed tunnels and forgotten history.',
-          
+          images: [],
           address: 'Nicollet Island, Minneapolis, MN 55401',
           coordinates: { lat: 44.9875, lng: -93.2628 },
           hours: 'Free and open 24/7',
@@ -1844,6 +1847,10 @@ export const minneapolis: CityData = {
               {
                 src: 'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzlw7MtJrM_glYCIXsn6xqO_JUs_dJ3RKlt8OkT8FqA4-S3uDJnws0uBXAGL9KYnVZm5MtzQd4DI8wp8T72NunhduKKU1Dr6B_-5p_lWtGj-ggGP1_oFF8jdgovDdsGnP1TtetUAA=w3427-h1887-k-no',
                 alt: 'Prohibition bar panoramic interior with skyline views',
+              },
+              {
+                src: '',
+                alt: 'Minneapolis skyline view from Prohibition bar',
               }
             ],
             menuImage: {
@@ -2050,6 +2057,10 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9195, lng: -93.1947 },
             hours: '6:30am-6pm daily',
             price: '$$',
+            image: {
+              src: '',
+              alt: 'Spacious cafe with big windows and long tables',
+            },
           },
           {
             name: 'Five Watt Coffee',
@@ -2061,6 +2072,10 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9217, lng: -93.2785 },
             hours: '7am-5pm daily',
             price: '$$',
+            image: {
+              src: '',
+              alt: 'Third-wave specialty coffee with espresso bar',
+            },
           },
           {
             name: 'Misfit Coffee',
@@ -2072,6 +2087,10 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9927, lng: -93.2564 },
             hours: '7am-4pm daily',
             price: '$$',
+            image: {
+              src: '',
+              alt: 'Industrial coffee shop with natural light',
+            },
           },
           {
             name: 'Diamondback Coffee',
@@ -2083,6 +2102,10 @@ export const minneapolis: CityData = {
             coordinates: { lat: 44.9622, lng: -93.2366 },
             hours: '7am-3pm daily',
             price: '$',
+            image: {
+              src: '',
+              alt: 'Cozy neighborhood coffee shop with eclectic decor',
+            },
           }
         ],
       },
@@ -2166,7 +2189,7 @@ export const minneapolis: CityData = {
             price: '$$',
             website: 'https://matchboxcoffeeshop.com',
             instagram: '@matchboxcoffeempls',
-            
+            images: [],
             menuImage: {
               src: '/images/establishments/coffee-shops/minneapolis/menus/matchbox-coffee/menu.jpg',
               alt: 'Matchbox Coffee menu board with cold press and pastries',
@@ -2801,7 +2824,8 @@ export const minneapolis: CityData = {
                 publisher: 'Fox 9',
                 year: '2021',
                 url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
-              }],
+              },
+            ],
             images: [
               {
                 src: '/minneapolis/dark-history/adam%20johnson.png',
@@ -2858,7 +2882,8 @@ export const minneapolis: CityData = {
                 show: 'Minnesota Public Radio',
                 platform: 'MPR',
                 url: 'https://www.mprnews.org/podcast/long-lost',
-              }],
+              },
+            ],
             images: [
               {
                 src: '/minneapolis/dark-history/klein-brothers-family.png',
@@ -2921,7 +2946,8 @@ export const minneapolis: CityData = {
                 platform: 'CBS 48 Hours',
                 year: '2023',
                 url: 'https://www.cbsnews.com/news/jeanie-childs-jerry-westrom-minneapolis-cold-case-murder/',
-              }],
+              },
+            ],
             images: [
               {
                 src: '/minneapolis/dark-history/childs.png',
@@ -2969,7 +2995,8 @@ export const minneapolis: CityData = {
                 publisher: 'Star Tribune',
                 year: '2023',
                 url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/',
-              }],
+              },
+            ],
             images: [
               {
                 src: '/minneapolis/dark-history/cindy-gerdes-1.png',
@@ -3650,8 +3677,42 @@ export const minneapolis: CityData = {
           }
         ],
       },
-      
-          
+      {
+        id: 'mpls-scenes',
+        type: 'section',
+        title: 'Scenes from Minneapolis',
+        items: [
+          // CITYSCAPE - Downtown skyline and urban views
+          {
+            id: 'scene-skyline-1',
+            type: 'scene',
+            category: 'cityscape',
+            title: 'Minneapolis at Night',
+            description: 'The Minneapolis skyline transforms after dark. Downtown towers glow against the night sky, the 35W bridge lights up in blue, and the city reveals a different character — quieter, more contemplative, yet still electric.',
+            media: {
+              type: 'video',
+              src: '',
+              poster: '',
+              alt: 'Aerial drone footage of illuminated Minneapolis downtown at night',
+              caption: 'Minneapolis skyline after dark — drone footage',
+              duration: '0:14',
+            },
+          },
+          {
+            id: 'scene-skyline-2',
+            type: 'scene',
+            category: 'cityscape',
+            title: 'Stone Arch Bridge',
+            description: 'The only stone arch bridge ever built across the Mississippi. Completed in 1883 to carry trains over St. Anthony Falls, it now carries pedestrians and cyclists with one of the best views in the city.',
+            media: {
+              type: 'video',
+              src: '',
+              poster: '',
+              alt: 'Stone Arch Bridge spanning the Mississippi River in winter',
+              caption: 'Stone Arch Bridge — Minneapolis\'s most iconic landmark',
+              duration: '0:19',
+            },
+          },
           // WATER - Lakes and river scenes
           {
             id: 'scene-water-1',
@@ -3659,16 +3720,60 @@ export const minneapolis: CityData = {
             category: 'water',
             title: 'Chain of Lakes',
             description: 'Lake Harriet, Bde Maka Ska, Lake of the Isles, Cedar Lake, and Brownie Lake — connected by parkways and bike paths, these urban lakes define the Minneapolis experience. Sailing, paddleboarding, running, cycling, picnics at the bandshell, and ice skating in winter. This is where the city breathes.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis Chain of Lakes photo from Meet Minneapolis or local photographer
+                src: '',
+                alt: 'Peaceful lake water under blue skies with green trees along shore',
+                caption: 'The Chain of Lakes — Minneapolis\'s urban oasis',
+              }
+            ],
           },
-          
+          {
+            id: 'scene-water-2',
+            type: 'scene',
+            category: 'water',
+            title: 'St. Anthony Falls & Mill Ruins',
+            description: 'The only major waterfall on the Mississippi River. For the Dakota people, it was a sacred site called Owáhmenah — "falling water." For European settlers, it powered the flour mills that built Minneapolis. The ruins remain, haunting and beautiful.',
+            media: {
+              type: 'video',
+              src: '',
+              poster: '',
+              alt: 'Waterfall cascading over rocks with forest surroundings',
+              caption: 'St. Anthony Falls — the waterfall that powered Minneapolis',
+              duration: '0:11',
+            },
+          },
           // NATURE - Parks and green spaces
-          
+          {
+            id: 'scene-nature-1',
+            type: 'scene',
+            category: 'nature',
+            title: 'Minnehaha Falls',
+            description: 'A 53-foot waterfall in the heart of the city, immortalized by Longfellow in "The Song of Hiawatha." The gorge below offers trails through old-growth forest. In summer, water roars over limestone. In winter, it freezes into cathedral spires of ice.',
+            media: {
+              type: 'video',
+              src: '',
+              poster: '',
+              alt: 'Waterfall cascading through forest',
+              caption: 'Minnehaha Falls — a 53-foot waterfall in the city',
+              duration: '0:16',
+            },
+          },
           {
             id: 'scene-nature-2',
             type: 'scene',
             category: 'nature',
             title: 'Minneapolis Parkways',
             description: 'The Grand Rounds Scenic Byway — 50 miles of interconnected parkways, bike paths, and trails threading through the city. Theodore Wirth Park, Minnehaha Parkway, the Chain of Lakes, the Mississippi riverfront. This is why Minneapolis consistently ranks as one of America\'s best park cities.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis parkway photo
+                src: '',
+                alt: 'Tree-lined path through urban park with autumn colors',
+                caption: 'Fall along the Grand Rounds parkway system',
+              }
+            ],
           },
           // ARCHITECTURE - Historic buildings
           {
@@ -3677,6 +3782,14 @@ export const minneapolis: CityData = {
             category: 'architecture',
             title: 'Historic Minneapolis Architecture',
             description: 'Minneapolis City Hall\'s Romanesque Revival clock tower — the faces are larger than Big Ben\'s. The Foshay Tower\'s Art Deco tribute to the Washington Monument. The Mill City Museum rising from the Washburn A Mill ruins. A city that refuses to forget its history.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis City Hall or Foshay Tower photo
+                src: '',
+                alt: 'Historic architecture and modern skyline at dusk',
+                caption: 'Minneapolis architecture — where history meets modernity',
+              }
+            ],
           },
           {
             id: 'scene-arch-2',
@@ -3684,6 +3797,14 @@ export const minneapolis: CityData = {
             category: 'architecture',
             title: 'Mill District',
             description: 'The ruins of the flour mills that made Minneapolis the "Mill City." The Washburn A Mill explosion of 1878 killed 18 workers and changed milling safety forever. Now the Mill City Museum stands within the limestone walls, a monument to industry and tragedy.',
+            images: [
+              {
+                // TODO: Replace with authentic Mill City Museum photo from Meet Minneapolis
+                src: '',
+                alt: 'Historic industrial architecture preserved alongside modern development',
+                caption: 'The Mill District — built on flour and water power',
+              }
+            ],
           },
           // INTERIOR - Indoor spaces
           {
@@ -3692,6 +3813,14 @@ export const minneapolis: CityData = {
             category: 'interior',
             title: 'Minneapolis Central Library',
             description: 'César Pelli\'s 2006 masterpiece. Light pours through the five-story glass wing onto terraced reading areas. The green roof blooms with native wildflowers. This is what public architecture can be when a city gives a damn.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis Central Library photo
+                src: '',
+                alt: 'Modern glass architecture with dramatic interior lighting',
+                caption: 'Minneapolis Central Library — César Pelli\'s light-filled design',
+              }
+            ],
           },
           {
             id: 'scene-interior-2',
@@ -3699,6 +3828,14 @@ export const minneapolis: CityData = {
             category: 'interior',
             title: 'Historic Theaters',
             description: 'The Orpheum and State theatres on Hennepin Avenue — 1920s vaudeville palaces with ornate plasterwork, crystal chandeliers, and ghosts of performances past. The Orpheum hosted the Ziegfeld Follies. Both now welcome Broadway tours and the occasional rock show.',
+            images: [
+              {
+                // TODO: Replace with authentic Orpheum Theatre interior photo
+                src: '',
+                alt: 'Historic theater interior with ornate architectural details',
+                caption: 'Hennepin Avenue\'s grand theaters',
+              }
+            ],
           },
           // NEIGHBORHOOD - Street scenes
           {
@@ -3707,6 +3844,14 @@ export const minneapolis: CityData = {
             category: 'neighborhood',
             title: 'Northeast Arts District',
             description: 'Old Polish and Eastern European immigrant neighborhoods transformed. Warehouses became galleries. Corner bars became microbreweries. Every block has a mural. This is where Minneapolis keeps its weird — artists, brewers, musicians, and the dive bars that refuse to die.',
+            images: [
+              {
+                // TODO: Replace with authentic Northeast Minneapolis mural or street scene
+                src: '',
+                alt: 'Urban neighborhood with creative businesses and street art',
+                caption: 'Northeast Minneapolis — arts, murals, and microbreweries',
+              }
+            ],
           },
           {
             id: 'scene-neighborhood-2',
@@ -3714,6 +3859,14 @@ export const minneapolis: CityData = {
             category: 'neighborhood',
             title: 'Uptown',
             description: 'Lake Street meets Hennepin. Once the center of Minneapolis counterculture, now a mix of chains and holdouts. The Uptown Theatre marquee still glows. Calhoun Square still stands. The neighborhood that defined a generation is negotiating with the next one.',
+            images: [
+              {
+                // TODO: Replace with authentic Uptown Minneapolis street scene
+                src: '',
+                alt: 'Bustling urban intersection with shops and pedestrians',
+                caption: 'Uptown Minneapolis — Lake and Hennepin corner',
+              }
+            ],
           },
           // ART - Public art and murals
           {
@@ -3722,6 +3875,14 @@ export const minneapolis: CityData = {
             category: 'art',
             title: 'Minneapolis Sculpture Garden',
             description: 'Claes Oldenburg and Coosje van Bruggen\'s "Spoonbridge and Cherry" — a 52-foot-long spoon cradling a 1,200-pound cherry, fountain misting from the stem. The most photographed piece in the Walker Art Center\'s 11-acre sculpture garden. Playful, monumental, and somehow completely Minneapolis.',
+            images: [
+              {
+                // TODO: Replace with authentic Spoonbridge and Cherry photo from Meet Minneapolis
+                src: '',
+                alt: 'Public sculpture park with contemporary art installations',
+                caption: 'Minneapolis Sculpture Garden — 11 acres of contemporary art',
+              }
+            ],
           },
           {
             id: 'scene-art-2',
@@ -3729,6 +3890,14 @@ export const minneapolis: CityData = {
             category: 'art',
             title: 'George Floyd Square',
             description: 'The intersection of 38th and Chicago, where George Floyd was murdered by Minneapolis police on May 25, 2020. Now a memorial, a demand, a reckoning. Flowers, murals, raised fists painted on pavement. The city walks around it. The world can\'t look away from it.',
+            images: [
+              {
+                // TODO: Replace with authentic George Floyd Square memorial photo
+                src: '',
+                alt: 'Community memorial and gathering space',
+                caption: 'George Floyd Square — a living memorial at 38th and Chicago',
+              }
+            ],
           },
           // SEASONS - Seasonal views
           {
@@ -3737,6 +3906,14 @@ export const minneapolis: CityData = {
             category: 'seasons',
             title: 'Winter in Minneapolis',
             description: 'When the lakes freeze solid — sometimes two feet thick — Minneapolis doesn\'t hibernate. Ice fishing houses dot Lake of the Isles. Skiers glide through Theodore Wirth Park. The skyways fill with office workers avoiding the cold. This is the season that defines the city: brutal, beautiful, and unapologetic.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis winter scene - frozen lake or skyway
+                src: '',
+                alt: 'Frozen urban landscape with snow-covered trees and ice',
+                caption: 'Winter on the Chain of Lakes',
+              }
+            ],
           },
           {
             id: 'scene-seasons-2',
@@ -3744,6 +3921,14 @@ export const minneapolis: CityData = {
             category: 'seasons',
             title: 'Fall Color',
             description: 'October in Minneapolis: the maples along the Grand Rounds explode in gold and crimson. Minnehaha Parkway becomes a tunnel of color. The lakes reflect the trees, doubling the spectacle. It lasts maybe two weeks before the wind strips everything bare, but those two weeks make winter worth it.',
+            images: [
+              {
+                // TODO: Replace with authentic Minneapolis fall foliage photo - parkway or lakes
+                src: '',
+                alt: 'Autumn trees with vibrant fall colors along tree-lined path',
+                caption: 'Peak fall color along Minneapolis parkways',
+              }
+            ],
           },
           // NIGHT - After dark
           {
@@ -3752,6 +3937,14 @@ export const minneapolis: CityData = {
             category: 'night',
             title: 'First Avenue',
             description: 'The nightclub where Prince recorded "Purple Rain." The black exterior covered in silver stars — 400+ names of artists who\'ve played the Mainroom or 7th St Entry. Hüsker Dü, The Replacements, Atmosphere, Lizzo — Minneapolis music history written in silver paint. The marquee still glows. The dance floor still vibrates.',
+            images: [
+              {
+                // TODO: Replace with authentic First Avenue exterior night photo
+                src: '',
+                alt: 'Iconic nightclub exterior with marquee and city lights',
+                caption: 'First Avenue — where Prince recorded Purple Rain',
+              }
+            ],
           },
           {
             id: 'scene-night-2',
@@ -3759,6 +3952,14 @@ export const minneapolis: CityData = {
             category: 'night',
             title: 'Hennepin Avenue After Dark',
             description: 'The theater district transforms at night. Orpheum and State marquees glow with Broadway show titles. Bar neon reflects in puddles. Street musicians play for tips. Hennepin has been Minneapolis\'s entertainment spine since the vaudeville era, and it refuses to dim.',
+            images: [
+              {
+                // TODO: Replace with authentic Hennepin Avenue night scene photo
+                src: '',
+                alt: 'Urban street at night with theater marquees and city lights',
+                caption: 'Hennepin Avenue — Minneapolis\'s entertainment district',
+              }
+            ],
           },
           // FOOD - Restaurant and food scenes
           {
@@ -3767,6 +3968,14 @@ export const minneapolis: CityData = {
             category: 'food',
             title: 'Midtown Global Market',
             description: 'A 1928 Sears building on Lake Street, transformed into a food hall representing the world. Somali sambusas. Mexican tlayudas. Vietnamese bánh mì. Scandinavian lefse. Indigenous frybread. This is Minneapolis\'s immigrant story told through food — vibrant, essential, and underestimated.',
+            images: [
+              {
+                // TODO: Replace with authentic Midtown Global Market photo
+                src: '',
+                alt: 'Bustling food market with diverse vendors and communal seating',
+                caption: 'Midtown Global Market — the world under one roof',
+              }
+            ],
           },
           {
             id: 'scene-food-2',
@@ -3774,6 +3983,14 @@ export const minneapolis: CityData = {
             category: 'food',
             title: 'North Loop Dining',
             description: 'The Warehouse District\'s culinary renaissance. Bachelor Farmer, Spoon and Stable, The Butcher & the Boar — James Beard nominees serving New Nordic cuisine and elevated comfort food in converted industrial spaces. Exposed brick, open kitchens, craft cocktails. This is where Minneapolis proves it belongs in the national food conversation.',
+            images: [
+              {
+                // TODO: Replace with authentic North Loop restaurant photo
+                src: '',
+                alt: 'Modern restaurant interior with industrial design elements',
+                caption: 'North Loop restaurants — warehouse chic meets craft cuisine',
+              }
+            ],
           }
         ],
       }
