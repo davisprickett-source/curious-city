@@ -1971,6 +1971,10 @@ export const phoenix: CityData = {
             communityVoice: '"Charlie Briley ran the place from 1950 until his death in 2002 as a steakhouse, drinking hole and hangout for the Who\'s Who of baseball." — Salt River Stories',
             lastAddress: '3831 N Scottsdale Rd, Scottsdale',
             coordinates: { lat: 33.4940, lng: -111.9261 },
+                        image: {
+              src: '/phoenix/lost-loved/pink-pony.png',
+              alt: 'Pink Pony restaurant exterior with neon sign',
+            },
             source: 'Phoenix Magazine, Salt River Stories, MLB.com',
           },
           {
@@ -1985,6 +1989,16 @@ export const phoenix: CityData = {
             communityVoice: '"My purpose has always been to change erroneous perceptions that North Americans have of Mexican food and Mexican culture." — Chef Silvana Salcido Esparza',
             lastAddress: '2814 N 16th St, Phoenix',
             coordinates: { lat: 33.4757, lng: -112.0417 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/barrio-1.png',
+                alt: 'Barrio Cafe interior with vibrant Mexican decor',
+              },
+              {
+                src: '/phoenix/lost-loved/barrio-2.png',
+                alt: 'Barrio Cafe dishes and ambiance',
+              }
+            ],
             source: 'Phoenix New Times, ABC15, Phoenix Magazine',
           },
           {
@@ -1999,6 +2013,16 @@ export const phoenix: CityData = {
             communityVoice: '"BS West was an important part of a lot of people\'s lives. These spots were where you found companionship and rallied the community." — 12 News viewer',
             lastAddress: '7125 E 5th Ave, Scottsdale',
             coordinates: { lat: 33.4943, lng: -111.9242 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/bs-01.png',
+                alt: 'BS West exterior and entrance',
+              },
+              {
+                src: '/phoenix/lost-loved/bs-2.png',
+                alt: 'BS West interior and dance floor',
+              }
+            ],
             source: 'Phoenix New Times, 12 News, AZ Family',
           },
           {
@@ -2018,6 +2042,24 @@ export const phoenix: CityData = {
             communityVoice: '"The decision came after rising beef costs and other business costs became too much. A piece of Arizona history closed its doors." — Phoenix New Times',
             lastAddress: '100 S Mill Ave, Tempe',
             coordinates: { lat: 33.4255, lng: -111.9400 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/montis-1.png',
+                alt: 'Monti's La Casa Vieja historic building exterior',
+              },
+              {
+                src: '/phoenix/lost-loved/montis-2.png',
+                alt: 'Monti's dining room interior',
+              },
+              {
+                src: '/phoenix/lost-loved/montis-3.png',
+                alt: 'Monti's Roman bread and menu items',
+              },
+              {
+                src: '/phoenix/lost-loved/montis.png',
+                alt: 'Monti's La Casa Vieja full view',
+              }
+            ],
             source: 'Phoenix New Times, Salt River Stories, 12 News',
           },
           {
@@ -2032,6 +2074,16 @@ export const phoenix: CityData = {
             communityVoice: '"28 years, 10,000 nights, hundreds of thousands of Cosmos, Sophia Lorens and Goldfish later, we\'re saying goodbye." — Owner Rick Phillips',
             lastAddress: '2525 E Camelback Rd, Phoenix',
             coordinates: { lat: 33.5092, lng: -112.0210 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/mercbar-1.png',
+                alt: 'MercBar sleek interior and bar',
+              },
+              {
+                src: '/phoenix/lost-loved/mercbar-2.png',
+                alt: 'MercBar lounge area',
+              }
+            ],
             source: 'Phoenix New Times, KTAR',
           },
           {
@@ -2046,6 +2098,20 @@ export const phoenix: CityData = {
             communityVoice: '"The walls became covered with heartfelt messages from longtime customers. Everyone wanted to leave their mark." — ABC15',
             lastAddress: '27 W Madison St, Phoenix',
             coordinates: { lat: 33.4475, lng: -112.0754 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/sing-high-1.png',
+                alt: 'Sing High Chop Suey House exterior',
+              },
+              {
+                src: '/phoenix/lost-loved/sing-high-2.png',
+                alt: 'Sing High interior with customer messages on walls',
+              },
+              {
+                src: '/phoenix/lost-loved/sing-high-3.png',
+                alt: 'Sing High Cantonese dishes',
+              }
+            ],
             source: 'KJZZ, ABC15, AZ Family',
           },
           {
@@ -2065,6 +2131,10 @@ export const phoenix: CityData = {
             communityVoice: '"It was always our vision that the space be somewhere artists could show work, musicians could play, and people could gather and discuss creative ideas." — John Logan',
             lastAddress: '128 E Roosevelt St, Phoenix',
             coordinates: { lat: 33.4599, lng: -112.0710 },
+                        image: {
+              src: '/phoenix/lost-loved/carlys.png',
+              alt: 'Carly's Bistro on Roosevelt Row with local art',
+            },
             source: 'KJZZ, Phoenix New Times, KTAR',
           },
           {
@@ -2079,6 +2149,10 @@ export const phoenix: CityData = {
             communityVoice: '"At its peak, Mary Elaine\'s was mentioned in the same breath as the best restaurants in New York and San Francisco." — Phoenix New Times',
             lastAddress: '6000 E Camelback Rd, Scottsdale',
             coordinates: { lat: 33.5225, lng: -111.9419 },
+                        image: {
+              src: '/phoenix/lost-loved/mary-elaines.png',
+              alt: 'Mary Elaine's elegant dining room at The Phoenician',
+            },
             source: 'Phoenix New Times, Phoenix Magazine',
           },
           {
@@ -2093,6 +2167,16 @@ export const phoenix: CityData = {
             communityVoice: '"On its last day, you had to wait an hour and a half to be seated. Everybody was there—including people who wanted to take a final look." — Phoenix New Times',
             lastAddress: '3757 E Van Buren St, Phoenix',
             coordinates: { lat: 33.4515, lng: -112.0179 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/big-apple-1.png',
+                alt: 'Bill Johnson's Big Apple exterior with neon sign',
+              },
+              {
+                src: '/phoenix/lost-loved/big-apple-2.png',
+                alt: 'Bill Johnson's chuckwagon interior',
+              }
+            ],
             source: 'Phoenix New Times, KJZZ, Salt River Stories',
           },
           {
@@ -2112,6 +2196,20 @@ export const phoenix: CityData = {
             communityVoice: '"It was not unusual to see celebrity players from every sport dining there. Don & Charlie\'s was a Scottsdale landmark with a national reputation." — East Valley Tribune',
             lastAddress: '7501 E Camelback Rd, Scottsdale',
             coordinates: { lat: 33.5089, lng: -111.9269 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/don-charlies-1.png',
+                alt: 'Don & Charlie's exterior',
+              },
+              {
+                src: '/phoenix/lost-loved/don-charlies-2.png',
+                alt: 'Don & Charlie's baseball memorabilia collection',
+              },
+              {
+                src: '/phoenix/lost-loved/don-charlies-3.png',
+                alt: 'Don & Charlie's chophouse interior',
+              }
+            ],
             source: 'Phoenix New Times, Cronkite News, ABC15',
           },
           {
@@ -2126,6 +2224,10 @@ export const phoenix: CityData = {
             communityVoice: '"The land underneath the bar has been sold. Another Tempe bar lost to luxury apartments." — Phoenix New Times',
             lastAddress: '640 S Mill Ave, Tempe',
             coordinates: { lat: 33.4230, lng: -111.9401 },
+                        image: {
+              src: '/phoenix/lost-loved/devils.png',
+              alt: 'Devil's Advocate bar exterior on Mill Avenue',
+            },
             source: 'Phoenix New Times, AZ Family',
           },
           {
@@ -2140,6 +2242,16 @@ export const phoenix: CityData = {
             communityVoice: '"The Stetson Chopped Salad became so iconic that other restaurants still serve versions of it today." — Phoenix New Times',
             lastAddress: '7133 E Stetson Dr, Scottsdale',
             coordinates: { lat: 33.4941, lng: -111.9268 },
+                        images: [
+              {
+                src: '/phoenix/lost-loved/cowboy-cioa-1.png',
+                alt: 'Cowboy Ciao exterior in Old Town Scottsdale',
+              },
+              {
+                src: '/phoenix/lost-loved/cowboy-cioa-2.png',
+                alt: 'Cowboy Ciao Stetson Chopped Salad',
+              }
+            ],
             source: 'Phoenix New Times',
           },
           {
@@ -2154,6 +2266,10 @@ export const phoenix: CityData = {
             communityVoice: '"Beef Eaters represented a different era of Phoenix dining—formal, elegant, unhurried." — Phoenix New Times',
             lastAddress: '300 W Camelback Rd, Phoenix',
             coordinates: { lat: 33.5094, lng: -112.0779 },
+                        image: {
+              src: '/phoenix/lost-loved/beefeaters.png',
+              alt: 'Beef Eaters elegant British-style dining room',
+            },
             source: 'Phoenix New Times',
           },
         ],
@@ -2324,6 +2440,16 @@ export const phoenix: CityData = {
             whyMissed: 'The intimacy, the commitment to live music, and the knowledge that you could see tomorrow\'s headliners in a room that held 200 people. The Mason Jar proved Phoenix had taste.',
             communityVoice: '"The Mason Jar was where Phoenix\'s music scene lived." — Phoenix New Times',
             lastAddress: '2303 E Indian School Rd, Phoenix',
+            images: [
+              {
+                src: '/phoenix/lost-loved/mason-jar.png',
+                alt: 'The Mason Jar music venue exterior',
+              },
+              {
+                src: '/phoenix/lost-loved/mason-jar-2.png',
+                alt: 'The Mason Jar interior stage and crowd',
+              }
+            ],
             source: 'Arizona Republic, Phoenix New Times',
           },
           {
@@ -2355,6 +2481,10 @@ export const phoenix: CityData = {
             whyMissed: 'The intimacy, the staff recommendations, and the sense that Tempe valued books. The original Changing Hands was where ASU students discovered literature.',
             communityVoice: '"Changing Hands made Tempe feel intellectual." — Phoenix New Times',
             lastAddress: '414 S Mill Ave, Tempe',
+            image: {
+              src: '/phoenix/lost-loved/bookstore.png',
+              alt: 'Changing Hands Bookstore original Tempe location',
+            },
             source: 'Arizona Republic, Publisher\'s Weekly',
           },
           {
