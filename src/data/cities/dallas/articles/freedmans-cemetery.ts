@@ -12,9 +12,9 @@ export const freedmansCemetery: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/freedmans-cemetery.png',
-    alt: 'Archaeological excavation at Freedman\'s Cemetery, Dallas, 1991',
-    credit: 'Dallas Morning News Archives',
+    src: '/dallas/articles/freedmans-cemetery/memorial-overview-2.jpg',
+    alt: 'Freedman\'s Cemetery Memorial in Dallas, honoring formerly enslaved people buried beneath North Central Expressway',
+    credit: 'Texas Time Travel, Texas Historical Commission',
   },
   category: 'history',
   tags: ['dallas', 'civil-rights', 'cemetery', 'forgotten-history', 'reconstruction', 'archaeology'],
@@ -89,6 +89,13 @@ export const freedmansCemetery: Article = {
           content: 'Freedman\'s Cemetery operated for 38 years and received an estimated 5,000 or more burials. The 1990 excavation recovered remains of over 1,200 individuals — only a fraction of those buried there. Many more remain beneath the roads and buildings that cover the site.',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-1.jpg',
+          alt: 'Archaeological artifacts from Freedman\'s Cemetery excavation',
+          caption: 'Objects discovered during the excavation: broken pottery, personal items, and burial artifacts that told the stories of Dallas\'s first free Black community.',
+          credit: 'Documentary Arts, Inc.',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Erasure',
@@ -129,6 +136,13 @@ export const freedmansCemetery: Article = {
           content: 'When excavation began, bodies appeared almost immediately. Then more bodies. Then it became clear that the construction was cutting through the heart of an enormous cemetery that the city had forgotten. Work stopped. Archaeologists were called in. What started as a highway project became one of the largest archaeological excavations in Texas history.',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-3.jpg',
+          alt: 'Historical photographs and documents from Freedman\'s Cemetery exhibition',
+          caption: 'The "Facing the Rising Sun" exhibition at the African American Museum in Dallas preserves artifacts, photographs, and documents from the excavation — telling the story of a community Dallas tried to forget.',
+          credit: 'Documentary Arts, Inc.',
+        },
+        {
           type: 'paragraph',
           content: 'The excavation took over two years. Archaeologists carefully exhumed 1,157 burials from the construction zone — adults, children, infants, each one photographed and documented before removal. They found coffin hardware, buttons, coins, and jewelry. They found grave goods that spoke to African American burial traditions. They found the physical remains of people who had been enslaved, freed, and then forgotten.',
         },
@@ -141,6 +155,13 @@ export const freedmansCemetery: Article = {
           variant: 'warning',
           title: 'The Incomplete Picture',
           content: 'The excavation recovered only those burials directly in the construction path. The rest of the cemetery — potentially thousands of additional graves — remains beneath the roads, buildings, and parking lots that cover the original four-acre site. Dallas still drives over its dead.',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-2.jpg',
+          alt: 'Documentation from Freedman\'s Cemetery archaeological excavation, 1991-1994',
+          caption: '1991-1994: The excavation of Freedman\'s Cemetery produced over 185,000 photographic negatives and 33,000 pages of documentation — one of the largest archaeological projects in Texas history.',
+          credit: 'Documentary Arts, Inc.',
         },
         {
           type: 'heading',
@@ -160,6 +181,13 @@ export const freedmansCemetery: Article = {
           content: 'The reburial took place in 1994. The 1,157 exhumed individuals were reinterred in a new memorial cemetery adjacent to the original site. A memorial was built — a modest but dignified space honoring the freedmen and their descendants. The highway was completed, but the dead had finally been acknowledged.',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/freedmans-cemetery/bronze-statues.jpg',
+          alt: 'Bronze sculptures at Freedman\'s Cemetery Memorial depicting the journey from slavery to freedom',
+          caption: 'Bronze figures by artist David Newton tell the story of emancipation — from enslaved people in chains to free families building new lives. The central sculpture "Dream of Freedom" shows a formerly enslaved man, whip scars on his back, embracing his family.',
+          credit: 'Photo by Imani Chet Lytle',
+        },
+        {
           type: 'paragraph',
           content: 'The archaeological collection became a major research resource. Analysis of the remains provided unprecedented insight into the lives of formerly enslaved people in post-Civil War Texas — their health, their work, their deaths. The Freedman\'s Cemetery Project produced studies that continue to inform our understanding of Reconstruction-era African American communities.',
         },
@@ -175,6 +203,13 @@ export const freedmansCemetery: Article = {
         {
           type: 'paragraph',
           content: 'Today, the Freedman\'s Cemetery Memorial sits at the corner of North Central Expressway and Lemmon Avenue, a small green space amid the concrete. Bronze statues depict a freedman and his wife, looking toward the future. Interpretive panels tell the story of the cemetery and its people. Most drivers pass without noticing.',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/freedmans-cemetery/memorial-entrance.jpg',
+          alt: 'Entrance to Freedman\'s Cemetery Memorial in Dallas',
+          caption: 'The memorial entrance today: a Texas Red granite archway honoring the 5,000+ formerly enslaved people buried at Freedman\'s Cemetery. Behind the memorial, North Central Expressway traffic flows over thousands of graves that remain beneath the pavement.',
+          credit: 'Photo by Imani Chet Lytle',
         },
         {
           type: 'paragraph',

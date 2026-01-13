@@ -301,6 +301,18 @@ export const fargo: CityData = {
               stillExists: true,
             },
           },
+          {
+            id: 'far-curiosity-17',
+            type: 'curiosity',
+            category: 'culture',
+            title: 'Argusville died, got bulldozed, came back as a bedroom community—but left the school as a ghost',
+            body: 'Founded in 1880, Argusville thrived with elevators, hotels, and a high school that graduated its first class in 1925. By the 1980s, the town had dwindled to 100 people. The school consolidated with neighboring towns in 1976, and the last class at Cass Valley North graduated in 1997. Then Fargo sprawled north. A housing boom from 2004-2008 tripled Argusville\'s population to 480 by 2020—but the abandoned school building just sat there, condemned and tax-forfeited. The town came back. The school didn\'t. It was finally demolished in 2023.',
+            source: 'Ghosts of North Dakota',
+            location: {
+              name: 'Argusville, ND',
+              stillExists: false,
+            },
+          },
         ],
       },
       {
@@ -586,19 +598,6 @@ export const fargo: CityData = {
             hours: 'Always visible',
             price: 'Free',
             tip: 'Look closely — these aren\'t ordinary planters.',
-          },
-          {
-            id: 'gem-argusville-school',
-            type: 'hidden-gem',
-            name: 'Argusville Abandoned High School',
-            category: 'Abandoned Building',
-            description:
-              'Last class graduated in 1997 when it was Cass Valley North High School. Sits as a "rare spot in an otherwise budding town" as Argusville experienced a population boom but left the school behind. 15 minutes north of Fargo off I-29.',
-            address: 'Argusville, ND (15 minutes north of Fargo off I-29)',
-            coordinates: { lat: 47.0534, lng: -96.9234 },
-            hours: 'Private property — exterior viewing only',
-            price: 'Free',
-            tip: 'Respect private property — view from road only.',
           },
         ],
       },

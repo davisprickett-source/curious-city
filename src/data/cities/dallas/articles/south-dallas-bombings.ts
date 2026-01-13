@@ -12,9 +12,9 @@ export const southDallasBombings: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/south-dallas-bombings.png',
-    alt: 'Bomb damage to a home in South Dallas, 1951',
-    credit: 'Dallas Morning News Archives',
+    src: '/dallas/articles/south-dallas-bombings/south-dallas-bombings-map.png',
+    alt: 'Map showing locations of bombings targeting Black families in South Dallas, 1950-1951',
+    credit: 'SMU Engage Dallas',
   },
   category: 'history',
   tags: ['dallas', 'civil-rights', 'racial-violence', 'bombings', 'forgotten-history', 'south-dallas', 'segregation'],
@@ -58,6 +58,13 @@ export const southDallasBombings: Article = {
           role: 'Dallas, 1950',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/south-dallas-bombings/south-dallas-historical-photo.png',
+          alt: 'Historical photograph of South Dallas neighborhood during the 1950s',
+          caption: 'South Dallas in the early 1950s, when Black families began moving into previously white neighborhoods',
+          credit: 'SMU Engage Dallas',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -98,6 +105,13 @@ export const southDallasBombings: Article = {
           content: 'Grand juries were convened to investigate the bombings. One grand jury reportedly got close to indictments — then suddenly asked to be disbanded. The jurors were replaced. The investigation restarted from scratch. No indictments emerged. The pattern repeated. Every time investigators got too close, something intervened.',
         },
         {
+          type: 'image',
+          src: '/dallas/articles/south-dallas-bombings/1951-grand-jury-investigation.jpg',
+          alt: 'Special grand jury being sworn in to investigate South Dallas bombings, July 1951',
+          caption: 'July 24, 1951: A special grand jury is sworn in to investigate the repeated bombings of Black homes in South Dallas. Despite mounting evidence, no indictments were ever issued.',
+          credit: 'WBAP-TV / Portal to Texas History, UNT Libraries',
+        },
+        {
           type: 'paragraph',
           content: 'Journalist Jim Schutze, who documented the era in his book "The Accommodation," found evidence that prominent white citizens — businessmen, civic leaders, people who served on the very grand juries investigating the crimes — were connected to the bombing campaign. The same community that publicly deplored the violence was privately enabling it.',
         },
@@ -127,6 +141,13 @@ export const southDallasBombings: Article = {
         {
           type: 'paragraph',
           content: 'The accommodation worked, from a certain perspective. The bombings largely stopped after 1951. Black families did gain access to some previously white neighborhoods. But the integration happened on white terms, at white pace, with white control. And the bombers — every single one of them — got away with it.',
+        },
+        {
+          type: 'image',
+          src: '/dallas/articles/south-dallas-bombings/1951-pete-garcia-trial.jpg',
+          alt: 'Pete Garcia on trial for bombing a Black family\'s home in South Dallas, December 1951',
+          caption: 'December 6, 1951: Pete Garcia stands trial for bombing the home of a Black family in South Dallas. He was one of the few suspects ever charged, though convictions remained elusive.',
+          credit: 'WBAP-TV / Portal to Texas History, UNT Libraries',
         },
         {
           type: 'heading',
