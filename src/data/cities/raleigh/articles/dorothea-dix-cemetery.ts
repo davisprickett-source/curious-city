@@ -12,9 +12,8 @@ export const dorotheaDixCemetery: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/raleigh/articles/dorothea-dix-cemetery.png',
+    src: '/raleigh/dix/dix-1.png',
     alt: 'Numbered grave markers at Dorothea Dix Cemetery, Raleigh',
-    credit: 'City of Raleigh',
   },
   category: 'history',
   tags: ['raleigh', 'history', 'mental-health', 'forgotten-history', 'cemetery', 'restoration'],
@@ -34,8 +33,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-1.png',
           alt: 'Rows of numbered grave markers at Dorothea Dix Cemetery',
-          caption: 'The cemetery contains over 900 graves, many marked only with numbers for over a century.',
-          credit: 'Historical Photo',
         },
         {
           type: 'heading',
@@ -58,8 +55,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-2.png',
           alt: 'Historic Dorothea Dix Hospital building',
-          caption: 'Dorothea Dix Hospital operated as a psychiatric institution from 1856 to 2012.',
-          credit: 'State Archives of North Carolina',
         },
         {
           type: 'quote',
@@ -92,8 +87,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-3.png',
           alt: 'Close-up of a numbered grave marker showing stamped metal tag',
-          caption: 'Each grave was marked only with a number - the patient\'s hospital case number, nothing more.',
-          credit: 'Historical Photo',
         },
         {
           type: 'callout',
@@ -118,8 +111,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-4.png',
           alt: 'Historic photo of Dorothea Dix Hospital patients',
-          caption: 'Patients at Dorothea Dix came from all walks of life - veterans, immigrants, farmers, and those society simply didn\'t want.',
-          credit: 'State Archives of North Carolina',
         },
         {
           type: 'paragraph',
@@ -142,8 +133,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-5.png',
           alt: 'Overgrown and neglected grave markers at Dorothea Dix Cemetery',
-          caption: 'Decades of neglect left the cemetery overgrown, with markers sinking into the earth and disappearing.',
-          credit: 'Historical Photo',
         },
         {
           type: 'paragraph',
@@ -172,8 +161,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-6.png',
           alt: 'Volunteers working to restore grave markers at Dorothea Dix Cemetery',
-          caption: 'Volunteers have spent thousands of hours cleaning markers, researching archives, and restoring the cemetery.',
-          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',
@@ -183,8 +170,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-7.png',
           alt: 'Memorial wall listing names of identified patients',
-          caption: 'The memorial wall now lists over 800 names - patients finally reclaimed from anonymity.',
-          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',
@@ -213,8 +198,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-8.png',
           alt: 'Dorothea Dix Park with preserved cemetery grounds',
-          caption: 'The cemetery is now part of Dorothea Dix Park, preserved as a place of memory within the urban park.',
-          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',
@@ -235,8 +218,6 @@ export const dorotheaDixCemetery: Article = {
           type: 'image',
           src: '/raleigh/dix/dix-9.png',
           alt: 'Restored grave markers with names at Dorothea Dix Cemetery',
-          caption: 'Today, many markers now bear names instead of numbers - identities finally restored after a century.',
-          credit: 'City of Raleigh',
         },
         {
           type: 'paragraph',

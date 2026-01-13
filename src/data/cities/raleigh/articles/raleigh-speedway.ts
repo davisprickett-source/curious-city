@@ -12,9 +12,8 @@ export const raleighSpeedway: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/raleigh/articles/raleigh-speedway.png',
+    src: '/raleigh/speedway/speedway-1.png',
     alt: 'Aerial view of Raleigh Speedway, circa 1955',
-    credit: 'NASCAR Archives',
   },
   category: 'history',
   tags: ['raleigh', 'nascar', 'racing', 'abandoned', 'history', 'lost-places'],
@@ -34,8 +33,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-1.png',
           alt: 'Aerial view of Raleigh Speedway in its heyday',
-          caption: 'Raleigh Speedway in the 1950s - a one-mile superspeedway where NASCAR legends competed.',
-          credit: 'NASCAR Archives',
         },
         {
           type: 'paragraph',
@@ -58,8 +55,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-2.png',
           alt: 'Raleigh Speedway grandstands and facilities',
-          caption: 'The speedway featured professional facilities and grandstands designed to rival any track in the South.',
-          credit: 'Raleigh Speedway Historical Project',
         },
         {
           type: 'paragraph',
@@ -69,8 +64,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-3.png',
           alt: 'Night racing under the lights at Raleigh Speedway',
-          caption: 'The track\'s permanent lighting system was the first in NASCAR history, making night racing possible.',
-          credit: 'NASCAR Archives',
         },
         {
           type: 'quote',
@@ -95,8 +88,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-4.png',
           alt: 'Stock cars racing on Raleigh Speedway',
-          caption: 'NASCAR legends like Lee Petty and Fireball Roberts competed on the one-mile oval.',
-          credit: 'NASCAR Archives',
         },
         {
           type: 'paragraph',
@@ -110,8 +101,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-5.png',
           alt: 'Crowds at Raleigh Speedway during a race',
-          caption: 'Thousands of fans packed the grandstands for night races at the track.',
-          credit: 'Raleigh Speedway Historical Project',
         },
         {
           type: 'callout',
@@ -140,8 +129,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-6.png',
           alt: 'Abandoned Raleigh Speedway showing deterioration',
-          caption: 'After racing ended in 1958, the track sat dormant for years before demolition.',
-          credit: 'Historical Photo',
         },
         {
           type: 'quote',
@@ -170,8 +157,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-7.png',
           alt: 'Surviving fragment of Raleigh Speedway asphalt in the woods',
-          caption: 'About 90 feet of the track\'s backstretch survives, hidden in the woods near Atlantic Avenue.',
-          credit: 'Raleigh Speedway Historical Project',
         },
         {
           type: 'paragraph',
@@ -215,8 +200,6 @@ export const raleighSpeedway: Article = {
           type: 'image',
           src: '/raleigh/speedway/speedway-8.png',
           alt: 'Modern view of the surviving track fragment',
-          caption: 'The cracked asphalt curves through the trees - all that remains of a NASCAR legend.',
-          credit: 'Modern Photo',
         },
         {
           type: 'paragraph',
