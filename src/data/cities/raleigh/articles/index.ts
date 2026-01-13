@@ -14,9 +14,8 @@ export const villageUnderground: Article = {
   },
   publishedAt: '2025-01-09T12:00:00Z',
   featuredImage: {
-    src: '/raleigh/articles/village-underground.png',
+    src: '/raleigh/underground/underground-1.png',
     alt: 'The Village Underground entrance in Raleigh, 1970s',
-    credit: 'Raleigh Historical Society',
   },
   category: 'history',
   tags: ['raleigh', 'music', 'punk', 'history', 'underground', 'cold-war'],
@@ -31,6 +30,11 @@ export const villageUnderground: Article = {
         {
           type: 'paragraph',
           content: 'The Village Underground was never supposed to exist. A bomb shelter became a shopping complex became a legendary music venue became a memory buried under asphalt and refrigeration units. Its story spans Cold War paranoia, Southern entrepreneurship, and the strange alchemy that turns a bunker into a cultural landmark.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-1.png',
+          alt: 'The Village Underground entrance designed to look like a NYC subway station',
         },
         {
           type: 'heading',
@@ -48,6 +52,11 @@ export const villageUnderground: Article = {
         {
           type: 'paragraph',
           content: 'By the early 1970s, nobody was thinking about nuclear war anymore. The bomb shelter sat empty beneath Cameron Village, an expensive piece of paranoid infrastructure with no purpose. Until someone had an idea.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-8.png',
+          alt: 'The Cold War bunker architecture and infrastructure',
         },
         {
           type: 'quote',
@@ -69,12 +78,27 @@ export const villageUnderground: Article = {
           content: 'In 1971, the Village Underground opened. The entrance was designed to look like a New York City subway station — complete with painted murals of trains, turnstiles, and underground tile work. Visitors descending the stairs felt like they were entering another world, a piece of Manhattan transplanted to the North Carolina piedmont.',
         },
         {
+          type: 'image',
+          src: '/raleigh/underground/underground-5.png',
+          alt: 'The painted subway train murals that made visitors think of New York',
+        },
+        {
           type: 'paragraph',
           content: 'The space housed roughly 30 shops, restaurants, and clubs. There were record stores, head shops, boutiques — the eclectic mix of 1970s counterculture commerce. But the main attraction was the live music venues. The Underground brought national touring acts to Raleigh, giving Southern kids access to artists they\'d otherwise have to travel hours to see.',
         },
         {
+          type: 'image',
+          src: '/raleigh/underground/underground-2.png',
+          alt: 'Interior of the Village Underground complex showing shops and passageways',
+        },
+        {
           type: 'paragraph',
           content: 'And the acts came. The Police played the Village Underground before they were The Police. The Ramones brought New York punk to the South. Iggy Pop, Pat Benatar, Steve Martin, George Carlin — the list of performers who played this subterranean Raleigh venue reads like a who\'s-who of 1970s and early 1980s entertainment.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-3.png',
+          alt: 'The underground nightclub space where legendary bands performed',
         },
         {
           type: 'callout',
@@ -100,10 +124,20 @@ export const villageUnderground: Article = {
           content: 'The Underground became a gathering place for Raleigh\'s creative misfits. Musicians, artists, weirdos of all stripes — the kind of people who didn\'t fit the Raleigh mold found each other in a bomb shelter designed for nuclear war. The space spawned bands, relationships, and art scenes that shaped Raleigh for years afterward.',
         },
         {
+          type: 'image',
+          src: '/raleigh/underground/underground-7.png',
+          alt: 'Crowded nightclub scene at Village Underground',
+        },
+        {
           type: 'quote',
           content: 'We\'d walk down those subway stairs and feel like we\'d left Raleigh entirely. It didn\'t matter that the subway was painted on. It felt like escape. That was enough.',
           attribution: 'Former Underground regular',
           role: 'Oral history interview',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-6.png',
+          alt: 'Concert poster or promotional material from Village Underground era',
         },
         {
           type: 'ad',
@@ -121,6 +155,11 @@ export const villageUnderground: Article = {
         {
           type: 'paragraph',
           content: 'When it closed, the space was sealed. The shops were cleared out, the murals presumably left in place, the whole complex locked away. Above ground, the shopping center continued to evolve. Cameron Village became The Village District. The Fresh Market moved in where the Underground entrance once stood.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-9.png',
+          alt: 'One of the thirty shops or restaurants in the complex',
         },
         {
           type: 'paragraph',
@@ -161,6 +200,11 @@ export const villageUnderground: Article = {
         {
           type: 'paragraph',
           content: 'Walk through The Village District today and you\'ll find no trace of the Underground. The entrance is gone. The murals are buried. The stages where national acts once played are now whatever you store beneath a supermarket.',
+        },
+        {
+          type: 'image',
+          src: '/raleigh/underground/underground-11.png',
+          alt: 'The Fresh Market location today, above the sealed bunker',
         },
         {
           type: 'paragraph',
