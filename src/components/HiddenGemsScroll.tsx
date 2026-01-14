@@ -6,7 +6,9 @@ import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { ImageCarousel } from './ImageCarousel'
 import { NewsletterSignup } from './NewsletterSignup'
+import { ShareLinks } from './ShareLinks' // Import ShareLinks
 import { ExploreCard, type ExploreLink } from './scrollytelling/ExploreCard'
+import { ShareButton } from '@/components/ShareButton' // Import ShareButton
 
 interface HiddenGemItem {
   id: string
@@ -39,6 +41,7 @@ interface HiddenGemsScrollProps {
   cityName: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
+  url: string // Add url prop
 }
 
 // Category badge color helper - vibrant, colorful theme for hidden gems
@@ -68,7 +71,7 @@ const getCategoryStyle = (category: string) => {
   }
 }
 
-function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem; index: number; onSectionInView?: (index: number) => void }) {
+function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: HiddenGemItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
     triggerOnce: false,
@@ -179,7 +182,7 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
 
               {/* Details Box */}
               {(gem.address || gem.website || gem.phone || gem.hours || gem.price) && (
-                <div className="bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-xl px-5 py-4 space-y-3">
+                <div className="bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-xl px-5 py-4 space-y-3 mb-6"> {/* Added mb-6 for spacing */}
                   {gem.address && (() => {
                     const addressParts = gem.address.split(', ')
                     const streetAddress = addressParts[0]
@@ -248,6 +251,9 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
                   )}
                 </div>
               )}
+              <div className="flex justify-center mb-6">
+                <ShareButton title={title} url={url} />
+              </div>
             </div>
           </div>
         </div>
@@ -373,7 +379,8 @@ export default function HiddenGemsScroll({
   gems,
   cityName,
   exploreLinks = [],
-  footer
+  footer,
+  url
 }: HiddenGemsScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
@@ -454,6 +461,8 @@ export default function HiddenGemsScroll({
               gem={gem}
               index={index}
               onSectionInView={handleSectionInView}
+              url={url}
+              title={gem.name}
             />
           </div>
         ))}
@@ -462,6 +471,14 @@ export default function HiddenGemsScroll({
       {/* Outro Sections */}
       <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
         <div className="max-w-5xl mx-auto space-y-20 px-6 pb-20">
+          {/* Share Links */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
+            <div className="flex justify-center">
+              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} />
+            </div>
+          </div>
+
           {/* Newsletter Signup */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <NewsletterSignup />

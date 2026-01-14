@@ -3,9 +3,10 @@ import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityLostAndLoved, getCityLostAndLovedSection } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
-import { Footer, RelatedContent, NewsletterSignup } from '@/components'
+import { Footer, RelatedContent, NewsletterSignup, ShareLinks } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
+import Link from 'next/link'
 
 // Dynamically import the scroll component (client-only)
 const LostLovedScroll = dynamic(() => import('@/components/LostLovedScroll').then(mod => ({ default: mod.LostLovedScroll })), {
@@ -82,7 +83,7 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
               <div className="max-w-3xl mx-auto">
                 {/* Share Button at Top */}
                 <div className="mb-6">
-                  <ShareButton title={`${city.name}'s Lost & Loved`} />
+                  <ShareButton title={`${city.name}'s Lost & Loved`} url={url} />
                 </div>
 
                 {/* Title */}
@@ -112,8 +113,26 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
 
           {/* End of Page Flow */}
           <div className="container-page py-12 space-y-8">
-            <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
+            {/* 1. Share (bottom) */}
+            <ShareLinks title={`${city.name}'s Lost & Loved`} url={url} />
+
+            {/* 2. Subscribe */}
             <NewsletterSignup />
+
+            {/* 3. Explore More */}
+            <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
+
+            {/* 4. Feedback (placeholder) */}
+            <div className="bg-neutral-50 p-6 rounded-lg text-center">
+              <h3 className="text-xl font-bold mb-2 text-neutral-800">Your Feedback Matters!</h3>
+              <p className="text-neutral-600 mb-4">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
+              >
+                Send Feedback
+              </Link>
+            </div>
           </div>
         </main>
       </div>

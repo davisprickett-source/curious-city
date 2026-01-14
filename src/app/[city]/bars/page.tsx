@@ -93,6 +93,7 @@ export default async function CityBarsPage({ params }: PageProps) {
         currentCategory="bars"
         exploreLinks={exploreLinks}
         footer={<Footer />}
+        url={url} // Pass url here
       />
     </>
   )

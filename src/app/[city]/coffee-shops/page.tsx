@@ -86,6 +86,7 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
         currentCategory="coffee-shops"
         exploreLinks={exploreLinks}
         footer={<Footer />}
+        url={url} // Pass url here
       />
     </>
   )

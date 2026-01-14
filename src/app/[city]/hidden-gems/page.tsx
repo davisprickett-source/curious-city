@@ -75,7 +75,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
               <div className="max-w-3xl mx-auto">
                 {/* Share Button at Top */}
                 <div className="mb-6">
-                  <ShareButton title={`${city.name}'s Hidden Gems`} />
+                  <ShareButton title={`${city.name}'s Hidden Gems`} url={url} />
                 </div>
 
                 {/* Title */}
@@ -105,6 +105,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
             cityName={city.name}
             exploreLinks={exploreLinks}
             footer={<Footer />}
+            url={url} // Pass url here
           />
         </main>
       </div>
