@@ -67,7 +67,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
   // Find the curiosities section for title/teaser/intro
   const findSection = (items: any[]): any => {
     for (const item of items) {
-      if (item.type === 'section' && item.title?.includes('Curiosit')) {
+      if (item.type === 'section' && item.id?.includes('curiosities')) {
         return item
       }
       if (item.items && Array.isArray(item.items)) {
