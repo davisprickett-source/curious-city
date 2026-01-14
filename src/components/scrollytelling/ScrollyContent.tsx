@@ -7,10 +7,8 @@ import { ScrollySpotCard } from './ScrollySpotCard'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
 import { ExploreCard, type ExploreLink } from './ExploreCard'
-import { ShareButton } from '@/components/ShareButton' // Re-add ShareButton import
+import { ShareButton } from '@/components/ShareButton'
 import { NewsletterSignup } from '@/components'
-import { ShareLinks } from '@/components/ShareLinks'
-import Link from 'next/link'
 
 interface ScrollyContentProps {
   spots: BestOfSpot[]
@@ -31,7 +29,6 @@ interface ScrollyContentProps {
   exploreLinks?: ExploreLink[]
   /** Footer component to render at the end */
   footer?: React.ReactNode
-  url: string // Add url prop
 }
 
 export function ScrollyContent({
@@ -46,8 +43,7 @@ export function ScrollyContent({
   onScrollComplete,
   currentCategory,
   exploreLinks = [],
-  footer,
-  url
+  footer
 }: ScrollyContentProps) {
   // Note: showBanner and bannerImage are kept for backwards compatibility
   // but the banner has been removed in favor of a unified intro section
@@ -128,13 +124,13 @@ export function ScrollyContent({
 
           {/* Share button at bottom of intro */}
           <div className="pt-6 border-t border-neutral-200 flex justify-center">
-            <ShareButton title={title} url={url} />
+            <ShareButton title={title} />
           </div>
         </div>
       </ScrollySection>
 
       {/* Map Overview Gap - allows viewing the full map before starting the tour */}
-      <div className="h-[50vh]" aria-hidden="true" />
+      <div className="h-[100vh]" aria-hidden="true" />
 
       {/* Spot Sections with Ads */}
       {spots.map((spot, index) => (
@@ -177,21 +173,9 @@ export function ScrollyContent({
         </div>
       ))}
 
-      {/* Zoom Out Trigger Section - Placeholder for map zoom out */}
-      <ScrollySection
-        index={spots.length} // New index
-        onInView={onActiveIndexChange}
-        className="bg-transparent snap-center h-[50vh]" // Short, transparent section
-        ref={(el) => { sectionRefs.current[spots.length] = el }}
-      >
-        <div className="max-w-xl mx-auto text-center text-white text-2xl font-semibold">
-          {/* Optional: Add some text like "Zooming out..." if desired */}
-        </div>
-      </ScrollySection>
-
       {/* Outro Section - Final destination, cannot scroll past */}
       <ScrollySection
-        index={spots.length + 1} // Updated index
+        index={spots.length}
         onInView={onActiveIndexChange}
         className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-start min-h-screen"
         ref={(el) => { sectionRefs.current[spots.length] = el }}
@@ -201,7 +185,7 @@ export function ScrollyContent({
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
             <div className="flex justify-center">
-              <ShareLinks title={title} url={url} />
+              <ShareButton title={title} />
             </div>
           </div>
 
@@ -223,20 +207,18 @@ export function ScrollyContent({
 
             {/* Image-backed explore cards when available */}
             {exploreLinks.length > 0 ? (
-              <div className="flex flex-wrap justify-center gap-5 mt-8 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 max-w-5xl mx-auto">
                 {exploreLinks.map((link) => (
-                  <div key={link.href} className="w-full flex-grow min-w-0">
-                    <ExploreCard link={link} />
-                  </div>
+                  <ExploreCard key={link.href} link={link} />
                 ))}
               </div>
             ) : (
               /* Fallback simple cards */
-              <div className="flex flex-wrap justify-center gap-4 mt-8 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 max-w-4xl mx-auto">
                 {currentCategory !== 'bars' && (
-                  <Link
+                  <a
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/bars`}
-                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -244,12 +226,12 @@ export function ScrollyContent({
                       </svg>
                       <span className="text-lg font-semibold text-white">Best Bars</span>
                     </div>
-                  </Link>
+                  </a>
                 )}
                 {currentCategory !== 'restaurants' && (
-                  <Link
+                  <a
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/restaurants`}
-                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -257,12 +239,12 @@ export function ScrollyContent({
                       </svg>
                       <span className="text-lg font-semibold text-white">Restaurants</span>
                     </div>
-                  </Link>
+                  </a>
                 )}
                 {currentCategory !== 'coffee-shops' && (
-                  <Link
+                  <a
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/coffee-shops`}
-                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,12 +252,12 @@ export function ScrollyContent({
                       </svg>
                       <span className="text-lg font-semibold text-white">Coffee Shops</span>
                     </div>
-                  </Link>
+                  </a>
                 )}
                 {currentCategory !== 'curiosities' && (
-                  <Link
+                  <a
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/curiosities`}
-                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,30 +265,20 @@ export function ScrollyContent({
                       </svg>
                       <span className="text-lg font-semibold text-white">Curiosities</span>
                     </div>
-                  </Link>
+                  </a>
                 )}
               </div>
             )}
-          
-          {/* Feedback (placeholder) */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Your Feedback Matters!</h3>
-            <p className="text-neutral-200 mb-6">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
-            >
-              Send Feedback
-            </Link>
           </div>
-
-          {/* Footer integrated into outro for better connection */}
-          {footer && (
-            <div className="relative mt-auto border-t border-white/10">
-              {footer}
-            </div>
-          )}
         </div>
+
+        {/* Footer integrated into outro for better connection */}
+        {footer && (
+          <div className="relative mt-auto border-t border-white/10">
+            {footer}
+          </div>
+        )}
+      </ScrollySection>
     </div>
   )
 }
