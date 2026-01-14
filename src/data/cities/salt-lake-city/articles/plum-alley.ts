@@ -71,12 +71,30 @@ export const plumAlley: Article = {
           content: 'The neighborhood that emerged was called Plum Alley — a narrow street, really, running between Second South and Third South. By the 1880s, it had become a self-contained world: Chinese groceries sold dried fish and preserved vegetables imported from San Francisco. Laundries served the broader city, since washing clothes was one of the few businesses white Salt Lakers would tolerate. Restaurants fed workers who couldn\'t cook for themselves. Gambling halls and opium dens operated semi-openly, tolerated by police who collected regular bribes.',
         },
         {
+          type: 'image',
+          src: 'https://images.utaharchives.gov/digital/iiif/20120/12065/full/1160,/0/default.jpg',
+          alt: 'Men standing outside the Kwong Wah Yuen laundry in Plum Alley, circa 1910.',
+          caption: 'Men standing outside the Kwong Wah Yuen laundry in Plum Alley, circa 1910. Laundries were one of the few businesses Chinese immigrants were allowed to operate.',
+          credit: 'Utah State Historical Society',
+          width: 1160,
+          height: 871,
+        },
+        {
           type: 'paragraph',
           content: 'There was also a temple, tucked into an upper floor, where the residents practiced a mix of Buddhism, Taoism, and ancestor worship that confused and alarmed the Mormon majority. The Joss House, as it was called, was one of the few places the men of Plum Alley could gather to observe traditional holidays and remember the villages they\'d left behind.',
         },
         {
           type: 'paragraph',
           content: 'The population fluctuated. Census records show roughly 300 Chinese in Salt Lake City in 1880, rising to over 500 by 1900. Almost all were men — the Chinese Exclusion Act of 1882 prohibited the immigration of laborers\' wives and children, creating a bachelor society that would persist for generations. The men of Plum Alley grew old alone, sending money home to families they would never see again.',
+        },
+        {
+          type: 'image',
+          src: 'https://images.utaharchives.gov/digital/iiif/20120/3342/full/1160,/0/default.jpg',
+          alt: 'The family of Mr. and Mrs. Yee in their Plum Alley apartment, 1946.',
+          caption: 'The family of Mr. and Mrs. Yee in their Plum Alley apartment, 1946. While the Chinese Exclusion Act created a "bachelor society," some families did manage to form and raise children in the neighborhood.',
+          credit: 'Utah State Historical Society',
+          width: 1160,
+          height: 928,
         },
         {
           type: 'callout',
@@ -144,6 +162,15 @@ export const plumAlley: Article = {
         {
           type: 'paragraph',
           content: 'By 1952, the demolition was complete. The laundries, the restaurants, the gambling halls, the Joss House — all of it reduced to rubble. The remaining Chinese residents were scattered across the city. Some moved to the west side. Some left Utah entirely. The community that had existed for nearly a century simply ceased to exist.',
+        },
+        {
+          type: 'image',
+          src: 'https://www.gsbsarchitects.com/wp-content/uploads/2015/07/Regent-Street-Salt-Lake-City-2-960x600.jpg',
+          alt: 'The modern Regent Street parking garage, which stands on the site of the former Plum Alley.',
+          caption: 'The modern Regent Street parking garage, which stands on the site of the former Plum Alley. The vibrant neighborhood was demolished to make way for parking.',
+          credit: 'GSBS Architects',
+          width: 960,
+          height: 600,
         },
         {
           type: 'paragraph',
