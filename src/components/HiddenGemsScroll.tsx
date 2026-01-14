@@ -494,7 +494,7 @@ export default function HiddenGemsScroll({
             </h3>
             <p className="text-lg text-neutral-200 mb-8 leading-relaxed">
               Know a hidden gem we missed? Or have a correction for one of our entries?
-              We'd love to hear from you.
+              We&apos;d love to hear from you.
             </p>
             <a
               href="mailto:hello@curiouscity.com"

@@ -63,6 +63,40 @@ export const portland: CityData = {
       intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in our curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
       items: [
         {
+          id: 'pdx-curiosity-1',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Oregon entered the Union with a whites-only clause in its constitution',
+          body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
+          year: '1857',
+          image: {
+            src: '/portland/curiosities/black-exclusion.png',
+            alt: 'Oregon black exclusion laws historical document',
+          },
+          source: 'Oregon Historical Society',
+          location: {
+            name: 'State of Oregon',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'pdx-curiosity-6',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The Vanport Flood erased Oregon\'s second-largest city in 35 minutes',
+          body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
+          year: '1948',
+          image: {
+            src: '/portland/curiosities/portland-flood.png',
+            alt: 'Vanport flood destruction in 1948',
+          },
+          source: 'Oregon Historical Society',
+          location: {
+            name: 'Vanport (now Delta Park)',
+            stillExists: false,
+          },
+        },
+        {
           id: 'pdx-curiosity-4',
           type: 'curiosity',
           category: 'culture',
@@ -85,23 +119,6 @@ export const portland: CityData = {
           size: 'banner',
         },
         {
-          id: 'pdx-curiosity-1',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Oregon entered the Union with a whites-only clause in its constitution',
-          body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
-          year: '1857',
-          image: {
-            src: '/portland/curiosities/black-exclusion.png',
-            alt: 'Oregon black exclusion laws historical document',
-          },
-          source: 'Oregon Historical Society',
-          location: {
-            name: 'State of Oregon',
-            stillExists: true,
-          },
-        },
-        {
           id: 'pdx-curiosity-7',
           type: 'curiosity',
           category: 'law',
@@ -116,23 +133,6 @@ export const portland: CityData = {
           location: {
             name: 'State of Oregon',
             stillExists: true,
-          },
-        },
-        {
-          id: 'pdx-curiosity-6',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The Vanport Flood erased Oregon\'s second-largest city in 35 minutes',
-          body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
-          year: '1948',
-          image: {
-            src: '/portland/curiosities/portland-flood.png',
-            alt: 'Vanport flood destruction in 1948',
-          },
-          source: 'Oregon Historical Society',
-          location: {
-            name: 'Vanport (now Delta Park)',
-            stillExists: false,
           },
         },
         {

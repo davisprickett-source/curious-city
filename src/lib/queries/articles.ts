@@ -47,7 +47,7 @@ export async function getArticlesForCity(
     const articlesModule = await import(`@/data/cities/${citySlug}/articles`)
     const nativeArticles: Article[] = articlesModule.default || articlesModule.articles || []
     articles.push(...nativeArticles)
-  } catch (err) {
+  } catch {
     // City might not have native articles yet, that's okay
   }
 
@@ -99,7 +99,7 @@ export async function getAllArticles(
         tags: options?.tags,
       })
       allArticles.push(...cityArticles)
-    } catch (err) {
+    } catch {
       // City might not have articles yet
       continue
     }

@@ -537,7 +537,7 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
   )
 }
 
-export function DarkHistoryScroll({ items, cityName: _cityName }: DarkHistoryScrollProps) {
+export function DarkHistoryScroll({ items }: DarkHistoryScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
 

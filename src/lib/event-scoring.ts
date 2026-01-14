@@ -30,7 +30,7 @@ export function scoreEvent(
   config: CityEventConfig
 ): ScoringBreakdown {
   const reasons: string[] = []
-  let base = 50
+  const base = 50
   let venue = 0
   let eventType = 0
   let source = 0

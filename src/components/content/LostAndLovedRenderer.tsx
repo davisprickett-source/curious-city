@@ -82,7 +82,7 @@ export function LostAndLovedRenderer({ item }: LostAndLovedRendererProps) {
 
         {/* Why missed */}
         <div className="bg-neutral-50 rounded-lg px-3 py-2">
-          <span className="text-xs font-medium text-neutral-500 uppercase tracking-wide">Why it's missed</span>
+          <span className="text-xs font-medium text-neutral-500 uppercase tracking-wide">Why it&apos;s missed</span>
           <p className="text-neutral-700 text-sm mt-0.5">{item.whyMissed}</p>
         </div>
 

@@ -2,6 +2,7 @@ import { getArticle } from '@/lib/queries/articles'
 import { getCity } from '@/data/cities'
 import { getHistory } from '@/data/history'
 import { Footer, RelatedContent, NewsletterSignup } from '@/components'
+import { ArticleRenderer } from '@/components/ArticleRenderer'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { ShareButton } from '@/components/ShareButton'
 import { VideoHistoryScroll } from '@/components/VideoHistoryScroll'
@@ -146,6 +147,13 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             {/* Article Content */}
             <div className="container-page">
               <div className="max-w-3xl mx-auto">
+                {article.formats.longform.enabled && (
+                  <ArticleRenderer
+                    blocks={article.formats.longform.blocks}
+                    citySlug={citySlug}
+                    articleSlug={slug}
+                  />
+                )}
                 <UniversalAd
                   slot={createAdSlot(
                     `${citySlug}-article-${slug}-footer`,

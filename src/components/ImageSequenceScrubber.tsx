@@ -27,8 +27,6 @@ export function ImageSequenceScrubber({
 }: ImageSequenceScrubberProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const prefersReducedMotion = useReducedMotion()
-  // @ts-ignore - Variable for future use
-  const [loadedFrames, setLoadedFrames] = useState<Set<number>>(new Set())
   const [isPreloading, setIsPreloading] = useState(true)
 
   // Scroll-based frame scrubbing
@@ -79,7 +77,6 @@ export function ImageSequenceScrubber({
         promises.push(
           new Promise((resolve) => {
             img.onload = () => {
-              setLoadedFrames(prev => new Set(prev).add(i))
               resolve(true)
             }
             img.onerror = () => resolve(false)
@@ -94,9 +91,6 @@ export function ImageSequenceScrubber({
       for (let i = initialFrames; i < frameCount; i++) {
         const img = new Image()
         img.src = getFramePath(i)
-        img.onload = () => {
-          setLoadedFrames(prev => new Set(prev).add(i))
-        }
       }
     }
 

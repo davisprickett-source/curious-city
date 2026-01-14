@@ -149,7 +149,7 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
                   Collections Coming Soon
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  We're working on curating collections of curiosities, dark history, and hidden gems for {city.name}.
+                  We&apos;re working on curating collections of curiosities, dark history, and hidden gems for {city.name}.
                 </p>
               </div>
             </div>

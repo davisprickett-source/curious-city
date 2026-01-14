@@ -38,10 +38,10 @@ function toEventItem(event: CuratedEvent): EventItem {
 async function loadApiEvents(citySlug: string): Promise<CuratedEvent[]> {
   try {
     // Dynamic import based on city slug
-    const module = await import(`./${citySlug}-api`)
+    const importedModule = await import(`./${citySlug}-api`)
     // The export is named [city]ApiEvents with camelCase
     const exportName = `${citySlug.replace(/-([a-z])/g, (_, c) => c.toUpperCase())}ApiEvents`
-    return module[exportName] || []
+    return importedModule[exportName] || []
   } catch {
     // API file doesn't exist yet - that's fine
     return []
@@ -54,12 +54,12 @@ async function loadApiEvents(citySlug: string): Promise<CuratedEvent[]> {
 async function loadCuratedEvents(citySlug: string): Promise<{ events: CuratedEvent[], hidden: string[] }> {
   try {
     // Dynamic import based on city slug
-    const module = await import(`./${citySlug}-curated`)
+    const importedModule = await import(`./${citySlug}-curated`)
     const exportName = `${citySlug.replace(/-([a-z])/g, (_, c) => c.toUpperCase())}CuratedEvents`
     const hiddenName = `${citySlug.replace(/-([a-z])/g, (_, c) => c.toUpperCase())}HiddenEvents`
     return {
-      events: module[exportName] || [],
-      hidden: module[hiddenName] || [],
+      events: importedModule[exportName] || [],
+      hidden: importedModule[hiddenName] || [],
     }
   } catch {
     // Curated file doesn't exist - that's fine

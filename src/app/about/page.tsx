@@ -51,7 +51,7 @@ export default function AboutPage() {
                   <div className="bg-neutral-50 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Hidden Gems</h3>
                     <p className="text-neutral-700 text-sm">
-                      The spots locals know but tourists don't—from speakeasies to secret gardens.
+                      The spots locals know but tourists don&apos;t—from speakeasies to secret gardens.
                     </p>
                   </div>
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Cities We Cover</h2>
                 <p className="text-neutral-700 mb-4">
-                  We're building comprehensive guides for cities across America, currently featuring:
+                  We&apos;re building comprehensive guides for cities across America, currently featuring:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
                   <div className="text-neutral-700">Minneapolis</div>
@@ -116,12 +116,12 @@ export default function AboutPage() {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Why "The Curious City"?</h2>
+                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Why &quot;The Curious City&quot;?</h2>
                 <p className="text-neutral-700 mb-4">
                   Cities are endlessly curious—both in the sense that they inspire curiosity and in that they contain curious (peculiar, fascinating, strange) elements around every corner. We believe the best way to experience a city is with an open mind and a curious spirit.
                 </p>
                 <p className="text-neutral-700 mb-4">
-                  Whether you're a longtime resident looking to see your city with fresh eyes, a visitor seeking authentic experiences, or simply someone who loves urban history and culture, The Curious City is your companion for discovery.
+                  Whether you&apos;re a longtime resident looking to see your city with fresh eyes, a visitor seeking authentic experiences, or simply someone who loves urban history and culture, The Curious City is your companion for discovery.
                 </p>
               </section>
 
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Stay Curious</h2>
                 <p className="text-neutral-700 mb-4 text-lg font-medium">
-                  Every city has secrets. We're here to help you find them.
+                  Every city has secrets. We&apos;re here to help you find them.
                 </p>
                 <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-lg mt-6">
                   <p className="text-neutral-900 font-semibold mb-2">Explore. Discover. Share.</p>

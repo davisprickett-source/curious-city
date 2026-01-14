@@ -58,7 +58,7 @@ export default async function ArticlesPage({ params }: ArticlesPageProps) {
                   Articles
                 </h1>
                 <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
-                  Longform stories and essays exploring {city.name}'s history, culture, and untold stories.
+                  Longform stories and essays exploring {city.name}&apos;s history, culture, and untold stories.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default async function ArticlesPage({ params }: ArticlesPageProps) {
                   Articles Coming Soon
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  We're working on bringing you the best stories and essays about {city.name}.
+                  We&apos;re working on bringing you the best stories and essays about {city.name}.
                 </p>
               </div>
             </div>

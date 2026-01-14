@@ -27,7 +27,7 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
     return (
       <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-4">
         {submitted ? (
-          <p className="text-sm text-accent-600 font-medium">Thanks! We'll be in touch.</p>
+          <p className="text-sm text-accent-600 font-medium">Thanks! We&apos;ll be in touch.</p>
         ) : (
           <form onSubmit={handleSubmit} className="flex gap-2">
             <input
@@ -56,7 +56,7 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
         <h4 className="font-bold text-neutral-900 mb-2">Stay curious</h4>
         <p className="text-sm text-neutral-600 mb-3">New stories delivered to your inbox.</p>
         {submitted ? (
-          <p className="text-sm text-accent-600 font-medium">You're in!</p>
+          <p className="text-sm text-accent-600 font-medium">You&apos;re in!</p>
         ) : (
           <form onSubmit={handleSubmit} className="flex gap-2">
             <input
@@ -92,7 +92,7 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
         {submitted ? (
           <div className="bg-white border border-accent-200 rounded-lg p-4">
             <p className="text-accent-700 font-medium">
-              You're in. Watch your inbox for curious things.
+              You&apos;re in. Watch your inbox for curious things.
             </p>
           </div>
         ) : (

@@ -21,7 +21,7 @@ export default function PrivacyPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Introduction</h2>
                 <p className="text-neutral-700 mb-4">
-                  Welcome to The Curious City ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you understand how we collect, use, and safeguard your information when you visit our website at thecurious.city (the "Site").
+                  Welcome to The Curious City (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to protecting your privacy and ensuring you understand how we collect, use, and safeguard your information when you visit our website at thecurious.city (the &quot;Site&quot;).
                 </p>
                 <p className="text-neutral-700 mb-4">
                   This Privacy Policy explains our practices regarding the collection, use, and disclosure of information we receive through the Site.
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
                   <li>To analyze trends and gather demographic information</li>
                   <li>To deliver relevant advertisements</li>
                   <li>To respond to your inquiries and provide customer support</li>
-                  <li>To send newsletters or updates (only if you've subscribed)</li>
+                  <li>To send newsletters or updates (only if you&apos;ve subscribed)</li>
                   <li>To detect, prevent, and address technical issues or fraud</li>
                 </ul>
               </section>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
                 <p className="text-neutral-700 mb-4">
                   We use Google AdSense to display advertisements on our Site. Google uses cookies to serve ads based on your prior visits to our Site or other websites. You can opt out of personalized advertising by visiting{' '}
                   <a href="https://www.google.com/settings/ads" className="text-accent-600 hover:text-accent-700 underline" target="_blank" rel="noopener noreferrer">
-                    Google's Ads Settings
+                    Google&apos;s Ads Settings
                   </a>.
                 </p>
 
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
 
                 <h3 className="text-xl font-semibold text-neutral-800 mb-3">Email Unsubscribe</h3>
                 <p className="text-neutral-700 mb-4">
-                  If you've subscribed to our newsletter, you can unsubscribe at any time by clicking the "unsubscribe" link at the bottom of any email we send, or by contacting us at{' '}
+                  If you&apos;ve subscribed to our newsletter, you can unsubscribe at any time by clicking the &quot;unsubscribe&quot; link at the bottom of any email we send, or by contacting us at{' '}
                   <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline">
                     info@thecurious.city
                   </a>.
@@ -140,12 +140,12 @@ export default function PrivacyPage() {
 
                 <h3 className="text-xl font-semibold text-neutral-800 mb-3">Do Not Track</h3>
                 <p className="text-neutral-700 mb-4">
-                  Some browsers include a "Do Not Track" feature. Our Site does not currently respond to Do Not Track signals.
+                  Some browsers include a &quot;Do Not Track&quot; feature. Our Site does not currently respond to Do Not Track signals.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Children's Privacy</h2>
+                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Children&apos;s Privacy</h2>
                 <p className="text-neutral-700 mb-4">
                   Our Site is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.
                 </p>
@@ -171,7 +171,7 @@ export default function PrivacyPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Changes to This Privacy Policy</h2>
                 <p className="text-neutral-700 mb-4">
-                  We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes.
+                  We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date. We encourage you to review this Privacy Policy periodically for any changes.
                 </p>
               </section>
 

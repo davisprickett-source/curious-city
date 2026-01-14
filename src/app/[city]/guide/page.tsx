@@ -60,7 +60,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
     },
     {
       title: 'Best Restaurants',
-      description: 'From fine dining to neighborhood spots, the city\'s culinary highlights',
+      description: 'From fine dining to neighborhood spots, the city&apos;s culinary highlights',
       href: `/${slug}/restaurants`,
       image: restaurantSpot?.images?.[0],
       gradient: 'from-amber-600 to-amber-900',
@@ -167,7 +167,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   Locally Curated, Carefully Selected
                 </h2>
                 <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                  Every spot in this guide has been personally visited and vetted. We don't accept
+                  Every spot in this guide has been personally visited and vetted. We don&apos;t accept
                   payments for inclusion—these are genuine recommendations from people who live,
                   work, and explore {city.name} every day.
                 </p>

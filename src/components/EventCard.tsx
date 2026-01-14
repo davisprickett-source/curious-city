@@ -1,5 +1,5 @@
 import type { EventItem, EventStatus } from '@/types/content'
-import { getEventStatus, getEventDisplayDate, getEventDisplayTime } from '@/utils/eventStatus'
+import { getEventStatus, getEventDisplayDate } from '@/utils/eventStatus'
 
 interface EventCardProps {
   event: EventItem
@@ -53,8 +53,6 @@ const statusLabels: Record<EventStatus, string> = {
 export function EventCard({ event, showFullDetails = true }: EventCardProps) {
   const status = getEventStatus(event)
   const displayDate = getEventDisplayDate(event)
-  // @ts-ignore - Variable for future use
-  const displayTime = getEventDisplayTime(event)
 
   return (
     <article className="border border-neutral-200 rounded-lg p-5 hover:border-neutral-300 transition-colors">

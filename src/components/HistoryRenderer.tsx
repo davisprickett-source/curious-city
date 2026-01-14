@@ -33,7 +33,7 @@ function HistoryBlockRenderer({ block }: { block: HistoryBlock }) {
       return (
         <figure className="my-12 py-8 border-t border-b border-neutral-300">
           <blockquote className="text-2xl leading-relaxed text-neutral-900 font-medium italic">
-            "{block.content}"
+            &quot;{block.content}&quot;
           </blockquote>
           {block.attribution && (
             <figcaption className="mt-4 text-sm text-neutral-500 ui-sans">

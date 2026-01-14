@@ -150,8 +150,7 @@ export class FirstAvenueProvider extends BaseScraperProvider {
     currentYear: number
   ): NormalizedEvent | null {
     // Extract venue from venue_name div
-    const venueMatch = block.match(/<div class="venue_name">\s*([^<]+)\s*<\/div>/i)
-    let venue = venueMatch ? this.stripHtml(venueMatch[1]) : 'First Avenue'
+    const venue = 'First Avenue'
 
     // Extract title from h4 > a
     const titleMatch = block.match(/<h4[^>]*>\s*<a[^>]*>([^<]+)<\/a>\s*<\/h4>/i)

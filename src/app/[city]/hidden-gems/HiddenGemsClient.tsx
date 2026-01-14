@@ -14,13 +14,16 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
         <div className="divide-y divide-neutral-100">
           {gems.map((gem: any, index: number) => (
             <article key={gem.id} className="py-10 first:pt-0">
-              <div className="flex items-start gap-4">
-                <div className="w-7 h-7 bg-neutral-900 text-white text-sm font-medium rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  {index + 1}
+              <div className="space-y-6">
+                {/* Header with rank inline */}
+                <div className="flex items-start gap-3">
+                  <div className="w-7 h-7 bg-neutral-900 text-white text-sm font-medium rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    {index + 1}
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-semibold text-neutral-900 leading-tight pt-0.5">{gem.name}</h3>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">{gem.name}</h3>
 
+                <div className="flex-1 min-w-0">
                   {/* Images - using standard ImageCarousel component */}
                   {gem.images && gem.images.length > 0 && (
                     <div className="mb-6">

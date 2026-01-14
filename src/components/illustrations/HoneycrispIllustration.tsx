@@ -15,6 +15,7 @@ export function HoneycrispIllustration() {
   })
 
   const treeHeight = useTransform(scrollYProgress, [0, 0.5, 1], [0, 100, 100])
+  const treeScaleY = useTransform(treeHeight, (v) => v / 100)
 
   return (
     <div ref={containerRef} className="relative w-full aspect-[4/3] bg-gradient-to-b from-amber-50 via-orange-50 to-red-50 rounded-2xl overflow-hidden shadow-xl">
@@ -73,7 +74,7 @@ export function HoneycrispIllustration() {
         <motion.g
           style={{
             transformOrigin: '125px 510px',
-            scaleY: prefersReducedMotion ? 1 : useTransform(treeHeight, (v) => v / 100)
+            scaleY: prefersReducedMotion ? 1 : treeScaleY
           }}
         >
           {/* Trunk */}

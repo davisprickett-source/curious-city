@@ -31,24 +31,24 @@ function BestOfSpotCard({ spot, rank }: { spot: BestOfSpot; rank: number }) {
 
   return (
     <article className="relative">
-      {/* Rank badge */}
-      <div className="absolute -left-1 -top-1 w-7 h-7 bg-accent-600 text-white text-sm font-semibold rounded-full flex items-center justify-center z-10 shadow-sm">
-        {rank}
-      </div>
-
-      <div className="pl-8 space-y-4">
+      <div className="space-y-4">
         {/* Image carousel */}
         {carouselImages.length > 0 && (
           <ImageCarousel images={carouselImages} className="ml-1" />
         )}
 
         {/* Header */}
-        <div className="flex items-baseline gap-3 flex-wrap">
-          <h3 className="text-lg font-semibold text-neutral-900">{spot.name}</h3>
-          <span className="text-sm text-neutral-500">{spot.neighborhood}</span>
-          {spot.price && (
-            <span className="text-sm text-accent-600 font-medium">{spot.price}</span>
-          )}
+        <div className="flex items-start gap-3">
+          <div className="w-7 h-7 shrink-0 bg-accent-600 text-white text-sm font-semibold rounded-full flex items-center justify-center shadow-sm mt-0.5">
+            {rank}
+          </div>
+          <div className="flex items-baseline gap-3 flex-wrap">
+            <h3 className="text-lg font-semibold text-neutral-900">{spot.name}</h3>
+            <span className="text-sm text-neutral-500">{spot.neighborhood}</span>
+            {spot.price && (
+              <span className="text-sm text-accent-600 font-medium">{spot.price}</span>
+            )}
+          </div>
         </div>
 
         {/* Vibe */}

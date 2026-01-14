@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold text-neutral-900 mb-6">Contact Us</h1>
             <p className="text-lg text-neutral-600 mb-8">
-              We'd love to hear from you! Whether you have a story tip, question, or just want to say hello, we're all ears.
+              We&apos;d love to hear from you! Whether you have a story tip, question, or just want to say hello, we&apos;re all ears.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -31,7 +31,7 @@ export default function ContactPage() {
                   <h2 className="text-xl font-semibold text-neutral-900">Email</h2>
                 </div>
                 <p className="text-neutral-600 mb-3 text-sm">
-                  Send us a message and we'll respond as soon as possible.
+                  Send us a message and we&apos;ll respond as soon as possible.
                 </p>
                 <a
                   href="mailto:info@thecurious.city"
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-accent-500">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Story Tips & Hidden Gems</h3>
                     <p className="text-neutral-700 text-sm mb-0">
-                      Know a fascinating local story we haven't covered? Have a hidden gem to share? We're always looking for new angles and undiscovered places.
+                      Know a fascinating local story we haven&apos;t covered? Have a hidden gem to share? We&apos;re always looking for new angles and undiscovered places.
                     </p>
                   </div>
 
@@ -91,28 +91,28 @@ export default function ContactPage() {
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-green-500">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Business Listings</h3>
                     <p className="text-neutral-700 text-sm mb-0">
-                      Restaurant, bar, or coffee shop owner? While we discover most places independently, you're welcome to share updates about your establishment.
+                      Restaurant, bar, or coffee shop owner? While we discover most places independently, you&apos;re welcome to share updates about your establishment.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-purple-500">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Partnerships & Collaborations</h3>
                     <p className="text-neutral-700 text-sm mb-0">
-                      Interested in partnering with The Curious City? We're open to collaborations with local organizations, tourism boards, and media outlets.
+                      Interested in partnering with The Curious City? We&apos;re open to collaborations with local organizations, tourism boards, and media outlets.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-orange-500">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Press & Media Inquiries</h3>
                     <p className="text-neutral-700 text-sm mb-0">
-                      Journalists and media professionals: we're happy to provide interviews, expert commentary, or access to our research.
+                      Journalists and media professionals: we&apos;re happy to provide interviews, expert commentary, or access to our research.
                     </p>
                   </div>
 
                   <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-red-500">
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Legal & Copyright</h3>
                     <p className="text-neutral-700 text-sm mb-0">
-                      For copyright concerns, DMCA notices, or other legal matters, please email us with "LEGAL" in the subject line.
+                      For copyright concerns, DMCA notices, or other legal matters, please email us with &quot;LEGAL&quot; in the subject line.
                     </p>
                   </div>
 
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <section className="mb-10">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Stay Connected</h2>
                 <p className="text-neutral-700 mb-4">
-                  Don't want to wait for a response? Stay up to date with our latest discoveries:
+                  Don&apos;t want to wait for a response? Stay up to date with our latest discoveries:
                 </p>
                 <div className="bg-accent-50 p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-neutral-900 mb-3">Newsletter</h3>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                 <div className="bg-neutral-100 border border-neutral-200 rounded-xl p-8 text-center">
                   <h2 className="text-2xl font-semibold text-neutral-900 mb-3">Ready to Reach Out?</h2>
                   <p className="text-neutral-600 mb-6">
-                    We're excited to hear from you!
+                    We&apos;re excited to hear from you!
                   </p>
                   <a
                     href="mailto:info@thecurious.city"

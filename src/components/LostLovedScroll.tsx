@@ -209,10 +209,10 @@ function LostLovedSection({
                 </svg>
               </div>
               <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
-                Why It's Missed
+                Why It&apos;s Missed
               </h4>
               <p className="text-neutral-800 italic leading-relaxed">
-                "{item.whyMissed}"
+                &quot;{item.whyMissed}&quot;
               </p>
             </div>
 

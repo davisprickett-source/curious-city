@@ -201,7 +201,7 @@ export function ScrollyContent({
                 Explore More {cityName}
               </h2>
               <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
-                From hidden bars to historic curiosities, there's more to discover.
+                From hidden bars to historic curiosities, there&apos;s more to discover.
               </p>
             </div>
 

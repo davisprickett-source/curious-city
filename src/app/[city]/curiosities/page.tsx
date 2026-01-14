@@ -46,33 +46,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-// Category badge color helper
-// @ts-ignore - Function for future use
-const getCategoryStyle = (category: string) => {
-  switch (category) {
-    case 'history':
-      return 'bg-amber-50 text-amber-700'
-    case 'architecture':
-      return 'bg-blue-50 text-blue-700'
-    case 'underground':
-      return 'bg-neutral-800 text-neutral-200'
-    case 'science':
-      return 'bg-emerald-50 text-emerald-700'
-    case 'culture':
-      return 'bg-purple-50 text-purple-700'
-    case 'law':
-      return 'bg-red-50 text-red-700'
-    case 'invention':
-      return 'bg-cyan-50 text-cyan-700'
-    case 'legend':
-      return 'bg-violet-50 text-violet-700'
-    case 'nature':
-      return 'bg-green-50 text-green-700'
-    default:
-      return 'bg-neutral-100 text-neutral-600'
-  }
-}
-
 export default async function CityCuriositiesPage({ params, searchParams }: PageProps) {
   const { city: slug } = await params
   const { category: activeCategory } = await searchParams

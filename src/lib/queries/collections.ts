@@ -34,7 +34,7 @@ export async function getCityCollection<T extends ContentItem>(
     // Try loading from modular structure first
     const collection = await import(`@/data/cities/${citySlug}/collections/${collectionType}`)
     return collection.default || collection[toCamelCase(collectionType)] || []
-  } catch (err) {
+  } catch {
     // Fall back to extracting from monolithic city file
     const city = await getCity(citySlug)
     if (!city) return []

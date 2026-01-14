@@ -10,7 +10,7 @@ interface CityNavProps {
   currentSection?: AnyCitySection
 }
 
-export function CityNav({ citySlug, cityName: _cityName, currentSection }: CityNavProps) {
+export function CityNav({ citySlug, currentSection }: CityNavProps) {
   return (
     <nav className="border-b border-neutral-200 bg-neutral-50">
       <div className="container-page">

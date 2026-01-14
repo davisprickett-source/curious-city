@@ -78,7 +78,6 @@ function sortByDiversityAndRecency(cards: PageCardData[]): PageCardData[] {
   // Interleave from all buckets for maximum diversity
   const result: PageCardData[] = []
   const typeKeys = Object.keys(buckets)
-  let index = 0
 
   while (result.length < sorted.length) {
     let added = false
@@ -91,7 +90,6 @@ function sortByDiversityAndRecency(cards: PageCardData[]): PageCardData[] {
     }
 
     if (!added) break
-    index++
   }
 
   return result

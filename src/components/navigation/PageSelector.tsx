@@ -20,14 +20,6 @@ function PageSelectorContent({
   const timeoutRef = useRef<NodeJS.Timeout>()
   const { buildPageUrl } = useNavigation()
 
-  // If no section is set (on city home page), don't show the selector
-  if (!currentSection) {
-    return null
-  }
-
-  const currentLabel =
-    citySections.find((s) => s.id === currentSection)?.label || 'Sections'
-
   // Cleanup timeout on unmount
   useEffect(() => {
     return () => {
@@ -36,6 +28,11 @@ function PageSelectorContent({
       }
     }
   }, [])
+
+  // If no section is set (on city home page), don't show the selector
+  if (!currentSection) {
+    return null
+  }
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) {

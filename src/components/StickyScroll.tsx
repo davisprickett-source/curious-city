@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, MotionValue } from 'framer-motion'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 export interface ScrollSection {
@@ -13,6 +13,49 @@ export interface ScrollSection {
 interface StickyScrollProps {
   imageSrc: string
   sections: ScrollSection[]
+}
+
+// Sub-component to handle per-section opacity transform safely
+function StickySection({ 
+  section, 
+  index, 
+  totalSections, 
+  scrollYProgress 
+}: { 
+  section: ScrollSection
+  index: number
+  totalSections: number
+  scrollYProgress: MotionValue<number>
+}) {
+  const sectionProgress = 1 / totalSections
+  const start = index * sectionProgress
+  const middle = start + sectionProgress / 2
+  const end = (index + 1) * sectionProgress
+
+  const opacity = useTransform(
+    scrollYProgress,
+    [start, middle, end],
+    [0, 1, 0]
+  )
+
+  return (
+    <motion.div
+      style={{ opacity }}
+      className="absolute inset-0 flex flex-col justify-center"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        {section.title}
+      </h2>
+      {section.highlight && (
+        <p className="text-xl text-neutral-600 mb-4 font-medium">
+          {section.highlight}
+        </p>
+      )}
+      <p className="text-lg text-neutral-700 leading-relaxed">
+        {section.content}
+      </p>
+    </motion.div>
+  )
 }
 
 /**
@@ -91,40 +134,15 @@ export function StickyScroll({ imageSrc, sections }: StickyScrollProps) {
 
             {/* Text sections on right */}
             <div className="relative h-full flex items-center">
-              {sections.map((section, index) => {
-                // Calculate opacity for each section based on scroll progress
-                const sectionCount = sections.length
-                const sectionProgress = 1 / sectionCount
-                const start = index * sectionProgress
-                const middle = start + sectionProgress / 2
-                const end = (index + 1) * sectionProgress
-
-                const opacity = useTransform(
-                  scrollYProgress,
-                  [start, middle, end],
-                  [0, 1, 0]
-                )
-
-                return (
-                  <motion.div
-                    key={index}
-                    style={{ opacity }}
-                    className="absolute inset-0 flex flex-col justify-center"
-                  >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                      {section.title}
-                    </h2>
-                    {section.highlight && (
-                      <p className="text-xl text-neutral-600 mb-4 font-medium">
-                        {section.highlight}
-                      </p>
-                    )}
-                    <p className="text-lg text-neutral-700 leading-relaxed">
-                      {section.content}
-                    </p>
-                  </motion.div>
-                )
-              })}
+              {sections.map((section, index) => (
+                <StickySection
+                  key={index}
+                  section={section}
+                  index={index}
+                  totalSections={sections.length}
+                  scrollYProgress={scrollYProgress}
+                />
+              ))}
             </div>
           </div>
         </div>

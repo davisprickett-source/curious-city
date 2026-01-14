@@ -54,7 +54,7 @@ export default async function ArticlesPage() {
                   Articles Coming Soon
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  We're working on bringing you the best stories and essays from cities across America.
+                  We&apos;re working on bringing you the best stories and essays from cities across America.
                 </p>
               </div>
             </div>

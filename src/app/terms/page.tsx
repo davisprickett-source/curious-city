@@ -21,7 +21,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Agreement to Terms</h2>
                 <p className="text-neutral-700 mb-4">
-                  Welcome to The Curious City. By accessing or using our website at thecurious.city (the "Site"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Site.
+                  Welcome to The Curious City. By accessing or using our website at thecurious.city (the &quot;Site&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Site.
                 </p>
                 <p className="text-neutral-700 mb-4">
                   We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting. Your continued use of the Site after changes are posted constitutes your acceptance of the modified Terms.
@@ -55,7 +55,7 @@ export default function TermsPage() {
                 <ul className="list-disc pl-6 mb-4 text-neutral-700 space-y-2">
                   <li>Access the Site only through approved interfaces</li>
                   <li>Respect all intellectual property rights</li>
-                  <li>Not interfere with the Site's operation or security</li>
+                  <li>Not interfere with the Site&apos;s operation or security</li>
                   <li>Comply with all applicable laws and regulations</li>
                 </ul>
 
@@ -103,9 +103,9 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Disclaimers</h2>
 
-                <h3 className="text-xl font-semibold text-neutral-800 mb-3">"As Is" Basis</h3>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-3">&quot;As Is&quot; Basis</h3>
                 <p className="text-neutral-700 mb-4">
-                  THE SITE AND ALL CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+                  THE SITE AND ALL CONTENT ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
                 </p>
 
                 <h3 className="text-xl font-semibold text-neutral-800 mb-3">Accuracy of Information</h3>
@@ -141,7 +141,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Indemnification</h2>
                 <p className="text-neutral-700 mb-4">
-                  You agree to indemnify, defend, and hold harmless The Curious City and its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:
+                  You agree to indemnify, defend, and hold harmless The Curious City and its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&apos; fees) arising from:
                 </p>
                 <ul className="list-disc pl-6 mb-4 text-neutral-700 space-y-2">
                   <li>Your use of the Site</li>
@@ -157,7 +157,7 @@ export default function TermsPage() {
                   The Site displays advertisements provided by third-party advertising networks, including Google AdSense. We do not control the content of these advertisements and are not responsible for the products or services advertised.
                 </p>
                 <p className="text-neutral-700 mb-4">
-                  Advertisers may use cookies and other tracking technologies. Your interactions with advertisements are subject to the advertiser's own privacy policies and terms.
+                  Advertisers may use cookies and other tracking technologies. Your interactions with advertisements are subject to the advertiser&apos;s own privacy policies and terms.
                 </p>
               </section>
 

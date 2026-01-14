@@ -92,9 +92,6 @@ export default async function CityScenesPage({ params, searchParams }: PageProps
           {scenes.length > 0 ? (
             <div className="space-y-8">
               {scenes.map((scene: any) => {
-                // @ts-ignore - Variable for future use
-                const isVideo = scene.media?.type === 'video'
-
                 return (
                   <article
                     key={scene.id}

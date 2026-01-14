@@ -114,7 +114,7 @@ export function extractArtistFromTitle(title: string): string | null {
   if (!title) return null
 
   // Remove common suffixes
-  let cleaned = title
+    const cleaned = url.split('?')[0]
     .replace(/\s+at\s+.+$/i, '')
     .replace(/\s+-\s+.+$/i, '')
     .replace(/\s+@\s+.+$/i, '')

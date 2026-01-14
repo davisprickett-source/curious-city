@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { VideoScrubber } from './VideoScrubber'
@@ -373,16 +373,6 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
   const prefersReducedMotion = useReducedMotion()
   const isEven = index % 2 === 0
   const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
-
-  // Parallax effect for the number badge - DRAMATIC movement
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start end', 'end start']
-  })
-
-  // Much more dramatic parallax - big movement range (no rotation)
-  // @ts-ignore - Variable for future use
-  const numberY = useTransform(scrollYProgress, [0, 1], [120, -120])
 
   // Combine refs using callback
   const setRefs = (element: HTMLElement | null) => {
@@ -875,7 +865,7 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
   )
 }
 
-export function CuriositiesScroll({ curiosities, cityName: _cityName }: CuriositiesScrollProps) {
+export function CuriositiesScroll({ curiosities }: CuriositiesScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
 

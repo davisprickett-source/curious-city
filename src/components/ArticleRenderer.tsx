@@ -108,7 +108,7 @@ function ArticleBlockRenderer({
       return (
         <blockquote className="my-10 border-l-4 border-accent-500 pl-6 py-4 bg-neutral-50 rounded-r-lg">
           <p className="text-xl text-neutral-800 italic leading-relaxed mb-3">
-            "{block.content}"
+            &quot;{block.content}&quot;
           </p>
           {block.attribution && (
             <cite className="text-sm text-neutral-600 not-italic">

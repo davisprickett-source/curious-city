@@ -31,7 +31,7 @@ interface PremiumCuriositiesScrollProps {
   cityName: string
 }
 
-export function PremiumCuriositiesScroll({ curiosities, cityName: _cityName }: PremiumCuriositiesScrollProps) {
+export function PremiumCuriositiesScroll({ curiosities }: PremiumCuriositiesScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
 
   // Track scroll progress
