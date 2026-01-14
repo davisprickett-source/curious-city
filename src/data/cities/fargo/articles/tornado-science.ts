@@ -31,6 +31,13 @@ export const tornadoScience: Article = {
           content: 'The tornado killed 13 people, injured more than 100, and destroyed or damaged over 1,300 homes. It was the deadliest tornado in North Dakota history. But the storm\'s greatest impact wasn\'t measured in casualties. It was measured in knowledge. Because a young Japanese scientist came to Fargo to study the wreckage, and what he learned there would revolutionize how we understand tornadoes.',
         },
         {
+          type: 'image',
+          src: 'https://digitalhorizonsonline.org/digital/api/singleitem/image/photos/10547/default.jpg',
+          alt: 'Aftermath of the 1957 Fargo tornado, showing widespread destruction',
+          caption: 'Devastation in North Fargo after the F5 tornado of June 20, 1957. This scene of widespread destruction provided Ted Fujita with a unique "laboratory" for his groundbreaking meteorological research.',
+          credit: 'Digital Horizons Online / North Dakota State University Archives',
+        },
+        {
           type: 'paragraph',
           content: 'His name was Tetsuya Theodore Fujita. The scale he eventually created — the Fujita Scale, ranking tornadoes from F0 to F5 — is still used today. And it all started in the rubble of Fargo.',
         },
@@ -69,6 +76,13 @@ export const tornadoScience: Article = {
           type: 'heading',
           level: 2,
           content: 'The Scientist',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Tetsuya_Theodore_Fujita.jpg',
+          alt: 'Portrait of Tetsuya Theodore Fujita',
+          caption: 'Tetsuya Theodore Fujita, the Japanese meteorologist who revolutionized tornado science. His study of the 1957 Fargo tornado laid the groundwork for the Fujita Scale.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -127,6 +141,13 @@ export const tornadoScience: Article = {
           type: 'heading',
           level: 2,
           content: 'The Scale',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Fujita_scale_diagram.svg/1280px-Fujita_scale_diagram.svg.png',
+          alt: 'Fujita Scale diagram illustrating tornado intensity',
+          caption: 'The Fujita Scale, developed by Ted Fujita, rates tornado intensity from F0 to F5 based on the damage they cause. The 1957 Fargo tornado was retrospectively rated an F5, the highest category.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

@@ -44,22 +44,15 @@ export const poorFarm: Article = {
           content: 'The Cass County Hospital and Poor Farm was established in 1895, when Fargo was still a rough frontier town. It served a grim purpose: housing people who had nowhere else to go. The elderly without families. The chronically ill without money. The mentally disabled whom society had no place for. The term "poor farm" was literal — residents were expected to work the land to offset the cost of their care.',
         },
         {
+          type: 'image',
+          src: 'https://www.ne.gov/wp-content/uploads/2018/06/cass_county_poor_house_plattsmouth_ne_1918.jpg',
+          alt: 'Cass County Poor Farm, Plattsmouth, Nebraska, circa 1918',
+          caption: 'A typical poor farm in the early 20th century, where the destitute and ill found their last refuge. While this image is from Nebraska, the Cass County Poor Farm in Fargo would have looked similar.',
+          credit: 'Nebraska State Historical Society',
+        },
+        {
           type: 'paragraph',
           content: 'Life on the poor farm was hard. Residents lived in dormitory-style housing, ate institutional food, and worked in the fields and gardens that surrounded the facility. Medical care was basic. Privacy was nonexistent. The poor farm wasn\'t a punishment — it was a last resort, the only option for people whom the economy and their families had discarded.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Many residents arrived already dying. Tuberculosis was common. So was what they called "senility" — various forms of dementia that left people unable to care for themselves. Some residents lived at the poor farm for years; others lasted only weeks. Death was a constant presence.',
-        },
-        {
-          type: 'quote',
-          content: 'The poor farm was where you went when you had no other options. It wasn\'t cruel, exactly, but it wasn\'t kind either. It was just a place to exist until you didn\'t anymore.',
-          attribution: 'Local historian',
-          role: 'Interview, 2015',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
         },
         {
           type: 'heading',
@@ -69,6 +62,13 @@ export const poorFarm: Article = {
         {
           type: 'paragraph',
           content: 'When poor farm residents died — and they died frequently — the county faced a problem. Proper burials cost money. Headstones cost money. Cemetery plots cost money. The families who might have paid these costs either didn\'t exist or had already abandoned the deceased. So the county buried the dead on-site.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Potters_Field_grave_site.jpg',
+          alt: 'Unmarked graves in a pauper\'s field cemetery',
+          caption: 'Potter\'s Field, a common term for pauper\'s graves. The residents of the Poor Farm were buried in unmarked graves, a fate that many of society\'s forgotten shared.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

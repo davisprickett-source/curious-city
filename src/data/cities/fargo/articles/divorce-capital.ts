@@ -27,8 +27,22 @@ export const divorceCapital: Article = {
           content: 'In 1893, a wealthy New Yorker named Mrs. Van Ness stepped off the Northern Pacific train in Fargo, North Dakota. She checked into the Headquarters Hotel, left her bag in her room, walked to the courthouse, filed for divorce, appeared before a judge, and was granted a decree dissolving her marriage. The entire process took less than a day. By evening, she was back on a train heading east, legally single, her unhappy marriage officially over.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Fargo_North_Dakota_Main_Street_1890s.jpg/1280px-Fargo_North_Dakota_Main_Street_1890s.jpg',
+          alt: 'Main Street in Fargo, North Dakota, 1890s',
+          caption: 'Main Street in Fargo, North Dakota, circa 1890s. The town\'s bustling commercial district was a hub for divorce-seekers arriving by train.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Mrs. Van Ness was not unusual. In the 1880s and 1890s, Fargo was the divorce capital of America — a dusty railroad town on the northern prairie where marriages from across the country and around the world came to die. The territory\'s laws were so lenient, the process so quick, that desperate spouses traveled thousands of miles to escape their unions. Fargo didn\'t judge. Fargo just signed the papers.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Northern_Pacific_Railroad_Depot%2C_Fargo%2C_North_Dakota%2C_built_1898.jpg/1280px-Northern_Pacific_Railroad_Depot%2C_Fargo%2C_North_Dakota%2C_built_1898.jpg',
+          alt: 'Northern Pacific Railroad Depot in Fargo, North Dakota, built 1898',
+          caption: 'The Northern Pacific Railroad Depot in Fargo, 1898. The railroad brought thousands of divorce-seekers to the city, fueling its "divorce mill" industry.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -69,6 +83,13 @@ export const divorceCapital: Article = {
         {
           type: 'paragraph',
           content: 'In 1877, the legislature tightened the law slightly, requiring 90 days of residency before filing. But 90 days was still nothing compared to other states, and Fargo — the largest city in the territory, sitting on the main railroad line from the east — became ground zero for the "divorce mill."',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cass_County_Courthouse_Fargo_ND.jpg/1280px-Cass_County_Courthouse_Fargo_ND.jpg',
+          alt: 'Cass County Courthouse in Fargo, North Dakota, early 1900s',
+          caption: 'The Cass County Courthouse in Fargo, early 1900s. Judges here processed hundreds of divorces annually, making Fargo the "divorce capital of America."',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
