@@ -87,19 +87,9 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         useFixedPosition
       />
 
-      <DynamicScrollyMapView
-        spots={spotsWithCoords}
-        cityName={city.name}
-        title={`${city.name}'s Best Restaurants`}
-        intro={intro}
-        markerType="restaurant"
-        showBanner={true}
-        bannerImage="/global-banners/restaurant-banner.png"
-        currentCategory="restaurants"
-        exploreLinks={exploreLinks}
-        footer={<Footer />}
-        url={url} // Pass url here
-      />
+      <div className="text-center py-20">
+        <h1>Loading Map View... (Temporarily Disabled for Debugging)</h1>
+      </div>
     </>
   )
 }
