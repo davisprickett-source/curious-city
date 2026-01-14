@@ -23,7 +23,11 @@ export const raleighSpeedway: Article = {
       blocks: [
         {
           type: 'paragraph',
-          content: 'There\'s a patch of woods near Atlantic Avenue, just north of the Beltline, where something strange happens if you know where to look. Push through the undergrowth, past the industrial buildings and power substations, and you\'ll find it: about ninety feet of cracked asphalt, covered in pine needles, curving through the trees. It\'s all that remains of Raleigh Speedway — a NASCAR superspeedway that was supposed to rival Daytona. Here, racing legends like Lee Petty and Fireball Roberts once competed under the first permanent lights in NASCAR history, an innovation brought by NASCAR founder Bill France Sr., who envisioned Raleigh as the capital of Southern racing.',
+          content: 'There\'s a patch of woods near Atlantic Avenue, just north of the Beltline, where something strange happens if you know where to look. Push through the undergrowth, past the industrial buildings and power substations, and you\'ll find it: about ninety feet of cracked asphalt, covered in pine needles, curving through the trees. It\'s all that remains of Raleigh Speedway — a NASCAR superspeedway that was supposed to rival Daytona.',
+        },
+        {
+          type: 'paragraph',
+          content: 'In the 1950s, this was one of the fastest tracks in the South. Lee Petty raced here. Fireball Roberts raced here. The track had the first permanent lights in NASCAR history, making it the first speedway to host night races. Bill France Sr., the founder of NASCAR himself, built it. He thought Raleigh would be the capital of Southern racing.',
         },
         {
           type: 'image',
@@ -52,7 +56,10 @@ export const raleighSpeedway: Article = {
           src: '/raleigh/speedway/speedway-2.png',
           alt: 'Raleigh Speedway grandstands and facilities',
         },
-
+        {
+          type: 'paragraph',
+          content: 'France invested in the track heavily. In 1955, he installed permanent lighting — the first at any NASCAR facility. Night racing was born in Raleigh. For a brief moment, the track was the most advanced in the sport.',
+        },
         {
           type: 'image',
           src: '/raleigh/speedway/speedway-3.png',
@@ -171,22 +178,12 @@ export const raleighSpeedway: Article = {
           content: 'Bill France Sr. didn\'t give up on his vision of a Southern racing capital. After Raleigh failed, he turned his attention to Florida. In 1959, the year after Raleigh Speedway\'s last race, Daytona International Speedway opened. It became everything Raleigh was supposed to be — the center of NASCAR, the most famous track in stock car racing.',
         },
         {
-          type: 'image',
-          src: '/placeholders/daytona-placeholder.png', // Placeholder for a Daytona image
-          alt: 'Historic or modern image of Daytona International Speedway',
-        },
-        {
-          type: 'image',
-          src: '/placeholders/daytona-placeholder-2.png', // Second placeholder for a Daytona image
-          alt: 'Another historic or modern image of Daytona International Speedway',
-        },
-        {
           type: 'paragraph',
           content: 'Raleigh\'s loss was Daytona\'s gain. The innovations tested at Raleigh — night racing, superspeedway design, professional facilities — all found their ultimate expression in Daytona. The track that should have put Raleigh on the map instead put Daytona Beach there.',
         },
         {
           type: 'paragraph',
-          content: 'Today, there\'s a dedicated website ([raleighspeedway.org](https://www.raleighspeedway.org)) archiving materials related to the track — photographs, race results, memories from people who were there. Racing historians consider Raleigh Speedway one of NASCAR\'s most significant lost venues, a road not taken that shaped the sport\'s geography.',
+          content: 'Today, there\'s a dedicated website (raleighspeedway.org) archiving materials related to the track — photographs, race results, memories from people who were there. Racing historians consider Raleigh Speedway one of NASCAR\'s most significant lost venues, a road not taken that shaped the sport\'s geography.',
         },
         {
           type: 'ad',
@@ -197,7 +194,7 @@ export const raleighSpeedway: Article = {
         },
         {
           type: 'paragraph',
-          content: 'The small fragment of asphalt in the woods near Atlantic Avenue might not seem like much today, just another forgotten piece of an earlier Raleigh slowly returning to the forest.',
+          content: 'In the woods near Atlantic Avenue, ninety feet of asphalt curve through the trees. Pine needles cover the track surface. Weeds push through cracks in the pavement. It doesn\'t look like much — just another forgotten fragment of an earlier Raleigh, slowly returning to the forest.',
         },
         {
           type: 'image',
@@ -216,7 +213,7 @@ export const raleighSpeedway: Article = {
           type: 'callout',
           variant: 'tip',
           title: 'Learning More',
-          content: 'The Raleigh Speedway Historical Project ([raleighspeedway.org](https://www.raleighspeedway.org)) maintains an archive of photographs, race results, and oral histories from the track. The site includes maps showing the track\'s location overlaid on modern aerial imagery. Occoneechee Speedway, another abandoned NASCAR track near Hillsborough, NC, is better preserved and open for tours.',
+          content: 'The Raleigh Speedway Historical Project (raleighspeedway.org) maintains an archive of photographs, race results, and oral histories from the track. The site includes maps showing the track\'s location overlaid on modern aerial imagery. Occoneechee Speedway, another abandoned NASCAR track near Hillsborough, NC, is better preserved and open for tours.',
         },
       ],
     },

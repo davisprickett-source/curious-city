@@ -1,6 +1,5 @@
-import { Header, Footer, ShareButton, NewsletterSignup } from '@/components'
+import { Header, Footer } from '@/components'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Terms of Service - The Curious City',
@@ -16,9 +15,6 @@ export default function TermsPage() {
         <div className="container-page section-spacing">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold text-neutral-900 mb-4">Terms of Service</h1>
-            <div className="mb-8">
-              <ShareButton title="Terms of Service | The Curious City" url="https://thecurious.city/terms" />
-            </div>
             <p className="text-sm text-neutral-500 mb-8">Last Updated: January 2, 2026</p>
 
             <div className="prose prose-lg max-w-none">
@@ -224,30 +220,6 @@ export default function TermsPage() {
           </div>
         </div>
       </main>
-
-      {/* End of Terms Page Flow - Share, Subscribe, Feedback */}
-      <div className="container-page py-12 space-y-8">
-        {/* Share Component */}
-        <ShareButton title="Terms of Service | The Curious City" url="https://thecurious.city/terms" />
-
-        {/* Subscribe */}
-        <NewsletterSignup />
-
-        {/* Feedback Component (mailto link) */}
-        <div>
-          <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
-          <p className="text-neutral-700">
-            Found an error or have a suggestion? {' '}
-            <Link
-              href={`mailto:hello@thecurious.city?subject=Feedback on Terms of Service Page`}
-              className="text-accent-600 hover:text-accent-700 font-semibold"
-            >
-              Send us feedback
-            </Link>
-            .
-          </p>
-        </div>
-      </div>
 
       <Footer />
     </>

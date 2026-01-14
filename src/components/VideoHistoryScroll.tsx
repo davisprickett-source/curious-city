@@ -10,7 +10,6 @@ import { PremiumMobileMenu } from './PremiumMobileMenu'
 import { ShareButton } from './ShareButton'
 import { getCity } from '@/data/cities'
 import { getCityFeaturedEntries } from '@/lib/content/cityHomepage'
-import { NewsletterSignup } from './NewsletterSignup'
 
 interface VideoHistoryScrollProps {
   history: History
@@ -547,42 +546,67 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
           </div>
 
           {/* Footer - appears at end of scroll */}
-                    <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
-                      {/* Share Options */}
-                      <div className="mb-8 pb-8 border-b border-neutral-200">
-                        <h4 className="font-bold text-neutral-900 mb-4">Share this story</h4>
-                        <ShareButton title={history.title} />
-                      </div>
-          
-                      {/* Subscribe */}
-                      <div className="mb-8 pb-8 border-b border-neutral-200">
-                        <h4 className="font-bold text-neutral-900 mb-2">Stay curious</h4>
-                        <p className="text-sm text-neutral-600 mb-3">New stories delivered to your inbox.</p>
-                        <NewsletterSignup />
-                      </div>
-          
-                      {/* Explore More Section (Other Pages/Articles) */}
-                      <div className="mb-8 pb-8 border-b border-neutral-200">
-                        <h3 className="text-xl font-bold text-neutral-900 mb-4">Explore More</h3>
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                          <RelatedStoryCards currentCity={history.citySlug} currentSlug={history.slug} />
-                        </div>
-                      </div>
-          
-                      {/* Feedback Link */}
-                      <div className="text-center">
-                        <p className="text-sm text-neutral-500 mb-2">Have a suggestion or found an error?</p>
-                        <a
-                          href={`mailto:hello@thecurious.city?subject=Feedback on: ${encodeURIComponent(history.title)}`}
-                          className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-medium transition-colors"
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                          </svg>
-                          Send us feedback
-                        </a>
-                      </div>
-                    </footer>
+          <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
+            {/* Explore More Section */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <h3 className="text-xl font-bold text-neutral-900 mb-4">Explore More</h3>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <RelatedStoryCards currentCity={history.citySlug} currentSlug={history.slug} />
+              </div>
+            </div>
+
+            {/* Share Options */}
+            <div className="mb-8 pb-8 border-b border-neutral-200">
+              <h4 className="font-bold text-neutral-900 mb-4">Share this story</h4>
+              <ShareButton title={history.title} />
+            </div>
+
+            {/* Newsletter Signup */}
+            <div className="mb-8">
+              <h4 className="font-bold text-neutral-900 mb-2">Stay curious</h4>
+              <p className="text-sm text-neutral-600 mb-3">New stories delivered to your inbox.</p>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  const form = e.target as HTMLFormElement
+                  const input = form.querySelector('input') as HTMLInputElement
+                  if (input.value) {
+                    input.value = ''
+                    alert('Thanks for subscribing!')
+                  }
+                }}
+                className="flex gap-2"
+              >
+                <input
+                  type="email"
+                  placeholder="your@email.com"
+                  className="flex-1 px-3 py-2 text-sm border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 text-sm font-medium text-white bg-accent-600 rounded-lg hover:bg-accent-700 transition-colors"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            {/* Feedback Link */}
+            <div className="text-center">
+              <p className="text-sm text-neutral-500 mb-2">Have a suggestion or found an error?</p>
+              <a
+                href={`mailto:hello@thecurious.city?subject=Feedback on: ${encodeURIComponent(history.title)}`}
+                className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-medium transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Send us feedback
+              </a>
+            </div>
+
+          </footer>
         </div>
       </div>
     </>

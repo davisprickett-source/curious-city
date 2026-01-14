@@ -180,7 +180,7 @@ export function ScrollyContent({
         className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-start min-h-screen"
         ref={(el) => { sectionRefs.current[spots.length] = el }}
       >
-        <div className="max-w-5xl w-full mx-auto space-y-12 px-6 py-12 flex flex-col">
+        <div className="max-w-5xl w-full mx-auto space-y-12 px-6 py-12">
           {/* Share Button Section */}
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
@@ -274,7 +274,8 @@ export function ScrollyContent({
 
         {/* Footer integrated into outro for better connection */}
         {footer && (
-                      <div className="relative border-t border-white/10">            {footer}
+          <div className="relative mt-auto border-t border-white/10">
+            {footer}
           </div>
         )}
       </ScrollySection>

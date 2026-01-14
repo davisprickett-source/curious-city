@@ -1,6 +1,6 @@
 import { getAllCities } from '@/data/cities'
 import { getAllHistory } from '@/data/history'
-import { Footer, ShareButton, NewsletterSignup } from '@/components'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -71,9 +71,6 @@ export default async function SitemapPage() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
                   Sitemap
                 </h1>
-                <div className="mb-8">
-                  <ShareButton title="Sitemap | The Curious City" url="https://thecurious.city/sitemap-page" />
-                </div>
                 <p className="text-xl text-neutral-300 leading-relaxed">
                   Complete directory of all cities, sections, and content on The Curious City
                 </p>
@@ -242,30 +239,6 @@ export default async function SitemapPage() {
             </div>
           </div>
         </main>
-      </div>
-
-      {/* End of Sitemap Page Flow - Share, Subscribe, Feedback */}
-      <div className="container-page py-12 space-y-8">
-        {/* Share Component */}
-        <ShareButton title="Sitemap | The Curious City" url="https://thecurious.city/sitemap-page" />
-
-        {/* Subscribe */}
-        <NewsletterSignup />
-
-        {/* Feedback Component (mailto link) */}
-        <div>
-          <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
-          <p className="text-neutral-700">
-            Found an error or have a suggestion? {' '}
-            <Link
-              href={`mailto:hello@thecurious.city?subject=Feedback on Sitemap Page`}
-              className="text-accent-600 hover:text-accent-700 font-semibold"
-            >
-              Send us feedback
-            </Link>
-            .
-          </p>
-        </div>
       </div>
 
       <Footer />

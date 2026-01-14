@@ -31,7 +31,8 @@ export const seattle: CityData = {
     {
       id: 'sea-curiosities',
       type: 'section',
-                title: 'The Emerald City\'s Oddities & Obscurities',      teaser: 'Underground cities, vanishing hijackers, and the gum that won\'t quit',
+      title: 'The Rain City Archive',
+      teaser: 'Underground cities, vanishing hijackers, and the gum that won\'t quit',
       intro: 'Seattle is a city built on top of a city—literally. We buried the mess of the 19th century and started over, but the weirdness keeps percolating to the surface in the form of Fremont Trolls and coffee hierarchies.',
       items: [
         {

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAllCities } from '@/data/cities'
-import { Footer, ShareButton, NewsletterSignup } from '@/components'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
@@ -59,9 +59,6 @@ export default async function CitiesPage() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                   All Cities
                 </h1>
-                <div className="mb-8">
-                  <ShareButton title="All Cities | The Curious City" url="https://thecurious.city/cities" />
-                </div>
                 <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
                   Local stories, hidden gems, and untold history from cities across America.
                 </p>
@@ -121,29 +118,6 @@ export default async function CitiesPage() {
             </div>
           </div>
         </main>
-
-      {/* End of Cities Page Flow - Share, Subscribe, Feedback */}
-      <div className="container-page py-12 space-y-8">
-        {/* Share Component */}
-        <ShareButton title="All Cities | The Curious City" url="https://thecurious.city/cities" />
-
-        {/* Subscribe */}
-        <NewsletterSignup />
-
-        {/* Feedback Component (mailto link) */}
-        <div>
-          <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
-          <p className="text-neutral-700">
-            Found an error or have a suggestion? {' '}
-            <Link
-              href={`mailto:hello@thecurious.city?subject=Feedback on All Cities Page`}
-              className="text-accent-600 hover:text-accent-700 font-semibold"
-            >
-              Send us feedback
-            </Link>
-            .
-          </p>
-        </div>
       </div>
 
       <Footer />

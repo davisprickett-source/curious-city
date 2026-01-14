@@ -135,29 +135,8 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
 
         {/* End of Article Flow */}
         <div className="container-page py-12 space-y-8">
-          {/* Share Component */}
-          <ShareButton title={`${city.name}'s Dark History`} />
-
-          {/* Subscribe */}
-          <NewsletterSignup />
-
-          {/* Other Pages/Articles Component */}
           <RelatedContent citySlug={city.slug} contentType="dark-history" />
-
-          {/* Feedback Component (mailto link) */}
-          <div>
-            <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
-            <p className="text-neutral-700">
-              Found an error or have a suggestion? {' '}
-              <Link
-                href={`mailto:hello@thecurious.city?subject=Feedback on ${city.name}'s Dark History Page`}
-                className="text-accent-600 hover:text-accent-700 font-semibold"
-              >
-                Send us feedback
-              </Link>
-              .
-            </p>
-          </div>
+          <NewsletterSignup />
         </div>
         </main>
 

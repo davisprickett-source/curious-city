@@ -1,11 +1,10 @@
 import { Metadata } from 'next'
-import { Footer, ShareButton, NewsletterSignup } from '@/components'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { CategoryHeroSection } from '@/components/category/CategoryHeroSection'
 import { CategoryCard } from '@/components/cards/CategoryCard'
 import { curateCategoryPageContent, getCategoryMeta } from '@/lib/content/categoryPageCurator'
 import { BreadcrumbSchema } from '@/components/StructuredData'
-import Link from 'next/link'
 
 const categoryMeta = getCategoryMeta('hidden-gems')
 
@@ -39,9 +38,6 @@ export default async function HiddenGemsPage() {
       />
 
       <main className="flex-1 bg-white">
-        <div className="container-page py-6">
-          <ShareButton title={`${categoryMeta.title} Category`} url={`https://thecurious.city/category/hidden-gems`} />
-        </div>
         {/* All Cities Grid */}
         <section className="py-12 md:py-16">
           <div className="container-page">
@@ -76,30 +72,6 @@ export default async function HiddenGemsPage() {
           </div>
         </section>
       </main>
-
-      {/* End of Category Page Flow - Share, Subscribe, Feedback */}
-      <div className="container-page py-12 space-y-8">
-        {/* Share Component */}
-        <ShareButton title={`${categoryMeta.title} Category`} url={`https://thecurious.city/category/hidden-gems`} />
-
-        {/* Subscribe */}
-        <NewsletterSignup />
-
-        {/* Feedback Component (mailto link) */}
-        <div>
-          <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
-          <p className="text-neutral-700">
-            Found an error or have a suggestion? {' '}
-            <Link
-              href={`mailto:hello@thecurious.city?subject=Feedback on ${categoryMeta.title} Category Page`}
-              className="text-accent-600 hover:text-accent-700 font-semibold"
-            >
-              Send us feedback
-            </Link>
-            .
-          </p>
-        </div>
-      </div>
 
       <Footer />
     </>

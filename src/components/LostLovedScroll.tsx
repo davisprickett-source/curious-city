@@ -64,7 +64,7 @@ function LostLovedSection({
   }, [inView, index, onSectionInView])
 
   // Vintage, nostalgic animation variants - softer than dark history
-  const _numberVariants = {
+  const numberVariants = {
     hidden: { opacity: 0, scale: 0.8, rotate: -5 },
     visible: {
       opacity: 1,

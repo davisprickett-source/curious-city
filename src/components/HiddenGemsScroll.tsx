@@ -76,7 +76,7 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
 
   const prefersReducedMotion = useReducedMotion()
   const isEven = index % 2 === 0
-  const _categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
+  const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
 
   // Notify parent when in view
   useEffect(() => {
@@ -86,7 +86,7 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
   }, [inView, index, onSectionInView])
 
   // Animation variants - bright, energetic
-  const _numberVariants = {
+  const numberVariants = {
     hidden: { opacity: 0, scale: 0.5, y: 100 },
     visible: {
       opacity: 1,

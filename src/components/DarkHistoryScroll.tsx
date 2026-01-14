@@ -86,7 +86,7 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
 
   const prefersReducedMotion = useReducedMotion()
   const isEven = index % 2 === 0
-  const _categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
+  const categoryStyles = item.category ? getCategoryStyle(item.category) : getCategoryStyle('default')
 
   // Notify parent when in view
   useEffect(() => {
@@ -96,7 +96,7 @@ function DarkHistorySection({ item, index, onSectionInView }: { item: DarkHistor
   }, [inView, index, onSectionInView])
 
   // Animation variants - dark, dramatic
-  const _numberVariants = {
+  const numberVariants = {
     hidden: { opacity: 0, scale: 0.5, y: 100 },
     visible: {
       opacity: 1,
@@ -564,32 +564,6 @@ export function DarkHistoryScroll({ items }: DarkHistoryScrollProps) {
   const handleSectionInView = (index: number) => {
     setActiveSection(index)
   }
-
-  // Effect to scroll to specific section on load if URL has a hash
-  useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash) {
-        const id = window.location.hash.substring(1); // Remove the '#'
-        const element = document.getElementById(id);
-        if (element) {
-          // Give a small delay to ensure all dynamic content has rendered
-          setTimeout(() => {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }, 100);
-        }
-      }
-    };
-
-    // Listen for hash changes (e.g., if user clicks internal link after initial load)
-    window.addEventListener('hashchange', handleHashChange);
-    // Call once on mount for initial load with hash
-    handleHashChange();
-
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange);
-    };
-  }, []); // Empty dependency array means this effect runs once on mount and clean up on unmount
-
 
   return (
     <div className="relative">
