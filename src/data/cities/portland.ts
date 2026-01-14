@@ -318,7 +318,6 @@ export const portland: CityData = {
             stillExists: true,
           },
         },
-        },
         {
           id: 'pdx-curiosity-9',
           type: 'curiosity',
@@ -726,6 +725,13 @@ export const portland: CityData = {
           hours: 'By email arrangement only',
           price: 'Donation requested',
           tip: 'Email ahead with respectful inquiry',
+          sources: [
+            {
+              title: 'Woodstock Mystery Hole',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole',
+            }
+          ],
           sources: [
             {
               title: 'Woodstock Mystery Hole',
