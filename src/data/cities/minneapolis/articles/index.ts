@@ -16,7 +16,7 @@ export const duckDuckGreyDuck: Article = {
   },
   publishedAt: '2025-01-09T12:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/duck-duck-grey-duck.png',
+    src: '/minneapolis/articles/duck-duck-grey-duck.jpg',
     alt: 'Children playing Duck Duck Grey Duck in Minnesota',
     credit: 'Minnesota Historical Society',
   },
@@ -388,4 +388,4 @@ export const newRestaurantsNortheast: Article = {
   },
 }
 
-export const articles: Article[] = [gatewayDistrict, washburnMill, bohemianFlats, somaliMinneapolis, duckDuckGreyDuck, newRestaurantsNortheast]
+export const articles: Article[] = [gatewayDistrict, washburnMill, bohemianFlats, somaliMinneapolis, duckDuckGreyDuck]

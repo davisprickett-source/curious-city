@@ -12,7 +12,7 @@ export const somaliMinneapolis: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/somali-minneapolis.png',
+    src: '/minneapolis/articles/somali-minneapolis.jpg',
     alt: 'Cedar-Riverside neighborhood in Minneapolis, home to "Little Mogadishu"',
     credit: 'Sahan Journal',
   },
