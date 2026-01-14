@@ -1,11 +1,16 @@
+import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
-import { ScrollyMapView } from '@/components/scrollytelling'
+// import { ScrollyMapView } from '@/components/scrollytelling' // Commented out
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { getExploreLinks } from '@/lib/content/cityHomepage'
 import { BreadcrumbSchema } from '@/components/StructuredData'
+
+const DynamicScrollyMapView = dynamic(() => import('@/components/scrollytelling').then((mod) => mod.ScrollyMapView), {
+  ssr: false,
+})
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -82,7 +87,7 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
         useFixedPosition
       />
 
-      <ScrollyMapView
+      <DynamicScrollyMapView
         spots={spotsWithCoords}
         cityName={city.name}
         title={`${city.name}'s Best Restaurants`}
