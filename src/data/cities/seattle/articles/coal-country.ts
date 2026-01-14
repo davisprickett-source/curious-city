@@ -67,6 +67,13 @@ export const coalCountry: Article = {
           content: 'The Workers',
         },
         {
+          type: 'image',
+          src: 'https://digitalcollections.lib.washington.edu/digital/api/singleitem/image/earl/8783/default.jpg',
+          alt: 'Chinese miners in Black Diamond coal mine, circa 1890',
+          caption: 'Miners, likely Chinese, in the Black Diamond coal mine, circa 1890. Chinese workers were often assigned the most dangerous jobs in the King County mines.',
+          credit: 'University of Washington Libraries',
+        },
+        {
           type: 'paragraph',
           content: 'Coal mining was brutal work. Miners descended into tunnels that could flood, collapse, or fill with explosive gas at any moment. They worked by candlelight or oil lamp, breathing coal dust that would eventually kill them even if the mine didn\'t. They were paid by the ton, which incentivized speed over safety. Accidents were constant. Deaths were common.',
         },
@@ -75,19 +82,16 @@ export const coalCountry: Article = {
           content: 'The workforce was stratified by race. White miners — many of them immigrants from Wales, Scotland, and England, where coal mining was a generational trade — got the skilled positions: cutting coal faces, managing crews, operating equipment. Chinese workers, recruited in large numbers after the transcontinental railroad was completed, got the most dangerous jobs: working in poorly ventilated tunnels, handling explosives, doing the labor that white workers refused.',
         },
         {
-          type: 'paragraph',
-          content: 'By the 1870s, Chinese workers made up a significant portion of King County\'s mining workforce. They lived in segregated camps, were paid less than white workers, and were blamed when anything went wrong. When the mines had layoffs, Chinese workers were fired first. When there was an explosion, Chinese workers were more likely to be underground.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The Segregated Mines',
-          content: 'King County mines operated under strict racial hierarchies. White miners earned $2.50-3.00 per day. Chinese miners earned $1.00-1.50 for the same work. Housing, dining, and work assignments were segregated. During the anti-Chinese violence of the 1880s, many Chinese miners were driven out entirely.',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Displaced',
+        },
+        {
+          type: 'image',
+          src: 'https://www.duwamishtribe.org/wp-content/uploads/2018/06/chief-seattle.jpg',
+          alt: 'Portrait of Chief Seattle',
+          caption: 'Chief Seattle, leader of the Suquamish and Duwamish tribes. The Duwamish people were displaced from their ancestral lands to make way for King County\'s expanding coal industry.',
+          credit: 'Duwamish Tribe',
         },
         {
           type: 'paragraph',

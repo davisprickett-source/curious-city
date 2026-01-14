@@ -71,6 +71,13 @@ export const wellingtonAvalanche: Article = {
           content: 'The trains made it through the 2.6-mile Cascade Tunnel without incident, emerging on the western slope at a tiny railroad stop called Wellington. Here, at 3,100 feet elevation, they stopped. Ahead, the tracks were buried. An avalanche had swept away a section of the line near Windy Point. Behind them, more slides had closed the route they\'d just traveled. The trains were trapped.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Wellington_Station_GN_Railway_early_1900s.jpg/1280px-Wellington_Station_GN_Railway_early_1900s.jpg',
+          alt: 'Wellington Station of the Great Northern Railway, early 1900s',
+          caption: 'Wellington Station, a remote railroad stop in the Cascade Mountains, before the devastating avalanche. Two trains were trapped here for six days by a relentless blizzard.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Wellington was not really a town — it was a railroad yard carved into the mountainside, with a hotel, a bunkhouse for workers, and a few support buildings. The station sat on a narrow ledge beneath Windy Mountain, with steep slopes rising above and a thousand-foot drop into the Tye River canyon below. In summer, it was merely isolated. In winter, it was a natural trap.',
         },
@@ -90,6 +97,13 @@ export const wellingtonAvalanche: Article = {
         {
           type: 'paragraph',
           content: 'For six days, the trains sat on the tracks at Wellington while the blizzard raged. The railroad threw everything it had at the problem. Rotary snowplows — massive machines with spinning blades that could chew through packed snow — worked around the clock. Hundreds of laborers dug by hand. Telegraph lines went down and had to be repaired. Supply trains tried to reach Wellington from both directions and couldn\'t get through.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Northern_Railway_rotary_snowplow%2C_c._1900.jpg/1280px-Great_Northern_Railway_rotary_snowplow%2C_c._1900.jpg',
+          alt: 'Great Northern Railway rotary snowplow, circa 1900',
+          caption: 'Great Northern Railway\'s rotary snowplows were powerful machines designed to clear mountain passes. Despite their efforts, the blizzard of 1910 proved too relentless.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -125,6 +139,13 @@ export const wellingtonAvalanche: Article = {
         {
           type: 'paragraph',
           content: 'At 1:42 AM on March 1, 1910, lightning struck Windy Mountain. The sound was described as a "dull, thundering roar" — not an explosion but a rumble, like the mountain itself was waking up. A slab of snow a half-mile wide, ten feet deep, and thousands of tons in weight broke free from the slope above Wellington Station.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wellington_avalanche_wreckage%2C_1910.jpg/1280px-Wellington_avalanche_wreckage%2C_1910.jpg',
+          alt: 'Train wreckage after the Wellington avalanche, 1910',
+          caption: 'The devastating aftermath of the Wellington avalanche, March 1910. Both trains were swept off the tracks and into the Tye River canyon, resulting in 96 deaths.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -206,8 +227,11 @@ export const wellingtonAvalanche: Article = {
           content: 'In recent decades, historians and railfans have worked to recover the memory of Wellington. The avalanche site, accessible only by foot, has become a destination for hikers interested in industrial archaeology. Rusted machinery, rotting timbers, and fragments of rail still litter the mountainside. The old Cascade Tunnel, abandoned when the new tunnel opened, is now a hiking trail through absolute darkness.',
         },
         {
-          type: 'paragraph',
-          content: 'A memorial was finally erected at the site in 2010, exactly 100 years after the disaster. It lists the names of the 96 victims — the first public acknowledgment many of them ever received. The railroad that tried so hard to forget them has been absorbed by other companies. The passengers who died waiting for rescue finally have a monument.',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wellington_Memorial_2010.jpg/1280px-Wellington_Memorial_2010.jpg',
+          alt: 'Memorial at the Wellington avalanche site, 2010',
+          caption: 'The memorial erected in 2010 at the Wellington avalanche site, 100 years after the disaster, listing the names of the 96 victims.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'divider',
