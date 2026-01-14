@@ -156,6 +156,21 @@ const FRAME_COUNTS: Record<string, number> = {
   'fargo-12': 78,
   'fargo-13': 78,
   'fargo-14': 78,
+  // Chicago sequences
+  'chicago-1': 78,
+  'chicago-2': 78,
+  'chicago-3': 53,
+  'chicago-4': 78,
+  'chicago-5': 78,
+  'chicago-6': 78,
+  'chicago-7': 78,
+  'chicago-8': 78,
+  'chicago-9': 120,
+  'chicago-10': 78,
+  'chicago-11': 93,
+  'chicago-12': 120,
+  'chicago-13': 78,
+  'chicago-14': 78,
 }
 
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
