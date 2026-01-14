@@ -1,4 +1,4 @@
-import { Header, Footer } from '@/components'
+import { Header, Footer, ShareButton, NewsletterSignup } from '@/components'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,6 +15,9 @@ export default function ContactPage() {
         <div className="container-page section-spacing">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold text-neutral-900 mb-6">Contact Us</h1>
+            <div className="mb-8">
+              <ShareButton title="Contact Us | The Curious City" url="https://thecurious.city/contact" />
+            </div>
             <p className="text-lg text-neutral-600 mb-8">
               We&apos;d love to hear from you! Whether you have a story tip, question, or just want to say hello, we&apos;re all ears.
             </p>
@@ -145,13 +148,7 @@ export default function ContactPage() {
                 <p className="text-neutral-700 mb-4">
                   Don&apos;t want to wait for a response? Stay up to date with our latest discoveries:
                 </p>
-                <div className="bg-accent-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">Newsletter</h3>
-                  <p className="text-neutral-700 mb-4 text-sm">
-                    Subscribe to our weekly newsletter for hidden gems, dark history, and local secrets delivered straight to your inbox.
-                  </p>
-                  <p className="text-sm text-neutral-500 italic">Coming soon!</p>
-                </div>
+                <NewsletterSignup />
               </section>
 
               <section>
@@ -175,6 +172,12 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
+
+      {/* End of Contact Page Flow - Share */}
+      <div className="container-page py-12 space-y-8">
+        {/* Share Component */}
+        <ShareButton title="Contact Us | The Curious City" url="https://thecurious.city/contact" />
+      </div>
 
       <Footer />
     </>

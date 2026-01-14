@@ -200,6 +200,30 @@ export default async function CityPage({ params }: CityPageProps) {
         )}
       </main>
 
+        {/* End of City Page Flow - Share, Subscribe, Feedback */}
+        <div className="container-page py-12 space-y-8">
+          {/* Share Component */}
+          <ShareButton title={`${city.name} City Guide`} />
+
+          {/* Subscribe */}
+          <NewsletterSignup />
+
+          {/* Feedback Component (mailto link) */}
+          <div>
+            <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
+            <p className="text-neutral-700">
+              Found an error or have a suggestion? {' '}
+              <Link
+                href={`mailto:hello@thecurious.city?subject=Feedback on ${city.name} City Guide`}
+                className="text-accent-600 hover:text-accent-700 font-semibold"
+              >
+                Send us feedback
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+
         <Footer />
       </div>
     </>

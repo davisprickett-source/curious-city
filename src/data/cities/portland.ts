@@ -794,6 +794,13 @@ export const portland: CityData = {
               url: 'https://www.atlasobscura.com/places/portland-troll-bridge',
             }
           ],
+          sources: [
+            {
+              title: 'Portland Troll Bridge',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/portland-troll-bridge',
+            }
+          ],
         },
         {
           id: 'gem-quirky-4',
@@ -813,6 +820,13 @@ export const portland: CityData = {
           price: 'Free to browse',
           website: 'https://www.hippohardware.com',
           tip: 'Count how many hippos you can spot',
+          sources: [
+            {
+              title: 'Hippo Hardware and Trading Company',
+              publisher: 'Hippo Hardware',
+              url: 'https://hippohardware.com',
+            }
+          ],
           sources: [
             {
               title: 'Hippo Hardware and Trading Company',
@@ -878,6 +892,13 @@ export const portland: CityData = {
           hours: 'Businesses vary',
           price: 'Free to explore',
                         tip: 'Prost! for German beer, Interurban for cocktails',
+          sources: [
+            {
+              title: 'Mississippi Avenue',
+              publisher: 'Historic Mississippi Avenue',
+              url: 'https://mississippiave.org',
+            }
+          ],
                         sources: [
                           {
                             title: 'Mississippi Avenue',

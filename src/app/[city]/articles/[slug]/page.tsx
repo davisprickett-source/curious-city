@@ -149,6 +149,8 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
               <div className="container-page py-12 md:py-16">
                 <div className="max-w-3xl mx-auto">
+
+
                   {/* Share Button at Top */}
                   <div className="mb-6">
                     <ShareButton title={article.title} />
@@ -193,8 +195,29 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
 
           {/* End of Article Flow */}
           <div className="container-page py-12 space-y-8">
-            <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
+            {/* Share Component */}
+            <ShareButton title={article.title} />
+
+            {/* Subscribe */}
             <NewsletterSignup />
+
+            {/* Other Pages/Articles Component */}
+            <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
+
+            {/* Feedback Component (mailto link) */}
+            <div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
+              <p className="text-neutral-700">
+                Found an error or have a suggestion? {' '}
+                <Link
+                  href={`mailto:hello@thecurious.city?subject=Feedback on article: ${encodeURIComponent(article.title)}`}
+                  className="text-accent-600 hover:text-accent-700 font-semibold"
+                >
+                  Send us feedback
+                </Link>
+                .
+              </p>
+            </div>
           </div>
         </main>
       </div>

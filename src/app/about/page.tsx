@@ -1,4 +1,5 @@
-import { Header, Footer } from '@/components'
+import { Header, Footer, ShareButton, NewsletterSignup } from '@/components'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,6 +16,9 @@ export default function AboutPage() {
         <div className="container-page section-spacing">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold text-neutral-900 mb-6">About The Curious City</h1>
+            <div className="mb-8">
+              <ShareButton title="About The Curious City" url="https://thecurious.city/about" />
+            </div>
 
             <div className="prose prose-lg max-w-none">
               <section className="mb-8">
@@ -177,6 +181,30 @@ export default function AboutPage() {
           </div>
         </div>
       </main>
+
+      {/* End of About Page Flow - Share, Subscribe, Feedback */}
+      <div className="container-page py-12 space-y-8">
+        {/* Share Component */}
+        <ShareButton title="About The Curious City" url="https://thecurious.city/about" />
+
+        {/* Subscribe */}
+        <NewsletterSignup />
+
+        {/* Feedback Component (mailto link) */}
+        <div>
+          <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
+          <p className="text-neutral-700">
+            Found an error or have a suggestion? {' '}
+            <Link
+              href={`mailto:hello@thecurious.city?subject=Feedback on About Page`}
+              className="text-accent-600 hover:text-accent-700 font-semibold"
+            >
+              Send us feedback
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
 
       <Footer />
     </>

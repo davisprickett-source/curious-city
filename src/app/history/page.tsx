@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
-import { Header, Footer } from '@/components'
+import { Header, Footer, ShareButton, NewsletterSignup } from '@/components'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
@@ -45,6 +45,9 @@ export default async function HistoryPage() {
             <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-3">
               History
             </h1>
+            <div className="mb-8">
+              <ShareButton title="History | The Curious City" url="https://thecurious.city/history" />
+            </div>
             <p className="text-lg text-neutral-600 max-w-2xl">
               Long-form writing about American cities — their histories, contradictions,
               and what makes them tick.
@@ -102,9 +105,32 @@ export default async function HistoryPage() {
             })}
           </div>
         </div>
-      </main>
-
-      <Footer />
-    </>
+              </main>
+      
+            {/* End of History Page Flow - Share, Subscribe, Feedback */}
+            <div className="container-page py-12 space-y-8">
+              {/* Share Component */}
+              <ShareButton title="History | The Curious City" url="https://thecurious.city/history" />
+      
+              {/* Subscribe */}
+              <NewsletterSignup />
+      
+              {/* Feedback Component (mailto link) */}
+              <div>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">Give Feedback</h3>
+                <p className="text-neutral-700">
+                  Found an error or have a suggestion? {' '}
+                  <Link
+                    href={`mailto:hello@thecurious.city?subject=Feedback on History Page`}
+                    className="text-accent-600 hover:text-accent-700 font-semibold"
+                  >
+                    Send us feedback
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+      
+            <Footer />    </>
   )
 }
