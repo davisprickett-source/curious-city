@@ -618,6 +618,10 @@ export const fargo: CityData = {
           hours: 'Wed-Thu 11am-9pm, Fri-Sat 11am-midnight, Sun 11am-9pm, Mon-Tue 4pm-9pm',
           website: 'https://wurstfargo.com/',
           instagram: '@wurstfargo',
+          image: {
+            src: 'https://wurstwestfargo.com/wp-content/uploads/2023/11/wurst-bier-hall-west-fargo-nd-best-restaurant-beer-bar.jpg',
+            alt: 'Wurst Bier Hall interior with communal tables',
+          },
         },
         {
           name: 'The Aquarium',
@@ -631,6 +635,10 @@ export const fargo: CityData = {
           hours: 'Event-based (check calendar)',
           website: 'https://aquariumfargo.com/',
           instagram: '@aquariumfargo',
+          image: {
+            src: 'https://aquariumfargo.com/wp-content/uploads/sites/19/2025/02/Aqua-Wave-Est-06-Logo-1030x666.png',
+            alt: 'The Aquarium music venue logo',
+          },
         },
         {
           name: 'JL Beers',
@@ -644,6 +652,10 @@ export const fargo: CityData = {
           hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
           website: 'https://jlbeers.com/518/',
           instagram: '@jlbeersdowntown',
+          image: {
+            src: 'https://jlbeers.com/518/files/2020/06/cropped-site-icon-192x192.png',
+            alt: 'JL Beers logo',
+          },
         },
         {
           name: 'Mick\'s Office',
@@ -657,6 +669,10 @@ export const fargo: CityData = {
           hours: 'Sun-Wed 11am-midnight, Thu-Sat 11am-2am',
           website: 'https://micksoffice.com/',
           instagram: '@micks_office',
+          image: {
+            src: 'https://micksoffice.com/wp-content/uploads/2024/12/Micks-Office-Black-FRONT-Logo-TEXT.png',
+            alt: 'Mick\'s Office logo',
+          },
         },
       ],
     },
@@ -705,6 +721,10 @@ export const fargo: CityData = {
           hours: 'Mon-Sat 8am-9pm, Closed Sun',
           website: 'https://lunafargo.com/',
           instagram: '@luna.fargo',
+          image: {
+            src: 'https://images.squarespace-cdn.com/content/v1/5e8e0e47750f8d572d1d3eea/6b00ada6-a48a-432b-bf90-dd6af28e7f93/Luna-41.jpg',
+            alt: 'Luna Fargo interior',
+          },
         },
         {
           name: 'Vinyl Taco',
@@ -718,6 +738,40 @@ export const fargo: CityData = {
           hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-midnight, Closed Sun',
           website: 'https://www.vinyltaco.com/',
           instagram: '@vinyltaco',
+        },
+        {
+          name: 'Rhombus Guys',
+          neighborhood: 'Downtown',
+          vibe: 'Rooftop drinking and pizza so complicated it needs a map.',
+          order: 'The T-Rex (all the meats) or the Rockefeller (spinach and artichoke dip on a pizza).',
+          why: 'Rhombus Guys is the anchor of downtown’s casual dining scene. It’s loud, it’s colorful, and the pizza toppings are delightfully unhinged. But the real draw is the rooftop patio—one of the best in the city. In a town that is frozen solid for five months a year, the first day you can sit on the Rhombus roof and drink a beer is basically a municipal holiday.',
+          address: '212 Broadway N, Fargo, ND 58102',
+          coordinates: { lat: 46.8765, lng: -96.7899 },
+          price: '$$',
+          hours: 'Daily 11am-10pm',
+          website: 'https://rhombusguyspizza.com/',
+          instagram: '@rhombusguys',
+          image: {
+            src: 'https://rhombusguyspiz.wpenginepowered.com/wp-content/uploads/2023/12/rhombus-detroit-pizza-950x1024-1.jpg.webp',
+            alt: 'Rhombus Guys pizza',
+          },
+        },
+        {
+          name: 'Rosewild',
+          neighborhood: 'Downtown',
+          vibe: 'Nordic-Midwestern fine dining in the swankiest hotel in town.',
+          order: 'The Knoephla Soup (an elevated take on the local classic) and the Potluck for the table.',
+          why: 'Located in the Jasper Hotel, Rosewild is where Fargo shows off. The menu is a love letter to the region’s immigrant history, but with a level of technique that belongs in a much larger city. It’s beautiful, it’s ambitious, and it’s the best place to get a cocktail that tastes like the prairie (in a good way).',
+          address: '215 Broadway N, Fargo, ND 58102',
+          coordinates: { lat: 46.8772, lng: -96.7894 },
+          price: '$$$',
+          hours: 'Daily 7am-10pm',
+          website: 'https://jasperfargo.com/rosewild/',
+          instagram: '@rosewildfargo',
+          image: {
+            src: 'https://jasperfargo.com/wp-content/uploads/2021/02/c3c72b37-rosewild-full-width-home.jpg',
+            alt: 'Rosewild restaurant interior at Jasper Hotel',
+          },
         },
       ],
     },
@@ -765,6 +819,10 @@ export const fargo: CityData = {
           price: '$$',
           website: 'https://atomiccoffeebar.com',
           instagram: '@atomiccoffeebar',
+          image: {
+            src: 'https://www.atomiccoffeebar.com/wp-content/uploads/2016/02/atomic-coffee-bar-sunset-1.jpg',
+            alt: 'Atomic Coffee Bar exterior at sunset',
+          },
         },
         {
           name: 'Black Coffee & Waffle Bar',
