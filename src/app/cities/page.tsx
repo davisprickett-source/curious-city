@@ -119,7 +119,6 @@ export default async function CitiesPage() {
                 )
               })}
             </div>
-          </div>
         </main>
 
       {/* End of Cities Page Flow - Share, Subscribe, Feedback */}
