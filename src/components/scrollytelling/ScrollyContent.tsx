@@ -134,7 +134,7 @@ export function ScrollyContent({
       </ScrollySection>
 
       {/* Map Overview Gap - allows viewing the full map before starting the tour */}
-      <div className="h-[100vh]" aria-hidden="true" />
+      <div className="h-[50vh]" aria-hidden="true" />
 
       {/* Spot Sections with Ads */}
       {spots.map((spot, index) => (
@@ -177,9 +177,21 @@ export function ScrollyContent({
         </div>
       ))}
 
+      {/* Zoom Out Trigger Section - Placeholder for map zoom out */}
+      <ScrollySection
+        index={spots.length} // New index
+        onInView={onActiveIndexChange}
+        className="bg-transparent snap-center h-[50vh]" // Short, transparent section
+        ref={(el) => { sectionRefs.current[spots.length] = el }}
+      >
+        <div className="max-w-xl mx-auto text-center text-white text-2xl font-semibold">
+          {/* Optional: Add some text like "Zooming out..." if desired */}
+        </div>
+      </ScrollySection>
+
       {/* Outro Section - Final destination, cannot scroll past */}
       <ScrollySection
-        index={spots.length}
+        index={spots.length + 1} // Updated index
         onInView={onActiveIndexChange}
         className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-start min-h-screen"
         ref={(el) => { sectionRefs.current[spots.length] = el }}
@@ -213,7 +225,7 @@ export function ScrollyContent({
             {exploreLinks.length > 0 ? (
               <div className="flex flex-wrap justify-center gap-5 mt-8 max-w-5xl mx-auto">
                 {exploreLinks.map((link) => (
-                  <div key={link.href} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4 flex-grow min-w-0">
+                  <div key={link.href} className="w-full flex-grow min-w-0">
                     <ExploreCard link={link} />
                   </div>
                 ))}
@@ -224,7 +236,7 @@ export function ScrollyContent({
                 {currentCategory !== 'bars' && (
                   <Link
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/bars`}
-                    className="flex-grow min-w-0 basis-full sm:basis-1/2 md:basis-1/3 relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -237,7 +249,7 @@ export function ScrollyContent({
                 {currentCategory !== 'restaurants' && (
                   <Link
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/restaurants`}
-                    className="flex-grow min-w-0 basis-full sm:basis-1/2 md:basis-1/3 relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -250,7 +262,7 @@ export function ScrollyContent({
                 {currentCategory !== 'coffee-shops' && (
                   <Link
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/coffee-shops`}
-                    className="flex-grow min-w-0 basis-full sm:basis-1/2 md:basis-1/3 relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -263,7 +275,7 @@ export function ScrollyContent({
                 {currentCategory !== 'curiosities' && (
                   <Link
                     href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/curiosities`}
-                    className="flex-grow min-w-0 basis-full sm:basis-1/2 md:basis-1/3 relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="flex-grow min-w-0 basis-full relative overflow-hidden rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <div className="flex flex-col items-center gap-3">
                       <svg className="w-12 h-12 text-white/90 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,27 +287,26 @@ export function ScrollyContent({
                 )}
               </div>
             )}
+          
+          {/* Feedback (placeholder) */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">Your Feedback Matters!</h3>
+            <p className="text-neutral-200 mb-6">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
+            >
+              Send Feedback
+            </Link>
           </div>
-        </div>
 
-                  {/* Feedback (placeholder) */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4">Your Feedback Matters!</h3>
-                    <p className="text-neutral-200 mb-6">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
-                    >
-                      Send Feedback
-                    </Link>
-                  </div>
-        
-                  {/* Footer integrated into outro for better connection */}
-                  {footer && (
-                    <div className="relative mt-auto border-t border-white/10">
-                      {footer}
-                    </div>
-                  )}      </ScrollySection>
+          {/* Footer integrated into outro for better connection */}
+          {footer && (
+            <div className="relative mt-auto border-t border-white/10">
+              {footer}
+            </div>
+          )}
+        </div>
     </div>
   )
 }
