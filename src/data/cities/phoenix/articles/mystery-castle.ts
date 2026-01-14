@@ -48,6 +48,13 @@ export const mysteryCastle: Article = {
           content: 'In 1927, Gulley received a diagnosis: tuberculosis. At the time, it was essentially a death sentence. Patients wasted away over months or years, often infecting their families in the process. There were sanitariums where you could go to die slowly, surrounded by other dying people.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Boyce_Gulley.jpg/440px-Boyce_Gulley.jpg',
+          alt: 'Portrait of Boyce Gulley, builder of Mystery Castle',
+          caption: 'Boyce Gulley, pictured here around the time of his disappearance. Diagnosed with tuberculosis, he chose to leave his family and build a castle in the Arizona desert.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Gulley made a decision that would haunt his family for nearly two decades. Rather than drag his wife and daughter through the agony of watching him die — and risk infecting them — he vanished. He left Seattle in the night without explanation, without goodbye, without telling them where he was going or why.',
         },
@@ -69,6 +76,13 @@ export const mysteryCastle: Article = {
         {
           type: 'paragraph',
           content: 'Gulley ended up in Phoenix. Since territorial times, Arizona\'s dry heat had drawn tuberculosis sufferers — "lungers," locals called them — hoping the desert air would cure them. Many died anyway. Some survived. Gulley was one of the survivors.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tuberculosis_patient_on_porch_Colorado.jpg/800px-Tuberculosis_patient_on_porch_Colorado.jpg',
+          alt: 'Historical photo of a tuberculosis patient resting on a porch in a sanatorium',
+          caption: 'Tuberculosis patients were often prescribed fresh air and sunshine. Many flocked to dry, elevated climates like Arizona, hoping the desert air would cure them.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -161,6 +175,13 @@ export const mysteryCastle: Article = {
           type: 'heading',
           level: 2,
           content: 'The Princess',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mystery_Castle_interior_room.jpg/1280px-Mystery_Castle_interior_room.jpg',
+          alt: 'Interior of Mystery Castle, Phoenix, showing unique construction details',
+          caption: 'The eclectic interior of Mystery Castle, with its stone walls, exposed beams, and salvaged materials, reflects Boyce Gulley\'s unique vision.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

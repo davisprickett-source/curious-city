@@ -36,6 +36,13 @@ export const winnieRuthJudd: Article = {
           content: 'The Girls',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Winnie_Ruth_Judd_mugshot.jpg/330px-Winnie_Ruth_Judd_mugshot.jpg',
+          alt: 'Winnie Ruth Judd mugshot, 1931',
+          caption: 'Winnie Ruth Judd\'s mugshot from 1931. Her youth and beauty, combined with the brutality of the crime, captivated national headlines.',
+          credit: 'Arizona State Archives / Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Winnie Ruth Judd arrived in Phoenix in 1930, following her husband, a doctor who\'d come west hoping the desert air would cure his morphine addiction. She was young, pretty, and alone — her husband was often away, and she found herself adrift in a strange city.',
         },
@@ -44,44 +51,16 @@ export const winnieRuthJudd: Article = {
           content: 'She met Agnes LeRoi and Hedvig Samuelson through work. The three women became inseparable — partying together, sharing secrets, navigating Depression-era Phoenix as single women in a man\'s world. They had another thing in common: all three were involved with the same man.',
         },
         {
-          type: 'paragraph',
-          content: 'His name was Jack Halloran — a wealthy, married businessman who moved through Phoenix\'s social circles with impunity. He was handsome, charming, and utterly amoral. He was sleeping with all three women, playing them against each other, making promises he had no intention of keeping.',
-        },
-        {
-          type: 'quote',
-          content: 'Jack Halloran was the catalyst for everything that happened. Three women, one man, and enough jealousy to end in murder.',
-          attribution: 'Jana Bommersbach',
-          role: 'Investigative journalist',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Night',
-        },
-        {
-          type: 'paragraph',
-          content: 'What happened on the night of October 16, 1931, has never been fully established. Judd claimed self-defense. The prosecution claimed premeditated murder. The truth, as often happens, was probably messier than either story.',
-        },
-        {
-          type: 'paragraph',
-          content: 'According to Judd\'s account, the three women gathered for drinks at LeRoi and Samuelson\'s bungalow. An argument broke out — about Halloran, about jealousy, about something that had been festering for months. Samuelson pulled a gun. In the struggle, Judd was shot in the hand. She got the gun and fired back.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Both women died. LeRoi was shot in the head. Samuelson was shot multiple times. Judd, wounded and panicking, was left alone with two bodies in a small Phoenix bungalow.',
-        },
-        {
-          type: 'paragraph',
-          content: 'What she did next would define her forever.',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Trunks',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Winnie_Ruth_Judd_trunks_1931.jpg/800px-Winnie_Ruth_Judd_trunks_1931.jpg',
+          alt: 'Trunks used by Winnie Ruth Judd to transport bodies, 1931',
+          caption: 'The trunks used by Winnie Ruth Judd to transport the bodies from Phoenix to Los Angeles. The discovery of the bodies in these trunks made her a national sensation.',
+          credit: 'Arizona State Archives / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -92,50 +71,16 @@ export const winnieRuthJudd: Article = {
           content: 'Two days later, on Sunday evening, Judd — her hand still bandaged from the gunshot wound — boarded the Golden State Limited train from Phoenix to Los Angeles. She checked the trunks as baggage.',
         },
         {
-          type: 'paragraph',
-          content: 'The October heat did its work. By the time the train reached LA, the trunks were leaking and the smell was overpowering. Baggage handler H.J. Mapes confronted Judd when she came to claim her luggage. She ran. He called the police.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The Crime Scene',
-          content: 'After Judd fled, Phoenix police entered the bungalow where the murders occurred. They allowed neighbors and reporters to wander through, contaminating evidence. The landlord then advertised tours of the crime scene for ten cents, drawing hundreds of morbid curiosity-seekers before investigators had finished their work.',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Tiger Woman',
-        },
-        {
-          type: 'paragraph',
-          content: 'Judd surrendered in Los Angeles a few days later. The trial that followed was a national sensation. Newspapers called her the "Tiger Woman," the "Blonde Butcher," the "Trunk Murderess." Her face was on front pages across the country. In an era before television, before true-crime podcasts, Winnie Ruth Judd was America\'s obsession.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The prosecution portrayed her as a cold-blooded killer who\'d murdered her friends over a man, then calmly dismembered one of them and caught a train. The defense argued self-defense, pointing to the gunshot wound on her hand as proof she\'d been attacked.',
-        },
-        {
-          type: 'paragraph',
-          content: 'What neither side mentioned, at least not publicly: Jack Halloran. The wealthy businessman who\'d been sleeping with all three women was never seriously investigated. A grand jury eventually indicted him as an accomplice — some believed he\'d helped Judd move the bodies — but the charges were quietly dropped.',
-        },
-        {
-          type: 'quote',
-          content: 'The case against Halloran was swept under the rug. He was rich, connected, and male. Winnie was none of those things.',
-          attribution: 'Jana Bommersbach',
-          role: 'Author, "The Trunk Murderess"',
-        },
-        {
-          type: 'paragraph',
-          content: 'On February 8, 1932, the jury found Judd guilty of first-degree murder. She was sentenced to hang.',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Asylum',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Arizona_State_Hospital_main_building.jpg/1280px-Arizona_State_Hospital_main_building.jpg',
+          alt: 'Main building of the Arizona State Hospital, historical photo',
+          caption: 'The Arizona State Hospital, where Winnie Ruth Judd spent decades after being declared insane. She escaped from the institution seven times over the years.',
+          credit: 'Arizona State Archives / Wikimedia Commons',
         },
         {
           type: 'paragraph',
