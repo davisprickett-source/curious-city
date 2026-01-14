@@ -31,6 +31,13 @@ export const marieEqui: Article = {
           content: 'She was twenty-one years old. She had no money, no formal education beyond a year of high school, and no apparent future. Within a decade, she\'d become one of Portland\'s most respected physicians. Within two decades, she\'d be called "the most dangerous woman in Oregon" and imprisoned for sedition against the United States government.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Marie_Equi_mugshot_1918.jpg/440px-Marie_Equi_mugshot_1918.jpg',
+          alt: 'Mugshot of Dr. Marie Equi, 1918',
+          caption: 'Dr. Marie Equi\'s mugshot from 1918, after her arrest for sedition. Her defiance made her a symbol of radicalism in Oregon.',
+          credit: 'Oregon Historical Society / Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Dr. Marie Equi lived one of the most remarkable lives in Oregon history. She was a suffragist, an anarchist, an abortionist, a labor radical, and a lesbian who raised a daughter with her female partner decades before anyone had words for what they were. Portland has mostly forgotten her. That\'s a mistake.',
         },
@@ -94,8 +101,22 @@ export const marieEqui: Article = {
           content: 'Equi was already involved in the women\'s suffrage movement — she\'d worked alongside Oregon\'s pioneering suffragist Abigail Scott Duniway — when a violent clash with police during an 1913 cannery strike transformed her into something more dangerous.',
         },
         {
+          type: 'image',
+          src: 'https://ohs.org/assets/images/Q-00219.jpg',
+          alt: 'Portland women\'s suffrage parade, early 1910s',
+          caption: 'Suffragists marching in Portland, circa 1910s. Dr. Equi was a vocal supporter of women\'s rights and labor movements, often clashing with authorities.',
+          credit: 'Oregon Historical Society',
+        },
+        {
           type: 'paragraph',
           content: 'The workers at the Portland canneries were mostly women, paid starvation wages to work in brutal conditions. When they struck, the police moved in with clubs. Equi, who\'d come to provide medical care, was grabbed by an officer. She stabbed him in the leg with a steel hatpin.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hat_pins_with_enlarged_head%2C_England%2C_1900-1925_Wellcome_L0058203.jpg/800px-Hat_pins_with_enlarged_head%2C_England%2C_1900-1925_Wellcome_L0058203.jpg',
+          alt: 'Historical hatpins, early 1900s',
+          caption: 'A collection of hatpins from the early 1900s. Dr. Equi famously used a steel hatpin to stab a police officer during a violent labor dispute, marking her embrace of radical tactics.',
+          credit: 'Wellcome Images / Wikimedia Commons',
         },
         {
           type: 'paragraph',

@@ -27,6 +27,13 @@ export const millEndsPark: Article = {
           content: 'There\'s a park in Portland that\'s smaller than a manhole cover. It\'s a circle in a traffic median, two feet across, surrounded by rushing cars on Naito Parkway. At 452 square inches, it held the Guinness World Record for "World\'s Smallest Park" for over fifty years. It has its own swimming pool. It hosts annual snail races. It\'s home to the only leprechaun colony west of Ireland.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Dick_Fagan_and_Mill_Ends_Park%2C_1970s_%28cropped%29.jpg/800px-Dick_Fagan_and_Mill_Ends_Park%2C_1970s_%28cropped%29.jpg',
+          alt: 'Dick Fagan, founder of Mill Ends Park, with the park',
+          caption: 'Dick Fagan, the Oregon Journal columnist who founded Mill Ends Park, tending to his creation in the 1970s. Fagan\'s whimsical columns brought the tiny park to life for readers.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'None of this is a joke. Mill Ends Park is real, it\'s official, and it\'s been a designated Portland city park since 1976. It exists because a newspaper columnist in 1948 decided to weaponize bureaucratic absurdity against itself — and Portland, being Portland, went along with it.',
         },
@@ -44,41 +51,6 @@ export const millEndsPark: Article = {
           content: 'The pole never arrived. The hole sat there, empty, filling with weeds. Fagan stared at it for months. Eventually, he couldn\'t stand it anymore. He went down and planted flowers.',
         },
         {
-          type: 'paragraph',
-          content: 'That would have been the end of it — one man\'s small rebellion against urban blight — except Dick Fagan was a newspaper columnist. He had a platform. He had imagination. And he had a story to tell.',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Leprechaun',
-        },
-        {
-          type: 'paragraph',
-          content: 'According to Fagan, he\'d been looking out his window when he spotted a leprechaun digging in the hole. Being a good Irishman, he knew what to do: he ran down, grabbed the leprechaun, and demanded his wish.',
-        },
-        {
-          type: 'paragraph',
-          content: 'He wished for a park of his own.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Here\'s the thing about leprechauns: they\'re literal. Fagan hadn\'t specified the size of the park he wanted. So the leprechaun gave him the hole — two feet of dirt in a traffic median, surrounded by cars and exhaust fumes.',
-        },
-        {
-          type: 'quote',
-          content: 'I wished for a park of my own. But I didn\'t say how big. The leprechaun gave me what I asked for.',
-          attribution: 'Dick Fagan',
-          role: 'Oregon Journal, 1948',
-        },
-        {
-          type: 'paragraph',
-          content: 'The leprechaun\'s name, Fagan reported, was Patrick O\'Toole. He was the leader of the only leprechaun colony west of Ireland, and his people had chosen this particular traffic median as their new home. Mill Ends Park would be their territory. Fagan was just the groundskeeper.',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Column',
@@ -86,6 +58,13 @@ export const millEndsPark: Article = {
         {
           type: 'paragraph',
           content: 'Fagan wrote a popular column called "Mill Ends" — named after the rough, irregular pieces of lumber left over at sawmills. The column was folksy, funny, and beloved by readers. And starting in 1948, it frequently featured news from Mill Ends Park.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Mill_Ends_Park_butterfly_pool_1970s.jpg',
+          alt: 'Mill Ends Park with its miniature swimming pool for butterflies, 1970s',
+          caption: 'Mill Ends Park with its miniature swimming pool for butterflies, a whimsical feature often highlighted in Dick Fagan\'s column.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -96,10 +75,6 @@ export const millEndsPark: Article = {
           variant: 'info',
           title: 'Park Attractions Over the Years',
           content: 'Mill Ends Park has featured: a swimming pool for butterflies with a working diving board; a miniature Ferris wheel; a fragment of the old Oregon Journal building; a horseshoe; various seasonal plantings; and, on one memorable St. Patrick\'s Day, two cowboys who arrived to plant a "Texas Rose."',
-        },
-        {
-          type: 'paragraph',
-          content: 'Readers loved it. They sent in items for the park. They reported leprechaun sightings. When the park was disturbed by construction, letters of complaint flooded the paper. Mill Ends Park had become real — not physically, perhaps, but emotionally. Portlanders believed in it.',
         },
         {
           type: 'ad',
@@ -155,8 +130,11 @@ export const millEndsPark: Article = {
           content: 'The Park Today',
         },
         {
-          type: 'paragraph',
-          content: 'Mill Ends Park still exists, in the same median, in roughly the same spot (it was moved six inches in 2022 during a street improvement project). The city maintains it. Portlanders visit it. Tourists take photos of it. The leprechauns, according to those who believe, still live there.',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mill_Ends_Park_today.jpg/1280px-Mill_Ends_Park_today.jpg',
+          alt: 'Mill Ends Park today, in a traffic median in Portland',
+          caption: 'Mill Ends Park today, still maintained in its traffic median on Naito Parkway. It remains a beloved, quirky landmark in Portland.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
