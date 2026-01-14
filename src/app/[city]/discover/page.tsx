@@ -68,92 +68,94 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
         currentSection="discover"
       />
 
-      <main className="flex-1 bg-white">
-        {/* Hero Header */}
-        <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
-          <div className="container-page py-12 md:py-16">
-            <div className="max-w-4xl">
-              <div className="eyebrow text-accent-400 mb-3">Explore</div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                Discover {city.name}
-              </h1>
-              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
-                Curated collections of curiosities, dark history, hidden gems, and more.
-              </p>
+      <div className="city-page-wrapper">
+        <main className="flex-1 bg-white">
+          {/* Hero Header */}
+          <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
+            <div className="container-page py-12 md:py-16">
+              <div className="max-w-4xl">
+                <div className="eyebrow text-accent-400 mb-3">Explore</div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                  Discover {city.name}
+                </h1>
+                <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
+                  Curated collections of curiosities, dark history, hidden gems, and more.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Listicle Collections Grid */}
-        {listiclePages.length > 0 ? (
-          <div className="container-page py-10 md:py-14">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {listiclePages.map((page) => {
-                const style = typeStyles[page.type] || typeStyles.curiosities
-                return (
-                  <Link
-                    key={page.type}
-                    href={page.href}
-                    className="group block"
-                  >
-                    <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                      {/* Background */}
-                      <div className="absolute inset-0">
-                        {page.thumbnail ? (
-                          <>
-                            <Image
-                              src={page.thumbnail}
-                              alt={page.title}
-                              fill
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                              sizes="(max-width: 768px) 100vw, 50vw"
-                            />
-                            <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient}`} />
-                          </>
-                        ) : (
-                          <div className={`absolute inset-0 bg-gradient-to-br ${style.fallback}`} />
-                        )}
-                      </div>
+          {/* Listicle Collections Grid */}
+          {listiclePages.length > 0 ? (
+            <div className="container-page py-10 md:py-14">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {listiclePages.map((page) => {
+                  const style = typeStyles[page.type] || typeStyles.curiosities
+                  return (
+                    <Link
+                      key={page.type}
+                      href={page.href}
+                      className="group block"
+                    >
+                      <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                        {/* Background */}
+                        <div className="absolute inset-0">
+                          {page.thumbnail ? (
+                            <>
+                              <Image
+                                src={page.thumbnail}
+                                alt={page.title}
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                              />
+                              <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient}`} />
+                            </>
+                          ) : (
+                            <div className={`absolute inset-0 bg-gradient-to-br ${style.fallback}`} />
+                          )}
+                        </div>
 
-                      {/* Content */}
-                      <div className="relative p-6 md:p-8 min-h-[220px] md:min-h-[260px] flex flex-col justify-end">
-                        {/* Title */}
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                          {page.title}
-                        </h2>
+                        {/* Content */}
+                        <div className="relative p-6 md:p-8 min-h-[220px] md:min-h-[260px] flex flex-col justify-end">
+                          {/* Title */}
+                          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                            {page.title}
+                          </h2>
 
-                        {/* Teaser */}
-                        <p className="text-base text-white/85 leading-relaxed line-clamp-2 mb-4">
-                          {page.teaser}
-                        </p>
+                          {/* Teaser */}
+                          <p className="text-base text-white/85 leading-relaxed line-clamp-2 mb-4">
+                            {page.teaser}
+                          </p>
 
-                        {/* Explore link */}
-                        <div className="flex items-center text-white/70 group-hover:text-white transition-colors">
-                          <span className="text-sm font-medium">Explore</span>
-                          <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
+                          {/* Explore link */}
+                          <div className="flex items-center text-accent-400 group-hover:text-white transition-colors border border-accent-400/30 group-hover:border-white/50 px-3 py-1.5 rounded-full w-fit">
+                            <span className="text-sm font-bold uppercase tracking-wider">Explore</span>
+                            <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Link>
-                )
-              })}
+                    </Link>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="container-page py-16">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-4">
-                Collections Coming Soon
-              </h2>
-              <p className="text-lg text-neutral-600">
-                We're working on curating collections of curiosities, dark history, and hidden gems for {city.name}.
-              </p>
+          ) : (
+            <div className="container-page py-16">
+              <div className="max-w-2xl mx-auto text-center">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+                  Collections Coming Soon
+                </h2>
+                <p className="text-lg text-neutral-600">
+                  We're working on curating collections of curiosities, dark history, and hidden gems for {city.name}.
+                </p>
+              </div>
             </div>
-          </div>
-        )}
-      </main>
+          )}
+        </main>
+      </div>
 
       <Footer />
     </>

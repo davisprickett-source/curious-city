@@ -59,47 +59,49 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
         currentSection="lost-and-loved"
       />
 
-      <main className="flex-1 bg-white">
-        {/* Hero Section - Dark Background */}
-        <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
-          <div className="container-page py-12 md:py-16">
-            <div className="max-w-3xl mx-auto">
-              {/* Share Button at Top */}
-              <div className="mb-6">
-                <ShareButton title={`${city.name}'s Lost & Loved`} />
+      <div className="city-page-wrapper">
+        <main className="flex-1 bg-white">
+          {/* Hero Section - Dark Background */}
+          <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
+            <div className="container-page py-12 md:py-16">
+              <div className="max-w-3xl mx-auto">
+                {/* Share Button at Top */}
+                <div className="mb-6">
+                  <ShareButton title={`${city.name}'s Lost & Loved`} />
+                </div>
+
+                {/* Title */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                  {section?.title || `${city.name}'s Lost & Loved`}
+                </h1>
+
+                {/* Teaser/Hook in Italics */}
+                {section?.teaser && (
+                  <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
+                    {section.teaser}
+                  </p>
+                )}
+
+                {/* Intro if exists */}
+                {section?.intro && (
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    {section.intro}
+                  </p>
+                )}
               </div>
-
-              {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                {section?.title || `${city.name}'s Lost & Loved`}
-              </h1>
-
-              {/* Teaser/Hook in Italics */}
-              {section?.teaser && (
-                <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
-                  {section.teaser}
-                </p>
-              )}
-
-              {/* Intro if exists */}
-              {section?.intro && (
-                <p className="text-lg text-white/80 leading-relaxed">
-                  {section.intro}
-                </p>
-              )}
             </div>
           </div>
-        </div>
 
-        {/* Premium Scroll Component */}
-        <LostLovedScroll items={items} cityName={city.name} />
+          {/* Premium Scroll Component */}
+          <LostLovedScroll items={items} cityName={city.name} />
 
-        {/* End of Page Flow */}
-        <div className="container-page py-12 space-y-8">
-          <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
-          <NewsletterSignup />
-        </div>
-      </main>
+          {/* End of Page Flow */}
+          <div className="container-page py-12 space-y-8">
+            <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
+            <NewsletterSignup />
+          </div>
+        </main>
+      </div>
 
       <Footer />
     </>

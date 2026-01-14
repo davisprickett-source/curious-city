@@ -1,2605 +1,2605 @@
 import { CityData } from '@/types/content'
 
 export const chicago: CityData = {
-    slug: 'chicago',
-    name: 'Chicago',
-    tagline: 'The city that works, mostly',
-    content: [
-      {
-        id: 'intro-text',
-        type: 'text',
-        content: 'Welcome to Chicago — a city built on swamp and stubbornness, where the river flows backwards and the pizza is a casserole. Here\'s what we\'re curious about.',
-      },
-      {
-        id: 'featured-card',
-        type: 'card',
-        title: 'The Swamp That Worked',
-        description: 'A city that exists because geography demanded it and continues because it learned how to be necessary.',
-        meta: 'Essay',
-        variant: 'featured',
-        href: '/chicago/essay/the-swamp-that-worked',
-      },
-      {
-        id: 'ad-1',
-        type: 'ad',
-        size: 'banner',
-      },
-      {
-        id: 'events-this-week',
-        type: 'events',
-        title: 'Events This Week',
-        intro: 'Happening now and coming up — pop-ups, openings, and things you shouldn\'t miss.',
-        items: [
-          {
-            title: 'Winter Lights Festival at Millennium Park',
-            description: 'The park transforms into an illuminated winter wonderland with interactive light installations, ice sculptures, and live music. Family-friendly event with hot chocolate and roasted chestnuts.',
-            startDate: '2025-12-25T17:00:00',
-            endDate: '2025-12-28T22:00:00',
-            isAllDay: false,
-            location: 'Millennium Park',
-            category: 'art',
-            tags: ['free', 'family-friendly', 'outdoor'],
-            image: {
-              src: '/images/events/millennium-park-lights.jpg',
-              alt: 'Illuminated winter festival at Millennium Park',
+  slug: 'chicago',
+  name: 'Chicago',
+  tagline: 'The city that works, mostly',
+  content: [
+    {
+      id: 'intro-text',
+      type: 'text',
+      content: 'Welcome to Chicago — a city built on swamp and stubbornness, where the river flows backwards and the pizza is a casserole. Here\'s what we\'re curious about.',
+    },
+    {
+      id: 'featured-card',
+      type: 'card',
+      title: 'The Swamp That Worked',
+      description: 'A city that exists because geography demanded it and continues because it learned how to be necessary.',
+      meta: 'Essay',
+      variant: 'featured',
+      href: '/chicago/essay/the-swamp-that-worked',
+    },
+    {
+      id: 'ad-1',
+      type: 'ad',
+      size: 'banner',
+    },
+    {
+      id: 'events-this-week',
+      type: 'events',
+      title: 'Events This Week',
+      intro: 'Happening now and coming up — pop-ups, openings, and things you shouldn\'t miss.',
+      items: [
+        {
+          title: 'Winter Lights Festival at Millennium Park',
+          description: 'The park transforms into an illuminated winter wonderland with interactive light installations, ice sculptures, and live music. Family-friendly event with hot chocolate and roasted chestnuts.',
+          startDate: '2025-12-25T17:00:00',
+          endDate: '2025-12-28T22:00:00',
+          isAllDay: false,
+          location: 'Millennium Park',
+          category: 'art',
+          tags: ['free', 'family-friendly', 'outdoor'],
+          image: {
+            src: '/images/events/millennium-park-lights.jpg',
+            alt: 'Illuminated winter festival at Millennium Park',
+          },
+        },
+        {
+          title: 'Last Day: Frida Kahlo Exhibition',
+          description: 'Final chance to see the largest Kahlo exhibition ever assembled in Chicago. Over 80 works including paintings, drawings, and personal artifacts.',
+          startDate: '2025-12-26T10:00:00',
+          endDate: '2025-12-26T20:00:00',
+          location: 'Art Institute of Chicago',
+          category: 'art',
+          tags: ['art', 'museum'],
+          href: 'https://www.artic.edu',
+          image: {
+            src: '/images/events/frida-kahlo.jpg',
+            alt: 'Frida Kahlo self-portrait',
+          },
+        },
+        {
+          title: 'Underground Comedy Club Pop-Up',
+          description: 'Secret comedy show in a renovated Prohibition-era speakeasy. Lineup changes nightly, past performers include Saturday Night Live cast members.',
+          startDate: '2025-12-27T20:00:00',
+          endDate: '2025-12-27T23:00:00',
+          location: 'Logan Square (address sent upon RSVP)',
+          category: 'comedy',
+          tags: ['comedy', 'nightlife'],
+          href: 'https://example.com/comedy-rsvp',
+        },
+        {
+          title: 'New Year\'s Eve at Navy Pier',
+          description: 'Fireworks over Lake Michigan at midnight, plus live music, ice skating, and food trucks. Chicago\'s biggest public New Year\'s celebration.',
+          startDate: '2025-12-31T19:00:00',
+          endDate: '2026-01-01T01:00:00',
+          location: 'Navy Pier',
+          category: 'nightlife',
+          tags: ['free', 'family-friendly', 'fireworks'],
+          image: {
+            src: '/images/events/navy-pier-nye.jpg',
+            alt: 'Fireworks over Navy Pier',
+          },
+        },
+        {
+          title: 'Riverwalk Winter Market',
+          description: 'Local artisans selling handcrafted gifts, vintage finds, and Chicago-made goods. Heated tents and warm beverages. Open weekends through January.',
+          startDate: '2025-12-28T11:00:00',
+          endDate: '2025-12-28T18:00:00',
+          location: 'Chicago Riverwalk',
+          category: 'markets',
+          tags: ['market', 'shopping', 'outdoor'],
+        },
+        {
+          title: 'Green Mill Jazz Club: New Year\'s Week Residency',
+          description: 'Legendary jazz venue hosts week-long residency featuring Chicago\'s finest jazz musicians. Same stage where Al Capone once sat.',
+          startDate: '2025-12-28T21:00:00',
+          endDate: '2025-12-28T02:00:00',
+          location: 'Green Mill Cocktail Lounge, Uptown',
+          category: 'concerts',
+          tags: ['music', 'jazz', 'historic'],
+          href: 'https://greenmilljazz.com',
+        },
+        {
+          title: 'Deep Dish Bake-Off Championship',
+          description: 'Amateur and professional pizzaiolos compete for Chicago\'s best deep dish. Taste samples from all contestants and vote for your favorite.',
+          startDate: '2025-12-29T14:00:00',
+          endDate: '2025-12-29T18:00:00',
+          location: 'Pilsen Community Center',
+          category: 'food-drink',
+          tags: ['food', 'competition'],
+        },
+        {
+          title: 'First Look: Museum of Contemporary Art Renovation',
+          description: 'Exclusive preview of the newly renovated East Wing before public opening. Includes new galleries, rooftop terrace, and restaurant.',
+          startDate: '2026-01-02T18:00:00',
+          endDate: '2026-01-02T21:00:00',
+          location: 'Museum of Contemporary Art Chicago',
+          category: 'art',
+          tags: ['art', 'museum', 'exclusive'],
+          href: 'https://mcachicago.org',
+        }
+      ],
+    },
+    {
+      id: 'this-week',
+      type: 'card-list',
+      title: 'This Week',
+      cards: [
+        {
+          title: 'The L Train Survival Guide',
+          description: 'Everything you need to know about riding Chicago\'s elevated trains like a local.',
+          meta: 'Guide',
+          href: '/chicago/l-train-guide',
+        },
+        {
+          title: 'Deep Dish vs. Tavern Style',
+          description: 'The pizza debate that divides the city — and why locals usually pick tavern.',
+          meta: 'Feature',
+          href: '/chicago/pizza-debate',
+        },
+        {
+          title: 'Lakefront Trail Running Routes',
+          description: 'The best stretches of the 18-mile trail, from Navy Pier to Promontory Point.',
+          meta: 'List',
+          variant: 'compact',
+          href: '/chicago/lakefront-running',
+        }
+      ],
+    },
+    {
+      id: 'ad-2',
+      type: 'ad',
+      size: 'rectangle',
+    },
+    {
+      id: 'quick-reads',
+      type: 'section',
+      title: 'Quick Reads',
+      items: [
+        {
+          id: 'quick-1',
+          type: 'card',
+          title: 'Why Does the River Flow Backwards?',
+          description: 'The audacious engineering that saved the city from its own sewage.',
+          variant: 'compact',
+        },
+        {
+          id: 'quick-2',
+          type: 'card',
+          title: 'The Seven Toppings of a Chicago Dog',
+          description: 'Mustard, onion, relish, pickle, tomato, sport peppers, celery salt. Never ketchup.',
+          variant: 'compact',
+        }
+      ],
+    },
+    {
+      id: 'chi-curiosities',
+      type: 'section',
+      title: 'The Windy City Ledger',
+      teaser: 'Rebel architecture, nuclear origins, and the city that refused to stay put',
+      intro: 'Chicago is a city that literally pulled itself out of the mud by its bootstraps—elevating entire blocks by six feet to escape the swamp. That same audacity gave us the first skyscraper, the first sustained nuclear reaction, and a river that flows backward just because we told it to.',
+      items: [
+        {
+          id: 'curiosity-1',
+          type: 'curiosity',
+          category: 'legend',
+          title: 'Lake Michigan once had its own pirate king',
+          body: 'In 1850, James Strang led a breakaway Mormon sect to Beaver Island in northern Lake Michigan, crowned himself king, and got busy with the whole monarchy thing. He minted his own currency, raided passing ships, and ruled with absolute authority—because apparently the Great Lakes needed a supervillain. His kingdom lasted six years until two disgruntled subjects shot him. America\'s only monarchy ended not with revolution, but with poor employee relations.',
+          images: [
+            {
+              src: '/chicago/curiosities/weird-king.png',
+              alt: 'King James Strang of Beaver Island',
+            }
+          ],
+          source: 'Great Lakes Maritime Heritage Center',
+          location: {
+            name: 'Beaver Island, Lake Michigan',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-2',
+          type: 'curiosity',
+          category: 'science',
+          title: 'The first nuclear reaction happened under a squash court',
+          body: 'December 2, 1942. Beneath a football stadium, Enrico Fermi split an atom. The reaction lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under Stagg Field while students attended classes above. The Atomic Age began with spectacularly poor risk assessment. Today a Henry Moore sculpture marks the spot where it happened.',
+          images: [
+            {
+              src: '/chicago/curiosities/reactor-1.png',
+              alt: 'University of Chicago campus where first nuclear reaction occurred',
             },
+            {
+              src: '/chicago/curiosities/reactor-2.png',
+              alt: 'Stagg Field memorial to first nuclear reaction',
+            }
+          ],
+          source: 'Bulletin of the Atomic Scientists',
+          location: {
+            name: 'University of Chicago, Regenstein Library',
+            stillExists: true,
           },
-          {
-            title: 'Last Day: Frida Kahlo Exhibition',
-            description: 'Final chance to see the largest Kahlo exhibition ever assembled in Chicago. Over 80 works including paintings, drawings, and personal artifacts.',
-            startDate: '2025-12-26T10:00:00',
-            endDate: '2025-12-26T20:00:00',
-            location: 'Art Institute of Chicago',
-            category: 'art',
-            tags: ['art', 'museum'],
-            href: 'https://www.artic.edu',
-            image: {
-              src: '/images/events/frida-kahlo.jpg',
-              alt: 'Frida Kahlo self-portrait',
+        },
+        {
+          id: 'curiosity-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'curiosity-3',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The city was raised 14 feet while people kept shopping',
+          body: 'Chicago was built on a swamp. Literally. Sewage pooled in the streets. Instead of moving like normal cities, engineers lifted the entire downtown—14 feet up—buildings, sidewalks, everything. The Briggs House hotel rose mid-dinner service while oblivious guests kept eating, unaware their building was levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
+          images: [
+            {
+              src: '/chicago/curiosities/raising-1.png',
+              alt: 'Historic architecture in Chicago',
             },
-          },
-          {
-            title: 'Underground Comedy Club Pop-Up',
-            description: 'Secret comedy show in a renovated Prohibition-era speakeasy. Lineup changes nightly, past performers include Saturday Night Live cast members.',
-            startDate: '2025-12-27T20:00:00',
-            endDate: '2025-12-27T23:00:00',
-            location: 'Logan Square (address sent upon RSVP)',
-            category: 'comedy',
-            tags: ['comedy', 'nightlife'],
-            href: 'https://example.com/comedy-rsvp',
-          },
-          {
-            title: 'New Year\'s Eve at Navy Pier',
-            description: 'Fireworks over Lake Michigan at midnight, plus live music, ice skating, and food trucks. Chicago\'s biggest public New Year\'s celebration.',
-            startDate: '2025-12-31T19:00:00',
-            endDate: '2026-01-01T01:00:00',
-            location: 'Navy Pier',
-            category: 'nightlife',
-            tags: ['free', 'family-friendly', 'fireworks'],
-            image: {
-              src: '/images/events/navy-pier-nye.jpg',
-              alt: 'Fireworks over Navy Pier',
+            {
+              src: '/chicago/curiosities/raising-2-1.png',
+              alt: 'Chicago street raising construction',
             },
-          },
-          {
-            title: 'Riverwalk Winter Market',
-            description: 'Local artisans selling handcrafted gifts, vintage finds, and Chicago-made goods. Heated tents and warm beverages. Open weekends through January.',
-            startDate: '2025-12-28T11:00:00',
-            endDate: '2025-12-28T18:00:00',
-            location: 'Chicago Riverwalk',
-            category: 'markets',
-            tags: ['market', 'shopping', 'outdoor'],
-          },
-          {
-            title: 'Green Mill Jazz Club: New Year\'s Week Residency',
-            description: 'Legendary jazz venue hosts week-long residency featuring Chicago\'s finest jazz musicians. Same stage where Al Capone once sat.',
-            startDate: '2025-12-28T21:00:00',
-            endDate: '2025-12-28T02:00:00',
-            location: 'Green Mill Cocktail Lounge, Uptown',
-            category: 'concerts',
-            tags: ['music', 'jazz', 'historic'],
-            href: 'https://greenmilljazz.com',
-          },
-          {
-            title: 'Deep Dish Bake-Off Championship',
-            description: 'Amateur and professional pizzaiolos compete for Chicago\'s best deep dish. Taste samples from all contestants and vote for your favorite.',
-            startDate: '2025-12-29T14:00:00',
-            endDate: '2025-12-29T18:00:00',
-            location: 'Pilsen Community Center',
-            category: 'food-drink',
-            tags: ['food', 'competition'],
-          },
-          {
-            title: 'First Look: Museum of Contemporary Art Renovation',
-            description: 'Exclusive preview of the newly renovated East Wing before public opening. Includes new galleries, rooftop terrace, and restaurant.',
-            startDate: '2026-01-02T18:00:00',
-            endDate: '2026-01-02T21:00:00',
-            location: 'Museum of Contemporary Art Chicago',
-            category: 'art',
-            tags: ['art', 'museum', 'exclusive'],
-            href: 'https://mcachicago.org',
-          }
-        ],
-      },
-      {
-        id: 'this-week',
-        type: 'card-list',
-        title: 'This Week',
-        cards: [
-          {
-            title: 'The L Train Survival Guide',
-            description: 'Everything you need to know about riding Chicago\'s elevated trains like a local.',
-            meta: 'Guide',
-            href: '/chicago/l-train-guide',
-          },
-          {
-            title: 'Deep Dish vs. Tavern Style',
-            description: 'The pizza debate that divides the city — and why locals usually pick tavern.',
-            meta: 'Feature',
-            href: '/chicago/pizza-debate',
-          },
-          {
-            title: 'Lakefront Trail Running Routes',
-            description: 'The best stretches of the 18-mile trail, from Navy Pier to Promontory Point.',
-            meta: 'List',
-            variant: 'compact',
-            href: '/chicago/lakefront-running',
-          }
-        ],
-      },
-      {
-        id: 'ad-2',
-        type: 'ad',
-        size: 'rectangle',
-      },
-      {
-        id: 'quick-reads',
-        type: 'section',
-        title: 'Quick Reads',
-        items: [
-          {
-            id: 'quick-1',
-            type: 'card',
-            title: 'Why Does the River Flow Backwards?',
-            description: 'The audacious engineering that saved the city from its own sewage.',
-            variant: 'compact',
-          },
-          {
-            id: 'quick-2',
-            type: 'card',
-            title: 'The Seven Toppings of a Chicago Dog',
-            description: 'Mustard, onion, relish, pickle, tomato, sport peppers, celery salt. Never ketchup.',
-            variant: 'compact',
-          }
-        ],
-      },
-      {
-        id: 'curiosities',
-        type: 'section',
-        title: 'Chicago Curiosities',
-        teaser: 'Flooded freight tunnels, reversed rivers, and the secrets beneath the L',
-        intro: 'Chicago reversed its river to stop poisoning itself, lifted entire buildings to create a sewer system, and built a freight tunnel network so elaborate that when it flooded in 1992, nobody remembered it existed. This is a city that solves problems through sheer audacity—and leaves the evidence buried beneath the streets.',
-        items: [
-          {
-            id: 'curiosity-1',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'Lake Michigan once had its own pirate king',
-            body: 'In 1850, James Strang led a breakaway Mormon sect to Beaver Island in northern Lake Michigan, crowned himself king, and got busy with the whole monarchy thing. He minted his own currency, raided passing ships, and ruled with absolute authority—because apparently the Great Lakes needed a supervillain. His kingdom lasted six years until two disgruntled subjects shot him. America\'s only monarchy ended not with revolution, but with poor employee relations.',
-            images: [
-              {
-                src: '/chicago/curiosities/weird-king.png',
-                alt: 'King James Strang of Beaver Island',
-              }
-            ],
-            source: 'Great Lakes Maritime Heritage Center',
-            location: {
-              name: 'Beaver Island, Lake Michigan',
-              stillExists: true,
+            {
+              src: '/chicago/curiosities/raising-3.png',
+              alt: 'Jackscrews lifting Chicago buildings',
+            }
+          ],
+          source: 'Chicago Historical Society',
+        },
+        {
+          id: 'curiosity-4',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The Eastland killed more people than the Titanic—at the dock',
+          body: 'On July 24, 1915, the SS Eastland rolled over while still tied to the Chicago River wharf, killing 844 people headed to a company picnic. The ship never left the dock. Passengers were trapped between decks in the capsized hull 20 feet from shore. It remains the deadliest single-vessel disaster in Great Lakes history, yet the Titanic gets all the movies. Geography is destiny, even in tragedy.',
+          images: [
+            {
+              src: '/chicago/curiosities/boat-disaster-1.png',
+              alt: 'Chicago River where the Eastland disaster occurred',
             },
+            {
+              src: '/chicago/curiosities/boat-disaster-2.png',
+              alt: 'SS Eastland capsized on Chicago River',
+            }
+          ],
+          source: 'Eastland Disaster Historical Society',
+          location: {
+            name: 'Chicago River at LaSalle Street',
+            stillExists: true,
           },
-          {
-            id: 'curiosity-2',
-            type: 'curiosity',
-            category: 'science',
-            title: 'The first nuclear reaction happened under a squash court',
-            body: 'December 2, 1942. Beneath a football stadium, Enrico Fermi split an atom. The reaction lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under Stagg Field while students attended classes above. The Atomic Age began with spectacularly poor risk assessment. Today a Henry Moore sculpture marks the spot where it happened.',
-            images: [
-              {
-                src: '/chicago/curiosities/reactor-1.png',
-                alt: 'University of Chicago campus where first nuclear reaction occurred',
-              },
-              {
-                src: '/chicago/curiosities/reactor-2.png',
-                alt: 'Stagg Field memorial to first nuclear reaction',
-              }
-            ],
-            source: 'Bulletin of the Atomic Scientists',
-            location: {
-              name: 'University of Chicago, Regenstein Library',
-              stillExists: true,
+        },
+        {
+          id: 'curiosity-5',
+          type: 'curiosity',
+          category: 'invention',
+          title: 'The Ferris Wheel was built to humiliate the Eiffel Tower',
+          body: 'When Chicago hosted the 1893 World\'s Fair, organizers demanded something to eclipse Paris\'s Eiffel Tower. George Washington Gale Ferris Jr. delivered: a 264-foot steel wheel carrying 2,160 passengers in 36 cars. Critics predicted catastrophic failure. They were wrong. Over 1.4 million people rode it. Ferris proved his genius, died broke three years later, and watched creditors seize his masterwork. Vindication is expensive.',
+          images: [
+            {
+              src: '/chicago/curiosities/ferris-1.png',
+              alt: 'Original Ferris wheel at 1893 World\'s Fair',
+            }
+          ],
+          source: 'Field Museum archives',
+          location: {
+            name: 'Jackson Park',
+            stillExists: false,
+          },
+        },
+        {
+          id: 'curiosity-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'curiosity-6',
+          type: 'curiosity',
+          category: 'underground',
+          title: '60 miles of forgotten tunnels flooded downtown in 1992',
+          body: 'Starting in 1899, workers dug 60 miles of narrow-gauge freight tunnels beneath the Loop to move coal and mail. Chicagoans completely forgot they existed. On April 13, 1992, a construction crew punctured a tunnel wall under the Chicago River. 250 million gallons poured into basements across downtown. The financial district shut down for weeks. The Loop ran on emergency generators. The bill: $1.95 billion for infrastructure nobody remembered building.',
+          images: [
+            {
+              src: '/chicago/curiosities/flood-1.png',
+              alt: 'Chicago downtown skyline along the river',
             },
-          },
-          {
-            id: 'curiosity-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'curiosity-3',
-            type: 'curiosity',
-            category: 'history',
-            title: 'The city was raised 14 feet while people kept shopping',
-            body: 'Chicago was built on a swamp. Literally. Sewage pooled in the streets. Instead of moving like normal cities, engineers lifted the entire downtown—14 feet up—buildings, sidewalks, everything. The Briggs House hotel rose mid-dinner service while oblivious guests kept eating, unaware their building was levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
-            images: [
-              {
-                src: '/chicago/curiosities/raising-1.png',
-                alt: 'Historic architecture in Chicago',
-              },
-              {
-                src: '/chicago/curiosities/raising-2-1.png',
-                alt: 'Chicago street raising construction',
-              },
-              {
-                src: '/chicago/curiosities/raising-3.png',
-                alt: 'Jackscrews lifting Chicago buildings',
-              }
-            ],
-            source: 'Chicago Historical Society',
-          },
-          {
-            id: 'curiosity-4',
-            type: 'curiosity',
-            category: 'history',
-            title: 'The Eastland killed more people than the Titanic—at the dock',
-            body: 'On July 24, 1915, the SS Eastland rolled over while still tied to the Chicago River wharf, killing 844 people headed to a company picnic. The ship never left the dock. Passengers were trapped between decks in the capsized hull 20 feet from shore. It remains the deadliest single-vessel disaster in Great Lakes history, yet the Titanic gets all the movies. Geography is destiny, even in tragedy.',
-            images: [
-              {
-                src: '/chicago/curiosities/boat-disaster-1.png',
-                alt: 'Chicago River where the Eastland disaster occurred',
-              },
-              {
-                src: '/chicago/curiosities/boat-disaster-2.png',
-                alt: 'SS Eastland capsized on Chicago River',
-              }
-            ],
-            source: 'Eastland Disaster Historical Society',
-            location: {
-              name: 'Chicago River at LaSalle Street',
-              stillExists: true,
+            {
+              src: '/chicago/curiosities/flood-2.png',
+              alt: 'Chicago Loop tunnel system',
+            }
+          ],
+          source: 'Chicago Tribune historical archives',
+        },
+        {
+          id: 'curiosity-7',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Two bronze lions predict championship wins with perfect accuracy',
+          body: 'Since 1920, the Art Institute\'s two bronze lions have been dressed for Chicago sports victories—Bears helmets, Blackhawks jerseys, Cubs caps. According to museum lore, when the lions wear gear before a championship game, Chicago wins. What started as informal fan enthusiasm became official museum tradition. Locals treat the prophecy with religious seriousness. The lions have better playoff records than most of the teams.',
+          images: [
+            {
+              src: '/chicago/curiosities/lions-1.png',
+              alt: 'Art Institute of Chicago bronze lions',
             },
-          },
-          {
-            id: 'curiosity-5',
-            type: 'curiosity',
-            category: 'invention',
-            title: 'The Ferris Wheel was built to humiliate the Eiffel Tower',
-            body: 'When Chicago hosted the 1893 World\'s Fair, organizers demanded something to eclipse Paris\'s Eiffel Tower. George Washington Gale Ferris Jr. delivered: a 264-foot steel wheel carrying 2,160 passengers in 36 cars. Critics predicted catastrophic failure. They were wrong. Over 1.4 million people rode it. Ferris proved his genius, died broke three years later, and watched creditors seize his masterwork. Vindication is expensive.',
-            images: [
-              {
-                src: '/chicago/curiosities/ferris-1.png',
-                alt: 'Original Ferris wheel at 1893 World\'s Fair',
-              }
-            ],
-            source: 'Field Museum archives',
-            location: {
-              name: 'Jackson Park',
-              stillExists: false,
+            {
+              src: '/chicago/curiosities/lions-2.png',
+              alt: 'Art Institute lions wearing sports gear',
             },
+            {
+              src: '/chicago/curiosities/lions-3.png',
+              alt: 'Art Institute entrance with decorated lions',
+            }
+          ],
+          source: 'Art Institute of Chicago',
+          location: {
+            name: 'Art Institute of Chicago',
+            stillExists: true,
           },
-          {
-            id: 'curiosity-ad-2',
-            type: 'ad',
-            size: 'rectangle',
+        },
+        {
+          id: 'curiosity-8',
+          type: 'curiosity',
+          category: 'legend',
+          title: 'America\'s first serial killer built a murder hotel for the World\'s Fair',
+          body: 'H.H. Holmes constructed a massive building at 63rd and Wallace for the 1893 World\'s Fair and called it "The Castle." Inside: gas lines controlled from his office, soundproof rooms, a walk-in vault, and basement chutes leading to a crematorium. He confessed to 27 murders but likely killed over 200. The building was demolished in 1938. The empty lot remains one of Chicago\'s darkest addresses.',
+          images: [
+            {
+              src: '/chicago/curiosities/the-castle.png',
+              alt: 'H.H. Holmes Murder Castle',
+            }
+          ],
+          source: 'Erik Larson, The Devil in the White City',
+          location: {
+            name: '63rd and Wallace Streets',
+            stillExists: false,
           },
-          {
-            id: 'curiosity-6',
-            type: 'curiosity',
-            category: 'underground',
-            title: '60 miles of forgotten tunnels flooded downtown in 1992',
-            body: 'Starting in 1899, workers dug 60 miles of narrow-gauge freight tunnels beneath the Loop to move coal and mail. Chicagoans completely forgot they existed. On April 13, 1992, a construction crew punctured a tunnel wall under the Chicago River. 250 million gallons poured into basements across downtown. The financial district shut down for weeks. The Loop ran on emergency generators. The bill: $1.95 billion for infrastructure nobody remembered building.',
-            images: [
-              {
-                src: '/chicago/curiosities/flood-1.png',
-                alt: 'Chicago downtown skyline along the river',
-              },
-              {
-                src: '/chicago/curiosities/flood-2.png',
-                alt: 'Chicago Loop tunnel system',
-              }
-            ],
-            source: 'Chicago Tribune historical archives',
-          },
-          {
-            id: 'curiosity-7',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Two bronze lions predict championship wins with perfect accuracy',
-            body: 'Since 1920, the Art Institute\'s two bronze lions have been dressed for Chicago sports victories—Bears helmets, Blackhawks jerseys, Cubs caps. According to museum lore, when the lions wear gear before a championship game, Chicago wins. What started as informal fan enthusiasm became official museum tradition. Locals treat the prophecy with religious seriousness. The lions have better playoff records than most of the teams.',
-            images: [
-              {
-                src: '/chicago/curiosities/lions-1.png',
-                alt: 'Art Institute of Chicago bronze lions',
-              },
-              {
-                src: '/chicago/curiosities/lions-2.png',
-                alt: 'Art Institute lions wearing sports gear',
-              },
-              {
-                src: '/chicago/curiosities/lions-3.png',
-                alt: 'Art Institute entrance with decorated lions',
-              }
-            ],
-            source: 'Art Institute of Chicago',
-            location: {
-              name: 'Art Institute of Chicago',
-              stillExists: true,
+        },
+        {
+          id: 'curiosity-9',
+          type: 'curiosity',
+          category: 'science',
+          title: 'Engineers reversed the Chicago River to save the city',
+          body: 'By the 1880s, Chicago\'s sewage flowed directly into Lake Michigan—the same lake that supplied drinking water. Typhoid and cholera killed thousands. In 1900, engineers accomplished the impossible: they reversed the flow of the Chicago River using locks and canals, sending waste toward the Mississippi instead. St. Louis objected strenuously. Chicago didn\'t care. The river still flows backward today.',
+          images: [
+            {
+              src: '/chicago/curiosities/reverse-1.png',
+              alt: 'Chicago River flowing through downtown',
             },
+            {
+              src: '/chicago/curiosities/reverse-2.png',
+              alt: 'Chicago River locks and canal system',
+            }
+          ],
+          source: 'American Society of Civil Engineers',
+          location: {
+            name: 'Chicago River',
+            stillExists: true,
           },
-          {
-            id: 'curiosity-8',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'America\'s first serial killer built a murder hotel for the World\'s Fair',
-            body: 'H.H. Holmes constructed a massive building at 63rd and Wallace for the 1893 World\'s Fair and called it "The Castle." Inside: gas lines controlled from his office, soundproof rooms, a walk-in vault, and basement chutes leading to a crematorium. He confessed to 27 murders but likely killed over 200. The building was demolished in 1938. The empty lot remains one of Chicago\'s darkest addresses.',
-            images: [
-              {
-                src: '/chicago/curiosities/the-castle.png',
-                alt: 'H.H. Holmes Murder Castle',
-              }
-            ],
-            source: 'Erik Larson, The Devil in the White City',
-            location: {
-              name: '63rd and Wallace Streets',
-              stillExists: false,
+        },
+        {
+          id: 'curiosity-11',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Mrs. O\'Leary\'s cow was officially exonerated 126 years later',
+          body: 'The story that Catherine O\'Leary\'s cow kicked over a lantern and started the Great Chicago Fire was fabricated by reporter Michael Ahern, who later admitted he invented it for a better story. The O\'Learys were poor Irish immigrants—convenient scapegoats. In 1997, the Chicago City Council officially cleared Catherine O\'Leary and her cow. It took 126 years to apologize. The real cause remains unknown.',
+          images: [
+            {
+              src: '/chicago/curiosities/oleary-cow.png',
+              alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend',
+            }
+          ],
+          source: 'Chicago City Council Resolution, 1997',
+          location: {
+            name: 'DeKoven Street (Chicago Fire Academy)',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-12',
+          type: 'curiosity',
+          category: 'architecture',
+          title: 'The only post office you can drive through',
+          body: 'The Old Chicago Main Post Office, completed in 1932, was built directly over Congress Parkway—the only postal facility in America where vehicles pass through the building itself. Mail trucks loaded on upper floors while traffic flowed beneath. The building sat magnificently vacant from 1997 to 2019, when developers converted it into the largest single-floor office space in America. Abandonment as investment strategy.',
+          images: [
+            {
+              src: '/chicago/curiosities/post-office-1.png',
+              alt: 'Old Chicago Main Post Office spanning Congress Parkway',
             },
+            {
+              src: '/chicago/curiosities/post-office-2.png',
+              alt: 'Historic Chicago Post Office architecture',
+            }
+          ],
+          source: 'National Register of Historic Places',
+          location: {
+            name: 'The Old Post Office, 433 W Van Buren',
+            stillExists: true,
           },
-          {
-            id: 'curiosity-9',
-            type: 'curiosity',
-            category: 'science',
-            title: 'Engineers reversed the Chicago River to save the city',
-            body: 'By the 1880s, Chicago\'s sewage flowed directly into Lake Michigan—the same lake that supplied drinking water. Typhoid and cholera killed thousands. In 1900, engineers accomplished the impossible: they reversed the flow of the Chicago River using locks and canals, sending waste toward the Mississippi instead. St. Louis objected strenuously. Chicago didn\'t care. The river still flows backward today.',
-            images: [
-              {
-                src: '/chicago/curiosities/reverse-1.png',
-                alt: 'Chicago River flowing through downtown',
-              },
-              {
-                src: '/chicago/curiosities/reverse-2.png',
-                alt: 'Chicago River locks and canal system',
-              }
-            ],
-            source: 'American Society of Civil Engineers',
-            location: {
-              name: 'Chicago River',
-              stillExists: true,
+        },
+        {
+          id: 'curiosity-13',
+          type: 'curiosity',
+          category: 'architecture',
+          title: 'The world\'s first skyscraper rose from Chicago\'s ashes',
+          body: 'Just 14 years after the Great Fire leveled the city, William Le Baron Jenney completed the Home Insurance Building in 1885—the world\'s first skyscraper. At 10 stories, it pioneered the steel-skeleton construction that made every modern high-rise possible. Every tall building on Earth descends from this Chicago innovation. The city demolished it in 1931 to build something taller, because sentimentality is for cities that lose fires.',
+          images: [
+            {
+              src: '/chicago/curiosities/first-skyscraper.png',
+              alt: 'Home Insurance Building - world\'s first skyscraper',
+            }
+          ],
+          source: 'Chicago Architecture Center',
+          location: {
+            name: 'LaSalle and Adams Streets',
+            stillExists: false,
+          },
+        },
+        {
+          id: 'curiosity-14',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Chicago\'s alleys are longer than its streets',
+          body: 'Chicago has 1,900 miles of alleyways—more than its actual streets. The grid of back alleys was designed to hide garbage, deliveries, and utilities from view, creating a shadow city behind every block. Today the alleys host garage parties, murals, street art, and an entire subculture invisible from the front. Chicago has two faces. The alley is the honest one.',
+          images: [
+            {
+              src: '/chicago/curiosities/alley.png',
+              alt: 'Chicago alleyway with murals and street art',
+            }
+          ],
+          source: 'Chicago Department of Transportation',
+        },
+        {
+          id: 'curiosity-15',
+          type: 'curiosity',
+          category: 'invention',
+          title: 'The zipper, Twinkies, and spray paint were all invented here',
+          body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
+          images: [
+            {
+              src: '/chicago/curiosities/twinkies-zipper-spraypaint.png',
+              alt: 'Chicago inventions: the zipper, Twinkies, and spray paint',
+            }
+          ],
+          source: 'Chicago History Museum',
+        }
+      ],
+    },
+    {
+      id: 'chi-iconic-spots',
+      type: 'section',
+      title: 'Windy City Foundations',
+      intro: 'These are the markers of Chicago identity—the places that define why people settle here and how they thrive in the shadow of the loop. From the Bean to the ballpark, these are the non-negotiables.',
+      items: [
+        {
+          id: 'iconic-cloud-gate',
+          type: 'iconic-spot',
+          name: 'Cloud Gate (The Bean)',
+          category: 'Public Art',
+          description: 'Anish Kapoor\'s 110-ton stainless steel sculpture reflects Chicago\'s skyline in a mirror finish so polished you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works — the reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Go early to avoid crowds, or embrace the crowds and watch people pose.',
+          images: [
+            {
+              src: '',
+              alt: 'Cloud Gate sculpture reflecting Chicago skyline',
+            }
+          ],
+          address: 'Millennium Park, 201 E Randolph St, Chicago, IL 60602',
+          coordinates: { lat: 41.8827, lng: -87.6233 },
+          hours: 'Daily 6am-11pm',
+          price: 'Free',
+          website: 'https://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park.html',
+          tip: 'Visit at dawn to get photos without crowds — the sculpture looks best in early morning light.',
+        },
+        {
+          id: 'iconic-art-institute',
+          type: 'iconic-spot',
+          name: 'The Art Institute of Chicago',
+          category: 'Museum',
+          description: 'One of the oldest and largest art museums in the United States houses everything from ancient Egyptian artifacts to contemporary installations. The Impressionist collection alone justifies admission — Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. The Modern Wing by Renzo Piano is a masterclass in museum design. You could spend days here and still miss entire wings.',
+          images: [
+            {
+              src: '',
+              alt: 'Art Institute of Chicago exterior with bronze lion statues',
+            }
+          ],
+          address: '111 S Michigan Ave, Chicago, IL 60603',
+          coordinates: { lat: 41.8796, lng: -87.6237 },
+          hours: 'Thu-Mon 11am-5pm (closed Tue-Wed)',
+          price: '$25-32 adults depending on season',
+          website: 'https://www.artic.edu',
+          tip: 'Download the museum\'s app for audio tours and visit the Thorne Miniature Rooms in the basement.',
+        },
+        {
+          id: 'iconic-navy-pier',
+          type: 'iconic-spot',
+          name: 'Navy Pier',
+          category: 'Entertainment',
+          description: 'A mile-long pier on Lake Michigan that functions as Chicago\'s tourist processing center — rides, restaurants, boat tours, fireworks, and crowds of people trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. The boat tours departing from here are excellent. The Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
+          images: [
+            {
+              src: '',
+              alt: 'Navy Pier with Ferris wheel and Chicago skyline',
+            }
+          ],
+          address: '600 E Grand Ave, Chicago, IL 60611',
+          coordinates: { lat: 41.8917, lng: -87.6086 },
+          hours: 'Hours vary by season and attraction',
+          price: 'Free to walk, attractions priced separately',
+          website: 'https://www.navypier.org',
+          tip: 'Skip the crowded summer weekends — visit on a weekday evening for fireworks without the chaos.',
+        },
+        {
+          id: 'iconic-360-chicago',
+          type: 'iconic-spot',
+          name: '360 CHICAGO (John Hancock Observatory)',
+          category: 'Observation Deck',
+          description: 'The observation deck on the 94th floor of the John Hancock Center offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a glass platform that tilts you out over Michigan Avenue at a 30-degree angle, which is either thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, which is sometimes cheaper than admission.',
+          images: [
+            {
+              src: '',
+              alt: 'Chicago skyline view from John Hancock Observatory',
+            }
+          ],
+          address: '875 N Michigan Ave, 94th Floor, Chicago, IL 60611',
+          coordinates: { lat: 41.8989, lng: -87.6230 },
+          hours: 'Daily 9am-11pm',
+          price: '$30-35 adults',
+          website: 'https://www.360chicago.com',
+          tip: 'Visit the Signature Lounge on the 96th floor instead — similar views, cheaper if you just buy a drink.',
+        },
+        {
+          id: 'iconic-magnificent-mile',
+          type: 'iconic-spot',
+          name: 'The Magnificent Mile',
+          category: 'Shopping District',
+          description: 'A 13-block stretch of Michigan Avenue from the Chicago River to Oak Street packed with retail — luxury brands, department stores, chain restaurants, and tourists shopping like it\'s a contact sport. Architecturally significant buildings house predictable stores. Is it worth visiting? If you need to shop, yes. If you want to see Chicago\'s commercial heart, also yes. If you want authentic neighborhood culture, go literally anywhere else.',
+          images: [
+            {
+              src: '',
+              alt: 'Michigan Avenue Magnificent Mile with shopping and architecture',
+            }
+          ],
+          address: 'Michigan Ave from Chicago River to Oak St, Chicago, IL 60611',
+          coordinates: { lat: 41.8957, lng: -87.6244 },
+          hours: 'Store hours vary',
+          price: 'Free to walk',
+          website: 'https://www.themagnificentmile.com',
+          tip: 'Walk it once to see the architecture, then shop in actual neighborhoods with better stores.',
+        },
+        {
+          id: 'iconic-willis-tower',
+          type: 'iconic-spot',
+          name: 'Willis Tower Skydeck',
+          category: 'Observation Deck',
+          description: 'Formerly the Sears Tower, still the tallest building in Chicago at 1,450 feet. The Skydeck on the 103rd floor features glass boxes (The Ledge) that extend out from the building — stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care.',
+          images: [
+            {
+              src: '',
+              alt: 'Willis Tower Skydeck glass ledge extending over city',
+            }
+          ],
+          address: '233 S Wacker Dr, Chicago, IL 60606',
+          coordinates: { lat: 41.8789, lng: -87.6359 },
+          hours: 'Daily 9am-10pm (seasonal variations)',
+          price: '$30-40 adults depending on time',
+          website: 'https://www.theskydeck.com',
+          tip: 'Buy tickets online to skip the ticket line (you\'ll still wait for elevators). Visit at sunset for day-to-night views.',
+        }
+      ],
+    },
+    {
+      id: 'chi-hidden-gems',
+      type: 'section',
+      title: 'Beyond the Loop',
+      teaser: '60 miles of flooded freight tunnels, abandoned L stations, and Capone\'s speakeasies',
+      intro: 'Chicago’s real soul isn’t found in the tourist traps; it’s hidden in neighborhood speakeasies, abandoned theaters, and the secret corners of the lakefront that the brochures forget.',
+      items: [
+        {
+          id: 'gem-freight-tunnels',
+          type: 'hidden-gem',
+          name: 'Chicago Freight Tunnel System',
+          category: 'Urban Infrastructure',
+          description: 'Sixty miles of underground freight tunnels run beneath downtown Chicago, built between 1899 and 1906 to move coal and goods via electric railway cars. The system worked until 1959. In 1992, a contractor drove a piling through the tunnel roof into the Chicago River, causing the Great Chicago Flood that flooded basements across the Loop. The tunnels were sealed after 9/11. Most Chicagoans have no idea this network exists. You can\'t visit — access is restricted to utility workers — but the knowledge that an entire subterranean city runs beneath your feet changes how you see the streets. Some sections are still used for fiber optic cables and utilities. Others sit empty, slowly flooding with groundwater. The tunnel system is Chicago\'s best-kept infrastructure secret.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/freight-tunnel-1.png',
+              alt: 'Underground tunnel with brick archways and dim lighting',
             },
-          },
-          {
-            id: 'curiosity-11',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Mrs. O\'Leary\'s cow was officially exonerated 126 years later',
-            body: 'The story that Catherine O\'Leary\'s cow kicked over a lantern and started the Great Chicago Fire was fabricated by reporter Michael Ahern, who later admitted he invented it for a better story. The O\'Learys were poor Irish immigrants—convenient scapegoats. In 1997, the Chicago City Council officially cleared Catherine O\'Leary and her cow. It took 126 years to apologize. The real cause remains unknown.',
-            images: [
-              {
-                src: '/chicago/curiosities/oleary-cow.png',
-                alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend',
-              }
-            ],
-            source: 'Chicago City Council Resolution, 1997',
-            location: {
-              name: 'DeKoven Street (Chicago Fire Academy)',
-              stillExists: true,
+            {
+              src: '/chicago/hidden-gems/freight-tunnel-2.png',
+              alt: 'Historic Chicago freight tunnel system',
+            }
+          ],
+          address: 'Beneath downtown Chicago',
+          coordinates: { lat: 41.8781, lng: -87.6298 },
+          hours: 'Not accessible to public',
+          price: 'Not accessible',
+          website: 'https://www.chicagology.com/columbiaexpo/tunnels/',
+          tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.',
+        },
+        {
+          id: 'gem-california-ghost',
+          type: 'hidden-gem',
+          name: 'California Blue Line Ghost Station',
+          category: 'Urban Exploration',
+          description: 'An abandoned L station sits in the median of the Eisenhower Expressway, closed since 1973 and visible from passing Blue Line trains. The California station was part of the original Garfield Park elevated line, abandoned when the Congress Line (now Blue Line) was rerouted. The platform is still there — rusted, overgrown with weeds, covered in graffiti. No public access, but you can see it clearly if you ride the Blue Line between UIC-Halsted and Illinois Medical District. Watching an abandoned station flash past while you ride a functioning train creates a strange temporal overlap — this is what infrastructure death looks like in a city that doesn\'t tear everything down.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/blue-line-1.png',
+              alt: 'Abandoned elevated train station with overgrown platform',
             },
-          },
-          {
-            id: 'curiosity-12',
-            type: 'curiosity',
-            category: 'architecture',
-            title: 'The only post office you can drive through',
-            body: 'The Old Chicago Main Post Office, completed in 1932, was built directly over Congress Parkway—the only postal facility in America where vehicles pass through the building itself. Mail trucks loaded on upper floors while traffic flowed beneath. The building sat magnificently vacant from 1997 to 2019, when developers converted it into the largest single-floor office space in America. Abandonment as investment strategy.',
-            images: [
-              {
-                src: '/chicago/curiosities/post-office-1.png',
-                alt: 'Old Chicago Main Post Office spanning Congress Parkway',
-              },
-              {
-                src: '/chicago/curiosities/post-office-2.png',
-                alt: 'Historic Chicago Post Office architecture',
-              }
-            ],
-            source: 'National Register of Historic Places',
-            location: {
-              name: 'The Old Post Office, 433 W Van Buren',
-              stillExists: true,
+            {
+              src: '/chicago/hidden-gems/blue-line-2.png',
+              alt: 'California ghost station visible from Blue Line',
+            }
+          ],
+          address: 'Eisenhower Expressway near California Ave, Chicago, IL',
+          coordinates: { lat: 41.8743, lng: -87.6971 },
+          hours: 'Visible from Blue Line trains',
+          price: 'CTA fare',
+          website: 'http://forgottenchicago.com/features/remnants-of-the-l/',
+          tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.',
+        },
+        {
+          id: 'gem-exchequer-speakeasy',
+          type: 'hidden-gem',
+          name: 'Exchequer Restaurant (Al Capone Speakeasy)',
+          category: 'Historic Site',
+          description: 'A confirmed Al Capone location where original speakeasy architecture is still visible above the ceiling — exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. The basement tunnel system is sealed now, but you can still see where bootleggers moved inventory. The restaurant serves deep-dish pizza and Italian beef in a space where gangsters once ran liquor. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/exchequer-1.png',
+              alt: 'Historic restaurant interior with exposed brick and vintage details',
             },
-          },
-          {
-            id: 'curiosity-13',
-            type: 'curiosity',
-            category: 'architecture',
-            title: 'The world\'s first skyscraper rose from Chicago\'s ashes',
-            body: 'Just 14 years after the Great Fire leveled the city, William Le Baron Jenney completed the Home Insurance Building in 1885—the world\'s first skyscraper. At 10 stories, it pioneered the steel-skeleton construction that made every modern high-rise possible. Every tall building on Earth descends from this Chicago innovation. The city demolished it in 1931 to build something taller, because sentimentality is for cities that lose fires.',
-            images: [
-              {
-                src: '/chicago/curiosities/first-skyscraper.png',
-                alt: 'Home Insurance Building - world\'s first skyscraper',
-              }
-            ],
-            source: 'Chicago Architecture Center',
-            location: {
-              name: 'LaSalle and Adams Streets',
-              stillExists: false,
+            {
+              src: '/chicago/hidden-gems/exchequer-2.png',
+              alt: 'Exchequer Restaurant speakeasy architecture',
             },
+            {
+              src: '/chicago/hidden-gems/exchequer-3.png',
+              alt: 'Al Capone era speakeasy details at Exchequer',
+            }
+          ],
+          address: '226 S Wabash Ave, Chicago, IL 60604',
+          coordinates: { lat: 41.8791, lng: -87.6259 },
+          hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 12pm-8pm',
+          price: '$$',
+          website: 'https://www.exchequerpub.com',
+          tip: 'Ask your server about the speakeasy history — they can point out the original architectural features.',
+        },
+        {
+          id: 'gem-union-stockyard-gate',
+          type: 'hidden-gem',
+          name: 'Union Stock Yard Gate',
+          category: 'Historic Monument',
+          description: 'The only remaining structure from the Union Stock Yards, once the largest meatpacking complex in the world (1865-1971). This neo-gothic limestone gate from 1877 is the sole survivor of an industrial empire that defined Chicago. At its peak, the stockyards processed 18 million animals annually. Upton Sinclair wrote The Jungle about conditions here. The smell could be detected miles away. Now: one ornate gate standing alone on Exchange Avenue, a National Historic Landmark marking an industry that no longer exists. Behind the gate: industrial lots, some new development, and the absence of what was once the economic engine of the Midwest.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/stockyard-1.png',
+              alt: 'Historic limestone gate with ornate architecture standing alone',
+            },
+            {
+              src: '/chicago/hidden-gems/stockyard-2.png',
+              alt: 'Union Stock Yard Gate architectural details',
+            },
+            {
+              src: '/chicago/hidden-gems/stockyard-3.png',
+              alt: 'Union Stock Yard Gate historic landmark',
+            },
+            {
+              src: '/chicago/hidden-gems/stockyard-4.png',
+              alt: 'Union Stock Yard Gate from street level',
+            }
+          ],
+          address: '850 W Exchange Ave, Chicago, IL 60609',
+          coordinates: { lat: 41.8151, lng: -87.6578 },
+          hours: 'Exterior viewable anytime',
+          price: 'Free',
+          website: 'https://www.chicagoparkdistrict.com',
+          tip: 'Combine with a visit to nearby Back of the Yards neighborhood, historically home to stockyard workers.',
+        },
+        {
+          id: 'gem-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'gem-worlds-fair-remnants',
+          type: 'hidden-gem',
+          name: '1893 World\'s Fair Remnants (Jackson Park)',
+          category: 'Historic Site',
+          description: 'Scattered throughout Jackson Park: original arc lamp posts designed by Charles Atwood, Westinghouse manhole covers fabricated for the fair, the Wooded Island\'s Japanese garden on the site of the Phoenix Pavilion, and the Columbia Stone Pedestrian Bridge. The 1893 World\'s Columbian Exposition was demolished after the fair — almost everything burned or was torn down. These fragments are what remains of the "White City" that introduced Ferris wheels, Cracker Jack, and electric lighting on a scale never seen before. Most visitors to Jackson Park walk past 130-year-old infrastructure without realizing they\'re treading on World\'s Fair history.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/jacksonpark-1.png',
+              alt: 'Historic stone bridge and lamp posts in park setting',
+            },
+            {
+              src: '/chicago/hidden-gems/jacksonpark-2.png',
+              alt: '1893 World\'s Fair remnants in Jackson Park',
+            }
+          ],
+          address: 'Jackson Park, 6401 S Stony Island Ave, Chicago, IL 60637',
+          coordinates: { lat: 41.7838, lng: -87.5806 },
+          hours: 'Daily 6am-11pm',
+          price: 'Free',
+          website: 'https://www.chicagoparkdistrict.com',
+          tip: 'Look for the original 1893 manhole covers on Wooded Island — they\'re still functional.',
+        },
+        {
+          id: 'gem-alfred-caldwell-lily-pool',
+          type: 'hidden-gem',
+          name: 'Alfred Caldwell Lily Pool',
+          category: 'Nature',
+          description: 'A hidden Prairie School garden designed by Alfred Caldwell in 1936, rebuilt in 2013, and somehow still unknown to most Chicagoans. The lily pool sits at the north end of Lincoln Park Zoo — a serene landscape of water, stone, and native plants arranged in the Frank Lloyd Wright tradition of organic architecture. The space looks like a Monet painting come to life. Stone pathways wind through water gardens. Native plants bloom in careful succession. The council ring of stone benches invites contemplation. This is landscape architecture as art, quietly succeeding in a city that usually prefers loud.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/lily-1.png',
+              alt: 'Tranquil garden with lily pond and stone pathways',
+            },
+            {
+              src: '/chicago/hidden-gems/lily-2.png',
+              alt: 'Alfred Caldwell Lily Pool Prairie School garden',
+            }
+          ],
+          address: '125 W Fullerton Pkwy, Chicago, IL 60614',
+          coordinates: { lat: 41.9257, lng: -87.6343 },
+          hours: 'Daily 7:30am-dusk (May-Oct)',
+          price: 'Free',
+          website: 'https://www.lincolnparkconservancy.org/caldwell-lily-pool/',
+          tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.',
+        },
+        {
+          id: 'gem-chicago-temple-sky-chapel',
+          type: 'hidden-gem',
+          name: 'Chicago Temple Sky Chapel',
+          category: 'Architecture',
+          description: 'The world\'s highest church sits 400 feet above street level inside the spire of the First United Methodist Church — a neo-gothic skyscraper in the Loop that\'s also the world\'s tallest church building at 568 feet. The Sky Chapel seats 30 people in a space accessible via elevator to the 22nd floor, then a narrow staircase. Eight stained glass windows, a small altar, and views across downtown. The chapel was designed for small weddings and quiet services. Most people walk past this building daily without realizing they\'re passing a church in the sky. Free tours are offered, but you have to ask.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/temple-sky-1.png',
+              alt: 'Neo-gothic church spire rising above city buildings',
+            },
+            {
+              src: '/chicago/hidden-gems/temple-sky-2.png',
+              alt: 'Chicago Temple Sky Chapel interior',
+            },
+            {
+              src: '/chicago/hidden-gems/temple-sky-3.png',
+              alt: 'Sky Chapel stained glass windows',
+            }
+          ],
+          address: '77 W Washington St, Chicago, IL 60602',
+          coordinates: { lat: 41.8831, lng: -87.6298 },
+          hours: 'Tours by appointment',
+          price: 'Free',
+          website: 'https://www.chicagotemple.org',
+          tip: 'Call ahead to arrange a tour — the chapel is small and access is limited.',
+        },
+        {
+          id: 'gem-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'gem-windowless-building',
+          type: 'hidden-gem',
+          name: 'State & Adams Ice Water Factory',
+          category: 'Architecture',
+          description: 'Four nearly-windowless floors sit above the CVS pharmacy at State and Adams, containing floor-to-ceiling tanks that produce ice and chilled water for Loop buildings. Most people walk past this every day without noticing the building has almost no windows. The "ice water factory" is a utilitarian structure hiding in plain sight — functional infrastructure disguised as architecture. The tanks inside serve the State Street district\'s cooling needs. The building does exactly one thing, does it efficiently, and makes no aesthetic argument for itself. This is architecture as pure utility.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/state-adams.png',
+              alt: 'Nearly windowless urban building with industrial purpose',
+            }
+          ],
+          address: 'State St & Adams St, Chicago, IL 60603',
+          coordinates: { lat: 41.8793, lng: -87.6276 },
+          hours: 'Exterior viewable anytime',
+          price: 'Free to observe',
+          tip: 'Stand across the street and count the windows — then realize what you\'re looking at.',
+        },
+        {
+          id: 'gem-granville-beach',
+          type: 'hidden-gem',
+          name: 'Granville Beach',
+          category: 'Nature',
+          description: 'A tiny secret beach in Rogers Park where locals bring hammocks and books for quiet afternoons. No lifeguards, no concessions, no crowds — just a small stretch of sand at the end of Granville Avenue that most Chicagoans don\'t know exists. The beach sits tucked between larger public beaches, small enough to miss but perfect for reading or swimming without the Navy Pier energy. The view includes lake, sky, and the kind of urban solitude that cities promise but rarely deliver. Combine with Jarvis Beach and Lane Beach for a low-key North Side beach day.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/granville-1.png',
+              alt: 'Quiet neighborhood beach with sand and lake view',
+            },
+            {
+              src: '/chicago/hidden-gems/granville-2.png',
+              alt: 'Granville Beach hidden spot on Lake Michigan',
+            }
+          ],
+          address: 'Granville Ave & Lake Michigan, Chicago, IL 60660',
+          coordinates: { lat: 42.0094, lng: -87.6549 },
+          hours: 'Daily sunrise-sunset',
+          price: 'Free',
+          website: 'https://www.chicagoparkdistrict.com',
+          tip: 'No parking lot — street park in Rogers Park and walk east to the lake.',
+        },
+        {
+          id: 'gem-thorne-rooms',
+          type: 'hidden-gem',
+          name: 'Thorne Miniature Rooms',
+          category: 'Museum',
+          description: 'Sixty-eight tiny, meticulously detailed diorama rooms in the Art Institute\'s basement, created by Narcissa Niblack Thorne at 1-inch scale between 1932 and 1940. Each room recreates European and American interiors from the 16th to 20th centuries with working hinges, upholstered furniture, hand-painted wallpaper, and miniature art. The craftsmanship is extraordinary — these aren\'t dollhouses, they\'re architectural models built by master craftsmen. Most visitors to the Art Institute never make it down here, which means you can spend an hour studying furniture that\'s an inch tall in a quiet basement gallery while everyone else fights for a photo of Nighthawks.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/thorne-1.png',
+              alt: 'Detailed miniature room diorama with period furniture',
+            },
+            {
+              src: '/chicago/hidden-gems/thorne-2.png',
+              alt: 'Thorne Miniature Rooms European interior',
+            },
+            {
+              src: '/chicago/hidden-gems/thorne-3.png',
+              alt: 'Thorne Rooms intricate craftsmanship detail',
+            },
+            {
+              src: '/chicago/hidden-gems/thorne-4.png',
+              alt: 'Narcissa Thorne miniature room collection',
+            }
+          ],
+          address: 'Art Institute of Chicago, 111 S Michigan Ave, Lower Level',
+          coordinates: { lat: 41.8796, lng: -87.6237 },
+          hours: 'Thu-Mon 11am-5pm',
+          price: 'Art Institute admission required',
+          website: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms',
+          tip: 'Bring reading glasses — the details are microscopic and worth studying closely.',
+        },
+        {
+          id: 'gem-music-box',
+          type: 'hidden-gem',
+          name: 'Music Box Theatre',
+          category: 'Historic Theater',
+          description: 'A 1929 movie palace that never stopped showing films, preserving the experience of watching a movie in an ornate atmospheric theater. The ceiling is painted to look like a night sky with twinkling stars and moving clouds. The organ still rises from the orchestra pit for special screenings. The Music Box programs classics, cult films, foreign cinema, and midnight movies — this is where you watch The Room with 200 people shouting at the screen, or catch a 35mm print of a Hitchcock film. The theater has been lovingly maintained, which means it feels like 1929 in the best possible way. Popcorn is fresh. The balcony is intact. Movies look better here.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/musicbox-1.png',
+              alt: 'Ornate historic movie theater interior with starlit ceiling',
+            },
+            {
+              src: '/chicago/hidden-gems/musicbox-2.png',
+              alt: 'Music Box Theatre atmospheric ceiling',
+            },
+            {
+              src: '/chicago/hidden-gems/musicbox-3.png',
+              alt: 'Music Box Theatre vintage organ and architecture',
+            }
+          ],
+          address: '3733 N Southport Ave, Chicago, IL 60613',
+          coordinates: { lat: 41.9484, lng: -87.6640 },
+          hours: 'Varies by showtime',
+          price: '$12-15 general admission',
+          website: 'https://www.musicboxtheatre.com',
+          tip: 'Check the calendar for midnight movies and sing-along screenings — the Music Box does special events right.',
+        },
+        {
+          id: 'gem-homestead-roof',
+          type: 'hidden-gem',
+          name: 'Homestead on the Roof',
+          category: 'Rooftop Garden',
+          description: 'Chicago\'s "secret garden" sits above Roots Handmade Pizza in West Town — a 1,000 sq ft rooftop space with vertical hanging gardens, string lights, and the kind of atmosphere that makes you forget you\'re in a city. The bar serves craft cocktails and local beer. The menu is farm-to-table without being precious about it. The space feels like someone\'s well-designed backyard, except it\'s four stories up with skyline views. This isn\'t a flashy rooftop lounge; it\'s a quiet space that succeeds by being thoughtfully made. Open seasonally, weather-dependent. Go for sunset.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/homestead-1.png',
+              alt: 'Rooftop garden with hanging plants and string lights',
+            },
+            {
+              src: '/chicago/hidden-gems/homestead-2.png',
+              alt: 'Homestead on the Roof vertical gardens',
+            },
+            {
+              src: '/chicago/hidden-gems/homestead-3.png',
+              alt: 'Homestead rooftop bar atmosphere',
+            },
+            {
+              src: '/chicago/hidden-gems/homestead-4.png',
+              alt: 'Homestead secret garden skyline view',
+            }
+          ],
+          address: '1924 W Chicago Ave (above Roots Pizza), Chicago, IL 60622',
+          coordinates: { lat: 41.8958, lng: -87.6758 },
+          hours: 'Seasonal, call for hours',
+          price: '$$',
+          website: 'https://www.homesteadontheroof.com',
+          tip: 'Reservations recommended — the space is small and fills up quickly on good-weather evenings.',
+        },
+        {
+          id: 'gem-harper-library-secrets',
+          type: 'hidden-gem',
+          name: 'Harper Memorial Library Secret Spaces',
+          category: 'Architecture',
+          description: 'The University of Chicago\'s Harper Memorial Library contains two hidden spaces: a basement "library beneath a library" with study spaces accessible through unmarked doors, and a space between the ceiling and roof peak that students have accessed for decades. The basement library is open to anyone who knows to look for it — quiet, wood-paneled, ideal for studying. The upper space is technically off-limits but generations of UChicago students have found ways in. The building itself is neo-gothic grandeur, designed to make education feel like a cathedral. The secret spaces make it feel like exploration.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/harper-1.png',
+              alt: 'Gothic library interior with wooden shelves and reading spaces',
+            },
+            {
+              src: '/chicago/hidden-gems/harper-2.png',
+              alt: 'Harper Memorial Library hidden basement study',
+            }
+          ],
+          address: '1116 E 59th St, Chicago, IL 60637',
+          coordinates: { lat: 41.7886, lng: -87.5987 },
+          hours: 'Library hours vary, campus access only',
+          price: 'Free (UChicago campus)',
+          website: 'https://www.lib.uchicago.edu/harper/',
+          tip: 'Ask a UChicago student to show you the basement library — it\'s open but unmarked.',
+        },
+        {
+          id: 'gem-project-logan-wall',
+          type: 'hidden-gem',
+          name: 'Project Logan Permission Wall',
+          category: 'Public Art',
+          description: 'A four-sided permission wall surrounding 3,300 sq ft between Medill and Fullerton west of Milwaukee — one of Chicago\'s most heavily concentrated legal graffiti spots. Artists can paint here without legal consequences, which means the work changes constantly. Some pieces last weeks. Others get buffed in days. The quality ranges from amateur to professional, which is the point — this is street art as living practice, not curated museum display. The wall sits in a Logan Square alley most people would never walk down, which makes finding it feel like discovery. Bring a camera. The art won\'t be the same next month.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/permission-1.png',
+              alt: 'Graffiti-covered permission wall with colorful street art',
+            },
+            {
+              src: '/chicago/hidden-gems/permission-2.png',
+              alt: 'Project Logan legal graffiti wall murals',
+            }
+          ],
+          address: 'Between Medill & Fullerton, west of Milwaukee Ave, Chicago, IL',
+          coordinates: { lat: 41.9245, lng: -87.7050 },
+          hours: 'Anytime',
+          price: 'Free',
+          website: 'https://www.projectlogan.com',
+          tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.',
+        },
+        {
+          id: 'gem-biograph-theater',
+          type: 'hidden-gem',
+          name: 'Biograph Theater (Dillinger Death Site)',
+          category: 'Historic Site',
+          description: 'The actual location where FBI agents shot John Dillinger on July 22, 1934, after he watched a movie. The theater on Lincoln Avenue still stands, now operating as a live venue. A historical marker notes the spot where "Public Enemy No. 1" died. The movie he watched: Manhattan Melodrama. The woman who tipped off the FBI (the "Lady in Red") was actually wearing orange. Dillinger walked out of this theater into an ambush that\'s now Chicago crime folklore. The building has been renovated, but standing outside the former theater entrance connects you to a specific moment when federal law enforcement killed a celebrity criminal on a Chicago street.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/bigraph-1.png',
+              alt: 'Historic theater building exterior with vintage marquee',
+            },
+            {
+              src: '/chicago/hidden-gems/biograph-2.png',
+              alt: 'Biograph Theater where Dillinger was killed',
+            }
+          ],
+          address: '2433 N Lincoln Ave, Chicago, IL 60614',
+          coordinates: { lat: 41.9267, lng: -87.6489 },
+          hours: 'Venue hours vary',
+          price: 'Exterior viewable anytime',
+          website: 'https://www.biography-theater.com',
+          tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
+        }
+      ],
+    },
+    {
+      id: 'best-bars',
+      type: 'best-of',
+      category: 'bars',
+      title: 'Bars Worth the L Ride',
+      intro: 'Skip the River North bottle service scene. These are the spots where Chicago actually drinks.',
+      spots: [
+        {
+          name: 'The Whistler',
+          neighborhood: 'Logan Square',
+          vibe: 'High-concept cocktail program meets avant-garde jazz venue. Part art gallery, part zine-style experiment.',
+          order: 'Whatever seasonal cocktail catches your eye. The bartenders are technicians of the highest order.',
+          why: 'The Whistler is the platonic ideal of the Logan Square creative hub—part high-concept cocktail bar, part avant-garde jazz venue, and part rotating art gallery. It ignores the trend of massive, high-ceiling venues in favor of a small, dimly lit room where the menu is a zine-style exploration of seasonal infusions. There is a specific kind of intellectual coolness here that avoids pretension; the bartenders are just as happy to explain the chemistry of an egg-white sour as they are to point you toward the best late-night taco stand. It is a space that lives in the present tense, usually soundtracked by the city’s best experimental musicians.',
+          address: '2421 N Milwaukee Ave, Chicago, IL 60647',
+          coordinates: { lat: 41.9268, lng: -87.7019 },
+          hours: '6pm-2am Mon-Fri, 7pm-3am Sat, 7pm-2am Sun',
+          price: '$$',
+          website: 'https://whistlerchicago.com/',
+          instagram: '@whistlerchicago',
+          images: [
+            {
+              src: '/chicago/bars/whistler-1.png',
+              alt: 'The Whistler bar interior with art on walls',
+            },
+            {
+              src: '/chicago/bars/whistler-2.png',
+              alt: 'The Whistler cocktail bar seating',
+            },
+            {
+              src: '/chicago/bars/whistler-3.png',
+              alt: 'The Whistler live music performance',
+            }
+          ],
+        },
+        {
+          name: 'Skylark',
+          neighborhood: 'Pilsen',
+          vibe: 'Cash-only dive with the best jukebox in the city. No pretense, strong pours, neighborhood regulars.',
+          order: 'Shot and a beer. Keep it simple.',
+          why: 'A Pilsen institution that hasn\'t changed even as the neighborhood has. The kind of bar where you walk in not knowing anyone and leave with new friends. The jukebox is curated by generations of good taste.',
+          address: '2149 S Halsted St, Chicago, IL 60608',
+          coordinates: { lat: 41.8540, lng: -87.6464 },
+          hours: '4pm-2am daily',
+          price: '$',
+          website: 'https://www.skylarkchicago.com/',
+          instagram: '@skylark_chicago',
+          images: [
+            {
+              src: '/chicago/bars/skylark-1.png',
+              alt: 'Skylark dive bar interior with neon signs',
+            },
+            {
+              src: '/chicago/bars/skylark-2.png',
+              alt: 'Skylark bar jukebox and seating',
+            },
+            {
+              src: '/chicago/bars/skylark-3.png',
+              alt: 'Skylark neighborhood crowd',
+            }
+          ],
+        },
+        {
+          name: 'The Empty Bottle',
+          neighborhood: 'Ukrainian Village',
+          vibe: 'The low-rent, high-fidelity cardiac center of Chicago\'s indie rock scene. Surly, loud, and essential.',
+          order: 'PBR tallboy. Don\'t ask for a cocktail menu; there isn\'t one.',
+          why: 'Since 1992, The Empty Bottle has served as the low-rent, high-fidelity cardiac center of Chicago\'s independent music scene. It is a venue that refuses to grow up, maintaining a "Music Friendly" atmosphere where the sound system is world-class but the floor is perpetually sticky. The programming is famously adventurous, booking everything from noise-rock to experimental jazz, and their Free Monday series is a local rite of passage that has launched dozens of careers. It isn\'t a "concept" bar; it is a functional, surly, and deeply loved institution where the music is the only thing that matters, and the PBR tallboys are the unofficial currency.',
+          address: '1035 N Western Ave, Chicago, IL 60622',
+          coordinates: { lat: 41.8998, lng: -87.6873 },
+          hours: '5pm-2am Mon-Fri, 3pm-3am Sat, 3pm-2am Sun',
+          price: '$',
+          website: 'https://emptybottle.com/',
+          instagram: '@emptybottle',
+          images: [
+            {
+              src: '/chicago/bars/emptybottle-1.png',
+              alt: 'The Empty Bottle exterior',
+            },
+            {
+              src: '/chicago/bars/emptybottle-2.png',
+              alt: 'The Empty Bottle stage and sound system',
+            },
+            {
+              src: '/chicago/bars/emptybottle-3.png',
+              alt: 'The Empty Bottle bar interior',
+            },
+            {
+              src: '/chicago/bars/emptybottle-4.png',
+              alt: 'The Empty Bottle crowd at a show',
+            }
+          ],
+        },
+        {
+          name: 'Old Town Ale House',
+          neighborhood: 'Old Town',
+          vibe: 'A wood-paneled, surly preservation of the old city. Satirical, satiric, and famously the "office" for Second City legends.',
+          order: 'Whatever\'s cheap. The beer is cold and the logic is surly.',
+          why: 'The Old Town Ale House is a monument to the Second City’s comedic ghosts. Since 1958, it has served as the unofficial dressing room for legends like Bill Murray, John Belushi, and Chris Farley, who came here to wash down the adrenaline of a set with cheap beer. The walls are encrusted with the owner Bruce Elliott’s satirical nude paintings of politicians—a tradition that is as jarring as it is deeply Chicago. There are no TVs, no "craft" pretenses, and no patience for tourists who can’t handle a bit of surly service. It is a wood-paneled refuge for the survivors of the city’s nightlife, where the memories of the great improvisers still seem to linger in the corner booths.',
+          address: '219 W North Ave, Chicago, IL 60610',
+          coordinates: { lat: 41.9114, lng: -87.6344 },
+          hours: '12pm-4am Mon-Fri, 12pm-5am Sat, 12pm-4am Sun',
+          price: '$',
+          instagram: '@oldtownalehouse',
+          images: [
+            {
+              src: '/chicago/bars/oldtown-1.png',
+              alt: 'Old Town Ale House interior with paintings',
+            },
+            {
+              src: '/chicago/bars/oldtown-2.png',
+              alt: 'Old Town Ale House bar',
+            },
+            {
+              src: '/chicago/bars/oldtown-3.png',
+              alt: 'Old Town Ale House wall art',
+            }
+          ],
+        },
+        {
+          name: 'Three Dots and a Dash',
+          neighborhood: 'River North',
+          vibe: 'Hidden tiki paradise in a River North alley. Elaborate rum drinks, tropical kitsch, zero irony.',
+          order: 'The namesake Three Dots and a Dash — rum, honey, lime, allspice, served in a ceramic tiki mug.',
+          why: 'Finding this bar requires navigating an alley behind a Tex-Mex restaurant, which keeps out the wrong crowd. Inside is a Polynesian fever dream with 100+ rums, flaming drinks, and bartenders who take tiki seriously. It\'s maximalist escapism done right.',
+          address: '435 N Clark St, Chicago, IL 60654',
+          coordinates: { lat: 41.8903, lng: -87.6310 },
+          hours: '5pm-12am Sun-Thu, 5pm-2am Fri-Sat',
+          price: '$$$',
+          website: 'https://threedotschicago.com/',
+          instagram: '@threedotschicago',
+          images: [
+            {
+              src: '/chicago/bars/three-dots-1.png',
+              alt: 'Three Dots and a Dash tiki bar interior',
+            },
+            {
+              src: '/chicago/bars/three-dots-2.png',
+              alt: 'Three Dots and a Dash cocktails',
+            },
+            {
+              src: '/chicago/bars/three-dots-3.png',
+              alt: 'Three Dots and a Dash tropical decor',
+            }
+          ],
+        },
+        {
+          name: 'Maria\'s Packaged Goods & Community Bar',
+          neighborhood: 'Bridgeport',
+          vibe: 'Part bar, part bottle shop, part community center. An aggressively local Bridgeport institution.',
+          order: 'Whatever local draft they\'re excited about, plus a $3 shot of Malört.',
+          why: 'Owner Ed Marszewski basically invented the Bridgeport creative scene from this corner bar. Incredible craft beer selection, good food, and the kind of regulars who\'ve been coming for decades. Cash only.',
+          address: '960 W 31st St, Chicago, IL 60608',
+          coordinates: { lat: 41.8381, lng: -87.6516 },
+          hours: '3pm-2am Mon-Sat, 12pm-2am Sun',
+          price: '$',
+          website: 'https://www.community-bar.com/',
+          instagram: '@mariasbar',
+          images: [
+            {
+              src: '/chicago/bars/marias-1.png',
+              alt: 'Maria\'s Packaged Goods bar interior',
+            },
+            {
+              src: '/chicago/bars/marias-2.png',
+              alt: 'Maria\'s craft beer selection',
+            },
+            {
+              src: '/chicago/bars/marias-3.png',
+              alt: 'Maria\'s Community Bar neighborhood crowd',
+            }
+          ],
+        },
+        {
+          name: 'Simon\'s Tavern',
+          neighborhood: 'Andersonville',
+          vibe: 'A Swedish-American bar from 1934 that hasn\'t lost its soul. Glogg in winter, regulars year-round.',
+          order: 'Glogg (mulled wine) in winter, Hamm\'s in summer.',
+          why: 'The last remnant of Andersonville\'s Swedish past. The nautical decor is original, the crowd spans generations, and the holiday glogg is a Chicago tradition. If this bar closes, something essential about Chicago goes with it.',
+          address: '5210 N Clark St, Chicago, IL 60640',
+          coordinates: { lat: 41.9760, lng: -87.6684 },
+          hours: '11am-2am Mon-Sat, 11am-12am Sun',
+          price: '$',
+          website: 'https://www.simonstavern.com/',
+          instagram: '@simonstavern',
+          image: {
+            src: '/chicago/bars/simons-1.png',
+            alt: 'Simon\'s Tavern vintage interior with nautical decorations',
           },
-          {
-            id: 'curiosity-14',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Chicago\'s alleys are longer than its streets',
-            body: 'Chicago has 1,900 miles of alleyways—more than its actual streets. The grid of back alleys was designed to hide garbage, deliveries, and utilities from view, creating a shadow city behind every block. Today the alleys host garage parties, murals, street art, and an entire subculture invisible from the front. Chicago has two faces. The alley is the honest one.',
-            images: [
-              {
-                src: '/chicago/curiosities/alley.png',
-                alt: 'Chicago alleyway with murals and street art',
-              }
-            ],
-            source: 'Chicago Department of Transportation',
+        }
+      ],
+    },
+    {
+      id: 'best-bars-ad',
+      type: 'ad',
+      size: 'banner',
+    },
+    {
+      id: 'best-cafes',
+      type: 'best-of',
+      category: 'cafes',
+      title: 'Cafes for Getting Things Done',
+      intro: 'Not the ones full of influencers. These spots have wifi, outlets, and let you stay.',
+      spots: [
+        {
+          name: 'Café Integral',
+          neighborhood: 'Wicker Park',
+          vibe: 'Serious about Nicaraguan coffee, relaxed about everything else. Natural light, unhurried.',
+          order: 'Single-origin pour-over. Ask what\'s brewing.',
+          why: 'The owner sources directly from Nicaraguan farms and knows more about coffee than anyone you\'ll meet. The space in the Hollander is beautiful, the wifi works, and nobody rushes you out.',
+          address: '1637 N Milwaukee Ave, Chicago, IL 60647',
+          coordinates: { lat: 41.9118, lng: -87.6748 },
+          hours: '7am-6pm daily',
+          price: '$$',
+        },
+        {
+          name: 'Ipsento 606',
+          neighborhood: 'Wicker Park',
+          vibe: 'Large space on the 606 trail with actual room to spread out. Good for long work sessions.',
+          order: 'Nitro cold brew or a cortado. The pastries are solid.',
+          why: 'Unlike most Chicago coffee shops, you can actually find a seat. Multiple rooms, outdoor patio on the trail, and nobody cares if you camp for four hours.',
+          address: '1813 N Milwaukee Ave, Chicago, IL 60647',
+          coordinates: { lat: 41.9148, lng: -87.6796 },
+          hours: '6:30am-7pm daily',
+          price: '$$',
+        },
+        {
+          name: 'Sawada Coffee',
+          neighborhood: 'West Loop',
+          vibe: 'Japanese precision meets Chicago coffee culture. Beautiful space, matcha specialties.',
+          order: 'The Military Latte — matcha and espresso layered. Sounds weird, works perfectly.',
+          why: 'Hiroshi Sawada won world latte art championships. The drinks are beautiful, the space is Instagrammable but not annoying, and the combination of Japanese and Chicago coffee traditions creates something unique.',
+          address: '112 N Green St, Chicago, IL 60607',
+          coordinates: { lat: 41.8839, lng: -87.6488 },
+          hours: '8am-4pm Mon-Fri, 9am-4pm Sat-Sun',
+          price: '$$',
+        },
+        {
+          name: 'The Coffee Studio',
+          neighborhood: 'Andersonville',
+          vibe: 'Neighborhood spot that hasn\'t been discovered by the laptop crowd. Quiet and unpretentious.',
+          order: 'House drip and a scone. No need to overthink it.',
+          why: 'A genuinely local coffee shop where you\'ll see the same faces every morning. Good coffee, low-key vibe, and the kind of place that\'s disappearing from Chicago\'s gentrifying neighborhoods.',
+          address: '5628 N Clark St, Chicago, IL 60660',
+          coordinates: { lat: 41.9842, lng: -87.6686 },
+          hours: '6:30am-5pm Mon-Fri, 7am-5pm Sat-Sun',
+          price: '$',
+        }
+      ],
+    },
+    {
+      id: 'best-cafes-ad',
+      type: 'ad',
+      size: 'rectangle',
+    },
+    {
+      id: 'chi-best-coffee-shops',
+      type: 'best-of',
+      category: 'coffee-shops',
+      title: 'Third-Wave Roasts',
+      intro: 'From third-wave pioneers to neighborhood gems and James Beard-nominated bakery-cafés. Chicago\'s coffee scene punches above its weight.',
+      spots: [
+        {
+          name: 'Intelligentsia Coffee',
+          neighborhood: 'Multiple Locations',
+          vibe: 'Technical high-fidelity coffee. The birthplace of the direct-trade revolution.',
+          order: 'Black Cat espresso blend or a single-origin pour-over. No cream, no sugar, no apologies.',
+          why: 'Intelligentsia didn\'t just open coffee shops; they engineered a shift in global agriculture. Founded in a North Broadway warehouse in 1995, they pioneered the "Direct Trade" model that bypassed middle-men and prioritized the chemistry of the bean over the convenience of the roast. Their presence in the historic Monadnock Building is a lesson in urban harmony, where the precise, clinical execution of a pour-over meets the crushing weight of 19th-century architecture. Even as specialty coffee has become a global lifestyle brand, Intelligentsia remains the technical benchmark, treating every shot of Black Cat espresso like a high-fidelity recording of a specific farm\'s soil and shadow.',
+          address: '53 E Randolph St, Chicago, IL 60601',
+          coordinates: { lat: 41.8845, lng: -87.6259 },
+          hours: '6:30am-7pm Mon-Fri, 7am-7pm Sat-Sun',
+          price: '$$',
+          website: 'https://www.intelligentsia.com',
+          instagram: '@intelligentsiacoffee',
+          images: [
+            {
+              src: '/chicago/coffee/intelegensia-1.png',
+              alt: 'Intelligentsia Coffee bar',
+            },
+            {
+              src: '/chicago/coffee/intelegensia-2.png',
+              alt: 'Intelligentsia pour-over station',
+            },
+            {
+              src: '/chicago/coffee/intelegensia-3.png',
+              alt: 'Intelligentsia coffee beans',
+            },
+            {
+              src: '/chicago/coffee/intelegensia-4.png',
+              alt: 'Intelligentsia Millennium Park location',
+            },
+            {
+              src: '/chicago/coffee/intelegensia-5.png',
+              alt: 'Intelligentsia latte art',
+            }
+          ],
+        },
+        {
+          name: 'Dark Matter Coffee',
+          neighborhood: 'Multiple Locations',
+          vibe: 'Psychedelic, heavy-metal obsession with the bean. Experimental to the point of alchemy.',
+          order: 'Barrel-aged cold brew. They treat bourbon and coffee as equal scientific partners.',
+          why: 'Dark Matter is what happens when you cross-breed the third-wave coffee movement with a psychedelic record store. They have spent over a decade perfecting the alchemy of aging beans in booze barrels—Knob Creek, Koval, and Rémy Martin are regular players. Their Mothership roastery in Ukrainian Village is less of a shop and more of a mission control center for experimental flavor profiles that would make a purist weep and a seeker rejoice. It is an aggressively local brand that refuses to settle for "standard," producing blends that are as much a statement of intent as they are caffeine.',
+          address: '738 N Western Ave, Chicago, IL 60612',
+          coordinates: { lat: 41.8960, lng: -87.6871 },
+          hours: '7am-6pm daily',
+          price: '$$',
+          website: 'https://www.darkmattercoffee.com',
+          instagram: '@darkmattercoffee',
+          images: [
+            {
+              src: '/chicago/coffee/darkmatter-1.png',
+              alt: 'Dark Matter Coffee shop interior',
+            },
+            {
+              src: '/chicago/coffee/darkmatter-2.png',
+              alt: 'Dark Matter barrel-aged coffee',
+            },
+            {
+              src: '/chicago/coffee/darkmatter-3.png',
+              alt: 'Dark Matter roasting operation',
+            },
+            {
+              src: '/chicago/coffee/darkmatter-4.png',
+              alt: 'Dark Matter coffee drinks',
+            }
+          ],
+        },
+        {
+          name: 'The Wormhole Coffee',
+          neighborhood: 'Wicker Park',
+          vibe: '80s-themed nostalgia with a DeLorean parked inside. House-made syrups, and what locals call "hands-down the best vanilla latte in the city."',
+          order: 'The vanilla latte. They make their syrups in-house and it shows.',
+          why: 'Yes, there\'s a DeLorean inside. Yes, it\'s 80s-themed. But the coffee is genuinely excellent — they roast locally and make their own syrups. The vanilla latte has a cult following for good reason. Fun without sacrificing quality.',
+          address: '1462 N Milwaukee Ave, Chicago, IL 60622',
+          coordinates: { lat: 41.9082, lng: -87.6741 },
+          hours: '7am-7pm Mon-Fri, 8am-7pm Sat-Sun',
+          price: '$$',
+          website: 'https://www.thewormhole.us',
+          instagram: '@wormholecoffee',
+          images: [
+            {
+              src: '/chicago/coffee/wormhole-1.png',
+              alt: 'The Wormhole Coffee DeLorean interior',
+            },
+            {
+              src: '/chicago/coffee/wormhole-2.png',
+              alt: 'The Wormhole Coffee 80s decor',
+            },
+            {
+              src: '/chicago/coffee/wormhole-3.png',
+              alt: 'The Wormhole Coffee vanilla latte',
+            }
+          ],
+        },
+        {
+          name: 'Hexe Coffee Co.',
+          neighborhood: 'Lakeview',
+          vibe: 'On-site roasting, barrel-aged specialties, an in-house baker and pastry chef. Serious craft in a fun space.',
+          order: 'Whatever barrel-aged offering they\'re running, plus something from the pastry case.',
+          why: 'Hexe roasts on-site and has an actual pastry chef — not someone reheating croissants. The barrel-aged coffees are a specialty. Located on Diversey in Lakeview, it\'s the kind of place where the design matches the obsession with quality.',
+          address: '2000 W Diversey Pkwy, Chicago, IL 60614',
+          coordinates: { lat: 41.9320, lng: -87.6779 },
+          hours: '7am-5pm daily',
+          price: '$$',
+          website: 'https://www.hexecoffee.com',
+          instagram: '@hexecoffeeco',
+          images: [
+            {
+              src: '/chicago/coffee/hexe-1.png',
+              alt: 'Hexe Coffee Co. interior',
+            },
+            {
+              src: '/chicago/coffee/hexe-2.png',
+              alt: 'Hexe Coffee roasting',
+            },
+            {
+              src: '/chicago/coffee/hexe-3.png',
+              alt: 'Hexe Coffee pastries',
+            }
+          ],
+        },
+        {
+          name: 'Loba Pastry + Coffee',
+          neighborhood: 'North Center',
+          vibe: 'Latina-owned, James Beard-nominated bakery from a chef who worked at Charlie Trotter\'s and Blackbird. The pastries are the star.',
+          order: 'Whatever pastry catches your eye — this is a bakery first. The coffee holds its own.',
+          why: 'Owner Valeria Velazquez Lindsten trained at Charlie Trotter\'s and Blackbird before opening Loba. The 2024 James Beard nomination for Outstanding Bakery was deserved. Yes, it\'s technically a bakery, but the coffee program is serious and the combination is worth seeking out.',
+          address: '3600 N Lincoln Ave, Chicago, IL 60613',
+          coordinates: { lat: 41.9465, lng: -87.6800 },
+          hours: '8am-3pm Wed-Sun',
+          price: '$$',
+          website: 'https://www.lobachicago.com',
+          instagram: '@lobachicago',
+          images: [
+            {
+              src: '/chicago/coffee/loba-1.png',
+              alt: 'Loba Pastry + Coffee pastries',
+            },
+            {
+              src: '/chicago/coffee/loba-2.png',
+              alt: 'Loba bakery interior',
+            },
+            {
+              src: '/chicago/coffee/loba-3.png',
+              alt: 'Loba coffee and pastry',
+            }
+          ],
+        },
+        {
+          name: 'Bridgeport Coffee',
+          neighborhood: 'Bridgeport',
+          vibe: 'A neighborhood institution that roasts its own beans. Wood-heavy, prototypically warm, a point of pride for Bridgeport.',
+          order: 'House drip or a pour-over of whatever they\'re roasting.',
+          why: 'The coffee-roasting operation on the corner of Morgan and 31st is a point of pride for Bridgeport. They roast their own beans on-site in a prototypically warm, wood-heavy coffeehouse. The kind of neighborhood institution that makes you want to move to the neighborhood.',
+          address: '3101 S Morgan St, Chicago, IL 60608',
+          coordinates: { lat: 41.8376, lng: -87.6507 },
+          hours: '6am-8pm daily',
+          price: '$$',
+          website: 'https://www.bridgeportcoffee.net',
+          instagram: '@bridgeportcoffee',
+          images: [
+            {
+              src: '/chicago/coffee/bridgeport-1.png',
+              alt: 'Bridgeport Coffee interior',
+            },
+            {
+              src: '/chicago/coffee/bridgeport-2.png',
+              alt: 'Bridgeport Coffee roasting',
+            },
+            {
+              src: '/chicago/coffee/bridgeport-3.png',
+              alt: 'Bridgeport Coffee neighborhood vibe',
+            },
+            {
+              src: '/chicago/coffee/bridgeport-4.png',
+              alt: 'Bridgeport Coffee drinks',
+            }
+          ],
+        }
+      ],
+    },
+    {
+      id: 'best-restaurants',
+      type: 'best-of',
+      category: 'restaurants',
+      title: 'Where to Actually Eat',
+      intro: 'Not the reservation apps. These are the places Chicago feeds itself.',
+      spots: [
+        {
+          name: 'Johnnie\'s Beef',
+          neighborhood: 'Elmwood Park',
+          vibe: 'The Italian beef stand against which all others are measured. No seating, standing room only.',
+          order: 'Italian beef, dipped, hot peppers. Eat it leaning over the counter so the juice drips onto the floor, not you.',
+          why: 'Yes, it\'s technically suburban. Yes, you should go anyway. The beef has been the same for 60 years, the bread is right, and the experience of eating standing up at a counter while juice runs down your arms is essentially Chicago.',
+          address: '7500 W North Ave, Elmwood Park, IL 60707',
+          coordinates: { lat: 41.9097, lng: -87.8159 },
+          hours: '7am-7pm Mon-Sat, closed Sun',
+          price: '$',
+          images: [
+            {
+              src: '/chicago/restaurants/johnnies-1.png',
+              alt: 'Johnnie\'s Beef Italian beef sandwich',
+            },
+            {
+              src: '/chicago/restaurants/johnnies-2.png',
+              alt: 'Johnnie\'s Beef counter and kitchen',
+            },
+            {
+              src: '/chicago/restaurants/johnnies-3.png',
+              alt: 'Johnnie\'s Beef exterior',
+            },
+            {
+              src: '/chicago/restaurants/johnnies-4.png',
+              alt: 'Johnnie\'s Beef standing counter',
+            }
+          ],
+        },
+        {
+          name: 'Avec',
+          neighborhood: 'West Loop',
+          vibe: 'Mediterranean small plates at a communal table. Loud, cramped, excellent.',
+          order: 'Chorizo-stuffed dates. Just get them. Then whatever else.',
+          why: 'The restaurant that launched a thousand West Loop imitators. The chorizo dates are legendary for a reason. The communal seating means you\'ll probably talk to your neighbors. The food is still better than most places copying it.',
+          address: '615 W Randolph St, Chicago, IL 60661',
+          coordinates: { lat: 41.8841, lng: -87.6441 },
+          hours: '3:30pm-9:30pm Mon-Thu, 3:30pm-10:30pm Fri-Sat, 3:30pm-9pm Sun',
+          price: '$$$',
+          website: 'https://avecrestaurant.com',
+          instagram: '@avecchicago',
+          images: [
+            {
+              src: '/chicago/restaurants/avec-1.png',
+              alt: 'Avec communal table with Mediterranean dishes',
+            },
+            {
+              src: '/chicago/restaurants/avec-2.png',
+              alt: 'Avec chorizo-stuffed dates',
+            },
+            {
+              src: '/chicago/restaurants/avec-3.png',
+              alt: 'Avec restaurant interior',
+            },
+            {
+              src: '/chicago/restaurants/avec-4.png',
+              alt: 'Avec wood-fired dishes',
+            },
+            {
+              src: '/chicago/restaurants/avec-5.png',
+              alt: 'Avec West Loop dining room',
+            }
+          ],
+        },
+        {
+          name: 'Birrieria Zaragoza',
+          neighborhood: 'Archer Heights',
+          vibe: 'A Southwest Side storefront dedicated to the technical perfection of Jalisco-style goat.',
+          order: 'Birria de chivo (goat) with consomé. Accept no substitutions.',
+          why: 'Birrieria Zaragoza is a monument to a single, perfected tradition: the birria de chivo (steamed goat) of Jalisco. The Zaragoza family has spent decades refining a process that produces meat so tender it borders on structural failure, served in a consomé that is a masterclass in spice and clarity. Located in the Archer Heights neighborhood, it is a destination for those who understand that culinary greatness often resides in small, family-run storefronts rather than high-concept downtown kitchens. The tortillas are handmade, the salsa is precise, and the experience is a reminder that in Chicago, the best food usually requires a trip to the Southwest Side.',
+          address: '4852 S Pulaski Rd, Chicago, IL 60632',
+          coordinates: { lat: 41.8059, lng: -87.7233 },
+          hours: 'Sat-Sun 8am-5pm only',
+          price: '$',
+          website: 'https://www.birrieriazaragoza.com/',
+          instagram: '@birrieriazaragoza',
+          images: [
+            {
+              src: '/chicago/restaurants/zaragoze-1.png',
+              alt: 'Birrieria Zaragoza birria de chivo',
+            },
+            {
+              src: '/chicago/restaurants/zaragoze-2.png',
+              alt: 'Birrieria Zaragoza consomé',
+            },
+            {
+              src: '/chicago/restaurants/zaragoze-3.png',
+              alt: 'Birrieria Zaragoza tacos',
+            },
+            {
+              src: '/chicago/restaurants/zaragoze-4.png',
+              alt: 'Birrieria Zaragoza restaurant interior',
+            },
+            {
+              src: '/chicago/restaurants/zaragoze-5.png',
+              alt: 'Birrieria Zaragoza family tradition',
+            }
+          ],
+        },
+        {
+          name: 'Sun Wah BBQ',
+          neighborhood: 'Argyle',
+          vibe: 'Cantonese BBQ in Uptown\'s Little Saigon. The Peking duck is a production.',
+          order: 'Peking duck dinner for 2-4. They carve it tableside, you get three courses from one bird.',
+          why: 'The best Chinese BBQ in Chicago. The duck hangs in the window, the service is no-nonsense, and the three-course duck dinner — crispy skin, stir-fried meat, duck soup — is one of the great meals in the city.',
+          address: '5039 N Broadway, Chicago, IL 60640',
+          coordinates: { lat: 41.9735, lng: -87.6601 },
+          hours: '11am-10pm Tue-Sun, closed Mon',
+          price: '$$',
+          website: 'https://sunwahbbq.com',
+          instagram: '@sunwahbbq',
+          images: [
+            {
+              src: '/chicago/restaurants/sunwah-1.png',
+              alt: 'Sun Wah BBQ Peking duck',
+            },
+            {
+              src: '/chicago/restaurants/sunwah-2.png',
+              alt: 'Sun Wah BBQ duck carving tableside',
+            },
+            {
+              src: '/chicago/restaurants/sunwah-3.png',
+              alt: 'Sun Wah BBQ roast meats in window',
+            },
+            {
+              src: '/chicago/restaurants/sunwah-4.png',
+              alt: 'Sun Wah BBQ three-course duck dinner',
+            }
+          ],
+        },
+        {
+          name: 'Portillo\'s',
+          neighborhood: 'Multiple Locations',
+          vibe: 'The fast-food chain that Chicago actually cares about. Chaotic, delicious, essentially local.',
+          order: 'Italian beef combo (with sweet and hot peppers), chocolate cake shake.',
+          why: 'Yes, it\'s a chain. But it\'s our chain. The beef is good, the dogs are correct, and the chocolate cake shake is unhinged in the best way. The original location in The Barn (in Villa Park) has the most character.',
+          address: '100 W Ontario St, Chicago, IL 60654',
+          coordinates: { lat: 41.8931, lng: -87.6313 },
+          hours: '10am-10pm daily',
+          price: '$',
+          website: 'https://www.portillos.com',
+          images: [
+            {
+              src: '/chicago/restaurants/portillos-1.png',
+              alt: 'Portillo\'s Italian beef sandwich',
+            },
+            {
+              src: '/chicago/restaurants/portillos-2.png',
+              alt: 'Portillo\'s chocolate cake shake',
+            },
+            {
+              src: '/chicago/restaurants/portillos-3.png',
+              alt: 'Portillo\'s restaurant interior',
+            }
+          ],
+        },
+        {
+          name: 'Smyth',
+          neighborhood: 'West Loop',
+          vibe: 'Farm-to-table tasting menu. Two Michelin stars, Midwestern ingredients, no pretense.',
+          order: 'The tasting menu. That\'s the only option. Trust the kitchen.',
+          why: 'John Shields and Karen Urie Shields run their own farm downstate. The menu changes with the seasons, the room is intimate, and it\'s one of the few fine dining experiences in Chicago that feels genuinely personal rather than performative.',
+          address: '177 N Ada St, Chicago, IL 60607',
+          coordinates: { lat: 41.8855, lng: -87.6613 },
+          hours: 'Wed-Sun, seatings at 5pm and 8pm',
+          price: '$$$$',
+          tier: 'fine-dining',
+          website: 'https://www.smythandtheloyalist.com',
+          instagram: '@smythchicago',
+          images: [
+            {
+              src: '/chicago/restaurants/smyth-1.png',
+              alt: 'Smyth tasting menu dish',
+            },
+            {
+              src: '/chicago/restaurants/smyth-2.png',
+              alt: 'Smyth seasonal ingredients presentation',
+            },
+            {
+              src: '/chicago/restaurants/smyth-3.png',
+              alt: 'Smyth farm-to-table course',
+            },
+            {
+              src: '/chicago/restaurants/smyth-4.png',
+              alt: 'Smyth intimate dining room',
+            },
+            {
+              src: '/chicago/restaurants/smyth-5.png',
+              alt: 'Smyth Midwestern cuisine',
+            },
+            {
+              src: '/chicago/restaurants/smyth-6.png',
+              alt: 'Smyth chef preparation',
+            },
+            {
+              src: '/chicago/restaurants/smyth-7.png',
+              alt: 'Smyth dessert course',
+            }
+          ],
+        },
+        {
+          name: 'Lou Mitchell\'s',
+          neighborhood: 'West Loop',
+          vibe: 'Breakfast institution since 1923. Free donut holes while you wait.',
+          order: 'Double-yolk eggs, thick-cut Greek toast, and a cup of coffee that keeps getting refilled.',
+          why: 'The last remaining original Route 66 restaurant in Chicago. They give every woman who walks in a box of Milk Duds. The eggs are cooked in butter, the service is old-school, and it hasn\'t changed since your grandparents might have eaten here.',
+          address: '565 W Jackson Blvd, Chicago, IL 60661',
+          coordinates: { lat: 41.8786, lng: -87.6412 },
+          hours: '5:30am-3pm Mon-Sat, 7am-3pm Sun',
+          price: '$',
+          images: [
+            {
+              src: '/chicago/restaurants/lou-mitchells-1.png',
+              alt: 'Lou Mitchell\'s classic breakfast',
+            },
+            {
+              src: '/chicago/restaurants/lou-mitchells-2.png',
+              alt: 'Lou Mitchell\'s double-yolk eggs and Greek toast',
+            },
+            {
+              src: '/chicago/restaurants/lou-mitchells-3.png',
+              alt: 'Lou Mitchell\'s diner interior',
+            }
+          ],
+        }
+      ],
+    },
+    {
+      id: 'obscure-history',
+      type: 'section',
+      title: 'Obscure History',
+      items: [
+        {
+          id: 'history-1',
+          type: 'history',
+          era: '1855-1858',
+          title: 'Chicago raised itself by four feet and nobody stopped working',
+          body: 'The city was sinking into its own mud and sewage. The solution was to raise the entire downtown — buildings and all — by four to seven feet using thousands of jackscrews. George Pullman (yes, that Pullman) raised the Tremont House hotel while it remained open for business. Guests barely noticed. It remains one of the most audacious civil engineering projects in American history.',
+          source: 'Chicago History Museum',
+          image: {
+            src: '/images/history/raising-chicago.jpg',
+            alt: 'Historic illustration of Chicago buildings being raised on jackscrews',
+            year: '1857',
           },
-          {
-            id: 'curiosity-15',
-            type: 'curiosity',
-            category: 'invention',
-            title: 'The zipper, Twinkies, and spray paint were all invented here',
-            body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
-            images: [
-              {
-                src: '/chicago/curiosities/twinkies-zipper-spraypaint.png',
-                alt: 'Chicago inventions: the zipper, Twinkies, and spray paint',
-              }
-            ],
-            source: 'Chicago History Museum',
-          }
-        ],
-      },
-      {
-        id: 'iconic-spots',
-        type: 'section',
-        title: 'Iconic Spots',
-        intro: 'These are Chicago\'s landmarks — the places that define the city. Famous for good reason.',
-        items: [
-          {
-            id: 'iconic-cloud-gate',
-            type: 'iconic-spot',
-            name: 'Cloud Gate (The Bean)',
-            category: 'Public Art',
-            description: 'Anish Kapoor\'s 110-ton stainless steel sculpture reflects Chicago\'s skyline in a mirror finish so polished you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works — the reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Go early to avoid crowds, or embrace the crowds and watch people pose.',
-            images: [
-              {
-                src: '',
-                alt: 'Cloud Gate sculpture reflecting Chicago skyline',
-              }
-            ],
-            address: 'Millennium Park, 201 E Randolph St, Chicago, IL 60602',
+          location: {
+            name: 'Downtown Chicago',
             coordinates: { lat: 41.8827, lng: -87.6233 },
-            hours: 'Daily 6am-11pm',
-            price: 'Free',
-            website: 'https://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park.html',
-            tip: 'Visit at dawn to get photos without crowds — the sculpture looks best in early morning light.',
+            stillExists: true,
           },
-          {
-            id: 'iconic-art-institute',
-            type: 'iconic-spot',
-            name: 'The Art Institute of Chicago',
-            category: 'Museum',
-            description: 'One of the oldest and largest art museums in the United States houses everything from ancient Egyptian artifacts to contemporary installations. The Impressionist collection alone justifies admission — Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. The Modern Wing by Renzo Piano is a masterclass in museum design. You could spend days here and still miss entire wings.',
-            images: [
-              {
-                src: '',
-                alt: 'Art Institute of Chicago exterior with bronze lion statues',
-              }
-            ],
-            address: '111 S Michigan Ave, Chicago, IL 60603',
-            coordinates: { lat: 41.8796, lng: -87.6237 },
-            hours: 'Thu-Mon 11am-5pm (closed Tue-Wed)',
-            price: '$25-32 adults depending on season',
-            website: 'https://www.artic.edu',
-            tip: 'Download the museum\'s app for audio tours and visit the Thorne Miniature Rooms in the basement.',
+        },
+        {
+          id: 'history-2',
+          type: 'history',
+          era: '1886',
+          title: 'The Haymarket Affair changed labor history worldwide',
+          body: 'A rally for the eight-hour workday turned violent when someone threw a bomb at police, who opened fire on the crowd. Eight anarchist labor organizers were convicted in a controversial trial; four were hanged. The incident galvanized the international labor movement and led to May Day becoming International Workers\' Day everywhere except the United States, which moved Labor Day to September to avoid the association.',
+          source: 'Illinois Labor History Society',
+          image: {
+            src: '/images/history/haymarket.jpg',
+            alt: 'Historic illustration of the Haymarket bombing',
+            year: '1886',
           },
-          {
-            id: 'iconic-navy-pier',
-            type: 'iconic-spot',
-            name: 'Navy Pier',
-            category: 'Entertainment',
-            description: 'A mile-long pier on Lake Michigan that functions as Chicago\'s tourist processing center — rides, restaurants, boat tours, fireworks, and crowds of people trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. The boat tours departing from here are excellent. The Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
-            images: [
-              {
-                src: '',
-                alt: 'Navy Pier with Ferris wheel and Chicago skyline',
-              }
-            ],
-            address: '600 E Grand Ave, Chicago, IL 60611',
-            coordinates: { lat: 41.8917, lng: -87.6086 },
-            hours: 'Hours vary by season and attraction',
-            price: 'Free to walk, attractions priced separately',
-            website: 'https://www.navypier.org',
-            tip: 'Skip the crowded summer weekends — visit on a weekday evening for fireworks without the chaos.',
+          location: {
+            name: 'Haymarket Square',
+            coordinates: { lat: 41.8867, lng: -87.6528 },
+            stillExists: true,
           },
-          {
-            id: 'iconic-360-chicago',
-            type: 'iconic-spot',
-            name: '360 CHICAGO (John Hancock Observatory)',
-            category: 'Observation Deck',
-            description: 'The observation deck on the 94th floor of the John Hancock Center offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a glass platform that tilts you out over Michigan Avenue at a 30-degree angle, which is either thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, which is sometimes cheaper than admission.',
-            images: [
-              {
-                src: '',
-                alt: 'Chicago skyline view from John Hancock Observatory',
-              }
-            ],
-            address: '875 N Michigan Ave, 94th Floor, Chicago, IL 60611',
-            coordinates: { lat: 41.8989, lng: -87.6230 },
-            hours: 'Daily 9am-11pm',
-            price: '$30-35 adults',
-            website: 'https://www.360chicago.com',
-            tip: 'Visit the Signature Lounge on the 96th floor instead — similar views, cheaper if you just buy a drink.',
+        },
+        {
+          id: 'history-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'history-3',
+          type: 'history',
+          era: '1942',
+          title: 'The first nuclear chain reaction happened under a football stadium',
+          body: 'On December 2, 1942, Enrico Fermi and his team achieved the first controlled, self-sustaining nuclear chain reaction in a squash court under the stands of Stagg Field at the University of Chicago. It was part of the Manhattan Project, and the announcement was sent in code: "The Italian navigator has landed in the new world." A Henry Moore sculpture now marks the spot.',
+          source: 'University of Chicago / U.S. Department of Energy',
+          image: {
+            src: '/images/history/chicago-pile-1.jpg',
+            alt: 'Recreation of Chicago Pile-1, the first nuclear reactor',
+            year: '1942',
           },
-          {
-            id: 'iconic-magnificent-mile',
-            type: 'iconic-spot',
-            name: 'The Magnificent Mile',
-            category: 'Shopping District',
-            description: 'A 13-block stretch of Michigan Avenue from the Chicago River to Oak Street packed with retail — luxury brands, department stores, chain restaurants, and tourists shopping like it\'s a contact sport. Architecturally significant buildings house predictable stores. Is it worth visiting? If you need to shop, yes. If you want to see Chicago\'s commercial heart, also yes. If you want authentic neighborhood culture, go literally anywhere else.',
-            images: [
-              {
-                src: '',
-                alt: 'Michigan Avenue Magnificent Mile with shopping and architecture',
-              }
-            ],
-            address: 'Michigan Ave from Chicago River to Oak St, Chicago, IL 60611',
-            coordinates: { lat: 41.8957, lng: -87.6244 },
-            hours: 'Store hours vary',
-            price: 'Free to walk',
-            website: 'https://www.themagnificentmile.com',
-            tip: 'Walk it once to see the architecture, then shop in actual neighborhoods with better stores.',
+          location: {
+            name: 'University of Chicago (former Stagg Field)',
+            coordinates: { lat: 41.7919, lng: -87.5998 },
+            stillExists: true,
           },
-          {
-            id: 'iconic-willis-tower',
-            type: 'iconic-spot',
-            name: 'Willis Tower Skydeck',
-            category: 'Observation Deck',
-            description: 'Formerly the Sears Tower, still the tallest building in Chicago at 1,450 feet. The Skydeck on the 103rd floor features glass boxes (The Ledge) that extend out from the building — stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care.',
-            images: [
-              {
-                src: '',
-                alt: 'Willis Tower Skydeck glass ledge extending over city',
-              }
-            ],
-            address: '233 S Wacker Dr, Chicago, IL 60606',
-            coordinates: { lat: 41.8789, lng: -87.6359 },
-            hours: 'Daily 9am-10pm (seasonal variations)',
-            price: '$30-40 adults depending on time',
-            website: 'https://www.theskydeck.com',
-            tip: 'Buy tickets online to skip the ticket line (you\'ll still wait for elevators). Visit at sunset for day-to-night views.',
-          }
-        ],
-      },
-      {
-        id: 'hidden-gems',
-        type: 'section',
-        title: 'Hidden Chicago',
-        teaser: '60 miles of flooded freight tunnels, abandoned L stations, and Capone\'s speakeasies',
-        intro: 'These aren\'t in the guidebooks. A 60-mile underground freight tunnel network flooded by the Chicago River. Abandoned L stations frozen in time. Secret speakeasies where Al Capone drank. Hidden beaches where locals bring hammocks. The real Chicago exists below street level and behind unmarked doors.',
-        items: [
-          {
-            id: 'gem-freight-tunnels',
-            type: 'hidden-gem',
-            name: 'Chicago Freight Tunnel System',
-            category: 'Urban Infrastructure',
-            description: 'Sixty miles of underground freight tunnels run beneath downtown Chicago, built between 1899 and 1906 to move coal and goods via electric railway cars. The system worked until 1959. In 1992, a contractor drove a piling through the tunnel roof into the Chicago River, causing the Great Chicago Flood that flooded basements across the Loop. The tunnels were sealed after 9/11. Most Chicagoans have no idea this network exists. You can\'t visit — access is restricted to utility workers — but the knowledge that an entire subterranean city runs beneath your feet changes how you see the streets. Some sections are still used for fiber optic cables and utilities. Others sit empty, slowly flooding with groundwater. The tunnel system is Chicago\'s best-kept infrastructure secret.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/freight-tunnel-1.png',
-                alt: 'Underground tunnel with brick archways and dim lighting',
-              },
-              {
-                src: '/chicago/hidden-gems/freight-tunnel-2.png',
-                alt: 'Historic Chicago freight tunnel system',
-              }
-            ],
-            address: 'Beneath downtown Chicago',
-            coordinates: { lat: 41.8781, lng: -87.6298 },
-            hours: 'Not accessible to public',
-            price: 'Not accessible',
-            website: 'https://www.chicagology.com/columbiaexpo/tunnels/',
-            tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.',
+        },
+        {
+          id: 'history-4',
+          type: 'history',
+          era: '1919',
+          title: 'A race riot started at a segregated beach and burned for a week',
+          body: 'When a Black teenager named Eugene Williams drifted into the "white" section of a Lake Michigan beach and was killed, it sparked a week of violence that left 38 dead and over 500 injured. White mobs burned Black homes; Black residents fought back. The riot exposed the violence underlying Chicago\'s racial geography, a pattern that would repeat in 1968 after Martin Luther King Jr.\'s assassination.',
+          source: 'Chicago Commission on Race Relations',
+          image: {
+            src: '/images/history/1919-race-riot.jpg',
+            alt: 'Crowd during the 1919 Chicago Race Riot',
+            year: '1919',
           },
-          {
-            id: 'gem-california-ghost',
-            type: 'hidden-gem',
-            name: 'California Blue Line Ghost Station',
-            category: 'Urban Exploration',
-            description: 'An abandoned L station sits in the median of the Eisenhower Expressway, closed since 1973 and visible from passing Blue Line trains. The California station was part of the original Garfield Park elevated line, abandoned when the Congress Line (now Blue Line) was rerouted. The platform is still there — rusted, overgrown with weeds, covered in graffiti. No public access, but you can see it clearly if you ride the Blue Line between UIC-Halsted and Illinois Medical District. Watching an abandoned station flash past while you ride a functioning train creates a strange temporal overlap — this is what infrastructure death looks like in a city that doesn\'t tear everything down.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/blue-line-1.png',
-                alt: 'Abandoned elevated train station with overgrown platform',
-              },
-              {
-                src: '/chicago/hidden-gems/blue-line-2.png',
-                alt: 'California ghost station visible from Blue Line',
-              }
-            ],
-            address: 'Eisenhower Expressway near California Ave, Chicago, IL',
-            coordinates: { lat: 41.8743, lng: -87.6971 },
-            hours: 'Visible from Blue Line trains',
-            price: 'CTA fare',
-            website: 'http://forgottenchicago.com/features/remnants-of-the-l/',
-            tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.',
+          location: {
+            name: '29th Street Beach (former)',
+            coordinates: { lat: 41.8412, lng: -87.6089 },
+            stillExists: false,
           },
-          {
-            id: 'gem-exchequer-speakeasy',
-            type: 'hidden-gem',
-            name: 'Exchequer Restaurant (Al Capone Speakeasy)',
-            category: 'Historic Site',
-            description: 'A confirmed Al Capone location where original speakeasy architecture is still visible above the ceiling — exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. The basement tunnel system is sealed now, but you can still see where bootleggers moved inventory. The restaurant serves deep-dish pizza and Italian beef in a space where gangsters once ran liquor. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/exchequer-1.png',
-                alt: 'Historic restaurant interior with exposed brick and vintage details',
-              },
-              {
-                src: '/chicago/hidden-gems/exchequer-2.png',
-                alt: 'Exchequer Restaurant speakeasy architecture',
-              },
-              {
-                src: '/chicago/hidden-gems/exchequer-3.png',
-                alt: 'Al Capone era speakeasy details at Exchequer',
-              }
-            ],
-            address: '226 S Wabash Ave, Chicago, IL 60604',
-            coordinates: { lat: 41.8791, lng: -87.6259 },
-            hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 12pm-8pm',
-            price: '$$',
-            website: 'https://www.exchequerpub.com',
-            tip: 'Ask your server about the speakeasy history — they can point out the original architectural features.',
+        },
+        {
+          id: 'history-5',
+          type: 'history',
+          era: '1968',
+          title: 'The Democratic National Convention riots happened on live television',
+          body: 'When anti-Vietnam War protesters gathered in Grant Park during the 1968 Democratic National Convention, Chicago police attacked them with clubs and tear gas. The violence was broadcast live during the convention itself, and protesters chanted "The whole world is watching." Mayor Richard J. Daley defended the police. The images helped define the divisions of that era.',
+          source: 'Chicago Tribune Archives',
+          image: {
+            src: '/images/history/1968-dnc.jpg',
+            alt: 'Police confronting protesters at 1968 Democratic National Convention',
+            year: '1968',
           },
-          {
-            id: 'gem-union-stockyard-gate',
-            type: 'hidden-gem',
-            name: 'Union Stock Yard Gate',
-            category: 'Historic Monument',
-            description: 'The only remaining structure from the Union Stock Yards, once the largest meatpacking complex in the world (1865-1971). This neo-gothic limestone gate from 1877 is the sole survivor of an industrial empire that defined Chicago. At its peak, the stockyards processed 18 million animals annually. Upton Sinclair wrote The Jungle about conditions here. The smell could be detected miles away. Now: one ornate gate standing alone on Exchange Avenue, a National Historic Landmark marking an industry that no longer exists. Behind the gate: industrial lots, some new development, and the absence of what was once the economic engine of the Midwest.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/stockyard-1.png',
-                alt: 'Historic limestone gate with ornate architecture standing alone',
-              },
-              {
-                src: '/chicago/hidden-gems/stockyard-2.png',
-                alt: 'Union Stock Yard Gate architectural details',
-              },
-              {
-                src: '/chicago/hidden-gems/stockyard-3.png',
-                alt: 'Union Stock Yard Gate historic landmark',
-              },
-              {
-                src: '/chicago/hidden-gems/stockyard-4.png',
-                alt: 'Union Stock Yard Gate from street level',
-              }
-            ],
-            address: '850 W Exchange Ave, Chicago, IL 60609',
-            coordinates: { lat: 41.8151, lng: -87.6578 },
-            hours: 'Exterior viewable anytime',
-            price: 'Free',
-            website: 'https://www.chicagoparkdistrict.com',
-            tip: 'Combine with a visit to nearby Back of the Yards neighborhood, historically home to stockyard workers.',
+          location: {
+            name: 'Grant Park / Michigan Avenue',
+            coordinates: { lat: 41.8760, lng: -87.6189 },
+            stillExists: true,
           },
-          {
-            id: 'gem-ad-1',
-            type: 'ad',
-            size: 'banner',
+        },
+        {
+          id: 'history-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'history-6',
+          type: 'history',
+          era: '1915',
+          title: 'The Eastland disaster killed more Chicagoans than the Great Fire',
+          body: 'On July 24, 1915, the SS Eastland rolled over while still docked at the Chicago River, killing 844 passengers — mostly young Czech immigrants on their way to a company picnic. It remains the largest loss of life from a single shipwreck on the Great Lakes. The disaster is largely forgotten, overshadowed by the Titanic three years earlier, even though more passengers died.',
+          source: 'Eastland Disaster Historical Society',
+          image: {
+            src: '/images/history/eastland.jpg',
+            alt: 'The capsized SS Eastland in the Chicago River',
+            year: '1915',
           },
-          {
-            id: 'gem-worlds-fair-remnants',
-            type: 'hidden-gem',
-            name: '1893 World\'s Fair Remnants (Jackson Park)',
-            category: 'Historic Site',
-            description: 'Scattered throughout Jackson Park: original arc lamp posts designed by Charles Atwood, Westinghouse manhole covers fabricated for the fair, the Wooded Island\'s Japanese garden on the site of the Phoenix Pavilion, and the Columbia Stone Pedestrian Bridge. The 1893 World\'s Columbian Exposition was demolished after the fair — almost everything burned or was torn down. These fragments are what remains of the "White City" that introduced Ferris wheels, Cracker Jack, and electric lighting on a scale never seen before. Most visitors to Jackson Park walk past 130-year-old infrastructure without realizing they\'re treading on World\'s Fair history.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/jacksonpark-1.png',
-                alt: 'Historic stone bridge and lamp posts in park setting',
-              },
-              {
-                src: '/chicago/hidden-gems/jacksonpark-2.png',
-                alt: '1893 World\'s Fair remnants in Jackson Park',
-              }
-            ],
-            address: 'Jackson Park, 6401 S Stony Island Ave, Chicago, IL 60637',
-            coordinates: { lat: 41.7838, lng: -87.5806 },
-            hours: 'Daily 6am-11pm',
-            price: 'Free',
-            website: 'https://www.chicagoparkdistrict.com',
-            tip: 'Look for the original 1893 manhole covers on Wooded Island — they\'re still functional.',
+          location: {
+            name: 'Chicago River at LaSalle Street',
+            coordinates: { lat: 41.8873, lng: -87.6322 },
+            stillExists: true,
           },
-          {
-            id: 'gem-alfred-caldwell-lily-pool',
-            type: 'hidden-gem',
-            name: 'Alfred Caldwell Lily Pool',
-            category: 'Nature',
-            description: 'A hidden Prairie School garden designed by Alfred Caldwell in 1936, rebuilt in 2013, and somehow still unknown to most Chicagoans. The lily pool sits at the north end of Lincoln Park Zoo — a serene landscape of water, stone, and native plants arranged in the Frank Lloyd Wright tradition of organic architecture. The space looks like a Monet painting come to life. Stone pathways wind through water gardens. Native plants bloom in careful succession. The council ring of stone benches invites contemplation. This is landscape architecture as art, quietly succeeding in a city that usually prefers loud.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/lily-1.png',
-                alt: 'Tranquil garden with lily pond and stone pathways',
-              },
-              {
-                src: '/chicago/hidden-gems/lily-2.png',
-                alt: 'Alfred Caldwell Lily Pool Prairie School garden',
-              }
-            ],
-            address: '125 W Fullerton Pkwy, Chicago, IL 60614',
-            coordinates: { lat: 41.9257, lng: -87.6343 },
-            hours: 'Daily 7:30am-dusk (May-Oct)',
-            price: 'Free',
-            website: 'https://www.lincolnparkconservancy.org/caldwell-lily-pool/',
-            tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.',
+        },
+        {
+          id: 'history-7',
+          type: 'history',
+          era: '1933-34',
+          title: 'A World\'s Fair gave Chicago its lakefront',
+          body: 'The 1933-34 Century of Progress International Exposition was built on landfill that became part of today\'s lakefront parks. More importantly, it demonstrated that Chicago\'s lakefront should be preserved for public use rather than industrial development. Much of the "lake" in Northerly Island and the Museum Campus is actually man-made land from this era.',
+          source: 'Chicago Park District',
+          location: {
+            name: 'Northerly Island / Museum Campus',
+            coordinates: { lat: 41.8657, lng: -87.6078 },
+            stillExists: true,
           },
-          {
-            id: 'gem-chicago-temple-sky-chapel',
-            type: 'hidden-gem',
-            name: 'Chicago Temple Sky Chapel',
-            category: 'Architecture',
-            description: 'The world\'s highest church sits 400 feet above street level inside the spire of the First United Methodist Church — a neo-gothic skyscraper in the Loop that\'s also the world\'s tallest church building at 568 feet. The Sky Chapel seats 30 people in a space accessible via elevator to the 22nd floor, then a narrow staircase. Eight stained glass windows, a small altar, and views across downtown. The chapel was designed for small weddings and quiet services. Most people walk past this building daily without realizing they\'re passing a church in the sky. Free tours are offered, but you have to ask.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/temple-sky-1.png',
-                alt: 'Neo-gothic church spire rising above city buildings',
-              },
-              {
-                src: '/chicago/hidden-gems/temple-sky-2.png',
-                alt: 'Chicago Temple Sky Chapel interior',
-              },
-              {
-                src: '/chicago/hidden-gems/temple-sky-3.png',
-                alt: 'Sky Chapel stained glass windows',
-              }
-            ],
-            address: '77 W Washington St, Chicago, IL 60602',
-            coordinates: { lat: 41.8831, lng: -87.6298 },
-            hours: 'Tours by appointment',
-            price: 'Free',
-            website: 'https://www.chicagotemple.org',
-            tip: 'Call ahead to arrange a tour — the chapel is small and access is limited.',
+        },
+        {
+          id: 'history-8',
+          type: 'history',
+          era: '1992',
+          title: 'The Loop flooded because everyone forgot about the freight tunnels',
+          body: 'On April 13, 1992, a construction crew driving wooden pilings accidentally breached the forgotten freight tunnel system under the Chicago River. The tunnels flooded, then the basements of hundreds of Loop buildings flooded, causing $1.95 billion in damage. The tunnels had been abandoned for decades, and almost no one knew they were there. It took days to plug the hole.',
+          source: 'Chicago Tribune',
+          image: {
+            src: '/images/history/chicago-flood-1992.jpg',
+            alt: 'Water flooding into Loop building basement during 1992 flood',
+            year: '1992',
           },
-          {
-            id: 'gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
+          location: {
+            name: 'The Loop',
+            coordinates: { lat: 41.8819, lng: -87.6278 },
+            stillExists: true,
           },
-          {
-            id: 'gem-windowless-building',
-            type: 'hidden-gem',
-            name: 'State & Adams Ice Water Factory',
-            category: 'Architecture',
-            description: 'Four nearly-windowless floors sit above the CVS pharmacy at State and Adams, containing floor-to-ceiling tanks that produce ice and chilled water for Loop buildings. Most people walk past this every day without noticing the building has almost no windows. The "ice water factory" is a utilitarian structure hiding in plain sight — functional infrastructure disguised as architecture. The tanks inside serve the State Street district\'s cooling needs. The building does exactly one thing, does it efficiently, and makes no aesthetic argument for itself. This is architecture as pure utility.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/state-adams.png',
-                alt: 'Nearly windowless urban building with industrial purpose',
-              }
-            ],
-            address: 'State St & Adams St, Chicago, IL 60603',
-            coordinates: { lat: 41.8793, lng: -87.6276 },
-            hours: 'Exterior viewable anytime',
-            price: 'Free to observe',
-            tip: 'Stand across the street and count the windows — then realize what you\'re looking at.',
-          },
-          {
-            id: 'gem-granville-beach',
-            type: 'hidden-gem',
-            name: 'Granville Beach',
-            category: 'Nature',
-            description: 'A tiny secret beach in Rogers Park where locals bring hammocks and books for quiet afternoons. No lifeguards, no concessions, no crowds — just a small stretch of sand at the end of Granville Avenue that most Chicagoans don\'t know exists. The beach sits tucked between larger public beaches, small enough to miss but perfect for reading or swimming without the Navy Pier energy. The view includes lake, sky, and the kind of urban solitude that cities promise but rarely deliver. Combine with Jarvis Beach and Lane Beach for a low-key North Side beach day.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/granville-1.png',
-                alt: 'Quiet neighborhood beach with sand and lake view',
-              },
-              {
-                src: '/chicago/hidden-gems/granville-2.png',
-                alt: 'Granville Beach hidden spot on Lake Michigan',
-              }
-            ],
-            address: 'Granville Ave & Lake Michigan, Chicago, IL 60660',
-            coordinates: { lat: 42.0094, lng: -87.6549 },
-            hours: 'Daily sunrise-sunset',
-            price: 'Free',
-            website: 'https://www.chicagoparkdistrict.com',
-            tip: 'No parking lot — street park in Rogers Park and walk east to the lake.',
-          },
-          {
-            id: 'gem-thorne-rooms',
-            type: 'hidden-gem',
-            name: 'Thorne Miniature Rooms',
-            category: 'Museum',
-            description: 'Sixty-eight tiny, meticulously detailed diorama rooms in the Art Institute\'s basement, created by Narcissa Niblack Thorne at 1-inch scale between 1932 and 1940. Each room recreates European and American interiors from the 16th to 20th centuries with working hinges, upholstered furniture, hand-painted wallpaper, and miniature art. The craftsmanship is extraordinary — these aren\'t dollhouses, they\'re architectural models built by master craftsmen. Most visitors to the Art Institute never make it down here, which means you can spend an hour studying furniture that\'s an inch tall in a quiet basement gallery while everyone else fights for a photo of Nighthawks.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/thorne-1.png',
-                alt: 'Detailed miniature room diorama with period furniture',
-              },
-              {
-                src: '/chicago/hidden-gems/thorne-2.png',
-                alt: 'Thorne Miniature Rooms European interior',
-              },
-              {
-                src: '/chicago/hidden-gems/thorne-3.png',
-                alt: 'Thorne Rooms intricate craftsmanship detail',
-              },
-              {
-                src: '/chicago/hidden-gems/thorne-4.png',
-                alt: 'Narcissa Thorne miniature room collection',
-              }
-            ],
-            address: 'Art Institute of Chicago, 111 S Michigan Ave, Lower Level',
-            coordinates: { lat: 41.8796, lng: -87.6237 },
-            hours: 'Thu-Mon 11am-5pm',
-            price: 'Art Institute admission required',
-            website: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms',
-            tip: 'Bring reading glasses — the details are microscopic and worth studying closely.',
-          },
-          {
-            id: 'gem-music-box',
-            type: 'hidden-gem',
-            name: 'Music Box Theatre',
-            category: 'Historic Theater',
-            description: 'A 1929 movie palace that never stopped showing films, preserving the experience of watching a movie in an ornate atmospheric theater. The ceiling is painted to look like a night sky with twinkling stars and moving clouds. The organ still rises from the orchestra pit for special screenings. The Music Box programs classics, cult films, foreign cinema, and midnight movies — this is where you watch The Room with 200 people shouting at the screen, or catch a 35mm print of a Hitchcock film. The theater has been lovingly maintained, which means it feels like 1929 in the best possible way. Popcorn is fresh. The balcony is intact. Movies look better here.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/musicbox-1.png',
-                alt: 'Ornate historic movie theater interior with starlit ceiling',
-              },
-              {
-                src: '/chicago/hidden-gems/musicbox-2.png',
-                alt: 'Music Box Theatre atmospheric ceiling',
-              },
-              {
-                src: '/chicago/hidden-gems/musicbox-3.png',
-                alt: 'Music Box Theatre vintage organ and architecture',
-              }
-            ],
-            address: '3733 N Southport Ave, Chicago, IL 60613',
-            coordinates: { lat: 41.9484, lng: -87.6640 },
-            hours: 'Varies by showtime',
-            price: '$12-15 general admission',
-            website: 'https://www.musicboxtheatre.com',
-            tip: 'Check the calendar for midnight movies and sing-along screenings — the Music Box does special events right.',
-          },
-          {
-            id: 'gem-homestead-roof',
-            type: 'hidden-gem',
-            name: 'Homestead on the Roof',
-            category: 'Rooftop Garden',
-            description: 'Chicago\'s "secret garden" sits above Roots Handmade Pizza in West Town — a 1,000 sq ft rooftop space with vertical hanging gardens, string lights, and the kind of atmosphere that makes you forget you\'re in a city. The bar serves craft cocktails and local beer. The menu is farm-to-table without being precious about it. The space feels like someone\'s well-designed backyard, except it\'s four stories up with skyline views. This isn\'t a flashy rooftop lounge; it\'s a quiet space that succeeds by being thoughtfully made. Open seasonally, weather-dependent. Go for sunset.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/homestead-1.png',
-                alt: 'Rooftop garden with hanging plants and string lights',
-              },
-              {
-                src: '/chicago/hidden-gems/homestead-2.png',
-                alt: 'Homestead on the Roof vertical gardens',
-              },
-              {
-                src: '/chicago/hidden-gems/homestead-3.png',
-                alt: 'Homestead rooftop bar atmosphere',
-              },
-              {
-                src: '/chicago/hidden-gems/homestead-4.png',
-                alt: 'Homestead secret garden skyline view',
-              }
-            ],
-            address: '1924 W Chicago Ave (above Roots Pizza), Chicago, IL 60622',
-            coordinates: { lat: 41.8958, lng: -87.6758 },
-            hours: 'Seasonal, call for hours',
-            price: '$$',
-            website: 'https://www.homesteadontheroof.com',
-            tip: 'Reservations recommended — the space is small and fills up quickly on good-weather evenings.',
-          },
-          {
-            id: 'gem-harper-library-secrets',
-            type: 'hidden-gem',
-            name: 'Harper Memorial Library Secret Spaces',
-            category: 'Architecture',
-            description: 'The University of Chicago\'s Harper Memorial Library contains two hidden spaces: a basement "library beneath a library" with study spaces accessible through unmarked doors, and a space between the ceiling and roof peak that students have accessed for decades. The basement library is open to anyone who knows to look for it — quiet, wood-paneled, ideal for studying. The upper space is technically off-limits but generations of UChicago students have found ways in. The building itself is neo-gothic grandeur, designed to make education feel like a cathedral. The secret spaces make it feel like exploration.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/harper-1.png',
-                alt: 'Gothic library interior with wooden shelves and reading spaces',
-              },
-              {
-                src: '/chicago/hidden-gems/harper-2.png',
-                alt: 'Harper Memorial Library hidden basement study',
-              }
-            ],
-            address: '1116 E 59th St, Chicago, IL 60637',
-            coordinates: { lat: 41.7886, lng: -87.5987 },
-            hours: 'Library hours vary, campus access only',
-            price: 'Free (UChicago campus)',
-            website: 'https://www.lib.uchicago.edu/harper/',
-            tip: 'Ask a UChicago student to show you the basement library — it\'s open but unmarked.',
-          },
-          {
-            id: 'gem-project-logan-wall',
-            type: 'hidden-gem',
-            name: 'Project Logan Permission Wall',
-            category: 'Public Art',
-            description: 'A four-sided permission wall surrounding 3,300 sq ft between Medill and Fullerton west of Milwaukee — one of Chicago\'s most heavily concentrated legal graffiti spots. Artists can paint here without legal consequences, which means the work changes constantly. Some pieces last weeks. Others get buffed in days. The quality ranges from amateur to professional, which is the point — this is street art as living practice, not curated museum display. The wall sits in a Logan Square alley most people would never walk down, which makes finding it feel like discovery. Bring a camera. The art won\'t be the same next month.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/permission-1.png',
-                alt: 'Graffiti-covered permission wall with colorful street art',
-              },
-              {
-                src: '/chicago/hidden-gems/permission-2.png',
-                alt: 'Project Logan legal graffiti wall murals',
-              }
-            ],
-            address: 'Between Medill & Fullerton, west of Milwaukee Ave, Chicago, IL',
-            coordinates: { lat: 41.9245, lng: -87.7050 },
-            hours: 'Anytime',
-            price: 'Free',
-            website: 'https://www.projectlogan.com',
-            tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.',
-          },
-          {
-            id: 'gem-biograph-theater',
-            type: 'hidden-gem',
-            name: 'Biograph Theater (Dillinger Death Site)',
-            category: 'Historic Site',
-            description: 'The actual location where FBI agents shot John Dillinger on July 22, 1934, after he watched a movie. The theater on Lincoln Avenue still stands, now operating as a live venue. A historical marker notes the spot where "Public Enemy No. 1" died. The movie he watched: Manhattan Melodrama. The woman who tipped off the FBI (the "Lady in Red") was actually wearing orange. Dillinger walked out of this theater into an ambush that\'s now Chicago crime folklore. The building has been renovated, but standing outside the former theater entrance connects you to a specific moment when federal law enforcement killed a celebrity criminal on a Chicago street.',
-            images: [
-              {
-                src: '/chicago/hidden-gems/bigraph-1.png',
-                alt: 'Historic theater building exterior with vintage marquee',
-              },
-              {
-                src: '/chicago/hidden-gems/biograph-2.png',
-                alt: 'Biograph Theater where Dillinger was killed',
-              }
-            ],
-            address: '2433 N Lincoln Ave, Chicago, IL 60614',
-            coordinates: { lat: 41.9267, lng: -87.6489 },
-            hours: 'Venue hours vary',
-            price: 'Exterior viewable anytime',
-            website: 'https://www.biography-theater.com',
-            tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
-          }
-        ],
-      },
-      {
-        id: 'best-bars',
-        type: 'best-of',
-        category: 'bars',
-        title: 'Bars Worth the L Ride',
-        intro: 'Skip the River North bottle service scene. These are the spots where Chicago actually drinks.',
-        spots: [
-          {
-            name: 'The Whistler',
-            neighborhood: 'Logan Square',
-            vibe: 'Art gallery meets cocktail bar meets live music venue. Rotating art on the walls, DJs most nights.',
-            order: 'Whatever seasonal cocktail catches your eye. They know what they\'re doing.',
-            why: 'The platonic ideal of a Logan Square bar — serious about drinks without being precious about it. The space is small, the crowd is interesting, the music is good. Go early or go late, but go.',
-            address: '2421 N Milwaukee Ave, Chicago, IL 60647',
-            coordinates: { lat: 41.9268, lng: -87.7019 },
-            hours: '6pm-2am Mon-Fri, 7pm-3am Sat, 7pm-2am Sun',
-            price: '$$',
-            website: 'https://whistlerchicago.com/',
-            instagram: '@whistlerchicago',
-            images: [
-              {
-                src: '/chicago/bars/whistler-1.png',
-                alt: 'The Whistler bar interior with art on walls',
-              },
-              {
-                src: '/chicago/bars/whistler-2.png',
-                alt: 'The Whistler cocktail bar seating',
-              },
-              {
-                src: '/chicago/bars/whistler-3.png',
-                alt: 'The Whistler live music performance',
-              }
-            ],
-          },
-          {
-            name: 'Skylark',
-            neighborhood: 'Pilsen',
-            vibe: 'Cash-only dive with the best jukebox in the city. No pretense, strong pours, neighborhood regulars.',
-            order: 'Shot and a beer. Keep it simple.',
-            why: 'A Pilsen institution that hasn\'t changed even as the neighborhood has. The kind of bar where you walk in not knowing anyone and leave with new friends. The jukebox is curated by generations of good taste.',
-            address: '2149 S Halsted St, Chicago, IL 60608',
-            coordinates: { lat: 41.8540, lng: -87.6464 },
-            hours: '4pm-2am daily',
-            price: '$',
-            website: 'https://www.skylarkchicago.com/',
-            instagram: '@skylark_chicago',
-            images: [
-              {
-                src: '/chicago/bars/skylark-1.png',
-                alt: 'Skylark dive bar interior with neon signs',
-              },
-              {
-                src: '/chicago/bars/skylark-2.png',
-                alt: 'Skylark bar jukebox and seating',
-              },
-              {
-                src: '/chicago/bars/skylark-3.png',
-                alt: 'Skylark neighborhood crowd',
-              }
-            ],
-          },
-          {
-            name: 'The Empty Bottle',
-            neighborhood: 'Ukrainian Village',
-            vibe: 'The indie rock institution. Cheap drinks, legendary sound, and Monday night shows that are always free.',
-            order: 'PBR tall boy. This isn\'t a cocktail bar.',
-            why: 'Since 1992, The Empty Bottle has been where Chicago\'s music scene happens. The sound system is impeccable, the bookings are adventurous, and the free Monday shows have launched careers. It\'s a bar that happens to have world-class live music, not the other way around.',
-            address: '1035 N Western Ave, Chicago, IL 60622',
-            coordinates: { lat: 41.8998, lng: -87.6873 },
-            hours: '5pm-2am Mon-Fri, 3pm-3am Sat, 3pm-2am Sun',
-            price: '$',
-            website: 'https://emptybottle.com/',
-            instagram: '@emptybottle',
-            images: [
-              {
-                src: '/chicago/bars/emptybottle-1.png',
-                alt: 'The Empty Bottle exterior',
-              },
-              {
-                src: '/chicago/bars/emptybottle-2.png',
-                alt: 'The Empty Bottle stage and sound system',
-              },
-              {
-                src: '/chicago/bars/emptybottle-3.png',
-                alt: 'The Empty Bottle bar interior',
-              },
-              {
-                src: '/chicago/bars/emptybottle-4.png',
-                alt: 'The Empty Bottle crowd at a show',
-              }
-            ],
-          },
-          {
-            name: 'Old Town Ale House',
-            neighborhood: 'Old Town',
-            vibe: 'Opened in 1958, walls covered in satirical nude paintings of politicians. Second City comedians have been drinking here for decades.',
-            order: 'Whatever\'s cheap. The beer is cold and the whiskey is honest.',
-            why: 'Chris Farley, John Belushi, Bill Murray — the comedy legends all drank here between Second City shows. Owner Bruce Elliott paints the portraits on the walls, including unflattering nudes of every president. No TVs, no pretense, just Chicago history in a glass.',
-            address: '219 W North Ave, Chicago, IL 60610',
-            coordinates: { lat: 41.9114, lng: -87.6344 },
-            hours: '12pm-4am Mon-Fri, 12pm-5am Sat, 12pm-4am Sun',
-            price: '$',
-            instagram: '@oldtownalehouse',
-            images: [
-              {
-                src: '/chicago/bars/oldtown-1.png',
-                alt: 'Old Town Ale House interior with paintings',
-              },
-              {
-                src: '/chicago/bars/oldtown-2.png',
-                alt: 'Old Town Ale House bar',
-              },
-              {
-                src: '/chicago/bars/oldtown-3.png',
-                alt: 'Old Town Ale House wall art',
-              }
-            ],
-          },
-          {
-            name: 'Three Dots and a Dash',
-            neighborhood: 'River North',
-            vibe: 'Hidden tiki paradise in a River North alley. Elaborate rum drinks, tropical kitsch, zero irony.',
-            order: 'The namesake Three Dots and a Dash — rum, honey, lime, allspice, served in a ceramic tiki mug.',
-            why: 'Finding this bar requires navigating an alley behind a Tex-Mex restaurant, which keeps out the wrong crowd. Inside is a Polynesian fever dream with 100+ rums, flaming drinks, and bartenders who take tiki seriously. It\'s maximalist escapism done right.',
-            address: '435 N Clark St, Chicago, IL 60654',
-            coordinates: { lat: 41.8903, lng: -87.6310 },
-            hours: '5pm-12am Sun-Thu, 5pm-2am Fri-Sat',
-            price: '$$$',
-            website: 'https://threedotschicago.com/',
-            instagram: '@threedotschicago',
-            images: [
-              {
-                src: '/chicago/bars/three-dots-1.png',
-                alt: 'Three Dots and a Dash tiki bar interior',
-              },
-              {
-                src: '/chicago/bars/three-dots-2.png',
-                alt: 'Three Dots and a Dash cocktails',
-              },
-              {
-                src: '/chicago/bars/three-dots-3.png',
-                alt: 'Three Dots and a Dash tropical decor',
-              }
-            ],
-          },
-          {
-            name: 'Maria\'s Packaged Goods & Community Bar',
-            neighborhood: 'Bridgeport',
-            vibe: 'Part bar, part bottle shop, part community center. An aggressively local Bridgeport institution.',
-            order: 'Whatever local draft they\'re excited about, plus a $3 shot of Malört.',
-            why: 'Owner Ed Marszewski basically invented the Bridgeport creative scene from this corner bar. Incredible craft beer selection, good food, and the kind of regulars who\'ve been coming for decades. Cash only.',
-            address: '960 W 31st St, Chicago, IL 60608',
-            coordinates: { lat: 41.8381, lng: -87.6516 },
-            hours: '3pm-2am Mon-Sat, 12pm-2am Sun',
-            price: '$',
-            website: 'https://www.community-bar.com/',
-            instagram: '@mariasbar',
-            images: [
-              {
-                src: '/chicago/bars/marias-1.png',
-                alt: 'Maria\'s Packaged Goods bar interior',
-              },
-              {
-                src: '/chicago/bars/marias-2.png',
-                alt: 'Maria\'s craft beer selection',
-              },
-              {
-                src: '/chicago/bars/marias-3.png',
-                alt: 'Maria\'s Community Bar neighborhood crowd',
-              }
-            ],
-          },
-          {
-            name: 'Simon\'s Tavern',
-            neighborhood: 'Andersonville',
-            vibe: 'A Swedish-American bar from 1934 that hasn\'t lost its soul. Glogg in winter, regulars year-round.',
-            order: 'Glogg (mulled wine) in winter, Hamm\'s in summer.',
-            why: 'The last remnant of Andersonville\'s Swedish past. The nautical decor is original, the crowd spans generations, and the holiday glogg is a Chicago tradition. If this bar closes, something essential about Chicago goes with it.',
-            address: '5210 N Clark St, Chicago, IL 60640',
-            coordinates: { lat: 41.9760, lng: -87.6684 },
-            hours: '11am-2am Mon-Sat, 11am-12am Sun',
-            price: '$',
-            website: 'https://www.simonstavern.com/',
-            instagram: '@simonstavern',
-            image: {
-              src: '/chicago/bars/simons-1.png',
-              alt: 'Simon\'s Tavern vintage interior with nautical decorations',
+        }
+      ],
+    },
+    {
+      id: 'chi-dark-history',
+      type: 'section',
+      title: 'City of Unsolved Mysteries',
+      teaser: 'Mob hits, poisoned medicine, and the fire that never stopped burning',
+      intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
+      items: [
+        {
+          id: 'chi-dark-2',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
+          category: 'crime',
+          year: '1893-1896',
+          title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
+          body: 'During the 1893 World\'s Fair, Dr. H.H. Holmes lured victims to his custom-built "Murder Castle"—a hotel he personally designed with soundproof rooms, secret passages, gas chambers, a greased chute to the basement, and his own crematorium. Holmes confessed to 27 murders but the actual count was likely far higher. He targeted young women who came to Chicago for the fair, using charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools, because waste not, want not. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory.',
+          verdict: 'Holmes was hanged in 1896. The true body count remains unknown. The lot sat empty for over a century.',
+          images: [
+            {
+              src: '/chicago/dark-history/holmes-1.png',
+              alt: 'H.H. Holmes Murder Castle illustration',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'The Devil in the White City',
+              author: 'Erik Larson',
+              isbn: '9780375725609',
+              year: '2003',
+              url: 'https://www.amazon.com/Devil-White-City-Madness-Changed/dp/0375725601',
             },
-          }
-        ],
-      },
-      {
-        id: 'best-bars-ad',
-        type: 'ad',
-        size: 'banner',
-      },
-      {
-        id: 'best-cafes',
-        type: 'best-of',
-        category: 'cafes',
-        title: 'Cafes for Getting Things Done',
-        intro: 'Not the ones full of influencers. These spots have wifi, outlets, and let you stay.',
-        spots: [
-          {
-            name: 'Café Integral',
-            neighborhood: 'Wicker Park',
-            vibe: 'Serious about Nicaraguan coffee, relaxed about everything else. Natural light, unhurried.',
-            order: 'Single-origin pour-over. Ask what\'s brewing.',
-            why: 'The owner sources directly from Nicaraguan farms and knows more about coffee than anyone you\'ll meet. The space in the Hollander is beautiful, the wifi works, and nobody rushes you out.',
-            address: '1637 N Milwaukee Ave, Chicago, IL 60647',
-            coordinates: { lat: 41.9118, lng: -87.6748 },
-            hours: '7am-6pm daily',
-            price: '$$',
-          },
-          {
-            name: 'Ipsento 606',
-            neighborhood: 'Wicker Park',
-            vibe: 'Large space on the 606 trail with actual room to spread out. Good for long work sessions.',
-            order: 'Nitro cold brew or a cortado. The pastries are solid.',
-            why: 'Unlike most Chicago coffee shops, you can actually find a seat. Multiple rooms, outdoor patio on the trail, and nobody cares if you camp for four hours.',
-            address: '1813 N Milwaukee Ave, Chicago, IL 60647',
-            coordinates: { lat: 41.9148, lng: -87.6796 },
-            hours: '6:30am-7pm daily',
-            price: '$$',
-          },
-          {
-            name: 'Sawada Coffee',
-            neighborhood: 'West Loop',
-            vibe: 'Japanese precision meets Chicago coffee culture. Beautiful space, matcha specialties.',
-            order: 'The Military Latte — matcha and espresso layered. Sounds weird, works perfectly.',
-            why: 'Hiroshi Sawada won world latte art championships. The drinks are beautiful, the space is Instagrammable but not annoying, and the combination of Japanese and Chicago coffee traditions creates something unique.',
-            address: '112 N Green St, Chicago, IL 60607',
-            coordinates: { lat: 41.8839, lng: -87.6488 },
-            hours: '8am-4pm Mon-Fri, 9am-4pm Sat-Sun',
-            price: '$$',
-          },
-          {
-            name: 'The Coffee Studio',
-            neighborhood: 'Andersonville',
-            vibe: 'Neighborhood spot that hasn\'t been discovered by the laptop crowd. Quiet and unpretentious.',
-            order: 'House drip and a scone. No need to overthink it.',
-            why: 'A genuinely local coffee shop where you\'ll see the same faces every morning. Good coffee, low-key vibe, and the kind of place that\'s disappearing from Chicago\'s gentrifying neighborhoods.',
-            address: '5628 N Clark St, Chicago, IL 60660',
-            coordinates: { lat: 41.9842, lng: -87.6686 },
-            hours: '6:30am-5pm Mon-Fri, 7am-5pm Sat-Sun',
-            price: '$',
-          }
-        ],
-      },
-      {
-        id: 'best-cafes-ad',
-        type: 'ad',
-        size: 'rectangle',
-      },
-      {
-        id: 'best-coffee-shops',
-        type: 'best-of',
-        category: 'coffee-shops',
-        title: 'Best Coffee in Chicago',
-        intro: 'From third-wave pioneers to neighborhood gems and James Beard-nominated bakery-cafés. Chicago\'s coffee scene punches above its weight.',
-        spots: [
-          {
-            name: 'Intelligentsia Coffee',
-            neighborhood: 'Multiple Locations',
-            vibe: 'The pioneers who basically invented third-wave coffee in the late \'90s. Direct trade, meticulous roasting, still setting the standard.',
-            order: 'Black Cat espresso blend or whatever single-origin they\'re featuring on pour-over.',
-            why: 'Intelligentsia didn\'t just open coffee shops — they changed how Americans think about coffee. Founded in 1995, they pioneered direct trade relationships with farmers and helped create the "third wave" movement before anyone called it that. The Millennium Park location is beautiful; the Monadnock Building spot is historic. After all these years, still essential.',
-            address: '53 E Randolph St, Chicago, IL 60601',
-            coordinates: { lat: 41.8845, lng: -87.6259 },
-            hours: '6:30am-7pm Mon-Fri, 7am-7pm Sat-Sun',
-            price: '$$',
-            website: 'https://www.intelligentsia.com',
-            instagram: '@intelligentsiacoffee',
-            images: [
-              {
-                src: '/chicago/coffee/intelegensia-1.png',
-                alt: 'Intelligentsia Coffee bar',
-              },
-              {
-                src: '/chicago/coffee/intelegensia-2.png',
-                alt: 'Intelligentsia pour-over station',
-              },
-              {
-                src: '/chicago/coffee/intelegensia-3.png',
-                alt: 'Intelligentsia coffee beans',
-              },
-              {
-                src: '/chicago/coffee/intelegensia-4.png',
-                alt: 'Intelligentsia Millennium Park location',
-              },
-              {
-                src: '/chicago/coffee/intelegensia-5.png',
-                alt: 'Intelligentsia latte art',
-              }
-            ],
-          },
-          {
-            name: 'Dark Matter Coffee',
-            neighborhood: 'Multiple Locations',
-            vibe: 'Chicago indie darling since 2007. Offbeat, experimental, roasting beans in booze barrels from Knob Creek to Rémy Martin.',
-            order: 'Whatever seasonal or barrel-aged offering they\'re running. Their experimental side is the point.',
-            why: 'Dark Matter has been doing weird, wonderful things with coffee since 2007. Seven cafes now, including one inside the United Center and Sip of Hope where 100% of proceeds go to suicide prevention. They\'ve aged beans in bourbon barrels from Knob Creek, Koval, and Goose Island. Not trying to be Intelligentsia — doing their own thing entirely.',
-            address: '738 N Western Ave, Chicago, IL 60612',
-            coordinates: { lat: 41.8960, lng: -87.6871 },
-            hours: '7am-6pm daily',
-            price: '$$',
-            website: 'https://www.darkmattercoffee.com',
-            instagram: '@darkmattercoffee',
-            images: [
-              {
-                src: '/chicago/coffee/darkmatter-1.png',
-                alt: 'Dark Matter Coffee shop interior',
-              },
-              {
-                src: '/chicago/coffee/darkmatter-2.png',
-                alt: 'Dark Matter barrel-aged coffee',
-              },
-              {
-                src: '/chicago/coffee/darkmatter-3.png',
-                alt: 'Dark Matter roasting operation',
-              },
-              {
-                src: '/chicago/coffee/darkmatter-4.png',
-                alt: 'Dark Matter coffee drinks',
-              }
-            ],
-          },
-          {
-            name: 'The Wormhole Coffee',
-            neighborhood: 'Wicker Park',
-            vibe: '80s-themed nostalgia with a DeLorean parked inside. House-made syrups, and what locals call "hands-down the best vanilla latte in the city."',
-            order: 'The vanilla latte. They make their syrups in-house and it shows.',
-            why: 'Yes, there\'s a DeLorean inside. Yes, it\'s 80s-themed. But the coffee is genuinely excellent — they roast locally and make their own syrups. The vanilla latte has a cult following for good reason. Fun without sacrificing quality.',
-            address: '1462 N Milwaukee Ave, Chicago, IL 60622',
-            coordinates: { lat: 41.9082, lng: -87.6741 },
-            hours: '7am-7pm Mon-Fri, 8am-7pm Sat-Sun',
-            price: '$$',
-            website: 'https://www.thewormhole.us',
-            instagram: '@wormholecoffee',
-            images: [
-              {
-                src: '/chicago/coffee/wormhole-1.png',
-                alt: 'The Wormhole Coffee DeLorean interior',
-              },
-              {
-                src: '/chicago/coffee/wormhole-2.png',
-                alt: 'The Wormhole Coffee 80s decor',
-              },
-              {
-                src: '/chicago/coffee/wormhole-3.png',
-                alt: 'The Wormhole Coffee vanilla latte',
-              }
-            ],
-          },
-          {
-            name: 'Hexe Coffee Co.',
-            neighborhood: 'Lakeview',
-            vibe: 'On-site roasting, barrel-aged specialties, an in-house baker and pastry chef. Serious craft in a fun space.',
-            order: 'Whatever barrel-aged offering they\'re running, plus something from the pastry case.',
-            why: 'Hexe roasts on-site and has an actual pastry chef — not someone reheating croissants. The barrel-aged coffees are a specialty. Located on Diversey in Lakeview, it\'s the kind of place where the design matches the obsession with quality.',
-            address: '2000 W Diversey Pkwy, Chicago, IL 60614',
-            coordinates: { lat: 41.9320, lng: -87.6779 },
-            hours: '7am-5pm daily',
-            price: '$$',
-            website: 'https://www.hexecoffee.com',
-            instagram: '@hexecoffeeco',
-            images: [
-              {
-                src: '/chicago/coffee/hexe-1.png',
-                alt: 'Hexe Coffee Co. interior',
-              },
-              {
-                src: '/chicago/coffee/hexe-2.png',
-                alt: 'Hexe Coffee roasting',
-              },
-              {
-                src: '/chicago/coffee/hexe-3.png',
-                alt: 'Hexe Coffee pastries',
-              }
-            ],
-          },
-          {
-            name: 'Loba Pastry + Coffee',
-            neighborhood: 'North Center',
-            vibe: 'Latina-owned, James Beard-nominated bakery from a chef who worked at Charlie Trotter\'s and Blackbird. The pastries are the star.',
-            order: 'Whatever pastry catches your eye — this is a bakery first. The coffee holds its own.',
-            why: 'Owner Valeria Velazquez Lindsten trained at Charlie Trotter\'s and Blackbird before opening Loba. The 2024 James Beard nomination for Outstanding Bakery was deserved. Yes, it\'s technically a bakery, but the coffee program is serious and the combination is worth seeking out.',
-            address: '3600 N Lincoln Ave, Chicago, IL 60613',
-            coordinates: { lat: 41.9465, lng: -87.6800 },
-            hours: '8am-3pm Wed-Sun',
-            price: '$$',
-            website: 'https://www.lobachicago.com',
-            instagram: '@lobachicago',
-            images: [
-              {
-                src: '/chicago/coffee/loba-1.png',
-                alt: 'Loba Pastry + Coffee pastries',
-              },
-              {
-                src: '/chicago/coffee/loba-2.png',
-                alt: 'Loba bakery interior',
-              },
-              {
-                src: '/chicago/coffee/loba-3.png',
-                alt: 'Loba coffee and pastry',
-              }
-            ],
-          },
-          {
-            name: 'Bridgeport Coffee',
-            neighborhood: 'Bridgeport',
-            vibe: 'A neighborhood institution that roasts its own beans. Wood-heavy, prototypically warm, a point of pride for Bridgeport.',
-            order: 'House drip or a pour-over of whatever they\'re roasting.',
-            why: 'The coffee-roasting operation on the corner of Morgan and 31st is a point of pride for Bridgeport. They roast their own beans on-site in a prototypically warm, wood-heavy coffeehouse. The kind of neighborhood institution that makes you want to move to the neighborhood.',
-            address: '3101 S Morgan St, Chicago, IL 60608',
-            coordinates: { lat: 41.8376, lng: -87.6507 },
-            hours: '6am-8pm daily',
-            price: '$$',
-            website: 'https://www.bridgeportcoffee.net',
-            instagram: '@bridgeportcoffee',
-            images: [
-              {
-                src: '/chicago/coffee/bridgeport-1.png',
-                alt: 'Bridgeport Coffee interior',
-              },
-              {
-                src: '/chicago/coffee/bridgeport-2.png',
-                alt: 'Bridgeport Coffee roasting',
-              },
-              {
-                src: '/chicago/coffee/bridgeport-3.png',
-                alt: 'Bridgeport Coffee neighborhood vibe',
-              },
-              {
-                src: '/chicago/coffee/bridgeport-4.png',
-                alt: 'Bridgeport Coffee drinks',
-              }
-            ],
-          }
-        ],
-      },
-      {
-        id: 'best-restaurants',
-        type: 'best-of',
-        category: 'restaurants',
-        title: 'Where to Actually Eat',
-        intro: 'Not the reservation apps. These are the places Chicago feeds itself.',
-        spots: [
-          {
-            name: 'Johnnie\'s Beef',
-            neighborhood: 'Elmwood Park',
-            vibe: 'The Italian beef stand against which all others are measured. No seating, standing room only.',
-            order: 'Italian beef, dipped, hot peppers. Eat it leaning over the counter so the juice drips onto the floor, not you.',
-            why: 'Yes, it\'s technically suburban. Yes, you should go anyway. The beef has been the same for 60 years, the bread is right, and the experience of eating standing up at a counter while juice runs down your arms is essentially Chicago.',
-            address: '7500 W North Ave, Elmwood Park, IL 60707',
-            coordinates: { lat: 41.9097, lng: -87.8159 },
-            hours: '7am-7pm Mon-Sat, closed Sun',
-            price: '$',
-            images: [
-              {
-                src: '/chicago/restaurants/johnnies-1.png',
-                alt: 'Johnnie\'s Beef Italian beef sandwich',
-              },
-              {
-                src: '/chicago/restaurants/johnnies-2.png',
-                alt: 'Johnnie\'s Beef counter and kitchen',
-              },
-              {
-                src: '/chicago/restaurants/johnnies-3.png',
-                alt: 'Johnnie\'s Beef exterior',
-              },
-              {
-                src: '/chicago/restaurants/johnnies-4.png',
-                alt: 'Johnnie\'s Beef standing counter',
-              }
-            ],
-          },
-          {
-            name: 'Avec',
-            neighborhood: 'West Loop',
-            vibe: 'Mediterranean small plates at a communal table. Loud, cramped, excellent.',
-            order: 'Chorizo-stuffed dates. Just get them. Then whatever else.',
-            why: 'The restaurant that launched a thousand West Loop imitators. The chorizo dates are legendary for a reason. The communal seating means you\'ll probably talk to your neighbors. The food is still better than most places copying it.',
-            address: '615 W Randolph St, Chicago, IL 60661',
-            coordinates: { lat: 41.8841, lng: -87.6441 },
-            hours: '3:30pm-9:30pm Mon-Thu, 3:30pm-10:30pm Fri-Sat, 3:30pm-9pm Sun',
-            price: '$$$',
-            website: 'https://avecrestaurant.com',
-            instagram: '@avecchicago',
-            images: [
-              {
-                src: '/chicago/restaurants/avec-1.png',
-                alt: 'Avec communal table with Mediterranean dishes',
-              },
-              {
-                src: '/chicago/restaurants/avec-2.png',
-                alt: 'Avec chorizo-stuffed dates',
-              },
-              {
-                src: '/chicago/restaurants/avec-3.png',
-                alt: 'Avec restaurant interior',
-              },
-              {
-                src: '/chicago/restaurants/avec-4.png',
-                alt: 'Avec wood-fired dishes',
-              },
-              {
-                src: '/chicago/restaurants/avec-5.png',
-                alt: 'Avec West Loop dining room',
-              }
-            ],
-          },
-          {
-            name: 'Birrieria Zaragoza',
-            neighborhood: 'Archer Heights',
-            vibe: 'Weekend-only birria spot. Worth the trip to the Southwest Side.',
-            order: 'Birria de chivo (goat) with consomé. Accept no substitutions.',
-            why: 'The Zaragoza family has been making birria this way for generations. The goat is slow-cooked until it falls apart, the consomé is rich and complex. Open Saturday and Sunday only, and worth planning your weekend around.',
-            address: '4852 S Pulaski Rd, Chicago, IL 60632',
-            coordinates: { lat: 41.8059, lng: -87.7233 },
-            hours: 'Sat-Sun 8am-5pm only',
-            price: '$',
-            website: 'https://www.birrieriazaragoza.com/',
-            instagram: '@birrieriazaragoza',
-            images: [
-              {
-                src: '/chicago/restaurants/zaragoze-1.png',
-                alt: 'Birrieria Zaragoza birria de chivo',
-              },
-              {
-                src: '/chicago/restaurants/zaragoze-2.png',
-                alt: 'Birrieria Zaragoza consomé',
-              },
-              {
-                src: '/chicago/restaurants/zaragoze-3.png',
-                alt: 'Birrieria Zaragoza tacos',
-              },
-              {
-                src: '/chicago/restaurants/zaragoze-4.png',
-                alt: 'Birrieria Zaragoza restaurant interior',
-              },
-              {
-                src: '/chicago/restaurants/zaragoze-5.png',
-                alt: 'Birrieria Zaragoza family tradition',
-              }
-            ],
-          },
-          {
-            name: 'Sun Wah BBQ',
-            neighborhood: 'Argyle',
-            vibe: 'Cantonese BBQ in Uptown\'s Little Saigon. The Peking duck is a production.',
-            order: 'Peking duck dinner for 2-4. They carve it tableside, you get three courses from one bird.',
-            why: 'The best Chinese BBQ in Chicago. The duck hangs in the window, the service is no-nonsense, and the three-course duck dinner — crispy skin, stir-fried meat, duck soup — is one of the great meals in the city.',
-            address: '5039 N Broadway, Chicago, IL 60640',
-            coordinates: { lat: 41.9735, lng: -87.6601 },
-            hours: '11am-10pm Tue-Sun, closed Mon',
-            price: '$$',
-            website: 'https://sunwahbbq.com',
-            instagram: '@sunwahbbq',
-            images: [
-              {
-                src: '/chicago/restaurants/sunwah-1.png',
-                alt: 'Sun Wah BBQ Peking duck',
-              },
-              {
-                src: '/chicago/restaurants/sunwah-2.png',
-                alt: 'Sun Wah BBQ duck carving tableside',
-              },
-              {
-                src: '/chicago/restaurants/sunwah-3.png',
-                alt: 'Sun Wah BBQ roast meats in window',
-              },
-              {
-                src: '/chicago/restaurants/sunwah-4.png',
-                alt: 'Sun Wah BBQ three-course duck dinner',
-              }
-            ],
-          },
-          {
-            name: 'Portillo\'s',
-            neighborhood: 'Multiple Locations',
-            vibe: 'The fast-food chain that Chicago actually cares about. Chaotic, delicious, essentially local.',
-            order: 'Italian beef combo (with sweet and hot peppers), chocolate cake shake.',
-            why: 'Yes, it\'s a chain. But it\'s our chain. The beef is good, the dogs are correct, and the chocolate cake shake is unhinged in the best way. The original location in The Barn (in Villa Park) has the most character.',
-            address: '100 W Ontario St, Chicago, IL 60654',
-            coordinates: { lat: 41.8931, lng: -87.6313 },
-            hours: '10am-10pm daily',
-            price: '$',
-            website: 'https://www.portillos.com',
-            images: [
-              {
-                src: '/chicago/restaurants/portillos-1.png',
-                alt: 'Portillo\'s Italian beef sandwich',
-              },
-              {
-                src: '/chicago/restaurants/portillos-2.png',
-                alt: 'Portillo\'s chocolate cake shake',
-              },
-              {
-                src: '/chicago/restaurants/portillos-3.png',
-                alt: 'Portillo\'s restaurant interior',
-              }
-            ],
-          },
-          {
-            name: 'Smyth',
-            neighborhood: 'West Loop',
-            vibe: 'Farm-to-table tasting menu. Two Michelin stars, Midwestern ingredients, no pretense.',
-            order: 'The tasting menu. That\'s the only option. Trust the kitchen.',
-            why: 'John Shields and Karen Urie Shields run their own farm downstate. The menu changes with the seasons, the room is intimate, and it\'s one of the few fine dining experiences in Chicago that feels genuinely personal rather than performative.',
-            address: '177 N Ada St, Chicago, IL 60607',
-            coordinates: { lat: 41.8855, lng: -87.6613 },
-            hours: 'Wed-Sun, seatings at 5pm and 8pm',
-            price: '$$$$',
-            tier: 'fine-dining',
-            website: 'https://www.smythandtheloyalist.com',
-            instagram: '@smythchicago',
-            images: [
-              {
-                src: '/chicago/restaurants/smyth-1.png',
-                alt: 'Smyth tasting menu dish',
-              },
-              {
-                src: '/chicago/restaurants/smyth-2.png',
-                alt: 'Smyth seasonal ingredients presentation',
-              },
-              {
-                src: '/chicago/restaurants/smyth-3.png',
-                alt: 'Smyth farm-to-table course',
-              },
-              {
-                src: '/chicago/restaurants/smyth-4.png',
-                alt: 'Smyth intimate dining room',
-              },
-              {
-                src: '/chicago/restaurants/smyth-5.png',
-                alt: 'Smyth Midwestern cuisine',
-              },
-              {
-                src: '/chicago/restaurants/smyth-6.png',
-                alt: 'Smyth chef preparation',
-              },
-              {
-                src: '/chicago/restaurants/smyth-7.png',
-                alt: 'Smyth dessert course',
-              }
-            ],
-          },
-          {
-            name: 'Lou Mitchell\'s',
-            neighborhood: 'West Loop',
-            vibe: 'Breakfast institution since 1923. Free donut holes while you wait.',
-            order: 'Double-yolk eggs, thick-cut Greek toast, and a cup of coffee that keeps getting refilled.',
-            why: 'The last remaining original Route 66 restaurant in Chicago. They give every woman who walks in a box of Milk Duds. The eggs are cooked in butter, the service is old-school, and it hasn\'t changed since your grandparents might have eaten here.',
-            address: '565 W Jackson Blvd, Chicago, IL 60661',
-            coordinates: { lat: 41.8786, lng: -87.6412 },
-            hours: '5:30am-3pm Mon-Sat, 7am-3pm Sun',
-            price: '$',
-            images: [
-              {
-                src: '/chicago/restaurants/lou-mitchells-1.png',
-                alt: 'Lou Mitchell\'s classic breakfast',
-              },
-              {
-                src: '/chicago/restaurants/lou-mitchells-2.png',
-                alt: 'Lou Mitchell\'s double-yolk eggs and Greek toast',
-              },
-              {
-                src: '/chicago/restaurants/lou-mitchells-3.png',
-                alt: 'Lou Mitchell\'s diner interior',
-              }
-            ],
-          }
-        ],
-      },
-      {
-        id: 'obscure-history',
-        type: 'section',
-        title: 'Obscure History',
-        items: [
-          {
-            id: 'history-1',
-            type: 'history',
-            era: '1855-1858',
-            title: 'Chicago raised itself by four feet and nobody stopped working',
-            body: 'The city was sinking into its own mud and sewage. The solution was to raise the entire downtown — buildings and all — by four to seven feet using thousands of jackscrews. George Pullman (yes, that Pullman) raised the Tremont House hotel while it remained open for business. Guests barely noticed. It remains one of the most audacious civil engineering projects in American history.',
-            source: 'Chicago History Museum',
-            image: {
-              src: '/images/history/raising-chicago.jpg',
-              alt: 'Historic illustration of Chicago buildings being raised on jackscrews',
-              year: '1857',
+            {
+              type: 'book',
+              title: 'Depraved: The Definitive True Story of H.H. Holmes',
+              author: 'Harold Schechter',
+              isbn: '9780671025472',
+              year: '1994',
+              url: 'https://www.amazon.com/Depraved-Definitive-Story-H-Holmes/dp/0671025473',
             },
-            location: {
-              name: 'Downtown Chicago',
-              coordinates: { lat: 41.8827, lng: -87.6233 },
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'H.H. Holmes: America\'s First Serial Killer',
+              publisher: 'History.com',
+              year: '2020',
+              url: 'https://www.history.com/topics/crime/hh-holmes',
             },
-          },
-          {
-            id: 'history-2',
-            type: 'history',
-            era: '1886',
-            title: 'The Haymarket Affair changed labor history worldwide',
-            body: 'A rally for the eight-hour workday turned violent when someone threw a bomb at police, who opened fire on the crowd. Eight anarchist labor organizers were convicted in a controversial trial; four were hanged. The incident galvanized the international labor movement and led to May Day becoming International Workers\' Day everywhere except the United States, which moved Labor Day to September to avoid the association.',
-            source: 'Illinois Labor History Society',
-            image: {
-              src: '/images/history/haymarket.jpg',
-              alt: 'Historic illustration of the Haymarket bombing',
-              year: '1886',
+            {
+              type: 'article',
+              title: 'The Murder Castle of H.H. Holmes',
+              publisher: 'Smithsonian Magazine',
+              author: 'Tony Perrottet',
+              year: '2017',
+              url: 'https://www.smithsonianmag.com/history/murder-castle-hh-holmes-180964740/',
             },
-            location: {
-              name: 'Haymarket Square',
-              coordinates: { lat: 41.8867, lng: -87.6528 },
-              stillExists: true,
+            {
+              type: 'documentary',
+              title: 'H.H. Holmes: America\'s First Serial Killer',
+              platform: 'History Channel',
+              year: '2004',
+              url: 'https://www.imdb.com/title/tt0437714/',
             },
-          },
-          {
-            id: 'history-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'history-3',
-            type: 'history',
-            era: '1942',
-            title: 'The first nuclear chain reaction happened under a football stadium',
-            body: 'On December 2, 1942, Enrico Fermi and his team achieved the first controlled, self-sustaining nuclear chain reaction in a squash court under the stands of Stagg Field at the University of Chicago. It was part of the Manhattan Project, and the announcement was sent in code: "The Italian navigator has landed in the new world." A Henry Moore sculpture now marks the spot.',
-            source: 'University of Chicago / U.S. Department of Energy',
-            image: {
-              src: '/images/history/chicago-pile-1.jpg',
-              alt: 'Recreation of Chicago Pile-1, the first nuclear reactor',
-              year: '1942',
+            {
+              type: 'podcast',
+              title: 'H.H. Holmes',
+              show: 'Stuff You Missed in History Class',
+              platform: 'iHeartRadio',
+              url: 'https://www.iheart.com/podcast/105-stuff-you-missed-in-histor-21124503/',
             },
-            location: {
-              name: 'University of Chicago (former Stagg Field)',
-              coordinates: { lat: 41.7919, lng: -87.5998 },
-              stillExists: true,
+            {
+              type: 'video',
+              title: 'The Murder Castle: H.H. Holmes Explained',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=kU7JuFGnJTU',
+            }
+          ],
+          location: {
+            name: '63rd and Wallace Street, Englewood',
+            coordinates: { lat: 41.7794, lng: -87.6394 },
+            stillExists: false,
+          },
+        },
+        {
+          id: 'chi-dark-4',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 2,
+          category: 'disaster',
+          year: '1903',
+          title: 'The "Fireproof" Theater That Killed 602 People',
+          body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
+          verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',
+          images: [
+            {
+              src: '/chicago/dark-history/theatrefire-1.png',
+              alt: 'Iroquois Theatre fire historic image',
             },
-          },
-          {
-            id: 'history-4',
-            type: 'history',
-            era: '1919',
-            title: 'A race riot started at a segregated beach and burned for a week',
-            body: 'When a Black teenager named Eugene Williams drifted into the "white" section of a Lake Michigan beach and was killed, it sparked a week of violence that left 38 dead and over 500 injured. White mobs burned Black homes; Black residents fought back. The riot exposed the violence underlying Chicago\'s racial geography, a pattern that would repeat in 1968 after Martin Luther King Jr.\'s assassination.',
-            source: 'Chicago Commission on Race Relations',
-            image: {
-              src: '/images/history/1919-race-riot.jpg',
-              alt: 'Crowd during the 1919 Chicago Race Riot',
-              year: '1919',
+            {
+              src: '/chicago/dark-history/theatrefire-2.png',
+              alt: 'Iroquois Theatre aftermath',
             },
-            location: {
-              name: '29th Street Beach (former)',
-              coordinates: { lat: 41.8412, lng: -87.6089 },
-              stillExists: false,
+            {
+              src: '/chicago/dark-history/theatrefire-3.png',
+              alt: 'Iroquois Theatre memorial',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'Tinder Box: The Iroquois Theatre Disaster 1903',
+              author: 'Anthony P. Hatch',
+              isbn: '9780897335492',
+              year: '2003',
+              url: 'https://www.amazon.com/Tinder-Box-Iroquois-Theatre-Disaster/dp/0897335341',
             },
-          },
-          {
-            id: 'history-5',
-            type: 'history',
-            era: '1968',
-            title: 'The Democratic National Convention riots happened on live television',
-            body: 'When anti-Vietnam War protesters gathered in Grant Park during the 1968 Democratic National Convention, Chicago police attacked them with clubs and tear gas. The violence was broadcast live during the convention itself, and protesters chanted "The whole world is watching." Mayor Richard J. Daley defended the police. The images helped define the divisions of that era.',
-            source: 'Chicago Tribune Archives',
-            image: {
-              src: '/images/history/1968-dnc.jpg',
-              alt: 'Police confronting protesters at 1968 Democratic National Convention',
-              year: '1968',
+            {
+              type: 'book',
+              title: 'Fireproof: The Untold Story of the 1903 Iroquois Theatre Disaster',
+              author: 'Nat Brandt',
+              isbn: '9781566637299',
+              year: '2003',
+              url: 'https://www.amazon.com/Fireproof-Untold-Story-Iroquois-Disaster/dp/1566637295',
             },
-            location: {
-              name: 'Grant Park / Michigan Avenue',
-              coordinates: { lat: 41.8760, lng: -87.6189 },
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'The Iroquois Theatre Fire: Chicago\'s Deadliest Day',
+              publisher: 'Smithsonian Magazine',
+              year: '2018',
+              url: 'https://www.smithsonianmag.com/history/iroquois-theater-fire-chicagos-deadliest-day-180971044/',
             },
-          },
-          {
-            id: 'history-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'history-6',
-            type: 'history',
-            era: '1915',
-            title: 'The Eastland disaster killed more Chicagoans than the Great Fire',
-            body: 'On July 24, 1915, the SS Eastland rolled over while still docked at the Chicago River, killing 844 passengers — mostly young Czech immigrants on their way to a company picnic. It remains the largest loss of life from a single shipwreck on the Great Lakes. The disaster is largely forgotten, overshadowed by the Titanic three years earlier, even though more passengers died.',
-            source: 'Eastland Disaster Historical Society',
-            image: {
-              src: '/images/history/eastland.jpg',
-              alt: 'The capsized SS Eastland in the Chicago River',
-              year: '1915',
+            {
+              type: 'article',
+              title: '602 Died in the Iroquois Theatre Fire',
+              publisher: 'WTTW Chicago',
+              year: '2019',
+              url: 'https://interactive.wttw.com/ten/disasters/iroquois-theatre-fire',
             },
-            location: {
-              name: 'Chicago River at LaSalle Street',
-              coordinates: { lat: 41.8873, lng: -87.6322 },
-              stillExists: true,
+            {
+              type: 'documentary',
+              title: 'The Iroquois Theatre Fire',
+              platform: 'WTTW Chicago',
+              year: '2018',
+              url: 'https://www.wttw.com/chicago-stories',
             },
+            {
+              type: 'video',
+              title: 'The Iroquois Theatre Disaster Explained',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=lFrjrQJCZCw',
+            }
+          ],
+          location: {
+            name: 'Randolph Street, Loop (site now occupied by Oriental Theatre)',
+            coordinates: { lat: 41.8847, lng: -87.6279 },
+            stillExists: false,
           },
-          {
-            id: 'history-7',
-            type: 'history',
-            era: '1933-34',
-            title: 'A World\'s Fair gave Chicago its lakefront',
-            body: 'The 1933-34 Century of Progress International Exposition was built on landfill that became part of today\'s lakefront parks. More importantly, it demonstrated that Chicago\'s lakefront should be preserved for public use rather than industrial development. Much of the "lake" in Northerly Island and the Museum Campus is actually man-made land from this era.',
-            source: 'Chicago Park District',
-            location: {
-              name: 'Northerly Island / Museum Campus',
-              coordinates: { lat: 41.8657, lng: -87.6078 },
-              stillExists: true,
+        },
+        {
+          id: 'chi-dark-5',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 3,
+          category: 'crime',
+          year: '1929',
+          title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
+          body: 'On February 14, 1929, seven members of Chicago\'s North Side Gang were lined up against a garage wall at 2122 North Clark Street and executed with Thompson submachine guns. The killers wore police uniforms—because if you\'re going to murder seven men in broad daylight, you might as well look official. The hit, widely believed orchestrated by Al Capone to eliminate rival Bugs Moran, shocked a nation that thought it had seen peak Prohibition violence. Ironically, Moran was supposed to be there but arrived late. Punctuality saves lives. No one was ever convicted. The massacre helped turn public opinion against Prohibition and led to the creation of America\'s first crime laboratory—because Chicago needed scientific help identifying which mob was killing which.',
+          verdict: 'Officially unsolved, though Capone\'s fingerprints are everywhere but the court record. Seven dead. Zero convictions.',
+          images: [
+            {
+              src: '/chicago/dark-history/masscare-1.png',
+              alt: 'St. Valentine\'s Day Massacre crime scene',
             },
-          },
-          {
-            id: 'history-8',
-            type: 'history',
-            era: '1992',
-            title: 'The Loop flooded because everyone forgot about the freight tunnels',
-            body: 'On April 13, 1992, a construction crew driving wooden pilings accidentally breached the forgotten freight tunnel system under the Chicago River. The tunnels flooded, then the basements of hundreds of Loop buildings flooded, causing $1.95 billion in damage. The tunnels had been abandoned for decades, and almost no one knew they were there. It took days to plug the hole.',
-            source: 'Chicago Tribune',
-            image: {
-              src: '/images/history/chicago-flood-1992.jpg',
-              alt: 'Water flooding into Loop building basement during 1992 flood',
-              year: '1992',
+            {
+              src: '/chicago/dark-history/massacre-2.png',
+              alt: 'St. Valentine\'s Day Massacre aftermath',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'The St. Valentine\'s Day Massacre: The Untold Story of the Gangland Bloodbath',
+              author: 'William J. Helmer and Arthur J. Bilek',
+              isbn: '9781581825688',
+              year: '2004',
+              url: 'https://www.amazon.com/St-Valentines-Day-Massacre-Untold/dp/1581825684',
             },
-            location: {
-              name: 'The Loop',
-              coordinates: { lat: 41.8819, lng: -87.6278 },
-              stillExists: true,
+            {
+              type: 'book',
+              title: 'Capone: The Man and the Era',
+              author: 'Laurence Bergreen',
+              isbn: '9780684824475',
+              year: '1994',
+              url: 'https://www.amazon.com/Capone-Man-Era-Laurence-Bergreen/dp/0684824477',
             },
-          }
-        ],
-      },
-      {
-        id: 'chi-dark-history',
-        type: 'section',
-        title: 'City of Unsolved Mysteries',
-        teaser: 'Mob hits, poisoned medicine, and the fire that never stopped burning',
-        intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
-        items: [
-          {
-            id: 'chi-dark-2',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 1,
-            category: 'crime',
-            year: '1893-1896',
-            title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
-            body: 'During the 1893 World\'s Fair, Dr. H.H. Holmes lured victims to his custom-built "Murder Castle"—a hotel he personally designed with soundproof rooms, secret passages, gas chambers, a greased chute to the basement, and his own crematorium. Holmes confessed to 27 murders but the actual count was likely far higher. He targeted young women who came to Chicago for the fair, using charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools, because waste not, want not. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory.',
-            verdict: 'Holmes was hanged in 1896. The true body count remains unknown. The lot sat empty for over a century.',
-            images: [
-              {
-                src: '/chicago/dark-history/holmes-1.png',
-                alt: 'H.H. Holmes Murder Castle illustration',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'The Devil in the White City',
-                author: 'Erik Larson',
-                isbn: '9780375725609',
-                year: '2003',
-                url: 'https://www.amazon.com/Devil-White-City-Madness-Changed/dp/0375725601',
-              },
-              {
-                type: 'book',
-                title: 'Depraved: The Definitive True Story of H.H. Holmes',
-                author: 'Harold Schechter',
-                isbn: '9780671025472',
-                year: '1994',
-                url: 'https://www.amazon.com/Depraved-Definitive-Story-H-Holmes/dp/0671025473',
-              },
-              {
-                type: 'article',
-                title: 'H.H. Holmes: America\'s First Serial Killer',
-                publisher: 'History.com',
-                year: '2020',
-                url: 'https://www.history.com/topics/crime/hh-holmes',
-              },
-              {
-                type: 'article',
-                title: 'The Murder Castle of H.H. Holmes',
-                publisher: 'Smithsonian Magazine',
-                author: 'Tony Perrottet',
-                year: '2017',
-                url: 'https://www.smithsonianmag.com/history/murder-castle-hh-holmes-180964740/',
-              },
-              {
-                type: 'documentary',
-                title: 'H.H. Holmes: America\'s First Serial Killer',
-                platform: 'History Channel',
-                year: '2004',
-                url: 'https://www.imdb.com/title/tt0437714/',
-              },
-              {
-                type: 'podcast',
-                title: 'H.H. Holmes',
-                show: 'Stuff You Missed in History Class',
-                platform: 'iHeartRadio',
-                url: 'https://www.iheart.com/podcast/105-stuff-you-missed-in-histor-21124503/',
-              },
-              {
-                type: 'video',
-                title: 'The Murder Castle: H.H. Holmes Explained',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=kU7JuFGnJTU',
-              }
-            ],
-            location: {
-              name: '63rd and Wallace Street, Englewood',
-              coordinates: { lat: 41.7794, lng: -87.6394 },
-              stillExists: false,
+            {
+              type: 'article',
+              title: 'St. Valentine\'s Day Massacre',
+              publisher: 'History.com',
+              year: '2020',
+              url: 'https://www.history.com/topics/crime/saint-valentines-day-massacre',
             },
-          },
-          {
-            id: 'chi-dark-4',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 2,
-            category: 'disaster',
-            year: '1903',
-            title: 'The "Fireproof" Theater That Killed 602 People',
-            body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
-            verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',
-            images: [
-              {
-                src: '/chicago/dark-history/theatrefire-1.png',
-                alt: 'Iroquois Theatre fire historic image',
-              },
-              {
-                src: '/chicago/dark-history/theatrefire-2.png',
-                alt: 'Iroquois Theatre aftermath',
-              },
-              {
-                src: '/chicago/dark-history/theatrefire-3.png',
-                alt: 'Iroquois Theatre memorial',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'Tinder Box: The Iroquois Theatre Disaster 1903',
-                author: 'Anthony P. Hatch',
-                isbn: '9780897335492',
-                year: '2003',
-                url: 'https://www.amazon.com/Tinder-Box-Iroquois-Theatre-Disaster/dp/0897335341',
-              },
-              {
-                type: 'book',
-                title: 'Fireproof: The Untold Story of the 1903 Iroquois Theatre Disaster',
-                author: 'Nat Brandt',
-                isbn: '9781566637299',
-                year: '2003',
-                url: 'https://www.amazon.com/Fireproof-Untold-Story-Iroquois-Disaster/dp/1566637295',
-              },
-              {
-                type: 'article',
-                title: 'The Iroquois Theatre Fire: Chicago\'s Deadliest Day',
-                publisher: 'Smithsonian Magazine',
-                year: '2018',
-                url: 'https://www.smithsonianmag.com/history/iroquois-theater-fire-chicagos-deadliest-day-180971044/',
-              },
-              {
-                type: 'article',
-                title: '602 Died in the Iroquois Theatre Fire',
-                publisher: 'WTTW Chicago',
-                year: '2019',
-                url: 'https://interactive.wttw.com/ten/disasters/iroquois-theatre-fire',
-              },
-              {
-                type: 'documentary',
-                title: 'The Iroquois Theatre Fire',
-                platform: 'WTTW Chicago',
-                year: '2018',
-                url: 'https://www.wttw.com/chicago-stories',
-              },
-              {
-                type: 'video',
-                title: 'The Iroquois Theatre Disaster Explained',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=lFrjrQJCZCw',
-              }
-            ],
-            location: {
-              name: 'Randolph Street, Loop (site now occupied by Oriental Theatre)',
-              coordinates: { lat: 41.8847, lng: -87.6279 },
-              stillExists: false,
+            {
+              type: 'article',
+              title: 'The St. Valentine\'s Day Massacre: 90 Years Later',
+              publisher: 'Chicago Tribune',
+              year: '2019',
+              url: 'https://www.chicagotribune.com/news/ct-st-valentines-day-massacre-90-years-20190214-story.html',
             },
-          },
-          {
-            id: 'chi-dark-5',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 3,
-            category: 'crime',
-            year: '1929',
-            title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
-            body: 'On February 14, 1929, seven members of Chicago\'s North Side Gang were lined up against a garage wall at 2122 North Clark Street and executed with Thompson submachine guns. The killers wore police uniforms—because if you\'re going to murder seven men in broad daylight, you might as well look official. The hit, widely believed orchestrated by Al Capone to eliminate rival Bugs Moran, shocked a nation that thought it had seen peak Prohibition violence. Ironically, Moran was supposed to be there but arrived late. Punctuality saves lives. No one was ever convicted. The massacre helped turn public opinion against Prohibition and led to the creation of America\'s first crime laboratory—because Chicago needed scientific help identifying which mob was killing which.',
-            verdict: 'Officially unsolved, though Capone\'s fingerprints are everywhere but the court record. Seven dead. Zero convictions.',
-            images: [
-              {
-                src: '/chicago/dark-history/masscare-1.png',
-                alt: 'St. Valentine\'s Day Massacre crime scene',
-              },
-              {
-                src: '/chicago/dark-history/massacre-2.png',
-                alt: 'St. Valentine\'s Day Massacre aftermath',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'The St. Valentine\'s Day Massacre: The Untold Story of the Gangland Bloodbath',
-                author: 'William J. Helmer and Arthur J. Bilek',
-                isbn: '9781581825688',
-                year: '2004',
-                url: 'https://www.amazon.com/St-Valentines-Day-Massacre-Untold/dp/1581825684',
-              },
-              {
-                type: 'book',
-                title: 'Capone: The Man and the Era',
-                author: 'Laurence Bergreen',
-                isbn: '9780684824475',
-                year: '1994',
-                url: 'https://www.amazon.com/Capone-Man-Era-Laurence-Bergreen/dp/0684824477',
-              },
-              {
-                type: 'article',
-                title: 'St. Valentine\'s Day Massacre',
-                publisher: 'History.com',
-                year: '2020',
-                url: 'https://www.history.com/topics/crime/saint-valentines-day-massacre',
-              },
-              {
-                type: 'article',
-                title: 'The St. Valentine\'s Day Massacre: 90 Years Later',
-                publisher: 'Chicago Tribune',
-                year: '2019',
-                url: 'https://www.chicagotribune.com/news/ct-st-valentines-day-massacre-90-years-20190214-story.html',
-              },
-              {
-                type: 'podcast',
-                title: 'The St. Valentine\'s Day Massacre',
-                show: 'Crimes of the Centuries',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/crimes-of-the-centuries/id1493668817',
-              },
-              {
-                type: 'video',
-                title: 'St. Valentine\'s Day Massacre: The True Story',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=OjL6BqjfKYk',
-              }
-            ],
-            location: {
-              name: '2122 North Clark Street (building demolished in 1967)',
-              coordinates: { lat: 41.9204, lng: -87.6363 },
-              stillExists: false,
+            {
+              type: 'podcast',
+              title: 'The St. Valentine\'s Day Massacre',
+              show: 'Crimes of the Centuries',
+              platform: 'Apple Podcasts',
+              url: 'https://podcasts.apple.com/us/podcast/crimes-of-the-centuries/id1493668817',
             },
+            {
+              type: 'video',
+              title: 'St. Valentine\'s Day Massacre: The True Story',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=OjL6BqjfKYk',
+            }
+          ],
+          location: {
+            name: '2122 North Clark Street (building demolished in 1967)',
+            coordinates: { lat: 41.9204, lng: -87.6363 },
+            stillExists: false,
           },
-          {
-            id: 'chi-dark-3',
-            type: 'dark-history',
-            category: 'cold-case',
-            year: '1956',
-            title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
-            body: 'On December 28, 1956, Barbara (15) and Patricia (12) Grimes left home to see "Love Me Tender" at the Brighton Theater. They\'d already seen Elvis\'s movie debut 11 times. They never made it to a 12th. Three weeks later, their naked, frozen bodies were found dumped along German Church Road in Willow Springs. Despite one of the largest investigations in Chicago history—300 officers, thousands of interviews, even a personal plea from Elvis himself urging the killer to come forward—no one was ever charged. Multiple men falsely confessed. The case file remains open nearly 70 years later. The sisters went to see a movie about love and came home in body bags.',
-            verdict: 'Unsolved. Chicago PD still accepts tips. The killer either died or kept his mouth shut for seven decades.',
-            images: [
-              {
-                src: '/chicago/dark-history/grimes-1.png',
-                alt: 'The Grimes Sisters missing persons case',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'The Two Lost Girls: The Mystery of the Grimes Sisters',
-                author: 'Troy Taylor',
-                isbn: '9781892523464',
-                year: '2013',
-                url: 'https://www.amazon.com/Two-Lost-Girls-Mystery-Sisters/dp/1892523469',
-              },
-              {
-                type: 'article',
-                title: 'The Grimes Sisters: Chicago\'s Most Haunting Cold Case',
-                publisher: 'Chicago Tribune',
-                year: '2017',
-                url: 'https://www.chicagotribune.com/news/ct-grimes-sisters-cold-case-met-20170113-story.html',
-              },
-              {
-                type: 'article',
-                title: '60 Years Later: The Grimes Sisters Mystery',
-                publisher: 'Chicago Sun-Times',
-                year: '2016',
-                url: 'https://chicago.suntimes.com/news/grimes-sisters-60-years-unsolved/',
-              },
-              {
-                type: 'podcast',
-                title: 'The Grimes Sisters',
-                show: 'Morbid',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/morbid/id1379959217',
-              },
-              {
-                type: 'podcast',
-                title: 'The Grimes Sisters Mystery',
-                show: 'Most Notorious!',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/most-notorious/id1544239547',
-              },
-              {
-                type: 'video',
-                title: 'The Grimes Sisters: Unsolved After 65 Years',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=MnOpQrStUvY',
-              }
-            ],
-            location: {
-              name: 'Bodies found in Willow Springs; last seen in Brighton Park',
-              stillExists: true,
+        },
+        {
+          id: 'chi-dark-3',
+          type: 'dark-history',
+          category: 'cold-case',
+          year: '1956',
+          title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
+          body: 'On December 28, 1956, Barbara (15) and Patricia (12) Grimes left home to see "Love Me Tender" at the Brighton Theater. They\'d already seen Elvis\'s movie debut 11 times. They never made it to a 12th. Three weeks later, their naked, frozen bodies were found dumped along German Church Road in Willow Springs. Despite one of the largest investigations in Chicago history—300 officers, thousands of interviews, even a personal plea from Elvis himself urging the killer to come forward—no one was ever charged. Multiple men falsely confessed. The case file remains open nearly 70 years later. The sisters went to see a movie about love and came home in body bags.',
+          verdict: 'Unsolved. Chicago PD still accepts tips. The killer either died or kept his mouth shut for seven decades.',
+          images: [
+            {
+              src: '/chicago/dark-history/grimes-1.png',
+              alt: 'The Grimes Sisters missing persons case',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'The Two Lost Girls: The Mystery of the Grimes Sisters',
+              author: 'Troy Taylor',
+              isbn: '9781892523464',
+              year: '2013',
+              url: 'https://www.amazon.com/Two-Lost-Girls-Mystery-Sisters/dp/1892523469',
             },
-          },
-          {
-            id: 'chi-dark-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'chi-dark-7',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 4,
-            category: 'disaster',
-            year: '1958',
-            title: 'Our Lady of the Angels: The School Fire That Changed America',
-            body: 'On December 1, 1958, fire broke out in the basement of Our Lady of the Angels School in Humboldt Park during afternoon classes. The blaze spread rapidly through the 55-year-old wooden structure. 92 children and 3 nuns died—most from smoke inhalation, others from jumping from second-story windows onto concrete. Parents arriving to pick up their children found bodies lined up on the sidewalk, covered with coats. The cause was never definitively determined, though arson was suspected. The tragedy shocked a nation that assumed schools were safe and led to comprehensive fire safety reforms: mandatory sprinklers, fire drills, panic bars, fire-resistant construction. Every fire code in every American school today exists because 95 people burned to death in a Catholic elementary school on the Northwest Side.',
-            verdict: 'Second-deadliest school fire in U.S. history. No one was ever charged. Schools nationwide installed sprinklers.',
-            images: [
-              {
-                src: '/chicago/dark-history/schoolfire-1.png',
-                alt: 'Our Lady of the Angels School fire aftermath',
-              },
-              {
-                src: '/chicago/dark-history/schoolfire-2.png',
-                alt: 'Our Lady of the Angels School memorial',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'To Sleep with the Angels: The Story of a Fire',
-                author: 'David Cowan and John Kuenster',
-                isbn: '9781566631174',
-                year: '1996',
-                url: 'https://www.amazon.com/Sleep-Angels-Story-Fire/dp/1566631173',
-              },
-              {
-                type: 'book',
-                title: 'The Fire That Will Not Die',
-                author: 'Michele McBride',
-                isbn: '9781883953263',
-                year: '2003',
-                url: 'https://www.amazon.com/Fire-That-Will-Not-Die/dp/1883953367',
-              },
-              {
-                type: 'article',
-                title: 'Our Lady of the Angels School Fire: 60 Years Later',
-                publisher: 'Chicago Tribune',
-                year: '2018',
-                url: 'https://www.chicagotribune.com/news/ct-our-lady-angels-school-fire-60-years-20181201-story.html',
-              },
-              {
-                type: 'article',
-                title: 'The School Fire That Changed America',
-                publisher: 'WTTW Chicago',
-                year: '2018',
-                url: 'https://interactive.wttw.com/ten/disasters/our-lady-angels-school-fire',
-              },
-              {
-                type: 'documentary',
-                title: 'Angels Too Soon: The School Fire of \'58',
-                platform: 'PBS/WTTW',
-                year: '2008',
-                url: 'https://www.wttw.com/chicago-stories/angels-too-soon',
-              },
-              {
-                type: 'video',
-                title: 'Our Lady of the Angels School Fire: The Tragedy',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=UoFQ9v3qKtc',
-              }
-            ],
-            location: {
-              name: 'Our Lady of the Angels School, 909 N Avers Ave, Humboldt Park',
-              coordinates: { lat: 41.8965, lng: -87.7211 },
-              stillExists: false,
+            {
+              type: 'article',
+              title: 'The Grimes Sisters: Chicago\'s Most Haunting Cold Case',
+              publisher: 'Chicago Tribune',
+              year: '2017',
+              url: 'https://www.chicagotribune.com/news/ct-grimes-sisters-cold-case-met-20170113-story.html',
             },
-          },
-          {
-            id: 'chi-dark-8',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1972-1978',
-            title: 'John Wayne Gacy: The Killer Clown Who Buried 29 Bodies Under His House',
-            body: 'Between 1972 and 1978, John Wayne Gacy raped, tortured, and murdered at least 33 teenage boys and young men, burying 26 in the crawl space beneath his Norwood Park ranch house, three more on his property, and dumping four in the Des Plaines River when he ran out of room. Gacy was a respected community member, Democratic precinct captain, and married father who performed as "Pogo the Clown" at children\'s hospitals and charity events—which is the kind of detail that makes the horror somehow worse. He was finally caught in 1978 after 15-year-old Robert Piest disappeared following a job interview at Gacy\'s construction company. When police obtained a search warrant, the smell from the crawl space told them everything. The case revealed how a predator could hide in plain sight for six years while his house literally filled with corpses.',
-            verdict: 'Convicted of 33 murders. Executed in 1994. The true victim count may be higher—four bodies remain unidentified.',
-            images: [
-              {
-                src: '/chicago/dark-history/gacy-1.png',
-                alt: 'John Wayne Gacy case investigation',
-              },
-              {
-                src: '/chicago/dark-history/gacy-2.png',
-                alt: 'Gacy house excavation',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'The Man Who Killed Boys',
-                author: 'Clifford L. Linedecker',
-                isbn: '9780312924447',
-                year: '1980',
-                url: 'https://www.amazon.com/Man-Who-Killed-Boys/dp/0312924445',
-              },
-              {
-                type: 'book',
-                title: 'Killer Clown: The John Wayne Gacy Murders',
-                author: 'Terry Sullivan and Peter T. Maiken',
-                isbn: '9780786005147',
-                year: '2000',
-                url: 'https://www.amazon.com/Killer-Clown-Wayne-Gacy-Murders/dp/0786005149',
-              },
-              {
-                type: 'article',
-                title: 'John Wayne Gacy: The Killer Clown',
-                publisher: 'Biography.com',
-                year: '2020',
-                url: 'https://www.biography.com/crime-figure/john-wayne-gacy',
-              },
-              {
-                type: 'article',
-                title: 'Inside the Mind of John Wayne Gacy',
-                publisher: 'Chicago Tribune',
-                year: '2018',
-                url: 'https://www.chicagotribune.com/news/ct-john-wayne-gacy-killer-clown-met-20180308-story.html',
-              },
-              {
-                type: 'documentary',
-                title: 'Conversations with a Killer: The John Wayne Gacy Tapes',
-                platform: 'Netflix',
-                director: 'Joe Berlinger',
-                year: '2022',
-                url: 'https://www.netflix.com/title/81342988',
-              },
-              {
-                type: 'documentary',
-                title: 'Devil in Disguise: John Wayne Gacy',
-                platform: 'Peacock',
-                year: '2021',
-                url: 'https://www.peacocktv.com/watch/asset/devil-in-disguise-john-wayne-gacy/6259824112112',
-              },
-              {
-                type: 'video',
-                title: 'John Wayne Gacy: The Killer Clown Documentary',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=fTDzNQF3QoI',
-              }
-            ],
-            location: {
-              name: '8213 W Summerdale Ave, Norwood Park Township',
-              coordinates: { lat: 42.0090, lng: -87.8416 },
-              stillExists: false,
+            {
+              type: 'article',
+              title: '60 Years Later: The Grimes Sisters Mystery',
+              publisher: 'Chicago Sun-Times',
+              year: '2016',
+              url: 'https://chicago.suntimes.com/news/grimes-sisters-60-years-unsolved/',
             },
-          },
-          {
-            id: 'chi-dark-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'chi-dark-6',
-            type: 'dark-history',
-            category: 'disaster',
-            year: '1979',
-            title: 'Flight 191: The Deadliest Plane Crash in American History',
-            images: [
-              {
-                src: '/chicago/dark-history/flight-1.png',
-                alt: 'American Airlines Flight 191 crash site',
-              },
-              {
-                src: '/chicago/dark-history/fligh-2.png',
-                alt: 'Flight 191 memorial',
-              }
-            ],
-            body: 'On May 25, 1979, American Airlines Flight 191—a DC-10 bound for Los Angeles—lost its left engine during takeoff from O\'Hare. The 13-ton engine and pylon tore away and flipped over the wing. The plane rolled left, stalled, crashed into a field in Des Plaines, and exploded in a fireball visible for miles. All 271 aboard died, plus two on the ground. 273 total. It remains the deadliest aviation disaster in U.S. history. The cause: improper maintenance procedures and a flawed design that severed hydraulic lines when the engine detached. American Airlines had been using a forklift method to save 200 man-hours per engine change. The shortcut cost 273 lives. The FAA grounded all DC-10s for over a month. New regulations followed. A memorial now stands near the crash site, marking the spot where cutting corners caught up with American aviation.',
-            verdict: 'Improper maintenance, design flaws, corporate shortcuts. 273 dead. The DC-10\'s reputation never recovered.',
-            sources: [
-              {
-                type: 'book',
-                title: 'Safe to Fly?: American Airlines Flight 191 and the Crash of the DC-10',
-                author: 'Bill Adair',
-                isbn: '9780813328164',
-                year: '2002',
-                url: 'https://www.amazon.com/Safe-Fly-American-Airlines-Flight/dp/0813328160',
-              },
-              {
-                type: 'article',
-                title: 'American Airlines Flight 191: 40 Years Later',
-                publisher: 'Chicago Tribune',
-                year: '2019',
-                url: 'https://www.chicagotribune.com/news/ct-american-airlines-crash-flight-191-met-20190524-story.html',
-              },
-              {
-                type: 'article',
-                title: 'The Deadliest Aviation Disaster in U.S. History',
-                publisher: 'Smithsonian Magazine',
-                year: '2019',
-                url: 'https://www.smithsonianmag.com/air-space-magazine/dc-10-disaster-180972175/',
-              },
-              {
-                type: 'article',
-                title: 'NTSB Report: American Airlines Flight 191',
-                publisher: 'National Transportation Safety Board',
-                year: '1979',
-                url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7917.pdf',
-              },
-              {
-                type: 'documentary',
-                title: 'Catastrophe at O\'Hare',
-                platform: 'National Geographic',
-                year: '2014',
-                url: 'https://www.nationalgeographic.com/tv/shows/air-crash-investigation',
-              },
-              {
-                type: 'podcast',
-                title: 'American Airlines Flight 191',
-                show: 'Take to the Sky: The Air Disaster Podcast',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/us/podcast/take-to-the-sky-the-air-disaster-podcast/id1465118423',
-              },
-              {
-                type: 'video',
-                title: 'American Airlines Flight 191: The Deadliest Crash',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=rVXIvdxNzXQ',
-              }
-            ],
-            location: {
-              name: 'Near O\'Hare Airport, Des Plaines',
-              coordinates: { lat: 42.0022, lng: -87.9384 },
-              stillExists: true,
+            {
+              type: 'podcast',
+              title: 'The Grimes Sisters',
+              show: 'Morbid',
+              platform: 'Apple Podcasts',
+              url: 'https://podcasts.apple.com/us/podcast/morbid/id1379959217',
             },
-          },
-          {
-            id: 'chi-dark-1',
-            type: 'dark-history',
-            category: 'unsolved',
-            year: '1982',
-            title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
-            body: 'In late September 1982, seven people in the Chicago area died after taking Extra-Strength Tylenol capsules laced with potassium cyanide. The victims—ranging from a 12-year-old girl to a 35-year-old postal worker—bought bottles from different stores across the suburbs, meaning someone was walking into pharmacies and placing poisoned pills on shelves like a twisted scavenger hunt. The murders sparked nationwide panic and an immediate recall of 31 million bottles. The case led to tamper-proof packaging, changed consumer product safety forever, and introduced America to the concept that someone might kill you for absolutely no reason other than the thrill of randomness. Despite one of the FBI\'s most intensive investigations and 40+ years of tips, no one has ever been charged. James Lewis, who sent an extortion letter, spent time in prison for that but was never connected to the murders. The killer is either dead or still out there, having gotten away with one of the most terrifying crimes in American history.',
-            verdict: 'Unsolved. The case remains open. All victims died within 72 hours. The killer was never caught.',
-            images: [
-              {
-                src: '/chicago/dark-history/tylenol-1.png',
-                alt: 'Tylenol poisoning case investigation',
-              },
-              {
-                src: '/chicago/dark-history/tylenol-2.png',
-                alt: 'Tylenol recall and tamper-proof packaging',
-              }
-            ],
-            sources: [
-              {
-                type: 'book',
-                title: 'The Poisoner: The Life and Crimes of Victorian England\'s Most Notorious Doctor',
-                author: 'Stephen Bates',
-                isbn: '9781468316353',
-                year: '2014',
-                url: 'https://www.amazon.com/Poisoner-Crimes-Victorian-Notorious-Doctor/dp/1468316354',
-              },
-              {
-                type: 'article',
-                title: 'The Tylenol Murders: Read the Tribune Investigation',
-                publisher: 'Chicago Tribune',
-                year: '2022',
-                url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
-              },
-              {
-                type: 'article',
-                title: 'Tylenol Murders: 40 Years Later',
-                publisher: 'CBS News',
-                year: '2022',
-                url: 'https://www.cbsnews.com/chicago/news/tylenol-murders-40-years-later/',
-              },
-              {
-                type: 'documentary',
-                title: 'Cold Case: The Tylenol Murders',
-                platform: 'Netflix',
-                director: 'Travis Clark',
-                year: '2024',
-                url: 'https://www.netflix.com/title/81719357',
-              },
-              {
-                type: 'podcast',
-                title: 'Unsealed: The Tylenol Murders',
-                show: 'Chicago Tribune',
-                platform: 'Apple Podcasts',
-                year: '2022',
-                url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
-              },
-              {
-                type: 'video',
-                title: 'The Tylenol Murders: Unsolved After 40 Years',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=pBdz3Uq6CT8',
-              }
-            ],
-            location: {
-              name: 'Multiple Chicago suburbs',
-              stillExists: true,
+            {
+              type: 'podcast',
+              title: 'The Grimes Sisters Mystery',
+              show: 'Most Notorious!',
+              platform: 'Apple Podcasts',
+              url: 'https://podcasts.apple.com/us/podcast/most-notorious/id1544239547',
             },
-          }
-        ],
-      },
-    
-      {
-        id: 'chicago-lost-and-loved',
-        type: 'section',
-        title: 'Lost Chicago',
-        teaser: 'Hot Doug\'s, The Uptown Theatre, and the places that made Chicago feel like Chicago',
-        intro: 'Chicago is a city that demolishes its history with the same enthusiasm it once built it. These were the restaurants, bars, and theaters that defined neighborhoods—places where everyone knew your order and the walls absorbed decades of stories. The city changes fast. Memory is all that keeps some doors open.',
-        items: [
-          {
-            id: 'chicago-lost-1',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Hot Doug's",
-            neighborhood: 'Avondale',
-            yearsOpen: '2001–2014',
-            description: 'The self-proclaimed "Sausage Superstore and Encased Meat Emporium" where Doug Sohn elevated the Chicago hot dog into performance art. Hour-long lines for duck fat fries and celebrity sausages with names like "The Joe Strummer" and "Elvis Presley, The King." Anthony Bourdain called it one of the 13 places to eat before you die. Doug shut it down at peak popularity because he was tired — the most Chicago exit imaginable.',
-            whyMissed: 'The foie gras and Sauternes duck sausage that cost $15 and was worth every penny. The duck fat fries available only Friday and Saturday. Doug behind the counter slinging puns while the line stretched around the block. It proved you could take hot dogs deadly seriously while refusing to take yourself seriously at all.',
-            communityVoice: '"There are no two ways about it: Hot Doug\'s was the best hot dog restaurant in America." — Anthony Bourdain',
-            lastAddress: '3324 N California Ave, Chicago',
-            source: 'Chicago Tribune, Eater Chicago',
+            {
+              type: 'video',
+              title: 'The Grimes Sisters: Unsolved After 65 Years',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=MnOpQrStUvY',
+            }
+          ],
+          location: {
+            name: 'Bodies found in Willow Springs; last seen in Brighton Park',
+            stillExists: true,
           },
-          // Photo References: Wikimedia Commons (public domain) - https://commons.wikimedia.org/wiki/Category:Hot_Doug's
-          // Flickr photos: https://www.flickr.com/photos/hellokitty893112/albums/72157629075131571/
-          // Yelp (1540 photos): https://www.yelp.com/biz/hot-dougs-chicago
-          {
-            id: 'chicago-lost-10',
-            type: 'lost-and-loved',
-            category: 'theater',
-            name: 'The Uptown Theatre',
-            neighborhood: 'Uptown',
-            yearsOpen: '1925–1981',
-            description: 'The "palace of the people" with 4,381 seats, a Wurlitzer organ that rose from the orchestra pit, and Spanish baroque architecture so excessive it makes modern luxury look boring. After hosting vaudeville, silent films, and rock concerts for 56 years, it closed in 1981. The building still stands — shuttered, crumbling, and haunting Broadway like a gorgeous ghost. Every few years someone promises to restore it. The chandelier still hangs in the dark.',
-            whyMissed: 'The staggering grandeur of an era when a movie palace could look like a cathedral. The architectural crime of letting something that ornate decay for 45 years. The fading promise that one day, somehow, it will blaze back to life.',
-            communityVoice: '"The Uptown Theatre is Chicago\'s most beautiful abandoned building." — Forgotten Chicago',
-            lastAddress: '4816 N Broadway, Chicago',
-            source: 'Chicago Tribune, Preservation Chicago',
+        },
+        {
+          id: 'chi-dark-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'chi-dark-7',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 4,
+          category: 'disaster',
+          year: '1958',
+          title: 'Our Lady of the Angels: The School Fire That Changed America',
+          body: 'On December 1, 1958, fire broke out in the basement of Our Lady of the Angels School in Humboldt Park during afternoon classes. The blaze spread rapidly through the 55-year-old wooden structure. 92 children and 3 nuns died—most from smoke inhalation, others from jumping from second-story windows onto concrete. Parents arriving to pick up their children found bodies lined up on the sidewalk, covered with coats. The cause was never definitively determined, though arson was suspected. The tragedy shocked a nation that assumed schools were safe and led to comprehensive fire safety reforms: mandatory sprinklers, fire drills, panic bars, fire-resistant construction. Every fire code in every American school today exists because 95 people burned to death in a Catholic elementary school on the Northwest Side.',
+          verdict: 'Second-deadliest school fire in U.S. history. No one was ever charged. Schools nationwide installed sprinklers.',
+          images: [
+            {
+              src: '/chicago/dark-history/schoolfire-1.png',
+              alt: 'Our Lady of the Angels School fire aftermath',
+            },
+            {
+              src: '/chicago/dark-history/schoolfire-2.png',
+              alt: 'Our Lady of the Angels School memorial',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'To Sleep with the Angels: The Story of a Fire',
+              author: 'David Cowan and John Kuenster',
+              isbn: '9781566631174',
+              year: '1996',
+              url: 'https://www.amazon.com/Sleep-Angels-Story-Fire/dp/1566631173',
+            },
+            {
+              type: 'book',
+              title: 'The Fire That Will Not Die',
+              author: 'Michele McBride',
+              isbn: '9781883953263',
+              year: '2003',
+              url: 'https://www.amazon.com/Fire-That-Will-Not-Die/dp/1883953367',
+            },
+            {
+              type: 'article',
+              title: 'Our Lady of the Angels School Fire: 60 Years Later',
+              publisher: 'Chicago Tribune',
+              year: '2018',
+              url: 'https://www.chicagotribune.com/news/ct-our-lady-angels-school-fire-60-years-20181201-story.html',
+            },
+            {
+              type: 'article',
+              title: 'The School Fire That Changed America',
+              publisher: 'WTTW Chicago',
+              year: '2018',
+              url: 'https://interactive.wttw.com/ten/disasters/our-lady-angels-school-fire',
+            },
+            {
+              type: 'documentary',
+              title: 'Angels Too Soon: The School Fire of \'58',
+              platform: 'PBS/WTTW',
+              year: '2008',
+              url: 'https://www.wttw.com/chicago-stories/angels-too-soon',
+            },
+            {
+              type: 'video',
+              title: 'Our Lady of the Angels School Fire: The Tragedy',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=UoFQ9v3qKtc',
+            }
+          ],
+          location: {
+            name: 'Our Lady of the Angels School, 909 N Avers Ave, Humboldt Park',
+            coordinates: { lat: 41.8965, lng: -87.7211 },
+            stillExists: false,
           },
-          // Photo References: Wikimedia Commons (10 files, public domain) - https://commons.wikimedia.org/wiki/Category:Uptown_Theatre_(Chicago)
-          {
-            id: 'chicago-lost-3',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: 'The Pontiac',
-            neighborhood: 'Bucktown',
-            yearsOpen: '2001–2016',
-            description: 'The dark, cash-only dive with a photo booth, $3 Old Style, and a jukebox that skewed punk. No craft cocktails, no exposed brick labeled as "industrial chic," no irony. For 15 years, it was where Bucktown went to remember what Bucktown used to be — before the developers arrived with strollers and reclaimed wood.',
-            whyMissed: 'The unpretentious vibe in a neighborhood that became nothing but pretentious. The realization that dive bars were an endangered species. The cheap beer and the even cheaper rent that made it impossible to survive. It closed when the building sold for redevelopment, because of course it did.',
-            communityVoice: '"The Pontiac was the last holdout in a neighborhood that forgot what it used to be." — Chicago Reader',
-            lastAddress: '1531 N Damen Ave, Chicago',
-            source: 'Chicago Reader, DNAinfo',
+        },
+        {
+          id: 'chi-dark-8',
+          type: 'dark-history',
+          category: 'crime',
+          year: '1972-1978',
+          title: 'John Wayne Gacy: The Killer Clown Who Buried 29 Bodies Under His House',
+          body: 'Between 1972 and 1978, John Wayne Gacy raped, tortured, and murdered at least 33 teenage boys and young men, burying 26 in the crawl space beneath his Norwood Park ranch house, three more on his property, and dumping four in the Des Plaines River when he ran out of room. Gacy was a respected community member, Democratic precinct captain, and married father who performed as "Pogo the Clown" at children\'s hospitals and charity events—which is the kind of detail that makes the horror somehow worse. He was finally caught in 1978 after 15-year-old Robert Piest disappeared following a job interview at Gacy\'s construction company. When police obtained a search warrant, the smell from the crawl space told them everything. The case revealed how a predator could hide in plain sight for six years while his house literally filled with corpses.',
+          verdict: 'Convicted of 33 murders. Executed in 1994. The true victim count may be higher—four bodies remain unidentified.',
+          images: [
+            {
+              src: '/chicago/dark-history/gacy-1.png',
+              alt: 'John Wayne Gacy case investigation',
+            },
+            {
+              src: '/chicago/dark-history/gacy-2.png',
+              alt: 'Gacy house excavation',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'The Man Who Killed Boys',
+              author: 'Clifford L. Linedecker',
+              isbn: '9780312924447',
+              year: '1980',
+              url: 'https://www.amazon.com/Man-Who-Killed-Boys/dp/0312924445',
+            },
+            {
+              type: 'book',
+              title: 'Killer Clown: The John Wayne Gacy Murders',
+              author: 'Terry Sullivan and Peter T. Maiken',
+              isbn: '9780786005147',
+              year: '2000',
+              url: 'https://www.amazon.com/Killer-Clown-Wayne-Gacy-Murders/dp/0786005149',
+            },
+            {
+              type: 'article',
+              title: 'John Wayne Gacy: The Killer Clown',
+              publisher: 'Biography.com',
+              year: '2020',
+              url: 'https://www.biography.com/crime-figure/john-wayne-gacy',
+            },
+            {
+              type: 'article',
+              title: 'Inside the Mind of John Wayne Gacy',
+              publisher: 'Chicago Tribune',
+              year: '2018',
+              url: 'https://www.chicagotribune.com/news/ct-john-wayne-gacy-killer-clown-met-20180308-story.html',
+            },
+            {
+              type: 'documentary',
+              title: 'Conversations with a Killer: The John Wayne Gacy Tapes',
+              platform: 'Netflix',
+              director: 'Joe Berlinger',
+              year: '2022',
+              url: 'https://www.netflix.com/title/81342988',
+            },
+            {
+              type: 'documentary',
+              title: 'Devil in Disguise: John Wayne Gacy',
+              platform: 'Peacock',
+              year: '2021',
+              url: 'https://www.peacocktv.com/watch/asset/devil-in-disguise-john-wayne-gacy/6259824112112',
+            },
+            {
+              type: 'video',
+              title: 'John Wayne Gacy: The Killer Clown Documentary',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=fTDzNQF3QoI',
+            }
+          ],
+          location: {
+            name: '8213 W Summerdale Ave, Norwood Park Township',
+            coordinates: { lat: 42.0090, lng: -87.8416 },
+            stillExists: false,
           },
-          {
-            id: 'chicago-lost-ad-1',
-            type: 'ad',
-            size: 'banner',
+        },
+        {
+          id: 'chi-dark-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'chi-dark-6',
+          type: 'dark-history',
+          category: 'disaster',
+          year: '1979',
+          title: 'Flight 191: The Deadliest Plane Crash in American History',
+          images: [
+            {
+              src: '/chicago/dark-history/flight-1.png',
+              alt: 'American Airlines Flight 191 crash site',
+            },
+            {
+              src: '/chicago/dark-history/fligh-2.png',
+              alt: 'Flight 191 memorial',
+            }
+          ],
+          body: 'On May 25, 1979, American Airlines Flight 191—a DC-10 bound for Los Angeles—lost its left engine during takeoff from O\'Hare. The 13-ton engine and pylon tore away and flipped over the wing. The plane rolled left, stalled, crashed into a field in Des Plaines, and exploded in a fireball visible for miles. All 271 aboard died, plus two on the ground. 273 total. It remains the deadliest aviation disaster in U.S. history. The cause: improper maintenance procedures and a flawed design that severed hydraulic lines when the engine detached. American Airlines had been using a forklift method to save 200 man-hours per engine change. The shortcut cost 273 lives. The FAA grounded all DC-10s for over a month. New regulations followed. A memorial now stands near the crash site, marking the spot where cutting corners caught up with American aviation.',
+          verdict: 'Improper maintenance, design flaws, corporate shortcuts. 273 dead. The DC-10\'s reputation never recovered.',
+          sources: [
+            {
+              type: 'book',
+              title: 'Safe to Fly?: American Airlines Flight 191 and the Crash of the DC-10',
+              author: 'Bill Adair',
+              isbn: '9780813328164',
+              year: '2002',
+              url: 'https://www.amazon.com/Safe-Fly-American-Airlines-Flight/dp/0813328160',
+            },
+            {
+              type: 'article',
+              title: 'American Airlines Flight 191: 40 Years Later',
+              publisher: 'Chicago Tribune',
+              year: '2019',
+              url: 'https://www.chicagotribune.com/news/ct-american-airlines-crash-flight-191-met-20190524-story.html',
+            },
+            {
+              type: 'article',
+              title: 'The Deadliest Aviation Disaster in U.S. History',
+              publisher: 'Smithsonian Magazine',
+              year: '2019',
+              url: 'https://www.smithsonianmag.com/air-space-magazine/dc-10-disaster-180972175/',
+            },
+            {
+              type: 'article',
+              title: 'NTSB Report: American Airlines Flight 191',
+              publisher: 'National Transportation Safety Board',
+              year: '1979',
+              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7917.pdf',
+            },
+            {
+              type: 'documentary',
+              title: 'Catastrophe at O\'Hare',
+              platform: 'National Geographic',
+              year: '2014',
+              url: 'https://www.nationalgeographic.com/tv/shows/air-crash-investigation',
+            },
+            {
+              type: 'podcast',
+              title: 'American Airlines Flight 191',
+              show: 'Take to the Sky: The Air Disaster Podcast',
+              platform: 'Apple Podcasts',
+              url: 'https://podcasts.apple.com/us/podcast/take-to-the-sky-the-air-disaster-podcast/id1465118423',
+            },
+            {
+              type: 'video',
+              title: 'American Airlines Flight 191: The Deadliest Crash',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=rVXIvdxNzXQ',
+            }
+          ],
+          location: {
+            name: 'Near O\'Hare Airport, Des Plaines',
+            coordinates: { lat: 42.0022, lng: -87.9384 },
+            stillExists: true,
           },
-          {
-            id: 'chicago-lost-9',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Pump Room',
-            neighborhood: 'Gold Coast',
-            yearsOpen: '1938–2017',
-            description: 'The Ambassador East Hotel dining room where Humphrey Bogart proposed to Lauren Bacall, Frank Sinatra commanded Booth One, and Chicago society went to see and be seen for 80 years. White-glove service, tableside preparations, celebrity photos covering the walls. It was old Hollywood glamour in a city that usually prefers its elbows on the table.',
-            whyMissed: 'The weight of history baked into the booths. The Booth One wall of fame. The sense that you were eating in a room where actual history happened, not just a restaurant decorated to look historic. When the hotel converted to condos, Chicago lost its last connection to mid-century supper club glamour.',
-            communityVoice: '"The Pump Room was where Chicago went to feel like New York." — Chicago Tribune',
-            lastAddress: '1301 N State Pkwy, Chicago',
-            source: 'Chicago Tribune, Vanity Fair',
+        },
+        {
+          id: 'chi-dark-1',
+          type: 'dark-history',
+          category: 'unsolved',
+          year: '1982',
+          title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
+          body: 'In late September 1982, seven people in the Chicago area died after taking Extra-Strength Tylenol capsules laced with potassium cyanide. The victims—ranging from a 12-year-old girl to a 35-year-old postal worker—bought bottles from different stores across the suburbs, meaning someone was walking into pharmacies and placing poisoned pills on shelves like a twisted scavenger hunt. The murders sparked nationwide panic and an immediate recall of 31 million bottles. The case led to tamper-proof packaging, changed consumer product safety forever, and introduced America to the concept that someone might kill you for absolutely no reason other than the thrill of randomness. Despite one of the FBI\'s most intensive investigations and 40+ years of tips, no one has ever been charged. James Lewis, who sent an extortion letter, spent time in prison for that but was never connected to the murders. The killer is either dead or still out there, having gotten away with one of the most terrifying crimes in American history.',
+          verdict: 'Unsolved. The case remains open. All victims died within 72 hours. The killer was never caught.',
+          images: [
+            {
+              src: '/chicago/dark-history/tylenol-1.png',
+              alt: 'Tylenol poisoning case investigation',
+            },
+            {
+              src: '/chicago/dark-history/tylenol-2.png',
+              alt: 'Tylenol recall and tamper-proof packaging',
+            }
+          ],
+          sources: [
+            {
+              type: 'book',
+              title: 'The Poisoner: The Life and Crimes of Victorian England\'s Most Notorious Doctor',
+              author: 'Stephen Bates',
+              isbn: '9781468316353',
+              year: '2014',
+              url: 'https://www.amazon.com/Poisoner-Crimes-Victorian-Notorious-Doctor/dp/1468316354',
+            },
+            {
+              type: 'article',
+              title: 'The Tylenol Murders: Read the Tribune Investigation',
+              publisher: 'Chicago Tribune',
+              year: '2022',
+              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
+            },
+            {
+              type: 'article',
+              title: 'Tylenol Murders: 40 Years Later',
+              publisher: 'CBS News',
+              year: '2022',
+              url: 'https://www.cbsnews.com/chicago/news/tylenol-murders-40-years-later/',
+            },
+            {
+              type: 'documentary',
+              title: 'Cold Case: The Tylenol Murders',
+              platform: 'Netflix',
+              director: 'Travis Clark',
+              year: '2024',
+              url: 'https://www.netflix.com/title/81719357',
+            },
+            {
+              type: 'podcast',
+              title: 'Unsealed: The Tylenol Murders',
+              show: 'Chicago Tribune',
+              platform: 'Apple Podcasts',
+              year: '2022',
+              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
+            },
+            {
+              type: 'video',
+              title: 'The Tylenol Murders: Unsolved After 40 Years',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=pBdz3Uq6CT8',
+            }
+          ],
+          location: {
+            name: 'Multiple Chicago suburbs',
+            stillExists: true,
           },
-          {
-            id: 'chicago-lost-4',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: 'Sonotheque',
-            neighborhood: 'Wicker Park',
-            yearsOpen: '2006–2015',
-            description: 'The darkened electronic music bar with a Funktion-One sound system engineered to make your chest vibrate, a Japanese whiskey list longer than most bars\' entire menus, and DJs playing house, techno, and sounds you didn\'t know existed. No bottle service, no velvet ropes, no nonsense — just sound treated as sacrament.',
-            whyMissed: 'The sound system that didn\'t just play music, it delivered it directly to your bones. The adventurous bookings that brought international DJs to a 100-person room. The rarity of a nightlife venue that respected both the music and the people there to actually listen to it.',
-            communityVoice: '"Sonotheque proved Chicago could have a world-class electronic music scene." — Resident Advisor',
-            lastAddress: '1444 W Chicago Ave, Chicago',
-            source: 'Chicago Tribune, Resident Advisor',
-          },
-          {
-            id: 'chicago-lost-violet-hour',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: 'The Violet Hour',
-            neighborhood: 'Wicker Park',
-            yearsOpen: '2007–2025',
-            description: 'The speakeasy that launched Chicago\'s craft cocktail revolution. Hidden behind an unmarked door on Damen Avenue, The Violet Hour brought velvet curtains, house rules banning cell phones, and bartenders who treated cocktails as high art. No standing, no Cosmos, no Budweiser — just immaculate drinks in an intimate room where conversation mattered more than being seen.',
-            whyMissed: 'The Juliet & Romeo cocktail. The no-standing policy that made every seat feel earned. The proof that Chicago could have a world-class cocktail scene. It won the James Beard Award for Outstanding Bar in 2015 and trained a generation of bartenders. When plumbing issues and landlord disputes closed it in 2025, Chicago lost its cocktail cathedral.',
-            communityVoice: '"The Violet Hour didn\'t just serve drinks — it taught Chicago how to drink." — Chicago Magazine',
-            lastAddress: '1520 N Damen Ave, Chicago',
-            source: 'Chicago Tribune, Block Club Chicago',
-            images: [
-              {
-                src: '/chicago/bars/violet-1.png',
-                alt: 'The Violet Hour speakeasy interior with velvet seating',
-              },
-              {
-                src: '/chicago/bars/violet-2.png',
-                alt: 'The Violet Hour craft cocktails',
-              },
-              {
-                src: '/chicago/bars/violet-3.png',
-                alt: 'The Violet Hour bar and bartenders',
-              }
-            ],
-          },
-          {
-            id: 'chicago-lost-5',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'The Silver Palm',
-            neighborhood: 'Lincoln Square',
-            yearsOpen: '1990–2021',
-            description: 'The neighborhood restaurant with legendary meatloaf, martinis mixed strong, and servers who remembered your name. Rotating art on the walls. White tablecloths without white tablecloth attitude. For 31 years, Lincoln Square celebrated birthdays, anniversaries, and random Tuesday nights here. The kind of place you thought would last forever.',
-            whyMissed: 'The consistency — same menu, same welcome, same feeling that a neighborhood restaurant could actually be permanent. The servers who treated regulars like family. The myth that good places can\'t die. When it closed during the pandemic, Lincoln Square didn\'t just lose a restaurant. It lost proof that anything lasts.',
-            communityVoice: '"The Silver Palm was proof that a restaurant could be both excellent and unpretentious." — Time Out Chicago',
-            lastAddress: '4437 N Lincoln Ave, Chicago',
-            source: 'Chicago Tribune, Eater Chicago',
-          },
-          {
-            id: 'chicago-lost-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'chicago-lost-6',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: "Chief O'Neill's Pub",
-            neighborhood: 'Northwest Side',
-            yearsOpen: '2000–2010',
-            description: 'The Irish pub named after Francis O\'Neill — Chicago police chief, traditional fiddler, and the man who preserved Irish music by writing it down. Nightly traditional music sessions where anyone could pull up a chair and play. Guinness poured correctly. A community of musicians who treated it like home. Real Irish pub culture on Elston Avenue, not the green beer version.',
-            whyMissed: 'The sessions where skill mattered more than fame and anyone good enough could join the tune. The sense of tradition kept alive in a Chicago neighborhood, not performed for tourists downtown. The proof that Irish culture in this city runs deeper than dyeing the river green once a year.',
-            communityVoice: '"Chief O\'Neill\'s was the real thing — musicians playing for the love of it, not for tourists." — Irish American News',
-            lastAddress: '3471 N Elston Ave, Chicago',
-            source: 'Chicago Tribune, Irish Music Magazine',
-          },
-          {
-            id: 'chicago-lost-8',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Café Ba-Ba-Reeba!',
-            neighborhood: 'Lincoln Park',
-            yearsOpen: '1985–2024',
-            description: 'The restaurant that introduced Chicago to Spanish tapas, sangria by the pitcher, and the radical concept of eating dinner at 10pm. For 39 years, it was where Lincoln Park went to celebrate, flirt, and discover that sharing small plates was better than ordering your own entree. Paella pans clanging, noise levels deafening, energy contagious. Eating here felt like vacation.',
-            whyMissed: 'The sangria that went down too easy. The sense of discovery when tapas were exotic instead of ubiquitous. The communal experience of sharing plates before literally every restaurant copied the model. It closed in 2024 after the building sold, because nothing gold can stay.',
-            communityVoice: '"Ba-Ba-Reeba made tapas a Chicago staple." — Chicago Magazine',
-            lastAddress: '2024 N Halsted St, Chicago',
-            source: 'Chicago Tribune, Eater Chicago',
-          },
-          {
-            id: 'chicago-lost-11',
-            type: 'lost-and-loved',
-            category: 'bookstore',
-            name: 'Borders Books (original location)',
-            neighborhood: 'Loop',
-            yearsOpen: '1985–2011',
-            description: 'Before the chain overexpanded and imploded, the Borders flagship at State and Madison was a three-story cathedral of books in the heart of downtown. Overstuffed reading chairs, a café with decent coffee, and the revolutionary idea that the Loop needed a place to browse and think, not just work and shop. When it closed in 2011, downtown lost one of its few third places.',
-            whyMissed: 'The ability to browse for hours without anyone bothering you. The chairs positioned for actual reading, not Instagram. The downtown meeting spot that wasn\'t a Starbucks. It represented an era when bookstores were civic anchors, not charming anachronisms.',
-            communityVoice: '"When Borders closed, the Loop became a little less livable." — Crain\'s Chicago Business',
-            lastAddress: '150 N State St, Chicago',
-            source: 'Chicago Tribune, Crain\'s Chicago',
-          },
-          {
-            id: 'chicago-lost-2',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: "Charlie Trotter's",
-            neighborhood: 'Lincoln Park',
-            yearsOpen: '1987–2012',
-            description: 'The restaurant that put Chicago fine dining on the international map and kept it there for 25 years. Charlie Trotter\'s 14-course tasting menus, obsessive perfectionism, and occasional kitchen terror earned two Michelin stars and trained a generation of Chicago chefs. Formal, ambitious, sometimes intimidating — it proved Chicago could cook with anybody.',
-            whyMissed: 'The relentless pursuit of excellence that bordered on mania. The wine pairings that could run $500. The knowledge that you were experiencing something world-class without leaving the city. It made Chicago a dining destination, not just a meat-and-potatoes town that happened to have restaurants.',
-            communityVoice: '"Charlie Trotter taught Chicago that fine dining could be rigorous, personal, and distinctly ours." — Chicago Magazine',
-            lastAddress: '816 W Armitage Ave, Chicago',
-            source: 'Chicago Tribune, Food & Wine',
-          },
-          {
-            id: 'chicago-lost-7',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Frontera Fresco',
-            neighborhood: "O'Hare Airport",
-            yearsOpen: '2012–2020',
-            description: 'Rick Bayless brought tortas ahogadas, short rib tacos, and made-to-order guacamole to Terminal 3, proving airport food didn\'t have to be a sad simulation of eating. For eight years, travelers between flights could eat James Beard Award-winning Mexican food at an airport gate. It was the best airport restaurant in America, which damned it with faint praise — it was legitimately great, period.',
-            whyMissed: 'The guacamole made to order while you watched. The torta ahogada so good you considered missing your flight. The brief, shining moment when O\'Hare offered something other than Garrett popcorn and regret. It closed during the pandemic, and now Terminal 3 is back to being Terminal 3.',
-            communityVoice: '"Frontera Fresco made O\'Hare bearable." — Bon Appétit',
-            lastAddress: "Terminal 3, O'Hare International Airport, Chicago",
-            source: 'Chicago Tribune, Bon Appétit',
-          }
-        ],
-      }
-    ],
-  }
+        }
+      ],
+    },
+
+    {
+      id: 'chicago-lost-and-loved',
+      type: 'section',
+      title: 'Lost Chicago',
+      teaser: 'Hot Doug\'s, The Uptown Theatre, and the places that made Chicago feel like Chicago',
+      intro: 'Chicago is a city that demolishes its history with the same enthusiasm it once built it. These were the restaurants, bars, and theaters that defined neighborhoods—places where everyone knew your order and the walls absorbed decades of stories. The city changes fast. Memory is all that keeps some doors open.',
+      items: [
+        {
+          id: 'chicago-lost-1',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: "Hot Doug's",
+          neighborhood: 'Avondale',
+          yearsOpen: '2001–2014',
+          description: 'The self-proclaimed "Sausage Superstore and Encased Meat Emporium" where Doug Sohn elevated the Chicago hot dog into performance art. Hour-long lines for duck fat fries and celebrity sausages with names like "The Joe Strummer" and "Elvis Presley, The King." Anthony Bourdain called it one of the 13 places to eat before you die. Doug shut it down at peak popularity because he was tired — the most Chicago exit imaginable.',
+          whyMissed: 'The foie gras and Sauternes duck sausage that cost $15 and was worth every penny. The duck fat fries available only Friday and Saturday. Doug behind the counter slinging puns while the line stretched around the block. It proved you could take hot dogs deadly seriously while refusing to take yourself seriously at all.',
+          communityVoice: '"There are no two ways about it: Hot Doug\'s was the best hot dog restaurant in America." — Anthony Bourdain',
+          lastAddress: '3324 N California Ave, Chicago',
+          source: 'Chicago Tribune, Eater Chicago',
+        },
+        // Photo References: Wikimedia Commons (public domain) - https://commons.wikimedia.org/wiki/Category:Hot_Doug's
+        // Flickr photos: https://www.flickr.com/photos/hellokitty893112/albums/72157629075131571/
+        // Yelp (1540 photos): https://www.yelp.com/biz/hot-dougs-chicago
+        {
+          id: 'chicago-lost-10',
+          type: 'lost-and-loved',
+          category: 'theater',
+          name: 'The Uptown Theatre',
+          neighborhood: 'Uptown',
+          yearsOpen: '1925–1981',
+          description: 'The "palace of the people" with 4,381 seats, a Wurlitzer organ that rose from the orchestra pit, and Spanish baroque architecture so excessive it makes modern luxury look boring. After hosting vaudeville, silent films, and rock concerts for 56 years, it closed in 1981. The building still stands — shuttered, crumbling, and haunting Broadway like a gorgeous ghost. Every few years someone promises to restore it. The chandelier still hangs in the dark.',
+          whyMissed: 'The staggering grandeur of an era when a movie palace could look like a cathedral. The architectural crime of letting something that ornate decay for 45 years. The fading promise that one day, somehow, it will blaze back to life.',
+          communityVoice: '"The Uptown Theatre is Chicago\'s most beautiful abandoned building." — Forgotten Chicago',
+          lastAddress: '4816 N Broadway, Chicago',
+          source: 'Chicago Tribune, Preservation Chicago',
+        },
+        // Photo References: Wikimedia Commons (10 files, public domain) - https://commons.wikimedia.org/wiki/Category:Uptown_Theatre_(Chicago)
+        {
+          id: 'chicago-lost-3',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: 'The Pontiac',
+          neighborhood: 'Bucktown',
+          yearsOpen: '2001–2016',
+          description: 'The dark, cash-only dive with a photo booth, $3 Old Style, and a jukebox that skewed punk. No craft cocktails, no exposed brick labeled as "industrial chic," no irony. For 15 years, it was where Bucktown went to remember what Bucktown used to be — before the developers arrived with strollers and reclaimed wood.',
+          whyMissed: 'The unpretentious vibe in a neighborhood that became nothing but pretentious. The realization that dive bars were an endangered species. The cheap beer and the even cheaper rent that made it impossible to survive. It closed when the building sold for redevelopment, because of course it did.',
+          communityVoice: '"The Pontiac was the last holdout in a neighborhood that forgot what it used to be." — Chicago Reader',
+          lastAddress: '1531 N Damen Ave, Chicago',
+          source: 'Chicago Reader, DNAinfo',
+        },
+        {
+          id: 'chicago-lost-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'chicago-lost-9',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'Pump Room',
+          neighborhood: 'Gold Coast',
+          yearsOpen: '1938–2017',
+          description: 'The Ambassador East Hotel dining room where Humphrey Bogart proposed to Lauren Bacall, Frank Sinatra commanded Booth One, and Chicago society went to see and be seen for 80 years. White-glove service, tableside preparations, celebrity photos covering the walls. It was old Hollywood glamour in a city that usually prefers its elbows on the table.',
+          whyMissed: 'The weight of history baked into the booths. The Booth One wall of fame. The sense that you were eating in a room where actual history happened, not just a restaurant decorated to look historic. When the hotel converted to condos, Chicago lost its last connection to mid-century supper club glamour.',
+          communityVoice: '"The Pump Room was where Chicago went to feel like New York." — Chicago Tribune',
+          lastAddress: '1301 N State Pkwy, Chicago',
+          source: 'Chicago Tribune, Vanity Fair',
+        },
+        {
+          id: 'chicago-lost-4',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: 'Sonotheque',
+          neighborhood: 'Wicker Park',
+          yearsOpen: '2006–2015',
+          description: 'The darkened electronic music bar with a Funktion-One sound system engineered to make your chest vibrate, a Japanese whiskey list longer than most bars\' entire menus, and DJs playing house, techno, and sounds you didn\'t know existed. No bottle service, no velvet ropes, no nonsense — just sound treated as sacrament.',
+          whyMissed: 'The sound system that didn\'t just play music, it delivered it directly to your bones. The adventurous bookings that brought international DJs to a 100-person room. The rarity of a nightlife venue that respected both the music and the people there to actually listen to it.',
+          communityVoice: '"Sonotheque proved Chicago could have a world-class electronic music scene." — Resident Advisor',
+          lastAddress: '1444 W Chicago Ave, Chicago',
+          source: 'Chicago Tribune, Resident Advisor',
+        },
+        {
+          id: 'chicago-lost-violet-hour',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: 'The Violet Hour',
+          neighborhood: 'Wicker Park',
+          yearsOpen: '2007–2025',
+          description: 'The speakeasy that launched Chicago\'s craft cocktail revolution. Hidden behind an unmarked door on Damen Avenue, The Violet Hour brought velvet curtains, house rules banning cell phones, and bartenders who treated cocktails as high art. No standing, no Cosmos, no Budweiser — just immaculate drinks in an intimate room where conversation mattered more than being seen.',
+          whyMissed: 'The Juliet & Romeo cocktail. The no-standing policy that made every seat feel earned. The proof that Chicago could have a world-class cocktail scene. It won the James Beard Award for Outstanding Bar in 2015 and trained a generation of bartenders. When plumbing issues and landlord disputes closed it in 2025, Chicago lost its cocktail cathedral.',
+          communityVoice: '"The Violet Hour didn\'t just serve drinks — it taught Chicago how to drink." — Chicago Magazine',
+          lastAddress: '1520 N Damen Ave, Chicago',
+          source: 'Chicago Tribune, Block Club Chicago',
+          images: [
+            {
+              src: '/chicago/bars/violet-1.png',
+              alt: 'The Violet Hour speakeasy interior with velvet seating',
+            },
+            {
+              src: '/chicago/bars/violet-2.png',
+              alt: 'The Violet Hour craft cocktails',
+            },
+            {
+              src: '/chicago/bars/violet-3.png',
+              alt: 'The Violet Hour bar and bartenders',
+            }
+          ],
+        },
+        {
+          id: 'chicago-lost-5',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'The Silver Palm',
+          neighborhood: 'Lincoln Square',
+          yearsOpen: '1990–2021',
+          description: 'The neighborhood restaurant with legendary meatloaf, martinis mixed strong, and servers who remembered your name. Rotating art on the walls. White tablecloths without white tablecloth attitude. For 31 years, Lincoln Square celebrated birthdays, anniversaries, and random Tuesday nights here. The kind of place you thought would last forever.',
+          whyMissed: 'The consistency — same menu, same welcome, same feeling that a neighborhood restaurant could actually be permanent. The servers who treated regulars like family. The myth that good places can\'t die. When it closed during the pandemic, Lincoln Square didn\'t just lose a restaurant. It lost proof that anything lasts.',
+          communityVoice: '"The Silver Palm was proof that a restaurant could be both excellent and unpretentious." — Time Out Chicago',
+          lastAddress: '4437 N Lincoln Ave, Chicago',
+          source: 'Chicago Tribune, Eater Chicago',
+        },
+        {
+          id: 'chicago-lost-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'chicago-lost-6',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: "Chief O'Neill's Pub",
+          neighborhood: 'Northwest Side',
+          yearsOpen: '2000–2010',
+          description: 'The Irish pub named after Francis O\'Neill — Chicago police chief, traditional fiddler, and the man who preserved Irish music by writing it down. Nightly traditional music sessions where anyone could pull up a chair and play. Guinness poured correctly. A community of musicians who treated it like home. Real Irish pub culture on Elston Avenue, not the green beer version.',
+          whyMissed: 'The sessions where skill mattered more than fame and anyone good enough could join the tune. The sense of tradition kept alive in a Chicago neighborhood, not performed for tourists downtown. The proof that Irish culture in this city runs deeper than dyeing the river green once a year.',
+          communityVoice: '"Chief O\'Neill\'s was the real thing — musicians playing for the love of it, not for tourists." — Irish American News',
+          lastAddress: '3471 N Elston Ave, Chicago',
+          source: 'Chicago Tribune, Irish Music Magazine',
+        },
+        {
+          id: 'chicago-lost-8',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'Café Ba-Ba-Reeba!',
+          neighborhood: 'Lincoln Park',
+          yearsOpen: '1985–2024',
+          description: 'The restaurant that introduced Chicago to Spanish tapas, sangria by the pitcher, and the radical concept of eating dinner at 10pm. For 39 years, it was where Lincoln Park went to celebrate, flirt, and discover that sharing small plates was better than ordering your own entree. Paella pans clanging, noise levels deafening, energy contagious. Eating here felt like vacation.',
+          whyMissed: 'The sangria that went down too easy. The sense of discovery when tapas were exotic instead of ubiquitous. The communal experience of sharing plates before literally every restaurant copied the model. It closed in 2024 after the building sold, because nothing gold can stay.',
+          communityVoice: '"Ba-Ba-Reeba made tapas a Chicago staple." — Chicago Magazine',
+          lastAddress: '2024 N Halsted St, Chicago',
+          source: 'Chicago Tribune, Eater Chicago',
+        },
+        {
+          id: 'chicago-lost-11',
+          type: 'lost-and-loved',
+          category: 'bookstore',
+          name: 'Borders Books (original location)',
+          neighborhood: 'Loop',
+          yearsOpen: '1985–2011',
+          description: 'Before the chain overexpanded and imploded, the Borders flagship at State and Madison was a three-story cathedral of books in the heart of downtown. Overstuffed reading chairs, a café with decent coffee, and the revolutionary idea that the Loop needed a place to browse and think, not just work and shop. When it closed in 2011, downtown lost one of its few third places.',
+          whyMissed: 'The ability to browse for hours without anyone bothering you. The chairs positioned for actual reading, not Instagram. The downtown meeting spot that wasn\'t a Starbucks. It represented an era when bookstores were civic anchors, not charming anachronisms.',
+          communityVoice: '"When Borders closed, the Loop became a little less livable." — Crain\'s Chicago Business',
+          lastAddress: '150 N State St, Chicago',
+          source: 'Chicago Tribune, Crain\'s Chicago',
+        },
+        {
+          id: 'chicago-lost-2',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: "Charlie Trotter's",
+          neighborhood: 'Lincoln Park',
+          yearsOpen: '1987–2012',
+          description: 'The restaurant that put Chicago fine dining on the international map and kept it there for 25 years. Charlie Trotter\'s 14-course tasting menus, obsessive perfectionism, and occasional kitchen terror earned two Michelin stars and trained a generation of Chicago chefs. Formal, ambitious, sometimes intimidating — it proved Chicago could cook with anybody.',
+          whyMissed: 'The relentless pursuit of excellence that bordered on mania. The wine pairings that could run $500. The knowledge that you were experiencing something world-class without leaving the city. It made Chicago a dining destination, not just a meat-and-potatoes town that happened to have restaurants.',
+          communityVoice: '"Charlie Trotter taught Chicago that fine dining could be rigorous, personal, and distinctly ours." — Chicago Magazine',
+          lastAddress: '816 W Armitage Ave, Chicago',
+          source: 'Chicago Tribune, Food & Wine',
+        },
+        {
+          id: 'chicago-lost-7',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'Frontera Fresco',
+          neighborhood: "O'Hare Airport",
+          yearsOpen: '2012–2020',
+          description: 'Rick Bayless brought tortas ahogadas, short rib tacos, and made-to-order guacamole to Terminal 3, proving airport food didn\'t have to be a sad simulation of eating. For eight years, travelers between flights could eat James Beard Award-winning Mexican food at an airport gate. It was the best airport restaurant in America, which damned it with faint praise — it was legitimately great, period.',
+          whyMissed: 'The guacamole made to order while you watched. The torta ahogada so good you considered missing your flight. The brief, shining moment when O\'Hare offered something other than Garrett popcorn and regret. It closed during the pandemic, and now Terminal 3 is back to being Terminal 3.',
+          communityVoice: '"Frontera Fresco made O\'Hare bearable." — Bon Appétit',
+          lastAddress: "Terminal 3, O'Hare International Airport, Chicago",
+          source: 'Chicago Tribune, Bon Appétit',
+        }
+      ],
+    }
+  ],
+}

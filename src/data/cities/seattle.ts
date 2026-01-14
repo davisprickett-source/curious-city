@@ -29,11 +29,11 @@ export const seattle: CityData = {
       size: 'banner',
     },
     {
-      id: 'curiosities',
+      id: 'sea-curiosities',
       type: 'section',
-      title: 'Seattle Curiosities',
-      teaser: 'Underground cities, mystery hijackers, and the troll under the bridge',
-      intro: 'Seattle sells itself as coffee, tech, and rain. But beneath the Pike Place fish-throwing and Space Needle tourism lies a stranger city — one that literally buried its past underground, invented some of America\'s weirdest traditions, and harbors unsolved mysteries that span decades. These are the stories that surprise even locals.',
+      title: 'The Rain City Archive',
+      teaser: 'Underground cities, vanishing hijackers, and the gum that won\'t quit',
+      intro: 'Seattle is a city built on top of a city—literally. We buried the mess of the 19th century and started over, but the weirdness keeps percolating to the surface in the form of Fremont Trolls and coffee hierarchies.',
       items: [
         {
           id: 'curiosity-1',
@@ -107,7 +107,7 @@ export const seattle: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'The Gum Wall is exactly what it sounds like, and way more disgusting',
-          body: 'In an alley next to Pike Place Market, both walls are plastered floor-to-ceiling with an estimated one million pieces of chewed gum. Every color. Every texture. Some formed into hearts and words. Most just blobs of masticated ABC gum (Already Been Chewed) from strangers\' mouths.\n\nIt started in the early 1990s when theater-goers waiting in line began sticking their gum to the bricks. Staff tried scraping it off. The gum kept coming. Eventually the Market gave up and declared it a tourist attraction in 1999.\n\nIn 2015, after two decades of accumulation, they finally steam-cleaned the walls. It took 130 hours to remove 2,350 pounds of gum. Within 48 hours, tourists had started a fresh layer.\n\nThe Gum Wall has been named one of the world\'s "germiest tourist attractions" and probably harbors enough bacteria to create new life forms. People love it anyway. It\'s absolutely vile, completely Seattle, and somehow everybody wants a photo.',
+          body: 'In an alley next to Pike Place Market, both walls are plastered floor-to-ceiling with an estimated one million pieces of chewed gum. Every color. Every texture. Some formed into hearts and words. Most just blobs of masticated ABC gum (Already Been Chewed) from strangers\' mouths.\n\nIt started in the early 1990s when theater-goers waiting in line began sticking their gum to the bricks. Staff tried scraping it off. The gum kept coming. Eventually the Market gave up and declared it a tourist attraction in 1999.\n\nIn 2015, after two decades of accumulation, they finally steam-cleaned the walls. It took 130 hours to remove 2,350 pounds of gum. Within 48 hours, tourists had started a fresh layer.\n\nThe Gum Wall has been named one\'s "germiest tourist attractions" and probably harbors enough bacteria to create new life forms. People love it anyway. It\'s absolutely vile, completely Seattle, and somehow everybody wants a photo.',
           sources: [
             {
               title: 'Seattle Times: Pike Place Gum Wall',
@@ -331,10 +331,10 @@ export const seattle: CityData = {
       ],
     },
     {
-      id: 'iconic-spots',
+      id: 'sea-iconic-spots',
       type: 'section',
-      title: 'Iconic Spots',
-      intro: 'These are Seattle\'s landmarks — the places every visitor photographs and every local takes for granted. But there\'s a reason they\'re famous, and some of them reward a second look.',
+      title: 'Emerald City Anchors',
+      intro: 'If you haven\'t seen the Pike Place fish fly or stood in the shadow of the Needle, did you even visit? These are the essential coordinates of Seattle.',
       items: [
         {
           id: 'iconic-1',
@@ -381,11 +381,10 @@ export const seattle: CityData = {
       ],
     },
     {
-      id: 'hidden-gems',
+      id: 'sea-hidden-gems',
       type: 'section',
-      title: 'Hidden Seattle',
-      teaser: 'Secret stairways, pinball museums, and the places even transplants don\'t know',
-      intro: 'Beyond the tourist trail lies another Seattle — hidden staircases climbing forested hillsides, bizarre museums, underground bars, and neighborhood secrets that reward the curious. This is where the city reveals itself to those who look.',
+      title: 'The City Beneath',
+      intro: 'Most people look up at the skyline; we prefer to look down. Seattle’s real soul is often found in subterranean passages, secret gardens, and bookstores that feel like time machines.',
       items: [
         {
           id: 'hidden-gems-underground',
@@ -592,18 +591,18 @@ export const seattle: CityData = {
       ],
     },
     {
-      id: 'best-bars',
+      id: 'sea-best-bars',
       type: 'best-of',
       category: 'bars',
-      title: 'Best Bars in Seattle',
-      intro: 'Seattle\'s bar scene spans from craft cocktail temples to century-old dives. The city that spawned Starbucks also perfected the speakeasy revival. These are the bars where the bartenders know their stuff and the atmosphere is worth seeking out.',
+      title: 'Watering Holes (Literally)',
+      intro: 'In a city where it rains 150 days a year, the "watering hole" is a redundant term. From historic dives in Pioneer Square to high-concept cocktail dens in Ballard, these are the places where we dry off.',
       spots: [
         {
           name: 'Canon',
           neighborhood: 'Capitol Hill',
-          vibe: 'One of the world\'s great whiskey bars. Over 4,000 bottles. Low lighting, leather, and bartenders who can navigate the collection like librarians.',
-          order: 'Tell them what you like. They have things you\'ve never heard of and can calibrate to any palate.',
-          why: 'Canon has been named one of the best bars in the world multiple times, and it\'s not hype. The whiskey collection is staggering — rare Japanese bottles, antique American bourbons, obscure Scotches. But what makes Canon special is the hospitality. The bartenders don\'t gatekeep. They want to find you something perfect. The cocktail menu changes seasonally and includes custom creations that push boundaries. The space is intimate, the vibe is serious-but-not-stuffy, and the experience is worth the premium prices.',
+          vibe: 'The Fort Knox of fermented grain. A global library of spirits with a technical obsession.',
+          order: 'Navigate the Captain\'s List if you\'re feeling wealthy, or tell the bartender your favorite flavor profile and let the "librarian" work.',
+          why: 'Canon is essentially the Fort Knox of fermented grain. With a collection surpassing 4,000 bottles, it is less of a bar and more of a global library of spirits, curated with a level of detail that borders on the academic. While the "Captain’s List" contains rare, pre-Prohibition liquids that cost more than a used car, the approachable hospitality is what keeps it from feeling like a stuffy archive. The bartenders are technicians who can navigate the massive shelving system with the grace of librarians, translating vague flavor profiles into liquid epiphanies. It is the definitive pilgrimage site for anyone who takes the history of the cocktail as seriously as the drink itself.',
           address: '928 12th Ave, Seattle, WA 98122',
           coordinates: { lat: 47.6101, lng: -122.3166 },
           hours: '5pm-2am daily',
@@ -715,18 +714,18 @@ export const seattle: CityData = {
       size: 'banner',
     },
     {
-      id: 'best-coffee-shops',
+      id: 'sea-best-coffee-shops',
       type: 'best-of',
       category: 'coffee-shops',
-      title: 'Best Coffee in Seattle',
-      intro: 'Seattle invented modern American coffee culture. Starbucks started here, but so did the independent roaster revolution that made "third wave" a movement. These shops represent the best of what the city has built over 50 years of obsession.',
+      title: 'The Extraction Capital',
+      intro: 'We didn\'t invent coffee, but we certainly turned it into a competitive sport. These aren\'t just shops; they are the high-church temples of the bean, where extraction is a theology.',
       spots: [
         {
           name: 'Espresso Vivace',
           neighborhood: 'Capitol Hill',
-          vibe: 'The espresso purists. David Schomer literally wrote the book on espresso technique.',
-          order: 'A traditional cappuccino. Watch them pour. The latte art is museum-quality.',
-          why: 'David Schomer founded Vivace in 1988 and spent the next three decades perfecting espresso extraction. He published "Espresso Coffee: Professional Techniques" and trained a generation of Seattle baristas. The Brix location on Capitol Hill\'s Broadway is the flagship — a standing-room espresso bar where you can watch the craft at its highest level. The caffe nico (espresso with a thin layer of cream) is a Schomer invention. This is coffee as serious discipline.',
+          vibe: 'Scientific espresso purists. The birthplace of modern latte art and the technical extraction revolution.',
+          order: 'A traditional caffe nico or a straight espresso. Watch the steam — it\'s a masterclass.',
+          why: 'David Schomer didn\'t just open an espresso bar; he founded a scientific discipline. Since 1988, Schomer has been the obsessive architect of the "Northern Italian" roast in Seattle, famously pioneering the use of PID controllers to maintain the precise water temperature required for a perfect extraction. Vivace is where the concept of museum-quality latte art was perfected, but the focus remains on the chemistry of the steam and the density of the crema. A shot of espresso here isn\'t a drink; it is the result of three decades of technical refinement, served in a space that treats coffee with a reverence usually reserved for high-energy physics.',
           address: '532 Broadway E, Seattle, WA 98102',
           coordinates: { lat: 47.6236, lng: -122.3209 },
           hours: '6am-11pm daily',
@@ -850,9 +849,9 @@ export const seattle: CityData = {
         {
           name: 'Musang',
           neighborhood: 'Beacon Hill',
-          vibe: 'Filipino cuisine elevated without losing its soul. James Beard-nominated and worth every bit of the hype.',
-          order: 'The kare-kare (oxtail in peanut sauce) is the signature. The sisig and longanisa are perfect. Trust the servers for Filipino coffee pairings.',
-          why: 'Melissa Miranda opened Musang in 2019 to serve the Filipino food she grew up eating — but in a restaurant setting that took the cuisine as seriously as any fine dining establishment. The result is transformative: familiar dishes made with meticulous technique and the best local ingredients. The kare-kare isn\'t just good Filipino food; it\'s one of the best dishes in Seattle, period. The space is warm, the hospitality is genuine, and reservations are essential.',
+          vibe: 'Transformative Filipino heritage. A community anchor that redefined Beacon Hill dining.',
+          order: 'The Kare-Kare (oxtail in peanut sauce) is a structural requirement for your visit. The Sisig is a close second.',
+          why: 'Musang is a transformative act of cultural reclamation. Chef Melissa Miranda has taken the Filipino "lutong bahay" (home cooking) of her childhood and elevated it into a Beacon Hill powerhouse that has redefined Seattle’s culinary landscape. This is not "fusion"; it is a meticulous, técnica-driven exploration of heritage that honors the complexity of dishes like Kare-Kare and Sisig while using the best bounty of the Pacific Northwest. The restaurant functions as a community anchor, proving that the most profound fine dining often happens in a space that feels like a family dinner party, where every plate of oxtail is a narrative of resilience and joy.',
           address: '2524 Beacon Ave S, Seattle, WA 98144',
           coordinates: { lat: 47.5813, lng: -122.3129 },
           hours: '5pm-10pm Wed-Sun',

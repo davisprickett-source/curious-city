@@ -92,9 +92,8 @@ export function UnifiedNav({
 
   return (
     <nav
-      className={`${positionClass} z-50 bg-white backdrop-blur-md border-b border-neutral-100 ui-sans transition-transform duration-300 ${
-        !useFixedPosition && !isVisible ? '-translate-y-full' : ''
-      }`}
+      className={`${positionClass} z-50 bg-white backdrop-blur-md border-b border-neutral-100 ui-sans transition-transform duration-300 ${!useFixedPosition && !isVisible ? '-translate-y-full' : ''
+        }`}
     >
       <div className="container-page">
         {/* Desktop Navigation */}
@@ -127,11 +126,10 @@ export function UnifiedNav({
               <Link
                 key={section.id}
                 href={href}
-                className={`px-3 py-2 text-base font-medium rounded-lg transition-colors ${
-                  isActive
-                    ? 'bg-accent-50 text-accent-700'
-                    : 'text-neutral-700 hover:text-accent-700 hover:bg-accent-50'
-                }`}
+                className={`px-3 py-2 text-base font-medium rounded-lg transition-colors ${isActive
+                  ? 'bg-accent-50 text-accent-700'
+                  : 'text-neutral-700 hover:text-accent-700 hover:bg-accent-50'
+                  }`}
               >
                 {section.label}
               </Link>

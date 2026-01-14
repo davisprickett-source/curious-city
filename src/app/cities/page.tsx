@@ -39,74 +39,76 @@ export default async function CitiesPage() {
     <>
       <UnifiedNav />
 
-      <main className="flex-1 bg-white">
-        {/* Hero Header */}
-        <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
-          <div className="container-page py-12 md:py-16">
-            <div className="max-w-4xl">
-              <div className="eyebrow text-accent-400 mb-3">Explore</div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                All Cities
-              </h1>
-              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
-                Local stories, hidden gems, and untold history from cities across America.
-              </p>
+      <div className="city-page-wrapper">
+        <main className="flex-1 bg-white">
+          {/* Hero Header */}
+          <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
+            <div className="container-page py-12 md:py-16">
+              <div className="max-w-4xl">
+                <div className="eyebrow text-accent-400 mb-3">Explore</div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                  All Cities
+                </h1>
+                <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
+                  Local stories, hidden gems, and untold history from cities across America.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Cities Grid */}
-        <div className="container-page py-10 md:py-14">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cities.map((city) => {
-              const skylineImage = getSkylineImage(city.slug)
+          {/* Cities Grid */}
+          <div className="container-page py-10 md:py-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cities.map((city) => {
+                const skylineImage = getSkylineImage(city.slug)
 
-              return (
-                <Link
-                  key={city.slug}
-                  href={`/${city.slug}`}
-                  className="group block"
-                >
-                  <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                    {/* Background */}
-                    <div className="absolute inset-0">
-                      <Image
-                        src={skylineImage}
-                        alt={`${city.name} skyline`}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/50 to-neutral-900/20" />
-                    </div>
+                return (
+                  <Link
+                    key={city.slug}
+                    href={`/${city.slug}`}
+                    className="group block"
+                  >
+                    <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                      {/* Background */}
+                      <div className="absolute inset-0">
+                        <Image
+                          src={skylineImage}
+                          alt={`${city.name} skyline`}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/50 to-neutral-900/20" />
+                      </div>
 
-                    {/* Content */}
-                    <div className="relative p-6 min-h-[200px] flex flex-col justify-end">
-                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                        {city.name}
-                      </h2>
+                      {/* Content */}
+                      <div className="relative p-6 min-h-[200px] flex flex-col justify-end">
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                          {city.name}
+                        </h2>
 
-                      {city.tagline && (
-                        <p className="text-sm text-white/80 leading-relaxed line-clamp-2 mb-3">
-                          {city.tagline}
-                        </p>
-                      )}
+                        {city.tagline && (
+                          <p className="text-sm text-white/80 leading-relaxed line-clamp-2 mb-3">
+                            {city.tagline}
+                          </p>
+                        )}
 
-                      {/* Explore link */}
-                      <div className="flex items-center text-white/70 group-hover:text-white transition-colors">
-                        <span className="text-sm font-medium">Explore</span>
-                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
+                        {/* Explore link */}
+                        <div className="flex items-center text-white/70 group-hover:text-white transition-colors">
+                          <span className="text-sm font-medium">Explore</span>
+                          <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              )
-            })}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
 
       <Footer />
     </>

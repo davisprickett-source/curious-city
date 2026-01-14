@@ -177,8 +177,13 @@ export async function getRelatedArticles(
   const sameCityArticles = await getArticlesForCity(article.citySlug)
   const otherArticles = await getAllArticles({ limit: 20 })
 
+  // Exclude both premium and non-premium versions of the current article
+  const baseSlug = article.slug.replace('-premium', '')
   const allArticles = [...sameCityArticles, ...otherArticles]
-    .filter((a) => a.slug !== article.slug) // Exclude current article
+    .filter((a) => {
+      const aBaseSlug = a.slug.replace('-premium', '')
+      return aBaseSlug !== baseSlug
+    })
 
   // Score articles by relevance
   const scored = allArticles.map((a) => ({

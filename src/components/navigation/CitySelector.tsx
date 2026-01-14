@@ -34,8 +34,9 @@ function CityItem({
 }) {
   const [isHovered, setIsHovered] = useState(false)
 
-  // Reverse stagger for exit animation (last items exit first, like closing a fan)
-  const exitDelay = isClosing ? (totalItems - index - 1) * 0.025 : 0
+  // Stagger delays - slightly slower as requested
+  const enterDelay = index * 0.05
+  const exitDelay = isClosing ? (totalItems - index - 1) * 0.04 : 0
 
   return (
     <motion.div
@@ -50,20 +51,26 @@ function CityItem({
         x: -16,
         scale: 0.92,
         transition: {
-          duration: 0.18,
+          duration: 0.2,
           delay: exitDelay,
           ease: [0.4, 0, 1, 1]
         }
       }}
       transition={{
-        duration: 0.25,
-        delay: index * 0.03,
+        duration: 0.3,
+        delay: enterDelay,
         ease: [0.16, 1, 0.3, 1]
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="relative"
     >
+      {/* Background piece that staggers with the item */}
+      <div className={`
+        absolute inset-0 bg-white border-x border-neutral-100/80 -z-10
+        ${index === 0 ? 'rounded-t-xl border-t pt-1' : ''}
+        ${index === totalItems - 1 ? 'rounded-b-xl border-b pb-1' : ''}
+      `} />
       {/* Animated highlight background - fast transition for responsive hover */}
       <AnimatePresence>
         {(isHovered || isActive) && (
@@ -210,21 +217,22 @@ function CitySelectorContent({
             exit={{
               opacity: 0,
               y: -8,
-              scale: 0.96,
+              scale: 0.98,
               transition: {
-                duration: 0.2,
-                delay: (cities.length - 1) * 0.025 + 0.18, // Wait for all items to exit (longest delay + duration)
-                ease: [0.4, 0, 1, 1]
+                duration: 0.3,
+                // Wait for all items to start their exit, but don't hold the background fade too long
+                delay: (cities.length - 1) * 0.04,
+                ease: "easeIn"
               }
             }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute left-0 top-full pt-1 w-56 z-50"
+            className="absolute left-0 top-full pt-1 w-56 z-50 pointer-events-auto"
           >
             <motion.div
-              className="py-2 bg-white rounded-xl shadow-xl border border-neutral-100 max-h-[70vh] overflow-y-auto overflow-x-hidden"
-              initial={{ boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-              animate={{ boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }}
-              transition={{ duration: 0.3 }}
+              className="rounded-xl shadow-2xl max-h-[70vh] overflow-y-auto overflow-x-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.2 }}
             >
               {cities.map((city, index) => (
                 <CityItem

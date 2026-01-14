@@ -1,1701 +1,1752 @@
 import { CityData } from '@/types/content'
 
 export const portland: CityData = {
-    slug: 'portland',
-    name: 'Portland',
-    tagline: 'Weird, green, and figuring itself out',
-    content: [
-      {
-        id: 'intro-text',
-        type: 'text',
-        content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it. Here\'s what we\'re curious about.',
-      },
-      {
-        id: 'featured-card',
-        type: 'card',
-        title: 'The Dream of the Nineties',
-        description: 'A city that invented a lifestyle and then got priced out of it.',
-        meta: 'Essay',
-        variant: 'featured',
-        href: '/portland/essay/the-dream-of-the-nineties',
-      },
-      {
-        id: 'ad-1',
-        type: 'ad',
-        size: 'banner',
-      },
-      {
-        id: 'this-week',
-        type: 'card-list',
-        title: 'This Week',
-        cards: [
-          {
-            title: 'Forest Park: Urban Wilderness Guide',
-            description: 'Over 80 miles of trails minutes from downtown.',
-            meta: 'Guide',
-            href: '/portland/forest-park',
+  slug: 'portland',
+  name: 'Portland',
+  tagline: 'Weird, green, and figuring itself out',
+  content: [
+    {
+      id: 'intro-text',
+      type: 'text',
+      content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it. Here\'s what we\'re curious about.',
+    },
+    {
+      id: 'featured-card',
+      type: 'card',
+      title: 'The Dream of the Nineties',
+      description: 'A city that invented a lifestyle and then got priced out of it.',
+      meta: 'Essay',
+      variant: 'featured',
+      href: '/portland/essay/the-dream-of-the-nineties',
+    },
+    {
+      id: 'ad-1',
+      type: 'ad',
+      size: 'banner',
+    },
+    {
+      id: 'this-week',
+      type: 'card-list',
+      title: 'This Week',
+      cards: [
+        {
+          title: 'Forest Park: Urban Wilderness Guide',
+          description: 'Over 80 miles of trails minutes from downtown.',
+          meta: 'Guide',
+          href: '/portland/forest-park',
+        },
+        {
+          title: 'The Downtown Debate',
+          description: 'What happened to Portland\'s core and what\'s next.',
+          meta: 'Feature',
+          href: '/portland/downtown-future',
+        },
+        {
+          title: 'Best Coffee Roasters',
+          description: 'Portland takes coffee seriously. Here\'s where to start.',
+          meta: 'List',
+          variant: 'compact',
+          href: '/portland/coffee-roasters',
+        }
+      ],
+    },
+    {
+      id: 'ad-2',
+      type: 'ad',
+      size: 'rectangle',
+    },
+    {
+      id: 'pdx-curiosities',
+      type: 'section',
+      title: 'Keep it Weird Archive',
+      teaser: 'The world\'s smallest park, the horse rings of the 19th century, and the city that refused to stay put',
+      intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in our curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
+      items: [
+        {
+          id: 'pdx-curiosity-4',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'The world\'s smallest park is 2 feet wide and has a leprechaun (UPDATE: Japan stole the title)',
+          body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
+          year: '1948',
+          image: {
+            src: '/portland/curiosities/Mill-Ends-Park.png',
+            alt: 'Mill Ends Park, the world\'s smallest park in Portland',
           },
-          {
-            title: 'The Downtown Debate',
-            description: 'What happened to Portland\'s core and what\'s next.',
-            meta: 'Feature',
-            href: '/portland/downtown-future',
+          source: 'Guinness World Records',
+          location: {
+            name: 'SW Naito Parkway',
+            stillExists: true,
           },
-          {
-            title: 'Best Coffee Roasters',
-            description: 'Portland takes coffee seriously. Here\'s where to start.',
-            meta: 'List',
-            variant: 'compact',
-            href: '/portland/coffee-roasters',
-          }
-        ],
-      },
-      {
-        id: 'ad-2',
-        type: 'ad',
-        size: 'rectangle',
-      },
-      {
-        id: 'curiosities',
-        type: 'section',
-        title: 'Portland Curiosities',
-        teaser: 'Black exclusion laws, Shanghai tunnels, and the dark roots of weird Portland',
-        intro: 'Keep Portland Weird started as a plea to shop local. But the weird goes deeper—into Shanghai tunnels where men were kidnapped and sold to ship captains, to a state founded with explicit Black exclusion laws, to a harbor where a warship once shelled the city by accident. Portland\'s reputation for quirk sits atop a foundation considerably darker than the coffee.',
-        items: [
-          {
-            id: 'pdx-curiosity-4',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'The world\'s smallest park is 2 feet wide and has a leprechaun (UPDATE: Japan stole the title)',
-            body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
-            year: '1948',
-            image: {
-              src: '/portland/curiosities/mill-ends-park.png',
-              alt: 'Mill Ends Park, the world\'s smallest park in Portland',
-            },
-            source: 'Guinness World Records',
-            location: {
-              name: 'SW Naito Parkway',
-              stillExists: true,
-            },
+        },
+        {
+          id: 'pdx-curiosity-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'pdx-curiosity-1',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Oregon entered the Union with a whites-only clause in its constitution',
+          body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
+          year: '1857',
+          image: {
+            src: '/portland/curiosities/black-exclusion.png',
+            alt: 'Oregon black exclusion laws historical document',
           },
-          {
-            id: 'pdx-curiosity-ad-1',
-            type: 'ad',
-            size: 'banner',
+          source: 'Oregon Historical Society',
+          location: {
+            name: 'State of Oregon',
+            stillExists: true,
           },
-          {
-            id: 'pdx-curiosity-1',
-            type: 'curiosity',
-            category: 'history',
-            title: 'Oregon entered the Union with a whites-only clause in its constitution',
-            body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
-            year: '1857',
-            image: {
-              src: '/portland/curiosities/black-exclusion.png',
-              alt: 'Oregon black exclusion laws historical document',
-            },
-            source: 'Oregon Historical Society',
-            location: {
-              name: 'State of Oregon',
-              stillExists: true,
-            },
+        },
+        {
+          id: 'pdx-curiosity-7',
+          type: 'curiosity',
+          category: 'law',
+          title: 'Pumping your own gas was a crime in Oregon until 2023',
+          body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in August 2023 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed. New Jersey remains the only state where you still can\'t pump your own gas.',
+          year: '2023',
+          image: {
+            src: '/portland/curiosities/Portland-gas-service.png',
+            alt: 'Oregon gas station attendant filling car',
           },
-          {
-            id: 'pdx-curiosity-7',
-            type: 'curiosity',
-            category: 'law',
-            title: 'Pumping your own gas was a crime in Oregon until 2023',
-            body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in August 2023 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed. New Jersey remains the only state where you still can\'t pump your own gas.',
-            year: '2023',
-            image: {
-              src: '/portland/curiosities/Portland-gas-service.png',
-              alt: 'Oregon gas station attendant filling car',
-            },
-            source: 'Oregon Legislature',
-            location: {
-              name: 'State of Oregon',
-              stillExists: true,
-            },
+          source: 'Oregon Legislature',
+          location: {
+            name: 'State of Oregon',
+            stillExists: true,
           },
-          {
-            id: 'pdx-curiosity-6',
-            type: 'curiosity',
-            category: 'history',
-            title: 'The Vanport Flood erased Oregon\'s second-largest city in 35 minutes',
-            body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
-            year: '1948',
-            image: {
-              src: '/portland/curiosities/portland-flood.png',
-              alt: 'Vanport flood destruction in 1948',
-            },
-            source: 'Oregon Historical Society',
-            location: {
-              name: 'Vanport (now Delta Park)',
-              stillExists: false,
-            },
+        },
+        {
+          id: 'pdx-curiosity-6',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The Vanport Flood erased Oregon\'s second-largest city in 35 minutes',
+          body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
+          year: '1948',
+          image: {
+            src: '/portland/curiosities/portland-flood.png',
+            alt: 'Vanport flood destruction in 1948',
           },
-          {
-            id: 'pdx-curiosity-ad-2',
-            type: 'ad',
-            size: 'rectangle',
+          source: 'Oregon Historical Society',
+          location: {
+            name: 'Vanport (now Delta Park)',
+            stillExists: false,
           },
-          {
-            id: 'pdx-curiosity-2',
-            type: 'curiosity',
-            category: 'underground',
-            title: 'The Shanghai Tunnels might be Portland\'s most profitable myth',
-            body: 'The story goes like this: beneath Old Town, a network of tunnels connected bars and hotels to the waterfront, where unsuspecting men were drugged, dragged underground, and sold to ship captains desperate for crews—a practice called "shanghaiing." The tunnels exist. Shanghaiing definitely happened in Portland. But did the tunnels get used for kidnapping? Historians are skeptical. Most evidence suggests they were just for moving cargo between basements and the docks. Tour companies, however, have built an entire industry on the dramatic version. Truth is boring. Kidnapping tunnels sell tickets.',
-            image: {
-              src: '/portland/curiosities/shanghai-tunnels.png',
-              alt: 'Underground Shanghai tunnels in Portland Old Town',
-            },
-            source: 'Oregon Encyclopedia',
-            location: {
-              name: 'Old Town/Chinatown',
-              stillExists: true,
-            },
+        },
+        {
+          id: 'pdx-curiosity-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'pdx-curiosity-2',
+          type: 'curiosity',
+          category: 'underground',
+          title: 'The Shanghai Tunnels might be Portland\'s most profitable myth',
+          body: 'The story goes like this: beneath Old Town, a network of tunnels connected bars and hotels to the waterfront, where unsuspecting men were drugged, dragged underground, and sold to ship captains desperate for crews—a practice called "shanghaiing." The tunnels exist. Shanghaiing definitely happened in Portland. But did the tunnels get used for kidnapping? Historians are skeptical. Most evidence suggests they were just for moving cargo between basements and the docks. Tour companies, however, have built an entire industry on the dramatic version. Truth is boring. Kidnapping tunnels sell tickets.',
+          image: {
+            src: '/portland/curiosities/shanghai-tunnels.png',
+            alt: 'Underground Shanghai tunnels in Portland Old Town',
           },
-          {
-            id: 'pdx-curiosity-10',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Portland\'s name was decided by a coin flip',
-            body: 'In 1845, two New England transplants—Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine—founded a settlement on the Willamette River and immediately disagreed on what to call it. Both wanted to name it after their respective hometowns. Neither would budge. So they flipped a coin. Pettygrove won. Portland, Oregon was born. Had the copper penny landed differently, you\'d be reading about Boston, Oregon right now—a timeline too cursed to contemplate. The "Portland Penny" is on display at the Oregon Historical Society, where it continues to represent the city\'s entire identity hinging on a 50/50 chance.',
-            year: '1845',
-            image: {
-              src: '/portland/curiosities/coin-flip.png',
-              alt: 'The Portland Penny that decided the city\'s name',
-            },
-            source: 'Oregon Historical Society',
+          source: 'Oregon Encyclopedia',
+          location: {
+            name: 'Old Town/Chinatown',
+            stillExists: true,
           },
-          {
-            id: 'pdx-curiosity-12',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Portland invented craft beer before "craft beer" existed',
-            body: 'In 1984, Widmer Brothers and BridgePort Brewing opened in Portland, years before anyone called it "craft beer." They were just making beer that didn\'t taste like water. The term wouldn\'t be coined for another decade. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, running since 1988, is one of the largest outdoor craft beer events in the country. What started as a handful of weirdos brewing in warehouses became an entire economic sector. Portland didn\'t follow the craft beer trend. It created it.',
-            year: '1984',
-            image: {
-              src: '/portland/curiosities/beer.png',
-              alt: 'Portland craft beer scene with local breweries',
-            },
-            source: 'Oregon Brewers Guild',
+        },
+        {
+          id: 'pdx-curiosity-10',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portland\'s name was decided by a coin flip',
+          body: 'In 1845, two New England transplants—Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine—founded a settlement on the Willamette River and immediately disagreed on what to call it. Both wanted to name it after their respective hometowns. Neither would budge. So they flipped a coin. Pettygrove won. Portland, Oregon was born. Had the copper penny landed differently, you\'d be reading about Boston, Oregon right now—a timeline too cursed to contemplate. The "Portland Penny" is on display at the Oregon Historical Society, where it continues to represent the city\'s entire identity hinging on a 50/50 chance.',
+          year: '1845',
+          image: {
+            src: '/portland/curiosities/coin-flip.png',
+            alt: 'The Portland Penny that decided the city\'s name',
           },
-          {
-            id: 'pdx-curiosity-13',
-            type: 'curiosity',
-            category: 'history',
-            title: 'Portland ripped out a freeway and replaced it with a park',
-            body: 'In 1974, Portland did something American cities didn\'t do: it demolished Harbor Drive, a freeway running along the Willamette River, and replaced it with Tom McCall Waterfront Park. It was one of the first urban freeway removals in the country—a radical rejection of car-centric planning when highways were still considered progress. The 36-acre park became Portland\'s civic front yard, hosting festivals and serving as the city\'s riverfront living room. Other cities studied Portland\'s model. Some even copied it. Decades later, it remains one of the best decisions the city ever made.',
-            year: '1974',
-            images: [
-              {
-                src: '/portland/curiosities/highway-park-1.png',
-                alt: 'Harbor Drive freeway before demolition',
-              },
-              {
-                src: '/portland/curiosities/highway-park-2.png',
-                alt: 'Tom McCall Waterfront Park after freeway removal',
-              }
-            ],
-            source: 'Portland Parks & Recreation',
-            location: {
-              name: 'Tom McCall Waterfront Park',
-              stillExists: true,
-            },
+          source: 'Oregon Historical Society',
+        },
+        {
+          id: 'pdx-curiosity-12',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portland invented craft beer before "craft beer" existed',
+          body: 'In 1984, Widmer Brothers and BridgePort Brewing opened in Portland, years before anyone called it "craft beer." They were just making beer that didn\'t taste like water. The term wouldn\'t be coined for another decade. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, running since 1988, is one of the largest outdoor craft beer events in the country. What started as a handful of weirdos brewing in warehouses became an entire economic sector. Portland didn\'t follow the craft beer trend. It created it.',
+          year: '1984',
+          image: {
+            src: '/portland/curiosities/beer.png',
+            alt: 'Portland craft beer scene with local breweries',
           },
-          {
-            id: 'pdx-curiosity-5',
-            type: 'curiosity',
-            category: 'science',
-            title: 'Portland gets less rain than New York, Houston, or Miami',
-            body: 'Portland averages 36 inches of rain per year. New York gets 46 inches. Houston gets 50. Miami gets 62. The Pacific Northwest\'s rainy reputation isn\'t about quantity—it\'s about relentlessness. Portland doesn\'t dump rain all at once like other cities. It drizzles. Constantly. From October to June, the sky stays gray and the rain never quite stops, but never quite commits either. It\'s meteorological psychological warfare. Real Portlanders don\'t carry umbrellas. They wear layers, embrace dampness, and develop an adversarial relationship with the sun.',
-            image: {
-              src: '/portland/curiosities/Portland-Rain.png',
-              alt: 'Rainy day in Portland with people without umbrellas',
+          source: 'Oregon Brewers Guild',
+        },
+        {
+          id: 'pdx-curiosity-13',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Portland ripped out a freeway and replaced it with a park',
+          body: 'In 1974, Portland did something American cities didn\'t do: it demolished Harbor Drive, a freeway running along the Willamette River, and replaced it with Tom McCall Waterfront Park. It was one of the first urban freeway removals in the country—a radical rejection of car-centric planning when highways were still considered progress. The 36-acre park became Portland\'s civic front yard, hosting festivals and serving as the city\'s riverfront living room. Other cities studied Portland\'s model. Some even copied it. Decades later, it remains one of the best decisions the city ever made.',
+          year: '1974',
+          images: [
+            {
+              src: '/portland/curiosities/highway-park-1.png',
+              alt: 'Harbor Drive freeway before demolition',
             },
-            source: 'National Weather Service',
+            {
+              src: '/portland/curiosities/highway-park-2.png',
+              alt: 'Tom McCall Waterfront Park after freeway removal',
+            }
+          ],
+          source: 'Portland Parks & Recreation',
+          location: {
+            name: 'Tom McCall Waterfront Park',
+            stillExists: true,
           },
-          {
-            id: 'pdx-curiosity-11',
-            type: 'curiosity',
-            category: 'legend',
-            title: 'A 10,000-year-old mastodon was butchered near Portland',
-            body: 'In 1962, a farmer plowing his field near Tualatin hit something massive: mastodon bones. The skeleton dated to roughly 10,000 years ago, at the tail end of the last Ice Age. But the real discovery was the cut marks—clear evidence of human butchering. Someone had carved meat from this animal. It proved that humans and megafauna coexisted in the Portland area for thousands of years. The Tualatin Mastodon now resides at the Oregon Museum of Science and Industry, a reminder that this land was occupied long before coin flips and city planning.',
-            year: '1962',
-            image: {
-              src: '/portland/curiosities/bones.png',
-              alt: 'Tualatin Mastodon skeleton at OMSI',
-            },
-            source: 'Oregon Museum of Science and Industry',
-            location: {
-              name: 'OMSI',
-              stillExists: true,
-            },
+        },
+        {
+          id: 'pdx-curiosity-5',
+          type: 'curiosity',
+          category: 'science',
+          title: 'Portland gets less rain than New York, Houston, or Miami',
+          body: 'Portland averages 36 inches of rain per year. New York gets 46 inches. Houston gets 50. Miami gets 62. The Pacific Northwest\'s rainy reputation isn\'t about quantity—it\'s about relentlessness. Portland doesn\'t dump rain all at once like other cities. It drizzles. Constantly. From October to June, the sky stays gray and the rain never quite stops, but never quite commits either. It\'s meteorological psychological warfare. Real Portlanders don\'t carry umbrellas. They wear layers, embrace dampness, and develop an adversarial relationship with the sun.',
+          image: {
+            src: '/portland/curiosities/Portland-Rain.png',
+            alt: 'Rainy day in Portland with people without umbrellas',
           },
-          {
-            id: 'pdx-curiosity-8',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Powell\'s City of Books is so big they give you a map',
-            body: 'Powell\'s occupies an entire city block—68,000 square feet holding over a million books. The rooms are color-coded. New and used books share the same shelves. They hand you a map at the entrance because people genuinely get lost. For a generation of Portlanders, Powell\'s wasn\'t just a bookstore—it was a third place, a refuge, a reason to move here. You could spend an entire rainy afternoon wandering the stacks and leave with six books you didn\'t know you needed. It\'s the world\'s largest independent bookstore, and in an era of Amazon dominance, the fact that it still exists feels like a minor miracle.',
-            images: [
-              {
-                src: '/portland/curiosities/powells-books-1.png',
-                alt: 'Powell\'s City of Books exterior on full city block',
-              },
-              {
-                src: '/portland/curiosities/powells-books-2.png',
-                alt: 'Interior of Powell\'s Books with color-coded rooms',
-              }
-            ],
-            source: 'Powell\'s Books',
-            location: {
-              name: 'Powell\'s City of Books',
-              stillExists: true,
-            },
+          source: 'National Weather Service',
+        },
+        {
+          id: 'pdx-curiosity-11',
+          type: 'curiosity',
+          category: 'legend',
+          title: 'A 10,000-year-old mastodon was butchered near Portland',
+          body: 'In 1962, a farmer plowing his field near Tualatin hit something massive: mastodon bones. The skeleton dated to roughly 10,000 years ago, at the tail end of the last Ice Age. But the real discovery was the cut marks—clear evidence of human butchering. Someone had carved meat from this animal. It proved that humans and megafauna coexisted in the Portland area for thousands of years. The Tualatin Mastodon now resides at the Oregon Museum of Science and Industry, a reminder that this land was occupied long before coin flips and city planning.',
+          year: '1962',
+          image: {
+            src: '/portland/curiosities/bones.png',
+            alt: 'Tualatin Mastodon skeleton at OMSI',
           },
-          {
-            id: 'pdx-curiosity-15',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Portland\'s music scene has always punched absurdly above its weight',
-            body: 'For a mid-sized city in the corner of the country, Portland has produced a ridiculous amount of iconic music: Elliott Smith, The Decemberists, Modest Mouse, Sleater-Kinney, Everclear, Pink Martini, The Shins. The Crystal Ballroom has hosted shows since 1914. The all-ages venue scene in the \'90s and 2000s gave an entire generation of teenagers a place to see live music and start bands. K Records in nearby Olympia created a Pacific Northwest DIY ethos that spread nationally. It wasn\'t an accident. It was cheap rent, a thriving arts culture, and a city that left its weirdos alone long enough to create something.',
-            image: {
-              src: '/portland/curiosities/music-scene.png',
-              alt: 'Portland music venue scene and indie rock history',
-            },
-            source: 'Oregon Music Hall of Fame',
+          source: 'Oregon Museum of Science and Industry',
+          location: {
+            name: 'OMSI',
+            stillExists: true,
           },
-          {
-            id: 'pdx-curiosity-9',
-            type: 'curiosity',
-            category: 'nature',
-            title: 'Forest Park is one of the largest urban forests in the country',
-            body: 'Forest Park covers 5,200 acres with over 80 miles of trails—one of the largest urban forests in the United States. Within minutes of downtown, you can be surrounded by old-growth Douglas firs, encounter elk, and completely lose sight of the city. The Wildwood Trail stretches 30 miles through the canopy. It\'s the kind of resource that defines a city\'s character—and that locals take entirely for granted until they move somewhere else and realize most cities don\'t have a temperate rainforest within city limits.',
-            images: [
-              {
-                src: '/portland/curiosities/park-1.png',
-                alt: 'Forest Park trail through old growth Douglas firs',
-              },
-              {
-                src: '/portland/curiosities/park-2.png',
-                alt: 'Wildwood Trail winding through Forest Park',
-              },
-              {
-                src: '/portland/curiosities/park-3.png',
-                alt: 'Forest Park urban forest canopy',
-              }
-            ],
-            source: 'Forest Park Conservancy',
-            location: {
-              name: 'Forest Park',
-              stillExists: true,
+        },
+        {
+          id: 'pdx-curiosity-8',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Powell\'s City of Books is so big they give you a map',
+          body: 'Powell\'s occupies an entire city block—68,000 square feet holding over a million books. The rooms are color-coded. New and used books share the same shelves. They hand you a map at the entrance because people genuinely get lost. For a generation of Portlanders, Powell\'s wasn\'t just a bookstore—it was a third place, a refuge, a reason to move here. You could spend an entire rainy afternoon wandering the stacks and leave with six books you didn\'t know you needed. It\'s the world\'s largest independent bookstore, and in an era of Amazon dominance, the fact that it still exists feels like a minor miracle.',
+          images: [
+            {
+              src: '/portland/curiosities/powells-books-1.png',
+              alt: 'Powell\'s City of Books exterior on full city block',
             },
-          },
-          {
-            id: 'pdx-curiosity-14',
-            type: 'curiosity',
-            category: 'culture',
-            title: 'Voodoo Doughnut used to be weird—now it\'s just a tourist trap',
-            body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was a genuinely strange idea. They sold a Pepto-Bismol doughnut and a NyQuil-frosted doughnut before the FDA shut that down. It was weird in the way Portland used to be weird—unselfconscious, a little gross, and doing it for the bit. Then it got famous. Now there are locations in multiple states, the lines are full of tourists with selfie sticks, and every local will tell you to go to Blue Star or Pip\'s Original instead. Voodoo isn\'t weird anymore. It\'s a brand. And that might be the most Portland story of all.',
-            year: '2003',
-            image: {
-              src: '/portland/curiosities/voodoo.png',
-              alt: 'Voodoo Doughnut shop in Portland Old Town',
-            },
-            source: 'Voodoo Doughnut',
-            location: {
-              name: 'Voodoo Doughnut Old Town',
-              stillExists: true,
-            },
-          }
-        ],
-      },
-      {
-        id: 'iconic-spots',
-        type: 'section',
-        title: 'Iconic Spots',
-        intro: 'These are Portland\'s landmarks — the places that define the city. Famous for good reason.',
-        items: [
-          {
-            id: 'iconic-1',
-            type: 'iconic-spot',
+            {
+              src: '/portland/curiosities/powells-books-2.png',
+              alt: 'Interior of Powell\'s Books with color-coded rooms',
+            }
+          ],
+          source: 'Powell\'s Books',
+          location: {
             name: 'Powell\'s City of Books',
-            category: 'Bookstore',
-            description: 'The world\'s largest independent bookstore, occupying an entire city block. New and used books mixed together on the same shelves. Multiple rooms organized by color. Maps provided at entry.',
-            images: [
-              {
-                src: '/portland/curiosities/powells-books-1.png',
-                alt: 'Powell\'s Books interior with towering shelves',
-              }
-            ],
-            address: '1005 W Burnside St, Portland, OR 97209',
-            coordinates: { lat: 45.5231, lng: -122.6811 },
-            hours: 'Daily 10am-9pm',
-            price: 'Free to browse',
-            website: 'https://powells.com',
-            tip: 'The rare book room upstairs is worth a visit',
+            stillExists: true,
           },
-          {
-            id: 'iconic-2',
-            type: 'iconic-spot',
-            name: 'Japanese Garden',
-            category: 'Garden',
-            description: 'One of the most authentic Japanese gardens outside Japan, designed by Professor Takuma Tono. The walk up through Washington Park is part of the experience.',
-            images: [
-              {
-                src: '',
-                alt: 'Portland Japanese Garden',
-              }
-            ],
-            address: '611 SW Kingston Ave, Portland, OR 97205',
-            coordinates: { lat: 45.5189, lng: -122.7067 },
-            hours: 'Daily 10am-4pm (varies by season)',
-            price: '$20 adults',
-            website: 'https://japanesegarden.org',
-            tip: 'Go on a weekday morning for the most peaceful experience',
+        },
+        {
+          id: 'pdx-curiosity-15',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portland\'s music scene has always punched absurdly above its weight',
+          body: 'For a mid-sized city in the corner of the country, Portland has produced a ridiculous amount of iconic music: Elliott Smith, The Decemberists, Modest Mouse, Sleater-Kinney, Everclear, Pink Martini, The Shins. The Crystal Ballroom has hosted shows since 1914. The all-ages venue scene in the \'90s and 2000s gave an entire generation of teenagers a place to see live music and start bands. K Records in nearby Olympia created a Pacific Northwest DIY ethos that spread nationally. It wasn\'t an accident. It was cheap rent, a thriving arts culture, and a city that left its weirdos alone long enough to create something.',
+          image: {
+            src: '/portland/curiosities/music-scene.png',
+            alt: 'Portland music venue scene and indie rock history',
           },
-          {
-            id: 'iconic-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'iconic-3',
-            type: 'iconic-spot',
+          source: 'Oregon Music Hall of Fame',
+        },
+        {
+          id: 'pdx-curiosity-9',
+          type: 'curiosity',
+          category: 'nature',
+          title: 'Forest Park is one of the largest urban forests in the country',
+          body: 'Forest Park covers 5,200 acres with over 80 miles of trails—one of the largest urban forests in the United States. Within minutes of downtown, you can be surrounded by old-growth Douglas firs, encounter elk, and completely lose sight of the city. The Wildwood Trail stretches 30 miles through the canopy. It\'s the kind of resource that defines a city\'s character—and that locals take entirely for granted until they move somewhere else and realize most cities don\'t have a temperate rainforest within city limits.',
+          images: [
+            {
+              src: '/portland/curiosities/park-1.png',
+              alt: 'Forest Park trail through old growth Douglas firs',
+            },
+            {
+              src: '/portland/curiosities/park-2.png',
+              alt: 'Wildwood Trail winding through Forest Park',
+            },
+            {
+              src: '/portland/curiosities/park-3.png',
+              alt: 'Forest Park urban forest canopy',
+            }
+          ],
+          source: 'Forest Park Conservancy',
+          location: {
             name: 'Forest Park',
-            category: 'Nature',
-            description: 'Over 5,200 acres of urban forest with 80+ miles of trails. The Wildwood Trail stretches 30 miles through the park. You can be surrounded by old-growth Douglas firs within minutes of downtown.',
-            images: [
-              {
-                src: '/portland/curiosities/park-1.png',
-                alt: 'Trail through Forest Park',
-              }
-            ],
-            address: 'Multiple trailheads; Pittock Mansion is a good start',
-            coordinates: { lat: 45.5395, lng: -122.7167 },
-            hours: '5am-10pm daily',
-            price: 'Free',
-            tip: 'The hike from Lower Macleay Park to Pittock Mansion is the classic route',
+            stillExists: true,
           },
-          {
-            id: 'iconic-4',
-            type: 'iconic-spot',
-            name: 'Multnomah Falls',
-            category: 'Nature',
-            description: 'A 620-foot waterfall about 30 minutes from downtown. Oregon\'s most-visited attraction for good reason. The bridge at the first level is iconic; the hike to the top is worth it.',
-            images: [
-              {
-                src: '',
-                alt: 'Multnomah Falls with bridge',
-              }
-            ],
-            address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
-            coordinates: { lat: 45.5762, lng: -122.1158 },
-            hours: 'Dawn to dusk',
-            price: 'Free; parking reservations may be required',
-            website: 'https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30026',
-            tip: 'Go early or late to avoid the crowds',
+        },
+        {
+          id: 'pdx-curiosity-14',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Voodoo Doughnut used to be weird—now it\'s just a tourist trap',
+          body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was a genuinely strange idea. They sold a Pepto-Bismol doughnut and a NyQuil-frosted doughnut before the FDA shut that down. It was weird in the way Portland used to be weird—unselfconscious, a little gross, and doing it for the bit. Then it got famous. Now there are locations in multiple states, the lines are full of tourists with selfie sticks, and every local will tell you to go to Blue Star or Pip\'s Original instead. Voodoo isn\'t weird anymore. It\'s a brand. And that might be the most Portland story of all.',
+          year: '2003',
+          image: {
+            src: '/portland/curiosities/voodoo.png',
+            alt: 'Voodoo Doughnut shop in Portland Old Town',
           },
-          {
-            id: 'iconic-5',
-            type: 'iconic-spot',
-            name: 'Lan Su Chinese Garden',
-            category: 'Garden',
-            description: 'An authentic Suzhou-style garden built by Chinese artisans in Old Town Chinatown. The teahouse serves traditional Chinese tea with views of the garden.',
-            images: [
-              {
-                src: '',
-                alt: 'Lan Su Chinese Garden pavilion',
-              }
-            ],
-            address: '239 NW Everett St, Portland, OR 97209',
-            coordinates: { lat: 45.5256, lng: -122.6728 },
-            hours: 'Daily 10am-6pm (varies by season)',
-            price: '$14 adults',
-            website: 'https://lansugarden.org',
-            tip: 'The tea service is worth the extra cost',
-          }
-        ],
-      },
-      {
-        id: 'hidden-gems',
-        type: 'section',
-        title: 'Hidden Portland',
-        teaser: 'Cold War bunkers, Shanghai tunnels, and underground speakeasies',
-        intro: 'These aren\'t in the guidebooks. Cold War bunkers sealed beneath Kelly Butte, museums in residential garages, Shanghai tunnels, and underground speakeasies. This is where Portland gets genuinely obscure.',
-        items: [
-          {
-            id: 'gem-underground-1',
-            type: 'hidden-gem',
-            featured: true,
-            featuredOrder: 4,
-            name: 'Kelly Butte Cold War Bunker',
-            category: 'Underground',
-            description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
-            images: [
-              {
-                src: '/portland/hidden-gems/bunker-1.png',
-                alt: 'Kelly Butte Cold War bunker exterior',
-              },
-              {
-                src: '/portland/hidden-gems/bunker-2.png',
-                alt: 'Kelly Butte Cold War bunker entrance',
-              }
-            ],
-            address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
-            coordinates: { lat: 45.4975, lng: -122.5592 },
-            hours: 'Not accessible (sealed)',
-            price: 'N/A',
-            accessibility: 'Completely sealed and buried',
+          source: 'Voodoo Doughnut',
+          location: {
+            name: 'Voodoo Doughnut Old Town',
+            stillExists: true,
           },
-          {
-            id: 'gem-underground-2',
-            type: 'hidden-gem',
-            name: 'Old Town Pizza Shanghai Tunnels',
-            category: 'Underground',
-            description: 'The 1880 luxury Merchant Hotel lobby is now Old Town Pizza, built directly above Portland\'s Shanghai Tunnels. Tours go into the shadowy basement connecting to underground pathways allegedly used for "shanghaiing" sailors. Named one of America\'s Most Haunted Places.',
-            images: [
-              {
-                src: '/portland/curiosities/shanghai-tunnels.png',
-                alt: 'Shanghai Tunnels beneath Old Town',
-              }
-            ],
-            address: '226 NW Davis St, Portland, OR 97209',
-            coordinates: { lat: 45.5244, lng: -122.6728 },
-            hours: 'Tours by reservation',
-            price: 'Tour prices vary',
-            website: 'https://shanghaitunnels.com',
-            tip: 'Book the evening ghost tour for the full experience',
-          },
-          {
-            id: 'gem-ad-1',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'gem-history-1',
-            type: 'hidden-gem',
-            name: 'Lone Fir Cemetery - Block 14',
-            category: 'Historic Mystery',
-            description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
-            images: [
-              {
-                src: '/portland/hidden-gems/cemetery.png',
-                alt: 'Lone Fir Cemetery Block 14 unmarked area',
-              }
-            ],
-            address: 'SE 26th Ave & Stark St, Portland, OR 97214',
-            coordinates: { lat: 45.5206, lng: -122.6397 },
-            hours: 'Cemetery open daily dawn-dusk',
-            price: 'Free',
-            tip: 'Look for the paved-over section - a sobering piece of forgotten history',
-          },
-          {
-            id: 'gem-history-2',
-            type: 'hidden-gem',
-            name: 'Willamette Stone',
-            category: 'Historic Monument',
-            description: 'The "Initial Point" for ALL land surveys in Oregon and Washington. Original red cedar stake placed June 4, 1851. Tucked away in dense West Hills forest on a narrow, easily-missed winding path off Skyline Boulevard. One of Oregon\'s most important historical landmarks that is also one of its least known.',
-            images: [
-              {
-                src: '/portland/hidden-gems/stone.png',
-                alt: 'Willamette Stone survey marker',
-              }
-            ],
-            address: 'Skyline Blvd, Portland, OR 97231',
-            coordinates: { lat: 45.5425, lng: -122.7697 },
-            hours: 'Park open daily',
-            price: 'Free',
-            tip: 'Very easy to miss - look for small parking area on Skyline',
-          },
-          {
-            id: 'gem-history-3',
-            type: 'hidden-gem',
-            name: 'Ota Tofu',
-            category: 'Historic Site',
-            description: 'America\'s oldest tofu shop, opened 1911. During WWII internment, co-owner Saizo Ohta died at Minidoka camp. The building owner held the property until his wife Shina returned from internment in 1945, allowing Ota Tofu to restart. A remarkable story of resilience and compassion.',
-            images: [
-              {
-                src: '/portland/hidden-gems/ota-tofu.png',
-                alt: 'Ota Tofu shop',
-              }
-            ],
-            address: '529 SE Grand Ave, Portland, OR 97214',
-            coordinates: { lat: 45.5167, lng: -122.6606 },
-            hours: 'Mon-Sat 8am-5pm',
-            price: 'Fresh tofu $3-5',
-            website: 'https://www.otatofu.com',
-            tip: 'Buy fresh tofu and support this historic family business',
-          },
-          {
-            id: 'gem-museums-1',
-            type: 'hidden-gem',
-            name: 'Zymoglyphic Museum',
-            category: 'Unusual Museum',
-            description: 'DIY museum over artist Jim Stewart\'s garage in Mt. Tabor presenting "relics of the Zymoglyphic age" - sculptures and dioramas of fictional creatures made from found objects like driftwood and skulls. By appointment only, truly grassroots.',
-            images: [
-              {
-                src: '/portland/hidden-gems/museum.png',
-                alt: 'Zymoglyphic Museum diorama',
-              }
-            ],
-            address: 'Mt. Tabor neighborhood (exact address provided upon appointment)',
-            coordinates: { lat: 45.5122, lng: -122.5931 },
-            hours: 'By appointment only',
-            price: 'Free',
-            website: 'http://www.zymoglyphic.org',
-            tip: 'Email ahead to arrange a private tour',
-          },
-          {
-            id: 'gem-museums-2',
-            type: 'hidden-gem',
-            name: 'National Hat Museum',
-            category: 'Specialty Museum',
-            description: 'Only hat museum in America, located in historic Edwardian home near Ladd Circle. Over 2,300 hats on display dating back to 1800s. Tour by appointment only, limited to 5 people per 90-minute tour. Includes rare "Audobonnet" and 130-year-old beaver-fur felt top hats.',
-            images: [
-              {
-                src: '/portland/hidden-gems/hat-museum.png',
-                alt: 'National Hat Museum collection',
-              }
-            ],
-            address: '1928 SE Ladd Ave, Portland, OR 97214',
-            coordinates: { lat: 45.5083, lng: -122.6447 },
-            hours: 'By appointment only',
-            price: '$15',
-            website: 'https://thehatmuseum.com',
-            tip: 'Book weeks in advance - tours fill quickly',
-          },
-          {
-            id: 'gem-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'gem-museums-3',
-            type: 'hidden-gem',
-            name: 'Stark\'s Vacuum Museum',
-            category: 'Niche Collection',
-            description: 'Hidden inside a working vacuum store is one of America\'s strangest museums: a 10x40 foot shrine to suction containing over 300 vacuum cleaners spanning 150 years. The collection includes a two-person hand-pumped Victorian model that required one person to work the bellows while another pushed, early electric models that cost more than a month\'s wages, and a complete evolution of Hoover\'s industrial dominance. The store itself has operated since 1932. The museum averages maybe a dozen visitors per month, which only adds to the appeal—you\'ll likely have a private docent tour from staff who know the history of every machine. Free admission, and they don\'t pressure you to buy a Dyson afterward.',
-            images: [
-              {
-                src: '/portland/hidden-gems/vacuum.png',
-                alt: 'Stark\'s Vacuum Museum',
-              }
-            ],
-            address: '107 NE Grand Ave, Portland, OR 97232',
-            coordinates: { lat: 45.5236, lng: -122.6606 },
-            hours: 'Mon-Sat 9am-5:30pm',
-            price: 'Free',
-            website: 'https://www.starksvacuum.com',
-            tip: 'Ask staff to show you the museum section - easy to miss',
-          },
-          {
-            id: 'gem-quirky-1',
-            type: 'hidden-gem',
-            name: 'Woodstock Mystery Hole',
-            category: 'Backyard Oddity',
-            description: 'Run by "Pastor Barron" of the Universal Church O\' Fun. Features "Black Obsidian Mirror of Higher Truth" portal and narrow tunnel that tapers to point. Exact location kept secret - requires polite email to arrange tour. Pure Portland absurdist whimsy.',
-            images: [
-              {
-                src: '/portland/hidden-gems/mystery-hole.png',
-                alt: 'Woodstock Mystery Hole entrance',
-              }
-            ],
-            address: 'Woodstock neighborhood (exact location revealed upon booking)',
-            coordinates: { lat: 45.4797, lng: -122.6147 },
-            hours: 'By email arrangement only',
-            price: 'Donation requested',
-            tip: 'Email ahead with respectful inquiry',
-          },
-          {
-            id: 'gem-quirky-2',
-            type: 'hidden-gem',
-            name: 'Rimsky-Korsakoffee House',
-            category: 'Quirky Cafe',
-            description: 'No exterior sign, hidden by heavy foliage in unassuming 1902 Craftsman house. Operating since 1980, tables named after dead composers that are "haunted" - they rotate, vibrate, elevate, and tilt almost imperceptibly until your dessert is out of reach.',
-            images: [
-              {
-                src: '/portland/hidden-gems/cafe-house-1.png',
-                alt: 'Rimsky-Korsakoffee House exterior',
-              },
-              {
-                src: '/portland/hidden-gems/cafe-house-2.png',
-                alt: 'Rimsky-Korsakoffee House interior',
-              }
-            ],
-            address: '707 SE 12th Ave, Portland, OR 97214',
-            coordinates: { lat: 45.5158, lng: -122.6536 },
-            hours: 'Wed-Sun 7pm-midnight',
-            price: '$',
-            tip: 'Order dessert and watch the table slowly tilt',
-          },
-          {
-            id: 'gem-quirky-3',
-            type: 'hidden-gem',
-            name: 'Portland Troll Bridge',
-            category: 'Folk Art',
-            description: 'Somewhere around 2010, someone glued a plastic troll to the underside of an old railway trestle in northwest Portland. Then another appeared. Then dozens. Now there are hundreds—the little ones with the shock of colorful hair you remember from the \'90s—colonizing every surface of this forgotten overpass. Nobody knows who started it or why it continues, but pilgrims still make the 15-mile trip from downtown to add their own. Seattle has its famous 18-foot concrete Fremont Troll. Portland has this: weirder, grassroots, and nobody\'s in charge. That feels right.',
-            images: [
-              {
-                src: '/portland/hidden-gems/troll.png',
-                alt: 'Portland Troll Bridge covered in plastic trolls',
-              }
-            ],
-            address: 'NW McNamee Rd, Portland, OR 97231',
-            coordinates: { lat: 45.5997, lng: -122.8147 },
-            hours: 'Open 24/7',
-            price: 'Free',
-            tip: 'Roadside pullouts for parking',
-          },
-          {
-            id: 'gem-quirky-4',
-            type: 'hidden-gem',
-            name: 'Hippo Hardware',
-            category: 'Salvage',
-            description: 'Three floors, 30,000 sq ft filled with hundreds of hippo figurines (virtually all customer gifts). Sells salvaged vintage fixtures from 1860-1960. Contains pieces from demolished Portland Hotel, City Hall, Central Library. "Keep Portland Weird" embodiment.',
-            images: [
-              {
-                src: '/portland/hidden-gems/hippo.png',
-                alt: 'Hippo Hardware interior with hippo collection',
-              }
-            ],
-            address: '1040 E Burnside St, Portland, OR 97214',
-            coordinates: { lat: 45.5231, lng: -122.6547 },
-            hours: 'Wed-Sun 10am-5pm',
-            price: 'Free to browse',
-            website: 'https://www.hippohardware.com',
-            tip: 'Count how many hippos you can spot',
-          },
-          {
-            id: 'gem-ad-3',
-            type: 'ad',
-            size: 'banner',
-          },
-          {
-            id: 'gem-nature-1',
-            type: 'hidden-gem',
-            name: 'Leach Botanical Garden',
-            category: 'Hidden Garden',
-            description: 'Tucked behind busy SE 122nd Ave, 17 acres hugging Johnson Creek. Many drive past countless times unaware. Created by Lilla and John Leach starting 1932 at their "Sleepy Hollow" home. Features aerial tree walk, four-season pollinator garden, ferns.',
-            images: [
-              {
-                src: '/portland/hidden-gems/botanical-1.png',
-                alt: 'Leach Botanical Garden paths',
-              },
-              {
-                src: '/portland/hidden-gems/botanical-2.png',
-                alt: 'Leach Botanical Garden scenery',
-              }
-            ],
-            address: '6704 SE 122nd Ave, Portland, OR 97236',
-            coordinates: { lat: 45.4797, lng: -122.5378 },
-            hours: 'Tue-Sun 10am-4pm',
-            price: '$8 adults/$5 youth (free admission available by request)',
-            website: 'https://www.leachgarden.org',
-            tip: 'A secret garden hiding in plain sight',
-          },
-          {
-            id: 'gem-nature-3',
-            type: 'hidden-gem',
-            name: 'Mississippi Avenue',
-            category: 'Neighborhood',
-            description: 'A strip of independent boutiques, record stores, bars, and restaurants in North Portland. Less touristy than Alberta Street but similarly curated. The Rebuilding Center is a sustainable salvage treasure.',
-            images: [
-              {
-                src: '/portland/hidden-gems/mississippie-avenue.png',
-                alt: 'Mississippi Avenue storefronts',
-              }
-            ],
-            address: 'N Mississippi Ave between Fremont and Skidmore',
-            coordinates: { lat: 45.5497, lng: -122.6756 },
-            hours: 'Businesses vary',
-            price: 'Free to explore',
-            tip: 'Prost! for German beer, Interurban for cocktails',
-          }
-        ],
-      },
-      {
-        id: 'pdx-best-bars',
-        type: 'best-of',
-        category: 'bars',
-        title: 'Weird City Pours',
-        intro: 'Portland\'s bar scene is an argument in liquid form. Divey enough to feel dangerous, crafty enough to charge $18 for a cocktail with house-made bitters. The city pioneered the modern cocktail revival while never abandoning the dives where cash is preferred and ambition isn\'t. These are the spots where Portland actually drinks.',
-        spots: [
-          {
-            name: 'Expatriate',
-            neighborhood: 'Concordia',
-            vibe: 'Asian-inspired cocktails and dueling turntables in a tiny, evocative space from James Beard winner Naomi Pomeroy and bartender Kyle Linden Webster.',
-            order: 'Trust the bartenders completely. The menu changes, but everything is exquisitely balanced. Stay for the vinyl.',
-            why: 'Since opening in 2013, Expatriate has been Portland\'s most evocative cocktail destination. Webster (formerly of St. Jack) creates drinks that are worth the squeeze into this intimate space, while Naomi Pomeroy\'s Asian-inspired bar snacks complement perfectly. Webster is also behind Yaowarat, the Thai-Chinese restaurant named Portland Monthly\'s 2024 Restaurant of the Year. The dueling turntables aren\'t a gimmick—they\'re essential to the vibe.',
-            address: '5424 NE 30th Ave, Portland, OR 97211',
-            coordinates: { lat: 45.5592, lng: -122.6319 },
-            price: '$$$',
-            hours: 'Daily 5pm-12am',
-            website: 'http://expatriatepdx.com/',
-            instagram: '@expatriatepdx',
-            image: {
+        }
+      ],
+    },
+    {
+      id: 'pdx-iconic-spots',
+      type: 'section',
+      title: 'Stumptown Foundations',
+      intro: 'These are the markers of Portland identity—the places that define why people settle here and how they thrive in the shadow of Mount Hood. From Powell\'s to the Rose Test Garden, these are the non-negotiables.',
+      items: [
+        {
+          id: 'iconic-1',
+          type: 'iconic-spot',
+          name: 'Powell\'s City of Books',
+          category: 'Bookstore',
+          description: 'The world\'s largest independent bookstore, where "used" and "new" books cohabitate in a confusing, beautiful mess across 68,000 square feet. It’s an entire city block of color-coded rooms where people go to get lost and find themselves—or at least a first edition they can\'t afford.',
+          images: [
+            {
+              src: '/portland/curiosities/powells-books-1.png',
+              alt: 'Powell\'s Books interior with towering shelves',
+            }
+          ],
+          address: '1005 W Burnside St, Portland, OR 97209',
+          coordinates: { lat: 45.5231, lng: -122.6811 },
+          hours: 'Daily 10am-9pm',
+          price: 'Free to browse',
+          website: 'https://powells.com',
+          tip: 'The Gold Room has the maps. The Rare Book Room has the ghosts of dead authors and a $1,000 Lewis & Clark journal.',
+        },
+        {
+          id: 'iconic-2',
+          type: 'iconic-spot',
+          name: 'Japanese Garden',
+          category: 'Garden',
+          description: 'One of the most authentic Japanese gardens outside Japan, designed by Professor Takuma Tono. The walk up through Washington Park is part of the experience.',
+          images: [
+            {
               src: '',
-              alt: 'Intimate cocktail bar with Asian-inspired drinks',
-            },
-          },
-          {
-            name: 'Multnomah Whiskey Library',
-            neighborhood: 'Downtown',
-            vibe: 'Over 1,500 whiskey labels in a vintage library setting. The waitlist for membership is three years long.',
-            order: 'Explore the collection—they\'ll guide you. The Old Fashioned is considered Portland\'s best.',
-            why: 'This isn\'t just a whiskey bar—it\'s a pilgrimage. Brick walls, vintage library atmosphere, and one of the most serious spirits programs in America. Non-members can get reservations for $25 per person. Members skip the line and get access to exclusive bottles. The three-year membership waitlist tells you everything about demand. Their sister bar, MWL Green Room, offers a more casual overflow option.',
-            address: '1124 SW Alder St, Portland, OR 97205',
-            coordinates: { lat: 45.5206, lng: -122.6814 },
-            price: '$$$$',
-            hours: 'Tue-Thu 4pm-10pm, Fri-Sat 4pm-11pm',
-            website: 'https://mwlpdx.com/',
-            instagram: '@multnomahwhiskeylibrary',
-            image: {
+              alt: 'Portland Japanese Garden',
+            }
+          ],
+          address: '611 SW Kingston Ave, Portland, OR 97205',
+          coordinates: { lat: 45.5189, lng: -122.7067 },
+          hours: 'Daily 10am-4pm (varies by season)',
+          price: '$20 adults',
+          website: 'https://japanesegarden.org',
+          tip: 'Go on a weekday morning for the most peaceful experience',
+        },
+        {
+          id: 'iconic-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'iconic-3',
+          type: 'iconic-spot',
+          name: 'Forest Park',
+          category: 'Nature',
+          description: 'Over 5,200 acres of urban forest with 80+ miles of trails. The Wildwood Trail stretches 30 miles through the park. You can be surrounded by old-growth Douglas firs within minutes of downtown.',
+          images: [
+            {
+              src: '/portland/curiosities/park-1.png',
+              alt: 'Trail through Forest Park',
+            }
+          ],
+          address: 'Multiple trailheads; Pittock Mansion is a good start',
+          coordinates: { lat: 45.5395, lng: -122.7167 },
+          hours: '5am-10pm daily',
+          price: 'Free',
+          tip: 'The hike from Lower Macleay Park to Pittock Mansion is the classic route',
+        },
+        {
+          id: 'iconic-4',
+          type: 'iconic-spot',
+          name: 'Multnomah Falls',
+          category: 'Nature',
+          description: 'A 620-foot waterfall about 30 minutes from downtown. Oregon\'s most-visited attraction for good reason. The bridge at the first level is iconic; the hike to the top is worth it.',
+          images: [
+            {
               src: '',
-              alt: 'Vintage whiskey library with brick walls and rare bottles',
-            },
-          },
-          {
-            name: 'Hale Pele',
-            neighborhood: 'Grant Park',
-            vibe: '"House of the Volcano Goddess"—Portland\'s premier tiki bar with 300-400 rums and 50+ exotic cocktails made with fresh juices.',
-            order: 'Trust the extensive cocktail menu—classics and house originals. Everything uses fresh juices and house-made syrups. The Chieftain\'s Hut fits 8-12 for parties.',
-            why: 'Opened in 2012 by Blair Reynolds (later sold to tiki legend Martin Cate), Hale Pele is consistently ranked among America\'s best tiki bars. No reservations needed for the main floor—first come, first served. The rum collection is encyclopedic, the cocktails are meticulously crafted, and the atmosphere transports you. Must be 21+, no exceptions (liquor license restriction).',
-            address: '2733 NE Broadway, Portland, OR 97232',
-            coordinates: { lat: 45.5370, lng: -122.6378 },
-            price: '$$$',
-            hours: 'Daily 4pm-12am',
-            website: 'https://www.halepele.com/',
-            instagram: '@halepele',
-            image: {
+              alt: 'Multnomah Falls with bridge',
+            }
+          ],
+          address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
+          coordinates: { lat: 45.5762, lng: -122.1158 },
+          hours: 'Dawn to dusk',
+          price: 'Free; parking reservations may be required',
+          website: 'https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30026',
+          tip: 'Go early or late to avoid the crowds',
+        },
+        {
+          id: 'iconic-5',
+          type: 'iconic-spot',
+          name: 'Lan Su Chinese Garden',
+          category: 'Garden',
+          description: 'An authentic Suzhou-style garden built by Chinese artisans in Old Town Chinatown. The teahouse serves traditional Chinese tea with views of the garden.',
+          images: [
+            {
               src: '',
-              alt: 'Tiki bar with exotic cocktails and tropical decor',
+              alt: 'Lan Su Chinese Garden pavilion',
+            }
+          ],
+          address: '239 NW Everett St, Portland, OR 97209',
+          coordinates: { lat: 45.5256, lng: -122.6728 },
+          hours: 'Daily 10am-6pm (varies by season)',
+          price: '$14 adults',
+          website: 'https://lansugarden.org',
+          tip: 'The tea service is worth the extra cost',
+        }
+      ],
+    },
+    {
+      id: 'pdx-hidden-gems',
+      type: 'section',
+      title: 'Under the Burnside',
+      teaser: 'Cold War bunkers, Shanghai tunnels, and underground speakeasies',
+      intro: 'Portland’s real soul isn’t found on the tourist drags; it’s hidden in basement speakeasies, abandoned theaters, and the secret corners of the forest that the brochures forget.',
+      items: [
+        {
+          id: 'gem-underground-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
+          name: 'Kelly Butte Cold War Bunker',
+          category: 'Underground',
+          description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
+          images: [
+            {
+              src: '/portland/hidden-gems/bunker-1.png',
+              alt: 'Kelly Butte Cold War bunker exterior',
             },
-          },
-          {
-            name: 'The Bye and Bye',
-            neighborhood: 'Alberta',
-            vibe: '100% vegan bar with two large patios, weekend brunch, and VegNews readers\' choice for best vegan bar.',
-            order: 'The vegan wings are legendary. "Meatball" sub, grilled cheese, or chili pie. Their signature cocktail has peach vodka, peach bourbon, lemon, and cranberry.',
-            why: 'Six friends built this bar with their own hands in 2007, then tended bar while running operations. The Lightning Bar Collective created something special—a vegan bar that doesn\'t feel like compromise. The two patios are essential in summer, the brunch on weekends is solid, and minors are allowed until 8pm. VegNews readers named it the best vegan bar in 2023. Eater included it in their 2025 list of Portland\'s best vegan restaurants.',
-            address: '1011 NE Alberta St, Portland, OR 97211',
-            coordinates: { lat: 45.5589, lng: -122.6494 },
-            price: '$$',
-            hours: 'Mon-Thu 12pm-12am, Fri 12pm-1am, Sat 10am-1am, Sun 10am-12am',
-            website: 'https://thebyeandbye.com/',
-            instagram: '@byeandbyeportland',
-            image: {
-              src: '',
-              alt: 'Vegan bar with spacious patio on Alberta Street',
+            {
+              src: '/portland/hidden-gems/bunker-2.png',
+              alt: 'Kelly Butte Cold War bunker entrance',
+            }
+          ],
+          address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
+          coordinates: { lat: 45.4975, lng: -122.5592 },
+          hours: 'Not accessible (sealed)',
+          price: 'N/A',
+          accessibility: 'Completely sealed and buried',
+        },
+        {
+          id: 'gem-underground-2',
+          type: 'hidden-gem',
+          name: 'Old Town Pizza Shanghai Tunnels',
+          category: 'Underground',
+          description: 'The 1880 luxury Merchant Hotel lobby is now Old Town Pizza, built directly above Portland\'s Shanghai Tunnels. Tours go into the shadowy basement connecting to underground pathways allegedly used for "shanghaiing" sailors. Named one of America\'s Most Haunted Places.',
+          images: [
+            {
+              src: '/portland/curiosities/shanghai-tunnels.png',
+              alt: 'Shanghai Tunnels beneath Old Town',
+            }
+          ],
+          address: '226 NW Davis St, Portland, OR 97209',
+          coordinates: { lat: 45.5244, lng: -122.6728 },
+          hours: 'Tours by reservation',
+          price: 'Tour prices vary',
+          website: 'https://shanghaitunnels.com',
+          tip: 'Book the evening ghost tour for the full experience',
+        },
+        {
+          id: 'gem-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'gem-history-1',
+          type: 'hidden-gem',
+          name: 'Lone Fir Cemetery - Block 14',
+          category: 'Historic Mystery',
+          description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
+          images: [
+            {
+              src: '/portland/hidden-gems/cemetery.png',
+              alt: 'Lone Fir Cemetery Block 14 unmarked area',
+            }
+          ],
+          address: 'SE 26th Ave & Stark St, Portland, OR 97214',
+          coordinates: { lat: 45.5206, lng: -122.6397 },
+          hours: 'Cemetery open daily dawn-dusk',
+          price: 'Free',
+          tip: 'Look for the paved-over section - a sobering piece of forgotten history',
+        },
+        {
+          id: 'gem-history-2',
+          type: 'hidden-gem',
+          name: 'Willamette Stone',
+          category: 'Historic Monument',
+          description: 'The "Initial Point" for ALL land surveys in Oregon and Washington. Original red cedar stake placed June 4, 1851. Tucked away in dense West Hills forest on a narrow, easily-missed winding path off Skyline Boulevard. One of Oregon\'s most important historical landmarks that is also one of its least known.',
+          images: [
+            {
+              src: '/portland/hidden-gems/stone.png',
+              alt: 'Willamette Stone survey marker',
+            }
+          ],
+          address: 'Skyline Blvd, Portland, OR 97231',
+          coordinates: { lat: 45.5425, lng: -122.7697 },
+          hours: 'Park open daily',
+          price: 'Free',
+          tip: 'Very easy to miss - look for small parking area on Skyline',
+        },
+        {
+          id: 'gem-history-3',
+          type: 'hidden-gem',
+          name: 'Ota Tofu',
+          category: 'Historic Site',
+          description: 'America\'s oldest tofu shop, opened 1911. During WWII internment, co-owner Saizo Ohta died at Minidoka camp. The building owner held the property until his wife Shina returned from internment in 1945, allowing Ota Tofu to restart. A remarkable story of resilience and compassion.',
+          images: [
+            {
+              src: '/portland/hidden-gems/ota-tofu.png',
+              alt: 'Ota Tofu shop',
+            }
+          ],
+          address: '529 SE Grand Ave, Portland, OR 97214',
+          coordinates: { lat: 45.5167, lng: -122.6606 },
+          hours: 'Mon-Sat 8am-5pm',
+          price: 'Fresh tofu $3-5',
+          website: 'https://www.otatofu.com',
+          tip: 'Buy fresh tofu and support this historic family business',
+        },
+        {
+          id: 'gem-museums-1',
+          type: 'hidden-gem',
+          name: 'Zymoglyphic Museum',
+          category: 'Unusual Museum',
+          description: 'DIY museum over artist Jim Stewart\'s garage in Mt. Tabor presenting "relics of the Zymoglyphic age" - sculptures and dioramas of fictional creatures made from found objects like driftwood and skulls. By appointment only, truly grassroots.',
+          images: [
+            {
+              src: '/portland/hidden-gems/museum.png',
+              alt: 'Zymoglyphic Museum diorama',
+            }
+          ],
+          address: 'Mt. Tabor neighborhood (exact address provided upon appointment)',
+          coordinates: { lat: 45.5122, lng: -122.5931 },
+          hours: 'By appointment only',
+          price: 'Free',
+          website: 'http://www.zymoglyphic.org',
+          tip: 'Email ahead to arrange a private tour',
+        },
+        {
+          id: 'gem-museums-2',
+          type: 'hidden-gem',
+          name: 'National Hat Museum',
+          category: 'Specialty Museum',
+          description: 'Only hat museum in America, located in historic Edwardian home near Ladd Circle. Over 2,300 hats on display dating back to 1800s. Tour by appointment only, limited to 5 people per 90-minute tour. Includes rare "Audobonnet" and 130-year-old beaver-fur felt top hats.',
+          images: [
+            {
+              src: '/portland/hidden-gems/hat-museum.png',
+              alt: 'National Hat Museum collection',
+            }
+          ],
+          address: '1928 SE Ladd Ave, Portland, OR 97214',
+          coordinates: { lat: 45.5083, lng: -122.6447 },
+          hours: 'By appointment only',
+          price: '$15',
+          website: 'https://thehatmuseum.com',
+          tip: 'Book weeks in advance - tours fill quickly',
+        },
+        {
+          id: 'gem-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'gem-museums-3',
+          type: 'hidden-gem',
+          name: 'Stark\'s Vacuum Museum',
+          category: 'Niche Collection',
+          description: 'Hidden inside a working vacuum store is one of America\'s strangest museums: a 10x40 foot shrine to suction containing over 300 vacuum cleaners spanning 150 years. The collection includes a two-person hand-pumped Victorian model that required one person to work the bellows while another pushed, early electric models that cost more than a month\'s wages, and a complete evolution of Hoover\'s industrial dominance. The store itself has operated since 1932. The museum averages maybe a dozen visitors per month, which only adds to the appeal—you\'ll likely have a private docent tour from staff who know the history of every machine. Free admission, and they don\'t pressure you to buy a Dyson afterward.',
+          images: [
+            {
+              src: '/portland/hidden-gems/vacuum.png',
+              alt: 'Stark\'s Vacuum Museum',
+            }
+          ],
+          address: '107 NE Grand Ave, Portland, OR 97232',
+          coordinates: { lat: 45.5236, lng: -122.6606 },
+          hours: 'Mon-Sat 9am-5:30pm',
+          price: 'Free',
+          website: 'https://www.starksvacuum.com',
+          tip: 'Ask staff to show you the museum section - easy to miss',
+        },
+        {
+          id: 'gem-quirky-1',
+          type: 'hidden-gem',
+          name: 'Woodstock Mystery Hole',
+          category: 'Backyard Oddity',
+          description: 'Run by "Pastor Barron" of the Universal Church O\' Fun. Features "Black Obsidian Mirror of Higher Truth" portal and narrow tunnel that tapers to point. Exact location kept secret - requires polite email to arrange tour. Pure Portland absurdist whimsy.',
+          images: [
+            {
+              src: '/portland/hidden-gems/mystery-hole.png',
+              alt: 'Woodstock Mystery Hole entrance',
+            }
+          ],
+          address: 'Woodstock neighborhood (exact location revealed upon booking)',
+          coordinates: { lat: 45.4797, lng: -122.6147 },
+          hours: 'By email arrangement only',
+          price: 'Donation requested',
+          tip: 'Email ahead with respectful inquiry',
+        },
+        {
+          id: 'gem-quirky-2',
+          type: 'hidden-gem',
+          name: 'Rimsky-Korsakoffee House',
+          category: 'Quirky Cafe',
+          description: 'No exterior sign, hidden by heavy foliage in unassuming 1902 Craftsman house. Operating since 1980, tables named after dead composers that are "haunted" - they rotate, vibrate, elevate, and tilt almost imperceptibly until your dessert is out of reach.',
+          images: [
+            {
+              src: '/portland/hidden-gems/cafe-house-1.png',
+              alt: 'Rimsky-Korsakoffee House exterior',
             },
-          },
-          {
-            name: 'Produce Row Café',
-            neighborhood: 'Industrial Eastside',
-            vibe: 'Portland\'s original craft beer bar since 1974. 24 taps, award-winning bourbon collection, and one of the best year-round patios in the city.',
-            order: 'Whatever local draft catches your eye. Happy hour (4-7pm) has $4 select beers and $7 cocktails. The bourbon collection is underrated.',
-            why: 'Pro Row has been the pulse of Portland\'s craft beer movement for over 50 years. From its original craft beer bar roots, it has evolved into a stunning venue that\'s as good for a casual pint as for a private event. The patio is genuinely excellent—covered and heated for Portland\'s weather. They\'ve added an award-winning bourbon collection and elevated comfort food to the beer-forward foundation.',
-            address: '204 SE Oak St, Portland, OR 97214',
-            coordinates: { lat: 45.5208, lng: -122.6594 },
-            price: '$$',
-            hours: 'Mon 12pm-4pm, Tue-Thu 12pm-7pm, Fri-Sat 12pm-8pm',
-            website: 'https://www.producerowcafe.com/',
-            instagram: '@producerowpdx',
-            image: {
-              src: '',
-              alt: 'Historic craft beer bar with extensive tap selection',
+            {
+              src: '/portland/hidden-gems/cafe-house-2.png',
+              alt: 'Rimsky-Korsakoffee House interior',
+            }
+          ],
+          address: '707 SE 12th Ave, Portland, OR 97214',
+          coordinates: { lat: 45.5158, lng: -122.6536 },
+          hours: 'Wed-Sun 7pm-midnight',
+          price: '$',
+          tip: 'Order dessert and watch the table slowly tilt',
+        },
+        {
+          id: 'gem-quirky-3',
+          type: 'hidden-gem',
+          name: 'Portland Troll Bridge',
+          category: 'Folk Art',
+          description: 'Somewhere around 2010, someone glued a plastic troll to the underside of an old railway trestle in northwest Portland. Then another appeared. Then dozens. Now there are hundreds—the little ones with the shock of colorful hair you remember from the \'90s—colonizing every surface of this forgotten overpass. Nobody knows who started it or why it continues, but pilgrims still make the 15-mile trip from downtown to add their own. Seattle has its famous 18-foot concrete Fremont Troll. Portland has this: weirder, grassroots, and nobody\'s in charge. That feels right.',
+          images: [
+            {
+              src: '/portland/hidden-gems/troll.png',
+              alt: 'Portland Troll Bridge covered in plastic trolls',
+            }
+          ],
+          address: 'NW McNamee Rd, Portland, OR 97231',
+          coordinates: { lat: 45.5997, lng: -122.8147 },
+          hours: 'Open 24/7',
+          price: 'Free',
+          tip: 'Roadside pullouts for parking',
+        },
+        {
+          id: 'gem-quirky-4',
+          type: 'hidden-gem',
+          name: 'Hippo Hardware',
+          category: 'Salvage',
+          description: 'Three floors, 30,000 sq ft filled with hundreds of hippo figurines (virtually all customer gifts). Sells salvaged vintage fixtures from 1860-1960. Contains pieces from demolished Portland Hotel, City Hall, Central Library. "Keep Portland Weird" embodiment.',
+          images: [
+            {
+              src: '/portland/hidden-gems/hippo.png',
+              alt: 'Hippo Hardware interior with hippo collection',
+            }
+          ],
+          address: '1040 E Burnside St, Portland, OR 97214',
+          coordinates: { lat: 45.5231, lng: -122.6547 },
+          hours: 'Wed-Sun 10am-5pm',
+          price: 'Free to browse',
+          website: 'https://www.hippohardware.com',
+          tip: 'Count how many hippos you can spot',
+        },
+        {
+          id: 'gem-ad-3',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'gem-nature-1',
+          type: 'hidden-gem',
+          name: 'Leach Botanical Garden',
+          category: 'Hidden Garden',
+          description: 'Tucked behind busy SE 122nd Ave, 17 acres hugging Johnson Creek. Many drive past countless times unaware. Created by Lilla and John Leach starting 1932 at their "Sleepy Hollow" home. Features aerial tree walk, four-season pollinator garden, ferns.',
+          images: [
+            {
+              src: '/portland/hidden-gems/botanical-1.png',
+              alt: 'Leach Botanical Garden paths',
             },
-          }
-        ],
-      },
-      {
-        id: 'pdx-best-restaurants',
-        type: 'best-of',
-        category: 'restaurants',
-        title: 'Rose City Tables',
-        intro: 'Portland\'s food scene was once the best value in America. Prices have caught up, but quality remains.',
-        spots: [
-          {
-            name: 'Canard',
-            neighborhood: 'Buckman',
-            vibe: 'Wine Spectator Best of Award of Excellence winner. French bar food, 500+ wines, and a $6 burger from a two-time James Beard winner.',
-            order: 'The duck confit is the signature. Snack through the menu and explore the Burgundy-heavy wine list. Yes, the $6 burger is legit.',
-            why: 'Gabriel Rucker (two James Beard Awards) and wine director Andy Fortgang opened Canard in 2018 next to their flagship Le Pigeon. It immediately landed on Eater\'s best new restaurants list and was named Portland\'s Restaurant of the Year by three publications. The wine list emphasizes smaller producers and French regions—Burgundy, Rhône, Champagne—with over 500 labels. Now expanded to Oregon City (2022) and Beaverton (2025).',
-            address: '734 E Burnside St, Portland, OR 97214',
-            coordinates: { lat: 45.5231, lng: -122.6575 },
-            price: '$$$',
-            hours: 'Daily 4pm-10pm',
-            website: 'https://www.canardrestaurant.com/',
-            instagram: '@canard_restaurant',
-            image: {
-              src: '',
-              alt: 'French-inspired wine bar with award-winning list',
+            {
+              src: '/portland/hidden-gems/botanical-2.png',
+              alt: 'Leach Botanical Garden scenery',
+            }
+          ],
+          address: '6704 SE 122nd Ave, Portland, OR 97236',
+          coordinates: { lat: 45.4797, lng: -122.5378 },
+          hours: 'Tue-Sun 10am-4pm',
+          price: '$8 adults/$5 youth (free admission available by request)',
+          website: 'https://www.leachgarden.org',
+          tip: 'A secret garden hiding in plain sight',
+        },
+        {
+          id: 'gem-nature-3',
+          type: 'hidden-gem',
+          name: 'Mississippi Avenue',
+          category: 'Neighborhood',
+          description: 'A strip of independent boutiques, record stores, bars, and restaurants in North Portland. Less touristy than Alberta Street but similarly curated. The Rebuilding Center is a sustainable salvage treasure.',
+          images: [
+            {
+              src: '/portland/hidden-gems/mississippie-avenue.png',
+              alt: 'Mississippi Avenue storefronts',
+            }
+          ],
+          address: 'N Mississippi Ave between Fremont and Skidmore',
+          coordinates: { lat: 45.5497, lng: -122.6756 },
+          hours: 'Businesses vary',
+          price: 'Free to explore',
+          tip: 'Prost! for German beer, Interurban for cocktails',
+        }
+      ],
+    },
+    {
+      id: 'pdx-best-bars',
+      type: 'best-of',
+      category: 'bars',
+      title: 'Weird City Pours',
+      intro: 'Portland\'s bar scene is an argument in liquid form. Divey enough to feel dangerous, crafty enough to charge $18 for a cocktail with house-made bitters. The city pioneered the modern cocktail revival while never abandoning the dives where cash is preferred and ambition isn\'t. These are the spots where Portland actually drinks.',
+      spots: [
+        {
+          name: 'Expatriate',
+          neighborhood: 'Concordia',
+          vibe: 'Asian-inspired cocktails and dueling turntables in a tiny, evocative space from James Beard winner Naomi Pomeroy and bartender Kyle Linden Webster.',
+          order: 'Trust the bartenders completely. The menu changes, but everything is exquisitely balanced. Stay for the vinyl.',
+          why: 'Since opening in 2013, Expatriate has been Portland\'s most evocative cocktail destination. Webster (formerly of St. Jack) creates drinks that are worth the squeeze into this intimate space, while Naomi Pomeroy\'s Asian-inspired bar snacks complement perfectly. Webster is also behind Yaowarat, the Thai-Chinese restaurant named Portland Monthly\'s 2024 Restaurant of the Year. The dueling turntables aren\'t a gimmick—they\'re essential to the vibe.',
+          address: '5424 NE 30th Ave, Portland, OR 97211',
+          coordinates: { lat: 45.5592, lng: -122.6319 },
+          price: '$$$',
+          hours: 'Daily 5pm-12am',
+          website: 'http://expatriatepdx.com/',
+          instagram: '@expatriatepdx',
+          image: {
+            src: '',
+            alt: 'Intimate cocktail bar with Asian-inspired drinks',
+          },
+        },
+        {
+          name: 'Multnomah Whiskey Library',
+          neighborhood: 'Downtown',
+          vibe: 'Over 1,500 whiskey labels in a vintage library setting. The waitlist for membership is three years long.',
+          order: 'Explore the collection—they\'ll guide you. The Old Fashioned is considered Portland\'s best.',
+          why: 'This isn\'t just a whiskey bar—it\'s a pilgrimage. Brick walls, vintage library atmosphere, and one of the most serious spirits programs in America. Non-members can get reservations for $25 per person. Members skip the line and get access to exclusive bottles. The three-year membership waitlist tells you everything about demand. Their sister bar, MWL Green Room, offers a more casual overflow option.',
+          address: '1124 SW Alder St, Portland, OR 97205',
+          coordinates: { lat: 45.5206, lng: -122.6814 },
+          price: '$$$$',
+          hours: 'Tue-Thu 4pm-10pm, Fri-Sat 4pm-11pm',
+          website: 'https://mwlpdx.com/',
+          instagram: '@multnomahwhiskeylibrary',
+          image: {
+            src: '',
+            alt: 'Vintage whiskey library with brick walls and rare bottles',
+          },
+        },
+        {
+          name: 'Hale Pele',
+          neighborhood: 'Grant Park',
+          vibe: '"House of the Volcano Goddess"—Portland\'s premier tiki bar with 300-400 rums and 50+ exotic cocktails made with fresh juices.',
+          order: 'Trust the extensive cocktail menu—classics and house originals. Everything uses fresh juices and house-made syrups. The Chieftain\'s Hut fits 8-12 for parties.',
+          why: 'Opened in 2012 by Blair Reynolds (later sold to tiki legend Martin Cate), Hale Pele is consistently ranked among America\'s best tiki bars. No reservations needed for the main floor—first come, first served. The rum collection is encyclopedic, the cocktails are meticulously crafted, and the atmosphere transports you. Must be 21+, no exceptions (liquor license restriction).',
+          address: '2733 NE Broadway, Portland, OR 97232',
+          coordinates: { lat: 45.5370, lng: -122.6378 },
+          price: '$$$',
+          hours: 'Daily 4pm-12am',
+          website: 'https://www.halepele.com/',
+          instagram: '@halepele',
+          image: {
+            src: '',
+            alt: 'Tiki bar with exotic cocktails and tropical decor',
+          },
+        },
+        {
+          name: 'The Bye and Bye',
+          neighborhood: 'Alberta',
+          vibe: '100% vegan bar with two large patios, weekend brunch, and VegNews readers\' choice for best vegan bar.',
+          order: 'The vegan wings are legendary. "Meatball" sub, grilled cheese, or chili pie. Their signature cocktail has peach vodka, peach bourbon, lemon, and cranberry.',
+          why: 'Six friends built this bar with their own hands in 2007, then tended bar while running operations. The Lightning Bar Collective created something special—a vegan bar that doesn\'t feel like compromise. The two patios are essential in summer, the brunch on weekends is solid, and minors are allowed until 8pm. VegNews readers named it the best vegan bar in 2023. Eater included it in their 2025 list of Portland\'s best vegan restaurants.',
+          address: '1011 NE Alberta St, Portland, OR 97211',
+          coordinates: { lat: 45.5589, lng: -122.6494 },
+          price: '$$',
+          hours: 'Mon-Thu 12pm-12am, Fri 12pm-1am, Sat 10am-1am, Sun 10am-12am',
+          website: 'https://thebyeandbye.com/',
+          instagram: '@byeandbyeportland',
+          image: {
+            src: '',
+            alt: 'Vegan bar with spacious patio on Alberta Street',
+          },
+        },
+        {
+          name: 'Produce Row Café',
+          neighborhood: 'Industrial Eastside',
+          vibe: 'Portland\'s original craft beer bar since 1974. 24 taps, award-winning bourbon collection, and one of the best year-round patios in the city.',
+          order: 'Whatever local draft catches your eye. Happy hour (4-7pm) has $4 select beers and $7 cocktails. The bourbon collection is underrated.',
+          why: 'Pro Row has been the pulse of Portland\'s craft beer movement for over 50 years. From its original craft beer bar roots, it has evolved into a stunning venue that\'s as good for a casual pint as for a private event. The patio is genuinely excellent—covered and heated for Portland\'s weather. They\'ve added an award-winning bourbon collection and elevated comfort food to the beer-forward foundation.',
+          address: '204 SE Oak St, Portland, OR 97214',
+          coordinates: { lat: 45.5208, lng: -122.6594 },
+          price: '$$',
+          hours: 'Mon 12pm-4pm, Tue-Thu 12pm-7pm, Fri-Sat 12pm-8pm',
+          website: 'https://www.producerowcafe.com/',
+          instagram: '@producerowpdx',
+          image: {
+            src: '',
+            alt: 'Historic craft beer bar with extensive tap selection',
+          },
+        },
+        {
+          name: 'The Horse Brass Pub',
+          neighborhood: 'Sunnyside',
+          vibe: 'A high-church English pub that smells of fried fish and historical significance. It is the spiritual home of Portland\'s craft beer revolution.',
+          order: 'A proper pint of Younger’s Special Bitter or whatever the most aggressive IPA on tap is. And the fish and chips.',
+          why: 'Opened in 1976 by Don Younger, the Horse Brass was the first place in Portland that took beer seriously. It’s dark, the tables are scarred, and the list of 50+ taps is a masterclass in brewing. Younger was the "godfather" of the local beer scene, and his pub remains the meeting ground for brewers, nerds, and anyone who thinks "light" is a description for a lamp, not a beverage.',
+          address: '4534 SE Belmont St, Portland, OR 97215',
+          coordinates: { lat: 45.5164, lng: -122.6158 },
+          price: '$$',
+          hours: 'Daily 11am-1am',
+          website: 'https://horsebrass.com',
+          instagram: '@horsebrasspub',
+          image: {
+            src: '/portland/bars/horse-brass.png',
+            alt: 'Historic English pub interior of The Horse Brass in Portland',
+          },
+        },
+      ],
+    },
+    {
+      id: 'pdx-best-restaurants',
+      type: 'best-of',
+      category: 'restaurants',
+      title: 'Rose City Tables',
+      intro: 'Portland\'s food scene was once the best value in America. Prices have caught up, but quality remains.',
+      spots: [
+        {
+          name: 'Canard',
+          neighborhood: 'Buckman',
+          vibe: 'Wine Spectator Best of Award of Excellence winner. French bar food, 500+ wines, and a $6 burger from a two-time James Beard winner.',
+          order: 'The duck confit is the signature. Snack through the menu and explore the Burgundy-heavy wine list. Yes, the $6 burger is legit.',
+          why: 'Gabriel Rucker (two James Beard Awards) and wine director Andy Fortgang opened Canard in 2018 next to their flagship Le Pigeon. It immediately landed on Eater\'s best new restaurants list and was named Portland\'s Restaurant of the Year by three publications. The wine list emphasizes smaller producers and French regions—Burgundy, Rhône, Champagne—with over 500 labels. Now expanded to Oregon City (2022) and Beaverton (2025).',
+          address: '734 E Burnside St, Portland, OR 97214',
+          coordinates: { lat: 45.5231, lng: -122.6575 },
+          price: '$$$',
+          hours: 'Daily 4pm-10pm',
+          website: 'https://www.canardrestaurant.com/',
+          instagram: '@canard_restaurant',
+          image: {
+            src: '',
+            alt: 'French-inspired wine bar with award-winning list',
+          },
+        },
+        {
+          name: 'Yaowarat',
+          neighborhood: 'Montavilla',
+          vibe: 'Portland Monthly\'s 2024 Restaurant of the Year. Bangkok Chinatown street food from an all-star team.',
+          order: 'Kuay teow kua gai (stir-fried noodles), grilled squid, mapo tofu. The toasted buns with pandan and Thai tea custards for dessert.',
+          why: 'Named after Bangkok\'s Chinatown (a maze of seafood stalls, temples, and bars along Yaowarat Road), this restaurant opened in October 2023 from Earl Ninsom, Eric Nelson, Kyle Linden Webster (of Expatriate), and Sam Smith. Within months, it was named Portland Monthly\'s Restaurant of the Year and landed on The New York Times\' 50 Best Restaurants list. This is the spiritual successor to Pok Pok\'s legacy of bringing authentic Southeast Asian flavors to Portland.',
+          address: '7937 SE Stark St, Portland, OR 97215',
+          coordinates: { lat: 45.5190, lng: -122.5824 },
+          price: '$$',
+          hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Sun 4:30pm-9pm',
+          website: 'https://www.yaowaratpdx.com/',
+          instagram: '@yaowaratpdx',
+          image: {
+            src: '',
+            alt: 'Thai-Chinese street food from Bangkok Chinatown',
+          },
+        },
+        {
+          name: 'Screen Door',
+          neighborhood: 'Kerns',
+          vibe: 'Southern comfort food since 2006. Cooking Channel called it the "best Southern breakfast on the West Coast."',
+          order: 'Buttermilk-battered fried chicken with sweet potato waffles. Bananas Foster French toast at brunch. Biscuits and gravy (sausage or vegetarian).',
+          why: 'The line exists for a reason—Screen Door hosts 500 customers per weekend. They ranked #2 in Willamette Week\'s Best Brunch 2024 reader\'s poll. The original Burnside location opened in 2006; they\'ve since expanded to the Pearl District and Portland International Airport. Walk-ins are the primary model, but limited reservations are available. Get in line early or grab the app to add your name remotely.',
+          address: '2337 E Burnside St, Portland, OR 97214',
+          coordinates: { lat: 45.5231, lng: -122.6389 },
+          price: '$$',
+          hours: 'Daily 8:30am-2pm & 4:30pm-9pm',
+          website: 'https://screendoorrestaurant.com/',
+          instagram: '@screendoorrestaurant',
+          image: {
+            src: '',
+            alt: 'Southern fried chicken and waffles brunch',
+          },
+        },
+        {
+          name: 'Lardo',
+          neighborhood: 'Hawthorne',
+          vibe: 'Started as a food cart in 2010, now a Portland sandwich institution that "worships at the altar of bovine & swine."',
+          order: 'Korean pork shoulder with kimchi and chile mayo. Pork meatball banh mi. Porchetta with gremolata and caper mayo. Dirty fries.',
+          why: 'Rick Gencarelli moved to Portland in 2009 and launched Lardo as a food cart in 2010. Using old-school cooking techniques and all cuts of meat (mainly pork), he built a following that expanded to multiple brick-and-mortar locations. Now at Hawthorne, the Moda Center, PDX airport, and Las Vegas. The Korean pork shoulder on fluffy ciabatta is audacious. The dirty fries are covered in pork and peppers.',
+          address: '1212 SE Hawthorne Blvd, Portland, OR 97214',
+          coordinates: { lat: 45.5119, lng: -122.6534 },
+          price: '$$',
+          hours: 'Daily 11am-10pm',
+          website: 'https://www.lardosandwiches.com/',
+          instagram: '@lardopdx',
+          image: {
+            src: '',
+            alt: 'Gourmet pork sandwiches and dirty fries',
+          },
+        },
+        {
+          name: 'Ava Gene\'s',
+          neighborhood: 'Richmond',
+          vibe: 'Roman-inspired Italian with Pacific Northwest farm-fresh ingredients. #35 on The Oregonian\'s 2025 Best Portland Restaurants.',
+          order: 'The pasta is milled, extruded, and rolled in-house daily. Whatever\'s seasonal. The vegetable preparations are the real revelation.',
+          why: 'When Ava Gene\'s opened in 2012, Bon Appétit ranked it #5 on their Best New Restaurants in America list. The kitchen specializes in the artistry of pasta making—every batch is made fresh in-house. After closing during the pandemic (operating as Shipshape Goods walk-up window), the restaurant reopened in 2023 under new ownership. Portland Monthly included it in their 2025 list of "25 restaurants that made Portland." The vegetable-forward approach proves that produce can be the star.',
+          address: '3377 SE Division St, Portland, OR 97202',
+          coordinates: { lat: 45.5047, lng: -122.6306 },
+          price: '$$$',
+          hours: 'Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm',
+          website: 'https://avagenes.com/',
+          instagram: '@avagenes',
+          image: {
+            src: '',
+            alt: 'House-made pasta and seasonal Italian dishes',
+          },
+        }
+      ],
+    },
+    {
+      id: 'best-coffee-shops',
+      type: 'best-of',
+      category: 'coffee-shops',
+      title: 'Where Portland\'s Baristas Actually Drink',
+      intro: 'Ask a local for the best coffee and they\'ll laugh—"anywhere." Third-wave roasting started here, and the rising tide lifted everyone. But these are the spots where the baristas go on their days off.',
+      spots: [
+        {
+          name: 'Heart Coffee Roasters',
+          neighborhood: 'Kerns / Multiple',
+          vibe: 'The name locals think of when they close their eyes and imagine Portland coffee. Minimalist black-and-white aesthetic that lets the coffee speak.',
+          order: 'Single-origin pour-over. Whatever Kenya or Ethiopia they\'re featuring.',
+          why: 'Heart has been in business since 2009, and when Portland coffee nerds talk about the best, this is often the first name. The minimalist black-and-white decor is intentional — nothing to distract from the coffee itself. They source single-origins from Kenya, Ethiopia, and Latin America with obsessive care. The Kerns location is the original; there\'s also one on Southwest 12th.',
+          address: '2211 E Burnside St, Portland, OR 97214',
+          coordinates: { lat: 45.5230, lng: -122.6429 },
+          hours: '7am-6pm daily',
+          price: '$$',
+          website: 'https://www.heartroasters.com',
+          instagram: '@heartroasters',
+          image: {
+            src: '',
+            alt: 'Minimalist coffee shop with clean lines and pour-over bar',
+          },
+        },
+        {
+          name: 'Coava Coffee Roasters',
+          neighborhood: 'Southeast / Multiple',
+          vibe: 'The name means "green" or unroasted coffee. Fair trade obsessives with long-term farmer relationships and single-origin showcases.',
+          order: 'Whatever single-origin they\'re pouring. The complexity of each growing region is the point.',
+          why: 'Coava\'s emphasis on fair trade practices isn\'t marketing — they build long-term relationships with farmers and pay accordingly. The beans are showcased as single-origin roasts that let you taste the complexity of each growing region. The Southeast location shares space with Bamboo Revolution, creating an unexpected café-in-a-warehouse vibe.',
+          address: '1015 SE Main St, Portland, OR 97214',
+          coordinates: { lat: 45.5125, lng: -122.6538 },
+          hours: '6am-5pm daily',
+          price: '$$',
+          website: 'https://coavacoffee.com',
+          instagram: '@coaboratory',
+          image: {
+            src: '',
+            alt: 'Industrial warehouse coffee space with high ceilings',
+          },
+        },
+        {
+          name: 'Albina Press',
+          neighborhood: 'North Portland',
+          vibe: 'Arguably the most beloved café in Portland. High standards since 2004, influencing the entire third-wave scene.',
+          order: 'Espresso or cortado. They hold their baristas to high standards for a reason.',
+          why: 'Albina Press opened in 2004 as a leader in Portland\'s third-wave coffee movement. Its influence spread — Billy Wilson went on to open Barista, Matt Higgins became CEO of Coava. Many locals consider this the best coffee in Portland, full stop. The North Portland location is the original; the standards haven\'t slipped in two decades.',
+          address: '4637 N Albina Ave, Portland, OR 97217',
+          coordinates: { lat: 45.5580, lng: -122.6756 },
+          hours: '7am-5pm daily',
+          price: '$$',
+          website: 'https://albinapress.com',
+          instagram: '@albinapress',
+          image: {
+            src: '',
+            alt: 'Portland\'s beloved third-wave coffee pioneer',
+          },
+        },
+        {
+          name: 'Either/Or',
+          neighborhood: 'North Portland',
+          vibe: 'Originally a teeny-tiny Sellwood gem, now a beloved North Portland café with DIY charms. Espresso flights and inventive coffee cocktails.',
+          order: 'The espresso flight if you want to compare. Or whatever inventive coffee cocktail they\'re running.',
+          why: 'Either/Or started as a beloved shoebox in Sellwood before relocating to North Portland. They\'ve kept the same DIY charms and cult following. The espresso flights let you compare different preparations side by side, and their breakfast items are more than an afterthought. This is the kind of spot that reminds you Portland coffee is its own culture.',
+          address: '5027 N Lombard St, Portland, OR 97203',
+          coordinates: { lat: 45.5774, lng: -122.7043 },
+          hours: '8am-3pm daily',
+          price: '$$',
+          instagram: '@eitheror_cafe',
+          image: {
+            src: '',
+            alt: 'Cozy DIY coffee shop with espresso flights',
+          },
+        },
+        {
+          name: 'Push x Pull',
+          neighborhood: 'Stark / Market',
+          vibe: 'Enthusiastic baristas and unique offerings. Their natural process Kenyan is worth seeking out.',
+          order: 'Ask what\'s exciting them today. They\'ll have an opinion.',
+          why: 'Push x Pull opened their roasting space on Market to the public in late 2024, joining their original Stark location. The baristas here are genuinely enthusiastic — not performing enthusiasm, actually geeking out. Their natural process Kenyan is the kind of coffee that reminds you why you care about this stuff.',
+          address: '2809 SE Stark St, Portland, OR 97214',
+          coordinates: { lat: 45.5192, lng: -122.6367 },
+          hours: '7am-4pm daily',
+          price: '$$',
+          website: 'https://pushxpullcoffee.com',
+          instagram: '@pushxpullcoffee',
+          image: {
+            src: '',
+            alt: 'Specialty roastery with natural process Kenyan',
+          },
+        },
+        {
+          name: 'Portland Cà Phê',
+          neighborhood: 'Southeast',
+          vibe: 'Vietnamese woman-owned roaster specializing in single-origin beans from Vietnam\'s Central Highlands. The coconut cream latte is iconic.',
+          order: 'The coconut cream latte. Or cà phê sữa đá if you want it traditional. The house bánh mì is legit.',
+          why: 'Portland Cà Phê sources single-origin coffee from Vietnam\'s Central Highlands, a region often overlooked in specialty coffee. The Vietnamese coffee tradition is distinct — robusta-forward, often with condensed milk — and this shop honors it while roasting with specialty techniques. The coconut cream latte has developed a following; the house bánh mì proves they\'re serious about the whole experience.',
+          address: '1615 SE 35th Pl, Portland, OR 97214',
+          coordinates: { lat: 45.5085, lng: -122.6278 },
+          hours: '8am-4pm Wed-Sun',
+          price: '$$',
+          website: 'https://portlandcaphe.com',
+          instagram: '@portlandcaphe',
+          image: {
+            src: '',
+            alt: 'Vietnamese iced coffee with condensed milk',
+          },
+        },
+        {
+          name: 'Stumptown Coffee Roasters',
+          neighborhood: 'Multiple / Downtown',
+          vibe: 'The corporate ancestor of the third-wave, still making remarkably good coffee in spaces that feel like the 1920s met the 2020s.',
+          order: 'Hair Bender espresso or a Holler Mountain pour-over.',
+          why: 'Duane Sorenson founded Stumptown in 1999 and essentially invented the "direct trade" model that everyone else now claims. While they’ve scaled (and were bought by Peet\'s), the quality control hasn\'t slipped. The Ace Hotel location on Harvey Milk Street is the quintessential "Portland in a cup" experience—moody, wood-heavy, and full of people pretending to be writers.',
+          address: '1026 SW Harvey Milk St, Portland, OR 97205',
+          coordinates: { lat: 45.5228, lng: -122.6821 },
+          hours: '7am-6pm daily',
+          price: '$$',
+          website: 'https://stumptowncoffee.com',
+          instagram: '@stumptowncoffee',
+          image: {
+            src: '/portland/coffee/stumptown.png',
+            alt: 'Iconic Stumptown Coffee inside the Ace Hotel',
+          },
+        },
+        {
+          name: 'Case Study Coffee',
+          neighborhood: 'Downtown / Northeast',
+          vibe: 'Intellectual, precise, and less scene-y than Heart or Coava. This is where people go to actually drink coffee, not just be seen with it.',
+          order: 'A seasonal latte with house-made syrups or a meticulous pour-over.',
+          why: 'Case Study is for the purists. Their roasting is delicate, their milk-work is perfection, and their spaces have a mature, mid-century academic feel. It’s the coffee shop equivalent of a well-curated syllabus. The Downtown location on Yamhill is a perfect refuge from the chaos of Pioneer Courthouse Square.',
+          address: '802 SW 10th Ave, Portland, OR 97205',
+          coordinates: { lat: 45.5204, lng: -122.6811 },
+          hours: '7:30am-5pm daily',
+          price: '$$',
+          website: 'https://casestudycoffee.com',
+          instagram: '@casestudycoffee',
+          image: {
+            src: '/portland/coffee/case-study.png',
+            alt: 'Clean, modern interior of Case Study Coffee',
+          },
+        },
+      ],
+    },
+    {
+      id: 'pdx-dark-history',
+      type: 'section',
+      title: 'Weird & Violent',
+      teaser: 'Missing children, shanghaiing tunnels, and the blood beneath the flannel',
+      intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. A child walked into his elementary school and never walked out. The city earned its reputation as "Shanghai Capital of the World" by drugging men through trapdoors and selling them to ship captains. Its second-largest city was washed away in a flood—and officials told residents the dikes were safe 35 minutes before they collapsed. This was the only state admitted to the Union with a Black exclusion clause in its constitution. Serial killers hunted along its highways and dumped bodies in its beloved parks. The ghosts still wander the saloons and mansions. Portland\'s weirdness was always there—but so was the violence. It just wore better boots.',
+      items: [
+        {
+          id: 'pdx-dark-6',
+          type: 'dark-history',
+          category: 'unsolved',
+          year: '2010',
+          title: 'A Second-Grader Walked Into School and Vanished',
+          body: 'June 4, 2010. Seven-year-old Kyron Horman posed for a photo in front of his science fair project—a display about tree frogs. His stepmother Terri snapped the picture at Skyline Elementary in Portland\'s West Hills. It was 8:45 a.m. By 3:30 p.m., Kyron was gone. What followed was the largest criminal investigation in Oregon history: 1,300 searchers combing the West Hills for ten days straight. No trace. Terri failed two polygraph tests. Investigators discovered she\'d tried to hire the family landscaper to kill her husband months earlier. A judge called her the "prime suspect." She has never been charged. Fifteen years later, over 4,000 tips from around the world have led nowhere. A $50,000 reward sits unclaimed. Kyron\'s glasses are still missing. So is Kyron. He walked into his elementary school on a Friday morning and never walked out.',
+          verdict: 'Oregon\'s largest criminal investigation. 4,000+ tips. Zero arrests. The case remains open.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Kyron Horman Case',
+              publisher: 'Multnomah County Sheriff\'s Office',
+              url: 'https://www.mcso.us/site/kyron-horman',
             },
-          },
-          {
-            name: 'Yaowarat',
-            neighborhood: 'Montavilla',
-            vibe: 'Portland Monthly\'s 2024 Restaurant of the Year. Bangkok Chinatown street food from an all-star team.',
-            order: 'Kuay teow kua gai (stir-fried noodles), grilled squid, mapo tofu. The toasted buns with pandan and Thai tea custards for dessert.',
-            why: 'Named after Bangkok\'s Chinatown (a maze of seafood stalls, temples, and bars along Yaowarat Road), this restaurant opened in October 2023 from Earl Ninsom, Eric Nelson, Kyle Linden Webster (of Expatriate), and Sam Smith. Within months, it was named Portland Monthly\'s Restaurant of the Year and landed on The New York Times\' 50 Best Restaurants list. This is the spiritual successor to Pok Pok\'s legacy of bringing authentic Southeast Asian flavors to Portland.',
-            address: '7937 SE Stark St, Portland, OR 97215',
-            coordinates: { lat: 45.5190, lng: -122.5824 },
-            price: '$$',
-            hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Sun 4:30pm-9pm',
-            website: 'https://www.yaowaratpdx.com/',
-            instagram: '@yaowaratpdx',
-            image: {
-              src: '',
-              alt: 'Thai-Chinese street food from Bangkok Chinatown',
+            {
+              type: 'article',
+              title: 'Kyron Horman: 15 years later',
+              publisher: 'KGW',
+              url: 'https://www.kgw.com/kyron-horman',
             },
-          },
-          {
-            name: 'Screen Door',
-            neighborhood: 'Kerns',
-            vibe: 'Southern comfort food since 2006. Cooking Channel called it the "best Southern breakfast on the West Coast."',
-            order: 'Buttermilk-battered fried chicken with sweet potato waffles. Bananas Foster French toast at brunch. Biscuits and gravy (sausage or vegetarian).',
-            why: 'The line exists for a reason—Screen Door hosts 500 customers per weekend. They ranked #2 in Willamette Week\'s Best Brunch 2024 reader\'s poll. The original Burnside location opened in 2006; they\'ve since expanded to the Pearl District and Portland International Airport. Walk-ins are the primary model, but limited reservations are available. Get in line early or grab the app to add your name remotely.',
-            address: '2337 E Burnside St, Portland, OR 97214',
-            coordinates: { lat: 45.5231, lng: -122.6389 },
-            price: '$$',
-            hours: 'Daily 8:30am-2pm & 4:30pm-9pm',
-            website: 'https://screendoorrestaurant.com/',
-            instagram: '@screendoorrestaurant',
-            image: {
-              src: '',
-              alt: 'Southern fried chicken and waffles brunch',
+            {
+              type: 'article',
+              title: 'Disappearance of Kyron Horman',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Disappearance_of_Kyron_Horman',
             },
-          },
-          {
-            name: 'Lardo',
-            neighborhood: 'Hawthorne',
-            vibe: 'Started as a food cart in 2010, now a Portland sandwich institution that "worships at the altar of bovine & swine."',
-            order: 'Korean pork shoulder with kimchi and chile mayo. Pork meatball banh mi. Porchetta with gremolata and caper mayo. Dirty fries.',
-            why: 'Rick Gencarelli moved to Portland in 2009 and launched Lardo as a food cart in 2010. Using old-school cooking techniques and all cuts of meat (mainly pork), he built a following that expanded to multiple brick-and-mortar locations. Now at Hawthorne, the Moda Center, PDX airport, and Las Vegas. The Korean pork shoulder on fluffy ciabatta is audacious. The dirty fries are covered in pork and peppers.',
-            address: '1212 SE Hawthorne Blvd, Portland, OR 97214',
-            coordinates: { lat: 45.5119, lng: -122.6534 },
-            price: '$$',
-            hours: 'Daily 11am-10pm',
-            website: 'https://www.lardosandwiches.com/',
-            instagram: '@lardopdx',
-            image: {
-              src: '',
-              alt: 'Gourmet pork sandwiches and dirty fries',
+            {
+              type: 'documentary',
+              title: 'Little Lost Boy: The Kyron Horman Story',
+              platform: 'Investigation Discovery',
+              year: '2020',
+              url: 'https://www.investigationdiscovery.com/shows/people-magazine-investigates/kyron-horman',
             },
-          },
-          {
-            name: 'Ava Gene\'s',
-            neighborhood: 'Richmond',
-            vibe: 'Roman-inspired Italian with Pacific Northwest farm-fresh ingredients. #35 on The Oregonian\'s 2025 Best Portland Restaurants.',
-            order: 'The pasta is milled, extruded, and rolled in-house daily. Whatever\'s seasonal. The vegetable preparations are the real revelation.',
-            why: 'When Ava Gene\'s opened in 2012, Bon Appétit ranked it #5 on their Best New Restaurants in America list. The kitchen specializes in the artistry of pasta making—every batch is made fresh in-house. After closing during the pandemic (operating as Shipshape Goods walk-up window), the restaurant reopened in 2023 under new ownership. Portland Monthly included it in their 2025 list of "25 restaurants that made Portland." The vegetable-forward approach proves that produce can be the star.',
-            address: '3377 SE Division St, Portland, OR 97202',
-            coordinates: { lat: 45.5047, lng: -122.6306 },
-            price: '$$$',
-            hours: 'Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm',
-            website: 'https://avagenes.com/',
-            instagram: '@avagenes',
-            image: {
-              src: '',
-              alt: 'House-made pasta and seasonal Italian dishes',
+            {
+              type: 'video',
+              title: 'Where is Kyron Horman? The Unsolved Mystery',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=KyronHorman',
             },
-          }
-        ],
-      },
-      {
-        id: 'best-coffee-shops',
-        type: 'best-of',
-        category: 'coffee-shops',
-        title: 'Where Portland\'s Baristas Actually Drink',
-        intro: 'Ask a local for the best coffee and they\'ll laugh—"anywhere." Third-wave roasting started here, and the rising tide lifted everyone. But these are the spots where the baristas go on their days off.',
-        spots: [
-          {
-            name: 'Heart Coffee Roasters',
-            neighborhood: 'Kerns / Multiple',
-            vibe: 'The name locals think of when they close their eyes and imagine Portland coffee. Minimalist black-and-white aesthetic that lets the coffee speak.',
-            order: 'Single-origin pour-over. Whatever Kenya or Ethiopia they\'re featuring.',
-            why: 'Heart has been in business since 2009, and when Portland coffee nerds talk about the best, this is often the first name. The minimalist black-and-white decor is intentional — nothing to distract from the coffee itself. They source single-origins from Kenya, Ethiopia, and Latin America with obsessive care. The Kerns location is the original; there\'s also one on Southwest 12th.',
-            address: '2211 E Burnside St, Portland, OR 97214',
-            coordinates: { lat: 45.5230, lng: -122.6429 },
-            hours: '7am-6pm daily',
-            price: '$$',
-            website: 'https://www.heartroasters.com',
-            instagram: '@heartroasters',
-            image: {
-              src: '',
-              alt: 'Minimalist coffee shop with clean lines and pour-over bar',
+            {
+              type: 'podcast',
+              title: 'The Disappearance of Kyron Horman',
+              show: 'True Crime Garage',
+              platform: 'Spotify',
+              url: 'https://open.spotify.com/episode/kyron-horman',
             },
+            {
+              type: 'article',
+              title: 'Timeline: The Kyron Horman case',
+              publisher: 'KOIN 6',
+              url: 'https://www.koin.com/news/kyron-horman-timeline/',
+            }
+          ],
+          location: {
+            name: 'Skyline Elementary School, West Hills',
+            stillExists: true,
           },
-          {
-            name: 'Coava Coffee Roasters',
-            neighborhood: 'Southeast / Multiple',
-            vibe: 'The name means "green" or unroasted coffee. Fair trade obsessives with long-term farmer relationships and single-origin showcases.',
-            order: 'Whatever single-origin they\'re pouring. The complexity of each growing region is the point.',
-            why: 'Coava\'s emphasis on fair trade practices isn\'t marketing — they build long-term relationships with farmers and pay accordingly. The beans are showcased as single-origin roasts that let you taste the complexity of each growing region. The Southeast location shares space with Bamboo Revolution, creating an unexpected café-in-a-warehouse vibe.',
-            address: '1015 SE Main St, Portland, OR 97214',
-            coordinates: { lat: 45.5125, lng: -122.6538 },
-            hours: '6am-5pm daily',
-            price: '$$',
-            website: 'https://coavacoffee.com',
-            instagram: '@coaboratory',
-            image: {
-              src: '',
-              alt: 'Industrial warehouse coffee space with high ceilings',
+          images: [
+            {
+              src: '/portland/Dark-history/kyron.png',
+              alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-2',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
+          category: 'crime',
+          year: '1850s–1940s',
+          title: 'Portland Drugged Men Through Trapdoors and Sold Them to Sea Captains',
+          body: 'Beneath Portland\'s Old Town Chinatown lies a network of tunnels connecting basements, saloons, and the waterfront. In the late 1800s and early 1900s, these passages were used for one of the city\'s most profitable side hustles: shanghaiing. Here\'s how it worked: You\'d stumble into Erickson\'s Saloon or the Snug Harbor for a drink. The bartender would slip you a mickey. You\'d wake up days later in the hold of a ship headed to Shanghai, legally bound to a two-year labor contract you never signed. Portland perfected this operation—at its peak, 1,500 men per year vanished through trapdoors. The city earned the title "Shanghai Capital of the World." Ship captains paid $50 a head (about $1,700 today) for warm bodies. The tunnels also doubled as opium dens, brothels, and murder disposal sites. The practice faded by the 1940s, but the tunnels remain—now rebranded as "ghost tours" through the darkness where human trafficking was good business.',
+          verdict: 'An estimated 1,500 people per year were drugged, kidnapped, and sold into forced labor. The tunnels now charge admission.',
+          sources: [
+            {
+              type: 'article',
+              title: 'The Shanghai Tunnels Myth',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
             },
-          },
-          {
-            name: 'Albina Press',
-            neighborhood: 'North Portland',
-            vibe: 'Arguably the most beloved café in Portland. High standards since 2004, influencing the entire third-wave scene.',
-            order: 'Espresso or cortado. They hold their baristas to high standards for a reason.',
-            why: 'Albina Press opened in 2004 as a leader in Portland\'s third-wave coffee movement. Its influence spread — Billy Wilson went on to open Barista, Matt Higgins became CEO of Coava. Many locals consider this the best coffee in Portland, full stop. The North Portland location is the original; the standards haven\'t slipped in two decades.',
-            address: '4637 N Albina Ave, Portland, OR 97217',
-            coordinates: { lat: 45.5580, lng: -122.6756 },
-            hours: '7am-5pm daily',
-            price: '$$',
-            website: 'https://albinapress.com',
-            instagram: '@albinapress',
-            image: {
-              src: '',
-              alt: 'Portland\'s beloved third-wave coffee pioneer',
+            {
+              type: 'article',
+              title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
+              publisher: 'OPB',
+              url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
             },
-          },
-          {
-            name: 'Either/Or',
-            neighborhood: 'North Portland',
-            vibe: 'Originally a teeny-tiny Sellwood gem, now a beloved North Portland café with DIY charms. Espresso flights and inventive coffee cocktails.',
-            order: 'The espresso flight if you want to compare. Or whatever inventive coffee cocktail they\'re running.',
-            why: 'Either/Or started as a beloved shoebox in Sellwood before relocating to North Portland. They\'ve kept the same DIY charms and cult following. The espresso flights let you compare different preparations side by side, and their breakfast items are more than an afterthought. This is the kind of spot that reminds you Portland coffee is its own culture.',
-            address: '5027 N Lombard St, Portland, OR 97203',
-            coordinates: { lat: 45.5774, lng: -122.7043 },
-            hours: '8am-3pm daily',
-            price: '$$',
-            instagram: '@eitheror_cafe',
-            image: {
-              src: '',
-              alt: 'Cozy DIY coffee shop with espresso flights',
+            {
+              type: 'video',
+              title: 'Shanghai Tunnels of Portland: Dark History Beneath the City',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=ShanghaiTunnels',
             },
-          },
-          {
-            name: 'Push x Pull',
-            neighborhood: 'Stark / Market',
-            vibe: 'Enthusiastic baristas and unique offerings. Their natural process Kenyan is worth seeking out.',
-            order: 'Ask what\'s exciting them today. They\'ll have an opinion.',
-            why: 'Push x Pull opened their roasting space on Market to the public in late 2024, joining their original Stark location. The baristas here are genuinely enthusiastic — not performing enthusiasm, actually geeking out. Their natural process Kenyan is the kind of coffee that reminds you why you care about this stuff.',
-            address: '2809 SE Stark St, Portland, OR 97214',
-            coordinates: { lat: 45.5192, lng: -122.6367 },
-            hours: '7am-4pm daily',
-            price: '$$',
-            website: 'https://pushxpullcoffee.com',
-            instagram: '@pushxpullcoffee',
-            image: {
-              src: '',
-              alt: 'Specialty roastery with natural process Kenyan',
+            {
+              type: 'article',
+              title: 'Shanghai Tunnel Tours',
+              publisher: 'US Ghost Adventures',
+              url: 'https://usghostadventures.com/portland/haunted-places/shanghai-tunnels/',
             },
-          },
-          {
-            name: 'Portland Cà Phê',
-            neighborhood: 'Southeast',
-            vibe: 'Vietnamese woman-owned roaster specializing in single-origin beans from Vietnam\'s Central Highlands. The coconut cream latte is iconic.',
-            order: 'The coconut cream latte. Or cà phê sữa đá if you want it traditional. The house bánh mì is legit.',
-            why: 'Portland Cà Phê sources single-origin coffee from Vietnam\'s Central Highlands, a region often overlooked in specialty coffee. The Vietnamese coffee tradition is distinct — robusta-forward, often with condensed milk — and this shop honors it while roasting with specialty techniques. The coconut cream latte has developed a following; the house bánh mì proves they\'re serious about the whole experience.',
-            address: '1615 SE 35th Pl, Portland, OR 97214',
-            coordinates: { lat: 45.5085, lng: -122.6278 },
-            hours: '8am-4pm Wed-Sun',
-            price: '$$',
-            website: 'https://portlandcaphe.com',
-            instagram: '@portlandcaphe',
-            image: {
-              src: '',
-              alt: 'Vietnamese iced coffee with condensed milk',
+            {
+              type: 'book',
+              title: 'Kidnapped in Portland: The Story of the Shanghai Tunnels',
+              author: 'Michael P. Jones',
+              isbn: '9780615393667',
+              year: '2010',
+              url: 'https://www.amazon.com/Kidnapped-Portland-Shanghai-Tunnels-Michael/dp/0615393667',
             },
-          }
-        ],
-      },
-      {
-        id: 'pdx-dark-history',
-        type: 'section',
-        title: 'Weird & Violent',
-        teaser: 'Missing children, shanghaiing tunnels, and the blood beneath the flannel',
-        intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. A child walked into his elementary school and never walked out. The city earned its reputation as "Shanghai Capital of the World" by drugging men through trapdoors and selling them to ship captains. Its second-largest city was washed away in a flood—and officials told residents the dikes were safe 35 minutes before they collapsed. This was the only state admitted to the Union with a Black exclusion clause in its constitution. Serial killers hunted along its highways and dumped bodies in its beloved parks. The ghosts still wander the saloons and mansions. Portland\'s weirdness was always there—but so was the violence. It just wore better boots.',
-        items: [
-          {
-            id: 'pdx-dark-6',
-            type: 'dark-history',
-            category: 'unsolved',
-            year: '2010',
-            title: 'A Second-Grader Walked Into School and Vanished',
-            body: 'June 4, 2010. Seven-year-old Kyron Horman posed for a photo in front of his science fair project—a display about tree frogs. His stepmother Terri snapped the picture at Skyline Elementary in Portland\'s West Hills. It was 8:45 a.m. By 3:30 p.m., Kyron was gone. What followed was the largest criminal investigation in Oregon history: 1,300 searchers combing the West Hills for ten days straight. No trace. Terri failed two polygraph tests. Investigators discovered she\'d tried to hire the family landscaper to kill her husband months earlier. A judge called her the "prime suspect." She has never been charged. Fifteen years later, over 4,000 tips from around the world have led nowhere. A $50,000 reward sits unclaimed. Kyron\'s glasses are still missing. So is Kyron. He walked into his elementary school on a Friday morning and never walked out.',
-            verdict: 'Oregon\'s largest criminal investigation. 4,000+ tips. Zero arrests. The case remains open.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Kyron Horman Case',
-                publisher: 'Multnomah County Sheriff\'s Office',
-                url: 'https://www.mcso.us/site/kyron-horman',
-              },
-              {
-                type: 'article',
-                title: 'Kyron Horman: 15 years later',
-                publisher: 'KGW',
-                url: 'https://www.kgw.com/kyron-horman',
-              },
-              {
-                type: 'article',
-                title: 'Disappearance of Kyron Horman',
-                publisher: 'Wikipedia',
-                url: 'https://en.wikipedia.org/wiki/Disappearance_of_Kyron_Horman',
-              },
-              {
-                type: 'documentary',
-                title: 'Little Lost Boy: The Kyron Horman Story',
-                platform: 'Investigation Discovery',
-                year: '2020',
-                url: 'https://www.investigationdiscovery.com/shows/people-magazine-investigates/kyron-horman',
-              },
-              {
-                type: 'video',
-                title: 'Where is Kyron Horman? The Unsolved Mystery',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=KyronHorman',
-              },
-              {
-                type: 'podcast',
-                title: 'The Disappearance of Kyron Horman',
-                show: 'True Crime Garage',
-                platform: 'Spotify',
-                url: 'https://open.spotify.com/episode/kyron-horman',
-              },
-              {
-                type: 'article',
-                title: 'Timeline: The Kyron Horman case',
-                publisher: 'KOIN 6',
-                url: 'https://www.koin.com/news/kyron-horman-timeline/',
-              }
-            ],
-            location: {
-              name: 'Skyline Elementary School, West Hills',
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'Shanghaiing',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Shanghaiing',
+            }
+          ],
+          location: {
+            name: 'Old Town Chinatown (underground)',
+            stillExists: true,
+          },
+          images: [
+            {
+              src: '/portland/curiosities/shanghai-tunnels.png',
+              alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-3',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 2,
+          category: 'disaster',
+          year: '1948',
+          title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
+          body: 'Memorial Day morning, May 30, 1948. Vanport, Oregon\'s second-largest city—40,000 residents, 40% Black, built in 110 days during WWII to house Kaiser Shipyard workers—woke up to a flyer from the Housing Authority: "DIKES ARE SAFE AT PRESENT. YOU WILL BE WARNED IF NECESSARY. YOU WILL HAVE TIME TO LEAVE. DON\'T GET EXCITED." At 4:05 p.m., the railroad berm holding back the Columbia River collapsed. Water hit Vanport at 30 mph. Residents had 35 minutes. Fifteen people died officially—the real count was never confirmed. Eighteen thousand were left homeless. Nearly a third were Black, living in a state that had explicitly banned Black residency just 22 years earlier. Discriminatory housing laws barred survivors from most of Portland. Black residents were funneled into the overcrowded Albina district. By 1960, 80% of Black Portlanders lived in Albina—a concentration camp created by policy, not choice. The flood has been compared to Katrina for one reason: the government lied, the levees failed, and Black communities paid the price.',
+          verdict: 'A city of 40,000 erased in an afternoon. The site is now a dog park and drag racing strip.',
+          sources: [
+            {
+              type: 'article',
+              title: 'The Vanport Flood',
+              publisher: 'Oregon Historical Society',
+              url: 'https://www.ohs.org/research-and-library/oregon-historical-quarterly/upload/1993-Winter.pdf',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/kyron.png',
-                alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-2',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 1,
-            category: 'crime',
-            year: '1850s–1940s',
-            title: 'Portland Drugged Men Through Trapdoors and Sold Them to Sea Captains',
-            body: 'Beneath Portland\'s Old Town Chinatown lies a network of tunnels connecting basements, saloons, and the waterfront. In the late 1800s and early 1900s, these passages were used for one of the city\'s most profitable side hustles: shanghaiing. Here\'s how it worked: You\'d stumble into Erickson\'s Saloon or the Snug Harbor for a drink. The bartender would slip you a mickey. You\'d wake up days later in the hold of a ship headed to Shanghai, legally bound to a two-year labor contract you never signed. Portland perfected this operation—at its peak, 1,500 men per year vanished through trapdoors. The city earned the title "Shanghai Capital of the World." Ship captains paid $50 a head (about $1,700 today) for warm bodies. The tunnels also doubled as opium dens, brothels, and murder disposal sites. The practice faded by the 1940s, but the tunnels remain—now rebranded as "ghost tours" through the darkness where human trafficking was good business.',
-            verdict: 'An estimated 1,500 people per year were drugged, kidnapped, and sold into forced labor. The tunnels now charge admission.',
-            sources: [
-              {
-                type: 'article',
-                title: 'The Shanghai Tunnels Myth',
-                publisher: 'Oregon Encyclopedia',
-                url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
-              },
-              {
-                type: 'article',
-                title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
-                publisher: 'OPB',
-                url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
-              },
-              {
-                type: 'video',
-                title: 'Shanghai Tunnels of Portland: Dark History Beneath the City',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=ShanghaiTunnels',
-              },
-              {
-                type: 'article',
-                title: 'Shanghai Tunnel Tours',
-                publisher: 'US Ghost Adventures',
-                url: 'https://usghostadventures.com/portland/haunted-places/shanghai-tunnels/',
-              },
-              {
-                type: 'book',
-                title: 'Kidnapped in Portland: The Story of the Shanghai Tunnels',
-                author: 'Michael P. Jones',
-                isbn: '9780615393667',
-                year: '2010',
-                url: 'https://www.amazon.com/Kidnapped-Portland-Shanghai-Tunnels-Michael/dp/0615393667',
-              },
-              {
-                type: 'article',
-                title: 'Shanghaiing',
-                publisher: 'Wikipedia',
-                url: 'https://en.wikipedia.org/wiki/Shanghaiing',
-              }
-            ],
-            location: {
-              name: 'Old Town Chinatown (underground)',
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'The Vanport Flood: When Portland\'s Second-Largest City Vanished in a Day',
+              publisher: 'Smithsonian Magazine',
+              url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/',
             },
-            images: [
-              {
-                src: '/portland/curiosities/shanghai-tunnels.png',
-                alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-3',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 2,
-            category: 'disaster',
-            year: '1948',
-            title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
-            body: 'Memorial Day morning, May 30, 1948. Vanport, Oregon\'s second-largest city—40,000 residents, 40% Black, built in 110 days during WWII to house Kaiser Shipyard workers—woke up to a flyer from the Housing Authority: "DIKES ARE SAFE AT PRESENT. YOU WILL BE WARNED IF NECESSARY. YOU WILL HAVE TIME TO LEAVE. DON\'T GET EXCITED." At 4:05 p.m., the railroad berm holding back the Columbia River collapsed. Water hit Vanport at 30 mph. Residents had 35 minutes. Fifteen people died officially—the real count was never confirmed. Eighteen thousand were left homeless. Nearly a third were Black, living in a state that had explicitly banned Black residency just 22 years earlier. Discriminatory housing laws barred survivors from most of Portland. Black residents were funneled into the overcrowded Albina district. By 1960, 80% of Black Portlanders lived in Albina—a concentration camp created by policy, not choice. The flood has been compared to Katrina for one reason: the government lied, the levees failed, and Black communities paid the price.',
-            verdict: 'A city of 40,000 erased in an afternoon. The site is now a dog park and drag racing strip.',
-            sources: [
-              {
-                type: 'article',
-                title: 'The Vanport Flood',
-                publisher: 'Oregon Historical Society',
-                url: 'https://www.ohs.org/research-and-library/oregon-historical-quarterly/upload/1993-Winter.pdf',
-              },
-              {
-                type: 'article',
-                title: 'The Vanport Flood: When Portland\'s Second-Largest City Vanished in a Day',
-                publisher: 'Smithsonian Magazine',
-                url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/',
-              },
-              {
-                type: 'article',
-                title: 'When Portland\'s Vanport City Flooded and Washed Away',
-                publisher: 'NPR Code Switch',
-                url: 'https://www.npr.org/sections/codeswitch/2021/02/03/963465780/vanport-oregon-flood-black-displacement',
-              },
-              {
-                type: 'documentary',
-                title: 'Vanport',
-                platform: 'Oregon Experience (PBS)',
-                year: '2020',
-                url: 'https://www.opb.org/television/programs/oregon-experience/episode/vanport/',
-              },
-              {
-                type: 'video',
-                title: 'The Vanport Flood: Oregon\'s Forgotten Disaster',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=VanportFlood',
-              },
-              {
-                type: 'book',
-                title: 'Vanport',
-                author: 'Manly Maben',
-                isbn: '9780870714672',
-                year: '1987',
-                url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678',
-              }
-            ],
-            location: {
-              name: 'Delta Park (former Vanport site)',
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'When Portland\'s Vanport City Flooded and Washed Away',
+              publisher: 'NPR Code Switch',
+              url: 'https://www.npr.org/sections/codeswitch/2021/02/03/963465780/vanport-oregon-flood-black-displacement',
             },
-            images: [
-              {
-                src: '/portland/curiosities/portland-flood.png',
-                alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-7',
-            type: 'dark-history',
-            featured: true,
-            featuredOrder: 3,
-            category: 'haunting',
-            year: '1905–present',
-            title: 'The Bar Called "Bucket of Blood" Where Ghosts Order Drinks',
-            body: 'The White Eagle Saloon opened in 1905 to serve Polish immigrants, longshoremen, and men actively seeking violence. They called it "Bucket of Blood"—not metaphorically. Brawls were so common and brutal that blood literally pooled on the floor. The bar was also a shanghaiing hub: drink here, wake up on a ship to Shanghai. Drunken sailors were drugged and dragged through the basement to the waterfront, sold like cargo. Today, the White Eagle is a McMenamins property—and McMenamins\' most haunted one. Two ghosts have names and habits: Sam, a pre-Prohibition bartender who still lingers behind the bar, and Rose, whose backstory is contested but whose presence is not. Maybe she was a sex worker held captive in the basement. Maybe she was a worker murdered by a jealous lover. Either way, she weeps in the hotel hallway. Visitors report phantom fingertips on their necks, whispers in empty rooms, the feeling of being watched by something that doesn\'t blink. A waitress was shoved down the stairs by invisible hands. The beer\'s cold. The ghosts are colder.',
-            verdict: 'USA Today named Portland one of America\'s ten most haunted cities. The White Eagle is where the dead drink.',
-            sources: [
-              {
-                type: 'article',
-                title: 'White Eagle Saloon & Hotel',
-                publisher: 'McMenamins',
-                url: 'https://www.mcmenamins.com/white-eagle-saloon',
-              },
-              {
-                type: 'article',
-                title: 'The Haunted White Eagle Saloon',
-                publisher: 'US Ghost Adventures',
-                url: 'https://usghostadventures.com/portland/haunted-places/white-eagle-saloon/',
-              },
-              {
-                type: 'article',
-                title: 'White Eagle Saloon: Portland\'s Most Haunted Bar',
-                publisher: 'Haunted Rooms America',
-                url: 'https://www.hauntedrooms.com/oregon/portland/white-eagle-saloon',
-              },
-              {
-                type: 'video',
-                title: 'Ghost Hunting at the White Eagle Saloon',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=WhiteEagleGhosts',
-              },
-              {
-                type: 'article',
-                title: 'Portland\'s Most Haunted Locations',
-                publisher: 'Travel Channel',
-                url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations',
-              }
-            ],
-            location: {
-              name: 'White Eagle Saloon, 836 N Russell St',
-              stillExists: true,
+            {
+              type: 'documentary',
+              title: 'Vanport',
+              platform: 'Oregon Experience (PBS)',
+              year: '2020',
+              url: 'https://www.opb.org/television/programs/oregon-experience/episode/vanport/',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/saloon.png',
-                alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-4',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1980–1981',
-            title: 'The Failed NFL Player Who Became One of America\'s Deadliest Serial Killers',
-            body: 'Randall Woodfield was drafted by the Green Bay Packers in 1974. Cut during training camp for "personality issues." By 1980, he was hunting women along the I-5 corridor from Washington to California, turning rejection into a five-month killing spree. He robbed, raped, stabbed, beat, and shot his victims—strangers and acquaintances both. He wore disguises. He was methodical. The first confirmed victim was Cherie Ayers, 29, found dead in her Portland home in January 1981. Bodies appeared throughout Oregon that winter. Woodfield was arrested in March 1981 after witnesses identified him. He was convicted of one murder. DNA has since linked him to at least 18 killings. Investigators suspect 44. He has never confessed. Ann Rule, who wrote "The I-5 Killer," suggested his rage stemmed from inadequacy—failing to make the NFL, failing to be somebody. So he became somebody by destroying women. He remains in Oregon State Penitentiary, still blaming everyone but himself.',
-            verdict: 'Convicted of one murder. DNA-linked to 18. Suspected in 44. CBS called him one of America\'s deadliest serial killers.',
-            sources: [
-              {
-                type: 'book',
-                title: 'The I-5 Killer',
-                author: 'Ann Rule',
-                isbn: '9780451403544',
-                year: '1984',
-                url: 'https://www.amazon.com/I-5-Killer-Ann-Rule/dp/0451403541',
-              },
-              {
-                type: 'article',
-                title: 'Randall Woodfield: The I-5 Killer',
-                publisher: 'All That\'s Interesting',
-                url: 'https://allthatsinteresting.com/randall-woodfield',
-              },
-              {
-                type: 'documentary',
-                title: 'The I-5 Killer',
-                platform: 'Oxygen',
-                url: 'https://www.oxygen.com/mark-of-a-killer/crime-news/randall-woodfield-i-5-killer-murdered-women-along-west-coast',
-              },
-              {
-                type: 'video',
-                title: 'The I-5 Killer: Randall Woodfield',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=I5Killer',
-              },
-              {
-                type: 'article',
-                title: 'Randall Woodfield',
-                publisher: 'Wikipedia',
-                url: 'https://en.wikipedia.org/wiki/Randall_Woodfield',
-              },
-              {
-                type: 'podcast',
-                title: 'The I-5 Killer',
-                show: 'Serial Killers',
-                platform: 'Spotify',
-                url: 'https://open.spotify.com/episode/I5Killer',
-              }
-            ],
-            location: {
-              name: 'Interstate 5 corridor',
-              stillExists: true,
+            {
+              type: 'video',
+              title: 'The Vanport Flood: Oregon\'s Forgotten Disaster',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=VanportFlood',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/i-5-killer.png',
-                alt: 'Historical documentation and evidence related to the I-5 Killer case',
-              }
-            ],
+            {
+              type: 'book',
+              title: 'Vanport',
+              author: 'Manly Maben',
+              isbn: '9780870714672',
+              year: '1987',
+              url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678',
+            }
+          ],
+          location: {
+            name: 'Delta Park (former Vanport site)',
+            stillExists: true,
           },
-          {
-            id: 'pdx-dark-8',
-            type: 'dark-history',
-            category: 'haunting',
-            year: '1914–present',
-            title: 'The Mansion Where Dead Newspaper Barons Still Walk the Gardens',
-            body: 'Henry Pittock built his French Renaissance château in Portland\'s West Hills in 1914—22 rooms perched 1,000 feet above the city, paid for with newspaper money from The Oregonian. The mansion was absurdly ahead of its time: central vacuum system, intercom, walk-in refrigerator, elevator. Georgiana died in 1918, Henry followed a year later. Since then, visitors report phantom footsteps echoing through empty hallways, objects moving on their own, and the unmistakable scent of roses in rooms with no flowers. Some have seen the Pittocks walking hand-in-hand through the gardens—still together in death, still surveying their empire. Georgiana appears in upstairs windows, watching the city. Staff have photographed women reflected in mirrors when no one else was there. The mansion is now a museum. The Pittocks never got the memo. They still live there, wearing their best clothes, hosting guests who can\'t see them back.',
-            verdict: 'Portland\'s most elegant haunting. The mansion charges admission. The ghosts appear for free.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Pittock Mansion',
-                publisher: 'Pittock Mansion Society',
-                url: 'https://pittockmansion.org/',
-              },
-              {
-                type: 'article',
-                title: 'The Haunted Pittock Mansion',
-                publisher: 'US Ghost Adventures',
-                url: 'https://usghostadventures.com/portland/haunted-places/pittock-mansion/',
-              },
-              {
-                type: 'article',
-                title: 'Pittock Mansion: Portland\'s Elegant Ghost Story',
-                publisher: 'Haunted Rooms America',
-                url: 'https://www.hauntedrooms.com/oregon/portland/pittock-mansion',
-              },
-              {
-                type: 'video',
-                title: 'Haunted Pittock Mansion Investigation',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=PittockGhosts',
-              },
-              {
-                type: 'article',
-                title: 'Is Pittock Mansion Really Haunted?',
-                publisher: 'Portland Living',
-                url: 'https://www.portlandliving.com/pittock-mansion-haunted/',
-              }
-            ],
-            location: {
-              name: 'Pittock Mansion, 3229 NW Pittock Dr',
-              stillExists: true,
+          images: [
+            {
+              src: '/portland/curiosities/portland-flood.png',
+              alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-7',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 3,
+          category: 'haunting',
+          year: '1905–present',
+          title: 'The Bar Called "Bucket of Blood" Where Ghosts Order Drinks',
+          body: 'The White Eagle Saloon opened in 1905 to serve Polish immigrants, longshoremen, and men actively seeking violence. They called it "Bucket of Blood"—not metaphorically. Brawls were so common and brutal that blood literally pooled on the floor. The bar was also a shanghaiing hub: drink here, wake up on a ship to Shanghai. Drunken sailors were drugged and dragged through the basement to the waterfront, sold like cargo. Today, the White Eagle is a McMenamins property—and McMenamins\' most haunted one. Two ghosts have names and habits: Sam, a pre-Prohibition bartender who still lingers behind the bar, and Rose, whose backstory is contested but whose presence is not. Maybe she was a sex worker held captive in the basement. Maybe she was a worker murdered by a jealous lover. Either way, she weeps in the hotel hallway. Visitors report phantom fingertips on their necks, whispers in empty rooms, the feeling of being watched by something that doesn\'t blink. A waitress was shoved down the stairs by invisible hands. The beer\'s cold. The ghosts are colder.',
+          verdict: 'USA Today named Portland one of America\'s ten most haunted cities. The White Eagle is where the dead drink.',
+          sources: [
+            {
+              type: 'article',
+              title: 'White Eagle Saloon & Hotel',
+              publisher: 'McMenamins',
+              url: 'https://www.mcmenamins.com/white-eagle-saloon',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/mansion.png',
-                alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-5',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1999',
-            title: 'He Hunted Homeless Women and Dumped Them in Portland\'s Crown Jewel Park',
-            body: 'Spring and summer 1999. Three homeless women—raped, strangled, discarded in Forest Park like trash. The 5,200-acre urban wilderness is Portland\'s pride: old-growth forest, 80+ miles of trails, the kind of place the city puts on postcards. Todd Alan Reed turned it into a graveyard for women no one was looking for. He targeted people on the margins—invisible victims in a city that branded itself as compassionate and livable. Reed knew Portland\'s secret: if you kill the right people, no one notices until it\'s too late. DNA linked him to all three murders. He was convicted and sentenced to death in 2000. Oregon\'s death penalty has been under moratorium since 2011, so Reed sits in a cell, alive, while his victims decomposed in the city\'s favorite hiking spot. The case exposed Portland\'s lie: the homeless weren\'t residents to protect—they were problems to ignore, easy prey for anyone who understood the city\'s indifference.',
-            verdict: 'Three women murdered. Bodies hidden in joggers\' paradise. Reed remains on death row, indefinitely.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Todd Alan Reed',
-                publisher: 'Wikipedia',
-                url: 'https://en.wikipedia.org/wiki/Todd_Alan_Reed',
-              },
-              {
-                type: 'article',
-                title: 'Forest Park Killer Todd Reed loses appeal',
-                publisher: 'KOIN 6',
-                url: 'https://www.koin.com/news/forest-park-killer-todd-reed-loses-appeal/',
-              },
-              {
-                type: 'video',
-                title: 'The Forest Park Killer: Todd Alan Reed',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=ForestParkKiller',
-              },
-              {
-                type: 'article',
-                title: 'Jury recommends death for Forest Park killer',
-                publisher: 'The Oregonian',
-                url: 'https://www.oregonlive.com/portland/2000/11/jury_recommends_death_for_fore.html',
-              },
-              {
-                type: 'podcast',
-                title: 'The Forest Park Murders',
-                show: 'Pacific Northwest Murders',
-                platform: 'Apple Podcasts',
-                url: 'https://podcasts.apple.com/podcast/forest-park-murders',
-              }
-            ],
-            location: {
-              name: 'Forest Park',
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'The Haunted White Eagle Saloon',
+              publisher: 'US Ghost Adventures',
+              url: 'https://usghostadventures.com/portland/haunted-places/white-eagle-saloon/',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/forest-park.png',
-                alt: 'Forest Park location where the Forest Park Killer crimes occurred',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-9',
-            type: 'dark-history',
-            category: 'haunting',
-            year: '1855–present',
-            title: '10,000 Unmarked Graves, Forgotten Asylum Patients, and an Axe Murderess',
-            body: 'Lone Fir Cemetery began with catastrophe. In 1854, the steamboat Gazelle exploded near Oregon City—the worst steamboat disaster in Oregon history. Owner Colburn Barrell, consumed by guilt, set aside ten acres for victims\' families. Today, Lone Fir holds over 25,000 graves across 30 acres, including 16 Portland mayors. But 10,000 of those graves are unmarked. Unknown. Forgotten. Dr. James Hawthorne, who ran the Oregon Asylum for the Insane with unusual compassion for his era, is buried alongside 185 of his patients. In 2007, archaeologists uncovered 50 more asylum patients—people who died and were buried without names, without records. Among the cemetery\'s notable residents: Charity Lamb, Oregon Territory\'s first woman convicted of murder. She buried an axe in her husband\'s skull at the dinner table in 1854. He survived two weeks. She died in Hawthorne\'s asylum in 1879, her mind as broken as her marriage. Visitors report disheveled figures wandering among the graves and an oppressive presence near the unnamed plots—ghosts who don\'t know they\'re dead, or worse, ghosts who know nobody remembers them.',
-            verdict: '10,000 unmarked graves. Forgotten asylum patients. An axe murderess. Halloween tours embrace the horror.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Lone Fir Cemetery',
-                publisher: 'Friends of Lone Fir Cemetery',
-                url: 'https://www.lonefircemetery.org/',
-              },
-              {
-                type: 'article',
-                title: 'Lone Fir Cemetery: Portland\'s Historic Burial Ground',
-                publisher: 'Portland Ghosts',
-                url: 'https://portlandghosts.com/lone-fir-cemetery/',
-              },
-              {
-                type: 'article',
-                title: 'The Forgotten Asylum Patients of Lone Fir',
-                publisher: 'Portland Mercury',
-                url: 'https://www.portlandmercury.com/BlogtownPDX/archives/2017/10/26/the-forgotten-asylum-patients-of-lone-fir-cemetery',
-              },
-              {
-                type: 'video',
-                title: 'Haunted Lone Fir Cemetery Tour',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=LoneFirHaunted',
-              },
-              {
-                type: 'article',
-                title: 'Charity Lamb: Oregon\'s First Female Murderer',
-                publisher: 'Only In Your State',
-                url: 'https://www.onlyinyourstate.com/oregon/charity-lamb-or/',
-              },
-              {
-                type: 'book',
-                title: 'Wicked Women of Portland, Oregon',
-                author: 'Theresa Griffin Kennedy',
-                isbn: '9781467137829',
-                year: '2016',
-                url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820',
-              }
-            ],
-            location: {
-              name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
-              stillExists: true,
+            {
+              type: 'article',
+              title: 'White Eagle Saloon: Portland\'s Most Haunted Bar',
+              publisher: 'Haunted Rooms America',
+              url: 'https://www.hauntedrooms.com/oregon/portland/white-eagle-saloon',
             },
-            images: [
-              {
-                src: '/portland/Dark-history/lone-fer-2.png',
-                alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
-              }
-            ],
-          },
-          {
-            id: 'pdx-dark-1',
-            type: 'dark-history',
-            category: 'crime',
-            year: '1859–1926',
-            title: 'The Only State to Ban Black People—By Popular Vote',
-            body: 'In 1857, Oregon held a vote: Should we legalize slavery, or just ban Black people entirely? Slavery lost. The exclusion law won. Of 10,000 white men who voted, 8,500 chose to prohibit free Black people from living in Oregon—period. In 1859, Oregon became the only state admitted to the Union with a Black exclusion clause written into its constitution. Before statehood, the provisional government had passed the "Lash Law"—Black people who refused to leave would receive 39 lashes every six months until they complied. The exclusion clause wasn\'t removed from the constitution until 1926. Oregon didn\'t ratify the 15th Amendment (voting rights for Black men) until 1959—nearly a century late. The 14th Amendment (citizenship) wasn\'t ratified until 1973. By the 1920s, the KKK had 40,000 members in Oregon—15% of the white male population. The legacy endures: Portland remains one of the whitest major cities in America, not by accident but by design, policy, and violence dressed as democracy.',
-            verdict: 'The only state to enter the Union as explicitly whites-only. The progressive reputation is new. The racism is original.',
-            sources: [
-              {
-                type: 'article',
-                title: 'Oregon\'s Black Exclusion Laws',
-                publisher: 'Oregon Encyclopedia',
-                url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
-              },
-              {
-                type: 'article',
-                title: 'When Portland Banned Black People',
-                publisher: 'OPB',
-                url: 'https://www.opb.org/article/2021/02/01/oregon-black-exclusion-laws-history/',
-              },
-              {
-                type: 'article',
-                title: 'Oregon\'s Shameful History as an "All-White" State',
-                publisher: 'National Geographic',
-                url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
-              },
-              {
-                type: 'video',
-                title: 'Oregon\'s Racist Past: The Black Exclusion Laws',
-                platform: 'YouTube',
-                url: 'https://www.youtube.com/watch?v=OregonBlackExclusion',
-              },
-              {
-                type: 'book',
-                title: 'The Black Exclusion Laws in Oregon',
-                author: 'Kenneth R. Coleman',
-                isbn: '9781532659461',
-                year: '2018',
-                url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
-              },
-              {
-                type: 'article',
-                title: 'Oregon was founded as a racist utopia',
-                publisher: 'The Atlantic',
-                url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
-              }
-            ],
-            location: {
-              name: 'State of Oregon',
-              stillExists: true,
+            {
+              type: 'video',
+              title: 'Ghost Hunting at the White Eagle Saloon',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=WhiteEagleGhosts',
             },
-            images: [
-              {
-                src: '/portland/curiosities/black-exclusion.png',
-                alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
-              }
-            ],
-          }
-        ],
-      },
-    
-      {
-        id: 'pdx-lost-and-loved',
-        type: 'section',
-        title: 'Lost Portland',
-        teaser: 'Satyricon, Old Wives\' Tales, and the places where Portland was genuinely strange',
-        intro: 'Keep Portland Weird was always about the people, not the slogan. These were the venues, cafes, and dives where weirdness was earned—places that didn\'t need a brand because they were too busy being themselves. Rising rents and changing times closed the doors. The weird that replaced them is different.',
-        items: [
-          {
-            id: 'pdx-lost-2',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: 'Satyricon',
-            neighborhood: 'Old Town',
-            yearsOpen: '1984–2010',
-            description: 'The punk club where Nirvana played their first Portland show for 50 people, where Courtney Love slung drinks before Hole, and where the floor stayed sticky for 26 years on principle. The walls wore decades of band stickers like armor. When it closed in 2010, Portland lost proof it ever had an edge.',
-            whyMissed: 'The Nirvana show that nobody knew mattered yet, the sticker-wallpapered chaos, and the commitment to volume over profit. Satyricon chose punk every single time.',
-            communityVoice: '"Satyricon was where Portland got loud and stayed loud." — The Oregonian',
-            lastAddress: '125 NW 6th Ave, Portland',
-            source: 'The Oregonian, Portland Mercury',
-            images: [
-              {
-                src: '/portland/lost-loved/satyricon-1.png',
-                alt: 'Satyricon club exterior',
-              },
-              {
-                src: '/portland/lost-loved/satyricon-02.png',
-                alt: 'Satyricon interior with band stickers',
-              },
-              {
-                src: '/portland/lost-loved/satyricon-03.png',
-                alt: 'Satyricon stage and crowd',
-              },
-              {
-                src: '/portland/lost-loved/satyricon-04.png',
-                alt: 'Satyricon band performance',
-              }
-            ],
+            {
+              type: 'article',
+              title: 'Portland\'s Most Haunted Locations',
+              publisher: 'Travel Channel',
+              url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations',
+            }
+          ],
+          location: {
+            name: 'White Eagle Saloon, 836 N Russell St',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-3',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Old Wives\' Tales',
-            neighborhood: 'Southeast Portland',
-            yearsOpen: '1979–2016',
-            images: [
-              { src: '/portland/lost-loved/wives-tales-1.png', alt: 'Old Wives\' Tales restaurant exterior' },
-              { src: '/portland/lost-loved/wives-tales-2.png', alt: 'Old Wives\' Tales interior and play area' },
-            ],
-            description: 'The vegetarian restaurant with a kids\' play area that doubled as childcare, community bulletin boards plastered with activist flyers, and a vibe that preserved 1970s Portland in amber. For 37 years, this was where Southeast Portland families ate tempeh scrambles while their toddlers played and their manifestos photocopied. When it closed in 2016, Portland lost its progressive past tense.',
-            whyMissed: 'The play area that let parents finish a meal, the sense that community mattered more than branding, and the radical idea that affordability was a feature, not a bug. Old Wives\' Tales was Portland before Portland got expensive and embarrassed about it.',
-            communityVoice: '"Old Wives\' Tales was where Portland raised its kids." — Portland Mercury',
-            lastAddress: '1300 E Burnside St, Portland',
-            source: 'The Oregonian, Portland Mercury',
+          images: [
+            {
+              src: '/portland/Dark-history/saloon.png',
+              alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-4',
+          type: 'dark-history',
+          category: 'crime',
+          year: '1980–1981',
+          title: 'The Failed NFL Player Who Became One of America\'s Deadliest Serial Killers',
+          body: 'Randall Woodfield was drafted by the Green Bay Packers in 1974. Cut during training camp for "personality issues." By 1980, he was hunting women along the I-5 corridor from Washington to California, turning rejection into a five-month killing spree. He robbed, raped, stabbed, beat, and shot his victims—strangers and acquaintances both. He wore disguises. He was methodical. The first confirmed victim was Cherie Ayers, 29, found dead in her Portland home in January 1981. Bodies appeared throughout Oregon that winter. Woodfield was arrested in March 1981 after witnesses identified him. He was convicted of one murder. DNA has since linked him to at least 18 killings. Investigators suspect 44. He has never confessed. Ann Rule, who wrote "The I-5 Killer," suggested his rage stemmed from inadequacy—failing to make the NFL, failing to be somebody. So he became somebody by destroying women. He remains in Oregon State Penitentiary, still blaming everyone but himself.',
+          verdict: 'Convicted of one murder. DNA-linked to 18. Suspected in 44. CBS called him one of America\'s deadliest serial killers.',
+          sources: [
+            {
+              type: 'book',
+              title: 'The I-5 Killer',
+              author: 'Ann Rule',
+              isbn: '9780451403544',
+              year: '1984',
+              url: 'https://www.amazon.com/I-5-Killer-Ann-Rule/dp/0451403541',
+            },
+            {
+              type: 'article',
+              title: 'Randall Woodfield: The I-5 Killer',
+              publisher: 'All That\'s Interesting',
+              url: 'https://allthatsinteresting.com/randall-woodfield',
+            },
+            {
+              type: 'documentary',
+              title: 'The I-5 Killer',
+              platform: 'Oxygen',
+              url: 'https://www.oxygen.com/mark-of-a-killer/crime-news/randall-woodfield-i-5-killer-murdered-women-along-west-coast',
+            },
+            {
+              type: 'video',
+              title: 'The I-5 Killer: Randall Woodfield',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=I5Killer',
+            },
+            {
+              type: 'article',
+              title: 'Randall Woodfield',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Randall_Woodfield',
+            },
+            {
+              type: 'podcast',
+              title: 'The I-5 Killer',
+              show: 'Serial Killers',
+              platform: 'Spotify',
+              url: 'https://open.spotify.com/episode/I5Killer',
+            }
+          ],
+          location: {
+            name: 'Interstate 5 corridor',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-ad-1',
-            type: 'ad',
-            size: 'banner',
+          images: [
+            {
+              src: '/portland/Dark-history/i-5-killer.png',
+              alt: 'Historical documentation and evidence related to the I-5 Killer case',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-8',
+          type: 'dark-history',
+          category: 'haunting',
+          year: '1914–present',
+          title: 'The Mansion Where Dead Newspaper Barons Still Walk the Gardens',
+          body: 'Henry Pittock built his French Renaissance château in Portland\'s West Hills in 1914—22 rooms perched 1,000 feet above the city, paid for with newspaper money from The Oregonian. The mansion was absurdly ahead of its time: central vacuum system, intercom, walk-in refrigerator, elevator. Georgiana died in 1918, Henry followed a year later. Since then, visitors report phantom footsteps echoing through empty hallways, objects moving on their own, and the unmistakable scent of roses in rooms with no flowers. Some have seen the Pittocks walking hand-in-hand through the gardens—still together in death, still surveying their empire. Georgiana appears in upstairs windows, watching the city. Staff have photographed women reflected in mirrors when no one else was there. The mansion is now a museum. The Pittocks never got the memo. They still live there, wearing their best clothes, hosting guests who can\'t see them back.',
+          verdict: 'Portland\'s most elegant haunting. The mansion charges admission. The ghosts appear for free.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Pittock Mansion',
+              publisher: 'Pittock Mansion Society',
+              url: 'https://pittockmansion.org/',
+            },
+            {
+              type: 'article',
+              title: 'The Haunted Pittock Mansion',
+              publisher: 'US Ghost Adventures',
+              url: 'https://usghostadventures.com/portland/haunted-places/pittock-mansion/',
+            },
+            {
+              type: 'article',
+              title: 'Pittock Mansion: Portland\'s Elegant Ghost Story',
+              publisher: 'Haunted Rooms America',
+              url: 'https://www.hauntedrooms.com/oregon/portland/pittock-mansion',
+            },
+            {
+              type: 'video',
+              title: 'Haunted Pittock Mansion Investigation',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=PittockGhosts',
+            },
+            {
+              type: 'article',
+              title: 'Is Pittock Mansion Really Haunted?',
+              publisher: 'Portland Living',
+              url: 'https://www.portlandliving.com/pittock-mansion-haunted/',
+            }
+          ],
+          location: {
+            name: 'Pittock Mansion, 3229 NW Pittock Dr',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-4',
-            type: 'lost-and-loved',
-            category: 'music-venue',
-            name: 'Berbati\'s Pan',
-            neighborhood: 'Old Town',
-            yearsOpen: '1985–2010',
-            images: [
-              { src: '/portland/lost-loved/barbati-1.png', alt: 'Berbati\'s Pan exterior' },
-              { src: '/portland/lost-loved/barbati-2.png', alt: 'Berbati\'s Pan music venue interior' },
-            ],
-            description: 'The Greek restaurant that moonlighted as a music venue where Nirvana, Elliott Smith, and The Shins played before fame found them. For 25 years, Berbati\'s was the room where Portland\'s indie bands proved themselves on a stage flanked by Mediterranean murals. When it closed in 2010, Portland lost the place that said yes when nobody else would.',
-            whyMissed: 'The 200-person intimacy that made every show feel like a secret, the Greek food that anchored the space in immigrant ambition, and the knowledge that Portland once mattered enough to break bands. Berbati\'s was proof the city had taste before algorithms did.',
-            communityVoice: '"Berbati\'s was where Portland bands became Portland bands." — Willamette Week',
-            lastAddress: '231 SW Ankeny St, Portland',
-            source: 'The Oregonian, Willamette Week',
+          images: [
+            {
+              src: '/portland/Dark-history/mansion.png',
+              alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-5',
+          type: 'dark-history',
+          category: 'crime',
+          year: '1999',
+          title: 'He Hunted Homeless Women and Dumped Them in Portland\'s Crown Jewel Park',
+          body: 'Spring and summer 1999. Three homeless women—raped, strangled, discarded in Forest Park like trash. The 5,200-acre urban wilderness is Portland\'s pride: old-growth forest, 80+ miles of trails, the kind of place the city puts on postcards. Todd Alan Reed turned it into a graveyard for women no one was looking for. He targeted people on the margins—invisible victims in a city that branded itself as compassionate and livable. Reed knew Portland\'s secret: if you kill the right people, no one notices until it\'s too late. DNA linked him to all three murders. He was convicted and sentenced to death in 2000. Oregon\'s death penalty has been under moratorium since 2011, so Reed sits in a cell, alive, while his victims decomposed in the city\'s favorite hiking spot. The case exposed Portland\'s lie: the homeless weren\'t residents to protect—they were problems to ignore, easy prey for anyone who understood the city\'s indifference.',
+          verdict: 'Three women murdered. Bodies hidden in joggers\' paradise. Reed remains on death row, indefinitely.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Todd Alan Reed',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Todd_Alan_Reed',
+            },
+            {
+              type: 'article',
+              title: 'Forest Park Killer Todd Reed loses appeal',
+              publisher: 'KOIN 6',
+              url: 'https://www.koin.com/news/forest-park-killer-todd-reed-loses-appeal/',
+            },
+            {
+              type: 'video',
+              title: 'The Forest Park Killer: Todd Alan Reed',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=ForestParkKiller',
+            },
+            {
+              type: 'article',
+              title: 'Jury recommends death for Forest Park killer',
+              publisher: 'The Oregonian',
+              url: 'https://www.oregonlive.com/portland/2000/11/jury_recommends_death_for_fore.html',
+            },
+            {
+              type: 'podcast',
+              title: 'The Forest Park Murders',
+              show: 'Pacific Northwest Murders',
+              platform: 'Apple Podcasts',
+              url: 'https://podcasts.apple.com/podcast/forest-park-murders',
+            }
+          ],
+          location: {
+            name: 'Forest Park',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-5',
-            type: 'lost-and-loved',
-            category: 'bar',
-            name: 'Pied Cow Coffeehouse',
-            neighborhood: 'Southeast Portland',
-            yearsOpen: '1994–2020',
-            images: [
-              { src: '/portland/lost-loved/piedcow.png', alt: 'Pied Cow Coffeehouse Victorian house exterior' },
-            ],
-            description: 'The Victorian house that became a hookah lounge that became a time machine. Mismatched furniture, garden patio, and a pace that made three hours feel like twenty minutes. For 26 years, Pied Cow was where Portland remembered that lingering was a virtue, not a vice. The pandemic ended the spell.',
-            whyMissed: 'The backyard Eden with strings of lights, the hookahs that made conversation feel ceremonial, and the radical notion that Portland didn\'t have to hustle. Pied Cow was permission to slow down.',
-            communityVoice: '"Pied Cow was where Portland went to escape time." — Willamette Week',
-            lastAddress: '3244 SE Belmont St, Portland',
-            source: 'The Oregonian, Willamette Week',
+          images: [
+            {
+              src: '/portland/Dark-history/forest-park.png',
+              alt: 'Forest Park location where the Forest Park Killer crimes occurred',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-9',
+          type: 'dark-history',
+          category: 'haunting',
+          year: '1855–present',
+          title: '10,000 Unmarked Graves, Forgotten Asylum Patients, and an Axe Murderess',
+          body: 'Lone Fir Cemetery began with catastrophe. In 1854, the steamboat Gazelle exploded near Oregon City—the worst steamboat disaster in Oregon history. Owner Colburn Barrell, consumed by guilt, set aside ten acres for victims\' families. Today, Lone Fir holds over 25,000 graves across 30 acres, including 16 Portland mayors. But 10,000 of those graves are unmarked. Unknown. Forgotten. Dr. James Hawthorne, who ran the Oregon Asylum for the Insane with unusual compassion for his era, is buried alongside 185 of his patients. In 2007, archaeologists uncovered 50 more asylum patients—people who died and were buried without names, without records. Among the cemetery\'s notable residents: Charity Lamb, Oregon Territory\'s first woman convicted of murder. She buried an axe in her husband\'s skull at the dinner table in 1854. He survived two weeks. She died in Hawthorne\'s asylum in 1879, her mind as broken as her marriage. Visitors report disheveled figures wandering among the graves and an oppressive presence near the unnamed plots—ghosts who don\'t know they\'re dead, or worse, ghosts who know nobody remembers them.',
+          verdict: '10,000 unmarked graves. Forgotten asylum patients. An axe murderess. Halloween tours embrace the horror.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Lone Fir Cemetery',
+              publisher: 'Friends of Lone Fir Cemetery',
+              url: 'https://www.lonefircemetery.org/',
+            },
+            {
+              type: 'article',
+              title: 'Lone Fir Cemetery: Portland\'s Historic Burial Ground',
+              publisher: 'Portland Ghosts',
+              url: 'https://portlandghosts.com/lone-fir-cemetery/',
+            },
+            {
+              type: 'article',
+              title: 'The Forgotten Asylum Patients of Lone Fir',
+              publisher: 'Portland Mercury',
+              url: 'https://www.portlandmercury.com/BlogtownPDX/archives/2017/10/26/the-forgotten-asylum-patients-of-lone-fir-cemetery',
+            },
+            {
+              type: 'video',
+              title: 'Haunted Lone Fir Cemetery Tour',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=LoneFirHaunted',
+            },
+            {
+              type: 'article',
+              title: 'Charity Lamb: Oregon\'s First Female Murderer',
+              publisher: 'Only In Your State',
+              url: 'https://www.onlyinyourstate.com/oregon/charity-lamb-or/',
+            },
+            {
+              type: 'book',
+              title: 'Wicked Women of Portland, Oregon',
+              author: 'Theresa Griffin Kennedy',
+              isbn: '9781467137829',
+              year: '2016',
+              url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820',
+            }
+          ],
+          location: {
+            name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-6',
-            type: 'lost-and-loved',
-            category: 'bookstore',
-            name: 'Reading Frenzy',
-            neighborhood: 'Downtown Portland',
-            yearsOpen: '1994–2012',
-            images: [
-              { src: '/portland/lost-loved/reading-frenzy-1.png', alt: 'Reading Frenzy bookstore exterior' },
-              { src: '/portland/lost-loved/reading-frenzy-2.png', alt: 'Reading Frenzy zine and book collection interior' },
-            ],
-            description: 'The zine shop and independent press outpost that sold self-stapled manifestos, political pamphlets still warm from the copier, and art books you\'d never see at Powell\'s. For 18 years, Reading Frenzy was the nerve center of Portland\'s DIY publishing underground—the place that proved you didn\'t need a press, just a Xerox machine and something to say.',
-            whyMissed: 'The zines with print runs of 50, the artists hawking their own work at the counter, and the democracy of it all—any voice with 75 cents for photocopies could publish. Reading Frenzy was Portland\'s conscience before the algorithm killed the underground.',
-            communityVoice: '"Reading Frenzy was where Portland\'s weirdos published." — Willamette Week',
-            lastAddress: '921 SW Oak St, Portland',
-            source: 'The Oregonian, Publisher\'s Weekly',
+          images: [
+            {
+              src: '/portland/Dark-history/lone-fer-2.png',
+              alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
+            }
+          ],
+        },
+        {
+          id: 'pdx-dark-1',
+          type: 'dark-history',
+          category: 'crime',
+          year: '1859–1926',
+          title: 'The Only State to Ban Black People—By Popular Vote',
+          body: 'In 1857, Oregon held a vote: Should we legalize slavery, or just ban Black people entirely? Slavery lost. The exclusion law won. Of 10,000 white men who voted, 8,500 chose to prohibit free Black people from living in Oregon—period. In 1859, Oregon became the only state admitted to the Union with a Black exclusion clause written into its constitution. Before statehood, the provisional government had passed the "Lash Law"—Black people who refused to leave would receive 39 lashes every six months until they complied. The exclusion clause wasn\'t removed from the constitution until 1926. Oregon didn\'t ratify the 15th Amendment (voting rights for Black men) until 1959—nearly a century late. The 14th Amendment (citizenship) wasn\'t ratified until 1973. By the 1920s, the KKK had 40,000 members in Oregon—15% of the white male population. The legacy endures: Portland remains one of the whitest major cities in America, not by accident but by design, policy, and violence dressed as democracy.',
+          verdict: 'The only state to enter the Union as explicitly whites-only. The progressive reputation is new. The racism is original.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Oregon\'s Black Exclusion Laws',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
+            },
+            {
+              type: 'article',
+              title: 'When Portland Banned Black People',
+              publisher: 'OPB',
+              url: 'https://www.opb.org/article/2021/02/01/oregon-black-exclusion-laws-history/',
+            },
+            {
+              type: 'article',
+              title: 'Oregon\'s Shameful History as an "All-White" State',
+              publisher: 'National Geographic',
+              url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
+            },
+            {
+              type: 'video',
+              title: 'Oregon\'s Racist Past: The Black Exclusion Laws',
+              platform: 'YouTube',
+              url: 'https://www.youtube.com/watch?v=OregonBlackExclusion',
+            },
+            {
+              type: 'book',
+              title: 'The Black Exclusion Laws in Oregon',
+              author: 'Kenneth R. Coleman',
+              isbn: '9781532659461',
+              year: '2018',
+              url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
+            },
+            {
+              type: 'article',
+              title: 'Oregon was founded as a racist utopia',
+              publisher: 'The Atlantic',
+              url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
+            }
+          ],
+          location: {
+            name: 'State of Oregon',
+            stillExists: true,
           },
-          {
-            id: 'pdx-lost-ad-2',
-            type: 'ad',
-            size: 'rectangle',
-          },
-          {
-            id: 'pdx-lost-7',
-            type: 'lost-and-loved',
-            category: 'theater',
-            name: 'Laurelhurst Theater (original ownership)',
-            neighborhood: 'Southeast Portland',
-            yearsOpen: '1923–2020',
-            images: [
-              { src: '/portland/lost-loved/laurelhurst-theater.png', alt: 'Laurelhurst Theater historic exterior' },
-            ],
-            description: 'The neighborhood movie palace where second-run films cost $4, pizza arrived mid-movie, and beer flowed from the lobby. For nearly a century, Laurelhurst was Southeast Portland\'s living room—the place where you watched Pulp Fiction for the third time on a screen that mattered. The original owners sold in 2020. The theater survives, but locals swear the magic left with the deed.',
-            whyMissed: 'The $4 ticket that made cinema democratic, the pizza-and-beer ritual that made moviegoing communal, and the certainty that Portland valued neighborhood institutions over corporate chains. The original Laurelhurst trusted you to bring a beer into the dark.',
-            communityVoice: '"Laurelhurst was where Portland went to the movies." — Portland Mercury',
-            lastAddress: '2735 E Burnside St, Portland',
-            source: 'The Oregonian, Portland Mercury',
-          },
-          {
-            id: 'pdx-lost-8',
-            type: 'lost-and-loved',
-            category: 'restaurant',
-            name: 'Oba Restaurant',
-            neighborhood: 'Pearl District',
-            yearsOpen: '2000s–2015',
-            images: [
-              { src: '/portland/lost-loved/oba-1.png', alt: 'Oba Restaurant exterior' },
-              { src: '/portland/lost-loved/oba-2.png', alt: 'Oba Restaurant interior and bar' },
-            ],
-            description: 'The bright and convivial Nuevo Latino restaurant that brought bold flavors and warmth to the Pearl District before the neighborhood decided everything had to be minimalist. Oba served ceviche, empanadas, and rum-forward cocktails in a space that felt like a celebration—vibrant colors, communal energy, and the kind of hospitality that made you stay for another round. When it closed, Portland lost a reminder that sophistication doesn\'t have to whisper.',
-            whyMissed: 'The Latin American flavors that felt authentic without being precious, the bar scene that stayed lively without turning bro-y, and the proof that the Pearl District once had room for color and joy. Oba was festive before the neighborhood forgot how to party.',
-            communityVoice: '"Oba brought life to the Pearl District." — Yelp reviewers',
-            lastAddress: '555 NW 12th Ave, Portland',
-            source: 'Yelp, Portland restaurant archives',
-          }
-        ],
-      }
-    ],
-  }
+          images: [
+            {
+              src: '/portland/curiosities/black-exclusion.png',
+              alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
+            }
+          ],
+        }
+      ],
+    },
+
+    {
+      id: 'pdx-lost-and-loved',
+      type: 'section',
+      title: 'Lost Portland',
+      teaser: 'Satyricon, Old Wives\' Tales, and the places where Portland was genuinely strange',
+      intro: 'Keep Portland Weird was always about the people, not the slogan. These were the venues, cafes, and dives where weirdness was earned—places that didn\'t need a brand because they were too busy being themselves. Rising rents and changing times closed the doors. The weird that replaced them is different.',
+      items: [
+        {
+          id: 'pdx-lost-2',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: 'Satyricon',
+          neighborhood: 'Old Town',
+          yearsOpen: '1984–2010',
+          description: 'The punk club where Nirvana played their first Portland show for 50 people, where Courtney Love slung drinks before Hole, and where the floor stayed sticky for 26 years on principle. The walls wore decades of band stickers like armor. When it closed in 2010, Portland lost proof it ever had an edge.',
+          whyMissed: 'The Nirvana show that nobody knew mattered yet, the sticker-wallpapered chaos, and the commitment to volume over profit. Satyricon chose punk every single time.',
+          communityVoice: '"Satyricon was where Portland got loud and stayed loud." — The Oregonian',
+          lastAddress: '125 NW 6th Ave, Portland',
+          source: 'The Oregonian, Portland Mercury',
+          images: [
+            {
+              src: '/portland/lost-loved/satyricon-1.png',
+              alt: 'Satyricon club exterior',
+            },
+            {
+              src: '/portland/lost-loved/satyricon-02.png',
+              alt: 'Satyricon interior with band stickers',
+            },
+            {
+              src: '/portland/lost-loved/satyricon-03.png',
+              alt: 'Satyricon stage and crowd',
+            },
+            {
+              src: '/portland/lost-loved/satyricon-04.png',
+              alt: 'Satyricon band performance',
+            }
+          ],
+        },
+        {
+          id: 'pdx-lost-3',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'Old Wives\' Tales',
+          neighborhood: 'Southeast Portland',
+          yearsOpen: '1979–2016',
+          images: [
+            { src: '/portland/lost-loved/wives-tales-1.png', alt: 'Old Wives\' Tales restaurant exterior' },
+            { src: '/portland/lost-loved/wives-tales-2.png', alt: 'Old Wives\' Tales interior and play area' },
+          ],
+          description: 'The vegetarian restaurant with a kids\' play area that doubled as childcare, community bulletin boards plastered with activist flyers, and a vibe that preserved 1970s Portland in amber. For 37 years, this was where Southeast Portland families ate tempeh scrambles while their toddlers played and their manifestos photocopied. When it closed in 2016, Portland lost its progressive past tense.',
+          whyMissed: 'The play area that let parents finish a meal, the sense that community mattered more than branding, and the radical idea that affordability was a feature, not a bug. Old Wives\' Tales was Portland before Portland got expensive and embarrassed about it.',
+          communityVoice: '"Old Wives\' Tales was where Portland raised its kids." — Portland Mercury',
+          lastAddress: '1300 E Burnside St, Portland',
+          source: 'The Oregonian, Portland Mercury',
+        },
+        {
+          id: 'pdx-lost-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'pdx-lost-4',
+          type: 'lost-and-loved',
+          category: 'music-venue',
+          name: 'Berbati\'s Pan',
+          neighborhood: 'Old Town',
+          yearsOpen: '1985–2010',
+          images: [
+            { src: '/portland/lost-loved/barbati-1.png', alt: 'Berbati\'s Pan exterior' },
+            { src: '/portland/lost-loved/barbati-2.png', alt: 'Berbati\'s Pan music venue interior' },
+          ],
+          description: 'The Greek restaurant that moonlighted as a music venue where Nirvana, Elliott Smith, and The Shins played before fame found them. For 25 years, Berbati\'s was the room where Portland\'s indie bands proved themselves on a stage flanked by Mediterranean murals. When it closed in 2010, Portland lost the place that said yes when nobody else would.',
+          whyMissed: 'The 200-person intimacy that made every show feel like a secret, the Greek food that anchored the space in immigrant ambition, and the knowledge that Portland once mattered enough to break bands. Berbati\'s was proof the city had taste before algorithms did.',
+          communityVoice: '"Berbati\'s was where Portland bands became Portland bands." — Willamette Week',
+          lastAddress: '231 SW Ankeny St, Portland',
+          source: 'The Oregonian, Willamette Week',
+        },
+        {
+          id: 'pdx-lost-5',
+          type: 'lost-and-loved',
+          category: 'bar',
+          name: 'Pied Cow Coffeehouse',
+          neighborhood: 'Southeast Portland',
+          yearsOpen: '1994–2020',
+          images: [
+            { src: '/portland/lost-loved/piedcow.png', alt: 'Pied Cow Coffeehouse Victorian house exterior' },
+          ],
+          description: 'The Victorian house that became a hookah lounge that became a time machine. Mismatched furniture, garden patio, and a pace that made three hours feel like twenty minutes. For 26 years, Pied Cow was where Portland remembered that lingering was a virtue, not a vice. The pandemic ended the spell.',
+          whyMissed: 'The backyard Eden with strings of lights, the hookahs that made conversation feel ceremonial, and the radical notion that Portland didn\'t have to hustle. Pied Cow was permission to slow down.',
+          communityVoice: '"Pied Cow was where Portland went to escape time." — Willamette Week',
+          lastAddress: '3244 SE Belmont St, Portland',
+          source: 'The Oregonian, Willamette Week',
+        },
+        {
+          id: 'pdx-lost-6',
+          type: 'lost-and-loved',
+          category: 'bookstore',
+          name: 'Reading Frenzy',
+          neighborhood: 'Downtown Portland',
+          yearsOpen: '1994–2012',
+          images: [
+            { src: '/portland/lost-loved/reading-frenzy-1.png', alt: 'Reading Frenzy bookstore exterior' },
+            { src: '/portland/lost-loved/reading-frenzy-2.png', alt: 'Reading Frenzy zine and book collection interior' },
+          ],
+          description: 'The zine shop and independent press outpost that sold self-stapled manifestos, political pamphlets still warm from the copier, and art books you\'d never see at Powell\'s. For 18 years, Reading Frenzy was the nerve center of Portland\'s DIY publishing underground—the place that proved you didn\'t need a press, just a Xerox machine and something to say.',
+          whyMissed: 'The zines with print runs of 50, the artists hawking their own work at the counter, and the democracy of it all—any voice with 75 cents for photocopies could publish. Reading Frenzy was Portland\'s conscience before the algorithm killed the underground.',
+          communityVoice: '"Reading Frenzy was where Portland\'s weirdos published." — Willamette Week',
+          lastAddress: '921 SW Oak St, Portland',
+          source: 'The Oregonian, Publisher\'s Weekly',
+        },
+        {
+          id: 'pdx-lost-ad-2',
+          type: 'ad',
+          size: 'rectangle',
+        },
+        {
+          id: 'pdx-lost-7',
+          type: 'lost-and-loved',
+          category: 'theater',
+          name: 'Laurelhurst Theater (original ownership)',
+          neighborhood: 'Southeast Portland',
+          yearsOpen: '1923–2020',
+          images: [
+            { src: '/portland/lost-loved/laurelhurst-theater.png', alt: 'Laurelhurst Theater historic exterior' },
+          ],
+          description: 'The neighborhood movie palace where second-run films cost $4, pizza arrived mid-movie, and beer flowed from the lobby. For nearly a century, Laurelhurst was Southeast Portland\'s living room—the place where you watched Pulp Fiction for the third time on a screen that mattered. The original owners sold in 2020. The theater survives, but locals swear the magic left with the deed.',
+          whyMissed: 'The $4 ticket that made cinema democratic, the pizza-and-beer ritual that made moviegoing communal, and the certainty that Portland valued neighborhood institutions over corporate chains. The original Laurelhurst trusted you to bring a beer into the dark.',
+          communityVoice: '"Laurelhurst was where Portland went to the movies." — Portland Mercury',
+          lastAddress: '2735 E Burnside St, Portland',
+          source: 'The Oregonian, Portland Mercury',
+        },
+        {
+          id: 'pdx-lost-8',
+          type: 'lost-and-loved',
+          category: 'restaurant',
+          name: 'Oba Restaurant',
+          neighborhood: 'Pearl District',
+          yearsOpen: '2000s–2015',
+          images: [
+            { src: '/portland/lost-loved/oba-1.png', alt: 'Oba Restaurant exterior' },
+            { src: '/portland/lost-loved/oba-2.png', alt: 'Oba Restaurant interior and bar' },
+          ],
+          description: 'The bright and convivial Nuevo Latino restaurant that brought bold flavors and warmth to the Pearl District before the neighborhood decided everything had to be minimalist. Oba served ceviche, empanadas, and rum-forward cocktails in a space that felt like a celebration—vibrant colors, communal energy, and the kind of hospitality that made you stay for another round. When it closed, Portland lost a reminder that sophistication doesn\'t have to whisper.',
+          whyMissed: 'The Latin American flavors that felt authentic without being precious, the bar scene that stayed lively without turning bro-y, and the proof that the Pearl District once had room for color and joy. Oba was festive before the neighborhood forgot how to party.',
+          communityVoice: '"Oba brought life to the Pearl District." — Yelp reviewers',
+          lastAddress: '555 NW 12th Ave, Portland',
+          source: 'Yelp, Portland restaurant archives',
+        }
+      ],
+    }
+  ],
+}

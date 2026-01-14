@@ -77,9 +77,8 @@ export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleC
               {/* Category & Date */}
               <div className="flex items-center gap-3 mb-4">
                 <span
-                  className={`inline-block px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider ${
-                    categoryColors[article.category]
-                  }`}
+                  className={`inline-block px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider ${categoryColors[article.category]
+                    }`}
                 >
                   {categoryLabels[article.category]}
                 </span>
@@ -109,8 +108,8 @@ export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleC
                 </span>
 
                 {/* Read Arrow */}
-                <div className="inline-flex items-center text-accent-600 font-semibold gap-2 group-hover:gap-3 transition-all duration-300">
-                  <span className="text-sm uppercase tracking-wider">Read</span>
+                <div className="inline-flex items-center gap-2 group-hover:gap-3 px-5 py-2.5 bg-accent-600 text-white font-bold rounded-xl shadow-lg shadow-accent-600/20 hover:bg-accent-700 transition-all duration-300">
+                  <span className="text-sm uppercase tracking-wider">Read Full Story</span>
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"

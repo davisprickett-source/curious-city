@@ -57,7 +57,7 @@ export function ScrollyMap({
         container: mapContainer.current!,
         style: MAP_STYLE,
         center: [centerLng, centerLat],
-        zoom: 11,
+        zoom: 10,
         attributionControl: false,
         interactive: false, // Disable all interactions for cinematic experience
       })
@@ -68,7 +68,7 @@ export function ScrollyMap({
           [bounds.sw.lng, bounds.sw.lat],
           [bounds.ne.lng, bounds.ne.lat],
         ], {
-          padding: { top: 200, bottom: 200, left: 200, right: 200 },
+          padding: { top: 300, bottom: 300, left: 300, right: 300 },
           duration: 0 // Instant fit on load
         })
 
@@ -167,8 +167,8 @@ export function ScrollyMap({
   useEffect(() => {
     if (!mapRef.current || !isMapLoaded) return
 
-    if (activeSpotIndex < 0) {
-      // Intro section - show wider overview with more padding
+    if (activeSpotIndex < 0 || activeSpotIndex >= spots.length) {
+      // Intro or Outro section - show wider overview with more padding
       const allCoords = getAllCoordinates(spots)
       const bounds = getBounds(allCoords)
       if (bounds) {
@@ -176,8 +176,8 @@ export function ScrollyMap({
           [bounds.sw.lng, bounds.sw.lat],
           [bounds.ne.lng, bounds.ne.lat],
         ], {
-          padding: { top: 250, bottom: 250, left: 250, right: 250 },
-          duration: 1500,
+          padding: { top: 350, bottom: 350, left: 350, right: 350 },
+          duration: activeSpotIndex >= spots.length ? 2500 : 2000, // Slower zoom out at the end
           pitch: 0,
           bearing: 0,
         })
@@ -197,7 +197,7 @@ export function ScrollyMap({
       zoom: 15,
       pitch: 45,
       bearing: 0,
-      duration: 1500,
+      duration: activeSpotIndex === 0 ? 3500 : 2000, // Slower zoom for the first establishment
       essential: true,
       padding: {
         top: 0,

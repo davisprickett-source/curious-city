@@ -123,11 +123,14 @@ export function ScrollyContent({
           )}
 
           {/* Share button at bottom of intro */}
-          <div className="pt-6 border-t border-neutral-200">
+          <div className="pt-6 border-t border-neutral-200 flex justify-center">
             <ShareButton title={title} />
           </div>
         </div>
       </ScrollySection>
+
+      {/* Map Overview Gap - allows viewing the full map before starting the tour */}
+      <div className="h-[100vh]" aria-hidden="true" />
 
       {/* Spot Sections with Ads */}
       {spots.map((spot, index) => (
@@ -153,7 +156,7 @@ export function ScrollyContent({
             <ScrollySection
               key={`ad-${index}`}
               index={-100 - index} // Use negative index to not interfere with spot indices
-              onInView={() => {}} // No-op for ads
+              onInView={() => { }} // No-op for ads
               className="bg-white/90 backdrop-blur-md snap-start"
             >
               <div className="max-w-3xl w-full px-6">
@@ -268,14 +271,14 @@ export function ScrollyContent({
             )}
           </div>
         </div>
-      </ScrollySection>
 
-      {/* Footer - rendered inside scrollable content for proper z-index stacking */}
-      {footer && (
-        <div className="relative">
-          {footer}
-        </div>
-      )}
+        {/* Footer integrated into outro for better connection */}
+        {footer && (
+          <div className="relative mt-auto border-t border-white/10">
+            {footer}
+          </div>
+        )}
+      </ScrollySection>
     </div>
   )
 }

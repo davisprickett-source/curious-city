@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { ImageCarousel } from './ImageCarousel'
+import { NewsletterSignup } from './NewsletterSignup'
+import { ExploreCard, type ExploreLink } from './scrollytelling/ExploreCard'
 
 interface HiddenGemItem {
   id: string
@@ -35,6 +37,8 @@ interface HiddenGemItem {
 interface HiddenGemsScrollProps {
   gems: HiddenGemItem[]
   cityName: string
+  exploreLinks?: ExploreLink[]
+  footer?: React.ReactNode
 }
 
 // Category badge color helper - vibrant, colorful theme for hidden gems
@@ -159,11 +163,6 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
               {/* Header */}
               <div className="flex items-baseline gap-3 flex-wrap mb-4">
                 <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 leading-tight">{gem.name}</h3>
-                {gem.category && (
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                    {gem.category}
-                  </span>
-                )}
               </div>
 
               {/* Images */}
@@ -278,11 +277,6 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
             {/* Header */}
             <div className="flex items-baseline gap-3 flex-wrap mb-4">
               <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 leading-tight">{gem.name}</h3>
-              {gem.category && (
-                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${categoryStyles.bg} ${categoryStyles.text} border ${categoryStyles.accent}`}>
-                  {gem.category}
-                </span>
-              )}
             </div>
 
             {/* Images */}
@@ -375,7 +369,12 @@ function HiddenGemSection({ gem, index, onSectionInView }: { gem: HiddenGemItem;
   )
 }
 
-export default function HiddenGemsScroll({ gems, cityName: _cityName }: HiddenGemsScrollProps) {
+export default function HiddenGemsScroll({
+  gems,
+  cityName,
+  exploreLinks = [],
+  footer
+}: HiddenGemsScrollProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
 
@@ -430,11 +429,10 @@ export default function HiddenGemsScroll({ gems, cityName: _cityName }: HiddenGe
               aria-label={`Jump to hidden gem ${index + 1}: ${gem.name}`}
             >
               <div
-                className={`w-3 h-3 rounded-full transition-all duration-300 ease-out ${
-                  isActive
+                className={`w-3 h-3 rounded-full transition-all duration-300 ease-out ${isActive
                     ? `${categoryStyles.bg} ${categoryStyles.accent} border-2 scale-125 shadow-lg`
                     : 'bg-neutral-400 border border-neutral-500 group-hover:bg-neutral-600 group-hover:scale-150 group-hover:shadow-md'
-                }`}
+                  }`}
               />
               {/* Tooltip - wider, max 2 lines */}
               <div className="absolute right-7 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
@@ -459,6 +457,63 @@ export default function HiddenGemsScroll({ gems, cityName: _cityName }: HiddenGe
             />
           </div>
         ))}
+      </div>
+
+      {/* Outro Sections */}
+      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
+        <div className="max-w-5xl mx-auto space-y-20 px-6 pb-20">
+          {/* Newsletter Signup */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <NewsletterSignup />
+          </div>
+
+          {/* Explore More Section */}
+          <div className="text-center space-y-12">
+            <div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Explore More {cityName}
+              </h2>
+              <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
+                Discover more lists and guides curated by locals.
+              </p>
+            </div>
+
+            {exploreLinks.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+                {exploreLinks.map((link) => (
+                  <ExploreCard key={link.href} link={link} />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Feedback Section */}
+          <div className="max-w-3xl mx-auto bg-accent-600/20 backdrop-blur-sm rounded-2xl p-10 border border-accent-600/30 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Missing something?
+            </h3>
+            <p className="text-lg text-neutral-200 mb-8 leading-relaxed">
+              Know a hidden gem we missed? Or have a correction for one of our entries?
+              We'd love to hear from you.
+            </p>
+            <a
+              href="mailto:hello@curiouscity.com"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-accent-600 font-bold rounded-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Send Feedback
+            </a>
+          </div>
+        </div>
+
+        {/* Integrated Footer */}
+        {footer && (
+          <div className="relative border-t border-white/10">
+            {footer}
+          </div>
+        )}
       </div>
     </div>
   )

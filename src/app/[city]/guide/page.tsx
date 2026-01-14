@@ -82,102 +82,104 @@ export default async function GuidePage({ params }: GuidePageProps) {
         currentSection="guide"
       />
 
-      <main className="flex-1">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
-          <div className="container-page py-16 md:py-24">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Your Guide to {city.name}
-              </h1>
-              <p className="text-xl text-neutral-300 leading-relaxed">
-                The essential guide to eating and drinking in {city.name}.
-                Curated lists of the best bars, restaurants, and coffee shops—all
-                vetted by locals who know the city inside out.
-              </p>
+      <div className="city-page-wrapper">
+        <main className="flex-1">
+          {/* Hero Section */}
+          <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
+            <div className="container-page py-16 md:py-24">
+              <div className="max-w-3xl">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                  Your Guide to {city.name}
+                </h1>
+                <p className="text-xl text-neutral-300 leading-relaxed">
+                  The essential guide to eating and drinking in {city.name}.
+                  Curated lists of the best bars, restaurants, and coffee shops—all
+                  vetted by locals who know the city inside out.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Guide Categories */}
-        <div className="container-page section-spacing">
-          <div className="space-y-8 max-w-4xl mx-auto">
-            {guideCategories.map((category) => (
-              <Link
-                key={category.href}
-                href={category.href}
-                className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="md:flex">
-                  {/* Image or Gradient Side */}
-                  <div className="md:w-2/5 h-64 md:h-full relative">
-                    {category.image ? (
-                      <>
-                        <Image
-                          src={category.image.src}
-                          alt={category.image.alt}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 40vw"
-                        />
-                        <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-40 group-hover:opacity-30 transition-opacity`} />
-                      </>
-                    ) : (
-                      <div className={`w-full h-full bg-gradient-to-br ${category.gradient}`} />
-                    )}
-                  </div>
+          {/* Guide Categories */}
+          <div className="container-page section-spacing">
+            <div className="space-y-8 max-w-4xl mx-auto">
+              {guideCategories.map((category) => (
+                <Link
+                  key={category.href}
+                  href={category.href}
+                  className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="md:flex">
+                    {/* Image or Gradient Side */}
+                    <div className="md:w-2/5 h-64 md:h-full relative">
+                      {category.image ? (
+                        <>
+                          <Image
+                            src={category.image.src}
+                            alt={category.image.alt}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 40vw"
+                          />
+                          <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-40 group-hover:opacity-30 transition-opacity`} />
+                        </>
+                      ) : (
+                        <div className={`w-full h-full bg-gradient-to-br ${category.gradient}`} />
+                      )}
+                    </div>
 
-                  {/* Content */}
-                  <div className="md:w-3/5 p-8 flex flex-col justify-center">
-                    <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
-                      {category.title}
-                    </h2>
-                    <p className="text-neutral-600 text-lg leading-relaxed mb-4">
-                      {category.description}
-                    </p>
-                    <div className="inline-flex items-center text-accent-600 font-semibold group-hover:gap-2 transition-all">
-                      Explore
-                      <svg
-                        className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
+                    {/* Content */}
+                    <div className="md:w-3/5 p-8 flex flex-col justify-center">
+                      <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
+                        {category.title}
+                      </h2>
+                      <p className="text-neutral-600 text-lg leading-relaxed mb-4">
+                        {category.description}
+                      </p>
+                      <div className="inline-flex items-center gap-2 text-accent-600 font-bold group-hover:bg-accent-600 group-hover:text-white px-4 py-2 rounded-full border-2 border-accent-600 transition-all duration-300">
+                        Explore
+                        <svg
+                          className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* How We Curate */}
-        <div className="bg-neutral-50 py-16">
-          <div className="container-page">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-                Locally Curated, Carefully Selected
-              </h2>
-              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                Every spot in this guide has been personally visited and vetted. We don't accept
-                payments for inclusion—these are genuine recommendations from people who live,
-                work, and explore {city.name} every day.
-              </p>
-              <p className="text-neutral-600">
-                Whether you're a longtime resident looking for something new or a visitor wanting
-                to skip the tourist traps, this guide will point you in the right direction.
-              </p>
+                </Link>
+              ))}
             </div>
           </div>
-        </div>
-      </main>
+
+          {/* How We Curate */}
+          <div className="bg-neutral-50 py-16">
+            <div className="container-page">
+              <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-neutral-900 mb-6">
+                  Locally Curated, Carefully Selected
+                </h2>
+                <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+                  Every spot in this guide has been personally visited and vetted. We don't accept
+                  payments for inclusion—these are genuine recommendations from people who live,
+                  work, and explore {city.name} every day.
+                </p>
+                <p className="text-neutral-600">
+                  Whether you're a longtime resident looking for something new or a visitor wanting
+                  to skip the tourist traps, this guide will point you in the right direction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
 
       <Footer />
     </>
