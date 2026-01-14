@@ -31,6 +31,13 @@ export const dobyville: Article = {
           content: 'The people who lived in Dobyville worked in the grand houses of Hyde Park, just a few blocks away. They cooked the meals, cleaned the rooms, raised the children, and tended the gardens of Tampa\'s white elite. Then they walked home to their own community — modest houses on unpaved streets, but theirs. They built churches there. They built a school. They built a life. And then the city took it all away.',
         },
         {
+          type: 'image',
+          src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Dobyville_001.jpg',
+          alt: 'Street scene in Dobyville, Tampa, circa 1960',
+          caption: 'A street scene in Dobyville, circa 1960s. This thriving African American community, though modest, fostered a strong sense of belonging and self-sufficiency.',
+          credit: 'Tampa Bay History Center',
+        },
+        {
           type: 'paragraph',
           content: 'This is the story of Dobyville — how it was built, how it survived Jim Crow, and how it disappeared under concrete and asphalt.',
         },
@@ -44,68 +51,6 @@ export const dobyville: Article = {
           content: 'Dobyville emerged in the early 1900s as Tampa\'s wealthy Hyde Park neighborhood was being developed. The grand Victorian homes going up along Bayshore Boulevard required staff — lots of staff. Cooks, housekeepers, nannies, gardeners, chauffeurs, laundresses. Under the racial codes of the Jim Crow South, these workers could not live in the white neighborhoods where they worked. They needed somewhere close enough to walk to work but far enough to maintain the fiction of separation.',
         },
         {
-          type: 'paragraph',
-          content: 'That somewhere was a patch of low-lying land just north of Hyde Park, bounded roughly by Howard Avenue, Rome Avenue, and the Hillsborough River. The area was named for the Doby family, early Black landowners who subdivided their property and sold lots to other African American families. By the 1920s, Dobyville was an established community — not wealthy, but stable. Working people who owned their homes.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The geography was deliberate. Dobyville was close enough that domestic workers could reach Hyde Park\'s mansions in minutes. It was far enough — and buffered by railroad tracks and industrial areas — that white residents didn\'t have to think about it. The neighborhood existed in a kind of shadow, visible to the people who depended on its labor, invisible to everyone else.',
-        },
-        {
-          type: 'quote',
-          content: 'My grandmother worked in one of those big houses on Bayshore for forty years. She\'d walk to work before dawn, walk home after dark. The family she worked for never once came to see where she lived. It was like we existed in a different world, even though it was just a few blocks away.',
-          attribution: 'Former Dobyville resident',
-          role: 'Oral history interview, 2005',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Community',
-        },
-        {
-          type: 'paragraph',
-          content: 'What emerged in Dobyville was a complete community. There was Harmon Elementary School, which educated generations of Black children. There were churches — the anchors of African American life in the Jim Crow South, places where people could gather, organize, and find dignity in a society designed to deny it. There were small businesses, corner stores, a few restaurants.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The houses were modest. Many were shotgun houses — narrow, one-room-wide structures that could be built cheaply and quickly. The streets were unpaved long after Hyde Park\'s boulevards were smooth asphalt. City services were sparse. But the homes were owned, not rented. That mattered. In a society that denied Black Americans almost every other form of wealth-building, homeownership was how you passed something to the next generation.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Families stayed for generations. Children grew up, got married, bought houses near their parents. The community was tight-knit in the way that segregated neighborhoods often were — not by choice, but by necessity. When the outside world was hostile, your neighbors were everything.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The Economics of Segregation',
-          content: 'Dobyville residents were largely employed in domestic service — an industry that depended on proximity to wealthy white homes. The neighborhood\'s location wasn\'t accidental; it was determined by the labor market of Jim Crow Tampa. Workers needed to be close enough to serve but far enough to be unseen.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'Survival',
-        },
-        {
-          type: 'paragraph',
-          content: 'Dobyville survived for over sixty years. It survived the Depression, when domestic work dried up and families scraped by on almost nothing. It survived World War II, when young men left to fight for a country that still made their mothers use separate water fountains. It survived the postwar years, when white Tampa boomed and Black neighborhoods were systematically neglected.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The 1960s brought the civil rights movement to Tampa. Black communities organized, protested, demanded change. Some things improved. Segregation was officially ended — though its effects persisted in housing patterns, school funding, and economic opportunity. Dobyville remained what it had always been: a working-class Black neighborhood, not prosperous but persistent.',
-        },
-        {
-          type: 'paragraph',
-          content: 'What Dobyville couldn\'t survive was urban planning.',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Highway',
@@ -115,8 +60,22 @@ export const dobyville: Article = {
           content: 'In the 1960s and 70s, American cities were obsessed with highways. The Interstate Highway System had transformed long-distance travel, and urban planners wanted to bring that speed into city centers. Expressways would move commuters from suburbs to downtowns, revitalizing business districts and connecting metropolitan areas.',
         },
         {
+          type: 'image',
+          src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Crosstown_Expressway_001.jpg',
+          alt: 'Aerial view of Crosstown Expressway construction through Tampa, 1970s',
+          caption: 'Construction of the Crosstown Expressway (now Selmon Expressway) cutting through South Tampa in the 1970s. Dobyville lay directly in the path of this urban renewal project.',
+          credit: 'Tampa Bay History Center',
+        },
+        {
           type: 'paragraph',
           content: 'There was just one problem: building highways through cities required demolishing whatever was in the way. And somehow, what was in the way was almost always Black neighborhoods.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg/1280px-Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg',
+          alt: 'Historical photo of urban renewal demolition in a US city, 1960s',
+          caption: 'Urban renewal demolition in a US city, illustrative of the widespread destruction of Black neighborhoods for highway construction in the mid-20th century.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

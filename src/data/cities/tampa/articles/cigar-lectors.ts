@@ -27,8 +27,22 @@ export const cigarLectors: Article = {
           content: 'The factory floor was silent except for one voice. Three hundred workers sat at wooden benches, hands moving in precise rhythms — stripping stems, pressing leaves, rolling tobacco into perfect cylinders. They did not speak. They did not need to. Above them, on a raised wooden platform called "la tribuna," a man in a suit sat reading aloud from a Spanish-language newspaper. His voice carried across the room, rising and falling with the news from Havana, from Madrid, from the labor halls of New York.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cigar_lector_Cuba_1900s.jpg/800px-Cigar_lector_Cuba_1900s.jpg',
+          alt: 'A lector reading to cigar workers in a Cuban factory, early 20th century',
+          caption: 'A lector reading to cigar workers. This tradition, originating in Cuba, transformed cigar factories into centers of learning and political discourse.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'This was a cigar factory in Ybor City, Tampa, sometime around 1910. The man on the platform was a "lector" — a professional reader, hired by the workers themselves to read to them for eight hours a day while they rolled cigars. He was reading that morning\'s edition of a radical labor newspaper. Later, he would read chapters from a Victor Hugo novel. Later still, he might read a manifesto by José Martí, the Cuban revolutionary who had walked these same factory floors two decades earlier, raising money and recruits for the war that would free Cuba from Spain.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ybor_City_cigar_factory_exterior_1900s.jpg/1280px-Ybor_City_cigar_factory_exterior_1900s.jpg',
+          alt: 'Exterior of a cigar factory in Ybor City, Tampa, early 1900s',
+          caption: 'An Ybor City cigar factory in the early 20th century. These factories, initially built by Cuban manufacturers, brought the lector tradition to Tampa.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -90,8 +104,11 @@ export const cigarLectors: Article = {
           content: 'The Revolutionary',
         },
         {
-          type: 'paragraph',
-          content: 'On November 26, 1891, a Cuban exile with a thin mustache and intense eyes stood before the workers at a factory called Ybor-Manrara. His name was José Martí, and he had come to Tampa to ask for something extraordinary: help him start a war.',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Jose_Marti_portrait.jpg/440px-Jose_Marti_portrait.jpg',
+          alt: 'Portrait of José Martí',
+          caption: 'José Martí, the Cuban poet and revolutionary. His speeches and writings, often read aloud by the lectores, galvanized Tampa\'s cigar workers to support Cuban independence.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
