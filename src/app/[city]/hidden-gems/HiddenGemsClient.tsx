@@ -16,11 +16,13 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
             <article key={gem.id} className="py-10 first:pt-0">
               <div className="space-y-6">
                 {/* Header with rank inline */}
-                <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 bg-neutral-900 text-white text-sm font-medium rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-accent-600 text-white text-xl font-bold rounded-full flex items-center justify-center flex-shrink-0 mt-1 shadow-md">
                     {index + 1}
                   </div>
-                  <h3 className="text-xl md:text-2xl font-semibold text-neutral-900 leading-tight pt-0.5">{gem.name}</h3>
+                  <div className="flex-1 min-w-0 pt-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 leading-tight">{gem.name}</h3>
+                  </div>
                 </div>
 
                 <div className="flex-1 min-w-0">
@@ -31,7 +33,7 @@ export default function HiddenGemsClient({ gems, cityName }: HiddenGemsClientPro
                     </div>
                   )}
 
-                  <p className="text-neutral-600 leading-relaxed mb-6">{gem.description}</p>
+                  <p className="text-neutral-600 text-lg leading-relaxed mb-6 md:pl-16">{gem.description}</p>
 
                   {/* Address section */}
                   {(gem.address) && (

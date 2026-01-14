@@ -270,8 +270,8 @@ function VideoAnimationCuriosity({ item, index, onSectionInView }: { item: Curio
           <div className="flex items-start gap-6 mb-6">
             {/* Number badge */}
             <div className="flex-shrink-0">
-              <div className={`w-16 h-16 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center`}>
-                <span className={`text-3xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
+              <div className="w-12 h-12 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
+                <span className="text-xl font-bold text-white">{index + 1}</span>
               </div>
             </div>
 
@@ -462,18 +462,18 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
         )}
 
         <div className="max-w-5xl mx-auto w-full relative z-10">
-          <div className={`flex flex-col md:flex-row gap-8 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
-            {/* Number */}
-            <div className="flex-shrink-0">
-              <div className={`w-20 h-20 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center`}>
-                <span className={`text-4xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
-              </div>
-            </div>
-
+          <div className="flex flex-col gap-8">
             {/* Content */}
             <div className="flex-1">
-              {/* Header */}
-              <div className="flex items-start gap-3 flex-wrap mb-4">
+              {/* Header with Number */}
+              <div className="flex items-start gap-4 mb-4">
+                {/* Number Badge */}
+                <div className="flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
+                    <span className="text-xl font-bold text-white">{index + 1}</span>
+                  </div>
+                </div>
+
                 <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 leading-tight">
                   {item.title}
                 </h2>
@@ -648,20 +648,7 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
       )}
 
       <div className="max-w-5xl mx-auto w-full relative z-10">
-        <div className={`flex flex-col md:flex-row gap-8 md:gap-12 items-start ${isEven ? '' : 'md:flex-row-reverse'}`}>
-          {/* Animated Number - no parallax to avoid jumping */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-10%" }}
-            variants={numberVariants}
-            className="flex-shrink-0"
-          >
-            <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500`}>
-              <span className={`text-4xl md:text-5xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
-            </div>
-          </motion.div>
-
+        <div className="flex flex-col gap-8">
           {/* Animated Content */}
           <motion.div
             initial="hidden"
@@ -670,8 +657,15 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
             variants={contentVariants}
             className="flex-1"
           >
-            {/* Header */}
-            <div className="flex items-start gap-3 flex-wrap mb-4">
+            {/* Header with Number */}
+            <div className="flex items-start gap-4 mb-4">
+              {/* Number Badge */}
+              <div className="flex-shrink-0 mt-1">
+                <div className="w-12 h-12 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
+                  <span className="text-xl font-bold text-white">{index + 1}</span>
+                </div>
+              </div>
+
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-neutral-900 leading-tight">
                 {item.title}
               </h2>

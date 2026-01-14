@@ -149,12 +149,17 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   // Get featured articles
   const featuredArticles = await curateFeaturedArticles()
 
-  // Hero Slides: Best essays + most intriguing entries
-  // The 3 best history essays, plus 2-3 super compelling curiosities/dark history
+  // Hero Slides: Best essays + specific requested entries
   const premiumEssaySlugs = [
     '/tampa/articles/sunshine-and-hustle',
     '/phoenix/articles/the-air-conditioned-dream',
     '/raleigh/articles/invented-before-it-existed',
+  ]
+
+  const specificHeroSlugs = [
+    '/chicago/dark-history',
+    '/salt-lake-city/curiosities',
+    '/seattle/curiosities',
   ]
 
   // Find the premium essays in order
@@ -162,31 +167,26 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
     .map((slug) => allCards.find((c) => c.href === slug))
     .filter((c): c is PageCardData => c !== undefined)
 
-  // Add 2-3 most intriguing dark-history or curiosity entries with good thumbnails
-  // Prioritize really compelling stories (Phoenix Lights, Tesla, Lost Dutchman, etc.)
-  const compellingEntries = cardsWithThumbnails
-    .filter(
-      (c) =>
-        (c.pageType === 'dark-history' || c.pageType === 'curiosities') &&
-        !premiumEssaySlugs.includes(c.href) &&
-        c.thumbnail
-    )
-    .slice(0, 3)
+  // Find specific requested slides
+  const specificSlides = specificHeroSlugs
+    .map((slug) => allCards.find((c) => c.href === slug))
+    .filter((c): c is PageCardData => c !== undefined)
 
-  const heroSlides = [...premiumEssays, ...compellingEntries].slice(0, 5)
+  // Combined hero slides
+  const heroSlides = [...premiumEssays, ...specificSlides].slice(0, 6)
 
   // Dark Stories: 4 dark-history items from diverse cities
   const darkStories = diversifyByCities(
     cardsWithThumbnails
-      .filter((c) => c.pageType === 'dark-history' && !heroSlides.includes(c))
-      .slice(0, 8), // Get more than needed for diversity algorithm
+      .filter((c) => c.pageType === 'dark-history' && !heroSlides.some(h => h.href === c.href))
+      .slice(0, 8),
     4
   )
 
   // Curiosities: 4 curiosity items from diverse cities
   const curiosities = diversifyByCities(
     cardsWithThumbnails
-      .filter((c) => c.pageType === 'curiosities' && !heroSlides.includes(c))
+      .filter((c) => c.pageType === 'curiosities' && !heroSlides.some(h => h.href === c.href))
       .slice(0, 8),
     4
   )

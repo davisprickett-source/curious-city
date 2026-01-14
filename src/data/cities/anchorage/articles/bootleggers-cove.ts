@@ -27,6 +27,13 @@ export const bootleggersCove: Article = {
           content: 'Anchorage in 1920 was a town of about 1,900 souls — railroad workers, merchants, adventurers, and drifters who had washed up at the end of the rail line. It was a rough place, barely five years old, still more camp than city. And despite Alaska\'s bone-dry prohibition laws, it may have been the wettest town in the territory.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Downtown_Anchorage_1920.jpg',
+          alt: 'Downtown Anchorage street scene in 1920, showing unpaved roads and early wooden buildings',
+          caption: 'Downtown Anchorage, circa 1920. At the height of Prohibition, this frontier town was home to dozens of illegal bars and smuggling operations.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'The problem — or opportunity, depending on your perspective — was geography. Anchorage sat on Cook Inlet, with hundreds of miles of unpatrolled coastline. Boats could land almost anywhere. To the south, Seward connected to the Lower 48 by steamship. To the north, the wilderness offered infinite places to hide a still. Prohibition in Anchorage was less a law than a suggestion.',
         },
@@ -103,6 +110,13 @@ export const bootleggersCove: Article = {
         {
           type: 'paragraph',
           content: 'The neighborhood now known as Bootlegger\'s Cove earned its name honestly. A natural indentation in Cook Inlet\'s shoreline, the cove offered protection from observation and easy access to the water. Boats carrying contraband cargo could land at the cove under cover of darkness, offload their goods, and disappear before anyone was the wiser.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a1/Cook_Inlet_from_Anchorage.jpg',
+          alt: 'Panoramic view of Cook Inlet with the Alaska Range in the distance',
+          caption: 'Cook Inlet as seen from the bluffs near Bootlegger\'s Cove. Smugglers used the cover of darkness and the massive tides to land illegal shipments here.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

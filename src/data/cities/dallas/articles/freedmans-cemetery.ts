@@ -12,9 +12,9 @@ export const freedmansCemetery: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/freedmans-cemetery/memorial-overview-2.jpg',
-    alt: 'Freedman\'s Cemetery Memorial in Dallas, honoring formerly enslaved people buried beneath North Central Expressway',
-    credit: 'Texas Time Travel, Texas Historical Commission',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Freedmans_Cemetery_Memorial_Dallas.jpg/1280px-Freedmans_Cemetery_Memorial_Dallas.jpg',
+    alt: 'Freedman\'s Cemetery Memorial in Dallas, with bronze figures and commemorative wall',
+    credit: 'Wikimedia Commons',
   },
   category: 'history',
   tags: ['dallas', 'civil-rights', 'cemetery', 'forgotten-history', 'reconstruction', 'archaeology'],

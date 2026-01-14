@@ -34,7 +34,7 @@ export function MapMarker({ rank, state, spotName, onClick }: MapMarkerProps) {
       <div
         className={`
           ${state === 'active' ? 'w-12 h-12 bg-[#c65d3b] animate-pulse-subtle' : ''}
-          ${state === 'primary' ? 'w-9 h-9 bg-[#d97556]' : ''}
+          ${state === 'primary' ? 'w-9 h-9 bg-[#c65d3b]' : ''}
           ${state === 'secondary' ? 'w-6 h-6 bg-neutral-400' : ''}
           rounded-full
           border-2 border-white

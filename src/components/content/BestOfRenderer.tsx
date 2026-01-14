@@ -37,22 +37,28 @@ function BestOfSpotCard({ spot, rank }: { spot: BestOfSpot; rank: number }) {
           <ImageCarousel images={carouselImages} className="ml-1" />
         )}
 
-        {/* Header */}
-        <div className="flex items-start gap-3">
-          <div className="w-7 h-7 shrink-0 bg-accent-600 text-white text-sm font-semibold rounded-full flex items-center justify-center shadow-sm mt-0.5">
-            {rank}
+        {/* Header with Number */}
+        <div className="flex items-start gap-4">
+          {/* Number Badge */}
+          <div className="flex-shrink-0 mt-1">
+            <div className="w-10 h-10 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
+              <span className="text-lg font-bold text-white">{rank}</span>
+            </div>
           </div>
-          <div className="flex items-baseline gap-3 flex-wrap">
-            <h3 className="text-lg font-semibold text-neutral-900">{spot.name}</h3>
-            <span className="text-sm text-neutral-500">{spot.neighborhood}</span>
-            {spot.price && (
-              <span className="text-sm text-accent-600 font-medium">{spot.price}</span>
-            )}
+          
+          <div className="flex-1">
+            <div className="flex items-baseline gap-3 flex-wrap">
+              <h3 className="text-xl font-bold text-neutral-900 leading-tight">{spot.name}</h3>
+              <span className="text-sm text-neutral-500 font-medium">{spot.neighborhood}</span>
+              {spot.price && (
+                <span className="text-sm text-accent-600 font-bold">{spot.price}</span>
+              )}
+            </div>
           </div>
         </div>
 
         {/* Vibe */}
-        <p className="text-neutral-600 italic leading-relaxed">
+        <p className="text-neutral-600 italic leading-relaxed pl-14">
           {spot.vibe}
         </p>
 

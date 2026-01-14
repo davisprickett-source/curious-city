@@ -52,6 +52,13 @@ export const denainaFlu: Article = {
           content: 'The villages had adapted. Russian Orthodox missionaries had converted many Dena\'ina in the 1840s, creating a syncretic culture that blended Christianity with traditional practices. The distinctive spirit houses at Eklutna Cemetery — brightly painted wooden structures placed over graves — represented this fusion. The Dena\'ina were changing, but they were surviving.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Eklutna_Spirit_Houses.jpg',
+          alt: 'Colorful spirit houses at Eklutna Cemetery, a blend of Dena\'ina and Russian Orthodox traditions',
+          caption: 'Spirit houses at Eklutna Historical Park. These traditional Dena\'ina structures are placed over graves, reflecting a culture that has endured for a millennium.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'quote',
           content: 'We had been here forever. The rivers, the mountains, the inlet — these were our places. We had names for everything. Then the sickness came, and suddenly there was almost no one left to remember the names.',
           attribution: 'Dena\'ina elder',
@@ -97,6 +104,13 @@ export const denainaFlu: Article = {
         {
           type: 'paragraph',
           content: 'The Spanish flu reached Alaska in the fall of 1918, arriving on ships from Seattle. It spread along the coastlines and up the rivers, following the routes that connected Alaska\'s scattered settlements. By October, it had reached Anchorage.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/CampFunston_InfluenzaHospital.jpg',
+          alt: 'A crowded hospital ward during the 1918 influenza pandemic',
+          caption: 'A 1918 influenza ward. When the virus reached Alaska\'s Indigenous villages, it proved catastrophic, killing half the Dena\'ina population in some areas.',
+          credit: 'Library of Congress',
         },
         {
           type: 'paragraph',

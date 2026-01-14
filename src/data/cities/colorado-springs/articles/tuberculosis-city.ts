@@ -47,107 +47,127 @@ export const tuberculosisCity: Article = {
           type: 'paragraph',
           content: 'The disease attacked the lungs. Victims coughed blood, lost weight, developed fevers that came and went. The progression was slow — months or years of gradual decline, punctuated by periods of seeming recovery that always proved false. There was no cure. Doctors could only try to slow the disease and make patients comfortable as they died.',
         },
-        {
-          type: 'paragraph',
-          content: 'The leading theory of the era held that fresh air, sunshine, and rest could help TB patients. High altitude was considered especially beneficial — the thin air forced deeper breathing, which supposedly cleared the lungs. This theory, while scientifically dubious, created an industry: tuberculosis resorts in mountain towns across the American West.',
-        },
-        {
-          type: 'quote',
-          content: 'The consumptive who goes to Colorado does not go there to be cured. He goes there to live longer and to die more pleasantly. This is what Colorado offers, and it delivers admirably.',
-          attribution: 'Medical journal',
-          role: '1895',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Sanitarium City',
-        },
-        {
-          type: 'paragraph',
-          content: 'Colorado Springs had the perfect combination: 6,000 feet of elevation, over 300 days of sunshine per year, dry air, and spectacular mountain scenery. General William Jackson Palmer, who founded the city in 1871, actively marketed it as a health destination. By the 1880s, tuberculosis patients were arriving by the trainload.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Sanitariums multiplied across the city and its foothills. The most famous was Cragmor, founded in 1905 on a bluff overlooking the city. Cragmor was designed specifically for TB treatment: its buildings faced south to maximize sunlight, with large porches where patients could rest outdoors. The architecture was beautiful, almost resort-like. It was a place to die in luxury.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Other sanitariums followed. The Glockner, the Woodmen, the Swedish National — at one point, Colorado Springs had over twenty tuberculosis facilities. The Union Printers Home, founded in 1892, served as the world\'s largest care facility for union printers suffering from TB and "black lung." The industry employed thousands: doctors, nurses, cooks, housekeepers, groundskeepers.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The Numbers',
-          content: 'By 1900, tuberculosis patients and their caregivers made up roughly one-third of Colorado Springs\' population. The city had more sanitariums per capita than any other place in America. TB treatment was the primary economic driver — more important than mining, tourism, or any other industry.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Lungers',
-        },
-        {
-          type: 'paragraph',
-          content: 'The patients were called "lungers" — a term used matter-of-factly, without the stigma it might carry today. They came from across America: factory workers from New England, office clerks from Chicago, farmers from the Midwest. TB didn\'t discriminate by class, though the quality of your care certainly did.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Wealthy lungers stayed at places like Cragmor, with private rooms, fine dining, and attentive staff. Middle-class patients filled the boarding houses that proliferated across the city, paying weekly rates for a bed and meals. The poor lived in "tent cities" on the outskirts of town, where canvas shelters provided the fresh air treatment without any of the comfort.',
-        },
-        {
-          type: 'paragraph',
-          content: 'A social hierarchy developed. "Chasers" were patients who had come early, while their disease was still manageable. "Lungers" were more advanced cases. "Last-ditchers" were the dying, those who had come too late for the mountain air to help. Everyone knew where they stood. Everyone knew the progression.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The treatment regimen was oddly leisurely. Patients were expected to rest, breathe deeply, eat well, and avoid exertion. They sat on porches for hours, wrapped in blankets, watching the mountains. They walked short distances, then rested again. They wrote letters home, describing the scenery and their health in equal measure. Time moved slowly in the sanitariums.',
-        },
-        {
-          type: 'quote',
-          content: 'We are all dying here, but we are dying beautifully. The mountains are spectacular, the air is clean, and the staff treats us with kindness. There are worse places to end one\'s time on Earth.',
-          attribution: 'TB patient letter',
-          role: 'Cragmor Sanitarium, 1912',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Huts',
-        },
-        {
-          type: 'paragraph',
-          content: 'One of the strangest artifacts of the tuberculosis era still survives in Colorado Springs: the TB hut. These were tiny structures — typically 8 by 10 feet — designed to provide fresh-air sleeping quarters for tuberculosis patients. They were essentially three-walled shacks with the fourth side open to the elements.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The theory was that sleeping outdoors, even in winter, was beneficial for TB patients. The huts provided minimal shelter while maximizing exposure to fresh air. Patients slept in them year-round, bundled in blankets and sleeping bags, breathing the cold mountain air as treatment for their diseased lungs.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Architect Charles Fox Gardiner designed a distinctive style of TB hut with dual windows for ventilation. These "Gardiner huts" were built across Colorado Springs, in backyards and on sanitarium grounds. Many survive today, converted to garden sheds or storage buildings. Most homeowners don\'t know what they originally were — or what suffering occurred inside them.',
-        },
-        {
-          type: 'callout',
-          variant: 'tip',
-          title: 'Finding the Huts',
-          content: 'Original TB huts can still be found in older Colorado Springs neighborhoods, particularly near downtown and in the Old North End. They\'re typically small outbuildings with distinctive window configurations. Some have been preserved; most have been converted to other uses. The Pioneers Museum has exhibits about the tuberculosis era.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Cure',
-        },
-        {
-          type: 'paragraph',
-          content: 'In 1943, a Rutgers University researcher named Selman Waksman discovered streptomycin — the first antibiotic effective against tuberculosis. Within a decade, TB was no longer a death sentence. Patients who would have been sent to Colorado to die could now be cured with pills.',
-        },
-        {
+                {
+                  type: 'paragraph',
+                  content: 'The leading theory of the era held that fresh air, sunshine, and rest could help TB patients. High altitude was considered especially beneficial — the thin air forced deeper breathing, which supposedly cleared the lungs. This theory, while scientifically dubious, created an industry: tuberculosis resorts in mountain towns across the American West.',
+                },
+                {
+                  type: 'quote',
+                  content: 'The consumptive who goes to Colorado does not go there to be cured. He goes there to live longer and to die more pleasantly. This is what Colorado offers, and it delivers admirably.',
+                  attribution: 'Medical journal',
+                  role: '1895',
+                },
+                {
+                  type: 'ad',
+                  size: 'rectangle',
+                },
+                {
+                  type: 'heading',
+                  level: 2,
+                  content: 'The Sanitarium City',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'Colorado Springs had the perfect combination: 6,000 feet of elevation, over 300 days of sunshine per year, dry air, and spectacular mountain scenery. General William Jackson Palmer, who founded the city in 1871, actively marketed it as a health destination. By the 1880s, tuberculosis patients were arriving by the trainload.',
+                },
+                {
+                  type: 'image',
+                  src: 'https://www.ppld.org/sites/default/files/styles/node_image/public/images/node/image_gallery/2012/04/cragmor_patients.jpg',
+                  alt: 'Patients on a porch at Cragmor Sanitarium, Colorado Springs, 1920s',
+                  caption: 'Patients at Cragmor Sanitarium taking the "fresh air cure." The dry, sunny climate of Colorado Springs was believed to be beneficial for those suffering from tuberculosis.',
+                  credit: 'Pikes Peak Library District Special Collections',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'Sanitariums multiplied across the city and its foothills. The most famous was Cragmor, founded in 1905 on a bluff overlooking the city. Cragmor was designed specifically for TB treatment: its buildings faced south to maximize sunlight, with large porches where patients could rest outdoors. The architecture was beautiful, almost resort-like. It was a place to die in luxury.',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'Other sanitariums followed. The Glockner, the Woodmen, the Swedish National — at one point, Colorado Springs had over twenty tuberculosis facilities. The Union Printers Home, founded in 1892, served as the world\'s largest care facility for union printers suffering from TB and "black lung." The industry employed thousands: doctors, nurses, cooks, housekeepers, groundskeepers.',
+                },
+                {
+                  type: 'callout',
+                  variant: 'info',
+                  title: 'The Numbers',
+                  content: 'By 1900, tuberculosis patients and their caregivers made up roughly one-third of Colorado Springs\' population. The city had more sanitariums per capita than any other place in America. TB treatment was the primary economic driver — more important than mining, tourism, or any other industry.',
+                },
+                {
+                  type: 'heading',
+                  level: 2,
+                  content: 'The Lungers',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'The patients were called "lungers" — a term used matter-of-factly, without the stigma it might carry today. They came from across America: factory workers from New England, office clerks from Chicago, farmers from the Midwest. TB didn\'t discriminate by class, though the quality of your care certainly did.',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'Wealthy lungers stayed at places like Cragmor, with private rooms, fine dining, and attentive staff. Middle-class patients filled the boarding houses that proliferated across the city, paying weekly rates for a bed and meals. The poor lived in "tent cities" on the outskirts of town, where canvas shelters provided the fresh air treatment without any of the comfort.',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'A social hierarchy developed. "Chasers" were patients who had come early, while their disease was still manageable. "Lungers" were more advanced cases. "Last-ditchers" were the dying, those who had come too late for the mountain air to help. Everyone knew where they stood. Everyone knew the progression.',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'The treatment regimen was oddly leisurely. Patients were expected to rest, breathe deeply, eat well, and avoid exertion. They sat on porches for hours, wrapped in blankets, watching the mountains. They walked short distances, then rested again. They wrote letters home, describing the scenery and their health in equal measure. Time moved slowly in the sanitariums.',
+                },
+                {
+                  type: 'quote',
+                  content: 'We are all dying here, but we are dying beautifully. The mountains are spectacular, the air is clean, and the staff treats us with kindness. There are worse places to end one\'s time on Earth.',
+                  attribution: 'TB patient letter',
+                  role: 'Cragmor Sanitarium, 1912',
+                },
+                {
+                  type: 'ad',
+                  size: 'rectangle',
+                },
+                {
+                  type: 'heading',
+                  level: 2,
+                  content: 'The Huts',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'One of the strangest artifacts of the tuberculosis era still survives in Colorado Springs: the TB hut. These were tiny structures — typically 8 by 10 feet — designed to provide fresh-air sleeping quarters for tuberculosis patients. They were essentially three-walled shacks with the fourth side open to the elements.',
+                },
+                {
+                  type: 'image',
+                  src: 'https://atlasobscura.com/wp-content/uploads/2018/05/tb_huts.jpg',
+                  alt: 'Historical photograph of a TB hut in Colorado Springs',
+                  caption: 'A typical TB hut, designed to provide patients with constant access to fresh air, even in winter. Many still survive in older Colorado Springs neighborhoods.',
+                  credit: 'Atlas Obscura',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'The theory was that sleeping outdoors, even in winter, was beneficial for TB patients. The huts provided minimal shelter while maximizing exposure to fresh air. Patients slept in them year-round, bundled in blankets and sleeping bags, breathing the cold mountain air as treatment for their diseased lungs.',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'Architect Charles Fox Gardiner designed a distinctive style of TB hut with dual windows for ventilation. These "Gardiner huts" were built across Colorado Springs, in backyards and on sanitarium grounds. Many survive today, converted to garden sheds or storage buildings. Most homeowners don\'t know what they originally were — or what suffering occurred inside them.',
+                },
+                {
+                  type: 'callout',
+                  variant: 'tip',
+                  title: 'Finding the Huts',
+                  content: 'Original TB huts can still be found in older Colorado Springs neighborhoods, particularly near downtown and in the Old North End. They\'re typically small outbuildings with distinctive window configurations. Some have been preserved; most have been converted to other uses. The Pioneers Museum has exhibits about the tuberculosis era.',
+                },
+                {
+                  type: 'heading',
+                  level: 2,
+                  content: 'The Cure',
+                },
+                {
+                  type: 'paragraph',
+                  content: 'In 1943, a Rutgers University researcher named Selman Waksman discovered streptomycin — the first antibiotic effective against tuberculosis. Within a decade, TB was no longer a death sentence. Patients who would have been sent to Colorado to die could now be cured with pills.',
+                },
+                {
+                  type: 'image',
+                  src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Selman_Waksman.jpg/800px-Selman_Waksman.jpg',
+                  alt: 'Portrait of Selman Waksman, discoverer of streptomycin',
+                  caption: 'Selman Waksman, whose discovery of streptomycin in 1943 revolutionized TB treatment and rendered the sanitarium model obsolete.',
+                  credit: 'Wikimedia Commons',
+                },        {
           type: 'paragraph',
           content: 'The effect on Colorado Springs was immediate and devastating. The sanitariums began to empty. Cragmor, which had been expanding, suddenly found itself with more beds than patients. The boarding houses lost their tenants. The tent cities disappeared. Within a few years, the industry that had sustained Colorado Springs for half a century was simply gone.',
         },

@@ -58,27 +58,29 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
 
       {/* Name Header (above image) - compact single line on mobile */}
       <div className="px-3 sm:px-6 pt-2 sm:pt-6 pb-2 sm:pb-4 bg-gradient-to-b from-white to-transparent">
-        <div className="flex items-baseline gap-1.5 sm:gap-3 min-w-0">
-          <span className="w-5 h-5 sm:w-10 sm:h-10 bg-[#c65d3b] text-white text-[10px] sm:text-base font-semibold rounded-full inline-flex items-center justify-center shadow-lg flex-shrink-0 relative -top-px sm:top-0">
+        <div className="flex items-start gap-4 min-w-0">
+          <div className="w-12 h-12 bg-[#c65d3b] text-white text-xl font-bold rounded-full inline-flex items-center justify-center shadow-lg flex-shrink-0 mt-1">
             {rank}
-          </span>
-          <div className="flex items-baseline gap-1.5 sm:gap-2 min-w-0 flex-1 flex-wrap sm:flex-nowrap">
-            {spot.website ? (
-              <a
-                href={spot.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base sm:text-2xl md:text-3xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-2 sm:underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors truncate max-w-[60%] sm:max-w-none"
-              >
-                {spot.name}
-              </a>
-            ) : (
-              <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-neutral-900 truncate max-w-[60%] sm:max-w-none">{spot.name}</h3>
-            )}
-            <span className="text-xs sm:text-base text-neutral-500 whitespace-nowrap">{spot.neighborhood}</span>
-            {spot.price && (
-              <span className="text-xs sm:text-base text-[#c65d3b] font-semibold whitespace-nowrap">{spot.price}</span>
-            )}
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-baseline gap-2 flex-wrap">
+              {spot.website ? (
+                <a
+                  href={spot.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base sm:text-2xl md:text-3xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-2 sm:underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors truncate max-w-[80%] sm:max-w-none"
+                >
+                  {spot.name}
+                </a>
+              ) : (
+                <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-neutral-900 truncate max-w-[80%] sm:max-w-none">{spot.name}</h3>
+              )}
+              <span className="text-xs sm:text-base text-neutral-500 whitespace-nowrap font-medium">{spot.neighborhood}</span>
+              {spot.price && (
+                <span className="text-xs sm:text-base text-[#c65d3b] font-bold whitespace-nowrap">{spot.price}</span>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +94,7 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
 
       <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 pb-2 sm:pb-6 md:pb-8">
         {/* Vibe/Hook - Always visible */}
-        <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed">
+        <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed sm:pl-16">
           {spot.vibe}
         </p>
 

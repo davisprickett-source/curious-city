@@ -31,43 +31,40 @@ export function SpotCard({ spot, rank, totalSpots, isActive }: SpotCardProps) {
         </div>
       )}
 
-      <div className="p-4 md:p-6 space-y-3 md:space-y-4">
-        {/* Rank badge */}
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 md:w-10 md:h-10 bg-[#c65d3b] text-white text-sm md:text-base font-semibold rounded-full flex items-center justify-center shadow-md">
+      <div className="p-4 md:p-6 space-y-4">
+        {/* Header with Rank Badge */}
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 bg-[#c65d3b] text-white text-xl font-bold rounded-full flex items-center justify-center shadow-md flex-shrink-0 mt-1">
             {rank}
           </div>
-          <div className="text-sm text-neutral-500">
-            / {totalSpots}
-          </div>
-        </div>
-
-        {/* Name and metadata */}
-        <div>
-          <div className="flex items-baseline gap-3 flex-wrap mb-1 md:mb-2">
-            {spot.website ? (
-              <a
-                href={spot.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl md:text-3xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors"
-              >
-                {spot.name}
-              </a>
-            ) : (
-              <h3 className="text-xl md:text-3xl font-bold text-neutral-900">{spot.name}</h3>
-            )}
-          </div>
-          <div className="flex items-center gap-3 flex-wrap text-sm md:text-base">
-            <span className="text-neutral-600">{spot.neighborhood}</span>
-            {spot.price && (
-              <span className="text-[#c65d3b] font-semibold">{spot.price}</span>
-            )}
+          
+          <div className="flex-1 min-w-0">
+            <div className="flex items-baseline gap-3 flex-wrap mb-1">
+              {spot.website ? (
+                <a
+                  href={spot.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl md:text-3xl font-bold text-neutral-900 hover:text-[#c65d3b] underline underline-offset-4 decoration-neutral-300 hover:decoration-[#c65d3b] transition-colors truncate max-w-[90%]"
+                >
+                  {spot.name}
+                </a>
+              ) : (
+                <h3 className="text-xl md:text-3xl font-bold text-neutral-900 truncate max-w-[90%]">{spot.name}</h3>
+              )}
+            </div>
+            <div className="flex items-center gap-3 flex-wrap text-sm md:text-base">
+              <span className="text-neutral-600 font-medium">{spot.neighborhood}</span>
+              {spot.price && (
+                <span className="text-[#c65d3b] font-bold">{spot.price}</span>
+              )}
+              <span className="text-neutral-400 text-xs">#{rank} of {totalSpots}</span>
+            </div>
           </div>
         </div>
 
         {/* Vibe (hook) - always visible */}
-        <p className="text-base md:text-lg text-neutral-700 italic leading-relaxed">
+        <p className="text-base md:text-lg text-neutral-700 italic leading-relaxed pl-16">
           {spot.vibe}
         </p>
 

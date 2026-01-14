@@ -99,7 +99,7 @@ export function MapSidebar({ spots, activeSpotIndex }: MapSidebarProps) {
         el.style.width = isActive ? '40px' : '32px'
         el.style.height = isActive ? '40px' : '32px'
         el.style.borderRadius = '50%'
-        el.style.backgroundColor = isActive ? '#c65d3b' : '#d97556'
+        el.style.backgroundColor = '#c65d3b'
         el.style.border = '3px solid white'
         el.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)'
         el.style.display = 'flex'

@@ -27,6 +27,13 @@ export const axeMurders: Article = {
           content: 'The morning of September 18, 1911, began like any other in Colorado Springs. Milkmen made their rounds. Children walked to school. Then someone knocked on the door of 325 West Dale Street and got no answer. The house was silent. The blinds were drawn. And inside, arranged in their beds with sheets covering their faces, were three bodies — a man, a woman, and an eighteen-month-old child, their skulls crushed by an axe.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Tejon_Street%2C_Colorado_Springs%2C_circa_1910-1920.jpg/1280px-Tejon_Street%2C_Colorado_Springs%2C_circa_1910-1920.jpg',
+          alt: 'Tejon Street in Colorado Springs, early 20th century',
+          caption: 'Tejon Street in Colorado Springs, circa 1910. The city was a growing resort town, but the axe murders shattered its idyllic image.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Three blocks away, at 606 South Weber Street, police found three more victims: a woman and her two children, killed the same way. The axe that murdered them lay on the floor, wiped clean but still bearing traces of blood. Every victim had been struck with the blunt end while they slept. Every victim\'s face had been covered with a sheet or cloth. Every mirror in both houses had been draped.',
         },
@@ -69,6 +76,13 @@ export const axeMurders: Article = {
         {
           type: 'paragraph',
           content: 'The killer\'s method was consistent across both houses. He entered through unlocked doors or windows in the middle of the night. He found the bedrooms where the victims slept. He struck each victim in the skull with the blunt end of an axe — not the blade, the poll — delivering killing blows while they lay in bed. None of the victims showed signs of struggle. They were killed in their sleep.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Splitting_axe.jpg/800px-Splitting_axe.jpg',
+          alt: 'A typical splitting axe with a wooden handle and metal head',
+          caption: 'The murder weapon in the Colorado Springs axe murders was described as a standard splitting axe, used for chopping firewood. The killer used the blunt end of the poll.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -127,6 +141,13 @@ export const axeMurders: Article = {
         {
           type: 'paragraph',
           content: 'The pattern was consistent across dozens of cases between 1898 and 1912: families killed with axes, struck with the blunt end while sleeping. Faces covered with cloth. Mirrors draped or turned to the wall. Homes located near railroad tracks. The killer seemed to ride the rails, striking in towns along major routes, then vanishing before morning.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Steam_locomotive_on_railroad_tracks%2C_USA%2C_early_1900s.jpg/1280px-Steam_locomotive_on_railroad_tracks%2C_USA%2C_early_1900s.jpg',
+          alt: 'Steam locomotive on railroad tracks, early 1900s',
+          caption: 'The killer is believed to have ridden the rails, traveling from town to town by freight train and striking in homes located near the tracks.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

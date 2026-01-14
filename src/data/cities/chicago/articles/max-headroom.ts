@@ -44,6 +44,13 @@ export const maxHeadroom: Article = {
           content: 'Max Headroom was everywhere in 1987. The character — a supposedly computer-generated TV host played by actor Matt Frewer — had started as a British music video presenter, spawned a dystopian TV movie, and then an American TV series. He appeared in Coca-Cola commercials. He was on magazine covers. His stuttering, glitching delivery and sharp-angled face were instantly recognizable.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Max_Headroom_Matt_Frewer.jpg/800px-Max_Headroom_Matt_Frewer.jpg',
+          alt: 'Matt Frewer as Max Headroom',
+          caption: 'Actor Matt Frewer as Max Headroom. The character\'s distinctive look and stuttering speech made him an icon of 1980s pop culture.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'So when someone wearing a Max Headroom mask appeared on Chicago television that night, viewers knew immediately what they were seeing. What they didn\'t know — what nobody knows to this day — is who was behind the mask, or why.',
         },
@@ -82,6 +89,13 @@ export const maxHeadroom: Article = {
           type: 'heading',
           level: 2,
           content: 'How They Did It',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Microwave_dish_transmitter.jpg/1280px-Microwave_dish_transmitter.jpg',
+          alt: 'Microwave broadcast dish',
+          caption: 'A microwave dish transmitter, similar to the equipment likely used in the Max Headroom incident. Hijacking a broadcast signal required advanced technical knowledge and powerful, precisely aimed equipment.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

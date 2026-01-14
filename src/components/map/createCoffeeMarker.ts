@@ -23,8 +23,8 @@ export function createCoffeeMarker(options: {
   el.innerHTML = `
     <svg width="100%" height="100%" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Background circle -->
-      <circle cx="24" cy="24" r="24" fill="${isActive ? '#c65d3b' : '#d97556'}" />
-      <circle cx="24" cy="24" r="21" fill="${isActive ? '#c65d3b' : '#d97556'}" stroke="white" stroke-width="3" />
+      <circle cx="24" cy="24" r="24" fill="#c65d3b" />
+      <circle cx="24" cy="24" r="21" fill="#c65d3b" stroke="white" stroke-width="3" />
 
       <!-- Coffee cup icon -->
       <path

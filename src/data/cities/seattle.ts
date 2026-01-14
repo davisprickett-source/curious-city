@@ -5,8 +5,8 @@ export const seattle: CityData = {
   name: 'Seattle',
   tagline: 'Where the underground is literal and the coffee never stops',
   heroImage: {
-    src: '/banners/Seattle-banner.png',
-    alt: 'Seattle curiosities banner',
+    src: '/banners/hero-city-images/seattle-skyline.png',
+    alt: 'Seattle skyline at dusk',
   },
   content: [
     {

@@ -107,7 +107,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/Mill-Ends-Park.png',
             alt: 'Mill Ends Park, the world\'s smallest park in Portland',
           },
-          source: 'Guinness World Records',
+          sources: [
+            {
+              title: 'Smallest Park',
+              publisher: 'Guinness World Records',
+              url: 'https://www.guinnessworldrecords.com/world-records/smallest-park',
+            }
+          ],
           location: {
             name: 'SW Naito Parkway',
             stillExists: true,
@@ -129,7 +135,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/Portland-gas-service.png',
             alt: 'Oregon gas station attendant filling car',
           },
-          source: 'Oregon Legislature',
+          sources: [
+            {
+              title: 'ORS 480.315 to 480.385',
+              publisher: 'Oregon Legislature',
+              url: 'https://www.oregonlegislature.gov/bills_laws/ors/ors480.html',
+            }
+          ],
           location: {
             name: 'State of Oregon',
             stillExists: true,
@@ -150,7 +162,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/shanghai-tunnels.png',
             alt: 'Underground Shanghai tunnels in Portland Old Town',
           },
-          source: 'Oregon Encyclopedia',
+          sources: [
+            {
+              title: 'Shanghai Tunnels',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
+            }
+          ],
           location: {
             name: 'Old Town/Chinatown',
             stillExists: true,
@@ -167,7 +185,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/coin-flip.png',
             alt: 'The Portland Penny that decided the city\'s name',
           },
-          source: 'Oregon Historical Society',
+          sources: [
+            {
+              title: 'Portland Penny',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/portland_penny/',
+            }
+          ],
         },
         {
           id: 'pdx-curiosity-12',
@@ -180,7 +204,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/beer.png',
             alt: 'Portland craft beer scene with local breweries',
           },
-          source: 'Oregon Brewers Guild',
+          sources: [
+            {
+              title: 'Oregon Brewers Guild: History and Future of Oregon Craft Beer',
+              publisher: 'Oregon State University',
+              url: 'https://oregonstate.edu/ua/ncs/archives/2016/10/oregon-brewers-guild-history-and-future-oregon-craft-beer',
+            }
+          ],
         },
         {
           id: 'pdx-curiosity-13',
@@ -199,7 +229,13 @@ export const portland: CityData = {
               alt: 'Tom McCall Waterfront Park after freeway removal',
             }
           ],
-          source: 'Portland Parks & Recreation',
+          sources: [
+            {
+              title: 'History of Tom McCall Waterfront Park',
+              publisher: 'Portland.gov',
+              url: 'https://www.portland.gov/parks/tom-mccall-waterfront-park/history',
+            }
+          ],
           location: {
             name: 'Tom McCall Waterfront Park',
             stillExists: true,
@@ -1214,7 +1250,7 @@ export const portland: CityData = {
               type: 'article',
               title: 'The Vanport Flood',
               publisher: 'Oregon Historical Society',
-              url: 'https://www.ohs.org/research-and-library/oregon-historical-quarterly/upload/1993-Winter.pdf',
+              url: 'https://www.oregonhistoryproject.org/articles/vanport-flood/',
             },
             {
               type: 'article',
@@ -1223,23 +1259,11 @@ export const portland: CityData = {
               url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/',
             },
             {
-              type: 'article',
-              title: 'When Portland\'s Vanport City Flooded and Washed Away',
-              publisher: 'NPR Code Switch',
-              url: 'https://www.npr.org/sections/codeswitch/2021/02/03/963465780/vanport-oregon-flood-black-displacement',
-            },
-            {
               type: 'documentary',
               title: 'Vanport',
               platform: 'Oregon Experience (PBS)',
-              year: '2020',
-              url: 'https://www.opb.org/television/programs/oregon-experience/episode/vanport/',
-            },
-            {
-              type: 'video',
-              title: 'The Vanport Flood: Oregon\'s Forgotten Disaster',
-              platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=VanportFlood',
+              year: '2016',
+              url: 'https://www.youtube.com/watch?v=k5lW3_y2t0Q',
             },
             {
               type: 'book',
@@ -1544,47 +1568,33 @@ export const portland: CityData = {
           title: 'The Only State to Ban Black People—By Popular Vote',
           body: 'In 1857, Oregon held a vote: Should we legalize slavery, or just ban Black people entirely? Slavery lost. The exclusion law won. Of 10,000 white men who voted, 8,500 chose to prohibit free Black people from living in Oregon—period. In 1859, Oregon became the only state admitted to the Union with a Black exclusion clause written into its constitution. Before statehood, the provisional government had passed the "Lash Law"—Black people who refused to leave would receive 39 lashes every six months until they complied. The exclusion clause wasn\'t removed from the constitution until 1926. Oregon didn\'t ratify the 15th Amendment (voting rights for Black men) until 1959—nearly a century late. The 14th Amendment (citizenship) wasn\'t ratified until 1973. By the 1920s, the KKK had 40,000 members in Oregon—15% of the white male population. The legacy endures: Portland remains one of the whitest major cities in America, not by accident but by design, policy, and violence dressed as democracy.',
           verdict: 'The only state to enter the Union as explicitly whites-only. The progressive reputation is new. The racism is original.',
-          sources: [
-            {
-              type: 'article',
-              title: 'Oregon\'s Black Exclusion Laws',
-              publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
-            },
-            {
-              type: 'article',
-              title: 'When Portland Banned Black People',
-              publisher: 'OPB',
-              url: 'https://www.opb.org/article/2021/02/01/oregon-black-exclusion-laws-history/',
-            },
-            {
-              type: 'article',
-              title: 'Oregon\'s Shameful History as an "All-White" State',
-              publisher: 'National Geographic',
-              url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
-            },
-            {
-              type: 'video',
-              title: 'Oregon\'s Racist Past: The Black Exclusion Laws',
-              platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=OregonBlackExclusion',
-            },
-            {
-              type: 'book',
-              title: 'The Black Exclusion Laws in Oregon',
-              author: 'Kenneth R. Coleman',
-              isbn: '9781532659461',
-              year: '2018',
-              url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
-            },
-            {
-              type: 'article',
-              title: 'Oregon was founded as a racist utopia',
-              publisher: 'The Atlantic',
-              url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
-            }
-          ],
-          location: {
+                    sources: [
+                      {
+                        title: 'Oregon\'s Black Exclusion Laws',
+                        publisher: 'Oregon Encyclopedia',
+                        url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
+                      },
+                      {
+                        type: 'article',
+                        title: 'Oregon\'s Shameful History as an "All-White" State',
+                        publisher: 'National Geographic',
+                        url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
+                      },
+                      { 
+                        type: 'book',
+                        title: 'The Black Exclusion Laws in Oregon',
+                        author: 'Kenneth R. Coleman',
+                        isbn: '9781532659461',
+                        year: '2018',
+                        url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
+                      },
+                      {
+                        type: 'article',
+                        title: 'Oregon was founded as a racist utopia',
+                        publisher: 'The Atlantic',
+                        url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
+                      }
+                    ],          location: {
             name: 'State of Oregon',
             stillExists: true,
           },

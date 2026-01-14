@@ -171,7 +171,10 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
 
   // 2. Dark History section
   const darkHistorySection = findSection(city.content, (item) =>
-    item.title?.includes('Dark') || item.id?.includes('dark-history')
+    item.id?.includes('dark-history') || 
+    item.id?.includes('dark-history') ||
+    item.title?.toLowerCase().includes('dark history') ||
+    item.title?.toLowerCase().includes('dark city')
   )
 
   if (darkHistorySection && darkHistorySection.items?.length > 0) {
@@ -189,7 +192,11 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
 
   // 3. Curiosities section
   const curiositiesSection = findSection(city.content, (item) =>
-    item.title?.includes('Curiosit')
+    item.id?.includes('curiosit') || 
+    item.id?.includes('archive') ||
+    item.title?.toLowerCase().includes('curiosit') ||
+    item.title?.toLowerCase().includes('ledger') ||
+    item.title?.toLowerCase().includes('archive')
   )
 
   if (curiositiesSection && curiositiesSection.items?.length > 0) {

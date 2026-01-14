@@ -12,9 +12,9 @@ export const boggsBegich: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/anchorage/articles/boggs-begich.png',
-    alt: 'Hale Boggs and Nick Begich campaign photo, 1972',
-    credit: 'U.S. House of Representatives Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hale_Boggs_and_Nick_Begich_1972.jpg/800px-Hale_Boggs_and_Nick_Begich_1972.jpg',
+    alt: 'Hale Boggs and Nick Begich shaking hands during 1972 campaign',
+    credit: 'Robert Musgrave / Speaker Carl Albert Exhibit',
   },
   category: 'history',
   tags: ['anchorage', 'mystery', 'politics', 'disappearance', '1972', 'unsolved', 'aviation'],
@@ -45,10 +45,10 @@ export const boggsBegich: Article = {
         },
         {
           type: 'image',
-          src: '/anchorage/articles/boggs-begich-hale-boggs.jpg',
-          alt: 'Official congressional portrait of Hale Boggs, House Majority Leader from Louisiana',
-          caption: 'House Majority Leader Hale Boggs, circa 1957. At the time of his disappearance, he was the second-most powerful Democrat in America.',
-          credit: 'Collection of the U.S. House of Representatives',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Hale_Boggs.jpg',
+          alt: 'Official portrait of Hale Boggs, US House Majority Leader',
+          caption: 'House Majority Leader Hale Boggs, a powerful figure in Washington, disappeared at the height of his career.',
+          credit: 'US Congress / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -56,10 +56,10 @@ export const boggsBegich: Article = {
         },
         {
           type: 'image',
-          src: '/anchorage/articles/boggs-begich-nick-begich.jpg',
-          alt: 'Official congressional portrait of Nick Begich, at-large Representative from Alaska',
-          caption: 'Congressman Nick Begich of Alaska, circa 1971. He was 40 years old when he vanished — and would win re-election posthumously.',
-          credit: 'Library of Congress',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Nick_Begich_official_portrait.jpg/800px-Nick_Begich_official_portrait.jpg',
+          alt: 'Official portrait of Nick Begich, US Representative for Alaska',
+          caption: 'Congressman Nick Begich of Alaska. He was campaigning for re-election when his plane vanished, winning posthumously.',
+          credit: 'US Congress / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -85,12 +85,26 @@ export const boggsBegich: Article = {
           content: 'The Cessna 310C, registration number N1812H, was a reliable aircraft piloted by Don Jonz, a 38-year-old with over 17,000 hours of flight experience. Jonz had flown in Alaska for years and knew the route to Juneau well. The flight was routine — 570 miles across some of the most rugged terrain in North America.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Cessna_310_at_the_Valiant_Air_Command_Warbird_Museum.jpg',
+          alt: 'A twin-engine Cessna 310 aircraft, similar to the one that vanished in 1972',
+          caption: 'A Cessna 310 twin-engine aircraft. The plane carrying Boggs and Begich was a 1959 310C model, a reliable workhorse of the Alaskan skies.',
+          credit: 'Valiant Air Command Warbird Museum / Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Weather conditions were poor but not unusual for October in Alaska. Low clouds, rain, and limited visibility were forecast along the route. Jonz filed an instrument flight plan, meaning he intended to fly through the clouds using the aircraft\'s navigation equipment. For an experienced pilot in a well-equipped plane, this was standard procedure.',
         },
         {
           type: 'paragraph',
           content: 'The plane took off at 9:09 AM. Jonz reported reaching his cruising altitude of 9,000 feet. Then contact was lost. The next scheduled radio check never came. When the plane failed to arrive in Juneau that afternoon, the alarm was raised.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Chugach_Mountains_aerial.jpg',
+          alt: 'Aerial view of the snow-covered Chugach Mountains near Anchorage',
+          caption: 'The flight path to Juneau required crossing the Chugach Mountains, where peaks exceed 13,000 feet and glaciers cover vast stretches of the landscape.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
