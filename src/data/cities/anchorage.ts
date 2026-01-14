@@ -88,8 +88,9 @@ export const anchorage: CityData = {
           body: 'Anchorage\'s 1,500 city moose didn\'t adapt to humans—they learned to bully them. Moose attacks injure 5-10 people per year here, outpacing bear attacks statewide. These aren\'t skittish woodland creatures; they\'re 1,200-pound mammals who\'ve figured out that lawns are easier than tundra and that humans usually back down first. The city runs a dedicated moose patrol. Calving season turns them homicidal.',
           images: [
             {
-              src: '/anchorage/curiosities/moose-1.png',
-              alt: 'Moose in Alaska wilderness',
+              src: '/anchorage/curiosities/urban-moose.jpg',
+              alt: 'Moose in Anchorage',
+              credit: 'Wikimedia Commons',
             },
             {
               src: '/anchorage/curiosities/moose-2.png',
@@ -148,8 +149,9 @@ export const anchorage: CityData = {
           body: 'Anchorage sits directly beneath the auroral oval, the northern lights\' permanent stage. On average, the aurora is visible 243 nights per year. But light pollution from the city washes it out, so serious viewers drive north to darker skies. September through March delivers the best shows, when nights are actually dark and the solar wind is cooperating. Mother Nature\'s most reliable entertainment, assuming you\'re willing to stand outside in the cold.',
           images: [
             {
-              src: '/anchorage/curiosities/aurora-1.png',
+              src: '/anchorage/curiosities/aurora-borealis.jpg',
               alt: 'Northern lights aurora borealis over Alaska',
+              credit: 'Wikimedia Commons',
             },
             {
               src: '/anchorage/curiosities/aurora-2.png',
@@ -180,8 +182,9 @@ export const anchorage: CityData = {
           year: '1964',
           images: [
             {
-              src: '/anchorage/curiosities/earthquake-1.png',
-              alt: '1964 earthquake damage on 4th Avenue in Anchorage',
+              src: '/anchorage/curiosities/earthquake-fourth-ave.jpg',
+              alt: 'Devastating damage on 4th Avenue from the 1964 Good Friday Earthquake',
+              credit: 'Wikimedia Commons',
             },
             {
               src: '/anchorage/curiosities/earthquake-2.png',
@@ -302,6 +305,13 @@ export const anchorage: CityData = {
           category: 'culture',
           title: 'The Iditarod\'s starting line is pure theater—the real race starts elsewhere',
           body: 'Every March, sled dog teams run through downtown Anchorage streets while crowds cheer. It\'s the ceremonial start of the Iditarod, Alaska\'s famous 1,000-mile race. The actual race? That starts the next day in Willow, 50 miles north, where there\'s reliable snow and no tourists. The Anchorage start is spectacle, tradition, and civic pride—in that order. Nobody pretends otherwise.',
+          images: [
+            {
+              src: '/anchorage/curiosities/iditarod-start.jpg',
+              alt: 'Ceremonial start of the Iditarod in downtown Anchorage',
+              credit: 'Wikimedia Commons',
+            }
+          ],
           source: 'Iditarod Trail Committee',
         },
         {
@@ -488,8 +498,9 @@ export const anchorage: CityData = {
           description: 'On Good Friday 1964, the ground shook for four and a half minutes. The 9.2-magnitude earthquake—the second most powerful ever recorded—devastated Anchorage, and nowhere more dramatically than Turnagain Heights, where an entire bluff liquefied and slid into Cook Inlet, taking 75 homes with it. The bodies were never recovered; the ground was too unstable to search. Today, Earthquake Park preserves the landslide zone, and sixty years later, you can still see what happened: rippling hills, sudden drops, and terrain that looks like it was stirred by a giant spoon. The destruction is frozen in time, overgrown with grass and birch but unmistakably wrong. Interpretive signs tell the story of the families who lost everything in minutes. On clear days, you can see Denali from the overlook—beauty and catastrophe occupying the same view.',
           images: [
             {
-              src: '/anchorage/hidden-gems/quake-park.png',
-              alt: 'Uneven terrain showing earthquake damage effects',
+              src: '/anchorage/curiosities/earthquake-park.jpg',
+              alt: 'Uneven terrain at Earthquake Park showing 1964 damage',
+              credit: 'Wikimedia Commons',
             },
             {
               src: '/anchorage/hidden-gems/quake-park-2.png',

@@ -978,6 +978,46 @@ export const chicago: CityData = {
           price: 'Exterior viewable anytime',
           website: 'https://www.biography-theater.com',
           tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
+        },
+        {
+          id: 'gem-green-mill',
+          type: 'hidden-gem',
+          name: 'Green Mill Cocktail Lounge',
+          category: 'Historic Jazz Club',
+          description: 'The oldest jazz club in the United States, famous for its connections to Al Capone (his favorite booth is still there). It opened in 1907 as Pop Morse\'s Roadhouse. The interior is a preserved 1940s time capsule. Regulars know to bring cash and respect the music—silence is enforced during sets.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/green-mill.jpg',
+              alt: 'Historic Green Mill Cocktail Lounge exterior',
+              credit: 'Wikimedia Commons',
+            }
+          ],
+          address: '4802 N Broadway, Chicago, IL 60640',
+          coordinates: { lat: 41.9691, lng: -87.6599 },
+          hours: 'Daily 12pm-4am (5am Sat)',
+          price: '$$ (Cash Only)',
+          website: 'https://greenmilljazz.com',
+          tip: 'Sit in the booth directly west of the short end of the bar—that was Capone\'s spot because he could see both doors.',
+        },
+        {
+          id: 'gem-pullman-monument',
+          type: 'hidden-gem',
+          name: 'Pullman National Monument',
+          category: 'Historic District',
+          description: 'The first planned industrial community in the United States, built by George Pullman for his employees. It was the site of the 1894 Pullman Strike which changed labor law. The Administration Clock Tower Building is the centerpiece of a neighborhood that feels frozen in the 19th century. Walking these streets explains the history of American labor unions better than any textbook.',
+          images: [
+            {
+              src: '/chicago/hidden-gems/pullman-monument.jpg',
+              alt: 'Pullman Administration Clock Tower Building',
+              credit: 'Wikimedia Commons',
+            }
+          ],
+          address: '11141 S Cottage Grove Ave, Chicago, IL 60628',
+          coordinates: { lat: 41.6917, lng: -87.6097 },
+          hours: 'Visitor Center Daily 9am-5pm',
+          price: 'Free',
+          website: 'https://www.nps.gov/pull',
+          tip: 'Take the Metra Electric line to the Pullman stop—it drops you right at the entrance, just like workers arriving in 1880.',
         }
       ],
     },

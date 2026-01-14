@@ -68,7 +68,7 @@ export const denver: CityData = {
           featuredOrder: 1,
           category: 'legend',
           title: 'The demonic airport horse murdered its creator',
-          body: '"Blucifer"—the 32-foot blue mustang with glowing red eyes at Denver International Airport—is legitimately cursed. In 2006, a piece of the sculpture fell on artist Luis Jiménez during construction, severing an artery in his leg and killing him. The horse was installed posthumously two years later. Locals have repeatedly petitioned to have it removed. The airport has repeatedly declined. Every arriving passenger is greeted by a hell-stallion that claimed its creator. Welcome to Denver.',
+          body: 'The 32-foot blue mustang with glowing red eyes that greets every Denver arrival is nicknamed "Blucifer" for good reason—it murdered its creator. In 2006, a section of the sculpture fell from a hoist in artist Luis Jiménez\'s New Mexico studio, severing an artery in his leg. He bled to death on the studio floor. The piece was commissioned in 1992 for $300,000 but wasn\'t installed until 2008, two years after Jiménez\'s death—his sons completed it from his detailed plans. Jiménez designed the blue as tribute to lowrider culture, the eyes as homage to his father\'s neon sign shop. But the death, those eyes, that stance—it feeds DIA\'s conspiracy mythology perfectly. The airport now sells Blucifer merchandise. His estate wishes you wouldn\'t call it that. Welcome to Denver.',
           year: '2008',
           image: {
             src: '/denver/curiosities/bluecifer.png',
@@ -78,6 +78,33 @@ export const denver: CityData = {
             name: 'Denver International Airport',
             stillExists: true,
           },
+          sources: [
+            {
+              type: 'article',
+              title: 'Everything You Ever Wanted To Know About Blucifer, The Demon Horse Of DIA',
+              publisher: 'Colorado Public Radio',
+              url: 'https://www.cpr.org/2019/11/04/everything-you-ever-wanted-to-know-about-blucifer-the-demon-horse-of-dia/',
+            },
+            {
+              type: 'article',
+              title: 'The Tragic Story Behind Blucifer at Denver International Airport',
+              publisher: 'Uncover Colorado',
+              url: 'https://uncovercolorado.com/blucifer-denver-international-airport/',
+            },
+            {
+              type: 'documentary',
+              title: 'Conspiracy Files: Denver Airport',
+              platform: 'History Channel',
+              year: '2019',
+              url: 'https://www.history.com/shows/the-unxplained',
+            },
+            {
+              type: 'article',
+              title: 'Blue Mustang',
+              publisher: 'Denver International Airport',
+              url: 'https://www.flydenver.com/art-exhibits/blue-mustang/',
+            },
+          ],
         },
         {
           id: 'den-curiosity-6',
@@ -1215,56 +1242,6 @@ export const denver: CityData = {
       teaser: 'Massacre, murder, and the bodies beneath the parks',
       intro: 'Denver sells itself as sunshine and craft beer, but the Mile High City sits atop a foundation of massacre, racial violence, and unsolved murder. From bodies left beneath public parks to a demonic horse that killed its creator, Denver\'s dark side is woven into the very geography—hidden in plain sight, just one layer below the Instagram-friendly surface.',
       items: [
-        {
-          id: 'den-dark-9',
-          type: 'dark-history',
-          category: 'macabre',
-          year: '2008',
-          title: 'Blucifer: The Demonic Horse That Killed Its Creator',
-          body: 'The 32-foot blue mustang with glowing red eyes that greets every Denver arrival is nicknamed "Blucifer" for good reason—it murdered its creator. In 2006, a section of the sculpture fell from a hoist in artist Luis Jiménez\'s New Mexico studio, severing an artery in his leg. He bled to death on the studio floor. The piece was commissioned in 1992 for $300,000 but wasn\'t installed until 2008, two years after Jiménez\'s death—his sons completed it from his detailed plans. Jiménez designed the blue as tribute to lowrider culture, the eyes as homage to his father\'s neon sign shop. But the death, those eyes, that stance—it feeds DIA\'s conspiracy mythology perfectly. The airport now sells Blucifer merchandise. His estate wishes you wouldn\'t call it that. Welcome to Denver.',
-          verdict: 'Killed its creator. Installed posthumously. Still greets every arrival with glowing demon eyes.',
-          images: [
-            {
-              src: '/denver/curiosities/bluecifer.png',
-              alt: 'Blucifer - the blue mustang sculpture with glowing red eyes',
-            },
-            {
-              src: '/denver/dark-history/dia-4.png',
-              alt: 'Blucifer sculpture close-up view',
-            },
-          ],
-          location: {
-            name: 'Denver International Airport, Peña Blvd',
-            stillExists: true,
-          },
-          sources: [
-            {
-              type: 'article',
-              title: 'Everything You Ever Wanted To Know About Blucifer, The Demon Horse Of DIA',
-              publisher: 'Colorado Public Radio',
-              url: 'https://www.cpr.org/2019/11/04/everything-you-ever-wanted-to-know-about-blucifer-the-demon-horse-of-dia/',
-            },
-            {
-              type: 'article',
-              title: 'The Tragic Story Behind Blucifer at Denver International Airport',
-              publisher: 'Uncover Colorado',
-              url: 'https://uncovercolorado.com/blucifer-denver-international-airport/',
-            },
-            {
-              type: 'documentary',
-              title: 'Conspiracy Files: Denver Airport',
-              platform: 'History Channel',
-              year: '2019',
-              url: 'https://www.history.com/shows/the-unxplained',
-            },
-            {
-              type: 'article',
-              title: 'Blue Mustang',
-              publisher: 'Denver International Airport',
-              url: 'https://www.flydenver.com/art-exhibits/blue-mustang/',
-            },
-          ],
-        },
         {
           id: 'den-dark-3',
           type: 'dark-history',
