@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getAllCities } from '@/data/cities'
-import { Footer } from '@/components'
+import { Footer, ShareButton, NewsletterSignup } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import {
   getCityFeaturedEntries,
