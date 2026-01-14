@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
@@ -81,7 +82,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
   ]
 
   return (
-    <>
+    <Fragment>
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://thecurious.city' },
@@ -195,6 +196,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
       </div>
 
       <Footer />
-    </>
+    </Fragment>
   )
 }
