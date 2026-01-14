@@ -388,4 +388,4 @@ export const newRestaurantsNortheast: Article = {
   },
 }
 
-export const articles: Article[] = [duckDuckGreyDuck, newRestaurantsNortheast, bohemianFlats, gatewayDistrict, washburnMill, somaliMinneapolis]
+export const articles: Article[] = [gatewayDistrict, washburnMill, bohemianFlats, somaliMinneapolis, duckDuckGreyDuck, newRestaurantsNortheast]

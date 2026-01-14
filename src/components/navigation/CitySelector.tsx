@@ -176,6 +176,7 @@ function CitySelectorContent({
   }
 
   const hasCity = currentCitySlug && currentCityName
+  const staggerDuration = cities.length * 0.04
 
   return (
     <div
@@ -219,19 +220,26 @@ function CitySelectorContent({
               y: -8,
               scale: 0.98,
               transition: {
-                duration: 0.3,
-                // Wait for all items to start their exit, but don't hold the background fade too long
-                delay: (cities.length - 1) * 0.04,
-                ease: "easeIn"
+                duration: 0.2,
+                delay: staggerDuration, // Wait for inner wipe to finish
+                ease: "linear"
               }
             }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             className="absolute left-0 top-full pt-1 w-56 z-50 pointer-events-auto"
           >
             <motion.div
-              className="rounded-xl shadow-2xl max-h-[70vh] overflow-y-auto overflow-x-hidden"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              className="rounded-xl shadow-2xl max-h-[70vh] overflow-y-auto overflow-x-hidden bg-white"
+              initial={{ opacity: 0, height: "auto" }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ 
+                opacity: 0,
+                height: 0,
+                transition: {
+                  duration: staggerDuration + 0.1,
+                  ease: [0.4, 0, 1, 1] 
+                }
+              }}
               transition={{ duration: 0.2 }}
             >
               {cities.map((city, index) => (

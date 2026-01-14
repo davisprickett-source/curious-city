@@ -116,6 +116,8 @@ export interface ImageBlock {
   alt: string
   caption?: string
   credit?: string
+  width?: number
+  height?: number
 }
 
 export interface GalleryBlock {
