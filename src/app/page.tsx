@@ -1,7 +1,7 @@
 import { getAllCities } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import { OrganizationSchema, WebsiteSchema } from '@/components/StructuredData'
+import { OrganizationSchema, WebsiteSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { curateLandingPageContent } from '@/lib/content/landingPageCurator'
 import { LandingHeroSection } from '@/components/landing/LandingHeroSection'
 import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSection'
@@ -15,6 +15,11 @@ export default async function HomePage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+        ]}
+      />
       <OrganizationSchema
         name="Curious City"
         url="https://thecurious.city"

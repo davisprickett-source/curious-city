@@ -5,6 +5,7 @@ import { ScrollyMapView } from '@/components/scrollytelling'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { getExploreLinks } from '@/lib/content/cityHomepage'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -23,9 +24,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/restaurants`
+
   return {
-    title: `${city.name}'s Best Restaurants | Curious City`,
-    description: `${city.name}'s best restaurants - local favorites, hidden spots, and must-try dishes.`,
+    title: `${city.name}'s Best Restaurants: Local Favorites & Hidden Gems | Curious City`,
+    description: `The essential restaurant guide for ${city.name}. We uncover the local favorites and culinary secrets you won't find in guidebooks.`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `The Best Restaurants in ${city.name} | Curious City`,
+      description: `Where the locals eat in ${city.name}.`,
+      url,
+      images: [`/banners/hero-city-images/${city.slug}-skyline.png`],
+    }
   }
 }
 
@@ -52,8 +64,17 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
   // Get explore links for bottom section
   const exploreLinks = await getExploreLinks(slug, city.name, 'restaurants')
 
+  const url = `https://thecurious.city/${slug}/restaurants`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Restaurants', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

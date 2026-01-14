@@ -176,18 +176,19 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   const heroSlides = [...premiumEssays, ...specificSlides].slice(0, 6)
 
   // Dark Stories: 4 dark-history items from diverse cities
+  // Allow overlap with hero slides to ensure section is populated
   const darkStories = diversifyByCities(
     cardsWithThumbnails
-      .filter((c) => c.pageType === 'dark-history' && !heroSlides.some(h => h.href === c.href))
-      .slice(0, 8),
+      .filter((c) => c.pageType === 'dark-history')
+      .slice(0, 12),
     4
   )
 
   // Curiosities: 4 curiosity items from diverse cities
   const curiosities = diversifyByCities(
     cardsWithThumbnails
-      .filter((c) => c.pageType === 'curiosities' && !heroSlides.some(h => h.href === c.href))
-      .slice(0, 8),
+      .filter((c) => c.pageType === 'curiosities')
+      .slice(0, 12),
     4
   )
 

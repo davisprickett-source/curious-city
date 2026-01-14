@@ -1,6 +1,7 @@
 import { BestOfContentItem, BestOfSpot } from '@/types/content'
 import { ContentBlock } from '../ContentBlock'
 import { ImageCarousel } from '../ImageCarousel'
+import { LocalBusinessSchema } from '../StructuredData'
 
 interface BestOfRendererProps {
   item: BestOfContentItem
@@ -29,8 +30,22 @@ function BestOfSpotCard({ spot, rank }: { spot: BestOfSpot; rank: number }) {
   // Combine single image and images array for carousel
   const carouselImages = spot.images || (spot.image ? [spot.image] : [])
 
+  // Prepare schema data
+  const geo = spot.coordinates ? {
+    latitude: spot.coordinates.lat,
+    longitude: spot.coordinates.lng,
+  } : undefined
+
   return (
     <article className="relative">
+      <LocalBusinessSchema
+        name={spot.name}
+        description={spot.why}
+        url={spot.website}
+        geo={geo}
+        priceRange={spot.price}
+        image={carouselImages[0]?.src}
+      />
       <div className="space-y-4">
         {/* Image carousel */}
         {carouselImages.length > 0 && (

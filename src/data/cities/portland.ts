@@ -251,7 +251,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/Portland-Rain.png',
             alt: 'Rainy day in Portland with people without umbrellas',
           },
-          source: 'National Weather Service',
+          sources: [
+            {
+              title: 'Climate Portland - Oregon',
+              publisher: 'US Climate Data',
+              url: 'https://www.usclimatedata.com/climate/portland/oregon/united-states/usor0275',
+            }
+          ],
         },
         {
           id: 'pdx-curiosity-11',
@@ -264,7 +270,6 @@ export const portland: CityData = {
             src: '/portland/curiosities/bones.png',
             alt: 'Tualatin Mastodon skeleton at OMSI',
           },
-          source: 'Oregon Museum of Science and Industry',
           location: {
             name: 'OMSI',
             stillExists: true,
@@ -286,7 +291,13 @@ export const portland: CityData = {
               alt: 'Interior of Powell\'s Books with color-coded rooms',
             }
           ],
-          source: 'Powell\'s Books',
+          sources: [
+            {
+              title: 'Powell\'s City of Books',
+              publisher: 'Powell\'s Books',
+              url: 'https://www.powells.com/',
+            }
+          ],
           location: {
             name: 'Powell\'s City of Books',
             stillExists: true,
@@ -302,7 +313,11 @@ export const portland: CityData = {
             src: '/portland/curiosities/music-scene.png',
             alt: 'Portland music venue scene and indie rock history',
           },
-          source: 'Oregon Music Hall of Fame',
+          location: {
+            name: 'Portland',
+            stillExists: true,
+          },
+        },
         },
         {
           id: 'pdx-curiosity-9',
@@ -324,7 +339,13 @@ export const portland: CityData = {
               alt: 'Forest Park urban forest canopy',
             }
           ],
-          source: 'Forest Park Conservancy',
+          sources: [
+            {
+              title: 'About Forest Park',
+              publisher: 'Portland.gov',
+              url: 'https://www.portland.gov/parks/forest-park/about',
+            }
+          ],
           location: {
             name: 'Forest Park',
             stillExists: true,
@@ -341,7 +362,13 @@ export const portland: CityData = {
             src: '/portland/curiosities/voodoo.png',
             alt: 'Voodoo Doughnut shop in Portland Old Town',
           },
-          source: 'Voodoo Doughnut',
+          sources: [
+            {
+              title: 'Our Story',
+              publisher: 'Voodoo Doughnut',
+              url: 'https://www.voodoodoughnut.com/pages/our-story',
+            }
+          ],
           location: {
             name: 'Voodoo Doughnut Old Town',
             stillExists: true,
@@ -463,31 +490,42 @@ export const portland: CityData = {
       teaser: 'Cold War bunkers, Shanghai tunnels, and underground speakeasies',
       intro: 'Portland’s real soul isn’t found on the tourist drags; it’s hidden in basement speakeasies, abandoned theaters, and the secret corners of the forest that the brochures forget.',
       items: [
-        {
-          id: 'gem-underground-1',
-          type: 'hidden-gem',
-          featured: true,
-          featuredOrder: 4,
-          name: 'Kelly Butte Cold War Bunker',
-          category: 'Underground',
-          description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
-          images: [
-            {
-              src: '/portland/hidden-gems/bunker-1.png',
-              alt: 'Kelly Butte Cold War bunker exterior',
-            },
-            {
-              src: '/portland/hidden-gems/bunker-2.png',
-              alt: 'Kelly Butte Cold War bunker entrance',
-            }
-          ],
-          address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
-          coordinates: { lat: 45.4975, lng: -122.5592 },
-          hours: 'Not accessible (sealed)',
-          price: 'N/A',
-          accessibility: 'Completely sealed and buried',
-        },
-        {
+                    {
+                      id: 'gem-underground-1',
+                      type: 'hidden-gem',
+                      featured: true,
+                      featuredOrder: 4,
+                      name: 'Kelly Butte Cold War Bunker',
+                      category: 'Underground',
+                      description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
+                      images: [
+                        {
+                          src: '/portland/hidden-gems/bunker-1.png',
+                          alt: 'Kelly Butte Cold War bunker exterior',
+                        },
+                        {
+                          src: '/portland/hidden-gems/bunker-2.png',
+                          alt: 'Kelly Butte Cold War bunker entrance',
+                        }
+                      ],
+                      address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
+                      coordinates: { lat: 45.4975, lng: -122.5592 },
+                      hours: 'Not accessible (sealed)',
+                      price: 'N/A',
+                      accessibility: 'Completely sealed and buried',
+                      sources: [
+                        {
+                          title: 'Kelly Butte Civil Defense Center',
+                          publisher: 'Oregon Encyclopedia',
+                          url: 'https://www.oregonencyclopedia.org/articles/kelly_butte_cold_war_bunker/',
+                        },
+                        {
+                          title: 'Kelly Butte Civil Defense Center',
+                          publisher: 'Oregon History Project',
+                          url: 'https://www.oregonhistoryproject.org/articles/kelly-butte-civil-defense-center/',
+                        }
+                      ],
+                    },        {
           id: 'gem-underground-2',
           type: 'hidden-gem',
           name: 'Old Town Pizza Shanghai Tunnels',
@@ -528,6 +566,18 @@ export const portland: CityData = {
           hours: 'Cemetery open daily dawn-dusk',
           price: 'Free',
           tip: 'Look for the paved-over section - a sobering piece of forgotten history',
+          sources: [
+            {
+              title: 'Block 14',
+              publisher: 'Friends of Lone Fir Cemetery',
+              url: 'https://friendsoflonefircemetery.org/history/block-14/',
+            },
+            {
+              title: 'Lone Fir Cemetery Block 14 Memorial Project Update',
+              publisher: 'Oregon Metro',
+              url: 'https://www.oregonmetro.gov/news/lone-fir-cemetery-block-14-memorial-project-update',
+            }
+          ],
         },
         {
           id: 'gem-history-2',
@@ -546,6 +596,18 @@ export const portland: CityData = {
           hours: 'Park open daily',
           price: 'Free',
           tip: 'Very easy to miss - look for small parking area on Skyline',
+          sources: [
+            {
+              title: 'Willamette Stone State Heritage Site',
+              publisher: 'Oregon.gov',
+              url: 'https://www.oregon.gov/odot/History/Pages/Willamette-Stone.aspx',
+            },
+            {
+              title: 'Willamette Stone',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/willamette_stone/',
+            }
+          ],
         },
         {
           id: 'gem-history-3',
@@ -565,6 +627,18 @@ export const portland: CityData = {
           price: 'Fresh tofu $3-5',
           website: 'https://www.otatofu.com',
           tip: 'Buy fresh tofu and support this historic family business',
+          sources: [
+            {
+              title: 'Ota Tofu',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/ota_tofu/',
+            },
+            {
+              title: 'Ota Tofu — Portland, Oregon',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/ota-tofu',
+            }
+          ],
         },
         {
           id: 'gem-museums-1',
@@ -625,8 +699,15 @@ export const portland: CityData = {
           coordinates: { lat: 45.5236, lng: -122.6606 },
           hours: 'Mon-Sat 9am-5:30pm',
           price: 'Free',
-          website: 'https://www.starksvacuum.com',
+          website: 'https://starks.com/museum/',
           tip: 'Ask staff to show you the museum section - easy to miss',
+          sources: [
+            {
+              title: 'Stark\'s Vacuum Museum',
+              publisher: 'Stark\'s Vacuums',
+              url: 'https://starks.com/museum/',
+            }
+          ],
         },
         {
           id: 'gem-quirky-1',
@@ -645,6 +726,13 @@ export const portland: CityData = {
           hours: 'By email arrangement only',
           price: 'Donation requested',
           tip: 'Email ahead with respectful inquiry',
+          sources: [
+            {
+              title: 'Woodstock Mystery Hole',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole',
+            }
+          ],
         },
         {
           id: 'gem-quirky-2',
@@ -666,7 +754,15 @@ export const portland: CityData = {
           coordinates: { lat: 45.5158, lng: -122.6536 },
           hours: 'Wed-Sun 7pm-midnight',
           price: '$',
+          website: 'https://rimskykorsakoffeehouse.shop/',
           tip: 'Order dessert and watch the table slowly tilt',
+          sources: [
+            {
+              title: 'Rimsky-Korsakoffee House',
+              publisher: 'Rimsky-Korsakoffee House',
+              url: 'https://rimskykorsakoffeehouse.shop/',
+            }
+          ],
         },
         {
           id: 'gem-quirky-3',
@@ -685,6 +781,13 @@ export const portland: CityData = {
           hours: 'Open 24/7',
           price: 'Free',
           tip: 'Roadside pullouts for parking',
+          sources: [
+            {
+              title: 'Portland Troll Bridge',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/portland-troll-bridge',
+            }
+          ],
         },
         {
           id: 'gem-quirky-4',
@@ -704,6 +807,13 @@ export const portland: CityData = {
           price: 'Free to browse',
           website: 'https://www.hippohardware.com',
           tip: 'Count how many hippos you can spot',
+          sources: [
+            {
+              title: 'Hippo Hardware and Trading Company',
+              publisher: 'Hippo Hardware',
+              url: 'https://hippohardware.com',
+            }
+          ],
         },
         {
           id: 'gem-ad-3',
@@ -730,8 +840,20 @@ export const portland: CityData = {
           coordinates: { lat: 45.4797, lng: -122.5378 },
           hours: 'Tue-Sun 10am-4pm',
           price: '$8 adults/$5 youth (free admission available by request)',
-          website: 'https://www.leachgarden.org',
+          website: 'https://leachgarden.org',
           tip: 'A secret garden hiding in plain sight',
+          sources: [
+            {
+              title: 'Leach Botanical Garden',
+              publisher: 'Portland.gov',
+              url: 'https://www.portland.gov/parks/leach-botanical-garden',
+            },
+            {
+              title: 'Leach Botanical Garden',
+              publisher: 'Leach Garden',
+              url: 'https://leachgarden.org/',
+            }
+          ],
         },
         {
           id: 'gem-nature-3',
@@ -749,8 +871,14 @@ export const portland: CityData = {
           coordinates: { lat: 45.5497, lng: -122.6756 },
           hours: 'Businesses vary',
           price: 'Free to explore',
-          tip: 'Prost! for German beer, Interurban for cocktails',
-        }
+                        tip: 'Prost! for German beer, Interurban for cocktails',
+                        sources: [
+                          {
+                            title: 'Mississippi Avenue',
+                            publisher: 'Historic Mississippi Avenue',
+                            url: 'https://mississippiave.org',
+                          }
+                        ],        }
       ],
     },
     {

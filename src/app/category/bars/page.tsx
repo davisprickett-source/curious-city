@@ -2,10 +2,14 @@ import { Metadata } from 'next'
 import { Header, Footer } from '@/components'
 import { getAllPageCards } from '@/lib/content/pages'
 import { PageCard } from '@/components/cards/PageCard'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Best Bars | Curious City',
   description: 'The best bars across American cities - dive bars, cocktail lounges, and neighborhood favorites.',
+  alternates: {
+    canonical: 'https://thecurious.city/category/bars',
+  },
 }
 
 export default async function BarsPage() {
@@ -18,6 +22,12 @@ export default async function BarsPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: 'Bars', url: 'https://thecurious.city/category/bars' },
+        ]}
+      />
       <Header />
 
       <main className="flex-1">

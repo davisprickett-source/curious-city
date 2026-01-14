@@ -5,6 +5,7 @@ import { getCity, getAllCitySlugs, getCityLostAndLoved, getCityLostAndLovedSecti
 import { ShareButton } from '@/components/ShareButton'
 import { Footer, RelatedContent, NewsletterSignup } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 // Dynamically import the scroll component (client-only)
 const LostLovedScroll = dynamic(() => import('@/components/LostLovedScroll').then(mod => ({ default: mod.LostLovedScroll })), {
@@ -34,9 +35,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/lost-and-loved`
+
   return {
     title: `${city.name}'s Lost & Loved | Curious City`,
     description: `${city.name}'s beloved businesses and the spaces they left behind. Restaurants, bars, and institutions we still miss.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -51,8 +57,17 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
   const items = await getCityLostAndLoved(slug)
   const section = await getCityLostAndLovedSection(slug)
 
+  const url = `https://thecurious.city/${slug}/lost-and-loved`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Lost & Loved', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

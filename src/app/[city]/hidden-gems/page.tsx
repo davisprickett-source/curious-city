@@ -1,13 +1,39 @@
 import { notFound } from 'next/navigation'
-import { getCity, getCityHiddenGems, getCityHiddenGemsSection } from '@/data/cities'
+import { Metadata } from 'next'
+import { getCity, getCityHiddenGems, getCityHiddenGemsSection, getAllCitySlugs } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import HiddenGemsScroll from '@/components/HiddenGemsScroll'
 import { getExploreLinks } from '@/lib/content/cityHomepage'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface PageProps {
   params: Promise<{ city: string }>
+}
+
+export async function generateStaticParams() {
+  const slugs = getAllCitySlugs()
+  return slugs.map((city) => ({ city }))
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { city: slug } = await params
+  const city = await getCity(slug)
+
+  if (!city) {
+    return { title: 'City Not Found' }
+  }
+
+  const url = `https://thecurious.city/${slug}/hidden-gems`
+
+  return {
+    title: `${city.name}'s Hidden Gems | Curious City`,
+    description: `Off-the-beaten-path spots, local secrets, and hidden gems in ${city.name}.`,
+    alternates: {
+      canonical: url,
+    },
+  }
 }
 
 export default async function CityHiddenGemsPage({ params }: PageProps) {
@@ -24,8 +50,17 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
   // Get explore links for bottom section
   const exploreLinks = await getExploreLinks(citySlug, city.name, 'hidden-gems')
 
+  const url = `https://thecurious.city/${citySlug}/hidden-gems`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${citySlug}` },
+          { name: 'Hidden Gems', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

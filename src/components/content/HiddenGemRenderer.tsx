@@ -1,5 +1,6 @@
 import { HiddenGemContentItem, IconicSpotContentItem } from '@/types/content'
 import { ImageCarousel } from '../ImageCarousel'
+import { LocalBusinessSchema } from '../StructuredData'
 
 interface HiddenGemRendererProps {
   item: HiddenGemContentItem | IconicSpotContentItem
@@ -9,8 +10,21 @@ export function HiddenGemRenderer({ item }: HiddenGemRendererProps) {
   // Support both images array and single image
   const carouselImages = item.images || (item.image ? [item.image] : [])
 
+  // Prepare schema data
+  const geo = item.coordinates ? {
+    latitude: item.coordinates.lat,
+    longitude: item.coordinates.lng,
+  } : undefined
+
   return (
     <article className="py-5 border-b border-neutral-100 last:border-b-0">
+      <LocalBusinessSchema
+        name={item.name}
+        description={item.description}
+        url={item.website}
+        geo={geo}
+        image={carouselImages[0]?.src}
+      />
       <div className="space-y-3">
         {/* Header */}
         <div className="flex items-baseline gap-2">

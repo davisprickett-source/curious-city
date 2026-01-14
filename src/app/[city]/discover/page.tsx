@@ -6,6 +6,7 @@ import { getCity, getAllCitySlugs } from '@/data/cities'
 import { getCityListiclePages } from '@/lib/content/cityHomepage'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface DiscoverPageProps {
   params: Promise<{ city: string }>
@@ -24,9 +25,20 @@ export async function generateMetadata({ params }: DiscoverPageProps): Promise<M
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/discover`
+
   return {
-    title: `Discover ${city.name} | Curious City`,
-    description: `Explore ${city.name}'s curiosities, dark history, hidden gems, and more through curated collections.`,
+    title: `${city.name} Curiosities, Dark History & Hidden Gems | Curious City`,
+    description: `Explore the weird, wonderful, and dark side of ${city.name}. A curated collection of local legends, secrets, and untold stories.`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${city.name} Curiosities & Dark History | Curious City`,
+      description: `Explore the weird, wonderful, and dark side of ${city.name}.`,
+      url,
+      images: [`/banners/hero-city-images/${city.slug}-skyline.png`],
+    }
   }
 }
 
@@ -62,6 +74,13 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Discover', url: `https://thecurious.city/${slug}/discover` },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

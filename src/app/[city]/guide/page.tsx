@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface GuidePageProps {
   params: Promise<{ city: string }>
@@ -20,9 +21,14 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const city = await getCity(slug)
   if (!city) return {}
 
+  const url = `https://thecurious.city/${slug}/guide`
+
   return {
     title: `${city.name} Guide - Best Bars, Restaurants & Coffee Shops | Curious City`,
     description: `Your essential guide to ${city.name} - the best bars, restaurants, and coffee shops curated by locals.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -30,6 +36,21 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const { city: slug } = await params
   const city = await getCity(slug)
   if (!city) notFound()
+
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Guide', url: `https://thecurious.city/${slug}/guide` },
+        ]}
+      />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="guide"
+      />
 
   // Fetch representative establishments for each category
   const barsList = await getCityBestOf(slug, 'bars')

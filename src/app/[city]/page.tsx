@@ -15,6 +15,7 @@ import { ArticleScrollCard } from '@/components/cards/ArticleScrollCard'
 import { ListicleTypeCard } from '@/components/cards/ListicleTypeCard'
 import { EstablishmentCategoryCard } from '@/components/cards/EstablishmentCategoryCard'
 import { CityScrollCard } from '@/components/cards/CityScrollCard'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface CityPageProps {
   params: Promise<{ city: string }>
@@ -33,9 +34,34 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}`
+
   return {
-    title: `${city.name} | Curious City`,
-    description: city.tagline || `Discover the untold stories, dark histories, and hidden secrets of ${city.name}`,
+    title: `${city.name} City Guide: Hidden Gems, Dark History & Local Secrets | Curious City`,
+    description: city.tagline || `Discover the untold stories, dark histories, and hidden secrets of ${city.name}. Explore ${city.name}'s best bars, restaurants, and off-the-beaten-path spots.`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${city.name} City Guide | Curious City`,
+      description: city.tagline || `Discover the untold stories, dark histories, and hidden secrets of ${city.name}`,
+      url,
+      type: 'website',
+      images: [
+        {
+          url: `/banners/hero-city-images/${city.slug}-skyline.png`,
+          width: 1200,
+          height: 630,
+          alt: `${city.name} Skyline`,
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${city.name} City Guide | Curious City`,
+      description: city.tagline || `Discover the untold stories, dark histories, and hidden secrets of ${city.name}`,
+      images: [`/banners/hero-city-images/${city.slug}-skyline.png`],
+    }
   }
 }
 
@@ -67,6 +93,12 @@ export default async function CityPage({ params }: CityPageProps) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

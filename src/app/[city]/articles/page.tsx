@@ -5,6 +5,7 @@ import { getArticlesForCity } from '@/lib/queries/articles'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { PremiumArticleCard } from '@/components/PremiumArticleCard'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface ArticlesPageProps {
   params: Promise<{ city: string }>
@@ -23,9 +24,14 @@ export async function generateMetadata({ params }: ArticlesPageProps): Promise<M
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/articles`
+
   return {
     title: `Articles about ${city.name} | Curious City`,
     description: `Longform stories, deep dives, and essays exploring ${city.name}'s history, culture, and hidden stories.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -41,6 +47,13 @@ export default async function ArticlesPage({ params }: ArticlesPageProps) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Articles', url: `https://thecurious.city/${slug}/articles` },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

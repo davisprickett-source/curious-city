@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { BestOfSpot } from '@/types/content'
 import { ImageCarousel } from '@/components/ImageCarousel'
+import { LocalBusinessSchema } from '@/components/StructuredData'
 
 interface ScrollySpotCardProps {
   spot: BestOfSpot
@@ -17,8 +18,22 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
   const carouselImages = spot.images || (spot.image ? [spot.image] : [])
   const hasMultipleLocations = Boolean(spot.locations && spot.locations.length > 0)
 
+  // Prepare schema data
+  const geo = spot.coordinates ? {
+    latitude: spot.coordinates.lat,
+    longitude: spot.coordinates.lng,
+  } : undefined
+
   return (
     <div className="bg-white/95 backdrop-blur-xl border border-neutral-200 rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden contain-layout">
+      <LocalBusinessSchema
+        name={spot.name}
+        description={spot.why}
+        url={spot.website}
+        geo={geo}
+        priceRange={spot.price}
+        image={carouselImages[0]?.src}
+      />
       {/* Navigation Controls Bar - very compact on mobile */}
       <div className="flex items-center justify-between px-2 py-0.5 sm:px-4 sm:py-3 border-b border-neutral-200 bg-neutral-50">
         {/* Close button - goes back to map overview - always rust colored */}

@@ -5,6 +5,7 @@ import { ScrollyMapView } from '@/components/scrollytelling'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { getExploreLinks } from '@/lib/content/cityHomepage'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -23,9 +24,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/bars`
+
   return {
-    title: `${city.name}'s Best Bars | Curious City`,
-    description: `${city.name}'s best bars - dive bars, cocktail lounges, and neighborhood favorites.`,
+    title: `${city.name}'s Best Bars: Cocktail Lounges & Dive Bars | Curious City`,
+    description: `A curated guide to the best bars in ${city.name}. From historic dive bars to high-end cocktail lounges, discover where the locals drink.`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `The Best Bars in ${city.name} | Curious City`,
+      description: `Discover where to drink in ${city.name}.`,
+      url,
+      images: [`/banners/hero-city-images/${city.slug}-skyline.png`],
+    }
   }
 }
 
@@ -52,8 +64,17 @@ export default async function CityBarsPage({ params }: PageProps) {
   // Get explore links for bottom section
   const exploreLinks = await getExploreLinks(slug, city.name, 'bars')
 
+  const url = `https://thecurious.city/${slug}/bars`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Bars', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

@@ -3,10 +3,14 @@ import { getAllArticles } from '@/lib/queries/articles'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { PremiumArticleCard } from '@/components/PremiumArticleCard'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Articles | Curious City',
   description: 'Longform stories, deep dives, and essays exploring the untold histories and hidden secrets of American cities.',
+  alternates: {
+    canonical: 'https://thecurious.city/articles',
+  },
 }
 
 export default async function ArticlesPage() {
@@ -14,6 +18,12 @@ export default async function ArticlesPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: 'Articles', url: 'https://thecurious.city/articles' },
+        ]}
+      />
       <UnifiedNav />
 
       <div className="city-page-wrapper">

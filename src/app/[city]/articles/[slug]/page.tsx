@@ -8,6 +8,7 @@ import { ShareButton } from '@/components/ShareButton'
 import { VideoHistoryScroll } from '@/components/VideoHistoryScroll'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
+import { ArticleSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -22,12 +23,18 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const article = await getArticle(city, slug)
   if (!article) return {}
 
+  const url = `https://thecurious.city/${city}/articles/${slug}`
+
   return {
     title: `${article.title} - ${article.citySlug} - The Curious City`,
     description: article.seo.metaDescription || article.excerpt,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,
+      url,
       type: 'article',
       publishedTime: article.publishedAt,
       authors: [article.author.name],
@@ -71,9 +78,27 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
     return <VideoHistoryScroll history={historyEssay} />
   }
 
+  const url = `https://thecurious.city/${citySlug}/articles/${slug}`
 
   return (
     <>
+      <ArticleSchema
+        headline={article.title}
+        description={article.excerpt}
+        author={article.author.name}
+        datePublished={article.publishedAt}
+        dateModified={article.updatedAt}
+        image={article.featuredImage?.src}
+        url={url}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${citySlug}` },
+          { name: 'Articles', url: `https://thecurious.city/${citySlug}/articles` },
+          { name: article.title, url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

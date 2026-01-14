@@ -5,6 +5,7 @@ import { getCity, getAllCitySlugs, getCityDarkHistory, getCityDarkHistorySection
 import { ShareButton } from '@/components/ShareButton'
 import { Footer, NewsletterSignup, RelatedContent } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 // Dynamically import heavy scroll component
 const DarkHistoryScroll = dynamic(
@@ -40,9 +41,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/dark-history`
+
   return {
     title: `${city.name}'s Dark History | Curious City`,
     description: `${city.name}'s forgotten crimes, unsolved mysteries, and darker historical chapters.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -63,8 +69,17 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
     ? allItems.filter((item: any) => item.category === activeCategory)
     : allItems
 
+  const url = `https://thecurious.city/${slug}/dark-history`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Dark History', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

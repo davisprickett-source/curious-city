@@ -4,10 +4,14 @@ import Image from 'next/image'
 import { getAllCities } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'All Cities | Curious City',
   description: 'Explore all the cities covered by Curious City - local stories, hidden gems, dark history, and more.',
+  alternates: {
+    canonical: 'https://thecurious.city/cities',
+  },
 }
 
 // Helper function to get skyline image path for a city
@@ -37,6 +41,12 @@ export default async function CitiesPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: 'Cities', url: 'https://thecurious.city/cities' },
+        ]}
+      />
       <UnifiedNav />
 
       <div className="city-page-wrapper">

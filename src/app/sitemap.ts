@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { CITY_METADATA } from '@/data/cities'
 import { citySections } from '@/lib/routes'
+import { getAllArticles } from '@/lib/queries/articles'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://thecurious.city'
@@ -23,22 +24,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: 'weekly',
     priority: 0.9,
   })
-
-  // Dynamically import history data to avoid build-time issues
-  try {
-    const { getAllHistory } = await import('@/data/history')
-    const historyArticles = getAllHistory()
-    historyArticles.forEach((article) => {
-      routes.push({
-        url: `${baseUrl}/${article.citySlug}/history/${article.slug}`,
-        lastModified: currentDate,
-        changeFrequency: 'monthly',
-        priority: 0.8,
-      })
-    })
-  } catch (error) {
-    console.warn('Could not load history data for sitemap:', error)
-  }
 
   // Global category pages
   const categories = ['hidden-gems', 'bars', 'restaurants', 'dark-history']
@@ -71,6 +56,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     })
   })
+
+  // All articles across all cities
+  try {
+    const allArticles = await getAllArticles()
+    allArticles.forEach((article) => {
+      routes.push({
+        url: `${baseUrl}/${article.citySlug}/articles/${article.slug}`,
+        lastModified: new Date(article.updatedAt || article.publishedAt),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      })
+    })
+  } catch (error) {
+    console.warn('Could not load articles for sitemap:', error)
+  }
 
   return routes
 }

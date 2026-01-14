@@ -5,6 +5,7 @@ import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer, NewsletterSignup, RelatedContent } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 // Dynamically import heavy scroll component
 const CuriositiesScroll = dynamic(
@@ -40,9 +41,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/curiosities`
+
   return {
     title: `${city.name}'s Curiosities | Curious City`,
     description: `${city.name}'s fascinating facts, forgotten history, and strange stories.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -77,8 +83,17 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
     ? allCuriosities.filter((c: any) => c.category === activeCategory)
     : allCuriosities
 
+  const url = `https://thecurious.city/${slug}/curiosities`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Curiosities', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

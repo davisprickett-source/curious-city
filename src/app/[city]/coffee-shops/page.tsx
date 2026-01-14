@@ -5,6 +5,7 @@ import { ScrollyMapView } from '@/components/scrollytelling'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { getExploreLinks } from '@/lib/content/cityHomepage'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -23,9 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'City Not Found' }
   }
 
+  const url = `https://thecurious.city/${slug}/coffee-shops`
+
   return {
     title: `${city.name}'s Best Coffee Shops | Curious City`,
     description: `${city.name}'s best coffee shops - cozy cafes, third-wave roasters, and neighborhood favorites.`,
+    alternates: {
+      canonical: url,
+    },
   }
 }
 
@@ -53,8 +59,17 @@ export default async function CityCoffeeShopsPage({ params }: PageProps) {
   // Get explore links for bottom section
   const exploreLinks = await getExploreLinks(slug, city.name, 'coffee-shops')
 
+  const url = `https://thecurious.city/${slug}/coffee-shops`
+
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Coffee Shops', url },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}

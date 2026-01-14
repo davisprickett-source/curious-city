@@ -3,10 +3,14 @@ import { Metadata } from 'next'
 import { getAllHistory } from '@/data/history'
 import { getCity } from '@/data/cities'
 import { Header, Footer } from '@/components'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
   title: 'History | Curious City',
   description: 'Long-form writing about American cities - their histories, contradictions, and what makes them tick.',
+  alternates: {
+    canonical: 'https://thecurious.city/history',
+  },
 }
 
 export default async function HistoryPage() {
@@ -26,6 +30,12 @@ export default async function HistoryPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: 'History', url: 'https://thecurious.city/history' },
+        ]}
+      />
       <Header />
 
       <main className="flex-1">
@@ -56,7 +66,7 @@ export default async function HistoryPage() {
               return (
                 <Link
                   key={`${article.citySlug}-${article.slug}`}
-                  href={`/${article.citySlug}/history/${article.slug}`}
+                  href={`/${article.citySlug}/articles/${article.slug}`}
                   className="group block p-6 bg-white rounded-xl border border-neutral-200 hover:border-neutral-400 hover:shadow-sm transition-all"
                 >
                   {/* City tag */}

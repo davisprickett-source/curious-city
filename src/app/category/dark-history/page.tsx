@@ -4,12 +4,16 @@ import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { CategoryHeroSection } from '@/components/category/CategoryHeroSection'
 import { CategoryCard } from '@/components/cards/CategoryCard'
 import { curateCategoryPageContent, getCategoryMeta } from '@/lib/content/categoryPageCurator'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 const categoryMeta = getCategoryMeta('dark-history')
 
 export const metadata: Metadata = {
   title: `${categoryMeta.title} | Curious City`,
   description: categoryMeta.description,
+  alternates: {
+    canonical: 'https://thecurious.city/category/dark-history',
+  },
 }
 
 export default async function DarkHistoryPage() {
@@ -17,6 +21,12 @@ export default async function DarkHistoryPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: 'Dark History', url: 'https://thecurious.city/category/dark-history' },
+        ]}
+      />
       <UnifiedNav />
 
       {/* Hero Section with featured cities */}
