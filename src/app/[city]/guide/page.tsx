@@ -52,6 +52,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         currentSection="guide"
       />
 
+
   // Fetch representative establishments for each category
   const barsList = await getCityBestOf(slug, 'bars')
   const restaurantsList = await getCityBestOf(slug, 'restaurants')
