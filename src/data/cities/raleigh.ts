@@ -113,41 +113,6 @@ export const raleigh: CityData = {
               alt: 'Village Underground restaurant and entertainment area',
               credit: 'Historical Photo',
             },
-            {
-              src: '/raleigh/underground/underground-5.png',
-              alt: 'The painted subway train murals that made visitors think of New York',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/raleigh/underground/underground-6.png',
-              alt: 'Concert poster or promotional material from Village Underground era',
-              credit: 'Historical Collection',
-            },
-            {
-              src: '/raleigh/underground/underground-7.png',
-              alt: 'Crowded nightclub scene at Village Underground',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/raleigh/underground/underground-8.png',
-              alt: 'The Cold War bunker architecture and infrastructure',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/raleigh/underground/underground-9.png',
-              alt: 'One of the thirty shops or restaurants in the complex',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/raleigh/underground/underground-10.png',
-              alt: 'Village Underground in its heyday with patrons',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/raleigh/underground/underground-11.png',
-              alt: 'The Fresh Market location today, above the sealed bunker',
-              credit: 'Modern Photo',
-            },
           ],
           sources: [
             {
@@ -982,6 +947,20 @@ export const raleigh: CityData = {
           hours: 'Tue-Sat 4pm-2am, Sun 2pm-midnight',
           website: 'https://wattsandward.com/',
           instagram: '@wattsandward',
+          images: [
+            {
+              src: '/raleigh/bars/ward-1.png',
+              alt: 'Watts & Ward interior with leather sofas and bookshelves',
+            },
+            {
+              src: '/raleigh/bars/ward-2.png',
+              alt: 'Watts & Ward dimly lit alcove',
+            },
+            {
+              src: '/raleigh/bars/ward-3.png',
+              alt: 'Watts & Ward bar area with cocktails',
+            },
+          ],
         },
         {
           name: 'Raleigh Times Bar',
@@ -995,6 +974,16 @@ export const raleigh: CityData = {
           hours: 'Daily 11am-2am',
           website: 'https://raleightimesbar.com/',
           instagram: '@raleightimesbar',
+          images: [
+            {
+              src: '/raleigh/bars/raleigh-times-1.png',
+              alt: 'Raleigh Times Bar exterior with outdoor seating',
+            },
+            {
+              src: '/raleigh/bars/raleigh-times-2.png',
+              alt: 'Raleigh Times Bar interior with historic newspaper clippings',
+            },
+          ],
         },
         {
           name: 'The Haymaker',
@@ -1008,6 +997,20 @@ export const raleigh: CityData = {
           hours: 'Daily 3pm-2am',
           website: 'https://thehaymakerbar.com/',
           instagram: '@thehaymakerbar',
+          images: [
+            {
+              src: '/raleigh/bars/haymaker-1.png',
+              alt: 'The Haymaker interior with boxing gym aesthetic',
+            },
+            {
+              src: '/raleigh/bars/haymaker-2.png',
+              alt: 'The Haymaker bar with cocktails',
+            },
+            {
+              src: '/raleigh/bars/haymaker-3.png',
+              alt: 'The Haymaker seating area with unique decor',
+            },
+          ],
         },
         {
           name: 'Gussie\'s',
@@ -1021,6 +1024,20 @@ export const raleigh: CityData = {
           hours: 'Mon-Thu 4pm-midnight, Fri-Sat 11am-1am, Sun 11am-10pm',
           website: 'https://gussiesraleigh.com/',
           instagram: '@gussiesraleigh',
+          images: [
+            {
+              src: '/raleigh/bars/gussies-1.png',
+              alt: 'Gussie\'s exterior',
+            },
+            {
+              src: '/raleigh/bars/gussies-3.png',
+              alt: 'Gussie\'s interior',
+            },
+            {
+              src: '/raleigh/bars/gussies02.png',
+              alt: 'Gussie\'s bar area',
+            },
+          ],
         },
       ],
     },
@@ -1048,6 +1065,16 @@ export const raleigh: CityData = {
           hours: 'Mon-Fri 7:30am-5pm, Sat-Sun 8am-5pm',
           website: 'https://www.blackwhiteroasters.com/',
           instagram: '@blackwhiteroasters',
+          images: [
+            {
+              src: '/raleigh/coffee/black-white-placeholder-1.jpg',
+              alt: 'Black & White Coffee Roasters exterior placeholder',
+            },
+            {
+              src: '/raleigh/coffee/black-white-placeholder-2.jpg',
+              alt: 'Black & White Coffee Roasters interior placeholder',
+            },
+          ],
         },
         {
           name: 'Jubala Coffee',
@@ -1061,6 +1088,28 @@ export const raleigh: CityData = {
           hours: 'Daily 7am-5pm',
           website: 'https://www.jubalacoffee.com/',
           instagram: '@jubalacoffee',
+          images: [
+            {
+              src: '/raleigh/coffee/jubala-1.png',
+              alt: 'Jubala Coffee exterior',
+            },
+            {
+              src: '/raleigh/coffee/jubala-2.png',
+              alt: 'Jubala Coffee interior with customers',
+            },
+            {
+              src: '/raleigh/coffee/jubala3.png',
+              alt: 'Jubala Coffee biscuits',
+            },
+            {
+              src: '/raleigh/coffee/jubala4.png',
+              alt: 'Jubala Coffee latte art',
+            },
+            {
+              src: '/raleigh/coffee/jubala5.png',
+              alt: 'Jubala Coffee storefront',
+            },
+          ],
         },
         {
           name: 'Heirloom Brewshop',
@@ -1074,6 +1123,20 @@ export const raleigh: CityData = {
           hours: 'Mon-Thu 8am-8pm, Fri-Sat 8am-9pm, Sun 8am-6pm',
           website: 'https://heirloombrewshop.com/',
           instagram: '@heirloombrewshop',
+          images: [
+            {
+              src: '/raleigh/coffee/heirloom-1.png',
+              alt: 'Heirloom Brewshop minimalist interior',
+            },
+            {
+              src: '/raleigh/coffee/heirloom2.png',
+              alt: 'Heirloom Brewshop counter and drinks',
+            },
+            {
+              src: '/raleigh/coffee/heirloom3.png',
+              alt: 'Heirloom Brewshop ceremonial matcha preparation',
+            },
+          ],
         },
         {
           name: 'The Morning Times',
@@ -1087,6 +1150,20 @@ export const raleigh: CityData = {
           hours: 'Daily 7am-7pm',
           website: 'https://themorningtimes.com/',
           instagram: '@morningtimesraleigh',
+          images: [
+            {
+              src: '/raleigh/coffee/morningtimes1.png',
+              alt: 'The Morning Times exterior street view',
+            },
+            {
+              src: '/raleigh/coffee/morningtimes-2.png',
+              alt: 'The Morning Times bustling interior',
+            },
+            {
+              src: '/raleigh/coffee/morning-times-3.png',
+              alt: 'The Morning Times coffee counter',
+            },
+          ],
         },
         {
           name: '321 Coffee',
@@ -1100,6 +1177,20 @@ export const raleigh: CityData = {
           hours: 'Daily 7am-4pm',
           website: 'https://321coffee.com/',
           instagram: '@321coffee',
+          images: [
+            {
+              src: '/raleigh/coffee/321-1.png',
+              alt: '321 Coffee exterior with welcoming sign',
+            },
+            {
+              src: '/raleigh/coffee/321-2.png',
+              alt: '321 Coffee baristas at work',
+            },
+            {
+              src: '/raleigh/coffee/321-3.png',
+              alt: '321 Coffee interior with customers and seating',
+            },
+          ],
         },
         {
           name: 'Iris Coffee Lab',
@@ -1113,6 +1204,24 @@ export const raleigh: CityData = {
           hours: 'Daily 7am-5pm',
           website: 'https://iriscoffeelab.com/',
           instagram: '@iriscoffeelab',
+          images: [
+            {
+              src: '/raleigh/coffee/iris1.png',
+              alt: 'Iris Coffee Lab clean modern interior',
+            },
+            {
+              src: '/raleigh/coffee/iris2.png',
+              alt: 'Iris Coffee Lab barista preparing drink',
+            },
+            {
+              src: '/raleigh/coffee/iris3.png',
+              alt: 'Iris Coffee Lab seasonal latte',
+            },
+            {
+              src: '/raleigh/coffee/iris4.png',
+              alt: 'Iris Coffee Lab storefront',
+            },
+          ],
         },
       ],
     },
@@ -1161,6 +1270,28 @@ export const raleigh: CityData = {
           hours: 'Wed-Sun 5:30pm-10pm',
           website: 'https://ac-restaurants.com/pooles/',
           instagram: '@poolesdiner',
+          images: [
+            {
+              src: '/raleigh/restaurants/pooles-1.png',
+              alt: 'Poole\'s Diner interior with bar and open kitchen',
+            },
+            {
+              src: '/raleigh/restaurants/pooles-2.png',
+              alt: 'Poole\'s Diner Macaroni au Gratin',
+            },
+            {
+              src: '/raleigh/restaurants/pooles-3.png',
+              alt: 'Poole\'s Diner exterior at night',
+            },
+            {
+              src: '/raleigh/restaurants/pooles-4.png',
+              alt: 'Poole\'s Diner dining area',
+            },
+            {
+              src: '/raleigh/restaurants/pooles-5.png',
+              alt: 'Poole\'s Diner seasonal menu chalkboard',
+            },
+          ],
         },
         {
           name: 'Brewery Bhavana',
@@ -1174,6 +1305,24 @@ export const raleigh: CityData = {
           hours: 'Tue-Sun 11:30am-10pm',
           website: 'https://brewerybhavana.com/',
           instagram: '@brewerybhavana',
+          images: [
+            {
+              src: '/raleigh/restaurants/bhavana-1.png',
+              alt: 'Brewery Bhavana interior with books and flowers',
+            },
+            {
+              src: '/raleigh/restaurants/bhavana-2.png',
+              alt: 'Brewery Bhavana dim sum dishes',
+            },
+            {
+              src: '/raleigh/restaurants/bhavana-3.png',
+              alt: 'Brewery Bhavana exterior at night',
+            },
+            {
+              src: '/raleigh/restaurants/bhavana-4.png',
+              alt: 'Brewery Bhavana beer selection',
+            },
+          ],
         },
         {
           name: 'Stanbury',
@@ -1187,6 +1336,20 @@ export const raleigh: CityData = {
           hours: 'Tue-Sat 5pm-10pm',
           website: 'https://stanburyraleigh.com/',
           instagram: '@stanburyraleigh',
+          images: [
+            {
+              src: '/raleigh/restaurants/stanbury-1.png',
+              alt: 'Stanbury interior dining area',
+            },
+            {
+              src: '/raleigh/restaurants/stanbury-2.png',
+              alt: 'Stanbury plate of food',
+            },
+            {
+              src: '/raleigh/restaurants/stanbury-3.png',
+              alt: 'Stanbury exterior at night',
+            },
+          ],
         },
         {
           name: 'Bida Manda',
@@ -1200,6 +1363,24 @@ export const raleigh: CityData = {
           hours: 'Tue-Sun 5pm-10pm',
           website: 'https://bidamanda.com/',
           instagram: '@bidamanda',
+          images: [
+            {
+              src: '/raleigh/restaurants/bida-manda-1.png',
+              alt: 'Bida Manda interior with ornate wood art',
+            },
+            {
+              src: '/raleigh/restaurants/bida-manda-2.png',
+              alt: 'Bida Manda Crispy Pork Belly Soup',
+            },
+            {
+              src: '/raleigh/restaurants/bida-manda-3.png',
+              alt: 'Bida Manda exterior at night',
+            },
+            {
+              src: '/raleigh/restaurants/bida-manda-4.png',
+              alt: 'Bida Manda cocktails',
+            },
+          ],
         },
         {
           name: 'Crawford and Son',
@@ -1213,6 +1394,20 @@ export const raleigh: CityData = {
           hours: 'Tue-Sat 5pm-10pm',
           website: 'https://crawfordandsonrestaurant.com/',
           instagram: '@crawfordandson',
+          images: [
+            {
+              src: '/raleigh/restaurants/crawford-1.png',
+              alt: 'Crawford and Son interior dining room',
+            },
+            {
+              src: '/raleigh/restaurants/crawford-2.png',
+              alt: 'Crawford and Son dish presentation',
+            },
+            {
+              src: '/raleigh/restaurants/crawford-3.png',
+              alt: 'Crawford and Son bar area',
+            },
+          ],
         },
         {
           name: 'Centro',
@@ -1226,6 +1421,20 @@ export const raleigh: CityData = {
           hours: 'Mon-Sat 11:30am-10pm',
           website: 'https://centroraleigh.com/',
           instagram: '@centroraleigh',
+          images: [
+            {
+              src: '/raleigh/restaurants/centro-1.png',
+              alt: 'Centro vibrant interior with colorful art',
+            },
+            {
+              src: '/raleigh/restaurants/centro-2.png',
+              alt: 'Centro tacos al pastor',
+            },
+            {
+              src: '/raleigh/restaurants/centro-3.png',
+              alt: 'Centro exterior at night',
+            },
+          ],
         },
         {
           name: 'Death & Taxes',
@@ -1239,6 +1448,20 @@ export const raleigh: CityData = {
           price: '$$$$',
           website: 'https://ac-restaurants.com/death-taxes/',
           instagram: '@deathandtaxesnc',
+          images: [
+            {
+              src: '/raleigh/restaurants/death-taxes-1.png',
+              alt: 'Death & Taxes interior with wood-fired grill',
+            },
+            {
+              src: '/raleigh/restaurants/death-taxes-2.png',
+              alt: 'Death & Taxes roasted oysters',
+            },
+            {
+              src: '/raleigh/restaurants/death-taxes-3.png',
+              alt: 'Death & Taxes exterior in former funeral home building',
+            },
+          ],
         },
         {
           name: 'Second Empire',

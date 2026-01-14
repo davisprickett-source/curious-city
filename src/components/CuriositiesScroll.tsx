@@ -487,7 +487,7 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
               )}
 
               {/* Image */}
-              {item.image && !item.illustration && !item.images && (
+              {item.images === undefined && item.image && !item.illustration && (
                 <div className="mb-6 overflow-hidden rounded-2xl relative">
                   <img
                     src={item.image.src}
@@ -707,7 +707,7 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
             )}
 
             {/* Single Image with animations - Show single image if no carousel */}
-            {!item.images && item.image && (
+            {item.images === undefined && item.image && (
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
