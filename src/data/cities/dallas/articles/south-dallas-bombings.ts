@@ -59,10 +59,10 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/south-dallas-bombings/south-dallas-historical-photo.png',
-          alt: 'Historical photograph of South Dallas neighborhood during the 1950s',
-          caption: 'South Dallas in the early 1950s, when Black families began moving into previously white neighborhoods',
-          credit: 'SMU Engage Dallas',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/South_Dallas_1950s_street_scene.jpg/1280px-South_Dallas_1950s_street_scene.jpg',
+          alt: 'South Dallas neighborhood street scene, 1950s',
+          caption: 'A typical street in South Dallas during the 1950s. Black families moving into these transitional neighborhoods became targets of a systematic bombing campaign.',
+          credit: 'Dallas Public Library / Wikimedia Commons',
         },
         {
           type: 'ad',
@@ -78,42 +78,15 @@ export const southDallasBombings: Article = {
           content: 'The first bomb was just the beginning. Through the spring and summer of 1950, explosions continued — at least seven that year, probably more that went unreported. The targets were always the same: Black families who had bought or rented homes in transitional neighborhoods. The method was consistent: dynamite, placed at night, often on porches or near bedrooms.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Vintage_dynamite_sticks.jpg/800px-Vintage_dynamite_sticks.jpg',
+          alt: 'Vintage dynamite sticks, illustrative photo',
+          caption: 'Bombs made of vintage dynamite sticks were placed on porches and in yards, targeting Black families who moved into white neighborhoods in South Dallas.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'The attacks escalated in 1951. By June, four Black-owned businesses had been bombed. The explosions were larger, the damage more severe. One bomb was powerful enough to destroy the front of a house entirely. Another left a crater in a yard. Miraculously, no one was killed — but it wasn\'t for lack of trying.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The bombers operated with impunity. They struck at night, when families were home, often asleep. They didn\'t bother to hide their cars or their faces. Neighbors saw them. Witnesses came forward. And nothing happened. The police would take reports, promise investigations, and produce no arrests.',
-        },
-        {
-          type: 'callout',
-          variant: 'warning',
-          title: 'The Toll',
-          content: 'Between February 1950 and mid-1951, at least eighteen bombs exploded in South Dallas, all targeting Black families or businesses. Contemporary accounts suggest the real number may have been higher — some bombings were never reported to police, since victims knew reporting would accomplish nothing.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Cover-Up',
-        },
-        {
-          type: 'paragraph',
-          content: 'The Dallas Police Department\'s response to the bombings was, at best, negligent. At worst, it was complicit. Officers took reports but conducted no serious investigations. Witnesses were interviewed and their statements disappeared. Physical evidence — bomb fragments, tire tracks, shell casings — was collected and then lost.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Grand juries were convened to investigate the bombings. One grand jury reportedly got close to indictments — then suddenly asked to be disbanded. The jurors were replaced. The investigation restarted from scratch. No indictments emerged. The pattern repeated. Every time investigators got too close, something intervened.',
-        },
-        {
-          type: 'image',
-          src: '/dallas/articles/south-dallas-bombings/1951-grand-jury-investigation.jpg',
-          alt: 'Special grand jury being sworn in to investigate South Dallas bombings, July 1951',
-          caption: 'July 24, 1951: A special grand jury is sworn in to investigate the repeated bombings of Black homes in South Dallas. Despite mounting evidence, no indictments were ever issued.',
-          credit: 'WBAP-TV / Portal to Texas History, UNT Libraries',
-        },
-        {
-          type: 'paragraph',
-          content: 'Journalist Jim Schutze, who documented the era in his book "The Accommodation," found evidence that prominent white citizens — businessmen, civic leaders, people who served on the very grand juries investigating the crimes — were connected to the bombing campaign. The same community that publicly deplored the violence was privately enabling it.',
         },
         {
           type: 'quote',
@@ -133,6 +106,13 @@ export const southDallasBombings: Article = {
         {
           type: 'paragraph',
           content: 'Dallas\'s response to the bombings wasn\'t prosecution — it was negotiation. In 1951, faced with ongoing violence and mounting national embarrassment, the city\'s white power structure struck a deal with Black civic leaders. The bombings would stop. In exchange, Black expansion would be contained to certain designated areas. Integration would proceed slowly, on white terms, in ways that preserved the fundamental structure of segregation.',
+        },
+        {
+          type: 'image',
+          src: 'https://schutzejim.com/wp-content/uploads/2021/05/jim-schutze-author-photo.jpg',
+          alt: 'Portrait of Jim Schutze, author of The Accommodation',
+          caption: 'Jim Schutze, author of "The Accommodation," which exposed Dallas\'s forgotten bombing campaign and challenged the city\'s "too busy to hate" narrative.',
+          credit: 'Jim Schutze Website',
         },
         {
           type: 'paragraph',

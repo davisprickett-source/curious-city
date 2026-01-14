@@ -40,6 +40,13 @@ export const freedmansCemetery: Article = {
           content: 'The Freedmen\'s Town',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Freedmans_Town_Dallas_1900.jpg/1280px-Freedmans_Town_Dallas_1900.jpg',
+          alt: 'Historical photo of Freedman\'s Town, Dallas, early 1900s',
+          caption: 'Freedman\'s Town, Dallas, in the early 1900s. This vibrant community of formerly enslaved people established businesses, churches, and homes, but was largely erased by urban development.',
+          credit: 'Dallas Public Library / Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'After Emancipation, formerly enslaved people across Texas faced an immediate problem: where to go. Many had been property their entire lives, with no land, no money, no legal identity. They gathered in camps and settlements near the towns where they\'d been enslaved, trying to build new lives from nothing.',
         },
@@ -107,6 +114,17 @@ export const freedmansCemetery: Article = {
         {
           type: 'paragraph',
           content: 'The erasure was systematic. City records were incomplete or lost. Property deeds made no mention of the cemetery. When North Central Expressway was built through the area in the 1940s, construction crews almost certainly disturbed graves — but there\'s no documentation of what they found or what they did with the remains. The dead were simply obstacles to progress.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Central_Expressway_construction_1949.jpg/1280px-Central_Expressway_construction_1949.jpg',
+          alt: 'North Central Expressway construction in Dallas, 1949',
+          caption: 'Construction of North Central Expressway in Dallas, 1949. The highway was built directly over a significant portion of Freedman\'s Cemetery, disturbing countless graves.',
+          credit: 'Texas Department of Transportation / Wikimedia Commons',
+        },
+        {
+          type: 'paragraph',
+          content: 'For decades, thousands of Dallas residents drove over Freedman\'s Cemetery without knowing it. The freeway carried commuters north to the suburbs, their cars passing over the bones of the people who had built the city\'s first Black community. The irony was brutal: the descendants of the freedmen fled to those suburbs to escape the segregated city their ancestors had built, driving over their ancestors\' graves to get there.',
         },
         {
           type: 'paragraph',

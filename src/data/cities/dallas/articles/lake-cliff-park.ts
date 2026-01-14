@@ -82,6 +82,13 @@ export const lakeCliffPark: Article = {
           content: 'Lake Cliff Park had roller coasters — plural. The flagship was the Figure Eight, a classic wooden coaster that twisted and turned above the lake. Later came the Velvet Coaster, a scenic railway that offered gentler thrills. Both were engineering marvels for their time, drawing visitors from across North Texas to experience the terror and delight of mechanized excitement.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lake_Cliff_Park_Figure_Eight_roller_coaster_1907.jpg/1280px-Lake_Cliff_Park_Figure_Eight_roller_coaster_1907.jpg',
+          alt: 'The Figure Eight roller coaster at Lake Cliff Park, Dallas, 1907',
+          caption: 'The Figure Eight roller coaster, one of several at Lake Cliff Park, was a marvel of early 20th-century engineering, thrilling visitors with its twists and turns.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'The park also featured a miniature railroad that circled the grounds, a Ferris wheel, a carousel, and numerous smaller rides that changed as technology evolved. There were shooting galleries, funhouses, and games of chance. The grounds were lit by thousands of electric lights — a spectacle in an era when electricity itself was still novel.',
         },
@@ -148,6 +155,13 @@ export const lakeCliffPark: Article = {
           type: 'heading',
           level: 2,
           content: 'The Flood',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Dallas_Flood_1908.jpg/1280px-Dallas_Flood_1908.jpg',
+          alt: 'Trinity River flood in Dallas, 1908',
+          caption: 'The Trinity River flood of May 1908, which destroyed the bridges and trolley lines connecting Dallas to Oak Cliff, was a death blow to Lake Cliff Park.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
