@@ -37,22 +37,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const city = await getCity(slug)
   if (!city) notFound()
 
-  return (
-    <>
-      <BreadcrumbSchema
-        items={[
-          { name: 'Home', url: 'https://thecurious.city' },
-          { name: city.name, url: `https://thecurious.city/${slug}` },
-          { name: 'Guide', url: `https://thecurious.city/${slug}/guide` },
-        ]}
-      />
-      <UnifiedNav
-        citySlug={city.slug}
-        cityName={city.name}
-        currentSection="guide"
-      />
-
-
   // Fetch representative establishments for each category
   const barsList = await getCityBestOf(slug, 'bars')
   const restaurantsList = await getCityBestOf(slug, 'restaurants')
@@ -98,6 +82,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Guide', url: `https://thecurious.city/${slug}/guide` },
+        ]}
+      />
       <UnifiedNav
         citySlug={city.slug}
         cityName={city.name}
