@@ -41,30 +41,30 @@ export const washburnMill: Article = {
         },
         {
           type: 'paragraph',
-          content: 'By 1878, Minneapolis was the flour milling capital of America. St. Anthony Falls — the only major waterfall on the Mississippi — provided unlimited power. Wheat from the northern prairies flowed in by railroad. A dozen mills lined the riverbank, their stones grinding twenty-four hours a day.',
+          content: 'The Mill City was built around its mills. At St. Anthony Falls, the Mississippi provided unlimited power. Wheat from the northern prairies flowed in by railroad. And the Washburn A Mill was the largest of them all — a seven-story giant, technologically advanced, capable of producing 1,500 barrels of flour per day.',
         },
         {
-          type: 'paragraph',
-          content: 'The Washburn A Mill was the largest of them all. Built in 1874 by Cadwallader Washburn — a Wisconsin congressman, Civil War general, and flour baron — it was a technological marvel. Seven stories tall, powered by water diverted through underground canals, capable of producing 1,500 barrels of flour per day. It was, quite simply, the biggest flour mill in the world.',
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204732&catirn=10204732&oldirn=10204732&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'Washburn A Mill before the 1878 explosion, Minneapolis',
+          caption: 'The Washburn A Mill in Minneapolis, before the 1878 explosion. The largest flour mill in the world, it was a marvel of industrial engineering.',
+          credit: 'Minnesota Historical Society',
         },
         {
           type: 'paragraph',
           content: 'What nobody fully understood was the danger. Flour dust, suspended in air at the right concentration, is explosive. The mills were full of it — clouds of fine powder that coated machinery, hung in shafts of light, settled on workers\' clothes. A single spark could turn a flour mill into a bomb.',
         },
         {
-          type: 'quote',
-          content: 'We knew the dust could catch fire. Every mill had fires. But an explosion? Nobody imagined flour could do that. Nobody imagined anything could do that.',
-          attribution: 'Minneapolis mill worker',
-          role: 'Testimony at the inquest, 1878',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Explosion',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Dust_explosion_diagram.svg/1280px-Dust_explosion_diagram.svg.png',
+          alt: 'Diagram illustrating a dust explosion',
+          caption: 'A diagram illustrating a dust explosion. Fine flour dust, suspended in air, is highly combustible. The 1878 explosion taught the world the dangers of this phenomenon.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -75,81 +75,6 @@ export const washburnMill: Article = {
           content: 'What happened next was instantaneous. The spark ignited the flour dust suspended in the air, creating a fireball that expanded faster than sound. The pressure wave was catastrophic. The seven-story Washburn A Mill was demolished in less than a second. Debris was thrown hundreds of feet into the air.',
         },
         {
-          type: 'paragraph',
-          content: 'The shock wave didn\'t stop at the mill\'s walls. It jumped to the adjacent Humboldt Mill, which exploded. Then the Diamond Mill. Then the Zenith. Then the Galaxy. Then the Pettit Mill. Six mills destroyed in a chain reaction that witnesses said sounded like artillery fire. People in St. Paul, ten miles away, heard the blasts.',
-        },
-        {
-          type: 'callout',
-          variant: 'warning',
-          title: 'The Chain Reaction',
-          content: 'The initial explosion at the Washburn A Mill triggered five more explosions in neighboring mills. The entire milling district — the heart of Minneapolis\'s economy — was devastated in minutes. A third of the city\'s flour-milling capacity was destroyed instantly.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Dead',
-        },
-        {
-          type: 'paragraph',
-          content: 'Eighteen men died in the explosions. Fourteen were inside the Washburn A Mill — none survived. Four more died in the neighboring mills and the fires that followed. Most of the bodies were never recovered intact; the explosions had been too violent.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The victims were ordinary workers: millhands, machinery operators, day laborers. Many were immigrants — Scandinavians, Germans, Irish — the men who did the dangerous work that built Minneapolis. Their names are inscribed on a monument at Lakewood Cemetery: a sheaf of wheat, a millstone, a broken gear.',
-        },
-        {
-          type: 'paragraph',
-          content: 'In an era when industrialists rarely acknowledged responsibility, Cadwallader Washburn personally compensated the families of the dead workers. It was an unusual gesture — almost unprecedented for the time. Washburn had lost his mill, but he understood that the workers had lost more.',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Investigation',
-        },
-        {
-          type: 'paragraph',
-          content: 'The coroner\'s inquest struggled to explain what had happened. Flour dust explosions were not well understood in 1878. The concept that a fine powder could explode like gunpowder seemed almost fantastical. But the evidence was undeniable.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Two professors from the University of Minnesota, Stephen Peckham and Louis Peck, conducted experiments to determine the cause. They demonstrated that flour dust, suspended in air at the right concentration, could be ignited by a spark and would explode with devastating force. The science was clear: the mills were death traps.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The inquest concluded that the explosion had been caused by flour dust ignited by friction between millstones. It recommended ventilation systems to remove dust and safety measures to prevent sparks. It was the beginning of modern dust explosion science — knowledge paid for with eighteen lives.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Rebuilding',
-        },
-        {
-          type: 'paragraph',
-          content: 'Cadwallader Washburn vowed to rebuild — bigger and safer. He hired William de la Barre, an Austrian engineer, to design a new mill based on advanced European technology. De la Barre\'s design included dust collection systems, improved ventilation, and safer milling methods. The new Washburn A Mill, completed in 1880, was the most technologically advanced flour mill in the world.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The innovations didn\'t stay in Minneapolis. De la Barre\'s safety systems spread throughout the milling industry. The Great Mill Disaster had demonstrated what could happen when flour dust accumulated; now every mill in America knew, and most took precautions. The explosion that destroyed half of Minneapolis\'s milling capacity ultimately made the entire industry safer.',
-        },
-        {
-          type: 'paragraph',
-          content: 'Minneapolis itself boomed. The rebuilt mills were more efficient than ever. The city that had been the flour capital of America became even more dominant. By 1880, Minneapolis was producing more flour than any city in the world — a position it would hold for decades.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The Flour City',
-          content: 'After the rebuilding, Minneapolis\'s flour production exploded. By 1890, the city\'s mills produced over 7 million barrels of flour annually — more than any city on Earth. The disaster that destroyed half the mills ultimately led to a bigger, safer, more productive industry.',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Legacy',
@@ -157,6 +82,13 @@ export const washburnMill: Article = {
         {
           type: 'paragraph',
           content: 'The Washburn A Mill operated until 1965, when the milling industry finally left Minneapolis. The building sat abandoned for decades, caught fire in 1991, and was partially destroyed. What remained — massive stone walls, empty windows, industrial ruins — became a different kind of landmark.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mill_City_Museum_Minneapolis.jpg/1280px-Mill_City_Museum_Minneapolis.jpg',
+          alt: 'Mill City Museum in Minneapolis, housed in the ruins of the Washburn A Mill',
+          caption: 'The Mill City Museum today, built within the ruins of the Washburn A Mill. The museum tells the story of Minneapolis\'s flour milling history, including the catastrophic 1878 explosion.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

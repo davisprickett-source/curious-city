@@ -27,6 +27,13 @@ export const bohemianFlats: Article = {
           content: 'Beneath the Washington Avenue Bridge, where joggers now run along the West River Parkway, there used to be a village. Not a neighborhood — a village. Small wooden houses clinging to the riverbank. Vegetable gardens. Chickens and goats. A thousand people living in the shadow of the Mississippi bluffs, invisible to the city above.',
         },
         {
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10214631&catirn=10204738&oldirn=10204738&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'Panoramic view of Bohemian Flats, Minneapolis, early 1900s',
+          caption: 'A panoramic view of Bohemian Flats, Minneapolis, circa 1910. The immigrant village sat directly on the banks of the Mississippi River, beneath the bluffs.',
+          credit: 'Minnesota Historical Society',
+        },
+        {
           type: 'paragraph',
           content: 'They called it Bohemian Flats, though the residents came from everywhere: Slovakia, Czech lands, Sweden, Norway, Ireland, Poland. For sixty years, this was one of the most distinctive communities in Minneapolis — and one of the most precarious. The city tolerated it, then ignored it, then bulldozed it. Today, no physical trace remains.',
         },
@@ -46,6 +53,13 @@ export const bohemianFlats: Article = {
         {
           type: 'paragraph',
           content: 'Every morning, the men of Bohemian Flats climbed 79 wooden stairs cut into the bluff to reach the city above. They worked in the flour mills at St. Anthony Falls, on railroad crews, as day laborers — whatever work immigrants could find. Every evening, they descended back to the river.',
+        },
+        {
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204719&catirn=10204719&oldirn=10204719&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'The 79 wooden stairs connecting Bohemian Flats to Minneapolis above',
+          caption: 'The 79 wooden stairs that residents of Bohemian Flats climbed daily to reach their jobs in the flour mills and the city above.',
+          credit: 'Minnesota Historical Society',
         },
         {
           type: 'quote',
@@ -142,6 +156,13 @@ export const bohemianFlats: Article = {
         {
           type: 'paragraph',
           content: 'Today, Bohemian Flats is a park. The West River Parkway runs where Mill Street once stood. Dog walkers, joggers, and cyclists pass through daily. The view of the river is beautiful. There is no marker, no memorial, no indication that anyone ever lived here.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bohemian_Flats_Park_Minneapolis.jpg/1280px-Bohemian_Flats_Park_Minneapolis.jpg',
+          alt: 'Bohemian Flats Park, Minneapolis, contemporary photo',
+          caption: 'Bohemian Flats Park today. A serene green space along the Mississippi River, with no overt indication of the vibrant immigrant community that once thrived here.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

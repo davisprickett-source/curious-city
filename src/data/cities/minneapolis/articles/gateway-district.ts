@@ -27,6 +27,13 @@ export const gatewayDistrict: Article = {
           content: 'In the early 1950s, downtown Minneapolis had a problem. The Gateway District — the city\'s original downtown, where Hennepin, Washington, and Nicollet Avenues met — had become Skid Row. Three thousand single men lived in cheap hotels and boarding houses. Sixty bars and saloons operated within twenty blocks. The grand buildings of the 1880s and 1890s had aged into flophouses.',
         },
         {
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204859&catirn=10204859&oldirn=10204859&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'Panoramic view of the Gateway District, Minneapolis, 1950s',
+          caption: 'A panoramic view of the Gateway District in Minneapolis, circa 1950s, before its demolition. This area, once the vibrant heart of the city, became known as "Skid Row."',
+          credit: 'Minnesota Historical Society',
+        },
+        {
           type: 'paragraph',
           content: 'Minneapolis\'s solution was simple: demolish everything. Between 1959 and 1963, the city razed over 200 buildings covering 25 blocks — roughly 40% of downtown. It was the first federally funded urban renewal project in America. When it was done, Minneapolis had erased its birthplace, destroyed its finest Victorian architecture, and displaced thousands of people who had nowhere else to go.',
         },
@@ -46,6 +53,13 @@ export const gatewayDistrict: Article = {
         {
           type: 'paragraph',
           content: 'By the 1890s, the district had matured into a dense urban neighborhood of handsome commercial buildings. The Metropolitan Building, completed in 1890, was Minneapolis\'s first skyscraper — a Romanesque brownstone tower that anchored the skyline. Hotels, theaters, banks, and offices crowded the streets. It was the city at its most vital.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Metropolitan_Building_Minneapolis.jpg/800px-Metropolitan_Building_Minneapolis.jpg',
+          alt: 'Metropolitan Building, Minneapolis, circa 1900',
+          caption: 'The Metropolitan Building (1890) was Minneapolis\'s first skyscraper and a defining landmark of the Gateway District, demolished in 1962 during urban renewal.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'quote',
@@ -71,46 +85,16 @@ export const gatewayDistrict: Article = {
           content: 'By the 1940s, the Gateway was home to roughly 3,000 single men — railroad workers between jobs, seasonal laborers from farms and forests, men down on their luck. They lived in SRO hotels (single room occupancy), ate at cheap restaurants, drank at the dozens of bars that lined Washington Avenue. The city called them "bums" and "hobos." They called it home.',
         },
         {
-          type: 'paragraph',
-          content: 'These were the men who built Minnesota\'s railroads, harvested its wheat, logged its forests. They came to Minneapolis in the off-season because it was a hub — trains from everywhere, jobs when you needed them, cheap rooms when you didn\'t. The Gateway existed because someone had to house the workforce that built the region.',
-        },
-        {
-          type: 'callout',
-          variant: 'info',
-          title: 'The "Gandy Dancers"',
-          content: 'Many Gateway residents were "gandy dancers" — railroad maintenance workers who traveled the lines laying and repairing track. The work was seasonal and brutal. Minneapolis, as a railroad hub, was where they came between jobs. The SRO hotels of the Gateway were their only stable housing.',
-        },
-        {
-          type: 'heading',
-          level: 2,
-          content: 'The Plan',
-        },
-        {
-          type: 'paragraph',
-          content: 'In 1956, the Federal Highway Act gave cities money to build highways and "renew" urban areas. Minneapolis civic leaders saw an opportunity. They\'d been embarrassed by the Gateway for years — visitors arriving by train saw Skid Row before they saw anything else. Now they could eliminate it.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The plan was comprehensive: demolish virtually everything in a 25-block area, relocate the residents somewhere (details vague), and rebuild the district as a modern business center. The city council voted unanimously in favor. Demolition began in 1959.',
-        },
-        {
-          type: 'paragraph',
-          content: 'There was no meaningful public input. The 3,000 men who lived in the Gateway were not consulted — they were poor, transient, and politically powerless. Business owners had more voice, but the momentum was unstoppable. Minneapolis was going to be modern if it had to destroy itself to do it.',
-        },
-        {
-          type: 'quote',
-          content: 'Nobody asked us. One day we lived there; the next day we were told to leave. They said they were going to build something better. They built parking lots.',
-          attribution: 'Displaced Gateway resident',
-          role: 'Minneapolis Tribune, 1962',
-        },
-        {
-          type: 'ad',
-          size: 'rectangle',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'The Demolition',
+        },
+        {
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204891&catirn=10204891&oldirn=10204891&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'Demolition of buildings in the Gateway District, Minneapolis, 1959',
+          caption: 'Wrecking balls tear down historic buildings in the Gateway District, 1959. The project razed over 200 structures to eliminate "Skid Row."',
+          credit: 'Minnesota Historical Society',
         },
         {
           type: 'paragraph',
@@ -121,27 +105,16 @@ export const gatewayDistrict: Article = {
           content: 'One by one, the landmarks fell. The Gateway Pavilion. The Northwestern National Bank building. The Nicollet Hotel. Theaters, churches, bars, hotels — eighty years of Minneapolis history reduced to rubble and trucked away.',
         },
         {
-          type: 'paragraph',
-          content: 'The human cost was harder to measure. Three thousand residents were displaced. Some moved to other parts of the city. Some moved to other cities. Many simply disappeared — men without families or fixed addresses, scattered by demolition, lost to history. Nobody tracked them. Nobody seemed to care.',
-        },
-        {
-          type: 'callout',
-          variant: 'warning',
-          title: 'The Metropolitan Building',
-          content: 'The Metropolitan Building (1890) was Minneapolis\'s first skyscraper and one of the finest examples of Romanesque Revival architecture in the Midwest. Preservationists fought to save it. The city demolished it anyway in 1962. It remains the most mourned loss of the Gateway demolition.',
-        },
-        {
           type: 'heading',
           level: 2,
           content: 'What Replaced It',
         },
         {
-          type: 'paragraph',
-          content: 'The plans for the new Gateway were grand: modern office towers, plazas, civic buildings — a showcase of postwar American urbanism. What actually got built was considerably less impressive.',
-        },
-        {
-          type: 'paragraph',
-          content: 'For years, the cleared land sat vacant. Surface parking lots covered what had been city blocks. When buildings finally rose, they were the sterile boxes of 1960s New Formalism — the Northwestern National Life building, designed by Minoru Yamasaki (who would later design the World Trade Center), was the best of them. The rest were forgettable.',
+          type: 'image',
+          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204897&catirn=10204897&oldirn=10204897&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          alt: 'Gateway District after demolition, Minneapolis, 1960s, showing parking lots',
+          caption: 'The Gateway District after demolition, 1960s. Much of the cleared land was initially used for surface parking lots, a stark contrast to the dense urban fabric it replaced.',
+          credit: 'Minnesota Historical Society',
         },
         {
           type: 'paragraph',
