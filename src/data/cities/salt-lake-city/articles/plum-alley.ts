@@ -12,9 +12,9 @@ export const plumAlley: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/salt-lake-city/articles/plum-alley.png',
-    alt: 'Plum Alley in Salt Lake City, circa 1910',
-    credit: 'Utah State Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg/1280px-Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg',
+    alt: 'Plum Alley in Salt Lake City, circa 1900-1910, showing narrow street and Chinese businesses',
+    credit: 'Utah State Archives / Wikimedia Commons',
   },
   category: 'history',
   tags: ['salt-lake-city', 'chinatown', 'immigration', 'chinese-american', 'urban-renewal', 'forgotten-history', 'erasure'],
@@ -38,6 +38,13 @@ export const plumAlley: Article = {
           type: 'heading',
           level: 2,
           content: 'The Railroad Men',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chinese_railroad_workers_at_Promontory_Summit%2C_Utah%2C_1869.jpg/1280px-Chinese_railroad_workers_at_Promontory_Summit%2C_Utah%2C_1869.jpg',
+          alt: 'Chinese railroad workers at Promontory Summit, Utah, 1869',
+          caption: 'Chinese railroad workers at Promontory Summit, Utah, 1869. Many of these laborers, after completing the transcontinental railroad, settled in Salt Lake City and founded Plum Alley.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -78,6 +85,13 @@ export const plumAlley: Article = {
           credit: 'Utah State Historical Society',
           width: 1160,
           height: 871,
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chinese_temple_San_Francisco_1890s.jpg/1280px-Chinese_temple_San_Francisco_1890s.jpg',
+          alt: 'Historical photo of a Chinese temple, San Francisco, 1890s',
+          caption: 'An illustrative image of a Chinese temple from the late 19th century. Plum Alley had its own "Joss House" or temple, serving as a spiritual and cultural center for the community.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

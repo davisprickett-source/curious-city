@@ -27,6 +27,13 @@ export const victimOfTheBeast: Article = {
           content: 'There\'s a grave in Salt Lake City Cemetery that stops people in their tracks. It\'s not elaborate — just a modest red granite headstone, weathered by decades of Utah winters. The name is ordinary: Lilly E. Gray. The dates are unremarkable: 1881-1958. But beneath that information, carved into the stone in letters that have never been explained by any official record, is a phrase that has launched a thousand theories: "Victim of the Beast 666."',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lilly_E._Gray_grave_-_Salt_Lake_City_Cemetery.jpg/800px-Lilly_E._Gray_grave_-_Salt_Lake_City_Cemetery.jpg',
+          alt: 'Close-up of Lilly E. Gray\'s gravestone',
+          caption: 'The enigmatic gravestone of Lilly E. Gray in Salt Lake City Cemetery, bearing the inscription "Victim of the Beast 666."',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'For decades, visitors have stood before this grave and wondered. Was Lilly Gray murdered by a Satanic cult? Did she die in some occult ritual? Was she possessed by demons, driven to suicide by supernatural forces, sacrificed to dark powers? The internet overflows with speculation. Ghost hunters include the grave on their tours. True crime podcasts have devoted episodes to the mystery. The inscription seems to promise something terrible, something hidden, something that someone wanted carved in stone forever.',
         },
@@ -75,6 +82,13 @@ export const victimOfTheBeast: Article = {
           content: 'The second discovery was more illuminating. Lilly Gray was married to a man named Elmer Lewis Gray. And Elmer Gray was, to put it gently, not well.',
         },
         {
+          type: 'image',
+          src: 'https://images.findagrave.com/photos/2012/105/88636183_133469113619.jpg',
+          alt: 'Elmer Lewis Gray, husband of Lilly E. Gray',
+          caption: 'Elmer Lewis Gray, whose paranoia and grievances against the government led him to commission the enigmatic gravestone for his wife, Lilly E. Gray.',
+          credit: 'Find a Grave',
+        },
+        {
           type: 'paragraph',
           content: 'Elmer had a long history of run-ins with authority. He had been arrested multiple times, spent time in prison, and developed an intense paranoia about the government. He believed that he was the victim of a vast conspiracy involving Democratic politicians, law enforcement, and various shadowy forces. He once claimed to have been kidnapped by five Democratic officials who tortured him for three days.',
         },
@@ -117,6 +131,13 @@ export const victimOfTheBeast: Article = {
         {
           type: 'paragraph',
           content: 'For people who came to Lilly Gray\'s grave hoping for a genuine mystery, the truth is inevitably disappointing. There\'s no cult. There\'s no murder. There\'s no supernatural explanation. There\'s just a mentally ill man who blamed the government for everything wrong in his life, including his wife\'s natural death, and who expressed that belief in the only permanent medium available to him.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Salt_Lake_City_Cemetery_View_Looking_East.JPG/1280px-Salt_Lake_City_Cemetery_View_Looking_East.JPG',
+          alt: 'View of Salt Lake City Cemetery',
+          caption: 'A view across the sprawling grounds of Salt Lake City Cemetery, where Lilly E. Gray\'s enigmatic gravestone draws curious visitors.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
