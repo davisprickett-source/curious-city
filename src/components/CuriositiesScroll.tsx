@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { VideoScrubber } from './VideoScrubber'
@@ -270,8 +270,8 @@ function VideoAnimationCuriosity({ item, index, onSectionInView }: { item: Curio
           <div className="flex items-start gap-6 mb-6">
             {/* Number badge */}
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
-                <span className="text-xl font-bold text-white">{index + 1}</span>
+              <div className={`w-12 h-12 rounded-full ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-md`}>
+                <span className="text-xl font-bold ${categoryStyles.text}">{index + 1}</span>
               </div>
             </div>
 
@@ -389,7 +389,7 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
   }, [inView, index, onSectionInView])
 
   // Animation variants - MUCH slower, more dramatic (no rotation)
-  const numberVariants = {
+  const _numberVariants = {
     hidden: { opacity: 0, scale: 0.5, y: 100 },
     visible: {
       opacity: 1,
@@ -469,8 +469,8 @@ function CuriositySection({ item, index, onSectionInView }: { item: CuriosityIte
               <div className="flex items-start gap-4 mb-4">
                 {/* Number Badge */}
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-12 h-12 rounded-full bg-accent-600 flex items-center justify-center shadow-md">
-                    <span className="text-xl font-bold text-white">{index + 1}</span>
+                  <div className={`w-12 h-12 rounded-full ${categoryStyles.bg} border-2 ${categoryStyles.accent} flex items-center justify-center shadow-md`}>
+                    <span className={`text-xl font-bold ${categoryStyles.text}`}>{index + 1}</span>
                   </div>
                 </div>
 
