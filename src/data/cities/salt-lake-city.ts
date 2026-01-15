@@ -972,6 +972,7 @@ export const salt_lake_city: CityData = {
           coordinates: { lat: 40.7781, lng: -111.8877 },
           price: '$',
           hours: 'Mon-Fri 7am-2pm, Sat-Sun 8:30am-2:30pm',
+          website: 'https://cafeon1st.com',
           instagram: '@cafeon1st',
           images: [
             {

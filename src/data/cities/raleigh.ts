@@ -947,6 +947,7 @@ export const raleigh: CityData = {
           coordinates: { lat: 35.7874, lng: -78.6318 },
           price: '$$',
           hours: 'Mon-Thu 4pm-midnight, Fri-Sat 4pm-2am, Sun 2pm-midnight',
+          website: 'https://williamandcompany.com',
           instagram: '@williamandcompany',
           images: [
             {

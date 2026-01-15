@@ -123,7 +123,7 @@ function CitiesDropdown() {
               <motion.div key={city.slug} variants={itemVariants}>
                 <Link
                   href={routes.city(city.slug)}
-                  className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors no-underline"
+                  className="block px-4 py-2 text-sm text-neutral-700 hover:bg-accent-50 hover:text-accent-700 transition-colors no-underline !min-h-0 !min-w-0"
                 >
                   {city.name}
                 </Link>

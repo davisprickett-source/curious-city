@@ -93,31 +93,15 @@ function CityItem({
         onClick={onClose}
         className="relative block px-4 py-2.5 text-sm transition-colors z-10"
       >
-        <motion.span
+        <span
           className={`
             inline-block transition-colors duration-75
             ${isActive ? 'text-accent-700 font-semibold' : '!text-neutral-700'}
             ${isHovered && !isActive ? '!text-accent-700' : ''}
           `}
-          initial={{ x: 0 }}
-          animate={{ x: isHovered ? 4 : 0 }}
-          transition={{ duration: 0.08, ease: 'easeOut' }}
         >
           {city.name}
-        </motion.span>
-
-        {/* Arrow indicator on hover */}
-        <motion.span
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-accent-500"
-          initial={{ opacity: 0, x: -8 }}
-          animate={{
-            opacity: isHovered ? 1 : 0,
-            x: isHovered ? 0 : -8
-          }}
-          transition={{ duration: 0.08, ease: 'easeOut' }}
-        >
-          →
-        </motion.span>
+        </span>
       </Link>
     </motion.div>
   )

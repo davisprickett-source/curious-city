@@ -684,18 +684,6 @@ export const fargo: CityData = {
       intro: 'For decades, Fargo dining was a binary choice between "chain restaurant" and "church basement." That era is over. The current scene is a collision of James Beard-nominees, refugee-run kitchens, and farm-to-table spots that take the "farm" part literally because it\'s right there.',
       spots: [
         {
-          name: 'BernBaum\'s',
-          neighborhood: 'Downtown',
-          vibe: 'A Jewish-Icelandic deli fusion that sounds like a joke but is actually a miracle.',
-          order: 'The "Lox & Latkes" or any of the daily bagels.',
-          why: 'BernBaum’s is proof that the Red River Valley can produce world-class culinary weirdness. Chef Andrea Baumgardner combines her Jewish heritage with Icelandic influences (long story) to create what is easily the best breakfast and lunch spot in the state. Housed in a mid-century modern space that feels like a meticulously curated set from a Wes Anderson movie, it serves bagels that would make a New Yorker weep. It shouldn’t work, but it does, beautifully.',
-          address: '402 Broadway N, Fargo, ND 58102',
-          coordinates: { lat: 46.8781, lng: -96.7898 },
-          price: '$$',
-          hours: 'Permanently Closed',
-          instagram: '@bernbaums',
-        },
-        {
           name: 'Mezzaluna',
           neighborhood: 'Downtown',
           vibe: 'The "grown-up" choice: high ceilings, white tablecloths, and a 1917 warehouse soul.',
@@ -791,6 +779,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8785, lng: -96.7895 },
           price: '$$',
           hours: 'Daily 7am-6pm',
+          website: 'https://youngbloodcoffee.com/',
           instagram: '@youngbloodcoffee',
         },
         {
@@ -833,6 +822,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8772, lng: -96.7894 },
           hours: '8am-3pm daily',
           price: '$$',
+          website: 'https://www.blackcoffeeandwaffle.com/',
           instagram: '@blackcoffeeandwafflebar',
         },
       ],

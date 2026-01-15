@@ -126,12 +126,15 @@ export function UnifiedNav({
               <Link
                 key={section.id}
                 href={href}
-                className={`px-3 py-2 text-base font-medium rounded-lg transition-colors ${isActive
-                  ? 'bg-accent-50 text-accent-700'
-                  : 'text-neutral-700 hover:text-accent-700 hover:bg-accent-50'
+                className={`group relative px-3 py-2 text-base font-medium transition-colors !min-h-0 !min-w-0 ${isActive
+                  ? 'text-accent-600'
+                  : 'text-neutral-700 hover:text-neutral-900'
                   }`}
               >
                 {section.label}
+                {!isActive && (
+                  <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-accent-600 transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                )}
               </Link>
             )
           })}

@@ -819,7 +819,8 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2175, lng: -149.8878 },
           price: '$$',
           hours: 'Temporarily closed',
-          website: 'http://williwawsocial.com/',
+          website: 'https://williwawsocial.com/blues-central/',
+          instagram: '@williwawsocial',
           images: [
             {
               src: '/anchorage/bars/blues-central-1.jpg',
@@ -885,7 +886,8 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2173, lng: -149.8856 },
           price: '$',
           hours: 'Mon-Sun 10am-2:30am (Fri-Sat til 3am)',
-          website: 'https://www.anchorage.net/listings/darwins-theory/36024/',
+          website: 'https://www.facebook.com/darwinstheoryanchorage/',
+          instagram: '@darwinstheoryak',
           images: [
             {
               src: '/anchorage/establishments/darin-1.png',
@@ -1144,6 +1146,7 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2061, lng: -149.8711 },
           hours: 'Mon-Fri 7am-6pm, Sat-Sun 8am-5pm',
           price: '$$',
+          website: 'https://www.darkhorsecoffeeco.com/',
           instagram: '@darkhorsecoffeeanchorage',
           images: [
             {
@@ -1179,6 +1182,8 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2181, lng: -149.8928 },
           hours: 'Mon-Sat 7am-9pm, Sun 8am-6pm',
           price: '$',
+          website: 'https://www.thekobuk.com/',
+          instagram: '@thekobuk',
           images: [
             {
               src: '/anchorage/coffee-shops/kobuk-1.jpg',
@@ -1204,6 +1209,7 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.1958, lng: -149.8983 },
           hours: 'Daily 6am-6pm',
           price: '$',
+          website: 'https://www.spenardjoes.com/',
           instagram: '@spenardjoes',
           images: [
             {

@@ -1245,6 +1245,7 @@ export const denver: CityData = {
           coordinates: { lat: 39.7400, lng: -104.9230 },
           hours: '7am-4pm daily',
           price: '$$',
+          website: 'https://www.dandylioncoffee.com/',
           instagram: '@dandylioncoffee',
           image: {
             src: '',

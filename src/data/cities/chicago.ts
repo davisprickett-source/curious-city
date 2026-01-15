@@ -1135,6 +1135,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9114, lng: -87.6344 },
           hours: '12pm-4am Mon-Fri, 12pm-5am Sat, 12pm-4am Sun',
           price: '$',
+          website: 'https://theoldtownalehouse.com/',
           instagram: '@oldtownalehouse',
           images: [
             {
@@ -1215,7 +1216,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9760, lng: -87.6684 },
           hours: '11am-2am Mon-Sat, 11am-12am Sun',
           price: '$',
-          website: 'https://andersonville.org/business-directory/simons-tavern/',
+          website: 'https://www.facebook.com/Simons-Tavern-115622031792120/',
           instagram: '@simonstavern',
           image: {
             src: '/chicago/bars/simons-1.png',
@@ -1246,6 +1247,8 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9118, lng: -87.6748 },
           hours: '7am-6pm daily',
           price: '$$',
+          website: 'https://www.cafeintegral.com/',
+          instagram: '@cafeintegral',
         },
         {
           name: 'Ipsento 606',
@@ -1257,6 +1260,8 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9148, lng: -87.6796 },
           hours: '6:30am-7pm daily',
           price: '$$',
+          website: 'https://ipsento.com/',
+          instagram: '@ipsento',
         },
         {
           name: 'Sawada Coffee',
@@ -1268,6 +1273,8 @@ export const chicago: CityData = {
           coordinates: { lat: 41.8839, lng: -87.6488 },
           hours: '8am-4pm Mon-Fri, 9am-4pm Sat-Sun',
           price: '$$',
+          website: 'https://sawadacoffee.com/',
+          instagram: '@sawadacoffee',
         },
         {
           name: 'The Coffee Studio',
@@ -1279,6 +1286,8 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9842, lng: -87.6686 },
           hours: '6:30am-5pm Mon-Fri, 7am-5pm Sat-Sun',
           price: '$',
+          website: 'https://thecoffeestudio.com/',
+          instagram: '@thecoffeestudio',
         }
       ],
     },
@@ -1491,6 +1500,8 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9097, lng: -87.8159 },
           hours: '7am-7pm Mon-Sat, closed Sun',
           price: '$',
+          website: 'https://www.facebook.com/JohnniesBeef/',
+          instagram: '@johnniesbeef',
           images: [
             {
               src: '/chicago/restaurants/johnnies-1.png',
@@ -1622,6 +1633,7 @@ export const chicago: CityData = {
           hours: '10am-10pm daily',
           price: '$',
           website: 'https://www.portillos.com',
+          instagram: '@portilloshotdogs',
           images: [
             {
               src: '/chicago/restaurants/portillos-1.png',

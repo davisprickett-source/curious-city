@@ -2077,6 +2077,8 @@ export const minneapolis: CityData = {
           coordinates: { lat: 44.9195, lng: -93.1947 },
           hours: '6:30am-6pm daily',
           price: '$$',
+          website: 'https://quixoticcoffee.com/',
+          instagram: '@quixoticcoffee',
           image: {
             src: '',
             alt: 'Spacious cafe with big windows and long tables',
@@ -2092,6 +2094,8 @@ export const minneapolis: CityData = {
           coordinates: { lat: 44.9217, lng: -93.2785 },
           hours: '7am-5pm daily',
           price: '$$',
+          website: 'https://fivewattcoffee.com/',
+          instagram: '@fivewattcoffee',
           image: {
             src: '',
             alt: 'Third-wave specialty coffee with espresso bar',
@@ -2107,21 +2111,25 @@ export const minneapolis: CityData = {
           coordinates: { lat: 44.9927, lng: -93.2564 },
           hours: '7am-4pm daily',
           price: '$$',
+          website: 'https://misfitcoffee.com/',
+          instagram: '@misfitcoffee',
           image: {
             src: '',
             alt: 'Industrial coffee shop with natural light',
           },
         },
         {
-          name: 'Diamondback Coffee',
+          name: 'Seward Cafe',
           neighborhood: 'Seward',
           vibe: 'Cozy, slightly weird, and unapologetically local.',
           order: 'Drip coffee and a slice of whatever pie they have.',
-          why: 'A co-op neighbor coffee shop that feels like stepping into someone\'s eccentric living room. In a city increasingly full of "curated" spaces, Diamondback is refreshingly messy, unapologetically local, and arguably one of the few places left where you can drink a drip coffee while listening to a genuine political debate at the next table.',
+          why: 'A co-op neighbor coffee shop that feels like stepping into someone\'s eccentric living room. In a city increasingly full of "curated" spaces, Seward Cafe is refreshingly messy, unapologetically local, and arguably one of the few places left where you can drink a drip coffee while listening to a genuine political debate at the next table.',
           address: '2212 E Franklin Ave, Minneapolis, MN 55404',
           coordinates: { lat: 44.9622, lng: -93.2366 },
           hours: '7am-3pm daily',
           price: '$',
+          website: 'https://sewardcafe.com/',
+          instagram: '@seward_cafe',
           image: {
             src: '',
             alt: 'Cozy neighborhood coffee shop with eclectic decor',
@@ -2361,9 +2369,9 @@ export const minneapolis: CityData = {
           why: 'Matt’s Bar is a living museum of the American burger. In 1954, a regular walked in and asked for "two patties with cheese in the middle," and Matt Bristol crimped the edges to create the first Jucy Lucy. The misspelled name—allegedly born from a customer’s exclamation upon biting into the molten core—is now a trademark of Minneapolis culture. The space remains a low-ceilinged, wood-paneled dive where cash is the only currency and the grill has a patina of flavor that no modern kitchen can replicate. You are warned to wait before biting into the patty; the American cheese inside is served at the temperature of lava, and the "baptism by grease" is a rite of passage for every local. It is simple, unpretentious, and arguably the most important meal in the Twin Cities.',
           address: '3500 Cedar Ave S, Minneapolis, MN 55407',
           coordinates: { lat: 44.9356, lng: -93.2472 },
-          hours: '11am-midnight daily',
-          price: '$',
+          hours: 'Daily 11am-10pm',
           website: 'https://mattsbar.com',
+          instagram: '@mattsbar_mpls',
           images: [
             {
               src: '/minneapolis/restaurants/matts-1.png',
@@ -2539,6 +2547,7 @@ export const minneapolis: CityData = {
           hours: '11am-9pm daily',
           price: '$$',
           website: 'https://www.brasa.us',
+          instagram: '@brasarotisserie',
           images: [
             {
               src: '/minneapolis/restaurants/brasa-1.png',

@@ -1230,6 +1230,7 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4902, lng: -112.0736 },
           hours: '7am-2pm daily',
           price: '$$',
+          website: 'https://www.bangbangcoffee.com/',
           instagram: '@bangbangcoffeebar',
           images: [
             {
@@ -1368,6 +1369,7 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4586, lng: -112.0689 },
           price: '$$',
           website: 'https://tacochelo.com/',
+          instagram: '@tacochelo',
           image: {
             src: '/phoenix/restaurants/taco-chelo-1.jpg',
             alt: 'Artful handmade tacos on Roosevelt Row',
@@ -1382,7 +1384,9 @@ export const phoenix: CityData = {
           address: '1830 W Glendale Ave, Phoenix, AZ 85021',
           coordinates: { lat: 33.5376, lng: -112.1014 },
           price: '$',
-          website: 'https://www.yelp.com/biz/restaurant-atoyac-estilo-oaxaca-phoenix',
+          // Note: This restaurant primarily uses third-party platforms like Yelp/DoorDash for its online presence.
+          // website: 'https://restaurantatoyac.com/', // No official website found
+          // instagram: '@restaurantatoyac', // No official Instagram found
           image: {
             src: '/phoenix/restaurants/atoyac-tlayuda.jpg',
             alt: 'Authentic Oaxacan tlayuda and mole',

@@ -24,7 +24,7 @@ export function CityNav({ citySlug, currentSection }: CityNavProps) {
                 key={section.id}
                 href={href}
                 className={`
-                  group relative inline-block px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors
+                  group relative inline-block px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors !min-h-0 !min-w-0
                   ${isActive
                     ? 'text-accent-600'
                     : 'text-neutral-600 hover:text-neutral-900'
