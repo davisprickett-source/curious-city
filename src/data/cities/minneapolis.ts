@@ -2781,61 +2781,10 @@ export const minneapolis: CityData = {
       intro: 'Minnesota Nice has a dark side. Between the skyways and the frozen river, Minneapolis harbors cold cases that span generations, bodies scattered like breadcrumbs across the city, and mysteries that won\'t stay buried—even when some of them literally won\'t stay buried.',
       items: [
         {
-          id: 'mpls-dark-2',
-          type: 'dark-history',
-          featured: true,
-          featuredOrder: 4,
-          category: 'unsolved',
-          year: '2021',
-          title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
-          body: 'On June 17, 2021, someone called 911 to report human remains behind the Ukrainian American Community Center near the Mississippi River. A few hours later, more remains turned up at NE 3rd and University. Five days after that, on June 22nd, a passerby discovered something on a bench at East Franklin Avenue and West River Parkway: the severed head of 36-year-old Adam Richard Johnson. The word "PERV" had been carved into his forehead. Police said the head appeared to have been frozen, then left to thaw in public view.\n\nOn July 4th—because holidays mean nothing to killers—more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when he was murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim—a conclusion that feels unnecessary when someone carves "PERV" into a frozen forehead and leaves it on a park bench.\n\nMinneapolis police spokesperson John Elder confirmed that some body parts remain unaccounted for. Despite the brazen public display across multiple high-traffic sites, no arrests have been made. The investigation remains open, which is police-speak for "we have no idea."',
-          verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
-          location: {
-            name: 'Multiple locations along Mississippi River, Minneapolis',
-            stillExists: true,
-            coordinates: { lat: 44.9889, lng: -93.2547 },
-          },
-          sources: [
-            {
-              type: 'article',
-              title: 'Gruesome Details in Minneapolis Dismemberment Case',
-              publisher: 'KARE11',
-              year: '2021',
-              url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
-            },
-            {
-              type: 'article',
-              title: 'Adam Johnson Murder: Still Unsolved',
-              publisher: 'Star Tribune',
-              year: '2022',
-              url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/',
-            },
-            {
-              type: 'article',
-              title: 'Severed Head With "Perv" Carved Into Forehead',
-              publisher: 'Medium',
-              author: 'Cat Leigh',
-              year: '2021',
-              url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5',
-            },
-            {
-              type: 'article',
-              title: 'Minneapolis Police Seek Help in Adam Johnson Case',
-              publisher: 'Fox 9',
-              year: '2021',
-              url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
-            },
-          ],
-          images: [
-            {
-              src: '/minneapolis/dark-history/adam%20johnson.png',
-              alt: 'Adam Richard Johnson',
-            }
-          ],
-        },
-        {
           id: 'mpls-dark-1',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
           category: 'unsolved',
           year: '1951',
           title: 'Three Brothers Walked to the Park. They Never Came Home.',
@@ -2888,6 +2837,59 @@ export const minneapolis: CityData = {
             {
               src: '/minneapolis/dark-history/klein-brothers-family.png',
               alt: 'Klein Brothers family photo - Kenneth Jr., David, and Danny',
+            }
+          ],
+        },
+        {
+          id: 'mpls-dark-2',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 2,
+          category: 'unsolved',
+          year: '2021',
+          title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
+          body: 'On June 17, 2021, someone called 911 to report human remains behind the Ukrainian American Community Center near the Mississippi River. A few hours later, more remains turned up at NE 3rd and University. Five days after that, on June 22nd, a passerby discovered something on a bench at East Franklin Avenue and West River Parkway: the severed head of 36-year-old Adam Richard Johnson. The word "PERV" had been carved into his forehead. Police said the head appeared to have been frozen, then left to thaw in public view.\n\nOn July 4th—because holidays mean nothing to killers—more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when he was murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim—a conclusion that feels unnecessary when someone carves "PERV" into a frozen forehead and leaves it on a park bench.\n\nMinneapolis police spokesperson John Elder confirmed that some body parts remain unaccounted for. Despite the brazen public display across multiple high-traffic sites, no arrests have been made. The investigation remains open, which is police-speak for "we have no idea."',
+          verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
+          location: {
+            name: 'Multiple locations along Mississippi River, Minneapolis',
+            stillExists: true,
+            coordinates: { lat: 44.9889, lng: -93.2547 },
+          },
+          sources: [
+            {
+              type: 'article',
+              title: 'Gruesome Details in Minneapolis Dismemberment Case',
+              publisher: 'KARE11',
+              year: '2021',
+              url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
+            },
+            {
+              type: 'article',
+              title: 'Adam Johnson Murder: Still Unsolved',
+              publisher: 'Star Tribune',
+              year: '2022',
+              url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/',
+            },
+            {
+              type: 'article',
+              title: 'Severed Head With "Perv" Carved Into Forehead',
+              publisher: 'Medium',
+              author: 'Cat Leigh',
+              year: '2021',
+              url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5',
+            },
+            {
+              type: 'article',
+              title: 'Minneapolis Police Seek Help in Adam Johnson Case',
+              publisher: 'Fox 9',
+              year: '2021',
+              url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
+            },
+          ],
+          images: [
+            {
+              src: '/minneapolis/dark-history/adam%20johnson.png',
+              alt: 'Adam Richard Johnson',
             }
           ],
         },
@@ -3073,7 +3075,7 @@ export const minneapolis: CityData = {
           id: 'mpls-dark-6',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 1,
+          featuredOrder: 3,
           category: 'crime',
           year: '2020',
           title: 'The Corner That Became a Country\'s Reckoning',

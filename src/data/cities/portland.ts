@@ -479,6 +479,124 @@ export const portland: CityData = {
           price: '$14 adults',
           website: 'https://lansugarden.org',
           tip: 'The tea service is worth the extra cost',
+        },
+        {
+          id: 'iconic-6',
+          type: 'iconic-spot',
+          name: 'Mississippi Avenue',
+          category: 'Neighborhood',
+          description: 'A vibrant and historic street in North Portland, known for its independent boutiques, diverse restaurants, lively bars, and thriving music scene. Less touristy than Alberta Street, but equally curated and embodying a quintessential Portland neighborhood vibe.',
+          images: [
+            {
+              src: 'https://picsum.photos/seed/mississippi-avenue-portland/800/600', // Placeholder
+              alt: 'Mississippi Avenue storefronts and street scene',
+            }
+          ],
+          address: 'N Mississippi Ave between Fremont and Skidmore',
+          coordinates: { lat: 45.5497, lng: -122.6756 },
+          hours: 'Businesses vary',
+          price: 'Free to explore',
+          tip: 'Explore the independent shops and grab a bite at one of the many unique restaurants.',
+          website: 'https://mississippiave.org',
+        },
+        {
+          id: 'iconic-7',
+          type: 'iconic-spot',
+          name: 'Old Town Pizza & Shanghai Tunnels',
+          category: 'Historic Site',
+          description: 'Explore the legendary Shanghai Tunnels beneath Old Town, with a tour starting from the historic Old Town Pizza. These tunnels are shrouded in myths of shanghaiing, connecting basements to the waterfront, and are considered one of America\'s Most Haunted Places.',
+          images: [
+            {
+              src: 'https://picsum.photos/seed/shanghai-tunnels-portland/800/600', // Placeholder
+              alt: 'Old Town Pizza above the historic Shanghai Tunnels',
+            }
+          ],
+          address: '226 NW Davis St, Portland, OR 97209',
+          coordinates: { lat: 45.5244, lng: -122.6728 },
+          hours: 'Tours by reservation',
+          price: 'Tour prices vary',
+          website: 'https://shanghaitunnels.com',
+          tip: 'Book the evening ghost tour for the full experience.',
+        },
+        {
+          id: 'iconic-8',
+          type: 'iconic-spot',
+          name: 'Ota Tofu',
+          category: 'Historic Establishment',
+          description: 'America\'s oldest tofu shop, opened 1911. A remarkable story of resilience and compassion, as the business was held for the co-owner\'s wife until her return from WWII internment.',
+          images: [
+            {
+              src: '/portland/hidden-gems/ota-tofu.png',
+              alt: 'Ota Tofu shop',
+            }
+          ],
+          address: '529 SE Grand Ave, Portland, OR 97214',
+          coordinates: { lat: 45.5167, lng: -122.6606 },
+          hours: 'Mon-Sat 8am-5pm',
+          price: 'Fresh tofu $3-5',
+          website: 'https://www.otatofu.com',
+          tip: 'Buy fresh tofu and support this historic family business.',
+        },
+        {
+          id: 'iconic-9',
+          type: 'iconic-spot',
+          name: 'National Hat Museum',
+          category: 'Specialty Museum',
+          description: 'The only hat museum in America, featuring over 2,300 hats dating back to the 1800s. Tours by appointment only, offering a unique glimpse into headwear history.',
+          images: [
+            {
+              src: '/portland/hidden-gems/hat-museum.png',
+              alt: 'National Hat Museum collection',
+            }
+          ],
+          address: '1928 SE Ladd Ave, Portland, OR 97214',
+          coordinates: { lat: 45.5083, lng: -122.6447 },
+          hours: 'By appointment only',
+          price: '$15',
+          website: 'https://thehatmuseum.com',
+          tip: 'Book weeks in advance - tours fill quickly.',
+        },
+        {
+          id: 'iconic-10',
+          type: 'iconic-spot',
+          name: 'Hippo Hardware',
+          category: 'Salvage Store',
+          description: 'A massive three-floor salvage store filled with vintage fixtures from 1860-1960, including pieces from demolished Portland landmarks. Famous for its collection of hundreds of hippo figurines.',
+          images: [
+            {
+              src: '/portland/hidden-gems/hippo.png',
+              alt: 'Hippo Hardware interior with hippo collection',
+            }
+          ],
+          address: '1040 E Burnside St, Portland, OR 97214',
+          coordinates: { lat: 45.5231, lng: -122.6547 },
+          hours: 'Wed-Sun 10am-5pm',
+          price: 'Free to browse',
+          website: 'https://www.hippohardware.com',
+          tip: 'Count how many hippos you can spot while browsing unique salvaged items.',
+        },
+        {
+          id: 'iconic-11',
+          type: 'iconic-spot',
+          name: 'Leach Botanical Garden',
+          category: 'Botanical Garden',
+          description: 'A 17-acre botanical garden tucked away by Johnson Creek, featuring an aerial tree walk, four-season pollinator garden, and diverse plant collections. A serene escape often missed by those passing by.',
+          images: [
+            {
+              src: '/portland/hidden-gems/botanical-1.png',
+              alt: 'Leach Botanical Garden paths',
+            },
+            {
+              src: '/portland/hidden-gems/botanical-2.png',
+              alt: 'Leach Botanical Garden scenery',
+            }
+          ],
+          address: '6704 SE 122nd Ave, Portland, OR 97236',
+          coordinates: { lat: 45.4797, lng: -122.5378 },
+          hours: 'Tue-Sun 10am-4pm',
+          price: '$8 adults/$5 youth (free admission available by request)',
+          website: 'https://leachgarden.org',
+          tip: 'A secret garden hiding in plain sight, perfect for a peaceful afternoon.',
         }
       ],
     },
@@ -525,35 +643,164 @@ export const portland: CityData = {
                         }
                       ],
                     },        {
-          id: 'gem-underground-2',
-          type: 'hidden-gem',
-          name: 'Old Town Pizza Shanghai Tunnels',
-          category: 'Underground',
-          description: 'The 1880 luxury Merchant Hotel lobby is now Old Town Pizza, built directly above Portland\'s Shanghai Tunnels. Tours go into the shadowy basement connecting to underground pathways allegedly used for "shanghaiing" sailors. Named one of America\'s Most Haunted Places.',
-          images: [
-            {
-              src: '/portland/curiosities/shanghai-tunnels.png',
-              alt: 'Shanghai Tunnels beneath Old Town',
-            }
-          ],
-          address: '226 NW Davis St, Portland, OR 97209',
-          coordinates: { lat: 45.5244, lng: -122.6728 },
-          hours: 'Tours by reservation',
-          price: 'Tour prices vary',
-          website: 'https://shanghaitunnels.com',
-          tip: 'Book the evening ghost tour for the full experience',
-        },
-        {
           id: 'gem-ad-1',
           type: 'ad',
           size: 'banner',
         },
         {
-          id: 'gem-history-1',
-          type: 'hidden-gem',
-          name: 'Lone Fir Cemetery - Block 14',
-          category: 'Historic Mystery',
-          description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
+                      id: 'gem-museums-new-1',
+                      type: 'hidden-gem',
+                      name: 'Freakybuttrue Peculiarium',
+                      category: 'Unusual Museum',
+                      description: 'An offbeat emporium showcasing Bigfoot, paranormal exhibits, and alien autopsies. Many items, including sculptures and artwork, are for sale. It\'s a truly unique and bizarre experience.',
+                      images: [
+                        {
+                          src: '/portland/hidden-gems/peculiarium.png', // Placeholder image
+                          alt: 'Exterior of Freakybuttrue Peculiarium',
+                        }
+                      ],
+                      address: '2234 NW Thurman St, Portland, OR 97210', // Found address from web
+                      coordinates: { lat: 45.5398, lng: -122.6998 }, // Approx coordinates
+                      hours: 'Wed-Sun 11am-6pm', // Typical museum hours, might need verification
+                      price: 'Free admission', // Typically free, donations encouraged
+                      website: 'https://peculiarium.com/', // Found website from web
+                      tip: 'Be prepared for the bizarre and don\'t be afraid to ask about the Bigfoot lore.',
+                      sources: [
+                        {
+                          title: 'Freakybuttrue Peculiarium',
+                          publisher: 'Atlas Obscura',
+                          url: 'https://www.atlasobscura.com/places/peculiarium',
+                        },
+                        {
+                          title: 'Freakybuttrue Peculiarium',
+                          publisher: 'Peculiarium.com',
+                          url: 'https://peculiarium.com/',
+                        }
+                      ],
+                    },
+                            {
+                              id: 'gem-landmark-1',
+                              type: 'hidden-gem',
+                              name: 'Witch\'s Castle (Stone House)',
+                              category: 'Historic Landmark',
+                              description: 'A moss-covered stone structure in Forest Park, built in the 1930s by the WPA. While not a true castle, its secluded, dilapidated charm and local legends make it a popular hiking destination and a true hidden gem.',
+                              images: [
+                                {
+                                  src: '/portland/hidden-gems/witchs-castle.png', // Placeholder image
+                                  alt: 'Witch\'s Castle in Forest Park',
+                                }
+                              ],
+                              address: 'Forest Park (accessible via Lower Macleay Trail)', // General location
+                              coordinates: { lat: 45.5399, lng: -122.7214 }, // Approx coordinates
+                              hours: 'Dawn to Dusk',
+                              price: 'Free',
+                              tip: 'Wear comfortable shoes for the hike; bring a flashlight for exploring if daring.',
+                              sources: [
+                                {
+                                  title: 'Witch\'s Castle in Forest Park',
+                                  publisher: 'Atlas Obscura',
+                                  url: 'https://www.atlasobscura.com/places/witches-castle',
+                                },
+                                {
+                                  title: 'Exploring Portland\'s Witch\'s Castle',
+                                  publisher: 'Oregon Hikers',
+                                  url: 'https://www.oregonhikers.org/field_guide/Witch%27s_Castle_in_Forest_Park',
+                                }
+                              ],
+                            },
+                {
+                              id: 'gem-religious-1',
+                              type: 'hidden-gem',
+                              name: 'The Grotto (National Sanctuary of Our Sorrowful Mother)',
+                              category: 'Spiritual/Nature',
+                              description: 'A 62-acre Roman Catholic outdoor sanctuary and botanical garden featuring a cave shrine, beautiful cliffside gardens, and stunning views of the Columbia River. A peaceful retreat often overlooked by tourists.',
+                              images: [
+                                {
+                                  src: '/portland/hidden-gems/the-grotto.png', // Placeholder image
+                                  alt: 'The Grotto - cliffside view',
+                                }
+                              ],
+                              address: '8801 NE Skidmore St, Portland, OR 97220',
+                              coordinates: { lat: 45.5683, lng: -122.5854 },
+                              hours: 'Daily 9am-5pm (Chapel open until 8pm)',
+                              price: 'Free (Upper level gardens require admission)',
+                              website: 'https://thegrotto.org/',
+                              tip: 'Visit the free lower level grounds for a peaceful experience, or pay admission for the upper gardens and views.',
+                              sources: [
+                                {
+                                  title: 'The Grotto - National Sanctuary of Our Sorrowful Mother',
+                                  publisher: 'The Grotto',
+                                  url: 'https://thegrotto.org/',
+                                },
+                                {
+                                  title: 'The Grotto, Portland',
+                                  publisher: 'Atlas Obscura',
+                                  url: 'https://www.atlasobscura.com/places/the-grotto',
+                                }
+                              ],
+                            },
+        {
+                      id: 'gem-museums-new-2',
+                      type: 'hidden-gem',
+                      name: 'Portland Puppet Museum',
+                      category: 'Niche Museum',
+                      description: 'A small, independent museum dedicated to the art of puppetry from around the world. Features a diverse collection of puppets and offers workshops and performances. A charmingly unique cultural experience.',
+                      images: [
+                        {
+                          src: '/portland/hidden-gems/puppet-museum.png', // Placeholder image
+                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                        }
+                      ],
+                      address: '900 SE Salmon St, Portland, OR 97214', // Found address from web
+                      coordinates: { lat: 45.5143, lng: -122.6596 }, // Approx coordinates
+                      hours: 'Fri-Sun 12pm-5pm', // Typical museum hours, might need verification
+                      price: '$5 admission', // Placeholder price
+                      website: 'https://www.portlandpuppetmuseum.com/', // Found website from web
+                      tip: 'Check their website for current shows and workshops.',
+                      sources: [
+                        {
+                          title: 'Portland Puppet Museum',
+                          publisher: 'Portland Puppet Museum',
+                          url: 'https://www.portlandpuppetmuseum.com/',
+                        },
+                        {
+                          title: 'Portland Puppet Museum',
+                          publisher: 'Atlas Obscura',
+                          url: 'https://www.atlasobscura.com/places/portland-puppet-museum',
+                        }
+                      ],
+                    },
+        {
+                      id: 'gem-quirky-new-1',
+                      type: 'hidden-gem',
+                      name: 'Wyrd Leatherworks and Meadery',
+                      category: 'Unique Experience/Food & Drink',
+                      description: 'A medieval fantasy-themed hall offering mead made with local honey, handcrafted leather goods, and a unique immersive atmosphere. Step into another world for a drink and browse artisan crafts.',
+                      images: [
+                        {
+                          src: '/portland/hidden-gems/wyrd-meadery.png', // Placeholder image
+                          alt: 'Interior of Wyrd Leatherworks and Meadery with medieval decor',
+                        }
+                      ],
+                      address: '8313 SE 13th Ave, Portland, OR 97202', // Found address from web
+                      coordinates: { lat: 45.4746, lng: -122.6468 }, // Approx coordinates
+                      hours: 'Wed-Sun 4pm-9pm', // Typical hours, might need verification
+                      price: '$$', // Mead can be pricey
+                      website: 'https://www.wyrdleatherworks.com/', // Found website from web
+                      tip: 'Try a flight of mead and admire the craftsmanship of the leather goods.',
+                      sources: [
+                        {
+                          title: 'Wyrd Leatherworks and Meadery',
+                          publisher: 'Wyrd Leatherworks',
+                          url: 'https://www.wyrdleatherworks.com/',
+                        },
+                        {
+                          title: 'Wyrd Leatherworks and Meadery, Portland',
+                          publisher: 'Atlas Obscura',
+                          url: 'https://www.atlasobscura.com/places/wyrd-leatherworks-and-meadery',
+                        }
+                      ],
+                    },          description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
           images: [
             {
               src: '/portland/hidden-gems/cemetery.png',
@@ -608,37 +855,8 @@ export const portland: CityData = {
             }
           ],
         },
-        {
-          id: 'gem-history-3',
-          type: 'hidden-gem',
-          name: 'Ota Tofu',
-          category: 'Historic Site',
-          description: 'America\'s oldest tofu shop, opened 1911. During WWII internment, co-owner Saizo Ohta died at Minidoka camp. The building owner held the property until his wife Shina returned from internment in 1945, allowing Ota Tofu to restart. A remarkable story of resilience and compassion.',
-          images: [
-            {
-              src: '/portland/hidden-gems/ota-tofu.png',
-              alt: 'Ota Tofu shop',
-            }
-          ],
-          address: '529 SE Grand Ave, Portland, OR 97214',
-          coordinates: { lat: 45.5167, lng: -122.6606 },
-          hours: 'Mon-Sat 8am-5pm',
-          price: 'Fresh tofu $3-5',
-          website: 'https://www.otatofu.com',
-          tip: 'Buy fresh tofu and support this historic family business',
-          sources: [
-            {
-              title: 'Ota Tofu',
-              publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/ota_tofu/',
-            },
-            {
-              title: 'Ota Tofu — Portland, Oregon',
-              publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/ota-tofu',
-            }
-          ],
-        },
+
+
         {
           id: 'gem-museums-1',
           type: 'hidden-gem',
@@ -658,25 +876,7 @@ export const portland: CityData = {
           website: 'http://www.zymoglyphic.org',
           tip: 'Email ahead to arrange a private tour',
         },
-        {
-          id: 'gem-museums-2',
-          type: 'hidden-gem',
-          name: 'National Hat Museum',
-          category: 'Specialty Museum',
-          description: 'Only hat museum in America, located in historic Edwardian home near Ladd Circle. Over 2,300 hats on display dating back to 1800s. Tour by appointment only, limited to 5 people per 90-minute tour. Includes rare "Audobonnet" and 130-year-old beaver-fur felt top hats.',
-          images: [
-            {
-              src: '/portland/hidden-gems/hat-museum.png',
-              alt: 'National Hat Museum collection',
-            }
-          ],
-          address: '1928 SE Ladd Ave, Portland, OR 97214',
-          coordinates: { lat: 45.5083, lng: -122.6447 },
-          hours: 'By appointment only',
-          price: '$15',
-          website: 'https://thehatmuseum.com',
-          tip: 'Book weeks in advance - tours fill quickly',
-        },
+
         {
           id: 'gem-ad-2',
           type: 'ad',
@@ -795,96 +995,9 @@ export const portland: CityData = {
             }
           ],
         },
-        {
-          id: 'gem-quirky-4',
-          type: 'hidden-gem',
-          name: 'Hippo Hardware',
-          category: 'Salvage',
-          description: 'Three floors, 30,000 sq ft filled with hundreds of hippo figurines (virtually all customer gifts). Sells salvaged vintage fixtures from 1860-1960. Contains pieces from demolished Portland Hotel, City Hall, Central Library. "Keep Portland Weird" embodiment.',
-          images: [
-            {
-              src: '/portland/hidden-gems/hippo.png',
-              alt: 'Hippo Hardware interior with hippo collection',
-            }
-          ],
-          address: '1040 E Burnside St, Portland, OR 97214',
-          coordinates: { lat: 45.5231, lng: -122.6547 },
-          hours: 'Wed-Sun 10am-5pm',
-          price: 'Free to browse',
-          website: 'https://www.hippohardware.com',
-          tip: 'Count how many hippos you can spot',
-          sources: [
-            {
-              title: 'Hippo Hardware and Trading Company',
-              publisher: 'Hippo Hardware',
-              url: 'https://hippohardware.com',
-            }
-          ],
-        },
-        {
-          id: 'gem-ad-3',
-          type: 'ad',
-          size: 'banner',
-        },
-        {
-          id: 'gem-nature-1',
-          type: 'hidden-gem',
-          name: 'Leach Botanical Garden',
-          category: 'Hidden Garden',
-          description: 'Tucked behind busy SE 122nd Ave, 17 acres hugging Johnson Creek. Many drive past countless times unaware. Created by Lilla and John Leach starting 1932 at their "Sleepy Hollow" home. Features aerial tree walk, four-season pollinator garden, ferns.',
-          images: [
-            {
-              src: '/portland/hidden-gems/botanical-1.png',
-              alt: 'Leach Botanical Garden paths',
-            },
-            {
-              src: '/portland/hidden-gems/botanical-2.png',
-              alt: 'Leach Botanical Garden scenery',
-            }
-          ],
-          address: '6704 SE 122nd Ave, Portland, OR 97236',
-          coordinates: { lat: 45.4797, lng: -122.5378 },
-          hours: 'Tue-Sun 10am-4pm',
-          price: '$8 adults/$5 youth (free admission available by request)',
-          website: 'https://leachgarden.org',
-          tip: 'A secret garden hiding in plain sight',
-          sources: [
-            {
-              title: 'Leach Botanical Garden',
-              publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/parks/leach-botanical-garden',
-            },
-            {
-              title: 'Leach Botanical Garden',
-              publisher: 'Leach Garden',
-              url: 'https://leachgarden.org/',
-            }
-          ],
-        },
-        {
-          id: 'gem-nature-3',
-          type: 'hidden-gem',
-          name: 'Mississippi Avenue',
-          category: 'Neighborhood',
-          description: 'A strip of independent boutiques, record stores, bars, and restaurants in North Portland. Less touristy than Alberta Street but similarly curated. The Rebuilding Center is a sustainable salvage treasure.',
-          images: [
-            {
-              src: '/portland/hidden-gems/mississippie-avenue.png',
-              alt: 'Mississippi Avenue storefronts',
-            }
-          ],
-          address: 'N Mississippi Ave between Fremont and Skidmore',
-          coordinates: { lat: 45.5497, lng: -122.6756 },
-          hours: 'Businesses vary',
-          price: 'Free to explore',
-                        tip: 'Prost! for German beer, Interurban for cocktails',
-                        sources: [
-                          {
-                            title: 'Mississippi Avenue',
-                            publisher: 'Historic Mississippi Avenue',
-                            url: 'https://mississippiave.org',
-                          }
-                        ],        }
+
+
+
       ],
     },
     {

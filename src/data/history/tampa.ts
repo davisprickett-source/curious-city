@@ -83,7 +83,7 @@ export const tampa_history: Record<string, History> = {
         {
           id: 'p8',
           type: 'paragraph',
-          content: 'The hurricane risk is constant and largely ignored until it isn\'t. Tampa Bay has not taken a direct hit from a major hurricane since 1921, a century of near-misses that has allowed millions of people to build in flood zones and evacuation areas. The bay\'s shape funnels storm surge toward downtown, and models of a worst-case scenario show catastrophic flooding. The city knows this, plans for this, and continues to build along the waterfront anyway, because that\'s where people want to live and short-term profit consistently defeats long-term planning.',
+          content: 'The hurricane risk is constant, and in 2024, it ceased to be ignored. After a century of near-misses, the Tampa Bay area experienced the devastating impact of two major storms: Hurricane Helene, which skirted the coast causing significant surge, and Hurricane Milton, a Category 3 at landfall in Siesta Key, that brought record-breaking storm surge and destructive gusts directly to the region. This marked a profound shift from a history of luck, forcing millions in flood zones and evacuation areas to confront the reality of their vulnerability. The bay\'s funnel shape, long identified as a critical risk factor, led to catastrophic flooding in downtown and surrounding areas, a scenario long predicted by models of a worst-case storm. The city continues to build along the waterfront, but the events of 2024 have indelibly altered the calculus of short-term profit versus long-term planning.',
         },
         {
           id: 'ad2',
