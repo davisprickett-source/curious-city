@@ -15,6 +15,7 @@ export function ShareButton({ title, url }: ShareButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const getShareUrl = () => {
     if (url) return url
@@ -44,6 +45,21 @@ export function ShareButton({ title, url }: ShareButtonProps) {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [isOpen])
+
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current)
+      closeTimeoutRef.current = null
+    }
+    setIsOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    // Delay closing to allow moving to menu
+    closeTimeoutRef.current = setTimeout(() => {
+      setIsOpen(false)
+    }, 300)
+  }
 
   const handleCopyLink = async () => {
     try {
@@ -101,8 +117,8 @@ export function ShareButton({ title, url }: ShareButtonProps) {
     <div
       className="relative"
       ref={menuRef}
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -115,7 +131,11 @@ export function ShareButton({ title, url }: ShareButtonProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50">
+        <div
+          className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           {shareLinks.map((link) => (
             <a
               key={link.name}
@@ -131,7 +151,10 @@ export function ShareButton({ title, url }: ShareButtonProps) {
           ))}
           <hr className="my-2 border-neutral-100" />
           <button
-            onClick={handleCopyLink}
+            onClick={(e) => {
+              e.preventDefault()
+              handleCopyLink()
+            }}
             className="flex items-center gap-3 px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 transition-colors w-full text-left"
           >
             <span className="text-neutral-500">

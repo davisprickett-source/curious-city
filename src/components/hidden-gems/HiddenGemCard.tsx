@@ -197,6 +197,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
   const [isImageExpanded, setIsImageExpanded] = useState(false)
   const [expandedImageIndex, setExpandedImageIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
   const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
   const images = gem.images || (gem.image ? [gem.image] : [])
 
@@ -213,6 +214,8 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       variants={getCardVariants(index)}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
       style={{ borderTopColor: categoryStyles.borderColor }}
     >
@@ -246,7 +249,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
       {/* Right Column - Content (50%) - Scrollable */}
       <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-auto p-8 lg:p-10">
+        <div className={`flex-1 overflow-y-auto p-8 lg:p-10 ${isHovered ? 'pointer-events-auto' : 'pointer-events-none'}`}>
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -287,14 +290,14 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
             variants={detailsVariants}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center"
+            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center pointer-events-auto"
           >
             <ShareButton title={gem.name} url={url} />
           </motion.div>
         </div>
       </div>
 
-      {/* Expanded Image Overlay */}
+      {/* Expanded Image Overlay with Carousel */}
       <AnimatePresence>
         {isImageExpanded && images.length > 0 && (
           <motion.div
@@ -302,21 +305,20 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="absolute inset-0 z-50 rounded-3xl overflow-hidden"
-            onClick={() => setIsImageExpanded(false)}
+            className="absolute inset-0 z-50 rounded-3xl overflow-hidden bg-black/95"
           >
-            {/* Full Card Image - Covers Entire Space */}
+            {/* Full Card Image Carousel - Covers Entire Space */}
             <motion.div
               initial={{ scale: 0.95 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
               className="w-full h-full"
+              onClick={() => setIsImageExpanded(false)}
             >
-              <img
-                src={images[0]?.src}
-                alt={images[0]?.alt || gem.name}
-                className="w-full h-full object-cover"
+              <ImageCarousel
+                images={images}
+                className="h-full w-full rounded-none"
               />
             </motion.div>
 
