@@ -41,7 +41,7 @@ const getCardVariants = (index: number) => ({
   hidden: {
     opacity: 0,
     y: 30,
-    x: index % 2 === 0 ? -60 : 60
+    x: index % 2 === 0 ? -120 : 120
   },
   visible: {
     opacity: 1,
@@ -213,7 +213,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       variants={getCardVariants(index)}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
-      className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
+      className="group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
       style={{ borderTopColor: categoryStyles.borderColor }}
     >
       {/* Left Column - Image (35%) */}
@@ -246,7 +246,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
       {/* Right Column - Content (65%) - Scrollable */}
       <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-auto p-8 lg:p-10">
+        <div className="flex-1 overflow-y-auto p-8 lg:p-10 scroll-smooth [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-neutral-400">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}

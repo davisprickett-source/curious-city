@@ -3,6 +3,7 @@ import { Inter, Lora } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider'
+import { AdProvider } from '@/components/ads/AdProvider'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({
@@ -136,11 +137,13 @@ export default function RootLayout({
           />
         )}
 
-        <SmoothScrollProvider>
-          <div className="min-h-screen flex flex-col">
-            {children}
-          </div>
-        </SmoothScrollProvider>
+        <AdProvider>
+          <SmoothScrollProvider>
+            <div className="min-h-screen flex flex-col">
+              {children}
+            </div>
+          </SmoothScrollProvider>
+        </AdProvider>
         <Analytics />
       </body>
     </html>

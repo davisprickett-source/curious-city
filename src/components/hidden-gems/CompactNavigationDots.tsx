@@ -30,7 +30,7 @@ export function CompactNavigationDots({ gems, activeIndex, onNavigate }: Compact
   }, [activeIndex])
 
   return (
-    <div className="hidden lg:flex fixed right-4 top-1/2 -translate-y-1/2 z-40">
+    <div className="hidden lg:flex fixed right-4 top-1/2 -translate-y-1/2 z-[100]">
       <div
         ref={scrollContainerRef}
         className="flex flex-col gap-1.5 max-h-[80vh] overflow-y-auto scrollbar-hide py-4 px-2"
@@ -57,8 +57,8 @@ export function CompactNavigationDots({ gems, activeIndex, onNavigate }: Compact
                 }}
               />
 
-              {/* Tooltip - appears on hover */}
-              <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+              {/* Tooltip - appears on hover with higher z-index */}
+              <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-[110]">
                 <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg shadow-xl whitespace-nowrap">
                   {index + 1}. {gem.name}
                 </div>

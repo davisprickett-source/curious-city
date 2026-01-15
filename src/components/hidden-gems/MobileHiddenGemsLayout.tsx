@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { useInView as useInViewHook } from 'react-intersection-observer'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
@@ -9,6 +9,12 @@ import { NewsletterSignup } from '../NewsletterSignup'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { ShareButton } from '@/components/ShareButton'
+import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
+import { DrawerAd } from '@/components/ads/mobile/DrawerAd'
+import { UniversalAd } from '@/components/ads/UniversalAd'
+import { createAdSlot } from '@/lib/ads/slots'
+import { useAdTrigger } from '@/components/ads/AdTrigger'
+import { mobileAdConfig } from '@/lib/ads/config'
 
 interface HiddenGemItem {
   id: string
@@ -444,6 +450,22 @@ export default function MobileHiddenGemsLayout({
 }: MobileHiddenGemsLayoutProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+  // Page ID for ad targeting
+  const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-hidden-gems-mobile`
+
+  // Drawer ad trigger (50% scroll depth or 30 seconds)
+  const handleDrawerTrigger = useCallback(() => {
+    // Check if we haven't already shown the drawer this page
+    const drawerShown = sessionStorage.getItem(`drawer_shown_${pageId}`)
+    if (!drawerShown) {
+      setIsDrawerOpen(true)
+      sessionStorage.setItem(`drawer_shown_${pageId}`, 'true')
+    }
+  }, [pageId])
+
+  useAdTrigger(mobileAdConfig.drawer.triggers, handleDrawerTrigger, mobileAdConfig.drawer.enabled)
 
   // Track scroll progress
   useEffect(() => {
@@ -516,14 +538,36 @@ export default function MobileHiddenGemsLayout({
       {/* Hidden Gems Sections */}
       <div>
         {gems.map((gem, index) => (
-          <div key={gem.id} data-hidden-gem-section>
-            <HiddenGemSection
-              gem={gem}
-              index={index}
-              onSectionInView={handleSectionInView}
-              url={url}
-              title={gem.name}
-            />
+          <div key={gem.id}>
+            <div data-hidden-gem-section>
+              <HiddenGemSection
+                gem={gem}
+                index={index}
+                onSectionInView={handleSectionInView}
+                url={url}
+                title={gem.name}
+              />
+            </div>
+
+            {/* In-content ad every 4 gems (after 3rd, 7th, 11th, etc.) - mobile only */}
+            {(index + 1) % 4 === 0 && index < gems.length - 1 && (
+              <div className="py-8 px-4 bg-neutral-50 lg:hidden">
+                <div className="max-w-md mx-auto">
+                  <div className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium mb-2 text-center">
+                    Sponsored
+                  </div>
+                  <div className="bg-white rounded-xl p-4 shadow-sm border border-neutral-100">
+                    <UniversalAd
+                      slot={createAdSlot(
+                        `${pageId}-between-${index}`,
+                        'rectangle',
+                        { city: cityName, category: 'hidden-gems', position: 'between-entries' }
+                      )}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -592,6 +636,20 @@ export default function MobileHiddenGemsLayout({
           </div>
         )}
       </div>
+
+      {/* Mobile Sticky Bottom Ad */}
+      <StickyBottomAd
+        pageId={pageId}
+        targeting={{ city: cityName, category: 'hidden-gems' }}
+      />
+
+      {/* Mobile Drawer Ad */}
+      <DrawerAd
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        pageId={pageId}
+        targeting={{ city: cityName, category: 'hidden-gems' }}
+      />
     </div>
   )
 }

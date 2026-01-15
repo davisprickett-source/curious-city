@@ -166,25 +166,6 @@ export const dallas: CityData = {
           size: 'rectangle',
         },
         {
-          id: 'dal-curiosity-8',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The corner of Elm and Houston was cursed before JFK',
-          images: [
-            {
-              src: '/dallas/curiosities/elm-houston-1.png',
-              alt: 'Dealey Plaza and the Texas School Book Depository',
-            },
-            {
-              src: '/dallas/curiosities/elm-houston-2.png',
-              alt: 'Historic view of Elm and Houston corner',
-            },
-          ],
-          body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. In 1898, the Southern Rock Island Plow Company built a five-story structure on the site. On May 4, 1901, it was struck by lightning and burned to the ground. A seven-story building was rebuilt on the same foundation in 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
-          source: 'Dallas Historical Society',
-          location: { name: 'Dealey Plaza', stillExists: true },
-        },
-        {
           id: 'dal-curiosity-9',
           type: 'curiosity',
           category: 'history',
@@ -280,6 +261,49 @@ export const dallas: CityData = {
           },
           body: 'German chocolate is not actually German — it\'s named after English baker Samuel German, who developed the chocolate in 1852. But Dallas is the reason it\'s famous. In 1957, a Dallasite named Mrs. George Clay sent her recipe for "German\'s chocolate cake" to the Dallas Morning News. It was reprinted in newspapers nationwide and became an American classic — all because of one Dallas home baker who decided to share her recipe. Sometimes Dallas\'s greatest contributions are the smallest ones.',
           source: 'Dallas Morning News',
+        },
+        {
+          id: 'dal-curiosity-pegasus',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Dallas spent nearly $1 million on an oil company\'s logo—because it became the city symbol',
+          images: [
+            {
+              src: '/dallas/curiosities/pegasus-1.png',
+              alt: 'Original Magnolia Pegasus atop the Magnolia Building',
+            },
+            {
+              src: '/dallas/curiosities/pegasus-2.png',
+              alt: 'Restored Pegasus on display',
+            },
+          ],
+          body: 'In 1934, Magnolia Oil Company installed an 11-foot rotating red neon Pegasus atop their headquarters—the tallest building in Dallas at the time. It was just corporate branding. But Dallas fell in love with the Flying Red Horse. When Magnolia merged with Mobil in 1959, the Pegasus became Mobil\'s symbol, but Dallas claimed it as the unofficial city mascot. By 1999, the original had rusted out. Dallas spent $600,000 to build a replica and lit it at midnight on New Year\'s 2000. Then the original went missing. People searched Fair Park, the Farmers Market—nothing. Finally, someone found it in a city storage facility at White Rock Lake, just sitting there. Dallas spent another $200,000 to restore it and mounted it on a 22-foot oil derrick in front of the Omni Hotel. Nearly $1 million spent preserving an oil company\'s advertisement. Very Dallas.',
+          sources: [
+            {
+              type: 'article',
+              title: 'How the Red Pegasus Became a Symbol of Dallas',
+              publisher: 'D Magazine',
+              year: '2024',
+              url: 'https://www.dmagazine.com/publications/d-ceo/2024/november/how-the-red-pegasus-became-the-symbol-of-dallas/',
+            },
+            {
+              type: 'article',
+              title: 'Dallas\' Original Pegasus: Restored and Rebuilt',
+              publisher: 'Dallas Morning News',
+              year: '2015',
+              url: 'https://interactives.dallasnews.com/2015/pegasus/',
+            },
+            {
+              type: 'article',
+              title: 'The History of the Pegasus',
+              publisher: 'Downtown Dallas Parks Conservancy',
+              url: 'https://downtowndallasparks.org/the-history-of-the-pegasus/',
+            },
+          ],
+          location: {
+            name: 'Omni Dallas Hotel (original) / Magnolia Hotel (replica)',
+            stillExists: true,
+          },
         },
         {
           id: 'dal-curiosity-ad-3',
@@ -1465,6 +1489,37 @@ export const dallas: CityData = {
           ],
           location: {
             name: 'Old Alton Bridge, Denton/Copper Canyon',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'dal-dark-9',
+          type: 'dark-history',
+          category: 'disaster',
+          year: '1901',
+          title: 'The Corner That Attracts Tragedy',
+          images: [
+            {
+              src: '/dallas/curiosities/elm-houston-1.png',
+              alt: 'Dealey Plaza and the Texas School Book Depository',
+            },
+            {
+              src: '/dallas/curiosities/elm-houston-2.png',
+              alt: 'Historic view of Elm and Houston corner',
+            },
+          ],
+          body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. In 1898, the Southern Rock Island Plow Company built a five-story structure on the site. On May 4, 1901, it was struck by lightning and burned to the ground. A seven-story building was rebuilt on the same foundation in 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
+          verdict: 'Documented history. The 1901 fire is verified; whether the location is "cursed" is a matter of perspective.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Texas School Book Depository',
+              publisher: 'Dallas Historical Society',
+              url: 'https://www.dallashistory.org/',
+            },
+          ],
+          location: {
+            name: 'Dealey Plaza, Elm & Houston Streets',
             stillExists: true,
           },
         }

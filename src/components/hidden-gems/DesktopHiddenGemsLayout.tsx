@@ -7,6 +7,9 @@ import { CompactNavigationDots } from './CompactNavigationDots'
 import { NewsletterSignup } from '../NewsletterSignup'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
+import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
+import { UniversalAd } from '@/components/ads/UniversalAd'
+import { createAdSlot } from '@/lib/ads/slots'
 
 interface HiddenGemItem {
   id: string
@@ -78,6 +81,9 @@ export default function DesktopHiddenGemsLayout({
     }
   }
 
+  // Create page ID for ad targeting
+  const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-hidden-gems`
+
   return (
     <div className="relative">
       {/* Fixed Progress Bar */}
@@ -89,17 +95,44 @@ export default function DesktopHiddenGemsLayout({
         />
       </div>
 
+      {/* Desktop Sidebar Ads (visible on 1400px+ screens) */}
+      <DualSidebarAds
+        pageId={pageId}
+        targeting={{ city: cityName, category: 'hidden-gems' }}
+        stickyTop={80}
+      />
+
       {/* Single Column Layout */}
       <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="space-y-12" ref={contentContainerRef}>
           {gems.map((gem, index) => (
-            <div key={gem.id} data-gem-card>
-              <HiddenGemCard
-                gem={gem}
-                index={index}
-                onInView={() => setActiveIndex(index)}
-                url={url}
-              />
+            <div key={gem.id}>
+              <div data-gem-card>
+                <HiddenGemCard
+                  gem={gem}
+                  index={index}
+                  onInView={() => setActiveIndex(index)}
+                  url={url}
+                />
+              </div>
+
+              {/* In-content ad every 4 gems (after 3rd, 7th, 11th, etc.) */}
+              {(index + 1) % 4 === 0 && index < gems.length - 1 && (
+                <div className="my-12 flex justify-center">
+                  <div className="max-w-md w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+                    <div className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium mb-2 text-center">
+                      Sponsored
+                    </div>
+                    <UniversalAd
+                      slot={createAdSlot(
+                        `${pageId}-between-${index}`,
+                        'rectangle',
+                        { city: cityName, category: 'hidden-gems', position: 'between-entries' }
+                      )}
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

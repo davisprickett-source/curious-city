@@ -5,6 +5,8 @@ import { BestOfSpot } from '@/types/content'
 import { ScrollyMap } from './ScrollyMap'
 import { ScrollyContent } from './ScrollyContent'
 import { type ExploreLink } from './ExploreCard'
+import { MapSidebarAd } from '@/components/ads/desktop/MapSidebarAd'
+import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
 
 interface ScrollyMapViewProps {
   spots: BestOfSpot[]
@@ -43,6 +45,9 @@ export function ScrollyMapView({
   const [, setIsMapLoaded] = useState(false)
   const [scrollToIndex, setScrollToIndex] = useState<number | null>(null)
 
+  // Create a page ID for ad targeting
+  const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-${markerType}`
+
   return (
     <div className="relative">
       {/* Fixed background map (full screen on mobile where nav scrolls, below nav on desktop) */}
@@ -55,6 +60,12 @@ export function ScrollyMapView({
           onMarkerClick={(index) => setScrollToIndex(index)}
         />
       </div>
+
+      {/* Desktop sidebar ad (visible on xl+ screens, positioned over map) */}
+      <MapSidebarAd
+        pageId={pageId}
+        targeting={{ city: cityName, category: markerType }}
+      />
 
       {/* Scrollable content (floats on top of map) */}
       <div className="relative z-10">
@@ -74,6 +85,12 @@ export function ScrollyMapView({
           url={url} // Pass url prop down
         />
       </div>
+
+      {/* Mobile sticky bottom ad */}
+      <StickyBottomAd
+        pageId={pageId}
+        targeting={{ city: cityName, category: markerType }}
+      />
     </div>
   )
 }

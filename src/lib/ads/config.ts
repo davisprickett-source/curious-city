@@ -4,7 +4,13 @@
  * Central configuration for all ad networks and placement strategies
  */
 
-import type { AdNetwork, AdNetworkConfig, AdPlacementStrategy } from './types'
+import type {
+  AdNetwork,
+  AdNetworkConfig,
+  AdPlacementStrategy,
+  MobileAdConfig,
+  DesktopAdConfig,
+} from './types'
 
 /**
  * Ad Network Configurations
@@ -143,4 +149,61 @@ export function getActiveNetwork(
  */
 export function getNetworkConfig(network: AdNetwork): AdNetworkConfig['config'] {
   return adNetworkConfigs[network]?.config || {}
+}
+
+/**
+ * Mobile Ad Configuration
+ *
+ * Settings for interstitial, sticky, and drawer ad formats
+ */
+export const mobileAdConfig: MobileAdConfig = {
+  interstitial: {
+    enabled: true,
+    triggers: [
+      { type: 'page-load', value: 0, delay: 2000 }, // Show 2 seconds after page load
+    ],
+    countdownSeconds: 5,
+    frequencyCap: {
+      perSession: 3,
+      perPage: 1,
+      cooldownMinutes: 5,
+    },
+  },
+  sticky: {
+    enabled: true,
+    height: 50, // Standard mobile banner height
+    dismissible: true,
+    showAfter: { type: 'time-on-page', value: 5 }, // Show after 5 seconds
+  },
+  drawer: {
+    enabled: true,
+    triggers: [
+      { type: 'scroll-depth', value: 50, delay: 0 }, // Show at 50% scroll
+      { type: 'time-on-page', value: 30, delay: 0 }, // Or after 30 seconds
+    ],
+    frequencyCap: {
+      perSession: 3,
+      perPage: 1,
+      cooldownMinutes: 2,
+    },
+  },
+}
+
+/**
+ * Desktop Ad Configuration
+ *
+ * Settings for sidebar ads on wide screens
+ */
+export const desktopAdConfig: DesktopAdConfig = {
+  sidebars: {
+    enabled: true,
+    positions: ['left', 'right'],
+    minViewportWidth: 1400, // Only show on screens wider than 1400px
+    size: 'skyscraper', // 160x600
+  },
+  mapSidebar: {
+    enabled: true,
+    position: 'left',
+    minViewportWidth: 1280, // Show on xl+ screens
+  },
 }
