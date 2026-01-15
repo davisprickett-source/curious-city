@@ -1,8 +1,14 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityLocalFavorites } from '@/data/cities'
-import { ShareLinks, MapThumbnail, ImageCarousel, Footer } from '@/components'
+import { ShareLinks, ImageCarousel, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import dynamic from 'next/dynamic'
+
+const DynamicMapThumbnail = dynamic(() => import('@/components').then(mod => mod.MapThumbnail), {
+  ssr: false,
+  loading: () => <div className="w-full md:w-[280px] h-[180px] bg-neutral-200 flex items-center justify-center text-neutral-500">Loading Map...</div>, // Optional loading state
+})
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -123,7 +129,7 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
                             <div className="flex flex-col md:flex-row">
                               {favorite.coordinates && (
                                 <div className="flex-shrink-0">
-                                  <MapThumbnail
+                                  <DynamicMapThumbnail
                                     lat={favorite.coordinates.lat}
                                     lng={favorite.coordinates.lng}
                                     name={favorite.name}

@@ -800,7 +800,13 @@ export const portland: CityData = {
                           url: 'https://www.atlasobscura.com/places/wyrd-leatherworks-and-meadery',
                         }
                       ],
-                    },          description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
+                    },
+        { // Added missing comma and corrected indentation for the next item
+          id: 'gem-history-1',
+          type: 'hidden-gem',
+          name: 'Lone Fir Cemetery - Block 14',
+          category: 'Historic Mystery',
+          description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
           images: [
             {
               src: '/portland/hidden-gems/cemetery.png',
