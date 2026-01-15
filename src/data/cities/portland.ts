@@ -63,46 +63,11 @@ export const portland: CityData = {
       intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in our curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
       items: [
         {
-          id: 'pdx-curiosity-1',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Oregon entered the Union with a whites-only clause in its constitution',
-          body: 'Oregon was founded by white settlers who wanted a white utopia. So in 1857, it didn\'t just ban slavery; it also enshrined a clause in its constitution explicitly prohibiting Black people from living in the state at all. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon, effectively becoming the only free state admitted to the Union with such an exclusion. It was formally removed in 1926, but the clause remained "dead text" in the constitution until 2002. Today, Portland markets itself as a progressive haven, yet it remains one of the whitest major cities in America (77% white). This isn\'t an accident; it\'s a feature, not a bug, built into the very foundation of the state, a legacy of that original intent.',
-          year: '1857',
-          image: {
-            src: '/portland/curiosities/black-exclusion.png',
-            alt: 'Oregon black exclusion laws historical document',
-          },
-          source: 'Oregon Historical Society',
-          location: {
-            name: 'State of Oregon',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'pdx-curiosity-6',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Oregon\'s second-largest city vanished in 35 minutes',
-          body: 'Vanport wasn\'t supposed to last. Built in 1942 as temporary housing for WWII shipyard workers, it became Oregon\'s second-largest city—a diverse, bustling community of 40,000, including most of Portland\'s Black population. City officials, however, routinely dismissed warnings about the Columbia River dikes, assuring residents, "The dike will hold." They were catastrophically wrong. On Memorial Day, May 30, 1948, a railroad dike failed. The Columbia poured into Vanport, engulfing the entire city in just 35 minutes. Fifteen people died, though many believe the count was higher. Thousands lost everything, their homes and lives swept away in a man-made flood. Vanport was never rebuilt. Its erasure profoundly reshaped Portland\'s demographics, cementing racial segregation for generations. Today, Delta Park sits on the site—a flat expanse of soccer fields where a vibrant city once stood, a silent testament to a disaster that was both natural and utterly preventable.',
-          year: '1948',
-          image: {
-            src: '/portland/curiosities/portland-flood.png',
-            alt: 'Vanport flood destruction in 1948',
-          },
-          source: 'Oregon Historical Society',
-          location: {
-            name: 'Vanport (now Delta Park)',
-            stillExists: false,
-          },
-        },
-        {
           id: 'pdx-curiosity-4',
           type: 'curiosity',
           category: 'culture',
           title: 'The world\'s smallest park is 2 feet wide and has a leprechaun (UPDATE: Japan stole the title)',
           body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
-          year: '1948',
           image: {
             src: '/portland/curiosities/Mill-Ends-Park.png',
             alt: 'Mill Ends Park, the world\'s smallest park in Portland',
@@ -116,6 +81,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'SW Naito Parkway',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5163,-122.6730',
             stillExists: true,
           },
         },
@@ -125,26 +91,41 @@ export const portland: CityData = {
           size: 'banner',
         },
         {
+          id: 'pdx-curiosity-horse-rings',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Portland has 1,500 iron rings embedded in its curbs for horses that died a century ago',
+          body: 'Starting in 1902, Portland mandated that every 25 feet of new curb include an iron ringbolt—a hitching post for the horses delivering your coal, ice, groceries, and mail. By the 1970s, the city decided the rings were hazards and started ripping them out. Then in 1978, a Ladd\'s Addition homeowner complained when his ring vanished. Commissioner Connie McCready intervened, and suddenly the rings became heritage infrastructure. Today, Portland still replaces them after curb repairs—at $5 per ring. In 2005, artist Scott Wayne Indiana launched the Portland Horse Project, tying toy horses to the rings. The movement exploded. Walk through any old Portland neighborhood and you\'ll find plastic ponies, dinosaurs, and unicorns hitched to century-old iron, a city-wide participatory art installation that started as a joke and became folklore.',
+          image: {
+            src: '/portland/curiosities/horse-rings.png',
+            alt: 'Historic iron horse ring in Portland curb with toy horse',
+          },
+          sources: [
+            {
+              title: 'Horse rings in Portland, Oregon',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Horse_rings_in_Portland,_Oregon',
+            },
+            {
+              title: 'Portland Horse Rings',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/portland-horse-rings',
+            }
+          ],
+          location: {
+            name: 'Throughout Portland (especially old neighborhoods)',
+            stillExists: true,
+          },
+        },
+        {
           id: 'pdx-curiosity-7',
           type: 'curiosity',
           category: 'law',
           title: 'Pumping your own gas was a crime in Oregon until 2023',
           body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in August 2023 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed. New Jersey remains the only state where you still can\'t pump your own gas.',
-          year: '2023',
           image: {
             src: '/portland/curiosities/Portland-gas-service.png',
             alt: 'Oregon gas station attendant filling car',
-          },
-          sources: [
-            {
-              title: 'ORS 480.315 to 480.385',
-              publisher: 'Oregon Legislature',
-              url: 'https://www.oregon.gov/osfm/pages/self-service-rules.aspx',
-            }
-          ],
-          location: {
-            name: 'State of Oregon',
-            stillExists: true,
           },
         },
         {
@@ -153,39 +134,11 @@ export const portland: CityData = {
           size: 'rectangle',
         },
         {
-          id: 'pdx-curiosity-2',
-          type: 'curiosity',
-          category: 'underground',
-          title: 'The Shanghai Tunnels are Portland\'s most profitable myth',
-          body: 'Ah, the Shanghai Tunnels. The story goes: a vast underground network beneath Old Town, where unsuspecting men were drugged, dragged through secret passages, and sold to ship captains desperate for crews—a practice charmingly called "shanghaiing." The tunnels do exist. Shanghaiing did happen in Portland. But did the two meet? Historians are, shall we say, *highly skeptical*. Most evidence suggests these underground passages were simply for moving cargo and supplies between basements and the docks, away from muddy streets. But boring old freight tunnels don\'t sell tickets. So, tour companies have built an entire industry on the dramatic, unverified version, leading eager tourists through dimly lit basements with tales of kidnapped sailors and opium dens. Truth is for academics. A good, gruesome myth is for profit. And Portland, ever the entrepreneur, knows a cash cow when it sees one.',
-          image: {
-            src: '/portland/curiosities/shanghai-tunnels.png',
-            alt: 'Underground Shanghai tunnels in Portland Old Town',
-          },
-          sources: [
-            {
-              title: 'Shanghai Tunnels',
-              publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
-            },
-            {
-              title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
-              publisher: 'OPB',
-              url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
-            }
-          ],
-          location: {
-            name: 'Old Town/Chinatown',
-            stillExists: true,
-          },
-        },
-        {
           id: 'pdx-curiosity-10',
           type: 'curiosity',
           category: 'culture',
           title: 'Portland\'s name was decided by a coin flip',
           body: 'In 1845, two New England transplants, Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine, founded a settlement on the Willamette River. Then they did what all men with too much ego and too little to do eventually do: they argued. Each wanted to name the nascent town after his respective hometown. Neither would yield. So, like true pioneers, they settled it with a coin flip. Pettygrove won, and "Portland" it was. The "Portland Penny," now enshrined at the Oregon Historical Society, is a tangible reminder that one of America\'s most distinctive cities exists because of a 50/50 chance. Had that copper penny landed differently, we\'d be talking about "Boston, Oregon"—a geographical and philosophical abomination almost too cursed to contemplate.',
-          year: '1845',
           image: {
             src: '/portland/curiosities/coin-flip.png',
             alt: 'The Portland Penny that decided the city\'s name',
@@ -199,23 +152,43 @@ export const portland: CityData = {
           ],
         },
         {
+          id: 'pdx-curiosity-keep-weird',
+          type: 'curiosity',
+          category: 'culture',
+          title: '"Keep Portland Weird" was invented by a record store owner fighting chain stores',
+          body: 'In 2003, Terry Currier, owner of Music Millennium (Portland\'s oldest record store), noticed big box retailers invading his turf. He wanted a slogan to promote local business but "Keep Portland Unique" sounded boring. A friend in Austin, Texas—where "Keep Austin Weird" already existed—suggested he steal the format. Currier printed 500 bumper stickers that said "Keep Portland Weird" and another 500 that added "Support Local Business." By 2007, he\'d sold 10,000 stickers and trademarked the phrase. The slogan metastasized. It became Portland\'s brand, its tourism tagline, its self-mythologizing mantra. Corporations slapped it on merchandise. The city that was supposed to resist commodification turned resistance itself into a commodity. Currier created a monster. And Music Millennium is still open.',
+          image: {
+            src: '/portland/curiosities/keep-portland-weird.png',
+            alt: 'Keep Portland Weird bumper sticker and campaign',
+          },
+          sources: [
+            {
+              title: 'Keep Portland Weird',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Keep_Portland_Weird',
+            },
+            {
+              title: 'Man behind "Keep Portland Weird"',
+              publisher: 'KOIN',
+              url: 'https://www.koin.com/is-portland-over/keep-portland-weird-slogan-originator-says-city-not-as-weird/',
+            }
+          ],
+          location: {
+            name: 'Music Millennium',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5225,-122.6917',
+            stillExists: true,
+          },
+        },
+        {
           id: 'pdx-curiosity-12',
           type: 'curiosity',
           category: 'culture',
           title: 'Portland invented craft beer before "craft beer" existed',
           body: 'In 1984, Widmer Brothers and BridgePort Brewing opened in Portland, years before anyone called it "craft beer." They were just making beer that didn\'t taste like water. The term wouldn\'t be coined for another decade. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, running since 1988, is one of the largest outdoor craft beer events in the country. What started as a handful of weirdos brewing in warehouses became an entire economic sector. Portland didn\'t follow the craft beer trend. It created it.',
-          year: '1984',
           image: {
             src: '/portland/curiosities/beer.png',
             alt: 'Portland craft beer scene with local breweries',
           },
-          sources: [
-            {
-              title: 'Oregon Brewers Guild: History and Future of Oregon Craft Beer',
-              publisher: 'Oregon State University',
-              url: 'https://oregonstate.edu/ua/ncs/archives/2016/10/oregon-brewers-guild-history-and-future-oregon-craft-beer',
-            }
-          ],
         },
         {
           id: 'pdx-curiosity-13',
@@ -223,7 +196,6 @@ export const portland: CityData = {
           category: 'history',
           title: 'Portland ripped out a freeway and replaced it with a park',
           body: 'In 1974, Portland did something American cities didn\'t do: it demolished Harbor Drive, a freeway running along the Willamette River, and replaced it with Tom McCall Waterfront Park. It was one of the first urban freeway removals in the country—a radical rejection of car-centric planning when highways were still considered progress. The 36-acre park became Portland\'s civic front yard, hosting festivals and serving as the city\'s riverfront living room. Other cities studied Portland\'s model. Some even copied it. Decades later, it remains one of the best decisions the city ever made.',
-          year: '1974',
           images: [
             {
               src: '/portland/curiosities/highway-park-1.png',
@@ -243,6 +215,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Tom McCall Waterfront Park',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5208,-122.6708',
             stillExists: true,
           },
         },
@@ -265,94 +238,152 @@ export const portland: CityData = {
           ],
         },
         {
+          id: 'pdx-curiosity-benson-bubblers',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portland\'s bronze drinking fountains were installed to keep loggers from drinking at lunch',
+          body: 'In 1912, lumber baron Simon Benson donated $10,000 to install 20 bronze drinking fountains across Portland. The official story? He saw a girl crying at a parade because she couldn\'t find water. The real story? Benson wanted his mill workers to drink water during lunch breaks instead of beer. Architect A.E. Doyle designed elegant four-bowl fountains that bubble constantly—hence "Benson Bubblers." Today, Portland maintains 52 four-bowl Bubblers and 74 single-bowl versions, pouring 100,000 gallons of drinking water per day, every day, year-round (except during freezes). In the 1970s, the Benson family requested the fountains only be installed in specific downtown boundaries "so as not to diminish the uniqueness of them." Portland listened. The Bubblers remain a downtown-only amenity, a small bronze reminder that sometimes paternalism produces genuinely good public infrastructure.',
+          image: {
+            src: '/portland/curiosities/benson-bubbler.jpg',
+            alt: 'Historic Benson Bubbler bronze drinking fountain in Portland',
+          },
+          sources: [
+            {
+              title: 'Benson Bubblers',
+              publisher: 'Portland.gov',
+              url: 'https://www.portland.gov/water/about-portlands-water-system/bubblers',
+            },
+            {
+              title: 'Portland\'s Love Affair With Its Special Water Fountains',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/articles/portland-benson-bubblers',
+            }
+          ],
+          location: {
+            name: 'Downtown Portland',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'pdx-curiosity-portlandia',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portlandia is the second-largest hammered copper statue in the U.S. (after the Statue of Liberty)',
+          body: 'In 1985, Raymond Kaskey\'s "Portlandia" was installed above the entrance of the Portland Building—a 35-foot-tall, 6.5-ton hammered copper statue depicting a woman in classical robes, kneeling, trident in one hand, reaching down with the other. It\'s the second-largest hammered copper statue in the United States, after the Statue of Liberty. The statue arrived by barge up the Willamette River, a spectacle thousands watched. It\'s based on Portland\'s city seal. And yet... nobody really cares about it. Portlandia never became iconic. She\'s awkwardly positioned above a Postmodern building most locals hate. The TV show "Portlandia" became more famous than the statue it borrowed a name from. She remains Portland\'s most prominent public art that Portlanders routinely forget exists.',
+          image: {
+            src: '/portland/curiosities/portlandia-statue.png',
+            alt: 'Portlandia statue above Portland Building entrance',
+          },
+          sources: [
+            {
+              title: 'Portlandia (statue)',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Portlandia_(statue)',
+            },
+            {
+              title: 'Portlandia',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/portlandia',
+            }
+          ],
+          location: {
+            name: 'Portland Building, 1120 SW 5th Ave',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5151,-122.6793',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'pdx-curiosity-paul-bunyan',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Portland has a 31-foot-tall Paul Bunyan statue that waves at you',
+          body: 'In 1959, for Oregon\'s centennial celebration, the Kenton Business Association commissioned a 31-foot-tall Paul Bunyan statue for $2,500. Unlike most roadside Americana—cheap fiberglass "muffler men"—this Bunyan was custom-built from steel and concrete. He stands in the Kenton neighborhood, axe in hand, waving mechanically at passing traffic. His expression is... unsettling. Dead eyes. Rictus grin. The uncanny valley of folk heroes. He was added to the National Register of Historic Places in 2009. In 2002, Portland moved him 59 feet to make room for light rail. The statue survived. Kenton\'s small-town character didn\'t. Paul Bunyan still waves, a giant concrete ghost greeting a neighborhood that no longer recognizes him.',
+          image: {
+            src: '/portland/curiosities/paul-bunyan.png',
+            alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
+          },
+          sources: [
+            {
+              title: 'Statue of Paul Bunyan (Portland, Oregon)',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Statue_of_Paul_Bunyan_(Portland,_Oregon)',
+            },
+            {
+              title: 'Paul Bunyan Statue',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/paul-bunyan-statue',
+            }
+          ],
+          location: {
+            name: 'N Denver Ave & N Lombard St',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5723,-122.6838',
+            stillExists: true,
+          },
+        },
+        {
           id: 'pdx-curiosity-11',
           type: 'curiosity',
           category: 'legend',
           title: 'A 10,000-year-old mastodon was butchered near Portland',
           body: 'In 1962, a farmer plowing his field near Tualatin hit something massive: mastodon bones. The skeleton dated to roughly 10,000 years ago, at the tail end of the last Ice Age. But the real discovery was the cut marks—clear evidence of human butchering. Someone had carved meat from this animal. It proved that humans and megafauna coexisted in the Portland area for thousands of years. The Tualatin Mastodon now resides at the Oregon Museum of Science and Industry, a reminder that this land was occupied long before coin flips and city planning.',
-          year: '1962',
           image: {
             src: '/portland/curiosities/bones.png',
             alt: 'Tualatin Mastodon skeleton at OMSI',
           },
           location: {
             name: 'OMSI',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5084,-122.6662',
             stillExists: true,
           },
         },
         {
-          id: 'pdx-curiosity-8',
+          id: 'pdx-curiosity-naked-bike-ride',
           type: 'curiosity',
           category: 'culture',
-          title: 'Powell\'s City of Books is so big they give you a map',
-          body: 'Powell\'s occupies an entire city block—68,000 square feet holding over a million books. The rooms are color-coded. New and used books share the same shelves. They hand you a map at the entrance because people genuinely get lost. For a generation of Portlanders, Powell\'s wasn\'t just a bookstore—it was a third place, a refuge, a reason to move here. You could spend an entire rainy afternoon wandering the stacks and leave with six books you didn\'t know you needed. It\'s the world\'s largest independent bookstore, and in an era of Amazon dominance, the fact that it still exists feels like a minor miracle.',
-          images: [
-            {
-              src: '/portland/curiosities/powells-books-1.png',
-              alt: 'Powell\'s City of Books exterior on full city block',
-            },
-            {
-              src: '/portland/curiosities/powells-books-2.png',
-              alt: 'Interior of Powell\'s Books with color-coded rooms',
-            }
-          ],
-          sources: [
-            {
-              title: 'Powell\'s City of Books',
-              publisher: 'Powell\'s Books',
-              url: 'https://www.powells.com/locations/powells-city-of-books',
-            }
-          ],
-          location: {
-            name: 'Powell\'s City of Books',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'pdx-curiosity-15',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Portland\'s music scene has always punched absurdly above its weight',
-          body: 'For a mid-sized city in the corner of the country, Portland has produced a ridiculous amount of iconic music: Elliott Smith, The Decemberists, Modest Mouse, Sleater-Kinney, Everclear, Pink Martini, The Shins. The Crystal Ballroom has hosted shows since 1914. The all-ages venue scene in the \'90s and 2000s gave an entire generation of teenagers a place to see live music and start bands. K Records in nearby Olympia created a Pacific Northwest DIY ethos that spread nationally. It wasn\'t an accident. It was cheap rent, a thriving arts culture, and a city that left its weirdos alone long enough to create something.',
+          title: 'Portland hosts the world\'s largest naked bike ride (10,000 people, legally)',
+          body: 'Every June since 2004, thousands of Portlanders strip down and ride bikes through downtown to protest oil dependency and promote body positivity. At its peak in 2019, Portland\'s World Naked Bike Ride drew 10,000 participants—the largest in the world. It\'s completely legal. The city doesn\'t even blink. Riders decorate their bodies with paint, glitter, and political slogans. Some wear costumes. Most wear nothing. The ride is simultaneously earnest protest, civic spectacle, and performance art. In 2024, organizers took a year off, and a splinter group immediately launched a competing naked ride. Because of course they did. Only in Portland does "too many naked bike rides" become an actual problem.',
           image: {
-            src: '/portland/curiosities/music-scene.png',
-            alt: 'Portland music venue scene and indie rock history',
+            src: '/portland/curiosities/naked-bike-ride.jpg',
+            alt: 'World Naked Bike Ride in Portland',
           },
-          location: {
-            name: 'Portland',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'pdx-curiosity-9',
-          type: 'curiosity',
-          category: 'nature',
-          title: 'Forest Park is one of the largest urban forests in the country',
-          body: 'Forest Park covers 5,200 acres with over 80 miles of trails—one of the largest urban forests in the United States. Within minutes of downtown, you can be surrounded by old-growth Douglas firs, encounter elk, and completely lose sight of the city. The Wildwood Trail stretches 30 miles through the canopy. It\'s the kind of resource that defines a city\'s character—and that locals take entirely for granted until they move somewhere else and realize most cities don\'t have a temperate rainforest within city limits.',
-          images: [
-            {
-              src: '/portland/curiosities/park-1.png',
-              alt: 'Forest Park trail through old growth Douglas firs',
-            },
-            {
-              src: '/portland/curiosities/park-2.png',
-              alt: 'Wildwood Trail winding through Forest Park',
-            },
-            {
-              src: '/portland/curiosities/park-3.png',
-              alt: 'Forest Park urban forest canopy',
-            }
-          ],
           sources: [
             {
-              title: 'About Forest Park',
-              publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/parks/forest-park',
+              title: 'Portland World Naked Bike Ride',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Portland_World_Naked_Bike_Ride',
+            },
+            {
+              title: 'World Naked Bike Ride',
+              publisher: 'Official PDXWNBR',
+              url: 'https://pdxwnbr.org/',
+            }
+          ],
+        },
+        {
+          id: 'pdx-curiosity-church-elvis',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'The 24-Hour Church of Elvis was a coin-operated wedding chapel and art installation',
+          body: 'In 1985, Stephanie Pierce—a Georgetown-trained lawyer who quit corporate law to become an artist—opened a storefront window in downtown Portland featuring a coin-operated art machine. For 25 cents, you could receive a sermon from Elvis, confess your sins, get a photo with the King, or watch whirring mechanical dioramas. In 1987, it officially became the 24-Hour Church of Elvis. Pierce, an ordained minister, performed legally binding weddings out of the window. The exhibit moved locations multiple times, garnered features in the Wall Street Journal and LA Times, and became a symbol of Portland\'s commitment to the absurd. It closed for good in 2013. The Church of Elvis helped establish Portland as "weird" before weird became a brand. It was pure, unselfconscious strangeness—the kind Portland used to do before it started trying.',
+          image: {
+            src: '/portland/curiosities/church-elvis.png',
+            alt: '24-Hour Church of Elvis storefront window installation',
+          },
+          sources: [
+            {
+              title: '24 Hour Church of Elvis',
+              publisher: 'Oregon Encyclopedia',
+              url: 'https://www.oregonencyclopedia.org/articles/church-of-elvis/',
+            },
+            {
+              title: '24 Hour Church of Elvis',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/24-hour-church-elvis',
             }
           ],
           location: {
-            name: 'Forest Park',
-            stillExists: true,
+            name: 'Former location: 408 NW Couch St',
+            stillExists: false,
           },
         },
         {
@@ -361,20 +392,13 @@ export const portland: CityData = {
           category: 'culture',
           title: 'Voodoo Doughnut used to be weird—now it\'s just a tourist trap',
           body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was a genuinely strange idea. They sold a Pepto-Bismol doughnut and a NyQuil-frosted doughnut before the FDA shut that down. It was weird in the way Portland used to be weird—unselfconscious, a little gross, and doing it for the bit. Then it got famous. Now there are locations in multiple states, the lines are full of tourists with selfie sticks, and every local will tell you to go to Blue Star or Pip\'s Original instead. Voodoo isn\'t weird anymore. It\'s a brand. And that might be the most Portland story of all.',
-          year: '2003',
           image: {
             src: '/portland/curiosities/voodoo.png',
             alt: 'Voodoo Doughnut shop in Portland Old Town',
           },
-          sources: [
-            {
-              title: 'Our Story',
-              publisher: 'Voodoo Doughnut',
-              url: 'https://www.voodoodoughnut.com/about-voodoo-doughnut',
-            }
-          ],
           location: {
             name: 'Voodoo Doughnut Old Town',
+            mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5226,-122.6730',
             stillExists: true,
           },
         }

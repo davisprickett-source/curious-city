@@ -126,15 +126,17 @@ export function UnifiedNav({
               <Link
                 key={section.id}
                 href={href}
-                className={`group relative px-3 py-2 text-base font-medium transition-colors !min-h-0 !min-w-0 ${isActive
+                className={`group px-3 py-2 text-base font-medium transition-colors !min-h-0 !min-w-0 ${isActive
                   ? 'text-accent-600'
                   : 'text-neutral-700 hover:text-neutral-900'
                   }`}
               >
-                {section.label}
-                {!isActive && (
-                  <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-accent-600 transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                )}
+                <span className="relative inline-block">
+                  {section.label}
+                  {!isActive && (
+                    <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-accent-600 transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                  )}
+                </span>
               </Link>
             )
           })}

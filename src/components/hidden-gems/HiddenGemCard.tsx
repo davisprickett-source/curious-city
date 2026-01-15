@@ -216,9 +216,9 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
       style={{ borderTopColor: categoryStyles.borderColor }}
     >
-      {/* Left Column - Image (50%) */}
+      {/* Left Column - Image (35%) */}
       {images.length > 0 && (
-        <div className="lg:w-[50%] flex-shrink-0 relative h-full">
+        <div className="lg:w-[35%] flex-shrink-0 relative h-full">
           <ImageCarousel images={images} className="h-full w-full rounded-none" />
 
           {/* Minimalistic Expand Button - No Background */}
@@ -244,7 +244,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
         </div>
       )}
 
-      {/* Right Column - Content (50%) - Scrollable */}
+      {/* Right Column - Content (65%) - Scrollable */}
       <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
         <div className="flex-1 overflow-y-auto p-8 lg:p-10">
           {/* Header - with animation */}
