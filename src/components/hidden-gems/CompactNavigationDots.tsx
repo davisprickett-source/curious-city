@@ -58,7 +58,7 @@ export function CompactNavigationDots({ gems, activeIndex, onNavigate }: Compact
               />
 
               {/* Tooltip - appears on hover */}
-              <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+              <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
                 <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg shadow-xl whitespace-nowrap">
                   {index + 1}. {gem.name}
                 </div>

@@ -41,7 +41,7 @@ const getCardVariants = (index: number) => ({
   hidden: {
     opacity: 0,
     y: 30,
-    x: index % 2 === 0 ? -30 : 30
+    x: index % 2 === 0 ? -60 : 60
   },
   visible: {
     opacity: 1,
