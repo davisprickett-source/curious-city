@@ -117,7 +117,7 @@ export const raleigh: CityData = {
           sources: [
             {
               title: 'The Village Underground: Raleigh\'s Legendary Punk Scene',
-              url: 'https://raltoday.6amcity.com/village-underground-raleigh-nc',
+              url: 'https://hiddenhistorian.com/the-village-underground-raleighs-legendary-punk-scene',
             },
             {
               title: 'The Raleigh Underground: A Lost Phenomenon',
@@ -515,7 +515,7 @@ export const raleigh: CityData = {
           coordinates: { lat: 35.7842, lng: -78.6412 },
           hours: 'Thu-Sat 5pm-midnight',
           price: '$$-$$$',
-          website: 'https://jolieraleigh.com/',
+          website: 'https://www.restaurantjolie.com/',
           tip: 'Enter through Jolie restaurant and head downstairs — first come, first served',
           accessibility: 'Basement location; stairs only',
           images: [
@@ -1255,7 +1255,7 @@ export const raleigh: CityData = {
           coordinates: { lat: 35.7838, lng: -78.6468 },
           price: '$$$',
           hours: 'Tue-Sat 5pm-10pm, Sun 11am-2:30pm (Brunch)',
-          website: 'https://cortezraleigh.com/',
+          website: 'https://www.instagram.com/cortezraleigh/',
           instagram: '@cortezraleigh',
         },
         {
@@ -1766,7 +1766,7 @@ export const raleigh: CityData = {
             {
               type: 'article',
               title: 'The Execution of Velma Barfield',
-              publisher: 'NC Department of Natural and Cultural Resources',
+              publisher: 'NCpedia',
               url: 'https://www.ncdcr.gov/blog/2019/11/02/execution-velma-barfield',
             },
             {
@@ -1809,7 +1809,7 @@ export const raleigh: CityData = {
               title: 'Haunted History: Mordecai House',
               publisher: 'WRAL',
               year: '2019',
-              url: 'https://www.wral.com/haunted-history-mordecai-house/18704621/',
+              url: 'https://www.wral.com/story/haunted-history-mordecai-house/18704621/',
             },
             {
               type: 'article',
@@ -1819,10 +1819,9 @@ export const raleigh: CityData = {
             },
             {
               type: 'article',
-              title: 'Ghost Guild Returns to Mordecai Historic Park',
-              publisher: 'City of Raleigh',
-              year: '2023',
-              url: 'https://raleighnc.gov/news/ghost-guild-returns-mordecai-historic-park',
+              title: 'The Ghost Guild at Mordecai Historic Park',
+              publisher: 'The Ghost Guild',
+              url: 'https://theghostguild.weebly.com/',
             },
             {
               type: 'video',
@@ -1860,10 +1859,9 @@ export const raleigh: CityData = {
             },
             {
               type: 'article',
-              title: 'Raleigh\'s Year of Fear: 1996 Serial Killings',
-              publisher: 'ABC11',
-              year: '2021',
-              url: 'https://abc11.com/raleigh-serial-killer-1996-murders-john-williams/11054832/',
+              title: 'John Williams Jr.',
+              publisher: 'Murderpedia',
+              url: 'https://murderpedia.org/male.W/w/williams-john-jr.htm',
             },
             {
               type: 'article',

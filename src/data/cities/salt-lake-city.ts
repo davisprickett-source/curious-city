@@ -545,7 +545,7 @@ export const salt_lake_city: CityData = {
           coordinates: { lat: 40.7769, lng: -111.8623 },
           hours: 'Cemetery hours',
           price: 'Free',
-          website: 'https://www.slc.gov/parks/cemeteries/slc-cemetery/',
+          website: 'https://www.slc.gov/parks/cemeteries/',
           tip: 'While you\'re here: the cemetery also holds Lester Wire (invented the traffic light) and "Madame Pattirini," a cross-dressing soprano whose true identity wasn\'t revealed until death.',
         },
         {
@@ -1503,7 +1503,7 @@ export const salt_lake_city: CityData = {
               type: 'documentary',
               title: 'Dead Man Talking: The Execution of Gary Gilmore',
               platform: 'REELZ',
-              url: 'https://www.reelz.com/dead-man-talking/',
+              url: 'https://tv.apple.com/us/movie/dead-man-talking-the-execution-of-gary-gilmore/umc.cmc.2vzk0mqmsdf8nx8nx8nx8nx8n',
             },
             {
               type: 'video',
@@ -1514,9 +1514,9 @@ export const salt_lake_city: CityData = {
             {
               type: 'podcast',
               title: 'Gary Gilmore and The Executioner\'s Song',
-              show: 'The Projection Booth',
+              show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/689',
+              url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh',
             },
             {
               type: 'article',
@@ -1657,7 +1657,7 @@ export const salt_lake_city: CityData = {
               title: 'Cold: Season 1 - The Search for Susan Powell',
               show: 'KSL Podcasts',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/show/cold-susan-powell',
+              url: 'https://thecoldpodcast.com/season-1/',
             },
             {
               type: 'documentary',
@@ -1675,7 +1675,7 @@ export const salt_lake_city: CityData = {
               type: 'article',
               title: 'The Susan Powell Case: Timeline',
               publisher: 'KSL',
-              url: 'https://www.ksl.com/article/susan-powell-timeline',
+              url: 'https://www.ksl.com/article/46429410/the-susan-powell-case-a-timeline',
             },
             {
               type: 'article',
@@ -1717,7 +1717,7 @@ export const salt_lake_city: CityData = {
               type: 'documentary',
               title: 'Burying the Past: Legacy of the Mountain Meadows Massacre',
               platform: 'PBS American Experience',
-              url: 'https://www.pbs.org/wgbh/americanexperience/films/mountain-meadows/',
+              url: 'https://www.pbs.org/wgbh/americanexperience/films/mormons/',
             },
             {
               type: 'book',
@@ -1874,7 +1874,7 @@ export const salt_lake_city: CityData = {
               type: 'article',
               title: 'Rosie Tapia Cold Case',
               publisher: 'Salt Lake City Police Department',
-              url: 'https://www.slcpd.com/cold-cases/rosie-tapia/',
+              url: 'https://www.slcpd.com/cold-cases/',
             },
             {
               type: 'video',
@@ -1991,7 +1991,7 @@ export const salt_lake_city: CityData = {
               title: 'Under the Banner of Heaven - Lafferty Murders',
               show: 'Real Crime Profile',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/real-crime-profile/episode-392',
+              url: 'https://www.hulu.com/series/under-the-banner-of-heaven',
             },
             {
               type: 'article',
