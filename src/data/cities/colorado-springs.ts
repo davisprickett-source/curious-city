@@ -159,8 +159,8 @@ export const colorado_springs: CityData = {
           id: 'cos-curiosity-5',
           type: 'curiosity',
           category: 'legend',
-          title: 'An elephant caddied at the Broadmoor (then got taxidermied)',
-          body: 'In the 1930s, Tessie the elephant was the Broadmoor resort\'s mascot. She reportedly carried golf bags for guests and appeared at events, because nothing says "luxury mountain resort" like a pachyderm caddy. When she died, her hide was preserved and mounted in the resort for decades. The tradition of eccentric animal mascots continued until the 1970s, when someone finally asked, "Why?"',
+          title: 'A luxury hotel kept an elephant as a caddy (then taxidermied it)',
+          body: 'In the roaring 1930s, nothing said "luxury mountain resort" quite like having your golf bag carried by a pachyderm. Tessie, a full-grown elephant, was the unofficial mascot of The Broadmoor in Colorado Springs, reportedly caddying for guests and appearing at lavish events. The image of a majestic elephant patiently waiting as millionaires putted through a round is pure Jazz Age excess. When Tessie shuffled off this mortal coil, The Broadmoor, in a move of questionable taste, had her hide preserved and mounted. She remained on display in the hotel for decades, a silent, stuffed testament to an era when eccentricity knew no bounds. The tradition of absurd animal mascots continued for decades, until someone finally had the good sense to ask, "Why?"',
           images: [
             {
               src: '/colorado-springs/curiosities/broadmoor-1.png',
@@ -169,7 +169,7 @@ export const colorado_springs: CityData = {
             {
               src: '/colorado-springs/curiosities/broadmoor-2.png',
               alt: 'Historic photo of The Broadmoor resort',
-            },
+            }
           ],
           source: 'Broadmoor Hotel archives',
           location: {
@@ -323,7 +323,7 @@ export const colorado_springs: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Miners stole $20 million in gold—one lunch pail at a time',
-          body: 'During the 1890s Cripple Creek gold rush, "highgrading" became an art form. Miners hid ore in hollowed-out boot heels, reinforced lunch pails with shoulder straps to handle the extra weight, wore pocket belts stuffed with rocks, and even ground ore to dust and rolled around in it before leaving. The stolen gold ended up at crooked assay offices that operated as fences—a network so organized it became "a regular business with collection routes." Mine owners fought back with strip searches and company-issued clothes, but over 25 years, an estimated $20 million in gold walked out of the mines one shift at a time.',
+          body: 'During the 1890s Cripple Creek gold rush, "highgrading" wasn\'t just theft; it was an art form. Miners, faced with meager wages, developed ingenious methods to smuggle raw ore out of the mines. They hid gold in hollowed-out boot heels, wore pocket belts stuffed with heavy rocks, and even ground high-grade ore into dust, then rolled in it like pigs in mud, shaking it out later. The most brazen even reinforced their lunch pails with false bottoms and shoulder straps to handle the extra weight. Over 25 years, an estimated $20 million in gold (worth nearly $700 million today) literally walked out of the mines, one shift at a time. Mine owners fought back with brutal strip searches, company-issued clothes, and surveillance, but the miners, driven by desperation and the lure of easy riches, always found a way. Cripple Creek was a Wild West gold rush where the real treasure wasn\'t just in the ground, but in the miners\' pockets.',
           images: [
             {
               src: '/colorado-springs/curiosities/mining-1.png',

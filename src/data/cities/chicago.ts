@@ -184,8 +184,8 @@ export const chicago: CityData = {
           id: 'curiosity-1',
           type: 'curiosity',
           category: 'legend',
-          title: 'Lake Michigan once had its own pirate king',
-          body: 'In 1850, James Strang led a breakaway Mormon sect to Beaver Island in northern Lake Michigan, crowned himself king, and got busy with the whole monarchy thing. He minted his own currency, raided passing ships, and ruled with absolute authority—because apparently the Great Lakes needed a supervillain. His kingdom lasted six years until two disgruntled subjects shot him. America\'s only monarchy ended not with revolution, but with poor employee relations.',
+          title: 'Lake Michigan had a pirate king who was also a state legislator',
+          body: 'In 1850, James Strang didn\'t just start a cult; he founded a sovereign monarchy on Beaver Island in northern Lake Michigan. A breakaway Mormon leader who claimed to be Joseph Smith\'s true heir, Strang was crowned "King James I" in an elaborate ceremony complete with a red robe and a tin crown. He had a royal palace, a royal printing press, and a royal navy of pirates who raided mainland towns. The wildest part? The U.S. government prosecuted him for treason and lost, so he promptly got elected to the Michigan House of Representatives. King James made laws for the state by day and ruled his island kingdom by night. His reign ended in 1856 when two of his own disgruntled subjects assassinated him—mostly because he forced all women on the island to wear bloomers. It was the only monarchy in American history, and it died over a dress code.',
           images: [
             {
               src: '/chicago/curiosities/weird-king.png',
@@ -203,7 +203,7 @@ export const chicago: CityData = {
           type: 'curiosity',
           category: 'science',
           title: 'The first nuclear reaction happened under a squash court',
-          body: 'December 2, 1942. Beneath a football stadium, Enrico Fermi split an atom. The reaction lasted 28 minutes. Nobody told the city. No evacuation plan, no warning—just scientists casually splitting atoms under Stagg Field while students attended classes above. The Atomic Age began with spectacularly poor risk assessment. Today a Henry Moore sculpture marks the spot where it happened.',
+          body: 'On December 2, 1942, the Atomic Age was born not in a hardened bunker, but beneath the bleachers of a university squash court, while oblivious undergraduates studied poetry just yards away. Italian physicist Enrico Fermi and his team assembled "Chicago Pile-1"—a crude pile of 40,000 black graphite bricks—right in the heart of a densely populated metropolis. The risk assessment was terrifyingly casual: no containment dome, no cooling system, and no evacuation plan for the millions of Chicagoans outside.\n\nThe safety protocols were medieval. Three graduate students dubbed the "Suicide Squad" stood atop the reactor clutching buckets of cadmium slop to dump on the pile if the physics went sideways. A fourth man, Norman Hilberry, stood ready with a hardware store axe to sever the rope holding the emergency control rod. This is the legendary origin of the term "SCRAM" (Safety Control Rod Axe Man)—still the universal industry term for an emergency reactor shutdown today. Before we had digital kill-switches, we had a guy with a hatchet. They bottled a star for 28 minutes, then Fermi quietly ordered the reaction stopped. There were no speeches; they simply toasted the breakthrough with a bottle of Chianti sipped from paper cups. The coded message to Washington was cryptic but clear: "The Italian navigator has landed in the new world."',
           images: [
             {
               src: '/chicago/curiosities/reactor-1.png',
@@ -229,8 +229,8 @@ export const chicago: CityData = {
           id: 'curiosity-3',
           type: 'curiosity',
           category: 'history',
-          title: 'The city was raised 14 feet while people kept shopping',
-          body: 'Chicago was built on a swamp. Literally. Sewage pooled in the streets. Instead of moving like normal cities, engineers lifted the entire downtown—14 feet up—buildings, sidewalks, everything. The Briggs House hotel rose mid-dinner service while oblivious guests kept eating, unaware their building was levitating. Workers slid new foundations underneath. Chicago rose from the mud without missing brunch.',
+          title: 'The city was lifted 14 feet into the air without spilling a drink',
+          body: 'By the 1850s, Chicago was drowning in mud and sewage with nowhere for it to drain. Instead of relocating, the city decided to simply elevate itself above the problem. In a feat of synchronized brute force, engineers placed thousands of jackscrews under massive brick buildings. At the sound of a foreman\'s whistle, armies of men would turn their screws in unison, inching entire city blocks upward without cracking a single window. Life continued uninterrupted inside. The five-story Briggs House hotel was hoisted 14 feet into the air while guests dined in the restaurant, completely unaware that their roast beef was ascending. It was engineering as performance art—a city deciding that if the ground wasn\'t good enough, it would just build a new floor.',
           images: [
             {
               src: '/chicago/curiosities/raising-1.png',
@@ -251,8 +251,8 @@ export const chicago: CityData = {
           id: 'curiosity-4',
           type: 'curiosity',
           category: 'history',
-          title: 'The Eastland killed more people than the Titanic—at the dock',
-          body: 'On July 24, 1915, the SS Eastland rolled over while still tied to the Chicago River wharf, killing 844 people headed to a company picnic. The ship never left the dock. Passengers were trapped between decks in the capsized hull 20 feet from shore. It remains the deadliest single-vessel disaster in Great Lakes history, yet the Titanic gets all the movies. Geography is destiny, even in tragedy.',
+          title: 'The shipwreck that killed more people than the Titanic—at the dock',
+          body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy. As thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passerby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. It remains a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
           images: [
             {
               src: '/chicago/curiosities/boat-disaster-1.png',
@@ -340,8 +340,8 @@ export const chicago: CityData = {
           id: 'curiosity-8',
           type: 'curiosity',
           category: 'legend',
-          title: 'America\'s first serial killer built a murder hotel for the World\'s Fair',
-          body: 'H.H. Holmes constructed a massive building at 63rd and Wallace for the 1893 World\'s Fair and called it "The Castle." Inside: gas lines controlled from his office, soundproof rooms, a walk-in vault, and basement chutes leading to a crematorium. He confessed to 27 murders but likely killed over 200. The building was demolished in 1938. The empty lot remains one of Chicago\'s darkest addresses.',
+          title: 'America\'s first serial killer built a hotel designed for murder',
+          body: 'While the 1893 World\'s Fair showed off the best of civilization, H.H. Holmes was busy running its dark reflection just blocks away. He constructed a three-story "Murder Castle" at 63rd and Wallace specifically designed to process victims like livestock. The architecture was a weapon: staircases to nowhere, doors opening to brick walls, soundproof bedrooms with gas jets controlled from his office, and a greased chute leading directly to a basement crematorium. He preyed on the thousands of transient women flooding the city for the Fair, turning their anonymity into his cover. "I was born with the devil in me," he later confessed. He claimed 27 victims; the real number is likely in the hundreds. The Castle is gone, but the post office that stands there now feels famously cold.',
           images: [
             {
               src: '/chicago/curiosities/the-castle.png',
@@ -358,8 +358,8 @@ export const chicago: CityData = {
           id: 'curiosity-9',
           type: 'curiosity',
           category: 'science',
-          title: 'Engineers reversed the Chicago River to save the city',
-          body: 'By the 1880s, Chicago\'s sewage flowed directly into Lake Michigan—the same lake that supplied drinking water. Typhoid and cholera killed thousands. In 1900, engineers accomplished the impossible: they reversed the flow of the Chicago River using locks and canals, sending waste toward the Mississippi instead. St. Louis objected strenuously. Chicago didn\'t care. The river still flows backward today.',
+          title: 'Reversing a river just to flush the toilet',
+          body: 'By 1900, Chicago had a problem: the river was an open sewer flowing directly into Lake Michigan, the city\'s only source of drinking water. The solution wasn\'t to stop polluting—that would be un-American. Instead, engineers did something godlike and deeply arrogant: they reversed the flow of the Chicago River. Using a massive system of locks and canals, they forced the river to flow backwards, sending all of Chicago\'s raw sewage down the Mississippi toward St. Louis. St. Louis sued immediately. The Supreme Court eventually sided with them, but by then the canal was already finished and the sewage was already flowing. "Too late," Chicago essentially shrugged. We are the only city on Earth that looked at geography and said, "No, I don\'t think so."',
           images: [
             {
               src: '/chicago/curiosities/reverse-1.png',
@@ -380,8 +380,8 @@ export const chicago: CityData = {
           id: 'curiosity-11',
           type: 'curiosity',
           category: 'culture',
-          title: 'Mrs. O\'Leary\'s cow was officially exonerated 126 years later',
-          body: 'The story that Catherine O\'Leary\'s cow kicked over a lantern and started the Great Chicago Fire was fabricated by reporter Michael Ahern, who later admitted he invented it for a better story. The O\'Learys were poor Irish immigrants—convenient scapegoats. In 1997, the Chicago City Council officially cleared Catherine O\'Leary and her cow. It took 126 years to apologize. The real cause remains unknown.',
+          title: 'Mrs. O\'Leary\'s cow was the first victim of fake news',
+          body: 'The legend is clean: a clumsy cow, a kicked lantern, a city in flames. The reality is dirtier. Reporter Michael Ahern admitted years later he made the whole thing up because "cow kicks lantern" sold more papers than "dry weather and wood construction." In 1871, Chicago was a tinderbox—wooden streets, wooden sidewalks, wooden buildings, and a drought. It was going to burn; the cow was just the scapegoat for a city built of kindling. The Chicago City Council officially exonerated Catherine O\'Leary and her bovine in 1997, 126 years too late. Today, the Chicago Fire Academy stands on the exact spot of the O\'Leary barn where the fire started, training cadets on the ashes of the lie.',
           images: [
             {
               src: '/chicago/curiosities/oleary-cow.png',
@@ -420,8 +420,8 @@ export const chicago: CityData = {
           id: 'curiosity-13',
           type: 'curiosity',
           category: 'architecture',
-          title: 'The world\'s first skyscraper rose from Chicago\'s ashes',
-          body: 'Just 14 years after the Great Fire leveled the city, William Le Baron Jenney completed the Home Insurance Building in 1885—the world\'s first skyscraper. At 10 stories, it pioneered the steel-skeleton construction that made every modern high-rise possible. Every tall building on Earth descends from this Chicago innovation. The city demolished it in 1931 to build something taller, because sentimentality is for cities that lose fires.',
+          title: 'The skyscraper was invented because the fire cleared the lot',
+          body: 'The Great Fire of 1871 didn\'t just destroy Chicago; it rebooted it. With the wooden city erased, architects like William Le Baron Jenney had a blank canvas and a new mandate: build it back, but make it fireproof. In 1885, Jenney completed the Home Insurance Building—not just a tall building, but a new species. Instead of thick masonry walls holding up the weight, he used a skeleton of steel beams. The walls hung like curtains. It was only 10 stories tall, but it was the genetic ancestor of every skyline on Earth. In true Chicago fashion, we demolished the world\'s most important building in 1931 to build a bigger bank. Sentimentality is for cities that don\'t have a future to build.',
           images: [
             {
               src: '/chicago/curiosities/first-skyscraper.png',
@@ -438,8 +438,8 @@ export const chicago: CityData = {
           id: 'curiosity-14',
           type: 'curiosity',
           category: 'culture',
-          title: 'Chicago\'s alleys are longer than its streets',
-          body: 'Chicago has 1,900 miles of alleyways—more than its actual streets. The grid of back alleys was designed to hide garbage, deliveries, and utilities from view, creating a shadow city behind every block. Today the alleys host garage parties, murals, street art, and an entire subculture invisible from the front. Chicago has two faces. The alley is the honest one.',
+          title: 'Chicago has no trash on the curb because it has a shadow city',
+          body: 'New York piles its garbage on the sidewalk like a medieval village. Chicago has a better system. Thanks to the 1909 Plan of Chicago, the city is built on a "Superblock" grid that mandates alleyways for every block. Chicago has 1,900 miles of them—more than its actual streets. These alleys form a hidden, secondary city where the ugly business of urban life happens: trash, deliveries, utilities, and garage parties. It keeps the front doors pristine by hiding the mess out back. The alley is Chicago\'s backstage, its subconscious, and the reason you can walk down Michigan Avenue in August without smelling rotting garbage.',
           images: [
             {
               src: '/chicago/curiosities/alley.png',

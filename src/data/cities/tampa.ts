@@ -70,10 +70,10 @@ export const tampa: CityData = {
           id: 'tam-curiosity-1',
           type: 'curiosity',
           category: 'legend',
-          title: 'Tampa\'s favorite pirate never existed',
+          title: 'Tampa\'s favorite pirate never existed (but the party is real)',
           featured: true,
           featuredOrder: 1,
-          body: 'José Gaspar—the fearsome pirate who supposedly terrorized the Gulf Coast, amassed untold riches, and gives Tampa\'s beloved Gasparilla festival its name—almost certainly never existed. There\'s no historical record of him in Spanish naval archives, no contemporary accounts, no bounty notices, nothing. The legend was cooked up around 1900 by a publicist working for the Charlotte Harbor and Northern Railway, who needed a hook to lure tourists to southwest Florida. He invented a colorful backstory: Gaspar was a disgraced Spanish naval officer who turned pirate, captured princesses, buried treasure on Gasparilla Island, and dramatically killed himself rather than be captured by the U.S. Navy in 1821. It\'s complete fiction—but Tampa ran with it. Every January since 1904, the city hosts one of America\'s largest parades: a fully-rigged pirate ship "invades" the harbor, the mayor surrenders the city keys, and half a million people line Bayshore Boulevard to watch krewes throw beads from floats. The whole thing celebrates a man who never lived. Tampa knows. Tampa doesn\'t care. The party\'s too good.',
+          body: 'José Gaspar—the legendary, fearsome pirate who supposedly terrorized the Gulf Coast—almost certainly never existed. His swashbuckling tale of Spanish naval glory, buried treasure, and a dramatic final battle was cooked up around 1900 by a publicist for the Charlotte Harbor and Northern Railway. He needed a hook to lure tourists to southwest Florida. He invented Gaspar, a disgraced Spanish officer turned buccaneer who captured princesses and buried riches. It\'s pure fiction. But Tampa ran with it. Every January since 1904, the city hosts the Gasparilla Pirate Festival, one of America\'s largest parades, where a fully-rigged pirate ship "invades" the harbor, the mayor surrenders the city keys, and half a million people line the streets. Tampa knows the pirate is fake. Tampa doesn\'t care. The party, the beads, and the civic myth are simply too good to let a little thing like historical accuracy get in the way. After all, what\'s a city without its legends?',
           year: '1904',
           image: {
             src: '/tampa/curiosities/gasparilla.png',
@@ -129,10 +129,10 @@ export const tampa: CityData = {
           id: 'tam-curiosity-7',
           type: 'curiosity',
           category: 'history',
-          title: 'Cigar rollers hired readers to radicalize them with literature',
+          title: 'Cigar factories hired readers to radicalize their workers with Cervantes and Marx',
           featured: true,
           featuredOrder: 4,
-          body: 'Before podcasts, before radio, Ybor City\'s cigar factories invented their own form of entertainment: the lector. These weren\'t just readers—they were performers, educators, and agitators. Hired by the workers themselves (who pooled pennies from each day\'s wages), lectors stood on elevated wooden platforms called tribunas and read aloud for hours while hundreds of workers hand-rolled cigars below. Mornings might start with newspapers—La Traducción, El Internacional, or papers from Havana—covering labor movements, anarchist theory, and Cuban independence. Afternoons shifted to serialized novels: Cervantes, Zola, Tolstoy, Victor Hugo. The Count of Monte Cristo was so popular in Tampa\'s factories that a cigar brand was named after it—Montecristo cigars exist because Ybor City rollers loved Dumas. Factory owners hated the practice, correctly suspecting that lectors were radicalizing their workforce. In 1931, during a bitter strike, owners banned lectors entirely and replaced them with radios playing sanitized content. The tradition died, but it had already done its work: Ybor\'s immigrant workers were among the most literate, politically engaged laborers in America.',
+          body: 'Long before radio, television, or podcasts, Ybor City’s cigar factories had their own unique form of mass media: the lector. Hired by the workers themselves (who pooled their hard-earned pennies), these professional readers sat on elevated tribunas and read aloud for hours. Mornings might be dedicated to newspapers, covering labor movements and Cuban independence. Afternoons, however, were for literature: serialized novels by Cervantes, Zola, and Tolstoy, and crucially, works by Marx and Engels. The Count of Monte Cristo was so popular, a cigar brand was named after it. Factory owners hated the practice, correctly realizing that the lectors were radicalizing their immigrant workforce. During a bitter strike in 1931, owners banned lectors entirely, replacing them with radios playing sanitized content. But the seeds were already sown: Ybor City’s cigar rollers became some of the most literate, politically engaged, and unionized laborers in America, a testament to the power of stories read aloud—even when those stories were about revolution.',
           year: '1890s',
           image: {
             src: '/tampa/curiosities/rector.png',
@@ -2070,6 +2070,6 @@ export const tampa: CityData = {
           source: 'Tampa Bay Times, Creative Loafing Tampa',
         },
       ],
-    },
+    }, // Added missing comma
   ],
 }

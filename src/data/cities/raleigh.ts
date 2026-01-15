@@ -135,7 +135,7 @@ export const raleigh: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'The city is named after a man whose severed head became a family heirloom',
-          body: 'Sir Walter Raleigh never set foot in America. When he was beheaded in 1618, his preserved head was presented to his wife as a grim keepsake—and the family kept it for 29 years. The decapitated head outlasted most marriages. The city of Raleigh is named after this man whose severed head became a macabre family treasure.',
+          body: 'Sir Walter Raleigh, the English explorer and favorite of Queen Elizabeth I, never set foot in the New World. He was executed in London in 1618, beheaded for treason. But his story in Raleigh, North Carolina, doesn\'t end there. After his execution, his wife, Bess Throckmorton, received his embalmed head as a grim keepsake. For the next 29 years, she reportedly carried it with her in a velvet bag, displaying it as a macabre memento. His son, Carew Raleigh, inherited the relic, holding onto it until his own death. The city of Raleigh is named after this man whose severed head traveled as a family heirloom for decades—a strange, dark piece of history for the genteel Southern capital. You\'d think a city named after him would at least keep all its parts together.',
           year: '1618',
           image: {
             src: '/raleigh/curiosities/walter-raleigh.webp',
@@ -290,8 +290,8 @@ export const raleigh: CityData = {
           id: 'curiosity-11',
           type: 'curiosity',
           category: 'architecture',
-          title: 'The world\'s first column-free roof was built here for cattle shows',
-          body: 'In 1952, the North Carolina State Fair needed a livestock pavilion. What they got was the most important architectural innovation since the flying buttress. The J.S. Dorton Arena — designed by Polish-born architect Matthew Nowicki, who died in a plane crash before seeing it completed — featured the world\'s first column-free suspended roof: two intersecting parabolic arches supporting a saddle-shaped concrete roof that spans 300 feet without a single interior column. The engineering was so novel that contractors initially refused to construct it. Today, every domed stadium, every convention center, every cable-stayed arena in the world owes something to this building designed to host cattle shows and 4-H competitions. The American Institute of Architects calls it one of the most significant buildings in American history. And twice a year, during the state fair, people walk past it to get funnel cakes without realizing they\'re standing next to a genuine masterpiece.',
+          title: 'The world\'s first column-free roof was built here—for cattle shows',
+          body: 'In 1952, when the North Carolina State Fair needed a new livestock pavilion, they didn\'t just get a barn; they got an architectural revolution. The J.S. Dorton Arena, designed by Polish-born architect Matthew Nowicki, featured the world\'s first column-free suspended roof. Two massive, intersecting parabolic arches support a saddle-shaped concrete roof that spans 300 feet without a single interior column, creating an uninterrupted space for livestock and spectators. The engineering was so audacious that contractors initially refused to build it. Nowicki tragically died in a plane crash before seeing his masterpiece completed. Today, every domed stadium, every convention center, every cable-stayed arena in the world owes a debt to this building, designed to host cattle shows and 4-H competitions. The American Institute of Architects calls it one of the most significant buildings in American history. And twice a year, during the state fair, thousands walk past it to get funnel cakes, completely unaware they\'re standing next to a genuine architectural marvel.',
           year: '1952',
           image: {
             src: '/raleigh/curiosities/dorton-arena.png',
@@ -1067,11 +1067,11 @@ export const raleigh: CityData = {
           instagram: '@blackwhiteroasters',
           images: [
             {
-              src: '/raleigh/coffee/black-white-placeholder-1.jpg',
+              src: '/raleigh/coffee/littlenative.png',
               alt: 'Black & White Coffee Roasters exterior placeholder',
             },
             {
-              src: '/raleigh/coffee/black-white-placeholder-2.jpg',
+              src: '/raleigh/coffee/littlenative2.png',
               alt: 'Black & White Coffee Roasters interior placeholder',
             },
           ],

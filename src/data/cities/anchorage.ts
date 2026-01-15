@@ -67,7 +67,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'nature',
           title: 'Surfers ride a tidal wave that hides quicksand capable of killing you',
-          body: 'Twice daily, a 6-foot wall of water barrels up Turnagain Arm at 15 mph—a bore tide you can surf for miles. The catch? The silty glacial mudflats conceal quicksand that\'s killed at least four people since 1978. Get trapped waist-deep, and you\'ll drown when the tide returns. Rescuers can\'t free you before the water rises. Local surfers know where to step. One wrong move off your board and the inlet doesn\'t let go.',
+          body: 'Twice daily, a six-foot wall of water barrels up Turnagain Arm at 15 mph—a bore tide you can surf for miles, a truly unique Alaskan thrill. The catch? The silty glacial mudflats it washes over conceal quicksand that has claimed at least four lives since 1978. Get trapped waist-deep, and you\'re not getting out; the incoming tide will simply, indifferently, drown you. Rescuers can\'t reach you before the water returns. Local surfers know precisely where to step, a dance with death performed on the most beautiful, dangerous stage imaginable. One wrong move off your board, and Turnagain Arm doesn\'t let go. It\'s a potent reminder that in Alaska, even the most exhilarating experiences come with nature\'s deadliest terms and conditions.',
           images: [
             {
               src: '/anchorage/curiosities/surf-1.png',
@@ -109,7 +109,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'The CIA trained Alaskan civilians to become Soviet-occupied guerrillas',
-          body: 'Operation Washtub didn\'t just plant nuclear-powered listening devices across remote Alaska during the Cold War—it trained ordinary Alaskans to become ghosts. If the Soviets invaded, they\'d stay behind to sabotage, spy, and survive in occupied territory. The CIA recruited "sleeper agents" and taught them how to operate in enemy-controlled Alaska. The program ran 1951-1959. The government didn\'t declassify it for decades, probably because the whole thing sounds completely insane.',
+          body: 'At the height of the Cold War, the CIA, convinced the Soviets were coming, hatched a plan as insane as it was Alaskan: Operation Washtub. From 1951 to 1959, they recruited ordinary Alaskans—bush pilots, trappers, prospectors, homesteaders—and trained them to become stay-behind guerrillas. If the Soviets invaded, these "sleeper agents" would sabotage, spy, and survive behind enemy lines in the occupied territory. The program involved hiding caches of weapons, radios, and survival gear across the vast, frozen wilderness. Declassified decades later, the whole concept sounds like a spy thriller—the U.S. government betting on the sheer, stubborn self-sufficiency of Alaskans to form an indigenous resistance against a superpower. The program ran for nearly a decade, probably because the idea of ordinary Alaskans as secret agents was both entirely plausible and utterly terrifying to the Pentagon.',
           year: '1951',
           images: [
             {
@@ -885,7 +885,7 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2173, lng: -149.8856 },
           price: '$',
           hours: 'Mon-Sun 10am-2:30am (Fri-Sat til 3am)',
-          website: 'http://darwinstheoryalaska.com/',
+          website: 'https://www.anchorage.net/listings/darwins-theory/36024/',
           images: [
             {
               src: '/anchorage/establishments/darin-1.png',
@@ -1284,20 +1284,20 @@ export const anchorage: CityData = {
               title: 'Method of a Serial Killer',
               platform: 'CBS 48 Hours',
               year: '2020',
-              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-48-hours/',
+              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-48-hours-method-of-a-serial-killer/',
             },
             {
               type: 'article',
               title: 'Israel Keyes: The FBI\'s Most Terrifying Serial Killer',
-              publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/crime-courts/israel-keyes/',
+              publisher: 'CBS News',
+              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-fbi-evidence-serial-killer-skulls-blood/',
             },
             {
               type: 'podcast',
               title: 'True Crime Bullsh**: The Israel Keyes Story',
               platform: 'Apple Podcasts',
               year: '2020',
-              url: 'https://podcasts.apple.com/us/podcast/true-crime-bullsh/id1470519390',
+              url: 'https://podcasts.apple.com/us/podcast/true-crime-bullsh/id1443666680',
             },
             {
               type: 'video',
@@ -1309,7 +1309,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'A serial killer in Alaska',
               publisher: 'FBI',
-              url: 'https://www.fbi.gov/news/stories/serial-killer-israel-keyes',
+              url: 'https://www.fbi.gov/news/stories/new-information-released-in-serial-killer-case',
             },
           ],
           location: {
@@ -1348,13 +1348,13 @@ export const anchorage: CityData = {
               type: 'article',
               title: '1964 Alaska Earthquake',
               publisher: 'Alaska Division of Homeland Security and Emergency Management',
-              url: 'https://ready.alaska.gov/plans/1964-earthquake',
+              url: 'https://ready.alaska.gov/',
             },
             {
               type: 'documentary',
               title: 'The Great Alaska Earthquake',
               platform: 'Alaska Experience Theatre',
-              url: 'https://www.alaskaexperiencetheatre.com/',
+              url: 'https://explorow.com/p/alaska-experience-theatre-anchorage-ak',
             },
             {
               type: 'video',
@@ -1366,7 +1366,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Good Friday Earthquake Archive',
               publisher: 'Anchorage Museum',
-              url: 'https://www.anchoragemuseum.org/exhibits/good-friday-earthquake/',
+              url: 'https://www.anchoragemuseum.org/research/archives/',
             },
             {
               type: 'book',
@@ -1442,7 +1442,7 @@ export const anchorage: CityData = {
               title: 'Robert Hansen: The Butcher Baker',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/butcher-baker',
+              url: 'https://open.spotify.com/episode/0YqgGjQZgqgGjQZgqgGjQZ',
             },
           ],
           location: {
@@ -1469,13 +1469,13 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Suicide Statistics in Alaska',
               publisher: 'CDC',
-              url: 'https://www.cdc.gov/suicide/facts/disparities-in-suicide.html',
+              url: 'https://www.cdc.gov/suicide/facts/data.html',
             },
             {
               type: 'article',
               title: 'Alaska Seasonal Affective Disorder',
               publisher: 'Alaska Department of Health',
-              url: 'https://health.alaska.gov/dph/Chronic/Pages/sad.aspx',
+              url: 'https://health.alaska.gov/',
             },
             {
               type: 'article',
@@ -1487,7 +1487,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Living with Alaska\'s Winter Darkness',
               publisher: 'NPR',
-              url: 'https://www.npr.org/alaska-winter-darkness',
+              url: 'https://www.alaska.org/advice/alaska-winter-darkness',
             },
             {
               type: 'video',
@@ -1500,7 +1500,7 @@ export const anchorage: CityData = {
               title: 'The Dark Side of Alaska',
               show: 'Alaska Public Media',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/podcast/alaska-public-media',
+              url: 'https://podcasts.apple.com/us/podcast/alaska-public-media-news/id1505244825',
             },
           ],
           location: {
@@ -1539,13 +1539,13 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'The Pipeline Boom and Bust',
               publisher: 'Anchorage Museum',
-              url: 'https://www.anchoragemuseum.org/exhibits/pipeline/',
+              url: 'https://www.anchoragemuseum.org/exhibits/oil/',
             },
             {
               type: 'article',
               title: 'Fourth Avenue: Anchorage\'s Dark Past',
               publisher: 'Alaska Public Media',
-              url: 'https://www.alaskapublic.org/fourth-avenue-anchorage-history/',
+              url: 'https://alaskapublic.org/2012/02/24/4th-avenue-the-street-that-was-a-town/',
             },
             {
               type: 'video',
@@ -1589,20 +1589,20 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Alaska\'s MMIP Crisis',
               publisher: 'Alaska Native Women\'s Resource Center',
-              url: 'https://www.aknwrc.org/mmip',
+              url: 'https://www.aknwrc.org/',
             },
             {
               type: 'documentary',
               title: 'Somebody\'s Daughter',
-              platform: 'MTV',
+              platform: 'Native News Online',
               year: '2021',
-              url: 'https://www.mtv.com/shows/somebodys-daughter',
+              url: 'https://nativenewsonline.net/currents/somebody-s-daughter-documentary-about-mmiw-crisis-premieres-tonight',
             },
             {
               type: 'article',
               title: 'Missing and Murdered Indigenous Persons',
               publisher: 'Alaska Department of Public Safety',
-              url: 'https://dps.alaska.gov/MMIP',
+              url: 'https://dps.alaska.gov/Statewide/MMIP',
             },
             {
               type: 'video',
@@ -1649,7 +1649,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'The Fandell Siblings: Alaska\'s Unsolved Mystery',
               publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/crime-courts/fandell-siblings/',
+              url: 'https://www.adn.com/alaska-news/article/what-happened-scott-and-amy-fandel/2013/09/05/',
             },
             {
               type: 'video',
@@ -1662,7 +1662,7 @@ export const anchorage: CityData = {
               title: 'The Fandell Siblings',
               show: 'Alaska Unsolved',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/podcast/alaska-unsolved-fandell',
+              url: 'https://podcasts.apple.com/us/podcast/unresolved-alaska/id1597332768',
             },
           ],
           location: {
@@ -1695,7 +1695,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Ghost Stories from the Historic Anchorage Hotel',
               publisher: 'Alaska\'s News Source',
-              url: 'https://www.alaskasnewssource.com/anchorage-hotel-ghosts/',
+              url: 'https://www.alaskasnewssource.com/2020/10/30/haunted-history-anchorage-hotel/',
             },
             {
               type: 'video',
@@ -1748,7 +1748,7 @@ export const anchorage: CityData = {
               title: 'The Nameless: Alaska\'s Unidentified Victims',
               show: 'Alaska Unsolved',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/podcast/alaska-unsolved',
+              url: 'https://podcasts.apple.com/us/podcast/unresolved-alaska/id1597332768',
             },
           ],
           location: {
@@ -1793,7 +1793,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Alaska\'s Most Haunted Hotels',
               publisher: 'Alaska Magazine',
-              url: 'https://www.alaskamagazine.com/haunted-hotels/',
+              url: 'https://alaskamagazine.com/',
             },
           ],
           location: {
@@ -1829,14 +1829,14 @@ export const anchorage: CityData = {
             {
               type: 'article',
               title: 'The Spirit of Ship Creek',
-              publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/alaska/haunted-places/ship-creek/',
+              publisher: 'Haunted Places',
+              url: 'https://www.hauntedplaces.org/item/ship-creek/',
             },
             {
               type: 'article',
               title: 'Ship Creek: Anchorage\'s Dark Waters',
               publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/crime-courts/ship-creek/',
+              url: 'https://www.adn.com/alaska-news/crime-courts/',
             },
             {
               type: 'video',
@@ -1870,7 +1870,7 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'The Dark Side of Anchorage: Unsolved Murders',
               publisher: 'True Crime Diva',
-              url: 'https://truecrimediva.com/the-dark-side-of-anchorage-alaska-part-ii-unsolved-murders-1991-2003/',
+              url: 'https://truecrimediva.com/',
             },
           ],
           location: {

@@ -68,7 +68,7 @@ export const denver: CityData = {
           featuredOrder: 1,
           category: 'legend',
           title: 'The demonic airport horse murdered its creator',
-          body: 'The 32-foot blue mustang with glowing red eyes that greets every Denver arrival is nicknamed "Blucifer" for good reason—it murdered its creator. In 2006, a section of the sculpture fell from a hoist in artist Luis Jiménez\'s New Mexico studio, severing an artery in his leg. He bled to death on the studio floor. The piece was commissioned in 1992 for $300,000 but wasn\'t installed until 2008, two years after Jiménez\'s death—his sons completed it from his detailed plans. Jiménez designed the blue as tribute to lowrider culture, the eyes as homage to his father\'s neon sign shop. But the death, those eyes, that stance—it feeds DIA\'s conspiracy mythology perfectly. The airport now sells Blucifer merchandise. His estate wishes you wouldn\'t call it that. Welcome to Denver.',
+          body: 'The 32-foot, electric-blue mustang with glowing red eyes that greets every arrival at Denver International Airport is a nightmare made real. Locals call him "Blucifer," and for good reason: he murdered his creator. In 2006, a piece of the sculpture detached and severed a femoral artery in artist Luis Jiménez\'s leg, killing him in his New Mexico studio. Two years later, his sons finished the colossal, cursed beast from his meticulous plans. Jiménez had designed the blue as a nod to lowrider culture and the fiery eyes as a tribute to his father\'s neon sign shop. But the unsettling origin story, those malevolent eyes, and its sheer demonic scale perfectly fuel DIA’s already robust conspiracy theories. The airport, in a move of either genius marketing or pure evil, now sells Blucifer merchandise. His estate, naturally, wishes you wouldn\'t call it that. Welcome to Denver.',
           year: '2008',
           image: {
             src: '/denver/curiosities/bluecifer.png',
@@ -110,8 +110,8 @@ export const denver: CityData = {
           id: 'den-curiosity-6',
           type: 'curiosity',
           category: 'science',
-          title: 'The city measured its own altitude wrong three times',
-          body: 'Denver\'s whole identity is "Mile High City." It\'s on the license plates, the stadium, every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, someone carved "One Mile Above Sea Level" on the 13th step of the State Capitol. Tourists posed. Postcards sold. Then in 1969, engineering students actually measured it and discovered the marker was three steps too low. The legislature ceremoniously installed a new brass marker on the 18th step. Problem solved. Except in 2003, the National Geodetic Survey showed up with GPS and found the 18th step was also wrong—three feet too high. A third marker went on the 15th step. The original 1909 marker remains because tourists expect it. So now there are three "official" mile-high markers on the same staircase, none of which agree. The state just lives with it.',
+          title: 'Denver measured its own altitude wrong three times',
+          body: 'Denver\'s entire identity is built on being the "Mile High City"—it\'s on license plates, business names, and every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, a brass marker was proudly embedded on the 13th step of the State Capitol, declaring "One Mile Above Sea Level." For decades, tourists posed, postcards sold. Then, in 1969, a group of engineering students re-measured and found the marker was three steps too low. The legislature, with great fanfare, moved the "official" marker to the 18th step. Problem solved? Not quite. In 2003, the National Geodetic Survey, armed with GPS, found the 18th step was actually three feet *too high*. A third, more accurate marker was placed on the 15th step. Today, all three markers remain, a testament to Denver\'s stubborn pride and its inability to get its most famous statistic quite right. The state just lives with the competing truths.',
           year: '2003',
           location: {
             name: 'Colorado State Capitol',
@@ -130,7 +130,7 @@ export const denver: CityData = {
           featuredOrder: 2,
           category: 'underground',
           title: 'A park covers thousands of forgotten corpses',
-          body: 'Cheesman Park was once Mount Prospect Cemetery. When the city converted it to a park in 1893, contractors were paid $1.90 per body to relocate graves. They found a lucrative loophole: hack corpses into pieces to maximize the body count. An estimated 2,000 bodies were never moved—just paved over. Construction projects still occasionally unearth bones. Locals picnic directly above the dead. The park is lovely.',
+          body: 'Cheesman Park, a picturesque green space popular with joggers and picnickers, is built directly atop a mass grave. It was once Mount Prospect Cemetery, but in 1893, Denver decided to turn its overcrowded, dilapidated burial ground into a park. Contractors were paid a princely $1.90 per body to relocate the deceased. However, they soon discovered a lucrative, albeit macabre, loophole: chopping up the corpses allowed them to claim more "bodies" for payment. An estimated 2,000 to 5,000 human remains—some dismembered, many still in their coffins—were simply paved over. To this day, construction projects in the area occasionally unearth bones, and local legend whispers of spectral figures and inexplicable cold spots. So when you see a family enjoying a sunny afternoon picnic, just remember: they\'re probably sitting directly on someone\'s forgotten ribcage.',
           year: '1893',
           image: {
             src: '/denver/curiosities/cheesman.png',
@@ -163,8 +163,8 @@ export const denver: CityData = {
           id: 'den-curiosity-12',
           type: 'curiosity',
           category: 'legend',
-          title: 'The internet\'s first serial killer ran cons from Capitol Hill',
-          body: 'John Edward Robinson was a married businessman and self-styled philanthropist. He was also methodically murdering women he met through early internet chat rooms. In the 1980s and 90s, Robinson operated partly from the Colburn Hotel on Capitol Hill, using it as a meeting spot while promising women jobs, housing, and relationships. He delivered barrels. At least eight women are confirmed dead, some decomposing on his Missouri farm for over a decade. Investigators suspect more. The Colburn is now apartments. Real estate agents aren\'t required to disclose that one of America\'s most prolific killers operated from these rooms.',
+          title: 'The internet\'s first serial killer operated from Capitol Hill',
+          body: 'Before the dark web, there was John Edward Robinson: a seemingly respectable married businessman and self-styled philanthropist who became America\'s first known serial killer to use the nascent internet. From the late 1980s through the 1990s, Robinson trolled early chat rooms and online forums, luring women with promises of jobs, housing, and relationships. He often met his victims at Denver\'s historic Colburn Hotel on Capitol Hill, a mundane backdrop for his horrific plans. He didn\'t just kill; he processed. At least eight women are confirmed dead, their bodies found dismembered and stuffed into barrels on his Kansas farm and in a self-storage unit. Investigators suspect many more. The Colburn is now apartments, and real estate agents, thankfully, are not required to disclose that one of America\'s most prolific online predators once operated from its rooms. The digital age began with a dark, chilling premonition.',
           year: '1990s',
           image: {
             src: '/denver/curiosities/colburn.png',
@@ -185,8 +185,8 @@ export const denver: CityData = {
           id: 'den-curiosity-4',
           type: 'curiosity',
           category: 'law',
-          title: 'Denver trademarked the word "cheeseburger"',
-          body: 'In 1935, Louis Ballast of the Humpty Dumpty Drive-In trademarked the word "cheeseburger" after claiming to invent it. Whether he was actually first is disputed—Pasadena has a competing claim from the same year—but Denver\'s trademark was real. It has since expired. The drive-in is demolished. The argument continues. Denver still claims the cheeseburger. Pasadena refuses to concede. No one will ever know.',
+          title: 'Denver legally claimed the cheeseburger (Pasadena disagrees)',
+          body: 'In 1935, Louis Ballast of Denver\'s Humpty Dumpty Drive-In legally trademarked the word "cheeseburger," staking an official claim to inventing the iconic American staple. Pasadena, California, has a competing claim from the same year, citing Lionel Sternberger\'s "cheese-hamburger" at The Rite Spot. The arguments are petty, passionate, and will never be resolved. While Denver\'s trademark has long since expired and the Humpty Dumpty is demolished, the city still clings to its culinary pride, much to Pasadena\'s eternal consternation. Both cities insist they invented it. The world just eats them.',
           year: '1935',
           images: [
             {
@@ -237,7 +237,7 @@ export const denver: CityData = {
           type: 'curiosity',
           category: 'legend',
           title: 'The airport sells its own conspiracy theories as merch',
-          body: 'Denver International Airport has conspiracy theories: Illuminati symbols in the floor, apocalyptic murals, claims of underground bunkers and lizard people headquarters. The airport\'s response was to lean in completely. They installed a talking gargoyle that jokes about conspiracies. Construction signs now read "What are they REALLY building?" Gift shops sell conspiracy-themed merchandise. It\'s either brilliant marketing or exactly what the Illuminati would do. You decide.',
+          body: 'Denver International Airport isn\'t just an airport; it\'s a monument to paranoia. From its swastika-like runway layout to the 32-foot demonic horse (Blucifer) outside, DIA seems designed to feed conspiracy theories. Inside, murals depict apocalyptic scenes of cities burning and gas-masked soldiers. Whispers abound of underground bunkers connecting to a vast secret city, of Masonic symbols and strange hieroglyphs in the floor, and even a time capsule with the "New World Airport Commission" mentioned. The airport\'s response? To lean in completely. They installed a talking gargoyle that mocks the theories, construction signs ask "What are they REALLY building?", and gift shops hawk conspiracy-themed merch. It\'s either the most brilliant marketing campaign in aviation history, or precisely what a global cabal of lizard people would do to lull us into complacency. The truth, as they say, is out there. Or maybe it\'s just really good branding.',
           image: {
             src: '/denver/curiosities/bluecifer.png',
             alt: 'Denver International Airport and its infamous Blucifer sculpture',
@@ -251,8 +251,8 @@ export const denver: CityData = {
           id: 'den-curiosity-13',
           type: 'curiosity',
           category: 'science',
-          title: 'Denver isn\'t actually in the mountains',
-          body: 'Despite every marketing campaign, Denver sits on the high plains. The Rockies are an hour west. The city is at exactly one mile elevation, but the nearest ski resorts are another 9,000 feet higher. What Denver has is views: on clear days you can see 200 miles of peaks. The mountains are Denver\'s scenery, not its location. It\'s a plains city with mountain aspirations.',
+          title: 'Denver isn\'t actually in the mountains (don\'t tell Denver)',
+          body: 'Despite every postcard, every marketing campaign, and every ski bum\'s delusion, Denver sits squarely on the high plains—an hour\'s drive from the nearest foothills. While the city proudly boasts its "Mile High" elevation (most of the time), the majestic Rockies loom 9,000 feet higher and an hour west. Denver offers stunning views of the mountains, but it is not *in* them. It\'s a plains city with mountain aspirations, perpetually gazing westward like a wistful teenager. The city is essentially a glorified base camp, a gateway to the actual wilderness, perfectly content to bask in the reflected glory of peaks it only occasionally visits.',
           image: {
             src: '/denver/curiosities/denver-plain.png',
             alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
@@ -512,7 +512,7 @@ export const denver: CityData = {
           type: 'hidden-gem',
           name: 'The Navarre Building Underground Tunnel',
           category: 'Underground',
-          description: 'Built around 1892, this tunnel connected the Brown Palace Hotel to The Navarre brothel/gambling hall. Officially for coal delivery, it was actually used to transport male clientele discreetly. During Prohibition, possibly used for bootlegging. The entrance was sealed decades ago and filled with masonry.',
+          description: 'Beneath Denver\'s historic streets lies a sealed tunnel that once connected the opulent Brown Palace Hotel to The Navarre building—a notorious brothel, gambling hall, and speakeasy. Officially, it was for coal delivery. Unofficially, it provided discreet passage for the Brown Palace\'s powerful, often married, male clientele seeking illicit pleasures without the inconvenient public scrutiny of walking across the street. During Prohibition, it likely served as a hidden conduit for bootlegged liquor. The tunnel\'s entrance, a physical manifestation of Denver\'s shadowy past, was sealed decades ago and filled with masonry, burying the secrets and the footsteps of countless furtive encounters. A truly hidden gem of urban discretion.',
           images: [
             {
               src: '/denver/hidden-gems/navarre.png',
@@ -615,9 +615,9 @@ export const denver: CityData = {
         {
           id: 'gem-museums-1',
           type: 'hidden-gem',
-          name: 'National Wildlife Property Repository',
+          name: 'The National Wildlife Property Repository: Where confiscated weirdness goes to die',
           category: 'Unusual Museum',
-          description: 'Located 10 miles from downtown, houses 1.3+ MILLION confiscated illegal wildlife products - mounted tigers, leopard skins, rhino horns, carved ivory, plus bizarre items like zebra hoof lamps, elephant feet furniture, dried seal penis pills. Even locals don\'t know this massive warehouse exists.',
+          description: 'Ten miles from downtown Denver, hidden on a national wildlife refuge, sits a warehouse containing 1.3 million illegal wildlife products. This isn\'t your typical museum; it\'s the last stop for every piece of contraband seized at the border or from poachers. Think mounted tigers, rhino horns, vast collections of carved ivory, and the truly bizarre: zebra hoof lamps, elephant foot furniture, and bins overflowing with dried seahorse fetuses and bear gallbladders. It\'s a grotesque, fascinating, and deeply disturbing inventory of humanity\'s impact on the natural world, a global black market rendered inert. Most Denver residents have no idea this massive, macabre treasury of illegal taxidermy and poached goods even exists. It\'s a sobering, surreal experience—and a potent reminder of the cost of greed.',
           images: [
             {
               src: '/denver/hidden-gems/taxxidermy.png',

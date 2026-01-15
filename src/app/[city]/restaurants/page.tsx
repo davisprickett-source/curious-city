@@ -1,17 +1,16 @@
-// import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
-// import { ScrollyMapView } from '@/components/scrollytelling' // Commented out
-// import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-// import { Footer } from '@/components'
-import { getExploreLinks } from '@/lib/content/cityHomepage'
-// import { BreadcrumbSchema } from '@/components/StructuredData'
-// import { ClientOnly } from '@/components/ClientOnly'
+import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { Footer } from '@/components'
 
-// const DynamicScrollyMapView = dynamic(() => import('@/components/scrollytelling').then((mod) => mod.ScrollyMapView), {
-//   ssr: false,
-// })
+const DynamicScrollyMapView = dynamic(() => import('@/components/scrollytelling').then(mod => mod.ScrollyMapView), {
+  ssr: false,
+  loading: () => <div className="w-full h-screen bg-neutral-900 flex items-center justify-center text-neutral-500">Loading Map...</div>,
+})
+import { getExploreLinks } from '@/lib/content/cityHomepage'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -73,9 +72,32 @@ export default async function CityRestaurantsPage({ params }: PageProps) {
   const url = `https://thecurious.city/${slug}/restaurants`
 
   return (
-    <div>
-      <h1>Restaurants Page for {city.name} (Debugging Mode)</h1>
-      <p>This is a simplified version to debug SSR issues.</p>
-    </div>
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://thecurious.city' },
+          { name: city.name, url: `https://thecurious.city/${slug}` },
+          { name: 'Restaurants', url },
+        ]}
+      />
+      <UnifiedNav
+        citySlug={city.slug}
+        cityName={city.name}
+        currentSection="restaurants"
+        useFixedPosition
+      />
+
+      <DynamicScrollyMapView
+        spots={spotsWithCoords}
+        cityName={city.name}
+        title={`${city.name}'s Best Restaurants`}
+        intro={intro}
+        markerType="restaurant"
+        currentCategory="restaurants"
+        exploreLinks={exploreLinks}
+        footer={<Footer />}
+        url={url}
+      />
+    </>
   )
 }

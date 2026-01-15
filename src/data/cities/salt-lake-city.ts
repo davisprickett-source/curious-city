@@ -88,7 +88,7 @@ export const salt_lake_city: CityData = {
           type: 'curiosity',
           category: 'underground',
           title: 'Secret tunnels connect the Temple to church headquarters',
-          body: 'Beneath Temple Square, a network of tunnels allows church leaders to move between the Salt Lake Temple, the Church Office Building, and other facilities without surfacing. Built for security and convenience in the 1960s, the tunnels became secure passages for dignitaries during the 2002 Winter Olympics. The church doesn\'t publicly discuss them, which only makes them more intriguing. Every theocracy needs its secret corridors.',
+          body: 'Beneath the sacred grounds of Temple Square, a labyrinthine network of tunnels allows leaders of The Church of Jesus Christ of Latter-day Saints to move unseen between the Salt Lake Temple, the Church Office Building, and other key facilities. Built for both security and discretion in the 1960s, these subterranean passages became critical arteries for dignitaries during the 2002 Winter Olympics. The Church maintains a steadfast silence on their existence, which, of course, only fuels the intrigue. Every institution with an air of divine authority, it seems, eventually builds its own secret corridors—because even a prophet sometimes needs to avoid the weather, or perhaps, simply the public.',
           year: '1960s',
           image: {
             src: '/salt-lake-city/curiosities/slc-tunnels.png',
@@ -126,8 +126,8 @@ export const salt_lake_city: CityData = {
           id: 'slc-curiosity-4',
           type: 'curiosity',
           category: 'nature',
-          title: 'The Great Salt Lake is dying—and it\'s an emergency',
-          body: 'The Great Salt Lake has lost 73% of its water since pioneers arrived, and it\'s not coming back. Agricultural diversions siphon off the rivers that once fed it. As the lakebed dries, toxic dust laden with arsenic and heavy metals blows into the valley, threatening 2.5 million people. Scientists warn it could become "the next Aral Sea"—an ecological catastrophe visible from space. The lake that defined this city is evaporating in real time.',
+          title: 'The Great Salt Lake is disappearing—and it\'s an ecological time bomb',
+          body: 'The Great Salt Lake, once a vast inland sea, has shrunk by 73% since Mormon pioneers arrived, and it\'s not just a sad sight—it\'s an impending ecological catastrophe. Rivers that once fed the lake are now diverted for agriculture, leaving vast expanses of the lakebed exposed. As these new deserts dry, they unleash toxic dust laden with arsenic, lead, and other heavy metals into the air, threatening the health of 2.5 million people in the Salt Lake Valley. Scientists warn it could become "the next Aral Sea"—a man-made environmental disaster so profound it\'s visible from space. The lake that defined this unique ecosystem and city is evaporating in real time, and with it, a critical part of Utah\'s identity.',
           image: {
             src: '/salt-lake-city/curiosities/shrnking-lake.png',
             alt: 'Shrinking Great Salt Lake with exposed lakebed',
@@ -170,8 +170,8 @@ export const salt_lake_city: CityData = {
           id: 'slc-curiosity-7',
           type: 'curiosity',
           category: 'legend',
-          title: 'The Miracle of the Gulls was probably exaggerated',
-          body: 'The story goes: in 1848, California gulls arrived during a cricket infestation and saved Mormon crops from destruction. But contemporary journals are sparse and contradictory. The gulls ate crickets, then regurgitated them and ate more—because that\'s what seabirds do. Modern ecologists note gulls naturally follow insect swarms. The "miracle" narrative developed decades later, conveniently. Still, Utah made the California gull its state bird and erected a monument in Temple Square. Never let facts ruin a good founding myth.',
+          title: 'The "Miracle of the Gulls" was great PR, less so history',
+          body: 'The story is etched into every Utahn\'s memory: in 1848, a devastating cricket plague threatened to wipe out the Mormon pioneers\' first harvest. Just as all hope seemed lost, a flock of California gulls descended, devoured the crickets, and saved the settlement. A divine intervention! A miracle! The only problem? Contemporary journals are sparse and contradictory, with few mentions of the gulls. Modern ecologists confirm that gulls naturally follow insect swarms, eating their fill and then regurgitating to eat more. The "miracle" narrative blossomed decades later, a convenient founding myth for a people who needed one. Still, Utah made the California gull its state bird and erected a monument in Temple Square. Because why let a few inconvenient facts get in the way of a perfectly good story about divine intervention?',
           year: '1848',
           images: [
             {
@@ -457,9 +457,9 @@ export const salt_lake_city: CityData = {
           type: 'hidden-gem',
           featured: true,
           featuredOrder: 1,
-          name: 'Summum Pyramid - Modern Mummification',
+          name: "Summum Pyramid - Modern Mummification & 'Nectar Publications'",
           category: 'Unusual Religious Site',
-          description: 'In a quiet Salt Lake neighborhood sits a 40-foot bronze-and-concrete pyramid that would look more at home in Giza than Utah—and inside, a religious movement practices the only modern mummification on Earth. Summum was founded in 1975 by Claude "Corky" Nowell, who claimed to have received teachings from advanced beings. When Corky died in 2008, his followers mummified him in a gold-covered bronze sarcophagus that now rests inside the pyramid. Over 1,500 people have arranged for their own future mummifications; more than 600 pets have already been preserved. The process takes 77 days and costs around $67,000 for humans. The building is legally zoned as a bonded winery—they produce "nectar publications" (ceremonial wine)—because Utah wouldn\'t approve a pyramid-shaped church. Tours are free, surreal, and available by appointment.',
+          description: 'In a quiet Salt Lake City neighborhood, a 40-foot bronze-and-concrete pyramid rises with the unassuming confidence of a landmark in Giza. This isn\'t ancient Egypt; it\'s Summum, a religious philosophy that practices modern mummification. Founded in 1975 by Claude "Corky" Nowell (who, upon his death in 2008, became the first to be mummified in his own pyramid), Summum offers "transference" services for both humans and pets. For around $67,000, you too can have your body preserved for eternity in a gold-covered bronze sarcophagus. Over 1,500 people are on the waiting list; 600 pets have already made the journey. The pyramid itself is legally zoned as a "winery" because Utah wouldn\'t approve a pyramid-shaped church—they produce "nectar publications" (ceremonial wine). Tours are free, deeply surreal, and available by appointment. Just be sure to ask about the mummified cats.',
           images: [
             {
               src: '/salt-lake-city/hidden-gems/pyramid-1.png',

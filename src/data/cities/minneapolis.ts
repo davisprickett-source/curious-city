@@ -866,7 +866,7 @@ export const minneapolis: CityData = {
           type: 'curiosity',
           category: 'architecture',
           title: 'Two massive library caverns are carved 85 feet underground',
-          body: 'Beneath the Elmer L. Andersen Library at the University of Minnesota, two caverns stretch 600 feet into St. Peter Sandstone — each the length of two football fields, 25 feet high, and 70 feet wide. The Minnesota Library Access Center sits 85 feet underground, storing over 1.5 million volumes on 17-foot-tall shelving in climate-controlled tunnels carved from the Mississippi River bluffs.\n\nExcavation took 20 months and removed nearly 100,000 cubic yards of sandstone. When completed in 2000, the tunnels were naturally at 57°F with 70% humidity — nearly ideal preservation conditions requiring minimal intervention. One cavern houses the state\'s rarest archives; the other serves Minnesota libraries via the Minitex lending system. The limestone roof provides natural protection from the elements, and there\'s room on university property for 18 additional caverns. Tours run during "Doors Open Minneapolis" and the Archives\' First Fridays, letting visitors descend into one of America\'s most unique research libraries.',
+          body: 'Deep beneath the Elmer L. Andersen Library at the University of Minnesota, two colossal caverns stretch 600 feet into the St. Peter Sandstone—each the length of two football fields, 25 feet high, and 70 feet wide. This is the Minnesota Library Access Center, an underground fortress of knowledge designed to preserve the state\'s rarest archives and over 1.5 million volumes. Carved 85 feet beneath the Mississippi River bluffs, these climate-controlled tunnels maintain a naturally cool 57°F and 70% humidity, perfect conditions for book preservation, with minimal energy use. Excavation alone took 20 months and removed nearly 100,000 cubic yards of rock. It\'s a subterranean vault of history and information, a testament to the idea that some knowledge is so precious, it needs to be protected by the very earth itself. Public tours are occasionally offered, allowing visitors to descend into one of America\'s most unique research libraries.',
           sources: [
             {
               title: 'University of Minnesota Libraries: About Andersen Library',
@@ -938,7 +938,7 @@ export const minneapolis: CityData = {
           type: 'curiosity',
           category: 'underground',
           title: 'The world\'s largest skyway system lets you avoid winter entirely',
-          body: 'The Minneapolis Skyway System is the largest network of enclosed, climate-controlled pedestrian bridges on Earth — 80 blocks linked across 9.5 miles of downtown. You can walk from one end of the city center to the other without ever stepping outside. The first skyway opened in 1962, built by developer Leslie Park to compete with suburban shopping malls (including Southdale Center, also a Minneapolis invention — America\'s first fully enclosed mall).\n\nThe system now connects office towers, hotels, restaurants, and retail through second-story walkways that maintain a consistent 70°F regardless of the weather outside. When it\'s -20°F in January, thousands of workers commute entirely through skyways. It\'s both impressively practical and vaguely dystopian — a parallel city floating above the streets.',
+          body: 'The Minneapolis Skyway System isn\'t just a convenience; it\'s an act of collective urban defiance against winter. Spanning 9.5 miles across 80 downtown blocks, it\'s the largest network of enclosed, climate-controlled pedestrian bridges on Earth. You can traverse the entire city center, moving between office towers, hotels, and restaurants, all without ever once stepping outside into the frigid -20°F January air. What began as a way to compete with suburban malls in 1962 (Minneapolis also invented the first enclosed mall) evolved into a parallel city, floating silently above the streets. It\'s impressively practical, ingeniously efficient, and utterly dystopian—thousands of people existing in a perpetual 70°F bubble, completely detached from the very city they inhabit. It\'s a marvel of urban planning and a profound statement on Minnesota\'s relationship with its climate.',
           sources: [
             {
               title: 'Minneapolis Downtown Council',
@@ -1012,12 +1012,16 @@ export const minneapolis: CityData = {
           id: 'curiosity-13',
           type: 'curiosity',
           category: 'nature',
-          title: 'The Mississippi River\'s only waterfall is slowly walking upstream',
-          body: 'St. Anthony Falls is the only natural major waterfall on the Mississippi\'s entire 2,340-mile run from Minnesota to the Gulf of Mexico. It formed roughly 12,000 years ago about 10 miles downstream at Fort Snelling and has been retreating upstream ever since — about 4 feet per year as the water erodes the limestone. The falls were originally 180-200 feet high; they\'re now largely covered by a concrete apron installed to halt erosion.\n\nThis waterfall is the reason Minneapolis exists at all. It provided hydropower that made the city the flour milling capital of the world in the late 1800s. The falls are still slowly migrating, geologically speaking, though the concrete has slowed the pace to a crawl. Without human intervention, they\'d eventually reach their source.',
+          title: 'The Mississippi River\'s only natural waterfall was the engine of a dangerous empire',
+          body: 'St. Anthony Falls isn\'t just the Mississippi River\'s only natural major waterfall; it\'s the geological reason Minneapolis exists. For 12,000 years, the falls have been slowly "walking" upstream, carving through limestone at about four feet a year. By the late 1800s, this raw hydraulic power made Minneapolis the "Flour Milling Capital of the World," dwarfing even the grain output of Budapest. Massive mills, such as the famous Washburn A Mill, lined the riverbanks, converting wheat from the vast plains into flour that fed the nation. Today, the falls are heavily dammed and concreted to halt erosion, a tamed beast that once fueled a dangerous empire and built a city on its banks.',
           sources: [
             {
               title: 'National Park Service',
               url: 'https://www.nps.gov/miss/learn/historyculture/stanthonyfalls.htm',
+            },
+            {
+              title: 'Mill City Museum',
+              url: 'https://www.mnhs.org/millcity',
             }
           ],
           location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
@@ -1131,12 +1135,16 @@ export const minneapolis: CityData = {
           type: 'curiosity',
           category: 'architecture',
           title: 'The nation\'s largest urban sculpture garden is free year-round',
-          body: 'The Minneapolis Sculpture Garden spans 11 acres and contains more than 40 permanent installations, making it the largest urban sculpture garden in the United States. The centerpiece — Claes Oldenburg and Coosje van Bruggen\'s "Spoonbridge and Cherry" — has become one of Minnesota\'s most photographed landmarks, a 29-foot-tall spoon holding a 1,200-pound cherry with a fountain stem.\n\nThe garden connects the Walker Art Center to Loring Park and remains free and open to the public year-round. It\'s accessible, beautiful, occasionally weird, and genuinely impressive. If you only see one piece of public art in Minneapolis, it\'ll probably be the giant spoon.',
+          body: 'The Minneapolis Sculpture Garden spans 11 acres and contains more than 40 permanent installations, making it the largest urban sculpture garden in the United States. Its undeniable centerpiece—Claes Oldenburg and Coosje van Bruggen\'s "Spoonbridge and Cherry"—was originally conceived for New York City, a giant spoon holding a cherry. But New York passed. So Minneapolis, a city known for its Midwestern reserve, ended up with one of the most iconic pieces of pop art on the planet: a 29-foot-tall spoon holding a 1,200-pound cherry with a functional fountain stem. It\'s goofy, whimsical, instantly recognizable, and perfectly captures Minneapolis\'s slightly off-kilter artistic sensibility. If you only see one piece of public art in Minneapolis, it\'ll probably be the giant spoon. And you can thank New York for that.',
           location: { name: 'Minneapolis Sculpture Garden', url: 'https://www.google.com/maps/place/Minneapolis+Sculpture+Garden/@44.9691,-93.2890,17z', stillExists: true },
           sources: [
             {
               title: 'Walker Art Center',
               url: 'https://walkerart.org/visit/garden',
+            },
+            {
+              title: 'Minneapolis Sculpture Garden: Spoonbridge and Cherry',
+              url: 'https://walkerart.org/collections/artworks/spoonbridge-and-cherry',
             }
           ],
           image: {
@@ -1157,7 +1165,7 @@ export const minneapolis: CityData = {
           type: 'iconic-spot',
           name: 'Mall of America',
           category: 'Entertainment',
-          description: 'Yes, really. Locals say it\'s overrated, but it\'s genuinely fun to wander. The Nickelodeon Universe rides are legitimately good, and people-watching is unmatched.',
+          description: 'It’s not just a mall; it’s a small city. With 5.6 million square feet of retail space, an indoor theme park, an aquarium, and enough roller coasters to make a stomach churn, the Mall of America is the largest shopping mall in the United States. It sits on the former site of the Metropolitan Stadium, home to the Minnesota Twins and Vikings, a fact often lost on the 40 million annual visitors. Locals pretend to hate it, but secretly marvel at its sheer, audacious scale. It’s a testament to American excess, a climate-controlled cathedral of commerce where you can buy a new wardrobe, ride a rollercoaster, and get married, all without ever seeing the sky. Go for the absurdity, stay for the people-watching (and maybe a ride on the Ferris wheel).',
           images: [
             {
               src: '/minneapolis/hidden-gems/mall-of-america.png',

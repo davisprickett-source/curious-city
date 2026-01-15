@@ -306,8 +306,8 @@ export const dallas: CityData = {
           id: 'dal-curiosity-18',
           type: 'curiosity',
           category: 'history',
-          title: 'Doc Holliday won an award at the Dallas State Fair',
-          body: 'In the 1870s, before he became a legendary Wild West gunfighter, Doc Holliday was a young dentist fresh from dental school in St. Louis. At the Dallas State Fair & Exposition (precursor to the State Fair of Texas), he entered a dentistry competition and won an award for "best set of gold teeth." The man who would later face down the Clantons at the OK Corral was once recognized for his dental craftsmanship in Dallas. Every legend starts somewhere. Doc Holliday\'s started at a State Fair booth.',
+          title: 'Doc Holliday won an award at the Dallas State Fair—for dentistry',
+          body: 'Before he became the legendary Wild West gunfighter of the OK Corral, John Henry "Doc" Holliday was a mild-mannered dentist fresh from dental school in St. Louis. In the 1870s, he opened a practice in Dallas and even entered a competition at the Dallas State Fair & Exposition (the precursor to today\'s State Fair of Texas). His specialty? Creating "the best set of gold teeth." He won. The man who would later stand shoulder-to-shoulder with Wyatt Earp in a bloody gunfight was once celebrated for his dental craftsmanship in Dallas. It’s an almost impossibly bizarre twist to his legend: one of America\'s most infamous outlaws, a tuberculosis-ridden gambler and killer, started his career polishing gold molars and winning ribbons at a state fair. Every legend starts somewhere; Doc Holliday\'s started with a gleaming smile in Dallas.',
           source: 'D Magazine',
         },
         {

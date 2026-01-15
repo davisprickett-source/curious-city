@@ -164,8 +164,8 @@ export const phoenix: CityData = {
           id: 'phx-curiosity-5',
           type: 'curiosity',
           category: 'law',
-          title: 'Cutting down a saguaro is a felony (one fought back)',
-          body: 'Saguaros grow nowhere else on Earth. They take 10 years to grow one inch. Seventy-five years before sprouting an arm. Two centuries to reach full height. Arizona protects them with Class 4 felony charges: up to 3.75 years in prison, $150,000 fines. Developers pay $1,000+ to transplant each one. Landscapers still poach them from public land anyway. In 1982, a man near Lake Pleasant decided to shoot a 27-foot saguaro with his shotgun. The cactus fell on him. Killed him instantly. A 4-foot section crushed his chest. They found him pinned under a thousand pounds of cactus he\'d just murdered. Locals call it karma. Botanists call it "spear death." Either way, the cactus won.',
+          title: 'Cutting down a saguaro is a felony (and one famously fought back)',
+          body: 'The saguaro cactus is more than just a plant; it\'s a protected Arizona icon. Growing nowhere else on Earth, it takes a decade to grow one inch, 75 years to sprout its first arm, and two centuries to reach full height. Arizona protects them with Class 4 felony charges: up to 3.75 years in prison and $150,000 fines. Developers pay thousands to transplant them, yet poachers still hack them from public lands. But sometimes, the desert renders its own justice. In 1982, a man near Lake Pleasant decided to "have some fun" by shooting a 27-foot saguaro with his shotgun. The 1,000-pound cactus, mortally wounded, slowly toppled over. It fell directly on him, crushing him instantly. Locals called it karma. Botanists called it "spear death." Either way, the desert sent a clear message: mess with the saguaro, and the saguaro messes back. The cactus won.',
           image: {
             src: '/phoenix/curiosities/cactus.png',
             alt: 'Towering saguaro cactus protected by Arizona law',

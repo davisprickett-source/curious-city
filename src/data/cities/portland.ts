@@ -67,7 +67,7 @@ export const portland: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Oregon entered the Union with a whites-only clause in its constitution',
-          body: 'Oregon\'s original 1857 constitution didn\'t just permit slavery to be banned—it banned Black people from living in the state entirely. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon. It was one of only two states to join the Union with an explicit racial exclusion clause. The law wasn\'t formally removed until 1926—and even then, it remained in the state constitution as dead text until voters finally deleted it in 2002. Today, Portland markets itself as progressive while remaining one of the whitest major cities in America (77% white). That\'s not an accident. It\'s a feature built into the foundation.',
+          body: 'Oregon was founded by white settlers who wanted a white utopia. So in 1857, it didn\'t just ban slavery; it also enshrined a clause in its constitution explicitly prohibiting Black people from living in the state at all. Article 1, Section 35 made it illegal for any "free Negro or Mulatto" to enter or reside in Oregon, effectively becoming the only free state admitted to the Union with such an exclusion. It was formally removed in 1926, but the clause remained "dead text" in the constitution until 2002. Today, Portland markets itself as a progressive haven, yet it remains one of the whitest major cities in America (77% white). This isn\'t an accident; it\'s a feature, not a bug, built into the very foundation of the state, a legacy of that original intent.',
           year: '1857',
           image: {
             src: '/portland/curiosities/black-exclusion.png',
@@ -83,8 +83,8 @@ export const portland: CityData = {
           id: 'pdx-curiosity-6',
           type: 'curiosity',
           category: 'history',
-          title: 'The Vanport Flood erased Oregon\'s second-largest city in 35 minutes',
-          body: 'Vanport was a hastily built WWII housing project for shipyard workers—Oregon\'s second-largest city by 1948, home to 18,500 people, including most of Portland\'s Black population. On May 30, 1948, a railroad dike failed during a holiday weekend. City officials had assured residents there was no danger. They were catastrophically wrong. The city went underwater in 35 minutes. Fifteen people died. Thousands lost everything. Entire neighborhoods vanished. Vanport was never rebuilt. Today it\'s Delta Park—a flat expanse of soccer fields and parking lots where a city used to be. The flood permanently reshaped Portland\'s demographics and deepened its racial segregation for generations.',
+          title: 'Oregon\'s second-largest city vanished in 35 minutes',
+          body: 'Vanport wasn\'t supposed to last. Built in 1942 as temporary housing for WWII shipyard workers, it became Oregon\'s second-largest city—a diverse, bustling community of 40,000, including most of Portland\'s Black population. City officials, however, routinely dismissed warnings about the Columbia River dikes, assuring residents, "The dike will hold." They were catastrophically wrong. On Memorial Day, May 30, 1948, a railroad dike failed. The Columbia poured into Vanport, engulfing the entire city in just 35 minutes. Fifteen people died, though many believe the count was higher. Thousands lost everything, their homes and lives swept away in a man-made flood. Vanport was never rebuilt. Its erasure profoundly reshaped Portland\'s demographics, cementing racial segregation for generations. Today, Delta Park sits on the site—a flat expanse of soccer fields where a vibrant city once stood, a silent testament to a disaster that was both natural and utterly preventable.',
           year: '1948',
           image: {
             src: '/portland/curiosities/portland-flood.png',
@@ -139,7 +139,7 @@ export const portland: CityData = {
             {
               title: 'ORS 480.315 to 480.385',
               publisher: 'Oregon Legislature',
-              url: 'https://www.oregonlegislature.gov/bills_laws/ors/ors480.html',
+              url: 'https://www.oregon.gov/osfm/pages/self-service-rules.aspx',
             }
           ],
           location: {
@@ -156,8 +156,8 @@ export const portland: CityData = {
           id: 'pdx-curiosity-2',
           type: 'curiosity',
           category: 'underground',
-          title: 'The Shanghai Tunnels might be Portland\'s most profitable myth',
-          body: 'The story goes like this: beneath Old Town, a network of tunnels connected bars and hotels to the waterfront, where unsuspecting men were drugged, dragged underground, and sold to ship captains desperate for crews—a practice called "shanghaiing." The tunnels exist. Shanghaiing definitely happened in Portland. But did the tunnels get used for kidnapping? Historians are skeptical. Most evidence suggests they were just for moving cargo between basements and the docks. Tour companies, however, have built an entire industry on the dramatic version. Truth is boring. Kidnapping tunnels sell tickets.',
+          title: 'The Shanghai Tunnels are Portland\'s most profitable myth',
+          body: 'Ah, the Shanghai Tunnels. The story goes: a vast underground network beneath Old Town, where unsuspecting men were drugged, dragged through secret passages, and sold to ship captains desperate for crews—a practice charmingly called "shanghaiing." The tunnels do exist. Shanghaiing did happen in Portland. But did the two meet? Historians are, shall we say, *highly skeptical*. Most evidence suggests these underground passages were simply for moving cargo and supplies between basements and the docks, away from muddy streets. But boring old freight tunnels don\'t sell tickets. So, tour companies have built an entire industry on the dramatic, unverified version, leading eager tourists through dimly lit basements with tales of kidnapped sailors and opium dens. Truth is for academics. A good, gruesome myth is for profit. And Portland, ever the entrepreneur, knows a cash cow when it sees one.',
           image: {
             src: '/portland/curiosities/shanghai-tunnels.png',
             alt: 'Underground Shanghai tunnels in Portland Old Town',
@@ -167,6 +167,11 @@ export const portland: CityData = {
               title: 'Shanghai Tunnels',
               publisher: 'Oregon Encyclopedia',
               url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
+            },
+            {
+              title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
+              publisher: 'OPB',
+              url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
             }
           ],
           location: {
@@ -179,7 +184,7 @@ export const portland: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'Portland\'s name was decided by a coin flip',
-          body: 'In 1845, two New England transplants—Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine—founded a settlement on the Willamette River and immediately disagreed on what to call it. Both wanted to name it after their respective hometowns. Neither would budge. So they flipped a coin. Pettygrove won. Portland, Oregon was born. Had the copper penny landed differently, you\'d be reading about Boston, Oregon right now—a timeline too cursed to contemplate. The "Portland Penny" is on display at the Oregon Historical Society, where it continues to represent the city\'s entire identity hinging on a 50/50 chance.',
+          body: 'In 1845, two New England transplants, Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine, founded a settlement on the Willamette River. Then they did what all men with too much ego and too little to do eventually do: they argued. Each wanted to name the nascent town after his respective hometown. Neither would yield. So, like true pioneers, they settled it with a coin flip. Pettygrove won, and "Portland" it was. The "Portland Penny," now enshrined at the Oregon Historical Society, is a tangible reminder that one of America\'s most distinctive cities exists because of a 50/50 chance. Had that copper penny landed differently, we\'d be talking about "Boston, Oregon"—a geographical and philosophical abomination almost too cursed to contemplate.',
           year: '1845',
           image: {
             src: '/portland/curiosities/coin-flip.png',
@@ -233,7 +238,7 @@ export const portland: CityData = {
             {
               title: 'History of Tom McCall Waterfront Park',
               publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/parks/tom-mccall-waterfront-park/history',
+              url: 'https://www.portland.gov/parks/tom-mccall-waterfront-park',
             }
           ],
           location: {
@@ -295,7 +300,7 @@ export const portland: CityData = {
             {
               title: 'Powell\'s City of Books',
               publisher: 'Powell\'s Books',
-              url: 'https://www.powells.com/',
+              url: 'https://www.powells.com/locations/powells-city-of-books',
             }
           ],
           location: {
@@ -342,7 +347,7 @@ export const portland: CityData = {
             {
               title: 'About Forest Park',
               publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/parks/forest-park/about',
+              url: 'https://www.portland.gov/parks/forest-park',
             }
           ],
           location: {
@@ -365,7 +370,7 @@ export const portland: CityData = {
             {
               title: 'Our Story',
               publisher: 'Voodoo Doughnut',
-              url: 'https://www.voodoodoughnut.com/pages/our-story',
+              url: 'https://www.voodoodoughnut.com/about-voodoo-doughnut',
             }
           ],
           location: {
@@ -635,11 +640,6 @@ export const portland: CityData = {
                           title: 'Kelly Butte Civil Defense Center',
                           publisher: 'Oregon Encyclopedia',
                           url: 'https://www.oregonencyclopedia.org/articles/kelly_butte_cold_war_bunker/',
-                        },
-                        {
-                          title: 'Kelly Butte Civil Defense Center',
-                          publisher: 'Oregon History Project',
-                          url: 'https://www.oregonhistoryproject.org/articles/kelly-butte-civil-defense-center/',
                         }
                       ],
                     },        {
@@ -755,13 +755,13 @@ export const portland: CityData = {
                       coordinates: { lat: 45.5143, lng: -122.6596 }, // Approx coordinates
                       hours: 'Fri-Sun 12pm-5pm', // Typical museum hours, might need verification
                       price: '$5 admission', // Placeholder price
-                      website: 'https://www.portlandpuppetmuseum.com/', // Found website from web
+                      website: 'http://puppetmuseum.com/', // Found website from web
                       tip: 'Check their website for current shows and workshops.',
                       sources: [
                         {
                           title: 'Portland Puppet Museum',
                           publisher: 'Portland Puppet Museum',
-                          url: 'https://www.portlandpuppetmuseum.com/',
+                          url: 'http://puppetmuseum.com/',
                         },
                         {
                           title: 'Portland Puppet Museum',
@@ -786,13 +786,13 @@ export const portland: CityData = {
                       coordinates: { lat: 45.4746, lng: -122.6468 }, // Approx coordinates
                       hours: 'Wed-Sun 4pm-9pm', // Typical hours, might need verification
                       price: '$$', // Mead can be pricey
-                      website: 'https://www.wyrdleatherworks.com/', // Found website from web
+                      website: 'https://wyrdleatherandmead.com/', // Found website from web
                       tip: 'Try a flight of mead and admire the craftsmanship of the leather goods.',
                       sources: [
                         {
                           title: 'Wyrd Leatherworks and Meadery',
                           publisher: 'Wyrd Leatherworks',
-                          url: 'https://www.wyrdleatherworks.com/',
+                          url: 'https://wyrdleatherandmead.com/',
                         },
                         {
                           title: 'Wyrd Leatherworks and Meadery, Portland',
@@ -822,7 +822,7 @@ export const portland: CityData = {
             {
               title: 'Block 14',
               publisher: 'Friends of Lone Fir Cemetery',
-              url: 'https://friendsoflonefircemetery.org/history/block-14/',
+              url: 'https://www.oregonmetro.gov/public-projects/lone-fir-cemetery-cultural-heritage-garden',
             },
             {
               title: 'Lone Fir Cemetery Block 14 Memorial Project Update',
@@ -852,7 +852,7 @@ export const portland: CityData = {
             {
               title: 'Willamette Stone State Heritage Site',
               publisher: 'Oregon.gov',
-              url: 'https://www.oregon.gov/odot/History/Pages/Willamette-Stone.aspx',
+              url: 'https://stateparks.oregon.gov/index.cfm?do=parkPage.dsp_parkPage&parkId=199',
             },
             {
               title: 'Willamette Stone',
@@ -904,13 +904,13 @@ export const portland: CityData = {
           coordinates: { lat: 45.5236, lng: -122.6606 },
           hours: 'Mon-Sat 9am-5:30pm',
           price: 'Free',
-          website: 'https://starks.com/museum/',
+          website: 'https://starks.com/about-us/',
           tip: 'Ask staff to show you the museum section - easy to miss',
           sources: [
             {
               title: 'Stark\'s Vacuum Museum',
               publisher: 'Stark\'s Vacuums',
-              url: 'https://starks.com/museum/',
+              url: 'https://starks.com/about-us/',
             }
           ],
         },

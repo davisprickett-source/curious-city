@@ -119,7 +119,7 @@ export const fargo: CityData = {
           type: 'curiosity',
           category: 'law',
           title: 'North Dakota ran a divorce mill that made it rich—then got shut down',
-          body: 'In the 1890s, North Dakota had the most lenient divorce laws in America. Establish residency in 90 days, file on nearly any grounds, walk away single. Wealthy Easterners flocked to Fargo for quickie divorces, filling hotels and paying lawyers handsomely. The state made a fortune. Other states complained. Laws tightened in 1899. The "Divorce Colony" era ended, but not before Fargo cashed in.',
+          body: 'In the 1890s, North Dakota became the unlikely "Reno of the Plains." The state had the most lenient divorce laws in America: establish residency in 90 days, file on nearly any grounds, walk away single. Wealthy Easterners—primarily women seeking to escape stifling marriages—flocked to Fargo, filling hotels, paying lawyers handsomely, and creating a mini-economic boom in the prairie. The state made a fortune from marital strife. Other states, particularly those with stricter divorce laws, were outraged, decrying North Dakota as a moral cesspool. Laws were tightened in 1899, ending the "Divorce Colony" era, but not before Fargo proved that even the most conservative states can find a market for breaking hearts and making bank.',
           year: '1890s',
           image: {
             src: '/fargo/curiosities/divorce.png',
@@ -164,8 +164,8 @@ export const fargo: CityData = {
           id: 'far-curiosity-6',
           type: 'curiosity',
           category: 'culture',
-          title: 'The Fargo woodchipper is a real tourist attraction (despite everything)',
-          body: 'The Coen Brothers\' 1996 film "Fargo" was barely filmed in Fargo. Its events were entirely fictional. But the city leaned into it anyway. The visitors center now displays a woodchipper with a fake leg sticking out, and tourists line up for photos. When you ask locals about it, they smile politely and point out that the accent is actually more Minnesotan. But they\'ll still sell you a T-shirt.',
+          title: 'The Fargo woodchipper is a real tourist attraction (despite being entirely fictional)',
+          body: 'The Coen Brothers\' 1996 film "Fargo" was a dark, snow-swept masterpiece that put the city on the global map. The problem? It was barely filmed *in* Fargo, and its events were entirely fictional. Yet, the city, in a stroke of brilliant, self-aware marketing, leaned into the absurdity. The Fargo-Moorhead Visitors Center now prominently displays a woodchipper with a fake leg sticking out, where tourists eagerly line up for photos. When you ask locals about the movie, they\'ll smile politely and point out that the infamous accent is actually more Minnesotan. But they\'ll still happily sell you a T-shirt. It\'s the ultimate meta-tourism experience: celebrating a movie about a place that isn\'t quite this place, featuring events that never happened, all while winking at the camera. You betcha.',
           source: 'Fargo-Moorhead CVB',
           location: {
             name: 'Fargo-Moorhead Visitors Center',
@@ -176,8 +176,8 @@ export const fargo: CityData = {
           id: 'far-curiosity-4',
           type: 'curiosity',
           category: 'architecture',
-          title: 'The Western Hemisphere\'s tallest structure is here—taller than anything in New York',
-          body: 'In 1963, engineers built a 2,063-foot guyed mast near Blanchard, just outside Fargo, to test Cold War antenna designs for the military. The KVLY-TV Mast became the tallest structure in the world—a title it held until Dubai built the Burj Khalifa. It\'s still taller than anything in New York, Chicago, or anywhere else in the Western Hemisphere. You can see it from 30 miles away.',
+          title: 'The Western Hemisphere\'s tallest structure is in a cornfield near Fargo',
+          body: 'Forget the Freedom Tower or the Willis Tower. The tallest structure in the Western Hemisphere isn\'t in New York or Chicago; it\'s a 2,063-foot guyed mast for KVLY-TV, poking out of a cornfield near Blanchard, just outside Fargo. Built in 1963 to test Cold War antenna designs, it briefly held the title of the world\'s tallest man-made structure until Dubai\'s Burj Khalifa came along. To this day, it remains taller than anything in North or South America. You can see it for 30 miles in every direction, an impossible needle thrust into the endless prairie sky, broadcasting local news and a silent, towering testament to Cold War ambition and the fact that sometimes, the biggest things are found in the most unexpected places.',
           year: '1963',
           source: 'KVLY-TV',
           location: {
@@ -205,8 +205,8 @@ export const fargo: CityData = {
           id: 'far-curiosity-5',
           type: 'curiosity',
           category: 'nature',
-          title: 'The river flows north, which makes floods catastrophic',
-          body: 'The Red River flows north toward Canada. That means snow melts in the south first and pushes water toward still-frozen stretches downstream. Ice jams trap the flow and force it backward through Fargo. The 1997 flood was the worst in 500 years—the entire city mobilized to fill sandbags around the clock. A $2.75 billion diversion channel is now being built to stop it from happening again.',
+          title: 'The river flows north, which makes floods apocalyptic',
+          body: 'The Red River flows north, a rare geographical quirk in North America. This seemingly minor detail turns spring thaws into an existential threat for Fargo. Snow and ice melt first in the southern stretches of the river, sending a torrent of water northwards. But the northern reaches are often still frozen solid. The result? Massive ice jams that act like concrete dams, forcing the river to back up and spill over its banks, threatening to engulf Fargo. The 1997 flood was a city-wide battle, with 20,000 volunteers sandbagging around the clock against a rising tide. A $2.75 billion diversion channel is currently being built to avert future apocalypses, a testament to a city perpetually fighting its own, backward-flowing nature.',
           image: {
             src: '/fargo/curiosities/cold-hot-day.png',
             alt: 'Red River during spring flooding',
