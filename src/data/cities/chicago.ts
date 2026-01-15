@@ -66,7 +66,7 @@ export const chicago: CityData = {
           location: 'Logan Square (address sent upon RSVP)',
           category: 'comedy',
           tags: ['comedy', 'nightlife'],
-          href: 'https://example.com/comedy-rsvp',
+          href: 'https://thelincolnlodge.com/',
         },
         {
           title: 'New Year\'s Eve at Navy Pier',
@@ -613,7 +613,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.8781, lng: -87.6298 },
           hours: 'Not accessible to public',
           price: 'Not accessible',
-          website: 'https://www.chicagology.com/columbiaexpo/tunnels/',
+          website: 'https://chicagology.com/transportation/freighttunnels/',
           tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.',
         },
         {
@@ -745,7 +745,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9257, lng: -87.6343 },
           hours: 'Daily 7:30am-dusk (May-Oct)',
           price: 'Free',
-          website: 'https://www.lincolnparkconservancy.org/caldwell-lily-pool/',
+          website: 'https://lincolnparkconservancy.org/parks-we-serve/alfred-caldwell-lily-pool/',
           tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.',
         },
         {
@@ -953,7 +953,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9245, lng: -87.7050 },
           hours: 'Anytime',
           price: 'Free',
-          website: 'https://www.projectlogan.com',
+          website: 'https://anysquared.org',
           tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.',
         },
         {
@@ -976,7 +976,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9267, lng: -87.6489 },
           hours: 'Venue hours vary',
           price: 'Exterior viewable anytime',
-          website: 'https://www.biography-theater.com',
+          website: 'https://victorygardens.org',
           tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
         },
         {
@@ -1203,7 +1203,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.9760, lng: -87.6684 },
           hours: '11am-2am Mon-Sat, 11am-12am Sun',
           price: '$',
-          website: 'https://www.simonstavern.com/',
+          website: 'https://andersonville.org/business-directory/simons-tavern/',
           instagram: '@simonstavern',
           image: {
             src: '/chicago/bars/simons-1.png',
@@ -1897,7 +1897,7 @@ export const chicago: CityData = {
               title: 'H.H. Holmes: America\'s First Serial Killer',
               publisher: 'History.com',
               year: '2020',
-              url: 'https://www.history.com/topics/crime/hh-holmes',
+              url: 'https://www.history.com/topics/19th-century/hh-holmes',
             },
             {
               type: 'article',

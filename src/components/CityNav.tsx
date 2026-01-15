@@ -24,10 +24,10 @@ export function CityNav({ citySlug, currentSection }: CityNavProps) {
                 key={section.id}
                 href={href}
                 className={`
-                  px-3 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors
+                  relative px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors
                   ${isActive
-                    ? 'bg-neutral-900 text-white'
-                    : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200'
+                    ? 'text-accent-600'
+                    : 'text-neutral-600 hover:text-neutral-900 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-accent-600 before:transition-transform before:duration-300 before:ease-out hover:before:scale-x-100'
                   }
                 `}
               >

@@ -203,7 +203,7 @@ export const colorado_springs: CityData = {
           sources: [
             {
               title: 'U.S. Air Force Academy: Chapel History',
-              url: 'https://www.usafa.edu/about/history-traditions/cadet-chapel/',
+              url: 'https://www.usafa.edu/academics/facilities/cadet-chapel/',
             },
             {
               title: 'National Park Service: Air Force Academy National Historic Landmark',
@@ -244,7 +244,7 @@ export const colorado_springs: CityData = {
             },
             {
               title: 'Pikes Peak Historical Society: Katharine Lee Bates',
-              url: 'https://www.pikespeakhistoricalsociety.org/',
+              url: 'https://pikespeakhsmuseum.org/',
             }
           ],
           location: {
@@ -688,7 +688,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 39.0042, lng: -104.4825 },
           hours: 'Daily 9am-7pm (summer), 9am-5pm (winter)',
           price: 'Free',
-          website: 'https://elpasoco.com/paint-mines/',
+          website: 'https://communityservices.elpasoco.com/paint-mines-interpretive-park/',
           tip: 'Go at sunrise or sunset when the colors are most vivid.',
         },
         {
@@ -708,7 +708,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.7234, lng: -104.8712 },
           hours: 'Daily 9am-6pm (May-Sep)',
           price: '$10 adults, $8 seniors, $6 children',
-          website: 'https://coloradobugs.org/',
+          website: 'https://coloradospringsbugmuseum.com/',
           tip: 'Don\'t judge by the exterior — the collection inside is world-class.',
         },
         /* The Rabbit Hole - MOVED to bars section */
@@ -823,7 +823,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8573, lng: -104.9119 },
           hours: 'Daily 10am-9pm (summer), 10am-6pm (winter)',
           price: 'Free entry, games 1¢-25¢',
-          website: 'https://www.pennyarcade.com/',
+          website: 'https://manitouspringsarcade.com/',
           tip: 'Bring rolls of pennies and quarters — you\'ll want to play everything.',
         }
       ],
@@ -862,7 +862,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8340, lng: -104.8248 },
           hours: 'Daily 4pm-midnight',
           price: '$$$',
-          website: 'https://therabbitholecs.com/',
+          website: 'https://rabbitholedinner.com/',
           images: [
             { src: '/colorado-springs/hidden-gems/rabbit-hole-1.png', alt: 'The Rabbit Hole speakeasy entrance' },
             { src: '/colorado-springs/hidden-gems/rabbit-hole-2.png', alt: 'Underground bar ambiance' },
@@ -879,7 +879,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8188, lng: -104.8253 },
           hours: 'Daily 10am-10pm',
           price: '$$',
-          website: 'https://ivywildschool.com/principals-office/',
+          website: 'https://ivywildschool.com/eat-and-drink/',
           instagram: '@poativywild',
           images: [
             { src: '/colorado-springs/bars/principal-1.png', alt: 'Principal\'s Office craft cocktail' },
@@ -1017,7 +1017,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8365, lng: -104.8248 },
           hours: 'Tue-Sun 11am-9pm',
           price: '$$',
-          website: 'https://pizzeriarusticacos.com',
+          website: 'https://pizzeriarustica.com/',
           instagram: '@pizzeriarustica',
           images: [
             { src: '/colorado-springs/restaurants/rustica-1.png', alt: 'Neapolitan Margherita pizza' },
@@ -1050,7 +1050,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8574, lng: -104.9116 },
           hours: 'Wed-Sun 8am-3pm',
           price: '$$',
-          website: 'https://adamsmountaincafe.com',
+          website: 'https://adamsmountain.com/',
           instagram: '@adamsmountaincafe',
           images: [
             { src: '/colorado-springs/restaurants/adams-mtn-1.png', alt: 'Korean-inspired bowl' },
@@ -1166,7 +1166,7 @@ export const colorado_springs: CityData = {
           coordinates: { lat: 38.8322, lng: -104.8206 },
           hours: 'Mon-Sat 7am-10pm, Sun 8am-8pm',
           price: '$',
-          website: 'https://jivescoffee.com',
+          website: 'https://jivescoffeelounge.com/',
           instagram: '@jivescoffeelounge',
           images: [
             { src: '/colorado-springs/coffee/jives-1.png', alt: 'Jives Coffee Lounge interior' },

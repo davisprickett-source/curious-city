@@ -89,7 +89,7 @@ export const denver: CityData = {
               type: 'article',
               title: 'The Tragic Story Behind Blucifer at Denver International Airport',
               publisher: 'Uncover Colorado',
-              url: 'https://uncovercolorado.com/blucifer-denver-international-airport/',
+              url: 'https://www.uncovercolorado.com/landmarks/blue-mustang-sculpture-dia/',
             },
             {
               type: 'documentary',
@@ -102,7 +102,7 @@ export const denver: CityData = {
               type: 'article',
               title: 'Blue Mustang',
               publisher: 'Denver International Airport',
-              url: 'https://www.flydenver.com/art-exhibits/blue-mustang/',
+              url: 'https://www.flydenver.com/at-the-airport/art/',
             },
           ],
         },

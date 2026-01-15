@@ -1,0 +1,344 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { getCategoryStyle } from './MobileHiddenGemsLayout'
+import { ShareButton } from '@/components/ShareButton'
+import { ImageCarousel } from '../ImageCarousel'
+
+interface HiddenGemItem {
+  id: string
+  name: string
+  description: string
+  category?: string
+  address?: string
+  website?: string
+  phone?: string
+  hours?: string
+  price?: string
+  image?: {
+    src: string
+    alt?: string
+    credit?: string
+  }
+  images?: Array<{
+    src: string
+    alt?: string
+    credit?: string
+  }>
+}
+
+interface HiddenGemCardProps {
+  gem: HiddenGemItem
+  index: number
+  onInView?: () => void
+  url: string
+}
+
+// Card entry animation variants
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+}
+
+// Staggered animation variants for card content
+const titleVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.1,
+      ease: 'easeOut',
+    },
+  },
+}
+
+const descriptionVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.2,
+      ease: 'easeOut',
+    },
+  },
+}
+
+const detailsVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+      ease: 'easeOut',
+    },
+  },
+}
+
+function NumberBadge({ number, category }: { number: number; category?: string }) {
+  const categoryStyles = category ? getCategoryStyle(category) : getCategoryStyle('default')
+
+  return (
+    <div className="flex-shrink-0">
+      {/* Main badge */}
+      <div
+        className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white bg-gradient-to-br"
+        style={{
+          backgroundImage: `linear-gradient(to bottom right, ${categoryStyles.dotColor}, ${categoryStyles.borderColor})`,
+        }}
+      >
+        <span className="text-xl font-bold text-white">{number}</span>
+      </div>
+    </div>
+  )
+}
+
+function DetailsBox({ gem }: { gem: HiddenGemItem }) {
+  const hasDetails = gem.address || gem.website || gem.phone || gem.hours || gem.price
+
+  if (!hasDetails) return null
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-neutral-200">
+      {gem.address && (() => {
+        const addressParts = gem.address.split(', ')
+        const streetAddress = addressParts[0]
+        const cityStateZip = addressParts.slice(1).join(', ')
+        return (
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(gem.address)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 text-neutral-700 hover:text-neutral-900 group"
+          >
+            <svg className="w-5 h-5 mt-0.5 flex-shrink-0 text-neutral-400 group-hover:text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <div className="flex flex-col">
+              <span className="text-base font-semibold underline underline-offset-2 decoration-neutral-300 group-hover:decoration-neutral-500">
+                {streetAddress}
+              </span>
+              <span className="text-sm text-neutral-500">
+                {cityStateZip}
+              </span>
+            </div>
+          </a>
+        )
+      })()}
+      {gem.website && (
+        <a
+          href={gem.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 text-neutral-600 hover:text-neutral-900"
+        >
+          <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+          </svg>
+          <span className="text-base underline underline-offset-2">Website</span>
+        </a>
+      )}
+      {gem.phone && (
+        <a
+          href={`tel:${gem.phone}`}
+          className="flex items-center gap-3 text-neutral-600 hover:text-neutral-900"
+        >
+          <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span className="text-base">{gem.phone}</span>
+        </a>
+      )}
+      {gem.hours && (
+        <div className="flex items-start gap-3 text-neutral-600">
+          <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="text-base">{gem.hours}</span>
+        </div>
+      )}
+      {gem.price && (
+        <div className="flex items-center gap-3 text-neutral-600">
+          <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="text-base">{gem.price}</span>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps) {
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+    triggerOnce: false,
+  })
+
+  const [isImageExpanded, setIsImageExpanded] = useState(false)
+  const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
+  const images = gem.images || (gem.image ? [gem.image] : [])
+
+  // Notify parent when in view
+  useEffect(() => {
+    if (inView && onInView) {
+      onInView()
+    }
+  }, [inView, onInView])
+
+  return (
+    <motion.article
+      ref={ref}
+      variants={cardVariants}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-all duration-300 border-t-4 relative"
+      style={{ borderTopColor: categoryStyles.borderColor }}
+    >
+      {/* Two-column layout */}
+      <div className="flex flex-col lg:flex-row">
+        {/* Left Column - Image (50%) */}
+        {images.length > 0 && (
+          <div className="lg:w-[50%] flex-shrink-0 relative">
+            <div className="h-full min-h-[400px] lg:min-h-[500px] relative">
+              <ImageCarousel images={images} className="h-full rounded-none" />
+
+              {/* Minimalistic Expand Button - No Background */}
+              <button
+                onClick={() => setIsImageExpanded(true)}
+                className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 group"
+                aria-label="Expand image"
+              >
+                <svg
+                  className="w-5 h-5 transition-transform group-hover:scale-125"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Right Column - Content (50%) */}
+        <div className={`flex-1 p-8 lg:p-10 ${!images.length ? 'lg:w-full' : ''}`}>
+          {/* Header - with animation */}
+          <motion.div
+            variants={titleVariants}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            className="flex items-start gap-6 mb-6"
+          >
+            <NumberBadge number={index + 1} category={gem.category} />
+
+            <div className="flex-1 min-w-0">
+              <h3 className="text-2xl lg:text-3xl font-bold text-neutral-900 leading-tight">
+                {gem.name}
+              </h3>
+            </div>
+          </motion.div>
+
+          {/* Description - with animation */}
+          <motion.p
+            variants={descriptionVariants}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            className="text-lg text-neutral-700 leading-relaxed"
+          >
+            {gem.description}
+          </motion.p>
+
+          {/* Details Box - with animation */}
+          <motion.div
+            variants={detailsVariants}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+          >
+            <DetailsBox gem={gem} />
+          </motion.div>
+
+          {/* Share Button - centered at bottom */}
+          <motion.div
+            variants={detailsVariants}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center"
+          >
+            <ShareButton title={gem.name} url={url} />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Expanded Image Overlay */}
+      <AnimatePresence>
+        {isImageExpanded && images.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="absolute inset-0 z-50 flex items-center justify-center bg-black/95 rounded-3xl p-4"
+            onClick={() => setIsImageExpanded(false)}
+          >
+            <div className="relative w-full h-full flex items-center justify-center">
+              {/* Expanded Image */}
+              <motion.div
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                className="relative max-w-full max-h-full"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <ImageCarousel images={images} className="max-h-[80vh] w-auto" />
+              </motion.div>
+
+              {/* Minimalistic Close Button - No Background */}
+              <button
+                onClick={() => setIsImageExpanded(false)}
+                className="absolute top-4 right-4 text-white drop-shadow-lg transition-all duration-200 group"
+                aria-label="Close expanded image"
+              >
+                <svg
+                  className="w-6 h-6 transition-transform group-hover:scale-125"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.article>
+  )
+}

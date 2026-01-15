@@ -771,7 +771,7 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'University of Minnesota: Honeycrisp Apple Story',
-              url: 'https://cals.umn.edu/honeycrisp',
+              url: 'https://mnhardy.umn.edu/varieties/fruit/apples/honeycrisp',
             },
             {
               title: 'MPR News: How Honeycrisp Changed the Apple Industry',
@@ -792,7 +792,7 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society: Underground Minneapolis',
-              url: 'https://www.mnhs.org/historycenter/activities/museum/underground-minneapolis',
+              url: 'https://www.mnhs.org/historycenter',
             },
             {
               title: 'Star Tribune: Beneath the Streets',
@@ -852,7 +852,7 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minneapolis Water Works',
-              url: 'https://www.minneapolismn.gov/resident-services/water-sewer-utilities/',
+              url: 'https://www.minneapolismn.gov/government/departments/public-works/water-treatment-distribution/',
             }
           ],
           location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
@@ -963,8 +963,8 @@ export const minneapolis: CityData = {
           body: 'On October 8, 1956, Southdale Center opened in Edina — the first fully enclosed, climate-controlled shopping mall in world history. Architect Victor Gruen designed a "shopping town" with two department stores anchoring a garden-filled central court under a climate-controlled roof. The idea was revolutionary: shoppers could browse in comfort regardless of Minnesota\'s brutal winters or humid summers.\n\nGruen envisioned Southdale as a European-style town square transplanted to the suburbs — complete with a sidewalk cafe, sculptures, and a goldfish pond. Retailers were skeptical. They thought shoppers wouldn\'t enter a building without windows. They were wrong. Southdale was immediately successful, and the concept spread worldwide. Every enclosed mall, from Mall of America to shopping centers in Dubai, descends from this Edina prototype.\n\nIronically, Gruen later called American malls "bastard developments" that perverted his original vision of community-centered spaces. He wanted town squares; he got consumer temples. But the innovation — bringing the outdoors inside, controlling climate for commerce — changed how the world shops.',
           sources: [
             {
-              title: 'Minnesota Historical Society: Southdale',
-              url: 'https://www.mnhs.org/mnopedia/southdale-center',
+              title: 'MNopedia: Southdale Center',
+              url: 'https://www.mnopedia.org/structure/southdale-center',
             },
             {
               title: 'Smithsonian: The Man Who Invented the Shopping Mall',
@@ -1017,7 +1017,7 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'National Park Service',
-              url: 'https://www.nps.gov/miss/learn/historyculture/stanthonyfalls.htm',
+              url: 'https://www.nps.gov/miss/planyourvisit/stanthony.htm',
             },
             {
               title: 'Mill City Museum',
@@ -1049,7 +1049,7 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society: St. Anthony Falls History',
-              url: 'https://www.mnhs.org/stanthonyfalls',
+              url: 'https://www.mnhs.org/millcity/learn/history/st-anthony-falls',
             },
             {
               title: 'MPR News: The Other Twin City',
@@ -1388,7 +1388,7 @@ export const minneapolis: CityData = {
               coordinates: { lat: 44.9381, lng: -93.0886 },
               hours: 'Tours and events vary',
               price: '$8-15',
-              website: 'https://www.wabashastreetcaves.com',
+              website: 'https://www.wabashacaves.com',
               tip: 'Thursday swing dancing is the way to experience this place',
             },
             {
@@ -1562,7 +1562,7 @@ export const minneapolis: CityData = {
               coordinates: { lat: 44.9806, lng: -93.2892 },
               hours: 'Open to public during business hours (Mon-Fri 9am-5pm)',
               price: 'Free',
-              website: 'https://www.ims-mpls.com',
+              website: 'https://www.imsdesigncenter.com',
               tip: 'Ask designers/architects in the building for best viewing access',
               accessibility: 'Stairs only; not wheelchair accessible',
             },

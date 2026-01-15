@@ -358,7 +358,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8731, lng: -96.7689 },
           hours: 'Tue-Sat 10am-5pm, Sun 12-5pm',
           price: '$10 adults',
-          website: 'https://hcscmn.org',
+          website: 'https://www.hcscconline.org',
           tip: 'Don\'t miss the hand-carved stave church replica outside.',
         },
         {
@@ -692,8 +692,7 @@ export const fargo: CityData = {
           address: '402 Broadway N, Fargo, ND 58102',
           coordinates: { lat: 46.8781, lng: -96.7898 },
           price: '$$',
-          hours: 'Daily 8am-3pm',
-          website: 'https://bernbaums.com/',
+          hours: 'Permanently Closed',
           instagram: '@bernbaums',
         },
         {
@@ -865,19 +864,19 @@ export const fargo: CityData = {
               title: 'The Murder of Billy Wolf',
               show: 'Dakota Spotlight',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/dakota-spotlight/id1544812866',
+              url: 'https://dakotaspotlight.com/season-4/',
             },
             {
               type: 'article',
               title: 'Billy Wolf Murder: 45 Years Later',
               publisher: 'InForum',
-              url: 'https://www.inforum.com/news/fargo/billy-wolf-murder-unsolved',
+              url: 'https://www.inforum.com/news/the-vault/chasing-billy-the-cold-case-of-billy-wolf-jr',
             },
             {
               type: 'article',
               title: 'North Dakota Cold Cases',
               publisher: 'North Dakota Attorney General',
-              url: 'https://attorneygeneral.nd.gov/public-safety/cold-case-unit',
+              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases',
             },
             {
               type: 'video',
@@ -889,7 +888,7 @@ export const fargo: CityData = {
               type: 'article',
               title: 'William Wolf Jr. Homicide',
               publisher: 'Fargo Police Department',
-              url: 'https://fargond.gov/city-government/departments/police/cold-cases',
+              url: 'https://fargond.gov/city-government/departments/police/investigations/criminal-investigations/cold-cases',
             },
           ],
           images: [
@@ -968,13 +967,13 @@ export const fargo: CityData = {
               type: 'article',
               title: 'Larry Phebus Cold Case',
               publisher: 'North Dakota Attorney General',
-              url: 'https://attorneygeneral.nd.gov/public-safety/cold-case-unit/larry-phebus',
+              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases/larry-phebus',
             },
             {
               type: 'article',
               title: 'McKenzie County Cold Cases',
               publisher: 'McKenzie County Sheriff\'s Office',
-              url: 'https://www.co.mckenzie.nd.us/sheriff/',
+              url: 'https://mckenziesheriff.net',
             },
             {
               type: 'video',
@@ -987,7 +986,7 @@ export const fargo: CityData = {
               title: 'Rural North Dakota Cold Cases',
               show: 'Dakota Mysteries',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/podcast/dakota-mysteries',
+              url: 'https://dakotaspotlight.com',
             },
           ],
           images: [

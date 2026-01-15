@@ -621,7 +621,7 @@ export const dallas: CityData = {
           coordinates: { lat: 32.6951, lng: -96.8336 },
           hours: 'Dawn to dusk',
           price: 'Free',
-          website: 'https://www.dallascounty.org/departments/plandev/openspaces/locations/08-joppa.php',
+          website: 'https://www.dallascounty.org/departments/parks/joppa-preserve.php',
           tip: 'Plentiful migrating waterfowl and year-round shorebirds',
         },
         {
@@ -1268,13 +1268,13 @@ export const dallas: CityData = {
               type: 'article',
               title: 'Six Girls in a Chevy (Part 2): Screaming Bridge',
               publisher: 'Hometown by Handlebar',
-              url: 'https://hometownbyhandlebar.com/?p=36562',
+              url: 'https://hometownbyhandlebar.com/?p=17046',
             },
             {
               type: 'article',
               title: 'The Screaming Bridge',
               publisher: 'Dallas Terrors',
-              url: 'https://dallasterrors.com/the-screaming-bridge/',
+              url: 'https://dallasterrors.com/the-legend-of-screaming-bridge/',
             },
             {
               type: 'article',

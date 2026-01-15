@@ -76,8 +76,8 @@ export const phoenix: CityData = {
           },
           sources: [
             {
-              title: 'The Arizona Republic: The Phoenix Lights, 20 Years Later',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2017/03/13/phoenix-lights-20-years-later/',
+              title: 'Phoenix New Times: The Phoenix Lights, 27 Years Later',
+              url: 'https://www.phoenixnewtimes.com/news/the-phoenix-lights-27-years-later-11346824',
             },
             {
               title: 'National Geographic: The Phoenix Lights',
@@ -143,15 +143,15 @@ export const phoenix: CityData = {
           },
           sources: [
             {
-              title: 'National Weather Service: Phoenix Heat Records 2023',
-              url: 'https://www.weather.gov/psr/2023heat',
+              title: 'National Weather Service: Phoenix Heat Records',
+              url: 'https://www.weather.gov/psr/Heat',
             },
             {
-              title: 'Maricopa County: 2023 Heat Deaths Report',
-              url: 'https://www.maricopa.gov/heat',
+              title: 'Maricopa County: Heat Surveillance',
+              url: 'https://www.maricopa.gov/1858/Heat-Surveillance',
             },
             {
-              title: 'Scientific American: Phoenix is Testing the Limits of Heat a City Can Withstand',
+              title: 'Scientific American: Phoenix is Testing the Limits of Heat',
               url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
             },
           ],
@@ -802,7 +802,7 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4250, lng: -111.9394 },
           hours: 'Showtimes vary',
           price: '$12',
-          website: 'https://www.valleyarttheatre.com/',
+          website: 'https://www.harkins.com/theatres/valley-art',
           tip: 'The neon sign is spectacular at night.',
         },
       ],
@@ -1248,7 +1248,7 @@ export const phoenix: CityData = {
           address: '1830 W Glendale Ave, Phoenix, AZ 85021',
           coordinates: { lat: 33.5376, lng: -112.1014 },
           price: '$',
-          website: 'https://restaurantatoyac.com/',
+          website: 'https://www.yelp.com/biz/restaurant-atoyac-estilo-oaxaca-phoenix',
           image: {
             src: '/phoenix/restaurants/atoyac-tlayuda.jpg',
             alt: 'Authentic Oaxacan tlayuda and mole',
@@ -1465,7 +1465,7 @@ export const phoenix: CityData = {
               title: 'Arizona\'s Most Haunted Hotels',
               publisher: 'Travel Arizona',
               year: '2022',
-              url: 'https://www.visitarizona.com/travel-inspiration/haunted-hotels/',
+              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/',
             },
             {
               type: 'podcast',

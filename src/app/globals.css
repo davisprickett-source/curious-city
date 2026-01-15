@@ -239,4 +239,14 @@
     background: linear-gradient(to bottom, rgba(255, 251, 235, 0.6), rgba(255, 247, 237, 0.3), transparent);
     border-top: 1px solid rgba(254, 243, 199, 1);
   }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
 }
