@@ -115,7 +115,7 @@ export function ShareButton({ title, url }: ShareButtonProps) {
 
   return (
     <div
-      className="relative"
+      className="relative inline-block"
       ref={menuRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
