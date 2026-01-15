@@ -36,18 +36,23 @@ interface HiddenGemCardProps {
   url: string
 }
 
-// Card entry animation variants
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
+// Card entry animation variants with alternating left/right
+const getCardVariants = (index: number) => ({
+  hidden: {
+    opacity: 0,
+    y: 30,
+    x: index % 2 === 0 ? -30 : 30
+  },
   visible: {
     opacity: 1,
     y: 0,
+    x: 0,
     transition: {
-      duration: 0.6,
-      ease: 'easeOut',
+      duration: 0.7,
+      ease: [0.16, 1, 0.3, 1],
     },
   },
-}
+})
 
 // Staggered animation variants for card content
 const titleVariants = {
@@ -186,11 +191,12 @@ function DetailsBox({ gem }: { gem: HiddenGemItem }) {
 
 export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps) {
   const { ref, inView } = useInView({
-    threshold: 0.4,
-    triggerOnce: false,
+    threshold: 0.3,
+    triggerOnce: true,
   })
 
   const [isImageExpanded, setIsImageExpanded] = useState(false)
+  const [expandedImageIndex, setExpandedImageIndex] = useState(0)
   const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
   const images = gem.images || (gem.image ? [gem.image] : [])
 
@@ -204,46 +210,43 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
   return (
     <motion.article
       ref={ref}
-      variants={cardVariants}
+      variants={getCardVariants(index)}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
-      className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-all duration-300 border-t-4 relative"
+      className="bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
       style={{ borderTopColor: categoryStyles.borderColor }}
     >
-      {/* Two-column layout */}
-      <div className="flex flex-col lg:flex-row">
-        {/* Left Column - Image (50%) */}
-        {images.length > 0 && (
-          <div className="lg:w-[50%] flex-shrink-0 relative">
-            <div className="h-full min-h-[400px] lg:min-h-[500px] relative">
-              <ImageCarousel images={images} className="h-full rounded-none" />
+      {/* Left Column - Image (50%) */}
+      {images.length > 0 && (
+        <div className="lg:w-[50%] flex-shrink-0 relative h-full">
+          <ImageCarousel images={images} className="h-full w-full rounded-none" />
 
-              {/* Minimalistic Expand Button - No Background */}
-              <button
-                onClick={() => setIsImageExpanded(true)}
-                className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 group"
-                aria-label="Expand image"
-              >
-                <svg
-                  className="w-5 h-5 transition-transform group-hover:scale-125"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        )}
+          {/* Minimalistic Expand Button - No Background */}
+          <button
+            onClick={() => setIsImageExpanded(true)}
+            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 group"
+            aria-label="Expand image"
+          >
+            <svg
+              className="w-5 h-5 transition-transform group-hover:scale-125"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
 
-        {/* Right Column - Content (50%) */}
-        <div className={`flex-1 p-8 lg:p-10 ${!images.length ? 'lg:w-full' : ''}`}>
+      {/* Right Column - Content (50%) - Scrollable */}
+      <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
+        <div className="flex-1 overflow-y-auto p-8 lg:p-10">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -299,43 +302,44 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="absolute inset-0 z-50 flex items-center justify-center bg-black/95 rounded-3xl p-4"
+            className="absolute inset-0 z-50 rounded-3xl overflow-hidden"
             onClick={() => setIsImageExpanded(false)}
           >
-            <div className="relative w-full h-full flex items-center justify-center">
-              {/* Expanded Image */}
-              <motion.div
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0.9 }}
-                transition={{ duration: 0.2 }}
-                className="relative max-w-full max-h-full"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <ImageCarousel images={images} className="max-h-[80vh] w-auto" />
-              </motion.div>
+            {/* Full Card Image - Covers Entire Space */}
+            <motion.div
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="w-full h-full"
+            >
+              <img
+                src={images[0]?.src}
+                alt={images[0]?.alt || gem.name}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
 
-              {/* Minimalistic Close Button - No Background */}
-              <button
-                onClick={() => setIsImageExpanded(false)}
-                className="absolute top-4 right-4 text-white drop-shadow-lg transition-all duration-200 group"
-                aria-label="Close expanded image"
+            {/* Minimalistic Close Button - No Background */}
+            <button
+              onClick={() => setIsImageExpanded(false)}
+              className="absolute top-4 right-4 text-white drop-shadow-lg transition-all duration-200 group z-10"
+              aria-label="Close expanded image"
+            >
+              <svg
+                className="w-6 h-6 transition-transform group-hover:scale-125"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
               >
-                <svg
-                  className="w-6 h-6 transition-transform group-hover:scale-125"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

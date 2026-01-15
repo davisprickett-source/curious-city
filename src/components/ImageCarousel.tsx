@@ -35,7 +35,7 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   // Single image - no carousel needed
   if (images.length === 1) {
     return (
-      <div className={`relative ${isExpandedView ? '' : useFullHeight ? 'h-full' : 'aspect-[16/10]'} ${useRoundedCorners ? 'rounded-lg' : ''} overflow-hidden bg-neutral-100 contain-layout ${className}`}>
+      <div className={`relative ${isExpandedView ? '' : useFullHeight ? 'h-full' : 'aspect-[16/10]'} ${useRoundedCorners ? 'rounded-lg' : ''} overflow-hidden contain-layout ${className}`}>
         <img
           src={images[0].src}
           alt={images[0].alt}
@@ -54,7 +54,7 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
     <div className={`relative ${className}`}>
       {/* Main image container - click to advance */}
       <div
-        className={`relative ${isExpandedView ? '' : useFullHeight ? 'h-full' : 'aspect-[16/10]'} ${useRoundedCorners ? 'rounded-lg' : ''} overflow-hidden bg-neutral-100 cursor-pointer group contain-layout`}
+        className={`relative ${isExpandedView ? '' : useFullHeight ? 'h-full' : 'aspect-[16/10]'} ${useRoundedCorners ? 'rounded-lg' : ''} overflow-hidden cursor-pointer group contain-layout`}
         onClick={goToNext}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

@@ -98,7 +98,12 @@ export function ShareButton({ title, url }: ShareButtonProps) {
   ]
 
   return (
-    <div className="relative" ref={menuRef}>
+    <div
+      className="relative"
+      ref={menuRef}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 text-[#c65d3b] hover:text-[#a54d30] transition-colors"
@@ -110,7 +115,7 @@ export function ShareButton({ title, url }: ShareButtonProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50">
           {shareLinks.map((link) => (
             <a
               key={link.name}
