@@ -1677,6 +1677,24 @@ export const anchorage: CityData = {
           year: 'Ongoing',
           title: 'The Ghosts of the Historic Anchorage Hotel',
           body: 'The Historic Anchorage Hotel maintains a "ghost log" where guests document encounters. Staff and visitors report a jilted bride on the third floor, children running through empty hallways, a police chief who checked in decades ago and never left. A 2012 paranormal investigation claimed nearly three dozen spirits occupy the building. Chairs move. Lamps flicker. Children laugh when no children are registered. The hotel doesn\'t fight it—they lean in. The ghost log keeps filling.',
+          images: [
+            {
+              src: '/anchorage/dark-history/anchorage-hotel-1.png',
+              alt: 'Historic Anchorage Hotel exterior',
+            },
+            {
+              src: '/anchorage/dark-history/anchorage-hotel-2.png',
+              alt: 'Historic Anchorage Hotel interior hallway',
+            },
+            {
+              src: '/anchorage/dark-history/anchorage-hotel-3.png',
+              alt: 'Historic Anchorage Hotel room',
+            },
+            {
+              src: '/anchorage/dark-history/anchorage-hotel-4.png',
+              alt: 'Historic Anchorage Hotel historic photo',
+            }
+          ],
           verdict: 'The hotel embraces its reputation. Book room 315 if you\'re curious. Or brave. Or both.',
           sources: [
             {

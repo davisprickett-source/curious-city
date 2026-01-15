@@ -1482,7 +1482,21 @@ export const dallas: CityData = {
           neighborhood: 'Downtown',
           vibe: 'Subterranean rock-and-roll cool for people who find sunlight offensive.',
           order: 'The "Hells Bells" or whatever aromatic chemistry experiment the bartender suggests.',
-          why: 'Located in the basement of The Joule hotel, Midnight Rambler is where Dallas goes to pretend it lives in a noir film. With walnut-barreled ceilings and a cocktail program that borders on nuclear physics, it’s easily the most sophisticated drinking hole in the city. It’s dark, it’s moody, and it’s the kind of place where you can discuss international trade or plot a heist with equal ease. The bartenders are artisans of the highest order, and the sound system is tuned to "intimate but dangerous."',
+          why: 'Located in the basement of The Joule hotel, Midnight Rambler is where Dallas goes to pretend it lives in a noir film. With walnut-barreled ceilings and a cocktail program that borders on nuclear physics, it\'s easily the most sophisticated drinking hole in the city. It\'s dark, it\'s moody, and it\'s the kind of place where you can discuss international trade or plot a heist with equal ease. The bartenders are artisans of the highest order, and the sound system is tuned to "intimate but dangerous."',
+          images: [
+            {
+              src: '/dallas/establishments/bars-midnight-1.png',
+              alt: 'Midnight Rambler bar interior',
+            },
+            {
+              src: '/dallas/establishments/bars-midnight-2.png',
+              alt: 'Midnight Rambler cocktails',
+            },
+            {
+              src: '/dallas/establishments/bars-midnight-3.png',
+              alt: 'Midnight Rambler atmosphere',
+            },
+          ],
           address: '1530 Main St, Dallas, TX 75201',
           coordinates: { lat: 32.7816, lng: -96.7995 },
           price: '$$$',
@@ -1494,8 +1508,22 @@ export const dallas: CityData = {
           name: 'The Library Bar',
           neighborhood: 'Oak Lawn',
           vibe: 'Jazz Age glamour and leather-bound wisdom in a room that smells like success.',
-          order: 'A classic Martini—it’s the only way to respect the furniture.',
-          why: 'The Library is a Dallas institution nestled inside the Warwick Melrose. It’s the kind of place where the furniture is heavier than your car and the piano player knows exactly which song will make you order a second round. It’s been named one of the most iconic bars in America for its refusal to change. In a city obsessed with the new, The Library is a glorious, bourbon-soaked monument to the persistent excellence of the old school.',
+          order: 'A classic Martini—it\'s the only way to respect the furniture.',
+          why: 'The Library is a Dallas institution nestled inside the Warwick Melrose. It\'s the kind of place where the furniture is heavier than your car and the piano player knows exactly which song will make you order a second round. It\'s been named one of the most iconic bars in America for its refusal to change. In a city obsessed with the new, The Library is a glorious, bourbon-soaked monument to the persistent excellence of the old school.',
+          images: [
+            {
+              src: '/dallas/establishments/bar-library-1.png',
+              alt: 'The Library Bar interior',
+            },
+            {
+              src: '/dallas/establishments/bar-library-2.png',
+              alt: 'The Library Bar seating',
+            },
+            {
+              src: '/dallas/establishments/bar-library-3.png',
+              alt: 'The Library Bar atmosphere',
+            },
+          ],
           address: '3015 Oak Lawn Ave, Dallas, TX 75219',
           coordinates: { lat: 32.8101, lng: -96.8101 },
           price: '$$$',
@@ -1508,7 +1536,21 @@ export const dallas: CityData = {
           neighborhood: 'Lower Greenville',
           vibe: 'A 15,000-square-foot "adult playground" that feels like a upscale junkyard party.',
           order: 'A frozen drink from the Airstream bar and a cheesesteak from the window.',
-          why: 'The Truck Yard is proof that if you give Dallas residents enough string lights, a treehouse, and permission to bring their dogs, they will be happy forever. It’s a sprawl of picnic tables, recycled tractor parts, and food trucks that feels like a highly manicured trailer park. It is the undisputed capital of day-drinking in the city, especially during that five-minute window in April when the weather is actually perfect.',
+          why: 'The Truck Yard is proof that if you give Dallas residents enough string lights, a treehouse, and permission to bring their dogs, they will be happy forever. It\'s a sprawl of picnic tables, recycled tractor parts, and food trucks that feels like a highly manicured trailer park. It is the undisputed capital of day-drinking in the city, especially during that five-minute window in April when the weather is actually perfect.',
+          images: [
+            {
+              src: '/dallas/establishments/bars-truck-1.png',
+              alt: 'The Truck Yard outdoor space',
+            },
+            {
+              src: '/dallas/establishments/bars-truck-2.png',
+              alt: 'The Truck Yard bar area',
+            },
+            {
+              src: '/dallas/establishments/bars-truck-3.png',
+              alt: 'The Truck Yard atmosphere',
+            },
+          ],
           address: '5624 Sears St, Dallas, TX 75206',
           coordinates: { lat: 32.8285, lng: -96.7685 },
           price: '$',
@@ -1519,9 +1561,27 @@ export const dallas: CityData = {
         {
           name: 'Double Wide',
           neighborhood: 'Deep Ellum',
-          vibe: 'Trailer-trash chic in a neighborhood that’s rapidly forgetting how to be gritty.',
+          vibe: 'Trailer-trash chic in a neighborhood that\'s rapidly forgetting how to be gritty.',
           order: 'A "Yoo-Hoo Yee-Haw" (it involves actual Yoo-Hoo) and a sense of shared misfortune.',
-          why: 'Double Wide is the middle finger to Dallas’s obsession with high-rises and valet parking. It’s a bar that celebrates the unapologetically tacky. With toilet-bowl planters, tinsel-covered walls, and some of the best live music in Deep Ellum, it remains a sanctuary for the weird. It’s the kind of place where you can see a legendary punk band while drinking a cocktail that comes in a plastic cup and features a popsicle as a garnish.',
+          why: 'Double Wide is the middle finger to Dallas\'s obsession with high-rises and valet parking. It\'s a bar that celebrates the unapologetically tacky. With toilet-bowl planters, tinsel-covered walls, and some of the best live music in Deep Ellum, it remains a sanctuary for the weird. It\'s the kind of place where you can see a legendary punk band while drinking a cocktail that comes in a plastic cup and features a popsicle as a garnish.',
+          images: [
+            {
+              src: '/dallas/establishments/bar-double-wide-00.png',
+              alt: 'Double Wide bar exterior',
+            },
+            {
+              src: '/dallas/establishments/bar-double-wide-1.png',
+              alt: 'Double Wide interior decor',
+            },
+            {
+              src: '/dallas/establishments/bar-double-wide-2.png',
+              alt: 'Double Wide bar area',
+            },
+            {
+              src: '/dallas/establishments/bar-double-wide-3.png',
+              alt: 'Double Wide atmosphere',
+            },
+          ],
           address: '3510 Commerce St, Dallas, TX 75226',
           coordinates: { lat: 32.7834, lng: -96.7808 },
           price: '$',
@@ -1543,7 +1603,21 @@ export const dallas: CityData = {
           neighborhood: 'Oak Cliff',
           vibe: 'A high-church temple of caffeine that refuses to give you the Wi-Fi password.',
           order: 'A traditional Macchiato and a house-made croissant.',
-          why: 'Davis Street is where Dallas coffee culture stops being a hobby and starts being a theology. There is No Wi-Fi. There is No Air of Convenience. There is only an obsessive dedication to extraction and roasting. The space—a cavernous, industrial-cool warehouse—is usually filled with people actually talking to each other or reading books like it’s 1994. It’s the home base of Oak Cliff Coffee Roasters and arguably the best cup of coffee in Texas.',
+          why: 'Davis Street is where Dallas coffee culture stops being a hobby and starts being a theology. There is No Wi-Fi. There is No Air of Convenience. There is only an obsessive dedication to extraction and roasting. The space—a cavernous, industrial-cool warehouse—is usually filled with people actually talking to each other or reading books like it\'s 1994. It\'s the home base of Oak Cliff Coffee Roasters and arguably the best cup of coffee in Texas.',
+          images: [
+            {
+              src: '/dallas/establishments/coffee-davis-1.png',
+              alt: 'Davis Street Espresso interior',
+            },
+            {
+              src: '/dallas/establishments/coffee-davis-2.png',
+              alt: 'Davis Street Espresso coffee bar',
+            },
+            {
+              src: '/dallas/establishments/coffee-davis-3.png',
+              alt: 'Davis Street Espresso atmosphere',
+            },
+          ],
           address: '819 W Davis St, Dallas, TX 75208',
           coordinates: { lat: 32.7493, lng: -96.8277 },
           hours: '7am-3pm Mon-Sat',
@@ -1556,7 +1630,21 @@ export const dallas: CityData = {
           neighborhood: 'Oak Cliff',
           vibe: 'A tiny, sun-drenched sanctuary with deep Honduran roots and impeccable style.',
           order: 'The "Horchata Cafe" or a Mexican Mocha.',
-          why: 'Hola is the realization of co-owner Jeniffer Avila’s dream to bring her family’s Honduran coffee heritage to Dallas. It’s a tiny storefront that punches way above its weight class. While it looks like a Pinterest board come to life, the coffee is legitimately technical. The horchata—made fresh—paired with a shot of espresso is one of those life-improving discoveries you’ll try to recreate at home and fail miserably.',
+          why: 'Hola is the realization of co-owner Jeniffer Avila\'s dream to bring her family\'s Honduran coffee heritage to Dallas. It\'s a tiny storefront that punches way above its weight class. While it looks like a Pinterest board come to life, the coffee is legitimately technical. The horchata—made fresh—paired with a shot of espresso is one of those life-improving discoveries you\'ll try to recreate at home and fail miserably.',
+          images: [
+            {
+              src: '/dallas/establishments/coffee-hola-1.png',
+              alt: 'Hola Cafe interior',
+            },
+            {
+              src: '/dallas/establishments/coffee-hola-2.png',
+              alt: 'Hola Cafe coffee service',
+            },
+            {
+              src: '/dallas/establishments/coffee-hola-3.png',
+              alt: 'Hola Cafe atmosphere',
+            },
+          ],
           address: '1208 W Davis St, Dallas, TX 75208',
           coordinates: { lat: 32.7495, lng: -96.8357 },
           hours: '7am-5pm daily',
@@ -1569,7 +1657,21 @@ export const dallas: CityData = {
           neighborhood: 'The Cedars',
           vibe: 'A subterranean music lounge where future Grammys are probably being plotted.',
           order: 'A house drip and a ticket to whatever open mic is happening.',
-          why: 'Opening Bell is a legendary basement dive in The Cedars that has served as a launchpad for Leon Bridges and Maren Morris. It’s a coffee shop during the day and a listening room at night. It smells like roasted beans and ambition. Even if you aren\'t there for the live music, the vibe is strictly "creative professional on a deadline," which makes it a great place to hide from the downtown noise.',
+          why: 'Opening Bell is a legendary basement dive in The Cedars that has served as a launchpad for Leon Bridges and Maren Morris. It\'s a coffee shop during the day and a listening room at night. It smells like roasted beans and ambition. Even if you aren\'t there for the live music, the vibe is strictly "creative professional on a deadline," which makes it a great place to hide from the downtown noise.',
+          images: [
+            {
+              src: '/dallas/establishments/coffee-bell-1.png',
+              alt: 'Opening Bell Coffee interior',
+            },
+            {
+              src: '/dallas/establishments/coffee-bell-2.png',
+              alt: 'Opening Bell Coffee performance space',
+            },
+            {
+              src: '/dallas/establishments/coffee-bell-3.png',
+              alt: 'Opening Bell Coffee atmosphere',
+            },
+          ],
           address: '1409 S Lamar St, Dallas, TX 75215',
           coordinates: { lat: 32.7629, lng: -96.8161 },
           hours: '7am-10pm daily',
@@ -1582,7 +1684,21 @@ export const dallas: CityData = {
           neighborhood: 'Downtown',
           vibe: 'A brother-and-sister project that brings Costa Rican family farms directly to your cup.',
           order: 'A pour-over of their latest single-origin Costa Rican roast.',
-          why: 'Most coffee shops talk about "direct trade," but the Berninis actually own the farms in Costa Rica. This is a family operation from the soil to the steam wand. The downtown space is bright, tropical, and serves as a direct pipeline for some of the best beans in the hemisphere. It’s a piece of San José transplanted into the center of Dallas.',
+          why: 'Most coffee shops talk about "direct trade," but the Berninis actually own the farms in Costa Rica. This is a family operation from the soil to the steam wand. The downtown space is bright, tropical, and serves as a direct pipeline for some of the best beans in the hemisphere. It\'s a piece of San José transplanted into the center of Dallas.',
+          images: [
+            {
+              src: '/dallas/establishments/coffee-berni-1.png',
+              alt: 'The Berni Bean interior',
+            },
+            {
+              src: '/dallas/establishments/coffee-berni-2.png',
+              alt: 'The Berni Bean coffee bar',
+            },
+            {
+              src: '/dallas/establishments/coffee-berni-3.png',
+              alt: 'The Berni Bean atmosphere',
+            },
+          ],
           address: '650 S Griffin St, Dallas, TX 75202',
           coordinates: { lat: 32.7774, lng: -96.8038 },
           hours: '7am-4pm Mon-Fri, 8am-4pm Sat-Sun',
@@ -1604,7 +1720,21 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           vibe: 'The undisputed heavy-hitter of Dallas BBQ—long lines, massive pits, and zero regrets.',
           order: 'The "Hot Mess" (brisket-stuffed sweet potato) and a massive beef rib.',
-          why: 'Pecan Lodge is the reason people stand in the Texas heat for two hours. It started in a farmers market booth and became a national phenomenon. Their brisket is smoked for 18 hours over post oak, and the "Hot Mess" is a culinary dare that you absolutely should take. It’s loud, it’s crowded, and the staff moves with the precision of a SWAT team. It’s the definitive Dallas BBQ experience—grit, smoke, and sheer ambition.',
+          why: 'Pecan Lodge is the reason people stand in the Texas heat for two hours. It started in a farmers market booth and became a national phenomenon. Their brisket is smoked for 18 hours over post oak, and the "Hot Mess" is a culinary dare that you absolutely should take. It\'s loud, it\'s crowded, and the staff moves with the precision of a SWAT team. It\'s the definitive Dallas BBQ experience—grit, smoke, and sheer ambition.',
+          images: [
+            {
+              src: '/dallas/establishments/resto-pecan-1.png',
+              alt: 'Pecan Lodge BBQ',
+            },
+            {
+              src: '/dallas/establishments/resto-pecan-2.png',
+              alt: 'Pecan Lodge smoked meats',
+            },
+            {
+              src: '/dallas/establishments/resto-pecan-3.png',
+              alt: 'Pecan Lodge interior',
+            },
+          ],
           address: '2702 Main St, Dallas, TX 75226',
           coordinates: { lat: 32.7857, lng: -96.7889 },
           price: '$$',
@@ -1615,9 +1745,23 @@ export const dallas: CityData = {
         {
           name: 'Lucia',
           neighborhood: 'Bishop Arts',
-          vibe: 'An intimate, 50-seat Italian "jewel box" that makes you forget you’re in a city of millions.',
-          order: 'The house-cured salumi board and whatever handmade pasta they’re featuring.',
-          why: 'Lucia is one of the hardest reservations in the city for a reason. David and Jennifer Uygur operate on a scale of meticulous detail that is rare in Dallas. It’s a warm, blue-walled room where the pasta is made by hand every day and the menu changes with the whims of the seasons. It’s the antithesis of the "Big D" steakhouse—quiet, thoughtful, and deeply personal. A MICHELIN Bib Gourmand recipient that actually deserves the hype.',
+          vibe: 'An intimate, 50-seat Italian "jewel box" that makes you forget you\'re in a city of millions.',
+          order: 'The house-cured salumi board and whatever handmade pasta they\'re featuring.',
+          why: 'Lucia is one of the hardest reservations in the city for a reason. David and Jennifer Uygur operate on a scale of meticulous detail that is rare in Dallas. It\'s a warm, blue-walled room where the pasta is made by hand every day and the menu changes with the whims of the seasons. It\'s the antithesis of the "Big D" steakhouse—quiet, thoughtful, and deeply personal. A MICHELIN Bib Gourmand recipient that actually deserves the hype.',
+          images: [
+            {
+              src: '/dallas/establishments/resto-lucia-1.png',
+              alt: 'Lucia restaurant interior',
+            },
+            {
+              src: '/dallas/establishments/resto-lucia-2.png',
+              alt: 'Lucia handmade pasta',
+            },
+            {
+              src: '/dallas/establishments/resto-lucia-3.png',
+              alt: 'Lucia dining experience',
+            },
+          ],
           address: '287 N Bishop Ave, Dallas, TX 75208',
           coordinates: { lat: 32.7462, lng: -96.8300 },
           price: '$$$',
@@ -1630,7 +1774,21 @@ export const dallas: CityData = {
           neighborhood: 'Arts District',
           vibe: 'A minimalist Japanese masterpiece where soba is an art form.',
           order: 'House-made soba (hot or cold) and the grilled freshwater eel.',
-          why: 'Tei-An is one of the few places in the country that makes its soba noodles on-site, and Teiichi Sakurai is a master of the craft. Located in the heart of the Arts District, it’s a serene, sophisticated space that feels like a portal to Tokyo. The attention to detail—from the texture of the noodles to the quality of the A5 Miyazaki beef—is staggering. It’s where the Dallas elite go to feel refined, and the food actually backs up the atmosphere.',
+          why: 'Tei-An is one of the few places in the country that makes its soba noodles on-site, and Teiichi Sakurai is a master of the craft. Located in the heart of the Arts District, it\'s a serene, sophisticated space that feels like a portal to Tokyo. The attention to detail—from the texture of the noodles to the quality of the A5 Miyazaki beef—is staggering. It\'s where the Dallas elite go to feel refined, and the food actually backs up the atmosphere.',
+          images: [
+            {
+              src: '/dallas/establishments/resto-tei-ann-1.png',
+              alt: 'Tei-An restaurant interior',
+            },
+            {
+              src: '/dallas/establishments/resto-tei-ann-2.png',
+              alt: 'Tei-An house-made soba',
+            },
+            {
+              src: '/dallas/establishments/resto-tei-ann-3.png',
+              alt: 'Tei-An dining experience',
+            },
+          ],
           address: '1722 Routh St #110, Dallas, TX 75201',
           coordinates: { lat: 32.7896, lng: -96.8003 },
           price: '$$$',
@@ -1641,9 +1799,23 @@ export const dallas: CityData = {
         {
           name: 'Jimmy\'s Food Store',
           neighborhood: 'East Dallas',
-          vibe: 'A chaotic, wonderful Italian grocery that’s been the soul of East Dallas since the \'40s.',
+          vibe: 'A chaotic, wonderful Italian grocery that\'s been the soul of East Dallas since the \'40s.',
           order: 'The Italian Stallion sub and a bottle of wine from the massive back room.',
-          why: 'Jimmy’s is not a "restaurant" in the traditional sense; it’s a pilgrimage. It’s a family-run Italian deli where the shelves are packed with rare imports and the sandwich line is a test of patience. It’s authentic, unpretentious, and smells like heaven. Grab a sub, a cannoli, and a bottle of wine from their 400+ Italian selections, and you’ll understand why locals have been loyal for over 50 years. It’s the heart of the neighborhood.',
+          why: 'Jimmy\'s is not a "restaurant" in the traditional sense; it\'s a pilgrimage. It\'s a family-run Italian deli where the shelves are packed with rare imports and the sandwich line is a test of patience. It\'s authentic, unpretentious, and smells like heaven. Grab a sub, a cannoli, and a bottle of wine from their 400+ Italian selections, and you\'ll understand why locals have been loyal for over 50 years. It\'s the heart of the neighborhood.',
+          images: [
+            {
+              src: '/dallas/establishments/resto-jimmy-1.png',
+              alt: 'Jimmy\'s Food Store interior',
+            },
+            {
+              src: '/dallas/establishments/resto-jimmy-2.png',
+              alt: 'Jimmy\'s Food Store deli counter',
+            },
+            {
+              src: '/dallas/establishments/resto-jimmy-3.png',
+              alt: 'Jimmy\'s Food Store sandwiches',
+            },
+          ],
           address: '4901 Bryan St, Dallas, TX 75206',
           coordinates: { lat: 32.8006, lng: -96.7712 },
           price: '$$',
@@ -1656,7 +1828,21 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           vibe: 'High-concept tacos that reject the "street food" label in favor of culinary excellence.',
           order: 'Duck Carnitas and a Mezcal flight.',
-          why: 'Revolver is what happens when a chef treats a taco with the reverence of a fine-dining entree. It’s loud, it’s in Deep Ellum, and it’s always packed. The duck carnitas are legendary, but the rotating specials—often featuring high-end ingredients unlike anything else in the neighborhood—are the real draw. It’s inventive, authentic, and captures the current energy of the Dallas food scene perfectly.',
+          why: 'Revolver is what happens when a chef treats a taco with the reverence of a fine-dining entree. It\'s loud, it\'s in Deep Ellum, and it\'s always packed. The duck carnitas are legendary, but the rotating specials—often featuring high-end ingredients unlike anything else in the neighborhood—are the real draw. It\'s inventive, authentic, and captures the current energy of the Dallas food scene perfectly.',
+          images: [
+            {
+              src: '/dallas/establishments/resto-revolver-1.png',
+              alt: 'Revolver Taco Lounge interior',
+            },
+            {
+              src: '/dallas/establishments/resto-revolver-2.png',
+              alt: 'Revolver Taco Lounge tacos',
+            },
+            {
+              src: '/dallas/establishments/resto-revolver-3.png',
+              alt: 'Revolver Taco Lounge dining',
+            },
+          ],
           address: '2701 Main St, Dallas, TX 75226',
           coordinates: { lat: 32.7857, lng: -96.7889 },
           price: '$$',

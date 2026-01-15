@@ -212,6 +212,14 @@ export const chicago: CityData = {
             {
               src: '/chicago/curiosities/reactor-2.png',
               alt: 'Stagg Field memorial to first nuclear reaction',
+            },
+            {
+              src: '/chicago/curiosities/curious-atom-3.png',
+              alt: 'First nuclear reaction under squash court at University of Chicago',
+            },
+            {
+              src: '/chicago/curiosities/curious-atom-4.png',
+              alt: 'Atomic Age birthplace at University of Chicago',
             }
           ],
           source: 'Bulletin of the Atomic Scientists',
@@ -1010,6 +1018,10 @@ export const chicago: CityData = {
               src: '/chicago/hidden-gems/pullman-monument.jpg',
               alt: 'Pullman Administration Clock Tower Building',
               credit: 'Wikimedia Commons',
+            },
+            {
+              src: '/chicago/curiosities/hidden-pullman.png',
+              alt: 'Pullman National Monument historic district',
             }
           ],
           address: '11141 S Cottage Grove Ave, Chicago, IL 60628',
@@ -2612,6 +2624,12 @@ export const chicago: CityData = {
           communityVoice: '"When Borders closed, the Loop became a little less livable." — Crain\'s Chicago Business',
           lastAddress: '150 N State St, Chicago',
           source: 'Chicago Tribune, Crain\'s Chicago',
+          images: [
+            {
+              src: '/chicago/curiosities/lost-borders.png',
+              alt: 'Borders Books original flagship location in Chicago Loop',
+            }
+          ],
         },
         {
           id: 'chicago-lost-2',
@@ -2638,6 +2656,12 @@ export const chicago: CityData = {
           communityVoice: '"Frontera Fresco made O\'Hare bearable." — Bon Appétit',
           lastAddress: "Terminal 3, O'Hare International Airport, Chicago",
           source: 'Chicago Tribune, Bon Appétit',
+          images: [
+            {
+              src: '/chicago/curiosities/lost-frontera.png',
+              alt: 'Frontera Fresco at O\'Hare Airport',
+            }
+          ],
         }
       ],
     }

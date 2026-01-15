@@ -1025,10 +1025,11 @@ export const portland: CityData = {
           hours: 'Daily 5pm-12am',
           website: 'http://expatriatepdx.com/',
           instagram: '@expatriatepdx',
-          image: {
-            src: '',
-            alt: 'Intimate cocktail bar with Asian-inspired drinks',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-expat-1.png', alt: 'Expatriate intimate cocktail bar interior' },
+            { src: '/portland/lost-loved/bar-expat-2.png', alt: 'Expatriate Asian-inspired cocktails' },
+            { src: '/portland/lost-loved/bar-expat-3.png', alt: 'Expatriate dueling turntables and vinyl collection' },
+          ],
         },
         {
           name: 'Multnomah Whiskey Library',
@@ -1042,10 +1043,11 @@ export const portland: CityData = {
           hours: 'Tue-Thu 4pm-10pm, Fri-Sat 4pm-11pm',
           website: 'https://mwlpdx.com/',
           instagram: '@multnomahwhiskeylibrary',
-          image: {
-            src: '',
-            alt: 'Vintage whiskey library with brick walls and rare bottles',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-mult-0.png', alt: 'Multnomah Whiskey Library vintage library setting' },
+            { src: '/portland/lost-loved/bar-mult-1.png', alt: 'Multnomah Whiskey Library brick walls and rare bottles' },
+            { src: '/portland/lost-loved/bar-mult-3.png', alt: 'Multnomah Whiskey Library extensive whiskey collection' },
+          ],
         },
         {
           name: 'Hale Pele',
@@ -1059,10 +1061,11 @@ export const portland: CityData = {
           hours: 'Daily 4pm-12am',
           website: 'https://www.halepele.com/',
           instagram: '@halepele',
-          image: {
-            src: '',
-            alt: 'Tiki bar with exotic cocktails and tropical decor',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-hale-1.png', alt: 'Hale Pele tiki bar exterior' },
+            { src: '/portland/lost-loved/bar-hale-2.png', alt: 'Hale Pele tropical decor and exotic cocktails' },
+            { src: '/portland/lost-loved/bar-hale-3.png', alt: 'Hale Pele extensive rum collection' },
+          ],
         },
         {
           name: 'The Bye and Bye',
@@ -1076,10 +1079,10 @@ export const portland: CityData = {
           hours: 'Mon-Thu 12pm-12am, Fri 12pm-1am, Sat 10am-1am, Sun 10am-12am',
           website: 'https://thebyeandbye.com/',
           instagram: '@byeandbyeportland',
-          image: {
-            src: '',
-            alt: 'Vegan bar with spacious patio on Alberta Street',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-bye-1.png', alt: 'The Bye and Bye vegan bar exterior' },
+            { src: '/portland/lost-loved/bar-bye-2.png', alt: 'The Bye and Bye spacious patio on Alberta Street' },
+          ],
         },
         {
           name: 'Produce Row Café',
@@ -1093,27 +1096,31 @@ export const portland: CityData = {
           hours: 'Mon 12pm-4pm, Tue-Thu 12pm-7pm, Fri-Sat 12pm-8pm',
           website: 'https://www.producerowcafe.com/',
           instagram: '@producerowpdx',
-          image: {
-            src: '',
-            alt: 'Historic craft beer bar with extensive tap selection',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-produce-1.png', alt: 'Produce Row Café historic craft beer bar exterior' },
+            { src: '/portland/lost-loved/bar-produce-2.png', alt: 'Produce Row Café extensive tap selection' },
+            { src: '/portland/lost-loved/bar-produce-3.png', alt: 'Produce Row Café year-round covered patio' },
+            { src: '/portland/lost-loved/bar-produce-4.png', alt: 'Produce Row Café award-winning bourbon collection' },
+          ],
         },
         {
           name: 'The Horse Brass Pub',
           neighborhood: 'Sunnyside',
           vibe: 'A high-church English pub that smells of fried fish and historical significance. It is the spiritual home of Portland\'s craft beer revolution.',
-          order: 'A proper pint of Younger’s Special Bitter or whatever the most aggressive IPA on tap is. And the fish and chips.',
-          why: 'Opened in 1976 by Don Younger, the Horse Brass was the first place in Portland that took beer seriously. It’s dark, the tables are scarred, and the list of 50+ taps is a masterclass in brewing. Younger was the "godfather" of the local beer scene, and his pub remains the meeting ground for brewers, nerds, and anyone who thinks "light" is a description for a lamp, not a beverage.',
+          order: 'A proper pint of Younger\'s Special Bitter or whatever the most aggressive IPA on tap is. And the fish and chips.',
+          why: 'Opened in 1976 by Don Younger, the Horse Brass was the first place in Portland that took beer seriously. It\'s dark, the tables are scarred, and the list of 50+ taps is a masterclass in brewing. Younger was the "godfather" of the local beer scene, and his pub remains the meeting ground for brewers, nerds, and anyone who thinks "light" is a description for a lamp, not a beverage.',
           address: '4534 SE Belmont St, Portland, OR 97215',
           coordinates: { lat: 45.5164, lng: -122.6158 },
           price: '$$',
           hours: 'Daily 11am-1am',
           website: 'https://horsebrass.com',
           instagram: '@horsebrasspub',
-          image: {
-            src: '/portland/bars/horse-brass.png',
-            alt: 'Historic English pub interior of The Horse Brass in Portland',
-          },
+          images: [
+            { src: '/portland/lost-loved/bar-horse-0.png', alt: 'The Horse Brass Pub historic English pub exterior' },
+            { src: '/portland/bars/horse-brass.png', alt: 'Historic English pub interior of The Horse Brass in Portland' },
+            { src: '/portland/lost-loved/bar-horse-1.png', alt: 'The Horse Brass Pub scarred tables and dark atmosphere' },
+            { src: '/portland/lost-loved/bar-horse-3.png', alt: 'The Horse Brass Pub extensive tap selection' },
+          ],
         },
       ],
     },
@@ -1136,10 +1143,11 @@ export const portland: CityData = {
           hours: 'Daily 4pm-10pm',
           website: 'https://www.canardrestaurant.com/',
           instagram: '@canard_restaurant',
-          image: {
-            src: '',
-            alt: 'French-inspired wine bar with award-winning list',
-          },
+          images: [
+            { src: '/portland/lost-loved/resto-canard-1.png', alt: 'Canard French wine bar exterior' },
+            { src: '/portland/lost-loved/resto-canard-2.png', alt: 'Canard duck confit and French bar food' },
+            { src: '/portland/lost-loved/resto-canard-3.png', alt: 'Canard extensive wine collection and intimate dining' },
+          ],
         },
         {
           name: 'Yaowarat',
@@ -1153,10 +1161,11 @@ export const portland: CityData = {
           hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Sun 4:30pm-9pm',
           website: 'https://www.yaowaratpdx.com/',
           instagram: '@yaowaratpdx',
-          image: {
-            src: '',
-            alt: 'Thai-Chinese street food from Bangkok Chinatown',
-          },
+          images: [
+            { src: '/portland/lost-loved/resto-yao-1.png', alt: 'Yaowarat Thai-Chinese restaurant exterior' },
+            { src: '/portland/lost-loved/resto-yao-2.png', alt: 'Yaowarat Bangkok Chinatown street food' },
+            { src: '/portland/lost-loved/resto-yao-3.png', alt: 'Yaowarat stir-fried noodles and grilled squid' },
+          ],
         },
         {
           name: 'Screen Door',
@@ -1170,10 +1179,11 @@ export const portland: CityData = {
           hours: 'Daily 8:30am-2pm & 4:30pm-9pm',
           website: 'https://screendoorrestaurant.com/',
           instagram: '@screendoorrestaurant',
-          image: {
-            src: '',
-            alt: 'Southern fried chicken and waffles brunch',
-          },
+          images: [
+            { src: '/portland/lost-loved/resto-screen-1.png', alt: 'Screen Door Southern comfort food restaurant exterior' },
+            { src: '/portland/lost-loved/resto-screen-2.png', alt: 'Screen Door fried chicken and waffles' },
+            { src: '/portland/lost-loved/resto-screen-3.png', alt: 'Screen Door brunch spread and Southern classics' },
+          ],
         },
         {
           name: 'Lardo',
@@ -1187,10 +1197,11 @@ export const portland: CityData = {
           hours: 'Daily 11am-10pm',
           website: 'https://www.lardosandwiches.com/',
           instagram: '@lardopdx',
-          image: {
-            src: '',
-            alt: 'Gourmet pork sandwiches and dirty fries',
-          },
+          images: [
+            { src: '/portland/lost-loved/resto-lardo-1.png', alt: 'Lardo sandwich shop exterior' },
+            { src: '/portland/lost-loved/resto-lardo-2.png', alt: 'Lardo Korean pork shoulder sandwich' },
+            { src: '/portland/lost-loved/resto-lardo-3.png', alt: 'Lardo dirty fries and gourmet pork sandwiches' },
+          ],
         },
         {
           name: 'Ava Gene\'s',
@@ -1204,10 +1215,11 @@ export const portland: CityData = {
           hours: 'Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm',
           website: 'https://avagenes.com/',
           instagram: '@avagenes',
-          image: {
-            src: '',
-            alt: 'House-made pasta and seasonal Italian dishes',
-          },
+          images: [
+            { src: '/portland/lost-loved/resto-ava.png', alt: 'Ava Gene\'s Italian restaurant exterior' },
+            { src: '/portland/lost-loved/resto-ava-2.png', alt: 'Ava Gene\'s house-made pasta' },
+            { src: '/portland/lost-loved/resto-ava-3.png', alt: 'Ava Gene\'s seasonal Italian dishes and vegetables' },
+          ],
         }
       ],
     },

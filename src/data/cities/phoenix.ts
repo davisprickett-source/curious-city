@@ -460,10 +460,20 @@ export const phoenix: CityData = {
           category: 'underground',
           title: 'A speakeasy operates on the site of a 19th-century Black-owned brothel',
           body: 'Beneath downtown Phoenix, in a narrow brick-lined passageway built after a 1910 fire, sits Melinda\'s Alley—a speakeasy bar on the site of a brothel run by Malinda Curtis, a Black proprietrix in the 1800s. The Adams Hotel was built above the old tunnels. Through subsequent demolitions and remodels, the underground passage survived. Today, a heavy door behind a multicolored mural opens to the bar—but only when a red light signals it\'s open. Inside, exposed brick walls, dim lighting, and a bank vault door from the old Valley National Bank preserve the hidden history. It\'s one of Phoenix\'s rare acknowledgments of its multicultural past, buried literally underground.',
-          image: {
-            src: '/phoenix/curiosities/melindas-alley.png',
-            alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
-          },
+          images: [
+            {
+              src: '/phoenix/curiosities/curious-melinda-0.png',
+              alt: 'Melinda\'s Alley underground speakeasy entrance with multicolored mural',
+            },
+            {
+              src: '/phoenix/curiosities/curious-melinda-1.png',
+              alt: 'Historic Melinda\'s Alley brick passageway and speakeasy bar',
+            },
+            {
+              src: '/phoenix/curiosities/melindas-alley.png',
+              alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
+            },
+          ],
           sources: [
             {
               title: 'Phoenix Magazine: 25 Best-Kept Secrets in Phoenix',
@@ -641,6 +651,20 @@ export const phoenix: CityData = {
           category: 'Historic Cemetery',
           description:
             'Seven historic cemeteries founded in 1884, officially renamed in 2007. Contains 3,700 estimated burials but fewer than 600 have headstones. Includes graves of Darrell Duppa (who named Phoenix) and Jacob Waltz (Lost Dutchman Mine). Potter\'s field with common graves for unclaimed bodies. Closed to new burials in 1914.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-cemetery-2.png',
+              alt: 'Historic Pioneer and Military Memorial Park cemetery headstones',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-cemetery-3.png',
+              alt: 'Pioneer cemetery graves including notable Phoenix founders',
+            },
+            {
+              src: '/phoenix/curiosities/cemettery-1.png',
+              alt: 'Pioneer and Military Memorial Park historic burial grounds',
+            },
+          ],
           address: '1317 W Jefferson St, Phoenix, AZ 85007',
           coordinates: { lat: 33.4486, lng: -112.0850 },
           hours: 'Daily dawn to dusk',
@@ -654,6 +678,16 @@ export const phoenix: CityData = {
           category: 'Historic Oddity',
           description:
             'White pyramid structure in Papago Park. Final resting place of Arizona\'s first governor George W.P. Hunt. Built in 1931, Hunt placed there in 1934. Overshadowed by more popular Papago Park features — most visitors never notice the pyramid.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-hunts-0.png',
+              alt: 'White pyramid tomb of Arizona Governor George W.P. Hunt in Papago Park',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-hunts-1.png',
+              alt: 'Hunt\'s Tomb pyramid structure overlooking desert landscape',
+            },
+          ],
           address: 'Papago Park, Phoenix, AZ',
           coordinates: { lat: 33.4556, lng: -111.9489 },
           hours: 'Park hours',
@@ -667,6 +701,12 @@ export const phoenix: CityData = {
           category: 'Historic Building',
           description:
             'Only surviving structure from Phoenix\'s second Chinatown. Built 1929 at 3rd & Jackson. National Register of Historic Places (1985). Phoenix\'s Chinatowns dissolved decades ago — this lone building remains as silent witness.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-sun-mercantile-1.png',
+              alt: 'Historic Sun Mercantile Building, last remnant of Phoenix Chinatown',
+            },
+          ],
           address: '424 E Jackson St, Phoenix, AZ 85004',
           coordinates: { lat: 33.4506, lng: -112.0678 },
           hours: 'Exterior viewing only',
@@ -680,6 +720,20 @@ export const phoenix: CityData = {
           category: 'Oddities Shop',
           description:
             'Small taxidermy emporium filled with bones, skulls, vintage taxidermy, freeze-dried toads, and squid in jars. Located in the Melrose District. Known mainly to oddity collectors and taxidermy enthusiasts. Not your typical gift shop.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-curious-1.png',
+              alt: 'Curious Nature oddities shop interior with taxidermy and skulls',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-curious-2.png',
+              alt: 'Vintage taxidermy and curiosities display at Curious Nature',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-curious-3.png',
+              alt: 'Macabre collection of bones and specimens at Curious Nature',
+            },
+          ],
           address: 'Melrose District, Phoenix',
           coordinates: { lat: 33.4734, lng: -112.0445 },
           hours: 'Varies',
@@ -693,6 +747,16 @@ export const phoenix: CityData = {
           category: 'Archaeological Site',
           description:
             'One of only two remaining Hohokam platform mounds in metro Phoenix. Larger than football field, 27 feet high. Occupied AD 1100-1400. Seasonally open October-May since 2013 visitor center completion. Overshadowed by Pueblo Grande despite significance.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-mesa-2.png',
+              alt: 'Mesa Grande Hohokam platform mound archaeological site',
+            },
+            {
+              src: '/phoenix/curiosities/mesagrande.png',
+              alt: 'Ancient Mesa Grande ruins from Hohokam civilization',
+            },
+          ],
           address: '1000 N Date St, Mesa, AZ 85201',
           coordinates: { lat: 33.4250, lng: -111.8278 },
           hours: 'Oct-May, seasonal hours',
@@ -706,6 +770,16 @@ export const phoenix: CityData = {
           category: 'Mining Ruins',
           description:
             'Gold mining operation began 1913 on north slope South Mountain. Shut down 1942 by U.S. War Production Board. Ruins still visible in South Mountain Park. Hidden in vast park system — requires knowledge of location.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-delta-1.png',
+              alt: 'Max Delta Mine ruins in South Mountain Park',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-delta-2.png',
+              alt: 'Historic gold mining ruins at Max Delta Mine site',
+            },
+          ],
           address: 'South Mountain Park (north slope)',
           coordinates: { lat: 33.3567, lng: -112.0633 },
           hours: 'Park hours',
@@ -719,6 +793,20 @@ export const phoenix: CityData = {
           category: 'Hidden Waterfall',
           description:
             '20-foot waterfall cascade at 56th Street and Indian School Road. Next to G.R. Herberger Park, open since 2003. Hidden oasis many locals still discovering. Tucked in urban setting, not well-marked — drive past it constantly without noticing.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-falls-0.png',
+              alt: 'Arizona Falls waterfall cascade in urban Phoenix',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-falls-1.png',
+              alt: 'Hidden Arizona Falls oasis near Indian School Road',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-falls-3.png',
+              alt: 'Arizona Falls 20-foot waterfall at G.R. Herberger Park',
+            },
+          ],
           address: '5802 E Indian School Rd, Phoenix, AZ 85018',
           coordinates: { lat: 33.4950, lng: -111.9800 },
           hours: 'Daily dawn to dusk',
@@ -732,6 +820,28 @@ export const phoenix: CityData = {
           category: 'Underground Speakeasy',
           description:
             'Basement lounge with no exterior signage or front door. Enter via alley behind nondescript brick building. Candlelit space with backlit bar mobile. Deliberately hidden — difficult to find even in daylight. Run by same team behind Crescent Ballroom.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-valley-bar-1.png',
+              alt: 'Valley Bar underground speakeasy entrance in downtown Phoenix',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-valley-bar-2.png',
+              alt: 'Candlelit interior of Valley Bar basement lounge',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-valley-bar-3.png',
+              alt: 'Hidden Valley Bar with backlit bar mobile',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-valley-1.png',
+              alt: 'Valley Bar alley entrance with no front door',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-valley-art-2.png',
+              alt: 'Valley Bar art and atmosphere in underground venue',
+            },
+          ],
           address: '130 N Central Ave, Phoenix, AZ 85004',
           coordinates: { lat: 33.4506, lng: -112.0744 },
           hours: 'Wed-Sat 6pm-2am',
@@ -746,6 +856,16 @@ export const phoenix: CityData = {
           category: 'Underground Bar',
           description:
             'Subterranean bar in former ostrich feather storage room (early 1900s) in Chandler. Hidden door covered in kitchen utensils from restaurant above. Outside entrance via descending staircase with red light. Authentic underground history.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-ostrich-1.png',
+              alt: 'The Ostrich underground bar entrance with descending stairs',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-ostrich-2.png',
+              alt: 'Subterranean bar interior of The Ostrich in Chandler',
+            },
+          ],
           address: '122 N Arizona Ave, Chandler, AZ 85225',
           coordinates: { lat: 33.3061, lng: -111.8414 },
           hours: 'Tue-Sat 5pm-12am',
@@ -772,6 +892,20 @@ export const phoenix: CityData = {
           category: 'Public Art',
           description:
             'Between 14th and 15th streets in Downtown Phoenix. Cinderblock walls and fences serve as canvases. Prismatic murals by local and national artists. Unassuming residential alley — unmarked, easy to miss.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/hidden-murals-1.png',
+              alt: 'Vibrant street art murals in Oak Street Alley',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-murals-2.png',
+              alt: 'Colorful murals by local artists on alley walls',
+            },
+            {
+              src: '/phoenix/hidden-gems/hidden-murals-3.png',
+              alt: 'Prismatic murals transforming Oak Street Alley',
+            },
+          ],
           address: 'Oak St between 14th & 15th St, Phoenix',
           coordinates: { lat: 33.4556, lng: -112.0528 },
           hours: 'Always accessible',

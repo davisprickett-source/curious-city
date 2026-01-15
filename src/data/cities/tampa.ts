@@ -438,7 +438,7 @@ export const tampa: CityData = {
           coordinates: { lat: 27.9578, lng: -82.4633 },
           hours: 'Mon-Sat 11am-10pm, Sun 11am-9pm',
           price: '$$',
-          website: 'https://armaborworks.com',
+          website: 'https://www.armatureworks.com',
           tip: 'The outdoor seating on the river is the move',
         },
       ],
@@ -469,7 +469,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Ybor City\'s Underground Tunnels',
-              url: 'https://www.tampabay.com/things-to-do/2019/10/31/tales-from-tampas-underground-tunnels/',
+              url: 'https://abandonedfl.com/ybor-city-tunnels/',
             },
             {
               title: 'Prohibition-Era Tampa',
@@ -501,7 +501,7 @@ export const tampa: CityData = {
           address: '601 N Florida Ave, Tampa, FL 33602',
           coordinates: { lat: 27.9495, lng: -82.4586 },
           hours: '5pm-midnight Wed-Sat',
-          website: 'https://www.marriott.com/hotels/hotel-information/restaurant/tpasi-le-meridien-tampa/',
+          website: 'https://www.marriott.com/en-us/hotels/tpasi-le-meridien-tampa-the-courthouse/dining/',
           tip: 'The vault door makes for great photos — ask the bartender about the building\'s mob history',
         },
       ],
@@ -529,7 +529,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'The Rise and Fall of Sulphur Springs',
-              url: 'https://www.tampabay.com/features/history/the-rise-and-fall-of-tampas-sulphur-springs-20190521/',
+              url: 'https://sulphurspringsmuseum.org/history/',
             },
           ],
           tip: 'Visible from the street but fenced off — best photographed from outside',
@@ -562,7 +562,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Ybor City\'s Fading Advertisements',
-              url: 'https://www.tampabay.com/things-to-do/2018/05/17/ybor-citys-fading-signs-tell-stories-of-a-bygone-era/',
+              url: 'https://yborcityonline.com/history/ybor-city-ghost-signs/',
             },
           ],
         },
@@ -623,7 +623,7 @@ export const tampa: CityData = {
           coordinates: { lat: 27.9464, lng: -82.4650 },
           hours: 'Tue-Sat 10am-5pm, Sun 12pm-5pm',
           price: '$10 museum admission (includes courtyard access)',
-          website: 'https://www.ut.edu/plant-museum',
+          website: 'https://www.plantmuseum.com',
           tip: 'Free to enter during museum hours — the courtyard is just inside the main entrance',
         },
       ],
@@ -649,7 +649,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'José Martí Park and Cuban Sovereignty',
-              url: 'https://www.tampabay.com/news/politics/stateroundup/jose-marti-park-in-ybor-city-is-technically-cuban-soil/',
+              url: 'https://www.atlasobscura.com/places/jose-marti-park',
             },
             {
               title: 'Fidel Castro\'s 1955 Tampa Visit',
@@ -667,7 +667,7 @@ export const tampa: CityData = {
           address: '509 N Florida Ave, Tampa, FL 33602',
           coordinates: { lat: 27.9497, lng: -82.4586 },
           hours: 'Church open for Mass; catacomb tours by appointment only',
-          website: 'https://sacredheartcathedralstpete.org/',
+          website: 'https://sacredheartfla.org',
           tip: 'Call the church office weeks in advance to request a rare catacomb tour—they\'re offered occasionally during heritage events',
           sources: [
             {
@@ -691,7 +691,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Tampa Electric History and the Minaret Smokestacks',
-              url: 'https://www.tampaelectric.com/company/history/',
+              url: 'https://www.tampaelectric.com/company/about/history/',
             },
           ],
         },
@@ -832,7 +832,7 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'La Gaceta History',
-              url: 'https://www.lagacetanewspaper.com/about/',
+              url: 'https://www.lagacetanewspaper.com/',
             },
             {
               title: 'Tampa\'s Trilingual Newspaper Tradition',
@@ -1891,9 +1891,9 @@ export const tampa: CityData = {
             },
             {
               type: 'article',
-              title: 'Haunting Tales from the Historic Cuban Club in Ybor City/Tampa, Florida',
-              publisher: 'iHorror',
-              url: 'https://ihorror.com/haunting-tales-from-the-historic-cuban-club-in-ybor-city-tampa-florida/',
+              title: 'Haunting Tales from the Historic Cuban Club',
+              publisher: 'Cuban Club Ybor',
+              url: 'https://cubanclubybor.com',
             },
             {
               type: 'article',

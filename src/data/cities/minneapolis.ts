@@ -1826,8 +1826,20 @@ export const minneapolis: CityData = {
           instagram: '@volsteads',
           images: [
             {
+              src: '/minneapolis/restaurants/volstead-0.png',
+              alt: 'Volstead\'s Emporium entrance and speakeasy atmosphere',
+            },
+            {
               src: 'https://mspmag.com/downloads/24590/download/0216-SecretSpeakeasy_640.jpg?cb=5303b833f0951ea0a657d6eb226fcc1c&w=640',
               alt: 'Volstead\'s Emporium speakeasy interior — vintage lighting, curtained booths, and the bar where Prohibition-era cocktails are crafted',
+            },
+            {
+              src: '/minneapolis/restaurants/volstead-1.png',
+              alt: 'Volstead\'s Emporium Prohibition-era cocktails and bar details',
+            },
+            {
+              src: '/minneapolis/restaurants/volstead-2.png',
+              alt: 'Volstead\'s Emporium velvet curtains and intimate speakeasy seating',
             }
           ],
           menuImage: {
@@ -2562,6 +2574,18 @@ export const minneapolis: CityData = {
             {
               src: '/minneapolis/restaurants/kramarczuks-1.png',
               alt: 'Kramarczuk\'s deli counter with Eastern European sausages and meats',
+            },
+            {
+              src: '/minneapolis/restaurants/resto-kram-1.png',
+              alt: 'Kramarczuk\'s traditional Eastern European dishes and deli specialties',
+            },
+            {
+              src: '/minneapolis/restaurants/resto-kram-2.png',
+              alt: 'Kramarczuk\'s dining area with authentic Ukrainian-Polish atmosphere',
+            },
+            {
+              src: '/minneapolis/restaurants/resto-kram-3.png',
+              alt: 'Kramarczuk\'s fresh-baked pastries and traditional desserts',
             }
           ],
           menuImage: {

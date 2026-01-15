@@ -69,8 +69,8 @@ export const seattle: CityData = {
               url: 'https://www.fbi.gov/history/famous-cases/db-cooper-hijacking',
             },
             {
-              title: 'Seattle Times: The D.B. Cooper Mystery',
-              url: 'https://www.seattletimes.com/seattle-news/the-legend-of-db-cooper/',
+              title: 'Seattle PI: The D.B. Cooper Mystery',
+              url: 'https://www.seattlepi.com/seattlenews/article/50-years-ago-db-cooper-mystery-began-in-seattle-16646144.php',
             }
           ],
           location: { name: 'Somewhere over Washington State', stillExists: true },
@@ -110,8 +110,8 @@ export const seattle: CityData = {
           body: 'In an alley next to Pike Place Market, both walls are plastered floor-to-ceiling with an estimated one million pieces of chewed gum. Every color. Every texture. Some formed into hearts and words. Most just blobs of masticated ABC gum (Already Been Chewed) from strangers\' mouths.\n\nIt started in the early 1990s when theater-goers waiting in line began sticking their gum to the bricks. Staff tried scraping it off. The gum kept coming. Eventually the Market gave up and declared it a tourist attraction in 1999.\n\nIn 2015, after two decades of accumulation, they finally steam-cleaned the walls. It took 130 hours to remove 2,350 pounds of gum. Within 48 hours, tourists had started a fresh layer.\n\nThe Gum Wall has been named one\'s "germiest tourist attractions" and probably harbors enough bacteria to create new life forms. People love it anyway. It\'s absolutely vile, completely Seattle, and somehow everybody wants a photo.',
           sources: [
             {
-              title: 'Seattle Times: Pike Place Gum Wall',
-              url: 'https://www.seattletimes.com/seattle-news/pike-place-gum-wall/',
+              title: 'Pike Place Market: The Gum Wall',
+              url: 'https://www.pikeplacemarket.org/vendor/the-gum-wall/',
             }
           ],
           location: { name: 'Pike Place Gum Wall', url: 'https://www.google.com/maps/place/Gum+Wall/@47.6084,-122.3403,17z', stillExists: true },
@@ -186,15 +186,19 @@ export const seattle: CityData = {
           id: 'curiosity-8',
           type: 'curiosity',
           category: 'culture',
-          title: 'Fremont has an actual Cold War Soviet submarine on dry land',
-          body: 'In the quirky Fremont neighborhood, next to a massive statue of Lenin salvaged from Slovakia, sits a genuine 1945 Soviet submarine. The B-39 (renamed the Sea Victory) is a Foxtrot-class attack submarine that patrolled the Pacific during the Cold War.\n\nThe sub was purchased at auction in 2001 and towed from Vladivostok to Seattle. It now serves as a museum where visitors can climb through the cramped torpedo rooms, engine compartments, and crew quarters. The submarine is 291 feet long and once carried a crew of 78 in conditions so tight that bunks were "hot racked" — shared in shifts.\n\nThe combination of a Soviet sub and a Lenin statue (plus the troll, plus the rocket attached to a building, plus the statue of a dog named Spam) makes Fremont the undisputed capital of Seattle weird.',
+          title: 'A 53-foot Cold War rocket is "parked" on a building in Fremont',
+          body: 'On the corner of Evanston Avenue and North 35th Street, a massive 1950s-era military rocket fuselage is attached to the side of a building, complete with a nose cone that occasionally emits "smoke" (actually steam). The Fremont Rocket was salvaged from a nearby surplus yard in 1991 and erected as a monument to the neighborhood\'s eccentric spirit. It was originally built from surplus tail booms of a Fairchild C-119 transport plane, though local legend often describes it as a real nuclear missile. The rocket bears the Fremont crest and the neighborhood motto "De Libertas Quirkas"—Freedom to be Peculiar. It serves as a navigational landmark and a reminder that in the "Center of the Universe," even surplus military hardware can become a beloved community icon.',
           sources: [
             {
-              title: 'Atlas Obscura: Soviet Submarine in Fremont',
-              url: 'https://www.atlasobscura.com/places/soviet-submarine-seattle',
+              title: 'HistoryLink: Fremont Rocket',
+              url: 'https://www.historylink.org/File/22533',
+            },
+            {
+              title: 'Atlas Obscura: The Fremont Rocket',
+              url: 'https://www.atlasobscura.com/places/fremont-rocket',
             }
           ],
-          location: { name: 'Fremont', url: 'https://www.google.com/maps/place/Fremont,+Seattle,+WA', stillExists: true },
+          location: { name: 'Fremont Rocket', url: 'https://www.google.com/maps/place/Fremont+Rocket/@47.6506,-122.3511,17z', stillExists: true },
         },
         {
           id: 'curiosity-9',
@@ -315,11 +319,11 @@ export const seattle: CityData = {
           body: 'Jimi Hendrix — arguably the greatest guitarist who ever lived — was born and raised in Seattle. He spent the first 18 years of his life in the Central District, playing guitar in his bedroom, sitting in with local R&B bands, and learning to make a Stratocaster sound like the voice of God.\n\nHe left Seattle in 1961 to join the Army (where he met his future bassist, Billy Cox), then spent years as a sideman for Little Richard and the Isley Brothers. He didn\'t become "Jimi Hendrix" until 1966 in London. Three years later he played Woodstock. A year after that, he was dead at 27.\n\nHendrix is buried at Greenwood Memorial Park in Renton (just south of Seattle) beneath a massive granite dome supported by three columns. His grave sees thousands of visitors annually. Flowers, guitar picks, and handwritten notes pile up constantly.\n\nSeattle has complicated feelings about Hendrix — the city largely ignored him until after he was famous and dead. But it claims him now. A bronze statue stands in Capitol Hill. MoPOP (Museum of Pop Culture) has an entire Hendrix wing. The city that didn\'t know what to do with him in life has turned him into a tourist attraction in death.',
           sources: [
             {
-              title: 'Jimi Hendrix Memorial',
-              url: 'https://www.jimihendrixmemorial.com/',
+              title: 'Greenwood Memorial Park: Jimi Hendrix Memorial',
+              url: 'https://www.dignitymemorial.com/funeral-homes/washington/renton/greenwood-memorial-park-funeral-home/4814',
             },
             {
-              title: 'Seattle Times: Jimi Hendrix Memorial',
+              title: 'Seattle Times: The Jimi Hendrix Memorial in Renton',
               url: 'https://www.seattletimes.com/pacific-nw-magazine/the-jimi-hendrix-memorial-in-renton-honors-a-musical-giant-in-grand-style/',
             }
           ],
@@ -487,7 +491,7 @@ export const seattle: CityData = {
               coordinates: { lat: 47.6617, lng: -122.4186 },
               hours: 'Daily 4am-11:30pm',
               price: 'Free',
-              website: 'https://www.seattle.gov/parks/find/parks/discovery-park',
+              website: 'https://www.seattle.gov/parks/allparks/discovery-park',
               tip: 'The Loop Trail adds spectacular bluff views if you have extra time.',
             },
             {
@@ -1509,8 +1513,8 @@ export const seattle: CityData = {
           ],
           sources: [
             {
-              title: 'Seattle Music History: The Off Ramp',
-              url: 'https://www.seattlepi.com/',
+              title: 'Seattle Met: The Off Ramp Retrospective',
+              url: 'https://www.seattlemet.com/arts-and-culture/2020/10/pearl-jam-first-concert-seattle-history-off-ramp',
             }
           ],
         },
@@ -1532,8 +1536,8 @@ export const seattle: CityData = {
           ],
           sources: [
             {
-              title: 'Seattle Times: Bakeman\'s Closes',
-              url: 'https://www.seattletimes.com/',
+              title: 'Seattle Mag: Why Did Bakeman\'s REALLY Close?',
+              url: 'https://seattlemag.com/food-and-drink/why-did-bakemans-restaurant-really-close/',
             }
           ],
         },
@@ -1554,8 +1558,8 @@ export const seattle: CityData = {
           ],
           sources: [
             {
-              title: 'Seattle PI: Remembering Vito\'s',
-              url: 'https://www.seattlepi.com/',
+              title: 'Seattle Met: The End of Vito\'s',
+              url: 'https://www.seattlemet.com/news-and-city-life/2023/01/vitos-restaurant-closure-first-hill-fire-seattle',
             }
           ],
         },
@@ -1575,8 +1579,8 @@ export const seattle: CityData = {
           ],
           sources: [
             {
-              title: 'Seattle Weekly: All-Ages History',
-              url: 'https://www.seattleweekly.com/',
+              title: 'KEXP: Seattle All-Ages History',
+              url: 'https://www.kexp.org/read/2019/11/14/rock-candy-forever/',
             }
           ],
         },

@@ -113,6 +113,10 @@ export const denver: CityData = {
           title: 'Denver measured its own altitude wrong three times',
           body: 'Denver\'s entire identity is built on being the "Mile High City"—it\'s on license plates, business names, and every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, a brass marker was proudly embedded on the 13th step of the State Capitol, declaring "One Mile Above Sea Level." For decades, tourists posed, postcards sold. Then, in 1969, a group of engineering students re-measured and found the marker was three steps too low. The legislature, with great fanfare, moved the "official" marker to the 18th step. Problem solved? Not quite. In 2003, the National Geodetic Survey, armed with GPS, found the 18th step was actually three feet *too high*. A third, more accurate marker was placed on the 15th step. Today, all three markers remain, a testament to Denver\'s stubborn pride and its inability to get its most famous statistic quite right. The state just lives with the competing truths.',
           year: '2003',
+          image: {
+            src: '/denver/curiosities/curious-mile-high-marker.png',
+            alt: 'Mile High marker on Colorado State Capitol steps',
+          },
           location: {
             name: 'Colorado State Capitol',
             stillExists: true,
@@ -132,10 +136,16 @@ export const denver: CityData = {
           title: 'A park covers thousands of forgotten corpses',
           body: 'Cheesman Park, a picturesque green space popular with joggers and picnickers, is built directly atop a mass grave. It was once Mount Prospect Cemetery, but in 1893, Denver decided to turn its overcrowded, dilapidated burial ground into a park. Contractors were paid a princely $1.90 per body to relocate the deceased. However, they soon discovered a lucrative, albeit macabre, loophole: chopping up the corpses allowed them to claim more "bodies" for payment. An estimated 2,000 to 5,000 human remains—some dismembered, many still in their coffins—were simply paved over. To this day, construction projects in the area occasionally unearth bones, and local legend whispers of spectral figures and inexplicable cold spots. So when you see a family enjoying a sunny afternoon picnic, just remember: they\'re probably sitting directly on someone\'s forgotten ribcage.',
           year: '1893',
-          image: {
-            src: '/denver/curiosities/cheesman.png',
-            alt: 'Cheesman Park pavilion built over forgotten graves',
-          },
+          images: [
+            {
+              src: '/denver/curiosities/curious-cheesman-1.png',
+              alt: 'Cheesman Park pavilion built over forgotten graves',
+            },
+            {
+              src: '/denver/curiosities/curious-cheesman-2.png',
+              alt: 'Cheesman Park grounds and green space',
+            },
+          ],
           source: 'Denver Public Library archives',
           location: {
             name: 'Cheesman Park',
@@ -343,6 +353,10 @@ export const denver: CityData = {
           title: 'The Brown Palace never closed in 130 years',
           body: 'The Brown Palace Hotel opened in 1892 and has operated continuously ever since—through the Spanish Flu, the Great Depression, World War II, and COVID-19. Every president since Teddy Roosevelt has stayed here. The atrium lobby rises eight stories. Underground tunnels once provided discreet exits to surrounding buildings. The hotel has seen everything. The hotel will outlast us all.',
           year: '1892',
+          image: {
+            src: '/denver/curiosities/curious-brownpalace-1.png',
+            alt: 'The Brown Palace Hotel atrium and historic architecture',
+          },
           source: 'Brown Palace Hotel',
           location: {
             name: 'Brown Palace Hotel',
@@ -358,12 +372,16 @@ export const denver: CityData = {
           year: '1941',
           images: [
             {
-              src: '/denver/curiosities/red-rocks-1.png',
+              src: '/denver/curiosities/curious-red-rocks-1.png',
               alt: 'Red Rocks Amphitheatre natural rock formations',
             },
             {
-              src: '/denver/curiosities/red-rocks-2.png',
+              src: '/denver/curiosities/curious-red-rocks-2.png',
               alt: 'Red Rocks concert with dramatic rock walls',
+            },
+            {
+              src: '/denver/curiosities/curious-red-rocks-3.png',
+              alt: 'Red Rocks Amphitheatre scenic view',
             },
           ],
           source: 'Red Rocks Amphitheatre, National Geographic',
@@ -1849,6 +1867,16 @@ export const denver: CityData = {
           description: 'The Mexican restaurant and jazz club where Sinatra stopped by, where Ella Fitzgerald sang, where Tony Bennett ate enchiladas between sets. For 88 years, "The Pec" served cheap Mexican food and world-class jazz in a tiny room plastered with photos of everyone who ever mattered. When it closed in 2021, Denver lost its entire jazz memory.',
           whyMissed: 'Live jazz seven nights a week, $5 margaritas, and walls covered in black-and-white proof that greatness happened here. The Pec didn\'t pretend to be fancy. It just was.',
           communityVoice: '"El Chapultepec was where Denver swung—and where legends came to sit in." — Westword',
+          images: [
+            {
+              src: '/denver/lost-loved/elchap-1.png',
+              alt: 'El Chapultepec jazz club exterior in LoDo Denver',
+            },
+            {
+              src: '/denver/lost-loved/elchap-2.png',
+              alt: 'El Chapultepec interior with historic jazz memorabilia',
+            },
+          ],
           lastAddress: '1962 Market St, Denver',
           source: 'Denver Post, DownBeat Magazine',
         },
@@ -1867,6 +1895,10 @@ export const denver: CityData = {
           description: 'Before it expanded and went corporate, Tattered Cover was a single cramped bookstore on Colfax with overstuffed shelves and a owner who fought the FBI over customer privacy. Joyce Meskis made Tattered Cover a First Amendment landmark. The original Colfax location closed in 2020. Other locations remain, but they don\'t carry the same weight.',
           whyMissed: 'The original intimacy, the stacks that felt like a maze, and Joyce Meskis standing up to the government because she believed bookstores were sacred. The Colfax Tattered Cover wasn\'t just a store—it was a cause.',
           communityVoice: '"Tattered Cover on Colfax was where Denver learned that bookstores could be battlegrounds." — 5280 Magazine',
+          image: {
+            src: '/denver/lost-loved/tattered-1.png',
+            alt: 'Tattered Cover bookstore on Colfax Avenue',
+          },
           lastAddress: '2526 E Colfax Ave, Denver',
           source: 'Denver Post, Publisher\'s Weekly',
         },
@@ -1898,6 +1930,16 @@ export const denver: CityData = {
           description: 'A French café in a converted house near the Platte River, serving Nutella crepes, strong coffee, and the fantasy that Denver could pull off European sophistication. For 27 years, it did. Paris on the Platte was where Denver brunched before brunch became a cliché, where the patio felt like a postcard. It closed when the owner retired, because good things end quietly.',
           whyMissed: 'The crepes that were actually good, the patio that overlooked the river, and the fact that it pulled off "French café in Denver" without being insufferable. It was charming without trying, which made it rare.',
           communityVoice: '"Paris on the Platte was Denver\'s best-kept brunch secret—and somehow stayed that way." — 5280 Magazine',
+          images: [
+            {
+              src: '/denver/lost-loved/paris-1.png',
+              alt: 'Paris on the Platte cafe exterior along the Platte River',
+            },
+            {
+              src: '/denver/lost-loved/paris-2.png',
+              alt: 'Paris on the Platte charming patio and French ambiance',
+            },
+          ],
           lastAddress: '1553 Platte St, Denver',
           source: 'Denver Post, Westword',
         },
