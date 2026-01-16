@@ -1,9 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useScrollToAnchor } from '@/hooks/useScrollToAnchor'
 import { motion } from 'framer-motion'
-import { HiddenGemCard } from './HiddenGemCard'
+import { DarkHistoryCard } from './DarkHistoryCard'
 import { NewsletterSignup } from '../NewsletterSignup'
 import { FeedbackSection } from '../FeedbackSection'
 import { ShareLinks } from '../ShareLinks'
@@ -11,16 +10,13 @@ import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
 import { NativeAdCard } from '@/components/ads/NativeAdCard'
 
-interface HiddenGemItem {
+interface DarkHistoryItem {
   id: string
-  name: string
-  description: string
-  category?: string
-  address?: string
-  website?: string
-  phone?: string
-  hours?: string
-  price?: string
+  title: string
+  body: string
+  category?: 'unsolved' | 'crime' | 'disaster' | 'mystery' | 'macabre' | 'haunting' | 'cold-case'
+  year?: string
+  verdict?: string
   image?: {
     src: string
     alt?: string
@@ -31,31 +27,45 @@ interface HiddenGemItem {
     alt?: string
     credit?: string
   }>
-  coordinates?: {
-    lat: number
-    lng: number
+  location?: {
+    name: string
+    stillExists?: boolean
+    coordinates?: {
+      lat: number
+      lng: number
+    }
   }
+  source?: string
+  sources?: Array<{
+    type?: 'article' | 'book' | 'documentary' | 'podcast' | 'film' | 'video' | 'report' | 'other'
+    title: string
+    url?: string
+    publisher?: string
+    author?: string
+    isbn?: string
+    platform?: string
+    show?: string
+    director?: string
+    year?: string | number
+  }>
 }
 
-interface DesktopHiddenGemsLayoutProps {
-  gems: HiddenGemItem[]
+interface DesktopDarkHistoryLayoutProps {
+  items: DarkHistoryItem[]
   cityName: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
   url: string
 }
 
-export default function DesktopHiddenGemsLayout({
-  gems,
+export default function DesktopDarkHistoryLayout({
+  items,
   cityName,
   exploreLinks = [],
   footer,
   url
-}: DesktopHiddenGemsLayoutProps) {
+}: DesktopDarkHistoryLayoutProps) {
   const [scrollProgress, setScrollProgress] = useState(0)
-
-  // Scroll to anchor on page load (for deep links)
-  useScrollToAnchor(300)
 
   // Track scroll progress
   useEffect(() => {
@@ -72,12 +82,12 @@ export default function DesktopHiddenGemsLayout({
   }, [])
 
   // Create page ID for ad targeting
-  const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-hidden-gems`
+  const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-dark-history`
 
   return (
     <div className="relative">
-      {/* Fixed Progress Bar */}
-      <div className="fixed top-0 left-0 right-0 h-1 bg-neutral-100 z-50">
+      {/* Fixed Progress Bar - Darker theme */}
+      <div className="fixed top-0 left-0 right-0 h-1 bg-neutral-200 z-50">
         <motion.div
           className="h-full bg-accent-600"
           style={{ width: `${scrollProgress}%` }}
@@ -88,28 +98,28 @@ export default function DesktopHiddenGemsLayout({
       {/* Desktop Sidebar Ads (visible on 1400px+ screens) */}
       <DualSidebarAds
         pageId={pageId}
-        targeting={{ city: cityName, category: 'hidden-gems' }}
+        targeting={{ city: cityName, category: 'dark-history' }}
         stickyTop={80}
       />
 
       {/* Single Column Layout */}
       <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="space-y-12">
-          {gems.map((gem, index) => (
-            <div key={gem.id}>
-              <HiddenGemCard
-                gem={gem}
+          {items.map((item, index) => (
+            <div key={item.id}>
+              <DarkHistoryCard
+                item={item}
                 index={index}
                 url={url}
               />
 
-              {/* Native ad card every 3 gems (after 3rd, 6th, 9th, etc.) */}
-              {(index + 1) % 3 === 0 && index < gems.length - 1 && (
+              {/* Native ad card every 3 items */}
+              {(index + 1) % 3 === 0 && index < items.length - 1 && (
                 <div className="my-12">
                   <NativeAdCard
                     pageId={pageId}
                     index={index}
-                    targeting={{ city: cityName, category: 'hidden-gems' }}
+                    targeting={{ city: cityName, category: 'dark-history' }}
                     variant="listicle"
                   />
                 </div>
@@ -126,7 +136,7 @@ export default function DesktopHiddenGemsLayout({
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
             <div className="flex justify-center">
-              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} variant="banner" />
+              <ShareLinks title={`${cityName}'s Dark History`} url={url} variant="banner" />
             </div>
           </div>
 
@@ -154,7 +164,7 @@ export default function DesktopHiddenGemsLayout({
           </div>
 
           {/* Feedback Section */}
-          <FeedbackSection variant="dark" pageTitle={`${cityName}'s Hidden Gems`} />
+          <FeedbackSection variant="dark" pageTitle={`${cityName}'s Dark History`} />
         </div>
 
         {/* Integrated Footer */}

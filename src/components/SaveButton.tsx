@@ -45,9 +45,9 @@ export function SaveButton({
     const lines: string[] = []
 
     // Header with name
-    lines.push(`📍 ${name}`)
+    lines.push(name.toUpperCase())
     if (category) {
-      lines.push(`   ${category}`)
+      lines.push(category)
     }
     lines.push('')
 
@@ -59,10 +59,10 @@ export function SaveButton({
 
     // Details section
     const details: string[] = []
-    if (address) details.push(`📌 ${address}`)
-    if (hours) details.push(`🕐 ${hours}`)
-    if (phone) details.push(`📞 ${phone}`)
-    if (website) details.push(`🔗 ${website}`)
+    if (address) details.push(address)
+    if (hours) details.push(`Hours: ${hours}`)
+    if (phone) details.push(`Tel: ${phone}`)
+    if (website) details.push(website)
 
     if (details.length > 0) {
       lines.push(...details)
@@ -71,7 +71,7 @@ export function SaveButton({
 
     // Tip section
     if (tip) {
-      lines.push(`💡 Tip: ${tip}`)
+      lines.push(`Tip: ${tip}`)
       lines.push('')
     }
 

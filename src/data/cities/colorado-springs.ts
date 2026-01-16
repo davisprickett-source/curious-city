@@ -443,7 +443,7 @@ export const colorado_springs: CityData = {
           name: 'Garden of the Gods',
           category: 'Natural Wonder',
           description:
-            'A 1,300-acre geological masterclass in red sandstone. These 300-foot fins were once horizontal sand dunes 300 million years ago, eventually thrust vertical by the same tectonic ego that built the Rockies. Thanks to the iron-clad will of railroad mogul Charles Elliott Perkins, the park is free to the public forever—a rare piece of high-value real estate where the only thing you have to pay is attention.',
+            'In 1879, railroad mogul Charles Elliott Perkins purchased 480 acres that included a portion of the present Garden of the Gods. He planned to build a summer home but instead kept the land in its natural state for the public. Perkins died in 1907 before making arrangements. On December 22, 1909, his children deeded the land to Colorado Springs with the stipulation that it remain "free to the entire world." The full provision: "where it shall remain free to the public, where no intoxicating liquors shall be manufactured, sold, or dispensed." A 1,300-acre geological masterclass in red sandstone. These 300-foot fins were once horizontal sand dunes 300 million years ago, eventually thrust vertical by the Laramide Orogeny. Designated a National Natural Landmark in 1971. A rare piece of high-value real estate where the only thing you have to pay is attention.',
           images: [
             {
               src: '',
@@ -463,7 +463,7 @@ export const colorado_springs: CityData = {
           name: 'Pikes Peak',
           category: 'Mountain',
           description:
-            'America\'s most accessible 14er. Whether you drive the 19-mile ribbon of asphalt, huff up the Barr Trail, or ride the $100M Swiss-engineered cog railway, the payoff is the same: the massive, purple-hued panorama that made Katharine Lee Bates reach for her notepad in 1893. At 14,115 feet, the air is thin enough to make you emotional and the donuts at the summit house are the only ones in the world fried at this altitude—expect them to be cakey, oily, and strangely vital.',
+            'In 1889, Zalmon Simmons founded the Manitou and Pikes Peak Railway Company. Two years later, the first passengers—a church choir from Denver—reached the summit via nine-mile cog rails. In 1893, the cog railway wasn\'t working, so Katharine Lee Bates rode horses and mules to the summit. The view inspired "America the Beautiful," published July 4, 1895. Spencer Penrose built the Pikes Peak Highway from the old carriage road in 1915. In 1926, he purchased the cog railway from Simmons. After 126 years, the railway closed in 2018 for a three-year, $100M rebuild—all nine miles of track replaced. America\'s most accessible 14er. At 14,115 feet, the air is thin enough to make you emotional and the donuts at the summit house are the only ones in the world fried at this altitude—expect them to be cakey, oily, and strangely vital.',
           images: [
             {
               src: '',
@@ -483,7 +483,7 @@ export const colorado_springs: CityData = {
           name: 'The Broadmoor',
           category: 'Historic Resort',
           description:
-            'A pink-stucco monument to 1918 opulence. Founded by Spencer "Spec" Penrose after he was snubbed by the Antlers Hotel, The Broadmoor was designed to be the "Grand Dame of the Rockies." It’s an obsessive-level luxury compound featuring three golf courses, a lake filled with swans, and enough gold leaf to baffle a prospector. In its heyday, it kept an elephant named Tessie as a caddy; today, the luxury is more refined but no less dramatic.',
+            'Spencer Penrose—millionaire businessman making a fortune in Cripple Creek mining—tried to stay at the Antlers Hotel and was quickly escorted off the property. After William Jackson Palmer died in 1909, Penrose attempted to buy the Antlers but couldn\'t reach an agreement. Reputedly, he rode his horse through the Antlers lobby in protest. Then he built The Broadmoor. Opened June 29, 1918. A pink-stucco monument to revenge and opulence, designed to be the "Grand Dame of the Rockies." Three golf courses, a lake filled with swans, enough gold leaf to baffle a prospector. The small "a" in all signage? Originally thought to be a snub to The Antlers. Tessie the elephant—named after a prostitute in a Cripple Creek mining camp—was a retired circus performer housed on hotel grounds. Once caddied for Penrose and boxer Jack Dempsey on the golf course. Today, the luxury is more refined but no less dramatic.',
           images: [
             {
               src: '',
@@ -503,7 +503,7 @@ export const colorado_springs: CityData = {
           name: 'Manitou Incline',
           category: 'Extreme Trail',
           description:
-            'One of Colorado\'s most brutal hikes — 2,744 steps climbing 2,000 feet in less than a mile. Originally a cable car track built in 1907, it\'s now a grueling stairmaster workout with grades up to 68%. The average climb takes 1-2 hours. Summit views reward those who make it. Reservations required.',
+            'Construction began in 1907 to build a cable railway for hauling materials to construct a hydroelectric plant and waterline. After construction finished, Dr. Newton M. Brumback bought the railway and converted it to a 16-minute tourist ride to Mount Manitou Park. The Pikes Peak Cog Railway operated it until a 1990 rockslide washed out the rail bed. The Cog Railway decided not to repair it. Rails were removed, creating a natural staircase of railroad ties. For years, hikers trespassed illegally. In February 2013, the land became public and hiking became legal. Now one of Colorado\'s most brutal workouts—2,744 steps climbing 2,000 feet in less than a mile. Grades up to 68%. Average climb: 1-2 hours. Reservations required.',
           images: [
             {
               src: '',

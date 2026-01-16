@@ -28,6 +28,10 @@ const typeGradients: Record<string, { overlay: string; fallback: string }> = {
     overlay: 'from-orange-900/90 via-orange-900/60 to-orange-900/30',
     fallback: 'from-orange-700 to-orange-950',
   },
+  'history': {
+    overlay: 'from-indigo-900/90 via-indigo-900/60 to-indigo-900/30',
+    fallback: 'from-indigo-700 to-indigo-950',
+  },
   'article': {
     overlay: 'from-blue-900/90 via-blue-900/60 to-blue-900/30',
     fallback: 'from-blue-700 to-blue-950',
@@ -45,6 +49,7 @@ const typeLabels: Record<string, string> = {
   'curiosities': 'Curiosity',
   'hidden-gems': 'Hidden Gem',
   'lost-loved': 'Lost & Loved',
+  'history': 'History Essay',
   'article': 'Article',
 }
 

@@ -122,7 +122,13 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
 
         {/* Scrollytelling Content */}
         {items.length > 0 ? (
-          <DarkHistoryScroll items={items} cityName={city.name} />
+          <DarkHistoryScroll
+            items={items}
+            cityName={city.name}
+            exploreLinks={[]}
+            footer={<Footer />}
+            url={url}
+          />
         ) : (
           <div className="container-page py-20">
             <div className="text-center">
@@ -134,32 +140,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
           </div>
         )}
 
-        {/* End of Article Flow */}
-        <div className="container-page py-12 space-y-8">
-          {/* 1. Share (bottom) */}
-          <ShareLinks title={`${city.name}'s Dark History`} url={url} />
-
-          {/* 2. Subscribe */}
-          <NewsletterSignup />
-
-          {/* 3. Explore More */}
-          <RelatedContent citySlug={city.slug} contentType="dark-history" />
-
-          {/* 4. Feedback (placeholder) */}
-          <div className="bg-neutral-50 p-6 rounded-lg text-center">
-            <h3 className="text-xl font-bold mb-2 text-neutral-800">Your Feedback Matters!</h3>
-            <p className="text-neutral-600 mb-4">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
-            >
-              Send Feedback
-            </Link>
-          </div>
-        </div>
         </main>
-
-        <Footer />
       </div>
     </>
   )

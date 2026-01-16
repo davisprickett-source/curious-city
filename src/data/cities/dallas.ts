@@ -404,7 +404,7 @@ export const dallas: CityData = {
           type: 'iconic-spot',
           name: 'Nasher Sculpture Center',
           category: 'Museum',
-          description: 'A Renzo Piano-designed museum housing one of the world\'s great modern sculpture collections. The garden is as stunning as the art. One of Dallas\'s genuine cultural treasures.',
+          description: 'In 1967, Patsy gave Raymond Nasher a modern sculpture for his birthday. He fell hard. They spent decades building one of the world\'s finest private collections—over 300 masterpieces by Calder, Giacometti, Matisse, Picasso, Rodin. In 1997, Nasher met Renzo Piano at the Beyeler Foundation opening in Basel. Commissioned him on the spot. October 2003, the 55,000-square-foot museum opened. Raymond donated $77 million of his own money. Died in 2007. The collection lives on. Piano\'s design—clean-lined galleries, a 1.4-acre garden—lets the sculptures breathe. First Saturday of each month is free. Most months, locals still forget it exists.',
           images: [
             {
               src: '/images/gems/nasher-sculpture.jpg',
@@ -423,7 +423,7 @@ export const dallas: CityData = {
           type: 'iconic-spot',
           name: 'White Rock Lake',
           category: 'Park',
-          description: 'A 1,015-acre park with a 9.3-mile trail circling the lake. Popular for running, biking, and sailing. Early mornings offer the best birdwatching and the fewest crowds.',
+          description: 'After the 1909 drought exposed Dallas\'s water shortage, White Rock Creek got dammed. Construction began 1910. Dam completed 1911—earthen, 47 feet high, 2,550 feet long. City planner George Kessler recommended keeping the surrounding land for parks. Good call. Now it\'s 1,015 acres, 9.3-mile loop trail. Popular with runners, cyclists, sailors. Also popular with the Lady of White Rock Lake—a twenty-something ghost in a water-soaked 1930s evening dress who appears roadside along East Lawther Drive, asks for a ride home, then vanishes, leaving only a puddle. First published in the Texas Folklore Society\'s 1943 collection. Still spooks drivers on foggy nights.',
           images: [
             {
               src: '/images/gems/white-rock-lake.jpg',
@@ -459,7 +459,7 @@ export const dallas: CityData = {
           type: 'iconic-spot',
           name: 'Dallas Farmers Market',
           category: 'Market',
-          description: 'Operating since 1941, the market has fresh produce, local vendors, and a revitalized shed area with restaurants and shops. Saturday mornings are best for the full experience.',
+          description: 'Farmers have been selling produce on Dallas streets since the 1860s. The intersection of Pearl and Cadiz evolved into the center—not just vegetables, but chickens, pigs, goats. In 1939, the site expanded and the first sheds went up. Officially sanctioned by the city in 1941. Ran that way for decades. Then in May 2013, DF Market Holdings bought the market from the city and launched a full revitalization. Now it\'s a year-round mix of local farmers, artisans, restaurants, retail. Saturday mornings still draw the biggest crowds. Mudhen Meat and Greens for excellent local sourcing.',
           images: [
             {
               src: '/images/gems/dallas-farmers-market.jpg',
@@ -483,6 +483,56 @@ export const dallas: CityData = {
       intro: 'Dallas has a reputation for being all about the new, but the real soul of the city is often tucked away in Bishop Arts basements, abandoned tunnels, and side streets that haven\'t seen a bulldozer yet.',
       items: [
         {
+          id: 'gem-experience-2',
+          type: 'hidden-gem',
+          name: 'Meow Wolf: The Real Unreal',
+          category: 'Immersive Art Experience',
+          description: 'Meow Wolf\'s fourth permanent exhibition. First location in Texas. Opened July 14, 2023, in Grapevine Mills Mall in a former 40,000-square-foot Bed Bath & Beyond. 150 artists and fabricators—38 from Texas—created 30+ unique rooms occupying roughly 29,000 square feet. Story conceived by author LaShawn Wanak: Ruby and Gordon Delaney moved to Bolingbrook, Illinois. Their daughter Carmen moved back home and started a spice blend company named Ruby\'s Garden. The narrative centers on the disappearance of Carmen\'s friend\'s son, Jared Fuqua, and the family that unknowingly unlocked portals to a different existence. Enter through the front door of a seemingly normal two-story suburban home. The rooms spiral out from there. In June 2025, Meow Wolf added Prime Materia, a bar integrated into the narrative. Massive. Immersive. Brain-breaking.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/meowwolf-1.png',
+              alt: 'Meow Wolf immersive art installation',
+            },
+            {
+              src: '/dallas/hidden-gems/meowwolf-2.png',
+              alt: 'The Real Unreal portal rooms',
+            },
+            {
+              src: '/dallas/hidden-gems/meowwolf-3.png',
+              alt: 'Meow Wolf interactive art experience',
+            }
+          ],
+          address: 'Grapevine Mills Mall, Grapevine, TX (Dallas-Fort Worth)',
+          coordinates: { lat: 32.9346, lng: -97.0565 },
+          hours: 'Check website',
+          price: 'Admission fee',
+          website: 'https://meowwolf.com/visit/grapevine',
+          tip: 'Plan 2-3 hours—there\'s a lot to explore',
+        },
+        {
+          id: 'gem-venue-2',
+          type: 'hidden-gem',
+          name: 'Texas Theatre',
+          category: 'Historic Cinema',
+          description: 'Opened April 21, 1931, with fanfare on San Jacinto Day. Renowned architect W. Scott Dunne designed it in Venetian style—opera boxes, fountains, projected clouds on the ceiling, giant chandelier. Financed by Howard Hughes. First theater in Dallas with air conditioning. On November 22, 1963, Lee Harvey Oswald ducked into the theater during a showing of War Is Hell and sat near the back. Police arrested him there. Shortly after, the theater\'s vibrant designs were sealed under Spanish-style stucco. In 2001, the Oak Cliff Foundation acquired it. $1.6 million from Dallas Neighborhood Renaissance Partnership. Added to the National Register of Historic Places in 2003. Formally re-opened in 2010. Now hosts indie films, repertory cinema, and special events. The history is dark. The movies are good.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/texas-theatre-1.png',
+              alt: 'Texas Theatre exterior marquee',
+            },
+            {
+              src: '/dallas/hidden-gems/texas-theatre-2.png',
+              alt: 'Historic Texas Theatre interior',
+            }
+          ],
+          address: '231 W Jefferson Blvd, Dallas, TX 75208',
+          coordinates: { lat: 32.7427, lng: -96.8285 },
+          hours: 'Check website for showtimes',
+          price: 'Varies by event',
+          website: 'https://thetexastheatre.com',
+          tip: 'Site of Lee Harvey Oswald\'s arrest—now a beloved indie cinema',
+        },
+        {
           id: 'gem-underground-1',
           type: 'hidden-gem',
           name: 'Dallas Underground Tunnels',
@@ -499,6 +549,134 @@ export const dallas: CityData = {
           hours: 'Weekdays during business hours',
           price: 'Free',
           tip: 'Entrances are often unmarked and hidden in plain sight',
+        },
+        {
+          id: 'gem-museum-2',
+          type: 'hidden-gem',
+          name: 'Ann & Gabriel Barbier-Mueller Samurai Museum',
+          category: 'Art Museum',
+          description: 'The only museum in the United States dedicated to samurai art and armor. One of the largest collections of its kind in the world. Ann and Gabriel Barbier-Mueller began acquiring samurai art over thirty years ago. Gabriel was fascinated by samurai armor since adolescence. Acquired his first piece in the early 1990s. The collection now spans the fifth to nineteenth centuries. Suits of armor, helmets, masks, horse armor, weaponry—with particular emphasis on the Edo period. Housed in the historic St. Ann\'s School building, originally constructed in 1927. Rotating exhibitions explore intriguing aspects of Japanese warrior culture. More than 140 pieces tour internationally.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/samurai-1.png',
+              alt: 'Samurai armor on display',
+            },
+            {
+              src: '/dallas/hidden-gems/samurai-2.png',
+              alt: 'Japanese samurai helmets and masks',
+            }
+          ],
+          address: 'Harwood District, Dallas',
+          coordinates: { lat: 32.7896, lng: -96.7992 },
+          hours: 'Check website for current hours',
+          price: 'Admission fee',
+          website: 'https://www.harwoodinternational.com',
+          tip: 'Only museum of its kind in the U.S.—international significance',
+        },
+        {
+          id: 'gem-art-4',
+          type: 'hidden-gem',
+          name: 'Pioneer Plaza',
+          category: 'Public Art',
+          description: 'The largest bronze monument of its kind in the world. 49 bronze steers and 3 trail riders created by artist Robert Summers of Glen Rose, Texas. Each steer is larger-than-life at six feet high. Cast at Eagle Bronze Foundry in Lander, Wyoming. Commemorates nineteenth-century cattle drives along the Shawnee Trail—the earliest and easternmost route by which Texas longhorn cattle were taken to northern railheads. The trail passed through Austin, Waco, and Dallas until the Chisolm Trail siphoned off most of the traffic in 1867. Real estate developer Trammell Crow wanted an iconic "Western" sculpture. Summers began work in November 1992. Opened on time in 1994. Second only to Dealey Plaza as the most-visited landmark in downtown Dallas.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/pioneer-plaza-1.png',
+              alt: 'Bronze longhorn cattle drive sculpture at Pioneer Plaza',
+            },
+            {
+              src: '/dallas/hidden-gems/pioneer-plaza-2.png',
+              alt: 'Pioneer Plaza longhorn steers',
+            }
+          ],
+          address: 'Convention Center District, Downtown Dallas',
+          coordinates: { lat: 32.7764, lng: -96.8048 },
+          hours: 'Always open',
+          price: 'Free',
+          tip: 'Each piece is 130% life size—the scale is staggering',
+        },
+        {
+          id: 'gem-experience-1',
+          type: 'hidden-gem',
+          name: 'Rainbow Vomit',
+          category: 'Immersive Art Installation',
+          description: 'Part interactive art installation, part Instagram fever dream. Features 20+ unique photo opportunities, 6000 LEDs, 5000 balloons, 200 pounds of cotton, 5 miles of ribbon, and a unicorn. Multi-room with hidden doors and blacklight elements.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/vomit-1.png',
+              alt: 'Colorful immersive art installation with LED lights',
+            },
+            {
+              src: '/dallas/hidden-gems/vomit-2.png',
+              alt: 'Rainbow Vomit balloon room',
+            },
+            {
+              src: '/dallas/hidden-gems/vomit-3.png',
+              alt: 'Rainbow Vomit blacklight exhibit',
+            },
+            {
+              src: '/dallas/hidden-gems/vomit-4.png',
+              alt: 'Rainbow Vomit interactive display',
+            },
+            {
+              src: '/dallas/hidden-gems/vomit-5.png',
+              alt: 'Rainbow Vomit unicorn installation',
+            }
+          ],
+          address: '3609 Parry Ave, Dallas, TX',
+          coordinates: { lat: 32.7849, lng: -96.7846 },
+          hours: 'Check website (sells out on weekends)',
+          price: '$20-30',
+          website: 'https://rainbowvomit.com',
+          tip: 'Visitors typically spend 45 minutes to an hour',
+        },
+        {
+          id: 'gem-art-3',
+          type: 'hidden-gem',
+          name: 'Giant Granite Teddy Bears at Lakeside Park',
+          category: 'Public Art',
+          description: 'Vermont artist J.T. Williams carved a family of teddy bears from granite for the Harlan Crow family. Presented to Highland Park on Christmas Eve 1995. Three four-foot cubs and one giant 10-foot bear. The massive bear alone weighs 20 tons. They sit along Turtle Creek on 14 acres of exceptionally landscaped grounds in affluent Highland Park—one of the 10 richest places in the U.S. Inspired by the famous bronze bears that once greeted customers before entering FAO Schwartz at NorthPark Mall. Cross the pedestrian bridge and you\'ll find whimsy carved in stone.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/teddy-bears-1.png',
+              alt: 'Giant granite teddy bear sculpture at Lakeside Park',
+            },
+            {
+              src: '/dallas/hidden-gems/teddy-bears-2.png',
+              alt: 'Teddy bear cubs sculpture',
+            }
+          ],
+          address: '4601 Lakeside Dr, Highland Park, Dallas',
+          coordinates: { lat: 32.8410, lng: -96.7944 },
+          hours: 'Dawn to dusk',
+          price: 'Free',
+          tip: 'Park on Lakeside Drive just north of Lexington Ave',
+        },
+        {
+          id: 'gem-venue-1',
+          type: 'hidden-gem',
+          name: 'The Balcony Club',
+          category: 'Hidden Jazz Venue',
+          description: 'A small jazz club above the historic Lakewood Theater offering live jazz seven nights a week since 1988. "Not a place you find by accident." Everyone from bassist Chuck Rainey to keyboardists for Michael Bublé have played here.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/balconyclub-1.png',
+              alt: 'Intimate jazz club with stage and mood lighting',
+            },
+            {
+              src: '/dallas/hidden-gems/balconyclub-2.png',
+              alt: 'Live jazz performance at The Balcony Club',
+            },
+            {
+              src: '/dallas/hidden-gems/balconyclub-3.png',
+              alt: 'The Balcony Club atmosphere',
+            }
+          ],
+          address: '1825 Abrams Rd, Ste B, Dallas, TX 75214',
+          coordinates: { lat: 32.8419, lng: -96.7687 },
+          hours: 'Mon-Thu 8pm-12am, multiple bands Fri-Sat',
+          price: 'Cover varies by show',
+          tip: 'Up the stairs next to Historic Lakewood Theater - intimate, laid-back setting',
         },
         {
           id: 'gem-park-1',
@@ -528,7 +706,7 @@ export const dallas: CityData = {
           type: 'hidden-gem',
           name: 'Museum of Geometric and MADI Art',
           category: 'Art Museum',
-          description: 'The only museum in North America dedicated to geometric abstraction and the MADI movement. Called "one of the most underrated art museums in Dallas." Small but internationally significant collection.',
+          description: 'Bill and Dorothy Masterson traveled to Paris in the 1990s. Met Carmelo Arden Quin and other artists working in the MADI style—a "rambunctious" form of geometric abstraction Quin founded in 1946. The Mastersons fell for it. Started collecting. Founded the museum in 2002. Opened in 2003. The only museum in North America dedicated to geometric abstraction and the MADI movement. Circles, stripes, waves, spheres, spirals, lozenges, arcs, meanders. International significance. Locals barely know it exists.',
           images: [
             {
               src: '/dallas/hidden-gems/MADI-1.png',
@@ -549,6 +727,29 @@ export const dallas: CityData = {
           price: 'Free',
           website: 'https://www.geometricmadimuseum.org',
           tip: 'First (and maybe only) museum dedicated to the MADI movement worldwide',
+        },
+        {
+          id: 'gem-garden-1',
+          type: 'hidden-gem',
+          name: 'Trammell Crow Sculpture Garden',
+          category: 'Sculpture Garden',
+          description: 'Completely free Japanese-inspired sculpture garden in the Dallas Arts District. Winds around the exterior of the Trammell Crow office building one level above the street. Twelve artworks from the 9th to the 21st centuries displayed outdoors. Stone arrangements, dry riverbed, shady groves, bamboo thickets, karesansui (flat landscape with raked gravel). Different aspects around each side of the building. Located between the Nasher Sculpture Garden and the Dallas Museum of Art. Adjacent to the Crow Collection, also free. A shaded oasis with stunning sculptures most visitors walk right past.',
+          images: [
+            {
+              src: '/dallas/hidden-gems/crow-garden-1.png',
+              alt: 'Trammell Crow Sculpture Garden',
+            },
+            {
+              src: '/dallas/hidden-gems/crow-garden-2.png',
+              alt: 'Japanese-inspired sculpture garden',
+            }
+          ],
+          address: 'Dallas Arts District (near Nasher and DMA)',
+          coordinates: { lat: 32.7877, lng: -96.7993 },
+          hours: 'Daily during daylight',
+          price: 'Free',
+          website: 'https://crowcollection.org',
+          tip: 'Perfect pre- or post-museum stop—totally free',
         },
         {
           id: 'gem-art-1',
@@ -641,7 +842,7 @@ export const dallas: CityData = {
           type: 'hidden-gem',
           name: 'Cedar Ridge Preserve',
           category: 'Nature Preserve',
-          description: 'A 600-acre Audubon preserve atop an escarpment with 9 miles of looping trails at one of the highest elevations in the Metroplex (755 feet). Organizes special Full Moon Hikes. Lesser-known than White Rock Lake.',
+          description: 'In 1975, the Greenhills Foundation acquired 26 acres and started the Dallas Nature Center, providing outdoor appreciation programs. Dallas County began acquiring more property in 1985. By 2003, they\'d reclaimed those original 26 acres and more—633 acres total on the White Rock Escarpment. April 2003, Audubon Dallas took over management. Now it\'s 9 miles of looping trails at 755 feet elevation—one of the highest points in the Metroplex. Full Moon Hikes. Spectacular hilly views. A slice of Hill Country 20 minutes from downtown. Lesser-known than White Rock Lake. Arrive before 8am on weekends to guarantee parking.',
           images: [
             {
               src: '/dallas/hidden-gems/cedar-ridge-1.png',
@@ -671,7 +872,7 @@ export const dallas: CityData = {
           type: 'hidden-gem',
           name: 'Joppa Preserve / Lemmon Lake',
           category: 'Wildlife Preserve',
-          description: 'A 296-acre preserve in the Great Trinity Forest near the historic Freedman\'s community of Joppa. Lemmon Lake is a hidden gem for observing migratory birds. Trail cameras document white-tailed deer, coyotes, and feral hogs.',
+          description: 'First established in 1986 as Lemmon Lake. Renamed in 1991 after the nearby freedman town Joppa (pronounced "Joppee")—settled in 1872 by former slaves of the Miller Plantation. Henry Critz Hines was enslaved property sent from Missouri to the Miller Plantation. When freed, Miller gave Hines the ferry used to cross the Trinity River. Hines prospered. Other freed persons came. One of 30+ freedman communities formed in North Texas after abolition. Some of the earliest Juneteenth celebrations began here. The city annexed Joppa in 1955. Now the 296-acre preserve protects wetlands and Lemmon Lake in the Great Trinity Forest. Trail cameras document white-tailed deer, coyotes, feral hogs. Plentiful migrating waterfowl and year-round shorebirds.',
           images: [
             {
               src: '/dallas/hidden-gems/lemmonlake-1.png',
@@ -688,67 +889,6 @@ export const dallas: CityData = {
           price: 'Free',
           website: 'https://www.dallascounty.org/departments/parks/joppa-preserve.php',
           tip: 'Plentiful migrating waterfowl and year-round shorebirds',
-        },
-        {
-          id: 'gem-venue-1',
-          type: 'hidden-gem',
-          name: 'The Balcony Club',
-          category: 'Hidden Jazz Venue',
-          description: 'A small jazz club above the historic Lakewood Theater offering live jazz seven nights a week since 1988. "Not a place you find by accident." Everyone from bassist Chuck Rainey to keyboardists for Michael Bublé have played here.',
-          images: [
-            {
-              src: '/dallas/hidden-gems/balconyclub-1.png',
-              alt: 'Intimate jazz club with stage and mood lighting',
-            },
-            {
-              src: '/dallas/hidden-gems/balconyclub-2.png',
-              alt: 'Live jazz performance at The Balcony Club',
-            },
-            {
-              src: '/dallas/hidden-gems/balconyclub-3.png',
-              alt: 'The Balcony Club atmosphere',
-            }
-          ],
-          address: '1825 Abrams Rd, Ste B, Dallas, TX 75214',
-          coordinates: { lat: 32.8419, lng: -96.7687 },
-          hours: 'Mon-Thu 8pm-12am, multiple bands Fri-Sat',
-          price: 'Cover varies by show',
-          tip: 'Up the stairs next to Historic Lakewood Theater - intimate, laid-back setting',
-        },
-        {
-          id: 'gem-experience-1',
-          type: 'hidden-gem',
-          name: 'Rainbow Vomit',
-          category: 'Immersive Art Installation',
-          description: 'Part interactive art installation, part Instagram fever dream. Features 20+ unique photo opportunities, 6000 LEDs, 5000 balloons, 200 pounds of cotton, 5 miles of ribbon, and a unicorn. Multi-room with hidden doors and blacklight elements.',
-          images: [
-            {
-              src: '/dallas/hidden-gems/vomit-1.png',
-              alt: 'Colorful immersive art installation with LED lights',
-            },
-            {
-              src: '/dallas/hidden-gems/vomit-2.png',
-              alt: 'Rainbow Vomit balloon room',
-            },
-            {
-              src: '/dallas/hidden-gems/vomit-3.png',
-              alt: 'Rainbow Vomit blacklight exhibit',
-            },
-            {
-              src: '/dallas/hidden-gems/vomit-4.png',
-              alt: 'Rainbow Vomit interactive display',
-            },
-            {
-              src: '/dallas/hidden-gems/vomit-5.png',
-              alt: 'Rainbow Vomit unicorn installation',
-            }
-          ],
-          address: '3609 Parry Ave, Dallas, TX',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Check website (sells out on weekends)',
-          price: '$20-30',
-          website: 'https://rainbowvomit.com',
-          tip: 'Visitors typically spend 45 minutes to an hour',
         },
         {
           id: 'gem-books-1',
@@ -781,7 +921,7 @@ export const dallas: CityData = {
           type: 'hidden-gem',
           name: 'Kalachandji\'s',
           category: 'Restaurant',
-          description: 'A vegetarian buffet inside a Hare Krishna temple that\'s been open since 1982. The food is genuinely good — Indian-inspired, always vegetarian — and the setting is unlike anything else in Dallas.',
+          description: 'Opened September 1982. Likely the oldest vegetarian restaurant in Dallas. Located in the heart of the Radha Kalachandji Temple—yes, the Hare Krishna Temple—in East Dallas. A verdant buffet of greens, fried potatoes and tofu, toasted papadam and dal, spicy pickles, soft rice. Strictly no meat, fish, eggs, onion, or garlic. They practice the timeless Ayurvedic art of cooking for body, mind, and spirit. Courtyard dining among temple gardens. The food is genuinely good—Indian-inspired, peaceful, elevating. The setting unlike anything else in Dallas. A 40+ year institution most residents still haven\'t discovered.',
           images: [
             {
               src: '/dallas/establishments/kalachandjis-patio.jpg',
@@ -808,7 +948,7 @@ export const dallas: CityData = {
           type: 'hidden-gem',
           name: 'The Wild Detectives',
           category: 'Bookstore/Bar',
-          description: 'Part bookstore, part bar, part event space in Bishop Arts. Literary culture with cocktails and a backyard patio. Regular readings, discussions, and the kind of intentional community rare in Dallas.',
+          description: 'Javier García del Moral and Paco Vique—two Spanish civil engineers—met in Austin in 2008-2009. Became friends over a shared love of literature. Named their dream after Roberto Bolaño\'s Los Detectives Salvajes (The Savage Detectives). Opened in 2014 on 8th Street in Oak Cliff, less than a block from Bishop Arts. Nearly 1,500 carefully chosen books. Coffee, espresso, beer, wine. Backyard patio. Concerts, film screenings, readings, community events between the shelves. Became Dallas\'s literary heart. An independent bookstore-bar-venue creating the kind of intentional cultural conversation the city desperately needed.',
           images: [
             {
               src: '/dallas/establishments/wild-detectives-branded.jpg',
@@ -839,148 +979,6 @@ export const dallas: CityData = {
           tip: 'Check the calendar for readings and events',
         },
         {
-          id: 'gem-bbq-1',
-          type: 'hidden-gem',
-          name: 'Pecan Lodge',
-          category: 'Restaurant',
-          description: 'Dallas\'s most award-winning BBQ, smoked in a pit and steeped in tradition. Located in Deep Ellum since 2010, this BBQ joint has lines out the door for a reason — their brisket is consistently ranked among the best in Texas.',
-          images: [
-            {
-              src: '/dallas/establishments/pecan-lodge-smoke-bg.jpg',
-              alt: 'Smoked BBQ at Pecan Lodge',
-            },
-            {
-              src: '/dallas/establishments/pecan-lodge-smoke.jpg',
-              alt: 'Pecan Lodge BBQ pit',
-            }
-          ],
-          address: '2702 Main St, Dallas, TX 75226',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Wed-Sun 11am till sold out',
-          price: '$$',
-          website: 'https://pecanlodge.com',
-          tip: 'Arrive early — they often sell out by mid-afternoon',
-        },
-        {
-          id: 'gem-italian-1',
-          type: 'hidden-gem',
-          name: 'Lucia',
-          category: 'Restaurant',
-          description: 'A jewel box of a restaurant in Bishop Arts District. Chef David Uygur\'s intimate Italian spot has blue walls, vintage mirrors, and multiple James Beard nominations. MICHELIN Bib Gourmand awarded. The handmade pasta is exceptional.',
-          images: [
-            {
-              src: '/dallas/establishments/lucia-pasta-1.jpg',
-              alt: 'Handmade pasta at Lucia Dallas',
-            },
-            {
-              src: '/dallas/establishments/lucia-interior.jpg',
-              alt: 'Intimate interior at Lucia restaurant',
-            }
-          ],
-          address: '287 N Bishop Ave, Dallas, TX 75208',
-          coordinates: { lat: 32.7460, lng: -96.8294 },
-          hours: 'Dinner Tue-Sun',
-          price: '$$$',
-          website: 'https://www.luciadallas.com',
-          tip: 'Reservations essential — this 40-seat spot books up fast',
-        },
-        {
-          id: 'gem-coffee-1',
-          type: 'hidden-gem',
-          name: 'Ascension Coffee',
-          category: 'Coffee Shop',
-          description: 'Dallas\'s answer to third-wave coffee culture. Six locations across Dallas-Fort Worth, each with its own character but all serving meticulously sourced beans. The Design District location has become a local institution.',
-          images: [
-            {
-              src: '/dallas/establishments/ascension-cherries.jpg',
-              alt: 'Coffee sourcing at Ascension Coffee',
-            },
-            {
-              src: '/dallas/establishments/ascension-coffee-home.jpg',
-              alt: 'Ascension Coffee lifestyle',
-            }
-          ],
-          address: '1621 Oak Lawn Ave (Design District) + 5 other locations',
-          coordinates: { lat: 32.8042, lng: -96.8067 },
-          hours: 'Daily 7am-7pm',
-          price: '$',
-          website: 'https://ascension.coffee',
-          tip: 'Try the espresso tonic on a hot Dallas day',
-        },
-        {
-          id: 'gem-bbq-2',
-          type: 'hidden-gem',
-          name: 'Cattleack Barbeque',
-          category: 'Restaurant',
-          description: 'A tiny North Dallas BBQ spot that earned a MICHELIN Bib Gourmand in 2025. Only open three days a week (plus the first Saturday of every month). When they sell out — which they do — they close for the day. Worth the limited hours.',
-          images: [
-            {
-              src: '/dallas/establishments/cattleack-hero.jpg',
-              alt: 'Cattleack Barbeque interior',
-            },
-            {
-              src: '/dallas/establishments/cattleack-michelin-2025.png',
-              alt: 'Cattleack Barbeque MICHELIN Bib Gourmand 2025',
-            }
-          ],
-          address: '13628 Gamma Rd, Dallas, TX 75244',
-          coordinates: { lat: 32.9474, lng: -96.8364 },
-          hours: 'Wed-Fri + first Sat, 10am till sold out',
-          price: '$$',
-          website: 'https://cattleackbbq.com',
-          tip: 'MICHELIN Bib Gourmand 2025 — arrive when doors open',
-        },
-        {
-          id: 'gem-sushi-1',
-          type: 'hidden-gem',
-          name: 'Uchi Dallas',
-          category: 'Restaurant',
-          description: 'James Beard Award-winning Chef Tyson Cole\'s elevated Japanese cuisine. The Uptown location brings Austin\'s most celebrated sushi to Dallas. Contemporary takes on sushi and hot dishes, with impeccable presentation and an extensive sake list.',
-          images: [
-            {
-              src: '/dallas/establishments/uchi-hama-chili.jpg',
-              alt: 'Hama Chili at Uchi Dallas',
-            },
-            {
-              src: '/dallas/establishments/uchi-otoro-nigiri.jpg',
-              alt: 'Otoro nigiri at Uchi Dallas',
-            },
-            {
-              src: '/dallas/establishments/uchi-wagyu-tataki.jpg',
-              alt: 'Wagyu tataki at Uchi Dallas',
-            }
-          ],
-          address: '2817 Maple Ave, Dallas, TX 75201',
-          coordinates: { lat: 32.8042, lng: -96.8003 },
-          hours: 'Dinner daily, Happy Hour 5-6:30pm',
-          price: '$$$',
-          website: 'https://uchi.uchirestaurants.com/location/sushi-dallas/',
-          tip: 'Happy hour (5-6:30pm) offers the tasting menu at a discount',
-        },
-        {
-          id: 'gem-coffee-2',
-          type: 'hidden-gem',
-          name: 'Merit Coffee',
-          category: 'Coffee Shop',
-          description: 'Texas-based specialty coffee roasters with multiple Dallas locations. Known for direct-trade relationships with coffee farmers and meticulous roasting. The Main Street location in Deep Ellum is bright and minimalist, perfect for laptop work or slow mornings.',
-          images: [
-            {
-              src: '/dallas/establishments/merit-coffee-deep-ellum.jpg',
-              alt: 'Merit Coffee cafe in Deep Ellum',
-            },
-            {
-              src: '/dallas/establishments/merit-coffee-product.jpg',
-              alt: 'Merit Coffee specialty drinks',
-            }
-          ],
-          address: '2639 Main St (Deep Ellum) + 3 other Dallas locations',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Daily 7am-6pm',
-          price: '$',
-          website: 'https://meritcoffee.com',
-          tip: 'Try the seasonal single-origin pour-overs',
-        },
-        {
           id: 'gem-dessert-1',
           type: 'hidden-gem',
           name: 'Emporium Pies',
@@ -1007,75 +1005,6 @@ export const dallas: CityData = {
           website: 'https://www.emporiumpies.com',
           tip: 'Featured on Food Network — ships nationwide via Goldbelly',
         },
-        {
-          id: 'gem-bbq-3',
-          type: 'hidden-gem',
-          name: 'Terry Black\'s Barbecue',
-          category: 'Restaurant',
-          description: 'Award-winning Texas BBQ from a legendary Lockhart family. Featured in Texas Monthly\'s 50 Best BBQ Joints. The beef rib is king here, but the brisket, house-made sausages, and smoked turkey are all standouts. Opened in Dallas 2015, now five locations across Texas.',
-          images: [
-            {
-              src: '/dallas/establishments/terry-blacks-hero.jpg',
-              alt: 'Terry Black\'s Barbecue spread',
-            },
-            {
-              src: '/dallas/establishments/terry-blacks-brisket.jpg',
-              alt: 'Smoked brisket at Terry Black\'s',
-            }
-          ],
-          address: '3025 Main St, Dallas, TX 75226 (Deep Ellum)',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Daily 11am-9pm',
-          price: '$$',
-          website: 'https://terryblacksbbq.com',
-          tip: 'The beef rib is massive — come hungry or share',
-        },
-        {
-          id: 'gem-coffee-3',
-          type: 'hidden-gem',
-          name: 'White Rock Coffee',
-          category: 'Coffee Shop',
-          description: 'Local Dallas coffee shop with gourmet blends, single origin, fair trade, and organic coffee. Same-day roasts. Multiple cozy locations including Preston Center, near SMU, and Uptown. Started as neighborhood coffee shop, grew into Dallas institution.',
-          images: [
-            {
-              src: '/dallas/establishments/white-rock-coffee-rosewood.jpg',
-              alt: 'White Rock Coffee Rosewood location',
-            },
-            {
-              src: '/dallas/establishments/white-rock-pour-over.jpg',
-              alt: 'Pour-over coffee at White Rock Coffee',
-            }
-          ],
-          address: 'Multiple locations (Preston Center, SMU, Uptown)',
-          coordinates: { lat: 32.8687, lng: -96.7706 },
-          hours: 'Daily 6am-8pm (varies by location)',
-          price: '$',
-          website: 'https://wrcoffee.com',
-          tip: 'Best local Dallas coffee chain — neighborhood vibe',
-        },
-        {
-          id: 'gem-coffee-4',
-          type: 'hidden-gem',
-          name: 'Noble Coyote Coffee Roasters',
-          category: 'Coffee Shop',
-          description: 'Direct-trade micro-roaster and coffee lab in Expo Park. Started at White Rock Local Market in 2011, now has cult following. Minimalist space, ethical sourcing, exceptional beans. Food & Wine Best Coffee in Texas.',
-          images: [
-            {
-              src: '/dallas/establishments/noble-coyote-shop.jpg',
-              alt: 'Noble Coyote Coffee Roasters shop',
-            },
-            {
-              src: '/dallas/establishments/noble-coyote-lab.jpg',
-              alt: 'Coffee lab at Noble Coyote',
-            }
-          ],
-          address: '819 Exposition Ave, Dallas, TX 75226',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Tue-Sat 9am-3pm',
-          price: '$',
-          website: 'https://www.noblecoyotecoffee.com',
-          tip: 'Closed Sun-Mon — direct-trade beans eliminate the middleman',
-        }
       ],
     },
     {
@@ -1784,6 +1713,98 @@ export const dallas: CityData = {
           website: 'https://thebernibean.com',
           instagram: '@thebernibean',
         },
+        {
+          name: 'Ascension Coffee',
+          neighborhood: 'Design District',
+          vibe: 'Australian-inspired craft coffee that brought third-wave culture to Dallas.',
+          order: 'Espresso tonic on a hot day. Flat white if you want to feel cosmopolitan.',
+          why: 'Russell Hayward founded Ascension in 2012 after nearly two years of global planning—traveling to evaluate coffee shops and learning coffee agriculture in Africa. Opened the first café in the Design District on Oak Lawn Avenue. Leveraged his Australian roots to bring innovation to the Dallas coffee scene. Pioneer of specialty coffee in North Texas. Now six locations across Dallas-Fort Worth, each with its own character. Craft coffee and wine bar. Meticulously sourced beans. The Design District location remains the heart of Dallas\'s third-wave movement.',
+          images: [
+            {
+              src: '/dallas/establishments/ascension-cherries.jpg',
+              alt: 'Coffee sourcing at Ascension Coffee',
+            },
+            {
+              src: '/dallas/establishments/ascension-coffee-home.jpg',
+              alt: 'Ascension Coffee lifestyle',
+            }
+          ],
+          address: '1621 Oak Lawn Ave (Design District) + 5 other locations',
+          coordinates: { lat: 32.8042, lng: -96.8067 },
+          hours: 'Daily 7am-7pm',
+          price: '$',
+          website: 'https://ascension.coffee',
+          instagram: '@ascensioncoffee',
+        },
+        {
+          name: 'Merit Coffee',
+          neighborhood: 'Deep Ellum',
+          vibe: 'Minimalist roaster with direct-trade ethics and bright, welcoming spaces.',
+          order: 'Seasonal single-origin pour-over.',
+          why: 'Texas-based specialty coffee roasters with multiple Dallas locations. Known for direct-trade relationships with coffee farmers and meticulous roasting. The Main Street location in Deep Ellum is bright and minimalist, perfect for laptop work or slow mornings.',
+          images: [
+            {
+              src: '/dallas/establishments/merit-coffee-deep-ellum.jpg',
+              alt: 'Merit Coffee cafe in Deep Ellum',
+            },
+            {
+              src: '/dallas/establishments/merit-coffee-product.jpg',
+              alt: 'Merit Coffee specialty drinks',
+            }
+          ],
+          address: '2639 Main St (Deep Ellum) + 3 other Dallas locations',
+          coordinates: { lat: 32.7849, lng: -96.7846 },
+          hours: 'Daily 7am-6pm',
+          price: '$',
+          website: 'https://meritcoffee.com',
+          instagram: '@meritcoffee',
+        },
+        {
+          name: 'White Rock Coffee',
+          neighborhood: 'Preston Center',
+          vibe: 'The neighborhood coffee shop Dallas measures all others against.',
+          order: 'Whatever blend they roasted this morning.',
+          why: 'Memorial Day weekend 2005. Nancy and Bob Baker opened their first location in a former Church\'s Chicken at 10105 E. Northwest Hwy in Lake Highlands. One purpose: become part of the neighborhood. It worked. Seventeen years later—four locations, a roastery, thousands of customers. Became the benchmark in Dallas for what "local coffee shop" means. Every time a chain opens, people say, "I\'d rather have had a White Rock Coffee there." Gourmet blends, single origin, fair trade, organic. Same-day roasts and shipping. Preston Center, SMU, Uptown, Rosewood. The Preston Center location is a spacious haven in the middle of Park Cities busyness. Local flavor, every time.',
+          images: [
+            {
+              src: '/dallas/establishments/white-rock-coffee-rosewood.jpg',
+              alt: 'White Rock Coffee Rosewood location',
+            },
+            {
+              src: '/dallas/establishments/white-rock-pour-over.jpg',
+              alt: 'Pour-over coffee at White Rock Coffee',
+            }
+          ],
+          address: 'Multiple locations (Preston Center, SMU, Uptown)',
+          coordinates: { lat: 32.8687, lng: -96.7706 },
+          hours: 'Daily 6am-8pm (varies by location)',
+          price: '$',
+          website: 'https://wrcoffee.com',
+          instagram: '@whiterockcoffee',
+        },
+        {
+          name: 'Noble Coyote Coffee Roasters',
+          neighborhood: 'Expo Park',
+          vibe: 'Award-winning micro-roaster with Food & Wine cred and a cult following.',
+          order: 'Whatever won the Good Food Award most recently.',
+          why: 'Marta and Kevin Sprague started Noble Coyote in 2011 at the White Rock Local Market—selling coffee on Saturdays at Good Local Markets. Purchased their first commercial roaster. Built a following. In 2014, bought a larger roaster and moved to 819 Exposition Ave in Expo Park. Direct-trade micro-roaster and coffee lab. Minimalist space. Ethical sourcing. Exceptional beans. Food & Wine named them Best Coffee in Texas in 2018. Good Food Awards Winner or Finalist in 2018, 2019, 2022, 2023, and 2024. A hobby that became a full-time job. A cult following that refuses to drink anything else.',
+          images: [
+            {
+              src: '/dallas/establishments/noble-coyote-shop.jpg',
+              alt: 'Noble Coyote Coffee Roasters shop',
+            },
+            {
+              src: '/dallas/establishments/noble-coyote-lab.jpg',
+              alt: 'Coffee lab at Noble Coyote',
+            }
+          ],
+          address: '819 Exposition Ave, Dallas, TX 75226',
+          coordinates: { lat: 32.7849, lng: -96.7846 },
+          hours: 'Tue-Sat 9am-3pm',
+          price: '$',
+          website: 'https://www.noblecoyotecoffee.com',
+          instagram: '@noblecoyotecoffee',
+        },
       ],
     },
     {
@@ -1798,7 +1819,7 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           vibe: 'The undisputed heavy-hitter of Dallas BBQ—long lines, massive pits, and zero regrets.',
           order: 'The "Hot Mess" (brisket-stuffed sweet potato) and a massive beef rib.',
-          why: 'Pecan Lodge is the reason people stand in the Texas heat for two hours. It started in a farmers market booth and became a national phenomenon. Their brisket is smoked for 18 hours over post oak, and the "Hot Mess" is a culinary dare that you absolutely should take. It\'s loud, it\'s crowded, and the staff moves with the precision of a SWAT team. It\'s the definitive Dallas BBQ experience—grit, smoke, and sheer ambition.',
+          why: 'Pecan Lodge is the reason people stand in the Texas heat for two hours. It started in a farmers market booth and became a national phenomenon. Moved to Deep Ellum in 2010. Dallas\'s most award-winning BBQ. Their brisket is smoked for 18 hours over post oak, and the "Hot Mess" is a culinary dare that you absolutely should take. It\'s loud, it\'s crowded, and the staff moves with the precision of a SWAT team. It\'s the definitive Dallas BBQ experience—grit, smoke, and sheer ambition.',
           images: [
             {
               src: '/dallas/establishments/resto-pecan-1.png',
@@ -1823,9 +1844,9 @@ export const dallas: CityData = {
         {
           name: 'Lucia',
           neighborhood: 'Bishop Arts',
-          vibe: 'An intimate, 50-seat Italian "jewel box" that makes you forget you\'re in a city of millions.',
+          vibe: 'An intimate, 40-seat Italian "jewel box" that makes you forget you\'re in a city of millions.',
           order: 'The house-cured salumi board and whatever handmade pasta they\'re featuring.',
-          why: 'Lucia is one of the hardest reservations in the city for a reason. David and Jennifer Uygur operate on a scale of meticulous detail that is rare in Dallas. It\'s a warm, blue-walled room where the pasta is made by hand every day and the menu changes with the whims of the seasons. It\'s the antithesis of the "Big D" steakhouse—quiet, thoughtful, and deeply personal. A MICHELIN Bib Gourmand recipient that actually deserves the hype.',
+          why: 'Lucia is one of the hardest reservations in the city for a reason. David and Jennifer Uygur operate on a scale of meticulous detail that is rare in Dallas. Multiple James Beard nominations. It\'s a warm, blue-walled room with vintage mirrors—just 40 seats—where the pasta is made by hand every day and the menu changes with the whims of the seasons. It\'s the antithesis of the "Big D" steakhouse—quiet, thoughtful, and deeply personal. A MICHELIN Bib Gourmand recipient that actually deserves the hype.',
           images: [
             {
               src: '/dallas/establishments/resto-lucia-1.png',
@@ -1927,6 +1948,79 @@ export const dallas: CityData = {
           hours: 'Tue-Sat 11am-10pm',
           website: 'https://revolvertacolounge.com/',
           instagram: '@revolvertacolounge',
+        },
+        {
+          name: 'Cattleack Barbeque',
+          neighborhood: 'North Dallas',
+          vibe: 'Tiny BBQ spot earning MICHELIN recognition—only open three days a week.',
+          order: 'Brisket and ribs. Whatever they haven\'t sold out of yet.',
+          why: 'A tiny North Dallas BBQ spot that earned a MICHELIN Bib Gourmand in 2025. Only open three days a week (plus the first Saturday of every month). When they sell out—which they do—they close for the day. Worth the limited hours and the inevitable line.',
+          images: [
+            {
+              src: '/dallas/establishments/cattleack-hero.jpg',
+              alt: 'Cattleack Barbeque interior',
+            },
+            {
+              src: '/dallas/establishments/cattleack-michelin-2025.png',
+              alt: 'Cattleack Barbeque MICHELIN Bib Gourmand 2025',
+            }
+          ],
+          address: '13628 Gamma Rd, Dallas, TX 75244',
+          coordinates: { lat: 32.9474, lng: -96.8364 },
+          price: '$$',
+          hours: 'Wed-Fri + first Sat, 10am till sold out',
+          website: 'https://cattleackbbq.com',
+          instagram: '@cattleackbbq',
+        },
+        {
+          name: 'Uchi Dallas',
+          neighborhood: 'Uptown',
+          vibe: 'James Beard-level Japanese precision in a sleek Uptown space.',
+          order: 'Omakase if you trust the chef. Happy hour if you\'re smart.',
+          why: 'James Beard Award-winning Chef Tyson Cole\'s elevated Japanese cuisine. The Uptown location brings Austin\'s most celebrated sushi to Dallas. Contemporary takes on sushi and hot dishes, with impeccable presentation and an extensive sake list. Happy hour (5-6:30pm) offers the tasting menu at a discount—one of the best deals in Dallas fine dining.',
+          images: [
+            {
+              src: '/dallas/establishments/uchi-hama-chili.jpg',
+              alt: 'Hama Chili at Uchi Dallas',
+            },
+            {
+              src: '/dallas/establishments/uchi-otoro-nigiri.jpg',
+              alt: 'Otoro nigiri at Uchi Dallas',
+            },
+            {
+              src: '/dallas/establishments/uchi-wagyu-tataki.jpg',
+              alt: 'Wagyu tataki at Uchi Dallas',
+            }
+          ],
+          address: '2817 Maple Ave, Dallas, TX 75201',
+          coordinates: { lat: 32.8042, lng: -96.8003 },
+          price: '$$$',
+          hours: 'Dinner daily, Happy Hour 5-6:30pm',
+          website: 'https://uchi.uchirestaurants.com/location/sushi-dallas/',
+          instagram: '@uchidallas',
+        },
+        {
+          name: 'Terry Black\'s Barbecue',
+          neighborhood: 'Deep Ellum',
+          vibe: 'Lockhart BBQ dynasty goes Dallas—massive beef ribs and Texas Monthly cred.',
+          order: 'The beef rib. It\'s the size of a small child.',
+          why: 'Award-winning Texas BBQ from a legendary Lockhart family. Featured in Texas Monthly\'s 50 Best BBQ Joints. The beef rib is king here, but the brisket, house-made sausages, and smoked turkey are all standouts. Opened in Dallas 2015, now five locations across Texas. The beef rib is massive—come hungry or share.',
+          images: [
+            {
+              src: '/dallas/establishments/terry-blacks-hero.jpg',
+              alt: 'Terry Black\'s Barbecue spread',
+            },
+            {
+              src: '/dallas/establishments/terry-blacks-brisket.jpg',
+              alt: 'Smoked brisket at Terry Black\'s',
+            }
+          ],
+          address: '3025 Main St, Dallas, TX 75226',
+          coordinates: { lat: 32.7849, lng: -96.7846 },
+          price: '$$',
+          hours: 'Daily 11am-9pm',
+          website: 'https://terryblacksbbq.com',
+          instagram: '@terryblacksbbq',
         },
       ],
     },

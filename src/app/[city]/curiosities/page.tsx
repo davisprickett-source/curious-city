@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 // Dynamically import heavy scroll component
 const CuriositiesScroll = dynamic(
-  () => import('@/components/CuriositiesScroll').then(mod => ({ default: mod.CuriositiesScroll })),
+  () => import('@/components/CuriositiesScroll'),
   {
     loading: () => (
       <div className="container-page py-20">
@@ -136,7 +136,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
 
         {/* Scrollytelling Content */}
         {curiosities.length > 0 ? (
-          <CuriositiesScroll curiosities={curiosities} cityName={city.name} />
+          <CuriositiesScroll curiosities={curiosities} cityName={city.name} url={url} />
         ) : (
           <div className="container-page py-20">
             <div className="text-center">

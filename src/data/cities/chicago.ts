@@ -514,7 +514,7 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: 'Cloud Gate (The Bean)',
           category: 'Public Art',
-          description: 'Anish Kapoor\'s 110-ton stainless steel sculpture reflects Chicago\'s skyline in a mirror finish so polished you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works — the reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Go early to avoid crowds, or embrace the crowds and watch people pose.',
+          description: 'Indian-born British artist Anish Kapoor constructed Cloud Gate between 2004 and 2006. Made of 168 stainless steel plates welded together—no visible seams. Measures 33 by 66 by 42 feet, weighs 110 tons. Unveiled in incomplete form during Millennium Park\'s 2004 grand opening, then concealed for finishing work. Formally dedicated May 15, 2006. Original cost estimate: $6 million. Final cost: $23 million. All privately funded. Kapoor initially disliked the "Bean" nickname, later grew fond of it. The mirror finish is polished so intensely you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works—reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Visit at dawn to avoid crowds.',
           images: [
             {
               src: '',
@@ -533,7 +533,7 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: 'The Art Institute of Chicago',
           category: 'Museum',
-          description: 'One of the oldest and largest art museums in the United States houses everything from ancient Egyptian artifacts to contemporary installations. The Impressionist collection alone justifies admission — Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. The Modern Wing by Renzo Piano is a masterclass in museum design. You could spend days here and still miss entire wings.',
+          description: 'Founded as the Chicago Academy of Fine Arts on May 24, 1879. Changed to current name December 23, 1882. Born from the ashes of the Great Chicago Fire. Moved to its permanent home in 1893—the Beaux-Arts building designed by Shepley, Rutan, and Coolidge for the World\'s Columbian Exposition. In 1894, Edward Kemys placed two massive bronze lion sculptures at the entrance. The lions have unofficial names: "on the prowl" (north) and "stands in an attitude of defiance" (south). May 16, 2009, the Modern Wing opened—264,000 square feet designed by Renzo Piano, making the Art Institute the second-largest museum in the US. The Impressionist collection alone justifies admission—Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. You could spend days here and still miss entire wings. Visit the Thorne Miniature Rooms in the basement.',
           images: [
             {
               src: '',
@@ -552,7 +552,7 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: 'Navy Pier',
           category: 'Entertainment',
-          description: 'A mile-long pier on Lake Michigan that functions as Chicago\'s tourist processing center — rides, restaurants, boat tours, fireworks, and crowds of people trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. The boat tours departing from here are excellent. The Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
+          description: 'Opened to the public July 15, 1916 as "Municipal Pier." Architect Charles Sumner Frost designed it based on Daniel Burnham\'s 1909 Master Plan of Chicago. Built atop 20,000 logs imported from Oregon, piled into Lake Michigan\'s bed. Original purpose: dock for freighters, passenger ships, and public recreation. WWI brought Navy personnel. Officially renamed Navy Pier in 1927 as tribute. Celebrated 100th anniversary in 2016 with The Centennial Vision renovation—new Centennial Wheel, Polk Bros Park, pavilions. Now it\'s a mile-long tourist processing center. Rides, restaurants, boat tours, fireworks, crowds trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. Boat tours departing from here are excellent. Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
           images: [
             {
               src: '',
@@ -571,7 +571,7 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: '360 CHICAGO (John Hancock Observatory)',
           category: 'Observation Deck',
-          description: 'The observation deck on the 94th floor of the John Hancock Center offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a glass platform that tilts you out over Michigan Avenue at a 30-degree angle, which is either thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, which is sometimes cheaper than admission.',
+          description: 'Architect Bruce Graham and structural engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed the John Hancock Center. Construction began 1965. Topped out May 6, 1968—then the second-tallest building in the world after the Empire State Building. Completed 1969. Ray Heckla, the original building engineer, moved his family in April 1969 before completion—first resident. Khan\'s revolutionary "trussed tube" structural system debuted here—huge diagonal braces carry lateral loads to the corners. The observation deck on the 94th floor offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a modern glass platform that tilts you out over Michigan Avenue at a 30-degree angle—thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, sometimes cheaper than admission.',
           images: [
             {
               src: '',
@@ -609,7 +609,7 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: 'Willis Tower Skydeck',
           category: 'Observation Deck',
-          description: 'Formerly the Sears Tower, still the tallest building in Chicago at 1,450 feet. The Skydeck on the 103rd floor features glass boxes (The Ledge) that extend out from the building — stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care.',
+          description: 'Architect Bruce Graham and engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed Willis Tower. Took three years to build. Finished May 1973 as the world\'s tallest building—a title it held for nearly 25 years. 110 stories, 1,451 feet. July 16, 2009, officially renamed Willis Tower (from Sears Tower). Many Chicagoans still call it Sears. January 2009, major Skydeck renovation began. July 2, 2009, The Ledge opened—retractable glass balconies extending 4 feet from the 103rd floor facade. The all-glass boxes can support 5 tons. Stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care. Buy tickets online to skip the ticket line. Visit at sunset for day-to-night views.',
           images: [
             {
               src: '',

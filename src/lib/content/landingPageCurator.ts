@@ -3,6 +3,13 @@ import { getAllPageCards } from './pages'
 import type { ArticleSummary } from './cityHomepage'
 import type { Article } from '@/types/article'
 import { getAllArticles } from '@/lib/queries/articles'
+import {
+  getAllCities,
+  getCityCuriosities,
+  getCityDarkHistory,
+  getCityHiddenGems,
+  getCityLostAndLoved,
+} from '@/data/cities'
 
 /**
  * Curated content sections for the landing page
@@ -10,6 +17,7 @@ import { getAllArticles } from '@/lib/queries/articles'
 export interface CuratedLandingContent {
   heroSlides: PageCardData[]
   featuredArticles: ArticleSummary[]
+  historyEssays: PageCardData[]
   darkStories: PageCardData[]
   curiosities: PageCardData[]
   discoveries: PageCardData[]
@@ -138,6 +146,165 @@ async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
 }
 
 /**
+ * Curate top curiosity entries from across all cities
+ * Returns actual entry-level cards, not page links
+ */
+async function curateTopCuriosities(count: number = 3): Promise<PageCardData[]> {
+  const cities = await getAllCities()
+  const allEntries: PageCardData[] = []
+
+  for (const city of cities) {
+    const curiosities = await getCityCuriosities(city.slug)
+
+    // Get entries with images, prioritize featured ones
+    const validCuriosities = curiosities
+      .filter((c: any) => c.image?.src || c.images?.[0]?.src)
+      .sort((a: any, b: any) => {
+        // Featured items first
+        if (a.featured && !b.featured) return -1
+        if (!a.featured && b.featured) return 1
+        return 0
+      })
+      .slice(0, 2) // Max 2 per city
+
+    for (const entry of validCuriosities) {
+      const thumbnail = entry.images?.[0]?.src || entry.image?.src
+      const teaser = entry.body.length > 120
+        ? entry.body.slice(0, 120).trim() + '...'
+        : entry.body
+
+      allEntries.push({
+        type: 'page',
+        pageType: 'curiosities',
+        citySlug: city.slug,
+        cityName: city.name,
+        title: entry.title,
+        teaser,
+        href: `/${city.slug}/curiosities`,
+        thumbnail,
+      })
+    }
+  }
+
+  return diversifyByCities(allEntries, count)
+}
+
+/**
+ * Curate top dark history entries from across all cities
+ * Returns actual entry-level cards, not page links
+ */
+async function curateTopDarkHistory(count: number = 3): Promise<PageCardData[]> {
+  const cities = await getAllCities()
+  const allEntries: PageCardData[] = []
+
+  for (const city of cities) {
+    const darkHistory = await getCityDarkHistory(city.slug)
+
+    // Get entries with images
+    const validEntries = darkHistory
+      .filter((d: any) => d.image?.src || d.images?.[0]?.src)
+      .slice(0, 2) // Max 2 per city
+
+    for (const entry of validEntries) {
+      const thumbnail = entry.images?.[0]?.src || entry.image?.src
+      const teaser = entry.body.length > 120
+        ? entry.body.slice(0, 120).trim() + '...'
+        : entry.body
+
+      allEntries.push({
+        type: 'page',
+        pageType: 'dark-history',
+        citySlug: city.slug,
+        cityName: city.name,
+        title: entry.title,
+        teaser,
+        href: `/${city.slug}/dark-history`,
+        thumbnail,
+      })
+    }
+  }
+
+  return diversifyByCities(allEntries, count)
+}
+
+/**
+ * Curate top hidden gem entries from across all cities
+ * Returns actual entry-level cards, not page links
+ */
+async function curateTopHiddenGems(count: number = 3): Promise<PageCardData[]> {
+  const cities = await getAllCities()
+  const allEntries: PageCardData[] = []
+
+  for (const city of cities) {
+    const hiddenGems = await getCityHiddenGems(city.slug)
+
+    // Get entries with images
+    const validEntries = hiddenGems
+      .filter((h: any) => h.image?.src || h.images?.[0]?.src)
+      .slice(0, 2) // Max 2 per city
+
+    for (const entry of validEntries) {
+      const thumbnail = entry.images?.[0]?.src || entry.image?.src
+      const teaser = entry.description?.length > 120
+        ? entry.description.slice(0, 120).trim() + '...'
+        : (entry.description || entry.body || '')
+
+      allEntries.push({
+        type: 'page',
+        pageType: 'hidden-gems',
+        citySlug: city.slug,
+        cityName: city.name,
+        title: entry.title || entry.name,
+        teaser,
+        href: `/${city.slug}/hidden-gems`,
+        thumbnail,
+      })
+    }
+  }
+
+  return diversifyByCities(allEntries, count)
+}
+
+/**
+ * Curate top lost & loved entries from across all cities
+ * Returns actual entry-level cards, not page links
+ */
+async function curateTopLostAndLoved(count: number = 3): Promise<PageCardData[]> {
+  const cities = await getAllCities()
+  const allEntries: PageCardData[] = []
+
+  for (const city of cities) {
+    const lostLoved = await getCityLostAndLoved(city.slug)
+
+    // Get entries with images
+    const validEntries = lostLoved
+      .filter((l: any) => l.image?.src || l.images?.[0]?.src)
+      .slice(0, 2) // Max 2 per city
+
+    for (const entry of validEntries) {
+      const thumbnail = entry.images?.[0]?.src || entry.image?.src
+      const body = entry.body || entry.description || ''
+      const teaser = body.length > 120
+        ? body.slice(0, 120).trim() + '...'
+        : body
+
+      allEntries.push({
+        type: 'page',
+        pageType: 'lost-loved',
+        citySlug: city.slug,
+        cityName: city.name,
+        title: entry.title || entry.name,
+        teaser,
+        href: `/${city.slug}/lost-and-loved`,
+        thumbnail,
+      })
+    }
+  }
+
+  return diversifyByCities(allEntries, count)
+}
+
+/**
  * Curate landing page content with smart filtering and diversity
  */
 export async function curateLandingPageContent(): Promise<CuratedLandingContent> {
@@ -148,6 +315,14 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
 
   // Get featured articles
   const featuredArticles = await curateFeaturedArticles()
+
+  // History Essays: 4 diverse history essays
+  const historyEssays = diversifyByCities(
+    cardsWithThumbnails
+      .filter((c) => c.pageType === 'history')
+      .slice(0, 16),
+    4
+  )
 
   // Hero Slides: Best essays + specific requested entries
   const premiumEssaySlugs = [
@@ -175,41 +350,22 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   // Combined hero slides
   const heroSlides = [...premiumEssays, ...specificSlides].slice(0, 6)
 
-  // Dark Stories: 4 dark-history items from diverse cities
-  // Allow overlap with hero slides to ensure section is populated
-  const darkStories = diversifyByCities(
-    cardsWithThumbnails
-      .filter((c) => c.pageType === 'dark-history')
-      .slice(0, 12),
-    4
-  )
+  // Dark Stories: Top 3 actual dark history entries from diverse cities
+  const darkStories = await curateTopDarkHistory(3)
 
-  // Curiosities: 4 curiosity items from diverse cities
-  const curiosities = diversifyByCities(
-    cardsWithThumbnails
-      .filter((c) => c.pageType === 'curiosities')
-      .slice(0, 12),
-    4
-  )
+  // Curiosities: Top 3 actual curiosity entries from diverse cities
+  const curiosities = await curateTopCuriosities(3)
 
-  // Discoveries: Mix of hidden-gems (since curiosities now has own section)
-  const hiddenGems = cardsWithThumbnails
-    .filter((c) => c.pageType === 'hidden-gems' && !heroSlides.includes(c))
-    .slice(0, 4)
+  // Hidden Gems: Top 3 actual hidden gem entries from diverse cities
+  const discoveries = await curateTopHiddenGems(3)
 
-  const discoveries = hiddenGems
-
-  // Lost Landmarks: 4 lost-loved items from diverse cities
-  const lostLandmarks = diversifyByCities(
-    cardsWithThumbnails
-      .filter((c) => c.pageType === 'lost-loved' && !heroSlides.includes(c))
-      .slice(0, 8),
-    4
-  )
+  // Lost Landmarks: Top 3 actual lost & loved entries from diverse cities
+  const lostLandmarks = await curateTopLostAndLoved(3)
 
   // More Stories: Everything else, sorted by diversity and recency
   const featured = new Set([
     ...heroSlides.map((c) => c.href),
+    ...historyEssays.map((c) => c.href),
     ...darkStories.map((c) => c.href),
     ...curiosities.map((c) => c.href),
     ...discoveries.map((c) => c.href),
@@ -222,6 +378,7 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   return {
     heroSlides,
     featuredArticles,
+    historyEssays,
     darkStories,
     curiosities,
     discoveries,

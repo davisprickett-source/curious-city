@@ -219,7 +219,7 @@ function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: Hi
 
   if (prefersReducedMotion) {
     return (
-      <section ref={inViewRef} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}>
+      <section id={gem.id} ref={inViewRef} className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}>
         <div className="max-w-5xl mx-auto w-full">
           <div className="flex flex-col gap-8">
             {/* Content */}
@@ -319,8 +319,23 @@ function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: Hi
                   )}
                 </div>
               )}
-              <div className="flex justify-center mb-6">
-                <ShareButton title={title} url={url} />
+              <div className="flex justify-center gap-6 mb-6">
+                <ShareButton
+                  title={gem.name}
+                  url={url}
+                  anchor={gem.id}
+                  shareText={gem.description.length > 120 ? gem.description.slice(0, 117) + '...' : gem.description}
+                />
+                <SaveButton
+                  name={gem.name}
+                  description={gem.description}
+                  address={gem.address}
+                  hours={gem.hours}
+                  phone={gem.phone}
+                  website={gem.website}
+                  category={gem.category}
+                  url={`${url}#${gem.id}`}
+                />
               </div>
             </div>
           </div>
@@ -332,6 +347,7 @@ function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: Hi
   // Animated version
   return (
     <motion.section
+      id={gem.id}
       ref={inViewRef}
       className={`min-h-[70vh] flex items-center py-16 px-4 ${getCategoryGradient()}`}
       initial="hidden"
@@ -436,6 +452,26 @@ function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: Hi
                 )}
               </div>
             )}
+
+            {/* Share and Save Buttons */}
+            <div className="flex justify-center gap-6 mt-6">
+              <ShareButton
+                title={gem.name}
+                url={url}
+                anchor={gem.id}
+                shareText={gem.description.length > 120 ? gem.description.slice(0, 117) + '...' : gem.description}
+              />
+              <SaveButton
+                name={gem.name}
+                description={gem.description}
+                address={gem.address}
+                hours={gem.hours}
+                phone={gem.phone}
+                website={gem.website}
+                category={gem.category}
+                url={`${url}#${gem.id}`}
+              />
+            </div>
           </motion.div>
         </div>
       </div>
@@ -453,6 +489,9 @@ export default function MobileHiddenGemsLayout({
   const [scrollProgress, setScrollProgress] = useState(0)
   const [activeSection, setActiveSection] = useState(0)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+  // Scroll to anchor on page load (for deep links)
+  useScrollToAnchor(300)
 
   // Page ID for ad targeting
   const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-hidden-gems-mobile`

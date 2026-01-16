@@ -46,7 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     })
 
-    // City section pages (articles, discover, events, guide)
+    // City section pages (articles, discover, guide)
     citySections.forEach((section) => {
       routes.push({
         url: `${baseUrl}/${city.slug}${section.path}`,

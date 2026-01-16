@@ -32,7 +32,7 @@ export default async function SitemapPage() {
   const citySections = [
     { id: 'articles', label: 'Articles', path: 'articles' },
     { id: 'discover', label: 'Discover', path: 'discover' },
-    { id: 'events', label: 'Events', path: 'events' },
+    // { id: 'events', label: 'Events', path: 'events' }, // Hidden for now - work on after launch
     { id: 'guide', label: 'Guide', path: 'guide' },
   ]
 

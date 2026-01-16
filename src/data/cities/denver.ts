@@ -419,7 +419,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Red Rocks Amphitheatre',
           category: 'Venue',
-          description: 'A natural amphitheater formed by 300-foot red sandstone rocks. The acoustics are legendary. Even if you skip the concerts, the free daytime hiking and views are worth the trip.',
+          description: 'The Civilian Conservation Corps and Works Progress Administration built Red Rocks between 1936 and 1941—800 tons of quarried stone, 30,000 pounds of reinforced steel, five years of labor. Denver architect Burnham F. Hoyt designed it. Formally dedicated June 15, 1941. Scottish soprano Mary Garden declared she had "Never in any opera house the world over have I found more perfect acoustic properties." The Beatles played here in 1964. The venue sits 10 miles southwest of Denver between two 300-foot red sandstone monoliths. Naturally-occurring, acoustically perfect. Sunrise yoga happens on the venue steps. The amphitheater is free to visit during the day—hike the trails, run the stairs, sit where Stevie Nicks and Willie Nelson performed.',
           images: [
             {
               src: '/denver/hidden-gems/red-rocks.png',
@@ -438,7 +438,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Union Station',
           category: 'Landmark',
-          description: 'A beautifully renovated 1914 Beaux-Arts train station, now a hub for restaurants, bars, and the city\'s best people-watching. The Terminal Bar inside is perfect for a drink while waiting for nothing.',
+          description: 'In 1912, the Denver Union Terminal Railway Company decided to demolish and rebuild the central portion to handle increasing passenger traffic. Denver architects Gove & Walsh designed the new building in Beaux-Arts style. Carved granite. Opened in 1914—ushering in Denver\'s golden age of rail travel. The building closed December 1, 2012 for a $500 million renovation. Reopened July 26, 2014, exactly one hundred years after the original opening. The derelict third and fourth floors became The Crawford Hotel—112 rooms, named after preservationist Dana Crawford. The 12,000-square-foot Great Hall serves as hotel lobby, public space, and train waiting room. Terminal Bar occupies the restored ticketing office off the Great Hall—signature cocktails, local craft beers, views of travelers and locals waiting for nothing in particular.',
           images: [
             {
               src: '/denver/hidden-gems/union-station.png',
@@ -462,7 +462,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Denver Art Museum',
           category: 'Museum',
-          description: 'A striking Daniel Libeskind-designed building housing an excellent collection, particularly strong in Western American and indigenous art. The architecture is as much a draw as the collection.',
+          description: 'Studio Daniel Libeskind and Denver\'s Davis Partnership Architects designed the Frederic C. Hamilton Building. Opened October 7, 2006. Libeskind\'s first completed building in the United States. He said: "I was inspired by the light and geology of the Rockies, but most of all by the wide-open faces of the people of Denver." Construction took from July 2003 to March 2007. The building is 146,000 square feet, covered in 9,000 titanium panels that reflect Colorado sunshine. Design recalls the peaks of the Rockies and geometric rock crystals found in the foothills. Doubled the museum\'s size. Houses Modern and Contemporary Art, African Art, Oceanic Art, Western American art, special exhibitions. Frederic C. Hamilton bequeathed 22 Impressionist works in 2014—including a van Gogh, four Monets. The architecture is as much a draw as the collection. First Saturday each month is free for Colorado residents.',
           images: [
             {
               src: '/denver/hidden-gems/art-museum.png',
@@ -481,7 +481,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Meow Wolf Denver',
           category: 'Experience',
-          description: 'An immersive, interactive art installation called "Convergence Station" that defies easy description. Part haunted house, part art museum, part acid trip. Set aside at least 3 hours.',
+          description: 'Meow Wolf announced Denver plans in 2018. Three years of work. Budget around $60 million. Opened September 17, 2021—Meow Wolf\'s third permanent exhibition. The largest: 90,000 square feet across four stories. Features 79 artworks by 120 local Colorado artists and 200 in-house creatives. 51% identify as female, 20% identify as LGBTQ+, 38% are people of color. The story: Convergence Station is a transit hub operated by the Quantum Department of Transportation (QDOT). Four alien worlds collided in a rare cosmic event. When they converged, everyone\'s memories got jumbled. Now memories are currency. Visitors access C Street, Eemia, Numina, and the Ossuary through portals. Almost 80 unique installations and rooms. Interactive storytelling throughout. Tributes to Denver\'s history woven in. Part haunted house, part art museum, part acid trip. Set aside at least 3 hours. Go weekdays to avoid crowds.',
           images: [
             {
               src: '/denver/hidden-gems/meow-wolf.png',
@@ -500,7 +500,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Larimer Square',
           category: 'Neighborhood',
-          description: 'Denver\'s oldest commercial block, now home to upscale restaurants, boutiques, and the string lights that have launched a thousand Instagram posts. The history is real, even if the vibe is curated.',
+          description: 'William E. Larimer laid out this block in November 1858—Denver\'s oldest commercial corridor. During the Pike\'s Peak gold rush, the street hosted hotels, saloons, retail stores, professional offices. The buildings date from the 1870s to 1890s. By the 1950s-60s, Larimer Square was blighted, threatened by Denver Urban Renewal Authority demolition. In 1965, preservationist Dana Crawford saved the block between 14th and 15th Streets—turned late nineteenth-century buildings into a model of adaptive reuse. Became Denver\'s first historic district in 1971. Now: upscale restaurants, boutiques, string lights that have launched a thousand Instagram posts. The history is real even if the vibe is curated. Rioja for Spanish-influenced food, Tamayo for rooftop Mexican.',
           images: [
             {
               src: '/denver/hidden-gems/larimer-square.png',
@@ -519,7 +519,7 @@ export const denver: CityData = {
           type: 'iconic-spot',
           name: 'Little Man Ice Cream',
           category: 'Sweets',
-          description: 'A 28-foot-tall, 14,000-pound replica of a 1940s cream can that serves some of the city\'s best ice cream. It is the unofficial capital of LoHi.',
+          description: 'Paul Tamburello opened Little Man Ice Cream on July 4, 2008 in a 28-foot-tall, 14,000-pound steel milk can. Inspired by "California Crazy"—a book documenting old roadside stores built as giant objects. The shop pays homage to Paul\'s father Peter, nicknamed "Little Man" due to his small stature. Paul is a former youth minister. Built the business on the belief that business exists to make a difference. The Scoop for Scoop Program donates a portion of every sale to charity. The replica 1950s-era milk can houses one of Denver\'s most beloved ice cream parlors. Unofficial capital of LoHi (Lower Highland). The line is long. The ice cream is good. Locals tolerate the wait.',
           images: [
             {
               src: '/denver/iconic/little-man.png',

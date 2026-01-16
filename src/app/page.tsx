@@ -39,6 +39,27 @@ export default async function HomePage() {
         <LandingHeroSection slides={curatedContent.heroSlides} />
 
         <main className="flex-1 bg-white overflow-x-hidden">
+        {/* History Essays Section */}
+        {curatedContent.historyEssays.length > 0 && (
+          <HorizontalScrollSection
+            title="History Essays"
+            eyebrow="Chronicles"
+            description="Deeply researched narratives exploring the formative events and forgotten eras of American cities"
+            viewAllLink={{
+              href: '/history',
+              text: 'View all history',
+            }}
+          >
+            {curatedContent.historyEssays.map((page, index) => (
+              <LandingScrollCard
+                key={page.href}
+                data={page}
+                index={index}
+              />
+            ))}
+          </HorizontalScrollSection>
+        )}
+
         {/* Featured Articles Section */}
         {curatedContent.featuredArticles.length > 0 && (
           <HorizontalScrollSection

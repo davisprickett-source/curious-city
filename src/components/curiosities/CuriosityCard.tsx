@@ -272,11 +272,13 @@ export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps
         <div className="lg:w-[35%] flex-shrink-0 relative h-full">
           <ImageCarousel images={images} className="h-full w-full rounded-none" />
 
-          {/* Minimalistic Expand Button */}
-          <button
+          {/* Expand Button with Elongating Arrows */}
+          <motion.button
             onClick={() => setIsImageExpanded(true)}
-            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 hover:scale-110"
+            className="absolute bottom-4 right-4 text-white drop-shadow-lg z-10"
             aria-label="Expand image"
+            whileHover="hover"
+            initial="initial"
           >
             <svg
               className="w-5 h-5"
@@ -285,13 +287,48 @@ export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps
               viewBox="0 0 24 24"
               strokeWidth={1.5}
             >
-              <path
+              {/* Top-left arrow */}
+              <motion.path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                variants={{
+                  initial: { d: "M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9" },
+                  hover: { d: "M2 2v6m0-6h6m-6 0L10.5 10.5" }
+                }}
+                transition={{ duration: 0.2 }}
+              />
+              {/* Bottom-left arrow */}
+              <motion.path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                variants={{
+                  initial: { d: "M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15" },
+                  hover: { d: "M2 22v-6m0 6h6m-6 0L10.5 13.5" }
+                }}
+                transition={{ duration: 0.2 }}
+              />
+              {/* Top-right arrow */}
+              <motion.path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                variants={{
+                  initial: { d: "M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9" },
+                  hover: { d: "M22 2h-6m6 0v6m0-6L13.5 10.5" }
+                }}
+                transition={{ duration: 0.2 }}
+              />
+              {/* Bottom-right arrow */}
+              <motion.path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                variants={{
+                  initial: { d: "M20.25 20.25h-4.5m4.5 0v-4.5m0 4.5L15 15" },
+                  hover: { d: "M22 22h-6m6 0v-6m0 6L13.5 13.5" }
+                }}
+                transition={{ duration: 0.2 }}
               />
             </svg>
-          </button>
+          </motion.button>
         </div>
       )}
 
@@ -389,14 +426,13 @@ export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps
               />
             </motion.div>
 
-            {/* Premium Close Button - Animated */}
+            {/* Close Button with Line Swap Animation */}
             <motion.button
               onClick={() => setIsImageExpanded(false)}
-              className="absolute top-4 right-4 text-white drop-shadow-lg z-10 group"
+              className="absolute top-4 right-4 text-white drop-shadow-lg z-10"
               aria-label="Close expanded image"
-              initial={{ rotate: 0, scale: 1 }}
-              whileHover={{ rotate: 90, scale: 1.1 }}
-              transition={{ duration: 0.2 }}
+              whileHover="hover"
+              initial="initial"
             >
               <svg
                 className="w-7 h-7"
@@ -405,10 +441,25 @@ export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
               >
-                <path
+                {/* First line (top-left to bottom-right, swaps to bottom-left to top-right) */}
+                <motion.path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
+                  variants={{
+                    initial: { d: "M6 18L18 6" },
+                    hover: { d: "M6 6L18 18" }
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                />
+                {/* Second line (bottom-left to top-right, swaps to top-left to bottom-right) */}
+                <motion.path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  variants={{
+                    initial: { d: "M6 6l12 12" },
+                    hover: { d: "M6 18L18 6" }
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                 />
               </svg>
             </motion.button>

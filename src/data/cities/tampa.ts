@@ -343,7 +343,7 @@ export const tampa: CityData = {
           type: 'iconic-spot',
           name: 'Columbia Restaurant',
           category: 'Restaurant',
-          description: 'Florida\'s oldest restaurant, operating since 1905. The Spanish-Cuban menu is good, the flamenco shows are better, and the building spans an entire city block of Ybor City.',
+          description: 'Casimiro Hernandez Sr.—a Cuban immigrant of Spanish heritage—founded Saloon Columbia in 1903, renamed it Columbia Restaurant in 1905. Florida\'s oldest continuously operated restaurant. The oldest Spanish restaurant in the United States. The largest Spanish restaurant in the world. Occupies an entire city block. Started as a 30-seat corner cafe, now 15 dining rooms, 1,700 seats. Five generations of the Hernandez-Gonzmart family. Casimiro is credited by many as creator of the original Tampa Cuban sandwich. The Spanish-Cuban menu is good, the flamenco shows are better, the 1905 Salad made tableside is essential.',
           images: [
             {
               src: '/tampa/hidden-gems/columbia-1.png',
@@ -366,7 +366,7 @@ export const tampa: CityData = {
           type: 'iconic-spot',
           name: 'Tampa Theatre',
           category: 'Cinema',
-          description: 'A gorgeously preserved 1926 movie palace with a Mediterranean courtyard design. They screen classic and independent films. The architecture alone is worth admission.',
+          description: 'Renowned theater architect John Eberson designed Tampa Theatre in Florida Mediterranean Atmospheric style. Built by Paramount Pictures. Opened October 15, 1926. Eberson called it his favorite among all the atmospheric theaters he built—the world\'s most complete and best-preserved example of the style. The interior resembles a romantic Mediterranean courtyard: old-world statuary, flowers, gargoyles. An artificial nighttime sky with stars on the ceiling. The Mighty Wurlitzer Theatre Organ—1,400 pipes—was installed to accompany silent films. Still played before nightly films by volunteer organists. Tampa Theatre was the first commercial building in Tampa to offer air conditioning. Over 700 events annually. The architecture alone is worth admission.',
           images: [
             {
               src: '/tampa/hidden-gems/tampa-theatre.png',
@@ -390,7 +390,7 @@ export const tampa: CityData = {
           type: 'iconic-spot',
           name: 'Tampa Riverwalk',
           category: 'Walk',
-          description: 'A 2.6-mile pedestrian path along the Hillsborough River connecting museums, parks, and downtown. Rent bikes or scooters. The sunset views are the real attraction.',
+          description: 'Tampa Riverwalk has its origins in the 1970s, when downtown waterfront consisted of aging warehouses and Port of Tampa industrial facilities. Mayor Bill Poe conceived a park and walkway behind Curtis Hixon Hall. The city built a short boardwalk on the east side, then ran out of money. Subsequent mayors lost interest. In 2014, a federal transportation grant funded a $9.2 million boardwalk under the Kennedy Boulevard bridge, connecting existing segments into one continuous two-mile path. A 2016 northward extension past the Straz Center and under I-275 to Waterworks Park in Tampa Heights brought the total to 2.6 miles. Connects museums, parks, downtown. Rent bikes or scooters. The sunset views are the real attraction.',
           images: [
             {
               src: '/tampa/hidden-gems/riverwalk.png',
@@ -427,7 +427,7 @@ export const tampa: CityData = {
           type: 'iconic-spot',
           name: 'Armature Works',
           category: 'Food Hall',
-          description: 'A renovated streetcar warehouse now housing a food hall, restaurant, and event space on the Hillsborough River. The setting is better than most of the food.',
+          description: 'Tampa Electric Company (TECO) built this massive structure in 1910 as the central streetcar warehouse and maintenance facility. Opened February 14, 1912—15 streetcar tracks, maintenance area, offices, even a theater for employee lectures. Built fire-resistant after the previous wooden facility burned. Named for the "armatures"—rotating components of streetcar motors—housed and repaired here. The streetcar system was replaced by buses and automobiles in 1946. Tampa Armature Works, a phosphate machinery manufacturer, bought the building from TECO in 1960. Sat dormant for decades. $20 million renovation. Officially opened 2018. The walls of the food hall retain original streetcar barn paint. Now a mixed-use building: Heights Public Market food hall, restaurant, ballroom event space. The setting is better than most of the food. The outdoor seating on the river is the move.',
           images: [
             {
               src: '/tampa/hidden-gems/armature-works.png',

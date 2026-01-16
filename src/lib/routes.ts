@@ -56,7 +56,7 @@ export const citySections: SectionDefinition[] = [
   { id: 'articles', label: 'Articles', path: '/articles' },
   { id: 'discover', label: 'Discover', path: '/discover' },
   { id: 'guide', label: 'Guide', path: '/guide' },
-  { id: 'events', label: 'Events', path: '/events' },
+  // { id: 'events', label: 'Events', path: '/events' }, // Hidden for now - work on after launch
 ]
 
 // Legacy/hidden sections (keep for backward compatibility)

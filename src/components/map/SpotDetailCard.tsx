@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BestOfSpot } from '@/types/content'
 import { ImageCarousel } from '@/components/ImageCarousel'
+import { ShareButton } from '@/components/ShareButton'
+import { SaveButton } from '@/components/SaveButton'
 
 interface SpotDetailCardProps {
   spot: BestOfSpot
@@ -330,6 +332,23 @@ function CardContent({
             <span className="text-neutral-700 group-hover:text-[#c65d3b] font-medium transition-colors">Website</span>
           </a>
         )}
+      </div>
+
+      {/* Share and Save Buttons */}
+      <div className="flex justify-center gap-6 pt-4 border-t border-neutral-200">
+        <ShareButton
+          title={spot.name}
+          shareText={spot.vibe}
+        />
+        <SaveButton
+          name={spot.name}
+          description={spot.vibe + (spot.why ? '\n\n' + spot.why : '')}
+          address={spot.address}
+          hours={spot.hours}
+          website={spot.website}
+          category={spot.neighborhood}
+          tip={spot.order}
+        />
       </div>
         </motion.div>
       )}
