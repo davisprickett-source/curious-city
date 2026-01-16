@@ -1,0 +1,8 @@
+# Cloudflare Pages - Ignore public folder
+# Images are served from R2 CDN instead
+public/
+
+# Also ignore these
+node_modules/
+.next/
+.git/

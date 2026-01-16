@@ -1,0 +1,127 @@
+const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+const fs = require('fs');
+const path = require('path');
+require('dotenv').config({ path: '.env.local' });
+
+// Configure R2 client (S3-compatible)
+const r2Client = new S3Client({
+  region: 'auto',
+  endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+  credentials: {
+    accessKeyId: process.env.R2_ACCESS_KEY_ID,
+    secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
+  },
+});
+
+const BUCKET_NAME = process.env.R2_BUCKET_NAME;
+const SEQUENCES_DIR = path.join(__dirname, 'public', 'sequences');
+const PARALLEL_UPLOADS = 50; // Upload 50 files at once!
+
+// Get all files in sequences directory
+function getAllFiles(dirPath, arrayOfFiles = []) {
+  const files = fs.readdirSync(dirPath);
+
+  files.forEach((file) => {
+    const filePath = path.join(dirPath, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      arrayOfFiles = getAllFiles(filePath, arrayOfFiles);
+    } else {
+      arrayOfFiles.push(filePath);
+    }
+  });
+
+  return arrayOfFiles;
+}
+
+async function uploadFile(filePath) {
+  const fileContent = fs.readFileSync(filePath);
+
+  // Get relative path from sequences directory
+  const relativePath = path.relative(path.join(__dirname, 'public'), filePath);
+  const key = relativePath.replace(/\\/g, '/'); // Ensure forward slashes
+
+  // Determine content type
+  const ext = path.extname(filePath).toLowerCase();
+  let contentType = 'application/octet-stream';
+  if (ext === '.jpg' || ext === '.jpeg') contentType = 'image/jpeg';
+  if (ext === '.png') contentType = 'image/png';
+  if (ext === '.webp') contentType = 'image/webp';
+
+  const command = new PutObjectCommand({
+    Bucket: BUCKET_NAME,
+    Key: key,
+    Body: fileContent,
+    ContentType: contentType,
+    CacheControl: 'public, max-age=31536000, immutable',
+  });
+
+  try {
+    await r2Client.send(command);
+    return { success: true, key };
+  } catch (error) {
+    return { success: false, key, error: error.message };
+  }
+}
+
+// Upload in parallel batches
+async function uploadBatch(files, startIdx) {
+  const batch = files.slice(startIdx, startIdx + PARALLEL_UPLOADS);
+  if (batch.length === 0) return [];
+
+  return Promise.all(batch.map(uploadFile));
+}
+
+async function main() {
+  console.log('🚀 Starting FAST parallel upload to Cloudflare R2...\n');
+  console.log(`📦 Bucket: ${BUCKET_NAME}`);
+  console.log(`📁 Source: ${SEQUENCES_DIR}`);
+  console.log(`⚡ Parallel uploads: ${PARALLEL_UPLOADS} at once\n`);
+
+  // Get all files
+  const files = getAllFiles(SEQUENCES_DIR);
+  console.log(`📊 Found ${files.length} files to upload\n`);
+
+  let uploaded = 0;
+  let failed = 0;
+  const errors = [];
+  const startTime = Date.now();
+
+  // Upload in parallel batches
+  for (let i = 0; i < files.length; i += PARALLEL_UPLOADS) {
+    const results = await uploadBatch(files, i);
+
+    results.forEach(result => {
+      if (result.success) {
+        uploaded++;
+      } else {
+        failed++;
+        errors.push({ file: result.key, error: result.error });
+      }
+    });
+
+    // Show progress every batch
+    if (i % (PARALLEL_UPLOADS * 10) === 0 || uploaded === files.length) {
+      const elapsed = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
+      const rate = (uploaded / (Date.now() - startTime) * 1000 * 60).toFixed(0);
+      console.log(`  ✓ ${uploaded}/${files.length} files (${((uploaded/files.length)*100).toFixed(1)}%) - ${rate}/min - ${elapsed}min elapsed`);
+    }
+  }
+
+  const totalTime = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
+
+  console.log(`\n✅ Upload complete!`);
+  console.log(`  • Uploaded: ${uploaded} files`);
+  console.log(`  • Time: ${totalTime} minutes`);
+  console.log(`  • Rate: ${(uploaded / totalTime).toFixed(0)} files/min`);
+
+  if (failed > 0) {
+    console.log(`  • Failed: ${failed} files`);
+    console.log('\nErrors:');
+    errors.forEach(err => console.log(`  - ${err.file}: ${err.error}`));
+  }
+
+  console.log(`\n🌐 Files accessible at:`);
+  console.log(`   ${process.env.R2_PUBLIC_URL}/sequences/`);
+}
+
+main().catch(console.error);
