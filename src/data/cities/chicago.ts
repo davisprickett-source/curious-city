@@ -256,28 +256,6 @@ export const chicago: CityData = {
           source: 'Chicago Historical Society',
         },
         {
-          id: 'curiosity-4',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The shipwreck that killed more people than the Titanic—at the dock',
-          body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy. As thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passerby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. It remains a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
-          images: [
-            {
-              src: '/chicago/curiosities/boat-disaster-1.png',
-              alt: 'Chicago River where the Eastland disaster occurred',
-            },
-            {
-              src: '/chicago/curiosities/boat-disaster-2.png',
-              alt: 'SS Eastland capsized on Chicago River',
-            }
-          ],
-          source: 'Eastland Disaster Historical Society',
-          location: {
-            name: 'Chicago River at LaSalle Street',
-            stillExists: true,
-          },
-        },
-        {
           id: 'curiosity-5',
           type: 'curiosity',
           category: 'invention',
@@ -342,24 +320,6 @@ export const chicago: CityData = {
           location: {
             name: 'Art Institute of Chicago',
             stillExists: true,
-          },
-        },
-        {
-          id: 'curiosity-8',
-          type: 'curiosity',
-          category: 'legend',
-          title: 'America\'s first serial killer built a hotel designed for murder',
-          body: 'While the 1893 World\'s Fair showed off the best of civilization, H.H. Holmes was busy running its dark reflection just blocks away. He constructed a three-story "Murder Castle" at 63rd and Wallace specifically designed to process victims like livestock. The architecture was a weapon: staircases to nowhere, doors opening to brick walls, soundproof bedrooms with gas jets controlled from his office, and a greased chute leading directly to a basement crematorium. He preyed on the thousands of transient women flooding the city for the Fair, turning their anonymity into his cover. "I was born with the devil in me," he later confessed. He claimed 27 victims; the real number is likely in the hundreds. The Castle is gone, but the post office that stands there now feels famously cold.',
-          images: [
-            {
-              src: '/chicago/curiosities/the-castle.png',
-              alt: 'H.H. Holmes Murder Castle',
-            }
-          ],
-          source: 'Erik Larson, The Devil in the White City',
-          location: {
-            name: '63rd and Wallace Streets',
-            stillExists: false,
           },
         },
         {
@@ -457,18 +417,89 @@ export const chicago: CityData = {
           source: 'Chicago Department of Transportation',
         },
         {
-          id: 'curiosity-15',
+          id: 'curiosity-16',
           type: 'curiosity',
-          category: 'invention',
-          title: 'The zipper, Twinkies, and spray paint were all invented here',
-          body: 'Chicago\'s industrial boom produced an unlikely cluster of everyday inventions. Whitcomb Judson patented the "clasp locker" (zipper) in 1893. James Dewar created Twinkies at the Hostess bakery in 1930. Edward Seymour invented aerosol spray paint in 1949 to demo his wife\'s radiator paint. The city that rebuilt from fire became America\'s factory of random ingenuity. You\'re welcome, world.',
-          images: [
+          category: 'infrastructure',
+          title: 'Chicago has 5 miles of secret underground tunnels nobody planned',
+          body: 'Chicago has a 5-mile underground pedestrian network called the Pedway connecting over 50 buildings across downtown. It started in 1951 when the city built one-block tunnels connecting subway lines. Then it just kept growing. The weird part? It was never centrally planned. New segments were added through individual building projects, creating a labyrinth that mirrors the changing priorities of the city itself. It\'s neither discretely administered nor logically organized. Today it includes shops, restaurants, and bursts of unexpected art. Most tourists never find it. Most Chicagoans navigate it by pure instinct. It\'s the ultimate infrastructure accident—a city beneath the city that nobody designed and everyone uses.',
+          sources: [
             {
-              src: '/chicago/curiosities/twinkies-zipper-spraypaint.png',
-              alt: 'Chicago inventions: the zipper, Twinkies, and spray paint',
+              title: 'The Chicago Pedway',
+              publisher: 'City of Chicago',
+              url: 'https://www.chicago.gov/city/en/depts/cdot/provdrs/ped/svcs/pedway.html',
+            },
+            {
+              title: 'Chicago Pedway',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Chicago_Pedway',
+            },
+            {
+              title: 'A Visitor\'s Guide to Navigating the Pedway System',
+              publisher: 'Choose Chicago',
+              url: 'https://www.choosechicago.com/blog/architecture-history/a-visitors-guide-to-navigating-the-pedway-system/',
             }
           ],
-          source: 'Chicago History Museum',
+          location: {
+            name: 'Downtown Chicago Loop',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-17',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Chicago dyes its river green with a secret formula guarded by plumbers',
+          body: 'Every St. Patrick\'s Day since 1962, Chicago turns its river neon green using a secret formula known only to the Chicago Plumbers Union. The tradition started in 1961 when Stephen Bailey, business manager of the Journeymen Plumbers Local 130, noticed emerald green stains on a plumber\'s overalls. The stains came from a dye used to detect leaks. Bailey, who also happened to be the city\'s St. Patrick\'s Day parade chairman, had an idea. The first attempt in 1962 used 100 pounds of dye and kept the river green for a week. Today they\'ve perfected it: 40 pounds of an orange powder (the formula is still secret) spread by two motorboats over two hours. The river stays green for about five hours. The plumbers union still pays for it and guards the recipe like nuclear codes.',
+          sources: [
+            {
+              title: 'Dyeing the Chicago River green is a St. Patrick\'s Day tradition',
+              publisher: 'NPR',
+              url: 'https://www.npr.org/2022/03/16/1086988193/st-patricks-day-green-chicago-river',
+            },
+            {
+              title: 'The History of Chicago River Dyeing',
+              publisher: 'Enjoy Illinois',
+              url: 'https://www.enjoyillinois.com/plan-your-trip/travel-inspiration/the-history-of-chicago-river-dyeing/',
+            },
+            {
+              title: 'WTTW News Explains: Why Does Chicago Dye the River Green for St. Patrick\'s Day?',
+              publisher: 'WTTW',
+              url: 'https://news.wttw.com/2024/03/11/wttw-news-explains-why-does-chicago-dye-river-green-st-patrick-s-day',
+            }
+          ],
+          location: {
+            name: 'Chicago River',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-18',
+          type: 'curiosity',
+          category: 'art',
+          title: 'Picasso refused to say what his famous Chicago sculpture depicts',
+          body: 'In 1967, Chicago unveiled a massive 50-foot steel sculpture by Pablo Picasso in Daley Plaza. Picasso never gave it a title or explained what it represents, and 60 years later, no one can agree on what it is. Popular theories: an aardvark, a bird, an Afghan hound (specifically his pet Kabul), one of his lovers, or a "cow sticking out its tongue." When unveiled, it caused outrage. One alderman demanded it be replaced with a statue of Cubs player Ernie Banks. The Tribune polled passersby who compared it to "a baboon" and "a flying nun." But Picasso held firm: no explanation. He donated the design to Chicago and refused the $100,000 commission. The city wanted an answer. Art critics wanted symbolism. Picasso wanted mystery. Today it\'s a beloved symbol of Chicago, and we still don\'t know what the hell it is. That might be the point.',
+          sources: [
+            {
+              title: 'Chicago Picasso',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Chicago_Picasso',
+            },
+            {
+              title: 'The story behind the controversial Picasso sculpture',
+              publisher: 'The Art Newspaper',
+              url: 'https://www.theartnewspaper.com/2017/08/07/the-story-behind-the-controversial-picasso-sculpture-that-became-a-symbol-of-chicago',
+            },
+            {
+              title: 'Picasso\'s Sacred Monster Eats Chicago: A Mystery Solved?',
+              publisher: 'Religion Dispatches',
+              url: 'https://religiondispatches.org/picassos-sacred-monster-eats-chicago-a-mystery-solved/',
+            }
+          ],
+          location: {
+            name: 'Daley Plaza',
+            coordinates: { lat: 41.8842, lng: -87.6298 },
+            stillExists: true,
+          },
         }
       ],
     },
@@ -1891,7 +1922,7 @@ export const chicago: CityData = {
           category: 'crime',
           year: '1893-1896',
           title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
-          body: 'During the 1893 World\'s Fair, Dr. H.H. Holmes lured victims to his custom-built "Murder Castle"—a hotel he personally designed with soundproof rooms, secret passages, gas chambers, a greased chute to the basement, and his own crematorium. Holmes confessed to 27 murders but the actual count was likely far higher. He targeted young women who came to Chicago for the fair, using charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools, because waste not, want not. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory.',
+          body: 'While the 1893 World\'s Fair showed off the best of civilization, H.H. Holmes was busy running its dark reflection just blocks away. He constructed a three-story "Murder Castle" at 63rd and Wallace specifically designed to process victims like livestock. The architecture was a weapon: staircases to nowhere, doors opening to brick walls, soundproof bedrooms with gas jets controlled from his office, and a greased chute leading directly to a basement crematorium. He preyed on the thousands of transient women flooding the city for the Fair, turning their anonymity into his cover.\n\nHolmes used charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools. "I was born with the devil in me," he later confessed. He claimed 27 victims; the real number is likely in the hundreds. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory. The Castle is gone, but the post office that stands there now feels famously cold.',
           verdict: 'Holmes was hanged in 1896. The true body count remains unknown. The lot sat empty for over a century.',
           images: [
             {
@@ -2466,6 +2497,56 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Multiple Chicago suburbs',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'chi-dark-9',
+          type: 'dark-history',
+          category: 'disaster',
+          year: '1915',
+          title: 'The SS Eastland: The Shipwreck That Killed More People Than the Titanic—At the Dock',
+          body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy.\n\nAs thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passersby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. Bodies were pulled from the water and laid out in rows along the wharf. The 2nd Regiment Armory became a makeshift morgue.\n\nMost victims were young Czech immigrants in their twenties. Entire families were wiped out. It remains the largest loss of life from a single shipwreck on the Great Lakes—a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
+          verdict: 'Investigation blamed poor design and negligent loading procedures. The ship\'s captain was charged with criminal negligence but acquitted. The Eastland was later salvaged, renamed, and used as a naval training vessel.',
+          images: [
+            {
+              src: '/chicago/curiosities/boat-disaster-1.png',
+              alt: 'Chicago River where the Eastland disaster occurred',
+            },
+            {
+              src: '/chicago/curiosities/boat-disaster-2.png',
+              alt: 'SS Eastland capsized on Chicago River',
+            }
+          ],
+          sources: [
+            {
+              type: 'website',
+              title: 'Eastland Disaster Historical Society',
+              publisher: 'Eastland Disaster Historical Society',
+              url: 'https://www.eastlanddisaster.org/',
+            },
+            {
+              type: 'book',
+              title: 'The Sinking of the Eastland: America\'s Forgotten Tragedy',
+              author: 'Jay Bonansinga',
+              year: '2004',
+            },
+            {
+              type: 'article',
+              title: 'The Eastland Disaster',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/eastland/',
+            },
+            {
+              type: 'article',
+              title: 'Eastland disaster',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/SS_Eastland',
+            }
+          ],
+          location: {
+            name: 'Chicago River at LaSalle Street',
+            coordinates: { lat: 41.8873, lng: -87.6322 },
             stillExists: true,
           },
         }

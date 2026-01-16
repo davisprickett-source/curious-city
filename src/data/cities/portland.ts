@@ -60,7 +60,7 @@ export const portland: CityData = {
       type: 'section',
       title: 'Keep it Weird Archive',
       teaser: 'The world\'s smallest park, the horse rings of the 19th century, and the city that refused to stay put',
-      intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in our curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
+      intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in the curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
       items: [
         {
           id: 'pdx-curiosity-4',
@@ -415,7 +415,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Powell\'s City of Books',
           category: 'Bookstore',
-          description: 'The world\'s largest independent bookstore, where "used" and "new" books cohabitate in a confusing, beautiful mess across 68,000 square feet. It’s an entire city block of color-coded rooms where people go to get lost and find themselves—or at least a first edition they can\'t afford.',
+          description: 'Walter Powell, a retired painting contractor, opened a used bookstore in 1971 after working a summer at his son Michael\'s Chicago shop. In 1979, Walter lost his lease; within a year, Michael joined him in Portland and they found the current location. It\'s 68,000 square feet—1.6 acres—of new and used books mixed together across nine color-coded rooms. Customers navigate with maps. The Gold Room has the rare books. Now run by Emily Powell, Michael\'s daughter. The world\'s largest independent bookstore, where people get lost on purpose.',
           images: [
             {
               src: '/portland/curiosities/powells-books-1.png',
@@ -434,7 +434,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Japanese Garden',
           category: 'Garden',
-          description: 'One of the most authentic Japanese gardens outside Japan, designed by Professor Takuma Tono. The walk up through Washington Park is part of the experience.',
+          description: 'Professor Takuma Tono designed this garden with five distinct styles spanning Japanese garden history—unusual, since most Japanese gardens follow a single tradition. Construction began in 1963, opened to the public in 1967. In 1988, Ambassador Matsunaga called it "the most beautiful and authentic Japanese garden in the world outside of Japan." The walk up through Washington Park earns the admission price before you even arrive.',
           images: [
             {
               src: '',
@@ -458,7 +458,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Forest Park',
           category: 'Nature',
-          description: 'Over 5,200 acres of urban forest with 80+ miles of trails. The Wildwood Trail stretches 30 miles through the park. You can be surrounded by old-growth Douglas firs within minutes of downtown.',
+          description: 'Over 5,200 acres of urban forest—one of the largest within U.S. city limits. The Wildwood Trail runs 30 miles through it. Old-growth Douglas firs tower over fern understory. You can be deep in the woods within 10 minutes of downtown gridlock, which makes Portland\'s property values and existential smugness slightly more defensible.',
           images: [
             {
               src: '/portland/curiosities/park-1.png',
@@ -476,7 +476,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Multnomah Falls',
           category: 'Nature',
-          description: 'A 620-foot waterfall about 30 minutes from downtown. Oregon\'s most-visited attraction for good reason. The bridge at the first level is iconic; the hike to the top is worth it.',
+          description: 'Oregon\'s tallest waterfall at 620 feet, 30 miles east of Portland. Over 2 million annual visitors make it the Pacific Northwest\'s most-visited natural site. The 1914 Benson Bridge—a 45-foot reinforced-concrete arch built by Simon Benson\'s Pacific Bridge Company—crosses 105 feet above the lower cascade. Lewis and Clark noted it in 1805. Benson developed the area in the 1920s with a lodge, pathways, and the iconic bridge. The hike to the top is 1.2 miles of switchbacks. Go early or accept the crowds.',
           images: [
             {
               src: '',
@@ -495,7 +495,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Lan Su Chinese Garden',
           category: 'Garden',
-          description: 'An authentic Suzhou-style garden built by Chinese artisans in Old Town Chinatown. The teahouse serves traditional Chinese tea with views of the garden.',
+          description: 'Sixty-five artisans from Suzhou lived in Portland for nine months in 1999-2000, building this Ming Dynasty-style garden by hand. They shipped 500 tons of stone and taihu rock from China. Cost $12.8 million. Opened September 14, 2000, as a sister-city project with Suzhou. The name means "Garden of Awakening Orchids." The teahouse serves traditional Chinese tea overlooking rockwork that took centuries to weather into the proper shapes.',
           images: [
             {
               src: '',
@@ -514,7 +514,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Mississippi Avenue',
           category: 'Neighborhood',
-          description: 'A vibrant and historic street in North Portland, known for its independent boutiques, diverse restaurants, lively bars, and thriving music scene. Less touristy than Alberta Street, but equally curated and embodying a quintessential Portland neighborhood vibe.',
+          description: 'A corridor that embodies Portland\'s gentrification better than any think piece ever could. Once a refuge for Black families displaced by 1948 flooding, this neighborhood saw its Black population drop from 60% in 1990 to under 10% by 2020. Now it\'s boutiques, coffee shops, and $8 toast. The independent businesses are genuinely good. The history is genuinely uncomfortable. Both things are true.',
           images: [
             {
               src: 'https://picsum.photos/seed/mississippi-avenue-portland/800/600', // Placeholder
@@ -533,7 +533,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Old Town Pizza & Shanghai Tunnels',
           category: 'Historic Site',
-          description: 'Explore the legendary Shanghai Tunnels beneath Old Town, with a tour starting from the historic Old Town Pizza. These tunnels are shrouded in myths of shanghaiing, connecting basements to the waterfront, and are considered one of America\'s Most Haunted Places.',
+          description: 'Portland\'s underground tunnel system connecting basements to the Willamette waterfront, allegedly used to kidnap drunk men and press them into naval service—"shanghaiing." How much is true? Unclear. Old Town Pizza operates above part of the network and offers tours. The tunnels existed for legitimate freight movement. The shanghaiing stories might be exaggerated folklore. Either way, the basement is legitimately creepy, the pizza is solid, and the ghost tour leans hard into the mythology.',
           images: [
             {
               src: 'https://picsum.photos/seed/shanghai-tunnels-portland/800/600', // Placeholder
@@ -552,7 +552,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Ota Tofu',
           category: 'Historic Establishment',
-          description: 'America\'s oldest tofu shop, opened 1911. A remarkable story of resilience and compassion, as the business was held for the co-owner\'s wife until her return from WWII internment.',
+          description: 'America\'s oldest tofu shop, opened 1911 by the Ota brothers from Okayama, Japan. During WWII, co-owner Saizo Ohta was sent to Minidoka internment camp in Idaho, where he died at 61 from hypertension complications. His landlord kept the equipment for his widow. Shina Ohta returned in summer 1945 and reopened the shop. It still makes tofu by hand daily, now run by the Ogata family. You can buy fresh blocks for $3-5 and pretend the century-old tragedy doesn\'t make the simplicity devastating.',
           images: [
             {
               src: '/portland/hidden-gems/ota-tofu.png',
@@ -571,7 +571,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'National Hat Museum',
           category: 'Specialty Museum',
-          description: 'The only hat museum in America, featuring over 2,300 hats dating back to the 1800s. Tours by appointment only, offering a unique glimpse into headwear history.',
+          description: 'The only dedicated hat museum in America, housed in the 1910 Ladd-Reingold House—originally owned by a Russian-trained milliner. Over 2,300 hats on display (thousands more in storage): vintage collections, men\'s fedoras, novelty pieces, international specimens, designer works by Otto Lucas and Lilly Dache. Started by Portland author Alyce Selby in 2005, now run by her friend LuAnn Trotebas. Book weeks ahead. The appointment-only model ensures you get a guided tour from someone who genuinely cares about crown construction and brim angles.',
           images: [
             {
               src: '/portland/hidden-gems/hat-museum.png',
@@ -590,7 +590,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Hippo Hardware',
           category: 'Salvage Store',
-          description: 'A massive three-floor salvage store filled with vintage fixtures from 1860-1960, including pieces from demolished Portland landmarks. Famous for its collection of hundreds of hippo figurines.',
+          description: 'A 30,000-square-foot temple to architectural salvage occupying the 1921 Cromwell Tailors building. Owners Steven Miller and Stephen Oppenheim dismantled 72 houses in a single summer. Light fixtures from the demolished Portland Hotel. Toilets from old City Hall. Doorknobs from the Central Library. And everywhere—hundreds of hippopotamus figurines, because why not. Chuck Palahniuk called it an icon. The exterior columns wear togas. It\'s the fancy junk store Portland deserves.',
           images: [
             {
               src: '/portland/hidden-gems/hippo.png',
@@ -602,14 +602,14 @@ export const portland: CityData = {
           hours: 'Wed-Sun 10am-5pm',
           price: 'Free to browse',
           website: 'https://www.hippohardware.com',
-          tip: 'Count how many hippos you can spot while browsing unique salvaged items.',
+          tip: 'Count how many hippos you can spot while browsing. The collection is extensive.',
         },
         {
           id: 'iconic-11',
           type: 'iconic-spot',
           name: 'Leach Botanical Garden',
           category: 'Botanical Garden',
-          description: 'A 17-acre botanical garden tucked away by Johnson Creek, featuring an aerial tree walk, four-season pollinator garden, and diverse plant collections. A serene escape often missed by those passing by.',
+          description: 'Botanist Lilla Leach and her pharmacist husband John bought 4 acres on Johnson Creek in 1932 and called it "Sleepy Hollow." Over nine summers exploring the Siskiyou Mountains, Lilla discovered five plant species unknown to western science—including Kalmiopsis leachiana, which grows only in serpentine soil and later convinced the Forest Service to create a wilderness area. She won the first Eloise Payne Luquer medal in 1950. The Leaches donated their 17-acre garden to Portland in 1980. Now it has an aerial tree walk and pollinator gardens, quietly excellent, far from downtown.',
           images: [
             {
               src: '/portland/hidden-gems/botanical-1.png',
@@ -676,7 +676,7 @@ export const portland: CityData = {
                       type: 'hidden-gem',
                       name: 'Freakybuttrue Peculiarium',
                       category: 'Unusual Museum',
-                      description: 'An offbeat emporium showcasing Bigfoot, paranormal exhibits, and alien autopsies. Many items, including sculptures and artwork, are for sale. It\'s a truly unique and bizarre experience.',
+                      description: 'Artists Mike Wellins and Lisa Freeman planned to open a food truck in 2010. They pivoted to cryptozoology instead. The Peculiarium opened April 2011 with a 10-foot Bigfoot, alien autopsy exhibits, and walls hung with thrift-store landscapes that Wellins "improved" by painting in zombies, space monsters, and giant robots—a technique he calls NERC (Non-Elective Retroactive Collaboration). Closed 17 months during the pandemic, reopened July 2021, still selling jetpack bunnies and machine gun Bigfoot art.',
                       images: [
                         {
                           src: '/portland/hidden-gems/peculiarium.png', // Placeholder image
@@ -707,7 +707,7 @@ export const portland: CityData = {
                               type: 'hidden-gem',
                               name: 'Witch\'s Castle (Stone House)',
                               category: 'Historic Landmark',
-                              description: 'A moss-covered stone structure in Forest Park, built in the 1930s by the WPA. While not a true castle, its secluded, dilapidated charm and local legends make it a popular hiking destination and a true hidden gem.',
+                              description: 'A moss-strangled stone ruin in Forest Park, built by the WPA in the 1930s as a ranger station or restroom (nobody quite agrees). Not remotely a castle. The locals call it haunted. Teenagers use it for selfies. The 0.8-mile hike from Lower Macleay Trail is gentle enough for out-of-shape goths.',
                               images: [
                                 {
                                   src: '/portland/hidden-gems/witchs-castle.png', // Placeholder image
@@ -737,7 +737,7 @@ export const portland: CityData = {
                               type: 'hidden-gem',
                               name: 'The Grotto (National Sanctuary of Our Sorrowful Mother)',
                               category: 'Spiritual/Nature',
-                              description: 'A 62-acre Roman Catholic outdoor sanctuary and botanical garden featuring a cave shrine, beautiful cliffside gardens, and stunning views of the Columbia River. A peaceful retreat often overlooked by tourists.',
+                              description: 'A 62-acre Catholic shrine where a cave carved into a cliff face opens onto botanical gardens perched 110 feet above street level. Nuns tend the grounds. Pilgrims light candles. Tourists wander through confused but respectful. The elevator to the upper gardens costs money; the lower grotto does not. The Columbia River views are legitimately stunning, which feels theologically appropriate.',
                               images: [
                                 {
                                   src: '/portland/hidden-gems/the-grotto.png', // Placeholder image
@@ -768,7 +768,7 @@ export const portland: CityData = {
                       type: 'hidden-gem',
                       name: 'Portland Puppet Museum',
                       category: 'Niche Museum',
-                      description: 'A small, independent museum dedicated to the art of puppetry from around the world. Features a diverse collection of puppets and offers workshops and performances. A charmingly unique cultural experience.',
+                      description: 'A warehouse converted into a shrine for global puppetry where marionettes dangle from rafters and shadow puppets share wall space with Indonesian wayang goleks. Run by volunteers who care deeply about string tension and cultural context. Workshops teach construction techniques. Performances happen in a 30-seat theater. The collection proves Portland will build a museum for literally anything if you\'re committed enough.',
                       images: [
                         {
                           src: '/portland/hidden-gems/puppet-museum.png', // Placeholder image
@@ -799,7 +799,7 @@ export const portland: CityData = {
                       type: 'hidden-gem',
                       name: 'Wyrd Leatherworks and Meadery',
                       category: 'Unique Experience/Food & Drink',
-                      description: 'A medieval fantasy-themed hall offering mead made with local honey, handcrafted leather goods, and a unique immersive atmosphere. Step into another world for a drink and browse artisan crafts.',
+                      description: 'Someone decided to combine a working leather shop with a mead hall and commit fully to the medieval LARP aesthetic. Local honey gets fermented into traditional mead while craftsmen hammer belts and armor at workbenches. The result is surprisingly coherent: half Skyrim tavern, half functioning business. Regulars arrive in cloaks. Nobody bats an eye. This is Portland—earnest nerdom gets respected here.',
                       images: [
                         {
                           src: '/portland/hidden-gems/wyrd-meadery.png', // Placeholder image
@@ -860,7 +860,7 @@ export const portland: CityData = {
           type: 'hidden-gem',
           name: 'Willamette Stone',
           category: 'Historic Monument',
-          description: 'The "Initial Point" for ALL land surveys in Oregon and Washington. Original red cedar stake placed June 4, 1851. Tucked away in dense West Hills forest on a narrow, easily-missed winding path off Skyline Boulevard. One of Oregon\'s most important historical landmarks that is also one of its least known.',
+          description: 'On June 4, 1851, Surveyor General John B. Preston hammered a red cedar stake into this hillside and declared it the origin point for every land survey in Oregon and Washington. Every property line, every section, every township—measured from this spot. The wooden stake became a stone obelisk in 1885. Vandals damaged it in 1951, 1967, and 1987. A stainless steel marker was installed in 1988. Now it sits in a tiny state park off Skyline Boulevard that most Portlanders drive past without knowing it anchors the entire regional grid system.',
           images: [
             {
               src: '/portland/hidden-gems/stone.png',
@@ -892,7 +892,7 @@ export const portland: CityData = {
           type: 'hidden-gem',
           name: 'Zymoglyphic Museum',
           category: 'Unusual Museum',
-          description: 'DIY museum over artist Jim Stewart\'s garage in Mt. Tabor presenting "relics of the Zymoglyphic age" - sculptures and dioramas of fictional creatures made from found objects like driftwood and skulls. By appointment only, truly grassroots.',
+          description: 'Artist Jim Stewart invented an entire geological epoch in 2000 and built a 400-square-foot museum above his garage to document it. "Zymoglyphic" means "images of fermentation" or "the solid residue of creative fermentation on natural objects," depending on whether Stewart is feeling poetic or specific. Driftwood becomes creatures. Skulls get mounted in Victorian taxidermy poses. Beach finds from his California childhood share space with his biology-teacher father\'s specimens. Maximum 6 visitors. Free admission. You email ahead. He shows you around. It\'s Mt. Tabor\'s most sincere fever dream.',
           images: [
             {
               src: '/portland/hidden-gems/museum.png',
@@ -975,7 +975,7 @@ export const portland: CityData = {
           type: 'hidden-gem',
           name: 'Rimsky-Korsakoffee House',
           category: 'Quirky Cafe',
-          description: 'No exterior sign, hidden by heavy foliage in unassuming 1902 Craftsman house. Operating since 1980, tables named after dead composers that are "haunted" - they rotate, vibrate, elevate, and tilt almost imperceptibly until your dessert is out of reach.',
+          description: 'A 1902 Craftsman house with no exterior sign, buried in foliage, operating since 1980 as a coffee shop where the furniture is possessed. Tables named after dead composers slowly rotate, vibrate, tilt, and elevate while you eat dessert. The mechanism is deliberate—motors and gears beneath each table—but the effect is unsettling. Your tiramisu drifts out of reach. Your coffee cup migrates clockwise. Open only evenings, Wednesday through Sunday. Cash only. Very Portland.',
           images: [
             {
               src: '/portland/hidden-gems/cafe-house-1.png',

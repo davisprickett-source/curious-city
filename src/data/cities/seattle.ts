@@ -121,23 +121,6 @@ export const seattle: CityData = {
           ],
         },
         {
-          id: 'curiosity-5',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Seattle\'s mayor tried to declare war on Japan (cities can\'t do that)',
-          body: 'In 1942, shortly after Pearl Harbor, Seattle Mayor Earl Millikin issued a proclamation declaring that Seattle was "at war with the Empire of Japan" and ordering all Japanese nationals to register with police. Cities can\'t declare war. Millikin knew this. He did it anyway.\n\nThe proclamation was symbolic and legally meaningless, but it captured the hysteria of the moment. Seattle had one of the largest Japanese-American populations on the West Coast — over 6,000 people. Japantown in the International District was thriving: businesses, temples, community centers. Within months, Executive Order 9066 forced the entire community into internment camps.\n\nWhen they returned years later, Japantown was gone. Businesses shuttered. Homes sold. The community scattered. What the war didn\'t destroy, Seattle\'s complicity did.\n\nThe story is mostly forgotten now. There\'s no plaque marking what happened. But it\'s a reminder that cities don\'t need legal authority to participate in atrocities — they just need fear and a willing mayor.',
-          sources: [
-            {
-              title: 'Densho: Seattle and Japanese Internment',
-              url: 'https://densho.org/',
-            }
-          ],
-          location: { name: 'International District', stillExists: true },
-          images: [
-            { src: '/seattle/curiosities/japanese-war.png', alt: 'Japanese internment in Seattle history' },
-          ],
-        },
-        {
           id: 'curiosity-6',
           type: 'curiosity',
           category: 'architecture',
@@ -183,22 +166,70 @@ export const seattle: CityData = {
           ],
         },
         {
-          id: 'curiosity-8',
+          id: 'curiosity-seafair-pirates',
           type: 'curiosity',
           category: 'culture',
-          title: 'A 53-foot Cold War rocket is "parked" on a building in Fremont',
-          body: 'On the corner of Evanston Avenue and North 35th Street, a massive 1950s-era military rocket fuselage is attached to the side of a building, complete with a nose cone that occasionally emits "smoke" (actually steam). The Fremont Rocket was salvaged from a nearby surplus yard in 1991 and erected as a monument to the neighborhood\'s eccentric spirit. It was originally built from surplus tail booms of a Fairchild C-119 transport plane, though local legend often describes it as a real nuclear missile. The rocket bears the Fremont crest and the neighborhood motto "De Libertas Quirkas"—Freedom to be Peculiar. It serves as a navigational landmark and a reminder that in the "Center of the Universe," even surplus military hardware can become a beloved community icon.',
-          sources: [
+          title: 'Armed pirates invade Seattle every summer and the city officially surrenders',
+          images: [
             {
-              title: 'HistoryLink: Fremont Rocket',
-              url: 'https://www.historylink.org/File/22533',
+              src: '/seattle/curiosities/seafair-pirates-1.png',
+              alt: 'Seafair Pirates landing at Alki Beach',
             },
             {
-              title: 'Atlas Obscura: The Fremont Rocket',
-              url: 'https://www.atlasobscura.com/places/fremont-rocket',
-            }
+              src: '/seattle/curiosities/seafair-pirates-2.png',
+              alt: 'Seafair Pirates invading downtown Seattle',
+            },
           ],
-          location: { name: 'Fremont Rocket', url: 'https://www.google.com/maps/place/Fremont+Rocket/@47.6506,-122.3511,17z', stillExists: true },
+          body: 'Every summer since 1950, the Seafair Pirates—a crew of costumed marauders—land at Alki Beach and launch a full-scale "invasion" of Seattle. Founded in 1949 by members of the Washington State Press Club, the Pirates stage a mock battle with King Neptune for control of the city. In the early years, they literally burned boats in Elliott Bay belonging to Neptune. The mayor officially "surrenders" the city. For weeks, the Pirates terrorize Seattle: crashing events, kidnapping local celebrities, storming businesses demanding tribute. They\'re not villains—they\'re a sanctioned gang the city embraces as summer tradition. Despite their bad-guy image, they visit hospitals and nursing homes year-round. The invasion kicks off Seafair, Seattle\'s month-long festival of parades, hydroplane races, and general civic chaos. It\'s organized piracy, bureaucratic mayhem, and somehow quintessentially Seattle.',
+          sources: [
+            {
+              title: '69 years of Seafair: How Seattle\'s summer festival got its start',
+              publisher: 'Seattle PI',
+              url: 'https://www.seattlepi.com/local/seattle-history/article/69-years-Seafair-Seattle-history-summer-festival-14119668.php',
+            },
+            {
+              title: 'Seafair Pirates',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Seafair_Pirates',
+            },
+          ],
+          location: {
+            name: 'Alki Beach (invasion site)',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-houseboats',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Lake Union houseboats went from criminal hideouts to a sovereign nation to million-dollar real estate',
+          images: [
+            {
+              src: '/seattle/curiosities/houseboats-1.png',
+              alt: 'Historic Lake Union houseboats',
+            },
+            {
+              src: '/seattle/curiosities/houseboats-tui-tui.png',
+              alt: 'Sovereign Nation of Tui Tui houseboat',
+            },
+          ],
+          body: 'In the early 1900s, Lake Union houseboats were floating slums for bootleggers, counterfeiters, prostitutes, and political radicals. Notorious criminal T.H. Dixon ran a coin counterfeiting operation from his houseboat. Under the carpets of older floating homes, you can still see Prohibition-era hiding spots where moonshine was stashed. The city wanted them gone. In the 1930s, there were 2,000 houseboats; by the 1970s, most were demolished or relocated. Then, in a legal battle over houseboat rights, one resident declared his home the "Sovereign Nation of Tui Tui of the Joyous Lake." Rulers Robby Rudine and Janet Yoder chose the name via I Ching divination the night before trial. The federal government does not recognize it. The nation persists anyway. Today, about 500 houseboats remain on Lake Union, now selling for millions. Seattle\'s floating criminal underworld became a sovereign nation, then became luxury real estate. Only the name Tui Tui remains defiant.',
+          sources: [
+            {
+              title: 'The mysterious story of the Sovereign Nation of Tui Tui',
+              publisher: 'KUOW',
+              url: 'https://www.kuow.org/stories/the-mysterious-seattle-houseboat-declared-the-sovereign-nation-of-tui-tui',
+            },
+            {
+              title: 'Seattle\'s Historic Houseboats',
+              publisher: 'HistoryLink',
+              url: 'https://www.historylink.org/File/9507',
+            },
+          ],
+          location: {
+            name: 'Lake Union',
+            stillExists: true,
+          },
         },
         {
           id: 'curiosity-9',
@@ -1453,6 +1484,46 @@ export const seattle: CityData = {
             { src: '/seattle/dark-history/avalanche-3.png', alt: 'Stevens Pass historic photo' },
           ],
         },
+        {
+          id: 'dark-7',
+          type: 'dark-history',
+          category: 'injustice',
+          year: '1942',
+          title: 'Seattle\'s Japanese community was forcibly removed to internment camps',
+          body: 'On February 19, 1942, following the attack on Pearl Harbor, President Roosevelt signed Executive Order 9066, authorizing the forced removal of 120,000 Japanese Americans from the West Coast. Seattle\'s Nihonmachi (Japantown) was emptied. Businesses, homes, and community institutions were lost. Families were sent to camps at Puyallup, Minidoka, and elsewhere. When they returned years later, Japantown was gone — replaced by other communities and commercial development.\n\nSeattle had one of the largest Japanese American populations on the West Coast. The forced removal devastated families who had built lives here for decades. Many lost everything — homes, businesses, savings. The internment was later recognized as a grave injustice, and in 1988, President Reagan signed the Civil Liberties Act apologizing and providing reparations to survivors.',
+          verdict: 'Legal injustice. The U.S. government formally apologized in 1988 via the Civil Liberties Act, providing reparations to surviving internees.',
+          location: {
+            name: 'Nihonmachi/Japantown (now International District)',
+            stillExists: false,
+            coordinates: { lat: 47.5986, lng: -122.3251 },
+          },
+          sources: [
+            {
+              type: 'website',
+              title: 'Densho: The Japanese American Legacy Project',
+              publisher: 'Densho',
+              url: 'https://densho.org/',
+            },
+            {
+              type: 'article',
+              title: 'Japanese American Internment',
+              publisher: 'HistoryLink',
+              url: 'https://www.historylink.org/file/7402',
+            },
+            {
+              type: 'article',
+              title: 'Executive Order 9066',
+              publisher: 'National Archives',
+              url: 'https://www.archives.gov/milestone-documents/executive-order-9066',
+            },
+            {
+              type: 'article',
+              title: 'Internment of Japanese Americans',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans',
+            }
+          ],
+        },
       ],
     },
     {
@@ -1620,18 +1691,6 @@ export const seattle: CityData = {
             name: 'Pioneer Square',
             coordinates: { lat: 47.6019, lng: -122.3328 },
             stillExists: true,
-          },
-        },
-        {
-          id: 'history-3',
-          type: 'history',
-          era: '1942',
-          title: 'Seattle\'s Japanese community was forcibly removed to internment camps',
-          body: 'On February 19, 1942, following the attack on Pearl Harbor, President Roosevelt signed Executive Order 9066, authorizing the forced removal of 120,000 Japanese Americans from the West Coast. Seattle\'s Nihonmachi (Japantown) was emptied. Businesses, homes, and community institutions were lost. Families were sent to camps at Puyallup, Minidoka, and elsewhere. When they returned years later, Japantown was gone — replaced by other communities and commercial development.',
-          source: 'Densho: The Japanese American Legacy Project',
-          location: {
-            name: 'Nihonmachi/Japantown (now International District)',
-            stillExists: false,
           },
         },
       ],

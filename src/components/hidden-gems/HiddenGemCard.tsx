@@ -190,7 +190,6 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
   const [isImageExpanded, setIsImageExpanded] = useState(false)
   const [expandedImageIndex, setExpandedImageIndex] = useState(0)
-  const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
   const images = gem.images || (gem.image ? [gem.image] : [])
 
   // Notify parent when in view
@@ -206,26 +205,25 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       variants={getCardVariants(index)}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
-      className="group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 relative h-[600px] flex flex-col lg:flex-row"
-      style={{ borderTopColor: categoryStyles.borderColor }}
+      className="group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 border-accent-600 relative h-[600px] flex flex-col lg:flex-row"
     >
       {/* Left Column - Image (35%) */}
       {images.length > 0 && (
         <div className="lg:w-[35%] flex-shrink-0 relative h-full">
           <ImageCarousel images={images} className="h-full w-full rounded-none" />
 
-          {/* Minimalistic Expand Button - No Background */}
+          {/* Minimalistic Expand Button - Thin Lines */}
           <button
             onClick={() => setIsImageExpanded(true)}
-            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 p-2 rounded-lg hover:bg-black/20"
+            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 hover:scale-110"
             aria-label="Expand image"
           >
             <svg
-              className="w-5 h-5 transition-transform hover:scale-125"
+              className="w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              strokeWidth={2}
+              strokeWidth={1.5}
             >
               <path
                 strokeLinecap="round"
@@ -238,8 +236,8 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       )}
 
       {/* Right Column - Content (65%) - Scrollable */}
-      <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-auto p-8 lg:p-10 scroll-smooth card-scrollbar">
+      <div className={`flex-1 flex flex-col ${!images.length ? 'lg:w-full' : ''}`}>
+        <div className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -312,18 +310,21 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
               />
             </motion.div>
 
-            {/* Minimalistic Close Button - No Background */}
-            <button
+            {/* Premium Close Button - Animated */}
+            <motion.button
               onClick={() => setIsImageExpanded(false)}
-              className="absolute top-4 right-4 text-white drop-shadow-lg transition-all duration-200 group z-10"
+              className="absolute top-4 right-4 text-white drop-shadow-lg z-10 group"
               aria-label="Close expanded image"
+              initial={{ rotate: 0, scale: 1 }}
+              whileHover={{ rotate: 90, scale: 1.1 }}
+              transition={{ duration: 0.2 }}
             >
               <svg
-                className="w-6 h-6 transition-transform group-hover:scale-125"
+                className="w-7 h-7"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
               >
                 <path
                   strokeLinecap="round"
@@ -331,7 +332,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </button>
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
