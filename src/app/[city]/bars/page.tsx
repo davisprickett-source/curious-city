@@ -5,10 +5,13 @@ import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 
-const DynamicScrollyMapView = dynamic(() => import('@/components/scrollytelling').then(mod => mod.ScrollyMapView), {
-  ssr: false,
-  loading: () => <div className="w-full h-screen bg-neutral-900 flex items-center justify-center text-neutral-500">Loading Map...</div>,
-})
+const DynamicScrollyMapView = dynamic(
+  () => import('@/components/scrollytelling/ScrollyMapView').then(mod => ({ default: mod.ScrollyMapView })),
+  {
+    ssr: false,
+    loading: () => <div className="w-full h-screen bg-neutral-900 flex items-center justify-center text-neutral-500">Loading Map...</div>,
+  }
+)
 import { getExploreLinks } from '@/lib/content/cityHomepage'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
