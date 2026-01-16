@@ -3,12 +3,7 @@ import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityLocalFavorites } from '@/data/cities'
 import { ShareLinks, ImageCarousel, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import dynamic from 'next/dynamic'
-
-const DynamicMapThumbnail = dynamic(() => import('@/components').then(mod => mod.MapThumbnail), {
-  ssr: false,
-  loading: () => <div className="w-full md:w-[280px] h-[180px] bg-neutral-200 flex items-center justify-center text-neutral-500">Loading Map...</div>, // Optional loading state
-})
+import { ClientMapThumbnail as DynamicMapThumbnail } from '@/components/ClientMapThumbnail'
 
 interface PageProps {
   params: Promise<{ city: string }>

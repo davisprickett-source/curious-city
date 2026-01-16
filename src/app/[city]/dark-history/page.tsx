@@ -1,27 +1,11 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityDarkHistory, getCityDarkHistorySection } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
-
-// Dynamically import heavy scroll component
-const DarkHistoryScroll = dynamic(
-  () => import('@/components/DarkHistoryScroll').then(mod => ({ default: mod.DarkHistoryScroll })),
-  {
-    loading: () => (
-      <div className="container-page py-20">
-        <div className="text-center">
-          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-neutral-900 border-r-transparent"></div>
-          <p className="mt-4 text-neutral-500">Loading...</p>
-        </div>
-      </div>
-    ),
-    ssr: false, // Client-only component with animations
-  }
-)
+import { ClientDarkHistoryScroll as DarkHistoryScroll } from '@/components/ClientDarkHistoryScroll'
 
 interface PageProps {
   params: Promise<{ city: string }>

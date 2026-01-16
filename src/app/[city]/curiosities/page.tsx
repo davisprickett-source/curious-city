@@ -1,27 +1,11 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
-
-// Dynamically import heavy scroll component
-const CuriositiesScroll = dynamic(
-  () => import('@/components/CuriositiesScroll'),
-  {
-    loading: () => (
-      <div className="container-page py-20">
-        <div className="text-center">
-          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-neutral-900 border-r-transparent"></div>
-          <p className="mt-4 text-neutral-500">Loading...</p>
-        </div>
-      </div>
-    ),
-    ssr: false, // Client-only component with animations
-  }
-)
+import { ClientCuriositiesScroll as CuriositiesScroll } from '@/components/ClientCuriositiesScroll'
 
 interface PageProps {
   params: Promise<{ city: string }>
