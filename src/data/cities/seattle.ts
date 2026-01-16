@@ -172,6 +172,14 @@ export const seattle: CityData = {
           title: 'Armed pirates invade Seattle every summer and the city officially surrenders',
           images: [
             {
+              src: '/seattle/curiosities/seattle-curious-pirates-1.png',
+              alt: 'Seattle pirates',
+            },
+            {
+              src: '/seattle/curiosities/seattle-curious-pirates-2.png',
+              alt: 'Seattle pirates',
+            },
+            {
               src: '/seattle/curiosities/seafair-pirates-1.png',
               alt: 'Seafair Pirates landing at Alki Beach',
             },
@@ -204,6 +212,14 @@ export const seattle: CityData = {
           category: 'culture',
           title: 'Lake Union houseboats went from criminal hideouts to a sovereign nation to million-dollar real estate',
           images: [
+            {
+              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-1.png',
+              alt: 'Lake Union houseboats',
+            },
+            {
+              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-2.png',
+              alt: 'Lake Union houseboats',
+            },
             {
               src: '/seattle/curiosities/houseboats-1.png',
               alt: 'Historic Lake Union houseboats',

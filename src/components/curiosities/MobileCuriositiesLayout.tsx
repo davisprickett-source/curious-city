@@ -136,7 +136,7 @@ function CuriositySection({ item, index, onSectionInView, url, title }: { item: 
 
   if (prefersReducedMotion) {
     return (
-      <section ref={inViewRef} className="min-h-[70vh] flex items-center py-16 px-4 bg-gradient-to-br from-white via-neutral-50/30 to-white">
+      <section id={item.id} ref={inViewRef} className="min-h-[70vh] flex items-center py-16 px-4 bg-gradient-to-br from-white via-neutral-50/30 to-white">
         <div className="max-w-5xl mx-auto w-full">
           <div className="flex flex-col gap-8">
             {/* Content */}
@@ -276,6 +276,7 @@ function CuriositySection({ item, index, onSectionInView, url, title }: { item: 
   // Animated version
   return (
     <motion.section
+      id={item.id}
       ref={inViewRef}
       className="min-h-[70vh] flex items-center py-16 px-4 bg-gradient-to-br from-white via-neutral-50/30 to-white"
       initial="hidden"

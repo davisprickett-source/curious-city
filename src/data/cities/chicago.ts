@@ -422,6 +422,7 @@ export const chicago: CityData = {
           category: 'infrastructure',
           title: 'Chicago has 5 miles of secret underground tunnels nobody planned',
           body: 'Chicago has a 5-mile underground pedestrian network called the Pedway connecting over 50 buildings across downtown. It started in 1951 when the city built one-block tunnels connecting subway lines. Then it just kept growing. The weird part? It was never centrally planned. New segments were added through individual building projects, creating a labyrinth that mirrors the changing priorities of the city itself. It\'s neither discretely administered nor logically organized. Today it includes shops, restaurants, and bursts of unexpected art. Most tourists never find it. Most Chicagoans navigate it by pure instinct. It\'s the ultimate infrastructure accident—a city beneath the city that nobody designed and everyone uses.',
+          images: ['/chicago/curiosities/chicago-curious-pedway.png'],
           sources: [
             {
               title: 'The Chicago Pedway',
@@ -450,6 +451,7 @@ export const chicago: CityData = {
           category: 'culture',
           title: 'Chicago dyes its river green with a secret formula guarded by plumbers',
           body: 'Every St. Patrick\'s Day since 1962, Chicago turns its river neon green using a secret formula known only to the Chicago Plumbers Union. The tradition started in 1961 when Stephen Bailey, business manager of the Journeymen Plumbers Local 130, noticed emerald green stains on a plumber\'s overalls. The stains came from a dye used to detect leaks. Bailey, who also happened to be the city\'s St. Patrick\'s Day parade chairman, had an idea. The first attempt in 1962 used 100 pounds of dye and kept the river green for a week. Today they\'ve perfected it: 40 pounds of an orange powder (the formula is still secret) spread by two motorboats over two hours. The river stays green for about five hours. The plumbers union still pays for it and guards the recipe like nuclear codes.',
+          images: ['/chicago/curiosities/chicago-curious-green-river-1.png', '/chicago/curiosities/chicago-curious-green-river-2.png'],
           sources: [
             {
               title: 'Dyeing the Chicago River green is a St. Patrick\'s Day tradition',
@@ -478,6 +480,7 @@ export const chicago: CityData = {
           category: 'art',
           title: 'Picasso refused to say what his famous Chicago sculpture depicts',
           body: 'In 1967, Chicago unveiled a massive 50-foot steel sculpture by Pablo Picasso in Daley Plaza. Picasso never gave it a title or explained what it represents, and 60 years later, no one can agree on what it is. Popular theories: an aardvark, a bird, an Afghan hound (specifically his pet Kabul), one of his lovers, or a "cow sticking out its tongue." When unveiled, it caused outrage. One alderman demanded it be replaced with a statue of Cubs player Ernie Banks. The Tribune polled passersby who compared it to "a baboon" and "a flying nun." But Picasso held firm: no explanation. He donated the design to Chicago and refused the $100,000 commission. The city wanted an answer. Art critics wanted symbolism. Picasso wanted mystery. Today it\'s a beloved symbol of Chicago, and we still don\'t know what the hell it is. That might be the point.',
+          images: ['/chicago/curiosities/chicago-curious-picasso.png'],
           sources: [
             {
               title: 'Chicago Picasso',

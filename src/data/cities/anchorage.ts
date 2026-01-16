@@ -133,6 +133,16 @@ export const anchorage: CityData = {
           category: 'culture',
           title: 'Anchorage hosts outhouse races where teams push toilet-riding coworkers down snowy streets',
           body: 'Every February since 1935, Fur Rendezvous—Alaska\'s oldest winter festival—transforms downtown Anchorage into competitive chaos. The crown jewel? The Outhouse Races. Teams build elaborate outhouses mounted on skis, strap a teammate inside (sitting on the throne, naturally), and race them through obstacle courses in the snow. Corporate teams, professional groups, and local businesses compete with outhouse designs ranging from tasteful to aggressively vulgar. The winner gets bragging rights and a trophy shaped like...you guessed it. In 2012, National Geographic named Fur Rondy the #1 winter carnival in the world, and the outhouse races are a big reason why. Only in Alaska can you watch accountants push their boss down Fourth Avenue while he\'s sitting on a toilet.',
+          images: [
+            {
+              src: '/anchorage/curiosities/anchorage-curious-outhouse-race-1.png',
+              alt: 'Outhouse race during Fur Rendezvous festival',
+            },
+            {
+              src: '/anchorage/curiosities/anchorage-curious-outhouse-race-2.png',
+              alt: 'Teams racing outhouses down snowy streets',
+            },
+          ],
           sources: [
             {
               title: 'History of Fur Rendezvous',
@@ -161,6 +171,20 @@ export const anchorage: CityData = {
           category: 'nature',
           title: 'Alaska produces the world\'s most expensive fabric—combed from musk ox butts',
           body: 'Qiviut (pronounced "kiv-ee-ute") is the ultra-fine underwool shed by musk oxen each spring. It\'s eight times warmer than sheep wool, softer than cashmere, hypoallergenic, and absurdly expensive: $100 per ounce of yarn, $1.2 per gram of raw fiber. Why? Each 1,000-pound musk ox produces only 4-8 pounds of qiviut annually. Foragers literally comb it from where the animals rub against rocks and shrubs. The Oomingmak Musk Ox Producers\' Co-Operative in Anchorage, run by 250 Native Alaskan women from remote coastal villages, hand-knits qiviut into scarves, hats, and sweaters. A scarf can cost $300. Tourists buy them anyway, because when winter hits -40°F, luxury becomes survival. The Inupiat word "oomingmak" means "bearded one"—a perfect name for the animal producing the golden fleece of the Arctic.',
+          images: [
+            {
+              src: '/anchorage/curiosities/anchorage-curious-ox-yarn-1.png',
+              alt: 'Qiviut musk ox wool yarn',
+            },
+            {
+              src: '/anchorage/curiosities/anchorage-curious-ox-yarn-2.png',
+              alt: 'Soft qiviut fiber from musk oxen',
+            },
+            {
+              src: '/anchorage/curiosities/anchorage-curious-ox-yarn-3.png',
+              alt: 'Hand-knitted qiviut products',
+            },
+          ],
           sources: [
             {
               title: 'Qiviut',
@@ -316,6 +340,12 @@ export const anchorage: CityData = {
           category: 'history',
           title: 'Alaska voted twice to move the capital here—then refused to pay for it',
           body: 'Juneau, Alaska\'s capital, is inaccessible by road. You can only reach it by plane or boat. For legislators from Anchorage, Fairbanks, or anywhere else, getting to work means flying 571 miles over glaciers and mountains. It\'s absurd. In 1974, voters approved moving the capital to somewhere near Anchorage. In 1976, they picked Willow—a tiny community 70 miles north—as the site for a brand new capital city. Plans were drawn. Land was surveyed. Politicians got excited. Then in 1982, voters rejected the $2.8 billion price tag. The project died. In 1994, they tried again, proposing to move it to Wasilla. Voters rejected it again. Alaskans wanted a practical, road-accessible capital—they just didn\'t want to pay for it. So Juneau remains the capital: beautiful, isolated, and inexplicable. State employees fly in for sessions. Lobbyists expense their flights. And Alaska\'s government operates from a city most Alaskans will never drive to, because fiscal conservatism beat out logic and geography.',
+          images: [
+            {
+              src: '/anchorage/curiosities/anchorage-curious-capital.png',
+              alt: 'Alaska capital move referendum history',
+            },
+          ],
           source: 'Alaska State Legislature',
         },
       ],

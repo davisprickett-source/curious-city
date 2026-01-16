@@ -522,6 +522,12 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'Sulphur Springs Water Tower',
           category: 'Abandoned & Lost',
+          images: [
+            {
+              src: '/tampa/hidden-gems/tampa-hidden-water-tower.png',
+              alt: 'Sulphur Springs Water Tower',
+            },
+          ],
           description: 'Rising 214 feet above North Tampa, this abandoned water tower and arcade complex is a monument to dreams that didn\'t quite pan out. In the 1920s, Sulphur Springs was marketed as Tampa\'s premier health resort — visitors came from across the country to bathe in mineral springs advertised as having miraculous healing properties. The tower, built in 1927, housed a swimming pool, arcade, and observation deck. The Art Deco structure was designed by architect Francis J. Kennard and featured a distinctive octagonal shape that made it a local landmark. At its peak, the complex drew thousands of visitors who believed the sulfurous water could cure everything from rheumatism to skin diseases. The springs are still there — you can smell the sulfur — but the tower has been empty since the 1980s. The pool is drained, windows are broken, and vegetation creeps up the sides. Every few years, developers announce grand plans to renovate it into condos, a restaurant, or a museum. Nothing ever happens. The city of Tampa owns it now, and it sits fenced off, slowly deteriorating. Locals have mixed feelings: some see it as a tragic waste, others as a beautiful ruin best left alone.',
           location: 'Sulphur Springs',
           address: '1000 E River Cove St, Tampa, FL 33604',
@@ -639,6 +645,12 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'The Jose Martí Statue\'s Hidden Door',
           category: 'Quirky Architecture',
+          images: [
+            {
+              src: '/tampa/hidden-gems/tampa-hidden-statue-door.png',
+              alt: 'Jose Martí Statue\'s Hidden Door',
+            },
+          ],
           description: 'Standing in José Martí Park at the heart of Ybor City, the bronze statue of Cuba\'s national hero conceals a secret that most visitors never discover: a small hidden door at its base that opens to reveal a time capsule placed in 1956. The statue was dedicated on May 20, 1956, commemorating the 54th anniversary of Cuban independence, and the capsule was sealed inside containing documents, photographs, and artifacts from Tampa\'s Cuban immigrant community. But the statue\'s most remarkable feature isn\'t the capsule—it\'s where it stands. The park itself, at 1302 E 8th Avenue, was officially deeded to the Republic of Cuba in 1956 and remains sovereign Cuban territory to this day, making it one of the only pieces of foreign sovereign soil in the United States outside of embassy grounds. Fidel Castro gave a speech here in 1955 while raising funds for the revolution that would overthrow Batista. The statue depicts Martí—poet, journalist, and revolutionary who died fighting for Cuban independence in 1895—in heroic stance, his words inscribed on the pedestal. The park hosts annual gatherings on Cuban holidays, and the statue remains a gathering place for Tampa\'s Cuban-American community. Few visitors realize they\'re technically standing on Cuban soil. Fewer still know about the door.',
           location: 'Ybor City',
           address: '1302 E 8th Ave, Tampa, FL 33605',

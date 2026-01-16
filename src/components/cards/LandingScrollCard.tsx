@@ -43,7 +43,7 @@ const defaultGradient = {
   fallback: 'from-neutral-700 to-neutral-900',
 }
 
-// Type labels for display
+// Type labels for display (note: these are no longer displayed on cards)
 const typeLabels: Record<string, string> = {
   'dark-history': 'Dark History',
   'curiosities': 'Curiosity',
@@ -99,14 +99,10 @@ export function LandingScrollCard({ data, index = 0 }: LandingScrollCardProps) {
 
           {/* Content */}
           <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[280px] md:min-h-[300px] xl:min-h-[320px]">
-            {/* City + Type badges */}
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">
+            {/* City name */}
+            <div className="mb-3">
+              <span className="text-base md:text-lg font-bold text-white uppercase tracking-wide">
                 {data.cityName}
-              </span>
-              <span className="text-white/40">·</span>
-              <span className="text-xs font-medium text-white/70 uppercase tracking-wider">
-                {typeLabel}
               </span>
             </div>
 

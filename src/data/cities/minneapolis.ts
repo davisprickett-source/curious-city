@@ -829,6 +829,10 @@ export const minneapolis: CityData = {
           title: 'Two bars have been fighting for 70 years over who invented the Jucy Lucy—and how to spell it',
           images: [
             {
+              src: '/minneapolis/curiosities/minn-cur-jucy-lucy.png',
+              alt: 'Jucy Lucy burger with molten cheese core',
+            },
+            {
               src: '/minneapolis/curiosities/jucy-lucy-1.png',
               alt: 'Jucy Lucy burger with molten cheese core',
             },
@@ -860,10 +864,16 @@ export const minneapolis: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'Streets in Northeast are named after presidents in order—to help immigrants pass citizenship tests',
-          image: {
-            src: '/minneapolis/curiosities/presidential-streets.png',
-            alt: 'Northeast Minneapolis street signs showing presidential names in order',
-          },
+          images: [
+            {
+              src: '/minneapolis/curiosities/min-cur-street-names.png',
+              alt: 'Northeast Minneapolis street signs showing presidential names in order',
+            },
+            {
+              src: '/minneapolis/curiosities/presidential-streets.png',
+              alt: 'Northeast Minneapolis street signs showing presidential names in order',
+            },
+          ],
           body: 'Walk through Northeast Minneapolis and you\'ll notice something deliberate: the streets are named after U.S. presidents in the exact order they served. Washington, Adams, Jefferson, Madison, Monroe, Jackson—it continues through the entire sequence. This wasn\'t civic pride or patriotic decoration. It was infrastructure designed for education. In the early 1900s, Northeast was heavily populated by European immigrants—Poles, Germans, Scandinavians—working in the lumber mills and factories. Learning the presidents in order was required for the citizenship test. City planners decided to turn the neighborhood itself into a study guide. Every day, walking to work or school, immigrants would reinforce the sequence. It was urban planning as pedagogy. The streets remain a quiet reminder of a city that built learning into its geography.',
           sources: [
             {
@@ -1220,7 +1230,7 @@ export const minneapolis: CityData = {
           type: 'iconic-spot',
           name: 'Mall of America',
           category: 'Entertainment',
-          description: 'It’s not just a mall; it’s a small city. With 5.6 million square feet of retail space, an indoor theme park, an aquarium, and enough roller coasters to make a stomach churn, the Mall of America is the largest shopping mall in the United States. It sits on the former site of the Metropolitan Stadium, home to the Minnesota Twins and Vikings, a fact often lost on the 40 million annual visitors. Locals pretend to hate it, but secretly marvel at its sheer, audacious scale. It’s a testament to American excess, a climate-controlled cathedral of commerce where you can buy a new wardrobe, ride a rollercoaster, and get married, all without ever seeing the sky. Go for the absurdity, stay for the people-watching (and maybe a ride on the Ferris wheel).',
+          description: 'Metropolitan Stadium was home to the Twins and Vikings for 21 seasons, 1961-1981. When both teams moved to the Metrodome in January 1982, the stadium sat abandoned. Demolition began January 28, 1985. Opened August 11, 1992. A brass home plate marker embedded in the floor in the northwest corner of Nickelodeon Universe marks where home plate once sat. One seat from Met Stadium was placed at the exact location it occupied in the stadium—commemorating Harmon Killebrew\'s 520-foot home run on June 3, 1967. Seven Yankee Stadiums would fit inside. 5.6 million square feet of total space. 2.87 million square feet of retail. Over 500 stores. Indoor theme park. Aquarium. Largest shopping mall in the United States. 40 million annual visitors. Locals pretend to hate it, but secretly marvel at its sheer, audacious scale. A climate-controlled cathedral of commerce where you can buy a new wardrobe, ride a rollercoaster, and get married, all without ever seeing the sky.',
           images: [
             {
               src: '/minneapolis/hidden-gems/mall-of-america.png',
@@ -1264,7 +1274,7 @@ export const minneapolis: CityData = {
           type: 'iconic-spot',
           name: 'Minnesota History Center',
           category: 'Museum',
-          description: 'Better than you\'d expect. Current Charles Schulz exhibit, excellent WWII display, and interactive Minnesota history. Near the State Capitol and Science Museum.',
+          description: 'Opened October 1992 after ten years of planning and nearly three years of construction. Minneapolis firm Hammel Green and Abrahamson (HGA) designed the building—central dome with two bordering wings forming an L-shape. 427,000 square feet total. More than half the building is underground, used for storage. Houses over 1 million artifacts: archaeological objects, books, photographs, maps, paintings, manuscripts, government records, newspapers. 44,000 square feet of museum gallery space. 100,000 square feet of storage space. Better than you\'d expect. Current Charles Schulz exhibit, excellent WWII display, and interactive Minnesota history. Hosts concerts, lectures, family days, special events throughout the year.',
           images: [
             {
               src: '/minneapolis/hidden-gems/history-center-1.png',
@@ -1287,7 +1297,7 @@ export const minneapolis: CityData = {
           type: 'iconic-spot',
           name: 'Fort Snelling State Park',
           category: 'Nature',
-          description: 'Where the Mississippi and Minnesota rivers meet — a confluence sacred to the Dakota people. Hiking trails, river views, and the historic fort on the bluffs above.',
+          description: 'The Dakota people have called this land home for centuries. They call this place Bdote—"where two waters come together." Some oral traditions refer to it as the origin place of the first Dakota people. In 1805, Zebulon Pike convinced two Dakota leaders to sign an agreement ceding land at the confluence to the U.S. government. The document wasn\'t an authorized treaty. Legal scholars, historians, and the Dakota have long questioned its validity. Lieutenant Colonel Henry Leavenworth commanded the expedition of 5th Infantry that built the initial outpost in 1819. September 10, 1820, Colonel Josiah Snelling began construction. Initially named Fort Saint Anthony, renamed Fort Snelling when completed in 1825. Now a National Historic Landmark. Hiking trails, river views, and the historic fort on the bluffs above.',
           images: [
             {
               src: '/minneapolis/hidden-gems/fort.png',
@@ -1344,7 +1354,7 @@ export const minneapolis: CityData = {
           type: 'iconic-spot',
           name: 'First Avenue',
           category: 'Music Venue',
-          description: 'The legendary nightclub where Prince filmed "Purple Rain" and launched his career. That exterior — black walls covered in white stars bearing the names of artists who\'ve played here — is one of the most iconic images in rock history. Prince. The Replacements. Hüsker Dü. Atmosphere. Every band that mattered to Minneapolis started or passed through these doors. The main room still hosts touring acts and local legends. The adjacent 7th Street Entry is where careers begin.',
+          description: 'Opened as a Greyhound bus depot in 1937—noted for Art Deco style. After the bus depot relocated in 1968, Allan Fingerhut opened it as a rock club in 1970, investing $150,000 to create downtown Minneapolis\'s only venue with both rock music and alcohol. August 3, 1983, Prince and the Revolution played a 45-minute benefit gig. "Purple Rain" was recorded live that month with a Record Plant truck parked outside. Late November-December 1983, Prince\'s management paid $100,000 to use the mainroom for filming "Purple Rain." Most club employees were extras in the film. That exterior—black walls covered in white stars bearing the names of artists who\'ve played here—is one of the most iconic images in rock history. Prince. The Replacements. Hüsker Dü. Atmosphere. Every band that mattered to Minneapolis started or passed through these doors.',
           images: [
             {
               src: '/minneapolis/iconic/first-avenue.png',

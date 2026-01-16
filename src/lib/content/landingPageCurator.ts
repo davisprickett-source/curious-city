@@ -180,7 +180,7 @@ async function curateTopCuriosities(count: number = 3): Promise<PageCardData[]> 
         cityName: city.name,
         title: entry.title,
         teaser,
-        href: `/${city.slug}/curiosities`,
+        href: `/${city.slug}/curiosities#${entry.id}`,
         thumbnail,
       })
     }
@@ -218,7 +218,7 @@ async function curateTopDarkHistory(count: number = 3): Promise<PageCardData[]> 
         cityName: city.name,
         title: entry.title,
         teaser,
-        href: `/${city.slug}/dark-history`,
+        href: `/${city.slug}/dark-history#${entry.id}`,
         thumbnail,
       })
     }
@@ -256,7 +256,7 @@ async function curateTopHiddenGems(count: number = 3): Promise<PageCardData[]> {
         cityName: city.name,
         title: entry.title || entry.name,
         teaser,
-        href: `/${city.slug}/hidden-gems`,
+        href: `/${city.slug}/hidden-gems#${entry.id}`,
         thumbnail,
       })
     }
@@ -295,7 +295,7 @@ async function curateTopLostAndLoved(count: number = 3): Promise<PageCardData[]>
         cityName: city.name,
         title: entry.title || entry.name,
         teaser,
-        href: `/${city.slug}/lost-and-loved`,
+        href: `/${city.slug}/lost-and-loved#${entry.id}`,
         thumbnail,
       })
     }
@@ -350,17 +350,17 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   // Combined hero slides
   const heroSlides = [...premiumEssays, ...specificSlides].slice(0, 6)
 
-  // Dark Stories: Top 3 actual dark history entries from diverse cities
-  const darkStories = await curateTopDarkHistory(3)
+  // Dark Stories: Top dark history entries from diverse cities (2-3 per city)
+  const darkStories = await curateTopDarkHistory(18)
 
-  // Curiosities: Top 3 actual curiosity entries from diverse cities
-  const curiosities = await curateTopCuriosities(3)
+  // Curiosities: Top curiosity entries from diverse cities (2-3 per city)
+  const curiosities = await curateTopCuriosities(18)
 
-  // Hidden Gems: Top 3 actual hidden gem entries from diverse cities
-  const discoveries = await curateTopHiddenGems(3)
+  // Hidden Gems: Top hidden gem entries from diverse cities (2-3 per city)
+  const discoveries = await curateTopHiddenGems(18)
 
-  // Lost Landmarks: Top 3 actual lost & loved entries from diverse cities
-  const lostLandmarks = await curateTopLostAndLoved(3)
+  // Lost Landmarks: Top lost & loved entries from diverse cities (2-3 per city)
+  const lostLandmarks = await curateTopLostAndLoved(18)
 
   // More Stories: Everything else, sorted by diversity and recency
   const featured = new Set([

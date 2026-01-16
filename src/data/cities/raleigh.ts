@@ -236,10 +236,16 @@ export const raleigh: CityData = {
                                   title: 'The world\'s first column-free roof was built here—for cattle shows',
                                   body: 'In 1952, when the North Carolina State Fair needed a new livestock pavilion, they didn\'t just get a barn; they got an architectural revolution. The J.S. Dorton Arena, designed by Polish-born architect Matthew Nowicki, featured the world\'s first column-free suspended roof. Two massive, intersecting parabolic arches support a saddle-shaped concrete roof that spans 300 feet without a single interior column, creating an uninterrupted space for livestock and spectators. The engineering was so audacious that contractors initially refused to build it. Nowicki tragically died in a plane crash before seeing his masterpiece completed. Today, every domed stadium, every convention center, every cable-stayed arena in the world owes a debt to this building, designed to host cattle shows and 4-H competitions. The American Institute of Architects calls it one of the most significant buildings in American history. And twice a year, during the state fair, thousands walk past it to get funnel cakes, completely unaware they\'re standing next to a genuine architectural marvel.',
                                   year: '1952',
-                                  image: {
-                                    src: '/raleigh/curiosities/dorton-arena.png',
-                                    alt: 'Dorton Arena architecture',
-                                  },
+                                  images: [
+                                    {
+                                      src: '/raleigh/curiosities/raleigh-cur-state-fiar.png',
+                                      alt: 'NC State Fair',
+                                    },
+                                    {
+                                      src: '/raleigh/curiosities/dorton-arena.png',
+                                      alt: 'Dorton Arena architecture',
+                                    },
+                                  ],
                                   source: 'NC State Fair',
                                   location: { name: 'NC State Fairgrounds', stillExists: true },
                                 },
@@ -457,11 +463,17 @@ export const raleigh: CityData = {
                                   title: 'Stealing kitchen grease is a felony here',
                                   body: 'Under North Carolina General Statute § 14-79.2, stealing or tampering with used kitchen grease can make you a felon. The law, enacted in 2013 in response to a rising black market problem, prohibits taking waste grease containers or their contents, intentionally contaminating them, or placing false ownership labels on containers you don\'t own. If the value of the grease or container exceeds $1,000, you\'re facing a Class H felony—carrying up to 39 months in prison. The law exists because waste kitchen grease has become surprisingly valuable: it\'s processed into renewable diesel fuel and other biodiesel products. Grease thieves have become a genuine problem for restaurants across the country, siphoning containers in the dead of night to sell to recyclers. In Raleigh—where research at Research Triangle Park helped pioneer biodiesel technology—stealing the byproduct of last night\'s fried chicken can land you in prison for over three years. The irony is perfect: the city that invented the barcode also criminalized grease theft. Late-stage capitalism protects its inputs.',
                                   year: '2013',
-                                  image: {
-                                    src: '/raleigh/curiosities/grease.png',
-                                    alt: 'Restaurant grease collection container',
-                                    credit: 'Photo',
-                                  },
+                                  images: [
+                                    {
+                                      src: '/raleigh/curiosities/raleigh-cur-grease.png',
+                                      alt: 'Restaurant grease collection container',
+                                    },
+                                    {
+                                      src: '/raleigh/curiosities/grease.png',
+                                      alt: 'Restaurant grease collection container',
+                                      credit: 'Photo',
+                                    },
+                                  ],
                                   sources: [
                                     {
                                       title: 'Don\'t Steal Your Neighborhood Restaurant\'s Kitchen Grease',
@@ -655,6 +667,14 @@ export const raleigh: CityData = {
           accessibility: 'Short walk from parking; some uneven terrain near waterfall',
           images: [
             {
+              src: '/raleigh/hidden-gems/raleigh-hidden-lassiter-1.png',
+              alt: 'Lassiter Mill waterfall cascading over historic dam',
+            },
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-lassiter-2.png',
+              alt: 'Lassiter Mill waterfall cascading over historic dam',
+            },
+            {
               src: '/raleigh/hidden-gems/lassiter-1.png',
               alt: 'Lassiter Mill waterfall cascading over historic dam',
             },
@@ -679,6 +699,10 @@ export const raleigh: CityData = {
           tip: 'Combine with Howling Cow ice cream (NC State dairy) just up Lake Wheeler Rd. Corn grinding demos on third weekends.',
           accessibility: 'Visitor center accessible; mill has stairs',
           images: [
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-yates.png',
+              alt: 'Historic Yates Mill on the millpond',
+            },
             {
               src: '/raleigh/hidden-gems/yates-mill-1.png',
               alt: 'Historic Yates Mill on the millpond',
@@ -718,6 +742,14 @@ export const raleigh: CityData = {
           tip: 'Peak bloom is late March through May. The gardens are behind the TV station — look for signs.',
           accessibility: 'Paved pathways; mostly accessible',
           images: [
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-azalea-1.png',
+              alt: 'WRAL Azalea Gardens in bloom',
+            },
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-azalea-2.png',
+              alt: 'WRAL Azalea Gardens in bloom',
+            },
             {
               src: '/raleigh/hidden-gems/wral-azalea-1.png',
               alt: 'WRAL Azalea Gardens in bloom',
@@ -780,6 +812,14 @@ export const raleigh: CityData = {
           tip: 'The Frances L. Liles Trail is the main hiking path. Very few people know this forest exists.',
           accessibility: 'Natural trails; some uneven terrain',
           images: [
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-alwin-1.png',
+              alt: 'Carl Alwin Schenck Memorial Forest',
+            },
+            {
+              src: '/raleigh/hidden-gems/raleigh-hidden-alwin-2.png',
+              alt: 'Carl Alwin Schenck Memorial Forest',
+            },
             {
               src: '/raleigh/hidden-gems/schenck-1.png',
               alt: 'Carl Alwin Schenck Memorial Forest trails',

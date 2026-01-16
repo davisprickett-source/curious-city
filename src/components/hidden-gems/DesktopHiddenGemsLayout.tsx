@@ -122,16 +122,19 @@ export default function DesktopHiddenGemsLayout({
       {/* Outro Sections */}
       <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
         <div className="max-w-5xl mx-auto space-y-16 px-6 pb-20">
-          {/* Share Links */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
-            <div className="flex justify-center">
-              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} variant="banner" />
+          {/* Share Links and Newsletter - Side by Side */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Share Links */}
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
+              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} variant="default" onDark={true} />
+            </div>
+
+            {/* Newsletter Signup */}
+            <div>
+              <NewsletterSignup variant="dark" />
             </div>
           </div>
-
-          {/* Newsletter Signup */}
-          <NewsletterSignup variant="dark" />
 
           {/* Explore More Section */}
           <div className="text-center space-y-12">

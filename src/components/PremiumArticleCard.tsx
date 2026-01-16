@@ -11,28 +11,6 @@ interface PremiumArticleCardProps {
   index: number
 }
 
-const categoryColors = {
-  guide: 'bg-blue-100 text-blue-800',
-  feature: 'bg-purple-100 text-purple-800',
-  news: 'bg-red-100 text-red-800',
-  list: 'bg-green-100 text-green-800',
-  interview: 'bg-yellow-100 text-yellow-800',
-  history: 'bg-amber-100 text-amber-800',
-  'event-coverage': 'bg-pink-100 text-pink-800',
-  opinion: 'bg-indigo-100 text-indigo-800',
-}
-
-const categoryLabels = {
-  guide: 'Guide',
-  feature: 'Feature',
-  news: 'News',
-  list: 'List',
-  interview: 'Interview',
-  history: 'History',
-  'event-coverage': 'Event Coverage',
-  opinion: 'Opinion',
-}
-
 export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleCardProps) {
   const city = citySlug || article.citySlug
   const href = `/${city}/articles/${article.slug}`
@@ -74,23 +52,6 @@ export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleC
 
             {/* Content */}
             <div className="flex-1 p-8 md:p-10 flex flex-col justify-center">
-              {/* Category & Date */}
-              <div className="flex items-center gap-3 mb-4">
-                <span
-                  className={`inline-block px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider ${categoryColors[article.category]
-                    }`}
-                >
-                  {categoryLabels[article.category]}
-                </span>
-                <span className="text-sm text-neutral-500">
-                  {new Date(article.publishedAt).toLocaleDateString('en-US', {
-                    month: 'long',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
-                </span>
-              </div>
-
               {/* Title */}
               <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 leading-tight group-hover:text-accent-600 transition-colors duration-300">
                 {article.title}
@@ -101,12 +62,8 @@ export function PremiumArticleCard({ article, citySlug, index }: PremiumArticleC
                 {article.excerpt}
               </p>
 
-              {/* Meta & CTA */}
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-neutral-700">
-                  {article.author.name}
-                </span>
-
+              {/* CTA */}
+              <div className="flex items-center">
                 {/* Read Arrow */}
                 <div className="inline-flex items-center gap-2 group-hover:gap-3 px-5 py-2.5 bg-accent-600 text-white font-bold rounded-xl shadow-lg shadow-accent-600/20 hover:bg-accent-700 transition-all duration-300">
                   <span className="text-sm uppercase tracking-wider">Read Full Story</span>

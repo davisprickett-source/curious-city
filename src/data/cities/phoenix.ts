@@ -179,6 +179,10 @@ export const phoenix: CityData = {
             name: 'Dreamy Draw Recreation Area',
             stillExists: true,
           },
+          images: [
+            { src: '/phoenix/curiosities/phoenix-curious-dreamy-0.png', alt: 'Dreamy Draw Recreation Area' },
+            { src: '/phoenix/curiosities/phoenix-curious-dreamy-1.png', alt: 'Dreamy Draw historical site' },
+          ],
         },
         {
           id: 'phx-curiosity-make-a-wish',
@@ -202,6 +206,9 @@ export const phoenix: CityData = {
             name: 'Phoenix',
             stillExists: true,
           },
+          images: [
+            { src: '/phoenix/curiosities/phoenix-curious-wish.png', alt: 'Make-A-Wish Foundation origin story' },
+          ],
         },
         {
           id: 'phx-curiosity-10',
@@ -934,7 +941,7 @@ export const phoenix: CityData = {
           neighborhood: 'Downtown Phoenix',
           vibe: 'A former 1947 department store turned sleek cocktail bar, featuring one of the most unsettling basements in America.',
           order: 'The Hanny\'s Martini and a thin-crust pizza.',
-          why: 'Hanny\'s is a study in minimalist cool, but its real "Curious City" claim to fame is the basement. Peer through the glass floor near the bar to see a void filled with disembodied doll heads and a neon red crucifix. It’s an art installation that feels like a fever dream. Upstairs, the vibe is all high ceilings, Roman bread, and perfectly balanced martinis. It’s the kind of place where you come for the drink and stay for the existential dread.',
+          why: 'Hanny\'s is a study in minimalist cool, but its real "Curious City" claim to fame is the basement. Peer through the glass floor near the bar to see a void filled with disembodied doll heads and a neon red crucifix. It's an art installation that feels like a fever dream. Upstairs, the vibe is all high ceilings, Roman bread, and perfectly balanced martinis. It's the kind of place where you come for the drink and stay for the existential dread.',
           address: '40 N 1st St, Phoenix, AZ 85004',
           coordinates: { lat: 33.4489, lng: -112.0728 },
           price: '$$',
@@ -942,6 +949,10 @@ export const phoenix: CityData = {
           website: 'https://hannys.net/',
           instagram: '@hannys_phx',
           images: [
+            { src: '/phoenix/bars/phoenix-bars-hannys-1.png', alt: 'Hanny\'s exterior and entrance' },
+            { src: '/phoenix/bars/phoenix-bars-hannys-2.png', alt: 'Hanny\'s main bar area' },
+            { src: '/phoenix/bars/phoenix-bars-hannys-3.png', alt: 'Hanny\'s high ceilings' },
+            { src: '/phoenix/bars/phoenix-bars-hannys-4.png', alt: 'Hanny\'s cocktail service' },
             { src: '/phoenix/bars/hannys-1.png', alt: 'Hanny\'s interior department store style' },
             { src: '/phoenix/bars/hannys-basement.png', alt: 'Hanny\'s basement doll installation' },
           ],
@@ -959,6 +970,10 @@ export const phoenix: CityData = {
           website: 'https://theducephx.com/',
           instagram: '@theduce',
           images: [
+            { src: '/phoenix/bars/phoenix-bars-duce-1.png', alt: 'The Duce warehouse exterior' },
+            { src: '/phoenix/bars/phoenix-bars-duce-2.png', alt: 'The Duce vintage streamliner' },
+            { src: '/phoenix/bars/phoenix-bars-duce-3.png', alt: 'The Duce boxing ring' },
+            { src: '/phoenix/bars/phoenix-bars-duce-4.png', alt: 'The Duce interior space' },
             { src: '/phoenix/bars/theduce-1.png', alt: 'The Duce boxing ring and bar' },
             { src: '/phoenix/bars/theduce-2.png', alt: 'The Duce interior streamliner' },
           ],
@@ -988,6 +1003,11 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4617, lng: -112.0889 },
           price: '$',
           hours: 'Daily 10am-2am',
+          images: [
+            { src: '/phoenix/bars/phoenix-bars-bikini-1.png', alt: 'The Bikini Lounge exterior' },
+            { src: '/phoenix/bars/phoenix-bars-bikini-2.png', alt: 'The Bikini Lounge tiki decor' },
+            { src: '/phoenix/bars/phoenix-bars-bikini-3.png', alt: 'The Bikini Lounge interior' },
+          ],
         },
       ],
     },
@@ -1179,10 +1199,12 @@ export const phoenix: CityData = {
           hours: 'Mon-Sat 5pm-10pm, Sun Brunch 11am-3pm',
           website: 'https://www.bacanoraphx.com/',
           instagram: '@bacanoraphx',
-          image: {
-            src: '/phoenix/restaurants/bacanora-1.jpg',
-            alt: 'Wood-fired Mexican cuisine from James Beard winner',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-bacan-1.png', alt: 'Bacanora exterior on Grand Avenue' },
+            { src: '/phoenix/restaurants/phoenix-resto-bacan-2.png', alt: 'Bacanora wood-fired grill' },
+            { src: '/phoenix/restaurants/phoenix-resto-bacan-3.png', alt: 'Bacanora dining room' },
+            { src: '/phoenix/restaurants/bacanora-1.jpg', alt: 'Wood-fired Mexican cuisine from James Beard winner' },
+          ],
         },
         {
           name: 'Carolina\'s Mexican Food',
@@ -1196,10 +1218,12 @@ export const phoenix: CityData = {
           hours: 'Mon-Sat 7am-5pm (original), Closed Sun',
           website: 'https://carolinasmex.com/',
           instagram: '@carolinas_mexican_food',
-          image: {
-            src: '/phoenix/restaurants/carolinas-1.jpg',
-            alt: 'Fresh handmade Sonoran flour tortillas',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-carolinas-1.png', alt: 'Carolina\'s Mexican Food exterior' },
+            { src: '/phoenix/restaurants/phoenix-resto-carolinas-2.png', alt: 'Carolina\'s tortilla making' },
+            { src: '/phoenix/restaurants/phoenix-resto-carolinas-3.png', alt: 'Carolina\'s menu items' },
+            { src: '/phoenix/restaurants/carolinas-1.jpg', alt: 'Fresh handmade Sonoran flour tortillas' },
+          ],
         },
         {
           name: 'Pizzeria Bianco',
@@ -1213,44 +1237,50 @@ export const phoenix: CityData = {
           hours: 'Daily 11am-9pm',
           website: 'https://www.pizzeriabianco.com/',
           instagram: '@pizzeriabianco',
-          image: {
-            src: '/phoenix/restaurants/pizzeria-bianco-1.jpg',
-            alt: 'Wood-fired artisan pizza from James Beard winner',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-bianco.png', alt: 'Pizzeria Bianco exterior' },
+            { src: '/phoenix/restaurants/phoenix-resto-bianco-2.png', alt: 'Pizzeria Bianco wood-fired oven' },
+            { src: '/phoenix/restaurants/phoenix-resto-bianco-3.png', alt: 'Pizzeria Bianco dining' },
+            { src: '/phoenix/restaurants/pizzeria-bianco-1.jpg', alt: 'Wood-fired artisan pizza from James Beard winner' },
+          ],
         },
         {
           name: 'Matt\'s Big Breakfast',
           neighborhood: 'Downtown / Multiple',
           vibe: 'Clean, bright, and strictly focused on high-quality basics. The kind of place where the line is a feature, not a bug.',
           order: 'The "Hog & Chick" (two eggs, hash browns, and thick-cut bacon or country sausage).',
-          why: 'Matt Pool opened the original tiny location in 2004 with a simple manifesto: no shortcuts. That means cage-free eggs, thick-cut grain-fed bacon, and fresh-squeezed juice. It became such a local obsession that it now has five locations, but the downtown spot still feels like the epicenter. It’s the quintessential Phoenix breakfast, devoid of pretension but loaded with quality. You will wait, and it will be worth it.',
+          why: 'Matt Pool opened the original tiny location in 2004 with a simple manifesto: no shortcuts. That means cage-free eggs, thick-cut grain-fed bacon, and fresh-squeezed juice. It became such a local obsession that it now has five locations, but the downtown spot still feels like the epicenter. It's the quintessential Phoenix breakfast, devoid of pretension but loaded with quality. You will wait, and it will be worth it.',
           address: '825 N Central Ave, Phoenix, AZ 85004',
           coordinates: { lat: 33.4578, lng: -112.0739 },
           price: '$$',
           hours: 'Daily 7am-2pm',
           website: 'https://mattsbigbreakfast.com/',
           instagram: '@mattsbigbreakfast',
-          image: {
-            src: '/phoenix/restaurants/matts-1.png',
-            alt: 'Matt\'s Big Breakfast classic plate',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-matts-1.png', alt: 'Matt\'s Big Breakfast exterior' },
+            { src: '/phoenix/restaurants/phoenix-resto-matts-2.png', alt: 'Matt\'s Big Breakfast interior' },
+            { src: '/phoenix/restaurants/phoenix-resto-matts-3.png', alt: 'Matt\'s Big Breakfast food' },
+            { src: '/phoenix/restaurants/matts-1.png', alt: 'Matt\'s Big Breakfast classic plate' },
+          ],
         },
         {
           name: 'Durant\'s',
           neighborhood: 'Central Phoenix',
           vibe: 'A windowless, red-velvet time capsule where the 1960s never ended and everyone enters through the kitchen.',
           order: 'A gin martini and the prime rib.',
-          why: 'Durant’s is the soul of old Phoenix. You enter through the back door, walking directly through the bustling kitchen, into a dim, plush room lined with red flocked wallpaper and leather booths. It was once the preferred haunt of mobsters, politicians, and power brokers. The menu is classic steakhouse—heavy on the martini, the prawn cocktail, and the perfectly charred prime rib. It’s a place where secrets are still kept and the desert sun feels a million miles away.',
+          why: 'Durant's is the soul of old Phoenix. You enter through the back door, walking directly through the bustling kitchen, into a dim, plush room lined with red flocked wallpaper and leather booths. It was once the preferred haunt of mobsters, politicians, and power brokers. The menu is classic steakhouse—heavy on the martini, the prawn cocktail, and the perfectly charred prime rib. It's a place where secrets are still kept and the desert sun feels a million miles away.',
           address: '2611 N Central Ave, Phoenix, AZ 85004',
           coordinates: { lat: 33.4772, lng: -112.0736 },
           price: '$$$$',
           hours: 'Mon-Thu 11am-10pm, Fri 11am-11pm, Sat 4pm-11pm, Sun 4pm-10pm',
           website: 'https://durantsaz.com/',
           instagram: '@durantsaz',
-          image: {
-            src: '/phoenix/restaurants/durants-1.png',
-            alt: 'Durant\'s red velvet interior',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-durants-1.png', alt: 'Durant\'s exterior entrance' },
+            { src: '/phoenix/restaurants/phoenix-resto-durants-2.png', alt: 'Durant\'s kitchen entry' },
+            { src: '/phoenix/restaurants/phoenix-resto-durants-3.png', alt: 'Durant\'s dining room' },
+            { src: '/phoenix/restaurants/durants-1.png', alt: 'Durant\'s red velvet interior' },
+          ],
         },
         {
           name: 'Taco Chelo',
@@ -1263,10 +1293,12 @@ export const phoenix: CityData = {
           price: '$$',
           website: 'https://tacochelo.com/',
           instagram: '@tacochelo',
-          image: {
-            src: '/phoenix/restaurants/taco-chelo-1.jpg',
-            alt: 'Artful handmade tacos on Roosevelt Row',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-chelo-1.png', alt: 'Taco Chelo exterior on Roosevelt Row' },
+            { src: '/phoenix/restaurants/phoenix-resto-chelo-2.png', alt: 'Taco Chelo interior art' },
+            { src: '/phoenix/restaurants/phoenix-resto-chelo-3.png', alt: 'Taco Chelo handmade tacos' },
+            { src: '/phoenix/restaurants/taco-chelo-1.jpg', alt: 'Artful handmade tacos on Roosevelt Row' },
+          ],
         },
         {
           name: 'Restaurant Atoyac Estilo Oaxaca',
@@ -1280,17 +1312,19 @@ export const phoenix: CityData = {
           // Note: This restaurant primarily uses third-party platforms like Yelp/DoorDash for its online presence.
           // website: 'https://restaurantatoyac.com/', // No official website found
           // instagram: '@restaurantatoyac', // No official Instagram found
-          image: {
-            src: '/phoenix/restaurants/atoyac-tlayuda.jpg',
-            alt: 'Authentic Oaxacan tlayuda and mole',
-          },
+          images: [
+            { src: '/phoenix/restaurants/phoenix-resto-atoyac-1.png', alt: 'Restaurant Atoyac exterior' },
+            { src: '/phoenix/restaurants/phoenix-resto-atoyac-2.png', alt: 'Restaurant Atoyac tlayuda' },
+            { src: '/phoenix/restaurants/phoenix-resto-atoyac-3.png', alt: 'Restaurant Atoyac Oaxacan dishes' },
+            { src: '/phoenix/restaurants/atoyac-tlayuda.jpg', alt: 'Authentic Oaxacan tlayuda and mole' },
+          ],
         },
         {
           name: 'Valentine',
           neighborhood: 'Melrose District',
           vibe: 'A love letter to the Southwest housed in a reimagined mid-century modern space.',
           order: 'The White Sonora Wheat pasta and the corn-husk smoked fish.',
-          why: 'Valentine is where the "New Arizona" culinary movement is happening. Located in the Melrose District within a design-forward space shared with a vintage furniture shop, it focuses on ingredients native to the region. Think tepary beans, mesquite flour, and prickly pear, all handled with high-level technique. It’s sophisticated without being stuffy, and the adjacent bar (Christian’s) serves some of the most creative desert-focused cocktails in the city.',
+          why: 'Valentine is where the "New Arizona" culinary movement is happening. Located in the Melrose District within a design-forward space shared with a vintage furniture shop, it focuses on ingredients native to the region. Think tepary beans, mesquite flour, and prickly pear, all handled with high-level technique. It's sophisticated without being stuffy, and the adjacent bar (Christian's) serves some of the most creative desert-focused cocktails in the city.',
           address: '4130 N 7th Ave, Phoenix, AZ 85013',
           coordinates: { lat: 33.4958, lng: -112.0825 },
           price: '$$$',
@@ -1298,6 +1332,9 @@ export const phoenix: CityData = {
           website: 'https://valentinephx.com/',
           instagram: '@valentine_phx',
           images: [
+            { src: '/phoenix/restaurants/phoenix-resto-valentine-1.png', alt: 'Valentine exterior and space' },
+            { src: '/phoenix/restaurants/phoenix-resto-valentine-2.png', alt: 'Valentine interior design' },
+            { src: '/phoenix/restaurants/phoenix-resto-valentine-3.png', alt: 'Valentine cuisine plating' },
             { src: '/phoenix/restaurants/valentine-1.png', alt: 'Valentine restaurant interior' },
             { src: '/phoenix/restaurants/valentine-2.png', alt: 'Valentine modern Arizona cuisine' },
           ],
@@ -2054,6 +2091,13 @@ export const phoenix: CityData = {
             name: 'Gila River Indian Reservation',
             stillExists: true,
           },
+          images: [
+            { src: '/phoenix/dark-history/phoenix-dark-internment.png', alt: 'Gila River Internment Camp' },
+            { src: '/phoenix/dark-history/phoenix-dark-internment2.png', alt: 'Internment camp barracks' },
+            { src: '/phoenix/dark-history/phoenix-dark-internment3.png', alt: 'Japanese American families at camp' },
+            { src: '/phoenix/dark-history/phoenix-dark-internment4.png', alt: 'Garden ponds built by internees' },
+            { src: '/phoenix/dark-history/phoenix-dark-internment5.png', alt: 'Historical internment camp site' },
+          ],
         },
         {
           id: 'phx-dark-12',
@@ -2651,6 +2695,10 @@ export const phoenix: CityData = {
           communityVoice: '"Willow House was where Phoenix\'s artists felt at home." — Phoenix New Times',
           lastAddress: '149 W McDowell Rd, Phoenix',
           source: 'Arizona Republic, Phoenix New Times',
+          image: {
+            src: '/phoenix/lost-loved/phoenix-lost-willow.png',
+            alt: 'Willow House coffee shop and performance space',
+          },
         },
         {
           id: 'phx-lost-ad-2',
@@ -2669,6 +2717,10 @@ export const phoenix: CityData = {
           communityVoice: '"Macayo\'s was where Phoenix families ate for generations." — Arizona Republic',
           lastAddress: '4001 N Central Ave, Phoenix',
           source: 'Arizona Republic, Phoenix Magazine',
+          image: {
+            src: '/phoenix/lost-loved/phoenix-lost-macayo.png',
+            alt: 'Macayo\'s original Central Avenue location',
+          },
         },
       ],
     },

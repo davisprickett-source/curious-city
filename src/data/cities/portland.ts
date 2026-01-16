@@ -96,10 +96,20 @@ export const portland: CityData = {
           category: 'history',
           title: 'Portland has 1,500 iron rings embedded in its curbs for horses that died a century ago',
           body: 'Starting in 1902, Portland mandated that every 25 feet of new curb include an iron ringbolt—a hitching post for the horses delivering your coal, ice, groceries, and mail. By the 1970s, the city decided the rings were hazards and started ripping them out. Then in 1978, a Ladd\'s Addition homeowner complained when his ring vanished. Commissioner Connie McCready intervened, and suddenly the rings became heritage infrastructure. Today, Portland still replaces them after curb repairs—at $5 per ring. In 2005, artist Scott Wayne Indiana launched the Portland Horse Project, tying toy horses to the rings. The movement exploded. Walk through any old Portland neighborhood and you\'ll find plastic ponies, dinosaurs, and unicorns hitched to century-old iron, a city-wide participatory art installation that started as a joke and became folklore.',
-          image: {
-            src: '/portland/curiosities/horse-rings.png',
-            alt: 'Historic iron horse ring in Portland curb with toy horse',
-          },
+          images: [
+            {
+              src: '/portland/curiosities/portland-cur-horse-rings-1.png',
+              alt: 'Historic iron horse ring in Portland curb with toy horse',
+            },
+            {
+              src: '/portland/curiosities/portland-cur-horse-rings-2.png',
+              alt: 'Historic iron horse ring in Portland curb with toy horse',
+            },
+            {
+              src: '/portland/curiosities/horse-rings.png',
+              alt: 'Historic iron horse ring in Portland curb with toy horse',
+            },
+          ],
           sources: [
             {
               title: 'Horse rings in Portland, Oregon',
@@ -157,10 +167,20 @@ export const portland: CityData = {
           category: 'culture',
           title: '"Keep Portland Weird" was invented by a record store owner fighting chain stores',
           body: 'In 2003, Terry Currier, owner of Music Millennium (Portland\'s oldest record store), noticed big box retailers invading his turf. He wanted a slogan to promote local business but "Keep Portland Unique" sounded boring. A friend in Austin, Texas—where "Keep Austin Weird" already existed—suggested he steal the format. Currier printed 500 bumper stickers that said "Keep Portland Weird" and another 500 that added "Support Local Business." By 2007, he\'d sold 10,000 stickers and trademarked the phrase. The slogan metastasized. It became Portland\'s brand, its tourism tagline, its self-mythologizing mantra. Corporations slapped it on merchandise. The city that was supposed to resist commodification turned resistance itself into a commodity. Currier created a monster. And Music Millennium is still open.',
-          image: {
-            src: '/portland/curiosities/keep-portland-weird.png',
-            alt: 'Keep Portland Weird bumper sticker and campaign',
-          },
+          images: [
+            {
+              src: '/portland/curiosities/portland-curious-bumper-sticker-1.png',
+              alt: 'Keep Portland Weird bumper sticker and campaign',
+            },
+            {
+              src: '/portland/curiosities/portland-curious-bumper-sticker-2.png',
+              alt: 'Keep Portland Weird bumper sticker and campaign',
+            },
+            {
+              src: '/portland/curiosities/keep-portland-weird.png',
+              alt: 'Keep Portland Weird bumper sticker and campaign',
+            },
+          ],
           sources: [
             {
               title: 'Keep Portland Weird',
@@ -270,10 +290,20 @@ export const portland: CityData = {
           category: 'culture',
           title: 'Portlandia is the second-largest hammered copper statue in the U.S. (after the Statue of Liberty)',
           body: 'In 1985, Raymond Kaskey\'s "Portlandia" was installed above the entrance of the Portland Building—a 35-foot-tall, 6.5-ton hammered copper statue depicting a woman in classical robes, kneeling, trident in one hand, reaching down with the other. It\'s the second-largest hammered copper statue in the United States, after the Statue of Liberty. The statue arrived by barge up the Willamette River, a spectacle thousands watched. It\'s based on Portland\'s city seal. And yet... nobody really cares about it. Portlandia never became iconic. She\'s awkwardly positioned above a Postmodern building most locals hate. The TV show "Portlandia" became more famous than the statue it borrowed a name from. She remains Portland\'s most prominent public art that Portlanders routinely forget exists.',
-          image: {
-            src: '/portland/curiosities/portlandia-statue.png',
-            alt: 'Portlandia statue above Portland Building entrance',
-          },
+          images: [
+            {
+              src: '/portland/curiosities/portland-curious-portlandia.png',
+              alt: 'Portlandia statue above Portland Building entrance',
+            },
+            {
+              src: '/portland/curiosities/portland-curious-portlandia2.png',
+              alt: 'Portlandia statue above Portland Building entrance',
+            },
+            {
+              src: '/portland/curiosities/portlandia-statue.png',
+              alt: 'Portlandia statue above Portland Building entrance',
+            },
+          ],
           sources: [
             {
               title: 'Portlandia (statue)',
@@ -298,10 +328,16 @@ export const portland: CityData = {
           category: 'culture',
           title: 'Portland has a 31-foot-tall Paul Bunyan statue that waves at you',
           body: 'In 1959, for Oregon\'s centennial celebration, the Kenton Business Association commissioned a 31-foot-tall Paul Bunyan statue for $2,500. Unlike most roadside Americana—cheap fiberglass "muffler men"—this Bunyan was custom-built from steel and concrete. He stands in the Kenton neighborhood, axe in hand, waving mechanically at passing traffic. His expression is... unsettling. Dead eyes. Rictus grin. The uncanny valley of folk heroes. He was added to the National Register of Historic Places in 2009. In 2002, Portland moved him 59 feet to make room for light rail. The statue survived. Kenton\'s small-town character didn\'t. Paul Bunyan still waves, a giant concrete ghost greeting a neighborhood that no longer recognizes him.',
-          image: {
-            src: '/portland/curiosities/paul-bunyan.png',
-            alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
-          },
+          images: [
+            {
+              src: '/portland/curiosities/portland-curious-bunyan.png',
+              alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
+            },
+            {
+              src: '/portland/curiosities/paul-bunyan.png',
+              alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
+            },
+          ],
           sources: [
             {
               title: 'Statue of Paul Bunyan (Portland, Oregon)',
@@ -365,10 +401,16 @@ export const portland: CityData = {
           category: 'culture',
           title: 'The 24-Hour Church of Elvis was a coin-operated wedding chapel and art installation',
           body: 'In 1985, Stephanie Pierce—a Georgetown-trained lawyer who quit corporate law to become an artist—opened a storefront window in downtown Portland featuring a coin-operated art machine. For 25 cents, you could receive a sermon from Elvis, confess your sins, get a photo with the King, or watch whirring mechanical dioramas. In 1987, it officially became the 24-Hour Church of Elvis. Pierce, an ordained minister, performed legally binding weddings out of the window. The exhibit moved locations multiple times, garnered features in the Wall Street Journal and LA Times, and became a symbol of Portland\'s commitment to the absurd. It closed for good in 2013. The Church of Elvis helped establish Portland as "weird" before weird became a brand. It was pure, unselfconscious strangeness—the kind Portland used to do before it started trying.',
-          image: {
-            src: '/portland/curiosities/church-elvis.png',
-            alt: '24-Hour Church of Elvis storefront window installation',
-          },
+          images: [
+            {
+              src: '/portland/curiosities/portland-curious-elvis.png',
+              alt: '24-Hour Church of Elvis storefront window installation',
+            },
+            {
+              src: '/portland/curiosities/church-elvis.png',
+              alt: '24-Hour Church of Elvis storefront window installation',
+            },
+          ],
           sources: [
             {
               title: '24 Hour Church of Elvis',
@@ -679,6 +721,14 @@ export const portland: CityData = {
                       description: 'Artists Mike Wellins and Lisa Freeman planned to open a food truck in 2010. They pivoted to cryptozoology instead. The Peculiarium opened April 2011 with a 10-foot Bigfoot, alien autopsy exhibits, and walls hung with thrift-store landscapes that Wellins "improved" by painting in zombies, space monsters, and giant robots—a technique he calls NERC (Non-Elective Retroactive Collaboration). Closed 17 months during the pandemic, reopened July 2021, still selling jetpack bunnies and machine gun Bigfoot art.',
                       images: [
                         {
+                          src: '/portland/hidden-gems/portland-hidden-curious-1.png',
+                          alt: 'Freakybuttrue Peculiarium',
+                        },
+                        {
+                          src: '/portland/hidden-gems/portland-hidden-curious-2.png',
+                          alt: 'Freakybuttrue Peculiarium',
+                        },
+                        {
                           src: '/portland/hidden-gems/peculiarium.png', // Placeholder image
                           alt: 'Exterior of Freakybuttrue Peculiarium',
                         }
@@ -710,7 +760,11 @@ export const portland: CityData = {
                               description: 'A moss-strangled stone ruin in Forest Park, built by the WPA in the 1930s as a ranger station or restroom (nobody quite agrees). Not remotely a castle. The locals call it haunted. Teenagers use it for selfies. The 0.8-mile hike from Lower Macleay Trail is gentle enough for out-of-shape goths.',
                               images: [
                                 {
-                                  src: '/portland/hidden-gems/witchs-castle.png', // Placeholder image
+                                  src: '/portland/hidden-gems/portland-hidden-witch-1.png',
+                                  alt: 'Witch\'s Castle in Forest Park',
+                                },
+                                {
+                                  src: '/portland/hidden-gems/witchs-castle.png',
                                   alt: 'Witch\'s Castle in Forest Park',
                                 }
                               ],
@@ -740,7 +794,15 @@ export const portland: CityData = {
                               description: 'A 62-acre Catholic shrine where a cave carved into a cliff face opens onto botanical gardens perched 110 feet above street level. Nuns tend the grounds. Pilgrims light candles. Tourists wander through confused but respectful. The elevator to the upper gardens costs money; the lower grotto does not. The Columbia River views are legitimately stunning, which feels theologically appropriate.',
                               images: [
                                 {
-                                  src: '/portland/hidden-gems/the-grotto.png', // Placeholder image
+                                  src: '/portland/hidden-gems/portland-grotto-1.png',
+                                  alt: 'The Grotto - cliffside view',
+                                },
+                                {
+                                  src: '/portland/hidden-gems/portland-grotto-2.png',
+                                  alt: 'The Grotto - cliffside view',
+                                },
+                                {
+                                  src: '/portland/hidden-gems/the-grotto.png',
                                   alt: 'The Grotto - cliffside view',
                                 }
                               ],
@@ -771,7 +833,19 @@ export const portland: CityData = {
                       description: 'A warehouse converted into a shrine for global puppetry where marionettes dangle from rafters and shadow puppets share wall space with Indonesian wayang goleks. Run by volunteers who care deeply about string tension and cultural context. Workshops teach construction techniques. Performances happen in a 30-seat theater. The collection proves Portland will build a museum for literally anything if you\'re committed enough.',
                       images: [
                         {
-                          src: '/portland/hidden-gems/puppet-museum.png', // Placeholder image
+                          src: '/portland/hidden-gems/portland-hidden-puppet-1.png',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                        },
+                        {
+                          src: '/portland/hidden-gems/portland-hidden-puppet-2.png',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                        },
+                        {
+                          src: '/portland/hidden-gems/portland-hidden-puppet-3.png',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                        },
+                        {
+                          src: '/portland/hidden-gems/puppet-museum.png',
                           alt: 'Interior of Portland Puppet Museum with puppets on display',
                         }
                       ],

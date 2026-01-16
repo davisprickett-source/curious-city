@@ -37,7 +37,7 @@ function extractFirstVideoFrame(blocks: History['blocks']): string | undefined {
 
 export interface PageCardData {
   type: 'page'
-  pageType: 'history' | 'dark-history' | 'curiosities' | 'hidden-gems' | 'lost-loved' | 'guide' | 'events'
+  pageType: 'history' | 'article' | 'dark-history' | 'curiosities' | 'hidden-gems' | 'lost-loved' | 'guide' | 'events'
   citySlug: string
   cityName: string
   title: string          // e.g., "Desert Darkness" or "Phoenix History"
@@ -155,7 +155,7 @@ export async function getCityPageCards(citySlug: string): Promise<PageCardData[]
     for (const article of nativeArticles) {
       pageCards.push({
         type: 'page',
-        pageType: 'history',
+        pageType: 'article',
         citySlug: city.slug,
         cityName: city.name,
         title: article.title,

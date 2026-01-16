@@ -353,7 +353,7 @@ export const fargo: CityData = {
           name: 'Fargo Theatre',
           category: 'Cinema',
           description:
-            'A beautifully restored 1926 Art Deco movie palace with a working Wurlitzer organ. Independent films, the Fargo Film Festival, and occasional live organ accompaniment. The marquee is a downtown landmark. This is where Fargo does culture.',
+            'Construction began fall 1925. Opened March 15, 1926 in Renaissance style. Designed by Liebenberg and Kaplan, who transformed the interior to Art Deco during a 1937 remodel. The Wurlitzer organ—owned by Red River Theatre Organ Society—went silent March 1948 until RRTOS volunteers restored it August 1973. Organists still play before select screenings. December 2023: a $500,000 restoration campaign to preserve the marquee, that neon beacon on Broadway that\'s been guiding film lovers for nearly a century. Independent films. Fargo Film Festival. National Register of Historic Places. This is where Fargo does culture without apologizing for caring.',
           images: [
             {
               src: '/images/gems/fargo-theatre.jpg',
@@ -373,7 +373,7 @@ export const fargo: CityData = {
           name: 'Hjemkomst Center',
           category: 'Museum',
           description:
-            'Home to a full-size replica Viking ship that actually sailed to Norway in 1982. Built in a Moorhead potato warehouse by one man over seven years. The ship represents Norwegian heritage in the Red River Valley. Also houses Clay County Historical Society.',
+            'Robert Asp—a guidance counselor at Moorhead Junior High—began building a full-size Viking ship replica in 1974. Hawley, Minnesota leased him the Leslie Welter Potato Warehouse for $10 a year. Seven years of work, mostly alone. Asp died December 27, 1980, four months into the ship\'s maiden voyage on Lake Superior. His children finished what he started. Departed New York City June 8, 1982. Arrived Bergen, Norway July 19. Then Oslo August 9. The ship now rests permanently at Hjemkomst Center in Moorhead. "Hjemkomst" means "homecoming." A potato warehouse dream that sailed 6,100 miles across the Atlantic. Also houses a hand-carved replica stave church and the Clay County Historical Society.',
           images: [
             {
               src: '/images/gems/hjemkomst.jpg',
@@ -393,7 +393,7 @@ export const fargo: CityData = {
           name: 'Plains Art Museum',
           category: 'Museum',
           description:
-            'North Dakota\'s largest art museum, housed in a converted International Harvester warehouse. Strong regional focus with surprisingly sophisticated rotating exhibitions. Free admission makes it accessible. Thursday nights feature extended hours.',
+            'Started in 1965 as "Red River Art Center" in a former Moorhead post office. Merged with O\'Rourke Art Gallery Museum in 1975 to become "Plains Art Museum." Acquired a turn-of-the-century International Harvester warehouse in 1994. Relocated October 1997 after Hammel Green & Abrahamson redesigned 56,000 square feet into gallery space. Granted accreditation in 2003—the only accredited art museum in North Dakota. Free admission. Strong regional focus with rotating exhibitions that punch above the Red River Valley\'s weight class. Thursday nights until 9pm. Proof that a city this size can sustain serious contemporary art without pretending to be somewhere else.',
           images: [
             {
               src: '/images/gems/plains-art.jpg',
@@ -413,7 +413,7 @@ export const fargo: CityData = {
           name: 'Red River Zoo',
           category: 'Zoo',
           description:
-            'A small zoo focused on cold-climate animals from around the world. Red pandas, Pallas\'s cats, grey wolves, and Chinese red pandas. Perfect scale for families — intimate enough to see everything in an afternoon without exhaustion.',
+            'Red River Zoological Society formed in 1993. Zoo opened May 1999. Gained AZA accreditation in 2006. Twenty-two developed acres with roughly 89 species—all cold-climate animals from around the world. Red pandas, Pallas\'s cats, grey wolves. The zoo\'s red panda breeding program is absurdly successful: over 25% of Chinese Red Pandas in US zoos were born here, including two sets of triplets. Eleven births as of 2012. Won the 2013 Edward H. Bean Award for outstanding achievement in red panda conservation. Three Pallas\'s Cats in the Species Survival Plan. Perfect scale for families—intimate enough to see everything in an afternoon without the existential exhaustion of larger zoos. Arrive early when the pandas are most active.',
           images: [
             {
               src: '/images/gems/red-river-zoo.jpg',

@@ -6,9 +6,10 @@ interface ShareLinksProps {
   title: string
   url?: string // If not provided, uses current page URL
   variant?: 'default' | 'compact' | 'banner'
+  onDark?: boolean // Whether the button is on a dark background
 }
 
-export function ShareLinks({ title, url, variant = 'default' }: ShareLinksProps) {
+export function ShareLinks({ title, url, variant = 'default', onDark = false }: ShareLinksProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -97,6 +98,8 @@ export function ShareLinks({ title, url, variant = 'default' }: ShareLinksProps)
   const buttonSize = variant === 'compact' ? 'px-3 py-1.5 text-xs' : variant === 'banner' ? 'px-5 py-2.5 text-base' : 'px-4 py-2 text-sm'
   const buttonColors = variant === 'banner'
     ? 'text-white hover:text-white hover:bg-white/20 border-2 border-white/40 hover:border-white/60'
+    : onDark
+    ? 'text-[#c65d3b] hover:text-[#c65d3b] hover:bg-[#c65d3b]/20 border-2 border-[#c65d3b]/40 hover:border-[#c65d3b]/60'
     : 'text-[#c65d3b] hover:text-[#a54d30] hover:bg-[#c65d3b]/10'
   const iconSize = variant === 'banner' ? 'w-5 h-5' : 'w-4 h-4'
 

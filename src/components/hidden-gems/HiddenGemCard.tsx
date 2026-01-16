@@ -276,7 +276,20 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
       {/* Right Column - Content (65%) - Scrollable */}
       <div className={`flex-1 flex flex-col min-h-0 ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0">
+        <div
+          className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0"
+          onWheel={(e) => {
+            // Prevent scroll from bubbling to parent when scrolling within card
+            const element = e.currentTarget
+            const isAtTop = element.scrollTop === 0
+            const isAtBottom = element.scrollHeight - element.scrollTop === element.clientHeight
+
+            // Only prevent propagation if we're actively scrolling within bounds
+            if ((e.deltaY < 0 && !isAtTop) || (e.deltaY > 0 && !isAtBottom)) {
+              e.stopPropagation()
+            }
+          }}
+        >
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}

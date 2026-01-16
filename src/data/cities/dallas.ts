@@ -66,6 +66,16 @@ export const dallas: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Nobody knows for certain how Dallas got its name',
+          images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-city-name.png',
+              alt: 'Dallas city name origin mystery',
+            },
+            {
+              src: '/dallas/curiosities/dallas-cur-city-name-2.png',
+              alt: 'Historical information about Dallas naming',
+            },
+          ],
           body: 'Dallas is the ninth-largest city in America, one of the most economically powerful metros on Earth, and nobody actually knows where the name came from. The founder, John Neely Bryan — a Tennessee lawyer who arrived in 1841 and built a cabin on the Trinity River — named the settlement "Dallas" but never explained why. The official historical marker claims it honors Vice President George Mifflin Dallas, but Bryan established the town before Dallas took office, and there\'s no evidence they ever met. Other theories: Bryan was honoring George\'s brother, Commodore Alexander James Dallas. Or two Dallas brothers who were his friends. Or a Dallas County in Alabama. Or it\'s corrupted from a Native American word. Bryan spent his final years in an insane asylum in Austin and took the answer to his grave. The mystery has persisted for 180 years. Historians have given up. Dallas just... is.',
         },
         {
@@ -73,6 +83,12 @@ export const dallas: CityData = {
           type: 'curiosity',
           category: 'law',
           title: 'It\'s illegal to give your wife a massage here',
+          images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-massage.png',
+              alt: 'Dallas massage regulation law',
+            },
+          ],
           body: 'There\'s an ordinance still on the books in Dallas that technically makes it illegal for a husband to give his wife a massage — or any opposite-sex massage between individuals who aren\'t licensed practitioners. The law was passed in the 1980s to crack down on massage parlors operating as fronts for prostitution. Rather than write a nuanced law, Dallas just banned all non-professional opposite-sex massages. In 1985, U.S. District Judge Barefoot Sanders (yes, real name) ruled the law unconstitutional as applied to private conduct. But here\'s the thing: the city never bothered to repeal it. The ordinance remains in the municipal code, technically enforceable, a relic of Reagan-era vice policing. Every few years a local news station rediscovers it. The city council shrugs. Nobody fixes it. Welcome to Texas.',
         },
         {
@@ -269,6 +285,14 @@ export const dallas: CityData = {
           title: 'Dallas spent nearly $1 million on an oil company\'s logo—because it became the city symbol',
           images: [
             {
+              src: '/dallas/curiosities/dallas-cur-pegasus-1.png',
+              alt: 'Magnolia Building Pegasus sign',
+            },
+            {
+              src: '/dallas/curiosities/dallas-cur-pegasus-2.png',
+              alt: 'Dallas Pegasus landmark',
+            },
+            {
               src: '/dallas/curiosities/pegasus-1.png',
               alt: 'Original Magnolia Pegasus atop the Magnolia Building',
             },
@@ -311,6 +335,14 @@ export const dallas: CityData = {
           category: 'culture',
           title: 'Dallas invented modern NFL cheerleading by making it sexy and profitable',
           images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-cheerleaders-1.png',
+              alt: 'Dallas Cowboys Cheerleaders',
+            },
+            {
+              src: '/dallas/curiosities/dallas-cur-cheerleaders-2.png',
+              alt: 'Dallas Cowboys Cheerleaders performance',
+            },
             {
               src: '/dallas/curiosities/cheerleaders-1.png',
               alt: 'Original 1972 Dallas Cowboys Cheerleaders squad',
@@ -356,6 +388,12 @@ export const dallas: CityData = {
           type: 'curiosity',
           category: 'invention',
           title: 'Liquid Paper was invented by a Dallas secretary to fix her typing mistakes',
+          images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-white-out-liquid-paper-1.png',
+              alt: 'Liquid Paper invention story',
+            },
+          ],
           body: 'In the early 1950s, Bette Nesmith Graham, a secretary at Texas Bank & Trust in Dallas, got tired of retyping entire pages because of mistakes. She mixed up white tempera paint in her kitchen blender and brought it to work in a bottle labeled "Mistake Out." Her boss didn\'t notice. Her co-workers started asking for it. By 1956, she was bottling it at home and calling it "Liquid Paper." She sold the company to Gillette for $47.5 million in 1979. Her son Michael Nesmith became famous as a member of The Monkees. Dallas women get things done.',
           source: 'Texas State Historical Association',
         },
@@ -364,6 +402,12 @@ export const dallas: CityData = {
           type: 'curiosity',
           category: 'invention',
           title: 'Voice mail was invented in Dallas in 1979',
+          images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-voicemail-2.png',
+              alt: 'Voice mail invention in Dallas',
+            },
+          ],
           body: 'Gordon Matthews founded VMX in Dallas in 1979 and developed the technology that let workers record, send, store, and forward voice messages from any phone in an office. He called it "voice mail." Before VMX, if you weren\'t at your desk, you missed the call. Matthews\' invention fundamentally changed how business communication worked — and gave everyone an excuse to avoid talking to people directly. Dallas gave the world a way to never actually speak to another human being again.',
           source: 'Dallas Innovates',
         },
@@ -372,7 +416,13 @@ export const dallas: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Doc Holliday won an award at the Dallas State Fair—for dentistry',
-          body: 'Before he became the legendary Wild West gunfighter of the OK Corral, John Henry "Doc" Holliday was a mild-mannered dentist fresh from dental school in St. Louis. In the 1870s, he opened a practice in Dallas and even entered a competition at the Dallas State Fair & Exposition (the precursor to today\'s State Fair of Texas). His specialty? Creating "the best set of gold teeth." He won. The man who would later stand shoulder-to-shoulder with Wyatt Earp in a bloody gunfight was once celebrated for his dental craftsmanship in Dallas. It’s an almost impossibly bizarre twist to his legend: one of America\'s most infamous outlaws, a tuberculosis-ridden gambler and killer, started his career polishing gold molars and winning ribbons at a state fair. Every legend starts somewhere; Doc Holliday\'s started with a gleaming smile in Dallas.',
+          images: [
+            {
+              src: '/dallas/curiosities/dallas-cur-doc-holladay.png',
+              alt: 'Doc Holliday dentistry award story',
+            },
+          ],
+          body: 'Before he became the legendary Wild West gunfighter of the OK Corral, John Henry "Doc" Holliday was a mild-mannered dentist fresh from dental school in St. Louis. In the 1870s, he opened a practice in Dallas and even entered a competition at the Dallas State Fair & Exposition (the precursor to today\'s State Fair of Texas). His specialty? Creating "the best set of gold teeth." He won. The man who would later stand shoulder-to-shoulder with Wyatt Earp in a bloody gunfight was once celebrated for his dental craftsmanship in Dallas. It's an almost impossibly bizarre twist to his legend: one of America\'s most infamous outlaws, a tuberculosis-ridden gambler and killer, started his career polishing gold molars and winning ribbons at a state fair. Every legend starts somewhere; Doc Holliday\'s started with a gleaming smile in Dallas.',
           source: 'D Magazine',
         },
         {

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { ShareButton } from '@/components/ShareButton'
+import { SaveButton } from '@/components/SaveButton'
 import { ImageCarousel } from '../ImageCarousel'
 
 interface LostLovedItem {
@@ -208,6 +209,7 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
 
   return (
     <motion.article
+      id={item.id}
       ref={ref}
       variants={getCardVariants(index)}
       initial="hidden"
@@ -281,7 +283,20 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
 
       {/* Right Column - Content (65%) - Scrollable */}
       <div className={`flex-1 flex flex-col min-h-0 ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0">
+        <div
+          className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0"
+          onWheel={(e) => {
+            // Prevent scroll from bubbling to parent when scrolling within card
+            const element = e.currentTarget
+            const isAtTop = element.scrollTop === 0
+            const isAtBottom = element.scrollHeight - element.scrollTop === element.clientHeight
+
+            // Only prevent propagation if we're actively scrolling within bounds
+            if ((e.deltaY < 0 && !isAtTop) || (e.deltaY > 0 && !isAtBottom)) {
+              e.stopPropagation()
+            }
+          }}
+        >
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -375,14 +390,22 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
             <MetadataBox item={item} />
           </motion.div>
 
-          {/* Share Button - centered at bottom */}
+          {/* Share and Save Buttons - centered at bottom */}
           <motion.div
             variants={detailsVariants}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center"
+            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center gap-6"
           >
             <ShareButton title={item.name} url={url} />
+            <SaveButton
+              name={item.name}
+              description={item.description}
+              address={item.lastAddress}
+              tip={item.whyMissed}
+              category={item.category}
+              url={`${url}#${item.id}`}
+            />
           </motion.div>
         </div>
       </div>

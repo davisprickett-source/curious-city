@@ -113,6 +113,10 @@ export const denver: CityData = {
           title: 'Denver invented outdoor Christmas lights to cheer up a sick kid',
           body: 'In 1914, Denver electrician D.D. Sturgeon wanted to cheer up his four-year-old son who was bedridden. So he hand-painted light bulbs in red and green and hung them on a pine tree outside his son\'s hospital window. The first outdoor Christmas lights in history weren\'t about religion or tradition—they were about a father trying to make his sick kid smile. The idea spread through Denver, then across Colorado, and eventually became a global phenomenon. Every suburban dad cursing at tangled lights owes it to D.D. Sturgeon and his dying son.',
           year: '1914',
+          image: {
+            src: '/denver/curiosities/denver-cur-christmas-lights.png',
+            alt: 'Denver outdoor Christmas lights history',
+          },
           sources: [
             {
               title: 'Fun Facts About Denver You Probably Never Heard Of',
@@ -184,6 +188,10 @@ export const denver: CityData = {
           title: 'Coors Field was built on a triceratops graveyard',
           body: 'During construction of Coors Field in the mid-1990s, workers uncovered a dinosaur fossil—a triceratops that died 65 million years ago, right where home plate would be. Construction halted while paleontologists excavated the bones and donated them to the Denver Museum of Nature & Science. So the Rockies play baseball on the exact spot where a triceratops once roamed. The fossil is gone, but the ground remembers.',
           year: '1995',
+          image: {
+            src: '/denver/curiosities/denver-cur-coors.png',
+            alt: 'Coors Field triceratops fossil discovery',
+          },
           sources: [
             {
               title: 'Colorado Facts & Trivia',
@@ -208,6 +216,10 @@ export const denver: CityData = {
           category: 'architecture',
           title: 'The Capitol used the world\'s entire supply of a rare stone',
           body: 'The interior of the Colorado State Capitol is built with Colorado Rose Onyx, a rare pinkish stone from a single quarry near Beulah, Colorado. The building used every ounce that existed. The quarry is now exhausted. If you want to see Colorado Rose Onyx, you have one option: the Capitol. It\'s the only place on Earth where it exists. Denver didn\'t just use a rare material—it used all of it.',
+          images: [
+            '/denver/curiosities/denver-cur-onyx-1.png',
+            '/denver/curiosities/denver-cur-onyx-2.png',
+          ],
           sources: [
             {
               title: '10 Surprising Facts About Denver',
@@ -259,6 +271,10 @@ export const denver: CityData = {
           title: 'Kissing was banned at Union Station because it slowed down the trains',
           body: 'In 1902, Denver Union Station had a problem: too much kissing. Couples saying goodbye would linger on the platforms, blocking passengers and delaying departures. The solution? Ban all kissing at the station. The rule was officially enforced, with railway staff breaking up smooches to keep the trains on schedule. It remained technically illegal for decades. Today, nobody enforces it. The trains are no longer slowed by romance. They\'re slowed by everything else.',
           year: '1902',
+          image: {
+            src: '/denver/curiosities/denver-cur-kiss.png',
+            alt: 'Denver Union Station kissing ban history',
+          },
           sources: [
             {
               title: 'Fun Facts and Weird Laws in Denver',
@@ -958,10 +974,28 @@ export const denver: CityData = {
           hours: 'Daily 4pm-1am',
           website: 'https://TheCruiseRoom.com',
           instagram: '@thecruiseroom',
-          image: {
-            src: '/denver/bars/cruise-room.png',
-            alt: 'Pink neon Art Deco interior of The Cruise Room at the Oxford Hotel',
-          },
+          images: [
+            {
+              src: '/denver/bars/denver-bars-cruise-1.png',
+              alt: 'The Cruise Room Art Deco interior',
+            },
+            {
+              src: '/denver/bars/denver-bars-cruise-2.png',
+              alt: 'The Cruise Room Art Deco interior',
+            },
+            {
+              src: '/denver/bars/denver-bars-cruise-3.png',
+              alt: 'The Cruise Room Art Deco interior',
+            },
+            {
+              src: '/denver/bars/denver-bars-cruise-4.png',
+              alt: 'The Cruise Room Art Deco interior',
+            },
+            {
+              src: '/denver/bars/cruise-room.png',
+              alt: 'Pink neon Art Deco interior of The Cruise Room at the Oxford Hotel',
+            },
+          ],
         },
         {
           name: 'My Brother\'s Bar',
@@ -975,10 +1009,24 @@ export const denver: CityData = {
           hours: 'Mon-Sat 11am-12am, closed Sun',
           website: 'https://mybrothersbar.com',
           instagram: '@mybrothersbardenver',
-          image: {
-            src: '/denver/bars/brothers-bar.png',
-            alt: 'Historic exterior of My Brother\'s Bar in Denver',
-          },
+          images: [
+            {
+              src: '/denver/bars/denver-bars-mybro-1.png',
+              alt: 'My Brother\'s Bar historic interior',
+            },
+            {
+              src: '/denver/bars/denver-bars-mybro-2.png',
+              alt: 'My Brother\'s Bar historic interior',
+            },
+            {
+              src: '/denver/bars/denver-bars-mybro-3.png',
+              alt: 'My Brother\'s Bar historic interior',
+            },
+            {
+              src: '/denver/bars/brothers-bar.png',
+              alt: 'Historic exterior of My Brother\'s Bar in Denver',
+            },
+          ],
         },
       ],
     },
