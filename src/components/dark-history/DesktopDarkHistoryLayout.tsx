@@ -17,6 +17,7 @@ interface DarkHistoryItem {
   category?: 'unsolved' | 'crime' | 'disaster' | 'mystery' | 'macabre' | 'haunting' | 'cold-case'
   year?: string
   verdict?: string
+  articleSlug?: string
   image?: {
     src: string
     alt?: string
@@ -53,6 +54,7 @@ interface DarkHistoryItem {
 interface DesktopDarkHistoryLayoutProps {
   items: DarkHistoryItem[]
   cityName: string
+  citySlug: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
   url: string
@@ -61,6 +63,7 @@ interface DesktopDarkHistoryLayoutProps {
 export default function DesktopDarkHistoryLayout({
   items,
   cityName,
+  citySlug,
   exploreLinks = [],
   footer,
   url
@@ -111,6 +114,7 @@ export default function DesktopDarkHistoryLayout({
                 item={item}
                 index={index}
                 url={url}
+                citySlug={citySlug}
               />
 
               {/* Native ad card every 3 items */}
@@ -149,12 +153,9 @@ export default function DesktopDarkHistoryLayout({
           {/* Explore More Section */}
           <div className="text-center space-y-12">
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Explore More {cityName}
               </h2>
-              <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
-                Discover more lists and guides curated by locals.
-              </p>
             </div>
 
             {exploreLinks.length > 0 && (

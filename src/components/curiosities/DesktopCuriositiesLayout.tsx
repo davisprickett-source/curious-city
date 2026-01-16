@@ -16,6 +16,7 @@ interface CuriosityItem {
   body: string
   category?: string
   year?: string
+  articleSlug?: string
   image?: {
     src: string
     alt?: string
@@ -47,6 +48,7 @@ interface CuriosityItem {
 interface DesktopCuriositiesLayoutProps {
   curiosities: CuriosityItem[]
   cityName: string
+  citySlug: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
   url: string
@@ -55,6 +57,7 @@ interface DesktopCuriositiesLayoutProps {
 export default function DesktopCuriositiesLayout({
   curiosities,
   cityName,
+  citySlug,
   exploreLinks = [],
   footer,
   url
@@ -105,6 +108,7 @@ export default function DesktopCuriositiesLayout({
                 item={item}
                 index={index}
                 url={url}
+                citySlug={citySlug}
               />
 
               {/* Native ad card every 3 curiosities */}
@@ -143,12 +147,9 @@ export default function DesktopCuriositiesLayout({
           {/* Explore More Section */}
           <div className="text-center space-y-12">
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Explore More {cityName}
               </h2>
-              <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
-                Discover more lists and guides curated by locals.
-              </p>
             </div>
 
             {exploreLinks.length > 0 && (

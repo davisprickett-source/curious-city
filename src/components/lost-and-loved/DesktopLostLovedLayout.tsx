@@ -137,12 +137,9 @@ export default function DesktopLostLovedLayout({
           {/* Explore More Section */}
           <div className="text-center space-y-12">
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Explore More {cityName}
               </h2>
-              <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
-                Discover more lists and guides curated by locals.
-              </p>
             </div>
 
             {exploreLinks.length > 0 && (

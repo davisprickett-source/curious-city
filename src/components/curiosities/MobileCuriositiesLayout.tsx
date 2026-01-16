@@ -10,6 +10,7 @@ import { FeedbackSection } from '../FeedbackSection'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { ShareButton } from '@/components/ShareButton'
+import { SaveButton } from '@/components/SaveButton'
 import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
 import { DrawerAd } from '@/components/ads/mobile/DrawerAd'
 import { NativeAdSection } from '@/components/ads/NativeAdCard'
@@ -263,8 +264,16 @@ function CuriositySection({ item, index, onSectionInView, url, title }: { item: 
                 </div>
               )}
 
-              <div className="flex justify-center">
+              <div className="flex justify-center gap-6">
                 <ShareButton title={title} url={url} />
+                <SaveButton
+                  name={item.title}
+                  description={item.body}
+                  address={item.location?.name}
+                  website={item.location?.url}
+                  category={item.category}
+                  url={`${url}#${item.id}`}
+                />
               </div>
             </div>
           </div>
@@ -408,8 +417,16 @@ function CuriositySection({ item, index, onSectionInView, url, title }: { item: 
               </div>
             )}
 
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-6">
               <ShareButton title={title} url={url} />
+              <SaveButton
+                name={item.title}
+                description={item.body}
+                address={item.location?.name}
+                website={item.location?.url}
+                category={item.category}
+                url={`${url}#${item.id}`}
+              />
             </div>
           </motion.div>
         </div>

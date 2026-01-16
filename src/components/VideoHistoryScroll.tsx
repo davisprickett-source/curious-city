@@ -238,8 +238,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'denver': 'denver'
     }
     const city = cityMap[cityPrefix] || cityPrefix
-    // All sequences use underscore format: frame_0001.webp
-    return `/sequences/${city}/${sequenceName}/frame_${paddedNum}.webp`
+    // Use R2 CDN if available, otherwise local path
+    const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+    const path = `/sequences/${city}/${sequenceName}/frame_${paddedNum}.webp`
+    return cdnUrl ? `${cdnUrl}${path}` : path
   }
 
   // Preload frames progressively

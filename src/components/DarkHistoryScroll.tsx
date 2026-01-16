@@ -12,6 +12,7 @@ interface DarkHistoryItem {
   category?: 'unsolved' | 'crime' | 'disaster' | 'mystery' | 'macabre' | 'haunting' | 'cold-case'
   year?: string
   verdict?: string
+  articleSlug?: string
   image?: {
     src: string
     alt?: string
@@ -48,6 +49,7 @@ interface DarkHistoryItem {
 interface DarkHistoryScrollProps {
   items: DarkHistoryItem[]
   cityName: string
+  citySlug: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
   url: string
@@ -56,6 +58,7 @@ interface DarkHistoryScrollProps {
 export function DarkHistoryScroll({
   items,
   cityName,
+  citySlug,
   exploreLinks = [],
   footer,
   url
@@ -69,6 +72,7 @@ export function DarkHistoryScroll({
       <DesktopDarkHistoryLayout
         items={items}
         cityName={cityName}
+        citySlug={citySlug}
         exploreLinks={exploreLinks}
         footer={footer}
         url={url}
@@ -81,6 +85,7 @@ export function DarkHistoryScroll({
     <MobileDarkHistoryLayout
       items={items}
       cityName={cityName}
+      citySlug={citySlug}
       exploreLinks={exploreLinks}
       footer={footer}
       url={url}

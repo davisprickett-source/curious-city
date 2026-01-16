@@ -3,10 +3,9 @@ import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityDarkHistory, getCityDarkHistorySection } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
-import { Footer, NewsletterSignup, RelatedContent, ShareLinks } from '@/components'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
-import Link from 'next/link'
 
 // Dynamically import heavy scroll component
 const DarkHistoryScroll = dynamic(
@@ -125,6 +124,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
           <DarkHistoryScroll
             items={items}
             cityName={city.name}
+            citySlug={city.slug}
             exploreLinks={[]}
             footer={<Footer />}
             url={url}

@@ -13,6 +13,7 @@ interface CuriosityItem {
   body: string
   category?: string
   year?: string
+  articleSlug?: string
   image?: {
     src: string
     alt?: string
@@ -46,6 +47,7 @@ interface CuriosityCardProps {
   index: number
   onInView?: () => void
   url: string
+  citySlug?: string
 }
 
 // Card entry animation variants with alternating left/right
@@ -244,7 +246,7 @@ function MetadataBox({ item }: { item: CuriosityItem }) {
   )
 }
 
-export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps) {
+export function CuriosityCard({ item, index, onInView, url, citySlug }: CuriosityCardProps) {
   const { ref, inView } = useInView({
     threshold: 0.3,
     triggerOnce: true,
@@ -375,6 +377,26 @@ export function CuriosityCard({ item, index, onInView, url }: CuriosityCardProps
           >
             {item.body}
           </motion.p>
+
+          {/* Read More Link - if article exists */}
+          {item.articleSlug && citySlug && (
+            <motion.div
+              variants={detailsVariants}
+              initial="hidden"
+              animate={inView ? 'visible' : 'hidden'}
+              className="mb-6"
+            >
+              <a
+                href={`/${citySlug}/articles/${item.articleSlug}`}
+                className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-semibold transition-colors group/link"
+              >
+                <span>Read the full story</span>
+                <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </motion.div>
+          )}
 
           {/* Video */}
           {item.video && (

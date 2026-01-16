@@ -10,6 +10,7 @@ import { FeedbackSection } from '../FeedbackSection'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { ShareButton } from '@/components/ShareButton'
+import { SaveButton } from '@/components/SaveButton'
 import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
 import { DrawerAd } from '@/components/ads/mobile/DrawerAd'
 import { NativeAdSection } from '@/components/ads/NativeAdCard'
@@ -23,6 +24,7 @@ interface DarkHistoryItem {
   category?: 'unsolved' | 'crime' | 'disaster' | 'mystery' | 'macabre' | 'haunting' | 'cold-case'
   year?: string
   verdict?: string
+  articleSlug?: string
   image?: {
     src: string
     alt?: string
@@ -59,6 +61,7 @@ interface DarkHistoryItem {
 interface MobileDarkHistoryLayoutProps {
   items: DarkHistoryItem[]
   cityName: string
+  citySlug: string
   exploreLinks?: ExploreLink[]
   footer?: React.ReactNode
   url: string
@@ -108,7 +111,7 @@ function getSourceIcon(type?: string) {
   }
 }
 
-function DarkHistorySection({ item, index, onSectionInView, url, title }: { item: DarkHistoryItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string }) {
+function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug }: { item: DarkHistoryItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string; citySlug?: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
     triggerOnce: false,
@@ -188,6 +191,21 @@ function DarkHistorySection({ item, index, onSectionInView, url, title }: { item
                 {item.body}
               </p>
 
+              {/* Read More Link - if article exists */}
+              {item.articleSlug && citySlug && (
+                <div className="mb-6">
+                  <a
+                    href={`/${citySlug}/articles/${item.articleSlug}`}
+                    className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-semibold transition-colors group/link"
+                  >
+                    <span>Read the full story</span>
+                    <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              )}
+
               {/* Location */}
               {item.location && (
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
@@ -259,8 +277,15 @@ function DarkHistorySection({ item, index, onSectionInView, url, title }: { item
                 </div>
               )}
 
-              <div className="flex justify-center">
+              <div className="flex justify-center gap-6">
                 <ShareButton title={title} url={url} />
+                <SaveButton
+                  name={item.title}
+                  description={item.body}
+                  address={item.location?.name}
+                  category={item.category}
+                  url={`${url}#${item.id}`}
+                />
               </div>
             </div>
           </div>
@@ -321,6 +346,21 @@ function DarkHistorySection({ item, index, onSectionInView, url, title }: { item
             <p className="text-lg text-neutral-700 leading-relaxed mb-6">
               {item.body}
             </p>
+
+            {/* Read More Link - if article exists */}
+            {item.articleSlug && citySlug && (
+              <div className="mb-6">
+                <a
+                  href={`/${citySlug}/articles/${item.articleSlug}`}
+                  className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-semibold transition-colors group/link"
+                >
+                  <span>Read the full story</span>
+                  <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            )}
 
             {/* Location */}
             {item.location && (
@@ -393,8 +433,15 @@ function DarkHistorySection({ item, index, onSectionInView, url, title }: { item
               </div>
             )}
 
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-6">
               <ShareButton title={title} url={url} />
+              <SaveButton
+                name={item.title}
+                description={item.body}
+                address={item.location?.name}
+                category={item.category}
+                url={`${url}#${item.id}`}
+              />
             </div>
           </motion.div>
         </div>
@@ -406,6 +453,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title }: { item
 export default function MobileDarkHistoryLayout({
   items,
   cityName,
+  citySlug,
   exploreLinks = [],
   footer,
   url
@@ -468,6 +516,7 @@ export default function MobileDarkHistoryLayout({
                 onSectionInView={handleSectionInView}
                 url={url}
                 title={item.title}
+                citySlug={citySlug}
               />
             </div>
 
