@@ -742,27 +742,6 @@ export const minneapolis: CityData = {
           size: 'banner',
         },
         {
-          id: 'curiosity-3',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Minnesota is the only state where kids play "Duck, Duck, Gray Duck"',
-          body: 'In 49 states, children play "Duck, Duck, Goose." In Minnesota, they play "Duck, Duck, Gray Duck" — and they will fight you about it. This isn\'t just a quirky name swap. In the Minnesota version, the person who\'s "it" calls out different adjectives before each duck ("green duck... spotted duck... sleeping duck... GRAY DUCK!"), adding a strategic deception element that Goose-playing states lack entirely.\n\nThe origin is genuinely mysterious. Leading theories trace it to Swedish immigrants who brought "Anka Anka Grå Anka" (literally "Duck Duck Gray Duck") to the Upper Midwest in the late 1800s. Others claim German roots. What\'s undisputed is Minnesota\'s absolute solitude on this issue — even neighboring Wisconsin plays Goose like civilized people.\n\nThe cultural divide has spawned academic research, viral maps, and legislative jokes. In 2019, the topic trended nationally when a linguistic map exposed Minnesota\'s isolation. MPR ran investigative segments. Minnesotans are famously passive-aggressive about most disagreements, but on Duck Duck Gray Duck, they\'re openly combative. Call it "Goose" at a backyard barbecue and you\'ll get corrected. Argue back and you\'ll get a lecture. This is the hill they\'ve chosen.',
-          sources: [
-            {
-              title: 'Minnesota folklore',
-              url: 'https://www.mnhs.org/',
-            },
-            {
-              title: 'Atlas Obscura: Duck Duck Gray Duck',
-              url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck',
-            }
-          ],
-          image: {
-            src: '/minneapolis/curiosities/duckduckgreyduck.png',
-            alt: 'Duck Duck Gray Duck game illustration',
-          },
-        },
-        {
           id: 'curiosity-4',
           type: 'curiosity',
           category: 'invention',
@@ -841,6 +820,82 @@ export const minneapolis: CityData = {
           image: {
             src: '/minneapolis/curiosities/twinkies.png',
             alt: 'The Twinkie Law scandal',
+          },
+        },
+        {
+          id: 'curiosity-jucy-lucy',
+          type: 'curiosity',
+          category: 'food',
+          title: 'Two bars have been fighting for 70 years over who invented the Jucy Lucy—and how to spell it',
+          images: [
+            {
+              src: '/minneapolis/curiosities/jucy-lucy-1.png',
+              alt: 'Jucy Lucy burger with molten cheese core',
+            },
+            {
+              src: '/minneapolis/curiosities/jucy-lucy-2.png',
+              alt: 'Matt\'s Bar vs 5-8 Club rivalry signage',
+            },
+          ],
+          body: 'Matt\'s Bar and the 5-8 Club sit three miles apart on Cedar Avenue. Both claim they invented the Jucy Lucy in the 1950s—a cheeseburger with the cheese stuffed inside the patty instead of on top. Matt\'s says a customer requested it in 1954 and exclaimed "that\'s one Jucy Lucy!" They rushed to print menus and forgot the "i," cementing the misspelling forever. The 5-8 Club spells it correctly and their staff wear shirts that say "if it\'s spelled right, it\'s done right." Matt\'s fires back: "Remember, if it is spelled correctly, you are eating a shameless rip-off!" In 2014, President Obama visited Matt\'s for a Jucy Lucy. The 5-8 Club immediately offered him one of theirs. The feud has been featured on Man v. Food, Food Wars, and in Time magazine. After seven decades, neither side has conceded. Minneapolis takes its burger spelling very seriously.',
+          sources: [
+            {
+              title: 'The Juicy Lucy: Two bars battling since 1950s over Minnesota\'s famous burger',
+              publisher: 'Star Tribune',
+              url: 'https://www.startribune.com/the-juicy-lucy-two-bars-battling-since-1950s-over-minnesota-s-famous-burger/429889883',
+            },
+            {
+              title: 'Why Matt\'s Bar Spells Jucy Lucy Differently',
+              publisher: 'KROC',
+              url: 'https://kroc.com/minnesota-juicy-lucy-origin-rivalry/',
+            },
+          ],
+          location: {
+            name: 'Matt\'s Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-presidential-streets',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Streets in Northeast are named after presidents in order—to help immigrants pass citizenship tests',
+          image: {
+            src: '/minneapolis/curiosities/presidential-streets.png',
+            alt: 'Northeast Minneapolis street signs showing presidential names in order',
+          },
+          body: 'Walk through Northeast Minneapolis and you\'ll notice something deliberate: the streets are named after U.S. presidents in the exact order they served. Washington, Adams, Jefferson, Madison, Monroe, Jackson—it continues through the entire sequence. This wasn\'t civic pride or patriotic decoration. It was infrastructure designed for education. In the early 1900s, Northeast was heavily populated by European immigrants—Poles, Germans, Scandinavians—working in the lumber mills and factories. Learning the presidents in order was required for the citizenship test. City planners decided to turn the neighborhood itself into a study guide. Every day, walking to work or school, immigrants would reinforce the sequence. It was urban planning as pedagogy. The streets remain a quiet reminder of a city that built learning into its geography.',
+          sources: [
+            {
+              title: 'Little-Known Facts About Minnesota\'s Twin Cities',
+              publisher: 'DWI Minneapolis Lawyer',
+              url: 'https://www.dwiminneapolislawyer.com/resources/little-known-facts-minnesotas-twin-cities/',
+            },
+          ],
+          location: {
+            name: 'Northeast Minneapolis',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'curiosity-3',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Minnesota is the only state where kids play "Duck, Duck, Gray Duck"',
+          body: 'In 49 states, children play "Duck, Duck, Goose." In Minnesota, they play "Duck, Duck, Gray Duck" — and they will fight you about it. This isn\'t just a quirky name swap. In the Minnesota version, the person who\'s "it" calls out different adjectives before each duck ("green duck... spotted duck... sleeping duck... GRAY DUCK!"), adding a strategic deception element that Goose-playing states lack entirely.\n\nThe origin is genuinely mysterious. Leading theories trace it to Swedish immigrants who brought "Anka Anka Grå Anka" (literally "Duck Duck Gray Duck") to the Upper Midwest in the late 1800s. Others claim German roots. What\'s undisputed is Minnesota\'s absolute solitude on this issue — even neighboring Wisconsin plays Goose like civilized people.\n\nThe cultural divide has spawned academic research, viral maps, and legislative jokes. In 2019, the topic trended nationally when a linguistic map exposed Minnesota\'s isolation. MPR ran investigative segments. Minnesotans are famously passive-aggressive about most disagreements, but on Duck Duck Gray Duck, they\'re openly combative. Call it "Goose" at a backyard barbecue and you\'ll get corrected. Argue back and you\'ll get a lecture. This is the hill they\'ve chosen.',
+          sources: [
+            {
+              title: 'Minnesota folklore',
+              url: 'https://www.mnhs.org/',
+            },
+            {
+              title: 'Atlas Obscura: Duck Duck Gray Duck',
+              url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck',
+            }
+          ],
+          image: {
+            src: '/minneapolis/curiosities/duckduckgreyduck.png',
+            alt: 'Duck Duck Gray Duck game illustration',
           },
         },
         {

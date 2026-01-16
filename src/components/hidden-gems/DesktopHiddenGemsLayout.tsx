@@ -1,15 +1,13 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiddenGemCard } from './HiddenGemCard'
-import { CompactNavigationDots } from './CompactNavigationDots'
 import { NewsletterSignup } from '../NewsletterSignup'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
-import { UniversalAd } from '@/components/ads/UniversalAd'
-import { createAdSlot } from '@/lib/ads/slots'
+import { NativeAdCard } from '@/components/ads/NativeAdCard'
 
 interface HiddenGemItem {
   id: string
@@ -52,9 +50,7 @@ export default function DesktopHiddenGemsLayout({
   footer,
   url
 }: DesktopHiddenGemsLayoutProps) {
-  const [activeIndex, setActiveIndex] = useState(0)
   const [scrollProgress, setScrollProgress] = useState(0)
-  const contentContainerRef = useRef<HTMLDivElement>(null)
 
   // Track scroll progress
   useEffect(() => {
@@ -69,17 +65,6 @@ export default function DesktopHiddenGemsLayout({
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  // Handle navigation to specific gem
-  const handleNavigate = (index: number) => {
-    const contentContainer = contentContainerRef.current
-    if (!contentContainer) return
-
-    const cards = contentContainer.querySelectorAll('[data-gem-card]')
-    if (cards[index]) {
-      cards[index].scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
-  }
 
   // Create page ID for ad targeting
   const pageId = `${cityName.toLowerCase().replace(/\s+/g, '-')}-hidden-gems`
@@ -104,46 +89,30 @@ export default function DesktopHiddenGemsLayout({
 
       {/* Single Column Layout */}
       <div className="max-w-7xl mx-auto px-8 py-16">
-        <div className="space-y-12" ref={contentContainerRef}>
+        <div className="space-y-12">
           {gems.map((gem, index) => (
             <div key={gem.id}>
-              <div data-gem-card>
-                <HiddenGemCard
-                  gem={gem}
-                  index={index}
-                  onInView={() => setActiveIndex(index)}
-                  url={url}
-                />
-              </div>
+              <HiddenGemCard
+                gem={gem}
+                index={index}
+                url={url}
+              />
 
-              {/* In-content ad every 4 gems (after 3rd, 7th, 11th, etc.) */}
-              {(index + 1) % 4 === 0 && index < gems.length - 1 && (
-                <div className="my-12 flex justify-center">
-                  <div className="max-w-md w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100">
-                    <div className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium mb-2 text-center">
-                      Sponsored
-                    </div>
-                    <UniversalAd
-                      slot={createAdSlot(
-                        `${pageId}-between-${index}`,
-                        'rectangle',
-                        { city: cityName, category: 'hidden-gems', position: 'between-entries' }
-                      )}
-                    />
-                  </div>
+              {/* Native ad card every 3 gems (after 3rd, 6th, 9th, etc.) */}
+              {(index + 1) % 3 === 0 && index < gems.length - 1 && (
+                <div className="my-12">
+                  <NativeAdCard
+                    pageId={pageId}
+                    index={index}
+                    targeting={{ city: cityName, category: 'hidden-gems' }}
+                    variant="listicle"
+                  />
                 </div>
               )}
             </div>
           ))}
         </div>
       </div>
-
-      {/* Compact Navigation Dots */}
-      <CompactNavigationDots
-        gems={gems}
-        activeIndex={activeIndex}
-        onNavigate={handleNavigate}
-      />
 
       {/* Outro Sections */}
       <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">

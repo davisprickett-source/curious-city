@@ -8,6 +8,8 @@ import { ShareButton } from '@/components/ShareButton'
 import { VideoHistoryScroll } from '@/components/VideoHistoryScroll'
 import { UniversalAd } from '@/components/ads/UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
+import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
+import { ArticleMobileAds } from '@/components/ads/ArticleMobileAds'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -105,7 +107,14 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
         currentSection="articles"
       />
 
-      <div className="city-page-wrapper">
+      <div className="city-page-wrapper relative">
+        {/* Desktop Sidebar Ads - utilize the blank space on both sides of narrow article content */}
+        <DualSidebarAds
+          pageId={`${citySlug}-article-${slug}`}
+          targeting={{ city: citySlug, type: 'article' }}
+          stickyTop={80}
+        />
+
         <main className="flex-1">
           {/* Article Header */}
           <article className="section-spacing">
@@ -218,6 +227,12 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
       </div>
 
       <Footer />
+
+      {/* Mobile Sticky Ad */}
+      <ArticleMobileAds
+        pageId={`${citySlug}-article-${slug}`}
+        citySlug={citySlug}
+      />
     </>
   )
 }

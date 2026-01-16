@@ -8,6 +8,7 @@ import { History } from '@/types/content'
 import { UnifiedNav } from './navigation/UnifiedNav'
 import { PremiumMobileMenu } from './PremiumMobileMenu'
 import { ShareButton } from './ShareButton'
+import { VideoEssayAds } from './ads/VideoEssayAds'
 import { getCity } from '@/data/cities'
 import { getCityFeaturedEntries } from '@/lib/content/cityHomepage'
 
@@ -609,6 +610,12 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
           </footer>
         </div>
       </div>
+
+      {/* Ads in letterbox areas (desktop) and sticky bottom (mobile) */}
+      <VideoEssayAds
+        pageId={`${history.citySlug}-video-essay-${history.slug}`}
+        citySlug={history.citySlug}
+      />
     </>
   )
 }

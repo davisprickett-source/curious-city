@@ -306,6 +306,47 @@ export const dallas: CityData = {
           },
         },
         {
+          id: 'dal-curiosity-cheerleaders',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Dallas invented modern NFL cheerleading by making it sexy and profitable',
+          images: [
+            {
+              src: '/dallas/curiosities/cheerleaders-1.png',
+              alt: 'Original 1972 Dallas Cowboys Cheerleaders squad',
+            },
+            {
+              src: '/dallas/curiosities/cheerleaders-2.png',
+              alt: 'Dallas Cowboys Cheerleaders iconic uniform',
+            },
+          ],
+          body: 'Before 1972, NFL cheerleaders were just local high school girls doing basic pep squad routines in frumpy sweaters. Then Cowboys president Tex Schramm decided to turn cheerleading into branded entertainment. He replaced the teenagers with women over 18, hired New York choreographer Texie Waterman to create professional dance routines, and commissioned Dallas designer Paula Van Wagoner to create the iconic uniform—hot pants, crop top, white boots, and a star-spangled vest. The squad became "America\'s Sweethearts," appearing on magazine covers and TV specials. They became more famous than some players. Every NFL team copied the formula. Their uniforms are now in the Smithsonian alongside the Star-Spangled Banner. Dallas took wholesome sideline entertainment, made it sexy and profitable, then convinced everyone else it was innovation.',
+          sources: [
+            {
+              type: 'article',
+              title: 'The Women Who Created the Dallas Cowboys Cheerleaders',
+              publisher: 'Texas Monthly',
+              url: 'https://www.texasmonthly.com/arts-entertainment/women-who-created-cowboys-cheerleaders/',
+            },
+            {
+              type: 'article',
+              title: 'History',
+              publisher: 'Dallas Cowboys Cheerleaders',
+              url: 'https://dallascowboyscheerleaders.com/history/',
+            },
+            {
+              type: 'article',
+              title: 'Dallas Cowboys Cheerleaders donate iconic uniforms',
+              publisher: 'Smithsonian National Museum of American History',
+              url: 'https://americanhistory.si.edu/explore/stories/dallas-cowboys-cheerleaders-donate-iconic-uniforms-museums-sports-collection',
+            },
+          ],
+          location: {
+            name: 'AT&T Stadium / Cowboys headquarters',
+            stillExists: true,
+          },
+        },
+        {
           id: 'dal-curiosity-ad-3',
           type: 'ad',
           size: 'banner',

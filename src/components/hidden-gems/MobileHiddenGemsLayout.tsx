@@ -11,8 +11,7 @@ import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { ShareButton } from '@/components/ShareButton'
 import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
 import { DrawerAd } from '@/components/ads/mobile/DrawerAd'
-import { UniversalAd } from '@/components/ads/UniversalAd'
-import { createAdSlot } from '@/lib/ads/slots'
+import { NativeAdSection } from '@/components/ads/NativeAdCard'
 import { useAdTrigger } from '@/components/ads/AdTrigger'
 import { mobileAdConfig } from '@/lib/ads/config'
 
@@ -549,23 +548,14 @@ export default function MobileHiddenGemsLayout({
               />
             </div>
 
-            {/* In-content ad every 4 gems (after 3rd, 7th, 11th, etc.) - mobile only */}
-            {(index + 1) % 4 === 0 && index < gems.length - 1 && (
-              <div className="py-8 px-4 bg-neutral-50 lg:hidden">
-                <div className="max-w-md mx-auto">
-                  <div className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium mb-2 text-center">
-                    Sponsored
-                  </div>
-                  <div className="bg-white rounded-xl p-4 shadow-sm border border-neutral-100">
-                    <UniversalAd
-                      slot={createAdSlot(
-                        `${pageId}-between-${index}`,
-                        'rectangle',
-                        { city: cityName, category: 'hidden-gems', position: 'between-entries' }
-                      )}
-                    />
-                  </div>
-                </div>
+            {/* Native ad section every 3 gems (after 3rd, 6th, 9th, etc.) - mobile only */}
+            {(index + 1) % 3 === 0 && index < gems.length - 1 && (
+              <div className="lg:hidden">
+                <NativeAdSection
+                  pageId={pageId}
+                  index={index}
+                  targeting={{ city: cityName, category: 'hidden-gems' }}
+                />
               </div>
             )}
           </div>

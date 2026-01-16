@@ -94,18 +94,11 @@ const detailsVariants = {
   },
 }
 
-function NumberBadge({ number, category }: { number: number; category?: string }) {
-  const categoryStyles = category ? getCategoryStyle(category) : getCategoryStyle('default')
-
+function NumberBadge({ number }: { number: number }) {
   return (
     <div className="flex-shrink-0">
       {/* Main badge */}
-      <div
-        className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white bg-gradient-to-br"
-        style={{
-          backgroundImage: `linear-gradient(to bottom right, ${categoryStyles.dotColor}, ${categoryStyles.borderColor})`,
-        }}
-      >
+      <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white bg-gradient-to-br from-accent-500 to-accent-700">
         <span className="text-xl font-bold text-white">{number}</span>
       </div>
     </div>
@@ -224,11 +217,11 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
           {/* Minimalistic Expand Button - No Background */}
           <button
             onClick={() => setIsImageExpanded(true)}
-            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 group"
+            className="absolute bottom-4 right-4 text-white drop-shadow-lg transition-all duration-200 z-10 p-2 rounded-lg hover:bg-black/20"
             aria-label="Expand image"
           >
             <svg
-              className="w-5 h-5 transition-transform group-hover:scale-125"
+              className="w-5 h-5 transition-transform hover:scale-125"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -246,7 +239,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
       {/* Right Column - Content (65%) - Scrollable */}
       <div className={`flex-1 flex flex-col overflow-hidden ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-auto p-8 lg:p-10 scroll-smooth [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-neutral-400">
+        <div className="flex-1 overflow-y-auto p-8 lg:p-10 scroll-smooth card-scrollbar">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -254,7 +247,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
             animate={inView ? 'visible' : 'hidden'}
             className="flex items-start gap-6 mb-6"
           >
-            <NumberBadge number={index + 1} category={gem.category} />
+            <NumberBadge number={index + 1} />
 
             <div className="flex-1 min-w-0">
               <h3 className="text-2xl lg:text-3xl font-bold text-neutral-900 leading-tight">

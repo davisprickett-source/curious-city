@@ -198,12 +198,12 @@ export const desktopAdConfig: DesktopAdConfig = {
   sidebars: {
     enabled: true,
     positions: ['left', 'right'],
-    minViewportWidth: 1400, // Only show on screens wider than 1400px
+    minViewportWidth: 1024, // Show on lg+ screens (covers tablets/small laptops)
     size: 'skyscraper', // 160x600
   },
   mapSidebar: {
     enabled: true,
     position: 'left',
-    minViewportWidth: 1280, // Show on xl+ screens
+    minViewportWidth: 1024, // Show on lg+ screens
   },
 }
