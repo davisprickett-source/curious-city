@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiddenGemCard } from './HiddenGemCard'
 import { NewsletterSignup } from '../NewsletterSignup'
+import { FeedbackSection } from '../FeedbackSection'
 import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
@@ -116,19 +117,17 @@ export default function DesktopHiddenGemsLayout({
 
       {/* Outro Sections */}
       <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
-        <div className="max-w-5xl mx-auto space-y-20 px-6 pb-20">
+        <div className="max-w-5xl mx-auto space-y-16 px-6 pb-20">
           {/* Share Links */}
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
             <div className="flex justify-center">
-              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} />
+              <ShareLinks title={`${cityName}'s Hidden Gems`} url={url} variant="banner" />
             </div>
           </div>
 
           {/* Newsletter Signup */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <NewsletterSignup />
-          </div>
+          <NewsletterSignup variant="dark" />
 
           {/* Explore More Section */}
           <div className="text-center space-y-12">
@@ -151,24 +150,7 @@ export default function DesktopHiddenGemsLayout({
           </div>
 
           {/* Feedback Section */}
-          <div className="max-w-3xl mx-auto bg-accent-600/20 backdrop-blur-sm rounded-2xl p-10 border border-accent-600/30 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Missing something?
-            </h3>
-            <p className="text-lg text-neutral-200 mb-8 leading-relaxed">
-              Know a hidden gem we missed? Or have a correction for one of our entries?
-              We'd love to hear from you.
-            </p>
-            <a
-              href="mailto:hello@curiouscity.com"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-accent-600 font-bold rounded-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              Send Feedback
-            </a>
-          </div>
+          <FeedbackSection variant="dark" pageTitle={`${cityName}'s Hidden Gems`} />
         </div>
 
         {/* Integrated Footer */}

@@ -97,7 +97,7 @@ export function ShareLinks({ title, url, variant = 'default' }: ShareLinksProps)
   const buttonSize = variant === 'compact' ? 'px-3 py-1.5 text-xs' : variant === 'banner' ? 'px-5 py-2.5 text-base' : 'px-4 py-2 text-sm'
   const buttonColors = variant === 'banner'
     ? 'text-white hover:text-white hover:bg-white/20 border-2 border-white/40 hover:border-white/60'
-    : 'text-neutral-500 hover:text-neutral-700 hover:bg-neutral-100'
+    : 'text-[#c65d3b] hover:text-[#a54d30] hover:bg-[#c65d3b]/10'
   const iconSize = variant === 'banner' ? 'w-5 h-5' : 'w-4 h-4'
 
   return (

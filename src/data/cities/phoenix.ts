@@ -132,35 +132,6 @@ export const phoenix: CityData = {
           },
         },
         {
-          id: 'phx-curiosity-4',
-          type: 'curiosity',
-          category: 'science',
-          title: 'Phoenix had 31 consecutive days over 110°F in 2023',
-          body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds. The heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Climate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal.',
-          image: {
-            src: '/phoenix/curiosities/heat-wave.png',
-            alt: 'Phoenix heat wave thermometer showing extreme temperatures',
-          },
-          sources: [
-            {
-              title: 'National Weather Service: Phoenix Heat Records',
-              url: 'https://www.weather.gov/psr/Heat',
-            },
-            {
-              title: 'Maricopa County: Heat Surveillance',
-              url: 'https://www.maricopa.gov/1858/Heat-Surveillance',
-            },
-            {
-              title: 'Scientific American: Phoenix is Testing the Limits of Heat',
-              url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
-            },
-          ],
-          location: {
-            name: 'Phoenix',
-            stillExists: true,
-          },
-        },
-        {
           id: 'phx-curiosity-5',
           type: 'curiosity',
           category: 'law',
@@ -263,22 +234,6 @@ export const phoenix: CityData = {
           },
         },
         {
-          id: 'phx-curiosity-9',
-          type: 'curiosity',
-          category: 'underground',
-          title: 'There\'s an underground bus station that leads nowhere',
-          body: 'The Central Station bus terminal downtown includes an underground concourse that tunnels beneath Central Avenue. Built in the 1980s, it was part of an ambitious plan to create a network of underground walkways to escape the heat. The larger network was never completed, but the existing tunnels are still used daily by commuters who\'d rather not wait in 115-degree heat.',
-          image: {
-            src: '/phoenix/curiosities/bus-tunnel.png',
-            alt: 'Underground bus station concourse beneath downtown Phoenix',
-          },
-          source: 'Valley Metro',
-          location: {
-            name: 'Central Station',
-            stillExists: true,
-          },
-        },
-        {
           id: 'phx-curiosity-10',
           type: 'curiosity',
           category: 'history',
@@ -327,29 +282,24 @@ export const phoenix: CityData = {
           id: 'phx-curiosity-12',
           type: 'curiosity',
           category: 'nature',
-          title: 'The Sonoran Desert is the most biodiverse desert on Earth',
-          body: 'The saguaro cactus grows naturally nowhere else in the world. The Sonoran Desert supports over 2,000 plant species, 550 vertebrate species, and is the only place jaguars still roam in the U.S. Phoenix has paved over much of this ecosystem, but it persists at the city\'s edges—and occasionally sends javelinas wandering through suburban backyards.',
+          title: 'The Sonoran Desert is the only place on Earth where saguaros grow—and jaguars hunt',
+          body: 'The Sonoran Desert is the wettest, hottest, and most biodiverse desert on the planet—supporting over 2,000 plant species and 550 vertebrates. The saguaro cactus, Arizona\'s 40-foot sentinel, grows naturally nowhere else in the world. It takes 10 years to grow one inch, 75 years to sprout its first arm, and can live 200 years. But the real surprise? This is the only place in the United States where wild jaguars still roam. These desert jaguars—smaller and more heat-adapted than their rainforest cousins—hunt mule deer and javelinas in the mountains ringing Phoenix. Trail cameras occasionally capture them prowling through the Superstitions or Catalinas. Meanwhile, javelinas (desert pigs with terrible eyesight and worse attitudes) regularly wander through Phoenix suburbs, eating landscaping and terrifying dogs. Coyotes adapt seamlessly to urban life, hunting rabbits in golf courses and cooling off in backyard pools. Phoenix paved over much of this ecosystem, but the desert persists at the edges—and occasionally reminds residents they\'re just guests.',
           image: {
             src: '/phoenix/curiosities/desert.png',
             alt: 'Biodiverse Sonoran Desert landscape near Phoenix',
           },
-          source: 'Arizona-Sonora Desert Museum',
-        },
-        {
-          id: 'phx-curiosity-13',
-          type: 'curiosity',
-          category: 'science',
-          title: 'The pavement will give you third-degree burns in seconds',
-          body: 'Asphalt and concrete absorb heat all day and radiate it at night, creating an "urban heat island" effect that makes Phoenix even hotter than surrounding desert. Ground surfaces can exceed 170°F—hot enough to cause third-degree burns in seconds. Phoenix is experimenting with reflective "cool pavement" coatings to reduce temperatures. Early results show it works in theory but feels hotter to pedestrians because it reflects heat upward.',
-          image: {
-            src: '/phoenix/curiosities/pavement-heat.png',
-            alt: 'Phoenix pavement showing extreme heat damage and temperature readings',
-          },
-          source: 'Arizona State University Urban Climate Research Center',
-          location: {
-            name: 'Phoenix',
-            stillExists: true,
-          },
+          sources: [
+            {
+              title: 'The Saguaro Cactus',
+              publisher: 'National Park Service',
+              url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm',
+            },
+            {
+              title: 'Jaguars in Arizona',
+              publisher: 'Arizona-Sonora Desert Museum',
+              url: 'https://www.desertmuseum.org/',
+            },
+          ],
         },
         {
           id: 'phx-curiosity-bunker',
@@ -369,22 +319,6 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park, Phoenix',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-14',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Phoenix is larger than Los Angeles by land area',
-          body: 'Phoenix proper covers 519 square miles—larger than Los Angeles (469 sq mi) and nearly three times the size of Chicago. The sprawl is relentless: you can drive for an hour and never leave the metro area. There\'s effectively no public transit culture. The car dependency makes the city uniquely vulnerable to gas price shocks.',
-          image: {
-            src: '/phoenix/curiosities/bigger-than-la.png',
-            alt: 'Phoenix urban sprawl larger than Los Angeles by area',
-          },
-          source: 'US Census Bureau',
-          location: {
-            name: 'Phoenix',
             stillExists: true,
           },
         },
@@ -430,27 +364,48 @@ export const phoenix: CityData = {
           },
         },
         {
-          id: 'phx-curiosity-ancient-houses',
+          id: 'phx-curiosity-dreamy-draw',
           type: 'curiosity',
           category: 'history',
-          title: 'They built a convention center on top of 3,000-year-old houses',
-          body: 'In 2006, while demolishing the old Phoenix Civic Plaza for the new convention center, archaeologists found something: Hohokam houses. Three thousand years old. Older than Rome. Older than the pyramids at Giza by a millennium. The Hohokam had built an entire neighborhood here, with pit houses, storage pits, and cooking hearths. Phoenix had unknowingly paved over them in the 1970s, then held conferences and trade shows on top of ancient homes for decades. The archaeologists excavated what they could before construction deadlines forced them to stop. Most of the site was destroyed. The convention center opened on schedule in 2008. Somewhere under the ballrooms and expo halls, 3,000 years of Indigenous history is buried under concrete. Phoenix keeps building on graves.',
-          image: {
-            src: '/phoenix/curiosities/ancient-houses.png',
-            alt: 'Archaeological excavation of 3,000-year-old Hohokam houses under Phoenix Convention Center',
-          },
+          title: 'Dreamy Draw got its name from mercury-poisoned miners who looked "dreamy"',
+          body: 'In December 1916, Sam Hughes discovered cinnabar deposits—mercury sulfide—in the hills north of Phoenix. He built the Rico Mine, erected a retort furnace, and started processing mercury. Mercury mining sounds technical until you learn the side effects: neurotoxic exposure causes tremors, mood swings, and a dazed, vacant expression. When the miners came to town, Phoenix residents noticed they looked rather "dreamy"—spaced out, glassy-eyed, like they\'d just smoked something profound. They hadn\'t. They\'d been breathing vaporized mercury. The area became known as Dreamy Draw, a cheerful name for heavy metal poisoning. Total production: about 5,000 pounds of mercury. The Rico Mine is now buried under the SR-51 and Northern Avenue interchange. Mercury Mine Elementary School\'s softball field sits above a filled-in mercury mine. The Dreamy Draw Recreation Area remains one of Phoenix\'s most popular hiking spots—named after neurological damage.',
           sources: [
             {
-              title: 'ASU News: Historic Photos of Phoenix',
-              url: 'https://news.asu.edu/content/historic-photos-phoenix-blend-facts-stories-and-photography',
+              title: 'Mercury mining in the Phoenix Mountains',
+              publisher: 'wryheat',
+              url: 'https://wryheat.wordpress.com/2013/09/27/mercury-mining-in-the-phoenix-mountains/',
             },
             {
-              title: 'Visit Phoenix: Unique Facts About Phoenix History',
-              url: 'https://www.visitphoenix.com/stories/post/11-unique-facts-you-didnt-know-about-phoenixs-history/',
+              title: 'How Dreamy Draw In Phoenix Got Its Name',
+              publisher: 'KJZZ',
+              url: 'https://kjzz.org/content/5252/did-you-know-how-dreamy-draw-phoenix-got-its-name',
             },
           ],
           location: {
-            name: 'Phoenix Convention Center',
+            name: 'Dreamy Draw Recreation Area',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-make-a-wish',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Make-A-Wish was founded in Phoenix for a 7-year-old who wanted to be a cop',
+          body: 'In 1980, Christopher James Greicius, an energetic 7-year-old boy battling leukemia, had one wish: to be a police officer. His Phoenix community rallied. The Arizona Department of Public Safety gave him a helicopter ride, a custom uniform, and made him an honorary highway patrol officer. They took him on an aerial patrol. He rode a motorcycle. For one day, Chris wasn\'t a sick kid—he was Officer Greicius. He passed away three days later, on May 3, 1980. The experience profoundly moved everyone involved. That summer, Linda Pauling, Frank Shankwitz (a DPS officer), Tommy Austin, and a small group of volunteers founded the Make-A-Wish Foundation in Phoenix. Chris\'s wish was the first. Since then, Make-A-Wish has granted over 550,000 wishes worldwide. It all started with a 7-year-old boy, a Phoenix community, and a helicopter ride.',
+          sources: [
+            {
+              title: 'Our History',
+              publisher: 'Make-A-Wish Foundation',
+              url: 'https://wish.org/about-us',
+            },
+            {
+              title: 'The history of Make-A-Wish: The first wish granted',
+              publisher: 'World Wish',
+              url: 'https://worldwish.org/about-us/history/',
+            },
+          ],
+          location: {
+            name: 'Phoenix',
             stillExists: true,
           },
         },
@@ -503,7 +458,7 @@ export const phoenix: CityData = {
           name: 'Desert Botanical Garden',
           category: 'Garden',
           description:
-            '140 acres of desert plants from around the world. The saguaros, the wildflower trails, and the evening flashlight tours are all excellent. Best visited at sunrise or after dark when the desert comes alive. The butterfly pavilion in spring draws crowds.',
+            'Founded by the Arizona Cactus and Native Flora Society in 1937, established at this site in 1939. 140 acres total, 55 acres under cultivation. Over 50,000 displays of desert plants. Iconic saguaro cacti everywhere. The Harriet K. Maxwell Desert Wildflower Loop Trail—third of a mile, best for birds, bees, butterflies. The Maxine & Jonathan Marshall Butterfly Pavilion houses thousands of butterflies in 3,200 square feet. Evening flashlight tours. Best visited sunrise or after dark when the desert actually comes alive and temperatures allow human survival.',
           images: [
             {
               src: '/phoenix/hidden-gems/botantical-garden.png',
@@ -523,7 +478,7 @@ export const phoenix: CityData = {
           name: 'Camelback Mountain',
           category: 'Hike',
           description:
-            'The most iconic Phoenix hike — steep, rocky, and crowded, but the views are worth it. Two trails: Echo Canyon (harder) and Cholla (slightly easier). Start early or don\'t go. In summer, the trail closes when temperatures exceed 100°F. This is Phoenix\'s proving ground.',
+            'A geologic unconformity: the summit is 1.5-billion-year-old Precambrian granite, the camel\'s "head" is 25-million-year-old red sandstone. The Hohokam used a north-side cave as a sacred site before abandoning the area in the 14th century. Archaeologists found reed cigarettes and ancient artifacts. In 1879, President Rutherford B. Hayes included it in a one-million-acre Salt River Pima-Maricopa reservation. Barry Goldwater secured it as Phoenix city park in 1968. Two trails, both Extremely Difficult: Echo Canyon gains 1,530 feet in a mile. Cholla is 1.5 miles one-way, 1,250-foot gain. Summer trail closure above 100°F. Start before 6am. This is Phoenix\'s proving ground.',
           images: [
             {
               src: '/phoenix/hidden-gems/camelback-mountain.png',
@@ -601,7 +556,7 @@ export const phoenix: CityData = {
           name: 'Musical Instrument Museum',
           category: 'Museum',
           description:
-            'Over 8,000 instruments from around the world with audio/video displays. Unexpectedly fascinating even if you\'re not into music. Plan for at least 3 hours. The Experience Gallery lets you play instruments from around the world. Headphones activate automatically as you approach each exhibit.',
+            'Robert J. Ulrich (former Target CEO) and friend Marc Felix visited the Musical Instruments Museum in Brussels. Ulrich donated $200 million to a $250 million project. Opened April 24, 2010 with 6,800 instruments. Now holds over 15,000 musical instruments and objects from nearly 200 countries. Largest museum of its type in the world. Headphones activate automatically as you approach each exhibit. The Experience Gallery lets you play instruments from around the world. Unexpectedly fascinating even if you\'re not into music. Plan 3+ hours.',
           images: [
             {
               src: '/phoenix/hidden-gems/music-museum.png',
@@ -630,7 +585,7 @@ export const phoenix: CityData = {
           name: 'Tovrea Castle',
           category: 'Unusual Architecture',
           description:
-            'Three-tiered "wedding cake" castle built 1928-1930. Originally planned as resort hotel, never opened. Features giant steel pyramid memorial to Edward Tovrea. 90-minute guided tours by appointment only. Visible from I-10 but inaccessible to most.',
+            'Alessio Carraro made his fortune in sheet metal, bought 277 acres in 1928, and dreamed of a desert resort destination called Carraro Heights. He and his son Leo built a vernacular Italianate hotel centerpiece from 1929-1931—tiered like a wedding cake, based on Italian architecture. Then the stock market crashed. In 1931, cattleman E.A. Tovrea and his wife Della bought the castle with 44 acres from Carraro. E.A. died within a year. Della lived there until 1969. Contrary to legend, Tovrea didn\'t build it for his wife as a wedding cake replica—that\'s romanticism invented later. The Tovrea Carraro Society now runs 90-minute tours of the grounds, first floor, and basement. Book months ahead. Visible from I-10 but inaccessible without a tour.',
           images: [
             {
               src: '/phoenix/hidden-gems/tovrea-castle.png',
@@ -650,7 +605,7 @@ export const phoenix: CityData = {
           name: 'Pioneer and Military Memorial Park (Block 32)',
           category: 'Historic Cemetery',
           description:
-            'Seven historic cemeteries founded in 1884, officially renamed in 2007. Contains 3,700 estimated burials but fewer than 600 have headstones. Includes graves of Darrell Duppa (who named Phoenix) and Jacob Waltz (Lost Dutchman Mine). Potter\'s field with common graves for unclaimed bodies. Closed to new burials in 1914.',
+            'In 1884, the city council bought Block 32—ruins of a pre-Columbian Hohokam community called "La Villa"—because citizens worried train passengers\' first view of Phoenix was a cemetery "right at the door of our beautiful city." Seven cemeteries operated here between 1884-1914: AOUW, IOOF, Knights of Pythias, Loosley (City Cemetery), Masons, Porter, and Rosedale. Closed to burials in 1914 by new city law. Renamed Pioneer and Military Memorial Park February 1, 2007. Estimated 3,700 burials, fewer than 600 with headstones. Darrell Duppa (Englishman who named Phoenix and Tempe) buried in Masons section. Jacob Waltz (German immigrant, Lost Dutchman gold secret) buried in City/Loosley section. Potter\'s field for unclaimed bodies. History layered on Hohokam ruins.',
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-cemetery-2.png',
@@ -677,7 +632,7 @@ export const phoenix: CityData = {
           name: 'Hunt\'s Tomb',
           category: 'Historic Oddity',
           description:
-            'White pyramid structure in Papago Park. Final resting place of Arizona\'s first governor George W.P. Hunt. Built in 1931, Hunt placed there in 1934. Overshadowed by more popular Papago Park features — most visitors never notice the pyramid.',
+            'George W.P. Hunt served as Arizona\'s first governor—seven terms between February 1912 and January 1933. When his wife Helen Duett Ellison Hunt died in 1931, Hunt built a 20-foot-tall pyramid faced with white bathroom tile, inspired by Egyptian pyramids he\'d visited with her. Helen was entombed April 4, 1933. Hunt died from heart failure December 24, 1934, and joined her. Seven people total buried inside: the Hunts, Helen\'s sister and parents, plus the Hunts\' daughter and her husband. Listed on National Register of Historic Places in 2008. Sits atop a Papago Park hill, overshadowed by Hole in the Rock. Most visitors drive past without noticing Arizona\'s first governor is buried in a tiled pyramid.',
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-hunts-0.png',
@@ -2113,6 +2068,66 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Gila River Indian Reservation',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-dark-12',
+          type: 'dark-history',
+          category: 'disaster',
+          year: '2023',
+          title: 'The Summer That Killed 645 People',
+          body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds.\n\nThe heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Many deaths occurred at home when air conditioning failed or victims couldn\'t afford to run it. The medical examiner\'s office was overwhelmed.\n\nClimate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal. The city exists because of air conditioning, and when that fails during a heat wave, Phoenix becomes genuinely lethal within hours.',
+          verdict: '645 heat-related deaths in one summer. More than any county in America. The toll continues to rise.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Phoenix Heat Records',
+              publisher: 'National Weather Service',
+              url: 'https://www.weather.gov/psr/Heat',
+            },
+            {
+              type: 'article',
+              title: 'Heat Surveillance',
+              publisher: 'Maricopa County',
+              url: 'https://www.maricopa.gov/1858/Heat-Surveillance',
+            },
+            {
+              type: 'article',
+              title: 'Phoenix is Testing the Limits of Heat',
+              publisher: 'Scientific American',
+              url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
+            },
+          ],
+          location: {
+            name: 'Phoenix',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-dark-13',
+          type: 'dark-history',
+          category: 'injustice',
+          year: '2006–2008',
+          title: 'They Built a Convention Center on Top of 3,000-Year-Old Houses',
+          body: 'In 2006, while demolishing the old Phoenix Civic Plaza for the new convention center, archaeologists found something: Hohokam houses. Three thousand years old. Older than Rome. Older than the pyramids at Giza by a millennium. The Hohokam had built an entire neighborhood here, with pit houses, storage pits, and cooking hearths. Phoenix had unknowingly paved over them in the 1970s, then held conferences and trade shows on top of ancient homes for decades.\n\nThe archaeologists excavated what they could before construction deadlines forced them to stop. The site revealed unprecedented evidence of Phoenix\'s earliest inhabitants—tools, pottery, and architectural details that could have rewritten understanding of Hohokam culture. Most of the site was destroyed anyway. The convention center opened on schedule in 2008.\n\nSomewhere under the ballrooms and expo halls, 3,000 years of Indigenous history is buried under concrete. No memorial. No plaque. Just carpet, fluorescent lights, and business conventions. Phoenix keeps building on graves.',
+          verdict: 'The houses were destroyed. The convention center remains. The Hohokam are still buried beneath it.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Historic Photos of Phoenix',
+              publisher: 'ASU News',
+              url: 'https://news.asu.edu/content/historic-photos-phoenix-blend-facts-stories-and-photography',
+            },
+            {
+              type: 'article',
+              title: 'Unique Facts About Phoenix History',
+              publisher: 'Visit Phoenix',
+              url: 'https://www.visitphoenix.com/stories/post/11-unique-facts-you-didnt-know-about-phoenixs-history/',
+            },
+          ],
+          location: {
+            name: 'Phoenix Convention Center',
             stillExists: true,
           },
         },

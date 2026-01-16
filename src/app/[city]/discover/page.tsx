@@ -5,6 +5,8 @@ import { getCityListiclePages } from '@/lib/content/cityHomepage'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { SubsectionCard } from '@/components/SubsectionCard'
+import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
+import { NativeAdCard } from '@/components/ads/NativeAdCard'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface DiscoverPageProps {
@@ -70,6 +72,7 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
   }
 
   const listiclePages = await getCityListiclePages(slug)
+  const pageId = `${slug}-discover`
 
   return (
     <>
@@ -87,6 +90,13 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
       />
 
       <div className="city-page-wrapper">
+        {/* Desktop Sidebar Ads (visible on 1400px+ screens) */}
+        <DualSidebarAds
+          pageId={pageId}
+          targeting={{ city: city.name, category: 'discover' }}
+          stickyTop={80}
+        />
+
         <main className="flex-1 bg-white">
           {/* Hero Header */}
           <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
@@ -107,18 +117,32 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
           {listiclePages.length > 0 ? (
             <div className="container-page py-10 md:py-14">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {listiclePages.map((page) => {
+                {listiclePages.map((page, index) => {
                   const style = typeStyles[page.type] || typeStyles.curiosities
+                  const showAdAfter = (index + 1) % 4 === 0 && index < listiclePages.length - 1
+
                   return (
-                    <SubsectionCard
-                      key={page.type}
-                      title={page.title}
-                      teaser={page.teaser}
-                      href={page.href}
-                      thumbnail={page.thumbnail ? { src: page.thumbnail, alt: page.title } : undefined}
-                      gradient={style.gradient}
-                      fallbackGradient={style.fallback}
-                    />
+                    <>
+                      <SubsectionCard
+                        key={page.type}
+                        title={page.title}
+                        teaser={page.teaser}
+                        href={page.href}
+                        thumbnail={page.thumbnail ? { src: page.thumbnail, alt: page.title } : undefined}
+                        gradient={style.gradient}
+                        fallbackGradient={style.fallback}
+                      />
+                      {showAdAfter && (
+                        <div className="md:col-span-2" key={`ad-${index}`}>
+                          <NativeAdCard
+                            pageId={pageId}
+                            index={Math.floor(index / 4)}
+                            targeting={{ city: city.name, category: 'discover' }}
+                            variant="minimal"
+                          />
+                        </div>
+                      )}
+                    </>
                   )
                 })}
               </div>

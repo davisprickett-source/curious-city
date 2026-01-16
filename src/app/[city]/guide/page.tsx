@@ -3,6 +3,8 @@ import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { SubsectionCard } from '@/components/SubsectionCard'
+import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
+import { NativeAdSection } from '@/components/ads/NativeAdCard'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { BreadcrumbSchema } from '@/components/StructuredData'
@@ -55,6 +57,9 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const restaurantSpot = getFirstSpotWithImage(restaurantsList)
   const coffeeSpot = getFirstSpotWithImage(coffeeList)
 
+  // Create page ID for ad targeting
+  const pageId = `${slug}-guide`
+
   // Only establishment categories - listicles (hidden gems, local favorites, lost & loved) are in Discover
   const guideCategories = [
     {
@@ -99,6 +104,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
       />
 
       <div className="city-page-wrapper">
+        {/* Desktop Sidebar Ads (visible on 1400px+ screens) */}
+        <DualSidebarAds
+          pageId={pageId}
+          targeting={{ city: city.name, category: 'guide' }}
+          stickyTop={80}
+        />
+
         <main className="flex-1">
           {/* Hero Section */}
           <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
@@ -131,6 +143,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
               ))}
             </div>
           </div>
+
+          {/* Native Ad Section */}
+          <NativeAdSection
+            pageId={pageId}
+            index={0}
+            targeting={{ city: city.name, category: 'guide' }}
+          />
 
           {/* How We Curate */}
           <div className="bg-neutral-50 py-16">

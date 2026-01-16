@@ -1,7 +1,7 @@
 import { getArticle } from '@/lib/queries/articles'
 import { getCity } from '@/data/cities'
 import { getHistory } from '@/data/history'
-import { Footer, RelatedContent, NewsletterSignup, ShareLinks } from '@/components'
+import { Footer, RelatedContent, NewsletterSignup, FeedbackSection, ShareLinks } from '@/components'
 import { ArticleRenderer } from '@/components/ArticleRenderer'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { ShareButton } from '@/components/ShareButton'
@@ -211,17 +211,8 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             {/* 3. Explore More */}
             <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
 
-            {/* 4. Feedback (placeholder) */}
-            <div className="bg-neutral-50 p-6 rounded-lg text-center">
-              <h3 className="text-xl font-bold mb-2 text-neutral-800">Your Feedback Matters!</h3>
-              <p className="text-neutral-600 mb-4">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
-              >
-                Send Feedback
-              </Link>
-            </div>
+            {/* 4. Feedback */}
+            <FeedbackSection pageTitle={article.title} />
           </div>
         </main>
       </div>
