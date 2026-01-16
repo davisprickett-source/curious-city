@@ -1,23 +1,12 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import { getCity, getAllCitySlugs, getCityLostAndLoved, getCityLostAndLovedSection } from '@/data/cities'
 import { ShareButton } from '@/components/ShareButton'
-import { Footer, RelatedContent, NewsletterSignup, ShareLinks } from '@/components'
+import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { BreadcrumbSchema } from '@/components/StructuredData'
-import Link from 'next/link'
-
-// Dynamically import the scroll component (client-only)
-const LostLovedScroll = dynamic(() => import('@/components/LostLovedScroll').then(mod => ({ default: mod.LostLovedScroll })), {
-  loading: () => (
-    <div className="container-page py-20 text-center">
-      <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-neutral-900 border-r-transparent"></div>
-      <p className="mt-4 text-neutral-500">Loading...</p>
-    </div>
-  ),
-  ssr: false,
-})
+import LostLovedScroll from '@/components/lost-and-loved/LostLovedScroll'
+import { getExploreLinks } from '@/lib/content/cityHomepage'
 
 interface PageProps {
   params: Promise<{ city: string }>
@@ -57,6 +46,9 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
 
   const items = await getCityLostAndLoved(slug)
   const section = await getCityLostAndLovedSection(slug)
+
+  // Get explore links for bottom section
+  const exploreLinks = await getExploreLinks(slug, city.name, 'lost-and-loved')
 
   const url = `https://thecurious.city/${slug}/lost-and-loved`
 
@@ -108,36 +100,15 @@ export default async function CityLostAndLovedPage({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Premium Scroll Component */}
-          <LostLovedScroll items={items} cityName={city.name} />
-
-          {/* End of Page Flow */}
-          <div className="container-page py-12 space-y-8">
-            {/* 1. Share (bottom) */}
-            <ShareLinks title={`${city.name}'s Lost & Loved`} url={url} />
-
-            {/* 2. Subscribe */}
-            <NewsletterSignup />
-
-            {/* 3. Explore More */}
-            <RelatedContent citySlug={city.slug} contentType="lost-and-loved" />
-
-            {/* 4. Feedback (placeholder) */}
-            <div className="bg-neutral-50 p-6 rounded-lg text-center">
-              <h3 className="text-xl font-bold mb-2 text-neutral-800">Your Feedback Matters!</h3>
-              <p className="text-neutral-600 mb-4">Help us improve Curious City by sharing your thoughts on this page or any suggestions you have.</p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-600 hover:bg-accent-700 transition-colors shadow-sm"
-              >
-                Send Feedback
-              </Link>
-            </div>
-          </div>
+          <LostLovedScroll
+            items={items}
+            cityName={city.name}
+            exploreLinks={exploreLinks}
+            footer={<Footer />}
+            url={url}
+          />
         </main>
       </div>
-
-      <Footer />
     </>
   )
 }

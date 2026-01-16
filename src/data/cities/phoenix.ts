@@ -158,6 +158,93 @@ export const phoenix: CityData = {
           size: 'rectangle',
         },
         {
+          id: 'phx-curiosity-dreamy-draw',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Dreamy Draw got its name from mercury-poisoned miners who looked "dreamy"',
+          body: 'In December 1916, Sam Hughes discovered cinnabar deposits—mercury sulfide—in the hills north of Phoenix. He built the Rico Mine, erected a retort furnace, and started processing mercury. Mercury mining sounds technical until you learn the side effects: neurotoxic exposure causes tremors, mood swings, and a dazed, vacant expression. When the miners came to town, Phoenix residents noticed they looked rather "dreamy"—spaced out, glassy-eyed, like they\'d just smoked something profound. They hadn\'t. They\'d been breathing vaporized mercury. The area became known as Dreamy Draw, a cheerful name for heavy metal poisoning. Total production: about 5,000 pounds of mercury. The Rico Mine is now buried under the SR-51 and Northern Avenue interchange. Mercury Mine Elementary School\'s softball field sits above a filled-in mercury mine. The Dreamy Draw Recreation Area remains one of Phoenix\'s most popular hiking spots—named after neurological damage.',
+          sources: [
+            {
+              title: 'Mercury mining in the Phoenix Mountains',
+              publisher: 'wryheat',
+              url: 'https://wryheat.wordpress.com/2013/09/27/mercury-mining-in-the-phoenix-mountains/',
+            },
+            {
+              title: 'How Dreamy Draw In Phoenix Got Its Name',
+              publisher: 'KJZZ',
+              url: 'https://kjzz.org/content/5252/did-you-know-how-dreamy-draw-phoenix-got-its-name',
+            },
+          ],
+          location: {
+            name: 'Dreamy Draw Recreation Area',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-make-a-wish',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Make-A-Wish was founded in Phoenix for a 7-year-old who wanted to be a cop',
+          body: 'In 1980, Christopher James Greicius, an energetic 7-year-old boy battling leukemia, had one wish: to be a police officer. His Phoenix community rallied. The Arizona Department of Public Safety gave him a helicopter ride, a custom uniform, and made him an honorary highway patrol officer. They took him on an aerial patrol. He rode a motorcycle. For one day, Chris wasn\'t a sick kid—he was Officer Greicius. He passed away three days later, on May 3, 1980. The experience profoundly moved everyone involved. That summer, Linda Pauling, Frank Shankwitz (a DPS officer), Tommy Austin, and a small group of volunteers founded the Make-A-Wish Foundation in Phoenix. Chris\'s wish was the first. Since then, Make-A-Wish has granted over 550,000 wishes worldwide. It all started with a 7-year-old boy, a Phoenix community, and a helicopter ride.',
+          sources: [
+            {
+              title: 'Our History',
+              publisher: 'Make-A-Wish Foundation',
+              url: 'https://wish.org/about-us',
+            },
+            {
+              title: 'The history of Make-A-Wish: The first wish granted',
+              publisher: 'World Wish',
+              url: 'https://worldwish.org/about-us/history/',
+            },
+          ],
+          location: {
+            name: 'Phoenix',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-10',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The city\'s name is both boast and warning',
+          body: 'Anglo settlers named the city "Phoenix" in 1868 because it rose from the ruins of the Hohokam civilization—which had already collapsed here once. Boast and warning in one word. The brilliant naming convention came from "Lord" Darrell Duppa, a Cambridge-educated English drunk who claimed nobility nobody could verify. He suggested "Phoenix" while almost certainly hammered. The city council, equally drunk or impressed by his accent, agreed. Now five million people live in a city named after a mythical bird, commemorating a dead civilization, by a fake lord who was probably shitfaced. Perfect metaphor.',
+          image: {
+            src: '/phoenix/curiosities/phoeni-origin-name.png',
+            alt: 'Phoenix rising from Hohokam ruins - city name origin',
+          },
+          source: 'Phoenix History Project',
+          location: {
+            name: 'Phoenix',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-pyramid',
+          type: 'curiosity',
+          category: 'legend',
+          title: 'Arizona\'s first governor is buried in a King Tut pyramid',
+          body: 'George W.P. Hunt served as Arizona\'s first governor for seven terms. When King Tut\'s tomb was discovered in 1922, Hunt became obsessed with pyramid burial. He commissioned a white-tiled pyramid tomb in Papago Park for himself and his family—complete with Egyptian hieroglyphics and a copper dome. Hunt was a progressive who fought for women\'s suffrage, abolished child labor, and did his own grocery shopping (scandalous for 1920s men). He also knitted scarves for soldiers during WWI. When he died in 1934, they entombed him in his pyramid. His wife Annie joined him there in 1940. The tomb still stands on a red sandstone hill, visible from the highway—Arizona\'s weirdest monument to its least conventional governor.',
+          image: {
+            src: '/phoenix/curiosities/hunt-pyramid.png',
+            alt: 'Governor Hunt pyramid tomb in Papago Park',
+          },
+          sources: [
+            {
+              title: 'Arizona State Library: Governor George W.P. Hunt',
+              url: 'https://azlibrary.gov/dazl/george-wp-hunt',
+            },
+            {
+              title: 'Downtown Phoenix: Fun Facts About Phoenix',
+              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
+            },
+          ],
+          location: {
+            name: 'Papago Park',
+            stillExists: true,
+          },
+        },
+        {
           id: 'phx-curiosity-6',
           type: 'curiosity',
           category: 'history',
@@ -179,6 +266,57 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Salt River Valley',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-8',
+          type: 'curiosity',
+          category: 'history',
+          title: 'This city is a monument to air conditioning',
+          body: 'Phoenix is a monument to human stubbornness—five million people living in a place that routinely hits 115°F, where summer nights don\'t drop below 90°. None of this would exist without one invention. In 1940, Phoenix had just 65,000 residents—a dusty agricultural outpost where locals slept on screened porches and movie theaters advertised "refrigerated air" as the main attraction. Then Willis Carrier\'s window units became affordable for average homeowners in the early 1950s. The floodgates opened. By 1960: 439,000 people. By 1990: over two million. Today: fifth-largest city in America. The entire Sun Belt migration—Phoenix, Las Vegas, Houston, the sprawling Sunbelt suburbs—was made possible by mechanical cooling. But there\'s a dark flip side locals don\'t discuss with visitors: if the power grid fails during a July heat wave, Phoenix becomes genuinely lethal within hours. The city has no natural backup. No shade. No breeze. No water features. In 2023, Maricopa County recorded 645 heat-related deaths—more than any county in America. AC isn\'t a luxury here. It\'s life support.',
+          image: {
+            src: '/phoenix/curiosities/before-ac-phoenixx.png',
+            alt: 'Phoenix before air conditioning era - small desert town',
+          },
+          source: 'Arizona Historical Society',
+          location: {
+            name: 'Phoenix',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'phx-curiosity-melindas-alley',
+          type: 'curiosity',
+          category: 'underground',
+          title: 'A speakeasy operates on the site of a 19th-century Black-owned brothel',
+          body: 'Beneath downtown Phoenix, in a narrow brick-lined passageway built after a 1910 fire, sits Melinda\'s Alley—a speakeasy bar on the site of a brothel run by Malinda Curtis, a Black proprietrix in the 1800s. The Adams Hotel was built above the old tunnels. Through subsequent demolitions and remodels, the underground passage survived. Today, a heavy door behind a multicolored mural opens to the bar—but only when a red light signals it\'s open. Inside, exposed brick walls, dim lighting, and a bank vault door from the old Valley National Bank preserve the hidden history. It\'s one of Phoenix\'s rare acknowledgments of its multicultural past, buried literally underground.',
+          images: [
+            {
+              src: '/phoenix/curiosities/curious-melinda-0.png',
+              alt: 'Melinda\'s Alley underground speakeasy entrance with multicolored mural',
+            },
+            {
+              src: '/phoenix/curiosities/curious-melinda-1.png',
+              alt: 'Historic Melinda\'s Alley brick passageway and speakeasy bar',
+            },
+            {
+              src: '/phoenix/curiosities/melindas-alley.png',
+              alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
+            },
+          ],
+          sources: [
+            {
+              title: 'Phoenix Magazine: 25 Best-Kept Secrets in Phoenix',
+              url: 'https://www.phoenixmag.com/2024/09/05/the-25-best-kept-secrets-in-phoenix/',
+            },
+            {
+              title: 'Downtown Phoenix: Fun Facts',
+              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
+            },
+          ],
+          location: {
+            name: 'Downtown Phoenix',
             stillExists: true,
           },
         },
@@ -214,38 +352,6 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-8',
-          type: 'curiosity',
-          category: 'history',
-          title: 'This city is a monument to air conditioning',
-          body: 'Phoenix is a monument to human stubbornness—five million people living in a place that routinely hits 115°F, where summer nights don\'t drop below 90°. None of this would exist without one invention. In 1940, Phoenix had just 65,000 residents—a dusty agricultural outpost where locals slept on screened porches and movie theaters advertised "refrigerated air" as the main attraction. Then Willis Carrier\'s window units became affordable for average homeowners in the early 1950s. The floodgates opened. By 1960: 439,000 people. By 1990: over two million. Today: fifth-largest city in America. The entire Sun Belt migration—Phoenix, Las Vegas, Houston, the sprawling Sunbelt suburbs—was made possible by mechanical cooling. But there\'s a dark flip side locals don\'t discuss with visitors: if the power grid fails during a July heat wave, Phoenix becomes genuinely lethal within hours. The city has no natural backup. No shade. No breeze. No water features. In 2023, Maricopa County recorded 645 heat-related deaths—more than any county in America. AC isn\'t a luxury here. It\'s life support.',
-          image: {
-            src: '/phoenix/curiosities/before-ac-phoenixx.png',
-            alt: 'Phoenix before air conditioning era - small desert town',
-          },
-          source: 'Arizona Historical Society',
-          location: {
-            name: 'Phoenix',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-10',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The city\'s name is both boast and warning',
-          body: 'Anglo settlers named the city "Phoenix" in 1868 because it rose from the ruins of the Hohokam civilization—which had already collapsed here once. Boast and warning in one word. The brilliant naming convention came from "Lord" Darrell Duppa, a Cambridge-educated English drunk who claimed nobility nobody could verify. He suggested "Phoenix" while almost certainly hammered. The city council, equally drunk or impressed by his accent, agreed. Now five million people live in a city named after a mythical bird, commemorating a dead civilization, by a fake lord who was probably shitfaced. Perfect metaphor.',
-          image: {
-            src: '/phoenix/curiosities/phoeni-origin-name.png',
-            alt: 'Phoenix rising from Hohokam ruins - city name origin',
-          },
-          source: 'Phoenix History Project',
-          location: {
-            name: 'Phoenix',
             stillExists: true,
           },
         },
@@ -319,128 +425,6 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park, Phoenix',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-15',
-          type: 'curiosity',
-          category: 'architecture',
-          title: 'Frank Lloyd Wright built his desert laboratory here',
-          body: 'Taliesin West, in Scottsdale, was Frank Lloyd Wright\'s winter home and architecture school from 1937 until his death in 1959. He designed it to blend into the desert, using local stone and canvas. Students still live and work there. The building was never "finished"—Wright viewed it as an ongoing experiment in organic architecture, constantly evolving with the seasons and the desert light.',
-          image: {
-            src: '/phoenix/curiosities/Taliesin-house.png',
-            alt: 'Taliesin West - Frank Lloyd Wright desert laboratory',
-          },
-          source: 'Frank Lloyd Wright Foundation',
-          location: {
-            name: 'Taliesin West, Scottsdale',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-pyramid',
-          type: 'curiosity',
-          category: 'legend',
-          title: 'Arizona\'s first governor is buried in a King Tut pyramid',
-          body: 'George W.P. Hunt served as Arizona\'s first governor for seven terms. When King Tut\'s tomb was discovered in 1922, Hunt became obsessed with pyramid burial. He commissioned a white-tiled pyramid tomb in Papago Park for himself and his family—complete with Egyptian hieroglyphics and a copper dome. Hunt was a progressive who fought for women\'s suffrage, abolished child labor, and did his own grocery shopping (scandalous for 1920s men). He also knitted scarves for soldiers during WWI. When he died in 1934, they entombed him in his pyramid. His wife Annie joined him there in 1940. The tomb still stands on a red sandstone hill, visible from the highway—Arizona\'s weirdest monument to its least conventional governor.',
-          image: {
-            src: '/phoenix/curiosities/hunt-pyramid.png',
-            alt: 'Governor Hunt pyramid tomb in Papago Park',
-          },
-          sources: [
-            {
-              title: 'Arizona State Library: Governor George W.P. Hunt',
-              url: 'https://azlibrary.gov/dazl/george-wp-hunt',
-            },
-            {
-              title: 'Downtown Phoenix: Fun Facts About Phoenix',
-              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
-            },
-          ],
-          location: {
-            name: 'Papago Park',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-dreamy-draw',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Dreamy Draw got its name from mercury-poisoned miners who looked "dreamy"',
-          body: 'In December 1916, Sam Hughes discovered cinnabar deposits—mercury sulfide—in the hills north of Phoenix. He built the Rico Mine, erected a retort furnace, and started processing mercury. Mercury mining sounds technical until you learn the side effects: neurotoxic exposure causes tremors, mood swings, and a dazed, vacant expression. When the miners came to town, Phoenix residents noticed they looked rather "dreamy"—spaced out, glassy-eyed, like they\'d just smoked something profound. They hadn\'t. They\'d been breathing vaporized mercury. The area became known as Dreamy Draw, a cheerful name for heavy metal poisoning. Total production: about 5,000 pounds of mercury. The Rico Mine is now buried under the SR-51 and Northern Avenue interchange. Mercury Mine Elementary School\'s softball field sits above a filled-in mercury mine. The Dreamy Draw Recreation Area remains one of Phoenix\'s most popular hiking spots—named after neurological damage.',
-          sources: [
-            {
-              title: 'Mercury mining in the Phoenix Mountains',
-              publisher: 'wryheat',
-              url: 'https://wryheat.wordpress.com/2013/09/27/mercury-mining-in-the-phoenix-mountains/',
-            },
-            {
-              title: 'How Dreamy Draw In Phoenix Got Its Name',
-              publisher: 'KJZZ',
-              url: 'https://kjzz.org/content/5252/did-you-know-how-dreamy-draw-phoenix-got-its-name',
-            },
-          ],
-          location: {
-            name: 'Dreamy Draw Recreation Area',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-make-a-wish',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Make-A-Wish was founded in Phoenix for a 7-year-old who wanted to be a cop',
-          body: 'In 1980, Christopher James Greicius, an energetic 7-year-old boy battling leukemia, had one wish: to be a police officer. His Phoenix community rallied. The Arizona Department of Public Safety gave him a helicopter ride, a custom uniform, and made him an honorary highway patrol officer. They took him on an aerial patrol. He rode a motorcycle. For one day, Chris wasn\'t a sick kid—he was Officer Greicius. He passed away three days later, on May 3, 1980. The experience profoundly moved everyone involved. That summer, Linda Pauling, Frank Shankwitz (a DPS officer), Tommy Austin, and a small group of volunteers founded the Make-A-Wish Foundation in Phoenix. Chris\'s wish was the first. Since then, Make-A-Wish has granted over 550,000 wishes worldwide. It all started with a 7-year-old boy, a Phoenix community, and a helicopter ride.',
-          sources: [
-            {
-              title: 'Our History',
-              publisher: 'Make-A-Wish Foundation',
-              url: 'https://wish.org/about-us',
-            },
-            {
-              title: 'The history of Make-A-Wish: The first wish granted',
-              publisher: 'World Wish',
-              url: 'https://worldwish.org/about-us/history/',
-            },
-          ],
-          location: {
-            name: 'Phoenix',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-melindas-alley',
-          type: 'curiosity',
-          category: 'underground',
-          title: 'A speakeasy operates on the site of a 19th-century Black-owned brothel',
-          body: 'Beneath downtown Phoenix, in a narrow brick-lined passageway built after a 1910 fire, sits Melinda\'s Alley—a speakeasy bar on the site of a brothel run by Malinda Curtis, a Black proprietrix in the 1800s. The Adams Hotel was built above the old tunnels. Through subsequent demolitions and remodels, the underground passage survived. Today, a heavy door behind a multicolored mural opens to the bar—but only when a red light signals it\'s open. Inside, exposed brick walls, dim lighting, and a bank vault door from the old Valley National Bank preserve the hidden history. It\'s one of Phoenix\'s rare acknowledgments of its multicultural past, buried literally underground.',
-          images: [
-            {
-              src: '/phoenix/curiosities/curious-melinda-0.png',
-              alt: 'Melinda\'s Alley underground speakeasy entrance with multicolored mural',
-            },
-            {
-              src: '/phoenix/curiosities/curious-melinda-1.png',
-              alt: 'Historic Melinda\'s Alley brick passageway and speakeasy bar',
-            },
-            {
-              src: '/phoenix/curiosities/melindas-alley.png',
-              alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
-            },
-          ],
-          sources: [
-            {
-              title: 'Phoenix Magazine: 25 Best-Kept Secrets in Phoenix',
-              url: 'https://www.phoenixmag.com/2024/09/05/the-25-best-kept-secrets-in-phoenix/',
-            },
-            {
-              title: 'Downtown Phoenix: Fun Facts',
-              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
-            },
-          ],
-          location: {
-            name: 'Downtown Phoenix',
             stillExists: true,
           },
         },
@@ -655,7 +639,7 @@ export const phoenix: CityData = {
           name: 'Sun Mercantile Building',
           category: 'Historic Building',
           description:
-            'Only surviving structure from Phoenix\'s second Chinatown. Built 1929 at 3rd & Jackson. National Register of Historic Places (1985). Phoenix\'s Chinatowns dissolved decades ago — this lone building remains as silent witness.',
+            'Built 1929 for Chinese-born businessman Tang Shing, became the largest wholesale grocery house in Phoenix. Last remaining building from Phoenix\'s Second Chinatown (c. 1890–1960). Phoenix\'s Chinatown was established by Chinese railroad workers in the 1870s-1880s, filled with laundries, groceries, restaurants until mid-1940s when larger corporations bought out Chinese businesses. National Register of Historic Places September 1985. Phoenix Historic Property Register March 1987. In 2005, Phoenix Suns proposed a $200 million luxury high-rise that would incorporate the building\'s base with roof removed. Historic preservationists, Asian American community, and city council fought it. Project blocked by lawsuit. As of 2019: IASIS Healthcare Multi Specialty Clinic. Silent witness to vanished community.',
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-sun-mercantile-1.png',
@@ -747,7 +731,7 @@ export const phoenix: CityData = {
           name: 'Arizona Falls',
           category: 'Hidden Waterfall',
           description:
-            '20-foot waterfall cascade at 56th Street and Indian School Road. Next to G.R. Herberger Park, open since 2003. Hidden oasis many locals still discovering. Tucked in urban setting, not well-marked — drive past it constantly without noticing.',
+            'In the late 1800s, Phoenicians picnicked, socialized, and danced near the cool water where the man-made Arizona Canal crossed a natural 20-foot drop in present-day Arcadia. Phoenix Light and Fuel Company built the first hydroelectric plant here in 1902. Heavy flooding in 1905 left it unused for years. SRP rebuilt the plant in 1911, began delivering power in 1913, shut it down in 1950 when repairs were deemed too expensive. Reopened June 21, 2003. SRP, City of Phoenix, Phoenix Arts Commission, and Arcadia Neighborhood restored the historic site. Boston architect Lajos Heder and sculptor Mags Harries designed the park under commission of Phoenix Office of Arts and Culture. Features original antique gears, poetry by Arizona\'s first poet laureate Alberto Ríos. Generates up to 750 kilowatts, supplemented by solar panels. Functional power station and public gathering space. Many locals drive past constantly without noticing.',
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-falls-0.png',
@@ -814,7 +798,7 @@ export const phoenix: CityData = {
           name: 'Valley Art Theatre',
           category: 'Historic Cinema',
           description:
-            'Arizona\'s oldest operating cinema (opened 1940). Tempe\'s largest neon sign. Original ticket window, marquee, and neon signage. $1 million restoration in 2011. In Tempe — overshadowed by newer theaters.',
+            'Dwight "Red" Harkins was 25 years old at the tail-end of the Great Depression when he founded Harkins Theatres. He opened his first theater (the State Theater) in Tempe in 1933. This was his third Tempe theater. Constructed in 1938, opened November 21, 1940 as the College Theatre—named for proximity to Arizona State Teachers College (now ASU). Renamed Valley Art Theatre December 30, 1960. Arizona\'s oldest and longest operating movie theater. 2011: Harkins spent $1 million renovating—state-of-the-art projection, rocker seats, new snack bar—while maintaining exterior facade, box office, neon sign, and marquee. Tempe\'s largest neon sign. In Tempe, overshadowed by newer theaters, but still screening.',
           address: '509 S Mill Ave, Tempe, AZ 85281',
           coordinates: { lat: 33.4250, lng: -111.9394 },
           hours: 'Showtimes vary',
@@ -834,9 +818,9 @@ export const phoenix: CityData = {
         {
           name: 'Valley Bar',
           neighborhood: 'Downtown Phoenix',
-          vibe: 'Underground lounge and music venue in a historic 1949 building, run by the same team behind Crescent Ballroom.',
+          vibe: 'Underground lounge and music venue in an 8,000-square-foot basement, from the Crescent Ballroom team.',
           order: 'Let the bartender guide you. Stay for skee-ball, pool, pinball, and the hidden library room.',
-          why: 'Look for the glowing red sign above a back-alley door, then descend into Phoenix\'s best underground bar. The building once housed famed Bickoff\'s Deli, art galleries, and venues where Soundgarden, Green Day, and Bad Brains played. The interior by Patch & Clark Design uses soft yellows and cool greys to remind you this is still Arizona. Board games, skee-ball, pinball, and an intimate music venue that books great acts.',
+          why: 'Charlie Levy opened Crescent Ballroom in October 2011. His office was in the circa-1949 building at Central and Monroe. There was always a locked "B" elevator button. One day he asked the landlord what the basement was like—filled with junk. Levy proposed "a really cool music venue down here with a big lounge and pool tables." The landlord agreed. Valley Bar opened in 2015. 8,000 square feet of former storage space transformed into Phoenix\'s best underground bar. Basement bars are rare in Phoenix. Patch & Clark Design used soft yellows and cool greys. The building housed Bickoff\'s Deli, art galleries, venues where Soundgarden, Green Day, Bad Brains played. Skee-ball, pool, pinball, intimate music venue.',
           address: '130 N Central Ave, Basement, Phoenix, AZ 85004',
           coordinates: { lat: 33.4492, lng: -112.0740 },
           price: '$$',
@@ -861,9 +845,9 @@ export const phoenix: CityData = {
         {
           name: 'Bitter & Twisted',
           neighborhood: 'Downtown Phoenix',
-          vibe: 'A 160-seat globally-recognized cocktail lounge in the former Arizona Prohibition Headquarters—the irony is not lost.',
-          order: 'Explore the extensive menu. Nearly half the drinks can be made non-alcoholic. They make their own large-format ice from scratch.',
-          why: 'Ross Simon opened Bitter & Twisted in 2014, and it immediately became one of the best bars in America. Top 10 "World\'s Best Cocktail Menu" at 2024 Tales of the Cocktail. #44 on North America\'s 50 Best Bars 2022. Their obsession with ice quality, innovative cocktails, and the gorgeous historic Luhrs Building setting make this essential Phoenix. They recently launched a cocktail membership club—first of its kind globally.',
+          vibe: 'Scottish-born bartender Ross Simon\'s 160-seat cocktail parlour in the former Arizona Prohibition Headquarters.',
+          order: 'Explore the extensive menu. Nearly half can be made non-alcoholic. They make large-format ice from scratch.',
+          why: 'Ross Simon (London Lab Bar alumnus) opened Bitter & Twisted May 30, 2014 in the historic Luhrs Building—a 10-story brick and stone structure completed in 1924. The Arizona Prohibition office was housed here. As officers poured confiscated booze down drains, an enterprising janitor set up collection diversions and sold the dumped hooch. The irony is not lost. First Arizona bar nominated for Tales of Cocktail "Best American High Volume Cocktail Bar." Top 10 "World\'s Best Cocktail Menu" 2024. #44 North America\'s 50 Best Bars 2022. Simon founded Arizona chapter of United States Bartenders\' Guild, launched Arizona Cocktail Weekend. Recently launched first-of-its-kind global cocktail membership club.',
           address: '1 W Jefferson St, Phoenix, AZ 85003',
           coordinates: { lat: 33.4481, lng: -112.0751 },
           price: '$$$',
@@ -894,7 +878,7 @@ export const phoenix: CityData = {
           neighborhood: 'Arcadia',
           vibe: '"The OG"—patio DJs, bocce ball, and Adirondacks basking in the Arizona sun since 2006.',
           order: 'Draft beer and the fried chicken sandwich. Come for happy hour (Mon-Fri 3-6pm, $5 drafts and wells).',
-          why: 'The Vig Arcadia is where Phoenix\'s neighborhood bar culture was born. Genuine Concepts launched this concept in 2006 as "the perfect antidote to the over-the-top concept restaurant"—delivering genuine food and drink with neighborhood feels. The mid-century soul atmosphere, dog-friendly patio, weekend brunch, and outdoor firepit make this essential Arcadia. Now expanded to six locations, but this is the original.',
+          why: 'Tucker Woodbury was driving home fourteen years ago, passed the sad old Wrong Number Lounge with a for lease sign, and dreamed of opening a comfortable, welcoming Arcadia spot. He met Jim Riley at a country club swim meet. Tucker ran Rockin\' Horse. Riley ran Blue Moose. Former competitors became business partners. They founded Genuine Concepts and opened The Vig Arcadia in 2006 as "the perfect antidote to the over-the-top concept restaurant"—genuine food and drink with neighborhood feels. Mid-century soul atmosphere, dog-friendly patio, weekend brunch, outdoor firepit. Now six locations across the Valley. This is the original.',
           address: '4041 N 40th St, Phoenix, AZ 85018',
           coordinates: { lat: 33.4969, lng: -111.9911 },
           price: '$$',
@@ -1017,9 +1001,9 @@ export const phoenix: CityData = {
         {
           name: 'Cartel Coffee Lab',
           neighborhood: 'Multiple Locations',
-          vibe: 'The local favorite that turned Phoenix into a specialty coffee city. Not just coffee but an immersive experience.',
-          order: 'Whatever single-origin pour-over they\'re featuring. The latte art is excellent if that\'s your thing.',
-          why: 'Cartel has a loyal following for good reason — they helped put Phoenix specialty coffee on the map. Multiple locations now, but the quality hasn\'t diluted. The experience feels intentional, from sourcing to preparation. A lot of Phoenix baristas trained here.',
+          vibe: 'Phoenix\'s specialty coffee pioneer since 2007. Now Cartel Roasting Co. 10 locations across the Southwest.',
+          order: 'Whatever single-origin pour-over they\'re featuring. The latte art is excellent.',
+          why: 'Amy and Jason Silberschlag founded Cartel as a modest coffee cart in 2007 after a trip to a specialty coffee farm in Huehuetenango, Guatemala. One of the first roasters in Arizona introducing people to specialty coffee. Jason met Stumptown founder Duane Sorenson on a plane to Guatemala. That conversation convinced him to become a roaster, not just a coffee shop. 2009: Jason placed second in Southwest Regional Barista Championship. They traveled to Southern California to buy a used roaster, delivered it to the flagship Tempe location in Maple-Ash district—it still operates there. 2012: opened at Phoenix Sky Harbor Airport, one of the first independently owned specialty shops in an airport. Rebranded as Cartel Roasting Co., developed a 12,000-square-foot roasting, canning, and cold brewing facility. 10 locations now. A lot of Phoenix baristas trained here.',
           address: '1 N 1st St, Phoenix, AZ 85004',
           coordinates: { lat: 33.4485, lng: -112.0756 },
           hours: '6am-6pm Mon-Fri, 7am-6pm Sat-Sun',
@@ -1186,9 +1170,9 @@ export const phoenix: CityData = {
         {
           name: 'Bacanora',
           neighborhood: 'Grand Avenue',
-          vibe: '2024 James Beard Award winner for Best Chef: Southwest. Wood-fired meats and traditional Mexican fare with a modern twist.',
-          order: 'Trust the wood-fired meats—they\'re the specialty. The menu changes but everything is authentic to chef Rene Andrade\'s Nogales, Sonora roots.',
-          why: 'When Rene Andrade won the 2024 James Beard Award, he shouted out his grandmother: "As a little kid from Nogales, Sonora, Mexico, I had this dream of being my grandma." Bacanora opened on Grand Avenue in 2021 and immediately earned national praise from The New York Times and Esquire. This is one of the hardest reservations to score in Phoenix, but the wood-fired cooking and Sonoran authenticity are worth the fuss.',
+          vibe: '2024 James Beard Award winner for Best Chef: Southwest. Wood-fired meats from Nogales, Sonora.',
+          order: 'Trust the wood-fired meats—they\'re the specialty. Everything is cooked over open flame.',
+          why: 'Rene Andrade opened Bacanora on Grand Avenue in 2021. Esquire named it one of "40 Best New Restaurants in America" in 2021. James Beard Best New Restaurant nomination 2022. Semifinalist Best Chef Southwest 2023. Won Best Chef Southwest 2024. At the ceremony, Andrade said: "As a little kid from Nogales, Sonora, Mexico, I had this dream of being my grandma. I just wanted to be like her, she\'s the representation of magic to me." Everything cooked over wood-fired grill, nod to his Sonoran roots. The New York Times, Esquire, national praise. Hardest reservation to score in Phoenix. Worth the fuss.',
           address: '1301 Grand Ave, Phoenix, AZ 85007',
           coordinates: { lat: 33.4560, lng: -112.0868 },
           price: '$$$',
@@ -1220,9 +1204,9 @@ export const phoenix: CityData = {
         {
           name: 'Pizzeria Bianco',
           neighborhood: 'Heritage Square',
-          vibe: 'The culinary North Star of Phoenix. A modest brick building where the line starts at 4 PM and the reward is arguably the best pizza in America.',
+          vibe: 'The culinary North Star of Phoenix. A modest brick building where the line starts at 4 PM.',
           order: 'The Rosa (red onion, Parmigiano, rosemary, Arizona pistachios) or the Wiseguy (roasted onion, smoked mozzarella, fennel sausage).',
-          why: 'Chris Bianco didn’t just make pizza; he created a pilgrimmage. In 1988, he started in the back of a grocery store; by 2003, he was the first pizzaiolo to win a James Beard Best Chef Southwest award. The Heritage Square location is the holy grail. There are no gimmicks, just a wood-burning oven, hand-stretched dough, and an obsessive commitment to local sourcing (hence the Arizona pistachios on the Rosa). If you see Chris at the oven, you’re looking at a legend who changed the national conversation about what pizza can be.',
+          why: 'Chris Bianco started Pizzeria Bianco in the back corner of a Phoenix grocery store in 1988. In 1996, moved to 623 East Adams Street—the historic Baird Machine Shop site in Heritage Square. 2003: first pizzaiolo to win James Beard Best Chef Southwest. The only pizza chef to win a regional Beard award. 2022: James Beard Outstanding Restaurateur. Wood-burning oven, hand-stretched dough, obsessive commitment to local sourcing (Arizona pistachios on the Rosa). No gimmicks. Lines around the block. Inspired a generation of American pizzaioli. If you see Chris at the oven, you\'re looking at the legend who changed the national conversation about what pizza can be.',
           address: '623 E Adams St, Phoenix, AZ 85004',
           coordinates: { lat: 33.4486, lng: -112.0661 },
           price: '$$',

@@ -81,30 +81,6 @@ export const anchorage: CityData = {
           source: 'Alaska Department of Fish and Game',
         },
         {
-          id: 'anc-curiosity-2',
-          type: 'curiosity',
-          category: 'nature',
-          title: 'Urban moose are more violent than grizzlies',
-          body: 'Anchorage\'s 1,500 city moose didn\'t adapt to humans—they learned to bully them. Moose attacks injure 5-10 people per year here, outpacing bear attacks statewide. These aren\'t skittish woodland creatures; they\'re 1,200-pound mammals who\'ve figured out that lawns are easier than tundra and that humans usually back down first. The city runs a dedicated moose patrol. Calving season turns them homicidal.',
-          images: [
-            {
-              src: '/anchorage/curiosities/urban-moose.jpg',
-              alt: 'Moose in Anchorage',
-              credit: 'Wikimedia Commons',
-            },
-            {
-              src: '/anchorage/curiosities/moose-2.png',
-              alt: 'Wildlife in Alaska urban setting',
-            }
-          ],
-          source: 'Alaska Department of Fish and Game',
-        },
-        {
-          id: 'anc-curiosity-ad-1',
-          type: 'ad',
-          size: 'banner',
-        },
-        {
           id: 'anc-curiosity-3',
           type: 'curiosity',
           category: 'history',
@@ -128,45 +104,51 @@ export const anchorage: CityData = {
           },
         },
         {
-          id: 'anc-curiosity-4',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Alaska pays you $1,300 a year just for living here',
-          body: 'Every October, every Alaskan gets an oil money check in the mail. The Permanent Fund Dividend has paid out anywhere from $331 to $2,072 annually since 1982. Retailers throw "PFD sales." Former residents mysteriously reappear to collect. The state\'s population temporarily spikes. It\'s the only place in America where breathing qualifies you for passive income, and Alaskans will fight you if you suggest touching the fund.',
-          images: [
-            {
-              src: '/anchorage/curiosities/PFD.png',
-              alt: 'Alaska Permanent Fund Dividend check',
-            }
-          ],
-          source: 'Alaska Permanent Fund Corporation',
+          id: 'anc-curiosity-ad-1',
+          type: 'ad',
+          size: 'banner',
         },
         {
-          id: 'anc-curiosity-5',
+          id: 'anc-curiosity-2',
           type: 'curiosity',
-          category: 'science',
-          title: 'The aurora borealis performs 243 nights a year—if you can stay awake',
-          body: 'Anchorage sits directly beneath the auroral oval, the northern lights\' permanent stage. On average, the aurora is visible 243 nights per year. But light pollution from the city washes it out, so serious viewers drive north to darker skies. September through March delivers the best shows, when nights are actually dark and the solar wind is cooperating. Mother Nature\'s most reliable entertainment, assuming you\'re willing to stand outside in the cold.',
+          category: 'nature',
+          title: 'Urban moose are more violent than grizzlies',
+          body: 'Anchorage\'s 1,500 city moose didn\'t adapt to humans—they learned to bully them. Moose attacks injure 5-10 people per year here, outpacing bear attacks statewide. These aren\'t skittish woodland creatures; they\'re 1,200-pound mammals who\'ve figured out that lawns are easier than tundra and that humans usually back down first. The city runs a dedicated moose patrol. Calving season turns them homicidal.',
           images: [
             {
-              src: '/anchorage/curiosities/aurora-borealis.jpg',
-              alt: 'Northern lights aurora borealis over Alaska',
+              src: '/anchorage/curiosities/urban-moose.jpg',
+              alt: 'Moose in Anchorage',
               credit: 'Wikimedia Commons',
             },
             {
-              src: '/anchorage/curiosities/aurora-2.png',
-              alt: 'Vivid aurora display in Alaska sky',
-            },
-            {
-              src: '/anchorage/curiosities/aurora-3-.png',
-              alt: 'Aurora borealis over Anchorage landscape',
-            },
-            {
-              src: '/anchorage/curiosities/aurora-4.png',
-              alt: 'Spectacular northern lights display',
+              src: '/anchorage/curiosities/moose-2.png',
+              alt: 'Wildlife in Alaska urban setting',
             }
           ],
-          source: 'Geophysical Institute, University of Alaska Fairbanks',
+          source: 'Alaska Department of Fish and Game',
+        },
+        {
+          id: 'anc-curiosity-outhouse',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Anchorage hosts outhouse races where teams push toilet-riding coworkers down snowy streets',
+          body: 'Every February since 1935, Fur Rendezvous—Alaska\'s oldest winter festival—transforms downtown Anchorage into competitive chaos. The crown jewel? The Outhouse Races. Teams build elaborate outhouses mounted on skis, strap a teammate inside (sitting on the throne, naturally), and race them through obstacle courses in the snow. Corporate teams, professional groups, and local businesses compete with outhouse designs ranging from tasteful to aggressively vulgar. The winner gets bragging rights and a trophy shaped like...you guessed it. In 2012, National Geographic named Fur Rondy the #1 winter carnival in the world, and the outhouse races are a big reason why. Only in Alaska can you watch accountants push their boss down Fourth Avenue while he\'s sitting on a toilet.',
+          sources: [
+            {
+              title: 'History of Fur Rendezvous',
+              publisher: 'Anchorage Fur Rendezvous',
+              url: 'https://www.furrondy.net/history/',
+            },
+            {
+              title: 'Fur Rendezvous Festival',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Fur_Rendezvous_Festival',
+            },
+          ],
+          location: {
+            name: 'Downtown Anchorage',
+            stillExists: true,
+          },
         },
         {
           id: 'anc-curiosity-ad-2',
@@ -174,52 +156,30 @@ export const anchorage: CityData = {
           size: 'rectangle',
         },
         {
-          id: 'anc-curiosity-6',
+          id: 'anc-curiosity-qiviut',
           type: 'curiosity',
-          category: 'history',
-          title: 'The 1964 earthquake moved entire neighborhoods 30 feet sideways',
-          body: 'The Good Friday Earthquake—magnitude 9.2, the most powerful in North American history—shook Anchorage for four and a half minutes. The ground didn\'t just crack; it liquefied. Entire neighborhoods slid into Cook Inlet. Fourth Avenue dropped 11 feet. The earth moved so violently that surveyed property lines became meaningless. If you owned a house before March 27, 1964, good luck finding where it used to be.',
-          year: '1964',
-          images: [
+          category: 'nature',
+          title: 'Alaska produces the world\'s most expensive fabric—combed from musk ox butts',
+          body: 'Qiviut (pronounced "kiv-ee-ute") is the ultra-fine underwool shed by musk oxen each spring. It\'s eight times warmer than sheep wool, softer than cashmere, hypoallergenic, and absurdly expensive: $100 per ounce of yarn, $1.2 per gram of raw fiber. Why? Each 1,000-pound musk ox produces only 4-8 pounds of qiviut annually. Foragers literally comb it from where the animals rub against rocks and shrubs. The Oomingmak Musk Ox Producers\' Co-Operative in Anchorage, run by 250 Native Alaskan women from remote coastal villages, hand-knits qiviut into scarves, hats, and sweaters. A scarf can cost $300. Tourists buy them anyway, because when winter hits -40°F, luxury becomes survival. The Inupiat word "oomingmak" means "bearded one"—a perfect name for the animal producing the golden fleece of the Arctic.',
+          sources: [
             {
-              src: '/anchorage/curiosities/earthquake-fourth-ave.jpg',
-              alt: 'Devastating damage on 4th Avenue from the 1964 Good Friday Earthquake',
-              credit: 'Wikimedia Commons',
+              title: 'Qiviut',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Qiviut',
             },
             {
-              src: '/anchorage/curiosities/earthquake-2.png',
-              alt: 'Massive ground displacement from 1964 earthquake',
+              title: 'Oomingmak - Original Alaskan Qiviut Handknits Store',
+              publisher: 'Oomingmak',
+              url: 'https://www.qiviut.com/',
             },
             {
-              src: '/anchorage/curiosities/earthquake-3.png',
-              alt: 'Anchorage downtown earthquake destruction',
-            }
+              title: 'Hand-Combed Qiviut: A Rare Luxury from Alaska',
+              publisher: 'Spin Off Magazine',
+              url: 'https://spinoffmagazine.com/hand-combed-qiviut/',
+            },
           ],
-          source: 'USGS Earthquake Hazards Program',
           location: {
-            name: 'Downtown Anchorage',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'anc-curiosity-7',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'The world\'s busiest seaplane base operates inside city limits',
-          body: 'Lake Hood logs 190+ floatplane flights per day in summer—more takeoffs and landings than most regional airports. For hundreds of Alaska communities with no roads, these planes are the only connection to civilization. Watch pilots load groceries, lumber, and ATVs into aircraft designed to land on water. This is Alaska\'s version of a commuter hub, except the runways are lakes and the delays involve weather that can kill you.',
-          images: [
-            {
-              src: '/anchorage/curiosities/plainport-1.png',
-              alt: 'Floatplane on Alaska lake',
-            },
-            {
-              src: '/anchorage/curiosities/plainport-2.png',
-              alt: 'Seaplane in Alaska wilderness',
-            }
-          ],
-          source: 'Lake Hood Seaplane Base',
-          location: {
-            name: 'Lake Hood',
+            name: 'Anchorage (Oomingmak Co-op)',
             stillExists: true,
           },
         },
@@ -240,6 +200,20 @@ export const anchorage: CityData = {
             }
           ],
           source: 'Alaska Department of Fish and Game',
+        },
+        {
+          id: 'anc-curiosity-4',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Alaska pays you $1,300 a year just for living here',
+          body: 'Every October, every Alaskan gets an oil money check in the mail. The Permanent Fund Dividend has paid out anywhere from $331 to $2,072 annually since 1982. Retailers throw "PFD sales." Former residents mysteriously reappear to collect. The state\'s population temporarily spikes. It\'s the only place in America where breathing qualifies you for passive income, and Alaskans will fight you if you suggest touching the fund.',
+          images: [
+            {
+              src: '/anchorage/curiosities/PFD.png',
+              alt: 'Alaska Permanent Fund Dividend check',
+            }
+          ],
+          source: 'Alaska Permanent Fund Corporation',
         },
         {
           id: 'anc-curiosity-9',
@@ -278,6 +252,28 @@ export const anchorage: CityData = {
           },
         },
         {
+          id: 'anc-curiosity-7',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'The world\'s busiest seaplane base operates inside city limits',
+          body: 'Lake Hood logs 190+ floatplane flights per day in summer—more takeoffs and landings than most regional airports. For hundreds of Alaska communities with no roads, these planes are the only connection to civilization. Watch pilots load groceries, lumber, and ATVs into aircraft designed to land on water. This is Alaska\'s version of a commuter hub, except the runways are lakes and the delays involve weather that can kill you.',
+          images: [
+            {
+              src: '/anchorage/curiosities/plainport-1.png',
+              alt: 'Floatplane on Alaska lake',
+            },
+            {
+              src: '/anchorage/curiosities/plainport-2.png',
+              alt: 'Seaplane in Alaska wilderness',
+            }
+          ],
+          source: 'Lake Hood Seaplane Base',
+          location: {
+            name: 'Lake Hood',
+            stillExists: true,
+          },
+        },
+        {
           id: 'anc-curiosity-12',
           type: 'curiosity',
           category: 'culture',
@@ -304,7 +300,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'The Iditarod\'s starting line is pure theater—the real race starts elsewhere',
-          body: 'Every March, sled dog teams run through downtown Anchorage streets while crowds cheer. It\'s the ceremonial start of the Iditarod, Alaska\'s famous 1,000-mile race. The actual race? That starts the next day in Willow, 50 miles north, where there\'s reliable snow and no tourists. The Anchorage start is spectacle, tradition, and civic pride—in that order. Nobody pretends otherwise.',
+          body: 'Every March, sled dog teams run through downtown Anchorage streets while crowds cheer and tourists snap photos. It\'s the ceremonial start of the Iditarod, Alaska\'s famous 1,049-mile race to Nome. The actual race? That starts the next day in Willow, 50 miles north, where there\'s reliable snow and no tourists. The Anchorage start is spectacle, tradition, and civic pride—in that order. Nobody pretends otherwise. The deception dates to 1973 when mushers realized downtown Anchorage in early March has unpredictable snow conditions—sometimes bare pavement, sometimes slush, never ideal for a thousand-mile endurance race. So they split it: Anchorage gets the pageantry, the crowds, the sponsorship banners, and the media helicopters. Willow gets the real dogs, the real start line, and the silence of wilderness racing. It works perfectly because everyone knows it\'s fake, and nobody cares. The Iditarod is Alaska\'s Super Bowl, and Anchorage will take the parade even if someone else gets the game.',
           images: [
             {
               src: '/anchorage/curiosities/iditarod-start.jpg',
@@ -319,22 +315,8 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Alaska voted twice to move the capital here—then refused to pay for it',
-          body: 'Juneau, Alaska\'s capital, is inaccessible by road. You can only reach it by plane or boat. In 1974, voters approved moving the capital near Anchorage. In 1976, they picked Willow as the site. Then in 1982, they rejected the $2.8 billion price tag. In 1994, they voted down moving it to Wasilla. Alaskans wanted a practical capital—they just didn\'t want to pay for it. So Juneau remains the capital, inaccessible and inexplicable, because fiscal conservatism beat out logic.',
+          body: 'Juneau, Alaska\'s capital, is inaccessible by road. You can only reach it by plane or boat. For legislators from Anchorage, Fairbanks, or anywhere else, getting to work means flying 571 miles over glaciers and mountains. It\'s absurd. In 1974, voters approved moving the capital to somewhere near Anchorage. In 1976, they picked Willow—a tiny community 70 miles north—as the site for a brand new capital city. Plans were drawn. Land was surveyed. Politicians got excited. Then in 1982, voters rejected the $2.8 billion price tag. The project died. In 1994, they tried again, proposing to move it to Wasilla. Voters rejected it again. Alaskans wanted a practical, road-accessible capital—they just didn\'t want to pay for it. So Juneau remains the capital: beautiful, isolated, and inexplicable. State employees fly in for sessions. Lobbyists expense their flights. And Alaska\'s government operates from a city most Alaskans will never drive to, because fiscal conservatism beat out logic and geography.',
           source: 'Alaska State Legislature',
-        },
-        {
-          id: 'anc-curiosity-15',
-          type: 'curiosity',
-          category: 'legend',
-          title: 'The Alaska Triangle has swallowed 16,000 people since 1988',
-          body: 'A region stretching from Juneau to Barrow to Anchorage has a missing persons rate four times the national average. Since 1988, over 16,000 people have vanished—most in the wilderness, some under circumstances that defy explanation. The Alaska Triangle isn\'t supernatural; it\'s geographical reality meeting human fragility. The wilderness here doesn\'t need a legend. It just needs time.',
-          images: [
-            {
-              src: '/anchorage/curiosities/triangle.png',
-              alt: 'Map of the Alaska Triangle region',
-            }
-          ],
-          source: 'Alaska State Troopers',
         },
       ],
     },
@@ -1934,6 +1916,39 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Rogers Park neighborhood',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'anc-dark-14',
+          type: 'dark-history',
+          category: 'tragedy',
+          year: '1988–present',
+          title: 'The Alaska Triangle: 16,000 People Have Vanished in 35 Years',
+          body: 'A region stretching from Juneau to Barrow to Anchorage—roughly covering the entire populated heart of Alaska—has a missing persons rate four times the national average. Since 1988, over 16,000 people have vanished. Most disappear in the wilderness: hikers, hunters, bush pilots, fishermen. Some walk out their front door and are never seen again. Search and rescue operations routinely fail. Bodies are rarely recovered.\n\nThe Alaska Triangle isn\'t supernatural—it\'s geographical reality meeting human fragility. The wilderness here is vast, indifferent, and lethal. Temperatures plunge without warning. Glacial rivers sweep people away. Mountains swallow aircraft. Weather changes in minutes. Cell service is nonexistent. The terrain is unforgiving: dense forest, tundra swamps, crevasse-riddled glaciers, and coastlines where the tide moves faster than you can run.\n\nSome disappearances defy easy explanation, but most don\'t need one. The Alaska Triangle doesn\'t need a legend. It just needs time. The wilderness here has been killing people for millennia, and it will outlast everyone who enters it.',
+          verdict: 'Most cases remain unsolved. The missing persons rate continues to climb. Alaska State Troopers investigate, but the wilderness rarely gives up its dead.',
+          sources: [
+            {
+              type: 'article',
+              title: 'Missing in Alaska',
+              publisher: 'Alaska Public Media',
+              url: 'https://www.alaskapublic.org/tag/missing-in-alaska/',
+            },
+            {
+              type: 'article',
+              title: 'Alaska has one of the highest rates of missing people in the U.S.',
+              publisher: 'NPR',
+              url: 'https://www.npr.org/2019/11/01/775195424/alaska-has-one-of-the-highest-rates-of-missing-people-in-the-u-s',
+            },
+            {
+              type: 'other',
+              title: 'NamUs: National Missing Persons Database',
+              publisher: 'Department of Justice',
+              url: 'https://namus.nij.ojp.gov/',
+            },
+          ],
+          location: {
+            name: 'Statewide: Juneau-Barrow-Anchorage Triangle',
             stillExists: true,
           },
         },

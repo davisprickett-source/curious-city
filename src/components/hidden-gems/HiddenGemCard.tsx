@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { getCategoryStyle } from './MobileHiddenGemsLayout'
 import { ShareButton } from '@/components/ShareButton'
+import { SaveButton } from '@/components/SaveButton'
 import { ImageCarousel } from '../ImageCarousel'
 
 interface HiddenGemItem {
@@ -201,6 +202,7 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
 
   return (
     <motion.article
+      id={gem.id}
       ref={ref}
       variants={getCardVariants(index)}
       initial="hidden"
@@ -273,14 +275,29 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
             <DetailsBox gem={gem} />
           </motion.div>
 
-          {/* Share Button - centered at bottom */}
+          {/* Share and Save Buttons */}
           <motion.div
             variants={detailsVariants}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center"
+            className="mt-6 pt-6 border-t border-neutral-200 flex justify-center gap-6"
           >
-            <ShareButton title={gem.name} url={url} />
+            <ShareButton
+              title={gem.name}
+              url={url}
+              anchor={gem.id}
+              shareText={gem.description.length > 120 ? gem.description.slice(0, 117) + '...' : gem.description}
+            />
+            <SaveButton
+              name={gem.name}
+              description={gem.description}
+              address={gem.address}
+              hours={gem.hours}
+              phone={gem.phone}
+              website={gem.website}
+              category={gem.category}
+              url={`${url}#${gem.id}`}
+            />
           </motion.div>
         </div>
       </div>

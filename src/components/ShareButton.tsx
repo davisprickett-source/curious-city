@@ -5,28 +5,43 @@ import { useState, useRef, useEffect } from 'react'
 interface ShareButtonProps {
   title: string
   url?: string
+  anchor?: string // Optional anchor ID for deep linking (e.g., "gem-underground-3")
+  shareText?: string // Optional compelling text for social shares (uses description/hook)
 }
 
 /**
  * Share button with rust-colored "SHARE" text and icon
- * Used in article and discover page headers
+ * Used in article and discover page headers, and individual entry cards
+ *
+ * @param title - Entry or page title
+ * @param url - Optional base URL (defaults to current page)
+ * @param anchor - Optional anchor ID to append as hash fragment for deep linking
+ * @param shareText - Optional compelling text for Twitter/social (e.g., entry description)
  */
-export function ShareButton({ title, url }: ShareButtonProps) {
+export function ShareButton({ title, url, anchor, shareText }: ShareButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const getShareUrl = () => {
-    if (url) return url
-    if (typeof window !== 'undefined') {
-      return window.location.href
+    let baseUrl = url
+    if (!baseUrl && typeof window !== 'undefined') {
+      // Get URL without existing hash
+      baseUrl = window.location.href.split('#')[0]
     }
-    return ''
+    // Append anchor if provided
+    if (anchor && baseUrl) {
+      return `${baseUrl}#${anchor}`
+    }
+    return baseUrl || ''
   }
 
   const shareUrl = getShareUrl()
   const encodedUrl = encodeURIComponent(shareUrl)
+  // Use shareText for social if provided, otherwise fall back to title
+  const socialText = shareText || title
+  const encodedSocialText = encodeURIComponent(socialText)
   const encodedTitle = encodeURIComponent(title)
 
   // Close menu when clicking outside
@@ -77,7 +92,7 @@ export function ShareButton({ title, url }: ShareButtonProps) {
   const shareLinks = [
     {
       name: 'X',
-      href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+      href: `https://twitter.com/intent/tweet?text=${encodedSocialText}&url=${encodedUrl}`,
       icon: (
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
