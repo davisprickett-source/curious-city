@@ -9,8 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: false, // Enable Next.js image optimization
     formats: ['image/webp', 'image/avif'],
-    loader: process.env.NEXT_PUBLIC_SEQUENCES_CDN ? 'custom' : 'default',
-    loaderFile: process.env.NEXT_PUBLIC_SEQUENCES_CDN ? './src/lib/imageLoader.ts' : undefined,
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.ts',
     remotePatterns: [
       // Cloudflare R2 CDN
       {
