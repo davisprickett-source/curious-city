@@ -503,37 +503,6 @@ export default function MobileHiddenGemsLayout({
         />
       </div>
 
-      {/* Navigation Dots - Fixed on right side */}
-      <div className="hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-3">
-        {gems.map((gem, index) => {
-          const isActive = activeSection === index
-          const categoryStyles = gem.category ? getCategoryStyle(gem.category) : getCategoryStyle('default')
-
-          return (
-            <button
-              key={gem.id}
-              onClick={() => scrollToSection(index)}
-              className="group relative"
-              aria-label={`Jump to hidden gem ${index + 1}: ${gem.name}`}
-            >
-              <div
-                className={`w-3 h-3 rounded-full transition-all duration-300 ease-out ${isActive
-                    ? `${categoryStyles.bg} ${categoryStyles.accent} border-2 scale-125 shadow-lg`
-                    : 'bg-neutral-400 border border-neutral-500 group-hover:bg-neutral-600 group-hover:scale-150 group-hover:shadow-md'
-                  }`}
-              />
-              {/* Tooltip - wider, max 2 lines */}
-              <div className="absolute right-7 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
-                <div className="bg-neutral-900/95 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-lg shadow-2xl w-[320px] whitespace-normal">
-                  <span className="font-medium">{index + 1}.</span>{' '}
-                  <span className="line-clamp-2">{gem.name}</span>
-                </div>
-              </div>
-            </button>
-          )
-        })}
-      </div>
-
       {/* Hidden Gems Sections */}
       <div>
         {gems.map((gem, index) => (

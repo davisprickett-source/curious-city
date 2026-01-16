@@ -236,8 +236,8 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
       )}
 
       {/* Right Column - Content (65%) - Scrollable */}
-      <div className={`flex-1 flex flex-col ${!images.length ? 'lg:w-full' : ''}`}>
-        <div className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar">
+      <div className={`flex-1 flex flex-col min-h-0 ${!images.length ? 'lg:w-full' : ''}`}>
+        <div className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
