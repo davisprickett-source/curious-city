@@ -1,11 +1,10 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 import { getCityListiclePages } from '@/lib/content/cityHomepage'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
+import { SubsectionCard } from '@/components/SubsectionCard'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
 interface DiscoverPageProps {
@@ -111,52 +110,15 @@ export default async function DiscoverPage({ params }: DiscoverPageProps) {
                 {listiclePages.map((page) => {
                   const style = typeStyles[page.type] || typeStyles.curiosities
                   return (
-                    <Link
+                    <SubsectionCard
                       key={page.type}
+                      title={page.title}
+                      teaser={page.teaser}
                       href={page.href}
-                      className="group block"
-                    >
-                      <div className="relative rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                        {/* Background */}
-                        <div className="absolute inset-0">
-                          {page.thumbnail ? (
-                            <>
-                              <Image
-                                src={page.thumbnail}
-                                alt={page.title}
-                                fill
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                              />
-                              <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient}`} />
-                            </>
-                          ) : (
-                            <div className={`absolute inset-0 bg-gradient-to-br ${style.fallback}`} />
-                          )}
-                        </div>
-
-                        {/* Content */}
-                        <div className="relative p-6 md:p-8 min-h-[220px] md:min-h-[260px] flex flex-col justify-end">
-                          {/* Title */}
-                          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                            {page.title}
-                          </h2>
-
-                          {/* Teaser */}
-                          <p className="text-base text-white/85 leading-relaxed line-clamp-2 mb-4">
-                            {page.teaser}
-                          </p>
-
-                          {/* Explore link */}
-                          <div className="flex items-center text-accent-400 group-hover:text-white transition-colors border border-accent-400/30 group-hover:border-white/50 px-3 py-1.5 rounded-full w-fit">
-                            <span className="text-sm font-bold uppercase tracking-wider">Explore</span>
-                            <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
+                      thumbnail={page.thumbnail ? { src: page.thumbnail, alt: page.title } : undefined}
+                      gradient={style.gradient}
+                      fallbackGradient={style.fallback}
+                    />
                   )
                 })}
               </div>

@@ -446,7 +446,7 @@ export const portland: CityData = {
           hours: 'Daily 10am-4pm (varies by season)',
           price: '$20 adults',
           website: 'https://japanesegarden.org',
-          tip: 'Go on a weekday morning for the most peaceful experience',
+          tip: 'Weekday mornings before 10am to avoid tour groups',
         },
         {
           id: 'iconic-ad-1',
@@ -525,7 +525,7 @@ export const portland: CityData = {
           coordinates: { lat: 45.5497, lng: -122.6756 },
           hours: 'Businesses vary',
           price: 'Free to explore',
-          tip: 'Explore the independent shops and grab a bite at one of the many unique restaurants.',
+          tip: 'Park near Skidmore and walk the strip. Saturday afternoons are peak.',
           website: 'https://mississippiave.org',
         },
         {
@@ -625,7 +625,7 @@ export const portland: CityData = {
           hours: 'Tue-Sun 10am-4pm',
           price: '$8 adults/$5 youth (free admission available by request)',
           website: 'https://leachgarden.org',
-          tip: 'A secret garden hiding in plain sight, perfect for a peaceful afternoon.',
+          tip: 'Spring blooms peak in April-May. Bring a thermos—no cafe on site.',
         }
       ],
     },
@@ -688,7 +688,7 @@ export const portland: CityData = {
                       hours: 'Wed-Sun 11am-6pm', // Typical museum hours, might need verification
                       price: 'Free admission', // Typically free, donations encouraged
                       website: 'https://peculiarium.com/', // Found website from web
-                      tip: 'Be prepared for the bizarre and don\'t be afraid to ask about the Bigfoot lore.',
+                      tip: 'Free admission but the gift shop is the actual business model.',
                       sources: [
                         {
                           title: 'Freakybuttrue Peculiarium',
@@ -749,7 +749,7 @@ export const portland: CityData = {
                               hours: 'Daily 9am-5pm (Chapel open until 8pm)',
                               price: 'Free (Upper level gardens require admission)',
                               website: 'https://thegrotto.org/',
-                              tip: 'Visit the free lower level grounds for a peaceful experience, or pay admission for the upper gardens and views.',
+                              tip: 'Lower grotto is free. Upper gardens require admission. Both worth it.',
                               sources: [
                                 {
                                   title: 'The Grotto - National Sanctuary of Our Sorrowful Mother',
@@ -1111,9 +1111,9 @@ export const portland: CityData = {
         {
           name: 'Produce Row Café',
           neighborhood: 'Industrial Eastside',
-          vibe: 'Portland\'s original craft beer bar since 1974. 24 taps, award-winning bourbon collection, and one of the best year-round patios in the city.',
+          vibe: 'Portland\'s original craft beer bar since 1974. 24 taps, award-winning bourbon collection, and a covered, heated patio that makes nine-month drizzle season tolerable.',
           order: 'Whatever local draft catches your eye. Happy hour (4-7pm) has $4 select beers and $7 cocktails. The bourbon collection is underrated.',
-          why: 'Pro Row has been the pulse of Portland\'s craft beer movement for over 50 years. From its original craft beer bar roots, it has evolved into a stunning venue that\'s as good for a casual pint as for a private event. The patio is genuinely excellent—covered and heated for Portland\'s weather. They\'ve added an award-winning bourbon collection and elevated comfort food to the beer-forward foundation.',
+          why: 'Pro Row has been the pulse of Portland\'s craft beer movement for over 50 years. What started as a pioneering craft beer bar evolved into a venue that works for both casual pints and private events. The covered, heated patio is the move year-round. They added an award-winning bourbon collection and elevated comfort food without abandoning the beer-forward core.',
           address: '204 SE Oak St, Portland, OR 97214',
           coordinates: { lat: 45.5208, lng: -122.6594 },
           price: '$$',
@@ -1194,7 +1194,7 @@ export const portland: CityData = {
         {
           name: 'Screen Door',
           neighborhood: 'Kerns',
-          vibe: 'Southern comfort food since 2006. Cooking Channel called it the "best Southern breakfast on the West Coast."',
+          vibe: 'Southern comfort food since 2006. The line wraps around the block most weekends. Cooking Channel called it the West Coast\'s best Southern breakfast.',
           order: 'Buttermilk-battered fried chicken with sweet potato waffles. Bananas Foster French toast at brunch. Biscuits and gravy (sausage or vegetarian).',
           why: 'The line exists for a reason—Screen Door hosts 500 customers per weekend. They ranked #2 in Willamette Week\'s Best Brunch 2024 reader\'s poll. The original Burnside location opened in 2006; they\'ve since expanded to the Pearl District and Portland International Airport. Walk-ins are the primary model, but limited reservations are available. Get in line early or grab the app to add your name remotely.',
           address: '2337 E Burnside St, Portland, OR 97214',
@@ -1230,7 +1230,7 @@ export const portland: CityData = {
         {
           name: 'Ava Gene\'s',
           neighborhood: 'Richmond',
-          vibe: 'Roman-inspired Italian with Pacific Northwest farm-fresh ingredients. #35 on The Oregonian\'s 2025 Best Portland Restaurants.',
+          vibe: 'Roman-inspired Italian meets Pacific Northwest ingredients. Bon Appétit\'s #5 Best New Restaurant in 2012. Survived the pandemic and returned stronger.',
           order: 'The pasta is milled, extruded, and rolled in-house daily. Whatever\'s seasonal. The vegetable preparations are the real revelation.',
           why: 'When Ava Gene\'s opened in 2012, Bon Appétit ranked it #5 on their Best New Restaurants in America list. The kitchen specializes in the artistry of pasta making—every batch is made fresh in-house. After closing during the pandemic (operating as Shipshape Goods walk-up window), the restaurant reopened in 2023 under new ownership. Portland Monthly included it in their 2025 list of "25 restaurants that made Portland." The vegetable-forward approach proves that produce can be the star.',
           address: '3377 SE Division St, Portland, OR 97202',
@@ -1291,9 +1291,9 @@ export const portland: CityData = {
         {
           name: 'Albina Press',
           neighborhood: 'North Portland',
-          vibe: 'Arguably the most beloved café in Portland. High standards since 2004, influencing the entire third-wave scene.',
+          vibe: 'Many locals call this Portland\'s best coffee, full stop. High standards since 2004, spawned an entire generation of third-wave shops.',
           order: 'Espresso or cortado. They hold their baristas to high standards for a reason.',
-          why: 'Albina Press opened in 2004 as a leader in Portland\'s third-wave coffee movement. Its influence spread — Billy Wilson went on to open Barista, Matt Higgins became CEO of Coava. Many locals consider this the best coffee in Portland, full stop. The North Portland location is the original; the standards haven\'t slipped in two decades.',
+          why: 'Albina Press opened in 2004 as a leader in Portland\'s third-wave coffee movement. Its influence spread through its alumni — Billy Wilson opened Barista, Matt Higgins became CEO of Coava. The North Portland location is the original. Twenty years later, the standards haven\'t slipped.',
           address: '4637 N Albina Ave, Portland, OR 97217',
           coordinates: { lat: 45.5580, lng: -122.6756 },
           hours: '7am-5pm daily',
@@ -1308,9 +1308,9 @@ export const portland: CityData = {
         {
           name: 'Either/Or',
           neighborhood: 'North Portland',
-          vibe: 'Originally a teeny-tiny Sellwood gem, now a beloved North Portland café with DIY charms. Espresso flights and inventive coffee cocktails.',
+          vibe: 'Started as a shoebox in Sellwood, now a North Portland café with DIY charm intact. Espresso flights and coffee cocktails that actually work.',
           order: 'The espresso flight if you want to compare. Or whatever inventive coffee cocktail they\'re running.',
-          why: 'Either/Or started as a beloved shoebox in Sellwood before relocating to North Portland. They\'ve kept the same DIY charms and cult following. The espresso flights let you compare different preparations side by side, and their breakfast items are more than an afterthought. This is the kind of spot that reminds you Portland coffee is its own culture.',
+          why: 'Either/Or started in a tiny Sellwood space before relocating to North Portland. The DIY ethos and cult following came along for the move. The espresso flights let you compare different preparations side by side. Their breakfast items are more than an afterthought. This is the kind of spot that reminds you Portland coffee is its own culture.',
           address: '5027 N Lombard St, Portland, OR 97203',
           coordinates: { lat: 45.5774, lng: -122.7043 },
           hours: '8am-3pm daily',
@@ -1324,7 +1324,7 @@ export const portland: CityData = {
         {
           name: 'Push x Pull',
           neighborhood: 'Stark / Market',
-          vibe: 'Enthusiastic baristas and unique offerings. Their natural process Kenyan is worth seeking out.',
+          vibe: 'Baristas who actually geek out about coffee. Their natural process Kenyan is worth the trek.',
           order: 'Ask what\'s exciting them today. They\'ll have an opinion.',
           why: 'Push x Pull opened their roasting space on Market to the public in late 2024, joining their original Stark location. The baristas here are genuinely enthusiastic — not performing enthusiasm, actually geeking out. Their natural process Kenyan is the kind of coffee that reminds you why you care about this stuff.',
           address: '2809 SE Stark St, Portland, OR 97214',

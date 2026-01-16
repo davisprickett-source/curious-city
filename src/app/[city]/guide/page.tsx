@@ -2,8 +2,7 @@ import { Fragment } from 'react'
 import { getCity, getAllCitySlugs, getCityBestOf } from '@/data/cities'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import Link from 'next/link'
-import Image from 'next/image'
+import { SubsectionCard } from '@/components/SubsectionCard'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { BreadcrumbSchema } from '@/components/StructuredData'
@@ -60,24 +59,27 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const guideCategories = [
     {
       title: 'Best Bars',
-      description: 'Cocktail lounges, dive bars, and neighborhood favorites',
+      teaser: 'Cocktail lounges, dive bars, and neighborhood favorites',
       href: `/${slug}/bars`,
-      image: barSpot?.images?.[0],
-      gradient: 'from-indigo-600 to-indigo-900',
+      thumbnail: barSpot?.images?.[0],
+      gradient: 'from-indigo-900/90 via-indigo-900/60 to-indigo-900/30',
+      fallbackGradient: 'from-indigo-700 to-indigo-950',
     },
     {
       title: 'Best Restaurants',
-      description: 'From fine dining to neighborhood spots, the city&apos;s culinary highlights',
+      teaser: 'From fine dining to neighborhood spots, the city\'s culinary highlights',
       href: `/${slug}/restaurants`,
-      image: restaurantSpot?.images?.[0],
-      gradient: 'from-amber-600 to-amber-900',
+      thumbnail: restaurantSpot?.images?.[0],
+      gradient: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
+      fallbackGradient: 'from-amber-700 to-amber-950',
     },
     {
       title: 'Best Coffee Shops',
-      description: 'Local roasters, cozy cafes, and third wave coffee',
+      teaser: 'Local roasters, cozy cafes, and third wave coffee',
       href: `/${slug}/coffee-shops`,
-      image: coffeeSpot?.images?.[0],
-      gradient: 'from-stone-600 to-stone-900',
+      thumbnail: coffeeSpot?.images?.[0],
+      gradient: 'from-stone-900/90 via-stone-900/60 to-stone-900/30',
+      fallbackGradient: 'from-stone-700 to-stone-950',
     },
   ]
 
@@ -100,75 +102,32 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <main className="flex-1">
           {/* Hero Section */}
           <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
-            <div className="container-page py-16 md:py-24">
-              <div className="max-w-3xl">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                  Your Guide to {city.name}
+            <div className="container-page py-12 md:py-16">
+              <div className="max-w-4xl">
+                <div className="eyebrow text-accent-400 mb-3">Essential Guide</div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                  Guide
                 </h1>
-                <p className="text-xl text-neutral-300 leading-relaxed">
-                  The essential guide to eating and drinking in {city.name}.
-                  Curated lists of the best bars, restaurants, and coffee shops—all
-                  vetted by locals who know the city inside out.
+                <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
+                  The essential guide to eating and drinking in {city.name}. Curated lists of the best bars, restaurants, and coffee shops—all vetted by locals.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Guide Categories */}
-          <div className="container-page section-spacing">
-            <div className="space-y-8 max-w-4xl mx-auto">
+          {/* Guide Categories Grid */}
+          <div className="container-page py-10 md:py-14">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {guideCategories.map((category) => (
-                <Link
+                <SubsectionCard
                   key={category.href}
+                  title={category.title}
+                  teaser={category.teaser}
                   href={category.href}
-                  className="group block bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:border-neutral-400 hover:shadow-2xl transition-all duration-300"
-                >
-                  <div className="md:flex">
-                    {/* Image or Gradient Side */}
-                    <div className="md:w-2/5 h-64 md:h-full relative">
-                      {category.image ? (
-                        <>
-                          <Image
-                            src={category.image.src}
-                            alt={category.image.alt}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 40vw"
-                          />
-                          <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-40 group-hover:opacity-30 transition-opacity`} />
-                        </>
-                      ) : (
-                        <div className={`w-full h-full bg-gradient-to-br ${category.gradient}`} />
-                      )}
-                    </div>
-
-                    {/* Content */}
-                    <div className="md:w-3/5 p-8 flex flex-col justify-center">
-                      <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 group-hover:text-accent-600 transition-colors">
-                        {category.title}
-                      </h2>
-                      <p className="text-neutral-600 text-lg leading-relaxed mb-4">
-                        {category.description}
-                      </p>
-                      <div className="inline-flex items-center gap-2 text-accent-600 font-bold group-hover:bg-accent-600 group-hover:text-white px-4 py-2 rounded-full border-2 border-accent-600 transition-all duration-300">
-                        Explore
-                        <svg
-                          className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                  thumbnail={category.thumbnail}
+                  gradient={category.gradient}
+                  fallbackGradient={category.fallbackGradient}
+                />
               ))}
             </div>
           </div>

@@ -690,50 +690,6 @@ export const dallas: CityData = {
           tip: 'Plentiful migrating waterfowl and year-round shorebirds',
         },
         {
-          id: 'gem-speakeasy-1',
-          type: 'hidden-gem',
-          name: 'High & Tight Barber Shop Speakeasy',
-          category: 'Secret Bar',
-          description: 'Secret speakeasy located inside a barber shop in Deep Ellum. Walk past the row of stylists and follow the sound of music to find a green light on the door of the back room, where the salon transforms into a saloon.',
-          images: [
-            {
-              src: '/dallas/hidden-gems/barberspeakeasy-1.png',
-              alt: 'Hidden speakeasy interior with dim lighting',
-            },
-            {
-              src: '/dallas/hidden-gems/barberspeakeasy-2.png',
-              alt: 'Barber shop front concealing the speakeasy',
-            }
-          ],
-          address: 'Deep Ellum',
-          coordinates: { lat: 32.7848, lng: -96.7845 },
-          hours: 'Evening hours after barber shop closes',
-          price: '$$',
-          tip: 'One of Dallas\'s best-kept secrets',
-        },
-        {
-          id: 'gem-speakeasy-2',
-          type: 'hidden-gem',
-          name: 'Room 520',
-          category: 'Secret Hotel Bar',
-          description: 'The most intimate and hidden speakeasy in Dallas. Check in at the front desk of SOVA Hotel and receive a pin code for a small bar in one of its normally labeled rooms. Japanese-inspired cocktails.',
-          images: [
-            {
-              src: '/dallas/establishments/room520-hero.jpg',
-              alt: 'Intimate speakeasy with craft cocktails at Room 520',
-            },
-            {
-              src: '/dallas/establishments/room520-interior.jpg',
-              alt: 'Cozy interior of Room 520 speakeasy in SOVA Hotel',
-            }
-          ],
-          address: 'SOVA Hotel, Dallas',
-          coordinates: { lat: 32.7896, lng: -96.8003 },
-          hours: 'Evening hours',
-          price: '$$$',
-          tip: 'Truly secret - you need a pin code to access',
-        },
-        {
           id: 'gem-venue-1',
           type: 'hidden-gem',
           name: 'The Balcony Club',
@@ -1119,25 +1075,6 @@ export const dallas: CityData = {
           price: '$',
           website: 'https://www.noblecoyotecoffee.com',
           tip: 'Closed Sun-Mon — direct-trade beans eliminate the middleman',
-        },
-        {
-          id: 'gem-bar-1',
-          type: 'hidden-gem',
-          name: 'Twilite Lounge',
-          category: 'Bar',
-          description: 'A slice of New Orleans in Deep Ellum. French Quarter-style courtyard with gold lamps, blood-red curtains, and authentic Big Easy cocktails. The frozen Irish coffee is legendary. Live music, cozy vibes, and Dallas Observer Top 100 Bar.',
-          images: [
-            {
-              src: '/dallas/establishments/twilite-interior.jpg',
-              alt: 'Twilite Lounge New Orleans-themed interior',
-            }
-          ],
-          address: '2640 Elm St, Dallas, TX 75226',
-          coordinates: { lat: 32.7849, lng: -96.7846 },
-          hours: 'Daily 5pm-2am',
-          price: '$$',
-          website: 'https://thetwilitelounge.com',
-          tip: 'Home bar for New Orleans Saints fans — French Quarter atmosphere',
         }
       ],
     },
@@ -1684,6 +1621,51 @@ export const dallas: CityData = {
           hours: 'Tue-Fri 5pm-2am, Sat-Sun 1pm-2am',
           website: 'https://doublewidedallas.com/',
           instagram: '@doublewide_dallas',
+        },
+        {
+          name: 'High & Tight Barber Shop Speakeasy',
+          neighborhood: 'Deep Ellum',
+          vibe: 'A secret speakeasy hidden inside a working barber shop. Walk past the stylists and find the green light.',
+          order: 'Whatever cocktail strikes your fancy — the setting is the main attraction.',
+          why: 'One of Dallas\'s best-kept secrets. Walk into a legitimate barber shop, stroll past the row of stylists, and follow the sound of music to a green-lit door in the back. The salon transforms into a saloon. It\'s the kind of discovery that makes you feel like you\'ve unlocked a level most people don\'t even know exists.',
+          images: [
+            { src: '/dallas/hidden-gems/barberspeakeasy-1.png', alt: 'Hidden speakeasy interior' },
+            { src: '/dallas/hidden-gems/barberspeakeasy-2.png', alt: 'Barber shop front' },
+          ],
+          address: 'Deep Ellum, Dallas',
+          coordinates: { lat: 32.7848, lng: -96.7845 },
+          price: '$$',
+          hours: 'Evening hours after barber shop closes',
+        },
+        {
+          name: 'Room 520',
+          neighborhood: 'Downtown',
+          vibe: 'The most intimate and hidden speakeasy in Dallas — an actual hotel room converted into a bar.',
+          order: 'Japanese-inspired cocktails crafted by expert bartenders.',
+          why: 'Check in at the front desk of SOVA Hotel and receive a pin code. Use it to access what looks like a normal hotel room but is actually one of Dallas\'s smallest and most exclusive bars. Japanese-inspired cocktails in a space that fits maybe a dozen people. This isn\'t hidden for marketing purposes — it\'s genuinely difficult to find and worth the effort.',
+          images: [
+            { src: '/dallas/establishments/room520-hero.jpg', alt: 'Room 520 speakeasy' },
+            { src: '/dallas/establishments/room520-interior.jpg', alt: 'Room 520 interior' },
+          ],
+          address: 'SOVA Hotel, Dallas',
+          coordinates: { lat: 32.7896, lng: -96.8003 },
+          price: '$$$',
+          hours: 'Evening hours',
+        },
+        {
+          name: 'Twilite Lounge',
+          neighborhood: 'Deep Ellum',
+          vibe: 'A slice of New Orleans transplanted to Deep Ellum — French Quarter courtyard, blood-red curtains, and Big Easy cocktails.',
+          order: 'The frozen Irish coffee is legendary. Don\'t overthink it.',
+          why: 'Twilite Lounge brings authentic New Orleans atmosphere to Dallas. Gold lamps, blood-red curtains, and a French Quarter-style courtyard make this the home bar for Saints fans and anyone who misses the Big Easy. The frozen Irish coffee alone is worth the trip. Dallas Observer Top 100 Bar, and deservedly so.',
+          images: [
+            { src: '/dallas/establishments/twilite-interior.jpg', alt: 'Twilite Lounge interior' },
+          ],
+          address: '2640 Elm St, Dallas, TX 75226',
+          coordinates: { lat: 32.7849, lng: -96.7846 },
+          price: '$$',
+          hours: 'Daily 5pm-2am',
+          website: 'https://thetwilitelounge.com',
         },
       ],
     },

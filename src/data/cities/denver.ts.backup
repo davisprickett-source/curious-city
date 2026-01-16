@@ -107,31 +107,6 @@ export const denver: CityData = {
           ],
         },
         {
-          id: 'den-curiosity-17',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Denver invented outdoor Christmas lights to cheer up a sick kid',
-          body: 'In 1914, Denver electrician D.D. Sturgeon wanted to cheer up his four-year-old son who was bedridden. So he hand-painted light bulbs in red and green and hung them on a pine tree outside his son\'s hospital window. The first outdoor Christmas lights in history weren\'t about religion or tradition—they were about a father trying to make his sick kid smile. The idea spread through Denver, then across Colorado, and eventually became a global phenomenon. Every suburban dad cursing at tangled lights owes it to D.D. Sturgeon and his dying son.',
-          year: '1914',
-          sources: [
-            {
-              title: 'Fun Facts About Denver You Probably Never Heard Of',
-              publisher: 'Secret Denver',
-              url: 'https://secretdenver.com/weird-facts-about-denver/',
-            },
-            {
-              title: '50 Facts About Denver That You Never Learned In School',
-              publisher: 'Movoto',
-              url: 'https://www.movoto.com/guide/denver-co/denver-facts/',
-            }
-          ],
-        },
-        {
-          id: 'den-curiosity-ad-1',
-          type: 'ad',
-          size: 'banner',
-        },
-        {
           id: 'den-curiosity-6',
           type: 'curiosity',
           category: 'science',
@@ -146,6 +121,33 @@ export const denver: CityData = {
             name: 'Colorado State Capitol',
             stillExists: true,
           },
+        },
+        {
+          id: 'den-curiosity-ad-1',
+          type: 'ad',
+          size: 'banner',
+        },
+        {
+          id: 'den-curiosity-8',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'South Park\'s creators bought Casa Bonita and fixed it',
+          body: 'The Mexican restaurant with cliff divers, caves, and sopapillas—immortalized in South Park—closed during COVID. In 2021, show creators Matt Stone and Trey Parker bought it. They spent millions on renovations while preserving every absurd detail: the waterfall, Black Bart\'s Hideout, the puppet show, the mariachi bands. The food is now allegedly good. It reopened in 2023. You still need reservations months in advance to eat mediocre enchiladas in a fake cave.',
+          year: '2023',
+          image: {
+            src: '/denver/curiosities/casa-bonita.png',
+            alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower',
+          },
+          source: 'Casa Bonita',
+          location: {
+            name: 'Casa Bonita, Lakewood',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'den-curiosity-ad-2',
+          type: 'ad',
+          size: 'rectangle',
         },
         {
           id: 'den-curiosity-4',
@@ -173,9 +175,187 @@ export const denver: CityData = {
           },
         },
         {
-          id: 'den-curiosity-ad-2',
-          type: 'ad',
-          size: 'rectangle',
+          id: 'den-curiosity-9',
+          type: 'curiosity',
+          category: 'history',
+          title: 'The city almost died before it started',
+          body: 'Denver shouldn\'t exist. In November 1858, prospectors from Kansas founded "Denver City" at the confluence of Cherry Creek and the South Platte River. They found a little gold—enough to spark a rush. By early 1859, the deposits were exhausted. The "Pikes Peak or Bust" gold rush became a bust. Thousands arrived, found nothing, and turned around. Newspapers back East declared it a hoax. Denver\'s population collapsed. The town was weeks from abandonment when prospectors struck real gold at Gregory Gulch near Central City. Suddenly Denver had a purpose: supply hub, banking center, railhead for the mountain camps. The city survived because someone found gold in exactly the right place at the right time. A few months earlier, a few miles elsewhere, and Denver would be another ghost town footnote.',
+          year: '1858',
+          images: [
+            {
+              src: '/denver/curiosities/almost-died-1.png',
+              alt: 'Early Denver City during the gold rush',
+              credit: 'Colorado Historical Society',
+            },
+            {
+              src: '/denver/curiosities/almost-died-2.png',
+              alt: 'Pikes Peak or Bust prospectors',
+              credit: 'Historical Photo',
+            },
+            {
+              src: '/denver/curiosities/almost-died-3.png',
+              alt: 'Cherry Creek gold rush camp',
+              credit: 'Historical Photo',
+            },
+          ],
+          source: 'Colorado Historical Society',
+        },
+        {
+          id: 'den-curiosity-13',
+          type: 'curiosity',
+          category: 'science',
+          title: 'Denver isn\'t actually in the mountains (don\'t tell Denver)',
+          body: 'Despite every postcard, every marketing campaign, and every ski bum\'s delusion, Denver sits squarely on the high plains—an hour\'s drive from the nearest foothills. While the city proudly boasts its "Mile High" elevation (most of the time), the majestic Rockies loom 9,000 feet higher and an hour west. Denver offers stunning views of the mountains, but it is not *in* them. It\'s a plains city with mountain aspirations, perpetually gazing westward like a wistful teenager. The city is essentially a glorified base camp, a gateway to the actual wilderness, perfectly content to bask in the reflected glory of peaks it only occasionally visits.',
+          image: {
+            src: '/denver/curiosities/denver-plain.png',
+            alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
+          },
+          source: 'USGS',
+        },
+        {
+          id: 'den-curiosity-7',
+          type: 'curiosity',
+          category: 'science',
+          title: 'Denver has more sun than San Diego (and worse sunburns)',
+          body: 'Denver averages 300 days of sunshine annually—more than Miami, San Diego, or Los Angeles. But at 5,280 feet, UV exposure is 25% more intense than at sea level. Visitors consistently underestimate how quickly they\'ll fry and how viciously altitude hangovers hit. The sun is relentless. The hangovers are legendary. Locals develop leathery skin by 35. It\'s fine.',
+          image: {
+            src: '/denver/curiosities/denver-sunshine.png',
+            alt: 'Denver skyline under bright sunshine',
+            credit: 'Photo',
+          },
+          source: 'National Weather Service',
+        },
+        {
+          id: 'den-curiosity-14',
+          type: 'curiosity',
+          category: 'law',
+          title: 'Colorado legalized weed first, then corporatized it',
+          body: 'In 2012, Colorado voters made the state the first (along with Washington) to legalize recreational cannabis. Dispensaries opened January 1, 2014 to lines around the block and international media. The rebellious experiment is now heavily regulated bureaucracy. Corporate chains dominate. Annual sales exceed $1.5 billion. The industry has lobbyists and tax accountants. Very punk rock.',
+          year: '2012',
+          image: {
+            src: '/denver/curiosities/cannabis.png',
+            alt: 'Colorado cannabis dispensary',
+            credit: 'Photo',
+          },
+          source: 'Colorado Department of Revenue',
+          location: {
+            name: 'State of Colorado',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'den-curiosity-3',
+          type: 'curiosity',
+          category: 'underground',
+          title: 'Secret tunnels connect downtown to mysterious destinations',
+          body: 'A network of tunnels runs beneath downtown Denver, originally built for steam heating. During Prohibition, they connected speakeasies. Some lead to the Brown Palace Hotel, which has hosted every president since Teddy Roosevelt. Urban explorers claim the tunnels extend far beyond official maps. The city won\'t confirm or deny. The hotel doesn\'t comment. The tunnels remain.',
+          image: {
+            src: '/denver/curiosities/denver-tunnels.png',
+            alt: 'Underground tunnels beneath downtown Denver',
+            credit: 'Historical Photo',
+          },
+          source: 'Brown Palace Hotel historical records',
+        },
+        {
+          id: 'den-curiosity-11',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Denver has more breweries than any American city',
+          body: 'The Denver metro has over 150 craft breweries—more than any US city. Coors in Golden (technically a suburb) is the world\'s largest single-site brewery. The Great American Beer Festival happens here annually. Even the airport has craft beer taps past security. You cannot throw a rock without hitting an IPA. Do not throw rocks in breweries.',
+          image: {
+            src: '/denver/curiosities/breweries-2.png',
+            alt: 'Denver craft brewery scene',
+            credit: 'Photo',
+          },
+          source: 'Colorado Brewers Guild',
+          location: {
+            name: 'Denver Metro',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'den-curiosity-15',
+          type: 'curiosity',
+          category: 'architecture',
+          title: 'The Brown Palace never closed in 130 years',
+          body: 'The Brown Palace Hotel opened in 1892 and has operated continuously ever since—through the Spanish Flu, the Great Depression, World War II, and COVID-19. Every president since Teddy Roosevelt has stayed here. The atrium lobby rises eight stories. Underground tunnels once provided discreet exits to surrounding buildings. The hotel has seen everything. The hotel will outlast us all.',
+          year: '1892',
+          image: {
+            src: '/denver/curiosities/curious-brownpalace-1.png',
+            alt: 'The Brown Palace Hotel atrium and historic architecture',
+          },
+          source: 'Brown Palace Hotel',
+          location: {
+            name: 'Brown Palace Hotel',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'den-curiosity-16',
+          type: 'curiosity',
+          category: 'nature',
+          title: 'Red Rocks is 300 million years of perfect acoustics',
+          body: 'Red Rocks Amphitheatre isn\'t a venue—it\'s a geological accident that happens to host concerts. The two massive sandstone formations (Ship Rock and Creation Rock) rose from a prehistoric ocean floor 300 million years ago, were tilted vertical during mountain-building, and created what acousticians call "the only naturally perfect amphitheater in the world." The rocks amplify sound naturally. No stadium comes close. In 1911, opera singer Mary Garden declared she\'d never heard better acoustics at any opera house in the world. In 2021, it was the highest-grossing venue on Earth. The Beatles played here in 1964. U2 filmed "Under a Blood Red Sky" here in 1983. Every artist wants this on their resume. The rocks don\'t care. They\'ll be here 300 million years after the last encore.',
+          year: '1941',
+          images: [
+            {
+              src: '/denver/curiosities/curious-red-rocks-1.png',
+              alt: 'Red Rocks Amphitheatre natural rock formations',
+            },
+            {
+              src: '/denver/curiosities/curious-red-rocks-2.png',
+              alt: 'Red Rocks concert with dramatic rock walls',
+            },
+            {
+              src: '/denver/curiosities/curious-red-rocks-3.png',
+              alt: 'Red Rocks Amphitheatre scenic view',
+            },
+          ],
+          source: 'Red Rocks Amphitheatre, National Geographic',
+          location: {
+            name: 'Red Rocks Park, Morrison (15 miles west of Denver)',
+            stillExists: true,
+          },
+        },
+        {
+          id: 'den-curiosity-17',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Denver invented outdoor Christmas lights to cheer up a sick kid',
+          body: 'In 1914, Denver electrician D.D. Sturgeon wanted to cheer up his four-year-old son who was bedridden. So he hand-painted light bulbs in red and green and hung them on a pine tree outside his son\'s hospital window. The first outdoor Christmas lights in history weren\'t about religion or tradition—they were about a father trying to make his sick kid smile. The idea spread through Denver, then across Colorado, and eventually became a global phenomenon. Every suburban dad cursing at tangled lights owes it to D.D. Sturgeon and his dying son.',
+          year: '1914',
+          sources: [
+            {
+              title: 'Fun Facts About Denver You Probably Never Heard Of',
+              publisher: 'Secret Denver',
+              url: 'https://secretdenver.com/weird-facts-about-denver/',
+            },
+            {
+              title: '50 Facts About Denver That You Never Learned In School',
+              publisher: 'Movoto',
+              url: 'https://www.movoto.com/guide/denver-co/denver-facts/',
+            }
+          ],
+        },
+        {
+          id: 'den-curiosity-18',
+          type: 'curiosity',
+          category: 'law',
+          title: 'Kissing was banned at Union Station because it slowed down the trains',
+          body: 'In 1902, Denver Union Station had a problem: too much kissing. Couples saying goodbye would linger on the platforms, blocking passengers and delaying departures. The solution? Ban all kissing at the station. The rule was officially enforced, with railway staff breaking up smooches to keep the trains on schedule. It remained technically illegal for decades. Today, nobody enforces it. The trains are no longer slowed by romance. They\'re slowed by everything else.',
+          year: '1902',
+          sources: [
+            {
+              title: 'Fun Facts and Weird Laws in Denver',
+              publisher: 'AMLI',
+              url: 'https://www.amli.com/blog/fun-facts-and-weird-laws-about-denver-colorado',
+            }
+          ],
+          location: {
+            name: 'Denver Union Station',
+            coordinates: { lat: 39.7539, lng: -105.0003 },
+            stillExists: true,
+          },
         },
         {
           id: 'den-curiosity-19',
@@ -223,186 +403,6 @@ export const denver: CityData = {
           location: {
             name: 'Colorado State Capitol',
             coordinates: { lat: 39.7392, lng: -104.9847 },
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-9',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The city almost died before it started',
-          body: 'Denver shouldn\'t exist. In November 1858, prospectors from Kansas founded "Denver City" at the confluence of Cherry Creek and the South Platte River. They found a little gold—enough to spark a rush. By early 1859, the deposits were exhausted. The "Pikes Peak or Bust" gold rush became a bust. Thousands arrived, found nothing, and turned around. Newspapers back East declared it a hoax. Denver\'s population collapsed. The town was weeks from abandonment when prospectors struck real gold at Gregory Gulch near Central City. Suddenly Denver had a purpose: supply hub, banking center, railhead for the mountain camps. The city survived because someone found gold in exactly the right place at the right time. A few months earlier, a few miles elsewhere, and Denver would be another ghost town footnote.',
-          year: '1858',
-          images: [
-            {
-              src: '/denver/curiosities/almost-died-1.png',
-              alt: 'Early Denver City during the gold rush',
-              credit: 'Colorado Historical Society',
-            },
-            {
-              src: '/denver/curiosities/almost-died-2.png',
-              alt: 'Pikes Peak or Bust prospectors',
-              credit: 'Historical Photo',
-            },
-            {
-              src: '/denver/curiosities/almost-died-3.png',
-              alt: 'Cherry Creek gold rush camp',
-              credit: 'Historical Photo',
-            },
-          ],
-          source: 'Colorado Historical Society',
-        },
-        {
-          id: 'den-curiosity-18',
-          type: 'curiosity',
-          category: 'law',
-          title: 'Kissing was banned at Union Station because it slowed down the trains',
-          body: 'In 1902, Denver Union Station had a problem: too much kissing. Couples saying goodbye would linger on the platforms, blocking passengers and delaying departures. The solution? Ban all kissing at the station. The rule was officially enforced, with railway staff breaking up smooches to keep the trains on schedule. It remained technically illegal for decades. Today, nobody enforces it. The trains are no longer slowed by romance. They\'re slowed by everything else.',
-          year: '1902',
-          sources: [
-            {
-              title: 'Fun Facts and Weird Laws in Denver',
-              publisher: 'AMLI',
-              url: 'https://www.amli.com/blog/fun-facts-and-weird-laws-about-denver-colorado',
-            }
-          ],
-          location: {
-            name: 'Denver Union Station',
-            coordinates: { lat: 39.7539, lng: -105.0003 },
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-7',
-          type: 'curiosity',
-          category: 'science',
-          title: 'Denver has more sun than San Diego (and worse sunburns)',
-          body: 'Denver averages 300 days of sunshine annually—more than Miami, San Diego, or Los Angeles. But at 5,280 feet, UV exposure is 25% more intense than at sea level. Visitors consistently underestimate how quickly they\'ll fry and how viciously altitude hangovers hit. The sun is relentless. The hangovers are legendary. Locals develop leathery skin by 35. It\'s fine.',
-          image: {
-            src: '/denver/curiosities/denver-sunshine.png',
-            alt: 'Denver skyline under bright sunshine',
-            credit: 'Photo',
-          },
-          source: 'National Weather Service',
-        },
-        {
-          id: 'den-curiosity-8',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'South Park\'s creators bought Casa Bonita and fixed it',
-          body: 'The Mexican restaurant with cliff divers, caves, and sopapillas—immortalized in South Park—closed during COVID. In 2021, show creators Matt Stone and Trey Parker bought it. They spent millions on renovations while preserving every absurd detail: the waterfall, Black Bart\'s Hideout, the puppet show, the mariachi bands. The food is now allegedly good. It reopened in 2023. You still need reservations months in advance to eat mediocre enchiladas in a fake cave.',
-          year: '2023',
-          image: {
-            src: '/denver/curiosities/casa-bonita.png',
-            alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower',
-          },
-          source: 'Casa Bonita',
-          location: {
-            name: 'Casa Bonita, Lakewood',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-13',
-          type: 'curiosity',
-          category: 'science',
-          title: 'Denver isn\'t actually in the mountains (don\'t tell Denver)',
-          body: 'Despite every postcard, every marketing campaign, and every ski bum\'s delusion, Denver sits squarely on the high plains—an hour\'s drive from the nearest foothills. While the city proudly boasts its "Mile High" elevation (most of the time), the majestic Rockies loom 9,000 feet higher and an hour west. Denver offers stunning views of the mountains, but it is not *in* them. It\'s a plains city with mountain aspirations, perpetually gazing westward like a wistful teenager. The city is essentially a glorified base camp, a gateway to the actual wilderness, perfectly content to bask in the reflected glory of peaks it only occasionally visits.',
-          image: {
-            src: '/denver/curiosities/denver-plain.png',
-            alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
-          },
-          source: 'USGS',
-        },
-        {
-          id: 'den-curiosity-16',
-          type: 'curiosity',
-          category: 'nature',
-          title: 'Red Rocks is 300 million years of perfect acoustics',
-          body: 'Red Rocks Amphitheatre isn\'t a venue—it\'s a geological accident that happens to host concerts. The two massive sandstone formations (Ship Rock and Creation Rock) rose from a prehistoric ocean floor 300 million years ago, were tilted vertical during mountain-building, and created what acousticians call "the only naturally perfect amphitheater in the world." The rocks amplify sound naturally. No stadium comes close. In 1911, opera singer Mary Garden declared she\'d never heard better acoustics at any opera house in the world. In 2021, it was the highest-grossing venue on Earth. The Beatles played here in 1964. U2 filmed "Under a Blood Red Sky" here in 1983. Every artist wants this on their resume. The rocks don\'t care. They\'ll be here 300 million years after the last encore.',
-          year: '1941',
-          images: [
-            {
-              src: '/denver/curiosities/curious-red-rocks-1.png',
-              alt: 'Red Rocks Amphitheatre natural rock formations',
-            },
-            {
-              src: '/denver/curiosities/curious-red-rocks-2.png',
-              alt: 'Red Rocks concert with dramatic rock walls',
-            },
-            {
-              src: '/denver/curiosities/curious-red-rocks-3.png',
-              alt: 'Red Rocks Amphitheatre scenic view',
-            },
-          ],
-          source: 'Red Rocks Amphitheatre, National Geographic',
-          location: {
-            name: 'Red Rocks Park, Morrison (15 miles west of Denver)',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-3',
-          type: 'curiosity',
-          category: 'underground',
-          title: 'Secret tunnels connect downtown to mysterious destinations',
-          body: 'A network of tunnels runs beneath downtown Denver, originally built for steam heating. During Prohibition, they connected speakeasies. Some lead to the Brown Palace Hotel, which has hosted every president since Teddy Roosevelt. Urban explorers claim the tunnels extend far beyond official maps. The city won\'t confirm or deny. The hotel doesn\'t comment. The tunnels remain.',
-          image: {
-            src: '/denver/curiosities/denver-tunnels.png',
-            alt: 'Underground tunnels beneath downtown Denver',
-            credit: 'Historical Photo',
-          },
-          source: 'Brown Palace Hotel historical records',
-        },
-        {
-          id: 'den-curiosity-15',
-          type: 'curiosity',
-          category: 'architecture',
-          title: 'The Brown Palace never closed in 130 years',
-          body: 'The Brown Palace Hotel opened in 1892 and has operated continuously ever since—through the Spanish Flu, the Great Depression, World War II, and COVID-19. Every president since Teddy Roosevelt has stayed here. The atrium lobby rises eight stories. Underground tunnels once provided discreet exits to surrounding buildings. The hotel has seen everything. The hotel will outlast us all.',
-          year: '1892',
-          image: {
-            src: '/denver/curiosities/curious-brownpalace-1.png',
-            alt: 'The Brown Palace Hotel atrium and historic architecture',
-          },
-          source: 'Brown Palace Hotel',
-          location: {
-            name: 'Brown Palace Hotel',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-11',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Denver has more breweries than any American city',
-          body: 'The Denver metro has over 150 craft breweries—more than any US city. Coors in Golden (technically a suburb) is the world\'s largest single-site brewery. The Great American Beer Festival happens here annually. Even the airport has craft beer taps past security. You cannot throw a rock without hitting an IPA. Do not throw rocks in breweries.',
-          image: {
-            src: '/denver/curiosities/breweries-2.png',
-            alt: 'Denver craft brewery scene',
-            credit: 'Photo',
-          },
-          source: 'Colorado Brewers Guild',
-          location: {
-            name: 'Denver Metro',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'den-curiosity-14',
-          type: 'curiosity',
-          category: 'law',
-          title: 'Colorado legalized weed first, then corporatized it',
-          body: 'In 2012, Colorado voters made the state the first (along with Washington) to legalize recreational cannabis. Dispensaries opened January 1, 2014 to lines around the block and international media. The rebellious experiment is now heavily regulated bureaucracy. Corporate chains dominate. Annual sales exceed $1.5 billion. The industry has lobbyists and tax accountants. Very punk rock.',
-          year: '2012',
-          image: {
-            src: '/denver/curiosities/cannabis.png',
-            alt: 'Colorado cannabis dispensary',
-            credit: 'Photo',
-          },
-          source: 'Colorado Department of Revenue',
-          location: {
-            name: 'State of Colorado',
             stillExists: true,
           },
         },
