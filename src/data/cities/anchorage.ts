@@ -113,7 +113,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'nature',
           title: 'Urban moose are more violent than grizzlies',
-          body: 'Anchorage\'s 1,500 city moose didn\'t adapt to humans—they learned to bully them. Moose attacks injure 5-10 people per year here, outpacing bear attacks statewide. These aren\'t skittish woodland creatures; they\'re 1,200-pound mammals who\'ve figured out that lawns are easier than tundra and that humans usually back down first. The city runs a dedicated moose patrol. Calving season turns them homicidal.',
+          body: 'Anchorage\'s 1,500 city moose didn\'t adapt to humans—they learned to bully them. Moose attacks injure 5-10 people per year here, outpacing bear attacks statewide. These aren\'t skittish woodland creatures; they\'re 1,200-pound mammals who\'ve figured out that lawns are easier than tundra and that humans usually back down first. They bed down in schoolyards, block traffic on major roads, and charge anyone who gets too close—which, in their minds, is about 50 feet. The city runs a dedicated moose patrol to respond to aggressive encounters and tranquilize problem animals. Spring calving season turns cows homicidal; a mother moose protecting calves is more dangerous than a grizzly protecting cubs. Every winter, the hospital treats stomped ribs, broken bones, and concussions from moose who decided a pedestrian looked threatening. Dogs are especially risky—moose see them as wolves and will stomp them to death, along with any human holding the leash. Alaskans learn fast: if a moose is on the sidewalk, you take the long way around.',
           images: [
             {
               src: '/anchorage/curiosities/urban-moose.jpg',
@@ -125,7 +125,6 @@ export const anchorage: CityData = {
               alt: 'Wildlife in Alaska urban setting',
             }
           ],
-          source: 'Alaska Department of Fish and Game',
         },
         {
           id: 'anc-curiosity-outhouse',
@@ -212,7 +211,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'nature',
           title: 'Downtown lawyers catch 30-pound salmon on their lunch break',
-          body: 'Ship Creek runs through downtown Anchorage, and every summer, king and silver salmon fight their way upstream—right past office buildings and the federal courthouse. Locals in business attire swap spreadsheets for fishing rods at lunch. The state stocks the creek with extra fish to handle the fishing pressure. This might be the only city in America where you can land a 30-pound king salmon between depositions.',
+          body: 'Ship Creek runs through downtown Anchorage, and every summer, king and silver salmon fight their way upstream—right past office buildings, the federal courthouse, and the Alaska Railroad tracks. King salmon arrive in late May and June, silvers from July through September. Peak season brings what locals call "combat fishing"—anglers standing shoulder-to-shoulder along the banks, rods tangling, coolers stacked with ice. You\'ll see lawyers in Brooks Brothers suits next to pipeline workers in Carhartts, downtown office workers who keep rods in their cars specifically for lunch-break fishing runs. The Alaska Department of Fish and Game stocks the creek with hundreds of thousands of additional salmon to handle the pressure—this is an urban fishery by design, maintained so Anchorage residents can land 30-pound kings without driving two hours into the wilderness. Rental shops along the creek rent gear by the hour. The parking lot fills at 5 AM on good days. And yes, this might be the only city in America where you can catch a trophy salmon between depositions and be back at your desk by 2 PM.',
           images: [
             {
               src: '/anchorage/curiosities/curious-salmon-1.png',
@@ -223,7 +222,12 @@ export const anchorage: CityData = {
               alt: 'Urban salmon fishing at Ship Creek',
             }
           ],
-          source: 'Alaska Department of Fish and Game',
+          location: {
+            name: 'Ship Creek, Downtown Anchorage',
+            coordinates: { lat: 61.2213, lng: -149.8776 },
+            mapUrl: 'https://maps.app.goo.gl/zWPvYCVhKBsVqjmj7',
+            stillExists: true,
+          },
         },
         {
           id: 'anc-curiosity-4',
@@ -244,7 +248,7 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'science',
           title: '19 hours of daylight turns some residents manic',
-          body: 'During summer solstice, Anchorage gets 19 hours and 21 minutes of daylight. True darkness never arrives from mid-May through late July. Blackout curtains aren\'t optional. Some residents develop what locals call "midnight sun madness"—a wired, manic energy from the endless light. Others spiral into insomnia and disorientation. The sun refuses to set, and your circadian rhythm loses its mind.',
+          body: 'During summer solstice, Anchorage gets 19 hours and 21 minutes of daylight. True darkness never arrives from mid-May through late July—just a dim twilight that lasts maybe two hours before the sun climbs back up. The effect on humans is measurable and strange. Some residents develop what locals call "midnight sun madness"—a wired, manic energy that drives people to mow lawns at 11 PM, start home renovation projects at midnight, or wake up disoriented at 3 AM thinking they overslept because light is streaming through the windows. Kids play outside until their parents physically drag them inside. Bars stay packed until 3 AM because nobody feels tired. Emergency rooms report upticks in insomnia-related visits. Tourists wander downtown at 1 AM, confused why the sun is still up. Blackout curtains aren\'t optional—they\'re survival equipment. Your body doesn\'t know when to sleep, your brain doesn\'t produce melatonin on schedule, and time becomes weirdly elastic when the sun refuses to cooperate. Some people thrive on it. Others spend June and July in a fugue state, waiting for the darkness to return and their circadian rhythm to remember how to function.',
           images: [
             {
               src: '/anchorage/curiosities/curious-solar-1.png',
@@ -255,7 +259,6 @@ export const anchorage: CityData = {
               alt: 'Midnight sun over Anchorage',
             }
           ],
-          source: 'National Weather Service Alaska',
         },
         {
           id: 'anc-curiosity-10',
