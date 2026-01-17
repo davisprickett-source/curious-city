@@ -58,7 +58,7 @@ export const portland: CityData = {
     {
       id: 'pdx-curiosities',
       type: 'section',
-      title: 'Keep it Weird Archive',
+      title: 'Portland\'s Strange & Remarkable',
       teaser: 'The world\'s smallest park, the horse rings of the 19th century, and the city that refused to stay put',
       intro: 'Portland didn\'t just wake up one day and decide to be weird; it was built into the soil. From the 24-inch park that holds a world record to the iron rings still embedded in the curbs for ghost horses, the Rose City keeps its strangest stories rooted in its pavement.',
       items: [
@@ -1468,7 +1468,7 @@ export const portland: CityData = {
     {
       id: 'pdx-dark-history',
       type: 'section',
-      title: 'Weird & Violent',
+      title: 'Portland\'s Dark History',
       teaser: 'Missing children, shanghaiing tunnels, and the blood beneath the flannel',
       intro: 'Portland\'s reputation as a progressive haven masks a history darker than its famous rain. A child walked into his elementary school and never walked out. The city earned its reputation as "Shanghai Capital of the World" by drugging men through trapdoors and selling them to ship captains. Its second-largest city was washed away in a flood—and officials told residents the dikes were safe 35 minutes before they collapsed. This was the only state admitted to the Union with a Black exclusion clause in its constitution. Serial killers hunted along its highways and dumped bodies in its beloved parks. The ghosts still wander the saloons and mansions. Portland\'s weirdness was always there—but so was the violence. It just wore better boots.',
       items: [

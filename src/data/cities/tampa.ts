@@ -62,9 +62,9 @@ export const tampa: CityData = {
     {
       id: 'tpa-curiosities',
       type: 'section',
-      title: 'The Cigar City Ledger',
+      title: 'Tampa\'s Strange & Remarkable',
       teaser: 'Cigar empires, illegal tunnels, and the city built on seashells',
-      intro: 'Tampa wasn\'t built on gold or oil; it was built on tobacco and seashells. From the cigar factories that turned it into a global hub to the illegal tunnels beneath Ybor City, the Big Guava has always been a place where the line between history and legend is as thick as the humidity.',
+      intro: 'Tampa wasn\'t built on gold or oil; it was built on tobacco and seashells. From the cigar factories that turned it into a global hub to the illegal tunnels beneath Ybor City, this Gulf Coast city has always existed where the line between history and legend is as thick as the humidity.',
       items: [
         {
           id: 'tam-curiosity-1',
@@ -96,11 +96,6 @@ export const tampa: CityData = {
             src: '/tampa/curiosities/shipwreck.png',
             alt: 'Historic ship on Tampa Bay',
           },
-          source: 'Tampa Bay maritime records',
-          location: {
-            name: 'Gulf of Mexico',
-            stillExists: false,
-          },
         },
         {
           id: 'tam-curiosity-ad-1',
@@ -131,7 +126,7 @@ export const tampa: CityData = {
           category: 'history',
           title: 'Cigar factories hired readers to radicalize their workers with Cervantes and Marx',
           featured: true,
-          featuredOrder: 4,
+          featuredOrder: 2,
           body: 'Long before radio, television, or podcasts, Ybor City’s cigar factories had their own unique form of mass media: the lector. Hired by the workers themselves (who pooled their hard-earned pennies), these professional readers sat on elevated tribunas and read aloud for hours. Mornings might be dedicated to newspapers, covering labor movements and Cuban independence. Afternoons, however, were for literature: serialized novels by Cervantes, Zola, and Tolstoy, and crucially, works by Marx and Engels. The Count of Monte Cristo was so popular, a cigar brand was named after it. Factory owners hated the practice, correctly realizing that the lectors were radicalizing their immigrant workforce. During a bitter strike in 1931, owners banned lectors entirely, replacing them with radios playing sanitized content. But the seeds were already sown: Ybor City’s cigar rollers became some of the most literate, politically engaged, and unionized laborers in America, a testament to the power of stories read aloud—even when those stories were about revolution.',
           year: '1890s',
           image: {
@@ -165,6 +160,8 @@ export const tampa: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Part of Ybor City is sovereign Cuban territory',
+          featured: true,
+          featuredOrder: 3,
           body: 'The José Martí Park in Ybor City was deeded to the Republic of Cuba in 1956 and remains sovereign Cuban soil to this day—one of the only pieces of foreign sovereign territory in the United States outside of embassies. Fidel Castro gave a speech there in 1955 to raise money for the revolution. Decades of Cold War hostility, trade embargoes, and diplomatic deep-freeze haven\'t changed the deed. In the middle of Tampa, Cuba still owns a park.',
           year: '1956',
           images: [
@@ -244,22 +241,6 @@ export const tampa: CityData = {
           source: 'Sports Illustrated',
           location: {
             name: 'Tampa',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'tam-curiosity-13',
-          type: 'curiosity',
-          category: 'nature',
-          title: 'Manatees gather at a power plant for warmth',
-          body: 'The TECO Big Bend Power Station discharges warm water that attracts hundreds of manatees every winter. The area has become an unofficial sanctuary—manatees learned that the 72°F discharge is warmer than the bay, and they\'re not stupid. A viewing center lets you watch them bob peacefully in industrial runoff. It\'s an odd symbiosis: endangered species and coal-fired infrastructure, coexisting in mutual convenience.',
-          image: {
-            src: '/tampa/curiosities/manatees.png',
-            alt: 'Manatees gathering at TECO power station',
-          },
-          source: 'Tampa Electric',
-          location: {
-            name: 'TECO Big Bend Power Station',
             stillExists: true,
           },
         },
@@ -1275,10 +1256,71 @@ export const tampa: CityData = {
     {
       id: 'tam-dark-history',
       type: 'section',
-      title: 'Sunshine & Shadows',
+      title: 'Tampa\'s Dark History',
       teaser: 'Mob bosses, serial killers, and the violence beneath the palm trees',
-      intro: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The city\'s dark history isn\'t hidden—it\'s just overshadowed by better marketing.',
+      intro: 'Tampa wears its sunshine like a mask. Beneath the cigar smoke and pirate parades lies a century of mob assassinations, serial killers who hunted the working poor, bodies found floating in the bay with rope around their necks, and a bridge collapse that sent a Greyhound bus full of passengers plummeting into the water. The stories the brochures leave out.',
       items: [
+        {
+          id: 'tam-dark-8',
+          type: 'dark-history',
+          category: 'crime',
+          year: '1920s–1955',
+          title: 'The Era of Blood: Ybor City\'s Mob Wars',
+          featured: true,
+          featuredOrder: 1,
+          body: 'For three decades, Ybor City ran on blood and bolita—a Cuban numbers racket where bets were placed on numbered balls drawn from a bag. Charlie Wall—"The White Shadow"—was an unlikely gangster: son of a prominent Tampa physician, educated, articulate, and willing to kill anyone who threatened his empire of illegal gambling, prostitution, bootlegging, and fixed elections. By the 1920s, Wall controlled Ybor City and half of Tampa\'s corrupt politicians. His turf war with Italian mobster Ignacio Antinori started in 1929 and turned brutal fast—bombings, drive-by shootings, bodies dumped in the bay. Antinori was gunned down at a Palm Avenue fruit stand in 1940, shotgunned in broad daylight. Santo Trafficante Sr., a Sicilian immigrant who understood violence as a business tool, consolidated power during the chaos. By 1945, Trafficante had muscled Wall out of the rackets but allowed him to live—a calculated mercy that ended on April 18, 1955, when Wall, 72 years old and mostly forgotten, was found in his modest Ybor home at 225 South Boulevard with his skull caved in by a baseball bat and his throat cut ear to ear. The murder was never solved. Twenty-five gangland killings between 1932 and 1955. Wall\'s ghost is said to linger at Le Méridien Tampa, the former federal courthouse where he testified against his own kind, and at his old haunts in Ybor, where the streets still remember when the White Shadow ran the city.',
+          verdict: 'Twenty-five gangland killings in twenty-three years. Wall\'s murder remains officially unsolved, likely ordered by the Trafficantes. Ybor City never forgets.',
+          sources: [
+            {
+              type: 'book',
+              title: 'Cigar City Mafia: A Complete History of the Tampa Underworld',
+              author: 'Scott M. Deitche',
+              year: '2004',
+              url: 'https://www.groundzerobooksltd.com/pages/books/84207/scott-m-deitche/cigar-city-mafia-a-complete-history-of-the-tampa-underworld',
+            },
+            {
+              type: 'book',
+              title: 'White Shadow',
+              author: 'Ace Atkins',
+              year: '2006',
+              url: 'https://www.goodreads.com/book/show/265622.White_Shadow',
+            },
+            {
+              type: 'article',
+              title: 'The White Shadow: Tampa\'s Bolita Kingpin',
+              publisher: 'Florida Sheriffs Association',
+              url: 'https://flsheriffs.org/blog/entry/the-white-shadow-tampas-bolita-kingpin/',
+            },
+            {
+              type: 'article',
+              title: 'Ybor\'s Criminal Past - Ybor City and the Era of Blood',
+              publisher: 'Tampa Historical',
+              url: 'https://tampahistorical.org/items/show/93',
+            },
+            {
+              type: 'article',
+              title: 'Santo Trafficante Sr., a \'Sicilian of the old school\', ruled Tampa\'s underworld',
+              publisher: 'The Mob Museum',
+              url: 'https://themobmuseum.org/blog/santo-trafficante-sr-a-sicilian-of-the-old-school-ruled-tampas-underworld-for-more-than-a-decade/',
+            },
+            {
+              type: 'article',
+              title: 'Charlie Wall',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Charlie_Wall',
+            },
+          ],
+          images: [
+            {
+              src: '/tampa/dark-history/mafia-ybor.png',
+              alt: 'Ybor City during the era of mob violence',
+            },
+          ],
+          location: {
+            name: 'Ybor City',
+            stillExists: true,
+          },
+        },
         {
           id: 'tam-dark-1',
           type: 'dark-history',
@@ -1722,73 +1764,6 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Plant Hall, University of Tampa',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'tam-dark-8',
-          type: 'dark-history',
-          category: 'crime',
-          year: '1920s–1955',
-          title: 'The Era of Blood: Ybor City\'s Mob Wars',
-          featured: true,
-          featuredOrder: 1,
-          body: 'For three decades, Ybor City ran on blood and bolita—a Cuban numbers racket where bets were placed on numbered balls drawn from a bag. Charlie Wall—"The White Shadow"—was an unlikely gangster: son of a prominent Tampa physician, educated, articulate, and willing to kill anyone who threatened his empire of illegal gambling, prostitution, bootlegging, and fixed elections. By the 1920s, Wall controlled Ybor City and half of Tampa\'s corrupt politicians. His turf war with Italian mobster Ignacio Antinori started in 1929 and turned brutal fast—bombings, drive-by shootings, bodies dumped in the bay. Antinori was gunned down at a Palm Avenue fruit stand in 1940, shotgunned in broad daylight. Santo Trafficante Sr., a Sicilian immigrant who understood violence as a business tool, consolidated power during the chaos. By 1945, Trafficante had muscled Wall out of the rackets but allowed him to live—a calculated mercy that ended on April 18, 1955, when Wall, 72 years old and mostly forgotten, was found in his modest Ybor home at 225 South Boulevard with his skull caved in by a baseball bat and his throat cut ear to ear. The murder was never solved. Twenty-five gangland killings between 1932 and 1955. Wall\'s ghost is said to linger at Le Méridien Tampa, the former federal courthouse where he testified against his own kind, and at his old haunts in Ybor, where the streets still remember when the White Shadow ran the city.',
-          verdict: 'Twenty-five gangland killings in twenty-three years. Wall\'s murder remains officially unsolved, likely ordered by the Trafficantes. Ybor City never forgets.',
-          sources: [
-            {
-              type: 'book',
-              title: 'Cigar City Mafia: A Complete History of the Tampa Underworld',
-              author: 'Scott M. Deitche',
-              year: '2004',
-              url: 'https://www.groundzerobooksltd.com/pages/books/84207/scott-m-deitche/cigar-city-mafia-a-complete-history-of-the-tampa-underworld',
-            },
-            {
-              type: 'book',
-              title: 'White Shadow',
-              author: 'Ace Atkins',
-              year: '2006',
-              url: 'https://www.goodreads.com/book/show/265622.White_Shadow',
-            },
-            {
-              type: 'article',
-              title: 'The White Shadow: Tampa\'s Bolita Kingpin',
-              publisher: 'Florida Sheriffs Association',
-              url: 'https://flsheriffs.org/blog/entry/the-white-shadow-tampas-bolita-kingpin/',
-            },
-            {
-              type: 'article',
-              title: 'Ybor\'s Criminal Past - Ybor City and the Era of Blood',
-              publisher: 'Tampa Historical',
-              url: 'https://tampahistorical.org/items/show/93',
-            },
-            {
-              type: 'article',
-              title: 'Santo Trafficante Sr., a \'Sicilian of the old school\', ruled Tampa\'s underworld',
-              publisher: 'The Mob Museum',
-              url: 'https://themobmuseum.org/blog/santo-trafficante-sr-a-sicilian-of-the-old-school-ruled-tampas-underworld-for-more-than-a-decade/',
-            },
-            {
-              type: 'documentary',
-              title: 'The Ghosts of Ybor: Charlie Wall',
-              year: '2008',
-              platform: 'Documentary Film',
-            },
-            {
-              type: 'article',
-              title: 'Charlie Wall',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Charlie_Wall',
-            },
-          ],
-          images: [
-            {
-              src: '/tampa/dark-history/mafia-ybor.png',
-              alt: 'Ybor City during the era of mob violence',
-            },
-          ],
-          location: {
-            name: 'Ybor City',
             stillExists: true,
           },
         },

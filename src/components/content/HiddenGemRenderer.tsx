@@ -130,6 +130,36 @@ export function HiddenGemRenderer({ item }: HiddenGemRendererProps) {
             </span>
           )}
         </div>
+
+        {/* Further Reading/Shop Section */}
+        {item.moreInfo && item.moreInfo.length > 0 && (
+          <div className="bg-neutral-50 rounded-lg px-4 py-3 mt-3">
+            <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Recommended & More Info</h4>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5">
+              {item.moreInfo.map((info: any, idx: number) => (
+                <li key={idx}>
+                  <span className="text-xs text-neutral-500 uppercase tracking-wide">
+                    {info.type === 'video' && 'Video: '}
+                    {info.type === 'podcast' && 'Podcast: '}
+                    {info.type === 'article' && 'Article: '}
+                    {info.type === 'shop' && 'Shop: '}
+                    {info.type === 'product' && 'Product: '}
+                    {info.type === 'book' && 'Book: '}
+                    {info.type === 'archive' && 'Archive: '}
+                  </span>
+                  <a
+                    href={info.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-neutral-700 hover:text-accent-600 underline underline-offset-2"
+                  >
+                    {info.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </article>
   )

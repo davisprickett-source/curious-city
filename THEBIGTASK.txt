@@ -1,0 +1,51 @@
+For Any writing:
+
+make sure the style is consistent: it is morningbrew-esque - clever/witty/irreverant when appropriate/high literary non fiction/funny/compeling/award winning non fiction/engaging, no laziness, prob should not use em dashes but only when it is crtical/helpful
+
+
+The main goal is to focus on curiosities, hidden gems, and dark history pages, but other pages can also be edited if you come across stuff that needs to be edited. i have specific tasks from two cities, but there are general principles that need to be applied to all cities. A big task is making sure our hidden gems are actually super cool/compelling, we might need to archive a decent amount that could be used for later content, but the hidden gems actually should make a local and outsider want to visit that place, that’s the main goal, if it is just like huh, interesting, it isn’t worth keeping in hidden gems, maybe it could be in curiosities, but maybe archived for a later use. so the hidden gems writing should make a person go like, man i definitely need to go check that out! 
+
+
+BIG TASKS:
+
+ANCHORAGE
+Hidden Gems
+ - introsucks, dont even have anything about dive bars or sea planes, and NEVER use "we"... wtf, but the line about hiding from cruise crowds is good
+ - maybe add Anchorage's to the beginning of the hook, (anchorage's... missile sites...)
+ - first image from earthquake park is wiki commons not of earthquake park, i should have a different first image - so try to replace the first image if you can find it, if not just delete that first commons image
+ - the creek gorge overlook's first image is not framed correctly, weird, its like the only one that does that, but it appears mostly out of frame to the bottom left... fix it so it displays properly, but i dunno why it is ONLY this image??
+ - MOVE midnight brewing to bars
+ - conservation needs to be way higher up (
+
+TAMPA
+Dark History
+- Mob entry needs to be much higher, maybe 1st
+- there are several sources without any links, every source needs an actual link
+
+Curiosities
+-intro - haven't heard of "big guava" is that a nickname? prob needs to be removed if even I, from that area don't know it, so it doesn't belong in the intro
+
+
+
+BIG/GENERAL STUFF
+-amazon affiliate
+- I think we need comments, but like in a super easy way, no signing in, just add whatever name and comment on the page? or is that too... early 2000s? (dont do anything, discuss after finishing other tasks)
+- the bottom share link needs a horizontal line like the subscribe box above it, als the share pill should be centered under "share this guide" and the pill should be rust with white text, share this guide should be same font size as "stay curious" in the subscribe field
+- amazon links always at the top, must find amazon link for book first, if a book cant be found on amazon, find one that could be closely related to the content, if no other one is found remove the link
+
+- some video sources?? worth having youtube embedded? mayyybe? like it could be cool if going through the image carousel has a youtube embedding that can play within the entry card's space, worth looking into/testing, maybe with one entry and see how it goes
+- remove all general location links (example in dark history tampa, ybor city is the location for the mob entry, it's already mentioned in the article, and too generic, not needed to include, so remove it) - only include location links for things that genuinely need a location link-nothing generic, if the location isn't that big of deal, don't include it, another really bad one-a tampa's curiosities the location for the ship missing is "gulf of mexico" (doesnt exist) lol wtf.... remove remove remove! actually alll that bottom stuff can be removed from the missing ship entry/card - date - remove because it is mentioned in the text, location, generic, also just wrong, source - unless you can get something that expands on the information, dont have a source there, it could be helpful if there is a good longer article on it, but also it's a pretty straightforward story, so maybe doesnt need more info linked? but possibly if something interesting could be found, but as it is, it should just be removed - but try and search and see if a good, rich source can actually be linked for it
+- remove links to stuff that doesnt matter-i think most of these would be in dark history-example: the ghost in seat 308 on the tampa dark history has a link to "A Nightmare on Franklin Street returns to historic and haunted Tampa Theatre
+Got To Go Orlando" this is outdated and doesnt provide any information about the content in the entry, it was for an event that already happened and should be removed
+
+Titles/hooks - they need to be reworked, and mayyybe different on the city landing page vs the actual article page? like someone coming to the actual page should know exactly what the whole page is about, example: tampa's dark history is called "sunshine & shadows" reading that people have no idea what it is about" also "cigar city ledger?? wtf, lame lame, generic, doesnt do anything.... change and apply that principle to other titles
+Intros - they are mostly good, but like the last line in tampa's dark history "overshadowed by better marketing" is too totalistic/not quite accurate, rage-bait-ey, so it needs to be better, i think there's a lot of endings similar to that, which need to change, but the rest is decent/doesn't need as much
+-if a source is mentioned, it MUST have a link to verified, related information, not some made up bs with no link.... 
+STYLE - again, on tampa's curiosities "locals learn to set their watches by it" (re lightning) umm no, that's not really true, that line is trying too hard, we can rewrite it to say something more true, but still witty to end it. 
+LISTICLE ORDER - some stuff has been reordered, but some still needs to be reordered, the goal is the top 2-3 most fascinating entries at the top, then kinda mixed/good flow, but for example, tampa's curiosities, the cigar lecture should be top, it is super interesting, also we have a longform article on it (good rule of thumb for what should be at the top of the lists), and the park that is part of cuba should be very high at the top as well! like a part of florida is actually Cuba!? what?? thats cool and deserves top placement - apply this principle across all dark history, curiosities, and hidden gems pages.  
+LONGFORM LINKS - if we have a longform article about a certain entry in dark history, curiosity, or hidden gem, our longform article should be at the end of the text of its entry card - example: the cigar lectors card does NOT have our article for that, that should be above the bottom elements, and right below the text, but again, all the stuff in the bottom info part (date, location, source - ALL of it for the tampa curiosity on cigar lectors should be removed from it card!) apply that principle across the board for all other cards
+REMOVE DUPLICATES - typically this could happen with curiosities and hidden gems: example: tampa has one on manattee viewing in both hidden gems and curiosities - one of them needs to be removed, but if the one that is removed has something worth mentioning (a cool line, compelling information, add it to the one that stays) - APPLY this across the board for curiosities and hidden gems especially
+ENRICHMENT - some entries are still too short when there is prob cool stuff that can be said. Example: ybor produced 700 million cigars a year, im sure theres more to it than just that... and what would be the #2 city after them for comparison? there's more juice/gold to put into that entry - APPLY this across the board for curiosities and hidden gems
+Bottom info stuff (date, location, sources, etc) - I think the date, if it is relevant should be in the text, not in the bottom stuff, so if the date is important, the text should mention it, we can thus get rid of the date from this bottom part. example: teddy rosevelts rough riders (entry in tampa curiosities) the text doesnt mention the date but it should, then it should be removed from the bottom part - APPLY this across the board in hidden gems, curiosites (also this entry is also a bit short, im sure theres more richness to the rough ryders story in tampa)
+Entry qualification - we have done this in some places but i think some still need to be removed. example: the tampa largest port is not interesting enough to keep, it can be ARCHIVED (maybe used later), basically understand what should be included in hidden gems/curiosities and what should not be (not interesting/generic/irrelevant) and remove them. I think hidden gems is epecially in need of better finds, like they should be stuff people actually care about and would want to visit, we have a lot of meh entries in hidden gems, these "meh" ones should be archived for potential future use. 
+ALSO - any bar/speakeasy/restaurant/coffe shop that appears in hidden gems or curiosity should be moved out and into the bar/resto/coffee shop page (with the map), but in general we should do more research to find actual hidden gems, a place people would be like oh i didnt know that was there, i wanna go see it! APPLY this to all hidden gems

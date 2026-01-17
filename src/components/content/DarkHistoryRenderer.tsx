@@ -154,6 +154,9 @@ export function DarkHistoryRenderer({ item }: DarkHistoryRendererProps) {
                     {info.type === 'video' && 'Video: '}
                     {info.type === 'podcast' && 'Podcast: '}
                     {info.type === 'article' && 'Article: '}
+                    {info.type === 'book' && 'Book: '}
+                    {info.type === 'shop' && 'Shop: '}
+                    {info.type === 'product' && 'Product: '}
                   </span>
                   <a
                     href={info.url}

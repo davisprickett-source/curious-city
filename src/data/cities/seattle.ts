@@ -31,9 +31,9 @@ export const seattle: CityData = {
     {
       id: 'sea-curiosities',
       type: 'section',
-      title: 'The Rain City Archive',
+      title: 'Seattle\'s Strange & Remarkable',
       teaser: 'Underground cities, vanishing hijackers, and the gum that won\'t quit',
-      intro: 'Seattle is a city built on top of a city—literally. We buried the mess of the 19th century and started over, but the weirdness keeps percolating to the surface in the form of Fremont Trolls and coffee hierarchies.',
+      intro: 'Seattle is a city built on top of a city—literally. The mess of the 19th century was buried and rebuilt, but the weirdness keeps percolating to the surface in the form of Fremont Trolls and coffee hierarchies.',
       items: [
         {
           id: 'curiosity-1',

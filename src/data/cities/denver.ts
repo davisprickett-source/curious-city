@@ -58,7 +58,7 @@ export const denver: CityData = {
     {
       id: 'den-curiosities',
       type: 'section',
-      title: 'Mile High Oddities',
+      title: 'Denver\'s Strange & Remarkable',
       intro: 'Denver is a city that literally measured its own altitude wrong three times. From the demonic horse that killed its creator to the park built on top of thousands of forgotten corpses, the Queen City has plenty of secrets buried beneath the high plains.',
       items: [
         {
@@ -1302,7 +1302,7 @@ export const denver: CityData = {
     {
       id: 'denver-dark-history',
       type: 'section',
-      title: 'Blood on the High Plains',
+      title: 'Denver\'s Dark History',
       teaser: 'Massacre, murder, and the bodies beneath the parks',
       intro: 'Denver sells itself as sunshine and craft beer, but the Mile High City sits atop a foundation of massacre, racial violence, and unsolved murder. From bodies left beneath public parks to a demonic horse that killed its creator, Denver\'s dark side is woven into the very geography—hidden in plain sight, just one layer below the Instagram-friendly surface.',
       items: [

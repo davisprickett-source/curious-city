@@ -91,7 +91,7 @@ export const fargo: CityData = {
     {
       id: 'fargo-curiosities',
       type: 'section',
-      title: 'The Bed of the Lake',
+      title: 'Fargo\'s Strange & Remarkable',
       teaser: 'Divorce mills, 90-degree swings, and a woodchipper that won\'t stay buried',
       intro: 'Fargo sits on the floor of ancient Lake Agassiz—a landscape so flat you can see the back of your own head on a clear day. This geography has bred a specific kind of survivalist grit and a collection of stories that range from the weirdly industrial to the deeply Scandinavian.',
       items: [
@@ -856,7 +856,7 @@ export const fargo: CityData = {
     {
       id: 'far-dark-history',
       type: 'section',
-      title: 'Prairie Darkness',
+      title: 'Fargo\'s Dark History',
       teaser: 'Cold cases on the prairie',
       intro: 'On the flat expanse of the Red River Valley, Fargo\'s dark history is sparse but haunting—unsolved murders that span decades, bodies found in the river, and crimes that remain open long after the headlines fade.',
       items: [

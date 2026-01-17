@@ -78,7 +78,14 @@ export const anchorage: CityData = {
               alt: 'Turnagain Arm landscape where bore tide occurs',
             }
           ],
-          source: 'Alaska Department of Fish and Game',
+          sources: [
+            {
+              type: 'article',
+              title: 'Turnagain Arm Bore Tide Safety',
+              publisher: 'Alaska Department of Natural Resources',
+              url: 'https://dnr.alaska.gov/parks/units/chugach/boretide.htm',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-3',
@@ -97,11 +104,14 @@ export const anchorage: CityData = {
               alt: 'Aerial view of remote Alaska terrain',
             }
           ],
-          source: 'Declassified CIA documents',
-          location: {
-            name: 'Various Alaska locations',
-            stillExists: false,
-          },
+          sources: [
+            {
+              type: 'article',
+              title: 'Operation Washtub',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Operation_Washtub',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-ad-1',
@@ -234,14 +244,21 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'Alaska pays you $1,300 a year just for living here',
-          body: 'Every October, every Alaskan gets an oil money check in the mail. The Permanent Fund Dividend has paid out anywhere from $331 to $2,072 annually since 1982. Retailers throw "PFD sales." Former residents mysteriously reappear to collect. The state\'s population temporarily spikes. It\'s the only place in America where breathing qualifies you for passive income, and Alaskans will fight you if you suggest touching the fund.',
+          body: 'Every October, every Alaskan gets a check just for existing. The Permanent Fund Dividend—born in 1982 when the state decided to share its oil wealth directly with residents—has created a financial ritual unlike anything else in America. The fund itself now tops $87 billion, and every year, a portion of its investment earnings gets divided equally among all qualifying residents: babies, prisoners, billionaires, anyone who\'s lived here a full calendar year. The first check in 1982 was $1,000. The lowest was $331 in 1984. The highest was $3,284 in 2022, when legislators added an energy relief bonus. In 1999, the state asked voters if government could use "some" of the fund for services—84% said no. PFD Day is a state holiday in all but name: retailers throw massive sales, Costco parking lots become war zones, and Alaskans who moved away mysteriously reappear to claim their checks. Since 2016, the amount has become the dominant political issue in the state, with legislators fighting over whether to follow the statutory formula or set it by fiat based on budget needs. Some years they\'ve paid more in election years than non-election years. Alaskans notice. Suggest touching the fund at a dinner party and watch the room turn hostile. It\'s the only place in America where breathing qualifies you for passive income, and residents treat that entitlement with near-religious fervor.',
           images: [
             {
               src: '/anchorage/curiosities/PFD.png',
               alt: 'Alaska Permanent Fund Dividend check',
             }
           ],
-          source: 'Alaska Permanent Fund Corporation',
+          sources: [
+            {
+              type: 'article',
+              title: 'About the Permanent Fund Dividend',
+              publisher: 'Alaska Department of Revenue',
+              url: 'https://pfd.alaska.gov/',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-9',
@@ -265,25 +282,28 @@ export const anchorage: CityData = {
           type: 'curiosity',
           category: 'culture',
           title: 'Over 100 languages are spoken in Anchorage schools',
-          body: 'Mountain View, a northeast Anchorage neighborhood, ranks as one of the most diverse census tracts in America. Refugees from Sudan, Bhutan, and Somalia live alongside Pacific Islanders, Indigenous Alaskans, and transplants from everywhere else. In 2024, the school district counted 112 languages spoken by students and families. It\'s the kind of diversity you\'d expect in Queens or the Bay Area—not at the edge of the Arctic.',
+          body: 'Mountain View isn\'t just diverse—according to University of Alaska Anchorage researchers analyzing census data, it\'s the most diverse census tract in America. More diverse than anywhere in New York City. More diverse than anywhere in Los Angeles. And it\'s in Alaska, at the edge of the Arctic, in a neighborhood of modest houses and apartment buildings bordered by a highway and a military base. The numbers tell part of the story: Alaska Natives at 18%, Hispanics at 17%, Pacific Islanders at 16%, Africans at 15%, Asians at 13%, multiracial residents at 11%, whites at 10%. But what makes Mountain View statistically unique is that no single group dominates—everyone is a minority. Refugee resettlement planted the seeds: Hmong families fleeing Laos, Somalis escaping civil war, Sudanese and Bhutanese and Samoans, all arriving in waves over decades. They stayed because housing was cheap and jobs at the nearby Elmendorf-Richardson military base were plentiful. Now their children fill Anchorage schools, where 112 languages are spoken—roughly the same as the Los Angeles Unified School District, in a city one-twelfth the size. After English, the most common languages are Spanish, Hmong, Samoan, Tagalog, Somali, and Yup\'ik. Walk down Mountain View\'s main commercial strip and you\'ll pass a Dominican restaurant, a Polynesian salon, a shawarma cart, a pho shop, a Korean laundromat, and a Hmong grocery run by a man born in a Thai refugee camp. It\'s the most unlikely melting pot in America, and most Americans have no idea it exists.',
           images: [
             {
               src: '/anchorage/curiosities/mountain-view-diversity.png',
               alt: 'Diverse Mountain View neighborhood in Anchorage',
             }
           ],
-          source: 'U.S. Census Bureau',
-          location: {
-            name: 'Mountain View neighborhood',
-            stillExists: true,
-          },
+          sources: [
+            {
+              type: 'article',
+              title: 'Anchorage School District Language Demographics',
+              publisher: 'Anchorage Daily News',
+              url: 'https://www.adn.com/',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-7',
           type: 'curiosity',
           category: 'culture',
           title: 'The world\'s busiest seaplane base operates inside city limits',
-          body: 'Lake Hood logs 190+ floatplane flights per day in summer—more takeoffs and landings than most regional airports. For hundreds of Alaska communities with no roads, these planes are the only connection to civilization. Watch pilots load groceries, lumber, and ATVs into aircraft designed to land on water. This is Alaska\'s version of a commuter hub, except the runways are lakes and the delays involve weather that can kill you.',
+          body: 'Lake Hood handles 190 floatplane flights per day in summer—67,000 operations annually, more than most regional airports—and it sits three miles from downtown Anchorage, right next to the international airport. Over 750 aircraft call it home, bobbing at docks like cars in a marina. In winter, pilots swap floats for skis, and Lake Hood becomes the world\'s largest ski plane base. The reason this exists: Alaska has over 200 communities with zero road access. Eighty-two percent of the state\'s towns rely on aviation as their only year-round connection to the outside world. These floatplanes are the cabs of the Alaskan wilderness—and the ambulances, the supply trucks, the school buses, and the hearses. Bush pilots load groceries, building materials, medicine, mail, and occasionally coffins into aircraft designed to land on lakes, rivers, and gravel bars. If you get sick in a village 300 miles from the nearest hospital, a floatplane is how you get out. If your community needs a generator or a teacher or a case of diapers, it arrives by air. The base opened in 1938, when authorities realized seaplanes were the only practical way to connect a territory with almost no roads. Eighty-five years later, that hasn\'t changed. Stand at the viewing area on a summer afternoon and watch the choreography: Cessnas and Beavers and Otters taxiing, taking off, landing, loading—an entire transportation network that exists because Alaska never built highways to most of itself, and probably never will.',
           images: [
             {
               src: '/anchorage/curiosities/plainport-1.png',
@@ -294,9 +314,17 @@ export const anchorage: CityData = {
               alt: 'Seaplane in Alaska wilderness',
             }
           ],
-          source: 'Lake Hood Seaplane Base',
+          sources: [
+            {
+              type: 'article',
+              title: 'Lake Hood Seaplane Base',
+              publisher: 'FAA',
+              url: 'https://www.faa.gov/airports/alaskan/facilities/lakehood',
+            },
+          ],
           location: {
             name: 'Lake Hood',
+            coordinates: { lat: 61.1811, lng: -149.9694 },
             stillExists: true,
           },
         },
@@ -316,11 +344,14 @@ export const anchorage: CityData = {
               alt: 'Ted Stevens Airport cargo operations',
             }
           ],
-          source: 'Ted Stevens Anchorage International Airport',
-          location: {
-            name: 'Ted Stevens International Airport',
-            stillExists: true,
-          },
+          sources: [
+            {
+              type: 'article',
+              title: 'Ted Stevens Anchorage International Airport',
+              publisher: 'ANC Airport',
+              url: 'https://www.ancairport.com/',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-13',
@@ -335,7 +366,14 @@ export const anchorage: CityData = {
               credit: 'Wikimedia Commons',
             }
           ],
-          source: 'Iditarod Trail Committee',
+          sources: [
+            {
+              type: 'article',
+              title: 'Ceremonial Start',
+              publisher: 'Iditarod Trail Committee',
+              url: 'https://iditarod.com/race/ceremonial-start/',
+            },
+          ],
         },
         {
           id: 'anc-curiosity-14',
@@ -365,16 +403,6 @@ export const anchorage: CityData = {
           name: 'Flattop Mountain Trail',
           category: 'Hike',
           description: 'The most-climbed mountain in Alaska, with panoramic views of the city, Cook Inlet, and the Alaska Range. Steep but doable for most fitness levels.',
-          images: [
-            {
-              src: '',
-              alt: 'View from Flattop Mountain overlooking Anchorage and Cook Inlet',
-            },
-            {
-              src: '',
-              alt: 'Hikers on Flattop Mountain trail',
-            }
-          ],
           address: 'Glen Alps Trailhead, Anchorage, AK 99516',
           coordinates: { lat: 61.1017, lng: -149.6831 },
           hours: 'Dawn to dusk',
@@ -387,16 +415,6 @@ export const anchorage: CityData = {
           name: 'Tony Knowles Coastal Trail',
           category: 'Trail',
           description: 'An 11-mile paved trail from downtown to Kincaid Park, hugging the coast with views of the inlet and mountains. Moose sightings are common. Popular with bikers, runners, and skiers.',
-          images: [
-            {
-              src: '',
-              alt: 'Tony Knowles Coastal Trail with Cook Inlet and mountains',
-            },
-            {
-              src: '',
-              alt: 'Cyclists on the Coastal Trail',
-            }
-          ],
           address: 'Starts near Elderberry Park, downtown',
           coordinates: { lat: 61.2181, lng: -149.9003 },
           hours: '24 hours',
@@ -409,16 +427,6 @@ export const anchorage: CityData = {
           name: 'Anchorage Museum',
           category: 'Museum',
           description: 'World-class museum covering Alaska Native cultures, Arctic science, and contemporary art. The Smithsonian Arctic Studies Center inside has an exceptional collection of Native artifacts.',
-          images: [
-            {
-              src: '',
-              alt: 'Anchorage Museum exterior',
-            },
-            {
-              src: '',
-              alt: 'Anchorage Museum building and plaza',
-            }
-          ],
           address: '625 C St, Anchorage, AK 99501',
           coordinates: { lat: 61.2163, lng: -149.8867 },
           hours: 'Tue-Sun 10am-6pm',
@@ -432,16 +440,6 @@ export const anchorage: CityData = {
           name: 'Lake Hood Seaplane Base',
           category: 'Experience',
           description: 'The world\'s busiest seaplane base, right next to the airport. Watch floatplanes take off and land from the shore. You can book flightseeing tours from here.',
-          images: [
-            {
-              src: '',
-              alt: 'Floatplanes docked at Lake Hood Seaplane Base',
-            },
-            {
-              src: '',
-              alt: 'Floatplane on Lake Hood',
-            }
-          ],
           address: 'Lake Hood Dr, Anchorage, AK 99502',
           coordinates: { lat: 61.1811, lng: -149.9694 },
           hours: 'Best viewing in summer, dawn to dusk',
@@ -454,14 +452,14 @@ export const anchorage: CityData = {
       id: 'anc-hidden-gems',
       type: 'section',
       title: 'Beyond the Seward Highway',
-      teaser: 'Abandoned missile sites, spirit houses, and a 20-foot chocolate waterfall',
-      intro: 'Most people come to Anchorage for the mountains; we stay for the secret bunkers, hidden seaplanes, and the dive bars where the real Alaska hides from the cruise ship crowds.',
+      teaser: 'Anchorage\'s abandoned missile sites, spirit houses, and a 20-foot chocolate waterfall',
+      intro: 'Most visitors come for the mountains and glaciers. The secrets worth finding are the Cold War bunkers tucked into the hillsides, the floatplane bases where bush pilots drink their morning coffee, and the windowless dive bars where the real Alaska hides from cruise ship crowds.',
       items: [
         {
           id: 'gem-coldwar-1',
           type: 'hidden-gem',
           featured: true,
-          featuredOrder: 4,
+          featuredOrder: 1,
           name: 'Nike Site Summit',
           category: 'Cold War Relic',
           description: 'At the height of the Cold War, Anchorage sat directly in the crosshairs of Soviet bombers flying over the pole—so the U.S. Army built a ring of nuclear-armed missiles around the city. Nike Site Summit, perched atop Mount Gordon Lyon at 4,500 feet, was part of this "Ring of Steel" from 1959 to 1979. The missiles are long gone, but the concrete bunkers, launch pads, and control buildings remain frozen in time—one of the most complete Nike Hercules sites left in America. Tours (offered through Joint Base Elmendorf-Richardson) take you through barracks where soldiers waited for orders that never came, past empty silos that once held weapons capable of destroying formations of Soviet aircraft, and along ridges with views of the city those weapons were meant to protect. The site feels like a time capsule from an era when nuclear war felt inevitable and Anchorage was ground zero.',
@@ -485,7 +483,7 @@ export const anchorage: CityData = {
           id: 'gem-cultural-1',
           type: 'hidden-gem',
           featured: true,
-          featuredOrder: 5,
+          featuredOrder: 2,
           name: 'Eklutna Spirit Houses Cemetery',
           category: 'Cultural Site',
           description: 'Twenty-five miles north of Anchorage, at the oldest continuously inhabited site in the region, over 100 brightly painted spirit houses stand among the birch trees—a tradition that exists nowhere else on Earth. When Russian Orthodox missionaries arrived in the 1800s, the Dena\'ina Athabascan people merged their burial practices with the new faith: bodies are buried with blankets in the Orthodox tradition, but 40 days later, families build small wooden spirit houses over the graves, painted in clan colors that identify family lines. Per Athabascan tradition, the houses are left to decay naturally—new wood standing next to weathered predecessors going back generations. The adjacent St. Nicholas Russian Orthodox Church, built in 1870, is the second-oldest building in Anchorage. This is sacred ground, still used for burials today, and visitors are welcome to witness a tradition that bridges centuries and cultures.',
@@ -508,18 +506,15 @@ export const anchorage: CityData = {
         {
           id: 'gem-earthquake-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Earthquake Park',
           category: 'Historic Site',
           description: 'On Good Friday 1964, the ground shook for four and a half minutes. The 9.2-magnitude earthquake—the second most powerful ever recorded—devastated Anchorage, and nowhere more dramatically than Turnagain Heights, where an entire bluff liquefied and slid into Cook Inlet, taking 75 homes with it. The bodies were never recovered; the ground was too unstable to search. Today, Earthquake Park preserves the landslide zone, and sixty years later, you can still see what happened: rippling hills, sudden drops, and terrain that looks like it was stirred by a giant spoon. The destruction is frozen in time, overgrown with grass and birch but unmistakably wrong. Interpretive signs tell the story of the families who lost everything in minutes. On clear days, you can see Denali from the overlook—beauty and catastrophe occupying the same view.',
           images: [
             {
-              src: '/anchorage/curiosities/earthquake-park.jpg',
-              alt: 'Uneven terrain at Earthquake Park showing 1964 damage',
-              credit: 'Wikimedia Commons',
-            },
-            {
               src: '/anchorage/hidden-gems/quake-park-2.png',
-              alt: 'Earthquake Park interpretive trail',
+              alt: 'Earthquake Park interpretive trail and terrain showing 1964 damage',
             },
           ],
           address: 'Earthquake Park, West Northern Lights Blvd',
@@ -528,6 +523,35 @@ export const anchorage: CityData = {
           price: 'Free',
           website: 'https://www.muni.org/parks',
           tip: 'The Tony Knowles Coastal Trail runs through the park—you can bike here from downtown in 20 minutes.',
+        },
+        {
+          id: 'gem-wildlife-2',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
+          name: 'Alaska Wildlife Conservation Center',
+          category: 'Wildlife',
+          description: 'Seeing Alaskan wildlife in the wild is never guaranteed—bears might be fishing elsewhere, moose might be browsing out of sight, caribou might be a hundred miles north. The Alaska Wildlife Conservation Center offers a guarantee: orphaned and injured animals, unable to survive in the wild, living out their lives where visitors can see them up close. The brown bears are the stars, but the moose, musk oxen, caribou, wolves, and porcupines each have their own enclosures spread across the facility. This isn\'t a zoo—it\'s a rescue center that happens to allow visitors. The animals have space, the presentations are educational rather than performative, and the drive to get here (45 minutes south, along Turnagain Arm) is one of the most scenic in America. For visitors with limited time who want a guaranteed wildlife encounter, this is the answer.',
+          images: [
+            {
+              src: '/anchorage/curiosities/curious-conservation-1.png',
+              alt: 'Brown bear at Alaska Wildlife Conservation Center',
+            },
+            {
+              src: '/anchorage/curiosities/curious-conservation-2.png',
+              alt: 'Musk ox at wildlife center',
+            },
+            {
+              src: '/anchorage/curiosities/curious-conservation-3.png',
+              alt: 'Alaska Wildlife Conservation Center animals',
+            }
+          ],
+          address: 'Mile 79 Seward Highway, Girdwood, AK 99587',
+          coordinates: { lat: 60.8228, lng: -148.9883 },
+          hours: 'Daily 10am-5pm',
+          price: '$15 adults',
+          website: 'https://alaskawildlife.org',
+          tip: 'Time your drive for the bore tide if possible—you pass Beluga Point on the way. The musk oxen are most active in cooler weather.',
         },
         {
           id: 'gem-museum-1',
@@ -582,17 +606,19 @@ export const anchorage: CityData = {
         {
           id: 'gem-nature-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 8,
           name: 'Campbell Creek Gorge Overlook',
           category: 'Secret Viewpoint',
           description: 'Anchorage is full of people who\'ve lived here for years without knowing that a 200-foot canyon cuts through the Chugach foothills ten minutes from downtown. The Campbell Creek Gorge Overlook is unmarked, unimproved, and unknown to most—a tree-shrouded ledge where you look straight down at whitewater crashing through a slot canyon that feels transplanted from the Southwest. The trail to reach it isn\'t on most maps; you have to know which fork to take from the Hillside Ski Chalet parking lot. Stand at the edge and the city feels impossibly far away—just rushing water, sheer rock, and the kind of silence that makes you understand why people move to Alaska and never leave.',
           images: [
             {
-              src: '/anchorage/curiosities/curious-campbell-1.png',
-              alt: 'Creek flowing through narrow canyon with steep cliffs',
+              src: '/anchorage/curiosities/curious-campbell-2.png',
+              alt: 'Campbell Creek gorge overlook with canyon view',
             },
             {
-              src: '/anchorage/curiosities/curious-campbell-2.png',
-              alt: 'Campbell Creek gorge overlook',
+              src: '/anchorage/curiosities/curious-campbell-1.png',
+              alt: 'Creek flowing through narrow canyon with steep cliffs',
             }
           ],
           address: 'Accessible from Hillside Ski Chalet parking or North Bivouac Trailhead',
@@ -604,6 +630,8 @@ export const anchorage: CityData = {
         {
           id: 'gem-aurora-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 7,
           name: 'Glen Alps Aurora Viewpoint',
           category: 'Northern Lights Spot',
           description: 'When the aurora forecast goes active, half of Anchorage drives to the same crowded pullouts on the Glenn Highway. The other half—the ones who know—drive to Glen Alps. At 2,200 feet, above the city lights and facing north toward the Alaska Range, this Chugach State Park trailhead offers what might be the best aurora viewing within reach of the city. Five mountain ranges ring the horizon. The Anchorage Bowl glitters below. And when the lights come—green curtains rippling across the sky, sometimes pink, sometimes purple—you watch from a parking lot that feels like a front-row seat to the universe. Dress for genuine cold. Arrive before dark to claim a spot. And check the aurora forecast before driving up—when it\'s active, the parking lot fills with photographers, champagne toasts, and Alaskans who never get tired of watching the sky.',
@@ -626,6 +654,8 @@ export const anchorage: CityData = {
         {
           id: 'gem-wildlife-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Ship Creek Urban Salmon Viewing',
           category: 'Urban Wildlife',
           description: 'In most cities, a creek running through downtown is a sad afterthought. In Anchorage, Ship Creek fills with thousands of salmon every summer—king salmon in May and June, silvers from July through September—and you can watch them fight upstream from viewing platforms a ten-minute walk from the hotel district. The fish ladders and spillway at the William Jack Hernandez Sport Fish Hatchery give you close-up views of salmon in their final, desperate push to spawn. Better yet, you can fish: Ship Creek is one of the best urban salmon fishing spots in America, and you can rent gear on-site if you didn\'t bring your own. The Alaska Railroad rumbles past on schedule. Eagles circle overhead. The whole scene feels impossibly Alaskan, and it\'s hiding in plain sight downtown.',
@@ -649,6 +679,8 @@ export const anchorage: CityData = {
         {
           id: 'gem-nature-2',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'Turnagain Arm Bore Tide',
           category: 'Natural Phenomenon',
           description: 'Twice a day, during extreme tides, a wall of water up to ten feet high comes thundering into Turnagain Arm at speeds up to 24 mph—one of the largest bore tides in North America. The physics are dramatic: a 40-foot tidal swing funnels into a narrow, shallow arm, compressing into a wave that advances for miles. Local surfers ride the bore for distances that would be impossible in ocean surf. Kayakers paddle frantically to stay ahead of it. From the viewing point at Beluga Point, you watch the wave approach like a freight train made of water, churning the silty inlet white as it passes. The bore tide happens on a schedule dictated by the moon, strongest during new and full moons, most dramatic around the fall equinox. Miss the timing and you\'ll see nothing. Nail it and you\'ll witness one of Alaska\'s most surreal natural phenomena.',
@@ -672,6 +704,8 @@ export const anchorage: CityData = {
         {
           id: 'gem-quirky-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 9,
           name: 'World\'s Largest Chocolate Waterfall',
           category: 'Quirky Attraction',
           description: 'Inside an unassuming candy factory south of downtown, a 20-foot waterfall of molten chocolate cascades through three tiers of vintage copper candy kettles—over 3,000 pounds of chocolate in continuous flow. Homer artist Mike Sirl built this confectionary monument in 1994, and while Guinness has never officially certified it, no one has stepped forward to claim a larger one. You can\'t drink from it (health codes being what they are), but you can stand and watch chocolate fall in sheets while contemplating the glorious absurdity of building something like this in Alaska, of all places. The surrounding store sells wild berry products, fudge, and tourist kitsch, but the waterfall is the draw. It\'s free to view, delightfully weird, and exactly the kind of thing that shouldn\'t exist but does.',
@@ -695,6 +729,8 @@ export const anchorage: CityData = {
         {
           id: 'gem-trail-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 10,
           name: 'Anchorage Light Speed Planet Walk',
           category: 'Public Art Trail',
           description: 'A high school astronomy student designed this: a scale-model solar system stretching from downtown Anchorage to the Kincaid Park chalet, with the Sun at 5th and G Street and Pluto 5.5 hours away on foot. The brilliance is in the math—if you walk at a casual pace, you\'re moving at the speed of light relative to the model. Earth is an eight-minute walk from the Sun. Jupiter takes 45 minutes. By the time you reach Pluto, you\'ve covered miles of Anchorage\'s best trail system and gained an intuitive understanding of just how empty and vast the solar system actually is. Most people don\'t walk the whole thing. Most people don\'t need to. Just walking from the Sun to Mars will change how you think about space.',
@@ -764,56 +800,6 @@ export const anchorage: CityData = {
           price: 'Free',
           website: 'https://anchorageparkfoundation.org/indigenous-placemaking',
           tip: 'Download the project map from the Anchorage Park Foundation website to find all 32 markers.',
-        },
-        {
-          id: 'gem-brewery-1',
-          type: 'hidden-gem',
-          name: 'Midnight Sun Brewing Company',
-          category: 'Brewery',
-          description: 'Alaska has a surprisingly excellent craft beer scene, and Midnight Sun is the flagship. The brewery operates out of an industrial park south of downtown—not exactly scenic from the outside, but inside you\'ll find one of the largest tap lists in the state, a kitchen that takes food as seriously as the beer, and a vibe that manages to be both polished and unpretentious. The Sockeye Red IPA is the signature, but the rotating seasonals are why regulars keep coming back. The brewing facility is visible from the taproom, and the staff can explain exactly what\'s happening in those massive fermentation tanks. Midnight Sun doesn\'t take itself too seriously—the beer names and label art lean playful—but the brewing is dead serious. This is where Alaskan craft beer grew up.',
-          images: [
-            {
-              src: '/anchorage/hidden-gems/midnight-sun-1.png',
-              alt: 'Craft brewery tap room with beer selection',
-            },
-            {
-              src: '/anchorage/hidden-gems/midnigh-sun-2.png',
-              alt: 'Brewery equipment and tanks',
-            }
-          ],
-          address: '8111 Dimond Hook Dr, Anchorage, AK 99507',
-          coordinates: { lat: 61.1385, lng: -149.8644 },
-          hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
-          price: '$$',
-          website: 'https://midnightsunbrewing.com',
-          tip: 'The M Street Porter and Arctic Devil Barleywine are both medal winners. Pair the Sockeye Red with the smoked salmon appetizer.',
-        },
-        {
-          id: 'gem-wildlife-2',
-          type: 'hidden-gem',
-          name: 'Alaska Wildlife Conservation Center',
-          category: 'Wildlife',
-          description: 'Seeing Alaskan wildlife in the wild is never guaranteed—bears might be fishing elsewhere, moose might be browsing out of sight, caribou might be a hundred miles north. The Alaska Wildlife Conservation Center offers a guarantee: orphaned and injured animals, unable to survive in the wild, living out their lives where visitors can see them up close. The brown bears are the stars, but the moose, musk oxen, caribou, wolves, and porcupines each have their own enclosures spread across the facility. This isn\'t a zoo—it\'s a rescue center that happens to allow visitors. The animals have space, the presentations are educational rather than performative, and the drive to get here (45 minutes south, along Turnagain Arm) is one of the most scenic in America. For visitors with limited time who want a guaranteed wildlife encounter, this is the answer.',
-          images: [
-            {
-              src: '/anchorage/curiosities/curious-conservation-1.png',
-              alt: 'Brown bear at Alaska Wildlife Conservation Center',
-            },
-            {
-              src: '/anchorage/curiosities/curious-conservation-2.png',
-              alt: 'Musk ox at wildlife center',
-            },
-            {
-              src: '/anchorage/curiosities/curious-conservation-3.png',
-              alt: 'Alaska Wildlife Conservation Center animals',
-            }
-          ],
-          address: 'Mile 79 Seward Highway, Girdwood, AK 99587',
-          coordinates: { lat: 60.8228, lng: -148.9883 },
-          hours: 'Daily 10am-5pm',
-          price: '$15 adults',
-          website: 'https://alaskawildlife.org',
-          tip: 'Time your drive for the bore tide if possible—you pass Beluga Point on the way. The musk oxen are most active in cooler weather.',
         },
       ],
     },
@@ -938,6 +924,28 @@ export const anchorage: CityData = {
             {
               src: '/anchorage/bars/williwaw-3.jpg',
               alt: 'Williwaw concert venue with stage',
+            }
+          ],
+        },
+        {
+          name: 'Midnight Sun Brewing Company',
+          neighborhood: 'South Anchorage',
+          vibe: 'The flagship of Alaska\'s craft beer scene, tucked in an industrial park',
+          order: 'The Sockeye Red IPA and the smoked salmon appetizer',
+          why: 'Alaska has a surprisingly excellent craft beer scene, and Midnight Sun is the flagship. The brewery operates out of an industrial park south of downtown—not exactly scenic from the outside, but inside you\'ll find one of the largest tap lists in the state, a kitchen that takes food as seriously as the beer, and a vibe that manages to be both polished and unpretentious. The M Street Porter and Arctic Devil Barleywine are both medal winners. The brewing facility is visible from the taproom, and the staff can explain exactly what\'s happening in those massive fermentation tanks. Midnight Sun doesn\'t take itself too seriously—the beer names and label art lean playful—but the brewing is dead serious. This is where Alaskan craft beer grew up.',
+          address: '8111 Dimond Hook Dr, Anchorage, AK 99507',
+          coordinates: { lat: 61.1385, lng: -149.8644 },
+          price: '$$',
+          hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm',
+          website: 'https://midnightsunbrewing.com',
+          images: [
+            {
+              src: '/anchorage/hidden-gems/midnight-sun-1.png',
+              alt: 'Craft brewery tap room with beer selection',
+            },
+            {
+              src: '/anchorage/hidden-gems/midnigh-sun-2.png',
+              alt: 'Brewery equipment and tanks',
             }
           ],
         },

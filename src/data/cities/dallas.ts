@@ -58,7 +58,7 @@ export const dallas: CityData = {
     {
       id: 'dal-curiosities',
       type: 'section',
-      title: 'Big D Oddities',
+      title: 'Dallas\'s Strange & Remarkable',
       intro: 'Dallas is a city that insists on its own greatness while wrestling with a history that doesn\'t always fit on a postcard. From illegal massages to the invention of the microchip, these are the pieces of the puzzle that make the Metroplex more than just a cluster of high-rises.',
       items: [
         {
@@ -1060,7 +1060,7 @@ export const dallas: CityData = {
     {
       id: 'dal-dark-history',
       type: 'section',
-      title: 'Big D, Dark Secrets',
+      title: 'Dallas\'s Dark History',
       teaser: 'Assassinations, serial killers, and the bodies beneath Big D',
       intro: 'Dallas hides bizarre vanishings, ghostly rivalries, and cold-blooded murders that defy explanation—from decapitated lovers to phantom hitchhikers. These off-the-brochure stories linger in lore long after headlines move on. A web of legends and cold cases where only fragments are verified, and none feel fully closed.',
       items: [

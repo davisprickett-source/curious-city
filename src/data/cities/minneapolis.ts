@@ -672,7 +672,7 @@ export const minneapolis: CityData = {
     {
       id: 'msp-curiosities',
       type: 'section',
-      title: 'The Mill City Archive',
+      title: 'Minneapolis\'s Strange & Remarkable',
       teaser: 'Underground tunnels, flour mill explosions, and the secrets beneath the skyways',
       intro: 'The Twin Cities sell themselves on lakes and "nice." But Minneapolis was built on flour dust explosions, a river dammed into submission, and a skyway system that lets people avoid the streets entirely. From the ruins of the milling district to the tunnels beneath downtown, the city hides its strangest stories in plain sight.',
       items: [
@@ -1263,6 +1263,13 @@ export const minneapolis: CityData = {
           website: 'https://www.mnhs.org/millcity',
           accessibility: 'Fully wheelchair accessible',
           tip: 'Walk to the Guthrie Theater\'s free "Endless Bridge" viewing platform after',
+          moreInfo: [
+            {
+              title: 'Mill City: A Visual History of the Minneapolis Mill District',
+              url: 'https://www.amazon.com/dp/0873514475?tag=yourtag-20',
+              type: 'book'
+            }
+          ],
         },
         {
           id: 'iconic-ad-1',
@@ -1378,18 +1385,12 @@ export const minneapolis: CityData = {
       teaser: 'Secret tunnels, underground art, and the places even locals don\'t know about',
       intro: 'These aren\'t on the tourist maps. Secret tunnels, underground art spaces, museums in fire-hose cabinets, and places even locals might not know about. This is where Minneapolis gets weird and wonderful.',
       items: [
-        // SUBSECTION: Underground & Secret Spaces
         {
-          id: 'hidden-gems-underground',
-          type: 'section',
-          title: 'Underground & Secret Spaces',
-          items: [
-            {
-              id: 'gem-underground-1',
-              type: 'hidden-gem',
-              featured: true,
-              featuredOrder: 3,
-              name: 'Orfield Labs Quiet Chamber',
+          id: 'gem-underground-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 1,
+          name: 'Orfield Labs Quiet Chamber',
               category: 'Experience',
               description: 'Certified by Guinness as the quietest place on Earth, the anechoic chamber at Orfield Labs in South Minneapolis absorbs 99.99% of sound. The walls are covered in 3-foot wedges of fiberglass, and the floor is a suspended mesh you stand on. In the absence of external sound, you start hearing things you never knew existed: your heartbeat, blood flowing through your veins, the whoosh of your eyeballs moving in their sockets. Most people become disoriented within 30 minutes. Some hallucinate. NASA uses similar chambers to test astronauts. It\'s a genuinely surreal experience that challenges your sense of reality.',
               images: [
@@ -1408,6 +1409,8 @@ export const minneapolis: CityData = {
             {
               id: 'gem-underground-2',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 3,
               name: 'House of Balls',
               category: 'Art Studio',
               description: 'Artist Allen Christian has spent 30 years transforming his studio into a living sculpture garden. Animated creatures made from bowling balls, pressure cookers, and chicken feet greet you at the door. Some sculptures talk. Others move on their own. It feels less like a museum and more like stepping into someone\'s fever dream. Christian himself is usually there, tinkering with a new creation or explaining how he brings inanimate objects to life. The space is cluttered, chaotic, and absolutely magical. Most locals have never heard of it, despite being open since the \'90s.',
@@ -1436,6 +1439,8 @@ export const minneapolis: CityData = {
             {
               id: 'gem-underground-3',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 2,
               name: 'Wabasha Street Caves',
               category: 'Experience',
               description: 'These sandstone caves have had many lives: 1840s mushroom farm, Prohibition speakeasy (allegedly frequented by Ma Barker, John Dillinger, and other gangsters), 1930s nightclub called Castle Royal, and now an event space. The caves stay a constant 52°F year-round. Every Thursday night, they host swing dancing in the main cavern — live bands, lessons for beginners, and an atmosphere you genuinely cannot replicate anywhere else. The guided cave tours tell stories of bootleggers, murder, and the gangster era of St. Paul when the city had a corrupt "O\'Connor Layover Agreement" that gave criminals safe haven.',
@@ -1456,57 +1461,17 @@ export const minneapolis: CityData = {
               website: 'https://www.wabashacaves.com',
               tip: 'Thursday swing dancing is the way to experience this place',
             },
-            {
-              id: 'gem-underground-4',
-              type: 'hidden-gem',
-              name: 'Gopher Way Tunnels',
-              category: 'Underground System',
-              description: 'The University of Minnesota has an 8-segment underground tunnel and skyway system connecting East Bank and West Bank campuses. Students use it daily to avoid Minnesota winters, but most don\'t know its history. The tunnels date back to the 1920s and were expanded through the decades. Some sections feel utilitarian and brutalist. Others are surprisingly ornate. It\'s separate from the legendary (but off-limits) steam tunnels that run beneath campus. The Gopher Way is open to the public during building hours, and walking the full route feels like urban exploration without breaking any rules.',
-              images: [
-                {
-                  src: '/minneapolis/hidden-gems/gopher-way.png',
-                  alt: 'Underground tunnel system at University of Minnesota',
-                }
-              ],
-              address: 'University of Minnesota campus (multiple entry points)',
-              coordinates: { lat: 44.9744, lng: -93.2342 },
-              hours: 'Varies by building; some sections 24/7',
-              price: 'Free',
-              website: 'https://pts.umn.edu/Walk/Gopher-Way-Tunnels-Skyways',
-              tip: 'Enter at Coffman Memorial Union and follow signs to explore the full network',
-              accessibility: 'Fully accessible; designed for student use',
-            },
-            {
-              id: 'gem-underground-5',
-              type: 'hidden-gem',
-              name: 'Nicollet Island\'s Hidden History',
-              category: 'Urban History',
-              description: 'Nicollet Island sits in the middle of the Mississippi River, connected by bridges to downtown. Most people walk across it without realizing its secrets: Three hidden cave systems sealed since the 1880s (Neapolitan Caves with iron-red swirls, Bloody Snake Passage with scarlet flowstones, and Satan\'s Cave with carved demonic figures). The island was sacred ground for the Dakota people and later home to Minneapolis\'s first wealthy neighborhoods. Today, a few Victorian houses remain, relocated from other parts of the city. The island has trails, river views, and ghost stories. Few tourists realize they\'re walking above sealed tunnels and forgotten history.',
-              images: [],
-              address: 'Nicollet Island, Minneapolis, MN 55401',
-              coordinates: { lat: 44.9875, lng: -93.2628 },
-              hours: 'Free and open 24/7',
-              price: 'Free',
-              tip: 'Walk the perimeter trail at sunset for stunning river and skyline views',
-              accessibility: 'Paved paths; wheelchair accessible',
-            }
-          ],
-        },
         {
           id: 'gem-ad-1',
           type: 'ad',
           size: 'banner',
         },
-        // SUBSECTION: Unusual Museums & Collections
         {
-          id: 'hidden-gems-museums',
-          type: 'section',
-          title: 'Unusual Museums & Collections',
-          items: [
-            {
-              id: 'gem-museum-1',
-              type: 'hidden-gem',
-              name: 'The Bakken Museum',
+          id: 'gem-museum-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
+          name: 'The Bakken Museum',
               category: 'Museum',
               description: 'The only museum in the world devoted to medical electricity. Earl Bakken (co-founder of Medtronic, inventor of the wearable pacemaker) created this tribute to the intersection of electricity and life. The collection includes antique electro-therapy devices from the 1800s, a Victorian-era belt designed to stimulate genitals with electricity (for "vitality"), and interactive exhibits where you can make your hair stand on end with static. Kids love "Frankenstein\'s Laboratory" and "Ben Franklin\'s Electricity Party." Adults are quietly horrified by how much quackery passed for medicine. The museum sits on the west shore of Bde Maka Ska in a Tudor mansion, which adds to the surreal atmosphere.',
               images: [
@@ -1530,6 +1495,8 @@ export const minneapolis: CityData = {
             {
               id: 'gem-museum-2',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 4,
               name: 'James J. Fiorentino Cuckoo Clock Museum',
               category: 'Museum',
               description: 'James Fiorentino spent decades amassing the world\'s largest collection of German Black Forest cuckoo clocks — over 800 of them. When he passed away in 2021, he left instructions: open the collection to the public, free of charge, forever. Now his North Loop home is a surreal museum where every wall is covered in clocks. Every hour, hundreds of mechanical birds emerge simultaneously. The collection also includes vintage record players, pipe organs, polished Lake Superior agate spheres, and WWII memorabilia. Tours are by reservation only, and Fiorentino\'s widow runs them personally. It\'s like visiting someone\'s eccentric grandfather\'s attic, if that grandfather was obsessed with precision timekeeping.',
@@ -1581,6 +1548,8 @@ export const minneapolis: CityData = {
             {
               id: 'gem-museum-4',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 10,
               name: 'Smallest Museum in St. Paul',
               category: 'Micro Museum',
               description: 'A 3ft x 2ft micro-museum built into a vintage fire-hose cabinet outside Workhorse Coffee Bar. It is a love letter to hyperlocal culture and proof that a curator doesn’t need a marble hallway to be relevant. Each month, a different local artist fills the cabinet with miniature exhibitions—past shows include "Lost Mittens of St. Paul," "Things I Found Under My Porch," and matchbook art. It is the architectural equivalent of a secret handshake for the neighborhood\'s creative class.',
@@ -1597,24 +1566,18 @@ export const minneapolis: CityData = {
               website: 'https://www.smallestmuseumstpaul.com',
               tip: 'Check their Instagram (@smallestmuseumstpaul) to see the current exhibit before visiting',
               accessibility: 'Sidewalk viewing; fully accessible',
-            }
-          ],
-        },
+            },
         {
-          id: 'gem-ad-1',
+          id: 'gem-ad-2',
           type: 'ad',
           size: 'banner',
         },
-        // SUBSECTION: Hidden Architecture & Landmarks
         {
-          id: 'hidden-gems-architecture',
-          type: 'section',
-          title: 'Hidden Architecture & Landmarks',
-          items: [
-            {
-              id: 'gem-arch-1',
-              type: 'hidden-gem',
-              name: 'International Market Square Double Helix Staircase',
+          id: 'gem-arch-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 7,
+          name: 'International Market Square Double Helix Staircase',
               category: 'Architecture',
               description: 'The first and largest double helix staircase in the United States, built in 1905 for the Munsingwear underwear factory. Two spiral staircases twist around each other, allowing workers on different shifts to pass simultaneously without ever crossing paths. It\'s an architectural marvel that almost nobody knows about. The building is now home to interior design showrooms, and the staircase is tucked at the far end near Lyndale Avenue. You can view floors 1-4 without issue, though some designers working in the building will let you climb higher if you ask nicely.',
               images: [
@@ -1632,36 +1595,10 @@ export const minneapolis: CityData = {
               accessibility: 'Stairs only; not wheelchair accessible',
             },
             {
-              id: 'gem-arch-2',
-              type: 'hidden-gem',
-              name: 'First Bridge Park Archaeological Site',
-              category: 'Historic Site',
-              description: 'Beneath the Hennepin Avenue Bridge, Minneapolis has exposed the excavated footings of the first three bridges to cross the Mississippi River here (dating to 1855). The park displays archaeological artifacts in situ, with interpretive markers explaining how the bridges were built and why they collapsed. You can see remnants of the original stone construction and tunnels from the bridge builders. It\'s a tiny park under a busy bridge, so it\'s easy to miss. But for history nerds, it\'s a goldmine. The Grain Belt Beer sign glows overhead at night, adding an iconic Minneapolis backdrop.',
-              images: [
-                {
-                  src: '/minneapolis/hidden-gems/bridge-1.png',
-                  alt: 'Archaeological excavation of original bridge footings',
-                },
-                {
-                  src: '/minneapolis/hidden-gems/bridge-2.png',
-                  alt: 'First Bridge Park archaeological site',
-                },
-                {
-                  src: '/minneapolis/hidden-gems/bridge-3.png',
-                  alt: 'Historic bridge remnants and interpretive markers',
-                }
-              ],
-              address: 'Under Hennepin Avenue Bridge, downtown riverfront',
-              coordinates: { lat: 44.9881, lng: -93.2578 },
-              hours: 'Free and open 24/7',
-              price: 'Free',
-              website: 'https://www.nps.gov/miss/planyourvisit/firstbridge.htm',
-              tip: 'Combine with a walk across the Stone Arch Bridge for the full riverfront experience',
-              accessibility: 'Paved trails and ramps; wheelchair accessible',
-            },
-            {
               id: 'gem-arch-3',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 5,
               name: 'Witch\'s Hat Water Tower',
               category: 'Architecture',
               description: 'Perched on the highest natural point in the city, this 1913 water tower looks like it was teleported from a Grimm brothers’ fairy tale. It is exactly what the name suggests: a conical, stone-wrapped "witch\'s hat" that serves as a landmark for the Prospect Park neighborhood. The observation deck offers the best 360-degree view in Minneapolis, but there’s a catch: it is only open one day a year (the first Friday after Memorial Day). Locals treat it like a secular holiday, camping out for the rare chance to climb the 117 steps to the top.',
@@ -1678,19 +1615,13 @@ export const minneapolis: CityData = {
               website: 'https://prospectparkmpls.org/tower.html',
               tip: 'Mark your calendar for late May/early June when it reopens — the line gets long',
               accessibility: 'Exterior viewable anytime; interior has steep stairs (not accessible)',
-            }
-          ],
-        },
-        // SUBSECTION: Secret Art & Culture
+            },
         {
-          id: 'hidden-gems-art',
-          type: 'section',
-          title: 'Secret Art & Culture',
-          items: [
-            {
-              id: 'gem-art-1',
-              type: 'hidden-gem',
-              name: 'Trylon Cinema',
+          id: 'gem-art-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 9,
+          name: 'Trylon Cinema',
               category: 'Cinema',
               description: 'Hidden behind Wildflyer Coffee in an old warehouse, the Trylon is a 90-seat nonprofit microcinema showing repertory films on actual 16mm and 35mm film prints. Voted best theater in the Twin Cities, it specializes in forgotten B-horror, kung fu classics, rare documentaries, and cult films you\'d never find on streaming. The vibe is "fantasy-noir scrappy theater" — velvet curtains, film posters everywhere, and an audience that genuinely loves cinema. Showtimes are sporadic and announced via their website and social media. If you\'re nostalgic for video store discovery, this is your church.',
               images: [
@@ -1707,49 +1638,19 @@ export const minneapolis: CityData = {
               tip: 'Buy tickets online in advance — popular screenings sell out',
               accessibility: 'Wheelchair accessible seating available',
             },
-            {
-              id: 'gem-art-2',
-              type: 'hidden-gem',
-              name: 'Gamut Gallery',
-              category: 'Art Gallery',
-              description: 'A contemporary underground art hub in Elliot Park featuring digital media, live painting, performance art, DJ nights, and artist talks. Gamut pushes boundaries — this isn\'t your sanitized white-cube gallery. Expect street art, new media installations, and one-night-only warehouse exhibitions that feel more like underground raves than art openings. The gallery focuses on emerging artists and experimental formats. Check their Instagram for events, because they happen fast and disappear just as quickly.',
-              images: [
-                {
-                  src: '/minneapolis/hidden-gems/gamut-1.png',
-                  alt: 'Gamut Gallery contemporary art installation',
-                },
-                {
-                  src: '/minneapolis/hidden-gems/gamut-2.png',
-                  alt: 'Gamut Gallery event space',
-                }
-              ],
-              address: '717 10th St S, Minneapolis, MN 55404',
-              coordinates: { lat: 44.9707, lng: -93.2745 },
-              hours: 'Open for events and exhibitions (check schedule)',
-              price: 'Free-$10 depending on event',
-              website: 'https://gamutgallerympls.com',
-              tip: 'Follow on Instagram (@gamutgallerympls) for pop-up events and exhibitions',
-              accessibility: 'Varies by venue/event',
-            }
-          ],
-        },
         {
           id: 'gem-ad-3',
           type: 'ad',
           size: 'banner',
         },
-        // SUBSECTION: Nature & Wildlife
         {
-          id: 'hidden-gems-nature',
-          type: 'section',
-          title: 'Nature & Wildlife',
-          items: [
-            {
-              id: 'gem-nature-1',
-              type: 'hidden-gem',
-              name: 'Eloise Butler Wildflower Garden',
+          id: 'gem-nature-1',
+          type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 8,
+          name: 'Eloise Butler Wildflower Garden',
               category: 'Nature',
-              description: 'The oldest public wildflower garden in the U.S., tucked inside Theodore Wirth Park. Native wetlands, prairies, and woodlands that feel hours from the city.',
+              description: 'In 1907, a Minneapolis botany teacher named Eloise Butler convinced the park board to set aside three acres of bog, meadow, and hillside as a "Wild Botanic Garden"—the first public wildflower garden in the United States. She tended it as a volunteer for four years before becoming its first paid curator at age 60. Over the next 25 years, she expanded it to 18 acres, catalogued over 500 species, and taught free botany classes to anyone who showed up. She died in 1933 on her way to work at the garden; her ashes were scattered there. Today, the garden she built contains over 600 native plant species, hosts 130+ bird species, and receives 60,000 visitors a year—yet most Minneapolis residents have never been. Boardwalks wind through wetlands, prairies, and old-growth woods that feel hours from the city. Spring brings trilliums and bloodroot; summer, wild orchids; fall, blazing color. It\'s a living monument to one woman\'s obsession with preserving what Minnesota looked like before we paved it.',
               images: [
                 {
                   src: '/minneapolis/hidden-gems/wildflower.png',
@@ -1783,40 +1684,8 @@ export const minneapolis: CityData = {
               tip: 'Best viewing in early morning; bring binoculars',
               accessibility: 'Paved path accessible; riverbank stairs for closer viewing',
             },
-            {
-              id: 'gem-nature-3',
-              type: 'hidden-gem',
-              name: 'Midtown Greenway\'s Hidden Features',
-              category: 'Urban Trail',
-              description: 'The Midtown Greenway is a 5.7-mile bike trail in a sunken railway corridor crossing Minneapolis. Most people use it for commuting and miss the good stuff: 28 hidden trail exits leading to neighborhood secrets, community gardens, underground art installations, and quiet pocket parks. The trail sits in the old Milwaukee Road railway gorge and is grade-separated from traffic. It\'s plowed in winter, lit at night, and named best urban bike trail by USA Today. But the real magic is getting off the main trail and exploring the 28 side exits.',
-              images: [
-                {
-                  src: '/minneapolis/hidden-gems/greenway-1.png',
-                  alt: 'Midtown Greenway bike trail in sunken corridor',
-                },
-                {
-                  src: '/minneapolis/hidden-gems/greenway-2.png',
-                  alt: 'Midtown Greenway trail features',
-                }
-              ],
-              address: '5.7-mile trail crossing Minneapolis (multiple access points)',
-              coordinates: { lat: 44.9486, lng: -93.2614 },
-              hours: 'Open 24/7, plowed in winter, lit at night',
-              price: 'Free',
-              website: 'https://midtowngreenway.org',
-              tip: 'Rent a bike and explore the 28 exits — each leads somewhere interesting',
-              accessibility: 'Fully accessible paved trail',
-            }
-          ],
-        },
-        // SUBSECTION: Quirky Specialty
         {
-          id: 'hidden-gems-quirky',
-          type: 'section',
-          title: 'Quirky Specialty',
-          items: [
-            {
-              id: 'gem-quirky-1',
+          id: 'gem-quirky-1',
               type: 'hidden-gem',
               name: 'Ingebretsen\'s',
               category: 'Shop',
@@ -1865,9 +1734,7 @@ export const minneapolis: CityData = {
               website: 'https://www.theherbivorousbutcher.com',
               tip: 'Try the Italian sausage or Korean BBQ ribs — even skeptics are converted',
               accessibility: 'Wheelchair accessible',
-            }
-          ],
-        }
+            },
       ],
     },
     {
@@ -2680,7 +2547,13 @@ export const minneapolis: CityData = {
           era: 'Pre-Colonial',
           title: 'Bdote: The sacred confluence that defined everything',
           body: 'Long before Minneapolis existed, the Dakota people named the confluence of the Mississippi and Minnesota rivers "Bdote" — a sacred site of origin in their creation stories. The land was not wilderness waiting to be settled; it was the center of a world. Fort Snelling was built directly on this sacred ground in 1820, and the Dakota were forcibly removed after the U.S.-Dakota War of 1862. The site remains spiritually significant, and efforts to acknowledge this history are ongoing.',
-          source: 'Minnesota Historical Society',
+          sources: [
+            {
+              title: 'Bdote Memory Map',
+              publisher: 'Minnesota Historical Society',
+              url: 'https://www.mnhs.org/fortsnelling/learn/bdote',
+            },
+          ],
           image: {
             src: '/images/history/bdote-confluence.jpg',
             alt: 'Aerial view of the Mississippi and Minnesota river confluence',
@@ -2698,7 +2571,13 @@ export const minneapolis: CityData = {
           era: '1878',
           title: 'The Washburn A Mill explosion that leveled six city blocks',
           body: 'On May 2, 1878, flour dust ignited inside the Washburn A Mill, causing an explosion so powerful it leveled six blocks, killed 18 workers instantly, and could be heard 10 miles away. The blast taught the milling industry about combustible dust — leading to the invention of dust collection systems that are now standard worldwide. The ruins of the rebuilt mill now house the Mill City Museum.',
-          source: 'Mill City Museum',
+          sources: [
+            {
+              title: 'The Washburn A Mill Explosion',
+              publisher: 'Mill City Museum',
+              url: 'https://www.mnhs.org/millcity/learn/history/washburn-a-mill-explosion',
+            },
+          ],
           image: {
             src: '/images/history/washburn-explosion.jpg',
             alt: 'Historic illustration of the 1878 Washburn Mill explosion',
@@ -2721,7 +2600,13 @@ export const minneapolis: CityData = {
           era: '1920s-30s',
           title: 'Minneapolis was once controlled by a corrupt "reform" mayor',
           body: 'Mayor A.A. Ames, elected in 1900 as a reformer, immediately fired most of the police force and replaced them with criminals. He turned Minneapolis into an open city for gambling, prostitution, and robbery. His police chief was his brother. The crime syndicate only collapsed when a grand jury, led by foreman Hovey C. Clarke, exposed the entire operation. Lincoln Steffens\' "The Shame of Minneapolis" made it a national scandal.',
-          source: 'Lincoln Steffens, "The Shame of the Cities"',
+          sources: [
+            {
+              title: 'The Shame of the Cities',
+              publisher: 'McClure\'s Magazine / Archive.org',
+              url: 'https://archive.org/details/shameofcities00stef',
+            },
+          ],
           location: {
             name: 'Downtown Minneapolis',
             stillExists: true,
@@ -2733,7 +2618,13 @@ export const minneapolis: CityData = {
           era: '1934',
           title: 'The Teamsters Strike that turned Minneapolis into a labor battleground',
           body: 'In May 1934, a citywide trucking strike led by Trotskyist organizers brought Minneapolis to a standstill. On "Bloody Friday" (July 20), police opened fire on unarmed strikers, killing two and wounding 67. The strike eventually won, and Minneapolis became one of the strongest union cities in America. Governor Floyd Olson declared martial law and sided with the workers — a turning point in American labor history.',
-          source: 'Minnesota Historical Society',
+          sources: [
+            {
+              title: 'The 1934 Minneapolis Teamsters Strike',
+              publisher: 'MNopedia / Minnesota Historical Society',
+              url: 'https://www.mnopedia.org/event/minneapolis-teamsters-strike-1934',
+            },
+          ],
           image: {
             src: '/images/history/teamsters-strike.jpg',
             alt: 'Strikers gathered during the 1934 Minneapolis Teamsters Strike',
@@ -2750,7 +2641,13 @@ export const minneapolis: CityData = {
           era: '1890s',
           title: 'The secret tunnels under downtown built for more than just weather',
           body: 'Minneapolis built an extensive underground tunnel system starting in the 1890s — officially for utilities and winter passage. But the tunnels also served as bootlegger routes during Prohibition, connecting speakeasies to warehouses. Some tunnels still exist, sealed off and forgotten. The modern skyway system was built partly because the old tunnels had become too dangerous and outdated to maintain.',
-          source: 'Downtown Minneapolis archives',
+          sources: [
+            {
+              title: 'Minneapolis Skyway System',
+              publisher: 'Minneapolis Downtown Council',
+              url: 'https://www.minneapolisdowntown.com/getting-around/skyway/',
+            },
+          ],
           location: {
             name: 'Downtown Minneapolis',
             coordinates: { lat: 44.9778, lng: -93.2650 },
@@ -2768,7 +2665,13 @@ export const minneapolis: CityData = {
           era: '1910s',
           title: 'The city that invented the enclosed shopping mall... by accident',
           body: 'Southdale Center, which opened in Edina in 1956, is often credited as the first enclosed shopping mall. But the concept came from architect Victor Gruen, who envisioned not a shopping center but a European-style town square protected from Minnesota winters. Gruen later disowned his creation, calling American malls "ugly... land-wasting seas of parking." He spent his final years trying to design pedestrian-only cities.',
-          source: 'Malcolm Gladwell, "The Terrazzo Jungle"',
+          sources: [
+            {
+              title: 'The Terrazzo Jungle',
+              publisher: 'The New Yorker',
+              url: 'https://www.newyorker.com/magazine/2004/03/15/the-terrazzo-jungle',
+            },
+          ],
           location: {
             name: 'Southdale Center, Edina',
             coordinates: { lat: 44.8809, lng: -93.3222 },
@@ -2781,7 +2684,13 @@ export const minneapolis: CityData = {
           era: '1960s-70s',
           title: 'North Minneapolis was deliberately destroyed by urban renewal',
           body: 'In the 1960s and 70s, North Minneapolis was a thriving Black neighborhood — until the city designated it for "urban renewal." Hundreds of homes and businesses were demolished. The promised new development never came. Highways were routed through the community. The intentional destruction of Black wealth and culture in North Minneapolis is one of the clearest examples of structural racism in city planning.',
-          source: 'Mapping Prejudice Project',
+          sources: [
+            {
+              title: 'Mapping Prejudice',
+              publisher: 'University of Minnesota',
+              url: 'https://mappingprejudice.umn.edu/',
+            },
+          ],
           image: {
             src: '/images/history/north-minneapolis-1960s.jpg',
             alt: 'North Minneapolis neighborhood before urban renewal',
@@ -2798,7 +2707,13 @@ export const minneapolis: CityData = {
           era: '1858',
           title: 'Minneapolis only exists because of a real estate scam',
           body: 'Before statehood, the land around St. Anthony Falls was federal property controlled by Fort Snelling. Settlers were squatters with no legal claim. In 1838, speculators convinced the government to shrink the Fort Snelling military reservation, "freeing" the land for development — land that the speculators had already surveyed and divided amongst themselves. Minneapolis was literally founded on insider dealing.',
-          source: 'Mary Lethert Wingerd, "North Country"',
+          sources: [
+            {
+              title: 'North Country: The Making of Minnesota',
+              publisher: 'University of Minnesota Press',
+              url: 'https://www.upress.umn.edu/book-division/books/north-country',
+            },
+          ],
           location: {
             name: 'St. Anthony Falls',
             coordinates: { lat: 44.9828, lng: -93.2576 },
@@ -2816,7 +2731,13 @@ export const minneapolis: CityData = {
           era: '10,000 B.C.E.',
           title: 'People have lived on this riverfront for 12,000 years',
           body: 'Archaeological evidence near the Washington Avenue Bridge and Boom Island Park dates human habitation to 10,000 B.C.E. — over 12,000 years of continuous presence along the Mississippi. The Dakota viewed St. Anthony Falls as sacred, Nicollet Island as a neutral meeting ground between Dakota and Ojibwe nations, and the confluence at Bdote as the literal center of the world. What European settlers called "wilderness" had been home for millennia.',
-          source: 'Minnesota Office of the State Archaeologist',
+          sources: [
+            {
+              title: 'Minnesota Archaeology',
+              publisher: 'Minnesota Office of the State Archaeologist',
+              url: 'https://mn.gov/admin/archaeologist/',
+            },
+          ],
           location: {
             name: 'Boom Island Park / Washington Avenue Bridge',
             coordinates: { lat: 44.9892, lng: -93.2724 },
@@ -2829,7 +2750,13 @@ export const minneapolis: CityData = {
           era: '1887',
           title: 'The mills kept exploding — and one fire created a museum',
           body: 'The 1878 Washburn explosion wasn\'t the only one. In 1887, another series of mill blasts showered debris across downtown Minneapolis. Flour dust was that volatile. By 1916, the city was producing 18 million barrels of flour yearly — earning the nickname "Mill City." When a vacant mill caught fire in 1991, firefighters deliberately contained the blaze to preserve the ruins. Those ruins became the Mill City Museum, its design built around the scorched walls.',
-          source: 'Mill City Museum / Minnesota Historical Society',
+          sources: [
+            {
+              title: 'Mill City Museum History',
+              publisher: 'Minnesota Historical Society',
+              url: 'https://www.mnhs.org/millcity/learn/history',
+            },
+          ],
           image: {
             src: '/images/history/mill-ruins-1991.jpg',
             alt: 'Ruins of the flour mill after the 1991 fire',
@@ -2847,7 +2774,13 @@ export const minneapolis: CityData = {
           era: '1870s',
           title: 'Bassett\'s Creek was so polluted it disappeared',
           body: 'By the 1870s, Bassett\'s Creek had become what petitioners called a "mammoth sewer" — choked with industrial waste, slaughterhouse runoff, and raw sewage. In 1868, an elderly woman fell 30 feet from a bridge over its fetid waters. The solution wasn\'t cleanup but concealment: the city straightened, canalized, and eventually buried the creek underground. Two decades later, it had vanished entirely beneath development near its mouth. A natural waterway, erased.',
-          source: 'Minneapolis Park and Recreation Board archives',
+          sources: [
+            {
+              title: 'Bassett\'s Creek History',
+              publisher: 'Minneapolis Park and Recreation Board',
+              url: 'https://www.minneapolisparks.org/',
+            },
+          ],
           location: {
             name: 'Bassett\'s Creek (underground)',
             coordinates: { lat: 44.9756, lng: -93.2891 },
@@ -2865,7 +2798,13 @@ export const minneapolis: CityData = {
           era: 'Late 1800s',
           title: 'Minnehaha Falls was a den of whiskey and prostitution',
           body: 'Longfellow\'s "Song of Hiawatha" made Minnehaha Falls famous, drawing crowds by the thousands. But the area around the falls became something else entirely — a strip of saloons, gambling dens, and what newspapers delicately called "ladies of the night." Class tensions exploded over whether the falls should become a public park or remain in private hands profiting from vice. The city finally seized and razed the buildings in 1906, erasing the "wicked midway" and creating the pastoral park that exists today.',
-          source: 'Minneapolis Park and Recreation Board / MinnPost',
+          sources: [
+            {
+              title: 'The Notorious History of Minnehaha Falls',
+              publisher: 'MinnPost',
+              url: 'https://www.minnpost.com/mnopedia/2018/06/the-notorious-history-of-minnehaha-falls/',
+            },
+          ],
           image: {
             src: '/images/history/minnehaha-falls-1890s.jpg',
             alt: 'Minnehaha Falls area with saloons and crowds in the 1890s',
@@ -2882,7 +2821,7 @@ export const minneapolis: CityData = {
     {
       id: 'mpls-dark-history',
       type: 'section',
-      title: 'Shadows Over Minneapolis',
+      title: 'Minneapolis\'s Dark History',
       teaser: 'Severed heads on park benches, frozen evidence, and the hot dog napkin that solved a murder',
       intro: 'Minnesota Nice has a dark side. Between the skyways and the frozen river, Minneapolis harbors cold cases that span generations, bodies scattered like breadcrumbs across the city, and mysteries that won\'t stay buried—even when some of them literally won\'t stay buried.',
       items: [

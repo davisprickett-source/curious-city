@@ -176,7 +176,7 @@ export const chicago: CityData = {
     {
       id: 'chi-curiosities',
       type: 'section',
-      title: 'The Windy City Ledger',
+      title: 'Chicago\'s Strange & Remarkable',
       teaser: 'Rebel architecture, nuclear origins, and the city that refused to stay put',
       intro: 'Chicago is a city that literally pulled itself out of the mud by its bootstraps—elevating entire blocks by six feet to escape the swamp. That same audacity gave us the first skyscraper, the first sustained nuclear reaction, and a river that flows backward just because we told it to.',
       items: [
@@ -192,7 +192,13 @@ export const chicago: CityData = {
               alt: 'King James Strang of Beaver Island',
             }
           ],
-          source: 'Great Lakes Maritime Heritage Center',
+          sources: [
+            {
+              title: 'James Jesse Strang',
+              publisher: 'Britannica',
+              url: 'https://www.britannica.com/biography/James-Jesse-Strang',
+            },
+          ],
           location: {
             name: 'Beaver Island, Lake Michigan',
             stillExists: true,
@@ -222,7 +228,18 @@ export const chicago: CityData = {
               alt: 'Atomic Age birthplace at University of Chicago',
             }
           ],
-          source: 'Bulletin of the Atomic Scientists',
+          sources: [
+            {
+              title: 'The first nuclear reactor, explained',
+              publisher: 'University of Chicago',
+              url: 'https://news.uchicago.edu/explainer/first-nuclear-reactor-explained',
+            },
+            {
+              title: 'Chicago Pile-1',
+              publisher: 'Atomic Heritage Foundation',
+              url: 'https://ahf.nuclearmuseum.org/ahf/history/chicago-pile-1/',
+            },
+          ],
           location: {
             name: 'University of Chicago, Regenstein Library',
             stillExists: true,
@@ -253,21 +270,43 @@ export const chicago: CityData = {
               alt: 'Jackscrews lifting Chicago buildings',
             }
           ],
-          source: 'Chicago Historical Society',
+          sources: [
+            {
+              title: 'Raising of Chicago',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Raising_of_Chicago',
+            },
+            {
+              title: 'Raising Chicago',
+              publisher: 'Enjoy Illinois',
+              url: 'https://www.enjoyillinois.com/illinois-200/raising-chicago/',
+            },
+          ],
         },
         {
           id: 'curiosity-5',
           type: 'curiosity',
           category: 'invention',
           title: 'The Ferris Wheel was built to humiliate the Eiffel Tower',
-          body: 'When Chicago hosted the 1893 World\'s Fair, organizers demanded something to eclipse Paris\'s Eiffel Tower. George Washington Gale Ferris Jr. delivered: a 264-foot steel wheel carrying 2,160 passengers in 36 cars. Critics predicted catastrophic failure. They were wrong. Over 1.4 million people rode it. Ferris proved his genius, died broke three years later, and watched creditors seize his masterwork. Vindication is expensive.',
+          body: 'When Chicago hosted the 1893 World\'s Fair, organizers had one demand: build something to eclipse the Eiffel Tower. Paris had shown off in 1889; now it was America\'s turn to humiliate them. George Washington Gale Ferris Jr., a 34-year-old bridge builder from Pittsburgh, proposed a 264-foot rotating wheel carrying 2,160 passengers in 36 wood-paneled cars—each the size of a Pullman coach, with 40 revolving chairs and room for 20 standing. The axle alone weighed 89,000 pounds, the largest single piece of steel ever forged. Critics predicted catastrophic failure. Engineers called it suicide. Ferris mortgaged everything he owned to prove them wrong. The wheel opened late—weeks after the fair began—but when it finally turned, 1.4 million people paid 50 cents each for a 20-minute ride: six stops to load passengers, then one slow, nine-minute revolution with views of the entire White City below. At 50 cents a head, the wheel saved the fair from bankruptcy. But Ferris never saw a dime. Fair organizers disputed his share of the profits; he spent the next three years in litigation while creditors circled. His health collapsed. In 1896, at age 37, George Ferris died of typhoid fever, broke and broken, watching his masterwork belong to everyone but him. The wheel was dismantled, rebuilt in Lincoln Park, dismantled again, rebuilt for the 1904 St. Louis World\'s Fair, then finally demolished in 1906—with 200 pounds of dynamite. Today every Ferris wheel on Earth descends from his design. He died before he could enjoy any of it.',
           images: [
             {
               src: '/chicago/curiosities/ferris-1.png',
               alt: 'Original Ferris wheel at 1893 World\'s Fair',
             }
           ],
-          source: 'Field Museum archives',
+          sources: [
+            {
+              title: 'Ferris Wheel (1893)',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Ferris_Wheel_(1893)',
+            },
+            {
+              title: 'The 1893 World\'s Fair and the First Ferris Wheel',
+              publisher: 'NEH-Edsitement',
+              url: 'https://edsitement.neh.gov/teachers-guides/1893-worlds-fair-and-first-ferris-wheel',
+            },
+          ],
           location: {
             name: 'Jackson Park',
             stillExists: false,
@@ -283,7 +322,7 @@ export const chicago: CityData = {
           type: 'curiosity',
           category: 'underground',
           title: '60 miles of forgotten tunnels flooded downtown in 1992',
-          body: 'Starting in 1899, workers dug 60 miles of narrow-gauge freight tunnels beneath the Loop to move coal and mail. Chicagoans completely forgot they existed. On April 13, 1992, a construction crew punctured a tunnel wall under the Chicago River. 250 million gallons poured into basements across downtown. The financial district shut down for weeks. The Loop ran on emergency generators. The bill: $1.95 billion for infrastructure nobody remembered building.',
+          body: 'In 1899, the Illinois Telephone and Telegraph Company got permission to dig conduits for telephone cables under downtown Chicago. What they actually built—without telling anyone—was a 60-mile network of tunnels large enough for electric freight trains. By 1902, the scam was exposed, but by then the tunnels were too useful to stop: underground railways moved coal, mail, and garbage beneath the Loop for decades. Then the system was abandoned in the 1950s. Buildings bricked over their portals. Chicagoans forgot the tunnels existed. On April 13, 1992, a construction crew installing bridge pilings at Kinzie Street cracked the tunnel wall beneath the Chicago River. A city engineer missed the inspection because he couldn\'t find parking. A telecommunications worker spotted the leak, sent the city a videotape, and watched bureaucracy grind into a bid process. While they debated, the crack widened. By morning, a whirlpool had opened in the river. 250 million gallons of Chicago River water poured into the abandoned tunnel network and then into every basement connected to it. Workers at the Merchandise Mart saw fish swimming in the boiler room. Marshall Field\'s famous clock stopped at 7:14. The Board of Trade suspended trading. The Loop ran on emergency generators for weeks. A contractor named John Kenny stopped the flood seven days later using concrete that set so fast the delivery trucks needed police escorts. Kenny became an instant celebrity—the "Flood Stud"—for his teal jacket at daily press conferences. The final bill: $2 billion for infrastructure nobody remembered building and a leak nobody prioritized fixing.',
           images: [
             {
               src: '/chicago/curiosities/flood-1.png',
@@ -294,7 +333,18 @@ export const chicago: CityData = {
               alt: 'Chicago Loop tunnel system',
             }
           ],
-          source: 'Chicago Tribune historical archives',
+          sources: [
+            {
+              title: 'Why The 1992 Loop Flood Is The Most Chicago Story Ever',
+              publisher: 'WBEZ',
+              url: 'https://www.wbez.org/curious-city/2016/08/21/why-the-1992-loop-flood-is-the-most-chicago-story-ever',
+            },
+            {
+              title: 'A Comedy of Errors: How a Small Leak Became the Great Loop Flood of 1992',
+              publisher: 'WTTW Chicago',
+              url: 'https://www.wttw.com/chicago-stories/downtown-disasters/a-comedy-of-errors-how-a-small-leak-became-the-great-loop-flood-of-1992',
+            },
+          ],
         },
         {
           id: 'curiosity-7',
@@ -316,11 +366,18 @@ export const chicago: CityData = {
               alt: 'Art Institute entrance with decorated lions',
             }
           ],
-          source: 'Art Institute of Chicago',
-          location: {
-            name: 'Art Institute of Chicago',
-            stillExists: true,
-          },
+          sources: [
+            {
+              title: 'Our Civic-Minded Pride',
+              publisher: 'Art Institute of Chicago',
+              url: 'https://www.artic.edu/articles/74/our-civic-minded-pride',
+            },
+            {
+              title: 'Ask Geoffrey: The History of the Art Institute Lions',
+              publisher: 'WTTW',
+              url: 'https://news.wttw.com/2019/10/02/ask-geoffrey-history-art-institute-lions',
+            },
+          ],
         },
         {
           id: 'curiosity-9',
@@ -338,11 +395,13 @@ export const chicago: CityData = {
               alt: 'Chicago River locks and canal system',
             }
           ],
-          source: 'American Society of Civil Engineers',
-          location: {
-            name: 'Chicago River',
-            stillExists: true,
-          },
+          sources: [
+            {
+              title: 'Chicago Sanitary and Ship Canal',
+              publisher: 'American Society of Civil Engineers',
+              url: 'https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/chicago-sanitary-and-ship-canal',
+            },
+          ],
         },
         {
           id: 'curiosity-11',
@@ -356,7 +415,13 @@ export const chicago: CityData = {
               alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend',
             }
           ],
-          source: 'Chicago City Council Resolution, 1997',
+          sources: [
+            {
+              title: 'Mrs. O\'Leary, Cow Cleared by City Council Committee',
+              publisher: 'Chicago Tribune',
+              url: 'https://www.chicagotribune.com/1997/10/06/mrs-oleary-cow-cleared-by-city-council-committee/',
+            },
+          ],
           location: {
             name: 'DeKoven Street (Chicago Fire Academy)',
             stillExists: true,
@@ -378,7 +443,13 @@ export const chicago: CityData = {
               alt: 'Historic Chicago Post Office architecture',
             }
           ],
-          source: 'National Register of Historic Places',
+          sources: [
+            {
+              title: 'Old Chicago Main Post Office',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Old_Chicago_Main_Post_Office',
+            },
+          ],
           location: {
             name: 'The Old Post Office, 433 W Van Buren',
             stillExists: true,
@@ -396,7 +467,13 @@ export const chicago: CityData = {
               alt: 'Home Insurance Building - world\'s first skyscraper',
             }
           ],
-          source: 'Chicago Architecture Center',
+          sources: [
+            {
+              title: 'Home Insurance Building',
+              publisher: 'Chicago Architecture Center',
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/home-insurance-building',
+            },
+          ],
           location: {
             name: 'LaSalle and Adams Streets',
             stillExists: false,
@@ -414,7 +491,13 @@ export const chicago: CityData = {
               alt: 'Chicago alleyway with murals and street art',
             }
           ],
-          source: 'Chicago Department of Transportation',
+          sources: [
+            {
+              title: 'Chicago Alley Greening',
+              publisher: 'City of Chicago',
+              url: 'https://www.chicago.gov/city/en/depts/cdot/supp_info/green_alleys.html',
+            },
+          ],
         },
         {
           id: 'curiosity-16',
@@ -440,10 +523,6 @@ export const chicago: CityData = {
               url: 'https://www.choosechicago.com/blog/architecture-history/a-visitors-guide-to-navigating-the-pedway-system/',
             }
           ],
-          location: {
-            name: 'Downtown Chicago Loop',
-            stillExists: true,
-          },
         },
         {
           id: 'curiosity-17',
@@ -469,10 +548,6 @@ export const chicago: CityData = {
               url: 'https://news.wttw.com/2024/03/11/wttw-news-explains-why-does-chicago-dye-river-green-st-patrick-s-day',
             }
           ],
-          location: {
-            name: 'Chicago River',
-            stillExists: true,
-          },
         },
         {
           id: 'curiosity-18',
@@ -680,33 +755,6 @@ export const chicago: CityData = {
           price: 'CTA fare',
           website: 'http://forgottenchicago.com/features/remnants-of-the-l/',
           tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.',
-        },
-        {
-          id: 'gem-exchequer-speakeasy',
-          type: 'hidden-gem',
-          name: 'Exchequer Restaurant (Al Capone Speakeasy)',
-          category: 'Historic Site',
-          description: 'A confirmed Al Capone location where original speakeasy architecture is still visible above the ceiling — exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. The basement tunnel system is sealed now, but you can still see where bootleggers moved inventory. The restaurant serves deep-dish pizza and Italian beef in a space where gangsters once ran liquor. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history.',
-          images: [
-            {
-              src: '/chicago/hidden-gems/exchequer-1.png',
-              alt: 'Historic restaurant interior with exposed brick and vintage details',
-            },
-            {
-              src: '/chicago/hidden-gems/exchequer-2.png',
-              alt: 'Exchequer Restaurant speakeasy architecture',
-            },
-            {
-              src: '/chicago/hidden-gems/exchequer-3.png',
-              alt: 'Al Capone era speakeasy details at Exchequer',
-            }
-          ],
-          address: '226 S Wabash Ave, Chicago, IL 60604',
-          coordinates: { lat: 41.8791, lng: -87.6259 },
-          hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 12pm-8pm',
-          price: '$$',
-          website: 'https://www.exchequerpub.com',
-          tip: 'Ask your server about the speakeasy history — they can point out the original architectural features.',
         },
         {
           id: 'gem-union-stockyard-gate',
@@ -1256,6 +1304,32 @@ export const chicago: CityData = {
             src: '/chicago/bars/simons-1.png',
             alt: 'Simon\'s Tavern vintage interior with nautical decorations',
           },
+        },
+        {
+          name: 'Exchequer Restaurant & Pub',
+          neighborhood: 'Loop',
+          vibe: 'A confirmed Al Capone speakeasy where you can still see the original architecture above the ceiling tiles.',
+          order: 'Deep-dish pizza and a beer—the food is solid and the history is free.',
+          why: 'The Exchequer has been operating since 1906 (as a restaurant since 1969). During Prohibition, this was a Capone operation. Original speakeasy architecture is still visible—exposed brick, hidden doorways, and an escape door in the middle of the dining room leading to the basement. The tunnel system where bootleggers moved inventory is sealed now, but you can still see where it was. Most patrons have no idea they\'re eating lunch in a functioning piece of Chicago crime history. Ask your server to point out the original features.',
+          address: '226 S Wabash Ave, Chicago, IL 60604',
+          coordinates: { lat: 41.8791, lng: -87.6259 },
+          hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 12pm-8pm',
+          price: '$$',
+          website: 'https://www.exchequerpub.com',
+          images: [
+            {
+              src: '/chicago/hidden-gems/exchequer-1.png',
+              alt: 'Historic restaurant interior with exposed brick and vintage details',
+            },
+            {
+              src: '/chicago/hidden-gems/exchequer-2.png',
+              alt: 'Exchequer Restaurant speakeasy architecture',
+            },
+            {
+              src: '/chicago/hidden-gems/exchequer-3.png',
+              alt: 'Al Capone era speakeasy details at Exchequer',
+            }
+          ],
         }
       ],
     },
@@ -1913,7 +1987,7 @@ export const chicago: CityData = {
     {
       id: 'chi-dark-history',
       type: 'section',
-      title: 'City of Unsolved Mysteries',
+      title: 'Chicago\'s Dark History',
       teaser: 'Mob hits, poisoned medicine, and the fire that never stopped burning',
       intro: 'Beneath the elevated trains and architectural monuments, Chicago harbors some of America\'s most chilling unsolved mysteries and darkest tragedies. From poisoned medicine bottles that changed how we buy drugs, to America\'s first documented serial killer, to fires that killed hundreds and cold cases that haunt families for generations — these are the stories the city doesn\'t put on tourist maps. A city built on ambition, scarred by violence, and still searching for answers.',
       items: [

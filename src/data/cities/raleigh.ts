@@ -79,7 +79,7 @@ export const raleigh: CityData = {
     {
       id: 'raleigh-curiosities',
       type: 'section',
-      title: 'The Oak City Ledger',
+      title: 'Raleigh\'s Strange & Remarkable',
       teaser: 'Severed heads, Cold War bunkers, and the city that invented capitalism\'s barcode',
       intro: 'Raleigh wasn\'t built on a river or a port; it was carved out of a forest by legislative fiat. That intentionality has bred a city of secrets—where punk clubs hide in underground bunkers and the barcode that runs the world was perfected in a Research Triangle lab.',
       items: [
@@ -1907,7 +1907,7 @@ export const raleigh: CityData = {
     {
       id: 'ral-dark-history',
       type: 'section',
-      title: 'City of Oaks, City of Secrets',
+      title: 'Raleigh\'s Dark History',
       teaser: 'Coups, lynchings, and the violence behind Southern charm',
       intro: 'A state capital that witnessed coups, lynchings, and executions while maintaining the polite fiction of Southern gentility. The city\'s tree-lined streets and historic cemeteries hide stories of racial terror, serial killers who hunted women, and a prison that has executed hundreds.',
       items: [

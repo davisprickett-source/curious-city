@@ -58,7 +58,7 @@ export const colorado_springs: CityData = {
     {
       id: 'cos-curiosities',
       type: 'section',
-      title: 'Olympian Secrets',
+      title: 'Colorado Springs\'s Strange & Remarkable',
       teaser: 'The peak that inspired "America the Beautiful," the NORAD mountain, and the city built for health',
       intro: 'Colorado Springs was founded as a high-altitude health resort, but it became a fortress. From the mountain that houses NORAD to the peaks that inspired our national anthems, the Springs is a city of high-stakes geography and deep-rooted legends.',
       items: [
@@ -1297,7 +1297,7 @@ export const colorado_springs: CityData = {
     {
       id: 'cos-dark-history',
       type: 'section',
-      title: 'Shadows of Pikes Peak',
+      title: 'Colorado Springs\'s Dark History',
       teaser: 'Ax murders, military conspiracies, and the blood in America\'s playground',
       intro: 'Colorado Springs sits in the shadow of Pikes Peak, a city of military precision, evangelical fervor, and stark natural beauty. But the same mountains that draw tourists also hide crimes. The Rampart Range has witnessed murders, mysterious disappearances, and stray bullets falling from the sky. From serial killers to unsolved ax murders to wildfires that consumed neighborhoods, this city\'s dark history reveals the violence lurking beneath the postcard scenery.',
       items: [

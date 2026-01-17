@@ -73,7 +73,7 @@ export interface WithMoreInfo {
   moreInfo?: Array<{
     title: string
     url: string
-    type?: 'article' | 'video' | 'podcast' | 'book' | 'archive'
+    type?: 'article' | 'video' | 'podcast' | 'book' | 'archive' | 'shop' | 'product'
   }>
 }
 
@@ -199,7 +199,7 @@ export interface SectionContentItem extends BaseContentItem {
 }
 
 // Curiosity item - short, self-contained fact or explanation
-export interface CuriosityContentItem extends BaseContentItem {
+export interface CuriosityContentItem extends BaseContentItem, WithMoreInfo {
   type: 'curiosity'
   title: string
   body: string
@@ -244,7 +244,7 @@ export interface CuriosityContentItem extends BaseContentItem {
 }
 
 // Hidden gem - a place or experience recommendation
-export interface HiddenGemContentItem extends BaseContentItem {
+export interface HiddenGemContentItem extends BaseContentItem, WithMoreInfo {
   type: 'hidden-gem'
   name: string
   category: string
@@ -286,7 +286,7 @@ export interface HiddenGemContentItem extends BaseContentItem {
 }
 
 // Iconic spot - well-known landmark or must-see attraction
-export interface IconicSpotContentItem extends BaseContentItem {
+export interface IconicSpotContentItem extends BaseContentItem, WithMoreInfo {
   type: 'iconic-spot'
   name: string
   category: string
@@ -423,8 +423,7 @@ export interface HistoryContentItem extends BaseContentItem {
 }
 
 // Dark history - forgotten crimes, unsolved mysteries, macabre events
-export interface DarkHistoryContentItem extends BaseContentItem {
-  type: 'dark-history'
+export interface DarkHistoryContentItem extends BaseContentItem, WithMoreInfo {
   category: 'unsolved' | 'crime' | 'disaster' | 'mystery' | 'macabre' | 'forgotten' | 'haunting' | 'cold-case'
   year?: string // e.g., "1922", "1890s", "Unknown"
   title: string
@@ -442,11 +441,6 @@ export interface DarkHistoryContentItem extends BaseContentItem {
     show?: string
     director?: string
     year?: string | number
-  }>
-  moreInfo?: Array<{
-    title: string
-    type: 'podcast' | 'video' | 'article' | 'book'
-    url: string
   }>
   image?: {
     src: string

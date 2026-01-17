@@ -62,7 +62,7 @@ export const salt_lake_city: CityData = {
     {
       id: 'slc-curiosities',
       type: 'section',
-      title: 'Salt & Silicon Secrets',
+      title: 'Salt Lake City\'s Strange & Remarkable',
       teaser: 'The lake that refuses to stay put, the city of the grid, and the foundations of the future',
       intro: 'Salt Lake City was planned before it was built—a grid of massive blocks centered on a temple. But beneath that order lies a city of unexpected secrets: a lake that’s a biological marvel, a mountain full of genealogical records, and the origins of the internet itself.',
       items: [
@@ -1461,7 +1461,7 @@ export const salt_lake_city: CityData = {
     {
       id: 'slc-dark-history',
       type: 'section',
-      title: 'Desert Secrets',
+      title: 'Salt Lake City\'s Dark History',
       teaser: 'Massacres, missing persons, and the cost of Zion',
       intro: 'Salt Lake City was built on prophecy and isolation—a theocratic settlement carved into hostile desert, far from federal reach. That isolation bred both community and darkness. The same mountains that promised refuge have witnessed massacres, serial killers, fundamentalist murders, and disappearances where the desert keeps its secrets. Utah ranks ninth nationally in serial killer victims per capita. The faith that built Zion has also, at its fringes, justified bloodshed. And the West Desert, with its abandoned mines and salt flats, offers endless places to hide what should never be found.',
       items: [
