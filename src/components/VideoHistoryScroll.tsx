@@ -490,8 +490,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         </div>
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
-        {/* z-[55] ensures share dropdowns appear above fade overlays (z-50) */}
-        <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative z-[55] will-change-transform" style={{ transform: 'translateZ(0)' }}>
+        {/* z-10 keeps it below video (z-20) on mobile and below letterbox bars (z-40) on desktop */}
+        <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative z-10 will-change-transform" style={{ transform: 'translateZ(0)' }}>
           {/* Mobile spacer - push content below nav + fixed video + gradient overlay (add 6rem to clear gradient) */}
           <div className="lg:hidden" style={{ height: 'calc(57px + 30vh + 6rem)' }} />
 
@@ -548,7 +548,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
             </div>
 
             {/* Bottom spacing to allow last video to complete */}
-            <div className="h-[50vh]" />
+            <div className="h-[25vh]" />
           </div>
 
           {/* Footer - OUTSIDE scroll measurement so video stops animating when article ends */}
