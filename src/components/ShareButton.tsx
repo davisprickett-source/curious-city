@@ -132,9 +132,9 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
     },
   ]
 
-  // Button colors based on background
+  // Button colors - always rust, just lighter/darker variants
   const buttonColors = onDark
-    ? 'text-white/90 hover:text-white'
+    ? 'text-[#c65d3b] hover:text-[#d97a5a]'
     : 'text-[#c65d3b] hover:text-[#a54d30]'
 
   // Dropdown position classes
@@ -154,7 +154,7 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
         className={`flex items-center gap-2 ${buttonColors} transition-colors`}
       >
         <svg
-          className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-12 scale-110' : ''}`}
+          className={`w-5 h-5 transition-all duration-500 ease-out ${isOpen ? 'rotate-[360deg] scale-110' : 'rotate-0'}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -166,7 +166,7 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
 
       {/* Dropdown with animation */}
       <div
-        className={`absolute left-1/2 -translate-x-1/2 ${dropdownPositionClasses} w-48 bg-white rounded-lg shadow-xl border border-neutral-200 py-2 z-[70] transition-all duration-200 ease-out ${
+        className={`absolute left-1/2 -translate-x-1/2 ${dropdownPositionClasses} w-48 bg-white rounded-lg shadow-xl border border-neutral-200 overflow-hidden z-[70] transition-all duration-300 ease-out ${
           isOpen
             ? 'opacity-100 scale-100 translate-y-0'
             : 'opacity-0 scale-95 pointer-events-none ' + (dropdownPosition === 'below' ? '-translate-y-2' : 'translate-y-2')
@@ -174,41 +174,56 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {shareLinks.map((link, index) => (
-          <a
-            key={link.name}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b]/10 hover:text-[#c65d3b] transition-all duration-150"
-            style={{ transitionDelay: isOpen ? `${index * 30}ms` : '0ms' }}
+        <div className="py-2">
+          {shareLinks.map((link, index) => (
+            <a
+              key={link.name}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-200 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+              }`}
+              style={{
+                transitionDelay: isOpen ? `${index * 50}ms` : '0ms',
+              }}
+            >
+              <span className="text-neutral-400 group-hover:text-white/90 transition-colors duration-200">{link.icon}</span>
+              <span className="group-hover:translate-x-0.5 transition-transform duration-200">{link.name}</span>
+            </a>
+          ))}
+        </div>
+        <hr className="border-neutral-100" />
+        <div className="py-2">
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              handleCopyLink()
+            }}
+            className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-200 w-full text-left ${
+              isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+            }`}
+            style={{
+              transitionDelay: isOpen ? `${shareLinks.length * 50}ms` : '0ms',
+            }}
           >
-            <span className="text-neutral-400 group-hover:text-[#c65d3b] transition-colors">{link.icon}</span>
-            {link.name}
-          </a>
-        ))}
-        <hr className="my-2 border-neutral-100" />
-        <button
-          onClick={(e) => {
-            e.preventDefault()
-            handleCopyLink()
-          }}
-          className="flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b]/10 hover:text-[#c65d3b] transition-all duration-150 w-full text-left"
-        >
-          <span className="text-neutral-400">
-            {copied ? (
-              <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-            )}
-          </span>
-          {copied ? 'Copied!' : 'Copy link'}
-        </button>
+            <span className="text-neutral-400 group-hover:text-white/90 transition-colors duration-200">
+              {copied ? (
+                <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              )}
+            </span>
+            <span className="group-hover:translate-x-0.5 transition-transform duration-200">
+              {copied ? 'Copied!' : 'Copy link'}
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   )

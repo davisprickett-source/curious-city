@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityDarkHistory, getCityDarkHistorySection } from '@/data/cities'
+import { getExploreLinks } from '@/lib/content/cityHomepage'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
@@ -52,6 +53,9 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
   const items = activeCategory
     ? allItems.filter((item: any) => item.category === activeCategory)
     : allItems
+
+  // Get explore links for bottom section (exclude dark-history since we're on it)
+  const exploreLinks = await getExploreLinks(slug, city.name, 'dark-history')
 
   const url = `https://thecurious.city/${slug}/dark-history`
 
@@ -114,7 +118,7 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
             items={items}
             cityName={city.name}
             citySlug={city.slug}
-            exploreLinks={[]}
+            exploreLinks={exploreLinks}
             footer={<Footer />}
             url={url}
           />

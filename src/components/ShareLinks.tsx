@@ -121,7 +121,7 @@ export function ShareLinks({ title, url, variant = 'default', onDark = false }: 
 
   return (
     <div
-      className="relative"
+      className="relative inline-block"
       ref={menuRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

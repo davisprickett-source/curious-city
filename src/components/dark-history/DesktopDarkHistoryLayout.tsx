@@ -134,18 +134,22 @@ export default function DesktopDarkHistoryLayout({
       </div>
 
       {/* Outro Sections */}
-      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
-        <div className="max-w-5xl mx-auto space-y-16 px-6 pb-20">
-          {/* Share Links and Newsletter - Side by Side */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Share Links */}
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
-              <ShareLinks title={`${cityName}'s Dark History`} url={url} variant="default" onDark={true} />
+      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-16">
+        <div className="max-w-5xl mx-auto px-6 pb-20">
+          {/* Divider line */}
+          <div className="border-t border-white/20 mb-12" />
+
+          {/* Share and Subscribe - Two columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Share Section */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <h3 className="text-xl font-bold text-white mb-4">Share this guide</h3>
+              <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d be into this dark history?</p>
+              <ShareLinks title={`${cityName}'s Dark History`} url={url} onDark />
             </div>
 
-            {/* Newsletter Signup */}
-            <div>
+            {/* Newsletter Section */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
               <NewsletterSignup variant="dark" />
             </div>
           </div>

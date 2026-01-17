@@ -2156,6 +2156,16 @@ export const chicago: CityData = {
           title: 'H.H. Holmes: The "Devil in the White City"',
           body: 'While Chicago celebrated the 1893 World\'s Fair, H.H. Holmes was operating a "Murder Castle" just blocks away in Englewood. He designed the building specifically for killing: soundproof rooms, trap doors, chutes leading to a basement crematorium and acid vats. He lured fair visitors, employees, and lovers into his labyrinth, then methodically executed them for insurance money, skeletal remains to sell to medical schools, or pure psychopathy. He confessed to 27 murders, though some estimates exceed 200. He is widely considered America\'s first documented serial killer—a monster who used the distraction of progress to feed his own dark ambition.',
           verdict: 'Convicted and hanged in 1896. The "Castle" was destroyed by fire in 1895 and later demolished. A post office now sits on the site.',
+          images: [
+            {
+              src: '/chicago/dark-history/holmes-1.png',
+              alt: 'H.H. Holmes portrait',
+            },
+            {
+              src: '/chicago/dark-history/holmes-castle.jpg',
+              alt: 'The Murder Castle in Englewood',
+            },
+          ],
           sources: [
             {
               type: 'book',
@@ -2178,12 +2188,65 @@ export const chicago: CityData = {
           },
         },
         {
-          id: 'chi-dark-4',
+          id: 'chi-dark-9',
           type: 'dark-history',
           featured: true,
           featuredOrder: 2,
           category: 'disaster',
-                    title: 'The "Fireproof" Theater That Killed 602 People',
+          articleSlug: 'eastland-disaster',
+          title: 'The SS Eastland: The Shipwreck That Killed More People Than the Titanic—At the Dock',
+          body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy.\n\nAs thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passersby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. Bodies were pulled from the water and laid out in rows along the wharf. The 2nd Regiment Armory became a makeshift morgue.\n\nMost victims were young Czech immigrants in their twenties. Entire families were wiped out. It remains the largest loss of life from a single shipwreck on the Great Lakes—a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
+          verdict: 'Investigation blamed poor design and negligent loading procedures. The ship\'s captain was charged with criminal negligence but acquitted. The Eastland was later salvaged, renamed, and used as a naval training vessel.',
+          images: [
+            {
+              src: '/chicago/curiosities/boat-disaster-1.png',
+              alt: 'Chicago River where the Eastland disaster occurred',
+            },
+            {
+              src: '/chicago/curiosities/boat-disaster-2.png',
+              alt: 'SS Eastland capsized on Chicago River',
+            }
+          ],
+          sources: [
+            {
+              type: 'website',
+              title: 'Eastland Disaster Historical Society',
+              publisher: 'Eastland Disaster Historical Society',
+              url: 'https://www.eastlanddisaster.org/',
+            },
+            {
+              type: 'book',
+              title: 'The Sinking of the Eastland: America\'s Forgotten Tragedy',
+              author: 'Jay Bonansinga',
+              year: '2004',
+            },
+            {
+              type: 'article',
+              title: 'The Eastland Disaster',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/eastland/',
+            },
+            {
+              type: 'article',
+              title: 'Eastland disaster',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/SS_Eastland',
+            }
+          ],
+          location: {
+            name: 'Chicago River at LaSalle Street',
+            url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
+            coordinates: { lat: 41.8873, lng: -87.6322 },
+            stillExists: true,
+          },
+        },
+        {
+          id: 'chi-dark-4',
+          type: 'dark-history',
+          featured: true,
+          featuredOrder: 3,
+          category: 'disaster',
+          title: 'The "Fireproof" Theater That Killed 602 People',
           body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
           verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',
           images: [
@@ -2256,9 +2319,9 @@ export const chicago: CityData = {
           id: 'chi-dark-5',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 3,
+          featuredOrder: 4,
           category: 'crime',
-                    title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
+          title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
           body: 'On February 14, 1929, seven members of Chicago\'s North Side Gang were lined up against a garage wall at 2122 North Clark Street and executed with Thompson submachine guns. The killers wore police uniforms—because if you\'re going to murder seven men in broad daylight, you might as well look official. The hit, widely believed orchestrated by Al Capone to eliminate rival Bugs Moran, shocked a nation that thought it had seen peak Prohibition violence. Ironically, Moran was supposed to be there but arrived late. Punctuality saves lives. No one was ever convicted. The massacre helped turn public opinion against Prohibition and led to the creation of America\'s first crime laboratory—because Chicago needed scientific help identifying which mob was killing which.',
           verdict: 'Officially unsolved, though Capone\'s fingerprints are everywhere but the court record. Seven dead. Zero convictions.',
           images: [
@@ -2327,7 +2390,7 @@ export const chicago: CityData = {
           id: 'chi-dark-3',
           type: 'dark-history',
           category: 'cold-case',
-                    title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
+          title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
           body: 'On December 28, 1956, Barbara (15) and Patricia (12) Grimes left home to see "Love Me Tender" at the Brighton Theater. They\'d already seen Elvis\'s movie debut 11 times. They never made it to a 12th. Three weeks later, their naked, frozen bodies were found dumped along German Church Road in Willow Springs. Despite one of the largest investigations in Chicago history—300 officers, thousands of interviews, even a personal plea from Elvis himself urging the killer to come forward—no one was ever charged. Multiple men falsely confessed. The case file remains open nearly 70 years later. The sisters went to see a movie about love and came home in body bags.',
           verdict: 'Unsolved. Chicago PD still accepts tips. The killer either died or kept his mouth shut for seven decades.',
           images: [
@@ -2395,9 +2458,9 @@ export const chicago: CityData = {
           id: 'chi-dark-7',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 4,
+          featuredOrder: 5,
           category: 'disaster',
-                    title: 'Our Lady of the Angels: The School Fire That Changed America',
+          title: 'Our Lady of the Angels: The School Fire That Changed America',
           body: 'On December 1, 1958, fire broke out in the basement of Our Lady of the Angels School in Humboldt Park during afternoon classes. The blaze spread rapidly through the 55-year-old wooden structure. 92 children and 3 nuns died—most from smoke inhalation, others from jumping from second-story windows onto concrete. Parents arriving to pick up their children found bodies lined up on the sidewalk, covered with coats. The cause was never definitively determined, though arson was suspected. The tragedy shocked a nation that assumed schools were safe and led to comprehensive fire safety reforms: mandatory sprinklers, fire drills, panic bars, fire-resistant construction. Every fire code in every American school today exists because 95 people burned to death in a Catholic elementary school on the Northwest Side.',
           verdict: 'Second-deadliest school fire in U.S. history. No one was ever charged. Schools nationwide installed sprinklers.',
           images: [
@@ -2549,7 +2612,7 @@ export const chicago: CityData = {
           id: 'chi-dark-6',
           type: 'dark-history',
           category: 'disaster',
-                    title: 'Flight 191: The Deadliest Plane Crash in American History',
+          title: 'Flight 191: The Deadliest Plane Crash in American History',
           images: [
             {
               src: '/chicago/dark-history/flight-1.png',
@@ -2686,56 +2749,6 @@ export const chicago: CityData = {
           location: {
             name: 'Multiple Chicago suburbs',
       url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20Chicago%20suburbs%20Chicago',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'chi-dark-9',
-          type: 'dark-history',
-          category: 'disaster',
-                    title: 'The SS Eastland: The Shipwreck That Killed More People Than the Titanic—At the Dock',
-          body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy.\n\nAs thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passersby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. Bodies were pulled from the water and laid out in rows along the wharf. The 2nd Regiment Armory became a makeshift morgue.\n\nMost victims were young Czech immigrants in their twenties. Entire families were wiped out. It remains the largest loss of life from a single shipwreck on the Great Lakes—a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
-          verdict: 'Investigation blamed poor design and negligent loading procedures. The ship\'s captain was charged with criminal negligence but acquitted. The Eastland was later salvaged, renamed, and used as a naval training vessel.',
-          images: [
-            {
-              src: '/chicago/curiosities/boat-disaster-1.png',
-              alt: 'Chicago River where the Eastland disaster occurred',
-            },
-            {
-              src: '/chicago/curiosities/boat-disaster-2.png',
-              alt: 'SS Eastland capsized on Chicago River',
-            }
-          ],
-          sources: [
-            {
-              type: 'website',
-              title: 'Eastland Disaster Historical Society',
-              publisher: 'Eastland Disaster Historical Society',
-              url: 'https://www.eastlanddisaster.org/',
-            },
-            {
-              type: 'book',
-              title: 'The Sinking of the Eastland: America\'s Forgotten Tragedy',
-              author: 'Jay Bonansinga',
-              year: '2004',
-            },
-            {
-              type: 'article',
-              title: 'The Eastland Disaster',
-              publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/eastland/',
-            },
-            {
-              type: 'article',
-              title: 'Eastland disaster',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/SS_Eastland',
-            }
-          ],
-          location: {
-            name: 'Chicago River at LaSalle Street',
-      url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
-            coordinates: { lat: 41.8873, lng: -87.6322 },
             stillExists: true,
           },
         }

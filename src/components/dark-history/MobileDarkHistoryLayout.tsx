@@ -171,7 +171,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
               {/* What Happened / Verdict */}
               {item.verdict && (
-                <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+                <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                   <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                     What Happened
                   </h4>
@@ -208,7 +208,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
               {/* Location */}
               {item.location && (
-                <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+                <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                   <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">Location</h4>
                   <div className="flex items-start gap-2">
                     <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -234,7 +234,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
               {/* Sources */}
               {((item.sources && item.sources.length > 0) || item.source) && (
-                <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+                <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                   <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
                     Sources & Further Reading
                   </h4>
@@ -327,7 +327,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
             {/* What Happened / Verdict */}
             {item.verdict && (
-              <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+              <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                 <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                   What Happened
                 </h4>
@@ -364,7 +364,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
             {/* Location */}
             {item.location && (
-              <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+              <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                 <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">Location</h4>
                 <div className="flex items-start gap-2">
                   <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -390,7 +390,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
 
             {/* Sources */}
             {((item.sources && item.sources.length > 0) || item.source) && (
-              <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
+              <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
                 <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-3">
                   Sources & Further Reading
                 </h4>
@@ -535,18 +535,25 @@ export default function MobileDarkHistoryLayout({
       </div>
 
       {/* Outro Sections */}
-      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
-        <div className="max-w-5xl mx-auto space-y-16 px-6 pb-20">
-          {/* Share Links */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
-            <div className="flex justify-center">
-              <ShareLinks title={`${cityName}'s Dark History`} url={url} variant="banner" />
+      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-16">
+        <div className="max-w-5xl mx-auto px-6 pb-20">
+          {/* Divider line */}
+          <div className="border-t border-white/20 mb-12" />
+
+          {/* Share and Subscribe - Two columns on desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Share Section */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <h3 className="text-xl font-bold text-white mb-4">Share this guide</h3>
+              <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d be into this dark history?</p>
+              <ShareLinks title={`${cityName}'s Dark History`} url={url} onDark />
+            </div>
+
+            {/* Newsletter Section */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <NewsletterSignup variant="dark" />
             </div>
           </div>
-
-          {/* Newsletter Signup */}
-          <NewsletterSignup variant="dark" />
 
           {/* Explore More Section */}
           <div className="text-center space-y-12">
