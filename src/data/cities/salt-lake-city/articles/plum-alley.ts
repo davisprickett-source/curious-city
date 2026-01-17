@@ -77,15 +77,12 @@ export const plumAlley: Article = {
           type: 'paragraph',
           content: 'The neighborhood that emerged was called Plum Alley — a narrow street, really, running between Second South and Third South. By the 1880s, it had become a self-contained world: Chinese groceries sold dried fish and preserved vegetables imported from San Francisco. Laundries served the broader city, since washing clothes was one of the few businesses white Salt Lakers would tolerate. Restaurants fed workers who couldn\'t cook for themselves. Gambling halls and opium dens operated semi-openly, tolerated by police who collected regular bribes.',
         },
-        {
-          type: 'image',
-          src: 'https://images.utaharchives.gov/digital/iiif/20120/12065/full/1160,/0/default.jpg',
-          alt: 'Men standing outside the Kwong Wah Yuen laundry in Plum Alley, circa 1910.',
-          caption: 'Men standing outside the Kwong Wah Yuen laundry in Plum Alley, circa 1910. Laundries were one of the few businesses Chinese immigrants were allowed to operate.',
-          credit: 'Utah State Historical Society',
-          width: 1160,
-          height: 871,
-        },
+          sources: [
+            {
+              title: 'Plum Alley: Murder and Racism in 1893',
+              url: 'https://archives.utah.gov/blog/plum-alley',
+            },
+          ],
         {
           type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chinese_temple_San_Francisco_1890s.jpg/1280px-Chinese_temple_San_Francisco_1890s.jpg',

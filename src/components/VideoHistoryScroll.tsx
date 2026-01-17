@@ -176,6 +176,42 @@ const FRAME_COUNTS: Record<string, number> = {
   'chicago-14': 78,
 }
 
+// Circular loading animation component
+function CircularLoader({ progress }: { progress: number }) {
+  const radius = 16
+  const circumference = 2 * Math.PI * radius
+  const strokeDashoffset = circumference - (progress / 100) * circumference
+
+  return (
+    <div className="absolute top-4 left-4 z-50">
+      <svg width="44" height="44" className="transform -rotate-90">
+        {/* Background circle */}
+        <circle
+          cx="22"
+          cy="22"
+          r={radius}
+          fill="none"
+          stroke="rgba(255,255,255,0.2)"
+          strokeWidth="3"
+        />
+        {/* Progress circle */}
+        <circle
+          cx="22"
+          cy="22"
+          r={radius}
+          fill="none"
+          stroke="#c65d3b"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
+          className="transition-all duration-300 ease-out"
+        />
+      </svg>
+    </div>
+  )
+}
+
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const storyContentRef = useRef<HTMLDivElement>(null)
@@ -184,9 +220,11 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const [currentFrame, setCurrentFrame] = useState(1)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
+  const [isCurrentFrameLoaded, setIsCurrentFrameLoaded] = useState(false)
   const loadedFramesRef = useRef<Set<string>>(new Set())
   const imagesRef = useRef<Map<string, HTMLImageElement>>(new Map())
   const [cityName, setCityName] = useState('')
+  const [firstFramePath, setFirstFramePath] = useState('')
 
   // Get city name
   useEffect(() => {
@@ -244,7 +282,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     return cdnUrl ? `${cdnUrl}${path}` : path
   }
 
-  // Preload frames progressively
+  // Preload frames progressively - first frame loads immediately
   useEffect(() => {
     const totalFramesToLoad: string[] = []
 
@@ -256,8 +294,25 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       }
     })
 
+    // Load first frame immediately
+    if (totalFramesToLoad.length > 0) {
+      const firstFrame = totalFramesToLoad[0]
+      setFirstFramePath(firstFrame)
+
+      const firstImg = new Image()
+      firstImg.onload = () => {
+        loadedFramesRef.current.add(firstFrame)
+        imagesRef.current.set(firstFrame, firstImg)
+        setIsCurrentFrameLoaded(true)
+      }
+      firstImg.src = firstFrame
+    }
+
     const totalFrames = totalFramesToLoad.length
     let loadedCount = 0
+
+    // Calculate the "initial load" threshold (10% of frames)
+    const initialLoadThreshold = Math.ceil(totalFrames * 0.1)
 
     const loadBatch = async (startIdx: number, batchSize: number) => {
       const batch = totalFramesToLoad.slice(startIdx, startIdx + batchSize)
@@ -276,7 +331,9 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
               loadedFramesRef.current.add(framePath)
               imagesRef.current.set(framePath, img)
               loadedCount++
-              setLoadingProgress(Math.round((loadedCount / totalFrames) * 100))
+              // Scale progress: 0-10% of actual frames = 0-100% visual progress
+              const scaledProgress = Math.min(100, Math.round((loadedCount / initialLoadThreshold) * 100))
+              setLoadingProgress(scaledProgress)
               resolve()
             }
             img.onerror = () => {
@@ -288,10 +345,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         })
       )
 
+      // Stop showing loading UI once we hit the threshold
+      if (loadedCount >= initialLoadThreshold) {
+        setIsLoading(false)
+      }
+
       if (startIdx + batchSize < totalFrames) {
         setTimeout(() => loadBatch(startIdx + batchSize, batchSize), 10)
-      } else {
-        setIsLoading(false)
       }
     }
 
@@ -410,6 +470,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   // Always use full opacity to prevent flashing on scroll - frames load fast enough
   const frameOpacity = 1
 
+  // Check if user has scrolled ahead of loaded frames
+  const isFrameLoaded = loadedFramesRef.current.has(framePath)
+  const showLoadingOverlay = isLoading || (!isFrameLoaded && framePath !== '')
+
+  // Use first frame as fallback if current frame isn't loaded
+  const displayPath = isFrameLoaded ? framePath : (firstFramePath || framePath)
+
   return (
     <>
       {/* Navigation - simplified on mobile, full UnifiedNav on desktop */}
@@ -471,9 +538,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       {/* Split Screen Section */}
       <div className="lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Fixed on all screens) */}
-        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:h-[calc(100vh-57px)] bg-white flex items-center justify-center z-20 will-change-transform">
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:h-[calc(100vh-57px)] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
+          {/* Always show an image - use first frame as fallback */}
           <img
-            src={framePath}
+            src={displayPath}
             alt=""
             className="w-full h-full object-cover lg:object-contain will-change-transform"
             style={{
@@ -482,9 +550,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
             }}
           />
 
-          {isLoading && loadingProgress < 10 && (
-            <div className="absolute inset-0 flex items-center justify-center bg-neutral-900">
-              <span className="text-neutral-400 text-sm">{loadingProgress}%</span>
+          {/* Loading overlay with circular progress */}
+          {showLoadingOverlay && (
+            <div className="absolute inset-0 bg-neutral-900/60 transition-opacity duration-300">
+              <CircularLoader progress={loadingProgress} />
             </div>
           )}
         </div>

@@ -162,10 +162,10 @@ export const denver: CityData = {
           ],
           sources: [
             {
-              title: 'The Inventor of the Cheeseburger',
+              title: 'Who Invented the Cheeseburger?',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/who-invented-cheeseburger',
-            }
+              url: 'https://en.wikipedia.org/wiki/Cheeseburger#History',
+            },
           ],
           location: {
             name: 'Humpty Dumpty Drive-In (Site)',
@@ -397,8 +397,8 @@ export const denver: CityData = {
             {
               title: 'The Tunnels of Downtown Denver',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/tunnels-downtown-denver',
-            }
+              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels',
+            },
           ],
           location: {
             name: 'Downtown Denver Tunnels',
@@ -680,10 +680,10 @@ export const denver: CityData = {
           price: 'Free',
           sources: [
             {
-              title: 'Cheesman Park’s Past Life as a Cemetery',
+              title: 'Cheesman Park\'s Past Life...as a Cemetery',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-life-cemetery',
-            }
+              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-lifeas-cemetery',
+            },
           ],
           tip: 'Most park-goers have no idea they\'re walking over a cemetery',
         },
@@ -1521,30 +1521,9 @@ export const denver: CityData = {
           },
           sources: [
             {
-              type: 'article',
-              title: 'The Lumber Baron Inn Murders: Denver\'s Most Infamous Cold Case',
-              publisher: 'All That\'s Interesting',
-              url: 'https://allthatsinteresting.com/lumber-baron-inn-murders',
-            },
-            {
-              type: 'documentary',
-              title: '28 Days Haunted',
-              platform: 'Netflix',
-              year: '2022',
-              url: 'https://www.netflix.com/title/81220446',
-            },
-            {
-              type: 'article',
-              title: 'The Haunting of Lumber Baron Inn',
-              publisher: 'Denver Terrors',
-              url: 'https://www.denverpublicartandhistory.org/lumber-baron-inn',
-            },
-            {
-              type: 'podcast',
-              title: 'The Lumber Baron Inn Murders',
-              show: 'Mile High Murder Podcast',
-              platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/2bLumber',
+              title: 'The Lumber Baron Inn',
+              publisher: 'Denver Public Art & History',
+              url: 'https://www.lumberbaron.com/history',
             },
           ],
         },
@@ -1568,10 +1547,9 @@ export const denver: CityData = {
           },
           sources: [
             {
-              type: 'article',
-              title: 'Alferd Packer: Truth Out There, or Right Here',
+              title: 'Alferd Packer: The Truth is Out There',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/western-history/alferd-packer-truth-out-there-or-right-here',
+              url: 'https://www.historycolorado.org/story/western-history/2017/08/31/alferd-packer-man-eater',
             },
             {
               type: 'article',
@@ -1690,11 +1668,6 @@ export const denver: CityData = {
           sources: [
             {
               title: 'Murder at the Brown Palace',
-              publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/brown-palace-murder',
-            },
-            {
-              title: 'The Brown Palace Seduction and Betrayal',
               publisher: '5280 Magazine',
               url: 'https://www.5280.com/2011/05/murder-at-the-brown-palace/',
             },

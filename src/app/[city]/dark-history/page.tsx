@@ -95,9 +95,9 @@ export default async function CityDarkHistoryPage({ params, searchParams }: Page
                 {section?.title || `${city.name}'s Dark History`}
               </h1>
 
-              {/* Teaser/Hook in Italics */}
+              {/* Teaser/Hook in Italics - Rust colored */}
               {section?.teaser && (
-                <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
+                <p className="text-xl md:text-2xl text-[#c65d3b] italic leading-relaxed mb-8">
                   {section.teaser}
                 </p>
               )}

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Lora } from 'next/font/google'
+import { DM_Sans, Fraunces } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider'
@@ -8,16 +8,23 @@ import { SkipToContent } from '@/components/SkipToContent'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Analytics } from '@vercel/analytics/react'
 
-const inter = Inter({
+// DM Sans - Clean, modern sans-serif for body text
+// Highly readable, geometric, professional
+const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
+  weight: ['400', '500', '600', '700'],
 })
 
-const lora = Lora({
+// Fraunces - Old-style soft serif for headings
+// Has a quirky, curious, vintage newspaper feel perfect for "Curious City"
+// The "wonk" in Fraunces adds character and warmth
+const fraunces = Fraunces({
   subsets: ['latin'],
   variable: '--font-serif',
   display: 'swap',
+  weight: ['400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
@@ -80,7 +87,7 @@ export default function RootLayout({
   const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
 
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{

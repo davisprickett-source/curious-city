@@ -244,7 +244,7 @@ export const phoenix: CityData = {
           sources: [
             {
               title: 'Pueblo Grande Museum: Hohokam Canal System',
-              url: 'https://www.pueblogrande.com/explore/canal-system',
+              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html',
             },
             {
               title: 'Salt River Project: Canal History',
@@ -333,7 +333,7 @@ export const phoenix: CityData = {
           sources: [
             {
               title: 'Pueblo Grande Museum: Hohokam Astronomy',
-              url: 'https://www.pueblogrande.com/learn/hohokam-astronomy',
+              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html',
             },
             {
               title: 'Phoenix Parks: Papago Park Hole in the Rock Trail',
@@ -1382,10 +1382,10 @@ export const phoenix: CityData = {
             },
             {
               type: 'article',
-              title: 'Winnie Ruth Judd: Arizona\'s Most Infamous Murderess',
-              publisher: 'AZ Central',
-              year: '2018',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2018/10/16/winnie-ruth-judd-trunk-murderess-arizona-notorious-crime/1653773002/',
+              title: 'The Winnie Ruth Judd Story',
+              publisher: 'Phoenix Magazine',
+              year: '2019',
+              url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/',
             },
             {
               type: 'documentary',
@@ -1526,7 +1526,7 @@ export const phoenix: CityData = {
               title: 'The Ghost of Hotel San Carlos',
               publisher: 'AZ Central',
               year: '2017',
-              url: 'https://www.azcentral.com/story/entertainment/events/halloween/2017/10/25/hotel-san-carlos-most-haunted-phoenix/795732001/',
+              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/',
             },
             {
               type: 'article',
@@ -1576,53 +1576,16 @@ export const phoenix: CityData = {
           verdict: 'The only American journalist assassinated by car bomb. The full truth died with Marley.',
           sources: [
             {
-              type: 'book',
-              title: 'The Arizona Project: How a Team of Journalists Avenged Don Bolles',
-              author: 'Michael F. Wendland',
-              isbn: '9781893329218',
-              year: '1977',
-              url: 'https://www.amazon.com/Arizona-Project-Journalists-Avenged-Bolles/dp/1893329216',
-            },
-            {
-              type: 'book',
-              title: 'Loud and Clear: Murder of Don Bolles',
-              author: 'John Winters',
-              isbn: '9780803897304',
-              year: '1990',
-              url: 'https://www.amazon.com/Loud-Clear-Murder-Don-Bolles/dp/0803897308',
-            },
-            {
               type: 'article',
-              title: 'The Arizona Project: Justice for Don Bolles',
-              publisher: 'Investigative Reporters and Editors',
+              title: 'Don Bolles: The Arizona Project',
+              publisher: 'IRE',
               url: 'https://www.ire.org/arizona-project/',
             },
             {
               type: 'article',
-              title: 'Don Bolles: The Investigative Reporter Who Died for the Truth',
-              publisher: 'AZ Central',
-              year: '2016',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2016/06/02/don-bolles-murder-40-years/84966698/',
-            },
-            {
-              type: 'podcast',
-              title: 'Killing the Messenger: The Assassination of Don Bolles',
-              show: 'Reveal',
-              platform: 'NPR',
-              url: 'https://revealnews.org/podcast/killing-the-messenger/',
-            },
-            {
-              type: 'documentary',
-              title: 'The Assassination of Don Bolles',
-              platform: '12 News',
-              year: '2016',
-              url: 'https://www.12news.com/don-bolles',
-            },
-            {
-              type: 'video',
-              title: 'Don Bolles: The Journalist Who Died Investigating the Mafia',
-              platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=1RX8D3vXHfE',
+              title: 'Don Bolles',
+              publisher: 'Arizona State Library',
+              url: 'https://azlibrary.gov/dazl/don-bolles',
             },
           ],
           location: {
@@ -1764,7 +1727,7 @@ export const phoenix: CityData = {
               title: 'The Orpheum Theatre: Phoenix\'s Historic Haunted Theater',
               publisher: 'Visit Phoenix',
               year: '2022',
-              url: 'https://www.visitphoenix.com/blog/orpheum-theatre-haunted/',
+              url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854',
             },
             {
               type: 'podcast',
@@ -1820,7 +1783,7 @@ export const phoenix: CityData = {
               publisher: 'Phoenix New Times',
               author: 'Robert Anglen',
               year: '2017',
-              url: 'https://www.phoenixnewtimes.com/news/maryvale-serial-shooter-aaron-saucedo-9260923',
+              url: 'https://kjzz.org/content/473111/everything-we-know-about-maryvale-serial-shooter-suspect-aaron-saucedo',
             },
             {
               type: 'article',
@@ -1955,11 +1918,9 @@ export const phoenix: CityData = {
             },
             {
               type: 'article',
-              title: 'The Hunt for Robert Fisher: Two Decades Later',
-              publisher: 'AZ Central',
-              author: 'Robert Anglen',
-              year: '2022',
-              url: 'https://www.azcentral.com/story/news/local/scottsdale/2022/04/10/robert-fisher-scottsdale-triple-murder-20-years-later/9469816002/',
+              title: 'FBI Top Ten Wanted: Robert William Fisher',
+              publisher: 'FBI',
+              url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher',
             },
             {
               type: 'article',

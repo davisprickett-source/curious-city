@@ -90,7 +90,7 @@ export default async function CityHiddenGemsPage({ params }: PageProps) {
 
                 {/* Teaser/Hook in Italics */}
                 {section?.teaser && (
-                  <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-8">
+                  <p className="text-xl md:text-2xl text-[#c65d3b] italic leading-relaxed mb-8">
                     {section.teaser}
                   </p>
                 )}

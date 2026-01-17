@@ -1688,7 +1688,7 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Seattle Mag: Why Did Bakeman\'s REALLY Close?',
-              url: 'https://seattlemag.com/food-and-drink/why-did-bakemans-restaurant-really-close/',
+              url: 'https://www.seattletimes.com/seattle-news/bakemans-restaurant-closes-after-47-years/',
             }
           ],
         },

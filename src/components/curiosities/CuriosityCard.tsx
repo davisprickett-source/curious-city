@@ -202,7 +202,7 @@ function MetadataBox({ item }: { item: CuriosityItem }) {
   if (!hasMetadata) return null
 
   return (
-    <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4">
+    <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-8 lg:-mx-10 px-8 lg:px-10 py-4">
       <div className="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto_1fr] gap-x-8 gap-y-4">
         {/* Location */}
         {item.location && (

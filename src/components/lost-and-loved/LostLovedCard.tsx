@@ -164,7 +164,7 @@ function MetadataBox({ item }: { item: LostLovedItem }) {
   if (!hasMetadata) return null
 
   return (
-    <div className="bg-gradient-to-br from-neutral-50 to-amber-50/30 border border-neutral-200 rounded-xl p-6 shadow-sm">
+    <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-8 lg:-mx-10 px-8 lg:px-10 py-4">
       <div className="space-y-4">
         {item.lastAddress && (
           <div>

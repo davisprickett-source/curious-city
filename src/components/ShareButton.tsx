@@ -182,15 +182,15 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-200 ${
-                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+              className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-150 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'
               }`}
               style={{
-                transitionDelay: isOpen ? `${index * 50}ms` : '0ms',
+                transitionDelay: isOpen ? `${index * 20}ms` : '0ms',
               }}
             >
-              <span className="text-neutral-400 group-hover:text-white/90 transition-colors duration-200">{link.icon}</span>
-              <span className="group-hover:translate-x-0.5 transition-transform duration-200">{link.name}</span>
+              <span className="text-neutral-400 group-hover:text-white/90 transition-colors duration-150">{link.icon}</span>
+              <span className="group-hover:translate-x-0.5 transition-transform duration-150">{link.name}</span>
             </a>
           ))}
         </div>
@@ -201,11 +201,11 @@ export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 
               e.preventDefault()
               handleCopyLink()
             }}
-            className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-200 w-full text-left ${
-              isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+            className={`group flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b] hover:text-white transition-all duration-150 w-full text-left ${
+              isOpen ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'
             }`}
             style={{
-              transitionDelay: isOpen ? `${shareLinks.length * 50}ms` : '0ms',
+              transitionDelay: isOpen ? `${shareLinks.length * 20}ms` : '0ms',
             }}
           >
             <span className="text-neutral-400 group-hover:text-white/90 transition-colors duration-200">

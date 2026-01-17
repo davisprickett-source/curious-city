@@ -106,16 +106,12 @@ export const raleigh: CityData = {
                                   ],
                                   sources: [
                                     {
-                                      title: 'The Village Underground: Raleigh\'s Legendary Punk Scene',
-                                      url: 'https://hiddenhistorian.com/the-village-underground-raleighs-legendary-punk-scene',
+                                      title: 'The Village Subway',
+                                      url: 'https://en.wikipedia.org/wiki/The_Village_Subway',
                                     },
                                     {
                                       title: 'The Raleigh Underground: A Lost Phenomenon',
                                       url: 'http://goodnightraleigh.com/2008/07/the-raleigh-underground-a-lost-phenomenon/',
-                                    },
-                                    {
-                                      title: 'The Raleigh Underground: An Abandoned Mall Right Beneath Our Feet',
-                                      url: 'https://www.candidslice.com/the-raleigh-underground-an-abandoned-mall-right-beneath-our-feet/',
                                     },
                                   ],
                                   location: { name: 'Village District (Cameron Village)',
@@ -2077,7 +2073,7 @@ export const raleigh: CityData = {
               title: 'The Haunted History of the North Carolina State Capitol',
               publisher: 'Midtown Raleigh News',
               year: '2018',
-              url: 'https://www.midtownraleighnews.com/2018/10/25/the-haunted-history-of-the-north-carolina-state-capitol/',
+              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-state-capitol/',
             },
             {
               type: 'article',
@@ -2184,7 +2180,7 @@ export const raleigh: CityData = {
               type: 'article',
               title: 'Oakwood Cemetery: History and Hauntings',
               publisher: 'Raleigh Historic',
-              url: 'https://raleighhistoric.org/oakwood-cemetery/',
+              url: 'https://historicoakwoodcemetery.org/',
             },
             {
               type: 'article',
@@ -2261,33 +2257,16 @@ export const raleigh: CityData = {
           title: 'The Staircase Built by Buried Treasure',
           body: 'The Briggs Hardware Building was Raleigh\'s first "skyscraper" when it opened in 1874—four stories of red brick topped with decorative lion heads. Thomas Briggs supposedly built it with gold and silver coins he\'d buried before Union soldiers arrived, spending years after the war digging to find them. The building housed the city\'s first YMCA, its first Catholic Church, and the Raleigh Little Theatre. Now it\'s the City of Raleigh Museum. And it\'s haunted by Grace—a child who fell to her death on the impossibly steep staircase still visible from the street. Ghost tour guests have photographed a shadowy figure sitting at the bottom of those stairs. The staircase looks exactly like something from a horror film: nearly vertical, open-backed, designed by someone who clearly hated children. Grace apparently agrees.',
           verdict: 'The Briggs Building is a featured stop on every Raleigh ghost tour. The stairs remain terrifyingly steep. The ghost remains patient.',
-          sources: [
-            {
-              type: 'article',
-              title: 'The Haunted History of the Briggs Hardware Building',
-              publisher: 'Raleigh Historic',
-              url: 'https://raleighhistoric.org/briggs-hardware-building/',
-            },
-            {
-              type: 'article',
-              title: 'Grace\'s Staircase: The Most Haunted Stairs in Town',
-              publisher: 'Tobacco Road Tours',
-              url: 'https://tobaccoroadtours.com/briggs-hardware-haunted/',
-            },
-            {
-              type: 'article',
-              title: 'The Ghost of Grace at Briggs Building',
-              publisher: 'This Is Raleigh',
-              year: '2020',
-              url: 'https://thisisraleigh.com/briggs-building-ghost-grace/',
-            },
-            {
-              type: 'article',
-              title: 'City of Raleigh Museum: History and Hauntings',
-              publisher: 'Visit Raleigh',
-              url: 'https://www.visitraleigh.com/blog/post/briggs-hardware-building-ghost/',
-            },
-          ],
+                                  sources: [
+                                    {
+                                      title: 'Briggs Hardware Building',
+                                      url: 'https://en.wikipedia.org/wiki/Briggs_Hardware_Building',
+                                    },
+                                    {
+                                      title: 'The Ghost of Grace Briggs',
+                                      url: 'https://thisisraleigh.com/briggs-building-ghost-grace/',
+                                    },
+                                  ],
           location: {
             name: 'Briggs Hardware Building, 220 Fayetteville St',
       url: 'https://www.google.com/maps/search/?api=1&query=Briggs%20Hardware%20Building%2C%20220%20Fayetteville%20St%20Raleigh',

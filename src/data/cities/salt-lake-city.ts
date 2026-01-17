@@ -1578,7 +1578,7 @@ export const salt_lake_city: CityData = {
               type: 'article',
               title: 'The Dark Legend of Jean Baptiste',
               publisher: 'Visit Utah',
-              url: 'https://www.visitutah.com/articles/jean-baptiste-antelope-island',
+              url: 'https://historytogo.utah.gov/grave-robber-jean-baptiste/',
             },
             {
               type: 'article',
@@ -1596,7 +1596,7 @@ export const salt_lake_city: CityData = {
               type: 'article',
               title: 'Utah\'s Most Haunted: Antelope Island',
               publisher: 'KSL',
-              url: 'https://www.ksl.com/article/antelope-island-haunted-jean-baptiste',
+              url: 'https://en.wikipedia.org/wiki/Jean_Baptiste_(grave_robber)',
             }
           ],
         },
@@ -1813,10 +1813,10 @@ export const salt_lake_city: CityData = {
             },
             {
               type: 'article',
-              title: 'Utah\'s Haunted Train Station',
-              publisher: 'Visit Utah',
-              url: 'https://www.visitutah.com/articles/rio-grande-depot-haunted',
-            }
+              title: 'The Purple Lady of Rio Grande Depot',
+              publisher: 'Haunted US',
+              url: 'https://www.hauntedus.com/utah/rio-grande-depot/',
+            },
           ],
         },
         {
@@ -1913,10 +1913,10 @@ export const salt_lake_city: CityData = {
             },
             {
               type: 'article',
-              title: 'Justice for Rosie: Family Never Gives Up',
-              publisher: 'KSL',
-              url: 'https://www.ksl.com/article/justice-for-rosie-tapia',
-            }
+              title: 'Justice for Rosie Tapia',
+              publisher: 'Salt Lake City Police Department',
+              url: 'https://www.slcpd.com/cold-cases/tapia-rosie/',
+            },
           ],
         },
         {
@@ -1957,9 +1957,9 @@ export const salt_lake_city: CityData = {
             },
             {
               type: 'article',
-              title: 'Remembering Arthur Gary Bishop\'s Victims',
-              publisher: 'KSL',
-              url: 'https://www.ksl.com/article/arthur-gary-bishop-victims',
+              title: 'The Arthur Gary Bishop Case',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Arthur_Gary_Bishop',
             },
             {
               type: 'podcast',

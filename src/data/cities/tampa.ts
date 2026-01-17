@@ -555,8 +555,9 @@ export const tampa: CityData = {
           tip: 'Look up — they\'re painted high on building sides between 13th-15th Streets',
           sources: [
             {
-              title: 'Ybor City\'s Fading Advertisements',
-              url: 'https://yborcityonline.com/history/ybor-city-ghost-signs/',
+              title: 'Old Signs of Ybor',
+              publisher: 'Tampa Bay Times',
+              url: 'https://www.tampabay.com/news/humaninterest/old-signs-around-tampa-bay-are-a-mix-of-art-history-lessons/2234415/',
             },
           ],
         },
@@ -1434,9 +1435,9 @@ export const tampa: CityData = {
             },
             {
               type: 'article',
-              title: 'Bring On The Kid With The Ax - Reefer Madness!',
-              publisher: 'Reefer Madness Museum',
-              url: 'http://www.reefermadness.org/propaganda/kidax.html',
+              title: 'How an Axe Murderer Helped Make Weed Illegal',
+              publisher: 'FEE',
+              url: 'https://fee.org/articles/how-an-axe-murderer-helped-make-weed-illegal/',
             },
             {
               type: 'book',

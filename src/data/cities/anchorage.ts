@@ -295,8 +295,8 @@ export const anchorage: CityData = {
             {
               type: 'article',
               title: 'Anchorage School District Language Demographics',
-              publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Mountain_View,_Anchorage',
             },
           ],
         },
@@ -823,7 +823,14 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2175, lng: -149.8878 },
           price: '$$',
           hours: 'Temporarily closed',
-          website: 'https://williwawsocial.com/blues-central/',
+          website: 'https://williwawsocial.com/',
+          sources: [
+            {
+              title: 'Blues Central',
+              publisher: 'Williwaw Social',
+              url: 'https://williwawsocial.com/',
+            },
+          ],
           instagram: '@williwawsocial',
           images: [
             {
@@ -1578,9 +1585,9 @@ export const anchorage: CityData = {
             },
             {
               type: 'article',
-              title: 'Fourth Avenue: Anchorage\'s Dark Past',
-              publisher: 'Alaska Public Media',
-              url: 'https://alaskapublic.org/2012/02/24/4th-avenue-the-street-that-was-a-town/',
+              title: 'Fourth Avenue Theatre',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Fourth_Avenue_Theatre',
             },
             {
               type: 'video',
@@ -1628,11 +1635,10 @@ export const anchorage: CityData = {
               url: 'https://www.aknwrc.org/',
             },
             {
-              type: 'documentary',
-              title: 'Somebody\'s Daughter',
-              platform: 'Native News Online',
-              year: '2021',
-              url: 'https://nativenewsonline.net/currents/somebody-s-daughter-documentary-about-mmiw-crisis-premieres-tonight',
+              type: 'article',
+              title: 'Somebody\'s Daughter: Documentary about MMIW Crisis',
+              publisher: 'Somebody\'s Daughter MMIW',
+              url: 'https://somebodysdaughter-mmiw.com/',
             },
             {
               type: 'article',
@@ -1684,9 +1690,9 @@ export const anchorage: CityData = {
             },
             {
               type: 'article',
-              title: 'The Fandell Siblings: Alaska\'s Unsolved Mystery',
-              publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/article/what-happened-scott-and-amy-fandel/2013/09/05/',
+              title: 'Case File: Scott and Amy Fandel',
+              publisher: 'The Charley Project',
+              url: 'https://charleyproject.org/case/scott-fandel',
             },
             {
               type: 'video',
@@ -1777,9 +1783,9 @@ export const anchorage: CityData = {
           sources: [
             {
               type: 'article',
-              title: 'Alaska\'s Eklutna Annie remains unidentified 40 years later',
-              publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/crime-courts/2020/07/21/alaskas-eklutna-annie-remains-unidentified-40-years-later/',
+              title: 'Cold Case: Eklutna Annie',
+              publisher: 'Alaska State Troopers',
+              url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
             },
             {
               type: 'article',
@@ -1920,10 +1926,9 @@ export const anchorage: CityData = {
           sources: [
             {
               type: 'article',
-              title: 'Alaska Underworld: Torso Cases Remain Unsolved',
-              publisher: 'Anchorage Daily News',
-              year: '2009',
-              url: 'https://www.adn.com/alaska-news/article/alaska-underworld-more-than-5-years-after-torsos-wash-anchorage-cases-remain-unsolved/2009/01/22/',
+              title: 'Unsolved Murders of John Doe and Jane Doe',
+              publisher: 'True Crime Diva',
+              url: 'https://truecrimediva.com/unsolved-murders-of-john-doe-and-jane-doe-anchorage-alaska/',
             },
             {
               type: 'article',

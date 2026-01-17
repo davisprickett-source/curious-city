@@ -994,13 +994,13 @@ export const portland: CityData = {
           coordinates: { lat: 45.5236, lng: -122.6606 },
           hours: 'Mon-Sat 9am-5:30pm',
           price: 'Free',
-          website: 'https://starks.com/about-us/',
+          website: 'https://starks.com/vacuum-museum/',
           tip: 'Ask staff to show you the museum section - easy to miss',
           sources: [
             {
               title: 'Stark\'s Vacuum Museum',
               publisher: 'Stark\'s Vacuums',
-              url: 'https://starks.com/about-us/',
+              url: 'https://starks.com/vacuum-museum/',
             }
           ],
         },
@@ -1552,7 +1552,7 @@ export const portland: CityData = {
               type: 'article',
               title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
               publisher: 'OPB',
-              url: 'https://www.opb.org/article/2021/10/31/portland-shanghai-tunnels-history-myth/',
+              url: 'https://shanghaitunnels.com',
             },
             {
               type: 'video',
@@ -1893,9 +1893,9 @@ export const portland: CityData = {
             },
             {
               type: 'article',
-              title: 'The Forgotten Asylum Patients of Lone Fir',
-              publisher: 'Portland Mercury',
-              url: 'https://www.portlandmercury.com/BlogtownPDX/archives/2017/10/26/the-forgotten-asylum-patients-of-lone-fir-cemetery',
+              title: 'Lone Fir Cemetery: Cultural Heritage Garden',
+              publisher: 'Oregon Metro',
+              url: 'https://www.oregonmetro.gov/projects/lone-fir-cemetery-cultural-heritage-garden',
             },
             {
               type: 'video',

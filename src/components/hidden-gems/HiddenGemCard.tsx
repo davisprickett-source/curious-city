@@ -133,7 +133,7 @@ function DetailsBox({ gem }: { gem: HiddenGemItem }) {
   if (!hasDetails) return null
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-neutral-200">
+    <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-8 lg:-mx-10 px-8 lg:px-10 py-4 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
       {gem.address && (() => {
         const addressParts = gem.address.split(', ')
         const streetAddress = addressParts[0]

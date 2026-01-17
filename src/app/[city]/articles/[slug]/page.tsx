@@ -175,7 +175,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
 
                   {/* Subtitle/Hook in Italics */}
                   {article.subtitle && (
-                    <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed">
+                    <p className="text-xl md:text-2xl text-[#c65d3b] italic leading-relaxed">
                       {article.subtitle}
                     </p>
                   )}
@@ -206,17 +206,29 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
           </article>
 
           {/* End of Article Flow */}
-          <div className="container-page py-12 space-y-8">
-            {/* 1. Share (bottom) */}
-            <ShareLinks title={article.title} url={url} />
+          <div className="container-page py-12 space-y-12">
+            {/* Divider */}
+            <div className="border-t border-neutral-200" />
 
-            {/* 2. Subscribe */}
-            <NewsletterSignup />
+            {/* Share and Subscribe - Two columns */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Share Section */}
+              <div className="bg-neutral-50 rounded-2xl p-6 sm:p-8 border border-neutral-200">
+                <h3 className="text-xl font-bold text-neutral-900 mb-4">Share this story</h3>
+                <p className="text-sm text-neutral-600 mb-4">Know someone who&apos;d enjoy this?</p>
+                <ShareLinks title={article.title} url={url} />
+              </div>
 
-            {/* 3. Explore More */}
+              {/* Newsletter Section */}
+              <div className="bg-neutral-50 rounded-2xl p-6 sm:p-8 border border-neutral-200">
+                <NewsletterSignup />
+              </div>
+            </div>
+
+            {/* Explore More */}
             <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
 
-            {/* 4. Feedback */}
+            {/* Feedback */}
             <FeedbackSection pageTitle={article.title} />
           </div>
         </main>

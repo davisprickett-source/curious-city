@@ -199,9 +199,9 @@ export const chicago: CityData = {
               url: 'https://www.britannica.com/biography/James-Jesse-Strang',
             },
             {
-              title: 'The Pirate King of Lake Michigan',
-              publisher: 'Michigan Radio',
-              url: 'https://www.michiganradio.org/history/2015-07-20/the-pirate-king-of-lake-michigan',
+              title: 'The King of Beaver Island',
+              publisher: 'Smithsonian Magazine',
+              url: 'https://www.smithsonianmag.com/history/the-king-of-beaver-island-362252/',
             }
           ],
           location: {
@@ -283,11 +283,6 @@ export const chicago: CityData = {
               publisher: 'Chicago History Museum',
               url: 'https://www.chicagohistory.org/the-raising-of-chicago/',
             },
-            {
-              title: 'Raising Chicago',
-              publisher: 'Enjoy Illinois',
-              url: 'https://www.enjoyillinois.com/illinois-200/raising-chicago/',
-            },
           ],
           location: {
             name: 'Downtown Chicago (Briggs House Site)',
@@ -350,7 +345,7 @@ export const chicago: CityData = {
             {
               title: 'The Great Loop Flood of 1992',
               publisher: 'WTTW Chicago',
-              url: 'https://www.wttw.com/chicago-stories/downtown-disasters/a-comedy-of-errors-how-a-small-leak-became-the-great-loop-flood-of-1992',
+              url: 'https://interactive.wttw.com/ten/disasters/chicago-flood',
             },
             {
               title: 'Why The 1992 Loop Flood Is The Most Chicago Story Ever',
@@ -770,7 +765,7 @@ export const chicago: CityData = {
           coordinates: { lat: 41.8781, lng: -87.6298 },
           hours: 'Not accessible to public',
           price: 'Not accessible',
-          website: 'https://chicagology.com/transportation/freighttunnels/',
+          website: 'https://chicagodetours.com/chicago-underground-freight-tunnels/',
           sources: [
             {
               title: 'The Great Chicago Flood',
@@ -970,9 +965,9 @@ export const chicago: CityData = {
           price: 'Free to observe',
           sources: [
             {
-              title: 'State & Adams Ice Water Factory',
-              publisher: 'Forgotten Chicago',
-              url: 'http://forgottenchicago.com/features/the-state-adams-ice-water-factory/',
+              title: 'State & Adams Street Cooling Plant',
+              publisher: 'Eckenhoff Saunders',
+              url: 'https://esadesign.com/projects/state-and-adams-street-district-cooling-plant/',
             }
           ],
           tip: 'Stand across the street and count the windows — then realize what you\'re looking at.',
@@ -2417,10 +2412,10 @@ export const chicago: CityData = {
             },
             {
               type: 'article',
-              title: '60 Years Later: The Grimes Sisters Mystery',
-              publisher: 'Chicago Sun-Times',
-              year: '2016',
-              url: 'https://chicago.suntimes.com/news/grimes-sisters-60-years-unsolved/',
+              title: 'The Grimes Sisters: Chicago\'s Most Haunting Cold Case',
+              publisher: 'Chicago Magazine',
+              year: '2013',
+              url: 'https://www.chicagomag.com/chicago-magazine/november-2013/grimes-sisters/',
             },
             {
               type: 'podcast',
@@ -2503,13 +2498,6 @@ export const chicago: CityData = {
               publisher: 'WTTW Chicago',
               year: '2018',
               url: 'https://interactive.wttw.com/ten/disasters/our-lady-angels-school-fire',
-            },
-            {
-              type: 'documentary',
-              title: 'Angels Too Soon: The School Fire of \'58',
-              platform: 'PBS/WTTW',
-              year: '2008',
-              url: 'https://www.wttw.com/chicago-stories/angels-too-soon',
             },
             {
               type: 'video',
@@ -2637,9 +2625,9 @@ export const chicago: CityData = {
             {
               type: 'article',
               title: 'American Airlines Flight 191: 40 Years Later',
-              publisher: 'Chicago Tribune',
+              publisher: 'History.com',
               year: '2019',
-              url: 'https://www.chicagotribune.com/news/ct-american-airlines-crash-flight-191-met-20190524-story.html',
+              url: 'https://www.history.com/this-day-in-history/american-airlines-plane-crashes-in-chicago',
             },
             {
               type: 'article',
@@ -2703,11 +2691,11 @@ export const chicago: CityData = {
           sources: [
             {
               type: 'book',
-              title: 'The Poisoner: The Life and Crimes of Victorian England\'s Most Notorious Doctor',
-              author: 'Stephen Bates',
-              isbn: '9781468316353',
-              year: '2014',
-              url: 'https://www.amazon.com/Poisoner-Crimes-Victorian-Notorious-Doctor/dp/1468316354',
+              title: 'The Tylenol Murders: 40 Years of Mystery',
+              author: 'The Chicago Tribune',
+              isbn: '9781572843233',
+              year: '2022',
+              url: 'https://www.amazon.com/Tylenol-Murders-Years-Mystery-Investigation/dp/157284323X',
             },
             {
               type: 'article',
