@@ -127,15 +127,15 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
     }
   }, [inView, index, onSectionInView])
 
-  // Animation variants
+  // Animation variants - slower, more engaging
   const contentVariants = {
     hidden: { opacity: 0, x: isEven ? -60 : 60 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
-        delay: 0.4,
+        duration: 1,
+        delay: 0.3,
         ease: [0.16, 1, 0.3, 1] as const,
       },
     },
@@ -172,7 +172,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
               {/* What Happened / Verdict */}
               {item.verdict && (
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
-                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">
+                  <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                     What Happened
                   </h4>
                   <p className="text-neutral-800 leading-relaxed">{item.verdict}</p>
@@ -209,7 +209,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
               {/* Location */}
               {item.location && (
                 <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
-                  <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Location</h4>
+                  <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">Location</h4>
                   <div className="flex items-start gap-2">
                     <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -328,7 +328,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
             {/* What Happened / Verdict */}
             {item.verdict && (
               <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
-                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">
+                <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                   What Happened
                 </h4>
                 <p className="text-neutral-800 leading-relaxed">{item.verdict}</p>
@@ -365,7 +365,7 @@ function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug
             {/* Location */}
             {item.location && (
               <div className="bg-neutral-900/5 border border-neutral-200 rounded-xl px-5 py-4 mb-6">
-                <h4 className="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-2">Location</h4>
+                <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">Location</h4>
                 <div className="flex items-start gap-2">
                   <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

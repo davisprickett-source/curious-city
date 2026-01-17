@@ -90,9 +90,14 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
         <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
           <div className="container-page py-12 md:py-16">
             <div className="max-w-3xl mx-auto">
-              {/* Share Button at Top */}
-              <div className="mb-6">
-                <ShareButton title={`${city.name}'s Curiosities`} url={url} />
+              {/* Share Button at Top - aligned right */}
+              <div className="mb-6 flex justify-end">
+                <ShareButton
+                  title={`${city.name}'s Curiosities`}
+                  url={url}
+                  dropdownPosition="below"
+                  onDark
+                />
               </div>
 
               {/* Title */}

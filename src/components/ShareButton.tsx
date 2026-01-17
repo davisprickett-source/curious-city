@@ -7,6 +7,8 @@ interface ShareButtonProps {
   url?: string
   anchor?: string // Optional anchor ID for deep linking (e.g., "gem-underground-3")
   shareText?: string // Optional compelling text for social shares (uses description/hook)
+  dropdownPosition?: 'above' | 'below' // Where to show dropdown (default: above)
+  onDark?: boolean // Whether button is on dark background
 }
 
 /**
@@ -17,8 +19,10 @@ interface ShareButtonProps {
  * @param url - Optional base URL (defaults to current page)
  * @param anchor - Optional anchor ID to append as hash fragment for deep linking
  * @param shareText - Optional compelling text for Twitter/social (e.g., entry description)
+ * @param dropdownPosition - 'above' or 'below' (default: above)
+ * @param onDark - Use light colors for dark backgrounds
  */
-export function ShareButton({ title, url, anchor, shareText }: ShareButtonProps) {
+export function ShareButton({ title, url, anchor, shareText, dropdownPosition = 'above', onDark = false }: ShareButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -128,6 +132,16 @@ export function ShareButton({ title, url, anchor, shareText }: ShareButtonProps)
     },
   ]
 
+  // Button colors based on background
+  const buttonColors = onDark
+    ? 'text-white/90 hover:text-white'
+    : 'text-[#c65d3b] hover:text-[#a54d30]'
+
+  // Dropdown position classes
+  const dropdownPositionClasses = dropdownPosition === 'below'
+    ? 'top-full mt-2'
+    : 'bottom-full mb-2'
+
   return (
     <div
       className="relative inline-block"
@@ -137,56 +151,65 @@ export function ShareButton({ title, url, anchor, shareText }: ShareButtonProps)
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 text-[#c65d3b] hover:text-[#a54d30] transition-colors"
+        className={`flex items-center gap-2 ${buttonColors} transition-colors`}
       >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg
+          className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-12 scale-110' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
         </svg>
         <span className="text-sm font-bold tracking-wider uppercase">SHARE</span>
       </button>
 
-      {isOpen && (
-        <div
-          className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-[70]"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          {shareLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-              className="flex items-center gap-3 px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 transition-colors"
-            >
-              <span className="text-neutral-500">{link.icon}</span>
-              {link.name}
-            </a>
-          ))}
-          <hr className="my-2 border-neutral-100" />
-          <button
-            onClick={(e) => {
-              e.preventDefault()
-              handleCopyLink()
-            }}
-            className="flex items-center gap-3 px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-50 transition-colors w-full text-left"
+      {/* Dropdown with animation */}
+      <div
+        className={`absolute left-1/2 -translate-x-1/2 ${dropdownPositionClasses} w-48 bg-white rounded-lg shadow-xl border border-neutral-200 py-2 z-[70] transition-all duration-200 ease-out ${
+          isOpen
+            ? 'opacity-100 scale-100 translate-y-0'
+            : 'opacity-0 scale-95 pointer-events-none ' + (dropdownPosition === 'below' ? '-translate-y-2' : 'translate-y-2')
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {shareLinks.map((link, index) => (
+          <a
+            key={link.name}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b]/10 hover:text-[#c65d3b] transition-all duration-150"
+            style={{ transitionDelay: isOpen ? `${index * 30}ms` : '0ms' }}
           >
-            <span className="text-neutral-500">
-              {copied ? (
-                <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-              )}
-            </span>
-            {copied ? 'Copied!' : 'Copy link'}
-          </button>
-        </div>
-      )}
+            <span className="text-neutral-400 group-hover:text-[#c65d3b] transition-colors">{link.icon}</span>
+            {link.name}
+          </a>
+        ))}
+        <hr className="my-2 border-neutral-100" />
+        <button
+          onClick={(e) => {
+            e.preventDefault()
+            handleCopyLink()
+          }}
+          className="flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-700 hover:bg-[#c65d3b]/10 hover:text-[#c65d3b] transition-all duration-150 w-full text-left"
+        >
+          <span className="text-neutral-400">
+            {copied ? (
+              <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            ) : (
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            )}
+          </span>
+          {copied ? 'Copied!' : 'Copy link'}
+        </button>
+      </div>
     </div>
   )
 }

@@ -56,34 +56,76 @@ const getCardVariants = (index: number) => ({
     x: 0,
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   },
 })
 
-// Staggered animation variants for card content
+// Staggered animation variants for card content - slower, more engaging
+const numberBadgeVariants = {
+  hidden: { opacity: 0, scale: 0.5, rotate: -10 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    transition: {
+      duration: 0.6,
+      delay: 0.2,
+      ease: [0.34, 1.56, 0.64, 1] as const, // Spring-like bounce
+    },
+  },
+}
+
 const titleVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30, clipPath: 'inset(0 0 100% 0)' },
   visible: {
     opacity: 1,
     y: 0,
+    clipPath: 'inset(0 0 0% 0)',
     transition: {
-      duration: 0.5,
-      delay: 0.1,
-      ease: 'easeOut',
+      duration: 0.7,
+      delay: 0.4,
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   },
 }
 
 const descriptionVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: 0.7,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+const calloutVariants = {
+  hidden: { opacity: 0, y: 20, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      delay: 0.9,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+const quoteVariants = {
+  hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
-      delay: 0.2,
-      ease: 'easeOut',
+      delay: 1.0,
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   },
 }
@@ -95,19 +137,24 @@ const detailsVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      delay: 0.3,
-      ease: 'easeOut',
+      delay: 1.2,
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   },
 }
 
-function NumberBadge({ number }: { number: number }) {
+function NumberBadge({ number, inView }: { number: number; inView: boolean }) {
   return (
-    <div className="flex-shrink-0">
+    <motion.div
+      className="flex-shrink-0"
+      variants={numberBadgeVariants}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+    >
       <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white bg-gradient-to-br from-accent-500 to-accent-700">
         <span className="text-xl font-bold text-white">{number}</span>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -287,15 +334,15 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
         <ExpandableCardContent className="flex-1">
           <div className="p-8 lg:p-10">
           {/* Header - with animation */}
-          <motion.div
-            variants={titleVariants}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            className="flex items-start gap-6 mb-6"
-          >
-            <NumberBadge number={index + 1} />
+          <div className="flex items-start gap-6 mb-6">
+            <NumberBadge number={index + 1} inView={inView} />
 
-            <div className="flex-1 min-w-0">
+            <motion.div
+              variants={titleVariants}
+              initial="hidden"
+              animate={inView ? 'visible' : 'hidden'}
+              className="flex-1 min-w-0"
+            >
               {/* Years Badge */}
               {item.yearsOpen && (
                 <div className="inline-block px-4 py-1 bg-amber-100 border border-amber-300 rounded-full mb-3">
@@ -314,8 +361,8 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
                   {item.neighborhood}
                 </p>
               )}
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
 
           {/* Description - with animation */}
           <motion.p
@@ -329,7 +376,7 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
 
           {/* Why Missed - Emotional callout */}
           <motion.div
-            variants={descriptionVariants}
+            variants={calloutVariants}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             className="relative bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-500 rounded-lg p-6 mb-6"
@@ -352,7 +399,7 @@ export function LostLovedCard({ item, index, onInView, url }: LostLovedCardProps
           {/* Community Voice - Pull quote */}
           {item.communityVoice && (
             <motion.blockquote
-              variants={descriptionVariants}
+              variants={quoteVariants}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
               className="relative pl-6 py-4 border-l-4 border-accent-400 bg-white/50 rounded-r-lg mb-6"
