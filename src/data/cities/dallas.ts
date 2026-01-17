@@ -179,9 +179,9 @@ export const dallas: CityData = {
           body: 'When a Dallas building was demolished in 2019, the core of the 11-story structure unexpectedly remained standing — and slightly leaning. People flocked to take photos pretending to hold up the "Leaning Tower of Dallas" just like tourists do in Pisa. It became an instant internet sensation and accidental tourist attraction. The city tried multiple times to bring it down. It refused to fall. For weeks, this stubborn concrete remnant stood as an unintentional monument to Dallas\'s will to exist. Eventually they succeeded. But for a brief, beautiful moment, Dallas had its own architectural disaster-turned-icon.',
           sources: [
             {
-              title: 'The Leaning Tower of Dallas is finally down',
-              url: 'https://www.dallasnews.com/news/2020/03/02/the-leaning-tower-of-dallas-is-finally-down/',
-              publisher: 'Dallas Morning News',
+              title: 'The Leaning Tower of Dallas',
+              publisher: 'Wikipedia',
+              url: 'https://en.wikipedia.org/wiki/Leaning_Tower_of_Dallas',
             }
           ],
           location: {
@@ -605,9 +605,10 @@ export const dallas: CityData = {
           body: 'Inspired by Star Wars, entrepreneur George Carter opened Photon in Dallas in 1984 — the first commercialized laser tag arena in the world. Players wore vests with sensors and carried infrared guns in a sci-fi themed arena. It was an instant phenomenon. Within two years, there were Photon franchises across America and a short-lived TV series. Carter sold the company in 1987 for millions. Dallas turned childhood dreams of space battles into a multimillion-dollar industry, one infrared beam at a time.',
           sources: [
             {
-              title: 'The History of Laser Tag',
-              url: 'https://www.centraltrack.com/laser-tag-history-photon-dallas/',
-              publisher: 'Central Track',
+              type: 'article',
+              title: 'Photon: The First Laser Tag Company',
+              publisher: 'Laser Tag Museum',
+              url: 'https://www.lasertagmuseum.com/indoor-laser-tag/indoor-company/photon',
             }
           ],
           location: {
@@ -647,10 +648,12 @@ export const dallas: CityData = {
           body: 'Michael Clegg was studying at Perkins School of Theology at SMU when he discovered MDMA in the early 1980s. He didn\'t invent it (a German chemist did in 1912), but he gave it the name that stuck: Ecstasy. He called the experience "like hearing Moses on the mountain." Clegg saw a business opportunity. By 1984, he was moving 500,000 doses per month through a distribution network that included a 1-800 phone line. You could order Ecstasy with a credit card. The operation was so brazen, employees wore "Ecstasy" t-shirts. Clegg fled to Costa Rica in 1985, just months before the DEA classified MDMA as Schedule I. He later returned, served time, and became a real estate developer. But for a brief, surreal moment, a theology student helped launch the rave era from Dallas.',
           sources: [
             {
-              title: 'The Dallas Seminary Student Who Named Ecstasy',
-              url: 'https://www.dallasnews.com/news/2015/05/29/the-dallas-seminary-student-who-gave-ecstasy-its-name/',
-              publisher: 'Dallas Morning News',
-            }
+              type: 'article',
+              title: 'The Agony of Ecstasy',
+              publisher: 'D Magazine',
+              year: '2000',
+              url: 'https://www.dmagazine.com/publications/d-magazine/2000/may/the-agony-of-ecstasy/',
+            },
           ]
         }
       ],
@@ -2610,10 +2613,12 @@ export const dallas: CityData = {
           coordinates: { lat: 32.7873, lng: -96.7812 },
           sources: [
             {
-              title: 'The End of an Era: Lizard Lounge Closes',
-              url: 'https://www.dallasobserver.com/music/lizard-lounge-is-closing-for-good-after-28-years-11913144',
-              publisher: 'Dallas Observer',
-            }
+              type: 'article',
+              title: 'Dallas Club Lizard Lounge Permanently Closes',
+              publisher: 'CBS News',
+              year: '2020',
+              url: 'https://www.cbsnews.com/texas/news/dallas-club-lizard-lounge-permanently-closes-after-28-years-due-to-coronavirus/',
+            },
           ]
         },
         {
