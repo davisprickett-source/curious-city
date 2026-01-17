@@ -7,7 +7,6 @@ import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { ImageCarousel } from '../ImageCarousel'
 import { NewsletterSignup } from '../NewsletterSignup'
 import { FeedbackSection } from '../FeedbackSection'
-import { ShareLinks } from '../ShareLinks'
 import { ExploreCard, type ExploreLink } from '../scrollytelling/ExploreCard'
 import { ShareButton } from '@/components/ShareButton'
 import { SaveButton } from '@/components/SaveButton'
@@ -518,49 +517,55 @@ export default function MobileCuriositiesLayout({
       </div>
 
       {/* Outro Sections */}
-      <div className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md pt-20">
-        <div className="max-w-5xl mx-auto space-y-16 px-6 pb-20">
-          {/* Share Links */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
-            <div className="flex justify-center">
-              <ShareLinks title={`${cityName} Curiosities`} url={url} variant="banner" />
+      <div className="bg-neutral-900 pt-16">
+        <div className="max-w-5xl mx-auto px-6 pb-20">
+          {/* Divider line */}
+          <div className="border-t border-white/20 mb-12" />
+
+          {/* Share and Subscribe - Two columns on desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            {/* Share Section */}
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Share this guide</h3>
+              <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d enjoy these curiosities?</p>
+              <ShareButton title={`${cityName} Curiosities`} url={url} onDark dropdownPosition="below" />
+            </div>
+
+            {/* Newsletter Section */}
+            <div>
+              <NewsletterSignup variant="dark" />
             </div>
           </div>
 
-          {/* Newsletter Signup */}
-          <NewsletterSignup variant="dark" />
-
           {/* Explore More Section */}
-          <div className="text-center space-y-12">
-            <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                Explore More {cityName}
-              </h2>
-              <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
-                Discover more lists and guides curated by locals.
-              </p>
-            </div>
+          {exploreLinks.length > 0 && (
+            <div className="text-center space-y-12 mb-16">
+              <div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                  Explore More {cityName}
+                </h2>
+                <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
+                  Discover more lists and guides curated by locals.
+                </p>
+              </div>
 
-            {exploreLinks.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
                 {exploreLinks.map((link) => (
                   <ExploreCard key={link.href} link={link} />
                 ))}
               </div>
-            )}
-          </div>
+            </div>
+          )}
 
           {/* Feedback Section */}
           <FeedbackSection variant="dark" pageTitle={`${cityName} Curiosities`} />
+
+          {/* Divider before footer */}
+          <div className="border-t border-white/20 mt-16" />
         </div>
 
         {/* Integrated Footer */}
-        {footer && (
-          <div className="relative border-t border-white/10">
-            {footer}
-          </div>
-        )}
+        {footer}
       </div>
 
       {/* Mobile Sticky Bottom Ad */}

@@ -8,6 +8,7 @@ import type { ListiclePage } from '@/lib/content/cityHomepage'
 interface ListicleTypeCardProps {
   listicle: ListiclePage
   index?: number
+  inView?: boolean
 }
 
 // Color and icon mappings for each listicle type
@@ -59,18 +60,18 @@ const typeConfig: Record<string, {
  * Card representing an entire listicle type (e.g., "Dark History", "Curiosities")
  * - Large card with gradient over image
  * - Icon + title + full teaser description
- * - No entry count badge
+ * - Staggered scroll-triggered animation
  */
-export function ListicleTypeCard({ listicle, index = 0 }: ListicleTypeCardProps) {
+export function ListicleTypeCard({ listicle, index = 0, inView = true }: ListicleTypeCardProps) {
   const config = typeConfig[listicle.type] || typeConfig.curiosities
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 30, x: 20 }}
+      animate={inView ? { opacity: 1, y: 0, x: 0 } : { opacity: 0, y: 30, x: 20 }}
       transition={{
-        duration: 0.5,
-        delay: index * 0.08,
+        duration: 0.6,
+        delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"

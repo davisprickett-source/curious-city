@@ -8,6 +8,7 @@ import type { EstablishmentCategory } from '@/lib/content/cityHomepage'
 interface EstablishmentCategoryCardProps {
   category: EstablishmentCategory
   index?: number
+  inView?: boolean
 }
 
 // Icon and description mappings for each category
@@ -69,18 +70,18 @@ const defaultConfig = {
  * Card for establishment categories (bars, restaurants, etc.)
  * - Large card with image background
  * - Category icon + name + description
- * - No spot count badge
+ * - Staggered scroll-triggered animation
  */
-export function EstablishmentCategoryCard({ category, index = 0 }: EstablishmentCategoryCardProps) {
+export function EstablishmentCategoryCard({ category, index = 0, inView = true }: EstablishmentCategoryCardProps) {
   const config = categoryConfig[category.category] || defaultConfig
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 30, x: 20 }}
+      animate={inView ? { opacity: 1, y: 0, x: 0 } : { opacity: 0, y: 30, x: 20 }}
       transition={{
-        duration: 0.5,
-        delay: index * 0.08,
+        duration: 0.6,
+        delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"

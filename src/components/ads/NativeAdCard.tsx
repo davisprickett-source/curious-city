@@ -143,17 +143,13 @@ export function NativeAdCard({
 }
 
 // Simplified version for mobile/responsive use
+// No blocking animations - uses CSS-only fade to avoid scroll interference
 export function NativeAdSection({
   pageId,
   index,
   targeting,
   className = '',
 }: Omit<NativeAdCardProps, 'variant' | 'size'>) {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  })
-
   const slot = createAdSlot(
     `${pageId}-native-section-${index}`,
     'rectangle',
@@ -161,12 +157,8 @@ export function NativeAdSection({
   )
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 ${className}`}
+    <div
+      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 animate-fade-in ${className}`}
     >
       <div className="max-w-2xl mx-auto">
         {/* Header */}
@@ -193,6 +185,6 @@ export function NativeAdSection({
           Advertisements help support our content
         </p>
       </div>
-    </motion.div>
+    </div>
   )
 }

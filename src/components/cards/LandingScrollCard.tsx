@@ -8,6 +8,7 @@ import type { PageCardData } from '@/lib/content/pages'
 interface LandingScrollCardProps {
   data: PageCardData
   index?: number
+  inView?: boolean
 }
 
 // Page type gradient colors
@@ -57,18 +58,19 @@ const typeLabels: Record<string, string> = {
  * Landing page scroll card for horizontal sections
  * - Image background with gradient overlay
  * - City name, type badge, title, and teaser
+ * - Staggered scroll-triggered animation
  */
-export function LandingScrollCard({ data, index = 0 }: LandingScrollCardProps) {
+export function LandingScrollCard({ data, index = 0, inView = true }: LandingScrollCardProps) {
   const gradient = typeGradients[data.pageType] || defaultGradient
   const typeLabel = typeLabels[data.pageType] || data.pageType
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 30, x: 20 }}
+      animate={inView ? { opacity: 1, y: 0, x: 0 } : { opacity: 0, y: 30, x: 20 }}
       transition={{
-        duration: 0.5,
-        delay: index * 0.08,
+        duration: 0.6,
+        delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"

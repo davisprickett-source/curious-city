@@ -8,6 +8,7 @@ import type { ArticleSummary } from '@/lib/content/cityHomepage'
 interface ArticleScrollCardProps {
   article: ArticleSummary
   index?: number
+  inView?: boolean
 }
 
 // Source/category-based gradient colors for the overlay
@@ -57,16 +58,17 @@ const defaultGradient = {
  * - Full-bleed image background like establishment cards
  * - Title and teaser with gradient overlay
  * - Source-based color theming
+ * - Staggered scroll-triggered animation
  */
-export function ArticleScrollCard({ article, index = 0 }: ArticleScrollCardProps) {
+export function ArticleScrollCard({ article, index = 0, inView = true }: ArticleScrollCardProps) {
   const gradient = article.source ? (sourceGradients[article.source] || defaultGradient) : defaultGradient
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 30, x: 20 }}
+      animate={inView ? { opacity: 1, y: 0, x: 0 } : { opacity: 0, y: 30, x: 20 }}
       transition={{
-        duration: 0.5,
-        delay: index * 0.08,
+        duration: 0.6,
+        delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"

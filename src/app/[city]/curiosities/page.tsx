@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCity, getAllCitySlugs, getCityCuriosities } from '@/data/cities'
+import { getExploreLinks } from '@/lib/content/cityHomepage'
 import { ShareButton } from '@/components/ShareButton'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
@@ -67,6 +68,9 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
     ? allCuriosities.filter((c: any) => c.category === activeCategory)
     : allCuriosities
 
+  // Get explore links for bottom section (exclude curiosities since we're on it)
+  const exploreLinks = await getExploreLinks(slug, city.name, 'curiosities')
+
   const url = `https://thecurious.city/${slug}/curiosities`
 
   return (
@@ -129,7 +133,7 @@ export default async function CityCuriositiesPage({ params, searchParams }: Page
             cityName={city.name}
             citySlug={city.slug}
             url={url}
-            exploreLinks={[]}
+            exploreLinks={exploreLinks}
             footer={<Footer />}
           />
         ) : (

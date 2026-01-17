@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useCallback, Children, cloneElement, isValidElement, useState } from 'react'
 import Link from 'next/link'
+import { motion, useInView } from 'framer-motion'
 
 interface HorizontalScrollSectionProps {
   title: string
@@ -13,6 +14,68 @@ interface HorizontalScrollSectionProps {
   }
   children: React.ReactNode
   className?: string
+}
+
+// Premium reveal animation variants for text
+const headerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const eyebrowVariants = {
+  hidden: { opacity: 0, y: 20, filter: 'blur(4px)' },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+const titleVariants = {
+  hidden: { opacity: 0, y: 30, filter: 'blur(6px)' },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    transition: {
+      duration: 0.7,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+const descriptionVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
+}
+
+const linkVariants = {
+  hidden: { opacity: 0, x: -10 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.16, 1, 0.3, 1] as const,
+    },
+  },
 }
 
 /**
@@ -31,8 +94,14 @@ export function HorizontalScrollSection({
   className = '',
 }: HorizontalScrollSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const headerRef = useRef<HTMLDivElement>(null)
+  const cardsRef = useRef<HTMLDivElement>(null)
   const isResettingRef = useRef(false)
   const [isReady, setIsReady] = useState(false)
+
+  // Intersection observers for scroll animations
+  const headerInView = useInView(headerRef, { once: true, margin: '-50px' })
+  const cardsInView = useInView(cardsRef, { once: true, margin: '-100px' })
 
   // Convert children to array for duplication
   const childArray = Children.toArray(children)
@@ -127,78 +196,97 @@ export function HorizontalScrollSection({
 
   // Clone children with unique keys for infinite scroll
   const renderItems = () => {
-    if (!enableInfinite) {
-      return childArray
-    }
-
-    // Create 3 copies: [clone] [original] [clone]
-    // This allows seamless looping in both directions
-    const cloneItems = (items: React.ReactNode[], keyPrefix: string) => {
+    // Pass inView state to children for staggered animations
+    const addInViewProp = (items: React.ReactNode[], keyPrefix: string) => {
       return items.map((child, index) => {
         if (isValidElement(child)) {
           return cloneElement(child, {
             key: `${keyPrefix}-${index}`,
-            index: index, // Reset animation index for clones
+            index: index,
+            inView: cardsInView,
           } as Record<string, unknown>)
         }
         return child
       })
     }
 
+    if (!enableInfinite) {
+      return addInViewProp(childArray, 'item')
+    }
+
+    // Create 3 copies: [clone] [original] [clone]
+    // This allows seamless looping in both directions
     return [
-      ...cloneItems(childArray, 'clone-start'),
-      ...cloneItems(childArray, 'original'),
-      ...cloneItems(childArray, 'clone-end'),
+      ...addInViewProp(childArray, 'clone-start'),
+      ...addInViewProp(childArray, 'original'),
+      ...addInViewProp(childArray, 'clone-end'),
     ]
   }
 
   return (
     <section className={`py-8 md:py-10 overflow-x-hidden ${className}`}>
-      {/* Section Header */}
-      <div className="container-page mb-6 md:mb-8">
+      {/* Section Header with reveal animation */}
+      <motion.div
+        ref={headerRef}
+        className="container-page mb-6 md:mb-8"
+        variants={headerVariants}
+        initial="hidden"
+        animate={headerInView ? 'visible' : 'hidden'}
+      >
         <div className="flex items-end justify-between gap-4">
           <div className="min-w-0 flex-1">
             {eyebrow && (
-              <div className="eyebrow mb-2 text-accent-600 text-sm md:text-base">
+              <motion.div
+                variants={eyebrowVariants}
+                className="eyebrow mb-2 text-accent-600 text-sm md:text-base"
+              >
                 {eyebrow}
-              </div>
+              </motion.div>
             )}
-            <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-neutral-900">
+            <motion.h2
+              variants={titleVariants}
+              className="text-3xl md:text-4xl xl:text-5xl font-bold text-neutral-900"
+            >
               {title}
-            </h2>
+            </motion.h2>
             {description && (
-              <p className="mt-2 text-lg md:text-xl xl:text-2xl text-neutral-600 max-w-3xl">
+              <motion.p
+                variants={descriptionVariants}
+                className="mt-2 text-lg md:text-xl xl:text-2xl text-neutral-600 max-w-3xl"
+              >
                 {description}
-              </p>
+              </motion.p>
             )}
           </div>
           {viewAllLink && (
-            <Link
-              href={viewAllLink.href}
-              className="ui-sans text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors flex-shrink-0 flex items-center gap-1 group"
-            >
-              <span className="hidden sm:inline">{viewAllLink.text}</span>
-              <span className="sm:hidden">View All</span>
-              <svg
-                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <motion.div variants={linkVariants}>
+              <Link
+                href={viewAllLink.href}
+                className="ui-sans text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors flex-shrink-0 flex items-center gap-1 group"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2.5}
-                  d="M13 7l5 5-5 5M6 12h12"
-                />
-              </svg>
-            </Link>
+                <span className="hidden sm:inline">{viewAllLink.text}</span>
+                <span className="sm:hidden">View All</span>
+                <svg
+                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M13 7l5 5-5 5M6 12h12"
+                  />
+                </svg>
+              </Link>
+            </motion.div>
           )}
         </div>
-      </div>
+      </motion.div>
 
       {/* Scrollable Content */}
-      <div className={`relative ${isReady ? '' : 'overflow-hidden'}`}>
+      <div ref={cardsRef} className={`relative ${isReady ? '' : 'overflow-hidden'}`}>
         {/* Scroll container - match container-page padding (px-6 md:px-8 xl:px-12) */}
         <div
           ref={scrollRef}

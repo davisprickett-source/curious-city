@@ -1,7 +1,7 @@
 import { getArticle } from '@/lib/queries/articles'
 import { getCity } from '@/data/cities'
 import { getHistory } from '@/data/history'
-import { Footer, RelatedContent, NewsletterSignup, FeedbackSection, ShareLinks } from '@/components'
+import { Footer, RelatedContent, NewsletterSignup, FeedbackSection } from '@/components'
 import { ArticleRenderer } from '@/components/ArticleRenderer'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { ShareButton } from '@/components/ShareButton'
@@ -205,36 +205,45 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             </div>
           </article>
 
-          {/* End of Article Flow */}
-          <div className="container-page py-12 space-y-12">
-            {/* Divider */}
-            <div className="border-t border-neutral-200" />
-
-            {/* Share and Subscribe - Two columns */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Share Section */}
-              <div className="bg-neutral-50 rounded-2xl p-6 sm:p-8 border border-neutral-200">
-                <h3 className="text-xl font-bold text-neutral-900 mb-4">Share this story</h3>
-                <p className="text-sm text-neutral-600 mb-4">Know someone who&apos;d enjoy this?</p>
-                <ShareLinks title={article.title} url={url} />
-              </div>
-
-              {/* Newsletter Section */}
-              <div className="bg-neutral-50 rounded-2xl p-6 sm:p-8 border border-neutral-200">
-                <NewsletterSignup />
-              </div>
-            </div>
-
-            {/* Explore More */}
-            <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} />
-
-            {/* Feedback */}
-            <FeedbackSection pageTitle={article.title} />
-          </div>
         </main>
       </div>
 
-      <Footer />
+      {/* Bottom Elements - Dark Background */}
+      <div className="bg-neutral-900 pt-16">
+        <div className="max-w-5xl mx-auto px-6 pb-20">
+          {/* Divider line */}
+          <div className="border-t border-white/20 mb-12" />
+
+          {/* Share and Subscribe - Two columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            {/* Share Section */}
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Share this story</h3>
+              <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d enjoy this?</p>
+              <ShareButton title={article.title} url={url} onDark dropdownPosition="below" />
+            </div>
+
+            {/* Newsletter Section */}
+            <div>
+              <NewsletterSignup variant="dark" />
+            </div>
+          </div>
+
+          {/* Explore More */}
+          <div className="mb-16">
+            <RelatedContent citySlug={citySlug} contentType="articles" currentSlug={slug} variant="dark" />
+          </div>
+
+          {/* Feedback */}
+          <FeedbackSection variant="dark" pageTitle={article.title} />
+
+          {/* Divider before footer */}
+          <div className="border-t border-white/20 mt-16" />
+        </div>
+
+        {/* Integrated Footer */}
+        <Footer />
+      </div>
 
       {/* Mobile Sticky Ad */}
       <ArticleMobileAds

@@ -519,3 +519,8 @@ The goal should be: **"I can't believe I didn't know this about my city"** - tha
 ---
 
 *Document created: January 2026*
+
+
+
+(like Source Serif Pro
+  + Source Sans Pro, or Playfair Display + Nunito).

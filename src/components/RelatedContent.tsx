@@ -8,6 +8,7 @@ interface RelatedContentProps {
   citySlug: string
   contentType: 'curiosities' | 'dark-history' | 'articles' | 'lost-and-loved'
   currentSlug?: string // To exclude current article/item
+  variant?: 'light' | 'dark'
 }
 
 // Type for a related content item
@@ -34,7 +35,9 @@ export async function RelatedContent({
   citySlug,
   contentType,
   currentSlug,
+  variant = 'light',
 }: RelatedContentProps) {
+  const isDark = variant === 'dark'
   const relatedItems: RelatedItem[] = []
   const usedIds = new Set<string>()
 
@@ -185,18 +188,24 @@ export async function RelatedContent({
   if (relatedItems.length === 0) return null
 
   return (
-    <section className="mt-12 pt-8 border-t border-neutral-200">
-      <h2 className="text-2xl font-bold text-neutral-900 mb-6">Explore More</h2>
+    <section className={isDark ? '' : 'mt-12 pt-8 border-t border-neutral-200'}>
+      <h2 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
+        Explore More
+      </h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {relatedItems.map((item) => (
           <Link
             key={item.id}
             href={item.href}
-            className="group block overflow-hidden rounded-xl bg-white border border-neutral-200 hover:border-accent-300 hover:shadow-lg transition-all duration-300"
+            className={`group block overflow-hidden rounded-xl transition-all duration-300 ${
+              isDark
+                ? 'bg-white/10 border border-white/20 hover:border-white/40 hover:bg-white/15'
+                : 'bg-white border border-neutral-200 hover:border-accent-300 hover:shadow-lg'
+            }`}
           >
             {/* Image */}
             {item.image && (
-              <div className="aspect-[16/9] relative overflow-hidden bg-neutral-200">
+              <div className={`aspect-[16/9] relative overflow-hidden ${isDark ? 'bg-neutral-800' : 'bg-neutral-200'}`}>
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -211,14 +220,14 @@ export async function RelatedContent({
             {/* Content */}
             <div className="p-5">
               {item.cityName && (
-                <div className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-2">
+                <div className={`text-xs font-semibold uppercase tracking-wider mb-2 ${isDark ? 'text-accent-400' : 'text-accent-600'}`}>
                   {item.cityName}
                 </div>
               )}
-              <h3 className="text-lg font-bold text-neutral-900 group-hover:text-accent-600 transition-colors mb-2 leading-tight">
+              <h3 className={`text-lg font-bold group-hover:text-accent-500 transition-colors mb-2 leading-tight ${isDark ? 'text-white' : 'text-neutral-900'}`}>
                 {item.title}
               </h3>
-              <p className="text-sm text-neutral-600 leading-relaxed line-clamp-2">
+              <p className={`text-sm leading-relaxed line-clamp-2 ${isDark ? 'text-neutral-300' : 'text-neutral-600'}`}>
                 {item.teaser}
               </p>
             </div>

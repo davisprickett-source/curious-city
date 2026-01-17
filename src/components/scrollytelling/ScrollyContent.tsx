@@ -207,26 +207,29 @@ export function ScrollyContent({
         </div>
       </ScrollySection>
 
-      {/* Outro Section - Final destination, fills remaining space */}
+      {/* Outro Section - Final destination */}
       <ScrollySection
         index={spots.length + 1} // Updated index
         onInView={onActiveIndexChange}
-        className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-end"
+        className="bg-neutral-900 snap-end !min-h-0 !items-start !py-0"
         ref={(el) => { sectionRefs.current[spots.length + 1] = el }}
       >
-        <div className="w-full min-h-screen flex flex-col justify-center">
-          <div className="max-w-5xl w-full mx-auto space-y-12 px-4 sm:px-6 py-12">
+        <div className="w-full">
+          <div className="max-w-5xl w-full mx-auto px-4 sm:px-6 pt-16 pb-12">
+            {/* Divider line */}
+            <div className="border-t border-white/20 mb-12" />
+
             {/* Share and Subscribe - Two columns on desktop */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
               {/* Share Section */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <div>
                 <h3 className="text-xl font-bold text-white mb-4">Share this guide</h3>
                 <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d love these spots?</p>
                 <ShareLinks title={title} url={url} onDark />
               </div>
 
               {/* Newsletter Section */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <div>
                 <NewsletterSignup variant="dark" />
               </div>
             </div>
@@ -307,14 +310,13 @@ export function ScrollyContent({
                 </div>
               )}
             </div>
+
+            {/* Divider before footer */}
+            <div className="border-t border-white/20 mt-16" />
           </div>
 
           {/* Footer integrated into outro section */}
-          {footer && (
-            <div className="w-full border-t border-white/10 mt-16">
-              {footer}
-            </div>
-          )}
+          {footer}
         </div>
       </ScrollySection>
     </div>
