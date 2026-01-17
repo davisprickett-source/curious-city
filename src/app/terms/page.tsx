@@ -2,8 +2,8 @@ import { Header, Footer } from '@/components'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - The Curious City',
-  description: 'Terms of Service for The Curious City - Read our terms and conditions for using our website.',
+  title: 'Terms of Service - Curious City',
+  description: 'Terms of Service for Curious City - Read our terms and conditions for using our website.',
 }
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Agreement to Terms</h2>
                 <p className="text-neutral-700 mb-4">
-                  Welcome to The Curious City. By accessing or using our website at thecurious.city (the &quot;Site&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Site.
+                  Welcome to Curious City. By accessing or using our website at thecurious.city (the &quot;Site&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Site.
                 </p>
                 <p className="text-neutral-700 mb-4">
                   We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting. Your continued use of the Site after changes are posted constitutes your acceptance of the modified Terms.
@@ -31,7 +31,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Description of Service</h2>
                 <p className="text-neutral-700 mb-4">
-                  The Curious City provides curated content about cities across America, including:
+                  Curious City provides curated content about cities across America, including:
                 </p>
                 <ul className="list-disc pl-6 mb-4 text-neutral-700 space-y-2">
                   <li>Historical articles and essays</li>
@@ -80,7 +80,7 @@ export default function TermsPage() {
 
                 <h3 className="text-xl font-semibold text-neutral-800 mb-3">Our Content</h3>
                 <p className="text-neutral-700 mb-4">
-                  All content on the Site, including text, graphics, logos, images, videos, and software, is the property of The Curious City or its content suppliers and is protected by copyright, trademark, and other intellectual property laws.
+                  All content on the Site, including text, graphics, logos, images, videos, and software, is the property of Curious City or its content suppliers and is protected by copyright, trademark, and other intellectual property laws.
                 </p>
                 <p className="text-neutral-700 mb-4">
                   You may not reproduce, distribute, modify, create derivative works of, publicly display, or exploit any content without our express written permission.
@@ -141,7 +141,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Indemnification</h2>
                 <p className="text-neutral-700 mb-4">
-                  You agree to indemnify, defend, and hold harmless The Curious City and its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&apos; fees) arising from:
+                  You agree to indemnify, defend, and hold harmless Curious City and its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&apos; fees) arising from:
                 </p>
                 <ul className="list-disc pl-6 mb-4 text-neutral-700 space-y-2">
                   <li>Your use of the Site</li>
@@ -191,7 +191,7 @@ export default function TermsPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Entire Agreement</h2>
                 <p className="text-neutral-700 mb-4">
-                  These Terms, together with our Privacy Policy, constitute the entire agreement between you and The Curious City regarding the use of the Site and supersede any prior agreements.
+                  These Terms, together with our Privacy Policy, constitute the entire agreement between you and Curious City regarding the use of the Site and supersede any prior agreements.
                 </p>
               </section>
 
@@ -200,21 +200,11 @@ export default function TermsPage() {
                 <p className="text-neutral-700 mb-4">
                   If you have any questions about these Terms of Service, please contact us at:
                 </p>
-                <div className="bg-neutral-50 p-6 rounded-lg">
-                  <p className="text-neutral-900 font-semibold mb-2">The Curious City</p>
-                  <p className="text-neutral-700">
-                    Email:{' '}
-                    <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline">
-                      info@thecurious.city
-                    </a>
-                  </p>
-                  <p className="text-neutral-700">
-                    Website:{' '}
-                    <a href="https://thecurious.city" className="text-accent-600 hover:text-accent-700 underline">
-                      thecurious.city
-                    </a>
-                  </p>
-                </div>
+                <p className="text-neutral-700">
+                  <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline font-medium">
+                    info@thecurious.city
+                  </a>
+                </p>
               </section>
             </div>
           </div>

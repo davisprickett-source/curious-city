@@ -2,8 +2,8 @@ import { Header, Footer } from '@/components'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - The Curious City',
-  description: 'Privacy policy for The Curious City - Learn how we collect, use, and protect your information.',
+  title: 'Privacy Policy - Curious City',
+  description: 'Privacy policy for Curious City - Learn how we collect, use, and protect your information.',
 }
 
 export default function PrivacyPage() {
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Introduction</h2>
                 <p className="text-neutral-700 mb-4">
-                  Welcome to The Curious City (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to protecting your privacy and ensuring you understand how we collect, use, and safeguard your information when you visit our website at thecurious.city (the &quot;Site&quot;).
+                  Welcome to Curious City (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to protecting your privacy and ensuring you understand how we collect, use, and safeguard your information when you visit our website at thecurious.city (the &quot;Site&quot;).
                 </p>
                 <p className="text-neutral-700 mb-4">
                   This Privacy Policy explains our practices regarding the collection, use, and disclosure of information we receive through the Site.
@@ -180,21 +180,11 @@ export default function PrivacyPage() {
                 <p className="text-neutral-700 mb-4">
                   If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
                 </p>
-                <div className="bg-neutral-50 p-6 rounded-lg">
-                  <p className="text-neutral-900 font-semibold mb-2">The Curious City</p>
-                  <p className="text-neutral-700">
-                    Email:{' '}
-                    <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline">
-                      info@thecurious.city
-                    </a>
-                  </p>
-                  <p className="text-neutral-700">
-                    Website:{' '}
-                    <a href="https://thecurious.city" className="text-accent-600 hover:text-accent-700 underline">
-                      thecurious.city
-                    </a>
-                  </p>
-                </div>
+                <p className="text-neutral-700">
+                  <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline font-medium">
+                    info@thecurious.city
+                  </a>
+                </p>
               </section>
             </div>
           </div>

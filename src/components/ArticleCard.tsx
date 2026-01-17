@@ -79,10 +79,6 @@ export function ArticleCard({ article, citySlug }: ArticleCardProps) {
             {article.excerpt}
           </p>
 
-          {/* Meta */}
-          <div className="text-xs text-neutral-500">
-            <span>{article.author.name}</span>
-          </div>
         </div>
       </article>
     </Link>

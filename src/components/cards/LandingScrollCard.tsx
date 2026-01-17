@@ -11,23 +11,23 @@ interface LandingScrollCardProps {
   inView?: boolean
 }
 
-// Page type gradient colors
+// Page type gradient colors - all listicle types use emerald green
 const typeGradients: Record<string, { overlay: string; fallback: string }> = {
   'dark-history': {
-    overlay: 'from-black/90 via-black/60 to-black/30',
-    fallback: 'from-neutral-900 to-black',
+    overlay: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   'curiosities': {
-    overlay: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
-    fallback: 'from-amber-700 to-amber-950',
+    overlay: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   'hidden-gems': {
     overlay: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
-    fallback: 'from-emerald-700 to-emerald-950',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   'lost-loved': {
-    overlay: 'from-orange-900/90 via-orange-900/60 to-orange-900/30',
-    fallback: 'from-orange-700 to-orange-950',
+    overlay: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   'history': {
     overlay: 'from-indigo-900/90 via-indigo-900/60 to-indigo-900/30',

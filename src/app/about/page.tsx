@@ -2,8 +2,8 @@ import { Header, Footer } from '@/components'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About - The Curious City',
-  description: 'Learn about The Curious City - Your guide to the hidden stories, dark history, and local secrets of American cities.',
+  title: 'About - Curious City',
+  description: 'Learn about Curious City - Your guide to the hidden stories, dark history, and local secrets of American cities.',
 }
 
 export default function AboutPage() {
@@ -14,13 +14,13 @@ export default function AboutPage() {
       <main className="flex-1">
         <div className="container-page section-spacing">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold text-neutral-900 mb-6">About The Curious City</h1>
+            <h1 className="text-4xl font-bold text-neutral-900 mb-6">About Curious City</h1>
 
             <div className="prose prose-lg max-w-none">
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Our Mission</h2>
                 <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
-                  The Curious City is dedicated to uncovering and sharing the untold stories that make American cities fascinating. We believe every city has layers of history, hidden gems, and curious tales waiting to be discovered by those willing to look beyond the surface.
+                  Curious City is dedicated to uncovering and sharing the untold stories that make American cities fascinating. We believe every city has layers of history, hidden gems, and curious tales waiting to be discovered by those willing to look beyond the surface.
                 </p>
                 <p className="text-neutral-700 mb-4 text-lg leading-relaxed">
                   Our mission is to be your guide to the curious side of urban life—from dark history and forgotten mysteries to the best local establishments that locals actually love.
@@ -30,7 +30,7 @@ export default function AboutPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">What We Cover</h2>
                 <p className="text-neutral-700 mb-4">
-                  The Curious City explores cities through multiple lenses:
+                  Curious City explores cities through multiple lenses:
                 </p>
 
                 <div className="grid gap-6 md:grid-cols-2 my-6">
@@ -116,19 +116,19 @@ export default function AboutPage() {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Why &quot;The Curious City&quot;?</h2>
+                <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Why &quot;Curious City&quot;?</h2>
                 <p className="text-neutral-700 mb-4">
                   Cities are endlessly curious—both in the sense that they inspire curiosity and in that they contain curious (peculiar, fascinating, strange) elements around every corner. We believe the best way to experience a city is with an open mind and a curious spirit.
                 </p>
                 <p className="text-neutral-700 mb-4">
-                  Whether you&apos;re a longtime resident looking to see your city with fresh eyes, a visitor seeking authentic experiences, or simply someone who loves urban history and culture, The Curious City is your companion for discovery.
+                  Whether you&apos;re a longtime resident looking to see your city with fresh eyes, a visitor seeking authentic experiences, or simply someone who loves urban history and culture, Curious City is your companion for discovery.
                 </p>
               </section>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Support Independent Media</h2>
                 <p className="text-neutral-700 mb-4">
-                  The Curious City is independently operated and supported by our readers. We display tasteful advertisements to keep our content free and accessible to everyone. We never compromise our editorial integrity—our recommendations are based on quality and authenticity, not payment.
+                  Curious City is independently operated and supported by our readers. We display tasteful advertisements to keep our content free and accessible to everyone. We never compromise our editorial integrity—our recommendations are based on quality and authenticity, not payment.
                 </p>
                 <p className="text-neutral-700 mb-4">
                   If you find our content valuable, the best way to support us is to:
@@ -163,15 +163,9 @@ export default function AboutPage() {
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Stay Curious</h2>
-                <p className="text-neutral-700 mb-4 text-lg font-medium">
+                <p className="text-neutral-700 text-lg">
                   Every city has secrets. We&apos;re here to help you find them.
                 </p>
-                <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-lg mt-6">
-                  <p className="text-neutral-900 font-semibold mb-2">Explore. Discover. Share.</p>
-                  <p className="text-neutral-700 text-sm">
-                    The Curious City—Where every street has a story.
-                  </p>
-                </div>
               </section>
             </div>
           </div>

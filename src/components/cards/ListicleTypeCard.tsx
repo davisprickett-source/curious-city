@@ -11,15 +11,15 @@ interface ListicleTypeCardProps {
   inView?: boolean
 }
 
-// Color and icon mappings for each listicle type
+// Color and icon mappings for each listicle type - all use emerald green
 const typeConfig: Record<string, {
   gradient: string
   fallbackGradient: string
   icon: JSX.Element
 }> = {
   'dark-history': {
-    gradient: 'from-red-900/90 via-red-900/60 to-red-900/30',
-    fallbackGradient: 'from-red-800 to-red-950',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallbackGradient: 'from-emerald-700 to-teal-800',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
@@ -27,8 +27,8 @@ const typeConfig: Record<string, {
     ),
   },
   curiosities: {
-    gradient: 'from-purple-900/90 via-purple-900/60 to-purple-900/30',
-    fallbackGradient: 'from-purple-700 to-indigo-800',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallbackGradient: 'from-emerald-700 to-teal-800',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -46,8 +46,8 @@ const typeConfig: Record<string, {
     ),
   },
   'lost-loved': {
-    gradient: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
-    fallbackGradient: 'from-orange-700 to-amber-800',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallbackGradient: 'from-emerald-700 to-teal-800',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />

@@ -273,9 +273,46 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
     }
   }
 
-  // Sort listicle entries by featuredOrder, then combine with articles first
+  // Sort listicle entries by featuredOrder
   const sortedListicleEntries = listicleEntries.sort((a, b) => a.featuredOrder - b.featuredOrder)
-  return [...articleEntries, ...sortedListicleEntries]
+
+  // Curate a balanced mix of ~6 items total:
+  // - History essay (1, from articles)
+  // - Maybe another interesting article (if exists)
+  // - Top 1-2 curiosities
+  // - Top hidden gem (1)
+  // - Top 1-2 dark history
+  const TARGET_CAROUSEL_SIZE = 6
+
+  // Start with first article (history essay)
+  const curatedEntries: FeaturedEntry[] = articleEntries.slice(0, 1)
+
+  // Get entries by type
+  const curiosityEntries = sortedListicleEntries.filter(e => e.type === 'curiosity')
+  const hiddenGemEntries = sortedListicleEntries.filter(e => e.type === 'hidden-gem')
+  const darkHistoryEntries = sortedListicleEntries.filter(e => e.type === 'dark-history')
+  const lostLovedEntries = sortedListicleEntries.filter(e => e.type === 'lost-and-loved')
+
+  // Add top 2 curiosities
+  curatedEntries.push(...curiosityEntries.slice(0, 2))
+
+  // Add top hidden gem
+  curatedEntries.push(...hiddenGemEntries.slice(0, 1))
+
+  // Add top 2 dark history
+  curatedEntries.push(...darkHistoryEntries.slice(0, 2))
+
+  // If still under target, add lost & loved or more from other categories
+  if (curatedEntries.length < TARGET_CAROUSEL_SIZE && lostLovedEntries.length > 0) {
+    curatedEntries.push(...lostLovedEntries.slice(0, TARGET_CAROUSEL_SIZE - curatedEntries.length))
+  }
+
+  // If still under target, add remaining curiosities
+  if (curatedEntries.length < TARGET_CAROUSEL_SIZE && curiosityEntries.length > 2) {
+    curatedEntries.push(...curiosityEntries.slice(2, 2 + (TARGET_CAROUSEL_SIZE - curatedEntries.length)))
+  }
+
+  return curatedEntries.slice(0, TARGET_CAROUSEL_SIZE)
 }
 
 /**

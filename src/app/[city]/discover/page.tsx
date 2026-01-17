@@ -43,23 +43,23 @@ export async function generateMetadata({ params }: DiscoverPageProps): Promise<M
   }
 }
 
-// Type-based styling for cards
+// Type-based styling for cards - all use emerald green
 const typeStyles: Record<string, { gradient: string; fallback: string }> = {
   'dark-history': {
-    gradient: 'from-red-900/90 via-red-900/60 to-red-900/30',
-    fallback: 'from-red-800 to-red-950',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   curiosities: {
-    gradient: 'from-purple-900/90 via-purple-900/60 to-purple-900/30',
-    fallback: 'from-purple-700 to-indigo-800',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
   'hidden-gems': {
     gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
     fallback: 'from-emerald-700 to-teal-800',
   },
   'lost-loved': {
-    gradient: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
-    fallback: 'from-orange-700 to-amber-800',
+    gradient: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    fallback: 'from-emerald-700 to-teal-800',
   },
 }
 

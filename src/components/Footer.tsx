@@ -45,11 +45,8 @@ export function Footer() {
                 Curious City
               </span>
             </Link>
-            <p className="text-neutral-400 text-[15px] leading-relaxed mb-6">
+            <p className="text-neutral-400 text-[15px] leading-relaxed">
               Where every street has a story.
-            </p>
-            <p className="text-sm text-[#c65d3b]">
-              Made with curiosity.
             </p>
           </div>
 
@@ -92,7 +89,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p className="text-xs text-neutral-500">
-              &copy; {new Date().getFullYear()} Curious City. All rights reserved.
+              &copy; {new Date().getFullYear()} Curious City. All rights reserved. <span className="text-[#c65d3b]">Made with curiosity.</span>
             </p>
             <div className="flex items-center gap-6">
               <Link

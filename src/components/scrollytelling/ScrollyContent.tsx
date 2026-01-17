@@ -173,15 +173,13 @@ export function ScrollyContent({
             />
           </ScrollySection>
 
-          {/* Ad every 3 spots */}
+          {/* Ad every 3 spots - inline without scroll snap */}
           {(index + 1) % 3 === 0 && index < spots.length - 1 && (
-            <ScrollySection
+            <div
               key={`ad-${index}`}
-              index={-100 - index} // Use negative index to not interfere with spot indices
-              onInView={() => { }} // No-op for ads
-              className="bg-white/90 backdrop-blur-md snap-start"
+              className="flex items-center justify-center md:justify-end md:pr-16 lg:pr-24 px-4 py-12"
             >
-              <div className="max-w-3xl w-full px-6">
+              <div className="max-w-3xl w-full px-6 bg-white/90 backdrop-blur-md rounded-2xl py-8">
                 <UniversalAd
                   slot={createAdSlot(
                     `coffee-shops-scrolly-ad-${index}`,
@@ -190,7 +188,7 @@ export function ScrollyContent({
                   )}
                 />
               </div>
-            </ScrollySection>
+            </div>
           )}
         </div>
       ))}
