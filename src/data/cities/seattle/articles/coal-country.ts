@@ -48,6 +48,13 @@ export const coalCountry: Article = {
           content: 'The first commercial mine opened at Coal Creek (now part of Bellevue) in 1863. Within a decade, there were mines throughout the region. Newcastle, named after the famous English coal city, became the largest operation. At its peak in the 1880s, Newcastle was producing over 200,000 tons of coal per year. It was, by some measures, the largest coal mine west of the Mississippi.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Newcastle_Washington_Mining_Town_1885.jpg/1280px-Newcastle_Washington_Mining_Town_1885.jpg',
+          alt: 'The mining town of Newcastle, Washington, in 1885',
+          caption: 'Newcastle in 1885. The town was a major industrial center, with houses and church buildings spread across the hillside above the mines.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'The coal barons got rich. The workers — not so much.',
         },
@@ -65,6 +72,13 @@ export const coalCountry: Article = {
           type: 'heading',
           level: 2,
           content: 'The Workers',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Coal_Miners_on_Electric_Train_Newcastle_1909.jpg/1280px-Coal_Miners_on_Electric_Train_Newcastle_1909.jpg',
+          alt: 'Coal miners on a small electric mining train, Newcastle, 1909',
+          caption: 'Miners on an electric mining train outside a Newcastle mine in 1909. The work was grueling and dangerous, with few safety protections.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'image',
@@ -88,14 +102,21 @@ export const coalCountry: Article = {
         },
         {
           type: 'image',
-          src: 'https://www.duwamishtribe.org/wp-content/uploads/2018/06/chief-seattle.jpg',
-          alt: 'Portrait of Chief Seattle',
-          caption: 'Chief Seattle, leader of the Suquamish and Duwamish tribes. The Duwamish people were displaced from their ancestral lands to make way for King County\'s expanding coal industry.',
-          credit: 'Duwamish Tribe',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chief_Seattle_1864.jpg/1280px-Chief_Seattle_1864.jpg',
+          alt: 'The only known photograph of Chief Seattle, taken in 1864',
+          caption: 'Chief Seattle (Si\'ahl), leader of the Suquamish and Duwamish tribes. The city that bears his name was built on land taken from his people to fuel the coal and timber industries.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
           content: 'Before the coal mines, the land belonged to the Duwamish people. They had lived along the rivers and shores of Puget Sound for thousands of years, fishing, hunting, and trading. The arrival of white settlers in the 1850s began a process of displacement that the coal industry accelerated.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Princess_Angeline_ca_1892.jpg/1280px-Princess_Angeline_ca_1892.jpg',
+          alt: 'Princess Angeline, daughter of Chief Seattle, circa 1892',
+          caption: 'Princess Angeline (Kikisoblu), Chief Seattle\'s daughter, who refused to leave her ancestral lands even as the city and its industries expanded around her.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',

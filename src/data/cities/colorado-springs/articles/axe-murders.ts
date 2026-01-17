@@ -24,7 +24,14 @@ export const axeMurders: Article = {
       blocks: [
         {
           type: 'paragraph',
-          content: 'The morning of September 18, 1911, began like any other in Colorado Springs. Milkmen made their rounds. Children walked to school. Then someone knocked on the door of 325 West Dale Street and got no answer. The house was silent. The blinds were drawn. And inside, arranged in their beds with sheets covering their faces, were three bodies — a man, a woman, and an eighteen-month-old child, their skulls crushed by an axe.',
+          content: 'The morning of September 18, 1911, began like any other in Colorado Springs. Milkmen made their rounds. Children walked to school. Then someone knocked on the door of 321 West Dale Street and got no answer. The house was silent. The blinds were drawn. And inside, arranged in their beds with sheets covering their faces, were three bodies — May Alice Burnham and her two children, their skulls crushed by an axe.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Victorian_house_in_Colorado_Springs.jpg/1280px-Victorian_house_in_Colorado_Springs.jpg',
+          alt: 'Victorian era house in Colorado Springs',
+          caption: 'Many of the homes in the West Dale and Weber Street neighborhoods were modest Victorian structures. On that September morning, two of them became scenes of unimaginable horror.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'image',
@@ -35,7 +42,7 @@ export const axeMurders: Article = {
         },
         {
           type: 'paragraph',
-          content: 'Three blocks away, at 606 South Weber Street, police found three more victims: a woman and her two children, killed the same way. The axe that murdered them lay on the floor, wiped clean but still bearing traces of blood. Every victim had been struck with the blunt end while they slept. Every victim\'s face had been covered with a sheet or cloth. Every mirror in both houses had been draped.',
+          content: 'Just a few steps away, at 743 Harrison Place, police found three more victims: Henry Wayne, his wife Blanche, and their infant daughter, killed the same way. The axe that murdered them lay on the floor, wiped clean but still bearing traces of blood. Every victim had been struck with the blunt end while they slept. Every victim\'s face had been covered with a sheet or cloth. Every mirror in both houses had been draped.',
         },
         {
           type: 'paragraph',
@@ -48,15 +55,15 @@ export const axeMurders: Article = {
         },
         {
           type: 'paragraph',
-          content: 'The first family was the Waynes. Henry F. Wayne, 31, worked as a clerk at the Denver & Rio Grande railroad. His wife Blanche, 27, kept house. Their daughter Lula May was eighteen months old. They had lived at 325 West Dale Street for only a few months, having recently moved from Denver. They had no known enemies. They had done nothing to attract the attention of a killer.',
+          content: 'The first household was the Burnhams. May Alice Burnham, 35, lived at 321 West Dale Street with her two children: John, 2, and Nellie, 7. May Alice\'s husband was not present — the couple was separated, and he was living elsewhere. They were alone when the killer came.',
         },
         {
           type: 'paragraph',
-          content: 'The second household was more complicated. May Alice Burnham, 35, lived at 606 South Weber Street with her two children: John, 10, and Nettie, 7. May Alice\'s husband was not present — the couple was separated, and he was living elsewhere. A boarder named A.J. Burnham (no relation) rented a room in the house but was out of town that night. May Alice and her children were alone when the killer came.',
+          content: 'The second family was the Waynes, who lived just behind the Burnhams at 743 Harrison Place. Henry F. Wayne, 24, worked as a clerk at the Denver & Rio Grande railroad. His wife Blanche, 22, kept house. Their daughter Lula was eighteen months old. They had recently moved from Denver. They had no known enemies. They had done nothing to attract the attention of a killer.',
         },
         {
           type: 'paragraph',
-          content: 'The two families had no obvious connection. They lived three blocks apart but didn\'t know each other. The only thing linking them was proximity — and the railroad. Both houses were within easy walking distance of the tracks.',
+          content: 'The two families were neighbors, their backyards separated only by a small distance. The only thing linking them besides proximity was the railroad. Both houses were within easy walking distance of the tracks, a common theme in axe murders of the era.',
         },
         {
           type: 'quote',
@@ -187,7 +194,7 @@ export const axeMurders: Article = {
         },
         {
           type: 'paragraph',
-          content: 'The house at 325 West Dale Street still stands in Colorado Springs. It\'s a private residence now, in a quiet neighborhood that shows no sign of its terrible history. The house at 606 South Weber Street is also still there, similarly unremarkable. Nothing marks either site as a crime scene.',
+          content: 'The original houses at 321 West Dale Street and 743 Harrison Place no longer stand. They were torn down in early 1912, just months after the murders, by a community eager to erase the physical memory of the tragedy. Today, newer structures occupy the lots, and the quiet neighborhood shows no sign of its terrible history.',
         },
         {
           type: 'paragraph',

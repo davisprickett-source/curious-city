@@ -27,6 +27,13 @@ export const wellingtonAvalanche: Article = {
           content: 'The telegram arrived in Seattle on the morning of March 1, 1910. It was brief and devastating: "Avalanche at Wellington. Two trains swept from tracks. Many dead." What followed was chaos — relatives flooding the railroad offices, rescue parties scrambling into the mountains, and the slow, horrifying realization that an entire community of travelers had been buried under a half-mile of snow.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Wellington_Avalanche_Rescue_1910.jpg/1280px-Wellington_Avalanche_Rescue_1910.jpg',
+          alt: 'Rescue workers at the site of the Wellington avalanche, March 1910',
+          caption: 'Rescue workers and railroad employees digging through the massive debris field at Wellington. The search for survivors and bodies continued for months as the snow slowly melted.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'Ninety-six people died that night in the Cascade Mountains. It remains the deadliest avalanche in American history, and the deadliest railroad disaster in the Pacific Northwest. Yet most Washingtonians have never heard of it. The Great Northern Railway was so traumatized that they renamed the station and systematically erased the disaster from their corporate history. The town of Wellington ceased to exist. The dead were forgotten.',
         },
@@ -204,6 +211,13 @@ export const wellingtonAvalanche: Article = {
           content: 'More practically, the Great Northern committed to building a new, longer tunnel that would bypass the dangerous western slopes entirely. The 7.8-mile Cascade Tunnel — the longest railroad tunnel in North America at the time — opened in 1929. It eliminated the Wellington route, rendering the avalanche site permanently inaccessible by train.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Great_Northern_Railway_Cascade_Tunnel_Dedication_1929.jpg/1280px-Great_Northern_Railway_Cascade_Tunnel_Dedication_1929.jpg',
+          alt: 'Dedication of the new Cascade Tunnel, 1929',
+          caption: 'The opening of the new 7.8-mile Cascade Tunnel in 1929. The massive engineering project was the railroad\'s definitive answer to the dangers of Stevens Pass.',
+          credit: 'Wikimedia Commons',
+        },
+        {
           type: 'paragraph',
           content: 'The town of Wellington was abandoned. The buildings were torn down or left to rot. The forest reclaimed the railroad yard. Within a generation, Wellington ceased to exist in any meaningful sense.',
         },
@@ -225,6 +239,13 @@ export const wellingtonAvalanche: Article = {
         {
           type: 'paragraph',
           content: 'In recent decades, historians and railfans have worked to recover the memory of Wellington. The avalanche site, accessible only by foot, has become a destination for hikers interested in industrial archaeology. Rusted machinery, rotting timbers, and fragments of rail still litter the mountainside. The old Cascade Tunnel, abandoned when the new tunnel opened, is now a hiking trail through absolute darkness.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Original_Cascade_Tunnel_Interior.jpg/1280px-Original_Cascade_Tunnel_Interior.jpg',
+          alt: 'Interior of the original abandoned Cascade Tunnel',
+          caption: 'The interior of the original Cascade Tunnel, now abandoned and silent. It stands as a cavernous reminder of the railroad that once dominated these mountains.',
+          credit: 'Wikimedia Commons',
         },
         {
           type: 'image',

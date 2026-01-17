@@ -43,15 +43,21 @@ export const tuberculosisCity: Article = {
           type: 'paragraph',
           content: 'Tuberculosis was the greatest killer of the nineteenth century. It killed more people than any other disease — more than smallpox, more than cholera, more than war. In 1900, TB was responsible for one in four deaths in the United States. It was everywhere, and it was merciless.',
         },
-        {
-          type: 'paragraph',
-          content: 'The disease attacked the lungs. Victims coughed blood, lost weight, developed fevers that came and went. The progression was slow — months or years of gradual decline, punctuated by periods of seeming recovery that always proved false. There was no cure. Doctors could only try to slow the disease and make patients comfortable as they died.',
-        },
+                {
+                  type: 'paragraph',
+                  content: 'The disease attacked the lungs. Victims coughed blood, lost weight, developed fevers that came and went. The progression was slow — months or years of gradual decline, punctuated by periods of seeming recovery that always proved false. There was no cure. Doctors could only try to slow the disease and make patients comfortable as they died.',
+                },
+                {
+                  type: 'image',
+                  src: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/No_Spitting_Sign_NY_Subway.jpg',
+                  alt: 'Historical "No Spitting" sign from the early 20th century',
+                  caption: 'Signs like this were common in Colorado Springs during the TB era. Spitting was strictly prohibited in public places to prevent the spread of the "White Plague."',
+                  credit: 'Wikimedia Commons',
+                },
                 {
                   type: 'paragraph',
                   content: 'The leading theory of the era held that fresh air, sunshine, and rest could help TB patients. High altitude was considered especially beneficial — the thin air forced deeper breathing, which supposedly cleared the lungs. This theory, while scientifically dubious, created an industry: tuberculosis resorts in mountain towns across the American West.',
-                },
-                {
+                },                {
                   type: 'quote',
                   content: 'The consumptive who goes to Colorado does not go there to be cured. He goes there to live longer and to die more pleasantly. This is what Colorado offers, and it delivers admirably.',
                   attribution: 'Medical journal',
@@ -66,18 +72,24 @@ export const tuberculosisCity: Article = {
                   level: 2,
                   content: 'The Sanitarium City',
                 },
-                {
-                  type: 'paragraph',
-                  content: 'Colorado Springs had the perfect combination: 6,000 feet of elevation, over 300 days of sunshine per year, dry air, and spectacular mountain scenery. General William Jackson Palmer, who founded the city in 1871, actively marketed it as a health destination. By the 1880s, tuberculosis patients were arriving by the trainload.',
-                },
-                {
-                  type: 'image',
-                  src: 'https://www.ppld.org/sites/default/files/styles/node_image/public/images/node/image_gallery/2012/04/cragmor_patients.jpg',
-                  alt: 'Patients on a porch at Cragmor Sanitarium, Colorado Springs, 1920s',
-                  caption: 'Patients at Cragmor Sanitarium taking the "fresh air cure." The dry, sunny climate of Colorado Springs was believed to be beneficial for those suffering from tuberculosis.',
-                  credit: 'Pikes Peak Library District Special Collections',
-                },
-                {
+                        {
+                          type: 'paragraph',
+                          content: 'Colorado Springs had the perfect combination: 6,000 feet of elevation, over 300 days of sunshine per year, dry air, and spectacular mountain scenery. General William Jackson Palmer, who founded the city in 1871, actively marketed it as a health destination. By the 1880s, tuberculosis patients were arriving by the trainload.',
+                        },
+                        {
+                          type: 'image',
+                          src: 'https://digital.denverlibrary.org/digital/api/singleitem/image/p15330coll22/2360/default.jpg',
+                          alt: 'Modern Woodmen of America Sanatorium, Colorado Springs',
+                          caption: 'The Modern Woodmen of America Sanatorium, established in 1909, was one of the largest tuberculosis facilities in the Pikes Peak region.',
+                          credit: 'Denver Public Library / PPLD',
+                        },
+                        {
+                          type: 'image',
+                          src: 'https://www.ppld.org/sites/default/files/styles/node_image/public/images/node/image_gallery/2012/04/cragmor_patients.jpg',
+                          alt: 'Patients on a porch at Cragmor Sanitarium, Colorado Springs, 1920s',
+                          caption: 'Patients at Cragmor Sanitarium taking the "fresh air cure." The dry, sunny climate of Colorado Springs was believed to be beneficial for those suffering from tuberculosis.',
+                          credit: 'Pikes Peak Library District Special Collections',
+                        },                {
                   type: 'paragraph',
                   content: 'Sanitariums multiplied across the city and its foothills. The most famous was Cragmor, founded in 1905 on a bluff overlooking the city. Cragmor was designed specifically for TB treatment: its buildings faced south to maximize sunlight, with large porches where patients could rest outdoors. The architecture was beautiful, almost resort-like. It was a place to die in luxury.',
                 },
@@ -100,15 +112,21 @@ export const tuberculosisCity: Article = {
                   type: 'paragraph',
                   content: 'The patients were called "lungers" — a term used matter-of-factly, without the stigma it might carry today. They came from across America: factory workers from New England, office clerks from Chicago, farmers from the Midwest. TB didn\'t discriminate by class, though the quality of your care certainly did.',
                 },
-                {
-                  type: 'paragraph',
-                  content: 'Wealthy lungers stayed at places like Cragmor, with private rooms, fine dining, and attentive staff. Middle-class patients filled the boarding houses that proliferated across the city, paying weekly rates for a bed and meals. The poor lived in "tent cities" on the outskirts of town, where canvas shelters provided the fresh air treatment without any of the comfort.',
-                },
-                {
-                  type: 'paragraph',
-                  content: 'A social hierarchy developed. "Chasers" were patients who had come early, while their disease was still manageable. "Lungers" were more advanced cases. "Last-ditchers" were the dying, those who had come too late for the mountain air to help. Everyone knew where they stood. Everyone knew the progression.',
-                },
-                {
+                        {
+                          type: 'paragraph',
+                          content: 'Wealthy lungers stayed at places like Cragmor, with private rooms, fine dining, and attentive staff. Middle-class patients filled the boarding houses that proliferated across the city, paying weekly rates for a bed and meals. The poor lived in "tent cities" on the outskirts of town, where canvas shelters provided the fresh air treatment without any of the comfort.',
+                        },
+                        {
+                          type: 'image',
+                          src: 'https://digital.denverlibrary.org/digital/api/singleitem/image/p15330coll21/9855/default.jpg',
+                          alt: 'A tuberculosis tent colony in Colorado, early 1900s',
+                          caption: 'Poor patients often lived in "tent colonies" consisting of canvas-covered platforms. These were the low-cost version of the fresh air cure.',
+                          credit: 'Denver Public Library Western History Collection',
+                        },
+                        {
+                          type: 'paragraph',
+                          content: 'A social hierarchy developed. "Chasers" were patients who had come early, while their disease was still manageable. "Lungers" were more advanced cases. "Last-ditchers" were the dying, those who had come too late for the mountain air to help. Everyone knew where they stood. Everyone knew the progression.',
+                        },                {
                   type: 'paragraph',
                   content: 'The treatment regimen was oddly leisurely. Patients were expected to rest, breathe deeply, eat well, and avoid exertion. They sat on porches for hours, wrapped in blankets, watching the mountains. They walked short distances, then rested again. They wrote letters home, describing the scenery and their health in equal measure. Time moved slowly in the sanitariums.',
                 },
