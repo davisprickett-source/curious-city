@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { PageCardData } from '@/lib/content/pages'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 
 interface LandingHeroSectionProps {
   slides: PageCardData[]
@@ -119,8 +120,17 @@ export function LandingHeroSection({
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="text-xl sm:text-2xl md:text-3xl text-white/90 max-w-3xl leading-relaxed"
                 >
-                  Untold stories, dark histories, and hidden secrets of cities across America
+                  Local stories, hidden histories, and the places worth knowing
                 </motion.p>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  className="mt-6 max-w-md"
+                >
+                  <NewsletterSignup variant="compact" />
+                </motion.div>
               </motion.div>
             ) : currentSlide ? (
               /* Featured Content Slide */

@@ -46,8 +46,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-neutral-400 text-[15px] leading-relaxed mb-6">
-              Local content for curious people. We uncover the hidden stories,
-              overlooked places, and forgotten history that make each city unique.
+              Where every street has a story.
             </p>
             <p className="text-sm text-[#c65d3b]">
               Made with curiosity.

@@ -526,8 +526,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       )}
 
       {/* White letterbox bars - fixed position, crop both video and text (desktop only) */}
-      <div className="hidden lg:block fixed top-0 left-0 right-0 h-[25vh] bg-white z-40 pointer-events-none" />
-      <div className="hidden lg:block fixed bottom-0 left-0 right-0 h-[25vh] bg-white z-40 pointer-events-none" />
+      <div className="hidden lg:block fixed top-0 left-0 right-0 h-[15vh] bg-white z-40 pointer-events-none" />
+      <div className="hidden lg:block fixed bottom-0 left-0 right-0 h-[15vh] bg-white z-40 pointer-events-none" />
 
       {/* Fade overlays - positioned outside text column to avoid stacking context issues */}
       {/* Mobile fade overlay - positioned right below video, z-30 so nav dropdown appears above */}
@@ -537,13 +537,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       />
 
       {/* Desktop fade overlay - fade text at top of visible area only */}
-      <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '25vh' }} />
+      <div className="hidden lg:block fixed right-0 w-[30%] h-32 bg-gradient-to-b from-white via-white/80 to-transparent z-50 pointer-events-none" style={{ top: '15vh' }} />
 
       {/* Split Screen Section */}
       <div className="lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Fixed on all screens) */}
-        {/* Desktop: extends beyond letterbox bars (20vh-80vh = 60vh tall), bars crop the edges */}
-        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[20vh] lg:h-[60vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
+        {/* Desktop: extends slightly beyond letterbox bars (12vh-88vh = 76vh tall), bars crop edges minimally */}
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[12vh] lg:h-[76vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
           {/* Always show an image - use object-cover to fill without black bars */}
           <img
             src={displayPath}
