@@ -855,7 +855,8 @@ export const minneapolis: CityData = {
             },
           ],
           location: {
-            name: 'Matt\'s Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)',
+            name: 'Matt\',
+      url: 'https://www.google.com/maps/search/?api=1&query=Matt%5C%20Minneapolis's Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)',
             stillExists: true,
           },
         },
@@ -884,6 +885,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'Northeast Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=Northeast%20Minneapolis%20Minneapolis',
             stillExists: true,
           },
         },
@@ -2561,6 +2563,7 @@ export const minneapolis: CityData = {
           },
           location: {
             name: 'Fort Snelling State Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Fort%20Snelling%20State%20Park%20Minneapolis',
             coordinates: { lat: 44.8931, lng: -93.1808 },
             stillExists: true,
           },
@@ -2581,10 +2584,10 @@ export const minneapolis: CityData = {
           image: {
             src: '/images/history/washburn-explosion.jpg',
             alt: 'Historic illustration of the 1878 Washburn Mill explosion',
-            year: '1878',
-          },
+                      },
           location: {
             name: 'Mill City Museum',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mill%20City%20Museum%20Minneapolis',
             coordinates: { lat: 44.9792, lng: -93.2571 },
             stillExists: true,
           },
@@ -2609,6 +2612,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'Downtown Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Minneapolis%20Minneapolis',
             stillExists: true,
           },
         },
@@ -2628,10 +2632,10 @@ export const minneapolis: CityData = {
           image: {
             src: '/images/history/teamsters-strike.jpg',
             alt: 'Strikers gathered during the 1934 Minneapolis Teamsters Strike',
-            year: '1934',
-          },
+                      },
           location: {
             name: 'Minneapolis Warehouse District',
+      url: 'https://www.google.com/maps/search/?api=1&query=Minneapolis%20Warehouse%20District%20Minneapolis',
             stillExists: true,
           },
         },
@@ -2650,6 +2654,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'Downtown Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Minneapolis%20Minneapolis',
             coordinates: { lat: 44.9778, lng: -93.2650 },
             stillExists: true,
           },
@@ -2674,6 +2679,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'Southdale Center, Edina',
+      url: 'https://www.google.com/maps/search/?api=1&query=Southdale%20Center%2C%20Edina%20Minneapolis',
             coordinates: { lat: 44.8809, lng: -93.3222 },
             stillExists: true,
           },
@@ -2698,6 +2704,7 @@ export const minneapolis: CityData = {
           },
           location: {
             name: 'North Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=North%20Minneapolis%20Minneapolis',
             stillExists: true,
           },
         },
@@ -2716,6 +2723,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'St. Anthony Falls',
+      url: 'https://www.google.com/maps/search/?api=1&query=St.%20Anthony%20Falls%20Minneapolis',
             coordinates: { lat: 44.9828, lng: -93.2576 },
             stillExists: true,
           },
@@ -2740,6 +2748,7 @@ export const minneapolis: CityData = {
           ],
           location: {
             name: 'Boom Island Park / Washington Avenue Bridge',
+      url: 'https://www.google.com/maps/search/?api=1&query=Boom%20Island%20Park%20%2F%20Washington%20Avenue%20Bridge%20Minneapolis',
             coordinates: { lat: 44.9892, lng: -93.2724 },
             stillExists: true,
           },
@@ -2760,10 +2769,10 @@ export const minneapolis: CityData = {
           image: {
             src: '/images/history/mill-ruins-1991.jpg',
             alt: 'Ruins of the flour mill after the 1991 fire',
-            year: '1991',
-          },
+                      },
           location: {
             name: 'Mill City Museum',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mill%20City%20Museum%20Minneapolis',
             coordinates: { lat: 44.9792, lng: -93.2571 },
             stillExists: true,
           },
@@ -2782,7 +2791,8 @@ export const minneapolis: CityData = {
             },
           ],
           location: {
-            name: 'Bassett\'s Creek (underground)',
+            name: 'Bassett\',
+      url: 'https://www.google.com/maps/search/?api=1&query=Bassett%5C%20Minneapolis's Creek (underground)',
             coordinates: { lat: 44.9756, lng: -93.2891 },
             stillExists: false,
           },
@@ -2812,6 +2822,7 @@ export const minneapolis: CityData = {
           },
           location: {
             name: 'Minnehaha Falls',
+      url: 'https://www.google.com/maps/search/?api=1&query=Minnehaha%20Falls%20Minneapolis',
             coordinates: { lat: 44.9153, lng: -93.2110 },
             stillExists: true,
           },
@@ -2831,12 +2842,12 @@ export const minneapolis: CityData = {
           featured: true,
           featuredOrder: 1,
           category: 'unsolved',
-          year: '1951',
-          title: 'Three Brothers Walked to the Park. They Never Came Home.',
+                    title: 'Three Brothers Walked to the Park. They Never Came Home.',
           body: 'At 1:30 p.m. on November 10, 1951, three brothers—Kenneth Jr. (8), David (6), and Danny (4)—left their home at 2900 Colfax Avenue North to walk four blocks to Fairview Park. Their older brother Gordon, nine, stayed home sick. When Gordon went to retrieve them at dinner time, the park was empty.\n\nThe family called police at 8 p.m. Detectives didn\'t arrive at the Klein home until 6:30 p.m. the following day—nearly 24 hours after the boys vanished. Two of the boys\' caps were found floating in the icy Mississippi River. Authorities dragged the river, fearing the children had drowned. Nothing was recovered. The case was closed after five days.\n\nDecades later, investigators learned that a neighbor had poured fresh concrete in his basement and replaced his wooden truck bed the day after the boys disappeared. That neighbor became a suspect, but he died before he could be questioned. In 2021, advanced forensic techniques were used to examine the concrete basement. They found nothing.\n\nAuthor Jack El-Hai\'s book "The Lost Brothers" and MPR\'s "Long Lost" podcast have kept the case alive. But 74 years later, no one knows what happened to Kenneth, David, and Danny Klein. No bodies. No witnesses. No closure. Just three empty chairs at a dinner table and a park that\'s been rebuilt twice since 1951.',
           verdict: 'Still unsolved. No suspects, no remains, no answers. Minnesota\'s oldest missing persons case. The concrete basement yielded nothing but dust.',
           location: {
             name: '2900 block of Colfax Avenue North, Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=2900%20block%20of%20Colfax%20Avenue%20North%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 44.9522, lng: -93.2905 },
           },
@@ -2891,12 +2902,12 @@ export const minneapolis: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'unsolved',
-          year: '2021',
-          title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
+                    title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
           body: 'On June 17, 2021, someone called 911 to report human remains behind the Ukrainian American Community Center near the Mississippi River. A few hours later, more remains turned up at NE 3rd and University. Five days after that, on June 22nd, a passerby discovered something on a bench at East Franklin Avenue and West River Parkway: the severed head of 36-year-old Adam Richard Johnson. The word "PERV" had been carved into his forehead. Police said the head appeared to have been frozen, then left to thaw in public view.\n\nOn July 4th—because holidays mean nothing to killers—more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when he was murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim—a conclusion that feels unnecessary when someone carves "PERV" into a frozen forehead and leaves it on a park bench.\n\nMinneapolis police spokesperson John Elder confirmed that some body parts remain unaccounted for. Despite the brazen public display across multiple high-traffic sites, no arrests have been made. The investigation remains open, which is police-speak for "we have no idea."',
           verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
           location: {
             name: 'Multiple locations along Mississippi River, Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20locations%20along%20Mississippi%20River%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 44.9889, lng: -93.2547 },
           },
@@ -2905,7 +2916,7 @@ export const minneapolis: CityData = {
               type: 'article',
               title: 'Gruesome Details in Minneapolis Dismemberment Case',
               publisher: 'KARE11',
-              year: '2021',
+              
               url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
             },
             {
@@ -2942,12 +2953,12 @@ export const minneapolis: CityData = {
           id: 'mpls-dark-4',
           type: 'dark-history',
           category: 'crime',
-          year: '1993',
-          title: 'The Hot Dog Napkin That Solved a 26-Year-Old Murder',
+                    title: 'The Hot Dog Napkin That Solved a 26-Year-Old Murder',
           body: 'On June 13, 1993, 35-year-old Jeanie Childs was found stabbed 65 times in her south Minneapolis apartment. Blood covered the walls of her bedroom, living room, and bathroom. The bathroom was flooding—the killer had left the shower running, as if water could wash away what had been done. Bloody bare footprints led away from the scene. The prints didn\'t match Childs\' socked feet.\n\nDespite collecting DNA evidence, the case went cold for 25 years. In 2015, a Minneapolis homicide detective and FBI special agent reopened the investigation using advances in DNA testing. Forensic scientist Andrea Feia noticed one unknown DNA profile repeated throughout the crime scene—on doorknobs, light switches, the shower handle. That profile was submitted to genealogy websites, including MyHeritage.com, where it matched a first cousin to the killer.\n\nInvestigators constructed a family tree. The branches led to Jerry Westrom, a 52-year-old married father of two from Isanti, about 40 miles north of Minneapolis. He\'d never been a suspect. Police followed Westrom to a hockey game in Wisconsin and waited. When he threw away a napkin after eating a hot dog, they retrieved it. The DNA matched.\n\nWestrom was arrested in February 2019. His footprint matched the bloody prints at the scene. In 2023, a Hennepin County jury deliberated two hours before finding him guilty of first- and second-degree murder. The Minnesota Supreme Court affirmed the conviction. It was Minnesota\'s first murder solved using forensic investigative genetic genealogy. All because of a hot dog napkin at a hockey game.',
           verdict: 'Solved. Jerry Westrom convicted of first-degree murder in 2023. He watched hockey games for decades while Childs\' family waited for answers.',
           location: {
             name: 'South Minneapolis apartment building',
+      url: 'https://www.google.com/maps/search/?api=1&query=South%20Minneapolis%20apartment%20building%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 44.9402, lng: -93.2678 },
           },
@@ -3006,12 +3017,12 @@ export const minneapolis: CityData = {
           id: 'mpls-dark-3',
           type: 'dark-history',
           category: 'crime',
-          year: '1984',
-          title: 'The Murder That Haunted a Police Chief Until the Day He Died',
+                    title: 'The Murder That Haunted a Police Chief Until the Day He Died',
           body: 'On March 8, 1984, 28-year-old Cindy Gerdes was found murdered in her bedroom at the Northlynn Apartments. Police described it as "one of the worst recent homicides"—which is saying something. Gerdes had been stabbed repeatedly around her neck, chest, and back. The weapon appeared to be a French chef\'s stainless steel knife taken from her kitchen\'s butcher block. The knife was never recovered. Her body had been posed.\n\nThe primary suspect didn\'t emerge until 1991, after Patrick Thomas Walsh murdered 35-year-old Pamela Sweeney in Roseville—a coworker who had rebuffed his romantic advances. Walsh had a 1976 conviction for choking a woman in her apartment. He was linked to the 1980 disappearance of 22-year-old Cindy M. Brown. The pattern was unmistakable. But investigators could never connect the forensic dots to charge him with Gerdes\' murder.\n\nWalsh is serving life in prison at Minnesota Correctional Facility in Stillwater for Sweeney\'s murder. Gerdes\' case remains officially unsolved. Former Minneapolis Police Chief Tony Bouza, who died in 2023, was haunted by the case for decades. "Left unaddressed, the searing murder of Cindy Gerdes stands as a damning indictment of our indifference to our neighbor\'s plight," Bouza wrote on his website. He never stopped thinking about her. Neither did her family.',
           verdict: 'Officially unsolved. Patrick Walsh remains the primary suspect but has never been charged. He\'s already serving life for a different murder, so charging him changes nothing—except maybe it changes everything.',
           location: {
             name: 'Northlynn Apartments, Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=Northlynn%20Apartments%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 45.0042, lng: -93.2640 },
           },
@@ -3059,12 +3070,12 @@ export const minneapolis: CityData = {
           id: 'mpls-dark-5',
           type: 'dark-history',
           category: 'disaster',
-          year: '2007',
-          title: 'The Bridge That Fell During Rush Hour',
+                    title: 'The Bridge That Fell During Rush Hour',
           body: 'At 6:05 p.m. on August 1, 2007, the I-35W Mississippi River bridge collapsed without warning during the evening rush hour. The eight-lane interstate bridge, carrying 140,000 vehicles daily, dropped 60 feet into the river below. 111 vehicles plunged with it. 13 people died. 145 were injured. A school bus carrying 52 children teetered on the edge of the collapsed span — every child survived, pulled to safety by passersby who climbed into the wreckage.\n\nThe cause was a design flaw that had existed since the bridge opened in 1967. Gusset plates — the steel sheets connecting the bridge\'s structural elements — were half as thick as they should have been. For forty years, the bridge held. Then, on a summer evening with construction crews adding weight to the deck, it didn\'t.\n\nThe collapse became a national symbol of America\'s crumbling infrastructure. The replacement bridge was built in just over a year — an engineering feat driven by urgency and shame. Memorial plaques at each end of the new bridge list the 13 names. The wreckage was hauled to a fenced storage facility where NTSB investigators spent years studying the failure. Most of it remains there, rusting in a field, a monument to what happens when infrastructure is neglected until it kills people.',
           verdict: 'Design flaw identified. No criminal charges. 13 dead. The bridge that replaced it was built in 14 months.',
           location: {
             name: 'I-35W Bridge over Mississippi River, Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=I-35W%20Bridge%20over%20Mississippi%20River%2C%20Minneapolis%20Minneapolis',
             stillExists: false,
             coordinates: { lat: 44.9778, lng: -93.2467 },
           },
@@ -3122,12 +3133,12 @@ export const minneapolis: CityData = {
           featured: true,
           featuredOrder: 3,
           category: 'crime',
-          year: '2020',
-          title: 'The Corner That Became a Country\'s Reckoning',
+                    title: 'The Corner That Became a Country\'s Reckoning',
           body: '38th Street and Chicago Avenue was an unremarkable South Minneapolis intersection — a Cup Foods convenience store, a bus stop, some apartments. On May 25, 2020, George Floyd was killed here by Minneapolis police officer Derek Chauvin, who knelt on his neck for over nine minutes while Floyd said he couldn\'t breathe. A teenager named Darnella Frazier filmed it on her phone. The video went everywhere. The world watched a man die on a Minneapolis sidewalk.\n\nWhat happened next transformed the intersection itself. Within days, barricades went up. The corner became "George Floyd Square" — an autonomous zone that the city couldn\'t or wouldn\'t clear. A 30-foot steel fist sculpture rose at the center. Murals covered every surface. Flowers and candles accumulated at the spot where Floyd died. For over a year, residents controlled access, turning away traffic, creating a memorial that was also a protest.\n\nThe tension between mourning and neighborhood function has never resolved. Some residents wanted their streets back. Others insisted the memorial must remain undisturbed. The city eventually reopened the intersection to traffic in 2021, but the fist still stands, the murals remain, and the corner carries a weight that won\'t lift. Cup Foods — where Floyd allegedly used a counterfeit $20 bill, the reason police were called — still operates, its role in the story complicated and contested.\n\nChauvin was convicted of murder in 2021 and later pleaded guilty to federal civil rights violations. But the intersection isn\'t about his conviction. It\'s about what a corner becomes when something unforgivable happens there. People still visit. They leave flowers. They take photos of the fist. They stand where Floyd lay. Minneapolis has many dark chapters, but this one is still being written on a South Side corner that used to be unremarkable.',
           verdict: 'Derek Chauvin convicted of murder (2021), sentenced to 22.5 years. The intersection remains a memorial and a wound.',
           location: {
             name: '38th Street and Chicago Avenue, Minneapolis',
+      url: 'https://www.google.com/maps/search/?api=1&query=38th%20Street%20and%20Chicago%20Avenue%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 44.9341, lng: -93.2617 },
           },
@@ -3184,12 +3195,12 @@ export const minneapolis: CityData = {
           id: 'mpls-dark-7',
           type: 'dark-history',
           category: 'unsolved',
-          year: '1987',
-          title: 'Three Black Women Murdered in Two Weeks. Police Said the Cases Weren\'t Connected.',
+                    title: 'Three Black Women Murdered in Two Weeks. Police Said the Cases Weren\'t Connected.',
           body: 'Between November 20 and December 4, 1987, three Black women were found murdered in Twin Cities suburbs. All were in their twenties or thirties. All had been bound. All appeared to have been killed elsewhere before their bodies were dumped. The Minneapolis Urban League urged authorities to investigate possible connections. Police insisted the cases were unrelated. None of the murders have been solved.\n\nTahrita McKinnies, 20, was found frozen in a Brooklyn Park field on November 20, shot in the head. She was seven months pregnant. Her mother, St. Deoloris "Dee" McKinnies, was the first Black woman sworn in as a Minneapolis police officer. Two weeks later, on December 2, Armongene Mason, 40, was discovered on the shoulder of Anoka County Road 23 in Columbus Township—nearly 30 miles from her Minneapolis home. A nursing assistant who had overcome severe epilepsy to build a stable life, Mason had been stabbed, strangled, and bound with ligature marks on her wrists and ankles before being dumped naked on the roadside.\n\nTwo days after that, on December 4, Felicia Fonda Williams, 26, was found near the shores of Wirth Lake in Golden Valley. She had been strangled and was wrapped in white bed sheets. McKinnies and Williams had met each other the previous year, though they weren\'t known to be close friends. According to Urban League president Gleason Glover, "All the victims were Black women about the same age and all were bound in some way." The similarities were undeniable. The police response was not what the families wanted to hear.\n\nDespite the clustering—three Black women, two weeks, all bound, all dumped in suburban locations—Minneapolis and suburban police departments maintained the murders were not connected. A suspect was arrested in Williams\' case but was quickly released. McKinnies\' mother, a police officer herself, watched investigators fail to find answers. Mason\'s case went cold within months. Nearly 40 years later, the Anoka County Sheriff\'s Office Cold Case Unit still seeks tips on Mason\'s murder. No arrests have ever been made in any of the three cases.\n\nThe families are still waiting. The questions remain: Were the cases actually unrelated, or did the system fail to connect dots it should have seen? Three women. Two weeks. Zero convictions.',
           verdict: 'All three cases remain unsolved. No arrests, no convictions, no answers. Anoka County Cold Case Unit still seeking tips: ACSOColdCases@anokacountymn.gov',
           location: {
             name: 'Brooklyn Park, Columbus Township, Golden Valley',
+      url: 'https://www.google.com/maps/search/?api=1&query=Brooklyn%20Park%2C%20Columbus%20Township%2C%20Golden%20Valley%20Minneapolis',
             stillExists: true,
             coordinates: { lat: 45.0594, lng: -93.3563 },
           },
@@ -3217,7 +3228,7 @@ export const minneapolis: CityData = {
               type: 'article',
               title: 'Three Black Women Found Dead in Two Weeks',
               publisher: 'Star Tribune Archives',
-              year: '1987',
+              
             }
           ],
           images: [

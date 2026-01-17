@@ -198,9 +198,15 @@ export const chicago: CityData = {
               publisher: 'Britannica',
               url: 'https://www.britannica.com/biography/James-Jesse-Strang',
             },
+            {
+              title: 'The Pirate King of Lake Michigan',
+              publisher: 'Michigan Radio',
+              url: 'https://www.michiganradio.org/history/2015-07-20/the-pirate-king-of-lake-michigan',
+            }
           ],
           location: {
-            name: 'Beaver Island, Lake Michigan',
+            name: 'Beaver Island',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -241,7 +247,8 @@ export const chicago: CityData = {
             },
           ],
           location: {
-            name: 'University of Chicago, Regenstein Library',
+            name: 'Regenstein Library, University of Chicago (Original Stagg Field Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -272,9 +279,9 @@ export const chicago: CityData = {
           ],
           sources: [
             {
-              title: 'Raising of Chicago',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Raising_of_Chicago',
+              title: 'The Raising of Chicago',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/the-raising-of-chicago/',
             },
             {
               title: 'Raising Chicago',
@@ -282,6 +289,11 @@ export const chicago: CityData = {
               url: 'https://www.enjoyillinois.com/illinois-200/raising-chicago/',
             },
           ],
+          location: {
+            name: 'Downtown Chicago (Briggs House Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'curiosity-5',
@@ -297,18 +309,19 @@ export const chicago: CityData = {
           ],
           sources: [
             {
-              title: 'Ferris Wheel (1893)',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Ferris_Wheel_(1893)',
+              title: 'The First Ferris Wheel',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/the-first-ferris-wheel/',
             },
             {
-              title: 'The 1893 World\'s Fair and the First Ferris Wheel',
-              publisher: 'NEH-Edsitement',
-              url: 'https://edsitement.neh.gov/teachers-guides/1893-worlds-fair-and-first-ferris-wheel',
+              title: 'George Ferris',
+              publisher: 'American Society of Mechanical Engineers',
+              url: 'https://www.asme.org/about-asme/engineering-history/landmarks/110-ferris-wheel',
             },
           ],
           location: {
-            name: 'Jackson Park',
+            name: 'Jackson Park (Original Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: false,
           },
         },
@@ -335,16 +348,21 @@ export const chicago: CityData = {
           ],
           sources: [
             {
+              title: 'The Great Loop Flood of 1992',
+              publisher: 'WTTW Chicago',
+              url: 'https://www.wttw.com/chicago-stories/downtown-disasters/a-comedy-of-errors-how-a-small-leak-became-the-great-loop-flood-of-1992',
+            },
+            {
               title: 'Why The 1992 Loop Flood Is The Most Chicago Story Ever',
               publisher: 'WBEZ',
               url: 'https://www.wbez.org/curious-city/2016/08/21/why-the-1992-loop-flood-is-the-most-chicago-story-ever',
             },
-            {
-              title: 'A Comedy of Errors: How a Small Leak Became the Great Loop Flood of 1992',
-              publisher: 'WTTW Chicago',
-              url: 'https://www.wttw.com/chicago-stories/downtown-disasters/a-comedy-of-errors-how-a-small-leak-became-the-great-loop-flood-of-1992',
-            },
           ],
+          location: {
+            name: 'Kinzie Street Bridge',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'curiosity-7',
@@ -371,13 +389,13 @@ export const chicago: CityData = {
               title: 'Our Civic-Minded Pride',
               publisher: 'Art Institute of Chicago',
               url: 'https://www.artic.edu/articles/74/our-civic-minded-pride',
-            },
-            {
-              title: 'Ask Geoffrey: The History of the Art Institute Lions',
-              publisher: 'WTTW',
-              url: 'https://news.wttw.com/2019/10/02/ask-geoffrey-history-art-institute-lions',
-            },
+            }
           ],
+          location: {
+            name: 'Art Institute of Chicago',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'curiosity-9',
@@ -402,6 +420,11 @@ export const chicago: CityData = {
               url: 'https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/chicago-sanitary-and-ship-canal',
             },
           ],
+          location: {
+            name: 'Chicago Riverwalk',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'curiosity-11',
@@ -417,13 +440,19 @@ export const chicago: CityData = {
           ],
           sources: [
             {
+              title: 'The True Story of the Great Chicago Fire',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/the-true-story-of-the-great-chicago-fire/',
+            },
+            {
               title: 'Mrs. O\'Leary, Cow Cleared by City Council Committee',
               publisher: 'Chicago Tribune',
               url: 'https://www.chicagotribune.com/1997/10/06/mrs-oleary-cow-cleared-by-city-council-committee/',
             },
           ],
           location: {
-            name: 'DeKoven Street (Chicago Fire Academy)',
+            name: 'Chicago Fire Academy',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -445,13 +474,14 @@ export const chicago: CityData = {
           ],
           sources: [
             {
-              title: 'Old Chicago Main Post Office',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Old_Chicago_Main_Post_Office',
-            },
+              title: 'The Old Post Office',
+              publisher: 'Chicago Architecture Center',
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-old-post-office',
+            }
           ],
           location: {
-            name: 'The Old Post Office, 433 W Van Buren',
+            name: 'The Old Post Office',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -475,7 +505,8 @@ export const chicago: CityData = {
             },
           ],
           location: {
-            name: 'LaSalle and Adams Streets',
+            name: 'LaSalle and Adams Streets (Original Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: false,
           },
         },
@@ -493,9 +524,9 @@ export const chicago: CityData = {
           ],
           sources: [
             {
-              title: 'Chicago Alley Greening',
-              publisher: 'City of Chicago',
-              url: 'https://www.chicago.gov/city/en/depts/cdot/supp_info/green_alleys.html',
+              title: 'The Plan of Chicago',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/plan-of-chicago/',
             },
           ],
         },
@@ -505,7 +536,12 @@ export const chicago: CityData = {
           category: 'infrastructure',
           title: 'Chicago has 5 miles of secret underground tunnels nobody planned',
           body: 'Chicago has a 5-mile underground pedestrian network called the Pedway connecting over 50 buildings across downtown. It started in 1951 when the city built one-block tunnels connecting subway lines. Then it just kept growing. The weird part? It was never centrally planned. New segments were added through individual building projects, creating a labyrinth that mirrors the changing priorities of the city itself. It\'s neither discretely administered nor logically organized. Today it includes shops, restaurants, and bursts of unexpected art. Most tourists never find it. Most Chicagoans navigate it by pure instinct. It\'s the ultimate infrastructure accident—a city beneath the city that nobody designed and everyone uses.',
-          images: ['/chicago/curiosities/chicago-curious-pedway.png'],
+          images: [
+            {
+              src: '/chicago/curiosities/chicago-curious-pedway.png',
+              alt: 'The Chicago Pedway network',
+            }
+          ],
           sources: [
             {
               title: 'The Chicago Pedway',
@@ -513,16 +549,16 @@ export const chicago: CityData = {
               url: 'https://www.chicago.gov/city/en/depts/cdot/provdrs/ped/svcs/pedway.html',
             },
             {
-              title: 'Chicago Pedway',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Chicago_Pedway',
-            },
-            {
               title: 'A Visitor\'s Guide to Navigating the Pedway System',
               publisher: 'Choose Chicago',
               url: 'https://www.choosechicago.com/blog/architecture-history/a-visitors-guide-to-navigating-the-pedway-system/',
             }
           ],
+          location: {
+            name: 'Chicago Pedway',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          },
         },
         {
           id: 'curiosity-17',
@@ -530,7 +566,16 @@ export const chicago: CityData = {
           category: 'culture',
           title: 'Chicago dyes its river green with a secret formula guarded by plumbers',
           body: 'Every St. Patrick\'s Day since 1962, Chicago turns its river neon green using a secret formula known only to the Chicago Plumbers Union. The tradition started in 1961 when Stephen Bailey, business manager of the Journeymen Plumbers Local 130, noticed emerald green stains on a plumber\'s overalls. The stains came from a dye used to detect leaks. Bailey, who also happened to be the city\'s St. Patrick\'s Day parade chairman, had an idea. The first attempt in 1962 used 100 pounds of dye and kept the river green for a week. Today they\'ve perfected it: 40 pounds of an orange powder (the formula is still secret) spread by two motorboats over two hours. The river stays green for about five hours. The plumbers union still pays for it and guards the recipe like nuclear codes.',
-          images: ['/chicago/curiosities/chicago-curious-green-river-1.png', '/chicago/curiosities/chicago-curious-green-river-2.png'],
+          images: [
+            {
+              src: '/chicago/curiosities/chicago-curious-green-river-1.png',
+              alt: 'Chicago River dyed green for St. Patrick\'s Day',
+            },
+            {
+              src: '/chicago/curiosities/chicago-curious-green-river-2.png',
+              alt: 'The process of dyeing the Chicago River',
+            }
+          ],
           sources: [
             {
               title: 'Dyeing the Chicago River green is a St. Patrick\'s Day tradition',
@@ -538,16 +583,16 @@ export const chicago: CityData = {
               url: 'https://www.npr.org/2022/03/16/1086988193/st-patricks-day-green-chicago-river',
             },
             {
-              title: 'The History of Chicago River Dyeing',
-              publisher: 'Enjoy Illinois',
-              url: 'https://www.enjoyillinois.com/plan-your-trip/travel-inspiration/the-history-of-chicago-river-dyeing/',
-            },
-            {
-              title: 'WTTW News Explains: Why Does Chicago Dye the River Green for St. Patrick\'s Day?',
+              title: 'WTTW News Explains: Why Does Chicago Dye the River Green?',
               publisher: 'WTTW',
               url: 'https://news.wttw.com/2024/03/11/wttw-news-explains-why-does-chicago-dye-river-green-st-patrick-s-day',
             }
           ],
+          location: {
+            name: 'Chicago River (Michigan Ave Bridge)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          },
         },
         {
           id: 'curiosity-18',
@@ -555,27 +600,22 @@ export const chicago: CityData = {
           category: 'art',
           title: 'Picasso refused to say what his famous Chicago sculpture depicts',
           body: 'In 1967, Chicago unveiled a massive 50-foot steel sculpture by Pablo Picasso in Daley Plaza. Picasso never gave it a title or explained what it represents, and 60 years later, no one can agree on what it is. Popular theories: an aardvark, a bird, an Afghan hound (specifically his pet Kabul), one of his lovers, or a "cow sticking out its tongue." When unveiled, it caused outrage. One alderman demanded it be replaced with a statue of Cubs player Ernie Banks. The Tribune polled passersby who compared it to "a baboon" and "a flying nun." But Picasso held firm: no explanation. He donated the design to Chicago and refused the $100,000 commission. The city wanted an answer. Art critics wanted symbolism. Picasso wanted mystery. Today it\'s a beloved symbol of Chicago, and we still don\'t know what the hell it is. That might be the point.',
-          images: ['/chicago/curiosities/chicago-curious-picasso.png'],
+          images: [
+            {
+              src: '/chicago/curiosities/chicago-curious-picasso.png',
+              alt: 'The Chicago Picasso sculpture',
+            }
+          ],
           sources: [
             {
-              title: 'Chicago Picasso',
-              publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Chicago_Picasso',
-            },
-            {
-              title: 'The story behind the controversial Picasso sculpture',
-              publisher: 'The Art Newspaper',
-              url: 'https://www.theartnewspaper.com/2017/08/07/the-story-behind-the-controversial-picasso-sculpture-that-became-a-symbol-of-chicago',
-            },
-            {
-              title: 'Picasso\'s Sacred Monster Eats Chicago: A Mystery Solved?',
-              publisher: 'Religion Dispatches',
-              url: 'https://religiondispatches.org/picassos-sacred-monster-eats-chicago-a-mystery-solved/',
+              title: 'The Chicago Picasso',
+              publisher: 'Chicago Architecture Center',
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-chicago-picasso',
             }
           ],
           location: {
             name: 'Daley Plaza',
-            coordinates: { lat: 41.8842, lng: -87.6298 },
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         }
@@ -726,11 +766,18 @@ export const chicago: CityData = {
               alt: 'Historic Chicago freight tunnel system',
             }
           ],
-          address: 'Beneath downtown Chicago',
+          address: 'Beneath downtown Chicago (Loop)',
           coordinates: { lat: 41.8781, lng: -87.6298 },
           hours: 'Not accessible to public',
           price: 'Not accessible',
           website: 'https://chicagology.com/transportation/freighttunnels/',
+          sources: [
+            {
+              title: 'The Great Chicago Flood',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/the-great-chicago-flood/',
+            }
+          ],
           tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.',
         },
         {
@@ -749,11 +796,18 @@ export const chicago: CityData = {
               alt: 'California ghost station visible from Blue Line',
             }
           ],
-          address: 'Eisenhower Expressway near California Ave, Chicago, IL',
+          address: 'I-290 (Eisenhower Expressway) near California Ave',
           coordinates: { lat: 41.8743, lng: -87.6971 },
           hours: 'Visible from Blue Line trains',
           price: 'CTA fare',
           website: 'http://forgottenchicago.com/features/remnants-of-the-l/',
+          sources: [
+            {
+              title: 'Remnants of the L',
+              publisher: 'Forgotten Chicago',
+              url: 'http://forgottenchicago.com/features/remnants-of-the-l/',
+            }
+          ],
           tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.',
         },
         {
@@ -785,6 +839,13 @@ export const chicago: CityData = {
           hours: 'Exterior viewable anytime',
           price: 'Free',
           website: 'https://www.chicagoparkdistrict.com',
+          sources: [
+            {
+              title: 'Union Stock Yard Gate',
+              publisher: 'National Park Service',
+              url: 'https://www.nps.gov/places/union-stock-yard-gate.htm',
+            }
+          ],
           tip: 'Combine with a visit to nearby Back of the Yards neighborhood, historically home to stockyard workers.',
         },
         {
@@ -813,6 +874,13 @@ export const chicago: CityData = {
           hours: 'Daily 6am-11pm',
           price: 'Free',
           website: 'https://www.chicagoparkdistrict.com',
+          sources: [
+            {
+              title: 'Jackson Park History',
+              publisher: 'Chicago Park District',
+              url: 'https://www.chicagoparkdistrict.com/parks-facilities/jackson-park',
+            }
+          ],
           tip: 'Look for the original 1893 manhole covers on Wooded Island — they\'re still functional.',
         },
         {
@@ -836,6 +904,13 @@ export const chicago: CityData = {
           hours: 'Daily 7:30am-dusk (May-Oct)',
           price: 'Free',
           website: 'https://lincolnparkconservancy.org/parks-we-serve/alfred-caldwell-lily-pool/',
+          sources: [
+            {
+              title: 'Alfred Caldwell Lily Pool',
+              publisher: 'Lincoln Park Conservancy',
+              url: 'https://lincolnparkconservancy.org/parks-we-serve/alfred-caldwell-lily-pool/',
+            }
+          ],
           tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.',
         },
         {
@@ -863,6 +938,13 @@ export const chicago: CityData = {
           hours: 'Tours by appointment',
           price: 'Free',
           website: 'https://www.chicagotemple.org',
+          sources: [
+            {
+              title: 'Sky Chapel',
+              publisher: 'First United Methodist Church at the Chicago Temple',
+              url: 'https://www.chicagotemple.org/about-us/sky-chapel/',
+            }
+          ],
           tip: 'Call ahead to arrange a tour — the chapel is small and access is limited.',
         },
         {
@@ -882,10 +964,17 @@ export const chicago: CityData = {
               alt: 'Nearly windowless urban building with industrial purpose',
             }
           ],
-          address: 'State St & Adams St, Chicago, IL 60603',
+          address: '208 S State St, Chicago, IL 60604',
           coordinates: { lat: 41.8793, lng: -87.6276 },
           hours: 'Exterior viewable anytime',
           price: 'Free to observe',
+          sources: [
+            {
+              title: 'State & Adams Ice Water Factory',
+              publisher: 'Forgotten Chicago',
+              url: 'http://forgottenchicago.com/features/the-state-adams-ice-water-factory/',
+            }
+          ],
           tip: 'Stand across the street and count the windows — then realize what you\'re looking at.',
         },
         {
@@ -904,11 +993,18 @@ export const chicago: CityData = {
               alt: 'Granville Beach hidden spot on Lake Michigan',
             }
           ],
-          address: 'Granville Ave & Lake Michigan, Chicago, IL 60660',
+          address: '6200 N Sheridan Rd, Chicago, IL 60660',
           coordinates: { lat: 42.0094, lng: -87.6549 },
           hours: 'Daily sunrise-sunset',
           price: 'Free',
           website: 'https://www.chicagoparkdistrict.com',
+          sources: [
+            {
+              title: 'Granville Beach',
+              publisher: 'Chicago Park District',
+              url: 'https://www.chicagoparkdistrict.com/parks-facilities/granville-beach',
+            }
+          ],
           tip: 'No parking lot — street park in Rogers Park and walk east to the lake.',
         },
         {
@@ -935,11 +1031,18 @@ export const chicago: CityData = {
               alt: 'Narcissa Thorne miniature room collection',
             }
           ],
-          address: 'Art Institute of Chicago, 111 S Michigan Ave, Lower Level',
+          address: '111 S Michigan Ave, Chicago, IL 60603',
           coordinates: { lat: 41.8796, lng: -87.6237 },
           hours: 'Thu-Mon 11am-5pm',
           price: 'Art Institute admission required',
           website: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms',
+          sources: [
+            {
+              title: 'Thorne Miniature Rooms',
+              publisher: 'Art Institute of Chicago',
+              url: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms',
+            }
+          ],
           tip: 'Bring reading glasses — the details are microscopic and worth studying closely.',
         },
         {
@@ -967,6 +1070,13 @@ export const chicago: CityData = {
           hours: 'Varies by showtime',
           price: '$12-15 general admission',
           website: 'https://www.musicboxtheatre.com',
+          sources: [
+            {
+              title: 'Music Box Theatre History',
+              publisher: 'Music Box Theatre',
+              url: 'https://musicboxtheatre.com/about/history',
+            }
+          ],
           tip: 'Check the calendar for midnight movies and sing-along screenings — the Music Box does special events right.',
         },
         {
@@ -993,11 +1103,18 @@ export const chicago: CityData = {
               alt: 'Homestead secret garden skyline view',
             }
           ],
-          address: '1924 W Chicago Ave (above Roots Pizza), Chicago, IL 60622',
+          address: '1924 W Chicago Ave, Chicago, IL 60622',
           coordinates: { lat: 41.8958, lng: -87.6758 },
           hours: 'Seasonal, call for hours',
           price: '$$',
           website: 'https://www.homesteadontheroof.com',
+          sources: [
+            {
+              title: 'Homestead on the Roof',
+              publisher: 'The Infatuation',
+              url: 'https://www.theinfatuation.com/chicago/reviews/homestead-on-the-roof',
+            }
+          ],
           tip: 'Reservations recommended — the space is small and fills up quickly on good-weather evenings.',
         },
         {
@@ -1021,6 +1138,13 @@ export const chicago: CityData = {
           hours: 'Library hours vary, campus access only',
           price: 'Free (UChicago campus)',
           website: 'https://www.lib.uchicago.edu/harper/',
+          sources: [
+            {
+              title: 'Harper Memorial Library',
+              publisher: 'University of Chicago',
+              url: 'https://www.lib.uchicago.edu/spaces/harper-memorial-library/',
+            }
+          ],
           tip: 'Ask a UChicago student to show you the basement library — it\'s open but unmarked.',
         },
         {
@@ -1039,11 +1163,18 @@ export const chicago: CityData = {
               alt: 'Project Logan legal graffiti wall murals',
             }
           ],
-          address: 'Between Medill & Fullerton, west of Milwaukee Ave, Chicago, IL',
+          address: '2900 W Fullerton Ave, Chicago, IL 60647',
           coordinates: { lat: 41.9245, lng: -87.7050 },
           hours: 'Anytime',
           price: 'Free',
           website: 'https://anysquared.org',
+          sources: [
+            {
+              title: 'Project Logan',
+              publisher: 'AnySquared',
+              url: 'https://anysquared.org/project-logan/',
+            }
+          ],
           tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.',
         },
         {
@@ -1067,6 +1198,13 @@ export const chicago: CityData = {
           hours: 'Venue hours vary',
           price: 'Exterior viewable anytime',
           website: 'https://victorygardens.org',
+          sources: [
+            {
+              title: 'John Dillinger',
+              publisher: 'FBI',
+              url: 'https://www.fbi.gov/history/famous-cases/john-dillinger',
+            }
+          ],
           tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
         },
         {
@@ -1087,6 +1225,13 @@ export const chicago: CityData = {
           hours: 'Daily 12pm-4am (5am Sat)',
           price: '$$ (Cash Only)',
           website: 'https://greenmilljazz.com',
+          sources: [
+            {
+              title: 'Green Mill History',
+              publisher: 'Green Mill Jazz',
+              url: 'https://greenmilljazz.com/about-us/',
+            }
+          ],
           tip: 'Sit in the booth directly west of the short end of the bar—that was Capone\'s spot because he could see both doors.',
         },
         {
@@ -1094,7 +1239,7 @@ export const chicago: CityData = {
           type: 'hidden-gem',
           name: 'Pullman National Monument',
           category: 'Historic District',
-          description: 'The first planned industrial community in the United States, built by George Pullman for his employees. It was the site of the 1894 Pullman Strike which changed labor law. The Administration Clock Tower Building is the centerpiece of a neighborhood that feels frozen in the 19th century. Walking these streets explains the history of American labor unions better than any textbook.',
+          description: 'The first planned industrial community in the United States, built by George Pullman for his employees. It was the site of the 1894 Pullman Strike which changed labor history. The Administration Clock Tower Building is the centerpiece of a neighborhood that feels frozen in the 19th century. Walking these streets explains the history of American labor unions better than any textbook.',
           images: [
             {
               src: '/chicago/hidden-gems/pullman-monument.jpg',
@@ -1111,8 +1256,15 @@ export const chicago: CityData = {
           hours: 'Visitor Center Daily 9am-5pm',
           price: 'Free',
           website: 'https://www.nps.gov/pull',
+          sources: [
+            {
+              title: 'Pullman National Historical Park',
+              publisher: 'National Park Service',
+              url: 'https://www.nps.gov/pull/index.htm',
+            }
+          ],
           tip: 'Take the Metra Electric line to the Pullman stop—it drops you right at the entrance, just like workers arriving in 1880.',
-        }
+        },
       ],
     },
     {
@@ -1847,6 +1999,7 @@ export const chicago: CityData = {
           },
           location: {
             name: 'Downtown Chicago',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Chicago%20Chicago',
             coordinates: { lat: 41.8827, lng: -87.6233 },
             stillExists: true,
           },
@@ -1865,6 +2018,7 @@ export const chicago: CityData = {
           },
           location: {
             name: 'Haymarket Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Haymarket%20Square%20Chicago',
             coordinates: { lat: 41.8867, lng: -87.6528 },
             stillExists: true,
           },
@@ -1884,10 +2038,10 @@ export const chicago: CityData = {
           image: {
             src: '/images/history/chicago-pile-1.jpg',
             alt: 'Recreation of Chicago Pile-1, the first nuclear reactor',
-            year: '1942',
-          },
+                      },
           location: {
             name: 'University of Chicago (former Stagg Field)',
+      url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Chicago%20(former%20Stagg%20Field)%20Chicago',
             coordinates: { lat: 41.7919, lng: -87.5998 },
             stillExists: true,
           },
@@ -1906,6 +2060,7 @@ export const chicago: CityData = {
           },
           location: {
             name: '29th Street Beach (former)',
+      url: 'https://www.google.com/maps/search/?api=1&query=29th%20Street%20Beach%20(former)%20Chicago',
             coordinates: { lat: 41.8412, lng: -87.6089 },
             stillExists: false,
           },
@@ -1920,10 +2075,10 @@ export const chicago: CityData = {
           image: {
             src: '/images/history/1968-dnc.jpg',
             alt: 'Police confronting protesters at 1968 Democratic National Convention',
-            year: '1968',
-          },
+                      },
           location: {
             name: 'Grant Park / Michigan Avenue',
+      url: 'https://www.google.com/maps/search/?api=1&query=Grant%20Park%20%2F%20Michigan%20Avenue%20Chicago',
             coordinates: { lat: 41.8760, lng: -87.6189 },
             stillExists: true,
           },
@@ -1943,10 +2098,10 @@ export const chicago: CityData = {
           image: {
             src: '/images/history/eastland.jpg',
             alt: 'The capsized SS Eastland in the Chicago River',
-            year: '1915',
-          },
+                      },
           location: {
             name: 'Chicago River at LaSalle Street',
+      url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
             coordinates: { lat: 41.8873, lng: -87.6322 },
             stillExists: true,
           },
@@ -1960,6 +2115,7 @@ export const chicago: CityData = {
           source: 'Chicago Park District',
           location: {
             name: 'Northerly Island / Museum Campus',
+      url: 'https://www.google.com/maps/search/?api=1&query=Northerly%20Island%20%2F%20Museum%20Campus%20Chicago',
             coordinates: { lat: 41.8657, lng: -87.6078 },
             stillExists: true,
           },
@@ -1974,10 +2130,10 @@ export const chicago: CityData = {
           image: {
             src: '/images/history/chicago-flood-1992.jpg',
             alt: 'Water flooding into Loop building basement during 1992 flood',
-            year: '1992',
-          },
+                      },
           location: {
             name: 'The Loop',
+      url: 'https://www.google.com/maps/search/?api=1&query=The%20Loop%20Chicago',
             coordinates: { lat: 41.8819, lng: -87.6278 },
             stillExists: true,
           },
@@ -1997,73 +2153,28 @@ export const chicago: CityData = {
           featured: true,
           featuredOrder: 1,
           category: 'crime',
-          year: '1893-1896',
-          title: 'The Murder Castle: America\'s First Serial Killer Built His Own Death Trap',
-          body: 'While the 1893 World\'s Fair showed off the best of civilization, H.H. Holmes was busy running its dark reflection just blocks away. He constructed a three-story "Murder Castle" at 63rd and Wallace specifically designed to process victims like livestock. The architecture was a weapon: staircases to nowhere, doors opening to brick walls, soundproof bedrooms with gas jets controlled from his office, and a greased chute leading directly to a basement crematorium. He preyed on the thousands of transient women flooding the city for the Fair, turning their anonymity into his cover.\n\nHolmes used charm and elaborate cons before killing them for insurance money. He also sold their skeletons to medical schools. "I was born with the devil in me," he later confessed. He claimed 27 victims; the real number is likely in the hundreds. The building mysteriously burned down in 1895 before it could become a macabre tourist attraction—possibly torched by neighbors who were not interested in living next to America\'s first documented murder factory. The Castle is gone, but the post office that stands there now feels famously cold.',
-          verdict: 'Holmes was hanged in 1896. The true body count remains unknown. The lot sat empty for over a century.',
-          images: [
-            {
-              src: '/chicago/dark-history/holmes-1.png',
-              alt: 'H.H. Holmes Murder Castle illustration',
-            }
-          ],
+          title: 'H.H. Holmes: The "Devil in the White City"',
+          body: 'While Chicago celebrated the 1893 World\'s Fair, H.H. Holmes was operating a "Murder Castle" just blocks away in Englewood. He designed the building specifically for killing: soundproof rooms, trap doors, chutes leading to a basement crematorium and acid vats. He lured fair visitors, employees, and lovers into his labyrinth, then methodically executed them for insurance money, skeletal remains to sell to medical schools, or pure psychopathy. He confessed to 27 murders, though some estimates exceed 200. He is widely considered America\'s first documented serial killer—a monster who used the distraction of progress to feed his own dark ambition.',
+          verdict: 'Convicted and hanged in 1896. The "Castle" was destroyed by fire in 1895 and later demolished. A post office now sits on the site.',
           sources: [
             {
               type: 'book',
               title: 'The Devil in the White City',
               author: 'Erik Larson',
               isbn: '9780375725609',
-              year: '2003',
-              url: 'https://www.amazon.com/Devil-White-City-Madness-Changed/dp/0375725601',
-            },
-            {
-              type: 'book',
-              title: 'Depraved: The Definitive True Story of H.H. Holmes',
-              author: 'Harold Schechter',
-              isbn: '9780671025472',
-              year: '1994',
-              url: 'https://www.amazon.com/Depraved-Definitive-Story-H-Holmes/dp/0671025473',
+              url: 'https://www.eriklarsonbooks.com/book/the-devil-in-the-white-city/',
             },
             {
               type: 'article',
-              title: 'H.H. Holmes: America\'s First Serial Killer',
-              publisher: 'History.com',
-              year: '2020',
-              url: 'https://www.history.com/topics/19th-century/hh-holmes',
-            },
-            {
-              type: 'article',
-              title: 'The Murder Castle of H.H. Holmes',
-              publisher: 'Smithsonian Magazine',
-              author: 'Tony Perrottet',
-              year: '2017',
-              url: 'https://www.smithsonianmag.com/history/murder-castle-hh-holmes-180964740/',
-            },
-            {
-              type: 'documentary',
-              title: 'H.H. Holmes: America\'s First Serial Killer',
-              platform: 'History Channel',
-              year: '2004',
-              url: 'https://www.imdb.com/title/tt0437714/',
-            },
-            {
-              type: 'podcast',
               title: 'H.H. Holmes',
-              show: 'Stuff You Missed in History Class',
-              platform: 'iHeartRadio',
-              url: 'https://www.iheart.com/podcast/105-stuff-you-missed-in-histor-21124503/',
+              publisher: 'Chicago History Museum',
+              url: 'https://www.chicagohistory.org/hh-holmes-murder-castle/',
             },
-            {
-              type: 'video',
-              title: 'The Murder Castle: H.H. Holmes Explained',
-              platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=kU7JuFGnJTU',
-            }
           ],
           location: {
-            name: '63rd and Wallace Street, Englewood',
-            coordinates: { lat: 41.7794, lng: -87.6394 },
-            stillExists: false,
+            name: 'Englewood Post Office (Former Murder Castle Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
           },
         },
         {
@@ -2072,8 +2183,7 @@ export const chicago: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'disaster',
-          year: '1903',
-          title: 'The "Fireproof" Theater That Killed 602 People',
+                    title: 'The "Fireproof" Theater That Killed 602 People',
           body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
           verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',
           images: [
@@ -2137,6 +2247,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Randolph Street, Loop (site now occupied by Oriental Theatre)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Randolph%20Street%2C%20Loop%20(site%20now%20occupied%20by%20Oriental%20Theatre)%20Chicago',
             coordinates: { lat: 41.8847, lng: -87.6279 },
             stillExists: false,
           },
@@ -2147,8 +2258,7 @@ export const chicago: CityData = {
           featured: true,
           featuredOrder: 3,
           category: 'crime',
-          year: '1929',
-          title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
+                    title: 'St. Valentine\'s Day Massacre: Love Was Not in the Air',
           body: 'On February 14, 1929, seven members of Chicago\'s North Side Gang were lined up against a garage wall at 2122 North Clark Street and executed with Thompson submachine guns. The killers wore police uniforms—because if you\'re going to murder seven men in broad daylight, you might as well look official. The hit, widely believed orchestrated by Al Capone to eliminate rival Bugs Moran, shocked a nation that thought it had seen peak Prohibition violence. Ironically, Moran was supposed to be there but arrived late. Punctuality saves lives. No one was ever convicted. The massacre helped turn public opinion against Prohibition and led to the creation of America\'s first crime laboratory—because Chicago needed scientific help identifying which mob was killing which.',
           verdict: 'Officially unsolved, though Capone\'s fingerprints are everywhere but the court record. Seven dead. Zero convictions.',
           images: [
@@ -2208,6 +2318,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: '2122 North Clark Street (building demolished in 1967)',
+      url: 'https://www.google.com/maps/search/?api=1&query=2122%20North%20Clark%20Street%20(building%20demolished%20in%201967)%20Chicago',
             coordinates: { lat: 41.9204, lng: -87.6363 },
             stillExists: false,
           },
@@ -2216,8 +2327,7 @@ export const chicago: CityData = {
           id: 'chi-dark-3',
           type: 'dark-history',
           category: 'cold-case',
-          year: '1956',
-          title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
+                    title: 'The Grimes Sisters: Elvis, a Movie, and a 70-Year Mystery',
           body: 'On December 28, 1956, Barbara (15) and Patricia (12) Grimes left home to see "Love Me Tender" at the Brighton Theater. They\'d already seen Elvis\'s movie debut 11 times. They never made it to a 12th. Three weeks later, their naked, frozen bodies were found dumped along German Church Road in Willow Springs. Despite one of the largest investigations in Chicago history—300 officers, thousands of interviews, even a personal plea from Elvis himself urging the killer to come forward—no one was ever charged. Multiple men falsely confessed. The case file remains open nearly 70 years later. The sisters went to see a movie about love and came home in body bags.',
           verdict: 'Unsolved. Chicago PD still accepts tips. The killer either died or kept his mouth shut for seven decades.',
           images: [
@@ -2272,6 +2382,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Bodies found in Willow Springs; last seen in Brighton Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Bodies%20found%20in%20Willow%20Springs%3B%20last%20seen%20in%20Brighton%20Park%20Chicago',
             stillExists: true,
           },
         },
@@ -2286,8 +2397,7 @@ export const chicago: CityData = {
           featured: true,
           featuredOrder: 4,
           category: 'disaster',
-          year: '1958',
-          title: 'Our Lady of the Angels: The School Fire That Changed America',
+                    title: 'Our Lady of the Angels: The School Fire That Changed America',
           body: 'On December 1, 1958, fire broke out in the basement of Our Lady of the Angels School in Humboldt Park during afternoon classes. The blaze spread rapidly through the 55-year-old wooden structure. 92 children and 3 nuns died—most from smoke inhalation, others from jumping from second-story windows onto concrete. Parents arriving to pick up their children found bodies lined up on the sidewalk, covered with coats. The cause was never definitively determined, though arson was suspected. The tragedy shocked a nation that assumed schools were safe and led to comprehensive fire safety reforms: mandatory sprinklers, fire drills, panic bars, fire-resistant construction. Every fire code in every American school today exists because 95 people burned to death in a Catholic elementary school on the Northwest Side.',
           verdict: 'Second-deadliest school fire in U.S. history. No one was ever charged. Schools nationwide installed sprinklers.',
           images: [
@@ -2347,6 +2457,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Our Lady of the Angels School, 909 N Avers Ave, Humboldt Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Our%20Lady%20of%20the%20Angels%20School%2C%20909%20N%20Avers%20Ave%2C%20Humboldt%20Park%20Chicago',
             coordinates: { lat: 41.8965, lng: -87.7211 },
             stillExists: false,
           },
@@ -2424,6 +2535,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: '8213 W Summerdale Ave, Norwood Park Township',
+      url: 'https://www.google.com/maps/search/?api=1&query=8213%20W%20Summerdale%20Ave%2C%20Norwood%20Park%20Township%20Chicago',
             coordinates: { lat: 42.0090, lng: -87.8416 },
             stillExists: false,
           },
@@ -2437,8 +2549,7 @@ export const chicago: CityData = {
           id: 'chi-dark-6',
           type: 'dark-history',
           category: 'disaster',
-          year: '1979',
-          title: 'Flight 191: The Deadliest Plane Crash in American History',
+                    title: 'Flight 191: The Deadliest Plane Crash in American History',
           images: [
             {
               src: '/chicago/dark-history/flight-1.png',
@@ -2478,7 +2589,7 @@ export const chicago: CityData = {
               type: 'article',
               title: 'NTSB Report: American Airlines Flight 191',
               publisher: 'National Transportation Safety Board',
-              year: '1979',
+              
               url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7917.pdf',
             },
             {
@@ -2503,7 +2614,8 @@ export const chicago: CityData = {
             }
           ],
           location: {
-            name: 'Near O\'Hare Airport, Des Plaines',
+            name: 'Near O\',
+      url: 'https://www.google.com/maps/search/?api=1&query=Near%20O%5C%20Chicago'Hare Airport, Des Plaines',
             coordinates: { lat: 42.0022, lng: -87.9384 },
             stillExists: true,
           },
@@ -2512,8 +2624,7 @@ export const chicago: CityData = {
           id: 'chi-dark-1',
           type: 'dark-history',
           category: 'unsolved',
-          year: '1982',
-          title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
+                    title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
           body: 'In late September 1982, seven people in the Chicago area died after taking Extra-Strength Tylenol capsules laced with potassium cyanide. The victims—ranging from a 12-year-old girl to a 35-year-old postal worker—bought bottles from different stores across the suburbs, meaning someone was walking into pharmacies and placing poisoned pills on shelves like a twisted scavenger hunt. The murders sparked nationwide panic and an immediate recall of 31 million bottles. The case led to tamper-proof packaging, changed consumer product safety forever, and introduced America to the concept that someone might kill you for absolutely no reason other than the thrill of randomness. Despite one of the FBI\'s most intensive investigations and 40+ years of tips, no one has ever been charged. James Lewis, who sent an extortion letter, spent time in prison for that but was never connected to the murders. The killer is either dead or still out there, having gotten away with one of the most terrifying crimes in American history.',
           verdict: 'Unsolved. The case remains open. All victims died within 72 hours. The killer was never caught.',
           images: [
@@ -2574,6 +2685,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Multiple Chicago suburbs',
+      url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20Chicago%20suburbs%20Chicago',
             stillExists: true,
           },
         },
@@ -2581,8 +2693,7 @@ export const chicago: CityData = {
           id: 'chi-dark-9',
           type: 'dark-history',
           category: 'disaster',
-          year: '1915',
-          title: 'The SS Eastland: The Shipwreck That Killed More People Than the Titanic—At the Dock',
+                    title: 'The SS Eastland: The Shipwreck That Killed More People Than the Titanic—At the Dock',
           body: 'On July 24, 1915, the SS Eastland capsized while tied to the wharf in the Chicago River, killing 844 people—more passengers than the Titanic. The tragic irony is that the ship sank because of safety regulations. After the Titanic disaster, new laws required extra lifeboats, making the already unstable Eastland dangerously top-heavy.\n\nAs thousands of Western Electric employees boarded for a company picnic, the ship simply rolled over like a dead whale. It happened in minutes, right downtown. Passersby watched in horror as hundreds trapped below decks drowned in the muck of the river, just feet from the safety of the dock. Bodies were pulled from the water and laid out in rows along the wharf. The 2nd Regiment Armory became a makeshift morgue.\n\nMost victims were young Czech immigrants in their twenties. Entire families were wiped out. It remains the largest loss of life from a single shipwreck on the Great Lakes—a forgotten tragedy, overshadowed by its more cinematic Atlantic cousin.',
           verdict: 'Investigation blamed poor design and negligent loading procedures. The ship\'s captain was charged with criminal negligence but acquitted. The Eastland was later salvaged, renamed, and used as a naval training vessel.',
           images: [
@@ -2623,6 +2734,7 @@ export const chicago: CityData = {
           ],
           location: {
             name: 'Chicago River at LaSalle Street',
+      url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
             coordinates: { lat: 41.8873, lng: -87.6322 },
             stillExists: true,
           },

@@ -118,7 +118,8 @@ export const raleigh: CityData = {
                                       url: 'https://www.candidslice.com/the-raleigh-underground-an-abandoned-mall-right-beneath-our-feet/',
                                     },
                                   ],
-                                  location: { name: 'Village District (Cameron Village)', stillExists: false },
+                                  location: { name: 'Village District (Cameron Village)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Village%20District%20(Cameron%20Village)%20Raleigh', stillExists: false },
                                 },
         {
                                   id: 'curiosity-6',
@@ -126,8 +127,7 @@ export const raleigh: CityData = {
                                   category: 'history',
                                   title: 'The city is named after a man whose severed head became a family heirloom',
                                   body: 'Sir Walter Raleigh, the English explorer and favorite of Queen Elizabeth I, never set foot in the New World. He was executed in London in 1618, beheaded for treason. But his story in Raleigh, North Carolina, doesn\'t end there. After his execution, his wife, Bess Throckmorton, received his embalmed head as a grim keepsake. For the next 29 years, she reportedly carried it with her in a velvet bag, displaying it as a macabre memento. His son, Carew Raleigh, inherited the relic, holding onto it until his own death. The city of Raleigh is named after this man whose severed head traveled as a family heirloom for decades—a strange, dark piece of history for the genteel Southern capital. You\'d think a city named after him would at least keep all its parts together.',
-                                  year: '1618',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/walter-raleigh.webp',
                                     alt: 'Portrait of Sir Walter Raleigh',
                                     credit: 'Getty Images',
@@ -144,8 +144,7 @@ export const raleigh: CityData = {
                           category: 'history',
                           title: 'Amelia Earhart\'s advice to a 15-year-old girl created NC State\'s first female engineer',
                           body: 'In 1931, Amelia Earhart landed at Raleigh Municipal Airport—the city\'s first airport, which opened in 1929 with three runways at what\'s now Tryon Road and Highway 70. During her visit, Earhart met 15-year-old Katharine Stinson, an aspiring pilot. Earhart\'s advice was blunt: "Don\'t become a pilot, become an engineer." Stinson took it to heart. She enrolled at NC State and in 1945 became the university\'s first female engineering graduate. The airport operated until 1973, when Raleigh-Durham International replaced it. For decades, the crumbling ruins of the original runway remained visible in an undeveloped field. In 2024, those ruins were finally buried beneath a new apartment complex. The complex\'s name? The Ninety-Nine—named after the women\'s aviation organization Amelia Earhart once led. A fitting tribute: the place where Earhart redirected one woman\'s ambition now bears the name of the group she founded to lift others.',
-                          year: '1931',
-                          images: [
+                                                    images: [
                             {
                               src: '/raleigh/curiosities/earhart-raleigh.png',
                               alt: 'Amelia Earhart at Raleigh Municipal Airport in 1931',
@@ -162,7 +161,8 @@ export const raleigh: CityData = {
                               url: 'https://www.wral.com/story/amelia-earhart-s-advice-spurred-nc-state-s-1st-female-engineering-grad/15775707/',
                             },
                           ],
-                          location: { name: 'Former Raleigh Municipal Airport site (Tryon Road & Highway 70)', stillExists: false },
+                          location: { name: 'Former Raleigh Municipal Airport site (Tryon Road & Highway 70)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Former%20Raleigh%20Municipal%20Airport%20site%20(Tryon%20Road%20%26%20Highway%2070)%20Raleigh', stillExists: false },
                         },
         {
                                   id: 'curiosity-14',
@@ -170,8 +170,7 @@ export const raleigh: CityData = {
                                   category: 'history',
                                   title: 'NC State has underground steam tunnels with a mysterious shrine',
                                   body: 'After NC State built a power plant in 1924 for $107,000, contractor J.A. Gardner installed a network of concrete steam tunnels crisscrossing the entire campus, carrying pipes and utilities from building to building. The steam can reach 1,000 degrees. Students discovered that manholes across campus offered access, and the tunnels became legendary—graffiti dating to the 1950s still marks the walls. In the 1980s, a group of students used the tunnels as a secret meeting place to play Dungeons & Dragons. Some of those D&D players plotted and carried out a murder at a restaurant on Western Boulevard in 1988, spawning two books and a TV miniseries. Urban explorers who venture into the tunnels today—despite post-9/11 security crackdowns—report finding hidden passages, decades of graffiti, and most strangely, a shrine with recently-lit candles. Whether it\'s Pagan worship, evidence of a secret society, or elaborate trolling remains a campus mystery. The steam still flows. The shrine still burns.',
-                                  year: '1924',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/ncstate-steam.png',
                                     alt: 'NC State steam tunnels entrance',
                                     credit: 'Urban Exploration Photo',
@@ -186,7 +185,8 @@ export const raleigh: CityData = {
                                       url: 'https://www.technicianonline.com/arts_entertainment/scary-stories-to-tell-in-the-dorm-room-nc-state-s-spookiest-urban-legends/article_18367654-1cc4-11eb-993a-6bfa8dbe9fe2.html',
                                     },
                                   ],
-                                  location: { name: 'NC State Campus', stillExists: true },
+                                  location: { name: 'NC State Campus',
+      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Campus%20Raleigh', stillExists: true },
                                 },
         {
                                   id: 'curiosity-2',
@@ -196,8 +196,7 @@ export const raleigh: CityData = {
                                   category: 'underground',
                                   title: 'An entire river flows through downtown in a Victorian tunnel',
                                   body: 'The Pigeon House Branch — formerly Buffalo Branch — is a river that flows through downtown Raleigh via a century-old cobblestone tunnel system beneath West and Peace Streets. Built in the early 1900s to "tame" this "rambunctious" creek, the rectangular tunnel with support pillars feels like a mine shaft and takes 15 minutes to walk through. Most people have no idea this waterway exists beneath their feet. The stream will be resurrected in the new Smoky Hollow Park between 2025 and 2027.',
-                                  year: 'early 1900s',
-                                  images: [
+                                                                    images: [
                                     {
                                       src: '/raleigh/curiosities/pigeon-house0-771x513.jpg',
                                       alt: 'The Pigeon House Branch tunnel entrance',
@@ -235,8 +234,7 @@ export const raleigh: CityData = {
                                   category: 'architecture',
                                   title: 'The world\'s first column-free roof was built here—for cattle shows',
                                   body: 'In 1952, when the North Carolina State Fair needed a new livestock pavilion, they didn\'t just get a barn; they got an architectural revolution. The J.S. Dorton Arena, designed by Polish-born architect Matthew Nowicki, featured the world\'s first column-free suspended roof. Two massive, intersecting parabolic arches support a saddle-shaped concrete roof that spans 300 feet without a single interior column, creating an uninterrupted space for livestock and spectators. The engineering was so audacious that contractors initially refused to build it. Nowicki tragically died in a plane crash before seeing his masterpiece completed. Today, every domed stadium, every convention center, every cable-stayed arena in the world owes a debt to this building, designed to host cattle shows and 4-H competitions. The American Institute of Architects calls it one of the most significant buildings in American history. And twice a year, during the state fair, thousands walk past it to get funnel cakes, completely unaware they\'re standing next to a genuine architectural marvel.',
-                                  year: '1952',
-                                  images: [
+                                                                    images: [
                                     {
                                       src: '/raleigh/curiosities/raleigh-cur-state-fiar.png',
                                       alt: 'NC State Fair',
@@ -247,7 +245,8 @@ export const raleigh: CityData = {
                                     },
                                   ],
                                   source: 'NC State Fair',
-                                  location: { name: 'NC State Fairgrounds', stillExists: true },
+                                  location: { name: 'NC State Fairgrounds',
+      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Fairgrounds%20Raleigh', stillExists: true },
                                 },
         {
                                   id: 'curiosity-9',
@@ -255,8 +254,7 @@ export const raleigh: CityData = {
                                   category: 'history',
                                   title: 'Lincoln\'s cousin married Andrew Johnson—then they became aldermen together',
                                   body: 'Andrew Johnson was born in Raleigh in 1808, but his strangest connection to the city came years after he left. In 1827, 18-year-old Johnson married 16-year-old Eliza McCardle in Greeneville, Tennessee. The officiant was Justice of the Peace Mordecai Lincoln—first cousin of Thomas Lincoln, Abraham Lincoln\'s father. This means the man who would become president after Lincoln\'s assassination was connected to the Lincoln family years before either man held office. The coincidence deepened: in 1829, Johnson and Mordecai Lincoln were both elected as town aldermen in Greeneville, serving together in local government. Decades later, when John Wilkes Booth killed Abraham Lincoln in 1865, Andrew Johnson—married by a Lincoln, colleague of a Lincoln, Raleigh-born son of a Capitol janitor—became the 17th President of the United States. History doesn\'t just love a good setup. Sometimes it writes the whole damn script.',
-                                  year: '1827',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/andrew-johnson-marriage.png',
                                     alt: 'Andrew Johnson and Eliza McCardle wedding illustration',
                                     credit: 'Historical Illustration',
@@ -278,8 +276,7 @@ export const raleigh: CityData = {
                           category: 'history',
                           title: 'America\'s 5th-oldest amusement park still runs on a 1911 carousel',
                           body: 'Pullen Park, established in 1887 when philanthropist Richard Stanhope Pullen donated 80 acres of farmland to Raleigh, was North Carolina\'s first public park. It\'s also the 5th oldest continuously operating amusement park in the United States and the 16th oldest in the world. The park\'s centerpiece—a hand-carved wooden carousel built in 1911—still spins today, alongside a miniature train, pedal boats, and kiddie boats. For 138 years, generations of Raleigh children have ridden the same painted horses their great-grandparents rode. The carousel\'s wooden animals were carved by the Dentzel Company of Philadelphia, and each horse is a work of art. While other cities tore down their carousels or sold them to collectors, Raleigh kept spinning. The park that started as one man\'s gift has outlasted him, his children, and everyone who attended its opening. The horses just keep going round.',
-                          year: '1887',
-                          images: [
+                                                    images: [
                             {
                               src: '/raleigh/curiosities/pullen-park-carousel.png',
                               alt: 'Pullen Park carousel built in 1911',
@@ -296,7 +293,8 @@ export const raleigh: CityData = {
                               url: 'https://www.nctripping.com/pullen-park-raleigh-nc/',
                             },
                           ],
-                          location: { name: 'Pullen Park', stillExists: true },
+                          location: { name: 'Pullen Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Pullen%20Park%20Raleigh', stillExists: true },
                         },
         {
                                   id: 'curiosity-ad-3',
@@ -309,14 +307,14 @@ export const raleigh: CityData = {
                                   category: 'invention',
                                   title: 'Raleigh invented the barcode that runs global capitalism',
                                   body: 'George Joseph Laurer, born in Raleigh in 1925, invented the UPC barcode while working at IBM\'s Research Triangle Park in the early 1970s. The original design was a circular bulls eye pattern, but it smeared during printing. Laurer created the vertical stripe pattern now found on virtually every product sold worldwide. He held 28 patents and died at his home in Wendell (near Raleigh) in 2019 at age 94. Every time you scan something at a store — every transaction, every inventory count, every supply chain ping — you\'re using technology invented in the genteel South to optimize late-stage capitalism. The irony is exquisite.',
-                                  year: '1970s',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/upc-image.png',
                                     alt: 'UPC barcode',
                                     credit: 'IBM Research',
                                   },
                                   source: 'IBM Research',
-                                  location: { name: 'Research Triangle Park', stillExists: true },
+                                  location: { name: 'Research Triangle Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true },
                                 },
         {
                           id: 'curiosity-astroturf',
@@ -324,8 +322,7 @@ export const raleigh: CityData = {
                           category: 'invention',
                           title: 'Raleigh invented the fake grass that replaced real grass everywhere',
                           body: 'In the early 1960s, a team of researchers at Chemstrand—a company located at Research Triangle Park—created the first viable artificial turf. David Chaney, who moved to Raleigh in 1960 and later became dean of NC State\'s College of Textiles, headed the team. The initial goal was indoor applications—sports facilities that couldn\'t grow real grass. The first major installation was Houston\'s Astrodome in 1966, which gave the product its name: AstroTurf. The invention fundamentally changed sports, landscaping, and urban design. High schools got football fields in climates where grass wouldn\'t grow. Cities installed turf in playgrounds that saw too much traffic. Indoor sports became viable year-round. And every artificial lawn, every synthetic soccer pitch, every fake putting green in a basement traces back to a Raleigh lab where scientists figured out how to make plastic blades behave like biology. The grass is always greener—because it\'s polyethylene.',
-                          year: '1960s',
-                          image: {
+                                                    image: {
                             src: '/raleigh/curiosities/astroturf.png',
                             alt: 'Early AstroTurf installation',
                             credit: 'Research Triangle Park',
@@ -340,7 +337,8 @@ export const raleigh: CityData = {
                               url: 'https://www.rtp.org/2017/06/what-is-rtp/',
                             },
                           ],
-                          location: { name: 'Research Triangle Park', stillExists: true },
+                          location: { name: 'Research Triangle Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true },
                         },
         {
                                   id: 'curiosity-5',
@@ -354,7 +352,8 @@ export const raleigh: CityData = {
                                     alt: 'Aerial view of abandoned Raleigh Speedway',
                                     credit: 'Historical Photo',
                                   },
-                                  location: { name: 'Near Atlantic Avenue', stillExists: true },
+                                  location: { name: 'Near Atlantic Avenue',
+      url: 'https://www.google.com/maps/search/?api=1&query=Near%20Atlantic%20Avenue%20Raleigh', stillExists: true },
                                 },
         {
                                   id: 'curiosity-ad-4',
@@ -367,8 +366,7 @@ export const raleigh: CityData = {
                           category: 'law',
                           title: 'A Methodist man was fined one penny for singing badly in church—and created legal precedent',
                           body: 'In 1872, William Linkhaw—described by the New York Times as "an earnest Methodist brother" with moral character "above suspicion"—stood trial in Lumberton for disrupting church services with his terrible singing. Congregation members convinced authorities to press charges. Judge Daniel Russell (a future NC governor) fined him one penny. Linkhaw appealed. The North Carolina Supreme Court overturned his conviction, ruling he lacked malicious intent. Justice Thomas Settle declared that Linkhaw "is a proper subject for discipline of his church, but not for the discipline of the courts." The case established important precedent about religious freedom and the limits of criminal law—while simultaneously creating the persistent myth that singing off-key is illegal in North Carolina. The truth is better: a man with a bad voice accidentally defined where church authority ends and civil liberty begins. The fine was one penny. The principle was priceless.',
-                          year: '1872',
-                          image: {
+                                                    image: {
                             src: '/raleigh/curiosities/singing-church.png',
                             alt: '19th century church service illustration',
                             credit: 'Historical Illustration',
@@ -390,8 +388,7 @@ export const raleigh: CityData = {
                                   category: 'history',
                                   title: 'A US President was born in a tavern\'s kitchen loft — and later used as a flophouse',
                                   body: 'Andrew Johnson, the 17th President, was born on December 29, 1808 in the upstairs loft of a detached kitchen at Casso\'s Inn, a roadside tavern in Raleigh. His father Jacob worked as a hostler and Capitol janitor; his mother Mary was a weaver. The structure later served as a flophouse for hobos during the Great Depression and was only moved to Mordecai Historic Park in 1975. Strangely, when President Johnson returned to Raleigh in 1867, newspapers made no mention whatsoever of any visit to his birthplace.',
-                                  year: '1808',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/andrew-johnson.png',
                                     alt: 'Andrew Johnson birthplace at Mordecai Historic Park',
                                     credit: 'NCpedia',
@@ -406,7 +403,8 @@ export const raleigh: CityData = {
                                       url: 'http://goodnightraleigh.com/2014/03/andrew-johnson-birthplace-raleigh-n-c/',
                                     },
                                   ],
-                                  location: { name: 'Mordecai Historic Park', stillExists: true },
+                                  location: { name: 'Mordecai Historic Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mordecai%20Historic%20Park%20Raleigh', stillExists: true },
                                 },
         {
                                   id: 'curiosity-7',
@@ -414,8 +412,7 @@ export const raleigh: CityData = {
                                   category: 'architecture',
                                   title: 'The giant acorn has a secret time capsule inside',
                                   body: 'The Great Raleigh Acorn—standing 10 feet tall, 8 feet wide, and weighing more than 1,200 pounds of copper—was created by local artist David Benson (proprietor of The Third Place coffee house in Five Points) for Raleigh\'s 1992 bicentennial celebration, a riff on the city\'s "City of Oaks" nickname. It cost about $20,000 and took three months to assemble, bolted and welded together with interior struts for support. Benson used a small piece of copper from the dome of the North Carolina State Capitol building for the stem—a piece of Raleigh history wrapped inside another. In 2011, Benson\'s daughter crawled inside and scribbled drawings and messages for future generations on the interior copper walls, creating a hidden time capsule. Every New Year\'s Eve, a crane lowers the acorn to the ground at the stroke of midnight (and earlier for kids) during Raleigh\'s First Night celebration. The crane operator stops when the crowd hits "zero" on the countdown. For over 30 years, this copper monument has marked time for the City of Oaks—one midnight at a time.',
-                                  year: '1992',
-                                  image: {
+                                                                    image: {
                                     src: '/raleigh/curiosities/raleigh-acorn.jpg',
                                     alt: 'The Great Raleigh Acorn at New Year\'s Eve celebration',
                                     credit: 'Dreamstime',
@@ -454,7 +451,8 @@ export const raleigh: CityData = {
                                     },
                                   ],
                                   source: 'Joel Lane House',
-                                  location: { name: 'Joel Lane House, Hargett Street', stillExists: true },
+                                  location: { name: 'Joel Lane House, Hargett Street',
+      url: 'https://www.google.com/maps/search/?api=1&query=Joel%20Lane%20House%2C%20Hargett%20Street%20Raleigh', stillExists: true },
                                 },
         {
                                   id: 'curiosity-12',
@@ -462,8 +460,7 @@ export const raleigh: CityData = {
                                   category: 'law',
                                   title: 'Stealing kitchen grease is a felony here',
                                   body: 'Under North Carolina General Statute § 14-79.2, stealing or tampering with used kitchen grease can make you a felon. The law, enacted in 2013 in response to a rising black market problem, prohibits taking waste grease containers or their contents, intentionally contaminating them, or placing false ownership labels on containers you don\'t own. If the value of the grease or container exceeds $1,000, you\'re facing a Class H felony—carrying up to 39 months in prison. The law exists because waste kitchen grease has become surprisingly valuable: it\'s processed into renewable diesel fuel and other biodiesel products. Grease thieves have become a genuine problem for restaurants across the country, siphoning containers in the dead of night to sell to recyclers. In Raleigh—where research at Research Triangle Park helped pioneer biodiesel technology—stealing the byproduct of last night\'s fried chicken can land you in prison for over three years. The irony is perfect: the city that invented the barcode also criminalized grease theft. Late-stage capitalism protects its inputs.',
-                                  year: '2013',
-                                  images: [
+                                                                    images: [
                                     {
                                       src: '/raleigh/curiosities/raleigh-cur-grease.png',
                                       alt: 'Restaurant grease collection container',
@@ -688,6 +685,8 @@ export const raleigh: CityData = {
         {
           id: 'gem-yates',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Historic Yates Mill',
           category: 'Hidden History',
           description: 'The last operating water-powered gristmill in Wake County — and one of only a few historic automated water mills still functioning in the entire United States. Built around 1756, Yates Mill served the region for over 200 years before closing in 1953. A grassroots restoration effort brought it back to working order in 2005, and today costumed interpreters demonstrate corn grinding on weekends from March through November. The mill survived Hurricane Fran in 1996 (barely — the 250-year-old stone dam burst and had to be rebuilt) and now sits in a 174-acre county park with hiking trails, a 24-acre millpond, and the A.E. Finley Center for Education. Of the 70+ gristmills that once served Wake County, this is the only one still turning. The mill tour is free, and afterwards you can grab ice cream at Howling Cow (NC State\'s dairy) just up the road.',
@@ -712,6 +711,8 @@ export const raleigh: CityData = {
         {
           id: 'gem-10',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'Robertson Millpond Preserve',
           category: 'Secret Garden',
           description: 'Bald cypress trees don\'t belong in the Piedmont—their natural range is the coastal plain, where swamps and blackwater rivers create the wet conditions they need. Robertson Millpond Preserve is a biological anomaly: 85 acres of bald cypress forest 30 minutes from downtown Raleigh, the only such habitat in the region. The millpond was created in the 1800s when a dam backed up the creek; the resulting wetland allowed cypress to colonize far outside their normal range. Today, you can kayak through cathedral-like stands of ancient cypress, their knees rising from the dark water, their canopy filtering the light into something that feels more like Louisiana than North Carolina. Bring your own kayak or canoe—there are no rentals. Arrive at dawn when mist rises from the water and the silence is absolute.',
@@ -731,6 +732,8 @@ export const raleigh: CityData = {
         {
           id: 'gem-wral',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'WRAL Azalea Gardens',
           category: 'Secret Garden',
           description: 'Behind the WRAL-TV studios on Western Boulevard lies a 1.5-acre garden that most Raleigh residents have never heard of — even though it\'s been there since 1959. A.J. Fletcher, founder of Capitol Broadcasting, created the gardens as a gift to the community. The story goes that before the dedication ceremony, a cold snap threatened to kill the azaleas, so Fletcher had staff bathe the plants in warm water to save them. Today, over 1,000 azaleas representing 30+ varieties bloom each spring, along with hidden sculptures, meandering brick pathways, and secluded benches perfect for reading or escaping. The gardens are free, open dawn to dusk, and almost completely empty most days. Peak bloom is late March through May, when the colors are genuinely spectacular. Weddings are hosted here April through September ($250). It\'s the kind of place that makes you wonder what else is hiding behind ordinary buildings.',
@@ -1663,6 +1666,7 @@ export const raleigh: CityData = {
           source: 'North Carolina Office of Archives and History',
           location: {
             name: 'State Capitol',
+      url: 'https://www.google.com/maps/search/?api=1&query=State%20Capitol%20Raleigh',
             coordinates: { lat: 35.7804, lng: -78.6391 },
             stillExists: true,
           },
@@ -1682,6 +1686,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Downtown Raleigh',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Raleigh%20Raleigh',
             stillExists: true,
           },
         },
@@ -1699,6 +1704,7 @@ export const raleigh: CityData = {
           source: 'Duke University Libraries',
           location: {
             name: 'Butner, NC',
+      url: 'https://www.google.com/maps/search/?api=1&query=Butner%2C%20NC%20Raleigh',
             coordinates: { lat: 36.1321, lng: -78.7569 },
             stillExists: true,
           },
@@ -1714,10 +1720,10 @@ export const raleigh: CityData = {
             src: '/images/history/wilmington-coup.jpg',
             alt: 'Armed white mob during the 1898 Wilmington coup',
             credit: 'North Carolina State Archives',
-            year: '1898',
-          },
+                      },
           location: {
             name: 'Wilmington, NC',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wilmington%2C%20NC%20Raleigh',
             coordinates: { lat: 34.2257, lng: -77.9447 },
             stillExists: true,
           },
@@ -1737,6 +1743,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'East Hargett Street',
+      url: 'https://www.google.com/maps/search/?api=1&query=East%20Hargett%20Street%20Raleigh',
             coordinates: { lat: 35.7793, lng: -78.6350 },
             stillExists: true,
           },
@@ -1755,6 +1762,7 @@ export const raleigh: CityData = {
           source: 'Shaw University Archives',
           location: {
             name: 'Shaw University',
+      url: 'https://www.google.com/maps/search/?api=1&query=Shaw%20University%20Raleigh',
             coordinates: { lat: 35.7722, lng: -78.6377 },
             stillExists: true,
           },
@@ -1768,6 +1776,7 @@ export const raleigh: CityData = {
           source: 'Joel Lane Museum House',
           location: {
             name: 'Joel Lane Museum House',
+      url: 'https://www.google.com/maps/search/?api=1&query=Joel%20Lane%20Museum%20House%20Raleigh',
             coordinates: { lat: 35.7765, lng: -78.6456 },
             stillExists: true,
           },
@@ -1787,6 +1796,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Research Triangle Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh',
             coordinates: { lat: 35.8992, lng: -78.8637 },
             stillExists: true,
           },
@@ -1811,6 +1821,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Wolfpack Drive (former Raleigh Speedway)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wolfpack%20Drive%20(former%20Raleigh%20Speedway)%20Raleigh',
             coordinates: { lat: 35.8012, lng: -78.6989 },
             stillExists: false,
           },
@@ -1830,6 +1841,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Country Club Hills (former Bloomsbury Park)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Country%20Club%20Hills%20(former%20Bloomsbury%20Park)%20Raleigh',
             coordinates: { lat: 35.8156, lng: -78.6478 },
             stillExists: false,
           },
@@ -1849,6 +1861,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Five Points / Glenwood Avenue',
+      url: 'https://www.google.com/maps/search/?api=1&query=Five%20Points%20%2F%20Glenwood%20Avenue%20Raleigh',
             coordinates: { lat: 35.7948, lng: -78.6492 },
             stillExists: true,
           },
@@ -1867,6 +1880,7 @@ export const raleigh: CityData = {
           source: 'Raleigh Historic Development Commission',
           location: {
             name: 'Renaissance Park (former Raleigh Municipal Airport)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Renaissance%20Park%20(former%20Raleigh%20Municipal%20Airport)%20Raleigh',
             coordinates: { lat: 35.7612, lng: -78.7156 },
             stillExists: false,
           },
@@ -1880,6 +1894,7 @@ export const raleigh: CityData = {
           source: 'Wake County Register of Deeds',
           location: {
             name: 'Glenwood Village / Lakestone',
+      url: 'https://www.google.com/maps/search/?api=1&query=Glenwood%20Village%20%2F%20Lakestone%20Raleigh',
             coordinates: { lat: 35.8401, lng: -78.6823 },
             stillExists: true,
           },
@@ -1898,6 +1913,7 @@ export const raleigh: CityData = {
           },
           location: {
             name: 'Jaycee Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Jaycee%20Park%20Raleigh',
             coordinates: { lat: 35.8089, lng: -78.6398 },
             stillExists: true,
           },
@@ -1915,8 +1931,7 @@ export const raleigh: CityData = {
           id: 'ral-dark-4',
           type: 'dark-history',
           category: 'crime',
-          year: '1984',
-          title: 'Death Row Granny: The Killer Who Looked Like Your Grandmother',
+                    title: 'Death Row Granny: The Killer Who Looked Like Your Grandmother',
           body: 'Velma Barfield looked like someone\'s grandmother. She was. She was also a serial killer who poisoned at least four people—including her own mother—with arsenic-laced drinks, killing them slowly over days while "nursing" them. Her final victim, boyfriend Stuart Taylor, died in February 1978 after she feared he\'d discovered her check forgery. She blamed her addiction to tranquilizers and painkillers. On death row, Barfield became a devout Christian, ministering to other prisoners and earning Billy Graham\'s support—who personally pleaded for clemency. Governor Jim Hunt, facing re-election, refused. On November 2, 1984, Velma Barfield became the first woman executed in America in 22 years. Her last meal: Cheez Doodles and Coca-Cola. Her final statement apologized to "everybody who has gone through a lot of pain." The banality is almost worse than the crimes.',
           verdict: 'First woman executed in America after the death penalty resumed. First woman executed by lethal injection in U.S. history. Billy Graham\'s intercession changed nothing.',
           sources: [
@@ -1943,6 +1958,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Central Prison, Raleigh',
+      url: 'https://www.google.com/maps/search/?api=1&query=Central%20Prison%2C%20Raleigh%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -1990,6 +2006,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Mordecai Historic Park, 1 Mimosa St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mordecai%20Historic%20Park%2C%201%20Mimosa%20St%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2003,8 +2020,7 @@ export const raleigh: CityData = {
           id: 'ral-dark-5',
           type: 'dark-history',
           category: 'crime',
-          year: '1996',
-          title: '1996: The Year Raleigh Learned to Be Afraid',
+                    title: '1996: The Year Raleigh Learned to Be Afraid',
           body: 'In 1996, six women were murdered and several more raped in Raleigh over twelve months. Police believed a serial killer was hunting the city. Women walked in groups. Doors were double-locked. The media called it the most terrifying year in Raleigh history. In 1997, John Williams Jr., a homeless man, was arrested and eventually sentenced to death for two of the murders—Patricia Ashe and Deborah Elliot. But the case fractured: Leman Evans was convicted separately for killing Dewanna Burt. Three victims—Dawn Grandy, Cynthia Brown, and Patricia Woods—remain unsolved. Williams, now in his late 50s, still sits on death row at Central Prison. The year of fear ended, but the questions didn\'t. Three women\'s killers were never found.',
           verdict: 'Two killers convicted. Three murders still unsolved after 30 years. Williams remains on death row, case still in appeals.',
           sources: [
@@ -2037,6 +2053,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Raleigh neighborhoods',
+      url: 'https://www.google.com/maps/search/?api=1&query=Raleigh%20neighborhoods%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2077,6 +2094,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'NC State Capitol, 1 E Edenton St',
+      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Capitol%2C%201%20E%20Edenton%20St%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2090,8 +2108,7 @@ export const raleigh: CityData = {
           id: 'ral-dark-1',
           type: 'dark-history',
           category: 'crime',
-          year: '1898',
-          title: 'The Coup Raleigh Watched',
+                    title: 'The Coup Raleigh Watched',
           body: 'On November 10, 1898, a white supremacist mob in Wilmington—just 120 miles from the state capital—overthrew the legally elected biracial government, burned the Black-owned Daily Record newspaper, and murdered Black residents in the streets. Women and children fled to swamps for three days. Prominent Black citizens were marched to the train station at gunpoint and told they\'d be killed if they returned. As many as 60 people died. It was the only successful coup d\'état in American history. The state government in Raleigh did nothing. Governor Daniel Russell, himself threatened, stayed silent. For a century, textbooks called it a "race riot" and portrayed the conspirators as heroes. The truth wasn\'t officially acknowledged until 2006. One hundred and eight years to admit the obvious.',
           verdict: 'The coup succeeded. Black voter registration in NC dropped from 126,000 to 6,100 within six years. Wilmington didn\'t elect another Black official until 1972—74 years later.',
           sources: [
@@ -2131,6 +2148,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Wilmington, NC (State Capitol in Raleigh did nothing)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wilmington%2C%20NC%20(State%20Capitol%20in%20Raleigh%20did%20nothing)%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2178,6 +2196,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Oakwood Cemetery, 701 Oakwood Ave',
+      url: 'https://www.google.com/maps/search/?api=1&query=Oakwood%20Cemetery%2C%20701%20Oakwood%20Ave%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2224,6 +2243,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Central Prison, 1300 Western Blvd',
+      url: 'https://www.google.com/maps/search/?api=1&query=Central%20Prison%2C%201300%20Western%20Blvd%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2270,6 +2290,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Briggs Hardware Building, 220 Fayetteville St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Briggs%20Hardware%20Building%2C%20220%20Fayetteville%20St%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2318,6 +2339,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Wake County and surrounding areas',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wake%20County%20and%20surrounding%20areas%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2331,8 +2353,7 @@ export const raleigh: CityData = {
           id: 'ral-dark-6',
           type: 'dark-history',
           category: 'disaster',
-          year: '2022',
-          title: 'The Greenway That Became a Hunting Ground',
+                    title: 'The Greenway That Became a Hunting Ground',
           body: 'On October 13, 2022, a 15-year-old boy walked out of his home in the Hedingham neighborhood, shot his older brother, and continued onto the Neuse River Greenway trail. By the time he was cornered hours later, five people were dead and two more wounded. The victims included an off-duty police officer, a 16-year-old, and a woman walking her dog. Austin Thompson was arrested that evening and charged as an adult. The shooting shattered the illusion of Raleigh\'s safe suburban greenways—the trails that wind through neighborhoods became, for one evening, a hunting ground. Thompson\'s trial has been delayed until 2026. The greenway reopened. People walk their dogs. But nobody forgets.',
           verdict: 'Five dead, including the shooter\'s 16-year-old brother. The youngest mass shooting suspect in North Carolina history. The trial keeps getting delayed.',
           sources: [
@@ -2346,7 +2367,7 @@ export const raleigh: CityData = {
               type: 'article',
               title: 'What We Know About the Raleigh Mass Shooting',
               publisher: 'CBS17',
-              year: '2022',
+              
               url: 'https://www.cbs17.com/news/local-news/wake-county-news/what-we-know-about-the-raleigh-mass-shooting/',
             },
             {
@@ -2366,6 +2387,7 @@ export const raleigh: CityData = {
           ],
           location: {
             name: 'Hedingham neighborhood / Neuse River Greenway',
+      url: 'https://www.google.com/maps/search/?api=1&query=Hedingham%20neighborhood%20%2F%20Neuse%20River%20Greenway%20Raleigh',
             stillExists: true,
           },
           images: [
@@ -2385,6 +2407,7 @@ export const raleigh: CityData = {
           verdict: 'Over 900 graves, most unmarked for a century. Mental illness stigma so powerful that families abandoned the dead. The park opened in 2006; the graves remain.',
           location: {
             name: 'Dix Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Dix%20Park%20Raleigh',
             stillExists: true,
           },
           images: [

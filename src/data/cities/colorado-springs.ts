@@ -92,6 +92,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Foote Avenue and Kiowa Street (demolished)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Foote%20Avenue%20and%20Kiowa%20Street%20(demolished)%20Colorado%20Springs',
             stillExists: false,
           },
         },
@@ -125,6 +126,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Garden of the Gods',
+      url: 'https://www.google.com/maps/search/?api=1&query=Garden%20of%20the%20Gods%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -152,6 +154,7 @@ export const colorado_springs: CityData = {
           source: 'Garden of the Gods Visitor Center',
           location: {
             name: 'Garden of the Gods',
+      url: 'https://www.google.com/maps/search/?api=1&query=Garden%20of%20the%20Gods%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -174,6 +177,7 @@ export const colorado_springs: CityData = {
           source: 'Broadmoor Hotel archives',
           location: {
             name: 'The Broadmoor',
+      url: 'https://www.google.com/maps/search/?api=1&query=The%20Broadmoor%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -212,6 +216,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'US Air Force Academy',
+      url: 'https://www.google.com/maps/search/?api=1&query=US%20Air%20Force%20Academy%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -249,6 +254,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Pikes Peak summit',
+      url: 'https://www.google.com/maps/search/?api=1&query=Pikes%20Peak%20summit%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -284,6 +290,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Manitou Springs',
+      url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Springs%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -315,6 +322,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Peterson Space Force Base / Cheyenne Mountain',
+      url: 'https://www.google.com/maps/search/?api=1&query=Peterson%20Space%20Force%20Base%20%2F%20Cheyenne%20Mountain%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -337,6 +345,7 @@ export const colorado_springs: CityData = {
           source: 'Western Mining History',
           location: {
             name: 'Cripple Creek',
+      url: 'https://www.google.com/maps/search/?api=1&query=Cripple%20Creek%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -359,6 +368,7 @@ export const colorado_springs: CityData = {
           source: 'City of Manitou Springs',
           location: {
             name: 'Manitou Incline',
+      url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Incline%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -400,6 +410,7 @@ export const colorado_springs: CityData = {
           ],
           location: {
             name: 'Manitou Springs to Pikes Peak summit',
+      url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Springs%20to%20Pikes%20Peak%20summit%20Colorado%20Springs',
             stillExists: true,
           },
         },
@@ -426,6 +437,7 @@ export const colorado_springs: CityData = {
           source: 'Glen Eyrie Castle',
           location: {
             name: 'Glen Eyrie',
+      url: 'https://www.google.com/maps/search/?api=1&query=Glen%20Eyrie%20Colorado%20Springs',
             stillExists: true,
           },
         }
@@ -570,6 +582,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-gold-camp-tunnels',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Gold Camp Road Tunnels',
           category: 'Abandoned Railroad',
           description:
@@ -604,6 +618,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-magic-town',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 1,
           name: 'Magic Town at Michael Garman Museum',
           category: 'Miniature Art',
           description:
@@ -640,6 +656,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-starr-kempf-sculptures',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Starr Kempf\'s Kinetic Wind Sculptures',
           category: 'Public Art',
           description:
@@ -675,6 +693,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-paint-mines',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Paint Mines Interpretive Park',
           category: 'Geological Wonder',
           description:
@@ -694,6 +714,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-may-bug-museum',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'May Natural History Museum',
           category: 'Unusual Museum',
           description:
@@ -735,6 +757,8 @@ export const colorado_springs: CityData = {
         {
           id: 'gem-miramont-secrets',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Miramont Castle Secret Rooms',
           category: 'Historic Oddity',
           description:
@@ -1190,6 +1214,7 @@ export const colorado_springs: CityData = {
           source: 'Colorado Springs Pioneers Museum',
           location: {
             name: 'Downtown Colorado Springs',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Colorado%20Springs%20Colorado%20Springs',
             coordinates: { lat: 38.8339, lng: -104.8214 },
             stillExists: true,
           },
@@ -1208,6 +1233,7 @@ export const colorado_springs: CityData = {
           },
           location: {
             name: 'UCCS Campus',
+      url: 'https://www.google.com/maps/search/?api=1&query=UCCS%20Campus%20Colorado%20Springs',
             coordinates: { lat: 38.8939, lng: -104.8008 },
             stillExists: true,
           },
@@ -1222,10 +1248,10 @@ export const colorado_springs: CityData = {
           image: {
             src: '/images/history/norad-cheyenne-mountain.jpg',
             alt: 'Entrance tunnel to Cheyenne Mountain NORAD complex',
-            year: '1966',
-          },
+                      },
           location: {
             name: 'Cheyenne Mountain',
+      url: 'https://www.google.com/maps/search/?api=1&query=Cheyenne%20Mountain%20Colorado%20Springs',
             coordinates: { lat: 38.7442, lng: -104.8461 },
             stillExists: true,
           },
@@ -1244,6 +1270,7 @@ export const colorado_springs: CityData = {
           source: 'Cripple Creek Heritage Center',
           location: {
             name: 'Cripple Creek',
+      url: 'https://www.google.com/maps/search/?api=1&query=Cripple%20Creek%20Colorado%20Springs',
             coordinates: { lat: 38.7464, lng: -105.1783 },
             stillExists: true,
           },
@@ -1257,6 +1284,7 @@ export const colorado_springs: CityData = {
           source: 'The Denver Post',
           location: {
             name: 'Focus on the Family Campus',
+      url: 'https://www.google.com/maps/search/?api=1&query=Focus%20on%20the%20Family%20Campus%20Colorado%20Springs',
             coordinates: { lat: 38.9081, lng: -104.7908 },
             stillExists: true,
           },
@@ -1270,6 +1298,7 @@ export const colorado_springs: CityData = {
           source: 'New York Times',
           location: {
             name: 'Club Q',
+      url: 'https://www.google.com/maps/search/?api=1&query=Club%20Q%20Colorado%20Springs',
             coordinates: { lat: 38.8165, lng: -104.8092 },
             stillExists: false,
           },
@@ -1284,10 +1313,10 @@ export const colorado_springs: CityData = {
           image: {
             src: '/images/history/usafa-chapel.jpg',
             alt: 'Air Force Academy Cadet Chapel with distinctive aluminum spires',
-            year: '1962',
-          },
+                      },
           location: {
             name: 'U.S. Air Force Academy',
+      url: 'https://www.google.com/maps/search/?api=1&query=U.S.%20Air%20Force%20Academy%20Colorado%20Springs',
             coordinates: { lat: 38.9983, lng: -104.8608 },
             stillExists: true,
           },
@@ -1305,12 +1334,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-1',
           type: 'dark-history',
           category: 'crime',
-          year: '2022',
-          title: 'Club Q Shooting — Five Dead on Transgender Day of Remembrance',
+                    title: 'Club Q Shooting — Five Dead on Transgender Day of Remembrance',
           body: 'Just before midnight on November 19, 2022—Transgender Day of Remembrance—a gunman entered Club Q with an AR-15-style rifle and opened fire. Five people were killed: Daniel Aston (28), Raymond Green Vance (22), Kelly Loving (40), Ashley Paugh (35), and Derrick Rump (38). Twenty-five others were wounded. The massacre ended when patrons fought back. U.S. Army veteran Richard Fierro tackled the shooter and beat him with his own gun while others pinned him down. It was one of the deadliest attacks on the LGBTQ+ community in American history, and it happened in a city known for its evangelical megachurches and military culture. The shooter pleaded guilty and received five consecutive life sentences plus 2,208 years.',
           verdict: 'Five dead, 25 wounded. The shooter pleaded guilty and received life sentences. Tied for deadliest mass killing in Colorado Springs history.',
           location: {
             name: 'Club Q, 3430 N Academy Blvd',
+      url: 'https://www.google.com/maps/search/?api=1&query=Club%20Q%2C%203430%20N%20Academy%20Blvd%20Colorado%20Springs',
             coordinates: { lat: 38.8765, lng: -104.7921 },
             stillExists: false,
           },
@@ -1356,12 +1385,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-2',
           type: 'dark-history',
           category: 'mystery',
-          year: '2015',
-          title: 'Death by Stray Bullet — The Sky Rained Lead on July 4th',
+                    title: 'Death by Stray Bullet — The Sky Rained Lead on July 4th',
           body: 'Glenn Martin was sitting by a campfire with his family at Rainbow Falls in Pike National Forest when physics became fatal. It was July 4th, 2015. Somewhere in the Rampart Range—a place where target shooting is as common as pine trees—someone fired a gun. The bullet arced through the air, followed gravity\'s cruel parabola, and fell from the sky directly onto Glenn\'s head. He died within minutes. Despite investigations, no shooter was ever identified. The Rampart Range has sparse regulations and endless hiding spots. The bullet could have traveled from anywhere within miles. It\'s a reminder that in the mountains, what goes up doesn\'t always come down where you\'d expect—or want.',
           verdict: 'Unsolved. The Rampart Range remains a place where bullets fall from nowhere.',
           location: {
             name: 'Rainbow Falls, Pike National Forest (Rampart Range)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Rainbow%20Falls%2C%20Pike%20National%20Forest%20(Rampart%20Range)%20Colorado%20Springs',
             coordinates: { lat: 39.0564, lng: -104.9486 },
             stillExists: true,
           },
@@ -1399,12 +1428,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-3',
           type: 'dark-history',
           category: 'cold-case',
-          year: '1911',
-          title: 'The 1911 Ax Murders — Six Dead in Two Houses, Zero Answers',
+                    title: 'The 1911 Ax Murders — Six Dead in Two Houses, Zero Answers',
           body: 'On the morning of September 17, 1911, someone stole an ax from a yard on West Dale Street, walked into two neighboring homes, and systematically murdered six people in their beds. The victims: Alice May Burnham (25) and her children Alice (6) and John (3), plus Henry Wayne (30), his wife Blanche (26), and their daughter Blanche (2). All found with their heads caved in. Despite a massive investigation, no one was ever charged. A century later, retired investigator Dwight Haverkorn published "Murder in the Shadow of Pikes Peak" (2024), arguing this was part of a railroad-riding serial killer\'s spree across five states—25 victims in 1911 alone. The theory is compelling. The silence from 1911 is louder.',
           verdict: 'Unsolved after 114 years. Tied for the deadliest mass murder in Colorado Springs history.',
           location: {
             name: 'West Dale Street',
+      url: 'https://www.google.com/maps/search/?api=1&query=West%20Dale%20Street%20Colorado%20Springs',
             stillExists: true,
           },
           sources: [
@@ -1444,12 +1473,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-4',
           type: 'dark-history',
           category: 'disaster',
-          year: '2012',
-          title: 'Waldo Canyon Fire — When the Mountain Jumped I-25',
+                    title: 'Waldo Canyon Fire — When the Mountain Jumped I-25',
           body: 'On June 23, 2012, a wildfire ignited in Waldo Canyon west of Colorado Springs. Within days, it became a firestorm visible from space. On June 26, shifting winds turned the fire into a dragon. It roared down the mountain and jumped Interstate 25—flames literally leaping over six lanes of highway—into the Mountain Shadows neighborhood. Residents had minutes to evacuate. Some didn\'t make it out in time and sheltered in basements as their houses burned above them. The fire destroyed 346 homes and killed two people, burning 18,247 acres total. Entire streets were reduced to stone chimneys and melted cars. The smell of ash hung over the city for weeks.',
           verdict: 'Two dead, 346 homes destroyed. The fire changed how Colorado Springs thinks about wildfire risk.',
           location: {
             name: 'Waldo Canyon / Mountain Shadows neighborhood',
+      url: 'https://www.google.com/maps/search/?api=1&query=Waldo%20Canyon%20%2F%20Mountain%20Shadows%20neighborhood%20Colorado%20Springs',
             coordinates: { lat: 38.8786, lng: -104.9147 },
             stillExists: true,
           },
@@ -1489,12 +1518,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-5',
           type: 'dark-history',
           category: 'crime',
-          year: '1991',
-          title: 'Heather Dawn Church — Found Exactly Two Years Later',
+                    title: 'Heather Dawn Church — Found Exactly Two Years Later',
           body: 'On September 17, 1991, 13-year-old Heather Dawn Church was babysitting her younger brother at their Black Forest home when she vanished. Despite massive searches, her body wasn\'t found until September 16, 1993—exactly two years later, one day shy of the anniversary—when a transient camper discovered her remains on Rampart Range Road, 30 miles away. She had died from blunt force trauma. Three fingerprints on a window screen led police to Robert Charles Browne, who lived half a mile away. He was convicted in 1995. Later, in a bizarre jailhouse confession, Browne claimed to have killed 48 people across multiple states. He\'s only been convicted of two murders. He remains at Limon Correctional Facility, serving life without parole.',
           verdict: 'Robert Charles Browne sentenced to life without parole. He remains at Limon Correctional Facility.',
           location: {
             name: 'Black Forest / Rampart Range Road',
+      url: 'https://www.google.com/maps/search/?api=1&query=Black%20Forest%20%2F%20Rampart%20Range%20Road%20Colorado%20Springs',
             stillExists: true,
           },
           sources: [
@@ -1538,12 +1567,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-6',
           type: 'dark-history',
           category: 'crime',
-          year: '2015',
-          title: 'Planned Parenthood Shooting — "No More Baby Parts"',
+                    title: 'Planned Parenthood Shooting — "No More Baby Parts"',
           body: 'On November 27, 2015, Robert Dear walked into a Planned Parenthood clinic with a rifle and opened fire. For five hours, he held police at bay in a standoff that ended with three dead and nine wounded. The victims: University of Colorado police officer Garrett Swasey, Iraq War veteran Ke\'Arre Stewart, and mother Jennifer Markovsky. After his arrest, Dear reportedly said "no more baby parts"—referencing debunked propaganda videos that had circulated targeting Planned Parenthood. He was found incompetent to stand trial and never prosecuted. On November 22, 2025, five days before the tenth anniversary of the attack, Dear died in federal custody. The violence was ideological. The justice was never delivered.',
           verdict: 'Three dead, nine wounded. Dear died in custody before trial. The motive was ideological violence.',
           location: {
             name: 'Planned Parenthood, 3480 Centennial Blvd',
+      url: 'https://www.google.com/maps/search/?api=1&query=Planned%20Parenthood%2C%203480%20Centennial%20Blvd%20Colorado%20Springs',
             coordinates: { lat: 38.8550, lng: -104.7883 },
             stillExists: true,
           },
@@ -1582,12 +1611,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-7',
           type: 'dark-history',
           category: 'disaster',
-          year: '2013',
-          title: 'Black Forest Fire — 509 Homes Gone in Four Days',
+                    title: 'Black Forest Fire — 509 Homes Gone in Four Days',
           body: 'One year after Waldo Canyon, the mountains burned again. On June 11, 2013, the Black Forest Fire began near Highway 83. Fueled by 100°F heat, gusty winds, and drought-dry pines, it became the most destructive fire in Colorado history—14,280 acres burned, at least 509 homes destroyed. Marc and Robin Herklotz, a married couple, died attempting to evacuate their property. The fire was ruled human-caused, but investigators never determined exactly how it started. For years, it held the grim record as Colorado\'s most destructive wildfire. Then the Marshall Fire in Boulder County (2021) burned 1,084 homes in a single afternoon and took the title. Black Forest is now second-worst. Cold comfort.',
           verdict: 'Two dead, 509 homes destroyed. The most destructive wildfire in Colorado history until 2021.',
           location: {
             name: 'Black Forest',
+      url: 'https://www.google.com/maps/search/?api=1&query=Black%20Forest%20Colorado%20Springs',
             coordinates: { lat: 39.0139, lng: -104.7036 },
             stillExists: true,
           },
@@ -1627,12 +1656,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-8',
           type: 'dark-history',
           category: 'unsolved',
-          year: '2004',
-          title: 'Tim Watkins — Shot on the Trail, Buried in a Shallow Grave',
+                    title: 'Tim Watkins — Shot on the Trail, Buried in a Shallow Grave',
           body: 'On October 12, 2004, 60-year-old Tim Watkins went mountain biking on Limbaugh Canyon Trail in Palmer Lake. When he didn\'t return, friends went looking and found his bike—abandoned, undamaged. Days later, searchers found his body buried in a shallow grave just off the trail. He had been shot. The case stumped investigators. Watkins had no known enemies, no debts, no drama. The location—near Rampart Range, a place already stained with violence—raised the obvious question: was this random or targeted? Nearly twenty years later, no one has been charged. The trail is still there. The answer is not.',
           verdict: 'Unsolved. The Rampart Range keeps its secrets.',
           location: {
             name: 'Limbaugh Canyon Trail, Palmer Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Limbaugh%20Canyon%20Trail%2C%20Palmer%20Lake%20Colorado%20Springs',
             coordinates: { lat: 39.1175, lng: -104.9097 },
             stillExists: true,
           },
@@ -1664,12 +1693,12 @@ export const colorado_springs: CityData = {
           id: 'cos-dark-9',
           type: 'dark-history',
           category: 'crime',
-          year: '2007',
-          title: 'New Life Church Shooting — Stopped by a Volunteer with a Gun',
+                    title: 'New Life Church Shooting — Stopped by a Volunteer with a Gun',
           body: 'On December 9, 2007, Matthew Murray went on a killing spree across Colorado. He started at a Youth With A Mission (YWAM) training center in Arvada, killing two and wounding two. That afternoon, he drove 70 miles to New Life Church in Colorado Springs and opened fire in the parking lot, killing two more. Then Jeanne Assam—a former police officer serving as a volunteer security guard—engaged Murray and shot him multiple times. He died by suicide moments later. Assam\'s actions likely prevented a massacre. Murray was carrying over 1,000 rounds of ammunition. The incident changed how churches across America approach security. It also became a political flashpoint: Was this a "good guy with a gun" scenario, or proof that armed civilians in houses of worship is dystopian?',
           verdict: 'Four dead, including the shooter. Jeanne Assam was hailed as a hero.',
           location: {
             name: 'New Life Church, 11025 Voyager Pkwy',
+      url: 'https://www.google.com/maps/search/?api=1&query=New%20Life%20Church%2C%2011025%20Voyager%20Pkwy%20Colorado%20Springs',
             coordinates: { lat: 38.9170, lng: -104.7572 },
             stillExists: true,
           },
@@ -1714,6 +1743,7 @@ export const colorado_springs: CityData = {
           verdict: 'The cemetery is open to the public. The ghosts don\'t follow a schedule.',
           location: {
             name: 'Evergreen Cemetery, 1005 S Hancock Expy',
+      url: 'https://www.google.com/maps/search/?api=1&query=Evergreen%20Cemetery%2C%201005%20S%20Hancock%20Expy%20Colorado%20Springs',
             coordinates: { lat: 38.8193, lng: -104.8381 },
             stillExists: true,
           },

@@ -12,7 +12,7 @@ export const seattle: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Seattle — a city built on the ashes of its own past, where the original downtown lies beneath the streets and the rain masks stranger secrets. Here\'s what we\'re curious about.',
+      content: 'Welcome to Seattle — a city built on the ashes of its own past, where the original downtown lies beneath the streets and the rain masks stranger secrets.',
     },
     {
       id: 'featured-card',
@@ -73,7 +73,8 @@ export const seattle: CityData = {
               url: 'https://www.seattlepi.com/seattlenews/article/50-years-ago-db-cooper-mystery-began-in-seattle-16646144.php',
             }
           ],
-          location: { name: 'Somewhere over Washington State', stillExists: true },
+          location: { name: 'Somewhere over Washington State',
+      url: 'https://www.google.com/maps/search/?api=1&query=Somewhere%20over%20Washington%20State%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/cooper.png', alt: 'D.B. Cooper FBI sketch and case materials' },
           ],
@@ -159,7 +160,8 @@ export const seattle: CityData = {
               url: 'https://www.smithsonianmag.com/',
             }
           ],
-          location: { name: 'Capitol Hill', stillExists: true },
+          location: { name: 'Capitol Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=Capitol%20Hill%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/espresso-1.png', alt: 'Seattle coffee culture' },
             { src: '/seattle/curiosities/espresso-2.png', alt: 'Espresso preparation in Seattle cafe' },
@@ -203,6 +205,7 @@ export const seattle: CityData = {
           ],
           location: {
             name: 'Alki Beach (invasion site)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Alki%20Beach%20(invasion%20site)%20Seattle',
             stillExists: true,
           },
         },
@@ -244,6 +247,7 @@ export const seattle: CityData = {
           ],
           location: {
             name: 'Lake Union',
+      url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Union%20Seattle',
             stillExists: true,
           },
         },
@@ -263,7 +267,8 @@ export const seattle: CityData = {
               url: 'https://www.kexp.org/',
             }
           ],
-          location: { name: 'Capitol Hill and Downtown', stillExists: true },
+          location: { name: 'Capitol Hill and Downtown',
+      url: 'https://www.google.com/maps/search/?api=1&query=Capitol%20Hill%20and%20Downtown%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/grunge-1.png', alt: 'Seattle grunge music scene' },
             { src: '/seattle/curiosities/grunge-2.png', alt: 'Grunge era Seattle musicians' },
@@ -285,7 +290,8 @@ export const seattle: CityData = {
               url: 'https://depts.washington.edu/labhist/',
             }
           ],
-          location: { name: 'Downtown Seattle', stillExists: true },
+          location: { name: 'Downtown Seattle',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Seattle%20Seattle', stillExists: true },
           images: [
             {
               src: '/seattle/curiosities/strik-1.png',
@@ -313,7 +319,8 @@ export const seattle: CityData = {
               url: 'https://www.orcanetwork.org/',
             }
           ],
-          location: { name: 'Puget Sound and San Juan Islands', stillExists: true },
+          location: { name: 'Puget Sound and San Juan Islands',
+      url: 'https://www.google.com/maps/search/?api=1&query=Puget%20Sound%20and%20San%20Juan%20Islands%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/orca-pods-1.png', alt: 'Orca whale in Puget Sound' },
             { src: '/seattle/curiosities/orca-pods-2.png', alt: 'Southern Resident killer whales' },
@@ -374,10 +381,43 @@ export const seattle: CityData = {
               url: 'https://www.seattletimes.com/pacific-nw-magazine/the-jimi-hendrix-memorial-in-renton-honors-a-musical-giant-in-grand-style/',
             }
           ],
-          location: { name: 'Central District (statue in Capitol Hill, grave in Renton)', stillExists: true },
+          location: { name: 'Central District (statue in Capitol Hill, grave in Renton)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Central%20District%20(statue%20in%20Capitol%20Hill%2C%20grave%20in%20Renton)%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/hendrix-memorial.png', alt: 'Jimi Hendrix memorial in Renton' },
           ],
+        },
+        {
+          id: 'curiosity-mario',
+          type: 'curiosity',
+          category: 'pop-culture',
+          title: 'Nintendo\'s Mario was named after an angry Seattle landlord',
+          body: 'In the early 1980s, Nintendo of America was operating out of a Tukwila warehouse, and they were behind on rent. The landlord, a local real estate developer named Mario Segale, stormed in demanding payment. After the confrontation, Nintendo President Minoru Arakawa noticed a resemblance between the irritated landlord and their unnamed "Jumpman" character from Donkey Kong. The team started calling the character "Mario" as an inside joke. The name stuck. Segale, who died in 2018, never sought royalties or publicity. He reportedly told the Seattle Times he\'d "rather be a plumber" than discuss his accidental fame. The most famous video game character in history was named after a guy yelling about overdue rent in a Seattle suburb.',
+          sources: [
+            {
+              title: 'Mario Segale, Seattle-area developer who gave name to Nintendo\'s Mario, dies at 84',
+              publisher: 'Seattle Times',
+              url: 'https://www.seattletimes.com/seattle-news/obituaries/mario-segale-seattle-area-developer-who-gave-name-to-nintendos-mario-dies-at-84/',
+            }
+          ],
+          location: { name: 'Tukwila (Nintendo warehouse)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tukwila%20(Nintendo%20warehouse)%20Seattle', stillExists: false },
+        },
+        {
+          id: 'curiosity-coke-machine',
+          type: 'curiosity',
+          category: 'mystery',
+          title: 'A mystery Coke machine on Capitol Hill has been dispensing random sodas for decades and no one knows who owns it',
+          body: 'Near the corner of Broadway and John Street on Capitol Hill sits an old Coca-Cola vending machine that looks like a relic from the 1970s. It dispenses cans of soda for 75 cents (recently raised from 55 cents). The catch: no one knows who owns it, who refills it, or who maintains it. The machine has no company markings, no service phone number, and doesn\'t appear on any business registry. Alongside standard Coke products, there\'s a mystery button that dispenses random flavors, sometimes obscure sodas you\'ve never heard of. The machine became internet-famous when Seattle residents realized none of them had ever seen anyone service it. Theories range from a nearby building owner to elaborate art project to genuinely inexplicable urban phenomenon. It just keeps working, year after year, dispensing sodas to anyone with exact change. The mystery remains unsolved.',
+          sources: [
+            {
+              title: 'Capitol Hill Mystery Coke Machine',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/mystery-coke-machine',
+            }
+          ],
+          location: { name: 'Broadway & John Street, Capitol Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=Broadway%20%26%20John%20Street%2C%20Capitol%20Hill%20Seattle', stillExists: true },
         }
       ],
     },
@@ -435,7 +475,7 @@ export const seattle: CityData = {
       id: 'sea-hidden-gems',
       type: 'section',
       title: 'The City Beneath',
-      intro: 'Most people look up at the skyline; we prefer to look down. Seattle’s real soul is often found in subterranean passages, secret gardens, and bookstores that feel like time machines.',
+      intro: 'Seattle's real soul isn't found at the Space Needle or Pike Place. It's hidden in subterranean passages, secret gardens, and bookstores that feel like time machines.',
       items: [
         {
           id: 'hidden-gems-underground',
@@ -498,6 +538,8 @@ export const seattle: CityData = {
             {
               id: 'gem-4',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 3,
               name: 'Georgetown Steam Plant',
               category: 'Industrial History',
               description: 'Built 1906-1907 by Seattle Electric Company on 18 acres along the Duwamish River. Three Curtis turbines manufactured by General Electric between 1906 and 1917—the machines that "marked the beginning of the end of the reciprocating steam engine" for large-scale electricity generation. Designated National Historic Mechanical Engineering Landmark in 1980, National Historic Landmark in 1984. Still owned by Seattle City Light. Last electrical generation: October 15, 1952. Open for tours second Sunday of each month. Most Seattleites have never heard of it. The turbines are intact and occasionally demonstrated.',
@@ -527,6 +569,8 @@ export const seattle: CityData = {
             {
               id: 'gem-5',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 4,
               name: 'Discovery Park\'s Hidden Beach',
               category: 'Nature',
               description: 'In 1896, the U.S. Army established Fort Lawton on 703 acres of Magnolia Bluff. By the 1940s it was the Pacific theater\'s second-largest embarkation port. In 1970, 100+ Native Americans led by Bernie Whitebear occupied the fort, citing 1865 treaties promising surplus military land to original owners. Negotiations resulted in a 99-year lease for 20 acres (now Daybreak Star Cultural Center) and the rest became public park. On September 1, 1972, Tricia Nixon Cox transferred 391 acres to Seattle. Now it\'s Discovery Park—560 acres, Seattle\'s largest. A 2.8-mile trail descends through forest to wild beach. West Point Lighthouse at the end, built 1881, rises 23 feet above the sand. Views of Rainier, Olympics, Puget Sound. Most visitors never make the trek down.',
@@ -544,6 +588,8 @@ export const seattle: CityData = {
             {
               id: 'gem-6',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 1,
               name: 'Kubota Garden',
               category: 'Garden',
               description: 'Fujitaro Kubota emigrated from Shikoku, Japan in 1907. Started a gardening company in 1923. In 1927, bought 5 acres of Rainier Beach swampland through a friend—Japanese immigrants couldn\'t purchase land directly. He spent decades building a display garden merging Japanese design with Pacific Northwest materials. Then came WWII. Kubota and his family were interned at Camp Minidoka in Idaho. He built a rock garden there too. Returned in 1945. Restored his garden. Died in 1973. The city declared it a landmark in 1981, purchased it in 1987. Now it\'s 20 acres, free to the public, and most Seattle residents still don\'t know it exists. Spring azaleas. Fall maples. Year-round proof that beauty survives displacement.',
@@ -589,6 +635,8 @@ export const seattle: CityData = {
             {
               id: 'gem-8',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 2,
               name: 'Ye Olde Curiosity Shop',
               category: 'Oddities',
               description: 'J. E. "Daddy" Standley opened Standley\'s Free Museum and Curio on Second Avenue in late 1899. Moved to the waterfront in 1904, renamed it after Dickens\'s novel, adopted the motto "Beats the Dickens." Shrunken heads. Sylvester the mummy (acquired 1955, believed to be an 1890s Arizona gunshot victim, but 2005 CT scans suggest arsenic embalming fluid). Two-headed calves. Oddities from six continents. In 1933, the Seattle Star named it one of the "Seven Wonders of Seattle"—the only shop on the list. Four generations of the same family. Now on Pier 54. Equal parts tourist trap and genuine cabinet of curiosities. Your great-grandparents visited. Their great-grandparents visited. It persists.',
@@ -607,6 +655,8 @@ export const seattle: CityData = {
             {
               id: 'gem-9',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 6,
               name: 'The Hat n\' Boots',
               category: 'Roadside Americana',
               description: 'In 1953, businessman Buford Seals hired commercial artist Lewis Nasmyth to design a gas station for his planned Frontier Village shopping center on Highway 99. Nasmyth sketched it in 15 minutes: office under a 44-foot cowboy hat, bathrooms inside 22-foot boots. Premium Tex opened in 1954 (named for Texaco gas and free "premiums" with fill-ups). It became Washington\'s busiest gas station. Seals ran out of money. Frontier Village never happened. The station closed in 1988. Georgetown Community Council bought the structures for $1 in 2002, moved them to Oxbow Park in 2003. Boots restored 2005. Hat finished 2010. You can climb inside a boot. Nasmyth got a U.S. patent for the design on March 20, 1956.',
@@ -622,6 +672,8 @@ export const seattle: CityData = {
             {
               id: 'gem-10',
               type: 'hidden-gem',
+              featured: true,
+              featuredOrder: 7,
               name: 'Archie McPhee',
               category: 'Weird Shopping',
               description: 'Mark Pahlow opened the first retail outlet in Fremont in July 1983, named after a North Dakotan adventurer and practical joker who brought jazz to Asia in 1924 (Pahlow\'s great-nephew-in-law). Moved to Ballard in 1999. Downsized to Wallingford in 2009. Rubber chickens. Yodeling pickles (David Wahl\'s invention, now iconic). Bacon bandages. An entire Rubber Chicken Museum opened inside the store in 2018. Party supplies, miniatures, costumes, and an astounding array of things you didn\'t know existed and now desperately need. Four decades of curated absurdity.',
@@ -769,7 +821,7 @@ export const seattle: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'The Extraction Capital',
-      intro: 'We didn\'t invent coffee, but we certainly turned it into a competitive sport. These aren\'t just shops; they are the high-church temples of the bean, where extraction is a theology.',
+      intro: 'Seattle didn\'t invent coffee, but it certainly turned extraction into a competitive sport. These aren\'t just shops; they are the high-church temples of the bean, where roasting is ritual and latte art is sacrament.',
       spots: [
         {
           name: 'Espresso Vivace',
@@ -1095,12 +1147,12 @@ export const seattle: CityData = {
           featured: true,
           featuredOrder: 1,
           category: 'crime',
-          year: '1983',
-          title: 'The Wah Mee Massacre killed 13 people in a basement gambling club',
+                    title: 'The Wah Mee Massacre killed 13 people in a basement gambling club',
           body: 'On the night of February 19, 1983, three men entered the Wah Mee gambling club in the basement of the Louisa Hotel in Seattle\'s Chinatown-International District. Over the next hour, they bound, robbed, and systematically executed 14 people — shooting each in the head at point-blank range. Thirteen died. One survived.\n\nThe Wah Mee was an illegal but tolerated gambling den that had operated for decades. The killers — Benjamin Ng (age 20), Kwan Fai "Willie" Mak (22), and Tony Ng (25, no relation) — were former members of a Hong Kong triad who\'d been losing money at the tables. They picked a busy night when they knew the club would be flush with cash.\n\nWai Chin, 62, a Navy veteran and dealer, survived by playing dead despite being shot in the face and neck. His testimony identified all three killers. Within days, all were arrested. Willie Mak and Benjamin Ng got death sentences (later commuted to life). Tony Ng got life with a chance of parole — he served 28 years before being deported to Hong Kong in 2014.\n\nIt remains Washington state\'s deadliest mass murder. The club never reopened. The basement is sealed. A memorial plaque marks the site.',
           verdict: 'Solved. All three perpetrators convicted and imprisoned for life. The Wah Mee building is now residential; a memorial plaque marks the site.',
           location: {
             name: 'Louisa Hotel, 669 S King St (Chinatown-International District)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Louisa%20Hotel%2C%20669%20S%20King%20St%20(Chinatown-International%20District)%20Seattle',
             stillExists: true,
             coordinates: { lat: 47.5985, lng: -122.3250 },
           },
@@ -1155,7 +1207,7 @@ export const seattle: CityData = {
           id: 'dark-2',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 3,
+          featuredOrder: 2,
           category: 'crime',
           year: '1974-1978',
           title: 'Ted Bundy started killing in Seattle while volunteering at a suicide hotline',
@@ -1163,6 +1215,7 @@ export const seattle: CityData = {
           verdict: 'Solved. Ted Bundy was executed on January 24, 1989, having confessed to 30 murders. The true number is unknown.',
           location: {
             name: 'University District, Seattle',
+      url: 'https://www.google.com/maps/search/?api=1&query=University%20District%2C%20Seattle%20Seattle',
             stillExists: true,
             coordinates: { lat: 47.6606, lng: -122.3165 },
           },
@@ -1215,6 +1268,8 @@ export const seattle: CityData = {
         {
           id: 'dark-3',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 3,
           category: 'crime',
           year: '1982-1998',
           title: 'The Green River Killer Murdered at Least 49 Women',
@@ -1222,6 +1277,7 @@ export const seattle: CityData = {
           verdict: 'Solved. Gary Ridgway confessed to 49 murders and is serving life without parole at Washington State Penitentiary.',
           location: {
             name: 'Green River, King County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Green%20River%2C%20King%20County%20Seattle',
             stillExists: true,
             coordinates: { lat: 47.3789, lng: -122.2420 },
           },
@@ -1280,13 +1336,15 @@ export const seattle: CityData = {
         {
           id: 'dark-4',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 5,
           category: 'disaster',
-          year: '1916',
-          title: 'The Everett Massacre: When Deputies Opened Fire on Striking Workers',
+                    title: 'The Everett Massacre: When Deputies Opened Fire on Striking Workers',
           body: 'On November 5, 1916, a boat carrying 250 IWW (Industrial Workers of the World) members — "Wobblies" — sailed from Seattle to Everett to support striking mill workers. They were met at the dock by Sheriff Donald McRae and 200 armed deputies and vigilantes.\n\nAs the boat, the Verona, attempted to land, someone fired the first shot. Within minutes, a firefight erupted. The Wobblies were trapped on the boat; the deputies fired from the dock and surrounding buildings. When the shooting stopped, at least five Wobblies and two deputies were dead. Twelve more people were unaccounted for — likely knocked into the water and drowned.\n\nThe survivors retreated to Seattle, where 74 were arrested and charged with murder. All were eventually acquitted. No deputy or vigilante was ever charged. The massacre became a rallying cry for the labor movement and demonstrated the violent lengths to which business interests would go to suppress union organizing.',
           verdict: 'Never prosecuted. All IWW members charged with murder were acquitted. No law enforcement or vigilantes faced charges.',
           location: {
             name: 'Everett City Dock',
+      url: 'https://www.google.com/maps/search/?api=1&query=Everett%20City%20Dock%20Seattle',
             stillExists: false,
             coordinates: { lat: 47.9790, lng: -122.2268 },
           },
@@ -1354,13 +1412,15 @@ export const seattle: CityData = {
         {
           id: 'dark-5',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 4,
           category: 'crime',
-          year: '2006',
-          title: 'The Capitol Hill Massacre: A Rave Ends in Horror',
+                    title: 'The Capitol Hill Massacre: A Rave Ends in Horror',
           body: 'In the early hours of March 25, 2006, a crowd gathered at a house on Capitol Hill for an after-party following a rave at the Capitol Hill Arts Center. Around 7 a.m., Kyle Huff entered the house carrying a 12-gauge shotgun and a handgun.\n\nHuff had attended the rave earlier that night and followed partygoers to the after-party. He shot six people inside the house and outside on the street, killing them all. A seventh victim, badly wounded, would survive. When police arrived, Huff shot himself on the front porch.\n\nThe attack was senseless. Huff had no known connection to the victims; he had seemingly chosen the party at random. Investigation revealed that Huff, a 28-year-old Montana native, had struggled with mental illness and had an arsenal of weapons in his truck.\n\nThe Capitol Hill massacre was Seattle\'s deadliest mass shooting at the time. It devastated the city\'s close-knit rave and electronic music community. A memorial now marks the house where six young people died.',
           verdict: 'Closed. Kyle Huff died by suicide at the scene. His motive remains unknown.',
           location: {
             name: '2112 E Republican St, Capitol Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=2112%20E%20Republican%20St%2C%20Capitol%20Hill%20Seattle',
             stillExists: true,
             coordinates: { lat: 47.6229, lng: -122.3110 },
           },
@@ -1425,13 +1485,15 @@ export const seattle: CityData = {
         {
           id: 'dark-6',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 6,
           category: 'disaster',
-          year: '1910',
-          title: 'The Wellington Avalanche: America\'s Deadliest Avalanche',
+                    title: 'The Wellington Avalanche: America\'s Deadliest Avalanche',
           body: 'On March 1, 1910, a massive avalanche swept two snowbound Great Northern Railway passenger trains off the tracks at Wellington, in the Cascade Mountains east of Seattle. Ninety-six people died — the deadliest avalanche in American history.\n\nThe trains had been trapped at the Wellington station for nine days during a blizzard that dropped 11 feet of snow. Passengers and crew waited for rotary plows to clear the tracks. Then the weather changed: warm winds and lightning. At 1:42 a.m., a slab of snow a half-mile wide broke loose from the mountain above and carried the trains 150 feet into Tye Creek.\n\nRescue efforts were hampered by continued snowfall. Many bodies weren\'t recovered until spring. Great Northern renamed the station "Tye" to distance itself from the tragedy. A concrete snow shed was eventually built to protect the route, and the 8-mile Cascade Tunnel (the longest in North America at the time) was completed in 1929 to bypass the avalanche zone entirely.\n\nThe Wellington disaster remains largely forgotten — overshadowed by the Titanic two years later — but it reshaped railroad safety practices and mountain travel across the American West.',
           verdict: 'Accidental. Natural disaster compounded by the limitations of early-20th-century railroad engineering.',
           location: {
             name: 'Wellington/Tye (now abandoned), Stevens Pass',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wellington%2FTye%20(now%20abandoned)%2C%20Stevens%20Pass%20Seattle',
             stillExists: false,
             coordinates: { lat: 47.7468, lng: -121.1348 },
           },
@@ -1503,13 +1565,15 @@ export const seattle: CityData = {
         {
           id: 'dark-7',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 7,
           category: 'injustice',
-          year: '1942',
-          title: 'Seattle\'s Japanese community was forcibly removed to internment camps',
+                    title: 'Seattle\'s Japanese community was forcibly removed to internment camps',
           body: 'On February 19, 1942, following the attack on Pearl Harbor, President Roosevelt signed Executive Order 9066, authorizing the forced removal of 120,000 Japanese Americans from the West Coast. Seattle\'s Nihonmachi (Japantown) was emptied. Businesses, homes, and community institutions were lost. Families were sent to camps at Puyallup, Minidoka, and elsewhere. When they returned years later, Japantown was gone — replaced by other communities and commercial development.\n\nSeattle had one of the largest Japanese American populations on the West Coast. The forced removal devastated families who had built lives here for decades. Many lost everything — homes, businesses, savings. The internment was later recognized as a grave injustice, and in 1988, President Reagan signed the Civil Liberties Act apologizing and providing reparations to survivors.',
           verdict: 'Legal injustice. The U.S. government formally apologized in 1988 via the Civil Liberties Act, providing reparations to surviving internees.',
           location: {
             name: 'Nihonmachi/Japantown (now International District)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Nihonmachi%2FJapantown%20(now%20International%20District)%20Seattle',
             stillExists: false,
             coordinates: { lat: 47.5986, lng: -122.3251 },
           },
@@ -1688,6 +1752,7 @@ export const seattle: CityData = {
           source: 'Duwamish Tribal Organization',
           location: {
             name: 'Duwamish Longhouse, West Seattle',
+      url: 'https://www.google.com/maps/search/?api=1&query=Duwamish%20Longhouse%2C%20West%20Seattle%20Seattle',
             stillExists: true,
           },
         },
@@ -1701,10 +1766,10 @@ export const seattle: CityData = {
           image: {
             src: '/images/history/seattle-fire-1889.jpg',
             alt: 'Seattle after the Great Fire of 1889',
-            year: '1889',
-          },
+                      },
           location: {
             name: 'Pioneer Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Pioneer%20Square%20Seattle',
             coordinates: { lat: 47.6019, lng: -122.3328 },
             stillExists: true,
           },

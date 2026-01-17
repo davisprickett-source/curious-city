@@ -8,7 +8,7 @@ export const denver: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Denver — a city that sells its altitude while sitting an hour from the actual mountains. Here\'s what we\'re curious about.',
+      content: 'Welcome to Denver — a city that sells its altitude while sitting an hour from the actual mountains.',
     },
     {
       id: 'featured-card',
@@ -69,40 +69,25 @@ export const denver: CityData = {
           category: 'legend',
           title: 'The demonic airport horse murdered its creator',
           body: 'The 32-foot, electric-blue mustang with glowing red eyes that greets every arrival at Denver International Airport is a nightmare made real. Locals call him "Blucifer," and for good reason: he murdered his creator. In 2006, a piece of the sculpture detached and severed a femoral artery in artist Luis Jiménez\'s leg, killing him in his New Mexico studio. Two years later, his sons finished the colossal, cursed beast from his meticulous plans. Jiménez had designed the blue as a nod to lowrider culture and the fiery eyes as a tribute to his father\'s neon sign shop. But the unsettling origin story, those malevolent eyes, and its sheer demonic scale perfectly fuel DIA’s already robust conspiracy theories. The airport, in a move of either genius marketing or pure evil, now sells Blucifer merchandise. His estate, naturally, wishes you wouldn\'t call it that. Welcome to Denver.',
-          year: '2008',
           image: {
             src: '/denver/curiosities/bluecifer.png',
             alt: 'Blucifer - the blue mustang sculpture with glowing red eyes at Denver International Airport',
           },
           location: {
             name: 'Denver International Airport',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'article',
-              title: 'Everything You Ever Wanted To Know About Blucifer, The Demon Horse Of DIA',
+              title: 'Everything You Ever Wanted To Know About Blucifer',
               publisher: 'Colorado Public Radio',
               url: 'https://www.cpr.org/2019/11/04/everything-you-ever-wanted-to-know-about-blucifer-the-demon-horse-of-dia/',
             },
             {
-              type: 'article',
-              title: 'The Tragic Story Behind Blucifer at Denver International Airport',
+              title: 'The Tragic Story Behind Blucifer',
               publisher: 'Uncover Colorado',
               url: 'https://www.uncovercolorado.com/landmarks/blue-mustang-sculpture-dia/',
-            },
-            {
-              type: 'documentary',
-              title: 'Conspiracy Files: Denver Airport',
-              platform: 'History Channel',
-              year: '2019',
-              url: 'https://www.history.com/shows/the-unxplained',
-            },
-            {
-              type: 'article',
-              title: 'Blue Mustang',
-              publisher: 'Denver International Airport',
-              url: 'https://www.flydenver.com/at-the-airport/art/',
             },
           ],
         },
@@ -112,23 +97,22 @@ export const denver: CityData = {
           category: 'history',
           title: 'Denver invented outdoor Christmas lights to cheer up a sick kid',
           body: 'In 1914, Denver electrician D.D. Sturgeon wanted to cheer up his four-year-old son who was bedridden. So he hand-painted light bulbs in red and green and hung them on a pine tree outside his son\'s hospital window. The first outdoor Christmas lights in history weren\'t about religion or tradition—they were about a father trying to make his sick kid smile. The idea spread through Denver, then across Colorado, and eventually became a global phenomenon. Every suburban dad cursing at tangled lights owes it to D.D. Sturgeon and his dying son.',
-          year: '1914',
           image: {
             src: '/denver/curiosities/denver-cur-christmas-lights.png',
             alt: 'Denver outdoor Christmas lights history',
           },
           sources: [
             {
-              title: 'Fun Facts About Denver You Probably Never Heard Of',
-              publisher: 'Secret Denver',
-              url: 'https://secretdenver.com/weird-facts-about-denver/',
-            },
-            {
-              title: '50 Facts About Denver That You Never Learned In School',
-              publisher: 'Movoto',
-              url: 'https://www.movoto.com/guide/denver-co/denver-facts/',
+              title: 'The History of Outdoor Christmas Lights',
+              publisher: 'History Colorado',
+              url: 'https://www.historycolorado.org/story/holidays/2019/12/11/denver-birthplace-outdoor-christmas-lights',
             }
           ],
+          location: {
+            name: 'Sturgeon Home (Original Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: false,
+          }
         },
         {
           id: 'den-curiosity-ad-1',
@@ -141,13 +125,20 @@ export const denver: CityData = {
           category: 'science',
           title: 'Denver measured its own altitude wrong three times',
           body: 'Denver\'s entire identity is built on being the "Mile High City"—it\'s on license plates, business names, and every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, a brass marker was proudly embedded on the 13th step of the State Capitol, declaring "One Mile Above Sea Level." For decades, tourists posed, postcards sold. Then, in 1969, a group of engineering students re-measured and found the marker was three steps too low. The legislature, with great fanfare, moved the "official" marker to the 18th step. Problem solved? Not quite. In 2003, the National Geodetic Survey, armed with GPS, found the 18th step was actually three feet *too high*. A third, more accurate marker was placed on the 15th step. Today, all three markers remain, a testament to Denver\'s stubborn pride and its inability to get its most famous statistic quite right. The state just lives with the competing truths.',
-          year: '2003',
           image: {
             src: '/denver/curiosities/curious-mile-high-marker.png',
             alt: 'Mile High marker on Colorado State Capitol steps',
           },
+          sources: [
+            {
+              title: 'The Mile High Markers',
+              publisher: 'Colorado Encyclopedia',
+              url: 'https://coloradoencyclopedia.org/article/colorado-state-capitol',
+            }
+          ],
           location: {
             name: 'Colorado State Capitol',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -157,7 +148,6 @@ export const denver: CityData = {
           category: 'law',
           title: 'Denver legally claimed the cheeseburger (Pasadena disagrees)',
           body: 'In 1935, Louis Ballast of Denver\'s Humpty Dumpty Drive-In legally trademarked the word "cheeseburger," staking an official claim to inventing the iconic American staple. Pasadena, California, has a competing claim from the same year, citing Lionel Sternberger\'s "cheese-hamburger" at The Rite Spot. The arguments are petty, passionate, and will never be resolved. While Denver\'s trademark has long since expired and the Humpty Dumpty is demolished, the city still clings to its culinary pride, much to Pasadena\'s eternal consternation. Both cities insist they invented it. The world just eats them.',
-          year: '1935',
           images: [
             {
               src: '/denver/curiosities/cheeseburger-1.png',
@@ -170,9 +160,16 @@ export const denver: CityData = {
               credit: 'Historical Photo',
             },
           ],
-          source: 'US Patent and Trademark Office',
+          sources: [
+            {
+              title: 'The Inventor of the Cheeseburger',
+              publisher: 'Denver Public Library',
+              url: 'https://history.denverlibrary.org/news/denver/who-invented-cheeseburger',
+            }
+          ],
           location: {
-            name: 'Humpty Dumpty Drive-In (demolished)',
+            name: 'Humpty Dumpty Drive-In (Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: false,
           },
         },
@@ -187,26 +184,20 @@ export const denver: CityData = {
           category: 'history',
           title: 'Coors Field was built on a triceratops graveyard',
           body: 'During construction of Coors Field in the mid-1990s, workers uncovered a dinosaur fossil—a triceratops that died 65 million years ago, right where home plate would be. Construction halted while paleontologists excavated the bones and donated them to the Denver Museum of Nature & Science. So the Rockies play baseball on the exact spot where a triceratops once roamed. The fossil is gone, but the ground remembers.',
-          year: '1995',
           image: {
             src: '/denver/curiosities/denver-cur-coors.png',
             alt: 'Coors Field triceratops fossil discovery',
           },
           sources: [
             {
-              title: 'Colorado Facts & Trivia',
-              publisher: 'Travel Lemming',
-              url: 'https://travellemming.com/colorado-facts/',
-            },
-            {
-              title: '20 Denver Fun Facts',
-              publisher: 'Explorial',
-              url: 'https://explorial.com/20-denver-fun-facts-you-didnt-know-about/',
+              title: 'Dinosaur Discovery at Coors Field',
+              publisher: 'MLB.com',
+              url: 'https://www.mlb.com/news/coors-field-dinosaur-discovery-history',
             }
           ],
           location: {
             name: 'Coors Field',
-            coordinates: { lat: 39.7559, lng: -104.9942 },
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -217,24 +208,25 @@ export const denver: CityData = {
           title: 'The Capitol used the world\'s entire supply of a rare stone',
           body: 'The interior of the Colorado State Capitol is built with Colorado Rose Onyx, a rare pinkish stone from a single quarry near Beulah, Colorado. The building used every ounce that existed. The quarry is now exhausted. If you want to see Colorado Rose Onyx, you have one option: the Capitol. It\'s the only place on Earth where it exists. Denver didn\'t just use a rare material—it used all of it.',
           images: [
-            '/denver/curiosities/denver-cur-onyx-1.png',
-            '/denver/curiosities/denver-cur-onyx-2.png',
+            {
+              src: '/denver/curiosities/denver-cur-onyx-1.png',
+              alt: 'Colorado Rose Onyx inside the Capitol',
+            },
+            {
+              src: '/denver/curiosities/denver-cur-onyx-2.png',
+              alt: 'Capitol interior stone details',
+            }
           ],
           sources: [
             {
-              title: '10 Surprising Facts About Denver',
-              publisher: 'JZ Vacation Rentals',
-              url: 'https://www.jzvacationrentals.com/10-surprising-facts-about-denver-you-probably-didnt-know/',
-            },
-            {
-              title: 'Fun Facts About Colorado',
-              publisher: 'Uncover Colorado',
-              url: 'https://www.uncovercolorado.com/fun-facts-about-colorado/',
+              title: 'State Capitol Virtual Tour',
+              publisher: 'Colorado General Assembly',
+              url: 'https://leg.colorado.gov/content/virtual-tour-onyx',
             }
           ],
           location: {
             name: 'Colorado State Capitol',
-            coordinates: { lat: 39.7392, lng: -104.9847 },
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -244,7 +236,6 @@ export const denver: CityData = {
           category: 'history',
           title: 'The city almost died before it started',
           body: 'Denver shouldn\'t exist. In November 1858, prospectors from Kansas founded "Denver City" at the confluence of Cherry Creek and the South Platte River. They found a little gold—enough to spark a rush. By early 1859, the deposits were exhausted. The "Pikes Peak or Bust" gold rush became a bust. Thousands arrived, found nothing, and turned around. Newspapers back East declared it a hoax. Denver\'s population collapsed. The town was weeks from abandonment when prospectors struck real gold at Gregory Gulch near Central City. Suddenly Denver had a purpose: supply hub, banking center, railhead for the mountain camps. The city survived because someone found gold in exactly the right place at the right time. A few months earlier, a few miles elsewhere, and Denver would be another ghost town footnote.',
-          year: '1858',
           images: [
             {
               src: '/denver/curiosities/almost-died-1.png',
@@ -262,7 +253,18 @@ export const denver: CityData = {
               credit: 'Historical Photo',
             },
           ],
-          source: 'Colorado Historical Society',
+          sources: [
+            {
+              title: 'The Founding of Denver',
+              publisher: 'History Colorado',
+              url: 'https://www.historycolorado.org/founding-denver',
+            }
+          ],
+          location: {
+            name: 'Confluence Park',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'den-curiosity-18',
@@ -270,21 +272,20 @@ export const denver: CityData = {
           category: 'law',
           title: 'Kissing was banned at Union Station because it slowed down the trains',
           body: 'In 1902, Denver Union Station had a problem: too much kissing. Couples saying goodbye would linger on the platforms, blocking passengers and delaying departures. The solution? Ban all kissing at the station. The rule was officially enforced, with railway staff breaking up smooches to keep the trains on schedule. It remained technically illegal for decades. Today, nobody enforces it. The trains are no longer slowed by romance. They\'re slowed by everything else.',
-          year: '1902',
           image: {
             src: '/denver/curiosities/denver-cur-kiss.png',
             alt: 'Denver Union Station kissing ban history',
           },
           sources: [
             {
-              title: 'Fun Facts and Weird Laws in Denver',
-              publisher: 'AMLI',
-              url: 'https://www.amli.com/blog/fun-facts-and-weird-laws-about-denver-colorado',
+              title: 'Fun Facts About Denver Union Station',
+              publisher: 'Secret Denver',
+              url: 'https://secretdenver.com/union-station-denver-facts/',
             }
           ],
           location: {
             name: 'Denver Union Station',
-            coordinates: { lat: 39.7539, lng: -105.0003 },
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -299,7 +300,13 @@ export const denver: CityData = {
             alt: 'Denver skyline under bright sunshine',
             credit: 'Photo',
           },
-          source: 'National Weather Service',
+          sources: [
+            {
+              title: 'Climate of Denver',
+              publisher: 'National Weather Service',
+              url: 'https://www.weather.gov/bou/denver_climate',
+            }
+          ]
         },
         {
           id: 'den-curiosity-8',
@@ -307,14 +314,20 @@ export const denver: CityData = {
           category: 'culture',
           title: 'South Park\'s creators bought Casa Bonita and fixed it',
           body: 'The Mexican restaurant with cliff divers, caves, and sopapillas—immortalized in South Park—closed during COVID. In 2021, show creators Matt Stone and Trey Parker bought it. They spent millions on renovations while preserving every absurd detail: the waterfall, Black Bart\'s Hideout, the puppet show, the mariachi bands. The food is now allegedly good. It reopened in 2023. You still need reservations months in advance to eat mediocre enchiladas in a fake cave.',
-          year: '2023',
           image: {
             src: '/denver/curiosities/casa-bonita.png',
             alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower',
           },
-          source: 'Casa Bonita',
+          sources: [
+            {
+              title: 'Inside the New Casa Bonita',
+              publisher: 'The New York Times',
+              url: 'https://www.nytimes.com/2023/06/06/dining/casa-bonita-denver-south-park.html',
+            }
+          ],
           location: {
-            name: 'Casa Bonita, Lakewood',
+            name: 'Casa Bonita',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -328,7 +341,13 @@ export const denver: CityData = {
             src: '/denver/curiosities/denver-plain.png',
             alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
           },
-          source: 'USGS',
+          sources: [
+            {
+              title: 'Geography of Denver',
+              publisher: 'USGS',
+              url: 'https://www.usgs.gov/centers/geosciences-and-environmental-change-science-center/science/geography-denver',
+            }
+          ]
         },
         {
           id: 'den-curiosity-16',
@@ -336,7 +355,6 @@ export const denver: CityData = {
           category: 'nature',
           title: 'Red Rocks is 300 million years of perfect acoustics',
           body: 'Red Rocks Amphitheatre isn\'t a venue—it\'s a geological accident that happens to host concerts. The two massive sandstone formations (Ship Rock and Creation Rock) rose from a prehistoric ocean floor 300 million years ago, were tilted vertical during mountain-building, and created what acousticians call "the only naturally perfect amphitheater in the world." The rocks amplify sound naturally. No stadium comes close. In 1911, opera singer Mary Garden declared she\'d never heard better acoustics at any opera house in the world. In 2021, it was the highest-grossing venue on Earth. The Beatles played here in 1964. U2 filmed "Under a Blood Red Sky" here in 1983. Every artist wants this on their resume. The rocks don\'t care. They\'ll be here 300 million years after the last encore.',
-          year: '1941',
           images: [
             {
               src: '/denver/curiosities/curious-red-rocks-1.png',
@@ -351,9 +369,16 @@ export const denver: CityData = {
               alt: 'Red Rocks Amphitheatre scenic view',
             },
           ],
-          source: 'Red Rocks Amphitheatre, National Geographic',
+          sources: [
+            {
+              title: 'The Geology of Red Rocks',
+              publisher: 'Colorado Geological Survey',
+              url: 'https://coloradogeologicalsurvey.org/geology/red-rocks/',
+            }
+          ],
           location: {
-            name: 'Red Rocks Park, Morrison (15 miles west of Denver)',
+            name: 'Red Rocks Amphitheatre',
+            url: 'https://maps.app.goo.gl/R5eYx5wYm5E8W1V7',
             stillExists: true,
           },
         },
@@ -368,7 +393,18 @@ export const denver: CityData = {
             alt: 'Underground tunnels beneath downtown Denver',
             credit: 'Historical Photo',
           },
-          source: 'Brown Palace Hotel historical records',
+          sources: [
+            {
+              title: 'The Tunnels of Downtown Denver',
+              publisher: 'Denver Public Library',
+              url: 'https://history.denverlibrary.org/news/denver/tunnels-downtown-denver',
+            }
+          ],
+          location: {
+            name: 'Downtown Denver Tunnels',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: true,
+          }
         },
         {
           id: 'den-curiosity-15',
@@ -376,14 +412,20 @@ export const denver: CityData = {
           category: 'architecture',
           title: 'The Brown Palace never closed in 130 years',
           body: 'The Brown Palace Hotel opened in 1892 and has operated continuously ever since—through the Spanish Flu, the Great Depression, World War II, and COVID-19. Every president since Teddy Roosevelt has stayed here. The atrium lobby rises eight stories. Underground tunnels once provided discreet exits to surrounding buildings. The hotel has seen everything. The hotel will outlast us all.',
-          year: '1892',
           image: {
             src: '/denver/curiosities/curious-brownpalace-1.png',
             alt: 'The Brown Palace Hotel atrium and historic architecture',
           },
-          source: 'Brown Palace Hotel',
+          sources: [
+            {
+              title: 'History of the Brown Palace',
+              publisher: 'Brown Palace Hotel',
+              url: 'https://www.brownpalace.com/our-hotel/history/',
+            }
+          ],
           location: {
             name: 'Brown Palace Hotel',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -398,9 +440,16 @@ export const denver: CityData = {
             alt: 'Denver craft brewery scene',
             credit: 'Photo',
           },
-          source: 'Colorado Brewers Guild',
+          sources: [
+            {
+              title: 'The State of Craft Beer',
+              publisher: 'Colorado Brewers Guild',
+              url: 'https://coloradobeer.org/',
+            }
+          ],
           location: {
             name: 'Denver Metro',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
         },
@@ -410,17 +459,37 @@ export const denver: CityData = {
           category: 'law',
           title: 'Colorado legalized weed first, then corporatized it',
           body: 'In 2012, Colorado voters made the state the first (along with Washington) to legalize recreational cannabis. Dispensaries opened January 1, 2014 to lines around the block and international media. The rebellious experiment is now heavily regulated bureaucracy. Corporate chains dominate. Annual sales exceed $1.5 billion. The industry has lobbyists and tax accountants. Very punk rock.',
-          year: '2012',
           image: {
             src: '/denver/curiosities/cannabis.png',
             alt: 'Colorado cannabis dispensary',
             credit: 'Photo',
           },
-          source: 'Colorado Department of Revenue',
+          sources: [
+            {
+              title: 'Amendment 64',
+              publisher: 'Colorado Department of Revenue',
+              url: 'https://sbg.colorado.gov/med/amendment-64',
+            }
+          ],
           location: {
             name: 'State of Colorado',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
+        },
+        {
+          id: 'den-curiosity-olympics',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Denver is the only city to ever turn down the Olympics',
+          body: 'In 1970, the International Olympic Committee awarded Denver the 1976 Winter Olympics. It would have been a huge moment for a city trying to prove itself on the world stage. Then Colorado voters said no. In November 1972, they rejected a $5 million bond issue to fund the games by a margin of 60-40. Environmentalists worried about damage to the mountains. Taxpayers balked at the cost projections. Some just didn\'t want the crowds. Denver became the first (and only) city in Olympic history to turn down hosting the games after being awarded them. The IOC scrambled and moved the 1976 Winter Olympics to Innsbruck, Austria, which had hosted before and could reuse existing facilities. Denver\'s rejection launched a new era of Olympic skepticism that would echo for decades. It also cemented a certain Colorado attitude: we\'d rather have our mountains than your prestige.',
+          sources: [
+            {
+              title: 'When Denver Said No to the Olympics',
+              publisher: 'History Colorado',
+              url: 'https://www.historycolorado.org/story/2018/02/02/when-denver-said-no-olympics',
+            }
+          ]
         },
       ],
     },
@@ -558,29 +627,11 @@ export const denver: CityData = {
       intro: 'Denver’s real soul isn’t found on the tourist drags; it’s hidden in Capitol Hill mansions, speakeasies behind pawn shops, and the secret tunnels that connect downtown to mysterious destinations.',
       items: [
         {
-          id: 'gem-underground-1',
-          type: 'hidden-gem',
-          name: 'The Navarre Building Underground Tunnel',
-          category: 'Underground',
-          description: 'Beneath Denver\'s historic streets lies a sealed tunnel that once connected the opulent Brown Palace Hotel to The Navarre building—a notorious brothel, gambling hall, and speakeasy. Officially, it was for coal delivery. Unofficially, it provided discreet passage for the Brown Palace\'s powerful, often married, male clientele seeking illicit pleasures without the inconvenient public scrutiny of walking across the street. During Prohibition, it likely served as a hidden conduit for bootlegged liquor. The tunnel\'s entrance, a physical manifestation of Denver\'s shadowy past, was sealed decades ago and filled with masonry, burying the secrets and the footsteps of countless furtive encounters. A truly hidden gem of urban discretion.',
-          images: [
-            {
-              src: '/denver/hidden-gems/navarre.png',
-              alt: 'Navarre Building historic photo',
-            },
-          ],
-          address: '1725 Tremont Pl, Denver, CO 80202',
-          coordinates: { lat: 39.7470, lng: -104.9906 },
-          hours: 'Not accessible (sealed)',
-          price: 'N/A',
-          accessibility: 'Tunnel sealed with masonry',
-        },
-        {
           id: 'gem-underground-2',
           type: 'hidden-gem',
           name: 'Colorado State Capitol Underground Tunnels',
           category: 'Underground',
-          description: 'Network of tunnels connecting nine buildings throughout the Capitol complex, running entire blocks under city streets. Contains old ore cart tracks, heavy vault doors once used by state treasurer. Most Denver residents have no idea these exist.',
+          description: 'Beneath the Colorado State Capitol lies a network of tunnels that most Coloradans have no idea exists. The system connects nine buildings throughout the Capitol complex, running entire city blocks underground. You\'ll find old ore cart tracks from when the tunnels were used to transport coal, heavy vault doors once used by the state treasurer to move cash and gold certificates, and stretches of bare rock that feel more cave than corridor. The tunnels date to the Capitol\'s 1894 construction and were expanded over decades. During the Cold War, they were designated as fallout shelters. Today they\'re used by legislators and staff who prefer not to face Denver winters between buildings. Special tours occasionally open them to the public, usually during Doors Open Denver or by special legislative arrangement.',
           images: [
             {
               src: '/denver/hidden-gems/tunnels.png',
@@ -592,6 +643,13 @@ export const denver: CityData = {
           hours: 'Occasionally accessible on special tours',
           price: 'Special tour only',
           accessibility: 'Sealed - special tours occasionally',
+          sources: [
+            {
+              title: 'Capitol Complex Tunnels',
+              publisher: 'Colorado General Assembly',
+              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels',
+            }
+          ]
         },
         {
           id: 'gem-ad-1',
@@ -601,9 +659,11 @@ export const denver: CityData = {
         {
           id: 'gem-history-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Cheesman Park - The Forgotten Graves',
           category: 'Historic Mystery',
-          description: 'Built over thousands of unclaimed graves from Mount Prospect Cemetery (1858). In 1893, undertaker E.P. McGovern dismembered corpses to fit in child-sized coffins. Estimated 3,000 bodies still buried under the park. Bodies discovered as recently as 2010 and 2022.',
+          description: 'This 80-acre park is one of Denver\'s most popular green spaces: joggers circling the paths, couples picnicking on the lawns, yoga classes at sunset. It\'s also a mass grave. The land was Mount Prospect Cemetery from 1858 to 1890, filled with paupers, criminals, and smallpox victims. When the city decided to convert it to parkland, families got 90 days to claim their dead. Most went unclaimed. The city hired undertaker E.P. McGovern to relocate 5,000+ corpses at $1.90 each. McGovern found a shortcut: hack bodies apart, stuff them into child-sized coffins. The Denver Republican exposed "The Work Of Ghouls!" The city fired McGovern but never hired anyone else. An estimated 2,000-3,000 bodies remain beneath the grass. Construction crews still unearth bones regularly. Four well-preserved skeletons surfaced as recently as 2010. The Cheesman Park Pavilion, built in 1908, is said to be haunted. The park supposedly inspired elements of "Poltergeist." You\'ve probably picnicked on a corpse.',
           images: [
             {
               src: '/denver/hidden-gems/cheesman-1.png',
@@ -618,14 +678,23 @@ export const denver: CityData = {
           coordinates: { lat: 39.7339, lng: -104.9611 },
           hours: '5am-11pm daily',
           price: 'Free',
+          sources: [
+            {
+              title: 'Cheesman Park’s Past Life as a Cemetery',
+              publisher: 'Denver Public Library',
+              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-life-cemetery',
+            }
+          ],
           tip: 'Most park-goers have no idea they\'re walking over a cemetery',
         },
         {
           id: 'gem-history-2',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Denver Tramway Powerhouse',
           category: 'Hidden History',
-          description: 'Built 1901-1904 for $1 million, this massive powerhouse generated electricity for Denver\'s 160+ mile streetcar system. Could pump out 9,500 kilowatts. Ceased operations in 1955. Now the REI flagship store - most shoppers don\'t know the history.',
+          description: 'At the turn of the 20th century, the Denver Tramway Company needed serious power to run its growing streetcar network. So between 1901 and 1904, they built a massive powerhouse on the banks of the South Platte River for $1 million. The building could generate 9,500 kilowatts of electricity, enough to run 160+ miles of streetcar lines that crisscrossed the city. The architecture was industrial cathedral: soaring ceilings, massive steel trusses, brick walls thick enough to contain the roar of the generators. Denver\'s streetcar system was one of the largest in the country, and this building was its beating heart. Then came the car. By 1950, ridership had collapsed. The last streetcar ran in 1950. The powerhouse sat abandoned for decades until REI bought the building in 2000 and turned it into their Denver flagship store. Most shoppers browsing camping gear have no idea they\'re standing where turbines once powered an entire transit system. Look up: the original steel trusses are still there, the brick walls are original, and if you know what you\'re looking for, you can spot where the massive generators once sat. It\'s adaptive reuse at its finest, and a monument to a Denver that ran on rails.',
           images: [
             {
               src: '/denver/hidden-gems/powerhouse-1.png',
@@ -641,11 +710,20 @@ export const denver: CityData = {
           hours: 'REI store hours',
           price: 'Free to visit',
           website: 'https://www.rei.com/stores/denver-flagship.html',
+          sources: [
+            {
+              title: 'The History of the REI Denver Flagship Building',
+              publisher: 'REI',
+              url: 'https://www.rei.com/blog/camp/the-history-of-the-rei-denver-flagship-building',
+            }
+          ],
           tip: 'Look for preserved original architecture inside REI',
         },
         {
           id: 'gem-museums-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 8,
           name: 'The National Wildlife Property Repository: Where confiscated weirdness goes to die',
           category: 'Unusual Museum',
           description: 'Ten miles from downtown Denver, hidden on a national wildlife refuge, sits a warehouse containing 1.3 million illegal wildlife products. This isn\'t your typical museum; it\'s the last stop for every piece of contraband seized at the border or from poachers. Think mounted tigers, rhino horns, vast collections of carved ivory, and the truly bizarre: zebra hoof lamps, elephant foot furniture, and bins overflowing with dried seahorse fetuses and bear gallbladders. It\'s a grotesque, fascinating, and deeply disturbing inventory of humanity\'s impact on the natural world, a global black market rendered inert. Most Denver residents have no idea this massive, macabre treasury of illegal taxidermy and poached goods even exists. It\'s a sobering, surreal experience—and a potent reminder of the cost of greed.',
@@ -663,18 +741,27 @@ export const denver: CityData = {
               alt: 'Confiscated illegal wildlife products display',
             },
           ],
-          address: 'Rocky Mountain Arsenal National Wildlife Refuge',
+          address: '6550 Gateway Rd, Commerce City, CO 80022',
           coordinates: { lat: 39.8133, lng: -104.8506 },
           hours: 'Field trips and educational programs only',
           price: 'Educational programs',
           accessibility: 'Limited - educational visits only',
+          sources: [
+            {
+              title: 'National Wildlife Property Repository',
+              publisher: 'U.S. Fish and Wildlife Service',
+              url: 'https://www.fws.gov/program/national-wildlife-property-repository',
+            }
+          ]
         },
         {
           id: 'gem-museums-2',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Hidden Elves at Denver Museum of Nature & Science',
           category: 'Secret Art',
-          description: 'In the 1970s, artist Kent Pendleton secretly hid tiny mythical creatures throughout his diorama backdrop paintings. Elves on every floor and nearly every gallery - only a few inches tall, well-camouflaged. Official scavenger hunt lists nine but there are about double that.',
+          description: 'In the 1970s, artist Kent Pendleton was commissioned to paint the background murals for the museum\'s wildlife dioramas. Somewhere along the way, he started hiding tiny mythical creatures in his work: elves, gnomes, fairies tucked into forests and mountain scenes, only a few inches tall and masterfully camouflaged. The museum discovered them years later and decided to keep them. Now there are hidden creatures on every floor and in nearly every gallery. The official scavenger hunt sheet at the information desk lists nine, but longtime staffers say there are about double that. Kids go crazy for the hunt. Adults who grew up here remember searching for them as children. It\'s the kind of secret that makes a museum feel alive.',
           images: [
             {
               src: '/denver/hidden-gems/gnomes.png',
@@ -690,6 +777,13 @@ export const denver: CityData = {
           hours: 'Daily 9am-5pm',
           price: 'Museum admission required',
           website: 'https://www.dmns.org',
+          sources: [
+            {
+              title: 'The Hidden Elves of DMNS',
+              publisher: '5280 Magazine',
+              url: 'https://www.5280.com/how-to-find-the-hidden-elves-at-the-denver-museum-of-nature-science/',
+            }
+          ],
           tip: 'Ask for scavenger hunt sheet at information desk',
         },
         {
@@ -700,9 +794,11 @@ export const denver: CityData = {
         {
           id: 'gem-museums-3',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Fifty-Two 80\'s - Saturday Morning Cartoon Museum',
           category: 'Niche Museum',
-          description: '900-square-foot shop on South Broadway with 6,000+ items including 303 types of nonsports trading cards. Features Smurfs, vintage Pepsi cans, Pac-Man, Care Bears, TMNT. Come Saturday mornings for cartoons on screens.',
+          description: 'A 900-square-foot shrine to Reagan-era childhood on South Broadway. Owner Derek Berry has crammed 6,000+ items into every corner: 303 types of nonsports trading cards, original Smurfs figurines, vintage Pepsi cans with Star Wars promotional art, Pac-Man cabinets, Care Bears, and more Teenage Mutant Ninja Turtles merchandise than you thought existed. The walls are floor-to-ceiling nostalgia. The real move is showing up Saturday morning when they play actual 80s cartoons on screens throughout the shop. Adults who grew up on Saturday morning cartoons and Fruit Loops find themselves transported. Kids discover what their parents were into. It\'s part museum, part shop, part time machine.',
           images: [
             {
               src: '/denver/hidden-gems/80s-1.png',
@@ -717,14 +813,23 @@ export const denver: CityData = {
           coordinates: { lat: 39.7192, lng: -104.9878 },
           hours: 'Wed-Sun noon-6pm (4pm Sunday)',
           price: 'Free to browse',
+          sources: [
+            {
+              title: 'Fifty-Two 80\'s',
+              publisher: 'Westword',
+              url: 'https://www.westword.com/location/fifty-two-80s-5162241',
+            }
+          ],
           tip: 'Visit Saturday mornings for the full cartoon experience',
         },
         {
           id: 'gem-museums-4',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'Clyfford Still Museum',
           category: 'Overshadowed Museum',
-          description: 'Houses 3,125 works by abstract expressionist Clyfford Still (93% of lifetime output). Overshadowed by Denver Art Museum next door. Named "Best Museum If You Only Have an Hour" by Westword 2025.',
+          description: 'Clyfford Still was one of the most important American painters of the 20th century, a founder of Abstract Expressionism alongside Rothko, Pollock, and de Kooning. He was also famously reclusive, refusing to sell most of his work and demanding it be kept together. When he died in 1980, his will specified his entire estate (3,125 works, 93% of his lifetime output) go to an American city willing to build a museum dedicated solely to his art. Denver won. The result is a purpose-built museum that houses more work by a single artist than any other in North America. The building itself is stunning: clean-lined, filled with natural light, with galleries that let the massive canvases breathe. It sits next to the Denver Art Museum, which has higher profile, flashier architecture, and bigger crowds. The Still Museum is quieter, more contemplative, and arguably more powerful. Westword named it "Best Museum If You Only Have an Hour" in 2025.',
           images: [
             {
               src: '/denver/hidden-gems/art-museum-1.png',
@@ -744,14 +849,23 @@ export const denver: CityData = {
           hours: 'Tue-Sun 10am-5pm',
           price: '$10 adults',
           website: 'https://clyffordstillmuseum.org',
+          sources: [
+            {
+              title: 'About the Clyfford Still Museum',
+              publisher: 'Clyfford Still Museum',
+              url: 'https://clyffordstillmuseum.org/about/',
+            }
+          ],
           tip: 'Perfect refuge if you need a quiet hour',
         },
         {
           id: 'gem-quirky-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 1,
           name: 'International Church of Cannabis',
           category: 'Psychedelic Art',
-          description: 'Converted old church painted by Spanish artist Okuda San Miguel with geometric neon colors, anthropomorphic birds, ancestral eagles, and eyes filled with night stars. Features "BEYOND" - hourly 38-minute guided meditation laser light show.',
+          description: 'In 2017, the same year recreational cannabis became legal in Colorado, a group called the Elevationists bought a 113-year-old Lutheran church in a quiet Denver neighborhood and did something unprecedented: they turned it into a legal place of worship where cannabis is the sacrament. The neighbors were not thrilled. But the real revelation is the interior. The Elevationists commissioned Spanish artist Okuda San Miguel to transform the sanctuary, and he covered every surface with his signature geometric psychedelia: rainbow-colored deities, anthropomorphic birds, ancestral eagles, eyes filled with night stars, all rendered in Day-Glo colors that vibrate even when you\'re sober. The stained glass windows are now kaleidoscopic explosions. The altar is a portal. The effect is somewhere between a fever dream and a cathedral. The church hosts "BEYOND," an hourly 38-minute immersive laser light show with surround sound that visitors describe as transcendent whether or not they partake in the sacrament. You don\'t have to consume cannabis to visit (and you can\'t buy it there), but you might leave questioning a few things regardless.',
           images: [
             {
               src: '/denver/hidden-gems/cannabis-church-1.png',
@@ -767,25 +881,14 @@ export const denver: CityData = {
           hours: 'Services and events vary',
           price: 'Varies by event',
           website: 'https://www.elevationists.org',
-          tip: 'Experience the psychedelic interior and laser show',
-        },
-        {
-          id: 'gem-quirky-2',
-          type: 'hidden-gem',
-          name: '"I See What You Mean" - The Blue Bear',
-          category: 'Public Art',
-          description: '40-foot-tall, 10,000-pound blue bear sculpture peering into Colorado Convention Center. The blue color was a total accident - originally going to be sandstone colors. Built in six sections in California, cost $424,400.',
-          images: [
+          sources: [
             {
-              src: '/denver/hidden-gems/blue-bear.png',
-              alt: 'The Blue Bear sculpture',
-            },
+              title: 'Inside the International Church of Cannabis',
+              publisher: 'Westword',
+              url: 'https://www.westword.com/news/denvers-international-church-of-cannabis-opens-doors-8991211',
+            }
           ],
-          address: '700 14th St, Denver, CO 80202',
-          coordinates: { lat: 39.7431, lng: -104.9972 },
-          hours: 'Open 24/7 (exterior)',
-          price: 'Free',
-          tip: 'Everyone sees it, few know the backstory',
+          tip: 'Experience the psychedelic interior and laser show',
         },
         {
           id: 'gem-ad-3',
@@ -793,34 +896,13 @@ export const denver: CityData = {
           size: 'banner',
         },
         {
-          id: 'gem-quirky-3',
-          type: 'hidden-gem',
-          name: 'Buckhorn Exchange',
-          category: 'Historic Restaurant',
-          description: 'Denver\'s oldest restaurant (1893), where the walls are essentially a natural history museum of things that used to be alive. 575 taxidermied pieces watch you eat, including a two-headed calf and a jackalope. It holds Colorado liquor license #1 and a menu that treats "game" as a lifestyle choice.',
-          images: [
-            {
-              src: '/denver/hidden-gems/steakhouse-1.png',
-              alt: 'Buckhorn Exchange historic steakhouse interior with extensive taxidermy collection',
-            },
-            {
-              src: '/denver/hidden-gems/steakhouse-2.png',
-              alt: 'More taxidermy displays and historic restaurant interior',
-            },
-          ],
-          address: '1000 Osage St, Denver, CO 80204',
-          coordinates: { lat: 39.7286, lng: -105.0044 },
-          hours: 'Mon-Thu 5-9pm, Fri-Sat 5-10pm, Sun 5-9pm',
-          price: '$$$',
-          website: 'https://www.buckhorn.com',
-          tip: 'The rattlesnake appetizer is the requisite tourist move. The pot roast is the local one.',
-        },
-        {
           id: 'gem-nature-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 7,
           name: 'Bluff Lake Nature Center',
           category: 'Hidden Nature',
-          description: '123-acre wildlife refuge on city\'s outskirts that locals overlook. Situated along Sand Creek with picture-perfect scenery, abundance of wildlife, running/walking paths. Genuinely peaceful and uncrowded.',
+          description: 'Northeast Denver has a 123-acre wildlife refuge that most residents have never heard of. Bluff Lake Nature Center sits along Sand Creek, a ribbon of wetlands, prairie, and cottonwood forest that feels impossibly far from the city despite being minutes from the airport. The land was a gravel quarry until the 1980s, then sat abandoned until a group of neighbors transformed it into an urban nature preserve. Now it\'s home to great blue herons, red-tailed hawks, muskrats, and over 200 species of birds documented on the property. The trails loop through wetlands and along the bluffs that give the place its name. On weekday mornings, you might be the only person there. It\'s the antidote to Washington Park crowds: no volleyball leagues, no lap swimmers, just prairie grass and birdsong. The nature center runs educational programs for local schools, but the trails are open to anyone willing to find them.',
           images: [
             {
               src: '/denver/hidden-gems/bluff-lake-1.png',
@@ -840,33 +922,14 @@ export const denver: CityData = {
           hours: 'Daily dawn-dusk',
           price: 'Free',
           website: 'https://blufflake.org',
-          tip: 'Alternative to Washington Park crowds',
-        },
-        {
-          id: 'gem-nature-2',
-          type: 'hidden-gem',
-          name: 'Washington Park',
-          category: 'Park',
-          description: 'A 165-acre park with two lakes, running paths, and the city\'s best outdoor people-watching. The surrounding neighborhood is equally pleasant for walking.',
-          images: [
+          sources: [
             {
-              src: '/denver/hidden-gems/washington-park1.png',
-              alt: 'Washington Park lake with Denver skyline in background',
-            },
-            {
-              src: '/denver/hidden-gems/washington-park-2.png',
-              alt: 'Park paths and recreational areas',
-            },
-            {
-              src: '/denver/hidden-gems/washington-park-3.png',
-              alt: 'Washington Park gardens and landscapes',
-            },
+              title: 'Bluff Lake Nature Center History',
+              publisher: 'Bluff Lake Nature Center',
+              url: 'https://blufflake.org/about/history/',
+            }
           ],
-          address: 'E Virginia Ave, Denver, CO 80209',
-          coordinates: { lat: 39.7003, lng: -104.9722 },
-          hours: '5am-11pm',
-          price: 'Free',
-          tip: 'The flower gardens near the boathouse are spectacular in summer',
+          tip: 'Alternative to Washington Park crowds',
         },
       ],
     },
@@ -1066,6 +1129,28 @@ export const denver: CityData = {
               src: '/denver/restaurants/safta-4.png',
               alt: 'Safta lamb shoulder',
             }
+          ],
+        },
+        {
+          name: 'Buckhorn Exchange',
+          neighborhood: 'Lincoln Park',
+          vibe: 'Denver\'s oldest restaurant (1893), where 575 taxidermied animals watch you eat game you probably shouldn\'t.',
+          order: 'The rattlesnake appetizer is the requisite tourist move. The pot roast is the local one. If you\'re brave, there\'s yak, elk, and buffalo on the menu.',
+          why: 'The Buckhorn Exchange isn\'t just Denver\'s oldest restaurant—it\'s Colorado liquor license #1, issued the day after Prohibition ended. The walls are a natural history museum of things that used to be alive: 575 taxidermied animals staring at you while you eat, including a two-headed calf and a jackalope. Buffalo Bill dined here. Teddy Roosevelt dined here. The mounted elk heads have watched over business deals, first dates, and tourists who came for the novelty and left converts to the pot roast. It\'s a time capsule of Old West nostalgia that somehow doesn\'t feel kitschy—maybe because it\'s been doing this since 1893, long before "Western theme" was a restaurant concept. The game menu (elk, quail, buffalo, alligator) treats exotic meat as a lifestyle choice, but the real regulars know the elk medallions and New York strip are where the kitchen shines.',
+          address: '1000 Osage St, Denver, CO 80204',
+          coordinates: { lat: 39.7286, lng: -105.0044 },
+          price: '$$$',
+          hours: 'Mon-Thu 5pm-9pm, Fri-Sat 5pm-10pm, Sun 5pm-9pm',
+          website: 'https://www.buckhorn.com',
+          images: [
+            {
+              src: '/denver/hidden-gems/steakhouse-1.png',
+              alt: 'Buckhorn Exchange historic interior with extensive taxidermy collection',
+            },
+            {
+              src: '/denver/hidden-gems/steakhouse-2.png',
+              alt: 'More taxidermy displays and historic restaurant atmosphere',
+            },
           ],
         },
         {
@@ -1309,6 +1394,8 @@ export const denver: CityData = {
         {
           id: 'den-dark-3',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
           category: 'macabre',
           year: '1893',
           title: 'The Bodies Beneath Cheesman Park',
@@ -1320,6 +1407,7 @@ export const denver: CityData = {
           },
           location: {
             name: 'Cheesman Park, Capitol Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=Cheesman%20Park%2C%20Capitol%20Hill%20Denver',
             stillExists: true,
           },
           sources: [
@@ -1354,10 +1442,9 @@ export const denver: CityData = {
           id: 'den-dark-1',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 3,
+          featuredOrder: 2,
           category: 'disaster',
-          year: '1864',
-          title: 'The Sand Creek Massacre',
+                    title: 'The Sand Creek Massacre',
           body: 'On November 29, 1864, Colonel John Chivington led 675 Colorado militia against a peaceful Cheyenne and Arapaho village at Sand Creek. Chief Black Kettle flew both an American flag and a white flag of surrender above his lodge. It didn\'t matter. The soldiers killed at least 230 people—mostly women, children, and the elderly—then mutilated the bodies and paraded trophies through Denver streets to cheering crowds. A Congressional investigation later condemned it as a "foul and dastardly massacre," but Chivington was never prosecuted. He testified before Congress wearing the same bloodstained uniform. The violence at Sand Creek triggered decades of warfare across the Great Plains and shattered any remaining trust between indigenous peoples and the federal government. Denver celebrated it as a victory.',
           verdict: 'The deadliest day in Colorado history. A National Historic Site now marks where it happened.',
           images: [
@@ -1372,6 +1459,7 @@ export const denver: CityData = {
           ],
           location: {
             name: 'Sand Creek, 170 miles southeast of Denver',
+      url: 'https://www.google.com/maps/search/?api=1&query=Sand%20Creek%2C%20170%20miles%20southeast%20of%20Denver%20Denver',
             stillExists: true,
           },
           sources: [
@@ -1411,10 +1499,9 @@ export const denver: CityData = {
           id: 'den-dark-7',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 4,
+          featuredOrder: 5,
           category: 'unsolved',
-          year: '1970',
-          title: 'The Lumber Baron Inn Murders',
+                    title: 'The Lumber Baron Inn Murders',
           body: 'By 1970, the grand 1890 mansion that lumber baron John Mouat built had decayed into a 23-unit rooming house for the desperate. On October 11, 1970, 16-year-old runaway Cara Lee Knoche celebrated her 17th birthday at her parents\' house and announced she\'d return to high school. Two days later, she was found strangled under her bed at the rooming house. Her friend Marianne Weaver, 18, walked in at the worst moment—she witnessed the rape and murder, then was shot herself. The killer was never found. Today the building has been restored as the Lumber Baron Inn, a bed-and-breakfast that leans hard into its haunted reputation. Guests report gentle knocking, apparitions, and whispers. Netflix\'s "28 Days Haunted" featured the inn. The case remains open after 50+ years.',
           verdict: 'Still unsolved. Now a haunted B&B. Sleep well.',
           images: [
@@ -1429,6 +1516,7 @@ export const denver: CityData = {
           ],
           location: {
             name: 'Lumber Baron Inn, 2555 W 37th Ave',
+      url: 'https://www.google.com/maps/search/?api=1&query=Lumber%20Baron%20Inn%2C%202555%20W%2037th%20Ave%20Denver',
             stillExists: true,
           },
           sources: [
@@ -1464,10 +1552,9 @@ export const denver: CityData = {
           id: 'den-dark-13',
           type: 'dark-history',
           featured: true,
-          featuredOrder: 5,
+          featuredOrder: 3,
           category: 'crime',
-          year: '1874',
-          title: 'Alferd Packer: The Colorado Cannibal',
+                    title: 'Alferd Packer: The Colorado Cannibal',
           body: 'In November 1873, prospector Alferd Packer left Utah leading 21 men toward the Breckenridge gold fields. By February 1874, Packer stumbled out of the mountains alone—with a pocket full of cash, the other men\'s belongings, and a story that kept changing. First he said the men had died and he\'d eaten them to survive. Then he blamed Shannon Bell for killing everyone before Packer shot him in self-defense. Five hatchet-marked bodies were eventually found. Packer escaped jail and spent eight years on the run before being captured. He was sentenced to death (later reduced to 40 years) and became a morbid celebrity. The Denver Post championed his innocence, and after his 1901 parole, he worked as a guard at the Post. He died peacefully in Littleton in 1907. The truth died with him.',
           verdict: 'Convicted cannibal who became a Denver celebrity. University of Colorado named a cafeteria after him.',
           image: {
@@ -1476,6 +1563,7 @@ export const denver: CityData = {
           },
           location: {
             name: 'Trial in Lake City; buried in Littleton Cemetery',
+      url: 'https://www.google.com/maps/search/?api=1&query=Trial%20in%20Lake%20City%3B%20buried%20in%20Littleton%20Cemetery%20Denver',
             stillExists: true,
           },
           sources: [
@@ -1517,8 +1605,9 @@ export const denver: CityData = {
         {
           id: 'den-dark-2',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 8,
           category: 'disaster',
-          year: '1880',
           title: 'The Hop Alley Riot',
           body: 'On Halloween night 1880, a pool game argument at John Asmussen\'s saloon on Wazee Street became the pretext for Denver\'s first race riot. A mob of 3,000 descended on Hop Alley—the Chinese neighborhood near present-day Coors Field—beating residents and destroying every business. Look Young, a 28-year-old who had lived in Denver for just six months, was dragged from Sing Lee\'s laundry, had his queue cut off, was beaten and tortured, then hanged from a lamppost. He died of his injuries. The rioters caused $53,655 in damage (over $1.5 million today). No one was ever convicted. The Chinese consul\'s request for reparations was denied. Chinatown never recovered. In 2022—142 years later—Denver formally apologized. The site is now a parking lot near the ballpark.',
           verdict: 'One dead. Entire neighborhood destroyed. City apologized 142 years later. Now it\'s parking.',
@@ -1527,34 +1616,20 @@ export const denver: CityData = {
             alt: 'Historic Denver street scene from the era of Chinatown and Hop Alley',
           },
           location: {
-            name: 'Wazee Street between 19th and 22nd, LoDo',
+            name: 'Hop Alley (Former Site)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: false,
           },
           sources: [
             {
-              type: 'article',
               title: 'On Halloween Nearly 150 Years Ago, An Anti-Chinese Riot Broke Out In Denver',
               publisher: 'Colorado Public Radio',
               url: 'https://www.cpr.org/2019/09/02/on-halloween-nearly-150-years-ago-an-anti-chinese-riot-broke-out-in-denver/',
             },
             {
-              type: 'article',
-              title: 'Denver apologizes for 1880 anti-Chinese riot that left one man dead',
+              title: 'Denver apologizes for 1880 anti-Chinese riot',
               publisher: 'Denver Post',
               url: 'https://www.denverpost.com/2022/10/31/denver-apologizes-anti-chinese-riot-1880/',
-            },
-            {
-              type: 'article',
-              title: 'The Hop Alley Riot',
-              publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/hop-alley-riot',
-            },
-            {
-              type: 'book',
-              title: 'The Forbidden City Within Victorian Denver: Chinese in the Capital of Colorado',
-              author: 'William Wei',
-              isbn: '9781607328551',
-              url: 'https://www.amazon.com/Forbidden-City-Within-Victorian-Denver/dp/1607328550',
             },
           ],
         },
@@ -1566,8 +1641,9 @@ export const denver: CityData = {
         {
           id: 'den-dark-8',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 7,
           category: 'unsolved',
-          year: '1991',
           title: 'The Father\'s Day Bank Massacre',
           body: 'On Sunday, June 16, 1991, a man posing as a bank vice president entered the United Bank Tower downtown. Over the next hour, he executed four unarmed security guards—Phillip Mankoff, Scott McCarthy, William McCullum Jr., and Todd Wilson—then stole $200,000 from the vault. The killer was meticulous: he collected all 18 shell casings, wiped away fingerprints, and took the surveillance tapes. Seventeen of his eighteen shots hit their targets, suggesting professional training. Three weeks later, police arrested retired Denver police sergeant James King, who had worked as a guard at the bank and had substantial debt. The nationally televised trial ended in acquittal after nine days of jury deliberation. King died of dementia in 2023 at 77. The money was never found. No one else was ever charged. Colorado\'s largest mass killing before Columbine.',
           verdict: 'Four guards executed. Prime suspect acquitted. Cold case. No justice.',
@@ -1576,44 +1652,29 @@ export const denver: CityData = {
             alt: 'Downtown Denver high-rise building, former United Bank Tower where 1991 massacre occurred',
           },
           location: {
-            name: 'Former United Bank Tower (now Wells Fargo), Downtown',
+            name: 'Wells Fargo Center (Former United Bank Tower)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'article',
               title: 'Denver United Bank murders: 30-year anniversary',
               publisher: '9NEWS',
               url: 'https://www.9news.com/article/news/investigations/denver-united-bank-murders-30-year-anniversary/73-188dabda-7411-4420-a1a5-f90d5b15959a',
             },
             {
-              type: 'book',
-              title: 'Deadly Heist: The Father\'s Day Bank Massacre in Denver',
-              author: 'Kevin Simpson',
-              isbn: '9781493072545',
-              year: '2025',
-              url: 'https://www.amazon.com/Deadly-Heist-Fathers-Massacre-Denver/dp/1493072544',
-            },
-            {
-              type: 'article',
               title: 'Father\'s Day Bank Massacre',
-              publisher: 'Denver Post Cold Cases',
+              publisher: 'Denver Post',
               url: 'https://www.denverpost.com/2021/06/16/fathers-day-bank-massacre-denver/',
-            },
-            {
-              type: 'podcast',
-              title: 'The Father\'s Day Massacre',
-              show: 'Denver Cold Case Files',
-              platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/fathers-day-massacre',
             },
           ],
         },
         {
           id: 'den-dark-4',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 9,
           category: 'crime',
-          year: '1911',
           title: 'Murder at the Brown Palace',
           body: 'The Brown Palace Hotel opened in 1892 and quickly became Denver\'s grandest address—every president since Teddy Roosevelt has stayed there. On May 24, 1911, it became the scene of high-society murder. Frank Henwood shot Sylvester "Tony" von Phul three times in the Marble Bar, killing him and accidentally killing bystander George Copeland. The trigger: socialite Isabel Springer, who lived at the hotel with her millionaire husband while carrying on affairs with both men. Von Phul had been blackmailing her with love letters; Henwood intervened. The scandal dominated Denver newspapers for months. Henwood became a celebrity in jail, receiving flowers from admirers and dining on specially prepared meals in "Millionaire\'s Row." He was eventually convicted, but the trial revealed the rot beneath Denver\'s gilded surface. The bar where it happened is still open.',
           verdict: 'High society murder in Denver\'s fanciest hotel. The bar is now Ship Tavern.',
@@ -1622,26 +1683,18 @@ export const denver: CityData = {
             alt: 'Historic interior of the Brown Palace Hotel in Denver, site of the 1911 murder',
           },
           location: {
-            name: 'Brown Palace Hotel, 321 17th St',
+            name: 'Brown Palace Hotel',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'book',
-              title: 'Murder at the Brown Palace: A True Story of Seduction and Betrayal',
-              author: 'Dick Kreck',
-              isbn: '9781555914028',
-              url: 'https://www.amazon.com/Murder-Brown-Palace-Seduction-Betrayal/dp/1555914020',
-            },
-            {
-              type: 'article',
-              title: 'The Brown Palace Murder: Denver\'s Scandalous 1911 Crime of Passion',
+              title: 'Murder at the Brown Palace',
               publisher: 'Denver Public Library',
               url: 'https://history.denverlibrary.org/news/denver/brown-palace-murder',
             },
             {
-              type: 'article',
-              title: 'Murder at the Brown Palace',
+              title: 'The Brown Palace Seduction and Betrayal',
               publisher: '5280 Magazine',
               url: 'https://www.5280.com/2011/05/murder-at-the-brown-palace/',
             },
@@ -1650,8 +1703,9 @@ export const denver: CityData = {
         {
           id: 'den-dark-5',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 11,
           category: 'disaster',
-          year: '1914',
           title: 'The Ludlow Massacre',
           body: 'On April 20, 1914, Colorado National Guard soldiers and private guards from John D. Rockefeller\'s Colorado Fuel and Iron Company attacked a tent colony of striking miners and their families in Ludlow, 180 miles south of Denver. The miners had been on strike since September 1913, evicted from company towns and living in UMWA-provided tents. That day, soldiers soaked the tents in kerosene and set them ablaze. Eleven children and two women were found burned and suffocated in a cellar they\'d dug to escape the gunfire. In total, approximately 21 people died. The massacre triggered a ten-day armed uprising across a 225-mile front. Five thousand people demonstrated on the State Capitol lawn demanding the guardsmen be tried for murder. The Rocky Mountain News coined the term "Ludlow Massacre." No soldiers were ever convicted. Rockefeller\'s money paid no price.',
           verdict: 'Called "the deadliest strike in U.S. history." Monument stands at the site. Justice never came.',
@@ -1660,31 +1714,17 @@ export const denver: CityData = {
             alt: 'Historic winter landscape of Colorado mining country where Ludlow Massacre occurred',
           },
           location: {
-            name: 'Ludlow, Colorado (180 miles south of Denver)',
+            name: 'Ludlow Massacre Memorial',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'documentary',
-              title: 'The Rockefellers: Ludlow Massacre',
-              platform: 'PBS American Experience',
-              url: 'https://www.pbs.org/wgbh/americanexperience/features/rockefellers-ludlow/',
-            },
-            {
-              type: 'article',
-              title: 'Ludlow Massacre',
+              title: 'The Ludlow Massacre',
               publisher: 'History Colorado',
               url: 'https://www.historycolorado.org/ludlow-massacre',
             },
             {
-              type: 'book',
-              title: 'Blood Passion: The Ludlow Massacre and Class War in the American West',
-              author: 'Scott Martelle',
-              isbn: '9780813547497',
-              url: 'https://www.amazon.com/Blood-Passion-Ludlow-Massacre-American/dp/0813547490',
-            },
-            {
-              type: 'article',
               title: 'Ludlow Massacre Site',
               publisher: 'National Park Service',
               url: 'https://www.nps.gov/places/ludlow-massacre-site.htm',
@@ -1694,8 +1734,9 @@ export const denver: CityData = {
         {
           id: 'den-dark-6',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 10,
           category: 'crime',
-          year: '1922',
           title: 'The Denver Mint Heist',
           body: 'At 10:30 a.m. on December 18, 1922, a Federal Reserve truck was loading $200,000 in $5 bills outside the U.S. Mint on West Colfax Avenue when a black Buick touring car pulled up. Two men jumped out firing sawed-off shotguns while a third grabbed the money bags. Federal Reserve guard Charles T. Linton was killed—the only Fed guard ever to die in a bank robbery. Fifty Mint Police inside the building returned fire, hitting one robber in the jaw. The gang escaped in 90 seconds. An abandoned garage on Gilpin Street later yielded the getaway car and the body of Nicholas Trainor, killed by his own crew. The case remained unsolved for 12 years until police identified five suspects—all had since been killed in separate incidents. No one was ever charged. The money was never fully recovered. The first successful U.S. Mint robbery in history.',
           verdict: 'One guard dead. First successful U.S. Mint robbery. No one ever charged.',
@@ -1704,24 +1745,17 @@ export const denver: CityData = {
             alt: 'Historic photograph of the Denver Mint building where the 1922 heist occurred',
           },
           location: {
-            name: 'West Colfax Avenue at the Denver Mint',
+            name: 'U.S. Mint Denver',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'article',
-              title: 'Robbery in Front of the Denver Mint',
-              publisher: 'CoinWeek',
-              url: 'https://coinweek.com/robbery-in-front-of-the-denver-mint/',
-            },
-            {
-              type: 'article',
               title: 'The Denver Mint Robbery',
               publisher: 'Denver Post',
               url: 'https://www.denverpost.com/2013/12/15/the-denver-mint-robbery/',
             },
             {
-              type: 'article',
               title: '1922 Denver Mint Robbery',
               publisher: 'History Colorado',
               url: 'https://www.historycolorado.org/denver-mint-robbery',
@@ -1731,8 +1765,9 @@ export const denver: CityData = {
         {
           id: 'den-dark-11',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 6,
           category: 'haunting',
-          year: '1891',
           title: 'The Patterson Inn: Where Dogs Jumped to Their Deaths',
           body: 'The Croke-Patterson-Campbell Mansion was built in 1891 by Thomas Croke. He lived there for six months, then sold it for reasons he never explained—his mother had died there shortly after his wife. By the 1970s it was an office building that couldn\'t keep tenants: typewriters typed by themselves at night, party noises came from empty closets, babies cried from the third floor. During 1970s renovations, construction crews grew so frustrated with arriving to find their work undone that they brought in guard dogs. The next morning, both Dobermans were found dead on the sidewalk—they had apparently leapt from a third-floor window. The mansion is now a bed-and-breakfast called the Patterson Inn. Guests still report phantom dog barks from the upper floors. The dogs chose death over staying another night.',
           verdict: 'The dogs are documented. They jumped. Now it\'s a boutique hotel.',
@@ -1741,42 +1776,29 @@ export const denver: CityData = {
             alt: 'Historic Patterson Inn mansion in Denver, site of paranormal activity and mysterious dog deaths',
           },
           location: {
-            name: 'Patterson Inn, 430 E 11th Ave',
+            name: 'Patterson Inn',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'article',
-              title: 'Ghost City Tours: Patterson Inn',
-              publisher: 'Ghost City Tours',
-              url: 'https://ghostcitytours.com/denver/haunted-denver/patterson-inn/',
-            },
-            {
-              type: 'article',
-              title: 'Croke-Patterson-Campbell Mansion',
-              publisher: 'Colorado Encyclopedia',
-              url: 'https://coloradoencyclopedia.org/article/croke-patterson-campbell-mansion',
-            },
-            {
-              type: 'documentary',
-              title: 'Most Haunted Cities: Denver',
-              platform: 'Travel Channel',
-              year: '2018',
-              url: 'https://www.travelchannel.com/shows/most-haunted-cities',
-            },
-            {
-              type: 'article',
-              title: 'The haunted history of Patterson Inn',
+              title: 'The Haunted History of Patterson Inn',
               publisher: 'Westword',
               url: 'https://www.westword.com/news/the-haunted-history-of-patterson-inn-5836822',
             },
+            {
+              title: 'Patterson Inn History',
+              publisher: 'Patterson Inn',
+              url: 'https://www.pattersoninn.com/history',
+            }
           ],
         },
         {
           id: 'den-dark-12',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 12,
           category: 'mystery',
-          year: 'Various',
           title: 'Riverdale Road: Colorado\'s Gates of Hell',
           body: 'An 11-mile stretch between Thornton and Brighton has collected more paranormal legends than any road in Colorado. The "Gates of Hell" refer to iron gates marking where the Wolpert Mansion once stood—according to legend, a man burned it down with his family inside after becoming possessed. (The mansion was real; the fire happened in the 1970s when it was already abandoned.) Jogger\'s Hill near 120th Avenue is haunted by a phantom runner killed in a hit-and-run—locals say if you let him approach your driver\'s side window, you\'ll die. Drivers report a spectral Camaro that challenges them to race. An old dairy supposedly has a tree where accused witches were hanged. Warning signs have allegedly appeared reading "Hitchhikers May Be Demons." Ghost hunters report cold spots, strange feelings, and equipment malfunctions. Drive it if you dare.',
           verdict: 'Multiple documented legends. Phantom runner. Demon hitchhikers. Your move.',
@@ -1785,18 +1807,23 @@ export const denver: CityData = {
             alt: 'Rural Colorado road landscape near Denver, representing Riverdale Road area',
           },
           location: {
-            name: 'Riverdale Road, Thornton to Brighton',
+            name: 'Riverdale Road',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
             stillExists: true,
           },
           sources: [
             {
-              type: 'article',
-              title: '9News: Is Riverdale Road Haunted?',
+              title: 'Is Riverdale Road Haunted?',
               publisher: '9NEWS',
               url: 'https://www.9news.com/article/life/holidays/halloween/riverdale-road-thornton-brighton/73-2619a367-b69a-483e-aa45-3f590eeec24a',
             },
             {
-              type: 'article',
+              title: 'Colorado\'s Most Haunted Road',
+              publisher: 'Denver Gazette',
+              url: 'https://denvergazette.com/outtherecolorado/adventures/colorados-most-haunted-road-known-for-gates-of-hell-and-twisted-past/article_9dd294ce-9bfb-4085-8c63-1d23f71fc4f1.html',
+            },
+          ],
+        },
               title: 'Colorado\'s Most Haunted Road: Known For Gates Of Hell',
               publisher: 'Denver Gazette',
               url: 'https://denvergazette.com/outtherecolorado/adventures/colorados-most-haunted-road-known-for-gates-of-hell-and-twisted-past/article_9dd294ce-9bfb-4085-8c63-1d23f71fc4f1.html',
@@ -1820,6 +1847,8 @@ export const denver: CityData = {
         {
           id: 'den-dark-10',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 4,
           category: 'mystery',
           year: 'Ongoing',
           title: 'DIA: The Airport of Conspiracies',
@@ -1837,6 +1866,7 @@ export const denver: CityData = {
           ],
           location: {
             name: 'Denver International Airport',
+      url: 'https://www.google.com/maps/search/?api=1&query=Denver%20International%20Airport%20Denver',
             stillExists: true,
           },
           sources: [
@@ -1871,6 +1901,8 @@ export const denver: CityData = {
         {
           id: 'den-dark-14',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 13,
           category: 'crime',
           year: '1980s-2000',
           title: 'The Internet\'s First Serial Killer Operated from Capitol Hill',
@@ -1898,6 +1930,7 @@ export const denver: CityData = {
           ],
           location: {
             name: 'Colburn Hotel (now apartments), Capitol Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=Colburn%20Hotel%20(now%20apartments)%2C%20Capitol%20Hill%20Denver',
             coordinates: { lat: 39.7362, lng: -104.9786 },
             stillExists: true,
           },

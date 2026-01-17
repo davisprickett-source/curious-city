@@ -8,7 +8,7 @@ export const phoenix: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Phoenix — a monument to human stubbornness, where five million people live in a desert on borrowed water. Here\'s what we\'re curious about.',
+      content: 'Welcome to Phoenix — a monument to human stubbornness, where five million people live in a desert on borrowed water.',
     },
     {
       id: 'featured-card',
@@ -107,6 +107,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%20Phoenix',
             stillExists: true,
           },
         },
@@ -128,6 +129,7 @@ export const phoenix: CityData = {
           source: 'Superstition Mountain Museum',
           location: {
             name: 'Superstition Mountains',
+      url: 'https://www.google.com/maps/search/?api=1&query=Superstition%20Mountains%20Phoenix',
             stillExists: true,
           },
         },
@@ -177,6 +179,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Dreamy Draw Recreation Area',
+      url: 'https://www.google.com/maps/search/?api=1&query=Dreamy%20Draw%20Recreation%20Area%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -204,6 +207,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -223,31 +227,7 @@ export const phoenix: CityData = {
           source: 'Phoenix History Project',
           location: {
             name: 'Phoenix',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'phx-curiosity-pyramid',
-          type: 'curiosity',
-          category: 'legend',
-          title: 'Arizona\'s first governor is buried in a King Tut pyramid',
-          body: 'George W.P. Hunt served as Arizona\'s first governor for seven terms. When King Tut\'s tomb was discovered in 1922, Hunt became obsessed with pyramid burial. He commissioned a white-tiled pyramid tomb in Papago Park for himself and his family—complete with Egyptian hieroglyphics and a copper dome. Hunt was a progressive who fought for women\'s suffrage, abolished child labor, and did his own grocery shopping (scandalous for 1920s men). He also knitted scarves for soldiers during WWI. When he died in 1934, they entombed him in his pyramid. His wife Annie joined him there in 1940. The tomb still stands on a red sandstone hill, visible from the highway—Arizona\'s weirdest monument to its least conventional governor.',
-          image: {
-            src: '/phoenix/curiosities/hunt-pyramid.png',
-            alt: 'Governor Hunt pyramid tomb in Papago Park',
-          },
-          sources: [
-            {
-              title: 'Arizona State Library: Governor George W.P. Hunt',
-              url: 'https://azlibrary.gov/dazl/george-wp-hunt',
-            },
-            {
-              title: 'Downtown Phoenix: Fun Facts About Phoenix',
-              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
-            },
-          ],
-          location: {
-            name: 'Papago Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
             stillExists: true,
           },
         },
@@ -273,6 +253,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Salt River Valley',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20River%20Valley%20Phoenix',
             stillExists: true,
           },
         },
@@ -289,6 +270,7 @@ export const phoenix: CityData = {
           source: 'Arizona Historical Society',
           location: {
             name: 'Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
             stillExists: true,
           },
         },
@@ -324,6 +306,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Downtown Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Phoenix%20Phoenix',
             stillExists: true,
           },
         },
@@ -359,6 +342,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%20Phoenix',
             stillExists: true,
           },
         },
@@ -388,6 +372,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
             stillExists: true,
           },
         },
@@ -432,6 +417,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Papago Park, Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%2C%20Phoenix%20Phoenix',
             stillExists: true,
           },
         },
@@ -573,6 +559,8 @@ export const phoenix: CityData = {
         {
           id: 'gem-tovrea-castle',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Tovrea Castle',
           category: 'Unusual Architecture',
           description:
@@ -593,6 +581,8 @@ export const phoenix: CityData = {
         {
           id: 'gem-pioneer-cemetery',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Pioneer and Military Memorial Park (Block 32)',
           category: 'Historic Cemetery',
           description:
@@ -620,10 +610,12 @@ export const phoenix: CityData = {
         {
           id: 'gem-hunts-tomb',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Hunt\'s Tomb',
           category: 'Historic Oddity',
           description:
-            'George W.P. Hunt served as Arizona\'s first governor—seven terms between February 1912 and January 1933. When his wife Helen Duett Ellison Hunt died in 1931, Hunt built a 20-foot-tall pyramid faced with white bathroom tile, inspired by Egyptian pyramids he\'d visited with her. Helen was entombed April 4, 1933. Hunt died from heart failure December 24, 1934, and joined her. Seven people total buried inside: the Hunts, Helen\'s sister and parents, plus the Hunts\' daughter and her husband. Listed on National Register of Historic Places in 2008. Sits atop a Papago Park hill, overshadowed by Hole in the Rock. Most visitors drive past without noticing Arizona\'s first governor is buried in a tiled pyramid.',
+            'When King Tut\'s tomb was discovered in 1922, Arizona\'s first governor George W.P. Hunt became obsessed with pyramid burial. Hunt was an unconventional progressive—he fought for women\'s suffrage, abolished child labor, did his own grocery shopping (scandalous for 1920s men), and knitted scarves for soldiers during WWI. He served seven terms between 1912 and 1933. When his wife Helen died in 1931, Hunt built a 20-foot-tall pyramid faced with white bathroom tile in Papago Park. Helen was entombed April 4, 1933. Hunt died from heart failure December 24, 1934, and joined her. Seven people total are buried inside. Listed on the National Register of Historic Places in 2008, the tomb sits atop a red sandstone hill, overshadowed by nearby Hole in the Rock. Most visitors drive right past Arizona\'s weirdest monument to its least conventional governor.',
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-hunts-0.png',
@@ -633,11 +625,25 @@ export const phoenix: CityData = {
               src: '/phoenix/hidden-gems/hidden-hunts-1.png',
               alt: 'Hunt\'s Tomb pyramid structure overlooking desert landscape',
             },
+            {
+              src: '/phoenix/curiosities/hunt-pyramid.png',
+              alt: 'Governor Hunt pyramid tomb in Papago Park',
+            },
           ],
           address: 'Papago Park, Phoenix, AZ',
           coordinates: { lat: 33.4556, lng: -111.9489 },
           hours: 'Park hours',
           price: 'Free',
+          sources: [
+            {
+              title: 'Arizona State Library: Governor George W.P. Hunt',
+              url: 'https://azlibrary.gov/dazl/george-wp-hunt',
+            },
+            {
+              title: 'Downtown Phoenix: Fun Facts About Phoenix',
+              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
+            },
+          ],
           tip: 'Drive right past it on the way to Hole in the Rock — easy to miss.',
         },
         {
@@ -662,6 +668,8 @@ export const phoenix: CityData = {
         {
           id: 'gem-curious-nature',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'Curious Nature',
           category: 'Oddities Shop',
           description:
@@ -735,6 +743,8 @@ export const phoenix: CityData = {
         {
           id: 'gem-arizona-falls',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 1,
           name: 'Arizona Falls',
           category: 'Hidden Waterfall',
           description:
@@ -787,21 +797,10 @@ export const phoenix: CityData = {
           tip: 'Walk the whole alley — art on both sides.',
         },
         {
-          id: 'gem-mural-alley',
-          type: 'hidden-gem',
-          name: 'Mural Alley (1 1/2 Street)',
-          category: 'Hidden Art',
-          description:
-            'Heart of Roosevelt Row but hard to find. Behind The Churchill food pavilion. Dozen works by local artists. "Hidden in plain sight" according to locals. No street signage — behind buildings.',
-          address: 'Behind The Churchill, Roosevelt Row',
-          coordinates: { lat: 33.4567, lng: -112.0633 },
-          hours: 'Always accessible',
-          price: 'Free',
-          tip: 'Access from Roosevelt or 5th Street — between the buildings.',
-        },
-        {
           id: 'gem-valley-art-theatre',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Valley Art Theatre',
           category: 'Historic Cinema',
           description:
@@ -1354,8 +1353,7 @@ export const phoenix: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'crime',
-          year: '1931',
-          title: 'The Trunk Murderess',
+                    title: 'The Trunk Murderess',
           body: 'On October 16, 1931, Winnie Ruth Judd shot her two roommates—Agnes Anne LeRoi and Hedvig "Sammy" Samuelson—in their Phoenix bungalow. Then came the part that made her infamous: she dismembered Samuelson\'s body, stuffed the pieces into a trunk, crammed LeRoi\'s intact corpse into another, and calmly boarded the Golden State Limited to Los Angeles like she was taking luggage to summer vacation. At Union Station, a baggage handler noticed the trunks were leaking and smelled like death. Police met the train. Judd fled, surrendered five days later at a funeral home. The press had a field day: "Trunk Murderess," "Tiger Woman," "Blonde Butcher." She claimed self-defense—all three women had been shot, including her. Sentenced to hang, she was declared insane days before execution and shipped to the state mental hospital. Over 38 years, she escaped seven times. The last escape lasted six years—she lived as a nanny in California under an assumed name. Finally pardoned in 1971, she died in 1998 at 93. Investigative journalist Jana Bommersbach later uncovered evidence suggesting Judd may have been covering for someone else—possibly a prominent Phoenix businessman.',
           verdict: 'Arizona\'s most sensational murder case. The full truth died with her.',
           sources: [
@@ -1412,6 +1410,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: '2947 N 2nd Street (former crime scene)',
+      url: 'https://www.google.com/maps/search/?api=1&query=2947%20N%202nd%20Street%20(former%20crime%20scene)%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1482,6 +1481,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Phoenix metro area',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20metro%20area%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1551,6 +1551,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Hotel San Carlos, 202 N Central Ave',
+      url: 'https://www.google.com/maps/search/?api=1&query=Hotel%20San%20Carlos%2C%20202%20N%20Central%20Ave%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1567,9 +1568,10 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-4',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 1,
           category: 'crime',
-          year: '1976',
-          title: 'The Assassination of Don Bolles',
+                    title: 'The Assassination of Don Bolles',
           body: 'Don Bolles was an investigative reporter for The Arizona Republic, the kind of journalist who made powerful people nervous. On June 2, 1976, he drove to the Clarendon Hotel in downtown Phoenix to meet a source promising information about land fraud. The source never appeared. When Bolles returned to his car and turned the key, six sticks of dynamite exploded beneath the floorboard. Paramedics said he told them he was "working on a Mafia story." He died eleven days later after surgeons amputated three of his limbs trying to save him. John Adamson pleaded guilty to planting the bomb and named Max Dunlap and Kemper Marley—a powerful liquor magnate whom Bolles had investigated—as the masterminds. Dunlap was convicted; Marley was never charged. In response, journalists from across America descended on Arizona for the "Arizona Project," completing Bolles\' work in a five-month investigation that exposed widespread corruption. He remains the only American journalist ever assassinated by car bomb.',
           verdict: 'The only American journalist assassinated by car bomb. The full truth died with Marley.',
           sources: [
@@ -1625,6 +1627,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Clarendon Hotel site, Downtown Phoenix',
+      url: 'https://www.google.com/maps/search/?api=1&query=Clarendon%20Hotel%20site%2C%20Downtown%20Phoenix%20Phoenix',
             stillExists: false,
           },
           images: [
@@ -1641,6 +1644,8 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-5',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 5,
           category: 'crime',
           year: '1891–1990',
           title: 'The Phoenix Indian School',
@@ -1707,6 +1712,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Steele Indian School Park (former school site)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Steele%20Indian%20School%20Park%20(former%20school%20site)%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1723,6 +1729,8 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-6',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 10,
           category: 'haunting',
           year: '1929–present',
           title: 'Maddie of the Orpheum Theatre',
@@ -1774,6 +1782,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Orpheum Theatre, 203 W Adams St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Orpheum%20Theatre%2C%20203%20W%20Adams%20St%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1790,6 +1799,8 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-7',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 9,
           category: 'crime',
           year: '2015–2016',
           title: 'The Maryvale Shooter',
@@ -1841,6 +1852,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Maryvale neighborhood',
+      url: 'https://www.google.com/maps/search/?api=1&query=Maryvale%20neighborhood%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1857,6 +1869,8 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-8',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 11,
           category: 'haunting',
           year: '1895–present',
           title: 'The Rosson House Murder',
@@ -1908,6 +1922,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Rosson House, Heritage Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Rosson%20House%2C%20Heritage%20Square%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1924,9 +1939,10 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-9',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 7,
           category: 'unsolved',
-          year: '2002',
-          title: 'The Fisher Family Murders',
+                    title: 'The Fisher Family Murders',
           body: 'On April 10, 2002, a house in Scottsdale exploded in flames. Inside, firefighters found Mary Fisher, 38, and her children Brittney, 12, and Bobby Jr., 10—all shot in the head. Mary and Brittney\'s throats had been slit. The father, Robert William Fisher, was gone. Investigators believe he killed his family, sliced the gas line, set the fire to destroy evidence, and vanished. Fisher had recently argued with Mary about divorce—she wanted one, he refused. In 2002, Fisher was placed on the FBI\'s Ten Most Wanted Fugitives list. He remains there 22 years later. Tips have come from Florida, Mexico, Canada. Fisher has never been found. He would be in his mid-sixties now. The FBI believes he may have assumed a new identity or died in the wilderness. The $100,000 reward remains unclaimed. Somewhere, Robert Fisher is either living under a new name or feeding the desert.',
           verdict: 'Still on the FBI\'s Ten Most Wanted after 22 years. The $100,000 reward collects dust.',
           sources: [
@@ -1975,6 +1991,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Scottsdale',
+      url: 'https://www.google.com/maps/search/?api=1&query=Scottsdale%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -1991,10 +2008,11 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-10',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 8,
           category: 'disaster',
-          year: '2023',
-          title: 'The Heat Apocalypse',
-          body: 'In 2023, Phoenix recorded 31 consecutive days above 110°F. The heat killed 645 people in Maricopa County—a 52% increase from the previous year, the deadliest on record. Nearly half the victims—290 people—were homeless. Twenty died at bus stops. Others were found in tents, in alleys, on sidewalks. An unsheltered person in Phoenix has 200 to 300 times the risk of heat death compared to the general population. The city\'s homeless population has tripled since 2016, driven by a housing crisis that began with the 2008 recession. Cooling centers close at night, when temperatures often remain above 90 degrees. Climate change has extended summers and raised nighttime lows by six to ten degrees. The heat is no longer seasonal—it\'s existential. Heat now kills more Maricopa County residents than homicides. And every summer, it gets worse.',
+                    title: 'The Heat Apocalypse',
+          body: 'In 2023, Phoenix recorded 31 consecutive days above 110°F—shattering the previous record of 18 days set in 1974. Sky Harbor Airport hit 118°F. The asphalt reached 180°F, hot enough to cause third-degree burns in seconds. The heat killed 645 people in Maricopa County—a 52% increase from the previous year, the deadliest on record. Nearly half the victims—290 people—were homeless. Twenty died at bus stops. Others were found in tents, in alleys, on sidewalks. An unsheltered person in Phoenix has 200 to 300 times the risk of heat death compared to the general population. The city\'s homeless population has tripled since 2016, driven by a housing crisis that began with the 2008 recession. Cooling centers close at night, when temperatures often remain above 90 degrees. Nighttime lows stayed above 90°F for weeks, offering no relief. Climate change has extended summers and raised nighttime lows by six to ten degrees. Climate scientists project these deadly summers will become the norm by 2050. The heat is no longer seasonal—it\'s existential. Heat now kills more Maricopa County residents than homicides. And every summer, it gets worse.',
           verdict: '645 dead in one year. Heat is now Phoenix\'s leading cause of preventable death.',
           sources: [
             {
@@ -2002,7 +2020,7 @@ export const phoenix: CityData = {
               title: 'The Heat Will Kill You First: Life and Death on a Scorched Planet',
               author: 'Jeff Goodell',
               isbn: '9780316492409',
-              year: '2023',
+              
               url: 'https://www.amazon.com/Heat-Will-Kill-You-First/dp/0316492418',
             },
             {
@@ -2052,6 +2070,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Phoenix metro area',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20metro%20area%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -2068,6 +2087,8 @@ export const phoenix: CityData = {
         {
           id: 'phx-dark-11',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 6,
           category: 'forgotten',
           year: '1942–1945',
           title: 'The Gila River Internment Camps',
@@ -2089,6 +2110,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Gila River Indian Reservation',
+      url: 'https://www.google.com/maps/search/?api=1&query=Gila%20River%20Indian%20Reservation%20Phoenix',
             stillExists: true,
           },
           images: [
@@ -2100,41 +2122,10 @@ export const phoenix: CityData = {
           ],
         },
         {
-          id: 'phx-dark-12',
-          type: 'dark-history',
-          category: 'disaster',
-          year: '2023',
-          title: 'The Summer That Killed 645 People',
-          body: 'The summer of 2023 rewrote the record books and became a public health emergency. Phoenix endured 31 consecutive days above 110°F from June 30 to July 30—shattering the previous record of 18 days set in 1974. The city recorded 54 total days at 110°F or higher. Nighttime temperatures stayed above 90°F for weeks, offering no relief. Sky Harbor Airport hit 118°F in July. The asphalt reached 180°F—hot enough to cause third-degree burns in seconds.\n\nThe heat killed 645 people in Maricopa County that year, a horrifying record and a 52% increase from 2022. Most victims were unsheltered. The city opened additional cooling centers, but they close at night when temperatures often remain above 95°F. Many deaths occurred at home when air conditioning failed or victims couldn\'t afford to run it. The medical examiner\'s office was overwhelmed.\n\nClimate scientists project these deadly summers will become the norm by 2050. Phoenix is testing countermeasures: reflective "cool pavement," shade structures over bus stops, tree-planting initiatives. But the arithmetic is brutal. The city exists because of air conditioning, and when that fails during a heat wave, Phoenix becomes genuinely lethal within hours.',
-          verdict: '645 heat-related deaths in one summer. More than any county in America. The toll continues to rise.',
-          sources: [
-            {
-              type: 'article',
-              title: 'Phoenix Heat Records',
-              publisher: 'National Weather Service',
-              url: 'https://www.weather.gov/psr/Heat',
-            },
-            {
-              type: 'article',
-              title: 'Heat Surveillance',
-              publisher: 'Maricopa County',
-              url: 'https://www.maricopa.gov/1858/Heat-Surveillance',
-            },
-            {
-              type: 'article',
-              title: 'Phoenix is Testing the Limits of Heat',
-              publisher: 'Scientific American',
-              url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
-            },
-          ],
-          location: {
-            name: 'Phoenix',
-            stillExists: true,
-          },
-        },
-        {
           id: 'phx-dark-13',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 12,
           category: 'injustice',
           year: '2006–2008',
           title: 'They Built a Convention Center on Top of 3,000-Year-Old Houses',
@@ -2156,6 +2147,7 @@ export const phoenix: CityData = {
           ],
           location: {
             name: 'Phoenix Convention Center',
+      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Convention%20Center%20Phoenix',
             stillExists: true,
           },
         },

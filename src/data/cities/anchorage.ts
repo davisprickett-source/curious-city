@@ -93,8 +93,7 @@ export const anchorage: CityData = {
           category: 'history',
           title: 'The CIA trained Alaskan civilians to become Soviet-occupied guerrillas',
           body: 'At the height of the Cold War, the CIA, convinced the Soviets were coming, hatched a plan as insane as it was Alaskan: Operation Washtub. From 1951 to 1959, they recruited ordinary Alaskans—bush pilots, trappers, prospectors, homesteaders—and trained them to become stay-behind guerrillas. If the Soviets invaded, these "sleeper agents" would sabotage, spy, and survive behind enemy lines in the occupied territory. The program involved hiding caches of weapons, radios, and survival gear across the vast, frozen wilderness. Declassified decades later, the whole concept sounds like a spy thriller—the U.S. government betting on the sheer, stubborn self-sufficiency of Alaskans to form an indigenous resistance against a superpower. The program ran for nearly a decade, probably because the idea of ordinary Alaskans as secret agents was both entirely plausible and utterly terrifying to the Pentagon.',
-          year: '1951',
-          images: [
+                    images: [
             {
               src: '/anchorage/curiosities/cia-1.png',
               alt: 'Remote Alaska wilderness where Cold War operations took place',
@@ -166,6 +165,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Downtown Anchorage',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Anchorage%20Anchorage',
             stillExists: true,
           },
         },
@@ -213,6 +213,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Anchorage (Oomingmak Co-op)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Anchorage%20(Oomingmak%20Co-op)%20Anchorage',
             stillExists: true,
           },
         },
@@ -234,6 +235,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Ship Creek, Downtown Anchorage',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ship%20Creek%2C%20Downtown%20Anchorage%20Anchorage',
             coordinates: { lat: 61.2213, lng: -149.8776 },
             mapUrl: 'https://maps.app.goo.gl/zWPvYCVhKBsVqjmj7',
             stillExists: true,
@@ -324,6 +326,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Lake Hood',
+      url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Hood%20Anchorage',
             coordinates: { lat: 61.1811, lng: -149.9694 },
             stillExists: true,
           },
@@ -1343,6 +1346,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Tudor Road coffee stand; Anchorage jail',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tudor%20Road%20coffee%20stand%3B%20Anchorage%20jail%20Anchorage',
             stillExists: true,
           },
         },
@@ -1352,8 +1356,7 @@ export const anchorage: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'disaster',
-          year: '1964',
-          title: 'Good Friday Earthquake: When the Earth Ate Anchorage',
+                    title: 'Good Friday Earthquake: When the Earth Ate Anchorage',
           body: 'Magnitude 9.2. Four and a half minutes of shaking. The most powerful earthquake in North American history hit Anchorage on March 27, 1964, and the ground didn\'t just crack—it liquefied. Entire neighborhoods slid toward Cook Inlet like they were on ice. Fourth Avenue dropped 11 feet. Government Hill Elementary School tore apart mid-slide. Property lines became theoretical concepts. Tsunamis up to 220 feet high erased coastal towns. 139 people died. The earth moved so violently that if you owned a house before Good Friday, good luck proving where it used to be.',
           images: [
             {
@@ -1408,6 +1411,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Turnagain Heights; Downtown Anchorage; Government Hill',
+      url: 'https://www.google.com/maps/search/?api=1&query=Turnagain%20Heights%3B%20Downtown%20Anchorage%3B%20Government%20Hill%20Anchorage',
             stillExists: true,
           },
         },
@@ -1476,6 +1480,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Fourth Avenue clubs; Knik River wilderness',
+      url: 'https://www.google.com/maps/search/?api=1&query=Fourth%20Avenue%20clubs%3B%20Knik%20River%20wilderness%20Anchorage',
             stillExists: true,
           },
         },
@@ -1534,6 +1539,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Citywide',
+      url: 'https://www.google.com/maps/search/?api=1&query=Citywide%20Anchorage',
             stillExists: true,
           },
         },
@@ -1585,6 +1591,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Fourth Avenue, Downtown Anchorage',
+      url: 'https://www.google.com/maps/search/?api=1&query=Fourth%20Avenue%2C%20Downtown%20Anchorage%20Anchorage',
             stillExists: true,
           },
         },
@@ -1650,6 +1657,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Statewide, concentrated in rural villages',
+      url: 'https://www.google.com/maps/search/?api=1&query=Statewide%2C%20concentrated%20in%20rural%20villages%20Anchorage',
             stillExists: true,
           },
         },
@@ -1696,6 +1704,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Sterling, Kenai Peninsula',
+      url: 'https://www.google.com/maps/search/?api=1&query=Sterling%2C%20Kenai%20Peninsula%20Anchorage',
             stillExists: true,
           },
         },
@@ -1753,6 +1762,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Historic Anchorage Hotel, 330 E St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Historic%20Anchorage%20Hotel%2C%20330%20E%20St%20Anchorage',
             stillExists: true,
           },
         },
@@ -1800,6 +1810,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Eklutna, various wilderness sites',
+      url: 'https://www.google.com/maps/search/?api=1&query=Eklutna%2C%20various%20wilderness%20sites%20Anchorage',
             stillExists: true,
           },
         },
@@ -1845,6 +1856,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Hotel Captain Cook, 939 W 5th Ave',
+      url: 'https://www.google.com/maps/search/?api=1&query=Hotel%20Captain%20Cook%2C%20939%20W%205th%20Ave%20Anchorage',
             stillExists: true,
           },
         },
@@ -1894,6 +1906,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Ship Creek, Downtown Anchorage',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ship%20Creek%2C%20Downtown%20Anchorage%20Anchorage',
             stillExists: true,
           },
         },
@@ -1901,8 +1914,7 @@ export const anchorage: CityData = {
           id: 'anc-dark-12',
           type: 'dark-history',
           category: 'unsolved',
-          year: '2003',
-          title: 'The Torso Murders: Bodies Without Names',
+                    title: 'The Torso Murders: Bodies Without Names',
           body: 'In June 2003, an 11-year-old boy found a torso in the mud along Turnagain Arm—no head, no legs. It was Desiree Lekanoff, 22, Alaska Native, once a sex worker on Spenard. Three months later, another torso washed up: Michelle Rothe, 32. She\'d never even been reported missing. Both women had ties to Spenard\'s underworld. Investigators found connections to at least five other missing women. No one has ever been charged. No more torsos have appeared since 2003—suggesting the killer stopped, moved away, or learned to dispose of bodies differently.',
           verdict: 'Completely unsolved. The connection to other missing women suggests a serial killer who was never caught. The case remains open.',
           sources: [
@@ -1922,6 +1934,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Turnagain Arm; Spenard',
+      url: 'https://www.google.com/maps/search/?api=1&query=Turnagain%20Arm%3B%20Spenard%20Anchorage',
             stillExists: true,
           },
         },
@@ -1929,8 +1942,7 @@ export const anchorage: CityData = {
           id: 'anc-dark-13',
           type: 'dark-history',
           category: 'forgotten',
-          year: '1950s',
-          title: 'The Burning of Rogers Park: When Integration Meant Arson',
+                    title: 'The Burning of Rogers Park: When Integration Meant Arson',
           body: 'In 1950s Anchorage, racial segregation was written directly into property deeds—restrictive covenants that prohibited sale to anyone who wasn\'t white, specifically excluding Black residents and Alaska Natives. When Alvin Campbell, a Black pioneer, purchased a home in the segregated Rogers Park neighborhood, he was met with racist taunts. Days before his family could move in, the house was burned to the ground. It wasn\'t an isolated incident—it was part of a pattern of violent resistance to integration that most Anchorage residents have never heard of.',
           verdict: 'The arson was never solved. Thousands of Anchorage homes still have these illegal covenants on their deeds. The NAACP opened its first Alaska branch in 1951 partly in response.',
           sources: [
@@ -1957,6 +1969,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Rogers Park neighborhood',
+      url: 'https://www.google.com/maps/search/?api=1&query=Rogers%20Park%20neighborhood%20Anchorage',
             stillExists: true,
           },
         },
@@ -1990,6 +2003,7 @@ export const anchorage: CityData = {
           ],
           location: {
             name: 'Statewide: Juneau-Barrow-Anchorage Triangle',
+      url: 'https://www.google.com/maps/search/?api=1&query=Statewide%3A%20Juneau-Barrow-Anchorage%20Triangle%20Anchorage',
             stillExists: true,
           },
         },

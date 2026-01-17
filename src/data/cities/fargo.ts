@@ -120,14 +120,14 @@ export const fargo: CityData = {
                                   category: 'law',
                                   title: 'North Dakota ran a divorce mill that made it rich—then got shut down',
                                   body: 'In the 1890s, North Dakota became the unlikely "Reno of the Plains." The state had the most lenient divorce laws in America: establish residency in 90 days, file on nearly any grounds, walk away single. Wealthy Easterners—primarily women seeking to escape stifling marriages—flocked to Fargo, filling hotels, paying lawyers handsomely, and creating a mini-economic boom in the prairie. The state made a fortune from marital strife. Other states, particularly those with stricter divorce laws, were outraged, decrying North Dakota as a moral cesspool. Laws were tightened in 1899, ending the "Divorce Colony" era, but not before Fargo proved that even the most conservative states can find a market for breaking hearts and making bank.',
-                                  year: '1890s',
-                                  image: {
+                                                                    image: {
                                     src: '/fargo/curiosities/divorce.png',
                                     alt: 'Historic downtown Fargo',
                                   },
                                   source: 'North Dakota Historical Society',
                                   location: {
                                     name: 'Downtown Fargo',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -137,8 +137,7 @@ export const fargo: CityData = {
                           category: 'invention',
                           title: 'The Bobcat was invented to clean a turkey barn—and changed construction forever',
                           body: 'In 1956, Eddie Velo, a turkey farmer in the area, approached brothers Louis and Cyril Keller with an impossible problem: he needed a machine small enough to maneuver inside a pole barn, light enough to be lifted to the second floor, and nimble enough to clean around upright poles. The Kellers, who ran a welding shop near Rothsay, Minnesota, built a three-wheeled loader with two drive wheels in front and a caster wheel in the rear. In 1958, they partnered with Melroe Manufacturing in Gwinner, North Dakota, to produce it. By 1962, it was named the Melroe Bobcat. That turkey barn problem birthed the modern skid-steer loader—a machine now ubiquitous on construction sites, farms, and warehouses worldwide. Today, Doosan Bobcat\'s American headquarters is in West Fargo, still churning out the descendants of a machine designed to shovel turkey droppings. In 2023, the Keller brothers were inducted into the National Inventors Hall of Fame. All because a farmer needed a cleaner barn.',
-                          year: '1956',
-                          images: [
+                                                    images: [
                             {
                               src: '/fargo/curiosities/bobcat-skid-steer.png',
                               alt: 'Early Bobcat skid-steer loader',
@@ -155,7 +154,8 @@ export const fargo: CityData = {
                               url: 'https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-compact-loader-creators-inducted-national-inventors-hall-of-fame',
                             },
                           ],
-                          location: { name: 'West Fargo (Doosan Bobcat HQ)', stillExists: true },
+                          location: { name: 'West Fargo (Doosan Bobcat HQ)',
+      url: 'https://www.google.com/maps/search/?api=1&query=West%20Fargo%20(Doosan%20Bobcat%20HQ)%20Fargo', stillExists: true },
                         },
         {
                           id: 'far-curiosity-bogusville',
@@ -163,8 +163,7 @@ export const fargo: CityData = {
                           category: 'history',
                           title: 'Railroad officials created a fake town called "Bogusville" to fool land speculators',
                           body: 'When the Northern Pacific Railway was planning its route through the Red River Valley in the 1870s, land speculators followed every surveying team, buying up property wherever the railroad might build a depot. Railroad officials got clever: they marked a false route a few miles north of Moorhead, deliberately leaking the information to throw off speculators. Buyers rushed in, purchased worthless land, and built a settlement in anticipation of the coming boom. The area became known as "Bogusville"—named for the bogus route that never materialized. When the railroad actually built its depot where Fargo now stands, Bogusville residents realized they\'d been duped. The settlement withered. The con worked so well that Fargo\'s original name was Centralia, but officials renamed it after Northern Pacific Railway director and Wells Fargo Express Company founder William G. Fargo—the man who helped orchestrate the deception. Fargo exists because railroad tycoons invented a fake town to fleece speculators. The city was literally founded on a scam.',
-                          year: '1870s',
-                          image: {
+                                                    image: {
                             src: '/fargo/curiosities/bogusville-map.png',
                             alt: 'Historical map showing Fargo and the bogus Bogusville route',
                             credit: 'Northern Pacific Railway Archives',
@@ -175,7 +174,8 @@ export const fargo: CityData = {
                               url: 'https://www.fargomoorhead.org/plan/history-of-fargo-moorhead/',
                             },
                           ],
-                          location: { name: 'Original site north of Moorhead', stillExists: false },
+                          location: { name: 'Original site north of Moorhead',
+      url: 'https://www.google.com/maps/search/?api=1&query=Original%20site%20north%20of%20Moorhead%20Fargo', stillExists: false },
                         },
         {
                                   id: 'far-curiosity-ad-2',
@@ -195,6 +195,7 @@ export const fargo: CityData = {
                                   source: 'US Army Corps of Engineers',
                                   location: {
                                     name: 'Red River',
+      url: 'https://www.google.com/maps/search/?api=1&query=Red%20River%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -204,10 +205,10 @@ export const fargo: CityData = {
                                   category: 'architecture',
                                   title: 'The Western Hemisphere\'s tallest structure is in a cornfield near Fargo',
                                   body: 'Forget the Freedom Tower or the Willis Tower. The tallest structure in the Western Hemisphere isn\'t in New York or Chicago; it\'s a 2,063-foot guyed mast for KVLY-TV, poking out of a cornfield near Blanchard, just outside Fargo. Built in 1963 to test Cold War antenna designs, it briefly held the title of the world\'s tallest man-made structure until Dubai\'s Burj Khalifa came along. To this day, it remains taller than anything in North or South America. You can see it for 30 miles in every direction, an impossible needle thrust into the endless prairie sky, broadcasting local news and a silent, towering testament to Cold War ambition and the fact that sometimes, the biggest things are found in the most unexpected places.',
-                                  year: '1963',
-                                  source: 'KVLY-TV',
+                                                                    source: 'KVLY-TV',
                                   location: {
                                     name: 'Blanchard, ND',
+      url: 'https://www.google.com/maps/search/?api=1&query=Blanchard%2C%20ND%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -220,6 +221,7 @@ export const fargo: CityData = {
                                   source: 'Fargo-Moorhead CVB',
                                   location: {
                                     name: 'Fargo-Moorhead Visitors Center',
+      url: 'https://www.google.com/maps/search/?api=1&query=Fargo-Moorhead%20Visitors%20Center%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -232,6 +234,7 @@ export const fargo: CityData = {
                                   source: 'MinnPost',
                                   location: {
                                     name: 'First Avenue North, Moorhead',
+      url: 'https://www.google.com/maps/search/?api=1&query=First%20Avenue%20North%2C%20Moorhead%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -241,8 +244,7 @@ export const fargo: CityData = {
                           category: 'invention',
                           title: 'Mr. Bubble was invented in a Bismarck basement—and flopped until they dropped the price',
                           body: 'Harold Schafer started Gold Seal Company in 1942 in his Bismarck basement, hand-typing labels for Gold Seal Floor Wax and taping them onto old cans. By the 1950s, he\'d built a cleaning product empire with Glass Wax and Snowy Bleach—both #1 sellers in their categories. In 1961, inspired by helping his young children with bath time, Schafer created Mr. Bubble. The pink bubble bath launched at 59 cents—and immediately flopped. The price was too high for families. Schafer worked with suppliers to cut costs to 39 cents, paired it with memorable commercials, and Mr. Bubble catapulted to worldwide success. For decades, it was the #1 bubble bath in America. The man who built an empire from floor wax in a North Dakota basement became synonymous with childhood bath time everywhere. Schafer later used his fortune to restore the entire town of Medora, North Dakota. But his legacy is a pink bottle with a cartoon face that still makes kids excited about getting clean.',
-                          year: '1961',
-                          image: {
+                                                    image: {
                             src: '/fargo/curiosities/mr-bubble.png',
                             alt: 'Vintage Mr. Bubble bubble bath bottle',
                             credit: 'Gold Seal Company',
@@ -257,7 +259,8 @@ export const fargo: CityData = {
                               url: 'https://www.inforum.com/business/north-dakotas-mr-bubble-has-provided-50-years-of-bath-time-fun',
                             },
                           ],
-                          location: { name: 'Bismarck, ND (Gold Seal Company)', stillExists: false },
+                          location: { name: 'Bismarck, ND (Gold Seal Company)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Bismarck%2C%20ND%20(Gold%20Seal%20Company)%20Fargo', stillExists: false },
                         },
         {
                                   id: 'far-curiosity-2',
@@ -284,6 +287,7 @@ export const fargo: CityData = {
                                   source: 'Microsoft Corporation',
                                   location: {
                                     name: 'Microsoft Fargo Campus',
+      url: 'https://www.google.com/maps/search/?api=1&query=Microsoft%20Fargo%20Campus%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -300,6 +304,7 @@ export const fargo: CityData = {
                                   source: 'Roger Maris Museum',
                                   location: {
                                     name: 'West Acres Mall',
+      url: 'https://www.google.com/maps/search/?api=1&query=West%20Acres%20Mall%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -324,6 +329,7 @@ export const fargo: CityData = {
                                   source: 'Downtown Community Partnership',
                                   location: {
                                     name: 'Downtown Fargo',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
                                     stillExists: true,
                                   },
                                 },
@@ -336,6 +342,7 @@ export const fargo: CityData = {
                                   source: 'Ghosts of North Dakota',
                                   location: {
                                     name: 'Argusville, ND',
+      url: 'https://www.google.com/maps/search/?api=1&query=Argusville%2C%20ND%20Fargo',
                                     stillExists: false,
                                   },
                                 }
@@ -452,6 +459,8 @@ export const fargo: CityData = {
         {
           id: 'gem-den-of-antiquity',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Den of Antiquity',
           category: 'Oddities Shop',
           description:
@@ -466,6 +475,8 @@ export const fargo: CityData = {
         {
           id: 'gem-tiny-things',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Tiny Things',
           category: 'Miniatures Shop',
           description:
@@ -479,6 +490,8 @@ export const fargo: CityData = {
         {
           id: 'gem-rourke-museum',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'The Rourke Art Gallery + Museum',
           category: 'Eclectic Art Collection',
           description:
@@ -540,6 +553,8 @@ export const fargo: CityData = {
         {
           id: 'gem-stave-church',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 1,
           name: 'Stave Church Replica',
           category: 'Architectural Replica',
           description:
@@ -866,12 +881,12 @@ export const fargo: CityData = {
           featured: true,
           featuredOrder: 3,
           category: 'unsolved',
-          year: '1978',
-          title: 'William "Billy" Wolf Dismemberment',
+                    title: 'William "Billy" Wolf Dismemberment',
           body: 'In August 1978, canoeists found two garbage bags floating in the Red River. Inside: the severed remains of 18-year-old William "Billy" Wolf Jr., cut in half at the waist. A week earlier, he\'d gone missing after crossing rival high school territories to attend a party. The murder was savage, methodical, and unsolved. Forty-five years later, investigators still get calls. Podcasts revisit the evidence. The Red River keeps its secrets.',
           verdict: 'Never solved. The case remains open after more than 45 years.',
           location: {
             name: 'Red River, near Fargo',
+      url: 'https://www.google.com/maps/search/?api=1&query=Red%20River%2C%20near%20Fargo%20Fargo',
             stillExists: true,
           },
           sources: [
@@ -923,12 +938,12 @@ export const fargo: CityData = {
           id: 'far-dark-2',
           type: 'dark-history',
           category: 'crime',
-          year: '1941',
-          title: 'Adolph Martel Hospital Murder',
+                    title: 'Adolph Martel Hospital Murder',
           body: 'Night shift at the North Dakota State Hospital in Jamestown, 1941. Guard Adolph Martel made his rounds through the psychiatric wards. A patient named Murphy waited. The stabbing was swift and brutal—blood sprayed the walls, pooled on the floor. Murphy took Martel\'s keys, walked out, and disappeared into the prairie darkness. The murder exposed catastrophic security failures at state mental health facilities, but by morning, Murphy was gone. The case faded into obscurity, one more body on the Northern Plains.',
           verdict: 'The patient escaped using the guard\'s keys. The case exposed security failures at mental health facilities.',
           location: {
             name: 'North Dakota State Hospital, Jamestown',
+      url: 'https://www.google.com/maps/search/?api=1&query=North%20Dakota%20State%20Hospital%2C%20Jamestown%20Fargo',
             stillExists: false,
           },
           sources: [
@@ -936,7 +951,7 @@ export const fargo: CityData = {
               type: 'article',
               title: 'Hospital Guard Stabbed to Death by Patient',
               publisher: 'The Bismarck Tribune',
-              year: '1941',
+              
               url: 'https://www.newspapers.com/bismarck-tribune-1941/',
             },
             {
@@ -970,12 +985,12 @@ export const fargo: CityData = {
           id: 'far-dark-3',
           type: 'dark-history',
           category: 'unsolved',
-          year: '1963',
-          title: 'Larry Phebus Disappearance',
+                    title: 'Larry Phebus Disappearance',
           body: 'On March 27, 1963, 14-year-old Larry Phebus vanished near Alexander, North Dakota, deep in the western oil fields where the prairie stretches empty for miles. His body was eventually found, but the case was never solved. It\'s part of a grimmer pattern: rural North Dakota has cold cases stretching back decades, young people who disappeared into the vastness and were found too late—or not at all. The isolation that makes the state beautiful also makes it dangerous.',
           verdict: 'Body found, but the case was never solved. One of many rural North Dakota cold cases.',
           location: {
             name: 'Alexander, North Dakota',
+      url: 'https://www.google.com/maps/search/?api=1&query=Alexander%2C%20North%20Dakota%20Fargo',
             stillExists: true,
           },
           sources: [
@@ -1016,12 +1031,12 @@ export const fargo: CityData = {
           id: 'far-dark-4',
           type: 'dark-history',
           category: 'disaster',
-          year: '1893',
-          title: 'The Fire That Split the City in Two',
+                    title: 'The Fire That Split the City in Two',
           body: 'June 7, 1893: A fire started in an old wooden building near Front Street. Within hours, it consumed 31 blocks of downtown Fargo. Over 400 structures burned—homes, businesses, churches, the courthouse. The city rebuilt, but the psychological damage was harder to fix. The disaster created a divide between "Old Fargo" in the north (what survived) and "New Fargo" in the south (what was rebuilt). The railroad tracks became an unofficial border. For years, tensions simmered between the two halves. North side residents felt the south got all the reconstruction money and attention. South side residents felt the north looked down on the new buildings and newcomers. It wasn\'t until the early 1900s—nearly a decade after the fire—that the two halves fully integrated into one city again. The physical scars healed faster than the social ones. The fire didn\'t just destroy buildings. It temporarily destroyed the idea of Fargo as one community.',
           verdict: 'Thirty-one blocks destroyed, 400+ structures burned. The city split psychologically for nearly a decade before reunifying.',
           location: {
             name: 'Downtown Fargo',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
             stillExists: true,
           },
           sources: [

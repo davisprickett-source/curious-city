@@ -74,14 +74,14 @@ export const tampa: CityData = {
           featured: true,
           featuredOrder: 1,
           body: 'José Gaspar—the legendary, fearsome pirate who supposedly terrorized the Gulf Coast—almost certainly never existed. His swashbuckling tale of Spanish naval glory, buried treasure, and a dramatic final battle was cooked up around 1900 by a publicist for the Charlotte Harbor and Northern Railway. He needed a hook to lure tourists to southwest Florida. He invented Gaspar, a disgraced Spanish officer turned buccaneer who captured princesses and buried riches. It\'s pure fiction. But Tampa ran with it. Every January since 1904, the city hosts the Gasparilla Pirate Festival, one of America\'s largest parades, where a fully-rigged pirate ship "invades" the harbor, the mayor surrenders the city keys, and half a million people line the streets. Tampa knows the pirate is fake. Tampa doesn\'t care. The party, the beads, and the civic myth are simply too good to let a little thing like historical accuracy get in the way. After all, what\'s a city without its legends?',
-          year: '1904',
-          image: {
+                    image: {
             src: '/tampa/curiosities/gasparilla.png',
             alt: 'Pirate ship on Tampa Bay',
           },
           source: 'Tampa Bay History Center',
           location: {
             name: 'Tampa Bay',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Tampa',
             stillExists: true,
           },
         },
@@ -91,8 +91,7 @@ export const tampa: CityData = {
           category: 'legend',
           title: 'A steamship vanished in calm weather—and stayed gone',
           body: 'In 1919, the SS Marianao left Tampa for Havana carrying sugar machinery and a full crew. The weather was perfect. The Gulf was calm. The ship disappeared anyway. No distress call. No debris field. No wreckage ever found—and this is the shallow Gulf, where wrecks don\'t stay hidden. Some blamed rum runners moving contraband. Others whispered about insurance fraud. A century later, the mystery remains unsolved. The SS Marianao is simply gone.',
-          year: '1919',
-          image: {
+                    image: {
             src: '/tampa/curiosities/shipwreck.png',
             alt: 'Historic ship on Tampa Bay',
           },
@@ -117,6 +116,7 @@ export const tampa: CityData = {
           source: 'National Weather Service',
           location: {
             name: 'Tampa Bay Area',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Area%20Tampa',
             stillExists: true,
           },
         },
@@ -136,6 +136,7 @@ export const tampa: CityData = {
           source: 'Ybor City State Museum',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: false,
           },
         },
@@ -152,6 +153,7 @@ export const tampa: CityData = {
           source: 'City of Tampa ordinance',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -163,8 +165,7 @@ export const tampa: CityData = {
           featured: true,
           featuredOrder: 3,
           body: 'The José Martí Park in Ybor City was deeded to the Republic of Cuba in 1956 and remains sovereign Cuban soil to this day—one of the only pieces of foreign sovereign territory in the United States outside of embassies. Fidel Castro gave a speech there in 1955 to raise money for the revolution. Decades of Cold War hostility, trade embargoes, and diplomatic deep-freeze haven\'t changed the deed. In the middle of Tampa, Cuba still owns a park.',
-          year: '1956',
-          images: [
+                    images: [
             {
               src: '/tampa/curiosities/cuba-ybor-1.png',
               alt: 'José Martí Park in Ybor City',
@@ -177,6 +178,7 @@ export const tampa: CityData = {
           source: 'Ybor City Museum State Park',
           location: {
             name: 'José Martí Park, Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Mart%C3%AD%20Park%2C%20Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -191,10 +193,10 @@ export const tampa: CityData = {
           category: 'nature',
           title: 'Tampa\'s luck ran out: Hurricane Milton hit in 2024',
           body: 'The Tampa Bay area\'s extraordinary luck finally ran out in 2024 when Hurricane Milton, a Category 4 storm, made landfall as a Category 3 in Siesta Key, bringing record-breaking storm surge and destructive gusts directly to the Tampa Bay area. This came just two weeks after Hurricane Helene, another Category 4, skirted the coast, causing significant damage. While the city had dodged a direct hit for over a century, the back-to-back storms caused widespread damage, power outages for millions, and significant coastal erosion, marking a new chapter in the city\'s relationship with tropical weather. The bay\'s funnel shape proved to be a critical factor, leading to severe flooding in downtown and surrounding areas, a scenario long feared by meteorologists.',
-          year: '2024',
-          source: 'Tampa Bay Times, National Hurricane Center',
+                    source: 'Tampa Bay Times, National Hurricane Center',
           location: {
             name: 'Tampa Bay',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Tampa',
             stillExists: true,
           },
         },
@@ -211,6 +213,7 @@ export const tampa: CityData = {
           source: 'Ybor City local historians',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -228,6 +231,7 @@ export const tampa: CityData = {
           source: 'Tampa Bay Times',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -237,10 +241,10 @@ export const tampa: CityData = {
           category: 'culture',
           title: 'Tampa won three championships in 12 months (and got insufferable)',
           body: 'Between September 2020 and July 2021, Tampa won three major championships: the Lightning\'s Stanley Cup (2020), the Buccaneers\' Super Bowl (2021), and another Lightning Stanley Cup (2021). For a city long dismissed as a sports afterthought—Florida\'s scrappy middle child—it was vindicating. Tom Brady threw the Lombardi Trophy across the water during a boat parade because Tampa had ascended beyond caring about trophy protocol.',
-          year: '2021',
-          source: 'Sports Illustrated',
+                    source: 'Sports Illustrated',
           location: {
             name: 'Tampa',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Tampa',
             stillExists: true,
           },
         },
@@ -258,6 +262,7 @@ export const tampa: CityData = {
           source: 'Tampa Bay History Center',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -275,6 +280,7 @@ export const tampa: CityData = {
           source: 'Henry B. Plant Museum',
           location: {
             name: 'University of Tampa',
+      url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Tampa%20Tampa',
             stillExists: true,
           },
         },
@@ -284,14 +290,14 @@ export const tampa: CityData = {
           category: 'culture',
           title: 'The cigar workers\' cottages still stand in Ybor',
           body: 'Many of the small wood-frame cottages ("casitas") built for cigar workers in the 1880s-1920s still stand in Ybor City. Some have been preserved as museums; others converted to bars, restaurants, and boutiques. Walking through the neighborhood, you can still see the shotgun architecture designed for Tampa\'s brutal heat—narrow houses with front-to-back airflow, high ceilings, and wide porches. The buildings remain. The people who built them are ghosts.',
-          year: '1880s',
-          image: {
+                    image: {
             src: '/tampa/curiosities/casitas.png',
             alt: 'Historic casitas in Ybor City',
           },
           source: 'Ybor City Development Corporation',
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -308,6 +314,7 @@ export const tampa: CityData = {
           source: 'Port Tampa Bay',
           location: {
             name: 'Port Tampa Bay',
+      url: 'https://www.google.com/maps/search/?api=1&query=Port%20Tampa%20Bay%20Tampa',
             stillExists: true,
           },
         },
@@ -1318,6 +1325,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
             stillExists: true,
           },
         },
@@ -1325,8 +1333,7 @@ export const tampa: CityData = {
           id: 'tam-dark-1',
           type: 'dark-history',
           category: 'disaster',
-          year: '1980',
-          title: 'The Sunshine Skyway Collapse',
+                    title: 'The Sunshine Skyway Collapse',
           featured: true,
           featuredOrder: 2,
           body: 'On May 9, 1980, the freighter MV Summit Venture was navigating Tampa Bay in near-zero visibility when its radar failed during a squall. What came next played out in horrifying slow motion: the 609-foot ship, blinded by 60 mph winds and punishing rain, struck a support column of the Sunshine Skyway Bridge. A 1,400-foot section of steel cantilever span collapsed into the bay 165 feet below. A Greyhound bus carrying 26 passengers, a pickup truck, and six other vehicles plunged with it. Thirty-five people died. The youngest was a baby. The oldest, ninety-two. Only one person survived the fall: Wesley MacIntire, whose truck bounced off the ship\'s bow before hitting water. The pilot, John Lerro, was cleared of wrongdoing but haunted by the tragedy—he died in 2002, broken. Drivers crossing the new bridge still report seeing a blonde woman standing in the roadway who vanishes when they stop.',
@@ -1388,6 +1395,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Sunshine Skyway Bridge',
+      url: 'https://www.google.com/maps/search/?api=1&query=Sunshine%20Skyway%20Bridge%20Tampa',
             stillExists: true,
           },
         },
@@ -1395,8 +1403,7 @@ export const tampa: CityData = {
           id: 'tam-dark-2',
           type: 'dark-history',
           category: 'macabre',
-          year: '1933',
-          title: 'The Licata Axe Murders and the Birth of "Reefer Madness"',
+                    title: 'The Licata Axe Murders and the Birth of "Reefer Madness"',
           body: 'On October 16, 1933, 21-year-old Victor Licata took an axe to his sleeping family—mother, father, two brothers, and sister—in their Ybor City home at 1707 5th Avenue. When police found him the next morning, he wore a freshly pressed shirt over a body smeared with blood. He couldn\'t explain what happened. The press called him the "Dream Slayer" and blamed marijuana, transforming Licata into Harry Anslinger\'s anti-cannabis poster boy and the justification for the 1937 Marihuana Tax Act. The truth was sadder and simpler: Licata had been diagnosed with dementia praecox (schizophrenia) before the murders. His family had a documented history of hereditary mental illness—his parents were first cousins, one brother was schizophrenic, multiple relatives institutionalized. Cannabis was never mentioned in his psychiatric records. Federal drug policy was built on a fiction. Licata escaped from the Florida Hospital for the Insane in 1945, was recaptured with help from a cousin in New Orleans, and hanged himself on December 4, 1950.',
           verdict: 'The case that launched federal marijuana prohibition was a lie. Licata\'s madness was genetic, not chemical. Policy doesn\'t care about truth.',
           sources: [
@@ -1461,6 +1468,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: '1707 5th Ave, Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=1707%205th%20Ave%2C%20Ybor%20City%20Tampa',
             stillExists: false,
           },
         },
@@ -1468,8 +1476,7 @@ export const tampa: CityData = {
           id: 'tam-dark-3',
           type: 'dark-history',
           category: 'crime',
-          year: '1984',
-          title: 'Bobby Joe Long: Eight Months of Terror',
+                    title: 'Bobby Joe Long: Eight Months of Terror',
           body: 'For eight months in 1984, Bobby Joe Long hunted women along Nebraska Avenue and Tampa\'s seedier strip club corridors. He abducted, raped, and murdered at least ten, strangling them and dumping their bodies in rural areas, bound with distinctive red carpet fibers that would become his signature. The killing stopped because of a 17-year-old girl who refused to become a statistic. Lisa McVey was kidnapped while biking home from her shift at a donut shop. During 26 hours of captivity, blindfolded and terrorized, she left fingerprints everywhere she could reach and memorized details—sounds, smells, the texture of his apartment. She talked Long into releasing her by convincing him she was the sole caretaker of her sick father. Then she gave investigators enough to identify his car and home. Long confessed to eight murders and was executed by lethal injection on May 23, 2019. Lisa McVey became Master Deputy Lisa McVey Noland with the Hillsborough County Sheriff\'s Office—the same department that caught her attacker.',
           verdict: 'Executed after 34 years on death row. Ten confirmed victims; likely more. Lisa McVey turned survival into a career catching predators.',
           sources: [
@@ -1525,6 +1532,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Nebraska Avenue corridor, Tampa',
+      url: 'https://www.google.com/maps/search/?api=1&query=Nebraska%20Avenue%20corridor%2C%20Tampa%20Tampa',
             stillExists: true,
           },
         },
@@ -1570,6 +1578,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Dale Mabry Strip, Pasco/Hillsborough Counties',
+      url: 'https://www.google.com/maps/search/?api=1&query=Dale%20Mabry%20Strip%2C%20Pasco%2FHillsborough%20Counties%20Tampa',
             stillExists: true,
           },
         },
@@ -1629,6 +1638,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Tampa Bay waters',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20waters%20Tampa',
             stillExists: true,
           },
         },
@@ -1636,8 +1646,7 @@ export const tampa: CityData = {
           id: 'tam-dark-6',
           type: 'dark-history',
           category: 'crime',
-          year: '2017',
-          title: 'The Seminole Heights Serial Killer',
+                    title: 'The Seminole Heights Serial Killer',
           body: 'For 51 days in the fall of 2017, the tree-lined streets of Seminole Heights became a hunting ground. Benjamin Mitchell, 22, was shot dead at a bus stop on October 9. Monica Hoffa, 32, was found in an overgrown lot on October 13. Anthony Naiboa, 20, an autistic young man who had just started packing hurricane relief supplies, got on the wrong bus and was killed on October 19. Ronald Felton, 60, was shot in the back on November 14 while walking to church to feed the homeless. The victims had nothing in common except walking alone at night within a half-mile radius. Police flooded the neighborhood. Residents were warned not to go outside alone. On November 28, Howell Emanuel Donaldson III handed a McDonald\'s manager a bag containing a pistol and told her to hold it. She looked inside and called police. Ballistics matched the gun to all four murders. Donaldson, a former college basketball player with no apparent motive, pleaded guilty in 2023 and received four consecutive life sentences.',
           verdict: 'Four dead, one killer, no motive ever established. The McDonald\'s manager who turned him in received the $110,000 reward.',
           sources: [
@@ -1700,6 +1709,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Seminole Heights neighborhood',
+      url: 'https://www.google.com/maps/search/?api=1&query=Seminole%20Heights%20neighborhood%20Tampa',
             stillExists: true,
           },
         },
@@ -1764,6 +1774,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Plant Hall, University of Tampa',
+      url: 'https://www.google.com/maps/search/?api=1&query=Plant%20Hall%2C%20University%20of%20Tampa%20Tampa',
             stillExists: true,
           },
         },
@@ -1840,6 +1851,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Tampa Theatre, 711 N Franklin St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Theatre%2C%20711%20N%20Franklin%20St%20Tampa',
             stillExists: true,
           },
         },
@@ -1916,6 +1928,7 @@ export const tampa: CityData = {
           ],
           location: {
             name: 'Cuban Club, 2010 N Avenida Republica de Cuba',
+      url: 'https://www.google.com/maps/search/?api=1&query=Cuban%20Club%2C%202010%20N%20Avenida%20Republica%20de%20Cuba%20Tampa',
             stillExists: true,
           },
         },

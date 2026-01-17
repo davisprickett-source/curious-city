@@ -8,7 +8,7 @@ export const portland: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it. Here\'s what we\'re curious about.',
+      content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it.',
     },
     {
       id: 'featured-card',
@@ -81,6 +81,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'SW Naito Parkway',
+      url: 'https://www.google.com/maps/search/?api=1&query=SW%20Naito%20Parkway%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5163,-122.6730',
             stillExists: true,
           },
@@ -124,6 +125,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Throughout Portland (especially old neighborhoods)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Throughout%20Portland%20(especially%20old%20neighborhoods)%20Portland',
             stillExists: true,
           },
         },
@@ -195,6 +197,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Music Millennium',
+      url: 'https://www.google.com/maps/search/?api=1&query=Music%20Millennium%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5225,-122.6917',
             stillExists: true,
           },
@@ -235,6 +238,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Tom McCall Waterfront Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Tom%20McCall%20Waterfront%20Park%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5208,-122.6708',
             stillExists: true,
           },
@@ -281,6 +285,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Downtown Portland',
+      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Portland%20Portland',
             stillExists: true,
           },
         },
@@ -318,6 +323,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Portland Building, 1120 SW 5th Ave',
+      url: 'https://www.google.com/maps/search/?api=1&query=Portland%20Building%2C%201120%20SW%205th%20Ave%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5151,-122.6793',
             stillExists: true,
           },
@@ -352,6 +358,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'N Denver Ave & N Lombard St',
+      url: 'https://www.google.com/maps/search/?api=1&query=N%20Denver%20Ave%20%26%20N%20Lombard%20St%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5723,-122.6838',
             stillExists: true,
           },
@@ -368,6 +375,7 @@ export const portland: CityData = {
           },
           location: {
             name: 'OMSI',
+      url: 'https://www.google.com/maps/search/?api=1&query=OMSI%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5084,-122.6662',
             stillExists: true,
           },
@@ -425,6 +433,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Former location: 408 NW Couch St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Former%20location%3A%20408%20NW%20Couch%20St%20Portland',
             stillExists: false,
           },
         },
@@ -440,6 +449,7 @@ export const portland: CityData = {
           },
           location: {
             name: 'Voodoo Doughnut Old Town',
+      url: 'https://www.google.com/maps/search/?api=1&query=Voodoo%20Doughnut%20Old%20Town%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5226,-122.6730',
             stillExists: true,
           },
@@ -675,40 +685,10 @@ export const portland: CityData = {
       id: 'pdx-hidden-gems',
       type: 'section',
       title: 'Under the Burnside',
-      teaser: 'Cold War bunkers, Shanghai tunnels, and underground speakeasies',
+      teaser: 'Moss-covered ruins, vacuum museums, and an invented geological epoch',
       intro: 'Portland’s real soul isn’t found on the tourist drags; it’s hidden in basement speakeasies, abandoned theaters, and the secret corners of the forest that the brochures forget.',
       items: [
-                    {
-                      id: 'gem-underground-1',
-                      type: 'hidden-gem',
-                      featured: true,
-                      featuredOrder: 4,
-                      name: 'Kelly Butte Cold War Bunker',
-                      category: 'Underground',
-                      description: 'America\'s first underground city hall, built 1955-56 as civil defense center to hold 250 people for two weeks after nuclear attack. Two-story, 18,820 sq ft facility buried 10-30 feet below Kelly Butte with 26-inch reinforced concrete walls. Used as 911 call center 1974-1994, then permanently sealed in 2006 with earth piled over the entrance. Most Portlanders don\'t even know it exists.',
-                      images: [
-                        {
-                          src: '/portland/hidden-gems/bunker-1.png',
-                          alt: 'Kelly Butte Cold War bunker exterior',
-                        },
-                        {
-                          src: '/portland/hidden-gems/bunker-2.png',
-                          alt: 'Kelly Butte Cold War bunker entrance',
-                        }
-                      ],
-                      address: 'SE 103rd Ave & Powell Blvd, Portland, OR 97266',
-                      coordinates: { lat: 45.4975, lng: -122.5592 },
-                      hours: 'Not accessible (sealed)',
-                      price: 'N/A',
-                      accessibility: 'Completely sealed and buried',
-                      sources: [
-                        {
-                          title: 'Kelly Butte Civil Defense Center',
-                          publisher: 'Oregon Encyclopedia',
-                          url: 'https://www.oregonencyclopedia.org/articles/kelly_butte_cold_war_bunker/',
-                        }
-                      ],
-                    },        {
+        {
           id: 'gem-ad-1',
           type: 'ad',
           size: 'banner',
@@ -716,6 +696,8 @@ export const portland: CityData = {
         {
                       id: 'gem-museums-new-1',
                       type: 'hidden-gem',
+                      featured: true,
+                      featuredOrder: 5,
                       name: 'Freakybuttrue Peculiarium',
                       category: 'Unusual Museum',
                       description: 'Artists Mike Wellins and Lisa Freeman planned to open a food truck in 2010. They pivoted to cryptozoology instead. The Peculiarium opened April 2011 with a 10-foot Bigfoot, alien autopsy exhibits, and walls hung with thrift-store landscapes that Wellins "improved" by painting in zombies, space monsters, and giant robots—a technique he calls NERC (Non-Elective Retroactive Collaboration). Closed 17 months during the pandemic, reopened July 2021, still selling jetpack bunnies and machine gun Bigfoot art.',
@@ -755,6 +737,8 @@ export const portland: CityData = {
                             {
                               id: 'gem-landmark-1',
                               type: 'hidden-gem',
+                              featured: true,
+                              featuredOrder: 3,
                               name: 'Witch\'s Castle (Stone House)',
                               category: 'Historic Landmark',
                               description: 'A moss-strangled stone ruin in Forest Park, built by the WPA in the 1930s as a ranger station or restroom (nobody quite agrees). Not remotely a castle. The locals call it haunted. Teenagers use it for selfies. The 0.8-mile hike from Lower Macleay Trail is gentle enough for out-of-shape goths.',
@@ -789,6 +773,8 @@ export const portland: CityData = {
                 {
                               id: 'gem-religious-1',
                               type: 'hidden-gem',
+                              featured: true,
+                              featuredOrder: 1,
                               name: 'The Grotto (National Sanctuary of Our Sorrowful Mother)',
                               category: 'Spiritual/Nature',
                               description: 'A 62-acre Catholic shrine where a cave carved into a cliff face opens onto botanical gardens perched 110 feet above street level. Nuns tend the grounds. Pilgrims light candles. Tourists wander through confused but respectful. The elevator to the upper gardens costs money; the lower grotto does not. The Columbia River views are legitimately stunning, which feels theologically appropriate.',
@@ -899,9 +885,11 @@ export const portland: CityData = {
                         }
                       ],
                     },
-        { // Added missing comma and corrected indentation for the next item
+        {
           id: 'gem-history-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Lone Fir Cemetery - Block 14',
           category: 'Historic Mystery',
           description: 'Hundreds of Chinese migrant laborers buried in unmarked graves, literally paved over in the 1950s and turned into an office building parking lot. Also contains 130+ mass graves of Oregon Hospital for the Insane patients (1861-1883). The area resembles an abandoned field with no markers. Memorial planned for 2026.',
@@ -964,6 +952,8 @@ export const portland: CityData = {
         {
           id: 'gem-museums-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Zymoglyphic Museum',
           category: 'Unusual Museum',
           description: 'Artist Jim Stewart invented an entire geological epoch in 2000 and built a 400-square-foot museum above his garage to document it. "Zymoglyphic" means "images of fermentation" or "the solid residue of creative fermentation on natural objects," depending on whether Stewart is feeling poetic or specific. Driftwood becomes creatures. Skulls get mounted in Victorian taxidermy poses. Beach finds from his California childhood share space with his biology-teacher father\'s specimens. Maximum 6 visitors. Free admission. You email ahead. He shows you around. It\'s Mt. Tabor\'s most sincere fever dream.',
@@ -989,6 +979,8 @@ export const portland: CityData = {
         {
           id: 'gem-museums-3',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Stark\'s Vacuum Museum',
           category: 'Niche Collection',
           description: 'Hidden inside a working vacuum store is one of America\'s strangest museums: a 10x40 foot shrine to suction containing over 300 vacuum cleaners spanning 150 years. The collection includes a two-person hand-pumped Victorian model that required one person to work the bellows while another pushed, early electric models that cost more than a month\'s wages, and a complete evolution of Hoover\'s industrial dominance. The store itself has operated since 1932. The museum averages maybe a dozen visitors per month, which only adds to the appeal—you\'ll likely have a private docent tour from staff who know the history of every machine. Free admission, and they don\'t pressure you to buy a Dyson afterward.',
@@ -1475,9 +1467,10 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-6',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 4,
           category: 'unsolved',
-          year: '2010',
-          title: 'A Second-Grader Walked Into School and Vanished',
+                    title: 'A Second-Grader Walked Into School and Vanished',
           body: 'June 4, 2010. Seven-year-old Kyron Horman posed for a photo in front of his science fair project—a display about tree frogs. His stepmother Terri snapped the picture at Skyline Elementary in Portland\'s West Hills. It was 8:45 a.m. By 3:30 p.m., Kyron was gone. What followed was the largest criminal investigation in Oregon history: 1,300 searchers combing the West Hills for ten days straight. No trace. Terri failed two polygraph tests. Investigators discovered she\'d tried to hire the family landscaper to kill her husband months earlier. A judge called her the "prime suspect." She has never been charged. Fifteen years later, over 4,000 tips from around the world have led nowhere. A $50,000 reward sits unclaimed. Kyron\'s glasses are still missing. So is Kyron. He walked into his elementary school on a Friday morning and never walked out.',
           verdict: 'Oregon\'s largest criminal investigation. 4,000+ tips. Zero arrests. The case remains open.',
           sources: [
@@ -1528,6 +1521,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Skyline Elementary School, West Hills',
+      url: 'https://www.google.com/maps/search/?api=1&query=Skyline%20Elementary%20School%2C%20West%20Hills%20Portland',
             stillExists: true,
           },
           images: [
@@ -1589,6 +1583,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Old Town Chinatown (underground)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Old%20Town%20Chinatown%20(underground)%20Portland',
             stillExists: true,
           },
           images: [
@@ -1604,8 +1599,7 @@ export const portland: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'disaster',
-          year: '1948',
-          title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
+                    title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
           body: 'Memorial Day morning, May 30, 1948. Vanport, Oregon\'s second-largest city—40,000 residents, 40% Black, built in 110 days during WWII to house Kaiser Shipyard workers—woke up to a flyer from the Housing Authority: "DIKES ARE SAFE AT PRESENT. YOU WILL BE WARNED IF NECESSARY. YOU WILL HAVE TIME TO LEAVE. DON\'T GET EXCITED." At 4:05 p.m., the railroad berm holding back the Columbia River collapsed. Water hit Vanport at 30 mph. Residents had 35 minutes. Fifteen people died officially—the real count was never confirmed. Eighteen thousand were left homeless. Nearly a third were Black, living in a state that had explicitly banned Black residency just 22 years earlier. Discriminatory housing laws barred survivors from most of Portland. Black residents were funneled into the overcrowded Albina district. By 1960, 80% of Black Portlanders lived in Albina—a concentration camp created by policy, not choice. The flood has been compared to Katrina for one reason: the government lied, the levees failed, and Black communities paid the price.',
           verdict: 'A city of 40,000 erased in an afternoon. The site is now a dog park and drag racing strip.',
           sources: [
@@ -1639,6 +1633,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Delta Park (former Vanport site)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Delta%20Park%20(former%20Vanport%20site)%20Portland',
             stillExists: true,
           },
           images: [
@@ -1692,6 +1687,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'White Eagle Saloon, 836 N Russell St',
+      url: 'https://www.google.com/maps/search/?api=1&query=White%20Eagle%20Saloon%2C%20836%20N%20Russell%20St%20Portland',
             stillExists: true,
           },
           images: [
@@ -1704,6 +1700,8 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-4',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 5,
           category: 'crime',
           year: '1980–1981',
           title: 'The Failed NFL Player Who Became One of America\'s Deadliest Serial Killers',
@@ -1752,6 +1750,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Interstate 5 corridor',
+      url: 'https://www.google.com/maps/search/?api=1&query=Interstate%205%20corridor%20Portland',
             stillExists: true,
           },
           images: [
@@ -1764,6 +1763,8 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-8',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 6,
           category: 'haunting',
           year: '1914–present',
           title: 'The Mansion Where Dead Newspaper Barons Still Walk the Gardens',
@@ -1803,6 +1804,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Pittock Mansion, 3229 NW Pittock Dr',
+      url: 'https://www.google.com/maps/search/?api=1&query=Pittock%20Mansion%2C%203229%20NW%20Pittock%20Dr%20Portland',
             stillExists: true,
           },
           images: [
@@ -1815,9 +1817,10 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-5',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 7,
           category: 'crime',
-          year: '1999',
-          title: 'He Hunted Homeless Women and Dumped Them in Portland\'s Crown Jewel Park',
+                    title: 'He Hunted Homeless Women and Dumped Them in Portland\'s Crown Jewel Park',
           body: 'Spring and summer 1999. Three homeless women—raped, strangled, discarded in Forest Park like trash. The 5,200-acre urban wilderness is Portland\'s pride: old-growth forest, 80+ miles of trails, the kind of place the city puts on postcards. Todd Alan Reed turned it into a graveyard for women no one was looking for. He targeted people on the margins—invisible victims in a city that branded itself as compassionate and livable. Reed knew Portland\'s secret: if you kill the right people, no one notices until it\'s too late. DNA linked him to all three murders. He was convicted and sentenced to death in 2000. Oregon\'s death penalty has been under moratorium since 2011, so Reed sits in a cell, alive, while his victims decomposed in the city\'s favorite hiking spot. The case exposed Portland\'s lie: the homeless weren\'t residents to protect—they were problems to ignore, easy prey for anyone who understood the city\'s indifference.',
           verdict: 'Three women murdered. Bodies hidden in joggers\' paradise. Reed remains on death row, indefinitely.',
           sources: [
@@ -1855,6 +1858,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Forest Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Forest%20Park%20Portland',
             stillExists: true,
           },
           images: [
@@ -1867,6 +1871,8 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-9',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 8,
           category: 'haunting',
           year: '1855–present',
           title: '10,000 Unmarked Graves, Forgotten Asylum Patients, and an Axe Murderess',
@@ -1914,6 +1920,7 @@ export const portland: CityData = {
           ],
           location: {
             name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Lone%20Fir%20Cemetery%2C%20SE%2026th%20Ave%20%26%20Stark%20St%20Portland',
             stillExists: true,
           },
           images: [
@@ -1926,6 +1933,8 @@ export const portland: CityData = {
         {
           id: 'pdx-dark-1',
           type: 'dark-history',
+          featured: true,
+          featuredOrder: 9,
           category: 'crime',
           year: '1859–1926',
           title: 'The Only State to Ban Black People—By Popular Vote',
@@ -1959,6 +1968,7 @@ export const portland: CityData = {
                       }
                     ],          location: {
             name: 'State of Oregon',
+      url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Oregon%20Portland',
             stillExists: true,
           },
           images: [

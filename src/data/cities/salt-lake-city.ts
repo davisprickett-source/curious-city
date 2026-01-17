@@ -72,14 +72,14 @@ export const salt_lake_city: CityData = {
           category: 'culture',
           title: 'A flamingo named Pink Floyd survived 18 Utah winters',
           body: 'In 1988, a Chilean flamingo escaped from Tracy Aviary and made the Great Salt Lake its home for 18 years. Pink Floyd—as locals named it—survived blizzards that should have killed it, dining exclusively on brine shrimp while every other bird with any sense flew south for the winter. It was last seen in 2005, likely having died of old age, having outlived every reasonable expectation for a tropical bird stranded in the desert. The audacity is inspiring.',
-          year: '1988',
-          image: {
+                    image: {
             src: '/salt-lake-city/curiosities/flamingo.png',
             alt: 'Pink Floyd the flamingo at the Great Salt Lake',
           },
           source: 'Tracy Aviary records',
           location: {
             name: 'Great Salt Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
             stillExists: false,
           },
         },
@@ -89,14 +89,14 @@ export const salt_lake_city: CityData = {
           category: 'underground',
           title: 'Secret tunnels connect the Temple to church headquarters',
           body: 'Beneath the sacred grounds of Temple Square, a labyrinthine network of tunnels allows leaders of The Church of Jesus Christ of Latter-day Saints to move unseen between the Salt Lake Temple, the Church Office Building, and other key facilities. Built for both security and discretion in the 1960s, these subterranean passages became critical arteries for dignitaries during the 2002 Winter Olympics. The Church maintains a steadfast silence on their existence, which, of course, only fuels the intrigue. Every institution with an air of divine authority, it seems, eventually builds its own secret corridors—because even a prophet sometimes needs to avoid the weather, or perhaps, simply the public.',
-          year: '1960s',
-          image: {
+                    image: {
             src: '/salt-lake-city/curiosities/slc-tunnels.png',
             alt: 'Underground tunnels beneath Temple Square',
           },
           source: 'Salt Lake Tribune investigative reports',
           location: {
             name: 'Temple Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -106,14 +106,14 @@ export const salt_lake_city: CityData = {
           category: 'law',
           title: 'Grocery store beer was capped at 3.2% until 2019',
           body: 'For decades, Utah law forced breweries to choose: water down your beer to 3.2% alcohol or skip the state entirely. Major brands created embarrassing "Utah formulations" of their products—essentially beer-flavored water you could buy at grocery stores. The law finally changed in November 2019, but quirks remain: no wine at grocery stores, bars still pour behind "Zion curtains," and the private club system makes no sense to anyone, including Utahns. Progress is incremental in the Beehive State.',
-          year: '2019',
-          image: {
+                    image: {
             src: '/salt-lake-city/curiosities/beer.png',
             alt: 'Utah beer laws and 3.2% beer regulations',
           },
           source: 'Utah Department of Alcoholic Beverage Control',
           location: {
             name: 'State of Utah',
+      url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Utah%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -135,6 +135,7 @@ export const salt_lake_city: CityData = {
           source: 'Brigham Young University Great Salt Lake study',
           location: {
             name: 'Great Salt Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -151,6 +152,7 @@ export const salt_lake_city: CityData = {
           source: 'Great Salt Lake Ecosystem Program',
           location: {
             name: 'Great Salt Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -172,8 +174,7 @@ export const salt_lake_city: CityData = {
           category: 'legend',
           title: 'The "Miracle of the Gulls" was great PR, less so history',
           body: 'The story is etched into every Utahn\'s memory: in 1848, a devastating cricket plague threatened to wipe out the Mormon pioneers\' first harvest. Just as all hope seemed lost, a flock of California gulls descended, devoured the crickets, and saved the settlement. A divine intervention! A miracle! The only problem? Contemporary journals are sparse and contradictory, with few mentions of the gulls. Modern ecologists confirm that gulls naturally follow insect swarms, eating their fill and then regurgitating to eat more. The "miracle" narrative blossomed decades later, a convenient founding myth for a people who needed one. Still, Utah made the California gull its state bird and erected a monument in Temple Square. Because why let a few inconvenient facts get in the way of a perfectly good story about divine intervention?',
-          year: '1848',
-          images: [
+                    images: [
             {
               src: '/salt-lake-city/curiosities/gulls-1.png',
               alt: 'California gulls at the Great Salt Lake',
@@ -186,6 +187,7 @@ export const salt_lake_city: CityData = {
           source: 'Utah Historical Quarterly',
           location: {
             name: 'Temple Square (Seagull Monument)',
+      url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20(Seagull%20Monument)%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -208,6 +210,7 @@ export const salt_lake_city: CityData = {
           source: 'Deseret News historical archives',
           location: {
             name: 'Great Salt Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
             stillExists: false,
           },
         },
@@ -217,14 +220,14 @@ export const salt_lake_city: CityData = {
           category: 'history',
           title: 'Congress rejected the name "Deseret" and imposed "Utah"',
           body: 'Mormon pioneers wanted to call their territory "Deseret"—a word from the Book of Mormon meaning "honeybee." Congress rejected it in 1850 and imposed "Utah" instead, derived from the Ute people whose land it actually was. The beehive symbol remained, and Utah is still called the "Beehive State." Church members lobbied to get "Deseret" approved for 45 years before finally giving up. Some battles you can\'t win, even with divine mandate.',
-          year: '1850',
-          image: {
+                    image: {
             src: '/salt-lake-city/curiosities/deseret.png',
             alt: 'Deseret beehive symbol of Utah',
           },
           source: 'Church History Library',
           location: {
             name: 'State of Utah',
+      url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Utah%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -253,6 +256,7 @@ export const salt_lake_city: CityData = {
           source: 'Utah Geological Survey',
           location: {
             name: 'Great Salt Lake',
+      url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -270,6 +274,7 @@ export const salt_lake_city: CityData = {
           source: 'Utah Geological Survey',
           location: {
             name: 'Wasatch Front',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wasatch%20Front%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -286,6 +291,7 @@ export const salt_lake_city: CityData = {
           source: 'Church of Jesus Christ of Latter-day Saints',
           location: {
             name: 'Temple Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -303,6 +309,7 @@ export const salt_lake_city: CityData = {
           source: 'Tabernacle Choir historical archives',
           location: {
             name: 'Salt Lake Tabernacle',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Tabernacle%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -312,14 +319,14 @@ export const salt_lake_city: CityData = {
           category: 'history',
           title: 'Japanese balloon bombs floated over Utah during WWII',
           body: 'In 1945, a rancher in Box Elder County spotted a 33-foot balloon drifting over Blue Creek Valley. Sheriff Warren Hyde grabbed the strange device with his bare hands and held on for 45 minutes in the freezing wind while help was summoned. It was a Japanese Fu-Go balloon bomb—one of 9,300 launched across the Pacific on the jet stream. The FBI swore Hyde to silence for decades. The sand in the ballast bags helped identify Japanese launch sites, leading to bombing raids that ended the program.',
-          year: '1945',
-          image: {
+                    image: {
             src: '/salt-lake-city/articles/balloon-bomb.png',
             alt: 'Japanese Fu-Go balloon bomb during WWII',
           },
           source: 'National Archives, declassified WWII records',
           location: {
             name: 'Blue Creek Valley, Box Elder County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Blue%20Creek%20Valley%2C%20Box%20Elder%20County%20Salt%20Lake%20City',
             stillExists: true,
           },
         },
@@ -336,6 +343,7 @@ export const salt_lake_city: CityData = {
           source: 'Utah Office of Tourism',
           location: {
             name: 'Wasatch Mountains',
+      url: 'https://www.google.com/maps/search/?api=1&query=Wasatch%20Mountains%20Salt%20Lake%20City',
             stillExists: true,
           },
         }
@@ -480,6 +488,8 @@ export const salt_lake_city: CityData = {
         {
           id: 'gem-museum-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 2,
           name: 'Price Museum of Speed',
           category: 'Private Car Museum',
           description: 'Hidden in an unassuming downtown building is one of the most significant private racing collections in America—and it\'s open to the public exactly three hours per month. The Mormon Meteor III is the crown jewel: Ab Jenkins drove this streamlined beast to 24-hour speed records on the Bonneville Salt Flats in 1940, averaging 161 mph for an entire day and night. The collection includes over 30 racing machines spanning a century—a 1904 Peerless Green Dragon, a 1929 Bugatti Type 35B, Indianapolis veterans, Grand Prix legends. John Price spent decades quietly assembling cars that tell the history of human obsession with going faster. No crowds, no gift shop, no velvet ropes—just you, the cars, and sometimes Price himself explaining why a particular engine note still haunts him.',
@@ -506,6 +516,8 @@ export const salt_lake_city: CityData = {
         {
           id: 'gem-museum-2',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 3,
           name: 'Pioneer Memorial Museum Oddities',
           category: 'Historical Museum',
           description: 'The Daughters of Utah Pioneers run this 38-room museum that officially celebrates Mormon pioneer heritage—but wander past the quilts and wagon wheels and you\'ll find one of America\'s strangest accidental collections. Bottles filled with human teeth extracted during the trek west. Victorian mourning jewelry woven from the hair of the dead. A taxidermied two-headed lamb born on a frontier farm. A petrified potato carried across the plains as a good luck charm. Rattlesnake rattles, dozens of them, collected from the snakes that made desert nights dangerous. A hand-carved wooden leg that walked someone to Zion. A bloodstone that pioneers believed could stop hemorrhaging. The museum doesn\'t play up the weirdness—it\'s all presented with the same earnest reverence as the spinning wheels and butter churns. That\'s what makes it perfect: you have to hunt for the bizarre, and it\'s everywhere.',
@@ -532,6 +544,8 @@ export const salt_lake_city: CityData = {
         {
           id: 'gem-cemetery-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 4,
           name: 'Lilly E. Gray\'s "Victim of the Beast 666" Grave',
           category: 'Cemetery Oddity',
           description: 'Lilly E. Gray died of natural causes in 1958. She was 77, had no criminal record, and by all accounts lived an unremarkable life. But her gravestone—"Victim of the Beast 666"—has drawn thousands of visitors and spawned decades of speculation. Was she murdered by a cult? Possessed? The truth is stranger and sadder: her husband Elmer was a paranoid anti-government eccentric who spent time in prison and believed "the beast" was the federal government. When Lilly died, Elmer blamed them and paid for the cryptic epitaph that turned an ordinary grave into Salt Lake\'s most mysterious landmark. Researchers have traced Elmer\'s paper trail—arrests, letters, grievances—and found a man at war with institutions he believed had persecuted him. Lilly became his final monument to that rage. Her grave is the most visited in the cemetery, surrounded by the unremarkable dead, forever marked by her husband\'s obsession.',
@@ -577,6 +591,8 @@ export const salt_lake_city: CityData = {
         {
           id: 'gem-nature-2',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 5,
           name: 'Wall Lake',
           category: 'Secret Swimming Hole',
           description: 'Everyone knows Crystal Lake in the Uintas—it\'s the first lake past the trailhead, and on summer weekends it\'s a zoo. But keep walking another mile and the crowds vanish. Wall Lake sits in a cirque of granite, its water an impossible shade of icy green, with cliffs at the southeastern end tall enough to jump from if you\'re brave and stupid in equal measure. The lake is deep, cold even in August, and ringed by wildflowers that somehow survive at 10,000 feet. Locals treat Wall Lake like a secret handshake—mentioning it to the right people signals you know the real Wasatch. Arrive at dawn on a Tuesday and you might have the whole thing to yourself. Show up on a Saturday and you\'ll share it with every other local who reads articles like this one.',
@@ -604,6 +620,8 @@ export const salt_lake_city: CityData = {
         {
           id: 'gem-park-1',
           type: 'hidden-gem',
+          featured: true,
+          featuredOrder: 6,
           name: 'Allen Park (Hobbitville)',
           category: 'Historic Park',
           description: 'For decades, Salt Lake children whispered about "Hobbitville"—a mysterious property along Emigration Creek where tiny houses dotted the woods, peacocks roamed free, and strange hermits supposedly lived in seclusion. Parents warned kids away. Teenagers snuck in anyway. The truth was weirder than the legends: in the 1930s, a wealthy couple built a bird sanctuary here, then opened it to artists and eccentrics who constructed whimsical cabins among the trees. By the 1960s it was a counterculture commune. By the 1980s it was abandoned, overgrown, and perfect for urban mythology. In 2020, Salt Lake finally acquired the 8-acre property and opened it to the public. The peacocks are gone, but the tiny houses remain—hobbit-sized structures slowly being reclaimed by the forest, monuments to a Salt Lake that existed before conformity became the brand.',
@@ -1196,6 +1214,7 @@ export const salt_lake_city: CityData = {
           source: 'American Heritage',
           location: {
             name: 'Mountain Meadows, Washington County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mountain%20Meadows%2C%20Washington%20County%20Salt%20Lake%20City',
             coordinates: { lat: 37.4786, lng: -113.6458 },
             stillExists: true,
           },
@@ -1209,6 +1228,7 @@ export const salt_lake_city: CityData = {
           source: 'Utah State Historical Society',
           location: {
             name: 'Salt Lake Valley',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Valley%20Salt%20Lake%20City',
             coordinates: { lat: 40.7608, lng: -111.8910 },
             stillExists: true,
           },
@@ -1222,6 +1242,7 @@ export const salt_lake_city: CityData = {
           source: 'Smithsonian Magazine',
           location: {
             name: 'Temple Square',
+      url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
             coordinates: { lat: 40.7706, lng: -111.8919 },
             stillExists: true,
           },
@@ -1245,6 +1266,7 @@ export const salt_lake_city: CityData = {
           },
           location: {
             name: 'Topaz, Millard County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Topaz%2C%20Millard%20County%20Salt%20Lake%20City',
             coordinates: { lat: 39.4094, lng: -112.7742 },
             stillExists: true,
           },
@@ -1259,10 +1281,10 @@ export const salt_lake_city: CityData = {
           image: {
             src: '/images/history/golden-spike.jpg',
             alt: 'Ceremony at Promontory Summit with locomotives meeting',
-            year: '1869',
-          },
+                      },
           location: {
             name: 'Promontory Summit',
+      url: 'https://www.google.com/maps/search/?api=1&query=Promontory%20Summit%20Salt%20Lake%20City',
             coordinates: { lat: 41.6222, lng: -112.5511 },
             stillExists: true,
           },
@@ -1276,6 +1298,7 @@ export const salt_lake_city: CityData = {
           source: 'Salt Lake Tribune',
           location: {
             name: 'Salt Lake County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20County%20Salt%20Lake%20City',
             coordinates: { lat: 40.7608, lng: -111.8910 },
             stillExists: true,
           },
@@ -1289,6 +1312,7 @@ export const salt_lake_city: CityData = {
           source: 'ABC News',
           location: {
             name: 'Federal Heights',
+      url: 'https://www.google.com/maps/search/?api=1&query=Federal%20Heights%20Salt%20Lake%20City',
             coordinates: { lat: 40.7711, lng: -111.8547 },
             stillExists: true,
           },
@@ -1302,6 +1326,7 @@ export const salt_lake_city: CityData = {
           source: 'Sunstone Magazine',
           location: {
             name: 'This Is The Place Heritage Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=This%20Is%20The%20Place%20Heritage%20Park%20Salt%20Lake%20City',
             coordinates: { lat: 40.7522, lng: -111.8147 },
             stillExists: true,
           },
@@ -1471,8 +1496,7 @@ export const salt_lake_city: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'crime',
-          year: '1977',
-          title: 'Gary Gilmore: "Let\'s Do It"',
+                    title: 'Gary Gilmore: "Let\'s Do It"',
           body: 'On July 19, 1976, Gary Gilmore robbed and murdered gas station attendant Max Jensen in Orem. The next night, he killed motel manager Bennie Bushnell in Provo. Both victims were young fathers. Gilmore was captured the same week, tried, and sentenced to death. Then he did something unprecedented: he demanded to be executed. For a decade, capital punishment had been frozen in America. Gilmore wanted to restart it. When the ACLU and his mother fought to save his life, he told them to back off—"It\'s my life and it\'s my death." On January 17, 1977, Gilmore was strapped to a chair in an abandoned cannery behind Utah State Prison. Five police officers aimed rifles through holes in a curtain. Asked for last words, he said: "Let\'s do it." He became the first person executed in America in ten years. Nike\'s Dan Wieden later adapted those words into the most famous slogan in advertising history: "Just Do It."',
           verdict: 'Two young fathers murdered. Gilmore executed by firing squad. Norman Mailer won the Pulitzer Prize for "The Executioner\'s Song," his book about the case. And somewhere, a marketing executive got the tagline of a lifetime.',
           images: [
@@ -1483,6 +1507,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Utah State Prison, Draper',
+      url: 'https://www.google.com/maps/search/?api=1&query=Utah%20State%20Prison%2C%20Draper%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1545,6 +1570,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Antelope Island State Park',
+      url: 'https://www.google.com/maps/search/?api=1&query=Antelope%20Island%20State%20Park%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1578,8 +1604,7 @@ export const salt_lake_city: CityData = {
           id: 'slc-dark-3',
           type: 'dark-history',
           category: 'crime',
-          year: '1974',
-          title: 'The Hi-Fi Murders',
+                    title: 'The Hi-Fi Murders',
           body: 'On April 22, 1974, three airmen from Hill Air Force Base robbed the Hi-Fi Shop in Ogden, taking five hostages to the basement. What happened next became one of the most sadistic crimes in Utah history. Dale Pierre Selby and William Andrews forced their victims to drink caustic drain cleaner (Drano), then taped their mouths shut to prevent vomiting. When the poison didn\'t kill them quickly enough, Pierre kicked a ballpoint pen into one victim\'s ear, lodging it deep in his brain. He raped 18-year-old Michelle Ansley, then shot all five hostages in the head. Three died: Stanley Walker (20), Michelle Ansley (18), and Carol Naisbitt (52). Two survived with catastrophic injuries. Pierre was executed in 1987. Andrews\' case drew national controversy—he hadn\'t pulled the trigger, and a juror had passed a note with a racial slur during sentencing. Despite campaigns from the NAACP and Amnesty International, he was executed in 1992. Ogden has never forgotten.',
           verdict: 'Three murdered, two survivors with permanent injuries. Both killers executed. The case changed Ogden\'s sense of innocence forever.',
           images: [
@@ -1598,6 +1623,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: '2323 Washington Blvd, Ogden',
+      url: 'https://www.google.com/maps/search/?api=1&query=2323%20Washington%20Blvd%2C%20Ogden%20Salt%20Lake%20City',
             stillExists: false,
           },
           sources: [
@@ -1638,8 +1664,7 @@ export const salt_lake_city: CityData = {
           id: 'slc-dark-4',
           type: 'dark-history',
           category: 'unsolved',
-          year: '2009',
-          title: 'The Disappearance of Susan Powell',
+                    title: 'The Disappearance of Susan Powell',
           body: 'On December 6, 2009, Susan Powell vanished from her West Valley City home. Her husband Josh said he\'d taken their sons, ages 2 and 4, on a midnight camping trip in the West Desert—in December, below freezing, in a blizzard. Susan, he claimed, stayed home. Police found blood on the floor, life insurance policies worth $1.5 million, and a letter from Susan saying she feared for her life. Josh never wavered from his camping story. Investigators believed he killed Susan and disposed of her body somewhere in the endless West Desert. They couldn\'t prove it. In February 2012, during a supervised custody visit, Josh locked the social worker out, attacked his two sons with a hatchet, and ignited a gasoline fire that killed all three. His brother Michael, suspected of helping dispose of Susan\'s body, killed himself a year later. Susan\'s remains have never been found. The podcast "Cold" has kept the case alive, and her family still searches the West Desert, grid by grid.',
           verdict: 'Susan Powell declared legally dead in 2012. Her body has never been recovered. The West Desert keeps its secrets.',
           images: [
@@ -1650,6 +1675,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'West Valley City / West Desert',
+      url: 'https://www.google.com/maps/search/?api=1&query=West%20Valley%20City%20%2F%20West%20Desert%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1699,8 +1725,7 @@ export const salt_lake_city: CityData = {
           featured: true,
           featuredOrder: 4,
           category: 'crime',
-          year: '1857',
-          title: 'The Mountain Meadows Massacre',
+                    title: 'The Mountain Meadows Massacre',
           body: 'On September 11, 1857, a militia of Latter-day Saints and Paiute allies slaughtered approximately 120 men, women, and children from the Baker-Fancher wagon train at Mountain Meadows in southern Utah. The emigrants, bound for California from Arkansas, had been besieged for five days before militia leaders approached under a white flag, promising safe passage. Once disarmed, the emigrants were led away in small groups and executed. Only 17 children—those young enough that they wouldn\'t remember—were spared. The massacre occurred during the Utah War, when Mormon settlers feared federal invasion and paranoia ran deep. For twenty years, LDS leadership blamed Paiutes entirely. Only one man, John D. Lee, was ever prosecuted. He was executed by firing squad at the massacre site in 1877, seated on his own coffin. In 2007—150 years later—the LDS Church expressed "profound regret" but stopped short of an official apology.',
           verdict: 'The deadliest attack on a civilian wagon train in American frontier history. The site is now a National Historic Landmark. The truth took 150 years to approach the surface.',
           images: [
@@ -1711,6 +1736,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Mountain Meadows, Washington County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Mountain%20Meadows%2C%20Washington%20County%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1763,6 +1789,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Rio Grande Depot, 300 S Rio Grande St',
+      url: 'https://www.google.com/maps/search/?api=1&query=Rio%20Grande%20Depot%2C%20300%20S%20Rio%20Grande%20St%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1802,6 +1829,7 @@ export const salt_lake_city: CityData = {
           verdict: 'At least three confirmed Utah victims. Nancy Wilcox\'s body has never been recovered. The desert doesn\'t give up all its secrets.',
           location: {
             name: 'Salt Lake Valley, Utah County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Valley%2C%20Utah%20County%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1850,8 +1878,7 @@ export const salt_lake_city: CityData = {
           id: 'slc-dark-8',
           type: 'dark-history',
           category: 'unsolved',
-          year: '1995',
-          title: 'The Murder of Rosie Tapia',
+                    title: 'The Murder of Rosie Tapia',
           body: 'Between 2 a.m. and 5:45 a.m. on August 13, 1995, someone cut the screen from a bedroom window at an apartment complex near 800 West and 200 South in Salt Lake City. Six-year-old Rosie Tapia was taken from her bed. Her body was found the next morning, floating in a canal bordering the apartment complex. Police released a composite sketch of a Hispanic man seen in the area. Twenty-five years later, Rosie\'s parents still haven\'t given up. DNA evidence exists but has never matched anyone in databases. The case remains Salt Lake City\'s most haunting child murder—a little girl taken from her own bed while her family slept.',
           verdict: 'No arrests. DNA preserved. Rosie\'s family still searches for answers.',
           images: [
@@ -1862,6 +1889,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: '800 West, Salt Lake City',
+      url: 'https://www.google.com/maps/search/?api=1&query=800%20West%2C%20Salt%20Lake%20City%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1911,6 +1939,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Salt Lake County',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20County%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -1951,8 +1980,7 @@ export const salt_lake_city: CityData = {
           id: 'slc-dark-10',
           type: 'dark-history',
           category: 'crime',
-          year: '1984',
-          title: 'The Lafferty Murders: Revelation and Slaughter',
+                    title: 'The Lafferty Murders: Revelation and Slaughter',
           body: 'On July 24, 1984—Pioneer Day, Utah\'s most sacred holiday—Ron and Dan Lafferty drove to their brother\'s home in American Fork. Brenda Lafferty, their sister-in-law, opened the door. Ron strangled her with a vacuum cord while Dan cut her throat. Then Dan killed 15-month-old Erica in her crib. Ron claimed God had commanded the murders in a revelation he received. Brenda, he said, had encouraged his wife to leave him after he embraced polygamy and joined fundamentalist circles. The brothers had founded a splinter group called the School of the Prophets. They were arrested two weeks later at a casino buffet in Reno, calmly eating dinner. Dan received life without parole. Ron was sentenced to death but died of natural causes in 2019, still awaiting execution. Jon Krakauer\'s "Under the Banner of Heaven" documented the case, later adapted into an FX series starring Andrew Garfield.',
           verdict: 'A mother and infant murdered in the name of revelation. The case exposed dangerous fault lines between mainstream and fundamentalist Mormonism, and what happens when personal revelation becomes a license for violence.',
           images: [
@@ -1963,6 +1991,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'American Fork',
+      url: 'https://www.google.com/maps/search/?api=1&query=American%20Fork%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [
@@ -2012,8 +2041,7 @@ export const salt_lake_city: CityData = {
           id: 'slc-dark-11',
           type: 'dark-history',
           category: 'macabre',
-          year: '1958',
-          title: 'Victim of the Beast 666',
+                    title: 'Victim of the Beast 666',
           body: 'In the Salt Lake City Cemetery, section X1, a modest headstone marks the grave of Lilly E. Gray (1881–1958). Beneath her name, someone carved a message that has baffled visitors for decades: "Victim of the Beast 666." No one knows what it means. Lilly led an unremarkable life—married to Elmer Gray, a drifter with a long criminal record who had been imprisoned multiple times. He likely wrote the inscription, though he never explained it. Was it a reference to the Book of Revelation? A protest against the government? A husband\'s private grief encoded in apocalyptic language? Elmer died in 1963 and took the answer with him. Visitors still leave pennies on Lilly\'s grave, trying to appease whatever darkness the inscription suggests.',
           verdict: 'The meaning died with Elmer Gray. The grave remains one of Utah\'s strangest landmarks.',
           images: [
@@ -2024,6 +2052,7 @@ export const salt_lake_city: CityData = {
           ],
           location: {
             name: 'Salt Lake City Cemetery, Section X1',
+      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20City%20Cemetery%2C%20Section%20X1%20Salt%20Lake%20City',
             stillExists: true,
           },
           sources: [

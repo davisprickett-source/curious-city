@@ -414,6 +414,7 @@ export interface HistoryContentItem extends BaseContentItem {
   }
   location?: {
     name: string
+    url?: string
     coordinates?: {
       lat: number
       lng: number
@@ -458,6 +459,7 @@ export interface DarkHistoryContentItem extends BaseContentItem, WithMoreInfo {
   }>
   location?: {
     name: string
+    url?: string
     coordinates?: {
       lat: number
       lng: number
