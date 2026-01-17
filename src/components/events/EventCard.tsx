@@ -5,6 +5,22 @@ import type { EventItem } from '@/types/content'
 import { EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 import { getEventDisplayTime } from '@/utils/eventStatus'
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 // Category-specific placeholder images
 const CATEGORY_PLACEHOLDERS: Record<string, string> = {
   concerts: '/placeholders/concerts.jpg',
@@ -39,7 +55,8 @@ interface EventCardProps {
 export function EventCard({ event, onClick }: EventCardProps) {
   const categoryMeta = EVENT_CATEGORIES[event.category]
   const displayTime = getEventDisplayTime(event)
-  const imageSrc = event.image?.src || CATEGORY_PLACEHOLDERS[event.category] || CATEGORY_PLACEHOLDERS.concerts
+  const rawImageSrc = event.image?.src || CATEGORY_PLACEHOLDERS[event.category] || CATEGORY_PLACEHOLDERS.concerts
+  const imageSrc = getImageUrl(rawImageSrc)
   const hasRealImage = !!event.image?.src
   const [imageError, setImageError] = useState(false)
   const colorGradient = CATEGORY_COLORS[event.category] || CATEGORY_COLORS.concerts

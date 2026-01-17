@@ -12,6 +12,22 @@ interface ParallaxHeroProps {
   parallaxStrength?: number // 0-1, default 0.5 (50% slower scroll)
 }
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 /**
  * Hero image component with parallax scroll effect
  * Creates depth by moving the image slower than the page scroll
@@ -43,7 +59,7 @@ export function ParallaxHero({
   if (prefersReducedMotion) {
     return (
       <div ref={ref} className={`hero-image ${className}`}>
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <img src={getImageUrl(src)} alt={alt} className="w-full h-full object-cover" />
         {children}
       </div>
     )
@@ -56,7 +72,7 @@ export function ParallaxHero({
         className="w-full h-[120%] relative -top-[10%]" // Extra height for parallax room
       >
         <img
-          src={src}
+          src={getImageUrl(src)}
           alt={alt}
           className="w-full h-full object-cover"
         />

@@ -13,6 +13,22 @@ interface ImageCarouselProps {
   className?: string
 }
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
@@ -37,7 +53,7 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
     return (
       <div className={`relative ${isExpandedView ? '' : useFullHeight ? 'h-full' : 'aspect-[16/10]'} ${useRoundedCorners ? 'rounded-lg' : ''} overflow-hidden contain-layout ${className}`}>
         <img
-          src={images[0].src}
+          src={getImageUrl(images[0].src)}
           alt={images[0].alt}
           className={`${isExpandedView ? 'w-auto h-auto max-w-full max-h-full object-contain' : 'w-full h-full object-cover'}`}
         />
@@ -60,7 +76,7 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          src={images[currentIndex].src}
+          src={getImageUrl(images[currentIndex].src)}
           alt={images[currentIndex].alt}
           className={`${isExpandedView ? 'w-auto h-auto max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} transition-opacity duration-300`}
         />

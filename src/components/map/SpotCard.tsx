@@ -295,6 +295,22 @@ function MobileExpandedContent({ spot, hasMultipleLocations }: { spot: BestOfSpo
   )
 }
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 // Menu Dropdown Component
 function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; credit?: string } }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -333,7 +349,7 @@ function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; cr
           >
             <div className="p-4 bg-white">
               <img
-                src={menuImage.src}
+                src={getImageUrl(menuImage.src)}
                 alt={menuImage.alt}
                 className="w-full h-auto rounded-lg shadow-md"
               />

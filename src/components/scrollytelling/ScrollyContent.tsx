@@ -108,7 +108,12 @@ export function ScrollyContent({
         ref={(el) => { sectionRefs.current[-1] = el }}
       >
         <div className="max-w-4xl w-full mx-auto text-center space-y-6 px-8 py-14 bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-neutral-200">
-          {/* Accent bar at top */}
+          {/* Share button at top */}
+          <div className="flex justify-center mb-4">
+            <ShareLinks title={title} url={url} />
+          </div>
+
+          {/* Accent bar */}
           <div className="w-16 h-1 bg-accent-600 mx-auto rounded-full mb-2" />
           <h1 className="text-3xl md:text-5xl font-bold text-neutral-900 leading-tight">
             {title}
@@ -126,9 +131,23 @@ export function ScrollyContent({
             </div>
           )}
 
-          {/* Share button at bottom of intro */}
+          {/* Scroll down chevron indicator */}
           <div className="pt-6 border-t border-neutral-200 flex justify-center">
-            <ShareLinks title={title} url={url} />
+            <button
+              onClick={() => scrollToSection(0)}
+              className="flex flex-col items-center gap-2 text-neutral-600 hover:text-accent-600 transition-colors group"
+              aria-label="Scroll to first spot"
+            >
+              <span className="text-sm font-medium">Start exploring</span>
+              <svg
+                className="w-6 h-6 animate-bounce"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
           </div>
         </div>
       </ScrollySection>

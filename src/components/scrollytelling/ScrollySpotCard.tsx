@@ -108,10 +108,12 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
       )}
 
       <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 pb-2 sm:pb-6 md:pb-8">
-        {/* Vibe/Hook - Always visible */}
-        <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed sm:pl-16">
-          {spot.vibe}
-        </p>
+        {/* Vibe/Hook - Always visible, styled like The Order */}
+        <div className="border-l-4 border-[#c65d3b] pl-4 py-3 bg-[#c65d3b]/10 rounded-r-lg backdrop-blur-sm">
+          <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed">
+            {spot.vibe}
+          </p>
+        </div>
 
         {/* Details section - hidden on mobile unless expanded, always visible on desktop */}
         <div className={`space-y-5 ${isDetailsOpen ? 'block' : 'hidden'} sm:block`}>
@@ -242,6 +244,22 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
   )
 }
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 // Menu Dropdown Component
 function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; credit?: string } }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -272,7 +290,7 @@ function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; cr
       {isOpen && (
         <div className="p-4 bg-white border-t border-neutral-200 transition-all duration-300 ease-in-out">
           <img
-            src={menuImage.src}
+            src={getImageUrl(menuImage.src)}
             alt={menuImage.alt}
             className="w-full h-auto rounded-lg shadow-md"
           />

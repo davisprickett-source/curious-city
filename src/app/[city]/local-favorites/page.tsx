@@ -5,6 +5,22 @@ import { ShareLinks, ImageCarousel, Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { ClientMapThumbnail as DynamicMapThumbnail } from '@/components/ClientMapThumbnail'
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 interface PageProps {
   params: Promise<{ city: string }>
 }
@@ -52,7 +68,7 @@ export default async function CityLocalFavoritesPage({ params }: PageProps) {
           {city.slug === 'minneapolis' ? (
             <div className="relative h-[500px] md:h-[600px] border-b border-neutral-200">
               <img
-                src="/Minneapolis/local-favorites/local-favorites-banner.png"
+                src={getImageUrl("/Minneapolis/local-favorites/local-favorites-banner.png")}
                 alt="Minneapolis's Local Favorites"
                 className="absolute inset-0 w-full h-full object-cover"
               />

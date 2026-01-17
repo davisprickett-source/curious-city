@@ -8,6 +8,22 @@ import { EVENT_CATEGORIES } from '@/utils/eventCategoryUtils'
 import { getEventDisplayDate, getEventDisplayTime } from '@/utils/eventStatus'
 import { parseDate, isToday as checkIsToday, isTomorrow as checkIsTomorrow } from '@/utils/dateUtils'
 
+// Helper function to get R2 URL for images
+function getImageUrl(src: string): string {
+  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
+
+  if (!cdnUrl) {
+    return src // Fallback to local in development
+  }
+
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    return src // Already absolute URL
+  }
+
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
+  return `${cdnUrl}/${cleanSrc}`
+}
+
 // Category-specific placeholder images
 const CATEGORY_PLACEHOLDERS: Record<string, string> = {
   concerts: '/placeholders/concerts.jpg',
@@ -43,7 +59,8 @@ function FeaturedEventCard({
   const categoryMeta = EVENT_CATEGORIES[event.category]
   const displayDate = getEventDisplayDate(event)
   const displayTime = getEventDisplayTime(event)
-  const imageSrc = event.image?.src || CATEGORY_PLACEHOLDERS[event.category] || CATEGORY_PLACEHOLDERS.concerts
+  const rawImageSrc = event.image?.src || CATEGORY_PLACEHOLDERS[event.category] || CATEGORY_PLACEHOLDERS.concerts
+  const imageSrc = getImageUrl(rawImageSrc)
   const hasImage = !!event.image?.src
 
   return (

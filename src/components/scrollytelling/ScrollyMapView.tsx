@@ -5,7 +5,6 @@ import { BestOfSpot } from '@/types/content'
 import { ScrollyMap } from './ScrollyMap'
 import { ScrollyContent } from './ScrollyContent'
 import { type ExploreLink } from './ExploreCard'
-import { MapSidebarAd } from '@/components/ads/desktop/MapSidebarAd'
 import { StickyBottomAd } from '@/components/ads/mobile/StickyBottomAd'
 
 interface ScrollyMapViewProps {
@@ -60,12 +59,6 @@ export function ScrollyMapView({
           onMarkerClick={(index) => setScrollToIndex(index)}
         />
       </div>
-
-      {/* Desktop sidebar ad (visible on xl+ screens, positioned over map) */}
-      <MapSidebarAd
-        pageId={pageId}
-        targeting={{ city: cityName, category: markerType }}
-      />
 
       {/* Scrollable content (floats on top of map) */}
       <div className="relative z-10">
