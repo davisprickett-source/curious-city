@@ -125,20 +125,23 @@ function articleToSummary(article: Article): ArticleSummary {
  * Excludes history essays (those appear in their own section)
  */
 async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
-  // Get recent articles with images
+  // Get ALL articles first (no limit) - we need to filter before limiting
+  // because history essays get auto-dated to "now" and would dominate the top 20
   const allArticles = await getAllArticles({
-    limit: 20,
     sortBy: 'publishedAt',
     sortOrder: 'desc',
   })
 
-  // Filter to only articles with featured images, excluding history essays
-  const articlesWithImages = allArticles.filter(
+  // Filter to only non-history articles with featured images FIRST
+  const nonHistoryArticles = allArticles.filter(
     (article) => article.featuredImage?.src && article.category !== 'history'
   )
 
+  // Take the most recent 20 non-history articles
+  const recentNonHistory = nonHistoryArticles.slice(0, 20)
+
   // Convert to ArticleSummary format
-  const articleSummaries = articlesWithImages.map(articleToSummary)
+  const articleSummaries = recentNonHistory.map(articleToSummary)
 
   // Apply city diversity (max 2 per city)
   const diverseArticles = diversifyByCities(articleSummaries, 8)

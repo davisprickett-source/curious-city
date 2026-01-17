@@ -81,18 +81,18 @@ export default async function HomePage() {
           </HorizontalScrollSection>
         )}
 
-        {/* Dark History Section */}
-        {curatedContent.darkStories.length > 0 && (
+        {/* Curiosities Section */}
+        {curatedContent.curiosities.length > 0 && (
           <HorizontalScrollSection
-            title="Dark History"
-            eyebrow="Chilling Tales"
-            description="Unsolved mysteries, true crime, and the darker chapters of American history"
+            title="Local Curiosities"
+            eyebrow="Strange But True"
+            description="The weird, wonderful, and downright bizarre things that make each city unique"
             viewAllLink={{
-              href: '/category/dark-history',
-              text: 'View all dark history',
+              href: '/category/curiosities',
+              text: 'View all curiosities',
             }}
           >
-            {curatedContent.darkStories.map((page, index) => (
+            {curatedContent.curiosities.map((page, index) => (
               <LandingScrollCard
                 key={page.href}
                 data={page}
@@ -102,19 +102,19 @@ export default async function HomePage() {
           </HorizontalScrollSection>
         )}
 
-        {/* Curiosities Section */}
-        {curatedContent.curiosities.length > 0 && (
+        {/* Dark History Section */}
+        {curatedContent.darkStories.length > 0 && (
           <HorizontalScrollSection
-            title="Local Curiosities"
-            eyebrow="Strange But True"
-            description="The weird, wonderful, and downright bizarre things that make each city unique"
+            title="Dark History"
+            eyebrow="Chilling Tales"
+            description="Unsolved mysteries, true crime, and the darker chapters of American history"
             className="bg-neutral-50"
             viewAllLink={{
-              href: '/category/curiosities',
-              text: 'View all curiosities',
+              href: '/category/dark-history',
+              text: 'View all dark history',
             }}
           >
-            {curatedContent.curiosities.map((page, index) => (
+            {curatedContent.darkStories.map((page, index) => (
               <LandingScrollCard
                 key={page.href}
                 data={page}

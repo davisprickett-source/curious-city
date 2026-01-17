@@ -1,7 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { UniversalAd } from './UniversalAd'
 import { createAdSlot } from '@/lib/ads/slots'
 import type { AdSize } from '@/lib/ads/types'
@@ -15,24 +13,7 @@ interface NativeAdCardProps {
   className?: string
 }
 
-// Animation variants matching HiddenGemCard
-const getCardVariants = (index: number) => ({
-  hidden: {
-    opacity: 0,
-    y: 30,
-    x: index % 2 === 0 ? -60 : 60,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    x: 0,
-    transition: {
-      duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
-    },
-  },
-})
-
+// Scroll-optimized ad card - no Framer Motion to avoid scroll jank
 export function NativeAdCard({
   pageId,
   index,
@@ -41,21 +22,23 @@ export function NativeAdCard({
   size = 'rectangle',
   className = '',
 }: NativeAdCardProps) {
-  const { ref, inView } = useInView({
-    threshold: 0.3,
-    triggerOnce: true,
-  })
-
   const slot = createAdSlot(
     `${pageId}-native-${index}`,
     size,
     { ...targeting, format: 'native', position: `native-${index}` }
   )
 
+  // CSS containment for scroll performance
+  const containmentStyle = {
+    contain: 'layout style' as const,
+    contentVisibility: 'auto' as const,
+    containIntrinsicSize: '0 400px',
+  }
+
   if (variant === 'minimal') {
     // Simple inline ad with minimal styling
     return (
-      <div ref={ref} className={`py-6 ${className}`}>
+      <div className={`py-6 ${className}`} style={containmentStyle}>
         <div className="text-center mb-2">
           <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium">
             Sponsored
@@ -71,12 +54,9 @@ export function NativeAdCard({
   if (variant === 'compact') {
     // Compact card for tighter spaces
     return (
-      <motion.div
-        ref={ref}
-        variants={getCardVariants(index)}
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
+      <div
         className={`bg-gradient-to-br from-neutral-50 to-white rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 ${className}`}
+        style={containmentStyle}
       >
         <div className="p-6">
           <div className="flex items-center gap-2 mb-4">
@@ -89,22 +69,19 @@ export function NativeAdCard({
               Sponsored Pick
             </span>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center min-h-[200px] items-center">
             <UniversalAd slot={slot} />
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
-  // Default: listicle variant - matches HiddenGemCard styling
+  // Default: listicle variant - matches HiddenGemCard styling (no motion)
   return (
-    <motion.div
-      ref={ref}
-      variants={getCardVariants(index)}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
+    <div
       className={`group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 border-t-4 border-amber-400 ${className}`}
+      style={containmentStyle}
     >
       {/* Desktop: Side-by-side layout like HiddenGemCard */}
       <div className="flex flex-col lg:flex-row min-h-[300px] lg:min-h-[400px]">
@@ -133,17 +110,17 @@ export function NativeAdCard({
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-200 to-transparent" />
           </div>
 
-          <div className="flex justify-center items-center flex-1">
+          <div className="flex justify-center items-center flex-1 min-h-[200px]">
             <UniversalAd slot={slot} className="max-w-full" />
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
 // Simplified version for mobile/responsive use
-// No blocking animations - uses CSS-only fade to avoid scroll interference
+// Optimized for smooth scrolling - no animations, uses CSS containment
 export function NativeAdSection({
   pageId,
   index,
@@ -158,7 +135,12 @@ export function NativeAdSection({
 
   return (
     <div
-      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 animate-fade-in ${className}`}
+      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 ${className}`}
+      style={{
+        contain: 'layout style',
+        contentVisibility: 'auto',
+        containIntrinsicSize: '0 400px'
+      }}
     >
       <div className="max-w-2xl mx-auto">
         {/* Header */}
@@ -175,8 +157,8 @@ export function NativeAdSection({
           <div className="h-px w-12 bg-amber-300" />
         </div>
 
-        {/* Ad container */}
-        <div className="bg-white rounded-2xl shadow-md p-6 flex justify-center">
+        {/* Ad container - fixed min-height to prevent layout shift */}
+        <div className="bg-white rounded-2xl shadow-md p-6 flex justify-center min-h-[280px] items-center">
           <UniversalAd slot={slot} />
         </div>
 

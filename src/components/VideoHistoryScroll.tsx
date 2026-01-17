@@ -582,7 +582,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
                 transition={{ duration: 0.8 }}
                 className="mb-8"
               >
-                <div className="mb-4">
+                <div className="mb-4 flex justify-end">
                   <ShareButton title={history.title} />
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold leading-tight text-neutral-900 mb-2">
@@ -637,7 +637,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
               </div>
 
               {/* Share Options */}
-              <div className="mb-8 pb-8 border-b border-neutral-200">
+              <div className="mb-8 pb-8 border-b border-neutral-200 relative z-10">
                 <h4 className="font-bold text-neutral-900 mb-4">Share this story</h4>
                 <ShareButton title={history.title} />
               </div>
@@ -743,9 +743,10 @@ function RelatedStoryCards({ currentCity, currentSlug }: { currentCity: string; 
 
       // 2. Get 2 discover pages from SAME city
       try {
+        const currentArticleHref = `/${currentCity}/articles/${currentSlug}`
         const sameCityEntries = await getCityFeaturedEntries(currentCity)
         const discoverPages = sameCityEntries
-          .filter((entry) => !usedIds.has(entry.id))
+          .filter((entry) => !usedIds.has(entry.id) && entry.href !== currentArticleHref)
           .slice(0, 2)
 
         for (const entry of discoverPages) {
