@@ -4,6 +4,8 @@ import Script from 'next/script'
 import './globals.css'
 import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider'
 import { AdProvider } from '@/components/ads/AdProvider'
+import { SkipToContent } from '@/components/SkipToContent'
+import { CookieConsent } from '@/components/CookieConsent'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({
@@ -19,6 +21,7 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thecurious.city'),
   title: 'Curious City - Discover Hidden Gems, Dark History & Secret Stories',
   description: 'Explore the untold stories, hidden gems, dark history, and local secrets of cities across America. Your guide to the curious side of urban life.',
   keywords: ['city guides', 'hidden gems', 'dark history', 'local secrets', 'urban exploration', 'city stories', 'travel guides'],
@@ -152,13 +155,15 @@ export default function RootLayout({
           />
         )}
 
+        <SkipToContent />
         <AdProvider>
           <SmoothScrollProvider>
-            <div className="min-h-screen flex flex-col">
+            <div id="main-content" className="min-h-screen flex flex-col">
               {children}
             </div>
           </SmoothScrollProvider>
         </AdProvider>
+        <CookieConsent />
         <Analytics />
       </body>
     </html>

@@ -15,6 +15,17 @@
     overflow-x: hidden;
   }
 
+  /* Accessible focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-500;
+    outline-style: solid;
+  }
+
+  /* Remove default focus ring for mouse users, keep for keyboard */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
   body {
     font-family: var(--font-serif);
     font-size: 19px;
