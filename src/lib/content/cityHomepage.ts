@@ -8,7 +8,7 @@
  * - Article summaries
  */
 
-import { getCity } from '@/data/cities'
+import { getCity, getAllCities } from '@/data/cities'
 import { getHistoryForCity } from '@/data/history'
 import type {
   ContentItem,
@@ -194,7 +194,7 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
       title: targetEssay.title,
       teaser: targetEssay.subtitle || `A deep dive into ${city.name}'s fascinating past`,
       image: thumbnail ? { src: thumbnail, alt: targetEssay.title } : undefined,
-      href: `/${city.slug}/articles/${targetEssay.slug}`,
+      href: `/${city.slug}/articles/${essay.slug}`, // Use base slug, not premium
       featuredOrder: 0, // Articles always first
     })
   }
@@ -453,12 +453,12 @@ export async function getCityArticleSummaries(citySlug: string): Promise<Article
     }
 
     historyArticles.push({
-      slug: targetEssay.slug,
+      slug: essay.slug, // Use base slug, not premium
       citySlug: city.slug,
       title: targetEssay.title,
       teaser: targetEssay.subtitle || `A deep dive into ${city.name}'s fascinating past`,
       thumbnail,
-      href: `/${city.slug}/articles/${targetEssay.slug}`,
+      href: `/${city.slug}/articles/${essay.slug}`, // Use base slug, not premium
       publishedAt: targetEssay.publishedAt,
       source: 'history',
     })
@@ -511,16 +511,17 @@ const exploreTeasers: Record<string, string> = {
 
 /**
  * Get explore links for the bottom of establishment pages
- * Returns links to other categories (establishments + listicles) with thumbnails
+ * Returns exactly 8 links mixing current city content with other cities
  */
 export async function getExploreLinks(
   citySlug: string,
   cityName: string,
   excludeCategory?: string
 ): Promise<ExploreLink[]> {
+  const TARGET_COUNT = 8
   const links: ExploreLink[] = []
 
-  // Get establishment categories
+  // Get current city's content first
   const establishments = await getCityEstablishmentCategories(citySlug)
   for (const est of establishments) {
     if (est.category === excludeCategory) continue
@@ -529,7 +530,7 @@ export async function getExploreLinks(
     if (['bars', 'restaurants', 'coffee-shops'].includes(type)) {
       links.push({
         type,
-        title: `${cityName}'s ${est.title}`,
+        title: est.title,
         teaser: exploreTeasers[type] || est.title,
         thumbnail: est.thumbnail,
         href: est.href,
@@ -537,7 +538,7 @@ export async function getExploreLinks(
     }
   }
 
-  // Get listicle pages
+  // Get listicle pages from current city
   const listicles = await getCityListiclePages(citySlug)
   for (const page of listicles) {
     const typeMap: Record<string, ExploreLink['type']> = {
@@ -549,14 +550,81 @@ export async function getExploreLinks(
     const type = typeMap[page.type]
     if (!type || page.type === excludeCategory) continue
 
+    // Use clean title without city name prefix
+    const cleanTitle = page.title.replace(new RegExp(`^${cityName}'s\\s*`, 'i'), '')
     links.push({
       type,
-      title: `${cityName}'s ${page.title}`,
+      title: cleanTitle,
       teaser: exploreTeasers[type] || page.teaser,
       thumbnail: page.thumbnail,
       href: page.href,
     })
   }
 
-  return links
+  // If we have enough links from current city, return first 8
+  if (links.length >= TARGET_COUNT) {
+    return links.slice(0, TARGET_COUNT)
+  }
+
+  // Supplement with content from other cities
+  const allCities = await getAllCities()
+  const otherCities = allCities.filter(c => c.slug !== citySlug)
+
+  // Shuffle other cities for variety
+  const shuffledCities = otherCities.sort(() => Math.random() - 0.5)
+
+  for (const otherCity of shuffledCities) {
+    if (links.length >= TARGET_COUNT) break
+
+    // Get establishments from other city
+    const otherEstablishments = await getCityEstablishmentCategories(otherCity.slug)
+    for (const est of otherEstablishments) {
+      if (links.length >= TARGET_COUNT) break
+
+      const type = est.category as ExploreLink['type']
+      if (!['bars', 'restaurants', 'coffee-shops'].includes(type)) continue
+
+      // Skip if we already have this type from another city (avoid duplicates)
+      const existingHref = links.find(l => l.href === est.href)
+      if (existingHref) continue
+
+      links.push({
+        type,
+        title: `${otherCity.name} ${est.title}`,
+        teaser: exploreTeasers[type] || est.title,
+        thumbnail: est.thumbnail,
+        href: est.href,
+      })
+    }
+
+    // Get listicles from other city
+    const otherListicles = await getCityListiclePages(otherCity.slug)
+    for (const page of otherListicles) {
+      if (links.length >= TARGET_COUNT) break
+
+      const typeMap: Record<string, ExploreLink['type']> = {
+        'dark-history': 'dark-history',
+        curiosities: 'curiosities',
+        'hidden-gems': 'hidden-gems',
+        'lost-loved': 'lost-loved',
+      }
+      const type = typeMap[page.type]
+      if (!type) continue
+
+      // Skip if we already have this exact link
+      const existingHref = links.find(l => l.href === page.href)
+      if (existingHref) continue
+
+      const cleanTitle = page.title.replace(new RegExp(`^${otherCity.name}'s\\s*`, 'i'), '')
+      links.push({
+        type,
+        title: `${otherCity.name} ${cleanTitle}`,
+        teaser: exploreTeasers[type] || page.teaser,
+        thumbnail: page.thumbnail,
+        href: page.href,
+      })
+    }
+  }
+
+  return links.slice(0, TARGET_COUNT)
 }

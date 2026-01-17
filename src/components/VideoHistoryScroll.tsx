@@ -176,38 +176,39 @@ const FRAME_COUNTS: Record<string, number> = {
   'chicago-14': 78,
 }
 
-// Circular loading animation component
+// Circular loading animation component - centered in parent
 function CircularLoader({ progress }: { progress: number }) {
-  const radius = 16
+  const radius = 24
   const circumference = 2 * Math.PI * radius
   const strokeDashoffset = circumference - (progress / 100) * circumference
 
   return (
-    <div className="absolute top-4 left-4 z-50">
-      <svg width="44" height="44" className="transform -rotate-90">
+    <div className="flex flex-col items-center gap-3">
+      <svg width="64" height="64" className="transform -rotate-90">
         {/* Background circle */}
         <circle
-          cx="22"
-          cy="22"
+          cx="32"
+          cy="32"
           r={radius}
           fill="none"
           stroke="rgba(255,255,255,0.2)"
-          strokeWidth="3"
+          strokeWidth="4"
         />
         {/* Progress circle */}
         <circle
-          cx="22"
-          cy="22"
+          cx="32"
+          cy="32"
           r={radius}
           fill="none"
           stroke="#c65d3b"
-          strokeWidth="3"
+          strokeWidth="4"
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={strokeDashoffset}
           className="transition-all duration-300 ease-out"
         />
       </svg>
+      <span className="text-white/80 text-sm font-medium">Loading...</span>
     </div>
   )
 }
@@ -225,6 +226,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const imagesRef = useRef<Map<string, HTMLImageElement>>(new Map())
   const [cityName, setCityName] = useState('')
   const [firstFramePath, setFirstFramePath] = useState('')
+  const lastLoadedFrameRef = useRef<string>('') // Track last successfully displayed frame
 
   // Get city name
   useEffect(() => {
@@ -474,8 +476,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const isFrameLoaded = loadedFramesRef.current.has(framePath)
   const showLoadingOverlay = isLoading || (!isFrameLoaded && framePath !== '')
 
-  // Use first frame as fallback if current frame isn't loaded
-  const displayPath = isFrameLoaded ? framePath : (firstFramePath || framePath)
+  // Update last loaded frame ref when current frame is loaded
+  if (isFrameLoaded && framePath) {
+    lastLoadedFrameRef.current = framePath
+  }
+
+  // Use last loaded frame as fallback (stays on current position instead of jumping to start)
+  const displayPath = isFrameLoaded ? framePath : (lastLoadedFrameRef.current || firstFramePath || framePath)
 
   return (
     <>
@@ -538,7 +545,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       {/* Split Screen Section */}
       <div className="lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Fixed on all screens) */}
-        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:h-[calc(100vh-57px)] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
+        {/* Desktop: positioned within the visible window between letterbox bars (25vh-75vh) */}
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[25vh] lg:h-[50vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
           {/* Always show an image - use first frame as fallback */}
           <img
             src={displayPath}
@@ -550,9 +558,9 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
             }}
           />
 
-          {/* Loading overlay with circular progress */}
+          {/* Loading overlay with circular progress - centered */}
           {showLoadingOverlay && (
-            <div className="absolute inset-0 bg-neutral-900/60 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-neutral-900/60 transition-opacity duration-300 flex items-center justify-center">
               <CircularLoader progress={loadingProgress} />
             </div>
           )}
@@ -673,7 +681,7 @@ const cityHistoryEssays: Record<string, { title: string; subtitle: string; slug:
     { title: 'Weird and Proud', subtitle: 'The making of America\'s most iconoclastic city', slug: 'weird-and-proud', thumbnail: '/sequences/portland/portland-1/frame_0001.webp' }
   ],
   dallas: [
-    { title: 'Big D Energy', subtitle: 'Oil, ambition, and the city that thinks it can do anything', slug: 'big-d-energy', thumbnail: '/sequences/dallas/dallas-1/frame_0001.webp' }
+    { title: 'The Will to Exist', subtitle: 'No river, no harbor, no geographic excuse—just 180 years of deciding to matter anyway', slug: 'will-to-exist', thumbnail: '/sequences/dallas/dallas-1/frame_0001.webp' }
   ],
   'salt-lake-city': [
     { title: 'Zion in the Desert', subtitle: 'The improbable rise of a city built on faith', slug: 'zion-in-the-desert', thumbnail: '/sequences/salt-lake-city/slc-1/frame_0001.webp' }

@@ -598,14 +598,14 @@ export default function MobileHiddenGemsLayout({
             <div className="text-center space-y-12 mb-16">
               <div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                  Explore More {cityName}
+                  Explore More
                 </h2>
                 <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto">
-                  Discover more lists and guides curated by locals.
+                  Discover more curated guides and local favorites.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-8 w-full">
                 {exploreLinks.map((link) => (
                   <ExploreCard key={link.href} link={link} />
                 ))}

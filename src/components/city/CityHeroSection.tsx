@@ -4,22 +4,13 @@ import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import type { FeaturedEntry, FeaturedEntryType } from '@/lib/content/cityHomepage'
+import type { FeaturedEntry } from '@/lib/content/cityHomepage'
 import type { CityData } from '@/types/content'
 
 interface CityHeroSectionProps {
   city: CityData
   featuredEntries: FeaturedEntry[]
   autoPlayInterval?: number
-}
-
-// Type badge colors for the small indicator
-const typeColors: Record<FeaturedEntryType, string> = {
-  article: 'bg-blue-500',
-  curiosity: 'bg-purple-500',
-  'dark-history': 'bg-red-500',
-  'hidden-gem': 'bg-emerald-500',
-  'lost-and-loved': 'bg-orange-500',
 }
 
 // City hero banner images for intro slide
@@ -117,10 +108,9 @@ export function CityHeroSection({
           </motion.div>
         </AnimatePresence>
 
-        {/* Gradient overlay - nuanced with subtle accent tones */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-br from-accent-900/20 via-transparent to-purple-900/10" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-blue-900/10" />
+        {/* Gradient overlay - stronger for text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/40 via-transparent to-transparent" />
 
         {/* Content */}
         <div className="relative h-full container-page flex flex-col justify-start pt-8 sm:justify-end sm:pt-0 sm:pb-10 md:pb-14">
@@ -168,26 +158,18 @@ export function CityHeroSection({
                 transition={{ duration: 0.4 }}
               >
                 <Link href={currentEntry.href} className="group block">
-                  {/* Type indicator dot */}
-                  <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-3">
-                    <span className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full ${typeColors[currentEntry.type]}`} />
-                    <span className="text-xs sm:text-sm uppercase tracking-wider text-white/70">
-                      {currentEntry.type.replace('-', ' ')}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-accent-300 transition-colors max-w-4xl line-clamp-2">
+                  {/* Title - rust colored */}
+                  <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#c65d3b] mb-1.5 sm:mb-3 group-hover:text-[#a84d2f] transition-colors max-w-4xl line-clamp-2">
                     {currentEntry.title}
                   </h2>
 
                   {/* Teaser */}
-                  <p className="text-sm sm:text-lg md:text-xl text-white/80 max-w-3xl line-clamp-1 sm:line-clamp-2 mb-2 sm:mb-4">
+                  <p className="text-sm sm:text-lg md:text-xl text-white/90 max-w-3xl line-clamp-1 sm:line-clamp-2 mb-2 sm:mb-4">
                     {currentEntry.teaser}
                   </p>
 
-                  {/* Read more CTA */}
-                  <span className="inline-flex items-center text-sm sm:text-base md:text-lg font-semibold text-white group-hover:text-accent-300 transition-colors">
+                  {/* Read more CTA - rust colored */}
+                  <span className="inline-flex items-center text-sm sm:text-base md:text-lg font-semibold text-[#c65d3b] group-hover:text-[#a84d2f] transition-colors">
                     Read more
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1 sm:ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

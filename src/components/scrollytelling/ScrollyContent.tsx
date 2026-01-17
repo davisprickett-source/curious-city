@@ -238,23 +238,23 @@ export function ScrollyContent({
             <div className="text-center space-y-8">
               <div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl mb-4">
-                  Explore More {cityName}
+                  Explore More
                 </h2>
                 <p className="text-lg sm:text-xl md:text-2xl text-neutral-200 leading-relaxed drop-shadow-lg max-w-3xl mx-auto px-4">
-                  From hidden bars to historic curiosities, there&apos;s more to discover.
+                  Discover more curated guides and local favorites.
                 </p>
               </div>
 
               {/* Image-backed explore cards when available */}
               {exploreLinks.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 mt-8 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-8 w-full">
                   {exploreLinks.map((link) => (
                     <ExploreCard key={link.href} link={link} />
                   ))}
                 </div>
               ) : (
                 /* Fallback simple cards */
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 w-full">
                   {currentCategory !== 'bars' && (
                     <Link
                       href={`/${cityName.toLowerCase().replace(/\s+/g, '-')}/bars`}
