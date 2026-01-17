@@ -108,12 +108,10 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
       )}
 
       <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 pb-2 sm:pb-6 md:pb-8">
-        {/* Vibe/Hook - Always visible, styled like The Order */}
-        <div className="border-l-4 border-[#c65d3b] pl-4 py-3 bg-[#c65d3b]/10 rounded-r-lg backdrop-blur-sm">
-          <p className="text-base sm:text-lg text-neutral-800 italic leading-relaxed">
-            {spot.vibe}
-          </p>
-        </div>
+        {/* Vibe/Hook - Always visible, styled as a pullquote */}
+        <p className="text-lg sm:text-xl text-neutral-700 italic leading-relaxed">
+          &ldquo;{spot.vibe}&rdquo;
+        </p>
 
         {/* Details section - hidden on mobile unless expanded, always visible on desktop */}
         <div className={`space-y-5 ${isDetailsOpen ? 'block' : 'hidden'} sm:block`}>
@@ -129,9 +127,6 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
               <p className="text-neutral-900 font-medium">{spot.order}</p>
             </div>
           )}
-
-          {/* Menu Dropdown */}
-          {spot.menuImage && <MenuDropdown menuImage={spot.menuImage} />}
 
           {/* Why */}
           <p className="text-neutral-800 leading-relaxed text-base">
@@ -244,63 +239,3 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
   )
 }
 
-// Helper function to get R2 URL for images
-function getImageUrl(src: string): string {
-  const cdnUrl = process.env.NEXT_PUBLIC_SEQUENCES_CDN || ''
-
-  if (!cdnUrl) {
-    return src // Fallback to local in development
-  }
-
-  if (src.startsWith('http://') || src.startsWith('https://')) {
-    return src // Already absolute URL
-  }
-
-  const cleanSrc = src.startsWith('/') ? src.slice(1) : src
-  return `${cdnUrl}/${cleanSrc}`
-}
-
-// Menu Dropdown Component
-function MenuDropdown({ menuImage }: { menuImage: { src: string; alt: string; credit?: string } }) {
-  const [isOpen, setIsOpen] = useState(false)
-
-  return (
-    <div className="border border-neutral-200 rounded-lg overflow-hidden">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-4 py-3 bg-neutral-50 hover:bg-neutral-100 transition-colors"
-        aria-expanded={isOpen}
-      >
-        <div className="flex items-center gap-3">
-          <svg className="w-5 h-5 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-          <span className="text-base font-semibold text-neutral-900">View Menu</span>
-        </div>
-        <svg
-          className={`w-5 h-5 text-neutral-600 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      {isOpen && (
-        <div className="p-4 bg-white border-t border-neutral-200 transition-all duration-300 ease-in-out">
-          <img
-            src={getImageUrl(menuImage.src)}
-            alt={menuImage.alt}
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-          {menuImage.credit && (
-            <p className="text-xs text-neutral-500 mt-2 text-center">
-              Photo: {menuImage.credit}
-            </p>
-          )}
-        </div>
-      )}
-    </div>
-  )
-}

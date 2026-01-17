@@ -490,7 +490,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         </div>
 
         {/* Right Side: Text (Scrollable, 30% width on desktop, full width on mobile) */}
-        <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative will-change-transform" style={{ transform: 'translateZ(0)' }}>
+        {/* z-[55] ensures share dropdowns appear above fade overlays (z-50) */}
+        <div className="w-full lg:w-[30%] lg:ml-[70%] bg-white relative z-[55] will-change-transform" style={{ transform: 'translateZ(0)' }}>
           {/* Mobile spacer - push content below nav + fixed video + gradient overlay (add 6rem to clear gradient) */}
           <div className="lg:hidden" style={{ height: 'calc(57px + 30vh + 6rem)' }} />
 
@@ -546,11 +547,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
               </div>
             </div>
 
-            {/* Bottom spacing - minimal gap before footer */}
-            <div className="h-8" />
+            {/* Bottom spacing to allow last video to complete */}
+            <div className="h-[50vh]" />
+          </div>
 
-            {/* Footer - included in scroll measurement */}
-            <footer className="px-6 md:px-10 pt-6 pb-12 bg-white">
+          {/* Footer - OUTSIDE scroll measurement so video stops animating when article ends */}
+          {/* Extra bottom padding on desktop to push content above 25vh letterbox bar */}
+          <footer className="px-6 md:px-10 pt-6 pb-12 lg:pb-[30vh] bg-white">
               {/* Explore More Section */}
               <div className="mb-8 pb-8 border-b border-neutral-200">
                 <h3 className="text-xl font-bold text-neutral-900 mb-4">Explore More</h3>
@@ -571,7 +574,6 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
               {/* Feedback */}
               <FeedbackSection pageTitle={history.title} />
             </footer>
-          </div>
         </div>
       </div>
 

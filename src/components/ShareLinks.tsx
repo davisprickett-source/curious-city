@@ -13,6 +13,7 @@ export function ShareLinks({ title, url, variant = 'default', onDark = false }: 
   const [isOpen, setIsOpen] = useState(false)
   const [copied, setCopied] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const getShareUrl = () => {
     if (url) return url
@@ -42,6 +43,21 @@ export function ShareLinks({ title, url, variant = 'default', onDark = false }: 
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [isOpen])
+
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current)
+      closeTimeoutRef.current = null
+    }
+    setIsOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    // Delay closing to allow moving to menu
+    closeTimeoutRef.current = setTimeout(() => {
+      setIsOpen(false)
+    }, 300)
+  }
 
   const handleCopyLink = async () => {
     try {
@@ -104,7 +120,12 @@ export function ShareLinks({ title, url, variant = 'default', onDark = false }: 
   const iconSize = variant === 'banner' ? 'w-5 h-5' : 'w-4 h-4'
 
   return (
-    <div className="relative" ref={menuRef}>
+    <div
+      className="relative"
+      ref={menuRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center gap-2 ${buttonSize} ${buttonColors} rounded-full transition-colors font-medium`}
@@ -116,7 +137,11 @@ export function ShareLinks({ title, url, variant = 'default', onDark = false }: 
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50">
+        <div
+          className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-[70]"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           {shareLinks.map((link) => (
             <a
               key={link.name}

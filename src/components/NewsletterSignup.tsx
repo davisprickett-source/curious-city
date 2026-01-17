@@ -54,8 +54,8 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
   // Dark background variant (for hidden gems, etc.)
   if (variant === 'dark') {
     return (
-      <div className="border-t border-white/20 pt-8">
-        <h4 className="text-lg font-bold text-white mb-2">Stay curious</h4>
+      <div>
+        <h4 className="text-xl font-bold text-white mb-2">Stay curious</h4>
         <p className="text-sm text-neutral-300 mb-4">New stories and hidden gems delivered to your inbox.</p>
         {submitted ? (
           <p className="text-sm text-[#c65d3b] font-medium">You&apos;re in! Watch your inbox.</p>

@@ -84,6 +84,13 @@ export const iroquoisTheater: Article = {
           content: 'The Fire',
         },
         {
+          type: 'image',
+          src: '/chicago/articles/iroquois-fire.jpg',
+          alt: 'Flames consuming a building',
+          caption: 'The fire started on stage and spread instantly to the painted canvas backdrops.',
+          credit: 'Unsplash',
+        },
+        {
           type: 'paragraph',
           content: 'What happened next took perhaps fifteen minutes. In that time, 602 people died.',
         },
@@ -131,6 +138,13 @@ export const iroquoisTheater: Article = {
           content: 'I can close my eyes and see them now — mothers with babies in their arms, fighting to get through doors that wouldn\'t open. The screaming. The smoke. The flames coming at us. And then silence.',
           attribution: 'Survivor testimony',
           role: 'From the coroner\'s inquest, 1904',
+        },
+        {
+          type: 'image',
+          src: '/chicago/articles/iroquois-alley.jpg',
+          alt: 'Dark, narrow urban alleyway',
+          caption: '"Death Alley" behind the theater, where hundreds perished trying to escape via unfinished fire escapes.',
+          credit: 'Unsplash',
         },
         {
           type: 'heading',

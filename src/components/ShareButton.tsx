@@ -147,7 +147,7 @@ export function ShareButton({ title, url, anchor, shareText }: ShareButtonProps)
 
       {isOpen && (
         <div
-          className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-50"
+          className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 bg-white rounded-lg shadow-lg border border-neutral-200 py-2 z-[70]"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

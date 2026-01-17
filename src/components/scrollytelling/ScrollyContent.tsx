@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from 'react'
 import { BestOfSpot } from '@/types/content'
-import { ShareButton } from '@/components/ShareButton'
 import { NewsletterSignup } from '@/components'
 import { ShareLinks } from '@/components/ShareLinks'
 import Link from 'next/link'
@@ -135,12 +134,12 @@ export function ScrollyContent({
           <div className="pt-6 border-t border-neutral-200 flex justify-center">
             <button
               onClick={() => scrollToSection(0)}
-              className="flex flex-col items-center gap-2 text-neutral-600 hover:text-accent-600 transition-colors group"
+              className="flex flex-col items-center gap-2 text-[#c65d3b] hover:text-[#a54d30] transition-colors group"
               aria-label="Scroll to first spot"
             >
               <span className="text-sm font-medium">Start exploring</span>
               <svg
-                className="w-6 h-6 animate-bounce"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -208,26 +207,28 @@ export function ScrollyContent({
         </div>
       </ScrollySection>
 
-      {/* Outro Section - Final destination, cannot scroll past */}
+      {/* Outro Section - Final destination, fills remaining space */}
       <ScrollySection
         index={spots.length + 1} // Updated index
         onInView={onActiveIndexChange}
-        className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-start min-h-screen"
+        className="bg-gradient-to-br from-neutral-900 via-neutral-900/95 to-neutral-800/90 backdrop-blur-md snap-end"
         ref={(el) => { sectionRefs.current[spots.length + 1] = el }}
       >
-        <div className="w-full">
+        <div className="w-full min-h-screen flex flex-col justify-center">
           <div className="max-w-5xl w-full mx-auto space-y-12 px-4 sm:px-6 py-12">
-            {/* Share Button Section */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Share this guide</h3>
-              <div className="flex justify-center">
-                <ShareLinks title={title} url={url} />
+            {/* Share and Subscribe - Two columns on desktop */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Share Section */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+                <h3 className="text-xl font-bold text-white mb-4">Share this guide</h3>
+                <p className="text-sm text-neutral-300 mb-4">Know someone who&apos;d love these spots?</p>
+                <ShareLinks title={title} url={url} onDark />
               </div>
-            </div>
 
-            {/* Newsletter Signup Section */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
-              <NewsletterSignup />
+              {/* Newsletter Section */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+                <NewsletterSignup variant="dark" />
+              </div>
             </div>
 
             {/* Explore More Section */}

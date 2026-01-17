@@ -45,10 +45,10 @@ export const maxHeadroom: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Max_Headroom_Matt_Frewer.jpg/800px-Max_Headroom_Matt_Frewer.jpg',
-          alt: 'Matt Frewer as Max Headroom',
-          caption: 'Actor Matt Frewer as Max Headroom. The character\'s distinctive look and stuttering speech made him an icon of 1980s pop culture.',
-          credit: 'Wikimedia Commons',
+          src: '/chicago/articles/vintage-tv.jpg',
+          alt: 'Vintage television set',
+          caption: 'Max Headroom was an icon of 80s TV culture, appearing on screens everywhere.',
+          credit: 'Unsplash',
         },
         {
           type: 'paragraph',
@@ -92,10 +92,10 @@ export const maxHeadroom: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Microwave_dish_transmitter.jpg/1280px-Microwave_dish_transmitter.jpg',
+          src: '/chicago/articles/satellite-dish.jpg',
           alt: 'Microwave broadcast dish',
-          caption: 'A microwave dish transmitter, similar to the equipment likely used in the Max Headroom incident. Hijacking a broadcast signal required advanced technical knowledge and powerful, precisely aimed equipment.',
-          credit: 'Wikimedia Commons',
+          caption: 'A microwave dish transmitter, similar to the equipment likely used in the Max Headroom incident. Hijacking a broadcast signal required advanced technical knowledge.',
+          credit: 'Unsplash',
         },
         {
           type: 'paragraph',

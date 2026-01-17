@@ -85,6 +85,13 @@ export const eastlandDisaster: Article = {
           content: 'The entire catastrophe took less than two minutes.',
         },
         {
+          type: 'image',
+          src: '/chicago/articles/eastland-list.jpg',
+          alt: 'Ship listing heavily in dark water',
+          caption: 'The Eastland rolled over in seconds, trapping hundreds below decks.',
+          credit: 'Unsplash',
+        },
+        {
           type: 'callout',
           variant: 'warning',
           title: 'The Timeline',
@@ -116,6 +123,13 @@ export const eastlandDisaster: Article = {
         {
           type: 'paragraph',
           content: 'Bodies were carried to a makeshift morgue in the nearby 2nd Regiment Armory — the same building that is now Harpo Studios, where Oprah Winfrey filmed her show for 25 years. Row after row of covered forms on the wooden floor. Families wandering between them, looking for their dead.',
+        },
+        {
+          type: 'image',
+          src: '/chicago/articles/eastland-rescue.jpg',
+          alt: 'Vintage crowd gathered near water',
+          caption: 'Crowds gathered on the dock to watch the rescue efforts, helpless to save those trapped inside.',
+          credit: 'Unsplash',
         },
         {
           type: 'ad',
@@ -208,6 +222,13 @@ export const eastlandDisaster: Article = {
         {
           type: 'paragraph',
           content: 'In 2015, on the 100th anniversary, the city finally dedicated an official memorial: a small garden along the Riverwalk, with names inscribed on the railing. It\'s easy to miss. People do.',
+        },
+        {
+          type: 'image',
+          src: '/chicago/articles/eastland-memorial.jpg',
+          alt: 'Chicago Riverwalk railing and river',
+          caption: 'The subtle memorial on the Chicago Riverwalk where the disaster occurred.',
+          credit: 'Unsplash',
         },
         {
           type: 'divider',
