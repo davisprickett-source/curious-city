@@ -16,12 +16,12 @@ function extractFirstVideoFrame(blocks: History['blocks']): string | undefined {
   const videoPath = firstVideoBlock.videoPath
 
   // Handle sequences format: /sequences/phoenix/phoenix-1
-  // All sequences use underscore format: frame_0001.jpg
+  // All sequences use underscore format: frame_0001.webp (some also have .jpg)
   const sequenceMatch = videoPath.match(/\/sequences\/([^\/]+)\/([^\/]+)$/)
   if (sequenceMatch) {
     const city = sequenceMatch[1]
     const sequenceName = sequenceMatch[2]
-    return `/sequences/${city}/${sequenceName}/frame_0001.jpg`
+    return `/sequences/${city}/${sequenceName}/frame_0001.webp`
   }
 
   // Handle Tampa old format: /Tampa/history-video/tampa-1.mp4
@@ -29,7 +29,7 @@ function extractFirstVideoFrame(blocks: History['blocks']): string | undefined {
   if (tampaMatch) {
     const prefix = tampaMatch[1]
     const num = tampaMatch[2]
-    return `/sequences/tampa/${prefix}-${num}/frame_0001.jpg`
+    return `/sequences/tampa/${prefix}-${num}/frame_0001.webp`
   }
 
   return undefined

@@ -66,6 +66,7 @@ export async function getArticlesForCity(
 
 /**
  * Get a single article by city and slug
+ * If a base slug is requested but only a premium version exists, return the premium version
  */
 export async function getArticle(
   citySlug: string,
@@ -73,7 +74,18 @@ export async function getArticle(
 ): Promise<Article | null> {
   try {
     const articles = await getArticlesForCity(citySlug)
-    return articles.find((article) => article.slug === articleSlug) || null
+
+    // First try exact match
+    let article = articles.find((article) => article.slug === articleSlug)
+
+    // If not found and this isn't already a premium slug, try the premium version
+    // This handles the case where links use base slugs but we've filtered to only show premium
+    if (!article && !articleSlug.endsWith('-premium')) {
+      const premiumSlug = `${articleSlug}-premium`
+      article = articles.find((article) => article.slug === premiumSlug)
+    }
+
+    return article || null
   } catch (err) {
     console.error(`Failed to load article ${citySlug}/${articleSlug}:`, err)
     return null

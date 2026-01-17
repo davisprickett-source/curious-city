@@ -475,7 +475,7 @@ export const seattle: CityData = {
       id: 'sea-hidden-gems',
       type: 'section',
       title: 'The City Beneath',
-      intro: 'Seattle's real soul isn't found at the Space Needle or Pike Place. It's hidden in subterranean passages, secret gardens, and bookstores that feel like time machines.',
+      intro: "Seattle's real soul isn't found at the Space Needle or Pike Place. It's hidden in subterranean passages, secret gardens, and bookstores that feel like time machines.",
       items: [
         {
           id: 'hidden-gems-underground',

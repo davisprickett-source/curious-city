@@ -2614,8 +2614,8 @@ export const chicago: CityData = {
             }
           ],
           location: {
-            name: 'Near O\',
-      url: 'https://www.google.com/maps/search/?api=1&query=Near%20O%5C%20Chicago'Hare Airport, Des Plaines',
+            name: "Near O'Hare Airport, Des Plaines",
+            url: 'https://www.google.com/maps/search/?api=1&query=Near%20O%27Hare%20Airport%2C%20Des%20Plaines',
             coordinates: { lat: 42.0022, lng: -87.9384 },
             stillExists: true,
           },
@@ -2624,7 +2624,7 @@ export const chicago: CityData = {
           id: 'chi-dark-1',
           type: 'dark-history',
           category: 'unsolved',
-                    title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
+          title: 'The Tylenol Murders: Seven Dead, Zero Answers, and the End of Trust',
           body: 'In late September 1982, seven people in the Chicago area died after taking Extra-Strength Tylenol capsules laced with potassium cyanide. The victims—ranging from a 12-year-old girl to a 35-year-old postal worker—bought bottles from different stores across the suburbs, meaning someone was walking into pharmacies and placing poisoned pills on shelves like a twisted scavenger hunt. The murders sparked nationwide panic and an immediate recall of 31 million bottles. The case led to tamper-proof packaging, changed consumer product safety forever, and introduced America to the concept that someone might kill you for absolutely no reason other than the thrill of randomness. Despite one of the FBI\'s most intensive investigations and 40+ years of tips, no one has ever been charged. James Lewis, who sent an extortion letter, spent time in prison for that but was never connected to the murders. The killer is either dead or still out there, having gotten away with one of the most terrifying crimes in American history.',
           verdict: 'Unsolved. The case remains open. All victims died within 72 hours. The killer was never caught.',
           images: [

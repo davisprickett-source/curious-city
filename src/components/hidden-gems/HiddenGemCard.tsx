@@ -7,6 +7,7 @@ import { getCategoryStyle } from './MobileHiddenGemsLayout'
 import { ShareButton } from '@/components/ShareButton'
 import { SaveButton } from '@/components/SaveButton'
 import { ImageCarousel } from '../ImageCarousel'
+import { ExpandableCardContent } from '../ExpandableCardContent'
 
 interface HiddenGemItem {
   id: string
@@ -274,22 +275,10 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
         </div>
       )}
 
-      {/* Right Column - Content (65%) - Scrollable */}
+      {/* Right Column - Content (65%) */}
       <div className={`flex-1 flex flex-col min-h-0 ${!images.length ? 'lg:w-full' : ''}`}>
-        <div
-          className="flex-1 overflow-y-scroll p-8 lg:p-10 scroll-smooth card-scrollbar min-h-0"
-          onWheel={(e) => {
-            // Prevent scroll from bubbling to parent when scrolling within card
-            const element = e.currentTarget
-            const isAtTop = element.scrollTop === 0
-            const isAtBottom = element.scrollHeight - element.scrollTop === element.clientHeight
-
-            // Only prevent propagation if we're actively scrolling within bounds
-            if ((e.deltaY < 0 && !isAtTop) || (e.deltaY > 0 && !isAtBottom)) {
-              e.stopPropagation()
-            }
-          }}
-        >
+        <ExpandableCardContent className="flex-1">
+          <div className="p-8 lg:p-10">
           {/* Header - with animation */}
           <motion.div
             variants={titleVariants}
@@ -349,7 +338,8 @@ export function HiddenGemCard({ gem, index, onInView, url }: HiddenGemCardProps)
               url={`${url}#${gem.id}`}
             />
           </motion.div>
-        </div>
+          </div>
+        </ExpandableCardContent>
       </div>
 
       {/* Expanded Image Overlay with Carousel */}

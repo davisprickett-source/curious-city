@@ -855,8 +855,8 @@ export const minneapolis: CityData = {
             },
           ],
           location: {
-            name: 'Matt\',
-      url: 'https://www.google.com/maps/search/?api=1&query=Matt%5C%20Minneapolis's Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)',
+            name: "Matt's Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)",
+            url: 'https://www.google.com/maps/search/?api=1&query=Matt%27s%20Bar%203500%20Cedar%20Ave%20Minneapolis',
             stillExists: true,
           },
         },
@@ -2791,8 +2791,8 @@ export const minneapolis: CityData = {
             },
           ],
           location: {
-            name: 'Bassett\',
-      url: 'https://www.google.com/maps/search/?api=1&query=Bassett%5C%20Minneapolis's Creek (underground)',
+            name: "Bassett's Creek (underground)",
+            url: 'https://www.google.com/maps/search/?api=1&query=Bassett%27s%20Creek%20Minneapolis',
             coordinates: { lat: 44.9756, lng: -93.2891 },
             stillExists: false,
           },
