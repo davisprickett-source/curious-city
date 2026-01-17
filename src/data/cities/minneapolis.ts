@@ -1875,7 +1875,7 @@ export const minneapolis: CityData = {
       type: 'best-of',
       category: 'bars',
       title: 'Bars Worth Finding',
-      intro: 'Minneapolis drinks differently than most cities. The bar scene here isn\'t about bottle service or rooftop infinity pools — it\'s about neighborhood spots where the bartender knows your name, speakeasies you find by following a stranger down an alley, and breweries where the Mississippi River is the only backdrop that matters. These are the places where Minneapolis unwinds.',
+      intro: 'Minneapolis drinks with purpose and a touch of secrecy. The bar scene here prizes discovery over flash: speakeasies hidden in basements behind arcade bars, Art Deco penthouses on the 27th floor of historic towers where robber barons once lived, basement meaderies that feel like secret societies, and breweries along the Mississippi that have been brewing longer than most cities have existed. You\'ll find cocktail programs where the bartender remembers your preferences after one visit, neighborhood dives with jukeboxes curated by decades of good taste, and craft breweries that helped define what "local beer culture" means in America. The drinking culture operates with Minnesota sensibility: serious craft without pretense, spaces that earn your loyalty rather than demand it, and a genuine friendliness that makes solo bar-going actually enjoyable. From $4 tallboys to $15 dealer\'s-choice cocktails, these are the places where Minneapolis unwinds.',
       spots: [
         {
           name: 'Volstead\'s Emporium',
@@ -2212,14 +2212,14 @@ export const minneapolis: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Caffeine & Winter Shelter',
-      intro: 'Minneapolis takes its coffee seriously. Before "third wave" was a marketing term, local roasters were building something real — worker-owned collectives, roasting operations that span decades, and spaces that feel like extensions of the neighborhoods they serve. These aren\'t just places to get caffeinated. They\'re where the city thinks, works, and lingers.',
+      intro: 'Minneapolis was crafting serious coffee before "third wave" became a lifestyle brand. The city\'s roasters have been building something genuine for decades: worker-owned collectives where the baristas actually own the business, roasting operations in 1926 brownstones with rotating local art, plant-filled North Loop spaces that look like botanical gardens, and tiny Northeast cafes where regulars know each other\'s names. When winter temperatures drop below zero for weeks straight, coffee shops transform into community centers—spaces where the city thinks, works, writes, and lingers over a second (or fourth) cup. You\'ll find roasters who\'ve been perfecting their craft since 2000, cold press methods that convert skeptics, and single-origin pour-overs prepared with the kind of care usually reserved for fine dining. From worker co-ops to photogenic flora paradises, these are the cafes that prove Minneapolis takes coffee as seriously as it takes surviving winter.',
       spots: [
         {
           name: 'Spyhouse Coffee',
           neighborhood: 'Whittier',
           vibe: 'The original. Since 2000. Housed in a 1926 brownstone with tons of space, mid-century decor, and rotating local art.',
           order: 'The Orion blend as a pour-over. Or trust whatever single-origin they\'re featuring.',
-          why: 'Before there was "third wave" in Minneapolis, there was Spyhouse. The Whittier location is where it all started — quirky nooks, ambient lighting, and the best energy of all their spots. Their roasting operation is serious — this isn\'t coffee as aesthetic, it\'s coffee as craft.',
+          why: 'Spyhouse opened in 2000 in this Whittier brownstone, back when "third wave coffee" was still called "places where they actually care about the beans." Twenty-five years later, they\'ve expanded to seven Twin Cities locations, but the original maintains something the newer spots can\'t quite replicate: history. The mid-century furniture has developed a patina of laptop sessions and first dates. The rotating art on the walls comes from actual local artists, not corporate curation. The nooks and crannies create natural separation—you can have a conversation at one table while someone writes their novel three feet away. The roasting operation treats coffee with the seriousness it deserves: direct relationships with farmers, careful sourcing, precision roasting. They were sourcing single-origin Ethiopian before it was a menu staple everywhere. This isn\'t coffee as lifestyle aesthetic—it\'s coffee as craft, served in a space that\'s genuinely lived-in.',
           address: '2451 Nicollet Ave, Minneapolis, MN 55404',
           coordinates: { lat: 44.9595, lng: -93.2780 },
           hours: '7am-6pm daily',
@@ -2241,7 +2241,7 @@ export const minneapolis: CityData = {
           neighborhood: 'Northeast',
           vibe: 'One of the oldest third-wave roasters in town. Serious about sourcing, unpretentious about everything else.',
           order: 'Espresso, straight. Their beans are built for it.',
-          why: 'Dogwood has been quietly roasting exceptional coffee since before it was a lifestyle brand. There are no gimmicks here—no neon signs, no influencer bait—just high-altitude beans and a roasting headquarters that treats flavor with scientific precision. It is the thinking person\'s caffeine source.',
+          why: 'Dogwood has been one of Minneapolis\'s most serious roasters since 2007, back when "single-origin" wasn\'t yet printed on every menu. Their Northeast location doubles as roasting headquarters, which means the beans you\'re drinking were likely roasted within the last week—sometimes within the last few days. The sourcing is meticulous: high-altitude farms, direct relationships, varietals chosen for clarity of flavor rather than trendy marketing. The space itself is refreshingly unpretentious. No Instagram bait. No millennial pink walls. Just excellent espresso pulled by people who can explain why water temperature matters and actually care that you understand. The baristas will happily geek out about coffee if you ask, but they\'re equally happy to make your latte and let you work. This is coffee for people who care about what\'s in the cup more than what the cup looks like in photos.',
           address: '1209 Tyler St NE, Minneapolis, MN 55413',
           coordinates: { lat: 44.9951, lng: -93.2551 },
           hours: '7am-7pm Mon-Fri, 8am-6pm Sat-Sun',
@@ -2357,7 +2357,7 @@ export const minneapolis: CityData = {
           neighborhood: 'Nokomis / Powderhorn',
           vibe: 'All coffee roasted in-house. Blends named after Minnesota landmarks. Quiet and productive.',
           order: 'The "Boundary Waters" blend. Fitting.',
-          why: 'If you want to actually get work done, this is the spot. Near Lake Nokomis, away from the trendy neighborhoods, with coffee that takes its Minnesota identity seriously — blends like "Cabin Vibes" and "Evergreen" that actually taste like they sound. Regulars are real neighbors, not laptop nomads.',
+          why: 'Northern Coffeeworks sits in the Powderhorn-Nokomis area, far from the Instagram crowds of Uptown and the hustle of Northeast. This is a neighborhood coffee shop in the truest sense: the regulars actually live within walking distance, conversations happen between tables, and people come here to work without performing productivity. The coffee program is serious—all beans roasted in-house, with blends named after Minnesota landscapes that genuinely taste like their names suggest. "Boundary Waters" has the kind of clean, crisp brightness you\'d want on a canoe trip. "Cabin Vibes" is cozy and approachable. The space is comfortable without trying too hard: plenty of seating, good natural light, and an atmosphere that encourages you to settle in for a few hours without guilt. This is where you go when you need to actually finish something, not when you need to be seen finishing something.',
           address: '4208 28th Ave S, Minneapolis, MN 55406',
           coordinates: { lat: 44.9332, lng: -93.2305 },
           hours: '7am-4pm daily',
