@@ -122,6 +122,7 @@ function articleToSummary(article: Article): ArticleSummary {
 /**
  * Curate featured articles for the landing page
  * Returns 8 diverse articles from across all cities
+ * Excludes history essays (those appear in their own section)
  */
 async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
   // Get recent articles with images
@@ -131,9 +132,9 @@ async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
     sortOrder: 'desc',
   })
 
-  // Filter to only articles with featured images
+  // Filter to only articles with featured images, excluding history essays
   const articlesWithImages = allArticles.filter(
-    (article) => article.featuredImage?.src
+    (article) => article.featuredImage?.src && article.category !== 'history'
   )
 
   // Convert to ArticleSummary format
@@ -316,12 +317,11 @@ export async function curateLandingPageContent(): Promise<CuratedLandingContent>
   // Get featured articles
   const featuredArticles = await curateFeaturedArticles()
 
-  // History Essays: 4 diverse history essays
+  // History Essays: All history essays for horizontal scrolling
   const historyEssays = diversifyByCities(
     cardsWithThumbnails
-      .filter((c) => c.pageType === 'history')
-      .slice(0, 16),
-    4
+      .filter((c) => c.pageType === 'history'),
+    16
   )
 
   // Hero Slides: Best essays + specific requested entries

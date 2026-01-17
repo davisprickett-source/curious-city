@@ -4,7 +4,6 @@ import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { SubsectionCard } from '@/components/SubsectionCard'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
-import { NativeAdSection } from '@/components/ads/NativeAdCard'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { BreadcrumbSchema } from '@/components/StructuredData'
@@ -57,9 +56,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const restaurantSpot = getFirstSpotWithImage(restaurantsList)
   const coffeeSpot = getFirstSpotWithImage(coffeeList)
 
-  // Create page ID for ad targeting
-  const pageId = `${slug}-guide`
-
   // Only establishment categories - listicles (hidden gems, local favorites, lost & loved) are in Discover
   const guideCategories = [
     {
@@ -106,7 +102,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <div className="city-page-wrapper">
         {/* Desktop Sidebar Ads (visible on 1400px+ screens) */}
         <DualSidebarAds
-          pageId={pageId}
+          pageId={`${slug}-guide`}
           targeting={{ city: city.name, category: 'guide' }}
           stickyTop={80}
         />
@@ -116,12 +112,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
           <div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
             <div className="container-page py-12 md:py-16">
               <div className="max-w-4xl">
-                <div className="eyebrow text-accent-400 mb-3">Essential Guide</div>
+                <div className="eyebrow text-accent-400 mb-3">Best of {city.name}</div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                  Guide
+                  Where to Eat & Drink
                 </h1>
                 <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
-                  The essential guide to eating and drinking in {city.name}. Curated lists of the best bars, restaurants, and coffee shops—all vetted by locals.
+                  The best bars, restaurants, and coffee shops in {city.name}.
                 </p>
               </div>
             </div>
@@ -141,33 +137,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   fallbackGradient={category.fallbackGradient}
                 />
               ))}
-            </div>
-          </div>
-
-          {/* Native Ad Section */}
-          <NativeAdSection
-            pageId={pageId}
-            index={0}
-            targeting={{ city: city.name, category: 'guide' }}
-          />
-
-          {/* How We Curate */}
-          <div className="bg-neutral-50 py-16">
-            <div className="container-page">
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-                  Locally Curated, Carefully Selected
-                </h2>
-                <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                  Every spot in this guide has been personally visited and vetted. We don&apos;t accept
-                  payments for inclusion—these are genuine recommendations from people who live,
-                  work, and explore {city.name} every day.
-                </p>
-                <p className="text-neutral-600">
-                  Whether you're a longtime resident looking for something new or a visitor wanting
-                  to skip the tourist traps, this guide will point you in the right direction.
-                </p>
-              </div>
             </div>
           </div>
         </main>
