@@ -183,33 +183,30 @@ function CircularLoader({ progress }: { progress: number }) {
   const strokeDashoffset = circumference - (progress / 100) * circumference
 
   return (
-    <div className="flex flex-col items-center gap-3">
-      <svg width="64" height="64" className="transform -rotate-90">
-        {/* Background circle */}
-        <circle
-          cx="32"
-          cy="32"
-          r={radius}
-          fill="none"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="4"
-        />
-        {/* Progress circle */}
-        <circle
-          cx="32"
-          cy="32"
-          r={radius}
-          fill="none"
-          stroke="#c65d3b"
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          className="transition-all duration-300 ease-out"
-        />
-      </svg>
-      <span className="text-white/80 text-sm font-medium">Loading...</span>
-    </div>
+    <svg width="64" height="64" className="transform -rotate-90">
+      {/* Background circle */}
+      <circle
+        cx="32"
+        cy="32"
+        r={radius}
+        fill="none"
+        stroke="rgba(255,255,255,0.2)"
+        strokeWidth="4"
+      />
+      {/* Progress circle */}
+      <circle
+        cx="32"
+        cy="32"
+        r={radius}
+        fill="none"
+        stroke="#c65d3b"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeDasharray={circumference}
+        strokeDashoffset={strokeDashoffset}
+        className="transition-all duration-300 ease-out"
+      />
+    </svg>
   )
 }
 
@@ -545,13 +542,13 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       {/* Split Screen Section */}
       <div className="lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Fixed on all screens) */}
-        {/* Desktop: positioned within the visible window between letterbox bars (25vh-75vh) */}
-        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[25vh] lg:h-[50vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
-          {/* Always show an image - use first frame as fallback */}
+        {/* Desktop: extends beyond letterbox bars (20vh-80vh = 60vh tall), bars crop the edges */}
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[20vh] lg:h-[60vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
+          {/* Always show an image - use object-cover to fill without black bars */}
           <img
             src={displayPath}
             alt=""
-            className="w-full h-full object-cover lg:object-contain will-change-transform"
+            className="w-full h-full object-cover will-change-transform"
             style={{
               opacity: frameOpacity,
               transform: 'translateZ(0)', // Force GPU layer for smoother rendering
@@ -790,11 +787,6 @@ function RelatedStoryCards({ currentCity, currentSlug }: { currentCity: string; 
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-            <div className="absolute top-3 left-3">
-              <span className="inline-block px-2.5 py-1 bg-accent-600 text-white text-xs font-bold uppercase tracking-wider rounded">
-                {item.badge}
-              </span>
-            </div>
           </div>
           <div className="p-5">
             {item.cityName && (
