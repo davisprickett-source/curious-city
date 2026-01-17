@@ -108,8 +108,8 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
       )}
 
       <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 pb-2 sm:pb-6 md:pb-8">
-        {/* Vibe/Hook - Always visible, styled as a pullquote */}
-        <p className="text-lg sm:text-xl text-neutral-700 italic leading-relaxed">
+        {/* Vibe/Hook - Always visible, styled as a pullquote in rust */}
+        <p className="text-lg sm:text-xl text-accent-600 italic leading-relaxed font-medium">
           &ldquo;{spot.vibe}&rdquo;
         </p>
 

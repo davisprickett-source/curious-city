@@ -372,75 +372,6 @@ export const colorado_springs: CityData = {
             stillExists: true,
           },
         },
-        {
-          id: 'cos-curiosity-13',
-          type: 'curiosity',
-          category: 'science',
-          title: 'Olympic athletes train here to suffer better',
-          body: 'The U.S. Olympic & Paralympic Training Center chose Colorado Springs specifically for its 6,035-foot elevation. The thin air means less oxygen, which forces your body to produce more red blood cells to compensate. When athletes compete at lower elevations, their oxygen-rich blood gives them an edge. It\'s legal doping via geography. The 35-acre complex has produced hundreds of Olympic medalists who all willingly came here to make breathing harder.',
-          images: [
-            {
-              src: '/colorado-springs/curiosities/olympics.png',
-              alt: 'Olympic training facility in Colorado Springs',
-            }
-          ],
-          source: 'United States Olympic Committee',
-        },
-        {
-          id: 'cos-curiosity-7',
-          type: 'curiosity',
-          category: 'architecture',
-          title: 'The cog railway got a $100 million do-over',
-          body: 'The Pikes Peak Cog Railway, originally constructed in 1891 by Zalmon Simmons (yes, of mattress fame), was the highest cog railway in the world for decades. By 2017, the century-old infrastructure was beyond repair—it needed a complete rebuild. The railway closed for four years and underwent a $100 million transformation. Every tie, rail, and switch was replaced. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that actually work at 14,000 feet. The summit visitor center was redesigned with floor-to-ceiling windows framing the view that inspired "America the Beautiful." When it reopened in May 2021, it was essentially a brand-new railway on a historic route, climbing 7,500 vertical feet over 8.9 miles with grades up to 24%. The round-trip takes about 3 hours and costs more than your gym membership.',
-          images: [
-            {
-              src: '/colorado-springs/curiosities/cog.png',
-              alt: 'Pikes Peak Cog Railway train with panoramic windows',
-            }
-          ],
-          sources: [
-            {
-              title: 'Pikes Peak Cog Railway Official Site',
-              url: 'https://www.cograilway.com/',
-            },
-            {
-              title: 'Railway Age: Pikes Peak Cog Railway Reopens After $100M Rebuild',
-              url: 'https://www.railwayage.com/passenger/pikes-peak-cog-railway-returns/',
-            }
-          ],
-          location: {
-            name: 'Manitou Springs to Pikes Peak summit',
-      url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Springs%20to%20Pikes%20Peak%20summit%20Colorado%20Springs',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'cos-curiosity-8',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'They call it the "Evangelical Vatican"',
-          body: 'Focus on the Family\'s 81-acre campus employs about 700 people. Combined with New Life Church, The Navigators, Young Life headquarters, and dozens of other evangelical Christian organizations, Colorado Springs houses more religious ministries than perhaps any other American city. This concentration of evangelical power has earned it the nickname "Evangelical Vatican." Local politics reflect this reality: the city often votes dramatically differently from Denver, just 70 miles north. The influence is impossible to miss.',
-          images: [
-            {
-              src: '/colorado-springs/curiosities/evangelical.png',
-              alt: 'Focus on the Family campus in Colorado Springs',
-            },
-          ],
-          source: 'Pew Research Center',
-        },
-        {
-          id: 'cos-curiosity-12',
-          type: 'curiosity',
-          category: 'architecture',
-          title: 'The city founder rebuilt his castle twice',
-          body: 'William Jackson Palmer, Colorado Springs\' founder, built his wife a home in 1871, then kept expanding it into a 67-room Tudor-style castle until his death in 1909. He rebuilt it twice—once after a fire, once because his wife requested changes. The man founded an entire city but couldn\'t say no to home renovations. Today it\'s owned by The Navigators, a Christian organization. Visitors can tour the castle or stay overnight in rooms where Palmer probably argued about crown molding.',
-          source: 'Glen Eyrie Castle',
-          location: {
-            name: 'Glen Eyrie',
-      url: 'https://www.google.com/maps/search/?api=1&query=Glen%20Eyrie%20Colorado%20Springs',
-            stillExists: true,
-          },
-        }
       ],
     },
     {
@@ -577,7 +508,7 @@ export const colorado_springs: CityData = {
       title: 'Hidden Colorado Springs',
       teaser: 'Haunted railroad tunnels, Cold War relics, and a vagabond artist\'s miniature city',
       intro:
-        'These aren\'t in the guidebooks. Abandoned Cold War relics, collapsed railroad tunnels haunted by ghostly miners, tuberculosis huts scattered as garden sheds, underground speakeasies, and a 3,000-square-foot miniature city built by a vagabond artist. Colorado Springs\' obscure history runs deep.',
+        'Abandoned Cold War relics, collapsed railroad tunnels haunted by ghostly miners, tuberculosis huts repurposed as garden sheds, and a 3,000-square-foot miniature city built by a vagabond artist. Colorado Springs\' obscure history runs deep—if you know where to look.',
       items: [
         {
           id: 'gem-gold-camp-tunnels',
@@ -849,6 +780,106 @@ export const colorado_springs: CityData = {
           price: 'Free entry, games 1¢-25¢',
           website: 'https://manitouspringsarcade.com/',
           tip: 'Bring rolls of pennies and quarters — you\'ll want to play everything.',
+        },
+        {
+          id: 'gem-cog-railway',
+          type: 'hidden-gem',
+          name: 'Pikes Peak Cog Railway',
+          category: 'Historic Railway',
+          description:
+            'The highest cog railway in the world, originally constructed in 1891 by Zalmon Simmons (yes, of mattress fame). By 2017, the century-old infrastructure was beyond repair. The railway closed for four years and underwent a $100 million transformation—every tie, rail, and switch replaced. The new Swiss-made trains feature panoramic windows, onboard restrooms, and heating systems that actually work at 14,000 feet. Climbs 7,500 vertical feet over 8.9 miles with grades up to 24%.',
+          images: [
+            { src: '/colorado-springs/curiosities/cog.png', alt: 'Pikes Peak Cog Railway train with panoramic windows' },
+          ],
+          address: '515 Ruxton Ave, Manitou Springs, CO 80829',
+          coordinates: { lat: 38.8535, lng: -104.9402 },
+          hours: 'Daily, seasonal schedules vary',
+          price: '$58-68 adults',
+          website: 'https://www.cograilway.com/',
+          tip: 'Book well in advance — summer and fall colors sell out fast.',
+        },
+        {
+          id: 'gem-old-colorado-city-tunnels',
+          type: 'hidden-gem',
+          name: 'Old Colorado City Underground Tunnels',
+          category: 'Historic Mystery',
+          description:
+            'Cave-like tunnels beneath Old Colorado City (established 1859) originally served as security passages during pioneer conflicts, then evolved into a network connecting 28+ saloons and brothels during the 1890s. Four tunnel locations are confirmed by the city, but many more are suspected to remain sealed beneath streets and buildings. Some basements in Old Colorado City still show bricked-up tunnel entrances. The tunnels represent authentic frontier history and Prohibition-era intrigue hiding in plain sight.',
+          images: [
+            { src: '/colorado-springs/hidden-gems/occ-tunnels-1.png', alt: 'Old Colorado City historic district' },
+          ],
+          address: 'Old Colorado City, W Colorado Ave corridor',
+          coordinates: { lat: 38.8385, lng: -104.8621 },
+          hours: 'Not publicly accessible (view from street level)',
+          price: 'Free',
+          tip: 'Walk along W Colorado Ave and imagine what lies beneath — some local businesses know tunnel stories.',
+        },
+        {
+          id: 'gem-money-museum',
+          type: 'hidden-gem',
+          name: 'Edward C. Rochette Money Museum',
+          category: 'Unusual Museum',
+          description:
+            'America\'s largest museum dedicated to numismatics, housing multi-million dollar rarities including a 1943 copper Lincoln cent valued at over $1 million, two of the five known 1913 Liberty Head nickels, and an 1804 silver dollar. The "Mini Mint" exhibit showcases historical coin-making machinery from the 1500s-1800s that produced 30 coins per minute. Three galleries explore currency from ancient civilizations to modern money. Most visitors have no idea this world-class collection exists in Colorado Springs.',
+          images: [
+            { src: '/colorado-springs/hidden-gems/money-museum-1.png', alt: 'Rare coin display at Money Museum' },
+          ],
+          address: '818 N Cascade Ave, Colorado Springs, CO 80903',
+          coordinates: { lat: 38.8469, lng: -104.8217 },
+          hours: 'Tue-Sat 10:30am-5pm',
+          price: '$8 adults, $6 seniors/military, free for children under 12',
+          website: 'https://www.money.org/money-museum/',
+          tip: 'Ask about the "Saddle Ridge Hoard" — 1,400 gold coins worth $10 million found buried in California.',
+        },
+        {
+          id: 'gem-mining-museum',
+          type: 'hidden-gem',
+          name: 'Western Museum of Mining & Industry',
+          category: 'Industrial History',
+          description:
+            'Twenty-seven acres with 5,000+ artifacts in a 12,200-square-foot exhibit hall dedicated to western mining heritage. Working steam engines from the 1895-1920s still run on demonstration days. Features gold panning areas, a model mining shaft, the largest collection of fluorescent minerals in the region, and a yellow-cake processing exhibit from the uranium era. The outdoor machinery yard has stamp mills, hoists, and ore cars rusting authentically in the mountain air.',
+          images: [
+            { src: '/colorado-springs/hidden-gems/mining-museum-1.png', alt: 'Historic mining equipment' },
+          ],
+          address: '225 North Gate Blvd, Colorado Springs, CO 80921',
+          coordinates: { lat: 38.9847, lng: -104.8189 },
+          hours: 'Mon-Sat 9am-4pm',
+          price: '$12 adults, $10 seniors/military, $8 children',
+          website: 'https://wmmi.org/',
+          tip: 'Visit on "Steam-Up Days" to see the antique engines running.',
+        },
+        {
+          id: 'gem-fire-museum',
+          type: 'hidden-gem',
+          name: 'Dr. Lester L. Williams Fire Museum',
+          category: 'Free Museum',
+          description:
+            'Housed in the Fire Operations Center, this free museum showcases antique fire carriages, hand-pulled pumpers, horse-drawn steamers, and early motorized engines dating back to the 1800s. The collection tells the story of Colorado Springs firefighting heritage with remarkable artifacts including leather fire buckets, brass nozzles, and historic photographs. Zero tourist crowds and completely free admission make this one of the city\'s most overlooked gems.',
+          images: [
+            { src: '/colorado-springs/hidden-gems/fire-museum-1.png', alt: 'Antique fire engine display' },
+          ],
+          address: '375 Printers Pkwy, Colorado Springs, CO 80910',
+          coordinates: { lat: 38.7989, lng: -104.7567 },
+          hours: 'Mon-Fri 8am-5pm',
+          price: 'Free',
+          tip: 'Call ahead to confirm hours — it operates out of an active fire facility.',
+        },
+        {
+          id: 'gem-penrose-heritage',
+          type: 'hidden-gem',
+          name: 'Penrose Heritage Museum',
+          category: 'Automotive History',
+          description:
+            'Overshadowed by The Broadmoor Hotel next door, this free museum showcases 30 historic carriages and 15 competition race cars from the Pikes Peak International Hill Climb—the second-oldest motorsport event in the United States, running since 1916. The personal legacy of Spencer and Julie Penrose comes alive through photographs, trophies, and the vehicles that conquered "America\'s Mountain." Self-guided tours take about two hours and reveal remarkable automotive and regional history.',
+          images: [
+            { src: '/colorado-springs/hidden-gems/penrose-heritage-1.png', alt: 'Historic race car at Penrose Museum' },
+          ],
+          address: '11 Lake Cir, Colorado Springs, CO 80906',
+          coordinates: { lat: 38.7912, lng: -104.8512 },
+          hours: 'Mon-Sat 9am-5pm, Sun 1pm-5pm',
+          price: 'Free',
+          website: 'https://www.penroseheritagemuseum.org/',
+          tip: 'The Pikes Peak Hill Climb race cars are the highlight — some still have mountain mud on them.',
         }
       ],
     },
@@ -929,6 +960,83 @@ export const colorado_springs: CityData = {
             { src: '/colorado-springs/bars/phantom-2.png', alt: 'Phantom Canyon brewing equipment' },
             { src: '/colorado-springs/bars/phantom-3.png', alt: 'Exposed brick and tin ceilings' },
             { src: '/colorado-springs/bars/phantom-4.png', alt: 'Phantom Canyon bar' },
+          ],
+        },
+        {
+          name: 'The Archives',
+          neighborhood: 'Downtown',
+          vibe: 'Hidden speakeasy with zero signage—you have to know it exists. Located downstairs inside Colorado Craft with a backdoor entrance through AdAmAn Alley after 10 PM.',
+          order: 'Their rotating monthly specials. Bartenders craft five new cocktails every month.',
+          why: 'The Archives operates on the principle that the best bars don\'t advertise. There\'s no sign, no Instagram presence worth mentioning, no velvet rope theatrics—just a downstairs space staffed by experienced hospitality professionals who treat cocktail craft as an art form. The bar rotates five new original cocktails monthly, keeping regulars coming back to see what\'s changed while executing classics with precision. After 10 PM, you can slip in through AdAmAn Alley, the kind of back-entrance mystique that makes you feel like you\'ve discovered something. The vibe is relaxed and intimate, with great music and zero pretension. It\'s the speakeasy for people who find most speakeasies insufferable—no passwords, no gimmicks, just excellent drinks in a hidden space that rewards those who seek it out.',
+          address: '15 S Tejon St, Colorado Springs, CO 80903',
+          coordinates: { lat: 38.8326, lng: -104.8249 },
+          hours: 'Daily 5pm-midnight',
+          price: '$$$',
+          images: [
+            { src: '/colorado-springs/bars/archives-1.png', alt: 'The Archives hidden speakeasy interior' },
+          ],
+        },
+        {
+          name: 'Shame & Regret',
+          neighborhood: 'Downtown',
+          vibe: 'Gothic-inspired whiskey sanctuary designed like a Catholic confessional, complete with leather Victorian-style booths and tinted windows.',
+          order: 'Whiskey flight from their extraordinary collection: 110 American whiskeys and 120 single malt Scotches.',
+          why: 'The name tells you everything about the aesthetic: Shame & Regret is a back-alley whiskey bar that leans into the drama of drinking. The space is designed like a Catholic confessional—leather Victorian booths, tinted windows, gothic touches that suggest you\'re here to atone for something or create new sins worth confessing. But beneath the theatrical presentation is a serious whiskey program: 110 American whiskeys and 120 single malt Scotches, many selections unavailable elsewhere in the region. The bartenders know their inventory and can guide you through flights that tell a story—regional comparisons, age progressions, flavor profiles. Refined bar bites complement the experience without competing for attention. It\'s upscale without being stuffy, sophisticated without being snobbish, and proof that Colorado Springs can do moody, atmospheric drinking as well as any city.',
+          address: '15 E Bijou St, Suite C, Colorado Springs, CO 80903',
+          coordinates: { lat: 38.8338, lng: -104.8244 },
+          hours: 'Daily 4pm-2am',
+          price: '$$$',
+          website: 'https://www.shameandregret.com/',
+          images: [
+            { src: '/colorado-springs/bars/shame-regret-1.png', alt: 'Shame & Regret gothic interior' },
+            { src: '/colorado-springs/bars/shame-regret-2.png', alt: 'Whiskey collection display' },
+          ],
+        },
+        {
+          name: 'Allusion Bar',
+          neighborhood: 'Downtown',
+          vibe: 'A 20-person speakeasy hidden behind a faux brick wall in the back of Rooster\'s House of Ramen. Completely transforms its theme and menu every few months.',
+          order: 'Theme-specific craft cocktails that change with each concept. Previous incarnations have included "Stranger Things."',
+          why: 'Allusion Bar is the most creatively ambitious drinking experience in Colorado Springs. Hidden behind a faux brick wall in Rooster\'s House of Ramen, this 20-seat speakeasy completely reinvents itself every few months—new theme, new decor, new cocktail menu, new identity. One visit might find you in a "Stranger Things" Upside Down; return later and it\'s something entirely different. The transformations aren\'t lazy reskins—each incarnation includes custom decor and cocktails designed around the concept. Reservations are required (free but with a $15 minimum per person), which keeps the experience intimate and intentional. It\'s the bar for people who want drinking to be an event, who appreciate theatrical commitment, and who understand that the best nights out involve a little discovery. The fact that you have to know to look for it, hidden in the back of a ramen shop, only adds to the magic.',
+          address: '323 N Tejon St, Colorado Springs, CO 80903',
+          coordinates: { lat: 38.8372, lng: -104.8248 },
+          hours: 'Mon-Thu 4pm-10pm, Fri-Sat 4pm-midnight, Sun 4pm-10pm',
+          price: '$$$',
+          website: 'https://www.allusionbar.com/',
+          images: [
+            { src: '/colorado-springs/bars/allusion-1.png', alt: 'Allusion Bar themed interior' },
+            { src: '/colorado-springs/bars/allusion-2.png', alt: 'Themed cocktail presentation' },
+          ],
+        },
+        {
+          name: 'Benny\'s Restaurant & Lounge',
+          neighborhood: 'Old Colorado City',
+          vibe: 'A genuine 70-year-old dive bar with sticky floors, jukebox, pool tables, and the longest consecutive liquor license in Colorado Springs.',
+          order: 'Cheap beer, wings, and whatever\'s on the jukebox.',
+          why: 'Benny\'s has been pouring drinks since 1953, when Benny Raviotti—a former minor league baseball player and local sportscaster—opened the doors. Seventy years later, it holds the longest consecutive liquor license in Colorado Springs, a distinction that means something in a city where businesses come and go. This is an authentic dive bar in the truest sense: sticky floors that have absorbed decades of spilled beer, a jukebox that still matters, pool tables worn smooth by generations of players, and prices that haven\'t caught up with inflation. The crowd is a genuine cross-section of Colorado Springs—old-timers who\'ve been coming for decades, young people discovering what a real bar feels like, and everyone in between. No craft cocktails, no Instagram aesthetics, no pretension whatsoever. Just cold beer, decent bar food, and a space where the walls remember the city\'s history. In an era of curated experiences, Benny\'s is the antidote.',
+          address: '517 W Colorado Ave, Colorado Springs, CO 80905',
+          coordinates: { lat: 38.8385, lng: -104.8489 },
+          hours: 'Mon-Thu 11am-midnight, Fri-Sat 11am-2am, Sun 11am-1am',
+          price: '$',
+          images: [
+            { src: '/colorado-springs/bars/bennys-1.png', alt: 'Benny\'s classic dive bar interior' },
+            { src: '/colorado-springs/bars/bennys-2.png', alt: 'Pool tables and jukebox' },
+          ],
+        },
+        {
+          name: 'Storybook Brewing',
+          neighborhood: 'North End',
+          vibe: 'Whimsical nano-brewery where all beers are named after fairy tales. Dog-friendly patio, 3-barrel system, and a tagline that reads "Beer that tells its own story."',
+          order: 'Whatever fairy tale-themed brew catches your eye. The names are half the fun.',
+          why: 'Storybook Brewing emerged from 17 years of home brewing passion and a delightfully weird concept: what if every beer told a fairy tale? The 3-barrel nano-brewery system produces small batches with names drawn from folklore and children\'s literature, creating a menu that reads like a library card catalog. The concept sounds precious, but the execution is genuine—these are well-crafted beers that happen to have whimsical names, not gimmicks masquerading as craft. The space is casual and community-oriented, with a dog-friendly patio that fills up on nice days. It\'s lighter and more playful than Phantom Canyon, appealing to the part of Colorado Springs that doesn\'t take itself too seriously. The fairy tale theme extends through the branding and experience without becoming cloying, striking that rare balance between concept and quality that most themed establishments miss entirely.',
+          address: '3121 N El Paso St, Colorado Springs, CO 80907',
+          coordinates: { lat: 38.8712, lng: -104.8198 },
+          hours: 'Tue-Thu 2pm-9pm, Fri-Sat noon-10pm, Sun noon-8pm',
+          price: '$$',
+          website: 'https://www.storybookbrewing.com/',
+          images: [
+            { src: '/colorado-springs/bars/storybook-1.png', alt: 'Storybook Brewing taproom' },
+            { src: '/colorado-springs/bars/storybook-2.png', alt: 'Fairy tale-themed beer selection' },
           ],
         }
       ],

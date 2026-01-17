@@ -1661,11 +1661,6 @@ export const anchorage: CityData = {
               url: 'https://podcasts.apple.com/us/podcast/missing-in-alaska/id1461759061',
             },
           ],
-          location: {
-            name: 'Statewide, concentrated in rural villages',
-      url: 'https://www.google.com/maps/search/?api=1&query=Statewide%2C%20concentrated%20in%20rural%20villages%20Anchorage',
-            stillExists: true,
-          },
         },
         {
           id: 'anc-dark-7',
@@ -1769,54 +1764,6 @@ export const anchorage: CityData = {
           location: {
             name: 'Historic Anchorage Hotel, 330 E St',
       url: 'https://www.google.com/maps/search/?api=1&query=Historic%20Anchorage%20Hotel%2C%20330%20E%20St%20Anchorage',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'anc-dark-9',
-          type: 'dark-history',
-          category: 'cold-case',
-          year: '1979–1980s',
-          title: 'Hansen\'s Nameless Victims',
-          body: '"Eklutna Annie" was found in July 1980—stabbed, dumped, unidentified. For over 40 years she remained nameless, likely Hansen\'s first victim. "Horseshoe Harriet" stayed Jane Doe until 2022, when DNA genealogy finally identified her as Robin Pelkey. Other victims will probably never get their names back. Hansen chose women who were transient, estranged from family, working in industries society preferred to ignore. Women he calculated wouldn\'t be missed. He was mostly right.',
-          verdict: 'Ongoing DNA identification efforts. Some victims will likely remain nameless forever.',
-          sources: [
-            {
-              type: 'article',
-              title: 'Cold Case: Eklutna Annie',
-              publisher: 'Alaska State Troopers',
-              url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
-            },
-            {
-              type: 'article',
-              title: 'DNA identifies "Horseshoe Harriet" as Alaska serial killer victim',
-              publisher: 'NBC News',
-              year: '2022',
-              url: 'https://www.nbcnews.com/news/us-news/dna-identifies-horseshoe-harriet-alaska-serial-killer-victim-rcna39829',
-            },
-            {
-              type: 'article',
-              title: 'Alaska Cold Case Unit',
-              publisher: 'Alaska Department of Public Safety',
-              url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
-            },
-            {
-              type: 'video',
-              title: 'Eklutna Annie: Alaska\'s Jane Doe',
-              platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=EklutnaAnnie',
-            },
-            {
-              type: 'podcast',
-              title: 'The Nameless: Alaska\'s Unidentified Victims',
-              show: 'Alaska Unsolved',
-              platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/unresolved-alaska/id1597332768',
-            },
-          ],
-          location: {
-            name: 'Eklutna, various wilderness sites',
-      url: 'https://www.google.com/maps/search/?api=1&query=Eklutna%2C%20various%20wilderness%20sites%20Anchorage',
             stillExists: true,
           },
         },

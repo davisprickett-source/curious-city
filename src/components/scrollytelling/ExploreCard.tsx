@@ -15,34 +15,34 @@ interface ExploreCardProps {
   link: ExploreLink
 }
 
-// Type-based gradient colors for the overlay
+// Type-based gradient colors for the overlay - vibrant colored tints
 const typeGradients: Record<string, { overlay: string; fallback: string }> = {
   bars: {
-    overlay: 'from-indigo-900/90 via-indigo-900/60 to-indigo-900/30',
+    overlay: 'from-indigo-900/95 via-indigo-800/70 to-indigo-700/50',
     fallback: 'from-indigo-700 to-indigo-900',
   },
   restaurants: {
-    overlay: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
+    overlay: 'from-amber-900/95 via-amber-800/70 to-amber-700/50',
     fallback: 'from-amber-700 to-amber-900',
   },
   'coffee-shops': {
-    overlay: 'from-stone-900/90 via-stone-900/60 to-stone-900/30',
-    fallback: 'from-stone-700 to-stone-900',
+    overlay: 'from-amber-950/95 via-amber-900/70 to-amber-800/50',
+    fallback: 'from-amber-800 to-amber-950',
   },
   curiosities: {
-    overlay: 'from-purple-900/90 via-purple-900/60 to-purple-900/30',
+    overlay: 'from-purple-900/95 via-purple-800/70 to-purple-700/50',
     fallback: 'from-purple-700 to-indigo-800',
   },
   'dark-history': {
-    overlay: 'from-red-900/90 via-red-900/60 to-red-900/30',
+    overlay: 'from-red-950/95 via-red-900/70 to-red-800/50',
     fallback: 'from-red-800 to-red-950',
   },
   'hidden-gems': {
-    overlay: 'from-emerald-900/90 via-emerald-900/60 to-emerald-900/30',
+    overlay: 'from-emerald-900/95 via-emerald-800/70 to-emerald-700/50',
     fallback: 'from-emerald-700 to-teal-800',
   },
   'lost-loved': {
-    overlay: 'from-orange-900/90 via-orange-900/60 to-orange-900/30',
+    overlay: 'from-orange-900/95 via-orange-800/70 to-orange-700/50',
     fallback: 'from-orange-700 to-amber-800',
   },
 }
