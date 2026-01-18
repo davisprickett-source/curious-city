@@ -565,7 +565,7 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       <div className="lg:flex lg:flex-row" ref={containerRef}>
         {/* Left Side: Video (Fixed on all screens) */}
         {/* Desktop: extends slightly beyond letterbox bars (12vh-88vh = 76vh tall), bars crop edges minimally */}
-        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[12vh] lg:h-[76vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
+        <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[12vh] lg:h-[76vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform pointer-events-none lg:pointer-events-auto">
           {/* Always show an image - use object-cover to fill without black bars */}
           <img
             src={displayPath}
@@ -891,6 +891,22 @@ const TextBlock = memo(function TextBlock({ block, isFirst }: { block: any; isFi
         return <hr className="border-neutral-200 my-8" />
       }
       return <div className="h-8" />
+
+    case 'image':
+      return (
+        <figure className="my-8">
+          <div className="relative aspect-[16/9] bg-neutral-100 rounded-lg overflow-hidden">
+            <NextImage
+              src={block.src}
+              alt={block.alt || ''}
+              fill
+              unoptimized
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
+          </div>
+        </figure>
+      )
 
     default:
       return null
