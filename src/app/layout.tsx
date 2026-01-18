@@ -7,7 +7,7 @@ import { AdProvider } from '@/components/ads/AdProvider'
 import { SkipToContent } from '@/components/SkipToContent'
 import { CookieConsent } from '@/components/CookieConsent'
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
+// import { SpeedInsights } from '@vercel/speed-insights/next' // Temporarily disabled - testing performance
 
 // DM Sans - Clean, modern sans-serif for body text
 // Highly readable, geometric, professional
@@ -182,7 +182,7 @@ export default function RootLayout({
         </AdProvider>
         <CookieConsent />
         <Analytics />
-        <SpeedInsights />
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   )
