@@ -105,6 +105,12 @@ export function Footer() {
                 About
               </Link>
               <Link
+                href="/support"
+                className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
+              >
+                Support
+              </Link>
+              <Link
                 href="/contact"
                 className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors"
               >

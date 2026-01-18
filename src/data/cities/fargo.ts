@@ -580,10 +580,16 @@ export const fargo: CityData = {
           hours: 'Wed-Thu 11am-9pm, Fri-Sat 11am-midnight, Sun 11am-9pm, Mon-Tue 4pm-9pm',
           website: 'https://wurstfargo.com/',
           instagram: '@wurstfargo',
-          image: {
-            src: 'https://wurstwestfargo.com/wp-content/uploads/2023/11/wurst-bier-hall-west-fargo-nd-best-restaurant-beer-bar.jpg',
-            alt: 'Wurst Bier Hall interior with communal tables',
-          },
+          images: [
+            {
+              src: '/fargo/bars/wurst-bier-hall.png',
+              alt: 'Würst Bier Hall interior',
+            },
+            {
+              src: 'https://wurstwestfargo.com/wp-content/uploads/2023/11/wurst-bier-hall-west-fargo-nd-best-restaurant-beer-bar.jpg',
+              alt: 'Wurst Bier Hall interior with communal tables',
+            },
+          ],
         },
         {
           name: 'The Aquarium',
@@ -597,10 +603,16 @@ export const fargo: CityData = {
           hours: 'Event-based (check calendar)',
           website: 'https://aquariumfargo.com/',
           instagram: '@aquariumfargo',
-          image: {
-            src: 'https://aquariumfargo.com/wp-content/uploads/sites/19/2025/02/Aqua-Wave-Est-06-Logo-1030x666.png',
-            alt: 'The Aquarium music venue logo',
-          },
+          images: [
+            {
+              src: '/fargo/bars/aquarium.png',
+              alt: 'The Aquarium music venue',
+            },
+            {
+              src: 'https://aquariumfargo.com/wp-content/uploads/sites/19/2025/02/Aqua-Wave-Est-06-Logo-1030x666.png',
+              alt: 'The Aquarium music venue logo',
+            },
+          ],
         },
         {
           name: 'JL Beers',
@@ -614,10 +626,20 @@ export const fargo: CityData = {
           hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-10pm',
           website: 'https://jlbeers.com/518/',
           instagram: '@jlbeersdowntown',
-          image: {
-            src: 'https://jlbeers.com/518/files/2020/06/cropped-site-icon-192x192.png',
-            alt: 'JL Beers logo',
-          },
+          images: [
+            {
+              src: '/fargo/bars/jl-beers-1.png',
+              alt: 'JL Beers interior',
+            },
+            {
+              src: '/fargo/bars/jl-beers-2.png',
+              alt: 'JL Beers burgers',
+            },
+            {
+              src: 'https://jlbeers.com/518/files/2020/06/cropped-site-icon-192x192.png',
+              alt: 'JL Beers logo',
+            },
+          ],
         },
         {
           name: 'Mick\'s Office',
@@ -631,10 +653,16 @@ export const fargo: CityData = {
           hours: 'Sun-Wed 11am-midnight, Thu-Sat 11am-2am',
           website: 'https://micksoffice.com/',
           instagram: '@micks_office',
-          image: {
-            src: 'https://micksoffice.com/wp-content/uploads/2024/12/Micks-Office-Black-FRONT-Logo-TEXT.png',
-            alt: 'Mick\'s Office logo',
-          },
+          images: [
+            {
+              src: '/fargo/bars/micks-office.png',
+              alt: 'Mick\'s Office interior',
+            },
+            {
+              src: 'https://micksoffice.com/wp-content/uploads/2024/12/Micks-Office-Black-FRONT-Logo-TEXT.png',
+              alt: 'Mick\'s Office logo',
+            },
+          ],
         },
       ],
     },
@@ -657,6 +685,20 @@ export const fargo: CityData = {
           hours: 'Tue-Sat 5pm-10pm',
           website: 'https://dinemezzaluna.com/',
           instagram: '@mezzalunafargo',
+          images: [
+            {
+              src: '/fargo/restaurants/mezzaluna-1.png',
+              alt: 'Mezzaluna restaurant interior',
+            },
+            {
+              src: '/fargo/restaurants/mezzaluna-2.png',
+              alt: 'Mezzaluna dining room',
+            },
+            {
+              src: '/fargo/restaurants/mezzaluna-3.png',
+              alt: 'Mezzaluna cuisine',
+            },
+          ],
         },
         {
           name: 'Luna Fargo',
@@ -687,6 +729,16 @@ export const fargo: CityData = {
           hours: 'Mon-Thu 11am-10pm, Fri-Sat 11am-midnight, Closed Sun',
           website: 'https://www.vinyltaco.com/',
           instagram: '@vinyltaco',
+          images: [
+            {
+              src: '/fargo/restaurants/vinyl-taco-1.png',
+              alt: 'Vinyl Taco interior',
+            },
+            {
+              src: '/fargo/restaurants/vinyl-taco-2.png',
+              alt: 'Vinyl Taco tacos',
+            },
+          ],
         },
         {
           name: 'Rhombus Guys',
@@ -700,10 +752,20 @@ export const fargo: CityData = {
           hours: 'Daily 11am-10pm',
           website: 'https://rhombusguyspizza.com/',
           instagram: '@rhombusguys',
-          image: {
-            src: 'https://rhombusguyspiz.wpenginepowered.com/wp-content/uploads/2023/12/rhombus-detroit-pizza-950x1024-1.jpg.webp',
-            alt: 'Rhombus Guys pizza',
-          },
+          images: [
+            {
+              src: '/fargo/restaurants/rhombus-1.png',
+              alt: 'Rhombus Guys rooftop patio',
+            },
+            {
+              src: '/fargo/restaurants/rhombus-2.png',
+              alt: 'Rhombus Guys pizza',
+            },
+            {
+              src: 'https://rhombusguyspiz.wpenginepowered.com/wp-content/uploads/2023/12/rhombus-detroit-pizza-950x1024-1.jpg.webp',
+              alt: 'Rhombus Guys Detroit-style pizza',
+            },
+          ],
         },
         {
           name: 'Rosewild',
@@ -743,6 +805,16 @@ export const fargo: CityData = {
           hours: 'Daily 7am-6pm',
           website: 'https://youngbloodcoffee.com/',
           instagram: '@youngbloodcoffee',
+          images: [
+            {
+              src: '/fargo/coffee-shops/young-blood-1.png',
+              alt: 'Young Blood Coffee interior',
+            },
+            {
+              src: '/fargo/coffee-shops/young-blood-2.png',
+              alt: 'Young Blood Coffee drinks',
+            },
+          ],
         },
         {
           name: 'Twenty Below Coffee Co.',
@@ -756,6 +828,16 @@ export const fargo: CityData = {
           price: '$$',
           website: 'https://20below.coffee',
           instagram: '@twentybelowcoffee',
+          images: [
+            {
+              src: '/fargo/coffee-shops/twenty-below-1.png',
+              alt: 'Twenty Below Coffee interior',
+            },
+            {
+              src: '/fargo/coffee-shops/twenty-below-2.png',
+              alt: 'Twenty Below Coffee roasting',
+            },
+          ],
         },
         {
           name: 'Atomic Coffee',
@@ -786,6 +868,16 @@ export const fargo: CityData = {
           price: '$$',
           website: 'https://www.blackcoffeeandwaffle.com/',
           instagram: '@blackcoffeeandwafflebar',
+          images: [
+            {
+              src: '/fargo/coffee-shops/black-coffee-1.png',
+              alt: 'Black Coffee & Waffle Bar interior',
+            },
+            {
+              src: '/fargo/coffee-shops/black-coffee-2.png',
+              alt: 'Black Coffee waffles',
+            },
+          ],
         },
       ],
     },

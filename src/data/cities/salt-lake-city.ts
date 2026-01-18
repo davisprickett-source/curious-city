@@ -1301,10 +1301,12 @@ export const salt_lake_city: CityData = {
           price: '$$',
           website: 'https://theroseestb.com',
           instagram: '@theroseestb',
-          image: {
-            src: '',
-            alt: 'Industrial-chic coffee shop in restored warehouse',
-          },
+          images: [
+            {
+              src: '/salt-lake-city/coffee-shops/rose.png',
+              alt: 'The Rose Establishment interior',
+            },
+          ],
         },
         {
           name: 'Publik Coffee',
@@ -1349,10 +1351,12 @@ export const salt_lake_city: CityData = {
           price: '$$',
           website: 'https://www.caffedbolla.com',
           instagram: '@caffedbolla',
-          image: {
-            src: '',
-            alt: 'Siphon coffee brewer with dramatic extraction',
-          },
+          images: [
+            {
+              src: '/salt-lake-city/coffee-shops/dbolla.png',
+              alt: 'Caffe d\'Bolla siphon brewing',
+            },
+          ],
         },
         {
           name: 'Sugar House Coffee',

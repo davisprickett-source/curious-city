@@ -811,6 +811,12 @@ export const phoenix: CityData = {
           price: '$12',
           website: 'https://www.harkins.com/theatres/valley-art',
           tip: 'The neon sign is spectacular at night.',
+          images: [
+            {
+              src: '/phoenix/hidden-gems/valley-art-theatre.png',
+              alt: 'Valley Art Theatre historic neon sign',
+            },
+          ],
         },
       ],
     },

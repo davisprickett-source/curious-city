@@ -1498,6 +1498,12 @@ export const seattle: CityData = {
                     title: 'Seattle\'s Japanese community was forcibly removed to internment camps',
           body: 'On February 19, 1942, following the attack on Pearl Harbor, President Roosevelt signed Executive Order 9066, authorizing the forced removal of 120,000 Japanese Americans from the West Coast. Seattle\'s Nihonmachi (Japantown) was emptied. Businesses, homes, and community institutions were lost. Families were sent to camps at Puyallup, Minidoka, and elsewhere. When they returned years later, Japantown was gone — replaced by other communities and commercial development.\n\nSeattle had one of the largest Japanese American populations on the West Coast. The forced removal devastated families who had built lives here for decades. Many lost everything — homes, businesses, savings. The internment was later recognized as a grave injustice, and in 1988, President Reagan signed the Civil Liberties Act apologizing and providing reparations to survivors.',
           verdict: 'Legal injustice. The U.S. government formally apologized in 1988 via the Civil Liberties Act, providing reparations to surviving internees.',
+          images: [
+            {
+              src: '/seattle/dark-history/internment.png',
+              alt: 'Seattle Japanese American internment',
+            },
+          ],
           location: {
             name: 'Nihonmachi/Japantown (now International District)',
       url: 'https://www.google.com/maps/search/?api=1&query=Nihonmachi%2FJapantown%20(now%20International%20District)%20Seattle',

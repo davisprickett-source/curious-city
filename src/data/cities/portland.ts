@@ -1332,10 +1332,16 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://www.heartroasters.com',
           instagram: '@heartroasters',
-          image: {
-            src: '',
-            alt: 'Minimalist coffee shop with clean lines and pour-over bar',
-          },
+          images: [
+            {
+              src: '/portland/coffee/heart-1.png',
+              alt: 'Heart Coffee Roasters interior',
+            },
+            {
+              src: '/portland/coffee/heart-2.png',
+              alt: 'Heart Coffee pour-over bar',
+            },
+          ],
         },
         {
           name: 'Coava Coffee Roasters',
@@ -1349,10 +1355,16 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://coavacoffee.com',
           instagram: '@coaboratory',
-          image: {
-            src: '',
-            alt: 'Industrial warehouse coffee space with high ceilings',
-          },
+          images: [
+            {
+              src: '/portland/coffee/coava-1.png',
+              alt: 'Coava Coffee Roasters warehouse space',
+            },
+            {
+              src: '/portland/coffee/coava-2.png',
+              alt: 'Coava Coffee single-origin pour-over',
+            },
+          ],
         },
         {
           name: 'Albina Press',
@@ -1366,10 +1378,16 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://albinapress.com',
           instagram: '@albinapress',
-          image: {
-            src: '',
-            alt: 'Portland\'s beloved third-wave coffee pioneer',
-          },
+          images: [
+            {
+              src: '/portland/coffee/albina-1.png',
+              alt: 'Albina Press third-wave coffee',
+            },
+            {
+              src: '/portland/coffee/albina-2.png',
+              alt: 'Albina Press North Portland location',
+            },
+          ],
         },
         {
           name: 'Either/Or',
@@ -1382,10 +1400,16 @@ export const portland: CityData = {
           hours: '8am-3pm daily',
           price: '$$',
           instagram: '@eitheror_cafe',
-          image: {
-            src: '',
-            alt: 'Cozy DIY coffee shop with espresso flights',
-          },
+          images: [
+            {
+              src: '/portland/coffee/either-or-1.png',
+              alt: 'Either/Or café interior',
+            },
+            {
+              src: '/portland/coffee/either-or-2.png',
+              alt: 'Either/Or espresso flights',
+            },
+          ],
         },
         {
           name: 'Push x Pull',
@@ -1399,10 +1423,20 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://pushxpullcoffee.com',
           instagram: '@pushxpullcoffee',
-          image: {
-            src: '',
-            alt: 'Specialty roastery with natural process Kenyan',
-          },
+          images: [
+            {
+              src: '/portland/coffee/push-pull-1.png',
+              alt: 'Push x Pull Coffee roastery',
+            },
+            {
+              src: '/portland/coffee/push-pull-2.png',
+              alt: 'Push x Pull specialty drinks',
+            },
+            {
+              src: '/portland/coffee/push-pull-3.png',
+              alt: 'Push x Pull natural process Kenyan',
+            },
+          ],
         },
         {
           name: 'Portland Cà Phê',
@@ -1416,10 +1450,12 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://portlandcaphe.com',
           instagram: '@portlandcaphe',
-          image: {
-            src: '',
-            alt: 'Vietnamese iced coffee with condensed milk',
-          },
+          images: [
+            {
+              src: '/portland/coffee/ca-phe-1.png',
+              alt: 'Portland Cà Phê Vietnamese coffee',
+            },
+          ],
         },
         {
           name: 'Stumptown Coffee Roasters',
@@ -1433,10 +1469,16 @@ export const portland: CityData = {
           price: '$$',
           website: 'https://stumptowncoffee.com',
           instagram: '@stumptowncoffee',
-          image: {
-            src: '/portland/coffee/stumptown.png',
-            alt: 'Iconic Stumptown Coffee inside the Ace Hotel',
-          },
+          images: [
+            {
+              src: '/portland/coffee/stumptown-1.png',
+              alt: 'Stumptown Coffee Ace Hotel location',
+            },
+            {
+              src: '/portland/coffee/stumptown-2.png',
+              alt: 'Stumptown Coffee bar',
+            },
+          ],
         },
         {
           name: 'Case Study Coffee',

@@ -74,7 +74,7 @@ function StandardCard({ data, priority }: { data: UnifiedCardData; priority: boo
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{
-        duration: 0.5,
+        duration: 0.9,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="break-inside-avoid mb-6"
@@ -248,7 +248,7 @@ function MediaCard({ data }: { data: UnifiedCardData }) {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{
-        duration: 0.6,
+        duration: 1.0,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="break-inside-avoid mb-6"

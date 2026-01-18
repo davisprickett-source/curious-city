@@ -26,6 +26,7 @@ import { salt_lake_city_premium_history } from './premium/salt-lake-city'
 import { anchorage_premium_history } from './premium/anchorage'
 import { denver_premium_history } from './premium/denver'
 import { chicago_premium_history } from './premium/chicago'
+import { seattle_premium_history } from './premium/seattle'
 
 // Re-export individual history collections
 export { minneapolis_history }
@@ -56,7 +57,7 @@ export const history: HistoryIndex = {
   'tampa': { ...tampa_history, ...tampa_premium_history },
   'phoenix': { ...phoenix_history, ...phoenix_premium_history },
   'portland': { ...portland_history, ...portland_premium_history },
-  'seattle': seattle_history,
+  'seattle': { ...seattle_history, ...seattle_premium_history },
 }
 
 export function getHistory(citySlug: string, historySlug: string): History | null {

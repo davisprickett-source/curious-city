@@ -63,8 +63,8 @@ export const tampa: CityData = {
       id: 'tpa-curiosities',
       type: 'section',
       title: 'Tampa\'s Strange & Remarkable',
-      teaser: 'Cigar empires, illegal tunnels, and the city built on seashells',
-      intro: 'Tampa wasn\'t built on gold or oil; it was built on tobacco and seashells. From the cigar factories that turned it into a global hub to the illegal tunnels beneath Ybor City, this Gulf Coast city has always existed where the line between history and legend is as thick as the humidity.',
+      teaser: 'Fake pirates, real lightning, and 700 million cigars a year',
+      intro: 'Tampa wasn\'t built on gold or oil—it was built on tobacco and immigrant hustle. Cigar factories employed radicals who read Marx aloud. A fake pirate became the city\'s biggest party. Cuba still owns a park here. And the lightning? The lightning is very, very real.',
       items: [
         {
           id: 'tam-curiosity-1',
@@ -207,23 +207,6 @@ export const tampa: CityData = {
           size: 'rectangle',
         },
         {
-          id: 'tam-curiosity-3',
-          type: 'curiosity',
-          category: 'underground',
-          title: 'Prohibition tunnels still hide beneath Ybor City',
-          body: 'When Prohibition arrived in 1920, Ybor City\'s entrepreneurs faced a business challenge: how to keep alcohol flowing to customers who refused to stop drinking. The solution was elegantly simple: build tunnels. A network of underground passages connected cigar factories, restaurants, and private clubs, allowing bootleggers to move liquor without ever appearing on the street. The Columbia Restaurant, which had been serving Spanish wine since 1903, reportedly maintained a tunnel to the Cherokee Club across the street. El Pasaje, a commercial building on Seventh Avenue, allegedly connected to multiple speakeasies. The cigar workers who spent their days rolling tobacco spent their evenings drinking contraband whiskey moved through the passages beneath their feet. Some of the tunnels were sealed by the city after Prohibition ended. Others were incorporated into basements or bricked over during renovations. But portions of the network still exist, accessible through unmarked doors and forgotten entrances. Urban explorers who know where to look have documented passages extending entire city blocks. The full extent has never been mapped. Like most of Ybor\'s history, the tunnels are part documented fact and part whispered legend, and nobody seems particularly motivated to determine which is which.',
-          image: {
-            src: '/tampa/curiosities/tunnels.png',
-            alt: 'Historic tunnels beneath Ybor City',
-          },
-          source: 'Ybor City local historians',
-          location: {
-            name: 'Ybor City',
-      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
-        },
-        {
           id: 'tam-curiosity-5',
           type: 'curiosity',
           category: 'invention',
@@ -253,23 +236,6 @@ export const tampa: CityData = {
             alt: 'Cigar production in Ybor City',
           },
           source: 'Tampa Bay History Center',
-          location: {
-            name: 'Ybor City',
-      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'tam-curiosity-14',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'The cigar workers\' cottages still stand in Ybor',
-          body: 'Walk through the residential blocks of Ybor City and you\'ll find hundreds of small wood-frame cottages called "casitas," built between the 1880s and 1920s to house the immigrant cigar workers who powered the industry. The architecture is distinctly practical: shotgun style, meaning the rooms line up front to back so that opening the front and rear doors creates a natural breeze tunnel. This was crucial before air conditioning made Florida livable. The ceilings are high to let heat rise. The porches are wide for evening socializing. The structures are narrow because property taxes were based on street frontage. Most were built by the cigar companies as worker housing, rented to employees for modest sums. The workers who lived here raised families, formed social clubs, organized unions, and built one of the most vibrant immigrant communities in American history. When the cigar industry collapsed, many casitas were abandoned. Some fell into disrepair. But preservation efforts over the past few decades have saved many, converting them into restaurants, boutiques, and private homes. The Ybor City Museum State Park maintains several as period exhibits. Walking past them today, you\'re walking the same streets that Cuban, Spanish, Italian, and German immigrants walked a century ago, past homes that still look remarkably like they did when the tobacco industry was king.',
-                    image: {
-            src: '/tampa/curiosities/casitas.png',
-            alt: 'Historic casitas in Ybor City',
-          },
-          source: 'Ybor City Development Corporation',
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
@@ -394,8 +360,8 @@ export const tampa: CityData = {
       id: 'hidden-gems',
       type: 'section',
       title: 'Hidden Tampa',
-      teaser: 'Secret speakeasies, hidden tunnels, and spots that locals don\'t even know about',
-      intro: 'The genuinely obscure — places even longtime Tampa residents don\'t know about. Secret speakeasies, hidden tunnels, forgotten history, and spots that require insider knowledge.',
+      teaser: 'The stuff guidebooks skip and locals gatekeep',
+      intro: 'Tampa has layers. The cigar vaults beneath bar floors. The Prohibition-era passages that connected factories to gambling dens. The immigrant cottages most visitors walk right past. This is the Tampa that rewards the curious—places that don\'t advertise and don\'t need to.',
       items: [],
     },
     // SUBSECTION: Underground & Secret Spaces
@@ -409,6 +375,12 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'Ybor City Underground Tunnels',
           category: 'Underground & Secret',
+          images: [
+            {
+              src: '/tampa/curiosities/tunnels.png',
+              alt: 'Historic tunnels beneath Ybor City',
+            },
+          ],
           description: 'Beneath the brick streets of Ybor City runs a network of underground tunnels that served as Prohibition\'s hidden highway. During the 1920s and early 1930s, bootleggers moved illegal liquor through these passages connecting cigar factories, restaurants, and speakeasies — most notably linking the Columbia Restaurant to the nearby Cherokee Club casino. The tunnels were originally built as utility corridors and storage spaces in the 1880s-1900s when Ybor was being developed, but took on new life when the 18th Amendment made alcohol illegal. Some sections featured brick archways tall enough to walk through upright; others were cramped crawl spaces. Local historians believe the tunnel system was far more extensive than currently documented, with many passages sealed or collapsed over the decades. Urban explorers occasionally discover unmarked entrances in building basements, though most access points have been permanently closed. The full extent of the network remains unmapped, and stories persist of sealed rooms still containing old bottles and gambling equipment.',
           location: 'Ybor City (sealed)',
           tip: 'Off-limits for safety reasons — for historical interest only',
@@ -428,27 +400,18 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'The Bricks Cigar Vault',
           category: 'Underground & Secret',
+          images: [
+            {
+              src: '/tampa/hidden-gems/cigar-vault.png',
+              alt: 'The Bricks historic cigar vault',
+            },
+          ],
           description: 'Descend the stairs at The Bricks on 7th Avenue and you\'ll find something most patrons never see: an original brick-walled cigar storage vault from the 1800s, preserved exactly as it was when this building served Ybor\'s cigar industry. The thick walls and controlled humidity made it perfect for aging premium cigars before they were shipped worldwide. The vault sits directly beneath the bar, its arched brick ceiling and heavy wooden doors still intact. Temperature and humidity were carefully controlled even before modern climate systems — the brick construction naturally regulated conditions. During Prohibition, spaces like this were allegedly repurposed for storing bootleg liquor. Today, the vault occasionally opens for private tastings and special events, but most people drinking upstairs have no idea it exists. The Bricks — run by the Skatepark of Tampa crew since 2010 — has kept the space largely unchanged as a nod to Ybor\'s industrial heritage.',
           location: 'Ybor City',
           tip: 'Ask staff nicely — they sometimes show regulars',
           address: '1327 E 7th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9601, lng: -82.4445 },
           website: 'https://www.thebricksybor.com/',
-        },
-        {
-          id: 'tam-gem-3',
-          type: 'hidden-gem',
-          name: 'Bunker Bar at Le Méridien',
-          category: 'Underground & Secret',
-          featured: true,
-          featuredOrder: 3,
-          description: 'Hidden in the basement of Le Méridien Tampa — housed in the historic 1905 Federal Courthouse — sits one of downtown\'s most atmospheric bars. The Bunker occupies an original bank vault, its massive steel door still mounted on its hinges, three-foot-thick walls, and safety deposit boxes embedded in the brick. The space served as the courthouse\'s secure evidence room and later as a bank vault when the building was renovated. The juxtaposition is perfect: sip craft cocktails in a space designed to be impenetrable. Upstairs, the building\'s grand courtrooms once hosted trials of bootleggers and gangsters during Tampa\'s mob era. Charlie Wall — "The White Shadow" and Tampa\'s most notorious mob boss — testified here multiple times in the 1940s and 1950s before his brutal unsolved murder in 1955. The courthouse was also where federal prosecutors went after Santo Trafficante Sr. and the Italian mob that eventually pushed Wall out. Today, the intimate 30-seat bar maintains the original industrial aesthetic: exposed brick, low ceilings, dim Edison bulb lighting, and cocktails served where evidence and cash once sat locked away.',
-          location: 'Downtown',
-          address: '601 N Florida Ave, Tampa, FL 33602',
-          coordinates: { lat: 27.9495, lng: -82.4586 },
-          hours: '5pm-midnight Wed-Sat',
-          website: 'https://www.marriott.com/en-us/hotels/tpasi-le-meridien-tampa-the-courthouse/dining/',
-          tip: 'The vault door makes for great photos — ask the bartender about the building\'s mob history',
         },
       ],
     },
@@ -486,39 +449,6 @@ export const tampa: CityData = {
           ],
           tip: 'Visible from the street but fenced off — best photographed from outside',
         },
-        {
-          id: 'tam-gem-5',
-          type: 'hidden-gem',
-          name: 'Old Phosphate Docks',
-          category: 'Abandoned & Lost',
-          description: 'Scattered along Tampa Bay\'s industrial coastline are the skeletal remains of Florida\'s phosphate shipping past. Rusted railway tracks run straight into the water, ending abruptly where loading docks once stood. Crumbling concrete piers jut into the bay like broken teeth. This was where phosphate — mined from central Florida\'s bone-rich deposits — was loaded onto freighters bound for fertilizer plants worldwide. In the early 1900s through the 1950s, Tampa was America\'s phosphate capital, and these docks were among the busiest in the South. Workers toiled in brutal heat, breathing phosphate dust that turned everything white. The industry moved to specialized modern facilities decades ago, leaving these ruins behind. Nature is slowly reclaiming them: barnacles coat the pilings, mangroves grow through cracks in the concrete, herons nest in the rusted crane structures. It\'s hauntingly beautiful but dangerous — the ground is unstable, structures could collapse, and much of it is private property or environmentally contaminated. Photographers love it for the post-apocalyptic aesthetic. Urban explorers risk trespassing charges to get inside. Most Tampa residents drive past these ruins daily without giving them a second thought.',
-          location: 'Port Tampa Bay area',
-          coordinates: { lat: 27.8673, lng: -82.5315 },
-          tip: 'For viewing from public areas only — much is private property and structurally unsafe',
-          sources: [
-            {
-              title: 'Tampa\'s Phosphate Heritage',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
-        },
-        {
-          id: 'tam-gem-6',
-          type: 'hidden-gem',
-          name: 'Ybor City\'s Ghost Signs',
-          category: 'Abandoned & Lost',
-          description: 'Look up while walking Ybor\'s brick streets and you\'ll see them: faded hand-painted advertisements slowly disappearing from building facades. These "ghost signs" — some dating back to the 1890s — once advertised cigar brands that no longer exist, pharmacies long closed, and bolita houses (illegal lottery operations) that thrived before the mob consolidated gambling. The paint has weathered to barely-there shadows, visible only in certain light. Some of the best-preserved examples are on 14th Street and 7th Avenue, painted high enough on walls that they escaped being covered by modern signage. You can still make out lettering for "La Flor de Tampa Cigars," "Alvarez Pharmacy," and mysterious numbers that meant something to bolita players in the 1920s. These accidental time capsules survived because painting over or removing them would cost more than leaving them. Preservation groups occasionally document them, but there\'s no official effort to save them. Eventually, they\'ll fade completely. For now, they\'re still there if you know where to look — silent witnesses to Ybor\'s immigrant past, visible only to those who bother to look up.',
-          location: 'Ybor City',
-          coordinates: { lat: 27.9615, lng: -82.4420 },
-          tip: 'Look up — they\'re painted high on building sides between 13th-15th Streets',
-          sources: [
-            {
-              title: 'Old Signs of Ybor',
-              publisher: 'Tampa Bay Times',
-              url: 'https://www.tampabay.com/news/humaninterest/old-signs-around-tampa-bay-are-a-mix-of-art-history-lessons/2234415/',
-            },
-          ],
-        },
       ],
     },
     {
@@ -553,23 +483,20 @@ export const tampa: CityData = {
           tip: 'Rent a canoe or kayak to explore the Hillsborough River — arrive before 9am to avoid crowds',
         },
         {
-          id: 'tam-gem-8',
-          type: 'hidden-gem',
-          name: 'Al Lopez Park Secret Spring',
-          category: 'Secret Garden',
-          description: 'Hidden behind Al Lopez Park\'s recreation facilities, past the playground and baseball fields, sits a natural artesian spring that most park visitors never find. A small brick gazebo-like structure marks the spot where crystal-clear water bubbles up continuously from the Floridan Aquifer hundreds of feet below. The water is cool year-round — around 72 degrees — and locals have been filling jugs here for generations, believing it tastes better than city water. Some claim it has health benefits, though that\'s probably nostalgia talking. The spring was here long before the park, used by Native Americans and early settlers. When the city developed the park in the 1930s-40s (as a WPA project during the Depression), they preserved the spring and built the brick pavilion around it. It\'s not advertised or signposted, so you have to know where to look. On hot days, you might find older Cuban and Italian residents filling containers — they\'ll tell you their families have been coming here since the 1950s. The surrounding area has picnic tables and shade, making it a peaceful spot few discover.',
-          location: 'Al Lopez Park',
-          address: '4810 N Himes Ave, Tampa, FL 33614',
-          coordinates: { lat: 27.9825, lng: -82.4847 },
-          hours: 'Daily sunrise-sunset',
-          price: 'Free',
-          tip: 'Ask park staff for directions — the spring is toward the back of the park, near the northwest corner',
-        },
-        {
           id: 'tam-gem-9',
           type: 'hidden-gem',
           name: 'University of Tampa Plant Museum Courtyard',
           category: 'Secret Garden',
+          images: [
+            {
+              src: '/tampa/curiosities/plant-museum-0.png',
+              alt: 'Henry B. Plant Museum courtyard',
+            },
+            {
+              src: '/tampa/curiosities/plant-museum-1.png',
+              alt: 'University of Tampa Plant Museum',
+            },
+          ],
           description: 'Step inside Plant Hall\'s Henry B. Plant Museum and you\'ll find a Victorian-era courtyard that most visitors miss entirely. The interior garden features Moorish-style horseshoe arches, ornate hand-painted tilework, bubbling fountains, and tropical plants identical to those that grew here in 1891 when railroad magnate Henry Plant built his Tampa Bay Hotel. The courtyard served as a social gathering space for Gilded Age guests — including Teddy Roosevelt\'s Rough Riders, who stayed here before shipping out to Cuba during the Spanish-American War. The tilework is original: intricate geometric patterns in blues, yellows, and greens imported from Spain and North Africa. The fountains still work, their gentle trickling creating an oasis atmosphere. Palm fronds and ferns cascade from planters, and wrought-iron benches invite lingering. Most tourists rush through to see the museum exhibits or climb the iconic silver minarets, completely bypassing this hidden garden. It\'s open during museum hours, free to enter, and almost always empty — a pocket of 19th-century luxury preserved in the middle of a college campus.',
           location: 'University of Tampa',
           address: '401 W Kennedy Blvd, Tampa, FL 33606',
@@ -617,48 +544,20 @@ export const tampa: CityData = {
           ],
         },
         {
-          id: 'tam-gem-11',
-          type: 'hidden-gem',
-          name: 'Sacred Heart Church Catacombs',
-          category: 'Quirky Architecture',
-          description: 'Beneath Sacred Heart Catholic Church—Tampa\'s most architecturally stunning cathedral—lies a network of brick-vaulted catacombs and crypts that most parishioners never see. Built in 1905 when the church was constructed, these underground chambers served as burial vaults for prominent Catholic families, clergy, and benefactors who helped establish Tampa\'s early Catholic community. The catacombs feature hand-laid brick archways, stone crypts embedded in walls, and an eerie stillness that feels worlds away from the traffic above on Florida Avenue. The church itself is Tampa\'s finest example of Romanesque Revival architecture, designed by architect James J. Ryan with twin bell towers, massive stone construction, and ornate stained glass windows imported from Munich. The interior features hand-painted frescoes, marble altars, and intricate woodwork that took Italian craftsmen years to complete. The catacombs were sealed for decades due to structural concerns and humidity damage, but occasional tours are offered during Heritage Days or by special appointment. The space has an old-world European feel—stone, shadow, and the weight of history pressing down from above. It\'s a rare glimpse into Tampa\'s Catholic heritage and the city\'s earliest settlers who built institutions meant to last centuries.',
-          location: 'Downtown',
-          address: '509 N Florida Ave, Tampa, FL 33602',
-          coordinates: { lat: 27.9497, lng: -82.4586 },
-          hours: 'Church open for Mass; catacomb tours by appointment only',
-          website: 'https://sacredheartfla.org',
-          tip: 'Call the church office weeks in advance to request a rare catacomb tour—they\'re offered occasionally during heritage events',
-          sources: [
-            {
-              title: 'Sacred Heart Church History',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
-        },
-        {
-          id: 'tam-gem-12',
-          type: 'hidden-gem',
-          name: 'The Minaret Smokestacks at Progress Village',
-          category: 'Quirky Architecture',
-          description: 'Rising incongruously from a South Tampa residential neighborhood stand four towering Moorish-style minaret smokestacks—ornate, architecturally detailed, and utterly out of place. These 75-foot-tall structures are remnants of the Tampa Electric Company\'s Gannon Power Plant, which operated from 1914 to 1953 providing electricity to the growing city. When the plant was designed, Tampa Electric wanted to echo the exotic Moorish Revival architecture of Henry Plant\'s famous Tampa Bay Hotel (now the University of Tampa), which featured iconic silver minarets that defined the city\'s skyline. So instead of building utilitarian industrial smokestacks, they commissioned decorative minarets with intricate brickwork, arched windows, terracotta ornamentation, and domed tops that mimicked Plant\'s vision. The power plant was demolished decades ago, but the four smokestacks were left standing—partly because removing them would have cost more than preserving them, and partly because neighbors grew attached to these strange towers. Today they serve no function, standing in the middle of Progress Village surrounded by mid-century ranch homes and chain-link fences. They\'ve become accidental public art, a quirky landmark that confuses newcomers and delights architecture buffs. Visible from I-4, they\'re a surreal reminder of Tampa\'s habit of turning industrial infrastructure into something beautiful—or at least trying to.',
-          location: 'Progress Village',
-          address: '5502 W Hillsborough Ave, Tampa, FL 33634',
-          coordinates: { lat: 27.9775, lng: -82.5147 },
-          hours: 'Visible from street 24/7 (private property, no access)',
-          price: 'Free to view from public road',
-          tip: 'Best viewed from Hillsborough Avenue—they\'re fenced off but impressive from a distance',
-          sources: [
-            {
-              title: 'Tampa Electric History and the Minaret Smokestacks',
-              url: 'https://www.tampaelectric.com/company/about/history/',
-            },
-          ],
-        },
-        {
           id: 'tam-gem-22',
           type: 'hidden-gem',
           name: 'Whimzeyland',
           category: 'Quirky Architecture',
+          images: [
+            {
+              src: '/tampa/hidden-gems/whimsey.png',
+              alt: 'Whimzeyland mosaic art installation',
+            },
+            {
+              src: '/tampa/hidden-gems/whimsey-0.png',
+              alt: 'Whimzeyland yard sculptures',
+            },
+          ],
           description: 'In Safety Harbor, artists Todd Ramquist and Kiaralinda have spent over 35 years transforming their home and neighboring properties into one of Florida\'s most spectacular folk art environments. Originally known as the "Bowling Ball House," Whimzeyland now features over 600 painted bowling balls arranged in pyramids, walls, and sculptures across a yard exploding with color and creativity. Every surface is covered in mosaic pathways, recycled shrines, bottle gardens, wire art daisies, mermaid carvings, and ceramic sculptures that create an almost otherworldly atmosphere. The artists bought the modest home in 1987 and have never stopped adding to it—turning found objects, discarded materials, and pure imagination into a continuous artwork that evolves with each visit. Featured on HGTV\'s Extreme Homes and MTV Extreme Cribs, Whimzeyland has become a pilgrimage site for folk art enthusiasts and a beloved Safety Harbor landmark. The yard is open daily for self-guided tours, or you can book a docent-led tour through the adjacent Safety Harbor Art and Music Center (SHAMc), another project the artists helped create. This is someone\'s actual home, so visitors are asked to be respectful, but the artists genuinely welcome people who appreciate handmade creativity over manicured lawns.',
           location: 'Safety Harbor',
           address: '1206 3rd St N, Safety Harbor, FL 34695',
@@ -692,7 +591,13 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'Ybor City Museum\'s Cigar Worker Casitas',
           category: 'Hidden History',
-          description: 'Behind the Ybor City Museum State Park sits a row of perfectly preserved wooden casitas—small shotgun-style cottages where Cuban, Spanish, and Italian cigar workers lived with their families during Ybor\'s boom years from the 1880s through the 1930s. These vernacular wood-frame houses were designed for Tampa\'s brutal heat: narrow layouts allowed front-to-back airflow, high ceilings let hot air rise, and wide porches provided outdoor living space. Inside, the casitas have been meticulously restored and furnished with period-accurate furniture, family photographs, kitchen tools, and personal items that bring the immigrant experience to life. You can walk through bedrooms where multiple children slept, kitchens where women cooked Cuban and Spanish meals on wood-burning stoves, and parlors where families gathered after long shifts in the cigar factories. Outside, the museum has recreated the medicinal and culinary gardens immigrants maintained, growing herbs like yerba buena, cilantro, and rue that they brought from their home countries and used for cooking and healing. The casitas offer a rare, tangible connection to working-class life in early Tampa—a counterpoint to the grander buildings and success stories. Most visitors tour the museum\'s exhibits on cigar manufacturing and never venture into the garden courtyard where the casitas stand, making this a genuinely hidden piece of Ybor\'s history.',
+          images: [
+            {
+              src: '/tampa/curiosities/casitas.png',
+              alt: 'Historic casitas in Ybor City',
+            },
+          ],
+          description: 'Behind the Ybor City Museum State Park sits a row of perfectly preserved wooden casitas—small shotgun-style cottages where Cuban, Spanish, Italian, and German cigar workers lived with their families during Ybor\'s boom years from the 1880s through the 1930s. The cigar companies built these as worker housing, renting them for modest sums. The structures are narrow because property taxes were based on street frontage—practical to the last detail. These vernacular wood-frame houses were designed for Tampa\'s brutal heat: narrow layouts allowed front-to-back airflow, high ceilings let hot air rise, and wide porches provided outdoor living space. Inside, the casitas have been meticulously restored and furnished with period-accurate furniture, family photographs, kitchen tools, and personal items that bring the immigrant experience to life. You can walk through bedrooms where multiple children slept, kitchens where women cooked Cuban and Spanish meals on wood-burning stoves, and parlors where families gathered after long shifts in the cigar factories. Outside, the museum has recreated the medicinal and culinary gardens immigrants maintained, growing herbs like yerba buena, cilantro, and rue that they brought from their home countries and used for cooking and healing. The casitas offer a rare, tangible connection to working-class life in early Tampa—a counterpoint to the grander buildings and success stories. Most visitors tour the museum\'s exhibits on cigar manufacturing and never venture into the garden courtyard where the casitas stand, making this a genuinely hidden piece of Ybor\'s history.',
           location: 'Ybor City',
           address: '1818 E 9th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9633, lng: -82.4381 },
@@ -719,6 +624,16 @@ export const tampa: CityData = {
           hours: 'By appointment or during special events',
           website: 'https://centroasturiano.com/',
           tip: 'Book a tour or attend a public event to see the ornate interior—the ballroom is spectacular',
+          images: [
+            {
+              src: '/tampa/hidden-gems/centro-asturiano-1.png',
+              alt: 'Centro Asturiano de Tampa exterior',
+            },
+            {
+              src: '/tampa/hidden-gems/centro-asturiano-2.png',
+              alt: 'Centro Asturiano ballroom',
+            },
+          ],
           sources: [
             {
               title: 'Centro Asturiano History',
@@ -735,13 +650,19 @@ export const tampa: CityData = {
           type: 'hidden-gem',
           name: 'The L\'Unione Italiana Cemetery',
           category: 'Hidden History',
-          description: 'Hidden behind chain-link fencing on a quiet residential block near Ybor City sits the L\'Unione Italiana Cemetery, a forgotten burial ground where Italian immigrants—most of them Sicilian cigar workers and their families—were laid to rest between the 1890s and 1930s. The cemetery was established by L\'Unione Italiana, a mutual aid society that provided Italian immigrants with health insurance, death benefits, and burial services in an era when such support was unavailable to working-class people. The graves are marked with simple headstones bearing Italian names—Licata, Ficarrotta, Pizzo—many inscribed in Italian with heartbreaking epitaphs for children who died young from disease, accidents, or the harsh conditions of early Tampa life. The cemetery is overgrown with weeds, palmetto, and vines creeping over cracked monuments. Some headstones have toppled or sunk into the sandy soil. A few graves are adorned with weathered ceramic portraits of the deceased, a Southern Italian tradition. The site is eerie, melancholic, and largely forgotten except by descendants who occasionally tend family plots. Access is restricted, and the cemetery is locked most of the time, but you can peer through the fence and see the rows of markers slowly being reclaimed by Florida\'s vegetation—a tangible reminder that Ybor\'s cigar boom was built on the backs of immigrants whose names have faded from memory.',
+          description: 'On a quiet residential block near Ybor City sits the L\'Unione Italiana Cemetery, a forgotten burial ground where Italian immigrants—most of them Sicilian cigar workers and their families—were laid to rest between the 1890s and 1930s. The cemetery was established by L\'Unione Italiana, a mutual aid society that provided Italian immigrants with health insurance, death benefits, and burial services in an era when such support was unavailable to working-class people. The graves are marked with simple headstones bearing Italian names—Licata, Ficarrotta, Pizzo—many inscribed in Italian with heartbreaking epitaphs for children who died young from disease, accidents, or the harsh conditions of early Tampa life. Some headstones have toppled or sunk into the sandy soil. A few graves are adorned with weathered ceramic portraits of the deceased, a Southern Italian tradition. The site is melancholic and largely forgotten except by descendants who occasionally tend family plots. Walking through, you\'re surrounded by the names of Ybor\'s cigar boom workers—immigrants whose labor built Tampa and whose names have faded from memory everywhere else.',
           location: 'Near Ybor City',
           address: '3001 E 7th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9621, lng: -82.4205 },
-          hours: 'Locked—visible through fence only',
-          price: 'Free to view from outside',
-          tip: 'Visible through the chain-link fence—respectful viewing only, as the cemetery is on private property and locked',
+          hours: 'Open during daylight hours',
+          price: 'Free',
+          tip: 'Be respectful—this is an active cemetery where descendants still visit family plots',
+          images: [
+            {
+              src: '/tampa/hidden-gems/italian-cemetery.png',
+              alt: 'L\'Unione Italiana Cemetery headstones',
+            },
+          ],
           sources: [
             {
               title: 'Tampa\'s Italian Immigrant Heritage',
@@ -769,6 +690,12 @@ export const tampa: CityData = {
           hours: 'Mon-Sat 10am-5pm',
           website: 'https://www.kingcoronacigars.com/',
           tip: 'Free to watch the cigar rollers work, but it\'s courteous to buy something—support a piece of living history',
+          images: [
+            {
+              src: '/tampa/hidden-gems/king-corona.png',
+              alt: 'King Corona Cigars Factory hand-rolling',
+            },
+          ],
           sources: [
             {
               title: 'Ybor City Cigar Heritage',
@@ -777,33 +704,16 @@ export const tampa: CityData = {
           ],
         },
         {
-          id: 'tam-gem-20',
-          type: 'hidden-gem',
-          name: 'La Gaceta Newspaper Office',
-          category: 'Quirky Specialty',
-          description: 'La Gaceta, founded in 1922, is the only trilingual newspaper in the United States, publishing every article in English, Spanish, and Italian to serve Tampa\'s diverse immigrant communities. For over a century, it has documented Ybor City\'s cigar workers, social clubs, political struggles, and cultural life—serving as a paper of record for Cuban, Spanish, and Italian immigrants and their descendants. The newspaper\'s small office on 13th Street in Ybor is a time capsule: original linotype machines (no longer used but preserved for history), metal type trays, printing equipment, and archives containing decades of back issues documenting Tampa\'s immigrant heritage. The staff—many of whom have worked there for decades—are passionate about Ybor\'s history and genuinely welcoming to visitors who stop by. They\'ll show you the old equipment, explain how the trilingual format works, and share stories about the neighborhood\'s golden age. La Gaceta still publishes weekly, covering local news, cultural events, and obituaries in all three languages. It survives through community support, classified ads, and sheer stubbornness. Visiting feels like stepping into a 1950s newsroom, complete with the smell of ink and paper. Stop in—seriously, they love when people show interest.',
-          location: 'Ybor City',
-          address: '1802 N 13th St, Tampa, FL 33605',
-          coordinates: { lat: 27.9615, lng: -82.4467 },
-          hours: 'Mon-Fri 9am-5pm',
-          website: 'https://www.lagacetanewspaper.com/',
-          tip: 'Stop by the office and ask for a tour—staff are friendly and happy to show visitors the historic printing equipment and archives',
-          sources: [
-            {
-              title: 'La Gaceta History',
-              url: 'https://www.lagacetanewspaper.com/',
-            },
-            {
-              title: 'Tampa\'s Trilingual Newspaper Tradition',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
-        },
-        {
           id: 'tam-gem-21',
           type: 'hidden-gem',
           name: 'Manatee Viewing Center at TECO',
           category: 'Quirky Specialty',
+          images: [
+            {
+              src: '/tampa/hidden-gems/manatee-watching.png',
+              alt: 'Manatees gathering at TECO Viewing Center',
+            },
+          ],
           description: 'At the TECO Big Bend Power Station in Apollo Beach, an unexpected ecological phenomenon occurs every winter: hundreds of West Indian manatees gather in the warm-water discharge from the plant\'s cooling system. Manatees are sensitive to cold and struggle when water temperatures drop below 68°F. The power plant discharges water at around 72°F into a protected canal, creating an artificial warm-water refuge that manatees have learned to depend on during Florida\'s cooler months. On the coldest winter mornings, as many as 300-400 manatees can be seen clustered in the discharge canal, breathing, nursing calves, and socializing in the warmth. The TECO Manatee Viewing Center, opened in 1986, provides an elevated observation platform, boardwalks, and interpretive exhibits explaining this unusual symbiosis between endangered wildlife and industrial infrastructure. The center is completely free, staffed by knowledgeable volunteers, and offers one of the best manatee-viewing experiences in Florida. Peak season runs from November through March, especially on cold mornings after a cold front. Beyond the manatees, the surrounding 50-acre park features nature trails, butterfly gardens, and birdwatching opportunities. It\'s a surreal and beautiful juxtaposition—smokestacks rising behind peaceful waterways where ancient marine mammals gather to survive. Most Tampa residents have no idea it exists.',
           location: 'Apollo Beach',
           address: '6990 Dickman Rd, Apollo Beach, FL 33572',
@@ -835,6 +745,16 @@ export const tampa: CityData = {
           hours: 'Mon-Fri 11am-5pm, Sat 11am-7pm, closed Sun',
           website: 'https://www.dysfunctionalgrace.shop/',
           tip: 'Don\'t skip the museum room in back—throw a few dollars in the donation box and explore the really weird stuff',
+          images: [
+            {
+              src: '/tampa/hidden-gems/dysfunctional-grace-1.png',
+              alt: 'Dysfunctional Grace Art Co. interior',
+            },
+            {
+              src: '/tampa/hidden-gems/dysfunctional-grace-2.png',
+              alt: 'Dysfunctional Grace oddities',
+            },
+          ],
           sources: [
             {
               title: 'Dysfunctional Grace - Atlas Obscura',
@@ -857,6 +777,16 @@ export const tampa: CityData = {
           price: 'Free admission; food is cash only',
           website: 'https://wattampa.com/',
           tip: 'Arrive by 10am, bring cash, and wear shoes you can slip off easily—the temple is worth exploring after you eat',
+          images: [
+            {
+              src: '/tampa/curiosities/thai-temple-1.png',
+              alt: 'Wat Mongkolratanaram Thai Temple',
+            },
+            {
+              src: '/tampa/curiosities/thai-temple-2.png',
+              alt: 'Thai Sunday Market',
+            },
+          ],
           sources: [
             {
               title: 'Wat Mongkolratanaram - Atlas Obscura',
@@ -891,6 +821,18 @@ export const tampa: CityData = {
             { src: '/tampa/bars/jekyll-3.png', alt: 'Intimate bar seating' },
             { src: '/tampa/bars/jekyll-4.png', alt: 'Jekyll moody ambiance' },
           ],
+        },
+        {
+          name: 'The Bunker',
+          neighborhood: 'Downtown',
+          vibe: 'Craft cocktails inside a century-old bank vault beneath the historic federal courthouse.',
+          order: 'Trust the bartender. The cocktail menu rotates and they know the space.',
+          why: 'Hidden in the basement of Le Méridien Tampa—housed in the 1905 Federal Courthouse—The Bunker occupies an original bank vault with three-foot-thick walls, a massive steel door still on its hinges, and safety deposit boxes embedded in brick. The space served as the courthouse\'s evidence room, then a bank vault. Upstairs, the grand courtrooms hosted trials of bootleggers and gangsters during Tampa\'s mob era. Charlie Wall—"The White Shadow" and Tampa\'s most notorious mob boss—testified here multiple times before his brutal unsolved murder in 1955. Santo Trafficante Sr. faced federal prosecutors in these same halls. Today, the intimate 30-seat bar maintains the industrial aesthetic: exposed brick, low ceilings, dim Edison bulbs, and cocktails served where evidence and cash once sat locked away.',
+          address: '601 N Florida Ave, Tampa, FL 33602',
+          coordinates: { lat: 27.9495, lng: -82.4586 },
+          price: '$$$',
+          website: 'https://www.marriott.com/en-us/hotels/tpasi-le-meridien-tampa-the-courthouse/dining/',
+          hours: 'Wed-Sat 5pm-midnight',
         },
         {
           name: 'The Bricks of Ybor',

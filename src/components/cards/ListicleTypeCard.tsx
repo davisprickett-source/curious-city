@@ -70,8 +70,8 @@ export function ListicleTypeCard({ listicle, index = 0, inView = true }: Listicl
       initial={{ opacity: 0, y: 30, x: 20 }}
       animate={inView ? { opacity: 1, y: 0, x: 0 } : { opacity: 0, y: 30, x: 20 }}
       transition={{
-        duration: 0.6,
-        delay: index * 0.1,
+        duration: 1.0,
+        delay: index * 0.12,
         ease: [0.16, 1, 0.3, 1],
       }}
       className="flex-none shrink-0 w-[320px] md:w-[380px] xl:w-[420px]"

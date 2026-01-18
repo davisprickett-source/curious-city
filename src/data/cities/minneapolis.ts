@@ -2152,7 +2152,12 @@ export const minneapolis: CityData = {
           price: '$$',
           website: 'https://matchboxcoffeeshop.com',
           instagram: '@matchboxcoffeempls',
-          images: [],
+          images: [
+            {
+              src: '/minneapolis/coffee-shops/matchbox.png',
+              alt: 'Matchbox Coffee worker-owned cooperative',
+            },
+          ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/matchbox-coffee/menu.jpg',
             alt: 'Matchbox Coffee menu board with cold press and pastries',
@@ -2206,6 +2211,14 @@ export const minneapolis: CityData = {
           website: 'https://islesbun.com',
           instagram: '@islesbun',
           images: [
+            {
+              src: '/minneapolis/coffee-shops/isles-bun-1.png',
+              alt: 'Isles Bun & Coffee shop',
+            },
+            {
+              src: '/minneapolis/coffee-shops/isles-bun-2.png',
+              alt: 'Isles Bun & Coffee cinnamon rolls',
+            },
             {
               src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-2.png',
               alt: 'Isles Bun & Coffee award-winning cinnamon rolls with cream cheese frosting',
@@ -2515,6 +2528,14 @@ export const minneapolis: CityData = {
           website: 'https://kramarczuks.com',
           instagram: '@kramarczuks',
           images: [
+            {
+              src: '/minneapolis/restaurants/kramarczuk-1.png',
+              alt: 'Kramarczuk\'s interior',
+            },
+            {
+              src: '/minneapolis/restaurants/kramarczuk-2.png',
+              alt: 'Kramarczuk\'s Eastern European cuisine',
+            },
             {
               src: '/minneapolis/restaurants/kramarczuks-1.png',
               alt: 'Kramarczuk\'s deli counter with Eastern European sausages and meats',
@@ -3364,6 +3385,10 @@ export const minneapolis: CityData = {
           lastAddress: '313 14th Ave SE, Minneapolis',
           images: [
             {
+              src: '/minneapolis/lost-and-loved/annies.png',
+              alt: "Annie's Parlour",
+            },
+            {
               src: '/minneapolis/lost-and-loved/new-Annies.png',
               alt: "Annie's Parlour exterior and interior",
             }
@@ -3625,6 +3650,10 @@ export const minneapolis: CityData = {
           communityVoice: '"A Streamline Moderne landmark that connected us to 1940s Minneapolis." — Minneapolis Preservation',
           lastAddress: '2707 E Lake St, Minneapolis',
           images: [
+            {
+              src: '/minneapolis/lost-and-loved/town-talk.png',
+              alt: 'Town Talk Diner',
+            },
             {
               src: '/minneapolis/lost-and-loved/new-Town-talk.png',
               alt: 'Town Talk Diner exterior',

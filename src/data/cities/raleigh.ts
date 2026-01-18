@@ -142,7 +142,7 @@ export const raleigh: CityData = {
                           body: 'In 1931, Amelia Earhart landed at Raleigh Municipal Airport—the city\'s first airport, which opened in 1929 with three runways at what\'s now Tryon Road and Highway 70. During her visit, Earhart met 15-year-old Katharine Stinson, an aspiring pilot. Earhart\'s advice was blunt: "Don\'t become a pilot, become an engineer." Stinson took it to heart. She enrolled at NC State and in 1945 became the university\'s first female engineering graduate. The airport operated until 1973, when Raleigh-Durham International replaced it. For decades, the crumbling ruins of the original runway remained visible in an undeveloped field. In 2024, those ruins were finally buried beneath a new apartment complex. The complex\'s name? The Ninety-Nine—named after the women\'s aviation organization Amelia Earhart once led. A fitting tribute: the place where Earhart redirected one woman\'s ambition now bears the name of the group she founded to lift others.',
                                                     images: [
                             {
-                              src: '/raleigh/curiosities/earhart-raleigh.png',
+                              src: '/raleigh/curiosities/earhart.png',
                               alt: 'Amelia Earhart at Raleigh Municipal Airport in 1931',
                               credit: 'Historical Photo',
                             },
@@ -1366,6 +1366,10 @@ export const raleigh: CityData = {
           hours: 'Mon-Sat 11am-4pm',
           images: [
             {
+              src: '/raleigh/restaurants/roast-grill-0.png',
+              alt: 'The Roast Grill exterior',
+            },
+            {
               src: '/raleigh/restaurants/roast-grill-1.png',
               alt: 'The Roast Grill original 1940s lunch counter',
             },
@@ -1386,6 +1390,10 @@ export const raleigh: CityData = {
               src: '/raleigh/restaurants/person-pharmacy-1.png',
               alt: 'Person Street Pharmacy vintage lunch counter',
             },
+            {
+              src: '/raleigh/restaurants/person-pharmacy-2.png',
+              alt: 'Person Street Pharmacy interior',
+            },
           ],
         },
 
@@ -1401,6 +1409,12 @@ export const raleigh: CityData = {
           hours: 'Mon-Thu 5pm-10pm, Fri 5pm-11pm, Sat 11am-11pm, Sun 11am-10pm',
           website: 'https://strochraleigh.com/',
           instagram: '@strochraleigh',
+          images: [
+            {
+              src: '/raleigh/restaurants/stroch-1.png',
+              alt: 'St. Roch Fine Oysters & Bar',
+            },
+          ],
         },
         {
           name: 'The Cortez',
@@ -1414,6 +1428,12 @@ export const raleigh: CityData = {
           hours: 'Tue-Sat 5pm-10pm, Sun 11am-2:30pm (Brunch)',
           website: 'https://www.instagram.com/cortezraleigh/',
           instagram: '@cortezraleigh',
+          images: [
+            {
+              src: '/raleigh/restaurants/cortez-1.png',
+              alt: 'The Cortez interior',
+            },
+          ],
         },
         {
           name: 'Poole\'s Diner',

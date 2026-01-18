@@ -857,6 +857,7 @@ export const colorado_springs: CityData = {
             'Housed in the Fire Operations Center, this free museum showcases antique fire carriages, hand-pulled pumpers, horse-drawn steamers, and early motorized engines dating back to the 1800s. The collection tells the story of Colorado Springs firefighting heritage with remarkable artifacts including leather fire buckets, brass nozzles, and historic photographs. Zero tourist crowds and completely free admission make this one of the city\'s most overlooked gems.',
           images: [
             { src: '/colorado-springs/hidden-gems/fire-museum-1.png', alt: 'Antique fire engine display' },
+            { src: '/colorado-springs/hidden-gems/fire-museum-2.png', alt: 'Historic fire equipment' },
           ],
           address: '375 Printers Pkwy, Colorado Springs, CO 80910',
           coordinates: { lat: 38.7989, lng: -104.7567 },
@@ -873,6 +874,7 @@ export const colorado_springs: CityData = {
             'Overshadowed by The Broadmoor Hotel next door, this free museum showcases 30 historic carriages and 15 competition race cars from the Pikes Peak International Hill Climb—the second-oldest motorsport event in the United States, running since 1916. The personal legacy of Spencer and Julie Penrose comes alive through photographs, trophies, and the vehicles that conquered "America\'s Mountain." Self-guided tours take about two hours and reveal remarkable automotive and regional history.',
           images: [
             { src: '/colorado-springs/hidden-gems/penrose-heritage-1.png', alt: 'Historic race car at Penrose Museum' },
+            { src: '/colorado-springs/hidden-gems/penrose-heritage-2.png', alt: 'Penrose Heritage Museum carriage collection' },
           ],
           address: '11 Lake Cir, Colorado Springs, CO 80906',
           coordinates: { lat: 38.7912, lng: -104.8512 },

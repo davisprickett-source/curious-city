@@ -174,6 +174,27 @@ const FRAME_COUNTS: Record<string, number> = {
   'chicago-12': 120,
   'chicago-13': 78,
   'chicago-14': 78,
+  // Seattle sequences
+  'seattle-1': 78,
+  'seattle-2': 58,
+  'seattle-3': 78,
+  'seattle-4': 78,
+  'seattle-5': 78,
+  'seattle-6': 78,
+  'seattle-7': 78,
+  'seattle-8': 78,
+  'seattle-9': 78,
+  'seattle-10': 78,
+  'seattle-11': 78,
+  'seattle-12': 43,
+  'seattle-13': 78,
+  'seattle-14': 78,
+  'seattle-15': 66,
+  'seattle-16': 78,
+  'seattle-17': 78,
+  'seattle-18': 78,
+  'seattle-19': 78,
+  'seattle-20': 78,
 }
 
 // Circular loading animation component - centered in parent
@@ -272,7 +293,10 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
       'dallas': 'dallas',
       'slc': 'salt-lake-city',
       'anchorage': 'anchorage',
-      'denver': 'denver'
+      'denver': 'denver',
+      'seattle': 'seattle',
+      'chicago': 'chicago',
+      'fargo': 'fargo',
     }
     const city = cityMap[cityPrefix] || cityPrefix
     // Use R2 CDN if available, otherwise local path
@@ -688,6 +712,15 @@ const cityHistoryEssays: Record<string, { title: string; subtitle: string; slug:
   ],
   denver: [
     { title: 'Mile High and Rising', subtitle: 'From mining camp to mountain metropolis', slug: 'mile-high-and-rising', thumbnail: '/sequences/denver/denver-1/frame_0001.webp' }
+  ],
+  seattle: [
+    { title: 'Rain City Rising', subtitle: 'Lumber, fish, airplanes, and the particular genius of turning gray skies into gold', slug: 'rain-city-rising', thumbnail: '/sequences/seattle/seattle-1/frame_0001.webp' }
+  ],
+  chicago: [
+    { title: 'The Swamp That Worked', subtitle: 'Reversed rivers, inverted skyscrapers, and the stubborn insistence that this swamp is exactly where a great city belongs', slug: 'the-swamp-that-worked', thumbnail: '/sequences/chicago/chicago-1/frame_0001.webp' }
+  ],
+  fargo: [
+    { title: 'The Plains Persistence', subtitle: 'How a frontier outpost became the unlikely cultural capital of the northern plains', slug: 'the-plains-persistence', thumbnail: '/sequences/fargo/fargo-1/frame_0001.webp' }
   ],
 }
 

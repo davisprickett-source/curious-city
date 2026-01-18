@@ -122,6 +122,13 @@ export const anchorage_history: Record<string, History> = {
           content: 'The making of a serial killer often begins with rejection, and Hansen\'s began early. Born in Iowa in 1939, he grew up with severe acne and a pronounced stutter that made him a target for bullying. Girls avoided him. Social situations tormented him. The only place he found competence was in the woods, where he learned to track and hunt with a patience that bordered on obsession. He would later tell investigators that his resentment of women—especially attractive women who had rejected him—began in those adolescent years. The hunting skills he developed as a lonely teenager in the Iowa countryside would eventually find different prey.',
         },
         {
+          id: 'img1',
+          type: 'image',
+          src: '/anchorage/dark-history/hansen-1.png',
+          alt: 'Robert Hansen',
+          caption: 'Robert Hansen ran a respected bakery in downtown Anchorage while leading a double life as a serial killer.',
+        },
+        {
           id: 'break1',
           type: 'break',
           style: 'dots',
@@ -152,6 +159,13 @@ export const anchorage_history: Record<string, History> = {
           content: 'His method was almost recreational. Hansen would approach women from the clubs, sometimes posing as a customer, sometimes offering money for sex. Once he had them alone, he would abduct them at gunpoint, take them to his home where he had built a soundproof room, assault them, and then load them into his Piper Super Cub. He would fly them to remote areas of the Knik River Valley—land he knew intimately from years of legitimate hunting. There, he would give them a head start and hunt them with a Ruger Mini-14 rifle and a hunting knife. The skills he had developed tracking deer and moose in Iowa he now applied to women running for their lives through the Alaska wilderness.',
         },
         {
+          id: 'img2',
+          type: 'image',
+          src: '/anchorage/dark-history/hansen-3.png',
+          alt: 'The Knik River Valley wilderness',
+          caption: 'Hansen used his bush plane to fly victims to remote areas of the Knik River Valley, where he hunted them.',
+        },
+        {
           id: 'ad1',
           type: 'ad',
           size: 'banner',
@@ -175,6 +189,13 @@ export const anchorage_history: Record<string, History> = {
           id: 'p8',
           type: 'paragraph',
           content: 'Hansen eventually confessed to seventeen murders, though investigators suspect there were more. He led them to twelve burial sites in the wilderness. The other bodies have never been found. Some of his victims remain unidentified even now. "Eklutna Annie," found in 1980, was given her name by investigators because they didn\'t know who she was—she was likely Hansen\'s first kill, murdered around 1979. "Horseshoe Harriet" remained nameless for four decades until DNA genealogy identified her in 2022 as Robin Pelkey, a woman who had been living in Anchorage in the early 1980s. The wilderness that Hansen used as his hunting ground also served as his accomplice, hiding his victims so thoroughly that many will likely never be found.',
+        },
+        {
+          id: 'img3',
+          type: 'image',
+          src: '/anchorage/dark-history/hansen-4.png',
+          alt: 'Hansen investigation',
+          caption: 'Investigators found an aviation map in Hansen\'s home with marked locations where he had buried his victims.',
         },
         {
           id: 'break2',
@@ -205,6 +226,13 @@ export const anchorage_history: Record<string, History> = {
           id: 'p11',
           type: 'paragraph',
           content: 'The investigation into Hansen\'s victims continues. In 2022, the DNA Doe Project identified Robin Pelkey after forty years. Other victims remain nameless, their identities lost to time and the deliberate anonymity that Hansen sought in his targets. Somewhere in the Knik River Valley, there may be graves that have never been found, women whose families never knew what happened to them, whose disappearances were never even reported. The Alaska wilderness is vast enough to keep secrets indefinitely. Hansen understood this. He counted on it.',
+        },
+        {
+          id: 'img4',
+          type: 'image',
+          src: '/anchorage/dark-history/hansen-5.png',
+          alt: 'Alaska wilderness',
+          caption: 'The vast Alaska backcountry where Hansen buried his victims—some of whom have never been found.',
         },
         {
           id: 'ad2',

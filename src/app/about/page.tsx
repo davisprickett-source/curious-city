@@ -1,5 +1,6 @@
 import { Header, Footer } from '@/components'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About - Curious City',
@@ -128,16 +129,12 @@ export default function AboutPage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-4">Support Independent Media</h2>
                 <p className="text-neutral-700 mb-4">
-                  Curious City is independently operated and supported by our readers. We display tasteful advertisements to keep our content free and accessible to everyone. We never compromise our editorial integrity—our recommendations are based on quality and authenticity, not payment.
-                </p>
-                <p className="text-neutral-700 mb-4">
-                  If you find our content valuable, the best way to support us is to:
+                  Curious City is independently operated. Our recommendations are based on quality and authenticity, not payment. If you find our content valuable, you can <Link href="/support" className="text-[#c65d3b] hover:underline">support the project directly</Link> or help by:
                 </p>
                 <ul className="list-disc pl-6 mb-4 text-neutral-700 space-y-2">
-                  <li>Share articles with friends and on social media</li>
-                  <li>Visit the local establishments we recommend</li>
-                  <li>Subscribe to our newsletter for weekly discoveries</li>
-                  <li>Follow us on social media for daily curiosities</li>
+                  <li>Sharing articles with friends and on social media</li>
+                  <li>Visiting the local establishments we recommend</li>
+                  <li>Sending us tips about hidden gems and stories we&apos;ve missed</li>
                 </ul>
               </section>
 
