@@ -183,17 +183,10 @@ function ArticleBlockRenderer({
       )
 
     case 'callout':
-      const calloutStyles = {
-        info: 'bg-blue-50 border-blue-200 text-blue-900',
-        tip: 'bg-green-50 border-green-200 text-green-900',
-        warning: 'bg-yellow-50 border-yellow-200 text-yellow-900',
-        success: 'bg-emerald-50 border-emerald-200 text-emerald-900',
-      }
+      // All callouts use consistent rust/accent styling
       return (
         <div
-          className={`my-8 p-6 border-l-4 rounded-r-lg ${
-            calloutStyles[block.variant || 'info']
-          }`}
+          className="my-8 p-6 border-l-4 rounded-r-lg bg-accent-50 border-accent-400 text-neutral-800"
         >
           {block.title && (
             <h4 className="font-semibold mb-2">{block.title}</h4>

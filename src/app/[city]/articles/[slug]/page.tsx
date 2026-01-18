@@ -117,7 +117,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
 
         <main className="flex-1">
           {/* Article Header */}
-          <article className="section-spacing">
+          <article>
             {/* Video Version Banner - show if this article has video sequences */}
             {hasVideoSequences && (
               <div className="bg-gradient-to-r from-accent-50 to-accent-100 border-b border-accent-200">
@@ -184,7 +184,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             </div>
 
             {/* Article Content */}
-            <div className="container-page">
+            <div className="container-page pt-10 md:pt-14">
               <div className="max-w-3xl mx-auto">
                 {article.formats.longform.enabled && (
                   <ArticleRenderer
