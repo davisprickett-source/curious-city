@@ -152,6 +152,14 @@ export default function RootLayout({
           }}
         />
 
+        {/* Ahrefs Analytics */}
+        <Script
+          id="ahrefs-analytics"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="4c2N7INVEXY/mfE3hAxgnQ"
+          strategy="afterInteractive"
+        />
+
         {/* Google AdSense */}
         {ADSENSE_CLIENT_ID && (
           <Script
