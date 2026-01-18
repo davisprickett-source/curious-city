@@ -3,6 +3,7 @@
  * Docs: https://docs.viator.com/partner-api/
  */
 
+import { unstable_cache } from 'next/cache'
 import type {
   ViatorProduct,
   ViatorSearchParams,
@@ -302,7 +303,28 @@ export function createViatorClient(): ViatorClient {
 }
 
 /**
- * Get tours for a city (with caching in Next.js)
+ * Internal function to fetch tours (called by cached wrapper)
+ */
+async function fetchCityToursInternal(
+  citySlug: string,
+  category?: TourCategory,
+  count?: number
+): Promise<NormalizedTour[]> {
+  console.log('[Viator] Fetching tours for:', citySlug)
+
+  try {
+    const client = createViatorClient()
+    const tours = await client.fetchTours(citySlug, { category, count })
+    console.log('[Viator] Tours fetched:', tours.length)
+    return tours
+  } catch (error) {
+    console.error('[Viator] Error fetching city tours:', error)
+    return []
+  }
+}
+
+/**
+ * Get tours for a city (cached for 1 hour)
  */
 export async function getCityTours(
   citySlug: string,
@@ -311,16 +333,16 @@ export async function getCityTours(
     count?: number
   }
 ): Promise<NormalizedTour[]> {
-  console.log('[Viator] getCityTours called with:', { citySlug, options })
-  console.log('[Viator] API key exists:', !!process.env.VIATOR_API_KEY)
+  const cacheKey = `viator-tours-${citySlug}-${options?.category || 'all'}-${options?.count || 20}`
 
-  try {
-    const client = createViatorClient()
-    const tours = await client.fetchTours(citySlug, options)
-    console.log('[Viator] Tours fetched:', tours.length)
-    return tours
-  } catch (error) {
-    console.error('[Viator] Error fetching city tours:', error)
-    return []
-  }
+  const cachedFetch = unstable_cache(
+    () => fetchCityToursInternal(citySlug, options?.category, options?.count),
+    [cacheKey],
+    {
+      revalidate: 3600, // Cache for 1 hour
+      tags: ['viator-tours', `viator-${citySlug}`],
+    }
+  )
+
+  return cachedFetch()
 }

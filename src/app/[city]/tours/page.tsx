@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import { Fragment } from 'react'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 
-// Force dynamic rendering to fetch fresh tour data
-export const dynamic = 'force-dynamic'
+// Revalidate page every hour (matches API cache)
+export const revalidate = 3600
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { BreadcrumbSchema } from '@/components/StructuredData'
