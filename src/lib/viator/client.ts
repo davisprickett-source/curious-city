@@ -262,9 +262,12 @@ export class ViatorClient {
       count?: number
     }
   ): Promise<NormalizedTour[]> {
+    console.log('[Viator] fetchTours for:', citySlug)
     const destId = this.getDestinationId(citySlug)
+    console.log('[Viator] Destination ID:', destId)
+
     if (!destId) {
-      console.warn(`No destination ID found for city: ${citySlug}`)
+      console.warn(`[Viator] No destination ID found for city: ${citySlug}`)
       return []
     }
 
@@ -272,6 +275,7 @@ export class ViatorClient {
       destId,
       count: options?.count || 20,
     })
+    console.log('[Viator] Products returned:', products.length)
 
     let normalized = products.map((p) => this.normalizeProduct(p))
 
@@ -307,11 +311,16 @@ export async function getCityTours(
     count?: number
   }
 ): Promise<NormalizedTour[]> {
+  console.log('[Viator] getCityTours called with:', { citySlug, options })
+  console.log('[Viator] API key exists:', !!process.env.VIATOR_API_KEY)
+
   try {
     const client = createViatorClient()
-    return await client.fetchTours(citySlug, options)
+    const tours = await client.fetchTours(citySlug, options)
+    console.log('[Viator] Tours fetched:', tours.length)
+    return tours
   } catch (error) {
-    console.error('Error fetching city tours:', error)
+    console.error('[Viator] Error fetching city tours:', error)
     return []
   }
 }
