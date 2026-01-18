@@ -48,9 +48,9 @@ export const goodFridayEarthquake: Article = {
         },
         {
           type: 'quote',
-          content: 'It just kept going. Every time you thought it was over, it would start again. People were on the ground, clutching anything they could hold onto. Four minutes feels like forever when the world is falling apart.',
-          attribution: 'Survivor testimony',
-          role: 'Anchorage resident',
+          content: 'We must be together. As long as we are together, we are confident of the future. Mass hysteria would have meant total destruction.',
+          attribution: 'Genie Chance',
+          role: 'Radio broadcaster, KENI',
         },
         {
           type: 'paragraph',

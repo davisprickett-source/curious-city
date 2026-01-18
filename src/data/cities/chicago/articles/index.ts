@@ -116,9 +116,9 @@ export const eastlandDisaster: Article = {
         },
         {
           type: 'quote',
-          content: 'I can still hear the screaming. Women. Children. Men calling for their families. And I was standing right there on the dock. There was nothing I could do. Nothing anyone could do.',
-          attribution: 'Witness account',
-          role: 'From Chicago Tribune, July 25, 1915',
+          content: 'The boat turned over on its side... like a sleepy whale. There was no warning.',
+          attribution: 'Eastland Survivor',
+          role: 'Oral history interview',
         },
         {
           type: 'paragraph',

@@ -52,7 +52,7 @@ export const lakeAgassiz: Article = {
         },
         {
           type: 'quote',
-          content: 'Lake Agassiz was not merely large. It was a different category of lake — a continental feature that influenced climate, ecology, and eventually human settlement across the entire central continent.',
+          content: 'It was the largest lake in the world... Every lake gets to a point where it flows over, and Lake Agassiz was the same.',
           attribution: 'Dr. James Teller',
           role: 'University of Manitoba geologist',
         },

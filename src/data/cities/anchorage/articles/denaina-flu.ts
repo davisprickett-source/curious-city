@@ -153,9 +153,9 @@ export const denainaFlu: Article = {
         },
         {
           type: 'quote',
-          content: 'After the sickness, there were so few of us left. The old people who knew the stories died. The young people who might have learned were gone. We lost more than people. We lost our knowledge. We lost ourselves.',
+          content: 'Six hundred of seven hundred Dena\'ina... were "wiped out". We\'re only a few people left.',
           attribution: 'Shem Pete',
-          role: 'Dena\'ina historian, 1980s',
+          role: 'Dena\'ina elder and historian',
         },
         {
           type: 'ad',

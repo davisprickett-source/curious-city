@@ -152,9 +152,9 @@ export const integratedCircuit: Article = {
         },
         {
           type: 'quote',
-          content: 'What we didn\'t realize in 1958 was that this was the beginning of something that would change every aspect of human civilization. We thought we were solving a wiring problem. We were actually inventing the future.',
+          content: 'What we didn\'t realize then was that the integrated circuit would reduce the cost of electronic functions by a factor of a million to one. Nothing had ever done that for anything before.',
           attribution: 'Jack Kilby',
-          role: 'Reflecting on the invention, 1988',
+          role: 'Nobel Prize acceptance speech, 2000',
         },
         {
           type: 'ad',

@@ -60,9 +60,9 @@ export const victimOfTheBeast: Article = {
         },
         {
           type: 'quote',
-          content: 'Everyone wants Lilly Gray to be a victim of the devil. The truth is she was a victim of her husband\'s obsessions. That\'s less romantic, but it\'s what actually happened.',
-          attribution: 'Utah historian',
-          role: 'Salt Lake Tribune interview',
+          content: 'I have been kidnapped by five democrat officials... and the Beast 666.',
+          attribution: 'Elmer Lewis Gray',
+          role: 'Pardon Application, 1947',
         },
         {
           type: 'ad',
@@ -149,9 +149,9 @@ export const victimOfTheBeast: Article = {
         },
         {
           type: 'quote',
-          content: 'The grave has become a mirror. People see what they want to see in it. The ones who want demons find demons. The ones who want conspiracy find conspiracy. The truth — that it\'s just a sad man\'s delusion — doesn\'t satisfy anyone.',
-          attribution: 'Cemetery historian',
-          role: 'Utah Genealogical Society',
+          content: 'There was no cult. There was no ritual. There was just a man who was mentally ill and angry at the government.',
+          attribution: 'Richelle Hawks',
+          role: 'Researcher who solved the mystery',
         },
         {
           type: 'heading',

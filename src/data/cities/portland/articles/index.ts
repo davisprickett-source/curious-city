@@ -51,9 +51,9 @@ export const vanportFlood: Article = {
         },
         {
           type: 'quote',
-          content: 'Vanport was segregated in practice but not on paper. Black families were concentrated in certain sections. We knew where we were and weren\'t welcome. But at least we had somewhere to live.',
-          attribution: 'Vanport resident',
-          role: 'Oral history interview',
+          content: 'It was just a place where blacks could live... In a place as white as Portland, a city that was one-third black was a terrifying prospect. It scared the crud out of Portland.',
+          attribution: 'Ed Washington',
+          role: 'Vanport survivor and community leader',
         },
         {
           type: 'ad',
@@ -155,7 +155,7 @@ export const vanportFlood: Article = {
         },
         {
           type: 'quote',
-          content: 'Vanport created a Black community in Portland. The flood displaced it. What happened afterward — Albina, the I-5 corridor, urban renewal — you can\'t understand any of it without understanding Vanport.',
+          content: 'The flood that washed away Vanport did not solve the housing problem—it swept in the final phase of "ghetto building" in the central city.',
           attribution: 'Karen Gibson',
           role: 'Urban historian, Portland State University',
         },

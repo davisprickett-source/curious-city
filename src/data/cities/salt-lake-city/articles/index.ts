@@ -47,8 +47,9 @@ export const japanBalloonBombs: Article = {
         },
         {
           type: 'quote',
-          content: 'The balloon bomb was the first intercontinental weapon system ever deployed. Japan was trying to accomplish in 1944 what would later require ICBMs.',
-          attribution: 'Military historian',
+          content: 'The Fu-Go weapon was the first intercontinental ballistic missile... It was a weapon of terror, designed to cause panic.',
+          attribution: 'Ross Coen',
+          role: 'Author, "Fu-Go: The Curious History of Japan\'s Balloon Bomb Attack"',
         },
         {
           type: 'paragraph',
@@ -100,8 +101,9 @@ export const japanBalloonBombs: Article = {
         },
         {
           type: 'quote',
-          content: 'If people had been warned about what to look for—if the blackout hadn\'t been total—those six people might have walked away instead of pulling on a strange device in the woods.',
-          attribution: 'Historian',
+          content: 'Elsie called to us to look at what she had found. She was just a few feet away... then there was a terrible explosion. I ran to them, but they were all dead.',
+          attribution: 'Archie Mitchell',
+          role: 'Survivor and husband of Elsie Mitchell',
         },
         {
           type: 'paragraph',

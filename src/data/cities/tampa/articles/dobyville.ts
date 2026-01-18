@@ -87,9 +87,9 @@ export const dobyville: Article = {
         },
         {
           type: 'quote',
-          content: 'They said it was about traffic. But somehow the traffic always seemed to flow through Black neighborhoods. White areas got bypassed. We got demolished.',
-          attribution: 'Civil rights activist',
-          role: 'Tampa, 1970s',
+          content: 'You can\'t tell the story of Hyde Park without telling the story of Dobyville... The expressway deals a crushing blow to that neighborhood.',
+          attribution: 'Rodney Kite-Powell',
+          role: 'Historian, Tampa Bay History Center',
         },
         {
           type: 'heading',

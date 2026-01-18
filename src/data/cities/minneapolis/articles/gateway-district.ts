@@ -63,9 +63,9 @@ export const gatewayDistrict: Article = {
         },
         {
           type: 'quote',
-          content: 'Everything happened at the Gateway. It was where you got off the train. It was where you found a job. It was where you saw the city for the first time. It was Minneapolis.',
-          attribution: 'Former Minneapolis resident',
-          role: 'Oral history, 1970s',
+          content: 'The Gateway was in desperate need of redevelopment. But the solution chosen by the city was an extreme one — total destruction.',
+          attribution: 'Larry Millett',
+          role: 'Historian, "Lost Twin Cities"',
         },
         {
           type: 'ad',

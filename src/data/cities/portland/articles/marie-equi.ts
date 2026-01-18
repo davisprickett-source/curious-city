@@ -60,9 +60,9 @@ export const marieEqui: Article = {
         },
         {
           type: 'quote',
-          content: 'She was a rebellious soul — generous, kind, brave but so radical in her thinking that she was almost an outcast in Portland.',
-          attribution: 'Margaret Sanger',
-          role: 'Birth control advocate',
+          content: 'She is an anarchist, a degenerate, and an abortionist.',
+          attribution: 'William Bryon',
+          role: 'Department of Justice Special Agent, 1918',
         },
         {
           type: 'ad',
@@ -149,9 +149,9 @@ export const marieEqui: Article = {
         },
         {
           type: 'quote',
-          content: 'They lived together as a family in early twentieth-century Portland, raising a daughter, defying every convention of their time. And somehow, they got away with it.',
-          attribution: 'Michael Helquist',
-          role: 'Biographer',
+          content: 'Equi was "a woman of rare intellectual attainments" but "dangerously radical" in her views.',
+          attribution: 'The Oregonian',
+          role: 'Newspaper editorial, 1918',
         },
         {
           type: 'paragraph',

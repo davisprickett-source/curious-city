@@ -188,9 +188,9 @@ export const lakeCliffPark: Article = {
         },
         {
           type: 'quote',
-          content: 'I remember going to Lake Cliff as a child — the sounds, the smells, the excitement. Then one day it was gone. They tore it all down. Nobody I know today has any idea what used to be there.',
-          attribution: 'Dallas resident',
-          role: 'Oral history interview, 1975',
+          content: '12,000 people swarmed through the gates at Lake Cliff Park last night... It is America\'s most Beautiful Summer Garden.',
+          attribution: 'Dallas Morning News',
+          role: 'July 5, 1906',
         },
         {
           type: 'ad',

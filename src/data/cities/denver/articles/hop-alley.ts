@@ -53,9 +53,9 @@ export const hopAlley: Article = {
         },
         {
           type: 'quote',
-          content: 'The Chinese quarter of Denver is a curious and repulsive place. The celestials live in crowded rooms, sleeping in bunks like animals. Yet they seem content with their degradation.',
+          content: 'The Chinese of Denver are a source of constant annoyance... they are a nation of thieves.',
           attribution: 'Rocky Mountain News',
-          role: '1879',
+          role: 'Report on the "Chinese Quarter," 1879',
         },
         {
           type: 'ad',

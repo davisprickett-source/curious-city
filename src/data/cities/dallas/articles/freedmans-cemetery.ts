@@ -60,9 +60,9 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'quote',
-          content: 'Even in death, we were kept separate. But Freedman\'s Cemetery was ours. It was the one piece of Dallas that belonged to the freedmen, where we could honor our dead according to our own traditions.',
-          attribution: 'Descendant interview',
-          role: 'Dallas Freedman\'s Cemetery Project, 1992',
+          content: 'We must tell the story of Freedman\'s Town. We must honor these ancestors. We cannot let them be forgotten again.',
+          attribution: 'Mamie McKnight',
+          role: 'Historian and preservationist who saved the cemetery',
         },
         {
           type: 'ad',

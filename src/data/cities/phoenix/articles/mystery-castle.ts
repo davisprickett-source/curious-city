@@ -60,9 +60,9 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'quote',
-          content: 'He didn\'t want us to watch him die. He didn\'t want to give us the disease. So he just... left. We didn\'t know if he was alive or dead.',
-          attribution: 'Mary Lou Gulley',
-          role: 'Interviews about her father',
+          content: 'Dearest Mary Lou: Can you forgive me? It wasn\'t art I wanted, it was you. I left home not because I wanted freedom but because I had tuberculosis.',
+          attribution: 'Boyce Gulley',
+          role: 'Letter to his daughter found in the trapdoor',
         },
         {
           type: 'ad',
@@ -163,9 +163,9 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'quote',
-          content: 'He kept the Valentine I made him when I was two years old. He carried it with him when he left Seattle. He kept it while he built this whole place. He was thinking of me the entire time.',
+          content: 'He told me... one day he would build me a castle big enough to live in, where there was no tide to wash it away.',
           attribution: 'Mary Lou Gulley',
-          role: 'After opening the trapdoor, 1948',
+          role: 'Recalling her father\'s promise',
         },
         {
           type: 'ad',

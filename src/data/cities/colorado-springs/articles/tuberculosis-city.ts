@@ -216,9 +216,9 @@ export const tuberculosisCity: Article = {
         },
         {
           type: 'quote',
-          content: 'Nobody remembers what we were. They see the megachurches and the military bases and they think that\'s always been Colorado Springs. But for fifty years, this was a city of invalids. We were built on disease.',
-          attribution: 'Local historian',
-          role: 'Pikes Peak Library District',
+          content: 'Tuberculosis was our first major industry in Colorado Springs. You cannot understand the history of the Pikes Peak region without understanding our connection to health care.',
+          attribution: 'Matt Mayberry',
+          role: 'Director, Colorado Springs Pioneers Museum',
         },
         {
           type: 'divider',

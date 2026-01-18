@@ -28,6 +28,12 @@ export const millEndsPark: Article = {
         },
         {
           type: 'image',
+          src: '/portland/curiosities/mill-ends-park.png',
+          alt: 'Mill Ends Park in Portland, the world\'s smallest park',
+          caption: 'Mill Ends Park: 452 square inches of official Portland city parkland in a traffic median on Naito Parkway.',
+        },
+        {
+          type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Dick_Fagan_and_Mill_Ends_Park%2C_1970s_%28cropped%29.jpg/800px-Dick_Fagan_and_Mill_Ends_Park%2C_1970s_%28cropped%29.jpg',
           alt: 'Dick Fagan, founder of Mill Ends Park, with the park',
           caption: 'Dick Fagan, the Oregon Journal columnist who founded Mill Ends Park, tending to his creation in the 1970s. Fagan\'s whimsical columns brought the tiny park to life for readers.',

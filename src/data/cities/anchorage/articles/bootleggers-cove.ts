@@ -149,9 +149,9 @@ export const bootleggersCove: Article = {
         },
         {
           type: 'quote',
-          content: 'They called him the Phantom Swede because you could never catch him. Or maybe because there were a dozen of him, and catching one didn\'t stop the others. Either way, the booze never stopped coming.',
-          attribution: 'Federal marshal',
-          role: 'Reminiscence, 1940s',
+          content: 'Anchorage was a wide-open town. Prohibition was observed mostly in the breach.',
+          attribution: 'Steve Haycox',
+          role: 'Alaska Historian',
         },
         {
           type: 'ad',

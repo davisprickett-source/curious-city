@@ -111,9 +111,9 @@ export const maxHeadroom: Article = {
         },
         {
           type: 'quote',
-          content: 'Whoever did this knew exactly what they were doing. This wasn\'t amateurs. This was someone with serious technical expertise and expensive equipment.',
-          attribution: 'Broadcast engineer',
-          role: 'Speaking to investigators, 1987',
+          content: 'He\'s obviously versed in broadcast engineering... he knew how to override the signal.',
+          attribution: 'FCC Official',
+          role: 'Investigation report, 1987',
         },
         {
           type: 'ad',

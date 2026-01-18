@@ -155,7 +155,7 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
             )}
 
             {/* Hero Section - Dark Background */}
-            <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
+            <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900 pt-14">
               <div className="container-page py-12 md:py-16">
                 <div className="max-w-3xl mx-auto">
                   {/* Share Button at Top - aligned right */}

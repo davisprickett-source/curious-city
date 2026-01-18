@@ -64,9 +64,9 @@ export const tornadoScience: Article = {
         },
         {
           type: 'quote',
-          content: 'It sounded like a freight train, but that doesn\'t capture it. It was louder than anything I\'d ever heard. And then our roof was gone, and I could see the sky through what used to be our house.',
-          attribution: 'Fargo survivor',
-          role: 'Interview, 1957',
+          content: 'I saw the rotating cloud... it was just a monster. It was the biggest thing I had ever seen.',
+          attribution: 'Dewey Bergquist',
+          role: 'WDAY Weatherman who filmed the tornado',
         },
         {
           type: 'ad',

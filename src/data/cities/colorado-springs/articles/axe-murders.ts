@@ -67,9 +67,9 @@ export const axeMurders: Article = {
         },
         {
           type: 'quote',
-          content: 'We have never seen anything like this. The violence, the planning, the way the bodies were arranged — this was not a crime of passion. This was something else entirely.',
-          attribution: 'Police Chief H.S. Birdsall',
-          role: 'Colorado Springs, September 1911',
+          content: 'The crime is the most cold-blooded and revolting in the history of the city. The murderer came in silence and vanished before dawn.',
+          attribution: 'Colorado Springs Gazette',
+          role: 'September 1911',
         },
         {
           type: 'ad',
@@ -128,9 +128,9 @@ export const axeMurders: Article = {
         },
         {
           type: 'quote',
-          content: 'We have exhausted every lead. The murderer came from somewhere else and went somewhere else. He left nothing behind but the bodies.',
-          attribution: 'Pinkerton investigator',
-          role: 'Final report, 1912',
+          content: 'The killer seemed to ride the rails, striking in towns along major routes, then vanishing before morning. Local police investigated local suspects. Nobody connected the cases.',
+          attribution: 'Bill James',
+          role: 'Author, "The Man from the Train"',
         },
         {
           type: 'ad',

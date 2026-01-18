@@ -63,9 +63,9 @@ export const bohemianFlats: Article = {
         },
         {
           type: 'quote',
-          content: 'We had our own little world down there. The city was up above, but we lived by the river. We knew every family, every house, every goat. It wasn\'t much, but it was ours.',
-          attribution: 'Former Bohemian Flats resident',
-          role: 'Oral history, Minnesota Historical Society',
+          content: 'I bought that little house in May 1884... I move in the spring because the river rolls over my floor. I raised my family there.',
+          attribution: 'John Medvec',
+          role: 'Bohemian Flats resident, 1923',
         },
         {
           type: 'ad',

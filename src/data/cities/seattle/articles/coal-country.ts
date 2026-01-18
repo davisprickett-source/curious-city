@@ -60,9 +60,9 @@ export const coalCountry: Article = {
         },
         {
           type: 'quote',
-          content: 'Seattle was built on coal money. The Burkes, the Villards, the railroad men — they made their fortunes pulling black rock out of the ground. Nobody remembers that now. They remember the railroads and the ships. They don\'t remember what made those things run.',
-          attribution: 'Local historian',
-          role: 'King County Historical Society',
+          content: 'Coal was the catalyst. It was the first export that wasn\'t lumber. It made Seattle a city.',
+          attribution: 'Murray Morgan',
+          role: 'Historian, "Skid Road"',
         },
         {
           type: 'ad',
@@ -149,9 +149,9 @@ export const coalCountry: Article = {
         },
         {
           type: 'quote',
-          content: 'The Chinese were driven out by violence, but the violence was about economics. White miners didn\'t want competition. The owners didn\'t want to pay fair wages. The Chinese were caught in between, and they paid the price.',
-          attribution: 'Labor historian',
-          role: 'University of Washington',
+          content: 'The miners at the Seattle mine [at Newcastle] drove all the Chinamen away from there Saturday last.',
+          attribution: 'Coal miner',
+          role: 'Letter to the editor, 1876',
         },
         {
           type: 'heading',

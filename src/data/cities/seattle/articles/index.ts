@@ -130,9 +130,9 @@ export const dbCooper: Article = {
         },
         {
           type: 'quote',
-          content: 'We were searching for a needle in a haystack, except the needle might have been 300 feet up in a tree, buried under snow, or washed downstream. We had no idea where he landed. We still don\'t.',
-          attribution: 'FBI Special Agent Ralph Himmelsbach',
-          role: 'Lead investigator',
+          content: 'No experienced parachutist would have jumped in the pitch-black night, in the rain, with a 200-mile-an-hour wind in his face, wearing loafers and a trench coat. It was simply suicidal.',
+          attribution: 'Ralph Himmelsbach',
+          role: 'FBI Special Agent',
         },
         {
           type: 'heading',

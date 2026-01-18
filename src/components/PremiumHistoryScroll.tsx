@@ -38,7 +38,7 @@ export function PremiumHistoryScroll({ history }: PremiumHistoryScrollProps) {
       </div>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white px-6">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white px-6 pt-14">
         <div className="max-w-5xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -274,7 +274,7 @@ function EssayTextBlock({ block, index }: { block: HistoryBlock; index: number }
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: baseDelay }}
-          className="my-12 pl-6 border-l-4 border-neutral-900 text-2xl md:text-3xl italic text-neutral-700 font-serif"
+          className="my-12 pl-6 border-l-4 border-accent-600 text-2xl md:text-3xl italic text-neutral-700 font-serif"
         >
           {block.content}
           {block.attribution && (

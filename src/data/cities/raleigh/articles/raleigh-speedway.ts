@@ -132,9 +132,9 @@ export const raleighSpeedway: Article = {
         },
         {
           type: 'quote',
-          content: 'The city killed us. They wanted us gone because we were loud and we attracted the wrong kind of people. They got their wish. Raleigh could have been Daytona. Instead, it became another industrial park.',
-          attribution: 'Former track employee',
-          role: 'Oral history interview',
+          content: 'Politicians put a ban on Sunday racing, and neighbors began to complain of the noise, the danger, and the wild crowds... Raleigh could have been Daytona.',
+          attribution: 'Raleigh Speedway Historical Project',
+          role: 'raleighspeedway.org',
         },
         {
           type: 'ad',

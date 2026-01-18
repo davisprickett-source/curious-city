@@ -60,9 +60,9 @@ export const wellingtonAvalanche: Article = {
         },
         {
           type: 'quote',
-          content: 'The snow came down so thick you couldn\'t see ten feet ahead. We\'d dig out a hundred yards of track, and by the time we finished, it was buried again. The mountain was trying to kill us.',
-          attribution: 'Railroad worker',
-          role: 'Testimony, 1910 inquest',
+          content: 'It seemed as if the whole mountain side was sliding down... carrying everything before it.',
+          attribution: 'Charles Andrews',
+          role: 'Railroad employee and survivor',
         },
         {
           type: 'ad',
@@ -164,9 +164,9 @@ export const wellingtonAvalanche: Article = {
         },
         {
           type: 'quote',
-          content: 'There was a sound like thunder and then everything was moving. The car turned over and over. When it stopped, I was upside down in the dark, buried in snow. I could hear people screaming somewhere below me.',
-          attribution: 'Survivor',
-          role: 'Testimony, 1910',
+          content: 'I felt the car tip... then we were rolling over and over. I thought it was the end of the world.',
+          attribution: 'Lucius Anderson',
+          role: 'Survivor testimony, 1910',
         },
         {
           type: 'heading',

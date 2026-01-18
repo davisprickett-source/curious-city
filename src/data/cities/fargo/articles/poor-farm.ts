@@ -132,9 +132,9 @@ export const poorFarm: Article = {
         },
         {
           type: 'quote',
-          content: 'We thought we\'d dealt with it in 1985. We moved the graves, we thought we\'d found them all. But the records were incomplete. The river keeps finding what we missed.',
-          attribution: 'Cass County official',
-          role: 'Interview, 2020',
+          content: 'They were people who didn\'t have friends or family... Maybe nobody knew them. So who cared? And that\'s sad, just really sad.',
+          attribution: 'Jeanette Stanton',
+          role: 'Former Cass County Commissioner',
         },
         {
           type: 'heading',

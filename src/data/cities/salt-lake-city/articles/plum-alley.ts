@@ -24,7 +24,7 @@ export const plumAlley: Article = {
       blocks: [
         {
           type: 'paragraph',
-          content: 'If you walk down Commercial Street in Salt Lake City today, you\'ll find parking lots, a few office buildings, and not much else. It\'s the kind of anonymous downtown block that exists in every American city — functional, forgettable, empty of history. There is no marker. There is no memorial. There is nothing to indicate that for nearly a century, this was Plum Alley: Salt Lake City\'s Chinatown, home to hundreds of Chinese immigrants, a community erased so thoroughly that most residents don\'t know it ever existed.',
+          content: 'If you walk down Commercial Street in Salt Lake City today, you\'ll find parking lots, a few office buildings, and not much else. It\'s the kind of anonymous downtown block that exists in every American city — functional, forgettable, empty of history. There is only a small plaque on Regent Street, easy to miss. Otherwise, there is nothing to indicate that for nearly a century, this was Plum Alley: Salt Lake City\'s Chinatown, home to hundreds of Chinese immigrants, a community erased so thoroughly that most residents don\'t know it ever existed.',
         },
         {
           type: 'paragraph',
@@ -60,9 +60,9 @@ export const plumAlley: Article = {
         },
         {
           type: 'quote',
-          content: 'They came with nothing. They had been paid almost nothing. But they had skills, they had each other, and they had survived the railroad. That was enough to start.',
-          attribution: 'Utah historian',
-          role: 'Chinese American Historical Society',
+          content: 'To me, it is just like a slap in the face. We built the railroad, but we were not recognized.',
+          attribution: 'Margaret Yee',
+          role: 'Descendant of Chinese railroad worker',
         },
         {
           type: 'ad',
@@ -126,9 +126,9 @@ export const plumAlley: Article = {
         },
         {
           type: 'quote',
-          content: 'The Chinese learned to be invisible. That was how you survived in America. You made yourself small, you stayed in your place, and you hoped nobody noticed you.',
-          attribution: 'Plum Alley descendant',
-          role: 'Oral history interview, 1980s',
+          content: 'They used to have those little shops where you could go and buy Chinese groceries that were sent from San Francisco... and you\'d look in the back and there would be a bunch of guys settin\' around tables gambling.',
+          attribution: 'Henry Ju',
+          role: 'Former Plum Alley resident',
         },
         {
           type: 'ad',
@@ -223,7 +223,7 @@ export const plumAlley: Article = {
         },
         {
           type: 'paragraph',
-          content: 'In recent years, historians and community members have worked to recover the memory of Plum Alley. BYU\'s Intermountain Histories project has documented the neighborhood. The Utah Division of State History has digitized photographs. There\'s talk of a historical marker, though nothing has been installed yet. It\'s better than nothing, but it\'s not the same as a living community.',
+          content: 'In recent years, historians and community members have worked to recover the memory of Plum Alley. BYU\'s Intermountain Histories project has documented the neighborhood. The Utah Division of State History has digitized photographs. A historical marker was finally installed on Regent Street during recent redevelopment — a small copper square in the pavement, a quiet apology for a century of erasure.',
         },
         {
           type: 'divider',
@@ -248,7 +248,7 @@ export const plumAlley: Article = {
           type: 'callout',
           variant: 'tip',
           title: 'Finding Plum Alley',
-          content: 'The site of Plum Alley is roughly bounded by Commercial Street, Regent Street, 100 South, and 200 South in downtown Salt Lake City. No historical markers currently exist at the site. The Utah State Historical Society and the Intermountain Histories project (intermountainhistories.org) have documentation about the neighborhood. The Chinese American community hosts occasional walking tours of historical sites.',
+          content: 'The site of Plum Alley is roughly bounded by Commercial Street, Regent Street, 100 South, and 200 South in downtown Salt Lake City. A historical marker is located on Regent Street near the Eccles Theater. The Utah State Historical Society and the Intermountain Histories project (intermountainhistories.org) have documentation about the neighborhood.',
         },
       ],
     },

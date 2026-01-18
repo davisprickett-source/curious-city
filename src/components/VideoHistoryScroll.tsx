@@ -859,7 +859,7 @@ const TextBlock = memo(function TextBlock({ block, isFirst }: { block: any; isFi
 
     case 'pullquote':
       return (
-        <blockquote className="pl-6 border-l-4 border-neutral-300 text-2xl md:text-3xl italic text-neutral-700 my-8">
+        <blockquote className="pl-6 border-l-4 border-accent-600 text-2xl md:text-3xl italic text-neutral-700 my-8">
           {block.content}
           {block.attribution && (
             <footer className="text-base not-italic text-neutral-500 mt-3">

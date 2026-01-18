@@ -67,9 +67,9 @@ export const divorceCapital: Article = {
         },
         {
           type: 'quote',
-          content: 'The laws of Dakota Territory regarding divorce are the most liberal of any civilized community. A man or woman may obtain a divorce here with less trouble than in obtaining a marriage license in most Eastern states.',
-          attribution: 'Eastern newspaper',
-          role: '1883',
+          content: 'Fargo Divorce Mill: A flourishing industry fostered by North Dakota laws.',
+          attribution: 'The Sun',
+          role: 'Fargo newspaper headline, 1894',
         },
         {
           type: 'ad',

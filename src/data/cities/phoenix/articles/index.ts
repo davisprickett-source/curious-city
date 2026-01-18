@@ -47,9 +47,9 @@ export const phoenixLights: Article = {
         },
         {
           type: 'quote',
-          content: 'I was a pilot for forty years. I know what aircraft look like. This was not an aircraft. It was a solid object, blocking out the stars, moving without any sound. I have no idea what I saw.',
-          attribution: 'Witness testimony',
-          role: 'Commercial airline pilot',
+          content: 'I saw six lights in a V-shape going over the airport. I was looking at them and I thought, "That\'s an object."',
+          attribution: 'Kurt Russell',
+          role: 'Actor and pilot who witnessed the event',
         },
         {
           type: 'paragraph',
@@ -136,7 +136,7 @@ export const phoenixLights: Article = {
         },
         {
           type: 'quote',
-          content: 'I\'ve studied this case for twenty years. The flare explanation is insufficient. The misidentification theories don\'t hold up. Something was there, and we still don\'t know what it was.',
+          content: 'It\'s not a matter of believing. It\'s a matter of knowing. We are not alone.',
           attribution: 'Dr. Lynne Kitei',
           role: 'Phoenix Lights researcher and witness',
         },

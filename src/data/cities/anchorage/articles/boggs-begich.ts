@@ -67,9 +67,9 @@ export const boggsBegich: Article = {
         },
         {
           type: 'quote',
-          content: 'Nick was so excited to have Boggs up here. He said it showed how much the national party valued Alaska. They had big plans for the next few days. I never imagined I wouldn\'t see him again.',
+          content: 'Alaska adopted me once before; I suppose it is reasonable that she\'ll adopt me again.',
           attribution: 'Pegge Begich',
-          role: 'Nick Begich\'s widow, 1972',
+          role: 'Nick Begich\'s widow, on running for office',
         },
         {
           type: 'ad',

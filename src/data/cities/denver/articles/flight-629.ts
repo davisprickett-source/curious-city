@@ -115,9 +115,9 @@ export const flight629: Article = {
         },
         {
           type: 'quote',
-          content: 'I put it in her suitcase and shipped it as ordinary luggage. I knew when it would go off. I was drinking coffee in the airport when the plane went down.',
+          content: 'As far as feeling remorse for these people, I don\'t. I can\'t help it. Everybody pays their way and takes their chances. That\'s just the way it goes.',
           attribution: 'Jack Gilbert Graham',
-          role: 'Confession to FBI, November 1955',
+          role: 'Statement to prison doctors',
         },
         {
           type: 'ad',

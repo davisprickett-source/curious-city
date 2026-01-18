@@ -31,16 +31,14 @@ function HistoryBlockRenderer({ block }: { block: HistoryBlock }) {
 
     case 'pullquote':
       return (
-        <figure className="my-12 py-8 border-t border-b border-neutral-300">
-          <blockquote className="text-2xl leading-relaxed text-neutral-900 font-medium italic">
-            &quot;{block.content}&quot;
-          </blockquote>
+        <blockquote className="my-12 pl-6 border-l-4 border-accent-600 text-2xl md:text-3xl italic text-neutral-700 font-serif">
+          {block.content}
           {block.attribution && (
-            <figcaption className="mt-4 text-sm text-neutral-500 ui-sans">
+            <footer className="text-lg not-italic text-neutral-500 mt-4 font-sans">
               — {block.attribution}
-            </figcaption>
+            </footer>
           )}
-        </figure>
+        </blockquote>
       )
 
     case 'break':

@@ -53,9 +53,9 @@ export const iroquoisTheater: Article = {
         },
         {
           type: 'quote',
-          content: 'The management was more concerned about someone sneaking into the theater for a free show than they were about people getting out alive.',
-          attribution: 'Nat Brandt',
-          role: 'Author, "Chicago Death Trap"',
+          content: 'Don\'t stampede! Go slow! No danger! Play, Dillea, play!',
+          attribution: 'Eddie Foy',
+          role: 'Actor on stage when the fire started',
         },
         {
           type: 'ad',
@@ -135,9 +135,9 @@ export const iroquoisTheater: Article = {
         },
         {
           type: 'quote',
-          content: 'I can close my eyes and see them now — mothers with babies in their arms, fighting to get through doors that wouldn\'t open. The screaming. The smoke. The flames coming at us. And then silence.',
-          attribution: 'Survivor testimony',
-          role: 'From the coroner\'s inquest, 1904',
+          content: 'Bodies were piled in heaps... a tangled mass of humanity. It was a holocaust.',
+          attribution: 'Chicago Tribune',
+          role: 'Report on the disaster, December 31, 1903',
         },
         {
           type: 'image',

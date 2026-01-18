@@ -57,9 +57,9 @@ export const castlewoodDam: Article = {
         },
         {
           type: 'quote',
-          content: 'The dam is in poor condition and constitutes a menace to life and property downstream. Immediate repairs are necessary to prevent catastrophic failure.',
-          attribution: 'State engineer\'s report',
-          role: '1925',
+          content: 'I have always considered the Castlewood dam a menace to public safety... It was constructed on shifting sand.',
+          attribution: 'M.C. Hinderlider',
+          role: 'Colorado State Engineer, 1933',
         },
         {
           type: 'ad',

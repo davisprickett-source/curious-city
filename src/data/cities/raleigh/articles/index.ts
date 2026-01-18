@@ -130,9 +130,9 @@ export const villageUnderground: Article = {
         },
         {
           type: 'quote',
-          content: 'We\'d walk down those subway stairs and feel like we\'d left Raleigh entirely. It didn\'t matter that the subway was painted on. It felt like escape. That was enough.',
-          attribution: 'Former Underground regular',
-          role: 'Oral history interview',
+          content: 'I would go to the Raleigh Underground in Cameron Village and think, "This is what New York is like!"',
+          attribution: 'David Sedaris',
+          role: 'Author and former Raleigh resident',
         },
         {
           type: 'image',

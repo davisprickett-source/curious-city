@@ -58,9 +58,9 @@ export const dorotheaDixCemetery: Article = {
         },
         {
           type: 'quote',
-          content: 'They came here because they were sick. They stayed because they couldn\'t leave. And when they died, their families pretended they\'d never existed. The numbers were easier than the shame.',
-          attribution: 'Dorothea Dix Cemetery volunteer',
-          role: 'Raleigh restoration project',
+          content: 'It seemed to me that a grave for that many people should be marked. It seemed a sad testament to how the mentally ill were treated back then that it was not.',
+          attribution: 'Cemetery restoration volunteer',
+          role: 'Raleigh News & Observer interview',
         },
         {
           type: 'ad',

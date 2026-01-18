@@ -172,7 +172,7 @@ export const blucifer: Article = {
         },
         {
           type: 'quote',
-          content: 'My father would have been amused by all the controversy. He wanted his art to make people feel something. I think Blucifer accomplishes that, even if the feeling is terror.',
+          content: 'He would have loved it. He would have loved the controversy. He wanted his art to make people feel something.',
           attribution: 'Adan Jiménez',
           role: 'Son of the artist',
         },

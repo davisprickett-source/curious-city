@@ -49,9 +49,9 @@ export const duckDuckGreyDuck: Article = {
         },
         {
           type: 'quote',
-          content: 'The Minnesota version is objectively better. You have to pay attention. Anyone can hear \'goose\' — it\'s a completely different word. But \'grey duck\'? That requires focus. You have to listen.',
-          attribution: 'Every Minnesotan Ever',
-          role: 'On the Record',
+          content: 'It\'s duck, duck, gray duck. You\'re all wrong.',
+          attribution: 'Tim Walz',
+          role: 'Governor of Minnesota',
         },
         {
           type: 'paragraph',

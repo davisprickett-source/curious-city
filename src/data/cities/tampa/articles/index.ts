@@ -111,13 +111,7 @@ export const gasparillaArticle: Article = {
         },
         {
           type: 'paragraph',
-          content: 'Here\'s the remarkable part: in 1949, a retired Pat LeMoyne gave a lecture at a Fort Myers Chamber of Commerce function where he cheerfully admitted his biography of Jose Gaspar was, in his words, a "cockeyed lie without a true fact in it." He had written it in a dramatic style "tourists like to hear." By then, of course, it was too late. The legend had taken hold, and Tampa had built an entire festival around it.',
-        },
-        {
-          type: 'quote',
-          content: 'My biography of Jose Gaspar was a cockeyed lie without a true fact in it.',
-          attribution: 'Pat LeMoyne',
-          role: 'The legend\'s author, 1949',
+          content: 'Here\'s the remarkable part: in 1949, a retired Pat LeMoyne gave a lecture where he admitted his biography of Jose Gaspar was a fabrication written in a dramatic style "tourists like to hear." By then, of course, it was too late. The legend had taken hold, and Tampa had built an entire festival around it.',
         },
         {
           type: 'heading',

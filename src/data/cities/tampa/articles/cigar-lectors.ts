@@ -124,9 +124,9 @@ export const cigarLectors: Article = {
         },
         {
           type: 'quote',
-          content: 'I know these people. I have lived among them. The cigar makers of Tampa will give their last cent, their last drop of blood, for Cuba Libre.',
+          content: 'I want the first law of our republic to be the tribute of Cubans to the full dignity of man... With all, and for the good of all.',
           attribution: 'José Martí',
-          role: 'Letter to a friend, 1893',
+          role: 'Speech at Liceo Cubano, Ybor City, 1891',
         },
         {
           type: 'ad',

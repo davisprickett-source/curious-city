@@ -90,7 +90,7 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'quote',
-          content: 'The bombings weren\'t random acts of violence. They were organized terrorism, carried out by respectable white citizens who believed they were defending their neighborhoods. And the city let them get away with it.',
+          content: 'The bombings... might have come right up out of the spiritual heart of the white community, the heart darkened by 19th-century spectres.',
           attribution: 'Jim Schutze',
           role: 'Author, "The Accommodation"',
         },

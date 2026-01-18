@@ -51,9 +51,9 @@ export const teslaLab: Article = {
         },
         {
           type: 'quote',
-          content: 'The conditions here are ideal for my experiments. The atmosphere is dry, the location isolated, and the power company has been most accommodating. I expect to achieve results impossible anywhere else.',
+          content: 'The conditions in the pure air of the Colorado Mountains proved extremely favorable for my experiments. I found that I could accomplish more work, physically and mentally, than I could in New York.',
           attribution: 'Nikola Tesla',
-          role: 'Letter, 1899',
+          role: 'Reflecting on his Colorado Springs laboratory',
         },
         {
           type: 'ad',
