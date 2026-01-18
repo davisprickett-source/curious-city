@@ -324,7 +324,7 @@ async function fetchCityToursInternal(
 }
 
 /**
- * Get tours for a city (cached for 1 hour)
+ * Get tours for a city (TEMPORARILY DISABLED - testing performance)
  */
 export async function getCityTours(
   citySlug: string,
@@ -333,16 +333,19 @@ export async function getCityTours(
     count?: number
   }
 ): Promise<NormalizedTour[]> {
-  const cacheKey = `viator-tours-${citySlug}-${options?.category || 'all'}-${options?.count || 20}`
+  // TEMPORARILY DISABLED - return empty to test if Viator is causing site slowness
+  return []
 
-  const cachedFetch = unstable_cache(
-    () => fetchCityToursInternal(citySlug, options?.category, options?.count),
-    [cacheKey],
-    {
-      revalidate: 3600, // Cache for 1 hour
-      tags: ['viator-tours', `viator-${citySlug}`],
-    }
-  )
-
-  return cachedFetch()
+  // const cacheKey = `viator-tours-${citySlug}-${options?.category || 'all'}-${options?.count || 20}`
+  //
+  // const cachedFetch = unstable_cache(
+  //   () => fetchCityToursInternal(citySlug, options?.category, options?.count),
+  //   [cacheKey],
+  //   {
+  //     revalidate: 3600, // Cache for 1 hour
+  //     tags: ['viator-tours', `viator-${citySlug}`],
+  //   }
+  // )
+  //
+  // return cachedFetch()
 }
