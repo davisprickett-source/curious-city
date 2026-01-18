@@ -105,7 +105,7 @@ function getSourceIcon(type?: string) {
 function CuriositySection({ item, index, onSectionInView, url, title }: { item: CuriosityItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
-    triggerOnce: false,
+    triggerOnce: true,
   })
 
   const prefersReducedMotion = useReducedMotion()

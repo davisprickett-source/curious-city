@@ -55,7 +55,7 @@ interface MobileLostLovedLayoutProps {
 function LostLovedSection({ item, index, onSectionInView, url, title }: { item: LostLovedItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
-    triggerOnce: false,
+    triggerOnce: true,
   })
 
   const prefersReducedMotion = useReducedMotion()
@@ -122,21 +122,15 @@ function LostLovedSection({ item, index, onSectionInView, url, title }: { item: 
                 </div>
 
                 <div>
-                  {/* Years Badge */}
-                  {item.yearsOpen && (
-                    <div className="inline-block px-4 py-1 bg-amber-100 border border-amber-300 rounded-full mb-3">
-                      <span className="text-sm font-semibold text-amber-900 tracking-wide">
-                        {item.yearsOpen}
-                      </span>
-                    </div>
-                  )}
-
-                  <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-2 leading-tight">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-1 leading-tight inline mr-2">
                     {item.name}
                   </h3>
+                  {item.yearsOpen && (
+                    <span className="text-lg text-neutral-600 font-semibold inline-block">{item.yearsOpen}</span>
+                  )}
 
                   {item.neighborhood && (
-                    <p className="text-base md:text-lg text-neutral-500 font-medium">
+                    <p className="text-base md:text-lg text-neutral-500 font-medium mt-1">
                       {item.neighborhood}
                     </p>
                   )}
@@ -150,25 +144,20 @@ function LostLovedSection({ item, index, onSectionInView, url, title }: { item: 
                 </div>
               )}
 
-              {/* Description */}
-              <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                {item.description}
-              </p>
+              {/* The Story - full width callout */}
+              <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
+                <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
+                  The Story
+                </h4>
+                <p className="text-neutral-800 leading-relaxed">{item.description}</p>
+              </div>
 
-              {/* Why Missed - Emotional callout */}
-              <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-500 rounded-lg p-6 mb-6">
-                <div className="absolute top-3 right-3 opacity-10">
-                  <svg className="w-14 h-14 text-amber-800" viewBox="0 0 48 48" fill="currentColor">
-                    <path d="M14 7C9 7 5 11 5 16c0 8 7 13 17 24V16l-1 3-1-2-1 3-1-2-1 3-1-2V16C15 11 14 7 14 7z" />
-                    <path d="M34 7C39 7 43 11 43 16c0 8-7 13-17 24V16l1 3 1-2 1 3 1-2 1 3 1-2V16C33 11 34 7 34 7z" transform="translate(2.5, 0)" />
-                  </svg>
-                </div>
-                <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
+              {/* Why It's Missed - full width callout */}
+              <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
+                <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                   Why It&apos;s Missed
                 </h4>
-                <p className="text-neutral-800 italic leading-relaxed">
-                  &quot;{item.whyMissed}&quot;
-                </p>
+                <p className="text-neutral-800 leading-relaxed">{item.whyMissed}</p>
               </div>
 
               {/* Community Voice - Pull quote */}
@@ -305,21 +294,15 @@ function LostLovedSection({ item, index, onSectionInView, url, title }: { item: 
               </div>
 
               <div>
-                {/* Years Badge */}
-                {item.yearsOpen && (
-                  <div className="inline-block px-4 py-1 bg-amber-100 border border-amber-300 rounded-full mb-3">
-                    <span className="text-sm font-semibold text-amber-900 tracking-wide">
-                      {item.yearsOpen}
-                    </span>
-                  </div>
-                )}
-
-                <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-2 leading-tight">
+                <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-1 leading-tight inline mr-2">
                   {item.name}
                 </h3>
+                {item.yearsOpen && (
+                  <span className="text-lg text-neutral-600 font-semibold inline-block">{item.yearsOpen}</span>
+                )}
 
                 {item.neighborhood && (
-                  <p className="text-base md:text-lg text-neutral-500 font-medium">
+                  <p className="text-base md:text-lg text-neutral-500 font-medium mt-1">
                     {item.neighborhood}
                   </p>
                 )}
@@ -333,25 +316,20 @@ function LostLovedSection({ item, index, onSectionInView, url, title }: { item: 
               </div>
             )}
 
-            {/* Description */}
-            <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-              {item.description}
-            </p>
+            {/* The Story - full width callout */}
+            <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
+              <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
+                The Story
+              </h4>
+              <p className="text-neutral-800 leading-relaxed">{item.description}</p>
+            </div>
 
-            {/* Why Missed - Emotional callout */}
-            <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-500 rounded-lg p-6 mb-6">
-              <div className="absolute top-3 right-3 opacity-10">
-                <svg className="w-14 h-14 text-amber-800" viewBox="0 0 48 48" fill="currentColor">
-                  <path d="M14 7C9 7 5 11 5 16c0 8 7 13 17 24V16l-1 3-1-2-1 3-1-2-1 3-1-2V16C15 11 14 7 14 7z" />
-                  <path d="M34 7C39 7 43 11 43 16c0 8-7 13-17 24V16l1 3 1-2 1 3 1-2 1 3 1-2V16C33 11 34 7 34 7z" transform="translate(2.5, 0)" />
-                </svg>
-              </div>
-              <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
+            {/* Why It's Missed - full width callout */}
+            <div className="bg-neutral-900/5 border-y border-neutral-200 -mx-4 px-4 py-4 mb-6">
+              <h4 className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-2">
                 Why It&apos;s Missed
               </h4>
-              <p className="text-neutral-800 italic leading-relaxed">
-                &quot;{item.whyMissed}&quot;
-              </p>
+              <p className="text-neutral-800 leading-relaxed">{item.whyMissed}</p>
             </div>
 
             {/* Community Voice - Pull quote */}

@@ -18,7 +18,7 @@ export function ScrollTextSection({
   const prefersReducedMotion = useReducedMotion()
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.3,
-    triggerOnce: false,
+    triggerOnce: true,
   })
 
   const getBackgroundClass = () => {

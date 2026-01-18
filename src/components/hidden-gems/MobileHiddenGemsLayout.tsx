@@ -141,7 +141,7 @@ export const getCategoryStyle = (category: string) => {
 function HiddenGemSection({ gem, index, onSectionInView, url, title }: { gem: HiddenGemItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
-    triggerOnce: false,
+    triggerOnce: true,
   })
 
   const prefersReducedMotion = useReducedMotion()

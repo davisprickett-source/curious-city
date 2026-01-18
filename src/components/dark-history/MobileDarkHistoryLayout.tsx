@@ -113,7 +113,7 @@ function getSourceIcon(type?: string) {
 function DarkHistorySection({ item, index, onSectionInView, url, title, citySlug }: { item: DarkHistoryItem; index: number; onSectionInView?: (index: number) => void; url: string; title: string; citySlug?: string }) {
   const { ref: inViewRef, inView } = useInViewHook({
     threshold: 0.15,
-    triggerOnce: false,
+    triggerOnce: true,
   })
 
   const prefersReducedMotion = useReducedMotion()
