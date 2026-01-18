@@ -90,3 +90,32 @@ export const trackAdImpression = (data: {
 export const trackExternalLink = (url: string, label: string) => {
   event('external_link', 'navigation', `${label}: ${url}`)
 }
+
+// Affiliate tracking
+export const trackAffiliateClick = (data: {
+  partner: 'viator' | string
+  productId: string
+  productName: string
+  category: string
+  placement: string
+  citySlug?: string
+}) => {
+  event(
+    'affiliate_click',
+    'monetization',
+    `${data.partner}:${data.category}:${data.placement}:${data.productId}`,
+  )
+}
+
+export const trackAffiliateImpression = (data: {
+  partner: string
+  productCount: number
+  placement: string
+  citySlug?: string
+}) => {
+  event(
+    'affiliate_impression',
+    'monetization',
+    `${data.partner}:${data.placement}:${data.productCount} items`
+  )
+}

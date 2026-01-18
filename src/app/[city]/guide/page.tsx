@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const url = `https://thecurious.city/${slug}/guide`
 
   return {
-    title: `${city.name} Guide - Best Bars, Restaurants & Coffee Shops | Curious City`,
-    description: `Your essential guide to ${city.name} - the best bars, restaurants, and coffee shops curated by locals.`,
+    title: `${city.name} Guide - Bars, Restaurants, Tours & More | Curious City`,
+    description: `Your essential guide to ${city.name} - the best bars, restaurants, coffee shops, and tours curated by locals.`,
     alternates: {
       canonical: url,
     },
@@ -82,6 +82,14 @@ export default async function GuidePage({ params }: GuidePageProps) {
       gradient: 'from-stone-900/90 via-stone-900/60 to-stone-900/30',
       fallbackGradient: 'from-stone-700 to-stone-950',
     },
+    {
+      title: 'Tours & Experiences',
+      teaser: 'Ghost tours, architecture walks, food tours, and adventures',
+      href: `/${slug}/tours`,
+      thumbnail: undefined, // Will use fallback gradient
+      gradient: 'from-purple-900/90 via-purple-900/60 to-purple-900/30',
+      fallbackGradient: 'from-purple-700 to-purple-950',
+    },
   ]
 
   return (
@@ -114,10 +122,10 @@ export default async function GuidePage({ params }: GuidePageProps) {
               <div className="max-w-4xl">
                 <div className="eyebrow text-accent-400 mb-3">Best of {city.name}</div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                  Where to Eat & Drink
+                  The Essential Guide
                 </h1>
                 <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
-                  The best bars, restaurants, and coffee shops in {city.name}.
+                  The best bars, restaurants, coffee shops, and experiences in {city.name}.
                 </p>
               </div>
             </div>
