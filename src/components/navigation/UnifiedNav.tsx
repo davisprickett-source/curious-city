@@ -184,7 +184,7 @@ export function UnifiedNav({
             {cityName && (
               <Link
                 href={routes.city(citySlug!)}
-                className="font-serif text-lg font-semibold text-[#c65d3b] truncate"
+                className="font-serif text-lg font-semibold text-[#c65d3b] truncate leading-tight flex items-center"
               >
                 {getMobileCityName(cityName)}
               </Link>

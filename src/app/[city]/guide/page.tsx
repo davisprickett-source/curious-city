@@ -87,8 +87,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
       teaser: 'Ghost tours, architecture walks, food tours, and adventures',
       href: `/${slug}/tours`,
       thumbnail: undefined, // Will use fallback gradient
-      gradient: 'from-purple-900/90 via-purple-900/60 to-purple-900/30',
-      fallbackGradient: 'from-purple-700 to-purple-950',
+      gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',
+      fallbackGradient: 'from-accent-700 to-accent-950',
     },
   ]
 

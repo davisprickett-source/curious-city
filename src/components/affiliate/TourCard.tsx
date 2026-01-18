@@ -71,7 +71,7 @@ function CategoryBadge({ category }: { category: string }) {
   }
 
   return (
-    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent-100 text-accent-800">
       {categoryLabels[category] || 'Experience'}
     </span>
   )
@@ -89,7 +89,7 @@ function PartnerBadge({ variant }: { variant: 'listicle' | 'compact' | 'inline' 
 
   return (
     <div className="flex items-center gap-2">
-      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center">
         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
         </svg>
@@ -117,7 +117,7 @@ function ListicleTourCard({ tour, index = 0, citySlug, placement = 'feed' }: Tou
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-      className="group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 border-purple-500"
+      className="group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl transition-shadow duration-300 border-t-4 border-accent-500"
     >
       <a
         href={tour.affiliateUrl}
@@ -157,7 +157,7 @@ function ListicleTourCard({ tour, index = 0, citySlug, placement = 'feed' }: Tou
           </div>
 
           {/* Title */}
-          <h3 className="text-xl lg:text-2xl font-bold text-neutral-900 mb-3 group-hover:text-purple-700 transition-colors">
+          <h3 className="text-xl lg:text-2xl font-bold text-neutral-900 mb-3 group-hover:text-accent-700 transition-colors">
             {tour.title}
           </h3>
 
@@ -190,7 +190,7 @@ function ListicleTourCard({ tour, index = 0, citySlug, placement = 'feed' }: Tou
               <p className="text-sm text-neutral-500">From</p>
               <p className="text-2xl font-bold text-neutral-900">{tour.price.formatted}</p>
             </div>
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 text-white font-medium rounded-full group-hover:bg-purple-700 transition-colors">
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent-600 text-white font-medium rounded-full group-hover:bg-accent-700 transition-colors">
               Book Now
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -233,7 +233,7 @@ function CompactTourCard({ tour, citySlug, placement = 'sidebar' }: TourCardProp
 
       {/* Content */}
       <div className="p-4">
-        <h4 className="font-semibold text-neutral-900 line-clamp-2 mb-2 group-hover:text-purple-700 transition-colors">
+        <h4 className="font-semibold text-neutral-900 line-clamp-2 mb-2 group-hover:text-accent-700 transition-colors">
           {tour.title}
         </h4>
 
@@ -266,7 +266,7 @@ function InlineTourCard({ tour, citySlug, placement = 'article' }: TourCardProps
       target="_blank"
       rel="noopener noreferrer sponsored"
       onClick={() => trackAffiliateClick(tour, placement, citySlug)}
-      className="group flex gap-4 p-4 bg-purple-50/50 border border-purple-100 rounded-xl hover:bg-purple-50 transition-colors"
+      className="group flex gap-4 p-4 bg-accent-50/50 border border-accent-100 rounded-xl hover:bg-accent-50 transition-colors"
     >
       {/* Image */}
       {tour.image.src && (
@@ -287,7 +287,7 @@ function InlineTourCard({ tour, citySlug, placement = 'article' }: TourCardProps
           <PartnerBadge variant="inline" />
         </div>
 
-        <h4 className="font-semibold text-neutral-900 line-clamp-1 group-hover:text-purple-700 transition-colors">
+        <h4 className="font-semibold text-neutral-900 line-clamp-1 group-hover:text-accent-700 transition-colors">
           {tour.title}
         </h4>
 
@@ -307,7 +307,7 @@ function InlineTourCard({ tour, citySlug, placement = 'article' }: TourCardProps
       </div>
 
       {/* Arrow */}
-      <div className="flex items-center text-purple-600 group-hover:translate-x-1 transition-transform">
+      <div className="flex items-center text-accent-600 group-hover:translate-x-1 transition-transform">
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
@@ -351,13 +351,13 @@ export function TourGrid({
   }
 
   return (
-    <div className={`space-y-6 ${className}`}>
+    <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${className}`}>
       {tours.map((tour, index) => (
         <TourCard
           key={tour.productCode}
           tour={tour}
           index={index}
-          variant="listicle"
+          variant="compact"
           citySlug={citySlug}
           placement="tours-page"
         />

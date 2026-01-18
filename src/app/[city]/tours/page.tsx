@@ -88,18 +88,18 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
       <div className="city-page-wrapper">
         <main className="flex-1">
           {/* Hero Section */}
-          <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white">
+          <div className="bg-gradient-to-br from-accent-900 via-accent-800 to-indigo-900 text-white">
             <div className="container-page py-12 md:py-16">
               <div className="max-w-4xl">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-500/30 text-purple-200 border border-purple-400/30">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-500/30 text-accent-200 border border-accent-400/30">
                     Experience Partner
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                   Tours & Experiences
                 </h1>
-                <p className="text-lg md:text-xl text-purple-100 leading-relaxed max-w-2xl">
+                <p className="text-lg md:text-xl text-accent-100 leading-relaxed max-w-2xl">
                   Discover {city.name} through curated tours and unforgettable experiences. From ghost tours to architecture walks, find your next adventure.
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
                       href={href}
                       className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                         isActive
-                          ? 'bg-purple-600 text-white'
+                          ? 'bg-accent-600 text-white'
                           : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
                       }`}
                     >
@@ -142,7 +142,7 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
                     {activeCategory && (
                       <span className="ml-1">
                         in{' '}
-                        <span className="font-medium text-purple-700">
+                        <span className="font-medium text-accent-700">
                           {TOUR_CATEGORIES.find((c) => c.id === activeCategory)?.label}
                         </span>
                       </span>
@@ -153,8 +153,8 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
               </>
             ) : (
               <div className="text-center py-20">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-purple-100 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-accent-100 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
                 </div>
@@ -169,7 +169,7 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
                 {activeCategory && (
                   <a
                     href={`/${slug}/tours`}
-                    className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-purple-600 text-white font-medium rounded-full hover:bg-purple-700 transition-colors"
+                    className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-accent-600 text-white font-medium rounded-full hover:bg-accent-700 transition-colors"
                   >
                     View all tours
                   </a>
