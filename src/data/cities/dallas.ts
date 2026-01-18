@@ -624,6 +624,10 @@ export const dallas: CityData = {
           featuredOrder: 11,
           featured: true,
           title: 'Dallas ran a legal red-light district called "Frogtown" from 1906 to 1913',
+          image: {
+            src: '/dallas/curiosities/dallas-curious-frogtown.png',
+            alt: 'Historic Dallas Frogtown red-light district',
+          },
           body: 'In 1906, Dallas did something radical: it legalized prostitution. City leaders carved out a designated zone nicknamed "Frogtown" (also called "the Reservation") where brothels operated openly under municipal supervision. The logic was Progressive Era pragmatism: if you can\'t stop it, regulate it. Prostitutes received city-issued health certificates; those who passed weekly medical inspections were immune from arrest. The district thrived. It also drew national attention as a model of "regulated vice." But reform movements mounted pressure, and on November 3, 1913, Dallas shut Frogtown down for good. The sex trade scattered across the city. Seven years of legal prostitution became a footnote that Dallas preferred to forget.',
           sources: [
             {
@@ -645,6 +649,10 @@ export const dallas: CityData = {
           featuredOrder: 12,
           featured: true,
           title: 'The name "Ecstasy" was coined by a Dallas seminary student',
+          image: {
+            src: '/dallas/curiosities/dallas-curious-ecstasy.png',
+            alt: 'Dallas Ecstasy MDMA history',
+          },
           body: 'Michael Clegg was studying at Perkins School of Theology at SMU when he discovered MDMA in the early 1980s. He didn\'t invent it (a German chemist did in 1912), but he gave it the name that stuck: Ecstasy. He called the experience "like hearing Moses on the mountain." Clegg saw a business opportunity. By 1984, he was moving 500,000 doses per month through a distribution network that included a 1-800 phone line. You could order Ecstasy with a credit card. The operation was so brazen, employees wore "Ecstasy" t-shirts. Clegg fled to Costa Rica in 1985, just months before the DEA classified MDMA as Schedule I. He later returned, served time, and became a real estate developer. But for a brief, surreal moment, a theology student helped launch the rave era from Dallas.',
           sources: [
             {
@@ -755,15 +763,15 @@ export const dallas: CityData = {
           description: 'Meow Wolf\'s fourth permanent exhibition. First location in Texas. Opened July 14, 2023, in Grapevine Mills Mall in a former 40,000-square-foot Bed Bath & Beyond. 150 artists and fabricators—38 from Texas—created 30+ unique rooms occupying roughly 29,000 square feet. Story conceived by author LaShawn Wanak: Ruby and Gordon Delaney moved to Bolingbrook, Illinois. Their daughter Carmen moved back home and started a spice blend company named Ruby\'s Garden. The narrative centers on the disappearance of Carmen\'s friend\'s son, Jared Fuqua, and the family that unknowingly unlocked portals to a different existence. Enter through the front door of a seemingly normal two-story suburban home. The rooms spiral out from there. In June 2025, Meow Wolf added Prime Materia, a bar integrated into the narrative. Massive. Immersive. Brain-breaking.',
           images: [
             {
-              src: '/dallas/hidden-gems/meowwolf-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-meow-0.png',
               alt: 'Meow Wolf immersive art installation',
             },
             {
-              src: '/dallas/hidden-gems/meowwolf-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-meow-1.png',
               alt: 'The Real Unreal portal rooms',
             },
             {
-              src: '/dallas/hidden-gems/meowwolf-3.png',
+              src: '/dallas/hidden-gems/dallas-hidden-meow-2.png',
               alt: 'Meow Wolf interactive art experience',
             }
           ],
@@ -791,11 +799,11 @@ export const dallas: CityData = {
           description: 'Opened April 21, 1931, with fanfare on San Jacinto Day. Renowned architect W. Scott Dunne designed it in Venetian style—opera boxes, fountains, projected clouds on the ceiling, giant chandelier. Financed by Howard Hughes. First theater in Dallas with air conditioning. On November 22, 1963, Lee Harvey Oswald ducked into the theater during a showing of War Is Hell and sat near the back. Police arrested him there. Shortly after, the theater\'s vibrant designs were sealed under Spanish-style stucco. In 2001, the Oak Cliff Foundation acquired it. $1.6 million from Dallas Neighborhood Renaissance Partnership. Added to the National Register of Historic Places in 2003. Formally re-opened in 2010. Now hosts indie films, repertory cinema, and special events. The history is dark. The movies are good.',
           images: [
             {
-              src: '/dallas/hidden-gems/texas-theatre-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-theatre-1.png',
               alt: 'Texas Theatre exterior marquee',
             },
             {
-              src: '/dallas/hidden-gems/texas-theatre-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-theatre-2.png',
               alt: 'Historic Texas Theatre interior',
             }
           ],
@@ -850,11 +858,11 @@ export const dallas: CityData = {
           description: 'The only museum in the United States dedicated to samurai art and armor. One of the largest collections of its kind in the world. Ann and Gabriel Barbier-Mueller began acquiring samurai art over thirty years ago. Gabriel was fascinated by samurai armor since adolescence. Acquired his first piece in the early 1990s. The collection now spans the fifth to nineteenth centuries. Suits of armor, helmets, masks, horse armor, weaponry—with particular emphasis on the Edo period. Housed in the historic St. Ann\'s School building, originally constructed in 1927. Rotating exhibitions explore intriguing aspects of Japanese warrior culture. More than 140 pieces tour internationally.',
           images: [
             {
-              src: '/dallas/hidden-gems/samurai-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-samuri-1.png',
               alt: 'Samurai armor on display',
             },
             {
-              src: '/dallas/hidden-gems/samurai-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-samuri-2.png',
               alt: 'Japanese samurai helmets and masks',
             }
           ],
@@ -880,11 +888,11 @@ export const dallas: CityData = {
           description: 'The largest bronze monument of its kind in the world. 49 bronze steers and 3 trail riders created by artist Robert Summers of Glen Rose, Texas. Each steer is larger-than-life at six feet high. Cast at Eagle Bronze Foundry in Lander, Wyoming. Commemorates nineteenth-century cattle drives along the Shawnee Trail—the earliest and easternmost route by which Texas longhorn cattle were taken to northern railheads. The trail passed through Austin, Waco, and Dallas until the Chisolm Trail siphoned off most of the traffic in 1867. Real estate developer Trammell Crow wanted an iconic "Western" sculpture. Summers began work in November 1992. Opened on time in 1994. Second only to Dealey Plaza as the most-visited landmark in downtown Dallas.',
           images: [
             {
-              src: '/dallas/hidden-gems/pioneer-plaza-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-pioneer-plaza-1.png',
               alt: 'Bronze longhorn cattle drive sculpture at Pioneer Plaza',
             },
             {
-              src: '/dallas/hidden-gems/pioneer-plaza-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-pioneer-plaza-2.png',
               alt: 'Pioneer Plaza longhorn steers',
             }
           ],
@@ -909,11 +917,11 @@ export const dallas: CityData = {
           description: 'Vermont artist J.T. Williams carved a family of teddy bears from granite for the Harlan Crow family. Presented to Highland Park on Christmas Eve 1995. Three four-foot cubs and one giant 10-foot bear. The massive bear alone weighs 20 tons. They sit along Turtle Creek on 14 acres of exceptionally landscaped grounds in affluent Highland Park—one of the 10 richest places in the U.S. Inspired by the famous bronze bears that once greeted customers before entering FAO Schwartz at NorthPark Mall. Cross the pedestrian bridge and you\'ll find whimsy carved in stone.',
           images: [
             {
-              src: '/dallas/hidden-gems/teddy-bears-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-teddy-1.png',
               alt: 'Giant granite teddy bear sculpture at Lakeside Park',
             },
             {
-              src: '/dallas/hidden-gems/teddy-bears-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-teddy-1.png',
               alt: 'Teddy bear cubs sculpture',
             }
           ],
@@ -1006,11 +1014,11 @@ export const dallas: CityData = {
           description: 'Completely free Japanese-inspired sculpture garden in the Dallas Arts District. Winds around the exterior of the Trammell Crow office building one level above the street. Twelve artworks from the 9th to the 21st centuries displayed outdoors. Stone arrangements, dry riverbed, shady groves, bamboo thickets, karesansui (flat landscape with raked gravel). Different aspects around each side of the building. Located between the Nasher Sculpture Garden and the Dallas Museum of Art. Adjacent to the Crow Collection, also free. A shaded oasis with stunning sculptures most visitors walk right past.',
           images: [
             {
-              src: '/dallas/hidden-gems/crow-garden-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-crow-1.png',
               alt: 'Trammell Crow Sculpture Garden',
             },
             {
-              src: '/dallas/hidden-gems/crow-garden-2.png',
+              src: '/dallas/hidden-gems/dallas-hidden-crow-2.png',
               alt: 'Japanese-inspired sculpture garden',
             }
           ],
@@ -1272,7 +1280,7 @@ export const dallas: CityData = {
           description: 'Bishop Cider Company took over a massive warehouse in Deep Ellum and filled it with 150+ vintage arcade games, pinball machines, and classic consoles. Pay a flat $12 cover (weekdays) or $15 (weekends) and every game is free to play. The catch: they only serve cider, no beer. But the cider is excellent, made in-house with flavors rotating seasonally. The space itself is cavernous and loud, exactly what an arcade should feel like. Adults reclaiming quarters they never had to spend. The original location opened in 2018 after the Cider company outgrew their Bishop Arts taproom. Now there\'s a second Cidercade in Fort Worth.',
           images: [
             {
-              src: '/dallas/hidden-gems/cidercade-1.png',
+              src: '/dallas/hidden-gems/dallas-hidden-cider-1.png',
               alt: 'The Cidercade arcade floor with vintage games',
             }
           ],
@@ -2563,6 +2571,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'The Grape',
           neighborhood: 'Lower Greenville',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-grape.png',
+            alt: 'The Grape restaurant on Lower Greenville',
+          },
           description: 'For 47 years, The Grape was the soul of Lower Greenville dining — a tiny bistro opened by two twentysomething women with zero restaurant experience who helped invent Dallas\'s modern culinary identity. The mushroom soup was legendary, the burger won Texas Monthly\'s "Best in Texas," and countless proposals and anniversaries unfolded in the dimly lit dining room.',
           whyMissed: 'The intimacy. The way it felt like your neighborhood\'s living room, even if you drove across town to get there. The consistency across nearly five decades.',
           communityVoice: '"When we heard The Grape was closing, it felt like losing a family member. That place was where Dallas learned to love good wine and good food together." — D Magazine reader',
@@ -2582,6 +2594,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'Highland Park Cafeteria',
           neighborhood: 'Casa Linda / East Dallas',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-highland-park.png',
+            alt: 'Highland Park Cafeteria',
+          },
           description: 'For 95 years, Highland Park Cafeteria served Texas comfort food to Dallas\'s rich and not-so-rich alike. The New York Times once called it "America\'s Cafeteria" and praised its egalitarian sensibilities — executives and working folks standing in the same line for the same chicken fried steak. At its peak, there were eight locations.',
           whyMissed: 'The democratic spirit of the cafeteria line. The cornbread. The pie. The owner\'s 932 secret recipes that he safeguarded when COVID forced the doors shut forever.',
           communityVoice: '"Highland Park Cafeteria wasn\'t fancy, but that was the point. Everyone was equal in that line." — Dallas Observer',
@@ -2606,6 +2622,10 @@ export const dallas: CityData = {
           category: 'music-venue',
           name: 'Lizard Lounge',
           neighborhood: 'Swiss Avenue',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-lizardlounge.png',
+            alt: 'Lizard Lounge nightclub',
+          },
           description: 'For 28 years, Lizard Lounge was a mecca for electronic music, goth culture, and anyone who felt like a misfit. The Church — its legendary Sunday industrial/goth night — helped rejuvenate the club and solidified Dallas\'s spot in dark subculture. Dennis Rodman and Madonna once showed up in a black Ferrari wanting to buy the place.',
           whyMissed: 'The community. Owner Don Nedler received hundreds of messages from people who met their spouses there, who found their tribe there. It was the living room for Dallas\'s weirdos.',
           communityVoice: '"The Lizard Lounge never would\'ve survived for 30 years without The Church. It was that night we needed to keep our doors open." — Don Nedler, owner',
@@ -2627,6 +2647,10 @@ export const dallas: CityData = {
           category: 'music-venue',
           name: 'Club Clearview',
           neighborhood: 'Deep Ellum',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-clubclearview.png',
+            alt: 'Club Clearview in Deep Ellum',
+          },
           description: 'What started as a kegger in a warehouse by Mark Cuban and friends became Deep Ellum\'s cathedral. Club Clearview spread across 10,000 square feet with seven themed rooms — Club Clearview, Art Bar, Blind Lemon, The Red Room, and the rooftop deck. It birthed Edie Brickell and the New Bohemians, hosted the Red Hot Chili Peppers, and defined a generation.',
           whyMissed: 'The sheer variety — you could see a touring national act, catch a local band, and end up on the roof all in one night. Deep Ellum hasn\'t been the same since.',
           communityVoice: '"Club Clearview was a cathedral that had something for everyone. Jawbreaker, System of a Down, Fugazi, Pavement, No Doubt — they all came through those doors." — Central Track',
@@ -2646,6 +2670,10 @@ export const dallas: CityData = {
           category: 'music-venue',
           name: 'Curtain Club',
           neighborhood: 'Deep Ellum',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-curtain.png',
+            alt: 'Curtain Club in Deep Ellum',
+          },
           description: 'For 22 years, the Curtain Club held down the corner of Crowdus and Main, outlasting every other legacy venue in Deep Ellum. Its tradition of painting the monthly band schedule on the exterior wall in bold letters became part of the neighborhood\'s landscape. When it closed, Drowning Pool played an extended set while fans lined up outside the sold-out finale.',
           whyMissed: 'The constancy. While Trees closed and reopened, while Prophet Bar and The Door moved around, Curtain Club just kept being there. Until it wasn\'t.',
           communityVoice: '"The neighborhood has been nothing but welcoming. But honestly, the neighborhood doesn\'t let us forget it." — New tenant on the former space',
@@ -2670,6 +2698,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'Boulevardier',
           neighborhood: 'Bishop Arts',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-boulevardier.png',
+            alt: 'Boulevardier restaurant in Bishop Arts',
+          },
           description: 'This French bistro in a 100-year-old Bishop Arts building became the neighborhood\'s anchor — a casual spot with flawless Friday happy hours (oysters $1 off, every wine bottle half price until 6:30). The Boulevardier Burger, Crawfish Beignets, and Wood-Grilled Oysters drew crowds for 12 years.',
           whyMissed: 'The atmosphere. The way it felt distinctly European yet utterly Oak Cliff. The bone marrow. That Friday happy hour.',
           communityVoice: '"Boulevardier had a great ambiance and one of the better bone marrows in Dallas. Already missed as if it\'d been gone for decades." — D Magazine commenter',
@@ -2689,6 +2721,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'Lawry\'s The Prime Rib',
           neighborhood: 'North Dallas',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-lawrys.png',
+            alt: 'Lawry\'s The Prime Rib restaurant',
+          },
           description: 'For 40 years, Lawry\'s was Dallas\'s temple of prime rib — carved tableside from gleaming silver carts, served with Yorkshire pudding and a spinning salad bowl. It was one of only three locations nationwide, a slice of Beverly Hills glamour transplanted to Texas that pioneered valet parking and doggie bags.',
           whyMissed: 'The ritual. The silver carts. The consistency across four decades. The way a meal there felt like an event, not just dinner.',
           communityVoice: '"Lawry\'s brought a level of hospitality to Dallas dining that few have matched. When the building sold, a piece of the city\'s fine dining history went with it." — CultureMap Dallas',
@@ -2708,6 +2744,10 @@ export const dallas: CityData = {
           category: 'bar',
           name: 'Meddlesome Moth',
           neighborhood: 'Design District',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-moth.png',
+            alt: 'Meddlesome Moth in Design District',
+          },
           description: 'The Moth pioneered craft beer dining in Dallas before anyone else caught on. With 40 rotating taps and three massive stained glass windows rescued from Hard Rock Cafe depicting Elvis, Chuck Berry, and Jerry Lee Lewis, it anchored the Design District for 15 years. The World Atlas of Beer named it one of the best beer destinations in the world.',
           whyMissed: 'The beer selection. The mussels. The brunch. The way it made craft beer feel accessible, not snobbish. The Design District hasn\'t found its replacement.',
           communityVoice: '"We simply can\'t afford to stay. I think local operators are slowly being forced out, economically." — Shannon Wynne, co-owner',
@@ -2732,6 +2772,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'Monica\'s Aca Y Alla / Maracas',
           neighborhood: 'Deep Ellum',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-aca.png',
+            alt: 'Monica\'s Aca Y Alla in Deep Ellum',
+          },
           description: 'When Monica Greene opened her restaurant in Deep Ellum in 1992, the neighborhood was mostly music clubs. For 30 years under various names and owners, this corner of Main Street served Tex-Mex and Mexico City cuisine to generations of Deep Ellum crawlers. Monica herself became a pioneer of modern Mexican cooking in Dallas.',
           whyMissed: 'The staying power. Thirty years in Deep Ellum is practically eternal. The laid-back party atmosphere when the neighborhood was still rough around the edges.',
           communityVoice: '"Monica\'s impact on Dallas\'s vibrant modern Mexican cooking culture is undeniable and indelible." — Dallas Observer',
@@ -2751,6 +2795,10 @@ export const dallas: CityData = {
           category: 'restaurant',
           name: 'Morton\'s The Steakhouse',
           neighborhood: 'Uptown',
+          image: {
+            src: '/dallas/lost-and-loved/dallas-lost-mortons.png',
+            alt: 'Morton\'s The Steakhouse in Uptown',
+          },
           description: 'For nearly 40 years — first in the West End, then 24 years in Uptown — Morton\'s was Dallas\'s definitive power steakhouse. Generations of deals were sealed over porterhouses and creamed spinach. The news of its closing was the single most clicked food story in Dallas for 2025.',
           whyMissed: 'The institution of it. The leather booths, the massive steaks, the sense that you were eating where deals got done. Uptown lost its anchor.',
           communityVoice: '"Morton\'s closing felt like the end of an era. It wasn\'t just a restaurant — it was where Dallas did business." — Dallas Morning News reader',

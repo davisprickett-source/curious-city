@@ -973,7 +973,7 @@ export const colorado_springs: CityData = {
           hours: 'Daily 5pm-midnight',
           price: '$$$',
           images: [
-            { src: '/colorado-springs/bars/archives-1.png', alt: 'The Archives hidden speakeasy interior' },
+            { src: '/colorado-springs/bars/co-springs-bars-archive-1.png', alt: 'The Archives hidden speakeasy interior' },
           ],
         },
         {
@@ -988,8 +988,8 @@ export const colorado_springs: CityData = {
           price: '$$$',
           website: 'https://www.shameandregret.com/',
           images: [
-            { src: '/colorado-springs/bars/shame-regret-1.png', alt: 'Shame & Regret gothic interior' },
-            { src: '/colorado-springs/bars/shame-regret-2.png', alt: 'Whiskey collection display' },
+            { src: '/colorado-springs/bars/co-springs-bars-shameandregret-1.png', alt: 'Shame & Regret gothic interior' },
+            { src: '/colorado-springs/bars/co-springs-bars-shameandregret-2.png', alt: 'Whiskey collection display' },
           ],
         },
         {
@@ -1004,8 +1004,8 @@ export const colorado_springs: CityData = {
           price: '$$$',
           website: 'https://www.allusionbar.com/',
           images: [
-            { src: '/colorado-springs/bars/allusion-1.png', alt: 'Allusion Bar themed interior' },
-            { src: '/colorado-springs/bars/allusion-2.png', alt: 'Themed cocktail presentation' },
+            { src: '/colorado-springs/bars/co-springs-bars-allusion-0.png', alt: 'Allusion Bar themed interior' },
+            { src: '/colorado-springs/bars/co-springs-bars-allusion-1.png', alt: 'Themed cocktail presentation' },
           ],
         },
         {
@@ -1019,8 +1019,8 @@ export const colorado_springs: CityData = {
           hours: 'Mon-Thu 11am-midnight, Fri-Sat 11am-2am, Sun 11am-1am',
           price: '$',
           images: [
-            { src: '/colorado-springs/bars/bennys-1.png', alt: 'Benny\'s classic dive bar interior' },
-            { src: '/colorado-springs/bars/bennys-2.png', alt: 'Pool tables and jukebox' },
+            { src: '/colorado-springs/bars/co-springs-bars-bennys-1.png', alt: 'Benny\'s classic dive bar interior' },
+            { src: '/colorado-springs/bars/co-springs-bars-bennys-2.png', alt: 'Pool tables and jukebox' },
           ],
         },
         {
@@ -1035,8 +1035,8 @@ export const colorado_springs: CityData = {
           price: '$$',
           website: 'https://www.storybookbrewing.com/',
           images: [
-            { src: '/colorado-springs/bars/storybook-1.png', alt: 'Storybook Brewing taproom' },
-            { src: '/colorado-springs/bars/storybook-2.png', alt: 'Fairy tale-themed beer selection' },
+            { src: '/colorado-springs/bars/co-springs-bars-storybook-1.png', alt: 'Storybook Brewing taproom' },
+            { src: '/colorado-springs/bars/co-springs-bars-storybook-2.png', alt: 'Fairy tale-themed beer selection' },
           ],
         }
       ],
@@ -1197,7 +1197,7 @@ export const colorado_springs: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Peak Roasts',
-      intro: 'The altitude makes coffee taste different — and these spots make it taste exceptional.',
+      intro: 'At 6,000 feet, water boils at a lower temperature—which means brewing coffee here is a different science than at sea level. The Springs\' roasters figured this out early. Now the city has a coffee scene that punches well above its military-base-and-megachurch reputation. Barista-owned collectives. Roasters experimenting with altitude-adjusted extraction. Cafés where the Air Force Academy kids mix with the artists from the Ivywild School building. The vibe is less pretentious than Denver, the quality is just as high, and the views from the patios are better.',
       spots: [
         {
           name: 'Loyal Coffee',

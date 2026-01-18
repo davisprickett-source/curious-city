@@ -1015,7 +1015,7 @@ export const phoenix: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Sun-Baked Sips',
-      intro: 'From Ethiopian importers to whimsical window bars and Indigenous bakeries. Phoenix coffee has its own sun-baked identity.',
+      intro: 'Phoenix got serious about coffee before most of the Southwest noticed. Cartel was roasting specialty beans in 2007, training the baristas who would eventually open their own spots across the Valley. Now the scene has its own identity: a direct-trade roaster owned by Ethiopian immigrants, a window bar in a converted mid-century motel, and cafés that survive 115-degree summers by becoming neighborhood refuges. The iced coffee isn\'t optional here—it\'s survival. And the shops that understand that have built something distinct from the Pacific Northwest template everyone else copies.',
       spots: [
         {
           name: 'Cartel Coffee Lab',
@@ -2081,36 +2081,6 @@ export const phoenix: CityData = {
             { src: '/phoenix/dark-history/phoenix-dark-internment4.png', alt: 'Garden ponds built by internees' },
             { src: '/phoenix/dark-history/phoenix-dark-internment5.png', alt: 'Historical internment camp site' },
           ],
-        },
-        {
-          id: 'phx-dark-13',
-          type: 'dark-history',
-          featured: true,
-          featuredOrder: 12,
-          category: 'injustice',
-          year: '2006–2008',
-          title: 'They Built a Convention Center on Top of 3,000-Year-Old Houses',
-          body: 'In 2006, while demolishing the old Phoenix Civic Plaza for the new convention center, archaeologists found something: Hohokam houses. Three thousand years old. Older than Rome. Older than the pyramids at Giza by a millennium. The Hohokam had built an entire neighborhood here, with pit houses, storage pits, and cooking hearths. Phoenix had unknowingly paved over them in the 1970s, then held conferences and trade shows on top of ancient homes for decades.\n\nThe archaeologists excavated what they could before construction deadlines forced them to stop. The site revealed unprecedented evidence of Phoenix\'s earliest inhabitants—tools, pottery, and architectural details that could have rewritten understanding of Hohokam culture. Most of the site was destroyed anyway. The convention center opened on schedule in 2008.\n\nSomewhere under the ballrooms and expo halls, 3,000 years of Indigenous history is buried under concrete. No memorial. No plaque. Just carpet, fluorescent lights, and business conventions. Phoenix keeps building on graves.',
-          verdict: 'The houses were destroyed. The convention center remains. The Hohokam are still buried beneath it.',
-          sources: [
-            {
-              type: 'article',
-              title: 'Historic Photos of Phoenix',
-              publisher: 'ASU News',
-              url: 'https://news.asu.edu/content/historic-photos-phoenix-blend-facts-stories-and-photography',
-            },
-            {
-              type: 'article',
-              title: 'Unique Facts About Phoenix History',
-              publisher: 'Visit Phoenix',
-              url: 'https://www.visitphoenix.com/stories/post/11-unique-facts-you-didnt-know-about-phoenixs-history/',
-            },
-          ],
-          location: {
-            name: 'Phoenix Convention Center',
-      url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Convention%20Center%20Phoenix',
-            stillExists: true,
-          },
         },
       ],
     },

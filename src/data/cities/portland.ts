@@ -69,7 +69,7 @@ export const portland: CityData = {
           title: 'The world\'s smallest park is 2 feet wide and has a leprechaun (UPDATE: Japan stole the title)',
           body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
           image: {
-            src: '/portland/curiosities/Mill-Ends-Park.png',
+            src: '/portland/curiosities/mill-ends-park.png',
             alt: 'Mill Ends Park, the world\'s smallest park in Portland',
           },
           sources: [
@@ -1219,7 +1219,7 @@ export const portland: CityData = {
       type: 'best-of',
       category: 'restaurants',
       title: 'Rose City Tables',
-      intro: 'Portland\'s food scene was once the best value in America. Prices have caught up, but quality remains.',
+      intro: 'Portland built its food reputation on the premise that great restaurants didn\'t need white tablecloths or reservation apps. Pok Pok put Thai street food on the national map. Le Pigeon made offal hip. Cart pods proved that a $9 lunch from a converted trailer could change your life. The pandemic gutted the scene—Pok Pok closed, hundreds of carts vanished, downtown hollowed out. What survived got stronger. Yaowarat just made the Times\' 50 Best list. Canard keeps winning Wine Spectator awards. The city still eats like it has something to prove.',
       spots: [
         {
           name: 'Canard',
@@ -1318,7 +1318,7 @@ export const portland: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Where Portland\'s Baristas Actually Drink',
-      intro: 'Ask a local for the best coffee and they\'ll laugh—"anywhere." Third-wave roasting started here, and the rising tide lifted everyone. But these are the spots where the baristas go on their days off.',
+      intro: 'Portland didn\'t invent third-wave coffee, but it perfected the obsession. Stumptown launched direct trade before anyone had a name for it. Heart made minimalism an art form. A new generation of roasters keeps pushing the needle. The city has more specialty coffee per capita than anywhere in America—and somehow, the quality floor keeps rising. Here\'s where the baristas go when they\'re not behind the bar.',
       spots: [
         {
           name: 'Heart Coffee Roasters',

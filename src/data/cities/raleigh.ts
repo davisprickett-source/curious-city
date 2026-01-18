@@ -1352,7 +1352,7 @@ export const raleigh: CityData = {
       type: 'best-of',
       category: 'restaurants',
       title: 'Where Locals Actually Eat',
-      intro: 'Not the places your company takes clients. These are the spots your coworker whispers about.',
+      intro: 'Raleigh\'s food scene crept up on everyone. A decade ago, the Triangle was known for college-town chains and corporate steakhouses. Then the James Beard nominations started. Then the chefs who\'d trained in New York and Charleston came home. Now downtown has tasting menus and the hot dog stand from 1940 that still won\'t let you have ketchup. But the real story is the immigrant-run spots in strip malls across Cary and Morrisville—some of the most authentic Korean, Indian, and Vietnamese food between Atlanta and D.C. The chains are still here. You just don\'t need them anymore.',
       spots: [
         {
           name: 'The Roast Grill',

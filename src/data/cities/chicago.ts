@@ -1743,7 +1743,7 @@ export const chicago: CityData = {
       type: 'best-of',
       category: 'restaurants',
       title: 'Where to Actually Eat',
-      intro: 'Not the reservation apps. These are the places Chicago feeds itself.',
+      intro: 'Chicago invented the celebrity chef before anyone called it that—Charlie Trotter was plating microgreens while New York was still doing cream sauces. Then came Alinea, then the Michelin stars, then the reservation apps. But the city\'s real food culture lives in the neighborhoods: the taquerias on 26th Street that outclass anything trendy, the Italian beef stands that don\'t need your Instagram, the Korean BBQ spots in the northern suburbs where the quality-to-pretension ratio is perfect. These are the places the cooks hit after their shifts end.',
       spots: [
         {
           name: 'Johnnie\'s Beef',

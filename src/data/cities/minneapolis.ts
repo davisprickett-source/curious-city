@@ -2258,7 +2258,7 @@ export const minneapolis: CityData = {
       type: 'best-of',
       category: 'restaurants',
       title: 'Where to Actually Eat',
-      intro: 'Not the places with 6-week reservation lists. These are the spots the chefs hit on their nights off.',
+      intro: 'Minneapolis punches absurdly above its weight. A James Beard-winning Indigenous restaurant. The birthplace of the Jucy Lucy. A Southeast Asian street food spot that just took home Best Chef: Midwest. Northeast\'s Eastern European delis. Eat Street\'s global sprawl. Forget the reservation-list places—these are the spots where the cooks actually eat.',
       spots: [
         {
           name: 'Owamni',
@@ -3702,38 +3702,6 @@ export const minneapolis: CityData = {
             }
           ],
         },
-        {
-          id: 'mpls-lost-15',
-          type: 'lost-and-loved',
-          category: 'institution',
-          name: 'City Pages',
-          neighborhood: 'Minneapolis',
-          yearsOpen: '1979–2020',
-          description: 'For 41 years, City Pages was the alternative weekly that defined Minneapolis culture. Free, irreverent, and fiercely local, it covered the music, politics, food, and weirdness that mainstream media ignored. The annual "Best Of" issue was a cultural institution. Then the pandemic hit, advertising collapsed, and the presses stopped.',
-          whyMissed: 'That stack of free papers by the coffee shop door. The "Savage Love" column. Restaurant reviews that actually told you where to eat. Concert listings that introduced you to bands you\'d never heard of. Investigative journalism that made politicians uncomfortable. City Pages was how Minneapolis talked to itself — how neighborhoods learned about each other, how scenes got documented, how local culture got validated. When it folded in October 2020, the city lost more than a newspaper. It lost its mirror.',
-          communityVoice: '"City Pages was the soul of Minneapolis. When it died, part of the city died with it." — Former reader',
-          lastAddress: '650 3rd Ave S, Minneapolis',
-          images: [
-            {
-              src: '/minneapolis/lost-and-loved/city-pages.png',
-              alt: 'City Pages newspaper stands and covers',
-            }
-          ],
-          sources: [
-            {
-              title: 'Star Tribune: City Pages Closes After 41 Years',
-              url: 'https://www.startribune.com/city-pages-to-close-after-more-than-four-decades/572867371/',
-            },
-            {
-              title: 'MPR News: City Pages Shutdown',
-              url: 'https://www.mprnews.org/story/2020/10/29/city-pages-to-close-after-41-years',
-            },
-            {
-              title: 'Racket: What We Lost When City Pages Died',
-              url: 'https://racketmn.com/what-we-lost-when-city-pages-died/',
-            }
-          ],
-        }
       ],
     },
     {

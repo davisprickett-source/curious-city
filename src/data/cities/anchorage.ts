@@ -883,8 +883,8 @@ export const anchorage: CityData = {
           website: 'https://www.glacierbrewhouse.com/',
           instagram: '@glacierbrewhouse',
           images: [
-            { src: '/anchorage/bars/glacier-1.png', alt: 'Glacier Brewhouse interior fireplace' },
-            { src: '/anchorage/bars/glacier-2.png', alt: 'Brewing equipment' },
+            { src: '/anchorage/bars/anchorage-bars-brewhouse-1.png', alt: 'Glacier Brewhouse interior fireplace' },
+            { src: '/anchorage/bars/anchorage-bars-brewhouse-2.png', alt: 'Brewing equipment' },
           ],
         },
         {
@@ -1867,7 +1867,11 @@ export const anchorage: CityData = {
           id: 'anc-dark-12',
           type: 'dark-history',
           category: 'unsolved',
-                    title: 'The Torso Murders: Bodies Without Names',
+          image: {
+            src: '/anchorage/dark-history/anchorage-dark-torso-1.png',
+            alt: 'Turnagain Arm where the torso murders bodies were found',
+          },
+          title: 'The Torso Murders: Bodies Without Names',
           body: 'In June 2003, an 11-year-old boy found a torso in the mud along Turnagain Arm—no head, no legs. It was Desiree Lekanoff, 22, Alaska Native, once a sex worker on Spenard. Three months later, another torso washed up: Michelle Rothe, 32. She\'d never even been reported missing. Both women had ties to Spenard\'s underworld. Investigators found connections to at least five other missing women. No one has ever been charged. No more torsos have appeared since 2003—suggesting the killer stopped, moved away, or learned to dispose of bodies differently.',
           verdict: 'Completely unsolved. The connection to other missing women suggests a serial killer who was never caught. The case remains open.',
           sources: [
@@ -1894,7 +1898,11 @@ export const anchorage: CityData = {
           id: 'anc-dark-13',
           type: 'dark-history',
           category: 'forgotten',
-                    title: 'The Burning of Rogers Park: When Integration Meant Arson',
+          image: {
+            src: '/anchorage/dark-history/anchorage-dark-rogers-1.png',
+            alt: 'Rogers Park neighborhood in Anchorage',
+          },
+          title: 'The Burning of Rogers Park: When Integration Meant Arson',
           body: 'In 1950s Anchorage, racial segregation was written directly into property deeds—restrictive covenants that prohibited sale to anyone who wasn\'t white, specifically excluding Black residents and Alaska Natives. When Alvin Campbell, a Black pioneer, purchased a home in the segregated Rogers Park neighborhood, he was met with racist taunts. Days before his family could move in, the house was burned to the ground. It wasn\'t an isolated incident—it was part of a pattern of violent resistance to integration that most Anchorage residents have never heard of.',
           verdict: 'The arson was never solved. Thousands of Anchorage homes still have these illegal covenants on their deeds. The NAACP opened its first Alaska branch in 1951 partly in response.',
           sources: [
@@ -1930,6 +1938,10 @@ export const anchorage: CityData = {
           type: 'dark-history',
           category: 'tragedy',
           year: '1988–present',
+          image: {
+            src: '/anchorage/dark-history/anchorage-dark-triangle.png',
+            alt: 'Alaska wilderness where thousands have vanished',
+          },
           title: 'The Alaska Triangle: 16,000 People Have Vanished in 35 Years',
           body: 'A region stretching from Juneau to Barrow to Anchorage—roughly covering the entire populated heart of Alaska—has a missing persons rate four times the national average. Since 1988, over 16,000 people have vanished. Most disappear in the wilderness: hikers, hunters, bush pilots, fishermen. Some walk out their front door and are never seen again. Search and rescue operations routinely fail. Bodies are rarely recovered.\n\nThe Alaska Triangle isn\'t supernatural—it\'s geographical reality meeting human fragility. The wilderness here is vast, indifferent, and lethal. Temperatures plunge without warning. Glacial rivers sweep people away. Mountains swallow aircraft. Weather changes in minutes. Cell service is nonexistent. The terrain is unforgiving: dense forest, tundra swamps, crevasse-riddled glaciers, and coastlines where the tide moves faster than you can run.\n\nSome disappearances defy easy explanation, but most don\'t need one. The Alaska Triangle doesn\'t need a legend. It just needs time. The wilderness here has been killing people for millennia, and it will outlast everyone who enters it.',
           verdict: 'Most cases remain unsolved. The missing persons rate continues to climb. Alaska State Troopers investigate, but the wilderness rarely gives up its dead.',

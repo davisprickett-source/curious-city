@@ -120,9 +120,9 @@ export const fargo: CityData = {
                                   category: 'law',
                                   title: 'North Dakota ran a divorce mill that made it rich—then got shut down',
                                   body: 'In the 1890s, North Dakota became the unlikely "Reno of the Plains." The state had the most lenient divorce laws in America: establish residency in 90 days, file on nearly any grounds, walk away single. Wealthy Easterners—primarily women seeking to escape stifling marriages—flocked to Fargo, filling hotels, paying lawyers handsomely, and creating a mini-economic boom in the prairie. The state made a fortune from marital strife. Other states, particularly those with stricter divorce laws, were outraged, decrying North Dakota as a moral cesspool. Laws were tightened in 1899, ending the "Divorce Colony" era, but not before Fargo proved that even the most conservative states can find a market for breaking hearts and making bank.',
-                                                                    image: {
-                                    src: '/fargo/curiosities/divorce.png',
-                                    alt: 'Historic downtown Fargo',
+                                  image: {
+                                    src: '/fargo/curiosities/divorce-colony.png',
+                                    alt: 'North Dakota divorce colony era',
                                   },
                                   source: 'North Dakota Historical Society',
                                   location: {
@@ -205,7 +205,11 @@ export const fargo: CityData = {
                                   category: 'architecture',
                                   title: 'The Western Hemisphere\'s tallest structure is in a cornfield near Fargo',
                                   body: 'Forget the Freedom Tower or the Willis Tower. The tallest structure in the Western Hemisphere isn\'t in New York or Chicago; it\'s a 2,063-foot guyed mast for KVLY-TV, poking out of a cornfield near Blanchard, just outside Fargo. Built in 1963 to test Cold War antenna designs, it briefly held the title of the world\'s tallest man-made structure until Dubai\'s Burj Khalifa came along. To this day, it remains taller than anything in North or South America. You can see it for 30 miles in every direction, an impossible needle thrust into the endless prairie sky, broadcasting local news and a silent, towering testament to Cold War ambition and the fact that sometimes, the biggest things are found in the most unexpected places.',
-                                                                    source: 'KVLY-TV',
+                                  image: {
+                                    src: '/fargo/curiosities/kvly-tower.png',
+                                    alt: 'KVLY-TV tower near Blanchard, North Dakota',
+                                  },
+                                  source: 'KVLY-TV',
                                   location: {
                                     name: 'Blanchard, ND',
       url: 'https://www.google.com/maps/search/?api=1&query=Blanchard%2C%20ND%20Fargo',
@@ -218,6 +222,20 @@ export const fargo: CityData = {
                                   category: 'culture',
                                   title: 'The Fargo woodchipper is a real tourist attraction (despite being entirely fictional)',
                                   body: 'The Coen Brothers\' 1996 film "Fargo" was a dark, snow-swept masterpiece that put the city on the global map. The problem? It was barely filmed *in* Fargo, and its events were entirely fictional. Yet, the city, in a stroke of brilliant, self-aware marketing, leaned into the absurdity. The Fargo-Moorhead Visitors Center now prominently displays a woodchipper with a fake leg sticking out, where tourists eagerly line up for photos. When you ask locals about the movie, they\'ll smile politely and point out that the infamous accent is actually more Minnesotan. But they\'ll still happily sell you a T-shirt. It\'s the ultimate meta-tourism experience: celebrating a movie about a place that isn\'t quite this place, featuring events that never happened, all while winking at the camera. You betcha.',
+                                  images: [
+                                    {
+                                      src: '/fargo/curiosities/woodchipper-1.png',
+                                      alt: 'Fargo woodchipper tourist attraction',
+                                    },
+                                    {
+                                      src: '/fargo/curiosities/woodchipper-2.png',
+                                      alt: 'Fargo woodchipper photo op',
+                                    },
+                                    {
+                                      src: '/fargo/curiosities/woodchipper-3.png',
+                                      alt: 'Fargo movie woodchipper display',
+                                    },
+                                  ],
                                   source: 'Fargo-Moorhead CVB',
                                   location: {
                                     name: 'Fargo-Moorhead Visitors Center',
@@ -439,63 +457,47 @@ export const fargo: CityData = {
     {
       id: 'far-hidden-gems',
       type: 'section',
-      title: 'Under the Ice',
-      teaser: 'The secret life of the Red River Valley',
-      intro: 'Beyond the surface-level hospitality lies a Fargo that doesn\'t always make the brochures. These are the spots where the city gets experimental, underground, and occasionally confusing.',
+      title: 'Where Locals Actually Go',
+      teaser: 'The spots that don\'t show up on "Best Of" lists',
+      intro: 'Fargo-Moorhead has a visitor center with a woodchipper photo op. It has a downtown walking tour. It has all the obvious stuff. What it doesn\'t advertise are the places locals actually get excited about—the weird shops tucked inside other shops, the archives nobody knows exist, the statues everyone drives past without noticing. This is the other Fargo.',
       items: [
         {
           id: 'gem-ndsu-archives',
           type: 'hidden-gem',
-          name: 'NDSU Archives Incognito Outpost',
+          name: 'NDSU Archives Off-Site Facility',
           category: 'Hidden Archive',
           description:
-            'Located in an off-campus industrial warehouse (former Knox Lumber Company), this archive contains heavy boxes of original glass plate negatives from the late 1800s-1930s showing early NDSU campus life. Lead archivist notes "A lot of people don\'t realize this is available." Nearly destroyed by flooding 25 years ago when housed in a basement. Requires appointment or insider knowledge to access.',
+            'In a nondescript industrial warehouse on Seventh Avenue North—the former Knox Lumber Company building—sits one of the region\'s most overlooked historical treasures. Heavy boxes of original glass plate negatives from the late 1800s through the 1930s capture early NDSU campus life: students in wool coats squinting at the camera, buildings that no longer exist, a prairie campus before it sprawled. The collection nearly vanished 25 years ago when it was stored in a basement that flooded. Now it lives in climate-controlled obscurity, available to anyone who calls ahead but unknown to almost everyone. The lead archivist puts it simply: "A lot of people don\'t realize this is available." They don\'t. Most locals have no idea it exists. That\'s the point.',
           address: '3551 Seventh Ave N, Fargo, ND 58102',
           coordinates: { lat: 46.8945, lng: -96.8123 },
           hours: 'By appointment only',
           price: 'Free',
-          tip: 'Call ahead for appointment — this isn\'t listed on campus maps.',
-        },
-        {
-          id: 'gem-den-of-antiquity',
-          type: 'hidden-gem',
-          featured: true,
-          featuredOrder: 1,
-          name: 'Den of Antiquity',
-          category: 'Oddities Shop',
-          description:
-            'Specializes in "vintage sex history, vintage & antique religious items, medical items, and oddities." They joke about riffing on "den of iniquity" given the smut and oddities. Features mid-century kitsch, vintage paperbacks and pulps, old advertising. Hidden inside First Avenue Market.',
-          address: 'First Avenue Market, Downtown Fargo',
-          coordinates: { lat: 46.8779, lng: -96.7898 },
-          hours: '7 days a week (market hours)',
-          price: 'Browsing free',
-          website: 'http://www.wehaveyourcollectibles.com/',
-          tip: 'Don\'t judge the collection — it\'s intentionally eclectic and bizarre.',
+          tip: 'Email the NDSU archives in advance. This facility isn\'t on campus maps and won\'t be open if you just show up.',
         },
         {
           id: 'gem-tiny-things',
           type: 'hidden-gem',
           featured: true,
-          featuredOrder: 2,
+          featuredOrder: 1,
           name: 'Tiny Things',
           category: 'Miniatures Shop',
           description:
-            'North Dakota\'s smallest store selling only tiny items — jewelry, prints, gift baskets, quirky miniatures. Featured by Atlas Obscura. Open 360+ days a year but tucked inside Brewhalla market, easy to miss. The store itself is barely bigger than a closet.',
+            'North Dakota\'s smallest store is exactly what it sounds like: a shop that sells only tiny things, housed in a space barely bigger than a closet. It\'s tucked inside Brewhalla, a craft beer market on First Avenue North, which means you have to know it exists to find it—and even then, you might walk past twice. The inventory is miniature jewelry, tiny prints, small gift baskets, and an assortment of quirky objects scaled for dollhouses or people who like their possessions pocket-sized. Atlas Obscura featured it. The owners open 360+ days a year, which in Fargo weather is a commitment. The whole thing feels like a joke that turned into a business that turned into a legitimate destination. In a land of big sky and endless horizons, someone decided to go the opposite direction entirely.',
           address: 'Inside Brewhalla, 1666 1st Ave N, Fargo, ND 58102',
           coordinates: { lat: 46.8869, lng: -96.7894 },
           hours: 'Daily (Brewhalla hours)',
           price: 'Items vary',
-          tip: 'Look for the smallest storefront inside Brewhalla — it\'s literally tiny.',
+          tip: 'Walk slowly through Brewhalla or you\'ll miss it. The storefront is intentionally tiny.',
         },
         {
           id: 'gem-rourke-museum',
           type: 'hidden-gem',
           featured: true,
-          featuredOrder: 3,
+          featuredOrder: 2,
           name: 'The Rourke Art Gallery + Museum',
           category: 'Eclectic Art Collection',
           description:
-            'Built around the founder\'s personal collection featuring a "wonderfully unexpected array" from ancient Asian artifacts and pre-Columbian pottery to European prints. "Diverse, sometimes quirky, and deeply personal nature." Lesser-known than Plains Art Museum despite being Moorhead\'s cultural gem.',
+            'Most visitors to Fargo-Moorhead head straight for the Plains Art Museum. The Rourke, across the river in Moorhead, gets overlooked—which is a mistake. Housed in a 1915 Federal Courthouse building, the collection started as one man\'s obsession and stayed that way. James O\'Rourke spent decades acquiring art that interested him personally, with no curatorial mandate to follow. The result is a "wonderfully unexpected array": ancient Asian artifacts next to pre-Columbian pottery, European prints beside regional work, religious icons sharing walls with contemporary pieces. It doesn\'t make sense by museum standards. It makes sense as one person\'s vision of what matters. The building itself—with its high ceilings and federal gravitas—adds a layer of formality that the eclectic collection cheerfully ignores. Free admission. Limited hours. Almost no one you meet in Fargo will have been there.',
           images: [
             {
               src: '/fargo/hidden-gems/rourke-museum.jpg',
@@ -508,15 +510,15 @@ export const fargo: CityData = {
           hours: 'Wed-Sat 1-5pm',
           price: 'Free',
           website: 'https://www.therourke.org/',
-          tip: 'The collection is "deeply personal" — expect the unexpected.',
+          tip: 'Come with no expectations. The collection reflects one collector\'s lifetime of curiosity, not a textbook survey.',
         },
         {
-          id: 'gem-gar-statue',
+          id: 'gem-island-park-monuments',
           type: 'hidden-gem',
-          name: 'GAR Civil War Soldier Statue',
-          category: 'Forgotten Monument',
+          name: 'Island Park\'s Forgotten Monuments',
+          category: 'Hidden History',
           description:
-            'Relatively rare Civil War commemorative Union Soldier statue in North Dakota, a state far from the conflict. Sits in Island Park where most locals drive past without noticing. Part of Grand Army of the Republic memorial tradition.',
+            'Island Park is where Fargo jogs and picnics and lets the dog run. It\'s also where two statues stand almost completely ignored. The first is a Grand Army of the Republic Civil War soldier—one of the few Civil War monuments in North Dakota, a state that didn\'t exist during the war and sent no regiments. Why is it here? Veterans who settled the prairie after Appomattox brought their memorials with them. The statue faces east, toward battlefields most Fargo residents have never thought about. A hundred feet away stands Henrik Wergeland, the "father of Norwegian literature," cast in bronze by the legendary sculptor Gustav Vigeland. It\'s identical to the one in Oslo. Wergeland was part of Norway\'s independence movement, and after 1905, Norwegian-American communities erected monuments to prove they hadn\'t forgotten. Most Fargo residents have walked past both statues without noticing. Most couldn\'t tell you who Wergeland was. The monuments outlast the memory.',
           images: [
             {
               src: '/fargo/hidden-gems/gar-statue.jpg',
@@ -528,27 +530,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8723, lng: -96.7856 },
           hours: 'Park hours',
           price: 'Free',
-          tip: 'One of few Civil War monuments in North Dakota — hidden in plain sight.',
-        },
-        {
-          id: 'gem-henrik-wergeland',
-          type: 'hidden-gem',
-          name: 'Henrik Wergeland Statue',
-          category: 'Norwegian Monument',
-          description:
-            'Honors the "Lyric poet, father of Norwegian literature" — one of five Norwegian monuments erected following Norway\'s 1905 independence. Most people have no idea who he is or why his statue sits in Island Park. Part of Scandinavian Heritage Passport.',
-          images: [
-            {
-              src: '/fargo/hidden-gems/wergeland-statue.jpg',
-              alt: 'Henrik Wergeland statue by Gustav Vigeland (identical statue in Oslo, 1908)',
-              credit: 'Wikimedia Commons / CC BY-SA 4.0',
-            },
-          ],
-          address: 'Island Park, Fargo, ND',
-          coordinates: { lat: 46.8720, lng: -96.7860 },
-          hours: 'Park hours',
-          price: 'Free',
-          tip: 'Part of five Norwegian monuments scattered throughout Fargo-Moorhead.',
+          tip: 'The Wergeland statue is on the Scandinavian Heritage Passport trail—a self-guided tour of Norwegian landmarks scattered across Fargo-Moorhead.',
         },
         {
           id: 'gem-fargo-forest-garden',
@@ -556,13 +538,13 @@ export const fargo: CityData = {
           name: 'Fargo Forest Garden',
           category: 'Urban Permaculture',
           description:
-            'Depaved in 2008, planted Spring 2009. Features permaculture principles with fruit trees, berry shrubs, perennial vegetable guilds. Audubon backyard bird habitat "perfect for wandering, sitting and reading, drawing and painting as well as bird watching." Hidden in plain sight.',
+            'In 2008, volunteers ripped up a vacant lot\'s concrete. In 2009, they planted a forest. Not a park—a forest garden, designed on permaculture principles: fruit trees, berry shrubs, perennial vegetable guilds, plants that feed each other and the neighborhood. It\'s a certified Audubon backyard bird habitat, which sounds official but really just means the birds figured out something good was happening here. The space is intentionally wild-looking, tucked into a corner of northeast Fargo where nobody would expect an urban food forest to exist. Most people who live nearby don\'t know it\'s there. The ones who do treat it like a secret—a place to sit, read, sketch, or just be somewhere that isn\'t a parking lot. The Urban Farm Collective maintains it. The city mostly ignores it. That\'s probably why it still feels like a discovery.',
           address: 'Corner of NE Fargo and N Williams Ave, Fargo, ND',
           coordinates: { lat: 46.8890, lng: -96.7756 },
           hours: 'Dawn to dusk',
           price: 'Free',
           website: 'https://urbanfarmcollective.org/gardens/fargo-forest-garden/',
-          tip: 'Bring a book — it\'s designed as a peaceful contemplation space.',
+          tip: 'It\'s meant to look overgrown. That\'s the point. Bring a book and stay awhile.',
         },
         {
           id: 'gem-hidden-pictures-mural',
@@ -570,25 +552,12 @@ export const fargo: CityData = {
           name: 'Hidden Pictures Mural',
           category: 'Interactive Art',
           description:
-            'Contains over 20 hidden pictures in the mural behind Black Coffee & Waffle Bar. You have to know to look for it. Interactive public art that rewards close observation. Local favorite for photography.',
+            'In the alley behind Black Coffee & Waffle Bar, there\'s a mural most people photograph without understanding. It looks like a colorful wall. It is a colorful wall. But embedded in the design are more than 20 hidden images—objects, faces, symbols—that only reveal themselves if you stand there and stare. It\'s a grown-up version of the Highlights magazine puzzles you did in waiting rooms as a kid. Locals bring friends here specifically to watch them squint. Some of the hidden pictures are obvious once you see them; others take serious effort. Nobody has published a complete answer key, which is either intentional or just very Fargo. The mural gets good light in the afternoon. Bring coffee from the shop it\'s behind and make it a game.',
           address: 'Alley behind Black Coffee & Waffle Bar, Fargo',
           coordinates: { lat: 46.8775, lng: -96.7895 },
           hours: 'Always accessible',
           price: 'Free',
-          tip: 'Challenge yourself to find all 20+ hidden images.',
-        },
-        {
-          id: 'gem-artist-planters',
-          type: 'hidden-gem',
-          name: 'Eleven Artist-Designed Planters',
-          category: 'Hidden Public Art',
-          description:
-            'Unique artist-designed planters in downtown Moorhead that most people assume are just regular planters. Between M&H Gas Station and Ace Hardware. Public art disguised as street furniture — hidden in plain sight.',
-          address: 'Between M&H and Ace Hardware, downtown Moorhead',
-          coordinates: { lat: 46.8735, lng: -96.7665 },
-          hours: 'Always visible',
-          price: 'Free',
-          tip: 'Look closely — these aren\'t ordinary planters.',
+          tip: 'Count how many hidden images you can find. Most people stop at 12. There are more than 20.',
         },
       ],
     },

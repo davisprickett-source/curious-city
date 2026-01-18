@@ -278,41 +278,21 @@ export const salt_lake_city: CityData = {
             stillExists: true,
           },
         },
-        {
-          id: 'slc-curiosity-13',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Temple Square draws more visitors than the Grand Canyon',
-          body: 'Temple Square receives approximately 5 million visitors annually, which means more people walk through this 35-acre religious complex than visit the Grand Canyon (4.5 million) or Yellowstone (4 million). The comparison is intentional and frequently cited by Church officials. What draws the crowds? The Salt Lake Temple itself, of course, though non-members can only admire the exterior. The granite structure took 40 years to build, from 1853 to 1893, with pioneers hauling stones from a canyon 20 miles away by oxen. Beyond the temple, Temple Square offers the Tabernacle (with its acoustically perfect dome where a pin dropped at the pulpit can be heard in the back row), two massive visitor centers, gardens that are replanted seasonally, and missionaries from around the world who staff the grounds in rotating shifts. The missionaries are unfailingly polite, multilingual, and eager to answer questions or offer tours. During Christmas, 400,000 lights transform the complex into something genuinely spectacular. The whole operation is free to enter, meticulously maintained, and designed to welcome all while gently encouraging conversion. It functions like a theme park for faith: well-organized, immaculately clean, and surprisingly effective at delivering exactly the experience it promises.',
-          image: {
-            src: '/salt-lake-city/curiosities/visitors-temple-square.png',
-            alt: 'Visitors at Temple Square in Salt Lake City',
-          },
-          source: 'Church of Jesus Christ of Latter-day Saints',
-          location: {
-            name: 'Temple Square',
-      url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'slc-curiosity-14',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'The Tabernacle Choir nearly disbanded multiple times',
-          body: 'The Tabernacle Choir started in 1847, just weeks after the first Mormon pioneers arrived in the Salt Lake Valley, as an informal group of singers who wanted to perform at church services. It was messy, underfunded, and nearly collapsed multiple times in its early decades. Brigham Young personally intervened repeatedly to keep it alive, recognizing that a world-class choir could serve as remarkably effective missionary work. He was right. Today, the Tabernacle Choir at Temple Square (rebranded from "Mormon Tabernacle Choir" in 2018 to align with the Church\'s de-emphasis of the term "Mormon") has 360 volunteer members selected through competitive auditions. They serve without pay, rehearse weekly, and perform Sunday morning broadcasts that have run continuously since 1929, making "Music and the Spoken Word" the longest-running network broadcast in American history. The choir has performed at six presidential inaugurations since Lyndon Johnson and won a Grammy. Members must be practicing Latter-day Saints living within 100 miles of Temple Square, and they commit to years of unpaid service. The waiting list to audition is substantial. What began as a struggling frontier choir became one of the most recognized choral organizations on Earth through sheer institutional persistence.',
-          year: '1847',
-          image: {
-            src: '/salt-lake-city/curiosities/choir.png',
-            alt: 'Tabernacle Choir at Temple Square performing',
-          },
-          source: 'Tabernacle Choir historical archives',
-          location: {
-            name: 'Salt Lake Tabernacle',
-      url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Tabernacle%20Salt%20Lake%20City',
-            stillExists: true,
-          },
-        },
+        // ARCHIVED: Temple Square and Choir entries - standard tourist content
+        // {
+        //   id: 'slc-curiosity-13',
+        //   type: 'curiosity',
+        //   category: 'culture',
+        //   title: 'Temple Square draws more visitors than the Grand Canyon',
+        //   body: '...',
+        // },
+        // {
+        //   id: 'slc-curiosity-14',
+        //   type: 'curiosity',
+        //   category: 'culture',
+        //   title: 'The Tabernacle Choir nearly disbanded multiple times',
+        //   body: '...',
+        // },
         {
           id: 'slc-curiosity-balloon',
           type: 'curiosity',
@@ -541,27 +521,12 @@ export const salt_lake_city: CityData = {
           price: 'Free',
           tip: 'The hair art is on the second floor—look for the Victorian wreaths made entirely of human hair.',
         },
-        {
-          id: 'gem-cemetery-1',
-          type: 'hidden-gem',
-          featured: true,
-          featuredOrder: 4,
-          name: 'Lilly E. Gray\'s "Victim of the Beast 666" Grave',
-          category: 'Cemetery Oddity',
-          description: 'Lilly E. Gray died of natural causes in 1958. She was 77, had no criminal record, and by all accounts lived an unremarkable life. But her gravestone—"Victim of the Beast 666"—has drawn thousands of visitors and spawned decades of speculation. Was she murdered by a cult? Possessed? The truth is stranger and sadder: her husband Elmer was a paranoid anti-government eccentric who spent time in prison and believed "the beast" was the federal government. When Lilly died, Elmer blamed them and paid for the cryptic epitaph that turned an ordinary grave into Salt Lake\'s most mysterious landmark. Researchers have traced Elmer\'s paper trail—arrests, letters, grievances—and found a man at war with institutions he believed had persecuted him. Lilly became his final monument to that rage. Her grave is the most visited in the cemetery, surrounded by the unremarkable dead, forever marked by her husband\'s obsession.',
-          images: [
-            {
-              src: '/salt-lake-city/dark-history/lily-gray.png',
-              alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666"',
-            }
-          ],
-          address: 'Salt Lake City Cemetery, Section X1',
-          coordinates: { lat: 40.7769, lng: -111.8623 },
-          hours: 'Cemetery hours',
-          price: 'Free',
-          website: 'https://www.slc.gov/parks/cemeteries/',
-          tip: 'While you\'re here: the cemetery also holds Lester Wire (invented the traffic light) and "Madame Pattirini," a cross-dressing soprano whose true identity wasn\'t revealed until death.',
-        },
+        // ARCHIVED: Already covered in dark history section
+        // {
+        //   id: 'gem-cemetery-1',
+        //   type: 'hidden-gem',
+        //   name: 'Lilly E. Gray\'s "Victim of the Beast 666" Grave',
+        // },
         {
           id: 'gem-nature-1',
           type: 'hidden-gem',
@@ -763,78 +728,14 @@ export const salt_lake_city: CityData = {
           website: 'https://www.kilbycourt.com',
           tip: 'Arrive early—capacity is tiny and popular shows sell out. The alley can be hard to find after dark.',
         },
-        {
-          id: 'gem-speakeasy-1',
-          type: 'hidden-gem',
-          name: 'The Rest (Hidden Speakeasy at Bodega)',
-          category: 'Secret Restaurant',
-          description: 'In a state with some of America\'s strangest liquor laws, it\'s fitting that one of Salt Lake\'s best restaurants hides beneath a taco shop. The Rest occupies the basement below Bodega, accessed through an unmarked door that requires reservations to open. The space channels a 1920s hunting lodge—leather, wood, taxidermy, low lighting—with a menu that goes far beyond bar food. The Beer Can Chicken is legendary: a whole bird roasted upright over a can of Uinta, served with sides meant for sharing. Cocktails are serious but not pretentious. Desserts are mandatory. The speakeasy concept is overdone in most cities, but The Rest earns it—partly because Utah\'s relationship with alcohol has always been complicated, and partly because hiding something this good feels appropriately subversive.',
-          images: [
-            {
-              src: '/salt-lake-city/hidden-gems/therest-1.png',
-              alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
-            },
-            {
-              src: '/salt-lake-city/hidden-gems/therest-2.png',
-              alt: 'The Rest speakeasy dining room',
-            }
-          ],
-          address: '331 S Main St (below Bodega), Salt Lake City, UT 84111',
-          coordinates: { lat: 40.7630, lng: -111.8883 },
-          hours: 'Wed-Sat, dinner service',
-          price: '$$$',
-          website: 'https://www.bodega331.com',
-          tip: 'Reservations are essential—walk-ins almost never work. Order the chicken for two even if you\'re not that hungry.',
-        },
-        {
-          id: 'gem-neighborhood-1',
-          type: 'hidden-gem',
-          name: 'Marmalade District',
-          category: 'Historic Neighborhood',
-          description: 'Salt Lake\'s street grid is famously wide and rational—except in the Marmalade District, where narrow lanes named Apricot, Quince, and Almond wind up steep hillsides in complete defiance of city planning. The neighborhood exists because 19th-century merchants who\'d made money in San Francisco built homes here in the styles they remembered: Italianate, Queen Anne, Gothic Revival, Carpenter Gothic. The terrain reminded them of Nob Hill, so they imported the architecture. The result is Salt Lake\'s oldest residential neighborhood and its strangest—a pocket of Victorian San Francisco dropped into the Mormon grid, named for the fruit trees that once covered the slopes. Listed on the National Register since 1982, the Marmalade has gentrified but not homogenized. The best way to experience it is on foot, climbing the hills, discovering houses that look teleported from another city, another century.',
-          images: [
-            {
-              src: '/salt-lake-city/hidden-gems/marmalade-1.png',
-              alt: 'Victorian houses on steep hillside street',
-            },
-            {
-              src: '/salt-lake-city/hidden-gems/marmalde-2.png',
-              alt: 'Marmalade District historic architecture',
-            }
-          ],
-          address: 'North of downtown, near Capitol Hill',
-          coordinates: { lat: 40.7780, lng: -111.8940 },
-          hours: 'Always open for walking',
-          price: 'Free',
-          tip: 'Park near the Capitol and walk down—the views of downtown are better when you\'re descending.',
-        },
-        {
-          id: 'gem-student-1',
-          type: 'hidden-gem',
-          name: 'The Pie Pizzeria (Underground)',
-          category: 'restaurant',
-          description: 'Every college town has a pizza joint that defines its history; at the University of Utah, it is literal history. Located in a dank, brick-walled basement on 200 South, The Pie has been feeding students since 1980 in a room that feels like a collective diary. The walls are encrusted with forty years of student graffiti—thousands of names and dates carved and Sharpied into every available inch of brick. The pizza is thick, heavy, and engineered for high-altitude survival. It\'s not the most refined slice in the city, but it is the most honest—a chaotic, subterranean ritual of cheese and localized rebellion.',
-          images: [
-            {
-              src: '/salt-lake-city/hidden-gems/thepie-1.png',
-              alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
-            },
-            {
-              src: '/salt-lake-city/hidden-gems/thepie-2.png',
-              alt: 'The Pie Pizzeria interior',
-            },
-            {
-              src: '/salt-lake-city/hidden-gems/thepie-3.png',
-              alt: 'The Pie Underground atmosphere',
-            }
-          ],
-          address: '1320 E 200 S, Salt Lake City, UT 84102',
-          coordinates: { lat: 40.7630, lng: -111.8581 },
-          hours: '11am-11pm daily',
-          price: '$$',
-          website: 'https://thepie.com',
-          tip: 'The combo slice is the move. Add a side of ranch and don\'t overthink it.',
-        }
+        // MOVED: The Rest speakeasy moved to bars section
+        // ARCHIVED: Marmalade District - not distinctive enough
+        // {
+        //   id: 'gem-neighborhood-1',
+        //   type: 'hidden-gem',
+        //   name: 'Marmalade District',
+        // },
+        // MOVED: The Pie Pizzeria moved to restaurants section
       ],
     },
     {
@@ -968,6 +869,28 @@ export const salt_lake_city: CityData = {
             {
               src: '/salt-lake-city/bars/twilite-2.png',
               alt: 'Twilite Lounge bar',
+            }
+          ],
+        },
+        {
+          name: 'The Rest',
+          neighborhood: 'Downtown',
+          vibe: 'Hidden speakeasy beneath a taco shop, 1920s hunting lodge aesthetic',
+          order: 'The Beer Can Chicken for two, plus serious cocktails',
+          why: 'In a state with some of America\'s strangest liquor laws, it\'s fitting that one of Salt Lake\'s best restaurants hides beneath a taco shop. The Rest occupies the basement below Bodega, accessed through an unmarked door that requires reservations to open. The space channels a 1920s hunting lodge—leather, wood, taxidermy, low lighting—with a menu that goes far beyond bar food. The Beer Can Chicken is legendary: a whole bird roasted upright over a can of Uinta, served with sides meant for sharing. Cocktails are serious but not pretentious. Desserts are mandatory. The speakeasy concept is overdone in most cities, but The Rest earns it—partly because Utah\'s relationship with alcohol has always been complicated, and partly because hiding something this good feels appropriately subversive.',
+          address: '331 S Main St (below Bodega), Salt Lake City, UT 84111',
+          coordinates: { lat: 40.7630, lng: -111.8883 },
+          price: '$$$',
+          hours: 'Wed-Sat, dinner service',
+          website: 'https://www.bodega331.com',
+          images: [
+            {
+              src: '/salt-lake-city/hidden-gems/therest-1.png',
+              alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
+            },
+            {
+              src: '/salt-lake-city/hidden-gems/therest-2.png',
+              alt: 'The Rest speakeasy dining room',
             }
           ],
         }
@@ -1197,6 +1120,32 @@ export const salt_lake_city: CityData = {
             }
           ],
           menuImage: { src: '/salt-lake-city/restaurants/takashi-menu.png', alt: 'Takashi menu' },
+        },
+        {
+          name: 'The Pie Pizzeria (Underground)',
+          neighborhood: 'University District',
+          vibe: 'Legendary basement pizza joint with 40 years of student graffiti',
+          order: 'The combo slice with a side of ranch',
+          why: 'Every college town has a pizza joint that defines its history; at the University of Utah, it is literal history. Located in a dank, brick-walled basement on 200 South, The Pie has been feeding students since 1980 in a room that feels like a collective diary. The walls are encrusted with forty years of student graffiti—thousands of names and dates carved and Sharpied into every available inch of brick. The pizza is thick, heavy, and engineered for high-altitude survival. It\'s not the most refined slice in the city, but it is the most honest—a chaotic, subterranean ritual of cheese and localized rebellion.',
+          address: '1320 E 200 S, Salt Lake City, UT 84102',
+          coordinates: { lat: 40.7630, lng: -111.8581 },
+          price: '$$',
+          hours: '11am-11pm daily',
+          website: 'https://thepie.com',
+          images: [
+            {
+              src: '/salt-lake-city/hidden-gems/thepie-1.png',
+              alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
+            },
+            {
+              src: '/salt-lake-city/hidden-gems/thepie-2.png',
+              alt: 'The Pie Pizzeria interior',
+            },
+            {
+              src: '/salt-lake-city/hidden-gems/thepie-3.png',
+              alt: 'The Pie Underground atmosphere',
+            }
+          ],
         }
       ],
     },
@@ -1338,7 +1287,7 @@ export const salt_lake_city: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Mountain Brews',
-      intro: 'With over 70 coffee shops, SLC punches above its weight. From second-wave pioneers to third-wave obsessives, there\'s serious coffee culture in this mountain town.',
+      intro: 'In a state where coffee once felt countercultural, Salt Lake built a scene that rivals cities twice its size. Publik helped spark the third-wave movement here, La Barba brought direct-trade sourcing to the Wasatch Front, and shops like Jack Mormon wear the city\'s complicated relationship with caffeine right in the name. The altitude matters too—water boils at 202°F up here, which changes extraction. The best local roasters have turned that quirk into an advantage.',
       spots: [
         {
           name: 'The Rose Establishment',

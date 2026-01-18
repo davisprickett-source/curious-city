@@ -15,6 +15,7 @@ const r2Client = new S3Client({
 
 const BUCKET_NAME = process.env.R2_BUCKET_NAME;
 const PUBLIC_DIR = path.join(__dirname, 'public');
+const PARALLEL_UPLOADS = 50; // Upload 50 files at once
 
 // Files/folders to skip
 const SKIP_PATTERNS = [
@@ -82,10 +83,18 @@ async function uploadFile(filePath) {
   }
 }
 
+// Upload in parallel batches
+async function uploadBatch(files, startIdx) {
+  const batch = files.slice(startIdx, startIdx + PARALLEL_UPLOADS);
+  if (batch.length === 0) return [];
+  return Promise.all(batch.map(uploadFile));
+}
+
 async function main() {
-  console.log('🚀 Starting upload of ALL images to Cloudflare R2...\n');
+  console.log('🚀 Starting PARALLEL upload of ALL images to Cloudflare R2...\n');
   console.log(`📦 Bucket: ${BUCKET_NAME}`);
   console.log(`📁 Source: ${PUBLIC_DIR}`);
+  console.log(`⚡ Parallel uploads: ${PARALLEL_UPLOADS} at once`);
   console.log(`🚫 Skipping: ${SKIP_PATTERNS.join(', ')}\n`);
 
   // Get all files
@@ -95,26 +104,34 @@ async function main() {
   let uploaded = 0;
   let failed = 0;
   const errors = [];
+  const startTime = Date.now();
 
-  // Upload with progress
-  for (let i = 0; i < files.length; i++) {
-    const file = files[i];
-    const result = await uploadFile(file);
+  // Upload in parallel batches
+  for (let i = 0; i < files.length; i += PARALLEL_UPLOADS) {
+    const results = await uploadBatch(files, i);
 
-    if (result.success) {
-      uploaded++;
-      if (uploaded % 50 === 0) {
-        console.log(`  ✓ Uploaded ${uploaded}/${files.length} files...`);
+    results.forEach(result => {
+      if (result.success) {
+        uploaded++;
+      } else {
+        failed++;
+        errors.push({ file: result.key, error: result.error });
       }
-    } else {
-      failed++;
-      errors.push({ file: result.key, error: result.error });
-      console.log(`  ✗ Failed: ${result.key}`);
-    }
+    });
+
+    // Show progress every batch
+    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+    const rate = (uploaded / (Date.now() - startTime) * 1000).toFixed(1);
+    console.log(`  ✓ ${uploaded}/${files.length} files (${((uploaded/files.length)*100).toFixed(1)}%) - ${rate}/sec - ${elapsed}s elapsed`);
   }
+
+  const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
 
   console.log(`\n✅ Upload complete!`);
   console.log(`  • Uploaded: ${uploaded} files`);
+  console.log(`  • Time: ${totalTime} seconds`);
+  console.log(`  • Rate: ${(uploaded / totalTime).toFixed(1)} files/sec`);
+
   if (failed > 0) {
     console.log(`  • Failed: ${failed} files`);
     console.log('\nErrors:');
@@ -123,10 +140,6 @@ async function main() {
 
   console.log(`\n🌐 All images now accessible at:`);
   console.log(`   ${process.env.R2_PUBLIC_URL}/`);
-  console.log(`\n📝 Next steps:`);
-  console.log(`   1. Update Next.js config to use R2 for images`);
-  console.log(`   2. Delete /public folder from repo (after confirming R2 works)`);
-  console.log(`   3. Deploy to Cloudflare Pages`);
 }
 
 main().catch(console.error);

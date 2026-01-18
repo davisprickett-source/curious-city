@@ -1279,7 +1279,7 @@ export const denver: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'High-Altitude Extractions',
-      intro: 'Third-wave pioneers, elevation-adjusted brewing, and roasters who know their beans. Denver takes coffee as seriously as it takes craft beer.',
+      intro: 'Denver was a specialty coffee city before craft beer took over its identity. Corvus started doing experimental processing in 2010. Huckleberry brought Scandinavian-style roasting to RiNo before RiNo was cool. The altitude actually matters—water boils at 202°F here instead of 212°F, which changes extraction entirely. The city\'s best roasters adjusted their techniques accordingly, and the result is a coffee scene with its own character: slightly brighter, more tea-like, distinct from what you\'d get in Seattle or Portland. The beer gets the press. The coffee is just as good.',
       spots: [
         {
           name: 'Corvus Coffee Roasters',

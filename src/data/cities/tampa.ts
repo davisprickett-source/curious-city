@@ -87,12 +87,32 @@ export const tampa: CityData = {
           },
         },
         {
+          id: 'tam-curiosity-7',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Cigar factories hired readers to radicalize their workers with Cervantes and Marx',
+          featured: true,
+          featuredOrder: 2,
+          body: 'Long before radio, television, or podcasts, Ybor City's cigar factories had their own unique form of mass media: the lector. Hired by the workers themselves (who pooled their hard-earned pennies), these professional readers sat on elevated tribunas and read aloud for hours. Mornings might be dedicated to newspapers, covering labor movements and Cuban independence. Afternoons, however, were for literature: serialized novels by Cervantes, Zola, and Tolstoy, and crucially, works by Marx and Engels. The Count of Monte Cristo was so popular, a cigar brand was named after it. Factory owners hated the practice, correctly realizing that the lectors were radicalizing their immigrant workforce. During a bitter strike in 1931, owners banned lectors entirely, replacing them with radios playing sanitized content. But the seeds were already sown: Ybor City's cigar rollers became some of the most literate, politically engaged, and unionized laborers in America, a testament to the power of stories read aloud—even when those stories were about revolution.',
+          year: '1890s',
+          image: {
+            src: '/tampa/curiosities/rector.png',
+            alt: 'Lector reading to cigar factory workers',
+          },
+          source: 'Ybor City State Museum',
+          location: {
+            name: 'Ybor City',
+      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
+            stillExists: false,
+          },
+        },
+        {
           id: 'tam-curiosity-11',
           type: 'curiosity',
           category: 'legend',
           title: 'A steamship vanished in calm weather—and stayed gone',
-          body: 'In 1919, the SS Marianao left Tampa for Havana carrying sugar machinery and a full crew. The weather was perfect. The Gulf was calm. The ship disappeared anyway. No distress call. No debris field. No wreckage ever found—and this is the shallow Gulf, where wrecks don\'t stay hidden. Some blamed rum runners moving contraband. Others whispered about insurance fraud. A century later, the mystery remains unsolved. The SS Marianao is simply gone.',
-                    image: {
+          body: 'In 1919, the SS Marianao—named for the affluent Havana district—departed Tampa for Cuba carrying sugar machinery, general cargo, and a full crew. The Tampa-Havana run was routine; steamships made the crossing constantly, ferrying goods and passengers between the cigar capital of America and the island that supplied its tobacco. The weather that day was clear. The Gulf was calm. The ship never arrived. No distress signal. No floating debris. No survivors. No bodies. The Gulf of Mexico averages only 5,000 feet deep—shallow enough that wrecks typically surface, get snagged by fishermen, or show up on charts. The Marianao showed up nowhere. Investigators floated theories: pirates operating in the post-WWI chaos, rum runners who commandeered the vessel (Prohibition would arrive the following year, making Cuban rum gold), or insurance fraud involving a deliberately scuttled ship and a crew that vanished into Havana\'s underworld. The Tampa shipping community had seen storms take vessels and U-boats sink freighters during the war. But a ship that simply evaporated on a clear day? That was new. Over a century later, no wreckage has ever been identified. The SS Marianao remains one of the Gulf\'s unsolved disappearances—a ship that sailed into good weather and never came out the other side.',
+          image: {
             src: '/tampa/curiosities/shipwreck.png',
             alt: 'Historic ship on Tampa Bay',
           },
@@ -122,26 +142,6 @@ export const tampa: CityData = {
           },
         },
         {
-          id: 'tam-curiosity-7',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Cigar factories hired readers to radicalize their workers with Cervantes and Marx',
-          featured: true,
-          featuredOrder: 2,
-          body: 'Long before radio, television, or podcasts, Ybor City’s cigar factories had their own unique form of mass media: the lector. Hired by the workers themselves (who pooled their hard-earned pennies), these professional readers sat on elevated tribunas and read aloud for hours. Mornings might be dedicated to newspapers, covering labor movements and Cuban independence. Afternoons, however, were for literature: serialized novels by Cervantes, Zola, and Tolstoy, and crucially, works by Marx and Engels. The Count of Monte Cristo was so popular, a cigar brand was named after it. Factory owners hated the practice, correctly realizing that the lectors were radicalizing their immigrant workforce. During a bitter strike in 1931, owners banned lectors entirely, replacing them with radios playing sanitized content. But the seeds were already sown: Ybor City’s cigar rollers became some of the most literate, politically engaged, and unionized laborers in America, a testament to the power of stories read aloud—even when those stories were about revolution.',
-          year: '1890s',
-          image: {
-            src: '/tampa/curiosities/rector.png',
-            alt: 'Lector reading to cigar factory workers',
-          },
-          source: 'Ybor City State Museum',
-          location: {
-            name: 'Ybor City',
-      url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: false,
-          },
-        },
-        {
           id: 'tam-curiosity-8',
           type: 'curiosity',
           category: 'nature',
@@ -165,8 +165,8 @@ export const tampa: CityData = {
           title: 'Part of Ybor City is sovereign Cuban territory',
           featured: true,
           featuredOrder: 3,
-          body: 'The José Martí Park in Ybor City was deeded to the Republic of Cuba in 1956 and remains sovereign Cuban soil to this day—one of the only pieces of foreign sovereign territory in the United States outside of embassies. Fidel Castro gave a speech there in 1955 to raise money for the revolution. Decades of Cold War hostility, trade embargoes, and diplomatic deep-freeze haven\'t changed the deed. In the middle of Tampa, Cuba still owns a park.',
-                    images: [
+          body: 'The 0.14-acre José Martí Park at 1303 Eighth Avenue is legally Cuban soil—one of the only pieces of foreign sovereign territory in the United States outside of embassies. Cuban Colonel Manuel Quevedo purchased the land and donated it to Cuba in 1956 as a tribute to the revolutionary poet. The ground itself contains soil from each of Cuba\'s provinces. The site was previously the home of Paulina Pedroso, a Black Cuban immigrant who sheltered Martí during his Tampa visits. José Martí came to Tampa twenty times, calling it "El Pueblo Fiel" (The Faithful Town). In 1892, he founded the Cuban Revolutionary Party here and drafted its basic principles. His 1893 speech to Ybor cigar workers launched the first U.S. fundraising campaign to arm Cuban independence fighters. In November 1955, Fidel Castro followed the same playbook. More than 300 attended his speech at an Ybor union hall. His 26th of July Movement—named for his 1953 attack on Batista—later funded the park\'s Martí statue. Tampa smuggled guns and medical supplies to Castro\'s forces for four years. The park opened in 1960, just as Castro consolidated power. It has since become a flashpoint for protests and counter-protests between pro-Castro and anti-Castro Cuban Americans, both sides claiming Martí\'s legacy. Decades of Cold War hostility, embargoes, and diplomatic silence have not changed the deed. Cuba still owns a park in Tampa.',
+          images: [
             {
               src: '/tampa/curiosities/cuba-ybor-1.png',
               alt: 'José Martí Park in Ybor City',
@@ -184,22 +184,27 @@ export const tampa: CityData = {
           },
         },
         {
+          id: 'tam-curiosity-12',
+          type: 'curiosity',
+          category: 'history',
+          title: 'Teddy Roosevelt\'s Rough Riders trained here in miserable heat',
+          body: 'In 1898, Tampa became the staging ground for the American invasion of Cuba during the Spanish-American War. Thirty thousand soldiers, including Teddy Roosevelt\'s celebrated Rough Riders, camped in the sweltering Florida heat waiting for transport ships that were perpetually delayed. The Tampa Bay Hotel, Henry Plant\'s absurdly opulent Moorish Revival palace with its silver minarets and Oriental rugs, served as officers\' headquarters. Roosevelt and his fellow officers dined on fine china in air that was marginally cooler than outside. Meanwhile, enlisted men drilled in temperatures that regularly exceeded 95 degrees, dealing with mosquitoes, dysentery, and boredom. The contrast was jarring and intentional: the officer class lived in luxury while the common soldiers suffered. When the troops finally embarked for Cuba, the chaos was legendary. Men scrambled aboard overloaded ships, horses were left behind, supplies went missing. Roosevelt had to commandeer a transport meant for other units. Tampa wasn\'t ready to be a military staging ground, but geography made it essential. The Tampa Bay Hotel still stands, now the main building of the University of Tampa, its minarets visible from across the city. The Henry B. Plant Museum inside documents this strange moment when Tampa became the gateway to empire.',
+          year: '1898',
+          image: {
+            src: '/tampa/curiosities/rough-riders.png',
+            alt: 'University of Tampa minarets',
+          },
+          source: 'Henry B. Plant Museum',
+          location: {
+            name: 'University of Tampa',
+      url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Tampa%20Tampa',
+            stillExists: true,
+          },
+        },
+        {
           id: 'tam-curiosity-ad-2',
           type: 'ad',
           size: 'rectangle',
-        },
-        {
-          id: 'tam-curiosity-4',
-          type: 'curiosity',
-          category: 'nature',
-          title: 'Tampa\'s luck ran out: Hurricane Milton hit in 2024',
-          body: 'The Tampa Bay area\'s extraordinary luck finally ran out in 2024 when Hurricane Milton, a Category 4 storm, made landfall as a Category 3 in Siesta Key, bringing record-breaking storm surge and destructive gusts directly to the Tampa Bay area. This came just two weeks after Hurricane Helene, another Category 4, skirted the coast, causing significant damage. While the city had dodged a direct hit for over a century, the back-to-back storms caused widespread damage, power outages for millions, and significant coastal erosion, marking a new chapter in the city\'s relationship with tropical weather. The bay\'s funnel shape proved to be a critical factor, leading to severe flooding in downtown and surrounding areas, a scenario long feared by meteorologists.',
-                    source: 'Tampa Bay Times, National Hurricane Center',
-          location: {
-            name: 'Tampa Bay',
-      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Tampa',
-            stillExists: true,
-          },
         },
         {
           id: 'tam-curiosity-3',
@@ -237,19 +242,6 @@ export const tampa: CityData = {
           },
         },
         {
-          id: 'tam-curiosity-10',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Tampa won three championships in 12 months (and got insufferable)',
-          body: 'For decades, Tampa sports meant lovable mediocrity. The Bucs were perennial losers. The Lightning were good but perpetually overshadowed. The Rays couldn\'t draw fans to their domed stadium. Then everything changed. In September 2020, the Lightning won the Stanley Cup in a bubble playoff during COVID. In February 2021, the Buccaneers won Super Bowl LV, played in their home stadium, after luring Tom Brady out of New England. In July 2021, the Lightning won the Stanley Cup again. Three major championships in 12 months. For a city long dismissed as Florida\'s scrappy middle child, perpetually in the shadow of Miami\'s glamour and Orlando\'s theme parks, it was validation decades in the making. The boat parades became a thing. Tom Brady, apparently having absorbed Tampa\'s chaotic energy, threw the Lombardi Trophy across the water from one boat to another while visibly drunk. The city stopped pretending to be humble. Locals who\'d never watched hockey suddenly owned Lightning jerseys. Sports talk radio became insufferable. Tampa developed the kind of championship swagger that annoys everyone who isn\'t from Tampa. The city earned it.',
-                    source: 'Sports Illustrated',
-          location: {
-            name: 'Tampa',
-      url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Tampa',
-            stillExists: true,
-          },
-        },
-        {
           id: 'tam-curiosity-9',
           type: 'curiosity',
           category: 'history',
@@ -268,24 +260,6 @@ export const tampa: CityData = {
           },
         },
         {
-          id: 'tam-curiosity-12',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Teddy Roosevelt\'s Rough Riders trained here in miserable heat',
-          body: 'In 1898, Tampa became the staging ground for the American invasion of Cuba during the Spanish-American War. Thirty thousand soldiers, including Teddy Roosevelt\'s celebrated Rough Riders, camped in the sweltering Florida heat waiting for transport ships that were perpetually delayed. The Tampa Bay Hotel, Henry Plant\'s absurdly opulent Moorish Revival palace with its silver minarets and Oriental rugs, served as officers\' headquarters. Roosevelt and his fellow officers dined on fine china in air that was marginally cooler than outside. Meanwhile, enlisted men drilled in temperatures that regularly exceeded 95 degrees, dealing with mosquitoes, dysentery, and boredom. The contrast was jarring and intentional: the officer class lived in luxury while the common soldiers suffered. When the troops finally embarked for Cuba, the chaos was legendary. Men scrambled aboard overloaded ships, horses were left behind, supplies went missing. Roosevelt had to commandeer a transport meant for other units. Tampa wasn\'t ready to be a military staging ground, but geography made it essential. The Tampa Bay Hotel still stands, now the main building of the University of Tampa, its minarets visible from across the city. The Henry B. Plant Museum inside documents this strange moment when Tampa became the gateway to empire.',
-          year: '1898',
-          image: {
-            src: '/tampa/curiosities/rough-riders.png',
-            alt: 'University of Tampa minarets',
-          },
-          source: 'Henry B. Plant Museum',
-          location: {
-            name: 'University of Tampa',
-      url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Tampa%20Tampa',
-            stillExists: true,
-          },
-        },
-        {
           id: 'tam-curiosity-14',
           type: 'curiosity',
           category: 'culture',
@@ -299,23 +273,6 @@ export const tampa: CityData = {
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
-        },
-        {
-          id: 'tam-curiosity-15',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Tampa runs Florida\'s largest working port',
-          body: 'Port Tampa Bay handles more cargo than any other Florida port: over 37 million tons annually, making it one of the largest in the Gulf of Mexico. The primary export is phosphate, mined from central Florida\'s "Bone Valley" deposits and processed into fertilizer that feeds agricultural operations worldwide. When you eat produce grown anywhere from Brazil to Bangladesh, there\'s a reasonable chance the fertilizer that grew it left from Tampa. The port also handles petroleum, building materials, steel, and a growing cruise ship business. The working waterfront is a physical contrast to Tampa\'s tourist image: massive gantry cranes, container yards stacked high, tankers and freighters moving through the shipping channel. It exists just a few miles from the beaches and Instagram-ready sunsets of Clearwater and St. Pete. This split personality defines Tampa: it\'s simultaneously a vacation destination and a working industrial city, a place where tourists sip cocktails on Bayshore Boulevard while container ships pass in the distance. Unlike some cities that hide their industrial heritage, Tampa keeps its port active and visible. The economic engine runs in plain sight.',
-          image: {
-            src: '/tampa/curiosities/tampa-port.png',
-            alt: 'Port of Tampa Bay industrial waterfront',
-          },
-          source: 'Port Tampa Bay',
-          location: {
-            name: 'Port Tampa Bay',
-      url: 'https://www.google.com/maps/search/?api=1&query=Port%20Tampa%20Bay%20Tampa',
             stillExists: true,
           },
         },
@@ -914,7 +871,7 @@ export const tampa: CityData = {
       type: 'best-of',
       category: 'bars',
       title: 'Where Tampa Drinks',
-      intro: 'Tampa drinks with Florida enthusiasm. Ybor gets rowdy on weekends, Seminole Heights keeps it weird, and the speakeasy scene is thriving.',
+      intro: 'Tampa\'s drinking culture splits into three distinct worlds. Ybor City is the historic heart—century-old buildings, live music spilling onto 7th Avenue, and the kind of late-night energy that\'s been drawing crowds since the cigar workers needed somewhere to unwind. Seminole Heights went from sketchy to hip without losing its dive-bar soul. And then there\'s the speakeasy scene: hidden doors, craft cocktails, bartenders who trained in New York and came home. The city drinks hard, drinks late, and increasingly drinks well.',
       spots: [
         {
           name: 'Jekyll',
@@ -1013,7 +970,7 @@ export const tampa: CityData = {
       type: 'best-of',
       category: 'restaurants',
       title: 'Florida Plates',
-      intro: 'Cuban-Spanish heritage meets Florida seafood. Tampa\'s food scene runs from century-old bakeries to Michelin-recognized fine dining.',
+      intro: 'Tampa\'s food identity was forged in Ybor City\'s cigar factories, where Cuban, Spanish, and Italian immigrants created a cuisine that doesn\'t exist anywhere else. The Cuban sandwich was invented here—not Miami, whatever they claim—and the bakeries that supplied those factory workers still operate. But the city has grown beyond its roots. Bern\'s Steak House has been a national destination for six decades. The Oxford Exchange turned brunch into an event. Michelin arrived in 2024 and started handing out stars. Ybor still anchors everything, but the rest of the city caught up.',
       spots: [
         {
           name: 'Rooster & the Till',
@@ -1132,7 +1089,7 @@ export const tampa: CityData = {
       type: 'best-of',
       category: 'coffee-shops',
       title: 'Cuban Sips & Third Wave',
-      intro: 'From Ybor speakeasy vibes to Cuban café con leche and microroasters that trained half the baristas in town. Tampa\'s coffee scene has come into its own.',
+      intro: 'Tampa has two coffee traditions that don\'t always overlap. The Cuban one is older: café con leche and cortaditos from ventanitas that have been serving the same recipes since Ybor\'s cigar-rolling days. The third-wave scene arrived later but caught up fast—Buddy Brew trained half the specialty baristas in town, and their alumni have scattered across the city opening their own spots. Now you can get a perfect pour-over in a converted warehouse or a $2 colada from a window counter, depending on what kind of morning you\'re having. Both are essential.',
       spots: [
         {
           name: 'Buddy Brew Coffee',

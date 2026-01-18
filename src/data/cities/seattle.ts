@@ -36,6 +36,48 @@ export const seattle: CityData = {
       intro: 'Seattle is a city built on top of a city—literally. The mess of the 19th century was buried and rebuilt, but the weirdness keeps percolating to the surface in the form of Fremont Trolls and coffee hierarchies.',
       items: [
         {
+          id: 'curiosity-houseboats',
+          type: 'curiosity',
+          category: 'culture',
+          title: 'Lake Union houseboats went from criminal hideouts to a sovereign nation to million-dollar real estate',
+          images: [
+            {
+              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-1.png',
+              alt: 'Lake Union houseboats',
+            },
+            {
+              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-2.png',
+              alt: 'Lake Union houseboats',
+            },
+            {
+              src: '/seattle/curiosities/houseboats-1.png',
+              alt: 'Historic Lake Union houseboats',
+            },
+            {
+              src: '/seattle/curiosities/houseboats-tui-tui.png',
+              alt: 'Sovereign Nation of Tui Tui houseboat',
+            },
+          ],
+          body: 'In the early 1900s, Lake Union houseboats were floating slums for bootleggers, counterfeiters, prostitutes, and political radicals. Notorious criminal T.H. Dixon ran a coin counterfeiting operation from his houseboat. Under the carpets of older floating homes, you can still see Prohibition-era hiding spots where moonshine was stashed. The city wanted them gone. In the 1930s, there were 2,000 houseboats; by the 1970s, most were demolished or relocated. Then, in a legal battle over houseboat rights, one resident declared his home the "Sovereign Nation of Tui Tui of the Joyous Lake." Rulers Robby Rudine and Janet Yoder chose the name via I Ching divination the night before trial. The federal government does not recognize it. The nation persists anyway. Today, about 500 houseboats remain on Lake Union, now selling for millions. Seattle\'s floating criminal underworld became a sovereign nation, then became luxury real estate. Only the name Tui Tui remains defiant.',
+          sources: [
+            {
+              title: 'The mysterious story of the Sovereign Nation of Tui Tui',
+              publisher: 'KUOW',
+              url: 'https://www.kuow.org/stories/the-mysterious-seattle-houseboat-declared-the-sovereign-nation-of-tui-tui',
+            },
+            {
+              title: 'Seattle\'s Historic Houseboats',
+              publisher: 'HistoryLink',
+              url: 'https://www.historylink.org/File/9507',
+            },
+          ],
+          location: {
+            name: 'Lake Union',
+      url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Union%20Seattle',
+            stillExists: true,
+          },
+        },
+        {
           id: 'curiosity-1',
           type: 'curiosity',
           category: 'underground',
@@ -211,48 +253,6 @@ export const seattle: CityData = {
           },
         },
         {
-          id: 'curiosity-houseboats',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Lake Union houseboats went from criminal hideouts to a sovereign nation to million-dollar real estate',
-          images: [
-            {
-              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-1.png',
-              alt: 'Lake Union houseboats',
-            },
-            {
-              src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-2.png',
-              alt: 'Lake Union houseboats',
-            },
-            {
-              src: '/seattle/curiosities/houseboats-1.png',
-              alt: 'Historic Lake Union houseboats',
-            },
-            {
-              src: '/seattle/curiosities/houseboats-tui-tui.png',
-              alt: 'Sovereign Nation of Tui Tui houseboat',
-            },
-          ],
-          body: 'In the early 1900s, Lake Union houseboats were floating slums for bootleggers, counterfeiters, prostitutes, and political radicals. Notorious criminal T.H. Dixon ran a coin counterfeiting operation from his houseboat. Under the carpets of older floating homes, you can still see Prohibition-era hiding spots where moonshine was stashed. The city wanted them gone. In the 1930s, there were 2,000 houseboats; by the 1970s, most were demolished or relocated. Then, in a legal battle over houseboat rights, one resident declared his home the "Sovereign Nation of Tui Tui of the Joyous Lake." Rulers Robby Rudine and Janet Yoder chose the name via I Ching divination the night before trial. The federal government does not recognize it. The nation persists anyway. Today, about 500 houseboats remain on Lake Union, now selling for millions. Seattle\'s floating criminal underworld became a sovereign nation, then became luxury real estate. Only the name Tui Tui remains defiant.',
-          sources: [
-            {
-              title: 'The mysterious story of the Sovereign Nation of Tui Tui',
-              publisher: 'KUOW',
-              url: 'https://www.kuow.org/stories/the-mysterious-seattle-houseboat-declared-the-sovereign-nation-of-tui-tui',
-            },
-            {
-              title: 'Seattle\'s Historic Houseboats',
-              publisher: 'HistoryLink',
-              url: 'https://www.historylink.org/File/9507',
-            },
-          ],
-          location: {
-            name: 'Lake Union',
-      url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Union%20Seattle',
-            stillExists: true,
-          },
-        },
-        {
           id: 'curiosity-9',
           type: 'curiosity',
           category: 'culture',
@@ -275,35 +275,7 @@ export const seattle: CityData = {
             { src: '/seattle/curiosities/grunge-2.png', alt: 'Grunge era Seattle musicians' },
           ],
         },
-        {
-          id: 'curiosity-10',
-          type: 'curiosity',
-          category: 'history',
-          title: 'Seattle was ground zero for America\'s first General Strike',
-          body: 'On February 6, 1919, 65,000 Seattle workers walked off the job in the nation\'s first city-wide general strike. Shipyard workers had struck for higher wages; within days, 110 local unions joined in solidarity. The city ground to a halt.\n\nFor five days, workers ran Seattle themselves. The Strike Committee organized garbage collection, milk delivery, and food distribution. Veterans guarded the streets. There was no violence and almost no crime — the workers proved they could run a city without the bosses.\n\nMayor Ole Hanson called it a Bolshevik revolution and threatened to crush it with federal troops. The national press screamed about communist takeover. Under immense pressure, the strike ended peacefully on February 11. But the sight of American workers running their own city terrified the establishment. The Seattle General Strike became a touchstone for both the labor movement and anti-labor forces for generations.',
-          sources: [
-            {
-              title: 'HistoryLink: Seattle General Strike of 1919',
-              url: 'https://www.historylink.org/File/5653',
-            },
-            {
-              title: 'Labor Studies: The Seattle General Strike',
-              url: 'https://depts.washington.edu/labhist/',
-            }
-          ],
-          location: { name: 'Downtown Seattle',
-      url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Seattle%20Seattle', stillExists: true },
-          images: [
-            {
-              src: '/seattle/curiosities/strik-1.png',
-              alt: 'Seattle General Strike of 1919',
-            },
-            {
-              src: '/seattle/curiosities/strike-2.png',
-              alt: 'Seattle workers during the 1919 General Strike',
-            }
-          ],
-        },
+        // MOVED: General Strike moved to dark history section
         {
           id: 'curiosity-11',
           type: 'curiosity',
@@ -345,65 +317,19 @@ export const seattle: CityData = {
             { src: '/seattle/curiosities/lenin02.png', alt: 'Soviet Lenin statue Seattle' },
           ],
         },
-        {
-          id: 'curiosity-13',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Bruce Lee is buried in Seattle next to his son Brandon',
-          body: 'Bruce Lee — the martial arts legend who revolutionized action cinema — is buried in Lake View Cemetery on Seattle\'s Capitol Hill, next to his son Brandon, who died filming "The Crow" in 1993. Both graves are constantly covered in flowers, coins, and tributes from visitors around the world.\n\nLee was born in San Francisco but grew up in Hong Kong. He moved to Seattle at 18 to finish high school and attend the University of Washington, where he studied philosophy and opened his first martial arts school. He taught kung fu in Capitol Hill before moving to California to pursue Hollywood.\n\nAfter his death in 1973 at age 32 (under circumstances still debated), his family chose Seattle as his final resting place. The grave site became a pilgrimage destination — one of the most visited celebrity graves in the world. Lake View Cemetery provides maps to find it.\n\nSeattle claims Bruce Lee more than any other city, even though he spent most of his adult life elsewhere. He learned to teach here. Fell in love here. Planted roots. That apparently counts.',
-          sources: [
-            {
-              title: 'Lake View Cemetery: Bruce Lee',
-              url: 'https://lakeviewseattle.com/bruce-lee/',
-            },
-            {
-              title: 'Seattle Globalist: Bruce Lee\'s Grave',
-              url: 'https://seattleglobalist.com/2015/04/10/bruce-lee-grave-seattle-landmark-global-attraction/34662',
-            }
-          ],
-          location: { name: 'Lake View Cemetery, Capitol Hill', url: 'https://www.google.com/maps/place/Bruce+Lee+Grave+Site/@47.6301,-122.3219,17z', stillExists: true },
-          images: [
-            { src: '/seattle/curiosities/bruce-lee-grave.png', alt: 'Bruce Lee grave site in Seattle' },
-          ],
-        },
-        {
-          id: 'curiosity-14',
-          type: 'curiosity',
-          category: 'culture',
-          title: 'Jimi Hendrix grew up in Seattle\'s Central District before conquering the world',
-          body: 'Jimi Hendrix — arguably the greatest guitarist who ever lived — was born and raised in Seattle. He spent the first 18 years of his life in the Central District, playing guitar in his bedroom, sitting in with local R&B bands, and learning to make a Stratocaster sound like the voice of God.\n\nHe left Seattle in 1961 to join the Army (where he met his future bassist, Billy Cox), then spent years as a sideman for Little Richard and the Isley Brothers. He didn\'t become "Jimi Hendrix" until 1966 in London. Three years later he played Woodstock. A year after that, he was dead at 27.\n\nHendrix is buried at Greenwood Memorial Park in Renton (just south of Seattle) beneath a massive granite dome supported by three columns. His grave sees thousands of visitors annually. Flowers, guitar picks, and handwritten notes pile up constantly.\n\nSeattle has complicated feelings about Hendrix — the city largely ignored him until after he was famous and dead. But it claims him now. A bronze statue stands in Capitol Hill. MoPOP (Museum of Pop Culture) has an entire Hendrix wing. The city that didn\'t know what to do with him in life has turned him into a tourist attraction in death.',
-          sources: [
-            {
-              title: 'Greenwood Memorial Park: Jimi Hendrix Memorial',
-              url: 'https://www.dignitymemorial.com/funeral-homes/washington/renton/greenwood-memorial-park-funeral-home/4814',
-            },
-            {
-              title: 'Seattle Times: The Jimi Hendrix Memorial in Renton',
-              url: 'https://www.seattletimes.com/pacific-nw-magazine/the-jimi-hendrix-memorial-in-renton-honors-a-musical-giant-in-grand-style/',
-            }
-          ],
-          location: { name: 'Central District (statue in Capitol Hill, grave in Renton)',
-      url: 'https://www.google.com/maps/search/?api=1&query=Central%20District%20(statue%20in%20Capitol%20Hill%2C%20grave%20in%20Renton)%20Seattle', stillExists: true },
-          images: [
-            { src: '/seattle/curiosities/hendrix-memorial.png', alt: 'Jimi Hendrix memorial in Renton' },
-          ],
-        },
-        {
-          id: 'curiosity-mario',
-          type: 'curiosity',
-          category: 'pop-culture',
-          title: 'Nintendo\'s Mario was named after an angry Seattle landlord',
-          body: 'In the early 1980s, Nintendo of America was operating out of a Tukwila warehouse, and they were behind on rent. The landlord, a local real estate developer named Mario Segale, stormed in demanding payment. After the confrontation, Nintendo President Minoru Arakawa noticed a resemblance between the irritated landlord and their unnamed "Jumpman" character from Donkey Kong. The team started calling the character "Mario" as an inside joke. The name stuck. Segale, who died in 2018, never sought royalties or publicity. He reportedly told the Seattle Times he\'d "rather be a plumber" than discuss his accidental fame. The most famous video game character in history was named after a guy yelling about overdue rent in a Seattle suburb.',
-          sources: [
-            {
-              title: 'Mario Segale, Seattle-area developer who gave name to Nintendo\'s Mario, dies at 84',
-              publisher: 'Seattle Times',
-              url: 'https://www.seattletimes.com/seattle-news/obituaries/mario-segale-seattle-area-developer-who-gave-name-to-nintendos-mario-dies-at-84/',
-            }
-          ],
-          location: { name: 'Tukwila (Nintendo warehouse)',
-      url: 'https://www.google.com/maps/search/?api=1&query=Tukwila%20(Nintendo%20warehouse)%20Seattle', stillExists: false },
-        },
+        // ARCHIVED: Bruce Lee, Jimi Hendrix, Nintendo/Mario - standard Seattle trivia
+        // {
+        //   id: 'curiosity-13',
+        //   title: 'Bruce Lee is buried in Seattle next to his son Brandon',
+        // },
+        // {
+        //   id: 'curiosity-14',
+        //   title: 'Jimi Hendrix grew up in Seattle\'s Central District before conquering the world',
+        // },
+        // {
+        //   id: 'curiosity-mario',
+        //   title: 'Nintendo\'s Mario was named after an angry Seattle landlord',
+        // },
         {
           id: 'curiosity-coke-machine',
           type: 'curiosity',
@@ -1603,6 +1529,37 @@ export const seattle: CityData = {
               publisher: 'Wikipedia',
               url: 'https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans',
             }
+          ],
+        },
+        {
+          id: 'dark-general-strike',
+          type: 'dark-history',
+          category: 'labor',
+          title: 'Seattle was ground zero for America\'s first General Strike',
+          body: 'On February 6, 1919, 65,000 Seattle workers walked off the job in the nation\'s first city-wide general strike. Shipyard workers had struck for higher wages; within days, 110 local unions joined in solidarity. The city ground to a halt.\n\nFor five days, workers ran Seattle themselves. The Strike Committee organized garbage collection, milk delivery, and food distribution. Veterans guarded the streets. There was no violence and almost no crime — the workers proved they could run a city without the bosses.\n\nMayor Ole Hanson called it a Bolshevik revolution and threatened to crush it with federal troops. The national press screamed about communist takeover. Under immense pressure, the strike ended peacefully on February 11. But the sight of American workers running their own city terrified the establishment. The Seattle General Strike became a touchstone for both the labor movement and anti-labor forces for generations.',
+          verdict: 'The strike ended peacefully after 5 days under federal pressure. No violence occurred, but the establishment\'s fear of worker organization shaped anti-labor policy for decades.',
+          location: {
+            name: 'Downtown Seattle',
+            url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Seattle',
+            stillExists: true,
+          },
+          sources: [
+            {
+              type: 'article',
+              title: 'HistoryLink: Seattle General Strike of 1919',
+              publisher: 'HistoryLink',
+              url: 'https://www.historylink.org/File/5653',
+            },
+            {
+              type: 'article',
+              title: 'Labor Studies: The Seattle General Strike',
+              publisher: 'University of Washington',
+              url: 'https://depts.washington.edu/labhist/',
+            }
+          ],
+          images: [
+            { src: '/seattle/curiosities/strik-1.png', alt: 'Seattle General Strike of 1919' },
+            { src: '/seattle/curiosities/strike-2.png', alt: 'Seattle workers during the 1919 General Strike' },
           ],
         },
       ],
