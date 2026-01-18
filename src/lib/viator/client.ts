@@ -61,9 +61,6 @@ export class ViatorClient {
       filtering: {
         destination: params.destId.toString(),
       },
-      sorting: {
-        sort: params.sortOrder || 'TOP_SELLERS',
-      },
       pagination: {
         count: params.count || 20,
       },
@@ -263,7 +260,6 @@ export class ViatorClient {
     options?: {
       category?: TourCategory
       count?: number
-      sortBy?: ViatorSearchParams['sortOrder']
     }
   ): Promise<NormalizedTour[]> {
     const destId = this.getDestinationId(citySlug)
@@ -275,7 +271,6 @@ export class ViatorClient {
     const products = await this.searchProducts({
       destId,
       count: options?.count || 20,
-      sortOrder: options?.sortBy || 'TOP_SELLERS',
     })
 
     let normalized = products.map((p) => this.normalizeProduct(p))

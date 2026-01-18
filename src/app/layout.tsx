@@ -89,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
       <head>
+        <meta name="ahrefs-site-verification" content="377248d64559ef60f6c204a1fac00117e8ff6ab7018ba40e0d883c4bc71c84cb" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
