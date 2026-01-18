@@ -340,6 +340,7 @@ export const raleigh: CityData = {
                                   id: 'curiosity-5',
                                   type: 'curiosity',
                                   category: 'history',
+                                  articleSlug: 'raleigh-speedway',
                                   title: 'A lost NASCAR superspeedway lies overgrown in the woods',
                                   body: 'Bill France—the man who invented Daytona—built a high-speed racing temple in 1950s Raleigh. The one-mile banked superspeedway drew crowds of 16,000+ when the entire city had only 65,000 people. It was the first track in North Carolina with lights for night racing. City Council refused to allow Sunday races. Noise complaints from expanding suburbs killed it in 1959. The ruins still sit near Atlantic Avenue, overgrown but visible if you know where to look. Tragically, teens later died racing their cars on the abandoned track.',
                                   year: '1952-1959',

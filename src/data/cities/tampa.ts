@@ -70,6 +70,7 @@ export const tampa: CityData = {
           id: 'tam-curiosity-1',
           type: 'curiosity',
           category: 'legend',
+          articleSlug: 'the-pirate-who-never-was',
           title: 'Tampa\'s favorite pirate never existed (but the party is real)',
           featured: true,
           featuredOrder: 1,

@@ -90,7 +90,7 @@ export function LandingHeroSection({
         <div className="absolute inset-0 bg-gradient-to-br from-accent-900/20 via-transparent to-purple-900/10" />
 
         {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-start pt-16 sm:justify-end sm:pt-0 sm:pb-10 md:pb-14">
+        <div className="relative h-full container-page flex flex-col justify-end pb-10 md:pb-14">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - Branding */
@@ -101,16 +101,16 @@ export function LandingHeroSection({
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-4">
-                  <span className="text-accent-400">Curious</span> City
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2">
+                  <span className="text-[#c65d3b]">Curious</span> City
                 </h1>
 
-                {/* Animated underline */}
+                {/* Animated underline - matches width of "Curious" */}
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  className="h-1.5 w-28 md:w-36 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mb-6"
+                  className="h-1.5 w-[185px] sm:w-[222px] md:w-[259px] lg:w-[296px] bg-[#c65d3b] rounded-full mb-6"
                   style={{ transformOrigin: 'left' }}
                 />
 
@@ -144,13 +144,13 @@ export function LandingHeroSection({
                 <Link href={currentSlide.href} className="group block">
                   {/* City name - large and prominent */}
                   <div className="mb-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-accent-600 uppercase tracking-tight">
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#c65d3b] uppercase tracking-tight">
                       {currentSlide.cityName}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-accent-300 transition-colors max-w-4xl">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-[#d4715a] transition-colors max-w-4xl">
                     {currentSlide.title}
                   </h2>
 
@@ -162,7 +162,7 @@ export function LandingHeroSection({
                   )}
 
                   {/* Read more CTA */}
-                  <span className="inline-flex items-center text-base md:text-lg font-semibold text-white group-hover:text-accent-300 transition-colors">
+                  <span className="inline-flex items-center text-base md:text-lg font-semibold text-[#c65d3b] group-hover:text-[#d4715a] transition-colors">
                     Read more
                     <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -195,7 +195,7 @@ export function LandingHeroSection({
         {/* Progress bar */}
         {!isPaused && totalSlides > 1 && (
           <motion.div
-            className="absolute bottom-0 left-0 h-1 bg-accent-500"
+            className="absolute bottom-0 left-0 h-1 bg-[#c65d3b]"
             initial={{ width: '0%' }}
             animate={{ width: '100%' }}
             transition={{ duration: autoPlayInterval / 1000, ease: 'linear' }}

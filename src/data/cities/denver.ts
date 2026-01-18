@@ -67,6 +67,7 @@ export const denver: CityData = {
           featured: true,
           featuredOrder: 1,
           category: 'legend',
+          articleSlug: 'blucifer-demon-horse',
           title: 'The demonic airport horse murdered its creator',
           body: 'The 32-foot, electric-blue mustang with glowing red eyes that greets every arrival at Denver International Airport is a nightmare made real. Locals call him "Blucifer," and for good reason: he murdered his creator. In 2006, a piece of the sculpture detached and severed a femoral artery in artist Luis Jiménez\'s leg, killing him in his New Mexico studio. Two years later, his sons finished the colossal, cursed beast from his meticulous plans. Jiménez had designed the blue as a nod to lowrider culture and the fiery eyes as a tribute to his father\'s neon sign shop. But the unsettling origin story, those malevolent eyes, and its sheer demonic scale perfectly fuel DIA’s already robust conspiracy theories. The airport, in a move of either genius marketing or pure evil, now sells Blucifer merchandise. His estate, naturally, wishes you wouldn\'t call it that. Welcome to Denver.',
           image: {
@@ -1586,6 +1587,7 @@ export const denver: CityData = {
           featured: true,
           featuredOrder: 8,
           category: 'disaster',
+          articleSlug: 'hop-alley',
           title: 'The Hop Alley Riot',
           body: 'On Halloween night 1880, a pool game argument at John Asmussen\'s saloon on Wazee Street became the pretext for Denver\'s first race riot. A mob of 3,000 descended on Hop Alley—the Chinese neighborhood near present-day Coors Field—beating residents and destroying every business. Look Young, a 28-year-old who had lived in Denver for just six months, was dragged from Sing Lee\'s laundry, had his queue cut off, was beaten and tortured, then hanged from a lamppost. He died of his injuries. The rioters caused $53,655 in damage (over $1.5 million today). No one was ever convicted. The Chinese consul\'s request for reparations was denied. Chinatown never recovered. In 2022—142 years later—Denver formally apologized. The site is now a parking lot near the ballpark.',
           verdict: 'One dead. Entire neighborhood destroyed. City apologized 142 years later. Now it\'s parking.',

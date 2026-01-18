@@ -1,61 +1,44 @@
 import { getAllCities } from '@/data/cities'
-import { getAllHistory } from '@/data/history'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
-// Force dynamic rendering since we use client components with useSearchParams
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Sitemap - The Curious City',
-  description: 'Complete directory of all cities, sections, and content on The Curious City.',
+  title: 'Sitemap - Curious City',
+  description: 'Complete directory of all cities, sections, and content on Curious City.',
+}
+
+// Article data by city - imported dynamically
+async function getCityArticles(citySlug: string) {
+  try {
+    const module = await import(`@/data/cities/${citySlug}/articles`)
+    return module.articles || []
+  } catch {
+    return []
+  }
 }
 
 export default async function SitemapPage() {
   const cities = await getAllCities()
-  const allHistory = await getAllHistory()
 
-  // Group history articles by city
-  const historyByCity = allHistory.reduce(
-    (acc, article) => {
-      if (!acc[article.citySlug]) {
-        acc[article.citySlug] = []
-      }
-      acc[article.citySlug].push(article)
-      return acc
-    },
-    {} as Record<string, typeof allHistory>
+  // Get articles for each city
+  const citiesWithArticles = await Promise.all(
+    cities.map(async (city) => {
+      const articles = await getCityArticles(city.slug)
+      return { ...city, articles }
+    })
   )
 
-  const citySections = [
-    { id: 'articles', label: 'Articles', path: 'articles' },
-    { id: 'discover', label: 'Discover', path: 'discover' },
-    // { id: 'events', label: 'Events', path: 'events' }, // Hidden for now - work on after launch
-    { id: 'guide', label: 'Guide', path: 'guide' },
-  ]
-
-  const guideSubsections = [
-    { label: 'Bars', path: 'bars' },
-    { label: 'Restaurants', path: 'restaurants' },
-    { label: 'Coffee Shops', path: 'coffee-shops' },
-    { label: 'Hidden Gems', path: 'hidden-gems' },
-    { label: 'Local Favorites', path: 'local-favorites' },
-    { label: 'Lost & Loved', path: 'lost-and-loved' },
-  ]
-
-  const discoverSubsections = [
-    { label: 'Curiosities', path: 'curiosities' },
-    { label: 'Dark History', path: 'dark-history' },
-    // { label: 'Scenes', path: 'scenes' }, // Hidden for v1 launch
-  ]
-
   const globalCategories = [
-    { label: 'All Hidden Gems', path: '/category/hidden-gems' },
-    { label: 'All Best Bars', path: '/category/bars' },
-    { label: 'All Best Restaurants', path: '/category/restaurants' },
-    { label: 'All Dark History', path: '/category/dark-history' },
+    { label: 'Curiosities', path: '/category/curiosities', description: 'Strange facts and oddities' },
+    { label: 'Dark History', path: '/category/dark-history', description: 'Crimes, disasters, and mysteries' },
+    { label: 'Hidden Gems', path: '/category/hidden-gems', description: 'Secret spots and discoveries' },
+    { label: 'Lost & Loved', path: '/category/lost-and-loved', description: 'Closed places we miss' },
+    { label: 'Best Bars', path: '/category/bars', description: 'Top bars in every city' },
+    { label: 'Best Restaurants', path: '/category/restaurants', description: 'Top restaurants in every city' },
   ]
 
   return (
@@ -72,7 +55,7 @@ export default async function SitemapPage() {
                   Sitemap
                 </h1>
                 <p className="text-xl text-neutral-300 leading-relaxed">
-                  Complete directory of all cities, sections, and content on The Curious City
+                  Complete directory of all cities, categories, and content on Curious City
                 </p>
               </div>
             </div>
@@ -80,45 +63,65 @@ export default async function SitemapPage() {
 
           <div className="container-page py-12 md:py-16">
             <div className="max-w-5xl mx-auto">
-              {/* Global Pages */}
+
+              {/* Main Pages */}
               <section className="mb-12">
                 <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-2 border-b-2 border-accent-600">
                   Main Pages
                 </h2>
-                <ul className="space-y-2">
+                <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                   <li>
                     <Link
                       href="/"
-                      className="text-accent-600 hover:text-accent-700 font-medium transition-colors"
+                      className="block p-4 bg-white border border-neutral-200 rounded-lg hover:border-accent-600 hover:shadow-md transition-all"
                     >
-                      Home
+                      <span className="text-accent-600 font-medium">Home</span>
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/history"
-                      className="text-accent-600 hover:text-accent-700 font-medium transition-colors"
+                      href="/cities"
+                      className="block p-4 bg-white border border-neutral-200 rounded-lg hover:border-accent-600 hover:shadow-md transition-all"
                     >
-                      History (All Articles)
+                      <span className="text-accent-600 font-medium">All Cities</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="block p-4 bg-white border border-neutral-200 rounded-lg hover:border-accent-600 hover:shadow-md transition-all"
+                    >
+                      <span className="text-accent-600 font-medium">About</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="block p-4 bg-white border border-neutral-200 rounded-lg hover:border-accent-600 hover:shadow-md transition-all"
+                    >
+                      <span className="text-accent-600 font-medium">Contact</span>
                     </Link>
                   </li>
                 </ul>
               </section>
 
-              {/* Global Categories */}
+              {/* Browse All Categories */}
               <section className="mb-12">
                 <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-2 border-b-2 border-accent-600">
-                  Browse All Categories
+                  Browse by Category
                 </h2>
-                <ul className="grid sm:grid-cols-2 gap-3">
+                <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {globalCategories.map((category) => (
                     <li key={category.path}>
                       <Link
                         href={category.path}
                         className="block p-4 bg-white border border-neutral-200 rounded-lg hover:border-accent-600 hover:shadow-md transition-all"
                       >
-                        <span className="text-accent-600 hover:text-accent-700 font-medium">
+                        <span className="text-accent-600 font-medium block mb-1">
                           {category.label}
+                        </span>
+                        <span className="text-sm text-neutral-500">
+                          {category.description}
                         </span>
                       </Link>
                     </li>
@@ -133,109 +136,172 @@ export default async function SitemapPage() {
                 </h2>
 
                 <div className="space-y-8">
-                  {cities.map((city) => {
-                    const cityHistory = historyByCity[city.slug] || []
+                  {citiesWithArticles.map((city) => (
+                    <div key={city.slug} className="bg-white border border-neutral-200 rounded-xl p-6">
+                      {/* City Name */}
+                      <h3 className="text-xl font-bold mb-6">
+                        <Link
+                          href={`/${city.slug}`}
+                          className="text-accent-600 hover:text-accent-700 transition-colors"
+                        >
+                          {city.name}
+                        </Link>
+                      </h3>
 
-                    return (
-                      <div key={city.slug} className="bg-white border border-neutral-200 rounded-xl p-6">
-                        {/* City Name */}
-                        <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                          <Link
-                            href={`/${city.slug}`}
-                            className="text-accent-600 hover:text-accent-700 transition-colors"
-                          >
-                            {city.name}
-                          </Link>
-                        </h3>
+                      <div className="grid md:grid-cols-3 gap-6">
+                        {/* Discover Section */}
+                        <div>
+                          <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
+                            Discover
+                          </h4>
+                          <ul className="space-y-2">
+                            <li>
+                              <Link
+                                href={`/${city.slug}/curiosities`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Curiosities</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/dark-history`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Dark History</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/hidden-gems`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Hidden Gems</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/lost-and-loved`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Lost & Loved</span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
 
-                        <div className="grid md:grid-cols-2 gap-6">
-                          {/* Main Sections */}
-                          <div>
-                            <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
-                              Main Sections
-                            </h4>
+                        {/* Guide Section */}
+                        <div>
+                          <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
+                            Guide
+                          </h4>
+                          <ul className="space-y-2">
+                            <li>
+                              <Link
+                                href={`/${city.slug}/guide`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>City Guide</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/bars`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Bars</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/restaurants`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Restaurants</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/coffee-shops`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Coffee Shops</span>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={`/${city.slug}/local-favorites`}
+                                className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-2"
+                              >
+                                <span className="text-accent-500">→</span>
+                                <span>Local Favorites</span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* Articles Section */}
+                        <div>
+                          <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
+                            Articles {city.articles.length > 0 && `(${city.articles.length})`}
+                          </h4>
+                          {city.articles.length > 0 ? (
                             <ul className="space-y-2">
-                              {citySections.map((section) => (
-                                <li key={section.id}>
+                              {city.articles.map((article: { slug: string; title: string }) => (
+                                <li key={article.slug}>
                                   <Link
-                                    href={`/${city.slug}/${section.path}`}
-                                    className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-1"
+                                    href={`/${city.slug}/articles/${article.slug}`}
+                                    className="text-sm text-neutral-600 hover:text-accent-600 transition-colors inline-flex items-start gap-2"
                                   >
-                                    <span>→</span>
-                                    <span>{section.label}</span>
+                                    <span className="text-accent-500 mt-0.5">•</span>
+                                    <span className="line-clamp-2">{article.title}</span>
                                   </Link>
                                 </li>
                               ))}
                             </ul>
-                          </div>
-
-                          {/* Guide Subsections */}
-                          <div>
-                            <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
-                              Guide
-                            </h4>
-                            <ul className="space-y-2">
-                              {guideSubsections.map((subsection) => (
-                                <li key={subsection.path}>
-                                  <Link
-                                    href={`/${city.slug}/${subsection.path}`}
-                                    className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-1"
-                                  >
-                                    <span>→</span>
-                                    <span>{subsection.label}</span>
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          {/* Discover Subsections */}
-                          <div>
-                            <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
-                              Discover
-                            </h4>
-                            <ul className="space-y-2">
-                              {discoverSubsections.map((subsection) => (
-                                <li key={subsection.path}>
-                                  <Link
-                                    href={`/${city.slug}/${subsection.path}`}
-                                    className="text-neutral-700 hover:text-accent-600 transition-colors inline-flex items-center gap-1"
-                                  >
-                                    <span>→</span>
-                                    <span>{subsection.label}</span>
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          {/* History Articles */}
-                          {cityHistory.length > 0 && (
-                            <div>
-                              <h4 className="text-sm font-semibold text-neutral-700 uppercase tracking-wider mb-3">
-                                History Articles ({cityHistory.length})
-                              </h4>
-                              <ul className="space-y-2 max-h-64 overflow-y-auto pr-2">
-                                {cityHistory.map((article) => (
-                                  <li key={article.slug}>
-                                    <Link
-                                      href={`/${city.slug}/history/${article.slug}`}
-                                      className="text-sm text-neutral-600 hover:text-accent-600 transition-colors inline-flex items-center gap-1"
-                                    >
-                                      <span>•</span>
-                                      <span className="line-clamp-1">{article.title}</span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
+                          ) : (
+                            <p className="text-sm text-neutral-400 italic">Coming soon</p>
                           )}
                         </div>
                       </div>
-                    )
-                  })}
+                    </div>
+                  ))}
                 </div>
               </section>
+
+              {/* Legal Pages */}
+              <section className="mt-12">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-2 border-b-2 border-accent-600">
+                  Legal
+                </h2>
+                <ul className="flex flex-wrap gap-4">
+                  <li>
+                    <Link
+                      href="/privacy"
+                      className="text-accent-600 hover:text-accent-700 font-medium transition-colors"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/terms"
+                      className="text-accent-600 hover:text-accent-700 font-medium transition-colors"
+                    >
+                      Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+              </section>
+
             </div>
           </div>
         </main>

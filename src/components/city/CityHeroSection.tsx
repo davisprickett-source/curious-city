@@ -113,7 +113,7 @@ export function CityHeroSection({
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/40 via-transparent to-transparent" />
 
         {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-start pt-6 sm:pt-8 md:pt-10">
+        <div className="relative h-full container-page flex flex-col justify-end pb-6 sm:pb-8 md:pb-10">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - City name and tagline */
@@ -124,16 +124,16 @@ export function CityHeroSection({
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2 sm:mb-4">
-                  <span className="text-accent-400">Curious</span> {city.name}
+                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-lg mb-2">
+                  <span className="text-[#c65d3b]">Curious</span> {city.name}
                 </h1>
 
-                {/* Animated underline */}
+                {/* Animated underline - matches width of "Curious" */}
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  className="h-1 sm:h-1.5 w-20 sm:w-28 md:w-36 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mb-3 sm:mb-6"
+                  className="h-1 sm:h-1.5 w-[148px] sm:w-[222px] md:w-[259px] lg:w-[296px] bg-[#c65d3b] rounded-full mb-3 sm:mb-6"
                   style={{ transformOrigin: 'left' }}
                 />
 
@@ -202,7 +202,7 @@ export function CityHeroSection({
         {/* Progress bar */}
         {!isPaused && totalSlides > 1 && (
           <motion.div
-            className="absolute bottom-0 left-0 h-1 bg-accent-500"
+            className="absolute bottom-0 left-0 h-1 bg-[#c65d3b]"
             initial={{ width: '0%' }}
             animate={{ width: '100%' }}
             transition={{ duration: autoPlayInterval / 1000, ease: 'linear' }}

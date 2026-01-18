@@ -61,6 +61,7 @@ export const seattle: CityData = {
           id: 'curiosity-2',
           type: 'curiosity',
           category: 'history',
+          articleSlug: 'db-cooper',
           title: 'D.B. Cooper jumped out of a plane with $200,000 and vanished forever',
           body: 'On November 24, 1971, a man in a sharp suit and loafers ordered a bourbon and soda on a flight to Seattle, then politely handed the flight attendant a note: "I have a bomb." He wasn\'t a raving lunatic; he was the ultimate gentleman bandit. He demanded $200,000 and four parachutes, paid his drink tab, and even tried to tip the crew. After landing in Seattle to exchange passengers for the cash, he ordered the plane back into the air, headed for Mexico. Somewhere over the dark forests of Washington, amidst a freezing rainstorm, he lowered the rear stairs and stepped into the void at 10,000 feet—wearing loafers. He was never seen again. The FBI spent 45 years hunting him. They found a few rotting bills on a riverbank, but the man himself simply evaporated, leaving behind the only unsolved air piracy case in American history and a legacy as the coolest criminal who (probably) ever lived.',
           sources: [

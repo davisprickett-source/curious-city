@@ -1599,6 +1599,7 @@ export const portland: CityData = {
           featured: true,
           featuredOrder: 2,
           category: 'disaster',
+          articleSlug: 'vanport-flood',
                     title: '"The Dikes Are Safe"—Then Oregon\'s Second-Largest City Vanished in 35 Minutes',
           body: 'Memorial Day morning, May 30, 1948. Vanport, Oregon\'s second-largest city—40,000 residents, 40% Black, built in 110 days during WWII to house Kaiser Shipyard workers—woke up to a flyer from the Housing Authority: "DIKES ARE SAFE AT PRESENT. YOU WILL BE WARNED IF NECESSARY. YOU WILL HAVE TIME TO LEAVE. DON\'T GET EXCITED." At 4:05 p.m., the railroad berm holding back the Columbia River collapsed. Water hit Vanport at 30 mph. Residents had 35 minutes. Fifteen people died officially—the real count was never confirmed. Eighteen thousand were left homeless. Nearly a third were Black, living in a state that had explicitly banned Black residency just 22 years earlier. Discriminatory housing laws barred survivors from most of Portland. Black residents were funneled into the overcrowded Albina district. By 1960, 80% of Black Portlanders lived in Albina—a concentration camp created by policy, not choice. The flood has been compared to Katrina for one reason: the government lied, the levees failed, and Black communities paid the price.',
           verdict: 'A city of 40,000 erased in an afternoon. The site is now a dog park and drag racing strip.',
