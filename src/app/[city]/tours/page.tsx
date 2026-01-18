@@ -2,6 +2,9 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { Fragment } from 'react'
 import { getCity, getAllCitySlugs } from '@/data/cities'
+
+// Revalidate tour data every hour
+export const revalidate = 3600
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { BreadcrumbSchema } from '@/components/StructuredData'
