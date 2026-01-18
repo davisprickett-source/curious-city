@@ -8,7 +8,7 @@ export const denver: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Denver — a city that sells its altitude while sitting an hour from the actual mountains.',
+      content: 'Welcome to Denver — a city that sells its altitude while sitting an hour from the actual mountains.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const denver: CityData = {
       description: 'How a gateway to the mountains became a destination in its own right.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/denver/essay/mile-high-hustle',
+      href: '/denver/essay/mile-high-hustle'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const denver: CityData = {
           title: 'Beating I-70 Traffic: Ski Day Strategy',
           description: 'Local tactics for avoiding the powder day parking lot.',
           meta: 'Guide',
-          href: '/denver/ski-traffic',
+          href: '/denver/ski-traffic'
         },
         {
           title: 'The RiNo Art District Evolution',
           description: 'From industrial zone to Instagram backdrop.',
           meta: 'Feature',
-          href: '/denver/rino',
+          href: '/denver/rino'
         },
         {
           title: 'Best Breweries by Neighborhood',
           description: 'There are hundreds. Here\'s where to start.',
           meta: 'List',
           variant: 'compact',
-          href: '/denver/breweries',
-        },
-      ],
+          href: '/denver/breweries'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'den-curiosities',
@@ -72,25 +72,25 @@ export const denver: CityData = {
           body: 'The 32-foot, electric-blue mustang with glowing red eyes that greets every arrival at Denver International Airport is a nightmare made real. Locals call him "Blucifer," and for good reason: he murdered his creator. In 2006, a piece of the sculpture detached and severed a femoral artery in artist Luis Jiménez\'s leg, killing him in his New Mexico studio. Two years later, his sons finished the colossal, cursed beast from his meticulous plans. Jiménez had designed the blue as a nod to lowrider culture and the fiery eyes as a tribute to his father\'s neon sign shop. But the unsettling origin story, those malevolent eyes, and its sheer demonic scale perfectly fuel DIA’s already robust conspiracy theories. The airport, in a move of either genius marketing or pure evil, now sells Blucifer merchandise. His estate, naturally, wishes you wouldn\'t call it that. Welcome to Denver.',
           image: {
             src: '/denver/curiosities/bluecifer.png',
-            alt: 'Blucifer - the blue mustang sculpture with glowing red eyes at Denver International Airport',
+            alt: 'Blucifer - the blue mustang sculpture with glowing red eyes at Denver International Airport'
           },
           location: {
             name: 'Denver International Airport',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'Everything You Ever Wanted To Know About Blucifer',
               publisher: 'Colorado Public Radio',
-              url: 'https://www.cpr.org/2019/11/04/everything-you-ever-wanted-to-know-about-blucifer-the-demon-horse-of-dia/',
+              url: 'https://www.cpr.org/2019/11/04/everything-you-ever-wanted-to-know-about-blucifer-the-demon-horse-of-dia/'
             },
             {
               title: 'The Tragic Story Behind Blucifer',
               publisher: 'Uncover Colorado',
-              url: 'https://www.uncovercolorado.com/landmarks/blue-mustang-sculpture-dia/',
-            },
-          ],
+              url: 'https://www.uncovercolorado.com/landmarks/blue-mustang-sculpture-dia/'
+            }
+          ]
         },
         {
           id: 'den-curiosity-17',
@@ -100,25 +100,25 @@ export const denver: CityData = {
           body: 'In 1914, Denver electrician D.D. Sturgeon wanted to cheer up his four-year-old son who was bedridden. So he hand-painted light bulbs in red and green and hung them on a pine tree outside his son\'s hospital window. The first outdoor Christmas lights in history weren\'t about religion or tradition—they were about a father trying to make his sick kid smile. The idea spread through Denver, then across Colorado, and eventually became a global phenomenon. Every suburban dad cursing at tangled lights owes it to D.D. Sturgeon and his dying son.',
           image: {
             src: '/denver/curiosities/denver-cur-christmas-lights.png',
-            alt: 'Denver outdoor Christmas lights history',
+            alt: 'Denver outdoor Christmas lights history'
           },
           sources: [
             {
               title: 'The History of Outdoor Christmas Lights',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/story/holidays/2019/12/11/denver-birthplace-outdoor-christmas-lights',
+              url: 'https://www.historycolorado.org/story/holidays/2019/12/11/denver-birthplace-outdoor-christmas-lights'
             }
           ],
           location: {
             name: 'Sturgeon Home (Original Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           }
         },
         {
           id: 'den-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'den-curiosity-6',
@@ -128,20 +128,20 @@ export const denver: CityData = {
           body: 'Denver\'s entire identity is built on being the "Mile High City"—it\'s on license plates, business names, and every weed dispensary pun. So you\'d think they could measure 5,280 feet correctly. They could not. In 1909, a brass marker was proudly embedded on the 13th step of the State Capitol, declaring "One Mile Above Sea Level." For decades, tourists posed, postcards sold. Then, in 1969, a group of engineering students re-measured and found the marker was three steps too low. The legislature, with great fanfare, moved the "official" marker to the 18th step. Problem solved? Not quite. In 2003, the National Geodetic Survey, armed with GPS, found the 18th step was actually three feet *too high*. A third, more accurate marker was placed on the 15th step. Today, all three markers remain, a testament to Denver\'s stubborn pride and its inability to get its most famous statistic quite right. The state just lives with the competing truths.',
           image: {
             src: '/denver/curiosities/curious-mile-high-marker.png',
-            alt: 'Mile High marker on Colorado State Capitol steps',
+            alt: 'Mile High marker on Colorado State Capitol steps'
           },
           sources: [
             {
               title: 'The Mile High Markers',
               publisher: 'Colorado Encyclopedia',
-              url: 'https://coloradoencyclopedia.org/article/colorado-state-capitol',
+              url: 'https://coloradoencyclopedia.org/article/colorado-state-capitol'
             }
           ],
           location: {
             name: 'Colorado State Capitol',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-4',
@@ -153,31 +153,31 @@ export const denver: CityData = {
             {
               src: '/denver/curiosities/cheeseburger-1.png',
               alt: 'Historic cheeseburger and Humpty Dumpty Drive-In',
-              credit: 'Historical Photo',
+              credit: 'Historical Photo'
             },
             {
               src: '/denver/curiosities/cheeseburger-2.png',
               alt: 'Vintage cheeseburger advertisement',
-              credit: 'Historical Photo',
-            },
+              credit: 'Historical Photo'
+            }
           ],
           sources: [
             {
               title: 'Who Invented the Cheeseburger?',
               publisher: 'Denver Public Library',
-              url: 'https://en.wikipedia.org/wiki/Cheeseburger#History',
-            },
+              url: 'https://en.wikipedia.org/wiki/Cheeseburger#History'
+            }
           ],
           location: {
             name: 'Humpty Dumpty Drive-In (Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'den-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'den-curiosity-19',
@@ -187,20 +187,20 @@ export const denver: CityData = {
           body: 'In March 1995, construction crews excavating the foundation for Coors Field hit something unexpected: a seven-foot-long rib bone. Then another. Then a partial skull. Paleontologists from the Denver Museum of Nature & Science were called in, and what they found stopped construction for weeks: the remains of a triceratops that died 68 million years ago, during the Late Cretaceous, right where home plate would eventually sit. The fossil was remarkably well-preserved, having survived millions of years only to be nearly pulverized by a Caterpillar. Workers dubbed the creature "Dinger" after the Rockies\' mascot, though the actual mascot came first. The bones were carefully excavated, catalogued, and donated to the museum, where they remain part of the permanent collection. But here\'s the thing: the site also yielded a treasure trove of other prehistoric specimens, including 1,000 pounds of Cretaceous-era vegetation fossils and smaller dinosaur fragments. Coors Field, it turns out, sits on what was once a prehistoric flood plain, teeming with life that died, sank into the mud, and waited 68 million years for someone to try building a stadium. The Rockies now play baseball on ground that once hosted three-ton herbivores with horns the size of baseball bats. Every home run that clears the outfield wall lands on an ancient graveyard.',
           image: {
             src: '/denver/curiosities/denver-cur-coors.png',
-            alt: 'Coors Field triceratops fossil discovery',
+            alt: 'Coors Field triceratops fossil discovery'
           },
           sources: [
             {
               title: 'Dinosaur Discovery at Coors Field',
               publisher: 'MLB.com',
-              url: 'https://www.mlb.com/news/coors-field-dinosaur-discovery-history',
+              url: 'https://www.mlb.com/news/coors-field-dinosaur-discovery-history'
             }
           ],
           location: {
             name: 'Coors Field',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-20',
@@ -211,25 +211,25 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/curiosities/denver-cur-onyx-1.png',
-              alt: 'Colorado Rose Onyx inside the Capitol',
+              alt: 'Colorado Rose Onyx inside the Capitol'
             },
             {
               src: '/denver/curiosities/denver-cur-onyx-2.png',
-              alt: 'Capitol interior stone details',
+              alt: 'Capitol interior stone details'
             }
           ],
           sources: [
             {
               title: 'State Capitol Virtual Tour',
               publisher: 'Colorado General Assembly',
-              url: 'https://leg.colorado.gov/content/virtual-tour-onyx',
+              url: 'https://leg.colorado.gov/content/virtual-tour-onyx'
             }
           ],
           location: {
             name: 'Colorado State Capitol',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-9',
@@ -241,30 +241,30 @@ export const denver: CityData = {
             {
               src: '/denver/curiosities/almost-died-1.png',
               alt: 'Early Denver City during the gold rush',
-              credit: 'Colorado Historical Society',
+              credit: 'Colorado Historical Society'
             },
             {
               src: '/denver/curiosities/almost-died-2.png',
               alt: 'Pikes Peak or Bust prospectors',
-              credit: 'Historical Photo',
+              credit: 'Historical Photo'
             },
             {
               src: '/denver/curiosities/almost-died-3.png',
               alt: 'Cherry Creek gold rush camp',
-              credit: 'Historical Photo',
-            },
+              credit: 'Historical Photo'
+            }
           ],
           sources: [
             {
               title: 'The Founding of Denver',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/founding-denver',
+              url: 'https://www.historycolorado.org/founding-denver'
             }
           ],
           location: {
             name: 'Confluence Park',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -275,20 +275,20 @@ export const denver: CityData = {
           body: 'In 1902, Denver Union Station had a problem: too much kissing. Couples saying goodbye would linger on the platforms, blocking passengers and delaying departures. The solution? Ban all kissing at the station. The rule was officially enforced, with railway staff breaking up smooches to keep the trains on schedule. It remained technically illegal for decades. Today, nobody enforces it. The trains are no longer slowed by romance. They\'re slowed by everything else.',
           image: {
             src: '/denver/curiosities/denver-cur-kiss.png',
-            alt: 'Denver Union Station kissing ban history',
+            alt: 'Denver Union Station kissing ban history'
           },
           sources: [
             {
               title: 'Fun Facts About Denver Union Station',
               publisher: 'Secret Denver',
-              url: 'https://secretdenver.com/union-station-denver-facts/',
+              url: 'https://secretdenver.com/union-station-denver-facts/'
             }
           ],
           location: {
             name: 'Denver Union Station',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-7',
@@ -299,13 +299,13 @@ export const denver: CityData = {
           image: {
             src: '/denver/curiosities/denver-sunshine.png',
             alt: 'Denver skyline under bright sunshine',
-            credit: 'Photo',
+            credit: 'Photo'
           },
           sources: [
             {
               title: 'Climate of Denver',
               publisher: 'National Weather Service',
-              url: 'https://www.weather.gov/bou/denver_climate',
+              url: 'https://www.weather.gov/bou/denver_climate'
             }
           ]
         },
@@ -317,20 +317,20 @@ export const denver: CityData = {
           body: 'The Mexican restaurant with cliff divers, caves, and sopapillas—immortalized in South Park—closed during COVID. In 2021, show creators Matt Stone and Trey Parker bought it. They spent millions on renovations while preserving every absurd detail: the waterfall, Black Bart\'s Hideout, the puppet show, the mariachi bands. The food is now allegedly good. It reopened in 2023. You still need reservations months in advance to eat mediocre enchiladas in a fake cave.',
           image: {
             src: '/denver/curiosities/casa-bonita.png',
-            alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower',
+            alt: 'Casa Bonita Mexican restaurant with cliff divers and pink tower'
           },
           sources: [
             {
               title: 'Inside the New Casa Bonita',
               publisher: 'The New York Times',
-              url: 'https://www.nytimes.com/2023/06/06/dining/casa-bonita-denver-south-park.html',
+              url: 'https://www.nytimes.com/2023/06/06/dining/casa-bonita-denver-south-park.html'
             }
           ],
           location: {
             name: 'Casa Bonita',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-13',
@@ -340,13 +340,13 @@ export const denver: CityData = {
           body: 'Despite every postcard, every marketing campaign, and every ski bum\'s delusion, Denver sits squarely on the high plains—an hour\'s drive from the nearest foothills. While the city proudly boasts its "Mile High" elevation (most of the time), the majestic Rockies loom 9,000 feet higher and an hour west. Denver offers stunning views of the mountains, but it is not *in* them. It\'s a plains city with mountain aspirations, perpetually gazing westward like a wistful teenager. The city is essentially a glorified base camp, a gateway to the actual wilderness, perfectly content to bask in the reflected glory of peaks it only occasionally visits.',
           image: {
             src: '/denver/curiosities/denver-plain.png',
-            alt: 'Denver skyline on the plains with Rocky Mountains in the distance',
+            alt: 'Denver skyline on the plains with Rocky Mountains in the distance'
           },
           sources: [
             {
               title: 'Geography of Denver',
               publisher: 'USGS',
-              url: 'https://www.usgs.gov/centers/geosciences-and-environmental-change-science-center/science/geography-denver',
+              url: 'https://www.usgs.gov/centers/geosciences-and-environmental-change-science-center/science/geography-denver'
             }
           ]
         },
@@ -359,29 +359,29 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/curiosities/curious-red-rocks-1.png',
-              alt: 'Red Rocks Amphitheatre natural rock formations',
+              alt: 'Red Rocks Amphitheatre natural rock formations'
             },
             {
               src: '/denver/curiosities/curious-red-rocks-2.png',
-              alt: 'Red Rocks concert with dramatic rock walls',
+              alt: 'Red Rocks concert with dramatic rock walls'
             },
             {
               src: '/denver/curiosities/curious-red-rocks-3.png',
-              alt: 'Red Rocks Amphitheatre scenic view',
-            },
+              alt: 'Red Rocks Amphitheatre scenic view'
+            }
           ],
           sources: [
             {
               title: 'The Geology of Red Rocks',
               publisher: 'Colorado Geological Survey',
-              url: 'https://coloradogeologicalsurvey.org/geology/red-rocks/',
+              url: 'https://coloradogeologicalsurvey.org/geology/red-rocks/'
             }
           ],
           location: {
             name: 'Red Rocks Amphitheatre',
             url: 'https://maps.app.goo.gl/R5eYx5wYm5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-3',
@@ -392,19 +392,19 @@ export const denver: CityData = {
           image: {
             src: '/denver/curiosities/denver-tunnels.png',
             alt: 'Underground tunnels beneath downtown Denver',
-            credit: 'Historical Photo',
+            credit: 'Historical Photo'
           },
           sources: [
             {
               title: 'The Tunnels of Downtown Denver',
               publisher: 'Denver Public Library',
-              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels',
-            },
+              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels'
+            }
           ],
           location: {
             name: 'Downtown Denver Tunnels',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -415,20 +415,20 @@ export const denver: CityData = {
           body: 'Henry Cordes Brown arrived in Denver in 1860 with $750 to his name. By the time he died in 1906, he\'d given the city its most enduring landmark. The Brown Palace Hotel opened August 12, 1892, built from Arizona red granite and Colorado sandstone, with an eight-story atrium lobby topped by a stained glass ceiling that filters Denver sunlight into something almost religious. The hotel has operated continuously ever since. Not "almost continuously." Not "with occasional closures." Every single day for over 130 years. Through the 1893 silver crash that devastated Denver\'s economy. Through the Spanish Flu pandemic that killed thousands in Colorado. Through two World Wars, the Great Depression, and COVID-19. Every president since Teddy Roosevelt has stayed here. The Unsinkable Molly Brown lived here. The Beatles stayed here in 1964. Underground tunnels still connect the hotel to surrounding buildings, originally built for discreet exits and rumored Prohibition-era purposes. The Brown Palace operates with a simple philosophy: the building is the attraction, and the attraction never closes. It is the constant in Denver\'s skyline, outlasting booms and busts, owners and eras. The hotel has seen everything and forgotten nothing.',
           image: {
             src: '/denver/curiosities/curious-brownpalace-1.png',
-            alt: 'The Brown Palace Hotel atrium and historic architecture',
+            alt: 'The Brown Palace Hotel atrium and historic architecture'
           },
           sources: [
             {
               title: 'History of the Brown Palace',
               publisher: 'Brown Palace Hotel',
-              url: 'https://www.brownpalace.com/our-hotel/history/',
+              url: 'https://www.brownpalace.com/our-hotel/history/'
             }
           ],
           location: {
             name: 'Brown Palace Hotel',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-11',
@@ -439,20 +439,20 @@ export const denver: CityData = {
           image: {
             src: '/denver/curiosities/breweries-2.png',
             alt: 'Denver craft brewery scene',
-            credit: 'Photo',
+            credit: 'Photo'
           },
           sources: [
             {
               title: 'The State of Craft Beer',
               publisher: 'Colorado Brewers Guild',
-              url: 'https://coloradobeer.org/',
+              url: 'https://coloradobeer.org/'
             }
           ],
           location: {
             name: 'Denver Metro',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-14',
@@ -463,20 +463,20 @@ export const denver: CityData = {
           image: {
             src: '/denver/curiosities/cannabis.png',
             alt: 'Colorado cannabis dispensary',
-            credit: 'Photo',
+            credit: 'Photo'
           },
           sources: [
             {
               title: 'Amendment 64',
               publisher: 'Colorado Department of Revenue',
-              url: 'https://sbg.colorado.gov/med/amendment-64',
+              url: 'https://sbg.colorado.gov/med/amendment-64'
             }
           ],
           location: {
             name: 'State of Colorado',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'den-curiosity-olympics',
@@ -488,138 +488,66 @@ export const denver: CityData = {
             {
               title: 'When Denver Said No to the Olympics',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/story/2018/02/02/when-denver-said-no-olympics',
+              url: 'https://www.historycolorado.org/story/2018/02/02/when-denver-said-no-olympics'
             }
           ]
-        },
-      ],
-    },
-    {
-      id: 'den-iconic-spots',
-      type: 'section',
-      title: 'Mile High Landmarks',
-      intro: 'These are the anchors of Denver identity—the places that define why people move here and why they catch the light of the Colorado sun. From the Union Station clock to the acoustics of Red Rocks, these are the essentials.',
-      items: [
-        {
-          id: 'iconic-1',
-          type: 'iconic-spot',
-          name: 'Red Rocks Amphitheatre',
-          category: 'Venue',
-          description: 'The Civilian Conservation Corps and Works Progress Administration built Red Rocks between 1936 and 1941—800 tons of quarried stone, 30,000 pounds of reinforced steel, five years of labor. Denver architect Burnham F. Hoyt designed it. Formally dedicated June 15, 1941. Scottish soprano Mary Garden declared she had "Never in any opera house the world over have I found more perfect acoustic properties." The Beatles played here in 1964. The venue sits 10 miles southwest of Denver between two 300-foot red sandstone monoliths. Naturally-occurring, acoustically perfect. Sunrise yoga happens on the venue steps. The amphitheater is free to visit during the day—hike the trails, run the stairs, sit where Stevie Nicks and Willie Nelson performed.',
-          images: [
-            {
-              src: '/denver/hidden-gems/red-rocks.png',
-              alt: 'Red Rocks Amphitheatre at sunset',
-            },
-          ],
+        }
+      ]
+    }
+    ],
           address: '18300 W Alameda Pkwy, Morrison, CO 80465',
           coordinates: { lat: 39.6654, lng: -105.2057 },
           hours: 'Park open daily 5am-11pm',
           price: 'Free during day; concerts vary',
           website: 'https://redrocksonline.com',
-          tip: 'Sunrise yoga classes happen on the venue steps',
-        },
-        {
-          id: 'iconic-2',
-          type: 'iconic-spot',
-          name: 'Union Station',
-          category: 'Landmark',
-          description: 'In 1912, the Denver Union Terminal Railway Company decided to demolish and rebuild the central portion to handle increasing passenger traffic. Denver architects Gove & Walsh designed the new building in Beaux-Arts style. Carved granite. Opened in 1914—ushering in Denver\'s golden age of rail travel. The building closed December 1, 2012 for a $500 million renovation. Reopened July 26, 2014, exactly one hundred years after the original opening. The derelict third and fourth floors became The Crawford Hotel—112 rooms, named after preservationist Dana Crawford. The 12,000-square-foot Great Hall serves as hotel lobby, public space, and train waiting room. Terminal Bar occupies the restored ticketing office off the Great Hall—signature cocktails, local craft beers, views of travelers and locals waiting for nothing in particular.',
-          images: [
-            {
-              src: '/denver/hidden-gems/union-station.png',
-              alt: 'Denver Union Station interior',
-            },
-          ],
+          tip: 'Sunrise yoga classes happen on the venue steps'
+        }
+        ],
           address: '1701 Wynkoop St, Denver, CO 80202',
           coordinates: { lat: 39.7529, lng: -105.0000 },
           hours: 'Building open 24 hours; businesses vary',
           price: 'Free to visit',
           website: 'https://unionstationindenver.com',
-          tip: 'The Cooper Lounge upstairs is the classy option',
+          tip: 'The Cooper Lounge upstairs is the classy option'
         },
         {
           id: 'iconic-ad-1',
           type: 'ad',
-          size: 'banner',
-        },
-        {
-          id: 'iconic-3',
-          type: 'iconic-spot',
-          name: 'Denver Art Museum',
-          category: 'Museum',
-          description: 'Studio Daniel Libeskind and Denver\'s Davis Partnership Architects designed the Frederic C. Hamilton Building. Opened October 7, 2006. Libeskind\'s first completed building in the United States. He said: "I was inspired by the light and geology of the Rockies, but most of all by the wide-open faces of the people of Denver." Construction took from July 2003 to March 2007. The building is 146,000 square feet, covered in 9,000 titanium panels that reflect Colorado sunshine. Design recalls the peaks of the Rockies and geometric rock crystals found in the foothills. Doubled the museum\'s size. Houses Modern and Contemporary Art, African Art, Oceanic Art, Western American art, special exhibitions. Frederic C. Hamilton bequeathed 22 Impressionist works in 2014—including a van Gogh, four Monets. The architecture is as much a draw as the collection. First Saturday each month is free for Colorado residents.',
-          images: [
-            {
-              src: '/denver/hidden-gems/art-museum.png',
-              alt: 'Denver Art Museum exterior',
-            },
-          ],
+          size: 'banner'
+        }
+        ],
           address: '100 W 14th Ave Pkwy, Denver, CO 80204',
           coordinates: { lat: 39.7372, lng: -104.9893 },
           hours: 'Sun-Thu 10am-5pm, Fri-Sat 10am-8pm',
           price: '$15 adults; free for kids under 18',
           website: 'https://denverartmuseum.org',
-          tip: 'First Saturday of each month is free for Colorado residents',
-        },
-        {
-          id: 'iconic-4',
-          type: 'iconic-spot',
-          name: 'Meow Wolf Denver',
-          category: 'Experience',
-          description: 'Meow Wolf announced Denver plans in 2018. Three years of work. Budget around $60 million. Opened September 17, 2021—Meow Wolf\'s third permanent exhibition. The largest: 90,000 square feet across four stories. Features 79 artworks by 120 local Colorado artists and 200 in-house creatives. 51% identify as female, 20% identify as LGBTQ+, 38% are people of color. The story: Convergence Station is a transit hub operated by the Quantum Department of Transportation (QDOT). Four alien worlds collided in a rare cosmic event. When they converged, everyone\'s memories got jumbled. Now memories are currency. Visitors access C Street, Eemia, Numina, and the Ossuary through portals. Almost 80 unique installations and rooms. Interactive storytelling throughout. Tributes to Denver\'s history woven in. Part haunted house, part art museum, part acid trip. Set aside at least 3 hours. Go weekdays to avoid crowds.',
-          images: [
-            {
-              src: '/denver/hidden-gems/meow-wolf.png',
-              alt: 'Meow Wolf Denver installation room',
-            },
-          ],
+          tip: 'First Saturday of each month is free for Colorado residents'
+        }
+        ],
           address: '1338 1st St, Denver, CO 80204',
           coordinates: { lat: 39.7411, lng: -105.0156 },
           hours: 'Wed-Mon 10am-10pm, closed Tues',
           price: '$45 adults',
           website: 'https://meowwolf.com/visit/denver',
-          tip: 'Go on a weekday to avoid crowds',
-        },
-        {
-          id: 'iconic-5',
-          type: 'iconic-spot',
-          name: 'Larimer Square',
-          category: 'Neighborhood',
-          description: 'William E. Larimer laid out this block in November 1858—Denver\'s oldest commercial corridor. During the Pike\'s Peak gold rush, the street hosted hotels, saloons, retail stores, professional offices. The buildings date from the 1870s to 1890s. By the 1950s-60s, Larimer Square was blighted, threatened by Denver Urban Renewal Authority demolition. In 1965, preservationist Dana Crawford saved the block between 14th and 15th Streets—turned late nineteenth-century buildings into a model of adaptive reuse. Became Denver\'s first historic district in 1971. Now: upscale restaurants, boutiques, string lights that have launched a thousand Instagram posts. The history is real even if the vibe is curated. Rioja for Spanish-influenced food, Tamayo for rooftop Mexican.',
-          images: [
-            {
-              src: '/denver/hidden-gems/larimer-square.png',
-              alt: 'Larimer Square string lights at night',
-            },
-          ],
+          tip: 'Go on a weekday to avoid crowds'
+        }
+        ],
           address: 'Larimer St between 14th and 15th, Denver, CO 80202',
           coordinates: { lat: 39.7475, lng: -104.9995 },
           hours: 'Businesses vary',
           price: 'Free to walk',
           website: 'https://larimersquare.com',
-          tip: 'Rioja for Spanish-influenced food, Tamayo for rooftop Mexican',
-        },
-        {
-          id: 'iconic-6',
-          type: 'iconic-spot',
-          name: 'Little Man Ice Cream',
-          category: 'Sweets',
-          description: 'Paul Tamburello opened Little Man Ice Cream on July 4, 2008 in a 28-foot-tall, 14,000-pound steel milk can. Inspired by "California Crazy"—a book documenting old roadside stores built as giant objects. The shop pays homage to Paul\'s father Peter, nicknamed "Little Man" due to his small stature. Paul is a former youth minister. Built the business on the belief that business exists to make a difference. The Scoop for Scoop Program donates a portion of every sale to charity. The replica 1950s-era milk can houses one of Denver\'s most beloved ice cream parlors. Unofficial capital of LoHi (Lower Highland). The line is long. The ice cream is good. Locals tolerate the wait.',
-          images: [
-            {
-              src: '/denver/iconic/little-man.png',
-              alt: 'Giant milk can shaped ice cream shop in Denver',
-            },
-          ],
+          tip: 'Rioja for Spanish-influenced food, Tamayo for rooftop Mexican'
+        }
+        ],
           address: '2620 16th St, Denver, CO 80211',
           coordinates: { lat: 39.7592, lng: -105.0105 },
           hours: 'Daily 11am-11pm',
           price: '$',
           website: 'https://littlemanicecream.com',
-          tip: 'The line is long, but they have a "Scoop for Scoop" program that donates a portion of every sale to charity.',
-        },
-      ],
+          tip: 'The line is long, but they have a "Scoop for Scoop" program that donates a portion of every sale to charity.'
+        }
+      ]
     },
     {
       id: 'den-hidden-gems',
@@ -636,8 +564,8 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/tunnels.png',
-              alt: 'Colorado State Capitol underground tunnels',
-            },
+              alt: 'Colorado State Capitol underground tunnels'
+            }
           ],
           address: '200 E Colfax Ave, Denver, CO 80203',
           coordinates: { lat: 39.7392, lng: -104.9847 },
@@ -648,14 +576,14 @@ export const denver: CityData = {
             {
               title: 'Capitol Complex Tunnels',
               publisher: 'Colorado General Assembly',
-              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels',
+              url: 'https://leg.colorado.gov/content/capitol-complex-tunnels'
             }
           ]
         },
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-history-1',
@@ -668,12 +596,12 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/cheesman-1.png',
-              alt: 'Cheesman Park Denver',
+              alt: 'Cheesman Park Denver'
             },
             {
               src: '/denver/hidden-gems/cheesman-2.png',
-              alt: 'Cheesman Park pavilion',
-            },
+              alt: 'Cheesman Park pavilion'
+            }
           ],
           address: '1599 E 13th Ave, Denver, CO 80218',
           coordinates: { lat: 39.7339, lng: -104.9611 },
@@ -683,10 +611,10 @@ export const denver: CityData = {
             {
               title: 'Cheesman Park\'s Past Life...as a Cemetery',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-lifeas-cemetery',
-            },
+              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-lifeas-cemetery'
+            }
           ],
-          tip: 'Most park-goers have no idea they\'re walking over a cemetery',
+          tip: 'Most park-goers have no idea they\'re walking over a cemetery'
         },
         {
           id: 'gem-history-2',
@@ -699,12 +627,12 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/powerhouse-1.png',
-              alt: 'Denver Tramway Powerhouse (now REI)',
+              alt: 'Denver Tramway Powerhouse (now REI)'
             },
             {
               src: '/denver/hidden-gems/powerhouse-2.png',
-              alt: 'Denver Tramway Powerhouse interior',
-            },
+              alt: 'Denver Tramway Powerhouse interior'
+            }
           ],
           address: '1416 Platte St, Denver, CO 80202',
           coordinates: { lat: 39.7567, lng: -105.0092 },
@@ -715,10 +643,10 @@ export const denver: CityData = {
             {
               title: 'The History of the REI Denver Flagship Building',
               publisher: 'REI',
-              url: 'https://www.rei.com/blog/camp/the-history-of-the-rei-denver-flagship-building',
+              url: 'https://www.rei.com/blog/camp/the-history-of-the-rei-denver-flagship-building'
             }
           ],
-          tip: 'Look for preserved original architecture inside REI',
+          tip: 'Look for preserved original architecture inside REI'
         },
         {
           id: 'gem-museums-1',
@@ -731,16 +659,16 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/taxxidermy.png',
-              alt: 'National Wildlife Property Repository specimens',
+              alt: 'National Wildlife Property Repository specimens'
             },
             {
               src: '/denver/hidden-gems/taxidermy-2.png',
-              alt: 'Wildlife specimens collection',
+              alt: 'Wildlife specimens collection'
             },
             {
               src: '/denver/hidden-gems/taxidermy-3.png',
-              alt: 'Confiscated illegal wildlife products display',
-            },
+              alt: 'Confiscated illegal wildlife products display'
+            }
           ],
           address: '6550 Gateway Rd, Commerce City, CO 80022',
           coordinates: { lat: 39.8133, lng: -104.8506 },
@@ -751,7 +679,7 @@ export const denver: CityData = {
             {
               title: 'National Wildlife Property Repository',
               publisher: 'U.S. Fish and Wildlife Service',
-              url: 'https://www.fws.gov/program/national-wildlife-property-repository',
+              url: 'https://www.fws.gov/program/national-wildlife-property-repository'
             }
           ]
         },
@@ -766,12 +694,12 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/gnomes.png',
-              alt: 'Denver Museum of Nature & Science',
+              alt: 'Denver Museum of Nature & Science'
             },
             {
               src: '/denver/hidden-gems/gnomes-2.png',
-              alt: 'Hidden elves in museum dioramas',
-            },
+              alt: 'Hidden elves in museum dioramas'
+            }
           ],
           address: '2001 Colorado Blvd, Denver, CO 80205',
           coordinates: { lat: 39.7476, lng: -104.9428 },
@@ -782,15 +710,15 @@ export const denver: CityData = {
             {
               title: 'The Hidden Elves of DMNS',
               publisher: '5280 Magazine',
-              url: 'https://www.5280.com/how-to-find-the-hidden-elves-at-the-denver-museum-of-nature-science/',
+              url: 'https://www.5280.com/how-to-find-the-hidden-elves-at-the-denver-museum-of-nature-science/'
             }
           ],
-          tip: 'Ask for scavenger hunt sheet at information desk',
+          tip: 'Ask for scavenger hunt sheet at information desk'
         },
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-museums-3',
@@ -803,12 +731,12 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/80s-1.png',
-              alt: 'Fifty-Two 80\'s Saturday Morning Cartoon Museum interior with vintage toys',
+              alt: 'Fifty-Two 80\'s Saturday Morning Cartoon Museum interior with vintage toys'
             },
             {
               src: '/denver/hidden-gems/80s-2.png',
-              alt: 'Vintage 80s collectibles and nostalgia items',
-            },
+              alt: 'Vintage 80s collectibles and nostalgia items'
+            }
           ],
           address: '52 S Broadway, Denver, CO 80209',
           coordinates: { lat: 39.7192, lng: -104.9878 },
@@ -818,10 +746,10 @@ export const denver: CityData = {
             {
               title: 'Fifty-Two 80\'s',
               publisher: 'Westword',
-              url: 'https://www.westword.com/location/fifty-two-80s-5162241',
+              url: 'https://www.westword.com/location/fifty-two-80s-5162241'
             }
           ],
-          tip: 'Visit Saturday mornings for the full cartoon experience',
+          tip: 'Visit Saturday mornings for the full cartoon experience'
         },
         {
           id: 'gem-museums-4',
@@ -834,16 +762,16 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/art-museum-1.png',
-              alt: 'Clyfford Still Museum exterior and modern architecture',
+              alt: 'Clyfford Still Museum exterior and modern architecture'
             },
             {
               src: '/denver/hidden-gems/art-mueum-2.png',
-              alt: 'Clyfford Still abstract expressionist artwork',
+              alt: 'Clyfford Still abstract expressionist artwork'
             },
             {
               src: '/denver/hidden-gems/art-museum-3.png',
-              alt: 'Museum interior gallery space',
-            },
+              alt: 'Museum interior gallery space'
+            }
           ],
           address: '1250 Bannock St, Denver, CO 80204',
           coordinates: { lat: 39.7361, lng: -104.9903 },
@@ -854,10 +782,10 @@ export const denver: CityData = {
             {
               title: 'About the Clyfford Still Museum',
               publisher: 'Clyfford Still Museum',
-              url: 'https://clyffordstillmuseum.org/about/',
+              url: 'https://clyffordstillmuseum.org/about/'
             }
           ],
-          tip: 'Perfect refuge if you need a quiet hour',
+          tip: 'Perfect refuge if you need a quiet hour'
         },
         {
           id: 'gem-quirky-1',
@@ -870,12 +798,12 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/cannabis-church-1.png',
-              alt: 'International Church of Cannabis psychedelic interior with geometric neon artwork',
+              alt: 'International Church of Cannabis psychedelic interior with geometric neon artwork'
             },
             {
               src: '/denver/hidden-gems/cannabis-church-2.png',
-              alt: 'Colorful geometric patterns and murals inside the church',
-            },
+              alt: 'Colorful geometric patterns and murals inside the church'
+            }
           ],
           address: '400 S Logan St, Denver, CO 80209',
           coordinates: { lat: 39.7161, lng: -104.9831 },
@@ -886,15 +814,15 @@ export const denver: CityData = {
             {
               title: 'Inside the International Church of Cannabis',
               publisher: 'Westword',
-              url: 'https://www.westword.com/news/denvers-international-church-of-cannabis-opens-doors-8991211',
+              url: 'https://www.westword.com/news/denvers-international-church-of-cannabis-opens-doors-8991211'
             }
           ],
-          tip: 'Experience the psychedelic interior and laser show',
+          tip: 'Experience the psychedelic interior and laser show'
         },
         {
           id: 'gem-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-nature-1',
@@ -907,16 +835,16 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/bluff-lake-1.png',
-              alt: 'Bluff Lake Nature Center tranquil wetlands and walking paths',
+              alt: 'Bluff Lake Nature Center tranquil wetlands and walking paths'
             },
             {
               src: '/denver/hidden-gems/bluff-lake-2.png',
-              alt: 'Wildlife and natural scenery at Bluff Lake',
+              alt: 'Wildlife and natural scenery at Bluff Lake'
             },
             {
               src: '/denver/hidden-gems/bluff-lake-3.png',
-              alt: 'Peaceful lake views and surrounding nature',
-            },
+              alt: 'Peaceful lake views and surrounding nature'
+            }
           ],
           address: '3400 Havana Way, Denver, CO 80239',
           coordinates: { lat: 39.7697, lng: -104.8714 },
@@ -927,12 +855,12 @@ export const denver: CityData = {
             {
               title: 'Bluff Lake Nature Center History',
               publisher: 'Bluff Lake Nature Center',
-              url: 'https://blufflake.org/about/history/',
+              url: 'https://blufflake.org/about/history/'
             }
           ],
-          tip: 'Alternative to Washington Park crowds',
-        },
-      ],
+          tip: 'Alternative to Washington Park crowds'
+        }
+      ]
     },
     {
       id: 'den-best-bars',
@@ -955,8 +883,8 @@ export const denver: CityData = {
           instagram: '@williamsandgraham',
           image: {
             src: '/denver/hidden-gems/speakeasy-2.png',
-            alt: 'Williams & Graham intimate speakeasy bar with warm lighting and craft cocktails',
-          },
+            alt: 'Williams & Graham intimate speakeasy bar with warm lighting and craft cocktails'
+          }
         },
         {
           name: 'Death & Co Denver',
@@ -969,11 +897,7 @@ export const denver: CityData = {
           price: '$$$',
           hours: 'Daily 5pm-12am',
           website: 'https://www.deathandcompany.com/',
-          instagram: '@deathandcompany',
-          image: {
-            src: '',
-            alt: 'Sophisticated cocktail bar interior with mood lighting',
-          },
+          instagram: '@deathandcompany'
         },
         {
           name: 'Union Lodge No. 1',
@@ -986,11 +910,7 @@ export const denver: CityData = {
           price: '$$$',
           hours: 'Sun-Wed 5pm-11pm, Thu-Sat 5pm-1am',
           website: 'https://www.unionlodge1.com/',
-          instagram: '@unionlodge1',
-          image: {
-            src: '',
-            alt: 'Historic cocktail bar with vintage decor and classic drinks',
-          },
+          instagram: '@unionlodge1'
         },
         {
           name: 'Ratio Beerworks',
@@ -1006,8 +926,8 @@ export const denver: CityData = {
           instagram: '@ratiobeerworks',
           image: {
             src: '/denver/curiosities/breweries-1.png',
-            alt: 'Ratio Beerworks craft brewery taproom with industrial RiNo decor',
-          },
+            alt: 'Ratio Beerworks craft brewery taproom with industrial RiNo decor'
+          }
         },
         {
           name: 'Mezcaleria Alma',
@@ -1020,11 +940,7 @@ export const denver: CityData = {
           price: '$$$',
           hours: 'Daily 4pm-12am',
           website: 'https://www.mezcaleriaalma.com/',
-          instagram: '@mezcaleriaalma',
-          image: {
-            src: '',
-            alt: 'Mezcal bar with agave spirits and warm lighting',
-          },
+          instagram: '@mezcaleriaalma'
         },
         {
           name: 'The Cruise Room',
@@ -1041,25 +957,21 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/bars/denver-bars-cruise-1.png',
-              alt: 'The Cruise Room Art Deco interior',
+              alt: 'The Cruise Room Art Deco interior'
             },
             {
               src: '/denver/bars/denver-bars-cruise-2.png',
-              alt: 'The Cruise Room Art Deco interior',
+              alt: 'The Cruise Room Art Deco interior'
             },
             {
               src: '/denver/bars/denver-bars-cruise-3.png',
-              alt: 'The Cruise Room Art Deco interior',
+              alt: 'The Cruise Room Art Deco interior'
             },
             {
               src: '/denver/bars/denver-bars-cruise-4.png',
-              alt: 'The Cruise Room Art Deco interior',
-            },
-            {
-              src: '/denver/bars/cruise-room.png',
-              alt: 'Pink neon Art Deco interior of The Cruise Room at the Oxford Hotel',
-            },
-          ],
+              alt: 'The Cruise Room Art Deco interior'
+            }
+            ]
         },
         {
           name: 'My Brother\'s Bar',
@@ -1076,23 +988,19 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/bars/denver-bars-mybro-1.png',
-              alt: 'My Brother\'s Bar historic interior',
+              alt: 'My Brother\'s Bar historic interior'
             },
             {
               src: '/denver/bars/denver-bars-mybro-2.png',
-              alt: 'My Brother\'s Bar historic interior',
+              alt: 'My Brother\'s Bar historic interior'
             },
             {
               src: '/denver/bars/denver-bars-mybro-3.png',
-              alt: 'My Brother\'s Bar historic interior',
-            },
-            {
-              src: '/denver/bars/brothers-bar.png',
-              alt: 'Historic exterior of My Brother\'s Bar in Denver',
-            },
-          ],
-        },
-      ],
+              alt: 'My Brother\'s Bar historic interior'
+            }
+            ]
+        }
+      ]
     },
     {
       id: 'den-best-restaurants',
@@ -1116,21 +1024,21 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/restaurants/safta-1.png',
-              alt: 'Safta hummus and laffa bread',
+              alt: 'Safta hummus and laffa bread'
             },
             {
               src: '/denver/restaurants/safta-2.png',
-              alt: 'Safta Israeli mezze spread',
+              alt: 'Safta Israeli mezze spread'
             },
             {
               src: '/denver/restaurants/safta-3.png',
-              alt: 'Safta restaurant interior',
+              alt: 'Safta restaurant interior'
             },
             {
               src: '/denver/restaurants/safta-4.png',
-              alt: 'Safta lamb shoulder',
+              alt: 'Safta lamb shoulder'
             }
-          ],
+          ]
         },
         {
           name: 'Buckhorn Exchange',
@@ -1146,13 +1054,13 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/hidden-gems/steakhouse-1.png',
-              alt: 'Buckhorn Exchange historic interior with extensive taxidermy collection',
+              alt: 'Buckhorn Exchange historic interior with extensive taxidermy collection'
             },
             {
               src: '/denver/hidden-gems/steakhouse-2.png',
-              alt: 'More taxidermy displays and historic restaurant atmosphere',
-            },
-          ],
+              alt: 'More taxidermy displays and historic restaurant atmosphere'
+            }
+          ]
         },
         {
           name: 'Hop Alley',
@@ -1169,17 +1077,17 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/restaurants/hopalley-1.png',
-              alt: 'Hop Alley kung pao pastrami',
+              alt: 'Hop Alley kung pao pastrami'
             },
             {
               src: '/denver/restaurants/hopalley-2.png',
-              alt: 'Hop Alley Sichuan dishes',
+              alt: 'Hop Alley Sichuan dishes'
             },
             {
               src: '/denver/restaurants/hopalley-3.png',
-              alt: 'Hop Alley restaurant interior',
+              alt: 'Hop Alley restaurant interior'
             }
-          ],
+          ]
         },
         {
           name: 'Guard and Grace',
@@ -1197,25 +1105,25 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/restaurants/guardgrace-1.png',
-              alt: 'Guard and Grace dry-aged ribeye',
+              alt: 'Guard and Grace dry-aged ribeye'
             },
             {
               src: '/denver/restaurants/guardgrace-2.png',
-              alt: 'Guard and Grace restaurant interior',
+              alt: 'Guard and Grace restaurant interior'
             },
             {
               src: '/denver/restaurants/guardgrace-3.png',
-              alt: 'Guard and Grace wine room',
+              alt: 'Guard and Grace wine room'
             },
             {
               src: '/denver/restaurants/guardgrace-4.png',
-              alt: 'Guard and Grace oak-fired kitchen',
+              alt: 'Guard and Grace oak-fired kitchen'
             },
             {
               src: '/denver/restaurants/guardgrace-5.png',
-              alt: 'Guard and Grace seafood',
+              alt: 'Guard and Grace seafood'
             }
-          ],
+          ]
         },
         {
           name: 'The Wolf\'s Tailor',
@@ -1233,17 +1141,17 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/restaurants/wolfs-1.png',
-              alt: 'Wolf\'s Tailor tasting menu dish',
+              alt: 'Wolf\'s Tailor tasting menu dish'
             },
             {
               src: '/denver/restaurants/wolfs-2.png',
-              alt: 'Wolf\'s Tailor seasonal course',
+              alt: 'Wolf\'s Tailor seasonal course'
             },
             {
               src: '/denver/restaurants/wolfs-3.png',
-              alt: 'Wolf\'s Tailor pasta course',
+              alt: 'Wolf\'s Tailor pasta course'
             }
-          ],
+          ]
         },
         {
           name: 'Tacos Tequila Whiskey',
@@ -1260,19 +1168,19 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/restaurants/tacostequila-1.png',
-              alt: 'Tacos Tequila Whiskey al pastor tacos',
+              alt: 'Tacos Tequila Whiskey al pastor tacos'
             },
             {
               src: '/denver/restaurants/tacostequila-2.png',
-              alt: 'Tacos Tequila Whiskey mezcal selection',
+              alt: 'Tacos Tequila Whiskey mezcal selection'
             },
             {
               src: '/denver/restaurants/tacostequila-3.png',
-              alt: 'Tacos Tequila Whiskey restaurant',
+              alt: 'Tacos Tequila Whiskey restaurant'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     },
     {
       id: 'den-best-coffee-shops',
@@ -1292,11 +1200,7 @@ export const denver: CityData = {
           hours: '7am-5pm daily',
           price: '$$',
           website: 'https://www.corvuscoffee.com',
-          instagram: '@corvuscoffee',
-          image: {
-            src: '',
-            alt: 'Specialty coffee pour-over setup with precision equipment',
-          },
+          instagram: '@corvuscoffee'
         },
         {
           name: 'Little Owl Coffee',
@@ -1309,11 +1213,7 @@ export const denver: CityData = {
           hours: '7am-4pm daily',
           price: '$$',
           website: 'https://littleowlcoffee.com',
-          instagram: '@littleowlcoffee',
-          image: {
-            src: '',
-            alt: 'Precision pour-over coffee brewing',
-          },
+          instagram: '@littleowlcoffee'
         },
         {
           name: 'Crema Coffee House',
@@ -1326,11 +1226,7 @@ export const denver: CityData = {
           hours: '7am-6pm daily',
           price: '$$',
           website: 'https://cremacoffeehouse.net',
-          instagram: '@cremacoffeehouse',
-          image: {
-            src: '',
-            alt: 'Bright minimalist coffee shop with natural light and clean lines',
-          },
+          instagram: '@cremacoffeehouse'
         },
         {
           name: 'Sweet Bloom Coffee Roasters',
@@ -1343,11 +1239,7 @@ export const denver: CityData = {
           hours: '7am-3pm daily',
           price: '$$',
           website: 'https://sweetbloomcoffee.com',
-          instagram: '@sweetbloomcoffee',
-          image: {
-            src: '',
-            alt: 'Scientific coffee roasting with precision equipment',
-          },
+          instagram: '@sweetbloomcoffee'
         },
         {
           name: 'Jubilee Roasting',
@@ -1360,11 +1252,7 @@ export const denver: CityData = {
           hours: '8am-2pm Wed-Sun',
           price: '$$',
           website: 'https://www.jubileeroasting.com',
-          instagram: '@jubileeroasting',
-          image: {
-            src: '',
-            alt: 'Artisan roastery with creative warehouse space',
-          },
+          instagram: '@jubileeroasting'
         },
         {
           name: 'Dandy Lion Coffee',
@@ -1377,13 +1265,9 @@ export const denver: CityData = {
           hours: '7am-4pm daily',
           price: '$$',
           website: 'https://www.dandylioncoffee.com/',
-          instagram: '@dandylioncoffee',
-          image: {
-            src: '',
-            alt: 'Cozy coffee shop filled with plants and natural light',
-          },
-        },
-      ],
+          instagram: '@dandylioncoffee'
+        }
+      ]
     },
     {
       id: 'denver-dark-history',
@@ -1404,40 +1288,40 @@ export const denver: CityData = {
           verdict: 'Bodies still found during construction. Inspired elements of "Poltergeist." You\'re welcome.',
           image: {
             src: '/denver/dark-history/cheesman.png',
-            alt: 'Historic photograph of Cheesman Park pavilion and grounds, built atop Denver cemetery',
+            alt: 'Historic photograph of Cheesman Park pavilion and grounds, built atop Denver cemetery'
           },
           location: {
             name: 'Cheesman Park, Capitol Hill',
       url: 'https://www.google.com/maps/search/?api=1&query=Cheesman%20Park%2C%20Capitol%20Hill%20Denver',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Cheesman Park\'s Past Life as a Cemetery',
               publisher: 'Denver Public Library',
-              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-lifeas-cemetery',
+              url: 'https://history.denverlibrary.org/news/denver/cheesman-parks-past-lifeas-cemetery'
             },
             {
               type: 'article',
               title: 'The macabre history of Denver\'s Cheesman Park',
               publisher: 'CNN',
-              url: 'https://www.cnn.com/travel/article/cheesman-park-denver-cemetery/index.html',
+              url: 'https://www.cnn.com/travel/article/cheesman-park-denver-cemetery/index.html'
             },
             {
               type: 'article',
               title: 'Cheesman Park',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/cheesman-park',
+              url: 'https://www.atlasobscura.com/places/cheesman-park'
             },
             {
               type: 'book',
               title: 'The Graveyard Book: Stories of Cheesman Park',
               author: 'Todd Matthews',
               isbn: '9781634990714',
-              url: 'https://www.amazon.com/Graveyard-Book-Stories-Cheesman-Park/dp/1634990714',
-            },
-          ],
+              url: 'https://www.amazon.com/Graveyard-Book-Stories-Cheesman-Park/dp/1634990714'
+            }
+          ]
         },
         {
           id: 'den-dark-1',
@@ -1451,50 +1335,50 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/dark-history/massacre-1.png',
-              alt: 'Sand Creek Massacre National Historic Site memorial with prairie landscape',
+              alt: 'Sand Creek Massacre National Historic Site memorial with prairie landscape'
             },
             {
               src: '/denver/dark-history/massacre-2.png',
-              alt: 'Sand Creek Massacre historical marker',
-            },
+              alt: 'Sand Creek Massacre historical marker'
+            }
           ],
           location: {
             name: 'Sand Creek, 170 miles southeast of Denver',
       url: 'https://www.google.com/maps/search/?api=1&query=Sand%20Creek%2C%20170%20miles%20southeast%20of%20Denver%20Denver',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Sand Creek Massacre National Historic Site',
               publisher: 'National Park Service',
-              url: 'https://www.nps.gov/sand/index.htm',
+              url: 'https://www.nps.gov/sand/index.htm'
             },
             {
               type: 'documentary',
               title: 'The Sand Creek Massacre',
               platform: 'PBS',
-              url: 'https://www.pbs.org/wgbh/americanexperience/films/massacre/',
+              url: 'https://www.pbs.org/wgbh/americanexperience/films/massacre/'
             },
             {
               type: 'book',
               title: 'The Sand Creek Massacre',
               author: 'Ari Kelman',
               isbn: '9780674023499',
-              url: 'https://www.amazon.com/Sand-Creek-Massacre-Ari-Kelman/dp/0674023498',
+              url: 'https://www.amazon.com/Sand-Creek-Massacre-Ari-Kelman/dp/0674023498'
             },
             {
               type: 'article',
               title: 'Sand Creek Massacre',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/sand-creek-massacre',
-            },
-          ],
+              url: 'https://www.historycolorado.org/sand-creek-massacre'
+            }
+          ]
         },
         {
           id: 'den-dark-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'den-dark-7',
@@ -1508,25 +1392,25 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/dark-history/baron-inn.png',
-              alt: 'Historic Victorian mansion in Denver, now the Lumber Baron Inn, site of unsolved 1970 murders',
+              alt: 'Historic Victorian mansion in Denver, now the Lumber Baron Inn, site of unsolved 1970 murders'
             },
             {
               src: '/denver/dark-history/baron-inn-2.png',
-              alt: 'Lumber Baron Inn exterior view',
-            },
+              alt: 'Lumber Baron Inn exterior view'
+            }
           ],
           location: {
             name: 'Lumber Baron Inn, 2555 W 37th Ave',
       url: 'https://www.google.com/maps/search/?api=1&query=Lumber%20Baron%20Inn%2C%202555%20W%2037th%20Ave%20Denver',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'The Lumber Baron Inn',
               publisher: 'Denver Public Art & History',
-              url: 'https://www.lumberbaron.com/history',
-            },
-          ],
+              url: 'https://www.lumberbaron.com/history'
+            }
+          ]
         },
         {
           id: 'den-dark-13',
@@ -1539,47 +1423,47 @@ export const denver: CityData = {
           verdict: 'Convicted cannibal who became a Denver celebrity. University of Colorado named a cafeteria after him.',
           image: {
             src: '/denver/dark-history/cannibal.png',
-            alt: 'Historic photograph of Colorado Rocky Mountains where Alferd Packer cannibalism occurred',
+            alt: 'Historic photograph of Colorado Rocky Mountains where Alferd Packer cannibalism occurred'
           },
           location: {
             name: 'Trial in Lake City; buried in Littleton Cemetery',
       url: 'https://www.google.com/maps/search/?api=1&query=Trial%20in%20Lake%20City%3B%20buried%20in%20Littleton%20Cemetery%20Denver',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'Alferd Packer: The Truth is Out There',
               publisher: 'Denver Public Library',
-              url: 'https://www.historycolorado.org/story/western-history/2017/08/31/alferd-packer-man-eater',
+              url: 'https://www.historycolorado.org/story/western-history/2017/08/31/alferd-packer-man-eater'
             },
             {
               type: 'article',
               title: 'Flesh for Fantasy: The Story of Alferd Packer',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/lost-highways/2022/01/04/flesh-fantasy',
+              url: 'https://www.historycolorado.org/lost-highways/2022/01/04/flesh-fantasy'
             },
             {
               type: 'book',
               title: 'Man-Eater: The Life and Legend of an American Cannibal',
               author: 'Harold Schechter',
               isbn: '9780061098840',
-              url: 'https://www.amazon.com/Man-Eater-Legend-American-Cannibal/dp/0061098841',
+              url: 'https://www.amazon.com/Man-Eater-Legend-American-Cannibal/dp/0061098841'
             },
             {
               type: 'documentary',
               title: 'Cannibal! The Musical',
               director: 'Trey Parker',
               year: '1993',
-              url: 'https://www.imdb.com/title/tt0115819/',
+              url: 'https://www.imdb.com/title/tt0115819/'
             },
             {
               type: 'podcast',
               title: 'Alferd Packer: The Colorado Cannibal',
               show: 'True Crime Garage',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/alferd-packer',
-            },
-          ],
+              url: 'https://open.spotify.com/episode/alferd-packer'
+            }
+          ]
         },
         {
           id: 'den-dark-2',
@@ -1593,30 +1477,30 @@ export const denver: CityData = {
           verdict: 'One dead. Entire neighborhood destroyed. City apologized 142 years later. Now it\'s parking.',
           image: {
             src: '/denver/dark-history/hop-alley.png',
-            alt: 'Historic Denver street scene from the era of Chinatown and Hop Alley',
+            alt: 'Historic Denver street scene from the era of Chinatown and Hop Alley'
           },
           location: {
             name: 'Hop Alley (Former Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           },
           sources: [
             {
               title: 'On Halloween Nearly 150 Years Ago, An Anti-Chinese Riot Broke Out In Denver',
               publisher: 'Colorado Public Radio',
-              url: 'https://www.cpr.org/2019/09/02/on-halloween-nearly-150-years-ago-an-anti-chinese-riot-broke-out-in-denver/',
+              url: 'https://www.cpr.org/2019/09/02/on-halloween-nearly-150-years-ago-an-anti-chinese-riot-broke-out-in-denver/'
             },
             {
               title: 'Denver apologizes for 1880 anti-Chinese riot',
               publisher: 'Denver Post',
-              url: 'https://www.denverpost.com/2022/10/31/denver-apologizes-anti-chinese-riot-1880/',
-            },
-          ],
+              url: 'https://www.denverpost.com/2022/10/31/denver-apologizes-anti-chinese-riot-1880/'
+            }
+          ]
         },
         {
           id: 'den-dark-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'den-dark-8',
@@ -1629,25 +1513,25 @@ export const denver: CityData = {
           verdict: 'Four guards executed. Prime suspect acquitted. Cold case. No justice.',
           image: {
             src: '/denver/dark-history/bank-massacre.png',
-            alt: 'Downtown Denver high-rise building, former United Bank Tower where 1991 massacre occurred',
+            alt: 'Downtown Denver high-rise building, former United Bank Tower where 1991 massacre occurred'
           },
           location: {
             name: 'Wells Fargo Center (Former United Bank Tower)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'Denver United Bank murders: 30-year anniversary',
               publisher: '9NEWS',
-              url: 'https://www.9news.com/article/news/investigations/denver-united-bank-murders-30-year-anniversary/73-188dabda-7411-4420-a1a5-f90d5b15959a',
+              url: 'https://www.9news.com/article/news/investigations/denver-united-bank-murders-30-year-anniversary/73-188dabda-7411-4420-a1a5-f90d5b15959a'
             },
             {
               title: 'Father\'s Day Bank Massacre',
               publisher: 'Denver Post',
-              url: 'https://www.denverpost.com/2021/06/16/fathers-day-bank-massacre-denver/',
-            },
-          ],
+              url: 'https://www.denverpost.com/2021/06/16/fathers-day-bank-massacre-denver/'
+            }
+          ]
         },
         {
           id: 'den-dark-4',
@@ -1660,20 +1544,20 @@ export const denver: CityData = {
           verdict: 'High society murder in Denver\'s fanciest hotel. The bar is now Ship Tavern.',
           image: {
             src: '/denver/dark-history/brown-palace.png',
-            alt: 'Historic interior of the Brown Palace Hotel in Denver, site of the 1911 murder',
+            alt: 'Historic interior of the Brown Palace Hotel in Denver, site of the 1911 murder'
           },
           location: {
             name: 'Brown Palace Hotel',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'Murder at the Brown Palace',
               publisher: '5280 Magazine',
-              url: 'https://www.5280.com/2011/05/murder-at-the-brown-palace/',
-            },
-          ],
+              url: 'https://www.5280.com/2011/05/murder-at-the-brown-palace/'
+            }
+          ]
         },
         {
           id: 'den-dark-5',
@@ -1686,25 +1570,25 @@ export const denver: CityData = {
           verdict: 'Called "the deadliest strike in U.S. history." Monument stands at the site. Justice never came.',
           image: {
             src: '/denver/dark-history/ludlow.png',
-            alt: 'Historic winter landscape of Colorado mining country where Ludlow Massacre occurred',
+            alt: 'Historic winter landscape of Colorado mining country where Ludlow Massacre occurred'
           },
           location: {
             name: 'Ludlow Massacre Memorial',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'The Ludlow Massacre',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/ludlow-massacre',
+              url: 'https://www.historycolorado.org/ludlow-massacre'
             },
             {
               title: 'Ludlow Massacre Site',
               publisher: 'National Park Service',
-              url: 'https://www.nps.gov/places/ludlow-massacre-site.htm',
-            },
-          ],
+              url: 'https://www.nps.gov/places/ludlow-massacre-site.htm'
+            }
+          ]
         },
         {
           id: 'den-dark-6',
@@ -1717,25 +1601,25 @@ export const denver: CityData = {
           verdict: 'One guard dead. First successful U.S. Mint robbery. No one ever charged.',
           image: {
             src: '/denver/dark-history/denver-mint.png',
-            alt: 'Historic photograph of the Denver Mint building where the 1922 heist occurred',
+            alt: 'Historic photograph of the Denver Mint building where the 1922 heist occurred'
           },
           location: {
             name: 'U.S. Mint Denver',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'The Denver Mint Robbery',
               publisher: 'Denver Post',
-              url: 'https://www.denverpost.com/2013/12/15/the-denver-mint-robbery/',
+              url: 'https://www.denverpost.com/2013/12/15/the-denver-mint-robbery/'
             },
             {
               title: '1922 Denver Mint Robbery',
               publisher: 'History Colorado',
-              url: 'https://www.historycolorado.org/denver-mint-robbery',
-            },
-          ],
+              url: 'https://www.historycolorado.org/denver-mint-robbery'
+            }
+          ]
         },
         {
           id: 'den-dark-11',
@@ -1748,25 +1632,25 @@ export const denver: CityData = {
           verdict: 'The dogs are documented. They jumped. Now it\'s a boutique hotel.',
           image: {
             src: '/denver/dark-history/dogs-inn.png',
-            alt: 'Historic Patterson Inn mansion in Denver, site of paranormal activity and mysterious dog deaths',
+            alt: 'Historic Patterson Inn mansion in Denver, site of paranormal activity and mysterious dog deaths'
           },
           location: {
             name: 'Patterson Inn',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'The Haunted History of Patterson Inn',
               publisher: 'Westword',
-              url: 'https://www.westword.com/news/the-haunted-history-of-patterson-inn-5836822',
+              url: 'https://www.westword.com/news/the-haunted-history-of-patterson-inn-5836822'
             },
             {
               title: 'Patterson Inn History',
               publisher: 'Patterson Inn',
-              url: 'https://www.pattersoninn.com/history',
+              url: 'https://www.pattersoninn.com/history'
             }
-          ],
+          ]
         },
         {
           id: 'den-dark-12',
@@ -1779,25 +1663,25 @@ export const denver: CityData = {
           verdict: 'Multiple documented legends. Phantom runner. Demon hitchhikers. Your move.',
           image: {
             src: '/denver/dark-history/haunted-road.png',
-            alt: 'Rural Colorado road landscape near Denver, representing Riverdale Road area',
+            alt: 'Rural Colorado road landscape near Denver, representing Riverdale Road area'
           },
           location: {
             name: 'Riverdale Road',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               title: 'Is Riverdale Road Haunted?',
               publisher: '9NEWS',
-              url: 'https://www.9news.com/article/life/holidays/halloween/riverdale-road-thornton-brighton/73-2619a367-b69a-483e-aa45-3f590eeec24a',
+              url: 'https://www.9news.com/article/life/holidays/halloween/riverdale-road-thornton-brighton/73-2619a367-b69a-483e-aa45-3f590eeec24a'
             },
             {
               title: 'Colorado\'s Most Haunted Road',
               publisher: 'Denver Gazette',
-              url: 'https://denvergazette.com/outtherecolorado/adventures/colorados-most-haunted-road-known-for-gates-of-hell-and-twisted-past/article_9dd294ce-9bfb-4085-8c63-1d23f71fc4f1.html',
-            },
-          ],
+              url: 'https://denvergazette.com/outtherecolorado/adventures/colorados-most-haunted-road-known-for-gates-of-hell-and-twisted-past/article_9dd294ce-9bfb-4085-8c63-1d23f71fc4f1.html'
+            }
+          ]
         },
         {
           id: 'den-dark-10',
@@ -1812,46 +1696,46 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/dark-history/dia-1.png',
-              alt: 'Denver International Airport distinctive tent-like terminal structure',
+              alt: 'Denver International Airport distinctive tent-like terminal structure'
             },
             {
               src: '/denver/dark-history/dia-2.png',
-              alt: 'DIA terminal interior view',
-            },
+              alt: 'DIA terminal interior view'
+            }
           ],
           location: {
             name: 'Denver International Airport',
       url: 'https://www.google.com/maps/search/?api=1&query=Denver%20International%20Airport%20Denver',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Conspiracy Theories Uncovered',
               publisher: 'Denver International Airport',
-              url: 'https://www.flydenver.com/art-exhibits/conspiracy-theories-uncovered/',
+              url: 'https://www.flydenver.com/art-exhibits/conspiracy-theories-uncovered/'
             },
             {
               type: 'documentary',
               title: 'Secrets of the Denver Airport',
               platform: 'Travel Channel',
               year: '2020',
-              url: 'https://www.travelchannel.com/shows/mysteries-at-the-museum/episodes/denver-airport-conspiracies',
+              url: 'https://www.travelchannel.com/shows/mysteries-at-the-museum/episodes/denver-airport-conspiracies'
             },
             {
               type: 'article',
               title: 'The wild conspiracy theories behind Denver\'s airport',
               publisher: 'Denver Post',
-              url: 'https://www.denverpost.com/2016/10/31/denver-airport-construction-conspiracy-humor/',
+              url: 'https://www.denverpost.com/2016/10/31/denver-airport-construction-conspiracy-humor/'
             },
             {
               type: 'podcast',
               title: 'Denver International Airport Conspiracy Theories',
               show: 'Conspiracy Theories Podcast',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/DIA-conspiracies',
-            },
-          ],
+              url: 'https://open.spotify.com/episode/DIA-conspiracies'
+            }
+          ]
         },
         {
           id: 'den-dark-14',
@@ -1868,29 +1752,29 @@ export const denver: CityData = {
               type: 'book',
               title: 'Internet Slavemaster: The True Story of John Robinson',
               author: 'John Glatt',
-              year: '2002',
+              year: '2002'
             },
             {
               type: 'article',
               title: 'John Edward Robinson',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/John_Edward_Robinson',
+              url: 'https://en.wikipedia.org/wiki/John_Edward_Robinson'
             },
             {
               type: 'documentary',
               title: 'The Slavemaster',
               platform: 'Investigation Discovery',
-              year: '2016',
+              year: '2016'
             }
           ],
           location: {
             name: 'Colburn Hotel (now apartments), Capitol Hill',
       url: 'https://www.google.com/maps/search/?api=1&query=Colburn%20Hotel%20(now%20apartments)%2C%20Capitol%20Hill%20Denver',
             coordinates: { lat: 39.7362, lng: -104.9786 },
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
     {
       id: 'denver-lost-and-loved',
@@ -1910,7 +1794,7 @@ export const denver: CityData = {
           whyMissed: 'The gyro plate at 3am, the fact that it never closed, and the radical egalitarianism of a place where tech bros sat next to drag queens sat next to electricians. Pete\'s didn\'t care who you were. It just fed you.',
           communityVoice: '"Pete\'s Kitchen was where Denver went when nowhere else was open—and when nowhere else would have you." — Westword',
           lastAddress: '1962 E Colfax Ave, Denver',
-          source: 'Denver Post, Westword',
+          source: 'Denver Post, Westword'
         },
         {
           id: 'denver-lost-6',
@@ -1923,7 +1807,7 @@ export const denver: CityData = {
           whyMissed: 'The sheer audacity of dancing to Ministry in a former house of worship, the goth nights that felt like high mass, and the fact that Denver had a venue weird enough to put a sushi bar in a church basement. The Church was proof that Denver could be strange.',
           communityVoice: '"The Church was where Denver\'s weirdos felt holy." — Westword',
           lastAddress: '1160 Lincoln St, Denver',
-          source: 'Westword, Denver Post',
+          source: 'Westword, Denver Post'
         },
         {
           id: 'denver-lost-8',
@@ -1938,20 +1822,20 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/lost-loved/elchap-1.png',
-              alt: 'El Chapultepec jazz club exterior in LoDo Denver',
+              alt: 'El Chapultepec jazz club exterior in LoDo Denver'
             },
             {
               src: '/denver/lost-loved/elchap-2.png',
-              alt: 'El Chapultepec interior with historic jazz memorabilia',
-            },
+              alt: 'El Chapultepec interior with historic jazz memorabilia'
+            }
           ],
           lastAddress: '1962 Market St, Denver',
-          source: 'Denver Post, DownBeat Magazine',
+          source: 'Denver Post, DownBeat Magazine'
         },
         {
           id: 'denver-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'denver-lost-5',
@@ -1965,10 +1849,10 @@ export const denver: CityData = {
           communityVoice: '"Tattered Cover on Colfax was where Denver learned that bookstores could be battlegrounds." — 5280 Magazine',
           image: {
             src: '/denver/lost-loved/tattered-1.png',
-            alt: 'Tattered Cover bookstore on Colfax Avenue',
+            alt: 'Tattered Cover bookstore on Colfax Avenue'
           },
           lastAddress: '2526 E Colfax Ave, Denver',
-          source: 'Denver Post, Publisher\'s Weekly',
+          source: 'Denver Post, Publisher\'s Weekly'
         },
         {
           id: 'denver-lost-1',
@@ -1982,10 +1866,10 @@ export const denver: CityData = {
           communityVoice: '"The Satire was the last real dive bar in Capitol Hill. Now there are none." — Westword',
           image: {
             src: 'https://tile.loc.gov/storage-services/service/pnp/mrg/01500/01571v.jpg',
-            alt: 'Satire Lounge neon sign on Colfax Avenue in Denver',
+            alt: 'Satire Lounge neon sign on Colfax Avenue in Denver'
           },
           lastAddress: '1920 E Colfax Ave, Denver',
-          source: 'Westword, Denver Post',
+          source: 'Westword, Denver Post'
         },
         // Reference: https://www.loc.gov/item/2017703685/
         {
@@ -2001,20 +1885,20 @@ export const denver: CityData = {
           images: [
             {
               src: '/denver/lost-loved/paris-1.png',
-              alt: 'Paris on the Platte cafe exterior along the Platte River',
+              alt: 'Paris on the Platte cafe exterior along the Platte River'
             },
             {
               src: '/denver/lost-loved/paris-2.png',
-              alt: 'Paris on the Platte charming patio and French ambiance',
-            },
+              alt: 'Paris on the Platte charming patio and French ambiance'
+            }
           ],
           lastAddress: '1553 Platte St, Denver',
-          source: 'Denver Post, Westword',
+          source: 'Denver Post, Westword'
         },
         {
           id: 'denver-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'denver-lost-2',
@@ -2028,10 +1912,10 @@ export const denver: CityData = {
           communityVoice: '"Bastien\'s was Denver\'s last real supper club—and we didn\'t know it until it was gone." — 5280 Magazine',
           image: {
             src: 'https://tile.loc.gov/storage-services/service/pnp/highsm/33600/33601v.jpg',
-            alt: 'Bastien\'s restaurant exterior featuring cocktails and sugar steak in Denver',
+            alt: 'Bastien\'s restaurant exterior featuring cocktails and sugar steak in Denver'
           },
           lastAddress: '3503 E Colfax Ave, Denver',
-          source: 'Denver Post, 5280 Magazine',
+          source: 'Denver Post, 5280 Magazine'
         },
         // Reference: https://www.loc.gov/item/2015633616/
         {
@@ -2045,9 +1929,9 @@ export const denver: CityData = {
           whyMissed: 'The architectural grandeur, the history soaked into the floorboards, and the fantasy that Denver once had a music scene that could compete with the coasts. The original Fillmore was proof.',
           communityVoice: '"The original Fillmore was where Denver danced during the war—and never quite danced like that again." — Denver Public Library',
           lastAddress: 'Clarkson St & Colfax Ave, Denver',
-          source: 'Denver Post, Colorado History',
-        },
-      ],
-    },
-  ],
+          source: 'Denver Post, Colorado History'
+        }
+      ]
+    }
+  ]
 }

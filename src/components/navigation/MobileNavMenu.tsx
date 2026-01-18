@@ -83,14 +83,41 @@ function MobileNavMenuContent({
 
       {isOpen && (
         <div className="absolute right-0 top-full mt-1 w-80 max-h-[85vh] overflow-y-auto py-2 bg-white rounded-lg shadow-xl border border-neutral-200 z-50">
-          {/* Current Context */}
-          {citySlug && currentSection && (
-            <div className="px-4 py-3 border-b border-neutral-100 bg-neutral-50">
-              <div className="text-xs font-medium text-neutral-500 uppercase tracking-wide mb-1">
-                Current
-              </div>
-              <div className="text-sm font-medium text-neutral-900">
-                {cityName} → {citySections.find((s) => s.id === currentSection)?.label}
+          {/* Current City Section - shown prominently at top when on a city page */}
+          {citySlug && cityName && (
+            <div className="px-4 py-4 border-b border-neutral-200 bg-gradient-to-b from-neutral-50 to-white">
+              <Link
+                href={routes.city(citySlug)}
+                onClick={closeMenu}
+                className="block mb-3"
+              >
+                <h2 className="font-serif text-2xl font-bold text-neutral-900 hover:text-[#c65d3b] transition-colors">
+                  {cityName}
+                </h2>
+              </Link>
+              {/* Section quick links for current city */}
+              <div className="flex flex-wrap gap-2">
+                {citySections.map((section) => {
+                  const href = section.id === 'articles'
+                    ? routes.city(citySlug)
+                    : buildCityUrl(citySlug, section.id, true)
+                  const isActive = section.id === currentSection
+
+                  return (
+                    <Link
+                      key={section.id}
+                      href={href}
+                      onClick={closeMenu}
+                      className={`px-3 py-1.5 text-sm rounded-full transition-colors ${
+                        isActive
+                          ? 'bg-[#c65d3b] text-white font-medium'
+                          : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                      }`}
+                    >
+                      {section.label}
+                    </Link>
+                  )
+                })}
               </div>
             </div>
           )}
@@ -124,24 +151,26 @@ function MobileNavMenuContent({
             </div>
           )}
 
-          {/* City Navigation */}
+          {/* Other Cities Navigation */}
           <div className="py-2">
             <div className="px-4 py-2 text-xs font-medium text-neutral-400 uppercase tracking-wide">
-              Cities
+              {citySlug ? 'Other Cities' : 'Cities'}
             </div>
-            {cities.map((city) => (
+            {cities
+              .filter((city) => city.slug !== citySlug) // Filter out current city
+              .map((city) => (
               <div key={city.slug}>
                 <button
                   onClick={() =>
                     setExpandedCity(expandedCity === city.slug ? null : city.slug)
                   }
-                  className={`flex items-center justify-between w-full px-4 py-2 text-sm text-left transition-colors ${
+                  className={`flex items-center justify-between w-full px-4 py-2.5 text-left transition-colors ${
                     expandedCity === city.slug
-                      ? 'bg-neutral-100 text-neutral-900 font-medium'
+                      ? 'bg-neutral-100 text-neutral-900'
                       : 'text-neutral-700 hover:bg-neutral-50'
                   }`}
                 >
-                  {city.name}
+                  <span className="font-serif text-lg font-semibold">{city.name}</span>
                   <svg
                     className={`w-4 h-4 text-neutral-400 transition-transform ${
                       expandedCity === city.slug ? 'rotate-180' : ''

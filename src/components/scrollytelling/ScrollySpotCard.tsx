@@ -34,37 +34,26 @@ export function ScrollySpotCard({ spot, rank, totalSpots, onNavigate, onViewGlob
         priceRange={spot.price}
         image={carouselImages[0]?.src}
       />
-      {/* Navigation Controls Bar - very compact on mobile */}
-      <div className="flex items-center justify-between px-2 py-0.5 sm:px-4 sm:py-3 border-b border-neutral-200 bg-neutral-50">
-        {/* Close button - goes back to map overview - always rust colored */}
-        <button
-          onClick={onViewGlobal}
-          className="md:hidden p-1 sm:p-2 text-[#c65d3b] hover:bg-white active:text-[#c65d3b] rounded-lg transition-colors"
-          title="Back to map overview"
-        >
-          <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-
-        <div className="flex items-center gap-1 sm:gap-2">
+      {/* Navigation Controls Bar - hidden on mobile, visible on desktop */}
+      <div className="hidden sm:flex items-center justify-between px-4 py-3 border-b border-neutral-200 bg-neutral-50">
+        <div className="flex items-center gap-2">
           <button
             onClick={() => onNavigate?.('prev')}
             disabled={rank === 1}
-            className="p-1 sm:p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            className="p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             title="Previous"
           >
-            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             onClick={() => onNavigate?.('next')}
             disabled={rank === totalSpots}
-            className="p-1 sm:p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            className="p-2 text-neutral-700 hover:text-[#c65d3b] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             title="Next"
           >
-            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>

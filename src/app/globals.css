@@ -10,8 +10,8 @@
   html {
     -webkit-tap-highlight-color: transparent;
     /* Removed scroll-behavior: smooth - Lenis handles smooth scrolling now */
-    /* Prevent iOS overscroll/bounce that can move entire viewport */
-    overscroll-behavior: none;
+    /* Prevent horizontal overscroll only - allow vertical for mobile touch */
+    overscroll-behavior-x: none;
     overflow-x: hidden;
   }
 
@@ -32,10 +32,12 @@
     line-height: 1.75;
     letter-spacing: -0.01em;
     @apply bg-[#f8f7f4] text-neutral-900 antialiased;
-    /* Prevent horizontal scroll and overscroll bounce on mobile */
-    overscroll-behavior: none;
+    /* Prevent horizontal scroll only - allow vertical overscroll for mobile */
+    overscroll-behavior-x: none;
     overflow-x: hidden;
     position: relative;
+    /* Enable smooth touch scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
   }
 
   h1, h2, h3, h4, h5, h6 {

@@ -89,8 +89,8 @@ export function LandingHeroSection({
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-br from-accent-900/20 via-transparent to-purple-900/10" />
 
-        {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-end pb-10 md:pb-14">
+        {/* Content - positioned near top on mobile, bottom on desktop */}
+        <div className="relative h-full container-page flex flex-col justify-start pt-10 sm:justify-end sm:pt-0 pb-10 md:pb-14">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - Branding */

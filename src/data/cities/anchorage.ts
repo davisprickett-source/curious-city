@@ -8,7 +8,7 @@ export const anchorage: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Anchorage — Alaska\'s largest city, where moose wander through neighborhoods and the mountains are always watching. Here\'s what we\'re curious about.',
+      content: 'Welcome to Anchorage — Alaska\'s largest city, where moose wander through neighborhoods and the mountains are always watching. Here\'s what we\'re curious about.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const anchorage: CityData = {
       description: 'A city that exists to service the wilderness while being nothing like it.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/anchorage/essay/the-last-frontier-city',
+      href: '/anchorage/essay/the-last-frontier-city'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const anchorage: CityData = {
           title: 'Flattop Mountain: The Essential Hike',
           description: 'The most popular trail in Alaska, and worth doing anyway.',
           meta: 'Guide',
-          href: '/anchorage/flattop',
+          href: '/anchorage/flattop'
         },
         {
           title: 'How the PFD Works',
           description: 'Understanding Alaska\'s annual oil dividend check.',
           meta: 'Explainer',
-          href: '/anchorage/pfd-explained',
+          href: '/anchorage/pfd-explained'
         },
         {
           title: 'Best Places to See Northern Lights Near Town',
           description: 'Dark sky spots within an hour of downtown.',
           meta: 'List',
           variant: 'compact',
-          href: '/anchorage/northern-lights',
-        },
-      ],
+          href: '/anchorage/northern-lights'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'anchorage-curiosities',
@@ -71,11 +71,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/surf-1.png',
-              alt: 'Alaska coastal inlet with mountains',
+              alt: 'Alaska coastal inlet with mountains'
             },
             {
               src: '/anchorage/curiosities/surf-2.png',
-              alt: 'Turnagain Arm landscape where bore tide occurs',
+              alt: 'Turnagain Arm landscape where bore tide occurs'
             }
           ],
           sources: [
@@ -83,9 +83,9 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Turnagain Arm Bore Tide Safety',
               publisher: 'Alaska Department of Natural Resources',
-              url: 'https://dnr.alaska.gov/parks/units/chugach/boretide.htm',
-            },
-          ],
+              url: 'https://dnr.alaska.gov/parks/units/chugach/boretide.htm'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-3',
@@ -96,11 +96,11 @@ export const anchorage: CityData = {
                     images: [
             {
               src: '/anchorage/curiosities/cia-1.png',
-              alt: 'Remote Alaska wilderness where Cold War operations took place',
+              alt: 'Remote Alaska wilderness where Cold War operations took place'
             },
             {
               src: '/anchorage/curiosities/cia-2.png',
-              alt: 'Aerial view of remote Alaska terrain',
+              alt: 'Aerial view of remote Alaska terrain'
             }
           ],
           sources: [
@@ -108,14 +108,14 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Operation Washtub',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Operation_Washtub',
-            },
-          ],
+              url: 'https://en.wikipedia.org/wiki/Operation_Washtub'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'anc-curiosity-2',
@@ -127,13 +127,13 @@ export const anchorage: CityData = {
             {
               src: '/anchorage/curiosities/urban-moose.jpg',
               alt: 'Moose in Anchorage',
-              credit: 'Wikimedia Commons',
+              credit: 'Wikimedia Commons'
             },
             {
               src: '/anchorage/curiosities/moose-2.png',
-              alt: 'Wildlife in Alaska urban setting',
+              alt: 'Wildlife in Alaska urban setting'
             }
-          ],
+          ]
         },
         {
           id: 'anc-curiosity-outhouse',
@@ -144,35 +144,35 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/anchorage-curious-outhouse-race-1.png',
-              alt: 'Outhouse race during Fur Rendezvous festival',
+              alt: 'Outhouse race during Fur Rendezvous festival'
             },
             {
               src: '/anchorage/curiosities/anchorage-curious-outhouse-race-2.png',
-              alt: 'Teams racing outhouses down snowy streets',
-            },
+              alt: 'Teams racing outhouses down snowy streets'
+            }
           ],
           sources: [
             {
               title: 'History of Fur Rendezvous',
               publisher: 'Anchorage Fur Rendezvous',
-              url: 'https://www.furrondy.net/history/',
+              url: 'https://www.furrondy.net/history/'
             },
             {
               title: 'Fur Rendezvous Festival',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Fur_Rendezvous_Festival',
-            },
+              url: 'https://en.wikipedia.org/wiki/Fur_Rendezvous_Festival'
+            }
           ],
           location: {
             name: 'Downtown Anchorage',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Anchorage%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'anc-curiosity-qiviut',
@@ -183,39 +183,39 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/anchorage-curious-ox-yarn-1.png',
-              alt: 'Qiviut musk ox wool yarn',
+              alt: 'Qiviut musk ox wool yarn'
             },
             {
               src: '/anchorage/curiosities/anchorage-curious-ox-yarn-2.png',
-              alt: 'Soft qiviut fiber from musk oxen',
+              alt: 'Soft qiviut fiber from musk oxen'
             },
             {
               src: '/anchorage/curiosities/anchorage-curious-ox-yarn-3.png',
-              alt: 'Hand-knitted qiviut products',
-            },
+              alt: 'Hand-knitted qiviut products'
+            }
           ],
           sources: [
             {
               title: 'Qiviut',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Qiviut',
+              url: 'https://en.wikipedia.org/wiki/Qiviut'
             },
             {
               title: 'Oomingmak - Original Alaskan Qiviut Handknits Store',
               publisher: 'Oomingmak',
-              url: 'https://www.qiviut.com/',
+              url: 'https://www.qiviut.com/'
             },
             {
               title: 'Hand-Combed Qiviut: A Rare Luxury from Alaska',
               publisher: 'Spin Off Magazine',
-              url: 'https://spinoffmagazine.com/hand-combed-qiviut/',
-            },
+              url: 'https://spinoffmagazine.com/hand-combed-qiviut/'
+            }
           ],
           location: {
             name: 'Anchorage (Oomingmak Co-op)',
       url: 'https://www.google.com/maps/search/?api=1&query=Anchorage%20(Oomingmak%20Co-op)%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-curiosity-8',
@@ -226,11 +226,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-salmon-1.png',
-              alt: 'Salmon swimming in Ship Creek in downtown Anchorage',
+              alt: 'Salmon swimming in Ship Creek in downtown Anchorage'
             },
             {
               src: '/anchorage/curiosities/curious-salmon-2.png',
-              alt: 'Urban salmon fishing at Ship Creek',
+              alt: 'Urban salmon fishing at Ship Creek'
             }
           ],
           location: {
@@ -238,8 +238,8 @@ export const anchorage: CityData = {
       url: 'https://www.google.com/maps/search/?api=1&query=Ship%20Creek%2C%20Downtown%20Anchorage%20Anchorage',
             coordinates: { lat: 61.2213, lng: -149.8776 },
             mapUrl: 'https://maps.app.goo.gl/zWPvYCVhKBsVqjmj7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-curiosity-4',
@@ -250,7 +250,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/PFD.png',
-              alt: 'Alaska Permanent Fund Dividend check',
+              alt: 'Alaska Permanent Fund Dividend check'
             }
           ],
           sources: [
@@ -258,9 +258,9 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'About the Permanent Fund Dividend',
               publisher: 'Alaska Department of Revenue',
-              url: 'https://pfd.alaska.gov/',
-            },
-          ],
+              url: 'https://pfd.alaska.gov/'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-9',
@@ -271,13 +271,13 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-solar-1.png',
-              alt: 'Endless daylight during Alaska summer solstice',
+              alt: 'Endless daylight during Alaska summer solstice'
             },
             {
               src: '/anchorage/curiosities/curious-solar-2.png',
-              alt: 'Midnight sun over Anchorage',
+              alt: 'Midnight sun over Anchorage'
             }
-          ],
+          ]
         },
         {
           id: 'anc-curiosity-10',
@@ -288,7 +288,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/mountain-view-diversity.png',
-              alt: 'Diverse Mountain View neighborhood in Anchorage',
+              alt: 'Diverse Mountain View neighborhood in Anchorage'
             }
           ],
           sources: [
@@ -296,9 +296,9 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Anchorage School District Language Demographics',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Mountain_View,_Anchorage',
-            },
-          ],
+              url: 'https://en.wikipedia.org/wiki/Mountain_View,_Anchorage'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-7',
@@ -309,11 +309,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/plainport-1.png',
-              alt: 'Floatplane on Alaska lake',
+              alt: 'Floatplane on Alaska lake'
             },
             {
               src: '/anchorage/curiosities/plainport-2.png',
-              alt: 'Seaplane in Alaska wilderness',
+              alt: 'Seaplane in Alaska wilderness'
             }
           ],
           sources: [
@@ -321,15 +321,15 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Lake Hood Seaplane Base',
               publisher: 'FAA',
-              url: 'https://www.faa.gov/airports/alaskan/facilities/lakehood',
-            },
+              url: 'https://www.faa.gov/airports/alaskan/facilities/lakehood'
+            }
           ],
           location: {
             name: 'Lake Hood',
       url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Hood%20Anchorage',
             coordinates: { lat: 61.1811, lng: -149.9694 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-curiosity-12',
@@ -340,11 +340,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/tokyo-miami-1.png',
-              alt: 'Global flight path diagram showing Anchorage location',
+              alt: 'Global flight path diagram showing Anchorage location'
             },
             {
               src: '/anchorage/curiosities/tokyo-miami-2.png',
-              alt: 'Ted Stevens Airport cargo operations',
+              alt: 'Ted Stevens Airport cargo operations'
             }
           ],
           sources: [
@@ -352,9 +352,9 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Ted Stevens Anchorage International Airport',
               publisher: 'ANC Airport',
-              url: 'https://www.ancairport.com/',
-            },
-          ],
+              url: 'https://www.ancairport.com/'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-13',
@@ -366,7 +366,7 @@ export const anchorage: CityData = {
             {
               src: '/anchorage/curiosities/iditarod-start.jpg',
               alt: 'Ceremonial start of the Iditarod in downtown Anchorage',
-              credit: 'Wikimedia Commons',
+              credit: 'Wikimedia Commons'
             }
           ],
           sources: [
@@ -374,9 +374,9 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Ceremonial Start',
               publisher: 'Iditarod Trail Committee',
-              url: 'https://iditarod.com/race/ceremonial-start/',
-            },
-          ],
+              url: 'https://iditarod.com/race/ceremonial-start/'
+            }
+          ]
         },
         {
           id: 'anc-curiosity-14',
@@ -387,12 +387,12 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/anchorage-curious-capital.png',
-              alt: 'Alaska capital move referendum history',
-            },
+              alt: 'Alaska capital move referendum history'
+            }
           ],
-          source: 'Alaska State Legislature',
-        },
-      ],
+          source: 'Alaska State Legislature'
+        }
+      ]
     },
     {
       id: 'iconic-spots',
@@ -410,7 +410,7 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.1017, lng: -149.6831 },
           hours: 'Dawn to dusk',
           price: '$5 parking fee',
-          tip: 'Go early on weekends — parking fills up fast',
+          tip: 'Go early on weekends — parking fills up fast'
         },
         {
           id: 'iconic-2',
@@ -422,7 +422,7 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.2181, lng: -149.9003 },
           hours: '24 hours',
           price: 'Free',
-          tip: 'Rent bikes from downtown and ride to Kincaid',
+          tip: 'Rent bikes from downtown and ride to Kincaid'
         },
         {
           id: 'iconic-3',
@@ -435,7 +435,7 @@ export const anchorage: CityData = {
           hours: 'Tue-Sun 10am-6pm',
           price: '$20 adults',
           website: 'https://anchoragemuseum.org',
-          tip: 'First Friday of each month is pay-what-you-wish',
+          tip: 'First Friday of each month is pay-what-you-wish'
         },
         {
           id: 'iconic-4',
@@ -447,9 +447,9 @@ export const anchorage: CityData = {
           coordinates: { lat: 61.1811, lng: -149.9694 },
           hours: 'Best viewing in summer, dawn to dusk',
           price: 'Free to watch',
-          tip: 'Rust\'s Flying Service offers excellent glacier tours',
-        },
-      ],
+          tip: 'Rust\'s Flying Service offers excellent glacier tours'
+        }
+      ]
     },
     {
       id: 'anc-hidden-gems',
@@ -469,18 +469,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/nike-site-1.png',
-              alt: 'Abandoned Cold War military installation on mountaintop',
+              alt: 'Abandoned Cold War military installation on mountaintop'
             },
             {
               src: '/anchorage/hidden-gems/nike-site-2.png',
-              alt: 'Nike Site Summit Cold War bunker remains',
-            },
+              alt: 'Nike Site Summit Cold War bunker remains'
+            }
           ],
           address: 'Mount Gordon Lyon, 12.5 miles east of downtown',
           coordinates: { lat: 61.24, lng: -149.66 },
           hours: 'Tours only through Joint Base Elmendorf-Richardson',
           price: 'Varies by tour',
-          tip: 'Tours book out weeks in advance during summer—check the JBER recreation website early.',
+          tip: 'Tours book out weeks in advance during summer—check the JBER recreation website early.'
         },
         {
           id: 'gem-cultural-1',
@@ -493,18 +493,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/eklutna-1.png',
-              alt: 'Colorful spirit houses in cemetery setting',
+              alt: 'Colorful spirit houses in cemetery setting'
             },
             {
               src: '/anchorage/hidden-gems/eklutna-2.png',
-              alt: 'Eklutna Spirit Houses with Russian Orthodox church',
-            },
+              alt: 'Eklutna Spirit Houses with Russian Orthodox church'
+            }
           ],
           address: 'St. Nicholas Russian Orthodox Church, Eklutna Village (25 miles north)',
           coordinates: { lat: 61.46, lng: -149.35 },
           hours: 'Open daily',
           price: 'Small donation appreciated',
-          tip: 'The Heritage House offers guided tours that explain the traditions in depth. Photography is allowed but keep your voice down—this is an active cemetery.',
+          tip: 'The Heritage House offers guided tours that explain the traditions in depth. Photography is allowed but keep your voice down—this is an active cemetery.'
         },
         {
           id: 'gem-earthquake-1',
@@ -517,15 +517,15 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/quake-park-2.png',
-              alt: 'Earthquake Park interpretive trail and terrain showing 1964 damage',
-            },
+              alt: 'Earthquake Park interpretive trail and terrain showing 1964 damage'
+            }
           ],
           address: 'Earthquake Park, West Northern Lights Blvd',
           coordinates: { lat: 61.20, lng: -149.98 },
           hours: 'Open daily',
           price: 'Free',
           website: 'https://www.muni.org/parks',
-          tip: 'The Tony Knowles Coastal Trail runs through the park—you can bike here from downtown in 20 minutes.',
+          tip: 'The Tony Knowles Coastal Trail runs through the park—you can bike here from downtown in 20 minutes.'
         },
         {
           id: 'gem-wildlife-2',
@@ -538,15 +538,15 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-conservation-1.png',
-              alt: 'Brown bear at Alaska Wildlife Conservation Center',
+              alt: 'Brown bear at Alaska Wildlife Conservation Center'
             },
             {
               src: '/anchorage/curiosities/curious-conservation-2.png',
-              alt: 'Musk ox at wildlife center',
+              alt: 'Musk ox at wildlife center'
             },
             {
               src: '/anchorage/curiosities/curious-conservation-3.png',
-              alt: 'Alaska Wildlife Conservation Center animals',
+              alt: 'Alaska Wildlife Conservation Center animals'
             }
           ],
           address: 'Mile 79 Seward Highway, Girdwood, AK 99587',
@@ -554,7 +554,7 @@ export const anchorage: CityData = {
           hours: 'Daily 10am-5pm',
           price: '$15 adults',
           website: 'https://alaskawildlife.org',
-          tip: 'Time your drive for the bore tide if possible—you pass Beluga Point on the way. The musk oxen are most active in cooler weather.',
+          tip: 'Time your drive for the bore tide if possible—you pass Beluga Point on the way. The musk oxen are most active in cooler weather.'
         },
         {
           id: 'gem-museum-1',
@@ -565,18 +565,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/lithuanian-1.png',
-              alt: 'Small historic house museum with traditional artifacts',
+              alt: 'Small historic house museum with traditional artifacts'
             },
             {
               src: '/anchorage/hidden-gems/lithuanian-2.png',
-              alt: 'Lithuanian folk costumes and artifacts collection',
-            },
+              alt: 'Lithuanian folk costumes and artifacts collection'
+            }
           ],
           address: 'Chugiak (contact for exact location)',
           coordinates: { lat: 61.39, lng: -149.47 },
           hours: 'By appointment only, June-September',
           price: 'Free',
-          tip: 'Call ahead and bring questions—Svaja has stories that aren\'t in any history books.',
+          tip: 'Call ahead and bring questions—Svaja has stories that aren\'t in any history books.'
         },
         {
           id: 'gem-museum-2',
@@ -587,11 +587,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-police-1.png',
-              alt: 'Historic police car and law enforcement memorabilia',
+              alt: 'Historic police car and law enforcement memorabilia'
             },
             {
               src: '/anchorage/curiosities/curious-police-2.png',
-              alt: 'Alaska Law Enforcement Museum exhibits',
+              alt: 'Alaska Law Enforcement Museum exhibits'
             }
           ],
           address: '245 W 5th Ave, downtown Anchorage',
@@ -599,12 +599,12 @@ export const anchorage: CityData = {
           hours: 'Wed-Fri 10am-4pm, Sat 12-5pm (closed Sun-Tue)',
           price: '$5 ($3 for military, law enforcement, youth, seniors)',
           website: 'https://foast.org/museum',
-          tip: 'Ask about the territorial period—the stories of pre-statehood law enforcement are wilder than anything in the displays.',
+          tip: 'Ask about the territorial period—the stories of pre-statehood law enforcement are wilder than anything in the displays.'
         },
         {
           id: 'anc-gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-nature-1',
@@ -617,18 +617,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-campbell-2.png',
-              alt: 'Campbell Creek gorge overlook with canyon view',
+              alt: 'Campbell Creek gorge overlook with canyon view'
             },
             {
               src: '/anchorage/curiosities/curious-campbell-1.png',
-              alt: 'Creek flowing through narrow canyon with steep cliffs',
+              alt: 'Creek flowing through narrow canyon with steep cliffs'
             }
           ],
           address: 'Accessible from Hillside Ski Chalet parking or North Bivouac Trailhead',
           coordinates: { lat: 61.10, lng: -149.71 },
           hours: 'Dawn to dusk',
           price: 'Free',
-          tip: 'The overlook is unfenced and the drop is real—keep back from the edge, especially in wet conditions.',
+          tip: 'The overlook is unfenced and the drop is real—keep back from the edge, especially in wet conditions.'
         },
         {
           id: 'gem-aurora-1',
@@ -641,18 +641,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-glenalps1.png',
-              alt: 'Mountain overlook with aurora borealis in night sky',
+              alt: 'Mountain overlook with aurora borealis in night sky'
             },
             {
               src: '/anchorage/curiosities/curious-glenalps2.png',
-              alt: 'Glen Alps viewpoint for northern lights',
+              alt: 'Glen Alps viewpoint for northern lights'
             }
           ],
           address: 'Glen Alps Trailhead, Chugach State Park',
           coordinates: { lat: 61.102, lng: -149.676 },
           hours: '24/7; best viewing near midnight Aug-Apr',
           price: '$5 parking fee',
-          tip: 'The University of Alaska Fairbanks aurora forecast is gospel—check it before driving up. Bring hand warmers; it\'s 15-20 degrees colder than downtown.',
+          tip: 'The University of Alaska Fairbanks aurora forecast is gospel—check it before driving up. Bring hand warmers; it\'s 15-20 degrees colder than downtown.'
         },
         {
           id: 'gem-wildlife-1',
@@ -665,19 +665,19 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/shipcreek-1.png',
-              alt: 'Salmon swimming upstream in urban creek setting',
+              alt: 'Salmon swimming upstream in urban creek setting'
             },
             {
               src: '/anchorage/hidden-gems/shipcreek-2.png',
-              alt: 'Ship Creek urban salmon viewing area',
-            },
+              alt: 'Ship Creek urban salmon viewing area'
+            }
           ],
           address: 'Ship Creek Overlook Park, East Whitney Road',
           coordinates: { lat: 61.2213, lng: -149.8776 },
           hours: 'Open daily; best July-September',
           price: 'Free (fishing license required to fish)',
           website: 'https://www.alaska.org/detail/salmon-viewing-at-ship-creek',
-          tip: 'Peak salmon runs happen mid-July through August. The combat fishing (shoulder-to-shoulder anglers) is part of the spectacle.',
+          tip: 'Peak salmon runs happen mid-July through August. The combat fishing (shoulder-to-shoulder anglers) is part of the spectacle.'
         },
         {
           id: 'gem-nature-2',
@@ -690,11 +690,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-wave-1.png',
-              alt: 'Tidal bore wave rushing through narrow inlet',
+              alt: 'Tidal bore wave rushing through narrow inlet'
             },
             {
               src: '/anchorage/curiosities/curious-wave-main-0.png',
-              alt: 'Turnagain Arm bore tide wave phenomenon',
+              alt: 'Turnagain Arm bore tide wave phenomenon'
             }
           ],
           address: 'Best viewing: Beluga Point (20 min south of Anchorage)',
@@ -702,7 +702,7 @@ export const anchorage: CityData = {
           hours: 'Check tide charts; arrive 30 min before predicted arrival',
           price: 'Free to view',
           website: 'https://www.alaska.org/advice/alaska-bore-tide',
-          tip: 'NEVER walk on the mudflats. The glacial silt acts like quicksand and has killed people who wandered out. Watch from solid ground only.',
+          tip: 'NEVER walk on the mudflats. The glacial silt acts like quicksand and has killed people who wandered out. Watch from solid ground only.'
         },
         {
           id: 'gem-quirky-1',
@@ -715,11 +715,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-chocolate-1.png',
-              alt: 'Large chocolate waterfall display in factory setting',
+              alt: 'Large chocolate waterfall display in factory setting'
             },
             {
               src: '/anchorage/curiosities/curious-chocolate-2.png',
-              alt: 'Alaska Wild Berry Products chocolate waterfall',
+              alt: 'Alaska Wild Berry Products chocolate waterfall'
             }
           ],
           address: 'Alaska Wild Berry Products, 5225 Juneau Street',
@@ -727,7 +727,7 @@ export const anchorage: CityData = {
           hours: 'Store hours (typically 9am-7pm)',
           price: 'Free to view',
           website: 'https://akwildberry.com',
-          tip: 'Factory tours explain how they keep 3,000 pounds of chocolate at the perfect temperature year-round. The fudge is worth buying.',
+          tip: 'Factory tours explain how they keep 3,000 pounds of chocolate at the perfect temperature year-round. The fudge is worth buying.'
         },
         {
           id: 'gem-trail-1',
@@ -740,24 +740,24 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/curious-solar-planet-walk-1.png',
-              alt: 'Planet model markers along urban trail',
+              alt: 'Planet model markers along urban trail'
             },
             {
               src: '/anchorage/hidden-gems/curious-solar-planet-walk-2.png',
-              alt: 'Anchorage Light Speed Planet Walk solar system model',
-            },
+              alt: 'Anchorage Light Speed Planet Walk solar system model'
+            }
           ],
           address: 'Starts: 5th Ave & G Street (The Sun)',
           coordinates: { lat: 61.2176, lng: -149.8894 },
           hours: '24/7',
           price: 'Free',
           website: 'https://anchorageplanetwalk.org',
-          tip: 'Rent bikes downtown and ride the coastal trail to the outer planets. You can reach Saturn in about an hour.',
+          tip: 'Rent bikes downtown and ride the coastal trail to the outer planets. You can reach Saturn in about an hour.'
         },
         {
           id: 'anc-gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-history-1',
@@ -768,18 +768,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-andersonhouse-1.png',
-              alt: 'Historic wood-frame house from early 1900s',
+              alt: 'Historic wood-frame house from early 1900s'
             },
             {
               src: '/anchorage/curiosities/curious-andersonhouse-3.png',
-              alt: 'Oscar Anderson House Museum interior',
+              alt: 'Oscar Anderson House Museum interior'
             }
           ],
           address: '420 M Street, Elderberry Park, downtown',
           coordinates: { lat: 61.2159, lng: -149.8967 },
           hours: 'Varies seasonally; 45-minute guided tours',
           price: '$7-10',
-          tip: 'Combine with a walk on the Tony Knowles Coastal Trail, which starts right outside.',
+          tip: 'Combine with a walk on the Tony Knowles Coastal Trail, which starts right outside.'
         },
         {
           id: 'gem-cultural-2',
@@ -790,11 +790,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/curiosities/curious-names-1.png',
-              alt: 'Indigenous cultural markers along trail',
+              alt: 'Indigenous cultural markers along trail'
             },
             {
               src: '/anchorage/curiosities/curious-names2.png',
-              alt: 'Dena\'ina place names project markers',
+              alt: 'Dena\'ina place names project markers'
             }
           ],
           address: 'Multiple locations: Westchester Lagoon, Muldoon Park, Potter Marsh, Point Woronzof',
@@ -802,9 +802,9 @@ export const anchorage: CityData = {
           hours: 'Park hours',
           price: 'Free',
           website: 'https://anchorageparkfoundation.org/indigenous-placemaking',
-          tip: 'Download the project map from the Anchorage Park Foundation website to find all 32 markers.',
-        },
-      ],
+          tip: 'Download the project map from the Anchorage Park Foundation website to find all 32 markers.'
+        }
+      ]
     },
     {
       id: 'anc-best-bars',
@@ -828,24 +828,24 @@ export const anchorage: CityData = {
             {
               title: 'Blues Central',
               publisher: 'Williwaw Social',
-              url: 'https://williwawsocial.com/',
-            },
+              url: 'https://williwawsocial.com/'
+            }
           ],
           instagram: '@williwawsocial',
           images: [
             {
               src: '/anchorage/bars/blues-central-1.jpg',
-              alt: '1920s-style speakeasy with vintage lighting and rock icons',
+              alt: '1920s-style speakeasy with vintage lighting and rock icons'
             },
             {
               src: '/anchorage/establishments/blues-1.png',
-              alt: 'Blues Central speakeasy interior',
+              alt: 'Blues Central speakeasy interior'
             },
             {
               src: '/anchorage/establishments/blues-2.png',
-              alt: 'Blues Central atmosphere',
+              alt: 'Blues Central atmosphere'
             }
-          ],
+          ]
         },
         {
           name: '49th State Brewing',
@@ -862,13 +862,13 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/bars/49th-state-1.jpg',
-              alt: 'Craft brewery tap handles',
+              alt: 'Craft brewery tap handles'
             },
             {
               src: '/anchorage/bars/49th-state-2.jpg',
-              alt: 'Brewpub interior with rustic decor',
+              alt: 'Brewpub interior with rustic decor'
             }
-          ],
+          ]
         },
         {
           name: 'Glacier Brewhouse',
@@ -884,8 +884,8 @@ export const anchorage: CityData = {
           instagram: '@glacierbrewhouse',
           images: [
             { src: '/anchorage/bars/anchorage-bars-brewhouse-1.png', alt: 'Glacier Brewhouse interior fireplace' },
-            { src: '/anchorage/bars/anchorage-bars-brewhouse-2.png', alt: 'Brewing equipment' },
-          ],
+            { src: '/anchorage/bars/anchorage-bars-brewhouse-2.png', alt: 'Brewing equipment' }
+          ]
         },
         {
           name: 'Darwin\'s Theory',
@@ -902,13 +902,13 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/darin-1.png',
-              alt: 'Darwin\'s Theory bar exterior',
+              alt: 'Darwin\'s Theory bar exterior'
             },
             {
               src: '/anchorage/establishments/darwin-2.png',
-              alt: 'Darwin\'s Theory bar atmosphere',
+              alt: 'Darwin\'s Theory bar atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Williwaw Social',
@@ -925,17 +925,17 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/bars/williwaw-1.jpg',
-              alt: 'Live music venue stage with lighting',
+              alt: 'Live music venue stage with lighting'
             },
             {
               src: '/anchorage/bars/williwaw-2.jpg',
-              alt: 'Concert venue interior with crowd',
+              alt: 'Concert venue interior with crowd'
             },
             {
               src: '/anchorage/bars/williwaw-3.jpg',
-              alt: 'Williwaw concert venue with stage',
+              alt: 'Williwaw concert venue with stage'
             }
-          ],
+          ]
         },
         {
           name: 'Midnight Sun Brewing Company',
@@ -951,15 +951,15 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/hidden-gems/midnight-sun-1.png',
-              alt: 'Craft brewery tap room with beer selection',
+              alt: 'Craft brewery tap room with beer selection'
             },
             {
               src: '/anchorage/hidden-gems/midnigh-sun-2.png',
-              alt: 'Brewery equipment and tanks',
+              alt: 'Brewery equipment and tanks'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     },
     {
       id: 'anc-best-restaurants',
@@ -983,18 +983,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/simon-1.png',
-              alt: 'Simon & Seafort\'s restaurant interior',
+              alt: 'Simon & Seafort\'s restaurant interior'
             },
             {
               src: '/anchorage/establishments/simon-2.png',
-              alt: 'Simon & Seafort\'s dining room',
+              alt: 'Simon & Seafort\'s dining room'
             },
             {
               src: '/anchorage/establishments/simon-3.png',
-              alt: 'Simon & Seafort\'s atmosphere',
+              alt: 'Simon & Seafort\'s atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/simon-menu.png', alt: 'Simon & Seafort\'s menu' },
+          menuImage: { src: '/anchorage/establishments/simon-menu.png', alt: 'Simon & Seafort\'s menu' }
         },
         {
           name: 'Moose\'s Tooth Pub & Pizzeria',
@@ -1011,18 +1011,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/moosetooth-1.png',
-              alt: 'Moose\'s Tooth restaurant exterior',
+              alt: 'Moose\'s Tooth restaurant exterior'
             },
             {
               src: '/anchorage/establishments/moosetooth-2.png',
-              alt: 'Moose\'s Tooth interior and dining area',
+              alt: 'Moose\'s Tooth interior and dining area'
             },
             {
               src: '/anchorage/establishments/moosetooth-3.png',
-              alt: 'Moose\'s Tooth pizzeria atmosphere',
+              alt: 'Moose\'s Tooth pizzeria atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/moosetooth-menu-1.png', alt: 'Moose\'s Tooth menu' },
+          menuImage: { src: '/anchorage/establishments/moosetooth-menu-1.png', alt: 'Moose\'s Tooth menu' }
         },
         {
           name: 'Snow City Cafe',
@@ -1039,18 +1039,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/snowcity-1.png',
-              alt: 'Snow City Cafe exterior',
+              alt: 'Snow City Cafe exterior'
             },
             {
               src: '/anchorage/establishments/snowcity-2.png',
-              alt: 'Snow City Cafe interior dining area',
+              alt: 'Snow City Cafe interior dining area'
             },
             {
               src: '/anchorage/establishments/snowcity-3.png',
-              alt: 'Snow City Cafe atmosphere',
+              alt: 'Snow City Cafe atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/snowcity-menu.png', alt: 'Snow City Cafe menu' },
+          menuImage: { src: '/anchorage/establishments/snowcity-menu.png', alt: 'Snow City Cafe menu' }
         },
         {
           name: 'Spenard Roadhouse',
@@ -1067,18 +1067,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/spenard-roadhouse-1.png',
-              alt: 'Spenard Roadhouse exterior',
+              alt: 'Spenard Roadhouse exterior'
             },
             {
               src: '/anchorage/establishments/spenard-roadhouse-2.png',
-              alt: 'Spenard Roadhouse interior dining',
+              alt: 'Spenard Roadhouse interior dining'
             },
             {
               src: '/anchorage/establishments/spenard-roadhouse-3.png',
-              alt: 'Spenard Roadhouse atmosphere',
+              alt: 'Spenard Roadhouse atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/spenard-roadhouse-menu.png', alt: 'Spenard Roadhouse menu' },
+          menuImage: { src: '/anchorage/establishments/spenard-roadhouse-menu.png', alt: 'Spenard Roadhouse menu' }
         },
         {
           name: 'Kinley\'s Restaurant',
@@ -1096,16 +1096,16 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/kinleys-1.png',
-              alt: 'Kinley\'s Restaurant interior',
+              alt: 'Kinley\'s Restaurant interior'
             },
             {
               src: '/anchorage/establishments/kinleys-2.png',
-              alt: 'Kinley\'s fine dining atmosphere',
+              alt: 'Kinley\'s fine dining atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/kinleys-menu.png', alt: 'Kinley\'s menu' },
-        },
-      ],
+          menuImage: { src: '/anchorage/establishments/kinleys-menu.png', alt: 'Kinley\'s menu' }
+        }
+      ]
     },
     {
       id: 'anc-best-coffee-shops',
@@ -1129,17 +1129,17 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/coffee-shops/kaladi-1.jpg',
-              alt: 'Coffee roasting equipment',
+              alt: 'Coffee roasting equipment'
             },
             {
               src: '/anchorage/coffee-shops/kaladi-2.jpg',
-              alt: 'Fresh roasted coffee beans',
+              alt: 'Fresh roasted coffee beans'
             },
             {
               src: '/anchorage/coffee-shops/kaladi-3.jpg',
-              alt: 'Classic coffee shop latte',
+              alt: 'Classic coffee shop latte'
             }
-          ],
+          ]
         },
         {
           name: 'SteamDot Coffee Roasters',
@@ -1156,18 +1156,18 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/steamdot-1.png',
-              alt: 'SteamDot Coffee Roasters interior',
+              alt: 'SteamDot Coffee Roasters interior'
             },
             {
               src: '/anchorage/establishments/steamdot-2.png',
-              alt: 'SteamDot coffee preparation',
+              alt: 'SteamDot coffee preparation'
             },
             {
               src: '/anchorage/establishments/steamdot-3.png',
-              alt: 'SteamDot atmosphere',
+              alt: 'SteamDot atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/steamdot-menu-1.png', alt: 'SteamDot Coffee menu' },
+          menuImage: { src: '/anchorage/establishments/steamdot-menu-1.png', alt: 'SteamDot Coffee menu' }
         },
         {
           name: 'Dark Horse Coffee Co.',
@@ -1184,26 +1184,26 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/coffee-shops/dark-horse-1.jpg',
-              alt: 'Espresso machine at coffee shop',
+              alt: 'Espresso machine at coffee shop'
             },
             {
               src: '/anchorage/coffee-shops/dark-horse-2.jpg',
-              alt: 'Cozy cafe with warm lighting',
+              alt: 'Cozy cafe with warm lighting'
             },
             {
               src: '/anchorage/establishments/dark-horse1.png',
-              alt: 'Dark Horse Coffee exterior',
+              alt: 'Dark Horse Coffee exterior'
             },
             {
               src: '/anchorage/establishments/dark-horse2.png',
-              alt: 'Dark Horse Coffee interior',
+              alt: 'Dark Horse Coffee interior'
             },
             {
               src: '/anchorage/establishments/dark-horse3.png',
-              alt: 'Dark Horse Coffee atmosphere',
+              alt: 'Dark Horse Coffee atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/dark-horse-menu.png', alt: 'Dark Horse Coffee menu' },
+          menuImage: { src: '/anchorage/establishments/dark-horse-menu.png', alt: 'Dark Horse Coffee menu' }
         },
         {
           name: 'The Kobuk Coffee Company',
@@ -1220,17 +1220,17 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/coffee-shops/kobuk-1.jpg',
-              alt: 'Bookstore cafe with vintage character',
+              alt: 'Bookstore cafe with vintage character'
             },
             {
               src: '/anchorage/coffee-shops/kobuk-2.jpg',
-              alt: 'Classic vintage coffee shop interior',
+              alt: 'Classic vintage coffee shop interior'
             },
             {
               src: '/anchorage/coffee-shops/kobuk-3.jpg',
-              alt: 'Coffee and pastries display',
+              alt: 'Coffee and pastries display'
             }
-          ],
+          ]
         },
         {
           name: 'Spenard Joe\'s Coffee',
@@ -1247,14 +1247,14 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/spenardjoes-2.png',
-              alt: 'Spenard Joe\'s Coffee interior',
+              alt: 'Spenard Joe\'s Coffee interior'
             },
             {
               src: '/anchorage/establishments/spenardjoes-3.png',
-              alt: 'Spenard Joe\'s atmosphere',
+              alt: 'Spenard Joe\'s atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/spenardjoes-menu-1.png', alt: 'Spenard Joe\'s menu' },
+          menuImage: { src: '/anchorage/establishments/spenardjoes-menu-1.png', alt: 'Spenard Joe\'s menu' }
         },
         {
           name: 'Black Cup Coffee House',
@@ -1271,20 +1271,20 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/establishments/blackcup-1.png',
-              alt: 'Black Cup Coffee interior',
+              alt: 'Black Cup Coffee interior'
             },
             {
               src: '/anchorage/establishments/blackcup-2.png',
-              alt: 'Black Cup Coffee seating area',
+              alt: 'Black Cup Coffee seating area'
             },
             {
               src: '/anchorage/establishments/blackcup-3.png',
-              alt: 'Black Cup Coffee atmosphere',
+              alt: 'Black Cup Coffee atmosphere'
             }
           ],
-          menuImage: { src: '/anchorage/establishments/blackcup-menu.png', alt: 'Black Cup Coffee menu' },
-        },
-      ],
+          menuImage: { src: '/anchorage/establishments/blackcup-menu.png', alt: 'Black Cup Coffee menu' }
+        }
+      ]
     },
     {
       id: 'anc-dark-history',
@@ -1305,7 +1305,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/israel-keyes.png',
-              alt: 'Israel Keyes, the methodical serial killer who operated from Anchorage',
+              alt: 'Israel Keyes, the methodical serial killer who operated from Anchorage'
             }
           ],
           verdict: 'Arrested in 2012. Confessed to 11 murders, then committed suicide in an Anchorage jail. The FBI believes there are more victims he never named—trophies he took to the grave.',
@@ -1316,46 +1316,46 @@ export const anchorage: CityData = {
               author: 'Maureen Callahan',
               isbn: '9781101984437',
               year: '2019',
-              url: 'https://www.amazon.com/American-Predator-Meticulous-Serial-Century/dp/1101984430',
+              url: 'https://www.amazon.com/American-Predator-Meticulous-Serial-Century/dp/1101984430'
             },
             {
               type: 'documentary',
               title: 'Method of a Serial Killer',
               platform: 'CBS 48 Hours',
               year: '2020',
-              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-48-hours-method-of-a-serial-killer/',
+              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-48-hours-method-of-a-serial-killer/'
             },
             {
               type: 'article',
               title: 'Israel Keyes: The FBI\'s Most Terrifying Serial Killer',
               publisher: 'CBS News',
-              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-fbi-evidence-serial-killer-skulls-blood/',
+              url: 'https://www.cbsnews.com/news/israel-keyes-serial-killer-fbi-evidence-serial-killer-skulls-blood/'
             },
             {
               type: 'podcast',
               title: 'True Crime Bullsh**: The Israel Keyes Story',
               platform: 'Apple Podcasts',
               year: '2020',
-              url: 'https://podcasts.apple.com/us/podcast/true-crime-bullsh/id1443666680',
+              url: 'https://podcasts.apple.com/us/podcast/true-crime-bullsh/id1443666680'
             },
             {
               type: 'video',
               title: 'Israel Keyes: America\'s Most Meticulous Serial Killer',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=IsraelKeyes',
+              url: 'https://www.youtube.com/watch?v=IsraelKeyes'
             },
             {
               type: 'article',
               title: 'A serial killer in Alaska',
               publisher: 'FBI',
-              url: 'https://www.fbi.gov/news/stories/new-information-released-in-serial-killer-case',
-            },
+              url: 'https://www.fbi.gov/news/stories/new-information-released-in-serial-killer-case'
+            }
           ],
           location: {
             name: 'Tudor Road coffee stand; Anchorage jail',
       url: 'https://www.google.com/maps/search/?api=1&query=Tudor%20Road%20coffee%20stand%3B%20Anchorage%20jail%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-2',
@@ -1368,11 +1368,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/4th-ave-1.png',
-              alt: 'Devastating damage on 4th Avenue from the 1964 Good Friday Earthquake',
+              alt: 'Devastating damage on 4th Avenue from the 1964 Good Friday Earthquake'
             },
             {
               src: '/anchorage/dark-history/4th-ave-2.png',
-              alt: 'Collapsed buildings and streets from the 1964 earthquake in Anchorage',
+              alt: 'Collapsed buildings and streets from the 1964 earthquake in Anchorage'
             }
           ],
           verdict: 'The city rebuilt itself. Earthquake Park preserves the scars. The National Tsunami Warning Center exists because of what happened here.',
@@ -1381,31 +1381,31 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'The Great Alaska Earthquake of 1964',
               publisher: 'USGS',
-              url: 'https://earthquake.usgs.gov/earthquakes/events/alaska1964/',
+              url: 'https://earthquake.usgs.gov/earthquakes/events/alaska1964/'
             },
             {
               type: 'article',
               title: '1964 Alaska Earthquake',
               publisher: 'Alaska Division of Homeland Security and Emergency Management',
-              url: 'https://ready.alaska.gov/',
+              url: 'https://ready.alaska.gov/'
             },
             {
               type: 'documentary',
               title: 'The Great Alaska Earthquake',
               platform: 'Alaska Experience Theatre',
-              url: 'https://explorow.com/p/alaska-experience-theatre-anchorage-ak',
+              url: 'https://explorow.com/p/alaska-experience-theatre-anchorage-ak'
             },
             {
               type: 'video',
               title: '1964 Good Friday Earthquake Footage',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=GoodFridayQuake',
+              url: 'https://www.youtube.com/watch?v=GoodFridayQuake'
             },
             {
               type: 'article',
               title: 'Good Friday Earthquake Archive',
               publisher: 'Anchorage Museum',
-              url: 'https://www.anchoragemuseum.org/research/archives/',
+              url: 'https://www.anchoragemuseum.org/research/archives/'
             },
             {
               type: 'book',
@@ -1413,14 +1413,14 @@ export const anchorage: CityData = {
               author: 'Henry Fountain',
               isbn: '9781101904114',
               year: '2017',
-              url: 'https://www.amazon.com/Great-Quake-Earthquake-Understanding-Planet/dp/1101904119',
-            },
+              url: 'https://www.amazon.com/Great-Quake-Earthquake-Understanding-Planet/dp/1101904119'
+            }
           ],
           location: {
             name: 'Turnagain Heights; Downtown Anchorage; Government Hill',
       url: 'https://www.google.com/maps/search/?api=1&query=Turnagain%20Heights%3B%20Downtown%20Anchorage%3B%20Government%20Hill%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-3',
@@ -1434,11 +1434,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/hansen-1.png',
-              alt: 'Robert Hansen, the Butcher Baker serial killer of Anchorage',
+              alt: 'Robert Hansen, the Butcher Baker serial killer of Anchorage'
             },
             {
               src: '/anchorage/dark-history/hansen-2.png',
-              alt: 'Evidence and details from the Robert Hansen case',
+              alt: 'Evidence and details from the Robert Hansen case'
             }
           ],
           verdict: 'Cindy Paulson escaped in 1983 and led police to him. Sentenced to 461 years. Died in prison in 2014, taking secrets with him.',
@@ -1449,47 +1449,47 @@ export const anchorage: CityData = {
               author: 'Walter Gilmour and Leland E. Hale',
               isbn: '9780451403711',
               year: '1991',
-              url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711',
+              url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711'
             },
             {
               type: 'film',
               title: 'The Frozen Ground',
               director: 'Scott Walker',
               year: '2013',
-              url: 'https://www.imdb.com/title/tt2005374/',
+              url: 'https://www.imdb.com/title/tt2005374/'
             },
             {
               type: 'documentary',
               title: 'The Butcher Baker: Mind of a Monster',
               platform: 'A&E',
               year: '2021',
-              url: 'https://www.aetv.com/shows/mind-of-a-monster/season-1/episode-1',
+              url: 'https://www.aetv.com/shows/mind-of-a-monster/season-1/episode-1'
             },
             {
               type: 'article',
               title: 'Robert Hansen: The Alaska Serial Killer Who Hunted His Victims Like Animals',
               publisher: 'All That\'s Interesting',
-              url: 'https://allthatsinteresting.com/robert-hansen',
+              url: 'https://allthatsinteresting.com/robert-hansen'
             },
             {
               type: 'video',
               title: 'Robert Hansen: The Butcher Baker Serial Killer',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=ButcherBaker',
+              url: 'https://www.youtube.com/watch?v=ButcherBaker'
             },
             {
               type: 'podcast',
               title: 'Robert Hansen: The Butcher Baker',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/0YqgGjQZgqgGjQZgqgGjQZ',
-            },
+              url: 'https://open.spotify.com/episode/0YqgGjQZgqgGjQZgqgGjQZ'
+            }
           ],
           location: {
             name: 'Fourth Avenue clubs; Knik River wilderness',
       url: 'https://www.google.com/maps/search/?api=1&query=Fourth%20Avenue%20clubs%3B%20Knik%20River%20wilderness%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-4',
@@ -1501,7 +1501,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/darkness-.png',
-              alt: 'The long dark winter nights of Anchorage, Alaska',
+              alt: 'The long dark winter nights of Anchorage, Alaska'
             }
           ],
           verdict: 'The darkness is both literal and psychological. It\'s the price of living this far north.',
@@ -1510,45 +1510,45 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Suicide Statistics in Alaska',
               publisher: 'CDC',
-              url: 'https://www.cdc.gov/suicide/facts/data.html',
+              url: 'https://www.cdc.gov/suicide/facts/data.html'
             },
             {
               type: 'article',
               title: 'Alaska Seasonal Affective Disorder',
               publisher: 'Alaska Department of Health',
-              url: 'https://health.alaska.gov/',
+              url: 'https://health.alaska.gov/'
             },
             {
               type: 'article',
               title: 'Violence in Alaska',
               publisher: 'Violence Policy Center',
-              url: 'https://vpc.org/revealing-the-impacts-of-gun-violence/alaska/',
+              url: 'https://vpc.org/revealing-the-impacts-of-gun-violence/alaska/'
             },
             {
               type: 'article',
               title: 'Living with Alaska\'s Winter Darkness',
               publisher: 'NPR',
-              url: 'https://www.alaska.org/advice/alaska-winter-darkness',
+              url: 'https://www.alaska.org/advice/alaska-winter-darkness'
             },
             {
               type: 'video',
               title: 'Alaska\'s Long Dark Winter',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=AlaskaDarkness',
+              url: 'https://www.youtube.com/watch?v=AlaskaDarkness'
             },
             {
               type: 'podcast',
               title: 'The Dark Side of Alaska',
               show: 'Alaska Public Media',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/alaska-public-media-news/id1505244825',
-            },
+              url: 'https://podcasts.apple.com/us/podcast/alaska-public-media-news/id1505244825'
+            }
           ],
           location: {
             name: 'Citywide',
       url: 'https://www.google.com/maps/search/?api=1&query=Citywide%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-5',
@@ -1560,11 +1560,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/4th-ave-1.png',
-              alt: 'Fourth Avenue in Anchorage during the Pipeline boom era',
+              alt: 'Fourth Avenue in Anchorage during the Pipeline boom era'
             },
             {
               src: '/anchorage/dark-history/4th-ave-2.png',
-              alt: 'Historic Fourth Avenue, the hunting ground for predators',
+              alt: 'Historic Fourth Avenue, the hunting ground for predators'
             }
           ],
           verdict: 'Most clubs shut down by 1983 after investigators exposed organized crime ties. Hansen had been hunting there for years.',
@@ -1575,32 +1575,32 @@ export const anchorage: CityData = {
               author: 'Walter Gilmour and Leland E. Hale',
               isbn: '9780451403711',
               year: '1991',
-              url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711',
+              url: 'https://www.amazon.com/Butcher-Baker-Account-Alaskan-Serial/dp/0451403711'
             },
             {
               type: 'article',
               title: 'The Pipeline Boom and Bust',
               publisher: 'Anchorage Museum',
-              url: 'https://www.anchoragemuseum.org/exhibits/oil/',
+              url: 'https://www.anchoragemuseum.org/exhibits/oil/'
             },
             {
               type: 'article',
               title: 'Fourth Avenue Theatre',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Fourth_Avenue_Theatre',
+              url: 'https://en.wikipedia.org/wiki/Fourth_Avenue_Theatre'
             },
             {
               type: 'video',
               title: 'Alaska Pipeline Boom: The Dark Side',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=AlaskaPipelineBoom',
-            },
+              url: 'https://www.youtube.com/watch?v=AlaskaPipelineBoom'
+            }
           ],
           location: {
             name: 'Fourth Avenue, Downtown Anchorage',
       url: 'https://www.google.com/maps/search/?api=1&query=Fourth%20Avenue%2C%20Downtown%20Anchorage%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-6',
@@ -1612,11 +1612,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/indig-woman-1.png',
-              alt: 'Memorial for Missing and Murdered Indigenous Women in Alaska',
+              alt: 'Memorial for Missing and Murdered Indigenous Women in Alaska'
             },
             {
               src: '/anchorage/dark-history/indig-woman-2.png',
-              alt: 'The ongoing crisis of Missing and Murdered Indigenous Women',
+              alt: 'The ongoing crisis of Missing and Murdered Indigenous Women'
             }
           ],
           verdict: 'The state now employs four MMIP investigators for 4,200 cases. You do the math.',
@@ -1626,31 +1626,31 @@ export const anchorage: CityData = {
               title: 'Missing and Murdered Indigenous Women & Girls',
               publisher: 'Urban Indian Health Institute',
               year: '2018',
-              url: 'https://www.uihi.org/resources/missing-and-murdered-indigenous-women-girls/',
+              url: 'https://www.uihi.org/resources/missing-and-murdered-indigenous-women-girls/'
             },
             {
               type: 'article',
               title: 'Alaska\'s MMIP Crisis',
               publisher: 'Alaska Native Women\'s Resource Center',
-              url: 'https://www.aknwrc.org/',
+              url: 'https://www.aknwrc.org/'
             },
             {
               type: 'article',
               title: 'Somebody\'s Daughter: Documentary about MMIW Crisis',
               publisher: 'Somebody\'s Daughter MMIW',
-              url: 'https://somebodysdaughter-mmiw.com/',
+              url: 'https://somebodysdaughter-mmiw.com/'
             },
             {
               type: 'article',
               title: 'Missing and Murdered Indigenous Persons',
               publisher: 'Alaska Department of Public Safety',
-              url: 'https://dps.alaska.gov/Statewide/MMIP',
+              url: 'https://dps.alaska.gov/Statewide/MMIP'
             },
             {
               type: 'video',
               title: 'Alaska\'s Missing Indigenous Women Crisis',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=AlaskaMMIP',
+              url: 'https://www.youtube.com/watch?v=AlaskaMMIP'
             },
             {
               type: 'podcast',
@@ -1658,9 +1658,9 @@ export const anchorage: CityData = {
               show: 'iHeartRadio',
               platform: 'Apple Podcasts',
               year: '2019',
-              url: 'https://podcasts.apple.com/us/podcast/missing-in-alaska/id1461759061',
-            },
-          ],
+              url: 'https://podcasts.apple.com/us/podcast/missing-in-alaska/id1461759061'
+            }
+          ]
         },
         {
           id: 'anc-dark-7',
@@ -1672,7 +1672,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/fandell.png',
-              alt: 'The Fandell siblings cold case from 1978',
+              alt: 'The Fandell siblings cold case from 1978'
             }
           ],
           verdict: 'Unsolved for 45+ years. No physical evidence, no witnesses, no resolution. Just gone.',
@@ -1681,33 +1681,33 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Alaska Cold Cases',
               publisher: 'Alaska Department of Public Safety',
-              url: 'https://dps.alaska.gov/AST/ABI/ColdCase',
+              url: 'https://dps.alaska.gov/AST/ABI/ColdCase'
             },
             {
               type: 'article',
               title: 'Case File: Scott and Amy Fandel',
               publisher: 'The Charley Project',
-              url: 'https://charleyproject.org/case/scott-fandel',
+              url: 'https://charleyproject.org/case/scott-fandel'
             },
             {
               type: 'video',
               title: 'Unsolved: The Fandell Children Disappearance',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=FandellSiblings',
+              url: 'https://www.youtube.com/watch?v=FandellSiblings'
             },
             {
               type: 'podcast',
               title: 'The Fandell Siblings',
               show: 'Alaska Unsolved',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/unresolved-alaska/id1597332768',
-            },
+              url: 'https://podcasts.apple.com/us/podcast/unresolved-alaska/id1597332768'
+            }
           ],
           location: {
             name: 'Sterling, Kenai Peninsula',
       url: 'https://www.google.com/maps/search/?api=1&query=Sterling%2C%20Kenai%20Peninsula%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-8',
@@ -1719,19 +1719,19 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/anchorage-hotel-1.png',
-              alt: 'Historic Anchorage Hotel exterior',
+              alt: 'Historic Anchorage Hotel exterior'
             },
             {
               src: '/anchorage/dark-history/anchorage-hotel-2.png',
-              alt: 'Historic Anchorage Hotel interior hallway',
+              alt: 'Historic Anchorage Hotel interior hallway'
             },
             {
               src: '/anchorage/dark-history/anchorage-hotel-3.png',
-              alt: 'Historic Anchorage Hotel room',
+              alt: 'Historic Anchorage Hotel room'
             },
             {
               src: '/anchorage/dark-history/anchorage-hotel-4.png',
-              alt: 'Historic Anchorage Hotel historic photo',
+              alt: 'Historic Anchorage Hotel historic photo'
             }
           ],
           verdict: 'The hotel embraces its reputation. Book room 315 if you\'re curious. Or brave. Or both.',
@@ -1740,32 +1740,32 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Historic Anchorage Hotel',
               publisher: 'Historic Anchorage Hotel (Official)',
-              url: 'https://www.historicanchoragehotel.com/',
+              url: 'https://www.historicanchoragehotel.com/'
             },
             {
               type: 'article',
               title: 'The Most Haunted Places in Alaska',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/alaska/haunted-places/historic-anchorage-hotel/',
+              url: 'https://usghostadventures.com/alaska/haunted-places/historic-anchorage-hotel/'
             },
             {
               type: 'article',
               title: 'Ghost Stories from the Historic Anchorage Hotel',
               publisher: 'Alaska\'s News Source',
-              url: 'https://www.alaskasnewssource.com/2020/10/30/haunted-history-anchorage-hotel/',
+              url: 'https://www.alaskasnewssource.com/2020/10/30/haunted-history-anchorage-hotel/'
             },
             {
               type: 'video',
               title: 'Haunted Alaska: The Historic Anchorage Hotel',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=AnchorageHotelGhosts',
-            },
+              url: 'https://www.youtube.com/watch?v=AnchorageHotelGhosts'
+            }
           ],
           location: {
             name: 'Historic Anchorage Hotel, 330 E St',
       url: 'https://www.google.com/maps/search/?api=1&query=Historic%20Anchorage%20Hotel%2C%20330%20E%20St%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-10',
@@ -1777,7 +1777,7 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/hotel-cook-1.png',
-              alt: 'Hotel Captain Cook, home to the Woman in White ghost story',
+              alt: 'Hotel Captain Cook, home to the Woman in White ghost story'
             }
           ],
           verdict: 'The hotel officially has no comment. Unofficially, staff will tell you not to use that bathroom alone.',
@@ -1786,32 +1786,32 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Hotel Captain Cook',
               publisher: 'Captain Cook Hotel (Official)',
-              url: 'https://www.captaincook.com/',
+              url: 'https://www.captaincook.com/'
             },
             {
               type: 'article',
               title: 'Haunted Hotels of Alaska',
               publisher: 'Haunted Rooms America',
-              url: 'https://www.hauntedrooms.com/alaska/anchorage/hotel-captain-cook',
+              url: 'https://www.hauntedrooms.com/alaska/anchorage/hotel-captain-cook'
             },
             {
               type: 'video',
               title: 'The Woman in White: Hotel Captain Cook Ghost',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=CaptainCookGhost',
+              url: 'https://www.youtube.com/watch?v=CaptainCookGhost'
             },
             {
               type: 'article',
               title: 'Alaska\'s Most Haunted Hotels',
               publisher: 'Alaska Magazine',
-              url: 'https://alaskamagazine.com/',
-            },
+              url: 'https://alaskamagazine.com/'
+            }
           ],
           location: {
             name: 'Hotel Captain Cook, 939 W 5th Ave',
       url: 'https://www.google.com/maps/search/?api=1&query=Hotel%20Captain%20Cook%2C%20939%20W%205th%20Ave%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-11',
@@ -1823,11 +1823,11 @@ export const anchorage: CityData = {
           images: [
             {
               src: '/anchorage/dark-history/ship-creek-1.png',
-              alt: 'Ship Creek, site of violence and the legend of a protective spirit',
+              alt: 'Ship Creek, site of violence and the legend of a protective spirit'
             },
             {
               src: '/anchorage/dark-history/ship-creek-2.png',
-              alt: 'Ship Creek in downtown Anchorage where Marie\'s spirit is said to warn the vulnerable',
+              alt: 'Ship Creek in downtown Anchorage where Marie\'s spirit is said to warn the vulnerable'
             }
           ],
           verdict: 'Multiple confirmed homicides at the location. The legend of Marie persists among those who live rough.',
@@ -1836,32 +1836,32 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Ship Creek Murders',
               publisher: 'Anchorage Police Department',
-              url: 'https://www.muni.org/departments/police/',
+              url: 'https://www.muni.org/departments/police/'
             },
             {
               type: 'article',
               title: 'The Spirit of Ship Creek',
               publisher: 'Haunted Places',
-              url: 'https://www.hauntedplaces.org/item/ship-creek/',
+              url: 'https://www.hauntedplaces.org/item/ship-creek/'
             },
             {
               type: 'article',
               title: 'Ship Creek: Anchorage\'s Dark Waters',
               publisher: 'Anchorage Daily News',
-              url: 'https://www.adn.com/alaska-news/crime-courts/',
+              url: 'https://www.adn.com/alaska-news/crime-courts/'
             },
             {
               type: 'video',
               title: 'The Haunting of Ship Creek',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=ShipCreekHaunting',
-            },
+              url: 'https://www.youtube.com/watch?v=ShipCreekHaunting'
+            }
           ],
           location: {
             name: 'Ship Creek, Downtown Anchorage',
       url: 'https://www.google.com/maps/search/?api=1&query=Ship%20Creek%2C%20Downtown%20Anchorage%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-12',
@@ -1869,7 +1869,7 @@ export const anchorage: CityData = {
           category: 'unsolved',
           image: {
             src: '/anchorage/dark-history/anchorage-dark-torso-1.png',
-            alt: 'Turnagain Arm where the torso murders bodies were found',
+            alt: 'Turnagain Arm where the torso murders bodies were found'
           },
           title: 'The Torso Murders: Bodies Without Names',
           body: 'In June 2003, an 11-year-old boy found a torso in the mud along Turnagain Arm—no head, no legs. It was Desiree Lekanoff, 22, Alaska Native, once a sex worker on Spenard. Three months later, another torso washed up: Michelle Rothe, 32. She\'d never even been reported missing. Both women had ties to Spenard\'s underworld. Investigators found connections to at least five other missing women. No one has ever been charged. No more torsos have appeared since 2003—suggesting the killer stopped, moved away, or learned to dispose of bodies differently.',
@@ -1879,20 +1879,20 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Unsolved Murders of John Doe and Jane Doe',
               publisher: 'True Crime Diva',
-              url: 'https://truecrimediva.com/unsolved-murders-of-john-doe-and-jane-doe-anchorage-alaska/',
+              url: 'https://truecrimediva.com/unsolved-murders-of-john-doe-and-jane-doe-anchorage-alaska/'
             },
             {
               type: 'article',
               title: 'The Dark Side of Anchorage: Unsolved Murders',
               publisher: 'True Crime Diva',
-              url: 'https://truecrimediva.com/',
-            },
+              url: 'https://truecrimediva.com/'
+            }
           ],
           location: {
             name: 'Turnagain Arm; Spenard',
       url: 'https://www.google.com/maps/search/?api=1&query=Turnagain%20Arm%3B%20Spenard%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-13',
@@ -1900,7 +1900,7 @@ export const anchorage: CityData = {
           category: 'forgotten',
           image: {
             src: '/anchorage/dark-history/anchorage-dark-rogers-1.png',
-            alt: 'Rogers Park neighborhood in Anchorage',
+            alt: 'Rogers Park neighborhood in Anchorage'
           },
           title: 'The Burning of Rogers Park: When Integration Meant Arson',
           body: 'In 1950s Anchorage, racial segregation was written directly into property deeds—restrictive covenants that prohibited sale to anyone who wasn\'t white, specifically excluding Black residents and Alaska Natives. When Alvin Campbell, a Black pioneer, purchased a home in the segregated Rogers Park neighborhood, he was met with racist taunts. Days before his family could move in, the house was burned to the ground. It wasn\'t an isolated incident—it was part of a pattern of violent resistance to integration that most Anchorage residents have never heard of.',
@@ -1911,27 +1911,27 @@ export const anchorage: CityData = {
               title: 'History of Racial Segregation in Alaska',
               publisher: 'KTOO',
               year: '2022',
-              url: 'https://www.ktoo.org/2022/02/20/history-of-racial-segregation-in-alaska/',
+              url: 'https://www.ktoo.org/2022/02/20/history-of-racial-segregation-in-alaska/'
             },
             {
               type: 'article',
               title: 'Illegal for Decades, Many Anchorage Homes Still Have Covenants That Prohibit Sale to Blacks and Alaska Natives',
               publisher: 'KTOO',
               year: '2020',
-              url: 'https://www.ktoo.org/2020/03/05/illegal-for-decades-many-anchorage-homes-still-have-covenants-that-prohibit-sale-to-blacks-and-alaska-natives/',
+              url: 'https://www.ktoo.org/2020/03/05/illegal-for-decades-many-anchorage-homes-still-have-covenants-that-prohibit-sale-to-blacks-and-alaska-natives/'
             },
             {
               type: 'other',
               title: 'Black Lives in Alaska: Journey, Justice, Joy (Exhibit)',
               publisher: 'Anchorage Museum',
-              url: 'https://www.anchoragemuseum.org/exhibits/black-lives-in-alaska-journey-justice-joy/',
-            },
+              url: 'https://www.anchoragemuseum.org/exhibits/black-lives-in-alaska-journey-justice-joy/'
+            }
           ],
           location: {
             name: 'Rogers Park neighborhood',
       url: 'https://www.google.com/maps/search/?api=1&query=Rogers%20Park%20neighborhood%20Anchorage',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'anc-dark-14',
@@ -1940,7 +1940,7 @@ export const anchorage: CityData = {
           year: '1988–present',
           image: {
             src: '/anchorage/dark-history/anchorage-dark-triangle.png',
-            alt: 'Alaska wilderness where thousands have vanished',
+            alt: 'Alaska wilderness where thousands have vanished'
           },
           title: 'The Alaska Triangle: 16,000 People Have Vanished in 35 Years',
           body: 'A region stretching from Juneau to Barrow to Anchorage—roughly covering the entire populated heart of Alaska—has a missing persons rate four times the national average. Since 1988, over 16,000 people have vanished. Most disappear in the wilderness: hikers, hunters, bush pilots, fishermen. Some walk out their front door and are never seen again. Search and rescue operations routinely fail. Bodies are rarely recovered.\n\nThe Alaska Triangle isn\'t supernatural—it\'s geographical reality meeting human fragility. The wilderness here is vast, indifferent, and lethal. Temperatures plunge without warning. Glacial rivers sweep people away. Mountains swallow aircraft. Weather changes in minutes. Cell service is nonexistent. The terrain is unforgiving: dense forest, tundra swamps, crevasse-riddled glaciers, and coastlines where the tide moves faster than you can run.\n\nSome disappearances defy easy explanation, but most don\'t need one. The Alaska Triangle doesn\'t need a legend. It just needs time. The wilderness here has been killing people for millennia, and it will outlast everyone who enters it.',
@@ -1950,28 +1950,28 @@ export const anchorage: CityData = {
               type: 'article',
               title: 'Missing in Alaska',
               publisher: 'Alaska Public Media',
-              url: 'https://www.alaskapublic.org/tag/missing-in-alaska/',
+              url: 'https://www.alaskapublic.org/tag/missing-in-alaska/'
             },
             {
               type: 'article',
               title: 'Alaska has one of the highest rates of missing people in the U.S.',
               publisher: 'NPR',
-              url: 'https://www.npr.org/2019/11/01/775195424/alaska-has-one-of-the-highest-rates-of-missing-people-in-the-u-s',
+              url: 'https://www.npr.org/2019/11/01/775195424/alaska-has-one-of-the-highest-rates-of-missing-people-in-the-u-s'
             },
             {
               type: 'other',
               title: 'NamUs: National Missing Persons Database',
               publisher: 'Department of Justice',
-              url: 'https://namus.nij.ojp.gov/',
-            },
+              url: 'https://namus.nij.ojp.gov/'
+            }
           ],
           location: {
             name: 'Statewide: Juneau-Barrow-Anchorage Triangle',
       url: 'https://www.google.com/maps/search/?api=1&query=Statewide%3A%20Juneau-Barrow-Anchorage%20Triangle%20Anchorage',
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
 
     {
@@ -2023,13 +2023,13 @@ export const anchorage: CityData = {
           source: 'Anchorage Daily News, Alaska Public Media',
           images: [
             { src: '/anchorage/lost-loved/flyby-1.png', alt: 'Fly by Night Club exterior' },
-            { src: '/anchorage/lost-loved/flyby-2.png', alt: 'Fly by Night Club performance' },
-          ],
+            { src: '/anchorage/lost-loved/flyby-2.png', alt: 'Fly by Night Club performance' }
+          ]
         },
         {
           id: 'anc-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'anc-lost-4',
@@ -2045,8 +2045,8 @@ export const anchorage: CityData = {
           source: 'Anchorage Daily News, Alaska Magazine',
           images: [
             { src: '/anchorage/lost-loved/marx-bros-1.png', alt: 'The Marx Bros. Cafe exterior' },
-            { src: '/anchorage/lost-loved/marx-bros-2.png', alt: 'The Marx Bros. Cafe interior' },
-          ],
+            { src: '/anchorage/lost-loved/marx-bros-2.png', alt: 'The Marx Bros. Cafe interior' }
+          ]
         },
         {
           id: 'anc-lost-5',
@@ -2061,8 +2061,8 @@ export const anchorage: CityData = {
           lastAddress: '415 W 5th Ave, Anchorage',
           source: 'Anchorage Daily News, Publisher\'s Weekly',
           images: [
-            { src: '/anchorage/lost-loved/cook-book.png', alt: 'Cook Inlet Book Company storefront' },
-          ],
+            { src: '/anchorage/lost-loved/cook-book.png', alt: 'Cook Inlet Book Company storefront' }
+          ]
         },
         // ARCHIVED: Still open as of January 2025
         // {
@@ -2081,7 +2081,7 @@ export const anchorage: CityData = {
         {
           id: 'anc-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'anc-lost-7',
@@ -2097,10 +2097,10 @@ export const anchorage: CityData = {
           source: 'Anchorage Daily News, Alaska Magazine',
           images: [
             { src: '/anchorage/lost-loved/sourdough-1.png', alt: 'The Sourdough Mining Company exterior' },
-            { src: '/anchorage/lost-loved/sourdough-2.png', alt: 'The Sourdough Mining Company interior' },
-          ],
-        },
-      ],
-    },
-  ],
+            { src: '/anchorage/lost-loved/sourdough-2.png', alt: 'The Sourdough Mining Company interior' }
+          ]
+        }
+      ]
+    }
+  ]
 }

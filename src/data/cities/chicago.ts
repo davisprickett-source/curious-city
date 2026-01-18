@@ -8,7 +8,7 @@ export const chicago: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Chicago — a city built on swamp and stubbornness, where the river flows backwards and the pizza is a casserole. Here\'s what we\'re curious about.',
+      content: 'Welcome to Chicago — a city built on swamp and stubbornness, where the river flows backwards and the pizza is a casserole. Here\'s what we\'re curious about.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const chicago: CityData = {
       description: 'A city that exists because geography demanded it and continues because it learned how to be necessary.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/chicago/essay/the-swamp-that-worked',
+      href: '/chicago/essay/the-swamp-that-worked'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'events-this-week',
@@ -38,11 +38,8 @@ export const chicago: CityData = {
           isAllDay: false,
           location: 'Millennium Park',
           category: 'art',
-          tags: ['free', 'family-friendly', 'outdoor'],
-          image: {
-            src: '/images/events/millennium-park-lights.jpg',
-            alt: 'Illuminated winter festival at Millennium Park',
-          },
+          tags: ['free', 'family-friendly', 'outdoor']
+          
         },
         {
           title: 'Last Day: Frida Kahlo Exhibition',
@@ -52,11 +49,8 @@ export const chicago: CityData = {
           location: 'Art Institute of Chicago',
           category: 'art',
           tags: ['art', 'museum'],
-          href: 'https://www.artic.edu',
-          image: {
-            src: '/images/events/frida-kahlo.jpg',
-            alt: 'Frida Kahlo self-portrait',
-          },
+          href: 'https://www.artic.edu'
+          
         },
         {
           title: 'Underground Comedy Club Pop-Up',
@@ -66,7 +60,7 @@ export const chicago: CityData = {
           location: 'Logan Square (address sent upon RSVP)',
           category: 'comedy',
           tags: ['comedy', 'nightlife'],
-          href: 'https://thelincolnlodge.com/',
+          href: 'https://thelincolnlodge.com/'
         },
         {
           title: 'New Year\'s Eve at Navy Pier',
@@ -75,11 +69,8 @@ export const chicago: CityData = {
           endDate: '2026-01-01T01:00:00',
           location: 'Navy Pier',
           category: 'nightlife',
-          tags: ['free', 'family-friendly', 'fireworks'],
-          image: {
-            src: '/images/events/navy-pier-nye.jpg',
-            alt: 'Fireworks over Navy Pier',
-          },
+          tags: ['free', 'family-friendly', 'fireworks']
+          
         },
         {
           title: 'Riverwalk Winter Market',
@@ -88,7 +79,7 @@ export const chicago: CityData = {
           endDate: '2025-12-28T18:00:00',
           location: 'Chicago Riverwalk',
           category: 'markets',
-          tags: ['market', 'shopping', 'outdoor'],
+          tags: ['market', 'shopping', 'outdoor']
         },
         {
           title: 'Green Mill Jazz Club: New Year\'s Week Residency',
@@ -98,7 +89,7 @@ export const chicago: CityData = {
           location: 'Green Mill Cocktail Lounge, Uptown',
           category: 'concerts',
           tags: ['music', 'jazz', 'historic'],
-          href: 'https://greenmilljazz.com',
+          href: 'https://greenmilljazz.com'
         },
         {
           title: 'Deep Dish Bake-Off Championship',
@@ -107,7 +98,7 @@ export const chicago: CityData = {
           endDate: '2025-12-29T18:00:00',
           location: 'Pilsen Community Center',
           category: 'food-drink',
-          tags: ['food', 'competition'],
+          tags: ['food', 'competition']
         },
         {
           title: 'First Look: Museum of Contemporary Art Renovation',
@@ -117,9 +108,9 @@ export const chicago: CityData = {
           location: 'Museum of Contemporary Art Chicago',
           category: 'art',
           tags: ['art', 'museum', 'exclusive'],
-          href: 'https://mcachicago.org',
+          href: 'https://mcachicago.org'
         }
-      ],
+      ]
     },
     {
       id: 'this-week',
@@ -130,27 +121,27 @@ export const chicago: CityData = {
           title: 'The L Train Survival Guide',
           description: 'Everything you need to know about riding Chicago\'s elevated trains like a local.',
           meta: 'Guide',
-          href: '/chicago/l-train-guide',
+          href: '/chicago/l-train-guide'
         },
         {
           title: 'Deep Dish vs. Tavern Style',
           description: 'The pizza debate that divides the city — and why locals usually pick tavern.',
           meta: 'Feature',
-          href: '/chicago/pizza-debate',
+          href: '/chicago/pizza-debate'
         },
         {
           title: 'Lakefront Trail Running Routes',
           description: 'The best stretches of the 18-mile trail, from Navy Pier to Promontory Point.',
           meta: 'List',
           variant: 'compact',
-          href: '/chicago/lakefront-running',
+          href: '/chicago/lakefront-running'
         }
-      ],
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'quick-reads',
@@ -162,16 +153,16 @@ export const chicago: CityData = {
           type: 'card',
           title: 'Why Does the River Flow Backwards?',
           description: 'The audacious engineering that saved the city from its own sewage.',
-          variant: 'compact',
+          variant: 'compact'
         },
         {
           id: 'quick-2',
           type: 'card',
           title: 'The Seven Toppings of a Chicago Dog',
           description: 'Mustard, onion, relish, pickle, tomato, sport peppers, celery salt. Never ketchup.',
-          variant: 'compact',
+          variant: 'compact'
         }
-      ],
+      ]
     },
     {
       id: 'chi-curiosities',
@@ -189,26 +180,26 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/weird-king.png',
-              alt: 'King James Strang of Beaver Island',
+              alt: 'King James Strang of Beaver Island'
             }
           ],
           sources: [
             {
               title: 'James Jesse Strang',
               publisher: 'Britannica',
-              url: 'https://www.britannica.com/biography/James-Jesse-Strang',
+              url: 'https://www.britannica.com/biography/James-Jesse-Strang'
             },
             {
               title: 'The King of Beaver Island',
               publisher: 'Smithsonian Magazine',
-              url: 'https://www.smithsonianmag.com/history/the-king-of-beaver-island-362252/',
+              url: 'https://www.smithsonianmag.com/history/the-king-of-beaver-island-362252/'
             }
           ],
           location: {
             name: 'Beaver Island',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-2',
@@ -219,43 +210,43 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/reactor-1.png',
-              alt: 'University of Chicago campus where first nuclear reaction occurred',
+              alt: 'University of Chicago campus where first nuclear reaction occurred'
             },
             {
               src: '/chicago/curiosities/reactor-2.png',
-              alt: 'Stagg Field memorial to first nuclear reaction',
+              alt: 'Stagg Field memorial to first nuclear reaction'
             },
             {
               src: '/chicago/curiosities/curious-atom-3.png',
-              alt: 'First nuclear reaction under squash court at University of Chicago',
+              alt: 'First nuclear reaction under squash court at University of Chicago'
             },
             {
               src: '/chicago/curiosities/curious-atom-4.png',
-              alt: 'Atomic Age birthplace at University of Chicago',
+              alt: 'Atomic Age birthplace at University of Chicago'
             }
           ],
           sources: [
             {
               title: 'The first nuclear reactor, explained',
               publisher: 'University of Chicago',
-              url: 'https://news.uchicago.edu/explainer/first-nuclear-reactor-explained',
+              url: 'https://news.uchicago.edu/explainer/first-nuclear-reactor-explained'
             },
             {
               title: 'Chicago Pile-1',
               publisher: 'Atomic Heritage Foundation',
-              url: 'https://ahf.nuclearmuseum.org/ahf/history/chicago-pile-1/',
-            },
+              url: 'https://ahf.nuclearmuseum.org/ahf/history/chicago-pile-1/'
+            }
           ],
           location: {
             name: 'Regenstein Library, University of Chicago (Original Stagg Field Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'curiosity-3',
@@ -266,28 +257,28 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/raising-1.png',
-              alt: 'Historic architecture in Chicago',
+              alt: 'Historic architecture in Chicago'
             },
             {
               src: '/chicago/curiosities/raising-2-1.png',
-              alt: 'Chicago street raising construction',
+              alt: 'Chicago street raising construction'
             },
             {
               src: '/chicago/curiosities/raising-3.png',
-              alt: 'Jackscrews lifting Chicago buildings',
+              alt: 'Jackscrews lifting Chicago buildings'
             }
           ],
           sources: [
             {
               title: 'The Raising of Chicago',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/the-raising-of-chicago/',
-            },
+              url: 'https://www.chicagohistory.org/the-raising-of-chicago/'
+            }
           ],
           location: {
             name: 'Downtown Chicago (Briggs House Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -299,31 +290,31 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/ferris-1.png',
-              alt: 'Original Ferris wheel at 1893 World\'s Fair',
+              alt: 'Original Ferris wheel at 1893 World\'s Fair'
             }
           ],
           sources: [
             {
               title: 'The First Ferris Wheel',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/the-first-ferris-wheel/',
+              url: 'https://www.chicagohistory.org/the-first-ferris-wheel/'
             },
             {
               title: 'George Ferris',
               publisher: 'American Society of Mechanical Engineers',
-              url: 'https://www.asme.org/about-asme/engineering-history/landmarks/110-ferris-wheel',
-            },
+              url: 'https://www.asme.org/about-asme/engineering-history/landmarks/110-ferris-wheel'
+            }
           ],
           location: {
             name: 'Jackson Park (Original Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'curiosity-6',
@@ -334,29 +325,29 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/flood-1.png',
-              alt: 'Chicago downtown skyline along the river',
+              alt: 'Chicago downtown skyline along the river'
             },
             {
               src: '/chicago/curiosities/flood-2.png',
-              alt: 'Chicago Loop tunnel system',
+              alt: 'Chicago Loop tunnel system'
             }
           ],
           sources: [
             {
               title: 'The Great Loop Flood of 1992',
               publisher: 'WTTW Chicago',
-              url: 'https://interactive.wttw.com/ten/disasters/chicago-flood',
+              url: 'https://interactive.wttw.com/ten/disasters/chicago-flood'
             },
             {
               title: 'Why The 1992 Loop Flood Is The Most Chicago Story Ever',
               publisher: 'WBEZ',
-              url: 'https://www.wbez.org/curious-city/2016/08/21/why-the-1992-loop-flood-is-the-most-chicago-story-ever',
-            },
+              url: 'https://www.wbez.org/curious-city/2016/08/21/why-the-1992-loop-flood-is-the-most-chicago-story-ever'
+            }
           ],
           location: {
             name: 'Kinzie Street Bridge',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -368,28 +359,28 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/lions-1.png',
-              alt: 'Art Institute of Chicago bronze lions',
+              alt: 'Art Institute of Chicago bronze lions'
             },
             {
               src: '/chicago/curiosities/lions-2.png',
-              alt: 'Art Institute lions wearing sports gear',
+              alt: 'Art Institute lions wearing sports gear'
             },
             {
               src: '/chicago/curiosities/lions-3.png',
-              alt: 'Art Institute entrance with decorated lions',
+              alt: 'Art Institute entrance with decorated lions'
             }
           ],
           sources: [
             {
               title: 'Our Civic-Minded Pride',
               publisher: 'Art Institute of Chicago',
-              url: 'https://www.artic.edu/articles/74/our-civic-minded-pride',
+              url: 'https://www.artic.edu/articles/74/our-civic-minded-pride'
             }
           ],
           location: {
             name: 'Art Institute of Chicago',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -401,24 +392,24 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/reverse-1.png',
-              alt: 'Chicago River flowing through downtown',
+              alt: 'Chicago River flowing through downtown'
             },
             {
               src: '/chicago/curiosities/reverse-2.png',
-              alt: 'Chicago River locks and canal system',
+              alt: 'Chicago River locks and canal system'
             }
           ],
           sources: [
             {
               title: 'Chicago Sanitary and Ship Canal',
               publisher: 'American Society of Civil Engineers',
-              url: 'https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/chicago-sanitary-and-ship-canal',
-            },
+              url: 'https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/chicago-sanitary-and-ship-canal'
+            }
           ],
           location: {
             name: 'Chicago Riverwalk',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -430,26 +421,26 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/oleary-cow.png',
-              alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend',
+              alt: 'Mrs. O\'Leary\'s cow and the Great Chicago Fire legend'
             }
           ],
           sources: [
             {
               title: 'The True Story of the Great Chicago Fire',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/the-true-story-of-the-great-chicago-fire/',
+              url: 'https://www.chicagohistory.org/the-true-story-of-the-great-chicago-fire/'
             },
             {
               title: 'Mrs. O\'Leary, Cow Cleared by City Council Committee',
               publisher: 'Chicago Tribune',
-              url: 'https://www.chicagotribune.com/1997/10/06/mrs-oleary-cow-cleared-by-city-council-committee/',
-            },
+              url: 'https://www.chicagotribune.com/1997/10/06/mrs-oleary-cow-cleared-by-city-council-committee/'
+            }
           ],
           location: {
             name: 'Chicago Fire Academy',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-12',
@@ -460,25 +451,25 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/post-office-1.png',
-              alt: 'Old Chicago Main Post Office spanning Congress Parkway',
+              alt: 'Old Chicago Main Post Office spanning Congress Parkway'
             },
             {
               src: '/chicago/curiosities/post-office-2.png',
-              alt: 'Historic Chicago Post Office architecture',
+              alt: 'Historic Chicago Post Office architecture'
             }
           ],
           sources: [
             {
               title: 'The Old Post Office',
               publisher: 'Chicago Architecture Center',
-              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-old-post-office',
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-old-post-office'
             }
           ],
           location: {
             name: 'The Old Post Office',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-13',
@@ -489,21 +480,21 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/first-skyscraper.png',
-              alt: 'Home Insurance Building - world\'s first skyscraper',
+              alt: 'Home Insurance Building - world\'s first skyscraper'
             }
           ],
           sources: [
             {
               title: 'Home Insurance Building',
               publisher: 'Chicago Architecture Center',
-              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/home-insurance-building',
-            },
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/home-insurance-building'
+            }
           ],
           location: {
             name: 'LaSalle and Adams Streets (Original Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'curiosity-14',
@@ -514,16 +505,16 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/alley.png',
-              alt: 'Chicago alleyway with murals and street art',
+              alt: 'Chicago alleyway with murals and street art'
             }
           ],
           sources: [
             {
               title: 'The Plan of Chicago',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/plan-of-chicago/',
-            },
-          ],
+              url: 'https://www.chicagohistory.org/plan-of-chicago/'
+            }
+          ]
         },
         {
           id: 'curiosity-16',
@@ -534,26 +525,26 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/chicago-curious-pedway.png',
-              alt: 'The Chicago Pedway network',
+              alt: 'The Chicago Pedway network'
             }
           ],
           sources: [
             {
               title: 'The Chicago Pedway',
               publisher: 'City of Chicago',
-              url: 'https://www.chicago.gov/city/en/depts/cdot/provdrs/ped/svcs/pedway.html',
+              url: 'https://www.chicago.gov/city/en/depts/cdot/provdrs/ped/svcs/pedway.html'
             },
             {
               title: 'A Visitor\'s Guide to Navigating the Pedway System',
               publisher: 'Choose Chicago',
-              url: 'https://www.choosechicago.com/blog/architecture-history/a-visitors-guide-to-navigating-the-pedway-system/',
+              url: 'https://www.choosechicago.com/blog/architecture-history/a-visitors-guide-to-navigating-the-pedway-system/'
             }
           ],
           location: {
             name: 'Chicago Pedway',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-17',
@@ -564,30 +555,30 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/chicago-curious-green-river-1.png',
-              alt: 'Chicago River dyed green for St. Patrick\'s Day',
+              alt: 'Chicago River dyed green for St. Patrick\'s Day'
             },
             {
               src: '/chicago/curiosities/chicago-curious-green-river-2.png',
-              alt: 'The process of dyeing the Chicago River',
+              alt: 'The process of dyeing the Chicago River'
             }
           ],
           sources: [
             {
               title: 'Dyeing the Chicago River green is a St. Patrick\'s Day tradition',
               publisher: 'NPR',
-              url: 'https://www.npr.org/2022/03/16/1086988193/st-patricks-day-green-chicago-river',
+              url: 'https://www.npr.org/2022/03/16/1086988193/st-patricks-day-green-chicago-river'
             },
             {
               title: 'WTTW News Explains: Why Does Chicago Dye the River Green?',
               publisher: 'WTTW',
-              url: 'https://news.wttw.com/2024/03/11/wttw-news-explains-why-does-chicago-dye-river-green-st-patrick-s-day',
+              url: 'https://news.wttw.com/2024/03/11/wttw-news-explains-why-does-chicago-dye-river-green-st-patrick-s-day'
             }
           ],
           location: {
             name: 'Chicago River (Michigan Ave Bridge)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-18',
@@ -598,23 +589,23 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/chicago-curious-picasso.png',
-              alt: 'The Chicago Picasso sculpture',
+              alt: 'The Chicago Picasso sculpture'
             }
           ],
           sources: [
             {
               title: 'The Chicago Picasso',
               publisher: 'Chicago Architecture Center',
-              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-chicago-picasso',
+              url: 'https://www.architecture.org/online-resources/architecture-encyclopedia/the-chicago-picasso'
             }
           ],
           location: {
             name: 'Daley Plaza',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'chi-iconic-spots',
@@ -627,116 +618,80 @@ export const chicago: CityData = {
           type: 'iconic-spot',
           name: 'Cloud Gate (The Bean)',
           category: 'Public Art',
-          description: 'Indian-born British artist Anish Kapoor constructed Cloud Gate between 2004 and 2006. Made of 168 stainless steel plates welded together—no visible seams. Measures 33 by 66 by 42 feet, weighs 110 tons. Unveiled in incomplete form during Millennium Park\'s 2004 grand opening, then concealed for finishing work. Formally dedicated May 15, 2006. Original cost estimate: $6 million. Final cost: $23 million. All privately funded. Kapoor initially disliked the "Bean" nickname, later grew fond of it. The mirror finish is polished so intensely you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works—reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Visit at dawn to avoid crowds.',
-          images: [
-            {
-              src: '',
-              alt: 'Cloud Gate sculpture reflecting Chicago skyline',
-            }
-          ],
+          description: 'Indian-born British artist Anish Kapoor constructed Cloud Gate between 2004 and 2006. Made of 168 stainless steel plates welded together—no visible seams. Measures 33 by 66 by 42 feet, weighs 110 tons. Unveiled in incomplete form during Millennium Park\'s 2004 grand opening, then concealed for finishing work. Formally dedicated May 15, 2006. Original cost estimate: $6 million. Final cost: $23 million. All privately funded. Kapoor initially disliked the "Bean" nickname, later grew fond of it. The mirror finish is polished so intensely you can see yourself becoming a tourist. Everyone touches it. Everyone takes the same photo. The sculpture still works—reflections distort the city into something strange and compelling, which is what public art should do. Designed to look like liquid mercury frozen mid-movement. Visit at dawn to avoid crowds.'
           address: 'Millennium Park, 201 E Randolph St, Chicago, IL 60602',
           coordinates: { lat: 41.8827, lng: -87.6233 },
           hours: 'Daily 6am-11pm',
           price: 'Free',
           website: 'https://www.cityofchicago.org/city/en/depts/dca/supp_info/millennium_park.html',
-          tip: 'Visit at dawn to get photos without crowds — the sculpture looks best in early morning light.',
+          tip: 'Visit at dawn to get photos without crowds — the sculpture looks best in early morning light.'
         },
         {
           id: 'iconic-art-institute',
           type: 'iconic-spot',
           name: 'The Art Institute of Chicago',
           category: 'Museum',
-          description: 'Founded as the Chicago Academy of Fine Arts on May 24, 1879. Changed to current name December 23, 1882. Born from the ashes of the Great Chicago Fire. Moved to its permanent home in 1893—the Beaux-Arts building designed by Shepley, Rutan, and Coolidge for the World\'s Columbian Exposition. In 1894, Edward Kemys placed two massive bronze lion sculptures at the entrance. The lions have unofficial names: "on the prowl" (north) and "stands in an attitude of defiance" (south). May 16, 2009, the Modern Wing opened—264,000 square feet designed by Renzo Piano, making the Art Institute the second-largest museum in the US. The Impressionist collection alone justifies admission—Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. You could spend days here and still miss entire wings. Visit the Thorne Miniature Rooms in the basement.',
-          images: [
-            {
-              src: '',
-              alt: 'Art Institute of Chicago exterior with bronze lion statues',
-            }
-          ],
+          description: 'Founded as the Chicago Academy of Fine Arts on May 24, 1879. Changed to current name December 23, 1882. Born from the ashes of the Great Chicago Fire. Moved to its permanent home in 1893—the Beaux-Arts building designed by Shepley, Rutan, and Coolidge for the World\'s Columbian Exposition. In 1894, Edward Kemys placed two massive bronze lion sculptures at the entrance. The lions have unofficial names: "on the prowl" (north) and "stands in an attitude of defiance" (south). May 16, 2009, the Modern Wing opened—264,000 square feet designed by Renzo Piano, making the Art Institute the second-largest museum in the US. The Impressionist collection alone justifies admission—Seurat, Monet, Renoir, Caillebotte. Grant Wood\'s American Gothic. Edward Hopper\'s Nighthawks. You could spend days here and still miss entire wings. Visit the Thorne Miniature Rooms in the basement.'
           address: '111 S Michigan Ave, Chicago, IL 60603',
           coordinates: { lat: 41.8796, lng: -87.6237 },
           hours: 'Thu-Mon 11am-5pm (closed Tue-Wed)',
           price: '$25-32 adults depending on season',
           website: 'https://www.artic.edu',
-          tip: 'Download the museum\'s app for audio tours and visit the Thorne Miniature Rooms in the basement.',
+          tip: 'Download the museum\'s app for audio tours and visit the Thorne Miniature Rooms in the basement.'
         },
         {
           id: 'iconic-navy-pier',
           type: 'iconic-spot',
           name: 'Navy Pier',
           category: 'Entertainment',
-          description: 'Opened to the public July 15, 1916 as "Municipal Pier." Architect Charles Sumner Frost designed it based on Daniel Burnham\'s 1909 Master Plan of Chicago. Built atop 20,000 logs imported from Oregon, piled into Lake Michigan\'s bed. Original purpose: dock for freighters, passenger ships, and public recreation. WWI brought Navy personnel. Officially renamed Navy Pier in 1927 as tribute. Celebrated 100th anniversary in 2016 with The Centennial Vision renovation—new Centennial Wheel, Polk Bros Park, pavilions. Now it\'s a mile-long tourist processing center. Rides, restaurants, boat tours, fireworks, crowds trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. Boat tours departing from here are excellent. Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.',
-          images: [
-            {
-              src: '',
-              alt: 'Navy Pier with Ferris wheel and Chicago skyline',
-            }
-          ],
+          description: 'Opened to the public July 15, 1916 as "Municipal Pier." Architect Charles Sumner Frost designed it based on Daniel Burnham\'s 1909 Master Plan of Chicago. Built atop 20,000 logs imported from Oregon, piled into Lake Michigan\'s bed. Original purpose: dock for freighters, passenger ships, and public recreation. WWI brought Navy personnel. Officially renamed Navy Pier in 1927 as tribute. Celebrated 100th anniversary in 2016 with The Centennial Vision renovation—new Centennial Wheel, Polk Bros Park, pavilions. Now it\'s a mile-long tourist processing center. Rides, restaurants, boat tours, fireworks, crowds trying to do everything at once. Is it authentic Chicago? No. Is it fun if you accept it for what it is? Yes. The Ferris wheel offers solid skyline views. Boat tours departing from here are excellent. Shakespeare Theater does serious work. Go for a specific reason, not to wander aimlessly.'
           address: '600 E Grand Ave, Chicago, IL 60611',
           coordinates: { lat: 41.8917, lng: -87.6086 },
           hours: 'Hours vary by season and attraction',
           price: 'Free to walk, attractions priced separately',
           website: 'https://www.navypier.org',
-          tip: 'Skip the crowded summer weekends — visit on a weekday evening for fireworks without the chaos.',
+          tip: 'Skip the crowded summer weekends — visit on a weekday evening for fireworks without the chaos.'
         },
         {
           id: 'iconic-360-chicago',
           type: 'iconic-spot',
           name: '360 CHICAGO (John Hancock Observatory)',
           category: 'Observation Deck',
-          description: 'Architect Bruce Graham and structural engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed the John Hancock Center. Construction began 1965. Topped out May 6, 1968—then the second-tallest building in the world after the Empire State Building. Completed 1969. Ray Heckla, the original building engineer, moved his family in April 1969 before completion—first resident. Khan\'s revolutionary "trussed tube" structural system debuted here—huge diagonal braces carry lateral loads to the corners. The observation deck on the 94th floor offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a modern glass platform that tilts you out over Michigan Avenue at a 30-degree angle—thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, sometimes cheaper than admission.',
-          images: [
-            {
-              src: '',
-              alt: 'Chicago skyline view from John Hancock Observatory',
-            }
-          ],
+          description: 'Architect Bruce Graham and structural engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed the John Hancock Center. Construction began 1965. Topped out May 6, 1968—then the second-tallest building in the world after the Empire State Building. Completed 1969. Ray Heckla, the original building engineer, moved his family in April 1969 before completion—first resident. Khan\'s revolutionary "trussed tube" structural system debuted here—huge diagonal braces carry lateral loads to the corners. The observation deck on the 94th floor offers better skyline views than Willis Tower because you can see Willis Tower in the skyline. TILT is a modern glass platform that tilts you out over Michigan Avenue at a 30-degree angle—thrilling or terrifying depending on your relationship with heights. The bar on the 96th floor (Signature Lounge) offers similar views for the price of an overpriced cocktail, sometimes cheaper than admission.'
           address: '875 N Michigan Ave, 94th Floor, Chicago, IL 60611',
           coordinates: { lat: 41.8989, lng: -87.6230 },
           hours: 'Daily 9am-11pm',
           price: '$30-35 adults',
           website: 'https://www.360chicago.com',
-          tip: 'Visit the Signature Lounge on the 96th floor instead — similar views, cheaper if you just buy a drink.',
+          tip: 'Visit the Signature Lounge on the 96th floor instead — similar views, cheaper if you just buy a drink.'
         },
         {
           id: 'iconic-magnificent-mile',
           type: 'iconic-spot',
           name: 'The Magnificent Mile',
           category: 'Shopping District',
-          description: 'A 13-block stretch of Michigan Avenue from the Chicago River to Oak Street packed with retail — luxury brands, department stores, chain restaurants, and tourists shopping like it\'s a contact sport. Architecturally significant buildings house predictable stores. Is it worth visiting? If you need to shop, yes. If you want to see Chicago\'s commercial heart, also yes. If you want authentic neighborhood culture, go literally anywhere else.',
-          images: [
-            {
-              src: '',
-              alt: 'Michigan Avenue Magnificent Mile with shopping and architecture',
-            }
-          ],
+          description: 'A 13-block stretch of Michigan Avenue from the Chicago River to Oak Street packed with retail — luxury brands, department stores, chain restaurants, and tourists shopping like it\'s a contact sport. Architecturally significant buildings house predictable stores. Is it worth visiting? If you need to shop, yes. If you want to see Chicago\'s commercial heart, also yes. If you want authentic neighborhood culture, go literally anywhere else.'
           address: 'Michigan Ave from Chicago River to Oak St, Chicago, IL 60611',
           coordinates: { lat: 41.8957, lng: -87.6244 },
           hours: 'Store hours vary',
           price: 'Free to walk',
           website: 'https://www.themagnificentmile.com',
-          tip: 'Walk it once to see the architecture, then shop in actual neighborhoods with better stores.',
+          tip: 'Walk it once to see the architecture, then shop in actual neighborhoods with better stores.'
         },
         {
           id: 'iconic-willis-tower',
           type: 'iconic-spot',
           name: 'Willis Tower Skydeck',
           category: 'Observation Deck',
-          description: 'Architect Bruce Graham and engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed Willis Tower. Took three years to build. Finished May 1973 as the world\'s tallest building—a title it held for nearly 25 years. 110 stories, 1,451 feet. July 16, 2009, officially renamed Willis Tower (from Sears Tower). Many Chicagoans still call it Sears. January 2009, major Skydeck renovation began. July 2, 2009, The Ledge opened—retractable glass balconies extending 4 feet from the 103rd floor facade. The all-glass boxes can support 5 tons. Stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care. Buy tickets online to skip the ticket line. Visit at sunset for day-to-night views.',
-          images: [
-            {
-              src: '',
-              alt: 'Willis Tower Skydeck glass ledge extending over city',
-            }
-          ],
+          description: 'Architect Bruce Graham and engineer Fazlur Rahman Khan of Skidmore, Owings & Merrill designed Willis Tower. Took three years to build. Finished May 1973 as the world\'s tallest building—a title it held for nearly 25 years. 110 stories, 1,451 feet. July 16, 2009, officially renamed Willis Tower (from Sears Tower). Many Chicagoans still call it Sears. January 2009, major Skydeck renovation began. July 2, 2009, The Ledge opened—retractable glass balconies extending 4 feet from the 103rd floor facade. The all-glass boxes can support 5 tons. Stand on them and look straight down to the street 103 stories below. Lines can be brutal. The view is undeniably impressive. Every tourist does this; you might as well too. Locals will tell you the Hancock is better. Tourists don\'t care. Buy tickets online to skip the ticket line. Visit at sunset for day-to-night views.'
           address: '233 S Wacker Dr, Chicago, IL 60606',
           coordinates: { lat: 41.8789, lng: -87.6359 },
           hours: 'Daily 9am-10pm (seasonal variations)',
           price: '$30-40 adults depending on time',
           website: 'https://www.theskydeck.com',
-          tip: 'Buy tickets online to skip the ticket line (you\'ll still wait for elevators). Visit at sunset for day-to-night views.',
+          tip: 'Buy tickets online to skip the ticket line (you\'ll still wait for elevators). Visit at sunset for day-to-night views.'
         }
-      ],
+      ]
     },
     {
       id: 'chi-hidden-gems',
@@ -754,11 +709,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/freight-tunnel-1.png',
-              alt: 'Underground tunnel with brick archways and dim lighting',
+              alt: 'Underground tunnel with brick archways and dim lighting'
             },
             {
               src: '/chicago/hidden-gems/freight-tunnel-2.png',
-              alt: 'Historic Chicago freight tunnel system',
+              alt: 'Historic Chicago freight tunnel system'
             }
           ],
           address: 'Beneath downtown Chicago (Loop)',
@@ -770,10 +725,10 @@ export const chicago: CityData = {
             {
               title: 'The Great Chicago Flood',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/the-great-chicago-flood/',
+              url: 'https://www.chicagohistory.org/the-great-chicago-flood/'
             }
           ],
-          tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.',
+          tip: 'Chicago History Museum occasionally offers talks and exhibits about the tunnel system.'
         },
         {
           id: 'gem-california-ghost',
@@ -784,11 +739,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/blue-line-1.png',
-              alt: 'Abandoned elevated train station with overgrown platform',
+              alt: 'Abandoned elevated train station with overgrown platform'
             },
             {
               src: '/chicago/hidden-gems/blue-line-2.png',
-              alt: 'California ghost station visible from Blue Line',
+              alt: 'California ghost station visible from Blue Line'
             }
           ],
           address: 'I-290 (Eisenhower Expressway) near California Ave',
@@ -800,10 +755,10 @@ export const chicago: CityData = {
             {
               title: 'Remnants of the L',
               publisher: 'Forgotten Chicago',
-              url: 'http://forgottenchicago.com/features/remnants-of-the-l/',
+              url: 'http://forgottenchicago.com/features/remnants-of-the-l/'
             }
           ],
-          tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.',
+          tip: 'Ride the Blue Line westbound and look south between UIC-Halsted and Illinois Medical District stations.'
         },
         {
           id: 'gem-union-stockyard-gate',
@@ -814,19 +769,19 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/stockyard-1.png',
-              alt: 'Historic limestone gate with ornate architecture standing alone',
+              alt: 'Historic limestone gate with ornate architecture standing alone'
             },
             {
               src: '/chicago/hidden-gems/stockyard-2.png',
-              alt: 'Union Stock Yard Gate architectural details',
+              alt: 'Union Stock Yard Gate architectural details'
             },
             {
               src: '/chicago/hidden-gems/stockyard-3.png',
-              alt: 'Union Stock Yard Gate historic landmark',
+              alt: 'Union Stock Yard Gate historic landmark'
             },
             {
               src: '/chicago/hidden-gems/stockyard-4.png',
-              alt: 'Union Stock Yard Gate from street level',
+              alt: 'Union Stock Yard Gate from street level'
             }
           ],
           address: '850 W Exchange Ave, Chicago, IL 60609',
@@ -838,15 +793,15 @@ export const chicago: CityData = {
             {
               title: 'Union Stock Yard Gate',
               publisher: 'National Park Service',
-              url: 'https://www.nps.gov/places/union-stock-yard-gate.htm',
+              url: 'https://www.nps.gov/places/union-stock-yard-gate.htm'
             }
           ],
-          tip: 'Combine with a visit to nearby Back of the Yards neighborhood, historically home to stockyard workers.',
+          tip: 'Combine with a visit to nearby Back of the Yards neighborhood, historically home to stockyard workers.'
         },
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-worlds-fair-remnants',
@@ -857,11 +812,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/jacksonpark-1.png',
-              alt: 'Historic stone bridge and lamp posts in park setting',
+              alt: 'Historic stone bridge and lamp posts in park setting'
             },
             {
               src: '/chicago/hidden-gems/jacksonpark-2.png',
-              alt: '1893 World\'s Fair remnants in Jackson Park',
+              alt: '1893 World\'s Fair remnants in Jackson Park'
             }
           ],
           address: 'Jackson Park, 6401 S Stony Island Ave, Chicago, IL 60637',
@@ -873,10 +828,10 @@ export const chicago: CityData = {
             {
               title: 'Jackson Park History',
               publisher: 'Chicago Park District',
-              url: 'https://www.chicagoparkdistrict.com/parks-facilities/jackson-park',
+              url: 'https://www.chicagoparkdistrict.com/parks-facilities/jackson-park'
             }
           ],
-          tip: 'Look for the original 1893 manhole covers on Wooded Island — they\'re still functional.',
+          tip: 'Look for the original 1893 manhole covers on Wooded Island — they\'re still functional.'
         },
         {
           id: 'gem-alfred-caldwell-lily-pool',
@@ -887,11 +842,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/lily-1.png',
-              alt: 'Tranquil garden with lily pond and stone pathways',
+              alt: 'Tranquil garden with lily pond and stone pathways'
             },
             {
               src: '/chicago/hidden-gems/lily-2.png',
-              alt: 'Alfred Caldwell Lily Pool Prairie School garden',
+              alt: 'Alfred Caldwell Lily Pool Prairie School garden'
             }
           ],
           address: '125 W Fullerton Pkwy, Chicago, IL 60614',
@@ -903,10 +858,10 @@ export const chicago: CityData = {
             {
               title: 'Alfred Caldwell Lily Pool',
               publisher: 'Lincoln Park Conservancy',
-              url: 'https://lincolnparkconservancy.org/parks-we-serve/alfred-caldwell-lily-pool/',
+              url: 'https://lincolnparkconservancy.org/parks-we-serve/alfred-caldwell-lily-pool/'
             }
           ],
-          tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.',
+          tip: 'Visit in early morning for the best light and fewest visitors — this place rewards quiet attention.'
         },
         {
           id: 'gem-chicago-temple-sky-chapel',
@@ -917,15 +872,15 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/temple-sky-1.png',
-              alt: 'Neo-gothic church spire rising above city buildings',
+              alt: 'Neo-gothic church spire rising above city buildings'
             },
             {
               src: '/chicago/hidden-gems/temple-sky-2.png',
-              alt: 'Chicago Temple Sky Chapel interior',
+              alt: 'Chicago Temple Sky Chapel interior'
             },
             {
               src: '/chicago/hidden-gems/temple-sky-3.png',
-              alt: 'Sky Chapel stained glass windows',
+              alt: 'Sky Chapel stained glass windows'
             }
           ],
           address: '77 W Washington St, Chicago, IL 60602',
@@ -937,15 +892,15 @@ export const chicago: CityData = {
             {
               title: 'Sky Chapel',
               publisher: 'First United Methodist Church at the Chicago Temple',
-              url: 'https://www.chicagotemple.org/about-us/sky-chapel/',
+              url: 'https://www.chicagotemple.org/about-us/sky-chapel/'
             }
           ],
-          tip: 'Call ahead to arrange a tour — the chapel is small and access is limited.',
+          tip: 'Call ahead to arrange a tour — the chapel is small and access is limited.'
         },
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-windowless-building',
@@ -956,7 +911,7 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/state-adams.png',
-              alt: 'Nearly windowless urban building with industrial purpose',
+              alt: 'Nearly windowless urban building with industrial purpose'
             }
           ],
           address: '208 S State St, Chicago, IL 60604',
@@ -967,10 +922,10 @@ export const chicago: CityData = {
             {
               title: 'State & Adams Street Cooling Plant',
               publisher: 'Eckenhoff Saunders',
-              url: 'https://esadesign.com/projects/state-and-adams-street-district-cooling-plant/',
+              url: 'https://esadesign.com/projects/state-and-adams-street-district-cooling-plant/'
             }
           ],
-          tip: 'Stand across the street and count the windows — then realize what you\'re looking at.',
+          tip: 'Stand across the street and count the windows — then realize what you\'re looking at.'
         },
         {
           id: 'gem-granville-beach',
@@ -981,11 +936,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/granville-1.png',
-              alt: 'Quiet neighborhood beach with sand and lake view',
+              alt: 'Quiet neighborhood beach with sand and lake view'
             },
             {
               src: '/chicago/hidden-gems/granville-2.png',
-              alt: 'Granville Beach hidden spot on Lake Michigan',
+              alt: 'Granville Beach hidden spot on Lake Michigan'
             }
           ],
           address: '6200 N Sheridan Rd, Chicago, IL 60660',
@@ -997,10 +952,10 @@ export const chicago: CityData = {
             {
               title: 'Granville Beach',
               publisher: 'Chicago Park District',
-              url: 'https://www.chicagoparkdistrict.com/parks-facilities/granville-beach',
+              url: 'https://www.chicagoparkdistrict.com/parks-facilities/granville-beach'
             }
           ],
-          tip: 'No parking lot — street park in Rogers Park and walk east to the lake.',
+          tip: 'No parking lot — street park in Rogers Park and walk east to the lake.'
         },
         {
           id: 'gem-thorne-rooms',
@@ -1011,19 +966,19 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/thorne-1.png',
-              alt: 'Detailed miniature room diorama with period furniture',
+              alt: 'Detailed miniature room diorama with period furniture'
             },
             {
               src: '/chicago/hidden-gems/thorne-2.png',
-              alt: 'Thorne Miniature Rooms European interior',
+              alt: 'Thorne Miniature Rooms European interior'
             },
             {
               src: '/chicago/hidden-gems/thorne-3.png',
-              alt: 'Thorne Rooms intricate craftsmanship detail',
+              alt: 'Thorne Rooms intricate craftsmanship detail'
             },
             {
               src: '/chicago/hidden-gems/thorne-4.png',
-              alt: 'Narcissa Thorne miniature room collection',
+              alt: 'Narcissa Thorne miniature room collection'
             }
           ],
           address: '111 S Michigan Ave, Chicago, IL 60603',
@@ -1035,10 +990,10 @@ export const chicago: CityData = {
             {
               title: 'Thorne Miniature Rooms',
               publisher: 'Art Institute of Chicago',
-              url: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms',
+              url: 'https://www.artic.edu/highlights/10/thorne-miniature-rooms'
             }
           ],
-          tip: 'Bring reading glasses — the details are microscopic and worth studying closely.',
+          tip: 'Bring reading glasses — the details are microscopic and worth studying closely.'
         },
         {
           id: 'gem-music-box',
@@ -1049,15 +1004,15 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/musicbox-1.png',
-              alt: 'Ornate historic movie theater interior with starlit ceiling',
+              alt: 'Ornate historic movie theater interior with starlit ceiling'
             },
             {
               src: '/chicago/hidden-gems/musicbox-2.png',
-              alt: 'Music Box Theatre atmospheric ceiling',
+              alt: 'Music Box Theatre atmospheric ceiling'
             },
             {
               src: '/chicago/hidden-gems/musicbox-3.png',
-              alt: 'Music Box Theatre vintage organ and architecture',
+              alt: 'Music Box Theatre vintage organ and architecture'
             }
           ],
           address: '3733 N Southport Ave, Chicago, IL 60613',
@@ -1069,10 +1024,10 @@ export const chicago: CityData = {
             {
               title: 'Music Box Theatre History',
               publisher: 'Music Box Theatre',
-              url: 'https://musicboxtheatre.com/about/history',
+              url: 'https://musicboxtheatre.com/about/history'
             }
           ],
-          tip: 'Check the calendar for midnight movies and sing-along screenings — the Music Box does special events right.',
+          tip: 'Check the calendar for midnight movies and sing-along screenings — the Music Box does special events right.'
         },
         {
           id: 'gem-homestead-roof',
@@ -1083,19 +1038,19 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/homestead-1.png',
-              alt: 'Rooftop garden with hanging plants and string lights',
+              alt: 'Rooftop garden with hanging plants and string lights'
             },
             {
               src: '/chicago/hidden-gems/homestead-2.png',
-              alt: 'Homestead on the Roof vertical gardens',
+              alt: 'Homestead on the Roof vertical gardens'
             },
             {
               src: '/chicago/hidden-gems/homestead-3.png',
-              alt: 'Homestead rooftop bar atmosphere',
+              alt: 'Homestead rooftop bar atmosphere'
             },
             {
               src: '/chicago/hidden-gems/homestead-4.png',
-              alt: 'Homestead secret garden skyline view',
+              alt: 'Homestead secret garden skyline view'
             }
           ],
           address: '1924 W Chicago Ave, Chicago, IL 60622',
@@ -1107,10 +1062,10 @@ export const chicago: CityData = {
             {
               title: 'Homestead on the Roof',
               publisher: 'The Infatuation',
-              url: 'https://www.theinfatuation.com/chicago/reviews/homestead-on-the-roof',
+              url: 'https://www.theinfatuation.com/chicago/reviews/homestead-on-the-roof'
             }
           ],
-          tip: 'Reservations recommended — the space is small and fills up quickly on good-weather evenings.',
+          tip: 'Reservations recommended — the space is small and fills up quickly on good-weather evenings.'
         },
         {
           id: 'gem-harper-library-secrets',
@@ -1121,11 +1076,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/harper-1.png',
-              alt: 'Gothic library interior with wooden shelves and reading spaces',
+              alt: 'Gothic library interior with wooden shelves and reading spaces'
             },
             {
               src: '/chicago/hidden-gems/harper-2.png',
-              alt: 'Harper Memorial Library hidden basement study',
+              alt: 'Harper Memorial Library hidden basement study'
             }
           ],
           address: '1116 E 59th St, Chicago, IL 60637',
@@ -1137,10 +1092,10 @@ export const chicago: CityData = {
             {
               title: 'Harper Memorial Library',
               publisher: 'University of Chicago',
-              url: 'https://www.lib.uchicago.edu/spaces/harper-memorial-library/',
+              url: 'https://www.lib.uchicago.edu/spaces/harper-memorial-library/'
             }
           ],
-          tip: 'Ask a UChicago student to show you the basement library — it\'s open but unmarked.',
+          tip: 'Ask a UChicago student to show you the basement library — it\'s open but unmarked.'
         },
         {
           id: 'gem-project-logan-wall',
@@ -1151,11 +1106,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/permission-1.png',
-              alt: 'Graffiti-covered permission wall with colorful street art',
+              alt: 'Graffiti-covered permission wall with colorful street art'
             },
             {
               src: '/chicago/hidden-gems/permission-2.png',
-              alt: 'Project Logan legal graffiti wall murals',
+              alt: 'Project Logan legal graffiti wall murals'
             }
           ],
           address: '2900 W Fullerton Ave, Chicago, IL 60647',
@@ -1167,10 +1122,10 @@ export const chicago: CityData = {
             {
               title: 'Project Logan',
               publisher: 'AnySquared',
-              url: 'https://anysquared.org/project-logan/',
+              url: 'https://anysquared.org/project-logan/'
             }
           ],
-          tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.',
+          tip: 'Visit quarterly to see how the art evolves — the wall changes constantly.'
         },
         {
           id: 'gem-biograph-theater',
@@ -1181,11 +1136,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/bigraph-1.png',
-              alt: 'Historic theater building exterior with vintage marquee',
+              alt: 'Historic theater building exterior with vintage marquee'
             },
             {
               src: '/chicago/hidden-gems/biograph-2.png',
-              alt: 'Biograph Theater where Dillinger was killed',
+              alt: 'Biograph Theater where Dillinger was killed'
             }
           ],
           address: '2433 N Lincoln Ave, Chicago, IL 60614',
@@ -1197,10 +1152,10 @@ export const chicago: CityData = {
             {
               title: 'John Dillinger',
               publisher: 'FBI',
-              url: 'https://www.fbi.gov/history/famous-cases/john-dillinger',
+              url: 'https://www.fbi.gov/history/famous-cases/john-dillinger'
             }
           ],
-          tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.',
+          tip: 'Look for the historical marker on the sidewalk marking the exact spot Dillinger fell.'
         },
         {
           id: 'gem-green-mill',
@@ -1212,7 +1167,7 @@ export const chicago: CityData = {
             {
               src: '/chicago/hidden-gems/green-mill.jpg',
               alt: 'Historic Green Mill Cocktail Lounge exterior',
-              credit: 'Wikimedia Commons',
+              credit: 'Wikimedia Commons'
             }
           ],
           address: '4802 N Broadway, Chicago, IL 60640',
@@ -1224,10 +1179,10 @@ export const chicago: CityData = {
             {
               title: 'Green Mill History',
               publisher: 'Green Mill Jazz',
-              url: 'https://greenmilljazz.com/about-us/',
+              url: 'https://greenmilljazz.com/about-us/'
             }
           ],
-          tip: 'Sit in the booth directly west of the short end of the bar—that was Capone\'s spot because he could see both doors.',
+          tip: 'Sit in the booth directly west of the short end of the bar—that was Capone\'s spot because he could see both doors.'
         },
         {
           id: 'gem-pullman-monument',
@@ -1239,11 +1194,11 @@ export const chicago: CityData = {
             {
               src: '/chicago/hidden-gems/pullman-monument.jpg',
               alt: 'Pullman Administration Clock Tower Building',
-              credit: 'Wikimedia Commons',
+              credit: 'Wikimedia Commons'
             },
             {
               src: '/chicago/curiosities/hidden-pullman.png',
-              alt: 'Pullman National Monument historic district',
+              alt: 'Pullman National Monument historic district'
             }
           ],
           address: '11141 S Cottage Grove Ave, Chicago, IL 60628',
@@ -1255,12 +1210,12 @@ export const chicago: CityData = {
             {
               title: 'Pullman National Historical Park',
               publisher: 'National Park Service',
-              url: 'https://www.nps.gov/pull/index.htm',
+              url: 'https://www.nps.gov/pull/index.htm'
             }
           ],
-          tip: 'Take the Metra Electric line to the Pullman stop—it drops you right at the entrance, just like workers arriving in 1880.',
-        },
-      ],
+          tip: 'Take the Metra Electric line to the Pullman stop—it drops you right at the entrance, just like workers arriving in 1880.'
+        }
+      ]
     },
     {
       id: 'best-bars',
@@ -1284,17 +1239,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/whistler-1.png',
-              alt: 'The Whistler bar interior with art on walls',
+              alt: 'The Whistler bar interior with art on walls'
             },
             {
               src: '/chicago/bars/whistler-2.png',
-              alt: 'The Whistler cocktail bar seating',
+              alt: 'The Whistler cocktail bar seating'
             },
             {
               src: '/chicago/bars/whistler-3.png',
-              alt: 'The Whistler live music performance',
+              alt: 'The Whistler live music performance'
             }
-          ],
+          ]
         },
         {
           name: 'Skylark',
@@ -1311,17 +1266,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/skylark-1.png',
-              alt: 'Skylark dive bar interior with neon signs',
+              alt: 'Skylark dive bar interior with neon signs'
             },
             {
               src: '/chicago/bars/skylark-2.png',
-              alt: 'Skylark bar jukebox and seating',
+              alt: 'Skylark bar jukebox and seating'
             },
             {
               src: '/chicago/bars/skylark-3.png',
-              alt: 'Skylark neighborhood crowd',
+              alt: 'Skylark neighborhood crowd'
             }
-          ],
+          ]
         },
         {
           name: 'The Empty Bottle',
@@ -1338,21 +1293,21 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/emptybottle-1.png',
-              alt: 'The Empty Bottle exterior',
+              alt: 'The Empty Bottle exterior'
             },
             {
               src: '/chicago/bars/emptybottle-2.png',
-              alt: 'The Empty Bottle stage and sound system',
+              alt: 'The Empty Bottle stage and sound system'
             },
             {
               src: '/chicago/bars/emptybottle-3.png',
-              alt: 'The Empty Bottle bar interior',
+              alt: 'The Empty Bottle bar interior'
             },
             {
               src: '/chicago/bars/emptybottle-4.png',
-              alt: 'The Empty Bottle crowd at a show',
+              alt: 'The Empty Bottle crowd at a show'
             }
-          ],
+          ]
         },
         {
           name: 'Old Town Ale House',
@@ -1369,17 +1324,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/oldtown-1.png',
-              alt: 'Old Town Ale House interior with paintings',
+              alt: 'Old Town Ale House interior with paintings'
             },
             {
               src: '/chicago/bars/oldtown-2.png',
-              alt: 'Old Town Ale House bar',
+              alt: 'Old Town Ale House bar'
             },
             {
               src: '/chicago/bars/oldtown-3.png',
-              alt: 'Old Town Ale House wall art',
+              alt: 'Old Town Ale House wall art'
             }
-          ],
+          ]
         },
         {
           name: 'Three Dots and a Dash',
@@ -1396,17 +1351,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/three-dots-1.png',
-              alt: 'Three Dots and a Dash tiki bar interior',
+              alt: 'Three Dots and a Dash tiki bar interior'
             },
             {
               src: '/chicago/bars/three-dots-2.png',
-              alt: 'Three Dots and a Dash cocktails',
+              alt: 'Three Dots and a Dash cocktails'
             },
             {
               src: '/chicago/bars/three-dots-3.png',
-              alt: 'Three Dots and a Dash tropical decor',
+              alt: 'Three Dots and a Dash tropical decor'
             }
-          ],
+          ]
         },
         {
           name: 'Maria\'s Packaged Goods & Community Bar',
@@ -1423,17 +1378,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/marias-1.png',
-              alt: 'Maria\'s Packaged Goods bar interior',
+              alt: 'Maria\'s Packaged Goods bar interior'
             },
             {
               src: '/chicago/bars/marias-2.png',
-              alt: 'Maria\'s craft beer selection',
+              alt: 'Maria\'s craft beer selection'
             },
             {
               src: '/chicago/bars/marias-3.png',
-              alt: 'Maria\'s Community Bar neighborhood crowd',
+              alt: 'Maria\'s Community Bar neighborhood crowd'
             }
-          ],
+          ]
         },
         {
           name: 'Simon\'s Tavern',
@@ -1449,8 +1404,8 @@ export const chicago: CityData = {
           instagram: '@simonstavern',
           image: {
             src: '/chicago/bars/simons-1.png',
-            alt: 'Simon\'s Tavern vintage interior with nautical decorations',
-          },
+            alt: 'Simon\'s Tavern vintage interior with nautical decorations'
+          }
         },
         {
           name: 'Exchequer Restaurant & Pub',
@@ -1466,24 +1421,24 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/hidden-gems/exchequer-1.png',
-              alt: 'Historic restaurant interior with exposed brick and vintage details',
+              alt: 'Historic restaurant interior with exposed brick and vintage details'
             },
             {
               src: '/chicago/hidden-gems/exchequer-2.png',
-              alt: 'Exchequer Restaurant speakeasy architecture',
+              alt: 'Exchequer Restaurant speakeasy architecture'
             },
             {
               src: '/chicago/hidden-gems/exchequer-3.png',
-              alt: 'Al Capone era speakeasy details at Exchequer',
+              alt: 'Al Capone era speakeasy details at Exchequer'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'best-bars-ad',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'best-cafes',
@@ -1503,7 +1458,7 @@ export const chicago: CityData = {
           hours: '7am-6pm daily',
           price: '$$',
           website: 'https://www.cafeintegral.com/',
-          instagram: '@cafeintegral',
+          instagram: '@cafeintegral'
         },
         {
           name: 'Ipsento 606',
@@ -1516,7 +1471,7 @@ export const chicago: CityData = {
           hours: '6:30am-7pm daily',
           price: '$$',
           website: 'https://ipsento.com/',
-          instagram: '@ipsento',
+          instagram: '@ipsento'
         },
         {
           name: 'Sawada Coffee',
@@ -1529,7 +1484,7 @@ export const chicago: CityData = {
           hours: '8am-4pm Mon-Fri, 9am-4pm Sat-Sun',
           price: '$$',
           website: 'https://sawadacoffee.com/',
-          instagram: '@sawadacoffee',
+          instagram: '@sawadacoffee'
         },
         {
           name: 'The Coffee Studio',
@@ -1542,14 +1497,14 @@ export const chicago: CityData = {
           hours: '6:30am-5pm Mon-Fri, 7am-5pm Sat-Sun',
           price: '$',
           website: 'https://thecoffeestudio.com/',
-          instagram: '@thecoffeestudio',
+          instagram: '@thecoffeestudio'
         }
-      ],
+      ]
     },
     {
       id: 'best-cafes-ad',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'chi-best-coffee-shops',
@@ -1573,25 +1528,25 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/intelegensia-1.png',
-              alt: 'Intelligentsia Coffee bar',
+              alt: 'Intelligentsia Coffee bar'
             },
             {
               src: '/chicago/coffee/intelegensia-2.png',
-              alt: 'Intelligentsia pour-over station',
+              alt: 'Intelligentsia pour-over station'
             },
             {
               src: '/chicago/coffee/intelegensia-3.png',
-              alt: 'Intelligentsia coffee beans',
+              alt: 'Intelligentsia coffee beans'
             },
             {
               src: '/chicago/coffee/intelegensia-4.png',
-              alt: 'Intelligentsia Millennium Park location',
+              alt: 'Intelligentsia Millennium Park location'
             },
             {
               src: '/chicago/coffee/intelegensia-5.png',
-              alt: 'Intelligentsia latte art',
+              alt: 'Intelligentsia latte art'
             }
-          ],
+          ]
         },
         {
           name: 'Dark Matter Coffee',
@@ -1608,21 +1563,21 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/darkmatter-1.png',
-              alt: 'Dark Matter Coffee shop interior',
+              alt: 'Dark Matter Coffee shop interior'
             },
             {
               src: '/chicago/coffee/darkmatter-2.png',
-              alt: 'Dark Matter barrel-aged coffee',
+              alt: 'Dark Matter barrel-aged coffee'
             },
             {
               src: '/chicago/coffee/darkmatter-3.png',
-              alt: 'Dark Matter roasting operation',
+              alt: 'Dark Matter roasting operation'
             },
             {
               src: '/chicago/coffee/darkmatter-4.png',
-              alt: 'Dark Matter coffee drinks',
+              alt: 'Dark Matter coffee drinks'
             }
-          ],
+          ]
         },
         {
           name: 'The Wormhole Coffee',
@@ -1639,17 +1594,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/wormhole-1.png',
-              alt: 'The Wormhole Coffee DeLorean interior',
+              alt: 'The Wormhole Coffee DeLorean interior'
             },
             {
               src: '/chicago/coffee/wormhole-2.png',
-              alt: 'The Wormhole Coffee 80s decor',
+              alt: 'The Wormhole Coffee 80s decor'
             },
             {
               src: '/chicago/coffee/wormhole-3.png',
-              alt: 'The Wormhole Coffee vanilla latte',
+              alt: 'The Wormhole Coffee vanilla latte'
             }
-          ],
+          ]
         },
         {
           name: 'Hexe Coffee Co.',
@@ -1666,17 +1621,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/hexe-1.png',
-              alt: 'Hexe Coffee Co. interior',
+              alt: 'Hexe Coffee Co. interior'
             },
             {
               src: '/chicago/coffee/hexe-2.png',
-              alt: 'Hexe Coffee roasting',
+              alt: 'Hexe Coffee roasting'
             },
             {
               src: '/chicago/coffee/hexe-3.png',
-              alt: 'Hexe Coffee pastries',
+              alt: 'Hexe Coffee pastries'
             }
-          ],
+          ]
         },
         {
           name: 'Loba Pastry + Coffee',
@@ -1693,17 +1648,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/loba-1.png',
-              alt: 'Loba Pastry + Coffee pastries',
+              alt: 'Loba Pastry + Coffee pastries'
             },
             {
               src: '/chicago/coffee/loba-2.png',
-              alt: 'Loba bakery interior',
+              alt: 'Loba bakery interior'
             },
             {
               src: '/chicago/coffee/loba-3.png',
-              alt: 'Loba coffee and pastry',
+              alt: 'Loba coffee and pastry'
             }
-          ],
+          ]
         },
         {
           name: 'Bridgeport Coffee',
@@ -1720,23 +1675,23 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/coffee/bridgeport-1.png',
-              alt: 'Bridgeport Coffee interior',
+              alt: 'Bridgeport Coffee interior'
             },
             {
               src: '/chicago/coffee/bridgeport-2.png',
-              alt: 'Bridgeport Coffee roasting',
+              alt: 'Bridgeport Coffee roasting'
             },
             {
               src: '/chicago/coffee/bridgeport-3.png',
-              alt: 'Bridgeport Coffee neighborhood vibe',
+              alt: 'Bridgeport Coffee neighborhood vibe'
             },
             {
               src: '/chicago/coffee/bridgeport-4.png',
-              alt: 'Bridgeport Coffee drinks',
+              alt: 'Bridgeport Coffee drinks'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'best-restaurants',
@@ -1760,21 +1715,21 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/johnnies-1.png',
-              alt: 'Johnnie\'s Beef Italian beef sandwich',
+              alt: 'Johnnie\'s Beef Italian beef sandwich'
             },
             {
               src: '/chicago/restaurants/johnnies-2.png',
-              alt: 'Johnnie\'s Beef counter and kitchen',
+              alt: 'Johnnie\'s Beef counter and kitchen'
             },
             {
               src: '/chicago/restaurants/johnnies-3.png',
-              alt: 'Johnnie\'s Beef exterior',
+              alt: 'Johnnie\'s Beef exterior'
             },
             {
               src: '/chicago/restaurants/johnnies-4.png',
-              alt: 'Johnnie\'s Beef standing counter',
+              alt: 'Johnnie\'s Beef standing counter'
             }
-          ],
+          ]
         },
         {
           name: 'Avec',
@@ -1791,25 +1746,25 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/avec-1.png',
-              alt: 'Avec communal table with Mediterranean dishes',
+              alt: 'Avec communal table with Mediterranean dishes'
             },
             {
               src: '/chicago/restaurants/avec-2.png',
-              alt: 'Avec chorizo-stuffed dates',
+              alt: 'Avec chorizo-stuffed dates'
             },
             {
               src: '/chicago/restaurants/avec-3.png',
-              alt: 'Avec restaurant interior',
+              alt: 'Avec restaurant interior'
             },
             {
               src: '/chicago/restaurants/avec-4.png',
-              alt: 'Avec wood-fired dishes',
+              alt: 'Avec wood-fired dishes'
             },
             {
               src: '/chicago/restaurants/avec-5.png',
-              alt: 'Avec West Loop dining room',
+              alt: 'Avec West Loop dining room'
             }
-          ],
+          ]
         },
         {
           name: 'Birrieria Zaragoza',
@@ -1826,25 +1781,25 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/zaragoze-1.png',
-              alt: 'Birrieria Zaragoza birria de chivo',
+              alt: 'Birrieria Zaragoza birria de chivo'
             },
             {
               src: '/chicago/restaurants/zaragoze-2.png',
-              alt: 'Birrieria Zaragoza consomé',
+              alt: 'Birrieria Zaragoza consomé'
             },
             {
               src: '/chicago/restaurants/zaragoze-3.png',
-              alt: 'Birrieria Zaragoza tacos',
+              alt: 'Birrieria Zaragoza tacos'
             },
             {
               src: '/chicago/restaurants/zaragoze-4.png',
-              alt: 'Birrieria Zaragoza restaurant interior',
+              alt: 'Birrieria Zaragoza restaurant interior'
             },
             {
               src: '/chicago/restaurants/zaragoze-5.png',
-              alt: 'Birrieria Zaragoza family tradition',
+              alt: 'Birrieria Zaragoza family tradition'
             }
-          ],
+          ]
         },
         {
           name: 'Sun Wah BBQ',
@@ -1861,21 +1816,21 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/sunwah-1.png',
-              alt: 'Sun Wah BBQ Peking duck',
+              alt: 'Sun Wah BBQ Peking duck'
             },
             {
               src: '/chicago/restaurants/sunwah-2.png',
-              alt: 'Sun Wah BBQ duck carving tableside',
+              alt: 'Sun Wah BBQ duck carving tableside'
             },
             {
               src: '/chicago/restaurants/sunwah-3.png',
-              alt: 'Sun Wah BBQ roast meats in window',
+              alt: 'Sun Wah BBQ roast meats in window'
             },
             {
               src: '/chicago/restaurants/sunwah-4.png',
-              alt: 'Sun Wah BBQ three-course duck dinner',
+              alt: 'Sun Wah BBQ three-course duck dinner'
             }
-          ],
+          ]
         },
         {
           name: 'Portillo\'s',
@@ -1892,17 +1847,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/portillos-1.png',
-              alt: 'Portillo\'s Italian beef sandwich',
+              alt: 'Portillo\'s Italian beef sandwich'
             },
             {
               src: '/chicago/restaurants/portillos-2.png',
-              alt: 'Portillo\'s chocolate cake shake',
+              alt: 'Portillo\'s chocolate cake shake'
             },
             {
               src: '/chicago/restaurants/portillos-3.png',
-              alt: 'Portillo\'s restaurant interior',
+              alt: 'Portillo\'s restaurant interior'
             }
-          ],
+          ]
         },
         {
           name: 'Smyth',
@@ -1920,33 +1875,33 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/smyth-1.png',
-              alt: 'Smyth tasting menu dish',
+              alt: 'Smyth tasting menu dish'
             },
             {
               src: '/chicago/restaurants/smyth-2.png',
-              alt: 'Smyth seasonal ingredients presentation',
+              alt: 'Smyth seasonal ingredients presentation'
             },
             {
               src: '/chicago/restaurants/smyth-3.png',
-              alt: 'Smyth farm-to-table course',
+              alt: 'Smyth farm-to-table course'
             },
             {
               src: '/chicago/restaurants/smyth-4.png',
-              alt: 'Smyth intimate dining room',
+              alt: 'Smyth intimate dining room'
             },
             {
               src: '/chicago/restaurants/smyth-5.png',
-              alt: 'Smyth Midwestern cuisine',
+              alt: 'Smyth Midwestern cuisine'
             },
             {
               src: '/chicago/restaurants/smyth-6.png',
-              alt: 'Smyth chef preparation',
+              alt: 'Smyth chef preparation'
             },
             {
               src: '/chicago/restaurants/smyth-7.png',
-              alt: 'Smyth dessert course',
+              alt: 'Smyth dessert course'
             }
-          ],
+          ]
         },
         {
           name: 'Lou Mitchell\'s',
@@ -1961,19 +1916,19 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/restaurants/lou-mitchells-1.png',
-              alt: 'Lou Mitchell\'s classic breakfast',
+              alt: 'Lou Mitchell\'s classic breakfast'
             },
             {
               src: '/chicago/restaurants/lou-mitchells-2.png',
-              alt: 'Lou Mitchell\'s double-yolk eggs and Greek toast',
+              alt: 'Lou Mitchell\'s double-yolk eggs and Greek toast'
             },
             {
               src: '/chicago/restaurants/lou-mitchells-3.png',
-              alt: 'Lou Mitchell\'s diner interior',
+              alt: 'Lou Mitchell\'s diner interior'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'obscure-history',
@@ -1987,17 +1942,13 @@ export const chicago: CityData = {
           title: 'Chicago raised itself by four feet and nobody stopped working',
           body: 'The city was sinking into its own mud and sewage. The solution was to raise the entire downtown — buildings and all — by four to seven feet using thousands of jackscrews. George Pullman (yes, that Pullman) raised the Tremont House hotel while it remained open for business. Guests barely noticed. It remains one of the most audacious civil engineering projects in American history.',
           source: 'Chicago History Museum',
-          image: {
-            src: '/images/history/raising-chicago.jpg',
-            alt: 'Historic illustration of Chicago buildings being raised on jackscrews',
-            year: '1857',
-          },
+          
           location: {
             name: 'Downtown Chicago',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Chicago%20Chicago',
             coordinates: { lat: 41.8827, lng: -87.6233 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-2',
@@ -2006,22 +1957,18 @@ export const chicago: CityData = {
           title: 'The Haymarket Affair changed labor history worldwide',
           body: 'A rally for the eight-hour workday turned violent when someone threw a bomb at police, who opened fire on the crowd. Eight anarchist labor organizers were convicted in a controversial trial; four were hanged. The incident galvanized the international labor movement and led to May Day becoming International Workers\' Day everywhere except the United States, which moved Labor Day to September to avoid the association.',
           source: 'Illinois Labor History Society',
-          image: {
-            src: '/images/history/haymarket.jpg',
-            alt: 'Historic illustration of the Haymarket bombing',
-            year: '1886',
-          },
+          
           location: {
             name: 'Haymarket Square',
       url: 'https://www.google.com/maps/search/?api=1&query=Haymarket%20Square%20Chicago',
             coordinates: { lat: 41.8867, lng: -87.6528 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'history-3',
@@ -2030,16 +1977,13 @@ export const chicago: CityData = {
           title: 'The first nuclear chain reaction happened under a football stadium',
           body: 'On December 2, 1942, Enrico Fermi and his team achieved the first controlled, self-sustaining nuclear chain reaction in a squash court under the stands of Stagg Field at the University of Chicago. It was part of the Manhattan Project, and the announcement was sent in code: "The Italian navigator has landed in the new world." A Henry Moore sculpture now marks the spot.',
           source: 'University of Chicago / U.S. Department of Energy',
-          image: {
-            src: '/images/history/chicago-pile-1.jpg',
-            alt: 'Recreation of Chicago Pile-1, the first nuclear reactor',
-                      },
+          
           location: {
             name: 'University of Chicago (former Stagg Field)',
       url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Chicago%20(former%20Stagg%20Field)%20Chicago',
             coordinates: { lat: 41.7919, lng: -87.5998 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-4',
@@ -2048,17 +1992,13 @@ export const chicago: CityData = {
           title: 'A race riot started at a segregated beach and burned for a week',
           body: 'When a Black teenager named Eugene Williams drifted into the "white" section of a Lake Michigan beach and was killed, it sparked a week of violence that left 38 dead and over 500 injured. White mobs burned Black homes; Black residents fought back. The riot exposed the violence underlying Chicago\'s racial geography, a pattern that would repeat in 1968 after Martin Luther King Jr.\'s assassination.',
           source: 'Chicago Commission on Race Relations',
-          image: {
-            src: '/images/history/1919-race-riot.jpg',
-            alt: 'Crowd during the 1919 Chicago Race Riot',
-            year: '1919',
-          },
+          
           location: {
             name: '29th Street Beach (former)',
       url: 'https://www.google.com/maps/search/?api=1&query=29th%20Street%20Beach%20(former)%20Chicago',
             coordinates: { lat: 41.8412, lng: -87.6089 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'history-5',
@@ -2067,21 +2007,18 @@ export const chicago: CityData = {
           title: 'The Democratic National Convention riots happened on live television',
           body: 'When anti-Vietnam War protesters gathered in Grant Park during the 1968 Democratic National Convention, Chicago police attacked them with clubs and tear gas. The violence was broadcast live during the convention itself, and protesters chanted "The whole world is watching." Mayor Richard J. Daley defended the police. The images helped define the divisions of that era.',
           source: 'Chicago Tribune Archives',
-          image: {
-            src: '/images/history/1968-dnc.jpg',
-            alt: 'Police confronting protesters at 1968 Democratic National Convention',
-                      },
+          
           location: {
             name: 'Grant Park / Michigan Avenue',
       url: 'https://www.google.com/maps/search/?api=1&query=Grant%20Park%20%2F%20Michigan%20Avenue%20Chicago',
             coordinates: { lat: 41.8760, lng: -87.6189 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'history-6',
@@ -2090,16 +2027,13 @@ export const chicago: CityData = {
           title: 'The Eastland disaster killed more Chicagoans than the Great Fire',
           body: 'On July 24, 1915, the SS Eastland rolled over while still docked at the Chicago River, killing 844 passengers — mostly young Czech immigrants on their way to a company picnic. It remains the largest loss of life from a single shipwreck on the Great Lakes. The disaster is largely forgotten, overshadowed by the Titanic three years earlier, even though more passengers died.',
           source: 'Eastland Disaster Historical Society',
-          image: {
-            src: '/images/history/eastland.jpg',
-            alt: 'The capsized SS Eastland in the Chicago River',
-                      },
+          
           location: {
             name: 'Chicago River at LaSalle Street',
       url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
             coordinates: { lat: 41.8873, lng: -87.6322 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-7',
@@ -2112,8 +2046,8 @@ export const chicago: CityData = {
             name: 'Northerly Island / Museum Campus',
       url: 'https://www.google.com/maps/search/?api=1&query=Northerly%20Island%20%2F%20Museum%20Campus%20Chicago',
             coordinates: { lat: 41.8657, lng: -87.6078 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-8',
@@ -2122,18 +2056,15 @@ export const chicago: CityData = {
           title: 'The Loop flooded because everyone forgot about the freight tunnels',
           body: 'On April 13, 1992, a construction crew driving wooden pilings accidentally breached the forgotten freight tunnel system under the Chicago River. The tunnels flooded, then the basements of hundreds of Loop buildings flooded, causing $1.95 billion in damage. The tunnels had been abandoned for decades, and almost no one knew they were there. It took days to plug the hole.',
           source: 'Chicago Tribune',
-          image: {
-            src: '/images/history/chicago-flood-1992.jpg',
-            alt: 'Water flooding into Loop building basement during 1992 flood',
-                      },
+          
           location: {
             name: 'The Loop',
       url: 'https://www.google.com/maps/search/?api=1&query=The%20Loop%20Chicago',
             coordinates: { lat: 41.8819, lng: -87.6278 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'chi-dark-history',
@@ -2154,33 +2085,29 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/holmes-1.png',
-              alt: 'H.H. Holmes portrait',
-            },
-            {
-              src: '/chicago/dark-history/holmes-castle.jpg',
-              alt: 'The Murder Castle in Englewood',
-            },
-          ],
+              alt: 'H.H. Holmes portrait'
+            }
+            ],
           sources: [
             {
               type: 'book',
               title: 'The Devil in the White City',
               author: 'Erik Larson',
               isbn: '9780375725609',
-              url: 'https://www.eriklarsonbooks.com/book/the-devil-in-the-white-city/',
+              url: 'https://www.eriklarsonbooks.com/book/the-devil-in-the-white-city/'
             },
             {
               type: 'article',
               title: 'H.H. Holmes',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/hh-holmes-murder-castle/',
-            },
+              url: 'https://www.chicagohistory.org/hh-holmes-murder-castle/'
+            }
           ],
           location: {
             name: 'Englewood Post Office (Former Murder Castle Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'chi-dark-9',
@@ -2195,11 +2122,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/boat-disaster-1.png',
-              alt: 'Chicago River where the Eastland disaster occurred',
+              alt: 'Chicago River where the Eastland disaster occurred'
             },
             {
               src: '/chicago/curiosities/boat-disaster-2.png',
-              alt: 'SS Eastland capsized on Chicago River',
+              alt: 'SS Eastland capsized on Chicago River'
             }
           ],
           sources: [
@@ -2207,33 +2134,33 @@ export const chicago: CityData = {
               type: 'website',
               title: 'Eastland Disaster Historical Society',
               publisher: 'Eastland Disaster Historical Society',
-              url: 'https://www.eastlanddisaster.org/',
+              url: 'https://www.eastlanddisaster.org/'
             },
             {
               type: 'book',
               title: 'The Sinking of the Eastland: America\'s Forgotten Tragedy',
               author: 'Jay Bonansinga',
-              year: '2004',
+              year: '2004'
             },
             {
               type: 'article',
               title: 'The Eastland Disaster',
               publisher: 'Chicago History Museum',
-              url: 'https://www.chicagohistory.org/eastland/',
+              url: 'https://www.chicagohistory.org/eastland/'
             },
             {
               type: 'article',
               title: 'Eastland disaster',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/SS_Eastland',
+              url: 'https://en.wikipedia.org/wiki/SS_Eastland'
             }
           ],
           location: {
             name: 'Chicago River at LaSalle Street',
             url: 'https://www.google.com/maps/search/?api=1&query=Chicago%20River%20at%20LaSalle%20Street%20Chicago',
             coordinates: { lat: 41.8873, lng: -87.6322 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'chi-dark-4',
@@ -2247,15 +2174,15 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/theatrefire-1.png',
-              alt: 'Iroquois Theatre fire historic image',
+              alt: 'Iroquois Theatre fire historic image'
             },
             {
               src: '/chicago/dark-history/theatrefire-2.png',
-              alt: 'Iroquois Theatre aftermath',
+              alt: 'Iroquois Theatre aftermath'
             },
             {
               src: '/chicago/dark-history/theatrefire-3.png',
-              alt: 'Iroquois Theatre memorial',
+              alt: 'Iroquois Theatre memorial'
             }
           ],
           sources: [
@@ -2265,7 +2192,7 @@ export const chicago: CityData = {
               author: 'Anthony P. Hatch',
               isbn: '9780897335492',
               year: '2003',
-              url: 'https://www.amazon.com/Tinder-Box-Iroquois-Theatre-Disaster/dp/0897335341',
+              url: 'https://www.amazon.com/Tinder-Box-Iroquois-Theatre-Disaster/dp/0897335341'
             },
             {
               type: 'book',
@@ -2273,42 +2200,42 @@ export const chicago: CityData = {
               author: 'Nat Brandt',
               isbn: '9781566637299',
               year: '2003',
-              url: 'https://www.amazon.com/Fireproof-Untold-Story-Iroquois-Disaster/dp/1566637295',
+              url: 'https://www.amazon.com/Fireproof-Untold-Story-Iroquois-Disaster/dp/1566637295'
             },
             {
               type: 'article',
               title: 'The Iroquois Theatre Fire: Chicago\'s Deadliest Day',
               publisher: 'Smithsonian Magazine',
               year: '2018',
-              url: 'https://www.smithsonianmag.com/history/iroquois-theater-fire-chicagos-deadliest-day-180971044/',
+              url: 'https://www.smithsonianmag.com/history/iroquois-theater-fire-chicagos-deadliest-day-180971044/'
             },
             {
               type: 'article',
               title: '602 Died in the Iroquois Theatre Fire',
               publisher: 'WTTW Chicago',
               year: '2019',
-              url: 'https://interactive.wttw.com/ten/disasters/iroquois-theatre-fire',
+              url: 'https://interactive.wttw.com/ten/disasters/iroquois-theatre-fire'
             },
             {
               type: 'documentary',
               title: 'The Iroquois Theatre Fire',
               platform: 'WTTW Chicago',
               year: '2018',
-              url: 'https://www.wttw.com/chicago-stories',
+              url: 'https://www.wttw.com/chicago-stories'
             },
             {
               type: 'video',
               title: 'The Iroquois Theatre Disaster Explained',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=lFrjrQJCZCw',
+              url: 'https://www.youtube.com/watch?v=lFrjrQJCZCw'
             }
           ],
           location: {
             name: 'Randolph Street, Loop (site now occupied by Oriental Theatre)',
       url: 'https://www.google.com/maps/search/?api=1&query=Randolph%20Street%2C%20Loop%20(site%20now%20occupied%20by%20Oriental%20Theatre)%20Chicago',
             coordinates: { lat: 41.8847, lng: -87.6279 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'chi-dark-5',
@@ -2322,11 +2249,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/masscare-1.png',
-              alt: 'St. Valentine\'s Day Massacre crime scene',
+              alt: 'St. Valentine\'s Day Massacre crime scene'
             },
             {
               src: '/chicago/dark-history/massacre-2.png',
-              alt: 'St. Valentine\'s Day Massacre aftermath',
+              alt: 'St. Valentine\'s Day Massacre aftermath'
             }
           ],
           sources: [
@@ -2336,7 +2263,7 @@ export const chicago: CityData = {
               author: 'William J. Helmer and Arthur J. Bilek',
               isbn: '9781581825688',
               year: '2004',
-              url: 'https://www.amazon.com/St-Valentines-Day-Massacre-Untold/dp/1581825684',
+              url: 'https://www.amazon.com/St-Valentines-Day-Massacre-Untold/dp/1581825684'
             },
             {
               type: 'book',
@@ -2344,42 +2271,42 @@ export const chicago: CityData = {
               author: 'Laurence Bergreen',
               isbn: '9780684824475',
               year: '1994',
-              url: 'https://www.amazon.com/Capone-Man-Era-Laurence-Bergreen/dp/0684824477',
+              url: 'https://www.amazon.com/Capone-Man-Era-Laurence-Bergreen/dp/0684824477'
             },
             {
               type: 'article',
               title: 'St. Valentine\'s Day Massacre',
               publisher: 'History.com',
               year: '2020',
-              url: 'https://www.history.com/topics/crime/saint-valentines-day-massacre',
+              url: 'https://www.history.com/topics/crime/saint-valentines-day-massacre'
             },
             {
               type: 'article',
               title: 'The St. Valentine\'s Day Massacre: 90 Years Later',
               publisher: 'Chicago Tribune',
               year: '2019',
-              url: 'https://www.chicagotribune.com/news/ct-st-valentines-day-massacre-90-years-20190214-story.html',
+              url: 'https://www.chicagotribune.com/news/ct-st-valentines-day-massacre-90-years-20190214-story.html'
             },
             {
               type: 'podcast',
               title: 'The St. Valentine\'s Day Massacre',
               show: 'Crimes of the Centuries',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/crimes-of-the-centuries/id1493668817',
+              url: 'https://podcasts.apple.com/us/podcast/crimes-of-the-centuries/id1493668817'
             },
             {
               type: 'video',
               title: 'St. Valentine\'s Day Massacre: The True Story',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=OjL6BqjfKYk',
+              url: 'https://www.youtube.com/watch?v=OjL6BqjfKYk'
             }
           ],
           location: {
             name: '2122 North Clark Street (building demolished in 1967)',
       url: 'https://www.google.com/maps/search/?api=1&query=2122%20North%20Clark%20Street%20(building%20demolished%20in%201967)%20Chicago',
             coordinates: { lat: 41.9204, lng: -87.6363 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'chi-dark-3',
@@ -2391,7 +2318,7 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/grimes-1.png',
-              alt: 'The Grimes Sisters missing persons case',
+              alt: 'The Grimes Sisters missing persons case'
             }
           ],
           sources: [
@@ -2401,53 +2328,53 @@ export const chicago: CityData = {
               author: 'Troy Taylor',
               isbn: '9781892523464',
               year: '2013',
-              url: 'https://www.amazon.com/Two-Lost-Girls-Mystery-Sisters/dp/1892523469',
+              url: 'https://www.amazon.com/Two-Lost-Girls-Mystery-Sisters/dp/1892523469'
             },
             {
               type: 'article',
               title: 'The Grimes Sisters: Chicago\'s Most Haunting Cold Case',
               publisher: 'Chicago Tribune',
               year: '2017',
-              url: 'https://www.chicagotribune.com/news/ct-grimes-sisters-cold-case-met-20170113-story.html',
+              url: 'https://www.chicagotribune.com/news/ct-grimes-sisters-cold-case-met-20170113-story.html'
             },
             {
               type: 'article',
               title: 'The Grimes Sisters: Chicago\'s Most Haunting Cold Case',
               publisher: 'Chicago Magazine',
               year: '2013',
-              url: 'https://www.chicagomag.com/chicago-magazine/november-2013/grimes-sisters/',
+              url: 'https://www.chicagomag.com/chicago-magazine/november-2013/grimes-sisters/'
             },
             {
               type: 'podcast',
               title: 'The Grimes Sisters',
               show: 'Morbid',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/morbid/id1379959217',
+              url: 'https://podcasts.apple.com/us/podcast/morbid/id1379959217'
             },
             {
               type: 'podcast',
               title: 'The Grimes Sisters Mystery',
               show: 'Most Notorious!',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/most-notorious/id1544239547',
+              url: 'https://podcasts.apple.com/us/podcast/most-notorious/id1544239547'
             },
             {
               type: 'video',
               title: 'The Grimes Sisters: Unsolved After 65 Years',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=MnOpQrStUvY',
+              url: 'https://www.youtube.com/watch?v=MnOpQrStUvY'
             }
           ],
           location: {
             name: 'Bodies found in Willow Springs; last seen in Brighton Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Bodies%20found%20in%20Willow%20Springs%3B%20last%20seen%20in%20Brighton%20Park%20Chicago',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'chi-dark-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'chi-dark-7',
@@ -2461,11 +2388,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/schoolfire-1.png',
-              alt: 'Our Lady of the Angels School fire aftermath',
+              alt: 'Our Lady of the Angels School fire aftermath'
             },
             {
               src: '/chicago/dark-history/schoolfire-2.png',
-              alt: 'Our Lady of the Angels School memorial',
+              alt: 'Our Lady of the Angels School memorial'
             }
           ],
           sources: [
@@ -2475,7 +2402,7 @@ export const chicago: CityData = {
               author: 'David Cowan and John Kuenster',
               isbn: '9781566631174',
               year: '1996',
-              url: 'https://www.amazon.com/Sleep-Angels-Story-Fire/dp/1566631173',
+              url: 'https://www.amazon.com/Sleep-Angels-Story-Fire/dp/1566631173'
             },
             {
               type: 'book',
@@ -2483,35 +2410,35 @@ export const chicago: CityData = {
               author: 'Michele McBride',
               isbn: '9781883953263',
               year: '2003',
-              url: 'https://www.amazon.com/Fire-That-Will-Not-Die/dp/1883953367',
+              url: 'https://www.amazon.com/Fire-That-Will-Not-Die/dp/1883953367'
             },
             {
               type: 'article',
               title: 'Our Lady of the Angels School Fire: 60 Years Later',
               publisher: 'Chicago Tribune',
               year: '2018',
-              url: 'https://www.chicagotribune.com/news/ct-our-lady-angels-school-fire-60-years-20181201-story.html',
+              url: 'https://www.chicagotribune.com/news/ct-our-lady-angels-school-fire-60-years-20181201-story.html'
             },
             {
               type: 'article',
               title: 'The School Fire That Changed America',
               publisher: 'WTTW Chicago',
               year: '2018',
-              url: 'https://interactive.wttw.com/ten/disasters/our-lady-angels-school-fire',
+              url: 'https://interactive.wttw.com/ten/disasters/our-lady-angels-school-fire'
             },
             {
               type: 'video',
               title: 'Our Lady of the Angels School Fire: The Tragedy',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=UoFQ9v3qKtc',
+              url: 'https://www.youtube.com/watch?v=UoFQ9v3qKtc'
             }
           ],
           location: {
             name: 'Our Lady of the Angels School, 909 N Avers Ave, Humboldt Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Our%20Lady%20of%20the%20Angels%20School%2C%20909%20N%20Avers%20Ave%2C%20Humboldt%20Park%20Chicago',
             coordinates: { lat: 41.8965, lng: -87.7211 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'chi-dark-8',
@@ -2524,11 +2451,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/gacy-1.png',
-              alt: 'John Wayne Gacy case investigation',
+              alt: 'John Wayne Gacy case investigation'
             },
             {
               src: '/chicago/dark-history/gacy-2.png',
-              alt: 'Gacy house excavation',
+              alt: 'Gacy house excavation'
             }
           ],
           sources: [
@@ -2538,7 +2465,7 @@ export const chicago: CityData = {
               author: 'Clifford L. Linedecker',
               isbn: '9780312924447',
               year: '1980',
-              url: 'https://www.amazon.com/Man-Who-Killed-Boys/dp/0312924445',
+              url: 'https://www.amazon.com/Man-Who-Killed-Boys/dp/0312924445'
             },
             {
               type: 'book',
@@ -2546,21 +2473,21 @@ export const chicago: CityData = {
               author: 'Terry Sullivan and Peter T. Maiken',
               isbn: '9780786005147',
               year: '2000',
-              url: 'https://www.amazon.com/Killer-Clown-Wayne-Gacy-Murders/dp/0786005149',
+              url: 'https://www.amazon.com/Killer-Clown-Wayne-Gacy-Murders/dp/0786005149'
             },
             {
               type: 'article',
               title: 'John Wayne Gacy: The Killer Clown',
               publisher: 'Biography.com',
               year: '2020',
-              url: 'https://www.biography.com/crime-figure/john-wayne-gacy',
+              url: 'https://www.biography.com/crime-figure/john-wayne-gacy'
             },
             {
               type: 'article',
               title: 'Inside the Mind of John Wayne Gacy',
               publisher: 'Chicago Tribune',
               year: '2018',
-              url: 'https://www.chicagotribune.com/news/ct-john-wayne-gacy-killer-clown-met-20180308-story.html',
+              url: 'https://www.chicagotribune.com/news/ct-john-wayne-gacy-killer-clown-met-20180308-story.html'
             },
             {
               type: 'documentary',
@@ -2568,33 +2495,33 @@ export const chicago: CityData = {
               platform: 'Netflix',
               director: 'Joe Berlinger',
               year: '2022',
-              url: 'https://www.netflix.com/title/81342988',
+              url: 'https://www.netflix.com/title/81342988'
             },
             {
               type: 'documentary',
               title: 'Devil in Disguise: John Wayne Gacy',
               platform: 'Peacock',
               year: '2021',
-              url: 'https://www.peacocktv.com/watch/asset/devil-in-disguise-john-wayne-gacy/6259824112112',
+              url: 'https://www.peacocktv.com/watch/asset/devil-in-disguise-john-wayne-gacy/6259824112112'
             },
             {
               type: 'video',
               title: 'John Wayne Gacy: The Killer Clown Documentary',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=fTDzNQF3QoI',
+              url: 'https://www.youtube.com/watch?v=fTDzNQF3QoI'
             }
           ],
           location: {
             name: '8213 W Summerdale Ave, Norwood Park Township',
       url: 'https://www.google.com/maps/search/?api=1&query=8213%20W%20Summerdale%20Ave%2C%20Norwood%20Park%20Township%20Chicago',
             coordinates: { lat: 42.0090, lng: -87.8416 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'chi-dark-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'chi-dark-6',
@@ -2604,11 +2531,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/flight-1.png',
-              alt: 'American Airlines Flight 191 crash site',
+              alt: 'American Airlines Flight 191 crash site'
             },
             {
               src: '/chicago/dark-history/fligh-2.png',
-              alt: 'Flight 191 memorial',
+              alt: 'Flight 191 memorial'
             }
           ],
           body: 'On May 25, 1979, American Airlines Flight 191—a DC-10 bound for Los Angeles—lost its left engine during takeoff from O\'Hare. The 13-ton engine and pylon tore away and flipped over the wing. The plane rolled left, stalled, crashed into a field in Des Plaines, and exploded in a fireball visible for miles. All 271 aboard died, plus two on the ground. 273 total. It remains the deadliest aviation disaster in U.S. history. The cause: improper maintenance procedures and a flawed design that severed hydraulic lines when the engine detached. American Airlines had been using a forklift method to save 200 man-hours per engine change. The shortcut cost 273 lives. The FAA grounded all DC-10s for over a month. New regulations followed. A memorial now stands near the crash site, marking the spot where cutting corners caught up with American aviation.',
@@ -2620,56 +2547,56 @@ export const chicago: CityData = {
               author: 'Bill Adair',
               isbn: '9780813328164',
               year: '2002',
-              url: 'https://www.amazon.com/Safe-Fly-American-Airlines-Flight/dp/0813328160',
+              url: 'https://www.amazon.com/Safe-Fly-American-Airlines-Flight/dp/0813328160'
             },
             {
               type: 'article',
               title: 'American Airlines Flight 191: 40 Years Later',
               publisher: 'History.com',
               year: '2019',
-              url: 'https://www.history.com/this-day-in-history/american-airlines-plane-crashes-in-chicago',
+              url: 'https://www.history.com/this-day-in-history/american-airlines-plane-crashes-in-chicago'
             },
             {
               type: 'article',
               title: 'The Deadliest Aviation Disaster in U.S. History',
               publisher: 'Smithsonian Magazine',
               year: '2019',
-              url: 'https://www.smithsonianmag.com/air-space-magazine/dc-10-disaster-180972175/',
+              url: 'https://www.smithsonianmag.com/air-space-magazine/dc-10-disaster-180972175/'
             },
             {
               type: 'article',
               title: 'NTSB Report: American Airlines Flight 191',
               publisher: 'National Transportation Safety Board',
               
-              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7917.pdf',
+              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7917.pdf'
             },
             {
               type: 'documentary',
               title: 'Catastrophe at O\'Hare',
               platform: 'National Geographic',
               year: '2014',
-              url: 'https://www.nationalgeographic.com/tv/shows/air-crash-investigation',
+              url: 'https://www.nationalgeographic.com/tv/shows/air-crash-investigation'
             },
             {
               type: 'podcast',
               title: 'American Airlines Flight 191',
               show: 'Take to the Sky: The Air Disaster Podcast',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/take-to-the-sky-the-air-disaster-podcast/id1465118423',
+              url: 'https://podcasts.apple.com/us/podcast/take-to-the-sky-the-air-disaster-podcast/id1465118423'
             },
             {
               type: 'video',
               title: 'American Airlines Flight 191: The Deadliest Crash',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=rVXIvdxNzXQ',
+              url: 'https://www.youtube.com/watch?v=rVXIvdxNzXQ'
             }
           ],
           location: {
             name: "Near O'Hare Airport, Des Plaines",
             url: 'https://www.google.com/maps/search/?api=1&query=Near%20O%27Hare%20Airport%2C%20Des%20Plaines',
             coordinates: { lat: 42.0022, lng: -87.9384 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'chi-dark-1',
@@ -2681,11 +2608,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/dark-history/tylenol-1.png',
-              alt: 'Tylenol poisoning case investigation',
+              alt: 'Tylenol poisoning case investigation'
             },
             {
               src: '/chicago/dark-history/tylenol-2.png',
-              alt: 'Tylenol recall and tamper-proof packaging',
+              alt: 'Tylenol recall and tamper-proof packaging'
             }
           ],
           sources: [
@@ -2695,21 +2622,21 @@ export const chicago: CityData = {
               author: 'The Chicago Tribune',
               isbn: '9781572843233',
               year: '2022',
-              url: 'https://www.amazon.com/Tylenol-Murders-Years-Mystery-Investigation/dp/157284323X',
+              url: 'https://www.amazon.com/Tylenol-Murders-Years-Mystery-Investigation/dp/157284323X'
             },
             {
               type: 'article',
               title: 'The Tylenol Murders: Read the Tribune Investigation',
               publisher: 'Chicago Tribune',
               year: '2022',
-              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
+              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/'
             },
             {
               type: 'article',
               title: 'Tylenol Murders: 40 Years Later',
               publisher: 'CBS News',
               year: '2022',
-              url: 'https://www.cbsnews.com/chicago/news/tylenol-murders-40-years-later/',
+              url: 'https://www.cbsnews.com/chicago/news/tylenol-murders-40-years-later/'
             },
             {
               type: 'documentary',
@@ -2717,7 +2644,7 @@ export const chicago: CityData = {
               platform: 'Netflix',
               director: 'Travis Clark',
               year: '2024',
-              url: 'https://www.netflix.com/title/81719357',
+              url: 'https://www.netflix.com/title/81719357'
             },
             {
               type: 'podcast',
@@ -2725,22 +2652,22 @@ export const chicago: CityData = {
               show: 'Chicago Tribune',
               platform: 'Apple Podcasts',
               year: '2022',
-              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/',
+              url: 'https://www.chicagotribune.com/2022/10/27/the-tylenol-murders-read-the-tribune-investigation/'
             },
             {
               type: 'video',
               title: 'The Tylenol Murders: Unsolved After 40 Years',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=pBdz3Uq6CT8',
+              url: 'https://www.youtube.com/watch?v=pBdz3Uq6CT8'
             }
           ],
           location: {
             name: 'Multiple Chicago suburbs',
       url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20Chicago%20suburbs%20Chicago',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
 
     {
@@ -2761,7 +2688,7 @@ export const chicago: CityData = {
           whyMissed: 'The foie gras and Sauternes duck sausage that cost $15 and was worth every penny. The duck fat fries available only Friday and Saturday. Doug behind the counter slinging puns while the line stretched around the block. It proved you could take hot dogs deadly seriously while refusing to take yourself seriously at all.',
           communityVoice: '"There are no two ways about it: Hot Doug\'s was the best hot dog restaurant in America." — Anthony Bourdain',
           lastAddress: '3324 N California Ave, Chicago',
-          source: 'Chicago Tribune, Eater Chicago',
+          source: 'Chicago Tribune, Eater Chicago'
         },
         // Photo References: Wikimedia Commons (public domain) - https://commons.wikimedia.org/wiki/Category:Hot_Doug's
         // Flickr photos: https://www.flickr.com/photos/hellokitty893112/albums/72157629075131571/
@@ -2777,7 +2704,7 @@ export const chicago: CityData = {
           whyMissed: 'The staggering grandeur of an era when a movie palace could look like a cathedral. The architectural crime of letting something that ornate decay for 45 years. The fading promise that one day, somehow, it will blaze back to life.',
           communityVoice: '"The Uptown Theatre is Chicago\'s most beautiful abandoned building." — Forgotten Chicago',
           lastAddress: '4816 N Broadway, Chicago',
-          source: 'Chicago Tribune, Preservation Chicago',
+          source: 'Chicago Tribune, Preservation Chicago'
         },
         // Photo References: Wikimedia Commons (10 files, public domain) - https://commons.wikimedia.org/wiki/Category:Uptown_Theatre_(Chicago)
         {
@@ -2791,12 +2718,12 @@ export const chicago: CityData = {
           whyMissed: 'The unpretentious vibe in a neighborhood that became nothing but pretentious. The realization that dive bars were an endangered species. The cheap beer and the even cheaper rent that made it impossible to survive. It closed when the building sold for redevelopment, because of course it did.',
           communityVoice: '"The Pontiac was the last holdout in a neighborhood that forgot what it used to be." — Chicago Reader',
           lastAddress: '1531 N Damen Ave, Chicago',
-          source: 'Chicago Reader, DNAinfo',
+          source: 'Chicago Reader, DNAinfo'
         },
         {
           id: 'chicago-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'chicago-lost-9',
@@ -2809,7 +2736,7 @@ export const chicago: CityData = {
           whyMissed: 'The weight of history baked into the booths. The Booth One wall of fame. The sense that you were eating in a room where actual history happened, not just a restaurant decorated to look historic. When the hotel converted to condos, Chicago lost its last connection to mid-century supper club glamour.',
           communityVoice: '"The Pump Room was where Chicago went to feel like New York." — Chicago Tribune',
           lastAddress: '1301 N State Pkwy, Chicago',
-          source: 'Chicago Tribune, Vanity Fair',
+          source: 'Chicago Tribune, Vanity Fair'
         },
         {
           id: 'chicago-lost-4',
@@ -2822,7 +2749,7 @@ export const chicago: CityData = {
           whyMissed: 'The sound system that didn\'t just play music, it delivered it directly to your bones. The adventurous bookings that brought international DJs to a 100-person room. The rarity of a nightlife venue that respected both the music and the people there to actually listen to it.',
           communityVoice: '"Sonotheque proved Chicago could have a world-class electronic music scene." — Resident Advisor',
           lastAddress: '1444 W Chicago Ave, Chicago',
-          source: 'Chicago Tribune, Resident Advisor',
+          source: 'Chicago Tribune, Resident Advisor'
         },
         {
           id: 'chicago-lost-violet-hour',
@@ -2839,17 +2766,17 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/bars/violet-1.png',
-              alt: 'The Violet Hour speakeasy interior with velvet seating',
+              alt: 'The Violet Hour speakeasy interior with velvet seating'
             },
             {
               src: '/chicago/bars/violet-2.png',
-              alt: 'The Violet Hour craft cocktails',
+              alt: 'The Violet Hour craft cocktails'
             },
             {
               src: '/chicago/bars/violet-3.png',
-              alt: 'The Violet Hour bar and bartenders',
+              alt: 'The Violet Hour bar and bartenders'
             }
-          ],
+          ]
         },
         {
           id: 'chicago-lost-5',
@@ -2862,12 +2789,12 @@ export const chicago: CityData = {
           whyMissed: 'The consistency — same menu, same welcome, same feeling that a neighborhood restaurant could actually be permanent. The servers who treated regulars like family. The myth that good places can\'t die. When it closed during the pandemic, Lincoln Square didn\'t just lose a restaurant. It lost proof that anything lasts.',
           communityVoice: '"The Silver Palm was proof that a restaurant could be both excellent and unpretentious." — Time Out Chicago',
           lastAddress: '4437 N Lincoln Ave, Chicago',
-          source: 'Chicago Tribune, Eater Chicago',
+          source: 'Chicago Tribune, Eater Chicago'
         },
         {
           id: 'chicago-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'chicago-lost-6',
@@ -2880,7 +2807,7 @@ export const chicago: CityData = {
           whyMissed: 'The sessions where skill mattered more than fame and anyone good enough could join the tune. The sense of tradition kept alive in a Chicago neighborhood, not performed for tourists downtown. The proof that Irish culture in this city runs deeper than dyeing the river green once a year.',
           communityVoice: '"Chief O\'Neill\'s was the real thing — musicians playing for the love of it, not for tourists." — Irish American News',
           lastAddress: '3471 N Elston Ave, Chicago',
-          source: 'Chicago Tribune, Irish Music Magazine',
+          source: 'Chicago Tribune, Irish Music Magazine'
         },
         {
           id: 'chicago-lost-8',
@@ -2893,7 +2820,7 @@ export const chicago: CityData = {
           whyMissed: 'The sangria that went down too easy. The sense of discovery when tapas were exotic instead of ubiquitous. The communal experience of sharing plates before literally every restaurant copied the model. It closed in 2024 after the building sold, because nothing gold can stay.',
           communityVoice: '"Ba-Ba-Reeba made tapas a Chicago staple." — Chicago Magazine',
           lastAddress: '2024 N Halsted St, Chicago',
-          source: 'Chicago Tribune, Eater Chicago',
+          source: 'Chicago Tribune, Eater Chicago'
         },
         {
           id: 'chicago-lost-11',
@@ -2910,9 +2837,9 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/lost-borders.png',
-              alt: 'Borders Books original flagship location in Chicago Loop',
+              alt: 'Borders Books original flagship location in Chicago Loop'
             }
-          ],
+          ]
         },
         {
           id: 'chicago-lost-2',
@@ -2925,7 +2852,7 @@ export const chicago: CityData = {
           whyMissed: 'The relentless pursuit of excellence that bordered on mania. The wine pairings that could run $500. The knowledge that you were experiencing something world-class without leaving the city. It made Chicago a dining destination, not just a meat-and-potatoes town that happened to have restaurants.',
           communityVoice: '"Charlie Trotter taught Chicago that fine dining could be rigorous, personal, and distinctly ours." — Chicago Magazine',
           lastAddress: '816 W Armitage Ave, Chicago',
-          source: 'Chicago Tribune, Food & Wine',
+          source: 'Chicago Tribune, Food & Wine'
         },
         {
           id: 'chicago-lost-7',
@@ -2942,11 +2869,11 @@ export const chicago: CityData = {
           images: [
             {
               src: '/chicago/curiosities/lost-frontera.png',
-              alt: 'Frontera Fresco at O\'Hare Airport',
+              alt: 'Frontera Fresco at O\'Hare Airport'
             }
-          ],
+          ]
         }
-      ],
+      ]
     }
-  ],
+  ]
 }

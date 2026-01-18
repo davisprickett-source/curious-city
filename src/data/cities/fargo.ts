@@ -8,7 +8,7 @@ export const fargo: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Fargo sits on the floor of ancient Lake Agassiz — flat, flood-prone, and stubbornly lived in. Here\'s what we\'re curious about.',
+      content: 'Fargo sits on the floor of ancient Lake Agassiz — flat, flood-prone, and stubbornly lived in. Here\'s what we\'re curious about.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const fargo: CityData = {
       description: 'Flat horizons, frozen engines, and the insistence on staying.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/fargo/essay/on-the-bed-of-a-vanished-lake',
+      href: '/fargo/essay/on-the-bed-of-a-vanished-lake'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'quick-reads',
@@ -35,7 +35,7 @@ export const fargo: CityData = {
           title: 'How the City Holds Back the Red River',
           description: 'Why levees, floodwalls, and a massive diversion channel are spring rituals.',
           meta: 'Explainer',
-          href: '/fargo/flood-fight',
+          href: '/fargo/flood-fight'
         },
         {
           id: 'quick-2',
@@ -44,7 +44,7 @@ export const fargo: CityData = {
           description: 'A mapped indoor walk downtown so you can keep moving when the wind hurts.',
           meta: 'Guide',
           variant: 'compact',
-          href: '/fargo/skyway-loop',
+          href: '/fargo/skyway-loop'
         },
         {
           id: 'quick-3',
@@ -53,9 +53,9 @@ export const fargo: CityData = {
           description: 'When to plug in, how long, and how locals keep engines alive at -20F.',
           meta: 'How-To',
           variant: 'compact',
-          href: '/fargo/block-heater-basics',
-        },
-      ],
+          href: '/fargo/block-heater-basics'
+        }
+      ]
     },
     {
       id: 'this-week',
@@ -66,27 +66,27 @@ export const fargo: CityData = {
           title: 'Downtown Fargo: Beyond the Movie',
           description: 'The real city behind the Coen Brothers\' fiction.',
           meta: 'Guide',
-          href: '/fargo/downtown-guide',
+          href: '/fargo/downtown-guide'
         },
         {
           title: 'Flood Season: How the City Prepares',
           description: 'The annual ritual of sandbags and survival.',
           meta: 'Feature',
-          href: '/fargo/flood-season',
+          href: '/fargo/flood-season'
         },
         {
           title: 'Best Places to Warm Up',
           description: 'Coffee shops, bars, and refuges from the cold.',
           meta: 'List',
           variant: 'compact',
-          href: '/fargo/warming-spots',
-        },
-      ],
+          href: '/fargo/warming-spots'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'fargo-curiosities',
@@ -105,14 +105,14 @@ export const fargo: CityData = {
                                   body: 'That perfectly flat horizon? It\'s the silted floor of glacial Lake Agassiz, which covered 110,000 square miles 10,000 years ago—larger than Superior, Michigan, Huron, Erie, and Ontario put together. When the ice dam broke, it drained catastrophically into the ocean, possibly triggering a global cooling event. The flatness isn\'t boring. It\'s apocalyptic.',
                                   image: {
                                     src: '/fargo/curiosities/big-lake.png',
-                                    alt: 'Flat prairie horizon',
+                                    alt: 'Flat prairie horizon'
                                   },
-                                  source: 'USGS',
+                                  source: 'USGS'
                                 },
         {
                                   id: 'far-curiosity-ad-1',
                                   type: 'ad',
-                                  size: 'banner',
+                                  size: 'banner'
                                 },
         {
                                   id: 'far-curiosity-1',
@@ -122,14 +122,14 @@ export const fargo: CityData = {
                                   body: 'In the 1890s, North Dakota became the unlikely "Reno of the Plains." The state had the most lenient divorce laws in America: establish residency in 90 days, file on nearly any grounds, walk away single. Wealthy Easterners—primarily women seeking to escape stifling marriages—flocked to Fargo, filling hotels, paying lawyers handsomely, and creating a mini-economic boom in the prairie. The state made a fortune from marital strife. Other states, particularly those with stricter divorce laws, were outraged, decrying North Dakota as a moral cesspool. Laws were tightened in 1899, ending the "Divorce Colony" era, but not before Fargo proved that even the most conservative states can find a market for breaking hearts and making bank.',
                                   image: {
                                     src: '/fargo/curiosities/divorce-colony.png',
-                                    alt: 'North Dakota divorce colony era',
+                                    alt: 'North Dakota divorce colony era'
                                   },
                                   source: 'North Dakota Historical Society',
                                   location: {
                                     name: 'Downtown Fargo',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                           id: 'far-curiosity-bobcat',
@@ -141,21 +141,21 @@ export const fargo: CityData = {
                             {
                               src: '/fargo/curiosities/bobcat-skid-steer.png',
                               alt: 'Early Bobcat skid-steer loader',
-                              credit: 'Bobcat Company',
-                            },
+                              credit: 'Bobcat Company'
+                            }
                           ],
                           sources: [
                             {
                               title: 'Bobcat Company Records',
-                              url: 'https://www.si.edu/object/archives/sova-nmah-ac-1129',
+                              url: 'https://www.si.edu/object/archives/sova-nmah-ac-1129'
                             },
                             {
                               title: 'Bobcat Compact Loader Creators Inducted into National Inventors Hall of Fame',
-                              url: 'https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-compact-loader-creators-inducted-national-inventors-hall-of-fame',
-                            },
+                              url: 'https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-compact-loader-creators-inducted-national-inventors-hall-of-fame'
+                            }
                           ],
                           location: { name: 'West Fargo (Doosan Bobcat HQ)',
-      url: 'https://www.google.com/maps/search/?api=1&query=West%20Fargo%20(Doosan%20Bobcat%20HQ)%20Fargo', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=West%20Fargo%20(Doosan%20Bobcat%20HQ)%20Fargo', stillExists: true }
                         },
         {
                           id: 'far-curiosity-bogusville',
@@ -166,21 +166,21 @@ export const fargo: CityData = {
                                                     image: {
                             src: '/fargo/curiosities/bogusville-map.png',
                             alt: 'Historical map showing Fargo and the bogus Bogusville route',
-                            credit: 'Northern Pacific Railway Archives',
+                            credit: 'Northern Pacific Railway Archives'
                           },
                           sources: [
                             {
                               title: 'History of Fargo-Moorhead',
-                              url: 'https://www.fargomoorhead.org/plan/history-of-fargo-moorhead/',
-                            },
+                              url: 'https://www.fargomoorhead.org/plan/history-of-fargo-moorhead/'
+                            }
                           ],
                           location: { name: 'Original site north of Moorhead',
-      url: 'https://www.google.com/maps/search/?api=1&query=Original%20site%20north%20of%20Moorhead%20Fargo', stillExists: false },
+      url: 'https://www.google.com/maps/search/?api=1&query=Original%20site%20north%20of%20Moorhead%20Fargo', stillExists: false }
                         },
         {
                                   id: 'far-curiosity-ad-2',
                                   type: 'ad',
-                                  size: 'rectangle',
+                                  size: 'rectangle'
                                 },
         {
                                   id: 'far-curiosity-5',
@@ -190,14 +190,14 @@ export const fargo: CityData = {
                                   body: 'The Red River flows north, a rare geographical quirk in North America. This seemingly minor detail turns spring thaws into an existential threat for Fargo. Snow and ice melt first in the southern stretches of the river, sending a torrent of water northwards. But the northern reaches are often still frozen solid. The result? Massive ice jams that act like concrete dams, forcing the river to back up and spill over its banks, threatening to engulf Fargo. The 1997 flood was a city-wide battle, with 20,000 volunteers sandbagging around the clock against a rising tide. A $2.75 billion diversion channel is currently being built to avert future apocalypses, a testament to a city perpetually fighting its own, backward-flowing nature.',
                                   image: {
                                     src: '/fargo/curiosities/cold-hot-day.png',
-                                    alt: 'Red River during spring flooding',
+                                    alt: 'Red River during spring flooding'
                                   },
                                   source: 'US Army Corps of Engineers',
                                   location: {
                                     name: 'Red River',
       url: 'https://www.google.com/maps/search/?api=1&query=Red%20River%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-4',
@@ -207,14 +207,14 @@ export const fargo: CityData = {
                                   body: 'Forget the Freedom Tower or the Willis Tower. The tallest structure in the Western Hemisphere isn\'t in New York or Chicago; it\'s a 2,063-foot guyed mast for KVLY-TV, poking out of a cornfield near Blanchard, just outside Fargo. Built in 1963 to test Cold War antenna designs, it briefly held the title of the world\'s tallest man-made structure until Dubai\'s Burj Khalifa came along. To this day, it remains taller than anything in North or South America. You can see it for 30 miles in every direction, an impossible needle thrust into the endless prairie sky, broadcasting local news and a silent, towering testament to Cold War ambition and the fact that sometimes, the biggest things are found in the most unexpected places.',
                                   image: {
                                     src: '/fargo/curiosities/kvly-tower.png',
-                                    alt: 'KVLY-TV tower near Blanchard, North Dakota',
+                                    alt: 'KVLY-TV tower near Blanchard, North Dakota'
                                   },
                                   source: 'KVLY-TV',
                                   location: {
                                     name: 'Blanchard, ND',
       url: 'https://www.google.com/maps/search/?api=1&query=Blanchard%2C%20ND%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-6',
@@ -225,23 +225,23 @@ export const fargo: CityData = {
                                   images: [
                                     {
                                       src: '/fargo/curiosities/woodchipper-1.png',
-                                      alt: 'Fargo woodchipper tourist attraction',
+                                      alt: 'Fargo woodchipper tourist attraction'
                                     },
                                     {
                                       src: '/fargo/curiosities/woodchipper-2.png',
-                                      alt: 'Fargo woodchipper photo op',
+                                      alt: 'Fargo woodchipper photo op'
                                     },
                                     {
                                       src: '/fargo/curiosities/woodchipper-3.png',
-                                      alt: 'Fargo movie woodchipper display',
-                                    },
+                                      alt: 'Fargo movie woodchipper display'
+                                    }
                                   ],
                                   source: 'Fargo-Moorhead CVB',
                                   location: {
                                     name: 'Fargo-Moorhead Visitors Center',
       url: 'https://www.google.com/maps/search/?api=1&query=Fargo-Moorhead%20Visitors%20Center%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-16',
@@ -253,8 +253,8 @@ export const fargo: CityData = {
                                   location: {
                                     name: 'First Avenue North, Moorhead',
       url: 'https://www.google.com/maps/search/?api=1&query=First%20Avenue%20North%2C%20Moorhead%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                           id: 'far-curiosity-bubble',
@@ -262,23 +262,19 @@ export const fargo: CityData = {
                           category: 'invention',
                           title: 'Mr. Bubble was invented in a Bismarck basement—and flopped until they dropped the price',
                           body: 'Harold Schafer started Gold Seal Company in 1942 in his Bismarck basement, hand-typing labels for Gold Seal Floor Wax and taping them onto old cans. By the 1950s, he\'d built a cleaning product empire with Glass Wax and Snowy Bleach—both #1 sellers in their categories. In 1961, inspired by helping his young children with bath time, Schafer created Mr. Bubble. The pink bubble bath launched at 59 cents—and immediately flopped. The price was too high for families. Schafer worked with suppliers to cut costs to 39 cents, paired it with memorable commercials, and Mr. Bubble catapulted to worldwide success. For decades, it was the #1 bubble bath in America. The man who built an empire from floor wax in a North Dakota basement became synonymous with childhood bath time everywhere. Schafer later used his fortune to restore the entire town of Medora, North Dakota. But his legacy is a pink bottle with a cartoon face that still makes kids excited about getting clean.',
-                                                    image: {
-                            src: '/fargo/curiosities/mr-bubble.png',
-                            alt: 'Vintage Mr. Bubble bubble bath bottle',
-                            credit: 'Gold Seal Company',
-                          },
+                                                    
                           sources: [
                             {
                               title: 'Harold Schafer',
-                              url: 'https://en.wikipedia.org/wiki/Harold_Schafer',
+                              url: 'https://en.wikipedia.org/wiki/Harold_Schafer'
                             },
                             {
                               title: 'North Dakota\'s Mr. Bubble Has Provided 50 Years of Bath-Time Fun',
-                              url: 'https://www.inforum.com/business/north-dakotas-mr-bubble-has-provided-50-years-of-bath-time-fun',
-                            },
+                              url: 'https://www.inforum.com/business/north-dakotas-mr-bubble-has-provided-50-years-of-bath-time-fun'
+                            }
                           ],
                           location: { name: 'Bismarck, ND (Gold Seal Company)',
-      url: 'https://www.google.com/maps/search/?api=1&query=Bismarck%2C%20ND%20(Gold%20Seal%20Company)%20Fargo', stillExists: false },
+      url: 'https://www.google.com/maps/search/?api=1&query=Bismarck%2C%20ND%20(Gold%20Seal%20Company)%20Fargo', stillExists: false }
                         },
         {
                                   id: 'far-curiosity-2',
@@ -288,9 +284,9 @@ export const fargo: CityData = {
                                   body: 'February 21, 1918: Fargo woke up to -33°F. By afternoon, it was 50°F. That\'s an 83-degree swing in twelve hours, driven by a Chinook wind that roared off the Rockies and across the prairie like God had finally found the thermostat. People went from layering every piece of clothing they owned to peeling down to shirtsleeves before lunch. Horses that had been breathing ice crystals were suddenly swishing flies. The phenomenon isn\'t a fluke. The Red River Valley sits at the intersection of Arctic air masses and warm Pacific fronts, creating one of the most volatile temperature environments in North America. The National Weather Service has documented single-day swings exceeding 70 degrees multiple times in the region\'s history. Locals don\'t bother putting away their winter coats until June, and even then, they keep them in the car. The only constant in Fargo weather is inconstancy. Meteorologists here don\'t predict the weather so much as suggest possibilities.',
                                   image: {
                                     src: '/fargo/curiosities/cold-hot-day.png',
-                                    alt: 'Extreme temperature swing in Fargo',
+                                    alt: 'Extreme temperature swing in Fargo'
                                   },
-                                  source: 'National Weather Service',
+                                  source: 'National Weather Service'
                                 },
         {
                                   id: 'far-curiosity-11',
@@ -300,14 +296,14 @@ export const fargo: CityData = {
                                   body: 'In 1983, Doug Burgum and a small team launched Great Plains Software from a farmhouse basement in North Dakota, building accounting software for small businesses. The company grew steadily through the 1980s and 1990s, eventually moving to a sprawling Fargo campus and going public in 1997. By 2001, Microsoft came calling with a $1.1 billion acquisition offer. Burgum took the deal, and suddenly, Fargo had one of Microsoft\'s largest campuses outside Seattle. But here\'s the thing: the campus didn\'t just survive the acquisition. It thrived. Microsoft kept expanding, drawn by the same factors that made Great Plains successful: cost of living roughly half of Seattle\'s, no state income tax, and a relentless pipeline of computer science grads from NDSU and Concordia who\'d rather stay close to home than fight Bay Area traffic. Today, roughly 2,000 employees work on everything from Dynamics 365 to Azure cloud services. In a region where small towns are dying and young people flee for the coasts, Fargo proved that you can build a tech hub in the middle of absolutely nowhere if you give people a reason to stay. Doug Burgum, incidentally, became Governor of North Dakota in 2016.',
                                   image: {
                                     src: '/fargo/curiosities/fargo-microsoft.png',
-                                    alt: 'Microsoft Fargo campus',
+                                    alt: 'Microsoft Fargo campus'
                                   },
                                   source: 'Microsoft Corporation',
                                   location: {
                                     name: 'Microsoft Fargo Campus',
       url: 'https://www.google.com/maps/search/?api=1&query=Microsoft%20Fargo%20Campus%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-8',
@@ -317,14 +313,14 @@ export const fargo: CityData = {
                                   body: 'Roger Maris moved to Fargo at age 12 and became a high school football and track star before baseball scouts noticed his swing. In 1961, playing for the New York Yankees, he broke Babe Ruth\'s 34-year-old single-season home run record with 61 homers. It should have been a crowning achievement. Instead, it was a nightmare. Commissioner Ford Frick, a former ghostwriter for Babe Ruth, ruled that Maris\'s record needed an asterisk because the season was eight games longer than Ruth\'s. Fans sent death threats. Sportswriters vilified him for having the audacity to challenge a legend. His hair fell out from the stress. Maris never sought the spotlight, never craved the attention. He just hit baseballs. The record stood for 37 years until Mark McGwire broke it in 1998, and Barry Bonds shattered it in 2001, both during the steroid era that now carries its own asterisk. Maris\'s 61 remains the cleanest number in baseball\'s most contested category. He died in 1985 at 51, never fully recognized. The Roger Maris Museum sits in West Acres Mall in Fargo: free admission, tucked between retail stores, filled with letters, artifacts, and the quiet story of a man who did everything right and still got treated like a villain. Most mall shoppers walk right past it.',
                                   image: {
                                     src: '/fargo/curiosities/baseball.png',
-                                    alt: 'Baseball history display',
+                                    alt: 'Baseball history display'
                                   },
                                   source: 'Roger Maris Museum',
                                   location: {
                                     name: 'West Acres Mall',
       url: 'https://www.google.com/maps/search/?api=1&query=West%20Acres%20Mall%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-9',
@@ -334,9 +330,9 @@ export const fargo: CityData = {
                                   body: 'When wind chills drop below -35°F, Fargo Public Schools close. This isn\'t helicopter parenting or administrative overcaution. At -35°F with wind, exposed skin develops frostbite in under ten minutes. A kid waiting for a late bus, or one who misses a pickup, faces a genuine medical emergency. The district has specific protocols: buses won\'t run, activities cancel, and parents scramble to figure out childcare while simultaneously dealing with cars that won\'t start. Because at these temperatures, engines become ice blocks. Every driveway in Fargo has an electrical outlet, and every winter morning sounds like the low hum of a hundred block heaters keeping oil pans warm enough to turn over. The ritual is simple: plug in your car before bed, unplug it in the morning, hope it starts. On particularly brutal days, when schools close and thermometers read numbers that don\'t seem real, locals develop a perverse pride: we live here on purpose. Other cities cancel school for two inches of snow. Fargo kids get the day off when the air itself becomes hostile.',
                                   image: {
                                     src: '/fargo/curiosities/cold-school.png',
-                                    alt: 'Fargo school on a cold winter day',
+                                    alt: 'Fargo school on a cold winter day'
                                   },
-                                  source: 'National Weather Service',
+                                  source: 'National Weather Service'
                                 },
         {
                                   id: 'far-curiosity-13',
@@ -348,8 +344,8 @@ export const fargo: CityData = {
                                   location: {
                                     name: 'Downtown Fargo',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
-                                    stillExists: true,
-                                  },
+                                    stillExists: true
+                                  }
                                 },
         {
                                   id: 'far-curiosity-17',
@@ -361,98 +357,44 @@ export const fargo: CityData = {
                                   location: {
                                     name: 'Argusville, ND',
       url: 'https://www.google.com/maps/search/?api=1&query=Argusville%2C%20ND%20Fargo',
-                                    stillExists: false,
-                                  },
+                                    stillExists: false
+                                  }
                                 }
-      ],
-    },
-    {
-      id: 'iconic-spots',
-      type: 'section',
-      title: 'The Fargo Essentials',
-      intro: 'These are the landmarks that define the Red River Valley—the places where the city’s identity isn’t just visible, it’s loud. From the neon glow of Broadway to the sacred ground of the Fargodome, these are the non-negotiables.',
-      items: [
-        {
-          id: 'iconic-fargo-theatre',
-          type: 'iconic-spot',
-          name: 'Fargo Theatre',
-          category: 'Cinema',
-          description:
-            'Construction began fall 1925. Opened March 15, 1926 in Renaissance style. Designed by Liebenberg and Kaplan, who transformed the interior to Art Deco during a 1937 remodel. The Wurlitzer organ—owned by Red River Theatre Organ Society—went silent March 1948 until RRTOS volunteers restored it August 1973. Organists still play before select screenings. December 2023: a $500,000 restoration campaign to preserve the marquee, that neon beacon on Broadway that\'s been guiding film lovers for nearly a century. Independent films. Fargo Film Festival. National Register of Historic Places. This is where Fargo does culture without apologizing for caring.',
-          images: [
-            {
-              src: '/images/gems/fargo-theatre.jpg',
-              alt: 'Fargo Theatre marquee at night',
-            },
-          ],
+      ]
+    }
+    ],
           address: '314 Broadway N, Fargo, ND 58102',
           coordinates: { lat: 46.8773, lng: -96.7898 },
           hours: 'Varies by showtime',
           price: '$10 general admission',
           website: 'https://fargotheatre.org',
-          tip: 'Catch a show with live organ accompaniment when available.',
-        },
-        {
-          id: 'iconic-hjemkomst',
-          type: 'iconic-spot',
-          name: 'Hjemkomst Center',
-          category: 'Museum',
-          description:
-            'Robert Asp—a guidance counselor at Moorhead Junior High—began building a full-size Viking ship replica in 1974. Hawley, Minnesota leased him the Leslie Welter Potato Warehouse for $10 a year. Seven years of work, mostly alone. Asp died December 27, 1980, four months into the ship\'s maiden voyage on Lake Superior. His children finished what he started. Departed New York City June 8, 1982. Arrived Bergen, Norway July 19. Then Oslo August 9. The ship now rests permanently at Hjemkomst Center in Moorhead. "Hjemkomst" means "homecoming." A potato warehouse dream that sailed 6,100 miles across the Atlantic. Also houses a hand-carved replica stave church and the Clay County Historical Society.',
-          images: [
-            {
-              src: '/images/gems/hjemkomst.jpg',
-              alt: 'Hjemkomst Viking ship replica',
-            },
-          ],
+          tip: 'Catch a show with live organ accompaniment when available.'
+        }
+        ],
           address: '202 1st Ave N, Moorhead, MN 56560',
           coordinates: { lat: 46.8731, lng: -96.7689 },
           hours: 'Tue-Sat 10am-5pm, Sun 12-5pm',
           price: '$10 adults',
           website: 'https://www.hcscconline.org',
-          tip: 'Don\'t miss the hand-carved stave church replica outside.',
-        },
-        {
-          id: 'iconic-plains-art',
-          type: 'iconic-spot',
-          name: 'Plains Art Museum',
-          category: 'Museum',
-          description:
-            'Started in 1965 as "Red River Art Center" in a former Moorhead post office. Merged with O\'Rourke Art Gallery Museum in 1975 to become "Plains Art Museum." Acquired a turn-of-the-century International Harvester warehouse in 1994. Relocated October 1997 after Hammel Green & Abrahamson redesigned 56,000 square feet into gallery space. Granted accreditation in 2003—the only accredited art museum in North Dakota. Free admission. Strong regional focus with rotating exhibitions that punch above the Red River Valley\'s weight class. Thursday nights until 9pm. Proof that a city this size can sustain serious contemporary art without pretending to be somewhere else.',
-          images: [
-            {
-              src: '/images/gems/plains-art.jpg',
-              alt: 'Plains Art Museum interior gallery',
-            },
-          ],
+          tip: 'Don\'t miss the hand-carved stave church replica outside.'
+        }
+        ],
           address: '704 1st Ave N, Fargo, ND 58102',
           coordinates: { lat: 46.8779, lng: -96.7898 },
           hours: 'Tue-Sat 11am-5pm, Thu until 9pm, Sun 12-5pm',
           price: 'Free',
           website: 'https://plainsart.org',
-          tip: 'Thursday nights offer free admission with extended hours until 9pm.',
-        },
-        {
-          id: 'iconic-red-river-zoo',
-          type: 'iconic-spot',
-          name: 'Red River Zoo',
-          category: 'Zoo',
-          description:
-            'Red River Zoological Society formed in 1993. Zoo opened May 1999. Gained AZA accreditation in 2006. Twenty-two developed acres with roughly 89 species—all cold-climate animals from around the world. Red pandas, Pallas\'s cats, grey wolves. The zoo\'s red panda breeding program is absurdly successful: over 25% of Chinese Red Pandas in US zoos were born here, including two sets of triplets. Eleven births as of 2012. Won the 2013 Edward H. Bean Award for outstanding achievement in red panda conservation. Three Pallas\'s Cats in the Species Survival Plan. Perfect scale for families—intimate enough to see everything in an afternoon without the existential exhaustion of larger zoos. Arrive early when the pandas are most active.',
-          images: [
-            {
-              src: '/images/gems/red-river-zoo.jpg',
-              alt: 'Red panda at Red River Zoo',
-            },
-          ],
+          tip: 'Thursday nights offer free admission with extended hours until 9pm.'
+        }
+        ],
           address: '4255 23rd Ave S, Fargo, ND 58104',
           coordinates: { lat: 46.8378, lng: -96.8544 },
           hours: 'Daily 10am-5pm (summer), reduced winter hours',
           price: '$12 adults',
           website: 'https://redriverzoo.org',
-          tip: 'The red pandas are the stars — arrive early when they\'re most active.',
-        },
-      ],
+          tip: 'The red pandas are the stars — arrive early when they\'re most active.'
+        }
+      ]
     },
     {
       id: 'far-hidden-gems',
@@ -472,7 +414,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8945, lng: -96.8123 },
           hours: 'By appointment only',
           price: 'Free',
-          tip: 'Email the NDSU archives in advance. This facility isn\'t on campus maps and won\'t be open if you just show up.',
+          tip: 'Email the NDSU archives in advance. This facility isn\'t on campus maps and won\'t be open if you just show up.'
         },
         {
           id: 'gem-tiny-things',
@@ -487,7 +429,7 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8869, lng: -96.7894 },
           hours: 'Daily (Brewhalla hours)',
           price: 'Items vary',
-          tip: 'Walk slowly through Brewhalla or you\'ll miss it. The storefront is intentionally tiny.',
+          tip: 'Walk slowly through Brewhalla or you\'ll miss it. The storefront is intentionally tiny.'
         },
         {
           id: 'gem-rourke-museum',
@@ -502,15 +444,15 @@ export const fargo: CityData = {
             {
               src: '/fargo/hidden-gems/rourke-museum.jpg',
               alt: 'The Rourke Art Museum housed in historic 1915 Federal Courthouse building',
-              credit: 'Wikimedia Commons / CC BY-SA 3.0',
-            },
+              credit: 'Wikimedia Commons / CC BY-SA 3.0'
+            }
           ],
           address: '523 S 4th St, Moorhead, MN 56560',
           coordinates: { lat: 46.8698, lng: -96.7645 },
           hours: 'Wed-Sat 1-5pm',
           price: 'Free',
           website: 'https://www.therourke.org/',
-          tip: 'Come with no expectations. The collection reflects one collector\'s lifetime of curiosity, not a textbook survey.',
+          tip: 'Come with no expectations. The collection reflects one collector\'s lifetime of curiosity, not a textbook survey.'
         },
         {
           id: 'gem-island-park-monuments',
@@ -523,14 +465,14 @@ export const fargo: CityData = {
             {
               src: '/fargo/hidden-gems/gar-statue.jpg',
               alt: 'Grand Army of the Republic Civil War monument in Island Park, Fargo, 1940s',
-              credit: 'Digital Horizons / David Anderson',
-            },
+              credit: 'Digital Horizons / David Anderson'
+            }
           ],
           address: 'Island Park, Fargo, ND',
           coordinates: { lat: 46.8723, lng: -96.7856 },
           hours: 'Park hours',
           price: 'Free',
-          tip: 'The Wergeland statue is on the Scandinavian Heritage Passport trail—a self-guided tour of Norwegian landmarks scattered across Fargo-Moorhead.',
+          tip: 'The Wergeland statue is on the Scandinavian Heritage Passport trail—a self-guided tour of Norwegian landmarks scattered across Fargo-Moorhead.'
         },
         {
           id: 'gem-fargo-forest-garden',
@@ -544,7 +486,7 @@ export const fargo: CityData = {
           hours: 'Dawn to dusk',
           price: 'Free',
           website: 'https://urbanfarmcollective.org/gardens/fargo-forest-garden/',
-          tip: 'It\'s meant to look overgrown. That\'s the point. Bring a book and stay awhile.',
+          tip: 'It\'s meant to look overgrown. That\'s the point. Bring a book and stay awhile.'
         },
         {
           id: 'gem-hidden-pictures-mural',
@@ -557,9 +499,9 @@ export const fargo: CityData = {
           coordinates: { lat: 46.8775, lng: -96.7895 },
           hours: 'Always accessible',
           price: 'Free',
-          tip: 'Count how many hidden images you can find. Most people stop at 12. There are more than 20.',
-        },
-      ],
+          tip: 'Count how many hidden images you can find. Most people stop at 12. There are more than 20.'
+        }
+      ]
     },
     {
       id: 'far-best-bars',
@@ -583,13 +525,13 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/bars/wurst-bier-hall.png',
-              alt: 'Würst Bier Hall interior',
+              alt: 'Würst Bier Hall interior'
             },
             {
               src: 'https://wurstwestfargo.com/wp-content/uploads/2023/11/wurst-bier-hall-west-fargo-nd-best-restaurant-beer-bar.jpg',
-              alt: 'Wurst Bier Hall interior with communal tables',
-            },
-          ],
+              alt: 'Wurst Bier Hall interior with communal tables'
+            }
+          ]
         },
         {
           name: 'The Aquarium',
@@ -606,13 +548,13 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/bars/aquarium.png',
-              alt: 'The Aquarium music venue',
+              alt: 'The Aquarium music venue'
             },
             {
               src: 'https://aquariumfargo.com/wp-content/uploads/sites/19/2025/02/Aqua-Wave-Est-06-Logo-1030x666.png',
-              alt: 'The Aquarium music venue logo',
-            },
-          ],
+              alt: 'The Aquarium music venue logo'
+            }
+          ]
         },
         {
           name: 'JL Beers',
@@ -629,17 +571,17 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/bars/jl-beers-1.png',
-              alt: 'JL Beers interior',
+              alt: 'JL Beers interior'
             },
             {
               src: '/fargo/bars/jl-beers-2.png',
-              alt: 'JL Beers burgers',
+              alt: 'JL Beers burgers'
             },
             {
               src: 'https://jlbeers.com/518/files/2020/06/cropped-site-icon-192x192.png',
-              alt: 'JL Beers logo',
-            },
-          ],
+              alt: 'JL Beers logo'
+            }
+          ]
         },
         {
           name: 'Mick\'s Office',
@@ -656,15 +598,15 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/bars/micks-office.png',
-              alt: 'Mick\'s Office interior',
+              alt: 'Mick\'s Office interior'
             },
             {
               src: 'https://micksoffice.com/wp-content/uploads/2024/12/Micks-Office-Black-FRONT-Logo-TEXT.png',
-              alt: 'Mick\'s Office logo',
-            },
-          ],
-        },
-      ],
+              alt: 'Mick\'s Office logo'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'far-best-restaurants',
@@ -688,17 +630,17 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/restaurants/mezzaluna-1.png',
-              alt: 'Mezzaluna restaurant interior',
+              alt: 'Mezzaluna restaurant interior'
             },
             {
               src: '/fargo/restaurants/mezzaluna-2.png',
-              alt: 'Mezzaluna dining room',
+              alt: 'Mezzaluna dining room'
             },
             {
               src: '/fargo/restaurants/mezzaluna-3.png',
-              alt: 'Mezzaluna cuisine',
-            },
-          ],
+              alt: 'Mezzaluna cuisine'
+            }
+          ]
         },
         {
           name: 'Luna Fargo',
@@ -714,8 +656,8 @@ export const fargo: CityData = {
           instagram: '@luna.fargo',
           image: {
             src: 'https://images.squarespace-cdn.com/content/v1/5e8e0e47750f8d572d1d3eea/6b00ada6-a48a-432b-bf90-dd6af28e7f93/Luna-41.jpg',
-            alt: 'Luna Fargo interior',
-          },
+            alt: 'Luna Fargo interior'
+          }
         },
         {
           name: 'Vinyl Taco',
@@ -732,13 +674,13 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/restaurants/vinyl-taco-1.png',
-              alt: 'Vinyl Taco interior',
+              alt: 'Vinyl Taco interior'
             },
             {
               src: '/fargo/restaurants/vinyl-taco-2.png',
-              alt: 'Vinyl Taco tacos',
-            },
-          ],
+              alt: 'Vinyl Taco tacos'
+            }
+          ]
         },
         {
           name: 'Rhombus Guys',
@@ -755,17 +697,17 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/restaurants/rhombus-1.png',
-              alt: 'Rhombus Guys rooftop patio',
+              alt: 'Rhombus Guys rooftop patio'
             },
             {
               src: '/fargo/restaurants/rhombus-2.png',
-              alt: 'Rhombus Guys pizza',
+              alt: 'Rhombus Guys pizza'
             },
             {
               src: 'https://rhombusguyspiz.wpenginepowered.com/wp-content/uploads/2023/12/rhombus-detroit-pizza-950x1024-1.jpg.webp',
-              alt: 'Rhombus Guys Detroit-style pizza',
-            },
-          ],
+              alt: 'Rhombus Guys Detroit-style pizza'
+            }
+          ]
         },
         {
           name: 'Rosewild',
@@ -781,10 +723,10 @@ export const fargo: CityData = {
           instagram: '@rosewildfargo',
           image: {
             src: 'https://jasperfargo.com/wp-content/uploads/2021/02/c3c72b37-rosewild-full-width-home.jpg',
-            alt: 'Rosewild restaurant interior at Jasper Hotel',
-          },
-        },
-      ],
+            alt: 'Rosewild restaurant interior at Jasper Hotel'
+          }
+        }
+      ]
     },
     {
       id: 'far-best-coffee-shops',
@@ -808,13 +750,13 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/coffee-shops/young-blood-1.png',
-              alt: 'Young Blood Coffee interior',
+              alt: 'Young Blood Coffee interior'
             },
             {
               src: '/fargo/coffee-shops/young-blood-2.png',
-              alt: 'Young Blood Coffee drinks',
-            },
-          ],
+              alt: 'Young Blood Coffee drinks'
+            }
+          ]
         },
         {
           name: 'Twenty Below Coffee Co.',
@@ -831,13 +773,13 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/coffee-shops/twenty-below-1.png',
-              alt: 'Twenty Below Coffee interior',
+              alt: 'Twenty Below Coffee interior'
             },
             {
               src: '/fargo/coffee-shops/twenty-below-2.png',
-              alt: 'Twenty Below Coffee roasting',
-            },
-          ],
+              alt: 'Twenty Below Coffee roasting'
+            }
+          ]
         },
         {
           name: 'Atomic Coffee',
@@ -853,8 +795,8 @@ export const fargo: CityData = {
           instagram: '@atomiccoffeebar',
           image: {
             src: 'https://www.atomiccoffeebar.com/wp-content/uploads/2016/02/atomic-coffee-bar-sunset-1.jpg',
-            alt: 'Atomic Coffee Bar exterior at sunset',
-          },
+            alt: 'Atomic Coffee Bar exterior at sunset'
+          }
         },
         {
           name: 'Black Coffee & Waffle Bar',
@@ -871,15 +813,15 @@ export const fargo: CityData = {
           images: [
             {
               src: '/fargo/coffee-shops/black-coffee-1.png',
-              alt: 'Black Coffee & Waffle Bar interior',
+              alt: 'Black Coffee & Waffle Bar interior'
             },
             {
               src: '/fargo/coffee-shops/black-coffee-2.png',
-              alt: 'Black Coffee waffles',
-            },
-          ],
-        },
-      ],
+              alt: 'Black Coffee waffles'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'far-dark-history',
@@ -900,7 +842,7 @@ export const fargo: CityData = {
           location: {
             name: 'Red River, near Fargo',
       url: 'https://www.google.com/maps/search/?api=1&query=Red%20River%2C%20near%20Fargo%20Fargo',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
@@ -908,44 +850,44 @@ export const fargo: CityData = {
               title: 'The Murder of Billy Wolf',
               show: 'Dakota Spotlight',
               platform: 'Apple Podcasts',
-              url: 'https://dakotaspotlight.com/season-4/',
+              url: 'https://dakotaspotlight.com/season-4/'
             },
             {
               type: 'article',
               title: 'Billy Wolf Murder: 45 Years Later',
               publisher: 'InForum',
-              url: 'https://www.inforum.com/news/the-vault/chasing-billy-the-cold-case-of-billy-wolf-jr',
+              url: 'https://www.inforum.com/news/the-vault/chasing-billy-the-cold-case-of-billy-wolf-jr'
             },
             {
               type: 'article',
               title: 'North Dakota Cold Cases',
               publisher: 'North Dakota Attorney General',
-              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases',
+              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases'
             },
             {
               type: 'video',
               title: 'Unsolved: The Billy Wolf Case',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=BillyWolfCase',
+              url: 'https://www.youtube.com/watch?v=BillyWolfCase'
             },
             {
               type: 'article',
               title: 'William Wolf Jr. Homicide',
               publisher: 'Fargo Police Department',
-              url: 'https://fargond.gov/city-government/departments/police/investigations/criminal-investigations/cold-cases',
-            },
+              url: 'https://fargond.gov/city-government/departments/police/investigations/criminal-investigations/cold-cases'
+            }
           ],
           images: [
             {
               src: '/fargo/dark-history/billy-wolf.png',
-              alt: 'Red River of the North at Fargo, North Dakota, where Billy Wolf\'s body was discovered in 1978',
-            },
-          ],
+              alt: 'Red River of the North at Fargo, North Dakota, where Billy Wolf\'s body was discovered in 1978'
+            }
+          ]
         },
         {
           id: 'far-dark-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'far-dark-2',
@@ -957,7 +899,7 @@ export const fargo: CityData = {
           location: {
             name: 'North Dakota State Hospital, Jamestown',
       url: 'https://www.google.com/maps/search/?api=1&query=North%20Dakota%20State%20Hospital%2C%20Jamestown%20Fargo',
-            stillExists: false,
+            stillExists: false
           },
           sources: [
             {
@@ -965,34 +907,34 @@ export const fargo: CityData = {
               title: 'Hospital Guard Stabbed to Death by Patient',
               publisher: 'The Bismarck Tribune',
               
-              url: 'https://www.newspapers.com/bismarck-tribune-1941/',
+              url: 'https://www.newspapers.com/bismarck-tribune-1941/'
             },
             {
               type: 'article',
               title: 'State Hospital Murder',
               publisher: 'The Fargo Forum',
               year: '1941',
-              url: 'https://www.newspapers.com/fargo-forum-1941/',
+              url: 'https://www.newspapers.com/fargo-forum-1941/'
             },
             {
               type: 'article',
               title: 'North Dakota State Hospital History',
               publisher: 'North Dakota Department of Human Services',
-              url: 'https://www.hhs.nd.gov/north-dakota-state-hospital',
+              url: 'https://www.hhs.nd.gov/north-dakota-state-hospital'
             },
             {
               type: 'video',
               title: 'Historic Mental Asylums of North Dakota',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=NDMentalAsylums',
-            },
+              url: 'https://www.youtube.com/watch?v=NDMentalAsylums'
+            }
           ],
           images: [
             {
               src: '/fargo/dark-history/martel.png',
-              alt: 'Historic brick psychiatric hospital building, representative of 1940s-era state mental health facilities like North Dakota State Hospital',
-            },
-          ],
+              alt: 'Historic brick psychiatric hospital building, representative of 1940s-era state mental health facilities like North Dakota State Hospital'
+            }
+          ]
         },
         {
           id: 'far-dark-3',
@@ -1004,41 +946,41 @@ export const fargo: CityData = {
           location: {
             name: 'Alexander, North Dakota',
       url: 'https://www.google.com/maps/search/?api=1&query=Alexander%2C%20North%20Dakota%20Fargo',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Larry Phebus Cold Case',
               publisher: 'North Dakota Attorney General',
-              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases/larry-phebus',
+              url: 'https://attorneygeneral.nd.gov/public-safety/cold-cases/larry-phebus'
             },
             {
               type: 'article',
               title: 'McKenzie County Cold Cases',
               publisher: 'McKenzie County Sheriff\'s Office',
-              url: 'https://mckenziesheriff.net',
+              url: 'https://mckenziesheriff.net'
             },
             {
               type: 'video',
               title: 'North Dakota Unsolved Mysteries',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=NDUnsolvedMysteries',
+              url: 'https://www.youtube.com/watch?v=NDUnsolvedMysteries'
             },
             {
               type: 'podcast',
               title: 'Rural North Dakota Cold Cases',
               show: 'Dakota Mysteries',
               platform: 'Apple Podcasts',
-              url: 'https://dakotaspotlight.com',
-            },
+              url: 'https://dakotaspotlight.com'
+            }
           ],
           images: [
             {
               src: '/fargo/dark-history/phebus.png',
-              alt: 'Western North Dakota prairie landscape near Alexander, where 14-year-old Larry Phebus was found in 1963',
-            },
-          ],
+              alt: 'Western North Dakota prairie landscape near Alexander, where 14-year-old Larry Phebus was found in 1963'
+            }
+          ]
         },
         {
           id: 'far-dark-4',
@@ -1050,30 +992,24 @@ export const fargo: CityData = {
           location: {
             name: 'Downtown Fargo',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Fargo%20Fargo',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'The Great Fargo Fire of 1893',
               publisher: 'Fargo-Moorhead CVB',
-              url: 'https://www.fargomoorhead.org/',
+              url: 'https://www.fargomoorhead.org/'
             },
             {
               type: 'article',
               title: 'Fargo Fire History',
               publisher: 'North Dakota Historical Society',
-              url: 'https://history.nd.gov/',
-            },
-          ],
-          images: [
-            {
-              src: '/fargo/dark-history/1893-fire.png',
-              alt: 'Downtown Fargo after the devastating 1893 fire',
-            },
-          ],
-        },
-      ],
+              url: 'https://history.nd.gov/'
+            }
+          ]
+          }
+      ]
     },
     {
       id: 'far-lost-and-loved',
@@ -1097,8 +1033,8 @@ export const fargo: CityData = {
           source: 'InForum, KVRR',
           image: {
             src: '/fargo/lost-loved/mexican-village.png',
-            alt: 'Mexican Village restaurant',
-          },
+            alt: 'Mexican Village restaurant'
+          }
         },
         {
           id: 'far-lost-3',
@@ -1115,13 +1051,13 @@ export const fargo: CityData = {
           source: 'InForum, High Plains Reader, Historical Society of Clay County',
           image: {
             src: '/fargo/lost-loved/ralphs.png',
-            alt: 'Ralph\'s Corner Bar',
-          },
+            alt: 'Ralph\'s Corner Bar'
+          }
         },
         {
           id: 'far-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'far-lost-1',
@@ -1138,8 +1074,8 @@ export const fargo: CityData = {
           source: 'High Plains Reader, InForum',
           image: {
             src: '/fargo/lost-loved/hodo.png',
-            alt: 'HoDo Restaurant interior',
-          },
+            alt: 'HoDo Restaurant interior'
+          }
         },
         {
           id: 'far-lost-5',
@@ -1156,13 +1092,13 @@ export const fargo: CityData = {
           source: 'InForum, Valley News Live, KVRR',
           image: {
             src: '/fargo/lost-loved/nestor.png',
-            alt: 'The Nestor Tavern',
-          },
+            alt: 'The Nestor Tavern'
+          }
         },
         {
           id: 'far-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'far-lost-4',
@@ -1179,8 +1115,8 @@ export const fargo: CityData = {
           source: 'InForum, Star Tribune, High Plains Reader',
           image: {
             src: '/fargo/lost-loved/bernbaums.png',
-            alt: 'BernBaum\'s restaurant',
-          },
+            alt: 'BernBaum\'s restaurant'
+          }
         },
         {
           id: 'far-lost-12',
@@ -1197,8 +1133,8 @@ export const fargo: CityData = {
           source: 'InForum',
           image: {
             src: '/fargo/lost-loved/treetop.png',
-            alt: 'Tree Top Restaurant',
-          },
+            alt: 'Tree Top Restaurant'
+          }
         },
         {
           id: 'far-lost-7',
@@ -1215,13 +1151,13 @@ export const fargo: CityData = {
           source: 'NDSU Fargo History, InForum',
           image: {
             src: '/fargo/lost-loved/cinema-grill.png',
-            alt: 'Cinema Grill',
-          },
+            alt: 'Cinema Grill'
+          }
         },
         {
           id: 'far-lost-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'far-lost-9',
@@ -1238,8 +1174,8 @@ export const fargo: CityData = {
           source: 'High Plains Reader',
           image: {
             src: '/fargo/lost-loved/viet.png',
-            alt: 'My Viet restaurant',
-          },
+            alt: 'My Viet restaurant'
+          }
         },
         {
           id: 'far-lost-6',
@@ -1253,7 +1189,7 @@ export const fargo: CityData = {
           communityVoice: '"The goal was met — making the historical building useful again. Now it\'s probably time for somebody in the restaurant business to carry it on." — Roger Erickson',
           lastAddress: '700 1st Ave N, Moorhead',
           coordinates: { lat: 46.8728, lng: -96.7649 },
-          source: 'InForum',
+          source: 'InForum'
         },
         {
           id: 'far-lost-11',
@@ -1270,8 +1206,8 @@ export const fargo: CityData = {
           source: 'InForum, Valley News Live',
           image: {
             src: '/fargo/lost-loved/spicy-pie.png',
-            alt: 'Spicy Pie West Fargo',
-          },
+            alt: 'Spicy Pie West Fargo'
+          }
         },
         {
           id: 'far-lost-8',
@@ -1288,8 +1224,8 @@ export const fargo: CityData = {
           source: 'High Plains Reader',
           image: {
             src: '/fargo/lost-loved/bertosa.png',
-            alt: 'Bertrosa\'s Cafe',
-          },
+            alt: 'Bertrosa\'s Cafe'
+          }
         },
         {
           id: 'far-lost-10',
@@ -1306,8 +1242,8 @@ export const fargo: CityData = {
           source: 'InForum',
           image: {
             src: '/fargo/lost-loved/santa-lucia.png',
-            alt: 'Santa Lucia Restaurante',
-          },
+            alt: 'Santa Lucia Restaurante'
+          }
         },
         {
           id: 'far-lost-13',
@@ -1324,10 +1260,10 @@ export const fargo: CityData = {
           source: 'High Plains Reader',
           image: {
             src: '/fargo/lost-loved/luigis.png',
-            alt: 'Luigi\'s restaurant',
-          },
-        },
-      ],
-    },
-  ],
+            alt: 'Luigi\'s restaurant'
+          }
+        }
+      ]
+    }
+  ]
 }

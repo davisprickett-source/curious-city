@@ -8,7 +8,7 @@ export const portland: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it.',
+      content: 'Welcome to Portland — a city that invented a lifestyle and then got priced out of it.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const portland: CityData = {
       description: 'A city that invented a lifestyle and then got priced out of it.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/portland/essay/the-dream-of-the-nineties',
+      href: '/portland/essay/the-dream-of-the-nineties'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const portland: CityData = {
           title: 'Forest Park: Urban Wilderness Guide',
           description: 'Over 80 miles of trails minutes from downtown.',
           meta: 'Guide',
-          href: '/portland/forest-park',
+          href: '/portland/forest-park'
         },
         {
           title: 'The Downtown Debate',
           description: 'What happened to Portland\'s core and what\'s next.',
           meta: 'Feature',
-          href: '/portland/downtown-future',
+          href: '/portland/downtown-future'
         },
         {
           title: 'Best Coffee Roasters',
           description: 'Portland takes coffee seriously. Here\'s where to start.',
           meta: 'List',
           variant: 'compact',
-          href: '/portland/coffee-roasters',
+          href: '/portland/coffee-roasters'
         }
-      ],
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'pdx-curiosities',
@@ -70,26 +70,26 @@ export const portland: CityData = {
           body: 'In 1946, Portland dug a hole in a median strip for a light pole that never arrived. For two years, the hole just sat there—a tiny circle of exposed dirt mocking the city. Oregon Journal columnist Dick Fagan, whose office overlooked the spot, decided to claim it. He planted flowers, named it Mill Ends Park, and began writing columns about Patrick O\'Toole, the leprechaun who supposedly lived there.\n\nFagan treated the park with absurd bureaucratic seriousness. He reported on miniature swimming pools being installed, tiny Ferris wheels appearing overnight, and elaborate leprechaun political scandals. When he died in 1969, the columns ended, but the park stayed. In 1976, Portland made it official—at 452 square inches, it entered Guinness World Records as Earth\'s smallest park.\n\nEngland tried to steal the title in 2018 with "Prince\'s Park" (217 square inches), but Portland fought back, arguing England\'s was a "publicity stunt" while Mill Ends had decades of documentation. Portland held the title for 48 years.\n\nThen in December 2024, Japan built a park in Nagaizumi that\'s slightly smaller. Portland lost. The leprechaun remains, presumably furious.',
           image: {
             src: '/portland/curiosities/mill-ends-park.png',
-            alt: 'Mill Ends Park, the world\'s smallest park in Portland',
+            alt: 'Mill Ends Park, the world\'s smallest park in Portland'
           },
           sources: [
             {
               title: 'Smallest Park',
               publisher: 'Guinness World Records',
-              url: 'https://www.guinnessworldrecords.com/world-records/smallest-park',
+              url: 'https://www.guinnessworldrecords.com/world-records/smallest-park'
             }
           ],
           location: {
             name: 'SW Naito Parkway',
       url: 'https://www.google.com/maps/search/?api=1&query=SW%20Naito%20Parkway%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5163,-122.6730',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'pdx-curiosity-horse-rings',
@@ -100,34 +100,30 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/portland-cur-horse-rings-1.png',
-              alt: 'Historic iron horse ring in Portland curb with toy horse',
+              alt: 'Historic iron horse ring in Portland curb with toy horse'
             },
             {
               src: '/portland/curiosities/portland-cur-horse-rings-2.png',
-              alt: 'Historic iron horse ring in Portland curb with toy horse',
-            },
-            {
-              src: '/portland/curiosities/horse-rings.png',
-              alt: 'Historic iron horse ring in Portland curb with toy horse',
-            },
-          ],
+              alt: 'Historic iron horse ring in Portland curb with toy horse'
+            }
+            ],
           sources: [
             {
               title: 'Horse rings in Portland, Oregon',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Horse_rings_in_Portland,_Oregon',
+              url: 'https://en.wikipedia.org/wiki/Horse_rings_in_Portland,_Oregon'
             },
             {
               title: 'Portland Horse Rings',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/portland-horse-rings',
+              url: 'https://www.atlasobscura.com/places/portland-horse-rings'
             }
           ],
           location: {
             name: 'Throughout Portland (especially old neighborhoods)',
       url: 'https://www.google.com/maps/search/?api=1&query=Throughout%20Portland%20(especially%20old%20neighborhoods)%20Portland',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-7',
@@ -137,13 +133,13 @@ export const portland: CityData = {
           body: 'From 1951 to 2023, pumping your own gas was illegal in Oregon. Every station had attendants. The official reasons were "fire safety" and "job preservation." The real reason? Nobody\'s entirely sure anymore. When the law finally changed in August 2023 to allow self-service, some Oregonians genuinely panicked—they had no idea how to operate a gas pump. Facebook groups filled with anxious questions. Rural areas had been exempt since 2018, but for Portland residents, the transition felt like being asked to perform surgery. It was 72 years of enforced helplessness, and it showed. New Jersey remains the only state where you still can\'t pump your own gas.',
           image: {
             src: '/portland/curiosities/Portland-gas-service.png',
-            alt: 'Oregon gas station attendant filling car',
-          },
+            alt: 'Oregon gas station attendant filling car'
+          }
         },
         {
           id: 'pdx-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'pdx-curiosity-10',
@@ -153,15 +149,15 @@ export const portland: CityData = {
           body: 'In 1845, two New England transplants, Asa Lovejoy from Boston and Francis Pettygrove from Portland, Maine, founded a settlement on the Willamette River. Then they did what all men with too much ego and too little to do eventually do: they argued. Each wanted to name the nascent town after his respective hometown. Neither would yield. So, like true pioneers, they settled it with a coin flip. Pettygrove won, and "Portland" it was. The "Portland Penny," now enshrined at the Oregon Historical Society, is a tangible reminder that one of America\'s most distinctive cities exists because of a 50/50 chance. Had that copper penny landed differently, we\'d be talking about "Boston, Oregon"—a geographical and philosophical abomination almost too cursed to contemplate.',
           image: {
             src: '/portland/curiosities/coin-flip.png',
-            alt: 'The Portland Penny that decided the city\'s name',
+            alt: 'The Portland Penny that decided the city\'s name'
           },
           sources: [
             {
               title: 'Portland Penny',
               publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/portland_penny/',
+              url: 'https://www.oregonencyclopedia.org/articles/portland_penny/'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-curiosity-keep-weird',
@@ -172,35 +168,31 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/portland-curious-bumper-sticker-1.png',
-              alt: 'Keep Portland Weird bumper sticker and campaign',
+              alt: 'Keep Portland Weird bumper sticker and campaign'
             },
             {
               src: '/portland/curiosities/portland-curious-bumper-sticker-2.png',
-              alt: 'Keep Portland Weird bumper sticker and campaign',
-            },
-            {
-              src: '/portland/curiosities/keep-portland-weird.png',
-              alt: 'Keep Portland Weird bumper sticker and campaign',
-            },
-          ],
+              alt: 'Keep Portland Weird bumper sticker and campaign'
+            }
+            ],
           sources: [
             {
               title: 'Keep Portland Weird',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Keep_Portland_Weird',
+              url: 'https://en.wikipedia.org/wiki/Keep_Portland_Weird'
             },
             {
               title: 'Man behind "Keep Portland Weird"',
               publisher: 'KOIN',
-              url: 'https://www.koin.com/is-portland-over/keep-portland-weird-slogan-originator-says-city-not-as-weird/',
+              url: 'https://www.koin.com/is-portland-over/keep-portland-weird-slogan-originator-says-city-not-as-weird/'
             }
           ],
           location: {
             name: 'Music Millennium',
       url: 'https://www.google.com/maps/search/?api=1&query=Music%20Millennium%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5225,-122.6917',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-12',
@@ -210,8 +202,8 @@ export const portland: CityData = {
           body: 'In 1984, Widmer Brothers and BridgePort Brewing opened in Portland, years before anyone called it "craft beer." They were just making beer that didn\'t taste like water. The term wouldn\'t be coined for another decade. Portland now has over 75 breweries within city limits—more per capita than any major American city. The Oregon Brewers Festival, running since 1988, is one of the largest outdoor craft beer events in the country. What started as a handful of weirdos brewing in warehouses became an entire economic sector. Portland didn\'t follow the craft beer trend. It created it.',
           image: {
             src: '/portland/curiosities/beer.png',
-            alt: 'Portland craft beer scene with local breweries',
-          },
+            alt: 'Portland craft beer scene with local breweries'
+          }
         },
         {
           id: 'pdx-curiosity-13',
@@ -222,26 +214,26 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/highway-park-1.png',
-              alt: 'Harbor Drive freeway before demolition',
+              alt: 'Harbor Drive freeway before demolition'
             },
             {
               src: '/portland/curiosities/highway-park-2.png',
-              alt: 'Tom McCall Waterfront Park after freeway removal',
+              alt: 'Tom McCall Waterfront Park after freeway removal'
             }
           ],
           sources: [
             {
               title: 'History of Tom McCall Waterfront Park',
               publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/parks/tom-mccall-waterfront-park',
+              url: 'https://www.portland.gov/parks/tom-mccall-waterfront-park'
             }
           ],
           location: {
             name: 'Tom McCall Waterfront Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Tom%20McCall%20Waterfront%20Park%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5208,-122.6708',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-5',
@@ -251,15 +243,15 @@ export const portland: CityData = {
           body: 'Portland averages 36 inches of rain per year. New York gets 46 inches. Houston gets 50. Miami gets 62. The Pacific Northwest\'s rainy reputation isn\'t about quantity—it\'s about relentlessness. Portland doesn\'t dump rain all at once like other cities. It drizzles. Constantly. From October to June, the sky stays gray and the rain never quite stops, but never quite commits either. It\'s meteorological psychological warfare. Real Portlanders don\'t carry umbrellas. They wear layers, embrace dampness, and develop an adversarial relationship with the sun.',
           image: {
             src: '/portland/curiosities/Portland-Rain.png',
-            alt: 'Rainy day in Portland with people without umbrellas',
+            alt: 'Rainy day in Portland with people without umbrellas'
           },
           sources: [
             {
               title: 'Climate Portland - Oregon',
               publisher: 'US Climate Data',
-              url: 'https://www.usclimatedata.com/climate/portland/oregon/united-states/usor0275',
+              url: 'https://www.usclimatedata.com/climate/portland/oregon/united-states/usor0275'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-curiosity-benson-bubblers',
@@ -269,25 +261,25 @@ export const portland: CityData = {
           body: 'In 1912, lumber baron Simon Benson donated $10,000 to install 20 bronze drinking fountains across Portland. The official story? He saw a girl crying at a parade because she couldn\'t find water. The real story? Benson wanted his mill workers to drink water during lunch breaks instead of beer. Architect A.E. Doyle designed elegant four-bowl fountains that bubble constantly—hence "Benson Bubblers." Today, Portland maintains 52 four-bowl Bubblers and 74 single-bowl versions, pouring 100,000 gallons of drinking water per day, every day, year-round (except during freezes). In the 1970s, the Benson family requested the fountains only be installed in specific downtown boundaries "so as not to diminish the uniqueness of them." Portland listened. The Bubblers remain a downtown-only amenity, a small bronze reminder that sometimes paternalism produces genuinely good public infrastructure.',
           image: {
             src: '/portland/curiosities/benson-bubbler.jpg',
-            alt: 'Historic Benson Bubbler bronze drinking fountain in Portland',
+            alt: 'Historic Benson Bubbler bronze drinking fountain in Portland'
           },
           sources: [
             {
               title: 'Benson Bubblers',
               publisher: 'Portland.gov',
-              url: 'https://www.portland.gov/water/about-portlands-water-system/bubblers',
+              url: 'https://www.portland.gov/water/about-portlands-water-system/bubblers'
             },
             {
               title: 'Portland\'s Love Affair With Its Special Water Fountains',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/articles/portland-benson-bubblers',
+              url: 'https://www.atlasobscura.com/articles/portland-benson-bubblers'
             }
           ],
           location: {
             name: 'Downtown Portland',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Portland%20Portland',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-portlandia',
@@ -298,35 +290,31 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/portland-curious-portlandia.png',
-              alt: 'Portlandia statue above Portland Building entrance',
+              alt: 'Portlandia statue above Portland Building entrance'
             },
             {
               src: '/portland/curiosities/portland-curious-portlandia2.png',
-              alt: 'Portlandia statue above Portland Building entrance',
-            },
-            {
-              src: '/portland/curiosities/portlandia-statue.png',
-              alt: 'Portlandia statue above Portland Building entrance',
-            },
-          ],
+              alt: 'Portlandia statue above Portland Building entrance'
+            }
+            ],
           sources: [
             {
               title: 'Portlandia (statue)',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Portlandia_(statue)',
+              url: 'https://en.wikipedia.org/wiki/Portlandia_(statue)'
             },
             {
               title: 'Portlandia',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/portlandia',
+              url: 'https://www.atlasobscura.com/places/portlandia'
             }
           ],
           location: {
             name: 'Portland Building, 1120 SW 5th Ave',
       url: 'https://www.google.com/maps/search/?api=1&query=Portland%20Building%2C%201120%20SW%205th%20Ave%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5151,-122.6793',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-paul-bunyan',
@@ -337,31 +325,27 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/portland-curious-bunyan.png',
-              alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
-            },
-            {
-              src: '/portland/curiosities/paul-bunyan.png',
-              alt: 'Giant Paul Bunyan statue in Kenton neighborhood',
-            },
-          ],
+              alt: 'Giant Paul Bunyan statue in Kenton neighborhood'
+            }
+            ],
           sources: [
             {
               title: 'Statue of Paul Bunyan (Portland, Oregon)',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Statue_of_Paul_Bunyan_(Portland,_Oregon)',
+              url: 'https://en.wikipedia.org/wiki/Statue_of_Paul_Bunyan_(Portland,_Oregon)'
             },
             {
               title: 'Paul Bunyan Statue',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/paul-bunyan-statue',
+              url: 'https://www.atlasobscura.com/places/paul-bunyan-statue'
             }
           ],
           location: {
             name: 'N Denver Ave & N Lombard St',
       url: 'https://www.google.com/maps/search/?api=1&query=N%20Denver%20Ave%20%26%20N%20Lombard%20St%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5723,-122.6838',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-11',
@@ -371,14 +355,14 @@ export const portland: CityData = {
           body: 'In 1962, a farmer plowing his field near Tualatin hit something massive: mastodon bones. The skeleton dated to roughly 10,000 years ago, at the tail end of the last Ice Age. But the real discovery was the cut marks—clear evidence of human butchering. Someone had carved meat from this animal. It proved that humans and megafauna coexisted in the Portland area for thousands of years. The Tualatin Mastodon now resides at the Oregon Museum of Science and Industry, a reminder that this land was occupied long before coin flips and city planning.',
           image: {
             src: '/portland/curiosities/bones.png',
-            alt: 'Tualatin Mastodon skeleton at OMSI',
+            alt: 'Tualatin Mastodon skeleton at OMSI'
           },
           location: {
             name: 'OMSI',
       url: 'https://www.google.com/maps/search/?api=1&query=OMSI%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5084,-122.6662',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'pdx-curiosity-naked-bike-ride',
@@ -388,20 +372,20 @@ export const portland: CityData = {
           body: 'Every June since 2004, thousands of Portlanders strip down and ride bikes through downtown to protest oil dependency and promote body positivity. At its peak in 2019, Portland\'s World Naked Bike Ride drew 10,000 participants—the largest in the world. It\'s completely legal. The city doesn\'t even blink. Riders decorate their bodies with paint, glitter, and political slogans. Some wear costumes. Most wear nothing. The ride is simultaneously earnest protest, civic spectacle, and performance art. In 2024, organizers took a year off, and a splinter group immediately launched a competing naked ride. Because of course they did. Only in Portland does "too many naked bike rides" become an actual problem.',
           image: {
             src: '/portland/curiosities/naked-bike-ride.jpg',
-            alt: 'World Naked Bike Ride in Portland',
+            alt: 'World Naked Bike Ride in Portland'
           },
           sources: [
             {
               title: 'Portland World Naked Bike Ride',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Portland_World_Naked_Bike_Ride',
+              url: 'https://en.wikipedia.org/wiki/Portland_World_Naked_Bike_Ride'
             },
             {
               title: 'World Naked Bike Ride',
               publisher: 'Official PDXWNBR',
-              url: 'https://pdxwnbr.org/',
+              url: 'https://pdxwnbr.org/'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-curiosity-church-elvis',
@@ -412,30 +396,26 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/portland-curious-elvis.png',
-              alt: '24-Hour Church of Elvis storefront window installation',
-            },
-            {
-              src: '/portland/curiosities/church-elvis.png',
-              alt: '24-Hour Church of Elvis storefront window installation',
-            },
-          ],
+              alt: '24-Hour Church of Elvis storefront window installation'
+            }
+            ],
           sources: [
             {
               title: '24 Hour Church of Elvis',
               publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/church-of-elvis/',
+              url: 'https://www.oregonencyclopedia.org/articles/church-of-elvis/'
             },
             {
               title: '24 Hour Church of Elvis',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/24-hour-church-elvis',
+              url: 'https://www.atlasobscura.com/places/24-hour-church-elvis'
             }
           ],
           location: {
             name: 'Former location: 408 NW Couch St',
       url: 'https://www.google.com/maps/search/?api=1&query=Former%20location%3A%20408%20NW%20Couch%20St%20Portland',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'pdx-curiosity-14',
@@ -445,16 +425,16 @@ export const portland: CityData = {
           body: 'When Voodoo Doughnut opened in 2003, the bacon maple bar was a genuinely strange idea. They sold a Pepto-Bismol doughnut and a NyQuil-frosted doughnut before the FDA shut that down. It was weird in the way Portland used to be weird—unselfconscious, a little gross, and doing it for the bit. Then it got famous. Now there are locations in multiple states, the lines are full of tourists with selfie sticks, and every local will tell you to go to Blue Star or Pip\'s Original instead. Voodoo isn\'t weird anymore. It\'s a brand. And that might be the most Portland story of all.',
           image: {
             src: '/portland/curiosities/voodoo.png',
-            alt: 'Voodoo Doughnut shop in Portland Old Town',
+            alt: 'Voodoo Doughnut shop in Portland Old Town'
           },
           location: {
             name: 'Voodoo Doughnut Old Town',
       url: 'https://www.google.com/maps/search/?api=1&query=Voodoo%20Doughnut%20Old%20Town%20Portland',
             mapUrl: 'https://www.google.com/maps/search/?api=1&query=45.5226,-122.6730',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'pdx-iconic-spots',
@@ -471,7 +451,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/powells-books-1.png',
-              alt: 'Powell\'s Books interior with towering shelves',
+              alt: 'Powell\'s Books interior with towering shelves'
             }
           ],
           address: '1005 W Burnside St, Portland, OR 97209',
@@ -479,31 +459,25 @@ export const portland: CityData = {
           hours: 'Daily 10am-9pm',
           price: 'Free to browse',
           website: 'https://powells.com',
-          tip: 'The Gold Room has the maps. The Rare Book Room has the ghosts of dead authors and a $1,000 Lewis & Clark journal.',
+          tip: 'The Gold Room has the maps. The Rare Book Room has the ghosts of dead authors and a $1,000 Lewis & Clark journal.'
         },
         {
           id: 'iconic-2',
           type: 'iconic-spot',
           name: 'Japanese Garden',
           category: 'Garden',
-          description: 'Professor Takuma Tono designed this garden with five distinct styles spanning Japanese garden history—unusual, since most Japanese gardens follow a single tradition. Construction began in 1963, opened to the public in 1967. In 1988, Ambassador Matsunaga called it "the most beautiful and authentic Japanese garden in the world outside of Japan." The walk up through Washington Park earns the admission price before you even arrive.',
-          images: [
-            {
-              src: '',
-              alt: 'Portland Japanese Garden',
-            }
-          ],
+          description: 'Professor Takuma Tono designed this garden with five distinct styles spanning Japanese garden history—unusual, since most Japanese gardens follow a single tradition. Construction began in 1963, opened to the public in 1967. In 1988, Ambassador Matsunaga called it "the most beautiful and authentic Japanese garden in the world outside of Japan." The walk up through Washington Park earns the admission price before you even arrive.'
           address: '611 SW Kingston Ave, Portland, OR 97205',
           coordinates: { lat: 45.5189, lng: -122.7067 },
           hours: 'Daily 10am-4pm (varies by season)',
           price: '$20 adults',
           website: 'https://japanesegarden.org',
-          tip: 'Weekday mornings before 10am to avoid tour groups',
+          tip: 'Weekday mornings before 10am to avoid tour groups'
         },
         {
           id: 'iconic-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'iconic-3',
@@ -514,52 +488,40 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/curiosities/park-1.png',
-              alt: 'Trail through Forest Park',
+              alt: 'Trail through Forest Park'
             }
           ],
           address: 'Multiple trailheads; Pittock Mansion is a good start',
           coordinates: { lat: 45.5395, lng: -122.7167 },
           hours: '5am-10pm daily',
           price: 'Free',
-          tip: 'The hike from Lower Macleay Park to Pittock Mansion is the classic route',
+          tip: 'The hike from Lower Macleay Park to Pittock Mansion is the classic route'
         },
         {
           id: 'iconic-4',
           type: 'iconic-spot',
           name: 'Multnomah Falls',
           category: 'Nature',
-          description: 'Oregon\'s tallest waterfall at 620 feet, 30 miles east of Portland. Over 2 million annual visitors make it the Pacific Northwest\'s most-visited natural site. The 1914 Benson Bridge—a 45-foot reinforced-concrete arch built by Simon Benson\'s Pacific Bridge Company—crosses 105 feet above the lower cascade. Lewis and Clark noted it in 1805. Benson developed the area in the 1920s with a lodge, pathways, and the iconic bridge. The hike to the top is 1.2 miles of switchbacks. Go early or accept the crowds.',
-          images: [
-            {
-              src: '',
-              alt: 'Multnomah Falls with bridge',
-            }
-          ],
+          description: 'Oregon\'s tallest waterfall at 620 feet, 30 miles east of Portland. Over 2 million annual visitors make it the Pacific Northwest\'s most-visited natural site. The 1914 Benson Bridge—a 45-foot reinforced-concrete arch built by Simon Benson\'s Pacific Bridge Company—crosses 105 feet above the lower cascade. Lewis and Clark noted it in 1805. Benson developed the area in the 1920s with a lodge, pathways, and the iconic bridge. The hike to the top is 1.2 miles of switchbacks. Go early or accept the crowds.'
           address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
           coordinates: { lat: 45.5762, lng: -122.1158 },
           hours: 'Dawn to dusk',
           price: 'Free; parking reservations may be required',
           website: 'https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30026',
-          tip: 'Go early or late to avoid the crowds',
+          tip: 'Go early or late to avoid the crowds'
         },
         {
           id: 'iconic-5',
           type: 'iconic-spot',
           name: 'Lan Su Chinese Garden',
           category: 'Garden',
-          description: 'Sixty-five artisans from Suzhou lived in Portland for nine months in 1999-2000, building this Ming Dynasty-style garden by hand. They shipped 500 tons of stone and taihu rock from China. Cost $12.8 million. Opened September 14, 2000, as a sister-city project with Suzhou. The name means "Garden of Awakening Orchids." The teahouse serves traditional Chinese tea overlooking rockwork that took centuries to weather into the proper shapes.',
-          images: [
-            {
-              src: '',
-              alt: 'Lan Su Chinese Garden pavilion',
-            }
-          ],
+          description: 'Sixty-five artisans from Suzhou lived in Portland for nine months in 1999-2000, building this Ming Dynasty-style garden by hand. They shipped 500 tons of stone and taihu rock from China. Cost $12.8 million. Opened September 14, 2000, as a sister-city project with Suzhou. The name means "Garden of Awakening Orchids." The teahouse serves traditional Chinese tea overlooking rockwork that took centuries to weather into the proper shapes.'
           address: '239 NW Everett St, Portland, OR 97209',
           coordinates: { lat: 45.5256, lng: -122.6728 },
           hours: 'Daily 10am-6pm (varies by season)',
           price: '$14 adults',
           website: 'https://lansugarden.org',
-          tip: 'The tea service is worth the extra cost',
+          tip: 'The tea service is worth the extra cost'
         },
         {
           id: 'iconic-6',
@@ -570,7 +532,7 @@ export const portland: CityData = {
           images: [
             {
               src: 'https://picsum.photos/seed/mississippi-avenue-portland/800/600', // Placeholder
-              alt: 'Mississippi Avenue storefronts and street scene',
+              alt: 'Mississippi Avenue storefronts and street scene'
             }
           ],
           address: 'N Mississippi Ave between Fremont and Skidmore',
@@ -578,7 +540,7 @@ export const portland: CityData = {
           hours: 'Businesses vary',
           price: 'Free to explore',
           tip: 'Park near Skidmore and walk the strip. Saturday afternoons are peak.',
-          website: 'https://mississippiave.org',
+          website: 'https://mississippiave.org'
         },
         {
           id: 'iconic-7',
@@ -589,7 +551,7 @@ export const portland: CityData = {
           images: [
             {
               src: 'https://picsum.photos/seed/shanghai-tunnels-portland/800/600', // Placeholder
-              alt: 'Old Town Pizza above the historic Shanghai Tunnels',
+              alt: 'Old Town Pizza above the historic Shanghai Tunnels'
             }
           ],
           address: '226 NW Davis St, Portland, OR 97209',
@@ -597,7 +559,7 @@ export const portland: CityData = {
           hours: 'Tours by reservation',
           price: 'Tour prices vary',
           website: 'https://shanghaitunnels.com',
-          tip: 'Book the evening ghost tour for the full experience.',
+          tip: 'Book the evening ghost tour for the full experience.'
         },
         {
           id: 'iconic-8',
@@ -608,7 +570,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/ota-tofu.png',
-              alt: 'Ota Tofu shop',
+              alt: 'Ota Tofu shop'
             }
           ],
           address: '529 SE Grand Ave, Portland, OR 97214',
@@ -616,7 +578,7 @@ export const portland: CityData = {
           hours: 'Mon-Sat 8am-5pm',
           price: 'Fresh tofu $3-5',
           website: 'https://www.otatofu.com',
-          tip: 'Buy fresh tofu and support this historic family business.',
+          tip: 'Buy fresh tofu and support this historic family business.'
         },
         {
           id: 'iconic-9',
@@ -627,7 +589,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/hat-museum.png',
-              alt: 'National Hat Museum collection',
+              alt: 'National Hat Museum collection'
             }
           ],
           address: '1928 SE Ladd Ave, Portland, OR 97214',
@@ -635,7 +597,7 @@ export const portland: CityData = {
           hours: 'By appointment only',
           price: '$15',
           website: 'https://thehatmuseum.com',
-          tip: 'Book weeks in advance - tours fill quickly.',
+          tip: 'Book weeks in advance - tours fill quickly.'
         },
         {
           id: 'iconic-10',
@@ -646,7 +608,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/hippo.png',
-              alt: 'Hippo Hardware interior with hippo collection',
+              alt: 'Hippo Hardware interior with hippo collection'
             }
           ],
           address: '1040 E Burnside St, Portland, OR 97214',
@@ -654,7 +616,7 @@ export const portland: CityData = {
           hours: 'Wed-Sun 10am-5pm',
           price: 'Free to browse',
           website: 'https://www.hippohardware.com',
-          tip: 'Count how many hippos you can spot while browsing. The collection is extensive.',
+          tip: 'Count how many hippos you can spot while browsing. The collection is extensive.'
         },
         {
           id: 'iconic-11',
@@ -665,11 +627,11 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/botanical-1.png',
-              alt: 'Leach Botanical Garden paths',
+              alt: 'Leach Botanical Garden paths'
             },
             {
               src: '/portland/hidden-gems/botanical-2.png',
-              alt: 'Leach Botanical Garden scenery',
+              alt: 'Leach Botanical Garden scenery'
             }
           ],
           address: '6704 SE 122nd Ave, Portland, OR 97236',
@@ -677,9 +639,9 @@ export const portland: CityData = {
           hours: 'Tue-Sun 10am-4pm',
           price: '$8 adults/$5 youth (free admission available by request)',
           website: 'https://leachgarden.org',
-          tip: 'Spring blooms peak in April-May. Bring a thermos—no cafe on site.',
+          tip: 'Spring blooms peak in April-May. Bring a thermos—no cafe on site.'
         }
-      ],
+      ]
     },
     {
       id: 'pdx-hidden-gems',
@@ -691,7 +653,7 @@ export const portland: CityData = {
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
                       id: 'gem-museums-new-1',
@@ -704,17 +666,13 @@ export const portland: CityData = {
                       images: [
                         {
                           src: '/portland/hidden-gems/portland-hidden-curious-1.png',
-                          alt: 'Freakybuttrue Peculiarium',
+                          alt: 'Freakybuttrue Peculiarium'
                         },
                         {
                           src: '/portland/hidden-gems/portland-hidden-curious-2.png',
-                          alt: 'Freakybuttrue Peculiarium',
-                        },
-                        {
-                          src: '/portland/hidden-gems/peculiarium.png', // Placeholder image
-                          alt: 'Exterior of Freakybuttrue Peculiarium',
+                          alt: 'Freakybuttrue Peculiarium'
                         }
-                      ],
+                        ],
                       address: '2234 NW Thurman St, Portland, OR 97210', // Found address from web
                       coordinates: { lat: 45.5398, lng: -122.6998 }, // Approx coordinates
                       hours: 'Wed-Sun 11am-6pm', // Typical museum hours, might need verification
@@ -725,14 +683,14 @@ export const portland: CityData = {
                         {
                           title: 'Freakybuttrue Peculiarium',
                           publisher: 'Atlas Obscura',
-                          url: 'https://www.atlasobscura.com/places/peculiarium',
+                          url: 'https://www.atlasobscura.com/places/peculiarium'
                         },
                         {
                           title: 'Freakybuttrue Peculiarium',
                           publisher: 'Peculiarium.com',
-                          url: 'https://peculiarium.com/',
+                          url: 'https://peculiarium.com/'
                         }
-                      ],
+                      ]
                     },
                             {
                               id: 'gem-landmark-1',
@@ -745,13 +703,9 @@ export const portland: CityData = {
                               images: [
                                 {
                                   src: '/portland/hidden-gems/portland-hidden-witch-1.png',
-                                  alt: 'Witch\'s Castle in Forest Park',
-                                },
-                                {
-                                  src: '/portland/hidden-gems/witchs-castle.png',
-                                  alt: 'Witch\'s Castle in Forest Park',
+                                  alt: 'Witch\'s Castle in Forest Park'
                                 }
-                              ],
+                                ],
                               address: 'Forest Park (accessible via Lower Macleay Trail)', // General location
                               coordinates: { lat: 45.5399, lng: -122.7214 }, // Approx coordinates
                               hours: 'Dawn to Dusk',
@@ -761,14 +715,14 @@ export const portland: CityData = {
                                 {
                                   title: 'Witch\'s Castle in Forest Park',
                                   publisher: 'Atlas Obscura',
-                                  url: 'https://www.atlasobscura.com/places/witches-castle',
+                                  url: 'https://www.atlasobscura.com/places/witches-castle'
                                 },
                                 {
                                   title: 'Exploring Portland\'s Witch\'s Castle',
                                   publisher: 'Oregon Hikers',
-                                  url: 'https://www.oregonhikers.org/field_guide/Witch%27s_Castle_in_Forest_Park',
+                                  url: 'https://www.oregonhikers.org/field_guide/Witch%27s_Castle_in_Forest_Park'
                                 }
-                              ],
+                              ]
                             },
                 {
                               id: 'gem-religious-1',
@@ -781,17 +735,13 @@ export const portland: CityData = {
                               images: [
                                 {
                                   src: '/portland/hidden-gems/portland-grotto-1.png',
-                                  alt: 'The Grotto - cliffside view',
+                                  alt: 'The Grotto - cliffside view'
                                 },
                                 {
                                   src: '/portland/hidden-gems/portland-grotto-2.png',
-                                  alt: 'The Grotto - cliffside view',
-                                },
-                                {
-                                  src: '/portland/hidden-gems/the-grotto.png',
-                                  alt: 'The Grotto - cliffside view',
+                                  alt: 'The Grotto - cliffside view'
                                 }
-                              ],
+                                ],
                               address: '8801 NE Skidmore St, Portland, OR 97220',
                               coordinates: { lat: 45.5683, lng: -122.5854 },
                               hours: 'Daily 9am-5pm (Chapel open until 8pm)',
@@ -802,14 +752,14 @@ export const portland: CityData = {
                                 {
                                   title: 'The Grotto - National Sanctuary of Our Sorrowful Mother',
                                   publisher: 'The Grotto',
-                                  url: 'https://thegrotto.org/',
+                                  url: 'https://thegrotto.org/'
                                 },
                                 {
                                   title: 'The Grotto, Portland',
                                   publisher: 'Atlas Obscura',
-                                  url: 'https://www.atlasobscura.com/places/the-grotto',
+                                  url: 'https://www.atlasobscura.com/places/the-grotto'
                                 }
-                              ],
+                              ]
                             },
         {
                       id: 'gem-museums-new-2',
@@ -820,21 +770,17 @@ export const portland: CityData = {
                       images: [
                         {
                           src: '/portland/hidden-gems/portland-hidden-puppet-1.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display'
                         },
                         {
                           src: '/portland/hidden-gems/portland-hidden-puppet-2.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display'
                         },
                         {
                           src: '/portland/hidden-gems/portland-hidden-puppet-3.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display',
-                        },
-                        {
-                          src: '/portland/hidden-gems/puppet-museum.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display',
+                          alt: 'Interior of Portland Puppet Museum with puppets on display'
                         }
-                      ],
+                        ],
                       address: '900 SE Salmon St, Portland, OR 97214', // Found address from web
                       coordinates: { lat: 45.5143, lng: -122.6596 }, // Approx coordinates
                       hours: 'Fri-Sun 12pm-5pm', // Typical museum hours, might need verification
@@ -845,27 +791,16 @@ export const portland: CityData = {
                         {
                           title: 'Portland Puppet Museum',
                           publisher: 'Portland Puppet Museum',
-                          url: 'http://puppetmuseum.com/',
+                          url: 'http://puppetmuseum.com/'
                         },
                         {
                           title: 'Portland Puppet Museum',
                           publisher: 'Atlas Obscura',
-                          url: 'https://www.atlasobscura.com/places/portland-puppet-museum',
+                          url: 'https://www.atlasobscura.com/places/portland-puppet-museum'
                         }
-                      ],
-                    },
-        {
-                      id: 'gem-quirky-new-1',
-                      type: 'hidden-gem',
-                      name: 'Wyrd Leatherworks and Meadery',
-                      category: 'Unique Experience/Food & Drink',
-                      description: 'Someone decided to combine a working leather shop with a mead hall and commit fully to the medieval LARP aesthetic. Local honey gets fermented into traditional mead while craftsmen hammer belts and armor at workbenches. The result is surprisingly coherent: half Skyrim tavern, half functioning business. Regulars arrive in cloaks. Nobody bats an eye. This is Portland—earnest nerdom gets respected here.',
-                      images: [
-                        {
-                          src: '/portland/hidden-gems/wyrd-meadery.png', // Placeholder image
-                          alt: 'Interior of Wyrd Leatherworks and Meadery with medieval decor',
-                        }
-                      ],
+                      ]
+                    }
+        ],
                       address: '8313 SE 13th Ave, Portland, OR 97202', // Found address from web
                       coordinates: { lat: 45.4746, lng: -122.6468 }, // Approx coordinates
                       hours: 'Wed-Sun 4pm-9pm', // Typical hours, might need verification
@@ -876,14 +811,14 @@ export const portland: CityData = {
                         {
                           title: 'Wyrd Leatherworks and Meadery',
                           publisher: 'Wyrd Leatherworks',
-                          url: 'https://wyrdleatherandmead.com/',
+                          url: 'https://wyrdleatherandmead.com/'
                         },
                         {
                           title: 'Wyrd Leatherworks and Meadery, Portland',
                           publisher: 'Atlas Obscura',
-                          url: 'https://www.atlasobscura.com/places/wyrd-leatherworks-and-meadery',
+                          url: 'https://www.atlasobscura.com/places/wyrd-leatherworks-and-meadery'
                         }
-                      ],
+                      ]
                     },
         {
           id: 'gem-history-1',
@@ -896,7 +831,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/cemetery.png',
-              alt: 'Lone Fir Cemetery Block 14 unmarked area',
+              alt: 'Lone Fir Cemetery Block 14 unmarked area'
             }
           ],
           address: 'SE 26th Ave & Stark St, Portland, OR 97214',
@@ -908,14 +843,14 @@ export const portland: CityData = {
             {
               title: 'Block 14',
               publisher: 'Friends of Lone Fir Cemetery',
-              url: 'https://www.oregonmetro.gov/public-projects/lone-fir-cemetery-cultural-heritage-garden',
+              url: 'https://www.oregonmetro.gov/public-projects/lone-fir-cemetery-cultural-heritage-garden'
             },
             {
               title: 'Lone Fir Cemetery Block 14 Memorial Project Update',
               publisher: 'Oregon Metro',
-              url: 'https://www.oregonmetro.gov/news/lone-fir-cemetery-block-14-memorial-project-update',
+              url: 'https://www.oregonmetro.gov/news/lone-fir-cemetery-block-14-memorial-project-update'
             }
-          ],
+          ]
         },
         {
           id: 'gem-history-2',
@@ -926,7 +861,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/stone.png',
-              alt: 'Willamette Stone survey marker',
+              alt: 'Willamette Stone survey marker'
             }
           ],
           address: 'Skyline Blvd, Portland, OR 97231',
@@ -938,14 +873,14 @@ export const portland: CityData = {
             {
               title: 'Willamette Stone State Heritage Site',
               publisher: 'Oregon.gov',
-              url: 'https://stateparks.oregon.gov/index.cfm?do=parkPage.dsp_parkPage&parkId=199',
+              url: 'https://stateparks.oregon.gov/index.cfm?do=parkPage.dsp_parkPage&parkId=199'
             },
             {
               title: 'Willamette Stone',
               publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/willamette_stone/',
+              url: 'https://www.oregonencyclopedia.org/articles/willamette_stone/'
             }
-          ],
+          ]
         },
 
 
@@ -960,7 +895,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/museum.png',
-              alt: 'Zymoglyphic Museum diorama',
+              alt: 'Zymoglyphic Museum diorama'
             }
           ],
           address: 'Mt. Tabor neighborhood (exact address provided upon appointment)',
@@ -968,13 +903,13 @@ export const portland: CityData = {
           hours: 'By appointment only',
           price: 'Free',
           website: 'http://www.zymoglyphic.org',
-          tip: 'Email ahead to arrange a private tour',
+          tip: 'Email ahead to arrange a private tour'
         },
 
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-museums-3',
@@ -987,7 +922,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/vacuum.png',
-              alt: 'Stark\'s Vacuum Museum',
+              alt: 'Stark\'s Vacuum Museum'
             }
           ],
           address: '107 NE Grand Ave, Portland, OR 97232',
@@ -1000,9 +935,9 @@ export const portland: CityData = {
             {
               title: 'Stark\'s Vacuum Museum',
               publisher: 'Stark\'s Vacuums',
-              url: 'https://starks.com/vacuum-museum/',
+              url: 'https://starks.com/vacuum-museum/'
             }
-          ],
+          ]
         },
         {
           id: 'gem-quirky-1',
@@ -1013,7 +948,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/mystery-hole.png',
-              alt: 'Woodstock Mystery Hole entrance',
+              alt: 'Woodstock Mystery Hole entrance'
             }
           ],
           address: 'Woodstock neighborhood (exact location revealed upon booking)',
@@ -1025,16 +960,16 @@ export const portland: CityData = {
             {
               title: 'Woodstock Mystery Hole',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole',
+              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole'
             }
           ],
           sources: [
             {
               title: 'Woodstock Mystery Hole',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole',
+              url: 'https://www.atlasobscura.com/places/woodstock-mystery-hole'
             }
-          ],
+          ]
         },
         {
           id: 'gem-quirky-2',
@@ -1045,11 +980,11 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/cafe-house-1.png',
-              alt: 'Rimsky-Korsakoffee House exterior',
+              alt: 'Rimsky-Korsakoffee House exterior'
             },
             {
               src: '/portland/hidden-gems/cafe-house-2.png',
-              alt: 'Rimsky-Korsakoffee House interior',
+              alt: 'Rimsky-Korsakoffee House interior'
             }
           ],
           address: '707 SE 12th Ave, Portland, OR 97214',
@@ -1062,9 +997,9 @@ export const portland: CityData = {
             {
               title: 'Rimsky-Korsakoffee House',
               publisher: 'Rimsky-Korsakoffee House',
-              url: 'https://rimskykorsakoffeehouse.shop/',
+              url: 'https://rimskykorsakoffeehouse.shop/'
             }
-          ],
+          ]
         },
         {
           id: 'gem-quirky-3',
@@ -1075,7 +1010,7 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/hidden-gems/troll.png',
-              alt: 'Portland Troll Bridge covered in plastic trolls',
+              alt: 'Portland Troll Bridge covered in plastic trolls'
             }
           ],
           address: 'NW McNamee Rd, Portland, OR 97231',
@@ -1087,14 +1022,14 @@ export const portland: CityData = {
             {
               title: 'Portland Troll Bridge',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/portland-troll-bridge',
+              url: 'https://www.atlasobscura.com/places/portland-troll-bridge'
             }
-          ],
-        },
+          ]
+        }
 
 
 
-      ],
+      ]
     },
     {
       id: 'pdx-best-bars',
@@ -1118,8 +1053,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/bar-expat-1.png', alt: 'Expatriate intimate cocktail bar interior' },
             { src: '/portland/lost-loved/bar-expat-2.png', alt: 'Expatriate Asian-inspired cocktails' },
-            { src: '/portland/lost-loved/bar-expat-3.png', alt: 'Expatriate dueling turntables and vinyl collection' },
-          ],
+            { src: '/portland/lost-loved/bar-expat-3.png', alt: 'Expatriate dueling turntables and vinyl collection' }
+          ]
         },
         {
           name: 'Multnomah Whiskey Library',
@@ -1136,8 +1071,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/bar-mult-0.png', alt: 'Multnomah Whiskey Library vintage library setting' },
             { src: '/portland/lost-loved/bar-mult-1.png', alt: 'Multnomah Whiskey Library brick walls and rare bottles' },
-            { src: '/portland/lost-loved/bar-mult-3.png', alt: 'Multnomah Whiskey Library extensive whiskey collection' },
-          ],
+            { src: '/portland/lost-loved/bar-mult-3.png', alt: 'Multnomah Whiskey Library extensive whiskey collection' }
+          ]
         },
         {
           name: 'Hale Pele',
@@ -1154,8 +1089,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/bar-hale-1.png', alt: 'Hale Pele tiki bar exterior' },
             { src: '/portland/lost-loved/bar-hale-2.png', alt: 'Hale Pele tropical decor and exotic cocktails' },
-            { src: '/portland/lost-loved/bar-hale-3.png', alt: 'Hale Pele extensive rum collection' },
-          ],
+            { src: '/portland/lost-loved/bar-hale-3.png', alt: 'Hale Pele extensive rum collection' }
+          ]
         },
         {
           name: 'The Bye and Bye',
@@ -1171,8 +1106,8 @@ export const portland: CityData = {
           instagram: '@byeandbyeportland',
           images: [
             { src: '/portland/lost-loved/bar-bye-1.png', alt: 'The Bye and Bye vegan bar exterior' },
-            { src: '/portland/lost-loved/bar-bye-2.png', alt: 'The Bye and Bye spacious patio on Alberta Street' },
-          ],
+            { src: '/portland/lost-loved/bar-bye-2.png', alt: 'The Bye and Bye spacious patio on Alberta Street' }
+          ]
         },
         {
           name: 'Produce Row Café',
@@ -1190,8 +1125,8 @@ export const portland: CityData = {
             { src: '/portland/lost-loved/bar-produce-1.png', alt: 'Produce Row Café historic craft beer bar exterior' },
             { src: '/portland/lost-loved/bar-produce-2.png', alt: 'Produce Row Café extensive tap selection' },
             { src: '/portland/lost-loved/bar-produce-3.png', alt: 'Produce Row Café year-round covered patio' },
-            { src: '/portland/lost-loved/bar-produce-4.png', alt: 'Produce Row Café award-winning bourbon collection' },
-          ],
+            { src: '/portland/lost-loved/bar-produce-4.png', alt: 'Produce Row Café award-winning bourbon collection' }
+          ]
         },
         {
           name: 'The Horse Brass Pub',
@@ -1207,12 +1142,11 @@ export const portland: CityData = {
           instagram: '@horsebrasspub',
           images: [
             { src: '/portland/lost-loved/bar-horse-0.png', alt: 'The Horse Brass Pub historic English pub exterior' },
-            { src: '/portland/bars/horse-brass.png', alt: 'Historic English pub interior of The Horse Brass in Portland' },
             { src: '/portland/lost-loved/bar-horse-1.png', alt: 'The Horse Brass Pub scarred tables and dark atmosphere' },
-            { src: '/portland/lost-loved/bar-horse-3.png', alt: 'The Horse Brass Pub extensive tap selection' },
-          ],
-        },
-      ],
+            { src: '/portland/lost-loved/bar-horse-3.png', alt: 'The Horse Brass Pub extensive tap selection' }
+          ]
+        }
+      ]
     },
     {
       id: 'pdx-best-restaurants',
@@ -1236,8 +1170,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/resto-canard-1.png', alt: 'Canard French wine bar exterior' },
             { src: '/portland/lost-loved/resto-canard-2.png', alt: 'Canard duck confit and French bar food' },
-            { src: '/portland/lost-loved/resto-canard-3.png', alt: 'Canard extensive wine collection and intimate dining' },
-          ],
+            { src: '/portland/lost-loved/resto-canard-3.png', alt: 'Canard extensive wine collection and intimate dining' }
+          ]
         },
         {
           name: 'Yaowarat',
@@ -1254,8 +1188,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/resto-yao-1.png', alt: 'Yaowarat Thai-Chinese restaurant exterior' },
             { src: '/portland/lost-loved/resto-yao-2.png', alt: 'Yaowarat Bangkok Chinatown street food' },
-            { src: '/portland/lost-loved/resto-yao-3.png', alt: 'Yaowarat stir-fried noodles and grilled squid' },
-          ],
+            { src: '/portland/lost-loved/resto-yao-3.png', alt: 'Yaowarat stir-fried noodles and grilled squid' }
+          ]
         },
         {
           name: 'Screen Door',
@@ -1272,8 +1206,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/resto-screen-1.png', alt: 'Screen Door Southern comfort food restaurant exterior' },
             { src: '/portland/lost-loved/resto-screen-2.png', alt: 'Screen Door fried chicken and waffles' },
-            { src: '/portland/lost-loved/resto-screen-3.png', alt: 'Screen Door brunch spread and Southern classics' },
-          ],
+            { src: '/portland/lost-loved/resto-screen-3.png', alt: 'Screen Door brunch spread and Southern classics' }
+          ]
         },
         {
           name: 'Lardo',
@@ -1290,8 +1224,8 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/resto-lardo-1.png', alt: 'Lardo sandwich shop exterior' },
             { src: '/portland/lost-loved/resto-lardo-2.png', alt: 'Lardo Korean pork shoulder sandwich' },
-            { src: '/portland/lost-loved/resto-lardo-3.png', alt: 'Lardo dirty fries and gourmet pork sandwiches' },
-          ],
+            { src: '/portland/lost-loved/resto-lardo-3.png', alt: 'Lardo dirty fries and gourmet pork sandwiches' }
+          ]
         },
         {
           name: 'Ava Gene\'s',
@@ -1308,10 +1242,10 @@ export const portland: CityData = {
           images: [
             { src: '/portland/lost-loved/resto-ava.png', alt: 'Ava Gene\'s Italian restaurant exterior' },
             { src: '/portland/lost-loved/resto-ava-2.png', alt: 'Ava Gene\'s house-made pasta' },
-            { src: '/portland/lost-loved/resto-ava-3.png', alt: 'Ava Gene\'s seasonal Italian dishes and vegetables' },
-          ],
+            { src: '/portland/lost-loved/resto-ava-3.png', alt: 'Ava Gene\'s seasonal Italian dishes and vegetables' }
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'best-coffee-shops',
@@ -1335,13 +1269,13 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/heart-1.png',
-              alt: 'Heart Coffee Roasters interior',
+              alt: 'Heart Coffee Roasters interior'
             },
             {
               src: '/portland/coffee/heart-2.png',
-              alt: 'Heart Coffee pour-over bar',
-            },
-          ],
+              alt: 'Heart Coffee pour-over bar'
+            }
+          ]
         },
         {
           name: 'Coava Coffee Roasters',
@@ -1358,13 +1292,13 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/coava-1.png',
-              alt: 'Coava Coffee Roasters warehouse space',
+              alt: 'Coava Coffee Roasters warehouse space'
             },
             {
               src: '/portland/coffee/coava-2.png',
-              alt: 'Coava Coffee single-origin pour-over',
-            },
-          ],
+              alt: 'Coava Coffee single-origin pour-over'
+            }
+          ]
         },
         {
           name: 'Albina Press',
@@ -1381,13 +1315,13 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/albina-1.png',
-              alt: 'Albina Press third-wave coffee',
+              alt: 'Albina Press third-wave coffee'
             },
             {
               src: '/portland/coffee/albina-2.png',
-              alt: 'Albina Press North Portland location',
-            },
-          ],
+              alt: 'Albina Press North Portland location'
+            }
+          ]
         },
         {
           name: 'Either/Or',
@@ -1403,13 +1337,13 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/either-or-1.png',
-              alt: 'Either/Or café interior',
+              alt: 'Either/Or café interior'
             },
             {
               src: '/portland/coffee/either-or-2.png',
-              alt: 'Either/Or espresso flights',
-            },
-          ],
+              alt: 'Either/Or espresso flights'
+            }
+          ]
         },
         {
           name: 'Push x Pull',
@@ -1426,17 +1360,17 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/push-pull-1.png',
-              alt: 'Push x Pull Coffee roastery',
+              alt: 'Push x Pull Coffee roastery'
             },
             {
               src: '/portland/coffee/push-pull-2.png',
-              alt: 'Push x Pull specialty drinks',
+              alt: 'Push x Pull specialty drinks'
             },
             {
               src: '/portland/coffee/push-pull-3.png',
-              alt: 'Push x Pull natural process Kenyan',
-            },
-          ],
+              alt: 'Push x Pull natural process Kenyan'
+            }
+          ]
         },
         {
           name: 'Portland Cà Phê',
@@ -1453,9 +1387,9 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/ca-phe-1.png',
-              alt: 'Portland Cà Phê Vietnamese coffee',
-            },
-          ],
+              alt: 'Portland Cà Phê Vietnamese coffee'
+            }
+          ]
         },
         {
           name: 'Stumptown Coffee Roasters',
@@ -1472,13 +1406,13 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/coffee/stumptown-1.png',
-              alt: 'Stumptown Coffee Ace Hotel location',
+              alt: 'Stumptown Coffee Ace Hotel location'
             },
             {
               src: '/portland/coffee/stumptown-2.png',
-              alt: 'Stumptown Coffee bar',
-            },
-          ],
+              alt: 'Stumptown Coffee bar'
+            }
+          ]
         },
         {
           name: 'Case Study Coffee',
@@ -1494,10 +1428,10 @@ export const portland: CityData = {
           instagram: '@casestudycoffee',
           image: {
             src: '/portland/coffee/case-study.png',
-            alt: 'Clean, modern interior of Case Study Coffee',
-          },
-        },
-      ],
+            alt: 'Clean, modern interior of Case Study Coffee'
+          }
+        }
+      ]
     },
     {
       id: 'pdx-dark-history',
@@ -1520,58 +1454,58 @@ export const portland: CityData = {
               type: 'article',
               title: 'Kyron Horman Case',
               publisher: 'Multnomah County Sheriff\'s Office',
-              url: 'https://www.mcso.us/site/kyron-horman',
+              url: 'https://www.mcso.us/site/kyron-horman'
             },
             {
               type: 'article',
               title: 'Kyron Horman: 15 years later',
               publisher: 'KGW',
-              url: 'https://www.kgw.com/kyron-horman',
+              url: 'https://www.kgw.com/kyron-horman'
             },
             {
               type: 'article',
               title: 'Disappearance of Kyron Horman',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Disappearance_of_Kyron_Horman',
+              url: 'https://en.wikipedia.org/wiki/Disappearance_of_Kyron_Horman'
             },
             {
               type: 'documentary',
               title: 'Little Lost Boy: The Kyron Horman Story',
               platform: 'Investigation Discovery',
               year: '2020',
-              url: 'https://www.investigationdiscovery.com/shows/people-magazine-investigates/kyron-horman',
+              url: 'https://www.investigationdiscovery.com/shows/people-magazine-investigates/kyron-horman'
             },
             {
               type: 'video',
               title: 'Where is Kyron Horman? The Unsolved Mystery',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=KyronHorman',
+              url: 'https://www.youtube.com/watch?v=KyronHorman'
             },
             {
               type: 'podcast',
               title: 'The Disappearance of Kyron Horman',
               show: 'True Crime Garage',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/kyron-horman',
+              url: 'https://open.spotify.com/episode/kyron-horman'
             },
             {
               type: 'article',
               title: 'Timeline: The Kyron Horman case',
               publisher: 'KOIN 6',
-              url: 'https://www.koin.com/news/kyron-horman-timeline/',
+              url: 'https://www.koin.com/news/kyron-horman-timeline/'
             }
           ],
           location: {
             name: 'Skyline Elementary School, West Hills',
       url: 'https://www.google.com/maps/search/?api=1&query=Skyline%20Elementary%20School%2C%20West%20Hills%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/kyron.png',
-              alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary',
+              alt: 'Context related to the disappearance of Kyron Horman from Skyline Elementary'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-2',
@@ -1588,25 +1522,25 @@ export const portland: CityData = {
               type: 'article',
               title: 'The Shanghai Tunnels Myth',
               publisher: 'Oregon Encyclopedia',
-              url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/',
+              url: 'https://www.oregonencyclopedia.org/articles/shanghai_tunnels/'
             },
             {
               type: 'article',
               title: 'Portland\'s Shanghai Tunnels: Separating Fact from Fiction',
               publisher: 'OPB',
-              url: 'https://shanghaitunnels.com',
+              url: 'https://shanghaitunnels.com'
             },
             {
               type: 'video',
               title: 'Shanghai Tunnels of Portland: Dark History Beneath the City',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=ShanghaiTunnels',
+              url: 'https://www.youtube.com/watch?v=ShanghaiTunnels'
             },
             {
               type: 'article',
               title: 'Shanghai Tunnel Tours',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/portland/haunted-places/shanghai-tunnels/',
+              url: 'https://usghostadventures.com/portland/haunted-places/shanghai-tunnels/'
             },
             {
               type: 'book',
@@ -1614,26 +1548,26 @@ export const portland: CityData = {
               author: 'Michael P. Jones',
               isbn: '9780615393667',
               year: '2010',
-              url: 'https://www.amazon.com/Kidnapped-Portland-Shanghai-Tunnels-Michael/dp/0615393667',
+              url: 'https://www.amazon.com/Kidnapped-Portland-Shanghai-Tunnels-Michael/dp/0615393667'
             },
             {
               type: 'article',
               title: 'Shanghaiing',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Shanghaiing',
+              url: 'https://en.wikipedia.org/wiki/Shanghaiing'
             }
           ],
           location: {
             name: 'Old Town Chinatown (underground)',
       url: 'https://www.google.com/maps/search/?api=1&query=Old%20Town%20Chinatown%20(underground)%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/curiosities/shanghai-tunnels.png',
-              alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown',
+              alt: 'Portland\'s Shanghai Tunnels beneath Old Town Chinatown'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-3',
@@ -1650,20 +1584,20 @@ export const portland: CityData = {
               type: 'article',
               title: 'The Vanport Flood',
               publisher: 'Oregon Historical Society',
-              url: 'https://www.oregonhistoryproject.org/articles/vanport-flood/',
+              url: 'https://www.oregonhistoryproject.org/articles/vanport-flood/'
             },
             {
               type: 'article',
               title: 'The Vanport Flood: When Portland\'s Second-Largest City Vanished in a Day',
               publisher: 'Smithsonian Magazine',
-              url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/',
+              url: 'https://www.smithsonianmag.com/history/vanport-oregon-how-countrys-largest-housing-project-vanished-day-180954040/'
             },
             {
               type: 'documentary',
               title: 'Vanport',
               platform: 'Oregon Experience (PBS)',
               year: '2016',
-              url: 'https://www.youtube.com/watch?v=k5lW3_y2t0Q',
+              url: 'https://www.youtube.com/watch?v=k5lW3_y2t0Q'
             },
             {
               type: 'book',
@@ -1671,20 +1605,20 @@ export const portland: CityData = {
               author: 'Manly Maben',
               isbn: '9780870714672',
               year: '1987',
-              url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678',
+              url: 'https://www.amazon.com/Vanport-Manly-Maben/dp/0870714678'
             }
           ],
           location: {
             name: 'Delta Park (former Vanport site)',
       url: 'https://www.google.com/maps/search/?api=1&query=Delta%20Park%20(former%20Vanport%20site)%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/curiosities/portland-flood.png',
-              alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city',
+              alt: 'The catastrophic 1948 Vanport Flood that destroyed Oregon\'s second-largest city'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-7',
@@ -1701,44 +1635,44 @@ export const portland: CityData = {
               type: 'article',
               title: 'White Eagle Saloon & Hotel',
               publisher: 'McMenamins',
-              url: 'https://www.mcmenamins.com/white-eagle-saloon',
+              url: 'https://www.mcmenamins.com/white-eagle-saloon'
             },
             {
               type: 'article',
               title: 'The Haunted White Eagle Saloon',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/portland/haunted-places/white-eagle-saloon/',
+              url: 'https://usghostadventures.com/portland/haunted-places/white-eagle-saloon/'
             },
             {
               type: 'article',
               title: 'White Eagle Saloon: Portland\'s Most Haunted Bar',
               publisher: 'Haunted Rooms America',
-              url: 'https://www.hauntedrooms.com/oregon/portland/white-eagle-saloon',
+              url: 'https://www.hauntedrooms.com/oregon/portland/white-eagle-saloon'
             },
             {
               type: 'video',
               title: 'Ghost Hunting at the White Eagle Saloon',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=WhiteEagleGhosts',
+              url: 'https://www.youtube.com/watch?v=WhiteEagleGhosts'
             },
             {
               type: 'article',
               title: 'Portland\'s Most Haunted Locations',
               publisher: 'Travel Channel',
-              url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations',
+              url: 'https://www.travelchannel.com/destinations/us/or/portland/articles/portland-haunted-locations'
             }
           ],
           location: {
             name: 'White Eagle Saloon, 836 N Russell St',
       url: 'https://www.google.com/maps/search/?api=1&query=White%20Eagle%20Saloon%2C%20836%20N%20Russell%20St%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/saloon.png',
-              alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"',
+              alt: 'The White Eagle Saloon, Portland\'s most haunted bar known as "Bucket of Blood"'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-4',
@@ -1757,51 +1691,51 @@ export const portland: CityData = {
               author: 'Ann Rule',
               isbn: '9780451403544',
               year: '1984',
-              url: 'https://www.amazon.com/I-5-Killer-Ann-Rule/dp/0451403541',
+              url: 'https://www.amazon.com/I-5-Killer-Ann-Rule/dp/0451403541'
             },
             {
               type: 'article',
               title: 'Randall Woodfield: The I-5 Killer',
               publisher: 'All That\'s Interesting',
-              url: 'https://allthatsinteresting.com/randall-woodfield',
+              url: 'https://allthatsinteresting.com/randall-woodfield'
             },
             {
               type: 'documentary',
               title: 'The I-5 Killer',
               platform: 'Oxygen',
-              url: 'https://www.oxygen.com/mark-of-a-killer/crime-news/randall-woodfield-i-5-killer-murdered-women-along-west-coast',
+              url: 'https://www.oxygen.com/mark-of-a-killer/crime-news/randall-woodfield-i-5-killer-murdered-women-along-west-coast'
             },
             {
               type: 'video',
               title: 'The I-5 Killer: Randall Woodfield',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=I5Killer',
+              url: 'https://www.youtube.com/watch?v=I5Killer'
             },
             {
               type: 'article',
               title: 'Randall Woodfield',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Randall_Woodfield',
+              url: 'https://en.wikipedia.org/wiki/Randall_Woodfield'
             },
             {
               type: 'podcast',
               title: 'The I-5 Killer',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/episode/I5Killer',
+              url: 'https://open.spotify.com/episode/I5Killer'
             }
           ],
           location: {
             name: 'Interstate 5 corridor',
       url: 'https://www.google.com/maps/search/?api=1&query=Interstate%205%20corridor%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/i-5-killer.png',
-              alt: 'Historical documentation and evidence related to the I-5 Killer case',
+              alt: 'Historical documentation and evidence related to the I-5 Killer case'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-8',
@@ -1818,44 +1752,44 @@ export const portland: CityData = {
               type: 'article',
               title: 'Pittock Mansion',
               publisher: 'Pittock Mansion Society',
-              url: 'https://pittockmansion.org/',
+              url: 'https://pittockmansion.org/'
             },
             {
               type: 'article',
               title: 'The Haunted Pittock Mansion',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/portland/haunted-places/pittock-mansion/',
+              url: 'https://usghostadventures.com/portland/haunted-places/pittock-mansion/'
             },
             {
               type: 'article',
               title: 'Pittock Mansion: Portland\'s Elegant Ghost Story',
               publisher: 'Haunted Rooms America',
-              url: 'https://www.hauntedrooms.com/oregon/portland/pittock-mansion',
+              url: 'https://www.hauntedrooms.com/oregon/portland/pittock-mansion'
             },
             {
               type: 'video',
               title: 'Haunted Pittock Mansion Investigation',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=PittockGhosts',
+              url: 'https://www.youtube.com/watch?v=PittockGhosts'
             },
             {
               type: 'article',
               title: 'Is Pittock Mansion Really Haunted?',
               publisher: 'Portland Living',
-              url: 'https://www.portlandliving.com/pittock-mansion-haunted/',
+              url: 'https://www.portlandliving.com/pittock-mansion-haunted/'
             }
           ],
           location: {
             name: 'Pittock Mansion, 3229 NW Pittock Dr',
       url: 'https://www.google.com/maps/search/?api=1&query=Pittock%20Mansion%2C%203229%20NW%20Pittock%20Dr%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/mansion.png',
-              alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914',
+              alt: 'Pittock Mansion, the historic French Renaissance mansion built in 1914'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-5',
@@ -1871,45 +1805,45 @@ export const portland: CityData = {
               type: 'article',
               title: 'Todd Alan Reed',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Todd_Alan_Reed',
+              url: 'https://en.wikipedia.org/wiki/Todd_Alan_Reed'
             },
             {
               type: 'article',
               title: 'Forest Park Killer Todd Reed loses appeal',
               publisher: 'KOIN 6',
-              url: 'https://www.koin.com/news/forest-park-killer-todd-reed-loses-appeal/',
+              url: 'https://www.koin.com/news/forest-park-killer-todd-reed-loses-appeal/'
             },
             {
               type: 'video',
               title: 'The Forest Park Killer: Todd Alan Reed',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=ForestParkKiller',
+              url: 'https://www.youtube.com/watch?v=ForestParkKiller'
             },
             {
               type: 'article',
               title: 'Jury recommends death for Forest Park killer',
               publisher: 'The Oregonian',
-              url: 'https://www.oregonlive.com/portland/2000/11/jury_recommends_death_for_fore.html',
+              url: 'https://www.oregonlive.com/portland/2000/11/jury_recommends_death_for_fore.html'
             },
             {
               type: 'podcast',
               title: 'The Forest Park Murders',
               show: 'Pacific Northwest Murders',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/podcast/forest-park-murders',
+              url: 'https://podcasts.apple.com/podcast/forest-park-murders'
             }
           ],
           location: {
             name: 'Forest Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Forest%20Park%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/forest-park.png',
-              alt: 'Forest Park location where the Forest Park Killer crimes occurred',
+              alt: 'Forest Park location where the Forest Park Killer crimes occurred'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-9',
@@ -1926,31 +1860,31 @@ export const portland: CityData = {
               type: 'article',
               title: 'Lone Fir Cemetery',
               publisher: 'Friends of Lone Fir Cemetery',
-              url: 'https://www.lonefircemetery.org/',
+              url: 'https://www.lonefircemetery.org/'
             },
             {
               type: 'article',
               title: 'Lone Fir Cemetery: Portland\'s Historic Burial Ground',
               publisher: 'Portland Ghosts',
-              url: 'https://portlandghosts.com/lone-fir-cemetery/',
+              url: 'https://portlandghosts.com/lone-fir-cemetery/'
             },
             {
               type: 'article',
               title: 'Lone Fir Cemetery: Cultural Heritage Garden',
               publisher: 'Oregon Metro',
-              url: 'https://www.oregonmetro.gov/projects/lone-fir-cemetery-cultural-heritage-garden',
+              url: 'https://www.oregonmetro.gov/projects/lone-fir-cemetery-cultural-heritage-garden'
             },
             {
               type: 'video',
               title: 'Haunted Lone Fir Cemetery Tour',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=LoneFirHaunted',
+              url: 'https://www.youtube.com/watch?v=LoneFirHaunted'
             },
             {
               type: 'article',
               title: 'Charity Lamb: Oregon\'s First Female Murderer',
               publisher: 'Only In Your State',
-              url: 'https://www.onlyinyourstate.com/oregon/charity-lamb-or/',
+              url: 'https://www.onlyinyourstate.com/oregon/charity-lamb-or/'
             },
             {
               type: 'book',
@@ -1958,20 +1892,20 @@ export const portland: CityData = {
               author: 'Theresa Griffin Kennedy',
               isbn: '9781467137829',
               year: '2016',
-              url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820',
+              url: 'https://www.amazon.com/Wicked-Women-Portland-Oregon-Theresa/dp/1467137820'
             }
           ],
           location: {
             name: 'Lone Fir Cemetery, SE 26th Ave & Stark St',
       url: 'https://www.google.com/maps/search/?api=1&query=Lone%20Fir%20Cemetery%2C%20SE%2026th%20Ave%20%26%20Stark%20St%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/Dark-history/lone-fer-2.png',
-              alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients',
+              alt: 'Lone Fir Cemetery, historic burial ground with over 25,000 graves including asylum patients'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-dark-1',
@@ -1987,13 +1921,13 @@ export const portland: CityData = {
                       {
                         title: 'Oregon\'s Black Exclusion Laws',
                         publisher: 'Oregon Encyclopedia',
-                        url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/',
+                        url: 'https://www.oregonencyclopedia.org/articles/exclusion_laws/'
                       },
                       {
                         type: 'article',
                         title: 'Oregon\'s Shameful History as an "All-White" State',
                         publisher: 'National Geographic',
-                        url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past',
+                        url: 'https://www.nationalgeographic.com/history/article/oregon-once-legally-barred-black-people-has-the-state-reconciled-its-racist-past'
                       },
                       { 
                         type: 'book',
@@ -2001,27 +1935,27 @@ export const portland: CityData = {
                         author: 'Kenneth R. Coleman',
                         isbn: '9781532659461',
                         year: '2018',
-                        url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466',
+                        url: 'https://www.amazon.com/Black-Exclusion-Laws-Oregon-Coleman/dp/1532659466'
                       },
                       {
                         type: 'article',
                         title: 'Oregon was founded as a racist utopia',
                         publisher: 'The Atlantic',
-                        url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/',
+                        url: 'https://www.theatlantic.com/business/archive/2016/07/racist-history-portland/492035/'
                       }
                     ],          location: {
             name: 'State of Oregon',
       url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Oregon%20Portland',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/portland/curiosities/black-exclusion.png',
-              alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory',
+              alt: 'Oregon\'s Black Exclusion Laws - the only state to enter the Union as white-only territory'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
 
     {
@@ -2046,21 +1980,21 @@ export const portland: CityData = {
           images: [
             {
               src: '/portland/lost-loved/satyricon-1.png',
-              alt: 'Satyricon club exterior',
+              alt: 'Satyricon club exterior'
             },
             {
               src: '/portland/lost-loved/satyricon-02.png',
-              alt: 'Satyricon interior with band stickers',
+              alt: 'Satyricon interior with band stickers'
             },
             {
               src: '/portland/lost-loved/satyricon-03.png',
-              alt: 'Satyricon stage and crowd',
+              alt: 'Satyricon stage and crowd'
             },
             {
               src: '/portland/lost-loved/satyricon-04.png',
-              alt: 'Satyricon band performance',
+              alt: 'Satyricon band performance'
             }
-          ],
+          ]
         },
         {
           id: 'pdx-lost-3',
@@ -2071,18 +2005,18 @@ export const portland: CityData = {
           yearsOpen: '1979–2016',
           images: [
             { src: '/portland/lost-loved/wives-tales-1.png', alt: 'Old Wives\' Tales restaurant exterior' },
-            { src: '/portland/lost-loved/wives-tales-2.png', alt: 'Old Wives\' Tales interior and play area' },
+            { src: '/portland/lost-loved/wives-tales-2.png', alt: 'Old Wives\' Tales interior and play area' }
           ],
           description: 'The vegetarian restaurant with a kids\' play area that doubled as childcare, community bulletin boards plastered with activist flyers, and a vibe that preserved 1970s Portland in amber. For 37 years, this was where Southeast Portland families ate tempeh scrambles while their toddlers played and their manifestos photocopied. When it closed in 2016, Portland lost its progressive past tense.',
           whyMissed: 'The play area that let parents finish a meal, the sense that community mattered more than branding, and the radical idea that affordability was a feature, not a bug. Old Wives\' Tales was Portland before Portland got expensive and embarrassed about it.',
           communityVoice: '"Old Wives\' Tales was where Portland raised its kids." — Portland Mercury',
           lastAddress: '1300 E Burnside St, Portland',
-          source: 'The Oregonian, Portland Mercury',
+          source: 'The Oregonian, Portland Mercury'
         },
         {
           id: 'pdx-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'pdx-lost-4',
@@ -2093,13 +2027,13 @@ export const portland: CityData = {
           yearsOpen: '1985–2010',
           images: [
             { src: '/portland/lost-loved/barbati-1.png', alt: 'Berbati\'s Pan exterior' },
-            { src: '/portland/lost-loved/barbati-2.png', alt: 'Berbati\'s Pan music venue interior' },
+            { src: '/portland/lost-loved/barbati-2.png', alt: 'Berbati\'s Pan music venue interior' }
           ],
           description: 'The Greek restaurant that moonlighted as a music venue where Nirvana, Elliott Smith, and The Shins played before fame found them. For 25 years, Berbati\'s was the room where Portland\'s indie bands proved themselves on a stage flanked by Mediterranean murals. When it closed in 2010, Portland lost the place that said yes when nobody else would.',
           whyMissed: 'The 200-person intimacy that made every show feel like a secret, the Greek food that anchored the space in immigrant ambition, and the knowledge that Portland once mattered enough to break bands. Berbati\'s was proof the city had taste before algorithms did.',
           communityVoice: '"Berbati\'s was where Portland bands became Portland bands." — Willamette Week',
           lastAddress: '231 SW Ankeny St, Portland',
-          source: 'The Oregonian, Willamette Week',
+          source: 'The Oregonian, Willamette Week'
         },
         {
           id: 'pdx-lost-5',
@@ -2109,13 +2043,13 @@ export const portland: CityData = {
           neighborhood: 'Southeast Portland',
           yearsOpen: '1994–2020',
           images: [
-            { src: '/portland/lost-loved/piedcow.png', alt: 'Pied Cow Coffeehouse Victorian house exterior' },
+            { src: '/portland/lost-loved/piedcow.png', alt: 'Pied Cow Coffeehouse Victorian house exterior' }
           ],
           description: 'The Victorian house that became a hookah lounge that became a time machine. Mismatched furniture, garden patio, and a pace that made three hours feel like twenty minutes. For 26 years, Pied Cow was where Portland remembered that lingering was a virtue, not a vice. The pandemic ended the spell.',
           whyMissed: 'The backyard Eden with strings of lights, the hookahs that made conversation feel ceremonial, and the radical notion that Portland didn\'t have to hustle. Pied Cow was permission to slow down.',
           communityVoice: '"Pied Cow was where Portland went to escape time." — Willamette Week',
           lastAddress: '3244 SE Belmont St, Portland',
-          source: 'The Oregonian, Willamette Week',
+          source: 'The Oregonian, Willamette Week'
         },
         {
           id: 'pdx-lost-6',
@@ -2126,18 +2060,18 @@ export const portland: CityData = {
           yearsOpen: '1994–2012',
           images: [
             { src: '/portland/lost-loved/reading-frenzy-1.png', alt: 'Reading Frenzy bookstore exterior' },
-            { src: '/portland/lost-loved/reading-frenzy-2.png', alt: 'Reading Frenzy zine and book collection interior' },
+            { src: '/portland/lost-loved/reading-frenzy-2.png', alt: 'Reading Frenzy zine and book collection interior' }
           ],
           description: 'The zine shop and independent press outpost that sold self-stapled manifestos, political pamphlets still warm from the copier, and art books you\'d never see at Powell\'s. For 18 years, Reading Frenzy was the nerve center of Portland\'s DIY publishing underground—the place that proved you didn\'t need a press, just a Xerox machine and something to say.',
           whyMissed: 'The zines with print runs of 50, the artists hawking their own work at the counter, and the democracy of it all—any voice with 75 cents for photocopies could publish. Reading Frenzy was Portland\'s conscience before the algorithm killed the underground.',
           communityVoice: '"Reading Frenzy was where Portland\'s weirdos published." — Willamette Week',
           lastAddress: '921 SW Oak St, Portland',
-          source: 'The Oregonian, Publisher\'s Weekly',
+          source: 'The Oregonian, Publisher\'s Weekly'
         },
         {
           id: 'pdx-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'pdx-lost-7',
@@ -2147,13 +2081,13 @@ export const portland: CityData = {
           neighborhood: 'Southeast Portland',
           yearsOpen: '1923–2020',
           images: [
-            { src: '/portland/lost-loved/laurelhurst-theater.png', alt: 'Laurelhurst Theater historic exterior' },
+            { src: '/portland/lost-loved/laurelhurst-theater.png', alt: 'Laurelhurst Theater historic exterior' }
           ],
           description: 'The neighborhood movie palace where second-run films cost $4, pizza arrived mid-movie, and beer flowed from the lobby. For nearly a century, Laurelhurst was Southeast Portland\'s living room—the place where you watched Pulp Fiction for the third time on a screen that mattered. The original owners sold in 2020. The theater survives, but locals swear the magic left with the deed.',
           whyMissed: 'The $4 ticket that made cinema democratic, the pizza-and-beer ritual that made moviegoing communal, and the certainty that Portland valued neighborhood institutions over corporate chains. The original Laurelhurst trusted you to bring a beer into the dark.',
           communityVoice: '"Laurelhurst was where Portland went to the movies." — Portland Mercury',
           lastAddress: '2735 E Burnside St, Portland',
-          source: 'The Oregonian, Portland Mercury',
+          source: 'The Oregonian, Portland Mercury'
         },
         {
           id: 'pdx-lost-8',
@@ -2164,15 +2098,15 @@ export const portland: CityData = {
           yearsOpen: '2000s–2015',
           images: [
             { src: '/portland/lost-loved/oba-1.png', alt: 'Oba Restaurant exterior' },
-            { src: '/portland/lost-loved/oba-2.png', alt: 'Oba Restaurant interior and bar' },
+            { src: '/portland/lost-loved/oba-2.png', alt: 'Oba Restaurant interior and bar' }
           ],
           description: 'The bright and convivial Nuevo Latino restaurant that brought bold flavors and warmth to the Pearl District before the neighborhood decided everything had to be minimalist. Oba served ceviche, empanadas, and rum-forward cocktails in a space that felt like a celebration—vibrant colors, communal energy, and the kind of hospitality that made you stay for another round. When it closed, Portland lost a reminder that sophistication doesn\'t have to whisper.',
           whyMissed: 'The Latin American flavors that felt authentic without being precious, the bar scene that stayed lively without turning bro-y, and the proof that the Pearl District once had room for color and joy. Oba was festive before the neighborhood forgot how to party.',
           communityVoice: '"Oba brought life to the Pearl District." — Yelp reviewers',
           lastAddress: '555 NW 12th Ave, Portland',
-          source: 'Yelp, Portland restaurant archives',
+          source: 'Yelp, Portland restaurant archives'
         }
-      ],
+      ]
     }
-  ],
+  ]
 }

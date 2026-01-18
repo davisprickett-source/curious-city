@@ -6,13 +6,13 @@ export const tampa: CityData = {
   tagline: 'Cigars, lightning, and perpetual reinvention',
   heroVideo: {
     sequencePath: 'tampa/tampa-1',
-    fallbackImage: '/banners/tampa-banner.png',
+    fallbackImage: '/banners/tampa-banner.png'
   },
   content: [
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Tampa — the scrappier side of Florida, where cigars built a city and lightning defines the summers. Here\'s what we\'re curious about.',
+      content: 'Welcome to Tampa — the scrappier side of Florida, where cigars built a city and lightning defines the summers. Here\'s what we\'re curious about.'
     },
     {
       id: 'featured-card',
@@ -21,12 +21,12 @@ export const tampa: CityData = {
       description: 'A city of cigars, conquistadors, and perpetual reinvention.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/tampa/essay/sunshine-and-hustle',
+      href: '/tampa/essay/sunshine-and-hustle'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -37,27 +37,27 @@ export const tampa: CityData = {
           title: 'Ybor City: Beyond the Nightlife',
           description: 'The cigar history beneath the Saturday night crowds.',
           meta: 'Guide',
-          href: '/tampa/ybor-city',
+          href: '/tampa/ybor-city'
         },
         {
           title: 'Hurricane Season Prep',
           description: 'How Tampa prepares for the storm that hasn\'t come yet.',
           meta: 'Feature',
-          href: '/tampa/hurricane-prep',
+          href: '/tampa/hurricane-prep'
         },
         {
           title: 'Best Cuban Sandwiches',
           description: 'Tampa invented it. Here\'s where to find the best.',
           meta: 'List',
           variant: 'compact',
-          href: '/tampa/cuban-sandwiches',
-        },
-      ],
+          href: '/tampa/cuban-sandwiches'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'tpa-curiosities',
@@ -77,14 +77,14 @@ export const tampa: CityData = {
           body: 'José Gaspar—the legendary, fearsome pirate who supposedly terrorized the Gulf Coast—almost certainly never existed. His swashbuckling tale of Spanish naval glory, buried treasure, and a dramatic final battle was cooked up around 1900 by a publicist for the Charlotte Harbor and Northern Railway. He needed a hook to lure tourists to southwest Florida. He invented Gaspar, a disgraced Spanish officer turned buccaneer who captured princesses and buried riches. It\'s pure fiction. But Tampa ran with it. Every January since 1904, the city hosts the Gasparilla Pirate Festival, one of America\'s largest parades, where a fully-rigged pirate ship "invades" the harbor, the mayor surrenders the city keys, and half a million people line the streets. Tampa knows the pirate is fake. Tampa doesn\'t care. The party, the beads, and the civic myth are simply too good to let a little thing like historical accuracy get in the way. After all, what\'s a city without its legends?',
                     image: {
             src: '/tampa/curiosities/gasparilla.png',
-            alt: 'Pirate ship on Tampa Bay',
+            alt: 'Pirate ship on Tampa Bay'
           },
           source: 'Tampa Bay History Center',
           location: {
             name: 'Tampa Bay',
       url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-7',
@@ -97,14 +97,14 @@ export const tampa: CityData = {
           year: '1890s',
           image: {
             src: '/tampa/curiosities/rector.png',
-            alt: 'Lector reading to cigar factory workers',
+            alt: 'Lector reading to cigar factory workers'
           },
           source: 'Ybor City State Museum',
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'tam-curiosity-11',
@@ -114,13 +114,13 @@ export const tampa: CityData = {
           body: 'In 1919, the SS Marianao—named for the affluent Havana district—departed Tampa for Cuba carrying sugar machinery, general cargo, and a full crew. The Tampa-Havana run was routine; steamships made the crossing constantly, ferrying goods and passengers between the cigar capital of America and the island that supplied its tobacco. The weather that day was clear. The Gulf was calm. The ship never arrived. No distress signal. No floating debris. No survivors. No bodies. The Gulf of Mexico averages only 5,000 feet deep—shallow enough that wrecks typically surface, get snagged by fishermen, or show up on charts. The Marianao showed up nowhere. Investigators floated theories: pirates operating in the post-WWI chaos, rum runners who commandeered the vessel (Prohibition would arrive the following year, making Cuban rum gold), or insurance fraud involving a deliberately scuttled ship and a crew that vanished into Havana\'s underworld. The Tampa shipping community had seen storms take vessels and U-boats sink freighters during the war. But a ship that simply evaporated on a clear day? That was new. Over a century later, no wreckage has ever been identified. The SS Marianao remains one of the Gulf\'s unsolved disappearances—a ship that sailed into good weather and never came out the other side.',
           image: {
             src: '/tampa/curiosities/shipwreck.png',
-            alt: 'Historic ship on Tampa Bay',
-          },
+            alt: 'Historic ship on Tampa Bay'
+          }
         },
         {
           id: 'tam-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'tam-curiosity-6',
@@ -132,14 +132,14 @@ export const tampa: CityData = {
           body: 'The Tampa Bay area experiences more lightning strikes per square mile than anywhere else in the United States, earning it the official designation of "Lightning Capital of North America." The physics are straightforward: every summer afternoon, sea breezes from the Gulf of Mexico collide with sea breezes from the Atlantic, creating a convergence zone of moist, unstable air directly over the Tampa Bay peninsula. The result is thunderstorms of almost mechanical regularity. By 2pm, the sky darkens. By 3pm, the lightning starts. By 6pm, it\'s over. The process repeats daily from May through September, producing an average of 100+ thunderstorm days per year. The NHL\'s Tampa Bay Lightning wasn\'t named through some marketing focus group; it was named for the most defining characteristic of life in this city. During summer months, outdoor activities are governed by lightning awareness. Golf courses have sirens. Lifeguards clear beaches. Construction crews track radar. Nobody argues with the sky when it turns electric. Locals develop an almost casual relationship with the violence overhead, timing errands around storms the way other cities time activities around commute hours. The thunder becomes background noise.',
           image: {
             src: '/tampa/curiosities/lightning-capital.png',
-            alt: 'Lightning storm over Tampa Bay',
+            alt: 'Lightning storm over Tampa Bay'
           },
           source: 'National Weather Service',
           location: {
             name: 'Tampa Bay Area',
       url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20Area%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-8',
@@ -149,14 +149,14 @@ export const tampa: CityData = {
           body: 'The chickens of Ybor City are descendants of birds kept by Cuban, Spanish, and Italian cigar workers in the late 1800s. When the cigar industry collapsed and the workers left, the chickens stayed. Over a century later, their feral offspring still roam the streets, legally protected by city ordinance. Tampa Municipal Code makes it illegal to trap, harm, capture, or kill them. They are, functionally, an untouchable caste of poultry. The roosters crow at 4am, indifferent to hangovers and sleep schedules. They block sidewalks. They peck at outdoor diners. They fight each other in parking lots with genuine violence. During the nightclub years, drunk patrons would occasionally try to chase them; the chickens always won. Some residents consider them charming mascots, living links to Ybor\'s immigrant past. Others consider them filthy, aggressive, disease-carrying anarchists with feathers. The city has refused to take a definitive position, preferring to let the two camps fight it out in letters to the editor and neighborhood Facebook groups. The chickens, for their part, seem entirely unbothered by the controversy. They continue their routines of crowing, fighting, and wandering into traffic, confident in their legal immunity.',
           image: {
             src: '/tampa/curiosities/ybor-chickens.png',
-            alt: 'Chicken on city street',
+            alt: 'Chicken on city street'
           },
           source: 'City of Tampa ordinance',
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-2',
@@ -169,19 +169,19 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/curiosities/cuba-ybor-1.png',
-              alt: 'José Martí Park in Ybor City',
+              alt: 'José Martí Park in Ybor City'
             },
             {
               src: '/tampa/curiosities/cuba-ybor-2.png',
-              alt: 'José Martí Park monument and Cuban territory marker',
-            },
+              alt: 'José Martí Park monument and Cuban territory marker'
+            }
           ],
           source: 'Ybor City Museum State Park',
           location: {
             name: 'José Martí Park, Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Mart%C3%AD%20Park%2C%20Ybor%20City%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-12',
@@ -192,19 +192,19 @@ export const tampa: CityData = {
           year: '1898',
           image: {
             src: '/tampa/curiosities/rough-riders.png',
-            alt: 'University of Tampa minarets',
+            alt: 'University of Tampa minarets'
           },
           source: 'Henry B. Plant Museum',
           location: {
             name: 'University of Tampa',
       url: 'https://www.google.com/maps/search/?api=1&query=University%20of%20Tampa%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'tam-curiosity-5',
@@ -215,14 +215,14 @@ export const tampa: CityData = {
           year: '1880s',
           image: {
             src: '/tampa/curiosities/cuban-sandwich.png',
-            alt: 'Traditional Cuban sandwich from Tampa',
+            alt: 'Traditional Cuban sandwich from Tampa'
           },
           source: 'Tampa Bay Times',
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-curiosity-9',
@@ -233,16 +233,16 @@ export const tampa: CityData = {
           year: '1920s',
           image: {
             src: '/tampa/curiosities/lots-of-cigars.png',
-            alt: 'Cigar production in Ybor City',
+            alt: 'Cigar production in Ybor City'
           },
           source: 'Tampa Bay History Center',
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
     {
       id: 'iconic-spots',
@@ -259,19 +259,19 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/columbia-1.png',
-              alt: 'Columbia Restaurant interior courtyard',
+              alt: 'Columbia Restaurant interior courtyard'
             },
             {
               src: '/tampa/hidden-gems/columbia-2.png',
-              alt: 'Columbia Restaurant dining area',
-            },
+              alt: 'Columbia Restaurant dining area'
+            }
           ],
           address: '2117 E 7th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9619, lng: -82.4369 },
           hours: 'Sun-Thu 11am-9pm, Fri-Sat 11am-10pm',
           price: '$$',
           website: 'https://columbiarestaurant.com',
-          tip: 'Get the 1905 Salad made tableside',
+          tip: 'Get the 1905 Salad made tableside'
         },
         {
           id: 'tam-iconic-2',
@@ -282,20 +282,20 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/tampa-theatre.png',
-              alt: 'Tampa Theatre ornate interior',
-            },
+              alt: 'Tampa Theatre ornate interior'
+            }
           ],
           address: '711 N Franklin St, Tampa, FL 33602',
           coordinates: { lat: 27.9506, lng: -82.4595 },
           hours: 'Varies by showtime',
           price: '$12 general admission',
           website: 'https://tampatheatre.org',
-          tip: 'The Mighty Wurlitzer organ plays before some screenings',
+          tip: 'The Mighty Wurlitzer organ plays before some screenings'
         },
         {
           id: 'tam-iconic-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'tam-iconic-3',
@@ -306,14 +306,14 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/riverwalk.png',
-              alt: 'Tampa Riverwalk with downtown skyline',
-            },
+              alt: 'Tampa Riverwalk with downtown skyline'
+            }
           ],
           address: 'Starts at Sparkman Wharf, ends at Armature Works',
           coordinates: { lat: 27.9450, lng: -82.4531 },
           hours: '24 hours',
           price: 'Free',
-          tip: 'Stop at Armature Works for food hall options',
+          tip: 'Stop at Armature Works for food hall options'
         },
         {
           id: 'tam-iconic-4',
@@ -324,15 +324,15 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/state-museum.png',
-              alt: 'Ybor City State Museum exterior',
-            },
+              alt: 'Ybor City State Museum exterior'
+            }
           ],
           address: '1818 E 9th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9633, lng: -82.4381 },
           hours: 'Tue-Sun 10am-5pm',
           price: '$4',
           website: 'https://ybormuseum.org',
-          tip: 'The garden behind the museum is peaceful',
+          tip: 'The garden behind the museum is peaceful'
         },
         {
           id: 'tam-iconic-5',
@@ -343,17 +343,17 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/armature-works.png',
-              alt: 'Armature Works interior',
-            },
+              alt: 'Armature Works interior'
+            }
           ],
           address: '1910 N Ola Ave, Tampa, FL 33602',
           coordinates: { lat: 27.9578, lng: -82.4633 },
           hours: 'Mon-Sat 11am-10pm, Sun 11am-9pm',
           price: '$$',
           website: 'https://www.armatureworks.com',
-          tip: 'The outdoor seating on the river is the move',
-        },
-      ],
+          tip: 'The outdoor seating on the river is the move'
+        }
+      ]
     },
     // SECTION: Hidden Gems (with subcategories)
     {
@@ -362,7 +362,7 @@ export const tampa: CityData = {
       title: 'Hidden Tampa',
       teaser: 'The stuff guidebooks skip and locals gatekeep',
       intro: 'Tampa has layers. The cigar vaults beneath bar floors. The Prohibition-era passages that connected factories to gambling dens. The immigrant cottages most visitors walk right past. This is the Tampa that rewards the curious—places that don\'t advertise and don\'t need to.',
-      items: [],
+      items: []
     },
     // SUBSECTION: Underground & Secret Spaces
     {
@@ -378,8 +378,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/curiosities/tunnels.png',
-              alt: 'Historic tunnels beneath Ybor City',
-            },
+              alt: 'Historic tunnels beneath Ybor City'
+            }
           ],
           description: 'Beneath the brick streets of Ybor City runs a network of underground tunnels that served as Prohibition\'s hidden highway. During the 1920s and early 1930s, bootleggers moved illegal liquor through these passages connecting cigar factories, restaurants, and speakeasies — most notably linking the Columbia Restaurant to the nearby Cherokee Club casino. The tunnels were originally built as utility corridors and storage spaces in the 1880s-1900s when Ybor was being developed, but took on new life when the 18th Amendment made alcohol illegal. Some sections featured brick archways tall enough to walk through upright; others were cramped crawl spaces. Local historians believe the tunnel system was far more extensive than currently documented, with many passages sealed or collapsed over the decades. Urban explorers occasionally discover unmarked entrances in building basements, though most access points have been permanently closed. The full extent of the network remains unmapped, and stories persist of sealed rooms still containing old bottles and gambling equipment.',
           location: 'Ybor City (sealed)',
@@ -387,13 +387,13 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Ybor City\'s Underground Tunnels',
-              url: 'https://abandonedfl.com/ybor-city-tunnels/',
+              url: 'https://abandonedfl.com/ybor-city-tunnels/'
             },
             {
               title: 'Prohibition-Era Tampa',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
+              url: 'https://www.tampabayhistorycenter.org/'
+            }
+          ]
         },
         {
           id: 'tam-gem-2',
@@ -403,22 +403,22 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/cigar-vault.png',
-              alt: 'The Bricks historic cigar vault',
-            },
+              alt: 'The Bricks historic cigar vault'
+            }
           ],
           description: 'Descend the stairs at The Bricks on 7th Avenue and you\'ll find something most patrons never see: an original brick-walled cigar storage vault from the 1800s, preserved exactly as it was when this building served Ybor\'s cigar industry. The thick walls and controlled humidity made it perfect for aging premium cigars before they were shipped worldwide. The vault sits directly beneath the bar, its arched brick ceiling and heavy wooden doors still intact. Temperature and humidity were carefully controlled even before modern climate systems — the brick construction naturally regulated conditions. During Prohibition, spaces like this were allegedly repurposed for storing bootleg liquor. Today, the vault occasionally opens for private tastings and special events, but most people drinking upstairs have no idea it exists. The Bricks — run by the Skatepark of Tampa crew since 2010 — has kept the space largely unchanged as a nod to Ybor\'s industrial heritage.',
           location: 'Ybor City',
           tip: 'Ask staff nicely — they sometimes show regulars',
           address: '1327 E 7th Ave, Tampa, FL 33605',
           coordinates: { lat: 27.9601, lng: -82.4445 },
-          website: 'https://www.thebricksybor.com/',
-        },
-      ],
+          website: 'https://www.thebricksybor.com/'
+        }
+      ]
     },
     {
       id: 'tam-gem-ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     // SUBSECTION: Abandoned & Lost Places
     {
@@ -434,8 +434,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/tampa-hidden-water-tower.png',
-              alt: 'Sulphur Springs Water Tower',
-            },
+              alt: 'Sulphur Springs Water Tower'
+            }
           ],
           description: 'Rising 214 feet above North Tampa, this abandoned water tower and arcade complex is a monument to dreams that didn\'t quite pan out. In the 1920s, Sulphur Springs was marketed as Tampa\'s premier health resort — visitors came from across the country to bathe in mineral springs advertised as having miraculous healing properties. The tower, built in 1927, housed a swimming pool, arcade, and observation deck. The Art Deco structure was designed by architect Francis J. Kennard and featured a distinctive octagonal shape that made it a local landmark. At its peak, the complex drew thousands of visitors who believed the sulfurous water could cure everything from rheumatism to skin diseases. The springs are still there — you can smell the sulfur — but the tower has been empty since the 1980s. The pool is drained, windows are broken, and vegetation creeps up the sides. Every few years, developers announce grand plans to renovate it into condos, a restaurant, or a museum. Nothing ever happens. The city of Tampa owns it now, and it sits fenced off, slowly deteriorating. Locals have mixed feelings: some see it as a tragic waste, others as a beautiful ruin best left alone.',
           location: 'Sulphur Springs',
@@ -444,17 +444,17 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'The Rise and Fall of Sulphur Springs',
-              url: 'https://sulphurspringsmuseum.org/history/',
-            },
+              url: 'https://sulphurspringsmuseum.org/history/'
+            }
           ],
-          tip: 'Visible from the street but fenced off — best photographed from outside',
-        },
-      ],
+          tip: 'Visible from the street but fenced off — best photographed from outside'
+        }
+      ]
     },
     {
       id: 'tam-gem-ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     // SUBSECTION: Secret Gardens & Nature
     {
@@ -471,8 +471,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/lettuce-lake.png',
-              alt: 'Elevated boardwalk through cypress swamp at Lettuce Lake Park',
-            },
+              alt: 'Elevated boardwalk through cypress swamp at Lettuce Lake Park'
+            }
           ],
           location: 'North Tampa',
           address: '6920 E Fletcher Ave, Tampa, FL 33637',
@@ -480,7 +480,7 @@ export const tampa: CityData = {
           hours: 'Daily 8am-6pm (until 8pm in summer)',
           price: '$2 per vehicle',
           website: 'https://www.hillsboroughcounty.org/en/locations/lettuce-lake-park',
-          tip: 'Rent a canoe or kayak to explore the Hillsborough River — arrive before 9am to avoid crowds',
+          tip: 'Rent a canoe or kayak to explore the Hillsborough River — arrive before 9am to avoid crowds'
         },
         {
           id: 'tam-gem-9',
@@ -490,12 +490,12 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/curiosities/plant-museum-0.png',
-              alt: 'Henry B. Plant Museum courtyard',
+              alt: 'Henry B. Plant Museum courtyard'
             },
             {
               src: '/tampa/curiosities/plant-museum-1.png',
-              alt: 'University of Tampa Plant Museum',
-            },
+              alt: 'University of Tampa Plant Museum'
+            }
           ],
           description: 'Step inside Plant Hall\'s Henry B. Plant Museum and you\'ll find a Victorian-era courtyard that most visitors miss entirely. The interior garden features Moorish-style horseshoe arches, ornate hand-painted tilework, bubbling fountains, and tropical plants identical to those that grew here in 1891 when railroad magnate Henry Plant built his Tampa Bay Hotel. The courtyard served as a social gathering space for Gilded Age guests — including Teddy Roosevelt\'s Rough Riders, who stayed here before shipping out to Cuba during the Spanish-American War. The tilework is original: intricate geometric patterns in blues, yellows, and greens imported from Spain and North Africa. The fountains still work, their gentle trickling creating an oasis atmosphere. Palm fronds and ferns cascade from planters, and wrought-iron benches invite lingering. Most tourists rush through to see the museum exhibits or climb the iconic silver minarets, completely bypassing this hidden garden. It\'s open during museum hours, free to enter, and almost always empty — a pocket of 19th-century luxury preserved in the middle of a college campus.',
           location: 'University of Tampa',
@@ -504,9 +504,9 @@ export const tampa: CityData = {
           hours: 'Tue-Sat 10am-5pm, Sun 12pm-5pm',
           price: '$10 museum admission (includes courtyard access)',
           website: 'https://www.plantmuseum.com',
-          tip: 'Free to enter during museum hours — the courtyard is just inside the main entrance',
-        },
-      ],
+          tip: 'Free to enter during museum hours — the courtyard is just inside the main entrance'
+        }
+      ]
     },
     // SUBSECTION: Quirky Architecture & Landmarks
     {
@@ -522,8 +522,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/tampa-hidden-statue-door.png',
-              alt: 'Jose Martí Statue\'s Hidden Door',
-            },
+              alt: 'Jose Martí Statue\'s Hidden Door'
+            }
           ],
           description: 'Standing in José Martí Park at the heart of Ybor City, the bronze statue of Cuba\'s national hero conceals a secret that most visitors never discover: a small hidden door at its base that opens to reveal a time capsule placed in 1956. The statue was dedicated on May 20, 1956, commemorating the 54th anniversary of Cuban independence, and the capsule was sealed inside containing documents, photographs, and artifacts from Tampa\'s Cuban immigrant community. But the statue\'s most remarkable feature isn\'t the capsule—it\'s where it stands. The park itself, at 1302 E 8th Avenue, was officially deeded to the Republic of Cuba in 1956 and remains sovereign Cuban territory to this day, making it one of the only pieces of foreign sovereign soil in the United States outside of embassy grounds. Fidel Castro gave a speech here in 1955 while raising funds for the revolution that would overthrow Batista. The statue depicts Martí—poet, journalist, and revolutionary who died fighting for Cuban independence in 1895—in heroic stance, his words inscribed on the pedestal. The park hosts annual gatherings on Cuban holidays, and the statue remains a gathering place for Tampa\'s Cuban-American community. Few visitors realize they\'re technically standing on Cuban soil. Fewer still know about the door.',
           location: 'Ybor City',
@@ -535,13 +535,13 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'José Martí Park and Cuban Sovereignty',
-              url: 'https://www.atlasobscura.com/places/jose-marti-park',
+              url: 'https://www.atlasobscura.com/places/jose-marti-park'
             },
             {
               title: 'Fidel Castro\'s 1955 Tampa Visit',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
+              url: 'https://www.tampabayhistorycenter.org/'
+            }
+          ]
         },
         {
           id: 'tam-gem-22',
@@ -551,12 +551,12 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/whimsey.png',
-              alt: 'Whimzeyland mosaic art installation',
+              alt: 'Whimzeyland mosaic art installation'
             },
             {
               src: '/tampa/hidden-gems/whimsey-0.png',
-              alt: 'Whimzeyland yard sculptures',
-            },
+              alt: 'Whimzeyland yard sculptures'
+            }
           ],
           description: 'In Safety Harbor, artists Todd Ramquist and Kiaralinda have spent over 35 years transforming their home and neighboring properties into one of Florida\'s most spectacular folk art environments. Originally known as the "Bowling Ball House," Whimzeyland now features over 600 painted bowling balls arranged in pyramids, walls, and sculptures across a yard exploding with color and creativity. Every surface is covered in mosaic pathways, recycled shrines, bottle gardens, wire art daisies, mermaid carvings, and ceramic sculptures that create an almost otherworldly atmosphere. The artists bought the modest home in 1987 and have never stopped adding to it—turning found objects, discarded materials, and pure imagination into a continuous artwork that evolves with each visit. Featured on HGTV\'s Extreme Homes and MTV Extreme Cribs, Whimzeyland has become a pilgrimage site for folk art enthusiasts and a beloved Safety Harbor landmark. The yard is open daily for self-guided tours, or you can book a docent-led tour through the adjacent Safety Harbor Art and Music Center (SHAMc), another project the artists helped create. This is someone\'s actual home, so visitors are asked to be respectful, but the artists genuinely welcome people who appreciate handmade creativity over manicured lawns.',
           location: 'Safety Harbor',
@@ -569,16 +569,16 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Whimzeyland - Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/whimzeyland',
-            },
-          ],
-        },
-      ],
+              url: 'https://www.atlasobscura.com/places/whimzeyland'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'tam-gem-ad-3',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     // SUBSECTION: Hidden History & Museums
     {
@@ -594,8 +594,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/curiosities/casitas.png',
-              alt: 'Historic casitas in Ybor City',
-            },
+              alt: 'Historic casitas in Ybor City'
+            }
           ],
           description: 'Behind the Ybor City Museum State Park sits a row of perfectly preserved wooden casitas—small shotgun-style cottages where Cuban, Spanish, Italian, and German cigar workers lived with their families during Ybor\'s boom years from the 1880s through the 1930s. The cigar companies built these as worker housing, renting them for modest sums. The structures are narrow because property taxes were based on street frontage—practical to the last detail. These vernacular wood-frame houses were designed for Tampa\'s brutal heat: narrow layouts allowed front-to-back airflow, high ceilings let hot air rise, and wide porches provided outdoor living space. Inside, the casitas have been meticulously restored and furnished with period-accurate furniture, family photographs, kitchen tools, and personal items that bring the immigrant experience to life. You can walk through bedrooms where multiple children slept, kitchens where women cooked Cuban and Spanish meals on wood-burning stoves, and parlors where families gathered after long shifts in the cigar factories. Outside, the museum has recreated the medicinal and culinary gardens immigrants maintained, growing herbs like yerba buena, cilantro, and rue that they brought from their home countries and used for cooking and healing. The casitas offer a rare, tangible connection to working-class life in early Tampa—a counterpoint to the grander buildings and success stories. Most visitors tour the museum\'s exhibits on cigar manufacturing and never venture into the garden courtyard where the casitas stand, making this a genuinely hidden piece of Ybor\'s history.',
           location: 'Ybor City',
@@ -608,9 +608,9 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'Ybor City Museum State Park',
-              url: 'https://www.floridastateparks.org/parks-and-trails/ybor-city-museum-state-park',
-            },
-          ],
+              url: 'https://www.floridastateparks.org/parks-and-trails/ybor-city-museum-state-park'
+            }
+          ]
         },
         {
           id: 'tam-gem-14',
@@ -627,23 +627,23 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/centro-asturiano-1.png',
-              alt: 'Centro Asturiano de Tampa exterior',
+              alt: 'Centro Asturiano de Tampa exterior'
             },
             {
               src: '/tampa/hidden-gems/centro-asturiano-2.png',
-              alt: 'Centro Asturiano ballroom',
-            },
+              alt: 'Centro Asturiano ballroom'
+            }
           ],
           sources: [
             {
               title: 'Centro Asturiano History',
-              url: 'https://www.tampabayhistorycenter.org/',
+              url: 'https://www.tampabayhistorycenter.org/'
             },
             {
               title: 'Asturian Immigrants in Tampa',
-              url: 'https://ybormuseum.org/',
-            },
-          ],
+              url: 'https://ybormuseum.org/'
+            }
+          ]
         },
         {
           id: 'tam-gem-15',
@@ -660,17 +660,17 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/italian-cemetery.png',
-              alt: 'L\'Unione Italiana Cemetery headstones',
-            },
+              alt: 'L\'Unione Italiana Cemetery headstones'
+            }
           ],
           sources: [
             {
               title: 'Tampa\'s Italian Immigrant Heritage',
-              url: 'https://www.tampabayhistorycenter.org/',
-            },
-          ],
-        },
-      ],
+              url: 'https://www.tampabayhistorycenter.org/'
+            }
+          ]
+        }
+      ]
     },
     // SUBSECTION: Quirky Specialty
     {
@@ -693,15 +693,15 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/king-corona.png',
-              alt: 'King Corona Cigars Factory hand-rolling',
-            },
+              alt: 'King Corona Cigars Factory hand-rolling'
+            }
           ],
           sources: [
             {
               title: 'Ybor City Cigar Heritage',
-              url: 'https://ybormuseum.org/',
-            },
-          ],
+              url: 'https://ybormuseum.org/'
+            }
+          ]
         },
         {
           id: 'tam-gem-21',
@@ -711,8 +711,8 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/manatee-watching.png',
-              alt: 'Manatees gathering at TECO Viewing Center',
-            },
+              alt: 'Manatees gathering at TECO Viewing Center'
+            }
           ],
           description: 'At the TECO Big Bend Power Station in Apollo Beach, an unexpected ecological phenomenon occurs every winter: hundreds of West Indian manatees gather in the warm-water discharge from the plant\'s cooling system. Manatees are sensitive to cold and struggle when water temperatures drop below 68°F. The power plant discharges water at around 72°F into a protected canal, creating an artificial warm-water refuge that manatees have learned to depend on during Florida\'s cooler months. On the coldest winter mornings, as many as 300-400 manatees can be seen clustered in the discharge canal, breathing, nursing calves, and socializing in the warmth. The TECO Manatee Viewing Center, opened in 1986, provides an elevated observation platform, boardwalks, and interpretive exhibits explaining this unusual symbiosis between endangered wildlife and industrial infrastructure. The center is completely free, staffed by knowledgeable volunteers, and offers one of the best manatee-viewing experiences in Florida. Peak season runs from November through March, especially on cold mornings after a cold front. Beyond the manatees, the surrounding 50-acre park features nature trails, butterfly gardens, and birdwatching opportunities. It\'s a surreal and beautiful juxtaposition—smokestacks rising behind peaceful waterways where ancient marine mammals gather to survive. Most Tampa residents have no idea it exists.',
           location: 'Apollo Beach',
@@ -725,13 +725,13 @@ export const tampa: CityData = {
           sources: [
             {
               title: 'TECO Manatee Viewing Center',
-              url: 'https://www.tampaelectric.com/company/mvc/',
+              url: 'https://www.tampaelectric.com/company/mvc/'
             },
             {
               title: 'Florida Manatee Conservation',
-              url: 'https://myfwc.com/wildlifehabitats/wildlife/manatee/',
-            },
-          ],
+              url: 'https://myfwc.com/wildlifehabitats/wildlife/manatee/'
+            }
+          ]
         },
         {
           id: 'tam-gem-23',
@@ -748,19 +748,19 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/hidden-gems/dysfunctional-grace-1.png',
-              alt: 'Dysfunctional Grace Art Co. interior',
+              alt: 'Dysfunctional Grace Art Co. interior'
             },
             {
               src: '/tampa/hidden-gems/dysfunctional-grace-2.png',
-              alt: 'Dysfunctional Grace oddities',
-            },
+              alt: 'Dysfunctional Grace oddities'
+            }
           ],
           sources: [
             {
               title: 'Dysfunctional Grace - Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/dysfunctional-grace-art-co',
-            },
-          ],
+              url: 'https://www.atlasobscura.com/places/dysfunctional-grace-art-co'
+            }
+          ]
         },
         {
           id: 'tam-gem-24',
@@ -780,21 +780,21 @@ export const tampa: CityData = {
           images: [
             {
               src: '/tampa/curiosities/thai-temple-1.png',
-              alt: 'Wat Mongkolratanaram Thai Temple',
+              alt: 'Wat Mongkolratanaram Thai Temple'
             },
             {
               src: '/tampa/curiosities/thai-temple-2.png',
-              alt: 'Thai Sunday Market',
-            },
+              alt: 'Thai Sunday Market'
+            }
           ],
           sources: [
             {
               title: 'Wat Mongkolratanaram - Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/wat-mongkolratanaram-tampa',
-            },
-          ],
-        },
-      ],
+              url: 'https://www.atlasobscura.com/places/wat-mongkolratanaram-tampa'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'tam-best-bars',
@@ -819,8 +819,8 @@ export const tampa: CityData = {
             { src: '/tampa/bars/jekyll-1.png', alt: 'Jekyll speakeasy interior' },
             { src: '/tampa/bars/jekyll-2.png', alt: 'Craft cocktails at Jekyll' },
             { src: '/tampa/bars/jekyll-3.png', alt: 'Intimate bar seating' },
-            { src: '/tampa/bars/jekyll-4.png', alt: 'Jekyll moody ambiance' },
-          ],
+            { src: '/tampa/bars/jekyll-4.png', alt: 'Jekyll moody ambiance' }
+          ]
         },
         {
           name: 'The Bunker',
@@ -832,7 +832,7 @@ export const tampa: CityData = {
           coordinates: { lat: 27.9495, lng: -82.4586 },
           price: '$$$',
           website: 'https://www.marriott.com/en-us/hotels/tpasi-le-meridien-tampa-the-courthouse/dining/',
-          hours: 'Wed-Sat 5pm-midnight',
+          hours: 'Wed-Sat 5pm-midnight'
         },
         {
           name: 'The Bricks of Ybor',
@@ -849,8 +849,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/bars/bricks-1.png', alt: 'The Bricks open-air patio' },
             { src: '/tampa/bars/bricks-2.png', alt: 'The Bricks bar interior' },
-            { src: '/tampa/bars/bricks-3.png', alt: 'Corner bar on 7th Avenue' },
-          ],
+            { src: '/tampa/bars/bricks-3.png', alt: 'Corner bar on 7th Avenue' }
+          ]
         },
         {
           name: 'The Independent',
@@ -866,8 +866,8 @@ export const tampa: CityData = {
           hours: 'Mon-Thu 11am-12am, Fri-Sat 11am-1am, Sun 11am-12am',
           images: [
             { src: '/tampa/bars/independent.png', alt: 'The Independent beer hall exterior' },
-            { src: '/tampa/bars/independent-2.png', alt: 'Belgian beer selection' },
-          ],
+            { src: '/tampa/bars/independent-2.png', alt: 'Belgian beer selection' }
+          ]
         },
         {
           name: 'Cigar City Cider and Mead',
@@ -884,8 +884,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/bars/cigar-city.png', alt: 'Cigar City Cider tasting room' },
             { src: '/tampa/bars/cigar-city-2.png', alt: 'Cider and mead flight' },
-            { src: '/tampa/bars/cigar-city-3.png', alt: 'Craft ciders on tap' },
-          ],
+            { src: '/tampa/bars/cigar-city-3.png', alt: 'Craft ciders on tap' }
+          ]
         },
         {
           name: 'Madame Fortune Dessert + HiFi Parlour',
@@ -902,10 +902,10 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/bars/madame-1.png', alt: 'Madame Fortune speakeasy entrance' },
             { src: '/tampa/bars/madame-2.png', alt: 'Craft cocktail and dessert' },
-            { src: '/tampa/bars/madame-3.png', alt: 'Intimate HiFi parlour' },
-          ],
-        },
-      ],
+            { src: '/tampa/bars/madame-3.png', alt: 'Intimate HiFi parlour' }
+          ]
+        }
+      ]
     },
     {
       id: 'tam-best-restaurants',
@@ -931,8 +931,8 @@ export const tampa: CityData = {
             { src: '/tampa/restaurants/rooster-1.png', alt: 'Farm-to-table plating' },
             { src: '/tampa/restaurants/rooster-2.png', alt: 'Open kitchen at Rooster & the Till' },
             { src: '/tampa/restaurants/rooster-3.png', alt: 'Seasonal dish presentation' },
-            { src: '/tampa/restaurants/rooster-4.png', alt: 'Dining room ambiance' },
-          ],
+            { src: '/tampa/restaurants/rooster-4.png', alt: 'Dining room ambiance' }
+          ]
         },
         {
           name: 'La Segunda Central Bakery',
@@ -949,8 +949,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/restaurants/segunda-1.png', alt: 'La Segunda bakery storefront' },
             { src: '/tampa/restaurants/segunda-2.png', alt: 'Fresh Cuban bread' },
-            { src: '/tampa/restaurants/segunda-3.png', alt: 'Cuban sandwich on fresh-baked bread' },
-          ],
+            { src: '/tampa/restaurants/segunda-3.png', alt: 'Cuban sandwich on fresh-baked bread' }
+          ]
         },
         {
           name: 'Bern\'s Steak House',
@@ -969,8 +969,8 @@ export const tampa: CityData = {
             { src: '/tampa/restaurants/berns-1.png', alt: 'Bern\'s Steak House exterior' },
             { src: '/tampa/restaurants/berns-2.png', alt: 'Dry-aged steak presentation' },
             { src: '/tampa/restaurants/berns-3.png', alt: 'Famous Dessert Room' },
-            { src: '/tampa/restaurants/berns-4.png', alt: 'Wine cellar collection' },
-          ],
+            { src: '/tampa/restaurants/berns-4.png', alt: 'Wine cellar collection' }
+          ]
         },
         {
           name: 'Ulele',
@@ -987,8 +987,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/restaurants/ulele-1.png', alt: 'Ulele riverside building' },
             { src: '/tampa/restaurants/ulele-2.png', alt: 'Barbacoa grill in action' },
-            { src: '/tampa/restaurants/ulele-3.png', alt: 'Charbroiled oysters' },
-          ],
+            { src: '/tampa/restaurants/ulele-3.png', alt: 'Charbroiled oysters' }
+          ]
         },
         {
           name: 'West Tampa Sandwich Shop',
@@ -1004,8 +1004,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/restaurants/west-tampa-1.png', alt: 'West Tampa Sandwich Shop counter' },
             { src: '/tampa/restaurants/west-tampa-2.png', alt: 'Cuban sandwich' },
-            { src: '/tampa/restaurants/west-tampa-3.png', alt: 'Neighborhood sandwich shop' },
-          ],
+            { src: '/tampa/restaurants/west-tampa-3.png', alt: 'Neighborhood sandwich shop' }
+          ]
         },
         {
           name: 'Columbia Restaurant',
@@ -1021,10 +1021,10 @@ export const tampa: CityData = {
           hours: 'Mon-Thu 11am-9pm, Fri-Sat 11am-10pm, Sun 11am-9pm',
           images: [
             { src: '/tampa/hidden-gems/columbia-1.png', alt: 'Columbia Restaurant historic dining room' },
-            { src: '/tampa/hidden-gems/columbia-2.png', alt: 'Columbia Restaurant dining area' },
-          ],
-        },
-      ],
+            { src: '/tampa/hidden-gems/columbia-2.png', alt: 'Columbia Restaurant dining area' }
+          ]
+        }
+      ]
     },
     {
       id: 'tpa-best-coffee-shops',
@@ -1050,8 +1050,8 @@ export const tampa: CityData = {
             { src: '/tampa/coffee-shops/buddybrew-2.png', alt: 'Buddy Brew Coffee interior' },
             { src: '/tampa/coffee-shops/buddybrew-3.png', alt: 'Buddy Brew Coffee drinks' },
             { src: '/tampa/coffee-shops/buddybrew-4.png', alt: 'Buddy Brew Coffee roasting' },
-            { src: '/tampa/coffee-shops/buddybrew-5.png', alt: 'Buddy Brew Coffee location' },
-          ],
+            { src: '/tampa/coffee-shops/buddybrew-5.png', alt: 'Buddy Brew Coffee location' }
+          ]
         },
         {
           name: 'Blind Tiger Coffee Roasters',
@@ -1069,8 +1069,8 @@ export const tampa: CityData = {
             { src: '/tampa/coffee-shops/blindtiger-1.png', alt: 'Blind Tiger Coffee Roasters' },
             { src: '/tampa/coffee-shops/blindtiger-2.png', alt: 'Blind Tiger Coffee interior' },
             { src: '/tampa/coffee-shops/blindtiger-3.png', alt: 'Blind Tiger Coffee drinks' },
-            { src: '/tampa/coffee-shops/blindtiger-4.png', alt: 'Blind Tiger Coffee Ybor' },
-          ],
+            { src: '/tampa/coffee-shops/blindtiger-4.png', alt: 'Blind Tiger Coffee Ybor' }
+          ]
         },
         {
           name: 'Kahwa Coffee',
@@ -1087,8 +1087,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/coffee-shops/kahwa-1.png', alt: 'Kahwa Coffee Tampa' },
             { src: '/tampa/coffee-shops/kahwa-2.png', alt: 'Kahwa Coffee interior' },
-            { src: '/tampa/coffee-shops/kahwa-3.png', alt: 'Kahwa Coffee drinks' },
-          ],
+            { src: '/tampa/coffee-shops/kahwa-3.png', alt: 'Kahwa Coffee drinks' }
+          ]
         },
         {
           name: 'The Lab Coffee',
@@ -1104,8 +1104,8 @@ export const tampa: CityData = {
           images: [
             { src: '/tampa/coffee-shops/thelab-1.png', alt: 'The Lab Coffee Tampa' },
             { src: '/tampa/coffee-shops/thelab-2.png', alt: 'The Lab Coffee roastery' },
-            { src: '/tampa/coffee-shops/thelab-3.png', alt: 'The Lab Coffee brewing' },
-          ],
+            { src: '/tampa/coffee-shops/thelab-3.png', alt: 'The Lab Coffee brewing' }
+          ]
         },
         {
           name: 'Cafe Quiquiriqui',
@@ -1125,9 +1125,9 @@ export const tampa: CityData = {
             {
               src: 'https://hotelhaya.com/wp-content/uploads/2020/10/364A7469.Z_5-scaled-640x0-c-default.jpg',
               alt: 'Cafe Quiquiriqui outdoor seating at Hotel Haya in Ybor City',
-              credit: 'Hotel Haya',
-            },
-          ],
+              credit: 'Hotel Haya'
+            }
+          ]
         },
         {
           name: 'Shortwave Coffee',
@@ -1145,21 +1145,21 @@ export const tampa: CityData = {
             {
               src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09591-scaled.jpg',
               alt: 'Shortwave Coffee Tampa interior with modern seating',
-              credit: 'Shortwave Coffee',
+              credit: 'Shortwave Coffee'
             },
             {
               src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09752-scaled.jpg',
               alt: 'Shortwave Coffee espresso bar and roastery',
-              credit: 'Shortwave Coffee',
+              credit: 'Shortwave Coffee'
             },
             {
               src: 'https://shortwave.coffee/wp-content/uploads/2024/01/DSC09624-scaled.jpg',
               alt: 'Shortwave Coffee latte art and specialty drinks',
-              credit: 'Shortwave Coffee',
-            },
-          ],
-        },
-      ],
+              credit: 'Shortwave Coffee'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'tam-dark-history',
@@ -1184,51 +1184,51 @@ export const tampa: CityData = {
               title: 'Cigar City Mafia: A Complete History of the Tampa Underworld',
               author: 'Scott M. Deitche',
               year: '2004',
-              url: 'https://www.groundzerobooksltd.com/pages/books/84207/scott-m-deitche/cigar-city-mafia-a-complete-history-of-the-tampa-underworld',
+              url: 'https://www.groundzerobooksltd.com/pages/books/84207/scott-m-deitche/cigar-city-mafia-a-complete-history-of-the-tampa-underworld'
             },
             {
               type: 'book',
               title: 'White Shadow',
               author: 'Ace Atkins',
               year: '2006',
-              url: 'https://www.goodreads.com/book/show/265622.White_Shadow',
+              url: 'https://www.goodreads.com/book/show/265622.White_Shadow'
             },
             {
               type: 'article',
               title: 'The White Shadow: Tampa\'s Bolita Kingpin',
               publisher: 'Florida Sheriffs Association',
-              url: 'https://flsheriffs.org/blog/entry/the-white-shadow-tampas-bolita-kingpin/',
+              url: 'https://flsheriffs.org/blog/entry/the-white-shadow-tampas-bolita-kingpin/'
             },
             {
               type: 'article',
               title: 'Ybor\'s Criminal Past - Ybor City and the Era of Blood',
               publisher: 'Tampa Historical',
-              url: 'https://tampahistorical.org/items/show/93',
+              url: 'https://tampahistorical.org/items/show/93'
             },
             {
               type: 'article',
               title: 'Santo Trafficante Sr., a \'Sicilian of the old school\', ruled Tampa\'s underworld',
               publisher: 'The Mob Museum',
-              url: 'https://themobmuseum.org/blog/santo-trafficante-sr-a-sicilian-of-the-old-school-ruled-tampas-underworld-for-more-than-a-decade/',
+              url: 'https://themobmuseum.org/blog/santo-trafficante-sr-a-sicilian-of-the-old-school-ruled-tampas-underworld-for-more-than-a-decade/'
             },
             {
               type: 'article',
               title: 'Charlie Wall',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Charlie_Wall',
-            },
+              url: 'https://en.wikipedia.org/wiki/Charlie_Wall'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/mafia-ybor.png',
-              alt: 'Ybor City during the era of mob violence',
-            },
+              alt: 'Ybor City during the era of mob violence'
+            }
           ],
           location: {
             name: 'Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=Ybor%20City%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-1',
@@ -1245,13 +1245,13 @@ export const tampa: CityData = {
               title: 'Marine Accident Report: Ramming of the Sunshine Skyway Bridge',
               publisher: 'National Transportation Safety Board',
               year: '1981',
-              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/MAR8103.pdf',
+              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/MAR8103.pdf'
             },
             {
               type: 'article',
               title: 'Sunshine Skyway Bridge disaster investigation',
               publisher: 'NTSB',
-              url: 'https://www.ntsb.gov/investigations/Pages/DCA80AM050.aspx',
+              url: 'https://www.ntsb.gov/investigations/Pages/DCA80AM050.aspx'
             },
             {
               type: 'book',
@@ -1259,46 +1259,46 @@ export const tampa: CityData = {
               author: 'Bill DeYoung',
               isbn: '9780813062976',
               year: '2014',
-              url: 'https://www.amazon.com/Skyway-Story-Signature-Bridge-Brought/dp/0813062977',
+              url: 'https://www.amazon.com/Skyway-Story-Signature-Bridge-Brought/dp/0813062977'
             },
             {
               type: 'documentary',
               title: 'The Skyway Bridge Disaster',
               director: 'Frankie VanDeBoe and Steve Yerrid',
               year: '2019',
-              url: 'https://skywaybridgedisaster.com/',
+              url: 'https://skywaybridgedisaster.com/'
             },
             {
               type: 'article',
               title: 'Sunshine Skyway Bridge disaster: 45 years later',
               publisher: 'FOX 13 Tampa Bay',
-              url: 'https://www.fox13news.com/news/sunshine-skyway-bridge-disaster-45-years-later',
+              url: 'https://www.fox13news.com/news/sunshine-skyway-bridge-disaster-45-years-later'
             },
             {
               type: 'article',
               title: 'DOT diver recounts Skyway disaster',
               publisher: 'The Anna Maria Islander',
               year: '2024',
-              url: 'https://www.islander.org/2024/05/dot-diver-recounts-skyway-disaster/',
+              url: 'https://www.islander.org/2024/05/dot-diver-recounts-skyway-disaster/'
             },
             {
               type: 'article',
               title: 'Sunshine Skyway Bridge',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge',
-            },
+              url: 'https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/skyway-collapse.png',
-              alt: 'The Sunshine Skyway Bridge collapse',
-            },
+              alt: 'The Sunshine Skyway Bridge collapse'
+            }
           ],
           location: {
             name: 'Sunshine Skyway Bridge',
       url: 'https://www.google.com/maps/search/?api=1&query=Sunshine%20Skyway%20Bridge%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-2',
@@ -1312,66 +1312,66 @@ export const tampa: CityData = {
               type: 'article',
               title: 'Victor Licata',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Victor_Licata',
+              url: 'https://en.wikipedia.org/wiki/Victor_Licata'
             },
             {
               type: 'article',
               title: 'Why is marijuana illegal? How the 1933 Ybor City ax murders bolstered case to criminalize cannabis',
               publisher: 'FOX 13 Tampa Bay',
-              url: 'https://www.fox13news.com/news/why-is-marijuana-illegal-ybor-citys-infamous-1933-ax-murders-led-to-the-criminalization-of-cannabis',
+              url: 'https://www.fox13news.com/news/why-is-marijuana-illegal-ybor-citys-infamous-1933-ax-murders-led-to-the-criminalization-of-cannabis'
             },
             {
               type: 'article',
               title: 'An Ybor City ax murderer led to marijuana regulation. Now there\'s a movie in the works.',
               publisher: 'Tampa Bay Times',
               year: '2020',
-              url: 'https://www.tampabay.com/arts-entertainment/arts/movies/2020/05/14/an-ybor-city-ax-murderer-led-to-marijuana-regulation-now-theres-a-movie-in-the-works/',
+              url: 'https://www.tampabay.com/arts-entertainment/arts/movies/2020/05/14/an-ybor-city-ax-murderer-led-to-marijuana-regulation-now-theres-a-movie-in-the-works/'
             },
             {
               type: 'article',
               title: 'How an Axe Murderer Helped Make Weed Illegal',
               publisher: 'Foundation for Economic Education',
-              url: 'https://fee.org/articles/how-an-axe-murderer-helped-make-weed-illegal/',
+              url: 'https://fee.org/articles/how-an-axe-murderer-helped-make-weed-illegal/'
             },
             {
               type: 'article',
               title: 'How an Axe Murderer Helped Make Weed Illegal',
               publisher: 'FEE',
-              url: 'https://fee.org/articles/how-an-axe-murderer-helped-make-weed-illegal/',
+              url: 'https://fee.org/articles/how-an-axe-murderer-helped-make-weed-illegal/'
             },
             {
               type: 'book',
               title: 'Chasing the Scream: The First and Last Days of the War on Drugs',
               author: 'Johann Hari',
-              year: '2015',
+              year: '2015'
             },
             {
               type: 'book',
               title: 'Reefer Madness',
-              author: 'Larry Sloman',
+              author: 'Larry Sloman'
             },
             {
               type: 'article',
               title: 'Research for Victor Licata - Ax Murderer',
               publisher: 'The Drug Library',
-              url: 'https://www.druglibrary.org/schaffer/history/e1930/licata/index.html',
-            },
+              url: 'https://www.druglibrary.org/schaffer/history/e1930/licata/index.html'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/licata-axe.png',
-              alt: 'The Licata family home in Ybor City',
+              alt: 'The Licata family home in Ybor City'
             },
             {
               src: '/tampa/dark-history/licata-aces2.png',
-              alt: 'Victor Licata newspaper coverage and crime scene',
-            },
+              alt: 'Victor Licata newspaper coverage and crime scene'
+            }
           ],
           location: {
             name: '1707 5th Ave, Ybor City',
       url: 'https://www.google.com/maps/search/?api=1&query=1707%205th%20Ave%2C%20Ybor%20City%20Tampa',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'tam-dark-3',
@@ -1387,55 +1387,55 @@ export const tampa: CityData = {
               author: 'Anna Flowers',
               isbn: '9780981733708',
               year: '2011',
-              url: 'https://myfloridahistory.org/fhspress/publication/bound-die',
+              url: 'https://myfloridahistory.org/fhspress/publication/bound-die'
             },
             {
               type: 'book',
               title: 'Deadly Deception: The Murders of Tampa Serial Killer Bobby Joe Long (Florida Forensic Files, Book 2)',
               author: 'J.T. Hunter',
-              url: 'https://www.goodreads.com/book/show/36990765-deadly-deception',
+              url: 'https://www.goodreads.com/book/show/36990765-deadly-deception'
             },
             {
               type: 'article',
               title: 'Bobby Joe Long',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Bobby_Joe_Long',
+              url: 'https://en.wikipedia.org/wiki/Bobby_Joe_Long'
             },
             {
               type: 'article',
               title: 'Bobby Joe Long: Tampa Serial Killer Executed in 2019',
               publisher: 'Factual America',
-              url: 'https://www.factualamerica.com/serial-cuts/bobby-joe-longs-final-classification-executed-on-death-row',
+              url: 'https://www.factualamerica.com/serial-cuts/bobby-joe-longs-final-classification-executed-on-death-row'
             },
             {
               type: 'article',
               title: 'Bobby Joe Long: The Untold Story of the Tampa Bay Serial Killer',
               publisher: 'True Crime Archives',
-              url: 'https://truecrimearchives.blog/bobby-joe-long-the-classified-ad-killers-reign-of-terror/',
+              url: 'https://truecrimearchives.blog/bobby-joe-long-the-classified-ad-killers-reign-of-terror/'
             },
             {
               type: 'podcast',
               title: 'Serial Killer & Rapist: Bobby Joe Long',
               show: 'Southern Fried True Crime',
-              url: 'https://www.southernfriedtruecrime.com/72-bobby-joe-long',
+              url: 'https://www.southernfriedtruecrime.com/72-bobby-joe-long'
             },
             {
               type: 'documentary',
               title: 'I Survived: Lisa McVey Noland',
-              platform: 'Biography Channel',
-            },
+              platform: 'Biography Channel'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/bobby-joe-long.png',
-              alt: 'Bobby Joe Long and the Nebraska Avenue corridor',
-            },
+              alt: 'Bobby Joe Long and the Nebraska Avenue corridor'
+            }
           ],
           location: {
             name: 'Nebraska Avenue corridor, Tampa',
       url: 'https://www.google.com/maps/search/?api=1&query=Nebraska%20Avenue%20corridor%2C%20Tampa%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-4',
@@ -1450,38 +1450,38 @@ export const tampa: CityData = {
               type: 'article',
               title: 'Gulf Killer',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Gulf_Killer',
+              url: 'https://en.wikipedia.org/wiki/Gulf_Killer'
             },
             {
               type: 'article',
               title: 'Unsolved Cases in Florida',
               publisher: 'Florida Department of Law Enforcement',
-              url: 'https://web.fdle.state.fl.us/unsolvedcases/public/home.jsf',
+              url: 'https://web.fdle.state.fl.us/unsolvedcases/public/home.jsf'
             },
             {
               type: 'article',
               title: 'Cold Case Homicides',
               publisher: 'Crime Stoppers of Tampa Bay',
-              url: 'https://www.crimestopperstb.com/crimeoftheweek.aspx',
+              url: 'https://www.crimestopperstb.com/crimeoftheweek.aspx'
             },
             {
               type: 'article',
               title: 'A look at Tampa Bay\'s serial killers',
               publisher: 'WTSP',
-              url: 'https://www.wtsp.com/gallery/news/a-look-at-tampa-bays-serial-killers/67-485869651',
-            },
+              url: 'https://www.wtsp.com/gallery/news/a-look-at-tampa-bays-serial-killers/67-485869651'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/gulf-killer.png',
-              alt: 'The Dale Mabry Strip and Pasco County areas',
-            },
+              alt: 'The Dale Mabry Strip and Pasco County areas'
+            }
           ],
           location: {
             name: 'Dale Mabry Strip, Pasco/Hillsborough Counties',
       url: 'https://www.google.com/maps/search/?api=1&query=Dale%20Mabry%20Strip%2C%20Pasco%2FHillsborough%20Counties%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-5',
@@ -1497,51 +1497,51 @@ export const tampa: CityData = {
               title: 'Tourist Trap: Oba Chandler & the Murder of the Rogers Family',
               author: 'Fred Shrum',
               year: '2018',
-              url: 'https://www.amazon.com/Tourist-Trap-Chandler-Murder-Rogers-ebook/dp/B07JNN4G6G',
+              url: 'https://www.amazon.com/Tourist-Trap-Chandler-Murder-Rogers-ebook/dp/B07JNN4G6G'
             },
             {
               type: 'book',
               title: 'Death Cruise',
               author: 'Don Davis',
-              year: '1996',
+              year: '1996'
             },
             {
               type: 'article',
               title: 'Angels & Demons',
               author: 'Thomas French (Pulitzer Prize winner, 1998)',
               publisher: 'Tampa Bay Times',
-              url: 'https://projects.tampabay.com/projects/classics/angels-and-demons/',
+              url: 'https://projects.tampabay.com/projects/classics/angels-and-demons/'
             },
             {
               type: 'article',
               title: 'Oba Chandler',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Oba_Chandler',
+              url: 'https://en.wikipedia.org/wiki/Oba_Chandler'
             },
             {
               type: 'article',
               title: 'The Rogers Family Murders',
               publisher: 'Forensic Tales',
-              url: 'https://forensictales.com/the-rogers-family-murders/',
+              url: 'https://forensictales.com/the-rogers-family-murders/'
             },
             {
               type: 'article',
               title: 'Joan Rogers Archives',
               publisher: 'Forensic Files Now',
-              url: 'https://forensicfilesnow.com/index.php/tag/joan-rogers/',
-            },
+              url: 'https://forensicfilesnow.com/index.php/tag/joan-rogers/'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/rogers-family.png',
-              alt: 'Tampa Bay waters where the Rogers family was found',
-            },
+              alt: 'Tampa Bay waters where the Rogers family was found'
+            }
           ],
           location: {
             name: 'Tampa Bay waters',
       url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Bay%20waters%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-6',
@@ -1555,64 +1555,64 @@ export const tampa: CityData = {
               type: 'article',
               title: 'Howell Emanuel Donaldson III',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Howell_Emanuel_Donaldson_III',
+              url: 'https://en.wikipedia.org/wiki/Howell_Emanuel_Donaldson_III'
             },
             {
               type: 'article',
               title: 'Seminole Heights serial killings case ends with guilty plea, 4 life sentences',
               publisher: 'Tampa Bay Times',
               year: '2023',
-              url: 'https://www.tampabay.com/news/tampa/2023/05/01/tampa-serial-killer-seminole-heights-howell-donaldson/',
+              url: 'https://www.tampabay.com/news/tampa/2023/05/01/tampa-serial-killer-seminole-heights-howell-donaldson/'
             },
             {
               type: 'article',
               title: 'Seminole Heights serial killer case ends with guilty plea',
               publisher: 'WTSP',
               year: '2023',
-              url: 'https://www.wtsp.com/article/news/local/hillsboroughcounty/howell-donaldson-iii-guilty-seminole-heights-serial-killer/67-b41bddd2-f7f6-4b14-bb02-c19eb749d28e',
+              url: 'https://www.wtsp.com/article/news/local/hillsboroughcounty/howell-donaldson-iii-guilty-seminole-heights-serial-killer/67-b41bddd2-f7f6-4b14-bb02-c19eb749d28e'
             },
             {
               type: 'article',
               title: 'Cops to suspected serial killer: \'We know it\'s you. Can you please tell us why?\'',
               publisher: 'ABC News',
-              url: 'https://abcnews.go.com/US/cops-suspected-serial-killer-us/story?id=55805279',
+              url: 'https://abcnews.go.com/US/cops-suspected-serial-killer-us/story?id=55805279'
             },
             {
               type: 'article',
               title: 'Seminole Heights community leaders reflect on 2017 serial killings',
               publisher: 'WTSP',
-              url: 'https://www.wtsp.com/article/news/local/hillsboroughcounty/seminole-serial-killer-7-years-later/67-0e44e67c-180b-44c9-b383-cd18b4cc8d36',
+              url: 'https://www.wtsp.com/article/news/local/hillsboroughcounty/seminole-serial-killer-7-years-later/67-0e44e67c-180b-44c9-b383-cd18b4cc8d36'
             },
             {
               type: 'documentary',
               title: '51 Days of Fear: Howell Donaldson III (How I Caught The Killer, S4E1)',
               platform: 'Apple TV',
-              url: 'https://tv.apple.com/gb/episode/51-days-of-fear-howell-donaldson-iii/umc.cmc.4a2yn7z0eapqyd926lt5dfosj',
+              url: 'https://tv.apple.com/gb/episode/51-days-of-fear-howell-donaldson-iii/umc.cmc.4a2yn7z0eapqyd926lt5dfosj'
             },
             {
               type: 'podcast',
               title: 'The Seminole Serial Killer with Ann Brey',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/65-the-seminole-serial-killer-with-ann-brey/id1673880278',
+              url: 'https://podcasts.apple.com/us/podcast/65-the-seminole-serial-killer-with-ann-brey/id1673880278'
             },
             {
               type: 'video',
               title: 'Seminole Heights serial killer pleads guilty to 4 murders',
               publisher: 'FOX 13 Tampa Bay',
-              url: 'https://www.fox13news.com/video/1214423',
-            },
+              url: 'https://www.fox13news.com/video/1214423'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/seminole-heights.png',
-              alt: 'The Seminole Heights neighborhood',
-            },
+              alt: 'The Seminole Heights neighborhood'
+            }
           ],
           location: {
             name: 'Seminole Heights neighborhood',
       url: 'https://www.google.com/maps/search/?api=1&query=Seminole%20Heights%20neighborhood%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-7',
@@ -1627,57 +1627,57 @@ export const tampa: CityData = {
               type: 'article',
               title: 'Haunted History of Plant Hall',
               publisher: 'Tampa Terrors',
-              url: 'https://tampaterrors.com/haunted-plant-hall/',
+              url: 'https://tampaterrors.com/haunted-plant-hall/'
             },
             {
               type: 'article',
               title: 'Haunted Plant Hall at the University of Tampa',
               publisher: 'Nightly Spirits',
-              url: 'https://nightlyspirits.com/haunted-plant-hall-at-the-university-of-tampa/',
+              url: 'https://nightlyspirits.com/haunted-plant-hall-at-the-university-of-tampa/'
             },
             {
               type: 'article',
               title: 'University of Tampa: Haunted Tales & Eerie Encounters',
               publisher: '995QYK',
               year: '2024',
-              url: 'https://995qyk.com/2024/10/25/university-of-tampa-haunted-stories/',
+              url: 'https://995qyk.com/2024/10/25/university-of-tampa-haunted-stories/'
             },
             {
               type: 'article',
               title: 'Tampa\'s haunted history: 8 ghost stories to tell before Halloween',
               publisher: 'WFLA',
-              url: 'https://www.wfla.com/news/local-news/tampas-haunted-history-8-ghost-stories-to-tell-before-halloween-2/',
+              url: 'https://www.wfla.com/news/local-news/tampas-haunted-history-8-ghost-stories-to-tell-before-halloween-2/'
             },
             {
               type: 'article',
               title: '\'Real\' ghost stories from Tampa\'s most haunted locations',
               publisher: 'WFLA',
-              url: 'https://www.wfla.com/dont-miss/real-ghost-stories-from-tampas-most-haunted-locations/',
+              url: 'https://www.wfla.com/dont-miss/real-ghost-stories-from-tampas-most-haunted-locations/'
             },
             {
               type: 'article',
               title: 'The Most Haunted Places in Tampa, FL',
               publisher: 'Haunted Rooms America',
-              url: 'https://www.hauntedrooms.com/florida/tampa/haunted-places',
+              url: 'https://www.hauntedrooms.com/florida/tampa/haunted-places'
             },
             {
               type: 'article',
               title: 'Encounter at Plant Hall–Tampa, Florida',
               publisher: 'Southern Spirit Guide',
-              url: 'https://www.southernspiritguide.org/encounter-at-plant-hall-tampa-florida/',
-            },
+              url: 'https://www.southernspiritguide.org/encounter-at-plant-hall-tampa-florida/'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/plant-hall.png',
-              alt: 'Plant Hall at University of Tampa',
-            },
+              alt: 'Plant Hall at University of Tampa'
+            }
           ],
           location: {
             name: 'Plant Hall, University of Tampa',
       url: 'https://www.google.com/maps/search/?api=1&query=Plant%20Hall%2C%20University%20of%20Tampa%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-9',
@@ -1692,69 +1692,69 @@ export const tampa: CityData = {
               type: 'article',
               title: 'Ghosts of Tampa Theatre Tour',
               publisher: 'Tampa Theatre (Official)',
-              url: 'https://tampatheatre.org/tour/ghosts-of-tampa-theatre-tour/',
+              url: 'https://tampatheatre.org/tour/ghosts-of-tampa-theatre-tour/'
             },
             {
               type: 'article',
               title: 'Late Night, Lights Off Paranormal Investigation',
               publisher: 'Tampa Theatre (Official)',
-              url: 'https://tampatheatre.org/tour/late-night-lights-off-paranormal-investigation/',
+              url: 'https://tampatheatre.org/tour/late-night-lights-off-paranormal-investigation/'
             },
             {
               type: 'article',
               title: 'Inside the (Haunted?) Tampa Theatre',
               publisher: 'Tampa Magazine',
-              url: 'https://tampamagazines.com/inside-the-haunted-tampa-theatre/',
+              url: 'https://tampamagazines.com/inside-the-haunted-tampa-theatre/'
             },
             {
               type: 'article',
               title: 'Haunted Florida: The Tampa Theatre',
               publisher: 'GhoSt Augustine',
-              url: 'https://ghostaugustine.com/blog/haunted-florida-the-tampa-theatre/',
+              url: 'https://ghostaugustine.com/blog/haunted-florida-the-tampa-theatre/'
             },
             {
               type: 'article',
               title: 'The Haunted Tampa Theatre',
               publisher: 'Nightly Spirits',
-              url: 'https://nightlyspirits.com/the-haunted-tampa-theater/',
+              url: 'https://nightlyspirits.com/the-haunted-tampa-theater/'
             },
             {
               type: 'article',
               title: 'A Nightmare on Franklin Street returns to historic and haunted Tampa Theatre',
               publisher: 'Got To Go Orlando',
-              url: 'https://www.gottagoorlando.com/post/a-nightmare-on-franklin-street-returns-to-historic-and-haunted-tampa-theatre',
+              url: 'https://www.gottagoorlando.com/post/a-nightmare-on-franklin-street-returns-to-historic-and-haunted-tampa-theatre'
             },
             {
               type: 'documentary',
               title: 'Ghosts Behind the Screen',
               director: 'Brett Gerking',
               year: '2020',
-              url: 'https://www.imdb.com/title/tt7410046/',
+              url: 'https://www.imdb.com/title/tt7410046/'
             },
             {
               type: 'documentary',
               title: 'Ghost Brothers: Lights Out - Midnight Movie Show (Tampa Theatre)',
               platform: 'Travel Channel',
-              year: '2022',
+              year: '2022'
             },
             {
               type: 'video',
               title: 'Tampa Theatre Ghost Tour',
               publisher: 'Tampa Theatre',
-              url: 'https://watch.eventive.org/tampatheatre/play/5f95c8f1f234b30029ac3757',
-            },
+              url: 'https://watch.eventive.org/tampatheatre/play/5f95c8f1f234b30029ac3757'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/seat-308.png',
-              alt: 'Historic Tampa Theatre interior with ornate Mediterranean architecture',
-            },
+              alt: 'Historic Tampa Theatre interior with ornate Mediterranean architecture'
+            }
           ],
           location: {
             name: 'Tampa Theatre, 711 N Franklin St',
       url: 'https://www.google.com/maps/search/?api=1&query=Tampa%20Theatre%2C%20711%20N%20Franklin%20St%20Tampa',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'tam-dark-10',
@@ -1769,71 +1769,71 @@ export const tampa: CityData = {
               type: 'article',
               title: 'The Cuban Club',
               publisher: 'Tampa Terrors',
-              url: 'https://tampaterrors.com/the-cuban-club/',
+              url: 'https://tampaterrors.com/the-cuban-club/'
             },
             {
               type: 'article',
               title: 'The Cuban Club in Ybor City',
               publisher: 'Nightly Spirits',
-              url: 'https://nightlyspirits.com/the-cuban-club-in-ybor-city/',
+              url: 'https://nightlyspirits.com/the-cuban-club-in-ybor-city/'
             },
             {
               type: 'article',
               title: 'I tried to spend the night in Tampa\'s most haunted building',
               publisher: 'Tampa Bay Times',
               year: '2021',
-              url: 'https://www.tampabay.com/life-culture/history/2021/10/12/i-tried-to-spend-the-night-in-tampas-most-haunted-building/',
+              url: 'https://www.tampabay.com/life-culture/history/2021/10/12/i-tried-to-spend-the-night-in-tampas-most-haunted-building/'
             },
             {
               type: 'article',
               title: 'The Cuban Club: Where History and Hauntings Collide',
               publisher: 'The Dead History',
               year: '2025',
-              url: 'https://thedeadhistory.com/2025/01/02/the-cuban-club/',
+              url: 'https://thedeadhistory.com/2025/01/02/the-cuban-club/'
             },
             {
               type: 'article',
               title: 'Haunting Tales from the Historic Cuban Club',
               publisher: 'Cuban Club Ybor',
-              url: 'https://cubanclubybor.com',
+              url: 'https://cubanclubybor.com'
             },
             {
               type: 'article',
               title: 'Ybor City Ghost Tour takes guests inside Cuban Club on search for spirits amid history',
               publisher: 'WFLA',
-              url: 'https://www.wfla.com/news/hillsborough-county/ybor-city-ghost-tour-takes-guests-inside-cuban-club-on-search-for-spirits-amid-history/',
+              url: 'https://www.wfla.com/news/hillsborough-county/ybor-city-ghost-tour-takes-guests-inside-cuban-club-on-search-for-spirits-amid-history/'
             },
             {
               type: 'article',
               title: 'The haunts of the Cuban Club in Ybor City',
               publisher: 'FOX 13 Tampa Bay',
-              url: 'https://www.fox13news.com/news/the-haunts-of-the-cuban-club-in-ybor-city',
+              url: 'https://www.fox13news.com/news/the-haunts-of-the-cuban-club-in-ybor-city'
             },
             {
               type: 'documentary',
               title: 'Ghost Hunters Season 5: Cuban Club Investigation',
               platform: 'Syfy',
-              year: '2009',
+              year: '2009'
             },
             {
               type: 'documentary',
               title: 'Haunted Tours Episode 4: The Cuban Club',
-              platform: 'Amazon Video',
-            },
+              platform: 'Amazon Video'
+            }
           ],
           images: [
             {
               src: '/tampa/dark-history/cuban-club.png',
-              alt: 'The haunted Cuban Club in Ybor City',
-            },
+              alt: 'The haunted Cuban Club in Ybor City'
+            }
           ],
           location: {
             name: 'Cuban Club, 2010 N Avenida Republica de Cuba',
       url: 'https://www.google.com/maps/search/?api=1&query=Cuban%20Club%2C%202010%20N%20Avenida%20Republica%20de%20Cuba%20Tampa',
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
     {
       id: 'tampa-lost-and-loved',
@@ -1855,7 +1855,7 @@ export const tampa: CityData = {
           whyMissed: 'The sweat-soaked history embedded in every floorboard. The feeling that greatness had stood on that exact stage. The knowledge that Tampa once had a music scene worthy of the name. The Ritz was proof.',
           communityVoice: '"The Ritz was where Tampa\'s music scene lived and died." — Creative Loafing Tampa',
           lastAddress: '1503 E 7th Ave, Tampa',
-          source: 'Tampa Bay Times, Pollstar',
+          source: 'Tampa Bay Times, Pollstar'
         },
         // Photo References: Historic Theatre Photos (1958 & 1986 exterior) - https://www.historictheatrephotos.com/Atmospheric/Ritz-Ybor-Tampa.aspx
         // Library of Congress Ybor City collection: https://www.loc.gov/item/fl0298/
@@ -1873,13 +1873,13 @@ export const tampa: CityData = {
           source: 'Tampa Tribune, Creative Loafing Tampa',
           image: {
             src: '/tampa/lost-loved/goya.png',
-            alt: 'Ybor City\'s El Goya restaurant',
-          },
+            alt: 'Ybor City\'s El Goya restaurant'
+          }
         },
         {
           id: 'tampa-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'tampa-lost-7',
@@ -1895,8 +1895,8 @@ export const tampa: CityData = {
           source: 'Tampa Bay Times, Publisher\'s Weekly',
           image: {
             src: '/tampa/lost-loved/inkwood-books.png',
-            alt: 'Inkwood Books storefront',
-          },
+            alt: 'Inkwood Books storefront'
+          }
         },
         {
           id: 'tampa-lost-8',
@@ -1909,7 +1909,7 @@ export const tampa: CityData = {
           whyMissed: 'The glowing neon sign that felt like Old Florida. The burgers that didn\'t need truffle aioli. The rare acknowledgment that working people still existed in South Tampa. The Hub was the anti-gastropub, and we didn\'t appreciate it until it was gone.',
           communityVoice: '"The Hub was Tampa before Tampa got fancy." — Tampa Bay Times',
           lastAddress: '719 N Dale Mabry Hwy, Tampa',
-          source: 'Tampa Bay Times, Creative Loafing Tampa',
+          source: 'Tampa Bay Times, Creative Loafing Tampa'
         },
         {
           id: 'tampa-lost-6',
@@ -1922,12 +1922,12 @@ export const tampa: CityData = {
           whyMissed: 'The sheer commitment to darkness in the brightest state in America. The knowledge that Tampa had weirdos, and they had a home. The Castle proved Tampa wasn\'t just theme parks and beaches—it had a shadow side, and that side knew how to dance.',
           communityVoice: '"The Castle was where Tampa\'s freaks went to dance." — Creative Loafing Tampa',
           lastAddress: '2004 N 16th St, Tampa',
-          source: 'Tampa Bay Times, Creative Loafing Tampa',
+          source: 'Tampa Bay Times, Creative Loafing Tampa'
         },
         {
           id: 'tampa-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'tampa-lost-1',
@@ -1940,7 +1940,7 @@ export const tampa: CityData = {
           whyMissed: 'The feeling that you were eating history, not performing it. The sense that Columbia belonged to Tampa, not to TripAdvisor. The original spirit—scrappy, immigrant, unapologetically local—that faded as Ybor gentrified and the restaurant became an institution.',
           communityVoice: '"The Columbia used to be ours. Now it\'s a tourist attraction." — Tampa Bay Times',
           lastAddress: '2117 E 7th Ave, Tampa',
-          source: 'Tampa Bay Times, Creative Loafing Tampa',
+          source: 'Tampa Bay Times, Creative Loafing Tampa'
         },
         {
           id: 'tampa-lost-4',
@@ -1956,8 +1956,8 @@ export const tampa: CityData = {
           source: 'Tampa Bay Times, Wine Spectator',
           image: {
             src: '/tampa/lost-loved/berns.png',
-            alt: 'Bern\'s Steak House interior',
-          },
+            alt: 'Bern\'s Steak House interior'
+          }
         },
         {
           id: 'tampa-lost-5',
@@ -1970,9 +1970,9 @@ export const tampa: CityData = {
           whyMissed: 'The original intimacy before expansion. The patio where you\'d run into everyone you knew. The sense that Tampa could have an independent coffee culture, not just Starbucks. The first Buddy Brew was where Hyde Park went to feel cosmopolitan.',
           communityVoice: '"The first Buddy Brew was where Tampa went to feel cool." — Creative Loafing Tampa',
           lastAddress: '2020 W Kennedy Blvd, Tampa',
-          source: 'Tampa Bay Times, Creative Loafing Tampa',
-        },
-      ],
+          source: 'Tampa Bay Times, Creative Loafing Tampa'
+        }
+      ]
     }, // Added missing comma
-  ],
+  ]
 }

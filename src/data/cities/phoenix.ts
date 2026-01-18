@@ -8,7 +8,7 @@ export const phoenix: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Phoenix — a monument to human stubbornness, where five million people live in a desert on borrowed water.',
+      content: 'Welcome to Phoenix — a monument to human stubbornness, where five million people live in a desert on borrowed water.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const phoenix: CityData = {
       description: 'A city that shouldn\'t exist, existing grandly anyway.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/phoenix/essay/the-air-conditioned-dream',
+      href: '/phoenix/essay/the-air-conditioned-dream'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const phoenix: CityData = {
           title: 'Surviving Phoenix Summer',
           description: 'How locals actually cope with 115-degree days.',
           meta: 'Guide',
-          href: '/phoenix/summer-survival',
+          href: '/phoenix/summer-survival'
         },
         {
           title: 'The Water Problem Explained',
           description: 'Where Phoenix\'s water comes from and how long it\'ll last.',
           meta: 'Feature',
-          href: '/phoenix/water-crisis',
+          href: '/phoenix/water-crisis'
         },
         {
           title: 'Best Hiking Before It Gets Hot',
           description: 'Trails to hit at dawn during the burning months.',
           meta: 'List',
           variant: 'compact',
-          href: '/phoenix/early-hikes',
-        },
-      ],
+          href: '/phoenix/early-hikes'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'phx-curiosities',
@@ -72,18 +72,18 @@ export const phoenix: CityData = {
           body: 'On March 13, 1997, at approximately 8:30 PM, thousands of Arizona residents witnessed something extraordinary: a massive V-shaped formation of lights moving silently across the sky from Henderson, Nevada, through Phoenix, and down to Tucson. The formation was huge—some described it as a mile wide, blocking out stars as it passed overhead. Witnesses included pilots, police officers, and then-Governor Fife Symington, who initially held a press conference mocking the reports (his chief of staff appeared in an alien costume). A decade later, Symington admitted he\'d seen it too and called it "otherworldly." The U.S. Air Force claimed the lights were flares dropped during a training exercise at the Barry Goldwater Range. But witnesses insist the flares explanation only accounts for a second set of lights seen later that night—not the massive V-shaped craft that flew overhead. Multiple videos and photos were captured. It remains one of the most witnessed and well-documented UFO events in history.',
           image: {
             src: '/phoenix/curiosities/v-lights-sky.png',
-            alt: 'V-shaped formation of lights witnessed during Phoenix Lights event',
+            alt: 'V-shaped formation of lights witnessed during Phoenix Lights event'
           },
           sources: [
             {
               title: 'Phoenix New Times: The Phoenix Lights, 27 Years Later',
-              url: 'https://www.phoenixnewtimes.com/news/the-phoenix-lights-27-years-later-11346824',
+              url: 'https://www.phoenixnewtimes.com/news/the-phoenix-lights-27-years-later-11346824'
             },
             {
               title: 'National Geographic: The Phoenix Lights',
-              url: 'https://www.nationalgeographic.com/science/article/phoenix-lights',
-            },
-          ],
+              url: 'https://www.nationalgeographic.com/science/article/phoenix-lights'
+            }
+          ]
         },
         {
           id: 'phx-curiosity-2',
@@ -93,28 +93,28 @@ export const phoenix: CityData = {
           body: 'Camp Papago Park held German POWs during WWII—most of them U-boat officers who assumed they were clever. On December 23, 1944, 25 Germans executed "The Great Papago Escape": a 178-foot tunnel dug with makeshift tools, a collapsible boat, and maps showing the Gila River flowing conveniently to Mexico. One small problem: Arizona puts "rivers" on maps as a sick joke. The Gila was completely dry. Picture 25 sunburned Germans dragging a boat across cracked mud, slowly realizing they\'d planned an aquatic escape in a desert. Most surrendered within days. U-boat Captain Jürgen Wattenberg—too stubborn or too German to quit—lasted 36 days before capture. The tunnel entrance is now a plaque at Papago Park Golf Course, commemorating history\'s most geographically confused prison break.',
           image: {
             src: '/phoenix/curiosities/wwii-prisoners.png',
-            alt: 'German POW camp at Papago Park and escape tunnel site',
+            alt: 'German POW camp at Papago Park and escape tunnel site'
           },
           sources: [
             {
               title: 'Arizona State Library: Papago Park POW Camp',
-              url: 'https://azlibrary.gov/dazl/papago-park-pow-camp',
+              url: 'https://azlibrary.gov/dazl/papago-park-pow-camp'
             },
             {
               title: 'Warfare History Network: The Great Papago Escape',
-              url: 'https://warfarehistorynetwork.com/article/the-great-papago-escape/',
-            },
+              url: 'https://warfarehistorynetwork.com/article/the-great-papago-escape/'
+            }
           ],
           location: {
             name: 'Papago Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'phx-curiosity-3',
@@ -124,14 +124,14 @@ export const phoenix: CityData = {
           body: 'Somewhere in the jagged volcanic peaks of the Superstition Mountains—forty miles east of Phoenix, visible from any highway—lies a gold mine so rich it drove men to murder, madness, and death for over a century. The legend centers on Jacob Waltz, a German immigrant who arrived in Arizona in the 1860s. According to the story, Waltz found an incredibly rich vein of gold ore, possibly an old Spanish or Apache mine, and worked it secretly for decades. He\'d disappear into the Superstitions for weeks, returning with saddlebags of high-grade ore that he sold quietly in Phoenix. On his deathbed in 1891, Waltz supposedly gave directions to the mine—but the clues were contradictory, the landmarks vague, and the terrain brutal. Over the next 130 years, an estimated 8,000 people have searched for the Lost Dutchman\'s Mine. At least several dozen have died trying—from falls, dehydration, gunshots, and one famous 1931 decapitation that was never solved. In 2009, three hikers from Colorado vanished in the Superstitions and were never found. The state of Arizona now prohibits excavation in the wilderness area. Treasure hunters still come. The mine has never been located. Whether it ever existed at all remains genuinely unclear.',
           image: {
             src: '/phoenix/curiosities/dutchman-gold.png',
-            alt: 'Superstition Mountains hiding the Lost Dutchman gold mine',
+            alt: 'Superstition Mountains hiding the Lost Dutchman gold mine'
           },
           source: 'Superstition Mountain Museum',
           location: {
             name: 'Superstition Mountains',
       url: 'https://www.google.com/maps/search/?api=1&query=Superstition%20Mountains%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-5',
@@ -141,23 +141,23 @@ export const phoenix: CityData = {
           body: 'The saguaro cactus is more than just a plant; it\'s a protected Arizona icon. Growing nowhere else on Earth, it takes a decade to grow one inch, 75 years to sprout its first arm, and two centuries to reach full height. Arizona protects them with Class 4 felony charges: up to 3.75 years in prison and $150,000 fines. Developers pay thousands to transplant them, yet poachers still hack them from public lands. But sometimes, the desert renders its own justice. In 1982, a man near Lake Pleasant decided to "have some fun" by shooting a 27-foot saguaro with his shotgun. The 1,000-pound cactus, mortally wounded, slowly toppled over. It fell directly on him, crushing him instantly. Locals called it karma. Botanists called it "spear death." Either way, the desert sent a clear message: mess with the saguaro, and the saguaro messes back. The cactus won.',
           image: {
             src: '/phoenix/curiosities/cactus.png',
-            alt: 'Towering saguaro cactus protected by Arizona law',
+            alt: 'Towering saguaro cactus protected by Arizona law'
           },
           sources: [
             {
               title: 'Arizona Department of Agriculture: Native Plant Law',
-              url: 'https://agriculture.az.gov/plantsproduce/native-plants',
+              url: 'https://agriculture.az.gov/plantsproduce/native-plants'
             },
             {
               title: 'National Park Service: The Saguaro Cactus',
-              url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm',
-            },
-          ],
+              url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm'
+            }
+          ]
         },
         {
           id: 'phx-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'phx-curiosity-dreamy-draw',
@@ -169,23 +169,23 @@ export const phoenix: CityData = {
             {
               title: 'Mercury mining in the Phoenix Mountains',
               publisher: 'wryheat',
-              url: 'https://wryheat.wordpress.com/2013/09/27/mercury-mining-in-the-phoenix-mountains/',
+              url: 'https://wryheat.wordpress.com/2013/09/27/mercury-mining-in-the-phoenix-mountains/'
             },
             {
               title: 'How Dreamy Draw In Phoenix Got Its Name',
               publisher: 'KJZZ',
-              url: 'https://kjzz.org/content/5252/did-you-know-how-dreamy-draw-phoenix-got-its-name',
-            },
+              url: 'https://kjzz.org/content/5252/did-you-know-how-dreamy-draw-phoenix-got-its-name'
+            }
           ],
           location: {
             name: 'Dreamy Draw Recreation Area',
       url: 'https://www.google.com/maps/search/?api=1&query=Dreamy%20Draw%20Recreation%20Area%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             { src: '/phoenix/curiosities/phoenix-curious-dreamy-0.png', alt: 'Dreamy Draw Recreation Area' },
-            { src: '/phoenix/curiosities/phoenix-curious-dreamy-1.png', alt: 'Dreamy Draw historical site' },
-          ],
+            { src: '/phoenix/curiosities/phoenix-curious-dreamy-1.png', alt: 'Dreamy Draw historical site' }
+          ]
         },
         {
           id: 'phx-curiosity-make-a-wish',
@@ -197,22 +197,22 @@ export const phoenix: CityData = {
             {
               title: 'Our History',
               publisher: 'Make-A-Wish Foundation',
-              url: 'https://wish.org/about-us',
+              url: 'https://wish.org/about-us'
             },
             {
               title: 'The history of Make-A-Wish: The first wish granted',
               publisher: 'World Wish',
-              url: 'https://worldwish.org/about-us/history/',
-            },
+              url: 'https://worldwish.org/about-us/history/'
+            }
           ],
           location: {
             name: 'Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
-            { src: '/phoenix/curiosities/phoenix-curious-wish.png', alt: 'Make-A-Wish Foundation origin story' },
-          ],
+            { src: '/phoenix/curiosities/phoenix-curious-wish.png', alt: 'Make-A-Wish Foundation origin story' }
+          ]
         },
         {
           id: 'phx-curiosity-10',
@@ -222,14 +222,14 @@ export const phoenix: CityData = {
           body: 'Anglo settlers named the city "Phoenix" in 1868 because it rose from the ruins of the Hohokam civilization—which had already collapsed here once. Boast and warning in one word. The brilliant naming convention came from "Lord" Darrell Duppa, a Cambridge-educated English drunk who claimed nobility nobody could verify. He suggested "Phoenix" while almost certainly hammered. The city council, equally drunk or impressed by his accent, agreed. Now five million people live in a city named after a mythical bird, commemorating a dead civilization, by a fake lord who was probably shitfaced. Perfect metaphor.',
           image: {
             src: '/phoenix/curiosities/phoeni-origin-name.png',
-            alt: 'Phoenix rising from Hohokam ruins - city name origin',
+            alt: 'Phoenix rising from Hohokam ruins - city name origin'
           },
           source: 'Phoenix History Project',
           location: {
             name: 'Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-6',
@@ -239,23 +239,23 @@ export const phoenix: CityData = {
           body: 'Between 300-1450 AD, the Hohokam people engineered over 500 miles of irrigation canals in the Salt River Valley—the most sophisticated pre-Columbian water system north of Mexico. These weren\'t simple ditches; they were precisely graded, maintained, and expanded over centuries to support a population of tens of thousands. When Anglo settlers arrived in the 1860s and founded Phoenix, they didn\'t start from scratch—they simply cleared out the ancient Hohokam canals and put them back into use. Today, the Salt River Project\'s modern canal system follows many of the same routes mapped out by Indigenous engineers a millennium ago. The Hohokam mysteriously abandoned their cities around 1450 AD, likely due to a combination of mega-drought, soil salinization, and social collapse. Their engineering legacy literally flows through modern Phoenix.',
           image: {
             src: '/phoenix/curiosities/canals.png',
-            alt: 'Ancient Hohokam canal system and modern Phoenix waterways',
+            alt: 'Ancient Hohokam canal system and modern Phoenix waterways'
           },
           sources: [
             {
               title: 'Pueblo Grande Museum: Hohokam Canal System',
-              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html',
+              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html'
             },
             {
               title: 'Salt River Project: Canal History',
-              url: 'https://www.srpnet.com/about/history/canals.aspx',
-            },
+              url: 'https://www.srpnet.com/about/history/canals.aspx'
+            }
           ],
           location: {
             name: 'Salt River Valley',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20River%20Valley%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-8',
@@ -265,14 +265,14 @@ export const phoenix: CityData = {
           body: 'Phoenix is a monument to human stubbornness—five million people living in a place that routinely hits 115°F, where summer nights don\'t drop below 90°. None of this would exist without one invention. In 1940, Phoenix had just 65,000 residents—a dusty agricultural outpost where locals slept on screened porches and movie theaters advertised "refrigerated air" as the main attraction. Then Willis Carrier\'s window units became affordable for average homeowners in the early 1950s. The floodgates opened. By 1960: 439,000 people. By 1990: over two million. Today: fifth-largest city in America. The entire Sun Belt migration—Phoenix, Las Vegas, Houston, the sprawling Sunbelt suburbs—was made possible by mechanical cooling. But there\'s a dark flip side locals don\'t discuss with visitors: if the power grid fails during a July heat wave, Phoenix becomes genuinely lethal within hours. The city has no natural backup. No shade. No breeze. No water features. In 2023, Maricopa County recorded 645 heat-related deaths—more than any county in America. AC isn\'t a luxury here. It\'s life support.',
           image: {
             src: '/phoenix/curiosities/before-ac-phoenixx.png',
-            alt: 'Phoenix before air conditioning era - small desert town',
+            alt: 'Phoenix before air conditioning era - small desert town'
           },
           source: 'Arizona Historical Society',
           location: {
             name: 'Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-melindas-alley',
@@ -283,32 +283,28 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/curiosities/curious-melinda-0.png',
-              alt: 'Melinda\'s Alley underground speakeasy entrance with multicolored mural',
+              alt: 'Melinda\'s Alley underground speakeasy entrance with multicolored mural'
             },
             {
               src: '/phoenix/curiosities/curious-melinda-1.png',
-              alt: 'Historic Melinda\'s Alley brick passageway and speakeasy bar',
-            },
-            {
-              src: '/phoenix/curiosities/melindas-alley.png',
-              alt: 'Melinda\'s Alley speakeasy entrance with red light signal',
-            },
-          ],
+              alt: 'Historic Melinda\'s Alley brick passageway and speakeasy bar'
+            }
+            ],
           sources: [
             {
               title: 'Phoenix Magazine: 25 Best-Kept Secrets in Phoenix',
-              url: 'https://www.phoenixmag.com/2024/09/05/the-25-best-kept-secrets-in-phoenix/',
+              url: 'https://www.phoenixmag.com/2024/09/05/the-25-best-kept-secrets-in-phoenix/'
             },
             {
               title: 'Downtown Phoenix: Fun Facts',
-              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
-            },
+              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix'
+            }
           ],
           location: {
             name: 'Downtown Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Phoenix%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-7',
@@ -319,32 +315,32 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/curiosities/rock-hole-1.png',
-              alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening',
+              alt: 'Hole in the Rock formation at Papago Park with Phoenix skyline visible through opening'
             },
             {
               src: '/phoenix/curiosities/rock-hole-2.png',
-              alt: 'Sunrise light streaming through Hole in the Rock during winter solstice',
+              alt: 'Sunrise light streaming through Hole in the Rock during winter solstice'
             },
             {
               src: '/phoenix/curiosities/rock-hole-3.png',
-              alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock',
-            },
+              alt: 'Diagram showing Hohokam astronomical alignments at Hole in the Rock'
+            }
           ],
           sources: [
             {
               title: 'Pueblo Grande Museum: Hohokam Astronomy',
-              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html',
+              url: 'https://www.phoenix.gov/parks/sedav-vaaki.html'
             },
             {
               title: 'Phoenix Parks: Papago Park Hole in the Rock Trail',
-              url: 'https://www.phoenix.gov/parks/trails/locations/papago-park',
-            },
+              url: 'https://www.phoenix.gov/parks/trails/locations/papago-park'
+            }
           ],
           location: {
             name: 'Papago Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-11',
@@ -354,27 +350,27 @@ export const phoenix: CityData = {
           body: 'Phoenix averages 8.03 inches of rain annually. Seattle gets 37.5 inches. New York gets 46. Yet Phoenix supports 4.95 million people in the metro area. The water comes from three sources: the Colorado River (delivered 336 miles via the Central Arizona Project canal), the Salt and Verde rivers (dammed and stored in reservoirs), and groundwater pumped from aquifers. Here\'s the problem: the Colorado River is drying up. Lake Mead, which supplies 40% of Phoenix\'s water, is at 27% capacity. The 1922 Colorado River Compact was based on unusually wet years—it allocated more water than the river actually carries. Arizona\'s allocation is already being cut. Groundwater aquifers, which took thousands of years to fill, are being depleted faster than they recharge—some areas have dropped 400+ feet. Phoenix has implemented strict conservation measures, banned grass in new development, and invested in groundwater banking. But the math is unforgiving: five million people living in a desert that gets less rain than the Sahara.',
           image: {
             src: '/phoenix/curiosities/phoenix-rain.png',
-            alt: 'Desert landscape showing Phoenix\'s minimal annual rainfall',
+            alt: 'Desert landscape showing Phoenix\'s minimal annual rainfall'
           },
           sources: [
             {
               title: 'Central Arizona Project: Water Delivery',
-              url: 'https://www.cap-az.com/',
+              url: 'https://www.cap-az.com/'
             },
             {
               title: 'Arizona Department of Water Resources: Water Supply',
-              url: 'https://www.azwater.gov/',
+              url: 'https://www.azwater.gov/'
             },
             {
               title: 'ProPublica: The Water Crisis Threatening Phoenix',
-              url: 'https://www.propublica.org/article/phoenix-water-crisis-colorado-river',
-            },
+              url: 'https://www.propublica.org/article/phoenix-water-crisis-colorado-river'
+            }
           ],
           location: {
             name: 'Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20Phoenix',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'phx-curiosity-12',
@@ -384,20 +380,20 @@ export const phoenix: CityData = {
           body: 'The Sonoran Desert is the wettest, hottest, and most biodiverse desert on the planet—supporting over 2,000 plant species and 550 vertebrates. The saguaro cactus, Arizona\'s 40-foot sentinel, grows naturally nowhere else in the world. It takes 10 years to grow one inch, 75 years to sprout its first arm, and can live 200 years. But the real surprise? This is the only place in the United States where wild jaguars still roam. These desert jaguars—smaller and more heat-adapted than their rainforest cousins—hunt mule deer and javelinas in the mountains ringing Phoenix. Trail cameras occasionally capture them prowling through the Superstitions or Catalinas. Meanwhile, javelinas (desert pigs with terrible eyesight and worse attitudes) regularly wander through Phoenix suburbs, eating landscaping and terrifying dogs. Coyotes adapt seamlessly to urban life, hunting rabbits in golf courses and cooling off in backyard pools. Phoenix paved over much of this ecosystem, but the desert persists at the edges—and occasionally reminds residents they\'re just guests.',
           image: {
             src: '/phoenix/curiosities/desert.png',
-            alt: 'Biodiverse Sonoran Desert landscape near Phoenix',
+            alt: 'Biodiverse Sonoran Desert landscape near Phoenix'
           },
           sources: [
             {
               title: 'The Saguaro Cactus',
               publisher: 'National Park Service',
-              url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm',
+              url: 'https://www.nps.gov/sagu/learn/nature/saguaro.htm'
             },
             {
               title: 'Jaguars in Arizona',
               publisher: 'Arizona-Sonora Desert Museum',
-              url: 'https://www.desertmuseum.org/',
-            },
-          ],
+              url: 'https://www.desertmuseum.org/'
+            }
+          ]
         },
         {
           id: 'phx-curiosity-bunker',
@@ -407,21 +403,21 @@ export const phoenix: CityData = {
           body: 'Built in 1956, a nuclear bunker sits cut into the red sandstone hills of Papago Park, 20 feet underground with foot-thick concrete walls. It\'s now Maricopa County Emergency Management headquarters. The bunker still contains original Cold War artifacts: gas masks, WWII cots, emergency water supplies. You can see the entrance from hiking trails, but it remains an active government facility—not open to the public. Just another piece of Phoenix\'s strange history hiding in plain sight.',
           image: {
             src: '/phoenix/curiosities/cold-war-bunker.png',
-            alt: 'Cold War era bunker entrance in desert hillside',
+            alt: 'Cold War era bunker entrance in desert hillside'
           },
           sources: [
             {
               title: 'Maricopa County Emergency Management',
-              url: 'https://www.maricopa.gov/625/Emergency-Management',
-            },
+              url: 'https://www.maricopa.gov/625/Emergency-Management'
+            }
           ],
           location: {
             name: 'Papago Park, Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Papago%20Park%2C%20Phoenix%20Phoenix',
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
     {
       id: 'phx-iconic-spots',
@@ -439,15 +435,15 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/botantical-garden.png',
-              alt: 'Desert Botanical Garden trails with saguaros',
-            },
+              alt: 'Desert Botanical Garden trails with saguaros'
+            }
           ],
           address: '1201 N Galvin Pkwy, Phoenix, AZ 85008',
           coordinates: { lat: 33.4617, lng: -111.9450 },
           hours: '8am-8pm daily (seasonal variations)',
           price: '$25 adults',
           website: 'https://dbg.org',
-          tip: 'The flashlight tours during butterfly season are magical.',
+          tip: 'The flashlight tours during butterfly season are magical.'
         },
         {
           id: 'iconic-camelback',
@@ -459,14 +455,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/camelback-mountain.png',
-              alt: 'View from Camelback Mountain summit',
-            },
+              alt: 'View from Camelback Mountain summit'
+            }
           ],
           address: 'Echo Canyon Trailhead, Phoenix, AZ 85018',
           coordinates: { lat: 33.5220, lng: -111.9733 },
           hours: 'Sunrise to sunset; gates close 30 min after',
           price: 'Free',
-          tip: 'Start before 6am to avoid crowds and heat.',
+          tip: 'Start before 6am to avoid crowds and heat.'
         },
         {
           id: 'iconic-heard',
@@ -478,35 +474,23 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/heard-museum.png',
-              alt: 'Heard Museum courtyard',
-            },
+              alt: 'Heard Museum courtyard'
+            }
           ],
           address: '2301 N Central Ave, Phoenix, AZ 85004',
           coordinates: { lat: 33.4725, lng: -112.0722 },
           hours: 'Tue-Sun 10am-4pm',
           price: '$18 adults',
           website: 'https://heard.org',
-          tip: 'The bookstore here is arguably the best place in the country to buy authentic, artist-sourced Native American jewelry and books.',
-        },
-        {
-          id: 'iconic-taliesin',
-          type: 'iconic-spot',
-          name: 'Taliesin West',
-          category: 'Architecture',
-          description:
-            'Frank Lloyd Wright’s desert laboratory. Built starting in 1937 using the "desert masonry" technique—local boulders bound in concrete—it was designed to look like it rose naturally from the Scottsdale scrub. Wright and his apprentices lived here every winter, constantly tweaking the canvases and stone walls as a grand experiment in "organic architecture." It’s a low-slung, sun-drenched masterpiece where the line between inside and outside is purely advisory. The 1927 Pullman car style of the "Cabaret Theater" is a highlight.',
-          images: [
-            {
-              src: '/images/gems/taliesin-west.jpg',
-              alt: 'Taliesin West exterior',
-            },
-          ],
+          tip: 'The bookstore here is arguably the best place in the country to buy authentic, artist-sourced Native American jewelry and books.'
+        }
+        ],
           address: '12621 N Frank Lloyd Wright Blvd, Scottsdale, AZ 85259',
           coordinates: { lat: 33.6067, lng: -111.8448 },
           hours: 'Tours daily; schedule varies',
           price: '$38-$80 depending on tour',
           website: 'https://franklloydwright.org/taliesin-west',
-          tip: 'The "Night Lights" tour is the move; the way the building glows against the desert dark is how Wright intended it to be seen.',
+          tip: 'The "Night Lights" tour is the move; the way the building glows against the desert dark is how Wright intended it to be seen.'
         },
         {
           id: 'iconic-south-mountain',
@@ -518,14 +502,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/south-mountain-park.png',
-              alt: 'View from South Mountain overlooking Phoenix',
-            },
+              alt: 'View from South Mountain overlooking Phoenix'
+            }
           ],
           address: '10919 S Central Ave, Phoenix, AZ 85042',
           coordinates: { lat: 33.3500, lng: -112.0633 },
           hours: '5am-7pm (summer), 5am-11pm (winter)',
           price: 'Free',
-          tip: 'Drive to Dobbins Lookout for sunset — the view spans the entire valley.',
+          tip: 'Drive to Dobbins Lookout for sunset — the view spans the entire valley.'
         },
         {
           id: 'iconic-mim',
@@ -537,17 +521,17 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/music-museum.png',
-              alt: 'Musical Instrument Museum gallery',
-            },
+              alt: 'Musical Instrument Museum gallery'
+            }
           ],
           address: '4725 E Mayo Blvd, Phoenix, AZ 85050',
           coordinates: { lat: 33.6679, lng: -111.9789 },
           hours: 'Daily 9am-5pm',
           price: '$24 adults',
           website: 'https://mim.org',
-          tip: 'Don\'t skip the Experience Gallery — actually playing instruments makes it memorable.',
-        },
-      ],
+          tip: 'Don\'t skip the Experience Gallery — actually playing instruments makes it memorable.'
+        }
+      ]
     },
     {
       id: 'phx-hidden-gems',
@@ -568,15 +552,15 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/tovrea-castle.png',
-              alt: 'Distinctive three-tiered castle structure in desert',
-            },
+              alt: 'Distinctive three-tiered castle structure in desert'
+            }
           ],
           address: '5041 E Van Buren St, Phoenix, AZ 85008',
           coordinates: { lat: 33.4506, lng: -111.9783 },
           hours: 'Tours by appointment only',
           price: 'Tour fees apply',
           website: 'https://tovreacastletours.com/',
-          tip: 'Book tours months in advance — limited availability.',
+          tip: 'Book tours months in advance — limited availability.'
         },
         {
           id: 'gem-pioneer-cemetery',
@@ -590,22 +574,22 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-cemetery-2.png',
-              alt: 'Historic Pioneer and Military Memorial Park cemetery headstones',
+              alt: 'Historic Pioneer and Military Memorial Park cemetery headstones'
             },
             {
               src: '/phoenix/hidden-gems/hidden-cemetery-3.png',
-              alt: 'Pioneer cemetery graves including notable Phoenix founders',
+              alt: 'Pioneer cemetery graves including notable Phoenix founders'
             },
             {
               src: '/phoenix/curiosities/cemettery-1.png',
-              alt: 'Pioneer and Military Memorial Park historic burial grounds',
-            },
+              alt: 'Pioneer and Military Memorial Park historic burial grounds'
+            }
           ],
           address: '1317 W Jefferson St, Phoenix, AZ 85007',
           coordinates: { lat: 33.4486, lng: -112.0850 },
           hours: 'Daily dawn to dusk',
           price: 'Free',
-          tip: 'Look for Jacob Waltz\'s grave — the Lost Dutchman legend.',
+          tip: 'Look for Jacob Waltz\'s grave — the Lost Dutchman legend.'
         },
         {
           id: 'gem-hunts-tomb',
@@ -619,17 +603,13 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-hunts-0.png',
-              alt: 'White pyramid tomb of Arizona Governor George W.P. Hunt in Papago Park',
+              alt: 'White pyramid tomb of Arizona Governor George W.P. Hunt in Papago Park'
             },
             {
               src: '/phoenix/hidden-gems/hidden-hunts-1.png',
-              alt: 'Hunt\'s Tomb pyramid structure overlooking desert landscape',
-            },
-            {
-              src: '/phoenix/curiosities/hunt-pyramid.png',
-              alt: 'Governor Hunt pyramid tomb in Papago Park',
-            },
-          ],
+              alt: 'Hunt\'s Tomb pyramid structure overlooking desert landscape'
+            }
+            ],
           address: 'Papago Park, Phoenix, AZ',
           coordinates: { lat: 33.4556, lng: -111.9489 },
           hours: 'Park hours',
@@ -637,14 +617,14 @@ export const phoenix: CityData = {
           sources: [
             {
               title: 'Arizona State Library: Governor George W.P. Hunt',
-              url: 'https://azlibrary.gov/dazl/george-wp-hunt',
+              url: 'https://azlibrary.gov/dazl/george-wp-hunt'
             },
             {
               title: 'Downtown Phoenix: Fun Facts About Phoenix',
-              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix',
-            },
+              url: 'https://dtphx.org/post/12-fun-facts-you-may-not-know-about-downtown-phoenix'
+            }
           ],
-          tip: 'Drive right past it on the way to Hole in the Rock — easy to miss.',
+          tip: 'Drive right past it on the way to Hole in the Rock — easy to miss.'
         },
         {
           id: 'gem-sun-mercantile',
@@ -656,14 +636,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-sun-mercantile-1.png',
-              alt: 'Historic Sun Mercantile Building, last remnant of Phoenix Chinatown',
-            },
+              alt: 'Historic Sun Mercantile Building, last remnant of Phoenix Chinatown'
+            }
           ],
           address: '424 E Jackson St, Phoenix, AZ 85004',
           coordinates: { lat: 33.4506, lng: -112.0678 },
           hours: 'Exterior viewing only',
           price: 'Free',
-          tip: 'Lone remnant of forgotten Phoenix Chinatowns.',
+          tip: 'Lone remnant of forgotten Phoenix Chinatowns.'
         },
         {
           id: 'gem-curious-nature',
@@ -677,22 +657,22 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-curious-1.png',
-              alt: 'Curious Nature oddities shop interior with taxidermy and skulls',
+              alt: 'Curious Nature oddities shop interior with taxidermy and skulls'
             },
             {
               src: '/phoenix/hidden-gems/hidden-curious-2.png',
-              alt: 'Vintage taxidermy and curiosities display at Curious Nature',
+              alt: 'Vintage taxidermy and curiosities display at Curious Nature'
             },
             {
               src: '/phoenix/hidden-gems/hidden-curious-3.png',
-              alt: 'Macabre collection of bones and specimens at Curious Nature',
-            },
+              alt: 'Macabre collection of bones and specimens at Curious Nature'
+            }
           ],
           address: 'Melrose District, Phoenix',
           coordinates: { lat: 33.4734, lng: -112.0445 },
           hours: 'Varies',
           price: 'Browsing free',
-          tip: 'Don\'t bring young kids — it\'s genuinely macabre.',
+          tip: 'Don\'t bring young kids — it\'s genuinely macabre.'
         },
         {
           id: 'gem-mesa-grande',
@@ -704,18 +684,18 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-mesa-2.png',
-              alt: 'Mesa Grande Hohokam platform mound archaeological site',
+              alt: 'Mesa Grande Hohokam platform mound archaeological site'
             },
             {
               src: '/phoenix/curiosities/mesagrande.png',
-              alt: 'Ancient Mesa Grande ruins from Hohokam civilization',
-            },
+              alt: 'Ancient Mesa Grande ruins from Hohokam civilization'
+            }
           ],
           address: '1000 N Date St, Mesa, AZ 85201',
           coordinates: { lat: 33.4250, lng: -111.8278 },
           hours: 'Oct-May, seasonal hours',
           price: 'Free',
-          tip: 'Limited hours and Mesa location keep this quiet.',
+          tip: 'Limited hours and Mesa location keep this quiet.'
         },
         {
           id: 'gem-max-delta-mine',
@@ -727,18 +707,18 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-delta-1.png',
-              alt: 'Max Delta Mine ruins in South Mountain Park',
+              alt: 'Max Delta Mine ruins in South Mountain Park'
             },
             {
               src: '/phoenix/hidden-gems/hidden-delta-2.png',
-              alt: 'Historic gold mining ruins at Max Delta Mine site',
-            },
+              alt: 'Historic gold mining ruins at Max Delta Mine site'
+            }
           ],
           address: 'South Mountain Park (north slope)',
           coordinates: { lat: 33.3567, lng: -112.0633 },
           hours: 'Park hours',
           price: 'Free',
-          tip: 'Hike Mormon Trail to Hidden Valley to find ruins.',
+          tip: 'Hike Mormon Trail to Hidden Valley to find ruins.'
         },
         {
           id: 'gem-arizona-falls',
@@ -752,22 +732,22 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-falls-0.png',
-              alt: 'Arizona Falls waterfall cascade in urban Phoenix',
+              alt: 'Arizona Falls waterfall cascade in urban Phoenix'
             },
             {
               src: '/phoenix/hidden-gems/hidden-falls-1.png',
-              alt: 'Hidden Arizona Falls oasis near Indian School Road',
+              alt: 'Hidden Arizona Falls oasis near Indian School Road'
             },
             {
               src: '/phoenix/hidden-gems/hidden-falls-3.png',
-              alt: 'Arizona Falls 20-foot waterfall at G.R. Herberger Park',
-            },
+              alt: 'Arizona Falls 20-foot waterfall at G.R. Herberger Park'
+            }
           ],
           address: '5802 E Indian School Rd, Phoenix, AZ 85018',
           coordinates: { lat: 33.4950, lng: -111.9800 },
           hours: 'Daily dawn to dusk',
           price: 'Free',
-          tip: 'Park at G.R. Herberger Park and walk to falls.',
+          tip: 'Park at G.R. Herberger Park and walk to falls.'
         },
         {
           id: 'gem-oak-street-alley',
@@ -779,22 +759,22 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/hidden-murals-1.png',
-              alt: 'Vibrant street art murals in Oak Street Alley',
+              alt: 'Vibrant street art murals in Oak Street Alley'
             },
             {
               src: '/phoenix/hidden-gems/hidden-murals-2.png',
-              alt: 'Colorful murals by local artists on alley walls',
+              alt: 'Colorful murals by local artists on alley walls'
             },
             {
               src: '/phoenix/hidden-gems/hidden-murals-3.png',
-              alt: 'Prismatic murals transforming Oak Street Alley',
-            },
+              alt: 'Prismatic murals transforming Oak Street Alley'
+            }
           ],
           address: 'Oak St between 14th & 15th St, Phoenix',
           coordinates: { lat: 33.4556, lng: -112.0528 },
           hours: 'Always accessible',
           price: 'Free',
-          tip: 'Walk the whole alley — art on both sides.',
+          tip: 'Walk the whole alley — art on both sides.'
         },
         {
           id: 'gem-valley-art-theatre',
@@ -814,11 +794,11 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/hidden-gems/valley-art-theatre.png',
-              alt: 'Valley Art Theatre historic neon sign',
-            },
-          ],
-        },
-      ],
+              alt: 'Valley Art Theatre historic neon sign'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'phx-best-bars',
@@ -842,17 +822,17 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/bars/valleybar-1.png',
-              alt: 'Valley Bar underground lounge',
+              alt: 'Valley Bar underground lounge'
             },
             {
               src: '/phoenix/bars/valleybar-2.png',
-              alt: 'Valley Bar live music venue',
+              alt: 'Valley Bar live music venue'
             },
             {
               src: '/phoenix/bars/valleybar-3.png',
-              alt: 'Valley Bar games and atmosphere',
+              alt: 'Valley Bar games and atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Bitter & Twisted',
@@ -869,21 +849,21 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/bars/bitter-twisted-1.png',
-              alt: 'Bitter & Twisted cocktail bar interior',
+              alt: 'Bitter & Twisted cocktail bar interior'
             },
             {
               src: '/phoenix/bars/bitter-twisted-2.png',
-              alt: 'Bitter & Twisted craft cocktails',
+              alt: 'Bitter & Twisted craft cocktails'
             },
             {
               src: '/phoenix/bars/bitter-twisted-3.png',
-              alt: 'Bitter & Twisted historic Luhrs Building',
+              alt: 'Bitter & Twisted historic Luhrs Building'
             },
             {
               src: '/phoenix/bars/bitter-twisted-4.png',
-              alt: 'Bitter & Twisted bar atmosphere',
+              alt: 'Bitter & Twisted bar atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'The Vig',
@@ -900,21 +880,21 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/bars/the-vig-patio.jpg',
-              alt: 'The Vig patio with Adirondack chairs and fire pit',
+              alt: 'The Vig patio with Adirondack chairs and fire pit'
             },
             {
               src: '/phoenix/bars/vig-2.png',
-              alt: 'The Vig Arcadia atmosphere',
+              alt: 'The Vig Arcadia atmosphere'
             },
             {
               src: '/phoenix/bars/vig-3.png',
-              alt: 'The Vig outdoor seating',
+              alt: 'The Vig outdoor seating'
             },
             {
               src: '/phoenix/bars/vig-4.png',
-              alt: 'The Vig neighborhood bar vibe',
+              alt: 'The Vig neighborhood bar vibe'
             }
-          ],
+          ]
         },
         {
           name: 'Platform 18',
@@ -929,17 +909,17 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/bars/platform-18-interior.webp',
-              alt: 'Platform 18 vintage train car interior',
+              alt: 'Platform 18 vintage train car interior'
             },
             {
               src: '/phoenix/bars/platform18-2.png',
-              alt: 'Platform 18 cocktail experience',
+              alt: 'Platform 18 cocktail experience'
             },
             {
               src: '/phoenix/bars/platform18-3.png',
-              alt: 'Platform 18 Pullman carriage atmosphere',
+              alt: 'Platform 18 Pullman carriage atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Hanny\'s',
@@ -957,10 +937,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/bars/phoenix-bars-hannys-1.png', alt: 'Hanny\'s exterior and entrance' },
             { src: '/phoenix/bars/phoenix-bars-hannys-2.png', alt: 'Hanny\'s main bar area' },
             { src: '/phoenix/bars/phoenix-bars-hannys-3.png', alt: 'Hanny\'s high ceilings' },
-            { src: '/phoenix/bars/phoenix-bars-hannys-4.png', alt: 'Hanny\'s cocktail service' },
-            { src: '/phoenix/bars/hannys-1.png', alt: 'Hanny\'s interior department store style' },
-            { src: '/phoenix/bars/hannys-basement.png', alt: 'Hanny\'s basement doll installation' },
-          ],
+            { src: '/phoenix/bars/phoenix-bars-hannys-4.png', alt: 'Hanny\'s cocktail service' }
+            ]
         },
         {
           name: 'The Duce',
@@ -978,10 +956,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/bars/phoenix-bars-duce-1.png', alt: 'The Duce warehouse exterior' },
             { src: '/phoenix/bars/phoenix-bars-duce-2.png', alt: 'The Duce vintage streamliner' },
             { src: '/phoenix/bars/phoenix-bars-duce-3.png', alt: 'The Duce boxing ring' },
-            { src: '/phoenix/bars/phoenix-bars-duce-4.png', alt: 'The Duce interior space' },
-            { src: '/phoenix/bars/theduce-1.png', alt: 'The Duce boxing ring and bar' },
-            { src: '/phoenix/bars/theduce-2.png', alt: 'The Duce interior streamliner' },
-          ],
+            { src: '/phoenix/bars/phoenix-bars-duce-4.png', alt: 'The Duce interior space' }
+            ]
         },
         {
           name: 'The Ostrich',
@@ -995,8 +971,8 @@ export const phoenix: CityData = {
           hours: 'Tue-Sat 5pm-12am',
           images: [
             { src: '/phoenix/hidden-gems/hidden-ostrich-1.png', alt: 'The Ostrich underground bar entrance' },
-            { src: '/phoenix/hidden-gems/hidden-ostrich-2.png', alt: 'The Ostrich subterranean interior' },
-          ],
+            { src: '/phoenix/hidden-gems/hidden-ostrich-2.png', alt: 'The Ostrich subterranean interior' }
+          ]
         },
         {
           name: 'The Bikini Lounge',
@@ -1011,10 +987,10 @@ export const phoenix: CityData = {
           images: [
             { src: '/phoenix/bars/phoenix-bars-bikini-1.png', alt: 'The Bikini Lounge exterior' },
             { src: '/phoenix/bars/phoenix-bars-bikini-2.png', alt: 'The Bikini Lounge tiki decor' },
-            { src: '/phoenix/bars/phoenix-bars-bikini-3.png', alt: 'The Bikini Lounge interior' },
-          ],
-        },
-      ],
+            { src: '/phoenix/bars/phoenix-bars-bikini-3.png', alt: 'The Bikini Lounge interior' }
+          ]
+        }
+      ]
     },
     {
       id: 'phx-best-coffee-shops',
@@ -1038,21 +1014,21 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/catel-1.png',
-              alt: 'Cartel Coffee Lab interior',
+              alt: 'Cartel Coffee Lab interior'
             },
             {
               src: '/phoenix/coffee/catel-2.png',
-              alt: 'Cartel Coffee Lab pour-over bar',
+              alt: 'Cartel Coffee Lab pour-over bar'
             },
             {
               src: '/phoenix/coffee/catel-3.png',
-              alt: 'Cartel Coffee Lab latte art',
+              alt: 'Cartel Coffee Lab latte art'
             },
             {
               src: '/phoenix/coffee/catel-4.png',
-              alt: 'Cartel Coffee Lab coffee service',
+              alt: 'Cartel Coffee Lab coffee service'
             }
-          ],
+          ]
         },
         {
           name: 'Window Coffee Bar',
@@ -1068,17 +1044,17 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/windowcoffee-1.png',
-              alt: 'Window Coffee Bar exterior',
+              alt: 'Window Coffee Bar exterior'
             },
             {
               src: '/phoenix/coffee/windowcoffee-2.png',
-              alt: 'Window Coffee Bar drinks',
+              alt: 'Window Coffee Bar drinks'
             },
             {
               src: '/phoenix/coffee/windowcoffee-3.png',
-              alt: 'Window Coffee Bar Mexican roast',
+              alt: 'Window Coffee Bar Mexican roast'
             }
-          ],
+          ]
         },
         {
           name: 'A.T. Oasis',
@@ -1095,21 +1071,21 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/oasis-1.png',
-              alt: 'A.T. Oasis Ethiopian coffee',
+              alt: 'A.T. Oasis Ethiopian coffee'
             },
             {
               src: '/phoenix/coffee/oasis-2.png',
-              alt: 'A.T. Oasis coffee ceremony',
+              alt: 'A.T. Oasis coffee ceremony'
             },
             {
               src: '/phoenix/coffee/oasis-3.png',
-              alt: 'A.T. Oasis interior',
+              alt: 'A.T. Oasis interior'
             },
             {
               src: '/phoenix/coffee/oasis-4.png',
-              alt: 'A.T. Oasis ginger spice coffee',
+              alt: 'A.T. Oasis ginger spice coffee'
             }
-          ],
+          ]
         },
         {
           name: 'Lola Coffee',
@@ -1126,17 +1102,17 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/lola-1.png',
-              alt: 'Lola Coffee interior',
+              alt: 'Lola Coffee interior'
             },
             {
               src: '/phoenix/coffee/lola-2.png',
-              alt: 'Lola Coffee espresso drinks',
+              alt: 'Lola Coffee espresso drinks'
             },
             {
               src: '/phoenix/coffee/lola-3.png',
-              alt: 'Lola Coffee neighborhood vibe',
+              alt: 'Lola Coffee neighborhood vibe'
             }
-          ],
+          ]
         },
         {
           name: 'Bang Bang Coffee',
@@ -1153,13 +1129,13 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/bangbang-1.png',
-              alt: 'Bang Bang Coffee red brick building',
+              alt: 'Bang Bang Coffee red brick building'
             },
             {
               src: '/phoenix/coffee/bangbang-2.png',
-              alt: 'Bang Bang Coffee outdoor seating under palms',
+              alt: 'Bang Bang Coffee outdoor seating under palms'
             }
-          ],
+          ]
         },
         {
           name: 'Blue Corn Cafe & Bakery',
@@ -1175,15 +1151,15 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/coffee/bluecorn-1.png',
-              alt: 'Blue Corn Cafe sourdough and pastries',
+              alt: 'Blue Corn Cafe sourdough and pastries'
             },
             {
               src: '/phoenix/coffee/bluecorn-2.png',
-              alt: 'Blue Corn Cafe bakery interior',
+              alt: 'Blue Corn Cafe bakery interior'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     },
     {
       id: 'phx-best-restaurants',
@@ -1208,8 +1184,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/restaurants/phoenix-resto-bacan-1.png', alt: 'Bacanora exterior on Grand Avenue' },
             { src: '/phoenix/restaurants/phoenix-resto-bacan-2.png', alt: 'Bacanora wood-fired grill' },
             { src: '/phoenix/restaurants/phoenix-resto-bacan-3.png', alt: 'Bacanora dining room' },
-            { src: '/phoenix/restaurants/bacanora-1.jpg', alt: 'Wood-fired Mexican cuisine from James Beard winner' },
-          ],
+            { src: '/phoenix/restaurants/bacanora-1.jpg', alt: 'Wood-fired Mexican cuisine from James Beard winner' }
+          ]
         },
         {
           name: 'Carolina\'s Mexican Food',
@@ -1227,8 +1203,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/restaurants/phoenix-resto-carolinas-1.png', alt: 'Carolina\'s Mexican Food exterior' },
             { src: '/phoenix/restaurants/phoenix-resto-carolinas-2.png', alt: 'Carolina\'s tortilla making' },
             { src: '/phoenix/restaurants/phoenix-resto-carolinas-3.png', alt: 'Carolina\'s menu items' },
-            { src: '/phoenix/restaurants/carolinas-1.jpg', alt: 'Fresh handmade Sonoran flour tortillas' },
-          ],
+            { src: '/phoenix/restaurants/carolinas-1.jpg', alt: 'Fresh handmade Sonoran flour tortillas' }
+          ]
         },
         {
           name: 'Pizzeria Bianco',
@@ -1246,8 +1222,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/restaurants/phoenix-resto-bianco.png', alt: 'Pizzeria Bianco exterior' },
             { src: '/phoenix/restaurants/phoenix-resto-bianco-2.png', alt: 'Pizzeria Bianco wood-fired oven' },
             { src: '/phoenix/restaurants/phoenix-resto-bianco-3.png', alt: 'Pizzeria Bianco dining' },
-            { src: '/phoenix/restaurants/pizzeria-bianco-1.jpg', alt: 'Wood-fired artisan pizza from James Beard winner' },
-          ],
+            { src: '/phoenix/restaurants/pizzeria-bianco-1.jpg', alt: 'Wood-fired artisan pizza from James Beard winner' }
+          ]
         },
         {
           name: 'Matt\'s Big Breakfast',
@@ -1264,9 +1240,8 @@ export const phoenix: CityData = {
           images: [
             { src: '/phoenix/restaurants/phoenix-resto-matts-1.png', alt: 'Matt\'s Big Breakfast exterior' },
             { src: '/phoenix/restaurants/phoenix-resto-matts-2.png', alt: 'Matt\'s Big Breakfast interior' },
-            { src: '/phoenix/restaurants/phoenix-resto-matts-3.png', alt: 'Matt\'s Big Breakfast food' },
-            { src: '/phoenix/restaurants/matts-1.png', alt: 'Matt\'s Big Breakfast classic plate' },
-          ],
+            { src: '/phoenix/restaurants/phoenix-resto-matts-3.png', alt: 'Matt\'s Big Breakfast food' }
+            ]
         },
         {
           name: 'Durant\'s',
@@ -1283,9 +1258,8 @@ export const phoenix: CityData = {
           images: [
             { src: '/phoenix/restaurants/phoenix-resto-durants-1.png', alt: 'Durant\'s exterior entrance' },
             { src: '/phoenix/restaurants/phoenix-resto-durants-2.png', alt: 'Durant\'s kitchen entry' },
-            { src: '/phoenix/restaurants/phoenix-resto-durants-3.png', alt: 'Durant\'s dining room' },
-            { src: '/phoenix/restaurants/durants-1.png', alt: 'Durant\'s red velvet interior' },
-          ],
+            { src: '/phoenix/restaurants/phoenix-resto-durants-3.png', alt: 'Durant\'s dining room' }
+            ]
         },
         {
           name: 'Taco Chelo',
@@ -1302,8 +1276,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/restaurants/phoenix-resto-chelo-1.png', alt: 'Taco Chelo exterior on Roosevelt Row' },
             { src: '/phoenix/restaurants/phoenix-resto-chelo-2.png', alt: 'Taco Chelo interior art' },
             { src: '/phoenix/restaurants/phoenix-resto-chelo-3.png', alt: 'Taco Chelo handmade tacos' },
-            { src: '/phoenix/restaurants/taco-chelo-1.jpg', alt: 'Artful handmade tacos on Roosevelt Row' },
-          ],
+            { src: '/phoenix/restaurants/taco-chelo-1.jpg', alt: 'Artful handmade tacos on Roosevelt Row' }
+          ]
         },
         {
           name: 'Restaurant Atoyac Estilo Oaxaca',
@@ -1321,8 +1295,8 @@ export const phoenix: CityData = {
             { src: '/phoenix/restaurants/phoenix-resto-atoyac-1.png', alt: 'Restaurant Atoyac exterior' },
             { src: '/phoenix/restaurants/phoenix-resto-atoyac-2.png', alt: 'Restaurant Atoyac tlayuda' },
             { src: '/phoenix/restaurants/phoenix-resto-atoyac-3.png', alt: 'Restaurant Atoyac Oaxacan dishes' },
-            { src: '/phoenix/restaurants/atoyac-tlayuda.jpg', alt: 'Authentic Oaxacan tlayuda and mole' },
-          ],
+            { src: '/phoenix/restaurants/atoyac-tlayuda.jpg', alt: 'Authentic Oaxacan tlayuda and mole' }
+          ]
         },
         {
           name: 'Valentine',
@@ -1339,12 +1313,10 @@ export const phoenix: CityData = {
           images: [
             { src: '/phoenix/restaurants/phoenix-resto-valentine-1.png', alt: 'Valentine exterior and space' },
             { src: '/phoenix/restaurants/phoenix-resto-valentine-2.png', alt: 'Valentine interior design' },
-            { src: '/phoenix/restaurants/phoenix-resto-valentine-3.png', alt: 'Valentine cuisine plating' },
-            { src: '/phoenix/restaurants/valentine-1.png', alt: 'Valentine restaurant interior' },
-            { src: '/phoenix/restaurants/valentine-2.png', alt: 'Valentine modern Arizona cuisine' },
-          ],
-        },
-      ],
+            { src: '/phoenix/restaurants/phoenix-resto-valentine-3.png', alt: 'Valentine cuisine plating' }
+            ]
+        }
+      ]
     },
     {
       id: 'phx-dark-history',
@@ -1369,7 +1341,7 @@ export const phoenix: CityData = {
               author: 'Jana Bommersbach',
               isbn: '9780743212656',
               year: '1992',
-              url: 'https://www.amazon.com/Trunk-Murderess-Winnie-Ruth-Judd/dp/0743212657',
+              url: 'https://www.amazon.com/Trunk-Murderess-Winnie-Ruth-Judd/dp/0743212657'
             },
             {
               type: 'book',
@@ -1377,58 +1349,58 @@ export const phoenix: CityData = {
               author: 'J. Dwight Dobkins and Robert J. Hendricks',
               isbn: '9781887896177',
               year: '1973',
-              url: 'https://www.amazon.com/Winnie-Ruth-Judd-Trunk-Murders/dp/1887896171',
+              url: 'https://www.amazon.com/Winnie-Ruth-Judd-Trunk-Murders/dp/1887896171'
             },
             {
               type: 'article',
               title: 'The Twisted Tale of Winnie Ruth Judd',
               publisher: 'Phoenix Magazine',
               author: 'Jana Bommersbach',
-              url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/',
+              url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/'
             },
             {
               type: 'article',
               title: 'The Winnie Ruth Judd Story',
               publisher: 'Phoenix Magazine',
               year: '2019',
-              url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/',
+              url: 'https://www.phoenixmag.com/2019/10/14/winnie-ruth-judd-trunk-murderess/'
             },
             {
               type: 'documentary',
               title: 'Winnie Ruth Judd: The Trunk Murderess',
               platform: 'Investigation Discovery',
               year: '2014',
-              url: 'https://www.imdb.com/title/tt4076466/',
+              url: 'https://www.imdb.com/title/tt4076466/'
             },
             {
               type: 'podcast',
               title: 'The Trunk Murderess: Winnie Ruth Judd',
               show: 'Murder Most Foul',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/murder-most-foul/id1445020528',
+              url: 'https://podcasts.apple.com/us/podcast/murder-most-foul/id1445020528'
             },
             {
               type: 'video',
               title: 'Winnie Ruth Judd: The Trunk Murders Explained',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=KdXJW8h7Ozg',
-            },
+              url: 'https://www.youtube.com/watch?v=KdXJW8h7Ozg'
+            }
           ],
           location: {
             name: '2947 N 2nd Street (former crime scene)',
       url: 'https://www.google.com/maps/search/?api=1&query=2947%20N%202nd%20Street%20(former%20crime%20scene)%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/trunk-1.png',
-              alt: 'Historic Phoenix bungalow from the 1930s, representative of the neighborhood where Winnie Ruth Judd committed the infamous trunk murders',
+              alt: 'Historic Phoenix bungalow from the 1930s, representative of the neighborhood where Winnie Ruth Judd committed the infamous trunk murders'
             },
             {
               src: '/phoenix/dark-history/trunk-2.png',
-              alt: 'Phoenix residential street, evoking the quiet neighborhood that became the site of Arizona\'s most sensational murder case',
-            },
-          ],
+              alt: 'Phoenix residential street, evoking the quiet neighborhood that became the site of Arizona\'s most sensational murder case'
+            }
+          ]
         },
         {
           id: 'phx-dark-2',
@@ -1447,14 +1419,14 @@ export const phoenix: CityData = {
               author: 'Harry N. MacLean',
               isbn: '9780061544682',
               year: '2009',
-              url: 'https://www.amazon.com/Baseline-Killer-Hunt-Serial-Killers/dp/0061544682',
+              url: 'https://www.amazon.com/Baseline-Killer-Hunt-Serial-Killers/dp/0061544682'
             },
             {
               type: 'article',
               title: 'Phoenix\'s Summer of Fear: Two Serial Killers at Once',
               publisher: 'AZ Central',
               year: '2015',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2015/08/20/phoenix-serial-killers-summer-fear/32074903/',
+              url: 'https://www.azcentral.com/story/news/local/phoenix/2015/08/20/phoenix-serial-killers-summer-fear/32074903/'
             },
             {
               type: 'article',
@@ -1462,44 +1434,44 @@ export const phoenix: CityData = {
               publisher: 'Phoenix New Times',
               author: 'Paul Rubin',
               year: '2006',
-              url: 'https://www.phoenixnewtimes.com/news/the-baseline-killer-serial-shooters-6422974',
+              url: 'https://www.phoenixnewtimes.com/news/the-baseline-killer-serial-shooters-6422974'
             },
             {
               type: 'documentary',
               title: 'The Baseline Killer',
               platform: 'Investigation Discovery',
               year: '2014',
-              url: 'https://www.imdb.com/title/tt3807678/',
+              url: 'https://www.imdb.com/title/tt3807678/'
             },
             {
               type: 'podcast',
               title: 'The Summer of Fear: Phoenix Serial Killers',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh',
+              url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh'
             },
             {
               type: 'video',
               title: 'Phoenix Summer of Fear: Two Serial Killers Explained',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=9wT8xCJgZyA',
-            },
+              url: 'https://www.youtube.com/watch?v=9wT8xCJgZyA'
+            }
           ],
           location: {
             name: 'Phoenix metro area',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20metro%20area%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/summer-fear-1.png',
-              alt: 'Phoenix residential neighborhood where two simultaneous serial killers hunted during the Summer of Fear in 2005-2006',
+              alt: 'Phoenix residential neighborhood where two simultaneous serial killers hunted during the Summer of Fear in 2005-2006'
             },
             {
               src: '/phoenix/dark-history/summer-fear-2.png',
-              alt: 'Phoenix streets at dusk, evoking the fear that gripped the city during the unprecedented dual serial killer crisis',
-            },
-          ],
+              alt: 'Phoenix streets at dusk, evoking the fear that gripped the city during the unprecedented dual serial killer crisis'
+            }
+          ]
         },
         {
           id: 'phx-dark-3',
@@ -1518,58 +1490,58 @@ export const phoenix: CityData = {
               author: 'Ellen Robson and Dianne Robson',
               isbn: '9780811736343',
               year: '2010',
-              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342'
             },
             {
               type: 'article',
               title: 'Leone Jensen and the Haunting of Hotel San Carlos',
               publisher: 'Phoenix New Times',
               year: '2019',
-              url: 'https://www.phoenixnewtimes.com/arts/hotel-san-carlos-haunted-leone-jensen-11346824',
+              url: 'https://www.phoenixnewtimes.com/arts/hotel-san-carlos-haunted-leone-jensen-11346824'
             },
             {
               type: 'article',
               title: 'The Ghost of Hotel San Carlos',
               publisher: 'AZ Central',
               year: '2017',
-              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/',
+              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/'
             },
             {
               type: 'article',
               title: 'Arizona\'s Most Haunted Hotels',
               publisher: 'Travel Arizona',
               year: '2022',
-              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/',
+              url: 'https://www.visitarizona.com/like-a-local/haunted-arizona/'
             },
             {
               type: 'podcast',
               title: 'The Haunting of Hotel San Carlos',
               show: 'Haunted Arizona',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890'
             },
             {
               type: 'video',
               title: 'Hotel San Carlos: Phoenix\'s Most Haunted Hotel',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=TkB9K3LUz0Q',
-            },
+              url: 'https://www.youtube.com/watch?v=TkB9K3LUz0Q'
+            }
           ],
           location: {
             name: 'Hotel San Carlos, 202 N Central Ave',
       url: 'https://www.google.com/maps/search/?api=1&query=Hotel%20San%20Carlos%2C%20202%20N%20Central%20Ave%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/hotel-san-carlos.png',
-              alt: 'Hotel San Carlos lobby, one of Phoenix\'s most haunted locations since Leone Jensen\'s suicide in 1928',
+              alt: 'Hotel San Carlos lobby, one of Phoenix\'s most haunted locations since Leone Jensen\'s suicide in 1928'
             },
             {
               src: '/phoenix/dark-history/orpheom-theater.png',
-              alt: 'Historic downtown Phoenix building from the 1920s era, when Hotel San Carlos was built',
-            },
-          ],
+              alt: 'Historic downtown Phoenix building from the 1920s era, when Hotel San Carlos was built'
+            }
+          ]
         },
         {
           id: 'phx-dark-4',
@@ -1585,30 +1557,30 @@ export const phoenix: CityData = {
               type: 'article',
               title: 'Don Bolles: The Arizona Project',
               publisher: 'IRE',
-              url: 'https://www.ire.org/arizona-project/',
+              url: 'https://www.ire.org/arizona-project/'
             },
             {
               type: 'article',
               title: 'Don Bolles',
               publisher: 'Arizona State Library',
-              url: 'https://azlibrary.gov/dazl/don-bolles',
-            },
+              url: 'https://azlibrary.gov/dazl/don-bolles'
+            }
           ],
           location: {
             name: 'Clarendon Hotel site, Downtown Phoenix',
       url: 'https://www.google.com/maps/search/?api=1&query=Clarendon%20Hotel%20site%2C%20Downtown%20Phoenix%20Phoenix',
-            stillExists: false,
+            stillExists: false
           },
           images: [
             {
               src: '/phoenix/dark-history/dan-bolles-1.png',
-              alt: 'Don Bolles, investigative reporter for The Arizona Republic who was assassinated by car bomb in 1976 while investigating organized crime',
+              alt: 'Don Bolles, investigative reporter for The Arizona Republic who was assassinated by car bomb in 1976 while investigating organized crime'
             },
             {
               src: '/phoenix/dark-history/dan-balles-2.png',
-              alt: 'Downtown Phoenix in the 1970s, near the Clarendon Hotel where Don Bolles was assassinated',
-            },
-          ],
+              alt: 'Downtown Phoenix in the 1970s, near the Clarendon Hotel where Don Bolles was assassinated'
+            }
+          ]
         },
         {
           id: 'phx-dark-5',
@@ -1627,7 +1599,7 @@ export const phoenix: CityData = {
               author: 'David Wallace Adams',
               isbn: '9780700617104',
               year: '1995',
-              url: 'https://www.amazon.com/Education-Extinction-American-Boarding-Experience/dp/070061710X',
+              url: 'https://www.amazon.com/Education-Extinction-American-Boarding-Experience/dp/070061710X'
             },
             {
               type: 'book',
@@ -1635,19 +1607,19 @@ export const phoenix: CityData = {
               author: 'Margaret L. Archuleta',
               isbn: '9780934351614',
               year: '2000',
-              url: 'https://www.amazon.com/Away-Home-American-Boarding-Experiences/dp/0934351619',
+              url: 'https://www.amazon.com/Away-Home-American-Boarding-Experiences/dp/0934351619'
             },
             {
               type: 'article',
               title: 'Phoenix Indian School Investigation',
               publisher: 'Cronkite News',
-              url: 'https://cronkitenews.azpbs.org/phoenix-indian-school/',
+              url: 'https://cronkitenews.azpbs.org/phoenix-indian-school/'
             },
             {
               type: 'article',
               title: 'Federal Investigation into Boarding School Deaths',
               publisher: 'NPR',
-              url: 'https://www.npr.org/2024/10/26/nx-s1-5166864/biden-apology-native-american-boarding-schools',
+              url: 'https://www.npr.org/2024/10/26/nx-s1-5166864/biden-apology-native-american-boarding-schools'
             },
             {
               type: 'article',
@@ -1655,7 +1627,7 @@ export const phoenix: CityData = {
               publisher: 'The New York Times',
               author: 'Michael D. Shear',
               year: '2024',
-              url: 'https://www.nytimes.com/2024/10/25/us/politics/biden-apology-indian-boarding-schools.html',
+              url: 'https://www.nytimes.com/2024/10/25/us/politics/biden-apology-indian-boarding-schools.html'
             },
             {
               type: 'documentary',
@@ -1663,37 +1635,37 @@ export const phoenix: CityData = {
               platform: 'PBS',
               director: 'Sharon Grimberg',
               year: '2023',
-              url: 'https://www.pbs.org/show/indian-boarding-schools/',
+              url: 'https://www.pbs.org/show/indian-boarding-schools/'
             },
             {
               type: 'podcast',
               title: 'American Burial Ground: The Search for Missing Children at Indian Boarding Schools',
               show: 'Reveal',
               platform: 'NPR',
-              url: 'https://revealnews.org/podcast/american-burial-ground/',
+              url: 'https://revealnews.org/podcast/american-burial-ground/'
             },
             {
               type: 'video',
               title: 'Phoenix Indian School: Legacy of Forced Assimilation',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=FdBZnC1C9nI',
-            },
+              url: 'https://www.youtube.com/watch?v=FdBZnC1C9nI'
+            }
           ],
           location: {
             name: 'Steele Indian School Park (former school site)',
       url: 'https://www.google.com/maps/search/?api=1&query=Steele%20Indian%20School%20Park%20(former%20school%20site)%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/phoenix-indian-school.png',
-              alt: 'Phoenix Indian School main building circa 1930, showing the institutional architecture where Indigenous children were forced to attend',
+              alt: 'Phoenix Indian School main building circa 1930, showing the institutional architecture where Indigenous children were forced to attend'
             },
             {
               src: '/phoenix/dark-history/hotel-san-carlos.png',
-              alt: 'Historic downtown Phoenix near the Phoenix Indian School area, showing the institutional environment of forced assimilation',
-            },
-          ],
+              alt: 'Historic downtown Phoenix near the Phoenix Indian School area, showing the institutional environment of forced assimilation'
+            }
+          ]
         },
         {
           id: 'phx-dark-6',
@@ -1712,58 +1684,58 @@ export const phoenix: CityData = {
               author: 'Ellen Robson and Dianne Robson',
               isbn: '9780811736343',
               year: '2010',
-              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342'
             },
             {
               type: 'article',
               title: 'Maddie: The Ghost of the Orpheum Theatre',
               publisher: 'Phoenix New Times',
               year: '2018',
-              url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854',
+              url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854'
             },
             {
               type: 'article',
               title: 'Haunted Theaters of Arizona',
               publisher: 'AZ Central',
               year: '2019',
-              url: 'https://www.azcentral.com/story/entertainment/events/halloween/2019/10/24/haunted-theaters-arizona/4077251002/',
+              url: 'https://www.azcentral.com/story/entertainment/events/halloween/2019/10/24/haunted-theaters-arizona/4077251002/'
             },
             {
               type: 'article',
               title: 'The Orpheum Theatre: Phoenix\'s Historic Haunted Theater',
               publisher: 'Visit Phoenix',
               year: '2022',
-              url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854',
+              url: 'https://www.phoenixnewtimes.com/arts/orpheum-theatre-ghost-maddie-haunting-10907854'
             },
             {
               type: 'podcast',
               title: 'Maddie of the Orpheum Theatre',
               show: 'Haunted Arizona',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890'
             },
             {
               type: 'video',
               title: 'Orpheum Theatre: Ghost Investigation with Maddie',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=zKC8Lv7M7pU',
-            },
+              url: 'https://www.youtube.com/watch?v=zKC8Lv7M7pU'
+            }
           ],
           location: {
             name: 'Orpheum Theatre, 203 W Adams St',
       url: 'https://www.google.com/maps/search/?api=1&query=Orpheum%20Theatre%2C%20203%20W%20Adams%20St%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/orpheom-theater.png',
-              alt: 'Orpheum Theatre interior with ornate Mediterranean-inspired design, home to the ghost Maddie who enforces theater etiquette',
+              alt: 'Orpheum Theatre interior with ornate Mediterranean-inspired design, home to the ghost Maddie who enforces theater etiquette'
             },
             {
               src: '/phoenix/dark-history/hotel-san-carlos.png',
-              alt: 'Historic 1920s-era architecture in downtown Phoenix, contemporary with the Orpheum Theatre\'s construction',
-            },
-          ],
+              alt: 'Historic 1920s-era architecture in downtown Phoenix, contemporary with the Orpheum Theatre\'s construction'
+            }
+          ]
         },
         {
           id: 'phx-dark-7',
@@ -1781,7 +1753,7 @@ export const phoenix: CityData = {
               title: 'The Maryvale Serial Shooter: Aaron Saucedo\'s Reign of Terror',
               publisher: 'AZ Central',
               year: '2020',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2020/09/02/aaron-saucedo-maryvale-serial-shooter-convicted/5689041002/',
+              url: 'https://www.azcentral.com/story/news/local/phoenix/2020/09/02/aaron-saucedo-maryvale-serial-shooter-convicted/5689041002/'
             },
             {
               type: 'article',
@@ -1789,51 +1761,51 @@ export const phoenix: CityData = {
               publisher: 'Phoenix New Times',
               author: 'Robert Anglen',
               year: '2017',
-              url: 'https://kjzz.org/content/473111/everything-we-know-about-maryvale-serial-shooter-suspect-aaron-saucedo',
+              url: 'https://kjzz.org/content/473111/everything-we-know-about-maryvale-serial-shooter-suspect-aaron-saucedo'
             },
             {
               type: 'article',
               title: 'How Phoenix Police Caught the Maryvale Shooter',
               publisher: '12 News',
               year: '2017',
-              url: 'https://www.12news.com/article/news/crime/maryvale-shooter-arrest/75-433456789',
+              url: 'https://www.12news.com/article/news/crime/maryvale-shooter-arrest/75-433456789'
             },
             {
               type: 'documentary',
               title: 'The Maryvale Shooter',
               platform: 'Investigation Discovery',
               year: '2021',
-              url: 'https://www.investigationdiscovery.com/shows/evil-lives-here/maryvale-shooter',
+              url: 'https://www.investigationdiscovery.com/shows/evil-lives-here/maryvale-shooter'
             },
             {
               type: 'podcast',
               title: 'Hunting the Maryvale Shooter',
               show: 'True Crime Arizona',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/true-crime-arizona/id1234567890',
+              url: 'https://podcasts.apple.com/us/podcast/true-crime-arizona/id1234567890'
             },
             {
               type: 'video',
               title: 'Aaron Saucedo: The Maryvale Serial Shooter Explained',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=fR4x_hD5qXI',
-            },
+              url: 'https://www.youtube.com/watch?v=fR4x_hD5qXI'
+            }
           ],
           location: {
             name: 'Maryvale neighborhood',
       url: 'https://www.google.com/maps/search/?api=1&query=Maryvale%20neighborhood%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/maryvale.png',
-              alt: 'Maryvale neighborhood in west Phoenix, where a random shooter terrorized residents for nearly a year',
+              alt: 'Maryvale neighborhood in west Phoenix, where a random shooter terrorized residents for nearly a year'
             },
             {
               src: '/phoenix/dark-history/rosson-house.png',
-              alt: 'Phoenix working-class neighborhood at night, representing the Maryvale streets where nine people were killed',
-            },
-          ],
+              alt: 'Phoenix working-class neighborhood at night, representing the Maryvale streets where nine people were killed'
+            }
+          ]
         },
         {
           id: 'phx-dark-8',
@@ -1852,58 +1824,58 @@ export const phoenix: CityData = {
               author: 'Ellen Robson and Dianne Robson',
               isbn: '9780811736343',
               year: '2010',
-              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342',
+              url: 'https://www.amazon.com/Haunted-Phoenix-Strange-Phenomena-Valley/dp/0811736342'
             },
             {
               type: 'article',
               title: 'The Haunting of Rosson House',
               publisher: 'Phoenix New Times',
               year: '2017',
-              url: 'https://www.phoenixnewtimes.com/arts/rosson-house-haunted-heritage-square-9680234',
+              url: 'https://www.phoenixnewtimes.com/arts/rosson-house-haunted-heritage-square-9680234'
             },
             {
               type: 'article',
               title: 'Ghost Stories from Phoenix\'s Heritage Square',
               publisher: 'AZ Central',
               year: '2020',
-              url: 'https://www.azcentral.com/story/entertainment/events/halloween/2020/10/29/heritage-square-phoenix-haunted-history/6067891002/',
+              url: 'https://www.azcentral.com/story/entertainment/events/halloween/2020/10/29/heritage-square-phoenix-haunted-history/6067891002/'
             },
             {
               type: 'article',
               title: 'Rosson House Museum: Victorian Elegance and Ghosts',
               publisher: 'Visit Phoenix',
               year: '2021',
-              url: 'https://www.visitphoenix.com/blog/rosson-house-heritage-square/',
+              url: 'https://www.visitphoenix.com/blog/rosson-house-heritage-square/'
             },
             {
               type: 'podcast',
               title: 'The Ghost of Rosson House',
               show: 'Haunted Arizona',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890',
+              url: 'https://podcasts.apple.com/us/podcast/haunted-arizona/id1234567890'
             },
             {
               type: 'video',
               title: 'Rosson House: Phoenix\'s Most Haunted Victorian Mansion',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=CbM8VnP5D8s',
-            },
+              url: 'https://www.youtube.com/watch?v=CbM8VnP5D8s'
+            }
           ],
           location: {
             name: 'Rosson House, Heritage Square',
       url: 'https://www.google.com/maps/search/?api=1&query=Rosson%20House%2C%20Heritage%20Square%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/rosson-house.png',
-              alt: 'Rosson House, a Victorian mansion built in 1895, now haunted by the ghost of a caretaker murdered in the 1980s',
+              alt: 'Rosson House, a Victorian mansion built in 1895, now haunted by the ghost of a caretaker murdered in the 1980s'
             },
             {
               src: '/phoenix/dark-history/rosson-house-2.png',
-              alt: 'Rosson House interior showing Victorian-era rooms where visitors report unexplained footsteps and ghostly presences',
-            },
-          ],
+              alt: 'Rosson House interior showing Victorian-era rooms where visitors report unexplained footsteps and ghostly presences'
+            }
+          ]
         },
         {
           id: 'phx-dark-9',
@@ -1920,57 +1892,57 @@ export const phoenix: CityData = {
               title: 'Robert Fisher: Still Missing After 20 Years',
               publisher: 'FBI',
               year: '2022',
-              url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher',
+              url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher'
             },
             {
               type: 'article',
               title: 'FBI Top Ten Wanted: Robert William Fisher',
               publisher: 'FBI',
-              url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher',
+              url: 'https://www.fbi.gov/wanted/topten/robert-william-fisher'
             },
             {
               type: 'article',
               title: 'Robert William Fisher: Murder, Mystery, and the FBI\'s Ten Most Wanted',
               publisher: 'Phoenix New Times',
               year: '2017',
-              url: 'https://www.phoenixnewtimes.com/news/robert-fisher-fbi-most-wanted-scottsdale-murder-9419822',
+              url: 'https://www.phoenixnewtimes.com/news/robert-fisher-fbi-most-wanted-scottsdale-murder-9419822'
             },
             {
               type: 'documentary',
               title: 'Where is Robert Fisher?',
               platform: 'Investigation Discovery',
               year: '2016',
-              url: 'https://www.investigationdiscovery.com/shows/disappeared/robert-fisher',
+              url: 'https://www.investigationdiscovery.com/shows/disappeared/robert-fisher'
             },
             {
               type: 'podcast',
               title: 'The Fisher Family Murders',
               show: 'True Crime All The Time',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/us/podcast/true-crime-all-the-time/id1066110947',
+              url: 'https://podcasts.apple.com/us/podcast/true-crime-all-the-time/id1066110947'
             },
             {
               type: 'video',
               title: 'Robert Fisher: FBI\'s Most Wanted Fugitive Explained',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=X8hJLUu9Nyo',
-            },
+              url: 'https://www.youtube.com/watch?v=X8hJLUu9Nyo'
+            }
           ],
           location: {
             name: 'Scottsdale',
       url: 'https://www.google.com/maps/search/?api=1&query=Scottsdale%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/fisher-family.png',
-              alt: 'Scottsdale residential neighborhood, similar to where Robert Fisher murdered his family and disappeared in 2002',
+              alt: 'Scottsdale residential neighborhood, similar to where Robert Fisher murdered his family and disappeared in 2002'
             },
             {
               src: '/phoenix/dark-history/rosson-house-2.png',
-              alt: 'Suburban Phoenix home, representative of the Scottsdale house that exploded after the Fisher family murders',
-            },
-          ],
+              alt: 'Suburban Phoenix home, representative of the Scottsdale house that exploded after the Fisher family murders'
+            }
+          ]
         },
         {
           id: 'phx-dark-10',
@@ -1988,7 +1960,7 @@ export const phoenix: CityData = {
               author: 'Jeff Goodell',
               isbn: '9780316492409',
               
-              url: 'https://www.amazon.com/Heat-Will-Kill-You-First/dp/0316492418',
+              url: 'https://www.amazon.com/Heat-Will-Kill-You-First/dp/0316492418'
             },
             {
               type: 'article',
@@ -1996,14 +1968,14 @@ export const phoenix: CityData = {
               publisher: 'Scientific American',
               author: 'Andrea Thompson',
               year: '2023',
-              url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/',
+              url: 'https://www.scientificamerican.com/article/phoenix-is-testing-the-limits-of-heat-a-city-can-withstand/'
             },
             {
               type: 'article',
               title: 'Phoenix Heat Deaths Soar to Record 645 in 2023',
               publisher: 'The Guardian',
               year: '2024',
-              url: 'https://www.theguardian.com/us-news/2024/jan/17/phoenix-arizona-heat-deaths-record',
+              url: 'https://www.theguardian.com/us-news/2024/jan/17/phoenix-arizona-heat-deaths-record'
             },
             {
               type: 'article',
@@ -2011,7 +1983,7 @@ export const phoenix: CityData = {
               publisher: 'AZ Central',
               author: 'Alison Steinbach',
               year: '2023',
-              url: 'https://www.azcentral.com/story/news/local/phoenix/2023/08/01/phoenix-heat-deaths-homeless/70501938007/',
+              url: 'https://www.azcentral.com/story/news/local/phoenix/2023/08/01/phoenix-heat-deaths-homeless/70501938007/'
             },
             {
               type: 'podcast',
@@ -2019,37 +1991,37 @@ export const phoenix: CityData = {
               show: 'All Things Considered',
               platform: 'NPR',
               year: '2023',
-              url: 'https://www.npr.org/2023/08/07/1192379134/phoenix-heat-deaths',
+              url: 'https://www.npr.org/2023/08/07/1192379134/phoenix-heat-deaths'
             },
             {
               type: 'documentary',
               title: 'Surviving Extreme Heat in Phoenix',
               platform: 'PBS NewsHour',
               year: '2023',
-              url: 'https://www.pbs.org/newshour/show/how-phoenix-is-trying-to-prevent-heat-deaths',
+              url: 'https://www.pbs.org/newshour/show/how-phoenix-is-trying-to-prevent-heat-deaths'
             },
             {
               type: 'video',
               title: 'Phoenix Heat Apocalypse: 645 Dead in 2023',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=eVKk5J_3L3A',
-            },
+              url: 'https://www.youtube.com/watch?v=eVKk5J_3L3A'
+            }
           ],
           location: {
             name: 'Phoenix metro area',
       url: 'https://www.google.com/maps/search/?api=1&query=Phoenix%20metro%20area%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/phoenix/dark-history/heat-deaths.png',
-              alt: 'Phoenix during extreme heat wave in 2023, when temperatures exceeded 110°F for 31 consecutive days and killed 645 people',
+              alt: 'Phoenix during extreme heat wave in 2023, when temperatures exceeded 110°F for 31 consecutive days and killed 645 people'
             },
             {
               src: '/phoenix/dark-history/rosson-house-2.png',
-              alt: 'Phoenix streets during deadly heat, showing the urban environment where nearly 300 homeless people died in one summer',
-            },
-          ],
+              alt: 'Phoenix streets during deadly heat, showing the urban environment where nearly 300 homeless people died in one summer'
+            }
+          ]
         },
         {
           id: 'phx-dark-11',
@@ -2066,29 +2038,29 @@ export const phoenix: CityData = {
               type: 'article',
               title: 'Gila River Internment Camp',
               publisher: 'Densho Encyclopedia',
-              url: 'https://encyclopedia.densho.org/Gila_River/',
+              url: 'https://encyclopedia.densho.org/Gila_River/'
             },
             {
               type: 'article',
               title: 'Japanese Internment in Arizona',
               publisher: 'Arizona State Library',
-              url: 'https://azlibrary.gov/japanese-internment-arizona',
-            },
+              url: 'https://azlibrary.gov/japanese-internment-arizona'
+            }
           ],
           location: {
             name: 'Gila River Indian Reservation',
       url: 'https://www.google.com/maps/search/?api=1&query=Gila%20River%20Indian%20Reservation%20Phoenix',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             { src: '/phoenix/dark-history/phoenix-dark-internment.png', alt: 'Gila River Internment Camp' },
             { src: '/phoenix/dark-history/phoenix-dark-internment2.png', alt: 'Internment camp barracks' },
             { src: '/phoenix/dark-history/phoenix-dark-internment3.png', alt: 'Japanese American families at camp' },
             { src: '/phoenix/dark-history/phoenix-dark-internment4.png', alt: 'Garden ponds built by internees' },
-            { src: '/phoenix/dark-history/phoenix-dark-internment5.png', alt: 'Historical internment camp site' },
-          ],
-        },
-      ],
+            { src: '/phoenix/dark-history/phoenix-dark-internment5.png', alt: 'Historical internment camp site' }
+          ]
+        }
+      ]
     },
     {
       id: 'phx-lost-loved',
@@ -2111,9 +2083,9 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4940, lng: -111.9261 },
           image: {
             src: '/phoenix/lost-loved/pink-pony.png',
-            alt: 'Pink Pony restaurant exterior with neon sign',
+            alt: 'Pink Pony restaurant exterior with neon sign'
           },
-          source: 'Phoenix Magazine, Salt River Stories, MLB.com',
+          source: 'Phoenix Magazine, Salt River Stories, MLB.com'
         },
         {
           id: 'phx-lost-2',
@@ -2130,14 +2102,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/barrio-1.png',
-              alt: 'Barrio Cafe interior with vibrant Mexican decor',
+              alt: 'Barrio Cafe interior with vibrant Mexican decor'
             },
             {
               src: '/phoenix/lost-loved/barrio-2.png',
-              alt: 'Barrio Cafe dishes and ambiance',
+              alt: 'Barrio Cafe dishes and ambiance'
             }
           ],
-          source: 'Phoenix New Times, ABC15, Phoenix Magazine',
+          source: 'Phoenix New Times, ABC15, Phoenix Magazine'
         },
         {
           id: 'phx-lost-3',
@@ -2154,19 +2126,19 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/bs-01.png',
-              alt: 'BS West exterior and entrance',
+              alt: 'BS West exterior and entrance'
             },
             {
               src: '/phoenix/lost-loved/bs-2.png',
-              alt: 'BS West interior and dance floor',
+              alt: 'BS West interior and dance floor'
             }
           ],
-          source: 'Phoenix New Times, 12 News, AZ Family',
+          source: 'Phoenix New Times, 12 News, AZ Family'
         },
         {
           id: 'phx-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'phx-lost-4',
@@ -2183,22 +2155,22 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/montis-1.png',
-              alt: 'Monti\'s La Casa Vieja historic building exterior',
+              alt: 'Monti\'s La Casa Vieja historic building exterior'
             },
             {
               src: '/phoenix/lost-loved/montis-2.png',
-              alt: 'Monti\'s dining room interior',
+              alt: 'Monti\'s dining room interior'
             },
             {
               src: '/phoenix/lost-loved/montis-3.png',
-              alt: 'Monti\'s Roman bread and menu items',
+              alt: 'Monti\'s Roman bread and menu items'
             },
             {
               src: '/phoenix/lost-loved/montis.png',
-              alt: 'Monti\'s La Casa Vieja full view',
+              alt: 'Monti\'s La Casa Vieja full view'
             }
           ],
-          source: 'Phoenix New Times, Salt River Stories, 12 News',
+          source: 'Phoenix New Times, Salt River Stories, 12 News'
         },
         {
           id: 'phx-lost-5',
@@ -2215,14 +2187,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/mercbar-1.png',
-              alt: 'MercBar sleek interior and bar',
+              alt: 'MercBar sleek interior and bar'
             },
             {
               src: '/phoenix/lost-loved/mercbar-2.png',
-              alt: 'MercBar lounge area',
+              alt: 'MercBar lounge area'
             }
           ],
-          source: 'Phoenix New Times, KTAR',
+          source: 'Phoenix New Times, KTAR'
         },
         {
           id: 'phx-lost-6',
@@ -2239,23 +2211,23 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/sing-high-1.png',
-              alt: 'Sing High Chop Suey House exterior',
+              alt: 'Sing High Chop Suey House exterior'
             },
             {
               src: '/phoenix/lost-loved/sing-high-2.png',
-              alt: 'Sing High interior with customer messages on walls',
+              alt: 'Sing High interior with customer messages on walls'
             },
             {
               src: '/phoenix/lost-loved/sing-high-3.png',
-              alt: 'Sing High Cantonese dishes',
+              alt: 'Sing High Cantonese dishes'
             }
           ],
-          source: 'KJZZ, ABC15, AZ Family',
+          source: 'KJZZ, ABC15, AZ Family'
         },
         {
           id: 'phx-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'phx-lost-7',
@@ -2271,9 +2243,9 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4599, lng: -112.0710 },
           image: {
             src: '/phoenix/lost-loved/carlys.png',
-            alt: 'Carly\'s Bistro on Roosevelt Row with local art',
+            alt: 'Carly\'s Bistro on Roosevelt Row with local art'
           },
-          source: 'KJZZ, Phoenix New Times, KTAR',
+          source: 'KJZZ, Phoenix New Times, KTAR'
         },
         {
           id: 'phx-lost-8',
@@ -2289,9 +2261,9 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.5225, lng: -111.9419 },
           image: {
             src: '/phoenix/lost-loved/mary-elaines.png',
-            alt: 'Mary Elaine\'s elegant dining room at The Phoenician',
+            alt: 'Mary Elaine\'s elegant dining room at The Phoenician'
           },
-          source: 'Phoenix New Times, Phoenix Magazine',
+          source: 'Phoenix New Times, Phoenix Magazine'
         },
         {
           id: 'phx-lost-9',
@@ -2308,19 +2280,19 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/big-apple-1.png',
-              alt: 'Bill Johnson\'s Big Apple exterior with neon sign',
+              alt: 'Bill Johnson\'s Big Apple exterior with neon sign'
             },
             {
               src: '/phoenix/lost-loved/big-apple-2.png',
-              alt: 'Bill Johnson\'s chuckwagon interior',
+              alt: 'Bill Johnson\'s chuckwagon interior'
             }
           ],
-          source: 'Phoenix New Times, KJZZ, Salt River Stories',
+          source: 'Phoenix New Times, KJZZ, Salt River Stories'
         },
         {
           id: 'phx-lost-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'phx-lost-10',
@@ -2337,18 +2309,18 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/don-charlies-1.png',
-              alt: 'Don & Charlie\'s exterior',
+              alt: 'Don & Charlie\'s exterior'
             },
             {
               src: '/phoenix/lost-loved/don-charlies-2.png',
-              alt: 'Don & Charlie\'s baseball memorabilia collection',
+              alt: 'Don & Charlie\'s baseball memorabilia collection'
             },
             {
               src: '/phoenix/lost-loved/don-charlies-3.png',
-              alt: 'Don & Charlie\'s chophouse interior',
+              alt: 'Don & Charlie\'s chophouse interior'
             }
           ],
-          source: 'Phoenix New Times, Cronkite News, ABC15',
+          source: 'Phoenix New Times, Cronkite News, ABC15'
         },
         {
           id: 'phx-lost-11',
@@ -2364,9 +2336,9 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.4230, lng: -111.9401 },
           image: {
             src: '/phoenix/lost-loved/devils.png',
-            alt: 'Devil\'s Advocate bar exterior on Mill Avenue',
+            alt: 'Devil\'s Advocate bar exterior on Mill Avenue'
           },
-          source: 'Phoenix New Times, AZ Family',
+          source: 'Phoenix New Times, AZ Family'
         },
         {
           id: 'phx-lost-12',
@@ -2383,14 +2355,14 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/cowboy-cioa-1.png',
-              alt: 'Cowboy Ciao exterior in Old Town Scottsdale',
+              alt: 'Cowboy Ciao exterior in Old Town Scottsdale'
             },
             {
               src: '/phoenix/lost-loved/cowboy-cioa-2.png',
-              alt: 'Cowboy Ciao Stetson Chopped Salad',
+              alt: 'Cowboy Ciao Stetson Chopped Salad'
             }
           ],
-          source: 'Phoenix New Times',
+          source: 'Phoenix New Times'
         },
         {
           id: 'phx-lost-13',
@@ -2406,11 +2378,11 @@ export const phoenix: CityData = {
           coordinates: { lat: 33.5094, lng: -112.0779 },
           image: {
             src: '/phoenix/lost-loved/beefeaters.png',
-            alt: 'Beef Eaters elegant British-style dining room',
+            alt: 'Beef Eaters elegant British-style dining room'
           },
-          source: 'Phoenix New Times',
-        },
-      ],
+          source: 'Phoenix New Times'
+        }
+      ]
     },
     {
       id: 'phx-scenes',
@@ -2427,8 +2399,8 @@ export const phoenix: CityData = {
             alt: 'Saguaro cacti silhouetted against vibrant orange and purple desert sunset',
             caption: 'The Sonoran Desert at golden hour — nowhere else on Earth',
             location: 'Sonoran Desert',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-2',
@@ -2440,8 +2412,8 @@ export const phoenix: CityData = {
             alt: 'Taliesin West blending into desert landscape with stone walls and angular roof',
             caption: 'Frank Lloyd Wright\'s Taliesin West — architecture as desert organism',
             location: 'Scottsdale',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-3',
@@ -2453,8 +2425,8 @@ export const phoenix: CityData = {
             alt: 'Downtown Phoenix skyline at twilight with mountains in background',
             caption: 'Downtown Phoenix between day and night',
             location: 'Downtown Phoenix',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-4',
@@ -2466,8 +2438,8 @@ export const phoenix: CityData = {
             alt: 'First light streaming through Hole in the Rock at Papago Park',
             caption: 'Dawn at Papago Park\'s Hole in the Rock — ancient astronomy in action',
             location: 'Papago Park',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-5',
@@ -2479,8 +2451,8 @@ export const phoenix: CityData = {
             alt: 'Crowded street scene at Roosevelt Row during First Friday art walk with murals',
             caption: 'Roosevelt Row on First Friday — where Phoenix gets weird',
             location: 'Roosevelt Row',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-6',
@@ -2492,8 +2464,8 @@ export const phoenix: CityData = {
             alt: 'Desert wildflowers blooming along trail at Desert Botanical Garden',
             caption: 'Desert Botanical Garden in spring bloom',
             location: 'Papago Park',
-            aspectRatio: '4:3',
-          },
+            aspectRatio: '4:3'
+          }
         },
         {
           id: 'phx-scene-7',
@@ -2505,8 +2477,8 @@ export const phoenix: CityData = {
             alt: 'Massive wall of dust from haboob storm approaching Phoenix skyline',
             caption: 'Haboob — when the desert reclaims the city',
             location: 'Phoenix',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-8',
@@ -2518,8 +2490,8 @@ export const phoenix: CityData = {
             alt: 'Sculpture in sunlit courtyard at Heard Museum with Spanish Colonial architecture',
             caption: 'Heard Museum — world-class repository of Native American art',
             location: 'Central Phoenix',
-            aspectRatio: '16:9',
-          },
+            aspectRatio: '16:9'
+          }
         },
         {
           id: 'phx-scene-9',
@@ -2531,10 +2503,10 @@ export const phoenix: CityData = {
             alt: 'Hikers ascending rocky trail on Camelback Mountain at sunrise',
             caption: 'Camelback Mountain at dawn — the 6am Phoenix pilgrimage',
             location: 'Camelback Mountain',
-            aspectRatio: '16:9',
-          },
-        },
-      ],
+            aspectRatio: '16:9'
+          }
+        }
+      ]
     },
     {
       id: 'phx-lost-and-loved',
@@ -2552,7 +2524,7 @@ export const phoenix: CityData = {
           whyMissed: 'The neon sign, the jukebox, and the sense that downtown Phoenix could still have authentic dive bars. The Bikini Lounge was proof that old Phoenix survived.',
           communityVoice: '"The Bikini Lounge was the anti-Scottsdale." — Phoenix New Times',
           lastAddress: '1502 Grand Ave, Phoenix',
-          source: 'Arizona Republic, Phoenix New Times',
+          source: 'Arizona Republic, Phoenix New Times'
         },
         {
           id: 'phx-lost-15',
@@ -2568,19 +2540,19 @@ export const phoenix: CityData = {
           images: [
             {
               src: '/phoenix/lost-loved/mason-jar.png',
-              alt: 'The Mason Jar music venue exterior',
+              alt: 'The Mason Jar music venue exterior'
             },
             {
               src: '/phoenix/lost-loved/mason-jar-2.png',
-              alt: 'The Mason Jar interior stage and crowd',
+              alt: 'The Mason Jar interior stage and crowd'
             }
           ],
-          source: 'Arizona Republic, Phoenix New Times',
+          source: 'Arizona Republic, Phoenix New Times'
         },
         {
           id: 'phx-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'phx-lost-16',
@@ -2593,7 +2565,7 @@ export const phoenix: CityData = {
           whyMissed: 'The adobe walls, the sense of continuity, and the beef that tasted like Arizona before air conditioning. Monti\'s was proof that Tempe had history.',
           communityVoice: '"Monti\'s was where Tempe went to remember it was older than ASU." — Arizona Republic',
           lastAddress: '3 W 1st St, Tempe',
-          source: 'Arizona Republic, Phoenix New Times',
+          source: 'Arizona Republic, Phoenix New Times'
         },
         {
           id: 'phx-lost-17',
@@ -2608,9 +2580,9 @@ export const phoenix: CityData = {
           lastAddress: '414 S Mill Ave, Tempe',
           image: {
             src: '/phoenix/lost-loved/bookstore.png',
-            alt: 'Changing Hands Bookstore original Tempe location',
+            alt: 'Changing Hands Bookstore original Tempe location'
           },
-          source: 'Arizona Republic, Publisher\'s Weekly',
+          source: 'Arizona Republic, Publisher\'s Weekly'
         },
         {
           id: 'phx-lost-18',
@@ -2626,13 +2598,13 @@ export const phoenix: CityData = {
           source: 'Arizona Republic, Phoenix New Times',
           image: {
             src: '/phoenix/lost-loved/phoenix-lost-willow.png',
-            alt: 'Willow House coffee shop and performance space',
-          },
+            alt: 'Willow House coffee shop and performance space'
+          }
         },
         {
           id: 'phx-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'phx-lost-19',
@@ -2648,10 +2620,10 @@ export const phoenix: CityData = {
           source: 'Arizona Republic, Phoenix Magazine',
           image: {
             src: '/phoenix/lost-loved/phoenix-lost-macayo.png',
-            alt: 'Macayo\'s original Central Avenue location',
-          },
-        },
-      ],
-    },
-  ],
+            alt: 'Macayo\'s original Central Avenue location'
+          }
+        }
+      ]
+    }
+  ]
 }

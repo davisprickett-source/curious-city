@@ -6,13 +6,13 @@ export const seattle: CityData = {
   tagline: 'Where the underground is literal and the coffee never stops',
   heroImage: {
     src: '/banners/hero-city-images/seattle-skyline.png',
-    alt: 'Seattle skyline at dusk',
+    alt: 'Seattle skyline at dusk'
   },
   content: [
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Seattle — a city built on the ashes of its own past, where the original downtown lies beneath the streets and the rain masks stranger secrets.',
+      content: 'Welcome to Seattle — a city built on the ashes of its own past, where the original downtown lies beneath the streets and the rain masks stranger secrets.'
     },
     {
       id: 'featured-card',
@@ -21,12 +21,12 @@ export const seattle: CityData = {
       description: 'After the Great Fire of 1889, Seattle didn\'t rebuild on top of its ruins — it built an entirely new city above them.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/seattle/essay/underground-city',
+      href: '/seattle/essay/underground-city'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'sea-curiosities',
@@ -43,39 +43,31 @@ export const seattle: CityData = {
           images: [
             {
               src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-1.png',
-              alt: 'Lake Union houseboats',
+              alt: 'Lake Union houseboats'
             },
             {
               src: '/seattle/curiosities/seattle-cur-lake-union-houseboats-2.png',
-              alt: 'Lake Union houseboats',
-            },
-            {
-              src: '/seattle/curiosities/houseboats-1.png',
-              alt: 'Historic Lake Union houseboats',
-            },
-            {
-              src: '/seattle/curiosities/houseboats-tui-tui.png',
-              alt: 'Sovereign Nation of Tui Tui houseboat',
-            },
-          ],
+              alt: 'Lake Union houseboats'
+            }
+            ],
           body: 'In the early 1900s, Lake Union houseboats were floating slums for bootleggers, counterfeiters, prostitutes, and political radicals. Notorious criminal T.H. Dixon ran a coin counterfeiting operation from his houseboat. Under the carpets of older floating homes, you can still see Prohibition-era hiding spots where moonshine was stashed. The city wanted them gone. In the 1930s, there were 2,000 houseboats; by the 1970s, most were demolished or relocated. Then, in a legal battle over houseboat rights, one resident declared his home the "Sovereign Nation of Tui Tui of the Joyous Lake." Rulers Robby Rudine and Janet Yoder chose the name via I Ching divination the night before trial. The federal government does not recognize it. The nation persists anyway. Today, about 500 houseboats remain on Lake Union, now selling for millions. Seattle\'s floating criminal underworld became a sovereign nation, then became luxury real estate. Only the name Tui Tui remains defiant.',
           sources: [
             {
               title: 'The mysterious story of the Sovereign Nation of Tui Tui',
               publisher: 'KUOW',
-              url: 'https://www.kuow.org/stories/the-mysterious-seattle-houseboat-declared-the-sovereign-nation-of-tui-tui',
+              url: 'https://www.kuow.org/stories/the-mysterious-seattle-houseboat-declared-the-sovereign-nation-of-tui-tui'
             },
             {
               title: 'Seattle\'s Historic Houseboats',
               publisher: 'HistoryLink',
-              url: 'https://www.historylink.org/File/9507',
-            },
+              url: 'https://www.historylink.org/File/9507'
+            }
           ],
           location: {
             name: 'Lake Union',
       url: 'https://www.google.com/maps/search/?api=1&query=Lake%20Union%20Seattle',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-1',
@@ -86,18 +78,18 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Bill Speidel\'s Underground Tour',
-              url: 'https://www.undergroundtour.com/',
+              url: 'https://www.undergroundtour.com/'
             },
             {
               title: 'HistoryLink: Great Seattle Fire of 1889',
-              url: 'https://www.historylink.org/File/715',
+              url: 'https://www.historylink.org/File/715'
             }
           ],
           location: { name: 'Pioneer Square Underground', url: 'https://www.google.com/maps/place/Pioneer+Square,+Seattle,+WA', stillExists: true },
           images: [
             { src: '/seattle/curiosities/underground-1.png', alt: 'Seattle Underground Tour passage' },
-            { src: '/seattle/curiosities/underground-02.png', alt: 'Buried storefronts beneath Pioneer Square' },
-          ],
+            { src: '/seattle/curiosities/underground-02.png', alt: 'Buried storefronts beneath Pioneer Square' }
+          ]
         },
         {
           id: 'curiosity-2',
@@ -109,23 +101,23 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'FBI: D.B. Cooper Case',
-              url: 'https://www.fbi.gov/history/famous-cases/db-cooper-hijacking',
+              url: 'https://www.fbi.gov/history/famous-cases/db-cooper-hijacking'
             },
             {
               title: 'Seattle PI: The D.B. Cooper Mystery',
-              url: 'https://www.seattlepi.com/seattlenews/article/50-years-ago-db-cooper-mystery-began-in-seattle-16646144.php',
+              url: 'https://www.seattlepi.com/seattlenews/article/50-years-ago-db-cooper-mystery-began-in-seattle-16646144.php'
             }
           ],
           location: { name: 'Somewhere over Washington State',
       url: 'https://www.google.com/maps/search/?api=1&query=Somewhere%20over%20Washington%20State%20Seattle', stillExists: true },
           images: [
-            { src: '/seattle/curiosities/cooper.png', alt: 'D.B. Cooper FBI sketch and case materials' },
-          ],
+            { src: '/seattle/curiosities/cooper.png', alt: 'D.B. Cooper FBI sketch and case materials' }
+          ]
         },
         {
           id: 'curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'curiosity-3',
@@ -138,13 +130,13 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Atlas Obscura: Fremont Troll',
-              url: 'https://www.atlasobscura.com/places/the-fremont-troll',
+              url: 'https://www.atlasobscura.com/places/the-fremont-troll'
             }
           ],
           location: { name: 'Fremont Troll', url: 'https://www.google.com/maps/place/Fremont+Troll/@47.6508,-122.3468,17z', stillExists: true },
           images: [
-            { src: '/seattle/curiosities/troll.png', alt: 'Fremont Troll sculpture under Aurora Bridge' },
-          ],
+            { src: '/seattle/curiosities/troll.png', alt: 'Fremont Troll sculpture under Aurora Bridge' }
+          ]
         },
         {
           id: 'curiosity-4',
@@ -155,14 +147,14 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Pike Place Market: The Gum Wall',
-              url: 'https://www.pikeplacemarket.org/vendor/the-gum-wall/',
+              url: 'https://www.pikeplacemarket.org/vendor/the-gum-wall/'
             }
           ],
           location: { name: 'Pike Place Gum Wall', url: 'https://www.google.com/maps/place/Gum+Wall/@47.6084,-122.3403,17z', stillExists: true },
           images: [
             { src: '/seattle/curiosities/gumwall-1.png', alt: 'Pike Place Gum Wall covered in chewed gum' },
-            { src: '/seattle/curiosities/gumwall-2.png', alt: 'Close-up of colorful gum wall' },
-          ],
+            { src: '/seattle/curiosities/gumwall-2.png', alt: 'Close-up of colorful gum wall' }
+          ]
         },
         {
           id: 'curiosity-6',
@@ -173,23 +165,23 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Space Needle Official History',
-              url: 'https://www.spaceneedle.com/history',
+              url: 'https://www.spaceneedle.com/history'
             },
             {
               title: 'HistoryLink: Space Needle',
-              url: 'https://www.historylink.org/File/2687',
+              url: 'https://www.historylink.org/File/2687'
             }
           ],
           location: { name: 'Space Needle', url: 'https://www.google.com/maps/place/Space+Needle/@47.6205,-122.3493,17z', stillExists: true },
           images: [
             { src: '/seattle/curiosities/needle-1.png', alt: 'Space Needle against Seattle skyline' },
-            { src: '/seattle/curiosities/needle-2.png', alt: 'Space Needle observation deck' },
-          ],
+            { src: '/seattle/curiosities/needle-2.png', alt: 'Space Needle observation deck' }
+          ]
         },
         {
           id: 'curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'curiosity-7',
@@ -200,15 +192,15 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Smithsonian: How Seattle Became the Center of the Coffee Universe',
-              url: 'https://www.smithsonianmag.com/',
+              url: 'https://www.smithsonianmag.com/'
             }
           ],
           location: { name: 'Capitol Hill',
       url: 'https://www.google.com/maps/search/?api=1&query=Capitol%20Hill%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/espresso-1.png', alt: 'Seattle coffee culture' },
-            { src: '/seattle/curiosities/espresso-2.png', alt: 'Espresso preparation in Seattle cafe' },
-          ],
+            { src: '/seattle/curiosities/espresso-2.png', alt: 'Espresso preparation in Seattle cafe' }
+          ]
         },
         {
           id: 'curiosity-seafair-pirates',
@@ -218,39 +210,31 @@ export const seattle: CityData = {
           images: [
             {
               src: '/seattle/curiosities/seattle-curious-pirates-1.png',
-              alt: 'Seattle pirates',
+              alt: 'Seattle pirates'
             },
             {
               src: '/seattle/curiosities/seattle-curious-pirates-2.png',
-              alt: 'Seattle pirates',
-            },
-            {
-              src: '/seattle/curiosities/seafair-pirates-1.png',
-              alt: 'Seafair Pirates landing at Alki Beach',
-            },
-            {
-              src: '/seattle/curiosities/seafair-pirates-2.png',
-              alt: 'Seafair Pirates invading downtown Seattle',
-            },
-          ],
+              alt: 'Seattle pirates'
+            }
+            ],
           body: 'Every summer since 1950, the Seafair Pirates—a crew of costumed marauders—land at Alki Beach and launch a full-scale "invasion" of Seattle. Founded in 1949 by members of the Washington State Press Club, the Pirates stage a mock battle with King Neptune for control of the city. In the early years, they literally burned boats in Elliott Bay belonging to Neptune. The mayor officially "surrenders" the city. For weeks, the Pirates terrorize Seattle: crashing events, kidnapping local celebrities, storming businesses demanding tribute. They\'re not villains—they\'re a sanctioned gang the city embraces as summer tradition. Despite their bad-guy image, they visit hospitals and nursing homes year-round. The invasion kicks off Seafair, Seattle\'s month-long festival of parades, hydroplane races, and general civic chaos. It\'s organized piracy, bureaucratic mayhem, and somehow quintessentially Seattle.',
           sources: [
             {
               title: '69 years of Seafair: How Seattle\'s summer festival got its start',
               publisher: 'Seattle PI',
-              url: 'https://www.seattlepi.com/local/seattle-history/article/69-years-Seafair-Seattle-history-summer-festival-14119668.php',
+              url: 'https://www.seattlepi.com/local/seattle-history/article/69-years-Seafair-Seattle-history-summer-festival-14119668.php'
             },
             {
               title: 'Seafair Pirates',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Seafair_Pirates',
-            },
+              url: 'https://en.wikipedia.org/wiki/Seafair_Pirates'
+            }
           ],
           location: {
             name: 'Alki Beach (invasion site)',
       url: 'https://www.google.com/maps/search/?api=1&query=Alki%20Beach%20(invasion%20site)%20Seattle',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-9',
@@ -261,19 +245,19 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Rolling Stone: The History of Grunge',
-              url: 'https://www.rollingstone.com/',
+              url: 'https://www.rollingstone.com/'
             },
             {
               title: 'KEXP: Seattle Music History',
-              url: 'https://www.kexp.org/',
+              url: 'https://www.kexp.org/'
             }
           ],
           location: { name: 'Capitol Hill and Downtown',
       url: 'https://www.google.com/maps/search/?api=1&query=Capitol%20Hill%20and%20Downtown%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/grunge-1.png', alt: 'Seattle grunge music scene' },
-            { src: '/seattle/curiosities/grunge-2.png', alt: 'Grunge era Seattle musicians' },
-          ],
+            { src: '/seattle/curiosities/grunge-2.png', alt: 'Grunge era Seattle musicians' }
+          ]
         },
         // MOVED: General Strike moved to dark history section
         {
@@ -285,19 +269,19 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'NOAA: Southern Resident Killer Whales',
-              url: 'https://www.fisheries.noaa.gov/species/killer-whale',
+              url: 'https://www.fisheries.noaa.gov/species/killer-whale'
             },
             {
               title: 'Orca Network',
-              url: 'https://www.orcanetwork.org/',
+              url: 'https://www.orcanetwork.org/'
             }
           ],
           location: { name: 'Puget Sound and San Juan Islands',
       url: 'https://www.google.com/maps/search/?api=1&query=Puget%20Sound%20and%20San%20Juan%20Islands%20Seattle', stillExists: true },
           images: [
             { src: '/seattle/curiosities/orca-pods-1.png', alt: 'Orca whale in Puget Sound' },
-            { src: '/seattle/curiosities/orca-pods-2.png', alt: 'Southern Resident killer whales' },
-          ],
+            { src: '/seattle/curiosities/orca-pods-2.png', alt: 'Southern Resident killer whales' }
+          ]
         },
         {
           id: 'curiosity-12',
@@ -308,14 +292,14 @@ export const seattle: CityData = {
           sources: [
             {
               title: 'Atlas Obscura: Fremont Lenin Statue',
-              url: 'https://www.atlasobscura.com/places/statue-of-lenin',
+              url: 'https://www.atlasobscura.com/places/statue-of-lenin'
             }
           ],
           location: { name: 'Fremont', url: 'https://www.google.com/maps/place/Statue+of+Lenin/@47.6514,-122.3512,17z', stillExists: true },
           images: [
             { src: '/seattle/curiosities/lenin01.png', alt: 'Lenin statue in Fremont' },
-            { src: '/seattle/curiosities/lenin02.png', alt: 'Soviet Lenin statue Seattle' },
-          ],
+            { src: '/seattle/curiosities/lenin02.png', alt: 'Soviet Lenin statue Seattle' }
+          ]
         },
         // ARCHIVED: Bruce Lee, Jimi Hendrix, Nintendo/Mario - standard Seattle trivia
         // {
@@ -340,13 +324,13 @@ export const seattle: CityData = {
             {
               title: 'Capitol Hill Mystery Coke Machine',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/mystery-coke-machine',
+              url: 'https://www.atlasobscura.com/places/mystery-coke-machine'
             }
           ],
           location: { name: 'Broadway & John Street, Capitol Hill',
-      url: 'https://www.google.com/maps/search/?api=1&query=Broadway%20%26%20John%20Street%2C%20Capitol%20Hill%20Seattle', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Broadway%20%26%20John%20Street%2C%20Capitol%20Hill%20Seattle', stillExists: true }
         }
-      ],
+      ]
     },
     {
       id: 'sea-iconic-spots',
@@ -359,44 +343,41 @@ export const seattle: CityData = {
           type: 'iconic-spot',
           name: 'Pike Place Market',
           category: 'Market',
-          description: 'Opened August 17, 1907 when eight farmers sold produce from wagon backs to 10,000 people furious about rising food prices. Now it\'s nine acres of chaos—fish flying through air at Pike Place Fish, Rachel the 550-pound bronze pig collecting $6,000-$9,000 annually for social services, the original Starbucks (which purists will tell you is a tourist trap), and that disgusting Gum Wall. Fish throwing started for practical reasons decades ago: expediting sales by tossing catch from front counter to back. Tourists made it performance art.',
-          images: [],
+          description: 'Opened August 17, 1907 when eight farmers sold produce from wagon backs to 10,000 people furious about rising food prices. Now it\'s nine acres of chaos—fish flying through air at Pike Place Fish, Rachel the 550-pound bronze pig collecting $6,000-$9,000 annually for social services, the original Starbucks (which purists will tell you is a tourist trap), and that disgusting Gum Wall. Fish throwing started for practical reasons decades ago: expediting sales by tossing catch from front counter to back. Tourists made it performance art.'
           address: '85 Pike St, Seattle, WA 98101',
           coordinates: { lat: 47.6097, lng: -122.3422 },
           hours: 'Daily 9am-6pm',
           price: 'Free',
           website: 'https://www.pikeplacemarket.org',
-          tip: 'Arrive before 10am to beat crowds. The lower levels hide the best small shops.',
+          tip: 'Arrive before 10am to beat crowds. The lower levels hide the best small shops.'
         },
         {
           id: 'iconic-2',
           type: 'iconic-spot',
           name: 'Space Needle',
           category: 'Landmark',
-          description: 'The 605-foot icon built for the 1962 World\'s Fair. The rotating glass floor (added in 2018) isn\'t for the faint-hearted, but the views of Mount Rainier, the Olympics, and the city are unmatched.',
-          images: [],
+          description: 'The 605-foot icon built for the 1962 World\'s Fair. The rotating glass floor (added in 2018) isn\'t for the faint-hearted, but the views of Mount Rainier, the Olympics, and the city are unmatched.'
           address: '400 Broad St, Seattle, WA 98109',
           coordinates: { lat: 47.6205, lng: -122.3493 },
           hours: 'Daily 9am-11pm',
           price: '$35-40 adults',
           website: 'https://www.spaceneedle.com',
-          tip: 'Sunset tickets are worth the premium — watch the city lights come on.',
+          tip: 'Sunset tickets are worth the premium — watch the city lights come on.'
         },
         {
           id: 'iconic-3',
           type: 'iconic-spot',
           name: 'Museum of Pop Culture (MoPOP)',
           category: 'Museum',
-          description: 'Microsoft cofounder Paul Allen commissioned Frank Gehry to design a shrine to Jimi Hendrix and rock history. Opened in 2000 as Experience Music Project. Gehry used CATIA aerospace software—first architect ever—to digitize his sculptural forms into buildable geometry. He collected Stratocaster bodies, drew on their shapes, clad the result in purple mirror-finish stainless steel, brushed silver, gold, red and blue aluminum. It looks like a smashed guitar or melted spaceship depending on who you ask. The monorail runs through it. Inside: definitive Hendrix and Nirvana collections, science fiction exhibits, horror film artifacts. Renamed MoPOP in 2016. The building is as much an exhibit as anything inside.',
-          images: [],
+          description: 'Microsoft cofounder Paul Allen commissioned Frank Gehry to design a shrine to Jimi Hendrix and rock history. Opened in 2000 as Experience Music Project. Gehry used CATIA aerospace software—first architect ever—to digitize his sculptural forms into buildable geometry. He collected Stratocaster bodies, drew on their shapes, clad the result in purple mirror-finish stainless steel, brushed silver, gold, red and blue aluminum. It looks like a smashed guitar or melted spaceship depending on who you ask. The monorail runs through it. Inside: definitive Hendrix and Nirvana collections, science fiction exhibits, horror film artifacts. Renamed MoPOP in 2016. The building is as much an exhibit as anything inside.'
           address: '325 5th Ave N, Seattle, WA 98109',
           coordinates: { lat: 47.6215, lng: -122.3481 },
           hours: 'Daily 10am-5pm',
           price: '$30 adults',
           website: 'https://www.mopop.org',
-          tip: 'The Sound Lab lets you actually play instruments — drums, guitars, mixing boards.',
-        },
-      ],
+          tip: 'The Sound Lab lets you actually play instruments — drums, guitars, mixing boards.'
+        }
+      ]
     },
     {
       id: 'sea-hidden-gems',
@@ -417,14 +398,14 @@ export const seattle: CityData = {
               description: 'Opened late August 2010 as part of Storefronts Seattle, a program pairing empty storefronts with artists to revitalize neighborhoods. Selected as one of ten ventures to launch in Chinatown-International District. Over 50 meticulously maintained machines arranged chronologically—oldest is Texan from 1960. Manufacturers include Jersey Jack, Stern, Williams, Bally, Midway, Data East, Game Plan. One admission, unlimited free play. The collection rotates. Two blocks from Chinatown-International District light rail. Most people walk right past it.',
               images: [
                 { src: '/seattle/hidden-gems/pinball-1.png', alt: 'Vintage pinball machines at Seattle Pinball Museum' },
-                { src: '/seattle/hidden-gems/pinball-2.png', alt: 'Classic arcade pinball games' },
+                { src: '/seattle/hidden-gems/pinball-2.png', alt: 'Classic arcade pinball games' }
               ],
               address: '508 Maynard Ave S, Seattle, WA 98104',
               coordinates: { lat: 47.5992, lng: -122.3254 },
               hours: 'Wed-Sun 12pm-6pm',
               price: '$15 unlimited play',
               website: 'https://www.seattlepinballmuseum.com',
-              tip: 'Go on a weekday afternoon for shorter waits on popular machines.',
+              tip: 'Go on a weekday afternoon for shorter waits on popular machines.'
             },
             {
               id: 'gem-2',
@@ -437,13 +418,13 @@ export const seattle: CityData = {
               images: [
                 { src: '/seattle/hidden-gems/stairs-1.png', alt: 'Hidden stairway in Seattle neighborhood' },
                 { src: '/seattle/hidden-gems/stairs-2.png', alt: 'Seattle public stairway through forest' },
-                { src: '/seattle/hidden-gems/stairs-3.png', alt: 'Secret stairway with garden terraces' },
+                { src: '/seattle/hidden-gems/stairs-3.png', alt: 'Secret stairway with garden terraces' }
               ],
               address: 'Various locations citywide',
               coordinates: { lat: 47.6158, lng: -122.3270 },
               hours: 'Always accessible',
               price: 'Free',
-              tip: 'Jake Jaramillo\'s book "Seattle Stairway Walks" maps the best routes.',
+              tip: 'Jake Jaramillo\'s book "Seattle Stairway Walks" maps the best routes.'
             },
             {
               id: 'gem-3',
@@ -454,13 +435,13 @@ export const seattle: CityData = {
               images: [
                 { src: '/seattle/hidden-gems/volunteer-1.png', alt: 'Ruins at Volunteer Park' },
                 { src: '/seattle/hidden-gems/volunteer-2.png', alt: 'Historic conservatory foundation remains' },
-                { src: '/seattle/hidden-gems/volunteer-3.png', alt: 'Vine-covered brick walls at Volunteer Park' },
+                { src: '/seattle/hidden-gems/volunteer-3.png', alt: 'Vine-covered brick walls at Volunteer Park' }
               ],
               address: '1400 E Prospect St, Seattle, WA 98112',
               coordinates: { lat: 47.6303, lng: -122.3145 },
               hours: 'Park hours',
               price: 'Free',
-              tip: 'Walk around the back of the museum and look for the stairs going down.',
+              tip: 'Walk around the back of the museum and look for the stairs going down.'
             },
             {
               id: 'gem-4',
@@ -472,21 +453,21 @@ export const seattle: CityData = {
               description: 'Built 1906-1907 by Seattle Electric Company on 18 acres along the Duwamish River. Three Curtis turbines manufactured by General Electric between 1906 and 1917—the machines that "marked the beginning of the end of the reciprocating steam engine" for large-scale electricity generation. Designated National Historic Mechanical Engineering Landmark in 1980, National Historic Landmark in 1984. Still owned by Seattle City Light. Last electrical generation: October 15, 1952. Open for tours second Sunday of each month. Most Seattleites have never heard of it. The turbines are intact and occasionally demonstrated.',
               images: [
                 { src: '/seattle/hidden-gems/steam-1.png', alt: 'Georgetown Steam Plant interior' },
-                { src: '/seattle/hidden-gems/steam-2.png', alt: 'Historic turbines and generators' },
+                { src: '/seattle/hidden-gems/steam-2.png', alt: 'Historic turbines and generators' }
               ],
               address: '6505 13th Ave S, Seattle, WA 98108',
               coordinates: { lat: 47.5394, lng: -122.3156 },
               hours: 'Second Sunday of month, 12pm-4pm',
               price: 'Free',
               website: 'https://www.georgetownsteamplant.org',
-              tip: 'Check their website for special nighttime events — they light the plant dramatically.',
-            },
-          ],
+              tip: 'Check their website for special nighttime events — they light the plant dramatically.'
+            }
+          ]
         },
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'hidden-gems-nature',
@@ -503,14 +484,14 @@ export const seattle: CityData = {
               description: 'In 1896, the U.S. Army established Fort Lawton on 703 acres of Magnolia Bluff. By the 1940s it was the Pacific theater\'s second-largest embarkation port. In 1970, 100+ Native Americans led by Bernie Whitebear occupied the fort, citing 1865 treaties promising surplus military land to original owners. Negotiations resulted in a 99-year lease for 20 acres (now Daybreak Star Cultural Center) and the rest became public park. On September 1, 1972, Tricia Nixon Cox transferred 391 acres to Seattle. Now it\'s Discovery Park—560 acres, Seattle\'s largest. A 2.8-mile trail descends through forest to wild beach. West Point Lighthouse at the end, built 1881, rises 23 feet above the sand. Views of Rainier, Olympics, Puget Sound. Most visitors never make the trek down.',
               images: [
                 { src: '/seattle/hidden-gems/hiddenbeach-1.png', alt: 'Hidden beach at Discovery Park' },
-                { src: '/seattle/hidden-gems/hiddenbeach-02.png', alt: 'Discovery Park lighthouse and beach' },
+                { src: '/seattle/hidden-gems/hiddenbeach-02.png', alt: 'Discovery Park lighthouse and beach' }
               ],
               address: '3801 Discovery Park Blvd, Seattle, WA 98199',
               coordinates: { lat: 47.6617, lng: -122.4186 },
               hours: 'Daily 4am-11:30pm',
               price: 'Free',
               website: 'https://www.seattle.gov/parks/allparks/discovery-park',
-              tip: 'The Loop Trail adds spectacular bluff views if you have extra time.',
+              tip: 'The Loop Trail adds spectacular bluff views if you have extra time.'
             },
             {
               id: 'gem-6',
@@ -522,14 +503,14 @@ export const seattle: CityData = {
               description: 'Fujitaro Kubota emigrated from Shikoku, Japan in 1907. Started a gardening company in 1923. In 1927, bought 5 acres of Rainier Beach swampland through a friend—Japanese immigrants couldn\'t purchase land directly. He spent decades building a display garden merging Japanese design with Pacific Northwest materials. Then came WWII. Kubota and his family were interned at Camp Minidoka in Idaho. He built a rock garden there too. Returned in 1945. Restored his garden. Died in 1973. The city declared it a landmark in 1981, purchased it in 1987. Now it\'s 20 acres, free to the public, and most Seattle residents still don\'t know it exists. Spring azaleas. Fall maples. Year-round proof that beauty survives displacement.',
               images: [
                 { src: '/seattle/hidden-gems/kubota-1.png', alt: 'Kubota Garden Japanese landscape' },
-                { src: '/seattle/hidden-gems/kubota-2.png', alt: 'Moon Bridge at Kubota Garden' },
+                { src: '/seattle/hidden-gems/kubota-2.png', alt: 'Moon Bridge at Kubota Garden' }
               ],
               address: '9817 55th Ave S, Seattle, WA 98118',
               coordinates: { lat: 47.5098, lng: -122.2674 },
               hours: 'Daily 6am-10pm',
               price: 'Free',
               website: 'https://www.kubotagarden.org',
-              tip: 'The Moon Bridge and Mountainside are the most photographed spots.',
+              tip: 'The Moon Bridge and Mountainside are the most photographed spots.'
             },
             {
               id: 'gem-7',
@@ -539,20 +520,20 @@ export const seattle: CityData = {
               description: 'Every fall, chum and coho salmon return to spawn in Piper\'s Creek, which runs through this North Seattle park. You can watch them from bridges built specifically for viewing. Kids love the salmon-shaped playground and the beach access at the bottom of the park.',
               images: [
                 { src: '/seattle/hidden-gems/salmon-1.png', alt: 'Salmon run at Carkeek Park' },
-                { src: '/seattle/hidden-gems/salmon-2.png', alt: 'Salmon spawning in Piper\'s Creek' },
+                { src: '/seattle/hidden-gems/salmon-2.png', alt: 'Salmon spawning in Piper\'s Creek' }
               ],
               address: '950 NW Carkeek Park Rd, Seattle, WA 98177',
               coordinates: { lat: 47.7112, lng: -122.3755 },
               hours: 'Daily 6am-10pm',
               price: 'Free',
-              tip: 'Salmon run late October through December. Go after rain for better viewing.',
-            },
-          ],
+              tip: 'Salmon run late October through December. Go after rain for better viewing.'
+            }
+          ]
         },
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'hidden-gems-quirky',
@@ -570,14 +551,14 @@ export const seattle: CityData = {
               images: [
                 { src: '/seattle/hidden-gems/yeoldcuriosity-1.png', alt: 'Ye Olde Curiosity Shop storefront' },
                 { src: '/seattle/hidden-gems/yeoldcuriosity-2.png', alt: 'Oddities and curiosities display' },
-                { src: '/seattle/hidden-gems/yeoldcuriosity-3.png', alt: 'Cabinet of curiosities at Ye Olde' },
+                { src: '/seattle/hidden-gems/yeoldcuriosity-3.png', alt: 'Cabinet of curiosities at Ye Olde' }
               ],
               address: '1001 Alaskan Way, Seattle, WA 98101',
               coordinates: { lat: 47.6058, lng: -122.3408 },
               hours: 'Daily 10am-6pm',
               price: 'Free to browse',
               website: 'https://www.yeoldecuriosityshop.com',
-              tip: 'Ask the staff about Sylvester\'s backstory. They love telling it.',
+              tip: 'Ask the staff about Sylvester\'s backstory. They love telling it.'
             },
             {
               id: 'gem-9',
@@ -588,13 +569,13 @@ export const seattle: CityData = {
               category: 'Roadside Americana',
               description: 'In 1953, businessman Buford Seals hired commercial artist Lewis Nasmyth to design a gas station for his planned Frontier Village shopping center on Highway 99. Nasmyth sketched it in 15 minutes: office under a 44-foot cowboy hat, bathrooms inside 22-foot boots. Premium Tex opened in 1954 (named for Texaco gas and free "premiums" with fill-ups). It became Washington\'s busiest gas station. Seals ran out of money. Frontier Village never happened. The station closed in 1988. Georgetown Community Council bought the structures for $1 in 2002, moved them to Oxbow Park in 2003. Boots restored 2005. Hat finished 2010. You can climb inside a boot. Nasmyth got a U.S. patent for the design on March 20, 1956.',
               images: [
-                { src: '/seattle/hidden-gems/hat-boots-1.png', alt: 'Giant cowboy hat and boots in Georgetown' },
+                { src: '/seattle/hidden-gems/hat-boots-1.png', alt: 'Giant cowboy hat and boots in Georgetown' }
               ],
               address: '6430 Corson Ave S, Seattle, WA 98108',
               coordinates: { lat: 47.5425, lng: -122.3248 },
               hours: 'Park hours',
               price: 'Free',
-              tip: 'You can climb inside one of the boots.',
+              tip: 'You can climb inside one of the boots.'
             },
             {
               id: 'gem-10',
@@ -607,18 +588,18 @@ export const seattle: CityData = {
               images: [
                 { src: '/seattle/hidden-gems/archie-1.png', alt: 'Archie McPhee store exterior' },
                 { src: '/seattle/hidden-gems/archie-2.png', alt: 'Weird novelties and rubber chickens' },
-                { src: '/seattle/hidden-gems/archie-3.png', alt: 'Inside Archie McPhee novelty store' },
+                { src: '/seattle/hidden-gems/archie-3.png', alt: 'Inside Archie McPhee novelty store' }
               ],
               address: '1300 N 45th St, Seattle, WA 98103',
               coordinates: { lat: 47.6614, lng: -122.3458 },
               hours: 'Daily 10am-7pm',
               price: 'Free to browse',
               website: 'https://mcphee.com',
-              tip: 'The finger puppets section alone is worth the trip.',
-            },
-          ],
-        },
-      ],
+              tip: 'The finger puppets section alone is worth the trip.'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'sea-best-bars',
@@ -642,8 +623,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/bars/canon-1.png', alt: 'Canon whiskey bar interior' },
             { src: '/seattle/bars/canon-2.png', alt: 'Canon cocktail and whiskey collection' },
-            { src: '/seattle/bars/canon-3.png', alt: 'Canon Capitol Hill' },
-          ],
+            { src: '/seattle/bars/canon-3.png', alt: 'Canon Capitol Hill' }
+          ]
         },
         {
           name: 'The Walrus and the Carpenter',
@@ -660,8 +641,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/bars/walrus-1.png', alt: 'The Walrus and the Carpenter oyster bar' },
             { src: '/seattle/bars/walrus-2.png', alt: 'Fresh oysters at The Walrus' },
-            { src: '/seattle/bars/walrus-3.png', alt: 'The Walrus Ballard interior' },
-          ],
+            { src: '/seattle/bars/walrus-3.png', alt: 'The Walrus Ballard interior' }
+          ]
         },
         {
           name: 'Navy Strength',
@@ -678,8 +659,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/bars/navy-1.png', alt: 'Navy Strength tiki bar interior' },
             { src: '/seattle/bars/navy-2.png', alt: 'Tropical cocktails at Navy Strength' },
-            { src: '/seattle/bars/navy-3.png', alt: 'Navy Strength Belltown' },
-          ],
+            { src: '/seattle/bars/navy-3.png', alt: 'Navy Strength Belltown' }
+          ]
         },
         {
           name: 'Bathtub Gin & Co.',
@@ -696,8 +677,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/bars/bathtub-1.png', alt: 'Bathtub Gin speakeasy interior' },
             { src: '/seattle/bars/bathtub-2.png', alt: 'Craft gin cocktails at Bathtub Gin' },
-            { src: '/seattle/bars/bathtub-3.png', alt: 'Bathtub Gin & Co. atmosphere' },
-          ],
+            { src: '/seattle/bars/bathtub-3.png', alt: 'Bathtub Gin & Co. atmosphere' }
+          ]
         },
         {
           name: 'The Nest',
@@ -715,8 +696,8 @@ export const seattle: CityData = {
             { src: '/seattle/bars/nest-1.png', alt: 'The Nest rooftop bar views' },
             { src: '/seattle/bars/nest-2.png', alt: 'Sunset cocktails at The Nest' },
             { src: '/seattle/bars/nest-3.png', alt: 'The Nest Thompson Hotel rooftop' },
-            { src: '/seattle/bars/nest-4.png', alt: 'Elliott Bay views from The Nest' },
-          ],
+            { src: '/seattle/bars/nest-4.png', alt: 'Elliott Bay views from The Nest' }
+          ]
         },
         {
           name: 'The Hideout',
@@ -733,15 +714,15 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/bars/hidoeut-1.png', alt: 'The Hideout art bar interior' },
             { src: '/seattle/bars/hidoeut-2.png', alt: 'Craft cocktails at The Hideout' },
-            { src: '/seattle/bars/hidoeut-3.png', alt: 'The Hideout First Hill' },
-          ],
-        },
-      ],
+            { src: '/seattle/bars/hidoeut-3.png', alt: 'The Hideout First Hill' }
+          ]
+        }
+      ]
     },
     {
       id: 'best-bars-ad',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'sea-best-coffee-shops',
@@ -765,8 +746,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/coffee/vivace-1.png', alt: 'Espresso Vivace latte art' },
             { src: '/seattle/coffee/vivace-2.png', alt: 'Vivace espresso bar Capitol Hill' },
-            { src: '/seattle/coffee/vivace-3.png', alt: 'Espresso Vivace coffee preparation' },
-          ],
+            { src: '/seattle/coffee/vivace-3.png', alt: 'Espresso Vivace coffee preparation' }
+          ]
         },
         {
           name: 'Victrola Coffee Roasters',
@@ -784,8 +765,8 @@ export const seattle: CityData = {
             { src: '/seattle/coffee/victrola-1.png', alt: 'Victrola Coffee Roasters interior' },
             { src: '/seattle/coffee/victrola-2.png', alt: 'Victrola coffee roasting' },
             { src: '/seattle/coffee/victrola-3.png', alt: 'Pour over at Victrola' },
-            { src: '/seattle/coffee/victrola-4.png', alt: 'Victrola Capitol Hill location' },
-          ],
+            { src: '/seattle/coffee/victrola-4.png', alt: 'Victrola Capitol Hill location' }
+          ]
         },
         {
           name: 'Caffè Vita',
@@ -803,8 +784,8 @@ export const seattle: CityData = {
             { src: '/seattle/coffee/vita-1.png', alt: 'Caffè Vita espresso' },
             { src: '/seattle/coffee/vita-2.png', alt: 'Vita coffee shop interior' },
             { src: '/seattle/coffee/vita-3.png', alt: 'Caffè Vita Capitol Hill' },
-            { src: '/seattle/coffee/vita-4.png', alt: 'Vita coffee beans and roasting' },
-          ],
+            { src: '/seattle/coffee/vita-4.png', alt: 'Vita coffee beans and roasting' }
+          ]
         },
         {
           name: 'Slate Coffee Roasters',
@@ -821,8 +802,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/coffee/slate-1.png', alt: 'Slate Coffee deconstructed latte' },
             { src: '/seattle/coffee/slate-2.png', alt: 'Slate Coffee Ballard interior' },
-            { src: '/seattle/coffee/slate-3.png', alt: 'Slate Coffee minimalist design' },
-          ],
+            { src: '/seattle/coffee/slate-3.png', alt: 'Slate Coffee minimalist design' }
+          ]
         },
         {
           name: 'Herkimer Coffee',
@@ -840,8 +821,8 @@ export const seattle: CityData = {
             { src: '/seattle/coffee/herkimer-1.png', alt: 'Herkimer Coffee pour over' },
             { src: '/seattle/coffee/herkimer-2.png', alt: 'Herkimer Greenwood interior' },
             { src: '/seattle/coffee/herkimer-3.png', alt: 'Herkimer Coffee espresso' },
-            { src: '/seattle/coffee/herkimer-4.png', alt: 'Herkimer Coffee neighborhood vibe' },
-          ],
+            { src: '/seattle/coffee/herkimer-4.png', alt: 'Herkimer Coffee neighborhood vibe' }
+          ]
         },
         {
           name: 'Elm Coffee Roasters',
@@ -859,15 +840,15 @@ export const seattle: CityData = {
             { src: '/seattle/coffee/elm-1.png', alt: 'Elm Coffee Roasters light-filled interior' },
             { src: '/seattle/coffee/elm-2.png', alt: 'Elm Coffee filter brewing' },
             { src: '/seattle/coffee/elm-3.png', alt: 'Elm Coffee Pioneer Square' },
-            { src: '/seattle/coffee/elm-4.png', alt: 'Elm Coffee pastries and coffee' },
-          ],
-        },
-      ],
+            { src: '/seattle/coffee/elm-4.png', alt: 'Elm Coffee pastries and coffee' }
+          ]
+        }
+      ]
     },
     {
       id: 'best-coffee-ad',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'best-restaurants',
@@ -891,8 +872,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/restaurants/musang-1.png', alt: 'Musang Filipino cuisine' },
             { src: '/seattle/restaurants/musang-2.png', alt: 'Musang kare-kare dish' },
-            { src: '/seattle/restaurants/musang-3.png', alt: 'Musang Beacon Hill interior' },
-          ],
+            { src: '/seattle/restaurants/musang-3.png', alt: 'Musang Beacon Hill interior' }
+          ]
         },
         {
           name: 'Canlis',
@@ -910,8 +891,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/restaurants/canlis-1.png', alt: 'Canlis fine dining interior' },
             { src: '/seattle/restaurants/canlis-2.png', alt: 'Canlis tasting menu presentation' },
-            { src: '/seattle/restaurants/canlis-3.png', alt: 'Canlis Lake Union views' },
-          ],
+            { src: '/seattle/restaurants/canlis-3.png', alt: 'Canlis Lake Union views' }
+          ]
         },
         {
           name: 'Maneki',
@@ -929,8 +910,8 @@ export const seattle: CityData = {
             { src: '/seattle/restaurants/maneki-1.png', alt: 'Maneki Japanese restaurant interior' },
             { src: '/seattle/restaurants/maneki-2.png', alt: 'Maneki traditional Japanese dishes' },
             { src: '/seattle/restaurants/maneki-3.png', alt: 'Maneki International District' },
-            { src: '/seattle/restaurants/maneki-4.png', alt: 'Maneki tatami room' },
-          ],
+            { src: '/seattle/restaurants/maneki-4.png', alt: 'Maneki tatami room' }
+          ]
         },
         {
           name: 'Un Bien',
@@ -947,8 +928,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/restaurants/unbien-1.png', alt: 'Un Bien Caribbean roast pork sandwich' },
             { src: '/seattle/restaurants/unbien-2.png', alt: 'Un Bien Ballard counter' },
-            { src: '/seattle/restaurants/unbien-3.png', alt: 'Un Bien sandwich preparation' },
-          ],
+            { src: '/seattle/restaurants/unbien-3.png', alt: 'Un Bien sandwich preparation' }
+          ]
         },
         {
           name: 'Pho Bac',
@@ -965,8 +946,8 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/restaurants/phobac-1.png', alt: 'Pho Bac signature pho' },
             { src: '/seattle/restaurants/phobac-2.png', alt: 'Pho Bac International District' },
-            { src: '/seattle/restaurants/phobac-3.png', alt: 'Pho Bac noodle bowl' },
-          ],
+            { src: '/seattle/restaurants/phobac-3.png', alt: 'Pho Bac noodle bowl' }
+          ]
         },
         {
           name: 'Surrell',
@@ -985,8 +966,8 @@ export const seattle: CityData = {
             { src: '/seattle/restaurants/surrell-1.png', alt: 'Surrell tasting menu course' },
             { src: '/seattle/restaurants/surrell-2.png', alt: 'Surrell intimate dining room' },
             { src: '/seattle/restaurants/surrell-3.png', alt: 'Surrell Washington wine selection' },
-            { src: '/seattle/restaurants/surrell-4.png', alt: 'Surrell Madison Valley' },
-          ],
+            { src: '/seattle/restaurants/surrell-4.png', alt: 'Surrell Madison Valley' }
+          ]
         },
         {
           name: 'Salumi',
@@ -1001,8 +982,8 @@ export const seattle: CityData = {
           website: 'https://salumideli.com',
           instagram: '@salumiseattle',
           images: [
-            { src: '/seattle/restaurants/salumi-banner.jpg', alt: 'Salumi artisan cured meats' },
-          ],
+            { src: '/seattle/restaurants/salumi-banner.jpg', alt: 'Salumi artisan cured meats' }
+          ]
         },
         {
           name: 'Taylor Shellfish Farms',
@@ -1017,8 +998,8 @@ export const seattle: CityData = {
           website: 'https://www.taylorshellfishfarms.com',
           instagram: '@taylorshellfishfarms',
           images: [
-            { src: '/seattle/restaurants/taylor-oysters.jpg', alt: 'Fresh Pacific Northwest oysters at Taylor Shellfish' },
-          ],
+            { src: '/seattle/restaurants/taylor-oysters.jpg', alt: 'Fresh Pacific Northwest oysters at Taylor Shellfish' }
+          ]
         },
         {
           name: 'Ivar\'s Acres of Clams',
@@ -1034,8 +1015,8 @@ export const seattle: CityData = {
           instagram: '@ivarsseafood',
           images: [
             { src: '/seattle/restaurants/ivars-acres-neon.jpg', alt: 'Ivar\'s iconic neon sign on Pier 54' },
-            { src: '/seattle/restaurants/ivars-salmon-house.jpg', alt: 'Ivar\'s Salmon House with Native carving' },
-          ],
+            { src: '/seattle/restaurants/ivars-salmon-house.jpg', alt: 'Ivar\'s Salmon House with Native carving' }
+          ]
         },
         {
           name: 'Dick\'s Drive-In',
@@ -1051,15 +1032,15 @@ export const seattle: CityData = {
           instagram: '@dicksdrivein',
           images: [
             { src: '/seattle/restaurants/dicks-combo.jpg', alt: 'Dick\'s Drive-In combo meal' },
-            { src: '/seattle/restaurants/dicks-deluxe.jpg', alt: 'Dick\'s famous Deluxe burger' },
-          ],
-        },
-      ],
+            { src: '/seattle/restaurants/dicks-deluxe.jpg', alt: 'Dick\'s famous Deluxe burger' }
+          ]
+        }
+      ]
     },
     {
       id: 'best-restaurants-ad',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'seattle-dark-history',
@@ -1081,7 +1062,7 @@ export const seattle: CityData = {
             name: 'Louisa Hotel, 669 S King St (Chinatown-International District)',
       url: 'https://www.google.com/maps/search/?api=1&query=Louisa%20Hotel%2C%20669%20S%20King%20St%20(Chinatown-International%20District)%20Seattle',
             stillExists: true,
-            coordinates: { lat: 47.5985, lng: -122.3250 },
+            coordinates: { lat: 47.5985, lng: -122.3250 }
           },
           sources: [
             {
@@ -1089,13 +1070,13 @@ export const seattle: CityData = {
               title: 'Wah Mee Massacre leaves 13 dead in Seattle\'s Chinatown International District',
               publisher: 'HistoryLink',
               year: '2003',
-              url: 'https://www.historylink.org/File/2984',
+              url: 'https://www.historylink.org/File/2984'
             },
             {
               type: 'article',
               title: 'The Wah Mee massacre, Washington state\'s deadliest mass murder',
               publisher: 'Super Wok Explosion',
-              url: 'https://www.woonlok.com/articles/wah-mee-massacre',
+              url: 'https://www.woonlok.com/articles/wah-mee-massacre'
             },
             {
               type: 'podcast',
@@ -1103,32 +1084,32 @@ export const seattle: CityData = {
               show: 'True Crime All The Time',
               platform: 'Apple Podcasts',
               year: '2022',
-              url: 'https://podcasts.apple.com/us/podcast/the-wah-mee-massacre/id1179629560?i=1000551709971',
+              url: 'https://podcasts.apple.com/us/podcast/the-wah-mee-massacre/id1179629560?i=1000551709971'
             },
             {
               type: 'podcast',
               title: 'Wai-Chiu Ng',
               show: 'A Most Wanted Podcast',
               platform: 'Podcast',
-              url: 'https://www.amostwantedpodcast.com/episodes/4-wai-chiu-ng',
+              url: 'https://www.amostwantedpodcast.com/episodes/4-wai-chiu-ng'
             },
             {
               type: 'article',
               title: 'Wah Mee Murders Oral History Collection',
               publisher: 'Wing Luke Museum / Internet Archive',
-              url: 'https://archive.org/details/2002.200.113',
+              url: 'https://archive.org/details/2002.200.113'
             },
             {
               type: 'article',
               title: 'Wah Mee Massacre',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Wah_Mee_massacre',
+              url: 'https://en.wikipedia.org/wiki/Wah_Mee_massacre'
             }
           ],
           images: [
             { src: '/seattle/dark-history/wah-mee-1.png', alt: 'Wah Mee Club building exterior' },
-            { src: '/seattle/dark-history/wah-mee-2.png', alt: 'Historic Louisa Hotel in Chinatown' },
-          ],
+            { src: '/seattle/dark-history/wah-mee-2.png', alt: 'Historic Louisa Hotel in Chinatown' }
+          ]
         },
         {
           id: 'dark-2',
@@ -1144,7 +1125,7 @@ export const seattle: CityData = {
             name: 'University District, Seattle',
       url: 'https://www.google.com/maps/search/?api=1&query=University%20District%2C%20Seattle%20Seattle',
             stillExists: true,
-            coordinates: { lat: 47.6606, lng: -122.3165 },
+            coordinates: { lat: 47.6606, lng: -122.3165 }
           },
           sources: [
             {
@@ -1152,45 +1133,45 @@ export const seattle: CityData = {
               title: 'The Stranger Beside Me',
               author: 'Ann Rule',
               year: '1980',
-              url: 'https://www.amazon.com/Stranger-Beside-Me-Ann-Rule/dp/1416559590',
+              url: 'https://www.amazon.com/Stranger-Beside-Me-Ann-Rule/dp/1416559590'
             },
             {
               type: 'documentary',
               title: 'Conversations with a Killer: The Ted Bundy Tapes',
               platform: 'Netflix',
               year: '2019',
-              url: 'https://www.netflix.com/title/80226612',
+              url: 'https://www.netflix.com/title/80226612'
             },
             {
               type: 'video',
               title: 'Ann Rule Presents: The Stranger Beside Me (TV Movie)',
               platform: 'Amazon Prime',
               year: '2003',
-              url: 'https://www.amazon.com/Ann-Rule-Presents-Stranger-Beside/dp/B000B8TIKE',
+              url: 'https://www.amazon.com/Ann-Rule-Presents-Stranger-Beside/dp/B000B8TIKE'
             },
             {
               type: 'article',
               title: 'The Stranger Beside Me: Ted Bundy: The Shocking Inside Story',
               publisher: 'Goodreads',
-              url: 'https://www.goodreads.com/book/show/15654.The_Stranger_Beside_Me',
+              url: 'https://www.goodreads.com/book/show/15654.The_Stranger_Beside_Me'
             },
             {
               type: 'article',
               title: 'Ted Bundy',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Ted_Bundy',
+              url: 'https://en.wikipedia.org/wiki/Ted_Bundy'
             },
             {
               type: 'article',
               title: 'Ann Rule biography',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Ann_Rule',
+              url: 'https://en.wikipedia.org/wiki/Ann_Rule'
             }
           ],
           images: [
             { src: '/seattle/dark-history/bundy-1.png', alt: 'Ted Bundy case documentation' },
-            { src: '/seattle/dark-history/bundy-2.png', alt: 'University District Seattle 1970s' },
-          ],
+            { src: '/seattle/dark-history/bundy-2.png', alt: 'University District Seattle 1970s' }
+          ]
         },
         {
           id: 'dark-3',
@@ -1206,28 +1187,28 @@ export const seattle: CityData = {
             name: 'Green River, King County',
       url: 'https://www.google.com/maps/search/?api=1&query=Green%20River%2C%20King%20County%20Seattle',
             stillExists: true,
-            coordinates: { lat: 47.3789, lng: -122.2420 },
+            coordinates: { lat: 47.3789, lng: -122.2420 }
           },
           sources: [
             {
               type: 'article',
               title: 'Gary Ridgway',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Gary_Ridgway',
+              url: 'https://en.wikipedia.org/wiki/Gary_Ridgway'
             },
             {
               type: 'podcast',
               title: 'Serial Killer: Green River Killer',
               show: 'Crime Junkie',
               platform: 'Crime Junkie Podcast',
-              url: 'https://crimejunkiepodcast.com/serial-killer-green-river-killer/',
+              url: 'https://crimejunkiepodcast.com/serial-killer-green-river-killer/'
             },
             {
               type: 'podcast',
               title: 'Gary Ridgway: Green River Killer (3-part series)',
               show: 'Obscura: A True Crime Podcast',
               platform: 'Spotify',
-              url: 'https://creators.spotify.com/pod/profile/obscuracrime/episodes/81-Gary-Ridgway-Green-River-Killer--Part-01-e2an4fo',
+              url: 'https://creators.spotify.com/pod/profile/obscuracrime/episodes/81-Gary-Ridgway-Green-River-Killer--Part-01-e2an4fo'
             },
             {
               type: 'podcast',
@@ -1235,30 +1216,30 @@ export const seattle: CityData = {
               show: 'Serial Killers',
               platform: 'IMDB/Podcast',
               year: '2017',
-              url: 'https://www.imdb.com/title/tt14990800/',
+              url: 'https://www.imdb.com/title/tt14990800/'
             },
             {
               type: 'podcast',
               title: 'Gary Ridgway - The Green River Killer',
               show: 'True Crime All The Time',
               platform: 'Apple Podcasts',
-              url: 'https://podcasts.apple.com/au/podcast/gary-ridgway-the-green-river-killer-part-2/id1179629560?i=1000629013669',
+              url: 'https://podcasts.apple.com/au/podcast/gary-ridgway-the-green-river-killer-part-2/id1179629560?i=1000629013669'
             },
             {
               type: 'documentary',
               title: 'Gary Ridgway, aka the Green River Killer - Serial Killer Documentary',
               platform: 'Spreaker',
-              url: 'https://www.spreaker.com/episode/gary-ridgway-aka-the-green-river-killer-serial-killer-documentary--65710305',
+              url: 'https://www.spreaker.com/episode/gary-ridgway-aka-the-green-river-killer-serial-killer-documentary--65710305'
             }
           ],
           images: [
-            { src: '/seattle/dark-history/green-river.png', alt: 'Green River investigation site' },
-          ],
+            { src: '/seattle/dark-history/green-river.png', alt: 'Green River investigation site' }
+          ]
         },
         {
           id: 'dark-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dark-4',
@@ -1273,7 +1254,7 @@ export const seattle: CityData = {
             name: 'Everett City Dock',
       url: 'https://www.google.com/maps/search/?api=1&query=Everett%20City%20Dock%20Seattle',
             stillExists: false,
-            coordinates: { lat: 47.9790, lng: -122.2268 },
+            coordinates: { lat: 47.9790, lng: -122.2268 }
           },
           sources: [
             {
@@ -1281,46 +1262,46 @@ export const seattle: CityData = {
               title: 'Everett Massacre (1916)',
               publisher: 'HistoryLink',
               year: '2008',
-              url: 'https://www.historylink.org/file/9981',
+              url: 'https://www.historylink.org/file/9981'
             },
             {
               type: 'article',
               title: 'Everett Massacre: Bloody Sunday, November 5, 1916',
               publisher: 'University of Washington IWW History Project',
-              url: 'https://depts.washington.edu/iww/everett_intro.shtml',
+              url: 'https://depts.washington.edu/iww/everett_intro.shtml'
             },
             {
               type: 'book',
               title: 'Milltown: A Social History of Everett, Washington',
               author: 'Norman H. Clark',
               publisher: 'University of Washington Press',
-              year: '1970',
+              year: '1970'
             },
             {
               type: 'documentary',
               title: 'The Wobblies',
               platform: 'Documentary Film',
               year: '1979',
-              author: 'Stewart Bird and Deborah Shaffer',
+              author: 'Stewart Bird and Deborah Shaffer'
             },
             {
               type: 'documentary',
               title: 'Verona: The Story of the Everett Massacre',
               platform: 'Documentary',
               author: 'Denise Ohio',
-              url: 'https://www.holytoledo.com/',
+              url: 'https://www.holytoledo.com/'
             },
             {
               type: 'article',
               title: 'Everett Massacre of 1916 Collection',
               publisher: 'University of Washington Libraries',
-              url: 'https://content.lib.washington.edu/pnwlaborweb/index.html',
+              url: 'https://content.lib.washington.edu/pnwlaborweb/index.html'
             },
             {
               type: 'article',
               title: 'The Everett Massacre',
               publisher: 'Everett Public Library',
-              url: 'https://www.epls.org/251/The-Everett-Massacre',
+              url: 'https://www.epls.org/251/The-Everett-Massacre'
             },
             {
               type: 'article',
@@ -1328,13 +1309,13 @@ export const seattle: CityData = {
               author: 'John G. Richardson',
               publisher: 'Social Science History (JSTOR)',
               year: '2009',
-              url: 'https://www.jstor.org/stable/40267998',
+              url: 'https://www.jstor.org/stable/40267998'
             }
           ],
           images: [
             { src: '/seattle/dark-history/everett-1.png', alt: 'Everett Massacre historical photo' },
-            { src: '/seattle/dark-history/everett-2.png', alt: 'IWW workers and Everett docks' },
-          ],
+            { src: '/seattle/dark-history/everett-2.png', alt: 'IWW workers and Everett docks' }
+          ]
         },
         {
           id: 'dark-5',
@@ -1349,7 +1330,7 @@ export const seattle: CityData = {
             name: '2112 E Republican St, Capitol Hill',
       url: 'https://www.google.com/maps/search/?api=1&query=2112%20E%20Republican%20St%2C%20Capitol%20Hill%20Seattle',
             stillExists: true,
-            coordinates: { lat: 47.6229, lng: -122.3110 },
+            coordinates: { lat: 47.6229, lng: -122.3110 }
           },
           sources: [
             {
@@ -1357,57 +1338,57 @@ export const seattle: CityData = {
               title: 'Kyle Huff shoots and kills six people at a rave afterparty',
               publisher: 'HistoryLink',
               year: '2007',
-              url: 'https://www.historylink.org/File/8138',
+              url: 'https://www.historylink.org/File/8138'
             },
             {
               type: 'article',
               title: 'Capitol Hill massacre',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Capitol_Hill_massacre',
+              url: 'https://en.wikipedia.org/wiki/Capitol_Hill_massacre'
             },
             {
               type: 'article',
               title: 'March 25, 2006: Documents from a dark day',
               publisher: 'Capitol Hill Seattle News',
               year: '2009',
-              url: 'https://www.capitolhillseattle.com/2009/03/march-25-2006-documents-from-a-dark-day/',
+              url: 'https://www.capitolhillseattle.com/2009/03/march-25-2006-documents-from-a-dark-day/'
             },
             {
               type: 'article',
               title: 'Epilogue to a Tragedy',
               publisher: 'Seattle Weekly',
-              url: 'https://www.seattleweekly.com/news/epilogue-to-a-tragedy/',
+              url: 'https://www.seattleweekly.com/news/epilogue-to-a-tragedy/'
             },
             {
               type: 'film',
               title: 'Wallflower (fictional account based on the massacre)',
               platform: 'Film',
               year: '2019',
-              author: 'Director Jagger Gravning',
+              author: 'Director Jagger Gravning'
             },
             {
               type: 'article',
               title: '"Wallflower" brings to the big screen a fictional account of the 2006 Capitol Hill Massacre',
               publisher: 'International Examiner',
-              url: 'https://iexaminer.org/wallflower-brings-to-the-big-screen-a-fictional-account-of-the-2006-capitol-hill-massacre/',
+              url: 'https://iexaminer.org/wallflower-brings-to-the-big-screen-a-fictional-account-of-the-2006-capitol-hill-massacre/'
             },
             {
               type: 'article',
               title: 'Capitol Hill Mass Murder Case',
               publisher: 'Brief Treatment and Crisis Intervention / Academia.edu',
-              url: 'https://www.academia.edu/45221564/Capitol_Hill_Mass_Murder_Case',
+              url: 'https://www.academia.edu/45221564/Capitol_Hill_Mass_Murder_Case'
             },
             {
               type: 'article',
               title: 'Capitol Hill Massacre: An Overview of the 2006 Seattle Tragedy',
               publisher: 'Legally Obscene',
-              url: 'https://www.legallyobscene.com/capitol-hill-massacre-kyle-huff/',
+              url: 'https://www.legallyobscene.com/capitol-hill-massacre-kyle-huff/'
             }
           ],
           images: [
             { src: '/seattle/dark-history/capitol-hill-1.png', alt: 'Capitol Hill neighborhood' },
-            { src: '/seattle/dark-history/capitol-hill-2.png', alt: 'Capitol Hill memorial' },
-          ],
+            { src: '/seattle/dark-history/capitol-hill-2.png', alt: 'Capitol Hill memorial' }
+          ]
         },
         {
           id: 'dark-6',
@@ -1422,7 +1403,7 @@ export const seattle: CityData = {
             name: 'Wellington/Tye (now abandoned), Stevens Pass',
       url: 'https://www.google.com/maps/search/?api=1&query=Wellington%2FTye%20(now%20abandoned)%2C%20Stevens%20Pass%20Seattle',
             stillExists: false,
-            coordinates: { lat: 47.7468, lng: -121.1348 },
+            coordinates: { lat: 47.7468, lng: -121.1348 }
           },
           sources: [
             {
@@ -1430,64 +1411,64 @@ export const seattle: CityData = {
               title: 'Train disaster at Wellington kills 96 on March 1, 1910',
               publisher: 'HistoryLink',
               year: '2003',
-              url: 'https://www.historylink.org/File/5127',
+              url: 'https://www.historylink.org/File/5127'
             },
             {
               type: 'book',
               title: 'The White Cascade: The Great Northern Railway Disaster and America\'s Deadliest Avalanche',
               author: 'Gary Krist',
               year: '2007',
-              url: 'https://www.amazon.com/White-Cascade-Northern-Deadliest-Avalanche/dp/0805077057',
+              url: 'https://www.amazon.com/White-Cascade-Northern-Deadliest-Avalanche/dp/0805077057'
             },
             {
               type: 'book',
               title: 'The 1910 Wellington Disaster (Images of America)',
               author: 'Deborah Cuyle and Rodney Fletcher',
-              url: 'https://www.amazon.com/1910-Wellington-Disaster-Images-America/dp/1467102733',
+              url: 'https://www.amazon.com/1910-Wellington-Disaster-Images-America/dp/1467102733'
             },
             {
               type: 'book',
               title: 'Northwest Disaster: Avalanche and Fire',
               author: 'Ruby El Hult',
-              year: '1960',
+              year: '1960'
             },
             {
               type: 'book',
               title: 'I Survived the Wellington Avalanche, 1910',
               author: 'Lauren Tarshis',
               year: '2022',
-              url: 'https://www.laurentarshis.com/22-i-survived-wellington-avalanche-1910',
+              url: 'https://www.laurentarshis.com/22-i-survived-wellington-avalanche-1910'
             },
             {
               type: 'article',
               title: 'Wellington, Washington Train Disaster: Topics in Chronicling America',
               publisher: 'Library of Congress',
-              url: 'https://guides.loc.gov/chronicling-america-wellington-washington-train-disaster',
+              url: 'https://guides.loc.gov/chronicling-america-wellington-washington-train-disaster'
             },
             {
               type: 'article',
               title: 'Great Northern Railway Company Wellington Disaster records',
               publisher: 'Archives West / Museum of History & Industry',
-              url: 'https://archiveswest.orbiscascade.org/ark:80444/xv09594',
+              url: 'https://archiveswest.orbiscascade.org/ark:80444/xv09594'
             },
             {
               type: 'article',
               title: 'The 1910 Wellington Train Disaster',
               publisher: 'Washington Our Home',
-              url: 'https://washingtonourhome.com/the-1910-wellington-train-disaster/',
+              url: 'https://washingtonourhome.com/the-1910-wellington-train-disaster/'
             },
             {
               type: 'article',
               title: 'Wellington, Washington',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Wellington,_Washington',
+              url: 'https://en.wikipedia.org/wiki/Wellington,_Washington'
             }
           ],
           images: [
             { src: '/seattle/dark-history/avalanche-1.png', alt: 'Wellington avalanche disaster site' },
             { src: '/seattle/dark-history/avanlanche-2.png', alt: 'Great Northern Railway snow conditions' },
-            { src: '/seattle/dark-history/avalanche-3.png', alt: 'Stevens Pass historic photo' },
-          ],
+            { src: '/seattle/dark-history/avalanche-3.png', alt: 'Stevens Pass historic photo' }
+          ]
         },
         {
           id: 'dark-7',
@@ -1501,41 +1482,41 @@ export const seattle: CityData = {
           images: [
             {
               src: '/seattle/dark-history/internment.png',
-              alt: 'Seattle Japanese American internment',
-            },
+              alt: 'Seattle Japanese American internment'
+            }
           ],
           location: {
             name: 'Nihonmachi/Japantown (now International District)',
       url: 'https://www.google.com/maps/search/?api=1&query=Nihonmachi%2FJapantown%20(now%20International%20District)%20Seattle',
             stillExists: false,
-            coordinates: { lat: 47.5986, lng: -122.3251 },
+            coordinates: { lat: 47.5986, lng: -122.3251 }
           },
           sources: [
             {
               type: 'website',
               title: 'Densho: The Japanese American Legacy Project',
               publisher: 'Densho',
-              url: 'https://densho.org/',
+              url: 'https://densho.org/'
             },
             {
               type: 'article',
               title: 'Japanese American Internment',
               publisher: 'HistoryLink',
-              url: 'https://www.historylink.org/file/7402',
+              url: 'https://www.historylink.org/file/7402'
             },
             {
               type: 'article',
               title: 'Executive Order 9066',
               publisher: 'National Archives',
-              url: 'https://www.archives.gov/milestone-documents/executive-order-9066',
+              url: 'https://www.archives.gov/milestone-documents/executive-order-9066'
             },
             {
               type: 'article',
               title: 'Internment of Japanese Americans',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans',
+              url: 'https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans'
             }
-          ],
+          ]
         },
         {
           id: 'dark-general-strike',
@@ -1547,28 +1528,28 @@ export const seattle: CityData = {
           location: {
             name: 'Downtown Seattle',
             url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Seattle',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'HistoryLink: Seattle General Strike of 1919',
               publisher: 'HistoryLink',
-              url: 'https://www.historylink.org/File/5653',
+              url: 'https://www.historylink.org/File/5653'
             },
             {
               type: 'article',
               title: 'Labor Studies: The Seattle General Strike',
               publisher: 'University of Washington',
-              url: 'https://depts.washington.edu/labhist/',
+              url: 'https://depts.washington.edu/labhist/'
             }
           ],
           images: [
             { src: '/seattle/curiosities/strik-1.png', alt: 'Seattle General Strike of 1919' },
-            { src: '/seattle/curiosities/strike-2.png', alt: 'Seattle workers during the 1919 General Strike' },
-          ],
-        },
-      ],
+            { src: '/seattle/curiosities/strike-2.png', alt: 'Seattle workers during the 1919 General Strike' }
+          ]
+        }
+      ]
     },
     {
       id: 'seattle-lost-and-loved',
@@ -1591,23 +1572,23 @@ export const seattle: CityData = {
           images: [
             {
               src: '/seattle/lost-loved/doghouse-1.png',
-              alt: 'The Dog House restaurant exterior with neon sign',
+              alt: 'The Dog House restaurant exterior with neon sign'
             },
             {
               src: '/seattle/lost-loved/doghouse-2.png',
-              alt: 'The Dog House interior and counter',
+              alt: 'The Dog House interior and counter'
             },
             {
               src: '/seattle/lost-loved/doghouse-3.png',
-              alt: 'The Dog House late night scene',
+              alt: 'The Dog House late night scene'
             }
           ],
           sources: [
             {
               title: 'HistoryLink: Dog House Restaurant',
-              url: 'https://www.historylink.org/File/3872',
+              url: 'https://www.historylink.org/File/3872'
             }
-          ],
+          ]
         },
         {
           id: 'lost-2',
@@ -1624,14 +1605,14 @@ export const seattle: CityData = {
           lastAddress: '109 Eastlake Ave E, Seattle',
           images: [
             { src: '/seattle/lost-loved/offramp-1.png', alt: 'The Off Ramp music venue' },
-            { src: '/seattle/lost-loved/offramp-2.png', alt: 'Off Ramp stage where grunge was born' },
+            { src: '/seattle/lost-loved/offramp-2.png', alt: 'Off Ramp stage where grunge was born' }
           ],
           sources: [
             {
               title: 'Seattle Met: The Off Ramp Retrospective',
-              url: 'https://www.seattlemet.com/arts-and-culture/2020/10/pearl-jam-first-concert-seattle-history-off-ramp',
+              url: 'https://www.seattlemet.com/arts-and-culture/2020/10/pearl-jam-first-concert-seattle-history-off-ramp'
             }
-          ],
+          ]
         },
         {
           id: 'lost-3',
@@ -1647,14 +1628,14 @@ export const seattle: CityData = {
           images: [
             { src: '/seattle/lost-loved/bakemans-1.png', alt: 'Bakeman\'s Restaurant counter' },
             { src: '/seattle/lost-loved/bakemans-2.png', alt: 'Famous Bakeman\'s turkey sandwich' },
-            { src: '/seattle/lost-loved/bakemans-3.png', alt: 'Bakeman\'s lunch rush' },
+            { src: '/seattle/lost-loved/bakemans-3.png', alt: 'Bakeman\'s lunch rush' }
           ],
           sources: [
             {
               title: 'Seattle Mag: Why Did Bakeman\'s REALLY Close?',
-              url: 'https://www.seattletimes.com/seattle-news/bakemans-restaurant-closes-after-47-years/',
+              url: 'https://www.seattletimes.com/seattle-news/bakemans-restaurant-closes-after-47-years/'
             }
-          ],
+          ]
         },
         {
           id: 'lost-4',
@@ -1669,14 +1650,14 @@ export const seattle: CityData = {
           lastAddress: '927 9th Ave, Seattle',
           images: [
             { src: '/seattle/lost-loved/vitos-1.png', alt: 'Vito\'s Italian supper club interior' },
-            { src: '/seattle/lost-loved/vitos-2.png', alt: 'Vito\'s red vinyl booths' },
+            { src: '/seattle/lost-loved/vitos-2.png', alt: 'Vito\'s red vinyl booths' }
           ],
           sources: [
             {
               title: 'Seattle Met: The End of Vito\'s',
-              url: 'https://www.seattlemet.com/news-and-city-life/2023/01/vitos-restaurant-closure-first-hill-fire-seattle',
+              url: 'https://www.seattlemet.com/news-and-city-life/2023/01/vitos-restaurant-closure-first-hill-fire-seattle'
             }
-          ],
+          ]
         },
         {
           id: 'lost-5',
@@ -1690,16 +1671,16 @@ export const seattle: CityData = {
           communityVoice: '"RKCNDY was the first place that treated us like real fans. We weren\'t old enough to drink, but we were old enough to belong." — Former attendee',
           lastAddress: '1812 Yale Ave, Seattle',
           images: [
-            { src: '/seattle/lost-loved/rkcndy-2.png', alt: 'RKCNDY all-ages punk venue' },
+            { src: '/seattle/lost-loved/rkcndy-2.png', alt: 'RKCNDY all-ages punk venue' }
           ],
           sources: [
             {
               title: 'KEXP: Seattle All-Ages History',
-              url: 'https://www.kexp.org/read/2019/11/14/rock-candy-forever/',
+              url: 'https://www.kexp.org/read/2019/11/14/rock-candy-forever/'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     },
     {
       id: 'seattle-history',
@@ -1717,8 +1698,8 @@ export const seattle: CityData = {
           location: {
             name: 'Duwamish Longhouse, West Seattle',
       url: 'https://www.google.com/maps/search/?api=1&query=Duwamish%20Longhouse%2C%20West%20Seattle%20Seattle',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-2',
@@ -1727,18 +1708,15 @@ export const seattle: CityData = {
           title: 'The Great Seattle Fire destroyed 25 blocks and rebuilt the city',
           body: 'On June 6, 1889, a glue pot caught fire in a cabinet shop. The fire spread through wood-built downtown, destroying 25 blocks. But Seattle rebuilt in brick and stone, raised the streets above the flood line, and emerged stronger. Within a year, the burned district had been replaced with permanent buildings. The fire transformed Seattle from a frontier town into a modern city.',
           source: 'Museum of History & Industry (MOHAI)',
-          image: {
-            src: '/images/history/seattle-fire-1889.jpg',
-            alt: 'Seattle after the Great Fire of 1889',
-                      },
+          
           location: {
             name: 'Pioneer Square',
       url: 'https://www.google.com/maps/search/?api=1&query=Pioneer%20Square%20Seattle',
             coordinates: { lat: 47.6019, lng: -122.3328 },
-            stillExists: true,
-          },
-        },
-      ],
-    },
-  ],
+            stillExists: true
+          }
+        }
+      ]
+    }
+  ]
 }

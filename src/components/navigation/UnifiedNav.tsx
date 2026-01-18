@@ -23,6 +23,19 @@ interface UnifiedNavProps {
   useFixedPosition?: boolean
 }
 
+// Get shortened city name for mobile navbar
+function getMobileCityName(cityName?: string): string {
+  if (!cityName) return ''
+
+  // Abbreviate long city names
+  const abbreviations: Record<string, string> = {
+    'Colorado Springs': 'Co Springs',
+    'Salt Lake City': 'SLC',
+  }
+
+  return abbreviations[cityName] || cityName
+}
+
 export function UnifiedNav({
   citySlug,
   cityName,
@@ -157,16 +170,26 @@ export function UnifiedNav({
 
         {/* Mobile Navigation */}
         <div className="flex sm:hidden items-center justify-between h-14">
-          <Link
-            href={routes.home()}
-            className="flex items-center font-semibold text-neutral-900 tracking-tight"
-          >
-            <img
-              src="/logos/ccs.png"
-              alt="Curious City"
-              className="h-8 w-auto"
-            />
-          </Link>
+          <div className="flex items-center gap-2 min-w-0">
+            <Link
+              href={routes.home()}
+              className="flex-shrink-0 flex items-center font-semibold text-neutral-900 tracking-tight"
+            >
+              <img
+                src="/logos/ccs.png"
+                alt="Curious City"
+                className="h-8 w-auto"
+              />
+            </Link>
+            {cityName && (
+              <Link
+                href={routes.city(citySlug!)}
+                className="font-serif text-lg font-semibold text-[#c65d3b] truncate"
+              >
+                {getMobileCityName(cityName)}
+              </Link>
+            )}
+          </div>
           <PremiumMobileMenu currentCitySlug={citySlug} />
         </div>
       </div>

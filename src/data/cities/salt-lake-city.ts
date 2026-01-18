@@ -6,13 +6,13 @@ export const salt_lake_city: CityData = {
   tagline: 'Where mountains meet faith and rebellion',
   heroImage: {
     src: '/banners/salt-lake-city-banner.png',
-    alt: 'Salt Lake City skyline with mountains',
+    alt: 'Salt Lake City skyline with mountains'
   },
   content: [
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Salt Lake City — a city of stunning peaks, peculiar history, and surprising contradictions. Here\'s what we\'re curious about this week.',
+      content: 'Welcome to Salt Lake City — a city of stunning peaks, peculiar history, and surprising contradictions. Here\'s what we\'re curious about this week.'
     },
     {
       id: 'featured-card',
@@ -21,12 +21,12 @@ export const salt_lake_city: CityData = {
       description: 'How Mormon pioneers built an empire in the desert, and what happens when the empire starts to shift.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/salt-lake-city/essay/zion-in-the-desert',
+      href: '/salt-lake-city/essay/zion-in-the-desert'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -37,27 +37,27 @@ export const salt_lake_city: CityData = {
           title: 'The Best Après-Ski in the Wasatch',
           description: 'Where locals actually go after a powder day.',
           meta: 'Guide',
-          href: '/salt-lake-city/apres-ski',
+          href: '/salt-lake-city/apres-ski'
         },
         {
           title: 'Downtown\'s Surprising Art Scene',
           description: 'Galleries, murals, and creative spaces you didn\'t know existed.',
           meta: 'Feature',
-          href: '/salt-lake-city/art-scene',
+          href: '/salt-lake-city/art-scene'
         },
         {
           title: 'Understanding Utah Liquor Laws',
           description: 'A practical guide to drinking in the Beehive State.',
           meta: 'Guide',
           variant: 'compact',
-          href: '/salt-lake-city/liquor-laws',
+          href: '/salt-lake-city/liquor-laws'
         }
-      ],
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'slc-curiosities',
@@ -74,14 +74,14 @@ export const salt_lake_city: CityData = {
           body: 'In 1988, a Chilean flamingo escaped from Tracy Aviary and made the Great Salt Lake its home for 18 years. Pink Floyd—as locals named it—survived blizzards that should have killed it, dining exclusively on brine shrimp while every other bird with any sense flew south for the winter. It was last seen in 2005, likely having died of old age, having outlived every reasonable expectation for a tropical bird stranded in the desert. The audacity is inspiring.',
                     image: {
             src: '/salt-lake-city/curiosities/flamingo.png',
-            alt: 'Pink Floyd the flamingo at the Great Salt Lake',
+            alt: 'Pink Floyd the flamingo at the Great Salt Lake'
           },
           source: 'Tracy Aviary records',
           location: {
             name: 'Great Salt Lake',
       url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'slc-curiosity-2',
@@ -91,14 +91,14 @@ export const salt_lake_city: CityData = {
           body: 'Beneath the sacred grounds of Temple Square, a labyrinthine network of tunnels allows leaders of The Church of Jesus Christ of Latter-day Saints to move unseen between the Salt Lake Temple, the Church Office Building, and other key facilities. Built for both security and discretion in the 1960s, these subterranean passages became critical arteries for dignitaries during the 2002 Winter Olympics. The Church maintains a steadfast silence on their existence, which, of course, only fuels the intrigue. Every institution with an air of divine authority, it seems, eventually builds its own secret corridors—because even a prophet sometimes needs to avoid the weather, or perhaps, simply the public.',
                     image: {
             src: '/salt-lake-city/curiosities/slc-tunnels.png',
-            alt: 'Underground tunnels beneath Temple Square',
+            alt: 'Underground tunnels beneath Temple Square'
           },
           source: 'Salt Lake Tribune investigative reports',
           location: {
             name: 'Temple Square',
       url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-3',
@@ -108,19 +108,19 @@ export const salt_lake_city: CityData = {
           body: 'For decades, Utah law forced breweries to choose: water down your beer to 3.2% alcohol or skip the state entirely. Major brands created embarrassing "Utah formulations" of their products—essentially beer-flavored water you could buy at grocery stores. The law finally changed in November 2019, but quirks remain: no wine at grocery stores, bars still pour behind "Zion curtains," and the private club system makes no sense to anyone, including Utahns. Progress is incremental in the Beehive State.',
                     image: {
             src: '/salt-lake-city/curiosities/beer.png',
-            alt: 'Utah beer laws and 3.2% beer regulations',
+            alt: 'Utah beer laws and 3.2% beer regulations'
           },
           source: 'Utah Department of Alcoholic Beverage Control',
           location: {
             name: 'State of Utah',
       url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Utah%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'slc-curiosity-4',
@@ -130,14 +130,14 @@ export const salt_lake_city: CityData = {
           body: 'The Great Salt Lake, once a vast inland sea, has shrunk by 73% since Mormon pioneers arrived, and it\'s not just a sad sight—it\'s an impending ecological catastrophe. Rivers that once fed the lake are now diverted for agriculture, leaving vast expanses of the lakebed exposed. As these new deserts dry, they unleash toxic dust laden with arsenic, lead, and other heavy metals into the air, threatening the health of 2.5 million people in the Salt Lake Valley. Scientists warn it could become "the next Aral Sea"—a man-made environmental disaster so profound it\'s visible from space. The lake that defined this unique ecosystem and city is evaporating in real time, and with it, a critical part of Utah\'s identity.',
           image: {
             src: '/salt-lake-city/curiosities/shrnking-lake.png',
-            alt: 'Shrinking Great Salt Lake with exposed lakebed',
+            alt: 'Shrinking Great Salt Lake with exposed lakebed'
           },
           source: 'Brigham Young University Great Salt Lake study',
           location: {
             name: 'Great Salt Lake',
       url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-5',
@@ -147,14 +147,14 @@ export const salt_lake_city: CityData = {
           body: 'Those tiny "Sea-Monkeys" you grew up with? They probably came from the Great Salt Lake. The brine shrimp cyst harvest is a $60 million annual industry—eggs shipped worldwide for aquaculture feed and novelty kits marketed to children who don\'t realize they\'re raising crustacean livestock. As the lake shrinks, this bizarre industry faces extinction, along with the millions of migratory birds that depend on the shrimp. Even the weird economies are collapsing.',
           image: {
             src: '/salt-lake-city/curiosities/brine-shrimp.png',
-            alt: 'Brine shrimp in the Great Salt Lake',
+            alt: 'Brine shrimp in the Great Salt Lake'
           },
           source: 'Great Salt Lake Ecosystem Program',
           location: {
             name: 'Great Salt Lake',
       url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-6',
@@ -164,9 +164,9 @@ export const salt_lake_city: CityData = {
           body: 'When Brigham Young laid out Salt Lake City in 1847, he mandated streets wide enough for a team of four oxen pulling a fully loaded wagon to execute a complete U-turn without, as he allegedly put it, "resorting to profanity." The result is Main Street at 132 feet wide, roughly the width of a modern four-lane highway with parking on both sides, bike lanes, and room left over. Most major streets follow suit. By modern standards, it\'s almost absurdly generous. The grid system uses Temple Square as its mathematical origin point: addresses are measured in blocks north, south, east, or west of the temple. 400 South means four blocks south of Temple Square. 200 East means two blocks east. If you know your cardinal directions, you can navigate the entire city without a map. It\'s urban planning as theology: everything oriented toward the spiritual center, every address a measurement of distance from the divine. Modern transportation engineers marvel at the foresight. What was designed for oxen now accommodates cars, bikes, and light rail with room to spare. Brigham Young couldn\'t have predicted automobiles, but he built streets ready for them anyway.',
           image: {
             src: '/salt-lake-city/curiosities/slc-streets.png',
-            alt: 'Wide Salt Lake City streets designed for oxen',
+            alt: 'Wide Salt Lake City streets designed for oxen'
           },
-          source: 'Salt Lake City Planning Division',
+          source: 'Salt Lake City Planning Division'
         },
         {
           id: 'slc-curiosity-7',
@@ -177,24 +177,24 @@ export const salt_lake_city: CityData = {
                     images: [
             {
               src: '/salt-lake-city/curiosities/gulls-1.png',
-              alt: 'California gulls at the Great Salt Lake',
+              alt: 'California gulls at the Great Salt Lake'
             },
             {
               src: '/salt-lake-city/curiosities/gulls-2.png',
-              alt: 'Seagull Monument at Temple Square',
+              alt: 'Seagull Monument at Temple Square'
             }
           ],
           source: 'Utah Historical Quarterly',
           location: {
             name: 'Temple Square (Seagull Monument)',
       url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20(Seagull%20Monument)%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'slc-curiosity-8',
@@ -205,14 +205,14 @@ export const salt_lake_city: CityData = {
           year: '1877',
           image: {
             src: '/salt-lake-city/curiosities/monster.png',
-            alt: 'North Shore Monster of the Great Salt Lake',
+            alt: 'North Shore Monster of the Great Salt Lake'
           },
           source: 'Deseret News historical archives',
           location: {
             name: 'Great Salt Lake',
       url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'slc-curiosity-9',
@@ -222,14 +222,14 @@ export const salt_lake_city: CityData = {
           body: 'Mormon pioneers wanted to call their territory "Deseret"—a word from the Book of Mormon meaning "honeybee." Congress rejected it in 1850 and imposed "Utah" instead, derived from the Ute people whose land it actually was. The beehive symbol remained, and Utah is still called the "Beehive State." Church members lobbied to get "Deseret" approved for 45 years before finally giving up. Some battles you can\'t win, even with divine mandate.',
                     image: {
             src: '/salt-lake-city/curiosities/deseret.png',
-            alt: 'Deseret beehive symbol of Utah',
+            alt: 'Deseret beehive symbol of Utah'
           },
           source: 'Church History Library',
           location: {
             name: 'State of Utah',
       url: 'https://www.google.com/maps/search/?api=1&query=State%20of%20Utah%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-10',
@@ -239,9 +239,9 @@ export const salt_lake_city: CityData = {
           body: 'During winter, Salt Lake City experiences a phenomenon called temperature inversion that turns the valley into a pollution trap. Normally, warm air rises and cold air sinks, but during inversions, a layer of cold, dense air settles into the valley while warmer air sits on top like a lid. The pollution from cars, refineries, and wood-burning stoves accumulates with nowhere to go, trapped by the mountains on three sides and the thermal cap above. On bad inversion days, Salt Lake\'s PM2.5 levels regularly exceed those of Beijing and Delhi. The gray-brown haze blankets the valley floor while the mountains above remain crystal clear. This creates one of the strangest coping mechanisms in American urban life: residents flee to ski resorts above the inversion layer, literally ascending 3,000 feet to breathe clean air. From the mountaintops, you can look down and see the toxic soup you just escaped, a visible layer of filth covering everything below 6,000 feet. The Wasatch Mountains, normally the city\'s greatest selling point, become prison walls during inversions. The same topography that makes the powder so legendary also traps the air you breathe. Utahns learn to check air quality apps the way coastal residents check surf reports.',
           image: {
             src: '/salt-lake-city/curiosities/pollution.png',
-            alt: 'Winter inversion pollution in Salt Lake Valley',
+            alt: 'Winter inversion pollution in Salt Lake Valley'
           },
-          source: 'Utah Division of Air Quality',
+          source: 'Utah Division of Air Quality'
         },
         {
           id: 'slc-curiosity-11',
@@ -251,14 +251,14 @@ export const salt_lake_city: CityData = {
           body: 'When temperatures drop and conditions align, the Great Salt Lake produces one of the strangest geological phenomena on Earth: mirabilite mounds. These crystalline towers of hydrated sodium sulfate grow up to three feet tall from the lake bottom, their translucent white structures resembling something from a science fiction film set. The chemistry is precise: as winter cold causes the lake\'s already saturated brine to concentrate further, sodium sulfate precipitates out and crystallizes into elaborate formations. The mounds appear in shallow areas where the water is coldest, creating fields of alien-looking spires that reflect the winter sun. By spring, rising temperatures dissolve the structures back into the brine without a trace. If you visit in January, you might see hundreds of them. By April, they\'re gone entirely, leaving no evidence they ever existed. Scientists believe only a handful of places on Earth produce mirabilite mounds at this scale, most of them saline lakes in extreme cold environments. The Great Salt Lake\'s version is among the most accessible and dramatic. Yet most Salt Lake City residents have never seen them, partly because winter lake visits are cold and unpleasant, partly because the formations are ephemeral enough to seem like rumor.',
           image: {
             src: '/salt-lake-city/curiosities/salt-mounds.png',
-            alt: 'Mirabilite mound formations in the Great Salt Lake',
+            alt: 'Mirabilite mound formations in the Great Salt Lake'
           },
           source: 'Utah Geological Survey',
           location: {
             name: 'Great Salt Lake',
       url: 'https://www.google.com/maps/search/?api=1&query=Great%20Salt%20Lake%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-12',
@@ -269,14 +269,14 @@ export const salt_lake_city: CityData = {
           year: '14,500 BCE',
           image: {
             src: '/salt-lake-city/curiosities/shoreline.png',
-            alt: 'Ancient Lake Bonneville shoreline terraces on Wasatch Mountains',
+            alt: 'Ancient Lake Bonneville shoreline terraces on Wasatch Mountains'
           },
           source: 'Utah Geological Survey',
           location: {
             name: 'Wasatch Front',
       url: 'https://www.google.com/maps/search/?api=1&query=Wasatch%20Front%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         // ARCHIVED: Temple Square and Choir entries - standard tourist content
         // {
@@ -301,14 +301,14 @@ export const salt_lake_city: CityData = {
           body: 'In 1945, a rancher in Box Elder County spotted a 33-foot balloon drifting over Blue Creek Valley. Sheriff Warren Hyde grabbed the strange device with his bare hands and held on for 45 minutes in the freezing wind while help was summoned. It was a Japanese Fu-Go balloon bomb—one of 9,300 launched across the Pacific on the jet stream. The FBI swore Hyde to silence for decades. The sand in the ballast bags helped identify Japanese launch sites, leading to bombing raids that ended the program.',
                     image: {
             src: '/salt-lake-city/articles/balloon-bomb.png',
-            alt: 'Japanese Fu-Go balloon bomb during WWII',
+            alt: 'Japanese Fu-Go balloon bomb during WWII'
           },
           source: 'National Archives, declassified WWII records',
           location: {
             name: 'Blue Creek Valley, Box Elder County',
       url: 'https://www.google.com/maps/search/?api=1&query=Blue%20Creek%20Valley%2C%20Box%20Elder%20County%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-curiosity-15',
@@ -318,16 +318,16 @@ export const salt_lake_city: CityData = {
           body: 'Utah registered the phrase "The Greatest Snow on Earth" as a state trademark and prints it on every license plate, a level of powder pride that borders on legal aggression. The claim invites skepticism, but the meteorology is genuinely remarkable. Pacific storms cross the Great Basin, picking up moisture from the Great Salt Lake in a process called "lake effect." The Wasatch Mountains then force that moist air upward rapidly, wringing out the moisture as snow. The result is powder with unusually low water content: light, dry, and deep. Alta and Snowbird average around 500 inches annually. The snow-to-water ratio regularly exceeds 15:1, meaning you need 15 inches of snow to produce one inch of water. Colorado\'s snow is typically heavier, around 10:1 or 12:1. Japanese snow is wetter still. The technical term is "cold smoke" powder, and skiers travel globally to experience it. Utahns will debate Colorado partisans for hours on this topic with the intensity of religious conviction, which, given the state\'s founding, tracks. Ringling Bros. once sued Utah over trademark infringement with "The Greatest Show on Earth." Utah won. The license plates remain.',
           image: {
             src: '/salt-lake-city/curiosities/greatest-snow.jpg',
-            alt: 'Deep powder snow in the Wasatch Mountains',
+            alt: 'Deep powder snow in the Wasatch Mountains'
           },
           source: 'Utah Office of Tourism',
           location: {
             name: 'Wasatch Mountains',
       url: 'https://www.google.com/maps/search/?api=1&query=Wasatch%20Mountains%20Salt%20Lake%20City',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'slc-iconic-spots',
@@ -345,7 +345,7 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/iconic-spots/spiral-jetty.jpg',
-              alt: 'Spiral Jetty land art in the Great Salt Lake',
+              alt: 'Spiral Jetty land art in the Great Salt Lake'
             }
           ],
           address: 'Rozel Point, Great Salt Lake, UT',
@@ -353,7 +353,7 @@ export const salt_lake_city: CityData = {
           hours: 'Dawn to dusk',
           price: 'Free',
           website: 'https://www.diaart.org/visit/visit-our-locations-sites/robert-smithson-spiral-jetty',
-          tip: 'Check lake levels before you go — the jetty is most impressive when partially submerged.',
+          tip: 'Check lake levels before you go — the jetty is most impressive when partially submerged.'
         },
         {
           id: 'iconic-2',
@@ -364,7 +364,7 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/iconic-spots/salt-flats.jpg',
-              alt: 'Expansive white salt flats at Bonneville',
+              alt: 'Expansive white salt flats at Bonneville'
             }
           ],
           address: 'Bonneville Salt Flats, UT',
@@ -372,7 +372,7 @@ export const salt_lake_city: CityData = {
           hours: '24 hours',
           price: 'Free',
           website: 'https://www.blm.gov/visit/bonneville-salt-flats',
-          tip: 'Visit at sunrise or sunset for incredible colors and reflections.',
+          tip: 'Visit at sunrise or sunset for incredible colors and reflections.'
         },
         {
           id: 'iconic-3',
@@ -383,7 +383,7 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/iconic-spots/red-butte.jpg',
-              alt: 'Red Butte Garden with flowers and mountains',
+              alt: 'Red Butte Garden with flowers and mountains'
             }
           ],
           address: '300 Wakara Way, Salt Lake City, UT 84108',
@@ -391,7 +391,7 @@ export const salt_lake_city: CityData = {
           hours: '9am-5pm daily (seasonal variations)',
           price: '$14 adults',
           website: 'https://www.redbuttegarden.org',
-          tip: 'The summer concert series is one of the best ways to experience SLC.',
+          tip: 'The summer concert series is one of the best ways to experience SLC.'
         },
         {
           id: 'iconic-4',
@@ -402,7 +402,7 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/iconic-spots/this-is-the-place.jpg',
-              alt: 'This Is The Place monument and heritage park',
+              alt: 'This Is The Place monument and heritage park'
             }
           ],
           address: '2601 Sunnyside Ave S, Salt Lake City, UT 84108',
@@ -410,7 +410,7 @@ export const salt_lake_city: CityData = {
           hours: '10am-5pm Mon-Sat',
           price: '$15 adults',
           website: 'https://www.thisistheplace.org',
-          tip: 'Great for families with children interested in pioneer history.',
+          tip: 'Great for families with children interested in pioneer history.'
         },
         {
           id: 'iconic-5',
@@ -421,7 +421,7 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/iconic-spots/gilgal-garden.jpg',
-              alt: 'The Sphinx with Joseph Smith head at Gilgal Garden',
+              alt: 'The Sphinx with Joseph Smith head at Gilgal Garden'
             }
           ],
           address: '749 E 500 S, Salt Lake City, UT 84102',
@@ -429,9 +429,9 @@ export const salt_lake_city: CityData = {
           hours: '8am-8pm daily',
           price: 'Free',
           website: 'https://gilgalgarden.org',
-          tip: 'It\'s literally hidden in the middle of a block — look for the small entrance sign.',
+          tip: 'It\'s literally hidden in the middle of a block — look for the small entrance sign.'
         }
-      ],
+      ]
     },
     {
       id: 'slc-hidden-gems',
@@ -451,11 +451,11 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/pyramid-1.png',
-              alt: 'Modern pyramid structure in urban setting',
+              alt: 'Modern pyramid structure in urban setting'
             },
             {
               src: '/salt-lake-city/hidden-gems/pyramid-2.png',
-              alt: 'Summum Pyramid interior',
+              alt: 'Summum Pyramid interior'
             }
           ],
           address: 'Salt Lake City (exact address by appointment)',
@@ -463,7 +463,7 @@ export const salt_lake_city: CityData = {
           hours: 'Tours by appointment only',
           price: 'Free tours',
           website: 'https://www.summum.us',
-          tip: 'Ask about the mummified cats—they\'re displayed in the meditation room.',
+          tip: 'Ask about the mummified cats—they\'re displayed in the meditation room.'
         },
         {
           id: 'gem-museum-1',
@@ -476,22 +476,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/speed-1.png',
-              alt: 'Vintage race car collection in private museum',
+              alt: 'Vintage race car collection in private museum'
             },
             {
               src: '/salt-lake-city/hidden-gems/speed-2.png',
-              alt: 'Historic racing vehicles at Price Museum',
+              alt: 'Historic racing vehicles at Price Museum'
             },
             {
               src: '/salt-lake-city/hidden-gems/speed-3.png',
-              alt: 'Mormon Meteor III at Price Museum of Speed',
+              alt: 'Mormon Meteor III at Price Museum of Speed'
             }
           ],
           address: '165 E 600 S, Salt Lake City, UT 84111',
           coordinates: { lat: 40.7607, lng: -111.8860 },
           hours: '2nd Wednesday of month, 9am-12pm (or by appointment)',
           price: 'Free',
-          tip: 'Call (801) 906-0157 to confirm—if Price is traveling, it stays locked.',
+          tip: 'Call (801) 906-0157 to confirm—if Price is traveling, it stays locked.'
         },
         {
           id: 'gem-museum-2',
@@ -504,22 +504,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/pioneer-1.png',
-              alt: 'Victorian-era museum interior with unusual historical artifacts',
+              alt: 'Victorian-era museum interior with unusual historical artifacts'
             },
             {
               src: '/salt-lake-city/hidden-gems/pioneer-2.png',
-              alt: 'Pioneer Memorial Museum oddities collection',
+              alt: 'Pioneer Memorial Museum oddities collection'
             },
             {
               src: '/salt-lake-city/hidden-gems/pioneer-3.png',
-              alt: 'Historic pioneer artifacts display',
+              alt: 'Historic pioneer artifacts display'
             }
           ],
           address: '300 N Main Street, Salt Lake City, UT',
           coordinates: { lat: 40.7728, lng: -111.8894 },
           hours: 'Monday-Friday, 9am-4pm',
           price: 'Free',
-          tip: 'The hair art is on the second floor—look for the Victorian wreaths made entirely of human hair.',
+          tip: 'The hair art is on the second floor—look for the Victorian wreaths made entirely of human hair.'
         },
         // ARCHIVED: Already covered in dark history section
         // {
@@ -536,22 +536,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/neffs-1.png',
-              alt: 'Mountain canyon trail with creek and aspen trees',
+              alt: 'Mountain canyon trail with creek and aspen trees'
             },
             {
               src: '/salt-lake-city/hidden-gems/neffs-2.png',
-              alt: 'Neff\'s Canyon trail views',
+              alt: 'Neff\'s Canyon trail views'
             },
             {
               src: '/salt-lake-city/hidden-gems/neffs-3.png',
-              alt: 'Wildflowers along Neff\'s Canyon',
+              alt: 'Wildflowers along Neff\'s Canyon'
             }
           ],
           address: '4275 S 4260 E (end of White Way), Millcreek',
           coordinates: { lat: 40.6969, lng: -111.7772 },
           hours: 'Dawn to dusk; no parking after 10pm',
           price: 'Free',
-          tip: 'Start early—the meadow at mile 3 is perfect for sunrise, and you\'ll beat the heat on the exposed upper sections.',
+          tip: 'Start early—the meadow at mile 3 is perfect for sunrise, and you\'ll beat the heat on the exposed upper sections.'
         },
         {
           id: 'gem-nature-2',
@@ -564,23 +564,23 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/wall-lake-1.png',
-              alt: 'Mountain lake with cliffs and clear green water',
+              alt: 'Mountain lake with cliffs and clear green water'
             },
             {
               src: '/salt-lake-city/hidden-gems/wall-lake-2.png',
-              alt: 'Wall Lake swimming hole in the Uintas',
+              alt: 'Wall Lake swimming hole in the Uintas'
             }
           ],
           address: 'Uinta Mountains (about 1 hour from SLC)',
           coordinates: { lat: 40.5983, lng: -110.9625 },
           hours: 'Dawn to dusk',
           price: 'Free',
-          tip: 'The cliff jumping spot is at the far end—test depth before you leap. Water temp rarely breaks 60°F.',
+          tip: 'The cliff jumping spot is at the far end—test depth before you leap. Water temp rarely breaks 60°F.'
         },
         {
           id: 'slc-gem-ad-1',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-park-1',
@@ -593,22 +593,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/hobbitville-1.png',
-              alt: 'Small artistic cabins in wooded park setting',
+              alt: 'Small artistic cabins in wooded park setting'
             },
             {
               src: '/salt-lake-city/hidden-gems/hobbitville-2.png',
-              alt: 'Allen Park Hobbitville structures',
+              alt: 'Allen Park Hobbitville structures'
             },
             {
               src: '/salt-lake-city/hidden-gems/hobbitville-3.png',
-              alt: 'Whimsical buildings at Hobbitville',
+              alt: 'Whimsical buildings at Hobbitville'
             }
           ],
           address: 'Along Emigration Creek, Salt Lake City',
           coordinates: { lat: 40.7640, lng: -111.8403 },
           hours: 'Park hours',
           price: 'Free',
-          tip: 'The trail along Emigration Creek connects to the larger trail system—you can walk here from the University.',
+          tip: 'The trail along Emigration Creek connects to the larger trail system—you can walk here from the University.'
         },
         {
           id: 'gem-viewpoint-1',
@@ -619,11 +619,11 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/rooftop-garden-1.png',
-              alt: 'Urban rooftop garden with city skyline views',
+              alt: 'Urban rooftop garden with city skyline views'
             },
             {
               src: '/salt-lake-city/hidden-gems/rooftop-2.png',
-              alt: 'Salt Lake Library rooftop garden',
+              alt: 'Salt Lake Library rooftop garden'
             }
           ],
           address: 'Main Library, downtown SLC',
@@ -631,7 +631,7 @@ export const salt_lake_city: CityData = {
           hours: 'Library hours',
           price: 'Free',
           website: 'https://services.slcpl.org',
-          tip: 'Take the elevator to the 5th floor, then follow signs to the rooftop. The urban garden path winds past reading alcoves perfect for hiding with a book.',
+          tip: 'Take the elevator to the 5th floor, then follow signs to the rooftop. The urban garden path winds past reading alcoves perfect for hiding with a book.'
         },
         {
           id: 'gem-viewpoint-2',
@@ -642,18 +642,18 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/observation-deck-1.png',
-              alt: 'Panoramic city view from high-rise observation deck',
+              alt: 'Panoramic city view from high-rise observation deck'
             },
             {
               src: '/salt-lake-city/hidden-gems/observation-deck-2.png',
-              alt: 'View from Church Office Building observation deck',
+              alt: 'View from Church Office Building observation deck'
             }
           ],
           address: 'Church Office Building, downtown',
           coordinates: { lat: 40.7707, lng: -111.8919 },
           hours: 'Weekdays 9am-5pm',
           price: 'Free',
-          tip: 'Enter through the main lobby and tell the desk you\'re visiting the observation deck. They\'ll direct you to the express elevator.',
+          tip: 'Enter through the main lobby and tell the desk you\'re visiting the observation deck. They\'ll direct you to the express elevator.'
         },
         {
           id: 'gem-books-1',
@@ -664,11 +664,11 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/rarebooks-1.png',
-              alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop',
+              alt: 'Floor-to-ceiling rare books in narrow antiquarian bookshop'
             },
             {
               src: '/salt-lake-city/hidden-gems/rarebooks-2.png',
-              alt: 'Ken Sanders Rare Books interior',
+              alt: 'Ken Sanders Rare Books interior'
             }
           ],
           address: '268 S 200 E, Salt Lake City, UT 84111',
@@ -676,7 +676,7 @@ export const salt_lake_city: CityData = {
           hours: 'Mon-Sat 10am-6pm',
           price: 'Browsing free',
           website: 'https://www.kensandersbooks.com',
-          tip: 'Ask about Edward Abbey—Sanders has stories that never made it into the biographies.',
+          tip: 'Ask about Edward Abbey—Sanders has stories that never made it into the biographies.'
         },
         {
           id: 'gem-garden-1',
@@ -687,15 +687,15 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/peacegarden-1.png',
-              alt: 'Japanese garden with lotus flowers and water features',
+              alt: 'Japanese garden with lotus flowers and water features'
             },
             {
               src: '/salt-lake-city/hidden-gems/peacegarden-2.png',
-              alt: 'International Peace Gardens paths',
+              alt: 'International Peace Gardens paths'
             },
             {
               src: '/salt-lake-city/hidden-gems/peacegarden-3.png',
-              alt: 'Gardens from different nations at Peace Gardens',
+              alt: 'Gardens from different nations at Peace Gardens'
             }
           ],
           address: '1000 S 900 W (Jordan Park)',
@@ -703,7 +703,7 @@ export const salt_lake_city: CityData = {
           hours: '7am-10pm year-round',
           price: 'Free',
           website: 'https://www.internationalpeacegardens.org',
-          tip: 'The Japanese garden is most photogenic in early morning light. Lotus bloom July through September.',
+          tip: 'The Japanese garden is most photogenic in early morning light. Lotus bloom July through September.'
         },
         {
           id: 'gem-venue-1',
@@ -714,11 +714,11 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/kilby-1.png',
-              alt: 'Small intimate music venue with stage and crowd',
+              alt: 'Small intimate music venue with stage and crowd'
             },
             {
               src: '/salt-lake-city/hidden-gems/kilby-2.png',
-              alt: 'Kilby Court venue interior',
+              alt: 'Kilby Court venue interior'
             }
           ],
           address: '741 S Kilby Ct, Salt Lake City, UT 84101',
@@ -726,7 +726,7 @@ export const salt_lake_city: CityData = {
           hours: 'Varies by show',
           price: 'Usually $10-20',
           website: 'https://www.kilbycourt.com',
-          tip: 'Arrive early—capacity is tiny and popular shows sell out. The alley can be hard to find after dark.',
+          tip: 'Arrive early—capacity is tiny and popular shows sell out. The alley can be hard to find after dark.'
         },
         // MOVED: The Rest speakeasy moved to bars section
         // ARCHIVED: Marmalade District - not distinctive enough
@@ -736,7 +736,7 @@ export const salt_lake_city: CityData = {
         //   name: 'Marmalade District',
         // },
         // MOVED: The Pie Pizzeria moved to restaurants section
-      ],
+      ]
     },
     {
       id: 'slc-best-bars',
@@ -760,17 +760,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/bars/bar-x-1.png',
-              alt: 'Bar X interior',
+              alt: 'Bar X interior'
             },
             {
               src: '/salt-lake-city/bars/bar-x-2.png',
-              alt: 'Bar X cocktails',
+              alt: 'Bar X cocktails'
             },
             {
               src: '/salt-lake-city/bars/bar-x-3.png',
-              alt: 'Bar X atmosphere',
+              alt: 'Bar X atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Beer Bar',
@@ -787,13 +787,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/bars/beer-bar-1.png',
-              alt: 'Beer Bar interior',
+              alt: 'Beer Bar interior'
             },
             {
               src: '/salt-lake-city/bars/beer-bar-2.png',
-              alt: 'Beer Bar taps',
+              alt: 'Beer Bar taps'
             }
-          ],
+          ]
         },
         {
           name: 'White Horse',
@@ -810,21 +810,21 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/bars/white-horse-1.png',
-              alt: 'White Horse interior',
+              alt: 'White Horse interior'
             },
             {
               src: '/salt-lake-city/bars/white-horse-2.png',
-              alt: 'White Horse cocktails',
+              alt: 'White Horse cocktails'
             },
             {
               src: '/salt-lake-city/bars/white-horse-3.png',
-              alt: 'White Horse bar',
+              alt: 'White Horse bar'
             },
             {
               src: '/salt-lake-city/bars/white-horse-4.png',
-              alt: 'White Horse atmosphere',
+              alt: 'White Horse atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Whiskey Street',
@@ -841,13 +841,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/bars/whiskey-street-1.png',
-              alt: 'Whiskey Street interior',
+              alt: 'Whiskey Street interior'
             },
             {
               src: '/salt-lake-city/bars/whiskey-street-2.png',
-              alt: 'Whiskey Street bar',
+              alt: 'Whiskey Street bar'
             }
-          ],
+          ]
         },
         {
           name: 'Twilite Lounge',
@@ -860,18 +860,8 @@ export const salt_lake_city: CityData = {
           price: '$',
           hours: 'Mon-Sat 1pm-2am, Sun 11am-12am',
           website: 'https://twilitelounge.com/',
-          instagram: '@slctwilitelounge',
-          images: [
-            {
-              src: '/salt-lake-city/bars/twilite-1.png',
-              alt: 'Twilite Lounge interior',
-            },
-            {
-              src: '/salt-lake-city/bars/twilite-2.png',
-              alt: 'Twilite Lounge bar',
-            }
-          ],
-        },
+          instagram: '@slctwilitelounge'
+          },
         {
           name: 'The Rest',
           neighborhood: 'Downtown',
@@ -886,15 +876,15 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/therest-1.png',
-              alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere',
+              alt: 'Cozy speakeasy interior with dim lighting and intimate atmosphere'
             },
             {
               src: '/salt-lake-city/hidden-gems/therest-2.png',
-              alt: 'The Rest speakeasy dining room',
+              alt: 'The Rest speakeasy dining room'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'slc-best-cafes',
@@ -918,17 +908,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/cafe-on-1st-1.png',
-              alt: 'Café on 1st interior',
+              alt: 'Café on 1st interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/cafe-on-1st-2.png',
-              alt: 'Café on 1st food',
+              alt: 'Café on 1st food'
             },
             {
               src: '/salt-lake-city/coffee-shops/cafe-on-1st-3.png',
-              alt: 'Café on 1st atmosphere',
+              alt: 'Café on 1st atmosphere'
             }
-          ],
+          ]
         },
         {
           name: '3 Cups',
@@ -945,17 +935,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/3-cups-1.png',
-              alt: '3 Cups interior',
+              alt: '3 Cups interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/3-cups-2.png',
-              alt: '3 Cups colorful decor',
+              alt: '3 Cups colorful decor'
             },
             {
               src: '/salt-lake-city/coffee-shops/3-cups-3.png',
-              alt: '3 Cups atmosphere',
+              alt: '3 Cups atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Blue Copper Coffee',
@@ -972,15 +962,15 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/blue-copper-1.png',
-              alt: 'Blue Copper Coffee interior',
+              alt: 'Blue Copper Coffee interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/blue-copper-2.png',
-              alt: 'Blue Copper Coffee bar',
+              alt: 'Blue Copper Coffee bar'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'slc-best-restaurants',
@@ -1004,26 +994,26 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/restaurants/red-iguana-1.png',
-              alt: 'Red Iguana restaurant exterior',
+              alt: 'Red Iguana restaurant exterior'
             },
             {
               src: '/salt-lake-city/restaurants/red-iguana-2.png',
-              alt: 'Red Iguana mole dishes',
+              alt: 'Red Iguana mole dishes'
             },
             {
               src: '/salt-lake-city/restaurants/red-iguana-3.png',
-              alt: 'Red Iguana interior dining room',
+              alt: 'Red Iguana interior dining room'
             },
             {
               src: '/salt-lake-city/restaurants/red-iguana-4.png',
-              alt: 'Red Iguana Mexican food',
+              alt: 'Red Iguana Mexican food'
             },
             {
               src: '/salt-lake-city/restaurants/red-iguana-5.png',
-              alt: 'Red Iguana atmosphere',
+              alt: 'Red Iguana atmosphere'
             }
           ],
-          menuImage: { src: '/salt-lake-city/restaurants/red-iguana-menu.png', alt: 'Red Iguana menu' },
+          menuImage: { src: '/salt-lake-city/restaurants/red-iguana-menu.png', alt: 'Red Iguana menu' }
         },
         {
           name: 'HSL',
@@ -1040,22 +1030,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/restaurants/hsl-1.png',
-              alt: 'HSL restaurant interior',
+              alt: 'HSL restaurant interior'
             },
             {
               src: '/salt-lake-city/restaurants/hsl-2.png',
-              alt: 'HSL farm-to-table dishes',
+              alt: 'HSL farm-to-table dishes'
             },
             {
               src: '/salt-lake-city/restaurants/hsl-3.png',
-              alt: 'HSL seasonal cuisine',
+              alt: 'HSL seasonal cuisine'
             },
             {
               src: '/salt-lake-city/restaurants/hsl-4.png',
-              alt: 'HSL dining atmosphere',
+              alt: 'HSL dining atmosphere'
             }
           ],
-          menuImage: { src: '/salt-lake-city/restaurants/hsl-menu.png', alt: 'HSL menu' },
+          menuImage: { src: '/salt-lake-city/restaurants/hsl-menu.png', alt: 'HSL menu' }
         },
         {
           name: 'Pretty Bird',
@@ -1072,22 +1062,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/restaurants/pretrty-bird-1.png',
-              alt: 'Pretty Bird restaurant',
+              alt: 'Pretty Bird restaurant'
             },
             {
               src: '/salt-lake-city/restaurants/pretty-bird-2.png',
-              alt: 'Pretty Bird hot chicken sandwich',
+              alt: 'Pretty Bird hot chicken sandwich'
             },
             {
               src: '/salt-lake-city/restaurants/pretty-bird-3.png',
-              alt: 'Pretty Bird interior',
+              alt: 'Pretty Bird interior'
             },
             {
               src: '/salt-lake-city/restaurants/pretty-bird-4.png',
-              alt: 'Pretty Bird dining atmosphere',
+              alt: 'Pretty Bird dining atmosphere'
             }
           ],
-          menuImage: { src: '/salt-lake-city/restaurants/pretty-bird-menu.png', alt: 'Pretty Bird menu' },
+          menuImage: { src: '/salt-lake-city/restaurants/pretty-bird-menu.png', alt: 'Pretty Bird menu' }
         },
         {
           name: 'Takashi',
@@ -1104,22 +1094,22 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/restaurants/takashi-1.png',
-              alt: 'Takashi restaurant interior',
+              alt: 'Takashi restaurant interior'
             },
             {
               src: '/salt-lake-city/restaurants/takashi-2.png',
-              alt: 'Takashi sushi platter',
+              alt: 'Takashi sushi platter'
             },
             {
               src: '/salt-lake-city/restaurants/takashi-3.png',
-              alt: 'Takashi omakase experience',
+              alt: 'Takashi omakase experience'
             },
             {
               src: '/salt-lake-city/restaurants/takashi-4.png',
-              alt: 'Takashi dining atmosphere',
+              alt: 'Takashi dining atmosphere'
             }
           ],
-          menuImage: { src: '/salt-lake-city/restaurants/takashi-menu.png', alt: 'Takashi menu' },
+          menuImage: { src: '/salt-lake-city/restaurants/takashi-menu.png', alt: 'Takashi menu' }
         },
         {
           name: 'The Pie Pizzeria (Underground)',
@@ -1135,19 +1125,19 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/hidden-gems/thepie-1.png',
-              alt: 'Graffiti-covered walls inside The Pie Underground pizzeria',
+              alt: 'Graffiti-covered walls inside The Pie Underground pizzeria'
             },
             {
               src: '/salt-lake-city/hidden-gems/thepie-2.png',
-              alt: 'The Pie Pizzeria interior',
+              alt: 'The Pie Pizzeria interior'
             },
             {
               src: '/salt-lake-city/hidden-gems/thepie-3.png',
-              alt: 'The Pie Underground atmosphere',
+              alt: 'The Pie Underground atmosphere'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'slc-obscure-history',
@@ -1165,8 +1155,8 @@ export const salt_lake_city: CityData = {
             name: 'Mountain Meadows, Washington County',
       url: 'https://www.google.com/maps/search/?api=1&query=Mountain%20Meadows%2C%20Washington%20County%20Salt%20Lake%20City',
             coordinates: { lat: 37.4786, lng: -113.6458 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-2',
@@ -1179,8 +1169,8 @@ export const salt_lake_city: CityData = {
             name: 'Salt Lake Valley',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Valley%20Salt%20Lake%20City',
             coordinates: { lat: 40.7608, lng: -111.8910 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-3',
@@ -1193,13 +1183,13 @@ export const salt_lake_city: CityData = {
             name: 'Temple Square',
       url: 'https://www.google.com/maps/search/?api=1&query=Temple%20Square%20Salt%20Lake%20City',
             coordinates: { lat: 40.7706, lng: -111.8919 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'slc-history-4',
@@ -1208,17 +1198,13 @@ export const salt_lake_city: CityData = {
           title: 'Japanese Americans Were Imprisoned at Topaz',
           body: 'During World War II, over 11,000 Japanese Americans were imprisoned at the Topaz Relocation Center in Utah\'s desert, 140 miles southwest of Salt Lake City. Conditions were harsh — summer temperatures exceeded 100°F, winter dropped below zero, and dust storms were constant. One internee was shot by guards for walking too close to the fence.',
           source: 'Topaz Museum',
-          image: {
-            src: '/images/history/topaz-camp.jpg',
-            alt: 'Aerial view of Topaz internment camp barracks in Utah desert',
-            year: '1943',
-          },
+          
           location: {
             name: 'Topaz, Millard County',
       url: 'https://www.google.com/maps/search/?api=1&query=Topaz%2C%20Millard%20County%20Salt%20Lake%20City',
             coordinates: { lat: 39.4094, lng: -112.7742 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-5',
@@ -1227,16 +1213,13 @@ export const salt_lake_city: CityData = {
           title: 'The Transcontinental Railroad Changed Everything',
           body: 'When the Golden Spike was driven at Promontory Summit in 1869, it ended Mormon isolation. Brigham Young had welcomed the railroad but feared gentile influence. He was right to worry — within a generation, non-Mormons flooded Utah, transforming politics, commerce, and culture.',
           source: 'Utah State Historical Society',
-          image: {
-            src: '/images/history/golden-spike.jpg',
-            alt: 'Ceremony at Promontory Summit with locomotives meeting',
-                      },
+          
           location: {
             name: 'Promontory Summit',
       url: 'https://www.google.com/maps/search/?api=1&query=Promontory%20Summit%20Salt%20Lake%20City',
             coordinates: { lat: 41.6222, lng: -112.5511 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-6',
@@ -1249,8 +1232,8 @@ export const salt_lake_city: CityData = {
             name: 'Salt Lake County',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20County%20Salt%20Lake%20City',
             coordinates: { lat: 40.7608, lng: -111.8910 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-7',
@@ -1263,8 +1246,8 @@ export const salt_lake_city: CityData = {
             name: 'Federal Heights',
       url: 'https://www.google.com/maps/search/?api=1&query=Federal%20Heights%20Salt%20Lake%20City',
             coordinates: { lat: 40.7711, lng: -111.8547 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'slc-history-8',
@@ -1277,10 +1260,10 @@ export const salt_lake_city: CityData = {
             name: 'This Is The Place Heritage Park',
       url: 'https://www.google.com/maps/search/?api=1&query=This%20Is%20The%20Place%20Heritage%20Park%20Salt%20Lake%20City',
             coordinates: { lat: 40.7522, lng: -111.8147 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'slc-best-coffee-shops',
@@ -1304,9 +1287,9 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/rose.png',
-              alt: 'The Rose Establishment interior',
-            },
-          ],
+              alt: 'The Rose Establishment interior'
+            }
+          ]
         },
         {
           name: 'Publik Coffee',
@@ -1323,21 +1306,21 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/publik-01.png',
-              alt: 'Publik Coffee interior',
+              alt: 'Publik Coffee interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/publik-2.png',
-              alt: 'Publik Coffee bar',
+              alt: 'Publik Coffee bar'
             },
             {
               src: '/salt-lake-city/coffee-shops/publik-3.png',
-              alt: 'Publik Coffee drinks',
+              alt: 'Publik Coffee drinks'
             },
             {
               src: '/salt-lake-city/coffee-shops/publik-4.png',
-              alt: 'Publik Coffee atmosphere',
+              alt: 'Publik Coffee atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'Caffe d\'Bolla',
@@ -1354,9 +1337,9 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/dbolla.png',
-              alt: 'Caffe d\'Bolla siphon brewing',
-            },
-          ],
+              alt: 'Caffe d\'Bolla siphon brewing'
+            }
+          ]
         },
         {
           name: 'Sugar House Coffee',
@@ -1373,17 +1356,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/sugarhouse-1.png',
-              alt: 'Sugar House Coffee interior',
+              alt: 'Sugar House Coffee interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/sugarhouse-2.png',
-              alt: 'Sugar House Coffee atmosphere',
+              alt: 'Sugar House Coffee atmosphere'
             },
             {
               src: '/salt-lake-city/coffee-shops/sugarhouse-3.png',
-              alt: 'Sugar House Coffee vibe',
+              alt: 'Sugar House Coffee vibe'
             }
-          ],
+          ]
         },
         {
           name: 'Jack Mormon Coffee',
@@ -1399,17 +1382,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/jack-mormon-1.png',
-              alt: 'Jack Mormon Coffee interior',
+              alt: 'Jack Mormon Coffee interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/jack-mormon-2.png',
-              alt: 'Jack Mormon Coffee drinks',
+              alt: 'Jack Mormon Coffee drinks'
             },
             {
               src: '/salt-lake-city/coffee-shops/jack-mormon-3.png',
-              alt: 'Jack Mormon Coffee atmosphere',
+              alt: 'Jack Mormon Coffee atmosphere'
             }
-          ],
+          ]
         },
         {
           name: 'La Barba',
@@ -1426,15 +1409,15 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/coffee-shops/barba-1.png',
-              alt: 'La Barba interior',
+              alt: 'La Barba interior'
             },
             {
               src: '/salt-lake-city/coffee-shops/barba-2.png',
-              alt: 'La Barba coffee bar',
+              alt: 'La Barba coffee bar'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'slc-dark-history',
@@ -1455,13 +1438,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/gary-gilmore.png',
-              alt: 'Gary Gilmore mugshot from 1976',
+              alt: 'Gary Gilmore mugshot from 1976'
             }
           ],
           location: {
             name: 'Utah State Prison, Draper',
       url: 'https://www.google.com/maps/search/?api=1&query=Utah%20State%20Prison%2C%20Draper%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
@@ -1469,41 +1452,41 @@ export const salt_lake_city: CityData = {
               title: 'The Executioner\'s Song',
               author: 'Norman Mailer',
               isbn: '9780375700811',
-              url: 'https://www.amazon.com/Executioners-Song-Norman-Mailer/dp/0375700811',
+              url: 'https://www.amazon.com/Executioners-Song-Norman-Mailer/dp/0375700811'
             },
             {
               type: 'film',
               title: 'The Executioner\'s Song',
               director: 'Lawrence Schiller',
               year: '1982',
-              url: 'https://www.imdb.com/title/tt0083891/',
+              url: 'https://www.imdb.com/title/tt0083891/'
             },
             {
               type: 'documentary',
               title: 'Dead Man Talking: The Execution of Gary Gilmore',
               platform: 'REELZ',
-              url: 'https://tv.apple.com/us/movie/dead-man-talking-the-execution-of-gary-gilmore/umc.cmc.2vzk0mqmsdf8nx8nx8nx8nx8n',
+              url: 'https://tv.apple.com/us/movie/dead-man-talking-the-execution-of-gary-gilmore/umc.cmc.2vzk0mqmsdf8nx8nx8nx8nx8n'
             },
             {
               type: 'video',
               title: 'Gary Gilmore: The First Execution in America After 10 Years',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=GaryGilmore',
+              url: 'https://www.youtube.com/watch?v=GaryGilmore'
             },
             {
               type: 'podcast',
               title: 'Gary Gilmore and The Executioner\'s Song',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh',
+              url: 'https://open.spotify.com/show/3Jk3bZCB3kBKCzDtdJaKUh'
             },
             {
               type: 'article',
               title: 'Gary Gilmore\'s Last Words',
               publisher: 'Salt Lake Tribune',
-              url: 'https://www.sltrib.com/news/gary-gilmore-execution',
+              url: 'https://www.sltrib.com/news/gary-gilmore-execution'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-2',
@@ -1518,40 +1501,40 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/grave-robber.png',
-              alt: 'Antelope Island in the Great Salt Lake where Jean Baptiste, the grave robber, was banished in 1862',
+              alt: 'Antelope Island in the Great Salt Lake where Jean Baptiste, the grave robber, was banished in 1862'
             }
           ],
           location: {
             name: 'Antelope Island State Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Antelope%20Island%20State%20Park%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'The Dark Legend of Jean Baptiste',
               publisher: 'Visit Utah',
-              url: 'https://historytogo.utah.gov/grave-robber-jean-baptiste/',
+              url: 'https://historytogo.utah.gov/grave-robber-jean-baptiste/'
             },
             {
               type: 'article',
               title: 'Antelope Island\'s Haunted History',
               publisher: 'Salt Lake Magazine',
-              url: 'https://www.saltlakemagazine.com/antelope-island-haunted-jean-baptiste/',
+              url: 'https://www.saltlakemagazine.com/antelope-island-haunted-jean-baptiste/'
             },
             {
               type: 'video',
               title: 'The Ghost of Jean Baptiste - Antelope Island Mystery',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=JeanBaptiste',
+              url: 'https://www.youtube.com/watch?v=JeanBaptiste'
             },
             {
               type: 'article',
               title: 'Utah\'s Most Haunted: Antelope Island',
               publisher: 'KSL',
-              url: 'https://en.wikipedia.org/wiki/Jean_Baptiste_(grave_robber)',
+              url: 'https://en.wikipedia.org/wiki/Jean_Baptiste_(grave_robber)'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-3',
@@ -1563,21 +1546,21 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/hi-fi-1.png',
-              alt: 'The Hi-Fi Shop in Ogden, Utah where the brutal 1974 murders took place',
+              alt: 'The Hi-Fi Shop in Ogden, Utah where the brutal 1974 murders took place'
             },
             {
               src: '/salt-lake-city/dark-history/hi-fi-2.png',
-              alt: 'Historic Ogden, Utah - site of the infamous Hi-Fi murders',
+              alt: 'Historic Ogden, Utah - site of the infamous Hi-Fi murders'
             },
             {
               src: '/salt-lake-city/dark-history/hi-fi-3.png',
-              alt: 'Memorial and remembrance of the Hi-Fi murders victims',
+              alt: 'Memorial and remembrance of the Hi-Fi murders victims'
             }
           ],
           location: {
             name: '2323 Washington Blvd, Ogden',
       url: 'https://www.google.com/maps/search/?api=1&query=2323%20Washington%20Blvd%2C%20Ogden%20Salt%20Lake%20City',
-            stillExists: false,
+            stillExists: false
           },
           sources: [
             {
@@ -1585,33 +1568,33 @@ export const salt_lake_city: CityData = {
               title: 'Victim: The Other Side of Murder',
               author: 'Gary Kinder',
               isbn: '9780440193357',
-              url: 'https://www.amazon.com/Victim-Other-Side-Murder/dp/0440193354',
+              url: 'https://www.amazon.com/Victim-Other-Side-Murder/dp/0440193354'
             },
             {
               type: 'article',
               title: 'The Ogden Hi-Fi Shop Murders',
               publisher: 'ABC4 Utah',
-              url: 'https://www.abc4.com/news/local-news/ogden-hi-fi-murders/',
+              url: 'https://www.abc4.com/news/local-news/ogden-hi-fi-murders/'
             },
             {
               type: 'documentary',
               title: 'The Hi-Fi Murders',
               platform: 'Oxygen',
-              url: 'https://www.oxygen.com/snapped-notorious/season-1/episode-7/videos/the-ogden-hi-fi-murders',
+              url: 'https://www.oxygen.com/snapped-notorious/season-1/episode-7/videos/the-ogden-hi-fi-murders'
             },
             {
               type: 'video',
               title: 'The Ogden Hi-Fi Murders - A Crime So Brutal',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=oaWH7pCFqd8',
+              url: 'https://www.youtube.com/watch?v=oaWH7pCFqd8'
             },
             {
               type: 'article',
               title: 'Hi-Fi Murders Digital Exhibit',
               publisher: 'Weber State University',
-              url: 'https://cdm.weber.edu/digital/collection/p15795coll15',
+              url: 'https://cdm.weber.edu/digital/collection/p15795coll15'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-4',
@@ -1623,13 +1606,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/susan-powel.png',
-              alt: 'Susan Powell, who disappeared from West Valley City in 2009 and has never been found',
+              alt: 'Susan Powell, who disappeared from West Valley City in 2009 and has never been found'
             }
           ],
           location: {
             name: 'West Valley City / West Desert',
       url: 'https://www.google.com/maps/search/?api=1&query=West%20Valley%20City%20%2F%20West%20Desert%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
@@ -1637,40 +1620,40 @@ export const salt_lake_city: CityData = {
               title: 'Cold: Season 1 - The Search for Susan Powell',
               show: 'KSL Podcasts',
               platform: 'Spotify',
-              url: 'https://thecoldpodcast.com/season-1/',
+              url: 'https://thecoldpodcast.com/season-1/'
             },
             {
               type: 'documentary',
               title: 'The Disappearance of Susan Cox Powell',
               platform: 'ABC 20/20',
-              url: 'https://abc.com/shows/2020/episode-guide/2020-susan-powell',
+              url: 'https://abc.com/shows/2020/episode-guide/2020-susan-powell'
             },
             {
               type: 'video',
               title: 'Susan Powell: An ID Murder Mystery',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=SusanPowell',
+              url: 'https://www.youtube.com/watch?v=SusanPowell'
             },
             {
               type: 'article',
               title: 'The Susan Powell Case: Timeline',
               publisher: 'KSL',
-              url: 'https://www.ksl.com/article/46429410/the-susan-powell-case-a-timeline',
+              url: 'https://www.ksl.com/article/46429410/the-susan-powell-case-a-timeline'
             },
             {
               type: 'article',
               title: 'Susan Powell\'s Family Still Searching',
               publisher: 'Salt Lake Tribune',
-              url: 'https://www.sltrib.com/news/susan-powell-family-search',
+              url: 'https://www.sltrib.com/news/susan-powell-family-search'
             },
             {
               type: 'documentary',
               title: 'Susan Powell: An ID Murder Mystery',
               platform: 'Investigation Discovery',
               year: '2019',
-              url: 'https://www.investigationdiscovery.com/shows/susan-powell',
+              url: 'https://www.investigationdiscovery.com/shows/susan-powell'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-5',
@@ -1684,47 +1667,47 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/mountain-meadows.png',
-              alt: 'Monument at Mountain Meadows Massacre site in southern Utah',
+              alt: 'Monument at Mountain Meadows Massacre site in southern Utah'
             }
           ],
           location: {
             name: 'Mountain Meadows, Washington County',
       url: 'https://www.google.com/maps/search/?api=1&query=Mountain%20Meadows%2C%20Washington%20County%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'documentary',
               title: 'Burying the Past: Legacy of the Mountain Meadows Massacre',
               platform: 'PBS American Experience',
-              url: 'https://www.pbs.org/wgbh/americanexperience/films/mormons/',
+              url: 'https://www.pbs.org/wgbh/americanexperience/films/mormons/'
             },
             {
               type: 'book',
               title: 'Massacre at Mountain Meadows',
               author: 'Ronald W. Walker, Richard E. Turley Jr., Glen M. Leonard',
               isbn: '9780195160345',
-              url: 'https://www.amazon.com/Massacre-Mountain-Meadows-Ronald-Walker/dp/0195160347',
+              url: 'https://www.amazon.com/Massacre-Mountain-Meadows-Ronald-Walker/dp/0195160347'
             },
             {
               type: 'article',
               title: 'The Mountain Meadows Massacre',
               publisher: 'National Geographic',
-              url: 'https://www.nationalgeographic.com/history/article/mountain-meadows-massacre',
+              url: 'https://www.nationalgeographic.com/history/article/mountain-meadows-massacre'
             },
             {
               type: 'video',
               title: 'Mountain Meadows Massacre - Dark History of Utah',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=aVxEVZ7hkn0',
+              url: 'https://www.youtube.com/watch?v=aVxEVZ7hkn0'
             },
             {
               type: 'article',
               title: 'Mountain Meadows Massacre',
               publisher: 'American Heritage',
-              url: 'https://www.americanheritage.com/mountain-meadows-massacre',
+              url: 'https://www.americanheritage.com/mountain-meadows-massacre'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-6',
@@ -1737,40 +1720,40 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/purple-lady.png',
-              alt: 'Rio Grande Depot in Salt Lake City, said to be haunted by the Purple Lady',
+              alt: 'Rio Grande Depot in Salt Lake City, said to be haunted by the Purple Lady'
             }
           ],
           location: {
             name: 'Rio Grande Depot, 300 S Rio Grande St',
       url: 'https://www.google.com/maps/search/?api=1&query=Rio%20Grande%20Depot%2C%20300%20S%20Rio%20Grande%20St%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'The Purple Lady of Rio Grande Depot',
               publisher: 'Salt Lake Magazine',
-              url: 'https://www.saltlakemagazine.com/purple-lady-rio-grande-depot/',
+              url: 'https://www.saltlakemagazine.com/purple-lady-rio-grande-depot/'
             },
             {
               type: 'article',
               title: 'Haunted Rio Grande Depot Ghost Tour',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/salt-lake-city/haunted-places/rio-grande-depot/',
+              url: 'https://usghostadventures.com/salt-lake-city/haunted-places/rio-grande-depot/'
             },
             {
               type: 'video',
               title: 'The Purple Lady Ghost of Salt Lake City',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=PurpleLady',
+              url: 'https://www.youtube.com/watch?v=PurpleLady'
             },
             {
               type: 'article',
               title: 'The Purple Lady of Rio Grande Depot',
               publisher: 'Haunted US',
-              url: 'https://www.hauntedus.com/utah/rio-grande-depot/',
-            },
-          ],
+              url: 'https://www.hauntedus.com/utah/rio-grande-depot/'
+            }
+          ]
         },
         {
           id: 'slc-dark-7',
@@ -1783,7 +1766,7 @@ export const salt_lake_city: CityData = {
           location: {
             name: 'Salt Lake Valley, Utah County',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20Valley%2C%20Utah%20County%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
@@ -1791,41 +1774,41 @@ export const salt_lake_city: CityData = {
               title: 'Conversations with a Killer: The Ted Bundy Tapes',
               platform: 'Netflix',
               year: '2019',
-              url: 'https://www.netflix.com/title/80226612',
+              url: 'https://www.netflix.com/title/80226612'
             },
             {
               type: 'documentary',
               title: 'Hunting Bundy: Chase for the Devil - Episode 1: The Devil Comes to Utah',
               platform: 'Fox Nation',
               year: '2025',
-              url: 'https://www.foxnation.com/shows/hunting-bundy',
+              url: 'https://www.foxnation.com/shows/hunting-bundy'
             },
             {
               type: 'article',
               title: 'Ted Bundy\'s Utah Murders',
               publisher: 'Salt Lake Tribune',
-              url: 'https://www.sltrib.com/news/2019/01/24/ted-bundys-utah-murders/',
+              url: 'https://www.sltrib.com/news/2019/01/24/ted-bundys-utah-murders/'
             },
             {
               type: 'video',
               title: 'Ted Bundy in Utah: The Untold Story',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=TedBundyUtah',
+              url: 'https://www.youtube.com/watch?v=TedBundyUtah'
             },
             {
               type: 'podcast',
               title: 'Ted Bundy: Mind of a Monster',
               platform: 'Apple Podcasts',
               year: '2024',
-              url: 'https://podcasts.apple.com/us/podcast/ted-bundy-mind-of-a-monster',
+              url: 'https://podcasts.apple.com/us/podcast/ted-bundy-mind-of-a-monster'
             },
             {
               type: 'article',
               title: 'The Utah Connection',
               publisher: 'KSL',
-              url: 'https://www.ksl.com/article/ted-bundy-utah-victims',
+              url: 'https://www.ksl.com/article/ted-bundy-utah-victims'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-8',
@@ -1837,40 +1820,40 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/rosie.png',
-              alt: 'Memorial for Rosie Tapia, the 6-year-old girl abducted and murdered in Salt Lake City in 1995',
+              alt: 'Memorial for Rosie Tapia, the 6-year-old girl abducted and murdered in Salt Lake City in 1995'
             }
           ],
           location: {
             name: '800 West, Salt Lake City',
       url: 'https://www.google.com/maps/search/?api=1&query=800%20West%2C%20Salt%20Lake%20City%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Rosie Tapia Murder: 25 Years Later',
               publisher: 'ABC4 Utah',
-              url: 'https://www.abc4.com/news/rosie-tapia-murder-25-years/',
+              url: 'https://www.abc4.com/news/rosie-tapia-murder-25-years/'
             },
             {
               type: 'article',
               title: 'Rosie Tapia Cold Case',
               publisher: 'Salt Lake City Police Department',
-              url: 'https://www.slcpd.com/cold-cases/',
+              url: 'https://www.slcpd.com/cold-cases/'
             },
             {
               type: 'video',
               title: 'Who Killed Rosie Tapia? Utah\'s Coldest Case',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=RosieTapia',
+              url: 'https://www.youtube.com/watch?v=RosieTapia'
             },
             {
               type: 'article',
               title: 'Justice for Rosie Tapia',
               publisher: 'Salt Lake City Police Department',
-              url: 'https://www.slcpd.com/cold-cases/tapia-rosie/',
-            },
-          ],
+              url: 'https://www.slcpd.com/cold-cases/tapia-rosie/'
+            }
+          ]
         },
         {
           id: 'slc-dark-9',
@@ -1883,51 +1866,51 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/arthur-bishop-1.png',
-              alt: 'Arthur Gary Bishop - the Eagle Scout serial killer who terrorized Salt Lake County',
+              alt: 'Arthur Gary Bishop - the Eagle Scout serial killer who terrorized Salt Lake County'
             },
             {
               src: '/salt-lake-city/dark-history/arthur-bishop-2.png',
-              alt: 'Salt Lake County courthouse where Arthur Gary Bishop was tried',
+              alt: 'Salt Lake County courthouse where Arthur Gary Bishop was tried'
             }
           ],
           location: {
             name: 'Salt Lake County',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20County%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Arthur Gary Bishop: The Serial Killer Who Hid Behind Faith',
               publisher: 'Deseret News',
-              url: 'https://www.deseret.com/utah/arthur-gary-bishop-serial-killer',
+              url: 'https://www.deseret.com/utah/arthur-gary-bishop-serial-killer'
             },
             {
               type: 'video',
               title: 'Arthur Gary Bishop - The Utah Child Killer',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=ArthurBishop',
+              url: 'https://www.youtube.com/watch?v=ArthurBishop'
             },
             {
               type: 'article',
               title: 'The Arthur Gary Bishop Case',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Arthur_Gary_Bishop',
+              url: 'https://en.wikipedia.org/wiki/Arthur_Gary_Bishop'
             },
             {
               type: 'podcast',
               title: 'Arthur Gary Bishop: Eagle Scout Serial Killer',
               show: 'Serial Killers',
               platform: 'Spotify',
-              url: 'https://open.spotify.com/show/serial-killers-arthur-bishop',
+              url: 'https://open.spotify.com/show/serial-killers-arthur-bishop'
             },
             {
               type: 'article',
               title: 'The Arthur Gary Bishop Case',
               publisher: '890 KDXU',
-              url: 'https://kdxu.com/news/local-news/arthur-gary-bishop-case',
+              url: 'https://kdxu.com/news/local-news/arthur-gary-bishop-case'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-10',
@@ -1939,13 +1922,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/lafferty.png',
-              alt: 'The Lafferty brothers who murdered Brenda and Erica Lafferty in American Fork, Utah',
+              alt: 'The Lafferty brothers who murdered Brenda and Erica Lafferty in American Fork, Utah'
             }
           ],
           location: {
             name: 'American Fork',
       url: 'https://www.google.com/maps/search/?api=1&query=American%20Fork%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
@@ -1954,41 +1937,41 @@ export const salt_lake_city: CityData = {
               author: 'Jon Krakauer',
               isbn: '9781400032808',
               year: '2003',
-              url: 'https://www.amazon.com/Under-Banner-Heaven-Story-Violent/dp/1400032806',
+              url: 'https://www.amazon.com/Under-Banner-Heaven-Story-Violent/dp/1400032806'
             },
             {
               type: 'documentary',
               title: 'Under the Banner of Heaven',
               platform: 'FX/Hulu',
               year: '2022',
-              url: 'https://www.hulu.com/series/under-the-banner-of-heaven',
+              url: 'https://www.hulu.com/series/under-the-banner-of-heaven'
             },
             {
               type: 'video',
               title: 'The Lafferty Murders: Under the Banner of Heaven',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=LaffertyMurders',
+              url: 'https://www.youtube.com/watch?v=LaffertyMurders'
             },
             {
               type: 'podcast',
               title: 'Under the Banner of Heaven - Lafferty Murders',
               show: 'Real Crime Profile',
               platform: 'Apple Podcasts',
-              url: 'https://www.hulu.com/series/under-the-banner-of-heaven',
+              url: 'https://www.hulu.com/series/under-the-banner-of-heaven'
             },
             {
               type: 'article',
               title: 'The Lafferty Murders: 40 Years Later',
               publisher: 'Salt Lake Tribune',
-              url: 'https://www.sltrib.com/news/lafferty-murders-40-years',
+              url: 'https://www.sltrib.com/news/lafferty-murders-40-years'
             },
             {
               type: 'article',
               title: 'Remembering Brenda and Erica Lafferty',
               publisher: 'Deseret News',
-              url: 'https://www.deseret.com/utah/lafferty-murders-brenda-erica',
+              url: 'https://www.deseret.com/utah/lafferty-murders-brenda-erica'
             }
-          ],
+          ]
         },
         {
           id: 'slc-dark-11',
@@ -2000,42 +1983,42 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/dark-history/lily-gray.png',
-              alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666" in Salt Lake City Cemetery',
+              alt: 'Lilly E. Gray\'s mysterious headstone marked "Victim of the Beast 666" in Salt Lake City Cemetery'
             }
           ],
           location: {
             name: 'Salt Lake City Cemetery, Section X1',
       url: 'https://www.google.com/maps/search/?api=1&query=Salt%20Lake%20City%20Cemetery%2C%20Section%20X1%20Salt%20Lake%20City',
-            stillExists: true,
+            stillExists: true
           },
           sources: [
             {
               type: 'article',
               title: 'Victim of the Beast 666',
               publisher: 'Atlas Obscura',
-              url: 'https://www.atlasobscura.com/places/victim-of-the-beast-666',
+              url: 'https://www.atlasobscura.com/places/victim-of-the-beast-666'
             },
             {
               type: 'article',
               title: 'The Mystery of Lilly E. Gray\'s Headstone',
               publisher: 'Salt Lake Magazine',
-              url: 'https://www.saltlakemagazine.com/lilly-gray-victim-beast-666/',
+              url: 'https://www.saltlakemagazine.com/lilly-gray-victim-beast-666/'
             },
             {
               type: 'video',
               title: 'Victim of the Beast 666 - Utah\'s Most Mysterious Grave',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=Beast666',
+              url: 'https://www.youtube.com/watch?v=Beast666'
             },
             {
               type: 'article',
               title: 'Utah\'s Strangest Gravestone',
               publisher: 'Deseret News',
-              url: 'https://www.deseret.com/utah/lilly-gray-beast-666-headstone',
+              url: 'https://www.deseret.com/utah/lilly-gray-beast-666-headstone'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'slc-lost-loved',
@@ -2056,25 +2039,25 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/current-1.png',
-              alt: 'Current Fish & Oyster restaurant interior',
+              alt: 'Current Fish & Oyster restaurant interior'
             },
             {
               src: '/salt-lake-city/lost-loved/current-2.png',
-              alt: 'Current Fish & Oyster raw bar',
+              alt: 'Current Fish & Oyster raw bar'
             },
             {
               src: '/salt-lake-city/lost-loved/current-3.png',
-              alt: 'Current Fish & Oyster dining room',
+              alt: 'Current Fish & Oyster dining room'
             },
             {
               src: '/salt-lake-city/lost-loved/current-5.png',
-              alt: 'Current Fish & Oyster dishes',
+              alt: 'Current Fish & Oyster dishes'
             },
             {
               src: '/salt-lake-city/lost-loved/current-6.png',
-              alt: 'Current Fish & Oyster seafood selection',
+              alt: 'Current Fish & Oyster seafood selection'
             }
-          ],
+          ]
         },
         {
           id: 'lost-2',
@@ -2088,17 +2071,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/zephr-1.png',
-              alt: 'The Zephyr Club exterior with art deco facade',
+              alt: 'The Zephyr Club exterior with art deco facade'
             },
             {
               src: '/salt-lake-city/lost-loved/zephr-2.png',
-              alt: 'The Zephyr Club interior stage',
+              alt: 'The Zephyr Club interior stage'
             },
             {
               src: '/salt-lake-city/lost-loved/zephyr-3.png',
-              alt: 'The Zephyr Club live performance',
+              alt: 'The Zephyr Club live performance'
             }
-          ],
+          ]
         },
         {
           id: 'lost-3',
@@ -2112,17 +2095,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/trainingtable-1.png',
-              alt: 'The Training Table restaurant booth with table phone',
+              alt: 'The Training Table restaurant booth with table phone'
             },
             {
               src: '/salt-lake-city/lost-loved/trainingtable-2.png',
-              alt: 'The Training Table cheese fries',
+              alt: 'The Training Table cheese fries'
             },
             {
               src: '/salt-lake-city/lost-loved/trainingtable-3.png',
-              alt: 'The Training Table interior',
+              alt: 'The Training Table interior'
             }
-          ],
+          ]
         },
         {
           id: 'lost-4',
@@ -2136,17 +2119,17 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/zcmi-01.png',
-              alt: 'ZCMI Center mall interior before demolition',
+              alt: 'ZCMI Center mall interior before demolition'
             },
             {
               src: '/salt-lake-city/lost-loved/zcmi-2.png',
-              alt: 'ZCMI department store exterior',
+              alt: 'ZCMI department store exterior'
             },
             {
               src: '/salt-lake-city/lost-loved/zcmi-3.png',
-              alt: 'Crossroads Plaza shopping center',
+              alt: 'Crossroads Plaza shopping center'
             }
-          ],
+          ]
         },
         {
           id: 'lost-5',
@@ -2162,13 +2145,13 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/saltair-1.png',
-              alt: 'Historic Saltair Resort on the Great Salt Lake',
+              alt: 'Historic Saltair Resort on the Great Salt Lake'
             },
             {
               src: '/salt-lake-city/lost-loved/saltair-2.png',
-              alt: 'Saltair Resort pavilion and beach',
+              alt: 'Saltair Resort pavilion and beach'
             }
-          ],
+          ]
         },
         {
           id: 'lost-6',
@@ -2182,19 +2165,19 @@ export const salt_lake_city: CityData = {
           images: [
             {
               src: '/salt-lake-city/lost-loved/cedars-1.png',
-              alt: 'Cedars of Lebanon restaurant exterior',
+              alt: 'Cedars of Lebanon restaurant exterior'
             },
             {
               src: '/salt-lake-city/lost-loved/cedars-2.png',
-              alt: 'Cedars of Lebanon mezze platter',
+              alt: 'Cedars of Lebanon mezze platter'
             },
             {
               src: '/salt-lake-city/lost-loved/cedars-3.png',
-              alt: 'Cedars of Lebanon dining room',
+              alt: 'Cedars of Lebanon dining room'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     }
-  ],
+  ]
 }

@@ -8,7 +8,7 @@ export const dallas: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Dallas insists on its own greatness while wrestling with its past. From illegal massages to the invention of the microchip, the Metroplex is full of contradictions.',
+      content: 'Dallas insists on its own greatness while wrestling with its past. From illegal massages to the invention of the microchip, the Metroplex is full of contradictions.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const dallas: CityData = {
       description: 'How a city with no natural advantages became the capital of Texas ambition.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/dallas/essay/will-to-exist',
+      href: '/dallas/essay/will-to-exist'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const dallas: CityData = {
           title: 'The Bishop Arts District Guide',
           description: 'Independent shops, galleries, and restaurants in Oak Cliff.',
           meta: 'Guide',
-          href: '/dallas/bishop-arts',
+          href: '/dallas/bishop-arts'
         },
         {
           title: 'Beyond the JFK Story',
           description: 'Dealey Plaza\'s history before and after November 1963.',
           meta: 'Feature',
-          href: '/dallas/dealey-plaza',
+          href: '/dallas/dealey-plaza'
         },
         {
           title: 'Best Tacos by Neighborhood',
           description: 'Our opinionated guide to Dallas-Fort Worth\'s essential tacos.',
           meta: 'List',
           variant: 'compact',
-          href: '/dallas/tacos',
+          href: '/dallas/tacos'
         }
-      ],
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'dal-curiosities',
@@ -69,25 +69,25 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-city-name.png',
-              alt: 'Dallas city name origin mystery',
+              alt: 'Dallas city name origin mystery'
             },
             {
               src: '/dallas/curiosities/dallas-cur-city-name-2.png',
-              alt: 'Historical information about Dallas naming',
-            },
+              alt: 'Historical information about Dallas naming'
+            }
           ],
           body: 'Dallas is the ninth-largest city in America, one of the most economically powerful metros on Earth, and nobody actually knows where the name came from. The founder, John Neely Bryan — a Tennessee lawyer who arrived in 1841 and built a cabin on the Trinity River — named the settlement "Dallas" but never explained why. The official historical marker claims it honors Vice President George Mifflin Dallas, but Bryan established the town before Dallas took office, and there\'s no evidence they ever met. Other theories: Bryan was honoring George\'s brother, Commodore Alexander James Dallas. Or two Dallas brothers who were his friends. Or a Dallas County in Alabama. Or it\'s corrupted from a Native American word. Bryan spent his final years in an insane asylum in Austin and took the answer to his grave. The mystery has persisted for 180 years. Historians have given up. Dallas just... is.',
           sources: [
             {
               title: 'Dallas: Where did the name come from?',
               url: 'https://www.dmagazine.com/publications/d-magazine/2011/september/where-did-dallas-get-its-name/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
           location: {
             name: 'John Neely Bryan Cabin (Original Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
@@ -98,22 +98,22 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-massage.png',
-              alt: 'Dallas massage regulation law',
-            },
+              alt: 'Dallas massage regulation law'
+            }
           ],
           body: 'There\'s an ordinance still on the books in Dallas that technically makes it illegal for a husband to give his wife a massage — or any opposite-sex massage between individuals who aren\'t licensed practitioners. The law was passed in the 1980s to crack down on massage parlors operating as fronts for prostitution. Rather than write a nuanced law, Dallas just banned all non-professional opposite-sex massages. In 1985, U.S. District Judge Barefoot Sanders (yes, real name) ruled the law unconstitutional as applied to private conduct. But here\'s the thing: the city never bothered to repeal it. The ordinance remains in the municipal code, technically enforceable, a relic of Reagan-era vice policing. Every few years a local news station rediscovers it. The city council shrugs. Nobody fixes it. Welcome to Texas.',
           sources: [
             {
               title: 'The Law That Makes It Illegal to Give Your Wife a Massage',
               url: 'https://www.dmagazine.com/publications/d-magazine/2012/october/the-most-ridiculous-laws-in-dallas/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ]
         },
         {
           id: 'dal-curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dal-curiosity-4',
@@ -125,35 +125,35 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/circuit-kilby-smithsonian.jpg',
-              alt: 'Jack Kilby\'s original 1958 integrated circuit, phase-shift oscillator',
+              alt: 'Jack Kilby\'s original 1958 integrated circuit, phase-shift oscillator'
             },
             {
               src: '/dallas/curiosities/circuit-kilby-original.jpg',
-              alt: 'Kilby\'s germanium solid-circuit oscillator from September 1958',
+              alt: 'Kilby\'s germanium solid-circuit oscillator from September 1958'
             },
             {
               src: '/dallas/curiosities/circuit-bullock-museum.jpg',
-              alt: 'First integrated circuit prototype, 7/16" × 1/16", on display at Texas State History Museum',
-            },
+              alt: 'First integrated circuit prototype, 7/16" × 1/16", on display at Texas State History Museum'
+            }
           ],
           body: 'On September 12, 1958, Texas Instruments engineer Jack Kilby demonstrated the first integrated circuit — a phase-shift oscillator carved from a piece of germanium measuring just 7/16" by 1/16". This invention made computers, smartphones, and virtually every piece of modern electronics possible. Only six prototypes exist today, scattered across museums worldwide. Kilby won the Nobel Prize in Physics in 2000 for this work. Every time you use any electronic device — this phone, that laptop, your car, the plane overhead — you\'re using Dallas technology. The entire digital age was born in a TI lab on a summer day in 1958.',
           sources: [
             {
               title: 'The Chip that Jack Built',
               url: 'https://www.ti.com/about-ti/company/history/integrated-circuit.html',
-              publisher: 'Texas Instruments',
+              publisher: 'Texas Instruments'
             },
             {
               title: 'Kilby\'s Integrated Circuit',
               url: 'https://americanhistory.si.edu/collections/search/object/nmah_688126',
-              publisher: 'Smithsonian Institution',
+              publisher: 'Smithsonian Institution'
             }
           ],
           location: {
             name: 'Texas Instruments Headquarters',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-5',
@@ -165,29 +165,29 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/leaning-1.png',
-              alt: 'The Leaning Tower of Dallas',
+              alt: 'The Leaning Tower of Dallas'
             },
             {
               src: '/dallas/curiosities/leaning-2.png',
-              alt: 'The Leaning Tower of Dallas from another angle',
+              alt: 'The Leaning Tower of Dallas from another angle'
             },
             {
               src: '/dallas/curiosities/leaning-3.png',
-              alt: 'Visitors posing with the Leaning Tower of Dallas',
-            },
+              alt: 'Visitors posing with the Leaning Tower of Dallas'
+            }
           ],
           body: 'When a Dallas building was demolished in 2019, the core of the 11-story structure unexpectedly remained standing — and slightly leaning. People flocked to take photos pretending to hold up the "Leaning Tower of Dallas" just like tourists do in Pisa. It became an instant internet sensation and accidental tourist attraction. The city tried multiple times to bring it down. It refused to fall. For weeks, this stubborn concrete remnant stood as an unintentional monument to Dallas\'s will to exist. Eventually they succeeded. But for a brief, beautiful moment, Dallas had its own architectural disaster-turned-icon.',
           sources: [
             {
               title: 'The Leaning Tower of Dallas',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Leaning_Tower_of_Dallas',
+              url: 'https://en.wikipedia.org/wiki/Leaning_Tower_of_Dallas'
             }
           ],
           location: {
             name: 'Site of the Leaning Tower of Dallas',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           }
         },
         {
@@ -200,26 +200,26 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/desegragated-1.png',
-              alt: 'Historic Deep Ellum neighborhood',
+              alt: 'Historic Deep Ellum neighborhood'
             },
             {
               src: '/dallas/curiosities/desegragated-2.png',
-              alt: 'Deep Ellum street scene',
-            },
+              alt: 'Deep Ellum street scene'
+            }
           ],
           body: 'Deep Ellum\'s white immigrants welcomed Black residents into their shops in the late 1800s and early 1900s — something not seen in other parts of Dallas. The area was settled as a "freedmen\'s town" by former slaves after the Civil War and became a vibrant center for jazz and blues. Legendary musician Blind Lemon Jefferson could tell by the sound in his cup what type of coins people put in — if they only gave pennies, he\'d throw them back into the street. Much of Deep Ellum was demolished when I-345 was built, erasing blocks of this integrated history in the name of highway progress.',
           sources: [
             {
               title: 'The History of Deep Ellum',
               url: 'https://deepellumtexas.com/history/',
-              publisher: 'Deep Ellum Foundation',
+              publisher: 'Deep Ellum Foundation'
             }
           ],
           location: {
             name: 'Deep Ellum',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-7',
@@ -230,26 +230,26 @@ export const dallas: CityData = {
           title: 'The frozen margarita machine was invented here — inspired by 7-Eleven Slurpees',
           image: {
             src: '/dallas/curiosities/frozen-marg.png',
-            alt: 'Original frozen margarita machine',
+            alt: 'Original frozen margarita machine'
           },
           body: 'Mariano Martinez invented the frozen margarita machine in Dallas in 1971 after being inspired by the 7-Eleven Slurpee machine. He modified a soft-serve ice cream machine to dispense frozen margaritas at his restaurant, Mariano\'s. Perfectly fitting, since 7-Eleven itself started as an Oak Cliff ice house called Southland Ice Company in the 1920s. Dallas invented both the technology and the reason to use it. His original machine is now in the Smithsonian\'s National Museum of American History, preserved for posterity alongside the Star-Spangled Banner and Abraham Lincoln\'s top hat.',
           sources: [
             {
               title: 'The History of the Frozen Margarita Machine',
               url: 'https://americanhistory.si.edu/blog/frozen-margarita-machine',
-              publisher: 'Smithsonian Institution',
+              publisher: 'Smithsonian Institution'
             }
           ],
           location: {
             name: 'Mariano\'s Hacienda (Original Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
+            stillExists: true
           }
         },
         {
           id: 'dal-curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'dal-curiosity-9',
@@ -259,20 +259,20 @@ export const dallas: CityData = {
           body: 'Before becoming the iconic 55-foot State Fair mascot, Big Tex was actually the world\'s largest Santa Claus in Kerens, Texas. The giant paper-mache figure was purchased by the State Fair in 1951, stripped of his red suit, transformed into a cowboy, and has greeted fairgoers with a booming "Howdy, folks!" ever since. Big Tex was destroyed by fire in 2012 — his head melted on live television — and rebuilt with a fireproof metal structure. Even Dallas icons get second acts.',
           image: {
             src: '/dallas/curiosities/santa.png',
-            alt: 'Big Tex at the Texas State Fair',
+            alt: 'Big Tex at the Texas State Fair'
           },
           sources: [
             {
               title: 'The History of Big Tex',
               url: 'https://bigtex.com/about-us/history-of-big-tex/',
-              publisher: 'State Fair of Texas',
+              publisher: 'State Fair of Texas'
             }
           ],
           location: {
             name: 'Fair Park',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-10',
@@ -284,26 +284,26 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/pow-camp-1.png',
-              alt: 'WWII POW camp at White Rock Lake',
+              alt: 'WWII POW camp at White Rock Lake'
             },
             {
               src: '/dallas/curiosities/pow-camp-2.png',
-              alt: 'German POWs at the White Rock Lake camp',
-            },
+              alt: 'German POWs at the White Rock Lake camp'
+            }
           ],
           body: 'In 1944, White Rock Lake served as a prisoner-of-war camp for German non-commissioned officers captured during Field Marshal Erwin "The Desert Fox" Rommel\'s North African campaign. Dallas held enemy combatants from WWII\'s most famous tank battles right in the middle of what is now one of the city\'s most popular parks. They were here, behind barbed wire, while Dallas families picnicked nearby. The war came to White Rock Lake.',
           sources: [
             {
               title: 'When German POWs were held at White Rock Lake',
               url: 'https://oakcliff.advocatemag.com/2014/11/world-war-ii-pow-camp-white-rock-lake/',
-              publisher: 'Advocate Magazine',
+              publisher: 'Advocate Magazine'
             }
           ],
           location: {
             name: 'White Rock Lake (Infantry Way)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-11',
@@ -314,21 +314,21 @@ export const dallas: CityData = {
           title: 'Bonnie and Clyde escaped through "Devil\'s Back Porch"',
           image: {
             src: '/dallas/curiosities/devils-back-porch.png',
-            alt: 'Trinity Groves area, formerly Devil\'s Back Porch',
+            alt: 'Trinity Groves area, formerly Devil\'s Back Porch'
           },
           body: 'To escape police, Bonnie and Clyde would cross an old bridge over the Trinity River into a dusty part of Dallas called the Devil\'s Back Porch — now Trinity Groves. What\'s now Singleton Boulevard used to be Eagle Ford Road, providing their getaway route over the West Fork of the Trinity River. They knew every back road, every blind spot, every shortcut through West Dallas. A speakeasy bar named Devil\'s Back Porch now commemorates this gangster history in the same location, because Dallas never met an outlaw story it didn\'t want to romanticize.',
           sources: [
             {
               title: 'Devil\'s Back Porch: The outlaw history of Trinity Groves',
               url: 'https://www.wfaa.com/article/news/local/devils-back-porch-the-outlaw-history-of-trinity-groves/287-434827526',
-              publisher: 'WFAA',
+              publisher: 'WFAA'
             }
           ],
           location: {
             name: 'Trinity Groves',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-13',
@@ -338,19 +338,19 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/super-bowl-1.png',
-              alt: 'Lamar Hunt and the Super Ball toy',
+              alt: 'Lamar Hunt and the Super Ball toy'
             },
             {
               src: '/dallas/curiosities/super-bowl-2.png',
-              alt: 'Early Super Bowl memorabilia',
-            },
+              alt: 'Early Super Bowl memorabilia'
+            }
           ],
           body: 'Lamar Hunt, the main founder of the American Football League and owner of the Kansas City Chiefs, coined the term "Super Bowl." He was inspired by watching his children play with a Super Ball toy. Hunt, a Dallas native and son of legendary oil tycoon H.L. Hunt, intended it as a placeholder until they figured out a better name — but "Super Bowl" stuck and became one of the most recognized sporting event names in history. The biggest game in American sports is named after a children\'s toy, thanks to Dallas.',
           sources: [
             {
               title: 'How Lamar Hunt coined the term "Super Bowl"',
               url: 'https://www.history.com/news/how-the-super-bowl-got-its-name',
-              publisher: 'History.com',
+              publisher: 'History.com'
             }
           ]
         },
@@ -364,30 +364,30 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/art-deco-1.png',
-              alt: 'Art Deco buildings at Fair Park',
+              alt: 'Art Deco buildings at Fair Park'
             },
             {
               src: '/dallas/curiosities/art-deco-2.png',
-              alt: 'Fair Park Art Deco architecture details',
+              alt: 'Fair Park Art Deco architecture details'
             },
             {
               src: '/dallas/curiosities/art-deco-3.png',
-              alt: 'Fair Park exposition hall',
-            },
+              alt: 'Fair Park exposition hall'
+            }
           ],
           body: 'Fair Park features the world\'s largest collection of Art Deco exposition buildings, constructed for the 1936 Texas Centennial Exposition. Around 30 of these magnificent structures still exist today, making it one of the most complete examples of Art Deco architecture anywhere on Earth. It\'s a National Historic Landmark — a genuine architectural treasure. Yet many Dallas residents have never explored it outside of State Fair season, when it\'s crowded with deep-fried everything and screaming children. Visit in the off-season. You\'ll have a 1930s wonderland almost to yourself.',
           sources: [
             {
               title: 'Fair Park: A National Historic Landmark',
               url: 'https://www.nps.gov/places/fair-park.htm',
-              publisher: 'National Park Service',
+              publisher: 'National Park Service'
             }
           ],
           location: {
             name: 'Fair Park',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-15',
@@ -396,14 +396,14 @@ export const dallas: CityData = {
           title: 'German chocolate cake became famous because of Dallas',
           image: {
             src: '/dallas/curiosities/german-chocolate-cake.png',
-            alt: 'German chocolate cake',
+            alt: 'German chocolate cake'
           },
           body: 'German chocolate is not actually German — it\'s named after English baker Samuel German, who developed the chocolate in 1852. But Dallas is the reason it\'s famous. In 1957, a Dallasite named Mrs. George Clay sent her recipe for "German\'s chocolate cake" to the Dallas Morning News. It was reprinted in newspapers nationwide and became an American classic — all because of one Dallas home baker who decided to share her recipe. Sometimes Dallas\'s greatest contributions are the smallest ones.',
           sources: [
             {
               title: 'The Real History of German Chocolate Cake',
               url: 'https://www.dallasnews.com/food/cooking/2017/06/07/german-chocolate-cake-was-born-in-texas-and-not-in-germany-at-all/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -417,21 +417,13 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-pegasus-1.png',
-              alt: 'Magnolia Building Pegasus sign',
+              alt: 'Magnolia Building Pegasus sign'
             },
             {
               src: '/dallas/curiosities/dallas-cur-pegasus-2.png',
-              alt: 'Dallas Pegasus landmark',
-            },
-            {
-              src: '/dallas/curiosities/pegasus-1.png',
-              alt: 'Original Magnolia Pegasus atop the Magnolia Building',
-            },
-            {
-              src: '/dallas/curiosities/pegasus-2.png',
-              alt: 'Restored Pegasus on display',
-            },
-          ],
+              alt: 'Dallas Pegasus landmark'
+            }
+            ],
           body: 'In 1934, Magnolia Oil Company installed an 11-foot rotating red neon Pegasus atop their headquarters—the tallest building in Dallas at the time. It was just corporate branding. But Dallas fell in love with the Flying Red Horse. When Magnolia merged with Mobil in 1959, the Pegasus became Mobil\'s symbol, but Dallas claimed it as the unofficial city mascot. By 1999, the original had rusted out. Dallas spent $600,000 to build a replica and lit it at midnight on New Year\'s 2000. Then the original went missing. People searched Fair Park, the Farmers Market—nothing. Finally, someone found it in a city storage facility at White Rock Lake, just sitting there. Dallas spent another $200,000 to restore it and mounted it on a 22-foot oil derrick in front of the Omni Hotel. Nearly $1 million spent preserving an oil company\'s advertisement. Very Dallas.',
           sources: [
             {
@@ -439,27 +431,27 @@ export const dallas: CityData = {
               title: 'How the Red Pegasus Became a Symbol of Dallas',
               publisher: 'D Magazine',
               year: '2024',
-              url: 'https://www.dmagazine.com/publications/d-ceo/2024/november/how-the-red-pegasus-became-the-symbol-of-dallas/',
+              url: 'https://www.dmagazine.com/publications/d-ceo/2024/november/how-the-red-pegasus-became-the-symbol-of-dallas/'
             },
             {
               type: 'article',
               title: 'Dallas\' Original Pegasus: Restored and Rebuilt',
               publisher: 'Dallas Morning News',
               year: '2015',
-              url: 'https://interactives.dallasnews.com/2015/pegasus/',
+              url: 'https://interactives.dallasnews.com/2015/pegasus/'
             },
             {
               type: 'article',
               title: 'The History of the Pegasus',
               publisher: 'Downtown Dallas Parks Conservancy',
-              url: 'https://downtowndallasparks.org/the-history-of-the-pegasus/',
-            },
+              url: 'https://downtowndallasparks.org/the-history-of-the-pegasus/'
+            }
           ],
           location: {
             name: 'Omni Dallas Hotel (original) / Magnolia Hotel (replica)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-cheerleaders',
@@ -471,52 +463,44 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-cheerleaders-1.png',
-              alt: 'Dallas Cowboys Cheerleaders',
+              alt: 'Dallas Cowboys Cheerleaders'
             },
             {
               src: '/dallas/curiosities/dallas-cur-cheerleaders-2.png',
-              alt: 'Dallas Cowboys Cheerleaders performance',
-            },
-            {
-              src: '/dallas/curiosities/cheerleaders-1.png',
-              alt: 'Original 1972 Dallas Cowboys Cheerleaders squad',
-            },
-            {
-              src: '/dallas/curiosities/cheerleaders-2.png',
-              alt: 'Dallas Cowboys Cheerleaders iconic uniform',
-            },
-          ],
+              alt: 'Dallas Cowboys Cheerleaders performance'
+            }
+            ],
           body: 'Before 1972, NFL cheerleaders were just local high school girls doing basic pep squad routines in frumpy sweaters. Then Cowboys president Tex Schramm decided to turn cheerleading into branded entertainment. He replaced the teenagers with women over 18, hired New York choreographer Texie Waterman to create professional dance routines, and commissioned Dallas designer Paula Van Wagoner to create the iconic uniform—hot pants, crop top, white boots, and a star-spangled vest. The squad became "America\'s Sweethearts," appearing on magazine covers and TV specials. They became more famous than some players. Every NFL team copied the formula. Their uniforms are now in the Smithsonian alongside the Star-Spangled Banner. Dallas took wholesome sideline entertainment, made it sexy and profitable, then convinced everyone else it was innovation.',
           sources: [
             {
               type: 'article',
               title: 'The Women Who Created the Dallas Cowboys Cheerleaders',
               publisher: 'Texas Monthly',
-              url: 'https://www.texasmonthly.com/arts-entertainment/women-who-created-cowboys-cheerleaders/',
+              url: 'https://www.texasmonthly.com/arts-entertainment/women-who-created-cowboys-cheerleaders/'
             },
             {
               type: 'article',
               title: 'History',
               publisher: 'Dallas Cowboys Cheerleaders',
-              url: 'https://dallascowboyscheerleaders.com/history/',
+              url: 'https://dallascowboyscheerleaders.com/history/'
             },
             {
               type: 'article',
               title: 'Dallas Cowboys Cheerleaders donate iconic uniforms',
               publisher: 'Smithsonian National Museum of American History',
-              url: 'https://americanhistory.si.edu/explore/stories/dallas-cowboys-cheerleaders-donate-iconic-uniforms-museums-sports-collection',
-            },
+              url: 'https://americanhistory.si.edu/explore/stories/dallas-cowboys-cheerleaders-donate-iconic-uniforms-museums-sports-collection'
+            }
           ],
           location: {
             name: 'AT&T Stadium',
             url: 'https://maps.app.goo.gl/uXjGq5v7Ym5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-curiosity-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dal-curiosity-16',
@@ -526,14 +510,14 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-white-out-liquid-paper-1.png',
-              alt: 'Liquid Paper invention story',
-            },
+              alt: 'Liquid Paper invention story'
+            }
           ],
           sources: [
             {
               title: 'Graham, Bette Clair Nesmith',
               url: 'https://www.tshaonline.org/handbook/entries/graham-bette-clair-nesmith',
-              publisher: 'Texas State Historical Association',
+              publisher: 'Texas State Historical Association'
             }
           ]
         },
@@ -545,15 +529,15 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-voicemail-2.png',
-              alt: 'Voice mail invention in Dallas',
-            },
+              alt: 'Voice mail invention in Dallas'
+            }
           ],
           body: 'Gordon Matthews founded VMX in Dallas in 1979 and developed the technology that let workers record, send, store, and forward voice messages from any phone in an office. He called it "voice mail." Before VMX, if you weren\'t at your desk, you missed the call. Matthews\' invention fundamentally changed how business communication worked — and gave everyone an excuse to avoid talking to people directly. Dallas gave the world a way to never actually speak to another human being again.',
           sources: [
             {
               title: 'Gordon Matthews: The Father of Voice Mail',
               url: 'https://dallasinnovates.com/gordon-matthews-father-voice-mail/',
-              publisher: 'Dallas Innovates',
+              publisher: 'Dallas Innovates'
             }
           ]
         },
@@ -567,15 +551,15 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-doc-holladay.png',
-              alt: 'Doc Holliday dentistry award story',
-            },
+              alt: 'Doc Holliday dentistry award story'
+            }
           ],
           body: 'Before he became the legendary Wild West gunfighter of the OK Corral, John Henry "Doc" Holliday was a mild-mannered dentist fresh from dental school in St. Louis. In the 1870s, he opened a practice in Dallas and even entered a competition at the Dallas State Fair & Exposition (the precursor to today\'s State Fair of Texas). His specialty? Creating "the best set of gold teeth." He won. The man who would later stand shoulder-to-shoulder with Wyatt Earp in a bloody gunfight was once celebrated for his dental craftsmanship in Dallas. It\'s an almost impossibly bizarre twist to his legend: one of America\'s most infamous outlaws, a tuberculosis-ridden gambler and killer, started his career polishing gold molars and winning ribbons at a state fair. Every legend starts somewhere; Doc Holliday\'s started with a gleaming smile in Dallas.',
           sources: [
             {
               title: 'Doc Holliday\'s Dallas Dental Practice',
               url: 'https://www.dmagazine.com/frontburner/2012/08/doc-hollidays-dallas-dental-practice/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ]
         },
@@ -588,13 +572,13 @@ export const dallas: CityData = {
             {
               title: 'Pig Stand',
               url: 'https://www.tshaonline.org/handbook/entries/pig-stand',
-              publisher: 'Texas State Historical Association',
+              publisher: 'Texas State Historical Association'
             }
           ],
           location: {
             name: 'Original Pig Stand Site (Chalk Hill Rd)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           }
         },
         {
@@ -608,13 +592,13 @@ export const dallas: CityData = {
               type: 'article',
               title: 'Photon: The First Laser Tag Company',
               publisher: 'Laser Tag Museum',
-              url: 'https://www.lasertagmuseum.com/indoor-laser-tag/indoor-company/photon',
+              url: 'https://www.lasertagmuseum.com/indoor-laser-tag/indoor-company/photon'
             }
           ],
           location: {
             name: 'Original Photon Site',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           }
         },
         {
@@ -626,20 +610,20 @@ export const dallas: CityData = {
           title: 'Dallas ran a legal red-light district called "Frogtown" from 1906 to 1913',
           image: {
             src: '/dallas/curiosities/dallas-curious-frogtown.png',
-            alt: 'Historic Dallas Frogtown red-light district',
+            alt: 'Historic Dallas Frogtown red-light district'
           },
           body: 'In 1906, Dallas did something radical: it legalized prostitution. City leaders carved out a designated zone nicknamed "Frogtown" (also called "the Reservation") where brothels operated openly under municipal supervision. The logic was Progressive Era pragmatism: if you can\'t stop it, regulate it. Prostitutes received city-issued health certificates; those who passed weekly medical inspections were immune from arrest. The district thrived. It also drew national attention as a model of "regulated vice." But reform movements mounted pressure, and on November 3, 1913, Dallas shut Frogtown down for good. The sex trade scattered across the city. Seven years of legal prostitution became a footnote that Dallas preferred to forget.',
           sources: [
             {
               title: 'Frogtown: Dallas\' Legal Red-Light District',
               url: 'https://www.dallasobserver.com/news/frogtown-dallas-legal-red-light-district-7126581',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
           location: {
             name: 'Former Frogtown Site (Broom St)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false,
+            stillExists: false
           }
         },
         {
@@ -651,7 +635,7 @@ export const dallas: CityData = {
           title: 'The name "Ecstasy" was coined by a Dallas seminary student',
           image: {
             src: '/dallas/curiosities/dallas-curious-ecstasy.png',
-            alt: 'Dallas Ecstasy MDMA history',
+            alt: 'Dallas Ecstasy MDMA history'
           },
           body: 'Michael Clegg was studying at Perkins School of Theology at SMU when he discovered MDMA in the early 1980s. He didn\'t invent it (a German chemist did in 1912), but he gave it the name that stuck: Ecstasy. He called the experience "like hearing Moses on the mountain." Clegg saw a business opportunity. By 1984, he was moving 500,000 doses per month through a distribution network that included a 1-800 phone line. You could order Ecstasy with a credit card. The operation was so brazen, employees wore "Ecstasy" t-shirts. Clegg fled to Costa Rica in 1985, just months before the DEA classified MDMA as Schedule I. He later returned, served time, and became a real estate developer. But for a brief, surreal moment, a theology student helped launch the rave era from Dallas.',
           sources: [
@@ -660,93 +644,43 @@ export const dallas: CityData = {
               title: 'The Agony of Ecstasy',
               publisher: 'D Magazine',
               year: '2000',
-              url: 'https://www.dmagazine.com/publications/d-magazine/2000/may/the-agony-of-ecstasy/',
-            },
+              url: 'https://www.dmagazine.com/publications/d-magazine/2000/may/the-agony-of-ecstasy/'
+            }
           ]
         }
-      ],
-    },
-    {
-      id: 'dal-iconic-spots',
-      type: 'section',
-      title: 'The Dallas Essentials',
-      intro: 'These are the markers of the city—the places that define why people move here and why they stay. From the neon Pegasus to the historic Fair Park, these are the North Stars of Dallas.',
-      items: [
-        {
-          id: 'iconic-1',
-          type: 'iconic-spot',
-          name: 'Nasher Sculpture Center',
-          category: 'Museum',
-          description: 'In 1967, Patsy gave Raymond Nasher a modern sculpture for his birthday. He fell hard. They spent decades building one of the world\'s finest private collections—over 300 masterpieces by Calder, Giacometti, Matisse, Picasso, Rodin. In 1997, Nasher met Renzo Piano at the Beyeler Foundation opening in Basel. Commissioned him on the spot. October 2003, the 55,000-square-foot museum opened. Raymond donated $77 million of his own money. Died in 2007. The collection lives on. Piano\'s design—clean-lined galleries, a 1.4-acre garden—lets the sculptures breathe. First Saturday of each month is free. Most months, locals still forget it exists.',
-          images: [
-            {
-              src: '/images/gems/nasher-sculpture.jpg',
-              alt: 'Nasher Sculpture Center garden with modern sculptures and trees',
-            }
-          ],
+      ]
+    }
+    ],
           address: '2001 Flora St, Dallas, TX 75201',
           coordinates: { lat: 32.7896, lng: -96.7992 },
           hours: 'Tue-Sun 11am-5pm',
           price: '$10 adults',
           website: 'https://nashersculpturecenter.org',
-          tip: 'The first Saturday of each month is free',
-        },
-        {
-          id: 'iconic-2',
-          type: 'iconic-spot',
-          name: 'White Rock Lake',
-          category: 'Park',
-          description: 'After the 1909 drought exposed Dallas\'s water shortage, White Rock Creek got dammed. Construction began 1910. Dam completed 1911—earthen, 47 feet high, 2,550 feet long. City planner George Kessler recommended keeping the surrounding land for parks. Good call. Now it\'s 1,015 acres, 9.3-mile loop trail. Popular with runners, cyclists, sailors. Also popular with the Lady of White Rock Lake—a twenty-something ghost in a water-soaked 1930s evening dress who appears roadside along East Lawther Drive, asks for a ride home, then vanishes, leaving only a puddle. First published in the Texas Folklore Society\'s 1943 collection. Still spooks drivers on foggy nights.',
-          images: [
-            {
-              src: '/images/gems/white-rock-lake.jpg',
-              alt: 'View of White Rock Lake with Dallas skyline in distance',
-            }
-          ],
+          tip: 'The first Saturday of each month is free'
+        }
+        ],
           address: '8300 E Lawther Dr, Dallas, TX 75218',
           coordinates: { lat: 32.8272, lng: -96.7244 },
           hours: '6am-midnight',
           price: 'Free',
-          tip: 'The Bath House Cultural Center on the lake hosts excellent small exhibitions',
-        },
-        {
-          id: 'iconic-3',
-          type: 'iconic-spot',
-          name: 'Deep Ellum',
-          category: 'Neighborhood',
-          description: 'Dallas\'s historic arts and music district, home to live music venues, murals, tattoo shops, and late-night tacos. It was the center of Dallas blues and jazz in the 1920s and is still rough around the edges.',
-          images: [
-            {
-              src: '/images/gems/deep-ellum.jpg',
-              alt: 'Deep Ellum street art and murals on building walls',
-            }
-          ],
+          tip: 'The Bath House Cultural Center on the lake hosts excellent small exhibitions'
+        }
+        ],
           address: 'Deep Ellum, Dallas, TX 75226',
           coordinates: { lat: 32.7848, lng: -96.7845 },
           hours: 'Businesses vary',
           price: 'Free to explore',
-          tip: 'Trees is the legendary music venue; Pecan Lodge has some of the city\'s best BBQ',
-        },
-        {
-          id: 'iconic-4',
-          type: 'iconic-spot',
-          name: 'Dallas Farmers Market',
-          category: 'Market',
-          description: 'Farmers have been selling produce on Dallas streets since the 1860s. The intersection of Pearl and Cadiz evolved into the center—not just vegetables, but chickens, pigs, goats. In 1939, the site expanded and the first sheds went up. Officially sanctioned by the city in 1941. Ran that way for decades. Then in May 2013, DF Market Holdings bought the market from the city and launched a full revitalization. Now it\'s a year-round mix of local farmers, artisans, restaurants, retail. Saturday mornings still draw the biggest crowds. Mudhen Meat and Greens for excellent local sourcing.',
-          images: [
-            {
-              src: '/images/gems/dallas-farmers-market.jpg',
-              alt: 'Dallas Farmers Market produce stalls and crowds',
-            }
-          ],
+          tip: 'Trees is the legendary music venue; Pecan Lodge has some of the city\'s best BBQ'
+        }
+        ],
           address: '920 S Harwood St, Dallas, TX 75201',
           coordinates: { lat: 32.7770, lng: -96.7951 },
           hours: 'Daily, hours vary by vendor',
           price: 'Free to browse',
           website: 'https://dallasfarmersmarket.org',
-          tip: 'Mudhen Meat and Greens for excellent local sourcing',
+          tip: 'Mudhen Meat and Greens for excellent local sourcing'
         }
-      ],
+      ]
     },
     {
       id: 'dal-hidden-gems',
@@ -764,15 +698,15 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-meow-0.png',
-              alt: 'Meow Wolf immersive art installation',
+              alt: 'Meow Wolf immersive art installation'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-meow-1.png',
-              alt: 'The Real Unreal portal rooms',
+              alt: 'The Real Unreal portal rooms'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-meow-2.png',
-              alt: 'Meow Wolf interactive art experience',
+              alt: 'Meow Wolf interactive art experience'
             }
           ],
           address: '3000 Grapevine Mills Pkwy, Grapevine, TX 76051',
@@ -784,10 +718,10 @@ export const dallas: CityData = {
             {
               title: 'Inside Meow Wolf Grapevine',
               url: 'https://www.dmagazine.com/arts-entertainment/2023/07/inside-meow-wolf-grapevine-the-real-unreal/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Plan 2-3 hours—there\'s a lot to explore',
+          tip: 'Plan 2-3 hours—there\'s a lot to explore'
         },
         {
           id: 'gem-venue-2',
@@ -800,11 +734,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-theatre-1.png',
-              alt: 'Texas Theatre exterior marquee',
+              alt: 'Texas Theatre exterior marquee'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-theatre-2.png',
-              alt: 'Historic Texas Theatre interior',
+              alt: 'Historic Texas Theatre interior'
             }
           ],
           address: '231 W Jefferson Blvd, Dallas, TX 75208',
@@ -816,10 +750,10 @@ export const dallas: CityData = {
             {
               title: 'Texas Theatre History',
               url: 'https://oakcliff.advocatemag.com/2011/04/the-history-of-the-texas-theatre/',
-              publisher: 'Advocate Magazine',
+              publisher: 'Advocate Magazine'
             }
           ],
-          tip: 'Site of Lee Harvey Oswald\'s arrest—now a beloved indie cinema',
+          tip: 'Site of Lee Harvey Oswald\'s arrest—now a beloved indie cinema'
         },
         {
           id: 'gem-underground-1',
@@ -832,7 +766,7 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/tunnels.png',
-              alt: 'Underground tunnel system with shops and corridors',
+              alt: 'Underground tunnel system with shops and corridors'
             }
           ],
           address: 'Thanks-Giving Square, 1627 Pacific Ave, Dallas, TX 75201',
@@ -843,10 +777,10 @@ export const dallas: CityData = {
             {
               title: 'The Dystopian World of the Dallas Tunnels',
               url: 'https://www.dallasobserver.com/news/the-dallas-tunnels-are-a-dystopian-wonderland-that-must-be-destroyed-9284347',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
-          tip: 'Entrances are often unmarked and hidden in plain sight',
+          tip: 'Entrances are often unmarked and hidden in plain sight'
         },
         {
           id: 'gem-museum-2',
@@ -859,11 +793,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-samuri-1.png',
-              alt: 'Samurai armor on display',
+              alt: 'Samurai armor on display'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-samuri-2.png',
-              alt: 'Japanese samurai helmets and masks',
+              alt: 'Japanese samurai helmets and masks'
             }
           ],
           address: '2501 N Harwood St, Dallas, TX 75201',
@@ -875,10 +809,10 @@ export const dallas: CityData = {
             {
               title: 'The Barbier-Mueller Samurai Collection',
               url: 'https://www.dmagazine.com/publications/d-magazine/2012/march/the-samurai-next-door/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Only museum of its kind in the U.S.—international significance',
+          tip: 'Only museum of its kind in the U.S.—international significance'
         },
         {
           id: 'gem-art-4',
@@ -889,11 +823,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-pioneer-plaza-1.png',
-              alt: 'Bronze longhorn cattle drive sculpture at Pioneer Plaza',
+              alt: 'Bronze longhorn cattle drive sculpture at Pioneer Plaza'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-pioneer-plaza-2.png',
-              alt: 'Pioneer Plaza longhorn steers',
+              alt: 'Pioneer Plaza longhorn steers'
             }
           ],
           address: '1428 Young St, Dallas, TX 75202',
@@ -904,10 +838,10 @@ export const dallas: CityData = {
             {
               title: 'Pioneer Plaza',
               url: 'https://www.visitdallas.com/things-to-do/venue/pioneer-plaza/',
-              publisher: 'Visit Dallas',
+              publisher: 'Visit Dallas'
             }
           ],
-          tip: 'Each piece is 130% life size—the scale is staggering',
+          tip: 'Each piece is 130% life size—the scale is staggering'
         },
         {
           id: 'gem-art-3',
@@ -918,11 +852,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-teddy-1.png',
-              alt: 'Giant granite teddy bear sculpture at Lakeside Park',
+              alt: 'Giant granite teddy bear sculpture at Lakeside Park'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-teddy-1.png',
-              alt: 'Teddy bear cubs sculpture',
+              alt: 'Teddy bear cubs sculpture'
             }
           ],
           address: '4601 Lakeside Dr, Highland Park, TX 75205',
@@ -933,10 +867,10 @@ export const dallas: CityData = {
             {
               title: 'The Teddy Bears of Lakeside Park',
               url: 'https://www.dallasobserver.com/best-of/2014/arts-and-entertainment/best-place-to-take-a-first-date-6453123',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
-          tip: 'Park on Lakeside Drive just north of Lexington Ave',
+          tip: 'Park on Lakeside Drive just north of Lexington Ave'
         },
         {
           id: 'gem-park-1',
@@ -949,11 +883,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/Thanks-giving-1.png',
-              alt: 'Sunken urban garden with modern architecture',
+              alt: 'Sunken urban garden with modern architecture'
             },
             {
               src: '/dallas/hidden-gems/Thanks-giving-2.png',
-              alt: 'Thanks-Giving Square chapel interior',
+              alt: 'Thanks-Giving Square chapel interior'
             }
           ],
           address: '1627 Pacific Ave, Dallas, TX 75201',
@@ -965,10 +899,10 @@ export const dallas: CityData = {
             {
               title: 'Thanks-Giving Square',
               url: 'https://www.philipjohnson.com/projects/thanks-giving-square/',
-              publisher: 'Philip Johnson Alan Ritchie Curriculum Vitae',
+              publisher: 'Philip Johnson Alan Ritchie Curriculum Vitae'
             }
           ],
-          tip: 'A peaceful oasis hidden in plain sight downtown',
+          tip: 'A peaceful oasis hidden in plain sight downtown'
         },
         {
           id: 'gem-museum-1',
@@ -981,15 +915,15 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/MADI-1.png',
-              alt: 'Geometric abstract art in modern gallery space',
+              alt: 'Geometric abstract art in modern gallery space'
             },
             {
               src: '/dallas/hidden-gems/MADI-2.png',
-              alt: 'MADI art exhibition',
+              alt: 'MADI art exhibition'
             },
             {
               src: '/dallas/hidden-gems/MADI-3.png',
-              alt: 'Colorful geometric sculptures',
+              alt: 'Colorful geometric sculptures'
             }
           ],
           address: '3109 Carlisle Street, Dallas, TX 75204',
@@ -1001,10 +935,10 @@ export const dallas: CityData = {
             {
               title: 'The Museum of Geometric and MADI Art',
               url: 'https://www.dallasobserver.com/best-of/2004/arts-and-entertainment/best-new-museum-6451121',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
-          tip: 'First (and maybe only) museum dedicated to the MADI movement worldwide',
+          tip: 'First (and maybe only) museum dedicated to the MADI movement worldwide'
         },
         {
           id: 'gem-garden-1',
@@ -1015,11 +949,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-crow-1.png',
-              alt: 'Trammell Crow Sculpture Garden',
+              alt: 'Trammell Crow Sculpture Garden'
             },
             {
               src: '/dallas/hidden-gems/dallas-hidden-crow-2.png',
-              alt: 'Japanese-inspired sculpture garden',
+              alt: 'Japanese-inspired sculpture garden'
             }
           ],
           address: '2010 Flora St, Dallas, TX 75201',
@@ -1031,10 +965,10 @@ export const dallas: CityData = {
             {
               title: 'Trammell Crow Center Sculpture Garden',
               url: 'https://www.dallasartsdistrict.org/venue/trammell-crow-center-sculpture-garden/',
-              publisher: 'Dallas Arts District',
+              publisher: 'Dallas Arts District'
             }
           ],
-          tip: 'Perfect pre- or post-museum stop—totally free',
+          tip: 'Perfect pre- or post-museum stop—totally free'
         },
         {
           id: 'gem-art-1',
@@ -1047,11 +981,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/eyeball.png',
-              alt: 'Large eyeball sculpture in urban setting',
+              alt: 'Large eyeball sculpture in urban setting'
             },
             {
               src: '/dallas/hidden-gems/eyeball-2.png',
-              alt: 'Giant eyeball from another angle',
+              alt: 'Giant eyeball from another angle'
             }
           ],
           address: '1601 Main St, Dallas, TX 75201',
@@ -1062,10 +996,10 @@ export const dallas: CityData = {
             {
               title: 'The Story Behind the Giant Eyeball',
               url: 'https://www.dmagazine.com/frontburner/2013/08/the-story-behind-the-giant-eyeball-in-downtown-dallas/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Site of Dallas Art Fair\'s closing party - a truly unique venue',
+          tip: 'Site of Dallas Art Fair\'s closing party - a truly unique venue'
         },
         {
           id: 'gem-art-2',
@@ -1078,7 +1012,7 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/woofus-1.png',
-              alt: 'Mythical creature sculpture combining multiple animals',
+              alt: 'Mythical creature sculpture combining multiple animals'
             }
           ],
           address: 'Livestock Building No. 2, Fair Park, Dallas, TX 75210',
@@ -1089,15 +1023,15 @@ export const dallas: CityData = {
             {
               title: 'The Mystery of the Texas Woofus',
               url: 'https://www.dmagazine.com/frontburner/2012/10/the-mystery-of-the-texas-woofus/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Hiding in plain sight despite being bizarre',
+          tip: 'Hiding in plain sight despite being bizarre'
         },
         {
           id: 'dal-gem-ad-1',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-cemetery-1',
@@ -1110,11 +1044,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/bonnieclyde-1.png',
-              alt: 'Bonnie Parker\'s grave site',
+              alt: 'Bonnie Parker\'s grave site'
             },
             {
               src: '/dallas/hidden-gems/bonnieclyde-2.png',
-              alt: 'Clyde Barrow\'s grave site',
+              alt: 'Clyde Barrow\'s grave site'
             }
           ],
           address: '7118 Webb Chapel Rd (Bonnie) & 1611 Fort Worth Ave (Clyde)',
@@ -1125,10 +1059,10 @@ export const dallas: CityData = {
             {
               title: 'Bonnie and Clyde: A Dallas History',
               url: 'https://www.dallashistory.org/history/bonnie-and-clyde/',
-              publisher: 'Dallas Historical Society',
+              publisher: 'Dallas Historical Society'
             }
           ],
-          tip: '2025 update: Court case ongoing to potentially reunite them',
+          tip: '2025 update: Court case ongoing to potentially reunite them'
         },
         {
           id: 'gem-transport-1',
@@ -1139,7 +1073,7 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/m-trolley.png',
-              alt: 'Vintage streetcar on urban rail line',
+              alt: 'Vintage streetcar on urban rail line'
             }
           ],
           address: '3153 Oak Lawn Ave, Dallas, TX 75219',
@@ -1151,10 +1085,10 @@ export const dallas: CityData = {
             {
               title: 'History of the M-Line Trolley',
               url: 'https://www.mata.org/about-us/history',
-              publisher: 'McKinney Avenue Transit Authority',
+              publisher: 'McKinney Avenue Transit Authority'
             }
           ],
-          tip: 'One of Dallas\'s free modes of transportation many don\'t know about',
+          tip: 'One of Dallas\'s free modes of transportation many don\'t know about'
         },
         {
           id: 'gem-nature-1',
@@ -1167,19 +1101,19 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/cedar-ridge-1.png',
-              alt: 'Hiking trail through nature preserve with escarpment views',
+              alt: 'Hiking trail through nature preserve with escarpment views'
             },
             {
               src: '/dallas/hidden-gems/cedar-ridge-2.png',
-              alt: 'Cedar Ridge Preserve overlook',
+              alt: 'Cedar Ridge Preserve overlook'
             },
             {
               src: '/dallas/hidden-gems/cedar-ridge-3-0.png',
-              alt: 'Trail through Cedar Ridge',
+              alt: 'Trail through Cedar Ridge'
             },
             {
               src: '/dallas/hidden-gems/cedar-ridge-4.png',
-              alt: 'Views from Cedar Ridge Preserve',
+              alt: 'Views from Cedar Ridge Preserve'
             }
           ],
           address: '7171 Mountain Creek Pkwy, Dallas, TX 75249',
@@ -1191,10 +1125,10 @@ export const dallas: CityData = {
             {
               title: 'Cedar Ridge Preserve',
               url: 'https://audubondallas.org/cedar-ridge-preserve/',
-              publisher: 'Audubon Dallas',
+              publisher: 'Audubon Dallas'
             }
           ],
-          tip: 'Arrive before 8am on weekends to guarantee parking',
+          tip: 'Arrive before 8am on weekends to guarantee parking'
         },
         {
           id: 'gem-nature-2',
@@ -1207,11 +1141,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/lemmonlake-1.png',
-              alt: 'Wildlife preserve with lake and migratory birds',
+              alt: 'Wildlife preserve with lake and migratory birds'
             },
             {
               src: '/dallas/hidden-gems/lemmonlake-2.png',
-              alt: 'Lemmon Lake shoreline',
+              alt: 'Lemmon Lake shoreline'
             }
           ],
           address: '4911 River Oaks Rd, Dallas, TX 75216',
@@ -1223,10 +1157,10 @@ export const dallas: CityData = {
             {
               title: 'The History of Joppa',
               url: 'https://www.dmagazine.com/publications/d-ceo/2023/january-february/the-fight-to-save-joppa/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Plentiful migrating waterfowl and year-round shorebirds',
+          tip: 'Plentiful migrating waterfowl and year-round shorebirds'
         },
         {
           id: 'gem-books-2',
@@ -1237,23 +1171,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/wild-detectives-branded.jpg',
-              alt: 'The Wild Detectives bookstore bar venue in Bishop Arts District',
+              alt: 'The Wild Detectives bookstore bar venue in Bishop Arts District'
             },
             {
               src: '/dallas/hidden-gems/dallas-book-pub-1.png',
-              alt: 'Interior of Wild Detectives bookstore with books and bar',
+              alt: 'Interior of Wild Detectives bookstore with books and bar'
             },
             {
               src: '/dallas/hidden-gems/dallas-book-pub-2.png',
-              alt: 'Wild Detectives bar area',
+              alt: 'Wild Detectives bar area'
             },
             {
               src: '/dallas/hidden-gems/dallas-book-pub-3.png',
-              alt: 'Wild Detectives patio',
+              alt: 'Wild Detectives patio'
             },
             {
               src: '/dallas/hidden-gems/dallas-book-pub-4.png',
-              alt: 'Wild Detectives book shelves',
+              alt: 'Wild Detectives book shelves'
             }
           ],
           address: '314 W 8th St, Dallas, TX 75208',
@@ -1265,10 +1199,10 @@ export const dallas: CityData = {
             {
               title: 'The Wild Detectives',
               url: 'https://www.dmagazine.com/publications/d-magazine/2014/march/the-wild-detectives-oak-cliff/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          tip: 'Check the calendar for readings and events',
+          tip: 'Check the calendar for readings and events'
         },
         {
           id: 'gem-arcade-1',
@@ -1281,7 +1215,7 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/dallas-hidden-cider-1.png',
-              alt: 'The Cidercade arcade floor with vintage games',
+              alt: 'The Cidercade arcade floor with vintage games'
             }
           ],
           address: '2777 Irving Blvd, Dallas, TX 75207',
@@ -1293,12 +1227,12 @@ export const dallas: CityData = {
             {
               title: 'Cidercade Dallas',
               url: 'https://www.dallasobserver.com/best-of/2018/arts-and-entertainment/best-arcade-11311221',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
-          tip: 'Go on a weekday evening for less competition on the popular machines',
-        },
-      ],
+          tip: 'Go on a weekday evening for less competition on the popular machines'
+        }
+      ]
     },
     {
       id: 'dal-dark-history',
@@ -1314,7 +1248,7 @@ export const dallas: CityData = {
           title: 'The Eyeball Killer',
           image: {
             src: '/dallas/dark-history/lovers-lane.png',
-            alt: 'Oak Cliff street at night',
+            alt: 'Oak Cliff street at night'
           },
           body: 'Between December 1990 and March 1991, someone was hunting prostitutes in Oak Cliff—and taking souvenirs. Mary Lou Pratt was found shot in the head, her eyes surgically removed. Susan Peterson turned up the same way two months later. Then Shirley Williams, naked near a school, eyes gone. The precision suggested medical training. Police searched Charles Albright\'s home and found X-Acto blades, a copy of Gray\'s Anatomy, hundreds of close-up photos of women\'s eyes, and newspaper clippings about his own murders. No eyeballs were ever recovered. Albright, a former science teacher obsessed with taxidermy since childhood, was convicted of one murder and sentenced to life. He died in prison in 2020, still drawing eyes on his cell walls.',
           verdict: 'Convicted. Charles Albright received life in prison for Shirley Williams\' murder. Charges in the other cases were dropped due to lack of evidence, though he remains the prime suspect in all four killings.',
@@ -1324,34 +1258,34 @@ export const dallas: CityData = {
               title: 'See No Evil',
               publisher: 'Texas Monthly',
               year: '1993',
-              url: 'https://www.texasmonthly.com/true-crime/see-no-evil-3/',
+              url: 'https://www.texasmonthly.com/true-crime/see-no-evil-3/'
             },
             {
               type: 'article',
               title: 'Flashback: The Eyeball Killer stalked, murdered four Oak Cliff women in 1991',
               publisher: 'Dallas Morning News',
               year: '2017',
-              url: 'https://www.dallasnews.com/news/2017/11/01/flashback-the-eyeball-killer-stalked-murdered-four-oak-cliff-women-in-1991/',
+              url: 'https://www.dallasnews.com/news/2017/11/01/flashback-the-eyeball-killer-stalked-murdered-four-oak-cliff-women-in-1991/'
             },
             {
               type: 'article',
               title: 'How a police storefront changed Jefferson and captured a serial killer',
               publisher: 'Oak Cliff Advocate',
               year: '2014',
-              url: 'https://oakcliff.advocatemag.com/2014/10/beat-cop-goes/',
+              url: 'https://oakcliff.advocatemag.com/2014/10/beat-cop-goes/'
             },
             {
               type: 'other',
               title: 'Charles Albright',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Charles_Albright',
-            },
+              url: 'https://en.wikipedia.org/wiki/Charles_Albright'
+            }
           ],
           location: {
             name: 'Oak Cliff (Jefferson Blvd)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-2',
@@ -1360,7 +1294,7 @@ export const dallas: CityData = {
           title: 'The Crying Children of Carrollton',
           image: {
             src: '/dallas/dark-history/carrollton.png',
-            alt: 'Abandoned farmhouse ruins',
+            alt: 'Abandoned farmhouse ruins'
           },
           body: 'Around the turn of the century, a strange family moved into an abandoned farmhouse three miles outside Carrollton. When neighbors came to welcome them, the mother, father, and three children were cold and unsmiling—the well-meaning committee left feeling "thoroughly snubbed." A few months later, a traveling salesman passing the now-destroyed farmhouse heard something that stopped him: the unmistakable sobbing of a child. He looked toward the ruins and saw a small boy standing in a clearing. Then two more children appeared beside him. When the salesman walked closer, all three vanished. The family was never seen again. No records explain what happened. On certain nights, locals say you can still hear crying drifting across the vacant lots where the farmhouse once stood.',
           verdict: 'Pure folklore. The story was recorded by Carrollton storyteller Zenita Fowler and published in "Ghost Stories of North Texas." No archival records of the family have been found.',
@@ -1369,16 +1303,16 @@ export const dallas: CityData = {
               type: 'book',
               title: 'Ghost Stories of North Texas',
               author: 'Zenita Fowler',
-              year: '1990',
+              year: '1990'
             },
             {
               type: 'article',
               title: 'Mysterious past of Bethel Cemetery',
               publisher: 'Carrollton Leader',
               year: '2014',
-              url: 'https://starlocalmedia.com/carrolltonleader/mysterious-past-of-bethel-cemetery/article_e32cc07e-5b9c-11e4-8e6e-9b2d0b612636.html',
-            },
-          ],
+              url: 'https://starlocalmedia.com/carrolltonleader/mysterious-past-of-bethel-cemetery/article_e32cc07e-5b9c-11e4-8e6e-9b2d0b612636.html'
+            }
+          ]
         },
         {
           id: 'dal-dark-3',
@@ -1387,7 +1321,7 @@ export const dallas: CityData = {
           title: 'A Son\'s Quest for Justice',
           image: {
             src: '/dallas/dark-history/laurie-kay.png',
-            alt: 'Laurie Kay Bosman memorial',
+            alt: 'Laurie Kay Bosman memorial'
           },
           body: 'March 1987: 25-year-old Laurie Kay Bosman was found strangled on her living room floor in her Far North Dallas apartment on Marsh Lane. Her door was slightly ajar but showed no signs of forced entry. Her security system wasn\'t activated. Her seven-year-old son, Shawn Chelf, had been sleeping in the next room. Police believed she knew her killer—her fiancé was out of the country, and other leads went nowhere. The case went cold for 27 years. Then Shawn Chelf became a police officer. He joined the Double Oak Police Department in 2013 and began pushing Dallas detectives to reopen his mother\'s file. They finally did. DNA samples that couldn\'t be tested in 1987 are now being analyzed with modern genetic genealogy techniques.',
           verdict: 'Unsolved. The case was one of 323 murders in Dallas that year. Shawn Chelf, now a cop, continues to push for answers nearly four decades later.',
@@ -1397,33 +1331,33 @@ export const dallas: CityData = {
               title: 'Unsolved: Shawn Chelf is looking for answers to his mother\'s death',
               publisher: 'Dallas Morning News',
               year: '2015',
-              url: 'https://interactives.dallasnews.com/2015/cold-cases/part2.html',
+              url: 'https://interactives.dallasnews.com/2015/cold-cases/part2.html'
             },
             {
               type: 'article',
               title: 'Son of woman slain in 1987 becomes police officer, sees cold case reopened',
               publisher: 'Dallas Morning News',
               year: '2015',
-              url: 'https://www.dallasnews.com/news/crime/2015/08/26/son-of-woman-slain-in-1987-becomes-police-officer-sees-cold-case-reopened/',
+              url: 'https://www.dallasnews.com/news/crime/2015/08/26/son-of-woman-slain-in-1987-becomes-police-officer-sees-cold-case-reopened/'
             },
             {
               type: 'article',
               title: 'Son on Quest for Answers in Mother\'s Murder',
               publisher: 'NBC DFW',
-              url: 'https://www.nbcdfw.com/news/local/son-on-quest-for-answers-in-mothers-murder/144785/',
+              url: 'https://www.nbcdfw.com/news/local/son-on-quest-for-answers-in-mothers-murder/144785/'
             },
             {
               type: 'other',
               title: 'Laurie Kay Bosman Case File',
               publisher: 'Solve the Case',
-              url: 'https://www.solvethecase.org/case/1987-4/laurie-kay-bosman',
-            },
+              url: 'https://www.solvethecase.org/case/1987-4/laurie-kay-bosman'
+            }
           ],
           location: {
             name: '18700 block of Marsh Lane, Far North Dallas',
             url: 'https://maps.app.goo.gl/uXjGq5v7Ym5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-4',
@@ -1432,7 +1366,7 @@ export const dallas: CityData = {
           title: 'The Lady of White Rock Lake',
           image: {
             src: '/dallas/dark-history/lady-white-rock.png',
-            alt: 'Misty White Rock Lake at night',
+            alt: 'Misty White Rock Lake at night'
           },
           body: 'Since the 1940s, motorists circling White Rock Lake have picked up the same waterlogged passenger: a pale woman in her twenties wearing a soaked evening dress who flags down cars at night. She climbs into the back seat, gives a Lakewood or Oak Cliff address, then vanishes before arrival—leaving nothing but a damp spot on the upholstery. The earliest published account appeared in 1943, but the legend is most often credited to Guy Malloy, Neiman Marcus\'s display director for 40 years, who loved telling the story. Some versions say she drowned in a boating accident; others claim suicide. Two real drownings have been suggested as the ghost\'s origin: Louise Ford Davis in 1935 and Rose Stone in 1942. But Sally Rodriguez, the lake\'s unofficial historian, has researched every death record. "I\'ve found lots of stories," she says, "but no stories that match." Reader\'s Digest named White Rock Lake one of the world\'s 14 most haunted bodies of water—listed right above Loch Ness.',
           verdict: 'Pure Dallas folklore. The phantom hitchhiker is a classic urban legend type, and no verified drowning victim matches the story. But try telling that to anyone who\'s driven those dark lakeside roads alone.',
@@ -1442,33 +1376,33 @@ export const dallas: CityData = {
               title: 'How White Rock\'s "Lady of the Lake" ghost story was sparked by a Neiman Marcus display genius',
               publisher: 'Dallas Morning News',
               year: '2021',
-              url: 'https://www.dallasnews.com/arts-entertainment/2021/10/31/how-white-rocks-lady-of-the-lake-ghost-story-was-sparked-by-a-neiman-marcus-display-genius/',
+              url: 'https://www.dallasnews.com/arts-entertainment/2021/10/31/how-white-rocks-lady-of-the-lake-ghost-story-was-sparked-by-a-neiman-marcus-display-genius/'
             },
             {
               type: 'article',
               title: 'Is Dallas\' White Rock Lake haunted? Curious Texas ghost hunts for an answer',
               publisher: 'Dallas Morning News',
               year: '2019',
-              url: 'https://www.dallasnews.com/news/curious-texas/2019/01/31/is-dallas-white-rock-lake-haunted-curious-texas-ghost-hunts-for-an-answer/',
+              url: 'https://www.dallasnews.com/news/curious-texas/2019/01/31/is-dallas-white-rock-lake-haunted-curious-texas-ghost-hunts-for-an-answer/'
             },
             {
               type: 'article',
               title: 'Dallas, Texas ghost story: White Rock Lady of the Lake',
               publisher: 'WFAA',
-              url: 'https://www.wfaa.com/article/features/dallas-texas-ghost-story-white-rocks-lady-of-the-lake-doesnt-exist-but-other-ghosts-just-might/287-6b22f6b0-b69c-4149-bdf2-f724a0987afb',
+              url: 'https://www.wfaa.com/article/features/dallas-texas-ghost-story-white-rocks-lady-of-the-lake-doesnt-exist-but-other-ghosts-just-might/287-6b22f6b0-b69c-4149-bdf2-f724a0987afb'
             },
             {
               type: 'article',
               title: 'Lady of the Lake',
               publisher: 'For the Love of the Lake',
-              url: 'https://whiterocklake.org/lady-of-the-lake/',
-            },
+              url: 'https://whiterocklake.org/lady-of-the-lake/'
+            }
           ],
           location: {
             name: 'White Rock Lake',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-5',
@@ -1477,7 +1411,7 @@ export const dallas: CityData = {
           title: 'The Screaming Bridge',
           image: {
             src: '/dallas/dark-history/screaming-bridge.png',
-            alt: 'Old wooden bridge in North Texas',
+            alt: 'Old wooden bridge in North Texas'
           },
           body: 'February 4, 1961: Six Arlington High School girls left a movie theater for a late-night joyride. As their car approached a wooden bridge on Arlington-Bedford Road at roughly 45 mph, the darkness and incline hid what lay ahead—the bridge had been burned out. Their car launched off the road and crashed into the opposite bank of the ravine, landing upside down. Mary Lou Goldner, 16, and Claudie Jean Reeves, 17, died instantly. Kathy Fleming died later. Three others survived with severe injuries. Ironically, Claudie\'s father was a highway patrolman; investigating officers paused their work to attend her funeral. A grand jury investigated four Arlington High boys for arson—they\'d set the bridge on fire as a "prank"—but called it "childish" and declined to press charges. The wooden bridge was soon replaced with a concrete culvert. But the legend migrated south to nearby Trammel Davis Road, now deep inside River Legacy Park, where visitors still claim to hear screaming on quiet nights.',
           verdict: 'Documented tragedy. The 1961 accident is real and verified; the haunting legend that followed attached itself to multiple bridges in the Trinity River bottom.',
@@ -1486,32 +1420,32 @@ export const dallas: CityData = {
               type: 'article',
               title: 'Six Girls in a Chevy (Part 2): Screaming Bridge',
               publisher: 'Hometown by Handlebar',
-              url: 'https://hometownbyhandlebar.com/?p=17046',
+              url: 'https://hometownbyhandlebar.com/?p=17046'
             },
             {
               type: 'article',
               title: 'The Screaming Bridge',
               publisher: 'Dallas Terrors',
-              url: 'https://dallasterrors.com/the-legend-of-screaming-bridge/',
+              url: 'https://dallasterrors.com/the-legend-of-screaming-bridge/'
             },
             {
               type: 'article',
               title: 'Screaming Bridge at River Legacy Park',
               publisher: 'Ghost Texas',
-              url: 'https://ghosttexas.com/screaming-bridge-at-river-legacy-park/',
+              url: 'https://ghosttexas.com/screaming-bridge-at-river-legacy-park/'
             },
             {
               type: 'article',
               title: 'Screaming Bridge: A Haunting Texas Urban Legend',
               publisher: 'Texas Hill Country',
-              url: 'https://texashillcountry.com/screaming-bridge-legend/',
-            },
+              url: 'https://texashillcountry.com/screaming-bridge-legend/'
+            }
           ],
           location: {
             name: 'River Legacy Park (Trammel Davis Road bridge)',
             url: 'https://maps.app.goo.gl/R5eYx5wYm5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-6',
@@ -1523,12 +1457,12 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/dark-history/amber-1.png',
-              alt: 'Amber Hagerman memorial',
+              alt: 'Amber Hagerman memorial'
             },
             {
               src: '/dallas/dark-history/amber-2.png',
-              alt: 'AMBER Alert system announcement',
-            },
+              alt: 'AMBER Alert system announcement'
+            }
           ],
           body: 'January 13, 1996: Nine-year-old Amber Hagerman took her new pink Christmas bike for a ride near her grandmother\'s house in Arlington. She and her little brother found a "cool" ramp in an abandoned Winn-Dixie parking lot two-tenths of a mile from home. Her brother went back; Amber stayed. At 3:15 p.m., a man in a black pickup truck grabbed her from behind. A 78-year-old retired sheriff\'s deputy witnessed it from his backyard and called 911, but could only describe the truck—a black 1980s or \'90s full-sized pickup with no chrome. Four days later, a dog walker found Amber\'s body in a creek bed near some apartments. Her throat had been cut. The medical examiner determined she\'d been kept alive for at least two days. Police have sifted through more than 8,000 leads over nearly three decades. No arrest has ever been made. But ten months after her death, Dallas-Fort Worth broadcasters launched a new emergency system in her name. The AMBER Alert has since helped recover over 1,200 children nationwide.',
           verdict: 'Unsolved. The killer has never been identified despite decades of investigation and thousands of tips. The case remains active with Arlington Police.',
@@ -1537,39 +1471,39 @@ export const dallas: CityData = {
               type: 'article',
               title: 'How A Nine-Year-Old\'s Horrifying Kidnapping And Murder Inspired The AMBER Alert System',
               publisher: 'All That\'s Interesting',
-              url: 'https://allthatsinteresting.com/amber-hagerman',
+              url: 'https://allthatsinteresting.com/amber-hagerman'
             },
             {
               type: 'article',
               title: 'How Were Amber Alerts Created? The Amber Hagerman Cold Case',
               publisher: 'A&E True Crime',
-              url: 'https://www.aetv.com/real-crime/how-did-amber-alerts-start-amber-hagerman',
+              url: 'https://www.aetv.com/real-crime/how-did-amber-alerts-start-amber-hagerman'
             },
             {
               type: 'article',
               title: 'Still Searching for Amber\'s Killer',
               publisher: 'National Center for Missing & Exploited Children',
               year: '2021',
-              url: 'https://www.missingkids.org/blog/2021/still-searching-for-ambers-killer',
+              url: 'https://www.missingkids.org/blog/2021/still-searching-for-ambers-killer'
             },
             {
               type: 'other',
               title: 'Amber Hagerman Case File',
               publisher: 'Solve the Case',
-              url: 'https://www.solvethecase.org/case/1996-5/amber-hagerman',
+              url: 'https://www.solvethecase.org/case/1996-5/amber-hagerman'
             },
             {
               type: 'article',
               title: 'About AMBER Alert',
               publisher: 'U.S. Department of Justice',
-              url: 'https://amberalert.ojp.gov/about',
-            },
+              url: 'https://amberalert.ojp.gov/about'
+            }
           ],
           location: {
             name: 'Former Winn-Dixie lot (E. Abram St., Arlington)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-7',
@@ -1579,12 +1513,12 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/dark-history/pillowcase-1.png',
-              alt: 'Dallas senior living facility',
+              alt: 'Dallas senior living facility'
             },
             {
               src: '/dallas/dark-history/pillowcase-2.png',
-              alt: 'Billy Chemirmir investigation coverage',
-            },
+              alt: 'Billy Chemirmir investigation coverage'
+            }
           ],
           body: 'For two years, elderly women in upscale Dallas senior living communities kept dying in their sleep. Natural causes, the death certificates said—they were old, after all. But Billy Chemirmir wasn\'t a caregiver making house calls. He was a predator. The Kenyan immigrant would pose as a maintenance worker or medical professional, talk his way into apartments, then smother his victims with pillows and steal their jewelry. The smothering left almost no evidence. At least 18 women died before 91-year-old Mary Annis Bartel survived an attack in March 2018. "Go to bed. Don\'t fight me," he told her. She lost consciousness but lived. Her description led police to Chemirmir the next day—just as he was tossing a jewelry box into a dumpster. Inside: items belonging to his latest victim, 81-year-old Lu Thi Harris, found dead that same evening. Chemirmir was indicted for 22 murders, convicted of two, and sentenced to life without parole. In September 2023, his cellmate killed him in prison.',
           verdict: 'Convicted. Chemirmir received two life sentences before being killed by his cellmate in 2023. Families of victims continue to push for accountability from the senior living facilities that failed to protect residents.',
@@ -1594,46 +1528,46 @@ export const dallas: CityData = {
               title: 'Dallas serial killer Billy Chemirmir convicted, receives second life sentence',
               publisher: 'WFAA',
               year: '2022',
-              url: 'https://www.wfaa.com/article/news/crime/dallas-serial-killer-billy-chemirmir-convicted-of-capital-murder-in-death-of-another-elderly-victim-receives-second-life-sentence-officials-say/287-0f36d04d-4f2d-4d1e-9b73-7ddb77f5dc00',
+              url: 'https://www.wfaa.com/article/news/crime/dallas-serial-killer-billy-chemirmir-convicted-of-capital-murder-in-death-of-another-elderly-victim-receives-second-life-sentence-officials-say/287-0f36d04d-4f2d-4d1e-9b73-7ddb77f5dc00'
             },
             {
               type: 'article',
               title: 'Convicted North Texas killer Billy Chemirmir killed in prison',
               publisher: 'WFAA',
               year: '2023',
-              url: 'https://www.wfaa.com/article/news/local/billy-chemirmir-killed-in-prison-texas-dallas-convicted-killer/287-caa6133d-a47b-4b26-8946-20ec46b623a1',
+              url: 'https://www.wfaa.com/article/news/local/billy-chemirmir-killed-in-prison-texas-dallas-convicted-killer/287-caa6133d-a47b-4b26-8946-20ec46b623a1'
             },
             {
               type: 'article',
               title: 'Pillowcase Murders: Suspected Texas serial killer smothered elderly women in upscale nursing homes',
               publisher: 'Fox News',
-              url: 'https://www.foxnews.com/us/pillowcase-murders-suspected-texas-serial-killer-smothered-elderly-women-upscale-nursing-homes',
+              url: 'https://www.foxnews.com/us/pillowcase-murders-suspected-texas-serial-killer-smothered-elderly-women-upscale-nursing-homes'
             },
             {
               type: 'article',
               title: 'Billy Chemirmir, accused in deaths of 18 elderly women, killed in prison by cellmate',
               publisher: 'NBC News',
               year: '2023',
-              url: 'https://www.nbcnews.com/news/us-news/man-accused-deaths-18-elderly-women-texas-killed-prison-cellmate-rcna105839',
+              url: 'https://www.nbcnews.com/news/us-news/man-accused-deaths-18-elderly-women-texas-killed-prison-cellmate-rcna105839'
             },
             {
               type: 'documentary',
               title: 'Pillowcase Murders',
               platform: 'Paramount+',
-              year: '2024',
+              year: '2024'
             },
             {
               type: 'other',
               title: 'Billy Chemirmir',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Billy_Chemirmir',
-            },
+              url: 'https://en.wikipedia.org/wiki/Billy_Chemirmir'
+            }
           ],
           location: {
             name: 'The Tradition-Preston Hollow',
             url: 'https://maps.app.goo.gl/uXjGq5v7Ym5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-8',
@@ -1642,7 +1576,7 @@ export const dallas: CityData = {
           title: 'Goatman\'s Bridge',
           image: {
             src: '/dallas/dark-history/goatman.png',
-            alt: 'Old Alton Bridge at dusk',
+            alt: 'Old Alton Bridge at dusk'
           },
           body: 'The story goes like this: In the late 1930s, a Black goat farmer named Oscar Washburn lived near the Old Alton Bridge in Denton County. He was good at his trade—so good he hung a sign on the bridge: "This Way to the Goatman." His success enraged local Klansmen. One night in August 1938, they crossed the bridge, dragged Washburn from his home, and hanged him from the iron trusses. But when they looked over the edge to make sure he was dead, the noose was empty. Panicked, they returned to his home and murdered his wife and children. Now, on dark nights, people report glowing eyes in the woods, the sound of hooves on the bridge, and a growling voice ordering them to leave. Paranormal investigators flock here. The reality is more complicated: researchers have found no census records of Oscar Washburn, no newspaper accounts of a 1938 lynching, no death certificates. But racist violence absolutely happened in Denton County during that era—the newspapers just didn\'t print the victims\' names. The Goatman may be a ghost story, but the terror it describes was real.',
           verdict: 'Unverified legend. No historical records confirm Oscar Washburn existed, but the story reflects documented patterns of racial violence in 1930s North Texas.',
@@ -1652,40 +1586,40 @@ export const dallas: CityData = {
               title: 'The Goatman of Old Alton Bridge: A tale rooted in Texas\' historical racial tensions',
               publisher: 'Texas Standard / KERA',
               year: '2023',
-              url: 'https://www.texasstandard.org/stories/goatman-denton-old-alton-bridge-texas-cryptids-lynching/',
+              url: 'https://www.texasstandard.org/stories/goatman-denton-old-alton-bridge-texas-cryptids-lynching/'
             },
             {
               type: 'article',
               title: 'Denton\'s Haunted Bridge Legend Grows, But Does the Story Add Up?',
               publisher: 'NBC DFW',
-              url: 'https://www.nbcdfw.com/news/local/dentons-haunted-bridge-legend-grows-but-does-the-story-add-up/44982/',
+              url: 'https://www.nbcdfw.com/news/local/dentons-haunted-bridge-legend-grows-but-does-the-story-add-up/44982/'
             },
             {
               type: 'article',
               title: 'The Goat Man and a Name',
               publisher: 'Denton Public Library',
               year: '2015',
-              url: 'https://dentonlibrary.wordpress.com/2015/11/04/the-goat-man-and-a-name/',
+              url: 'https://dentonlibrary.wordpress.com/2015/11/04/the-goat-man-and-a-name/'
             },
             {
               type: 'article',
               title: 'A Historic Haunt: Old Alton Bridge',
               publisher: 'Denton County Office of History and Culture',
               year: '2017',
-              url: 'https://dentoncountyhistoryandculture.wordpress.com/2017/10/27/a-historic-haunt-old-alton-bridge/',
+              url: 'https://dentoncountyhistoryandculture.wordpress.com/2017/10/27/a-historic-haunt-old-alton-bridge/'
             },
             {
               type: 'other',
               title: 'Old Alton Bridge',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/Old_Alton_Bridge',
-            },
+              url: 'https://en.wikipedia.org/wiki/Old_Alton_Bridge'
+            }
           ],
           location: {
             name: 'Old Alton Bridge',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-dark-9',
@@ -1695,12 +1629,12 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/curiosities/elm-houston-1.png',
-              alt: 'Dealey Plaza and the Texas School Book Depository',
+              alt: 'Dealey Plaza and the Texas School Book Depository'
             },
             {
               src: '/dallas/curiosities/elm-houston-2.png',
-              alt: 'Historic view of Elm and Houston corner',
-            },
+              alt: 'Historic view of Elm and Houston corner'
+            }
           ],
           body: 'The corner of Elm and Houston Streets in Dealey Plaza has a sordid history that predates the Kennedy assassination. In 1898, the Southern Rock Island Plow Company built a five-story structure on the site. On May 4, 1901, it was struck by lightning and burned to the ground. A seven-story building was rebuilt on the same foundation in 1901 — the same building where, 62 years later, Lee Harvey Oswald allegedly took aim at President Kennedy from the sixth floor. Some corners seem to attract tragedy. This is one of them.',
           verdict: 'Documented history. The 1901 fire is verified; whether the location is "cursed" is a matter of perspective.',
@@ -1709,16 +1643,16 @@ export const dallas: CityData = {
               type: 'article',
               title: 'Texas School Book Depository',
               publisher: 'Dallas Historical Society',
-              url: 'https://www.dallashistory.org/',
-            },
+              url: 'https://www.dallashistory.org/'
+            }
           ],
           location: {
             name: 'Dealey Plaza (Elm & Houston)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'dal-best-bars',
@@ -1736,23 +1670,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/bars-midnight-1.png',
-              alt: 'Midnight Rambler bar interior',
+              alt: 'Midnight Rambler bar interior'
             },
             {
               src: '/dallas/establishments/bars-midnight-2.png',
-              alt: 'Midnight Rambler cocktails',
+              alt: 'Midnight Rambler cocktails'
             },
             {
               src: '/dallas/establishments/bars-midnight-3.png',
-              alt: 'Midnight Rambler atmosphere',
-            },
+              alt: 'Midnight Rambler atmosphere'
+            }
           ],
           address: '1530 Main St, Dallas, TX 75201',
           coordinates: { lat: 32.7816, lng: -96.7995 },
           price: '$$$',
           hours: 'Tue-Wed 5pm-12am, Thu-Sat 5pm-2am',
           website: 'https://midnightramblerbar.com/',
-          instagram: '@midnightramblerbar',
+          instagram: '@midnightramblerbar'
         },
         {
           name: 'The Library Bar',
@@ -1763,23 +1697,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/bar-library-1.png',
-              alt: 'The Library Bar interior',
+              alt: 'The Library Bar interior'
             },
             {
               src: '/dallas/establishments/bar-library-2.png',
-              alt: 'The Library Bar seating',
+              alt: 'The Library Bar seating'
             },
             {
               src: '/dallas/establishments/bar-library-3.png',
-              alt: 'The Library Bar atmosphere',
-            },
+              alt: 'The Library Bar atmosphere'
+            }
           ],
           address: '3015 Oak Lawn Ave, Dallas, TX 75219',
           coordinates: { lat: 32.8101, lng: -96.8101 },
           price: '$$$',
           hours: 'Daily 2pm-12am',
           website: 'https://www.librarybardallas.com/',
-          instagram: '@librarybardallas',
+          instagram: '@librarybardallas'
         },
         {
           name: 'The Balcony Club',
@@ -1790,23 +1724,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/hidden-gems/balconyclub-1.png',
-              alt: 'Intimate jazz club with stage and mood lighting',
+              alt: 'Intimate jazz club with stage and mood lighting'
             },
             {
               src: '/dallas/hidden-gems/balconyclub-2.png',
-              alt: 'Live jazz performance at The Balcony Club',
+              alt: 'Live jazz performance at The Balcony Club'
             },
             {
               src: '/dallas/hidden-gems/balconyclub-3.png',
-              alt: 'The Balcony Club atmosphere',
-            },
+              alt: 'The Balcony Club atmosphere'
+            }
           ],
           address: '1825 Abrams Rd, Ste B, Dallas, TX 75214',
           coordinates: { lat: 32.8419, lng: -96.7687 },
           price: '$',
           hours: 'Mon-Thu 8pm-12am, Fri-Sat multiple bands nightly',
           website: 'https://thebalconyclub.com/',
-          instagram: '@thebalconyclubdallas',
+          instagram: '@thebalconyclubdallas'
         },
         {
           name: 'The Truck Yard',
@@ -1817,23 +1751,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/bars-truck-1.png',
-              alt: 'The Truck Yard outdoor space',
+              alt: 'The Truck Yard outdoor space'
             },
             {
               src: '/dallas/establishments/bars-truck-2.png',
-              alt: 'The Truck Yard bar area',
+              alt: 'The Truck Yard bar area'
             },
             {
               src: '/dallas/establishments/bars-truck-3.png',
-              alt: 'The Truck Yard atmosphere',
-            },
+              alt: 'The Truck Yard atmosphere'
+            }
           ],
           address: '5624 Sears St, Dallas, TX 75206',
           coordinates: { lat: 32.8285, lng: -96.7685 },
           price: '$',
           hours: 'Mon-Wed 4pm-12am, Thu-Sun 11am-12am',
           website: 'https://truckyard.com/',
-          instagram: '@truckyarddallas',
+          instagram: '@truckyarddallas'
         },
         {
           name: 'Double Wide',
@@ -1844,27 +1778,27 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/bar-double-wide-00.png',
-              alt: 'Double Wide bar exterior',
+              alt: 'Double Wide bar exterior'
             },
             {
               src: '/dallas/establishments/bar-double-wide-1.png',
-              alt: 'Double Wide interior decor',
+              alt: 'Double Wide interior decor'
             },
             {
               src: '/dallas/establishments/bar-double-wide-2.png',
-              alt: 'Double Wide bar area',
+              alt: 'Double Wide bar area'
             },
             {
               src: '/dallas/establishments/bar-double-wide-3.png',
-              alt: 'Double Wide atmosphere',
-            },
+              alt: 'Double Wide atmosphere'
+            }
           ],
           address: '3510 Commerce St, Dallas, TX 75226',
           coordinates: { lat: 32.7834, lng: -96.7808 },
           price: '$',
           hours: 'Tue-Fri 5pm-2am, Sat-Sun 1pm-2am',
           website: 'https://doublewidedallas.com/',
-          instagram: '@doublewide_dallas',
+          instagram: '@doublewide_dallas'
         },
         {
           name: 'High & Tight Barber Shop Speakeasy',
@@ -1874,12 +1808,12 @@ export const dallas: CityData = {
           why: 'High & Tight is one of Dallas\'s genuinely well-kept secrets, which is rare in an age when "secret" bars announce their locations on Instagram and give Yelp reviewers their WiFi password. Walk into what appears to be a legitimate, functioning barber shop—because it is one—and stroll past the row of stylists giving actual haircuts to actual customers. Follow the sound of music and the faint glow of green light to a door in the back that leads to a dimly lit speakeasy that feels like a Prohibition-era time capsule. The cocktails are well-made but not overly fussy, the vibe is "you found something nobody told you about," and the whole experience makes you feel like you\'ve unlocked a side quest most people don\'t even know exists. The salon-to-saloon transformation is so seamless you\'ll wonder how many other Dallas businesses are secretly bars in disguise.',
           images: [
             { src: '/dallas/hidden-gems/barberspeakeasy-1.png', alt: 'Hidden speakeasy interior' },
-            { src: '/dallas/hidden-gems/barberspeakeasy-2.png', alt: 'Barber shop front' },
+            { src: '/dallas/hidden-gems/barberspeakeasy-2.png', alt: 'Barber shop front' }
           ],
           address: 'Deep Ellum, Dallas',
           coordinates: { lat: 32.7848, lng: -96.7845 },
           price: '$$',
-          hours: 'Evening hours after barber shop closes',
+          hours: 'Evening hours after barber shop closes'
         },
         {
           name: 'Room 520',
@@ -1889,12 +1823,12 @@ export const dallas: CityData = {
           why: 'Room 520 is the most genuinely exclusive bar experience in Dallas, and not in the obnoxious "you\'re not on the list" way—in the "you literally need a pin code to access a hotel room that\'s secretly a bar" way. Check in at the front desk of SOVA Hotel Downtown, receive your access code like you\'re entering a spy novel, and take the elevator to the fifth floor. Use the code to unlock what appears to be a standard hotel room but is actually one of Dallas\'s smallest and most intimate bars, fitting maybe a dozen people max. The Japanese-inspired cocktails are crafted with meticulous attention by bartenders who treat each drink like a personal art project. The vibe is "speakeasy meets boutique hotel meets Tokyo whisky bar," and the whole experience feels like you\'ve been let in on a secret that most of Dallas doesn\'t know exists. This isn\'t hidden for Instagram-bait marketing purposes—it\'s genuinely difficult to find, actually exclusive, and absolutely worth the effort of figuring out how to get in.',
           images: [
             { src: '/dallas/establishments/room520-hero.jpg', alt: 'Room 520 speakeasy' },
-            { src: '/dallas/establishments/room520-interior.jpg', alt: 'Room 520 interior' },
+            { src: '/dallas/establishments/room520-interior.jpg', alt: 'Room 520 interior' }
           ],
           address: 'SOVA Hotel, Dallas',
           coordinates: { lat: 32.7896, lng: -96.8003 },
           price: '$$$',
-          hours: 'Evening hours',
+          hours: 'Evening hours'
         },
         {
           name: 'Twilite Lounge',
@@ -1903,15 +1837,15 @@ export const dallas: CityData = {
           order: 'The frozen Irish coffee is legendary. Don\'t overthink it.',
           why: 'Twilite Lounge is what happens when someone in Dallas gets homesick for New Orleans and decides to recreate the French Quarter in Deep Ellum with enough conviction that it actually works. The space drips with Big Easy atmosphere: gold lamps casting warm glows, blood-red curtains that would make Anne Rice proud, and a courtyard that feels like you stepped through a portal into the Marigny. It\'s become the unofficial home bar for displaced Saints fans, LSU alumni, and anyone who misses the particular combination of humidity, jazz, and day-drinking that defines Louisiana. The frozen Irish coffee is legendary for good reason—it\'s cold, strong, caffeinated, and alcoholic, which covers all four major food groups. The cocktail menu leans heavily into New Orleans classics (Sazeracs, Hurricanes, Vieux Carré), and the vibe is "party like it\'s Mardi Gras on a Tuesday." Dallas Observer named it a Top 100 Bar, and it\'s deservedly so—this is as close as you can get to Bourbon Street without leaving Texas.',
           images: [
-            { src: '/dallas/establishments/twilite-interior.jpg', alt: 'Twilite Lounge interior' },
+            { src: '/dallas/establishments/twilite-interior.jpg', alt: 'Twilite Lounge interior' }
           ],
           address: '2640 Elm St, Dallas, TX 75226',
           coordinates: { lat: 32.7849, lng: -96.7846 },
           price: '$$',
           hours: 'Daily 5pm-2am',
-          website: 'https://thetwilitelounge.com',
-        },
-      ],
+          website: 'https://thetwilitelounge.com'
+        }
+      ]
     },
     {
       id: 'dal-best-coffee-shops',
@@ -1929,23 +1863,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/coffee-davis-1.png',
-              alt: 'Davis Street Espresso interior',
+              alt: 'Davis Street Espresso interior'
             },
             {
               src: '/dallas/establishments/coffee-davis-2.png',
-              alt: 'Davis Street Espresso coffee bar',
+              alt: 'Davis Street Espresso coffee bar'
             },
             {
               src: '/dallas/establishments/coffee-davis-3.png',
-              alt: 'Davis Street Espresso atmosphere',
-            },
+              alt: 'Davis Street Espresso atmosphere'
+            }
           ],
           address: '819 W Davis St, Dallas, TX 75208',
           coordinates: { lat: 32.7493, lng: -96.8277 },
           hours: '7am-3pm Mon-Sat',
           price: '$$',
           website: 'https://davisstreetespresso.com',
-          instagram: '@davisstreetespresso',
+          instagram: '@davisstreetespresso'
         },
         {
           name: 'Hola Cafe',
@@ -1956,23 +1890,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/coffee-hola-1.png',
-              alt: 'Hola Cafe interior',
+              alt: 'Hola Cafe interior'
             },
             {
               src: '/dallas/establishments/coffee-hola-2.png',
-              alt: 'Hola Cafe coffee service',
+              alt: 'Hola Cafe coffee service'
             },
             {
               src: '/dallas/establishments/coffee-hola-3.png',
-              alt: 'Hola Cafe atmosphere',
-            },
+              alt: 'Hola Cafe atmosphere'
+            }
           ],
           address: '1208 W Davis St, Dallas, TX 75208',
           coordinates: { lat: 32.7495, lng: -96.8357 },
           hours: '7am-5pm daily',
           price: '$$',
           website: 'https://holacafe.com',
-          instagram: '@holacafe',
+          instagram: '@holacafe'
         },
         {
           name: 'Opening Bell Coffee',
@@ -1983,23 +1917,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/coffee-bell-1.png',
-              alt: 'Opening Bell Coffee interior',
+              alt: 'Opening Bell Coffee interior'
             },
             {
               src: '/dallas/establishments/coffee-bell-2.png',
-              alt: 'Opening Bell Coffee performance space',
+              alt: 'Opening Bell Coffee performance space'
             },
             {
               src: '/dallas/establishments/coffee-bell-3.png',
-              alt: 'Opening Bell Coffee atmosphere',
-            },
+              alt: 'Opening Bell Coffee atmosphere'
+            }
           ],
           address: '1409 S Lamar St, Dallas, TX 75215',
           coordinates: { lat: 32.7629, lng: -96.8161 },
           hours: '7am-10pm daily',
           price: '$',
           website: 'https://openingbellcoffee.com',
-          instagram: '@openingbellcoffee',
+          instagram: '@openingbellcoffee'
         },
         {
           name: 'The Berni Bean',
@@ -2010,23 +1944,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/coffee-berni-1.png',
-              alt: 'The Berni Bean interior',
+              alt: 'The Berni Bean interior'
             },
             {
               src: '/dallas/establishments/coffee-berni-2.png',
-              alt: 'The Berni Bean coffee bar',
+              alt: 'The Berni Bean coffee bar'
             },
             {
               src: '/dallas/establishments/coffee-berni-3.png',
-              alt: 'The Berni Bean atmosphere',
-            },
+              alt: 'The Berni Bean atmosphere'
+            }
           ],
           address: '650 S Griffin St, Dallas, TX 75202',
           coordinates: { lat: 32.7774, lng: -96.8038 },
           hours: '7am-4pm Mon-Fri, 8am-4pm Sat-Sun',
           price: '$$',
           website: 'https://thebernibean.com',
-          instagram: '@thebernibean',
+          instagram: '@thebernibean'
         },
         {
           name: 'Ascension Coffee',
@@ -2037,11 +1971,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/ascension-cherries.jpg',
-              alt: 'Coffee sourcing at Ascension Coffee',
+              alt: 'Coffee sourcing at Ascension Coffee'
             },
             {
               src: '/dallas/establishments/ascension-coffee-home.jpg',
-              alt: 'Ascension Coffee lifestyle',
+              alt: 'Ascension Coffee lifestyle'
             }
           ],
           address: '1621 Oak Lawn Ave (Design District) + 5 other locations',
@@ -2049,7 +1983,7 @@ export const dallas: CityData = {
           hours: 'Daily 7am-7pm',
           price: '$',
           website: 'https://ascension.coffee',
-          instagram: '@ascensioncoffee',
+          instagram: '@ascensioncoffee'
         },
         {
           name: 'Merit Coffee',
@@ -2060,11 +1994,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/merit-coffee-deep-ellum.jpg',
-              alt: 'Merit Coffee cafe in Deep Ellum',
+              alt: 'Merit Coffee cafe in Deep Ellum'
             },
             {
               src: '/dallas/establishments/merit-coffee-product.jpg',
-              alt: 'Merit Coffee specialty drinks',
+              alt: 'Merit Coffee specialty drinks'
             }
           ],
           address: '2639 Main St (Deep Ellum) + 3 other Dallas locations',
@@ -2072,7 +2006,7 @@ export const dallas: CityData = {
           hours: 'Daily 7am-6pm',
           price: '$',
           website: 'https://meritcoffee.com',
-          instagram: '@meritcoffee',
+          instagram: '@meritcoffee'
         },
         {
           name: 'White Rock Coffee',
@@ -2083,11 +2017,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/white-rock-coffee-rosewood.jpg',
-              alt: 'White Rock Coffee Rosewood location',
+              alt: 'White Rock Coffee Rosewood location'
             },
             {
               src: '/dallas/establishments/white-rock-pour-over.jpg',
-              alt: 'Pour-over coffee at White Rock Coffee',
+              alt: 'Pour-over coffee at White Rock Coffee'
             }
           ],
           address: 'Multiple locations (Preston Center, SMU, Uptown)',
@@ -2095,7 +2029,7 @@ export const dallas: CityData = {
           hours: 'Daily 6am-8pm (varies by location)',
           price: '$',
           website: 'https://wrcoffee.com',
-          instagram: '@whiterockcoffee',
+          instagram: '@whiterockcoffee'
         },
         {
           name: 'Noble Coyote Coffee Roasters',
@@ -2106,11 +2040,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/noble-coyote-shop.jpg',
-              alt: 'Noble Coyote Coffee Roasters shop',
+              alt: 'Noble Coyote Coffee Roasters shop'
             },
             {
               src: '/dallas/establishments/noble-coyote-lab.jpg',
-              alt: 'Coffee lab at Noble Coyote',
+              alt: 'Coffee lab at Noble Coyote'
             }
           ],
           address: '819 Exposition Ave, Dallas, TX 75226',
@@ -2118,9 +2052,9 @@ export const dallas: CityData = {
           hours: 'Tue-Sat 9am-3pm',
           price: '$',
           website: 'https://www.noblecoyotecoffee.com',
-          instagram: '@noblecoyotecoffee',
-        },
-      ],
+          instagram: '@noblecoyotecoffee'
+        }
+      ]
     },
     {
       id: 'dal-best-restaurants',
@@ -2138,23 +2072,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/resto-pecan-1.png',
-              alt: 'Pecan Lodge BBQ',
+              alt: 'Pecan Lodge BBQ'
             },
             {
               src: '/dallas/establishments/resto-pecan-2.png',
-              alt: 'Pecan Lodge smoked meats',
+              alt: 'Pecan Lodge smoked meats'
             },
             {
               src: '/dallas/establishments/resto-pecan-3.png',
-              alt: 'Pecan Lodge interior',
-            },
+              alt: 'Pecan Lodge interior'
+            }
           ],
           address: '2702 Main St, Dallas, TX 75226',
           coordinates: { lat: 32.7857, lng: -96.7889 },
           price: '$$',
           hours: 'Mon 11am-3pm, Tue-Thu 11am-8pm, Fri-Sat 11am-9pm, Sun 11am-8pm',
           website: 'https://pecanlodge.com/',
-          instagram: '@pecanlodge',
+          instagram: '@pecanlodge'
         },
         {
           name: 'Lucia',
@@ -2165,23 +2099,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/resto-lucia-1.png',
-              alt: 'Lucia restaurant interior',
+              alt: 'Lucia restaurant interior'
             },
             {
               src: '/dallas/establishments/resto-lucia-2.png',
-              alt: 'Lucia handmade pasta',
+              alt: 'Lucia handmade pasta'
             },
             {
               src: '/dallas/establishments/resto-lucia-3.png',
-              alt: 'Lucia dining experience',
-            },
+              alt: 'Lucia dining experience'
+            }
           ],
           address: '287 N Bishop Ave, Dallas, TX 75208',
           coordinates: { lat: 32.7462, lng: -96.8300 },
           price: '$$$',
           hours: 'Tue-Sat 5pm-10pm',
           website: 'https://www.luciadallas.com/',
-          instagram: '@lucia_dallas',
+          instagram: '@lucia_dallas'
         },
         {
           name: 'Tei-An',
@@ -2192,23 +2126,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/resto-tei-ann-1.png',
-              alt: 'Tei-An restaurant interior',
+              alt: 'Tei-An restaurant interior'
             },
             {
               src: '/dallas/establishments/resto-tei-ann-2.png',
-              alt: 'Tei-An house-made soba',
+              alt: 'Tei-An house-made soba'
             },
             {
               src: '/dallas/establishments/resto-tei-ann-3.png',
-              alt: 'Tei-An dining experience',
-            },
+              alt: 'Tei-An dining experience'
+            }
           ],
           address: '1722 Routh St #110, Dallas, TX 75201',
           coordinates: { lat: 32.7896, lng: -96.8003 },
           price: '$$$',
           hours: 'Tue-Thu 11am-2pm & 5pm-10pm, Fri 11am-2pm & 4:30pm-10:30pm, Sat 4:30pm-10:30pm, Sun 11am-2pm & 4pm-9pm',
           website: 'https://tei-an.com/',
-          instagram: '@teiandallas',
+          instagram: '@teiandallas'
         },
         {
           name: 'Jimmy\'s Food Store',
@@ -2219,23 +2153,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/resto-jimmy-1.png',
-              alt: 'Jimmy\'s Food Store interior',
+              alt: 'Jimmy\'s Food Store interior'
             },
             {
               src: '/dallas/establishments/resto-jimmy-2.png',
-              alt: 'Jimmy\'s Food Store deli counter',
+              alt: 'Jimmy\'s Food Store deli counter'
             },
             {
               src: '/dallas/establishments/resto-jimmy-3.png',
-              alt: 'Jimmy\'s Food Store sandwiches',
-            },
+              alt: 'Jimmy\'s Food Store sandwiches'
+            }
           ],
           address: '4901 Bryan St, Dallas, TX 75206',
           coordinates: { lat: 32.8006, lng: -96.7712 },
           price: '$$',
           hours: 'Mon-Sat 9am-7pm',
           website: 'https://jimmysfoodstore.com/',
-          instagram: '@jimmys_food_store',
+          instagram: '@jimmys_food_store'
         },
         {
           name: 'Revolver Taco Lounge',
@@ -2246,23 +2180,23 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/resto-revolver-1.png',
-              alt: 'Revolver Taco Lounge interior',
+              alt: 'Revolver Taco Lounge interior'
             },
             {
               src: '/dallas/establishments/resto-revolver-2.png',
-              alt: 'Revolver Taco Lounge tacos',
+              alt: 'Revolver Taco Lounge tacos'
             },
             {
               src: '/dallas/establishments/resto-revolver-3.png',
-              alt: 'Revolver Taco Lounge dining',
-            },
+              alt: 'Revolver Taco Lounge dining'
+            }
           ],
           address: '2701 Main St, Dallas, TX 75226',
           coordinates: { lat: 32.7857, lng: -96.7889 },
           price: '$$',
           hours: 'Tue-Sat 11am-10pm',
           website: 'https://revolvertacolounge.com/',
-          instagram: '@revolvertacolounge',
+          instagram: '@revolvertacolounge'
         },
         {
           name: 'Cattleack Barbeque',
@@ -2273,11 +2207,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/cattleack-hero.jpg',
-              alt: 'Cattleack Barbeque interior',
+              alt: 'Cattleack Barbeque interior'
             },
             {
               src: '/dallas/establishments/cattleack-michelin-2025.png',
-              alt: 'Cattleack Barbeque MICHELIN Bib Gourmand 2025',
+              alt: 'Cattleack Barbeque MICHELIN Bib Gourmand 2025'
             }
           ],
           address: '13628 Gamma Rd, Dallas, TX 75244',
@@ -2285,7 +2219,7 @@ export const dallas: CityData = {
           price: '$$',
           hours: 'Wed-Fri + first Sat, 10am till sold out',
           website: 'https://cattleackbbq.com',
-          instagram: '@cattleackbbq',
+          instagram: '@cattleackbbq'
         },
         {
           name: 'Uchi Dallas',
@@ -2296,15 +2230,15 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/uchi-hama-chili.jpg',
-              alt: 'Hama Chili at Uchi Dallas',
+              alt: 'Hama Chili at Uchi Dallas'
             },
             {
               src: '/dallas/establishments/uchi-otoro-nigiri.jpg',
-              alt: 'Otoro nigiri at Uchi Dallas',
+              alt: 'Otoro nigiri at Uchi Dallas'
             },
             {
               src: '/dallas/establishments/uchi-wagyu-tataki.jpg',
-              alt: 'Wagyu tataki at Uchi Dallas',
+              alt: 'Wagyu tataki at Uchi Dallas'
             }
           ],
           address: '2817 Maple Ave, Dallas, TX 75201',
@@ -2312,7 +2246,7 @@ export const dallas: CityData = {
           price: '$$$',
           hours: 'Dinner daily, Happy Hour 5-6:30pm',
           website: 'https://uchi.uchirestaurants.com/location/sushi-dallas/',
-          instagram: '@uchidallas',
+          instagram: '@uchidallas'
         },
         {
           name: 'Kalachandji\'s',
@@ -2323,18 +2257,18 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/kalachandjis-patio.jpg',
-              alt: 'Beautiful outdoor patio at Kalachandji\'s with temple gardens',
+              alt: 'Beautiful outdoor patio at Kalachandji\'s with temple gardens'
             },
             {
               src: '/dallas/establishments/kalachandjis-window.jpg',
-              alt: 'Kalachandji\'s temple dining room interior',
-            },
+              alt: 'Kalachandji\'s temple dining room interior'
+            }
           ],
           address: '5430 Gurley Ave, Dallas, TX 75223',
           coordinates: { lat: 32.8160, lng: -96.7656 },
           price: '$$',
           hours: 'Lunch Tue-Sun, Dinner Thu-Sun',
-          website: 'https://kalachandjis.com',
+          website: 'https://kalachandjis.com'
         },
         {
           name: 'Emporium Pies',
@@ -2345,19 +2279,19 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/emporium-drunken-nut.jpg',
-              alt: 'The Drunken Nut pecan pie at Emporium Pies',
+              alt: 'The Drunken Nut pecan pie at Emporium Pies'
             },
             {
               src: '/dallas/establishments/emporium-lord.jpg',
-              alt: 'Lord of the Pies apple pie with streusel',
-            },
+              alt: 'Lord of the Pies apple pie with streusel'
+            }
           ],
           address: '314 N Bishop Ave (Bishop Arts) + Deep Ellum, McKinney, Fort Worth',
           coordinates: { lat: 32.7460, lng: -96.8294 },
           price: '$$',
           hours: 'Daily 11am-10pm',
           website: 'https://www.emporiumpies.com',
-          instagram: '@emporiumpies',
+          instagram: '@emporiumpies'
         },
         {
           name: 'Terry Black\'s Barbecue',
@@ -2368,11 +2302,11 @@ export const dallas: CityData = {
           images: [
             {
               src: '/dallas/establishments/terry-blacks-hero.jpg',
-              alt: 'Terry Black\'s Barbecue spread',
+              alt: 'Terry Black\'s Barbecue spread'
             },
             {
               src: '/dallas/establishments/terry-blacks-brisket.jpg',
-              alt: 'Smoked brisket at Terry Black\'s',
+              alt: 'Smoked brisket at Terry Black\'s'
             }
           ],
           address: '3025 Main St, Dallas, TX 75226',
@@ -2380,9 +2314,9 @@ export const dallas: CityData = {
           price: '$$',
           hours: 'Daily 11am-9pm',
           website: 'https://terryblacksbbq.com',
-          instagram: '@terryblacksbbq',
-        },
-      ],
+          instagram: '@terryblacksbbq'
+        }
+      ]
     },
     {
       id: 'dal-obscure-history',
@@ -2398,18 +2332,15 @@ export const dallas: CityData = {
             {
               title: 'JFK Assassination',
               url: 'https://www.jfk.org/the-assassination/',
-              publisher: 'The Sixth Floor Museum at Dealey Plaza',
+              publisher: 'The Sixth Floor Museum at Dealey Plaza'
             }
           ],
-          image: {
-            src: '/images/history/jfk-dealey-plaza.jpg',
-            alt: 'Dealey Plaza in Dallas where President Kennedy was assassinated',
-                      },
+          
           location: {
             name: 'Dealey Plaza',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-2',
@@ -2420,19 +2351,15 @@ export const dallas: CityData = {
             {
               title: 'Bonnie and Clyde',
               url: 'https://www.tshaonline.org/handbook/entries/bonnie-and-clyde',
-              publisher: 'Texas State Historical Association',
+              publisher: 'Texas State Historical Association'
             }
           ],
-          image: {
-            src: '/images/history/bonnie-clyde.jpg',
-            alt: 'Famous photograph of Bonnie Parker with gun',
-            year: '1933',
-          },
+          
           location: {
             name: 'Crown Hill Memorial Park (Bonnie) & Western Heights Cemetery (Clyde)',
             url: 'https://maps.app.goo.gl/uXjGq5v7Ym5E8W1V7',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-3',
@@ -2443,19 +2370,19 @@ export const dallas: CityData = {
             {
               title: 'Slavery in Dallas',
               url: 'https://www.dallasobserver.com/news/dallas-slavery-history-11921441',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ],
           location: {
             name: 'Old Dallas County Courthouse',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dal-history-4',
@@ -2466,14 +2393,14 @@ export const dallas: CityData = {
             {
               title: 'The KKK in 1920s Dallas',
               url: 'https://www.dmagazine.com/publications/d-magazine/2017/june/when-the-kkk-ruled-dallas/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
           location: {
             name: 'Fair Park (Former KKK Day Site)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-5',
@@ -2484,18 +2411,15 @@ export const dallas: CityData = {
             {
               title: 'History of the State Fair of Texas',
               url: 'https://bigtex.com/about-us/history/',
-              publisher: 'State Fair of Texas',
+              publisher: 'State Fair of Texas'
             }
           ],
-          image: {
-            src: '/images/history/state-fair-big-tex.jpg',
-            alt: 'Big Tex statue at State Fair of Texas',
-                      },
+          
           location: {
             name: 'Fair Park',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-6',
@@ -2506,14 +2430,14 @@ export const dallas: CityData = {
             {
               title: 'Bryan, John Neely',
               url: 'https://www.tshaonline.org/handbook/entries/bryan-john-neely',
-              publisher: 'Texas State Historical Association',
+              publisher: 'Texas State Historical Association'
             }
           ],
           location: {
             name: 'John Neely Bryan Cabin',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-7',
@@ -2524,19 +2448,15 @@ export const dallas: CityData = {
             {
               title: 'The History of Las Colinas',
               url: 'https://www.dmagazine.com/publications/d-ceo/2023/october/the-visionary-behind-las-colinas/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ],
-          image: {
-            src: '/images/history/las-colinas-mustangs.jpg',
-            alt: 'Mustangs of Las Colinas bronze sculpture',
-            year: '1984',
-          },
+          
           location: {
             name: 'Las Colinas Urban Center',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'dal-history-8',
@@ -2547,16 +2467,16 @@ export const dallas: CityData = {
             {
               title: '2016 shooting of Dallas police officers',
               url: 'https://www.nytimes.com/2016/07/09/us/dallas-police-shooting.html',
-              publisher: 'New York Times',
+              publisher: 'New York Times'
             }
           ],
           location: {
             name: 'El Centro College (Corner of Lamar & Elm)',
             url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'dal-lost-and-loved',
@@ -2573,7 +2493,7 @@ export const dallas: CityData = {
           neighborhood: 'Lower Greenville',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-grape.png',
-            alt: 'The Grape restaurant on Lower Greenville',
+            alt: 'The Grape restaurant on Lower Greenville'
           },
           description: 'For 47 years, The Grape was the soul of Lower Greenville dining — a tiny bistro opened by two twentysomething women with zero restaurant experience who helped invent Dallas\'s modern culinary identity. The mushroom soup was legendary, the burger won Texas Monthly\'s "Best in Texas," and countless proposals and anniversaries unfolded in the dimly lit dining room.',
           whyMissed: 'The intimacy. The way it felt like your neighborhood\'s living room, even if you drove across town to get there. The consistency across nearly five decades.',
@@ -2584,7 +2504,7 @@ export const dallas: CityData = {
             {
               title: 'The Grape to Close After 47 Years',
               url: 'https://www.dmagazine.com/frontburner/2019/09/the-grape-to-close-after-47-years/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ]
         },
@@ -2596,7 +2516,7 @@ export const dallas: CityData = {
           neighborhood: 'Casa Linda / East Dallas',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-highland-park.png',
-            alt: 'Highland Park Cafeteria',
+            alt: 'Highland Park Cafeteria'
           },
           description: 'For 95 years, Highland Park Cafeteria served Texas comfort food to Dallas\'s rich and not-so-rich alike. The New York Times once called it "America\'s Cafeteria" and praised its egalitarian sensibilities — executives and working folks standing in the same line for the same chicken fried steak. At its peak, there were eight locations.',
           whyMissed: 'The democratic spirit of the cafeteria line. The cornbread. The pie. The owner\'s 932 secret recipes that he safeguarded when COVID forced the doors shut forever.',
@@ -2607,14 +2527,14 @@ export const dallas: CityData = {
             {
               title: 'Highland Park Cafeteria Closes After 95 Years',
               url: 'https://www.dallasnews.com/food/restaurant-news/2020/05/11/highland-park-cafeteria-is-closed-for-good-after-95-years-in-dallas/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
         {
           id: 'dal-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dal-lost-3',
@@ -2624,7 +2544,7 @@ export const dallas: CityData = {
           neighborhood: 'Swiss Avenue',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-lizardlounge.png',
-            alt: 'Lizard Lounge nightclub',
+            alt: 'Lizard Lounge nightclub'
           },
           description: 'For 28 years, Lizard Lounge was a mecca for electronic music, goth culture, and anyone who felt like a misfit. The Church — its legendary Sunday industrial/goth night — helped rejuvenate the club and solidified Dallas\'s spot in dark subculture. Dennis Rodman and Madonna once showed up in a black Ferrari wanting to buy the place.',
           whyMissed: 'The community. Owner Don Nedler received hundreds of messages from people who met their spouses there, who found their tribe there. It was the living room for Dallas\'s weirdos.',
@@ -2637,8 +2557,8 @@ export const dallas: CityData = {
               title: 'Dallas Club Lizard Lounge Permanently Closes',
               publisher: 'CBS News',
               year: '2020',
-              url: 'https://www.cbsnews.com/texas/news/dallas-club-lizard-lounge-permanently-closes-after-28-years-due-to-coronavirus/',
-            },
+              url: 'https://www.cbsnews.com/texas/news/dallas-club-lizard-lounge-permanently-closes-after-28-years-due-to-coronavirus/'
+            }
           ]
         },
         {
@@ -2649,7 +2569,7 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-clubclearview.png',
-            alt: 'Club Clearview in Deep Ellum',
+            alt: 'Club Clearview in Deep Ellum'
           },
           description: 'What started as a kegger in a warehouse by Mark Cuban and friends became Deep Ellum\'s cathedral. Club Clearview spread across 10,000 square feet with seven themed rooms — Club Clearview, Art Bar, Blind Lemon, The Red Room, and the rooftop deck. It birthed Edie Brickell and the New Bohemians, hosted the Red Hot Chili Peppers, and defined a generation.',
           whyMissed: 'The sheer variety — you could see a touring national act, catch a local band, and end up on the roof all in one night. Deep Ellum hasn\'t been the same since.',
@@ -2660,7 +2580,7 @@ export const dallas: CityData = {
             {
               title: 'Looking Back at Club Clearview',
               url: 'https://www.dmagazine.com/publications/d-magazine/2007/july/the-end-of-an-era-in-deep-ellum/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ]
         },
@@ -2672,7 +2592,7 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-curtain.png',
-            alt: 'Curtain Club in Deep Ellum',
+            alt: 'Curtain Club in Deep Ellum'
           },
           description: 'For 22 years, the Curtain Club held down the corner of Crowdus and Main, outlasting every other legacy venue in Deep Ellum. Its tradition of painting the monthly band schedule on the exterior wall in bold letters became part of the neighborhood\'s landscape. When it closed, Drowning Pool played an extended set while fans lined up outside the sold-out finale.',
           whyMissed: 'The constancy. While Trees closed and reopened, while Prophet Bar and The Door moved around, Curtain Club just kept being there. Until it wasn\'t.',
@@ -2683,14 +2603,14 @@ export const dallas: CityData = {
             {
               title: 'Curtain Club to Close After 22 Years',
               url: 'https://www.centraltrack.com/the-curtain-club-is-closing-its-doors-this-summer/',
-              publisher: 'Central Track',
+              publisher: 'Central Track'
             }
           ]
         },
         {
           id: 'dal-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'dal-lost-6',
@@ -2700,7 +2620,7 @@ export const dallas: CityData = {
           neighborhood: 'Bishop Arts',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-boulevardier.png',
-            alt: 'Boulevardier restaurant in Bishop Arts',
+            alt: 'Boulevardier restaurant in Bishop Arts'
           },
           description: 'This French bistro in a 100-year-old Bishop Arts building became the neighborhood\'s anchor — a casual spot with flawless Friday happy hours (oysters $1 off, every wine bottle half price until 6:30). The Boulevardier Burger, Crawfish Beignets, and Wood-Grilled Oysters drew crowds for 12 years.',
           whyMissed: 'The atmosphere. The way it felt distinctly European yet utterly Oak Cliff. The bone marrow. That Friday happy hour.',
@@ -2711,7 +2631,7 @@ export const dallas: CityData = {
             {
               title: 'Boulevardier Closes in Bishop Arts',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/03/25/boulevardier-is-closing-in-dallas-bishop-arts-district/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2723,7 +2643,7 @@ export const dallas: CityData = {
           neighborhood: 'North Dallas',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-lawrys.png',
-            alt: 'Lawry\'s The Prime Rib restaurant',
+            alt: 'Lawry\'s The Prime Rib restaurant'
           },
           description: 'For 40 years, Lawry\'s was Dallas\'s temple of prime rib — carved tableside from gleaming silver carts, served with Yorkshire pudding and a spinning salad bowl. It was one of only three locations nationwide, a slice of Beverly Hills glamour transplanted to Texas that pioneered valet parking and doggie bags.',
           whyMissed: 'The ritual. The silver carts. The consistency across four decades. The way a meal there felt like an event, not just dinner.',
@@ -2734,7 +2654,7 @@ export const dallas: CityData = {
             {
               title: 'Lawry’s the Prime Rib to close in North Dallas',
               url: 'https://dallas.culturemap.com/news/restaurants-bars/lawrys-the-prime-rib-closing-north-dallas/',
-              publisher: 'CultureMap Dallas',
+              publisher: 'CultureMap Dallas'
             }
           ]
         },
@@ -2746,7 +2666,7 @@ export const dallas: CityData = {
           neighborhood: 'Design District',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-moth.png',
-            alt: 'Meddlesome Moth in Design District',
+            alt: 'Meddlesome Moth in Design District'
           },
           description: 'The Moth pioneered craft beer dining in Dallas before anyone else caught on. With 40 rotating taps and three massive stained glass windows rescued from Hard Rock Cafe depicting Elvis, Chuck Berry, and Jerry Lee Lewis, it anchored the Design District for 15 years. The World Atlas of Beer named it one of the best beer destinations in the world.',
           whyMissed: 'The beer selection. The mussels. The brunch. The way it made craft beer feel accessible, not snobbish. The Design District hasn\'t found its replacement.',
@@ -2757,14 +2677,14 @@ export const dallas: CityData = {
             {
               title: 'Meddlesome Moth to close in Design District',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/30/meddlesome-moth-is-closing-in-dallas-design-district/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
         {
           id: 'dal-lost-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'dal-lost-9',
@@ -2774,7 +2694,7 @@ export const dallas: CityData = {
           neighborhood: 'Deep Ellum',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-aca.png',
-            alt: 'Monica\'s Aca Y Alla in Deep Ellum',
+            alt: 'Monica\'s Aca Y Alla in Deep Ellum'
           },
           description: 'When Monica Greene opened her restaurant in Deep Ellum in 1992, the neighborhood was mostly music clubs. For 30 years under various names and owners, this corner of Main Street served Tex-Mex and Mexico City cuisine to generations of Deep Ellum crawlers. Monica herself became a pioneer of modern Mexican cooking in Dallas.',
           whyMissed: 'The staying power. Thirty years in Deep Ellum is practically eternal. The laid-back party atmosphere when the neighborhood was still rough around the edges.',
@@ -2785,7 +2705,7 @@ export const dallas: CityData = {
             {
               title: 'Deep Ellum Icon Monica’s Aca y Alla to close',
               url: 'https://dallas.culturemap.com/news/restaurants-bars/monicas-aca-y-alla-closing/',
-              publisher: 'CultureMap Dallas',
+              publisher: 'CultureMap Dallas'
             }
           ]
         },
@@ -2797,7 +2717,7 @@ export const dallas: CityData = {
           neighborhood: 'Uptown',
           image: {
             src: '/dallas/lost-and-loved/dallas-lost-mortons.png',
-            alt: 'Morton\'s The Steakhouse in Uptown',
+            alt: 'Morton\'s The Steakhouse in Uptown'
           },
           description: 'For nearly 40 years — first in the West End, then 24 years in Uptown — Morton\'s was Dallas\'s definitive power steakhouse. Generations of deals were sealed over porterhouses and creamed spinach. The news of its closing was the single most clicked food story in Dallas for 2025.',
           whyMissed: 'The institution of it. The leather booths, the massive steaks, the sense that you were eating where deals got done. Uptown lost its anchor.',
@@ -2808,7 +2728,7 @@ export const dallas: CityData = {
             {
               title: 'Morton’s The Steakhouse closes in Uptown Dallas',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/31/mortons-the-steakhouse-closes-in-uptown-dallas-after-24-years/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2827,7 +2747,7 @@ export const dallas: CityData = {
             {
               title: 'Hong Kong Restaurant to Close After 60 Years',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/30/hong-kong-restaurant-closing-after-60-years-in-dallas/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2846,7 +2766,7 @@ export const dallas: CityData = {
             {
               title: 'Bangkok at Greenville to Close After 32 Years',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/30/bangkok-at-greenville-closing-after-32-years-in-dallas/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2865,7 +2785,7 @@ export const dallas: CityData = {
             {
               title: 'Petra and the Beast to Close in Lakewood',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/01/15/petra-and-the-beast-is-closing-its-lakewood-restaurant/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2884,7 +2804,7 @@ export const dallas: CityData = {
             {
               title: 'Hoffbrau Steaks Closes After 75 Years',
               url: 'https://www.dallasobserver.com/restaurants/hoffbrau-steaks-closes-after-75-years-in-dallas-12012345',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ]
         },
@@ -2903,7 +2823,7 @@ export const dallas: CityData = {
             {
               title: 'Gennie’s Bishop Grill Closes After 31 Years',
               url: 'https://www.dallasnews.com/food/restaurant-news/2020/06/15/gennies-bishop-grill-is-closed-after-31-years-in-oak-cliff/',
-              publisher: 'Dallas Morning News',
+              publisher: 'Dallas Morning News'
             }
           ]
         },
@@ -2922,7 +2842,7 @@ export const dallas: CityData = {
             {
               title: 'Lakewood Theater History and Preservation',
               url: 'https://www.preservationdallas.org/lakewood-theater/',
-              publisher: 'Preservation Dallas',
+              publisher: 'Preservation Dallas'
             }
           ]
         },
@@ -2941,7 +2861,7 @@ export const dallas: CityData = {
             {
               title: 'The Real Story of Campisi’s and the Mob',
               url: 'https://www.dmagazine.com/publications/d-magazine/2007/july/the-real-story-of-the-campisis-and-the-mob/',
-              publisher: 'D Magazine',
+              publisher: 'D Magazine'
             }
           ]
         },
@@ -2960,7 +2880,7 @@ export const dallas: CityData = {
             {
               title: 'Half Price Books to Close Original Flagship',
               url: 'https://www.dallasobserver.com/arts/half-price-books-original-flagship-to-close-16512345',
-              publisher: 'Dallas Observer',
+              publisher: 'Dallas Observer'
             }
           ]
         },
@@ -2978,11 +2898,11 @@ export const dallas: CityData = {
             {
               title: 'Taco Cabana Closures in Dallas',
               url: 'https://dallas.eater.com/2024/1/15/24012345/taco-cabana-closures-dallas-fort-worth',
-              publisher: 'Eater Dallas',
+              publisher: 'Eater Dallas'
             }
           ]
         }
-      ],
+      ]
     }
-  ],
+  ]
 }

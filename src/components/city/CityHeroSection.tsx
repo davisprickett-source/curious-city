@@ -112,8 +112,8 @@ export function CityHeroSection({
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/40 via-transparent to-transparent" />
 
-        {/* Content */}
-        <div className="relative h-full container-page flex flex-col justify-end pb-6 sm:pb-8 md:pb-10">
+        {/* Content - positioned near top on mobile, bottom on desktop */}
+        <div className="relative h-full container-page flex flex-col justify-start pt-10 sm:justify-end sm:pt-0 pb-6 sm:pb-8 md:pb-10">
           <AnimatePresence mode="wait">
             {isIntroSlide ? (
               /* Intro Slide - City name and tagline */

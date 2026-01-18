@@ -6,13 +6,13 @@ export const minneapolis: CityData = {
   tagline: 'Mill City vibes and urban curiosity',
   heroImage: {
     src: '/banners/Minneapolis-banner.png',
-    alt: 'Minneapolis curiosities banner',
+    alt: 'Minneapolis curiosities banner'
   },
   content: [
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Welcome to Minneapolis — a city of lakes, bridges, and unexpected discoveries. Here\'s what we\'re curious about this week.',
+      content: 'Welcome to Minneapolis — a city of lakes, bridges, and unexpected discoveries. Here\'s what we\'re curious about this week.'
     },
     {
       id: 'featured-card',
@@ -21,12 +21,12 @@ export const minneapolis: CityData = {
       description: 'A city built on confluence, power, and the quiet work of survival.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/minneapolis/essay/meeting-of-waters',
+      href: '/minneapolis/essay/meeting-of-waters'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'events-this-week',
@@ -44,11 +44,8 @@ export const minneapolis: CityData = {
           category: 'concerts',
           tags: ['music', 'nightlife'],
           href: 'https://first-avenue.com',
-          image: {
-            src: '/minneapolis/events/first-avenue.jpg',
-            alt: 'First Avenue music venue entrance with iconic stars',
-          },
-          featured: true,
+          
+          featured: true
         },
         // Event 2: Farmers market today (Friday Jan 9)
         {
@@ -59,11 +56,8 @@ export const minneapolis: CityData = {
           location: 'Mill City Museum, Mill District',
           category: 'markets',
           tags: ['food', 'free', 'outdoor'],
-          href: 'https://millcityfarmersmarket.org',
-          image: {
-            src: '/minneapolis/events/mill-city-market.jpg',
-            alt: 'Mill City Farmers Market with vendors and historic mill backdrop',
-          },
+          href: 'https://millcityfarmersmarket.org'
+          
         },
         // Event 3: Art event today (Friday Jan 9)
         {
@@ -75,11 +69,8 @@ export const minneapolis: CityData = {
           category: 'art',
           tags: ['art', 'free'],
           href: 'https://walkerart.org',
-          image: {
-            src: '/minneapolis/events/walker-art-center.jpg',
-            alt: 'Walker Art Center exterior with Spoonbridge and Cherry sculpture',
-          },
-          featured: true,
+          
+          featured: true
         },
         // Event 4: Gallery crawl this weekend
         {
@@ -90,7 +81,7 @@ export const minneapolis: CityData = {
           location: 'Northeast Arts District',
           category: 'art',
           tags: ['art', 'free', 'outdoor'],
-          href: 'https://nemaa.org/art-a-whirl',
+          href: 'https://nemaa.org/art-a-whirl'
         },
         // Event 5: Orchestra this weekend
         {
@@ -101,11 +92,8 @@ export const minneapolis: CityData = {
           location: 'Orchestra Hall, Downtown',
           category: 'concerts',
           tags: ['music', 'family-friendly'],
-          href: 'https://minnesotaorchestra.org',
-          image: {
-            src: '/minneapolis/events/orchestra-hall.jpg',
-            alt: 'Minnesota Orchestra performing at Orchestra Hall',
-          },
+          href: 'https://minnesotaorchestra.org'
+          
         },
         // Event 6: Limited class this weekend
         {
@@ -117,8 +105,8 @@ export const minneapolis: CityData = {
           category: 'food-drink',
           tags: ['food', 'family-friendly'],
           moreInfo: [
-            { title: 'Register', url: 'https://ingebretsens.com/classes', type: 'rsvp' },
-          ],
+            { title: 'Register', url: 'https://ingebretsens.com/classes', type: 'rsvp' }
+          ]
         },
         // Event 7: New opening this week
         {
@@ -129,11 +117,8 @@ export const minneapolis: CityData = {
           location: 'Surly Brewing, Prospect Park',
           category: 'food-drink',
           tags: ['food', 'beer'],
-          href: 'https://surlybrewing.com',
-          image: {
-            src: '/minneapolis/events/surly-brewing.jpg',
-            alt: 'Surly Brewing beer hall interior',
-          },
+          href: 'https://surlybrewing.com'
+          
         },
         // Event 8: Pop-up sale this week
         {
@@ -143,7 +128,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-17T20:00:00',
           location: 'Electric Fetus, South Minneapolis',
           category: 'markets',
-          tags: ['music', 'shopping'],
+          tags: ['music', 'shopping']
         },
         // Event 9: Film event this week
         {
@@ -154,11 +139,8 @@ export const minneapolis: CityData = {
           location: 'Trylon Cinema, Longfellow',
           category: 'theater',
           tags: ['film'],
-          href: 'https://trylon.org',
-          image: {
-            src: '/minneapolis/events/trylon-cinema.jpg',
-            alt: 'Trylon Cinema vintage interior',
-          },
+          href: 'https://trylon.org'
+          
         },
         // Event 10: Recurring seasonal event
         {
@@ -170,7 +152,7 @@ export const minneapolis: CityData = {
           recurrenceRule: 'Every Saturday through March',
           location: 'Lake Harriet Bandshell',
           category: 'sports',
-          tags: ['outdoor', 'free'],
+          tags: ['outdoor', 'free']
         },
         // Event 11: Seasonal this month (ongoing)
         {
@@ -182,11 +164,8 @@ export const minneapolis: CityData = {
           location: 'Midtown Greenway (multiple access points)',
           category: 'sports',
           tags: ['outdoor', 'free', 'family-friendly'],
-          href: 'https://midtowngreenway.org',
-          image: {
-            src: '/minneapolis/events/greenway-ice.jpg',
-            alt: 'Ice skating on the Midtown Greenway at night',
-          },
+          href: 'https://midtowngreenway.org'
+          
         },
         // Event 12: Closing - last chance (ongoing)
         {
@@ -198,11 +177,8 @@ export const minneapolis: CityData = {
           category: 'nightlife',
           tags: ['family-friendly', 'art'],
           href: 'https://cancanwonderland.com',
-          image: {
-            src: '/minneapolis/events/can-can.jpg',
-            alt: 'Can Can Wonderland artist-designed mini golf hole',
-          },
-          featured: true,
+          
+          featured: true
         },
         // Event 13: Limited time food event
         {
@@ -212,7 +188,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-25T20:00:00',
           location: 'Kramarczuk\'s, Northeast Minneapolis',
           category: 'food-drink',
-          tags: ['food'],
+          tags: ['food']
         },
         // Event 14: Opening next week
         {
@@ -223,11 +199,8 @@ export const minneapolis: CityData = {
           location: 'Minneapolis Institute of Art',
           category: 'art',
           tags: ['art', 'free'],
-          href: 'https://artsmia.org',
-          image: {
-            src: '/minneapolis/events/mia.jpg',
-            alt: 'Minneapolis Institute of Art entrance',
-          },
+          href: 'https://artsmia.org'
+          
         },
         // Event 15: Major event this month
         {
@@ -239,11 +212,8 @@ export const minneapolis: CityData = {
           category: 'art',
           tags: ['outdoor', 'music', 'art', 'free'],
           href: 'https://stonearchbridgefestival.com',
-          image: {
-            src: '/minneapolis/events/stone-arch.jpg',
-            alt: 'Stone Arch Bridge Festival with crowds and art booths',
-          },
-          featured: true,
+          
+          featured: true
         },
         // === MORE MOCK EVENTS FOR TESTING ===
         // Today (Friday Jan 9) - more events
@@ -255,7 +225,7 @@ export const minneapolis: CityData = {
           location: 'Acme Comedy Co., Downtown',
           category: 'comedy',
           tags: ['comedy', 'nightlife'],
-          href: 'https://acmecomedycompany.com',
+          href: 'https://acmecomedycompany.com'
         },
         {
           title: 'Modist Brewing: New IPA Release Party',
@@ -265,7 +235,7 @@ export const minneapolis: CityData = {
           location: 'Modist Brewing, North Loop',
           category: 'food-drink',
           tags: ['beer', 'food', 'music'],
-          featured: true,
+          featured: true
         },
         {
           title: 'Yoga in the Skyways',
@@ -274,7 +244,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-09T08:00:00',
           location: 'IDS Center Skyway, Downtown',
           category: 'sports',
-          tags: ['fitness', 'free'],
+          tags: ['fitness', 'free']
         },
         // Tomorrow (Saturday Jan 10)
         {
@@ -285,7 +255,7 @@ export const minneapolis: CityData = {
           location: 'Bryant-Lake Bowl, Uptown',
           category: 'nightlife',
           tags: ['nightlife', 'theater'],
-          href: 'https://bryantlakebowl.com',
+          href: 'https://bryantlakebowl.com'
         },
         {
           title: 'Minneapolis Farmers Market: Winter Indoor',
@@ -294,7 +264,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-10T13:00:00',
           location: 'Minneapolis Farmers Market, Lyndale',
           category: 'markets',
-          tags: ['food', 'shopping', 'free'],
+          tags: ['food', 'shopping', 'free']
         },
         {
           title: 'Mia Saturday Art Lab',
@@ -304,7 +274,7 @@ export const minneapolis: CityData = {
           location: 'Minneapolis Institute of Art',
           category: 'art',
           tags: ['art', 'free', 'family-friendly'],
-          href: 'https://artsmia.org',
+          href: 'https://artsmia.org'
         },
         // This weekend - Saturday Jan 10
         {
@@ -315,7 +285,7 @@ export const minneapolis: CityData = {
           location: 'Icehouse, Eat Street',
           category: 'concerts',
           tags: ['music', 'jazz'],
-          href: 'https://icehousempls.com',
+          href: 'https://icehousempls.com'
         },
         {
           title: 'Spoon and Stable: Chef\'s Counter Pop-Up',
@@ -325,7 +295,7 @@ export const minneapolis: CityData = {
           location: 'Spoon and Stable, North Loop',
           category: 'food-drink',
           tags: ['food', 'fine-dining'],
-          featured: true,
+          featured: true
         },
         {
           title: 'Midtown Global Market: Lunar New Year Kickoff',
@@ -334,7 +304,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-10T20:00:00',
           location: 'Midtown Global Market, Lake Street',
           category: 'food-drink',
-          tags: ['food', 'free', 'family-friendly'],
+          tags: ['food', 'free', 'family-friendly']
         },
         // This weekend - Saturday
         {
@@ -344,7 +314,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-11T14:00:00',
           location: 'Utepils Brewing, Bryn Mawr',
           category: 'concerts',
-          tags: ['music', 'food', 'beer', 'family-friendly'],
+          tags: ['music', 'food', 'beer', 'family-friendly']
         },
         {
           title: 'Soap Factory: Experimental Art Opening',
@@ -353,7 +323,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-11T23:00:00',
           location: 'Soap Factory, Northeast',
           category: 'art',
-          tags: ['art', 'nightlife'],
+          tags: ['art', 'nightlife']
         },
         {
           title: 'Como Park Conservatory: Orchid Show Preview',
@@ -362,7 +332,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-11T16:00:00',
           location: 'Como Park Conservatory, St. Paul',
           category: 'art',
-          tags: ['outdoor', 'family-friendly'],
+          tags: ['outdoor', 'family-friendly']
         },
         {
           title: 'Target Center: Timberwolves vs. Lakers',
@@ -372,7 +342,7 @@ export const minneapolis: CityData = {
           location: 'Target Center, Downtown',
           category: 'sports',
           tags: ['sports'],
-          href: 'https://timberwolves.com',
+          href: 'https://timberwolves.com'
         },
         // This weekend - Sunday
         {
@@ -382,7 +352,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-12T17:00:00',
           location: 'Dangerous Man Brewing, Northeast',
           category: 'markets',
-          tags: ['music', 'beer', 'shopping'],
+          tags: ['music', 'beer', 'shopping']
         },
         {
           title: 'Open Streets: Winter Edition',
@@ -392,7 +362,7 @@ export const minneapolis: CityData = {
           location: 'Nicollet Mall, Downtown',
           category: 'sports',
           tags: ['outdoor', 'free', 'family-friendly'],
-          featured: true,
+          featured: true
         },
         // Next week
         {
@@ -403,7 +373,7 @@ export const minneapolis: CityData = {
           location: 'Parkway Theater, South Minneapolis',
           category: 'theater',
           tags: ['film'],
-          href: 'https://theparkwaytheater.com',
+          href: 'https://theparkwaytheater.com'
         },
         {
           title: 'Hola Arepa: Taco Pop-Up Collab',
@@ -412,7 +382,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-14T22:00:00',
           location: 'Hola Arepa, Kingfield',
           category: 'food-drink',
-          tags: ['food'],
+          tags: ['food']
         },
         {
           title: 'Guthrie Theater: New Works Festival',
@@ -422,7 +392,7 @@ export const minneapolis: CityData = {
           location: 'Guthrie Theater, Mill District',
           category: 'theater',
           tags: ['theater', 'free'],
-          href: 'https://guthrietheater.org',
+          href: 'https://guthrietheater.org'
         },
         {
           title: 'Sociable Cider Werks: Cider & Cheese Pairing',
@@ -433,8 +403,8 @@ export const minneapolis: CityData = {
           category: 'food-drink',
           tags: ['food', 'beer'],
           moreInfo: [
-            { title: 'Buy Tickets', url: 'https://sociablecider.com/events', type: 'tickets' },
-          ],
+            { title: 'Buy Tickets', url: 'https://sociablecider.com/events', type: 'tickets' }
+          ]
         },
         {
           title: 'Minneapolis Sculpture Garden: Ice Sculpture Walk',
@@ -444,7 +414,7 @@ export const minneapolis: CityData = {
           isAllDay: true,
           location: 'Minneapolis Sculpture Garden, Loring Park',
           category: 'art',
-          tags: ['art', 'outdoor', 'free'],
+          tags: ['art', 'outdoor', 'free']
         },
         // More varied events
         {
@@ -454,7 +424,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-13T21:30:00',
           location: 'Black Dog Coffee, Lowertown St. Paul',
           category: 'art',
-          tags: ['free'],
+          tags: ['free']
         },
         {
           title: 'Brave New Workshop: Improv Show',
@@ -464,7 +434,7 @@ export const minneapolis: CityData = {
           location: 'Brave New Workshop, Downtown',
           category: 'comedy',
           tags: ['comedy', 'theater'],
-          href: 'https://bravenewworkshop.com',
+          href: 'https://bravenewworkshop.com'
         },
         {
           title: 'Fulton Brewing: Trivia Night',
@@ -475,7 +445,7 @@ export const minneapolis: CityData = {
           category: 'nightlife',
           tags: ['beer', 'free'],
           isRecurring: true,
-          recurrenceRule: 'Every Tuesday',
+          recurrenceRule: 'Every Tuesday'
         },
         {
           title: 'Lakes & Legends: Mead Tasting Experience',
@@ -484,7 +454,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-18T16:00:00',
           location: 'Lakes & Legends Brewing, Loring Park',
           category: 'food-drink',
-          tags: ['beer', 'food'],
+          tags: ['beer', 'food']
         },
         {
           title: 'Can Can Wonderland: Final Weekend Bash',
@@ -495,7 +465,7 @@ export const minneapolis: CityData = {
           category: 'nightlife',
           tags: ['family-friendly', 'art', 'nightlife'],
           href: 'https://cancanwonderland.com',
-          featured: true,
+          featured: true
         },
         {
           title: 'Northrup King Building: Artist Studios Open',
@@ -504,7 +474,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-19T17:00:00',
           location: 'Northrup King Building, Northeast',
           category: 'art',
-          tags: ['art', 'free', 'shopping'],
+          tags: ['art', 'free', 'shopping']
         },
         {
           title: 'Mill City Museum: Flour Power Family Day',
@@ -513,7 +483,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-19T15:00:00',
           location: 'Mill City Museum, Mill District',
           category: 'food-drink',
-          tags: ['family-friendly', 'food'],
+          tags: ['family-friendly', 'food']
         },
         {
           title: 'Paisley Park: Purple Rain Screening',
@@ -524,7 +494,7 @@ export const minneapolis: CityData = {
           category: 'concerts',
           tags: ['music', 'film'],
           href: 'https://paisleypark.com',
-          featured: true,
+          featured: true
         },
         {
           title: 'Finnegans Brewery: Community Pint Night',
@@ -533,7 +503,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-20T21:00:00',
           location: 'Finnegans Brewery, East Town',
           category: 'food-drink',
-          tags: ['beer', 'music', 'free'],
+          tags: ['beer', 'music', 'free']
         },
         {
           title: 'Union Depot: Winter Beer Dabbler',
@@ -544,7 +514,7 @@ export const minneapolis: CityData = {
           category: 'food-drink',
           tags: ['beer'],
           href: 'https://beerdabbler.com',
-          featured: true,
+          featured: true
         },
         {
           title: 'Harriet Brewing: Board Game Night',
@@ -555,7 +525,7 @@ export const minneapolis: CityData = {
           category: 'nightlife',
           tags: ['beer', 'free'],
           isRecurring: true,
-          recurrenceRule: 'Every Thursday',
+          recurrenceRule: 'Every Thursday'
         },
         {
           title: 'Jungle Theater: Intimate Cabaret',
@@ -564,7 +534,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-25T00:30:00',
           location: 'Jungle Theater, Uptown',
           category: 'theater',
-          tags: ['theater', 'music', 'nightlife'],
+          tags: ['theater', 'music', 'nightlife']
         },
         {
           title: 'Indeed Brewing: Food Truck Friday',
@@ -575,7 +545,7 @@ export const minneapolis: CityData = {
           category: 'food-drink',
           tags: ['food', 'beer'],
           isRecurring: true,
-          recurrenceRule: 'Every Friday',
+          recurrenceRule: 'Every Friday'
         },
         {
           title: 'Midtown YWCA: Free Swim Saturday',
@@ -584,7 +554,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-11T12:00:00',
           location: 'YWCA Midtown, Uptown',
           category: 'sports',
-          tags: ['fitness', 'free', 'family-friendly'],
+          tags: ['fitness', 'free', 'family-friendly']
         },
         {
           title: 'Uptown VFW: Karaoke Wars',
@@ -593,7 +563,7 @@ export const minneapolis: CityData = {
           endDate: '2026-01-12T01:00:00',
           location: 'Uptown VFW, Uptown',
           category: 'nightlife',
-          tags: ['music', 'nightlife', 'free'],
+          tags: ['music', 'nightlife', 'free']
         },
         {
           title: 'Bauhaus Brew Labs: Yoga & Pints',
@@ -604,7 +574,7 @@ export const minneapolis: CityData = {
           category: 'sports',
           tags: ['fitness', 'beer'],
           isRecurring: true,
-          recurrenceRule: 'Every Saturday',
+          recurrenceRule: 'Every Saturday'
         },
         {
           title: 'Wrecktangle Pizza: Pinball Tournament',
@@ -613,9 +583,9 @@ export const minneapolis: CityData = {
           endDate: '2026-01-12T18:00:00',
           location: 'Wrecktangle Pizza, Northeast',
           category: 'food-drink',
-          tags: ['food'],
-        },
-      ],
+          tags: ['food']
+        }
+      ]
     },
     {
       id: 'this-week',
@@ -626,27 +596,27 @@ export const minneapolis: CityData = {
           title: 'Northeast Arts District Walking Tour',
           description: 'Self-guided route through the neighborhood\'s best galleries and murals.',
           meta: 'Guide',
-          href: '/minneapolis/northeast-art-walk',
+          href: '/minneapolis/northeast-art-walk'
         },
         {
           title: 'Lake Harriet Winter Swimming Club',
           description: 'Meet the locals who plunge into freezing water every Saturday morning.',
           meta: 'Feature',
-          href: '/minneapolis/winter-swimmers',
+          href: '/minneapolis/winter-swimmers'
         },
         {
           title: 'Best Coffee Shops for Remote Work',
           description: 'Wi-Fi, outlets, and ambiance — our updated list for 2024.',
           meta: 'List',
           variant: 'compact',
-          href: '/minneapolis/coffee-shops',
+          href: '/minneapolis/coffee-shops'
         }
-      ],
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'quick-reads',
@@ -658,16 +628,16 @@ export const minneapolis: CityData = {
           type: 'card',
           title: 'Why Are There So Many Tunnels Downtown?',
           description: 'A brief history of Minneapolis underground.',
-          variant: 'compact',
+          variant: 'compact'
         },
         {
           id: 'quick-2',
           type: 'card',
           title: 'The Flour Milling Legacy',
           description: 'How Gold Medal Flour shaped the city.',
-          variant: 'compact',
+          variant: 'compact'
         }
-      ],
+      ]
     },
     {
       id: 'msp-curiosities',
@@ -687,22 +657,22 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/',
+              url: 'https://www.mnhs.org/'
             },
             {
               title: 'Most Notorious Podcast: Gangsters in 1930s Minnesota',
-              url: 'https://www.mostnotorious.com/2022/12/13/gangsters-in-1930s-minnesota-with-paul-maccabee/',
+              url: 'https://www.mostnotorious.com/2022/12/13/gangsters-in-1930s-minnesota-with-paul-maccabee/'
             },
             {
               title: 'Star Tribune Curious Minnesota Podcast',
-              url: 'https://www.startribune.com/curious-minnesota-podcast/',
+              url: 'https://www.startribune.com/curious-minnesota-podcast/'
             }
           ],
           location: { name: 'Minneapolis & St. Paul', url: 'https://www.google.com/maps/place/Minneapolis,+MN/@44.9778,-93.2650,12z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/gangsters.png',
-            alt: '1930s gangsters in Minnesota',
-          },
+            alt: '1930s gangsters in Minnesota'
+          }
         },
         {
           id: 'curiosity-2',
@@ -716,31 +686,31 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/',
+              url: 'https://www.mnhs.org/'
             },
             {
               title: 'Great Mill Disaster Documentary',
-              url: 'https://www.youtube.com/watch?v=joxXnP0PZb8',
+              url: 'https://www.youtube.com/watch?v=joxXnP0PZb8'
             },
             {
               title: 'Wikipedia: Great Mill Disaster',
-              url: 'https://en.wikipedia.org/wiki/Great_Mill_Disaster',
+              url: 'https://en.wikipedia.org/wiki/Great_Mill_Disaster'
             },
             {
               title: 'DMNA: Washburn A Mill Historic Signage',
-              url: 'https://www.thedmna.org/historic-signage/washburn-a-mill-mill-city-museum/',
+              url: 'https://www.thedmna.org/historic-signage/washburn-a-mill-mill-city-museum/'
             }
           ],
           location: { name: 'Mill City Museum', url: 'https://www.google.com/maps/place/Mill+City+Museum/@44.9789,-93.2571,17z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/mill-curiosity-2.png',
-            alt: 'The Great Mill Disaster of 1878 in Minneapolis',
-          },
+            alt: 'The Great Mill Disaster of 1878 in Minneapolis'
+          }
         },
         {
           id: 'curiosity-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'curiosity-4',
@@ -751,17 +721,17 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'University of Minnesota: Honeycrisp Apple Story',
-              url: 'https://mnhardy.umn.edu/varieties/fruit/apples/honeycrisp',
+              url: 'https://mnhardy.umn.edu/varieties/fruit/apples/honeycrisp'
             },
             {
               title: 'MPR News: How Honeycrisp Changed the Apple Industry',
-              url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota',
+              url: 'https://www.mprnews.org/story/2017/09/28/honeycrisp-apple-minnesota'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/honeycrisps.png',
-            alt: 'Honeycrisp apples',
-          },
+            alt: 'Honeycrisp apples'
+          }
         },
         {
           id: 'curiosity-5',
@@ -772,31 +742,31 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society: Underground Minneapolis',
-              url: 'https://www.mnhs.org/historycenter',
+              url: 'https://www.mnhs.org/historycenter'
             },
             {
               title: 'Star Tribune: Beneath the Streets',
-              url: 'https://www.startribune.com/minneapolis-underground-tunnels-history/564839012/',
+              url: 'https://www.startribune.com/minneapolis-underground-tunnels-history/564839012/'
             },
             {
               title: 'Action Squad Urban Exploration',
-              url: 'http://www.actionsquad.org/index.html',
+              url: 'http://www.actionsquad.org/index.html'
             },
             {
               title: 'Exploring the Underground Tunnels of Minneapolis and St. Paul',
-              url: 'https://www.youtube.com/watch?v=45mo-n0CV38',
+              url: 'https://www.youtube.com/watch?v=45mo-n0CV38'
             }
           ],
           location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
           image: {
             src: 'https://live.staticflickr.com/65535/53803633600_deccfba914_b.jpg',
-            alt: 'Underground tunnel labyrinth beneath the Twin Cities',
-          },
+            alt: 'Underground tunnel labyrinth beneath the Twin Cities'
+          }
         },
         {
           id: 'curiosity-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'curiosity-6',
@@ -807,59 +777,49 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minneapolis City Records',
-              url: 'https://www.minneapolismn.gov/',
+              url: 'https://www.minneapolismn.gov/'
             },
             {
               title: 'UPI: Politician cleared of Twinkie charges',
-              url: 'https://www.upi.com/Archives/1986/06/04/Politician-cleared-of-Twinkie-charges/4851518241600/',
+              url: 'https://www.upi.com/Archives/1986/06/04/Politician-cleared-of-Twinkie-charges/4851518241600/'
             },
             {
               title: 'Mashed: What You Didn\'t Know About The Twinkies Law',
-              url: 'https://www.mashed.com/407663/what-you-didnt-know-about-the-twinkies-law/',
+              url: 'https://www.mashed.com/407663/what-you-didnt-know-about-the-twinkies-law/'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/twinkies.png',
-            alt: 'The Twinkie Law scandal',
-          },
+            alt: 'The Twinkie Law scandal'
+          }
         },
         {
           id: 'curiosity-jucy-lucy',
           type: 'curiosity',
           category: 'food',
           title: 'Two bars have been fighting for 70 years over who invented the Jucy Lucy—and how to spell it',
-          images: [
-            {
-              src: '/minneapolis/curiosities/minn-cur-jucy-lucy.png',
-              alt: 'Jucy Lucy burger with molten cheese core',
-            },
-            {
-              src: '/minneapolis/curiosities/jucy-lucy-1.png',
-              alt: 'Jucy Lucy burger with molten cheese core',
-            },
-            {
-              src: '/minneapolis/curiosities/jucy-lucy-2.png',
-              alt: 'Matt\'s Bar vs 5-8 Club rivalry signage',
-            },
-          ],
+          image: {
+            src: '/minneapolis/curiosities/minn-cur-jucy-lucy.png',
+            alt: 'Jucy Lucy burger with molten cheese core'
+          },
           body: 'Matt\'s Bar and the 5-8 Club sit three miles apart on Cedar Avenue. Both claim they invented the Jucy Lucy in the 1950s—a cheeseburger with the cheese stuffed inside the patty instead of on top. Matt\'s says a customer requested it in 1954 and exclaimed "that\'s one Jucy Lucy!" They rushed to print menus and forgot the "i," cementing the misspelling forever. The 5-8 Club spells it correctly and their staff wear shirts that say "if it\'s spelled right, it\'s done right." Matt\'s fires back: "Remember, if it is spelled correctly, you are eating a shameless rip-off!" In 2014, President Obama visited Matt\'s for a Jucy Lucy. The 5-8 Club immediately offered him one of theirs. The feud has been featured on Man v. Food, Food Wars, and in Time magazine. After seven decades, neither side has conceded. Minneapolis takes its burger spelling very seriously.',
           sources: [
             {
               title: 'The Juicy Lucy: Two bars battling since 1950s over Minnesota\'s famous burger',
               publisher: 'Star Tribune',
-              url: 'https://www.startribune.com/the-juicy-lucy-two-bars-battling-since-1950s-over-minnesota-s-famous-burger/429889883',
+              url: 'https://www.startribune.com/the-juicy-lucy-two-bars-battling-since-1950s-over-minnesota-s-famous-burger/429889883'
             },
             {
               title: 'Why Matt\'s Bar Spells Jucy Lucy Differently',
               publisher: 'KROC',
-              url: 'https://kroc.com/minnesota-juicy-lucy-origin-rivalry/',
-            },
+              url: 'https://kroc.com/minnesota-juicy-lucy-origin-rivalry/'
+            }
           ],
           location: {
             name: "Matt's Bar (3500 Cedar Ave) & 5-8 Club (5800 Cedar Ave)",
             url: 'https://www.google.com/maps/search/?api=1&query=Matt%27s%20Bar%203500%20Cedar%20Ave%20Minneapolis',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-presidential-streets',
@@ -869,26 +829,22 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/curiosities/min-cur-street-names.png',
-              alt: 'Northeast Minneapolis street signs showing presidential names in order',
-            },
-            {
-              src: '/minneapolis/curiosities/presidential-streets.png',
-              alt: 'Northeast Minneapolis street signs showing presidential names in order',
-            },
-          ],
+              alt: 'Northeast Minneapolis street signs showing presidential names in order'
+            }
+            ],
           body: 'Walk through Northeast Minneapolis and you\'ll notice something deliberate: the streets are named after U.S. presidents in the exact order they served. Washington, Adams, Jefferson, Madison, Monroe, Jackson—it continues through the entire sequence. This wasn\'t civic pride or patriotic decoration. It was infrastructure designed for education. In the early 1900s, Northeast was heavily populated by European immigrants—Poles, Germans, Scandinavians—working in the lumber mills and factories. Learning the presidents in order was required for the citizenship test. City planners decided to turn the neighborhood itself into a study guide. Every day, walking to work or school, immigrants would reinforce the sequence. It was urban planning as pedagogy. The streets remain a quiet reminder of a city that built learning into its geography.',
           sources: [
             {
               title: 'Little-Known Facts About Minnesota\'s Twin Cities',
               publisher: 'DWI Minneapolis Lawyer',
-              url: 'https://www.dwiminneapolislawyer.com/resources/little-known-facts-minnesotas-twin-cities/',
-            },
+              url: 'https://www.dwiminneapolislawyer.com/resources/little-known-facts-minnesotas-twin-cities/'
+            }
           ],
           location: {
             name: 'Northeast Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Northeast%20Minneapolis%20Minneapolis',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'curiosity-3',
@@ -899,17 +855,17 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota folklore',
-              url: 'https://www.mnhs.org/',
+              url: 'https://www.mnhs.org/'
             },
             {
               title: 'Atlas Obscura: Duck Duck Gray Duck',
-              url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck',
+              url: 'https://www.atlasobscura.com/articles/duck-duck-gray-duck'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/duckduckgreyduck.png',
-            alt: 'Duck Duck Gray Duck game illustration',
-          },
+            alt: 'Duck Duck Gray Duck game illustration'
+          }
         },
         {
           id: 'curiosity-7',
@@ -920,14 +876,14 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minneapolis Water Works',
-              url: 'https://www.minneapolismn.gov/government/departments/public-works/water-treatment-distribution/',
+              url: 'https://www.minneapolismn.gov/government/departments/public-works/water-treatment-distribution/'
             }
           ],
           location: { name: 'Mississippi River Treatment Plant', url: 'https://www.google.com/maps/place/Minneapolis+Water+Treatment+Plant/@44.9889,-93.2445,15z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/mussels.png',
-            alt: 'Freshwater mussels used to monitor water quality',
-          },
+            alt: 'Freshwater mussels used to monitor water quality'
+          }
         },
         {
           id: 'curiosity-8',
@@ -938,22 +894,22 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'University of Minnesota Libraries: About Andersen Library',
-              url: 'https://www.lib.umn.edu/spaces/andersen/building',
+              url: 'https://www.lib.umn.edu/spaces/andersen/building'
             },
             {
               title: 'MinnPost: The Subterranean Caverns',
-              url: 'https://www.minnpost.com/stroll/2015/10/subterranean-caverns-protect-us-andersen-library-collections/',
+              url: 'https://www.minnpost.com/stroll/2015/10/subterranean-caverns-protect-us-andersen-library-collections/'
             },
             {
               title: 'Minitex: Minnesota Library Access Center',
-              url: 'https://minitex.umn.edu/units/minnesota-library-access-center-mlac',
+              url: 'https://minitex.umn.edu/units/minnesota-library-access-center-mlac'
             }
           ],
           location: { name: 'Elmer L. Andersen Library, University of Minnesota', url: 'https://www.google.com/maps/place/Elmer+L.+Andersen+Library/@44.9727,-93.2354,17z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/undergroundlibrary.png',
-            alt: 'Underground library tunnels carved into sandstone',
-          },
+            alt: 'Underground library tunnels carved into sandstone'
+          }
         },
         {
           id: 'curiosity-9',
@@ -964,21 +920,21 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'FOX 9: How Frank Mars started a candy bar empire in Minnesota',
-              url: 'https://www.fox9.com/news/the-milky-way-how-frank-mars-a-minnesotan-created-a-candy-bar-empire',
+              url: 'https://www.fox9.com/news/the-milky-way-how-frank-mars-a-minnesotan-created-a-candy-bar-empire'
             },
             {
               title: 'Mars, Inc. company history',
-              url: 'https://www.mars.com/about/history',
+              url: 'https://www.mars.com/about/history'
             },
             {
               title: '3 Musketeers history',
-              url: 'https://en.wikipedia.org/wiki/3_Musketeers_(chocolate_bar)',
+              url: 'https://en.wikipedia.org/wiki/3_Musketeers_(chocolate_bar)'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/3-musketeers.png',
-            alt: 'Milky Way and 3 Musketeers bars - both made with Minneapolis Nougat',
-          },
+            alt: 'Milky Way and 3 Musketeers bars - both made with Minneapolis Nougat'
+          }
         },
         {
           id: 'curiosity-10',
@@ -989,17 +945,17 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'MST3K Official Site',
-              url: 'https://www.mst3k.com/',
+              url: 'https://www.mst3k.com/'
             },
             {
               title: 'Wikipedia: Mystery Science Theater 3000',
-              url: 'https://en.wikipedia.org/wiki/Mystery_Science_Theater_3000',
+              url: 'https://en.wikipedia.org/wiki/Mystery_Science_Theater_3000'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/mystery science theater.png',
-            alt: 'Mystery Science Theater 3000',
-          },
+            alt: 'Mystery Science Theater 3000'
+          }
         },
         {
           id: 'curiosity-11',
@@ -1010,18 +966,18 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minneapolis Downtown Council',
-              url: 'https://www.minneapolisdowntown.com/',
+              url: 'https://www.minneapolisdowntown.com/'
             },
             {
               title: 'Minneapolis Skyway Guide',
-              url: 'https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/',
+              url: 'https://www.minneapolis.org/map-transportation/minneapolis-skyway-guide/'
             }
           ],
           location: { name: 'Downtown Minneapolis', url: 'https://www.google.com/maps/place/Downtown+Minneapolis,+Minneapolis,+MN/@44.9778,-93.2650,15z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/skyway.png',
-            alt: 'Minneapolis skyway system',
-          },
+            alt: 'Minneapolis skyway system'
+          }
         },
         {
           id: 'curiosity-18',
@@ -1032,28 +988,28 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'MNopedia: Southdale Center',
-              url: 'https://www.mnopedia.org/structure/southdale-center',
+              url: 'https://www.mnopedia.org/structure/southdale-center'
             },
             {
               title: 'Smithsonian: The Man Who Invented the Shopping Mall',
-              url: 'https://www.smithsonianmag.com/history/the-man-who-invented-the-shopping-mall-180953305/',
+              url: 'https://www.smithsonianmag.com/history/the-man-who-invented-the-shopping-mall-180953305/'
             }
           ],
           location: { name: 'Southdale Center, Edina', url: 'https://www.google.com/maps/place/Southdale+Center/@44.8810,-93.3228,15z', stillExists: true },
           images: [
             {
               src: '/minneapolis/curiosities/indoor-mall-1.png',
-              alt: 'Southdale Center interior in 1956 - world\'s first enclosed shopping mall',
+              alt: 'Southdale Center interior in 1956 - world\'s first enclosed shopping mall'
             },
             {
               src: '/minneapolis/curiosities/indoor-mall-2.png',
-              alt: 'Southdale Center central court with garden features',
+              alt: 'Southdale Center central court with garden features'
             },
             {
               src: '/minneapolis/curiosities/indoor-mall-3.png',
-              alt: 'Southdale Center historic interior view',
+              alt: 'Southdale Center historic interior view'
             }
-          ],
+          ]
         },
         {
           id: 'curiosity-12',
@@ -1064,17 +1020,17 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/',
+              url: 'https://www.mnhs.org/'
             },
             {
               title: 'Smithsonian Magazine',
-              url: 'https://www.smithsonianmag.com/',
+              url: 'https://www.smithsonianmag.com/'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/toaster.png',
-            alt: 'Vintage pop-up toaster',
-          },
+            alt: 'Vintage pop-up toaster'
+          }
         },
         {
           id: 'curiosity-13',
@@ -1085,28 +1041,28 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'National Park Service',
-              url: 'https://www.nps.gov/miss/planyourvisit/stanthony.htm',
+              url: 'https://www.nps.gov/miss/planyourvisit/stanthony.htm'
             },
             {
               title: 'Mill City Museum',
-              url: 'https://www.mnhs.org/millcity',
+              url: 'https://www.mnhs.org/millcity'
             }
           ],
           location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
           images: [
             {
               src: '/minneapolis/curiosities/falls-1.png',
-              alt: 'St. Anthony Falls',
+              alt: 'St. Anthony Falls'
             },
             {
               src: '/minneapolis/curiosities/falls-2.png',
-              alt: 'St. Anthony Falls historic view',
+              alt: 'St. Anthony Falls historic view'
             },
             {
               src: '/minneapolis/curiosities/falls-3.png',
-              alt: 'St. Anthony Falls and surrounding area',
+              alt: 'St. Anthony Falls and surrounding area'
             }
-          ],
+          ]
         },
         {
           id: 'curiosity-14',
@@ -1117,26 +1073,26 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Minnesota Historical Society: St. Anthony Falls History',
-              url: 'https://www.mnhs.org/millcity/learn/history/st-anthony-falls',
+              url: 'https://www.mnhs.org/millcity/learn/history/st-anthony-falls'
             },
             {
               title: 'MPR News: The Other Twin City',
-              url: 'https://www.mprnews.org/story/2022/05/11/minneapolis-st-anthony-twin-cities-history',
+              url: 'https://www.mprnews.org/story/2022/05/11/minneapolis-st-anthony-twin-cities-history'
             },
             {
               title: 'MNopedia: St. Paul, Minneapolis, and Minnesota\'s Urban Origins',
-              url: 'https://www.mnhs.org/mnopedia/search/index/st-paul-minneapolis-and-minnesotas-urban-origins',
+              url: 'https://www.mnhs.org/mnopedia/search/index/st-paul-minneapolis-and-minnesotas-urban-origins'
             },
             {
               title: 'Historic Twin Cities: This Day in History',
-              url: 'http://www.historictwincities.com/this-day-in-history/02-28-1872/',
+              url: 'http://www.historictwincities.com/this-day-in-history/02-28-1872/'
             }
           ],
           location: { name: 'St. Anthony Falls', url: 'https://www.google.com/maps/place/St.+Anthony+Falls/@44.9811,-93.2582,17z', stillExists: true },
           image: {
             src: '/minneapolis/curiosities/st-anthony-original-twin.png',
-            alt: 'Historic St. Anthony, the original Twin City of Minneapolis',
-          },
+            alt: 'Historic St. Anthony, the original Twin City of Minneapolis'
+          }
         },
         {
           id: 'curiosity-15',
@@ -1147,24 +1103,24 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'City of Minneapolis',
-              url: 'https://www.minneapolismn.gov/',
+              url: 'https://www.minneapolismn.gov/'
             }
           ],
           location: { name: 'Minneapolis City Hall', url: 'https://www.google.com/maps/place/Minneapolis+City+Hall/@44.9770,-93.2650,17z', stillExists: true },
           images: [
             {
               src: '/minneapolis/curiosities/Minneapolis_City_Hall,_5th_Street_and_S_4th_Avenue,_Minneapolis,_MN.jpg',
-              alt: 'Minneapolis City Hall with its iconic clock tower',
+              alt: 'Minneapolis City Hall with its iconic clock tower'
             },
             {
               src: '/minneapolis/curiosities/father-of-waters-1.png',
-              alt: 'Father of Waters statue - 30-ton marble sculpture in City Hall rotunda',
+              alt: 'Father of Waters statue - 30-ton marble sculpture in City Hall rotunda'
             },
             {
               src: '/minneapolis/curiosities/father-of-waters-2.png',
-              alt: 'Father of Waters statue detail showing craftsmanship',
+              alt: 'Father of Waters statue detail showing craftsmanship'
             }
-          ],
+          ]
         },
         {
           id: 'curiosity-16',
@@ -1175,28 +1131,28 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'MNopedia: Lakewood Cemetery Memorial Chapel',
-              url: 'https://www.mnhs.org/mnopedia/search/index/structure/lakewood-cemetery-memorial-chapel-minneapolis',
+              url: 'https://www.mnhs.org/mnopedia/search/index/structure/lakewood-cemetery-memorial-chapel-minneapolis'
             },
             {
               title: 'Wikipedia: Lakewood Cemetery',
-              url: 'https://en.wikipedia.org/wiki/Lakewood_Cemetery',
+              url: 'https://en.wikipedia.org/wiki/Lakewood_Cemetery'
             }
           ],
           location: { name: 'Lakewood Cemetery', url: 'https://www.google.com/maps/place/Lakewood+Cemetery/@44.9487,-93.3019,17z', stillExists: true },
           images: [
             {
               src: '/minneapolis/curiosities/Lakewood_Cemetery_Memorial_Chapel-1.jpg',
-              alt: 'Lakewood Cemetery Memorial Chapel exterior',
+              alt: 'Lakewood Cemetery Memorial Chapel exterior'
             },
             {
               src: '/minneapolis/curiosities/lakewood-2.png',
-              alt: 'Lakewood Cemetery Memorial Chapel interior dome',
+              alt: 'Lakewood Cemetery Memorial Chapel interior dome'
             },
             {
               src: '/minneapolis/curiosities/lakewood-3.png',
-              alt: 'Lakewood Cemetery Memorial Chapel mosaic detail',
+              alt: 'Lakewood Cemetery Memorial Chapel mosaic detail'
             }
-          ],
+          ]
         },
         {
           id: 'curiosity-17',
@@ -1208,19 +1164,19 @@ export const minneapolis: CityData = {
           sources: [
             {
               title: 'Walker Art Center',
-              url: 'https://walkerart.org/visit/garden',
+              url: 'https://walkerart.org/visit/garden'
             },
             {
               title: 'Minneapolis Sculpture Garden: Spoonbridge and Cherry',
-              url: 'https://walkerart.org/collections/artworks/spoonbridge-and-cherry',
+              url: 'https://walkerart.org/collections/artworks/spoonbridge-and-cherry'
             }
           ],
           image: {
             src: '/minneapolis/curiosities/sculpture garden.png',
-            alt: 'Minneapolis Sculpture Garden',
-          },
+            alt: 'Minneapolis Sculpture Garden'
+          }
         }
-      ],
+      ]
     },
     {
       id: 'iconic-spots',
@@ -1237,7 +1193,7 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/mall-of-america.png',
-              alt: 'Nickelodeon Universe theme park inside Mall of America',
+              alt: 'Nickelodeon Universe theme park inside Mall of America'
             }
           ],
           address: '60 E Broadway, Bloomington, MN 55425',
@@ -1245,7 +1201,7 @@ export const minneapolis: CityData = {
           hours: 'Mon-Sat 10am-9pm, Sun 11am-7pm',
           price: 'Free entry; rides vary',
           website: 'https://www.mallofamerica.com',
-          tip: 'Go for the absurdity, not the shopping',
+          tip: 'Go for the absurdity, not the shopping'
         },
         {
           id: 'iconic-2',
@@ -1256,7 +1212,7 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/mill-city-museum.png',
-              alt: 'Mill City Museum built into historic mill ruins',
+              alt: 'Mill City Museum built into historic mill ruins'
             }
           ],
           address: '704 S 2nd St, Minneapolis, MN 55401',
@@ -1272,12 +1228,12 @@ export const minneapolis: CityData = {
               url: 'https://www.amazon.com/dp/0873514475?tag=yourtag-20',
               type: 'book'
             }
-          ],
+          ]
         },
         {
           id: 'iconic-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'iconic-3',
@@ -1288,11 +1244,11 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/history-center-1.png',
-              alt: 'Minnesota History Center building exterior in St. Paul',
+              alt: 'Minnesota History Center building exterior in St. Paul'
             },
             {
               src: '/minneapolis/hidden-gems/history-center-2.png',
-              alt: 'Interactive exhibits at Minnesota History Center',
+              alt: 'Interactive exhibits at Minnesota History Center'
             }
           ],
           address: '345 W Kellogg Blvd, St Paul, MN 55102',
@@ -1300,7 +1256,7 @@ export const minneapolis: CityData = {
           hours: 'Tue-Sat 10am-5pm, Sun 11am-5pm',
           price: '$12 adults',
           website: 'https://www.mnhs.org/historycenter',
-          accessibility: 'Fully accessible',
+          accessibility: 'Fully accessible'
         },
         {
           id: 'iconic-4',
@@ -1311,7 +1267,7 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/fort.png',
-              alt: 'Fort Snelling State Park at the confluence of Mississippi and Minnesota rivers',
+              alt: 'Fort Snelling State Park at the confluence of Mississippi and Minnesota rivers'
             }
           ],
           address: '101 Snelling Lake Rd, St Paul, MN 55111',
@@ -1319,7 +1275,7 @@ export const minneapolis: CityData = {
           hours: 'Daily 8am-10pm',
           price: '$7 vehicle day pass',
           website: 'https://www.dnr.state.mn.us/state_parks/fort_snelling',
-          tip: 'Crosby Farm Regional Park nearby is free and equally beautiful',
+          tip: 'Crosby Farm Regional Park nearby is free and equally beautiful'
         },
         {
           id: 'iconic-5',
@@ -1330,7 +1286,7 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/refuge.png',
-              alt: 'Wetland trails at Minnesota Valley National Wildlife Refuge',
+              alt: 'Wetland trails at Minnesota Valley National Wildlife Refuge'
             }
           ],
           address: '3815 American Blvd E, Bloomington, MN 55425',
@@ -1338,7 +1294,7 @@ export const minneapolis: CityData = {
           hours: 'Daily sunrise-sunset',
           price: 'Free',
           website: 'https://www.fws.gov/refuge/minnesota-valley',
-          tip: 'Great for spotting eagles, herons, and migrating birds',
+          tip: 'Great for spotting eagles, herons, and migrating birds'
         },
         {
           id: 'iconic-6',
@@ -1349,7 +1305,7 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/hidden-gems/afton.png',
-              alt: 'Scenic overlook of St. Croix River valley at Afton State Park',
+              alt: 'Scenic overlook of St. Croix River valley at Afton State Park'
             }
           ],
           address: '6959 Peller Ave S, Hastings, MN 55033',
@@ -1357,28 +1313,17 @@ export const minneapolis: CityData = {
           hours: 'Daily 8am-10pm',
           price: '$7 vehicle day pass',
           website: 'https://www.dnr.state.mn.us/state_parks/afton',
-          tip: 'The river bluff trails are stunning but steep',
-        },
-        {
-          id: 'iconic-7',
-          type: 'iconic-spot',
-          name: 'First Avenue',
-          category: 'Music Venue',
-          description: 'Opened as a Greyhound bus depot in 1937—noted for Art Deco style. After the bus depot relocated in 1968, Allan Fingerhut opened it as a rock club in 1970, investing $150,000 to create downtown Minneapolis\'s only venue with both rock music and alcohol. August 3, 1983, Prince and the Revolution played a 45-minute benefit gig. "Purple Rain" was recorded live that month with a Record Plant truck parked outside. Late November-December 1983, Prince\'s management paid $100,000 to use the mainroom for filming "Purple Rain." Most club employees were extras in the film. That exterior—black walls covered in white stars bearing the names of artists who\'ve played here—is one of the most iconic images in rock history. Prince. The Replacements. Hüsker Dü. Atmosphere. Every band that mattered to Minneapolis started or passed through these doors.',
-          images: [
-            {
-              src: '/minneapolis/iconic/first-avenue.png',
-              alt: 'First Avenue nightclub exterior with iconic stars',
-            }
-          ],
+          tip: 'The river bluff trails are stunning but steep'
+        }
+        ],
           address: '701 N 1st Ave, Minneapolis, MN 55403',
           coordinates: { lat: 44.9797, lng: -93.2762 },
           hours: 'Varies by show',
           price: '$15-50 depending on artist',
           website: 'https://first-avenue.com',
-          tip: 'Check the calendar for local acts at 7th Street Entry — that\'s where you\'ll see the next big thing',
+          tip: 'Check the calendar for local acts at 7th Street Entry — that\'s where you\'ll see the next big thing'
         }
-      ],
+      ]
     },
 
     {
@@ -1399,7 +1344,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/quiet-chamber.png',
-                  alt: 'Orfield Labs anechoic chamber interior with sound-absorbing foam wedges',
+                  alt: 'Orfield Labs anechoic chamber interior with sound-absorbing foam wedges'
                 }
               ],
               address: '2709 E 25th St, Minneapolis, MN 55406',
@@ -1407,7 +1352,7 @@ export const minneapolis: CityData = {
               hours: 'Tours by appointment only',
               price: '$200/hour for private tours',
               website: 'https://orfieldlabs.com',
-              tip: 'Book well in advance — tours fill up quickly',
+              tip: 'Book well in advance — tours fill up quickly'
             },
             {
               id: 'gem-underground-2',
@@ -1420,15 +1365,15 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/balls-1.png',
-                  alt: 'House of Balls sculpture studio with found-object art',
+                  alt: 'House of Balls sculpture studio with found-object art'
                 },
                 {
                   src: '/minneapolis/hidden-gems/balls-2.png',
-                  alt: 'Animated creatures made from bowling balls and found objects',
+                  alt: 'Animated creatures made from bowling balls and found objects'
                 },
                 {
                   src: '/minneapolis/hidden-gems/balls-3.png',
-                  alt: 'House of Balls interior with sculptures',
+                  alt: 'House of Balls interior with sculptures'
                 }
               ],
               address: '1504 S 7th St, Minneapolis, MN 55454',
@@ -1437,7 +1382,7 @@ export const minneapolis: CityData = {
               price: 'Free (donations encouraged)',
               phone: '612-332-3992',
               tip: 'Take the Green Line LRT to Cedar Riverside station — it\'s a short walk',
-              accessibility: 'Cramped space with narrow aisles; challenging for wheelchairs',
+              accessibility: 'Cramped space with narrow aisles; challenging for wheelchairs'
             },
             {
               id: 'gem-underground-3',
@@ -1450,11 +1395,11 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/caves-1.png',
-                  alt: 'Swing dancing inside Wabasha Street Caves',
+                  alt: 'Swing dancing inside Wabasha Street Caves'
                 },
                 {
                   src: '/minneapolis/hidden-gems/caves-2.png',
-                  alt: 'Historic underground cave venue interior',
+                  alt: 'Historic underground cave venue interior'
                 }
               ],
               address: '215 Wabasha St S, St Paul, MN 55107',
@@ -1462,12 +1407,12 @@ export const minneapolis: CityData = {
               hours: 'Tours and events vary',
               price: '$8-15',
               website: 'https://www.wabashacaves.com',
-              tip: 'Thursday swing dancing is the way to experience this place',
+              tip: 'Thursday swing dancing is the way to experience this place'
             },
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-museum-1',
@@ -1480,11 +1425,11 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/electric-1.png',
-                  alt: 'The Bakken Museum medical electricity exhibits',
+                  alt: 'The Bakken Museum medical electricity exhibits'
                 },
                 {
                   src: '/minneapolis/hidden-gems/electric-2.png',
-                  alt: 'Victorian electro-therapy devices display',
+                  alt: 'Victorian electro-therapy devices display'
                 }
               ],
               address: '3537 Zenith Ave S, Minneapolis, MN 55416',
@@ -1493,7 +1438,7 @@ export const minneapolis: CityData = {
               price: '$14 adults, $1 limited income',
               website: 'https://thebakken.org',
               tip: 'Free parking on site — rare for a lakeside location',
-              accessibility: 'Fully wheelchair accessible',
+              accessibility: 'Fully wheelchair accessible'
             },
             {
               id: 'gem-museum-2',
@@ -1506,11 +1451,11 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/clocks-1.png',
-                  alt: 'Walls covered with hundreds of cuckoo clocks',
+                  alt: 'Walls covered with hundreds of cuckoo clocks'
                 },
                 {
                   src: '/minneapolis/hidden-gems/clocks-2.png',
-                  alt: 'Cuckoo clock collection display',
+                  alt: 'Cuckoo clock collection display'
                 }
               ],
               address: 'North Loop neighborhood (specific address provided upon reservation)',
@@ -1518,7 +1463,7 @@ export const minneapolis: CityData = {
               hours: 'By reservation only',
               price: 'Free (per Fiorentino\'s wishes)',
               tip: 'Book at least 2-3 weeks in advance — tours fill quickly',
-              accessibility: 'Multi-level home; limited wheelchair access',
+              accessibility: 'Multi-level home; limited wheelchair access'
             },
             {
               id: 'gem-museum-3',
@@ -1529,15 +1474,15 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/trains-1.png',
-                  alt: 'Detailed model railroad diorama',
+                  alt: 'Detailed model railroad diorama'
                 },
                 {
                   src: '/minneapolis/hidden-gems/trains-2.png',
-                  alt: 'Model railroad miniature city at night',
+                  alt: 'Model railroad miniature city at night'
                 },
                 {
                   src: '/minneapolis/hidden-gems/trains-3.png',
-                  alt: 'Volunteers operating model trains',
+                  alt: 'Volunteers operating model trains'
                 }
               ],
               address: '668 Transfer Rd, Suite 8, St. Paul, MN 55114',
@@ -1546,7 +1491,7 @@ export const minneapolis: CityData = {
               price: '$10 adults, $5 children; Night Trains $15',
               website: 'https://www.tcmrm.org',
               tip: 'Visit during Night Trains season for the most magical experience',
-              accessibility: 'Fully wheelchair accessible',
+              accessibility: 'Fully wheelchair accessible'
             },
             {
               id: 'gem-museum-4',
@@ -1559,7 +1504,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/smallestmuseum-1.png',
-                  alt: 'Tiny museum display in vintage fire-hose cabinet',
+                  alt: 'Tiny museum display in vintage fire-hose cabinet'
                 }
               ],
               address: '2399 University Ave, St. Paul, MN 55114',
@@ -1568,12 +1513,12 @@ export const minneapolis: CityData = {
               price: 'Free',
               website: 'https://www.smallestmuseumstpaul.com',
               tip: 'Check their Instagram (@smallestmuseumstpaul) to see the current exhibit before visiting',
-              accessibility: 'Sidewalk viewing; fully accessible',
+              accessibility: 'Sidewalk viewing; fully accessible'
             },
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-arch-1',
@@ -1586,7 +1531,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/helix-stairs.png',
-                  alt: 'Double helix spiral staircase at International Market Square',
+                  alt: 'Double helix spiral staircase at International Market Square'
                 }
               ],
               address: '275 Market St, Minneapolis, MN 55405',
@@ -1595,7 +1540,7 @@ export const minneapolis: CityData = {
               price: 'Free',
               website: 'https://www.imsdesigncenter.com',
               tip: 'Ask designers/architects in the building for best viewing access',
-              accessibility: 'Stairs only; not wheelchair accessible',
+              accessibility: 'Stairs only; not wheelchair accessible'
             },
             {
               id: 'gem-arch-3',
@@ -1608,7 +1553,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/witch-tower.png',
-                  alt: 'Witch\'s Hat Water Tower on Minneapolis\'s highest point',
+                  alt: 'Witch\'s Hat Water Tower on Minneapolis\'s highest point'
                 }
               ],
               address: '55 SE Malcolm Ave, Minneapolis, MN 55414',
@@ -1617,7 +1562,7 @@ export const minneapolis: CityData = {
               price: 'Free on open day',
               website: 'https://prospectparkmpls.org/tower.html',
               tip: 'Mark your calendar for late May/early June when it reopens — the line gets long',
-              accessibility: 'Exterior viewable anytime; interior has steep stairs (not accessible)',
+              accessibility: 'Exterior viewable anytime; interior has steep stairs (not accessible)'
             },
         {
           id: 'gem-art-1',
@@ -1630,7 +1575,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/trylon-cinema.png',
-                  alt: 'Trylon Cinema microcinema interior',
+                  alt: 'Trylon Cinema microcinema interior'
                 }
               ],
               address: '2820 E 33rd St, Minneapolis, MN 55406',
@@ -1639,12 +1584,12 @@ export const minneapolis: CityData = {
               price: '$10 per screening (membership available)',
               website: 'https://www.trylon.org',
               tip: 'Buy tickets online in advance — popular screenings sell out',
-              accessibility: 'Wheelchair accessible seating available',
+              accessibility: 'Wheelchair accessible seating available'
             },
         {
           id: 'gem-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-nature-1',
@@ -1657,7 +1602,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/wildflower.png',
-                  alt: 'Wooden boardwalk through wetlands at Eloise Butler Wildflower Garden',
+                  alt: 'Wooden boardwalk through wetlands at Eloise Butler Wildflower Garden'
                 }
               ],
               address: '1500 Garden Springs Dr, Minneapolis, MN 55422',
@@ -1665,7 +1610,7 @@ export const minneapolis: CityData = {
               hours: 'April-Oct: Daily 7:30am-dusk',
               price: 'Free',
               accessibility: 'Partially accessible; some trails are unpaved',
-              tip: 'Best in spring for trilliums and woodland wildflowers',
+              tip: 'Best in spring for trilliums and woodland wildflowers'
             },
             {
               id: 'gem-nature-2',
@@ -1676,7 +1621,7 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/rookery.png',
-                  alt: 'Great blue herons nesting on Mississippi River islands',
+                  alt: 'Great blue herons nesting on Mississippi River islands'
                 }
               ],
               address: '2740 Marshall St NE, Minneapolis, MN 55418',
@@ -1685,7 +1630,7 @@ export const minneapolis: CityData = {
               price: 'Free',
               website: 'https://fmr.org/updates/conservation/where-find-herons-twin-cities-metro-near-river',
               tip: 'Best viewing in early morning; bring binoculars',
-              accessibility: 'Paved path accessible; riverbank stairs for closer viewing',
+              accessibility: 'Paved path accessible; riverbank stairs for closer viewing'
             },
         {
           id: 'gem-quirky-1',
@@ -1696,11 +1641,11 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/Ingebretsen-1.png',
-                  alt: 'Ingebretsen\'s Scandinavian specialty shop exterior',
+                  alt: 'Ingebretsen\'s Scandinavian specialty shop exterior'
                 },
                 {
                   src: '/minneapolis/hidden-gems/Ingebretsen-2.png',
-                  alt: 'Ingebretsen\'s interior with Scandinavian foods and gifts',
+                  alt: 'Ingebretsen\'s interior with Scandinavian foods and gifts'
                 }
               ],
               address: '1601 E Lake St, Minneapolis, MN 55407',
@@ -1708,7 +1653,7 @@ export const minneapolis: CityData = {
               hours: 'Mon-Sat 9am-5pm',
               price: 'Free to browse',
               website: 'https://ingebretsens.com',
-              tip: 'The meatball mix from the butcher counter is exceptional',
+              tip: 'The meatball mix from the butcher counter is exceptional'
             },
             {
               id: 'gem-quirky-2',
@@ -1719,15 +1664,15 @@ export const minneapolis: CityData = {
               images: [
                 {
                   src: '/minneapolis/hidden-gems/herb-butcher-1.png',
-                  alt: 'The Herbivorous Butcher vegan butcher shop display',
+                  alt: 'The Herbivorous Butcher vegan butcher shop display'
                 },
                 {
                   src: '/minneapolis/hidden-gems/herb-butcher-2.png',
-                  alt: 'Plant-based meats display case',
+                  alt: 'Plant-based meats display case'
                 },
                 {
                   src: '/minneapolis/hidden-gems/herb-butcher-3.png',
-                  alt: 'Herbivorous Butcher interior',
+                  alt: 'Herbivorous Butcher interior'
                 }
               ],
               address: '507 1st Ave NE, Minneapolis, MN 55413',
@@ -1736,9 +1681,9 @@ export const minneapolis: CityData = {
               price: '$$ (specialty products)',
               website: 'https://www.theherbivorousbutcher.com',
               tip: 'Try the Italian sausage or Korean BBQ ribs — even skeptics are converted',
-              accessibility: 'Wheelchair accessible',
-            },
-      ],
+              accessibility: 'Wheelchair accessible'
+            }
+      ]
     },
     {
       id: 'best-bars',
@@ -1762,25 +1707,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/volstead-0.png',
-              alt: 'Volstead\'s Emporium entrance and speakeasy atmosphere',
+              alt: 'Volstead\'s Emporium entrance and speakeasy atmosphere'
             },
             {
               src: 'https://mspmag.com/downloads/24590/download/0216-SecretSpeakeasy_640.jpg?cb=5303b833f0951ea0a657d6eb226fcc1c&w=640',
-              alt: 'Volstead\'s Emporium speakeasy interior — vintage lighting, curtained booths, and the bar where Prohibition-era cocktails are crafted',
+              alt: 'Volstead\'s Emporium speakeasy interior — vintage lighting, curtained booths, and the bar where Prohibition-era cocktails are crafted'
             },
             {
               src: '/minneapolis/restaurants/volstead-1.png',
-              alt: 'Volstead\'s Emporium Prohibition-era cocktails and bar details',
+              alt: 'Volstead\'s Emporium Prohibition-era cocktails and bar details'
             },
             {
               src: '/minneapolis/restaurants/volstead-2.png',
-              alt: 'Volstead\'s Emporium velvet curtains and intimate speakeasy seating',
+              alt: 'Volstead\'s Emporium velvet curtains and intimate speakeasy seating'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/volsteads-emporium/menu.jpg',
-            alt: 'Volstead\'s Emporium cocktail menu with Prohibition-era classics',
-          },
+            alt: 'Volstead\'s Emporium cocktail menu with Prohibition-era classics'
+          }
         },
         {
           name: 'Prohibition',
@@ -1797,21 +1742,17 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://www.hotel-scoop.com/wp-content/uploads/2016/02/DSC05129.jpg',
-              alt: 'Prohibition Bar Art Deco interior at Foshay Tower 27th floor',
+              alt: 'Prohibition Bar Art Deco interior at Foshay Tower 27th floor'
             },
             {
               src: 'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzlw7MtJrM_glYCIXsn6xqO_JUs_dJ3RKlt8OkT8FqA4-S3uDJnws0uBXAGL5KYnVZm5MtzQd4DI8wp8T72NunhduKKU1Dr6B_-5p_lWtGj-ggGP1_oFF8jdgovDdsGnP1TtetUAA=w3427-h1887-k-no',
-              alt: 'Prohibition bar panoramic interior with skyline views',
-            },
-            {
-              src: '',
-              alt: 'Minneapolis skyline view from Prohibition bar',
+              alt: 'Prohibition bar panoramic interior with skyline views'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/prohibition/menu.jpg',
-            alt: 'Prohibition bar cocktail menu at Foshay Tower',
-          },
+            alt: 'Prohibition bar cocktail menu at Foshay Tower'
+          }
         },
         {
           name: 'Bumbling Fools Meadery',
@@ -1828,25 +1769,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://lede-admin.racketmn.com/wp-content/uploads/sites/37/2023/04/PXL_20230415_151738286.jpg?w=2880',
-              alt: 'Cozy tasting room interior at Bumbling Fools Meadery',
+              alt: 'Cozy tasting room interior at Bumbling Fools Meadery'
             },
             {
               src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-int-lg.jpg',
-              alt: 'Bumbling Fools Meadery interior space',
+              alt: 'Bumbling Fools Meadery interior space'
             },
             {
               src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-mead-sign-int-lg.jpg',
-              alt: 'Bumbling Fools Meadery interior sign and decor',
+              alt: 'Bumbling Fools Meadery interior sign and decor'
             },
             {
               src: 'https://heavytable.com/wp-content/uploads/2024/05/bumbling-fools-bee-menu-lg.jpg',
-              alt: 'Bee-themed menu at Bumbling Fools Meadery',
+              alt: 'Bee-themed menu at Bumbling Fools Meadery'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/bumbling-fools-meadery/menu.jpg',
-            alt: 'Bumbling Fools Meadery mead flight menu',
-          },
+            alt: 'Bumbling Fools Meadery mead flight menu'
+          }
         },
         {
           name: 'Moto-i',
@@ -1863,25 +1804,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://mspmag.com/downloads/60116/download/motoi_classic_ramen%20%282%29.jpg',
-              alt: 'Classic ramen bowl at Moto-i',
+              alt: 'Classic ramen bowl at Moto-i'
             },
             {
               src: 'https://mspmag.com/downloads/60117/download/sakeflight2%20%281%29.jpg',
-              alt: 'Sake flight at Moto-i sake brewpub',
+              alt: 'Sake flight at Moto-i sake brewpub'
             },
             {
               src: 'https://mspmag.com/downloads/60121/download/motoi_steamedbuns%20%281%29.jpg',
-              alt: 'House-made steamed buns at Moto-i',
+              alt: 'House-made steamed buns at Moto-i'
             },
             {
               src: 'https://mspmag.com/downloads/60120/download/tokubetsu_bottle.jpg',
-              alt: 'Moto-i sake bottle display',
+              alt: 'Moto-i sake bottle display'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/moto-i/menu.jpg',
-            alt: 'Moto-i sake and food menu',
-          },
+            alt: 'Moto-i sake and food menu'
+          }
         },
         {
           name: 'Flora Room',
@@ -1898,25 +1839,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://images.squarespace-cdn.com/content/v1/64429caacaf4007617305f6d/3def10a0-ffe6-485a-ac1b-50f7cf76b4fc/Porzana_Preview_0059.jpg',
-              alt: 'Intimate cocktail bar with botanical decor at Flora Room',
+              alt: 'Intimate cocktail bar with botanical decor at Flora Room'
             },
             {
               src: 'https://images.squarespace-cdn.com/content/v1/5b68a541da02bc93873b055e/1718216670964-S6GLTAEURTT9WTES4P4Q/Porzana_0371.JPG',
-              alt: 'Flora Room interior with plants and dim lighting',
+              alt: 'Flora Room interior with plants and dim lighting'
             },
             {
               src: 'https://images.squarespace-cdn.com/content/v1/5b68a541da02bc93873b055e/1718216682121-69BN0WHCOHOVU1DK0EP9/Porzana_0426.JPG',
-              alt: 'Flora Room cocktail bar seating area',
+              alt: 'Flora Room cocktail bar seating area'
             },
             {
               src: 'https://lede-admin.racketmn.com/wp-content/uploads/sites/37/2023/11/MixCollage-09-Nov-2023-09-37-AM-1574.jpg?w=2880',
-              alt: 'Flora Room food and cocktail collage',
+              alt: 'Flora Room food and cocktail collage'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/flora-room/menu.jpg',
-            alt: 'Flora Room botanical cocktail menu',
-          },
+            alt: 'Flora Room botanical cocktail menu'
+          }
         },
         {
           name: 'Pryes Brewing',
@@ -1933,25 +1874,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1623983830921-6G4FZ19VMJN0AF8QTFNI/Q01A4799.JPG',
-              alt: 'Outdoor patio at Pryes Brewing with Mississippi River views',
+              alt: 'Outdoor patio at Pryes Brewing with Mississippi River views'
             },
             {
               src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1624989648255-GSHHA326O2FHEWH8Z5YP/Q01A9572.JPG',
-              alt: 'Pryes Brewing taproom interior',
+              alt: 'Pryes Brewing taproom interior'
             },
             {
               src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1626280240305-JDC9HFZBLL9A4N9A4ASK/Q01A3766.JPG',
-              alt: 'Pryes Brewing taproom seating area',
+              alt: 'Pryes Brewing taproom seating area'
             },
             {
               src: 'https://images.squarespace-cdn.com/content/v1/593d53f75016e1368cc27242/1682618174861-EZX1KWZDB43N5PTGWMO1/Flight.jpg',
-              alt: 'Beer flight at Pryes Brewing',
+              alt: 'Beer flight at Pryes Brewing'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/pryes-brewing/menu.jpg',
-            alt: 'Pryes Brewing tap list and beer menu',
-          },
+            alt: 'Pryes Brewing tap list and beer menu'
+          }
         },
         {
           name: 'Grumpy\'s Northeast',
@@ -1968,32 +1909,32 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://mspmag.com/downloads/47272/download/Abrams_Grumpys-1111crop.jpg?cb=522bc8db81e14f92f404860401f2ac7f&w=1280',
-              alt: 'Classic dive bar interior at Grumpy\'s Northeast',
+              alt: 'Classic dive bar interior at Grumpy\'s Northeast'
             },
             {
               src: 'https://mspmag.com/downloads/46418/download/01-Abrams_Grumpys-1382-1280.jpg?cb=e45a9298bb195ce5929ef9e17dcf5b56',
-              alt: 'Patrons at Grumpy\'s Northeast bar',
+              alt: 'Patrons at Grumpy\'s Northeast bar'
             },
             {
               src: 'https://mspmag.com/downloads/46419/download/02-Abrams_Paddy-2666-2-1280.jpg?cb=c886b551a720f3af028c7f8701a123e7',
-              alt: 'Bartender at Grumpy\'s Northeast',
+              alt: 'Bartender at Grumpy\'s Northeast'
             },
             {
               src: 'https://mspmag.com/downloads/46423/download/05-Abrams_Grumpys-1322-1280.jpg?cb=b042e251e06e39d9232bca491baf04fe',
-              alt: 'Grumpy\'s Northeast exterior daytime',
+              alt: 'Grumpy\'s Northeast exterior daytime'
             }
           ],
           menuImage: {
             src: '/images/establishments/bars/minneapolis/menus/grumpys-northeast/menu.jpg',
-            alt: 'Grumpy\'s Northeast dive bar drinks menu',
-          },
+            alt: 'Grumpy\'s Northeast dive bar drinks menu'
+          }
         }
-      ],
+      ]
     },
     {
       id: 'best-bars-ad',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'best-cafes',
@@ -2013,11 +1954,7 @@ export const minneapolis: CityData = {
           hours: '6:30am-6pm daily',
           price: '$$',
           website: 'https://quixoticcoffee.com/',
-          instagram: '@quixoticcoffee',
-          image: {
-            src: '',
-            alt: 'Spacious cafe with big windows and long tables',
-          },
+          instagram: '@quixoticcoffee'
         },
         {
           name: 'Five Watt Coffee',
@@ -2030,11 +1967,7 @@ export const minneapolis: CityData = {
           hours: '7am-5pm daily',
           price: '$$',
           website: 'https://fivewattcoffee.com/',
-          instagram: '@fivewattcoffee',
-          image: {
-            src: '',
-            alt: 'Third-wave specialty coffee with espresso bar',
-          },
+          instagram: '@fivewattcoffee'
         },
         {
           name: 'Misfit Coffee',
@@ -2047,11 +1980,7 @@ export const minneapolis: CityData = {
           hours: '7am-4pm daily',
           price: '$$',
           website: 'https://misfitcoffee.com/',
-          instagram: '@misfitcoffee',
-          image: {
-            src: '',
-            alt: 'Industrial coffee shop with natural light',
-          },
+          instagram: '@misfitcoffee'
         },
         {
           name: 'Seward Cafe',
@@ -2064,18 +1993,14 @@ export const minneapolis: CityData = {
           hours: '7am-3pm daily',
           price: '$',
           website: 'https://sewardcafe.com/',
-          instagram: '@seward_cafe',
-          image: {
-            src: '',
-            alt: 'Cozy neighborhood coffee shop with eclectic decor',
-          },
+          instagram: '@seward_cafe'
         }
-      ],
+      ]
     },
     {
       id: 'best-cafes-ad',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'msp-best-coffee-shops',
@@ -2099,12 +2024,12 @@ export const minneapolis: CityData = {
           image: {
             src: 'https://cdn.shopify.com/s/files/1/0028/4347/6027/files/Whittier_2048x2048.jpg?v=1529889766',
             alt: 'Spyhouse Coffee Whittier location in 1926 brownstone on Nicollet Ave',
-            credit: 'Spyhouse Coffee Roasters',
+            credit: 'Spyhouse Coffee Roasters'
           },
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/spyhouse-coffee/menu.jpg',
-            alt: 'Spyhouse Coffee menu board with specialty drinks and single-origin offerings',
-          },
+            alt: 'Spyhouse Coffee menu board with specialty drinks and single-origin offerings'
+          }
         },
         {
           name: 'Dogwood Coffee',
@@ -2122,23 +2047,23 @@ export const minneapolis: CityData = {
             {
               src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-coffeebar-1168x780.jpg',
               alt: 'Dogwood Coffee espresso bar with custom Synesso machine',
-              credit: 'Sprudge Coffee',
+              credit: 'Sprudge Coffee'
             },
             {
               src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-cafe-532x780.jpg',
               alt: 'Dogwood Coffee Northeast cafe interior',
-              credit: 'Sprudge Coffee',
+              credit: 'Sprudge Coffee'
             },
             {
               src: 'https://sprudge.com/wp-content/uploads/2019/04/dogwood-cafe-neon-520x780.jpg',
               alt: 'Custom neon installation at Dogwood Coffee',
-              credit: 'Sprudge Coffee',
+              credit: 'Sprudge Coffee'
             }
           ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/dogwood-coffee/menu.jpg',
-            alt: 'Dogwood Coffee espresso and specialty drink menu',
-          },
+            alt: 'Dogwood Coffee espresso and specialty drink menu'
+          }
         },
         {
           name: 'Matchbox Coffee',
@@ -2155,13 +2080,13 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/coffee-shops/matchbox.png',
-              alt: 'Matchbox Coffee worker-owned cooperative',
-            },
+              alt: 'Matchbox Coffee worker-owned cooperative'
+            }
           ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/matchbox-coffee/menu.jpg',
-            alt: 'Matchbox Coffee menu board with cold press and pastries',
-          },
+            alt: 'Matchbox Coffee menu board with cold press and pastries'
+          }
         },
         {
           name: 'Backstory Coffee Roasters',
@@ -2178,25 +2103,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/coffee-shops/backstory.png',
-              alt: 'Backstory Coffee Roasters North Loop location with greenery',
+              alt: 'Backstory Coffee Roasters North Loop location with greenery'
             },
             {
               src: '/minneapolis/coffee-shops/backstory-2.png',
-              alt: 'Backstory Coffee interior with plants and natural light',
+              alt: 'Backstory Coffee interior with plants and natural light'
             },
             {
               src: '/minneapolis/coffee-shops/backstory-3.png',
-              alt: 'Backstory Coffee espresso bar and seating area',
+              alt: 'Backstory Coffee espresso bar and seating area'
             },
             {
               src: '/minneapolis/coffee-shops/backstory-4.png',
-              alt: 'Backstory Coffee lush interior with floor-to-ceiling windows',
+              alt: 'Backstory Coffee lush interior with floor-to-ceiling windows'
             }
           ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/backstory-coffee-roasters/menu.jpg',
-            alt: 'Backstory Coffee Roasters menu with seasonal pour-overs and espresso drinks',
-          },
+            alt: 'Backstory Coffee Roasters menu with seasonal pour-overs and espresso drinks'
+          }
         },
         {
           name: 'Isles Bun & Coffee',
@@ -2213,27 +2138,27 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/coffee-shops/isles-bun-1.png',
-              alt: 'Isles Bun & Coffee shop',
+              alt: 'Isles Bun & Coffee shop'
             },
             {
               src: '/minneapolis/coffee-shops/isles-bun-2.png',
-              alt: 'Isles Bun & Coffee cinnamon rolls',
+              alt: 'Isles Bun & Coffee cinnamon rolls'
             },
             {
               src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-2.png',
               alt: 'Isles Bun & Coffee award-winning cinnamon rolls with cream cheese frosting',
-              credit: 'World\'s Best Cinnamon Rolls',
+              credit: 'World\'s Best Cinnamon Rolls'
             },
             {
               src: 'https://worldsbestcinnamonrolls.com/wp-content/uploads/2025/01/isles-bun-and-coffee-4.png',
               alt: 'Isles Bun & Coffee cinnamon roll close-up',
-              credit: 'World\'s Best Cinnamon Rolls',
+              credit: 'World\'s Best Cinnamon Rolls'
             }
           ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/isles-bun-coffee/menu.jpg',
-            alt: 'Isles Bun & Coffee menu featuring award-winning cinnamon rolls and coffee drinks',
-          },
+            alt: 'Isles Bun & Coffee menu featuring award-winning cinnamon rolls and coffee drinks'
+          }
         },
         {
           name: 'Northern Coffeeworks',
@@ -2251,20 +2176,20 @@ export const minneapolis: CityData = {
             {
               src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/Northern_Coffeeworks_Jamie_Cooper_2024_Minneapolis_500x.png?v=1731947718',
               alt: 'Northern Coffeeworks Minneapolis coffee shop interior',
-              credit: 'Northern Coffeeworks',
+              credit: 'Northern Coffeeworks'
             },
             {
               src: 'https://cdn.shopify.com/s/files/1/0552/1601/3393/files/NCW_JamieCooper_June2024_Minneapolis-43.jpg?v=1731947718',
               alt: 'Northern Coffeeworks coffee bar and roasting area',
-              credit: 'Northern Coffeeworks',
+              credit: 'Northern Coffeeworks'
             }
           ],
           menuImage: {
             src: '/images/establishments/coffee-shops/minneapolis/menus/northern-coffeeworks/menu.jpg',
-            alt: 'Northern Coffeeworks menu board with Minnesota-themed coffee blends',
-          },
+            alt: 'Northern Coffeeworks menu board with Minnesota-themed coffee blends'
+          }
         }
-      ],
+      ]
     },
     {
       id: 'best-restaurants',
@@ -2289,25 +2214,25 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/owamni-1.png',
-              alt: 'Owamni Indigenous cuisine dining experience',
+              alt: 'Owamni Indigenous cuisine dining experience'
             },
             {
               src: '/minneapolis/restaurants/owamni-2.png',
-              alt: 'Owamni restaurant interior and ambiance',
+              alt: 'Owamni restaurant interior and ambiance'
             },
             {
               src: '/minneapolis/restaurants/owamni-3.png',
-              alt: 'Owamni signature dishes',
+              alt: 'Owamni signature dishes'
             },
             {
               src: '/minneapolis/restaurants/oramnii-4.png',
-              alt: 'Owamni plated presentation',
+              alt: 'Owamni plated presentation'
             }
           ],
           menuImage: {
             src: '/minneapolis/restaurants/oawmni-menu.png',
-            alt: 'Owamni Indigenous cuisine menu',
-          },
+            alt: 'Owamni Indigenous cuisine menu'
+          }
         },
         {
           name: 'Matt\'s Bar',
@@ -2323,21 +2248,21 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/matts-1.png',
-              alt: 'Matt\'s Bar exterior and iconic signage',
+              alt: 'Matt\'s Bar exterior and iconic signage'
             },
             {
               src: '/minneapolis/restaurants/matts-2.png',
-              alt: 'Matt\'s Bar interior with classic dive bar atmosphere',
+              alt: 'Matt\'s Bar interior with classic dive bar atmosphere'
             },
             {
               src: '/minneapolis/restaurants/matts-3.png',
-              alt: 'The legendary Jucy Lucy burger at Matt\'s Bar',
+              alt: 'The legendary Jucy Lucy burger at Matt\'s Bar'
             }
           ],
           menuImage: {
             src: '/images/establishments/restaurants/minneapolis/menus/matts-bar/menu.jpg',
-            alt: 'Matt\'s Bar Jucy Lucy burger menu',
-          },
+            alt: 'Matt\'s Bar Jucy Lucy burger menu'
+          }
         },
         {
           name: 'Hmong Village',
@@ -2352,29 +2277,29 @@ export const minneapolis: CityData = {
           images: [
             {
               src: 'https://mspmag.com/downloads/30796/download/Hmong-Village.jpg?cb=ca574a21e186002ba6ada427ced8d9c1&w=600',
-              alt: 'Inside Hmong Village marketplace with rows of food vendors',
+              alt: 'Inside Hmong Village marketplace with rows of food vendors'
             },
             {
               src: 'https://blog.resy.com/wp-content/uploads/2021/07/PAOH9778-copy.jpg',
-              alt: 'Hmong Village food court corridor with vendors and customers',
+              alt: 'Hmong Village food court corridor with vendors and customers'
             },
             {
               src: 'https://mspmag.com/downloads/30794/download/Crazy-Steak.jpg?cb=818f0b4abcc16a63e558128d8610f1d5',
-              alt: 'Crazy Steak grilled meat dish from Santi\'s at Hmong Village',
+              alt: 'Crazy Steak grilled meat dish from Santi\'s at Hmong Village'
             },
             {
               src: 'https://mspmag.com/downloads/30797/download/Mai%27s-papaya-salad.jpg?cb=c3568624f71ffe162ce7f60b4132094f',
-              alt: 'Fresh papaya salad from Mai\'s Kitchen at Hmong Village',
+              alt: 'Fresh papaya salad from Mai\'s Kitchen at Hmong Village'
             },
             {
               src: 'https://blog.resy.com/wp-content/uploads/2021/07/PAOH9885-copy.jpg',
-              alt: 'Meat-and-three combo spread from Lucki\'s Kitchen',
+              alt: 'Meat-and-three combo spread from Lucki\'s Kitchen'
             }
           ],
           menuImage: {
             src: '/images/establishments/restaurants/minneapolis/menus/hmong-village/menu.jpg',
-            alt: 'Hmong Village food court vendor menus',
-          },
+            alt: 'Hmong Village food court vendor menus'
+          }
         },
         {
           name: 'Al\'s Breakfast',
@@ -2389,21 +2314,21 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/al-1.png',
-              alt: 'Al\'s Breakfast legendary 14-seat counter',
+              alt: 'Al\'s Breakfast legendary 14-seat counter'
             },
             {
               src: '/minneapolis/restaurants/al-2.png',
-              alt: 'Al\'s Breakfast griddle and cooking area',
+              alt: 'Al\'s Breakfast griddle and cooking area'
             },
             {
               src: '/minneapolis/restaurants/al-3.png',
-              alt: 'Al\'s Breakfast famous blueberry pancakes',
+              alt: 'Al\'s Breakfast famous blueberry pancakes'
             }
           ],
           menuImage: {
             src: '/minneapolis/restaurants/al-menu.png',
-            alt: 'Al\'s Breakfast diner menu',
-          },
+            alt: 'Al\'s Breakfast diner menu'
+          }
         },
         {
           name: 'Hai Hai',
@@ -2420,17 +2345,17 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/hai-hai-1.png',
-              alt: 'Hai Hai restaurant exterior and vibrant atmosphere',
+              alt: 'Hai Hai restaurant exterior and vibrant atmosphere'
             },
             {
               src: '/minneapolis/restaurants/hai-hai-2.png',
-              alt: 'Hai Hai Southeast Asian street food dishes',
+              alt: 'Hai Hai Southeast Asian street food dishes'
             }
           ],
           menuImage: {
             src: '/images/establishments/restaurants/minneapolis/menus/hai-hai/menu.jpg',
-            alt: 'Hai Hai Southeast Asian food menu',
-          },
+            alt: 'Hai Hai Southeast Asian food menu'
+          }
         },
         {
           name: 'Eat Street',
@@ -2445,17 +2370,17 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/eat-street-1.png',
-              alt: 'Eat Street Nicollet Avenue corridor with diverse restaurants',
+              alt: 'Eat Street Nicollet Avenue corridor with diverse restaurants'
             },
             {
               src: '/minneapolis/restaurants/eat-street-2.png',
-              alt: 'Eat Street global cuisine and street food scene',
+              alt: 'Eat Street global cuisine and street food scene'
             }
           ],
           menuImage: {
             src: '/images/establishments/restaurants/minneapolis/menus/eat-street/menu.jpg',
-            alt: 'Eat Street Nicollet Avenue restaurant menus',
-          },
+            alt: 'Eat Street Nicollet Avenue restaurant menus'
+          }
         },
         {
           name: 'Boludo',
@@ -2472,17 +2397,17 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/boludo-1.png',
-              alt: 'Boludo Argentine empanadas and pizza',
+              alt: 'Boludo Argentine empanadas and pizza'
             },
             {
               src: '/minneapolis/restaurants/boludo-2.png',
-              alt: 'Boludo restaurant interior with intimate candlelit atmosphere',
+              alt: 'Boludo restaurant interior with intimate candlelit atmosphere'
             }
           ],
           menuImage: {
             src: '/minneapolis/restaurants/boludo-menu.png',
-            alt: 'Boludo Argentine empanada menu',
-          },
+            alt: 'Boludo Argentine empanada menu'
+          }
         },
         {
           name: 'Brasa Premium Rotisserie',
@@ -2499,21 +2424,21 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/brasa-1.png',
-              alt: 'Brasa Premium Rotisserie exterior and signage',
+              alt: 'Brasa Premium Rotisserie exterior and signage'
             },
             {
               src: '/minneapolis/restaurants/brasa-2.png',
-              alt: 'Brasa rotisserie chicken and Southern sides',
+              alt: 'Brasa rotisserie chicken and Southern sides'
             },
             {
               src: '/minneapolis/restaurants/brasa-3.png',
-              alt: 'Brasa cafeteria-style counter service',
+              alt: 'Brasa cafeteria-style counter service'
             }
           ],
           menuImage: {
             src: '/minneapolis/restaurants/brasa-menu.png',
-            alt: 'Brasa rotisserie and sides menu',
-          },
+            alt: 'Brasa rotisserie and sides menu'
+          }
         },
         {
           name: 'Kramarczuk\'s',
@@ -2530,35 +2455,27 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/restaurants/kramarczuk-1.png',
-              alt: 'Kramarczuk\'s interior',
+              alt: 'Kramarczuk\'s interior'
             },
             {
               src: '/minneapolis/restaurants/kramarczuk-2.png',
-              alt: 'Kramarczuk\'s Eastern European cuisine',
-            },
-            {
-              src: '/minneapolis/restaurants/kramarczuks-1.png',
-              alt: 'Kramarczuk\'s deli counter with Eastern European sausages and meats',
+              alt: 'Kramarczuk\'s Eastern European cuisine'
             },
             {
               src: '/minneapolis/restaurants/resto-kram-1.png',
-              alt: 'Kramarczuk\'s traditional Eastern European dishes and deli specialties',
+              alt: 'Kramarczuk\'s traditional Eastern European dishes and deli specialties'
             },
             {
               src: '/minneapolis/restaurants/resto-kram-2.png',
-              alt: 'Kramarczuk\'s dining area with authentic Ukrainian-Polish atmosphere',
+              alt: 'Kramarczuk\'s dining area with authentic Ukrainian-Polish atmosphere'
             },
             {
               src: '/minneapolis/restaurants/resto-kram-3.png',
-              alt: 'Kramarczuk\'s fresh-baked pastries and traditional desserts',
+              alt: 'Kramarczuk\'s fresh-baked pastries and traditional desserts'
             }
           ],
-          menuImage: {
-            src: '/minneapolis/restaurants/kramarczuks-menu.png',
-            alt: 'Kramarczuk\'s deli and restaurant menu',
-          },
-        }
-      ],
+          menuImage: }
+      ]
     },
     {
       id: 'obscure-history',
@@ -2575,20 +2492,16 @@ export const minneapolis: CityData = {
             {
               title: 'Bdote Memory Map',
               publisher: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/fortsnelling/learn/bdote',
-            },
+              url: 'https://www.mnhs.org/fortsnelling/learn/bdote'
+            }
           ],
-          image: {
-            src: '/images/history/bdote-confluence.jpg',
-            alt: 'Aerial view of the Mississippi and Minnesota river confluence',
-            year: 'Present day',
-          },
+          
           location: {
             name: 'Fort Snelling State Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Fort%20Snelling%20State%20Park%20Minneapolis',
             coordinates: { lat: 44.8931, lng: -93.1808 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-2',
@@ -2600,24 +2513,21 @@ export const minneapolis: CityData = {
             {
               title: 'The Washburn A Mill Explosion',
               publisher: 'Mill City Museum',
-              url: 'https://www.mnhs.org/millcity/learn/history/washburn-a-mill-explosion',
-            },
+              url: 'https://www.mnhs.org/millcity/learn/history/washburn-a-mill-explosion'
+            }
           ],
-          image: {
-            src: '/images/history/washburn-explosion.jpg',
-            alt: 'Historic illustration of the 1878 Washburn Mill explosion',
-                      },
+          
           location: {
             name: 'Mill City Museum',
       url: 'https://www.google.com/maps/search/?api=1&query=Mill%20City%20Museum%20Minneapolis',
             coordinates: { lat: 44.9792, lng: -93.2571 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'history-3',
@@ -2629,14 +2539,14 @@ export const minneapolis: CityData = {
             {
               title: 'The Shame of the Cities',
               publisher: 'McClure\'s Magazine / Archive.org',
-              url: 'https://archive.org/details/shameofcities00stef',
-            },
+              url: 'https://archive.org/details/shameofcities00stef'
+            }
           ],
           location: {
             name: 'Downtown Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Minneapolis%20Minneapolis',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-4',
@@ -2648,18 +2558,15 @@ export const minneapolis: CityData = {
             {
               title: 'The 1934 Minneapolis Teamsters Strike',
               publisher: 'MNopedia / Minnesota Historical Society',
-              url: 'https://www.mnopedia.org/event/minneapolis-teamsters-strike-1934',
-            },
+              url: 'https://www.mnopedia.org/event/minneapolis-teamsters-strike-1934'
+            }
           ],
-          image: {
-            src: '/images/history/teamsters-strike.jpg',
-            alt: 'Strikers gathered during the 1934 Minneapolis Teamsters Strike',
-                      },
+          
           location: {
             name: 'Minneapolis Warehouse District',
       url: 'https://www.google.com/maps/search/?api=1&query=Minneapolis%20Warehouse%20District%20Minneapolis',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-5',
@@ -2671,20 +2578,20 @@ export const minneapolis: CityData = {
             {
               title: 'Minneapolis Skyway System',
               publisher: 'Minneapolis Downtown Council',
-              url: 'https://www.minneapolisdowntown.com/getting-around/skyway/',
-            },
+              url: 'https://www.minneapolisdowntown.com/getting-around/skyway/'
+            }
           ],
           location: {
             name: 'Downtown Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Minneapolis%20Minneapolis',
             coordinates: { lat: 44.9778, lng: -93.2650 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'history-6',
@@ -2696,15 +2603,15 @@ export const minneapolis: CityData = {
             {
               title: 'The Terrazzo Jungle',
               publisher: 'The New Yorker',
-              url: 'https://www.newyorker.com/magazine/2004/03/15/the-terrazzo-jungle',
-            },
+              url: 'https://www.newyorker.com/magazine/2004/03/15/the-terrazzo-jungle'
+            }
           ],
           location: {
             name: 'Southdale Center, Edina',
       url: 'https://www.google.com/maps/search/?api=1&query=Southdale%20Center%2C%20Edina%20Minneapolis',
             coordinates: { lat: 44.8809, lng: -93.3222 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-7',
@@ -2716,19 +2623,15 @@ export const minneapolis: CityData = {
             {
               title: 'Mapping Prejudice',
               publisher: 'University of Minnesota',
-              url: 'https://mappingprejudice.umn.edu/',
-            },
+              url: 'https://mappingprejudice.umn.edu/'
+            }
           ],
-          image: {
-            src: '/images/history/north-minneapolis-1960s.jpg',
-            alt: 'North Minneapolis neighborhood before urban renewal',
-            year: '1965',
-          },
+          
           location: {
             name: 'North Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=North%20Minneapolis%20Minneapolis',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-8',
@@ -2740,20 +2643,20 @@ export const minneapolis: CityData = {
             {
               title: 'North Country: The Making of Minnesota',
               publisher: 'University of Minnesota Press',
-              url: 'https://www.upress.umn.edu/book-division/books/north-country',
-            },
+              url: 'https://www.upress.umn.edu/book-division/books/north-country'
+            }
           ],
           location: {
             name: 'St. Anthony Falls',
       url: 'https://www.google.com/maps/search/?api=1&query=St.%20Anthony%20Falls%20Minneapolis',
             coordinates: { lat: 44.9828, lng: -93.2576 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'history-9',
@@ -2765,15 +2668,15 @@ export const minneapolis: CityData = {
             {
               title: 'Minnesota Archaeology',
               publisher: 'Minnesota Office of the State Archaeologist',
-              url: 'https://mn.gov/admin/archaeologist/',
-            },
+              url: 'https://mn.gov/admin/archaeologist/'
+            }
           ],
           location: {
             name: 'Boom Island Park / Washington Avenue Bridge',
       url: 'https://www.google.com/maps/search/?api=1&query=Boom%20Island%20Park%20%2F%20Washington%20Avenue%20Bridge%20Minneapolis',
             coordinates: { lat: 44.9892, lng: -93.2724 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-10',
@@ -2785,19 +2688,16 @@ export const minneapolis: CityData = {
             {
               title: 'Mill City Museum History',
               publisher: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/millcity/learn/history',
-            },
+              url: 'https://www.mnhs.org/millcity/learn/history'
+            }
           ],
-          image: {
-            src: '/images/history/mill-ruins-1991.jpg',
-            alt: 'Ruins of the flour mill after the 1991 fire',
-                      },
+          
           location: {
             name: 'Mill City Museum',
       url: 'https://www.google.com/maps/search/?api=1&query=Mill%20City%20Museum%20Minneapolis',
             coordinates: { lat: 44.9792, lng: -93.2571 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-11',
@@ -2809,20 +2709,20 @@ export const minneapolis: CityData = {
             {
               title: 'Bassett\'s Creek History',
               publisher: 'Minneapolis Park and Recreation Board',
-              url: 'https://www.minneapolisparks.org/',
-            },
+              url: 'https://www.minneapolisparks.org/'
+            }
           ],
           location: {
             name: "Bassett's Creek (underground)",
             url: 'https://www.google.com/maps/search/?api=1&query=Bassett%27s%20Creek%20Minneapolis',
             coordinates: { lat: 44.9756, lng: -93.2891 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'history-ad-4',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'history-12',
@@ -2834,22 +2734,18 @@ export const minneapolis: CityData = {
             {
               title: 'The Notorious History of Minnehaha Falls',
               publisher: 'MinnPost',
-              url: 'https://www.minnpost.com/mnopedia/2018/06/the-notorious-history-of-minnehaha-falls/',
-            },
+              url: 'https://www.minnpost.com/mnopedia/2018/06/the-notorious-history-of-minnehaha-falls/'
+            }
           ],
-          image: {
-            src: '/images/history/minnehaha-falls-1890s.jpg',
-            alt: 'Minnehaha Falls area with saloons and crowds in the 1890s',
-            year: 'c. 1895',
-          },
+          
           location: {
             name: 'Minnehaha Falls',
       url: 'https://www.google.com/maps/search/?api=1&query=Minnehaha%20Falls%20Minneapolis',
             coordinates: { lat: 44.9153, lng: -93.2110 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         }
-      ],
+      ]
     },
     {
       id: 'mpls-dark-history',
@@ -2871,7 +2767,7 @@ export const minneapolis: CityData = {
             name: '2900 block of Colfax Avenue North, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=2900%20block%20of%20Colfax%20Avenue%20North%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 44.9522, lng: -93.2905 },
+            coordinates: { lat: 44.9522, lng: -93.2905 }
           },
           sources: [
             {
@@ -2880,43 +2776,43 @@ export const minneapolis: CityData = {
               author: 'Jack El-Hai',
               isbn: '9781681341521',
               year: '2016',
-              url: 'https://www.amazon.com/Lost-Brothers-Missing-Minneapolis-Minneapolis/dp/1681341522',
+              url: 'https://www.amazon.com/Lost-Brothers-Missing-Minneapolis-Minneapolis/dp/1681341522'
             },
             {
               type: 'article',
               title: 'The Klein Brothers: 70 Years Later, Still Missing',
               publisher: 'Star Tribune',
               year: '2021',
-              url: 'https://www.startribune.com/klein-brothers-disappearance-70-years/600112345/',
+              url: 'https://www.startribune.com/klein-brothers-disappearance-70-years/600112345/'
             },
             {
               type: 'article',
               title: 'Klein Brothers Cold Case: Minnesota\'s Oldest Mystery',
               publisher: 'Racket MN',
               year: '2021',
-              url: 'https://racketmn.com/klein-brothers-missing-minnesota-cold-case',
+              url: 'https://racketmn.com/klein-brothers-missing-minnesota-cold-case'
             },
             {
               type: 'article',
               title: 'The Lost Brothers by Jack El-Hai',
               publisher: 'MSP Magazine',
               year: '2016',
-              url: 'https://mspmag.com/arts-and-culture/the-lost-brothers-jack-el-hai/',
+              url: 'https://mspmag.com/arts-and-culture/the-lost-brothers-jack-el-hai/'
             },
             {
               type: 'podcast',
               title: 'Long Lost: The Klein Brothers',
               show: 'Minnesota Public Radio',
               platform: 'MPR',
-              url: 'https://www.mprnews.org/podcast/long-lost',
-            },
+              url: 'https://www.mprnews.org/podcast/long-lost'
+            }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/klein-brothers-family.png',
-              alt: 'Klein Brothers family photo - Kenneth Jr., David, and Danny',
+              alt: 'Klein Brothers family photo - Kenneth Jr., David, and Danny'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-dark-2',
@@ -2931,7 +2827,7 @@ export const minneapolis: CityData = {
             name: 'Multiple locations along Mississippi River, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20locations%20along%20Mississippi%20River%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 44.9889, lng: -93.2547 },
+            coordinates: { lat: 44.9889, lng: -93.2547 }
           },
           sources: [
             {
@@ -2939,14 +2835,14 @@ export const minneapolis: CityData = {
               title: 'Gruesome Details in Minneapolis Dismemberment Case',
               publisher: 'KARE11',
               
-              url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff',
+              url: 'https://www.kare11.com/article/news/crime/gruesome-new-details-in-minneapolis-dismemberment-case-as-family-pleads-for-tips/89-918b9187-d5cb-4952-8e37-e42089f40eff'
             },
             {
               type: 'article',
               title: 'Adam Johnson Murder: Still Unsolved',
               publisher: 'Star Tribune',
               year: '2022',
-              url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/',
+              url: 'https://www.startribune.com/adam-johnson-murder-unsolved/600187654/'
             },
             {
               type: 'article',
@@ -2954,23 +2850,17 @@ export const minneapolis: CityData = {
               publisher: 'Medium',
               author: 'Cat Leigh',
               year: '2021',
-              url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5',
+              url: 'https://medium.com/true-crime-by-cat-leigh/severed-head-with-perv-carved-into-forehead-left-on-busy-park-bench-75157422beb5'
             },
             {
               type: 'article',
               title: 'Minneapolis Police Seek Help in Adam Johnson Case',
               publisher: 'Fox 9',
               year: '2021',
-              url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder',
-            },
-          ],
-          images: [
-            {
-              src: '/minneapolis/dark-history/adam%20johnson.png',
-              alt: 'Adam Richard Johnson',
+              url: 'https://www.fox9.com/news/minneapolis-police-seek-help-adam-johnson-murder'
             }
-          ],
-        },
+          ]
+          },
         {
           id: 'mpls-dark-4',
           type: 'dark-history',
@@ -2982,7 +2872,7 @@ export const minneapolis: CityData = {
             name: 'South Minneapolis apartment building',
       url: 'https://www.google.com/maps/search/?api=1&query=South%20Minneapolis%20apartment%20building%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 44.9402, lng: -93.2678 },
+            coordinates: { lat: 44.9402, lng: -93.2678 }
           },
           sources: [
             {
@@ -2990,50 +2880,50 @@ export const minneapolis: CityData = {
               title: 'How DNA Broke Open the Cold Case',
               publisher: 'CBS News',
               year: '2023',
-              url: 'https://www.cbsnews.com/minnesota/news/jeanie-childs-minneapolis-cold-case-solved-footprint-to-murder/',
+              url: 'https://www.cbsnews.com/minnesota/news/jeanie-childs-minneapolis-cold-case-solved-footprint-to-murder/'
             },
             {
               type: 'article',
               title: 'Jerry Westrom Found Guilty of First and Second Degree Murder',
               publisher: 'KARE 11',
               year: '2023',
-              url: 'https://www.kare11.com/article/news/crime/jerry-westrom-found-guilty-of-1st-2nd-degree-murder/89-37eb1ac1-7540-4cf0-b1b7-4ff7d37f34e4',
+              url: 'https://www.kare11.com/article/news/crime/jerry-westrom-found-guilty-of-1st-2nd-degree-murder/89-37eb1ac1-7540-4cf0-b1b7-4ff7d37f34e4'
             },
             {
               type: 'article',
               title: 'Jerry Westrom Guilty in Jeanne Childs 1993 Cold Case Murder',
               publisher: 'Oxygen True Crime',
               year: '2023',
-              url: 'https://www.oxygen.com/crime-news/jerry-westrom-guilty-jeanne-childs-1993-cold-case-murder',
+              url: 'https://www.oxygen.com/crime-news/jerry-westrom-guilty-jeanne-childs-1993-cold-case-murder'
             },
             {
               type: 'article',
               title: 'Man Convicted of 1993 Cold Case Murder After DNA Match',
               publisher: 'Investigation Discovery',
               year: '2023',
-              url: 'https://www.investigationdiscovery.com/crimefeed/murder/man-convicted-of-1993-cold-case-murder-of-woman-stabbed-65-times-in-her-minnesota-apartment',
+              url: 'https://www.investigationdiscovery.com/crimefeed/murder/man-convicted-of-1993-cold-case-murder-of-woman-stabbed-65-times-in-her-minnesota-apartment'
             },
             {
               type: 'article',
               title: 'Minnesota Supreme Court Decision: State v. Westrom',
               publisher: 'Minnesota Supreme Court',
               year: '2024',
-              url: 'https://law.justia.com/cases/minnesota/supreme-court/2024/a22-1679.html',
+              url: 'https://law.justia.com/cases/minnesota/supreme-court/2024/a22-1679.html'
             },
             {
               type: 'documentary',
               title: 'Bloody Footprints: The Jeanie Childs Case',
               platform: 'CBS 48 Hours',
               year: '2023',
-              url: 'https://www.cbsnews.com/news/jeanie-childs-jerry-westrom-minneapolis-cold-case-murder/',
-            },
+              url: 'https://www.cbsnews.com/news/jeanie-childs-jerry-westrom-minneapolis-cold-case-murder/'
+            }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/childs.png',
-              alt: 'Jeanie Childs cold case investigation',
+              alt: 'Jeanie Childs cold case investigation'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-dark-3',
@@ -3046,7 +2936,7 @@ export const minneapolis: CityData = {
             name: 'Northlynn Apartments, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Northlynn%20Apartments%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 45.0042, lng: -93.2640 },
+            coordinates: { lat: 45.0042, lng: -93.2640 }
           },
           sources: [
             {
@@ -3054,39 +2944,39 @@ export const minneapolis: CityData = {
               title: 'Several Suspects Questioned But Police Can\'t Solve 1984 Murder',
               publisher: 'Duluth News Tribune',
               year: '2020',
-              url: 'https://www.duluthnewstribune.com/news/the-vault/several-suspects-questioned-but-police-cant-solve-1984-murder-of-former-moorhead-woman',
+              url: 'https://www.duluthnewstribune.com/news/the-vault/several-suspects-questioned-but-police-cant-solve-1984-murder-of-former-moorhead-woman'
             },
             {
               type: 'article',
               title: 'Killer\'s Profile Emerges in Minnesota Woman\'s Unsolved Murder',
               publisher: 'Post Bulletin',
               year: '2019',
-              url: 'https://www.postbulletin.com/news/the-vault/killers-profile-emerges-in-minnesota-womans-unsolved-murder',
+              url: 'https://www.postbulletin.com/news/the-vault/killers-profile-emerges-in-minnesota-womans-unsolved-murder'
             },
             {
               type: 'article',
               title: 'Cindy Gerdes Cold Case',
               publisher: 'Minnesota Bureau of Criminal Apprehension',
-              url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx',
+              url: 'https://dps.mn.gov/divisions/bca/bca-divisions/investigations/cold-case/Pages/default.aspx'
             },
             {
               type: 'article',
               title: 'The Murder That Haunted a Police Chief',
               publisher: 'Star Tribune',
               year: '2023',
-              url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/',
-            },
+              url: 'https://www.startribune.com/cindy-gerdes-murder-unsolved/600267890/'
+            }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/cindy-gerdes-1.png',
-              alt: 'Cindy Gerdes cold case investigation',
+              alt: 'Cindy Gerdes cold case investigation'
             },
             {
               src: '/minneapolis/dark-history/cindy-gerdes-2.png',
-              alt: 'Cindy Gerdes memorial',
+              alt: 'Cindy Gerdes memorial'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-dark-5',
@@ -3099,55 +2989,55 @@ export const minneapolis: CityData = {
             name: 'I-35W Bridge over Mississippi River, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=I-35W%20Bridge%20over%20Mississippi%20River%2C%20Minneapolis%20Minneapolis',
             stillExists: false,
-            coordinates: { lat: 44.9778, lng: -93.2467 },
+            coordinates: { lat: 44.9778, lng: -93.2467 }
           },
           sources: [
             {
               type: 'article',
               title: 'I-35W Bridge Collapse',
               publisher: 'Minnesota Historical Society',
-              url: 'https://www.mnhs.org/mnopedia/search/index/i-35w-bridge-collapse',
+              url: 'https://www.mnhs.org/mnopedia/search/index/i-35w-bridge-collapse'
             },
             {
               type: 'article',
               title: 'Remembering the I-35W Bridge Collapse',
               publisher: 'Star Tribune',
               year: '2017',
-              url: 'https://www.startribune.com/10-years-after-the-35w-bridge-collapse/435838933/',
+              url: 'https://www.startribune.com/10-years-after-the-35w-bridge-collapse/435838933/'
             },
             {
               type: 'report',
               title: 'NTSB Highway Accident Report',
               publisher: 'National Transportation Safety Board',
               year: '2008',
-              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR0803.pdf',
+              url: 'https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR0803.pdf'
             },
             {
               type: 'article',
               title: 'The Bridge Collapse That Changed American Infrastructure',
               publisher: 'NPR',
               year: '2017',
-              url: 'https://www.npr.org/2017/08/01/540669701/10-years-after-bridge-collapse-america-is-still-crumbling',
+              url: 'https://www.npr.org/2017/08/01/540669701/10-years-after-bridge-collapse-america-is-still-crumbling'
             }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/bridge-1.png',
-              alt: 'I-35W bridge collapse scene - August 1, 2007',
+              alt: 'I-35W bridge collapse scene - August 1, 2007'
             },
             {
               src: '/minneapolis/dark-history/bridge-2.png',
-              alt: 'I-35W bridge collapse rescue operations',
+              alt: 'I-35W bridge collapse rescue operations'
             },
             {
               src: '/minneapolis/dark-history/bridge-3.png',
-              alt: 'I-35W bridge wreckage in Mississippi River',
+              alt: 'I-35W bridge wreckage in Mississippi River'
             },
             {
               src: '/minneapolis/dark-history/bridge-4.png',
-              alt: 'I-35W bridge collapse aerial view',
+              alt: 'I-35W bridge collapse aerial view'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-dark-6',
@@ -3162,7 +3052,7 @@ export const minneapolis: CityData = {
             name: '38th Street and Chicago Avenue, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=38th%20Street%20and%20Chicago%20Avenue%2C%20Minneapolis%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 44.9341, lng: -93.2617 },
+            coordinates: { lat: 44.9341, lng: -93.2617 }
           },
           sources: [
             {
@@ -3170,48 +3060,48 @@ export const minneapolis: CityData = {
               title: 'George Floyd Square: What Happened to the Intersection',
               publisher: 'New York Times',
               year: '2021',
-              url: 'https://www.nytimes.com/2021/05/25/us/george-floyd-square.html',
+              url: 'https://www.nytimes.com/2021/05/25/us/george-floyd-square.html'
             },
             {
               type: 'article',
               title: 'The Uncomfortable Question of What to Do With George Floyd Square',
               publisher: 'Star Tribune',
               year: '2022',
-              url: 'https://www.startribune.com/what-happens-to-george-floyd-square/600156432/',
+              url: 'https://www.startribune.com/what-happens-to-george-floyd-square/600156432/'
             },
             {
               type: 'article',
               title: 'Minneapolis Reopens George Floyd Square to Traffic',
               publisher: 'MPR News',
               year: '2021',
-              url: 'https://www.mprnews.org/story/2021/06/03/minneapolis-reopens-george-floyd-square-to-traffic',
+              url: 'https://www.mprnews.org/story/2021/06/03/minneapolis-reopens-george-floyd-square-to-traffic'
             },
             {
               type: 'article',
               title: 'Darnella Frazier, Who Filmed Floyd\'s Murder, Awarded Pulitzer',
               publisher: 'NPR',
               year: '2021',
-              url: 'https://www.npr.org/2021/06/11/1005601724/darnella-frazier-teen-who-filmed-george-floyds-murder-wins-pulitzer-prize-citat',
+              url: 'https://www.npr.org/2021/06/11/1005601724/darnella-frazier-teen-who-filmed-george-floyds-murder-wins-pulitzer-prize-citat'
             }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/floyd-1.png',
-              alt: 'George Floyd Square memorial with steel fist sculpture',
+              alt: 'George Floyd Square memorial with steel fist sculpture'
             },
             {
               src: '/minneapolis/dark-history/floyd-2.png',
-              alt: 'George Floyd Square murals and memorials',
+              alt: 'George Floyd Square murals and memorials'
             },
             {
               src: '/minneapolis/dark-history/floyd-3.png',
-              alt: 'George Floyd Square community gathering',
+              alt: 'George Floyd Square community gathering'
             },
             {
               src: '/minneapolis/dark-history/floyd-4.png',
-              alt: '38th and Chicago - the intersection that changed America',
+              alt: '38th and Chicago - the intersection that changed America'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-dark-7',
@@ -3224,7 +3114,7 @@ export const minneapolis: CityData = {
             name: 'Brooklyn Park, Columbus Township, Golden Valley',
       url: 'https://www.google.com/maps/search/?api=1&query=Brooklyn%20Park%2C%20Columbus%20Township%2C%20Golden%20Valley%20Minneapolis',
             stillExists: true,
-            coordinates: { lat: 45.0594, lng: -93.3563 },
+            coordinates: { lat: 45.0594, lng: -93.3563 }
           },
           sources: [
             {
@@ -3232,35 +3122,35 @@ export const minneapolis: CityData = {
               title: 'She Was Found on the Side of a Suburban Road, Murdered. Then Her Case Went Cold.',
               publisher: 'Brainerd Dispatch',
               year: '2024',
-              url: 'https://www.brainerddispatch.com/news/the-vault/she-was-found-on-the-side-of-a-suburban-road-murdered-then-her-case-went-cold',
+              url: 'https://www.brainerddispatch.com/news/the-vault/she-was-found-on-the-side-of-a-suburban-road-murdered-then-her-case-went-cold'
             },
             {
               type: 'article',
               title: 'Armongene Mason Cold Case',
               publisher: 'Anoka County Sheriff\'s Office',
-              url: 'https://www.anokacountymn.gov/1614/Cold-Case-Homicides',
+              url: 'https://www.anokacountymn.gov/1614/Cold-Case-Homicides'
             },
             {
               type: 'other',
               title: 'Minnesota Unsolved Cases Database',
               publisher: 'Minnesota Department of Public Safety',
-              url: 'https://portal.dps.mn.gov/bca/unsolved-cases/Pages/gallery.aspx',
+              url: 'https://portal.dps.mn.gov/bca/unsolved-cases/Pages/gallery.aspx'
             },
             {
               type: 'article',
               title: 'Three Black Women Found Dead in Two Weeks',
-              publisher: 'Star Tribune Archives',
+              publisher: 'Star Tribune Archives'
               
             }
           ],
           images: [
             {
               src: '/minneapolis/dark-history/three-victims.png',
-              alt: 'Tahrita McKinnies, Armongene Mason, and Felicia Fonda Williams - three victims, 1987',
+              alt: 'Tahrita McKinnies, Armongene Mason, and Felicia Fonda Williams - three victims, 1987'
             }
-          ],
+          ]
         }
-      ],
+      ]
     },
     {
       id: 'mpls-lost-and-loved',
@@ -3285,23 +3175,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/nyes-polonaise.png',
-              alt: "Nye's Polonaise Room exterior and interior",
+              alt: "Nye's Polonaise Room exterior and interior"
             }
           ],
           sources: [
             {
               title: 'Star Tribune: Bye-bye to Nye\'s',
-              url: 'https://www.startribune.com/bye-bye-to-nye-s-the-last-place-where-everyone-fits-in/372488121',
+              url: 'https://www.startribune.com/bye-bye-to-nye-s-the-last-place-where-everyone-fits-in/372488121'
             },
             {
               title: 'MPR News: Saying Goodbye to Nye\'s',
-              url: 'https://www.mprnews.org/story/2016/07/15/nyes-polonaise-closes',
+              url: 'https://www.mprnews.org/story/2016/07/15/nyes-polonaise-closes'
             },
             {
               title: 'Minnesota Then: Nye\'s Polonaise Room',
-              url: 'https://mnthen.com/blog/place/nyes.html',
+              url: 'https://mnthen.com/blog/place/nyes.html'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-7',
@@ -3317,23 +3207,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-peters.png',
-              alt: "Peter's Grill lunch counter interior",
+              alt: "Peter's Grill lunch counter interior"
             }
           ],
           sources: [
             {
               title: 'Star Tribune: A Final Piece of Pie from Peter\'s Grill',
-              url: 'https://www.startribune.com/a-final-piece-of-pie-from-peter-s-grill-in-downtown-minneapolis/213609451',
+              url: 'https://www.startribune.com/a-final-piece-of-pie-from-peter-s-grill-in-downtown-minneapolis/213609451'
             },
             {
               title: 'Star Tribune: Taste of the Past Inside Peter\'s Grill',
-              url: 'https://m.startribune.com/taste-of-the-past-inside-peter-s-grill/80738827/',
+              url: 'https://m.startribune.com/taste-of-the-past-inside-peter-s-grill/80738827/'
             },
             {
               title: 'Hennepin County Library: Peter\'s Grill History',
-              url: 'https://hclib.tumblr.com/post/54084711992/peters-grill-a-downtown-landmark-since-1914',
+              url: 'https://hclib.tumblr.com/post/54084711992/peters-grill-a-downtown-landmark-since-1914'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-3',
@@ -3349,28 +3239,28 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-triple-rock.png',
-              alt: 'Triple Rock Social Club exterior and interior',
+              alt: 'Triple Rock Social Club exterior and interior'
             }
           ],
           sources: [
             {
               title: 'Vice: The End of the Triple Rock',
-              url: 'https://www.vice.com/en/article/the-end-of-the-triple-rock-social-club-minneapolis-most-important-punk-bar/',
+              url: 'https://www.vice.com/en/article/the-end-of-the-triple-rock-social-club-minneapolis-most-important-punk-bar/'
             },
             {
               title: 'Wikipedia: Triple Rock Social Club',
-              url: 'https://en.wikipedia.org/wiki/Triple_Rock_Social_Club',
+              url: 'https://en.wikipedia.org/wiki/Triple_Rock_Social_Club'
             },
             {
               title: 'The Current: Triple Rock Sign Moves to Vegas',
-              url: 'https://www.thecurrent.org/feature/2023/03/28/the-triple-rock-social-club-sign-has-moved-to-las-vegas',
+              url: 'https://www.thecurrent.org/feature/2023/03/28/the-triple-rock-social-club-sign-has-moved-to-las-vegas'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'mpls-lost-10',
@@ -3386,23 +3276,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/annies.png',
-              alt: "Annie's Parlour",
+              alt: "Annie's Parlour"
             },
             {
               src: '/minneapolis/lost-and-loved/new-Annies.png',
-              alt: "Annie's Parlour exterior and interior",
+              alt: "Annie's Parlour exterior and interior"
             }
           ],
           sources: [
             {
               title: 'Bring Me The News: Annie\'s Parlour Reopens',
-              url: 'https://bringmethenews.com/minnesota-lifestyle/annies-parlour-in-minneapolis-dinkytown-reopens',
+              url: 'https://bringmethenews.com/minnesota-lifestyle/annies-parlour-in-minneapolis-dinkytown-reopens'
             },
             {
               title: 'Explore Minnesota: Annie\'s Parlour',
-              url: 'https://www.exploreminnesota.com/profile/annies-parlour/4127',
+              url: 'https://www.exploreminnesota.com/profile/annies-parlour/4127'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-12',
@@ -3418,27 +3308,27 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-palmers.png',
-              alt: "Palmer's Bar exterior and interior",
+              alt: "Palmer's Bar exterior and interior"
             }
           ],
           sources: [
             {
               title: 'Racket: Goodbye to Palmer\'s',
-              url: 'https://racketmn.com/goodbye-to-palmers-a-requiem-for-minneapoliss-weirdest-and-wonderfullest-bar',
+              url: 'https://racketmn.com/goodbye-to-palmers-a-requiem-for-minneapoliss-weirdest-and-wonderfullest-bar'
             },
             {
               title: 'Minnesota Monthly: Palmer\'s Bar Is Still Standing',
-              url: 'https://www.minnesotamonthly.com/food-drink/sorry-were-open-palmers-bar-is-still-standing/',
+              url: 'https://www.minnesotamonthly.com/food-drink/sorry-were-open-palmers-bar-is-still-standing/'
             },
             {
               title: 'The Current: Bonnie Raitt at Palmer\'s Bar',
-              url: 'https://www.thecurrent.org/feature/2019/07/24/the-current-rewind-bonnie-raitt-palmers-bar',
+              url: 'https://www.thecurrent.org/feature/2019/07/24/the-current-rewind-bonnie-raitt-palmers-bar'
             },
             {
               title: 'Wikipedia: Palmer\'s Bar',
-              url: 'https://en.wikipedia.org/wiki/Palmer%27s_Bar',
+              url: 'https://en.wikipedia.org/wiki/Palmer%27s_Bar'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-4',
@@ -3454,24 +3344,24 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-figlio.png',
-              alt: 'Figlio restaurant exterior and dining room',
+              alt: 'Figlio restaurant exterior and dining room'
             }
           ],
           sources: [
             {
               title: 'Mpls.St.Paul Magazine: Does Figlio Still Haunt Uptown?',
-              url: 'https://mspmag.com/eat-and-drink/does-figlio-still-haunt-uptown/',
+              url: 'https://mspmag.com/eat-and-drink/does-figlio-still-haunt-uptown/'
             },
             {
               title: 'Star Tribune: Figlio Resurfaces at the West End',
-              url: 'https://www.startribune.com/figlio-uptown-s-shuttered-stalwart-resurfaces-at-the-west-end/188121501',
+              url: 'https://www.startribune.com/figlio-uptown-s-shuttered-stalwart-resurfaces-at-the-west-end/188121501'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'mpls-lost-11',
@@ -3487,23 +3377,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-revival.png',
-              alt: 'Revival restaurant interior',
+              alt: 'Revival restaurant interior'
             }
           ],
           sources: [
             {
               title: 'Mpls.St.Paul Magazine: Revival Makes a Comeback',
-              url: 'https://mspmag.com/eat-and-drink/foodie/revival-makes-a-comeback-under-new-ownership/',
+              url: 'https://mspmag.com/eat-and-drink/foodie/revival-makes-a-comeback-under-new-ownership/'
             },
             {
               title: 'Bring Me The News: Revival Revived',
-              url: 'https://bringmethenews.com/minnesota-lifestyle/revival-revived-after-brand-is-bought-by-twin-cities-restaurant-group',
+              url: 'https://bringmethenews.com/minnesota-lifestyle/revival-revived-after-brand-is-bought-by-twin-cities-restaurant-group'
             },
             {
               title: 'Roadfood: Revival',
-              url: 'https://roadfood.com/restaurants/revival/',
+              url: 'https://roadfood.com/restaurants/revival/'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-6',
@@ -3519,23 +3409,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-lucias.png',
-              alt: "Lucia's restaurant exterior and dining room",
+              alt: "Lucia's restaurant exterior and dining room"
             }
           ],
           sources: [
             {
               title: 'Star Tribune: Lucia\'s Restaurant to Close',
-              url: 'https://www.startribune.com/lucia-s-restaurant-an-uptown-dining-landmark-to-close/449109823',
+              url: 'https://www.startribune.com/lucia-s-restaurant-an-uptown-dining-landmark-to-close/449109823'
             },
             {
               title: 'Minnesota Monthly: Lucia\'s',
-              url: 'https://www.minnesotamonthly.com/featured/lucias/',
+              url: 'https://www.minnesotamonthly.com/featured/lucias/'
             },
             {
               title: 'Meet Minneapolis: Ann Kim to Open in Lucia\'s Space',
-              url: 'https://www.minneapolis.org/media/news-releases/ann-kim-and-conrad-leifur-announce-plans-for-a-new-restaurant-in-the-lucias-restaurant-space-in-uptown/',
+              url: 'https://www.minneapolis.org/media/news-releases/ann-kim-and-conrad-leifur-announce-plans-for-a-new-restaurant-in-the-lucias-restaurant-space-in-uptown/'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-2',
@@ -3551,28 +3441,28 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/psycho-suzis.png',
-              alt: "Psycho Suzi's Motor Lounge tiki bar and patio",
+              alt: "Psycho Suzi's Motor Lounge tiki bar and patio"
             }
           ],
           sources: [
             {
               title: 'Star Tribune: Psycho Suzi\'s Closing',
-              url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/',
+              url: 'https://www.startribune.com/psycho-suzis-motor-lounge-closes-minneapolis-tiki-bar/600312456/'
             },
             {
               title: 'Ultimate Mai Tai: Farewell Psycho Suzi\'s',
-              url: 'https://ultimatemaitai.com/2023/08/10/farewell-psycho-suzis-motor-lounge/',
+              url: 'https://ultimatemaitai.com/2023/08/10/farewell-psycho-suzis-motor-lounge/'
             },
             {
               title: 'MyTiki: Psycho Suzi\'s Motor Lounge',
-              url: 'https://mytiki.life/tiki-bars/psycho-suzis-motor-lounge-1',
+              url: 'https://mytiki.life/tiki-bars/psycho-suzis-motor-lounge-1'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'mpls-lost-5',
@@ -3588,23 +3478,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-birchwood.png',
-              alt: 'Birchwood Cafe exterior and interior',
+              alt: 'Birchwood Cafe exterior and interior'
             }
           ],
           sources: [
             {
               title: 'Andrew Zimmern: Seward\'s Iconic Birchwood Cafe',
-              url: 'https://andrewzimmern.com/sewards-iconic-birchwood-cafe/',
+              url: 'https://andrewzimmern.com/sewards-iconic-birchwood-cafe/'
             },
             {
               title: 'Star Tribune: Darling Opens in Former Birchwood',
-              url: 'https://www.startribune.com/darling-now-open-former-birchwood-cafe-minneapolis-prince-chefs/600376283',
+              url: 'https://www.startribune.com/darling-now-open-former-birchwood-cafe-minneapolis-prince-chefs/600376283'
             },
             {
               title: 'Bring Me The News: Birchwood Cafe for Sale',
-              url: 'https://bringmethenews.com/minnesota-lifestyle/gallery-minneapolis-birchwood-cafe-for-sale-for-2-million',
+              url: 'https://bringmethenews.com/minnesota-lifestyle/gallery-minneapolis-birchwood-cafe-for-sale-for-2-million'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-8',
@@ -3620,23 +3510,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-galatic.png',
-              alt: 'Galactic Pizza exterior and interior',
+              alt: 'Galactic Pizza exterior and interior'
             }
           ],
           sources: [
             {
               title: 'Fox 9: Galactic Pizza Announces Closure',
-              url: 'https://www.fox9.com/news/galactic-pizza-announces-closure',
+              url: 'https://www.fox9.com/news/galactic-pizza-announces-closure'
             },
             {
               title: 'KARE 11: Galactic Pizza Closes in Uptown',
-              url: 'https://www.kare11.com/article/news/local/galactic-pizza-closes-uptown-minneapolis/89-0c648ca2-d179-42d1-a83d-53fa1622b00e',
+              url: 'https://www.kare11.com/article/news/local/galactic-pizza-closes-uptown-minneapolis/89-0c648ca2-d179-42d1-a83d-53fa1622b00e'
             },
             {
               title: 'Tasting Table: Galactic Pizza\'s Superhero Deliverymen',
-              url: 'https://www.tastingtable.com/682499/galactic-pizza-in-minneapolis-mn-has-superhero-deliverymen/',
+              url: 'https://www.tastingtable.com/682499/galactic-pizza-in-minneapolis-mn-has-superhero-deliverymen/'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-13',
@@ -3652,27 +3542,27 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/town-talk.png',
-              alt: 'Town Talk Diner',
+              alt: 'Town Talk Diner'
             },
             {
               src: '/minneapolis/lost-and-loved/new-Town-talk.png',
-              alt: 'Town Talk Diner exterior',
+              alt: 'Town Talk Diner exterior'
             }
           ],
           sources: [
             {
               title: 'City of Minneapolis: Town Talk Diner Landmark',
-              url: 'https://www.minneapolismn.gov/resident-services/property-housing/preservation/landmarks-districts/landmarks/town-talk-diner/',
+              url: 'https://www.minneapolismn.gov/resident-services/property-housing/preservation/landmarks-districts/landmarks/town-talk-diner/'
             },
             {
               title: 'Food Network: Town Talk Diner',
-              url: 'https://www.foodnetwork.com/restaurants/mn/minneapolis/town-talk-diner-restaurant',
+              url: 'https://www.foodnetwork.com/restaurants/mn/minneapolis/town-talk-diner-restaurant'
             },
             {
               title: 'Library of Congress: Town Talk Diner Photo',
-              url: 'https://www.loc.gov/item/2017702240/',
+              url: 'https://www.loc.gov/item/2017702240/'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-9',
@@ -3688,23 +3578,23 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-brenda.png',
-              alt: 'Cafe Brenda bar and dining room interior',
+              alt: 'Cafe Brenda bar and dining room interior'
             }
           ],
           sources: [
             {
               title: 'Star Tribune: Langton to Close Cafe Brenda After 23 Years',
-              url: 'https://www.startribune.com/langton-to-close-cafe-brenda-after-23-years/70541792',
+              url: 'https://www.startribune.com/langton-to-close-cafe-brenda-after-23-years/70541792'
             },
             {
               title: 'Heavy Table: Cafe Brenda Closes',
-              url: 'https://heavytable.com/cafe-brenda-closes/',
+              url: 'https://heavytable.com/cafe-brenda-closes/'
             },
             {
               title: 'Star Tribune: Spoonriver Restaurant Closing',
-              url: 'https://www.startribune.com/spoonriver-restaurant-closing-after-14-year-run/565352512',
+              url: 'https://www.startribune.com/spoonriver-restaurant-closing-after-14-year-run/565352512'
             }
-          ],
+          ]
         },
         {
           id: 'mpls-lost-14',
@@ -3721,17 +3611,17 @@ export const minneapolis: CityData = {
           images: [
             {
               src: '/minneapolis/lost-and-loved/new-log.png',
-              alt: 'Old Log Theater rustic log cabin exterior',
+              alt: 'Old Log Theater rustic log cabin exterior'
             }
           ],
           sources: [
             {
               title: 'Old Log Theater',
-              url: 'https://www.oldlog.com/',
+              url: 'https://www.oldlog.com/'
             }
-          ],
-        },
-      ],
+          ]
+        }
+      ]
     },
     {
       id: 'mpls-scenes',
@@ -3751,8 +3641,8 @@ export const minneapolis: CityData = {
             poster: '',
             alt: 'Aerial drone footage of illuminated Minneapolis downtown at night',
             caption: 'Minneapolis skyline after dark — drone footage',
-            duration: '0:14',
-          },
+            duration: '0:14'
+          }
         },
         {
           id: 'scene-skyline-2',
@@ -3766,8 +3656,8 @@ export const minneapolis: CityData = {
             poster: '',
             alt: 'Stone Arch Bridge spanning the Mississippi River in winter',
             caption: 'Stone Arch Bridge — Minneapolis\'s most iconic landmark',
-            duration: '0:19',
-          },
+            duration: '0:19'
+          }
         },
         // WATER - Lakes and river scenes
         {
@@ -3781,9 +3671,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis Chain of Lakes photo from Meet Minneapolis or local photographer
               src: '',
               alt: 'Peaceful lake water under blue skies with green trees along shore',
-              caption: 'The Chain of Lakes — Minneapolis\'s urban oasis',
+              caption: 'The Chain of Lakes — Minneapolis\'s urban oasis'
             }
-          ],
+          ]
         },
         {
           id: 'scene-water-2',
@@ -3797,8 +3687,8 @@ export const minneapolis: CityData = {
             poster: '',
             alt: 'Waterfall cascading over rocks with forest surroundings',
             caption: 'St. Anthony Falls — the waterfall that powered Minneapolis',
-            duration: '0:11',
-          },
+            duration: '0:11'
+          }
         },
         // NATURE - Parks and green spaces
         {
@@ -3813,8 +3703,8 @@ export const minneapolis: CityData = {
             poster: '',
             alt: 'Waterfall cascading through forest',
             caption: 'Minnehaha Falls — a 53-foot waterfall in the city',
-            duration: '0:16',
-          },
+            duration: '0:16'
+          }
         },
         {
           id: 'scene-nature-2',
@@ -3827,9 +3717,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis parkway photo
               src: '',
               alt: 'Tree-lined path through urban park with autumn colors',
-              caption: 'Fall along the Grand Rounds parkway system',
+              caption: 'Fall along the Grand Rounds parkway system'
             }
-          ],
+          ]
         },
         // ARCHITECTURE - Historic buildings
         {
@@ -3843,9 +3733,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis City Hall or Foshay Tower photo
               src: '',
               alt: 'Historic architecture and modern skyline at dusk',
-              caption: 'Minneapolis architecture — where history meets modernity',
+              caption: 'Minneapolis architecture — where history meets modernity'
             }
-          ],
+          ]
         },
         {
           id: 'scene-arch-2',
@@ -3858,9 +3748,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Mill City Museum photo from Meet Minneapolis
               src: '',
               alt: 'Historic industrial architecture preserved alongside modern development',
-              caption: 'The Mill District — built on flour and water power',
+              caption: 'The Mill District — built on flour and water power'
             }
-          ],
+          ]
         },
         // INTERIOR - Indoor spaces
         {
@@ -3874,9 +3764,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis Central Library photo
               src: '',
               alt: 'Modern glass architecture with dramatic interior lighting',
-              caption: 'Minneapolis Central Library — César Pelli\'s light-filled design',
+              caption: 'Minneapolis Central Library — César Pelli\'s light-filled design'
             }
-          ],
+          ]
         },
         {
           id: 'scene-interior-2',
@@ -3889,9 +3779,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Orpheum Theatre interior photo
               src: '',
               alt: 'Historic theater interior with ornate architectural details',
-              caption: 'Hennepin Avenue\'s grand theaters',
+              caption: 'Hennepin Avenue\'s grand theaters'
             }
-          ],
+          ]
         },
         // NEIGHBORHOOD - Street scenes
         {
@@ -3905,9 +3795,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Northeast Minneapolis mural or street scene
               src: '',
               alt: 'Urban neighborhood with creative businesses and street art',
-              caption: 'Northeast Minneapolis — arts, murals, and microbreweries',
+              caption: 'Northeast Minneapolis — arts, murals, and microbreweries'
             }
-          ],
+          ]
         },
         {
           id: 'scene-neighborhood-2',
@@ -3920,9 +3810,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Uptown Minneapolis street scene
               src: '',
               alt: 'Bustling urban intersection with shops and pedestrians',
-              caption: 'Uptown Minneapolis — Lake and Hennepin corner',
+              caption: 'Uptown Minneapolis — Lake and Hennepin corner'
             }
-          ],
+          ]
         },
         // ART - Public art and murals
         {
@@ -3936,9 +3826,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Spoonbridge and Cherry photo from Meet Minneapolis
               src: '',
               alt: 'Public sculpture park with contemporary art installations',
-              caption: 'Minneapolis Sculpture Garden — 11 acres of contemporary art',
+              caption: 'Minneapolis Sculpture Garden — 11 acres of contemporary art'
             }
-          ],
+          ]
         },
         {
           id: 'scene-art-2',
@@ -3951,9 +3841,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic George Floyd Square memorial photo
               src: '',
               alt: 'Community memorial and gathering space',
-              caption: 'George Floyd Square — a living memorial at 38th and Chicago',
+              caption: 'George Floyd Square — a living memorial at 38th and Chicago'
             }
-          ],
+          ]
         },
         // SEASONS - Seasonal views
         {
@@ -3967,9 +3857,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis winter scene - frozen lake or skyway
               src: '',
               alt: 'Frozen urban landscape with snow-covered trees and ice',
-              caption: 'Winter on the Chain of Lakes',
+              caption: 'Winter on the Chain of Lakes'
             }
-          ],
+          ]
         },
         {
           id: 'scene-seasons-2',
@@ -3982,9 +3872,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Minneapolis fall foliage photo - parkway or lakes
               src: '',
               alt: 'Autumn trees with vibrant fall colors along tree-lined path',
-              caption: 'Peak fall color along Minneapolis parkways',
+              caption: 'Peak fall color along Minneapolis parkways'
             }
-          ],
+          ]
         },
         // NIGHT - After dark
         {
@@ -3998,9 +3888,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic First Avenue exterior night photo
               src: '',
               alt: 'Iconic nightclub exterior with marquee and city lights',
-              caption: 'First Avenue — where Prince recorded Purple Rain',
+              caption: 'First Avenue — where Prince recorded Purple Rain'
             }
-          ],
+          ]
         },
         {
           id: 'scene-night-2',
@@ -4013,9 +3903,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Hennepin Avenue night scene photo
               src: '',
               alt: 'Urban street at night with theater marquees and city lights',
-              caption: 'Hennepin Avenue — Minneapolis\'s entertainment district',
+              caption: 'Hennepin Avenue — Minneapolis\'s entertainment district'
             }
-          ],
+          ]
         },
         // FOOD - Restaurant and food scenes
         {
@@ -4029,9 +3919,9 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic Midtown Global Market photo
               src: '',
               alt: 'Bustling food market with diverse vendors and communal seating',
-              caption: 'Midtown Global Market — the world under one roof',
+              caption: 'Midtown Global Market — the world under one roof'
             }
-          ],
+          ]
         },
         {
           id: 'scene-food-2',
@@ -4044,11 +3934,11 @@ export const minneapolis: CityData = {
               // TODO: Replace with authentic North Loop restaurant photo
               src: '',
               alt: 'Modern restaurant interior with industrial design elements',
-              caption: 'North Loop restaurants — warehouse chic meets craft cuisine',
+              caption: 'North Loop restaurants — warehouse chic meets craft cuisine'
             }
-          ],
+          ]
         }
-      ],
+      ]
     }
-  ],
+  ]
 }

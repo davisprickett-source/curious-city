@@ -8,7 +8,7 @@ export const raleigh: CityData = {
     {
       id: 'intro-text',
       type: 'text',
-      content: 'Raleigh sits at the heart of the Triangle — a growing city that balances tech ambition with deep roots. Here\'s what\'s catching our attention.',
+      content: 'Raleigh sits at the heart of the Triangle — a growing city that balances tech ambition with deep roots. Here\'s what\'s catching our attention.'
     },
     {
       id: 'featured-card',
@@ -17,12 +17,12 @@ export const raleigh: CityData = {
       description: 'A planned capital still figuring out what it\'s becoming.',
       meta: 'Essay',
       variant: 'featured',
-      href: '/raleigh/essay/invented-before-it-existed',
+      href: '/raleigh/essay/invented-before-it-existed'
     },
     {
       id: 'ad-1',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'this-week',
@@ -33,27 +33,27 @@ export const raleigh: CityData = {
           title: 'Oakwood Cemetery: History Among the Oaks',
           description: 'A walking tour through Raleigh\'s most storied final resting place.',
           meta: 'Guide',
-          href: '/raleigh/oakwood-cemetery-tour',
+          href: '/raleigh/oakwood-cemetery-tour'
         },
         {
           title: 'NC State\'s Hidden Research Gardens',
           description: 'The experimental plots that are shaping Southern agriculture.',
           meta: 'Feature',
-          href: '/raleigh/ncsu-gardens',
+          href: '/raleigh/ncsu-gardens'
         },
         {
           title: 'Downtown Murals Map',
           description: 'Every major piece of public art, with locations and artist info.',
           meta: 'List',
           variant: 'compact',
-          href: '/raleigh/murals',
-        },
-      ],
+          href: '/raleigh/murals'
+        }
+      ]
     },
     {
       id: 'ad-2',
       type: 'ad',
-      size: 'rectangle',
+      size: 'rectangle'
     },
     {
       id: 'quick-reads',
@@ -65,16 +65,16 @@ export const raleigh: CityData = {
           type: 'card',
           title: 'Why Is It Called the Oak City?',
           description: 'The surprising story behind Raleigh\'s nickname.',
-          variant: 'compact',
+          variant: 'compact'
         },
         {
           id: 'quick-2',
           type: 'card',
           title: 'The Krispy Kreme Connection',
           description: 'How North Carolina became the donut capital.',
-          variant: 'compact',
-        },
-      ],
+          variant: 'compact'
+        }
+      ]
     },
     {
       id: 'raleigh-curiosities',
@@ -96,26 +96,26 @@ export const raleigh: CityData = {
                                     {
                                       src: '/raleigh/curiosities/raleigh-bunker-main.webp',
                                       alt: 'The Village Underground entrance designed to look like a NYC subway station',
-                                      credit: 'Historical Photo',
+                                      credit: 'Historical Photo'
                                     },
                                     {
                                       src: '/raleigh/curiosities/raleigh-bunker2.webp',
                                       alt: 'Interior of the Village Underground complex showing shops and passageways',
-                                      credit: 'Historical Photo',
-                                    },
+                                      credit: 'Historical Photo'
+                                    }
                                   ],
                                   sources: [
                                     {
                                       title: 'The Village Subway',
-                                      url: 'https://en.wikipedia.org/wiki/The_Village_Subway',
+                                      url: 'https://en.wikipedia.org/wiki/The_Village_Subway'
                                     },
                                     {
                                       title: 'The Raleigh Underground: A Lost Phenomenon',
-                                      url: 'http://goodnightraleigh.com/2008/07/the-raleigh-underground-a-lost-phenomenon/',
-                                    },
+                                      url: 'http://goodnightraleigh.com/2008/07/the-raleigh-underground-a-lost-phenomenon/'
+                                    }
                                   ],
                                   location: { name: 'Village District (Cameron Village)',
-      url: 'https://www.google.com/maps/search/?api=1&query=Village%20District%20(Cameron%20Village)%20Raleigh', stillExists: false },
+      url: 'https://www.google.com/maps/search/?api=1&query=Village%20District%20(Cameron%20Village)%20Raleigh', stillExists: false }
                                 },
         {
                                   id: 'curiosity-6',
@@ -126,13 +126,13 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/walter-raleigh.webp',
                                     alt: 'Portrait of Sir Walter Raleigh',
-                                    credit: 'Getty Images',
-                                  },
+                                    credit: 'Getty Images'
+                                  }
                                 },
         {
                                   id: 'curiosity-ad-1',
                                   type: 'ad',
-                                  size: 'banner',
+                                  size: 'banner'
                                 },
         {
                           id: 'curiosity-earhart',
@@ -144,21 +144,21 @@ export const raleigh: CityData = {
                             {
                               src: '/raleigh/curiosities/earhart.png',
                               alt: 'Amelia Earhart at Raleigh Municipal Airport in 1931',
-                              credit: 'Historical Photo',
-                            },
+                              credit: 'Historical Photo'
+                            }
                           ],
                           sources: [
                             {
                               title: 'Exploring the Last Remaining Runway of Raleigh Municipal Airport',
-                              url: 'https://www.wral.com/hidden-history-exploring-the-last-remaining-runway-of-raleigh-municipal-airport/19017628/',
+                              url: 'https://www.wral.com/hidden-history-exploring-the-last-remaining-runway-of-raleigh-municipal-airport/19017628/'
                             },
                             {
                               title: 'Amelia Earhart\'s Advice Spurred NC State\'s 1st Female Engineering Grad',
-                              url: 'https://www.wral.com/story/amelia-earhart-s-advice-spurred-nc-state-s-1st-female-engineering-grad/15775707/',
-                            },
+                              url: 'https://www.wral.com/story/amelia-earhart-s-advice-spurred-nc-state-s-1st-female-engineering-grad/15775707/'
+                            }
                           ],
                           location: { name: 'Former Raleigh Municipal Airport site (Tryon Road & Highway 70)',
-      url: 'https://www.google.com/maps/search/?api=1&query=Former%20Raleigh%20Municipal%20Airport%20site%20(Tryon%20Road%20%26%20Highway%2070)%20Raleigh', stillExists: false },
+      url: 'https://www.google.com/maps/search/?api=1&query=Former%20Raleigh%20Municipal%20Airport%20site%20(Tryon%20Road%20%26%20Highway%2070)%20Raleigh', stillExists: false }
                         },
         {
                                   id: 'curiosity-14',
@@ -169,20 +169,20 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/ncstate-steam.png',
                                     alt: 'NC State steam tunnels entrance',
-                                    credit: 'Urban Exploration Photo',
+                                    credit: 'Urban Exploration Photo'
                                   },
                                   sources: [
                                     {
                                       title: 'The Steam Tunnels of NCSU: Part 1',
-                                      url: 'http://goodnightraleigh.com/2008/10/the-steam-tunnels-of-ncsu-part-1/',
+                                      url: 'http://goodnightraleigh.com/2008/10/the-steam-tunnels-of-ncsu-part-1/'
                                     },
                                     {
                                       title: 'Scary Stories to Tell in the Dorm Room: NC State\'s Spookiest Urban Legends',
-                                      url: 'https://www.technicianonline.com/arts_entertainment/scary-stories-to-tell-in-the-dorm-room-nc-state-s-spookiest-urban-legends/article_18367654-1cc4-11eb-993a-6bfa8dbe9fe2.html',
-                                    },
+                                      url: 'https://www.technicianonline.com/arts_entertainment/scary-stories-to-tell-in-the-dorm-room-nc-state-s-spookiest-urban-legends/article_18367654-1cc4-11eb-993a-6bfa8dbe9fe2.html'
+                                    }
                                   ],
                                   location: { name: 'NC State Campus',
-      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Campus%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Campus%20Raleigh', stillExists: true }
                                 },
         {
                                   id: 'curiosity-2',
@@ -196,33 +196,33 @@ export const raleigh: CityData = {
                                     {
                                       src: '/raleigh/curiosities/pigeon-house0-771x513.jpg',
                                       alt: 'The Pigeon House Branch tunnel entrance',
-                                      credit: 'Raleigh Commons',
+                                      credit: 'Raleigh Commons'
                                     },
                                     {
                                       src: '/raleigh/curiosities/raleigh-aqueduct-exploration.jpg',
                                       alt: 'Inside the Pigeon House Branch tunnel system',
-                                      credit: 'ABC11',
-                                    },
+                                      credit: 'ABC11'
+                                    }
                                   ],
                                   sources: [
                                     {
                                       title: 'Uncovering Downtown\'s Forgotten Creek',
-                                      url: 'https://theraleighcommons.org/raleighpublicrecord/opinion/2014/03/03/uncovering-downtowns-forgotten-creek/',
+                                      url: 'https://theraleighcommons.org/raleighpublicrecord/opinion/2014/03/03/uncovering-downtowns-forgotten-creek/'
                                     },
                                     {
                                       title: 'Downtown Raleigh\'s Lost Waterway to be Unearthed',
-                                      url: 'https://www.wral.com/story/downtown-raleigh-s-lost-waterway-to-be-unearthed-after-more-than-100-years-revived-as-boardwalk/21206527/',
+                                      url: 'https://www.wral.com/story/downtown-raleigh-s-lost-waterway-to-be-unearthed-after-more-than-100-years-revived-as-boardwalk/21206527/'
                                     },
                                     {
                                       title: 'We Revisit Downtown Raleigh\'s Hidden Tunnels & Waterway',
-                                      url: 'https://abc11.com/post/we-revisit-downtown-raleighs-hidden-tunnels-waterway/2988847/',
-                                    },
-                                  ],
+                                      url: 'https://abc11.com/post/we-revisit-downtown-raleighs-hidden-tunnels-waterway/2988847/'
+                                    }
+                                  ]
                                 },
         {
                                   id: 'curiosity-ad-2',
                                   type: 'ad',
-                                  size: 'rectangle',
+                                  size: 'rectangle'
                                 },
         {
                                   id: 'curiosity-11',
@@ -233,16 +233,16 @@ export const raleigh: CityData = {
                                                                     images: [
                                     {
                                       src: '/raleigh/curiosities/raleigh-cur-state-fiar.png',
-                                      alt: 'NC State Fair',
+                                      alt: 'NC State Fair'
                                     },
                                     {
                                       src: '/raleigh/curiosities/dorton-arena.png',
-                                      alt: 'Dorton Arena architecture',
-                                    },
+                                      alt: 'Dorton Arena architecture'
+                                    }
                                   ],
                                   source: 'NC State Fair',
                                   location: { name: 'NC State Fairgrounds',
-      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Fairgrounds%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Fairgrounds%20Raleigh', stillExists: true }
                                 },
         {
                                   id: 'curiosity-9',
@@ -253,49 +253,37 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/andrew-johnson-marriage.png',
                                     alt: 'Andrew Johnson and Eliza McCardle wedding illustration',
-                                    credit: 'Historical Illustration',
+                                    credit: 'Historical Illustration'
                                   },
                                   sources: [
                                     {
                                       title: 'Andrew Johnson',
-                                      url: 'https://en.wikipedia.org/wiki/Andrew_Johnson',
+                                      url: 'https://en.wikipedia.org/wiki/Andrew_Johnson'
                                     },
                                     {
                                       title: 'Eliza Johnson | History of American Women',
-                                      url: 'https://www.womenhistoryblog.com/2009/05/eliza-johnson.html',
-                                    },
-                                  ],
-                                },
-        {
-                          id: 'curiosity-pullen',
-                          type: 'curiosity',
-                          category: 'history',
-                          title: 'America\'s 5th-oldest amusement park still runs on a 1911 carousel',
-                          body: 'Pullen Park, established in 1887 when philanthropist Richard Stanhope Pullen donated 80 acres of farmland to Raleigh, was North Carolina\'s first public park. It\'s also the 5th oldest continuously operating amusement park in the United States and the 16th oldest in the world. The park\'s centerpiece—a hand-carved wooden carousel built in 1911—still spins today, alongside a miniature train, pedal boats, and kiddie boats. For 138 years, generations of Raleigh children have ridden the same painted horses their great-grandparents rode. The carousel\'s wooden animals were carved by the Dentzel Company of Philadelphia, and each horse is a work of art. While other cities tore down their carousels or sold them to collectors, Raleigh kept spinning. The park that started as one man\'s gift has outlasted him, his children, and everyone who attended its opening. The horses just keep going round.',
-                                                    images: [
-                            {
-                              src: '/raleigh/curiosities/pullen-park-carousel.png',
-                              alt: 'Pullen Park carousel built in 1911',
-                              credit: 'Raleigh Parks',
-                            },
-                          ],
+                                      url: 'https://www.womenhistoryblog.com/2009/05/eliza-johnson.html'
+                                    }
+                                  ]
+                                }
+        ],
                           sources: [
                             {
                               title: 'Pullen Park',
-                              url: 'https://raleighnc.gov/parks-and-recreation/places/pullen-park',
+                              url: 'https://raleighnc.gov/parks-and-recreation/places/pullen-park'
                             },
                             {
                               title: 'Pullen Park in Raleigh',
-                              url: 'https://www.nctripping.com/pullen-park-raleigh-nc/',
-                            },
+                              url: 'https://www.nctripping.com/pullen-park-raleigh-nc/'
+                            }
                           ],
                           location: { name: 'Pullen Park',
-      url: 'https://www.google.com/maps/search/?api=1&query=Pullen%20Park%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Pullen%20Park%20Raleigh', stillExists: true }
                         },
         {
                                   id: 'curiosity-ad-3',
                                   type: 'ad',
-                                  size: 'banner',
+                                  size: 'banner'
                                 },
         {
                                   id: 'curiosity-4',
@@ -306,11 +294,11 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/upc-image.png',
                                     alt: 'UPC barcode',
-                                    credit: 'IBM Research',
+                                    credit: 'IBM Research'
                                   },
                                   source: 'IBM Research',
                                   location: { name: 'Research Triangle Park',
-      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true }
                                 },
         {
                           id: 'curiosity-astroturf',
@@ -321,20 +309,20 @@ export const raleigh: CityData = {
                                                     image: {
                             src: '/raleigh/curiosities/astroturf.png',
                             alt: 'Early AstroTurf installation',
-                            credit: 'Research Triangle Park',
+                            credit: 'Research Triangle Park'
                           },
                           sources: [
                             {
                               title: 'Research Triangle Park',
-                              url: 'https://www.ncpedia.org/anchor/research-triangle-park',
+                              url: 'https://www.ncpedia.org/anchor/research-triangle-park'
                             },
                             {
                               title: 'What is RTP?',
-                              url: 'https://www.rtp.org/2017/06/what-is-rtp/',
-                            },
+                              url: 'https://www.rtp.org/2017/06/what-is-rtp/'
+                            }
                           ],
                           location: { name: 'Research Triangle Park',
-      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh', stillExists: true }
                         },
         {
                                   id: 'curiosity-5',
@@ -347,15 +335,15 @@ export const raleigh: CityData = {
                                   image: {
                                     src: '/raleigh/curiosities/raleigh-speedway.png',
                                     alt: 'Aerial view of abandoned Raleigh Speedway',
-                                    credit: 'Historical Photo',
+                                    credit: 'Historical Photo'
                                   },
                                   location: { name: 'Near Atlantic Avenue',
-      url: 'https://www.google.com/maps/search/?api=1&query=Near%20Atlantic%20Avenue%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Near%20Atlantic%20Avenue%20Raleigh', stillExists: true }
                                 },
         {
                                   id: 'curiosity-ad-4',
                                   type: 'ad',
-                                  size: 'rectangle',
+                                  size: 'rectangle'
                                 },
         {
                           id: 'curiosity-singing',
@@ -366,18 +354,18 @@ export const raleigh: CityData = {
                                                     image: {
                             src: '/raleigh/curiosities/singing-church.png',
                             alt: '19th century church service illustration',
-                            credit: 'Historical Illustration',
+                            credit: 'Historical Illustration'
                           },
                           sources: [
                             {
                               title: 'I Guess You Could Say He Was Too Sharp',
-                              url: 'https://nowiknow.com/i-guess-you-could-say-he-was-too-sharp/',
+                              url: 'https://nowiknow.com/i-guess-you-could-say-he-was-too-sharp/'
                             },
                             {
                               title: 'Legally Laughable: Weirdest Laws in North Carolina',
-                              url: 'https://cms.smokymountains.com/asheville/blog/legally-laughable-top-11-weirdest-laws-north-carolina/',
-                            },
-                          ],
+                              url: 'https://cms.smokymountains.com/asheville/blog/legally-laughable-top-11-weirdest-laws-north-carolina/'
+                            }
+                          ]
                         },
         {
                                   id: 'curiosity-3',
@@ -388,20 +376,20 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/andrew-johnson.png',
                                     alt: 'Andrew Johnson birthplace at Mordecai Historic Park',
-                                    credit: 'NCpedia',
+                                    credit: 'NCpedia'
                                   },
                                   sources: [
                                     {
                                       title: 'Andrew Johnson Birthplace',
-                                      url: 'https://www.ncpedia.org/andrew-johnson-birthplace',
+                                      url: 'https://www.ncpedia.org/andrew-johnson-birthplace'
                                     },
                                     {
                                       title: 'Andrew Johnson Birthplace, Raleigh, N.C.',
-                                      url: 'http://goodnightraleigh.com/2014/03/andrew-johnson-birthplace-raleigh-n-c/',
-                                    },
+                                      url: 'http://goodnightraleigh.com/2014/03/andrew-johnson-birthplace-raleigh-n-c/'
+                                    }
                                   ],
                                   location: { name: 'Mordecai Historic Park',
-      url: 'https://www.google.com/maps/search/?api=1&query=Mordecai%20Historic%20Park%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Mordecai%20Historic%20Park%20Raleigh', stillExists: true }
                                 },
         {
                                   id: 'curiosity-7',
@@ -412,18 +400,18 @@ export const raleigh: CityData = {
                                                                     image: {
                                     src: '/raleigh/curiosities/raleigh-acorn.jpg',
                                     alt: 'The Great Raleigh Acorn at New Year\'s Eve celebration',
-                                    credit: 'Dreamstime',
+                                    credit: 'Dreamstime'
                                   },
                                   sources: [
                                     {
                                       title: 'New Year\'s Eve Icon: David Benson\'s Great Raleigh Acorn',
-                                      url: 'https://www.visitraleigh.com/plan-a-trip/visitraleigh-insider-blog/post/david-benson-raleigh-acorn-new-years-eve-celebration/',
+                                      url: 'https://www.visitraleigh.com/plan-a-trip/visitraleigh-insider-blog/post/david-benson-raleigh-acorn-new-years-eve-celebration/'
                                     },
                                     {
                                       title: 'The Great Raleigh Acorn Gets Ready for New Year\'s Eve',
-                                      url: 'https://raleighnc.gov/arts/news/great-raleigh-acorn-gets-ready-new-years-eve',
-                                    },
-                                  ],
+                                      url: 'https://raleighnc.gov/arts/news/great-raleigh-acorn-gets-ready-new-years-eve'
+                                    }
+                                  ]
                                 },
         {
                                   id: 'curiosity-15',
@@ -435,21 +423,21 @@ export const raleigh: CityData = {
                                   image: {
                                     src: '/raleigh/curiosities/joel-lane-house.png',
                                     alt: 'Historic Joel Lane House (Bloomsbury)',
-                                    credit: 'Historical Photo',
+                                    credit: 'Historical Photo'
                                   },
                                   sources: [
                                     {
                                       title: 'Joel Lane House',
-                                      url: 'https://www.ncpedia.org/joel-lane-house',
+                                      url: 'https://www.ncpedia.org/joel-lane-house'
                                     },
                                     {
                                       title: 'Lane, Joel',
-                                      url: 'https://www.ncpedia.org/biography/lane-joel',
-                                    },
+                                      url: 'https://www.ncpedia.org/biography/lane-joel'
+                                    }
                                   ],
                                   source: 'Joel Lane House',
                                   location: { name: 'Joel Lane House, Hargett Street',
-      url: 'https://www.google.com/maps/search/?api=1&query=Joel%20Lane%20House%2C%20Hargett%20Street%20Raleigh', stillExists: true },
+      url: 'https://www.google.com/maps/search/?api=1&query=Joel%20Lane%20House%2C%20Hargett%20Street%20Raleigh', stillExists: true }
                                 },
         {
                                   id: 'curiosity-12',
@@ -460,21 +448,21 @@ export const raleigh: CityData = {
                                                                     images: [
                                     {
                                       src: '/raleigh/curiosities/raleigh-cur-grease.png',
-                                      alt: 'Restaurant grease collection container',
+                                      alt: 'Restaurant grease collection container'
                                     },
                                     {
                                       src: '/raleigh/curiosities/grease.png',
                                       alt: 'Restaurant grease collection container',
-                                      credit: 'Photo',
-                                    },
+                                      credit: 'Photo'
+                                    }
                                   ],
                                   sources: [
                                     {
                                       title: 'Don\'t Steal Your Neighborhood Restaurant\'s Kitchen Grease',
-                                      url: 'https://kinglawoffices.com/criminal-disputes/dont-steal-your-neighborhood-restaurants-kitchen-grease/',
-                                    },
+                                      url: 'https://kinglawoffices.com/criminal-disputes/dont-steal-your-neighborhood-restaurants-kitchen-grease/'
+                                    }
                                   ],
-                                  source: 'NC General Statutes',
+                                  source: 'NC General Statutes'
                                 },
         {
                                   id: 'curiosity-13',
@@ -485,21 +473,21 @@ export const raleigh: CityData = {
                                   image: {
                                     src: '/raleigh/curiosities/raleigh-tree-coverage.png',
                                     alt: 'Aerial view of Raleigh showing extensive tree canopy',
-                                    credit: 'Trust for Public Land',
+                                    credit: 'Trust for Public Land'
                                   },
                                   sources: [
                                     {
                                       title: 'Tree Change: Is Raleigh Becoming More Like Baltimore?',
-                                      url: 'https://news.ncsu.edu/2013/12/df-raleigh-baltimore/',
+                                      url: 'https://news.ncsu.edu/2013/12/df-raleigh-baltimore/'
                                     },
                                     {
                                       title: 'Local Advocates Rally to Bring Back Raleigh\'s Declining Tree Canopy',
-                                      url: 'https://nc.audubon.org/news/local-advocates-rally-bring-back-raleigh%E2%80%99s-declining-tree-canopy',
-                                    },
+                                      url: 'https://nc.audubon.org/news/local-advocates-rally-bring-back-raleigh%E2%80%99s-declining-tree-canopy'
+                                    }
                                   ],
-                                  source: 'Trust for Public Land',
-                                },
-      ],
+                                  source: 'Trust for Public Land'
+                                }
+      ]
     },
     {
       id: 'ral-iconic-spots',
@@ -518,9 +506,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/irregardless.png',
-              alt: 'Irregardless Cafe exterior',
-            },
-          ],
+              alt: 'Irregardless Cafe exterior'
+            }
+          ]
         },
         {
           id: 'iconic-2',
@@ -533,14 +521,14 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/boylan.png',
-              alt: 'Boylan Bridge with Raleigh skyline view',
-            },
-          ],
+              alt: 'Boylan Bridge with Raleigh skyline view'
+            }
+          ]
         },
         {
           id: 'iconic-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'iconic-3',
@@ -553,9 +541,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/raulston.png',
-              alt: 'JC Raulston Arboretum gardens',
-            },
-          ],
+              alt: 'JC Raulston Arboretum gardens'
+            }
+          ]
         },
         {
           id: 'iconic-4',
@@ -568,11 +556,11 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/oakwood-cemetery.png',
-              alt: 'Oakwood Cemetery historic grounds',
-            },
-          ],
-        },
-      ],
+              alt: 'Oakwood Cemetery historic grounds'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'ral-hidden-gems',
@@ -599,17 +587,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/obscura-1.png',
-              alt: 'Cloud Chamber for the Trees and Sky exterior',
+              alt: 'Cloud Chamber for the Trees and Sky exterior'
             },
             {
               src: '/raleigh/hidden-gems/obscura-2.png',
-              alt: 'Camera obscura projection inside',
+              alt: 'Camera obscura projection inside'
             },
             {
               src: '/raleigh/hidden-gems/obscura-3.png',
-              alt: 'Hobbit-like structure in museum park',
-            },
-          ],
+              alt: 'Hobbit-like structure in museum park'
+            }
+          ]
         },
         {
           id: 'gem-7',
@@ -629,21 +617,21 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/juniper-1.png',
-              alt: 'Juniper Level Botanic Garden rare plants',
+              alt: 'Juniper Level Botanic Garden rare plants'
             },
             {
               src: '/raleigh/hidden-gems/juniper-2.png',
-              alt: 'Mystic Falls waterfall at Juniper Level',
+              alt: 'Mystic Falls waterfall at Juniper Level'
             },
             {
               src: '/raleigh/hidden-gems/juniper-3.png',
-              alt: 'Botanical garden pathways',
+              alt: 'Botanical garden pathways'
             },
             {
               src: '/raleigh/hidden-gems/juniper-4.png',
-              alt: 'Garden landscape views',
-            },
-          ],
+              alt: 'Garden landscape views'
+            }
+          ]
         },
         {
           id: 'gem-lassiter',
@@ -662,22 +650,18 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-lassiter-1.png',
-              alt: 'Lassiter Mill waterfall cascading over historic dam',
+              alt: 'Lassiter Mill waterfall cascading over historic dam'
             },
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-lassiter-2.png',
-              alt: 'Lassiter Mill waterfall cascading over historic dam',
-            },
-            {
-              src: '/raleigh/hidden-gems/lassiter-1.png',
-              alt: 'Lassiter Mill waterfall cascading over historic dam',
-            },
-          ],
+              alt: 'Lassiter Mill waterfall cascading over historic dam'
+            }
+            ]
         },
         {
           id: 'gem-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-yates',
@@ -697,13 +681,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-yates.png',
-              alt: 'Historic Yates Mill on the millpond',
-            },
-            {
-              src: '/raleigh/hidden-gems/yates-mill-1.png',
-              alt: 'Historic Yates Mill on the millpond',
-            },
-          ],
+              alt: 'Historic Yates Mill on the millpond'
+            }
+            ]
         },
         {
           id: 'gem-10',
@@ -718,13 +698,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/millpond-1.png',
-              alt: 'Robertson Millpond Preserve bald cypress trees',
+              alt: 'Robertson Millpond Preserve bald cypress trees'
             },
             {
               src: '/raleigh/hidden-gems/millpond-2.png',
-              alt: 'Millpond kayaking through cypress forest',
-            },
-          ],
+              alt: 'Millpond kayaking through cypress forest'
+            }
+          ]
         },
         {
           id: 'gem-wral',
@@ -744,22 +724,18 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-azalea-1.png',
-              alt: 'WRAL Azalea Gardens in bloom',
+              alt: 'WRAL Azalea Gardens in bloom'
             },
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-azalea-2.png',
-              alt: 'WRAL Azalea Gardens in bloom',
-            },
-            {
-              src: '/raleigh/hidden-gems/wral-azalea-1.png',
-              alt: 'WRAL Azalea Gardens in bloom',
-            },
-          ],
+              alt: 'WRAL Azalea Gardens in bloom'
+            }
+            ]
         },
         {
           id: 'gem-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-8',
@@ -772,13 +748,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/secret-garden.png',
-              alt: 'Isabelle Bowen Henderson Secret Garden behind ivy curtain',
+              alt: 'Isabelle Bowen Henderson Secret Garden behind ivy curtain'
             },
             {
               src: '/raleigh/hidden-gems/secret-garden-2.png',
-              alt: 'Secret garden pathways and landscaping',
-            },
-          ],
+              alt: 'Secret garden pathways and landscaping'
+            }
+          ]
         },
         {
           id: 'gem-9',
@@ -791,13 +767,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/rose-garden-1.png',
-              alt: 'Raleigh Little Theatre Rose Garden terraced landscape',
+              alt: 'Raleigh Little Theatre Rose Garden terraced landscape'
             },
             {
               src: '/raleigh/hidden-gems/rose-garden-2.png',
-              alt: 'Rose garden with 1,200 roses in bloom',
-            },
-          ],
+              alt: 'Rose garden with 1,200 roses in bloom'
+            }
+          ]
         },
         {
           id: 'gem-schenck',
@@ -814,17 +790,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-alwin-1.png',
-              alt: 'Carl Alwin Schenck Memorial Forest',
+              alt: 'Carl Alwin Schenck Memorial Forest'
             },
             {
               src: '/raleigh/hidden-gems/raleigh-hidden-alwin-2.png',
-              alt: 'Carl Alwin Schenck Memorial Forest',
-            },
-            {
-              src: '/raleigh/hidden-gems/schenck-1.png',
-              alt: 'Carl Alwin Schenck Memorial Forest trails',
-            },
-          ],
+              alt: 'Carl Alwin Schenck Memorial Forest'
+            }
+            ]
         },
         {
           id: 'gem-12',
@@ -837,9 +809,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/survey-stones.png',
-              alt: 'Geodetic Survey Stones arranged in Union Square',
-            },
-          ],
+              alt: 'Geodetic Survey Stones arranged in Union Square'
+            }
+          ]
         },
         {
           id: 'gem-14',
@@ -852,9 +824,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/tower-1.png',
-              alt: 'Historic Raleigh Water Tower from 1886',
-            },
-          ],
+              alt: 'Historic Raleigh Water Tower from 1886'
+            }
+          ]
         },
         {
           id: 'gem-15',
@@ -871,14 +843,14 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/arrow.png',
-              alt: 'Aviation navigation arrow on rooftop',
-            },
-          ],
+              alt: 'Aviation navigation arrow on rooftop'
+            }
+          ]
         },
         {
           id: 'gem-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'gem-4',
@@ -891,9 +863,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/ghost-road.png',
-              alt: 'Old Highway 98 abandoned road disappearing into Falls Lake',
-            },
-          ],
+              alt: 'Old Highway 98 abandoned road disappearing into Falls Lake'
+            }
+          ]
         },
         {
           id: 'gem-16',
@@ -906,9 +878,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/mordecai.png',
-              alt: 'Mordecai Historic Park',
-            },
-          ],
+              alt: 'Mordecai Historic Park'
+            }
+          ]
         },
         {
           id: 'gem-17',
@@ -921,13 +893,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/pope-house-1.png',
-              alt: 'Dr. M.T. Pope House Museum exterior',
+              alt: 'Dr. M.T. Pope House Museum exterior'
             },
             {
               src: '/raleigh/hidden-gems/pope-house-2.png',
-              alt: 'Pope House Museum historic architecture',
-            },
-          ],
+              alt: 'Pope House Museum historic architecture'
+            }
+          ]
         },
         {
           id: 'gem-18',
@@ -940,13 +912,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/harley-1.png',
-              alt: 'Ray Price Harley Museum racing bikes display',
+              alt: 'Ray Price Harley Museum racing bikes display'
             },
             {
               src: '/raleigh/hidden-gems/harley-2.png',
-              alt: 'Racing trophies and memorabilia',
-            },
-          ],
+              alt: 'Racing trophies and memorabilia'
+            }
+          ]
         },
         {
           id: 'gem-22',
@@ -959,18 +931,18 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/hidden-gems/free-expression-1.png',
-              alt: 'Free Expression Tunnel graffiti art',
+              alt: 'Free Expression Tunnel graffiti art'
             },
             {
               src: '/raleigh/hidden-gems/free-expression-2.png',
-              alt: 'Constantly repainted tunnel walls',
-            },
-          ],
+              alt: 'Constantly repainted tunnel walls'
+            }
+          ]
         },
         {
           id: 'gem-ad-4',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'gem-19',
@@ -979,7 +951,7 @@ export const raleigh: CityData = {
           category: 'Haunted & Mysterious',
           description: 'At the rear of Dix Park, away from the sunflower fields and skyline views that draw weekend crowds, lies a small cemetery where approximately 900 patients of the former Dorothea Dix Hospital were buried between 1859 and 1970. The hospital—originally called the "Insane Asylum of North Carolina"—was the state\'s first psychiatric facility, and for over a century, patients who died there were buried in these grounds. Many graves were marked only with numbers, not names. A 2014 restoration project identified and restored 275 gravesites, adding proper markers and a memorial. The cemetery is quiet, shaded, and deeply unsettling in the way that all institutional burial grounds are. Dark History Tours offers occasional guided walks that explore both the cemetery and the broader history of mental health treatment in North Carolina.',
           location: 'Rear of Dix Park (follow signs past the Big Field)',
-          tip: 'Visit at dusk for the most atmospheric experience. Dark History Tours runs occasional themed walks.',
+          tip: 'Visit at dusk for the most atmospheric experience. Dark History Tours runs occasional themed walks.'
         },
         {
           id: 'gem-20',
@@ -988,9 +960,9 @@ export const raleigh: CityData = {
           category: 'Haunted & Mysterious',
           description: 'Tucked away on NC State\'s Centennial Campus, surrounded by research buildings and startup incubators, stands one of the oldest structures in Wake County—and a cemetery whose oldest grave predates Raleigh itself. Theophilus Hunter Sr. was buried here in 1798, sixteen years before the city was even founded. The Spring Hill plantation house, built around 1790, still stands nearby, now serving as a faculty club. But the real draw for ghost hunters is the persistent reports of paranormal activity: motion sensors triggered nightly on the staircase, visitors hearing infant wails with no source, cold spots that defy explanation. NC State maintains the property with academic skepticism, but the legends persist.',
           location: 'NC State Centennial Campus (look for Spring Hill Lane)',
-          tip: 'The cemetery is open to visitors but not well-marked. Look for the small graveyard behind the Spring Hill house.',
-        },
-      ],
+          tip: 'The cemetery is open to visitors but not well-marked. Look for the small graveyard behind the Spring Hill house.'
+        }
+      ]
     },
     {
       id: 'ral-best-bars',
@@ -1014,17 +986,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/bar-foundation-1.png',
-              alt: 'Foundation bar interior with original brickwork',
+              alt: 'Foundation bar interior with original brickwork'
             },
             {
               src: '/raleigh/bars/bar-foundation-2.png',
-              alt: 'Foundation subterranean bar atmosphere',
+              alt: 'Foundation subterranean bar atmosphere'
             },
             {
               src: '/raleigh/bars/bar-foundation-3.png',
-              alt: 'Foundation cocktails and bourbon selection',
-            },
-          ],
+              alt: 'Foundation cocktails and bourbon selection'
+            }
+          ]
         },
         {
           name: 'William & Company (Willco)',
@@ -1041,17 +1013,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/bars-willco-1.png',
-              alt: 'William & Company (Willco) interior with living room atmosphere',
+              alt: 'William & Company (Willco) interior with living room atmosphere'
             },
             {
               src: '/raleigh/bars/bars-willco-2.png',
-              alt: 'William & Company mezcal cocktails and fresh flowers',
+              alt: 'William & Company mezcal cocktails and fresh flowers'
             },
             {
               src: '/raleigh/bars/bars-willco-3.png',
-              alt: 'William & Company intimate bar seating on Person Street',
-            },
-          ],
+              alt: 'William & Company intimate bar seating on Person Street'
+            }
+          ]
         },
         {
           name: 'Watts & Ward',
@@ -1068,17 +1040,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/ward-1.png',
-              alt: 'Watts & Ward interior with leather sofas and bookshelves',
+              alt: 'Watts & Ward interior with leather sofas and bookshelves'
             },
             {
               src: '/raleigh/bars/ward-2.png',
-              alt: 'Watts & Ward dimly lit alcove',
+              alt: 'Watts & Ward dimly lit alcove'
             },
             {
               src: '/raleigh/bars/ward-3.png',
-              alt: 'Watts & Ward bar area with cocktails',
-            },
-          ],
+              alt: 'Watts & Ward bar area with cocktails'
+            }
+          ]
         },
         {
           name: 'Raleigh Times Bar',
@@ -1095,13 +1067,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/raleigh-times-1.png',
-              alt: 'Raleigh Times Bar exterior with outdoor seating',
+              alt: 'Raleigh Times Bar exterior with outdoor seating'
             },
             {
               src: '/raleigh/bars/raleigh-times-2.png',
-              alt: 'Raleigh Times Bar interior with historic newspaper clippings',
-            },
-          ],
+              alt: 'Raleigh Times Bar interior with historic newspaper clippings'
+            }
+          ]
         },
         {
           name: 'The Haymaker',
@@ -1118,17 +1090,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/haymaker-1.png',
-              alt: 'The Haymaker interior with boxing gym aesthetic',
+              alt: 'The Haymaker interior with boxing gym aesthetic'
             },
             {
               src: '/raleigh/bars/haymaker-2.png',
-              alt: 'The Haymaker bar with cocktails',
+              alt: 'The Haymaker bar with cocktails'
             },
             {
               src: '/raleigh/bars/haymaker-3.png',
-              alt: 'The Haymaker seating area with unique decor',
-            },
-          ],
+              alt: 'The Haymaker seating area with unique decor'
+            }
+          ]
         },
         {
           name: 'Gussie\'s',
@@ -1145,24 +1117,24 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/bars/gussies-1.png',
-              alt: 'Gussie\'s exterior',
+              alt: 'Gussie\'s exterior'
             },
             {
               src: '/raleigh/bars/gussies-3.png',
-              alt: 'Gussie\'s interior',
+              alt: 'Gussie\'s interior'
             },
             {
               src: '/raleigh/bars/gussies02.png',
-              alt: 'Gussie\'s bar area',
-            },
-          ],
-        },
-      ],
+              alt: 'Gussie\'s bar area'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'best-bars-ad',
       type: 'ad',
-      size: 'banner',
+      size: 'banner'
     },
     {
       id: 'raleigh-best-coffee',
@@ -1186,17 +1158,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/coffee-black-white-1.png',
-              alt: 'Black & White Coffee Roasters minimalist interior',
+              alt: 'Black & White Coffee Roasters minimalist interior'
             },
             {
               src: '/raleigh/coffee/coffee-black-white-2.png',
-              alt: 'Black & White Coffee Roasters espresso preparation',
+              alt: 'Black & White Coffee Roasters espresso preparation'
             },
             {
               src: '/raleigh/coffee/coffee-black-white-3.png',
-              alt: 'Black & White Coffee Roasters industrial-chic space',
-            },
-          ],
+              alt: 'Black & White Coffee Roasters industrial-chic space'
+            }
+          ]
         },
         {
           name: 'Jubala Coffee',
@@ -1213,25 +1185,25 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/jubala-1.png',
-              alt: 'Jubala Coffee exterior',
+              alt: 'Jubala Coffee exterior'
             },
             {
               src: '/raleigh/coffee/jubala-2.png',
-              alt: 'Jubala Coffee interior with customers',
+              alt: 'Jubala Coffee interior with customers'
             },
             {
               src: '/raleigh/coffee/jubala3.png',
-              alt: 'Jubala Coffee biscuits',
+              alt: 'Jubala Coffee biscuits'
             },
             {
               src: '/raleigh/coffee/jubala4.png',
-              alt: 'Jubala Coffee latte art',
+              alt: 'Jubala Coffee latte art'
             },
             {
               src: '/raleigh/coffee/jubala5.png',
-              alt: 'Jubala Coffee storefront',
-            },
-          ],
+              alt: 'Jubala Coffee storefront'
+            }
+          ]
         },
         {
           name: 'Heirloom Brewshop',
@@ -1248,17 +1220,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/heirloom-1.png',
-              alt: 'Heirloom Brewshop minimalist interior',
+              alt: 'Heirloom Brewshop minimalist interior'
             },
             {
               src: '/raleigh/coffee/heirloom2.png',
-              alt: 'Heirloom Brewshop counter and drinks',
+              alt: 'Heirloom Brewshop counter and drinks'
             },
             {
               src: '/raleigh/coffee/heirloom3.png',
-              alt: 'Heirloom Brewshop ceremonial matcha preparation',
-            },
-          ],
+              alt: 'Heirloom Brewshop ceremonial matcha preparation'
+            }
+          ]
         },
         {
           name: 'The Morning Times',
@@ -1275,17 +1247,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/morningtimes1.png',
-              alt: 'The Morning Times exterior street view',
+              alt: 'The Morning Times exterior street view'
             },
             {
               src: '/raleigh/coffee/morningtimes-2.png',
-              alt: 'The Morning Times bustling interior',
+              alt: 'The Morning Times bustling interior'
             },
             {
               src: '/raleigh/coffee/morning-times-3.png',
-              alt: 'The Morning Times coffee counter',
-            },
-          ],
+              alt: 'The Morning Times coffee counter'
+            }
+          ]
         },
         {
           name: '321 Coffee',
@@ -1302,17 +1274,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/321-1.png',
-              alt: '321 Coffee exterior with welcoming sign',
+              alt: '321 Coffee exterior with welcoming sign'
             },
             {
               src: '/raleigh/coffee/321-2.png',
-              alt: '321 Coffee baristas at work',
+              alt: '321 Coffee baristas at work'
             },
             {
               src: '/raleigh/coffee/321-3.png',
-              alt: '321 Coffee interior with customers and seating',
-            },
-          ],
+              alt: '321 Coffee interior with customers and seating'
+            }
+          ]
         },
         {
           name: 'Iris Coffee Lab',
@@ -1329,23 +1301,23 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/coffee/iris1.png',
-              alt: 'Iris Coffee Lab clean modern interior',
+              alt: 'Iris Coffee Lab clean modern interior'
             },
             {
               src: '/raleigh/coffee/iris2.png',
-              alt: 'Iris Coffee Lab barista preparing drink',
+              alt: 'Iris Coffee Lab barista preparing drink'
             },
             {
               src: '/raleigh/coffee/iris3.png',
-              alt: 'Iris Coffee Lab seasonal latte',
+              alt: 'Iris Coffee Lab seasonal latte'
             },
             {
               src: '/raleigh/coffee/iris4.png',
-              alt: 'Iris Coffee Lab storefront',
-            },
-          ],
-        },
-      ],
+              alt: 'Iris Coffee Lab storefront'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'ral-best-restaurants',
@@ -1367,13 +1339,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/roast-grill-0.png',
-              alt: 'The Roast Grill exterior',
+              alt: 'The Roast Grill exterior'
             },
             {
               src: '/raleigh/restaurants/roast-grill-1.png',
-              alt: 'The Roast Grill original 1940s lunch counter',
-            },
-          ],
+              alt: 'The Roast Grill original 1940s lunch counter'
+            }
+          ]
         },
         {
           name: 'Person Street Pharmacy Lunch Counter',
@@ -1388,13 +1360,13 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/person-pharmacy-1.png',
-              alt: 'Person Street Pharmacy vintage lunch counter',
+              alt: 'Person Street Pharmacy vintage lunch counter'
             },
             {
               src: '/raleigh/restaurants/person-pharmacy-2.png',
-              alt: 'Person Street Pharmacy interior',
-            },
-          ],
+              alt: 'Person Street Pharmacy interior'
+            }
+          ]
         },
 
         {
@@ -1412,9 +1384,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/stroch-1.png',
-              alt: 'St. Roch Fine Oysters & Bar',
-            },
-          ],
+              alt: 'St. Roch Fine Oysters & Bar'
+            }
+          ]
         },
         {
           name: 'The Cortez',
@@ -1431,9 +1403,9 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/cortez-1.png',
-              alt: 'The Cortez interior',
-            },
-          ],
+              alt: 'The Cortez interior'
+            }
+          ]
         },
         {
           name: 'Poole\'s Diner',
@@ -1450,25 +1422,25 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/pooles-1.png',
-              alt: 'Poole\'s Diner interior with bar and open kitchen',
+              alt: 'Poole\'s Diner interior with bar and open kitchen'
             },
             {
               src: '/raleigh/restaurants/pooles-2.png',
-              alt: 'Poole\'s Diner Macaroni au Gratin',
+              alt: 'Poole\'s Diner Macaroni au Gratin'
             },
             {
               src: '/raleigh/restaurants/pooles-3.png',
-              alt: 'Poole\'s Diner exterior at night',
+              alt: 'Poole\'s Diner exterior at night'
             },
             {
               src: '/raleigh/restaurants/pooles-4.png',
-              alt: 'Poole\'s Diner dining area',
+              alt: 'Poole\'s Diner dining area'
             },
             {
               src: '/raleigh/restaurants/pooles-5.png',
-              alt: 'Poole\'s Diner seasonal menu chalkboard',
-            },
-          ],
+              alt: 'Poole\'s Diner seasonal menu chalkboard'
+            }
+          ]
         },
         {
           name: 'Brewery Bhavana',
@@ -1485,21 +1457,21 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/bhavana-1.png',
-              alt: 'Brewery Bhavana interior with books and flowers',
+              alt: 'Brewery Bhavana interior with books and flowers'
             },
             {
               src: '/raleigh/restaurants/bhavana-2.png',
-              alt: 'Brewery Bhavana dim sum dishes',
+              alt: 'Brewery Bhavana dim sum dishes'
             },
             {
               src: '/raleigh/restaurants/bhavana-3.png',
-              alt: 'Brewery Bhavana exterior at night',
+              alt: 'Brewery Bhavana exterior at night'
             },
             {
               src: '/raleigh/restaurants/bhavana-4.png',
-              alt: 'Brewery Bhavana beer selection',
-            },
-          ],
+              alt: 'Brewery Bhavana beer selection'
+            }
+          ]
         },
         {
           name: 'Stanbury',
@@ -1516,17 +1488,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/stanbury-1.png',
-              alt: 'Stanbury interior dining area',
+              alt: 'Stanbury interior dining area'
             },
             {
               src: '/raleigh/restaurants/stanbury-2.png',
-              alt: 'Stanbury plate of food',
+              alt: 'Stanbury plate of food'
             },
             {
               src: '/raleigh/restaurants/stanbury-3.png',
-              alt: 'Stanbury exterior at night',
-            },
-          ],
+              alt: 'Stanbury exterior at night'
+            }
+          ]
         },
         {
           name: 'Bida Manda',
@@ -1543,21 +1515,21 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/bida-manda-1.png',
-              alt: 'Bida Manda interior with ornate wood art',
+              alt: 'Bida Manda interior with ornate wood art'
             },
             {
               src: '/raleigh/restaurants/bida-manda-2.png',
-              alt: 'Bida Manda Crispy Pork Belly Soup',
+              alt: 'Bida Manda Crispy Pork Belly Soup'
             },
             {
               src: '/raleigh/restaurants/bida-manda-3.png',
-              alt: 'Bida Manda exterior at night',
+              alt: 'Bida Manda exterior at night'
             },
             {
               src: '/raleigh/restaurants/bida-manda-4.png',
-              alt: 'Bida Manda cocktails',
-            },
-          ],
+              alt: 'Bida Manda cocktails'
+            }
+          ]
         },
         {
           name: 'Crawford and Son',
@@ -1574,17 +1546,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/crawford-1.png',
-              alt: 'Crawford and Son interior dining room',
+              alt: 'Crawford and Son interior dining room'
             },
             {
               src: '/raleigh/restaurants/crawford-2.png',
-              alt: 'Crawford and Son dish presentation',
+              alt: 'Crawford and Son dish presentation'
             },
             {
               src: '/raleigh/restaurants/crawford-3.png',
-              alt: 'Crawford and Son bar area',
-            },
-          ],
+              alt: 'Crawford and Son bar area'
+            }
+          ]
         },
         {
           name: 'Centro',
@@ -1601,17 +1573,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/centro-1.png',
-              alt: 'Centro vibrant interior with colorful art',
+              alt: 'Centro vibrant interior with colorful art'
             },
             {
               src: '/raleigh/restaurants/centro-2.png',
-              alt: 'Centro tacos al pastor',
+              alt: 'Centro tacos al pastor'
             },
             {
               src: '/raleigh/restaurants/centro-3.png',
-              alt: 'Centro exterior at night',
-            },
-          ],
+              alt: 'Centro exterior at night'
+            }
+          ]
         },
         {
           name: 'Death & Taxes',
@@ -1628,17 +1600,17 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/death-taxes-1.png',
-              alt: 'Death & Taxes interior with wood-fired grill',
+              alt: 'Death & Taxes interior with wood-fired grill'
             },
             {
               src: '/raleigh/restaurants/death-taxes-2.png',
-              alt: 'Death & Taxes roasted oysters',
+              alt: 'Death & Taxes roasted oysters'
             },
             {
               src: '/raleigh/restaurants/death-taxes-3.png',
-              alt: 'Death & Taxes exterior in former funeral home building',
-            },
-          ],
+              alt: 'Death & Taxes exterior in former funeral home building'
+            }
+          ]
         },
         {
           name: 'Second Empire',
@@ -1655,19 +1627,19 @@ export const raleigh: CityData = {
           images: [
             {
               src: '/raleigh/restaurants/second-empire-1.png',
-              alt: 'Second Empire Victorian mansion exterior',
+              alt: 'Second Empire Victorian mansion exterior'
             },
             {
               src: '/raleigh/restaurants/second-empire-2.png',
-              alt: 'Second Empire interior',
+              alt: 'Second Empire interior'
             },
             {
               src: '/raleigh/restaurants/second-empire-3.png',
-              alt: 'Second Empire fine dining',
-            },
-          ],
-        },
-      ],
+              alt: 'Second Empire fine dining'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'obscure-history',
@@ -1685,8 +1657,8 @@ export const raleigh: CityData = {
             name: 'State Capitol',
       url: 'https://www.google.com/maps/search/?api=1&query=State%20Capitol%20Raleigh',
             coordinates: { lat: 35.7804, lng: -78.6391 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-2',
@@ -1695,22 +1667,17 @@ export const raleigh: CityData = {
           title: 'Sherman\'s army was stopped by a letter from a Raleigh woman',
           body: 'When General Sherman\'s army approached Raleigh during the Civil War, Governor Zebulon Vance had already fled. A delegation of citizens, led by former governor David Swain, rode out to surrender the city. But it was a letter from Ann Devereaux — carried by her enslaved coachman — that convinced Sherman to spare the city from burning. The letter invoked their old friendship from before the war. Raleigh was one of the few Southern capitals not destroyed.',
           source: 'North Carolina Museum of History',
-          image: {
-            src: '/images/history/sherman-raleigh.jpg',
-            alt: 'Union troops entering Raleigh in 1865',
-            credit: 'Library of Congress',
-            year: '1865',
-          },
+          
           location: {
             name: 'Downtown Raleigh',
       url: 'https://www.google.com/maps/search/?api=1&query=Downtown%20Raleigh%20Raleigh',
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'history-3',
@@ -1723,8 +1690,8 @@ export const raleigh: CityData = {
             name: 'Butner, NC',
       url: 'https://www.google.com/maps/search/?api=1&query=Butner%2C%20NC%20Raleigh',
             coordinates: { lat: 36.1321, lng: -78.7569 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-4',
@@ -1733,17 +1700,13 @@ export const raleigh: CityData = {
           title: 'The only successful coup d\'état in American history happened nearby',
           body: 'In 1898, white supremacist Democrats overthrew the legally elected biracial government of Wilmington, NC — just 120 miles from Raleigh. Armed mobs murdered Black residents, burned the Black-owned newspaper, and forced the mayor and city council to resign at gunpoint. The state government in Raleigh did nothing to intervene. The coup installed white supremacist rule that lasted for decades.',
           source: '1898 Wilmington Race Riot Commission',
-          image: {
-            src: '/images/history/wilmington-coup.jpg',
-            alt: 'Armed white mob during the 1898 Wilmington coup',
-            credit: 'North Carolina State Archives',
-                      },
+          
           location: {
             name: 'Wilmington, NC',
       url: 'https://www.google.com/maps/search/?api=1&query=Wilmington%2C%20NC%20Raleigh',
             coordinates: { lat: 34.2257, lng: -77.9447 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-5',
@@ -1752,23 +1715,18 @@ export const raleigh: CityData = {
           title: 'Raleigh had its own Harlem Renaissance',
           body: 'While New York\'s Harlem Renaissance gets the attention, Raleigh\'s East Hargett Street was the "Black Main Street" of the South. Black-owned businesses, theaters, hotels, and newspapers thrived in a segregated economy. Shaw University and Saint Augustine\'s University produced generations of Black leaders. The destruction came later — urban renewal in the 1960s and 70s demolished much of the historic Black business district.',
           source: 'City of Raleigh Museum',
-          image: {
-            src: '/images/history/east-hargett.jpg',
-            alt: 'East Hargett Street in the 1940s showing Black-owned businesses',
-            credit: 'North Carolina State Archives',
-            year: '1940s',
-          },
+          
           location: {
             name: 'East Hargett Street',
       url: 'https://www.google.com/maps/search/?api=1&query=East%20Hargett%20Street%20Raleigh',
             coordinates: { lat: 35.7793, lng: -78.6350 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'history-6',
@@ -1781,8 +1739,8 @@ export const raleigh: CityData = {
             name: 'Shaw University',
       url: 'https://www.google.com/maps/search/?api=1&query=Shaw%20University%20Raleigh',
             coordinates: { lat: 35.7722, lng: -78.6377 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-7',
@@ -1795,8 +1753,8 @@ export const raleigh: CityData = {
             name: 'Joel Lane Museum House',
       url: 'https://www.google.com/maps/search/?api=1&query=Joel%20Lane%20Museum%20House%20Raleigh',
             coordinates: { lat: 35.7765, lng: -78.6456 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-8',
@@ -1805,23 +1763,18 @@ export const raleigh: CityData = {
           title: 'The Research Triangle was an economic Hail Mary by desperate state leaders',
           body: 'By the 1950s, North Carolina was hemorrhaging educated workers to the North. Governor Luther Hodges and a coalition of business leaders hatched an audacious plan: build a research park between three universities and hope corporations would follow. The early years were bleak — the park sat mostly empty for a decade. Only when IBM arrived in 1965 did the gamble pay off. The transformation of Raleigh from sleepy capital to tech hub was never inevitable.',
           source: 'Research Triangle Foundation',
-          image: {
-            src: '/images/history/rtp-early.jpg',
-            alt: 'Early Research Triangle Park under construction',
-            credit: 'Duke University Libraries',
-            year: '1960',
-          },
+          
           location: {
             name: 'Research Triangle Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Research%20Triangle%20Park%20Raleigh',
             coordinates: { lat: 35.8992, lng: -78.8637 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-3',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'history-9',
@@ -1830,18 +1783,13 @@ export const raleigh: CityData = {
           title: 'Raleigh had a NASCAR speedway hidden in what\'s now NC State territory',
           body: 'The Raleigh Speedway was a one-mile dirt oval that hosted NASCAR races from 1953 to 1958, drawing crowds of 17,000 to watch legends like Lee Petty and Buck Baker tear around the track. The speedway operated until 1966 before being swallowed by development. Today it\'s Wolfpack Drive between Atlantic Avenue and Bush Street — but if you know where to look, you can still find chunks of asphalt in the woods from one of the old turns.',
           source: 'Racing Reference / NC State Archives',
-          image: {
-            src: '/images/history/raleigh-speedway.jpg',
-            alt: 'Aerial view of Raleigh Speedway during a NASCAR race in the 1950s',
-            credit: 'NC State Archives',
-            year: '1955',
-          },
+          
           location: {
             name: 'Wolfpack Drive (former Raleigh Speedway)',
       url: 'https://www.google.com/maps/search/?api=1&query=Wolfpack%20Drive%20(former%20Raleigh%20Speedway)%20Raleigh',
             coordinates: { lat: 35.8012, lng: -78.6989 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'history-10',
@@ -1850,18 +1798,13 @@ export const raleigh: CityData = {
           title: 'Bloomsbury Park was Raleigh\'s forgotten amusement park — and its carousel still spins',
           body: 'Before Pullen Park was Raleigh\'s family destination, there was Bloomsbury Park — a full amusement park with a roller coaster, merry-go-round, and picnic grounds near what\'s now Carolina Country Club and the Country Club Hills neighborhood. When Bloomsbury closed around 1917, the city bought the carousel and moved it to Pullen Park, where it still operates today as one of the oldest carousels in America.',
           source: 'Raleigh Historic Development Commission',
-          image: {
-            src: '/images/history/bloomsbury-park.jpg',
-            alt: 'Bloomsbury Park carousel and crowds in the 1910s',
-            credit: 'State Archives of North Carolina',
-            year: 'c. 1912',
-          },
+          
           location: {
             name: 'Country Club Hills (former Bloomsbury Park)',
       url: 'https://www.google.com/maps/search/?api=1&query=Country%20Club%20Hills%20(former%20Bloomsbury%20Park)%20Raleigh',
             coordinates: { lat: 35.8156, lng: -78.6478 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'history-11',
@@ -1870,23 +1813,18 @@ export const raleigh: CityData = {
           title: 'The Five Points medians are hiding Raleigh\'s trolley tracks',
           body: 'The grass medians running through Five Points and along Glenwood Avenue aren\'t just landscaping — they cover the tracks of Raleigh\'s old streetcar system. The trolley lines shaped the city\'s early development, with neighborhoods sprouting along their routes. The stone structure at Glenwood and Harvey Street that looks like a bus shelter? It was built as a trolley stop. The trolleys stopped running in the 1930s, but their ghost still defines the neighborhood.',
           source: 'Raleigh City Museum',
-          image: {
-            src: '/images/history/raleigh-trolley.jpg',
-            alt: 'Raleigh streetcar on Glenwood Avenue in the 1920s',
-            credit: 'North Carolina State Archives',
-            year: '1920s',
-          },
+          
           location: {
             name: 'Five Points / Glenwood Avenue',
       url: 'https://www.google.com/maps/search/?api=1&query=Five%20Points%20%2F%20Glenwood%20Avenue%20Raleigh',
             coordinates: { lat: 35.7948, lng: -78.6492 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-ad-4',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'history-12',
@@ -1899,8 +1837,8 @@ export const raleigh: CityData = {
             name: 'Renaissance Park (former Raleigh Municipal Airport)',
       url: 'https://www.google.com/maps/search/?api=1&query=Renaissance%20Park%20(former%20Raleigh%20Municipal%20Airport)%20Raleigh',
             coordinates: { lat: 35.7612, lng: -78.7156 },
-            stillExists: false,
-          },
+            stillExists: false
+          }
         },
         {
           id: 'history-13',
@@ -1913,8 +1851,8 @@ export const raleigh: CityData = {
             name: 'Glenwood Village / Lakestone',
       url: 'https://www.google.com/maps/search/?api=1&query=Glenwood%20Village%20%2F%20Lakestone%20Raleigh',
             coordinates: { lat: 35.8401, lng: -78.6823 },
-            stillExists: true,
-          },
+            stillExists: true
+          }
         },
         {
           id: 'history-14',
@@ -1923,19 +1861,15 @@ export const raleigh: CityData = {
           title: 'Jaycee Park was the city dump',
           body: 'The rolling hills and soccer fields of Jaycee Park have a less pastoral origin: it was Raleigh\'s municipal landfill for decades. When the dump closed, the city capped it, planted grass, and turned it into a park. The mounds that kids sled down in rare Raleigh snowstorms? Compacted garbage, slowly decomposing beneath a thin layer of topsoil. The park opened in the 1970s and most visitors have no idea what\'s underneath.',
           source: 'City of Raleigh Parks and Recreation',
-          image: {
-            src: '/images/history/jaycee-park.jpg',
-            alt: 'Jaycee Park fields with rolling hills that were once landfill',
-            year: 'Present day',
-          },
+          
           location: {
             name: 'Jaycee Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Jaycee%20Park%20Raleigh',
             coordinates: { lat: 35.8089, lng: -78.6398 },
-            stillExists: true,
-          },
-        },
-      ],
+            stillExists: true
+          }
+        }
+      ]
     },
     {
       id: 'ral-dark-history',
@@ -1956,34 +1890,34 @@ export const raleigh: CityData = {
               type: 'article',
               title: 'The Execution of Velma Barfield',
               publisher: 'NCpedia',
-              url: 'https://www.ncdcr.gov/blog/2019/11/02/execution-velma-barfield',
+              url: 'https://www.ncdcr.gov/blog/2019/11/02/execution-velma-barfield'
             },
             {
               type: 'article',
               title: 'Velma Barfield: The Granny Who Became America\'s First Woman Executed Since 1962',
               publisher: 'All That\'s Interesting',
               year: '2023',
-              url: 'https://allthatsinteresting.com/velma-barfield',
+              url: 'https://allthatsinteresting.com/velma-barfield'
             },
             {
               type: 'article',
               title: 'Billy Graham and Velma Barfield: An Unlikely Friendship',
               publisher: 'WRAL',
               year: '2018',
-              url: 'https://www.wral.com/story/billy-graham-and-velma-barfield-an-unlikely-friendship/17499751/',
-            },
+              url: 'https://www.wral.com/story/billy-graham-and-velma-barfield-an-unlikely-friendship/17499751/'
+            }
           ],
           location: {
             name: 'Central Prison, Raleigh',
       url: 'https://www.google.com/maps/search/?api=1&query=Central%20Prison%2C%20Raleigh%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/velma.png',
-              alt: 'Velma Barfield, the Death Row Granny',
-            },
-          ],
+              alt: 'Velma Barfield, the Death Row Granny'
+            }
+          ]
         },
         {
           id: 'ral-dark-7',
@@ -1999,39 +1933,39 @@ export const raleigh: CityData = {
               title: 'Haunted History: Mordecai House',
               publisher: 'WRAL',
               year: '2019',
-              url: 'https://www.wral.com/story/haunted-history-mordecai-house/18704621/',
+              url: 'https://www.wral.com/story/haunted-history-mordecai-house/18704621/'
             },
             {
               type: 'article',
               title: 'The Ghosts of Mordecai Historic Park',
               publisher: 'Queen City Ghosts',
-              url: 'https://www.queencityghosts.com/mordecai-house-haunted/',
+              url: 'https://www.queencityghosts.com/mordecai-house-haunted/'
             },
             {
               type: 'article',
               title: 'The Ghost Guild at Mordecai Historic Park',
               publisher: 'The Ghost Guild',
-              url: 'https://theghostguild.weebly.com/',
+              url: 'https://theghostguild.weebly.com/'
             },
             {
               type: 'video',
               title: 'Ghost Hunters: Mordecai House Investigation',
               show: 'Ghost Hunters',
               platform: 'Syfy',
-              url: 'https://www.syfy.com/ghost-hunters',
-            },
+              url: 'https://www.syfy.com/ghost-hunters'
+            }
           ],
           location: {
             name: 'Mordecai Historic Park, 1 Mimosa St',
       url: 'https://www.google.com/maps/search/?api=1&query=Mordecai%20Historic%20Park%2C%201%20Mimosa%20St%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/mordecai-house.png',
-              alt: 'The haunted Mordecai House',
-            },
-          ],
+              alt: 'The haunted Mordecai House'
+            }
+          ]
         },
         {
           id: 'ral-dark-5',
@@ -2045,40 +1979,40 @@ export const raleigh: CityData = {
               type: 'article',
               title: '1996 Raleigh Murders',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/1996_Raleigh_murders',
+              url: 'https://en.wikipedia.org/wiki/1996_Raleigh_murders'
             },
             {
               type: 'article',
               title: 'John Williams Jr.',
               publisher: 'Murderpedia',
-              url: 'https://murderpedia.org/male.W/w/williams-john-jr.htm',
+              url: 'https://murderpedia.org/male.W/w/williams-john-jr.htm'
             },
             {
               type: 'article',
               title: 'John Williams Jr. Sentenced to Death for 1996 Murders',
               publisher: 'WRAL',
               year: '2000',
-              url: 'https://www.wral.com/story/john-williams-jr-sentenced-to-death-for-1996-murders/3445678/',
+              url: 'https://www.wral.com/story/john-williams-jr-sentenced-to-death-for-1996-murders/3445678/'
             },
             {
               type: 'article',
               title: 'Three Unsolved Murders from Raleigh\'s Darkest Year',
               publisher: 'News & Observer',
               year: '2016',
-              url: 'https://www.newsobserver.com/news/local/crime/article102847232.html',
-            },
+              url: 'https://www.newsobserver.com/news/local/crime/article102847232.html'
+            }
           ],
           location: {
             name: 'Raleigh neighborhoods',
       url: 'https://www.google.com/maps/search/?api=1&query=Raleigh%20neighborhoods%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/year-fear.png',
-              alt: 'The year of fear in Raleigh',
-            },
-          ],
+              alt: 'The year of fear in Raleigh'
+            }
+          ]
         },
         {
           id: 'ral-dark-8',
@@ -2094,32 +2028,32 @@ export const raleigh: CityData = {
               title: 'The Haunted History of the North Carolina State Capitol',
               publisher: 'Midtown Raleigh News',
               year: '2018',
-              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-state-capitol/',
+              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-state-capitol/'
             },
             {
               type: 'article',
               title: 'Is the NC State Capitol Haunted?',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/is-north-carolina-state-capitol-haunted/',
+              url: 'https://usghostadventures.com/is-north-carolina-state-capitol-haunted/'
             },
             {
               type: 'article',
               title: 'Haunted Raleigh: State Capitol Building',
               publisher: 'Visit Raleigh',
-              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-state-capitol/',
-            },
+              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-state-capitol/'
+            }
           ],
           location: {
             name: 'NC State Capitol, 1 E Edenton St',
       url: 'https://www.google.com/maps/search/?api=1&query=NC%20State%20Capitol%2C%201%20E%20Edenton%20St%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/capitol-ghost.png',
-              alt: 'The haunted North Carolina State Capitol',
-            },
-          ],
+              alt: 'The haunted North Carolina State Capitol'
+            }
+          ]
         },
         {
           id: 'ral-dark-1',
@@ -2135,45 +2069,45 @@ export const raleigh: CityData = {
               show: 'American Experience',
               platform: 'PBS',
               year: '2015',
-              url: 'https://www.pbs.org/wgbh/americanexperience/films/wilmington/',
+              url: 'https://www.pbs.org/wgbh/americanexperience/films/wilmington/'
             },
             {
               type: 'video',
               title: '1898 Wilmington Massacre Documentary',
               platform: 'YouTube',
-              url: 'https://www.youtube.com/watch?v=244thXGGA6U',
+              url: 'https://www.youtube.com/watch?v=244thXGGA6U'
             },
             {
               type: 'article',
               title: 'Wilmington Race Riot of 1898',
               publisher: 'Equal Justice Initiative',
-              url: 'https://eji.org/news/history-racial-injustice-wilmington-race-riot/',
+              url: 'https://eji.org/news/history-racial-injustice-wilmington-race-riot/'
             },
             {
               type: 'article',
               title: '1898 Wilmington Massacre',
               publisher: 'NC Department of Natural and Cultural Resources',
-              url: 'https://www.ncdcr.gov/about/history/division-historical-resources/nc-highway-historical-marker-program/Markers.aspx?MarkerId=J-80',
+              url: 'https://www.ncdcr.gov/about/history/division-historical-resources/nc-highway-historical-marker-program/Markers.aspx?MarkerId=J-80'
             },
             {
               type: 'article',
               title: 'North Carolina Apologizes for 1898 Wilmington Race Riot',
               publisher: 'The New York Times',
               year: '2006',
-              url: 'https://www.nytimes.com/2006/05/31/us/31riot.html',
-            },
+              url: 'https://www.nytimes.com/2006/05/31/us/31riot.html'
+            }
           ],
           location: {
             name: 'Wilmington, NC (State Capitol in Raleigh did nothing)',
       url: 'https://www.google.com/maps/search/?api=1&query=Wilmington%2C%20NC%20(State%20Capitol%20in%20Raleigh%20did%20nothing)%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/coup.png',
-              alt: 'The 1898 Wilmington coup',
-            },
-          ],
+              alt: 'The 1898 Wilmington coup'
+            }
+          ]
         },
         {
           id: 'ral-dark-9',
@@ -2189,39 +2123,39 @@ export const raleigh: CityData = {
               title: 'The Spinning Angel of Oakwood Cemetery',
               publisher: 'Only In Your State',
               year: '2020',
-              url: 'https://www.onlyinyourstate.com/north-carolina/oakwood-cemetery-nc/',
+              url: 'https://www.onlyinyourstate.com/north-carolina/oakwood-cemetery-nc/'
             },
             {
               type: 'article',
               title: 'Is Oakwood Cemetery in Raleigh Haunted?',
               publisher: 'US Ghost Adventures',
-              url: 'https://usghostadventures.com/is-oakwood-cemetery-raleigh-haunted/',
+              url: 'https://usghostadventures.com/is-oakwood-cemetery-raleigh-haunted/'
             },
             {
               type: 'article',
               title: 'Oakwood Cemetery: History and Hauntings',
               publisher: 'Raleigh Historic',
-              url: 'https://historicoakwoodcemetery.org/',
+              url: 'https://historicoakwoodcemetery.org/'
             },
             {
               type: 'article',
               title: 'The Legend of Etta Ratcliffe\'s Angel',
               publisher: 'Visit Raleigh',
               year: '2021',
-              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-oakwood-cemetery/',
-            },
+              url: 'https://www.visitraleigh.com/blog/post/haunted-raleigh-oakwood-cemetery/'
+            }
           ],
           location: {
             name: 'Oakwood Cemetery, 701 Oakwood Ave',
       url: 'https://www.google.com/maps/search/?api=1&query=Oakwood%20Cemetery%2C%20701%20Oakwood%20Ave%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/spinnning-angel.png',
-              alt: 'The spinning angel of Oakwood Cemetery',
-            },
-          ],
+              alt: 'The spinning angel of Oakwood Cemetery'
+            }
+          ]
         },
         {
           id: 'ral-dark-3',
@@ -2236,39 +2170,39 @@ export const raleigh: CityData = {
               type: 'other',
               title: 'North Carolina Executions Database',
               publisher: 'NC Department of Adult Correction',
-              url: 'https://www.ncdac.gov/adult-corrections/prisons/death-penalty/executions',
+              url: 'https://www.ncdac.gov/adult-corrections/prisons/death-penalty/executions'
             },
             {
               type: 'article',
               title: 'Central Prison',
               publisher: 'NCpedia',
-              url: 'https://www.ncpedia.org/central-prison',
+              url: 'https://www.ncpedia.org/central-prison'
             },
             {
               type: 'article',
               title: 'The History of Capital Punishment in North Carolina',
               publisher: 'UNC Libraries',
-              url: 'https://exhibits.lib.unc.edu/exhibits/show/capital-punishment/history',
+              url: 'https://exhibits.lib.unc.edu/exhibits/show/capital-punishment/history'
             },
             {
               type: 'article',
               title: 'North Carolina Hasn\'t Executed Anyone Since 2006',
               publisher: 'WRAL',
               year: '2022',
-              url: 'https://www.wral.com/story/north-carolina-hasn-t-executed-anyone-since-2006-but-death-row-remains/20135483/',
-            },
+              url: 'https://www.wral.com/story/north-carolina-hasn-t-executed-anyone-since-2006-but-death-row-remains/20135483/'
+            }
           ],
           location: {
             name: 'Central Prison, 1300 Western Blvd',
       url: 'https://www.google.com/maps/search/?api=1&query=Central%20Prison%2C%201300%20Western%20Blvd%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/central-prison.png',
-              alt: 'Central Prison, North Carolina\'s death house',
-            },
-          ],
+              alt: 'Central Prison, North Carolina\'s death house'
+            }
+          ]
         },
         {
           id: 'ral-dark-10',
@@ -2281,24 +2215,24 @@ export const raleigh: CityData = {
                                   sources: [
                                     {
                                       title: 'Briggs Hardware Building',
-                                      url: 'https://en.wikipedia.org/wiki/Briggs_Hardware_Building',
+                                      url: 'https://en.wikipedia.org/wiki/Briggs_Hardware_Building'
                                     },
                                     {
                                       title: 'The Ghost of Grace Briggs',
-                                      url: 'https://thisisraleigh.com/briggs-building-ghost-grace/',
-                                    },
+                                      url: 'https://thisisraleigh.com/briggs-building-ghost-grace/'
+                                    }
                                   ],
           location: {
             name: 'Briggs Hardware Building, 220 Fayetteville St',
       url: 'https://www.google.com/maps/search/?api=1&query=Briggs%20Hardware%20Building%2C%20220%20Fayetteville%20St%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/briggs.png',
-              alt: 'Briggs Hardware Building and Grace\'s staircase',
-            },
-          ],
+              alt: 'Briggs Hardware Building and Grace\'s staircase'
+            }
+          ]
         },
         {
           id: 'ral-dark-2',
@@ -2313,41 +2247,41 @@ export const raleigh: CityData = {
               type: 'other',
               title: 'North Carolina Lynchings Database',
               publisher: 'UNC Chapel Hill',
-              url: 'https://exhibits.lib.unc.edu/exhibits/show/lynching-in-nc',
+              url: 'https://exhibits.lib.unc.edu/exhibits/show/lynching-in-nc'
             },
             {
               type: 'article',
               title: 'Lynching in America: North Carolina',
               publisher: 'Equal Justice Initiative',
               year: '2015',
-              url: 'https://lynchinginamerica.eji.org/explore/north-carolina',
+              url: 'https://lynchinginamerica.eji.org/explore/north-carolina'
             },
             {
               type: 'article',
               title: 'Wake County\'s Only Documented Lynching',
               publisher: 'ABC11',
               year: '2020',
-              url: 'https://abc11.com/george-taylor-lynching-wake-county-nc-african-american-history/6253817/',
+              url: 'https://abc11.com/george-taylor-lynching-wake-county-nc-african-american-history/6253817/'
             },
             {
               type: 'article',
               title: 'Powell Green: World War I Veteran Lynched Near Raleigh',
               publisher: 'News & Observer',
               year: '2021',
-              url: 'https://www.newsobserver.com/news/local/article250876209.html',
-            },
+              url: 'https://www.newsobserver.com/news/local/article250876209.html'
+            }
           ],
           location: {
             name: 'Wake County and surrounding areas',
       url: 'https://www.google.com/maps/search/?api=1&query=Wake%20County%20and%20surrounding%20areas%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/lynchings.png',
-              alt: 'Lynchings in Wake County and surrounding areas',
-            },
-          ],
+              alt: 'Lynchings in Wake County and surrounding areas'
+            }
+          ]
         },
         {
           id: 'ral-dark-6',
@@ -2361,41 +2295,41 @@ export const raleigh: CityData = {
               type: 'article',
               title: '2022 Raleigh Shooting',
               publisher: 'Wikipedia',
-              url: 'https://en.wikipedia.org/wiki/2022_Raleigh_shooting',
+              url: 'https://en.wikipedia.org/wiki/2022_Raleigh_shooting'
             },
             {
               type: 'article',
               title: 'What We Know About the Raleigh Mass Shooting',
               publisher: 'CBS17',
               
-              url: 'https://www.cbs17.com/news/local-news/wake-county-news/what-we-know-about-the-raleigh-mass-shooting/',
+              url: 'https://www.cbs17.com/news/local-news/wake-county-news/what-we-know-about-the-raleigh-mass-shooting/'
             },
             {
               type: 'article',
               title: 'Timeline: Raleigh Mass Shooting Investigation',
               publisher: 'WRAL',
               year: '2022',
-              url: 'https://www.wral.com/story/timeline-raleigh-mass-shooting-investigation/20511029/',
+              url: 'https://www.wral.com/story/timeline-raleigh-mass-shooting-investigation/20511029/'
             },
             {
               type: 'article',
               title: 'Raleigh Shooter\'s Trial Delayed to 2026',
               publisher: 'News & Observer',
               year: '2024',
-              url: 'https://www.newsobserver.com/news/local/crime/article283945128.html',
-            },
+              url: 'https://www.newsobserver.com/news/local/crime/article283945128.html'
+            }
           ],
           location: {
             name: 'Hedingham neighborhood / Neuse River Greenway',
       url: 'https://www.google.com/maps/search/?api=1&query=Hedingham%20neighborhood%20%2F%20Neuse%20River%20Greenway%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/dark-history/hedingham.png',
-              alt: 'Hedingham neighborhood and Neuse River Greenway',
-            },
-          ],
+              alt: 'Hedingham neighborhood and Neuse River Greenway'
+            }
+          ]
         },
         {
           id: 'ral-dark-11',
@@ -2408,31 +2342,31 @@ export const raleigh: CityData = {
           location: {
             name: 'Dix Park',
       url: 'https://www.google.com/maps/search/?api=1&query=Dix%20Park%20Raleigh',
-            stillExists: true,
+            stillExists: true
           },
           images: [
             {
               src: '/raleigh/curiosities/dix-cemetary.png',
               alt: 'Dorothea Dix Hospital Cemetery with unmarked graves',
-              credit: 'Historical Photo',
-            },
+              credit: 'Historical Photo'
+            }
           ],
           sources: [
             {
               type: 'article',
               title: 'The Cemetery at Dorothea Dix Hospital',
               publisher: 'Raleigh Historic',
-              url: 'https://raleighhistoric.org/news/items/the-cemetery-at-dorothea-dix-hospital',
+              url: 'https://raleighhistoric.org/news/items/the-cemetery-at-dorothea-dix-hospital'
             },
             {
               type: 'article',
               title: 'Unmarked Graves at Dix Park',
               publisher: 'WRAL',
-              url: 'https://www.wral.com/story/unmarked-graves-discovered-at-dix-park/19934847/',
-            },
-          ],
-        },
-      ],
+              url: 'https://www.wral.com/story/unmarked-graves-discovered-at-dix-park/19934847/'
+            }
+          ]
+        }
+      ]
     },
     {
       id: 'raleigh-lost-and-loved',
@@ -2455,8 +2389,8 @@ export const raleigh: CityData = {
           source: 'News & Observer, Technician',
           image: {
             src: '/raleigh/lost-loved/rathskellar.png',
-            alt: 'The Rathskeller',
-          },
+            alt: 'The Rathskeller'
+          }
         },
         {
           id: 'raleigh-lost-2',
@@ -2473,8 +2407,8 @@ export const raleigh: CityData = {
           image: {
             src: '/raleigh/lost-loved/kings.png',
             alt: 'Kings music venue in downtown Raleigh',
-            credit: 'Historical Photo',
-          },
+            credit: 'Historical Photo'
+          }
         },
         {
           id: 'raleigh-lost-3',
@@ -2490,13 +2424,13 @@ export const raleigh: CityData = {
           source: 'News & Observer, Indy Week',
           image: {
             src: '/raleigh/lost-loved/oyster-bar.png',
-            alt: '42nd Street Oyster Bar',
-          },
+            alt: '42nd Street Oyster Bar'
+          }
         },
         {
           id: 'raleigh-lost-ad-1',
           type: 'ad',
-          size: 'banner',
+          size: 'banner'
         },
         {
           id: 'raleigh-lost-4',
@@ -2513,8 +2447,8 @@ export const raleigh: CityData = {
           image: {
             src: '/raleigh/lost-loved/cup-a-joe.png',
             alt: 'Cup A Joe coffee shop on Hillsborough Street',
-            credit: 'Historical Photo',
-          },
+            credit: 'Historical Photo'
+          }
         },
         {
           id: 'raleigh-lost-5',
@@ -2530,8 +2464,8 @@ export const raleigh: CityData = {
           source: 'News & Observer, Publisher\'s Weekly',
           image: {
             src: '/raleigh/lost-loved/readers.png',
-            alt: 'Reader\'s Corner bookstore',
-          },
+            alt: 'Reader\'s Corner bookstore'
+          }
         },
         {
           id: 'raleigh-lost-6',
@@ -2547,13 +2481,13 @@ export const raleigh: CityData = {
           source: 'Indy Week, Concert Archives, Chapel of Bones',
           image: {
             src: '/raleigh/lost-loved/volume11.png',
-            alt: 'Volume 11 Tavern',
-          },
+            alt: 'Volume 11 Tavern'
+          }
         },
         {
           id: 'raleigh-lost-ad-2',
           type: 'ad',
-          size: 'rectangle',
+          size: 'rectangle'
         },
         {
           id: 'raleigh-lost-7',
@@ -2569,8 +2503,8 @@ export const raleigh: CityData = {
           source: 'News & Observer, WRAL',
           image: {
             src: '/raleigh/lost-loved/the-brewery.png',
-            alt: 'The Brewery',
-          },
+            alt: 'The Brewery'
+          }
         },
         {
           id: 'raleigh-lost-8',
@@ -2586,10 +2520,10 @@ export const raleigh: CityData = {
           source: 'News & Observer, Our State Magazine',
           image: {
             src: '/raleigh/lost-loved/clyde.png',
-            alt: 'Clyde Cooper\'s BBQ',
-          },
-        },
-      ],
-    },
-  ],
+            alt: 'Clyde Cooper\'s BBQ'
+          }
+        }
+      ]
+    }
+  ]
 }
