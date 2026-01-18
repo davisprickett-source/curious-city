@@ -1315,17 +1315,8 @@ export const minneapolis: CityData = {
           website: 'https://www.dnr.state.mn.us/state_parks/afton',
           tip: 'The river bluff trails are stunning but steep'
         }
-        ],
-          address: '701 N 1st Ave, Minneapolis, MN 55403',
-          coordinates: { lat: 44.9797, lng: -93.2762 },
-          hours: 'Varies by show',
-          price: '$15-50 depending on artist',
-          website: 'https://first-avenue.com',
-          tip: 'Check the calendar for local acts at 7th Street Entry — that\'s where you\'ll see the next big thing'
-        }
       ]
     },
-
     {
       id: 'hidden-gems',
       type: 'section',
@@ -2473,8 +2464,8 @@ export const minneapolis: CityData = {
               src: '/minneapolis/restaurants/resto-kram-3.png',
               alt: 'Kramarczuk\'s fresh-baked pastries and traditional desserts'
             }
-          ],
-          menuImage: }
+          ]
+        }
       ]
     },
     {

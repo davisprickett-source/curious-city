@@ -466,7 +466,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Japanese Garden',
           category: 'Garden',
-          description: 'Professor Takuma Tono designed this garden with five distinct styles spanning Japanese garden history—unusual, since most Japanese gardens follow a single tradition. Construction began in 1963, opened to the public in 1967. In 1988, Ambassador Matsunaga called it "the most beautiful and authentic Japanese garden in the world outside of Japan." The walk up through Washington Park earns the admission price before you even arrive.'
+          description: 'Professor Takuma Tono designed this garden with five distinct styles spanning Japanese garden history—unusual, since most Japanese gardens follow a single tradition. Construction began in 1963, opened to the public in 1967. In 1988, Ambassador Matsunaga called it "the most beautiful and authentic Japanese garden in the world outside of Japan." The walk up through Washington Park earns the admission price before you even arrive.',
           address: '611 SW Kingston Ave, Portland, OR 97205',
           coordinates: { lat: 45.5189, lng: -122.7067 },
           hours: 'Daily 10am-4pm (varies by season)',
@@ -502,7 +502,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Multnomah Falls',
           category: 'Nature',
-          description: 'Oregon\'s tallest waterfall at 620 feet, 30 miles east of Portland. Over 2 million annual visitors make it the Pacific Northwest\'s most-visited natural site. The 1914 Benson Bridge—a 45-foot reinforced-concrete arch built by Simon Benson\'s Pacific Bridge Company—crosses 105 feet above the lower cascade. Lewis and Clark noted it in 1805. Benson developed the area in the 1920s with a lodge, pathways, and the iconic bridge. The hike to the top is 1.2 miles of switchbacks. Go early or accept the crowds.'
+          description: 'Oregon\'s tallest waterfall at 620 feet, 30 miles east of Portland. Over 2 million annual visitors make it the Pacific Northwest\'s most-visited natural site. The 1914 Benson Bridge—a 45-foot reinforced-concrete arch built by Simon Benson\'s Pacific Bridge Company—crosses 105 feet above the lower cascade. Lewis and Clark noted it in 1805. Benson developed the area in the 1920s with a lodge, pathways, and the iconic bridge. The hike to the top is 1.2 miles of switchbacks. Go early or accept the crowds.',
           address: 'Historic Columbia River Hwy, Bridal Veil, OR 97010',
           coordinates: { lat: 45.5762, lng: -122.1158 },
           hours: 'Dawn to dusk',
@@ -515,7 +515,7 @@ export const portland: CityData = {
           type: 'iconic-spot',
           name: 'Lan Su Chinese Garden',
           category: 'Garden',
-          description: 'Sixty-five artisans from Suzhou lived in Portland for nine months in 1999-2000, building this Ming Dynasty-style garden by hand. They shipped 500 tons of stone and taihu rock from China. Cost $12.8 million. Opened September 14, 2000, as a sister-city project with Suzhou. The name means "Garden of Awakening Orchids." The teahouse serves traditional Chinese tea overlooking rockwork that took centuries to weather into the proper shapes.'
+          description: 'Sixty-five artisans from Suzhou lived in Portland for nine months in 1999-2000, building this Ming Dynasty-style garden by hand. They shipped 500 tons of stone and taihu rock from China. Cost $12.8 million. Opened September 14, 2000, as a sister-city project with Suzhou. The name means "Garden of Awakening Orchids." The teahouse serves traditional Chinese tea overlooking rockwork that took centuries to weather into the proper shapes.',
           address: '239 NW Everett St, Portland, OR 97209',
           coordinates: { lat: 45.5256, lng: -122.6728 },
           hours: 'Daily 10am-6pm (varies by season)',
@@ -762,64 +762,44 @@ export const portland: CityData = {
                               ]
                             },
         {
-                      id: 'gem-museums-new-2',
-                      type: 'hidden-gem',
-                      name: 'Portland Puppet Museum',
-                      category: 'Niche Museum',
-                      description: 'A warehouse converted into a shrine for global puppetry where marionettes dangle from rafters and shadow puppets share wall space with Indonesian wayang goleks. Run by volunteers who care deeply about string tension and cultural context. Workshops teach construction techniques. Performances happen in a 30-seat theater. The collection proves Portland will build a museum for literally anything if you\'re committed enough.',
-                      images: [
-                        {
-                          src: '/portland/hidden-gems/portland-hidden-puppet-1.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display'
-                        },
-                        {
-                          src: '/portland/hidden-gems/portland-hidden-puppet-2.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display'
-                        },
-                        {
-                          src: '/portland/hidden-gems/portland-hidden-puppet-3.png',
-                          alt: 'Interior of Portland Puppet Museum with puppets on display'
-                        }
-                        ],
-                      address: '900 SE Salmon St, Portland, OR 97214', // Found address from web
-                      coordinates: { lat: 45.5143, lng: -122.6596 }, // Approx coordinates
-                      hours: 'Fri-Sun 12pm-5pm', // Typical museum hours, might need verification
-                      price: '$5 admission', // Placeholder price
-                      website: 'http://puppetmuseum.com/', // Found website from web
-                      tip: 'Check their website for current shows and workshops.',
-                      sources: [
-                        {
-                          title: 'Portland Puppet Museum',
-                          publisher: 'Portland Puppet Museum',
-                          url: 'http://puppetmuseum.com/'
-                        },
-                        {
-                          title: 'Portland Puppet Museum',
-                          publisher: 'Atlas Obscura',
-                          url: 'https://www.atlasobscura.com/places/portland-puppet-museum'
-                        }
-                      ]
-                    }
-        ],
-                      address: '8313 SE 13th Ave, Portland, OR 97202', // Found address from web
-                      coordinates: { lat: 45.4746, lng: -122.6468 }, // Approx coordinates
-                      hours: 'Wed-Sun 4pm-9pm', // Typical hours, might need verification
-                      price: '$$', // Mead can be pricey
-                      website: 'https://wyrdleatherandmead.com/', // Found website from web
-                      tip: 'Try a flight of mead and admire the craftsmanship of the leather goods.',
-                      sources: [
-                        {
-                          title: 'Wyrd Leatherworks and Meadery',
-                          publisher: 'Wyrd Leatherworks',
-                          url: 'https://wyrdleatherandmead.com/'
-                        },
-                        {
-                          title: 'Wyrd Leatherworks and Meadery, Portland',
-                          publisher: 'Atlas Obscura',
-                          url: 'https://www.atlasobscura.com/places/wyrd-leatherworks-and-meadery'
-                        }
-                      ]
-                    },
+          id: 'gem-museums-new-2',
+          type: 'hidden-gem',
+          name: 'Portland Puppet Museum',
+          category: 'Niche Museum',
+          description: 'A warehouse converted into a shrine for global puppetry where marionettes dangle from rafters and shadow puppets share wall space with Indonesian wayang goleks. Run by volunteers who care deeply about string tension and cultural context. Workshops teach construction techniques. Performances happen in a 30-seat theater. The collection proves Portland will build a museum for literally anything if you\'re committed enough.',
+          images: [
+            {
+              src: '/portland/hidden-gems/portland-hidden-puppet-1.png',
+              alt: 'Interior of Portland Puppet Museum with puppets on display'
+            },
+            {
+              src: '/portland/hidden-gems/portland-hidden-puppet-2.png',
+              alt: 'Interior of Portland Puppet Museum with puppets on display'
+            },
+            {
+              src: '/portland/hidden-gems/portland-hidden-puppet-3.png',
+              alt: 'Interior of Portland Puppet Museum with puppets on display'
+            }
+          ],
+          address: '900 SE Salmon St, Portland, OR 97214',
+          coordinates: { lat: 45.5143, lng: -122.6596 },
+          hours: 'Fri-Sun 12pm-5pm',
+          price: '$5 admission',
+          website: 'http://puppetmuseum.com/',
+          tip: 'Check their website for current shows and workshops.',
+          sources: [
+            {
+              title: 'Portland Puppet Museum',
+              publisher: 'Portland Puppet Museum',
+              url: 'http://puppetmuseum.com/'
+            },
+            {
+              title: 'Portland Puppet Museum',
+              publisher: 'Atlas Obscura',
+              url: 'https://www.atlasobscura.com/places/portland-puppet-museum'
+            }
+          ]
+        },
         {
           id: 'gem-history-1',
           type: 'hidden-gem',

@@ -361,40 +361,6 @@ export const fargo: CityData = {
                                   }
                                 }
       ]
-    }
-    ],
-          address: '314 Broadway N, Fargo, ND 58102',
-          coordinates: { lat: 46.8773, lng: -96.7898 },
-          hours: 'Varies by showtime',
-          price: '$10 general admission',
-          website: 'https://fargotheatre.org',
-          tip: 'Catch a show with live organ accompaniment when available.'
-        }
-        ],
-          address: '202 1st Ave N, Moorhead, MN 56560',
-          coordinates: { lat: 46.8731, lng: -96.7689 },
-          hours: 'Tue-Sat 10am-5pm, Sun 12-5pm',
-          price: '$10 adults',
-          website: 'https://www.hcscconline.org',
-          tip: 'Don\'t miss the hand-carved stave church replica outside.'
-        }
-        ],
-          address: '704 1st Ave N, Fargo, ND 58102',
-          coordinates: { lat: 46.8779, lng: -96.7898 },
-          hours: 'Tue-Sat 11am-5pm, Thu until 9pm, Sun 12-5pm',
-          price: 'Free',
-          website: 'https://plainsart.org',
-          tip: 'Thursday nights offer free admission with extended hours until 9pm.'
-        }
-        ],
-          address: '4255 23rd Ave S, Fargo, ND 58104',
-          coordinates: { lat: 46.8378, lng: -96.8544 },
-          hours: 'Daily 10am-5pm (summer), reduced winter hours',
-          price: '$12 adults',
-          website: 'https://redriverzoo.org',
-          tip: 'The red pandas are the stars — arrive early when they\'re most active.'
-        }
-      ]
     },
     {
       id: 'far-hidden-gems',

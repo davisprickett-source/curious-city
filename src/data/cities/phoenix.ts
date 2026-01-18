@@ -483,14 +483,6 @@ export const phoenix: CityData = {
           price: '$18 adults',
           website: 'https://heard.org',
           tip: 'The bookstore here is arguably the best place in the country to buy authentic, artist-sourced Native American jewelry and books.'
-        }
-        ],
-          address: '12621 N Frank Lloyd Wright Blvd, Scottsdale, AZ 85259',
-          coordinates: { lat: 33.6067, lng: -111.8448 },
-          hours: 'Tours daily; schedule varies',
-          price: '$38-$80 depending on tour',
-          website: 'https://franklloydwright.org/taliesin-west',
-          tip: 'The "Night Lights" tour is the move; the way the building glows against the desert dark is how Wright intended it to be seen.'
         },
         {
           id: 'iconic-south-mountain',

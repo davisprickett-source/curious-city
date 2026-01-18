@@ -773,10 +773,15 @@ function RelatedStoryCards({ currentCity, currentSlug }: { currentCity: string; 
 
       // 2. Get 2 discover pages from SAME city
       try {
-        const currentArticleHref = `/${currentCity}/articles/${currentSlug}`
+        // Normalize slug by removing -premium suffix for comparison
+        // getCityFeaturedEntries uses base slugs, but we might have premium slug
+        const baseSlug = currentSlug.replace(/-premium$/, '')
+        const currentArticleHref = `/${currentCity}/articles/${baseSlug}`
         const sameCityEntries = await getCityFeaturedEntries(currentCity)
+        // Filter out the current article (by href) and any article type entries
+        // to ensure we're suggesting different content types
         const discoverPages = sameCityEntries
-          .filter((entry) => !usedIds.has(entry.id) && entry.href !== currentArticleHref)
+          .filter((entry) => !usedIds.has(entry.id) && entry.href !== currentArticleHref && entry.type !== 'article')
           .slice(0, 2)
 
         for (const entry of discoverPages) {

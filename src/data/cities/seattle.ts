@@ -343,7 +343,7 @@ export const seattle: CityData = {
           type: 'iconic-spot',
           name: 'Pike Place Market',
           category: 'Market',
-          description: 'Opened August 17, 1907 when eight farmers sold produce from wagon backs to 10,000 people furious about rising food prices. Now it\'s nine acres of chaos—fish flying through air at Pike Place Fish, Rachel the 550-pound bronze pig collecting $6,000-$9,000 annually for social services, the original Starbucks (which purists will tell you is a tourist trap), and that disgusting Gum Wall. Fish throwing started for practical reasons decades ago: expediting sales by tossing catch from front counter to back. Tourists made it performance art.'
+          description: 'Opened August 17, 1907 when eight farmers sold produce from wagon backs to 10,000 people furious about rising food prices. Now it\'s nine acres of chaos—fish flying through air at Pike Place Fish, Rachel the 550-pound bronze pig collecting $6,000-$9,000 annually for social services, the original Starbucks (which purists will tell you is a tourist trap), and that disgusting Gum Wall. Fish throwing started for practical reasons decades ago: expediting sales by tossing catch from front counter to back. Tourists made it performance art.',
           address: '85 Pike St, Seattle, WA 98101',
           coordinates: { lat: 47.6097, lng: -122.3422 },
           hours: 'Daily 9am-6pm',
@@ -356,7 +356,7 @@ export const seattle: CityData = {
           type: 'iconic-spot',
           name: 'Space Needle',
           category: 'Landmark',
-          description: 'The 605-foot icon built for the 1962 World\'s Fair. The rotating glass floor (added in 2018) isn\'t for the faint-hearted, but the views of Mount Rainier, the Olympics, and the city are unmatched.'
+          description: 'The 605-foot icon built for the 1962 World\'s Fair. The rotating glass floor (added in 2018) isn\'t for the faint-hearted, but the views of Mount Rainier, the Olympics, and the city are unmatched.',
           address: '400 Broad St, Seattle, WA 98109',
           coordinates: { lat: 47.6205, lng: -122.3493 },
           hours: 'Daily 9am-11pm',
@@ -369,7 +369,7 @@ export const seattle: CityData = {
           type: 'iconic-spot',
           name: 'Museum of Pop Culture (MoPOP)',
           category: 'Museum',
-          description: 'Microsoft cofounder Paul Allen commissioned Frank Gehry to design a shrine to Jimi Hendrix and rock history. Opened in 2000 as Experience Music Project. Gehry used CATIA aerospace software—first architect ever—to digitize his sculptural forms into buildable geometry. He collected Stratocaster bodies, drew on their shapes, clad the result in purple mirror-finish stainless steel, brushed silver, gold, red and blue aluminum. It looks like a smashed guitar or melted spaceship depending on who you ask. The monorail runs through it. Inside: definitive Hendrix and Nirvana collections, science fiction exhibits, horror film artifacts. Renamed MoPOP in 2016. The building is as much an exhibit as anything inside.'
+          description: 'Microsoft cofounder Paul Allen commissioned Frank Gehry to design a shrine to Jimi Hendrix and rock history. Opened in 2000 as Experience Music Project. Gehry used CATIA aerospace software—first architect ever—to digitize his sculptural forms into buildable geometry. He collected Stratocaster bodies, drew on their shapes, clad the result in purple mirror-finish stainless steel, brushed silver, gold, red and blue aluminum. It looks like a smashed guitar or melted spaceship depending on who you ask. The monorail runs through it. Inside: definitive Hendrix and Nirvana collections, science fiction exhibits, horror film artifacts. Renamed MoPOP in 2016. The building is as much an exhibit as anything inside.',
           address: '325 5th Ave N, Seattle, WA 98109',
           coordinates: { lat: 47.6215, lng: -122.3481 },
           hours: 'Daily 10am-5pm',

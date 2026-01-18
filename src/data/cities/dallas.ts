@@ -649,38 +649,6 @@ export const dallas: CityData = {
           ]
         }
       ]
-    }
-    ],
-          address: '2001 Flora St, Dallas, TX 75201',
-          coordinates: { lat: 32.7896, lng: -96.7992 },
-          hours: 'Tue-Sun 11am-5pm',
-          price: '$10 adults',
-          website: 'https://nashersculpturecenter.org',
-          tip: 'The first Saturday of each month is free'
-        }
-        ],
-          address: '8300 E Lawther Dr, Dallas, TX 75218',
-          coordinates: { lat: 32.8272, lng: -96.7244 },
-          hours: '6am-midnight',
-          price: 'Free',
-          tip: 'The Bath House Cultural Center on the lake hosts excellent small exhibitions'
-        }
-        ],
-          address: 'Deep Ellum, Dallas, TX 75226',
-          coordinates: { lat: 32.7848, lng: -96.7845 },
-          hours: 'Businesses vary',
-          price: 'Free to explore',
-          tip: 'Trees is the legendary music venue; Pecan Lodge has some of the city\'s best BBQ'
-        }
-        ],
-          address: '920 S Harwood St, Dallas, TX 75201',
-          coordinates: { lat: 32.7770, lng: -96.7951 },
-          hours: 'Daily, hours vary by vendor',
-          price: 'Free to browse',
-          website: 'https://dallasfarmersmarket.org',
-          tip: 'Mudhen Meat and Greens for excellent local sourcing'
-        }
-      ]
     },
     {
       id: 'dal-hidden-gems',

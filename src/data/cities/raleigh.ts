@@ -265,21 +265,7 @@ export const raleigh: CityData = {
                                       url: 'https://www.womenhistoryblog.com/2009/05/eliza-johnson.html'
                                     }
                                   ]
-                                }
-        ],
-                          sources: [
-                            {
-                              title: 'Pullen Park',
-                              url: 'https://raleighnc.gov/parks-and-recreation/places/pullen-park'
-                            },
-                            {
-                              title: 'Pullen Park in Raleigh',
-                              url: 'https://www.nctripping.com/pullen-park-raleigh-nc/'
-                            }
-                          ],
-                          location: { name: 'Pullen Park',
-      url: 'https://www.google.com/maps/search/?api=1&query=Pullen%20Park%20Raleigh', stillExists: true }
-                        },
+                                },
         {
                                   id: 'curiosity-ad-3',
                                   type: 'ad',

@@ -386,7 +386,7 @@ export const colorado_springs: CityData = {
           name: 'Garden of the Gods',
           category: 'Natural Wonder',
           description:
-            'In 1879, railroad mogul Charles Elliott Perkins purchased 480 acres that included a portion of the present Garden of the Gods. He planned to build a summer home but instead kept the land in its natural state for the public. Perkins died in 1907 before making arrangements. On December 22, 1909, his children deeded the land to Colorado Springs with the stipulation that it remain "free to the entire world." The full provision: "where it shall remain free to the public, where no intoxicating liquors shall be manufactured, sold, or dispensed." A 1,300-acre geological masterclass in red sandstone. These 300-foot fins were once horizontal sand dunes 300 million years ago, eventually thrust vertical by the Laramide Orogeny. Designated a National Natural Landmark in 1971. A rare piece of high-value real estate where the only thing you have to pay is attention.'
+            'In 1879, railroad mogul Charles Elliott Perkins purchased 480 acres that included a portion of the present Garden of the Gods. He planned to build a summer home but instead kept the land in its natural state for the public. Perkins died in 1907 before making arrangements. On December 22, 1909, his children deeded the land to Colorado Springs with the stipulation that it remain "free to the entire world." The full provision: "where it shall remain free to the public, where no intoxicating liquors shall be manufactured, sold, or dispensed." A 1,300-acre geological masterclass in red sandstone. These 300-foot fins were once horizontal sand dunes 300 million years ago, eventually thrust vertical by the Laramide Orogeny. Designated a National Natural Landmark in 1971. A rare piece of high-value real estate where the only thing you have to pay is attention.',
           address: '1805 N 30th St, Colorado Springs, CO 80904',
           coordinates: { lat: 38.8783, lng: -104.8818 },
           hours: 'Daily 5am-10pm (May-Oct), 5am-9pm (Nov-Apr)',
@@ -400,7 +400,7 @@ export const colorado_springs: CityData = {
           name: 'Pikes Peak',
           category: 'Mountain',
           description:
-            'In 1889, Zalmon Simmons founded the Manitou and Pikes Peak Railway Company. Two years later, the first passengers—a church choir from Denver—reached the summit via nine-mile cog rails. In 1893, the cog railway wasn\'t working, so Katharine Lee Bates rode horses and mules to the summit. The view inspired "America the Beautiful," published July 4, 1895. Spencer Penrose built the Pikes Peak Highway from the old carriage road in 1915. In 1926, he purchased the cog railway from Simmons. After 126 years, the railway closed in 2018 for a three-year, $100M rebuild—all nine miles of track replaced. America\'s most accessible 14er. At 14,115 feet, the air is thin enough to make you emotional and the donuts at the summit house are the only ones in the world fried at this altitude—expect them to be cakey, oily, and strangely vital.'
+            'In 1889, Zalmon Simmons founded the Manitou and Pikes Peak Railway Company. Two years later, the first passengers—a church choir from Denver—reached the summit via nine-mile cog rails. In 1893, the cog railway wasn\'t working, so Katharine Lee Bates rode horses and mules to the summit. The view inspired "America the Beautiful," published July 4, 1895. Spencer Penrose built the Pikes Peak Highway from the old carriage road in 1915. In 1926, he purchased the cog railway from Simmons. After 126 years, the railway closed in 2018 for a three-year, $100M rebuild—all nine miles of track replaced. America\'s most accessible 14er. At 14,115 feet, the air is thin enough to make you emotional and the donuts at the summit house are the only ones in the world fried at this altitude—expect them to be cakey, oily, and strangely vital.',
           address: 'Pikes Peak Hwy, Cascade, CO 80809',
           coordinates: { lat: 38.8409, lng: -105.0423 },
           hours: 'Highway: Daily 7:30am-7pm (summer), varies by season',
@@ -414,7 +414,7 @@ export const colorado_springs: CityData = {
           name: 'The Broadmoor',
           category: 'Historic Resort',
           description:
-            'Spencer Penrose—millionaire businessman making a fortune in Cripple Creek mining—tried to stay at the Antlers Hotel and was quickly escorted off the property. After William Jackson Palmer died in 1909, Penrose attempted to buy the Antlers but couldn\'t reach an agreement. Reputedly, he rode his horse through the Antlers lobby in protest. Then he built The Broadmoor. Opened June 29, 1918. A pink-stucco monument to revenge and opulence, designed to be the "Grand Dame of the Rockies." Three golf courses, a lake filled with swans, enough gold leaf to baffle a prospector. The small "a" in all signage? Originally thought to be a snub to The Antlers. Tessie the elephant—named after a prostitute in a Cripple Creek mining camp—was a retired circus performer housed on hotel grounds. Once caddied for Penrose and boxer Jack Dempsey on the golf course. Today, the luxury is more refined but no less dramatic.'
+            'Spencer Penrose—millionaire businessman making a fortune in Cripple Creek mining—tried to stay at the Antlers Hotel and was quickly escorted off the property. After William Jackson Palmer died in 1909, Penrose attempted to buy the Antlers but couldn\'t reach an agreement. Reputedly, he rode his horse through the Antlers lobby in protest. Then he built The Broadmoor. Opened June 29, 1918. A pink-stucco monument to revenge and opulence, designed to be the "Grand Dame of the Rockies." Three golf courses, a lake filled with swans, enough gold leaf to baffle a prospector. The small "a" in all signage? Originally thought to be a snub to The Antlers. Tessie the elephant—named after a prostitute in a Cripple Creek mining camp—was a retired circus performer housed on hotel grounds. Once caddied for Penrose and boxer Jack Dempsey on the golf course. Today, the luxury is more refined but no less dramatic.',
           address: '1 Lake Ave, Colorado Springs, CO 80906',
           coordinates: { lat: 38.7909, lng: -104.8481 },
           hours: 'Daily, 24/7',
@@ -428,7 +428,7 @@ export const colorado_springs: CityData = {
           name: 'Manitou Incline',
           category: 'Extreme Trail',
           description:
-            'Construction began in 1907 to build a cable railway for hauling materials to construct a hydroelectric plant and waterline. After construction finished, Dr. Newton M. Brumback bought the railway and converted it to a 16-minute tourist ride to Mount Manitou Park. The Pikes Peak Cog Railway operated it until a 1990 rockslide washed out the rail bed. The Cog Railway decided not to repair it. Rails were removed, creating a natural staircase of railroad ties. For years, hikers trespassed illegally. In February 2013, the land became public and hiking became legal. Now one of Colorado\'s most brutal workouts—2,744 steps climbing 2,000 feet in less than a mile. Grades up to 68%. Average climb: 1-2 hours. Reservations required.'
+            'Construction began in 1907 to build a cable railway for hauling materials to construct a hydroelectric plant and waterline. After construction finished, Dr. Newton M. Brumback bought the railway and converted it to a 16-minute tourist ride to Mount Manitou Park. The Pikes Peak Cog Railway operated it until a 1990 rockslide washed out the rail bed. The Cog Railway decided not to repair it. Rails were removed, creating a natural staircase of railroad ties. For years, hikers trespassed illegally. In February 2013, the land became public and hiking became legal. Now one of Colorado\'s most brutal workouts—2,744 steps climbing 2,000 feet in less than a mile. Grades up to 68%. Average climb: 1-2 hours. Reservations required.',
           address: 'Ruxton Ave & Hydro St, Manitou Springs, CO 80829',
           coordinates: { lat: 38.8556, lng: -104.9394 },
           hours: 'Daily 6am-6pm (reservations required)',
@@ -442,7 +442,7 @@ export const colorado_springs: CityData = {
           name: 'Seven Falls',
           category: 'Waterfall',
           description:
-            'A series of seven cascading waterfalls tumbling 181 feet in a box canyon. Climb the 224 steps alongside the falls or take the elevator. The Pillars of Hercules frame the canyon entrance. Night illumination with colored lights creates a magical atmosphere. Listed as one of the "Grandest Mile of Scenery in Colorado."'
+            'A series of seven cascading waterfalls tumbling 181 feet in a box canyon. Climb the 224 steps alongside the falls or take the elevator. The Pillars of Hercules frame the canyon entrance. Night illumination with colored lights creates a magical atmosphere. Listed as one of the "Grandest Mile of Scenery in Colorado."',
           address: '2850 S Cheyenne Canyon Rd, Colorado Springs, CO 80906',
           coordinates: { lat: 38.7831, lng: -104.8783 },
           hours: 'Daily 9am-9pm (summer), 9am-5pm (winter)',
@@ -456,7 +456,7 @@ export const colorado_springs: CityData = {
           name: 'U.S. Air Force Academy Cadet Chapel',
           category: 'Architecture',
           description:
-            'A modernist masterpiece with 17 aluminum spires soaring 150 feet. This architectural icon features 24,000 pieces of stained glass and houses Protestant, Catholic, Jewish, and Buddhist chapels. Designed by Walter Netsch and completed in 1962. The pews incorporate airplane propeller ends and fighter wing aluminum.'
+            'A modernist masterpiece with 17 aluminum spires soaring 150 feet. This architectural icon features 24,000 pieces of stained glass and houses Protestant, Catholic, Jewish, and Buddhist chapels. Designed by Walter Netsch and completed in 1962. The pews incorporate airplane propeller ends and fighter wing aluminum.',
           address: '2346 Academy Dr, USAF Academy, CO 80840',
           coordinates: { lat: 38.9906, lng: -104.8902 },
           hours: 'Daily 9am-5pm (subject to academy restrictions)',
@@ -761,13 +761,6 @@ export const colorado_springs: CityData = {
           price: '$58-68 adults',
           website: 'https://www.cograilway.com/',
           tip: 'Book well in advance — summer and fall colors sell out fast.'
-        }
-        ],
-          address: 'Old Colorado City, W Colorado Ave corridor',
-          coordinates: { lat: 38.8385, lng: -104.8621 },
-          hours: 'Not publicly accessible (view from street level)',
-          price: 'Free',
-          tip: 'Walk along W Colorado Ave and imagine what lies beneath — some local businesses know tunnel stories.'
         },
         {
           id: 'gem-money-museum',

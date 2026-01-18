@@ -493,61 +493,6 @@ export const denver: CityData = {
           ]
         }
       ]
-    }
-    ],
-          address: '18300 W Alameda Pkwy, Morrison, CO 80465',
-          coordinates: { lat: 39.6654, lng: -105.2057 },
-          hours: 'Park open daily 5am-11pm',
-          price: 'Free during day; concerts vary',
-          website: 'https://redrocksonline.com',
-          tip: 'Sunrise yoga classes happen on the venue steps'
-        }
-        ],
-          address: '1701 Wynkoop St, Denver, CO 80202',
-          coordinates: { lat: 39.7529, lng: -105.0000 },
-          hours: 'Building open 24 hours; businesses vary',
-          price: 'Free to visit',
-          website: 'https://unionstationindenver.com',
-          tip: 'The Cooper Lounge upstairs is the classy option'
-        },
-        {
-          id: 'iconic-ad-1',
-          type: 'ad',
-          size: 'banner'
-        }
-        ],
-          address: '100 W 14th Ave Pkwy, Denver, CO 80204',
-          coordinates: { lat: 39.7372, lng: -104.9893 },
-          hours: 'Sun-Thu 10am-5pm, Fri-Sat 10am-8pm',
-          price: '$15 adults; free for kids under 18',
-          website: 'https://denverartmuseum.org',
-          tip: 'First Saturday of each month is free for Colorado residents'
-        }
-        ],
-          address: '1338 1st St, Denver, CO 80204',
-          coordinates: { lat: 39.7411, lng: -105.0156 },
-          hours: 'Wed-Mon 10am-10pm, closed Tues',
-          price: '$45 adults',
-          website: 'https://meowwolf.com/visit/denver',
-          tip: 'Go on a weekday to avoid crowds'
-        }
-        ],
-          address: 'Larimer St between 14th and 15th, Denver, CO 80202',
-          coordinates: { lat: 39.7475, lng: -104.9995 },
-          hours: 'Businesses vary',
-          price: 'Free to walk',
-          website: 'https://larimersquare.com',
-          tip: 'Rioja for Spanish-influenced food, Tamayo for rooftop Mexican'
-        }
-        ],
-          address: '2620 16th St, Denver, CO 80211',
-          coordinates: { lat: 39.7592, lng: -105.0105 },
-          hours: 'Daily 11am-11pm',
-          price: '$',
-          website: 'https://littlemanicecream.com',
-          tip: 'The line is long, but they have a "Scoop for Scoop" program that donates a portion of every sale to charity.'
-        }
-      ]
     },
     {
       id: 'den-hidden-gems',
