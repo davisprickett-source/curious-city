@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import { Fragment } from 'react'
 import { getCity, getAllCitySlugs } from '@/data/cities'
 
-// Revalidate tour data every hour
-export const revalidate = 3600
+// Force dynamic rendering to fetch fresh tour data
+export const dynamic = 'force-dynamic'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
 import { Footer } from '@/components'
 import { BreadcrumbSchema } from '@/components/StructuredData'
@@ -15,11 +15,6 @@ import type { TourCategory } from '@/lib/viator/types'
 interface PageProps {
   params: Promise<{ city: string }>
   searchParams: Promise<{ category?: string }>
-}
-
-export async function generateStaticParams() {
-  const slugs = getAllCitySlugs()
-  return slugs.map((city) => ({ city }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

@@ -18,6 +18,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Googlebot-Image',
         allow: '/',
       },
+      {
+        userAgent: 'AhrefsBot',
+        allow: '/',
+      },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
   }
