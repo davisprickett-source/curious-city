@@ -234,7 +234,6 @@ function CircularLoader({ progress }: { progress: number }) {
 export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const storyContentRef = useRef<HTMLDivElement>(null)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
   const [scrollProgress, setScrollProgress] = useState(0)
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
   const [currentFrame, setCurrentFrame] = useState(1)
@@ -246,7 +245,6 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
   const [cityName, setCityName] = useState('')
   const [firstFramePath, setFirstFramePath] = useState('')
   const lastLoadedFrameRef = useRef<string>('') // Track last successfully displayed frame
-  const lastDrawnFrameRef = useRef<string>('') // Track what's currently on canvas
 
   // Get city name
   useEffect(() => {
@@ -307,68 +305,21 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     return cdnUrl ? `${cdnUrl}${path}` : path
   }
 
-  // Draw image to canvas - uses pre-loaded Image objects directly
-  const drawToCanvas = useCallback((img: HTMLImageElement) => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-
-    // Set canvas size to match container (only on first draw or resize)
-    const container = canvas.parentElement
-    if (container) {
-      const { width, height } = container.getBoundingClientRect()
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width
-        canvas.height = height
-      }
-    }
-
-    // Draw image to cover canvas (like object-cover)
-    const canvasRatio = canvas.width / canvas.height
-    const imgRatio = img.width / img.height
-
-    let drawWidth, drawHeight, offsetX, offsetY
-
-    if (imgRatio > canvasRatio) {
-      // Image is wider - fit height, crop width
-      drawHeight = canvas.height
-      drawWidth = img.width * (canvas.height / img.height)
-      offsetX = (canvas.width - drawWidth) / 2
-      offsetY = 0
-    } else {
-      // Image is taller - fit width, crop height
-      drawWidth = canvas.width
-      drawHeight = img.height * (canvas.width / img.width)
-      offsetX = 0
-      offsetY = (canvas.height - drawHeight) / 2
-    }
-
-    ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight)
-  }, [])
-
-  // Preload frames progressively - prioritize first sequence for faster start
+  // Preload frames progressively - first frame loads immediately
   useEffect(() => {
-    // Group frames by sequence for priority loading
-    const sequenceFrames: string[][] = []
+    const totalFramesToLoad: string[] = []
 
     videoBlocks.forEach((block) => {
       const seqName = getSequenceName(block.videoPath)
       const frameCount = getFrameCount(seqName)
-      const frames: string[] = []
       for (let i = 1; i <= frameCount; i++) {
-        frames.push(getFramePath(seqName, i))
+        totalFramesToLoad.push(getFramePath(seqName, i))
       }
-      sequenceFrames.push(frames)
     })
 
-    const firstSequence = sequenceFrames[0] || []
-    const remainingSequences = sequenceFrames.slice(1)
-
-    // Load first frame immediately and draw to canvas
-    if (firstSequence.length > 0) {
-      const firstFrame = firstSequence[0]
+    // Load first frame immediately
+    if (totalFramesToLoad.length > 0) {
+      const firstFrame = totalFramesToLoad[0]
       setFirstFramePath(firstFrame)
 
       const firstImg = new Image()
@@ -376,92 +327,58 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         loadedFramesRef.current.add(firstFrame)
         imagesRef.current.set(firstFrame, firstImg)
         setIsCurrentFrameLoaded(true)
-        // Draw first frame to canvas immediately
-        drawToCanvas(firstImg)
       }
       firstImg.src = firstFrame
     }
 
-    let loadedInFirstSeq = 0
-    const firstSeqTotal = firstSequence.length
+    const totalFrames = totalFramesToLoad.length
+    let loadedCount = 0
 
-    // Load first sequence with high priority - this determines when user can start
-    const loadFirstSequence = async () => {
-      const batchSize = 30 // Larger batches for first sequence
+    // Calculate the "initial load" threshold (10% of frames)
+    const initialLoadThreshold = Math.ceil(totalFrames * 0.1)
 
-      for (let i = 0; i < firstSequence.length; i += batchSize) {
-        const batch = firstSequence.slice(i, i + batchSize)
+    const loadBatch = async (startIdx: number, batchSize: number) => {
+      const batch = totalFramesToLoad.slice(startIdx, startIdx + batchSize)
 
-        await Promise.all(
-          batch.map((framePath) => {
-            return new Promise<void>((resolve) => {
-              if (loadedFramesRef.current.has(framePath)) {
-                loadedInFirstSeq++
-                setLoadingProgress(Math.round((loadedInFirstSeq / firstSeqTotal) * 100))
-                resolve()
-                return
-              }
+      await Promise.all(
+        batch.map((framePath) => {
+          return new Promise<void>((resolve) => {
+            if (loadedFramesRef.current.has(framePath)) {
+              loadedCount++
+              resolve()
+              return
+            }
 
-              const img = new Image()
-              img.onload = () => {
-                loadedFramesRef.current.add(framePath)
-                imagesRef.current.set(framePath, img)
-                loadedInFirstSeq++
-                setLoadingProgress(Math.round((loadedInFirstSeq / firstSeqTotal) * 100))
-                resolve()
-              }
-              img.onerror = () => {
-                loadedInFirstSeq++
-                resolve()
-              }
-              img.src = framePath
-            })
+            const img = new Image()
+            img.onload = () => {
+              loadedFramesRef.current.add(framePath)
+              imagesRef.current.set(framePath, img)
+              loadedCount++
+              // Scale progress: 0-10% of actual frames = 0-100% visual progress
+              const scaledProgress = Math.min(100, Math.round((loadedCount / initialLoadThreshold) * 100))
+              setLoadingProgress(scaledProgress)
+              resolve()
+            }
+            img.onerror = () => {
+              loadedCount++
+              resolve()
+            }
+            img.src = framePath
           })
-        )
+        })
+      )
+
+      // Stop showing loading UI once we hit the threshold
+      if (loadedCount >= initialLoadThreshold) {
+        setIsLoading(false)
       }
 
-      // User can start as soon as first sequence is loaded
-      setIsLoading(false)
-
-      // Load remaining sequences in background
-      loadRemainingSequences()
-    }
-
-    // Load remaining sequences after first is done
-    const loadRemainingSequences = async () => {
-      for (const sequence of remainingSequences) {
-        const batchSize = 20
-
-        for (let i = 0; i < sequence.length; i += batchSize) {
-          const batch = sequence.slice(i, i + batchSize)
-
-          await Promise.all(
-            batch.map((framePath) => {
-              return new Promise<void>((resolve) => {
-                if (loadedFramesRef.current.has(framePath)) {
-                  resolve()
-                  return
-                }
-
-                const img = new Image()
-                img.onload = () => {
-                  loadedFramesRef.current.add(framePath)
-                  imagesRef.current.set(framePath, img)
-                  resolve()
-                }
-                img.onerror = () => resolve()
-                img.src = framePath
-              })
-            })
-          )
-
-          // Small delay between batches to not block main thread
-          await new Promise(r => setTimeout(r, 5))
-        }
+      if (startIdx + batchSize < totalFrames) {
+        setTimeout(() => loadBatch(startIdx + batchSize, batchSize), 10)
       }
     }
 
-    loadFirstSequence()
+    loadBatch(0, 20)
   }, [videoBlocks])
 
   // Calculate weighted scroll thresholds based on scrollHeight values
@@ -583,35 +500,8 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
     lastLoadedFrameRef.current = framePath
   }
 
-  // Determine which frame to display
+  // Use last loaded frame as fallback (stays on current position instead of jumping to start)
   const displayPath = isFrameLoaded ? framePath : (lastLoadedFrameRef.current || firstFramePath || framePath)
-
-  // Draw current frame to canvas when it changes
-  useEffect(() => {
-    if (!displayPath) return
-
-    // Don't redraw if it's the same frame
-    if (lastDrawnFrameRef.current === displayPath) return
-
-    const img = imagesRef.current.get(displayPath)
-    if (img) {
-      drawToCanvas(img)
-      lastDrawnFrameRef.current = displayPath
-    }
-  }, [displayPath, drawToCanvas])
-
-  // Handle canvas resize
-  useEffect(() => {
-    const handleResize = () => {
-      const img = imagesRef.current.get(displayPath)
-      if (img) {
-        drawToCanvas(img)
-      }
-    }
-
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [displayPath, drawToCanvas])
 
   return (
     <>
@@ -676,10 +566,11 @@ export function VideoHistoryScroll({ history }: VideoHistoryScrollProps) {
         {/* Left Side: Video (Fixed on all screens) */}
         {/* Desktop: extends slightly beyond letterbox bars (12vh-88vh = 76vh tall), bars crop edges minimally */}
         <div className="fixed left-0 right-0 top-[57px] h-[30vh] lg:right-auto lg:w-[70%] lg:top-[12vh] lg:h-[76vh] bg-neutral-900 flex items-center justify-center z-20 will-change-transform">
-          {/* Canvas for frame rendering - draws directly from preloaded Image objects */}
-          <canvas
-            ref={canvasRef}
-            className="w-full h-full will-change-transform"
+          {/* Always show an image - use object-cover to fill without black bars */}
+          <img
+            src={displayPath}
+            alt=""
+            className="w-full h-full object-cover will-change-transform"
             style={{
               transform: 'translateZ(0)', // Force GPU layer for smoother rendering
             }}
