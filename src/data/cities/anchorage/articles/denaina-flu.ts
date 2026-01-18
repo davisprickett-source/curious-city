@@ -12,9 +12,8 @@ export const denainaFlu: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/anchorage/articles/denaina-flu.png',
-    alt: 'Historic photograph of Ship Creek tent city, Anchorage, 1915',
-    credit: 'August Cohn Photograph Album / Library of Congress',
+    src: '/anchorage/articles/early-anchorage-3.png',
+    alt: 'Early Anchorage',
   },
   category: 'history',
   tags: ['anchorage', 'indigenous-history', 'denaina', '1918-flu', 'pandemic', 'colonization', 'forgotten-history'],
@@ -22,6 +21,11 @@ export const denainaFlu: Article = {
     longform: {
       enabled: true,
       blocks: [
+        {
+          type: 'image',
+          src: '/anchorage/articles/early-anchorage-3.png',
+          alt: 'Early Anchorage',
+        },
         {
           type: 'paragraph',
           content: 'Anchorage tells a founding story about itself. In 1914, Congress authorized the Alaska Railroad. In 1915, workers arrived at Ship Creek to build a construction camp. A tent city sprang up. Lots were auctioned. A town was born. It\'s a classic American origin story: empty wilderness, hardy pioneers, civilization carved from nothing.',
@@ -33,6 +37,11 @@ export const denainaFlu: Article = {
         {
           type: 'paragraph',
           content: 'Then, in 1918, the Spanish flu came to Alaska. What happened next is the founding tragedy that Anchorage has never acknowledged: the near-extinction of the Dena\'ina, the abandonment of eight villages, the demographic collapse that conveniently cleared the way for colonial development. Anchorage wasn\'t built on empty land. It was built on graves.',
+        },
+        {
+          type: 'image',
+          src: '/anchorage/articles/athabascan-5.png',
+          alt: 'Dena\'ina Athabascan people',
         },
         {
           type: 'heading',
@@ -53,10 +62,8 @@ export const denainaFlu: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Eklutna_Spirit_Houses.jpg',
-          alt: 'Colorful spirit houses at Eklutna Cemetery, a blend of Dena\'ina and Russian Orthodox traditions',
-          caption: 'Spirit houses at Eklutna Historical Park. These traditional Dena\'ina structures are placed over graves, reflecting a culture that has endured for a millennium.',
-          credit: 'Wikimedia Commons',
+          src: '/anchorage/hidden-gems/eklutna-1.png',
+          alt: 'Spirit houses at Eklutna',
         },
         {
           type: 'quote',
@@ -104,13 +111,6 @@ export const denainaFlu: Article = {
         {
           type: 'paragraph',
           content: 'The Spanish flu reached Alaska in the fall of 1918, arriving on ships from Seattle. It spread along the coastlines and up the rivers, following the routes that connected Alaska\'s scattered settlements. By October, it had reached Anchorage.',
-        },
-        {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/CampFunston_InfluenzaHospital.jpg',
-          alt: 'A crowded hospital ward during the 1918 influenza pandemic',
-          caption: 'A 1918 influenza ward. When the virus reached Alaska\'s Indigenous villages, it proved catastrophic, killing half the Dena\'ina population in some areas.',
-          credit: 'Library of Congress',
         },
         {
           type: 'paragraph',
@@ -200,21 +200,6 @@ export const denainaFlu: Article = {
         {
           type: 'paragraph',
           content: 'The Eklutna tribe and other Dena\'ina organizations continue to advocate for recognition, for land rights, for acknowledgment of what was lost. But Anchorage has never formally reckoned with its founding tragedy. There is no memorial to the pandemic dead. No official acknowledgment that the city was built on the ruins of a society it helped destroy.',
-        },
-        {
-          type: 'divider',
-        },
-        {
-          type: 'paragraph',
-          content: 'Anchorage was founded in 1915 on Dena\'ina land. Three years later, the Spanish flu arrived and killed approximately half the Dena\'ina population. Eight villages were abandoned. A thousand years of continuous habitation collapsed in a matter of months. The survivors scattered. The dead were buried in unmarked graves. And Anchorage grew over the ruins.',
-        },
-        {
-          type: 'paragraph',
-          content: 'This is the founding tragedy that Anchorage doesn\'t tell about itself. The standard history celebrates pioneers and railroads, as if the land had been empty before Americans arrived. But the land wasn\'t empty. It was full of people — people who fished the same salmon runs, hunted the same mountains, lived on the same coastline for longer than English has been a language.',
-        },
-        {
-          type: 'paragraph',
-          content: 'The flu didn\'t just kill people. It killed a culture at the exact moment another culture was arriving to replace it. The timing wasn\'t coincidence — the railroad brought the workers who brought the disease. Anchorage\'s birth and the Dena\'ina\'s near-death were the same event, viewed from different angles. The city was built on graves. It just doesn\'t like to remember.',
         },
         {
           type: 'callout',
