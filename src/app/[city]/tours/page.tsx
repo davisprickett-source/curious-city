@@ -17,6 +17,15 @@ interface PageProps {
   searchParams: Promise<{ category?: string }>
 }
 
+// Pre-build tours pages at build time for cities with Viator configured
+export async function generateStaticParams() {
+  // Only pre-build for cities that have Viator destination IDs
+  return [
+    { city: 'chicago' },
+    // Add more cities here as we add their destination IDs
+  ]
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city: slug } = await params
   const city = await getCity(slug)
