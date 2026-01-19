@@ -68,18 +68,19 @@ export class ViatorClient {
   }
 
   /**
-   * Search for products/tours by destination (single page)
+   * Search for products/tours by destination (single page with offset)
    */
   private async searchProductsPage(
     params: ViatorSearchParams,
-    cursor?: string
-  ): Promise<{ products: ViatorProduct[]; nextCursor?: string }> {
+    offset: number = 0
+  ): Promise<{ products: ViatorProduct[]; totalCount: number }> {
     const body: Record<string, unknown> = {
       filtering: {
         destination: params.destId.toString(),
       },
       pagination: {
-        count: Math.min(params.count || 50, 50), // Viator max is 50 per page
+        count: 50, // Viator max is 50 per page
+        start: offset,
       },
       currency: params.currency || 'USD',
     }
@@ -99,14 +100,7 @@ export class ViatorClient {
       }
     }
 
-    if (cursor) {
-      body.pagination = {
-        ...body.pagination,
-        cursor,
-      }
-    }
-
-    const response = await this.fetch<{ products: ViatorProduct[]; nextCursor?: string }>(
+    const response = await this.fetch<{ products: ViatorProduct[]; totalCount: number }>(
       '/products/search',
       {
         method: 'POST',
@@ -119,7 +113,7 @@ export class ViatorClient {
 
     return {
       products: response.products || [],
-      nextCursor: response.nextCursor,
+      totalCount: response.totalCount || 0,
     }
   }
 
@@ -129,18 +123,17 @@ export class ViatorClient {
   async searchProducts(params: ViatorSearchParams): Promise<ViatorProduct[]> {
     const allProducts: ViatorProduct[] = []
     const targetCount = params.count || 50
-    let cursor: string | undefined
 
-    // Fetch pages until we have enough products or run out of pages
-    // Max 10 pages to prevent infinite loops (500 products max)
+    // Fetch pages until we have enough products
+    // Max 10 pages to prevent too many API calls (500 products max)
     for (let page = 0; page < 10 && allProducts.length < targetCount; page++) {
-      const { products, nextCursor } = await this.searchProductsPage(params, cursor)
+      const offset = page * 50
+      const { products, totalCount } = await this.searchProductsPage(params, offset)
 
       allProducts.push(...products)
-      cursor = nextCursor
 
-      // No more pages
-      if (!nextCursor || products.length === 0) {
+      // No more products available
+      if (products.length === 0 || allProducts.length >= totalCount) {
         break
       }
     }

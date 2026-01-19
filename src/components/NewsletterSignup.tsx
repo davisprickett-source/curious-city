@@ -6,22 +6,43 @@ interface NewsletterSignupProps {
   variant?: 'default' | 'compact' | 'dark'
 }
 
+type SubmitStatus = 'idle' | 'submitting' | 'success' | 'error'
+
 export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps) {
   const [email, setEmail] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const [status, setStatus] = useState<SubmitStatus>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Dummy handler - just show success state
-    if (email) {
-      setSubmitted(true)
-      // Reset after 3 seconds for demo
-      setTimeout(() => {
-        setSubmitted(false)
-        setEmail('')
-      }, 3000)
+    if (!email) return
+
+    setStatus('submitting')
+    setErrorMessage('')
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe')
+      }
+
+      setStatus('success')
+      setEmail('')
+    } catch (error) {
+      setStatus('error')
+      setErrorMessage(error instanceof Error ? error.message : 'Something went wrong')
     }
   }
+
+  const submitted = status === 'success'
+  const isSubmitting = status === 'submitting'
 
   // Compact inline variant
   if (variant === 'compact') {
@@ -38,14 +59,19 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
               placeholder="your@email.com"
               className="flex-1 px-3 py-2 text-sm border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c65d3b]/30 focus:border-[#c65d3b]"
               required
+              disabled={isSubmitting}
             />
             <button
               type="submit"
-              className="px-4 py-2 text-sm font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors"
+              disabled={isSubmitting}
+              className="px-4 py-2 text-sm font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors disabled:opacity-50"
             >
-              Subscribe
+              {isSubmitting ? '...' : 'Subscribe'}
             </button>
           </form>
+        )}
+        {status === 'error' && (
+          <p className="text-sm text-red-600 mt-2">{errorMessage}</p>
         )}
       </div>
     )
@@ -68,14 +94,19 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
               placeholder="your@email.com"
               className="flex-1 px-4 py-2.5 text-sm bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#c65d3b]/50 focus:border-[#c65d3b]"
               required
+              disabled={isSubmitting}
             />
             <button
               type="submit"
-              className="px-6 py-2.5 text-sm font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors"
+              disabled={isSubmitting}
+              className="px-6 py-2.5 text-sm font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors disabled:opacity-50"
             >
-              Subscribe
+              {isSubmitting ? 'Subscribing...' : 'Subscribe'}
             </button>
           </form>
+        )}
+        {status === 'error' && (
+          <p className="text-sm text-red-400 mt-2">{errorMessage}</p>
         )}
         <p className="text-xs text-neutral-400 mt-3">No spam. Unsubscribe anytime.</p>
       </div>
@@ -103,14 +134,20 @@ export function NewsletterSignup({ variant = 'default' }: NewsletterSignupProps)
             placeholder="your@email.com"
             className="flex-1 px-4 py-2.5 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c65d3b]/30 focus:border-[#c65d3b]"
             required
+            disabled={isSubmitting}
           />
           <button
             type="submit"
-            className="px-6 py-2.5 font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors"
+            disabled={isSubmitting}
+            className="px-6 py-2.5 font-medium text-white bg-[#c65d3b] rounded-lg hover:bg-[#a54d30] transition-colors disabled:opacity-50"
           >
-            Subscribe
+            {isSubmitting ? 'Subscribing...' : 'Subscribe'}
           </button>
         </form>
+      )}
+
+      {status === 'error' && (
+        <p className="text-sm text-red-600 mt-2">{errorMessage}</p>
       )}
 
       <p className="text-xs text-neutral-500 mt-3">

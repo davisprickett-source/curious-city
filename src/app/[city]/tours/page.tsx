@@ -197,12 +197,6 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
               </div>
             )}
 
-            {/* Affiliate Disclosure */}
-            <div className="mt-12 pt-8 border-t border-neutral-200">
-              <p className="text-xs text-neutral-400 text-center max-w-2xl mx-auto">
-                Tours are provided by our partner Viator. We may earn a commission when you book through our links at no extra cost to you.
-              </p>
-            </div>
           </div>
         </main>
       </div>

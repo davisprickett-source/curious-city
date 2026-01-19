@@ -225,9 +225,6 @@ function CompactTourCard({ tour, citySlug, placement = 'sidebar' }: TourCardProp
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             sizes="200px"
           />
-          <div className="absolute top-2 left-2">
-            <PartnerBadge variant="compact" />
-          </div>
         </div>
       )}
 
