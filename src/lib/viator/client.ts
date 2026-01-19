@@ -3,7 +3,6 @@
  * Docs: https://docs.viator.com/partner-api/
  */
 
-import { unstable_cache } from 'next/cache'
 import type {
   ViatorProduct,
   ViatorSearchParams,
@@ -43,7 +42,9 @@ export class ViatorClient {
         'exp-api-key': this.apiKey,
         ...options?.headers,
       },
-    })
+      // Use Next.js built-in fetch caching - cache for 1 hour
+      next: { revalidate: 3600 },
+    } as RequestInit)
 
     if (!response.ok) {
       const errorText = await response.text()
@@ -263,12 +264,10 @@ export class ViatorClient {
       count?: number
     }
   ): Promise<NormalizedTour[]> {
-    console.log('[Viator] fetchTours for:', citySlug)
     const destId = this.getDestinationId(citySlug)
-    console.log('[Viator] Destination ID:', destId)
 
     if (!destId) {
-      console.warn(`[Viator] No destination ID found for city: ${citySlug}`)
+      // City doesn't have Viator tours configured yet
       return []
     }
 
@@ -276,7 +275,6 @@ export class ViatorClient {
       destId,
       count: options?.count || 20,
     })
-    console.log('[Viator] Products returned:', products.length)
 
     let normalized = products.map((p) => this.normalizeProduct(p))
 
@@ -303,28 +301,7 @@ export function createViatorClient(): ViatorClient {
 }
 
 /**
- * Internal function to fetch tours (called by cached wrapper)
- */
-async function fetchCityToursInternal(
-  citySlug: string,
-  category?: TourCategory,
-  count?: number
-): Promise<NormalizedTour[]> {
-  console.log('[Viator] Fetching tours for:', citySlug)
-
-  try {
-    const client = createViatorClient()
-    const tours = await client.fetchTours(citySlug, { category, count })
-    console.log('[Viator] Tours fetched:', tours.length)
-    return tours
-  } catch (error) {
-    console.error('[Viator] Error fetching city tours:', error)
-    return []
-  }
-}
-
-/**
- * Get tours for a city (TEMPORARILY DISABLED - testing performance)
+ * Get tours for a city (uses Next.js fetch caching - 1 hour)
  */
 export async function getCityTours(
   citySlug: string,
@@ -333,19 +310,11 @@ export async function getCityTours(
     count?: number
   }
 ): Promise<NormalizedTour[]> {
-  // TEMPORARILY DISABLED - return empty to test if Viator is causing site slowness
-  return []
-
-  // const cacheKey = `viator-tours-${citySlug}-${options?.category || 'all'}-${options?.count || 20}`
-  //
-  // const cachedFetch = unstable_cache(
-  //   () => fetchCityToursInternal(citySlug, options?.category, options?.count),
-  //   [cacheKey],
-  //   {
-  //     revalidate: 3600, // Cache for 1 hour
-  //     tags: ['viator-tours', `viator-${citySlug}`],
-  //   }
-  // )
-  //
-  // return cachedFetch()
+  try {
+    const client = createViatorClient()
+    return await client.fetchTours(citySlug, options)
+  } catch (error) {
+    console.error('[Viator] Error fetching city tours:', error)
+    return []
+  }
 }
