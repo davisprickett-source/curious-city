@@ -10,6 +10,7 @@
 
 import { getCity, getAllCities } from '@/data/cities'
 import { getHistoryForCity } from '@/data/history'
+import { VIATOR_DESTINATION_IDS, getCityTours } from '@/lib/viator'
 import type {
   ContentItem,
   CuriosityContentItem,
@@ -446,6 +447,27 @@ export async function getCityEstablishmentCategories(citySlug: string): Promise<
       thumbnail,
       href: `/${city.slug}/${info.route}`,
     })
+  }
+
+  // Add "Things to Do" for cities with Viator configured
+  if (VIATOR_DESTINATION_IDS[citySlug]) {
+    try {
+      const tours = await getCityTours(citySlug, { count: 5 })
+      if (tours.length > 0) {
+        // Get thumbnail from first tour with an image
+        const firstTourWithImage = tours.find(t => t.image?.src)
+        categories.push({
+          category: 'things-to-do',
+          title: 'Things to Do',
+          spotCount: tours.length > 50 ? 50 : tours.length, // Show "50+" essentially
+          thumbnail: firstTourWithImage?.image?.src,
+          href: `/${citySlug}/tours`,
+        })
+      }
+    } catch (error) {
+      // Viator API might fail, don't break the page
+      console.error('[cityHomepage] Error fetching tours for guide:', error)
+    }
   }
 
   return categories

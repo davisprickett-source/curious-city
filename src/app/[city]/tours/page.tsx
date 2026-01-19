@@ -85,11 +85,11 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
     notFound()
   }
 
-  // Fetch tours from Viator
+  // Fetch tours from Viator - get up to 500 products
   const activeCategory = categoryParam as TourCategory | undefined
   const tours = await getCityTours(slug, {
     category: activeCategory,
-    count: 30,
+    count: 500,
   })
 
   const url = `https://thecurious.city/${slug}/tours`
@@ -110,21 +110,16 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
       />
 
       <div className="city-page-wrapper">
-        <main className="flex-1">
-          {/* Hero Section */}
-          <div className="bg-gradient-to-br from-accent-900 via-accent-800 to-indigo-900 text-white">
+        <main className="flex-1 bg-white">
+          {/* Hero Section - Dark Background */}
+          <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
             <div className="container-page py-12 md:py-16">
-              <div className="max-w-4xl">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-500/30 text-accent-200 border border-accent-400/30">
-                    Experience Partner
-                  </span>
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                  Things to Do
+              <div className="max-w-3xl mx-auto">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                  Things to Do in {city.name}
                 </h1>
-                <p className="text-lg md:text-xl text-accent-100 leading-relaxed max-w-2xl">
-                  Discover the best of {city.name}. Book tickets, tours, cruises, and unique experiences—from skip-the-line admission to guided adventures.
+                <p className="text-xl md:text-2xl text-[#c65d3b] italic leading-relaxed">
+                  Tickets, tours, cruises, and unique experiences
                 </p>
               </div>
             </div>

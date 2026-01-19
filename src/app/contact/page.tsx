@@ -1,5 +1,6 @@
 import { Header, Footer } from '@/components'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
+import { ContactForm } from '@/components/ContactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -17,11 +18,16 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold text-neutral-900 mb-6">Contact Us</h1>
             <p className="text-lg text-neutral-600 mb-8">
-              We&apos;d love to hear from you. Whether you have a story tip, question, or just want to say hello—reach out at{' '}
+              We&apos;d love to hear from you. Whether you have a story tip, question, or just want to say hello—fill out the form below or email us at{' '}
               <a href="mailto:info@thecurious.city" className="text-accent-600 hover:text-accent-700 underline font-medium">
                 info@thecurious.city
               </a>
             </p>
+
+            {/* Contact Form */}
+            <section className="mb-12 bg-neutral-50 p-6 md:p-8 rounded-xl border border-neutral-200">
+              <ContactForm />
+            </section>
 
             <div className="prose prose-lg max-w-none">
               <section className="mb-10">

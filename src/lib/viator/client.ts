@@ -14,7 +14,7 @@ import type {
 const VIATOR_API_BASE = 'https://api.viator.com/partner'
 
 // Known destination IDs (verified via Viator URLs: viator.com/Chicago/d673)
-const DESTINATION_IDS: Record<string, number> = {
+export const VIATOR_DESTINATION_IDS: Record<string, number> = {
   chicago: 673,
   minneapolis: 22209,
   raleigh: 33621,
@@ -29,6 +29,9 @@ const DESTINATION_IDS: Record<string, number> = {
   seattle: 704,
   // Fargo only has state-level (North Dakota: 22225) - very limited tours
 }
+
+// Alias for internal use
+const DESTINATION_IDS = VIATOR_DESTINATION_IDS
 
 export class ViatorClient {
   private apiKey: string
