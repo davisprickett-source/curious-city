@@ -294,6 +294,7 @@ export function HorizontalScrollSection({
           style={{
             scrollSnapType: enableInfinite ? 'none' : 'x mandatory',
             WebkitOverflowScrolling: 'touch',
+            touchAction: 'pan-x',
             opacity: isReady ? 1 : 0,
             visibility: isReady ? 'visible' : 'hidden',
             transition: 'opacity 150ms ease-out',

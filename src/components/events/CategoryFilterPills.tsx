@@ -51,7 +51,7 @@ export function CategoryFilterPills({ selectedCategories, events }: CategoryFilt
   }
 
   return (
-    <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide py-1" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+    <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide py-1" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', touchAction: 'pan-x' }}>
       {/* All filter */}
       <button
         onClick={clearAll}

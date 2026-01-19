@@ -47,8 +47,8 @@ export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
       // Disable body scroll
       document.body.style.overflow = 'hidden'
 
-      // Try to stop Lenis if it exists
-      const lenis = (window as any).lenis
+      // Try to stop Lenis if it exists (correct reference: __lenis)
+      const lenis = (window as any).__lenis
       if (lenis && typeof lenis.stop === 'function') {
         lenis.stop()
       }
@@ -56,18 +56,21 @@ export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
       // Re-enable body scroll
       document.body.style.overflow = ''
 
-      // Try to start Lenis if it exists
-      const lenis = (window as any).lenis
+      // Try to start Lenis if it exists (correct reference: __lenis)
+      const lenis = (window as any).__lenis
       if (lenis && typeof lenis.start === 'function') {
         lenis.start()
       }
     }
 
     return () => {
-      document.body.style.overflow = ''
-      const lenis = (window as any).lenis
-      if (lenis && typeof lenis.start === 'function') {
-        lenis.start()
+      // Only reset if menu was open - prevent unnecessary cleanup
+      if (isOpen) {
+        document.body.style.overflow = ''
+        const lenis = (window as any).__lenis
+        if (lenis && typeof lenis.start === 'function') {
+          lenis.start()
+        }
       }
     }
   }, [isOpen])

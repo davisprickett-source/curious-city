@@ -155,7 +155,7 @@ export function UnifiedNav({
           })}
 
           {/* Dynamic Filter Bar */}
-          <div className="flex-1 flex items-center gap-2 overflow-x-auto scrollbar-hide ml-4">
+          <div className="flex-1 flex items-center gap-2 overflow-x-auto scrollbar-hide ml-4" style={{ touchAction: 'pan-x' }}>
             {customFilters ? (
               customFilters
             ) : (
