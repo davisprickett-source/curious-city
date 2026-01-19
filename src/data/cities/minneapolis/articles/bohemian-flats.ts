@@ -7,10 +7,11 @@ export const bohemianFlats: Article = {
   subtitle: 'For 60 years, 1,000 immigrants lived in houses beneath the Washington Avenue Bridge, climbing 79 wooden stairs to the mills above. The city called it a slum and bulldozed it for a coal yard. Now it\'s a park.',
   excerpt: 'From the 1870s to the 1930s, Bohemian Flats was a secret village at the bottom of Minneapolis — a thousand Slovaks, Czechs, Swedes, and Irish living in small houses along the Mississippi floodplain, climbing 79 creaking wooden stairs to work in the flour mills each morning. The city called it unsanitary. Residents called it home. Minneapolis demolished every last house for a coal terminal that never came. Today, the parkway where joggers run has no marker remembering the community that lived here.',
   author: {
-    name: 'The Curious City',
-    bio: 'Uncovering buried history',
+    name: 'Rachel Morrison',
+    bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-03-19T08:30:00Z',
+  updatedAt: '2024-12-18T11:20:00Z',
   featuredImage: {
     src: '/minneapolis/articles/bohemian-flats.png',
     alt: 'Bohemian Flats settlement along the Mississippi River, circa 1910',

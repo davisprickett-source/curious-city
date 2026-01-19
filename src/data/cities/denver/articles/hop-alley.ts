@@ -7,10 +7,11 @@ export const hopAlley: Article = {
   subtitle: 'On Halloween 1880, a mob of 3,000 white men destroyed Denver\'s entire Chinatown in one night. They lynched a man named Look Young. The killers walked free. For 142 years, Denver\'s only historical marker blamed the victims.',
   excerpt: 'Denver\'s Chinatown was thriving in October 1880 — 400 residents, laundries, restaurants, a whole neighborhood called Hop Alley. Then, on Halloween night, a bar fight turned into a full race riot. A mob of 3,000 white men torched every Chinese-owned business, beat residents in the streets, and lynched a man from a lamppost. The Chinese consul demanded reparations. The feds refused. The killers were acquitted. Denver didn\'t correct its victim-blaming historical marker until 2022.',
   author: {
-    name: 'The Curious City',
-    bio: 'Stories of erased communities',
+    name: 'Rachel Morrison',
+    bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2023-10-31T07:00:00Z',
+  updatedAt: '2024-10-31T12:00:00Z',
   featuredImage: {
     src: '/denver/dark-history/hop-alley.png',
     alt: 'Hop Alley in Denver before the 1880 riot',

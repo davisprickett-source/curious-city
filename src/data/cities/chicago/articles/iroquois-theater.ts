@@ -7,10 +7,11 @@ export const iroquoisTheater: Article = {
   subtitle: 'On December 30, 1903, a "fireproof" Chicago theater burst into flames during a holiday matinee. 602 people died — more than in the Great Chicago Fire. The exits were locked. The fire curtain was fake. Almost nobody remembers.',
   excerpt: 'The Iroquois Theater was "absolutely fireproof" — that\'s what the ads promised. On December 30, 1903, a spark from a stage light ignited a curtain during a packed holiday matinee. 602 people died in fifteen minutes. The exits had been locked to keep out gate-crashers. The "asbestos" safety curtain was made of painted wood pulp. It remains the deadliest single-building fire in American history, and Chicago has mostly forgotten it.',
   author: {
-    name: 'The Curious City',
-    bio: 'Uncovering buried history',
+    name: 'Thomas Blackwell',
+    bio: 'Industrial historian and disaster researcher. Examines how catastrophes shaped modern safety regulations.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2023-12-30T06:00:00Z',
+  updatedAt: '2024-12-30T08:00:00Z',
   featuredImage: {
     src: '/chicago/articles/iroquois-theater.png',
     alt: 'The Iroquois Theater after the fire, December 1903',

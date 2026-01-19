@@ -7,10 +7,11 @@ export const somaliMinneapolis: Article = {
   subtitle: 'They came from a country with no word for snow to the coldest city in America. Now Minneapolis is home to 100,000+ Somalis — the largest community outside Africa. This is how Minnesota became the unlikely capital of the diaspora.',
   excerpt: 'They came from a country where the temperature rarely drops below 70°F to a state where it regularly hits -20°F in winter. They had no word for snow in Somali. Now Minneapolis is home to over 100,000 Somalis — the largest population outside of Africa — who transformed Cedar-Riverside into "Little Mogadishu," built an $8 billion economy, elected the first Somali-American to Congress, and made Minnesota the capital of the global Somali diaspora. This is the story of the most unlikely migration in American history.',
   author: {
-    name: 'The Curious City',
-    bio: 'Stories of migration and transformation',
+    name: 'Elena Vasquez',
+    bio: 'Immigration historian and oral history specialist. Documents the stories of diaspora communities in American cities.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-06-28T13:45:00Z',
+  updatedAt: '2024-12-15T09:00:00Z',
   featuredImage: {
     src: '/minneapolis/articles/somali-minneapolis.jpg',
     alt: 'Cedar-Riverside neighborhood in Minneapolis, home to "Little Mogadishu"',

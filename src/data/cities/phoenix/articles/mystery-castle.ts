@@ -7,10 +7,11 @@ export const mysteryCastle: Article = {
   subtitle: 'In 1927, Boyce Gulley abandoned his wife and 3-year-old daughter without explanation. For 16 years, he secretly built an 18-room castle in the Phoenix desert — all for the daughter who thought he\'d left forever. She only found out when he died.',
   excerpt: 'When Boyce Gulley was diagnosed with tuberculosis in 1927, he vanished from his Seattle family without a word. His wife thought he\'d abandoned them. His three-year-old daughter grew up fatherless. What they didn\'t know: he\'d moved to Phoenix and spent 16 years secretly building an 18-room castle from car parts, goat milk, and desert junk — all for the daughter who thought he didn\'t love her. She inherited it after his death, along with hidden gold, love letters, and a childhood Valentine she\'d made for him decades earlier.',
   author: {
-    name: 'The Curious City',
-    bio: 'Finding stories hidden in plain sight',
+    name: 'James Chen',
+    bio: 'Architecture writer and photographer documenting disappearing buildings and urban design. Former architect turned storyteller.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-02-08T09:45:00Z',
+  updatedAt: '2024-10-15T13:00:00Z',
   featuredImage: {
     src: '/phoenix/articles/mystery-castle.png',
     alt: 'Mystery Castle exterior at sunset, Phoenix, Arizona',

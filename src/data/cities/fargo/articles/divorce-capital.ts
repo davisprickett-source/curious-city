@@ -7,10 +7,11 @@ export const divorceCapital: Article = {
   subtitle: 'In the 1880s and 1890s, Fargo was the divorce capital of America. Dakota Territory\'s lenient laws let you arrive by train, file papers, and be legally single before lunch. One judge granted 350 divorces in a single year. People came from Europe.',
   excerpt: 'Before Vegas weddings, there were Fargo divorces. In the late 1800s, Dakota Territory had the most lenient divorce laws in America — so lenient you could step off the train, file papers, and be legally single before lunch. Fargo became internationally famous as the place where bad marriages went to die. One local judge granted 350 divorces in a single year. Europeans crossed the Atlantic for North Dakota divorces. The "divorce mill" ran for two decades until scandalized reformers finally shut it down.',
   author: {
-    name: 'The Curious City',
-    bio: 'Stories of legal loopholes',
+    name: 'Sarah Kim',
+    bio: 'Cultural anthropologist and travel writer exploring the weird, wonderful, and unexpected in American cities.',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2023-07-22T10:00:00Z',
+  updatedAt: '2024-09-14T14:30:00Z',
   featuredImage: {
     src: '/fargo/articles/divorce-capital.png',
     alt: 'Northern Pacific Railroad depot in Fargo, 1890s',

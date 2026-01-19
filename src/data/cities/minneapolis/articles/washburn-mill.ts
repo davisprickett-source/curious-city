@@ -7,10 +7,11 @@ export const washburnMill: Article = {
   subtitle: 'On May 2, 1878, the world\'s largest flour mill exploded in Minneapolis, killing 18 workers and leveling half the city\'s milling district. The culprit? Flour dust hanging in the air. Nobody saw it coming.',
   excerpt: 'The Washburn A Mill was the pride of Minneapolis — the world\'s largest flour mill, a seven-story industrial cathedral powered by St. Anthony Falls. On the evening of May 2, 1878, microscopic flour dust ignited like gunpowder. The explosion was heard ten miles away. Eighteen men died instantly. Five more mills exploded in the chain reaction. The disaster rewrote industrial safety regulations worldwide and turned Minneapolis into the cautious giant that rebuilt itself.',
   author: {
-    name: 'The Curious City',
-    bio: 'Uncovering buried history',
+    name: 'Thomas Blackwell',
+    bio: 'Industrial historian and disaster researcher. Examines how catastrophes shaped modern safety regulations.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2023-05-14T09:00:00Z',
+  updatedAt: '2024-11-22T14:30:00Z',
   featuredImage: {
     src: '/minneapolis/curiosities/mill-curiosity-2.png',
     alt: 'The Great Mill Disaster of 1878 in Minneapolis',

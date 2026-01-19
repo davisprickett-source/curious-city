@@ -7,10 +7,11 @@ export const raleighSpeedway: Article = {
   subtitle: 'In the 1950s, Raleigh had a mile-long NASCAR superspeedway with the first permanent night lights in racing history. Then the city banned Sunday racing and killed it. Now it\'s buried in the woods.',
   excerpt: 'In the 1950s, Raleigh had a NASCAR superspeedway that was supposed to rival Daytona — a one-mile oval where Lee Petty and Fireball Roberts raced under the first permanent night lights in racing history. Bill France Sr. himself built it. Then Raleigh neighbors complained about the noise, the city banned Sunday racing, and the track died within three years. Today, only a 90-foot fragment of the backstretch survives, hidden in pine trees behind an industrial park.',
   author: {
-    name: 'The Curious City',
-    bio: 'Uncovering buried history',
+    name: 'Sarah Kim',
+    bio: 'Cultural anthropologist and travel writer exploring the weird, wonderful, and unexpected in American cities.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-04-12T11:30:00Z',
+  updatedAt: '2024-11-08T15:45:00Z',
   featuredImage: {
     src: '/raleigh/curiosities/raleigh-speedway.png',
     alt: 'Aerial view of Raleigh Speedway, circa 1955',

@@ -7,10 +7,11 @@ export const gatewayDistrict: Article = {
   subtitle: 'In 1959, Minneapolis bulldozed 200 buildings — including the city\'s birthplace and first skyscraper — to eliminate a neighborhood the planners called "Skid Row." It was America\'s first federally funded urban renewal demolition. The result? Parking lots.',
   excerpt: 'Between 1959 and 1963, Minneapolis razed the Gateway District — 40% of downtown, over 200 buildings, including the intersection where the city was literally born. The official goal: eliminate "Skid Row" and its 3,000 single male residents. The actual result: acres of parking lots and brutalist office towers. It was America\'s first federally funded urban renewal project, and Minneapolis spent the next 60 years regretting it.',
   author: {
-    name: 'The Curious City',
-    bio: 'Uncovering buried history',
+    name: 'Rachel Morrison',
+    bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2023-09-07T10:15:00Z',
+  updatedAt: '2024-12-03T16:45:00Z',
   featuredImage: {
     src: '/minneapolis/articles/gateway-district.png',
     alt: 'Gateway District before demolition, Minneapolis 1950s',

@@ -7,10 +7,11 @@ export const maxHeadroom: Article = {
   subtitle: 'On November 22, 1987, someone in a rubber Max Headroom mask hijacked two Chicago TV stations for 90 seconds. They ranted about Clutch Cargo, got spanked with a flyswatter, and vanished. The FBI never caught them.',
   excerpt: 'On November 22, 1987, someone wearing a Max Headroom mask hijacked the broadcast signals of two Chicago television stations in the middle of primetime. For 90 surreal seconds, viewers watched a distorted figure make bizarre statements, moan incomprehensibly, and get spanked with a flyswatter on live TV. The FBI investigated for years and came up empty. It remains the only unsolved broadcast signal intrusion in American history — and one of the creepiest unsolved mysteries of the analog era.',
   author: {
-    name: 'The Curious City',
-    bio: 'Investigating the unexplained',
+    name: 'David Winters',
+    bio: 'Investigative journalist covering unsolved mysteries, cold cases, and forgotten crimes. Former crime reporter for major metro dailies.',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-08-15T14:20:00Z',
+  updatedAt: '2024-11-22T10:15:00Z',
   featuredImage: {
     src: '/chicago/articles/max-headroom.png',
     alt: 'Still frame from the Max Headroom broadcast intrusion, 1987',

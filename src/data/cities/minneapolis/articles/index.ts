@@ -3,6 +3,13 @@ import { bohemianFlats } from './bohemian-flats'
 import { gatewayDistrict } from './gateway-district'
 import { somaliMinneapolis } from './somali-minneapolis'
 import { washburnMill } from './washburn-mill'
+import { northLoopGuide } from './north-loop-guide'
+import { bestCoffeeShops } from './best-coffee-shops'
+import { bestBars } from './best-bars'
+import { juicyLucy } from './juicy-lucy'
+import { uptownGuide } from './uptown-guide'
+import { bestBrunch } from './best-brunch'
+import { bestThingsToDo } from './best-things-to-do'
 
 export const duckDuckGreyDuck: Article = {
   slug: 'duck-duck-grey-duck',
@@ -388,4 +395,18 @@ export const newRestaurantsNortheast: Article = {
   },
 }
 
-export const articles: Article[] = [gatewayDistrict, washburnMill, bohemianFlats, somaliMinneapolis, duckDuckGreyDuck, newRestaurantsNortheast]
+export const articles: Article[] = [
+  gatewayDistrict,
+  washburnMill,
+  bohemianFlats,
+  somaliMinneapolis,
+  duckDuckGreyDuck,
+  newRestaurantsNortheast,
+  northLoopGuide,
+  bestCoffeeShops,
+  bestBars,
+  juicyLucy,
+  uptownGuide,
+  bestBrunch,
+  bestThingsToDo,
+]
