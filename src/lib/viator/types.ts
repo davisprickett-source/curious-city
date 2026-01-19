@@ -150,18 +150,26 @@ export type TourCategory =
   | 'culture'
   | 'history'
   | 'nightlife'
+  | 'tickets'
+  | 'cruises'
+  | 'passes'
+  | 'classes'
   | 'other'
 
 // Tag IDs for filtering (will need to map these from Viator's tag system)
 export const TOUR_CATEGORY_TAGS: Record<TourCategory, number[]> = {
-  'ghost-tour': [], // Will populate after exploring API
-  'architecture': [],
+  'ghost-tour': [],
+  'architecture': [12013],
   'food-tour': [],
-  'city-tour': [],
-  'outdoor': [],
-  'culture': [],
+  'city-tour': [11930, 21703],
+  'outdoor': [22046],
+  'culture': [21910],
   'history': [],
   'nightlife': [],
+  'tickets': [11899, 21771],
+  'cruises': [22189, 12691, 21707, 11967, 12977, 12978],
+  'passes': [21771],
+  'classes': [21478, 21479],
   'other': [],
 }
 

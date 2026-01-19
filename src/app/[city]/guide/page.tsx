@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const url = `https://thecurious.city/${slug}/guide`
 
   return {
-    title: `${city.name} Guide - Bars, Restaurants, Tours & More | Curious City`,
-    description: `Your essential guide to ${city.name} - the best bars, restaurants, coffee shops, and tours curated by locals.`,
+    title: `${city.name} Guide - Bars, Restaurants, Things to Do & More | Curious City`,
+    description: `Your essential guide to ${city.name} - the best bars, restaurants, coffee shops, tickets, tours, and experiences curated by locals.`,
     alternates: {
       canonical: url,
     },
@@ -83,8 +83,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
       fallbackGradient: 'from-stone-700 to-stone-950',
     },
     {
-      title: 'Tours & Experiences',
-      teaser: 'Ghost tours, architecture walks, food tours, and adventures',
+      title: 'Things to Do',
+      teaser: 'Tickets, tours, cruises, and unique experiences',
       href: `/${slug}/tours`,
       thumbnail: undefined, // Will use fallback gradient
       gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',

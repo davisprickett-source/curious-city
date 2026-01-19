@@ -16,9 +16,18 @@ const VIATOR_API_BASE = 'https://api.viator.com/partner'
 // Known destination IDs (verified via Viator URLs: viator.com/Chicago/d673)
 const DESTINATION_IDS: Record<string, number> = {
   chicago: 673,
-  // Add more cities as we expand
-  // Minneapolis: TBD
-  // Denver: TBD
+  minneapolis: 22209,
+  raleigh: 33621,
+  'salt-lake-city': 5200,
+  'colorado-springs': 22201,
+  dallas: 918,
+  anchorage: 4152,
+  denver: 4837,
+  tampa: 666,
+  phoenix: 639,
+  portland: 5065,
+  seattle: 704,
+  // Fargo only has state-level (North Dakota: 22225) - very limited tours
 }
 
 export class ViatorClient {
@@ -165,28 +174,70 @@ export class ViatorClient {
     const desc = (product.description || '').toLowerCase()
     const combined = title + ' ' + desc
 
+    // Tickets & Passes first (most specific)
+    if (combined.includes('pass') && (combined.includes('city') || combined.includes('explorer') || combined.includes('go '))) {
+      return 'passes'
+    }
+    if (combined.includes('admission') || combined.includes('ticket') || combined.includes('entry') ||
+        combined.includes('skip the line') || combined.includes('skip-the-line')) {
+      return 'tickets'
+    }
+
+    // Cruises & Boat tours
+    if (combined.includes('cruise') || combined.includes('boat tour') || combined.includes('river tour') ||
+        combined.includes('sailing') || combined.includes('yacht')) {
+      return 'cruises'
+    }
+
+    // Classes & Workshops
+    if (combined.includes('class') || combined.includes('workshop') || combined.includes('lesson') ||
+        combined.includes('cooking class') || combined.includes('learn to')) {
+      return 'classes'
+    }
+
+    // Ghost & Haunted
     if (combined.includes('ghost') || combined.includes('haunted') || combined.includes('paranormal')) {
       return 'ghost-tour'
     }
+
+    // Architecture
     if (combined.includes('architecture') || combined.includes('skyline')) {
       return 'architecture'
     }
-    if (combined.includes('food') || combined.includes('culinary') || combined.includes('tasting')) {
+
+    // Food & Drink
+    if (combined.includes('food') || combined.includes('culinary') || combined.includes('tasting') ||
+        combined.includes('pizza') || combined.includes('brewery') || combined.includes('wine')) {
       return 'food-tour'
     }
-    if (combined.includes('outdoor') || combined.includes('kayak') || combined.includes('bike')) {
+
+    // Outdoor & Adventure
+    if (combined.includes('outdoor') || combined.includes('kayak') || combined.includes('bike') ||
+        combined.includes('hiking') || combined.includes('adventure') || combined.includes('segway')) {
       return 'outdoor'
     }
-    if (combined.includes('nightlife') || combined.includes('bar') || combined.includes('pub crawl')) {
+
+    // Nightlife
+    if (combined.includes('nightlife') || combined.includes('bar ') || combined.includes('pub crawl') ||
+        combined.includes('speakeasy') || combined.includes('cocktail')) {
       return 'nightlife'
     }
-    if (combined.includes('history') || combined.includes('historical')) {
+
+    // History
+    if (combined.includes('history') || combined.includes('historical') || combined.includes('gangster') ||
+        combined.includes('mob') || combined.includes('crime')) {
       return 'history'
     }
-    if (combined.includes('museum') || combined.includes('art') || combined.includes('cultural')) {
+
+    // Culture & Museums
+    if (combined.includes('museum') || combined.includes('art') || combined.includes('cultural') ||
+        combined.includes('theater') || combined.includes('theatre') || combined.includes('show')) {
       return 'culture'
     }
-    if (combined.includes('city') || combined.includes('sightseeing') || combined.includes('walking')) {
+
+    // General city tours
+    if (combined.includes('city') || combined.includes('sightseeing') || combined.includes('walking') ||
+        combined.includes('hop-on') || combined.includes('bus tour')) {
       return 'city-tour'
     }
 

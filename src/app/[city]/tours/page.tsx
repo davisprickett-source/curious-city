@@ -22,7 +22,17 @@ export async function generateStaticParams() {
   // Only pre-build for cities that have Viator destination IDs
   return [
     { city: 'chicago' },
-    // Add more cities here as we add their destination IDs
+    { city: 'minneapolis' },
+    { city: 'raleigh' },
+    { city: 'salt-lake-city' },
+    { city: 'colorado-springs' },
+    { city: 'dallas' },
+    { city: 'anchorage' },
+    { city: 'denver' },
+    { city: 'tampa' },
+    { city: 'phoenix' },
+    { city: 'portland' },
+    { city: 'seattle' },
   ]
 }
 
@@ -37,14 +47,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = `https://thecurious.city/${slug}/tours`
 
   return {
-    title: `Tours & Experiences in ${city.name} | Curious City`,
-    description: `Discover the best tours and experiences in ${city.name}. Ghost tours, architecture walks, food tours, and more curated adventures.`,
+    title: `Things to Do in ${city.name} | Tours, Tickets & Experiences | Curious City`,
+    description: `Discover the best things to do in ${city.name}. Book tickets, tours, cruises, and unique experiences. Skip-the-line admission, city passes, and more.`,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `Tours & Experiences in ${city.name}`,
-      description: `Ghost tours, architecture walks, food tours, and more curated adventures in ${city.name}.`,
+      title: `Things to Do in ${city.name} | Tours, Tickets & Experiences`,
+      description: `Book tickets, tours, cruises, and unique experiences in ${city.name}. Skip-the-line admission, city passes, and more.`,
       url,
     },
   }
@@ -52,13 +62,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 // Category configuration
 const TOUR_CATEGORIES: { id: TourCategory | 'all'; label: string; description: string }[] = [
-  { id: 'all', label: 'All Tours', description: 'Browse all experiences' },
-  { id: 'ghost-tour', label: 'Ghost Tours', description: 'Haunted history and paranormal adventures' },
-  { id: 'architecture', label: 'Architecture', description: 'Explore iconic buildings and design' },
+  { id: 'all', label: 'All', description: 'Browse all experiences' },
+  { id: 'tickets', label: 'Tickets', description: 'Attractions, museums, and observation decks' },
+  { id: 'passes', label: 'Passes', description: 'City passes and multi-attraction deals' },
+  { id: 'cruises', label: 'Cruises', description: 'River cruises and boat tours' },
+  { id: 'city-tour', label: 'City Tours', description: 'Sightseeing and walking tours' },
+  { id: 'architecture', label: 'Architecture', description: 'Iconic buildings and design' },
   { id: 'food-tour', label: 'Food & Drink', description: 'Culinary adventures and tastings' },
+  { id: 'ghost-tour', label: 'Ghost Tours', description: 'Haunted history and paranormal' },
   { id: 'history', label: 'History', description: 'Deep dives into the past' },
-  { id: 'city-tour', label: 'City Tours', description: 'Classic sightseeing experiences' },
-  { id: 'outdoor', label: 'Outdoor', description: 'Adventures in nature' },
+  { id: 'outdoor', label: 'Outdoor', description: 'Biking, kayaking, and adventures' },
+  { id: 'classes', label: 'Classes', description: 'Cooking classes and workshops' },
+  { id: 'culture', label: 'Culture', description: 'Museums, shows, and art' },
 ]
 
 export default async function CityToursPage({ params, searchParams }: PageProps) {
@@ -106,10 +121,10 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                  Tours & Experiences
+                  Things to Do
                 </h1>
                 <p className="text-lg md:text-xl text-accent-100 leading-relaxed max-w-2xl">
-                  Discover {city.name} through curated tours and unforgettable experiences. From ghost tours to architecture walks, find your next adventure.
+                  Discover the best of {city.name}. Book tickets, tours, cruises, and unique experiences—from skip-the-line admission to guided adventures.
                 </p>
               </div>
             </div>
