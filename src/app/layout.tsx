@@ -91,6 +91,21 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
       <head>
         <meta name="ahrefs-site-verification" content="377248d64559ef60f6c204a1fac00117e8ff6ab7018ba40e0d883c4bc71c84cb" />
+
+        {/* Google Tag Manager - OpsCo */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-WJ3DHM9K');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -115,6 +130,16 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) - OpsCo */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WJ3DHM9K"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         {/* Google Analytics */}
         {GA_MEASUREMENT_ID && (
           <>
