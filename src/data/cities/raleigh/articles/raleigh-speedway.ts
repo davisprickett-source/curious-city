@@ -12,7 +12,7 @@ export const raleighSpeedway: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/raleigh/speedway/speedway-1.png',
+    src: '/raleigh/curiosities/raleigh-speedway.png',
     alt: 'Aerial view of Raleigh Speedway, circa 1955',
   },
   category: 'history',

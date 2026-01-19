@@ -115,8 +115,9 @@ export default async function CityToursPage({ params, searchParams }: PageProps)
           <div className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
             <div className="container-page py-12 md:py-16">
               <div className="max-w-3xl mx-auto">
+                <div className="eyebrow text-accent-400 mb-3">Experience {city.name}</div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                  Things to Do in {city.name}
+                  Things to Do
                 </h1>
                 <p className="text-xl md:text-2xl text-[#c65d3b] italic leading-relaxed">
                   Tickets, tours, cruises, and unique experiences

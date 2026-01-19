@@ -68,15 +68,18 @@ export class ViatorClient {
   }
 
   /**
-   * Search for products/tours by destination
+   * Search for products/tours by destination (single page)
    */
-  async searchProducts(params: ViatorSearchParams): Promise<ViatorProduct[]> {
+  private async searchProductsPage(
+    params: ViatorSearchParams,
+    cursor?: string
+  ): Promise<{ products: ViatorProduct[]; nextCursor?: string }> {
     const body: Record<string, unknown> = {
       filtering: {
         destination: params.destId.toString(),
       },
       pagination: {
-        count: params.count || 20,
+        count: Math.min(params.count || 50, 50), // Viator max is 50 per page
       },
       currency: params.currency || 'USD',
     }
@@ -96,22 +99,53 @@ export class ViatorClient {
       }
     }
 
-    if (params.cursor) {
+    if (cursor) {
       body.pagination = {
         ...body.pagination,
-        cursor: params.cursor,
+        cursor,
       }
     }
 
-    const response = await this.fetch<{ products: ViatorProduct[] }>('/products/search', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    })
+    const response = await this.fetch<{ products: ViatorProduct[]; nextCursor?: string }>(
+      '/products/search',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      }
+    )
 
-    return response.products || []
+    return {
+      products: response.products || [],
+      nextCursor: response.nextCursor,
+    }
+  }
+
+  /**
+   * Search for products/tours by destination (with pagination)
+   */
+  async searchProducts(params: ViatorSearchParams): Promise<ViatorProduct[]> {
+    const allProducts: ViatorProduct[] = []
+    const targetCount = params.count || 50
+    let cursor: string | undefined
+
+    // Fetch pages until we have enough products or run out of pages
+    // Max 10 pages to prevent infinite loops (500 products max)
+    for (let page = 0; page < 10 && allProducts.length < targetCount; page++) {
+      const { products, nextCursor } = await this.searchProductsPage(params, cursor)
+
+      allProducts.push(...products)
+      cursor = nextCursor
+
+      // No more pages
+      if (!nextCursor || products.length === 0) {
+        break
+      }
+    }
+
+    return allProducts.slice(0, targetCount)
   }
 
   /**

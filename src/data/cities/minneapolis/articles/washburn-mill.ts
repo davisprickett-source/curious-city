@@ -12,8 +12,8 @@ export const washburnMill: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/washburn-mill.png',
-    alt: 'Ruins of the Washburn A Mill after the 1878 explosion',
+    src: '/minneapolis/curiosities/mill-curiosity-2.png',
+    alt: 'The Great Mill Disaster of 1878 in Minneapolis',
     credit: 'Minnesota Historical Society',
   },
   category: 'history',

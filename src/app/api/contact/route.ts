@@ -44,16 +44,20 @@ export async function POST(request: NextRequest) {
     const resendApiKey = process.env.RESEND_API_KEY
 
     if (!resendApiKey) {
-      // Development fallback - just log it
-      console.log('[Contact Form Submission]', {
+      console.error('[Contact API] RESEND_API_KEY not configured')
+      // Still accept the form but warn in logs
+      console.log('[Contact Form Submission - No Email Sent]', {
         name: data.name,
         email: data.email,
         subject: subjectLabel,
         message: data.message,
         timestamp: new Date().toISOString(),
       })
+      // Return success so user doesn't see error, but log the issue
       return NextResponse.json({ success: true })
     }
+
+    console.log('[Contact API] Sending email via Resend...')
 
     // Send email via Resend
     const response = await fetch('https://api.resend.com/emails', {
@@ -101,10 +105,14 @@ export async function POST(request: NextRequest) {
 
     if (!response.ok) {
       const errorData = await response.json()
-      console.error('[Contact API] Resend error:', errorData)
-      throw new Error('Failed to send email')
+      console.error('[Contact API] Resend error:', response.status, errorData)
+      return NextResponse.json(
+        { error: `Email service error: ${errorData.message || 'Unknown error'}` },
+        { status: 500 }
+      )
     }
 
+    console.log('[Contact API] Email sent successfully')
     return NextResponse.json({ success: true })
   } catch (error) {
     console.error('[Contact API] Error:', error)

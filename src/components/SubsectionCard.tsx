@@ -27,19 +27,18 @@ export function SubsectionCard({
         {/* Background */}
         <div className="absolute inset-0">
           {thumbnail ? (
-            <>
-              <Image
-                src={thumbnail.src}
-                alt={thumbnail.alt}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className={`absolute inset-0 bg-gradient-to-t ${gradient}`} />
-            </>
+            <Image
+              src={thumbnail.src}
+              alt={thumbnail.alt}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           ) : (
             <div className={`absolute inset-0 bg-gradient-to-br ${fallbackGradient}`} />
           )}
+          {/* Always apply gradient overlay */}
+          <div className={`absolute inset-0 bg-gradient-to-t ${gradient}`} />
         </div>
 
         {/* Content */}

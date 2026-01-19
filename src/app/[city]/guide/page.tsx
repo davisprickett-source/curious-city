@@ -7,6 +7,7 @@ import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { BreadcrumbSchema } from '@/components/StructuredData'
+import { getCityTours, VIATOR_DESTINATION_IDS } from '@/lib/viator'
 
 interface GuidePageProps {
   params: Promise<{ city: string }>
@@ -39,9 +40,11 @@ export default async function GuidePage({ params }: GuidePageProps) {
   if (!city) notFound()
 
   // Fetch representative establishments for each category
-  const barsList = await getCityBestOf(slug, 'bars')
-  const restaurantsList = await getCityBestOf(slug, 'restaurants')
-  const coffeeList = await getCityBestOf(slug, 'coffee-shops')
+  const [barsList, restaurantsList, coffeeList] = await Promise.all([
+    getCityBestOf(slug, 'bars'),
+    getCityBestOf(slug, 'restaurants'),
+    getCityBestOf(slug, 'coffee-shops'),
+  ])
 
   // Get first spot with image from each category
   const getFirstSpotWithImage = (lists: any[]) => {
@@ -56,6 +59,21 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const restaurantSpot = getFirstSpotWithImage(restaurantsList)
   const coffeeSpot = getFirstSpotWithImage(coffeeList)
 
+  // Get tour thumbnail for Things to Do (only if city has Viator)
+  let tourThumbnail: { src: string; alt: string } | undefined
+  if (VIATOR_DESTINATION_IDS[slug]) {
+    try {
+      const tours = await getCityTours(slug, { count: 5 })
+      const tourWithImage = tours.find(t => t.image?.src)
+      if (tourWithImage?.image) {
+        tourThumbnail = tourWithImage.image
+      }
+    } catch (error) {
+      // Viator API might fail, don't break the page
+      console.error('[Guide] Error fetching tour thumbnail:', error)
+    }
+  }
+
   // Only establishment categories - listicles (hidden gems, local favorites, lost & loved) are in Discover
   const guideCategories = [
     {
@@ -63,30 +81,30 @@ export default async function GuidePage({ params }: GuidePageProps) {
       teaser: 'Cocktail lounges, dive bars, and neighborhood favorites',
       href: `/${slug}/bars`,
       thumbnail: barSpot?.images?.[0],
-      gradient: 'from-indigo-900/90 via-indigo-900/60 to-indigo-900/30',
-      fallbackGradient: 'from-indigo-700 to-indigo-950',
+      gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',
+      fallbackGradient: 'from-accent-700 to-accent-950',
     },
     {
       title: 'Best Restaurants',
       teaser: 'From fine dining to neighborhood spots, the city\'s culinary highlights',
       href: `/${slug}/restaurants`,
       thumbnail: restaurantSpot?.images?.[0],
-      gradient: 'from-amber-900/90 via-amber-900/60 to-amber-900/30',
-      fallbackGradient: 'from-amber-700 to-amber-950',
+      gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',
+      fallbackGradient: 'from-accent-700 to-accent-950',
     },
     {
       title: 'Best Coffee Shops',
       teaser: 'Local roasters, cozy cafes, and third wave coffee',
       href: `/${slug}/coffee-shops`,
       thumbnail: coffeeSpot?.images?.[0],
-      gradient: 'from-stone-900/90 via-stone-900/60 to-stone-900/30',
-      fallbackGradient: 'from-stone-700 to-stone-950',
+      gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',
+      fallbackGradient: 'from-accent-700 to-accent-950',
     },
     {
       title: 'Things to Do',
       teaser: 'Tickets, tours, cruises, and unique experiences',
       href: `/${slug}/tours`,
-      thumbnail: undefined, // Will use fallback gradient
+      thumbnail: tourThumbnail,
       gradient: 'from-accent-900/90 via-accent-900/60 to-accent-900/30',
       fallbackGradient: 'from-accent-700 to-accent-950',
     },

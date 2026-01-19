@@ -12,7 +12,7 @@ export const hopAlley: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/denver/articles/hop-alley.png',
+    src: '/denver/dark-history/hop-alley.png',
     alt: 'Hop Alley in Denver before the 1880 riot',
     credit: 'Denver Public Library Western History Collection',
   },

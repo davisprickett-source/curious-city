@@ -4,7 +4,7 @@ import { getCity, getAllCitySlugs } from '@/data/cities'
 import { getArticlesForCity } from '@/lib/queries/articles'
 import { Footer } from '@/components'
 import { UnifiedNav } from '@/components/navigation/UnifiedNav'
-import { PremiumArticleCard } from '@/components/PremiumArticleCard'
+import { ArticleGridCard } from '@/components/ArticleGridCard'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
 import { NativeAdSection } from '@/components/ads/NativeAdCard'
 import { BreadcrumbSchema } from '@/components/StructuredData'
@@ -87,28 +87,29 @@ export default async function ArticlesPage({ params }: ArticlesPageProps) {
             </div>
           </div>
 
-          {/* Articles Feed */}
+          {/* Articles Grid */}
           {articles.length > 0 ? (
             <div className="container-page py-10 md:py-14">
-              <div className="max-w-5xl mx-auto space-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {articles.map((article, index) => {
-                  const showAdAfter = (index + 1) % 3 === 0 && index < articles.length - 1
+                  const showAdAfter = (index + 1) % 6 === 0 && index < articles.length - 1
 
                   return (
                     <>
-                      <PremiumArticleCard
+                      <ArticleGridCard
                         key={article.slug}
                         article={article}
                         citySlug={slug}
-                        index={index}
                       />
                       {showAdAfter && (
-                        <NativeAdSection
-                          key={`ad-${index}`}
-                          pageId={pageId}
-                          index={Math.floor(index / 3)}
-                          targeting={{ city: city.name, category: 'articles' }}
-                        />
+                        <div className="md:col-span-2 lg:col-span-3">
+                          <NativeAdSection
+                            key={`ad-${index}`}
+                            pageId={pageId}
+                            index={Math.floor(index / 6)}
+                            targeting={{ city: city.name, category: 'articles' }}
+                          />
+                        </div>
                       )}
                     </>
                   )
