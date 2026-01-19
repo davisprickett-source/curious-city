@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const washburnMill: Article = {
   slug: 'washburn-mill-explosion',
   citySlug: 'minneapolis',
-  title: 'The Great Mill Disaster: When Flour Exploded',
-  subtitle: 'On May 2, 1878, the world\'s largest flour mill exploded, killing 18 workers and destroying half the city\'s milling capacity. The cause? Flour dust. The explosion changed industrial safety forever.',
-  excerpt: 'The Washburn A Mill was the world\'s largest flour mill — a seven-story giant powered by St. Anthony Falls. On the evening of May 2, 1878, accumulated flour dust ignited. The explosion was heard ten miles away. Eighteen workers died instantly. Six nearby mills were destroyed. The disaster changed how the world thought about industrial safety — and gave birth to modern Minneapolis.',
+  title: 'Minneapolis\'s Great Mill Disaster: When Flour Dust Exploded and Killed 18',
+  subtitle: 'On May 2, 1878, the world\'s largest flour mill exploded in Minneapolis, killing 18 workers and leveling half the city\'s milling district. The culprit? Flour dust hanging in the air. Nobody saw it coming.',
+  excerpt: 'The Washburn A Mill was the pride of Minneapolis — the world\'s largest flour mill, a seven-story industrial cathedral powered by St. Anthony Falls. On the evening of May 2, 1878, microscopic flour dust ignited like gunpowder. The explosion was heard ten miles away. Eighteen men died instantly. Five more mills exploded in the chain reaction. The disaster rewrote industrial safety regulations worldwide and turned Minneapolis into the cautious giant that rebuilt itself.',
   author: {
     name: 'The Curious City',
     bio: 'Uncovering buried history',

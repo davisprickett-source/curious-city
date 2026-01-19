@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const hopAlley: Article = {
   slug: 'hop-alley',
   citySlug: 'denver',
-  title: 'The Halloween Massacre Denver Forgot',
-  subtitle: 'On October 31, 1880, a white mob of 3,000 destroyed the city\'s Chinatown in a single night. One man was lynched. The community was erased. For over a century, the only marker called it a "riot." The Chinese started it, the plaque implied. They didn\'t.',
-  excerpt: 'Denver\'s Chinatown was thriving in 1880 — laundries, restaurants, over 400 residents in a neighborhood called Hop Alley. Then, on Halloween night, a bar fight escalated into a race riot. A mob of 3,000 white men destroyed every Chinese business, beat residents in the streets, and lynched a man named Look Young. The Chinese consul demanded reparations. The federal government refused. The killers were acquitted. For 142 years, Denver\'s only marker blamed the victims. It wasn\'t corrected until 2022.',
+  title: 'Denver\'s 1880 Anti-Chinese Massacre: The Halloween Riot That Erased Hop Alley',
+  subtitle: 'On Halloween 1880, a mob of 3,000 white men destroyed Denver\'s entire Chinatown in one night. They lynched a man named Look Young. The killers walked free. For 142 years, Denver\'s only historical marker blamed the victims.',
+  excerpt: 'Denver\'s Chinatown was thriving in October 1880 — 400 residents, laundries, restaurants, a whole neighborhood called Hop Alley. Then, on Halloween night, a bar fight turned into a full race riot. A mob of 3,000 white men torched every Chinese-owned business, beat residents in the streets, and lynched a man from a lamppost. The Chinese consul demanded reparations. The feds refused. The killers were acquitted. Denver didn\'t correct its victim-blaming historical marker until 2022.',
   author: {
     name: 'The Curious City',
     bio: 'Stories of erased communities',

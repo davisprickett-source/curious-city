@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const somaliMinneapolis: Article = {
   slug: 'somali-minneapolis',
   citySlug: 'minneapolis',
-  title: 'From the Horn of Africa to the Land of 10,000 Lakes',
-  subtitle: 'How the largest Somali community outside of Africa ended up in one of the coldest places in America — and built a capital city of the diaspora',
-  excerpt: 'They came from a country where the temperature rarely drops below 70°F to a state where it regularly hits -20°F. They had no word for snow in their language. Now Minneapolis is home to the largest Somali population outside of Africa — over 100,000 people who transformed Cedar-Riverside into "Little Mogadishu," built an economy worth $8 billion, and sent a refugee to Congress. This is the story of how Minnesota became the unlikely capital of the Somali diaspora.',
+  title: 'How Minneapolis Became the Somali Capital of America',
+  subtitle: 'They came from a country with no word for snow to the coldest city in America. Now Minneapolis is home to 100,000+ Somalis — the largest community outside Africa. This is how Minnesota became the unlikely capital of the diaspora.',
+  excerpt: 'They came from a country where the temperature rarely drops below 70°F to a state where it regularly hits -20°F in winter. They had no word for snow in Somali. Now Minneapolis is home to over 100,000 Somalis — the largest population outside of Africa — who transformed Cedar-Riverside into "Little Mogadishu," built an $8 billion economy, elected the first Somali-American to Congress, and made Minnesota the capital of the global Somali diaspora. This is the story of the most unlikely migration in American history.',
   author: {
     name: 'The Curious City',
     bio: 'Stories of migration and transformation',

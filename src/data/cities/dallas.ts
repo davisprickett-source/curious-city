@@ -91,6 +91,53 @@ export const dallas: CityData = {
           }
         },
         {
+          id: 'dal-curiosity-ecstasy',
+          type: 'curiosity',
+          category: 'history',
+          featuredOrder: 2,
+          featured: true,
+          title: 'The name "Ecstasy" was coined by a Dallas seminary student',
+          image: {
+            src: '/dallas/curiosities/dallas-curious-ecstasy.png',
+            alt: 'Dallas Ecstasy MDMA history'
+          },
+          body: 'Michael Clegg was studying at Perkins School of Theology at SMU when he discovered MDMA in the early 1980s. He didn\'t invent it (a German chemist did in 1912), but he gave it the name that stuck: Ecstasy. He called the experience "like hearing Moses on the mountain." Clegg saw a business opportunity. By 1984, he was moving 500,000 doses per month through a distribution network that included a 1-800 phone line. You could order Ecstasy with a credit card. The operation was so brazen, employees wore "Ecstasy" t-shirts. Clegg fled to Costa Rica in 1985, just months before the DEA classified MDMA as Schedule I. He later returned, served time, and became a real estate developer. But for a brief, surreal moment, a theology student helped launch the rave era from Dallas.',
+          sources: [
+            {
+              type: 'article',
+              title: 'The Agony of Ecstasy',
+              publisher: 'D Magazine',
+              year: '2000',
+              url: 'https://www.dmagazine.com/publications/d-magazine/2000/may/the-agony-of-ecstasy/'
+            }
+          ]
+        },
+        {
+          id: 'dal-curiosity-frogtown',
+          type: 'curiosity',
+          category: 'history',
+          featuredOrder: 3,
+          featured: true,
+          title: 'Dallas ran a legal red-light district called "Frogtown" from 1906 to 1913',
+          image: {
+            src: '/dallas/curiosities/dallas-curious-frogtown.png',
+            alt: 'Historic Dallas Frogtown red-light district'
+          },
+          body: 'In 1906, Dallas did something radical: it legalized prostitution. City leaders carved out a designated zone nicknamed "Frogtown" (also called "the Reservation") where brothels operated openly under municipal supervision. The logic was Progressive Era pragmatism: if you can\'t stop it, regulate it. Prostitutes received city-issued health certificates; those who passed weekly medical inspections were immune from arrest. The district thrived. It also drew national attention as a model of "regulated vice." But reform movements mounted pressure, and on November 3, 1913, Dallas shut Frogtown down for good. The sex trade scattered across the city. Seven years of legal prostitution became a footnote that Dallas preferred to forget.',
+          sources: [
+            {
+              title: 'Frogtown: Dallas\' Legal Red-Light District',
+              url: 'https://www.dallasobserver.com/news/frogtown-dallas-legal-red-light-district-7126581',
+              publisher: 'Dallas Observer'
+            }
+          ],
+          location: {
+            name: 'Former Frogtown Site (Broom St)',
+            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
+            stillExists: false
+          }
+        },
+        {
           id: 'dal-curiosity-3',
           type: 'curiosity',
           category: 'law',
@@ -506,13 +553,14 @@ export const dallas: CityData = {
           id: 'dal-curiosity-16',
           type: 'curiosity',
           category: 'invention',
-          title: 'Liquid Paper was invented by a Dallas secretary to fix her typing mistakes',
+          title: 'White-Out was invented by a Dallas secretary—who was also the mother of a Monkee',
           images: [
             {
               src: '/dallas/curiosities/dallas-cur-white-out-liquid-paper-1.png',
-              alt: 'Liquid Paper invention story'
+              alt: 'Bette Nesmith Graham and Liquid Paper'
             }
           ],
+          body: 'In 1956, Bette Nesmith Graham was a secretary at Texas Bank & Trust in Dallas, struggling with the new electric typewriters that made correcting mistakes nearly impossible. She started bringing small bottles of white tempera paint to work, secretly dabbing over her errors. Other secretaries noticed. They wanted some. She called it "Mistake Out," then renamed it "Liquid Paper." For years, she ran the business out of her kitchen, filling bottles by hand with her son helping after school. That son was Michael Nesmith — who would later become famous as a member of The Monkees. By 1979, Liquid Paper was selling 25 million bottles annually. Gillette bought the company for $47.5 million. A Dallas secretary\'s kitchen chemistry experiment became a global office staple, and her kid became a rock star. Only in Dallas.',
           sources: [
             {
               title: 'Graham, Bette Clair Nesmith',
@@ -560,91 +608,6 @@ export const dallas: CityData = {
               title: 'Doc Holliday\'s Dallas Dental Practice',
               url: 'https://www.dmagazine.com/frontburner/2012/08/doc-hollidays-dallas-dental-practice/',
               publisher: 'D Magazine'
-            }
-          ]
-        },
-        {
-          id: 'dal-curiosity-19',
-          type: 'curiosity',
-          category: 'history',
-          title: 'The first drive-in restaurant in America opened in Dallas',
-          sources: [
-            {
-              title: 'Pig Stand',
-              url: 'https://www.tshaonline.org/handbook/entries/pig-stand',
-              publisher: 'Texas State Historical Association'
-            }
-          ],
-          location: {
-            name: 'Original Pig Stand Site (Chalk Hill Rd)',
-            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false
-          }
-        },
-        {
-          id: 'dal-curiosity-20',
-          type: 'curiosity',
-          category: 'invention',
-          title: 'The first commercial laser tag arena opened in Dallas',
-          body: 'Inspired by Star Wars, entrepreneur George Carter opened Photon in Dallas in 1984 — the first commercialized laser tag arena in the world. Players wore vests with sensors and carried infrared guns in a sci-fi themed arena. It was an instant phenomenon. Within two years, there were Photon franchises across America and a short-lived TV series. Carter sold the company in 1987 for millions. Dallas turned childhood dreams of space battles into a multimillion-dollar industry, one infrared beam at a time.',
-          sources: [
-            {
-              type: 'article',
-              title: 'Photon: The First Laser Tag Company',
-              publisher: 'Laser Tag Museum',
-              url: 'https://www.lasertagmuseum.com/indoor-laser-tag/indoor-company/photon'
-            }
-          ],
-          location: {
-            name: 'Original Photon Site',
-            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false
-          }
-        },
-        {
-          id: 'dal-curiosity-frogtown',
-          type: 'curiosity',
-          category: 'history',
-          featuredOrder: 11,
-          featured: true,
-          title: 'Dallas ran a legal red-light district called "Frogtown" from 1906 to 1913',
-          image: {
-            src: '/dallas/curiosities/dallas-curious-frogtown.png',
-            alt: 'Historic Dallas Frogtown red-light district'
-          },
-          body: 'In 1906, Dallas did something radical: it legalized prostitution. City leaders carved out a designated zone nicknamed "Frogtown" (also called "the Reservation") where brothels operated openly under municipal supervision. The logic was Progressive Era pragmatism: if you can\'t stop it, regulate it. Prostitutes received city-issued health certificates; those who passed weekly medical inspections were immune from arrest. The district thrived. It also drew national attention as a model of "regulated vice." But reform movements mounted pressure, and on November 3, 1913, Dallas shut Frogtown down for good. The sex trade scattered across the city. Seven years of legal prostitution became a footnote that Dallas preferred to forget.',
-          sources: [
-            {
-              title: 'Frogtown: Dallas\' Legal Red-Light District',
-              url: 'https://www.dallasobserver.com/news/frogtown-dallas-legal-red-light-district-7126581',
-              publisher: 'Dallas Observer'
-            }
-          ],
-          location: {
-            name: 'Former Frogtown Site (Broom St)',
-            url: 'https://maps.app.goo.gl/9Zp7q4WvjA9h8wP6A',
-            stillExists: false
-          }
-        },
-        {
-          id: 'dal-curiosity-ecstasy',
-          type: 'curiosity',
-          category: 'history',
-          featuredOrder: 12,
-          featured: true,
-          title: 'The name "Ecstasy" was coined by a Dallas seminary student',
-          image: {
-            src: '/dallas/curiosities/dallas-curious-ecstasy.png',
-            alt: 'Dallas Ecstasy MDMA history'
-          },
-          body: 'Michael Clegg was studying at Perkins School of Theology at SMU when he discovered MDMA in the early 1980s. He didn\'t invent it (a German chemist did in 1912), but he gave it the name that stuck: Ecstasy. He called the experience "like hearing Moses on the mountain." Clegg saw a business opportunity. By 1984, he was moving 500,000 doses per month through a distribution network that included a 1-800 phone line. You could order Ecstasy with a credit card. The operation was so brazen, employees wore "Ecstasy" t-shirts. Clegg fled to Costa Rica in 1985, just months before the DEA classified MDMA as Schedule I. He later returned, served time, and became a real estate developer. But for a brief, surreal moment, a theology student helped launch the rave era from Dallas.',
-          sources: [
-            {
-              type: 'article',
-              title: 'The Agony of Ecstasy',
-              publisher: 'D Magazine',
-              year: '2000',
-              url: 'https://www.dmagazine.com/publications/d-magazine/2000/may/the-agony-of-ecstasy/'
             }
           ]
         }
@@ -2697,176 +2660,6 @@ export const dallas: CityData = {
               title: 'Morton’s The Steakhouse closes in Uptown Dallas',
               url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/31/mortons-the-steakhouse-closes-in-uptown-dallas-after-24-years/',
               publisher: 'Dallas Morning News'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-11',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Hong Kong Restaurant',
-          neighborhood: 'East Dallas / Garland Road',
-          description: 'Dallas\'s longest-running Chinese restaurant sat on Garland Road for over 60 years — a significant piece of Chinese-American history in a city where such restaurants rarely lasted. It was one of the oldest restaurants in all of North Texas.',
-          whyMissed: 'The history. The continuity. Watching a family restaurant survive six decades of Dallas\'s constant reinvention, only to finally close.',
-          communityVoice: '"Hong Kong Restaurant wasn\'t just a Chinese restaurant. It was living Dallas history." — Dallas Morning News',
-          lastAddress: '9150 Garland Rd, Dallas, TX 75218',
-          coordinates: { lat: 32.8286, lng: -96.6927 },
-          sources: [
-            {
-              title: 'Hong Kong Restaurant to Close After 60 Years',
-              url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/30/hong-kong-restaurant-closing-after-60-years-in-dallas/',
-              publisher: 'Dallas Morning News'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-12',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Bangkok at Greenville',
-          neighborhood: 'Greenville Avenue',
-          description: 'For 32 years, Joe and Sunny Pumphaung ran their Thai restaurant on Greenville Avenue, building a loyal following one pad thai at a time. They finally closed so they could spend more time with their aging parents — a bittersweet end to a genuine family operation.',
-          whyMissed: 'The family spirit. The fact that after 32 years, they closed for family, not money. The kind of neighborhood restaurant that doesn\'t get replaced.',
-          communityVoice: '"Bangkok at Greenville closing hit hard because it was so clearly a labor of love for three decades." — Dallas Morning News',
-          lastAddress: '1945 Greenville Ave, Dallas, TX 75206',
-          coordinates: { lat: 32.8139, lng: -96.7692 },
-          sources: [
-            {
-              title: 'Bangkok at Greenville to Close After 32 Years',
-              url: 'https://www.dallasnews.com/food/restaurant-news/2024/12/30/bangkok-at-greenville-closing-after-32-years-in-dallas/',
-              publisher: 'Dallas Morning News'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-13',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Petra and the Beast',
-          neighborhood: 'Lakewood',
-          description: 'Chef Misti Norris built one of Dallas\'s most ambitious restaurants in an unassuming Lakewood strip mall — a nose-to-tail, fermentation-forward kitchen that earned James Beard nominations. She made her own vinegars, aged her own meats, and pushed Dallas diners to eat things they\'d never tried. It was "some of the most inspired — and most challenging — cuisine in Dallas."',
-          whyMissed: 'The ambition. The way Norris played it safe. Dallas lost a restaurant that was genuinely pushing boundaries, not just following trends.',
-          communityVoice: '"Petra and the Beast reminded us that Dallas could be a city of serious culinary risk-taking, not just steakhouses and Tex-Mex." — Dallas Morning News',
-          lastAddress: '3152 Lover\'s Ln, Dallas, TX 75225',
-          coordinates: { lat: 32.8388, lng: -96.7682 },
-          sources: [
-            {
-              title: 'Petra and the Beast to Close in Lakewood',
-              url: 'https://www.dallasnews.com/food/restaurant-news/2024/01/15/petra-and-the-beast-is-closing-its-lakewood-restaurant/',
-              publisher: 'Dallas Morning News'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-14',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Hoffbrau Steaks',
-          neighborhood: 'Knox-Henderson',
-          description: 'The cafeteria-style steakhouse with wood-paneled walls, neon signs, and iceberg wedge salads that hadn\'t changed since Eisenhower. For 75 years, it served Dallas power brokers, families, and anyone who wanted a T-bone without pretension. You picked your steak from a case, told them how to cook it, and carried your own tray.',
-          whyMissed: 'The democratic simplicity of it. Executives and construction workers eating the same steak in the same room. The neon "Steaks" sign that glowed like a beacon for pre-fancy Dallas. When it closed during the pandemic, the city lost proof that it once had working-class roots.',
-          communityVoice: '"Hoffbrau was where Dallas went when it wasn\'t trying to impress anyone." — Dallas Observer',
-          lastAddress: '3205 Knox St, Dallas, TX 75205',
-          coordinates: { lat: 32.8180, lng: -96.7695 },
-          sources: [
-            {
-              title: 'Hoffbrau Steaks Closes After 75 Years',
-              url: 'https://www.dallasobserver.com/restaurants/hoffbrau-steaks-closes-after-75-years-in-dallas-12012345',
-              publisher: 'Dallas Observer'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-15',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Gennie\'s Bishop Grill',
-          neighborhood: 'Bishop Arts District',
-          description: 'Soul food that tasted like South Dallas Sunday dinner. Fried chicken, greens, cornbread. Gennie Bishop ran it for 31 years with grace and backbone. When she retired in 2020, the Bishop Arts District lost the woman it was named after.',
-          whyMissed: 'The fried chicken. Gennie herself. The living reminder that the Bishop Arts District belonged to Black Dallas long before the boutiques arrived. The neighborhood was named for her family, and when she closed, a piece of its soul went with her.',
-          communityVoice: '"Gennie was the Bishop Arts District." — Dallas Morning News',
-          lastAddress: '308 N Bishop Ave, Dallas, TX 75208',
-          coordinates: { lat: 32.7518, lng: -96.8267 },
-          sources: [
-            {
-              title: 'Gennie’s Bishop Grill Closes After 31 Years',
-              url: 'https://www.dallasnews.com/food/restaurant-news/2020/06/15/gennies-bishop-grill-is-closed-after-31-years-in-oak-cliff/',
-              publisher: 'Dallas Morning News'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-16',
-          type: 'lost-and-loved',
-          category: 'venue',
-          name: 'Lakewood Theater',
-          neighborhood: 'Lakewood',
-          description: 'The Art Deco movie palace with the neon marquee that anchored Lakewood for 86 years. It survived as a discount theater, then as a venue for indie films and live music. When it closed in 2024, Lakewood lost its architectural centerpiece. Preservation battles continue.',
-          whyMissed: 'The neon sign visible for blocks. The Art Deco interior that reminded you movies used to be events, not content. The sense that Lakewood had a landmark worth fighting for—and the creeping fear that Dallas doesn\'t preserve the things that make it Dallas.',
-          communityVoice: '"The Lakewood Theater sign was the neighborhood\'s North Star." — Dallas Morning News',
-          lastAddress: '1825 Abrams Pkwy, Dallas, TX 75214',
-          coordinates: { lat: 32.8286, lng: -96.6927 },
-          sources: [
-            {
-              title: 'Lakewood Theater History and Preservation',
-              url: 'https://www.preservationdallas.org/lakewood-theater/',
-              publisher: 'Preservation Dallas'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-17',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Campisi\'s Egyptian Restaurant',
-          neighborhood: 'Mockingbird Lane',
-          description: 'The Italian restaurant with alleged mob connections, red leather booths, and the dubious claim that Jack Ruby ate there the night before he shot Lee Harvey Oswald. The pizza was good. The history was murky. The vibe was old-school Dallas. Egyptian hieroglyphics on the walls for reasons nobody could explain.',
-          whyMissed: 'The mob mystique, real or imagined. The sense that Dallas had at least one place with stories darker than the menu. Other Campisi\'s locations remain, but the original Mockingbird spot—where the legends were born—is gone.',
-          communityVoice: '"Campisi\'s was where Dallas\'s underworld met for pizza." — D Magazine',
-          lastAddress: '5610 E Mockingbird Ln, Dallas, TX 75206',
-          coordinates: { lat: 32.8035, lng: -96.7030 },
-          sources: [
-            {
-              title: 'The Real Story of Campisi’s and the Mob',
-              url: 'https://www.dmagazine.com/publications/d-magazine/2007/july/the-real-story-of-the-campisis-and-the-mob/',
-              publisher: 'D Magazine'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-18',
-          type: 'lost-and-loved',
-          category: 'bookstore',
-          name: 'Half Price Books (flagship)',
-          neighborhood: 'Northwest Highway',
-          description: 'The mothership. Two floors of books, records, and the thrill of the hunt. Half Price Books started here in 1972, went on to become a Dallas institution with dozens of locations, but the Northwest Highway flagship—where it all began—closed in 2023.',
-          whyMissed: 'The browsing. The unexpected finds in the clearance section. The sense that used books were a culture, not just a transaction. The Northwest Highway location felt like literary pilgrimage. Its closing feels like the end of an era when Dallas still had independently weird retail.',
-          communityVoice: '"Half Price Books taught Dallas to love reading again." — Dallas Observer',
-          lastAddress: '5803 E Northwest Hwy, Dallas, TX 75231',
-          coordinates: { lat: 32.9420, lng: -96.8201 },
-          sources: [
-            {
-              title: 'Half Price Books to Close Original Flagship',
-              url: 'https://www.dallasobserver.com/arts/half-price-books-original-flagship-to-close-16512345',
-              publisher: 'Dallas Observer'
-            }
-          ]
-        },
-        {
-          id: 'dal-lost-19',
-          type: 'lost-and-loved',
-          category: 'restaurant',
-          name: 'Taco Cabana (original locations)',
-          neighborhood: 'Various',
-          description: 'Before it was a mediocre chain, Taco Cabana was a San Antonio original that Dallas embraced—24-hour tacos, neon pink buildings, and margaritas at 2am. The chain filed for bankruptcy in 2024 and closed most locations. The pink buildings are being demolished or repainted beige.',
-          whyMissed: 'The pink neon glow at 2am. The democratic promise of late-night tacos available to everyone, always. It wasn\'t fancy, but it was always there—until it wasn\'t.',
-          communityVoice: '"Taco Cabana was Dallas\'s 2am safe haven." — Eater Dallas',
-          lastAddress: 'Multiple locations, Dallas, TX',
-          sources: [
-            {
-              title: 'Taco Cabana Closures in Dallas',
-              url: 'https://dallas.eater.com/2024/1/15/24012345/taco-cabana-closures-dallas-fort-worth',
-              publisher: 'Eater Dallas'
             }
           ]
         }

@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const mysteryCastle: Article = {
   slug: 'mystery-castle',
   citySlug: 'phoenix',
-  title: 'Mystery Castle: A Father\'s Secret Desert Castle',
-  subtitle: 'In 1927, Boyce Gulley vanished from his family without explanation. For 16 years, he secretly built an 18-room castle out of junk for the daughter he\'d left behind. She only found out after he died.',
-  excerpt: 'When Boyce Gulley was diagnosed with tuberculosis in 1927, he disappeared from his wife and three-year-old daughter without a word. He spent the next 16 years in the Arizona desert, secretly building an 18-room castle from car parts, goat milk, and salvaged junk — all for the daughter who thought he\'d abandoned her. She inherited it after his death, along with hidden treasure, love letters, and a childhood Valentine she\'d made for him decades earlier.',
+  title: 'Phoenix\'s Mystery Castle: The Father Who Vanished and Built a Castle for His Daughter',
+  subtitle: 'In 1927, Boyce Gulley abandoned his wife and 3-year-old daughter without explanation. For 16 years, he secretly built an 18-room castle in the Phoenix desert — all for the daughter who thought he\'d left forever. She only found out when he died.',
+  excerpt: 'When Boyce Gulley was diagnosed with tuberculosis in 1927, he vanished from his Seattle family without a word. His wife thought he\'d abandoned them. His three-year-old daughter grew up fatherless. What they didn\'t know: he\'d moved to Phoenix and spent 16 years secretly building an 18-room castle from car parts, goat milk, and desert junk — all for the daughter who thought he didn\'t love her. She inherited it after his death, along with hidden gold, love letters, and a childhood Valentine she\'d made for him decades earlier.',
   author: {
     name: 'The Curious City',
     bio: 'Finding stories hidden in plain sight',

@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const divorceCapital: Article = {
   slug: 'divorce-capital',
   citySlug: 'fargo',
-  title: 'The Ten-Minute Divorce',
-  subtitle: 'In the 1880s and 1890s, Fargo was the divorce capital of America. The territory\'s lenient laws allowed unhappy spouses to end marriages in minutes. One judge granted 350 divorces in a single year. People traveled from Europe to escape their marriages in North Dakota.',
-  excerpt: 'Before Vegas weddings, there were Fargo divorces. In the late 1800s, Dakota Territory had the most lenient divorce laws in America — so lenient that you could arrive by train, file papers, and be legally single before lunch. Fargo became internationally famous as the place where marriages went to die. One local judge granted 350 divorces in a single year. The "divorce mill" ran for decades until scandalized citizens finally shut it down.',
+  title: 'When Fargo Was America\'s Divorce Capital: The 10-Minute Marriage Exit',
+  subtitle: 'In the 1880s and 1890s, Fargo was the divorce capital of America. Dakota Territory\'s lenient laws let you arrive by train, file papers, and be legally single before lunch. One judge granted 350 divorces in a single year. People came from Europe.',
+  excerpt: 'Before Vegas weddings, there were Fargo divorces. In the late 1800s, Dakota Territory had the most lenient divorce laws in America — so lenient you could step off the train, file papers, and be legally single before lunch. Fargo became internationally famous as the place where bad marriages went to die. One local judge granted 350 divorces in a single year. Europeans crossed the Atlantic for North Dakota divorces. The "divorce mill" ran for two decades until scandalized reformers finally shut it down.',
   author: {
     name: 'The Curious City',
     bio: 'Stories of legal loopholes',

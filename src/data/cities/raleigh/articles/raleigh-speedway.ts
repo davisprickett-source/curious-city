@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const raleighSpeedway: Article = {
   slug: 'raleigh-speedway',
   citySlug: 'raleigh',
-  title: 'The Lost Speedway: NASCAR\'s Forgotten Raleigh Track',
-  subtitle: 'A mile-long NASCAR superspeedway lies buried in the woods near Atlantic Avenue. It was supposed to be Daytona. Now it\'s pine trees and asphalt fragments, a ghost track where racing legends once roared.',
-  excerpt: 'In the 1950s, Raleigh had a NASCAR superspeedway — a one-mile oval where legends like Lee Petty and Fireball Roberts competed under the first nighttime lights in racing history. Bill France Sr. built it to rival Daytona. Then the city complained about noise, banned Sunday racing, and killed it. The track closed in 1958. Today, only a fragment of the backstretch survives, hidden in the woods near an industrial park.',
+  title: 'Raleigh\'s Lost NASCAR Superspeedway: The Track That Almost Rivaled Daytona',
+  subtitle: 'In the 1950s, Raleigh had a mile-long NASCAR superspeedway with the first permanent night lights in racing history. Then the city banned Sunday racing and killed it. Now it\'s buried in the woods.',
+  excerpt: 'In the 1950s, Raleigh had a NASCAR superspeedway that was supposed to rival Daytona — a one-mile oval where Lee Petty and Fireball Roberts raced under the first permanent night lights in racing history. Bill France Sr. himself built it. Then Raleigh neighbors complained about the noise, the city banned Sunday racing, and the track died within three years. Today, only a 90-foot fragment of the backstretch survives, hidden in pine trees behind an industrial park.',
   author: {
     name: 'The Curious City',
     bio: 'Uncovering buried history',

@@ -652,7 +652,7 @@ export const minneapolis: CityData = {
           featured: true,
           featuredOrder: 1,
           category: 'history',
-          title: 'Minneapolis was explicitly fair game for America\'s most wanted gangsters',
+          title: 'Minneapolis was fair game: St. Paul gangsters could rob it, just not live there',
           body: 'During Prohibition, St. Paul operated under the "O\'Connor System" — a corrupt arrangement where gangsters like John Dillinger, Al Capone, Machine Gun Kelly, and Bonnie and Clyde could live peacefully in the city. The deal was simple: check in with the police chief, give him a cut, and commit no crimes within St. Paul city limits. Minneapolis, however, was explicitly excluded from this protection.\n\nThe result was predictable carnage. In 1932, more than 20% of all bank robberies in the entire United States occurred in Minnesota — most of them in Minneapolis. Gangsters lived comfortable lives across the river in St. Paul, then crossed over to rob Minneapolis banks before retreating to their sanctuary. When Dillinger was shot by FBI agents during a St. Paul shootout in 1934, he fled to his doctor\'s clinic in Minneapolis to hide and receive treatment. The arrangement lasted until federal pressure finally shut it down in the mid-1930s, but not before Minneapolis became America\'s most robbery-prone city.',
           sources: [
             {
@@ -681,7 +681,7 @@ export const minneapolis: CityData = {
           featuredOrder: 2,
           category: 'history',
           articleSlug: 'washburn-mill-explosion',
-          title: 'The world\'s largest flour mill exploded from dust ignition, killing 18',
+          title: 'Minneapolis\'s flour dust exploded like a bomb and killed 18 mill workers',
           body: 'On May 2, 1878, the Washburn A Mill — then the largest flour mill on Earth — detonated in a fireball heard ten miles away in St. Paul. The explosion killed 18 workers instantly and destroyed six surrounding mills, erasing a third of Minneapolis\'s milling capacity in seconds. The culprit was something almost comically mundane: flour dust.\n\nMillstones grinding dry had created sparks. Those sparks ignited suspended flour particles. The resulting explosion had the force of a bomb. The disaster revolutionized industrial safety worldwide and directly led to the invention of dust collection systems. It also prompted the first systematic study of combustible dust hazards — research that now protects workers in grain elevators, sawmills, and factories across the globe. The mill\'s ruins were eventually converted into the Mill City Museum, which tells the story of Minneapolis\'s flour empire and the disaster that changed workplace safety forever.',
           sources: [
             {
@@ -716,7 +716,7 @@ export const minneapolis: CityData = {
           id: 'curiosity-4',
           type: 'curiosity',
           category: 'invention',
-          title: 'The Honeycrisp apple was literally one year away from the compost heap',
+          title: 'Minnesota\'s Honeycrisp apple was one year from being chopped down as a failure',
           body: 'In 1982, an experimental apple tree at the University of Minnesota — catalogued only as "MN 1711" — was scheduled for destruction. It had been in development for years and wasn\'t performing. A researcher named David Bedford gave it one final year to prove itself. That last-chance tree became the Honeycrisp, now Minnesota\'s official state fruit and one of the most commercially successful apples ever developed.\n\nThe Honeycrisp took 31 years from first cross-pollination to commercial release. Its cells are significantly larger than typical apples, creating the explosive crunch that made it famous. The apple was so successful that the University of Minnesota made millions in licensing fees from growers worldwide. It\'s been named alongside Google and the nicotine patch as one of 25 innovations that changed the world. Not bad for a tree that was one season away from the chipper.',
           sources: [
             {
@@ -737,7 +737,7 @@ export const minneapolis: CityData = {
           id: 'curiosity-5',
           type: 'curiosity',
           category: 'underground',
-          title: 'A 70-mile labyrinth of forgotten tunnels runs beneath the streets',
+          title: 'A 70-mile labyrinth of forgotten tunnels runs beneath Minneapolis and St. Paul',
           body: 'Dating back to 1865, a massive tangle of telephone, gas, trolley, and hydropower tunnels sprawls beneath the Twin Cities — so extensive it\'s been compared to the Paris Catacombs. Most of it remains unexplored, unmapped, and largely forgotten. Century-old power tunnels near St. Anthony Falls predate the Civil War. Sandstone caves once housed mushroom farms, storage facilities, and Prohibition-era speakeasies like Wabasha Street Caves.\n\nIn 1992, a construction crew drilling downtown accidentally punched through a forgotten tunnel system, flooding basements across multiple city blocks. Many tunnel entrances have been sealed and lost entirely to institutional memory. The dangers are real: carbon monoxide accumulation, structural instability, and disorientation have led to deaths. Most access is now restricted, though some underground skyway connections remain public. The full extent of what\'s down there? Nobody really knows.',
           sources: [
             {
@@ -772,7 +772,7 @@ export const minneapolis: CityData = {
           id: 'curiosity-6',
           type: 'curiosity',
           category: 'law',
-          title: 'Serving Twinkies to elderly voters became a felony indictment',
+          title: 'A Minneapolis politician was indicted for serving Twinkies to elderly voters',
           body: 'A Minneapolis City Council candidate was once indicted by a grand jury for the crime of serving Twinkies to groups of elderly voters. Yes, really. The scandal led directly to the establishment of a fair campaign practices act that became known statewide as the "Twinkie Law" — legislation prohibiting candidates from providing anything of value to voters within a certain distance of polling places. The Minnesota political establishment apparently decided that cream-filled snack cakes posed an existential threat to democracy.',
           sources: [
             {

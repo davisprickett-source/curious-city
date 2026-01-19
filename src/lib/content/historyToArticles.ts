@@ -27,7 +27,8 @@ export function historyToArticle(history: History): Article {
     citySlug: history.citySlug,
     title: history.title,
     subtitle: history.subtitle,
-    excerpt: extractExcerpt(history.blocks),
+    // Use subtitle as excerpt/teaser if available, otherwise extract from first paragraph
+    excerpt: history.subtitle || extractExcerpt(history.blocks),
 
     author: {
       name: history.author || 'Curious City',

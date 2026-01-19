@@ -28,17 +28,15 @@ export function NativeAdCard({
     { ...targeting, format: 'native', position: `native-${index}` }
   )
 
-  // CSS containment for scroll performance
-  const containmentStyle = {
-    contain: 'layout style' as const,
-    contentVisibility: 'auto' as const,
-    containIntrinsicSize: '0 400px',
+  // Fixed height style for scroll performance - avoid contentVisibility which causes scroll jank
+  const stableStyle = {
+    willChange: 'transform' as const,
   }
 
   if (variant === 'minimal') {
     // Simple inline ad with minimal styling
     return (
-      <div className={`py-6 ${className}`} style={containmentStyle}>
+      <div className={`py-6 ${className}`} style={stableStyle}>
         <div className="text-center mb-2">
           <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-medium">
             Sponsored
@@ -56,7 +54,7 @@ export function NativeAdCard({
     return (
       <div
         className={`bg-gradient-to-br from-neutral-50 to-white rounded-2xl overflow-hidden shadow-lg ring-1 ring-black/5 ${className}`}
-        style={containmentStyle}
+        style={stableStyle}
       >
         <div className="p-6">
           <div className="flex items-center gap-2 mb-4">
@@ -81,7 +79,7 @@ export function NativeAdCard({
   return (
     <div
       className={`group bg-white/95 backdrop-blur-xl rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5 border-t-4 border-amber-400 ${className}`}
-      style={containmentStyle}
+      style={stableStyle}
     >
       {/* Desktop: Side-by-side layout like HiddenGemCard */}
       <div className="flex flex-col lg:flex-row min-h-[300px] lg:min-h-[400px]">
@@ -120,7 +118,7 @@ export function NativeAdCard({
 }
 
 // Simplified version for mobile/responsive use
-// Optimized for smooth scrolling - no animations, uses CSS containment
+// Optimized for smooth scrolling - uses fixed height, no CSS containment that can cause scroll jank
 export function NativeAdSection({
   pageId,
   index,
@@ -135,14 +133,14 @@ export function NativeAdSection({
 
   return (
     <div
-      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 ${className}`}
+      className={`py-8 px-4 bg-gradient-to-br from-amber-50/50 to-orange-50/30 h-[420px] ${className}`}
       style={{
-        contain: 'layout style',
-        contentVisibility: 'auto',
-        containIntrinsicSize: '0 400px'
+        // Fixed height container prevents layout shift
+        // Removed contentVisibility: auto which can cause scroll jank on mobile
+        willChange: 'transform',
       }}
     >
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto h-full flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="h-px w-12 bg-amber-300" />
@@ -157,8 +155,8 @@ export function NativeAdSection({
           <div className="h-px w-12 bg-amber-300" />
         </div>
 
-        {/* Ad container - fixed min-height to prevent layout shift */}
-        <div className="bg-white rounded-2xl shadow-md p-6 flex justify-center min-h-[280px] items-center">
+        {/* Ad container - fixed height to prevent layout shift */}
+        <div className="bg-white rounded-2xl shadow-md p-6 flex justify-center items-center flex-1">
           <UniversalAd slot={slot} />
         </div>
 

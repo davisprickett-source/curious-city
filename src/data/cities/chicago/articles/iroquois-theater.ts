@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const iroquoisTheater: Article = {
   slug: 'iroquois-theater-fire',
   citySlug: 'chicago',
-  title: 'The Iroquois Theater Fire: Chicago\'s Forgotten Inferno',
-  subtitle: 'On December 30, 1903, 602 people died in a Chicago theater — more than perished in the Great Chicago Fire. The exits were locked. The fire curtain was fake. Almost nobody remembers.',
-  excerpt: 'The Iroquois Theater was "absolutely fireproof." That\'s what the advertisements said. On December 30, 1903, a spark from a stage light ignited a curtain, and 602 people died in fifteen minutes — women, children, families packed in for a holiday matinee. The exits were locked to prevent gate-crashers. The "asbestos" fire curtain was made of wood pulp. It remains the deadliest single-building fire in American history.',
+  title: 'Chicago\'s Iroquois Theater Fire Killed 602 People in 15 Minutes',
+  subtitle: 'On December 30, 1903, a "fireproof" Chicago theater burst into flames during a holiday matinee. 602 people died — more than in the Great Chicago Fire. The exits were locked. The fire curtain was fake. Almost nobody remembers.',
+  excerpt: 'The Iroquois Theater was "absolutely fireproof" — that\'s what the ads promised. On December 30, 1903, a spark from a stage light ignited a curtain during a packed holiday matinee. 602 people died in fifteen minutes. The exits had been locked to keep out gate-crashers. The "asbestos" safety curtain was made of painted wood pulp. It remains the deadliest single-building fire in American history, and Chicago has mostly forgotten it.',
   author: {
     name: 'The Curious City',
     bio: 'Uncovering buried history',

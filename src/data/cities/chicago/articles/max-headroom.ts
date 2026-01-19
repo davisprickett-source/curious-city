@@ -3,9 +3,9 @@ import type { Article } from '@/types/article'
 export const maxHeadroom: Article = {
   slug: 'max-headroom-incident',
   citySlug: 'chicago',
-  title: 'The Max Headroom Incident: TV\'s Only Unsolved Hijacking',
-  subtitle: 'On November 22, 1987, someone in a rubber mask hijacked two Chicago TV stations, ranted about Clutch Cargo, got spanked with a flyswatter, and was never caught. The FBI gave up.',
-  excerpt: 'On November 22, 1987, someone wearing a Max Headroom mask hijacked the signals of two Chicago television stations. For 90 seconds, viewers watched a distorted figure make bizarre statements, moan, and get spanked with a flyswatter. The FBI investigated for years. Nobody was ever caught. It remains the only unsolved broadcast signal intrusion in American history — and one of the creepiest unsolved mysteries of the analog TV era.',
+  title: 'Chicago\'s Max Headroom TV Hijacking: The Only Unsolved Broadcast Hack in History',
+  subtitle: 'On November 22, 1987, someone in a rubber Max Headroom mask hijacked two Chicago TV stations for 90 seconds. They ranted about Clutch Cargo, got spanked with a flyswatter, and vanished. The FBI never caught them.',
+  excerpt: 'On November 22, 1987, someone wearing a Max Headroom mask hijacked the broadcast signals of two Chicago television stations in the middle of primetime. For 90 surreal seconds, viewers watched a distorted figure make bizarre statements, moan incomprehensibly, and get spanked with a flyswatter on live TV. The FBI investigated for years and came up empty. It remains the only unsolved broadcast signal intrusion in American history — and one of the creepiest unsolved mysteries of the analog era.',
   author: {
     name: 'The Curious City',
     bio: 'Investigating the unexplained',
