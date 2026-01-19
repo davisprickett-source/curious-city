@@ -194,16 +194,23 @@ export class ViatorClient {
   }
 
   /**
-   * Build affiliate URL with tracking
+   * Build affiliate URL with tracking - deep link directly to product page
    */
   private buildAffiliateUrl(product: ViatorProduct): string {
-    // Viator deep link format - the productUrl from API should contain affiliate tracking
-    // If not, we'll construct one
-    if (product.productUrl) {
-      return product.productUrl
-    }
-    // Fallback to direct Viator link
-    return `https://www.viator.com/tours/${product.productCode}`
+    // Create URL-friendly slug from title
+    const slug = product.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '')
+      .slice(0, 50)
+
+    // Get destination for the URL (default to Chicago for now)
+    const destination = product.destinations?.[0]?.name || 'Chicago'
+    const destId = product.destinations?.[0]?.destinationId || 673
+
+    // Construct deep link: /tours/Destination/slug/d{destId}-{productCode}
+    return `https://www.viator.com/tours/${destination}/${slug}/d${destId}-${product.productCode}`
   }
 
   /**
