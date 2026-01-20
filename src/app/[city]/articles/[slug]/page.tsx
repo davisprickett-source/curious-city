@@ -11,6 +11,7 @@ import { createAdSlot } from '@/lib/ads/slots'
 import { DualSidebarAds } from '@/components/ads/desktop/SidebarAd'
 import { ArticleMobileAds } from '@/components/ads/ArticleMobileAds'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/StructuredData'
+import { EnsureScrollEnabled } from '@/components/EnsureScrollEnabled'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -61,13 +62,11 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 export default async function ArticlePage({ params, searchParams }: ArticlePageProps) {
   const { city: citySlug, slug } = await params
   const { format } = await searchParams
-  const article = await getArticle(citySlug, slug)
-  if (!article) notFound()
 
   const city = await getCity(citySlug)
   if (!city) notFound()
 
-  // Check if this is a premium video history essay
+  // Check if this is a history essay FIRST (before checking for article)
   // First check for -premium version, then fall back to base slug
   let historyEssay = getHistory(citySlug, `${slug}-premium`)
   if (!historyEssay) {
@@ -80,10 +79,15 @@ export default async function ArticlePage({ params, searchParams }: ArticlePageP
     return <VideoHistoryScroll history={historyEssay} />
   }
 
+  // Now check for regular article
+  const article = await getArticle(citySlug, slug)
+  if (!article) notFound()
+
   const url = `https://thecurious.city/${citySlug}/articles/${slug}`
 
   return (
     <>
+      <EnsureScrollEnabled />
       <ArticleSchema
         headline={article.title}
         description={article.excerpt}
