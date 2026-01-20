@@ -90,7 +90,10 @@ export function ArticleScrollCard({ article, index = 0, inView = true }: Article
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="400px"
                 />
+                {/* Stronger gradient overlay for better text readability */}
                 <div className={`absolute inset-0 bg-gradient-to-t ${gradient.overlay}`} />
+                {/* Additional dark gradient at bottom for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
               </>
             ) : (
               <div className={`absolute inset-0 bg-gradient-to-br ${gradient.fallback}`} />
@@ -99,6 +102,15 @@ export function ArticleScrollCard({ article, index = 0, inView = true }: Article
 
           {/* Content */}
           <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[280px] md:min-h-[300px] xl:min-h-[320px]">
+            {/* City name if available */}
+            {article.cityName && (
+              <div className="mb-3">
+                <span className="text-lg md:text-xl lg:text-2xl font-serif font-bold text-accent-600 uppercase tracking-wide drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                  {article.cityName}
+                </span>
+              </div>
+            )}
+
             {/* Title */}
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 line-clamp-2">
               {article.title}
@@ -110,7 +122,7 @@ export function ArticleScrollCard({ article, index = 0, inView = true }: Article
             </p>
 
             {/* Read link */}
-            <div className="mt-4 flex items-center text-white/70 group-hover:text-white transition-colors">
+            <div className="mt-4 flex items-center text-white/70 group-hover:text-accent-600 transition-colors">
               <span className="text-base md:text-lg font-medium">Read</span>
               <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -59,6 +59,7 @@ export interface EstablishmentCategory {
 export interface ArticleSummary {
   slug: string
   citySlug: string
+  cityName?: string
   title: string
   teaser: string
   thumbnail?: string

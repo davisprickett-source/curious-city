@@ -9,8 +9,9 @@ interface SmoothScrollProviderProps {
 }
 
 // Check if device is mobile/touch-primary
+// Be conservative - if in doubt, treat as mobile to preserve native scrolling
 function isMobileDevice(): boolean {
-  if (typeof window === 'undefined') return false
+  if (typeof window === 'undefined') return true // SSR: assume mobile for safety
 
   // Check for touch capability and screen size
   const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0
@@ -21,7 +22,8 @@ function isMobileDevice(): boolean {
     navigator.userAgent
   )
 
-  return (hasTouch && isSmallScreen) || mobileUA
+  // Conservative approach: any indication of mobile = use native scroll
+  return hasTouch || isSmallScreen || mobileUA
 }
 
 export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {

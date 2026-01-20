@@ -121,11 +121,13 @@ function sortByDiversityAndRecency(cards: PageCardData[]): PageCardData[] {
 
 /**
  * Convert Article type to ArticleSummary type for horizontal scroll cards
+ * Note: cityName will be populated later from cities data
  */
-function articleToSummary(article: Article): ArticleSummary {
+function articleToSummary(article: Article, cityName?: string): ArticleSummary {
   return {
     slug: article.slug,
     citySlug: article.citySlug,
+    cityName,
     title: article.title,
     teaser: article.subtitle || article.excerpt,
     thumbnail: article.featuredImage?.src,
@@ -148,6 +150,10 @@ async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
     sortOrder: 'desc',
   })
 
+  // Get all cities for name lookup
+  const cities = await getAllCities()
+  const cityNameMap = new Map(cities.map(c => [c.slug, c.name]))
+
   // Filter to only non-history articles with featured images FIRST
   const nonHistoryArticles = allArticles.filter(
     (article) => article.featuredImage?.src && article.category !== 'history'
@@ -156,8 +162,10 @@ async function curateFeaturedArticles(): Promise<ArticleSummary[]> {
   // Take the most recent 20 non-history articles
   const recentNonHistory = nonHistoryArticles.slice(0, 20)
 
-  // Convert to ArticleSummary format
-  const articleSummaries = recentNonHistory.map(articleToSummary)
+  // Convert to ArticleSummary format with city names
+  const articleSummaries = recentNonHistory.map(article =>
+    articleToSummary(article, cityNameMap.get(article.citySlug))
+  )
 
   // Apply city diversity (max 2 per city)
   const diverseArticles = diversifyByCities(articleSummaries, 8)

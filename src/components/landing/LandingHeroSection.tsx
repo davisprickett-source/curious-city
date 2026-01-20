@@ -144,7 +144,7 @@ export function LandingHeroSection({
                 <Link href={currentSlide.href} className="group block">
                   {/* City name - large and prominent */}
                   <div className="mb-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#c65d3b] uppercase tracking-tight">
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#c65d3b] uppercase tracking-tight">
                       {currentSlide.cityName}
                     </span>
                   </div>
