@@ -277,12 +277,12 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   // Sort listicle entries by featuredOrder
   const sortedListicleEntries = listicleEntries.sort((a, b) => a.featuredOrder - b.featuredOrder)
 
-  // Curate a balanced mix of ~6 items total:
-  // - History essay (1, from articles)
-  // - Maybe another interesting article (if exists)
-  // - Top 1-2 curiosities
-  // - Top hidden gem (1)
-  // - Top 1-2 dark history
+  // Curate a balanced mix of ~6 items total, prioritizing most engaging content:
+  // - History essay (1, from articles) - most substantive content
+  // - Top 2 dark history - most engaging stories (true crime, mysteries)
+  // - Top 2 hidden gems - interesting discoveries
+  // - Top 1 curiosity - quirky facts
+  // - Lost & loved if space remains
   const TARGET_CAROUSEL_SIZE = 6
 
   // Start with first article (history essay)
@@ -294,14 +294,14 @@ export async function getCityFeaturedEntries(citySlug: string): Promise<Featured
   const darkHistoryEntries = sortedListicleEntries.filter(e => e.type === 'dark-history')
   const lostLovedEntries = sortedListicleEntries.filter(e => e.type === 'lost-and-loved')
 
-  // Add top 2 curiosities
-  curatedEntries.push(...curiosityEntries.slice(0, 2))
-
-  // Add top hidden gem
-  curatedEntries.push(...hiddenGemEntries.slice(0, 1))
-
-  // Add top 2 dark history
+  // Add top 2 dark history (most engaging - true crime, mysteries, dark stories)
   curatedEntries.push(...darkHistoryEntries.slice(0, 2))
+
+  // Add top 2 hidden gems (interesting discoveries and spots)
+  curatedEntries.push(...hiddenGemEntries.slice(0, 2))
+
+  // Add top 1 curiosity (quirky/fun facts)
+  curatedEntries.push(...curiosityEntries.slice(0, 1))
 
   // If still under target, add lost & loved or more from other categories
   if (curatedEntries.length < TARGET_CAROUSEL_SIZE && lostLovedEntries.length > 0) {

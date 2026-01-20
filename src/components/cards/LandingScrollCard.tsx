@@ -103,7 +103,7 @@ export function LandingScrollCard({ data, index = 0, inView = true }: LandingScr
           <div className="relative p-5 md:p-6 flex flex-col justify-end min-h-[280px] md:min-h-[300px] xl:min-h-[320px]">
             {/* City name */}
             <div className="mb-3">
-              <span className="text-base md:text-lg font-bold text-white uppercase tracking-wide">
+              <span className="text-base md:text-lg font-serif font-bold text-accent-600 uppercase tracking-wide">
                 {data.cityName}
               </span>
             </div>

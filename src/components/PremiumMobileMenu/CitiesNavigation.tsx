@@ -60,10 +60,10 @@ export function CitiesNavigation({ onClose, currentCitySlug }: CitiesNavigationP
                   <span className="text-accent-600 text-2xl">→</span>
                 )}
                 <span
-                  className={`text-[clamp(2.5rem,8vw,3.8rem)] font-semibold leading-none tracking-tight transition-colors ${
+                  className={`text-[clamp(2.5rem,8vw,3.8rem)] font-serif font-semibold leading-none tracking-tight transition-colors ${
                     isCurrent
                       ? 'text-accent-600'
-                      : '!text-neutral-900 group-hover:text-accent-600 group-focus:text-accent-600'
+                      : 'text-accent-600 group-hover:text-accent-700 group-focus:text-accent-700'
                   }`}
                 >
                   {city.name}

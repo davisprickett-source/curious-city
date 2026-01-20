@@ -26,18 +26,34 @@ export interface CuratedLandingContent {
 }
 
 /**
+ * Shuffle array using Fisher-Yates algorithm
+ * Used to mix up cards from different cities for better variety
+ */
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
+/**
  * Diversify cards by city - ensures no single city dominates a section
  * Max 2 cards per city in any section
  * Generic version that works with any type that has a citySlug property
+ * Now shuffles input first to ensure mixed city order in results
  */
 function diversifyByCities<T extends { citySlug: string }>(
   cards: T[],
   maxCards: number
 ): T[] {
+  // Shuffle first to avoid city clustering
+  const shuffled = shuffleArray(cards)
   const result: T[] = []
   const cityCounts: Record<string, number> = {}
 
-  for (const card of cards) {
+  for (const card of shuffled) {
     if (result.length >= maxCards) break
 
     const cityCount = cityCounts[card.citySlug] || 0
@@ -49,7 +65,7 @@ function diversifyByCities<T extends { citySlug: string }>(
 
   // If we don't have enough cards yet, add remaining without city limit
   if (result.length < maxCards) {
-    const remaining = cards.filter((card) => !result.includes(card))
+    const remaining = shuffled.filter((card) => !result.includes(card))
     result.push(...remaining.slice(0, maxCards - result.length))
   }
 

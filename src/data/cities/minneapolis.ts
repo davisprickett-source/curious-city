@@ -2814,6 +2814,13 @@ export const minneapolis: CityData = {
                     title: 'A Severed Head on a Park Bench With "PERV" Carved Into the Forehead',
           body: 'On June 17, 2021, someone called 911 to report human remains behind the Ukrainian American Community Center near the Mississippi River. A few hours later, more remains turned up at NE 3rd and University. Five days after that, on June 22nd, a passerby discovered something on a bench at East Franklin Avenue and West River Parkway: the severed head of 36-year-old Adam Richard Johnson. The word "PERV" had been carved into his forehead. Police said the head appeared to have been frozen, then left to thaw in public view.\n\nOn July 4th—because holidays mean nothing to killers—more remains surfaced in the river near the old Pillsbury mill in St. Anthony Main. The autopsy couldn\'t determine cause of death beyond the dismemberment itself. Toxicology showed Johnson was sober when he was murdered. A forensic psychologist told reporters the staging suggested a rage killing meant to dehumanize the victim—a conclusion that feels unnecessary when someone carves "PERV" into a frozen forehead and leaves it on a park bench.\n\nMinneapolis police spokesperson John Elder confirmed that some body parts remain unaccounted for. Despite the brazen public display across multiple high-traffic sites, no arrests have been made. The investigation remains open, which is police-speak for "we have no idea."',
           verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
+          images: [
+            {
+              src: '/minneapolis/dark-history/mississippi-river-parkway.png',
+              alt: 'Mississippi River Parkway near discovery location',
+              caption: 'The Mississippi River Parkway area where remains were discovered in 2021'
+            }
+          ],
           location: {
             name: 'Multiple locations along Mississippi River, Minneapolis',
       url: 'https://www.google.com/maps/search/?api=1&query=Multiple%20locations%20along%20Mississippi%20River%2C%20Minneapolis%20Minneapolis',

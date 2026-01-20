@@ -38,6 +38,8 @@
     position: relative;
     /* Enable smooth touch scrolling on iOS */
     -webkit-overflow-scrolling: touch;
+    /* Ensure touch events work for scrolling on mobile */
+    touch-action: pan-y pinch-zoom;
   }
 
   h1, h2, h3, h4, h5, h6 {

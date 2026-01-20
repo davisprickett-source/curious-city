@@ -28,7 +28,8 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
   const lenisRef = useRef<Lenis | null>(null)
   const rafRef = useRef<number | null>(null)
   const pathname = usePathname()
-  const [isMobile, setIsMobile] = useState(false)
+  // Initialize as true to prevent Lenis from starting on mobile during SSR/hydration
+  const [isMobile, setIsMobile] = useState(true)
 
   useEffect(() => {
     // Check if mobile on mount
@@ -37,6 +38,11 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
 
     // Skip Lenis on mobile - native scrolling works better
     if (mobile) {
+      // Ensure scroll is enabled on mobile
+      document.body.style.overflow = ''
+      document.body.style.height = ''
+      document.documentElement.style.overflow = ''
+      document.documentElement.style.height = ''
       return
     }
 
