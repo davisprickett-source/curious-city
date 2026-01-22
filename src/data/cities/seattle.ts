@@ -240,6 +240,7 @@ export const seattle: CityData = {
           id: 'curiosity-9',
           type: 'curiosity',
           category: 'culture',
+          articleSlug: 'grunge-origins',
           title: 'Seattle accidentally invented grunge and killed hair metal forever',
           body: 'In the late 1980s, a bunch of Seattle bands were doing something weird in dive bars and damp basements: mixing punk\'s rage with metal\'s riffs and lyrics about alienation, apathy, and thrift store fashion. Nirvana, Pearl Jam, Soundgarden, Alice in Chains. Someone called it "grunge." The name stuck.\n\nSub Pop Records documented the scene. Venues like the Central Saloon, Off Ramp, and Crocodile Cafe hosted the shows. Everything was small, local, underground. Then Nirvana\'s "Nevermind" exploded in 1991 and suddenly flannel was high fashion, major labels were signing anything from Seattle, and MTV couldn\'t stop playing videos shot in the rain.\n\nKurt Cobain\'s suicide in 1994 essentially ended it. Hair metal was dead. Alternative rock owned the mainstream. Seattle went from scrappy music town to genuine cultural capital overnight. Most of the original venues are gone now, bulldozed for condos. But for a few years, Seattle owned the sound of young American angst.',
           sources: [
@@ -1396,6 +1397,7 @@ export const seattle: CityData = {
           featured: true,
           featuredOrder: 6,
           category: 'disaster',
+          articleSlug: 'wellington-avalanche',
                     title: 'The Wellington Avalanche: America\'s Deadliest Avalanche',
           body: 'On March 1, 1910, a massive avalanche swept two snowbound Great Northern Railway passenger trains off the tracks at Wellington, in the Cascade Mountains east of Seattle. Ninety-six people died — the deadliest avalanche in American history.\n\nThe trains had been trapped at the Wellington station for nine days during a blizzard that dropped 11 feet of snow. Passengers and crew waited for rotary plows to clear the tracks. Then the weather changed: warm winds and lightning. At 1:42 a.m., a slab of snow a half-mile wide broke loose from the mountain above and carried the trains 150 feet into Tye Creek.\n\nRescue efforts were hampered by continued snowfall. Many bodies weren\'t recovered until spring. Great Northern renamed the station "Tye" to distance itself from the tragedy. A concrete snow shed was eventually built to protect the route, and the 8-mile Cascade Tunnel (the longest in North America at the time) was completed in 1929 to bypass the avalanche zone entirely.\n\nThe Wellington disaster remains largely forgotten — overshadowed by the Titanic two years later — but it reshaped railroad safety practices and mountain travel across the American West.',
           verdict: 'Accidental. Natural disaster compounded by the limitations of early-20th-century railroad engineering.',
@@ -1705,6 +1707,7 @@ export const seattle: CityData = {
           id: 'history-2',
           type: 'history',
           era: '1889',
+          essaySlug: 'rain-city-rising',
           title: 'The Great Seattle Fire destroyed 25 blocks and rebuilt the city',
           body: 'On June 6, 1889, a glue pot caught fire in a cabinet shop. The fire spread through wood-built downtown, destroying 25 blocks. But Seattle rebuilt in brick and stone, raised the streets above the flood line, and emerged stronger. Within a year, the burned district had been replaced with permanent buildings. The fire transformed Seattle from a frontier town into a modern city.',
           source: 'Museum of History & Industry (MOHAI)',

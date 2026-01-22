@@ -12,7 +12,7 @@ export const dobyville: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/tampa/articles/dobyville.png',
+    src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Dobyville_001.jpg',
     alt: 'Dobyville neighborhood in Tampa, circa 1960',
     credit: 'Tampa Bay History Center',
   },

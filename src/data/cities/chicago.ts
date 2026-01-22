@@ -475,6 +475,7 @@ export const chicago: CityData = {
           id: 'curiosity-13',
           type: 'curiosity',
           category: 'architecture',
+          essaySlug: 'the-swamp-that-worked',
           title: 'The skyscraper was invented because the fire cleared the lot',
           body: 'The Great Fire of 1871 didn\'t just destroy Chicago; it rebooted it. With the wooden city erased, architects like William Le Baron Jenney had a blank canvas and a new mandate: build it back, but make it fireproof. In 1885, Jenney completed the Home Insurance Building—not just a tall building, but a new species. Instead of thick masonry walls holding up the weight, he used a skeleton of steel beams. The walls hung like curtains. It was only 10 stories tall, but it was the genetic ancestor of every skyline on Earth. In true Chicago fashion, we demolished the world\'s most important building in 1931 to build a bigger bank. Sentimentality is for cities that don\'t have a future to build.',
           images: [
@@ -2039,6 +2040,7 @@ export const chicago: CityData = {
           id: 'history-7',
           type: 'history',
           era: '1933-34',
+          essaySlug: 'the-swamp-that-worked',
           title: 'A World\'s Fair gave Chicago its lakefront',
           body: 'The 1933-34 Century of Progress International Exposition was built on landfill that became part of today\'s lakefront parks. More importantly, it demonstrated that Chicago\'s lakefront should be preserved for public use rather than industrial development. Much of the "lake" in Northerly Island and the Museum Campus is actually man-made land from this era.',
           source: 'Chicago Park District',
@@ -2168,6 +2170,7 @@ export const chicago: CityData = {
           featured: true,
           featuredOrder: 3,
           category: 'disaster',
+          articleSlug: 'iroquois-theater',
           title: 'The "Fireproof" Theater That Killed 602 People',
           body: 'On December 30, 1903, during a sold-out holiday matinee of "Mr. Bluebeard," fire broke out at the supposedly "absolutely fireproof" Iroquois Theatre—the boast was painted on billboards across the city. Blocked exits, locked doors, and a faulty asbestos safety curtain that stuck halfway down turned the theater into a crematorium. 602 people died—mostly women and children in their holiday finest—in less than 15 minutes. Bodies were stacked six feet high in stairwells. Some jumped from the fire escapes and were crushed by those who jumped after them. It remains the deadliest single-building fire in U.S. history until 9/11. The theater\'s owners were charged with manslaughter but acquitted. The building reopened as the Colonial Theatre five months later. Chicago doesn\'t waste good real estate on tragedy.',
           verdict: 'Changed building codes worldwide. Theater management walked free. The show, eventually, went on.',

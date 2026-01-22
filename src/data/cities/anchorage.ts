@@ -1430,6 +1430,7 @@ export const anchorage: CityData = {
           category: 'crime',
           year: '1971–1983',
           title: 'Robert Hansen: The Baker Who Hunted Women',
+          essaySlug: 'the-butcher-baker',
           body: 'Robert Hansen baked bread by day and hunted women by night. A respected Anchorage baker with a wife and kids, Hansen kidnapped at least 17 women over twelve years, flew them to remote wilderness in his private plane, released them, and hunted them with a rifle like they were caribou. Most victims were dancers and sex workers from Fourth Avenue. He chose victims he believed nobody would miss. He was right about many of them. Only 12 bodies have been recovered. The rest are still out there, somewhere in those 365 million acres of wilderness.',
           images: [
             {

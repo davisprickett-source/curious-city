@@ -91,6 +91,7 @@ export const tampa: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Cigar factories hired readers to radicalize their workers with Cervantes and Marx',
+          articleSlug: 'cigar-lectors',
           featured: true,
           featuredOrder: 2,
           body: 'Long before radio, television, or podcasts, Ybor City\'s cigar factories had their own unique form of mass media: the lector. Hired by the workers themselves (who pooled their hard-earned pennies), these professional readers sat on elevated tribunas and read aloud for hours. Mornings might be dedicated to newspapers, covering labor movements and Cuban independence. Afternoons, however, were for literature: serialized novels by Cervantes, Zola, and Tolstoy, and crucially, works by Marx and Engels. The Count of Monte Cristo was so popular, a cigar brand was named after it. Factory owners hated the practice, correctly realizing that the lectors were radicalizing their immigrant workforce. During a bitter strike in 1931, owners banned lectors entirely, replacing them with radios playing sanitized content. But the seeds were already sown: Ybor City\'s cigar rollers became some of the most literate, politically engaged, and unionized laborers in America, a testament to the power of stories read aloud—even when those stories were about revolution.',
@@ -229,6 +230,7 @@ export const tampa: CityData = {
           type: 'curiosity',
           category: 'history',
           title: 'Ybor City rolled 700 million cigars a year',
+          articleSlug: 'cigar-lectors',
           body: 'At its peak in the early 1900s, Ybor City was the undisputed "Cigar Capital of the World." Over 200 factories employed thousands of skilled workers who hand-rolled 700 million cigars annually, an output that seems impossible until you understand the precision and speed of a trained cigar roller. Immigrants from Cuba, Spain, Italy, and Germany worked side by side at long wooden benches, their hands moving in practiced rhythm while lectors read aloud from newspapers and novels. The factories were dense, smoke-filled, and hot, but the pay was good by period standards, and the culture was remarkably cosmopolitan. A Cuban might sit next to a Sicilian, both listening to readings of Zola in Spanish. The industry began its decline in the 1920s when cigarettes became fashionable and machine-rolling replaced hand work. The Cuban embargo of 1962 cut off the supply of premium tobacco. By the 1970s, Ybor City was largely abandoned, its grand factories empty and crumbling. A few hand-rolling operations remain today, mostly catering to tourists who want to watch the old craft. But the empire that once made Tampa synonymous with tobacco has been gone for half a century. The brick factory buildings are now condos, restaurants, and nightclubs.',
           year: '1920s',
           image: {

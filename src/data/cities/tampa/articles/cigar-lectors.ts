@@ -12,9 +12,9 @@ export const cigarLectors: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/tampa/articles/cigar-lectors.png',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cigar_lector_Cuba_1900s.jpg/800px-Cigar_lector_Cuba_1900s.jpg',
     alt: 'A lector reading to cigar workers in Ybor City, circa 1920',
-    credit: 'Tampa Bay History Center',
+    credit: 'Wikimedia Commons',
   },
   category: 'history',
   tags: ['tampa', 'ybor-city', 'labor', 'cigars', 'cuba', 'history', 'immigration'],
