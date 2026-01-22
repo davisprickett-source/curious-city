@@ -57,11 +57,6 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
           alt={images[0].alt}
           className={`${isExpandedView ? 'w-auto h-auto max-w-full max-h-full object-contain' : 'w-full h-full object-cover'}`}
         />
-        {images[0].credit && (
-          <span className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/40 px-2 py-0.5 rounded">
-            {images[0].credit}
-          </span>
-        )}
       </div>
     )
   }
@@ -80,13 +75,6 @@ export function ImageCarousel({ images, className = '' }: ImageCarouselProps) {
           alt={images[currentIndex].alt}
           className={`${isExpandedView ? 'w-auto h-auto max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} transition-opacity duration-300`}
         />
-
-        {/* Credit overlay */}
-        {images[currentIndex].credit && (
-          <span className="absolute top-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
-            {images[currentIndex].credit}
-          </span>
-        )}
 
         {/* Animated navigation arrows - black and only visible on hover */}
         <button

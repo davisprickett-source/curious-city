@@ -590,7 +590,7 @@ export async function getExploreLinks(
     if (['bars', 'restaurants', 'coffee-shops'].includes(type)) {
       links.push({
         type,
-        title: est.title,
+        title: `${cityName}'s ${est.title}`,
         teaser: exploreTeasers[type] || est.title,
         thumbnail: est.thumbnail,
         href: est.href,
@@ -610,11 +610,11 @@ export async function getExploreLinks(
     const type = typeMap[page.type]
     if (!type || page.type === excludeCategory) continue
 
-    // Use clean title without city name prefix
+    // Use clean title and prepend city name
     const cleanTitle = page.title.replace(new RegExp(`^${cityName}'s\\s*`, 'i'), '')
     links.push({
       type,
-      title: cleanTitle,
+      title: `${cityName}'s ${cleanTitle}`,
       teaser: exploreTeasers[type] || page.teaser,
       thumbnail: page.thumbnail,
       href: page.href,

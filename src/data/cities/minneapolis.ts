@@ -2816,9 +2816,9 @@ export const minneapolis: CityData = {
           verdict: 'Unsolved. No suspect publicly identified. Some remains never recovered. Someone out there knows how to dismember a body and has access to a freezer.',
           images: [
             {
-              src: '/minneapolis/dark-history/mississippi-river-parkway.png',
-              alt: 'Mississippi River Parkway near discovery location',
-              caption: 'The Mississippi River Parkway area where remains were discovered in 2021'
+              src: '/minneapolis/dark-history/adam-johnson.png',
+              alt: 'Adam Johnson case evidence and investigation',
+              caption: 'The Adam Johnson murder case remains one of Minneapolis\' most disturbing unsolved crimes'
             }
           ],
           location: {

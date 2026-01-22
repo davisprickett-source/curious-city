@@ -213,7 +213,7 @@ function CompactTourCard({ tour, citySlug, placement = 'sidebar' }: TourCardProp
       target="_blank"
       rel="noopener noreferrer sponsored"
       onClick={() => trackAffiliateClick(tour, placement, citySlug)}
-      className="group block bg-white rounded-xl overflow-hidden shadow-md ring-1 ring-black/5 hover:shadow-lg transition-all"
+      className="group block bg-white rounded-xl overflow-hidden shadow-md ring-1 ring-black/5 hover:shadow-lg transition-all border-t-4 border-accent-500"
     >
       {/* Image */}
       {tour.image.src && (
