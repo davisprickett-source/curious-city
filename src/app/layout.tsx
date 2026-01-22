@@ -6,6 +6,7 @@ import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvide
 import { AdProvider } from '@/components/ads/AdProvider'
 import { SkipToContent } from '@/components/SkipToContent'
 import { CookieConsent } from '@/components/CookieConsent'
+import { MobileScrollFix } from '@/components/MobileScrollFix'
 import { Analytics } from '@vercel/analytics/react'
 // import { SpeedInsights } from '@vercel/speed-insights/next' // Temporarily disabled - testing performance
 
@@ -128,6 +129,8 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Mobile Scroll Fix - Runs immediately */}
+        <MobileScrollFix />
       </head>
       <body>
         {/* Google Tag Manager (noscript) - OpsCo */}

@@ -119,9 +119,14 @@
   /* City page wrapper - constrains entire layout on ultra-wide screens */
   .city-page-wrapper {
     @apply w-full max-w-[1600px] mx-auto pt-14;
-    /* Prevent content from shifting during scroll on mobile */
-    overscroll-behavior: contain;
     overflow-x: hidden;
+  }
+
+  /* Only contain overscroll on desktop - mobile needs normal scroll */
+  @media (min-width: 768px) {
+    .city-page-wrapper {
+      overscroll-behavior: contain;
+    }
   }
 
   .section-spacing {
