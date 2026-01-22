@@ -35,6 +35,7 @@ export function InterstitialAd({
   useEffect(() => {
     if (isOpen) {
       document.addEventListener('keydown', handleKeyDown)
+      document.body.classList.add('modal-open')
       document.body.style.overflow = 'hidden'
 
       // Start countdown
@@ -43,6 +44,7 @@ export function InterstitialAd({
     }
     return () => {
       document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('modal-open')
       document.body.style.overflow = ''
     }
   }, [isOpen, handleKeyDown])

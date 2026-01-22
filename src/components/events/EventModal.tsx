@@ -95,10 +95,12 @@ export function EventModal({ event, isOpen, onClose }: EventModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.addEventListener('keydown', handleKeyDown)
+      document.body.classList.add('modal-open')
       document.body.style.overflow = 'hidden'
     }
     return () => {
       document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('modal-open')
       document.body.style.overflow = ''
     }
   }, [isOpen, handleKeyDown])

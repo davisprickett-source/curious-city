@@ -44,34 +44,54 @@ export function PremiumMobileMenu({ currentCitySlug }: PremiumMobileMenuProps) {
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
-      // Disable body scroll
-      document.body.style.overflow = 'hidden'
+      // Add class to body to indicate menu is open (used by CSS safeguards)
+      document.body.classList.add('menu-open')
 
-      // Try to stop Lenis if it exists (correct reference: __lenis)
+      // Disable body scroll - but NOT on mobile devices (they don't use Lenis)
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      ) || window.innerWidth < 768
+
+      if (!isMobile) {
+        document.body.style.overflow = 'hidden'
+      }
+
+      // Try to stop Lenis if it exists (desktop only)
       const lenis = (window as any).__lenis
       if (lenis && typeof lenis.stop === 'function') {
         lenis.stop()
       }
     } else {
+      // Remove menu-open class
+      document.body.classList.remove('menu-open')
+
       // Re-enable body scroll
       document.body.style.overflow = ''
 
-      // Try to start Lenis if it exists (correct reference: __lenis)
+      // Try to start Lenis if it exists
       const lenis = (window as any).__lenis
       if (lenis && typeof lenis.start === 'function') {
         lenis.start()
       }
     }
 
+    // CRITICAL FIX: Cleanup must ALWAYS run, regardless of isOpen state
+    // When this effect unmounts or isOpen changes, we must reset overflow
     return () => {
-      // Only reset if menu was open - prevent unnecessary cleanup
-      if (isOpen) {
-        document.body.style.overflow = ''
-        const lenis = (window as any).__lenis
-        if (lenis && typeof lenis.start === 'function') {
-          lenis.start()
-        }
+      // ALWAYS remove menu-open class
+      document.body.classList.remove('menu-open')
+
+      // ALWAYS reset overflow on cleanup
+      document.body.style.overflow = ''
+      document.body.style.overflowY = ''
+
+      // ALWAYS restart Lenis on cleanup
+      const lenis = (window as any).__lenis
+      if (lenis && typeof lenis.start === 'function') {
+        lenis.start()
       }
+
+      console.log('[PremiumMobileMenu] Cleanup: Reset body overflow and restarted Lenis')
     }
   }, [isOpen])
 

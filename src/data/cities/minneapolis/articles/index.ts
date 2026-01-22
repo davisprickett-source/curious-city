@@ -10,6 +10,7 @@ import { juicyLucy } from './juicy-lucy'
 import { uptownGuide } from './uptown-guide'
 import { bestBrunch } from './best-brunch'
 import { bestThingsToDo } from './best-things-to-do'
+import { murderapolis } from './murderapolis'
 
 export const duckDuckGreyDuck: Article = {
   slug: 'duck-duck-grey-duck',
@@ -401,6 +402,7 @@ export const articles: Article[] = [
   bohemianFlats,
   somaliMinneapolis,
   duckDuckGreyDuck,
+  murderapolis,
   newRestaurantsNortheast,
   northLoopGuide,
   bestCoffeeShops,

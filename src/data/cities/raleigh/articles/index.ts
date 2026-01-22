@@ -1,6 +1,7 @@
 import type { Article } from '@/types/article'
 import { dorotheaDixCemetery } from './dorothea-dix-cemetery'
 import { raleighSpeedway } from './raleigh-speedway'
+import { bbqWars } from './bbq-wars'
 
 export const villageUnderground: Article = {
   slug: 'village-underground',
@@ -225,4 +226,4 @@ export const villageUnderground: Article = {
   },
 }
 
-export const articles: Article[] = [villageUnderground, dorotheaDixCemetery, raleighSpeedway]
+export const articles: Article[] = [villageUnderground, dorotheaDixCemetery, raleighSpeedway, bbqWars]
