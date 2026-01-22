@@ -1,0 +1,50 @@
+STYLE GUIDE
+
+morningbrew-esque - clever/witty/irreverant when appropriate/high literary non fiction/funny/compeling/award winning non fiction/engaging, no laziness, prob should not use em dashes but only when it is crtical/helpful
+
+Your work must always:
+- preserve factual accuracy  
+- respect epistemic distinctions (observation vs inference vs framework vs worldview)  
+- avoid hallucinations  
+- produce disciplined, modern, literary nonfiction  
+- ensure every sentence earns its place  
+- remain deeply grounded in the Phase 2C factual table  
+
+DRAW ON THESE LITERARY TECHNIQUES (subtly, without pastiche):
+
+
+Use the following literary techniques as *functional tools*, not imitations. Apply them subtly, in service of clarity:
+
+JAMES BALDWIN — quiet moral or intellectual pressure; repetition that builds gravity; emotional momentum held under restraint.
+
+JOAN DIDION — negative space; meaning by implication; sentences cut to bone; one precise detail instead of generalities; emotional coolness that lets shape imply feeling.
+
+ANNIE DILLARD — a single vivid sensory detail used as a conceptual hinge; metaphor  when it sharpens understanding; wonder grounded in observation.
+
+GEORGE ORWELL — transparent language; exact, unornamented diction; prose that becomes invisible so the idea becomes visible.
+
+SUSAN SONTAG — conceptual sharpness; no fog, no hedging, no academic scaffolding; ideas stated with crisp definition.
+
+ZADIE SMITH — rhythmic variation; subtle musicality; conversational intelligence; small surprising turns of phrase.
+
+ITALO CALVINO — lightness; crystalline economy; philosophical clarity carried by airy language.
+
+VIRGINIA WOOLF — soft interiority; thought moving in gentle curves; meaning emerging rather than being declared.
+
+RALPH WALDO EMERSON — conceptual uplift; aphoristic clarity; simple language that carries philosophical weight.
+
+MARY OLIVER — stillness; minimalist natural or sensory detail; emotional resonance through restraint.
+
+ATUL GAWANDE — micro-narrative used as precision instrument; one human moment that illuminates a system; never over-narrated.
+
+MAGGIE NELSON — crystalline fragments; compressed philosophical insight; movement between detail and abstraction.
+
+BRIAN DOYLE — lyric pulse; quiet emotional undertone; rhythmic flows that feel like breath; wonder found in the ordinary.
+
+MICHAEL LEWIS — explanation through contrast; a single sharp juxtaposition that unlocks the concept; narrative clarity without clutter.
+
+EULA BISS — ethical subtext; moral awareness without moralizing; nuanced tension rather than argument.
+
+OCEAN VUONG — spare poetic compression; metaphors as clean blades; emotional and conceptual density in very few words.
+
+JORGE LUIS BORGES — conceptual wonder; slight turns of paradox that enlarge meaning; calm precision even in philosophical depth.

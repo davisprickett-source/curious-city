@@ -371,6 +371,38 @@ export const colorado_springs: CityData = {
       url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Incline%20Colorado%20Springs',
             stillExists: true
           }
+        },
+        {
+          id: 'cos-curiosity-coffin-races',
+          type: 'curiosity',
+          category: 'legend',
+          title: 'They race coffins down the street to honor a woman whose coffin slid down a mountain',
+          body: 'In 1891, Emma Crawford died of tuberculosis at age 26 in Manitou Springs. Before her death, she asked to be buried atop Red Mountain with a view. Her fiancé and twelve friends hauled her coffin up and honored her wish. Then railroad development forced a reburial—hastily done, shallow grave, loose dirt. In 1929, after years of harsh winters and spring rains, Emma and her coffin came racing down the mountainside. Two boys found her skull, a few bones, and a nameplate. The coffin had disintegrated. In 1995, the Manitou Springs Chamber of Commerce started the Emma Crawford Coffin Races: teams of five (four pushers, one "Emma" riding inside) race homemade coffins 585 feet down Manitou Avenue. Over 10,000 spectators show up in costume. Awards for fastest time, Best Coffin, Best Emma, Best Entourage. It\'s part memorial, part Halloween chaos, entirely sincere about honoring a woman whose final resting place refused to stay put for 38 years.',
+          images: [
+            {
+              src: '/colorado-springs/curiosities/coffin-races-1.png',
+              alt: 'Teams racing coffins down Manitou Avenue during Emma Crawford Coffin Races'
+            },
+            {
+              src: '/colorado-springs/curiosities/coffin-races-2.png',
+              alt: 'Costumed participants with elaborate coffin at Emma Crawford Festival'
+            }
+          ],
+          sources: [
+            {
+              title: 'Emma Crawford Coffin Races Official Site',
+              url: 'https://emmacrawford.coffinraces.com/'
+            },
+            {
+              title: 'Manitou Springs Heritage Museum: Who was Emma Crawford?',
+              url: 'https://manitouspringsheritagecenter.org/who-was-emma-crawford/'
+            }
+          ],
+          location: {
+            name: 'Manitou Avenue, Manitou Springs',
+      url: 'https://www.google.com/maps/search/?api=1&query=Manitou%20Avenue%20Manitou%20Springs%20Colorado',
+            stillExists: true
+          }
         }
       ]
     },

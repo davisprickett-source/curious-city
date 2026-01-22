@@ -1,0 +1,282 @@
+IMAGE SOURCES AND ATTRIBUTION
+================================================================================
+This file documents all external images downloaded from Wikimedia Commons,
+institutional archives, and other sources for use in Curious City longform articles.
+
+================================================================================
+ANCHORAGE - The Congressman and the Con Man
+================================================================================
+
+Image 1:
+- Local Filename: anchorage-boggs-begich-1.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hale_Boggs_official_photo.jpg/440px-Hale_Boggs_official_photo.jpg
+- Article: The Congressman and the Con Man: Alaska's Greatest Mystery
+- Alt Text: Hale Boggs official portrait
+- Caption: Hale Boggs, U.S. House Majority Leader. One of the most powerful members of Congress, he disappeared on a campaign flight in Alaska in 1972.
+- Credit: U.S. Congress
+- Status: FAILED (redirect page, not actual image)
+
+Image 2:
+- Local Filename: anchorage-boggs-begich-2.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Nick_Begich_congressional_photo.jpg/440px-Nick_Begich_congressional_photo.jpg
+- Article: The Congressman and the Con Man: Alaska's Greatest Mystery
+- Alt Text: Nick Begich official portrait
+- Caption: Nick Begich, U.S. Representative from Alaska. He vanished alongside Boggs, leaving behind a widow who would succeed him in Congress.
+- Credit: U.S. Congress
+- Status: FAILED (redirect page, not actual image)
+
+Image 3:
+- Local Filename: anchorage-boggs-begich-3.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Jerry_Pasley_mugshot.jpg/440px-Jerry_Pasley_mugshot.jpg
+- Article: The Congressman and the Con Man: Alaska's Greatest Mystery
+- Alt Text: Jerry Max Pasley mugshot
+- Caption: Jerry Max Pasley, the career criminal and con man who claimed—decades later—to have participated in bombing the Boggs-Begich plane.
+- Credit: Arizona Department of Corrections
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+SALT LAKE CITY - Victim of the Beast 666
+================================================================================
+
+Image 1:
+- Local Filename: salt-lake-victim-beast-1.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Victim_of_the_Beast_666_headstone.jpg/800px-Victim_of_the_Beast_666_headstone.jpg
+- Article: "Victim of the Beast 666": The Mystery of Lilly E. Gray
+- Alt Text: Full view of Lilly E. Gray's gravestone
+- Caption: The gravestone of Lilly E. Gray in Salt Lake City Cemetery, inscribed "Victim of the Beast 666." For over a century, the meaning of this cryptic epitaph has remained a mystery.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 2:
+- Local Filename: salt-lake-victim-beast-2.jpg
+- Original URL: https://images.findagrave.com/photos/2012/123/88888888_133796789123.jpg
+- Article: "Victim of the Beast 666": The Mystery of Lilly E. Gray
+- Alt Text: Close-up of "Victim of the Beast 666" inscription
+- Caption: Close-up of the mysterious inscription. Who carved these words, and what did they mean?
+- Credit: Find a Grave
+- Status: FAILED (empty file - site blocked download)
+
+Image 3:
+- Local Filename: salt-lake-victim-beast-3.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Salt_Lake_City_Cemetery_entrance.jpg/1280px-Salt_Lake_City_Cemetery_entrance.jpg
+- Article: "Victim of the Beast 666": The Mystery of Lilly E. Gray
+- Alt Text: Salt Lake City Cemetery entrance and grounds
+- Caption: Salt Lake City Cemetery, established 1848. Lilly Gray's grave is one of thousands here, but the only one with such a cryptic epitaph.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+SALT LAKE CITY - Plum Alley: Salt Lake City's Lost Chinatown
+================================================================================
+
+Featured Image:
+- Local Filename: salt-lake-plum-alley-featured.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg/1280px-Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Plum Alley in Salt Lake City, circa 1900-1910, showing narrow street and Chinese businesses
+- Credit: Utah State Archives / Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 1:
+- Local Filename: salt-lake-plum-alley-1.jpg
+- Original URL: https://collections.lib.utah.edu/digital/api/singleitem/image/uaida/123/default.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Chinese merchants in Plum Alley, circa 1900
+- Caption: Chinese business owners in Plum Alley. Despite discrimination and violence, they built a thriving community in Salt Lake City.
+- Credit: University of Utah Digital Collections
+- Status: FAILED (API returned error or unavailable)
+
+Image 2:
+- Local Filename: salt-lake-plum-alley-2.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chinese_laundry_Salt_Lake_City_1900s.jpg/1280px-Chinese_laundry_Salt_Lake_City_1900s.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Chinese laundry in Salt Lake City, early 1900s
+- Caption: A Chinese laundry, one of the most common businesses in Plum Alley. Laundries employed many Chinese immigrants who were excluded from other professions.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 3:
+- Local Filename: salt-lake-plum-alley-3.jpg
+- Original URL: https://collections.lib.utah.edu/digital/api/singleitem/image/uaida/456/default.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Interior of Chinese store in Plum Alley
+- Caption: Inside a Chinese store in Plum Alley, showing goods imported from China and serving the local community.
+- Credit: University of Utah Digital Collections
+- Status: FAILED (API returned error or unavailable)
+
+Image 4:
+- Local Filename: salt-lake-plum-alley-4.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Salt_Lake_City_demolition_1950s.jpg/1280px-Salt_Lake_City_demolition_1950s.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Urban renewal demolition in Salt Lake City, 1950s
+- Caption: Urban renewal demolition in Salt Lake City during the 1950s. Plum Alley was razed as part of downtown redevelopment.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 5:
+- Local Filename: salt-lake-plum-alley-5.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Salt_Lake_City_downtown_modern.jpg/1280px-Salt_Lake_City_downtown_modern.jpg
+- Article: Plum Alley: Salt Lake City's Lost Chinatown
+- Alt Text: Modern downtown Salt Lake City on former Plum Alley site
+- Caption: Modern downtown Salt Lake City. Plum Alley once ran through this area—now there's no trace it ever existed.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+SEATTLE - Coal Country: When Seattle Dug the Earth
+================================================================================
+
+Image 1:
+- Local Filename: seattle-coal-country-1.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Newcastle_coal_mine_Washington_1880s.jpg/1280px-Newcastle_coal_mine_Washington_1880s.jpg
+- Article: Coal Country: When Seattle Dug the Earth
+- Alt Text: Newcastle coal mine entrance, 1880s
+- Caption: The Newcastle coal mine east of Seattle, one of the largest coal operations in Washington Territory.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 2:
+- Local Filename: seattle-coal-country-2.jpg
+- Original URL: https://digitalcollections.lib.washington.edu/digital/api/singleitem/image/imlsmohai/234/default.jpg
+- Article: Coal Country: When Seattle Dug the Earth
+- Alt Text: Chinese coal miners at Newcastle
+- Caption: Chinese miners at Newcastle. They were paid less than white miners and faced constant discrimination.
+- Credit: University of Washington Special Collections
+- Status: SUCCESS (61KB downloaded)
+
+Image 3:
+- Local Filename: seattle-coal-country-3.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Coal_mine_disaster_Newcastle_1894.jpg/1280px-Coal_mine_disaster_Newcastle_1894.jpg
+- Article: Coal Country: When Seattle Dug the Earth
+- Alt Text: Newcastle mine disaster scene, 1894
+- Caption: The aftermath of a mine disaster at Newcastle in 1894. Explosions and cave-ins killed dozens of miners.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 4:
+- Local Filename: seattle-coal-country-4.jpg
+- Original URL: https://digitalcollections.lib.washington.edu/digital/api/singleitem/image/imlsmohai/567/default.jpg
+- Article: Coal Country: When Seattle Dug the Earth
+- Alt Text: Coal miners' housing in Newcastle
+- Caption: Miners' housing in Newcastle. Company towns controlled every aspect of workers' lives.
+- Credit: University of Washington Special Collections
+- Status: SUCCESS (49KB downloaded)
+
+Image 5:
+- Local Filename: seattle-coal-country-5.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Abandoned_Newcastle_coal_mine.jpg/1280px-Abandoned_Newcastle_coal_mine.jpg
+- Article: Coal Country: When Seattle Dug the Earth
+- Alt Text: Abandoned coal mine ruins
+- Caption: Abandoned ruins of Seattle-area coal mines. The industry collapsed in the early 1900s.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+TAMPA - The Men Who Read to the Cigar Rollers
+================================================================================
+
+Image 1:
+- Local Filename: tampa-cigar-lectors-1.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cigar_lector_Cuba_1900s.jpg/800px-Cigar_lector_Cuba_1900s.jpg
+- Article: The Men Who Read to the Cigar Rollers
+- Alt Text: A lector reading to cigar workers in a Cuban factory, early 20th century
+- Caption: A lector reading to cigar workers. This tradition, originating in Cuba, transformed cigar factories into centers of learning and political discourse.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 2:
+- Local Filename: tampa-cigar-lectors-2.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ybor_City_cigar_factory_exterior_1900s.jpg/1280px-Ybor_City_cigar_factory_exterior_1900s.jpg
+- Article: The Men Who Read to the Cigar Rollers
+- Alt Text: Exterior of a cigar factory in Ybor City, Tampa, early 1900s
+- Caption: An Ybor City cigar factory in the early 20th century. These factories, initially built by Cuban manufacturers, brought the lector tradition to Tampa.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+Image 3:
+- Local Filename: tampa-cigar-lectors-3.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Jose_Marti_portrait.jpg/440px-Jose_Marti_portrait.jpg
+- Article: The Men Who Read to the Cigar Rollers
+- Alt Text: Portrait of José Martí
+- Caption: José Martí, the Cuban poet and revolutionary. His speeches and writings, often read aloud by the lectores, galvanized Tampa's cigar workers to support Cuban independence.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+TAMPA - The Neighborhood Under the Highway (Dobyville)
+================================================================================
+
+Image 1:
+- Local Filename: tampa-dobyville-1.jpg
+- Original URL: https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Dobyville_001.jpg
+- Article: The Neighborhood Under the Highway
+- Alt Text: Street scene in Dobyville, Tampa, circa 1960
+- Caption: A street scene in Dobyville, circa 1960s. This thriving African American community, though modest, fostered a strong sense of belonging and self-sufficiency.
+- Credit: Tampa Bay History Center
+- Status: FAILED (146 bytes - site blocked download or image unavailable)
+
+Image 2:
+- Local Filename: tampa-dobyville-2.jpg
+- Original URL: https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Crosstown_Expressway_001.jpg
+- Article: The Neighborhood Under the Highway
+- Alt Text: Aerial view of Crosstown Expressway construction through Tampa, 1970s
+- Caption: Construction of the Crosstown Expressway (now Selmon Expressway) cutting through South Tampa in the 1970s. Dobyville lay directly in the path of this urban renewal project.
+- Credit: Tampa Bay History Center
+- Status: FAILED (146 bytes - site blocked download or image unavailable)
+
+Image 3:
+- Local Filename: tampa-dobyville-3.jpg
+- Original URL: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg/1280px-Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg
+- Article: The Neighborhood Under the Highway
+- Alt Text: Historical photo of urban renewal demolition in a US city, 1960s
+- Caption: Urban renewal demolition in a US city, illustrative of the widespread destruction of Black neighborhoods for highway construction in the mid-20th century.
+- Credit: Wikimedia Commons
+- Status: FAILED (redirect page, not actual image)
+
+================================================================================
+SUMMARY
+================================================================================
+
+Total Images Attempted: 20
+Successfully Downloaded: 2
+Failed Downloads: 18
+
+Successful Downloads:
+1. seattle-coal-country-2.jpg (Chinese coal miners at Newcastle) - 61KB
+2. seattle-coal-country-4.jpg (Coal miners' housing in Newcastle) - 49KB
+
+Failed Downloads:
+- Wikimedia Commons images: Most appear to be receiving redirect pages instead of actual images (files are all exactly 2.0KB)
+- Find a Grave: Site blocked the download (0 bytes)
+- University of Utah Digital Collections: API returned errors (162 bytes)
+- Tampa Bay History Center: Site blocked downloads (146 bytes each)
+
+================================================================================
+NOTES AND RECOMMENDATIONS
+================================================================================
+
+1. Wikimedia Commons Download Issue:
+   The Wikimedia URLs are returning HTML redirect pages (2.0KB files) instead of the
+   actual images. This suggests the URLs in the catalog may be placeholders or that
+   Wikimedia requires different access methods (user agent, cookies, etc.). These images
+   may not actually exist at the specified URLs.
+
+2. Institutional Archives:
+   - University of Washington Digital Collections: Only 2 of 2 images downloaded successfully
+   - University of Utah Digital Collections: API endpoints returned errors
+   - Tampa Bay History Center: Site appears to block automated downloads
+
+3. Alternative Approaches:
+   - For Wikimedia Commons: Search for these historical figures/events on Wikimedia and
+     find actual existing images
+   - For institutional archives: May require manual download or special API access
+   - Consider using royalty-free stock photo sites like Unsplash for generic images
+   - Some images may need to be sourced from local historical societies directly
+
+4. Images That Need Replacement:
+   - All Anchorage/Boggs-Begich images (3)
+   - All Salt Lake City images (8)
+   - 3 of 5 Seattle coal country images
+   - All Tampa images (7)
+
+================================================================================
