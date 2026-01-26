@@ -13,7 +13,7 @@ export const bohemianFlats: Article = {
   publishedAt: '2024-03-19T08:30:00Z',
   updatedAt: '2024-12-18T11:20:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/bohemian-flats.png',
+    src: '/minneapolis/articles/bohemian-flats-historic.jpg',
     alt: 'Bohemian Flats settlement along the Mississippi River, circa 1910',
     credit: 'Minnesota Historical Society',
   },
