@@ -29,10 +29,10 @@ export const bohemianFlats: Article = {
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10214631&catirn=10204738&oldirn=10204738&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
-          alt: 'Panoramic view of Bohemian Flats, Minneapolis, early 1900s',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Bohemian_Flats_and_the_West_Bank_-_DPLA_-_5c97e4b945c6cb3caacd20b899ec48cf.jpg',
+          alt: 'Panoramic view of Bohemian Flats and Minneapolis West Bank, showing settlement below with Minneapolis Gas Light storage tank and Foshay Tower construction in background',
           caption: 'A panoramic view of Bohemian Flats, Minneapolis, circa 1910. The immigrant village sat directly on the banks of the Mississippi River, beneath the bluffs.',
-          credit: 'Minnesota Historical Society',
+          credit: 'John H. Kammerdiener, Hennepin County Library/DPLA',
         },
         {
           type: 'paragraph',
@@ -52,15 +52,22 @@ export const bohemianFlats: Article = {
           content: 'They built what they could afford: small frame houses, some barely more than shacks, clustered along unpaved streets with names like Wood Street and Mill Street. At its peak around 1900, roughly a thousand people lived on the Flats — enough to sustain their own churches, their own social clubs, their own way of life.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/96/House_in_Bohemian_Flats_-_DPLA_-_35316935f4245cce52b595bcbeb23bce.jpg',
+          alt: 'Close-up of a wooden house in Bohemian Flats showing typical immigrant housing construction',
+          caption: 'A typical Bohemian Flats home — modest wooden construction built from whatever materials residents could afford or salvage.',
+          credit: 'A.E. Kairies, Hennepin County Library/DPLA',
+        },
+        {
           type: 'paragraph',
           content: 'Every morning, the men of Bohemian Flats climbed 79 wooden stairs cut into the bluff to reach the city above. They worked in the flour mills at St. Anthony Falls, on railroad crews, as day laborers — whatever work immigrants could find. Every evening, they descended back to the river.',
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204719&catirn=10204719&oldirn=10204719&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
-          alt: 'The 79 wooden stairs connecting Bohemian Flats to Minneapolis above',
-          caption: 'The 79 wooden stairs that residents of Bohemian Flats climbed daily to reach their jobs in the flour mills and the city above.',
-          credit: 'Minnesota Historical Society',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Bohemian_Flats_Street_Scene_-_DPLA_-_8fe158651d1ffc3619c61a5542b0287a.jpg',
+          alt: 'Street scene in Bohemian Flats showing the tight-knit immigrant community along an unpaved road',
+          caption: 'A street in Bohemian Flats. Every morning, residents climbed 79 wooden stairs cut into the bluff to reach the city above for work in the flour mills.',
+          credit: 'Hennepin County Library/DPLA',
         },
         {
           type: 'quote',
@@ -88,6 +95,20 @@ export const bohemianFlats: Article = {
         {
           type: 'paragraph',
           content: 'But the river also took. Every spring brought flooding, sometimes catastrophic. Houses were swept away. Possessions vanished. In bad years, people drowned. Living on the Flats meant accepting that the water that sustained you could also destroy you.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Bohemian_Flats_-_DPLA_-_51f97df45f08d6edd128fae5b372fc3c.jpg',
+          alt: 'Bohemian Flats during springtime flood, showing houses surrounded by floodwaters from the Mississippi River',
+          caption: 'Spring flooding was a constant threat. Houses stood surrounded by floodwaters, and residents learned to live with the river\'s unpredictable moods.',
+          credit: 'Deft Studios, Hennepin County Library/DPLA',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Women_Gathering_Driftwood_From_the_River_on_the_Bohemian_Flats_-_DPLA_-_cdd73b0bb542e264bbd196891933f49c.jpg',
+          alt: 'Women and children from Bohemian Flats gathering driftwood from the Mississippi River',
+          caption: 'Women and children scavenging driftwood from the Mississippi. The river provided lumber, firewood, and building materials for the community.',
+          credit: 'Hennepin County Library/DPLA',
         },
         {
           type: 'callout',
@@ -160,10 +181,10 @@ export const bohemianFlats: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bohemian_Flats_Park_Minneapolis.jpg/1280px-Bohemian_Flats_Park_Minneapolis.jpg',
-          alt: 'Bohemian Flats Park, Minneapolis, contemporary photo',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Bohemian_Flats_Park._%28May_23%2C_2019%29.jpg',
+          alt: 'Bohemian Flats Park in 2019, now a grassy riverfront park along the Mississippi River in Minneapolis',
           caption: 'Bohemian Flats Park today. A serene green space along the Mississippi River, with no overt indication of the vibrant immigrant community that once thrived here.',
-          credit: 'Wikimedia Commons',
+          credit: 'Czbik/Wikimedia Commons (CC0)',
         },
         {
           type: 'paragraph',
