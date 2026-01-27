@@ -531,7 +531,7 @@ export const portland: CityData = {
           description: 'A corridor that embodies Portland\'s gentrification better than any think piece ever could. Once a refuge for Black families displaced by 1948 flooding, this neighborhood saw its Black population drop from 60% in 1990 to under 10% by 2020. Now it\'s boutiques, coffee shops, and $8 toast. The independent businesses are genuinely good. The history is genuinely uncomfortable. Both things are true.',
           images: [
             {
-              src: 'https://picsum.photos/seed/mississippi-avenue-portland/800/600', // Placeholder
+              src: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Portland_Alberta_street.jpg',
               alt: 'Mississippi Avenue storefronts and street scene'
             }
           ],
@@ -550,7 +550,7 @@ export const portland: CityData = {
           description: 'Portland\'s underground tunnel system connecting basements to the Willamette waterfront, allegedly used to kidnap drunk men and press them into naval service—"shanghaiing." How much is true? Unclear. Old Town Pizza operates above part of the network and offers tours. The tunnels existed for legitimate freight movement. The shanghaiing stories might be exaggerated folklore. Either way, the basement is legitimately creepy, the pizza is solid, and the ghost tour leans hard into the mythology.',
           images: [
             {
-              src: 'https://picsum.photos/seed/shanghai-tunnels-portland/800/600', // Placeholder
+              src: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Portland%2C_Oregon_-_Old_Town.jpg',
               alt: 'Old Town Pizza above the historic Shanghai Tunnels'
             }
           ],
