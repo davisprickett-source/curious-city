@@ -14,9 +14,9 @@ export const phoenixLights: Article = {
   },
   publishedAt: '2024-10-08T12:00:00Z',
   featuredImage: {
-    src: '/phoenix/articles/phoenix-lights.png',
-    alt: 'Recreation of the Phoenix Lights V-formation',
-    credit: 'Phoenix Lights documentary',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Phoenix_Panorama_From_South_Mountain_%284892941298%29.jpg',
+    alt: 'Phoenix, Arizona skyline at dusk - the city that witnessed the Phoenix Lights phenomenon in 1997',
+    credit: 'Wikimedia Commons / Alan Stark (CC BY-SA 2.0)',
   },
   category: 'feature',
   tags: ['phoenix', 'ufo', 'unexplained', '1997', 'mystery', 'aviation'],
@@ -31,6 +31,13 @@ export const phoenixLights: Article = {
         {
           type: 'paragraph',
           content: 'The date was March 13, 1997. By the time the night was over, thousands of people in two states had witnessed what would become known as the Phoenix Lights — one of the most widely observed and best-documented UFO sightings in history. A quarter century later, nobody has satisfactorily explained what everyone saw.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Phoenix%2C_Arizona.JPG',
+          alt: 'Phoenix skyline from South Mountain, the city at the center of the 1997 Phoenix Lights phenomenon',
+          caption: 'Phoenix as seen from South Mountain. On the night of March 13, 1997, thousands of residents across the Valley looked up to see something they couldn\'t explain crossing the sky.',
+          credit: 'Wikimedia Commons / Bigmikebmw (CC BY-SA 3.0)',
         },
         {
           type: 'heading',
@@ -54,6 +61,13 @@ export const phoenixLights: Article = {
         {
           type: 'paragraph',
           content: 'The second event came later — around 10:00 PM — when a series of bright lights appeared over Phoenix and hovered for several minutes before fading. This was the image captured on video and broadcast worldwide: a string of orbs hanging motionless above the Estrella Mountains.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Quartzpeak022014.JPG',
+          alt: 'Sierra Estrella mountains southwest of Phoenix, where the second wave of Phoenix Lights appeared',
+          caption: 'The Sierra Estrella mountains southwest of Phoenix. The second wave of lights appeared to hover above this range before winking out one by one — the image that was captured on video and broadcast worldwide.',
+          credit: 'Wikimedia Commons / Mikesanchez1109 (CC BY-SA 3.0)',
         },
         {
           type: 'ad',
@@ -146,6 +160,13 @@ export const phoenixLights: Article = {
           content: 'The Aftermath',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Mystery_Castle_%2814242518270%29.jpg',
+          alt: 'The Phoenix Valley, a sprawling urban landscape where thousands witnessed unexplained lights in 1997',
+          caption: 'The Phoenix Valley stretches across the Sonoran Desert. In 1997, residents across this vast metropolitan area all reported seeing the same phenomenon — something that\'s proven impossible to dismiss.',
+          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
+        },
+        {
           type: 'paragraph',
           content: 'The Phoenix Lights marked a turning point in UFO culture. Before 1997, UFO sightings were easy to dismiss — lone witnesses, grainy photos, implausible claims. But thousands of credible people witnessing the same event simultaneously? That was harder to ignore.',
         },
@@ -177,6 +198,13 @@ export const phoenixLights: Article = {
         {
           type: 'paragraph',
           content: 'What we know for certain: on the night of March 13, 1997, thousands of people in Arizona looked up and saw something they couldn\'t explain. They reported it. They documented it. They\'ve spent decades being asked to doubt what they saw. Most of them haven\'t.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/AguaFriaNM_%28cropped%29.jpeg',
+          alt: 'Saguaro cacti under the Arizona sky - the desert landscape where thousands witnessed the Phoenix Lights',
+          caption: 'The Arizona desert, with its iconic saguaros and vast open skies. On clear nights, Arizonans still look up and wonder about what crossed the sky on March 13, 1997.',
+          credit: 'Wikimedia Commons / Bureau of Land Management (Public Domain)',
         },
         {
           type: 'divider',

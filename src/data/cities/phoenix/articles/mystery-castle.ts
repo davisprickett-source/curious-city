@@ -13,9 +13,9 @@ export const mysteryCastle: Article = {
   publishedAt: '2024-02-08T09:45:00Z',
   updatedAt: '2024-10-15T13:00:00Z',
   featuredImage: {
-    src: '/phoenix/articles/mystery-castle.png',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Side_of_House_%2814242512188%29.jpg',
     alt: 'Mystery Castle exterior panoramic view showing the sprawling folk-art architecture built by Boyce Gulley',
-    credit: 'Wikimedia Commons / StellarD (Public Domain)',
+    credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
   },
   category: 'history',
   tags: ['phoenix', 'architecture', 'history', 'family', 'folk-art', 'endangered'],
@@ -50,10 +50,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Boyce_Gulley.jpg/440px-Boyce_Gulley.jpg',
-          alt: 'Portrait of Boyce Gulley, builder of Mystery Castle',
-          caption: 'Boyce Gulley, pictured here around the time of his disappearance. Diagnosed with tuberculosis, he chose to leave his family and build a castle in the Arizona desert.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Phoenix-Mystery_Castle-Main_Entrance.jpg',
+          alt: 'The main entrance of Mystery Castle in Phoenix, Arizona',
+          caption: 'The main entrance to Mystery Castle. Boyce Gulley built every doorway, archway, and window by hand from salvaged materials over 15 years.',
+          credit: 'Wikimedia Commons / Tony the Marine (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -80,10 +80,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tuberculosis_patient_on_porch_Colorado.jpg/800px-Tuberculosis_patient_on_porch_Colorado.jpg',
-          alt: 'Historical photo of a tuberculosis patient resting on a porch in a sanatorium',
-          caption: 'Tuberculosis patients were often prescribed fresh air and sunshine. Many flocked to dry, elevated climates like Arizona, hoping the desert air would cure them.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/AguaFriaNM_%28cropped%29.jpeg',
+          alt: 'Saguaro cacti in the Sonoran Desert of Arizona',
+          caption: 'The Sonoran Desert of Arizona, with its dry heat and saguaro cacti, drew thousands of tuberculosis sufferers in the early 20th century. Many came hoping the desert air would cure them.',
+          credit: 'Wikimedia Commons / Bureau of Land Management (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -118,10 +118,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/mystery-castle-kitchen.jpg',
-          alt: 'Mystery Castle kitchen showing the eclectic mix of salvaged materials and folk art construction',
-          caption: 'The kitchen at Mystery Castle showcases Boyce Gulley\'s resourceful building style — every surface tells a story of salvage and creativity.',
-          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Phoenix-Mystery_Castle-1.jpg',
+          alt: 'One of the eighteen rooms inside Mystery Castle showing the eclectic interior',
+          caption: 'One of the eighteen rooms inside Mystery Castle. The eclectic interior showcases Boyce Gulley\'s resourceful building style — every surface tells a story of salvage and creativity.',
+          credit: 'Wikimedia Commons / Tony the Marine (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -186,10 +186,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/mystery-castle-life-magazine-1948.png',
-          alt: 'Life Magazine cover from January 26, 1948 featuring Mystery Castle and Mary Lou Gulley',
-          caption: 'The January 26, 1948 issue of Life magazine introduced Mystery Castle to America with the headline "Life Visits a Mystery Castle." The story made Mary Lou Gulley famous overnight.',
-          credit: 'Life Magazine, 1948',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Patio_Area_%2814242635937%29.jpg',
+          alt: 'Patio area at Mystery Castle showing the unique folk-art architecture',
+          caption: 'One of the many patio areas at Mystery Castle. After the 1948 Life magazine feature made the castle famous, Mary Lou Gulley began giving tours to curious visitors.',
+          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -197,10 +197,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mystery_Castle_interior_room.jpg/1280px-Mystery_Castle_interior_room.jpg',
-          alt: 'Interior of Mystery Castle, Phoenix, showing unique construction details',
-          caption: 'The eclectic interior of Mystery Castle, with its stone walls, exposed beams, and salvaged materials, reflects Boyce Gulley\'s unique vision.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Phoenix-Mystery_Castle-7.jpg',
+          alt: 'A window at Mystery Castle made from an old car\'s spoke wheel rim',
+          caption: 'One of Mystery Castle\'s signature features: a window Gulley crafted from the spoke wheel rim of an old car. Nearly everything in the castle was repurposed from salvage.',
+          credit: 'Wikimedia Commons / Tony the Marine (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -208,10 +208,10 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/mystery-castle-mary-lou-gulley.png',
-          alt: 'Mary Lou Gulley at Mystery Castle in her later years, wearing a blue outfit and white hat',
-          caption: 'Mary Lou Gulley continued giving tours of Mystery Castle well into her eighties. Visitors remember her as gracious, knowledgeable, and deeply devoted to preserving her father\'s creation.',
-          credit: 'Photo: mella doll / Flickr, 2002',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Mystery_Castle_%2814242518270%29.jpg',
+          alt: 'Overview of Mystery Castle showing the sprawling multi-level architecture',
+          caption: 'An overview of Mystery Castle shows how the structure grew organically over 15 years. Mary Lou Gulley lived here for 65 years, giving tours until shortly before her death in 2010.',
+          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -224,9 +224,9 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/mystery-castle-exterior-stairs.jpg',
-          alt: 'Mystery Castle exterior showing stone stairs, patios, and the distinctive multi-level architecture',
-          caption: 'The castle\'s exterior reveals its organic, unplanned growth — stone staircases, patios at different levels, and the distinctive folk-art architecture that makes it irreplaceable.',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Exterior_Wall_Detail_%2814242514690%29.jpg',
+          alt: 'Exterior wall detail at Mystery Castle showing the unique construction methods',
+          caption: 'The castle\'s exterior reveals its organic, unplanned growth — stone, adobe, recycled materials, and the distinctive folk-art construction that makes it irreplaceable.',
           credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
         },
         {

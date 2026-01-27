@@ -12,9 +12,9 @@ export const winnieRuthJudd: Article = {
   },
   publishedAt: '2024-10-30T12:00:00Z',
   featuredImage: {
-    src: '/phoenix/articles/judd-portrait.jpg',
-    alt: 'Portrait photograph of Winnie Ruth Judd, the Trunk Murderess',
-    credit: 'Los Angeles Public Library / Herald Examiner Collection',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Phoenix%2C_Arizona.JPG',
+    alt: 'Phoenix, Arizona skyline viewed from South Mountain - scene of the 1931 Trunk Murders',
+    credit: 'Wikimedia Commons / Bigmikebmw (CC BY-SA 3.0)',
   },
   category: 'history',
   tags: ['phoenix', 'true-crime', 'history', '1930s', 'trial', 'mystery'],
@@ -45,10 +45,10 @@ export const winnieRuthJudd: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/judd-county-jail-hospital.jpg',
-          alt: 'Winnie Ruth Judd in county jail hospital with her husband Dr. William C. Judd, 1931',
-          caption: 'Winnie Ruth Judd whispers to her husband, Dr. William C. Judd, as she lies on a cot in the county jail hospital after her capture. Police found a letter in which she confessed to killing Samuelson and LeRoi.',
-          credit: 'Los Angeles Public Library / Herald Examiner Collection',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/RuthJuddBungalowFrontView.JPG',
+          alt: 'The bungalow at 2929 N. 2nd Street in Phoenix where the Trunk Murders occurred in 1931',
+          caption: 'The bungalow at 2929 N. 2nd Street (now 2947) in Phoenix where Agnes LeRoi and Hedvig Samuelson were murdered on October 16, 1931. The house still stands today.',
+          credit: 'Wikimedia Commons / Chloe93 (CC BY-SA 3.0)',
         },
         {
           type: 'heading',
@@ -61,10 +61,10 @@ export const winnieRuthJudd: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/phoenix-union-station.jpg',
-          alt: 'Phoenix Union Station, where Winnie Ruth Judd departed with the trunks',
-          caption: 'Phoenix Union Station, where Judd boarded the Golden State Limited train to Los Angeles with the trunks containing the bodies. The historic station is now a museum.',
-          credit: 'Wikimedia Commons / CC BY-SA 3.0',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/10/PhoenixTrainStation.JPG',
+          alt: 'Phoenix Union Station, where Winnie Ruth Judd departed with the trunks in 1931',
+          caption: 'Phoenix Union Station, where Judd boarded the Golden State Limited train to Los Angeles on October 18, 1931, with the trunks containing the bodies. The historic station still stands today.',
+          credit: 'Wikimedia Commons / Chloe93 (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -77,10 +77,10 @@ export const winnieRuthJudd: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/judd-trial-1931.png',
-          alt: 'Courtroom scene at the beginning of the Winnie Ruth Judd murder trial, 1931',
-          caption: 'Courtroom scene at the beginning of the trial. At the counsel table, left to right: Herman Lewkowitz, Paul Schenck, and Joe Zaversack, attorneys for Mrs. Judd, with Judd at far right.',
-          credit: 'Los Angeles Public Library / Herald Examiner Collection',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Phoenix_Panorama_From_South_Mountain_%284892941298%29.jpg',
+          alt: 'Panoramic view of Phoenix from South Mountain, the city where the Trunk Murders shocked the nation in 1931',
+          caption: 'Phoenix as seen from South Mountain. In 1931, this growing desert city was shocked by the gruesome Trunk Murders, a case that made national headlines and captivated Depression-era America.',
+          credit: 'Wikimedia Commons / Alan Stark (CC BY-SA 2.0)',
         },
         {
           type: 'paragraph',
@@ -97,10 +97,10 @@ export const winnieRuthJudd: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/arizona-state-hospital.jpg',
-          alt: 'Arizona State Hospital main building, where Winnie Ruth Judd was confined',
-          caption: 'The Arizona State Hospital (formerly the Arizona State Asylum for the Insane), where Winnie Ruth Judd spent decades after being declared insane. She escaped from the institution seven times over the years.',
-          credit: 'Wikimedia Commons / CC BY-SA 3.0',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/AguaFriaNM_%28cropped%29.jpeg',
+          alt: 'The Arizona desert landscape that Winnie Ruth Judd would have known during her decades at the Arizona State Hospital',
+          caption: 'The Arizona desert, with its iconic saguaro cacti. Winnie Ruth Judd spent 38 years at the Arizona State Hospital in Phoenix — though not continuously, as she escaped seven times.',
+          credit: 'Wikimedia Commons / Bureau of Land Management (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -135,10 +135,10 @@ export const winnieRuthJudd: Article = {
         },
         {
           type: 'image',
-          src: '/phoenix/articles/judd-surrender-1931.jpg',
-          alt: 'Winnie Ruth Judd surrenders to police in Los Angeles, October 1931',
-          caption: 'Winnie Ruth Judd surrenders to authorities at a Los Angeles funeral home on October 23, 1931, flanked by defense council members and detectives. Her husband Dr. W.C. Judd is visible behind her.',
-          credit: 'UCLA Library Special Collections / Los Angeles Times Photographic Archives',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Quartzpeak022014.JPG',
+          alt: 'Sierra Estrella mountains near Phoenix, Arizona',
+          caption: 'The Sierra Estrella mountains southwest of Phoenix. In 1962, during her seventh escape from the Arizona State Hospital, Winnie Ruth Judd vanished into obscurity, living undetected for over six years.',
+          credit: 'Wikimedia Commons / Mikesanchez1109 (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
