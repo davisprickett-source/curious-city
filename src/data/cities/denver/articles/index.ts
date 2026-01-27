@@ -15,9 +15,9 @@ export const blucifer: Article = {
   },
   publishedAt: '2024-10-25T12:00:00Z',
   featuredImage: {
-    src: '/denver/articles/blucifer.png',
-    alt: 'Blue Mustang sculpture at Denver International Airport with glowing red eyes',
-    credit: 'Denver International Airport',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/DIA_Roof_and_Hotel.jpg',
+    alt: 'Denver International Airport with its distinctive white tent roof and mountains in background',
+    credit: 'Denver International Airport / Wikimedia Commons',
   },
   category: 'feature',
   tags: ['denver', 'public-art', 'airport', 'urban-legends', 'sculpture', 'weird'],
@@ -32,6 +32,13 @@ export const blucifer: Article = {
         {
           type: 'paragraph',
           content: 'The sculpture\'s official name is "Blue Mustang." Absolutely nobody calls it that. To Denverites, it\'s Blucifer — the demon horse — and its story is even stranger than it looks.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/DIA_Roof_and_Hotel.jpg',
+          alt: 'Denver International Airport terminal with its iconic white tent roof',
+          caption: 'Denver International Airport\'s distinctive white tent roof, designed to evoke the snow-capped Rocky Mountains. The 32-foot Blue Mustang sculpture guards the entrance on Peña Boulevard — visitors encounter it before they ever see the terminal.',
+          credit: 'Denver International Airport / Wikimedia Commons',
         },
         {
           type: 'heading',
@@ -86,6 +93,13 @@ export const blucifer: Article = {
           variant: 'warning',
           title: 'The Irony',
           content: 'Luis Jiménez was killed by the sculpture he\'d spent over a decade creating. The horse that was meant to symbolize freedom and the wild spirit of the West took its creator\'s life before it was finished.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Denver_Skyline_in_Winter.JPG',
+          alt: 'Denver skyline with Rocky Mountains in winter',
+          caption: 'Denver and the Rocky Mountains — the landscape that inspired Luis Jiménez\'s vision of a wild blue stallion representing the untamed spirit of the American West.',
+          credit: 'R0uge / Wikimedia Commons (CC BY-SA 4.0)',
         },
         {
           type: 'paragraph',
@@ -148,6 +162,13 @@ export const blucifer: Article = {
           variant: 'info',
           title: 'DIA Conspiracy Lore',
           content: 'Denver International Airport has embraced its reputation so thoroughly that it now sells conspiracy theory merchandise in its gift shops. T-shirts, mugs, and posters reference secret bunkers, lizard people, and yes, Blucifer. The airport has learned to monetize the absurd.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/64/2006-07-14-Denver_Skyline_Midnight.jpg',
+          alt: 'Denver skyline at night',
+          caption: 'Denver at night — the city that decided to embrace its demon horse rather than fight it. Blucifer has become as much a symbol of Denver\'s identity as the skyline itself.',
+          credit: 'Matt Wright / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',

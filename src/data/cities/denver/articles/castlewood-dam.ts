@@ -12,9 +12,9 @@ export const castlewoodDam: Article = {
   },
   publishedAt: '2024-11-22T12:00:00Z',
   featuredImage: {
-    src: '/denver/articles/castlewood-dam.png',
-    alt: 'The ruins of Castlewood Dam after the 1933 collapse',
-    credit: 'Denver Public Library Western History Collection',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Castlewood_Dam_Remnants.jpg',
+    alt: 'The ruins of Castlewood Dam in Castlewood Canyon State Park',
+    credit: 'Zenhaus / Wikimedia Commons (CC BY-SA 3.0)',
   },
   category: 'history',
   tags: ['denver', 'dam', 'disaster', 'infrastructure', 'forgotten-history', 'flood', 'engineering'],
@@ -29,6 +29,13 @@ export const castlewoodDam: Article = {
         {
           type: 'paragraph',
           content: 'For forty-three years, the dam had been slowly dying. Water seeped through cracks in the structure. Engineers warned it would collapse. Inspectors documented the deterioration. Nobody fixed it. The dam just sat there, holding back a reservoir of water twenty miles upstream from Denver, waiting for the storm that would finally break it.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Castlewood_Dam_Trails.jpg',
+          alt: 'View of the remains of Castlewood Dam from the former lake bottom',
+          caption: 'Looking north from the former lake bottom toward the remains of Castlewood Dam. The breach in the center is where the dam catastrophically failed on August 3, 1933.',
+          credit: 'Zenhaus / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -60,6 +67,13 @@ export const castlewoodDam: Article = {
           content: 'I have always considered the Castlewood dam a menace to public safety... It was constructed on shifting sand.',
           attribution: 'M.C. Hinderlider',
           role: 'Colorado State Engineer, 1933',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Denver_Skyline_in_Winter.JPG',
+          alt: 'Denver skyline with the Rocky Mountains',
+          caption: 'Modern Denver skyline with the Rocky Mountains in the background. In 1933, a wall of water from the Castlewood Dam failure raced 20 miles through Cherry Creek toward the heart of this growing city.',
+          credit: 'R0uge / Wikimedia Commons (CC BY-SA 4.0)',
         },
         {
           type: 'ad',
@@ -167,6 +181,13 @@ export const castlewoodDam: Article = {
           type: 'heading',
           level: 2,
           content: 'The Ruins',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Castlewood_Dam_Remnants.jpg',
+          alt: 'Remnants of Castlewood Dam viewed from the eastern end',
+          caption: 'Looking west toward the remains of Castlewood Dam from the eastern abutment. The massive breach in the center marks where the dam failed catastrophically in 1933, releasing millions of gallons of water.',
+          credit: 'Zenhaus / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',

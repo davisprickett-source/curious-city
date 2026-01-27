@@ -13,9 +13,9 @@ export const hopAlley: Article = {
   publishedAt: '2023-10-31T07:00:00Z',
   updatedAt: '2024-10-31T12:00:00Z',
   featuredImage: {
-    src: '/denver/dark-history/hop-alley.png',
-    alt: 'Hop Alley in Denver before the 1880 riot',
-    credit: 'Denver Public Library Western History Collection',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Massacre_of_the_Chinese_at_Rock_Springs.jpg',
+    alt: 'Illustration of anti-Chinese violence in the American West, 1885',
+    credit: 'Harper\'s Weekly / Wikimedia Commons (Public Domain)',
   },
   category: 'history',
   tags: ['denver', 'chinatown', 'race-riot', 'chinese-american', 'forgotten-history', 'violence', 'erasure'],
@@ -30,6 +30,13 @@ export const hopAlley: Article = {
         {
           type: 'paragraph',
           content: 'The night before — Halloween — a mob of 3,000 to 5,000 white men had swept through Denver\'s Chinese neighborhood. They called it Hop Alley, slang for the opium trade that white Denver associated with its Chinese residents. For eight hours, the mob beat, looted, and destroyed. One man was murdered. Dozens were injured. An entire community was erased in a single night.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Massacre_of_the_Chinese_at_Rock_Springs.jpg',
+          alt: 'Illustration depicting the Rock Springs massacre of 1885',
+          caption: 'An 1885 Harper\'s Weekly illustration of the Rock Springs massacre in Wyoming — part of a wave of anti-Chinese violence that swept through the American West in the 1880s. Denver\'s Hop Alley riot five years earlier followed the same pattern of mob violence against Chinese immigrants.',
+          credit: 'Harper\'s Weekly / Wikimedia Commons (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -57,6 +64,13 @@ export const hopAlley: Article = {
           content: 'The Chinese of Denver are a source of constant annoyance... they are a nation of thieves.',
           attribution: 'Rocky Mountain News',
           role: 'Report on the "Chinese Quarter," 1879',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Denver_union_station.jpg',
+          alt: 'Denver Union Station',
+          caption: 'Denver Union Station, first opened in 1881 — just months after the anti-Chinese riot destroyed Hop Alley. The LoDo neighborhood where the Chinese community once thrived is now a fashionable district with no trace of its violent past.',
+          credit: 'Darkshark0159 / Wikimedia Commons (Public Domain)',
         },
         {
           type: 'ad',
@@ -185,6 +199,13 @@ export const hopAlley: Article = {
           type: 'heading',
           level: 2,
           content: 'What Remains',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/64/2006-07-14-Denver_Skyline_Midnight.jpg',
+          alt: 'Denver skyline at night',
+          caption: 'Modern Denver\'s gleaming skyline at night. The LoDo neighborhood where Hop Alley once stood is now one of the city\'s most desirable areas — with no trace of the Chinese community that was violently erased in 1880.',
+          credit: 'Matt Wright / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',

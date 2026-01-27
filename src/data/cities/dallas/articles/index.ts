@@ -16,9 +16,9 @@ export const integratedCircuit: Article = {
   },
   publishedAt: '2024-10-18T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/integrated-circuit.png',
-    alt: 'Jack Kilby\'s original integrated circuit prototype',
-    credit: 'Texas Instruments Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/8/89/NXP_PCF8577C_LCD_driver_with_I%C2%B2C_%28Colour_Corrected%29.jpg',
+    alt: 'Microscope image of an integrated circuit die, showing the intricate patterns of transistors and connections',
+    credit: 'Wikimedia Commons / cole8888',
   },
   category: 'history',
   tags: ['dallas', 'technology', 'invention', 'texas-instruments', 'history', 'computing'],
@@ -33,6 +33,13 @@ export const integratedCircuit: Article = {
         {
           type: 'paragraph',
           content: 'Jack Kilby didn\'t set out to change the world. He was just trying to solve a wiring problem. But what he built — the integrated circuit, the microchip — became the foundation of the digital age. Everything that followed, from the moon landing to the internet to the device in your hand, was made possible by what happened in that Dallas lab.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+          alt: 'Modern Dallas skyline with arts district',
+          caption: 'The Dallas skyline today — a city transformed by the technology revolution that began in a Texas Instruments lab in 1958.',
+          credit: 'Wikimedia Commons / Gattacal',
         },
         {
           type: 'heading',
@@ -85,6 +92,13 @@ export const integratedCircuit: Article = {
           content: 'Kilby\'s breakthrough was conceptual: all electronic components could be fabricated from the same semiconductor material. Instead of connecting separate parts with wires, you could integrate them onto a single chip of semiconductor. This was the "integrated circuit" — all the parts, integrated together.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/89/NXP_PCF8577C_LCD_driver_with_I%C2%B2C_%28Colour_Corrected%29.jpg',
+          alt: 'Microscope view of a modern integrated circuit die',
+          caption: 'A modern integrated circuit under a microscope. What Kilby started in 1958 has evolved into chips containing billions of transistors — all traced back to that first prototype in Dallas.',
+          credit: 'Wikimedia Commons / cole8888',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Demonstration',
@@ -135,6 +149,13 @@ export const integratedCircuit: Article = {
           content: 'Jack Kilby won the 2000 Nobel Prize in Physics "for his part in the invention of the integrated circuit." He was 76 years old. In his acceptance speech, he noted that the integrated circuit had exceeded his wildest expectations — he\'d originally thought it might be useful for hearing aids.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Dallas_Fair_Park_Esplanade.jpg',
+          alt: 'Fair Park in Dallas, Texas',
+          caption: 'Fair Park, Dallas — a city that has reinvented itself multiple times, from cotton trading hub to oil capital to technology center. The integrated circuit was part of that transformation.',
+          credit: 'Wikimedia Commons / Andreas Praefcke',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Implications',
@@ -182,6 +203,13 @@ export const integratedCircuit: Article = {
           type: 'heading',
           level: 2,
           content: 'The Legacy',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Dealey_Plaza_from_Reunion_Tower_August_2015_01.jpg',
+          alt: 'Aerial view of downtown Dallas from Reunion Tower',
+          caption: 'Downtown Dallas today. The city that Jack Kilby called home for nearly five decades became a major technology hub partly because of what he invented here.',
+          credit: 'Wikimedia Commons / Michael Barera',
         },
         {
           type: 'paragraph',

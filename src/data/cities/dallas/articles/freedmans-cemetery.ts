@@ -12,9 +12,9 @@ export const freedmansCemetery: Article = {
   },
   publishedAt: '2024-11-12T12:00:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Freedmans_Cemetery_Memorial_Dallas.jpg/1280px-Freedmans_Cemetery_Memorial_Dallas.jpg',
-    alt: 'Freedman\'s Cemetery Memorial in Dallas, with bronze figures and commemorative wall',
-    credit: 'Wikimedia Commons',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+    alt: 'Dallas skyline — a city built over the graves of its formerly enslaved founders',
+    credit: 'Wikimedia Commons / Gattacal',
   },
   category: 'history',
   tags: ['dallas', 'civil-rights', 'cemetery', 'forgotten-history', 'reconstruction', 'archaeology'],
@@ -41,10 +41,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Freedmans_Town_Dallas_1900.jpg/1280px-Freedmans_Town_Dallas_1900.jpg',
-          alt: 'Historical photo of Freedman\'s Town, Dallas, early 1900s',
-          caption: 'Freedman\'s Town, Dallas, in the early 1900s. This vibrant community of formerly enslaved people established businesses, churches, and homes, but was largely erased by urban development.',
-          credit: 'Dallas Public Library / Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
+          alt: 'Knights of Pythias Temple in Deep Ellum, a historic Black building in Dallas',
+          caption: 'The Knights of Pythias Temple, built in 1916, represents what Black Dallas could achieve. The formerly enslaved people buried in Freedman\'s Cemetery laid the foundation for communities like this one.',
+          credit: 'Wikimedia Commons / Joe Mabel',
         },
         {
           type: 'paragraph',
@@ -97,10 +97,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-1.jpg',
-          alt: 'Archaeological artifacts from Freedman\'s Cemetery excavation',
-          caption: 'Objects discovered during the excavation: broken pottery, personal items, and burial artifacts that told the stories of Dallas\'s first free Black community.',
-          credit: 'Documentary Arts, Inc.',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Blindlemonjeffersoncirca1926.jpg',
+          alt: 'Blind Lemon Jefferson, a descendant of the Freedman\'s era',
+          caption: 'Blind Lemon Jefferson, born in 1893, was part of the generation that followed the freedmen. His blues music told stories of Black life in Texas — stories that began in communities like Freedman\'s Town.',
+          credit: 'Wikimedia Commons / Public Domain',
         },
         {
           type: 'heading',
@@ -117,10 +117,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Central_Expressway_construction_1949.jpg/1280px-Central_Expressway_construction_1949.jpg',
-          alt: 'North Central Expressway construction in Dallas, 1949',
-          caption: 'Construction of North Central Expressway in Dallas, 1949. The highway was built directly over a significant portion of Freedman\'s Cemetery, disturbing countless graves.',
-          credit: 'Texas Department of Transportation / Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Dealey_Plaza_from_Reunion_Tower_August_2015_01.jpg',
+          alt: 'Aerial view of Dallas highways and downtown',
+          caption: 'The highway system that criss-crosses Dallas today was built over and through historic Black neighborhoods, including Freedman\'s Cemetery. Thousands of graves remain beneath the pavement.',
+          credit: 'Wikimedia Commons / Michael Barera',
         },
         {
           type: 'paragraph',
@@ -155,10 +155,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-3.jpg',
-          alt: 'Historical photographs and documents from Freedman\'s Cemetery exhibition',
-          caption: 'The "Facing the Rising Sun" exhibition at the African American Museum in Dallas preserves artifacts, photographs, and documents from the excavation — telling the story of a community Dallas tried to forget.',
-          credit: 'Documentary Arts, Inc.',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Dallas_Fair_Park_Esplanade.jpg',
+          alt: 'Fair Park in Dallas',
+          caption: 'Fair Park, where the African American Museum of Dallas is located, houses the "Facing the Rising Sun" exhibition about Freedman\'s Cemetery — preserving the story of a community Dallas tried to forget.',
+          credit: 'Wikimedia Commons / Andreas Praefcke',
         },
         {
           type: 'paragraph',
@@ -176,10 +176,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/freedmans-cemetery/excavation-exhibit-2.jpg',
-          alt: 'Documentation from Freedman\'s Cemetery archaeological excavation, 1991-1994',
-          caption: '1991-1994: The excavation of Freedman\'s Cemetery produced over 185,000 photographic negatives and 33,000 pages of documentation — one of the largest archaeological projects in Texas history.',
-          credit: 'Documentary Arts, Inc.',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/T-Bone_Walker_1972.jpg',
+          alt: 'T-Bone Walker, legendary blues musician from Dallas',
+          caption: 'T-Bone Walker represents the cultural legacy that emerged from Dallas\'s Black community — a community whose founders rest in Freedman\'s Cemetery, their stories preserved in the largest archaeological project in Texas history.',
+          credit: 'Wikimedia Commons / Heinrich Klaffs',
         },
         {
           type: 'heading',

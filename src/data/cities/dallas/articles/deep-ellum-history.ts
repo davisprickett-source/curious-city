@@ -12,9 +12,9 @@ export const deepEllumHistory: Article = {
   },
   publishedAt: '2024-12-05T19:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/deep-ellum.png',
-    alt: 'Deep Ellum street scene, 1920s',
-    credit: 'Dallas Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
+    alt: 'Knights of Pythias Temple in Deep Ellum, designed by William Sidney Pittman',
+    credit: 'Wikimedia Commons / Joe Mabel',
   },
   category: 'history',
   tags: ['dallas', 'music-history', 'blues', 'urban-renewal', 'displacement', 'gentrification', 'civil-rights'],
@@ -33,6 +33,13 @@ export const deepEllumHistory: Article = {
         {
           type: 'paragraph',
           content: 'Then Dallas demolished it. Not metaphorically — literally. The city built highways through Deep Ellum, displacing hundreds of Black residents, destroying the 2400 block of Elm Street (the neighborhood\'s commercial heart), and erasing a cultural center that rivaled anything in America. What exists today is a sanitized, gentrified version marketed to tourists. The real Deep Ellum — the Black cultural haven that produced American music legends — was bulldozed for a freeway.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
+          alt: 'The Knights of Pythias Temple in Deep Ellum',
+          caption: 'The Knights of Pythias Temple at 2551 Elm Street — designed by William Sidney Pittman, the first Black architect registered in Texas. This 1916 building symbolized Black economic and cultural achievement in Deep Ellum.',
+          credit: 'Wikimedia Commons / Joe Mabel',
         },
         {
           type: 'heading',
@@ -58,6 +65,13 @@ export const deepEllumHistory: Article = {
           role: 'Folklorist and Deep Ellum historian',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Blindlemonjeffersoncirca1926.jpg',
+          alt: 'Blind Lemon Jefferson, circa 1926',
+          caption: 'Blind Lemon Jefferson (1893-1929), the "Father of Texas Blues," was Deep Ellum\'s most famous son. Born blind in East Texas, he moved to Deep Ellum in the early 1920s and became the first commercially successful male blues singer.',
+          credit: 'Wikimedia Commons / Public Domain',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -81,6 +95,13 @@ export const deepEllumHistory: Article = {
         {
           type: 'paragraph',
           content: 'The venues included the Ella B. Moore Theater, the Texas Harlem Theater, and dozens of clubs packed into a few square blocks. Recording scouts from Brunswick and Paramount Records came to Deep Ellum looking for talent. The neighborhood\'s sound — raw, electric, distinctly Texan — shaped American music.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/T-Bone_Walker_1972.jpg',
+          alt: 'T-Bone Walker performing in 1972',
+          caption: 'T-Bone Walker (1910-1975), who pioneered electric blues guitar, grew up in Deep Ellum. He learned to play by following Blind Lemon Jefferson through the streets as a boy, guiding the blind musician.',
+          credit: 'Wikimedia Commons / Heinrich Klaffs',
         },
         {
           type: 'callout',
@@ -118,6 +139,13 @@ export const deepEllumHistory: Article = {
           content: 'They didn\'t just destroy buildings. They destroyed a community, a culture, a way of life. And they did it on purpose.',
           attribution: 'Stephanie Payne',
           role: 'Historian, quoted in "Death of Deep Ellum"',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Robert_Johnson_grave%2C_Little_Zion_Missionary_Baptist_Church_Mississippi.jpg',
+          alt: 'Robert Johnson grave marker',
+          caption: 'Robert Johnson recorded some of his most legendary tracks in Dallas in 1937, including "Cross Road Blues." He died at 27, but his music — recorded partly in Dallas — shaped rock and roll forever.',
+          credit: 'Wikimedia Commons / OGItaly',
         },
         {
           type: 'heading',
@@ -175,6 +203,13 @@ export const deepEllumHistory: Article = {
           variant: 'warning',
           title: 'Then vs. Now',
           content: 'The 1920s Deep Ellum: A self-sustaining Black community producing American music legends. The 2020s Deep Ellum: A gentrified arts district that commemorates, but does not embody, that heritage. The name is the same. Everything else is different.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+          alt: 'Modern Dallas skyline',
+          caption: 'Modern Dallas skyline. The city that destroyed Deep Ellum with highways now celebrates its "cultural district" — a gentrified version of what was once America\'s great Black cultural center.',
+          credit: 'Wikimedia Commons / Gattacal',
         },
         {
           type: 'heading',

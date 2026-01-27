@@ -12,9 +12,9 @@ export const flight629: Article = {
   },
   publishedAt: '2024-11-25T12:00:00Z',
   featuredImage: {
-    src: '/denver/articles/flight-629.png',
-    alt: 'Wreckage of United Airlines Flight 629, November 1955',
-    credit: 'Denver Post Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Douglas_DC-6B%2C_United_Airlines_JP7385910.jpg',
+    alt: 'A United Airlines DC-6B similar to the aircraft involved in Flight 629',
+    credit: 'Jon Proctor / Wikimedia Commons',
   },
   category: 'history',
   tags: ['denver', 'aviation', 'true-crime', 'bombing', 'history', 'tragedy', '1950s'],
@@ -29,6 +29,13 @@ export const flight629: Article = {
         {
           type: 'paragraph',
           content: 'Eleven minutes later, the plane exploded over a sugar beet farm near Longmont, Colorado. The blast was so violent that witnesses on the ground thought they\'d seen a meteor. Wreckage scattered across two square miles. All 44 people aboard were killed instantly.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/15/United_Airlines_Postcard_DC-6B_Mainliner.png',
+          alt: 'United Airlines DC-6B Mainliner postcard',
+          caption: 'A postcard photo of the aircraft involved, N37559, nicknamed "Mainliner Denver." The DC-6B was a workhorse of commercial aviation in the 1950s.',
+          credit: 'United Airlines / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -62,6 +69,13 @@ export const flight629: Article = {
           role: 'Longmont farmer',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/United_Air_Lines_Flight_629._Crash_site.jpg',
+          alt: 'Crash site of United Airlines Flight 629',
+          caption: 'The tail section of Flight 629 was discovered on a Colorado farm. The debris field stretched across two square miles of Weld County farmland.',
+          credit: 'FBI / Wikimedia Commons',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -91,6 +105,13 @@ export const flight629: Article = {
           variant: 'info',
           title: 'The Insurance Policies',
           content: 'Jack Graham purchased three insurance policies on his mother\'s life: one for $6,250 from a vending machine at Stapleton Airport, and two others totaling $31,250 from agents he\'d contacted before the flight. Total potential payout: $37,500, equivalent to roughly $425,000 today.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/11/UnitedFlight629PlanePartsViaFBI.jpg',
+          alt: 'Wreckage of United Flight 629 laid out in a Denver warehouse',
+          caption: 'FBI investigators carefully laid out the wreckage of Flight 629 in a Denver warehouse, where they painstakingly reconstructed the aircraft to determine the cause of the explosion.',
+          credit: 'FBI / Wikimedia Commons',
         },
         {
           type: 'heading',

@@ -8,12 +8,25 @@ export const denver_history: Record<string, History> = {
       subtitle: 'Gold, silver, oil, weed, and the peculiar alchemy of turning mountain proximity into money',
       author: 'Carlos Reyes',
       publishedAt: '2024-12-22',
+      heroImage: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Denver_Skyline_in_Winter.JPG',
+        alt: 'Denver skyline with Rocky Mountains in winter',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
           type: 'paragraph',
           dropcap: true,
           content: 'The city sits exactly where the Great Plains end and the Rocky Mountains begin, the transition so abrupt it looks like a mistake, like someone drew a line and said flat stops here, vertical starts now. Denver is at 5,280 feet, exactly one mile high, a fact the city announces with almost religious fervor, painting the step on the state capitol building, marking it on every piece of civic infrastructure, as if altitude were achievement rather than accident of geography.',
+        },
+        {
+          id: 'img1',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Denver_Skyline_in_Winter.JPG',
+          alt: 'Denver skyline with Rocky Mountains in winter',
+          caption: 'Denver sits exactly where the Great Plains meet the Rocky Mountains — the transition is so abrupt it looks like a mistake.',
+          credit: 'Wikimedia Commons',
         },
         {
           id: 'p2',
@@ -34,6 +47,14 @@ export const denver_history: Record<string, History> = {
           id: 'sub1',
           type: 'subheading',
           content: 'The Railroad That Saved Itself',
+        },
+        {
+          id: 'img2',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Denver_union_station.jpg',
+          alt: 'Denver Union Station',
+          caption: 'Denver Union Station — the city\'s determination to build its own railroad connections when the transcontinental line bypassed it made Denver the commercial hub of the Rocky Mountain region.',
+          credit: 'Wikimedia Commons',
         },
         {
           id: 'p4',
@@ -124,6 +145,14 @@ export const denver_history: Record<string, History> = {
           id: 'sub3',
           type: 'subheading',
           content: 'Alpenglow and Uncertainty',
+        },
+        {
+          id: 'img3',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/64/2006-07-14-Denver_Skyline_Midnight.jpg',
+          alt: 'Denver skyline at midnight',
+          caption: 'Denver at midnight — the city that sits at the feet of the Rocky Mountains, still rising, still growing, still convinced that altitude equals destiny.',
+          credit: 'Wikimedia Commons',
         },
         {
           id: 'p15',
