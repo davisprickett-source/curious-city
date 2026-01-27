@@ -44,6 +44,13 @@ export const grungeOrigins: Article = {
           content: 'Then something shifted. Bands started mixing punk\'s speed and attitude with Black Sabbath-style heaviness. Green River, the Melvins, and Soundgarden played slower, heavier, angrier. The sound was sludgy and distorted — what one journalist would later call "grunge."',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Mudhoney_June_2007.jpg',
+          alt: 'Mudhoney performing live',
+          caption: 'Mudhoney, formed in 1988 from the ashes of Green River, became one of the defining proto-grunge bands. Mark Arm (pictured) coined the term "grunge" to describe the raw Seattle sound.',
+          credit: 'DaigoOliva / Flickr (CC BY-SA 2.0)',
+        },
+        {
           type: 'paragraph',
           content: 'The term was originally an insult. Sub Pop Records co-founder Bruce Pavitt used it in a 1987 article to describe the raw, unpolished sound coming out of Seattle. The bands hated it. But the name stuck, and eventually, it defined them.',
         },
@@ -106,6 +113,13 @@ export const grungeOrigins: Article = {
           content: 'Nirvana signed with Sub Pop in 1988 and released Bleach in 1989 for $606.17. The album sold 40,000 copies — huge for an indie release. Then, in 1990, Nirvana left Sub Pop for DGC Records, a major label. Sub Pop was furious. But the move proved grunge could go mainstream.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Pearl_Jam_1991.jpg',
+          alt: 'Pearl Jam performing live in 1991',
+          caption: 'Pearl Jam at Club Babyhead in Providence, Rhode Island, July 1991 — just months before Ten would make them superstars. The band formed from the ashes of Mother Love Bone after singer Andrew Wood\'s death.',
+          credit: 'perfectrx / Flickr (CC BY 2.0)',
+        },
+        {
           type: 'quote',
           content: 'Sub Pop created the myth of Seattle. But Nirvana made it real.',
           attribution: 'Charles R. Cross',
@@ -139,6 +153,13 @@ export const grungeOrigins: Article = {
           content: 'Nirvana, Pearl Jam, Soundgarden, and Alice in Chains are considered grunge\'s "Big Four." Together, they sold over 85 million albums. All four bands formed in Seattle or the surrounding area between 1987 and 1990. All four had members who played in earlier Seattle punk and metal bands.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Soundgarden_Chicago.jpg',
+          alt: 'Soundgarden performing live',
+          caption: 'Soundgarden in concert: Chris Cornell (vocals), Matt Cameron (drums), and Ben Shepherd (bass). Formed in 1984, they were the first grunge band signed to a major label (A&M Records in 1988).',
+          credit: 'Lpdrew / Flickr (CC BY 2.0)',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Backlash',
@@ -166,6 +187,13 @@ export const grungeOrigins: Article = {
           role: 'Nirvana bassist',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/ChrisCornell2013.jpg',
+          alt: 'Chris Cornell performing solo',
+          caption: 'Chris Cornell performing in 2013. The Soundgarden frontman\'s powerful four-octave voice defined the grunge sound. He continued making music until his death in 2017, leaving behind a legacy as one of rock\'s greatest vocalists.',
+          credit: 'Matthew Straubmuller / Flickr (CC BY-ND 3.0)',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -177,6 +205,13 @@ export const grungeOrigins: Article = {
         {
           type: 'paragraph',
           content: 'Grunge\'s commercial peak lasted about four years — 1991 to 1995. By the late 1990s, the surviving bands had either broken up or evolved. Pearl Jam kept touring but retreated from the spotlight. Soundgarden disbanded in 1997 (they reunited in 2010). Alice in Chains went on hiatus after Layne Staley\'s death in 2002.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Alice_in_Chains_Live_Leeds_2018.jpg',
+          alt: 'Alice in Chains performing live',
+          caption: 'Alice in Chains live in 2018, decades after their formation. The band reformed in 2006 with new vocalist William DuVall, continuing to tour and record while honoring the legacy of original singer Layne Staley.',
+          credit: 'aliina s. / Flickr (CC BY 2.0)',
         },
         {
           type: 'paragraph',
