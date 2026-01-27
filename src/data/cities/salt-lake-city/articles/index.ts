@@ -14,9 +14,9 @@ export const japanBalloonBombs: Article = {
   },
   publishedAt: '2024-10-02T12:00:00Z',
   featuredImage: {
-    src: '/salt-lake-city/articles/balloon-bomb.png',
-    alt: 'Japanese Fu-Go balloon bomb during WWII',
-    credit: 'National Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Japanese_fire_balloon_Moffett.jpg',
+    alt: 'Japanese Fu-Go fire balloon reinflated at Moffett Field, California',
+    credit: 'U.S. Navy / Wikimedia Commons',
   },
   category: 'history',
   tags: ['wwii', 'utah-history', 'military', 'box-elder-county', 'secrets', 'japan'],
@@ -36,6 +36,13 @@ export const japanBalloonBombs: Article = {
           type: 'heading',
           level: 2,
           content: 'Operation Fu-Go: Death by Jet Stream',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/342-FH-3B23432_%2818160047105%29.jpg',
+          alt: 'Aerial photograph of a Japanese Fu-Go balloon in flight over North America',
+          caption: 'A Fu-Go balloon photographed in flight by American military aircraft. Approximately 300 of the 9,300 launched reached North American soil.',
+          credit: 'National Museum of the U.S. Navy / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -110,6 +117,13 @@ export const japanBalloonBombs: Article = {
           content: 'The Mitchell Monument in Oregon marks the site today, a reminder of the price of secrets.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Mitchell_Monument.jpg',
+          alt: 'Mitchell Monument near Bly, Oregon',
+          caption: 'The Mitchell Monument in the Fremont-Winema National Forests marks the site where six Americans—the only casualties from enemy action on the U.S. mainland during WWII—were killed by a Fu-Go balloon bomb on May 5, 1945.',
+          credit: 'U.S. Forest Service / Wikimedia Commons',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -117,6 +131,13 @@ export const japanBalloonBombs: Article = {
           type: 'heading',
           level: 2,
           content: 'Echoes in 2023',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/U-2_Pilot_over_Central_Continental_United_States_%287644960%29_%28cropped%29.jpg',
+          alt: 'U-2 pilot photograph of the 2023 Chinese surveillance balloon over the United States',
+          caption: 'A U-2 pilot photographed the Chinese surveillance balloon as it drifted over the continental United States in February 2023—eighty years after Japanese fire balloons used the same jet stream.',
+          credit: 'U.S. Department of Defense / Wikimedia Commons',
         },
         {
           type: 'paragraph',
