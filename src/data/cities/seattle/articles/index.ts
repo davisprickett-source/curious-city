@@ -39,6 +39,13 @@ export const dbCooper: Article = {
           content: 'What followed was the only unsolved airplane hijacking in American history. A ransom, a parachute jump into the wilderness, and a vanishing so complete that fifty years of investigation have produced nothing but theories. The man gave the name Dan Cooper. A reporter\'s error transformed it to "D.B. Cooper." The legend was born.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Northwest_Airlines_Boeing_727-51_N467US.jpg',
+          alt: 'Northwest Airlines Boeing 727-51 aircraft N467US',
+          caption: 'N467US, the actual Boeing 727-51 used in the hijacking, photographed in 1972. This specific aircraft was chosen by Cooper because the 727 had a unique feature: rear airstairs that could be deployed during flight.',
+          credit: 'Clint Groves / Wikimedia Commons',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Hijacking',
@@ -60,6 +67,13 @@ export const dbCooper: Article = {
           content: 'He wasn\'t nervous at all. He seemed like a nice guy, actually. Professional. Like this was just another day at work for him.',
           attribution: 'Tina Mucklow',
           role: 'Flight attendant, Northwest Orient',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/DB_Cooper_Wanted_Poster.jpg',
+          alt: 'FBI wanted poster for D.B. Cooper showing composite sketches',
+          caption: 'The FBI wanted poster for D.B. Cooper, featuring composite sketches based on witness descriptions. Despite being one of the most circulated wanted posters in American history, no one was ever positively identified as the hijacker.',
+          credit: 'FBI / Public Domain',
         },
         {
           type: 'ad',
@@ -89,6 +103,13 @@ export const dbCooper: Article = {
           content: '$200,000 in 1971 dollars is equivalent to roughly $1.5 million today. The ransom was assembled from multiple Seattle banks in unmarked twenty-dollar bills. Every serial number was photographed before delivery — a list that would become crucial to the investigation.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Twenty_dollar_bills.JPG',
+          alt: 'Stack of twenty dollar bills',
+          caption: 'Cooper demanded $200,000 in twenty-dollar bills — 10,000 notes in total. The FBI photographed every serial number before delivery, creating a searchable record that remains active to this day. Only $5,800 has ever been recovered.',
+          credit: 'Wikimedia Commons / Public Domain',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Jump',
@@ -100,6 +121,13 @@ export const dbCooper: Article = {
         {
           type: 'paragraph',
           content: 'Somewhere over southwestern Washington, the hijacker lowered the aft staircase of the Boeing 727 — a unique feature of the aircraft that allowed stairs to be deployed during flight. At approximately 8:13 PM, the crew felt a sudden change in air pressure. The plane\'s tail shifted upward briefly, then leveled. In the cockpit, a warning light indicated the rear stairs were open.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Northwest_Boeing_727_airstair_%281975%29.jpg',
+          alt: 'Boeing 727 aircraft with rear airstair deployed',
+          caption: 'A Northwest Airlines Boeing 727 with its distinctive rear airstair deployed. This unique feature — allowing the stairs to be lowered during flight — made Cooper\'s mid-air escape possible. After the hijacking, the FAA mandated the installation of "Cooper vanes" to prevent the stairs from being lowered in flight.',
+          credit: 'Robert Rynerson / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -121,6 +149,13 @@ export const dbCooper: Article = {
         {
           type: 'paragraph',
           content: 'The FBI launched one of the most extensive manhunts in American history. Hundreds of agents fanned out across the dense forests of southwestern Washington. Army soldiers joined the search. Helicopters scoured the wilderness. The estimated drop zone — somewhere along the Lewis River between Ariel and Lake Merwin — was searched inch by inch.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Gifford_Pinchot_National_Forest_in_Washington_2.jpg',
+          alt: 'Dense forest wilderness in Gifford Pinchot National Forest, Washington',
+          caption: 'The rugged wilderness of Gifford Pinchot National Forest in southwestern Washington — the presumed drop zone. Cooper jumped into terrain like this: dense, remote, and largely impenetrable. The area remains virtually unchanged since 1971.',
+          credit: 'Jeff Hollett / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -152,6 +187,13 @@ export const dbCooper: Article = {
         {
           type: 'paragraph',
           content: 'This was the first and last physical evidence ever recovered from the hijacking. How did the money get there? The bills were degraded but still bundled in the original bank rubber bands. They had been underwater for years. Investigators speculated they had washed downstream from the original drop zone — but the Columbia River doesn\'t flow from that area. The money\'s journey remains unexplained.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/ColumbiarivergorgeJRH.jpg',
+          alt: 'Columbia River Gorge landscape',
+          caption: 'The Columbia River near where the ransom money was discovered in 1980. Eight-year-old Brian Ingram found $5,800 in deteriorated twenty-dollar bills while digging on a beach near Vancouver, Washington — nine years after the hijacking and miles from the presumed drop zone.',
+          credit: 'Cacophony / Wikimedia Commons',
         },
         {
           type: 'callout',
