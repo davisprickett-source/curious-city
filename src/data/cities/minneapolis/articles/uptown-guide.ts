@@ -13,8 +13,9 @@ export const uptownGuide: Article = {
   publishedAt: '2024-07-20T09:00:00Z',
   updatedAt: '2025-01-16T13:00:00Z',
   featuredImage: {
-    src: '/minneapolis/neighborhoods/uptown.jpg',
-    alt: 'Lake and Hennepin intersection in Uptown, Minneapolis',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Uptown_Theater_Minneapolis.jpg',
+    alt: 'The Uptown Theater marquee, an iconic art deco landmark in the Uptown neighborhood of Minneapolis',
+    attribution: 'RxS, Public domain, via Wikimedia Commons',
   },
   category: 'guide',
   tags: ['neighborhoods', 'minneapolis', 'uptown', 'dining', 'nightlife', 'local-guide'],

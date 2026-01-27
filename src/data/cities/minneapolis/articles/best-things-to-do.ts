@@ -13,8 +13,9 @@ export const bestThingsToDo: Article = {
   publishedAt: '2024-04-25T10:00:00Z',
   updatedAt: '2025-01-14T15:00:00Z',
   featuredImage: {
-    src: '/minneapolis/attractions/things-to-do-hero.jpg',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Downtown_Minneapolis_from_the_Stone_Arch_Bridge.jpg',
     alt: 'Stone Arch Bridge overlooking downtown Minneapolis',
+    credit: 'Yandoooo via Wikimedia Commons (CC BY-SA 4.0)',
   },
   category: 'guide',
   tags: ['things-to-do', 'minneapolis', 'attractions', 'local-guide', 'tourism'],

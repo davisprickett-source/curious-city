@@ -13,9 +13,9 @@ export const gatewayDistrict: Article = {
   publishedAt: '2023-09-07T10:15:00Z',
   updatedAt: '2024-12-03T16:45:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/gateway-district.png',
-    alt: 'Gateway District before demolition, Minneapolis 1950s',
-    credit: 'Minnesota Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Gateway_District-Minneapolis-b.jpg',
+    alt: 'Hotels and cafes in Gateway District, Minneapolis, 1939',
+    credit: 'Library of Congress / John Vachon',
   },
   category: 'history',
   tags: ['minneapolis', 'urban-renewal', 'history', 'architecture', 'displacement', 'downtown'],
@@ -29,10 +29,10 @@ export const gatewayDistrict: Article = {
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204859&catirn=10204859&oldirn=10204859&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
-          alt: 'Panoramic view of the Gateway District, Minneapolis, 1950s',
-          caption: 'A panoramic view of the Gateway District in Minneapolis, circa 1950s, before its demolition. This area, once the vibrant heart of the city, became known as "Skid Row."',
-          credit: 'Minnesota Historical Society',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Hennepin_Avenue_From_2nd_Street_Towards_Washington_Avenue_-_DPLA_-_9ec91facea8401ab1f194296650d6d98.jpg',
+          alt: 'Hennepin Avenue in the Gateway District, Minneapolis, 1901',
+          caption: 'Hennepin Avenue looking towards Washington Avenue in 1901, showing the vibrant commercial heart of the Gateway District before its decline. Hotels, bars, and shops lined the streets.',
+          credit: 'Hennepin County Library / Edward A. Bromley',
         },
         {
           type: 'paragraph',
@@ -57,10 +57,10 @@ export const gatewayDistrict: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Metropolitan_Building_Minneapolis.jpg/800px-Metropolitan_Building_Minneapolis.jpg',
-          alt: 'Metropolitan Building, Minneapolis, circa 1900',
-          caption: 'The Metropolitan Building (1890) was Minneapolis\'s first skyscraper and a defining landmark of the Gateway District, demolished in 1962 during urban renewal.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Metropolitan_Building_Minneapolis.jpg',
+          alt: 'Metropolitan Building, Minneapolis, 1960',
+          caption: 'The Metropolitan Building (1890) was Minneapolis\'s first skyscraper — a twelve-story Richardsonian Romanesque masterpiece with a rooftop garden restaurant. It was demolished in 1961 during urban renewal.',
+          credit: 'Library of Congress, HABS / Jack Boucher',
         },
         {
           type: 'quote',
@@ -92,10 +92,10 @@ export const gatewayDistrict: Article = {
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204891&catirn=10204891&oldirn=10204891&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
-          alt: 'Demolition of buildings in the Gateway District, Minneapolis, 1959',
-          caption: 'Wrecking balls tear down historic buildings in the Gateway District, 1959. The project razed over 200 structures to eliminate "Skid Row."',
-          credit: 'Minnesota Historical Society',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/FORMER_ROOMING_HOUSE_AT_SOUTH_9TH_STREET_AND_FIFTH_AVENUE_IS_SLATED_FOR_DEMOLITION._NEARBY_IS_THE_NEWLY_BUILT_I.D.C...._-_NARA_-_551442.jpg',
+          alt: 'Former rooming house slated for demolition in Minneapolis, 1973',
+          caption: 'A former rooming house awaits demolition as the newly built IDC Center towers behind it. Urban renewal continued to reshape downtown Minneapolis through the 1970s.',
+          credit: 'National Archives / Donald Emmerich',
         },
         {
           type: 'paragraph',
@@ -112,10 +112,10 @@ export const gatewayDistrict: Article = {
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204897&catirn=10204897&oldirn=10204897&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
-          alt: 'Gateway District after demolition, Minneapolis, 1960s, showing parking lots',
-          caption: 'The Gateway District after demolition, 1960s. Much of the cleared land was initially used for surface parking lots, a stark contrast to the dense urban fabric it replaced.',
-          credit: 'Minnesota Historical Society',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Gateway_District-Minneapolis-a.jpg',
+          alt: 'Men sitting in Gateway Park, Minneapolis, 1939',
+          caption: 'Men gather in Gateway Park in 1939, with the Wisconsin Hotel visible in the background. The single men who lived in the district\'s cheap hotels would soon be displaced by urban renewal.',
+          credit: 'Library of Congress / John Vachon',
         },
         {
           type: 'paragraph',

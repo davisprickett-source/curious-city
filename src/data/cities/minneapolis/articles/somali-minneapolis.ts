@@ -13,9 +13,9 @@ export const somaliMinneapolis: Article = {
   publishedAt: '2024-06-28T13:45:00Z',
   updatedAt: '2024-12-15T09:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/somali-minneapolis.jpg',
-    alt: 'Cedar-Riverside neighborhood in Minneapolis, home to "Little Mogadishu"',
-    credit: 'Sahan Journal',
+    src: '/minneapolis/somali/riverside-plaza-sunset.jpg',
+    alt: 'Riverside Plaza towers at sunset in the Cedar-Riverside neighborhood, the iconic brutalist buildings designed by Ralph Rapson that anchor "Little Mogadishu"',
+    credit: 'August Schwerdfeger / Wikimedia Commons (CC BY-SA)',
   },
   category: 'feature',
   tags: ['minneapolis', 'immigration', 'somali', 'diaspora', 'culture', 'community', 'cedar-riverside'],
@@ -120,6 +120,13 @@ export const somaliMinneapolis: Article = {
           content: 'Little Mogadishu',
         },
         {
+          type: 'image',
+          src: '/minneapolis/somali/cedar-riverside-mural.jpg',
+          alt: 'Colorful mural in Cedar-Riverside celebrating the Somali community',
+          caption: 'A mural in the Cedar-Riverside neighborhood reflects the vibrant Somali culture that has transformed this historic Minneapolis community.',
+          credit: 'Wikimedia Commons (CC BY-SA)',
+        },
+        {
           type: 'paragraph',
           content: 'If you want to understand what Somalis built in Minneapolis, go to Cedar-Riverside. The neighborhood sits just south of downtown, cut off from the rest of the city by the Mississippi River on one side and Interstate 94 on the other. It\'s a kind of island, self-contained and self-sustaining — which is exactly why immigrants have always settled there.',
         },
@@ -172,6 +179,13 @@ export const somaliMinneapolis: Article = {
           content: 'The Economy',
         },
         {
+          type: 'image',
+          src: '/minneapolis/somali/lake-street-uptown.jpg',
+          alt: 'Lake Street in Minneapolis, home to Somali-owned businesses',
+          caption: 'Lake Street is the commercial heart of Somali Minneapolis, where Karmel Square houses 175 businesses — 150 of them owned by women.',
+          credit: 'Wikimedia Commons (CC BY-SA)',
+        },
+        {
           type: 'paragraph',
           content: 'Walk down Lake Street in Minneapolis and you\'ll find Karmel Square — a massive Somali mall with 175 businesses. Clothing shops, henna salons, restaurants, a mosque, a daycare. All but 25 of those businesses are owned by women.',
         },
@@ -210,6 +224,13 @@ export const somaliMinneapolis: Article = {
           type: 'heading',
           level: 2,
           content: 'The Refugee Who Went to Congress',
+        },
+        {
+          type: 'image',
+          src: '/minneapolis/somali/ilhan-omar-official.jpg',
+          alt: 'Representative Ilhan Omar, the first Somali-American elected to Congress',
+          caption: 'Ilhan Omar became the first Somali-American and first refugee elected to the U.S. Congress in 2018, representing Minnesota\'s 5th District which includes Cedar-Riverside.',
+          credit: 'U.S. House of Representatives / Public Domain',
         },
         {
           type: 'paragraph',

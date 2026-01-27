@@ -13,8 +13,8 @@ export const bestBars: Article = {
   publishedAt: '2024-03-15T11:00:00Z',
   updatedAt: '2025-01-18T16:00:00Z',
   featuredImage: {
-    src: '/minneapolis/bars/bars-hero.jpg',
-    alt: 'Bartender pouring cocktails in Minneapolis',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Bartender_making_a_cocktail_%28Unsplash%29.jpg',
+    alt: 'Bartender adding finishing touches to a cocktail',
   },
   category: 'list',
   tags: ['best-of', 'bars', 'minneapolis', 'nightlife', 'cocktails', 'local-guide'],

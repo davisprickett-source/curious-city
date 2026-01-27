@@ -13,8 +13,8 @@ export const bestCoffeeShops: Article = {
   publishedAt: '2024-09-22T08:00:00Z',
   updatedAt: '2025-01-12T09:30:00Z',
   featuredImage: {
-    src: '/minneapolis/food/coffee-shops-hero.jpg',
-    alt: 'Coffee being poured at a Minneapolis coffee shop',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Latte_art_3.jpg',
+    alt: 'Latte art rosetta pattern in a coffee cup',
   },
   category: 'list',
   tags: ['best-of', 'coffee', 'minneapolis', 'cafes', 'local-guide'],

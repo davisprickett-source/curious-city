@@ -12,9 +12,9 @@ export const murderapolis: Article = {
   },
   publishedAt: '2025-01-22T16:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/murderapolis.png',
-    alt: 'Minneapolis skyline, 1990s',
-    credit: 'Minneapolis Star Tribune Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Minneapolis_August_Night_%2836666080201%29.jpg',
+    alt: 'Minneapolis skyline at night, viewed from the Plymouth Avenue Bridge over the Mississippi River',
+    credit: 'Wikimedia Commons (CC BY 2.0)',
   },
   category: 'history',
   tags: ['minneapolis', 'true-crime', '1990s', 'crime', 'gangs', 'crack-epidemic', 'urban-history'],
@@ -38,6 +38,13 @@ export const murderapolis: Article = {
           type: 'heading',
           level: 2,
           content: 'The Rise: 1985-1995',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/2008-0712-MPLS-panorama.JPG',
+          alt: 'Panoramic view of downtown Minneapolis showing the IDS Center, Metrodome, and surrounding cityscape',
+          caption: 'Downtown Minneapolis skyline. The city that would become "Murderapolis" in the 1990s.',
+          credit: 'Bobak Ha\'Eri / Wikimedia Commons (CC BY 3.0)',
         },
         {
           type: 'paragraph',
@@ -110,6 +117,13 @@ export const murderapolis: Article = {
           content: 'We were trying to put out a forest fire with a garden hose. The gang problem was a symptom. The disease was disinvestment, segregation, and decades of neglect.',
           attribution: 'Sharon Sayles Belton',
           role: 'Minneapolis Mayor (1994-2001)',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Mayor_Sharon_Sayles_Belton_Bridge_%28Third_Avenue_South_Bridge%29_Minneapolis_Minnesota_%2818525477236%29.jpg',
+          alt: 'The Mayor Sharon Sayles Belton Bridge (Third Avenue South Bridge) in Minneapolis at night',
+          caption: 'The Third Avenue Bridge, now named after Mayor Sharon Sayles Belton, who led Minneapolis through the Murderapolis era.',
+          credit: 'Tony Webster / Wikimedia Commons (CC BY 2.0)',
         },
         {
           type: 'ad',

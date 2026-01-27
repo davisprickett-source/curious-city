@@ -13,8 +13,9 @@ export const juicyLucy: Article = {
   publishedAt: '2023-11-08T14:00:00Z',
   updatedAt: '2024-12-20T11:15:00Z',
   featuredImage: {
-    src: '/minneapolis/food/juicy-lucy-hero.jpg',
-    alt: 'Juicy Lucy burger with molten cheese oozing out, South Minneapolis',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Jucy_lucy_burger_%282%29.jpg',
+    alt: 'Juicy Lucy burger with molten cheese oozing out from Matt\'s Bar, Minneapolis',
+    credit: 'Kaszeta / Wikimedia Commons (Public Domain)',
   },
   category: 'feature',
   tags: ['food', 'minneapolis', 'burgers', 'local-traditions', 'restaurants'],
@@ -75,6 +76,13 @@ export const juicyLucy: Article = {
           content: 'The ideal Juicy Lucy has a thin crust on the outside, medium-rare meat on the inside, and cheese heated to exactly the point where it\'s molten but contained. When you bite in, the cheese should flow but not explode. (It will still burn your mouth. This is unavoidable.)',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/56/Jucy_Lucy_burger_-_5-8_Club%2C_Minneapolis%2C_Minnesota.jpg',
+          alt: 'Juicy Lucy burger from 5-8 Club showing melted cheese inside',
+          caption: 'A Juicy Lucy from 5-8 Club — the cheese is inside, waiting to burn your mouth',
+          credit: 'Kim / Wikimedia Commons (CC BY-SA)',
+        },
+        {
           type: 'paragraph',
           content: 'Both Matt\'s and 5-8 use American cheese because it melts predictably and stays liquid longer. Some newer places use fancier cheeses (blue cheese, pepper jack, etc.), which misses the point. The Juicy Lucy is a working-class bar burger. American cheese is correct.',
         },
@@ -102,8 +110,22 @@ export const juicyLucy: Article = {
           content: '**Matt\'s Bar** (3500 Cedar Ave S): Smaller, divey-er, more austere. The menu has six items. The interior hasn\'t been updated since 1970 and doesn\'t need to be. The Jucy Lucy comes with nothing — no lettuce, no tomato, just burger and cheese on a bun. You can add grilled onions if you want. The fries are crinkle-cut and served in a plastic basket. This is the minimalist version: just the burger, nothing fancy.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Matt%27s_Bar_1.jpg',
+          alt: 'Matt\'s Bar exterior at Cedar Avenue and East 35th Street, Minneapolis',
+          caption: 'Matt\'s Bar — the no-frills home of the original "Jucy Lucy" (note the spelling)',
+          credit: 'Albert Leung / Wikimedia Commons (CC BY)',
+        },
+        {
           type: 'paragraph',
           content: '**5-8 Club** (5800 Cedar Ave S): Bigger, slightly more polished, more menu options. The Juicy Lucy comes with pickles, and you can dress it however you want. The atmosphere is still a classic bar, but it feels less like a dive and more like a neighborhood restaurant. The fries are better. The space is more comfortable. This is the approachable version.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/5%C2%B78ClubMPLS.jpg',
+          alt: '5-8 Club Tavern and Grill exterior, 5800 Cedar Avenue South, Minneapolis',
+          caption: '5-8 Club — the other contender for Juicy Lucy originator',
+          credit: 'Jonathunder / Wikimedia Commons (CC BY-SA)',
         },
         {
           type: 'paragraph',

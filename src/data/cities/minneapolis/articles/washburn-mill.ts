@@ -13,9 +13,9 @@ export const washburnMill: Article = {
   publishedAt: '2023-05-14T09:00:00Z',
   updatedAt: '2024-11-22T14:30:00Z',
   featuredImage: {
-    src: '/minneapolis/curiosities/mill-curiosity-2.png',
-    alt: 'The Great Mill Disaster of 1878 in Minneapolis',
-    credit: 'Minnesota Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg/1280px-After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg',
+    alt: 'Aftermath of the Washburn A Mill explosion in 1878, Minneapolis',
+    credit: 'Hennepin County Library via Wikimedia Commons',
   },
   category: 'history',
   tags: ['minneapolis', 'disaster', 'history', 'industry', 'flour-milling', 'st-anthony-falls'],
@@ -46,10 +46,10 @@ export const washburnMill: Article = {
         },
         {
           type: 'image',
-          src: 'https://collections.mnhs.org/cms/largerimage.php?irn=10204732&catirn=10204732&oldirn=10204732&img=JPG&width=3000&height=3000&quality=80&mode=zoom',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Back_of_the_Washburn_%27A%27_Mill_in_1878%2C_before_explosion_-_DPLA_-_2c2e0393650b64a76f4c072c0e290542.jpg/1280px-Back_of_the_Washburn_%27A%27_Mill_in_1878%2C_before_explosion_-_DPLA_-_2c2e0393650b64a76f4c072c0e290542.jpg',
           alt: 'Washburn A Mill before the 1878 explosion, Minneapolis',
           caption: 'The Washburn A Mill in Minneapolis, before the 1878 explosion. The largest flour mill in the world, it was a marvel of industrial engineering.',
-          credit: 'Minnesota Historical Society',
+          credit: 'Hennepin County Library via Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -62,10 +62,10 @@ export const washburnMill: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Dust_explosion_diagram.svg/1280px-Dust_explosion_diagram.svg.png',
-          alt: 'Diagram illustrating a dust explosion',
-          caption: 'A diagram illustrating a dust explosion. Fine flour dust, suspended in air, is highly combustible. The 1878 explosion taught the world the dangers of this phenomenon.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Dust_Explosion_Pentagon.svg/800px-Dust_Explosion_Pentagon.svg.png',
+          alt: 'Dust Explosion Pentagon diagram showing the five conditions needed',
+          caption: 'The Dust Explosion Pentagon: Five conditions must align — fuel (flour dust), oxygen, ignition, dispersion, and confinement. The 1878 Washburn Mill had all five, with catastrophic results.',
+          credit: 'Saeed B. Farahani via Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -86,10 +86,10 @@ export const washburnMill: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mill_City_Museum_Minneapolis.jpg/1280px-Mill_City_Museum_Minneapolis.jpg',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Mill_City_Museum-20070704.jpg/1280px-Mill_City_Museum-20070704.jpg',
           alt: 'Mill City Museum in Minneapolis, housed in the ruins of the Washburn A Mill',
           caption: 'The Mill City Museum today, built within the ruins of the Washburn A Mill. The museum tells the story of Minneapolis\'s flour milling history, including the catastrophic 1878 explosion.',
-          credit: 'Wikimedia Commons',
+          credit: 'quaziefoto via Wikimedia Commons (CC BY 2.0)',
         },
         {
           type: 'paragraph',

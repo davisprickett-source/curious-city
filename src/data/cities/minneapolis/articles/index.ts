@@ -24,9 +24,9 @@ export const duckDuckGreyDuck: Article = {
   },
   publishedAt: '2025-01-09T12:00:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/duck-duck-grey-duck.jpg',
-    alt: 'Children playing Duck Duck Grey Duck in Minnesota',
-    credit: 'Minnesota Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Duck_Duck_Goose.jpg',
+    alt: 'Children playing Duck Duck Grey Duck in a circle on a grassy field',
+    credit: 'Ragesoss / Wikimedia Commons / CC BY-SA 3.0',
   },
   category: 'history',
   tags: ['minnesota', 'traditions', 'games', 'regional-culture', 'scandinavian-heritage', 'childhood'],

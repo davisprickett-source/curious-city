@@ -13,8 +13,9 @@ export const northLoopGuide: Article = {
   publishedAt: '2024-05-18T10:00:00Z',
   updatedAt: '2025-01-15T14:30:00Z',
   featuredImage: {
-    src: '/minneapolis/neighborhoods/north-loop.jpg',
-    alt: 'Cobblestone streets in North Loop, Minneapolis',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Minneapolis_Warehouse_District.jpg',
+    alt: 'View of the Warehouse District in Minneapolis along 1st Avenue North',
+    credit: 'Mulad via Wikimedia Commons (Public Domain)',
   },
   category: 'guide',
   tags: ['neighborhoods', 'minneapolis', 'north-loop', 'warehouse-district', 'dining', 'local-guide'],

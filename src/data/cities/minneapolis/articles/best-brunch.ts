@@ -13,8 +13,8 @@ export const bestBrunch: Article = {
   publishedAt: '2024-06-10T08:00:00Z',
   updatedAt: '2025-01-17T10:30:00Z',
   featuredImage: {
-    src: '/minneapolis/food/brunch-hero.jpg',
-    alt: 'Brunch spread at a Minneapolis restaurant',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Breakfast_at_the_Black_Bear_Diner.jpg',
+    alt: 'American breakfast with eggs, pancakes, bacon, and hash browns',
   },
   category: 'list',
   tags: ['best-of', 'brunch', 'minneapolis', 'breakfast', 'restaurants', 'local-guide'],
