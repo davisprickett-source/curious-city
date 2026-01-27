@@ -31,6 +31,13 @@ export const wtoRiots: Article = {
           content: 'The protesters won. The conference collapsed. And Seattle became synonymous with a new kind of activism — decentralized, media-savvy, and willing to break things to make a point. Twenty-five years later, the "Battle of Seattle" remains the blueprint for how to disrupt a global summit and the cautionary tale for what happens when a city underestimates just how many people care about trade policy.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
+          alt: 'Protesters marching through Seattle streets during WTO demonstrations, November 29, 1999',
+          caption: 'Tens of thousands of demonstrators filled Seattle\'s streets in the days leading up to and during the WTO ministerial conference, forming one of the largest protest gatherings in American history up to that point.',
+          credit: 'Photo by Carwil / Wikimedia Commons (CC BY-SA)',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'Why Seattle?',
@@ -75,10 +82,24 @@ export const wtoRiots: Article = {
           content: 'The crowd was diverse. AFL-CIO members marched in organized labor contingents. The Ruckus Society trained activists in non-violent direct action. The Direct Action Network coordinated affinity groups. And then there was the Black Bloc — anarchists dressed in black, faces covered, who had no interest in peaceful protest.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/WTO_protestors%2C_1999_%2820680767813%29.jpg',
+          alt: 'Protesters dressed in sea turtle costumes at the WTO demonstrations',
+          caption: 'The "Teamsters and Turtles" coalition became an iconic symbol of the protests — labor unions and environmental activists finding common ground against global trade policies they believed harmed both workers and the planet.',
+          credit: 'Courtesy of the Seattle Municipal Archives',
+        },
+        {
           type: 'callout',
           variant: 'info',
           title: 'The Black Bloc',
           content: 'The Black Bloc wasn\'t an organization — it was a tactic. Protesters dressed in black clothing and masks to maintain anonymity and present a unified front. While most protesters engaged in non-violent civil disobedience, the Black Bloc smashed windows of corporate targets: Starbucks, Nike, Gap, Bank of America. Their property destruction dominated media coverage and became the defining image of the protests.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Anarchists_at_WTO_protest_%2814988709689%29.jpg',
+          alt: 'Black Bloc anarchist protesters organizing during the WTO demonstrations',
+          caption: 'Black Bloc protesters, dressed in black with faces obscured, operated autonomously from the main protest groups. Their presence and tactics would spark decades of debate about the role of property destruction in political movements.',
+          credit: 'Photo by geraldford / Flickr (CC BY-SA)',
         },
         {
           type: 'heading',
@@ -96,6 +117,13 @@ export const wtoRiots: Article = {
         {
           type: 'paragraph',
           content: 'By evening, Mayor Paul Schell declared a civil emergency and imposed a 7:00 PM to 7:30 AM curfew on a 50-block area of downtown. He called in the National Guard. Protests that began as non-violent civil disobedience had become a full-scale confrontation between citizens and militarized police.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a8/WTO_protests.jpg',
+          alt: 'Seattle police officers in riot gear lined up on Union Street during WTO protests',
+          caption: 'Seattle police in riot gear formed lines on Union Street between 4th and 5th avenues. The department\'s aggressive response to protesters — including the use of tear gas and rubber bullets on non-violent demonstrators — would later cost Police Chief Norm Stamper his job.',
+          credit: 'Photo by brandonland / Flickr (CC BY)',
         },
         {
           type: 'quote',
@@ -125,6 +153,13 @@ export const wtoRiots: Article = {
           content: 'What\'s often forgotten: the vast majority of protesters were non-violent. Labor unions, environmental groups, and faith-based organizations explicitly condemned property destruction. But nuance doesn\'t play well on television. The image of masked protesters smashing Starbucks windows became the defining visual of the Battle of Seattle.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/84/WTO_protest_sign_%2814988892087%29.jpg',
+          alt: 'Large banner depicting the WTO as a grim reaper standing over a dying world',
+          caption: 'Protesters carried elaborate banners and signs articulating their critiques of global trade policy. This massive banner depicted the WTO as a grim reaper, symbolizing what activists saw as the organization\'s destructive impact on workers, the environment, and developing nations.',
+          credit: 'Wikimedia Commons (CC BY-SA)',
+        },
+        {
           type: 'callout',
           variant: 'warning',
           title: 'The Media Paradox',
@@ -138,6 +173,13 @@ export const wtoRiots: Article = {
         {
           type: 'paragraph',
           content: 'The protests continued for three more days. Police arrested over 600 people, many held without charges in King County Jail. The "no-protest zone" downtown was enforced with checkpoints and ID checks. Residents couldn\'t enter their own neighborhoods without proving they lived there. The National Guard patrolled streets with armored vehicles.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/National_Guard%2C_Downtown_Seattle%2C_WTO_1999.jpg',
+          alt: 'Washington Army National Guard soldiers marching through downtown Seattle in full gear',
+          caption: 'Washington Army National Guard troops marched through downtown Seattle in full gear. Governor Gary Locke called in two battalions to help enforce the curfew and no-protest zone — a dramatic escalation that shocked residents who had never seen military forces on their streets.',
+          credit: 'Washington Army National Guard',
         },
         {
           type: 'paragraph',
