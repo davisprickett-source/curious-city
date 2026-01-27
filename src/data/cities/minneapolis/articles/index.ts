@@ -245,8 +245,9 @@ export const newRestaurantsNortheast: Article = {
   },
   publishedAt: '2025-01-15T12:00:00Z',
   featuredImage: {
-    src: '/images/minneapolis/northeast-restaurants.jpg',
-    alt: 'Northeast Minneapolis restaurant district',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Kramarczuk_Deli_Minneapolis_1.jpg',
+    alt: 'Kramarczuk Deli and Sausage Company, iconic Northeast Minneapolis restaurant',
+    credit: 'AlexiusHoratius / Wikimedia Commons (CC BY-SA 3.0)',
   },
   category: 'guide',
   tags: ['restaurants', 'northeast', 'new-openings', 'food', 'local'],
