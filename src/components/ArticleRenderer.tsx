@@ -60,13 +60,13 @@ function ArticleBlockRenderer({
     case 'image':
       return (
         <figure className="my-10">
-          <div className="relative aspect-[16/9] bg-neutral-100 rounded-lg overflow-hidden">
+          <div className="relative aspect-[4/3] bg-neutral-100 rounded-lg overflow-hidden">
             <Image
               src={block.src}
               alt={block.alt}
               fill
               unoptimized
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 768px) 100vw, 800px"
             />
           </div>

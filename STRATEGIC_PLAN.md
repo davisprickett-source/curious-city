@@ -532,6 +532,15 @@ bt deliver an all around great experience
 local neighbor
 
 
+Here's some things to edit/change:
+
+-Navbar - A) remove the company name and logo (both mobile and desktop), b) move the links to the left side on desktop
+-increase size of "windy city style in desktop hero"
+-remove payments accepted by checks or discover card
+-add northwest Indianapolis to service areas
+-chaneg the about image to the one in /public/new-photos/about.jpg
+-I want the faq page to be more of a dropdown menu with maybe 3 columns for the faq sections so that more questions are visible on load and people click to dropdown the answer, move the "can't find your answer?" green section to the bottom of the page
+
 
 loc operated services chicagoland area and nw indy
 
