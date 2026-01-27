@@ -12,7 +12,7 @@ export const cigarLectors: Article = {
   },
   publishedAt: '2025-12-22T12:00:00Z',
   featuredImage: {
-    src: '/tampa/articles/cigar-lector-tampa-1909.jpg',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/A_%22Reader%22_in_cigar_factory%2C_Tampa%2C_Fl.jpg',
     alt: 'A lector reading to cigar workers in Tampa, Florida, January 1909',
     credit: 'Lewis Wickes Hine, Library of Congress',
   },
