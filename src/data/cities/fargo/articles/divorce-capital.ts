@@ -13,9 +13,9 @@ export const divorceCapital: Article = {
   publishedAt: '2023-07-22T10:00:00Z',
   updatedAt: '2024-09-14T14:30:00Z',
   featuredImage: {
-    src: '/fargo/articles/divorce-capital.png',
-    alt: 'Northern Pacific Railroad depot in Fargo, 1890s',
-    credit: 'North Dakota State University Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/NorthernPacificRailwayDepot_FargoND.jpg',
+    alt: 'Northern Pacific Railroad depot in Fargo, North Dakota',
+    credit: 'Wikimedia Commons',
   },
   category: 'history',
   tags: ['fargo', 'divorce', 'legal-history', 'marriage', 'scandal', '1890s', 'railroad'],
@@ -29,10 +29,10 @@ export const divorceCapital: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Fargo_North_Dakota_Main_Street_1890s.jpg/1280px-Fargo_North_Dakota_Main_Street_1890s.jpg',
-          alt: 'Main Street in Fargo, North Dakota, 1890s',
-          caption: 'Main Street in Fargo, North Dakota, circa 1890s. The town\'s bustling commercial district was a hub for divorce-seekers arriving by train.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Fargo_downtown_N_Broadway_Drive_IMG_0654.JPG',
+          alt: 'Downtown Fargo, North Dakota on Broadway',
+          caption: 'Broadway in Fargo, North Dakota. This bustling commercial street was once the heart of the "divorce capital" of America, where divorce-seekers arrived by train and found hotels catering to their needs.',
+          credit: 'Wikimedia Commons / Bjoertvedt',
         },
         {
           type: 'paragraph',
@@ -40,10 +40,10 @@ export const divorceCapital: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Northern_Pacific_Railroad_Depot%2C_Fargo%2C_North_Dakota%2C_built_1898.jpg/1280px-Northern_Pacific_Railroad_Depot%2C_Fargo%2C_North_Dakota%2C_built_1898.jpg',
-          alt: 'Northern Pacific Railroad Depot in Fargo, North Dakota, built 1898',
-          caption: 'The Northern Pacific Railroad Depot in Fargo, 1898. The railroad brought thousands of divorce-seekers to the city, fueling its "divorce mill" industry.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Fargo_Northern_Pacific_Railway_Depot.jpg',
+          alt: 'Northern Pacific Railway Depot in Fargo, North Dakota',
+          caption: 'The Northern Pacific Railway Depot in Fargo, designed by architect Cass Gilbert. The railroad brought thousands of divorce-seekers to the city, fueling its infamous "divorce mill" industry.',
+          credit: 'Wikimedia Commons / Billybob2002',
         },
         {
           type: 'paragraph',
@@ -87,10 +87,10 @@ export const divorceCapital: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cass_County_Courthouse_Fargo_ND.jpg/1280px-Cass_County_Courthouse_Fargo_ND.jpg',
-          alt: 'Cass County Courthouse in Fargo, North Dakota, early 1900s',
-          caption: 'The Cass County Courthouse in Fargo, early 1900s. Judges here processed hundreds of divorces annually, making Fargo the "divorce capital of America."',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Downtown_Fargo_Aerial_-_Facing_Southeast_%2851009704407%29.jpg',
+          alt: 'Aerial view of downtown Fargo, North Dakota',
+          caption: 'Aerial view of downtown Fargo. In the late 1800s, the Cass County Courthouse here processed hundreds of divorces annually, with one judge granting 350 divorces in a single year.',
+          credit: 'Wikimedia Commons / TheImaCow',
         },
         {
           type: 'paragraph',

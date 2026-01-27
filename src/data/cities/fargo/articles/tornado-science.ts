@@ -12,9 +12,9 @@ export const tornadoScience: Article = {
   },
   publishedAt: '2024-12-01T12:00:00Z',
   featuredImage: {
-    src: '/fargo/articles/tornado-science.png',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/1957_Fargo_tornado.jpg',
     alt: 'The 1957 Fargo tornado approaching the city',
-    credit: 'National Weather Service Archives',
+    credit: 'Chester Alfred Gebert / Wikimedia Commons',
   },
   category: 'history',
   tags: ['fargo', 'tornado', 'science', 'fujita-scale', 'meteorology', 'disaster', '1957'],
@@ -32,10 +32,10 @@ export const tornadoScience: Article = {
         },
         {
           type: 'image',
-          src: 'https://digitalhorizonsonline.org/digital/api/singleitem/image/photos/10547/default.jpg',
-          alt: 'Aftermath of the 1957 Fargo tornado, showing widespread destruction',
-          caption: 'Devastation in North Fargo after the F5 tornado of June 20, 1957. This scene of widespread destruction provided Ted Fujita with a unique "laboratory" for his groundbreaking meteorological research.',
-          credit: 'Digital Horizons Online / North Dakota State University Archives',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/df/F5_tornado_damage_example.jpg',
+          alt: 'Classic F5 tornado damage showing complete destruction of a house',
+          caption: 'Classic F5 tornado damage: a house leveled to its foundation. The 1957 Fargo tornado produced similar devastation, sweeping foundations clean and scattering debris for miles. This type of destruction became the basis for Ted Fujita\'s damage-based intensity scale.',
+          credit: 'NOAA / Chuck Doswell',
         },
         {
           type: 'paragraph',
@@ -79,9 +79,9 @@ export const tornadoScience: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Tetsuya_Theodore_Fujita.jpg',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Ted_Fujita_1972_%28cropped%29.jpg',
           alt: 'Portrait of Tetsuya Theodore Fujita',
-          caption: 'Tetsuya Theodore Fujita, the Japanese meteorologist who revolutionized tornado science. His study of the 1957 Fargo tornado laid the groundwork for the Fujita Scale.',
+          caption: 'Tetsuya Theodore "Ted" Fujita, the Japanese-American meteorologist who revolutionized tornado science. His study of the 1957 Fargo tornado laid the groundwork for the Fujita Scale, which remains the standard for rating tornado intensity.',
           credit: 'Wikimedia Commons',
         },
         {
@@ -120,6 +120,13 @@ export const tornadoScience: Article = {
           content: 'The "wall cloud" — the lowered, rotating cloud base from which tornadoes descend. The "tail cloud" — a horizontal extension of the wall cloud. The "collar cloud" — a ring of cloud surrounding the upper portion of the funnel. These terms, now standard in meteorology, were coined by Fujita based on what he saw in the Fargo photographs.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Wall_cloud_with_lightning_-_NOAA.jpg',
+          alt: 'Wall cloud with lightning during a severe storm',
+          caption: 'A wall cloud with lightning — the rotating, lowered cloud base that Fujita first formally described after studying the Fargo tornado. This ominous feature is often a precursor to tornado formation.',
+          credit: 'NOAA / Brad Smull',
+        },
+        {
           type: 'paragraph',
           content: 'More importantly, Fujita developed methods for estimating tornado intensity based on damage patterns. Different wind speeds produced different types of destruction. A storm that peeled roofing was weaker than one that leveled walls. A storm that leveled walls was weaker than one that swept foundations clean. By analyzing what was destroyed and how, you could work backward to determine the forces involved.',
         },
@@ -144,10 +151,10 @@ export const tornadoScience: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Fujita_scale_diagram.svg/1280px-Fujita_scale_diagram.svg.png',
-          alt: 'Fujita Scale diagram illustrating tornado intensity',
-          caption: 'The Fujita Scale, developed by Ted Fujita, rates tornado intensity from F0 to F5 based on the damage they cause. The 1957 Fargo tornado was retrospectively rated an F5, the highest category.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Fujita_scale_technical.svg',
+          alt: 'Fujita Scale technical diagram illustrating tornado intensity levels',
+          caption: 'The Fujita Scale, developed by Ted Fujita in 1971, rates tornado intensity from F0 to F5 based on the damage they cause. This original diagram shows how wind speed correlates with destruction levels. The 1957 Fargo tornado was retrospectively rated an F5, the highest category.',
+          credit: 'Dr. Ted Fujita / Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -175,6 +182,13 @@ export const tornadoScience: Article = {
           type: 'heading',
           level: 2,
           content: 'The Legacy',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Downtown_Fargo_Aerial_-_Facing_Southeast_%2851009704407%29.jpg',
+          alt: 'Aerial view of downtown Fargo, North Dakota today',
+          caption: 'Modern Fargo, rebuilt and thriving decades after the devastating 1957 tornado. The city implemented better warning systems and stronger building codes after the disaster.',
+          credit: 'Wikimedia Commons / TheImaCow',
         },
         {
           type: 'paragraph',

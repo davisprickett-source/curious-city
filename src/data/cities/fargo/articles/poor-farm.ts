@@ -12,9 +12,9 @@ export const poorFarm: Article = {
   },
   publishedAt: '2024-11-28T12:00:00Z',
   featuredImage: {
-    src: '/fargo/articles/poor-farm.png',
-    alt: 'Trollwood Park in Fargo, site of the former Poor Farm cemetery',
-    credit: 'Fargo Park District',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Fargo%2C_North_Dakota_Red_River.jpg',
+    alt: 'Aerial view of the Red River in Fargo, North Dakota',
+    credit: 'U.S. Air Force / Senior Master Sgt. David H. Lipp',
   },
   category: 'history',
   tags: ['fargo', 'cemetery', 'poor-farm', 'forgotten-history', 'trollwood', 'poverty'],
@@ -45,10 +45,10 @@ export const poorFarm: Article = {
         },
         {
           type: 'image',
-          src: 'https://www.ne.gov/wp-content/uploads/2018/06/cass_county_poor_house_plattsmouth_ne_1918.jpg',
-          alt: 'Cass County Poor Farm, Plattsmouth, Nebraska, circa 1918',
-          caption: 'A typical poor farm in the early 20th century, where the destitute and ill found their last refuge. While this image is from Nebraska, the Cass County Poor Farm in Fargo would have looked similar.',
-          credit: 'Nebraska State Historical Society',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/FEMA_-_40246_-_Oak_Grove_School_Flood_Wall_in_Fargo%2C_North_Dakota.jpg',
+          alt: 'Flood wall near the Red River in Fargo, North Dakota',
+          caption: 'The Red River area near Fargo, where the Poor Farm once stood. Flood walls now protect the city, but erosion from the river continues to reveal forgotten graves from the old cemetery.',
+          credit: 'FEMA / Michael Rieger',
         },
         {
           type: 'paragraph',
@@ -65,10 +65,10 @@ export const poorFarm: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Potters_Field_grave_site.jpg',
-          alt: 'Unmarked graves in a pauper\'s field cemetery',
-          caption: 'Potter\'s Field, a common term for pauper\'s graves. The residents of the Poor Farm were buried in unmarked graves, a fate that many of society\'s forgotten shared.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/1997_Red_River_Flood_Grand_Forks.jpg',
+          alt: 'The 1997 Red River Flood in Grand Forks, North Dakota',
+          caption: 'The Red River in flood, 1997. Rising waters and erosion along the riverbank near Trollwood Park have repeatedly uncovered the forgotten graves of Poor Farm residents, forcing the county to relocate remains.',
+          credit: 'U.S. Army Corps of Engineers / Ken Gardner',
         },
         {
           type: 'paragraph',
@@ -113,6 +113,13 @@ export const poorFarm: Article = {
           type: 'heading',
           level: 2,
           content: 'The Return',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Fargo%2C_North_Dakota_Red_River.jpg',
+          alt: 'Aerial view of the Red River and flood protections in Fargo',
+          caption: 'Aerial view of the Red River in Fargo, showing sandbag dikes and flood protections. Erosion along these banks continues to reveal forgotten graves from the Poor Farm cemetery.',
+          credit: 'U.S. Air Force / Senior Master Sgt. David H. Lipp',
         },
         {
           type: 'paragraph',
@@ -167,6 +174,13 @@ export const poorFarm: Article = {
           type: 'heading',
           level: 2,
           content: 'The Memorial',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Downtown_Fargo_Aerial_-_Facing_Southeast_%2851009704407%29.jpg',
+          alt: 'Aerial view of Fargo, North Dakota',
+          caption: 'Modern Fargo from above. Trollwood Park, where the Poor Farm cemetery lies beneath picnic areas and walking paths, continues to host summer theater and community events — while the forgotten dead rest below.',
+          credit: 'Wikimedia Commons / TheImaCow',
         },
         {
           type: 'paragraph',

@@ -8,6 +8,11 @@ export const fargo_history: Record<string, History> = {
       subtitle: 'Forty below, biblical floods, and the stubborn midwestern insistence that this is a good place to live',
       author: 'Hannah Price',
       publishedAt: '2024-12-22',
+      heroImage: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Downtown_Fargo_Aerial_-_Facing_Southeast_%2851009704407%29.jpg',
+        alt: 'Aerial view of downtown Fargo, North Dakota',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
@@ -16,14 +21,38 @@ export const fargo_history: Record<string, History> = {
           content: "The city sits on the absolutely flat bed of a lake that hasn't existed for ten thousand years, Lake Agassiz, which at its peak was larger than all the Great Lakes combined. When the glaciers melted the lake drained catastrophically northward, leaving behind soil so rich and flat it seems almost theoretical—a plane extending in every direction until it meets sky, the horizon a perfect line drawn with a straightedge. This is land that makes geometry visible, that reduces the world to two elements: earth and air, the division between them absolute.",
         },
         {
+          id: 'img1',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Agassiz.jpg',
+          alt: 'Map showing the extent of glacial Lake Agassiz',
+          caption: 'Lake Agassiz at its peak was larger than all the Great Lakes combined. Fargo sits on what was once the bed of this massive glacial lake, which drained catastrophically around 10,000 years ago.',
+          credit: 'U.S. Geological Survey',
+        },
+        {
           id: 'p2',
           type: 'paragraph',
           content: 'The Red River runs through the middle, north toward Hudson Bay, one of the few rivers in America that flows north, which seems appropriate for a place that operates on its own logic. The river is usually gentle, almost apologetic, barely moving through its channel. But in spring when the snowmelt comes and the river thaws from south to north, the water has nowhere to go, backs up against ice downstream, and floods with biblical regularity. 1997 was the worst—the water rose to fifty-four feet, twenty-six feet above flood stage, submerged whole neighborhoods, required evacuating most of the city. They built higher dikes afterwards, raised them and strengthened them, the whole city now ringed with earthen walls like a medieval fortress, protection against an enemy that arrives every spring with varying intensity.',
         },
         {
+          id: 'img2',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/1997_Red_River_Flood_Grand_Forks.jpg',
+          alt: 'The 1997 Red River Flood in Grand Forks, North Dakota',
+          caption: 'The Red River in biblical flood, 1997. The water rose twenty-six feet above flood stage, submerging whole neighborhoods and requiring the evacuation of most of the city.',
+          credit: 'U.S. Army Corps of Engineers / Ken Gardner',
+        },
+        {
           id: 'p3',
           type: 'paragraph',
           content: 'The name comes from William Fargo of Wells Fargo fame, who never visited, never saw the prairie or the river or the sky that defines everything. The city was a stop on the Northern Pacific Railway, founded in 1871 where the railroad crossed the Red River, one of those pragmatic nineteenth-century decisions where location was determined entirely by transportation logistics. The town that grew up around the crossing was rough—saloons and brothels serving railroad workers and buffalo hunters, the kind of frontier settlement that existed in that brief window between indigenous displacement and civic respectability.',
+        },
+        {
+          id: 'img3',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Fargo_Northern_Pacific_Railway_Depot.jpg',
+          alt: 'Northern Pacific Railway Depot in Fargo',
+          caption: 'The Northern Pacific Railway Depot in Fargo, designed by architect Cass Gilbert. The city was founded in 1871 where the railroad crossed the Red River.',
+          credit: 'Wikimedia Commons / Billybob2002',
         },
         {
           id: 'break1',
@@ -81,6 +110,14 @@ export const fargo_history: Record<string, History> = {
           content: "The downtown murals cover building sides with images of bison and wheat and abstract patterns, public art that tries to make a flat landscape interesting, to add dimension where dimension is scarce. Broadway runs through downtown, old buildings renovated into lofts and restaurants, the Fargo Theatre with its art deco marquee still showing movies, the whole downtown district trying very hard to be vibrant and mostly succeeding in a modest Midwestern way that doesn't announce itself.",
         },
         {
+          id: 'img4',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Fargo_downtown_N_Broadway_Drive_IMG_0654.JPG',
+          alt: 'Broadway in downtown Fargo, North Dakota',
+          caption: 'Broadway runs through downtown Fargo, lined with renovated buildings, restaurants, and the historic Fargo Theatre with its art deco marquee.',
+          credit: 'Wikimedia Commons / Bjoertvedt',
+        },
+        {
           id: 'break2',
           type: 'break',
           style: 'space',
@@ -104,6 +141,14 @@ export const fargo_history: Record<string, History> = {
           id: 'p13',
           type: 'paragraph',
           content: "To live in Fargo is to live in a place that's fundamentally comprehensible. The city has traffic but not congestion, crime but not violence, ambition but not ruthlessness. You can buy a house on a teacher's salary. The schools are good. The parks are maintained. The government functions with the efficiency of people who take civic duty seriously. This sounds boring and it is boring, but boring is underrated, boring means functional, boring means you can raise kids and build a life without the constant friction of urban difficulty.",
+        },
+        {
+          id: 'img5',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Fargo%2C_North_Dakota_Red_River.jpg',
+          alt: 'Aerial view of the Red River and Fargo, North Dakota',
+          caption: 'The Red River winds through Fargo, with sandbag dikes lining its banks. The city persists in a place that seems designed to discourage human habitation—too cold, too flat, too prone to flooding—yet people stay.',
+          credit: 'U.S. Air Force / Senior Master Sgt. David H. Lipp',
         },
         {
           id: 'p14',
