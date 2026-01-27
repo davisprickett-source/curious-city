@@ -15,9 +15,9 @@ export const vanportFlood: Article = {
   },
   publishedAt: '2024-10-05T12:00:00Z',
   featuredImage: {
-    src: '/portland/articles/vanport-flood.png',
-    alt: 'Aerial view of Vanport flooding, 1948',
-    credit: 'Oregon Historical Society',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Aerial_view_of_vanport_flooded.jpg',
+    alt: 'Aerial view of Vanport, Oregon during the 1948 flood that destroyed the city',
+    credit: 'Portland City Archives / Wikimedia Commons (Public Domain)',
   },
   category: 'history',
   tags: ['portland', 'disaster', 'history', 'civil-rights', 'housing', 'forgotten-history'],
@@ -37,6 +37,13 @@ export const vanportFlood: Article = {
           type: 'heading',
           level: 2,
           content: 'The Instant City',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Vanport_street_scene.jpg',
+          alt: 'Street scene in Vanport, Oregon in 1943, showing rows of housing and residents',
+          caption: 'Vanport in 1943 — five years before the flood. At its peak, 40,000 people lived here, making it Oregon\'s second-largest city. The hastily-built wartime housing was never meant to be permanent.',
+          credit: 'Portland City Archives / Wikimedia Commons (Public Domain)',
         },
         {
           type: 'paragraph',
@@ -89,6 +96,13 @@ export const vanportFlood: Article = {
           content: 'The Break',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Aerial_view_of_vanport_flooded.jpg',
+          alt: 'Aerial view of Vanport completely submerged by flood waters, June 1948',
+          caption: 'Aerial view of Vanport on June 15, 1948 — two weeks after the dike broke. Where 18,500 people had lived, there was only water. The city would never be rebuilt.',
+          credit: 'Portland City Archives / Wikimedia Commons (Public Domain)',
+        },
+        {
           type: 'paragraph',
           content: 'At 4:17 PM on May 30, 1948, a 200-foot section of the Smith Lake railroad dike gave way. The breach happened without warning — no sirens, no time. Water from Smith Lake, backed up by the flooding Columbia, poured through the gap.',
         },
@@ -109,6 +123,13 @@ export const vanportFlood: Article = {
         {
           type: 'paragraph',
           content: 'Rescue efforts were improvised and chaotic. Boats appeared from nearby. Residents formed human chains. Some people were plucked from rooftops; others were carried away by the current. By nightfall, the entire city was underwater — some areas submerged under 15 feet of muddy floodwater.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Vanport_flood_overturned_cars.jpg',
+          alt: 'Overturned cars in the aftermath of the Vanport flood, 1948',
+          caption: 'The aftermath: cars tossed like toys by the flood waters. Within 35 minutes, Oregon\'s second-largest city was completely destroyed.',
+          credit: 'Portland City Archives / Wikimedia Commons (Public Domain)',
         },
         {
           type: 'ad',

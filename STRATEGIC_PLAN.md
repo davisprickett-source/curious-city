@@ -542,6 +542,9 @@ Here's some things to edit/change:
 -I want the faq page to be more of a dropdown menu with maybe 3 columns for the faq sections so that more questions are visible on load and people click to dropdown the answer, move the "can't find your answer?" green section to the bottom of the page
 
 
+
+-about page - changed founded in 2020 to 2025, 
+
 loc operated services chicagoland area and nw indy
 
 but not limited to

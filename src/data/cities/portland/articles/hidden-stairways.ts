@@ -12,9 +12,9 @@ export const hiddenStairways: Article = {
   },
   publishedAt: '2024-12-15T18:00:00Z',
   featuredImage: {
-    src: '/portland/articles/hidden-stairways.png',
-    alt: 'Hidden public stairway in Portland neighborhood',
-    credit: 'OPB / Oregon Field Guide',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/c/c0/Alameda_Stairway.jpg',
+    alt: 'Public stairway on Alameda Ridge in Northeast Portland, Oregon',
+    credit: 'Axcordion / Wikimedia Commons (CC BY-SA 3.0)',
   },
   category: 'history',
   tags: ['portland', 'urban-history', 'infrastructure', 'walking', 'hidden-gems', 'curiosities'],
@@ -33,6 +33,13 @@ export const hiddenStairways: Article = {
         {
           type: 'paragraph',
           content: 'At their peak in the 1920s, Portland had 400 public stairways. Workers in Linnton could "pop out and be at work in five minutes" at the lumber mills via staircases. Kids in the Alphabet District used them to walk to school. These weren\'t recreational infrastructure. They were essential urban transit — the connective tissue that made hillside Portland livable before everyone owned a car.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Alameda_Stairway_2.jpg',
+          alt: 'Public stairway leading down from Alameda Ridge at 50th Avenue in Northeast Portland',
+          caption: 'One of the 11 stairways on Alameda Ridge — built between 1912 and 1920, still in use today. These stairs connected hilltop neighborhoods to streetcar lines in the valley below.',
+          credit: 'Axcordion / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'heading',
@@ -65,6 +72,13 @@ export const hiddenStairways: Article = {
           type: 'heading',
           level: 2,
           content: 'The WPA Stairways',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Rocky_Butte-3.jpg',
+          alt: 'Stone steps at the entrance to Rocky Butte in Portland, Oregon',
+          caption: 'The WPA-built steps at Rocky Butte — hand-hewn stone designed to last centuries. These Depression-era public works projects weren\'t just functional; they were art.',
+          credit: 'Visitor7 / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',
@@ -127,6 +141,13 @@ export const hiddenStairways: Article = {
         {
           type: 'paragraph',
           content: 'The stairways that remain are scattered across Portland like an incomplete map. Some are obvious — the Cathedral Park stairway, Portland\'s "most photographed staircase," leads dramatically down to the St. Johns Bridge. Others are invisible unless you know where to look.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/6/69/St_Johns_Bridge_from_Cathedral_Park_all_-_Portland%2C_Oregon.jpg',
+          alt: 'St. Johns Bridge viewed from Cathedral Park in Portland, Oregon',
+          caption: 'Cathedral Park beneath the St. Johns Bridge — home to Portland\'s "most photographed staircase." The Gothic arches that inspired the park\'s name frame the city\'s most dramatic public stairway.',
+          credit: 'Aboutmovies / Wikimedia Commons (CC BY-SA 4.0)',
         },
         {
           type: 'paragraph',
