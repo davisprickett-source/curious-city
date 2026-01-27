@@ -16,9 +16,9 @@ export const dbCooper: Article = {
   },
   publishedAt: '2025-01-09T12:00:00Z',
   featuredImage: {
-    src: '/seattle/articles/db-cooper.png',
-    alt: 'FBI sketch of D.B. Cooper',
-    credit: 'FBI Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/DB_Cooper_%28FBI_composite_sketch%29.png',
+    alt: 'FBI composite sketch of D.B. Cooper',
+    credit: 'FBI Archives / Wikimedia Commons',
   },
   category: 'history',
   tags: ['seattle', 'mystery', 'true-crime', 'aviation', '1970s', 'unsolved'],

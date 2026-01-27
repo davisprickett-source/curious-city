@@ -12,9 +12,9 @@ export const wtoRiots: Article = {
   },
   publishedAt: '2025-01-22T14:00:00Z',
   featuredImage: {
-    src: '/seattle/articles/wto-riots.png',
-    alt: 'Protesters in Seattle streets during WTO demonstrations, 1999',
-    credit: 'Seattle Municipal Archives',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/6/63/WTO_protests_in_Seattle_November_30_1999.jpg',
+    alt: 'WTO protesters being pepper sprayed in Seattle, November 30, 1999',
+    credit: 'Steve Kaiser / Flickr (CC BY-SA 2.0)',
   },
   category: 'history',
   tags: ['seattle', 'protests', 'activism', '1999', 'wto', 'globalization', 'political-history'],

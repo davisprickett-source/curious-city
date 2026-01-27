@@ -12,9 +12,9 @@ export const grungeOrigins: Article = {
   },
   publishedAt: '2025-01-22T15:00:00Z',
   featuredImage: {
-    src: '/seattle/articles/grunge.png',
-    alt: 'Seattle grunge scene, early 1990s',
-    credit: 'Sub Pop Records',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg',
+    alt: 'Kurt Cobain and Krist Novoselic of Nirvana performing at the 1992 MTV Video Music Awards',
+    credit: 'P.B. Rage / Flickr (CC BY-SA 2.0)',
   },
   category: 'history',
   tags: ['seattle', 'music-history', 'grunge', '1990s', 'nirvana', 'sub-pop', 'counterculture'],

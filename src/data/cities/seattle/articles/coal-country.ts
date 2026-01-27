@@ -12,9 +12,9 @@ export const coalCountry: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/seattle/articles/coal-country.png',
-    alt: 'Coal miners at Newcastle Mine near Seattle, circa 1890',
-    credit: 'University of Washington Special Collections',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Child_coal_miners_%281908%29.jpg',
+    alt: 'Child coal miners with mules in a mine, 1908',
+    credit: 'Lewis Wickes Hine / Library of Congress',
   },
   category: 'history',
   tags: ['seattle', 'coal', 'mining', 'labor', 'chinese-american', 'industry', 'forgotten-history'],

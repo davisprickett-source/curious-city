@@ -12,9 +12,9 @@ export const wellingtonAvalanche: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: '/seattle/articles/wellington-avalanche.png',
-    alt: 'Rescue workers at the Wellington avalanche site, March 1910',
-    credit: 'University of Washington Special Collections',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Train_wreckage_from_Wellington_WA_avalanche_cph.3b13980.jpg',
+    alt: 'Train wreckage caused by the Wellington avalanche, March 1910',
+    credit: 'E.J. Frazier / Library of Congress',
   },
   category: 'history',
   tags: ['seattle', 'disaster', 'avalanche', 'railroad', 'cascades', 'forgotten-history', 'tragedy'],
