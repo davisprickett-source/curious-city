@@ -27,13 +27,6 @@ export const wellingtonAvalanche: Article = {
           content: 'The telegram arrived in Seattle on the morning of March 1, 1910. It was brief and devastating: "Avalanche at Wellington. Two trains swept from tracks. Many dead." What followed was chaos — relatives flooding the railroad offices, rescue parties scrambling into the mountains, and the slow, horrifying realization that an entire community of travelers had been buried under a half-mile of snow.',
         },
         {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Wellington_Avalanche_Rescue_1910.jpg/1280px-Wellington_Avalanche_Rescue_1910.jpg',
-          alt: 'Rescue workers at the site of the Wellington avalanche, March 1910',
-          caption: 'Rescue workers and railroad employees digging through the massive debris field at Wellington. The search for survivors and bodies continued for months as the snow slowly melted.',
-          credit: 'Wikimedia Commons',
-        },
-        {
           type: 'paragraph',
           content: 'Ninety-six people died that night in the Cascade Mountains. It remains the deadliest avalanche in American history, and the deadliest railroad disaster in the Pacific Northwest. Yet most Washingtonians have never heard of it. The Great Northern Railway was so traumatized that they renamed the station and systematically erased the disaster from their corporate history. The town of Wellington ceased to exist. The dead were forgotten.',
         },
@@ -49,6 +42,13 @@ export const wellingtonAvalanche: Article = {
         {
           type: 'paragraph',
           content: 'On February 22, 1910, two trains left Spokane heading west through the Cascade Range toward Seattle. The first was the No. 25 Spokane Local, a passenger train carrying about 70 travelers. The second was the Fast Mail No. 27, hauling mail and a few additional passengers. Together, they carried roughly 100 people — businessmen, families, railroad workers, and mail clerks.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Great_Northern_Railway_Oriental_Limited_Cascade_Tunnel_1918.JPG',
+          alt: 'Great Northern Railway Oriental Limited emerging from the Cascade Tunnel, 1918',
+          caption: 'A Great Northern Railway train emerges from the original Cascade Tunnel, pulled by an electric locomotive. This was the route through Stevens Pass that the doomed trains traveled in 1910.',
+          credit: 'Wikimedia Commons / Public Domain',
         },
         {
           type: 'paragraph',
@@ -79,10 +79,10 @@ export const wellingtonAvalanche: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Wellington_Station_GN_Railway_early_1900s.jpg/1280px-Wellington_Station_GN_Railway_early_1900s.jpg',
-          alt: 'Wellington Station of the Great Northern Railway, early 1900s',
-          caption: 'Wellington Station, a remote railroad stop in the Cascade Mountains, before the devastating avalanche. Two trains were trapped here for six days by a relentless blizzard.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Wellington_before_the_Avalanche.jpg',
+          alt: 'Wellington depot before the 1910 avalanche',
+          caption: 'The railroad at Wellington, Washington, before the avalanche of March 1910. This remote depot, carved into the mountainside beneath Windy Mountain, would become the site of America\'s deadliest avalanche.',
+          credit: 'The Technical World Magazine, 1910 / Public Domain',
         },
         {
           type: 'paragraph',
@@ -104,13 +104,6 @@ export const wellingtonAvalanche: Article = {
         {
           type: 'paragraph',
           content: 'For six days, the trains sat on the tracks at Wellington while the blizzard raged. The railroad threw everything it had at the problem. Rotary snowplows — massive machines with spinning blades that could chew through packed snow — worked around the clock. Hundreds of laborers dug by hand. Telegraph lines went down and had to be repaired. Supply trains tried to reach Wellington from both directions and couldn\'t get through.',
-        },
-        {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Northern_Railway_rotary_snowplow%2C_c._1900.jpg/1280px-Great_Northern_Railway_rotary_snowplow%2C_c._1900.jpg',
-          alt: 'Great Northern Railway rotary snowplow, circa 1900',
-          caption: 'Great Northern Railway\'s rotary snowplows were powerful machines designed to clear mountain passes. Despite their efforts, the blizzard of 1910 proved too relentless.',
-          credit: 'Wikimedia Commons',
         },
         {
           type: 'paragraph',
@@ -148,15 +141,15 @@ export const wellingtonAvalanche: Article = {
           content: 'At 1:42 AM on March 1, 1910, lightning struck Windy Mountain. The sound was described as a "dull, thundering roar" — not an explosion but a rumble, like the mountain itself was waking up. A slab of snow a half-mile wide, ten feet deep, and thousands of tons in weight broke free from the slope above Wellington Station.',
         },
         {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wellington_avalanche_wreckage%2C_1910.jpg/1280px-Wellington_avalanche_wreckage%2C_1910.jpg',
-          alt: 'Train wreckage after the Wellington avalanche, 1910',
-          caption: 'The devastating aftermath of the Wellington avalanche, March 1910. Both trains were swept off the tracks and into the Tye River canyon, resulting in 96 deaths.',
-          credit: 'Wikimedia Commons',
-        },
-        {
           type: 'paragraph',
           content: 'The avalanche hit the trains at roughly 60 miles per hour. It swept both trains off the tracks, over the ledge, and 150 feet down into the Tye River canyon. Locomotives, passenger cars, mail cars, baggage cars — everything went over. The wooden passenger cars disintegrated on impact. Bodies were scattered across the debris field, buried under snow, timber, and twisted steel.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Wellington_Avalanche_Debris.jpg',
+          alt: 'Debris field from the Wellington avalanche including wrecked train cars',
+          caption: 'The debris field following the Wellington avalanche, March 1910. Wrecked train cars, timber, and snow were scattered 150 feet down the mountainside into the Tye River canyon.',
+          credit: 'John Juleen / The Technical World Magazine, 1910',
         },
         {
           type: 'paragraph',
@@ -212,10 +205,10 @@ export const wellingtonAvalanche: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Great_Northern_Railway_Cascade_Tunnel_Dedication_1929.jpg/1280px-Great_Northern_Railway_Cascade_Tunnel_Dedication_1929.jpg',
-          alt: 'Dedication of the new Cascade Tunnel, 1929',
-          caption: 'The opening of the new 7.8-mile Cascade Tunnel in 1929. The massive engineering project was the railroad\'s definitive answer to the dangers of Stevens Pass.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/11/Great_Northern_Railway_and_A._Guthrie_Co._officials_at_the_entrance_to_the_Cascade_Tunnel%2C_the_longest_tunnel_in_America_%287.8_miles%29.jpg',
+          alt: 'Officials at the opening of the new Cascade Tunnel, January 12, 1929',
+          caption: 'Great Northern Railway and A. Guthrie Co. officials at the entrance to the new Cascade Tunnel on opening day, January 12, 1929. At 7.8 miles, it was the longest railroad tunnel in America, built to bypass the avalanche-prone slopes that claimed 96 lives.',
+          credit: 'Lee Pickett / University of Washington Libraries',
         },
         {
           type: 'paragraph',
@@ -237,22 +230,22 @@ export const wellingtonAvalanche: Article = {
           content: 'For decades, the Wellington disaster faded from public memory. The railroad didn\'t talk about it. Local histories mentioned it briefly or not at all. The bodies were buried in cemeteries across Washington, their gravestones saying nothing about how they died. A few survivors gave interviews over the years, but they grew old and died themselves. The story slipped away.',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Cascade_Tunnel_Great_Northern_Railway_illustration.JPG',
+          alt: 'Illustration showing both the old and new Cascade Tunnels',
+          caption: 'A postcard illustration from the Great Northern Railway showing the route of the new Cascade Tunnel (completed 1929) compared to the original shorter tunnel. The new tunnel ran 500 feet lower in elevation, completely bypassing the Wellington avalanche site.',
+          credit: 'Great Northern Railway / Public Domain',
+        },
+        {
           type: 'paragraph',
           content: 'In recent decades, historians and railfans have worked to recover the memory of Wellington. The avalanche site, accessible only by foot, has become a destination for hikers interested in industrial archaeology. Rusted machinery, rotting timbers, and fragments of rail still litter the mountainside. The old Cascade Tunnel, abandoned when the new tunnel opened, is now a hiking trail through absolute darkness.',
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Original_Cascade_Tunnel_Interior.jpg/1280px-Original_Cascade_Tunnel_Interior.jpg',
-          alt: 'Interior of the original abandoned Cascade Tunnel',
-          caption: 'The interior of the original Cascade Tunnel, now abandoned and silent. It stands as a cavernous reminder of the railroad that once dominated these mountains.',
-          credit: 'Wikimedia Commons',
-        },
-        {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wellington_Memorial_2010.jpg/1280px-Wellington_Memorial_2010.jpg',
-          alt: 'Memorial at the Wellington avalanche site, 2010',
-          caption: 'The memorial erected in 2010 at the Wellington avalanche site, 100 years after the disaster, listing the names of the 96 victims.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Cascade_Tunnel.jpg',
+          alt: 'East portal doors of the current Cascade Tunnel opening',
+          caption: 'The east portal doors of the current Cascade Tunnel, which replaced the original and remains in active use by BNSF Railway. This engineering marvel was the railroad\'s answer to the dangers of Stevens Pass.',
+          credit: 'Cliff West / Wikimedia Commons',
         },
         {
           type: 'divider',
