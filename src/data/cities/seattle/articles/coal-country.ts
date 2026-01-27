@@ -55,6 +55,13 @@ export const coalCountry: Article = {
           credit: 'Wikimedia Commons',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Coal_train_leaving_mine%2C_Scranton%2C_Pa._LCCN2016648177.jpg',
+          alt: 'A coal train leaving a mine in Scranton, Pennsylvania, circa 1912',
+          caption: 'A coal train leaving a mine, circa 1912. Scenes like this were common across King County, where rail lines connected mines to Seattle\'s waterfront for shipping.',
+          credit: 'George Grantham Bain Collection / Library of Congress',
+        },
+        {
           type: 'paragraph',
           content: 'The coal barons got rich. The workers — not so much.',
         },
@@ -82,10 +89,17 @@ export const coalCountry: Article = {
         },
         {
           type: 'image',
-          src: 'https://digitalcollections.lib.washington.edu/digital/api/singleitem/image/earl/8783/default.jpg',
-          alt: 'Chinese miners in Black Diamond coal mine, circa 1890',
-          caption: 'Miners, likely Chinese, in the Black Diamond coal mine, circa 1890. Chinese workers were often assigned the most dangerous jobs in the King County mines.',
-          credit: 'University of Washington Libraries',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Chinese_railroad_workers_in_snow.jpg',
+          alt: 'Chinese railroad workers in the snow during construction of the transcontinental railroad, circa 1860s',
+          caption: 'Chinese workers building the transcontinental railroad, circa 1860s. After the railroad was completed, many Chinese laborers moved to Washington Territory to work in the coal mines, where they faced similar dangers and discrimination.',
+          credit: 'Wikimedia Commons / Public Domain',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Lewis_Hine%2C_Jim_McNulty%2C_15_years_old%2C_miner%2C_North_Pittston%2C_Pennsylvania%2C_1911.jpg',
+          alt: 'Jim McNulty, a 15-year-old coal miner in Pennsylvania, 1911',
+          caption: 'Jim McNulty, 15 years old, a miner in Pennsylvania, 1911. Young workers like McNulty were common in mines across America, including King County, where boys as young as 10 worked underground.',
+          credit: 'Lewis Wickes Hine / Library of Congress',
         },
         {
           type: 'paragraph',
@@ -159,6 +173,13 @@ export const coalCountry: Article = {
           content: 'The Disasters',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Group_of_breaker_boys_in_-9_breaker.jpg',
+          alt: 'Group of breaker boys at a Pennsylvania coal mine, 1911',
+          caption: 'Breaker boys at a Pennsylvania coal breaker, 1911. These young workers sorted coal from slate in dangerous conditions. Similar child labor was common in King County mines until labor reforms in the early 1900s.',
+          credit: 'Lewis Wickes Hine / Library of Congress',
+        },
+        {
           type: 'paragraph',
           content: 'Coal mining is inherently dangerous. The King County mines were no exception. Explosions, cave-ins, floods, and fires killed workers throughout the industry\'s history. Some disasters made headlines. Most were recorded as single-line entries in company ledgers and forgotten.',
         },
@@ -201,6 +222,13 @@ export const coalCountry: Article = {
           type: 'heading',
           level: 2,
           content: 'What Remains',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Mine_portal_with_ponies._S._C._Streams_Black_Diamond_Mine%2C_Creekside%2C_Indiana_County%2C_Pennsylvania._-_NARA_-_541530.jpg',
+          alt: 'Mine portal entrance with ponies at the Black Diamond Mine, 1946',
+          caption: 'A mine portal entrance with ponies, Black Diamond Mine, 1946. By the time this photo was taken, coal mining in King County had already ended, but scenes like this were once common at Newcastle, Franklin, and Black Diamond, Washington.',
+          credit: 'Russell Lee / National Archives',
         },
         {
           type: 'paragraph',
