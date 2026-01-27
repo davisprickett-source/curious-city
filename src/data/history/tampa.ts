@@ -8,6 +8,10 @@ export const tampa_history: Record<string, History> = {
       subtitle: 'Strip malls, strip clubs, and 300 million hand-rolled cigars that built a city in Miami\'s shadow',
       author: 'Curious City',
       publishedAt: '2024-12-22',
+      heroImage: {
+        src: '/sequences/tampa/tampa-1/frame_0001.webp',
+        alt: 'Illustrated aerial view of Tampa Bay and downtown skyline',
+      },
       blocks: [
         {
           id: 'p1',

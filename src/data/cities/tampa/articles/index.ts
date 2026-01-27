@@ -53,10 +53,10 @@ export const gasparillaArticle: Article = {
         },
         {
           type: 'image',
-          src: '/tampa/articles/buccaneer-illustration-1907.jpg',
-          alt: 'Illustration of a buccaneer from 1907, depicting the romanticized pirate archetype',
-          caption: 'The romanticized image of a buccaneer that Tampa embraced - though the real Jose Gaspar never existed outside promotional brochures.',
-          credit: 'Walter Appleton Clark, Scribner\'s Magazine, 1907 (public domain)',
+          src: '/tampa/articles/gasparilla-ship-invasion.jpg',
+          alt: 'The Jose Gasparilla II pirate ship sailing into Tampa Bay during the annual festival, surrounded by spectator boats',
+          caption: 'The Jose Gasparilla II "invades" Tampa Bay every January during the Gasparilla Pirate Fest. The 137-foot ship cannot actually sail — it\'s towed by tugboats while 750+ costumed pirates party aboard. Tampa knows the pirate is fake. Tampa doesn\'t care.',
+          credit: 'Christopher Hollis, 2003 (public domain)',
         },
         {
           type: 'paragraph',

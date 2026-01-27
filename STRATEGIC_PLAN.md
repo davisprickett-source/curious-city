@@ -524,3 +524,59 @@ The goal should be: **"I can't believe I didn't know this about my city"** - tha
 
 (like Source Serif Pro
   + Source Sans Pro, or Playfair Display + Nunito).
+
+
+
+bt deliver an all around great experience
+
+local neighbor
+
+
+
+loc operated services chicagoland area and nw indy
+
+but not limited to
+
+
+google review, 
+
+
+
+fat, nw indy add
+
+
+weeks in advance
+
+no checks
+
+no discover
+
+10-12 ft of rd etc
+
+zelle, cashier check, 
+
+remove 3 ft away from 
+
+
+just year round service
+
+
+deposit
+
+erase the chi neighbors
+
+remove ada
+
+
+wheelchair sensible
+
+duble sided
+
+
+past events
+
+
+remove ada compliant anywhere on the site, these units are just wheelchair accessible, 
+im trying to format all the changes that need to happen, it's a bit of a mess right now
+but also add zelle and cashier checks as payment options
+
