@@ -13,9 +13,9 @@ export const bohemianFlats: Article = {
   publishedAt: '2024-03-19T08:30:00Z',
   updatedAt: '2024-12-18T11:20:00Z',
   featuredImage: {
-    src: '/minneapolis/articles/bohemian-flats-historic.jpg',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Bohemian_Flats_and_the_West_Bank_-_DPLA_-_5c97e4b945c6cb3caacd20b899ec48cf.jpg',
     alt: 'Bohemian Flats settlement along the Mississippi River, circa 1910',
-    credit: 'Minnesota Historical Society',
+    credit: 'Hennepin County Library/DPLA',
   },
   category: 'history',
   tags: ['minneapolis', 'immigration', 'history', 'displacement', 'forgotten-history', 'river'],

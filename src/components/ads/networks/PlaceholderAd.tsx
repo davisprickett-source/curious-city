@@ -1,8 +1,8 @@
 /**
  * Placeholder Ad Component
  *
- * Shows a placeholder when no ad network is configured.
- * Used during development and as final fallback.
+ * In production, returns null to avoid blank space when no ad network serves.
+ * In development, shows a visible placeholder for layout testing.
  */
 
 import type { AdSlotConfig } from '@/lib/ads/types'
@@ -20,6 +20,12 @@ interface PlaceholderAdProps {
 }
 
 export function PlaceholderAd({ slot, className = '' }: PlaceholderAdProps) {
+  // In production, don't show placeholder - avoid blank spaces
+  if (process.env.NODE_ENV === 'production') {
+    return null
+  }
+
+  // In development, show placeholder for layout testing
   return (
     <div
       className={`
