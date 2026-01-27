@@ -7,10 +7,10 @@ export const dobyville: Article = {
   subtitle: 'One of the city\'s oldest Black communities — families, churches, a school, a way of life. Then the Selmon Expressway cut through the middle of it. Now there\'s nothing left but an off-ramp.',
   excerpt: 'For over sixty years, Dobyville was a thriving African American neighborhood in the shadow of Hyde Park\'s mansions. The people who worked in those mansions — cooks, maids, gardeners, drivers — built homes and raised families just blocks away. Then, in the 1970s, Tampa decided it needed a highway. Dobyville was in the way. The city demolished the entire neighborhood, scattered its residents, and paved over the memory. Today, cars pass over where the community used to be at 60 miles per hour. There is no marker.',
   author: {
-    name: 'The Curious City',
+    name: 'Elena Rodriguez',
     bio: 'Stories of erased communities',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2026-01-05T12:00:00Z',
   featuredImage: {
     src: '/tampa/articles/segregated-beach-florida.jpg',
     alt: 'African Americans at Virginia Key Beach, Florida\'s first "colored only" beach, 1945',

@@ -9,10 +9,10 @@ export const gasparillaArticle: Article = {
   subtitle: 'How Tampa invented a fake buccaneer, sold him to America, and turned the lie into the third-largest parade in the country',
   excerpt: 'Jose Gaspar never existed. The pirate whose name adorns Tampa Bay\'s biggest festival, the NFL team\'s ship, and countless gift shop tchotchkes is a complete fabrication - invented by railroad promoters, embellished by con artists, and maintained by everyone who profits from the myth.',
   author: {
-    name: 'The Curious City',
+    name: 'Sarah Mitchell',
     bio: 'History and culture',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2025-12-18T12:00:00Z',
   featuredImage: {
     src: '/tampa/curiosities/gasparilla.png',
     alt: 'The Jose Gasparilla II pirate ship entering Tampa Bay',
@@ -143,13 +143,6 @@ export const gasparillaArticle: Article = {
         {
           type: 'paragraph',
           content: 'The festival grew. In 1911, they started using an actual ship (a borrowed three-masted schooner). By 1937, the Ye Mystic Krewe purchased its own vessel. In 1954, they commissioned the Jose Gasparilla II - described as the world\'s only fully-rigged pirate ship built for "piratical purposes" in 200 years. It cost $100,000 and took seven months to build. It\'s actually a 137-foot steel barge converted to look like a West Indiaman, and it cannot propel itself - it must be towed by tugboats. A separate crew of sober operators actually controls the ship while the pirates party.',
-        },
-        {
-          type: 'image',
-          src: '/tampa/articles/gasparilla-ship-invasion.jpg',
-          alt: 'The Jose Gasparilla II pirate ship sailing into Tampa Bay during the festival, surrounded by spectator boats',
-          caption: 'The Jose Gasparilla II "invades" Tampa Bay during the annual festival. The 137-foot ship cannot actually sail - it must be towed by tugboats while over 750 costumed pirates party aboard.',
-          credit: 'Christopher Hollis, 2003 (public domain)',
         },
         {
           type: 'ad',

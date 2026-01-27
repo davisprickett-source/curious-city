@@ -7,10 +7,10 @@ export const cigarLectors: Article = {
   subtitle: 'For decades, Ybor City factories employed professional readers who recited novels, newspapers, and revolutionary manifestos to workers. It made Tampa\'s cigar rollers the most literate laborers in America — and helped launch the Cuban Revolution.',
   excerpt: 'Before podcasts, before radio, before audiobooks, there were the lectores. In Tampa\'s cigar factories, workers pooled their wages to hire professional readers who would spend eight hours a day reciting novels, newspapers, and political tracts while thousands of hands rolled tobacco. The practice made Ybor City\'s workers the best-informed laborers in America — so informed that factory owners eventually banned it. The last lector was fired in 1931. This is the story of an extinct American profession.',
   author: {
-    name: 'The Curious City',
+    name: 'Marcus Chen',
     bio: 'Stories of labor and culture',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2025-12-22T12:00:00Z',
   featuredImage: {
     src: '/tampa/articles/cigar-lector-tampa-1909.jpg',
     alt: 'A lector reading to cigar workers in Tampa, Florida, January 1909',
