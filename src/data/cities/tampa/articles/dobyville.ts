@@ -12,9 +12,9 @@ export const dobyville: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Dobyville_001.jpg',
-    alt: 'Dobyville neighborhood in Tampa, circa 1960',
-    credit: 'Tampa Bay History Center',
+    src: '/tampa/articles/segregated-beach-florida.jpg',
+    alt: 'African Americans at Virginia Key Beach, Florida\'s first "colored only" beach, 1945',
+    credit: 'Florida State Archives',
   },
   category: 'history',
   tags: ['tampa', 'black-history', 'urban-renewal', 'highways', 'forgotten-history', 'hyde-park', 'segregation'],
@@ -32,10 +32,10 @@ export const dobyville: Article = {
         },
         {
           type: 'image',
-          src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Dobyville_001.jpg',
-          alt: 'Street scene in Dobyville, Tampa, circa 1960',
-          caption: 'A street scene in Dobyville, circa 1960s. This thriving African American community, though modest, fostered a strong sense of belonging and self-sufficiency.',
-          credit: 'Tampa Bay History Center',
+          src: '/tampa/articles/jim-crow-segregation.jpg',
+          alt: 'Man drinking from a "Colored" water cooler at a streetcar terminal, Oklahoma City, 1939',
+          caption: 'The Jim Crow South enforced rigid racial segregation. Black workers like those in Dobyville lived under these laws, which dictated where they could live, work, and even drink water. Photo from Oklahoma City, 1939.',
+          credit: 'Library of Congress / Russell Lee',
         },
         {
           type: 'paragraph',
@@ -51,6 +51,13 @@ export const dobyville: Article = {
           content: 'Dobyville emerged in the early 1900s as Tampa\'s wealthy Hyde Park neighborhood was being developed. The grand Victorian homes going up along Bayshore Boulevard required staff — lots of staff. Cooks, housekeepers, nannies, gardeners, chauffeurs, laundresses. Under the racial codes of the Jim Crow South, these workers could not live in the white neighborhoods where they worked. They needed somewhere close enough to walk to work but far enough to maintain the fiction of separation.',
         },
         {
+          type: 'image',
+          src: '/tampa/articles/hyde-park-historic.jpg',
+          alt: 'A grand Victorian house in Hyde Park Historic District, Tampa, Florida',
+          caption: 'A stately home in Tampa\'s Hyde Park Historic District — the kind of house where Dobyville residents worked as cooks, maids, and gardeners. The neighborhood\'s Black workers built their own community just blocks away.',
+          credit: 'Wikimedia Commons / Ebyabe / CC-BY-SA',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Highway',
@@ -61,10 +68,10 @@ export const dobyville: Article = {
         },
         {
           type: 'image',
-          src: 'https://tampabayhistorycenter.org/wp-content/uploads/2016/06/Crosstown_Expressway_001.jpg',
-          alt: 'Aerial view of Crosstown Expressway construction through Tampa, 1970s',
-          caption: 'Construction of the Crosstown Expressway (now Selmon Expressway) cutting through South Tampa in the 1970s. Dobyville lay directly in the path of this urban renewal project.',
-          credit: 'Tampa Bay History Center',
+          src: '/tampa/articles/selmon-expressway.jpg',
+          alt: 'The Lee Roy Selmon Expressway elevated highway in Tampa, Florida',
+          caption: 'The Lee Roy Selmon Expressway today — an elevated toll road that passes over the land where Dobyville once stood. The highway opened in sections through the 1970s and 80s.',
+          credit: 'Wikimedia Commons / CC-BY-SA',
         },
         {
           type: 'paragraph',
@@ -72,10 +79,10 @@ export const dobyville: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg/1280px-Urban_renewal_demolition_in_the_United_States%2C_1960s.jpg',
-          alt: 'Historical photo of urban renewal demolition in a US city, 1960s',
-          caption: 'Urban renewal demolition in a US city, illustrative of the widespread destruction of Black neighborhoods for highway construction in the mid-20th century.',
-          credit: 'Wikimedia Commons',
+          src: '/tampa/articles/urban-renewal-demolition.jpg',
+          alt: 'Razed houses and others due for demolition as part of an urban renewal project in Charleston, West Virginia, 1973',
+          caption: 'Urban renewal demolished neighborhoods across America. This 1973 photograph shows houses razed and awaiting demolition in Charleston, West Virginia — a scene repeated in Black neighborhoods nationwide, including Dobyville.',
+          credit: 'U.S. National Archives / Harry Schaefer',
         },
         {
           type: 'paragraph',
@@ -117,6 +124,13 @@ export const dobyville: Article = {
           variant: 'warning',
           title: 'The National Pattern',
           content: 'Dobyville was not unique. Across America, interstate highways destroyed hundreds of Black neighborhoods. In Miami, I-95 demolished Overtown. In Birmingham, I-59 split the Black business district. In Minneapolis, I-94 went through Rondo. The pattern was so consistent that historian Deborah Archer has called highway construction "a key instrument of urban apartheid."',
+        },
+        {
+          type: 'image',
+          src: '/tampa/articles/overtown-miami.jpg',
+          alt: 'Street scene in Overtown, Miami — a historic Black neighborhood devastated by I-95 construction',
+          caption: 'Overtown in Miami today. Once called "the Harlem of the South," this vibrant Black neighborhood was bisected by I-95 in the 1960s, displacing tens of thousands of residents. The same pattern destroyed Dobyville in Tampa.',
+          credit: 'Wikimedia Commons / Pietro / CC-BY-SA',
         },
         {
           type: 'ad',

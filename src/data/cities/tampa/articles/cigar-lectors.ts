@@ -12,9 +12,9 @@ export const cigarLectors: Article = {
   },
   publishedAt: '2025-01-11T12:00:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cigar_lector_Cuba_1900s.jpg/800px-Cigar_lector_Cuba_1900s.jpg',
-    alt: 'A lector reading to cigar workers in Ybor City, circa 1920',
-    credit: 'Wikimedia Commons',
+    src: '/tampa/articles/cigar-lector-tampa-1909.jpg',
+    alt: 'A lector reading to cigar workers in Tampa, Florida, January 1909',
+    credit: 'Lewis Wickes Hine, Library of Congress',
   },
   category: 'history',
   tags: ['tampa', 'ybor-city', 'labor', 'cigars', 'cuba', 'history', 'immigration'],
@@ -28,10 +28,10 @@ export const cigarLectors: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cigar_lector_Cuba_1900s.jpg/800px-Cigar_lector_Cuba_1900s.jpg',
-          alt: 'A lector reading to cigar workers in a Cuban factory, early 20th century',
-          caption: 'A lector reading to cigar workers. This tradition, originating in Cuba, transformed cigar factories into centers of learning and political discourse.',
-          credit: 'Wikimedia Commons',
+          src: '/tampa/articles/cigar-lector-tampa-1909.jpg',
+          alt: 'A lector reading to cigar workers in a Tampa cigar factory, 1909',
+          caption: 'A lector reads newspapers aloud from his raised platform ("la tribuna") to cigar workers in Tampa, Florida, January 1909. As the original caption noted: "This is all the education many of these workers receive. He is paid by them and they select what he shall read."',
+          credit: 'Lewis Wickes Hine, Library of Congress',
         },
         {
           type: 'paragraph',
@@ -39,10 +39,10 @@ export const cigarLectors: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ybor_City_cigar_factory_exterior_1900s.jpg/1280px-Ybor_City_cigar_factory_exterior_1900s.jpg',
-          alt: 'Exterior of a cigar factory in Ybor City, Tampa, early 1900s',
-          caption: 'An Ybor City cigar factory in the early 20th century. These factories, initially built by Cuban manufacturers, brought the lector tradition to Tampa.',
-          credit: 'Wikimedia Commons',
+          src: '/tampa/articles/ybor-cigar-factory-interior-1920.jpg',
+          alt: 'Inside an Ybor City cigar factory, circa 1920',
+          caption: 'The interior of an Ybor City cigar factory, circa 1920. Hundreds of workers sat at long benches rolling cigars by hand while listening to the lector. This iconic photograph has been reproduced in countless books about Tampa\'s cigar industry.',
+          credit: 'Tampa-Hillsborough County Public Library',
         },
         {
           type: 'paragraph',
@@ -105,10 +105,17 @@ export const cigarLectors: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Jose_Marti_portrait.jpg/440px-Jose_Marti_portrait.jpg',
-          alt: 'Portrait of José Martí',
-          caption: 'José Martí, the Cuban poet and revolutionary. His speeches and writings, often read aloud by the lectores, galvanized Tampa\'s cigar workers to support Cuban independence.',
-          credit: 'Wikimedia Commons',
+          src: '/tampa/articles/jose-marti-portrait-1892.jpg',
+          alt: 'Portrait of José Martí, 1892',
+          caption: 'José Martí in 1892, the year before his famous visits to Tampa\'s cigar factories. The Cuban poet, philosopher, and revolutionary is remembered as the "Apostle of Cuban Independence."',
+          credit: 'Photo by Juan Bautista Valdés, Kingston, Jamaica (1892)',
+        },
+        {
+          type: 'image',
+          src: '/tampa/articles/jose-marti-ybor-city-1893.jpg',
+          alt: 'José Martí with cigar workers on the steps of the Ybor Factory in Tampa, 1893',
+          caption: 'José Martí poses with cigar factory workers after giving a speech in Ybor City, 1893. The Cuban poet and revolutionary found his most devoted supporters among Tampa\'s cigar workers, who contributed their wages to fund the Cuban War of Independence.',
+          credit: 'University of South Florida historical photography collections',
         },
         {
           type: 'paragraph',
@@ -204,6 +211,13 @@ export const cigarLectors: Article = {
         {
           type: 'paragraph',
           content: 'Today, you can visit Ybor City and see what remains. The old factory buildings still stand, converted into restaurants and shops. The Ybor City Museum State Park has exhibits about the cigar industry and the lectores. A few small cigar shops still hand-roll tobacco the old way. But no one reads aloud.',
+        },
+        {
+          type: 'image',
+          src: '/tampa/articles/ybor-factory-building.jpg',
+          alt: 'The historic Ybor Factory Building in Tampa, Florida',
+          caption: 'The Ybor Factory Building still stands in Tampa\'s historic Ybor City district. This was Vicente Martinez Ybor\'s first cigar factory, where José Martí posed with workers in 1893. The building is now listed on the National Register of Historic Places.',
+          credit: 'Ebyabe, Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'divider',

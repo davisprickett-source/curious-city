@@ -12,9 +12,9 @@ export const murderapolis: Article = {
   },
   publishedAt: '2025-01-22T16:00:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Minneapolis_August_Night_%2836666080201%29.jpg',
-    alt: 'Minneapolis skyline at night, viewed from the Plymouth Avenue Bridge over the Mississippi River',
-    credit: 'Wikimedia Commons (CC BY 2.0)',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Downtown_Minneapolis_at_night.JPG',
+    alt: 'Downtown Minneapolis at night during a winter snow storm, viewed from the Stone Arch Bridge',
+    credit: 'Mark.fenris / Wikimedia Commons (CC BY-SA 3.0)',
   },
   category: 'history',
   tags: ['minneapolis', 'true-crime', '1990s', 'crime', 'gangs', 'crack-epidemic', 'urban-history'],
@@ -41,10 +41,10 @@ export const murderapolis: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/2008-0712-MPLS-panorama.JPG',
-          alt: 'Panoramic view of downtown Minneapolis showing the IDS Center, Metrodome, and surrounding cityscape',
-          caption: 'Downtown Minneapolis skyline. The city that would become "Murderapolis" in the 1990s.',
-          credit: 'Bobak Ha\'Eri / Wikimedia Commons (CC BY 3.0)',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Glenwood_Avenue_-_Winter_Snow_Storm_in_North_Minneapolis_%2824421670459%29.jpg',
+          alt: 'Glenwood Avenue in North Minneapolis during a winter snow storm, showing residential streets and streetlights',
+          caption: 'North Minneapolis — the epicenter of the Murderapolis violence. In the early 1990s, this neighborhood experienced disproportionate rates of homicide and gang activity.',
+          credit: 'Tony Webster / Wikimedia Commons (CC BY-SA 2.0)',
         },
         {
           type: 'paragraph',
@@ -120,10 +120,10 @@ export const murderapolis: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Mayor_Sharon_Sayles_Belton_Bridge_%28Third_Avenue_South_Bridge%29_Minneapolis_Minnesota_%2818525477236%29.jpg',
-          alt: 'The Mayor Sharon Sayles Belton Bridge (Third Avenue South Bridge) in Minneapolis at night',
-          caption: 'The Third Avenue Bridge, now named after Mayor Sharon Sayles Belton, who led Minneapolis through the Murderapolis era.',
-          credit: 'Tony Webster / Wikimedia Commons (CC BY 2.0)',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Sharon_Sayles_Belton_-_5th_Precinct_Construction_Presentation_%2835394775884%29_%28cropped%29.jpg',
+          alt: 'Mayor Sharon Sayles Belton speaking at a public event in Minneapolis',
+          caption: 'Mayor Sharon Sayles Belton, Minneapolis\'s first Black mayor (1994-2001), who led the city through the Murderapolis crisis and declared crime her top priority.',
+          credit: 'City of Minneapolis Archives / Wikimedia Commons (CC BY 2.0)',
         },
         {
           type: 'ad',
@@ -187,6 +187,13 @@ export const murderapolis: Article = {
           type: 'heading',
           level: 2,
           content: 'The Legacy',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Minneapolis_City_Hall-Hennepin_County_Courthouse.jpg',
+          alt: 'Minneapolis City Hall and Hennepin County Courthouse, a Romanesque Revival building with a prominent clock tower',
+          caption: 'Minneapolis City Hall and Hennepin County Courthouse — where cases from the Murderapolis era were tried. The criminal justice system struggled to keep pace with the violence, and clearance rates dropped below 50%.',
+          credit: 'Itboh / Wikimedia Commons (CC BY-SA 3.0)',
         },
         {
           type: 'paragraph',

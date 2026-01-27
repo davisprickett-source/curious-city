@@ -12,9 +12,9 @@ export const winnieRuthJudd: Article = {
   },
   publishedAt: '2025-01-10T12:00:00Z',
   featuredImage: {
-    src: '/phoenix/articles/winnie-ruth-judd.png',
-    alt: 'Newspaper headline about Winnie Ruth Judd trial, 1932',
-    credit: 'Arizona Historical Society',
+    src: '/phoenix/articles/judd-portrait.jpg',
+    alt: 'Portrait photograph of Winnie Ruth Judd, the Trunk Murderess',
+    credit: 'Los Angeles Public Library / Herald Examiner Collection',
   },
   category: 'history',
   tags: ['phoenix', 'true-crime', 'history', '1930s', 'trial', 'mystery'],
@@ -36,13 +36,6 @@ export const winnieRuthJudd: Article = {
           content: 'The Girls',
         },
         {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Winnie_Ruth_Judd_mugshot.jpg/330px-Winnie_Ruth_Judd_mugshot.jpg',
-          alt: 'Winnie Ruth Judd mugshot, 1931',
-          caption: 'Winnie Ruth Judd\'s mugshot from 1931. Her youth and beauty, combined with the brutality of the crime, captivated national headlines.',
-          credit: 'Arizona State Archives / Wikimedia Commons',
-        },
-        {
           type: 'paragraph',
           content: 'Winnie Ruth Judd arrived in Phoenix in 1930, following her husband, a doctor who\'d come west hoping the desert air would cure his morphine addiction. She was young, pretty, and alone — her husband was often away, and she found herself adrift in a strange city.',
         },
@@ -51,20 +44,27 @@ export const winnieRuthJudd: Article = {
           content: 'She met Agnes LeRoi and Hedvig Samuelson through work. The three women became inseparable — partying together, sharing secrets, navigating Depression-era Phoenix as single women in a man\'s world. They had another thing in common: all three were involved with the same man.',
         },
         {
+          type: 'image',
+          src: '/phoenix/articles/judd-county-jail-hospital.jpg',
+          alt: 'Winnie Ruth Judd in county jail hospital with her husband Dr. William C. Judd, 1931',
+          caption: 'Winnie Ruth Judd whispers to her husband, Dr. William C. Judd, as she lies on a cot in the county jail hospital after her capture. Police found a letter in which she confessed to killing Samuelson and LeRoi.',
+          credit: 'Los Angeles Public Library / Herald Examiner Collection',
+        },
+        {
           type: 'heading',
           level: 2,
           content: 'The Trunks',
         },
         {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Winnie_Ruth_Judd_trunks_1931.jpg/800px-Winnie_Ruth_Judd_trunks_1931.jpg',
-          alt: 'Trunks used by Winnie Ruth Judd to transport bodies, 1931',
-          caption: 'The trunks used by Winnie Ruth Judd to transport the bodies from Phoenix to Los Angeles. The discovery of the bodies in these trunks made her a national sensation.',
-          credit: 'Arizona State Archives / Wikimedia Commons',
-        },
-        {
           type: 'paragraph',
           content: 'Judd stuffed LeRoi\'s body intact into a large black trunk. But Samuelson was taller — she wouldn\'t fit. So Judd, using surgical skills she\'d learned as a medical secretary, dismembered the body. The torso and head went into a second trunk. The legs went into a valise and hatbox.',
+        },
+        {
+          type: 'image',
+          src: '/phoenix/articles/phoenix-union-station.jpg',
+          alt: 'Phoenix Union Station, where Winnie Ruth Judd departed with the trunks',
+          caption: 'Phoenix Union Station, where Judd boarded the Golden State Limited train to Los Angeles with the trunks containing the bodies. The historic station is now a museum.',
+          credit: 'Wikimedia Commons / CC BY-SA 3.0',
         },
         {
           type: 'paragraph',
@@ -73,14 +73,34 @@ export const winnieRuthJudd: Article = {
         {
           type: 'heading',
           level: 2,
+          content: 'The Trial',
+        },
+        {
+          type: 'image',
+          src: '/phoenix/articles/judd-trial-1931.png',
+          alt: 'Courtroom scene at the beginning of the Winnie Ruth Judd murder trial, 1931',
+          caption: 'Courtroom scene at the beginning of the trial. At the counsel table, left to right: Herman Lewkowitz, Paul Schenck, and Joe Zaversack, attorneys for Mrs. Judd, with Judd at far right.',
+          credit: 'Los Angeles Public Library / Herald Examiner Collection',
+        },
+        {
+          type: 'paragraph',
+          content: 'The trial was a sensation. Newspapers called Judd the "Tiger Woman," the "Blonde Butcher," and the "Trunk Murderess." The prosecution painted her as a cold-blooded killer driven by jealousy. The all-male jury found her guilty in just four hours.',
+        },
+        {
+          type: 'paragraph',
+          content: 'Judd was sentenced to hang. But questions remained. She had a gunshot wound to her hand — evidence of a struggle she claimed was self-defense. And there were whispers about Jack Halloran, the prominent Phoenix businessman all three women had been involved with. He was indicted as an accomplice, then mysteriously released.',
+        },
+        {
+          type: 'heading',
+          level: 2,
           content: 'The Asylum',
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Arizona_State_Hospital_main_building.jpg/1280px-Arizona_State_Hospital_main_building.jpg',
-          alt: 'Main building of the Arizona State Hospital, historical photo',
-          caption: 'The Arizona State Hospital, where Winnie Ruth Judd spent decades after being declared insane. She escaped from the institution seven times over the years.',
-          credit: 'Arizona State Archives / Wikimedia Commons',
+          src: '/phoenix/articles/arizona-state-hospital.jpg',
+          alt: 'Arizona State Hospital main building, where Winnie Ruth Judd was confined',
+          caption: 'The Arizona State Hospital (formerly the Arizona State Asylum for the Insane), where Winnie Ruth Judd spent decades after being declared insane. She escaped from the institution seven times over the years.',
+          credit: 'Wikimedia Commons / CC BY-SA 3.0',
         },
         {
           type: 'paragraph',
@@ -112,6 +132,13 @@ export const winnieRuthJudd: Article = {
           type: 'heading',
           level: 2,
           content: 'The Mystery',
+        },
+        {
+          type: 'image',
+          src: '/phoenix/articles/judd-surrender-1931.jpg',
+          alt: 'Winnie Ruth Judd surrenders to police in Los Angeles, October 1931',
+          caption: 'Winnie Ruth Judd surrenders to authorities at a Los Angeles funeral home on October 23, 1931, flanked by defense council members and detectives. Her husband Dr. W.C. Judd is visible behind her.',
+          credit: 'UCLA Library Special Collections / Los Angeles Times Photographic Archives',
         },
         {
           type: 'paragraph',

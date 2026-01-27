@@ -62,6 +62,13 @@ export const duckDuckGreyDuck: Article = {
           role: 'Governor of Minnesota',
         },
         {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Tim_Walz_by_Gage_Skidmore.jpg',
+          alt: 'Governor Tim Walz speaking at an event',
+          caption: 'Governor Tim Walz has been an outspoken defender of Duck Duck Grey Duck, bringing Minnesota\'s unique game into the national spotlight during his 2024 vice presidential campaign.',
+          credit: 'Gage Skidmore / Wikimedia Commons / CC BY-SA 3.0',
+        },
+        {
           type: 'paragraph',
           content: 'This argument — that the Minnesota version adds cognitive complexity to a game played by four-year-olds — is delivered with complete sincerity. Minnesotans genuinely believe they\'ve improved upon a children\'s game through mental rigor.',
         },
@@ -81,6 +88,13 @@ export const duckDuckGreyDuck: Article = {
         {
           type: 'paragraph',
           content: 'The Swedish theory suggests that immigrant children merged two games — a chase game and a color-identification game — into Duck Duck Grey Duck. The "grey" specifically may come from the Swedish word "grå" (grey), which sounds similar and was a color commonly used in naming games.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/S.V.Helander.Emigrants.png',
+          alt: 'Painting showing Swedish emigrants bidding farewell before departing for America',
+          caption: '"The Emigrants" by Viktor Helander (1839-1901) depicts Swedish families departing for America — the same migration wave that brought Duck Duck Grey Duck to Minnesota.',
+          credit: 'Viktor Helander / Nordic Museum / Public Domain',
         },
         {
           type: 'paragraph',
@@ -158,6 +172,13 @@ export const duckDuckGreyDuck: Article = {
         {
           type: 'paragraph',
           content: 'Duck Duck Goose, for its part, has ancient roots. Similar circle-chase games exist in virtually every culture. The Swedes have their Anka Anka Gås. The Germans have Plumpsack. In Ghana, children play a version called Antoakyire. The basic format — children in a circle, one selecting a chaser — appears to be a human universal.',
+        },
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Minnesota_in_United_States.svg',
+          alt: 'Map of the United States with Minnesota highlighted',
+          caption: 'Minnesota: the lone holdout. While 49 states play Duck Duck Goose, Minnesota stubbornly maintains its Grey Duck tradition.',
+          credit: 'TUBS / Wikimedia Commons / CC BY-SA 3.0',
         },
         {
           type: 'paragraph',
@@ -273,6 +294,12 @@ export const newRestaurantsNortheast: Article = {
       content: '1. Pho & Beyond',
     },
     {
+      type: 'image',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Pho_Soup.jpg',
+      alt: 'A steaming bowl of pho with fresh herbs and rice noodles',
+      credit: 'Revital Salomon / Wikimedia Commons (CC BY-SA 4.0)',
+    },
+    {
       type: 'paragraph',
       content: 'Chef Mai Nguyen spent fifteen years working in St. Paul\'s Hmong kitchen scene before opening her own place in Northeast. Pho & Beyond takes traditional Hmong and Vietnamese dishes and reimagines them with hyperlocal Minnesota ingredients.',
     },
@@ -298,6 +325,12 @@ export const newRestaurantsNortheast: Article = {
       content: '2. Ember & Oak',
     },
     {
+      type: 'image',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Feuer_im_Ofen.jpg',
+      alt: 'Flames burning in a wood-fired oven',
+      credit: 'WS ReNu / Wikimedia Commons (CC BY-SA 4.0)',
+    },
+    {
       type: 'paragraph',
       content: 'This wood-fired everything restaurant is the passion project of former Spoon and Stable sous chef Marcus Chen. Everything—and we mean everything—is cooked over an open flame in a massive wood-burning oven imported from Italy.',
     },
@@ -313,6 +346,12 @@ export const newRestaurantsNortheast: Article = {
       type: 'heading',
       level: 2,
       content: '3. The Neon Ramen Bar',
+    },
+    {
+      type: 'image',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Ikkousha_tonkotsu_bowl.jpg',
+      alt: 'A bowl of creamy tonkotsu ramen with chashu pork, nori, and soft-boiled egg',
+      credit: 'Wesoree / Wikimedia Commons (CC BY-SA 4.0)',
     },
     {
       type: 'paragraph',
@@ -334,6 +373,12 @@ export const newRestaurantsNortheast: Article = {
       content: '4. Salt & Smoke',
     },
     {
+      type: 'image',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Smoked_Brisket_with_smoke_ring.jpg',
+      alt: 'Sliced smoked brisket showing a perfect pink smoke ring',
+      credit: 'Johnsparks75 / Wikimedia Commons (CC BY-SA 4.0)',
+    },
+    {
       type: 'paragraph',
       content: 'Minnesota doesn\'t have a barbecue tradition, which is exactly why Salt & Smoke works. Chef and pitmaster Jamal Williams isn\'t trying to replicate Texas or Kansas City—he\'s creating something entirely new.',
     },
@@ -349,6 +394,12 @@ export const newRestaurantsNortheast: Article = {
       type: 'heading',
       level: 2,
       content: '5. The Greenhouse',
+    },
+    {
+      type: 'image',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Greenhouse_for_strawberry.jpg',
+      alt: 'Interior of a greenhouse with rows of plants growing under glass',
+      credit: 'Moja~commonswiki / Wikimedia Commons (CC BY-SA 3.0)',
     },
     {
       type: 'paragraph',

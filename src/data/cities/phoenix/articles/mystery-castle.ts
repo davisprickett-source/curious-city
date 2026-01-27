@@ -14,8 +14,8 @@ export const mysteryCastle: Article = {
   updatedAt: '2024-10-15T13:00:00Z',
   featuredImage: {
     src: '/phoenix/articles/mystery-castle.png',
-    alt: 'Mystery Castle exterior at sunset, Phoenix, Arizona',
-    credit: 'Mystery Castle Foundation',
+    alt: 'Mystery Castle exterior panoramic view showing the sprawling folk-art architecture built by Boyce Gulley',
+    credit: 'Wikimedia Commons / StellarD (Public Domain)',
   },
   category: 'history',
   tags: ['phoenix', 'architecture', 'history', 'family', 'folk-art', 'endangered'],
@@ -117,6 +117,13 @@ export const mysteryCastle: Article = {
           content: 'Mystery Castle is held together with a mixture of mortar, cement, calciumite, and goat\'s milk. Gulley used adobe, thousands of rocks, salvaged bricks, rejected lumber, spent ammunition casings, coal clinkers, and saguaro cactus skeletons. Old schoolroom blackboards became slate flooring. Nearly everything was recycled or repurposed.',
         },
         {
+          type: 'image',
+          src: '/phoenix/articles/mystery-castle-kitchen.jpg',
+          alt: 'Mystery Castle kitchen showing the eclectic mix of salvaged materials and folk art construction',
+          caption: 'The kitchen at Mystery Castle showcases Boyce Gulley\'s resourceful building style — every surface tells a story of salvage and creativity.',
+          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
+        },
+        {
           type: 'paragraph',
           content: 'The result is something between a fever dream and a fairy tale — a sprawling, eccentric, impossible structure that looks like it grew from the desert floor. Every room contains artifacts and oddities. Secret passages connect unexpected spaces. The whole thing feels like the physical manifestation of a dying man\'s love for his daughter.',
         },
@@ -179,6 +186,17 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'image',
+          src: '/phoenix/articles/mystery-castle-life-magazine-1948.png',
+          alt: 'Life Magazine cover from January 26, 1948 featuring Mystery Castle and Mary Lou Gulley',
+          caption: 'The January 26, 1948 issue of Life magazine introduced Mystery Castle to America with the headline "Life Visits a Mystery Castle." The story made Mary Lou Gulley famous overnight.',
+          credit: 'Life Magazine, 1948',
+        },
+        {
+          type: 'paragraph',
+          content: 'Life magazine\'s story made Mystery Castle famous. Tourists began showing up, wanting to see the strange castle the dying man had built for his daughter. Mary Lou and her mother started giving tours.',
+        },
+        {
+          type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mystery_Castle_interior_room.jpg/1280px-Mystery_Castle_interior_room.jpg',
           alt: 'Interior of Mystery Castle, Phoenix, showing unique construction details',
           caption: 'The eclectic interior of Mystery Castle, with its stone walls, exposed beams, and salvaged materials, reflects Boyce Gulley\'s unique vision.',
@@ -186,11 +204,14 @@ export const mysteryCastle: Article = {
         },
         {
           type: 'paragraph',
-          content: 'Life magazine\'s story made Mystery Castle famous. Tourists began showing up, wanting to see the strange castle the dying man had built for his daughter. Mary Lou and her mother started giving tours.',
+          content: 'After her mother died in 1970, Mary Lou kept going. She never married. She never moved away. She lived in Mystery Castle for sixty-five years, giving tours almost until the day she died on November 3, 2010. She was the princess her father had always promised she\'d be, living in the castle he\'d built to keep that promise.',
         },
         {
-          type: 'paragraph',
-          content: 'After her mother died in 1970, Mary Lou kept going. She never married. She never moved away. She lived in Mystery Castle for sixty-five years, giving tours almost until the day she died on November 3, 2010. She was the princess her father had always promised she\'d be, living in the castle he\'d built to keep that promise.',
+          type: 'image',
+          src: '/phoenix/articles/mystery-castle-mary-lou-gulley.png',
+          alt: 'Mary Lou Gulley at Mystery Castle in her later years, wearing a blue outfit and white hat',
+          caption: 'Mary Lou Gulley continued giving tours of Mystery Castle well into her eighties. Visitors remember her as gracious, knowledgeable, and deeply devoted to preserving her father\'s creation.',
+          credit: 'Photo: mella doll / Flickr, 2002',
         },
         {
           type: 'paragraph',
@@ -200,6 +221,13 @@ export const mysteryCastle: Article = {
           type: 'heading',
           level: 2,
           content: 'The Threat',
+        },
+        {
+          type: 'image',
+          src: '/phoenix/articles/mystery-castle-exterior-stairs.jpg',
+          alt: 'Mystery Castle exterior showing stone stairs, patios, and the distinctive multi-level architecture',
+          caption: 'The castle\'s exterior reveals its organic, unplanned growth — stone staircases, patios at different levels, and the distinctive folk-art architecture that makes it irreplaceable.',
+          credit: 'Wikimedia Commons / ksblack99 (Public Domain)',
         },
         {
           type: 'paragraph',

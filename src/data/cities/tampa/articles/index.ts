@@ -52,6 +52,13 @@ export const gasparillaArticle: Article = {
           content: 'The Legend, Such As It Is',
         },
         {
+          type: 'image',
+          src: '/tampa/articles/buccaneer-illustration-1907.jpg',
+          alt: 'Illustration of a buccaneer from 1907, depicting the romanticized pirate archetype',
+          caption: 'The romanticized image of a buccaneer that Tampa embraced - though the real Jose Gaspar never existed outside promotional brochures.',
+          credit: 'Walter Appleton Clark, Scribner\'s Magazine, 1907 (public domain)',
+        },
+        {
           type: 'paragraph',
           content: 'According to the story that Tampa has told itself for over a century, Jose Gaspar was born to a Spanish aristocratic family around 1756. He entered the Naval Academy in Barcelona at eighteen, rose to Lieutenant by twenty-two, and served honorably until some combination of romantic betrayal, false accusations, and disillusionment with the crown drove him to piracy. The details vary depending on who\'s telling it. In one version, he was a councilor to King Charles III who was framed for stealing the crown jewels by a spurned lover. In another, he was a troubled youth who kidnapped a girl for ransom and was given a choice between prison and the Navy. The inconsistencies never seem to bother anyone.',
         },
@@ -98,6 +105,13 @@ export const gasparillaArticle: Article = {
           content: 'The Con Man and the Railroad',
         },
         {
+          type: 'image',
+          src: '/tampa/articles/tampa-bay-hotel-postcard.jpg',
+          alt: 'Colorized postcard of the Tampa Bay Hotel circa 1900, showing the ornate Moorish architecture',
+          caption: 'The Tampa Bay Hotel, Henry Plant\'s Moorish palace, where early Gasparilla coronation balls were held. Railroad promoters like Plant needed romantic stories to sell Florida to tourists.',
+          credit: 'Detroit Photographic Company, c. 1900 (public domain)',
+        },
+        {
           type: 'paragraph',
           content: 'So where did Gaspar come from? The trail leads to a fisherman, a railroad, and a publicist who cheerfully admitted he made the whole thing up.',
         },
@@ -131,6 +145,13 @@ export const gasparillaArticle: Article = {
           content: 'The festival grew. In 1911, they started using an actual ship (a borrowed three-masted schooner). By 1937, the Ye Mystic Krewe purchased its own vessel. In 1954, they commissioned the Jose Gasparilla II - described as the world\'s only fully-rigged pirate ship built for "piratical purposes" in 200 years. It cost $100,000 and took seven months to build. It\'s actually a 137-foot steel barge converted to look like a West Indiaman, and it cannot propel itself - it must be towed by tugboats. A separate crew of sober operators actually controls the ship while the pirates party.',
         },
         {
+          type: 'image',
+          src: '/tampa/articles/gasparilla-ship-invasion.jpg',
+          alt: 'The Jose Gasparilla II pirate ship sailing into Tampa Bay during the festival, surrounded by spectator boats',
+          caption: 'The Jose Gasparilla II "invades" Tampa Bay during the annual festival. The 137-foot ship cannot actually sail - it must be towed by tugboats while over 750 costumed pirates party aboard.',
+          credit: 'Christopher Hollis, 2003 (public domain)',
+        },
+        {
           type: 'ad',
           size: 'rectangle',
         },
@@ -154,6 +175,13 @@ export const gasparillaArticle: Article = {
         {
           type: 'paragraph',
           content: 'This created an obvious problem in a city with significant Latin and Black populations. Despite Tampa being home to one of the largest Hispanic communities in the American South in the early twentieth century - Ybor City\'s cigar workers were Cuban, Italian, and Spanish - the krewe remained exclusively white. Black residents and Latino businessmen were excluded from the network of power that the festival represented.',
+        },
+        {
+          type: 'image',
+          src: '/tampa/articles/tampa-bay-hotel-1920.jpg',
+          alt: 'The Tampa Bay Hotel circa 1920, showing the grand Moorish-style building that hosted the exclusive Gasparilla coronation balls',
+          caption: 'The Tampa Bay Hotel, now the University of Tampa, hosted the exclusive coronation balls where Tampa\'s white elite celebrated their invented pirate tradition.',
+          credit: 'Florida Memory, c. 1920 (public domain)',
         },
         {
           type: 'heading',
