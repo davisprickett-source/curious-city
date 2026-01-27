@@ -8,6 +8,11 @@ export const dallas_history: Record<string, History> = {
       subtitle: 'No river, no harbor, no geographic excuse—just 180 years of deciding to matter anyway',
       author: 'Alex Rivera',
       publishedAt: '2024-12-21',
+      heroImage: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+        alt: 'Dallas skyline rising from the prairie',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
@@ -24,6 +29,13 @@ export const dallas_history: Record<string, History> = {
           id: 'p3',
           type: 'paragraph',
           content: 'The economy was cotton first, the commodity that built the South and sustained it through reconstruction. Dallas became the financial center for cotton trading, banks and brokers handling the transactions between farmers and distant markets, the white bolls transformed into abstract value in ledgers and bank accounts. The cotton market brought wealth concentrated in remarkably few hands, men who built mansions in what became Highland Park, creating a town-within-a-city where zoning laws and deed restrictions would preserve their vision of who belonged and who didn\'t.',
+        },
+        {
+          id: 'img1',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Dallas_Fair_Park_Esplanade.jpg',
+          alt: 'Fair Park Esplanade in Dallas',
+          caption: 'Fair Park, built for the 1936 Texas Centennial Exposition, represents Dallas\'s perpetual ambition to be taken seriously as a major American city.',
         },
         {
           id: 'break1',
@@ -49,6 +61,13 @@ export const dallas_history: Record<string, History> = {
           id: 'p5',
           type: 'paragraph',
           content: 'Kennedy was killed here in 1963, shot in Dealey Plaza while riding in the presidential motorcade, Governor Connally beside him also hit, the whole thing captured on film by Abraham Zapruder standing on a concrete pedestal with his 8mm camera. The assassination marked Dallas in ways the city still hasn\'t fully processed—the association with violence, with right-wing extremism, with being the place where a president died. The Sixth Floor Museum now occupies the building where Lee Harvey Oswald fired from, tourists lining up to look out the window at the X painted on Elm Street below, pilgrims to a site of national trauma that Dallas didn\'t choose but can\'t escape.',
+        },
+        {
+          id: 'img2',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Dealey_Plaza_from_Reunion_Tower_August_2015_01.jpg',
+          alt: 'Dealey Plaza from above',
+          caption: 'Dealey Plaza, where President Kennedy was assassinated in 1963. The site remains a pilgrimage destination for tourists and conspiracy theorists alike.',
         },
         {
           id: 'ad1',
@@ -84,6 +103,13 @@ export const dallas_history: Record<string, History> = {
           id: 'p9',
           type: 'paragraph',
           content: 'The arts district downtown is the largest in the country by area, a collection of museums and performance halls—the Dallas Museum of Art, the Nasher Sculpture Center, the Meyerson Symphony Center, the AT&T Performing Arts Center—evidence of civic ambition to be taken seriously culturally, to have the institutions that world-class cities have. The museums are genuinely good, the symphony competent, the whole district a rebuke to anyone who thinks Dallas is only money and football and big hair.',
+        },
+        {
+          id: 'img3',
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
+          alt: 'Knights of Pythias Temple in Deep Ellum',
+          caption: 'The Knights of Pythias Temple in Deep Ellum — a reminder that Dallas has histories beyond oil and football, including a rich African-American cultural heritage.',
         },
         {
           id: 'quote2',

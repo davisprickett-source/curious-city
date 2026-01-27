@@ -9,7 +9,7 @@ export const dallas_premium_history: Record<string, History> = {
     author: 'Alex Rivera',
     publishedAt: '2024-12-21',
     heroImage: {
-      src: '/sequences/dallas/dallas-1/frame_0001.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
       alt: 'Dallas skyline rising from the prairie',
       position: 'center',
     },

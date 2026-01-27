@@ -12,9 +12,9 @@ export const southDallasBombings: Article = {
   },
   publishedAt: '2024-11-16T12:00:00Z',
   featuredImage: {
-    src: '/dallas/articles/south-dallas-bombings/south-dallas-bombings-map.png',
-    alt: 'Map showing locations of bombings targeting Black families in South Dallas, 1950-1951',
-    credit: 'SMU Engage Dallas',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+    alt: 'Dallas skyline — the city that called itself "too busy to hate" while bombs exploded in Black neighborhoods',
+    credit: 'Wikimedia Commons / Gattacal',
   },
   category: 'history',
   tags: ['dallas', 'civil-rights', 'racial-violence', 'bombings', 'forgotten-history', 'south-dallas', 'segregation'],
@@ -59,10 +59,10 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/South_Dallas_1950s_street_scene.jpg/1280px-South_Dallas_1950s_street_scene.jpg',
-          alt: 'South Dallas neighborhood street scene, 1950s',
-          caption: 'A typical street in South Dallas during the 1950s. Black families moving into these transitional neighborhoods became targets of a systematic bombing campaign.',
-          credit: 'Dallas Public Library / Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
+          alt: 'Historic Black neighborhood building in Dallas',
+          caption: 'Black Dallas in the early 20th century had built thriving communities. By the 1950s, Black families seeking to expand into better housing faced violent resistance — including a systematic bombing campaign.',
+          credit: 'Wikimedia Commons / Joe Mabel',
         },
         {
           type: 'ad',
@@ -79,10 +79,10 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Vintage_dynamite_sticks.jpg/800px-Vintage_dynamite_sticks.jpg',
-          alt: 'Vintage dynamite sticks, illustrative photo',
-          caption: 'Bombs made of vintage dynamite sticks were placed on porches and in yards, targeting Black families who moved into white neighborhoods in South Dallas.',
-          credit: 'Wikimedia Commons',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Dealey_Plaza_from_Reunion_Tower_August_2015_01.jpg',
+          alt: 'Aerial view of Dallas',
+          caption: 'Dallas today. Between 1950-1951, at least 18 bombs targeted Black families in South Dallas. The terror campaign was designed to maintain segregation — to keep certain neighborhoods white at any cost.',
+          credit: 'Wikimedia Commons / Michael Barera',
         },
         {
           type: 'paragraph',
@@ -109,10 +109,10 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'image',
-          src: 'https://schutzejim.com/wp-content/uploads/2021/05/jim-schutze-author-photo.jpg',
-          alt: 'Portrait of Jim Schutze, author of The Accommodation',
-          caption: 'Jim Schutze, author of "The Accommodation," which exposed Dallas\'s forgotten bombing campaign and challenged the city\'s "too busy to hate" narrative.',
-          credit: 'Jim Schutze Website',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Dallas_Fair_Park_Esplanade.jpg',
+          alt: 'Fair Park in Dallas',
+          caption: 'Fair Park was built in 1936 for the Texas Centennial Exposition. While Dallas celebrated itself as a modern city, its neighborhoods were still being terrorized by bombing campaigns that authorities refused to prosecute.',
+          credit: 'Wikimedia Commons / Andreas Praefcke',
         },
         {
           type: 'paragraph',
@@ -124,10 +124,10 @@ export const southDallasBombings: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/south-dallas-bombings/1951-pete-garcia-trial.jpg',
-          alt: 'Pete Garcia on trial for bombing a Black family\'s home in South Dallas, December 1951',
-          caption: 'December 6, 1951: Pete Garcia stands trial for bombing the home of a Black family in South Dallas. He was one of the few suspects ever charged, though convictions remained elusive.',
-          credit: 'WBAP-TV / Portal to Texas History, UNT Libraries',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Blindlemonjeffersoncirca1926.jpg',
+          alt: 'Blind Lemon Jefferson, representing Black Dallas culture',
+          caption: 'Black Dallas had a rich cultural heritage — musicians like Blind Lemon Jefferson emerged from these communities. But in the 1950s, Black families seeking better housing faced bombs and terror. Few perpetrators were ever charged.',
+          credit: 'Wikimedia Commons / Public Domain',
         },
         {
           type: 'heading',

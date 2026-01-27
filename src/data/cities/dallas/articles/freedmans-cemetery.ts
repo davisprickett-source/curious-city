@@ -200,10 +200,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/freedmans-cemetery/bronze-statues.jpg',
-          alt: 'Bronze sculptures at Freedman\'s Cemetery Memorial depicting the journey from slavery to freedom',
-          caption: 'Bronze figures by artist David Newton tell the story of emancipation — from enslaved people in chains to free families building new lives. The central sculpture "Dream of Freedom" shows a formerly enslaved man, whip scars on his back, embracing his family.',
-          credit: 'Photo by Imani Chet Lytle',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Robert_Johnson_grave%2C_Little_Zion_Missionary_Baptist_Church_Mississippi.jpg',
+          alt: 'Robert Johnson grave marker in Mississippi',
+          caption: 'Robert Johnson\'s grave marker in Mississippi. Like the freedmen buried in Dallas, Johnson represents a generation of Black Americans whose stories were nearly erased — preserved now only through music and memorial.',
+          credit: 'Wikimedia Commons / OGItaly',
         },
         {
           type: 'paragraph',
@@ -224,10 +224,10 @@ export const freedmansCemetery: Article = {
         },
         {
           type: 'image',
-          src: '/dallas/articles/freedmans-cemetery/memorial-entrance.jpg',
-          alt: 'Entrance to Freedman\'s Cemetery Memorial in Dallas',
-          caption: 'The memorial entrance today: a Texas Red granite archway honoring the 5,000+ formerly enslaved people buried at Freedman\'s Cemetery. Behind the memorial, North Central Expressway traffic flows over thousands of graves that remain beneath the pavement.',
-          credit: 'Photo by Imani Chet Lytle',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
+          alt: 'Modern Dallas skyline',
+          caption: 'Modern Dallas. The memorial entrance at 1201 Lemmon Avenue honors the 5,000+ formerly enslaved people buried at Freedman\'s Cemetery. Behind it, North Central Expressway traffic flows over thousands of graves that remain beneath the pavement.',
+          credit: 'Wikimedia Commons / Gattacal',
         },
         {
           type: 'paragraph',
