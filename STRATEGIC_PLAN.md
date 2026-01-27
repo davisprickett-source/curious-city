@@ -543,7 +543,8 @@ Here's some things to edit/change:
 
 
 
--about page - changed founded in 2020 to 2025, 
+-about page - changed founded in 2020 to 2025, add Local Neighbor after chicago proud in its hero, finish the first sentence in our story with, ...like family and deliver an all around great experience. in the "locally operated card" first sentence shoul end with "...all of chicagoland and Northwest Indiana", (change date in the question on "how long have you been in business" as well, 
+
 
 loc operated services chicagoland area and nw indy
 

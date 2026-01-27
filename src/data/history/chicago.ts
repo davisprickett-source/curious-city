@@ -8,6 +8,11 @@ export const chicago_history: Record<string, History> = {
       subtitle: 'Reversed rivers, inverted skyscrapers, and the stubborn insistence that this swamp is exactly where a great city belongs',
       author: 'James Wilson',
       publishedAt: '2024-12-20',
+      heroImage: {
+        src: '/banners/hero-city-images/chicago-skyline.png',
+        alt: 'Chicago skyline rising from Lake Michigan',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',

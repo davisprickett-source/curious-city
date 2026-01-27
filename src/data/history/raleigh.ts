@@ -8,6 +8,11 @@ export const raleigh_history: Record<string, History> = {
       subtitle: 'Red clay, research parks, and a city named for a man who never visited',
       author: 'Jordan Blake',
       publishedAt: '2024-12-18',
+      heroImage: {
+        src: '/banners/hero-city-images/raleigh-skyline.png',
+        alt: 'Raleigh skyline in North Carolina',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',

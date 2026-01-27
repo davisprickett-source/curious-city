@@ -8,6 +8,11 @@ export const minneapolis_history: Record<string, History> = {
       subtitle: 'Flour mills, frozen rivers, and the particular satisfaction of surviving January',
       author: 'Sophie Anderson',
       publishedAt: '2024-12-15',
+      heroImage: {
+        src: '/banners/hero-city-images/minneapolis-skyline.png',
+        alt: 'Minneapolis skyline with Mississippi River',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',

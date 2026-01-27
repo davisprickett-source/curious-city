@@ -8,6 +8,11 @@ export const salt_lake_city_history: Record<string, History> = {
       subtitle: 'Temple spires, tech startups, and the question of whose place this is now',
       author: 'Brian Walsh',
       publishedAt: '2024-12-21',
+      heroImage: {
+        src: '/banners/hero-city-images/slc-skyline.png',
+        alt: 'Salt Lake City skyline with Wasatch Mountains',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',

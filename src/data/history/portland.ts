@@ -8,6 +8,11 @@ export const portland_history: Record<string, History> = {
       subtitle: 'How a coin toss, 200 feet of rain, and a generation of California refugees built America\'s most self-conscious city',
       author: 'Patrick Hayes',
       publishedAt: '2024-12-22',
+      heroImage: {
+        src: '/banners/hero-city-images/portland-skyline.png',
+        alt: 'Portland skyline with Mount Hood',
+        position: 'center',
+      },
       blocks: [
         {
           id: 'p1',
