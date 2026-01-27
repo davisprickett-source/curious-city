@@ -10,10 +10,10 @@ export const lakeAgassiz: Article = {
   subtitle: 'Fargo sits on the silted floor of glacial Lake Agassiz — a prehistoric sea larger than all five Great Lakes combined. When it drained, it may have triggered a global cooling event. The flatness isn\'t boring. It\'s apocalyptic.',
   excerpt: 'That perfectly flat horizon in Fargo? It\'s the silted floor of glacial Lake Agassiz, which covered 110,000 square miles 10,000 years ago — larger than all five Great Lakes combined. When the ice dam broke, it drained catastrophically. The flatness isn\'t boring. It\'s the aftermath of an ancient apocalypse.',
   author: {
-    name: 'The Curious City',
+    name: 'Hannah Price',
     bio: 'Exploring deep history',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-20T12:00:00Z',
   featuredImage: {
     src: '/fargo/articles/lake-agassiz.png',
     alt: 'Aerial view of the flat Red River Valley, former bed of Lake Agassiz',

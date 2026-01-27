@@ -11,10 +11,10 @@ export const integratedCircuit: Article = {
   subtitle: 'In 1958, a Texas Instruments engineer created the integrated circuit — the foundation of every computer, smartphone, and digital device on Earth. Dallas changed everything.',
   excerpt: 'Every smartphone, every computer, every digital device traces back to a lab in Dallas. In 1958, Jack Kilby invented the integrated circuit at Texas Instruments. He won the Nobel Prize for it. You\'re using his invention right now.',
   author: {
-    name: 'The Curious City',
+    name: 'Alex Rivera',
     bio: 'Tracing technological origins',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-18T12:00:00Z',
   featuredImage: {
     src: '/dallas/articles/integrated-circuit.png',
     alt: 'Jack Kilby\'s original integrated circuit prototype',

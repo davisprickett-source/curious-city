@@ -7,10 +7,10 @@ export const freedmansCemetery: Article = {
   subtitle: 'In the summer of 1990, construction crews widening North Central Expressway dug into Freedman\'s Cemetery — a burial ground for formerly enslaved people. They found over 1,200 bodies. The city had paved roads over the graves for decades. Nobody had bothered to remember who was buried there.',
   excerpt: 'For a century, Dallas built over its dead. Freedman\'s Cemetery was established in 1869 for formerly enslaved people — the only place in the city where Black residents could bury their dead. By 1900, over 5,000 people lay there. Then the city forgot. Roads were built. The cemetery disappeared from maps. In 1990, construction crews discovered they\'d been driving over graves for generations. What they found forced Dallas to confront a history it had literally buried.',
   author: {
-    name: 'The Curious City',
+    name: 'Emma Davis',
     bio: 'Stories of buried history',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-12T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Freedmans_Cemetery_Memorial_Dallas.jpg/1280px-Freedmans_Cemetery_Memorial_Dallas.jpg',
     alt: 'Freedman\'s Cemetery Memorial in Dallas, with bronze figures and commemorative wall',

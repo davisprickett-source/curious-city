@@ -6,7 +6,7 @@ export const denver_history: Record<string, History> = {
       citySlug: 'denver',
       title: 'Mile High Hustle',
       subtitle: 'Gold, silver, oil, weed, and the peculiar alchemy of turning mountain proximity into money',
-      author: 'Curious City',
+      author: 'Carlos Reyes',
       publishedAt: '2024-12-22',
       blocks: [
         {

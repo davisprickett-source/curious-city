@@ -11,10 +11,10 @@ export const eastlandDisaster: Article = {
   subtitle: 'In 1915, a ship rolled over while still tied to the dock. 844 people died twenty feet from shore. Almost nobody remembers.',
   excerpt: 'On July 24, 1915, the SS Eastland capsized in the Chicago River while passengers were still boarding for a company picnic. 844 people died — more than the Titanic\'s American death toll. The ship never left the wharf. It remains the deadliest single-vessel disaster in Great Lakes history, and somehow, it\'s been almost completely forgotten.',
   author: {
-    name: 'The Curious City',
+    name: 'James Wilson',
     bio: 'Uncovering forgotten history',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-22T12:00:00Z',
   featuredImage: {
     src: '/chicago/articles/eastland-disaster.png',
     alt: 'The SS Eastland capsized in the Chicago River, 1915',

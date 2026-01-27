@@ -6,7 +6,7 @@ export const phoenix_premium_history: Record<string, History> = {
     citySlug: 'phoenix',
     title: 'The Air-Conditioned Dream',
     subtitle: 'Five million people, eight inches of rain, and the absolute conviction that engineering beats ecology',
-    author: 'Curious City',
+    author: 'Kevin Martinez',
     publishedAt: '2024-12-22',
     heroImage: {
       src: '/sequences/phoenix/phoenix-1/frame_0001.jpg',

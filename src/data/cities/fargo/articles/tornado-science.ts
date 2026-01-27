@@ -7,10 +7,10 @@ export const tornadoScience: Article = {
   subtitle: 'On June 20, 1957, an F5 tornado devastated Fargo. A young Japanese scientist named Ted Fujita came to study the aftermath. What he learned from the wreckage led him to create the Fujita Scale — the system we still use to measure tornadoes today.',
   excerpt: 'The 1957 Fargo tornado killed 13 people and destroyed over 1,300 homes. But its greatest impact was scientific. A young meteorologist named Ted Fujita spent weeks studying the devastation, analyzing 200 photographs frame by frame. His groundbreaking research introduced terms like "wall cloud" and "tail cloud" to meteorology. It eventually led to the Fujita Scale — the F1-to-F5 system we still use today. Modern tornado science was born in Fargo\'s rubble.',
   author: {
-    name: 'The Curious City',
+    name: 'Lauren Chang',
     bio: 'Stories of scientific discovery',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-12-01T12:00:00Z',
   featuredImage: {
     src: '/fargo/articles/tornado-science.png',
     alt: 'The 1957 Fargo tornado approaching the city',

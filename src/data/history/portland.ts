@@ -6,7 +6,7 @@ export const portland_history: Record<string, History> = {
       citySlug: 'portland',
       title: 'The Dream of the Nineties',
       subtitle: 'How a coin toss, 200 feet of rain, and a generation of California refugees built America\'s most self-conscious city',
-      author: 'Curious City',
+      author: 'Patrick Hayes',
       publishedAt: '2024-12-22',
       blocks: [
         {

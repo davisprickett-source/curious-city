@@ -6,7 +6,7 @@ export const fargo_history: Record<string, History> = {
       citySlug: 'fargo',
       title: 'On the Bed of a Vanished Lake',
       subtitle: 'Forty below, biblical floods, and the stubborn midwestern insistence that this is a good place to live',
-      author: 'Curious City',
+      author: 'Hannah Price',
       publishedAt: '2024-12-22',
       blocks: [
         {

@@ -10,10 +10,10 @@ export const blucifer: Article = {
   subtitle: 'A 32-foot blue stallion with glowing red eyes guards Denver\'s airport. It killed the artist who made it. Locals call it Blucifer. The airport is fine with this.',
   excerpt: 'Denver International Airport is greeted by a 32-foot blue mustang with veins bulging and eyes glowing hellfire red. The sculpture killed its creator when a piece fell on him, severing an artery. Locals call it Blucifer. The airport sells merchandise about it. Welcome to Denver.',
   author: {
-    name: 'The Curious City',
+    name: 'Carlos Reyes',
     bio: 'Investigating civic oddities',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-25T12:00:00Z',
   featuredImage: {
     src: '/denver/articles/blucifer.png',
     alt: 'Blue Mustang sculpture at Denver International Airport with glowing red eyes',

@@ -10,10 +10,10 @@ export const vanportFlood: Article = {
   subtitle: 'In 1948, Oregon\'s second-largest city was destroyed by a flood. Officials had promised residents they were safe. The city was never rebuilt. The demographics of Portland changed forever.',
   excerpt: 'Vanport was Oregon\'s second-largest city by 1948, home to 18,500 people — including most of Portland\'s Black population. On May 30, 1948, officials assured residents the dikes would hold. At 4:17 PM, they didn\'t. The city was underwater in 35 minutes. It was never rebuilt. The flood permanently reshaped Portland.',
   author: {
-    name: 'The Curious City',
+    name: 'Patrick Hayes',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-05T12:00:00Z',
   featuredImage: {
     src: '/portland/articles/vanport-flood.png',
     alt: 'Aerial view of Vanport flooding, 1948',

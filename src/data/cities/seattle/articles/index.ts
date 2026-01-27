@@ -11,10 +11,10 @@ export const dbCooper: Article = {
   subtitle: 'In 1971, a man hijacked a plane, collected $200,000, and parachuted into the night. He was never found. The Pacific Northwest has been obsessed ever since.',
   excerpt: 'On November 24, 1971, a man calling himself Dan Cooper hijacked Northwest Orient Flight 305, collected $200,000 in ransom, and parachuted into the Washington wilderness. He was never found. The FBI officially closed the case in 2016. The Pacific Northwest never stopped looking.',
   author: {
-    name: 'The Curious City',
+    name: 'Ryan Cooper',
     bio: 'Investigating the unexplained',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-01T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/DB_Cooper_%28FBI_composite_sketch%29.png',
     alt: 'FBI composite sketch of D.B. Cooper',

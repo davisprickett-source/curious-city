@@ -7,10 +7,10 @@ export const winnieRuthJudd: Article = {
   subtitle: 'In 1931, Winnie Ruth Judd killed two friends, dismembered one body, and took a train to LA with them packed in luggage. Then she escaped the asylum seven times. She died at 93.',
   excerpt: 'On October 16, 1931, a medical secretary named Winnie Ruth Judd killed her two friends in Phoenix, dismembered one of them, packed the bodies in trunks, and boarded a train to Los Angeles. She was caught when the baggage handler noticed the smell. The trial made national headlines. She was sentenced to hang, declared insane, and spent decades in an asylum — from which she escaped seven times, once living undetected for six years. This is Phoenix\'s most infamous true crime story.',
   author: {
-    name: 'The Curious City',
+    name: 'Amanda Cole',
     bio: 'Investigating the past',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-10-30T12:00:00Z',
   featuredImage: {
     src: '/phoenix/articles/judd-portrait.jpg',
     alt: 'Portrait photograph of Winnie Ruth Judd, the Trunk Murderess',

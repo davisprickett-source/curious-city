@@ -7,10 +7,10 @@ export const coalCountry: Article = {
   subtitle: 'Before Boeing, before Amazon, before coffee — Seattle ran on coal. Mines honeycomb the hills east of the city. Thousands of workers, many of them Chinese and Indigenous, died underground. Then the industry vanished, and Seattle forgot it ever happened.',
   excerpt: 'For fifty years, King County was one of the largest coal-producing regions west of the Mississippi. Mines in Newcastle, Renton, and Black Diamond employed thousands. Chinese workers did the most dangerous jobs. Indigenous Duwamish people were displaced to make way for the mines. Then oil replaced coal, the mines closed, and Seattle became the tech-and-coffee city it is today. Most Seattleites have no idea their city was built on coal — or that abandoned mine shafts still run beneath their suburbs.',
   author: {
-    name: 'The Curious City',
+    name: 'Benjamin Lee',
     bio: 'Forgotten industries',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-17T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Child_coal_miners_%281908%29.jpg',
     alt: 'Child coal miners with mules in a mine, 1908',

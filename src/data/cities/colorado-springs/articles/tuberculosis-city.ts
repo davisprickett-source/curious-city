@@ -7,10 +7,10 @@ export const tuberculosisCity: Article = {
   subtitle: 'In the early 1900s, one-third of Colorado Springs\' population had tuberculosis. They came to die in the mountain air. The city built an entire economy around their illness. When antibiotics cured TB, Colorado Springs had to reinvent itself entirely.',
   excerpt: 'Colorado Springs wasn\'t built on gold or railroads. It was built on tuberculosis. By 1900, one-third of the city\'s residents were infected. Sanitariums lined the foothills. "Lungers" filled the boarding houses. The city marketed itself as a place to die slowly and comfortably — and it worked. Then antibiotics cured TB, the sanitariums closed, and Colorado Springs had to find a new reason to exist. The military-evangelical city you know today rose from the ruins of a tuberculosis resort.',
   author: {
-    name: 'The Curious City',
+    name: 'Michael Torres',
     bio: 'Stories of strange economies',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-08T12:00:00Z',
   featuredImage: {
     src: '/colorado-springs/articles/tuberculosis-city.png',
     alt: 'Cragmor Sanitarium in Colorado Springs, circa 1920',

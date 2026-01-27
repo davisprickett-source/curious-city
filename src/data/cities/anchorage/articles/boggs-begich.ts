@@ -7,10 +7,10 @@ export const boggsBegich: Article = {
   subtitle: 'In 1972, House Majority Leader Hale Boggs and Alaska Congressman Nick Begich disappeared on a flight from Anchorage to Juneau. The largest search in Alaska history found nothing. Begich\'s name stayed on the ballot. He won the election. A dead man was elected to Congress, and fifty years later, nobody knows what happened.',
   excerpt: 'On October 16, 1972, a small plane carrying two U.S. congressmen took off from Anchorage and vanished. Hale Boggs was the House Majority Leader, second in line for the presidency. Nick Begich was Alaska\'s only congressman. Despite a 39-day search covering 32,000 square miles, no trace of the plane was ever found. Begich won re-election a month later — posthumously. The disappearance spawned conspiracy theories involving the Mafia, the FBI, and Watergate. The truth remains unknown.',
   author: {
-    name: 'The Curious City',
+    name: 'Marcus Chen',
     bio: 'Stories of the unexplained',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-15T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hale_Boggs_and_Nick_Begich_1972.jpg/800px-Hale_Boggs_and_Nick_Begich_1972.jpg',
     alt: 'Hale Boggs and Nick Begich shaking hands during 1972 campaign',

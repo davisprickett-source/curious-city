@@ -7,7 +7,7 @@ export const tampa_premium_history: Record<string, History> = {
     title: 'Sunshine and Hustle',
     subtitle: 'Strip malls, strip clubs, and 300 million hand-rolled cigars that built a city in Miami\'s shadow',
     author: 'James Thompson',
-    publishedAt: '2025-11-28',
+    publishedAt: '2024-11-28',
     heroImage: {
       src: '/sequences/tampa/tampa-1/frame_0001.webp',
       alt: 'Illustrated aerial view of Tampa Bay and downtown skyline',

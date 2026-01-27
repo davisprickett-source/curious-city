@@ -6,7 +6,7 @@ export const salt_lake_city_premium_history: Record<string, History> = {
     citySlug: 'salt-lake-city',
     title: 'Zion in the Desert',
     subtitle: 'Temple spires, tech startups, and the question of whose place this is now',
-    author: 'Curious City',
+    author: 'Brian Walsh',
     publishedAt: '2024-12-21',
     heroImage: {
       src: '/sequences/salt-lake-city/slc-1/frame_0001.jpg',

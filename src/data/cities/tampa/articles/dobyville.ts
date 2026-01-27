@@ -10,7 +10,7 @@ export const dobyville: Article = {
     name: 'Elena Rodriguez',
     bio: 'Stories of erased communities',
   },
-  publishedAt: '2026-01-05T12:00:00Z',
+  publishedAt: '2024-12-05T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/RAZED_HOUSES%2C_AND_OTHERS_DUE_FOR_DEMOLITION-PART_OF_AN_URBAN_RENEWAL_PROJECT_IN_THE_TRIANGLE_SECTION_OF_CHARLESTON_-_NARA_-_551131.jpg',
     alt: 'Razed houses and others due for demolition as part of an urban renewal project in Charleston, West Virginia, 1973',

@@ -7,10 +7,10 @@ export const poorFarm: Article = {
   subtitle: 'Trollwood Park is where Fargo goes for summer concerts and theater. It\'s also where the county buried its poor, its sick, and its forgotten for half a century. Over 350 graves have been found. More keep appearing. The dead won\'t stay buried.',
   excerpt: 'Trollwood Park hosts Fargo\'s beloved summer arts festival. It used to be the Cass County Poor Farm — a facility for the destitute, the elderly, and the mentally ill. When residents died without money or family, the county buried them on-site in unmarked graves. Over 350 bodies have been found. River erosion keeps revealing more. The park where families picnic is also a mass grave for the people Fargo forgot.',
   author: {
-    name: 'The Curious City',
+    name: 'Daniel Wright',
     bio: 'Stories of the forgotten',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-28T12:00:00Z',
   featuredImage: {
     src: '/fargo/articles/poor-farm.png',
     alt: 'Trollwood Park in Fargo, site of the former Poor Farm cemetery',

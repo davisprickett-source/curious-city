@@ -6,7 +6,7 @@ export const anchorage_premium_history: Record<string, History> = {
     citySlug: 'anchorage',
     title: 'The Last Frontier City',
     subtitle: 'Strip malls, moose calving in backyards, and the strange normalcy of living at 61 degrees north',
-    author: 'Curious City',
+    author: 'Marcus Chen',
     publishedAt: '2024-12-22',
     heroImage: {
       src: '/sequences/anchorage/anchorage-1/frame_0001.jpg',

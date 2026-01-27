@@ -10,7 +10,7 @@ export const hiddenStairways: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural historian tracking urban legends, curiosities, and movements that reshape cities.',
   },
-  publishedAt: '2025-01-22T18:00:00Z',
+  publishedAt: '2024-12-15T18:00:00Z',
   featuredImage: {
     src: '/portland/articles/hidden-stairways.png',
     alt: 'Hidden public stairway in Portland neighborhood',

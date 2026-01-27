@@ -7,10 +7,10 @@ export const southDallasBombings: Article = {
   subtitle: 'Between 1950 and 1951, at least eighteen bombs exploded in South Dallas — all targeting Black families who had moved into white neighborhoods. Not a single person was convicted. The city that called itself "too busy to hate" was busy doing something else.',
   excerpt: 'In the early 1950s, a systematic campaign of racial terror swept through South Dallas. Black families who dared to buy homes in previously white neighborhoods found dynamite on their porches, bombs in their yards, their houses destroyed while they slept. At least eighteen bombs exploded. The police did nothing — or worse. Grand juries were convened and mysteriously disbanded. No one was ever convicted. Dallas erased the whole thing from its official history.',
   author: {
-    name: 'The Curious City',
+    name: 'Olivia Zhang',
     bio: 'Stories of buried history',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-16T12:00:00Z',
   featuredImage: {
     src: '/dallas/articles/south-dallas-bombings/south-dallas-bombings-map.png',
     alt: 'Map showing locations of bombings targeting Black families in South Dallas, 1950-1951',

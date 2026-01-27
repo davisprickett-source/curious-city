@@ -19,10 +19,10 @@ export const duckDuckGreyDuck: Article = {
   subtitle: 'Every other state plays Duck Duck Goose. Minnesotans play Duck Duck Grey Duck. Both sides think the other is insane.',
   excerpt: 'Minnesota is the only place in America that plays "Duck Duck Grey Duck" instead of "Duck Duck Goose." The rest of the country thinks this is wrong. Minnesotans will fight you about it. Here\'s the surprisingly deep history behind the only regional children\'s game variant worth arguing about.',
   author: {
-    name: 'The Curious City',
+    name: 'Sophie Anderson',
     bio: 'Uncovering regional peculiarities',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-12T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Duck_Duck_Goose.jpg',
     alt: 'Children playing Duck Duck Grey Duck in a circle on a grassy field',
@@ -261,10 +261,10 @@ export const newRestaurantsNortheast: Article = {
   subtitle: 'From Hmong fusion to wood-fired pizza, Northeast is having a moment',
   excerpt: 'Northeast Minneapolis has always been the city\'s creative soul, and 2025 is proving it. These five new restaurants are redefining what it means to eat local.',
   author: {
-    name: 'The Curious City',
+    name: 'Rebecca Foster',
     bio: 'Local food and culture writers',
   },
-  publishedAt: '2025-01-15T12:00:00Z',
+  publishedAt: '2024-12-18T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Kramarczuk_Deli_Minneapolis_1.jpg',
     alt: 'Kramarczuk Deli and Sausage Company, iconic Northeast Minneapolis restaurant',

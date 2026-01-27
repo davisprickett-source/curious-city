@@ -7,10 +7,10 @@ export const castlewoodDam: Article = {
   subtitle: 'For 43 years, the Castlewood Dam leaked. Engineers warned it would fail. Nobody fixed it. Then, at 1:20 AM on August 3, 1933, an eleven-foot wall of water roared toward Denver. The ruins still stand in the canyon — a monument to ignored warnings.',
   excerpt: 'The Castlewood Dam was cracked from the day it was built in 1890. Water seeped through the structure. Engineers issued warnings. Nobody did anything. Then, during a thunderstorm in 1933, the dam finally gave way. An eleven-foot wall of water raced down Cherry Creek toward Denver at 18 miles per hour. Two people died. The damage, in the depths of the Depression, was catastrophic. Today, the ruins stand in a state park, a reminder of what happens when warnings are ignored.',
   author: {
-    name: 'The Curious City',
+    name: 'Thomas Grant',
     bio: 'Stories of infrastructure failure',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-22T12:00:00Z',
   featuredImage: {
     src: '/denver/articles/castlewood-dam.png',
     alt: 'The ruins of Castlewood Dam after the 1933 collapse',

@@ -6,7 +6,7 @@ export const anchorage_history: Record<string, History> = {
       citySlug: 'anchorage',
       title: 'The Last Frontier City',
       subtitle: 'Strip malls, moose calving in backyards, and the strange normalcy of living at 61 degrees north',
-      author: 'Curious City',
+      author: 'Marcus Chen',
       publishedAt: '2024-12-22',
       blocks: [
         {
@@ -107,7 +107,7 @@ export const anchorage_history: Record<string, History> = {
       citySlug: 'anchorage',
       title: 'The Butcher Baker',
       subtitle: 'How a quiet Anchorage baker hunted women in the wilderness—and almost got away with it',
-      author: 'Curious City',
+      author: 'Sarah Mitchell',
       publishedAt: '2024-12-26',
       heroImage: {
         src: '/anchorage/dark-history/hansen-1.png',

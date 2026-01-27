@@ -10,10 +10,10 @@ export const villageUnderground: Article = {
   subtitle: 'Beneath a Fresh Market in Raleigh lies a sealed 20,000-square-foot bomb shelter that once hosted The Ramones, Iggy Pop, and The Police. David Sedaris thought it was what New York looked like. Now it\'s just a parking lot.',
   excerpt: 'From 1971 to 1984, a Cold War bomb shelter beneath Raleigh\'s Village District hosted The Ramones, Iggy Pop, The Police, Sonic Youth, and David Sedaris\'s high school imagination. The entrance was designed to look like a NYC subway station. Now it\'s sealed beneath a grocery store. Your organic kale sits directly above where punk happened.',
   author: {
-    name: 'The Curious City',
+    name: 'Jordan Blake',
     bio: 'Uncovering hidden history',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-10T12:00:00Z',
   featuredImage: {
     src: '/raleigh/underground/underground-1.png',
     alt: 'The Village Underground entrance in Raleigh, 1970s',

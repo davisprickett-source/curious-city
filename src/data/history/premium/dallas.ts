@@ -6,7 +6,7 @@ export const dallas_premium_history: Record<string, History> = {
     citySlug: 'dallas',
     title: 'The Will to Exist',
     subtitle: 'No river, no harbor, no geographic excuse—just 180 years of deciding to matter anyway',
-    author: 'Curious City',
+    author: 'Alex Rivera',
     publishedAt: '2024-12-21',
     heroImage: {
       src: '/sequences/dallas/dallas-1/frame_0001.jpg',

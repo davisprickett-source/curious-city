@@ -7,10 +7,10 @@ export const marieEqui: Article = {
   subtitle: 'She horsewhipped a school superintendent, performed illegal abortions for the poor, stabbed a cop with a hatpin, and went to prison for opposing World War I. Portland has mostly forgotten her.',
   excerpt: 'In the early 1900s, Dr. Marie Equi was one of Portland\'s most prominent physicians — and one of its most dangerous radicals. She provided abortions and birth control when both were illegal, lived openly with her female partner, adopted a child in one of America\'s first same-sex families, and was imprisoned for sedition. She was called "the most dangerous woman in Oregon." This is her story.',
   author: {
-    name: 'The Curious City',
+    name: 'Christina Moore',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-11-02T12:00:00Z',
   featuredImage: {
     src: '/portland/articles/marie-equi.png',
     alt: 'Dr. Marie Equi, circa 1915',

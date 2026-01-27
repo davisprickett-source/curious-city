@@ -9,10 +9,10 @@ export const teslaLab: Article = {
   subtitle: 'In 1899, Nikola Tesla built an 80-foot lightning machine in Colorado Springs. His experiments fried the city\'s power grid. He claimed to receive signals from Mars. The site is now a parking lot.',
   excerpt: 'In 1899, Nikola Tesla chose Colorado Springs for the ultimate mad scientist experiment: generating artificial lightning. His 80-foot tower produced 135-foot electrical discharges — so powerful they fried the local power company\'s generator and plunged the city into darkness. The site of his laboratory is now a parking lot with a small plaque.',
   author: {
-    name: 'The Curious City',
+    name: 'Rachel Kim',
     bio: 'Investigating scientific history',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-15T12:00:00Z',
   featuredImage: {
     src: '/colorado-springs/articles/tesla-lab.png',
     alt: 'Nikola Tesla in his Colorado Springs laboratory',

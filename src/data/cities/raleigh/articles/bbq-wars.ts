@@ -10,7 +10,7 @@ export const bbqWars: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural historian tracking urban legends, curiosities, and movements that reshape cities.',
   },
-  publishedAt: '2025-01-22T20:00:00Z',
+  publishedAt: '2024-12-20T20:00:00Z',
   featuredImage: {
     src: '/raleigh/articles/bbq-wars.png',
     alt: 'North Carolina BBQ, whole hog vs. shoulder',

@@ -7,10 +7,10 @@ export const plumAlley: Article = {
   subtitle: 'For nearly a century, Salt Lake City had a thriving Chinese community called Plum Alley. Then the city demolished it and paved it over. Now there\'s nothing left but asphalt and the occasional ghost story.',
   excerpt: 'From the 1870s until 1952, Salt Lake City\'s Plum Alley was a vibrant Chinese neighborhood — restaurants, laundries, groceries, gambling halls, and temples crammed into a narrow block downtown. The men who built the railroads lived there. Families raised children there. Then urban renewal came, and Plum Alley was erased. Today, a parking structure sits where a community once thrived. Most Salt Lakers don\'t know it ever existed.',
   author: {
-    name: 'The Curious City',
+    name: 'Megan Liu',
     bio: 'Stories of erased communities',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-10T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg/1280px-Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg',
     alt: 'Plum Alley in Salt Lake City, circa 1900-1910, showing narrow street and Chinese businesses',

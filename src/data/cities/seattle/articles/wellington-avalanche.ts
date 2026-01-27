@@ -7,10 +7,10 @@ export const wellingtonAvalanche: Article = {
   subtitle: 'In 1910, two trains waited out a blizzard in a remote Cascade Mountain pass. Then lightning struck, and a ten-foot wall of snow swept 96 people to their deaths. It remains the deadliest avalanche in American history.',
   excerpt: 'For six days, two trains sat trapped by snow at Wellington Station in the Cascade Mountains. The passengers waited. The railroad tried to dig them out. Then, at 1:42 AM on March 1, 1910, lightning ignited a massive avalanche that swept both trains off the mountain. Ninety-six people died. The Great Northern Railway was so ashamed they renamed the station and let it disappear from memory. Most Washingtonians have never heard of it.',
   author: {
-    name: 'The Curious City',
+    name: 'Katherine Adams',
     bio: 'Forgotten disasters',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-19T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Train_wreckage_from_Wellington_WA_avalanche_cph.3b13980.jpg',
     alt: 'Train wreckage caused by the Wellington avalanche, March 1910',

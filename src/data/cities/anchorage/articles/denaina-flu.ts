@@ -7,10 +7,10 @@ export const denainaFlu: Article = {
   subtitle: 'Anchorage was born in 1915 as a railroad town. Three years later, the Spanish flu arrived and killed half the Dena\'ina population. Eight villages were abandoned. The Indigenous people who had lived there for centuries were erased just as the city was being built. This is the story Anchorage doesn\'t tell about itself.',
   excerpt: 'In 1918, the Spanish flu reached Alaska and devastated the Dena\'ina Athabascan people who had inhabited the Anchorage region for centuries. Approximately 50% of the Dena\'ina population in the Cook Inlet region died. Eight villages were completely abandoned. The founding of Anchorage and the near-extinction of its original inhabitants happened simultaneously — and the city has never reckoned with this coincidence.',
   author: {
-    name: 'The Curious City',
+    name: 'Elena Rodriguez',
     bio: 'Stories of buried origins',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-20T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/early-anchorage-3.png',
     alt: 'Early Anchorage',

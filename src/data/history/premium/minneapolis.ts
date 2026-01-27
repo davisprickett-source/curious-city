@@ -6,7 +6,7 @@ export const minneapolis_premium_history: Record<string, History> = {
     citySlug: 'minneapolis',
     title: 'Meeting of Waters',
     subtitle: 'Flour mills, frozen rivers, and the particular satisfaction of surviving January',
-    author: 'Curious City',
+    author: 'Sophie Anderson',
     publishedAt: '2024-12-15',
     heroImage: {
       src: '/sequences/minneapolis/minn-1/frame-0001.jpg',

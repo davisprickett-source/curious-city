@@ -7,10 +7,10 @@ export const axeMurders: Article = {
   subtitle: 'On September 17, 1911, six people were murdered with an axe in Colorado Springs — two families, three children, all killed in their sleep. The murderer was never caught. A century later, historians believe he was a serial killer who struck across the Midwest, riding the rails and leaving bodies behind.',
   excerpt: 'They called it the worst crime in Colorado Springs history. On a September night in 1911, someone entered two homes and killed six people with the blunt end of an axe — a man, his wife, their toddler, and a woman with her two children. Every victim\'s face was covered with a sheet. Every mirror in the houses was draped. The killer vanished and was never found. A century later, researchers believe the murders were the work of a serial killer who rode the railroads across America, leaving a trail of axe murders from Colorado to Iowa.',
   author: {
-    name: 'The Curious City',
+    name: 'Maya Santos',
     bio: 'True crime history',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-05T12:00:00Z',
   featuredImage: {
     src: '/colorado-springs/articles/axe-murders.png',
     alt: 'Newspaper headline about the 1911 Colorado Springs axe murders',

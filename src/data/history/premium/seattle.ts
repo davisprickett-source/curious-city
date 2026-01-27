@@ -6,8 +6,8 @@ export const seattle_premium_history: Record<string, History> = {
     citySlug: 'seattle',
     title: 'Rain City Rising',
     subtitle: 'Lumber, fish, airplanes, and the particular genius of turning gray skies into gold',
-    author: 'Curious City',
-    publishedAt: '2025-01-18',
+    author: 'Ryan Cooper',
+    publishedAt: '2024-12-12',
     heroImage: {
       src: '/sequences/seattle/seattle-1/frame_0001.webp',
       alt: 'Seattle skyline with Space Needle and Mount Rainier',

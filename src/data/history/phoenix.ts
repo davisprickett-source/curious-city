@@ -6,7 +6,7 @@ export const phoenix_history: Record<string, History> = {
       citySlug: 'phoenix',
       title: 'The Air-Conditioned Dream',
       subtitle: 'Five million people, eight inches of rain, and the absolute conviction that engineering beats ecology',
-      author: 'Curious City',
+      author: 'Kevin Martinez',
       publishedAt: '2024-12-22',
       heroImage: {
         src: 'https://www.visitphoenix.com/imager/phoenix-desert-sprawl-aerial-sunset_8ad17d8b88f9a7f96aa41f5f80f5c0e1.jpg',

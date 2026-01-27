@@ -7,10 +7,10 @@ export const millEndsPark: Article = {
   subtitle: 'A journalist planted flowers in a pothole to annoy his leprechaun. Now it\'s an official city park, 452 square inches, with its own swimming pool for butterflies.',
   excerpt: 'In 1948, Portland newspaper columnist Dick Fagan looked out his office window and saw a leprechaun digging in an abandoned hole in a traffic median. He caught the leprechaun, wished for a park, and got exactly what he asked for: a circle two feet across, officially the world\'s smallest park. For decades it had a tiny swimming pool, hosted snail races, and was home to "the only leprechaun colony west of Ireland." Portland has never stopped being weird.',
   author: {
-    name: 'The Curious City',
+    name: 'Tyler Scott',
     bio: 'Celebrating the strange',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-11-04T12:00:00Z',
   featuredImage: {
     src: '/portland/articles/mill-ends-park.png',
     alt: 'Mill Ends Park, a tiny circular park in a traffic median',

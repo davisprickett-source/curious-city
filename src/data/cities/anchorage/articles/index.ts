@@ -10,10 +10,10 @@ export const goodFridayEarthquake: Article = {
   subtitle: 'For four and a half minutes, Anchorage shook at 9.2 magnitude — the most powerful earthquake in North American history. The ground didn\'t just crack. It liquefied.',
   excerpt: 'On March 27, 1964, the most powerful earthquake ever recorded in North America struck Alaska. At 9.2 magnitude, it shook for four and a half minutes. Entire neighborhoods liquefied and slid into the sea. The landscape was permanently altered. You can still walk through the scars.',
   author: {
-    name: 'The Curious City',
+    name: 'David Park',
     bio: 'Documenting natural forces',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-28T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/good-friday-earthquake.png',
     alt: 'Devastation from the 1964 Alaska earthquake in Anchorage',

@@ -6,8 +6,8 @@ export const raleigh_premium_history: Record<string, History> = {
     citySlug: 'raleigh',
     title: 'Invented Before It Existed',
     subtitle: 'A planned capital, a headless namesake, and the quiet ambition of the City of Oaks',
-    author: 'Curious City',
-    publishedAt: '2025-01-07',
+    author: 'Jordan Blake',
+    publishedAt: '2024-10-30',
     heroImage: {
       src: '/sequences/raleigh/raleigh-1/frame_0001.jpg',
       alt: 'Historic Raleigh city map',

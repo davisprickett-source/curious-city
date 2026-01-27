@@ -10,7 +10,7 @@ export const murderapolis: Article = {
     name: 'David Winters',
     bio: 'Investigative journalist specializing in true crime, cold cases, and the intersection of violence and urban policy.',
   },
-  publishedAt: '2025-01-22T16:00:00Z',
+  publishedAt: '2024-12-10T16:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Downtown_Minneapolis_at_night.JPG',
     alt: 'Downtown Minneapolis at night during a winter snow storm, viewed from the Stone Arch Bridge',

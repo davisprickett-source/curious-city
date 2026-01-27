@@ -6,7 +6,7 @@ export const raleigh_history: Record<string, History> = {
       citySlug: 'raleigh',
       title: 'Invented Before It Existed',
       subtitle: 'Red clay, research parks, and a city named for a man who never visited',
-      author: 'Curious City',
+      author: 'Jordan Blake',
       publishedAt: '2024-12-18',
       blocks: [
         {

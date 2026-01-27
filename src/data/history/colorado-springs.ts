@@ -6,7 +6,7 @@ export const colorado_springs_history: Record<string, History> = {
       citySlug: 'colorado-springs',
       title: 'Pikes Peak or Bust',
       subtitle: 'Megachurches, missile silos, and the evangelical Vatican hiding under 14,000 feet of granite',
-      author: 'Curious City',
+      author: 'Rachel Kim',
       publishedAt: '2024-12-21',
       heroImage: {
         src: 'https://gardenofgods.com/wp-content/uploads/2023/01/Garden-of-the-Gods-Pikes-Peak-Sunrise.jpg',

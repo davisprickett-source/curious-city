@@ -9,10 +9,10 @@ export const phoenixLights: Article = {
   subtitle: 'On March 13, 1997, something massive and silent crossed the Arizona sky. Thousands witnessed it. The Air Force said it was flares. Witnesses say that doesn\'t explain what they saw.',
   excerpt: 'On March 13, 1997, thousands of Arizona residents witnessed a massive V-shaped formation of lights moving silently across the sky. Pilots, police officers, and the Governor all reported seeing it. The Air Force blamed flares. Twenty-five years later, the Phoenix Lights remain one of the most witnessed and documented UFO events in history.',
   author: {
-    name: 'The Curious City',
+    name: 'Kevin Martinez',
     bio: 'Investigating the unexplained',
   },
-  publishedAt: '2025-01-09T12:00:00Z',
+  publishedAt: '2024-10-08T12:00:00Z',
   featuredImage: {
     src: '/phoenix/articles/phoenix-lights.png',
     alt: 'Recreation of the Phoenix Lights V-formation',

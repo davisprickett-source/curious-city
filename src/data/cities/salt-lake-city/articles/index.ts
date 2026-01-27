@@ -9,10 +9,10 @@ export const japanBalloonBombs: Article = {
   subtitle: 'In 1945, a Utah sheriff grabbed a Japanese weapon of war with his bare hands. The government swore him to silence for decades.',
   excerpt: 'During World War II, Japan launched 9,300 balloon bombs across the Pacific. At least one landed in Utah\'s Box Elder County, where a sheriff grabbed it by hand and held on for 45 minutes. The story was classified for decades.',
   author: {
-    name: 'The Curious City',
+    name: 'Brian Walsh',
     bio: 'Uncovering forgotten history',
   },
-  publishedAt: '2025-01-08T12:00:00Z',
+  publishedAt: '2024-10-02T12:00:00Z',
   featuredImage: {
     src: '/salt-lake-city/articles/balloon-bomb.png',
     alt: 'Japanese Fu-Go balloon bomb during WWII',

@@ -7,10 +7,10 @@ export const lakeCliffPark: Article = {
   subtitle: 'Lake Cliff Park was once the largest amusement park in the Southwest — 65 acres of roller coasters, natatoriums, and vaudeville theaters. By 1913, it was gone. Today, almost nobody in Dallas knows it existed. The lake is still there. The memories are not.',
   excerpt: 'In the early 1900s, Lake Cliff Park was the entertainment capital of Dallas. Roller coasters looped over a spring-fed lake. A massive natatorium drew thousands of swimmers. Vaudeville shows packed the pavilion. Then came the 1908 flood that wiped out the bridges and trolley lines. Without easy access from Dallas, the park couldn\'t survive. It closed in 1913, and Dallas erased it from memory. Today, a quiet city park sits where the roller coasters once ran. Almost nothing marks what was lost.',
   author: {
-    name: 'The Curious City',
+    name: 'Nathan Brooks',
     bio: 'Stories of vanished places',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-14T12:00:00Z',
   featuredImage: {
     src: '/dallas/articles/lake-cliff-park/shoot-the-chutes-1908.jpg',
     alt: 'The Shoot-the-Chutes water ride at Lake Cliff Park, Dallas, 1908',

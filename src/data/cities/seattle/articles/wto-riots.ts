@@ -10,7 +10,7 @@ export const wtoRiots: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural historian tracking urban legends, curiosities, and movements that reshape cities.',
   },
-  publishedAt: '2025-01-22T14:00:00Z',
+  publishedAt: '2024-12-03T14:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/6/63/WTO_protests_in_Seattle_November_30_1999.jpg',
     alt: 'WTO protesters being pepper sprayed in Seattle, November 30, 1999',

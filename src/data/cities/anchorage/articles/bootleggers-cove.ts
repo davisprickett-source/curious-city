@@ -7,10 +7,10 @@ export const bootleggersCove: Article = {
   subtitle: 'Alaska went dry two years before the rest of America. Anchorage responded by becoming a paradise for bootleggers. With only 1,900 residents, the town supported 40 speakeasies. Smugglers landed contraband at a hidden inlet. The city paid children bounties to rat out moonshiners. This is the story of Bootlegger\'s Cove.',
   excerpt: 'In 1917, Alaska banned alcohol sales — two years before national Prohibition. Anchorage, a rough railroad town of 1,900 people, responded predictably: it became one of the wettest dry towns in America. Bootleggers landed contraband at a hidden cove on Cook Inlet. Forty speakeasies operated openly. The legendary "Phantom Swede" ran liquor with impunity. Children earned $5 bounties for reporting illegal stills. Anchorage was born drunk, and Prohibition only made it thirstier.',
   author: {
-    name: 'The Curious City',
+    name: 'Sarah Mitchell',
     bio: 'Stories of frontier vice',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-18T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/bootleggers-cove.png',
     alt: 'Bootlegger\'s Cove area, Anchorage, 1920s',

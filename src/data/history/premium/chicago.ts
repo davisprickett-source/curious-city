@@ -6,7 +6,7 @@ export const chicago_premium_history: Record<string, History> = {
     citySlug: 'chicago',
     title: 'The Swamp That Worked',
     subtitle: 'Reversed rivers, inverted skyscrapers, and the stubborn insistence that this swamp is exactly where a great city belongs',
-    author: 'Curious City',
+    author: 'James Wilson',
     publishedAt: '2024-12-20',
     heroImage: {
       src: '/sequences/chicago/chicago-1/frame_0001.webp',

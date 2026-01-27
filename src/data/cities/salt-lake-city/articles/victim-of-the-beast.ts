@@ -7,10 +7,10 @@ export const victimOfTheBeast: Article = {
   subtitle: 'A cryptic gravestone in Salt Lake City Cemetery has puzzled visitors for decades. The inscription reads "Victim of the Beast 666." The truth behind it is stranger than the legend — and far more mundane.',
   excerpt: 'In Salt Lake City Cemetery, a modest red granite headstone has drawn curiosity-seekers for decades. It marks the grave of Lilly E. Gray, who died in 1958 at age 77. Below her name and dates is a single, enigmatic line: "Victim of the Beast 666." Ghost hunters love it. Conspiracy theorists have spun elaborate tales. The real story involves a paranoid husband, a grudge against the government, and a reminder that the most compelling mysteries sometimes have the most ordinary explanations.',
   author: {
-    name: 'The Curious City',
+    name: 'Connor James',
     bio: 'Mysteries and their solutions',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-13T12:00:00Z',
   featuredImage: {
     src: '/salt-lake-city/articles/victim-of-the-beast.png',
     alt: 'Lilly E. Gray\'s gravestone reading "Victim of the Beast 666"',

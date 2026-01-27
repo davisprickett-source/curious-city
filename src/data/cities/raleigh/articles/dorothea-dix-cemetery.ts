@@ -7,10 +7,10 @@ export const dorotheaDixCemetery: Article = {
   subtitle: 'For over a century, patients who died at Raleigh\'s mental hospital were buried with only a number. No names. No families. Just a cross and a stamped metal tag. Now volunteers are trying to give them back their identities.',
   excerpt: 'Between 1859 and 1970, over 900 patients died at Dorothea Dix Hospital in Raleigh. Most were buried in the hospital cemetery with no name — just a numbered metal tag, a cross, and silence. The stigma of mental illness meant families abandoned them even in death. For over a century, they were anonymous. Now volunteers are uncovering their names and restoring their markers, one grave at a time.',
   author: {
-    name: 'The Curious City',
+    name: 'Ashley Turner',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2025-01-10T12:00:00Z',
+  publishedAt: '2024-11-01T12:00:00Z',
   featuredImage: {
     src: '/raleigh/dix/dix-1.png',
     alt: 'Numbered grave markers at Dorothea Dix Cemetery, Raleigh',

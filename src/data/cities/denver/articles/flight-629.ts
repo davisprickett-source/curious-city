@@ -7,10 +7,10 @@ export const flight629: Article = {
   subtitle: 'On November 1, 1955, United Airlines Flight 629 exploded over Colorado, killing all 44 aboard. The bomber was a man named Jack Gilbert Graham. The target was his own mother. The motive was a $37,500 insurance policy. It was the first confirmed case of airline sabotage in American history.',
   excerpt: 'Minutes after takeoff from Denver\'s Stapleton Airport, United Airlines Flight 629 exploded in midair, killing all 44 people aboard. The FBI investigation led to a shocking discovery: the bomber was one of the passengers\' own sons, who had planted dynamite in his mother\'s luggage for insurance money. Jack Gilbert Graham became one of the first people executed for federal murder. The case changed aviation security forever.',
   author: {
-    name: 'The Curious City',
+    name: 'Jessica Wells',
     bio: 'True crime history',
   },
-  publishedAt: '2025-01-11T12:00:00Z',
+  publishedAt: '2024-11-25T12:00:00Z',
   featuredImage: {
     src: '/denver/articles/flight-629.png',
     alt: 'Wreckage of United Airlines Flight 629, November 1955',

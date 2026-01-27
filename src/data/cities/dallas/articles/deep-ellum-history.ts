@@ -10,7 +10,7 @@ export const deepEllumHistory: Article = {
     name: 'Marcus Reid',
     bio: 'Music and nightlife historian tracking the evolution of urban entertainment districts and underground scenes.',
   },
-  publishedAt: '2025-01-22T19:00:00Z',
+  publishedAt: '2024-12-05T19:00:00Z',
   featuredImage: {
     src: '/dallas/articles/deep-ellum.png',
     alt: 'Deep Ellum street scene, 1920s',
