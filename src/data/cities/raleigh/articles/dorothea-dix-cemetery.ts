@@ -10,7 +10,7 @@ export const dorotheaDixCemetery: Article = {
     name: 'Ashley Turner',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2024-11-01T12:00:00Z',
+  publishedAt: '2026-01-06T12:00:00Z',
   featuredImage: {
     src: '/raleigh/dix/dix-1.png',
     alt: 'Numbered grave markers at Dorothea Dix Cemetery, Raleigh',

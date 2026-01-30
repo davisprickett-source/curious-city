@@ -12,7 +12,7 @@ export const gasparillaArticle: Article = {
     name: 'Sarah Mitchell',
     bio: 'History and culture',
   },
-  publishedAt: '2024-12-18T12:00:00Z',
+  publishedAt: '2025-12-21T12:00:00Z',
   featuredImage: {
     src: '/tampa/curiosities/gasparilla.png',
     alt: 'The Jose Gasparilla II pirate ship entering Tampa Bay',

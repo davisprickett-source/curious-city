@@ -10,7 +10,7 @@ export const winnieRuthJudd: Article = {
     name: 'Amanda Cole',
     bio: 'Investigating the past',
   },
-  publishedAt: '2024-10-30T12:00:00Z',
+  publishedAt: '2025-11-07T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Phoenix%2C_Arizona.JPG',
     alt: 'Phoenix, Arizona skyline viewed from South Mountain - scene of the 1931 Trunk Murders',

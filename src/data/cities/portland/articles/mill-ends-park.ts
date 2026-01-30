@@ -10,7 +10,7 @@ export const millEndsPark: Article = {
     name: 'Tyler Scott',
     bio: 'Celebrating the strange',
   },
-  publishedAt: '2024-11-04T12:00:00Z',
+  publishedAt: '2025-12-13T12:00:00Z',
   featuredImage: {
     src: '/portland/articles/mill-ends-park.png',
     alt: 'Mill Ends Park, a tiny circular park in a traffic median',

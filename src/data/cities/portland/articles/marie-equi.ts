@@ -10,7 +10,7 @@ export const marieEqui: Article = {
     name: 'Christina Moore',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2024-11-02T12:00:00Z',
+  publishedAt: '2025-12-16T12:00:00Z',
   featuredImage: {
     src: '/portland/articles/marie-equi.png',
     alt: 'Dr. Marie Equi, circa 1915',

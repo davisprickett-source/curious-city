@@ -10,7 +10,7 @@ export const bestBars: Article = {
     name: 'Marcus Reid',
     bio: 'Music and nightlife journalist covering urban culture and entertainment. Former DJ and bar owner.',
   },
-  publishedAt: '2024-03-15T11:00:00Z',
+  publishedAt: '2025-11-05T11:00:00Z',
   updatedAt: '2025-01-18T16:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Bartender_making_a_cocktail_%28Unsplash%29.jpg',

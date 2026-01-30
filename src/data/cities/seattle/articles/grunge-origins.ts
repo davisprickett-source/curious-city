@@ -10,7 +10,7 @@ export const grungeOrigins: Article = {
     name: 'Marcus Reid',
     bio: 'Music and nightlife historian tracking the evolution of urban entertainment districts and underground scenes.',
   },
-  publishedAt: '2024-12-06T15:00:00Z',
+  publishedAt: '2025-12-06T15:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg',
     alt: 'Kurt Cobain and Krist Novoselic of Nirvana performing at the 1992 MTV Video Music Awards',

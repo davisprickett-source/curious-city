@@ -10,7 +10,7 @@ export const poorFarm: Article = {
     name: 'Daniel Wright',
     bio: 'Stories of the forgotten',
   },
-  publishedAt: '2024-11-28T12:00:00Z',
+  publishedAt: '2025-11-03T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Fargo%2C_North_Dakota_Red_River.jpg',
     alt: 'Aerial view of the Red River in Fargo, North Dakota',

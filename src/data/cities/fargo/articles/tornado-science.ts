@@ -10,7 +10,7 @@ export const tornadoScience: Article = {
     name: 'Lauren Chang',
     bio: 'Stories of scientific discovery',
   },
-  publishedAt: '2024-12-01T12:00:00Z',
+  publishedAt: '2025-12-21T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/1957_Fargo_tornado.jpg',
     alt: 'The 1957 Fargo tornado approaching the city',

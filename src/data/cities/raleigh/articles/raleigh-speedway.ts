@@ -10,7 +10,7 @@ export const raleighSpeedway: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural anthropologist and travel writer exploring the weird, wonderful, and unexpected in American cities.',
   },
-  publishedAt: '2024-04-12T11:30:00Z',
+  publishedAt: '2025-12-23T11:30:00Z',
   updatedAt: '2024-11-08T15:45:00Z',
   featuredImage: {
     src: '/raleigh/curiosities/raleigh-speedway.png',

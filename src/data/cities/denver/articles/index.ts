@@ -13,7 +13,7 @@ export const blucifer: Article = {
     name: 'Carlos Reyes',
     bio: 'Investigating civic oddities',
   },
-  publishedAt: '2024-10-25T12:00:00Z',
+  publishedAt: '2026-01-04T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/DIA_Roof_and_Hotel.jpg',
     alt: 'Denver International Airport with its distinctive white tent roof and mountains in background',

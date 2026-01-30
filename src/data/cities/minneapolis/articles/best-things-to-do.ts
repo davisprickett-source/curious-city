@@ -10,7 +10,7 @@ export const bestThingsToDo: Article = {
     name: 'Jennifer Wu',
     bio: 'Local business journalist and neighborhood expert. Covers hidden gems, small businesses, and community anchors.',
   },
-  publishedAt: '2024-04-25T10:00:00Z',
+  publishedAt: '2025-11-15T10:00:00Z',
   updatedAt: '2025-01-14T15:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Downtown_Minneapolis_from_the_Stone_Arch_Bridge.jpg',

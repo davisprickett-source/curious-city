@@ -14,7 +14,7 @@ export const integratedCircuit: Article = {
     name: 'Alex Rivera',
     bio: 'Tracing technological origins',
   },
-  publishedAt: '2024-10-18T12:00:00Z',
+  publishedAt: '2025-11-28T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/8/89/NXP_PCF8577C_LCD_driver_with_I%C2%B2C_%28Colour_Corrected%29.jpg',
     alt: 'Microscope image of an integrated circuit die, showing the intricate patterns of transistors and connections',

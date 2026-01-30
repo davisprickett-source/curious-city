@@ -10,7 +10,7 @@ export const somaliMinneapolis: Article = {
     name: 'Elena Vasquez',
     bio: 'Immigration historian and oral history specialist. Documents the stories of diaspora communities in American cities.',
   },
-  publishedAt: '2024-06-28T13:45:00Z',
+  publishedAt: '2025-11-24T13:45:00Z',
   updatedAt: '2024-12-15T09:00:00Z',
   featuredImage: {
     src: '/minneapolis/somali/riverside-plaza-sunset.jpg',

@@ -22,7 +22,7 @@ export const duckDuckGreyDuck: Article = {
     name: 'Sophie Anderson',
     bio: 'Uncovering regional peculiarities',
   },
-  publishedAt: '2024-10-12T12:00:00Z',
+  publishedAt: '2026-01-24T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Duck_Duck_Goose.jpg',
     alt: 'Children playing Duck Duck Grey Duck in a circle on a grassy field',
@@ -264,7 +264,7 @@ export const newRestaurantsNortheast: Article = {
     name: 'Rebecca Foster',
     bio: 'Local food and culture writers',
   },
-  publishedAt: '2024-12-18T12:00:00Z',
+  publishedAt: '2026-01-11T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Kramarczuk_Deli_Minneapolis_1.jpg',
     alt: 'Kramarczuk Deli and Sausage Company, iconic Northeast Minneapolis restaurant',

@@ -14,7 +14,7 @@ export const eastlandDisaster: Article = {
     name: 'James Wilson',
     bio: 'Uncovering forgotten history',
   },
-  publishedAt: '2024-10-22T12:00:00Z',
+  publishedAt: '2025-11-25T12:00:00Z',
   featuredImage: {
     src: '/chicago/articles/eastland-disaster.png',
     alt: 'The SS Eastland capsized in the Chicago River, 1915',

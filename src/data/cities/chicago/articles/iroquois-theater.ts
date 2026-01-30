@@ -10,7 +10,7 @@ export const iroquoisTheater: Article = {
     name: 'Thomas Blackwell',
     bio: 'Industrial historian and disaster researcher. Examines how catastrophes shaped modern safety regulations.',
   },
-  publishedAt: '2023-12-30T06:00:00Z',
+  publishedAt: '2025-11-11T06:00:00Z',
   updatedAt: '2024-12-30T08:00:00Z',
   featuredImage: {
     src: '/chicago/articles/iroquois-theater.png',

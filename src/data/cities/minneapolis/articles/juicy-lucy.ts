@@ -10,7 +10,7 @@ export const juicyLucy: Article = {
     name: 'Maria Gonzalez',
     bio: 'Food historian and James Beard Award nominee. Traces culinary traditions from immigrant communities to modern tables.',
   },
-  publishedAt: '2023-11-08T14:00:00Z',
+  publishedAt: '2026-01-14T14:00:00Z',
   updatedAt: '2024-12-20T11:15:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Jucy_lucy_burger_%282%29.jpg',

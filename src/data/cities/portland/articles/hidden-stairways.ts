@@ -10,7 +10,7 @@ export const hiddenStairways: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural historian tracking urban legends, curiosities, and movements that reshape cities.',
   },
-  publishedAt: '2024-12-15T18:00:00Z',
+  publishedAt: '2025-12-26T18:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/c/c0/Alameda_Stairway.jpg',
     alt: 'Public stairway on Alameda Ridge in Northeast Portland, Oregon',

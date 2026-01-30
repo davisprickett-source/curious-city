@@ -10,7 +10,7 @@ export const bestCoffeeShops: Article = {
     name: 'Jennifer Wu',
     bio: 'Local business journalist and neighborhood expert. Covers hidden gems, small businesses, and community anchors.',
   },
-  publishedAt: '2024-09-22T08:00:00Z',
+  publishedAt: '2025-12-02T08:00:00Z',
   updatedAt: '2025-01-12T09:30:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Latte_art_3.jpg',

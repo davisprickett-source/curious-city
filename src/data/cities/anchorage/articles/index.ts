@@ -13,7 +13,7 @@ export const goodFridayEarthquake: Article = {
     name: 'David Park',
     bio: 'Documenting natural forces',
   },
-  publishedAt: '2024-10-28T12:00:00Z',
+  publishedAt: '2025-12-31T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/good-friday-earthquake.png',
     alt: 'Devastation from the 1964 Alaska earthquake in Anchorage',

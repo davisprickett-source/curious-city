@@ -10,7 +10,7 @@ export const cigarLectors: Article = {
     name: 'Marcus Chen',
     bio: 'Stories of labor and culture',
   },
-  publishedAt: '2024-12-22T12:00:00Z',
+  publishedAt: '2025-12-29T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/A_%22Reader%22_in_cigar_factory%2C_Tampa%2C_Fl.jpg',
     alt: 'A lector reading to cigar workers in Tampa, Florida, January 1909',

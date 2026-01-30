@@ -10,7 +10,7 @@ export const denainaFlu: Article = {
     name: 'Elena Rodriguez',
     bio: 'Stories of buried origins',
   },
-  publishedAt: '2024-11-20T12:00:00Z',
+  publishedAt: '2025-11-28T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/early-anchorage-3.png',
     alt: 'Early Anchorage',

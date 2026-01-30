@@ -10,7 +10,7 @@ export const castlewoodDam: Article = {
     name: 'Thomas Grant',
     bio: 'Stories of infrastructure failure',
   },
-  publishedAt: '2024-11-22T12:00:00Z',
+  publishedAt: '2025-12-18T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Castlewood_Dam_Remnants.jpg',
     alt: 'The ruins of Castlewood Dam in Castlewood Canyon State Park',

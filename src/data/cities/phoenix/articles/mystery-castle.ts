@@ -10,7 +10,7 @@ export const mysteryCastle: Article = {
     name: 'James Chen',
     bio: 'Architecture writer and photographer documenting disappearing buildings and urban design. Former architect turned storyteller.',
   },
-  publishedAt: '2024-02-08T09:45:00Z',
+  publishedAt: '2025-12-19T09:45:00Z',
   updatedAt: '2024-10-15T13:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Side_of_House_%2814242512188%29.jpg',

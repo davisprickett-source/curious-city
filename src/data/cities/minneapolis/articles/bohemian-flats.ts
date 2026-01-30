@@ -10,7 +10,7 @@ export const bohemianFlats: Article = {
     name: 'Rachel Morrison',
     bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2024-03-19T08:30:00Z',
+  publishedAt: '2025-12-05T08:30:00Z',
   updatedAt: '2024-12-18T11:20:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Bohemian_Flats_and_the_West_Bank_-_DPLA_-_5c97e4b945c6cb3caacd20b899ec48cf.jpg',

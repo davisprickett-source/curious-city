@@ -12,7 +12,7 @@ export const japanBalloonBombs: Article = {
     name: 'Brian Walsh',
     bio: 'Uncovering forgotten history',
   },
-  publishedAt: '2024-10-02T12:00:00Z',
+  publishedAt: '2025-12-13T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Japanese_fire_balloon_Moffett.jpg',
     alt: 'Japanese Fu-Go fire balloon reinflated at Moffett Field, California',

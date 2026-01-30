@@ -10,7 +10,7 @@ export const tuberculosisCity: Article = {
     name: 'Michael Torres',
     bio: 'Stories of strange economies',
   },
-  publishedAt: '2024-11-08T12:00:00Z',
+  publishedAt: '2025-12-29T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Nordach_Sanatorium%2C_Austin_Bluffs%2C_Colorado_1906.jpg',
     alt: 'Nordach Sanatorium at Austin Bluffs, Colorado Springs, 1906',

@@ -10,7 +10,7 @@ export const wellingtonAvalanche: Article = {
     name: 'Katherine Adams',
     bio: 'Forgotten disasters',
   },
-  publishedAt: '2024-11-19T12:00:00Z',
+  publishedAt: '2026-01-14T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Train_wreckage_from_Wellington_WA_avalanche_cph.3b13980.jpg',
     alt: 'Train wreckage caused by the Wellington avalanche, March 1910',

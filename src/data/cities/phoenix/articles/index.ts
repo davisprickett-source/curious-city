@@ -12,7 +12,7 @@ export const phoenixLights: Article = {
     name: 'Kevin Martinez',
     bio: 'Investigating the unexplained',
   },
-  publishedAt: '2024-10-08T12:00:00Z',
+  publishedAt: '2025-12-08T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Phoenix_Panorama_From_South_Mountain_%284892941298%29.jpg',
     alt: 'Phoenix, Arizona skyline at dusk - the city that witnessed the Phoenix Lights phenomenon in 1997',

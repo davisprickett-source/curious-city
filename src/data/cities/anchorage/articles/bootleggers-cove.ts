@@ -10,7 +10,7 @@ export const bootleggersCove: Article = {
     name: 'Sarah Mitchell',
     bio: 'Stories of frontier vice',
   },
-  publishedAt: '2024-11-18T12:00:00Z',
+  publishedAt: '2025-11-09T12:00:00Z',
   featuredImage: {
     src: '/anchorage/articles/bootleggers-cove.png',
     alt: 'Bootlegger\'s Cove area, Anchorage, 1920s',

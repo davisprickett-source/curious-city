@@ -10,7 +10,7 @@ export const boggsBegich: Article = {
     name: 'Marcus Chen',
     bio: 'Stories of the unexplained',
   },
-  publishedAt: '2024-11-15T12:00:00Z',
+  publishedAt: '2025-12-05T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hale_Boggs_and_Nick_Begich_1972.jpg/800px-Hale_Boggs_and_Nick_Begich_1972.jpg',
     alt: 'Hale Boggs and Nick Begich shaking hands during 1972 campaign',

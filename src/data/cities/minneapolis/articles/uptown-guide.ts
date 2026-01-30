@@ -10,7 +10,7 @@ export const uptownGuide: Article = {
     name: 'Jennifer Wu',
     bio: 'Local business journalist and neighborhood expert. Covers hidden gems, small businesses, and community anchors.',
   },
-  publishedAt: '2024-07-20T09:00:00Z',
+  publishedAt: '2025-12-13T09:00:00Z',
   updatedAt: '2025-01-16T13:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Uptown_Theater_Minneapolis.jpg',

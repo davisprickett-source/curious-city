@@ -10,7 +10,7 @@ export const flight629: Article = {
     name: 'Jessica Wells',
     bio: 'True crime history',
   },
-  publishedAt: '2024-11-25T12:00:00Z',
+  publishedAt: '2025-11-15T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Douglas_DC-6B%2C_United_Airlines_JP7385910.jpg',
     alt: 'A United Airlines DC-6B similar to the aircraft involved in Flight 629',

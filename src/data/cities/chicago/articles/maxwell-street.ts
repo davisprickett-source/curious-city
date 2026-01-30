@@ -10,7 +10,7 @@ export const maxwellStreet: Article = {
     name: 'Marcus Reid',
     bio: 'Music and nightlife historian tracking the evolution of urban entertainment districts and underground scenes.',
   },
-  publishedAt: '2024-12-08T12:00:00Z',
+  publishedAt: '2026-01-20T12:00:00Z',
   featuredImage: {
     src: '/chicago/articles/maxwell-street.png',
     alt: 'Maxwell Street Market in its heyday, 1960s',

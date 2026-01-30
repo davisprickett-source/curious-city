@@ -10,7 +10,7 @@ export const pizzaWars: Article = {
     name: 'David Winters',
     bio: 'Investigative journalist specializing in true crime, cold cases, and the intersection of violence and urban policy.',
   },
-  publishedAt: '2024-12-12T17:00:00Z',
+  publishedAt: '2026-01-24T17:00:00Z',
   featuredImage: {
     src: '/chicago/articles/pizza-wars.png',
     alt: 'Chicago deep dish pizza, 1980s',

@@ -10,7 +10,7 @@ export const deepEllumHistory: Article = {
     name: 'Marcus Reid',
     bio: 'Music and nightlife historian tracking the evolution of urban entertainment districts and underground scenes.',
   },
-  publishedAt: '2024-12-05T19:00:00Z',
+  publishedAt: '2025-11-10T19:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Deep_Ellum_-_Knights_of_Pythias_-_Union_Bankers_Building_03.jpg',
     alt: 'Knights of Pythias Temple in Deep Ellum, designed by William Sidney Pittman',

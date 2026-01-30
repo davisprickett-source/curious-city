@@ -10,7 +10,7 @@ export const plumAlley: Article = {
     name: 'Megan Liu',
     bio: 'Stories of erased communities',
   },
-  publishedAt: '2024-11-10T12:00:00Z',
+  publishedAt: '2025-12-08T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg/1280px-Salt_Lake_City%2C_Utah_--_Plum_Alley%2C_looking_south_from_100_South%2C_ca._1900-1910_--_12065.jpg',
     alt: 'Plum Alley in Salt Lake City, circa 1900-1910, showing narrow street and Chinese businesses',

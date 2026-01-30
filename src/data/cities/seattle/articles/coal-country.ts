@@ -10,7 +10,7 @@ export const coalCountry: Article = {
     name: 'Benjamin Lee',
     bio: 'Forgotten industries',
   },
-  publishedAt: '2024-11-17T12:00:00Z',
+  publishedAt: '2025-11-04T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Child_coal_miners_%281908%29.jpg',
     alt: 'Child coal miners with mules in a mine, 1908',

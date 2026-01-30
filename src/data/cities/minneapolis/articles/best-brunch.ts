@@ -10,7 +10,7 @@ export const bestBrunch: Article = {
     name: 'Maria Gonzalez',
     bio: 'Food historian and James Beard Award nominee. Traces culinary traditions from immigrant communities to modern tables.',
   },
-  publishedAt: '2024-06-10T08:00:00Z',
+  publishedAt: '2025-12-20T08:00:00Z',
   updatedAt: '2025-01-17T10:30:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Breakfast_at_the_Black_Bear_Diner.jpg',

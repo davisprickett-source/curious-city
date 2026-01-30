@@ -10,7 +10,7 @@ export const gatewayDistrict: Article = {
     name: 'Rachel Morrison',
     bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2023-09-07T10:15:00Z',
+  publishedAt: '2025-12-19T10:15:00Z',
   updatedAt: '2024-12-03T16:45:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Gateway_District-Minneapolis-b.jpg',

@@ -13,7 +13,7 @@ export const lakeAgassiz: Article = {
     name: 'Hannah Price',
     bio: 'Exploring deep history',
   },
-  publishedAt: '2024-10-20T12:00:00Z',
+  publishedAt: '2025-11-27T12:00:00Z',
   featuredImage: {
     src: '/fargo/articles/lake-agassiz.png',
     alt: 'Aerial view of the flat Red River Valley, former bed of Lake Agassiz',

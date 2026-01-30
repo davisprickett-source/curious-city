@@ -10,7 +10,7 @@ export const axeMurders: Article = {
     name: 'Maya Santos',
     bio: 'True crime history',
   },
-  publishedAt: '2024-11-05T12:00:00Z',
+  publishedAt: '2026-01-11T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Pikes_Peak_by_David_Shankbone.jpg',
     alt: 'Colorado Springs with Pikes Peak in the background, 2008',

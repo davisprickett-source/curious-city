@@ -10,7 +10,7 @@ export const freedmansCemetery: Article = {
     name: 'Emma Davis',
     bio: 'Stories of buried history',
   },
-  publishedAt: '2024-11-12T12:00:00Z',
+  publishedAt: '2025-11-23T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Dallas_Skyline_with_Arts_District.jpg',
     alt: 'Dallas skyline — a city built over the graves of its formerly enslaved founders',

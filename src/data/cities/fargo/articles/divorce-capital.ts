@@ -10,7 +10,7 @@ export const divorceCapital: Article = {
     name: 'Sarah Kim',
     bio: 'Cultural anthropologist and travel writer exploring the weird, wonderful, and unexpected in American cities.',
   },
-  publishedAt: '2023-07-22T10:00:00Z',
+  publishedAt: '2025-12-31T10:00:00Z',
   updatedAt: '2024-09-14T14:30:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/NorthernPacificRailwayDepot_FargoND.jpg',

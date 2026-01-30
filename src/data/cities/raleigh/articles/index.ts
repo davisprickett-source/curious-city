@@ -13,7 +13,7 @@ export const villageUnderground: Article = {
     name: 'Jordan Blake',
     bio: 'Uncovering hidden history',
   },
-  publishedAt: '2024-10-10T12:00:00Z',
+  publishedAt: '2025-12-01T12:00:00Z',
   featuredImage: {
     src: '/raleigh/underground/underground-1.png',
     alt: 'The Village Underground entrance in Raleigh, 1970s',

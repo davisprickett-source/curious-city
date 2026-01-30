@@ -10,7 +10,7 @@ export const maxHeadroom: Article = {
     name: 'David Winters',
     bio: 'Investigative journalist covering unsolved mysteries, cold cases, and forgotten crimes. Former crime reporter for major metro dailies.',
   },
-  publishedAt: '2024-08-15T14:20:00Z',
+  publishedAt: '2025-12-14T14:20:00Z',
   updatedAt: '2024-11-22T10:15:00Z',
   featuredImage: {
     src: '/chicago/articles/max-headroom.png',

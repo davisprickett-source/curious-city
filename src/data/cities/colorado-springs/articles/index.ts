@@ -12,7 +12,7 @@ export const teslaLab: Article = {
     name: 'Rachel Kim',
     bio: 'Investigating scientific history',
   },
-  publishedAt: '2024-10-15T12:00:00Z',
+  publishedAt: '2025-12-14T12:00:00Z',
   featuredImage: {
     src: '/colorado-springs/articles/tesla-lab.png',
     alt: 'Nikola Tesla in his Colorado Springs laboratory',

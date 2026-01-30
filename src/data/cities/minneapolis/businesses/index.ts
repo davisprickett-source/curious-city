@@ -60,7 +60,7 @@ export const businesses: Business[] = [
     },
     featured: true,
     verified: true,
-    publishedAt: '2024-02-10T10:00:00Z',
+    publishedAt: '2025-11-06T10:00:00Z',
     updatedAt: '2025-01-10T14:00:00Z',
     tags: [
       'coffee',
@@ -130,7 +130,7 @@ export const businesses: Business[] = [
     },
     featured: true,
     verified: true,
-    publishedAt: '2023-09-15T12:00:00Z',
+    publishedAt: '2025-12-31T12:00:00Z',
     updatedAt: '2024-12-05T11:00:00Z',
     tags: [
       'dive bar',
@@ -223,7 +223,7 @@ export const businesses: Business[] = [
     },
     featured: true,
     verified: true,
-    publishedAt: '2024-01-20T09:00:00Z',
+    publishedAt: '2026-01-23T09:00:00Z',
     updatedAt: '2025-01-12T10:00:00Z',
     tags: [
       'lawyers',

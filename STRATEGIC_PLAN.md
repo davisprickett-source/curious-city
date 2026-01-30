@@ -546,6 +546,23 @@ Here's some things to edit/change:
 -about page - changed founded in 2020 to 2025, add Local Neighbor after chicago proud in its hero, finish the first sentence in our story with, ...like family and deliver an all around great experience. in the "locally operated card" first sentence shoul end with "...all of chicagoland and Northwest Indiana", (change date in the question on "how long have you been in business" as well, 
 
 
+-make the mobile nav bar trasnparent except for the hamburger
+-also on mobile, everything needs to move up some so that the calll cta and scroll down indicator appears on first load
+-our services on landing page change to "...across Chicagoland, Northwest Indiana, and surrounding areas"
+-add home link to mobile dropdown nav and top desktop nav
+-fix the footer so that the company name/slogan align at the top with the other column titles in footer, and the logo lives below those in that left column, also make the logo much bigger in the footer
+-add a card below hours in contact to 24/7 emergency call service available 
+-revert the business hours back to how they were before (i don't remember exactly, maybe make them more normalize hours)
+-make sure cashiers checks are mentioned as an acceptable payment option
+-make the date in 
+
+
+/Users/dav/.clawdbot/browser/chrome-extension
+
+-make sure NW indianapolis is mentioned in places for service areas
+-make booking/reservation rec as weeks in advance
+
+
 loc operated services chicagoland area and nw indy
 
 but not limited to

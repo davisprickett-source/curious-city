@@ -10,7 +10,7 @@ export const victimOfTheBeast: Article = {
     name: 'Connor James',
     bio: 'Mysteries and their solutions',
   },
-  publishedAt: '2024-11-13T12:00:00Z',
+  publishedAt: '2025-11-20T12:00:00Z',
   featuredImage: {
     src: '/salt-lake-city/articles/victim-of-the-beast.png',
     alt: 'Lilly E. Gray\'s gravestone reading "Victim of the Beast 666"',

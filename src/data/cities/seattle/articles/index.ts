@@ -14,7 +14,7 @@ export const dbCooper: Article = {
     name: 'Ryan Cooper',
     bio: 'Investigating the unexplained',
   },
-  publishedAt: '2024-10-01T12:00:00Z',
+  publishedAt: '2025-11-04T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/DB_Cooper_%28FBI_composite_sketch%29.png',
     alt: 'FBI composite sketch of D.B. Cooper',

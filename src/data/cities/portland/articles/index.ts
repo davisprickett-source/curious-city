@@ -13,7 +13,7 @@ export const vanportFlood: Article = {
     name: 'Patrick Hayes',
     bio: 'Uncovering buried history',
   },
-  publishedAt: '2024-10-05T12:00:00Z',
+  publishedAt: '2025-12-26T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Aerial_view_of_vanport_flooded.jpg',
     alt: 'Aerial view of Vanport, Oregon during the 1948 flood that destroyed the city',

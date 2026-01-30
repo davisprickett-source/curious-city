@@ -10,7 +10,7 @@ export const lakeCliffPark: Article = {
     name: 'Nathan Brooks',
     bio: 'Stories of vanished places',
   },
-  publishedAt: '2024-11-14T12:00:00Z',
+  publishedAt: '2025-12-21T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Dallas_Fair_Park_Esplanade.jpg',
     alt: 'Fair Park Esplanade in Dallas, showcasing the city\'s rich amusement history',

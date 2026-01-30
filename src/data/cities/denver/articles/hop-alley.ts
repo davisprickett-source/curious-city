@@ -10,7 +10,7 @@ export const hopAlley: Article = {
     name: 'Rachel Morrison',
     bio: 'Urban historian and former museum curator specializing in forgotten communities and displacement. MA in Public History from NYU.',
   },
-  publishedAt: '2023-10-31T07:00:00Z',
+  publishedAt: '2025-11-02T07:00:00Z',
   updatedAt: '2024-10-31T12:00:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Massacre_of_the_Chinese_at_Rock_Springs.jpg',

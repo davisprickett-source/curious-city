@@ -10,7 +10,7 @@ export const washburnMill: Article = {
     name: 'Thomas Blackwell',
     bio: 'Industrial historian and disaster researcher. Examines how catastrophes shaped modern safety regulations.',
   },
-  publishedAt: '2023-05-14T09:00:00Z',
+  publishedAt: '2025-12-11T09:00:00Z',
   updatedAt: '2024-11-22T14:30:00Z',
   featuredImage: {
     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg/1280px-After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg',
