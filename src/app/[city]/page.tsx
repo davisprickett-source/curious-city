@@ -16,6 +16,7 @@ import { ListicleTypeCard } from '@/components/cards/ListicleTypeCard'
 import { EstablishmentCategoryCard } from '@/components/cards/EstablishmentCategoryCard'
 import { CityScrollCard } from '@/components/cards/CityScrollCard'
 import { BreadcrumbSchema } from '@/components/StructuredData'
+import { HomepageGAMAd } from '@/components/ads/HomepageGAMAd'
 
 interface CityPageProps {
   params: Promise<{ city: string }>
@@ -111,6 +112,8 @@ export default async function CityPage({ params }: CityPageProps) {
           city={city}
           featuredEntries={featuredEntries}
         />
+
+        <HomepageGAMAd />
 
         <main className="flex-1 bg-white overflow-x-hidden">
         {/* Articles Section */}

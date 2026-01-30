@@ -8,6 +8,7 @@ import { HorizontalScrollSection } from '@/components/city/HorizontalScrollSecti
 import { LandingScrollCard } from '@/components/cards/LandingScrollCard'
 import { ArticleScrollCard } from '@/components/cards/ArticleScrollCard'
 import { CityScrollCard } from '@/components/cards/CityScrollCard'
+import { HomepageGAMAd } from '@/components/ads/HomepageGAMAd'
 
 export default async function HomePage() {
   const cities = await getAllCities()
@@ -37,6 +38,8 @@ export default async function HomePage() {
       <div className="city-page-wrapper">
         {/* Hero Section with featured content carousel */}
         <LandingHeroSection slides={curatedContent.heroSlides} />
+        
+        <HomepageGAMAd />
 
         <main className="flex-1 bg-white overflow-x-hidden">
         {/* History Essays Section */}
