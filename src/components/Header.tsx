@@ -38,11 +38,16 @@ export function Header({ cityName }: HeaderProps) {
             />
           </Link>
 
-          {/* Cities dropdown - after logo like city pages */}
-          <CitiesDropdown />
-
-          {cityName && (
-            <span className="text-neutral-500 font-normal text-[15px]">{cityName}</span>
+          {/* Brand text or city dropdown */}
+          {cityName ? (
+            <>
+              <CitiesDropdown />
+              <span className="text-neutral-500 font-normal text-[15px]">{cityName}</span>
+            </>
+          ) : (
+            <span className="hidden sm:inline text-neutral-900 font-semibold text-[15px] tracking-tight">
+              Curious <span className="text-neutral-400 font-normal mx-1">|</span> <span className="text-accent-600">City</span>
+            </span>
           )}
 
           {/* Spacer */}

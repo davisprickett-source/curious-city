@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { NewsletterSignup } from './NewsletterSignup'
 
 const categories = [
   { href: '/essays', label: 'Essays' },
@@ -45,9 +48,10 @@ export function Footer() {
                 Curious City
               </span>
             </Link>
-            <p className="text-neutral-400 text-[15px] leading-relaxed">
+            <p className="text-neutral-400 text-[15px] leading-relaxed mb-6">
               Where every street has a story.
             </p>
+            <NewsletterSignup variant="dark" />
           </div>
 
           {/* Explore */}

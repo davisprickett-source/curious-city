@@ -13,7 +13,7 @@ export const gatewayDistrict: Article = {
   publishedAt: '2025-12-19T10:15:00Z',
   updatedAt: '2024-12-03T16:45:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Gateway_District-Minneapolis-b.jpg',
+    src: '/minneapolis/articles/gateway-district.jpg',
     alt: 'Hotels and cafes in Gateway District, Minneapolis, 1939',
     credit: 'Library of Congress / John Vachon',
   },

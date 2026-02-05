@@ -12,7 +12,7 @@ export const murderapolis: Article = {
   },
   publishedAt: '2025-12-10T16:00:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Downtown_Minneapolis_at_night.JPG',
+    src: '/minneapolis/dark-history/three-victims.png',
     alt: 'Downtown Minneapolis at night during a winter snow storm, viewed from the Stone Arch Bridge',
     credit: 'Mark.fenris / Wikimedia Commons (CC BY-SA 3.0)',
   },

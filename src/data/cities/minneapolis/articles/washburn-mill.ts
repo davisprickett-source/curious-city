@@ -13,7 +13,7 @@ export const washburnMill: Article = {
   publishedAt: '2025-12-11T09:00:00Z',
   updatedAt: '2024-11-22T14:30:00Z',
   featuredImage: {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg/1280px-After_Explosion_of_Washburn_A_Flour_Mill_-_DPLA_-_948af43dcb953d5ad641094caa1c7a7b.jpg',
+    src: '/minneapolis/articles/washburn-mill.jpg',
     alt: 'Aftermath of the Washburn A Mill explosion in 1878, Minneapolis',
     credit: 'Hennepin County Library via Wikimedia Commons',
   },
